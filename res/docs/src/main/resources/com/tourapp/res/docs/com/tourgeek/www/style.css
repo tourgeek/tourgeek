@@ -1,0 +1,182 @@
+html, body, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	color: #990000;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF7F00;
+	text-decoration: underline;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.more {
+	text-align: right;
+}
+.clear {
+	clear: both;
+}
+
+body {
+	background: #8E0D0D url(images/page_bg.jpg) repeat-x;
+	text-align: center;
+	font: 80% arial, sans-serif;
+	color: #565656;
+}
+
+/** layout **/
+#wrapper {
+	text-align: left;
+	margin: auto;
+	width: 988px;
+position: relative;
+}
+#left {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 268px;
+}
+#right {
+ position: absolute;
+ top: 0;
+ left: 268px;
+ width: 720px;
+}
+
+/** Left **/
+#left {
+ background: url(images/logo.jpg) no-repeat;
+ padding-top: 30px;
+}
+#left h1 {
+ text-align: center;
+ font: 150% arial, serif"
+ color: #6C0505;
+ height: 709px;
+}
+#copyright {
+ color: white;
+}
+#copyright p {
+ margin: 0 1em 0.5em 1em;
+}
+
+/** Right **/
+#nav {
+ background: url(images/header.jpg) no-repeat;
+ height: 108px;
+}
+#nav ul {
+ margin: 0;
+ padding: 0 0 0 30px;
+}
+#nav li {
+ float: left;
+ border-right: 1px solid #A26A6B;
+ padding: 66px 29px 9px 29px;
+ list-style: none;
+}
+#nav li.last {
+ border-right: none;
+}
+#nav a {
+ color: #CECECE;
+ font: 80% arial, sans-serif;
+ font-weight: normal;
+}
+#nav .selected a {
+ font-weight: bold;
+}
+
+/** Body **/
+#body {
+ background: url(images/body_bg.jpg) repeat-y;
+}
+#body-top {
+ background: url(images/body_top.jpg) no-repeat;
+}
+#body-bot {
+ background: bottom left url(images/body_bot.jpg) no-repeat;
+ padding: 36px 39px 19px 39px;
+}
+
+#body h2 {
+ font: 120% arial, sans-serif;
+}
+#body h2 strong {
+ color: #660505;
+ font-weight: normal;
+ font-size: 100%;
+}
+#body h3 {
+ font: 80% arial, sans-serif;
+ color: #660505;
+ margin-top: 1.4em;
+ margin-bottom: 1.1em;
+}
+#body h4 {
+ color: #660505;
+}
+#body .left {
+ margin: 0 26px 0 0;
+}
+
+/** footer **/
+.body-hr {
+ clear: both;
+ height: 43px;
+ background: bottom left url(images/body_hr.jpg) no-repeat;
+ margin: 10px -39px;
+}
+
+#footer-1 {
+  float: left;
+  width: 144px;
+  padding-right: 30px;
+  margin-top: 5px;
+  border-right: 1px solid #ACACAC;
+  font: 80% arial, sans-serif;
+  color: #660505;
+  text-align: center;
+}
+#footer-1 strong {
+  display: block;
+  font-size: 100%;
+  font-weight: normal;
+}
+#footer-2 {
+  float: left;
+  width: 234px;
+  margin-left: 12px;
+  font: 100% arial, sans-serif;
+  color: #000;
+  line-height: 34px;
+}
+#footer-2 .left {
+  margin-right: 12px;
+}
+#footer-3 {
+  float: left;
+  width: 215px;
+  margin: 0;
+  font: 80% arial, sans-serif;
+  color: #000;
+  text-align: left;
+}
+#footer-3 .left {
+  margin-right: 12px;
+}

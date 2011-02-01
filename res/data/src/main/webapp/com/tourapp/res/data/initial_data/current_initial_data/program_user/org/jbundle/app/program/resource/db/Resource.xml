@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Resource ID="1">
+		<LastChanged>2010-02-27T08:35:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>AcctPay</Code>
+		<Description>Accounts Payable</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,578</ClassProjectID>
+	</Resource>
+	<Resource ID="2">
+		<LastChanged>2010-02-27T09:03:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>AcctRec</Code>
+		<Description>Accounts Receivable</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,579</ClassProjectID>
+	</Resource>
+	<Resource ID="4">
+		<LastChanged>2010-02-27T08:36:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>AssetDr</Code>
+		<Description>Assets and Debts</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,580</ClassProjectID>
+	</Resource>
+	<Resource ID="5">
+		<LastChanged>2010-02-27T08:35:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>Booking</Code>
+		<Description>Booking</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,581</ClassProjectID>
+	</Resource>
+	<Resource ID="8">
+		<LastChanged>2010-02-27T08:36:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>GenLed</Code>
+		<Description>General Ledger</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,582</ClassProjectID>
+	</Resource>
+	<Resource ID="12">
+		<LastChanged>2010-02-27T08:36:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>Product</Code>
+		<Description>Product</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,584</ClassProjectID>
+	</Resource>
+	<Resource ID="13">
+		<LastChanged>2010-02-27T08:36:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>Profile</Code>
+		<Description>Profile</Description>
+		<Location/>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,586</ClassProjectID>
+	</Resource>
+	<Resource ID="14">
+		<LastChanged>2010-02-27T08:46:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>Tour</Code>
+		<Description>Tour</Description>
+		<Location>com.tourapp.thin.app.booking.entry</Location>
+		<Type>Properties</Type>
+		<BaseResourceID/>
+		<ClassProjectID>1,048,589</ClassProjectID>
+	</Resource>
+</file>

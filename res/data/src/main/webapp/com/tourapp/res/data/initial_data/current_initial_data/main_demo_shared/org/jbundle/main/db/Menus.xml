@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Menus ID="303">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<AutoDesc>Y</AutoDesc>
+		<Program/>
+		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp type="XML"><paragraph>I glad you made it to the product menu. This is the most exiciting system.</paragraph>
+<paragraph>In this system, you have the capability to build tours with unbelievable flexability.</paragraph></MenusHelp>
+	</Menus>
+	<Menus ID="421">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<AutoDesc>Y</AutoDesc>
+		<Program/>
+		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp type="XML"><paragraph><bold>Fully integrated accounting system</bold></paragraph>
+<paragraph>The accounting system delivers reliable information so you have the data you need to make business decisions.</paragraph>
+<paragraph>Unlike many systems, the accounting system is integrated with every other sub-system.
+This financial system is updated automatically as entries are made in all the other systems.</paragraph></MenusHelp>
+	</Menus>
+	<Menus ID="425">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<AutoDesc>Y</AutoDesc>
+		<Program/>
+		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp type="XML"><paragraph>The General Ledger system summarizes data from all the sub-systems, so you can quickly evaluate your performance.</paragraph></MenusHelp>
+	</Menus>
+	<Menus ID="426">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<AutoDesc>Y</AutoDesc>
+		<Program/>
+		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp type="XML"><paragraph><bold>Use the Bank Account system to keep track of your cash.</bold></paragraph>
+<paragraph>Handles local and foreign currencies.</paragraph>
+<paragraph>This system is integrated with all the other systems. For example, a refund generated from the Accounts Receivable system would be reflected in the refund account.</paragraph></MenusHelp>
+	</Menus>
+</file>

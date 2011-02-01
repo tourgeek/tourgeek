@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<EAddressType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>E-Mail</Description>
+	</EAddressType>
+	<EAddressType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Fax</Description>
+	</EAddressType>
+	<EAddressType ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Home Phone</Description>
+	</EAddressType>
+	<EAddressType ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Business Phone</Description>
+	</EAddressType>
+	<EAddressType ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Mobile Phone</Description>
+	</EAddressType>
+	<EAddressType ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Telex</Description>
+	</EAddressType>
+	<EAddressType ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Pager</Description>
+	</EAddressType>
+	<EAddressType ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Web Page</Description>
+	</EAddressType>
+	<EAddressType ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>MOM Server</Description>
+	</EAddressType>
+</file>

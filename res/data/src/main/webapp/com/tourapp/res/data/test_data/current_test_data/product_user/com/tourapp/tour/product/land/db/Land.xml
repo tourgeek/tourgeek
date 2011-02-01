@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Land ID="1">
+		<LastChanged>2010-12-03T06:33:03</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Full Day Bangkok Sightseeing</Description>
+		<Code>BKKS2</Code>
+		<VendorID>1</VendorID>
+		<OperatorsCode>SS-12</OperatorsCode>
+		<ProductChainID/>
+		<CityID>1,388</CityID>
+		<Etd>08:30:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc type="XML"><description>
+Today you will take in the sights and sounds of Bangkok.<br/>
+You will be picked up at your hotel and then transferred to
+a motorboat for a two hour tour of the Klongs.
+You will experience Bangkok's fascinating canals by boat,
+catching a glimpse of daily life along the riverine route.<br/>
+For lunch, you will be treated to delicious local cusine at a typical
+Thai restaurant.<br/>
+After lunch you will visit the Royal Grand Palace, one of Bangkok's most Spectacular sights,
+then you will continue to explore the city for the rest of the day.
+</description>
+<image desc="Thai temple" src="images/com/tourdemo/trips/ThaiTemple.jpg"/></ItineraryDesc>
+		<DescSort>FULL DAY B</DescSort>
+		<ProductType>Land</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<Type>S</Type>
+		<ManualFile/>
+		<Hours>7.00</Hours>
+		<Days/>
+		<Nights/>
+		<Breakfasts/>
+		<Lunches>1</Lunches>
+		<Dinners/>
+		<DaysOfWeek>91</DaysOfWeek>
+		<Vehicle/>
+		<PMCCost/>
+		<PMCCostHome/>
+		<SICCost/>
+		<SICCostHome/>
+		<PMCPriceHome/>
+		<SICPriceHome/>
+	</Land>
+	<Land ID="2">
+		<LastChanged>2010-12-03T06:33:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Airport - Hotel Transfer (Bangkok)</Description>
+		<Code/>
+		<VendorID>1</VendorID>
+		<OperatorsCode>TRF-1</OperatorsCode>
+		<ProductChainID/>
+		<CityID>1,388</CityID>
+		<Etd>08:30:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc type="XML"><description>
+You will be met and transferred by an air-conditioned
+vehicle between your hotel and the airport.
+</description></ItineraryDesc>
+		<DescSort>AIRPORT -</DescSort>
+		<ProductType>Land</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<Type>T</Type>
+		<ManualFile/>
+		<Hours>0.50</Hours>
+		<Days/>
+		<Nights/>
+		<Breakfasts/>
+		<Lunches/>
+		<Dinners/>
+		<DaysOfWeek>63</DaysOfWeek>
+		<Vehicle/>
+		<PMCCost/>
+		<PMCCostHome/>
+		<SICCost/>
+		<SICCostHome/>
+		<PMCPriceHome/>
+		<SICPriceHome/>
+	</Land>
+	<Land ID="3">
+		<LastChanged>2010-12-03T05:33:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Half Day Bangkok Sightseeing</Description>
+		<Code>BKKS1</Code>
+		<VendorID>1</VendorID>
+		<OperatorsCode>SS-11</OperatorsCode>
+		<ProductChainID/>
+		<CityID>1,388</CityID>
+		<Etd>08:30:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc type="XML"><description>
+Today you will take in the sights and sounds of Bangkok.<br/>
+You will be picked up at your hotel and then transfered to
+a motorboat for a two hour tour of the Klongs.
+You will experience Bangkok's fascinating canals by boat,
+catching a glimpse of daily life along the riverine route.<br/>
+After lunch you will continue to explore the city for the rest of the afternoon.
+</description> </ItineraryDesc>
+		<DescSort>HALF DAY B</DescSort>
+		<ProductType>Land</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<Type>S</Type>
+		<ManualFile/>
+		<Hours>3.50</Hours>
+		<Days/>
+		<Nights/>
+		<Breakfasts>1</Breakfasts>
+		<Lunches>1</Lunches>
+		<Dinners/>
+		<DaysOfWeek>91</DaysOfWeek>
+		<Vehicle/>
+		<PMCCost/>
+		<PMCCostHome/>
+		<SICCost/>
+		<SICCostHome/>
+		<PMCPriceHome/>
+		<SICPriceHome/>
+	</Land>
+	<Land ID="4">
+		<LastChanged>2010-12-03T06:33:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Airport to Mandarin Hotel Transfer</Description>
+		<Code/>
+		<VendorID>40</VendorID>
+		<OperatorsCode>TRF01</OperatorsCode>
+		<ProductChainID/>
+		<CityID>682</CityID>
+		<Etd>08:30:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc type="XML"><description>
+You will be met and transferred by an air-conditioned
+vehicle between the Mandarin Hotel and the airport.
+</description></ItineraryDesc>
+		<DescSort>AIRPORT TO</DescSort>
+		<ProductType>Land</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<Type>T</Type>
+		<ManualFile/>
+		<Hours/>
+		<Days/>
+		<Nights/>
+		<Breakfasts/>
+		<Lunches/>
+		<Dinners/>
+		<DaysOfWeek>91</DaysOfWeek>
+		<Vehicle/>
+		<PMCCost/>
+		<PMCCostHome/>
+		<SICCost/>
+		<SICCostHome/>
+		<PMCPriceHome/>
+		<SICPriceHome/>
+	</Land>
+	<Land ID="5">
+		<LastChanged>2010-12-03T06:35:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bangkok Private Tour Guide</Description>
+		<Code/>
+		<VendorID>1</VendorID>
+		<OperatorsCode/>
+		<ProductChainID/>
+		<CityID>1,388</CityID>
+		<Etd>08:30:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc type="XML"><description>
+You will have the services of a professional tour guide for the entire day
+to explore Bangkok as you wish.
+</description></ItineraryDesc>
+		<DescSort>BANGKOK PR</DescSort>
+		<ProductType>Land</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<Type>S</Type>
+		<ManualFile/>
+		<Hours/>
+		<Days/>
+		<Nights/>
+		<Breakfasts>1</Breakfasts>
+		<Lunches>1</Lunches>
+		<Dinners/>
+		<DaysOfWeek>0</DaysOfWeek>
+		<Vehicle/>
+		<PMCCost/>
+		<PMCCostHome/>
+		<SICCost/>
+		<SICCostHome/>
+		<PMCPriceHome/>
+		<SICPriceHome/>
+	</Land>
+</file>

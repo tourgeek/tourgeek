@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MealPlan ID="1">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>All inclusive</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>American Plan</Description>
+		<Code>AP</Code>
+		<Breakfast>Y</Breakfast>
+		<Lunch>Y</Lunch>
+		<Dinner>Y</Dinner>
+	</MealPlan>
+	<MealPlan ID="3">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bed  and  breakfast</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="4">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Buffet breakfast</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="5">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Caribbean breakfast</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Cont Breakfast</Description>
+		<Code>CB</Code>
+		<Breakfast>Y</Breakfast>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="7">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>English breakfast</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>European Plan</Description>
+		<Code>EP</Code>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="9">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Family plan</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="10">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Full board</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Full Breakfast</Description>
+		<Code>B</Code>
+		<Breakfast>Y</Breakfast>
+		<Lunch>N</Lunch>
+		<Dinner>N</Dinner>
+	</MealPlan>
+	<MealPlan ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Modified Am Plan</Description>
+		<Code>MP</Code>
+		<Breakfast>Y</Breakfast>
+		<Lunch>Y</Lunch>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="13">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>As brochured</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="14">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Room only</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="15">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Self catering</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="16">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bermuda</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="17">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Dinner bed and break</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="18">
+		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Family American</Description>
+		<Code/>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="30">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Lunch</Description>
+		<Code>L</Code>
+		<Breakfast/>
+		<Lunch>Y</Lunch>
+		<Dinner/>
+	</MealPlan>
+	<MealPlan ID="31">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Dinner</Description>
+		<Code>D</Code>
+		<Breakfast/>
+		<Lunch/>
+		<Dinner>Y</Dinner>
+	</MealPlan>
+</file>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Asset ID="1">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Truck</Description>
+		<Manufacturer>Mitsubishi</Manufacturer>
+		<SerialNumber/>
+		<InventoryNo/>
+		<Location>Garage</Location>
+		<PurchaseDate>2006-09-03</PurchaseDate>
+		<SaleDate/>
+		<FSDeprMethod>S</FSDeprMethod>
+		<FSLife>8</FSLife>
+		<FedDeprMethod>A</FedDeprMethod>
+		<FedLife>5</FedLife>
+		<StateDeprMethod>D</StateDeprMethod>
+		<StateLife>5</StateLife>
+		<AssetAccountID>25</AssetAccountID>
+		<DeprAccountID>26</DeprAccountID>
+		<ExpenseAccountID>104</ExpenseAccountID>
+	</Asset>
+</file>

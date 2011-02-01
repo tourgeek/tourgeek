@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<PricingStatus ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Manual</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ADcvdmFyL3Rv
+dXJzdHVkaW8vamF2YS90b3VyL3dlYi9pbWFnZXMvYnV0dG9ucy9NYW51YWwuZ2lmcHcIAAAAEAAA
+ABB1cgACW0lNumAmduqypQIAAHhwAAABAAD///8A////AP///wD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+//8A////AP///wD///8A////AP///wD///8A////AP///wD/////AAAAAP///wD///8A////AP//
+/wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/////AAAA/9DQ0P8AAAAA////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/////AAAA/9DQ0P+AgID/
+0NDQAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/////AAAA/9DQ0P+A
+gID/gICA/wAAAAD/////AAAAAP///wD///8A////AP///wD///8A////AP///wD/////AAAA/9DQ
+0P+AgID/gICA/wAAAP//////AAAA/9DQ0P8AAAAA////AP///wD///8A////AP///wD/////AAAA
+/9DQ0P+AgID/gICA/wAAAP////8A/////9DQ0P+AgID/gICA/wAAAAD///8A////AP///wD/////
+AAAA/9DQ0P+AgID/gICA/wAAAP////8A////AP////8AAAD/gICA/4CAgP+AgID/AAAAAP///wD/
+////AAAA/9DQ0P+AgID/gICA/wAAAP////8A////AP///wD///8A/////wAAAP+AgID/gICA/4CA
+gP8AAAD/AAAA/9DQ0P+AgID/gICA/wAAAP////8A////AP///wD///8A////AP///wD/////AAAA
+/4CAgP+AgID/gICA/9DQ0P+AgID/gICA/wAAAP////8A////AP///wD///8A////AP///wD///8A
+////AP////8AAAD/gICA/4CAgP+AgID/gICA/wAAAP////8A////AP///wD///8A////AP///wD/
+//8A////AP///wD///8A/////wAAAP+AgID/gICA/wAAAP////8A////AP///wD///8A////AP//
+/wD///8A////AP///wD///8A////AP///wD/////AAAA/wAAAP////8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+////AP///wD///8A////AP///wD///94
+]]></Icon>
+	</PricingStatus>
+	<PricingStatus ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Valid</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ACcvZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvT2theS5naWZwdwgAAAAQAAAAEHVyAAJbSU26YCZ26rKl
+AgAAeHAAAAEAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+//8A////AP///wD///8A////AP////8AAAAA////AP///wD///8A////AP///wD///8A////AP//
+/wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wAAAAD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP/E/8MA////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/AAAAAP////8A
+AAAA////AP///wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/AAAA////
+//8AAAD/xP/D/wAAAAD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/AAAA
+/////wD/////xP/D/wD/AP8A/wD/AAAAAP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/
+AAAA/////wD///8A/////wAAAP8A/wD/AP8A/wD/AP8AAAAA////AP////8AAAD/xP/D/wD/AP8A
+/wD/AAAA/////wD///8A////AP///wD/////AAAA/wD/AP8A/wD/AP8A/wAAAP8AAAD/xP/D/wD/
+AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP////8AAAD/AP8A/wD/AP8A/wD/xP/D
+/wD/AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A/////wAAAP8A/wD/
+AP8A/wD/AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+////AAAA/wD/AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A////AP//
+/wD///8A////AP////8AAAD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+////AP///3g=
+]]></Icon>
+	</PricingStatus>
+	<PricingStatus ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Not valid</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ACgvZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvQ2xvc2UuZ2lmcHcIAAAAEAAAABB1cgACW0lNumAmduqy
+pQIAAHhwAAABAADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDA
+wADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMD/AAAAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDA
+AMDAwADAwMD/AAAAAMDAwADAwMAAwMDAAMDAwADAwMD/AAAA/8zM//8AAAAAwMDAAMDAwADAwMAA
+wMDAAMDAwADAwMD/AAAA/8zM//8AAAAAwMDAAMDAwADAwMAAwMDA/8zM//+Zmcz/mZnM/wAAAADA
+wMAAwMDAAMDAwADAwMD/AAAA/8zM//+Zmcz/mZnM/wAAAADAwMAAwMDAAMDAwP8AAAD/mZnM/5mZ
+zP+Zmcz/AAAAAMDAwADAwMD/AAAA/8zM//+Zmcz/mZnM/wAAAADAwMAAwMDAAMDAwADAwMAAwMDA
+/wAAAP+Zmcz/mZnM/5mZzP8AAAD/AAAA/8zM//+Zmcz/mZnM/wAAAP////8AwMDAAMDAwADAwMAA
+wMDAAMDAwADAwMD/AAAA/5mZzP+Zmcz/mZnM/8zM//+Zmcz/mZnM/wAAAP////8AwMDAAMDAwADA
+wMAAwMDAAMDAwADAwMAAwMDAAMDAwP8AAAD/mZnM/5mZzP+Zmcz/mZnM/wAAAP////8AwMDAAMDA
+wADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwP8AAAD/zMz//5mZzP+Zmcz/mZnM/5mZzP+Zmcz/AAAA
+AMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwP8AAAD/zMz//5mZzP+Zmcz/AAAA/wAAAP+Zmcz/
+mZnM/5mZzP8AAAAAwMDAAMDAwADAwMAAwMDAAMDAwP8AAAD/zMz//5mZzP+Zmcz/AAAA/////wDA
+wMD/AAAA/5mZzP+Zmcz/mZnM/wAAAADAwMAAwMDAAMDAwADAwMD/zMz//5mZzP+Zmcz/AAAA////
+/wDAwMAAwMDAAMDAwP8AAAD/mZnM/5mZzP+Zmcz/AAAAAMDAwADAwMAAwMDA/wAAAP+Zmcz/AAAA
+/////wDAwMAAwMDAAMDAwADAwMAAwMDA/wAAAP+Zmcz/AAAAAMDAwADAwMAAwMDAAMDAwADAwMD/
+AAAA/////wDAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMD/AAAA/////wDAwMAAwMDAAMDAwADA
+wMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDA
+wADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDA
+AMDAwADAwMB4
+]]></Icon>
+	</PricingStatus>
+</file>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Request ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ProfileID>5</ProfileID>
+		<ProfileCode>05903995</ProfileCode>
+		<GenericName>Hallmark Travel</GenericName>
+		<AddressLine1>First Floor</AddressLine1>
+		<AddressLine2>3801 Greeway Plaza</AddressLine2>
+		<CityOrTown>Atlanta</CityOrTown>
+		<StateOrRegion>GA</StateOrRegion>
+		<PostalCode>30303</PostalCode>
+		<Country>USA</Country>
+		<Attention>Don</Attention>
+		<Email/>
+		<SendViaCode>2</SendViaCode>
+		<BundleID>2</BundleID>
+		<BundleQty>5</BundleQty>
+		<BrochureText/>
+		<PrintNow>Y</PrintNow>
+		<HistReprint>Y</HistReprint>
+	</Request>
+	<Request ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ProfileID>5</ProfileID>
+		<ProfileCode>05903995</ProfileCode>
+		<GenericName>Hallmark Travel</GenericName>
+		<AddressLine1>First Floor</AddressLine1>
+		<AddressLine2>3801 Greeway Plaza</AddressLine2>
+		<CityOrTown>Atlanta</CityOrTown>
+		<StateOrRegion>GA</StateOrRegion>
+		<PostalCode>30303</PostalCode>
+		<Country>USA</Country>
+		<Attention>Don</Attention>
+		<Email/>
+		<SendViaCode>2</SendViaCode>
+		<BundleID>2</BundleID>
+		<BundleQty>5</BundleQty>
+		<BrochureText/>
+		<PrintNow>Y</PrintNow>
+		<HistReprint>Y</HistReprint>
+	</Request>
+	<Request ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ProfileID>9</ProfileID>
+		<ProfileCode>40514342</ProfileCode>
+		<GenericName>Agencies Soler Travel Network</GenericName>
+		<AddressLine1>2822 Avenida de las Arboles</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Hulatulco</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Mexico</Country>
+		<Attention/>
+		<Email/>
+		<SendViaCode>1</SendViaCode>
+		<BundleID>2</BundleID>
+		<BundleQty>4</BundleQty>
+		<BrochureText/>
+		<PrintNow>Y</PrintNow>
+		<HistReprint>Y</HistReprint>
+	</Request>
+	<Request ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ProfileID>7</ProfileID>
+		<ProfileCode>19537965</ProfileCode>
+		<GenericName>Aladdin Travel Service</GenericName>
+		<AddressLine1>500 Main Street</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Metairie</CityOrTown>
+		<StateOrRegion>LA</StateOrRegion>
+		<PostalCode>70002</PostalCode>
+		<Country>USA</Country>
+		<Attention/>
+		<Email/>
+		<SendViaCode>2</SendViaCode>
+		<BundleID>2</BundleID>
+		<BundleQty>5</BundleQty>
+		<BrochureText/>
+		<PrintNow>Y</PrintNow>
+		<HistReprint>Y</HistReprint>
+	</Request>
+	<Request ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ProfileID/>
+		<ProfileCode/>
+		<GenericName/>
+		<AddressLine1/>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country/>
+		<Attention/>
+		<Email/>
+		<SendViaCode>2</SendViaCode>
+		<BundleID>2</BundleID>
+		<BundleQty>5</BundleQty>
+		<BrochureText/>
+		<PrintNow/>
+		<HistReprint/>
+	</Request>
+	<Request ID="6">
+		<LastChanged>2010-12-01T05:23:38</LastChanged>
+		<Deleted>N</Deleted>
+		<ProfileID/>
+		<ProfileCode/>
+		<GenericName>Don</GenericName>
+		<AddressLine1>dkjdlk</AddressLine1>
+		<AddressLine2>lkjdlkj</AddressLine2>
+		<CityOrTown>lkjdlk</CityOrTown>
+		<StateOrRegion>kljdkl</StateOrRegion>
+		<PostalCode>kjldkjl</PostalCode>
+		<Country>kjldklj</Country>
+		<Attention/>
+		<Email>lkjdkljd</Email>
+		<SendViaCode/>
+		<BundleID/>
+		<BundleQty/>
+		<BrochureText/>
+		<PrintNow>N</PrintNow>
+		<HistReprint>N</HistReprint>
+	</Request>
+	<Request ID="7">
+		<LastChanged>2010-12-02T05:56:18</LastChanged>
+		<Deleted>N</Deleted>
+		<ProfileID/>
+		<ProfileCode>05903995</ProfileCode>
+		<GenericName>Tours</GenericName>
+		<AddressLine1>dkjdkf</AddressLine1>
+		<AddressLine2>kljdjk</AddressLine2>
+		<CityOrTown>kljdfjkl</CityOrTown>
+		<StateOrRegion>jkldfjkl</StateOrRegion>
+		<PostalCode>jkldkjl</PostalCode>
+		<Country>kljdjkl</Country>
+		<Attention>Don</Attention>
+		<Email>don@donandann.com</Email>
+		<SendViaCode/>
+		<BundleID/>
+		<BundleQty/>
+		<BrochureText/>
+		<PrintNow>N</PrintNow>
+		<HistReprint>N</HistReprint>
+	</Request>
+</file>

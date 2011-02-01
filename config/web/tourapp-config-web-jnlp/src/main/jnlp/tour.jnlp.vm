@@ -1,0 +1,41 @@
+<!DOCTYPE jnlp PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<jnlp codebase="$$context" spec="1.0+">
+<information>
+<title>Tour Application Resources</title>
+<vendor>tourapp.com</vendor>
+<homepage href="index.html"></homepage>
+<description kind="one-line">Tour Application Resources</description>
+<description kind="short">Tour Application Resources</description>
+<icon href="images/tour/icons/Tour.gif"></icon>
+<offline-allowed></offline-allowed>
+<keywords>tour</keywords>
+</information>
+<security></security>
+<resources>
+<java max-heap-size="512m" initial-heap-size="128m" version="1.6+"></java>
+<property value="true" name="jnlp.packEnabled"></property>
+<jar href="lib/tourapp-tour-acctpay-${project.version}.jar" part="tourapp-tour-acctpay" download="lazy"></jar>
+<package name="com.tourapp.tour.acctpay.*" part="tourapp-tour-acctpay" recursive="true"></package>
+<jar href="lib/tourapp-tour-acctrec-${project.version}.jar" part="tourapp-tour-acctrec" download="lazy"></jar>
+<package name="com.tourapp.tour.acctrec.*" part="tourapp-tour-acctrec" recursive="true"></package>
+<jar href="lib/tourapp-tour-assetdr-${project.version}.jar" part="tourapp-tour-assetdr" download="lazy"></jar>
+<package name="com.tourapp.tour.assetdr.*" part="tourapp-tour-assetdr" recursive="true"></package>
+<jar href="lib/tourapp-tour-base-${project.version}.jar" part="tourapp-tour-base" download="lazy"></jar>
+<package name="com.tourapp.tour.base.*" part="tourapp-tour-base" recursive="true"></package>
+<jar href="lib/tourapp-tour-booking-${project.version}.jar" part="tourapp-tour-booking" download="lazy"></jar>
+<package name="com.tourapp.tour.booking.*" part="tourapp-tour-booking" recursive="true"></package>
+<jar href="lib/tourapp-tour-genled-${project.version}.jar" part="tourapp-tour-genled" download="lazy"></jar>
+<package name="com.tourapp.tour.genled.*" part="tourapp-tour-genled" recursive="true"></package>
+<jar href="lib/tourapp-tour-message-core-${project.version}.jar" part="tourapp-tour-message-core" download="lazy"></jar>
+<package name="com.tourapp.tour.message.*" part="tourapp-tour-message-core" recursive="true"></package>
+<jar href="lib/tourapp-tour-payroll-${project.version}.jar" part="tourapp-tour-payroll" download="lazy"></jar>
+<package name="com.tourapp.tour.payroll.*" part="tourapp-tour-payroll" recursive="true"></package>
+<jar href="lib/tourapp-tour-product-${project.version}.jar" part="tourapp-tour-product" download="lazy"></jar>
+<package name="com.tourapp.tour.product.*" part="tourapp-tour-product" recursive="true"></package>
+<jar href="lib/tourapp-tour-profile-${project.version}.jar" part="tourapp-tour-profile" download="lazy"></jar>
+<package name="com.tourapp.tour.profile.*" part="tourapp-tour-profile" recursive="true"></package>
+<jar href="lib/tourapp-tour-request-${project.version}.jar" part="tourapp-tour-request" download="lazy"></jar>
+<package name="com.tourapp.tour.request.*" part="tourapp-tour-request" recursive="true"></package>
+</resources>
+<component-desc></component-desc>
+</jnlp>

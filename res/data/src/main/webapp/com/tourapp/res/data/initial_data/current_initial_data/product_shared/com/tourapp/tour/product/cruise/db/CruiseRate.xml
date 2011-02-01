@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CruiseRate ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Rack Rate</Description>
+		<Code/>
+	</CruiseRate>
+	<CruiseRate ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Travel Agent Rate</Description>
+		<Code/>
+	</CruiseRate>
+</file>

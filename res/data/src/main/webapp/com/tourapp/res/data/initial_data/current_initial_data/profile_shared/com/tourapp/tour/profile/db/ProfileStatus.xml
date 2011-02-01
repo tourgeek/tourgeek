@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProfileStatus ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>A - Excellent</Description>
+		<Code>A</Code>
+	</ProfileStatus>
+	<ProfileStatus ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>B - Good</Description>
+		<Code>B</Code>
+	</ProfileStatus>
+	<ProfileStatus ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>C - Average</Description>
+		<Code>C</Code>
+	</ProfileStatus>
+	<ProfileStatus ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>D - Brochure Request</Description>
+		<Code>D</Code>
+	</ProfileStatus>
+	<ProfileStatus ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>F - Fam Trip</Description>
+		<Code>F</Code>
+	</ProfileStatus>
+	<ProfileStatus ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>X - Blacklist</Description>
+		<Code>X</Code>
+	</ProfileStatus>
+	<ProfileStatus ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>S - Satellite Location</Description>
+		<Code>S</Code>
+	</ProfileStatus>
+</file>

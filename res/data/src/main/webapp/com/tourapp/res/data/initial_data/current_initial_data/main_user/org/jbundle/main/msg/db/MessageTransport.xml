@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MessageTransport ID="1">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fax</Description>
+		<Code>Fax</Code>
+		<Properties><![CDATA[#Field properties
+#Sun Jan 20 13:23:18 PST 2008
+timeoutMultiplier=86400
+faxProvider=faxaway.com
+]]></Properties>
+		<MessageTransportType>ManualResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="2">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Email</Description>
+		<Code>Email</Code>
+		<Properties><![CDATA[#Field properties
+#Tue Jun 30 04:05:22 PDT 2009
+timeoutMultiplier=86400
+pop3username=don@tourgeek.com
+pop3host=pop.gmail.com
+receiveUsing=pop3
+mail.smtp.starttls.enable=true
+sendUsing=smtp
+messageTimeoutSeconds=259200
+receiveTransport=pop3
+smtp.password=NDgwEhwD
+mail.pop3.port=995
+smtp.username=don@tourgeek.com
+host=smtp.gmail.com
+mail.pop3.ssl.enable=true
+sendTransport=smtp
+replyTo=don@tourgeek.com
+baseURL=http\://www.tourgeek.com/
+mail.smtp.auth=true
+pop3password=NDgwEhwD
+]]></Properties>
+		<MessageTransportType>ManualResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="3">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Mail</Description>
+		<Code>Mail</Code>
+		<Properties><![CDATA[#Field properties
+#Sun Jan 20 13:23:31 PST 2008
+messageTimeoutSeconds=777600
+timeoutMultiplier=86400
+]]></Properties>
+		<MessageTransportType>ManualResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="5">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>U.P.S.</Description>
+		<Code>UPS</Code>
+		<Properties><![CDATA[#Field properties
+#Sun Jan 20 13:24:13 PST 2008
+timeoutMultiplier=86400
+messageTimeoutSeconds=777600
+]]></Properties>
+		<MessageTransportType>ManualResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="6">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Local</Description>
+		<Code>Local</Code>
+		<Properties><![CDATA[#Field properties
+#Wed Jan 16 03:12:02 PST 2008
+messageTimeoutSeconds=120
+singleDetail=true
+]]></Properties>
+		<MessageTransportType>Local</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="7">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Direct lookup</Description>
+		<Code>Direct</Code>
+		<Properties/>
+		<MessageTransportType>Direct</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="9">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Screen</Description>
+		<Code>Screen</Code>
+		<Properties/>
+		<MessageTransportType>ManualResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="10">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Manual</Description>
+		<Code>Manual</Code>
+		<Properties/>
+		<MessageTransportType>ManualComm</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="11">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Web service</Description>
+		<Code>SOAP</Code>
+		<Properties><![CDATA[#Field properties
+#Wed Jan 16 03:13:16 PST 2008
+messageTimeoutSeconds=300
+singleDetail=true
+]]></Properties>
+		<MessageTransportType>AutoResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="13">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>HTML</Description>
+		<Code>HTML</Code>
+		<Properties/>
+		<MessageTransportType>ManualResp</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="14">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Server</Description>
+		<Code>Server</Code>
+		<Properties/>
+		<MessageTransportType>Thread</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="15">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Client</Description>
+		<Code>Client</Code>
+		<Properties><![CDATA[#Field properties
+#Tue Mar 11 02:08:33 PDT 2008
+queueName=trxSendLocal
+queueType=local
+]]></Properties>
+		<MessageTransportType>Thread</MessageTransportType>
+	</MessageTransport>
+	<MessageTransport ID="16">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>XML Web Service</Description>
+		<Code>XML</Code>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 07 20:49:46 PDT 2008
+messageTimeoutSeconds=300
+singleDetail=true
+]]></Properties>
+		<MessageTransportType>AutoResp</MessageTransportType>
+	</MessageTransport>
+</file>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-tour-reactor</artifactId>
+    <groupId>com.tourapp.tour</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.tourapp.tour.request</artifactId>
+  <name>tourapp-tour-request - Request</name>
+  <description>tourapp-tour-request (Request)</description>
+  <packaging>bundle</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.profile</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.base.screen</groupId>
+      <artifactId>org.jbundle.base.screen.view.html</artifactId>   <!-- Get rid of this dependency -->
+      <version>${jbundleVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.base.screen</groupId>
+      <artifactId>org.jbundle.base.screen.view.xml</artifactId>   <!-- Get rid of this dependency -->
+      <version>${jbundleVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${servlet-apiVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+</project>

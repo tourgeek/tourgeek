@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<RequestType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Information</Description>
+		<Code>InfoStatusID</Code>
+	</RequestType>
+	<RequestType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Price</Description>
+		<Code>CostStatusID</Code>
+	</RequestType>
+	<RequestType ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Availability</Description>
+		<Code>InventoryStatusID</Code>
+	</RequestType>
+	<RequestType ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Booking</Description>
+		<Code>ProductStatusID</Code>
+	</RequestType>
+	<RequestType ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Price and Avail.</Description>
+		<Code/>
+	</RequestType>
+	<RequestType ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Manual</Description>
+		<Code>MANUAL</Code>
+	</RequestType>
+	<RequestType ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>New Booking</Description>
+		<Code>Add</Code>
+	</RequestType>
+	<RequestType ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Change Booking</Description>
+		<Code>Change</Code>
+	</RequestType>
+	<RequestType ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Cancel Booking</Description>
+		<Code>Delete</Code>
+	</RequestType>
+	<RequestType ID="10">
+		<LastChanged>2008-01-12T01:54:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Error</Description>
+		<Code>Error</Code>
+	</RequestType>
+</file>

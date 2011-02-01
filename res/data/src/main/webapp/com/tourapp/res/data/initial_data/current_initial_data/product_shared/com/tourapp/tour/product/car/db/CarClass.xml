@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CarClass ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Economy</Description>
+		<Code/>
+	</CarClass>
+	<CarClass ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Standard</Description>
+		<Code/>
+	</CarClass>
+	<CarClass ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Full size</Description>
+		<Code/>
+	</CarClass>
+	<CarClass ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Luxury</Description>
+		<Code/>
+	</CarClass>
+	<CarClass ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Van</Description>
+		<Code/>
+	</CarClass>
+</file>

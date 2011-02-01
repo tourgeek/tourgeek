@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<IssueHistory ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Change the calendar buttons to rollover labels. Also
+add a time button popup.]]></Comment>
+		<IssueID>1</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[hkjhkjh
+lkjlkjkl]]></Comment>
+		<IssueID>2</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[jklkjlk
+lkjlkjkllkjlk
+klkj]]></Comment>
+		<IssueID>3</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[lkjjk
+kljlkj
+kljlkj
+lkjlkj]]></Comment>
+		<IssueID>4</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Need to change calendar popup to use rollovers.
+Also need to add a time popup]]></Comment>
+		<IssueID>29</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[The menu says "Registration" 
+Wierd data exists under Menus
+Add language and locale to grid screen
+|main|language|locale  
+Add DialogBundle and MenuResources_es to file.
+Fix Espan*l to use unicoding.]]></Comment>
+		<IssueID>33</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Test the apache and tomcat versions - 
+Also look at Apache Slide]]></Comment>
+		<IssueID>34</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment>Test it .vs. WebDAV</Comment>
+		<IssueID>35</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Test with:
+- Apache
+- tomcat 5
+- sessiond
+- webmail
+- groupware]]></Comment>
+		<IssueID>36</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Need utilities to:
+1. Open and display an XSD file as a tree
+2. Open and validate an XML for the XSD
+3. Send the XML to a WebService
+
+4. Receive an XML as a WebService
+5. Validate and display the XML received]]></Comment>
+		<IssueID>40</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[The calendar blows up when a null start date is found.
+Should handle it is follows (set method):
+- Ignore null date items
+- Set date to calendar first date
+- Set date to today.
+Also:
+Rounded corners on highlighed entries
+Also:
+Darker outline on calendar entries
+Also: Get rid of the code in ProjectTaskCalendar/addListeners().]]></Comment>
+		<IssueID>41</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[When I do this, it displays ALL detail, 
+rather than a new blank detail list.
+See bug entry:
+Enter a new bug and immediately click on "Detail"]]></Comment>
+		<IssueID>42</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Move this:
+JavaButton
+BaseScanListener
+picture.manual
+picture.remote
+program.db.???
+ScreenTest2]]></Comment>
+		<IssueID>45</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Immediately validate and redisplay on every change.
+Especially the date popup button (should immediately change dates)]]></Comment>
+		<IssueID>48</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[This is a wierd one:
+Calendar blows up when there is a filter, just on a certain
+case: (Select calendar from "Other Tasks"
+use the ProjectTask data in the next comment:]]></Comment>
+		<IssueID>41</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProjectTask ID="1">
+		<Name>Tour Test Completion</Name>
+		<ParentProjectTaskID>0</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 11, 2006 12:00 PM</StartDateTime>
+		<Duration>382.00000000</Duration>
+		<EndDateTime>Apr 28, 2007 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:47 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:57 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="2">
+		<Name>Bookings</Name>
+		<ParentProjectTaskID>1</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 11, 2006 12:00 PM</StartDateTime>
+		<Duration>381.00000000</Duration>
+		<EndDateTime>Apr 27, 2007 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:47 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:55 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="3">
+		<Name>Thick</Name>
+		<ParentProjectTaskID>2</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 11, 2006 12:00 PM</StartDateTime>
+		<Duration>42.00000000</Duration>
+		<EndDateTime>May 23, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:47 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="4">
+		<Name>New Booking</Name>
+		<ParentProjectTaskID>3</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 11, 2006 12:00 PM</StartDateTime>
+		<Duration>24.00000000</Duration>
+		<EndDateTime>May 5, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:48 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="5">
+		<Name>Straight FIT</Name>
+		<ParentProjectTaskID>4</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 11, 2006 12:00 PM</StartDateTime>
+		<Duration>19.00000000</Duration>
+		<EndDateTime>Apr 30, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:48 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="6">
+		<Name>Agency</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 11, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 12, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:48 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="7">
+		<Name>Pax</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 12, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 13, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:48 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="8">
+		<Name>Add Detail</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 13, 2006 12:00 PM</StartDateTime>
+		<Duration>2.00000000</Duration>
+		<EndDateTime>Apr 15, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:48 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="9">
+		<Name>Change Detail</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 15, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 16, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="10">
+		<Name>Delete Detail</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 16, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 17, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="11">
+		<Name>Line Items</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 17, 2006 12:00 PM</StartDateTime>
+		<Duration>3.00000000</Duration>
+		<EndDateTime>Apr 20, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:53 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="12">
+		<Name>Create Itinerary (Proposal) (Email/Fax)</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 18, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 19, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="13">
+		<Name>Create Invoice (Email)</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 19, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 20, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="14">
+		<Name>Enter Deposit</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 20, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 21, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="15">
+		<Name>Confirm Services (Tour Orders)</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 21, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 22, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="16">
+		<Name>Deposit to Vendor</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 22, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 23, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="17">
+		<Name>Enter Final Payment</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 23, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 24, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:49 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="18">
+		<Name>Create Final Docs</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 24, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 25, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:50 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="19">
+		<Name>G/L Update</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 25, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 26, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:50 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="20">
+		<Name>Cancellation</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 26, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 27, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:50 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="21">
+		<Name>Refunds</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 27, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 28, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:50 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="22">
+		<Name>Departure G/L Updates</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 28, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 29, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:50 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="23">
+		<Name>Vendor Final Payments</Name>
+		<ParentProjectTaskID>5</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 29, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 30, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:50 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="24">
+		<Name>Hotel</Name>
+		<ParentProjectTaskID>8</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 13, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 14, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:52 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="25">
+		<Name>Land</Name>
+		<ParentProjectTaskID>8</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 14, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 15, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:52 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="26">
+		<Name>Enter/Create</Name>
+		<ParentProjectTaskID>11</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 17, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 18, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:52 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="27">
+		<Name>Delete/Delete w/detail</Name>
+		<ParentProjectTaskID>11</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 18, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 19, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:52 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:52 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="28">
+		<Name>Change/Change w/detail</Name>
+		<ParentProjectTaskID>11</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 19, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 20, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:52 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:53 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="29">
+		<Name>FIT Header</Name>
+		<ParentProjectTaskID>4</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 30, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 1, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:54 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="30">
+		<Name>Unscheduled</Name>
+		<ParentProjectTaskID>4</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>May 1, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 2, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:54 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="31">
+		<Name>Module Header?</Name>
+		<ParentProjectTaskID>4</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>May 2, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 3, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:54 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="32">
+		<Name>Module</Name>
+		<ParentProjectTaskID>4</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>May 3, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 4, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:54 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="33">
+		<Name>Series</Name>
+		<ParentProjectTaskID>4</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>May 4, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 5, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:54 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:59 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="34">
+		<Name>Booking Changes</Name>
+		<ParentProjectTaskID>3</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 30, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 1, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:54 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:57 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="35">
+		<Name>Booking Lookup</Name>
+		<ParentProjectTaskID>3</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>May 1, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 2, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:55 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:58 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="36">
+		<Name>Calendar Screen</Name>
+		<ParentProjectTaskID>3</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>May 2, 2006 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>May 3, 2006 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:55 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:58 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="37">
+		<Name>Thin</Name>
+		<ParentProjectTaskID>2</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 26, 2007 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 27, 2007 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:55 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:55 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="38">
+		<Name>Split price tab -&gt; detail (booking) and pricing (line)</Name>
+		<ParentProjectTaskID>37</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 26, 2007 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 27, 2007 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:55 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:55 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="39">
+		<Name>Security ? See security manager</Name>
+		<ParentProjectTaskID>1</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Apr 27, 2007 12:00 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Apr 28, 2007 12:00 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 2:55 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 2:57 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="40">
+		<Name>Total System Test ? From Customer, Agent, Vendor perspectives</Name>
+		<ParentProjectTaskID>0</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 5, 2006 2:48 PM</StartDateTime>
+		<Duration>87.56539352</Duration>
+		<EndDateTime>Mar 3, 2007 4:22 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:00 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="41">
+		<Name>General Ledger</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 21, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 22, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="42">
+		<Name>Asset Debt</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 22, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 23, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="43">
+		<Name>Accounts Payable</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 23, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 24, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="44">
+		<Name>Profile</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 24, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 25, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="45">
+		<Name>Accounts Receivable</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 25, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 26, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="46">
+		<Name>Payroll</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 26, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 27, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="47">
+		<Name>Product</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 27, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 28, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="48">
+		<Name>Booking</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 28, 2006 11:20 AM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 29, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="49">
+		<Name>Operations</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 4, 2006 2:48 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 5, 2006 2:48 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="50">
+		<Name>Deploy ? Get Hardware</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 5, 2006 2:48 PM</StartDateTime>
+		<Duration>1.00000000</Duration>
+		<EndDateTime>Dec 6, 2006 2:48 PM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:02 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="51">
+		<Name>*Traveler Process*</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 6, 2006 2:48 PM</StartDateTime>
+		<Duration>24.85512730</Duration>
+		<EndDateTime>Dec 31, 2006 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:03 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="52">
+		<Name>*Agent/Tour Operator Process*</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Dec 31, 2006 11:20 AM</StartDateTime>
+		<Duration>6.00000000</Duration>
+		<EndDateTime>Jan 6, 2007 11:20 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:03 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3:17 PM</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+	</ProjectTask>
+	<ProjectTask ID="53">
+		<Name>*Vendor Process*</Name>
+		<ParentProjectTaskID>40</ParentProjectTaskID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<StartDateTime>Jan 6, 2007 11:20 AM</StartDateTime>
+		<Duration>54.71027778</Duration>
+		<EndDateTime>Mar 2, 2007 4:22 AM</EndDateTime>
+		<Progress/>
+		<ProjectID/>
+		<ProjectVersionID/>
+		<ProjectTypeID/>
+		<ProjectStatusID/>
+		<AssignedUserID/>
+		<ProjectPriorityID/>
+		<EnteredDate>Apr 4, 2006 3:03 PM</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>Apr 4, 2006 3]]></Comment>
+		<IssueID>41</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="17">
+		<LastChanged>2006-04-18T02:10:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[To replicate this, blank out all the descriptions in the
+Resource file and try to re-write all the resources.]]></Comment>
+		<IssueID>50</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="18">
+		<LastChanged>2006-08-23T02:05:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[, and ONLY select when
+the "->" button is clicked 
+Also see VBaseButton/doCommand (test using the BaseStatusField/setupPopupView logic)
+For grids:
+1 - ADD the button
+2 - Only select when pressed
+3 - Don't close when shift is pressed]]></Comment>
+		<IssueID>60</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="19">
+		<LastChanged>2007-01-21T03:41:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[new custom booking, status=okay, add hotel:  
+INFO: Cache ON: ArTrx
+com.tourstudio.base.db.DatabaseException: Invalid record
+        at com.tourstudio.base.db.GridTable.edit(GridTable.java:744)
+        at com.tourstudio.base.db.Record.edit(Record.java:2157)
+        at com.tourstudio.base.db.Record.writeAndRefresh(Record.java:2327)
+        at com.tourstudio.tour.acctpay.db.ApTrx.linkBookingDetailToApTrx(ApTrx.java:547)
+        at com.tourstudio.tour.booking.message.base.request.ProductRequest.initBookingApTrx(ProductRequest.java:86)
+        at com.tourstudio.tour.booking.message.hotel.request.HotelBookingRequest.initForMessage(HotelBookingRequest.java:90)
+        at com.tourstudio.tour.booking.detail.db.BookingDetail.checkRequestRequired(BookingDetail.java:1512)
+        at com.tourstudio.tour.booking.detail.event.CheckRequestRequiredHandler.fieldChanged(CheckRequestRequiredHandler.java:62)
+        at com.tourstudio.base.field.BaseField.handleFieldChanged(BaseField.java:819)
+        at com.tourstudio.base.field.BaseField.setData(BaseField.java:965)
+        at com.tourstudio.base.field.event.CopyDataHandler.moveSourceToDest(CopyDataHandler.java:68)
+        at com.tourstudio.base.field.event.MoveOnChangeHandler.moveIt(MoveOnChan]]></Comment>
+		<IssueID>75</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="20">
+		<LastChanged>2007-01-24T00:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment>Add tour components, confirm tour components (change tour status)</Comment>
+		<IssueID>76</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="21">
+		<LastChanged>2010-03-18T10:33:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Make a booking with the mail server shut down. 
+Status -> okay emaills itin]]></Comment>
+		<IssueID>77</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="22">
+		<LastChanged>2007-05-07T02:04:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment>See google request header - keep-alive: 300 connection: close</Comment>
+		<IssueID>83</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="23">
+		<LastChanged>2008-09-14T04:30:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment>Split the base and thin (and main) code into org.tourstudio</Comment>
+		<IssueID>99</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="24">
+		<LastChanged>2008-11-06T11:45:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[Error - Could not do remote action.
+Non-breaking spaces in forms]]></Comment>
+		<IssueID>106</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="25">
+		<LastChanged>2009-07-16T21:56:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment>See the 'private tour' the price varies on the number of hours booked.</Comment>
+		<IssueID>123</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="26">
+		<LastChanged>2010-05-19T12:27:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[tourapp-config-webapp / ${basedir}/../../../jbundle/ 
+jbundle-config-jnlp / build.xml (jcalendarbutton and jmuffinmanager)
+(can't be referenced) Also in build.xml, don't use /workspace/ in path
+(could be any workspace)]]></Comment>
+		<IssueID>152</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="28">
+		<LastChanged>2010-05-21T11:22:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[For demo entry, try to enter zzz for the class name.
+A new record is created in the language database table
+because MirrorTable/96 changes the lock strategy.]]></Comment>
+		<IssueID>159</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="29">
+		<LastChanged>2010-06-03T00:17:03</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[1. Identify and rename (-shell) poms 
+(poms for packaging only)]]></Comment>
+		<IssueID>160</IssueID>
+	</IssueHistory>
+	<IssueHistory ID="30">
+		<LastChanged>2010-06-03T00:16:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Comment><![CDATA[2. - Sync build.xml with poms.
+(Start with thin-base-db)]]></Comment>
+		<IssueID>160</IssueID>
+	</IssueHistory>
+</file>

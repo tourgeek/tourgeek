@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <parent>
+    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourapp-config-reactor</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>tourapp-config-server</artifactId>
+  <packaging>pom</packaging>
+  <name>tourapp-config-server - Run the tourapp server</name>
+  
+  <build>
+    <plugins>      
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>${exec-maven-pluginVersion}</version>
+        <executions>
+          <execution>
+          	<phase>run</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+            <mainClass>org.jbundle.server.Server</mainClass>
+	        <arguments>
+	        <!-- 
+	            <argument>$DEBUG</argument>
+	            <argument>-Xms256m</argument>
+	            <argument>-Xmx512m</argument>
+	         -->
+	            <argument>-Djava.rmi.server.codebase=${jbundle.rmicodebase}</argument>
+	            <argument>-Djava.security.policy=${jbundle.policyfile}</argument>
+	            <argument>jmsserver=true</argument>
+	            <argument>remoteapp=msgapp</argument>
+	            <argument>provider=${jbundle.server}</argument>
+	        </arguments>
+          <systemProperties>
+            <systemProperty>
+              <key>java.rmi.server.codebase</key>
+              <value>http://${jbundle.server}/classes/</value>
+            </systemProperty>
+            <systemProperty>
+              <key>java.security.policy</key>
+              <value>${jbundle.policyfile}</value>
+            </systemProperty>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.tourapp.config</groupId>
+      <artifactId>tourapp-config-dep-all</artifactId> 
+      <version>0.7.7-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>j2ee</artifactId>
+      <version>1.4</version>
+      <scope>system</scope>
+      <systemPath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</systemPath>
+    </dependency>
+  </dependencies>
+
+</project>

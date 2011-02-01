@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProductControl ID="1">
+		<LastChanged>2010-04-02T16:01:24</LastChanged>
+		<Deleted>N</Deleted>
+		<AirRateID>1</AirRateID>
+		<AirClassID/>
+		<HotelRateID>13</HotelRateID>
+		<HotelClassID>101</HotelClassID>
+		<LandRateID>1</LandRateID>
+		<LandClassID/>
+		<VariesOn/>
+		<PMCCutoff/>
+		<TransportationRateID>1</TransportationRateID>
+		<TransportationClassID/>
+		<CarRateID>1</CarRateID>
+		<CarClassID/>
+		<CruiseRateID>1</CruiseRateID>
+		<CruiseClassID/>
+		<ItemRateID>1</ItemRateID>
+		<ItemClassID>1</ItemClassID>
+		<ProductTermsID/>
+	</ProductControl>
+</file>

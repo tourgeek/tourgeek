@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<NumberFormat ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>text-decoration: underline</Name>
+		<Description>Underline</Description>
+	</NumberFormat>
+	<NumberFormat ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>font-weight: bold</Name>
+		<Description>Bold</Description>
+	</NumberFormat>
+	<NumberFormat ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>font-size: large</Name>
+		<Description>Large Text</Description>
+	</NumberFormat>
+</file>

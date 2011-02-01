@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-thin-tour-reactor</artifactId>
+    <groupId>com.tourapp.thin</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
+  <packaging>bundle</packaging>
+  <name>tourapp-thin-tour-assetdr - Asset debt thin</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jbundle.config.dep</groupId>
+      <artifactId>jbundle-config-dep-thin-base</artifactId>
+      <version>${jbundleVersion}</version>
+	  <type>pom</type>
+    </dependency>
+  </dependencies>
+
+</project>

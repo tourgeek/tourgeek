@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<SeatChoice ID="1">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>None</Description>
+	</SeatChoice>
+	<SeatChoice ID="2">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Together</Description>
+	</SeatChoice>
+	<SeatChoice ID="3">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Aisle</Description>
+	</SeatChoice>
+	<SeatChoice ID="4">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Center</Description>
+	</SeatChoice>
+	<SeatChoice ID="5">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Window</Description>
+	</SeatChoice>
+	<SeatChoice ID="6">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Specific</Description>
+	</SeatChoice>
+	<SeatChoice ID="7">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Exit</Description>
+	</SeatChoice>
+	<SeatChoice ID="8">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nonsmomoking aisle</Description>
+	</SeatChoice>
+	<SeatChoice ID="9">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nonsmoking window</Description>
+	</SeatChoice>
+	<SeatChoice ID="10">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nonsmoking bulkhead</Description>
+	</SeatChoice>
+	<SeatChoice ID="11">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nonsmoking any</Description>
+	</SeatChoice>
+	<SeatChoice ID="12">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Smoking aisle</Description>
+	</SeatChoice>
+	<SeatChoice ID="13">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Smoking window</Description>
+	</SeatChoice>
+	<SeatChoice ID="14">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Smoking bulkhead</Description>
+	</SeatChoice>
+	<SeatChoice ID="15">
+		<LastChanged>2008-11-18T10:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Smoking any</Description>
+	</SeatChoice>
+</file>

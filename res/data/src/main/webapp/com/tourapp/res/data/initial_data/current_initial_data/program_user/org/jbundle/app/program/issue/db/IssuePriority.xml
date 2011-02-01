@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<IssuePriority ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Must fix - High</Description>
+		<Code>001</Code>
+	</IssuePriority>
+	<IssuePriority ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Must fix - Medium</Description>
+		<Code>002</Code>
+	</IssuePriority>
+	<IssuePriority ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Must fix - Low</Description>
+		<Code>003</Code>
+	</IssuePriority>
+	<IssuePriority ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>If have time - High</Description>
+		<Code>004</Code>
+	</IssuePriority>
+	<IssuePriority ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>If have time - Medium</Description>
+		<Code>005</Code>
+	</IssuePriority>
+	<IssuePriority ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>If have time - Low</Description>
+		<Code>006</Code>
+	</IssuePriority>
+	<IssuePriority ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Next version - High</Description>
+		<Code>007</Code>
+	</IssuePriority>
+	<IssuePriority ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Next version - Low</Description>
+		<Code>008</Code>
+	</IssuePriority>
+	<IssuePriority ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Don't fix</Description>
+		<Code>009</Code>
+	</IssuePriority>
+</file>

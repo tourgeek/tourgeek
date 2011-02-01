@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProfileControl ID="1">
+		<LastChanged>2010-11-30T17:40:29</LastChanged>
+		<Deleted>N</Deleted>
+		<DefaultProfileStatusID>3</DefaultProfileStatusID>
+		<DefaultProfileClassID>3</DefaultProfileClassID>
+		<DefaultProfileTypeID>1</DefaultProfileTypeID>
+		<CountryID>182</CountryID>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>2</MessageTransportID>
+	</ProfileControl>
+</file>

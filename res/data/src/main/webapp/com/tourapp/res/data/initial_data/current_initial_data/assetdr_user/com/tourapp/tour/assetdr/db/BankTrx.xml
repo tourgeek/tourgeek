@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<BankTrx ID="1">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>95</TrxStatusID>
+		<TrxDate>2010-12-10T04:00:02</TrxDate>
+		<AmountLocal>800.00</AmountLocal>
+		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>2</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName>Payment (Cash in)</PayeeName>
+		<Amount>800.00</Amount>
+		<Exchange/>
+		<InvSign/>
+		<InvBalance/>
+		<InvBalanceLocal/>
+		<Comments>Payment (Cash in)</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+</file>

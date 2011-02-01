@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<JnlpFile ID="1">
+		<LastChanged>2010-12-02T15:08:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>app</Name>
+		<Description>Personal Application Resources</Description>
+		<ShortDesc>Personal Application Resources</ShortDesc>
+		<Title>Personal Application Resources</Title>
+		<Icon>images/tour/icons/Tour.gif</Icon>
+		<FileLocation/>
+	</JnlpFile>
+	<JnlpFile ID="4">
+		<LastChanged>2010-12-02T15:08:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>tour</Name>
+		<Description>Tour Application Resources</Description>
+		<ShortDesc>Tour Application Resources</ShortDesc>
+		<Title>Tour Application Resources</Title>
+		<Icon>images/tour/icons/Tour.gif</Icon>
+		<FileLocation/>
+	</JnlpFile>
+	<JnlpFile ID="6">
+		<LastChanged>2010-12-02T15:08:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>resource</Name>
+		<Description>Internationalization Resources</Description>
+		<ShortDesc>Internationalization Resources</ShortDesc>
+		<Title>Internationalization Resources</Title>
+		<Icon>images/tour/icons/Tour.gif</Icon>
+		<FileLocation/>
+	</JnlpFile>
+	<JnlpFile ID="7">
+		<LastChanged>2010-12-02T15:08:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>thintour</Name>
+		<Description>Thin Tour Application Resources</Description>
+		<ShortDesc>Thin Tour Application Resources</ShortDesc>
+		<Title>Thin Tour Application Resources</Title>
+		<Icon>images/tour/icons/Tour.gif</Icon>
+		<FileLocation/>
+	</JnlpFile>
+	<JnlpFile ID="8">
+		<LastChanged>2010-12-02T15:08:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>notusedtour</Name>
+		<Description>Not used</Description>
+		<ShortDesc>Not used</ShortDesc>
+		<Title>Not used</Title>
+		<Icon>images/tour/icons/Tour.gif</Icon>
+		<FileLocation/>
+	</JnlpFile>
+</file>

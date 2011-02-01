@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ArControl ID="1">
+		<LastChanged>2010-04-02T16:01:13</LastChanged>
+		<Deleted>N</Deleted>
+		<ArBankAcctID>2</ArBankAcctID>
+		<ArAccountID>10</ArAccountID>
+		<McoRecAccountID>11</McoRecAccountID>
+		<McoVarAccountID>63</McoVarAccountID>
+		<McoSuspenseAccountID>50</McoSuspenseAccountID>
+		<McoCommPer>0.1000</McoCommPer>
+		<McoSvcPer>0.0200</McoSvcPer>
+		<McoTaxPer>0.0400</McoTaxPer>
+		<NonTourAccountID>12</NonTourAccountID>
+		<RefundBankAcctID>2</RefundBankAcctID>
+		<RefundSuspenseAccountID>50</RefundSuspenseAccountID>
+		<AirlineID>737</AirlineID>
+		<CardID>2</CardID>
+		<CreditCardRecAccountID>112</CreditCardRecAccountID>
+		<CreditCardSuspenseAccountID>50</CreditCardSuspenseAccountID>
+		<CreditCardVarAccountID>113</CreditCardVarAccountID>
+		<CreditCardSvcPer>0.0000</CreditCardSvcPer>
+		<CreditDebitAccountID>50</CreditDebitAccountID>
+	</ArControl>
+</file>

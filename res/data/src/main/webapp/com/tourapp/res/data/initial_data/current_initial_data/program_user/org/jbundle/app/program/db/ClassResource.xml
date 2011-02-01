@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ClassResource ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>10</SequenceNo>
+		<KeyName>GenericName</KeyName>
+		<ValueName>GenericName</ValueName>
+	</ClassResource>
+	<ClassResource ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>20</SequenceNo>
+		<KeyName>AddressLine1</KeyName>
+		<ValueName>AddressLine1</ValueName>
+	</ClassResource>
+	<ClassResource ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestDetailConversionTable</ClassName>
+		<SequenceNo>10</SequenceNo>
+		<KeyName>BrochureID</KeyName>
+		<ValueName>BrochureID</ValueName>
+	</ClassResource>
+	<ClassResource ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestDetailConversionTable</ClassName>
+		<SequenceNo>20</SequenceNo>
+		<KeyName>BrochureQty</KeyName>
+		<ValueName>BrochureQty</ValueName>
+	</ClassResource>
+	<ClassResource ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestDetailConversionTable</ClassName>
+		<SequenceNo>30</SequenceNo>
+		<KeyName>BrochureDesc</KeyName>
+		<ValueName>Description</ValueName>
+	</ClassResource>
+	<ClassResource ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>30</SequenceNo>
+		<KeyName>AddressLine2</KeyName>
+		<ValueName>AddressLine2</ValueName>
+	</ClassResource>
+	<ClassResource ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>5</SequenceNo>
+		<KeyName>ProfileCode</KeyName>
+		<ValueName>ProfileCode</ValueName>
+	</ClassResource>
+	<ClassResource ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>60</SequenceNo>
+		<KeyName>CityOrTown</KeyName>
+		<ValueName>CityOrTown</ValueName>
+	</ClassResource>
+	<ClassResource ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>70</SequenceNo>
+		<KeyName>StateOrRegion</KeyName>
+		<ValueName>StateOrRegion</ValueName>
+	</ClassResource>
+	<ClassResource ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>80</SequenceNo>
+		<KeyName>PostalCode</KeyName>
+		<ValueName>PostalCode</ValueName>
+	</ClassResource>
+	<ClassResource ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>90</SequenceNo>
+		<KeyName>Country</KeyName>
+		<ValueName>Country</ValueName>
+	</ClassResource>
+	<ClassResource ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>100</SequenceNo>
+		<KeyName>Attention</KeyName>
+		<ValueName>Attention</ValueName>
+	</ClassResource>
+	<ClassResource ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>110</SequenceNo>
+		<KeyName>Email</KeyName>
+		<ValueName>Email</ValueName>
+	</ClassResource>
+	<ClassResource ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName>RequestConversionTable</ClassName>
+		<SequenceNo>120</SequenceNo>
+		<KeyName>BrochureText</KeyName>
+		<ValueName>BrochureText</ValueName>
+	</ClassResource>
+</file>

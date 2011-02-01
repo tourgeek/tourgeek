@@ -1,0 +1,3989 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Script ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Run all tests</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Setup demos</Name>
+		<ParentFolderID/>
+		<Sequence>10</Sequence>
+		<Comment>Setup the demos</Comment>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="4">
+		<LastChanged>2010-10-21T13:20:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Restore files for test and demo</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment>Run only under jdbc - Ignore errors</Comment>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 21 13:20:24 PDT 2010
+archiveFolder=/home/don/workspace/jbundle-workspace/tourapp-root/tourapp-config/tourapp-config-data/src/main/webapp/docs/data/test-data/current-test-data
+type=USER_DATA
+xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="7">
+		<LastChanged>2009-12-03T04:38:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup the initial test data</Name>
+		<ParentFolderID>4</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Dec 03 04:38:10 PST 2009
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Purge Test File</Name>
+		<ParentFolderID>9</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[xyz=abc
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Restore Test data</Name>
+		<ParentFolderID>11</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[xyz=abc
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="13">
+		<LastChanged>2010-01-02T13:02:45</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup GenLed Files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:02:45 PST 2010
+package=com.tourapp.tour.genled.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="14">
+		<LastChanged>2010-04-18T10:47:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge G/L Files</Name>
+		<ParentFolderID>13</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:43 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="15">
+		<LastChanged>2010-04-18T10:47:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup G/L Files</Name>
+		<ParentFolderID>13</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:49 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="21">
+		<LastChanged>2010-01-02T13:02:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Assetdr Files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:02:54 PST 2010
+package=com.tourapp.tour.assetdr.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="22">
+		<LastChanged>2010-01-02T13:03:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Profile Files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:01 PST 2010
+package=com.tourapp.tour.profile.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="23">
+		<LastChanged>2010-01-02T13:03:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Request Files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:08 PST 2010
+package=com.tourapp.tour.request.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="24">
+		<LastChanged>2010-04-18T10:47:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge AssetDr Files</Name>
+		<ParentFolderID>21</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:55 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="25">
+		<LastChanged>2010-04-18T10:48:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup AssetDr Files</Name>
+		<ParentFolderID>21</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:01 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="26">
+		<LastChanged>2010-04-18T10:48:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Profile files</Name>
+		<ParentFolderID>22</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:10 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="27">
+		<LastChanged>2010-04-18T10:48:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Profile Files</Name>
+		<ParentFolderID>22</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:20 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="28">
+		<LastChanged>2010-04-18T10:48:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Request Files</Name>
+		<ParentFolderID>23</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:38 PDT 2010
+package=.tour.request.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="29">
+		<LastChanged>2010-04-18T10:48:45</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Request Files</Name>
+		<ParentFolderID>23</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:45 PDT 2010
+package=.tour.request.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="30">
+		<LastChanged>2010-01-02T13:03:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup AcctPay files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:16 PST 2010
+package=com.tourapp.tour.acctpay.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="31">
+		<LastChanged>2010-01-02T13:03:22</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup AcctRec files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:22 PST 2010
+package=com.tourapp.tour.acctrec.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="32">
+		<LastChanged>2010-01-02T13:03:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Payroll files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>90</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:30 PST 2010
+package=com.tourapp.tour.payroll.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="33">
+		<LastChanged>2010-04-18T10:48:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge AcctPay Files</Name>
+		<ParentFolderID>30</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:58 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="34">
+		<LastChanged>2010-04-18T10:49:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup AcctPay Files</Name>
+		<ParentFolderID>30</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:05 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="35">
+		<LastChanged>2010-04-18T10:49:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup AcctRec Files</Name>
+		<ParentFolderID>31</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:20 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="36">
+		<LastChanged>2010-04-18T10:49:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge AcctRec Files</Name>
+		<ParentFolderID>31</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:15 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="37">
+		<LastChanged>2010-04-18T10:49:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Payroll Files</Name>
+		<ParentFolderID>32</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:27 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="38">
+		<LastChanged>2010-04-18T10:49:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Payroll files</Name>
+		<ParentFolderID>32</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:32 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="39">
+		<LastChanged>2010-01-02T13:03:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Product files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:38 PST 2010
+package=com.tourapp.tour.product.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="40">
+		<LastChanged>2010-01-02T13:04:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Booking files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:03:49 PST 2010
+package=com.tourapp.tour.booking.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="41">
+		<LastChanged>2010-04-18T10:49:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Air</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:58 PDT 2010
+package=com.tourapp.tour.product.air.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="42">
+		<LastChanged>2010-04-18T10:48:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Profile detail</Name>
+		<ParentFolderID>22</ParentFolderID>
+		<Sequence>15</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:15 PDT 2010
+package=com.tourapp.tour.profile.detail
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="43">
+		<LastChanged>2010-04-18T10:48:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Profile detail</Name>
+		<ParentFolderID>22</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:48:27 PDT 2010
+package=com.tourapp.tour.profile.detail
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="44">
+		<LastChanged>2010-04-18T10:50:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Cruise</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:09 PDT 2010
+package=com.tourapp.tour.product.cruise.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="45">
+		<LastChanged>2010-04-18T10:50:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Hotel</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:14 PDT 2010
+package=com.tourapp.tour.product.hotel.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="46">
+		<LastChanged>2010-04-18T10:50:03</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Car</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:03 PDT 2010
+package=com.tourapp.tour.product.car.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="47">
+		<LastChanged>2010-04-18T10:50:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Item</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:21 PDT 2010
+package=com.tourapp.tour.product.item.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="48">
+		<LastChanged>2010-04-18T10:50:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Tour</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:32 PDT 2010
+package=com.tourapp.tour.product.tour.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="49">
+		<LastChanged>2010-04-18T10:50:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Transportation</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:50 PDT 2010
+package=com.tourapp.tour.product.trans.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="50">
+		<LastChanged>2010-04-18T10:49:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Base</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:49:53 PDT 2010
+package=com.tourapp.tour.product.base.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="51">
+		<LastChanged>2010-04-18T10:50:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Land</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:27 PDT 2010
+package=com.tourapp.tour.product.land.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="52">
+		<LastChanged>2010-04-18T10:50:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Tour detail</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>90</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:37 PDT 2010
+package=com.tourapp.tour.product.tour.detail.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="53">
+		<LastChanged>2010-04-18T10:50:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Tour Schedule</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:43 PDT 2010
+package=com.tourapp.tour.product.tour.schedule.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="54">
+		<LastChanged>2010-04-18T10:50:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Base</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>210</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:50:56 PDT 2010
+package=com.tourapp.tour.product.base.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="55">
+		<LastChanged>2010-04-18T10:51:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Air</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>220</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:00 PDT 2010
+package=com.tourapp.tour.product.air.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="56">
+		<LastChanged>2010-04-18T10:51:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Car</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:05 PDT 2010
+package=com.tourapp.tour.product.car.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="57">
+		<LastChanged>2010-04-18T10:51:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Cruise</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:10 PDT 2010
+package=com.tourapp.tour.product.cruise.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="58">
+		<LastChanged>2010-04-18T10:51:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Hotel</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>250</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:14 PDT 2010
+package=com.tourapp.tour.product.hotel.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="59">
+		<LastChanged>2010-04-18T10:51:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Item</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>260</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:19 PDT 2010
+package=com.tourapp.tour.product.item.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="60">
+		<LastChanged>2010-04-18T10:51:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Land</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>270</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:24 PDT 2010
+package=com.tourapp.tour.product.land.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="61">
+		<LastChanged>2010-04-18T10:51:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Tour</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>280</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:29 PDT 2010
+package=com.tourapp.tour.product.tour.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="62">
+		<LastChanged>2010-04-18T10:51:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Tour detail</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>290</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:35 PDT 2010
+package=com.tourapp.tour.product.tour.detail.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="63">
+		<LastChanged>2010-04-18T10:51:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Tour schedule</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>300</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:43 PDT 2010
+package=com.tourapp.tour.product.tour.schedule.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="64">
+		<LastChanged>2010-04-18T10:51:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Transportation</Name>
+		<ParentFolderID>39</ParentFolderID>
+		<Sequence>310</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:49 PDT 2010
+package=com.tourapp.tour.product.trans.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="65">
+		<LastChanged>2010-04-18T10:51:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Booking</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:51:58 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="66">
+		<LastChanged>2010-04-18T10:52:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Booking detail</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:04 PDT 2010
+package=com.tourapp.tour.booking.detail.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="67">
+		<LastChanged>2010-04-18T10:52:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Booking History</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:10 PDT 2010
+package=com.tourapp.tour.booking.history.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="68">
+		<LastChanged>2010-04-18T10:52:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Booking</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:20 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="69">
+		<LastChanged>2010-04-18T10:52:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Booking detail</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:26 PDT 2010
+package=com.tourapp.tour.booking.detail.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="70">
+		<LastChanged>2010-04-18T10:52:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Booking History</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:31 PDT 2010
+package=com.tourapp.tour.booking.history.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="71">
+		<LastChanged>2010-01-02T13:08:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup main files</Name>
+		<ParentFolderID>4</ParentFolderID>
+		<Sequence>25</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:08:14 PST 2010
+package=org.jbundle.main.user.db
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="72">
+		<LastChanged>2010-04-18T10:45:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge main user files</Name>
+		<ParentFolderID>71</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:45:33 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="73">
+		<LastChanged>2010-04-18T10:45:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge main message files</Name>
+		<ParentFolderID>71</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:45:38 PDT 2010
+package=org.jbundle.main.msg.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="74">
+		<LastChanged>2010-04-18T10:46:22</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup main user files</Name>
+		<ParentFolderID>71</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:46:22 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="75">
+		<LastChanged>2010-04-18T10:46:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup main message files</Name>
+		<ParentFolderID>71</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:46:29 PDT 2010
+package=org.jbundle.main.msg.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="79">
+		<LastChanged>2009-12-03T04:38:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup auxiliary test data</Name>
+		<ParentFolderID>4</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Dec 03 04:37:09 PST 2009
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="80">
+		<LastChanged>2010-04-18T10:47:13</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Users</Name>
+		<ParentFolderID>79</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:13 PDT 2010
+package=org.jbundle.main.user.db
+record=UserInfo
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="81">
+		<LastChanged>2010-04-18T10:47:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Users</Name>
+		<ParentFolderID>79</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:20 PDT 2010
+record=UserInfo
+package=org.jbundle.main.user.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="82">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Setup data from External Sources</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="84">
+		<LastChanged>2008-10-15T04:48:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Retrieve Country Lists</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="85">
+		<LastChanged>2008-10-15T04:45:22</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Retrieve City Lists</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="86">
+		<LastChanged>2008-10-15T04:48:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Retrieve State Lists</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="87">
+		<LastChanged>2008-10-17T14:36:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Download main list from ISO</Name>
+		<ParentFolderID>84</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment>Download the text list from ISO (Also available in XML)</Comment>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 17 14:35:56 PDT 2008
+out=/tmp/isocountrycodes.txt
+url=http\://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1-semic.txt
+process=.program.manual.importexternal.DownloadDataProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="88">
+		<LastChanged>2008-10-15T12:58:47</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Get Currency List</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment><![CDATA[See: currencysource.com
+and finance.yahoo.com
+See soapui test for currency example
+Try to find out how moneydance does it.]]></Comment>
+		<Code/>
+		<Properties/>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="89">
+		<LastChanged>2006-04-20T04:11:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup System from Scratch</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="90">
+		<LastChanged>2006-04-20T04:12:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Write all Programs</Name>
+		<ParentFolderID>89</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="91">
+		<LastChanged>2006-04-20T04:12:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Write all Resources</Name>
+		<ParentFolderID>89</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="92">
+		<LastChanged>2006-04-20T04:12:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Create build.xml</Name>
+		<ParentFolderID>89</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="93">
+		<LastChanged>2006-04-20T04:13:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Create jnlp files</Name>
+		<ParentFolderID>89</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="94">
+		<LastChanged>2006-04-20T04:13:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Build all (ant)</Name>
+		<ParentFolderID>89</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="95">
+		<LastChanged>2010-04-18T10:52:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge Booking Inventory</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>35</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:15 PDT 2010
+package=com.tourapp.tour.booking.inventory.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="96">
+		<LastChanged>2010-04-18T10:52:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Booking Inventory</Name>
+		<ParentFolderID>40</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:52:37 PDT 2010
+package=com.tourapp.tour.booking.inventory.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="101">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Replication Lists</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>t</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="102">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Web Replications</Name>
+		<ParentFolderID>101</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>t</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="103">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Image Replications</Name>
+		<ParentFolderID>101</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>t</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="104">
+		<LastChanged>2007-01-18T13:20:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>JLF Graphics Replications</Name>
+		<ParentFolderID>103</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Jan 18 13:20:01 PST 2007
+]]></Properties>
+		<Command>t</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="105">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Toolbar Buttons</Name>
+		<ParentFolderID>104</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=toolbarButtonGraphics/
+		destination=buttons/]]></Properties>
+		<Command>t</Command>
+		<Source>toolbarButtonGraphics/</Source>
+		<Destination>buttons/</Destination>
+	</Script>
+	<Script ID="106">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>development</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=development/</Properties>
+		<Command>t</Command>
+		<Source>development/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="107">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>general</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=general/</Properties>
+		<Command>t</Command>
+		<Source>general/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="108">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>media</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=media/</Properties>
+		<Command>t</Command>
+		<Source>media/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="109">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>navigation</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=navigation/</Properties>
+		<Command>t</Command>
+		<Source>navigation/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="110">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>table</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=table/</Properties>
+		<Command>t</Command>
+		<Source>table/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="111">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=About16.gif
+		destination=About.gif]]></Properties>
+		<Command>t</Command>
+		<Source>About16.gif</Source>
+		<Destination>About.gif</Destination>
+	</Script>
+	<Script ID="112">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Help16.gif
+		destination=Help.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Help16.gif</Source>
+		<Destination>Help.gif</Destination>
+	</Script>
+	<Script ID="113">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ComposeMail16.gif
+		destination=EMail.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ComposeMail16.gif</Source>
+		<Destination>EMail.gif</Destination>
+	</Script>
+	<Script ID="114">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Copy16.gif
+		destination=Copy.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Copy16.gif</Source>
+		<Destination>Copy.gif</Destination>
+	</Script>
+	<Script ID="115">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Cut16.gif
+		destination=Cut.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Cut16.gif</Source>
+		<Destination>Cut.gif</Destination>
+	</Script>
+	<Script ID="116">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Delete16.gif
+		destination=Delete.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Delete16.gif</Source>
+		<Destination>Delete.gif</Destination>
+	</Script>
+	<Script ID="117">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Export16.gif
+		destination=Export.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Export16.gif</Source>
+		<Destination>Export.gif</Destination>
+	</Script>
+	<Script ID="118">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Find16.gif
+		destination=Find.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Find16.gif</Source>
+		<Destination>Find.gif</Destination>
+	</Script>
+	<Script ID="119">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Import16.gif
+		destination=Import.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Import16.gif</Source>
+		<Destination>Import.gif</Destination>
+	</Script>
+	<Script ID="120">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Information16.gif
+		destination=information.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Information16.gif</Source>
+		<Destination>information.gif</Destination>
+	</Script>
+	<Script ID="121">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Properties16.gif
+		destination=Properties.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Properties16.gif</Source>
+		<Destination>Properties.gif</Destination>
+	</Script>
+	<Script ID="122">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Redo16.gif
+		destination=Redo.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Redo16.gif</Source>
+		<Destination>Redo.gif</Destination>
+	</Script>
+	<Script ID="123">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Refresh16.gif
+		destination=Refresh.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Refresh16.gif</Source>
+		<Destination>Refresh.gif</Destination>
+	</Script>
+	<Script ID="124">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Save16.gif
+		destination=Save.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Save16.gif</Source>
+		<Destination>Save.gif</Destination>
+	</Script>
+	<Script ID="125">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Stop16.gif
+		destination=Stop.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Stop16.gif</Source>
+		<Destination>Stop.gif</Destination>
+	</Script>
+	<Script ID="126">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Undo16.gif
+		destination=Undo.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Undo16.gif</Source>
+		<Destination>Undo.gif</Destination>
+	</Script>
+	<Script ID="127">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>109</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Back16.gif
+		destination=Back.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Back16.gif</Source>
+		<Destination>Back.gif</Destination>
+	</Script>
+	<Script ID="128">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>109</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Down16.gif
+		destination=Down.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Down16.gif</Source>
+		<Destination>Down.gif</Destination>
+	</Script>
+	<Script ID="129">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>109</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Forward16.gif
+		destination=Forward.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Forward16.gif</Source>
+		<Destination>Forward.gif</Destination>
+	</Script>
+	<Script ID="130">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>109</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Up16.gif
+		destination=Up.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Up16.gif</Source>
+		<Destination>Up.gif</Destination>
+	</Script>
+	<Script ID="131">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>109</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Home16.gif
+		destination=Home.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Home16.gif</Source>
+		<Destination>Home.gif</Destination>
+	</Script>
+	<Script ID="132">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ContextualHelp16.gif
+		destination=Context.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ContextualHelp16.gif</Source>
+		<Destination>Context.gif</Destination>
+	</Script>
+	<Script ID="133">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Zoom16.gif
+		destination=Display.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Zoom16.gif</Source>
+		<Destination>Display.gif</Destination>
+	</Script>
+	<Script ID="134">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>106</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Applet16.gif
+		destination=Java.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Applet16.gif</Source>
+		<Destination>Java.gif</Destination>
+	</Script>
+	<Script ID="135">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=New16.gif
+		destination=New.gif]]></Properties>
+		<Command>t</Command>
+		<Source>New16.gif</Source>
+		<Destination>New.gif</Destination>
+	</Script>
+	<Script ID="136">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Open16.gif
+		destination=Open.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Open16.gif</Source>
+		<Destination>Open.gif</Destination>
+	</Script>
+	<Script ID="137">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Print16.gif
+		destination=Print.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Print16.gif</Source>
+		<Destination>Print.gif</Destination>
+	</Script>
+	<Script ID="138">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Paste16.gif
+		destination=Paste.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Paste16.gif</Source>
+		<Destination>Paste.gif</Destination>
+	</Script>
+	<Script ID="139">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>108</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=FastForward16.gif
+		destination=Last.gif]]></Properties>
+		<Command>t</Command>
+		<Source>FastForward16.gif</Source>
+		<Destination>Last.gif</Destination>
+	</Script>
+	<Script ID="140">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>108</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Play16.gif
+		destination=Next.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Play16.gif</Source>
+		<Destination>Next.gif</Destination>
+	</Script>
+	<Script ID="141">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>108</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Rewind16.gif
+		destination=First.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Rewind16.gif</Source>
+		<Destination>First.gif</Destination>
+	</Script>
+	<Script ID="142">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>106</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=WebComponent16.gif
+		destination=URL.gif]]></Properties>
+		<Command>t</Command>
+		<Source>WebComponent16.gif</Source>
+		<Destination>URL.gif</Destination>
+	</Script>
+	<Script ID="143">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ZoomIn16.gif
+		destination=Expand.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ZoomIn16.gif</Source>
+		<Destination>Expand.gif</Destination>
+	</Script>
+	<Script ID="144">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ZoomOut16.gif
+		destination=Contract.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ZoomOut16.gif</Source>
+		<Destination>Contract.gif</Destination>
+	</Script>
+	<Script ID="145">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Refresh16.gif
+		destination=Reset.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Refresh16.gif</Source>
+		<Destination>Reset.gif</Destination>
+	</Script>
+	<Script ID="146">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Add16.gif
+		destination=Submit.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Add16.gif</Source>
+		<Destination>Submit.gif</Destination>
+	</Script>
+	<Script ID="147">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Zoom16.gif
+		destination=Lookup.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Zoom16.gif</Source>
+		<Destination>Lookup.gif</Destination>
+	</Script>
+	<Script ID="148">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Extra Graphics</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=extra/</Properties>
+		<Command>t</Command>
+		<Source>extra/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="149">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Grid16.gif
+		destination=Grid.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Grid16.gif</Source>
+		<Destination>Grid.gif</Destination>
+	</Script>
+	<Script ID="150">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Go16.gif
+		destination=Go.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Go16.gif</Source>
+		<Destination>Go.gif</Destination>
+	</Script>
+	<Script ID="151">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Run16.gif
+		destination=Run.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Run16.gif</Source>
+		<Destination>Run.gif</Destination>
+	</Script>
+	<Script ID="152">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Close16.gif
+		destination=Close.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Close16.gif</Source>
+		<Destination>Close.gif</Destination>
+	</Script>
+	<Script ID="153">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Add16.gif
+		destination=Add.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Add16.gif</Source>
+		<Destination>Add.gif</Destination>
+	</Script>
+	<Script ID="154">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Prev16.gif
+		destination=Prev.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Prev16.gif</Source>
+		<Destination>Prev.gif</Destination>
+	</Script>
+	<Script ID="155">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>107</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ComposeMail16.gif
+		destination=Mail.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ComposeMail16.gif</Source>
+		<Destination>Mail.gif</Destination>
+	</Script>
+	<Script ID="156">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Icons</Name>
+		<ParentFolderID>104</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=toolbarButtonGraphics/
+		destination=icons/]]></Properties>
+		<Command>t</Command>
+		<Source>toolbarButtonGraphics/</Source>
+		<Destination>icons/</Destination>
+	</Script>
+	<Script ID="157">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>development</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=development/</Properties>
+		<Command>t</Command>
+		<Source>development/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="158">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>general</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=general/</Properties>
+		<Command>t</Command>
+		<Source>general/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="159">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>media</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=media/</Properties>
+		<Command>t</Command>
+		<Source>media/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="160">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>navigation</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=navigation/</Properties>
+		<Command>t</Command>
+		<Source>navigation/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="161">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>table</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=table/</Properties>
+		<Command>t</Command>
+		<Source>table/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="162">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>text</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=text/</Properties>
+		<Command>t</Command>
+		<Source>text/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="163">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>extra</Name>
+		<ParentFolderID>156</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=extra/</Properties>
+		<Command>t</Command>
+		<Source>extra/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="164">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>157</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=WebComponent24.gif
+		destination=link.gif]]></Properties>
+		<Command>t</Command>
+		<Source>WebComponent24.gif</Source>
+		<Destination>link.gif</Destination>
+	</Script>
+	<Script ID="165">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>157</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Host24.gif
+		destination=screen.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Host24.gif</Source>
+		<Destination>screen.gif</Destination>
+	</Script>
+	<Script ID="166">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>157</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ComposeMail24.gif
+		destination=mail.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ComposeMail24.gif</Source>
+		<Destination>mail.gif</Destination>
+	</Script>
+	<Script ID="167">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>157</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Applet24.gif
+		destination=applet.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Applet24.gif</Source>
+		<Destination>applet.gif</Destination>
+	</Script>
+	<Script ID="168">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>158</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Open24.gif
+		destination=menu.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Open24.gif</Source>
+		<Destination>menu.gif</Destination>
+	</Script>
+	<Script ID="169">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>158</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Save24.gif
+		destination=file.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Save24.gif</Source>
+		<Destination>file.gif</Destination>
+	</Script>
+	<Script ID="170">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>158</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Help24.gif
+		destination=help.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Help24.gif</Source>
+		<Destination>help.gif</Destination>
+	</Script>
+	<Script ID="171">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=RowInsertBefore24.gif
+		destination=record.gif]]></Properties>
+		<Command>t</Command>
+		<Source>RowInsertBefore24.gif</Source>
+		<Destination>record.gif</Destination>
+	</Script>
+	<Script ID="172">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>162</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=AlignLeft24.gif
+		destination=form.gif]]></Properties>
+		<Command>t</Command>
+		<Source>AlignLeft24.gif</Source>
+		<Destination>form.gif</Destination>
+	</Script>
+	<Script ID="173">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>110</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=AlignLeft16.gif
+		destination=Form.gif]]></Properties>
+		<Command>t</Command>
+		<Source>AlignLeft16.gif</Source>
+		<Destination>Form.gif</Destination>
+	</Script>
+	<Script ID="174">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Grid16.gif
+		destination=Detail.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Grid16.gif</Source>
+		<Destination>Detail.gif</Destination>
+	</Script>
+	<Script ID="175">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>163</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Grid24.gif
+		destination=record.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Grid24.gif</Source>
+		<Destination>record.gif</Destination>
+	</Script>
+	<Script ID="176">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>text</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>55</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties>source=text/</Properties>
+		<Command>t</Command>
+		<Source>text/</Source>
+		<Destination/>
+	</Script>
+	<Script ID="177">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>176</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=AlignLeft16.gif
+		destination=Form.gif]]></Properties>
+		<Command>t</Command>
+		<Source>AlignLeft16.gif</Source>
+		<Destination>Form.gif</Destination>
+	</Script>
+	<Script ID="178">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>163</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=noimage24.gif
+		destination=noimage.gif]]></Properties>
+		<Command>t</Command>
+		<Source>noimage24.gif</Source>
+		<Destination>noimage.gif</Destination>
+	</Script>
+	<Script ID="179">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>163</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=menurec24.gif
+		destination=menurec.gif]]></Properties>
+		<Command>t</Command>
+		<Source>menurec24.gif</Source>
+		<Destination>menurec.gif</Destination>
+	</Script>
+	<Script ID="180">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>158</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=ComposeMail24.gif
+		destination=mail.gif]]></Properties>
+		<Command>t</Command>
+		<Source>ComposeMail24.gif</Source>
+		<Destination>mail.gif</Destination>
+	</Script>
+	<Script ID="181">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Post16.gif
+		destination=Post.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Post16.gif</Source>
+		<Destination>Post.gif</Destination>
+	</Script>
+	<Script ID="182">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>148</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Reversal16.gif
+		destination=Reversal.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Reversal16.gif</Source>
+		<Destination>Reversal.gif</Destination>
+	</Script>
+	<Script ID="183">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>108</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Movie16.gif
+		destination=Slide.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Movie16.gif</Source>
+		<Destination>Slide.gif</Destination>
+	</Script>
+	<Script ID="184">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>158</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Open24.gif
+		destination=folder.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Open24.gif</Source>
+		<Destination>folder.gif</Destination>
+	</Script>
+	<Script ID="185">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID>158</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[source=Zoom24.gif
+		destination=picture.gif]]></Properties>
+		<Command>t</Command>
+		<Source>Zoom24.gif</Source>
+		<Destination>picture.gif</Destination>
+	</Script>
+	<Script ID="202">
+		<LastChanged>2006-09-08T16:10:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge the code tables</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Sep 08 16:10:51 PDT 2006
+package=.tour.product.base.ota.db
+process=.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="203">
+		<LastChanged>2008-09-14T04:54:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Import OTA data into the code tables</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Sep 14 04:54:02 PDT 2008
+filepath=/var/tourstudio/java/lib/ota-tools/ota-schema-tools/build/2006A/docs/OTA_CodeTable20060606.xml
+process=.program.script.importdata.ImportOTACodeTablesProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="204">
+		<LastChanged>2006-09-10T01:50:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Populate the Meal Plan Table (seek maste</Name>
+		<ParentFolderID>201</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Sep 10 01:50:54 PDT 2006
+record=OTACodeTable
+NameCode=MPT
+]]></Properties>
+		<Command>S</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="205">
+		<LastChanged>2006-09-10T01:40:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read thru the Meal Plan detail</Name>
+		<ParentFolderID>204</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Sep 10 01:20:52 PDT 2006
+record=OTACodes
+destinationRecord=MealPlan
+parentRecord=OTACodeTable
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="206">
+		<LastChanged>2006-09-10T01:41:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>ID</Name>
+		<ParentFolderID>205</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Sep 10 01:41:26 PDT 2006
+destination=ID
+source=Value
+]]></Properties>
+		<Command>F</Command>
+		<Source>Value</Source>
+		<Destination>ID</Destination>
+	</Script>
+	<Script ID="207">
+		<LastChanged>2006-09-10T01:42:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Desc</Name>
+		<ParentFolderID>205</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Sep 10 01:42:44 PDT 2006
+destination=Description
+source=Name
+]]></Properties>
+		<Command>F</Command>
+		<Source>Name</Source>
+		<Destination>Description</Destination>
+	</Script>
+	<Script ID="209">
+		<LastChanged>2008-01-18T13:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Run Message test</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>200</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Jan 18 13:55:24 PST 2008
+process=.main.msg.process.MessageTimeoutProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="210">
+		<LastChanged>2010-04-18T10:45:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge calendar files</Name>
+		<ParentFolderID>71</ParentFolderID>
+		<Sequence>25</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:45:48 PDT 2010
+package=org.jbundle.main.calendar.db
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="211">
+		<LastChanged>2010-04-18T10:46:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup calendar files</Name>
+		<ParentFolderID>71</ParentFolderID>
+		<Sequence>45</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:46:36 PDT 2010
+package=org.jbundle.main.calendar.db
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="212">
+		<LastChanged>2008-10-15T04:47:23</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Crunch Skymap data</Name>
+		<ParentFolderID>85</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 15 04:47:20 PDT 2008
+destination=/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.txt
+source=/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.dat
+process=.program.data.importfix.importdata.MergeSkymap
+]]></Properties>
+		<Command>R</Command>
+		<Source>/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.dat</Source>
+		<Destination>/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.txt</Destination>
+	</Script>
+	<Script ID="213">
+		<LastChanged>2008-10-17T14:42:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Fix City capitalization</Name>
+		<ParentFolderID>85</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 17 14:39:35 PDT 2008
+process=.program.script.data.importfix.fixdata.ScanCity
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="214">
+		<LastChanged>2008-10-15T16:58:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read currencies A-B</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 15 16:58:41 PDT 2008
+source=file\:///tmp/currency.html
+process=.program.script.data.importfix.importdata.MergeForexCurrency
+]]></Properties>
+		<Command>R</Command>
+		<Source>file:///tmp/currency.html</Source>
+		<Destination/>
+	</Script>
+	<Script ID="215">
+		<LastChanged>2008-10-15T13:38:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Load Currencies A-B</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 15 13:38:04 PDT 2008
+destination=/tmp/currency.html
+source=http\://www.forexrealm.com/additional-info/currencies-codes-a-b.html
+process=.program.script.data.importfix.util.TidyHtml
+]]></Properties>
+		<Command>R</Command>
+		<Source>http://www.forexrealm.com/additional-info/currencies-codes-a-b.html</Source>
+		<Destination>/tmp/currency.html</Destination>
+	</Script>
+	<Script ID="216">
+		<LastChanged>2008-10-16T02:18:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Load Currencies C-F</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:18:49 PDT 2008
+destination=/tmp/currency.html
+source=http\://www.forexrealm.com/additional-info/currencies-codes-c-f.html
+process=.program.script.data.importfix.util.TidyHtml
+]]></Properties>
+		<Command>R</Command>
+		<Source>http://www.forexrealm.com/additional-info/currencies-codes-c-f.html</Source>
+		<Destination>/tmp/currency.html</Destination>
+	</Script>
+	<Script ID="217">
+		<LastChanged>2008-10-16T02:19:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Load Currencies G-K</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:19:41 PDT 2008
+destination=/tmp/currency.html
+source=http\://www.forexrealm.com/additional-info/currencies-codes-g-k.html
+process=.program.script.data.importfix.util.TidyHtml
+]]></Properties>
+		<Command>R</Command>
+		<Source>http://www.forexrealm.com/additional-info/currencies-codes-g-k.html</Source>
+		<Destination>/tmp/currency.html</Destination>
+	</Script>
+	<Script ID="218">
+		<LastChanged>2008-10-16T02:10:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Load Currencies L-O</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:10:04 PDT 2008
+destination=/tmp/currency.html
+source=http\://www.forexrealm.com/additional-info/currencies-codes-l-o.html
+process=.program.script.data.importfix.util.TidyHtml
+]]></Properties>
+		<Command>R</Command>
+		<Source>http://www.forexrealm.com/additional-info/currencies-codes-l-o.html</Source>
+		<Destination>/tmp/currency.html</Destination>
+	</Script>
+	<Script ID="219">
+		<LastChanged>2008-10-16T02:11:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Load currencys P-S</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>90</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:10:53 PDT 2008
+destination=/tmp/currency.html
+source=http\://www.forexrealm.com/additional-info/currencies-codes-p-s.html
+process=.program.script.data.importfix.util.TidyHtml
+]]></Properties>
+		<Command>R</Command>
+		<Source>http://www.forexrealm.com/additional-info/currencies-codes-p-s.html</Source>
+		<Destination>/tmp/currency.html</Destination>
+	</Script>
+	<Script ID="220">
+		<LastChanged>2008-10-16T02:31:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Load Currencys T-Z</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:31:19 PDT 2008
+destination=/tmp/currency.html
+source=http\://www.forexrealm.com/additional-info/currencies-codes-t-z.html
+process=.program.script.data.importfix.util.TidyHtml
+]]></Properties>
+		<Command>R</Command>
+		<Source>http://www.forexrealm.com/additional-info/currencies-codes-t-z.html</Source>
+		<Destination>/tmp/currency.html</Destination>
+	</Script>
+	<Script ID="221">
+		<LastChanged>2008-10-16T02:17:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read currencys C-F</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:12:35 PDT 2008
+source=file\:///tmp/currency.html
+process=.program.script.data.importfix.importdata.MergeForexCurrency
+]]></Properties>
+		<Command>R</Command>
+		<Source>file:///tmp/currency.html</Source>
+		<Destination/>
+	</Script>
+	<Script ID="222">
+		<LastChanged>2008-10-16T02:13:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read currencys G-K</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:13:12 PDT 2008
+source=file\:///tmp/currency.html
+process=.program.script.data.importfix.importdata.MergeForexCurrency
+]]></Properties>
+		<Command>R</Command>
+		<Source>file:///tmp/currency.html</Source>
+		<Destination/>
+	</Script>
+	<Script ID="223">
+		<LastChanged>2008-10-16T02:13:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read currencys L-O</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:13:50 PDT 2008
+source=file\:///tmp/currency.html
+process=.program.script.data.importfix.importdata.MergeForexCurrency
+]]></Properties>
+		<Command>R</Command>
+		<Source>file:///tmp/currency.html</Source>
+		<Destination/>
+	</Script>
+	<Script ID="224">
+		<LastChanged>2008-10-16T02:14:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read currencys P-S</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:14:21 PDT 2008
+source=file\:///tmp/currency.html
+process=.program.script.data.importfix.importdata.MergeForexCurrency
+]]></Properties>
+		<Command>R</Command>
+		<Source>file:///tmp/currency.html</Source>
+		<Destination/>
+	</Script>
+	<Script ID="225">
+		<LastChanged>2008-10-16T02:14:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Read currencys T-Z</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>120</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 02:14:47 PDT 2008
+source=file\:///tmp/currency.html
+process=.program.script.data.importfix.importdata.MergeForexCurrency
+]]></Properties>
+		<Command>R</Command>
+		<Source>file:///tmp/currency.html</Source>
+		<Destination/>
+	</Script>
+	<Script ID="226">
+		<LastChanged>2008-10-16T11:30:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Update currencies</Name>
+		<ParentFolderID>88</ParentFolderID>
+		<Sequence>200</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 16 11:29:38 PDT 2008
+process=.tour.assetdr.process.CurrencyUpdateProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="227">
+		<LastChanged>2008-10-17T14:51:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Get Region lists</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="229">
+		<LastChanged>2008-10-17T14:53:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Fix Region Capitalization</Name>
+		<ParentFolderID>228</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 17 14:53:13 PDT 2008
+recordClass=.tour.product.base.db.Region
+field=Description
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="230">
+		<LastChanged>2008-10-17T14:54:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Fix Region capitalization</Name>
+		<ParentFolderID>227</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 17 14:54:29 PDT 2008
+recordClass=.tour.product.base.db.Region
+process=.program.script.data.importfix.base.FixCapitalization
+field=Description
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="231">
+		<LastChanged>2008-10-18T07:17:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Crunch Code Tables</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Oct 18 07:17:30 PDT 2008
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="232">
+		<LastChanged>2008-10-18T07:16:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Download alternate list</Name>
+		<ParentFolderID>84</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment>This list has all the information including calling prefixes</Comment>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Oct 18 07:16:28 PDT 2008
+source=http\://www.unc.edu/~rowlett/units/codes/country.htm
+]]></Properties>
+		<Command/>
+		<Source>http://www.unc.edu/~rowlett/units/codes/country.htm</Source>
+		<Destination/>
+	</Script>
+	<Script ID="234">
+		<LastChanged>2008-10-18T07:18:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Import OTA Code Tables</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Oct 18 07:18:09 PDT 2008
+process=.program.script.importdata.ImportOTACodeTablesProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="235">
+		<LastChanged>2008-10-18T10:43:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Meal Plan</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Oct 18 10:43:54 PDT 2008
+process=.program.script.data.importfix.merge.MergeCodeTable
+recordClass=.tour.product.base.db.MealPlan
+code=MPT
+sourceKeyField=ID
+destKeyField=ID
+destField2=Description
+sourceField2=Name
+sourceField1=ID
+destField1=ID
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="236">
+		<LastChanged>2008-10-18T12:45:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Profile Type</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Oct 18 12:44:46 PDT 2008
+destKeyField=ID
+sourceKeyField=ID
+code=PRT
+recordClass=.tour.profile.db.ProfileType
+sourceField1=Name
+process=.program.script.data.importfix.merge.MergeCodeTable
+destField1=Description
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="237">
+		<LastChanged>2008-10-19T00:53:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Product Search Tables</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 00:53:13 PDT 2008
+process=.program.script.data.importfix.merge.MergeCodeTableSearch
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="238">
+		<LastChanged>2008-10-19T00:52:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Attraction Cat</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 00:52:44 PDT 2008
+code=ACC
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="239">
+		<LastChanged>2008-10-19T01:42:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Brand Cat</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:41:13 PDT 2008
+code=BCC
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="240">
+		<LastChanged>2008-10-19T01:42:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Equipment type Cat</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:42:26 PDT 2008
+code=EQP
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="241">
+		<LastChanged>2008-10-19T01:43:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Hotel Amenity Code</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:43:24 PDT 2008
+code=HAC
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="242">
+		<LastChanged>2008-10-19T01:44:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Location Category Codes</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:44:36 PDT 2008
+code=LOC
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="243">
+		<LastChanged>2008-10-19T01:46:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Property Class</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:46:00 PDT 2008
+code=PCT
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="244">
+		<LastChanged>2008-10-19T01:46:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge package type code</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:46:47 PDT 2008
+code=PKG
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="245">
+		<LastChanged>2008-10-19T01:48:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Recreation Service code type</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:48:19 PDT 2008
+code=REC
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="246">
+		<LastChanged>2008-10-19T01:49:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Room Amenity Type</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>120</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:49:22 PDT 2008
+code=RMA
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="247">
+		<LastChanged>2008-10-19T01:51:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge Recreation Service Type Code</Name>
+		<ParentFolderID>237</ParentFolderID>
+		<Sequence>140</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 19 01:50:25 PDT 2008
+code=RST
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="248">
+		<LastChanged>2008-11-18T09:50:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge (Hotel) Rate Plan</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Nov 18 09:50:41 PST 2008
+process=.program.script.data.importfix.merge.MergeCodeTable
+code=RPT
+recordClass=.tour.product.hotel.db.HotelRate
+sourceKeyField=ID
+destKeyField=ID
+destField2=Description
+sourceField2=Name
+destField1=ID
+sourceField1=ID
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="249">
+		<LastChanged>2008-11-18T09:55:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge (Hotel) Class</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Nov 18 09:55:08 PST 2008
+process=.program.script.data.importfix.merge.MergeCodeTable
+code=SEG
+recordClass=.tour.product.hotel.db.HotelClass
+sourceKeyField=ID
+destKeyField=ID
+destField2=Description
+sourceField2=Name
+sourceField1=ID
+destField1=ID
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="250">
+		<LastChanged>2008-11-18T10:17:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Merge (Air) Seat Choice</Name>
+		<ParentFolderID>231</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Nov 18 10:06:59 PST 2008
+process=.program.script.data.importfix.merge.MergeCodeTable
+code=STP
+recordClass=.tour.product.air.db.SeatChoice
+sourceKeyField=ID
+destKeyField=ID
+destField2=Description
+sourceField2=Name
+sourceField1=ID
+destField1=ID
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="256">
+		<LastChanged>2009-07-10T16:08:13</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup tasks</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>5</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="257">
+		<LastChanged>2009-07-10T16:09:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Restore backup data</Name>
+		<ParentFolderID>256</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Jul 10 16:09:01 PDT 2009
+process=.base.db.util.log.RestoreBackupProcess
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="265">
+		<LastChanged>2010-06-20T01:06:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup all data</Name>
+		<ParentFolderID>256</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment>Run from regular tourapp (not direct)</Comment>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Jun 11 02:33:06 PDT 2010
+sourcePrefix=/home/don/workspace/jbundle-workspace/tourapp-root/tourapp-config/tourapp-config-data/src/main/webapp/docs/data
+local=Jdbc
+standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
+table=Jdbc
+remote=Jdbc
+process=.base.thread.StandaloneProcessRunnerProcess
+mode=export
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="280">
+		<LastChanged>2010-10-21T13:22:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export and fix demo data from current</Name>
+		<ParentFolderID>256</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 21 13:22:33 PDT 2010
+sourcePrefix=/home/don/workspace/jbundle-workspace/tourapp-root/tourapp-config/tourapp-config-data/src/main/webapp/docs/data/test-data
+xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="281">
+		<LastChanged>2010-05-25T15:21:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Delete old demo data</Name>
+		<ParentFolderID>280</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue May 25 15:21:30 PDT 2010
+sourceDir=raw-test-data
+destDir=raw-test-data
+process=.app.program.manual.convert.ConvertCode
+listenerClass=.app.program.script.scan.DeleteScanListener
+extension=xml
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="282">
+		<LastChanged>2010-05-25T08:19:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export current data to demo (parent)</Name>
+		<ParentFolderID>280</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue May 25 08:19:11 PDT 2010
+process=.base.thread.StandaloneProcessRunnerProcess
+remote=Jdbc
+mode=export
+standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
+type=USER_DATA
+sourceDir=raw-test-data
+local=Jdbc
+project=tourapp-tour-*
+table=Jdbc
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="283">
+		<LastChanged>2010-05-27T15:19:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Fix demo data to current directory</Name>
+		<ParentFolderID>280</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu May 27 15:19:31 PDT 2010
+sourceDir=raw-test-data
+converterPath=/home/don/workspace/jdance/WebContent/docs/styles/xsl/program/fixdemo.xsl
+destDir=scratch-test-data
+process=.app.program.manual.convert.ConvertCode
+listenerClass=.app.program.script.scan.XMLScanListener
+extension=xml
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="284">
+		<LastChanged>2010-12-09T16:14:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Move demo data to monthly offset dir</Name>
+		<ParentFolderID>280</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Dec 09 16:14:23 PST 2010
+process=.app.program.manual.convert.ConvertCode
+listenerClass=.app.program.script.scan.DateOffsetScanListener
+destDir=current-test-data
+yearOffset=0
+sourceDir=scratch-test-data
+endOfMonthFields=EndPeriod,EndDate
+extension=xml
+monthOffset=0
+dayOffset=0
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="285">
+		<LastChanged>2010-05-27T15:19:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Delete current demo data files</Name>
+		<ParentFolderID>280</ParentFolderID>
+		<Sequence>25</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu May 27 15:19:03 PDT 2010
+sourceDir=scratch-test-data
+destDir=scratch-test-data
+process=.app.program.manual.convert.ConvertCode
+listenerClass=.app.program.script.scan.DeleteScanListener
+extension=xml
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="288">
+		<LastChanged>2010-05-27T15:19:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Delete monthly data</Name>
+		<ParentFolderID>280</ParentFolderID>
+		<Sequence>35</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu May 27 15:19:51 PDT 2010
+sourceDir=current-test-data
+destDir=current-test-data
+process=.app.program.manual.convert.ConvertCode
+listenerClass=.app.program.script.scan.DeleteScanListener
+extension=xml
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="289">
+		<LastChanged>2009-12-15T00:56:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Temp test</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>500</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Dec 15 00:45:50 PST 2009
+record=.test.test.db.TestTable
+process=.program.script.process.RemoteRecordProcess
+command=test
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="290">
+		<LastChanged>2010-04-18T10:45:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Test - Restore fred test data</Name>
+		<ParentFolderID>256</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:45:09 PDT 2010
+package=.tour
+dbPrefix=fred_
+type=USER_DATA
+archiveFolder=/home/don/workspace/tourapp/tourapp-config/tourapp-config-webapp/src/main/webapp/docs/data/testdata/current
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+project=Tour
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="291">
+		<LastChanged>2010-01-02T13:04:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup Base files</Name>
+		<ParentFolderID>7</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sat Jan 02 13:04:36 PST 2010
+package=com.tourapp.tour.base.db
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="292">
+		<LastChanged>2010-04-18T10:47:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Purge base files</Name>
+		<ParentFolderID>291</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:30 PDT 2010
+process=.app.program.script.process.PurgeRecordsProcess
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="293">
+		<LastChanged>2010-04-18T10:47:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Setup base files</Name>
+		<ParentFolderID>291</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Apr 18 10:47:36 PDT 2010
+process=.app.program.script.process.ExportRecordsToXmlProcess
+mode=import
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="296">
+		<LastChanged>2010-12-05T08:12:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Program data</Name>
+		<ParentFolderID>265</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Dec 05 08:11:58 PST 2010
+sourceDir=initial-data/current-initial-data
+project=jbundle-app-program-core
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="297">
+		<LastChanged>2010-12-09T17:40:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export base program data</Name>
+		<ParentFolderID>296</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Dec 09 17:40:58 PST 2010
+programSharedDBName=program_base
+mainSharedDBName=main_base
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+dbSuffix=_base
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="298">
+		<LastChanged>2010-04-27T14:56:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Tour program data</Name>
+		<ParentFolderID>296</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Apr 23 12:07:20 PDT 2010
+package=org.jbundle.app.program.*
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="299">
+		<LastChanged>2010-12-05T08:27:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export App program data</Name>
+		<ParentFolderID>296</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Dec 05 08:27:05 PST 2010
+programSharedDBName=program_app
+package=org.jbundle.app.program.*
+dbSuffix=_app
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="300">
+		<LastChanged>2010-12-05T08:27:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Test program data</Name>
+		<ParentFolderID>296</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Dec 05 08:27:22 PST 2010
+programSharedDBName=program_test
+package=org.jbundle.app.program.*
+dbSuffix=_test
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="301">
+		<LastChanged>2010-12-05T08:12:22</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export App data</Name>
+		<ParentFolderID>265</ParentFolderID>
+		<Sequence>200</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Dec 05 08:12:12 PST 2010
+sourceDir=/initial-data/current-initial-data
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="302">
+		<LastChanged>2010-04-23T13:39:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export '' (tour) App data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="303">
+		<LastChanged>2010-12-05T08:28:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export all 'test' Data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Dec 05 08:28:39 PST 2010
+programSharedDBName=program_test
+mainUserDBName=main
+mainSharedDBName=main_base
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="304">
+		<LastChanged>2010-04-23T13:40:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export es test App Data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Fri Apr 23 13:40:45 PDT 2010
+locale=es
+programSharedDBName=program_test
+dbSuffix=_test
+project=jbundle-app-test
+language=es
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="305">
+		<LastChanged>2010-12-05T08:28:25</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export 'app' app data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Dec 05 08:28:21 PST 2010
+programSharedDBName=program_app
+mainUserDBName=main
+mainSharedDBName=main_base
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="306">
+		<LastChanged>2010-04-27T15:35:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour data</Name>
+		<ParentFolderID>282</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Apr 27 15:29:47 PDT 2010
+project=tourapp-tour-*
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="307">
+		<LastChanged>2010-04-27T15:35:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export user data</Name>
+		<ParentFolderID>282</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Apr 27 15:32:46 PDT 2010
+project=jbundle-main
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="308">
+		<LastChanged>2010-05-06T14:25:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Demo (main) data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>210</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu May 06 14:25:52 PDT 2010
+locale=demo
+language=demo
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="309">
+		<LastChanged>2010-05-06T14:36:45</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Restore DEMO data</Name>
+		<ParentFolderID>256</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu May 06 14:36:43 PDT 2010
+process=.base.thread.StandaloneProcessRunnerProcess
+remote=Jdbc
+language=demo
+mode=import
+standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
+sourceDir=/backup-data/app-backup-data
+local=Jdbc
+locale=demo
+sourcePrefix=/home/don/workspace/tourapp/tourapp-config/tourapp-config-data/src/main/webapp/docs/data
+table=Jdbc
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="310">
+		<LastChanged>2010-05-20T21:39:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Demo (quick) data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>220</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu May 20 21:39:54 PDT 2010
+locale=demoquick
+language=demoquick
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="311">
+		<LastChanged>2010-10-05T15:58:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten xsl stylesheets</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>450</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 05 15:58:51 PDT 2010
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/
+converterPath=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/program/
+destDir=flat/base
+listenerClass=.app.program.script.scan.XslImportScanListener
+process=.app.program.manual.convert.ConvertCode
+extension=xsl
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="312">
+		<LastChanged>2010-10-05T15:59:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten Ajax stylesheets</Name>
+		<ParentFolderID>311</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 05 15:59:56 PDT 2010
+sourceDir=ajax/base
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="313">
+		<LastChanged>2010-10-05T16:00:45</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten tourgeek stylesheets</Name>
+		<ParentFolderID>311</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 05 16:00:42 PDT 2010
+sourceDir=com/tourgeek
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="314">
+		<LastChanged>2010-10-19T13:14:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten tourapp stylesheets</Name>
+		<ParentFolderID>311</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 19 13:13:11 PDT 2010
+sourceDir=com/tourapp
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="315">
+		<LastChanged>2010-10-19T13:14:47</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten tourvisualizer stylesheets</Name>
+		<ParentFolderID>311</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 19 13:13:30 PDT 2010
+sourceDir=com/tourvisualizer
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="316">
+		<LastChanged>2010-10-19T13:14:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten tourapplication stylesheets</Name>
+		<ParentFolderID>311</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 19 13:13:50 PDT 2010
+sourceDir=com/tourapplication
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="317">
+		<LastChanged>2010-10-19T13:14:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Flatten tourmarketplace stylesheets</Name>
+		<ParentFolderID>311</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 19 13:14:11 PDT 2010
+sourceDir=com/tourmarketplace
+]]></Properties>
+		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="318">
+		<LastChanged>2010-12-06T05:23:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export '' main data</Name>
+		<ParentFolderID>301</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Mon Dec 06 05:22:38 PST 2010
+package=org.jbundle.main.*
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+</file>

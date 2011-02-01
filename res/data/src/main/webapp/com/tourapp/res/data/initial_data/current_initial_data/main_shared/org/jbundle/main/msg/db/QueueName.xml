@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<QueueName ID="1">
+		<LastChanged>2006-09-03T13:31:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>recordQueue</Code>
+		<Name>Record message queue</Name>
+		<ExternalQueueName/>
+		<QueueType>intranet</QueueType>
+		<PrivateQueue/>
+		<ReverseQueueNameID/>
+	</QueueName>
+	<QueueName ID="2">
+		<LastChanged>2006-09-03T13:31:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>sessionQueue</Code>
+		<Name>Client-Server private queue</Name>
+		<ExternalQueueName/>
+		<QueueType>intranet</QueueType>
+		<PrivateQueue>Y</PrivateQueue>
+		<ReverseQueueNameID/>
+	</QueueName>
+	<QueueName ID="3">
+		<LastChanged>2006-09-03T13:33:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>trxSend</Code>
+		<Name>Transaction send queue</Name>
+		<ExternalQueueName/>
+		<QueueType>intranet</QueueType>
+		<PrivateQueue/>
+		<ReverseQueueNameID>4</ReverseQueueNameID>
+	</QueueName>
+	<QueueName ID="4">
+		<LastChanged>2006-09-03T13:32:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>trxReceive</Code>
+		<Name>Trx receive queue</Name>
+		<ExternalQueueName/>
+		<QueueType>intranet</QueueType>
+		<PrivateQueue/>
+		<ReverseQueueNameID/>
+	</QueueName>
+	<QueueName ID="5">
+		<LastChanged>2006-09-03T13:33:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>chat</Code>
+		<Name>Chat queue</Name>
+		<ExternalQueueName/>
+		<QueueType>intranet</QueueType>
+		<PrivateQueue/>
+		<ReverseQueueNameID/>
+	</QueueName>
+	<QueueName ID="6">
+		<LastChanged>2006-09-05T13:44:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>jobSchedulerQueue</Code>
+		<Name>Job Scheduler Queue</Name>
+		<ExternalQueueName/>
+		<QueueType>intranet</QueueType>
+		<PrivateQueue/>
+		<ReverseQueueNameID/>
+	</QueueName>
+</file>

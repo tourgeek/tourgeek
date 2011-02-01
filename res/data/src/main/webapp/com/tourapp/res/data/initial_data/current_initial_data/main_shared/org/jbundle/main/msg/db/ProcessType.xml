@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProcessType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Update</Description>
+		<Code>UPDATE</Code>
+	</ProcessType>
+	<ProcessType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Info</Description>
+		<Code>INFO</Code>
+	</ProcessType>
+</file>

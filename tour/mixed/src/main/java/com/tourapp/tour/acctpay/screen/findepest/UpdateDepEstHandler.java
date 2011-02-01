@@ -1,0 +1,101 @@
+/**
+ *  @(#)UpdateDepEstHandler.
+ *  Copyright © 2010 tourapp.com. All rights reserved.
+ */
+package com.tourapp.tour.acctpay.screen.findepest;
+
+import java.awt.*;
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import com.tourapp.tour.acctpay.screen.trx.*;
+import com.tourapp.tour.product.base.db.*;
+import com.tourapp.tour.acctpay.db.*;
+
+/**
+ *  UpdateDepEstHandler - Add the finalization estimate G/L posting.
+ */
+public class UpdateDepEstHandler extends UpdateApTrxHandler
+{
+    /**
+     * Default constructor.
+     */
+    public UpdateDepEstHandler()
+    {
+        super();
+    }
+    /**
+     * UpdateDepEstHandler Method.
+     */
+    public UpdateDepEstHandler(Record record)
+    {
+        this();
+        this.init(record);
+    }
+    /**
+     * Initialize class fields.
+     */
+    public void init(Record record)
+    {
+        super.init(record);
+    }
+    /**
+     * Is this a new transaction (or a modification of a current transaction).
+     * If it is not new, the system will calculate the current posting and do an adjusting entry.
+     */
+    public boolean isNewTrx(int iChangeType)
+    {
+        return (iChangeType == DBConstants.AFTER_ADD_TYPE);
+    }
+    /**
+     * Get the transaction date.
+     * @return The transaction date for this type of transaction.
+     */
+    public BaseField getTrxDate()
+    {
+        return this.getOwner().getField(ApTrx.kDepartureDate);
+    }
+    /**
+     * Get the Debit Account field.
+     * @return The debit account field.
+     */
+    public ReferenceField getDrAccount()
+    {
+        Record recProductCat = this.getProductCategory();
+        if (recProductCat != null)
+            return (ReferenceField)recProductCat.getField(ProductCategory.kLandAccountID);    // Cost of tours
+        return (ReferenceField)this.getApControl().getField(ApControl.kCostAccountID);    // Rarely
+    }
+    /**
+     * Get the Credit Account field.
+     * @return The credit account field.
+     */
+    public ReferenceField getCrAccount()
+    {
+        Record recProductCat = this.getProductCategory();
+        if (recProductCat != null)
+            return (ReferenceField)recProductCat.getField(ProductCategory.kUninvAccountID);    // Uninvoiced est cost of tours
+        return null;    // Never?
+    }
+    /**
+     * Get the transaction amount for this type of transaction.
+     * @param fldTypicalBalance The typical balance field (Debit/Credit/none).
+     * @return The transaction amount.
+     */
+    public double getTrxAmount(BaseField fldTypicalBalance)
+    {
+        return this.getOwner().getField(ApTrx.kDepartureEstimateLocal).getValue();
+    }
+
+}

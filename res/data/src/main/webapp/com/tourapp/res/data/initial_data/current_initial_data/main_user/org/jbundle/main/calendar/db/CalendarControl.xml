@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CalendarControl ID="1">
+		<LastChanged>2010-10-08T13:41:36</LastChanged>
+		<Deleted>N</Deleted>
+		<LastUpdateDate>2011-03-08T13:41:35</LastUpdateDate>
+		<StartAnnivDate>2011-03-08T13:41:35</StartAnnivDate>
+		<EndAnnivDate>2011-05-07T13:41:35</EndAnnivDate>
+		<UpdateDays>1</UpdateDays>
+		<AnnivBackDays>0</AnnivBackDays>
+		<AnniversaryDays>60</AnniversaryDays>
+		<AnniversaryCategoryID>2</AnniversaryCategoryID>
+		<AppointmentCategoryID>1</AppointmentCategoryID>
+	</CalendarControl>
+</file>

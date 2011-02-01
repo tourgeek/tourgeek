@@ -1,0 +1,172 @@
+/**
+ *  @(#)LineMessageData.
+ *  Copyright © 2010 tourapp.com. All rights reserved.
+ */
+package com.tourapp.tour.message.base.request.data;
+
+import java.awt.*;
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.thin.base.message.*;
+import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.tour.booking.db.*;
+
+/**
+ *  LineMessageData - .
+ */
+public class LineMessageData extends MessageRecordDesc
+{
+    /**
+     * Default constructor.
+     */
+    public LineMessageData()
+    {
+        super();
+    }
+    /**
+     * LineMessageData Method.
+     */
+    public LineMessageData(MessageDataParent messageDataParent, String strKey)
+    {
+        this();
+        this.init(messageDataParent, strKey);
+    }
+    /**
+     * Initialize class fields.
+     */
+    public void init(MessageDataParent messageDataParent, String strKey)
+    {
+        super.init(messageDataParent, strKey);
+        this.setNodeType(NON_UNIQUE_NODE);
+    }
+    /**
+     * Move the map values to the correct record fields.
+     * If this method is used, is must be overidden to move the correct fields.
+     */
+    public int getRawRecordData(FieldList record)
+    {
+        int iErrorCode = super.getRawRecordData(record);
+        Record recBookingLine = (Record)record;
+        this.getRawFieldData(recBookingLine.getField(BookingLine.kDescription));
+        this.getRawFieldData(recBookingLine.getField(BookingLine.kPrice));
+        this.getRawFieldData(recBookingLine.getField(BookingLine.kQuantity));
+        this.getRawFieldData(recBookingLine.getField(BookingLine.kGross));
+        this.getRawFieldData(recBookingLine.getField(BookingLine.kCommission));
+        this.getRawFieldData(recBookingLine.getField(BookingLine.kNet));
+        if (this.get(BookingLine.SOURCE_REFERENCE_NO) != null)
+            recBookingLine.getField(BookingLine.kRemoteReferenceNo).setString(this.get(BookingLine.SOURCE_REFERENCE_NO).toString());
+        return iErrorCode;
+    }
+    /**
+     * Move the correct fields from this record to the map.
+     * If this method is used, is must be overidden to move the correct fields.
+     * @param record The record to get the data from.
+     */
+    public int putRawRecordData(FieldList record)
+    {
+        int iErrorCode = super.putRawRecordData(record); // Create new node
+        Record recBookingLine = (Record)record;
+        this.putRawFieldData(recBookingLine.getField(BookingLine.kDescription));
+        this.putRawFieldData(recBookingLine.getField(BookingLine.kPrice));
+        this.putRawFieldData(recBookingLine.getField(BookingLine.kQuantity));
+        this.putRawFieldData(recBookingLine.getField(BookingLine.kGross));
+        this.putRawFieldData(recBookingLine.getField(BookingLine.kCommission));
+        this.putRawFieldData(recBookingLine.getField(BookingLine.kNet));
+        this.put(BookingLine.SOURCE_REFERENCE_NO, recBookingLine.getField(BookingLine.kID).toString());  // Reference for remote system
+        return iErrorCode;
+    }
+    /**
+     * Does this message only include a single booking detail item?.
+     */
+    public boolean isSingleDetail(FieldList record)
+    {
+        return false; // Force read thru
+    }
+    /**
+     * Create the sub-detail record.
+     * @param record The base record
+     * @return The new sub-record (or the base record if there is no new sub-record).
+     */
+    public FieldList createSubDataRecord(FieldList record)
+    {
+        Booking recBooking = ((BookingDetail)record).getBooking(true);
+        BookingLine recBookingLine = new BookingLine(Utility.getRecordOwner(recBooking));  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
+        recBookingLine.addListener(new SubFileFilter(recBooking));
+        return recBookingLine;
+    }
+    /**
+     * Read the record described at the current data location.
+     * @param record The record to read from.
+     * @return null if error, otherwise return the record.
+     */
+    public FieldList readCurrentRecord(FieldList record)
+    {
+        try {
+            BookingLine recBookingLine = (BookingLine)record;
+            if (this.get(BookingLine.REMOTE_REFERENCE_NO) != null)
+            {   // A remote reference is the ID of this item (I am remote)
+                recBookingLine.getField(BookingLine.kID).setString(this.get(BookingLine.REMOTE_REFERENCE_NO).toString());
+                recBookingLine.setKeyArea(BookingLine.kIDKey);
+                if (recBookingLine.seek(null))
+                { // Good
+                    recBookingLine.edit();
+                }
+                else
+                {
+                    if (record != null)
+                        if (record.getTask() != null)
+                            record.getTask().setLastError("Remote reference not found");
+                    return null;
+                }
+            }
+            else if (this.get(BookingLine.SOURCE_REFERENCE_NO) != null)
+            {   // A Source reference is the reference of the remote pax.
+                recBookingLine.close();
+                if (!ADD_RECORD.equalsIgnoreCase((String)this.get(MESSAGE_RECORD_TYPE)))
+                {
+                    while (recBookingLine.hasNext())
+                    {
+                        recBookingLine.next();
+                        if (this.get(BookingLine.SOURCE_REFERENCE_NO).equals(recBookingLine.getField(BookingLine.kRemoteReferenceNo).toString()))
+                        {
+                            recBookingLine.edit();
+                            break;
+                        }
+                    }
+                }
+                if (recBookingLine.getEditMode() != DBConstants.EDIT_IN_PROGRESS)
+                {
+                    if ((CHANGE_RECORD.equalsIgnoreCase((String)this.get(MESSAGE_RECORD_TYPE)))
+                            || (DELETE_RECORD.equalsIgnoreCase((String)this.get(MESSAGE_RECORD_TYPE))))
+                    {
+                        if (record != null)
+                            if (record.getTask() != null)
+                                record.getTask().setLastError("Remote reference not found");
+                        return null;
+                    }
+                    else
+                    {
+                        recBookingLine.addNew();
+                    }
+                }
+            }
+        } catch (DBException ex) {
+            ex.printStackTrace();
+            record = null;
+        }
+        return record;
+    }
+
+}

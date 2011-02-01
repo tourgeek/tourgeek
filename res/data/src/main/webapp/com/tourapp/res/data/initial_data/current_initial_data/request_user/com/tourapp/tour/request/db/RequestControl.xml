@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<RequestControl ID="1">
+		<LastChanged>2010-11-30T17:40:44</LastChanged>
+		<Deleted>N</Deleted>
+		<SendViaCode>2</SendViaCode>
+		<BrochureQty>5</BrochureQty>
+		<BulkPermitCode>1</BulkPermitCode>
+		<BulkPermitText><![CDATA[***************
+* Bulk Rate *
+* Permit no.*
+* 234234     *
+***************]]></BulkPermitText>
+		<BundleID>2</BundleID>
+		<ThinBundleID>2</ThinBundleID>
+		<HtmlBundleID>1</HtmlBundleID>
+		<ProfileTypeID>1</ProfileTypeID>
+	</RequestControl>
+</file>

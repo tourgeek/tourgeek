@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Air ID="1">
+		<LastChanged>2010-04-02T16:01:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>UA17 LAX/NRT 2:10 PM-3:55 PM 1</Description>
+		<Code>UA17</Code>
+		<VendorID>46</VendorID>
+		<OperatorsCode/>
+		<ProductChainID/>
+		<CityID>1,910</CityID>
+		<Etd>14:10:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc/>
+		<DescSort>UA17 LAX/N</DescSort>
+		<ProductType>Air</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<CityCode>LAX</CityCode>
+		<ToCityID>842</ToCityID>
+		<ToCityCode>NRT</ToCityCode>
+		<AirlineID>737</AirlineID>
+		<FlightNo>17</FlightNo>
+		<ArriveTime>15:55:00</ArriveTime>
+		<AddDays>1</AddDays>
+		<Meals>BLD</Meals>
+		<StartDate>2009-08-01</StartDate>
+		<EndDate>2011-07-31</EndDate>
+		<Equipment>747</Equipment>
+		<Days/>
+		<Classes>YQFB</Classes>
+		<Stops>0</Stops>
+		<Segment>1</Segment>
+	</Air>
+	<Air ID="2">
+		<LastChanged>2010-04-02T16:01:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>UA18 NRT/LAX 5:00 PM-2:18 AM -1</Description>
+		<Code>UA18</Code>
+		<VendorID>46</VendorID>
+		<OperatorsCode/>
+		<ProductChainID/>
+		<CityID>842</CityID>
+		<Etd>17:00:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc/>
+		<DescSort>UA18 NRT/L</DescSort>
+		<ProductType>Air</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<CityCode>NRT</CityCode>
+		<ToCityID>1,910</ToCityID>
+		<ToCityCode>LAX</ToCityCode>
+		<AirlineID>737</AirlineID>
+		<FlightNo>18</FlightNo>
+		<ArriveTime>02:18:00</ArriveTime>
+		<AddDays>-1</AddDays>
+		<Meals>BLD</Meals>
+		<StartDate>2009-08-01</StartDate>
+		<EndDate>2011-07-31</EndDate>
+		<Equipment>747</Equipment>
+		<Days/>
+		<Classes>YQFB</Classes>
+		<Stops/>
+		<Segment>1</Segment>
+	</Air>
+</file>

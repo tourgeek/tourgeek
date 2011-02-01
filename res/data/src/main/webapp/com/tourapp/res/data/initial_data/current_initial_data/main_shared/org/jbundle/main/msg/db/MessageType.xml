@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MessageType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Message Out</Description>
+		<Code>MESSAGE_OUT</Code>
+	</MessageType>
+	<MessageType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Message In</Description>
+		<Code>MESSAGE_IN</Code>
+	</MessageType>
+</file>

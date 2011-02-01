@@ -1,0 +1,5537 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Layout ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>org</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>0</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>module</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DateTime</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>typedef long long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PreferredRoomType</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>4</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>typedef string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Currency</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>6</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileType</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>16</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>typedef long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AlternateLanguageID</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>28</Sequence>
+		<Comment>The AlternateLanguageID object describes information about the alternate human language used for the reservation.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LanguageID</Name>
+		<ParentFolderID>14</ParentFolderID>
+		<Sequence>28</Sequence>
+		<Comment>A string identifying the alternate human language for this profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AlternateLanguageIDs</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment>A collection item used as a container for multiple AlternateLanguageID objects.  A collection of one (1) is possible.  The attributes and operations of AlternateLanguageIDs are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>AlternateLanguageID</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="17">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreditCard</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>32</Sequence>
+		<Comment>Information about the credit card used for the reservation.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="18">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CCCode</Name>
+		<ParentFolderID>17</ParentFolderID>
+		<Sequence>32</Sequence>
+		<Comment>The code of the bank or credit agency that issued the credit card. (e.g., MasterCard, American Express, Visa, etc.), by industry standard code.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="19">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CCHolderName</Name>
+		<ParentFolderID>17</ParentFolderID>
+		<Sequence>32</Sequence>
+		<Comment>Name as it appears on the credit card.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="20">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CCNumber</Name>
+		<ParentFolderID>17</ParentFolderID>
+		<Sequence>32</Sequence>
+		<Comment>Number as it appears on the credit card.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="21">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CCBeginDate</Name>
+		<ParentFolderID>17</ParentFolderID>
+		<Sequence>32</Sequence>
+		<Comment>Date credit card becomes effective.  Local time wherever it is used (i.e., no conversion necessary).</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="22">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CCExpire</Name>
+		<ParentFolderID>17</ParentFolderID>
+		<Sequence>32</Sequence>
+		<Comment>Date of expiration as it appears on the credit card.  Local time wherever it is used (i.e., no conversion necessary).</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="23">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreditCards</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>35</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>CreditCard</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="24">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>EAddressType</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>37</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>typedef long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="33">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ElectronicAddress</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment>An electronic address object is used by the Profile object to store phone numbers, email addresses, etc. for a profile.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="34">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ElectronicAddressType</Name>
+		<ParentFolderID>33</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment>Values: 1 = E-mail, 2 = Fax, 3 = Home Phone, 4 = Business Phone, 5 = Mobile Phone, 6 = Telex, 7 = Pager, 8 = Web Page.</Comment>
+		<Code/>
+		<Type>EAddressType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="35">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>EAddress</Name>
+		<ParentFolderID>33</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment>The electronic address string, such as e-mail address or (&lt;I&gt;.url) &lt;/I&gt;web page location.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="36">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ElectronicAddresses</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>42</Sequence>
+		<Comment>A collection item used as a container for multiple ElectronicAddress objects.  A collection of one (1) is possible.  The attributes and operations of ElectronicAddresses are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>ElectronicAddress</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="37">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Extension</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment>Identification of the data format for electronic authorization, such as a signature, retinal scan, fingerprint, etc.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="38">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ContentCode</Name>
+		<ParentFolderID>37</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment>Code uniquely identifying the format, such as jpeg, .gif, .bmp, etc.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="39">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ContentData</Name>
+		<ParentFolderID>37</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment>Vendor-specific data about the extension.</Comment>
+		<Code/>
+		<Type>ContentData</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="40">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Description</Name>
+		<ParentFolderID>37</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment>Human-readable description of the type of data in the ContentData attribute.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="41">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Extensions</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>55</Sequence>
+		<Comment>A collection item used as a container for multiple Extension objects.  A collection of one (1) is possible.  The attributes and operations of Extensions are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>Extension</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="42">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Membership</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>The Profile object uses Membership objects to store frequent guest or other membership information for a profile.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="43">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProgramCode</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>The code or name of the membership program (e.g., "HERTZ," "AADVANTAGE," etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="44">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AccountID</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>The account or membership identifier for this particular member in this particular program.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>20</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="45">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LevelCode</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>Used in points programs, etc., to represent the relative amount of credit awarded to this particular member, or his particular status within the program (VIP, Platinum, etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>20</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="46">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MembershipCategory</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>It could be used to accommodate loyalty programs, defining the type of program, whether a frequent flyer, hotel program, car rental, etc.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="47">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ExpireDate</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>Indicates when this membership expires.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="48">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SignupDate</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>Indicates when the member signed-up for the membership.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="49">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StartDate</Name>
+		<ParentFolderID>42</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>Indicates when this membership starts.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="50">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Memberships</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>70</Sequence>
+		<Comment>A collection item used as a container for multiple Membership objects.  A collection of one (1) is possible.  The attributes and operations of Memberships are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>Membership</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="51">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Document</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>Information about identity papers, including Military ID's, driver's license, passports, etc. for a guest.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="52">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Name</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The person's name as it appears on the document.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>65</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="53">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Number</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>Document number (as applicable).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>20</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="54">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CountryCode</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The ISO standard country code of the country that issued the document.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="55">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Nationality</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The ISO standard (country code) for the nationality of the guest, which may differ from the identity document(s).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="56">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>EffectiveDate</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The effective date when the document becomes valid.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="57">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ExpirationDate</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The expiration date when the document becomes invalid.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="58">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DocumentCode</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The document code describing the type of document captured for this profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="59">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PlaceOfIssue</Name>
+		<ParentFolderID>51</ParentFolderID>
+		<Sequence>80</Sequence>
+		<Comment>The place (location) where the document was issued.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="60">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Documents</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>90</Sequence>
+		<Comment>A collection item used as a container for multiple Document objects.  A collection of one (1) is possible.  The attributes and operations of Documents are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>Document</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="61">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AddressType</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment>Values: 1 = Home, 2 = Business, 3 = Mailing, 4 = Shipping/receiving, 5=Billing.</Comment>
+		<Code/>
+		<Type>typedef long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="67">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PostalAddress</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>The Profile object uses PostalAddress objects to store postal addresses for a profile.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="68">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AddressType</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>Values: 1 = Home, 2 = Business, 3 = Mailing, 4 = Shipping/receiving, 5=Billing.</Comment>
+		<Code/>
+		<Type>AddressType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="69">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Address1</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>Line 1 of the address.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>60</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="70">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Address2</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>Line 2 of the address.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>60</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="71">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Address3</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>Line 3 of the address.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>60</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="72">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Address4</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>Line 4 of the address.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>60</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="73">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>City</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>The city locale for the postal address.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>35</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="74">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StateCode</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>The ISO/postal service standard for state codes.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>35</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="75">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PostalCode</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>The postal service standard (e.g., Zip codes) for locality codes.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>11</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="76">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CountryCode</Name>
+		<ParentFolderID>67</ParentFolderID>
+		<Sequence>110</Sequence>
+		<Comment>The ISO 3-character standard country code.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="77">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PostalAddresses</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>120</Sequence>
+		<Comment>A collection item used as a container for multiple PostalAddress objects.  A collection of one (1) is possible.  The attributes and operations of PostalAddresses are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>PostalAddress</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="78">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CertificationType</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>130</Sequence>
+		<Comment>Describes the type of profile certification.  Values: 1 = IATA, 2 = ARC, 3 = Other.</Comment>
+		<Code/>
+		<Type>typedef long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="82">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileCertification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>140</Sequence>
+		<Comment>Validation or accreditation information for a profile (e.g., IATA, ARC, etc.).</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="83">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CertificationType</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>140</Sequence>
+		<Comment>Describes the type of profile certification.  Values: 1 = IATA, 2 = ARC, 3 = Other.</Comment>
+		<Code/>
+		<Type>CertificationType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="84">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CertificationID</Name>
+		<ParentFolderID>82</ParentFolderID>
+		<Sequence>140</Sequence>
+		<Comment>This is the standard of whatever group is responsible for this type (e.g., the IATA number).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="85">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileCertifications</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>150</Sequence>
+		<Comment>A collection item used as a container for multiple ProfileCertification objects.  A collection of one (1) is possible.  The attributes and operations of ProfileCertifications are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>ProfileCertification</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="86">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PhoneNumber</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>160</Sequence>
+		<Comment>Telephone numbers for a guest or agency profile. This object could be used in a dial-up mode to send a voicemail or fax confirmation of a reservation.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="87">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CountryAccessNumber</Name>
+		<ParentFolderID>86</ParentFolderID>
+		<Sequence>160</Sequence>
+		<Comment>This is the country access identifier (ISO standard) used at the beginning of the telephone number to identify the country initiating the telephone call.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="88">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CityCode</Name>
+		<ParentFolderID>86</ParentFolderID>
+		<Sequence>160</Sequence>
+		<Comment>In the U.S., Canada, etc., this is the area code.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="89">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PhoneNumber</Name>
+		<ParentFolderID>86</ParentFolderID>
+		<Sequence>160</Sequence>
+		<Comment>This is the telephone number assigned to the specific profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>8</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="90">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PhoneExtension</Name>
+		<ParentFolderID>86</ParentFolderID>
+		<Sequence>160</Sequence>
+		<Comment>This is the telephone number extension assigned to the specific profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="91">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PhoneNumberType</Name>
+		<ParentFolderID>86</ParentFolderID>
+		<Sequence>160</Sequence>
+		<Comment>This attribute describes the telephone number type assigned to the specific profile. Values: 1 = E-mail, 2 = Fax, 3 = Home Phone, 4 = Business Phone, 5 = Mobile Phone, 6 = Telex, 7 = Pager, 8 = Web Page.</Comment>
+		<Code/>
+		<Type>EAddressType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="92">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PhoneNumbers</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>170</Sequence>
+		<Comment>A collection item used as a container for multiple PhoneNumber objects.  A collection of one (1) is possible.  The attributes and operations of PhoneNumbers are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>PhoneNumber</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="93">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameInfo</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>Profile objects for guests use a Name object to store an individual’s name.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="94">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NamePrefix</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>The prefix name (e.g., Mr., Mrs., Ms., Miss, Dr., etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="95">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameFirst</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>The guest's first name.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>65</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="96">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameMiddle</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>Guest's middle name.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>65</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="97">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameSur</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>Guest's last name.  (Implementation note: systems that do not parse guest names into component parts should store the entire name in this field.)</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>65</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="98">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameSuffix</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>Guest's suffix (e.g., Jr., Sr., III, etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="99">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameTitle</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>Guest's title (e.g., Ph.D., etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="100">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NameOrdered</Name>
+		<ParentFolderID>93</ParentFolderID>
+		<Sequence>180</Sequence>
+		<Comment>The proper name in the correct order.  To be used in correspondence, or when the CRS ships a reservation as a single string. The PMS may store the name as a string, or parse it into the parts of a name in the attributes above. Neither is mutually exclusiv</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>65</Max>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="101">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileReferences</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>190</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>string</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="102">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SpecialRequests</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>200</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>string</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="103">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Comments</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>210</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>string</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="104">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RoutingHops</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>220</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>string</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="105">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Profile</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A profile represents an individual guest or the corporate entity or person responsible for a reservation or hotel activity.  The ProfileType property determines what type of entity is represented.  Note that the GenericName property is used for all profil</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="106">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileType</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Values: 1 = Guest, 2 = Corporate Account, 3 = Travel Agency, 4 = Wholesaler, 5 = Group, 6 = Tour Operator, 7=Destination CRO, 8=Contact (specific employee at a corporate office or travel agency, for example).</Comment>
+		<Code/>
+		<Type>ProfileType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="107">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileID</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>The unique identifier used to reference this profile.  For profiles being sent to a server, the sender's identifier should be used if the receiver is doing the translating and vice versa.  (For new profiles in the case where the sender is doing the transl</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="108">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreatorCode</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Code of the system that originally created this profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="109">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreatedDate</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Date and time this profile was created.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="110">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LastUpdaterCode</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Code of the system that last updated this profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="111">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LastUpdated</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Date and time this profile was last updated.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="112">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ConsortiumCode</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>For travel agent profiles; code representing consortium to which this profile belongs.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="113">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CommissionPlanCode</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Commission paid to this profile for booking activity (defined as a string to allow for percentages, currency amounts, codes, etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="114">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PreferredRatePlan</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Code of the preferred or associated rate plan for this profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="115">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PreferredRoomType</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Enumerated types to be defined, presumed to be based upon typical room types used in the industry..</Comment>
+		<Code/>
+		<Type>PreferredRoomType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="116">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GenericName</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>For non-guest profiles; the name of the profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="117">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>IndividualName</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>For guest profiles; the proper name of the guest.</Comment>
+		<Code/>
+		<Type>NameInfo</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="118">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Gender</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Defines the sexual preference for the individual.  Can be used in a salutation for a confirmation letter.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="119">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CorporatePosition</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>For guest and contact profiles; the position or job title of the profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="120">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PIN</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Personal Identification Number used by guest.  Whether or not and how to encrypt this is implementation-specific.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="121">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DateOfBirth</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>For guest profiles; guest’s birthday (local time to place of birth).</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="122">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ExpirationDate</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Indicates when this profile expires (and, presumably, may safely be deleted).</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="123">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreditLimit</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Limit on the credit available for this profile.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="124">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PrimaryLanguageID</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>ISO standard.  Preferred human language for this profile.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="125">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AlternateLanguageIDs</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Collection of strings representing alternate human languages for this profile.  Note that the Add operation on this collection should create a new string, then copy the passed parameter into it.  So, no CreateLanguageID operation is needed.  Application c</Comment>
+		<Code/>
+		<Type>AlternateLanguageIDs</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="126">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Documents</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>For guest profiles; a collection of documents (e.g., passports) used by the guest.</Comment>
+		<Code/>
+		<Type>Documents</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="127">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreditCards</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of credit cards associated with this profile.</Comment>
+		<Code/>
+		<Type>CreditCards</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="128">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ElectronicAddresses</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of electronic addresses (e.g., phone numbers, e-mail, etc.) for this profile.</Comment>
+		<Code/>
+		<Type>ElectronicAddresses</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="130">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Extensions</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of vendor-specific extensions to this profile object.</Comment>
+		<Code/>
+		<Type>Extensions</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="131">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Memberships</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of memberships (e.g., frequent guest programs, etc.) for this profile.</Comment>
+		<Code/>
+		<Type>Memberships</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="132">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PostalAddresses</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of street or postal addresses for this profile.</Comment>
+		<Code/>
+		<Type>PostalAddresses</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="133">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PhoneNumbers</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of telephone numbers for this profile.</Comment>
+		<Code/>
+		<Type>PhoneNumbers</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="134">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileCertifications</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of certifications for this profile (e.g., IATA, ARC, etc.).</Comment>
+		<Code/>
+		<Type>ProfileCertifications</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="135">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileReferences</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of profile references indicating profiles related to this profile.  For example, if this is a contact profile, an element of this collection would be the corporate office or travel agency the contact works for.</Comment>
+		<Code/>
+		<Type>ProfileReferences</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="136">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SpecialRequests</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of special requests this profile has requested. See CRS &lt;I&gt;Guest Stay Information &lt;/I&gt; document for object model.</Comment>
+		<Code/>
+		<Type>SpecialRequests</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="137">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Comment</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Further information about this profile.  Comments appended to the profile should be reported in chronological order and retained, therefore, the data type for this attribute is a collection (Comments).</Comment>
+		<Code/>
+		<Type>Comments</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="138">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RoutingHops</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>A collection of routing hops for this profile.  Details of the path(s) this notification has traveled.  In practice, each system that passes this notification would append a routing hop object to this list before doing so.  Then, when a notification is re</Comment>
+		<Code/>
+		<Type>RoutingHops</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="139">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>105</ParentFolderID>
+		<Sequence>230</Sequence>
+		<Comment>Send the completed object to the server (push model).  The return parameter is the receiver’s identifier for this profile.  (Implementation Notes: This would only be returned for a new profile when the sender is translating ProfileID values.  In this case</Comment>
+		<Code/>
+		<Type>comment</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="140">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ProfileSession</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>The ProfileSession object represents the connection to the receiving server.  This object profiles information from the server, and is used to return empty profile objects to the application to complete and send to the server.</Comment>
+		<Code/>
+		<Type>interface</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="141">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>VersionMajor</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>A read-only decimal value that indicates the major version of the HITIS interface.</Comment>
+		<Code/>
+		<Type>const long</Type>
+		<FieldValue>1</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="142">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>VersionMinor</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>A read-only decimal value that indicates the minor version of the HITIS interface.</Comment>
+		<Code/>
+		<Type>const long</Type>
+		<FieldValue>1</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="143">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Authenticate</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>Logs into the server and authenticates the user.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string ServerName, in string UserName, in string Password</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="144">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateProfile</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>Returns an empty profile object to be completed and sent to the server.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Profile profile</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="145">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetProfile</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>Query the server for a specific profile. The value passed in the ProfileID parameter is the server's identifier if the requester is doing the translating and vice versa.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in ProfileType profileType, in string ProfileID, in DateTime LastUpdated, out Profile profile</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="146">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>QueryProfile</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>Returns a (hopefully small) collection of profile(s) meeting the specified criteria.  If multiple criteria are specified, the setting of the AndFlag determines whether the search criteria are to be logically AND’ed (AndFlag=1) or OR’ed (AndFlag=0).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in CreditCard CreditCard, in EAddressType ElectronicAddress, in Membership Membership, in ProfileCertification Certification, in boolean AndFlag, out Profiles Profiles</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="147">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetErrorString</Name>
+		<ParentFolderID>140</ParentFolderID>
+		<Sequence>240</Sequence>
+		<Comment>Given an error code returned or generated from a previous function call, this method retrieves a custom error string defined by the PMS.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in long ErrorNumber, in string LanguageID, out string ErrorString</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="148">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ContentData</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>45</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>octet</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="149">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Profiles</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>235</Sequence>
+		<Comment>A collection item used as a container for multiple Profile objects.  A collection of one (1) is possible.  The attributes and operations of Profiles are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>Profile</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>profile</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="150">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailRateSession</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>The AvailRateSession object represents the connection to the server. This object also creates empty Notification objects to be filled out and sent to the server.</Comment>
+		<Code/>
+		<Type>interface</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="151">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>VersionMajor</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>A read-only decimal value that indicates the major version of the HITIS interface.</Comment>
+		<Code/>
+		<Type>const long</Type>
+		<FieldValue>1</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="152">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>VersionMinor</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>A read-only decimal value that indicates the minor version of the HITIS interface.</Comment>
+		<Code/>
+		<Type>const long</Type>
+		<FieldValue>1</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="153">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Authenticate</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Logs into the server and authenticates the user.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string ServerName, in string UserName, in string Password</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="154">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateAvailNotification</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Returns an empty availability notification object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Notification AvailNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="155">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateRateAmountNotification</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Returns an empty rate notification object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Notification RateAmountNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="156">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateHotelSummaryNotification</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Returns an empty hotel notification object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Notification HotelNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="157">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateInventoryNotification</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Returns an empty inventory notification object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Notification InventoryNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="158">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateBookingRestrictionNotification</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Returns an empty booking restriction notification object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Notification BookingRestrictionNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="159">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateHotelContentNotification</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Returns an empty hotel content notification object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out Notification HotelContentNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="160">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetErrorString</Name>
+		<ParentFolderID>150</ParentFolderID>
+		<Sequence>2,010</Sequence>
+		<Comment>Given an error code returned or generated from a previous function call, this method retrieves a custom error string defined by the PMS.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in long ErrorNumber, in string LanguageID, out string ErrorString</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="161">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailNotification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>The AvailNotification object is used to synchronize the availability status between different reservation systems</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="162">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Identification of the hotel chain that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="163">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Identification of the hotel that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="164">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingLimitStatusMessages</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns a collection of BookingLimitStatusMessage objects.</Comment>
+		<Code/>
+		<Type>BookingLimitStatusMessages</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="165">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>FullPatternLOSStatusMessages</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns a collection of FullPatternLOSStatusMessage objects.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="166">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinMaxLOSStatusMessages</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns a collection of MinMaxLOSStatusMessage objects.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="167">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateHurdleStatusMessages</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns a collection of RateHurdleStatusMessage objects.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="168">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SimplePatternStatusMessages</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns a collection of SimplePatternStatusMessage objects.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="169">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateBookingLimitStatusMessage</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns an empty BookingLimitStatusMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="170">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateFullPatternLOSStatusMessage</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns an empty FullPatternStatusMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="171">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateMinMaxLOSStatusMessage</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns an empty MinMaxLOSStatusMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="172">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateRateHurdleStatusMessage</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns an empty BookingLimitStatusMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="173">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateSimplePatternStatusMessage</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns an empty SimplePatternStatusMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="174">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>161</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Sends the completed object to the server.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="175">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Notification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,010</Sequence>
+		<Comment>**temp**</Comment>
+		<Code/>
+		<Type>typedef string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="176">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingLimitStatusMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,030</Sequence>
+		<Comment>The set of booking limit availability status changes to be made on the server. The server must successfully update all messages. The failure of any single status message will result in the failure of all messages. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>BookingLimitStatusMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="177">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingLimitStatusMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,020</Sequence>
+		<Comment>Status changes in the available booking limits that are to be made on the server.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="178">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Index</Name>
+		<ParentFolderID>177</ParentFolderID>
+		<Sequence>1,020</Sequence>
+		<Comment>Position of message within the collection. Can be used for error reporting, etc.</Comment>
+		<Code/>
+		<Type>short</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="179">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MessageType</Name>
+		<ParentFolderID>177</ParentFolderID>
+		<Sequence>1,020</Sequence>
+		<Comment>Values: 1 =Remove limit, 2 = Set limit, 3 = Adjust Limit.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="180">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Application</Name>
+		<ParentFolderID>177</ParentFolderID>
+		<Sequence>1,020</Sequence>
+		<Comment>Defines where the booking limit should be applied.</Comment>
+		<Code/>
+		<Type>StatusApplicationControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="181">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingLimit</Name>
+		<ParentFolderID>177</ParentFolderID>
+		<Sequence>1,020</Sequence>
+		<Comment>Number of units.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="182">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>FullPatternLOSStatusMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,050</Sequence>
+		<Comment>The set of full pattern LOS availability status changes to be made on the server. The server must successfully update all messages. The failure of any single status message will result in the failure of all messages.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>FullPatternLOSStatusMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="183">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>FullPatternLOSStatusMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,040</Sequence>
+		<Comment>Open or close status changes that are to be made on the server based on length of stay.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="184">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Index</Name>
+		<ParentFolderID>183</ParentFolderID>
+		<Sequence>1,040</Sequence>
+		<Comment>Position of message within the collection. Can be used for error reporting, etc.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="185">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StatusType</Name>
+		<ParentFolderID>183</ParentFolderID>
+		<Sequence>1,040</Sequence>
+		<Comment>Values: 1 = Close, 2 = Open, 3 = On Request.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="186">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ArrivalsOnlyFlag</Name>
+		<ParentFolderID>183</ParentFolderID>
+		<Sequence>1,040</Sequence>
+		<Comment>Indicates whether status applies to any stay or just to arrivals. Values: 0 = Any stay, 1 = Arrivals only.</Comment>
+		<Code/>
+		<Type>boolean</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="187">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Application</Name>
+		<ParentFolderID>183</ParentFolderID>
+		<Sequence>1,040</Sequence>
+		<Comment>Defines where the status should be applied.</Comment>
+		<Code/>
+		<Type>StatusApplicationControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="188">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LOS</Name>
+		<ParentFolderID>183</ParentFolderID>
+		<Sequence>1,040</Sequence>
+		<Comment>Collection (of Unsigned Integers)</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="190">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinMaxLOSStatusMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,070</Sequence>
+		<Comment>The set of minimum/maximum length-of-stay availability status changes to be made on the server. The server must successfully update all messages. The failure of any single status message will result in the failure of all messages.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>MinMaxLOSStatusMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="191">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinMaxLOSStatusMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>Minimum or maximum length of stay status changes.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="192">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Index</Name>
+		<ParentFolderID>191</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>Position of message within the collection. Can be used for error reporting, etc.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="193">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MessageType</Name>
+		<ParentFolderID>191</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>Values: 1 = Set minimum LOS, 2 = Remove minimum LOS, 3=Set maximum LOS, 4 = Remove maximum LOS, 5 = Set forward minimum stay, 6 = Remove forward minimum stay, 7 = Set forward maximum stay, 8 = Remove forward maximum stay.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="194">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ArrivalsOnlyFlag</Name>
+		<ParentFolderID>191</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>Indicates whether LOS applies to any stay or just to arrivals. Values: 0 = Any stay, 1 = Arrivals only.</Comment>
+		<Code/>
+		<Type>boolean</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="195">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Application</Name>
+		<ParentFolderID>191</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>Defines where the status should be applied.</Comment>
+		<Code/>
+		<Type>StatusApplicationControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="196">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LOS</Name>
+		<ParentFolderID>191</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>Length of stay (ignored if MessageType = 2,4,6 or 8.)</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="197">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>LOSTimeUnitType</Name>
+		<ParentFolderID>191</ParentFolderID>
+		<Sequence>1,060</Sequence>
+		<Comment>A time unit used to apply this status message to other inventory, and with more granularity than daily. The TimeUnitType enumerated data type is defined in the &lt;I&gt;Reservation Synchronization&lt;/I&gt; document.</Comment>
+		<Code/>
+		<Type>TimeUnitType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="198">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TimeUnitType</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>11</Sequence>
+		<Comment>The TimeUnitType data type is an enumerated type with 7 values: 1 = Year, 2 = Month, 3 = Week, 4 = Day, 5 = Hour, 6 = Minutes, 7 = Seconds. The TimeUnitType identifies the units in which a duration of time is measured, as in DateTimeSpan</Comment>
+		<Code/>
+		<Type>typedef long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="199">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateHurdleStatusMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,090</Sequence>
+		<Comment>A collection object that returns the RateHurdleStatusMessage object(s).</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>RateHurdleStatusMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="200">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateHurdleStatusMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>The RateHurdleStatusMessage object is used to define the settings for Rate Hurdle Controls at the reservations system.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="201">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Index</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>Position of message within the collection. Can be used for error reporting, etc.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="202">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Application</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>Defines where the status should be applied.</Comment>
+		<Code/>
+		<Type>StatusApplicationControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="203">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HurdleRate</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>Hurdle rate that must be matched or surpassed by net room rate from reservation (Reservation rate amount minus sum of internal costs from inclusive services).</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="204">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Delta</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>Value to add/subtract to the Rate Hurdle used to yield as transient reservations are made/cancelled.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="205">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Ceiling</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>Upper limit on the number of Deltas that should be added to the Rate Hurdle for each transient reservation.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="206">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxSold</Name>
+		<ParentFolderID>200</ParentFolderID>
+		<Sequence>1,080</Sequence>
+		<Comment>Upper limit on the number of transient reservations that should be accepted.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="207">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SimplePatternStatusMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,110</Sequence>
+		<Comment>The set of simple pattern availability status changes to be made on the server.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>SimplePatternStatusMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="208">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SimplePatternStatusMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,100</Sequence>
+		<Comment>Simple open or close status changes that are to be made on the server.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="209">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Index</Name>
+		<ParentFolderID>208</ParentFolderID>
+		<Sequence>1,100</Sequence>
+		<Comment>Position of message within the collection. Can be used for error reporting, etc.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="210">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StatusType</Name>
+		<ParentFolderID>208</ParentFolderID>
+		<Sequence>1,100</Sequence>
+		<Comment>Values: 1 = Close, 2 = Open, 3 = On Request.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="211">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ArrivalsOnlyFlag</Name>
+		<ParentFolderID>208</ParentFolderID>
+		<Sequence>1,100</Sequence>
+		<Comment>Indicates whether status applies to any stay or just to arrivals. Values: 0 = Any stay, 1 = Arrivals only.</Comment>
+		<Code/>
+		<Type>boolean</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="212">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Application</Name>
+		<ParentFolderID>208</ParentFolderID>
+		<Sequence>1,100</Sequence>
+		<Comment>Defines where the status should be applied.</Comment>
+		<Code/>
+		<Type>StatusApplicationControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="213">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StatusApplicationControl</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment>The StatusApplicationControl object is used to indicate to which block codes/rate plans/inventory codes a status should be applied.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="214">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BlockCodeType</Name>
+		<ParentFolderID>213</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment>Values: 0 = Does not apply/BlockCode attribute not used, 1 = Block code, 2 = Block grouping code.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="215">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BlockCode</Name>
+		<ParentFolderID>213</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment>Inventory block code (group, wholesaler block codes, etc.) or inventory block grouping codes. ALL = all room blocks.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="216">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateInventoryLevel</Name>
+		<ParentFolderID>213</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>RateInventoryLevelControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="217">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DaysOfWeek</Name>
+		<ParentFolderID>213</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment>The Days Of Week that applies to this status message.</Comment>
+		<Code/>
+		<Type>DOWPattern</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="218">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Override</Name>
+		<ParentFolderID>213</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment>Mechanism to allow the user to override settings at the reservation system and to allow the RMS to replace this overridden values: If 0, the reservations system may ignore the settings passed and keep values overridden by the user. If 1, the reservations</Comment>
+		<Code/>
+		<Type>boolean</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="219">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DestinationSystemControl</Name>
+		<ParentFolderID>213</ParentFolderID>
+		<Sequence>1,015</Sequence>
+		<Comment>A collection of Destination Code (strings of length 6) that define the viewership (distribution channels and authorized booking agents) for a message.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="220">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateInventoryLevelControl</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>typedef string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="222">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RatePlanCodeType</Name>
+		<ParentFolderID>220</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment>Values: 0 = Does not apply/RatePlanCode attribute not used, 1 = Rate plan code, 2 = Rate plan grouping code.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="223">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RatePlanCode</Name>
+		<ParentFolderID>220</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment>Rate plan code or rate plan grouping code (e.g. rate category code). ALL = apply to all rate plan codes.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="224">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>InventoryCodeType</Name>
+		<ParentFolderID>220</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment>Values: 0 = Does not apply/InventoryCode attribute not used, 1 = Inventory code, 2 = Inventory grouping code.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="225">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>InventoryCode</Name>
+		<ParentFolderID>220</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment>Inventory code (e.g. room type) or inventory grouping code. ALL = All inventory group codes.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="226">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StartDate</Name>
+		<ParentFolderID>220</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment>Status changes start on this date.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="227">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>EndDate</Name>
+		<ParentFolderID>220</ParentFolderID>
+		<Sequence>1,012</Sequence>
+		<Comment>Status changes end on and include this date.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="229">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmountNotification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,130</Sequence>
+		<Comment>The RateAmountNotification object is used to communicate changes in room rates between PMS and CRS.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="230">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>229</ParentFolderID>
+		<Sequence>1,130</Sequence>
+		<Comment>Identification of the hotel chain that this availability applies to as decided between vendors. (This is provided so that a single receiving system, like a PMS, can service multiple hotels.)</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="231">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>229</ParentFolderID>
+		<Sequence>1,130</Sequence>
+		<Comment>Identification of the hotel that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="232">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmountMessages</Name>
+		<ParentFolderID>229</ParentFolderID>
+		<Sequence>1,130</Sequence>
+		<Comment>Returns a collection of RateAmountMessage objects</Comment>
+		<Code/>
+		<Type>RateAmountMessages</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="233">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateRateAmountMessage</Name>
+		<ParentFolderID>229</ParentFolderID>
+		<Sequence>1,130</Sequence>
+		<Comment>Returns an empty rate message object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="234">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>229</ParentFolderID>
+		<Sequence>1,130</Sequence>
+		<Comment>Send the completed object to the server.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="235">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmountMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,129</Sequence>
+		<Comment>Rate changes to be made on the server. The server must successfully update this entire collection. Failure to update any single status message will result in the failure of all messages. A collection of one (1) is possible. The attributes and operations o</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>RateAmountMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="236">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmountMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,128</Sequence>
+		<Comment>Rate changes that are to be made on the server based on date, day of week, rate and/or inventory code.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="237">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateInventoryLevel</Name>
+		<ParentFolderID>236</ParentFolderID>
+		<Sequence>1,128</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>RateInventoryLevelControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="238">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmounts</Name>
+		<ParentFolderID>236</ParentFolderID>
+		<Sequence>1,128</Sequence>
+		<Comment>Returns a collection of RateAmount objects.</Comment>
+		<Code/>
+		<Type>RateAmounts</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="239">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxAmounts</Name>
+		<ParentFolderID>236</ParentFolderID>
+		<Sequence>1,128</Sequence>
+		<Comment>Returns a collection of TaxAmount objects.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="240">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateRateAmount</Name>
+		<ParentFolderID>236</ParentFolderID>
+		<Sequence>1,128</Sequence>
+		<Comment>Returns an empty rate object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="241">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateTaxAmount</Name>
+		<ParentFolderID>236</ParentFolderID>
+		<Sequence>1,128</Sequence>
+		<Comment>Returns an empty tax object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="242">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmounts</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,126</Sequence>
+		<Comment>Rate changes to be made on the server. The server must successfully update this entire collection.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>RateAmount</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="243">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmount</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Individual rate amount changes that are to be made on the server.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="244">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmount</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Amount/price of the base rate.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="245">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DaysOfWeek</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Days of the week for which the rate changes apply.</Comment>
+		<Code/>
+		<Type>DOWPattern</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="246">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxAdults</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Maximum number of adults permitted in a room at this rate.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="247">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdditionalAdultAmounts</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Incremental charges for additional adults.</Comment>
+		<Code/>
+		<Type>AdditionalAdultAmounts</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="248">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdditionalChildAmounts</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Incremental charges for children in the room.</Comment>
+		<Code/>
+		<Type>AdditionalChildAmounts</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="249">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateBasisNumUnits</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>The number of units of RateBasisType.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="250">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateBasisType</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>HITIS defined type with the values: hourly, daily, weekly, monthly, quarterly and annual.</Comment>
+		<Code/>
+		<Type>TimeUnitType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="251">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateAdditionalAdultAmount</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Returns an empty AddAdultAmount object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="252">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateAdditionalChildAmount</Name>
+		<ParentFolderID>243</ParentFolderID>
+		<Sequence>1,125</Sequence>
+		<Comment>Returns an empty AddChildAmount object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="253">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdditionalAdultAmounts</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,124</Sequence>
+		<Comment>Incremental charges for additional adults. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>AdditionalAdultAmount</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="254">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdditionalAdultAmount</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,123</Sequence>
+		<Comment>Amounts that are to be added to the base rate for additional adults in the room.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="255">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxAdults</Name>
+		<ParentFolderID>254</ParentFolderID>
+		<Sequence>1,123</Sequence>
+		<Comment>Increase the base rate by this object's Amount property for each additional adult up to this maximum number of adults.</Comment>
+		<Code/>
+		<Type>short</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="256">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Amount</Name>
+		<ParentFolderID>254</ParentFolderID>
+		<Sequence>1,123</Sequence>
+		<Comment>Incremental rate amount.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="257">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdditionalChildAmounts</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,122</Sequence>
+		<Comment>Incremental charges for children in the room. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>AdditionalChildAmount</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="258">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdditionalChildAmount</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,121</Sequence>
+		<Comment>Amounts that are to be added to the base rate for (additional) children in the room. Since there is no base number of children in the room, all children amounts must be passed in this structure.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="259">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AgeRangeCode</Name>
+		<ParentFolderID>258</ParentFolderID>
+		<Sequence>1,121</Sequence>
+		<Comment>Age range that this rate increase applies to.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="260">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxChild</Name>
+		<ParentFolderID>258</ParentFolderID>
+		<Sequence>1,121</Sequence>
+		<Comment>Increase the base rate by the appropriate amount for each additional child up to this maximum number of children.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="261">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AmountWithAdult</Name>
+		<ParentFolderID>258</ParentFolderID>
+		<Sequence>1,121</Sequence>
+		<Comment>Incremental amount when accompanied by an adult.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="262">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AmountWithOutAdult</Name>
+		<ParentFolderID>258</ParentFolderID>
+		<Sequence>1,121</Sequence>
+		<Comment>Incremental amount when not accompanied by an adult.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="263">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxAmounts</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,120</Sequence>
+		<Comment>Tax information for this time period. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>TaxAmount</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="264">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxAmount</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,119</Sequence>
+		<Comment>Tax charges that are applied to the rate. Note that this object allows for both percentages and currency amounts - one field will be used, and the other should be zero.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="265">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxCode</Name>
+		<ParentFolderID>264</ParentFolderID>
+		<Sequence>1,119</Sequence>
+		<Comment>Code identifying the tax (e.g., occupancy, city, etc.).</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="266">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxType</Name>
+		<ParentFolderID>264</ParentFolderID>
+		<Sequence>1,119</Sequence>
+		<Comment>Values: 1 = Inclusive, 2 = Exclusive, 3 = Cumulative. Note: If TaxType = 3, taxes are accumulated on all previous taxes in this ordered list. For example, if this collection contains 5 different taxes and the 4th tax is cumulative, the tax is based on an</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="267">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxAmount</Name>
+		<ParentFolderID>264</ParentFolderID>
+		<Sequence>1,119</Sequence>
+		<Comment>Tax amount; if zero, use tax Percent (Amount or Percent must be a zero value).</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="268">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TaxPercent</Name>
+		<ParentFolderID>264</ParentFolderID>
+		<Sequence>1,119</Sequence>
+		<Comment>Tax percentage; if zero, use Amount (Amount or Percent must be a zero value).</Comment>
+		<Code/>
+		<Type>Percentage</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="269">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Percentage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>8</Sequence>
+		<Comment>Percent is a data type derived from the Long data type (Signed Long). Percentage data can represent positive or negative fractional (less than 1) values. Values are scaled by 1 million to accommodate 4 decimal places, plus the two for the percentage. (For</Comment>
+		<Code/>
+		<Type>typedef long long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="270">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelSummaryNotification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="271">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>270</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Identification of the hotel chain that this message applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="272">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>270</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Identification of the hotel that this message applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="273">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelSummaryMessages</Name>
+		<ParentFolderID>270</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns a collection of HotelSummaryMessage objects.</Comment>
+		<Code/>
+		<Type>HotelSummaryMessages</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="274">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateHotelSummaryMessage</Name>
+		<ParentFolderID>270</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Returns an empty HotelSummaryMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="275">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>270</ParentFolderID>
+		<Sequence>1,200</Sequence>
+		<Comment>Sends the completed object to the server.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="276">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelSummaryMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,190</Sequence>
+		<Comment>A collection of hotel summary messages. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>HotelSummaryMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="277">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelSummaryMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="278">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StartDate</Name>
+		<ParentFolderID>277</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment>Status changes start on this date.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="279">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>EndDate</Name>
+		<ParentFolderID>277</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment>Status changes end on and include this date.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="280">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DayOfWeek</Name>
+		<ParentFolderID>277</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment>The Days Of Week that applies to this status message.</Comment>
+		<Code/>
+		<Type>DOWPattern</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="281">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StatusType</Name>
+		<ParentFolderID>277</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment>Values: 1 = Closed, 2 = Open, 3 = On Request.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="282">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateMin</Name>
+		<ParentFolderID>277</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment>The minimum rate at which the hotel will sell an available room.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="283">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateMax</Name>
+		<ParentFolderID>277</ParentFolderID>
+		<Sequence>1,189</Sequence>
+		<Comment>The maximum rate at which the hotel will sell an available room.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="284">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>InventoryNotification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>The InventoryNotification object is used to synchronize the inventory numbers between different reservation systems.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="285">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Identification of the hotel chain that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="286">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Identification of the hotel that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="287">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BaseInventoryMessages</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Returns a collection of BaseInventory objects.</Comment>
+		<Code/>
+		<Type>BaseInventoryMessages</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="288">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>OffSellInventoryMessages</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Returns a collection of OffSellInventoryMessage objects.</Comment>
+		<Code/>
+		<Type>OffSellInventoryMessages</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="289">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateBaseInventoryMessage</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Returns an empty BaseInventoryMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="290">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateOffSellInventoryMessage</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Returns an empty OffSellInventoryMessage object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="291">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>284</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Sends the completed object to the server.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="292">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BaseInventoryMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>The set of base inventory changes to be made on the server. The server must successfully update all messages. Failure to update any single status message will result in the failure of all messages.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>BaseInventoryMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="293">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BaseInventoryMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,230</Sequence>
+		<Comment>Changes in the number of units of base inventory for one inventory type (code) to be made on the server.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="294">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>InventoryCode</Name>
+		<ParentFolderID>293</ParentFolderID>
+		<Sequence>1,230</Sequence>
+		<Comment>Inventory code (e.g., room type codes, room attributes). ALL = All inventory codes.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="295">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Inventory</Name>
+		<ParentFolderID>293</ParentFolderID>
+		<Sequence>1,230</Sequence>
+		<Comment>Number of units.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="296">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>OffSellInventoryMessages</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,220</Sequence>
+		<Comment>The set of off-sell inventory changes to be made on the server. The server must successfully update all messages. Failure to update any single status message will result in the failure of all messages.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>OffSellInventoryMessage</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="297">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>OffSellInventoryMessage</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Changes in inventory that is not available for sale to be made on the server.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="298">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>OffSellReasonType</Name>
+		<ParentFolderID>297</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Values: 1 = Out of order, 2 = Off market.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="299">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>OffSellValueType</Name>
+		<ParentFolderID>297</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Values : 1 = Total (should replace any existing value); 2= Adjustment (should be added to any existing value)</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="300">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StartDate</Name>
+		<ParentFolderID>297</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Status changes start on this date.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="301">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>EndDate</Name>
+		<ParentFolderID>297</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Status changes end on and include this date.</Comment>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="302">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>InventoryCode</Name>
+		<ParentFolderID>297</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Inventory code (e.g., room type codes, room attributes). ALL = All inventory codes.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="303">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Inventory</Name>
+		<ParentFolderID>297</ParentFolderID>
+		<Sequence>1,210</Sequence>
+		<Comment>Number of units.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="304">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingRestrictionNotification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="305">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>304</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment>Identification of the hotel chain that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="306">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>304</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment>Identification of the hotel that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="307">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Application</Name>
+		<ParentFolderID>304</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment>Defines where the status should be applied.</Comment>
+		<Code/>
+		<Type>StatusApplicationControl</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="308">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingRestrictions</Name>
+		<ParentFolderID>304</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment>Returns a collection of BookingRestriction objects.</Comment>
+		<Code/>
+		<Type>BookingRestrictions</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="309">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateBookingRestriction</Name>
+		<ParentFolderID>304</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment>Returns an empty BookingRestriction object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="310">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>304</ParentFolderID>
+		<Sequence>1,300</Sequence>
+		<Comment>Sends the completed object to the server.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="311">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingRestrictions</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,290</Sequence>
+		<Comment>A collection of booking restriction messages. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>BookingRestriction</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="312">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>BookingRestriction</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,280</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="313">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RestrictionPolicies</Name>
+		<ParentFolderID>312</ParentFolderID>
+		<Sequence>1,280</Sequence>
+		<Comment>Returns a collection of Rule objects that define the enumerated types used for Booking Restrictions.</Comment>
+		<Code/>
+		<Type>Rules</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="314">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdvanceBookingRequirement</Name>
+		<ParentFolderID>312</ParentFolderID>
+		<Sequence>1,280</Sequence>
+		<Comment>See Rule object.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="315">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinMaxAdults</Name>
+		<ParentFolderID>312</ParentFolderID>
+		<Sequence>1,280</Sequence>
+		<Comment>Defines the restrictions for minimum and maximum total occupants, adults and children.</Comment>
+		<Code/>
+		<Type>MinMaxAdults</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="316">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Rules</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,270</Sequence>
+		<Comment>A collection object that returns multiple Rule objects. A collection of one (1) is possible.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>Rule</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="317">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Rule</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Defines the enumerated types used for Booking Restriction rules.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="318">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PrePaymentPolicyType</Name>
+		<ParentFolderID>317</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Enumerated types used for PrePayment Restrictions.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="319">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DepositPolicyType</Name>
+		<ParentFolderID>317</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Enumerated types used for Deposit Restrictions, eg: 1= Full Payment required, 2= Minimum amount required, 3= Voucher, etc.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="320">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GuaranteePolicyType</Name>
+		<ParentFolderID>317</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Enumerated types used for Guarantee Restrictions.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="321">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CancelPolicy</Name>
+		<ParentFolderID>317</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Enumerated types used for Cancel Restrictions.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="322">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ModifyPolicyType</Name>
+		<ParentFolderID>317</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Enumerated types used for Modification Restrictions.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="323">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AdvanceBookingRequirement</Name>
+		<ParentFolderID>317</ParentFolderID>
+		<Sequence>1,260</Sequence>
+		<Comment>Enumerated types used for Advance Booking Restrictions.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="324">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinMaxAdults</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the booking restrictions for minimum and maximum total occupants, adults and children.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="325">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinTotalOccupants</Name>
+		<ParentFolderID>324</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the minimum number of total occupants required for a rate plan.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="326">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxTotalOccupants</Name>
+		<ParentFolderID>324</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the maximum number of total occupants allowed for a rate plan.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="327">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinAdults</Name>
+		<ParentFolderID>324</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the minimum number of adults required for a rate plan.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="328">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxAdults</Name>
+		<ParentFolderID>324</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the maximum number of adult allowed for a rate plan.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="329">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MinChildred</Name>
+		<ParentFolderID>324</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the minimum number of children required for a rate plan by AgeRangeCode.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="330">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MaxChildred</Name>
+		<ParentFolderID>324</ParentFolderID>
+		<Sequence>1,250</Sequence>
+		<Comment>Defines the maximum number of children allowed for a rate plan by AgeRangeCode.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="331">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelContentNotification</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>The HotelContent Notification object is used to communicate hotel content data (HEDNA standard) to a server from the PMS.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="332">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>331</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>Identification of the hotel chain that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="333">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>331</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>Identification of the hotel that this availability applies to as decided between vendors.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="334">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelContent</Name>
+		<ParentFolderID>331</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>Returns a collection of HotelContent objects.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="335">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateHotelContent</Name>
+		<ParentFolderID>331</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>Returns an empty HotelContent object to be added to the list.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="336">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Update</Name>
+		<ParentFolderID>331</ParentFolderID>
+		<Sequence>1,240</Sequence>
+		<Comment>Send the completed object to the server.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>availrate</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="337">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailabilityQuery</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>An AvailabilityQuery object is used to request the return of applicable products and rates available for sale as determined by the requested parameters.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="338">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ChainCode</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Optional (i.e., the string may be empty). Refer to HotelCode.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="339">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>HotelCode</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>The combination of the chain and hotel codes uniquely identify the hotel this reservation applies to. (This is provided so that a single receiving system, like a PMS, can service multiple hotels.) Whether to use the sending/querying system’s or the receiv</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>6</Max>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="340">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailRequestType</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Values: 1 = Pricing only, 2 = Pricing and policies.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="341">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateCodes</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A collection (optional) representing rate categories and codes to be considered for selection.</Comment>
+		<Code/>
+		<Type>RateCodes</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="342">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateMinCurrency</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>The minimum rate and currency specified for selection.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="343">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateMaxCurrency</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>The maximum rate and currency specified for selection.</Comment>
+		<Code/>
+		<Type>Currency</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="344">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>StayDateRange</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Total time span covered by this availability request (earliest arrival to latest departure).</Comment>
+		<Code/>
+		<Type>DateTimeSpan</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="345">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Profiles</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A collection of ProfileReference objects. These can be used to control access to rate plans, etc.</Comment>
+		<Code/>
+		<Type>Profiles</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="346">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Guests</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A collection of Guest objects. See Guest Stay Info for model. Guests associated with this availability request.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="347">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RoomStays</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A collection of RoomStay objects. See Guest Stay Info for model. Room stays associated with this availability request.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="348">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Services</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A collection of Service objects. See Guest Stay Info for model. Services associated with this availability request.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="349">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>SpecialRequests</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A collection of SpecialRequest objects. The special requests that are tied to this availability request.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="350">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Query</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Queries the server for availability records meeting the query criteria. Possible return codes are Successful, Alternates Provided, and Unsuccessful.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="351">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateCodes</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,900</Sequence>
+		<Comment>Collection of rate plans (ie., Rack, Interline, etc.)</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>string</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="352">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DateTimeSpan</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>12</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="353">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Start</Name>
+		<ParentFolderID>352</ParentFolderID>
+		<Sequence>12</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>DateTime</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="354">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>TimeUnit</Name>
+		<ParentFolderID>352</ParentFolderID>
+		<Sequence>12</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>TimeUnitType</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="355">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>NumberOfTimeUnits</Name>
+		<ParentFolderID>352</ParentFolderID>
+		<Sequence>12</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="357">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CurrencyCode</Name>
+		<ParentFolderID>4</ParentFolderID>
+		<Sequence>12</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>3</Max>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="358">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Amount</Name>
+		<ParentFolderID>4</ParentFolderID>
+		<Sequence>12</Sequence>
+		<Comment>Amount values are scaled by 1 million to accommodate the current European Union standard. The currency data type has a range of -2^63/1000000 to +(2^63-1)/1000000, or approximately -9 trillion to +9 trillion</Comment>
+		<Code/>
+		<Type>long long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="359">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ByteArray</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment>A Byte Array is an array of bytes (8-bit unsigned numeric non-fractional value), and is used for vendor-specific extensions (i.e., additions) of complex data to certain objects. For example, a guest profile may include a bitmap image of a photograph. A by</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>octet</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="360">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DOWPattern</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>14</Sequence>
+		<Comment>The Day of Week data type (DOWPattern) is an object with 7 Boolean attributes. i.e.: Sunday, Yes/No; Monday, Yes/No; Tuesday, Wednesday, Thursday, Friday, and Saturday, etc</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>boolean</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="361">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailabilityRecords</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,800</Sequence>
+		<Comment>A collection of AvailabilityRecord objects. Since this list is only accessed in a pull model, no Add operation is needed. A collection of one (1) is possible. The attributes and operations of AvailabilityRecord are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>AvailabilityRecord</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="362">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailabilityRecord</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,700</Sequence>
+		<Comment>An AvailabilityRecord object is used to communicate the return of available products and rates.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="363">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>MarketingText</Name>
+		<ParentFolderID>362</ParentFolderID>
+		<Sequence>2,700</Sequence>
+		<Comment>Informational lines to be presented with the display.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>180</Max>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="364">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Details</Name>
+		<ParentFolderID>362</ParentFolderID>
+		<Sequence>2,700</Sequence>
+		<Comment>A collection of AvailabilityRecordDetail objects.</Comment>
+		<Code/>
+		<Type>AvailabilityRecordDetails</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="365">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailabilityRecordDetails</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,600</Sequence>
+		<Comment>A collection of AvailabilityRecordDetail objects. Since this list is only accessed in a pull model, no Add operation is needed. A collection of one (1) is possible. The attributes and operations of AvailabilityRecordDetail are inherited from the Collectio</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>AvailabilityRecordDetail</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="366">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>AvailabilityRecordDetail</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>An AvailabilityRecordDetail object is used to communicate the specifics of an available product and rate.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="367">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RatePlanCode</Name>
+		<ParentFolderID>366</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>The representation of the rate plan for this detail record. Whether to use the querying system’s code or the responding system’s code depends on which is doing the translating.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="368">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>InventoryCode</Name>
+		<ParentFolderID>366</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>The representation of the room type for this detail record. Whether to use the querying system’s code or the responding system’s code depends on which is doing the translating.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>10</Max>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="369">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>IsRoom</Name>
+		<ParentFolderID>366</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>Whether the InventoryCode represents a room product or a non-room product. Whether to use the querying system’s code or the responding system’s code depends on which is doing the translating.</Comment>
+		<Code/>
+		<Type>boolean</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="370">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>DateRange</Name>
+		<ParentFolderID>366</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>Dates during which the following RateAmounts are effective.</Comment>
+		<Code/>
+		<Type>DateTimeSpan</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="371">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>RateAmounts</Name>
+		<ParentFolderID>366</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>Pricing info. See Avail/Rate Sync spec for model.</Comment>
+		<Code/>
+		<Type>RateAmounts</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="372">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Policies</Name>
+		<ParentFolderID>366</ParentFolderID>
+		<Sequence>2,500</Sequence>
+		<Comment>A collection of Policy objects. The policies are tied to specific offerings.</Comment>
+		<Code/>
+		<Type>Policies</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="373">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Policies</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,400</Sequence>
+		<Comment>A collection of Policy objects. Since this list is only accessed in a pull model, no Add operation is needed. A collection of one (1) is possible. The attributes and operations of Policy are inherited from the Collection object.</Comment>
+		<Code/>
+		<Type>collection</Type>
+		<FieldValue>Policy</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="374">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Policy</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>2,300</Sequence>
+		<Comment>A Policy object specifies textual information pertaining to policies and/or restrictions that apply to a product or set of products.</Comment>
+		<Code/>
+		<Type>struct</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="375">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PolicyType</Name>
+		<ParentFolderID>374</ParentFolderID>
+		<Sequence>2,300</Sequence>
+		<Comment>An enumerated data type for policy types. Values: 1 = Cancellation, 2 = Deposit, 3= Advance Purchase, 4 = Tax, 5 = Guarantee.</Comment>
+		<Code/>
+		<Type>long</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="376">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>PolicyText</Name>
+		<ParentFolderID>374</ParentFolderID>
+		<Sequence>2,300</Sequence>
+		<Comment>A textual description of the policy or restriction.</Comment>
+		<Code/>
+		<Type>string</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max>20</Max>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="377">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>ReservationSession</Name>
+		<ParentFolderID>395</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>The ReservationSession object represents the connection to the reservation server. This object is used to return empty notification objects to the application, so they can be filled out and sent to the server (push model), or to query the server for notif</Comment>
+		<Code/>
+		<Type>interface</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="379">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>VersionMajor</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A read-only decimal value that indicates the major version of the HITIS interface.</Comment>
+		<Code/>
+		<Type>const long</Type>
+		<FieldValue>1</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="380">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>VersionMinor</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>A read-only decimal value that indicates the minor version of the HITIS interface.</Comment>
+		<Code/>
+		<Type>const long</Type>
+		<FieldValue>1</FieldValue>
+		<ReturnsValue/>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="381">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Authenticate</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Logs into the server and authenticates the user.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string ServerName, in string UserName, in string Password</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="382">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateReservationNotification</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns an empty reservation notification object to be completed and sent (push model).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in Notification ReservationNotification</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="383">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetErrorString</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Given an error code returned or generated from a previous function call, this method retrieves a custom error string defined by the PMS.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in long ErrorNumber, in string LanguageID, out string ErrorString</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="384">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetLastReservationNotificationSequenceNumber</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns the sequence number of the last ReservationNotification object sent by this user (push model) or retrieved by this user (pull model) to allow for re-sync.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in long LastSequenceNumber</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="385">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetLastGroupBlockNotificationSequenceNumber</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns the sequence number of the last GroupBlockNotification object sent by this user (push model) or retrieved by this user (pull model) to allow for re-sync.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="386">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateReservationRequest</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns an empty reservation request object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="387">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateGroupBlockNotification</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns an empty group block notification object to be completed and sent (push model).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="388">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetUnretrievedReservationNotifications</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns a collection of ReservationNotifications pending for this user (pull model).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="389">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetUnretrievedGroupBlockNotifications</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns a collection of GroupBlockNotifications pending for this user (pull model).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="390">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetReservationNotification</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns a specific ReservationNotification object, for example if the querying system is missing one (pull model).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="391">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>GetGroupBlockNotification</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns a specific GroupBlockNotification object, for example if the querying system is missing one (pull model).</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="392">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>QueryReservationNotifications</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns all notifications for the given ReservationID (pull model). This is the server’s ReservationID, since in the pull model, the server cannot know the querying system’s ReservationID.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="393">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>QueryGroupBlockNotifications</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns all notifications for the given GroupBlockID (pull model). This is the server’s GroupBlockID, since in the pull model, the server cannot know the querying system’s GroupBlockID.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>in string fixthis</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="394">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>CreateAvailabilityQuery</Name>
+		<ParentFolderID>377</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment>Returns an empty availability query object to be completed and sent.</Comment>
+		<Code/>
+		<Type>method</Type>
+		<FieldValue>out AvailabilityQuery Query</FieldValue>
+		<ReturnsValue>long</ReturnsValue>
+		<Max/>
+		<System>reservation</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="395">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>hitis</Name>
+		<ParentFolderID>1</ParentFolderID>
+		<Sequence>3,000</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>module</Type>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System>base</System>
+		<Comments>N</Comments>
+	</Layout>
+	<Layout ID="397">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System/>
+		<Comments/>
+	</Layout>
+	<Layout ID="398">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System/>
+		<Comments/>
+	</Layout>
+	<Layout ID="399">
+		<LastChanged>2008-09-23T11:13:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System/>
+		<Comments/>
+	</Layout>
+	<Layout ID="400">
+		<LastChanged>2008-09-23T16:12:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<FieldValue/>
+		<ReturnsValue/>
+		<Max/>
+		<System/>
+		<Comments/>
+	</Layout>
+</file>

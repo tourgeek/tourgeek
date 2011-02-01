@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Deduction ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Bonus</Description>
+		<Type>1</Type>
+		<AccountID/>
+		<EnterHours/>
+	</Deduction>
+	<Deduction ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Reimbursement</Description>
+		<Type>2</Type>
+		<AccountID/>
+		<EnterHours/>
+	</Deduction>
+	<Deduction ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Sick pay (non-tax)</Description>
+		<Type>3</Type>
+		<AccountID/>
+		<EnterHours/>
+	</Deduction>
+	<Deduction ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Sick pay (tabable)</Description>
+		<Type>4</Type>
+		<AccountID/>
+		<EnterHours/>
+	</Deduction>
+	<Deduction ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Vacation pay</Description>
+		<Type>5</Type>
+		<AccountID/>
+		<EnterHours/>
+	</Deduction>
+	<Deduction ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Non tax deduction</Description>
+		<Type>6</Type>
+		<AccountID/>
+		<EnterHours/>
+	</Deduction>
+</file>

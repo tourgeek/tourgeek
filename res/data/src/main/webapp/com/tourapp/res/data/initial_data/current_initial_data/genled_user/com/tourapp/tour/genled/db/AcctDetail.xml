@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<AcctDetail ID="1">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>439.18</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>4</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="2">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>100,000.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>7</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="3">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>50,000.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>8</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="4">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>100,000.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>9</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="5">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>11,993.95</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>10</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="6">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>1,800.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>12</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="7">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>1,500.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>13</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="8">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>402.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>114</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="9">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>18,459.57</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>21</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="10">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>-7,194.60</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>22</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="11">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>8,180.01</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>23</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="12">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>-3,320.75</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>24</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="13">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>-200,000.00</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>48</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="14">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>1</TrxTypeID>
+		<TrxDate>2010-08-01</TrxDate>
+		<AmountLocal>-82,259.36</AmountLocal>
+		<TrxEntry>2010-04-16</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<AccountID>49</AccountID>
+		<Source>START</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="15">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>119</TrxTypeID>
+		<TrxDate>2010-08-28</TrxDate>
+		<AmountLocal>81,984.43</AmountLocal>
+		<TrxEntry>2010-04-30</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>2</AccountID>
+		<Source>assetdr</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="16">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>119</TrxTypeID>
+		<TrxDate>2010-08-28</TrxDate>
+		<AmountLocal>-278,835.13</AmountLocal>
+		<TrxEntry>2010-04-30</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>49</AccountID>
+		<Source>assetdr</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="17">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>119</TrxTypeID>
+		<TrxDate>2010-08-28</TrxDate>
+		<AmountLocal>52,481.52</AmountLocal>
+		<TrxEntry>2010-04-30</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>1</AccountID>
+		<Source>assetdr</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="18">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>119</TrxTypeID>
+		<TrxDate>2010-08-28</TrxDate>
+		<AmountLocal>122,943.41</AmountLocal>
+		<TrxEntry>2010-04-30</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>5</AccountID>
+		<Source>assetdr</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="21">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>119</TrxTypeID>
+		<TrxDate>2010-08-28</TrxDate>
+		<AmountLocal>101,488.32</AmountLocal>
+		<TrxEntry>2010-04-30</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>110</AccountID>
+		<Source>assetdr</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="22">
+		<LastChanged>2010-04-02T16:01:01</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>119</TrxTypeID>
+		<TrxDate>2010-08-28</TrxDate>
+		<AmountLocal>-101,488.32</AmountLocal>
+		<TrxEntry>2010-04-30</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>109</AccountID>
+		<Source>assetdr</Source>
+		<Comments>Starting Balance</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="23">
+		<LastChanged>2010-05-10T04:00:18</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>177</TrxTypeID>
+		<TrxDate>2010-12-30</TrxDate>
+		<AmountLocal>800.00</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>2</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Payment (Cash in)</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="24">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>180</TrxTypeID>
+		<TrxDate>2010-12-30</TrxDate>
+		<AmountLocal>2,794.48</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>10</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="25">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>179</TrxTypeID>
+		<TrxDate>2010-12-30</TrxDate>
+		<AmountLocal>-2,794.48</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>118</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="26">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>183</TrxTypeID>
+		<TrxDate>2011-02-28</TrxDate>
+		<AmountLocal>2,794.48</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>118</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="27">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>184</TrxTypeID>
+		<TrxDate>2011-02-28</TrxDate>
+		<AmountLocal>-2,794.48</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>51</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="28">
+		<LastChanged>2010-05-10T04:00:18</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>178</TrxTypeID>
+		<TrxDate>2010-12-30</TrxDate>
+		<AmountLocal>-800.00</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>10</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Payment (Cash in)</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="29">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>182</TrxTypeID>
+		<TrxDate>2010-12-30</TrxDate>
+		<AmountLocal>2,149.20</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>10</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice Modification</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="30">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>181</TrxTypeID>
+		<TrxDate>2010-12-30</TrxDate>
+		<AmountLocal>-2,149.20</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>118</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice Modification</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="31">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>185</TrxTypeID>
+		<TrxDate>2011-02-28</TrxDate>
+		<AmountLocal>2,149.20</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>118</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice Modification</Comments>
+		<VersionID/>
+	</AcctDetail>
+	<AcctDetail ID="32">
+		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxTypeID>186</TrxTypeID>
+		<TrxDate>2011-02-28</TrxDate>
+		<AmountLocal>-2,149.20</AmountLocal>
+		<TrxEntry>2010-05-31</TrxEntry>
+		<TrxUserID>-1</TrxUserID>
+		<AccountID>52</AccountID>
+		<Source>acctrec</Source>
+		<Comments>Invoice Modification</Comments>
+		<VersionID/>
+	</AcctDetail>
+</file>

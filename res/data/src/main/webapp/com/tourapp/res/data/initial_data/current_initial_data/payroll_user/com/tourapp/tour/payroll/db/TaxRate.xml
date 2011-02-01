@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<TaxRate ID="1">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>0.00</CutOffAmount>
+		<TaxRate>0.0100</TaxRate>
+	</TaxRate>
+	<TaxRate ID="2">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>9,662.00</CutOffAmount>
+		<TaxRate>0.0200</TaxRate>
+	</TaxRate>
+	<TaxRate ID="3">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>22,898.00</CutOffAmount>
+		<TaxRate>0.0400</TaxRate>
+	</TaxRate>
+	<TaxRate ID="4">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>29,516.00</CutOffAmount>
+		<TaxRate>0.0600</TaxRate>
+	</TaxRate>
+	<TaxRate ID="5">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>36,530.00</CutOffAmount>
+		<TaxRate>0.0800</TaxRate>
+	</TaxRate>
+	<TaxRate ID="6">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>43,149.00</CutOffAmount>
+		<TaxRate>0.0900</TaxRate>
+	</TaxRate>
+	<TaxRate ID="7">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>0.00</CutOffAmount>
+		<TaxRate>0.0100</TaxRate>
+	</TaxRate>
+	<TaxRate ID="8">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>9,662.00</CutOffAmount>
+		<TaxRate>0.0200</TaxRate>
+	</TaxRate>
+	<TaxRate ID="9">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>22,898.00</CutOffAmount>
+		<TaxRate>0.0400</TaxRate>
+	</TaxRate>
+	<TaxRate ID="10">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>36,136.00</CutOffAmount>
+		<TaxRate>0.0600</TaxRate>
+	</TaxRate>
+	<TaxRate ID="11">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>50,166.00</CutOffAmount>
+		<TaxRate>0.0800</TaxRate>
+	</TaxRate>
+	<TaxRate ID="12">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>63,400.00</CutOffAmount>
+		<TaxRate>0.0900</TaxRate>
+	</TaxRate>
+	<TaxRate ID="13">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>0.00</CutOffAmount>
+		<TaxRate>0.0100</TaxRate>
+	</TaxRate>
+	<TaxRate ID="14">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>4,831.00</CutOffAmount>
+		<TaxRate>0.0200</TaxRate>
+	</TaxRate>
+	<TaxRate ID="15">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>11,449.00</CutOffAmount>
+		<TaxRate>0.0400</TaxRate>
+	</TaxRate>
+	<TaxRate ID="16">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>18,068.00</CutOffAmount>
+		<TaxRate>0.0600</TaxRate>
+	</TaxRate>
+	<TaxRate ID="17">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>25,083.00</CutOffAmount>
+		<TaxRate>0.0800</TaxRate>
+	</TaxRate>
+	<TaxRate ID="18">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>CA</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>31,700.00</CutOffAmount>
+		<TaxRate>0.0900</TaxRate>
+	</TaxRate>
+	<TaxRate ID="19">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>2,625.00</CutOffAmount>
+		<TaxRate>0.1500</TaxRate>
+	</TaxRate>
+	<TaxRate ID="20">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>25,450.00</CutOffAmount>
+		<TaxRate>0.2800</TaxRate>
+	</TaxRate>
+	<TaxRate ID="21">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>53,725.00</CutOffAmount>
+		<TaxRate>0.3100</TaxRate>
+	</TaxRate>
+	<TaxRate ID="22">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>122,750.00</CutOffAmount>
+		<TaxRate>0.3600</TaxRate>
+	</TaxRate>
+	<TaxRate ID="23">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>H</MaritalStatus>
+		<CutOffAmount>265,200.00</CutOffAmount>
+		<TaxRate>0.4000</TaxRate>
+	</TaxRate>
+	<TaxRate ID="24">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>6,425.00</CutOffAmount>
+		<TaxRate>0.1500</TaxRate>
+	</TaxRate>
+	<TaxRate ID="25">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>44,250.00</CutOffAmount>
+		<TaxRate>0.2800</TaxRate>
+	</TaxRate>
+	<TaxRate ID="26">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>89,675.00</CutOffAmount>
+		<TaxRate>0.3100</TaxRate>
+	</TaxRate>
+	<TaxRate ID="27">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>151,850.00</CutOffAmount>
+		<TaxRate>0.3600</TaxRate>
+	</TaxRate>
+	<TaxRate ID="28">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>M</MaritalStatus>
+		<CutOffAmount>267,900.00</CutOffAmount>
+		<TaxRate>0.4000</TaxRate>
+	</TaxRate>
+	<TaxRate ID="29">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>2,625.00</CutOffAmount>
+		<TaxRate>0.1500</TaxRate>
+	</TaxRate>
+	<TaxRate ID="30">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>25,450.00</CutOffAmount>
+		<TaxRate>0.2800</TaxRate>
+	</TaxRate>
+	<TaxRate ID="31">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>53,725.00</CutOffAmount>
+		<TaxRate>0.3100</TaxRate>
+	</TaxRate>
+	<TaxRate ID="32">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>122,750.00</CutOffAmount>
+		<TaxRate>0.3600</TaxRate>
+	</TaxRate>
+	<TaxRate ID="33">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TaxCode>FE</TaxCode>
+		<MaritalStatus>S</MaritalStatus>
+		<CutOffAmount>265,200.00</CutOffAmount>
+		<TaxRate>0.4000</TaxRate>
+	</TaxRate>
+</file>

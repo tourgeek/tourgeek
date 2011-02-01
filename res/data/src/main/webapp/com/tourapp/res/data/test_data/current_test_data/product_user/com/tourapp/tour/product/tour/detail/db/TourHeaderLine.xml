@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<TourHeaderLine ID="1">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>14</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Basic Tour Price</Description>
+		<Price>1,099.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="2">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>14</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Single Supplement</Description>
+		<Price>399.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="3">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>15</TourHeaderOptionID>
+		<ModifyCode>R</ModifyCode>
+		<ModifyID>1</ModifyID>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Base Tour Price (Shoulder Season)</Description>
+		<Price>1,199.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="5">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>18</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>30</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Weekend surcharge</Description>
+		<Price>129.50</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="7">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>20</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>5</ModifyID>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>No Weekend surcharges for this upgrade</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="8">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>20</TourHeaderOptionID>
+		<ModifyCode>R</ModifyCode>
+		<ModifyID>1</ModifyID>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Base Tour Price (for Hyatt upgrade)</Description>
+		<Price>1,499.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="9">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>20</TourHeaderOptionID>
+		<ModifyCode>R</ModifyCode>
+		<ModifyID>2</ModifyID>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Single supplement (Hyatt upgrade)</Description>
+		<Price>499.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="12">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>16</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>40</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Weekend surcharge</Description>
+		<Price>99.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="16">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>26</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>1,015</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Mandarin Hotel Upgrade</Description>
+		<Price>225.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="17">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>30</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Tour Cancellation Insurance</Description>
+		<Price>45.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="19">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>31</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Tour Cancellation Insurance</Description>
+		<Price>45.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="20">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>32</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>19</ModifyID>
+		<Sequence/>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Delete Tour Cancellation Ins</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="21">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>33</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Four Night Bangkok Module</Description>
+		<Price>679.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost>575.00</Cost>
+		<ProductTermsID>1</ProductTermsID>
+	</TourHeaderLine>
+	<TourHeaderLine ID="22">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>33</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Four Night Bangkok Module - Single supplement</Description>
+		<Price>215.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost>180.00</Cost>
+		<ProductTermsID>1</ProductTermsID>
+	</TourHeaderLine>
+	<TourHeaderLine ID="23">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>35</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Mandarin hotel upgrade</Description>
+		<Price>235.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost>130.00</Cost>
+		<ProductTermsID>1</ProductTermsID>
+	</TourHeaderLine>
+	<TourHeaderLine ID="24">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>36</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Orient hotel upgrade</Description>
+		<Price>450.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost>375.00</Cost>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="25">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>20</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>3</ModifyID>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>No Shoulder Season Prices</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="27">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>20</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>32</ModifyID>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>No Shoulder Season Sing Suppl 2009/10</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="28">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>38</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Four Night Bangkok Module - Single supplement</Description>
+		<Price>220.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost>185.00</Cost>
+		<ProductTermsID>1</ProductTermsID>
+	</TourHeaderLine>
+	<TourHeaderLine ID="29">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>38</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Four Night Bangkok Module</Description>
+		<Price>682.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost>580.00</Cost>
+		<ProductTermsID>1</ProductTermsID>
+	</TourHeaderLine>
+	<TourHeaderLine ID="30">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Single Supplement</Description>
+		<Price>449.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="31">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Basic Tour Price</Description>
+		<Price>1,149.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="32">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>40</TourHeaderOptionID>
+		<ModifyCode>R</ModifyCode>
+		<ModifyID>31</ModifyID>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Base Tour Price (Shoulder Season)</Description>
+		<Price>1,299.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="33">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>42</TourHeaderOptionID>
+		<ModifyCode>R</ModifyCode>
+		<ModifyID>30</ModifyID>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Single supplement (Hyatt upgrade)</Description>
+		<Price>549.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="34">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>42</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>32</ModifyID>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>No Shoulder Season Sing Suppl 2009</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="35">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>42</TourHeaderOptionID>
+		<ModifyCode>R</ModifyCode>
+		<ModifyID>31</ModifyID>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Base Tour Price (for Hyatt upgrade)</Description>
+		<Price>1,599.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="36">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>42</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>5</ModifyID>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>No Weekend surcharges for this upgrade</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="37">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>42</TourHeaderOptionID>
+		<ModifyCode>D</ModifyCode>
+		<ModifyID>32</ModifyID>
+		<Sequence>200</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>No Shoulder Season Prices</Description>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="38">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>44</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Single supplement</Description>
+		<Price>439.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="39">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>44</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Basic tour price</Description>
+		<Price>1,649.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="40">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>45</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>100</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Single supplement</Description>
+		<Price>399.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="41">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>45</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>10</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Basic tour price</Description>
+		<Price>1,599.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="42">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>46</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>1,020</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Three Night Bangkok Module -Single Supplement</Description>
+		<Price>125.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="43">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>46</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>1,010</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Three Night Bangkok Module</Description>
+		<Price>572.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="44">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>47</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>1,020</Sequence>
+		<PaxCategoryID>1</PaxCategoryID>
+		<Description>Three Night Bangkok Module -Single Supplement</Description>
+		<Price>130.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+	<TourHeaderLine ID="45">
+		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TourHeaderOptionID>47</TourHeaderOptionID>
+		<ModifyCode>A</ModifyCode>
+		<ModifyID/>
+		<Sequence>1,010</Sequence>
+		<PaxCategoryID>6</PaxCategoryID>
+		<Description>Three Night Bangkok Module</Description>
+		<Price>587.00</Price>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>P</PayAt>
+		<Cost/>
+		<ProductTermsID/>
+	</TourHeaderLine>
+</file>

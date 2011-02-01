@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CertificationType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>IATA</Description>
+	</CertificationType>
+	<CertificationType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>ARC</Description>
+	</CertificationType>
+</file>

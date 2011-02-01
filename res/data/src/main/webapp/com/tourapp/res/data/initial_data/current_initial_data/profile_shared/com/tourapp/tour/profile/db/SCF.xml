@@ -1,0 +1,6602 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<SCF ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>006</ScfFrom>
+		<ScfTo>009</ScfTo>
+		<Description>SAN JUAN PR</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>010</ScfFrom>
+		<ScfTo>011</ScfTo>
+		<Description>SPRINGFIELD MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>012</ScfFrom>
+		<ScfTo>012</ScfTo>
+		<Description>PITTSFIELD MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>013</ScfFrom>
+		<ScfTo>013</ScfTo>
+		<Description>SPRINGFIELD MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>014</ScfFrom>
+		<ScfTo>016</ScfTo>
+		<Description>WORCESTER MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>017</ScfFrom>
+		<ScfTo>017</ScfTo>
+		<Description>FRAMINGHAM MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>018</ScfFrom>
+		<ScfTo>018</ScfTo>
+		<Description>MIDDLESEX-ESSEX MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>019</ScfFrom>
+		<ScfTo>019</ScfTo>
+		<Description>MIDDLESEX-ESSEX MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>020</ScfFrom>
+		<ScfTo>020</ScfTo>
+		<Description>BOSTON MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>021</ScfFrom>
+		<ScfTo>022</ScfTo>
+		<Description>BOSTON MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>023</ScfFrom>
+		<ScfTo>024</ScfTo>
+		<Description>BROCKTON MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>025</ScfFrom>
+		<ScfTo>026</ScfTo>
+		<Description>BUZZARDS BAY MA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>027</ScfFrom>
+		<ScfTo>027</ScfTo>
+		<Description>PROVIDENCE RI</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>028</ScfFrom>
+		<ScfTo>029</ScfTo>
+		<Description>PROVIDENCE RI</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>030</ScfFrom>
+		<ScfTo>031</ScfTo>
+		<Description>MANCHESTER NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>032</ScfFrom>
+		<ScfTo>033</ScfTo>
+		<Description>CONCORD NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="17">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>034</ScfFrom>
+		<ScfTo>034</ScfTo>
+		<Description>KEENE NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="18">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>035</ScfFrom>
+		<ScfTo>035</ScfTo>
+		<Description>LITTLETON NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="19">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>036</ScfFrom>
+		<ScfTo>036</ScfTo>
+		<Description>BELLOWS FALLS VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="20">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>037</ScfFrom>
+		<ScfTo>037</ScfTo>
+		<Description>WHITE RIVER JUNCTION VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="21">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>038</ScfFrom>
+		<ScfTo>038</ScfTo>
+		<Description>PORTSMOUTH NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="22">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>039</ScfFrom>
+		<ScfTo>039</ScfTo>
+		<Description>PORTSMOUTH NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="23">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>040</ScfFrom>
+		<ScfTo>041</ScfTo>
+		<Description>PORTLAND ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="24">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>042</ScfFrom>
+		<ScfTo>042</ScfTo>
+		<Description>AUBURN ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="25">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>043</ScfFrom>
+		<ScfTo>043</ScfTo>
+		<Description>AUGUSTA ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="26">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>044</ScfFrom>
+		<ScfTo>044</ScfTo>
+		<Description>BANGOR ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="27">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>045</ScfFrom>
+		<ScfTo>045</ScfTo>
+		<Description>PORTLAND ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="28">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>046</ScfFrom>
+		<ScfTo>046</ScfTo>
+		<Description>BANGOR ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="29">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>047</ScfFrom>
+		<ScfTo>047</ScfTo>
+		<Description>HOULTON ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="30">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>048</ScfFrom>
+		<ScfTo>048</ScfTo>
+		<Description>ROCKLAND ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="31">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>049</ScfFrom>
+		<ScfTo>049</ScfTo>
+		<Description>WATERVILLE ME</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="32">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>050</ScfFrom>
+		<ScfTo>050</ScfTo>
+		<Description>WHITE RIVER JUNCTION VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="33">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>051</ScfFrom>
+		<ScfTo>051</ScfTo>
+		<Description>BELLOWS FALLS VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="34">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>052</ScfFrom>
+		<ScfTo>052</ScfTo>
+		<Description>BENNINGTON VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="35">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>053</ScfFrom>
+		<ScfTo>053</ScfTo>
+		<Description>BRATTLEBORO VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="36">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>054</ScfFrom>
+		<ScfTo>054</ScfTo>
+		<Description>BURLINGTON VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="37">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>056</ScfFrom>
+		<ScfTo>056</ScfTo>
+		<Description>MONTPELIER VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="38">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>057</ScfFrom>
+		<ScfTo>057</ScfTo>
+		<Description>RUTLAND VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="39">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>058</ScfFrom>
+		<ScfTo>058</ScfTo>
+		<Description>SAINT JOHNSBURY VT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="40">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>059</ScfFrom>
+		<ScfTo>059</ScfTo>
+		<Description>LITTLETON NH</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="41">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>060</ScfFrom>
+		<ScfTo>061</ScfTo>
+		<Description>HARTFORD CT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="42">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>062</ScfFrom>
+		<ScfTo>062</ScfTo>
+		<Description>WILLIMANTIC CT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="43">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>063</ScfFrom>
+		<ScfTo>063</ScfTo>
+		<Description>NEW LONDON CT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="44">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>064</ScfFrom>
+		<ScfTo>066</ScfTo>
+		<Description>NEW HAVEN CT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="45">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>067</ScfFrom>
+		<ScfTo>067</ScfTo>
+		<Description>WATERBURY CT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="46">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>068</ScfFrom>
+		<ScfTo>069</ScfTo>
+		<Description>STAMFORD CT</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="47">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>070</ScfFrom>
+		<ScfTo>073</ScfTo>
+		<Description>NEWARK NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="48">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>074</ScfFrom>
+		<ScfTo>075</ScfTo>
+		<Description>PATERSON NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="49">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>076</ScfFrom>
+		<ScfTo>076</ScfTo>
+		<Description>HACKENSACK NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="50">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>077</ScfFrom>
+		<ScfTo>077</ScfTo>
+		<Description>RED BANK NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="51">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>078</ScfFrom>
+		<ScfTo>078</ScfTo>
+		<Description>DOVER NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="52">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>079</ScfFrom>
+		<ScfTo>079</ScfTo>
+		<Description>SUMMIT NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="53">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>080</ScfFrom>
+		<ScfTo>081</ScfTo>
+		<Description>SOUTH JERSEY NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="54">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>082</ScfFrom>
+		<ScfTo>082</ScfTo>
+		<Description>ATLANTIC CITY NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="55">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>083</ScfFrom>
+		<ScfTo>083</ScfTo>
+		<Description>SOUTH JERSEY NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="56">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>084</ScfFrom>
+		<ScfTo>084</ScfTo>
+		<Description>ATLANTIC CITY NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="57">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>085</ScfFrom>
+		<ScfTo>087</ScfTo>
+		<Description>TRENTON NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="58">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>088</ScfFrom>
+		<ScfTo>089</ScfTo>
+		<Description>NEW BRUNSWICK NJ</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="59">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>090</ScfFrom>
+		<ScfTo>098</ScfTo>
+		<Description>MILITARY NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="60">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>100</ScfFrom>
+		<ScfTo>102</ScfTo>
+		<Description>NEW YORK NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="61">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>103</ScfFrom>
+		<ScfTo>103</ScfTo>
+		<Description>STATEN ISLAND NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="62">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>104</ScfFrom>
+		<ScfTo>104</ScfTo>
+		<Description>BRONX NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="63">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>105</ScfFrom>
+		<ScfTo>108</ScfTo>
+		<Description>WESTCHESTER NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="64">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>109</ScfFrom>
+		<ScfTo>109</ScfTo>
+		<Description>SUFFERN NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="65">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>110</ScfFrom>
+		<ScfTo>111</ScfTo>
+		<Description>QUEENS NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="66">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>112</ScfFrom>
+		<ScfTo>112</ScfTo>
+		<Description>BROOKLYN NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="67">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>113</ScfFrom>
+		<ScfTo>114</ScfTo>
+		<Description>QUEENS NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="68">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>115</ScfFrom>
+		<ScfTo>115</ScfTo>
+		<Description>HICKSVILLE NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="69">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>116</ScfFrom>
+		<ScfTo>116</ScfTo>
+		<Description>QUEENS NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="70">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>117</ScfFrom>
+		<ScfTo>118</ScfTo>
+		<Description>HICKSVILLE NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="71">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>119</ScfFrom>
+		<ScfTo>119</ScfTo>
+		<Description>RIVERHEAD NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="72">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>120</ScfFrom>
+		<ScfTo>123</ScfTo>
+		<Description>ALBANY NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="73">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>124</ScfFrom>
+		<ScfTo>124</ScfTo>
+		<Description>KINGSTON NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="74">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>125</ScfFrom>
+		<ScfTo>126</ScfTo>
+		<Description>POUGHKEEPSIENY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="75">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>127</ScfFrom>
+		<ScfTo>127</ScfTo>
+		<Description>MONTICELLO NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="76">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>128</ScfFrom>
+		<ScfTo>128</ScfTo>
+		<Description>GLEN FALLS NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="77">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>129</ScfFrom>
+		<ScfTo>129</ScfTo>
+		<Description>PLATTSBURGH NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="78">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>130</ScfFrom>
+		<ScfTo>132</ScfTo>
+		<Description>SYRACUSENY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="79">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>133</ScfFrom>
+		<ScfTo>135</ScfTo>
+		<Description>UTICA NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="80">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>136</ScfFrom>
+		<ScfTo>136</ScfTo>
+		<Description>WATERTOWN NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="81">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>137</ScfFrom>
+		<ScfTo>139</ScfTo>
+		<Description>BINGHAMTON NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="82">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>140</ScfFrom>
+		<ScfTo>143</ScfTo>
+		<Description>BUFFALO NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="83">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>144</ScfFrom>
+		<ScfTo>146</ScfTo>
+		<Description>ROCHESTER NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="84">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>147</ScfFrom>
+		<ScfTo>147</ScfTo>
+		<Description>JAMESTOWN NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="85">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>148</ScfFrom>
+		<ScfTo>149</ScfTo>
+		<Description>ELMIRA NY</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="86">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>150</ScfFrom>
+		<ScfTo>152</ScfTo>
+		<Description>PITTSBURGH PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="87">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>153</ScfFrom>
+		<ScfTo>153</ScfTo>
+		<Description>WASHINGTON PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="88">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>154</ScfFrom>
+		<ScfTo>154</ScfTo>
+		<Description>UNIONTOWN PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="89">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>155</ScfFrom>
+		<ScfTo>155</ScfTo>
+		<Description>JOHNSTOWN PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="90">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>156</ScfFrom>
+		<ScfTo>156</ScfTo>
+		<Description>GREENSBURG PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="91">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>157</ScfFrom>
+		<ScfTo>157</ScfTo>
+		<Description>INDIANA PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="92">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>158</ScfFrom>
+		<ScfTo>158</ScfTo>
+		<Description>DU BOIS PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="93">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>159</ScfFrom>
+		<ScfTo>159</ScfTo>
+		<Description>JOHNSTOWN PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="94">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>160</ScfFrom>
+		<ScfTo>160</ScfTo>
+		<Description>BUTLER PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="95">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>161</ScfFrom>
+		<ScfTo>161</ScfTo>
+		<Description>NEW CASTLE PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="96">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>162</ScfFrom>
+		<ScfTo>162</ScfTo>
+		<Description>BUTLER PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="97">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>163</ScfFrom>
+		<ScfTo>163</ScfTo>
+		<Description>OIL CITY PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="98">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>164</ScfFrom>
+		<ScfTo>165</ScfTo>
+		<Description>ERIE PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="99">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>166</ScfFrom>
+		<ScfTo>166</ScfTo>
+		<Description>ALTOONA PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="100">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>167</ScfFrom>
+		<ScfTo>167</ScfTo>
+		<Description>BRADFORD PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="101">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>168</ScfFrom>
+		<ScfTo>168</ScfTo>
+		<Description>STATE COLLEGE PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="102">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>169</ScfFrom>
+		<ScfTo>169</ScfTo>
+		<Description>WELLSBORO PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="103">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>170</ScfFrom>
+		<ScfTo>172</ScfTo>
+		<Description>HARRISBURG PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="104">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>173</ScfFrom>
+		<ScfTo>176</ScfTo>
+		<Description>LANCASTER PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="105">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>177</ScfFrom>
+		<ScfTo>177</ScfTo>
+		<Description>WILLIAMSPORT PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="106">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>178</ScfFrom>
+		<ScfTo>178</ScfTo>
+		<Description>HARRISBURG PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="107">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>179</ScfFrom>
+		<ScfTo>179</ScfTo>
+		<Description>POTTSVILLE PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="108">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>180</ScfFrom>
+		<ScfTo>181</ScfTo>
+		<Description>LEHIGH VALLEY PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="109">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>182</ScfFrom>
+		<ScfTo>182</ScfTo>
+		<Description>WILKES-BARRE PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="110">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>183</ScfFrom>
+		<ScfTo>183</ScfTo>
+		<Description>LEHIGH VALLEY PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="111">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>184</ScfFrom>
+		<ScfTo>185</ScfTo>
+		<Description>SCRANTON PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="112">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>186</ScfFrom>
+		<ScfTo>187</ScfTo>
+		<Description>WILKES-BARRE PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="113">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>188</ScfFrom>
+		<ScfTo>188</ScfTo>
+		<Description>SCRANTON PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="114">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>189</ScfFrom>
+		<ScfTo>189</ScfTo>
+		<Description>SOUTHEASTERN PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="115">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>190</ScfFrom>
+		<ScfTo>191</ScfTo>
+		<Description>PHILADELPHIA PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="116">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>193</ScfFrom>
+		<ScfTo>194</ScfTo>
+		<Description>SOUTHEASTERN PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="117">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>195</ScfFrom>
+		<ScfTo>196</ScfTo>
+		<Description>READING PA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="118">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>197</ScfFrom>
+		<ScfTo>199</ScfTo>
+		<Description>WILMINGTON DE</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="119">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>200</ScfFrom>
+		<ScfTo>205</ScfTo>
+		<Description>WASHINGTON DC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="120">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>206</ScfFrom>
+		<ScfTo>209</ScfTo>
+		<Description>PRINCE GEORGES MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="121">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>210</ScfFrom>
+		<ScfTo>214</ScfTo>
+		<Description>BALTIMORE MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="122">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>215</ScfFrom>
+		<ScfTo>215</ScfTo>
+		<Description>CUMBERLAND MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="123">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>216</ScfFrom>
+		<ScfTo>216</ScfTo>
+		<Description>EASTON MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="124">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>217</ScfFrom>
+		<ScfTo>217</ScfTo>
+		<Description>FREDERICK MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="125">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>218</ScfFrom>
+		<ScfTo>218</ScfTo>
+		<Description>SALISBURY MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="126">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>219</ScfFrom>
+		<ScfTo>219</ScfTo>
+		<Description>BALTIMORE MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="127">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>220</ScfFrom>
+		<ScfTo>223</ScfTo>
+		<Description>NORTHERN VA VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="128">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>224</ScfFrom>
+		<ScfTo>225</ScfTo>
+		<Description>FREDERICKSBURG VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="129">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>226</ScfFrom>
+		<ScfTo>226</ScfTo>
+		<Description>WINCHESTER VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="130">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>227</ScfFrom>
+		<ScfTo>227</ScfTo>
+		<Description>CULPEPER VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="131">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>228</ScfFrom>
+		<ScfTo>228</ScfTo>
+		<Description>HARRISONBURG VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="132">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>229</ScfFrom>
+		<ScfTo>229</ScfTo>
+		<Description>CHARLOTTESVILLE VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="133">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>230</ScfFrom>
+		<ScfTo>232</ScfTo>
+		<Description>RICHMOND VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="134">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>233</ScfFrom>
+		<ScfTo>237</ScfTo>
+		<Description>NORFOLK VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="135">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>238</ScfFrom>
+		<ScfTo>238</ScfTo>
+		<Description>PETERSBURGVA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="136">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>239</ScfFrom>
+		<ScfTo>239</ScfTo>
+		<Description>FARMVILLEVA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="137">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>240</ScfFrom>
+		<ScfTo>241</ScfTo>
+		<Description>ROANOKE VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="138">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>242</ScfFrom>
+		<ScfTo>242</ScfTo>
+		<Description>BRISTOL VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="139">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>243</ScfFrom>
+		<ScfTo>243</ScfTo>
+		<Description>PULASKI VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="140">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>244</ScfFrom>
+		<ScfTo>244</ScfTo>
+		<Description>CHARLOTTESVILLE VA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="141">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>245</ScfFrom>
+		<ScfTo>245</ScfTo>
+		<Description>LYNCHBURGVA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="142">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>246</ScfFrom>
+		<ScfTo>246</ScfTo>
+		<Description>BLUEFIELD WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="143">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>247</ScfFrom>
+		<ScfTo>248</ScfTo>
+		<Description>BLUEFIELD WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="144">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>249</ScfFrom>
+		<ScfTo>249</ScfTo>
+		<Description>LEWISBURG WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="145">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>250</ScfFrom>
+		<ScfTo>253</ScfTo>
+		<Description>CHARLESTON WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="146">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>254</ScfFrom>
+		<ScfTo>254</ScfTo>
+		<Description>MARTINSBURG WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="147">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>255</ScfFrom>
+		<ScfTo>257</ScfTo>
+		<Description>HUNTINGTON WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="148">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>258</ScfFrom>
+		<ScfTo>259</ScfTo>
+		<Description>BECKLEY WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="149">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>260</ScfFrom>
+		<ScfTo>260</ScfTo>
+		<Description>WHEELING WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="150">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>261</ScfFrom>
+		<ScfTo>261</ScfTo>
+		<Description>PARKERSBURG WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="151">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>262</ScfFrom>
+		<ScfTo>262</ScfTo>
+		<Description>BUCKHANNON WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="152">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>263</ScfFrom>
+		<ScfTo>265</ScfTo>
+		<Description>CLARKSBURG WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="153">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>266</ScfFrom>
+		<ScfTo>266</ScfTo>
+		<Description>GASSAWAY WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="154">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>267</ScfFrom>
+		<ScfTo>267</ScfTo>
+		<Description>CUMBERLAND MD</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="155">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>268</ScfFrom>
+		<ScfTo>268</ScfTo>
+		<Description>PETERSBURG WV</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="156">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>270</ScfFrom>
+		<ScfTo>274</ScfTo>
+		<Description>GREENSBORO NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="157">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>275</ScfFrom>
+		<ScfTo>277</ScfTo>
+		<Description>RALEIGH NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="158">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>278</ScfFrom>
+		<ScfTo>279</ScfTo>
+		<Description>ROCKY MOUNT NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="159">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>280</ScfFrom>
+		<ScfTo>282</ScfTo>
+		<Description>CHARLOTTE NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="160">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>283</ScfFrom>
+		<ScfTo>284</ScfTo>
+		<Description>FAYETTEVILLE NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="161">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>285</ScfFrom>
+		<ScfTo>285</ScfTo>
+		<Description>KINSTON NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="162">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>286</ScfFrom>
+		<ScfTo>286</ScfTo>
+		<Description>HICKORY NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="163">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>287</ScfFrom>
+		<ScfTo>289</ScfTo>
+		<Description>ASHEVILLE NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="164">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>290</ScfFrom>
+		<ScfTo>292</ScfTo>
+		<Description>COLUMBIA SC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="165">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>293</ScfFrom>
+		<ScfTo>293</ScfTo>
+		<Description>GREENVILLE SC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="166">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>294</ScfFrom>
+		<ScfTo>294</ScfTo>
+		<Description>CHARLESTON SC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="167">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>295</ScfFrom>
+		<ScfTo>295</ScfTo>
+		<Description>FLORENCE SC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="168">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>296</ScfFrom>
+		<ScfTo>296</ScfTo>
+		<Description>GREENVILLE SC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="169">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>297</ScfFrom>
+		<ScfTo>297</ScfTo>
+		<Description>CHARLOTTE NC</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="170">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>298</ScfFrom>
+		<ScfTo>298</ScfTo>
+		<Description>AUGUSTA GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="171">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>299</ScfFrom>
+		<ScfTo>299</ScfTo>
+		<Description>SAVANNAH GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="172">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>300</ScfFrom>
+		<ScfTo>303</ScfTo>
+		<Description>ATLANTA GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="173">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>304</ScfFrom>
+		<ScfTo>304</ScfTo>
+		<Description>SWAINSBORO GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="174">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>305</ScfFrom>
+		<ScfTo>305</ScfTo>
+		<Description>GAINESVILLE GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="175">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>306</ScfFrom>
+		<ScfTo>306</ScfTo>
+		<Description>ATHENS GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="176">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>307</ScfFrom>
+		<ScfTo>307</ScfTo>
+		<Description>CHATTANOOGA TN</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="177">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>308</ScfFrom>
+		<ScfTo>309</ScfTo>
+		<Description>AUGUSTA GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="178">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>310</ScfFrom>
+		<ScfTo>312</ScfTo>
+		<Description>MACON GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="179">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>313</ScfFrom>
+		<ScfTo>314</ScfTo>
+		<Description>SAVANNAH GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="180">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>315</ScfFrom>
+		<ScfTo>315</ScfTo>
+		<Description>WAYCROSS GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="181">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>316</ScfFrom>
+		<ScfTo>316</ScfTo>
+		<Description>VALDOSTA GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="182">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>317</ScfFrom>
+		<ScfTo>317</ScfTo>
+		<Description>ALBANY GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="183">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>318</ScfFrom>
+		<ScfTo>319</ScfTo>
+		<Description>COLUMBUS GA</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="184">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>320</ScfFrom>
+		<ScfTo>322</ScfTo>
+		<Description>JACKSONVILLE FL</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="185">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>323</ScfFrom>
+		<ScfTo>323</ScfTo>
+		<Description>TALLAHASSEE FL</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="186">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>324</ScfFrom>
+		<ScfTo>324</ScfTo>
+		<Description>PANAMA CITY FL</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="187">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>325</ScfFrom>
+		<ScfTo>325</ScfTo>
+		<Description>PENSACOLA FL</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="188">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>326</ScfFrom>
+		<ScfTo>326</ScfTo>
+		<Description>GAINESVILLE FL</Description>
+		<SalespersonID/>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="189">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>327</ScfFrom>
+		<ScfTo>329</ScfTo>
+		<Description>ORLANDO FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="190">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>330</ScfFrom>
+		<ScfTo>333</ScfTo>
+		<Description>MIAMI FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="191">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>334</ScfFrom>
+		<ScfTo>334</ScfTo>
+		<Description>WEST PALM BEACH FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="192">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>335</ScfFrom>
+		<ScfTo>337</ScfTo>
+		<Description>TAMPA FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="193">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>338</ScfFrom>
+		<ScfTo>338</ScfTo>
+		<Description>LAKELAND FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="194">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>339</ScfFrom>
+		<ScfTo>339</ScfTo>
+		<Description>FORT MYERS FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="195">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>340</ScfFrom>
+		<ScfTo>340</ScfTo>
+		<Description>MILITARY FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="196">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>342</ScfFrom>
+		<ScfTo>342</ScfTo>
+		<Description>TAMPA FL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="197">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>350</ScfFrom>
+		<ScfTo>352</ScfTo>
+		<Description>BIRMINGHAM AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="198">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>354</ScfFrom>
+		<ScfTo>354</ScfTo>
+		<Description>TUSCALOOSA AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="199">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>355</ScfFrom>
+		<ScfTo>355</ScfTo>
+		<Description>BIRMINGHAM AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="200">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>356</ScfFrom>
+		<ScfTo>358</ScfTo>
+		<Description>HUNTSVILLE AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="201">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>359</ScfFrom>
+		<ScfTo>359</ScfTo>
+		<Description>GADSDEN AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="202">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>360</ScfFrom>
+		<ScfTo>361</ScfTo>
+		<Description>MONTGOMERY AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="203">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>362</ScfFrom>
+		<ScfTo>362</ScfTo>
+		<Description>ANNISTON AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="204">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>363</ScfFrom>
+		<ScfTo>363</ScfTo>
+		<Description>DOTHAN AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="205">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>364</ScfFrom>
+		<ScfTo>364</ScfTo>
+		<Description>EVERGREEN AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="206">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>365</ScfFrom>
+		<ScfTo>366</ScfTo>
+		<Description>MOBILE AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="207">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>367</ScfFrom>
+		<ScfTo>367</ScfTo>
+		<Description>SELMA AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="208">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>368</ScfFrom>
+		<ScfTo>368</ScfTo>
+		<Description>OPELIKA AL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="209">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>369</ScfFrom>
+		<ScfTo>369</ScfTo>
+		<Description>MERIDIAN MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="210">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>370</ScfFrom>
+		<ScfTo>372</ScfTo>
+		<Description>NASHVILLE TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="211">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>373</ScfFrom>
+		<ScfTo>374</ScfTo>
+		<Description>CHATTANOOGA TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="212">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>376</ScfFrom>
+		<ScfTo>376</ScfTo>
+		<Description>JOHNSON CITY TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="213">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>377</ScfFrom>
+		<ScfTo>379</ScfTo>
+		<Description>KNOXVILLE TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="214">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>380</ScfFrom>
+		<ScfTo>381</ScfTo>
+		<Description>MEMPHIS TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="215">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>382</ScfFrom>
+		<ScfTo>382</ScfTo>
+		<Description>MC KENZIE TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="216">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>383</ScfFrom>
+		<ScfTo>383</ScfTo>
+		<Description>JACKSON TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="217">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>384</ScfFrom>
+		<ScfTo>384</ScfTo>
+		<Description>COLUMBIA TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="218">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>385</ScfFrom>
+		<ScfTo>385</ScfTo>
+		<Description>COOKEVILLE TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="219">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>386</ScfFrom>
+		<ScfTo>386</ScfTo>
+		<Description>MEMPHIS TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="220">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>387</ScfFrom>
+		<ScfTo>387</ScfTo>
+		<Description>GREENVILLE MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="221">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>388</ScfFrom>
+		<ScfTo>388</ScfTo>
+		<Description>TUPELO MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="222">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>389</ScfFrom>
+		<ScfTo>389</ScfTo>
+		<Description>GRENADA MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="223">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>390</ScfFrom>
+		<ScfTo>392</ScfTo>
+		<Description>JACKSON MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="224">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>393</ScfFrom>
+		<ScfTo>393</ScfTo>
+		<Description>MERIDIAN MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="225">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>394</ScfFrom>
+		<ScfTo>394</ScfTo>
+		<Description>LAUREL MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="226">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>395</ScfFrom>
+		<ScfTo>395</ScfTo>
+		<Description>GULFPORT MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="227">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>396</ScfFrom>
+		<ScfTo>396</ScfTo>
+		<Description>MC COMB MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="228">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>397</ScfFrom>
+		<ScfTo>397</ScfTo>
+		<Description>COLUMBUS MS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="229">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>400</ScfFrom>
+		<ScfTo>402</ScfTo>
+		<Description>LOUISVILLE KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="230">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>403</ScfFrom>
+		<ScfTo>406</ScfTo>
+		<Description>LEXINGTON KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="231">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>407</ScfFrom>
+		<ScfTo>409</ScfTo>
+		<Description>CORBIN KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="232">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>410</ScfFrom>
+		<ScfTo>410</ScfTo>
+		<Description>CINCINNATI OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="233">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>411</ScfFrom>
+		<ScfTo>412</ScfTo>
+		<Description>ASHLAND KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="234">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>413</ScfFrom>
+		<ScfTo>414</ScfTo>
+		<Description>CAMPTON KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="235">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>415</ScfFrom>
+		<ScfTo>416</ScfTo>
+		<Description>PIKEVILLE KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="236">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>417</ScfFrom>
+		<ScfTo>418</ScfTo>
+		<Description>HAZARD KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="237">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>420</ScfFrom>
+		<ScfTo>420</ScfTo>
+		<Description>PADUCAH KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="238">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>421</ScfFrom>
+		<ScfTo>422</ScfTo>
+		<Description>BOWLING GREEN KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="239">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>423</ScfFrom>
+		<ScfTo>423</ScfTo>
+		<Description>OWENSBORO KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="240">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>424</ScfFrom>
+		<ScfTo>424</ScfTo>
+		<Description>EVANSVILLE IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="241">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>425</ScfFrom>
+		<ScfTo>426</ScfTo>
+		<Description>SOMERSET KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="242">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>427</ScfFrom>
+		<ScfTo>427</ScfTo>
+		<Description>ELIZABETHTOWN KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="243">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>430</ScfFrom>
+		<ScfTo>433</ScfTo>
+		<Description>COLUMBUS OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="244">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>434</ScfFrom>
+		<ScfTo>436</ScfTo>
+		<Description>TOLEDO OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="245">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>437</ScfFrom>
+		<ScfTo>438</ScfTo>
+		<Description>ZANESVILLE OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="246">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>439</ScfFrom>
+		<ScfTo>439</ScfTo>
+		<Description>STEUBENVILLE OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="247">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>440</ScfFrom>
+		<ScfTo>441</ScfTo>
+		<Description>CLEVELAND OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="248">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>442</ScfFrom>
+		<ScfTo>443</ScfTo>
+		<Description>AKRON OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="249">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>444</ScfFrom>
+		<ScfTo>445</ScfTo>
+		<Description>YOUNGSTOWN OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="250">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>446</ScfFrom>
+		<ScfTo>447</ScfTo>
+		<Description>CANTON OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="251">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>448</ScfFrom>
+		<ScfTo>449</ScfTo>
+		<Description>MANSFIELD OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="252">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>450</ScfFrom>
+		<ScfTo>452</ScfTo>
+		<Description>CINCINNATI OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="253">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>453</ScfFrom>
+		<ScfTo>455</ScfTo>
+		<Description>DAYTON OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="254">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>456</ScfFrom>
+		<ScfTo>456</ScfTo>
+		<Description>CHILLICOTHE OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="255">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>457</ScfFrom>
+		<ScfTo>457</ScfTo>
+		<Description>ATHENS OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="256">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>458</ScfFrom>
+		<ScfTo>458</ScfTo>
+		<Description>LIMA OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="257">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>460</ScfFrom>
+		<ScfTo>462</ScfTo>
+		<Description>INDIANAPOLIS IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="258">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>463</ScfFrom>
+		<ScfTo>464</ScfTo>
+		<Description>GARY IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="259">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>465</ScfFrom>
+		<ScfTo>466</ScfTo>
+		<Description>SOUTH BEND IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="260">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>467</ScfFrom>
+		<ScfTo>468</ScfTo>
+		<Description>FORT WAYNE IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="261">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>469</ScfFrom>
+		<ScfTo>469</ScfTo>
+		<Description>KOKOMO IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="262">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>470</ScfFrom>
+		<ScfTo>470</ScfTo>
+		<Description>CINCINNATI OH</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="263">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>471</ScfFrom>
+		<ScfTo>471</ScfTo>
+		<Description>LOUISVILLE KY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="264">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>472</ScfFrom>
+		<ScfTo>472</ScfTo>
+		<Description>COLUMBUS IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="265">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>473</ScfFrom>
+		<ScfTo>473</ScfTo>
+		<Description>MUNCIE IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="266">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>474</ScfFrom>
+		<ScfTo>474</ScfTo>
+		<Description>BLOOMINGTON IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="267">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>475</ScfFrom>
+		<ScfTo>475</ScfTo>
+		<Description>WASHINGTON IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="268">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>476</ScfFrom>
+		<ScfTo>477</ScfTo>
+		<Description>EVANSVILLE IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="269">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>478</ScfFrom>
+		<ScfTo>478</ScfTo>
+		<Description>TERRE HAUTE IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="270">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>479</ScfFrom>
+		<ScfTo>479</ScfTo>
+		<Description>LAFAYETTE IN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="271">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>480</ScfFrom>
+		<ScfTo>480</ScfTo>
+		<Description>ROYAL OAK MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="272">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>481</ScfFrom>
+		<ScfTo>482</ScfTo>
+		<Description>DETROIT MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="273">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>483</ScfFrom>
+		<ScfTo>483</ScfTo>
+		<Description>ROYAL OAK MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="274">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>484</ScfFrom>
+		<ScfTo>485</ScfTo>
+		<Description>FLINT MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="275">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>486</ScfFrom>
+		<ScfTo>487</ScfTo>
+		<Description>SAGINAW MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="276">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>488</ScfFrom>
+		<ScfTo>489</ScfTo>
+		<Description>LANSING MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="277">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>490</ScfFrom>
+		<ScfTo>491</ScfTo>
+		<Description>KALAMAZOO MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="278">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>492</ScfFrom>
+		<ScfTo>492</ScfTo>
+		<Description>JACKSON MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="279">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>493</ScfFrom>
+		<ScfTo>495</ScfTo>
+		<Description>GRAND RAPIDS MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="280">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>496</ScfFrom>
+		<ScfTo>496</ScfTo>
+		<Description>TRAVERSE CITY MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="281">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>497</ScfFrom>
+		<ScfTo>497</ScfTo>
+		<Description>GAYLORD MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="282">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>498</ScfFrom>
+		<ScfTo>499</ScfTo>
+		<Description>IRON MOUNTAIN MI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="283">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>500</ScfFrom>
+		<ScfTo>503</ScfTo>
+		<Description>DES MOINES IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="284">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>504</ScfFrom>
+		<ScfTo>504</ScfTo>
+		<Description>MASON CITY IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="285">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>505</ScfFrom>
+		<ScfTo>505</ScfTo>
+		<Description>FORT DODGE IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="286">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>506</ScfFrom>
+		<ScfTo>507</ScfTo>
+		<Description>WATERLOO IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="287">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>508</ScfFrom>
+		<ScfTo>508</ScfTo>
+		<Description>CRESTON IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="288">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>510</ScfFrom>
+		<ScfTo>511</ScfTo>
+		<Description>SIOUX CITY IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="289">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>512</ScfFrom>
+		<ScfTo>512</ScfTo>
+		<Description>SHELDON IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="290">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>513</ScfFrom>
+		<ScfTo>513</ScfTo>
+		<Description>SPENCER IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="291">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>514</ScfFrom>
+		<ScfTo>514</ScfTo>
+		<Description>CARROLL IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="292">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>515</ScfFrom>
+		<ScfTo>516</ScfTo>
+		<Description>OMAHA NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="293">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>520</ScfFrom>
+		<ScfTo>520</ScfTo>
+		<Description>DUBUQUE IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="294">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>521</ScfFrom>
+		<ScfTo>521</ScfTo>
+		<Description>DECORAH IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="295">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>522</ScfFrom>
+		<ScfTo>524</ScfTo>
+		<Description>CEDAR RAPIDS IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="296">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>525</ScfFrom>
+		<ScfTo>525</ScfTo>
+		<Description>OTTUMWA IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="297">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>526</ScfFrom>
+		<ScfTo>526</ScfTo>
+		<Description>BURLINGTON IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="298">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>527</ScfFrom>
+		<ScfTo>528</ScfTo>
+		<Description>ROCK ISLAND IA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="299">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>530</ScfFrom>
+		<ScfTo>532</ScfTo>
+		<Description>MILWAUKEE WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="300">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>534</ScfFrom>
+		<ScfTo>534</ScfTo>
+		<Description>MILWAUKEE WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="301">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>535</ScfFrom>
+		<ScfTo>535</ScfTo>
+		<Description>MADISON WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="302">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>537</ScfFrom>
+		<ScfTo>538</ScfTo>
+		<Description>MADISON WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="303">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>539</ScfFrom>
+		<ScfTo>539</ScfTo>
+		<Description>PORTAGE WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="304">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>540</ScfFrom>
+		<ScfTo>540</ScfTo>
+		<Description>SAINT PAUL MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="305">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>541</ScfFrom>
+		<ScfTo>543</ScfTo>
+		<Description>GREEN BAY WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="306">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>544</ScfFrom>
+		<ScfTo>544</ScfTo>
+		<Description>WAUSAU WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="307">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>545</ScfFrom>
+		<ScfTo>545</ScfTo>
+		<Description>RHINELANDER WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="308">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>546</ScfFrom>
+		<ScfTo>546</ScfTo>
+		<Description>LA CROSSE WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="309">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>547</ScfFrom>
+		<ScfTo>547</ScfTo>
+		<Description>EAU CLAIR WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="310">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>548</ScfFrom>
+		<ScfTo>548</ScfTo>
+		<Description>SPOONER WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="311">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>549</ScfFrom>
+		<ScfTo>549</ScfTo>
+		<Description>OSHKOSH WI</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="312">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>550</ScfFrom>
+		<ScfTo>551</ScfTo>
+		<Description>SAINT PAUL MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="313">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>553</ScfFrom>
+		<ScfTo>554</ScfTo>
+		<Description>MINNEAPOLIS MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="314">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>556</ScfFrom>
+		<ScfTo>558</ScfTo>
+		<Description>DULUTH MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="315">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>559</ScfFrom>
+		<ScfTo>559</ScfTo>
+		<Description>ROCHESTER MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="316">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>560</ScfFrom>
+		<ScfTo>560</ScfTo>
+		<Description>MANKATO MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="317">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>561</ScfFrom>
+		<ScfTo>561</ScfTo>
+		<Description>WINDOM MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="318">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>562</ScfFrom>
+		<ScfTo>562</ScfTo>
+		<Description>WILLMAR MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="319">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>563</ScfFrom>
+		<ScfTo>563</ScfTo>
+		<Description>SAINT CLOUD MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="320">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>564</ScfFrom>
+		<ScfTo>564</ScfTo>
+		<Description>BRAINERD MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="321">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>565</ScfFrom>
+		<ScfTo>565</ScfTo>
+		<Description>DETROIT LAKES MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="322">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>566</ScfFrom>
+		<ScfTo>566</ScfTo>
+		<Description>BEMIDJI MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="323">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>567</ScfFrom>
+		<ScfTo>567</ScfTo>
+		<Description>THIEF RIVER FALLS MN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="324">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>570</ScfFrom>
+		<ScfTo>571</ScfTo>
+		<Description>SIOUX FALLS SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="325">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>572</ScfFrom>
+		<ScfTo>572</ScfTo>
+		<Description>WATERTOWN SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="326">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>573</ScfFrom>
+		<ScfTo>573</ScfTo>
+		<Description>MITCHELL SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="327">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>574</ScfFrom>
+		<ScfTo>574</ScfTo>
+		<Description>ABERDEEN SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="328">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>575</ScfFrom>
+		<ScfTo>575</ScfTo>
+		<Description>PIERRE SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="329">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>576</ScfFrom>
+		<ScfTo>576</ScfTo>
+		<Description>MOBRIDGE SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="330">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>577</ScfFrom>
+		<ScfTo>577</ScfTo>
+		<Description>RAPID CITY SD</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="331">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>580</ScfFrom>
+		<ScfTo>581</ScfTo>
+		<Description>FARGO ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="332">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>582</ScfFrom>
+		<ScfTo>582</ScfTo>
+		<Description>GRAND FORKS ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="333">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>583</ScfFrom>
+		<ScfTo>583</ScfTo>
+		<Description>DEVILS LAKE ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="334">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>584</ScfFrom>
+		<ScfTo>584</ScfTo>
+		<Description>JAMESTOWN ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="335">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>585</ScfFrom>
+		<ScfTo>585</ScfTo>
+		<Description>BISMARK ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="336">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>586</ScfFrom>
+		<ScfTo>586</ScfTo>
+		<Description>DICKINSON ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="337">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>587</ScfFrom>
+		<ScfTo>587</ScfTo>
+		<Description>MINOT ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="338">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>588</ScfFrom>
+		<ScfTo>588</ScfTo>
+		<Description>WILLISTON ND</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="339">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>590</ScfFrom>
+		<ScfTo>591</ScfTo>
+		<Description>BILLINGS MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="340">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>592</ScfFrom>
+		<ScfTo>592</ScfTo>
+		<Description>WOLF POINT MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="341">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>593</ScfFrom>
+		<ScfTo>593</ScfTo>
+		<Description>MILES CITY MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="342">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>594</ScfFrom>
+		<ScfTo>594</ScfTo>
+		<Description>GREAT FALLS MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="343">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>595</ScfFrom>
+		<ScfTo>595</ScfTo>
+		<Description>HAVRE MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="344">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>596</ScfFrom>
+		<ScfTo>596</ScfTo>
+		<Description>HELENA MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="345">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>597</ScfFrom>
+		<ScfTo>597</ScfTo>
+		<Description>BUTTE MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="346">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>598</ScfFrom>
+		<ScfTo>598</ScfTo>
+		<Description>MISSOULA MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="347">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>599</ScfFrom>
+		<ScfTo>599</ScfTo>
+		<Description>KALISPELL MT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="348">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>600</ScfFrom>
+		<ScfTo>603</ScfTo>
+		<Description>NORTH SUBURBAN IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="349">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>604</ScfFrom>
+		<ScfTo>605</ScfTo>
+		<Description>SOUTH SUBURBAN IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="350">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>606</ScfFrom>
+		<ScfTo>606</ScfTo>
+		<Description>CHICAGO IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="351">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>609</ScfFrom>
+		<ScfTo>609</ScfTo>
+		<Description>KANKAKEE IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="352">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>610</ScfFrom>
+		<ScfTo>611</ScfTo>
+		<Description>ROCKFORD IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="353">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>612</ScfFrom>
+		<ScfTo>612</ScfTo>
+		<Description>ROCK ISLAND IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="354">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>613</ScfFrom>
+		<ScfTo>613</ScfTo>
+		<Description>LA SALLE IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="355">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>614</ScfFrom>
+		<ScfTo>614</ScfTo>
+		<Description>GALESBURG IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="356">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>615</ScfFrom>
+		<ScfTo>616</ScfTo>
+		<Description>PEORIA IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="357">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>617</ScfFrom>
+		<ScfTo>617</ScfTo>
+		<Description>BLOOMINGTON IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="358">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>618</ScfFrom>
+		<ScfTo>619</ScfTo>
+		<Description>CHAMPAIGN IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="359">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>620</ScfFrom>
+		<ScfTo>622</ScfTo>
+		<Description>SAINT LOUIS MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="360">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>623</ScfFrom>
+		<ScfTo>623</ScfTo>
+		<Description>QUINCY IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="361">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>624</ScfFrom>
+		<ScfTo>624</ScfTo>
+		<Description>EFFINGHAM IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="362">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>625</ScfFrom>
+		<ScfTo>627</ScfTo>
+		<Description>SPRINGFIELD IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="363">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>628</ScfFrom>
+		<ScfTo>628</ScfTo>
+		<Description>CENTRALIA IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="364">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>629</ScfFrom>
+		<ScfTo>629</ScfTo>
+		<Description>CARBONDALE IL</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="365">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>630</ScfFrom>
+		<ScfTo>631</ScfTo>
+		<Description>SAINT LOUIS MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="366">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>633</ScfFrom>
+		<ScfTo>633</ScfTo>
+		<Description>SAINT LOUIS MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="367">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>634</ScfFrom>
+		<ScfTo>634</ScfTo>
+		<Description>HANNIBAL MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="368">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>635</ScfFrom>
+		<ScfTo>635</ScfTo>
+		<Description>KIRKSVILLE MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="369">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>636</ScfFrom>
+		<ScfTo>636</ScfTo>
+		<Description>FLAT RIVER MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="370">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>637</ScfFrom>
+		<ScfTo>637</ScfTo>
+		<Description>CAPE GIRARDEAU MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="371">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>638</ScfFrom>
+		<ScfTo>638</ScfTo>
+		<Description>SIKESTON MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="372">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>639</ScfFrom>
+		<ScfTo>639</ScfTo>
+		<Description>POPLAR BLUFF MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="373">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>640</ScfFrom>
+		<ScfTo>641</ScfTo>
+		<Description>KANSAS CITY MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="374">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>644</ScfFrom>
+		<ScfTo>645</ScfTo>
+		<Description>SAINT JOSEPH MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="375">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>646</ScfFrom>
+		<ScfTo>646</ScfTo>
+		<Description>CHILLICOTHE MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="376">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>647</ScfFrom>
+		<ScfTo>647</ScfTo>
+		<Description>HARRISONVILLE MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="377">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>648</ScfFrom>
+		<ScfTo>648</ScfTo>
+		<Description>JOPLIN MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="378">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>650</ScfFrom>
+		<ScfTo>652</ScfTo>
+		<Description>MID-MISSOURI MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="379">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>653</ScfFrom>
+		<ScfTo>653</ScfTo>
+		<Description>SEDALIA MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="380">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>654</ScfFrom>
+		<ScfTo>655</ScfTo>
+		<Description>ROLLA MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="381">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>656</ScfFrom>
+		<ScfTo>658</ScfTo>
+		<Description>SPRINGFIELD MO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="382">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>660</ScfFrom>
+		<ScfTo>662</ScfTo>
+		<Description>KANSAS CITY KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="383">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>664</ScfFrom>
+		<ScfTo>666</ScfTo>
+		<Description>TOPEKA KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="384">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>667</ScfFrom>
+		<ScfTo>667</ScfTo>
+		<Description>FORT SCOTT KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="385">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>668</ScfFrom>
+		<ScfTo>668</ScfTo>
+		<Description>TOPEKA KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="386">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>669</ScfFrom>
+		<ScfTo>669</ScfTo>
+		<Description>SALINA KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="387">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>670</ScfFrom>
+		<ScfTo>672</ScfTo>
+		<Description>WICHITA KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="388">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>673</ScfFrom>
+		<ScfTo>673</ScfTo>
+		<Description>INDEPENDENCE KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="389">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>674</ScfFrom>
+		<ScfTo>674</ScfTo>
+		<Description>SALINA KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="390">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>675</ScfFrom>
+		<ScfTo>675</ScfTo>
+		<Description>HUTCHINSON KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="391">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>676</ScfFrom>
+		<ScfTo>676</ScfTo>
+		<Description>HAYS KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="392">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>677</ScfFrom>
+		<ScfTo>677</ScfTo>
+		<Description>COLBY KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="393">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>678</ScfFrom>
+		<ScfTo>678</ScfTo>
+		<Description>DODGE CITY KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="394">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>679</ScfFrom>
+		<ScfTo>679</ScfTo>
+		<Description>LIBERAL KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="395">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>680</ScfFrom>
+		<ScfTo>681</ScfTo>
+		<Description>OMAHA NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="396">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>683</ScfFrom>
+		<ScfTo>685</ScfTo>
+		<Description>LINCOLN NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="397">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>686</ScfFrom>
+		<ScfTo>686</ScfTo>
+		<Description>COLUMBUS NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="398">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>687</ScfFrom>
+		<ScfTo>687</ScfTo>
+		<Description>NORFOLK NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="399">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>688</ScfFrom>
+		<ScfTo>688</ScfTo>
+		<Description>GRAND ISLAND NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="400">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>689</ScfFrom>
+		<ScfTo>689</ScfTo>
+		<Description>HASTINGS NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="401">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>690</ScfFrom>
+		<ScfTo>690</ScfTo>
+		<Description>MC COOK NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="402">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>691</ScfFrom>
+		<ScfTo>691</ScfTo>
+		<Description>NORTH PLATTE NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="403">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>692</ScfFrom>
+		<ScfTo>692</ScfTo>
+		<Description>VALENTINE NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="404">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>693</ScfFrom>
+		<ScfTo>693</ScfTo>
+		<Description>ALLIANCE NE</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="405">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>700</ScfFrom>
+		<ScfTo>701</ScfTo>
+		<Description>NEW ORLEANS LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="406">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>703</ScfFrom>
+		<ScfTo>703</ScfTo>
+		<Description>THIBODAUX LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="407">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>704</ScfFrom>
+		<ScfTo>704</ScfTo>
+		<Description>HAMMOND LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="408">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>705</ScfFrom>
+		<ScfTo>705</ScfTo>
+		<Description>LAFAYETTE LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="409">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>706</ScfFrom>
+		<ScfTo>706</ScfTo>
+		<Description>LAKE CHARLES LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="410">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>707</ScfFrom>
+		<ScfTo>708</ScfTo>
+		<Description>BATON ROUGE LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="411">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>710</ScfFrom>
+		<ScfTo>711</ScfTo>
+		<Description>SHREVEPORT LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="412">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>712</ScfFrom>
+		<ScfTo>712</ScfTo>
+		<Description>MONROE LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="413">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>713</ScfFrom>
+		<ScfTo>714</ScfTo>
+		<Description>ALEXANDRIA LA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="414">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>716</ScfFrom>
+		<ScfTo>716</ScfTo>
+		<Description>PINE BLUFF AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="415">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>717</ScfFrom>
+		<ScfTo>717</ScfTo>
+		<Description>CAMDEN AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="416">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>718</ScfFrom>
+		<ScfTo>718</ScfTo>
+		<Description>TEXARKANA TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="417">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>719</ScfFrom>
+		<ScfTo>719</ScfTo>
+		<Description>HOT SPRING NAT PARK AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="418">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>720</ScfFrom>
+		<ScfTo>722</ScfTo>
+		<Description>LITTLE ROCK AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="419">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>723</ScfFrom>
+		<ScfTo>723</ScfTo>
+		<Description>MEMPHIS TN</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="420">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>724</ScfFrom>
+		<ScfTo>724</ScfTo>
+		<Description>JONESBORO AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="421">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>725</ScfFrom>
+		<ScfTo>725</ScfTo>
+		<Description>BATESVILLE AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="422">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>726</ScfFrom>
+		<ScfTo>726</ScfTo>
+		<Description>HARRISON AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="423">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>727</ScfFrom>
+		<ScfTo>727</ScfTo>
+		<Description>FAYETTEVILLE AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="424">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>728</ScfFrom>
+		<ScfTo>728</ScfTo>
+		<Description>RUSSELLVILLE AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="425">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>729</ScfFrom>
+		<ScfTo>729</ScfTo>
+		<Description>FORT SMITH AR</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>3</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="426">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>730</ScfFrom>
+		<ScfTo>731</ScfTo>
+		<Description>OKLAHOMA CITY OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="427">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>734</ScfFrom>
+		<ScfTo>734</ScfTo>
+		<Description>ARDMORE OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="428">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>735</ScfFrom>
+		<ScfTo>735</ScfTo>
+		<Description>LAWTON OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="429">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>736</ScfFrom>
+		<ScfTo>736</ScfTo>
+		<Description>CLINTON OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="430">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>737</ScfFrom>
+		<ScfTo>737</ScfTo>
+		<Description>ENID OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="431">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>738</ScfFrom>
+		<ScfTo>738</ScfTo>
+		<Description>WOODWARD OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="432">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>739</ScfFrom>
+		<ScfTo>739</ScfTo>
+		<Description>LIBERAL KS</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="433">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>740</ScfFrom>
+		<ScfTo>741</ScfTo>
+		<Description>TULSA OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="434">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>743</ScfFrom>
+		<ScfTo>743</ScfTo>
+		<Description>TULSA OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="435">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>744</ScfFrom>
+		<ScfTo>744</ScfTo>
+		<Description>MUSKOGEE OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="436">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>745</ScfFrom>
+		<ScfTo>745</ScfTo>
+		<Description>MC ALESTER OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="437">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>746</ScfFrom>
+		<ScfTo>746</ScfTo>
+		<Description>PONCA CITY OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="438">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>747</ScfFrom>
+		<ScfTo>747</ScfTo>
+		<Description>DURANT OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="439">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>748</ScfFrom>
+		<ScfTo>748</ScfTo>
+		<Description>SHAWNEE OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="440">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>749</ScfFrom>
+		<ScfTo>749</ScfTo>
+		<Description>POTEAU OK</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="441">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>750</ScfFrom>
+		<ScfTo>753</ScfTo>
+		<Description>DALLAS TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="442">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>754</ScfFrom>
+		<ScfTo>754</ScfTo>
+		<Description>GREENVILLE TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="443">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>755</ScfFrom>
+		<ScfTo>755</ScfTo>
+		<Description>TEXARKANA TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="444">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>756</ScfFrom>
+		<ScfTo>756</ScfTo>
+		<Description>LONGVIEW TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="445">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>757</ScfFrom>
+		<ScfTo>757</ScfTo>
+		<Description>TYLER TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="446">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>758</ScfFrom>
+		<ScfTo>758</ScfTo>
+		<Description>PALESTINE TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="447">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>759</ScfFrom>
+		<ScfTo>759</ScfTo>
+		<Description>LUFKIN TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="448">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>760</ScfFrom>
+		<ScfTo>761</ScfTo>
+		<Description>FORT WORTH TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="449">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>762</ScfFrom>
+		<ScfTo>762</ScfTo>
+		<Description>DENTON TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="450">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>763</ScfFrom>
+		<ScfTo>763</ScfTo>
+		<Description>WICHITA FALLS TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="451">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>764</ScfFrom>
+		<ScfTo>764</ScfTo>
+		<Description>FORT WORTH TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="452">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>765</ScfFrom>
+		<ScfTo>767</ScfTo>
+		<Description>WACO TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="453">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>768</ScfFrom>
+		<ScfTo>768</ScfTo>
+		<Description>ABILENE TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="454">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>769</ScfFrom>
+		<ScfTo>769</ScfTo>
+		<Description>MIDLAND TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="455">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>770</ScfFrom>
+		<ScfTo>772</ScfTo>
+		<Description>HOUSTON TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="456">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>773</ScfFrom>
+		<ScfTo>773</ScfTo>
+		<Description>CONROE TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="457">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>774</ScfFrom>
+		<ScfTo>775</ScfTo>
+		<Description>HOUSTON TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="458">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>776</ScfFrom>
+		<ScfTo>777</ScfTo>
+		<Description>BEAUMONT TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="459">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>778</ScfFrom>
+		<ScfTo>778</ScfTo>
+		<Description>BRYAN TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="460">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>779</ScfFrom>
+		<ScfTo>779</ScfTo>
+		<Description>VICTORIA TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="461">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>780</ScfFrom>
+		<ScfTo>782</ScfTo>
+		<Description>SAN ANTONIO TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="462">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>783</ScfFrom>
+		<ScfTo>784</ScfTo>
+		<Description>CORPUS CRISTI TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="463">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>785</ScfFrom>
+		<ScfTo>785</ScfTo>
+		<Description>MC ALLEN TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="464">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>786</ScfFrom>
+		<ScfTo>787</ScfTo>
+		<Description>AUSTIN TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="465">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>788</ScfFrom>
+		<ScfTo>788</ScfTo>
+		<Description>SAN ANTONIO TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="466">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>789</ScfFrom>
+		<ScfTo>789</ScfTo>
+		<Description>AUSTIN TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="467">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>790</ScfFrom>
+		<ScfTo>791</ScfTo>
+		<Description>AMARILLO TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="468">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>792</ScfFrom>
+		<ScfTo>792</ScfTo>
+		<Description>CHILDRESS TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="469">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>793</ScfFrom>
+		<ScfTo>794</ScfTo>
+		<Description>LUBBOCK TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="470">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>795</ScfFrom>
+		<ScfTo>796</ScfTo>
+		<Description>ABILENE TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>6</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="471">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>797</ScfFrom>
+		<ScfTo>797</ScfTo>
+		<Description>MIDLAND TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="472">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>798</ScfFrom>
+		<ScfTo>799</ScfTo>
+		<Description>EL PASO TX</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="473">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>800</ScfFrom>
+		<ScfTo>803</ScfTo>
+		<Description>DENVER CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="474">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>804</ScfFrom>
+		<ScfTo>804</ScfTo>
+		<Description>GOLDEN CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="475">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>805</ScfFrom>
+		<ScfTo>805</ScfTo>
+		<Description>LONGMONT CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="476">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>806</ScfFrom>
+		<ScfTo>806</ScfTo>
+		<Description>BRIGHTON CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="477">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>807</ScfFrom>
+		<ScfTo>807</ScfTo>
+		<Description>FORT MORGAN CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="478">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>808</ScfFrom>
+		<ScfTo>809</ScfTo>
+		<Description>COLORADO SPRINGS CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="479">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>810</ScfFrom>
+		<ScfTo>810</ScfTo>
+		<Description>PUEBLO CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="480">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>811</ScfFrom>
+		<ScfTo>811</ScfTo>
+		<Description>ALAMOSA CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="481">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>812</ScfFrom>
+		<ScfTo>812</ScfTo>
+		<Description>SALIDA CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="482">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>813</ScfFrom>
+		<ScfTo>813</ScfTo>
+		<Description>DURANGO CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="483">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>814</ScfFrom>
+		<ScfTo>814</ScfTo>
+		<Description>MONTROSE CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="484">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>815</ScfFrom>
+		<ScfTo>815</ScfTo>
+		<Description>GRAND JUNCTION CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="485">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>816</ScfFrom>
+		<ScfTo>816</ScfTo>
+		<Description>GLENWOOD SPRINGS CO</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="486">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>820</ScfFrom>
+		<ScfTo>821</ScfTo>
+		<Description>CHEYENNE WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="487">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>822</ScfFrom>
+		<ScfTo>822</ScfTo>
+		<Description>WHEATLAND WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="488">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>823</ScfFrom>
+		<ScfTo>823</ScfTo>
+		<Description>RAWLINS WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="489">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>824</ScfFrom>
+		<ScfTo>824</ScfTo>
+		<Description>WORLAND WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="490">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>825</ScfFrom>
+		<ScfTo>825</ScfTo>
+		<Description>RIVERTON WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="491">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>826</ScfFrom>
+		<ScfTo>826</ScfTo>
+		<Description>CASPER WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="492">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>827</ScfFrom>
+		<ScfTo>827</ScfTo>
+		<Description>GILLETTE WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="493">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>828</ScfFrom>
+		<ScfTo>828</ScfTo>
+		<Description>SHERIDAN WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="494">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>829</ScfFrom>
+		<ScfTo>831</ScfTo>
+		<Description>ROCK SPRINGS WY</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="495">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>832</ScfFrom>
+		<ScfTo>832</ScfTo>
+		<Description>POCATELLO ID</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="496">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>833</ScfFrom>
+		<ScfTo>833</ScfTo>
+		<Description>TWIN FALLS ID</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="497">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>834</ScfFrom>
+		<ScfTo>834</ScfTo>
+		<Description>POCATELLO ID</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="498">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>835</ScfFrom>
+		<ScfTo>835</ScfTo>
+		<Description>LEWISTON ID</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="499">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>836</ScfFrom>
+		<ScfTo>837</ScfTo>
+		<Description>BOISE ID</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="500">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>838</ScfFrom>
+		<ScfTo>838</ScfTo>
+		<Description>SPOKANE WA</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="501">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>840</ScfFrom>
+		<ScfTo>841</ScfTo>
+		<Description>SALT LAKE CITY UT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="502">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>843</ScfFrom>
+		<ScfTo>844</ScfTo>
+		<Description>OGDEN UT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="503">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>845</ScfFrom>
+		<ScfTo>847</ScfTo>
+		<Description>PROVO UT</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="504">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>850</ScfFrom>
+		<ScfTo>853</ScfTo>
+		<Description>PHOENIX AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="505">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>855</ScfFrom>
+		<ScfTo>855</ScfTo>
+		<Description>GLOBE AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="506">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>856</ScfFrom>
+		<ScfTo>857</ScfTo>
+		<Description>TUCSON AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="507">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>859</ScfFrom>
+		<ScfTo>859</ScfTo>
+		<Description>SHOW LOW AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="508">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>860</ScfFrom>
+		<ScfTo>860</ScfTo>
+		<Description>FLAGSTAFF AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="509">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>863</ScfFrom>
+		<ScfTo>863</ScfTo>
+		<Description>PRESCOTT AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="510">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>864</ScfFrom>
+		<ScfTo>864</ScfTo>
+		<Description>KINGMAN AZ</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>3</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="511">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>865</ScfFrom>
+		<ScfTo>865</ScfTo>
+		<Description>GALLUP NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="512">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>870</ScfFrom>
+		<ScfTo>872</ScfTo>
+		<Description>ALBUQUERQUE NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="513">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>873</ScfFrom>
+		<ScfTo>873</ScfTo>
+		<Description>GALLUP NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="514">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>874</ScfFrom>
+		<ScfTo>874</ScfTo>
+		<Description>FARMINGTON NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="515">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>875</ScfFrom>
+		<ScfTo>875</ScfTo>
+		<Description>SANTA FE NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="516">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>877</ScfFrom>
+		<ScfTo>877</ScfTo>
+		<Description>LAS VEGAS NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="517">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>878</ScfFrom>
+		<ScfTo>878</ScfTo>
+		<Description>SOCORRO NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="518">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>879</ScfFrom>
+		<ScfTo>879</ScfTo>
+		<Description>TRUTH/CONSEQUENCES NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="519">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>880</ScfFrom>
+		<ScfTo>880</ScfTo>
+		<Description>LAS CRUCES NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="520">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>881</ScfFrom>
+		<ScfTo>881</ScfTo>
+		<Description>CLOVIS NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="521">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>882</ScfFrom>
+		<ScfTo>882</ScfTo>
+		<Description>ROSWELL NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="522">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>883</ScfFrom>
+		<ScfTo>883</ScfTo>
+		<Description>CARRIZOZO NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="523">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>884</ScfFrom>
+		<ScfTo>884</ScfTo>
+		<Description>TUCUMCARI NM</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>2</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="524">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>890</ScfFrom>
+		<ScfTo>891</ScfTo>
+		<Description>LAS VEGAS NV</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>3</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="525">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>893</ScfFrom>
+		<ScfTo>893</ScfTo>
+		<Description>ELY NV</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="526">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>894</ScfFrom>
+		<ScfTo>895</ScfTo>
+		<Description>RENO NV</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="527">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>897</ScfFrom>
+		<ScfTo>897</ScfTo>
+		<Description>RENO NV</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="528">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>898</ScfFrom>
+		<ScfTo>898</ScfTo>
+		<Description>ELKO NV</Description>
+		<SalespersonID>3</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="529">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>900</ScfFrom>
+		<ScfTo>901</ScfTo>
+		<Description>LOS ANGELES CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="530">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>902</ScfFrom>
+		<ScfTo>905</ScfTo>
+		<Description>INGLEWOOD CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="531">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>906</ScfFrom>
+		<ScfTo>908</ScfTo>
+		<Description>LONG BEACH CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="532">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>910</ScfFrom>
+		<ScfTo>912</ScfTo>
+		<Description>PASADENA CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="533">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>913</ScfFrom>
+		<ScfTo>916</ScfTo>
+		<Description>VAN NUYS CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="534">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>917</ScfFrom>
+		<ScfTo>918</ScfTo>
+		<Description>ALHAMBRA CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="535">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>920</ScfFrom>
+		<ScfTo>921</ScfTo>
+		<Description>SAN DIEGO CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>2</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="536">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>922</ScfFrom>
+		<ScfTo>922</ScfTo>
+		<Description>PALM SPRINGS CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>2</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="537">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>923</ScfFrom>
+		<ScfTo>925</ScfTo>
+		<Description>SAN BERNARDINO CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="538">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>926</ScfFrom>
+		<ScfTo>928</ScfTo>
+		<Description>SANTA ANA CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="539">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>930</ScfFrom>
+		<ScfTo>930</ScfTo>
+		<Description>OXNARD CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>1</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="540">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>931</ScfFrom>
+		<ScfTo>931</ScfTo>
+		<Description>SANTA BARBARA CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>2</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="541">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>932</ScfFrom>
+		<ScfTo>933</ScfTo>
+		<Description>BAKERSFIELD CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>2</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="542">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>934</ScfFrom>
+		<ScfTo>934</ScfTo>
+		<Description>SAN LUIS OBISPO CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>2</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="543">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>935</ScfFrom>
+		<ScfTo>935</ScfTo>
+		<Description>MOJAVE CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>2</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="544">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>936</ScfFrom>
+		<ScfTo>938</ScfTo>
+		<Description>FRESNO CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>3</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="545">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>939</ScfFrom>
+		<ScfTo>939</ScfTo>
+		<Description>SALINAS CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>3</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="546">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>940</ScfFrom>
+		<ScfTo>944</ScfTo>
+		<Description>SAN FRANCISCO CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="547">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>945</ScfFrom>
+		<ScfTo>948</ScfTo>
+		<Description>OAKLAND CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="548">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>949</ScfFrom>
+		<ScfTo>949</ScfTo>
+		<Description>SAN RAFAEL CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="549">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>950</ScfFrom>
+		<ScfTo>951</ScfTo>
+		<Description>SAN JOSE CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>3</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="550">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>952</ScfFrom>
+		<ScfTo>953</ScfTo>
+		<Description>STOCKTON CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>3</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="551">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>954</ScfFrom>
+		<ScfTo>954</ScfTo>
+		<Description>SANTA ROSA CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="552">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>955</ScfFrom>
+		<ScfTo>955</ScfTo>
+		<Description>EUREKA CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="553">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>956</ScfFrom>
+		<ScfTo>958</ScfTo>
+		<Description>SACRAMENTO CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="554">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>959</ScfFrom>
+		<ScfTo>959</ScfTo>
+		<Description>MARYSVILLE CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="555">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>960</ScfFrom>
+		<ScfTo>960</ScfTo>
+		<Description>REDDING CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="556">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>961</ScfFrom>
+		<ScfTo>961</ScfTo>
+		<Description>RENO NV</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="557">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>962</ScfFrom>
+		<ScfTo>966</ScfTo>
+		<Description>MILITARY CA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="558">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>967</ScfFrom>
+		<ScfTo>968</ScfTo>
+		<Description>HONOLULU HI</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="559">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>969</ScfFrom>
+		<ScfTo>969</ScfTo>
+		<Description>AGANA GUAM</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="560">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>972</ScfFrom>
+		<ScfTo>972</ScfTo>
+		<Description>EUGENE OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="561">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>973</ScfFrom>
+		<ScfTo>973</ScfTo>
+		<Description>EUGENE OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="562">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>974</ScfFrom>
+		<ScfTo>974</ScfTo>
+		<Description>EUGENE OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="563">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>975</ScfFrom>
+		<ScfTo>975</ScfTo>
+		<Description>MEDFORD OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="564">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>976</ScfFrom>
+		<ScfTo>976</ScfTo>
+		<Description>KLAMATH FALLS OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>4</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="565">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>977</ScfFrom>
+		<ScfTo>977</ScfTo>
+		<Description>BEND OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="566">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>978</ScfFrom>
+		<ScfTo>978</ScfTo>
+		<Description>PENDLETON OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="567">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>979</ScfFrom>
+		<ScfTo>979</ScfTo>
+		<Description>BOISE ID</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="568">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>980</ScfFrom>
+		<ScfTo>981</ScfTo>
+		<Description>SEATTLE WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="569">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>982</ScfFrom>
+		<ScfTo>982</ScfTo>
+		<Description>EVERETT WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="570">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>983</ScfFrom>
+		<ScfTo>984</ScfTo>
+		<Description>TACOMA WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="571">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>985</ScfFrom>
+		<ScfTo>985</ScfTo>
+		<Description>OLYMPIA WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="572">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>986</ScfFrom>
+		<ScfTo>986</ScfTo>
+		<Description>PORTLAND OR</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="573">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>987</ScfFrom>
+		<ScfTo>987</ScfTo>
+		<Description>MILITARY WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="574">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>988</ScfFrom>
+		<ScfTo>988</ScfTo>
+		<Description>WENATCHEE WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="575">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>989</ScfFrom>
+		<ScfTo>989</ScfTo>
+		<Description>YAKIMA WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="576">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>990</ScfFrom>
+		<ScfTo>992</ScfTo>
+		<Description>SPOKANE WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="577">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>993</ScfFrom>
+		<ScfTo>993</ScfTo>
+		<Description>PASCO WA</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="578">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>994</ScfFrom>
+		<ScfTo>994</ScfTo>
+		<Description>LEWISTON ID</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>5</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="579">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>995</ScfFrom>
+		<ScfTo>996</ScfTo>
+		<Description>ANCHORAGE AK</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="580">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>997</ScfFrom>
+		<ScfTo>997</ScfTo>
+		<Description>FAIRBANKS AK</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>8</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="581">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>998</ScfFrom>
+		<ScfTo>998</ScfTo>
+		<Description>JUNEAU AK</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="582">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>999</ScfFrom>
+		<ScfTo>999</ScfTo>
+		<Description>KETCHIKAN AK</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>4</SalesRegionID>
+		<UpsZone>7</UpsZone>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="583">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>AAA</ScfFrom>
+		<ScfTo>AZZ</ScfTo>
+		<Description>NEWFOUNDLAND CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="584">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>BAA</ScfFrom>
+		<ScfTo>BZZ</ScfTo>
+		<Description>NOVA SCOTIA CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="585">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>CAA</ScfFrom>
+		<ScfTo>CZZ</ScfTo>
+		<Description>PRINCE EDWARD ISLAND CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="586">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>EAA</ScfFrom>
+		<ScfTo>EZZ</ScfTo>
+		<Description>NEW BRUNSWICK CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="587">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>GAA</ScfFrom>
+		<ScfTo>GZZ</ScfTo>
+		<Description>QUEBEC CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="588">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>HAA</ScfFrom>
+		<ScfTo>HZZ</ScfTo>
+		<Description>MONTREAL METROPOLITAN CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="589">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>JAA</ScfFrom>
+		<ScfTo>JZZ</ScfTo>
+		<Description>QUEBEC WEST CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="590">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>KAA</ScfFrom>
+		<ScfTo>KZZ</ScfTo>
+		<Description>EASTERN ONTARIO CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="591">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>LAA</ScfFrom>
+		<ScfTo>LZZ</ScfTo>
+		<Description>CENTRAL ONTARIO CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="592">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>MAA</ScfFrom>
+		<ScfTo>MZZ</ScfTo>
+		<Description>TORONTO METROPOLITAN CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="593">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>NAA</ScfFrom>
+		<ScfTo>NZZ</ScfTo>
+		<Description>SOUTHWESTERN ONTARIO CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="594">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>PAA</ScfFrom>
+		<ScfTo>PZZ</ScfTo>
+		<Description>NORTHERN MANITOBA CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="595">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>RAA</ScfFrom>
+		<ScfTo>RZZ</ScfTo>
+		<Description>MANITOBA CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="596">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>SAA</ScfFrom>
+		<ScfTo>SZZ</ScfTo>
+		<Description>SASKATCHEWAN CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="597">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>TAA</ScfFrom>
+		<ScfTo>TZZ</ScfTo>
+		<Description>ALBERTA CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="598">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>VAA</ScfFrom>
+		<ScfTo>VZZ</ScfTo>
+		<Description>BRITISH COLUMBIA CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="599">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>XAA</ScfFrom>
+		<ScfTo>XZZ</ScfTo>
+		<Description>NORTHWEST TERRITORIES CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+	<SCF ID="600">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ScfFrom>YAA</ScfFrom>
+		<ScfTo>YZZ</ScfTo>
+		<Description>YUKON CN</Description>
+		<SalespersonID>1</SalespersonID>
+		<SalesRegionID>1</SalesRegionID>
+		<UpsZone/>
+		<ZipZone/>
+	</SCF>
+</file>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Item ID="1">
+		<LastChanged>2010-04-02T16:01:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tour cancellation insurance</Description>
+		<Code/>
+		<VendorID>48</VendorID>
+		<OperatorsCode/>
+		<ProductChainID/>
+		<CityID/>
+		<Etd>12:00:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc/>
+		<DescSort>TOUR CANCE</DescSort>
+		<ProductType>Item</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+	</Item>
+</file>

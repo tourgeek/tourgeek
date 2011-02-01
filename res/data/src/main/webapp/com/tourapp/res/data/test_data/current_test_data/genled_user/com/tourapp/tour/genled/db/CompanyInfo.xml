@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CompanyInfo ID="1">
+		<LastChanged>2010-04-02T16:01:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<CompanyName>Tourgeek.com, Inc.</CompanyName>
+		<AddressLine1>1234 Any Street</AddressLine1>
+		<AddressLine2>Suite 1239</AddressLine2>
+		<CityOrTown>Anytown</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>(213) 555-1234</Tel>
+		<Fax>(213) 555-1000</Fax>
+		<Email>info@tourgeek.com</Email>
+		<Web>www.tourgeek.com</Web>
+		<DateEntered>2007-07-05</DateEntered>
+		<DateChanged>2007-07-05</DateChanged>
+		<ChangedID>156</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>TOURGE</NameSort>
+		<PostalCodeSort>91016</PostalCodeSort>
+		<Contact>Don Corley</Contact>
+		<Logo/>
+	</CompanyInfo>
+</file>

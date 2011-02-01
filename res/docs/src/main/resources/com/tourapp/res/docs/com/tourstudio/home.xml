@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<img src="images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
+<span style="font-size: 16pt; font-style: bold">
+<img src="images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
+Tourgeek.com Tour Operator solution.<br />
+</span>
+<span style="font-size: 12pt"> Software to create, modify, and book tours on-line.<br />
+<ul>
+	<li>Create simple tours or complicated custom-built FIT.</li>
+	<li>Real-time reservations of downline components using open web-services.</li>
+	<li>Real-time Internet access to your tours via the web or open web-services.</li>
+	<li>Easy to use tour entry and operations system.</li>
+	<li>Full accounting system.</li>
+</ul>
+We have software for:
+<ul>
+	<li><a href="http://www.tourgeek.com">Tour Operators</a></li>
+	<li><a href="http://www.tourgeek.com">Travel Agents</a></li>
+	<li><a href="http://www.tourgeek.com">Destination Services</a> such as sightseeing and local tour operators.</li>
+</ul>
+Check out more about us <a href="?xml=docs/com/tourstudio/aboutus.xml">here.</a><br />
+</span>
+</html>

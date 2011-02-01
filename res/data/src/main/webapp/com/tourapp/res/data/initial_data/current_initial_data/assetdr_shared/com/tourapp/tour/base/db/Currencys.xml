@@ -1,0 +1,3242 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Currencys ID="4">
+		<LastChanged>2008-10-16T03:09:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Afghani</Description>
+		<CurrencyCode>AFA</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Afghani</IntegerDesc>
+		<FractionDesc>puls</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Af</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="8">
+		<LastChanged>2009-04-16T14:23:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lek</Description>
+		<CurrencyCode>ALL</CurrencyCode>
+		<LastRate>0.01019992</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lek</IntegerDesc>
+		<FractionDesc>qindarka (qintars</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>L</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="12">
+		<LastChanged>2009-04-16T14:23:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Algerian Dinar</Description>
+		<CurrencyCode>DZD</CurrencyCode>
+		<LastRate>0.01360544</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Algerian Dinar</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>DA</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="24">
+		<LastChanged>2008-10-16T03:09:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>New Kwanza</Description>
+		<CurrencyCode>AON</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>New Kwanza</IntegerDesc>
+		<FractionDesc>lwei</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Kz</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="31">
+		<LastChanged>2008-10-16T03:09:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Azerbaijanian Manat</Description>
+		<CurrencyCode>AZM</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Azerbaijanian Manat</IntegerDesc>
+		<FractionDesc>gopik</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="32">
+		<LastChanged>2009-04-16T14:24:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Argentine Peso</Description>
+		<CurrencyCode>ARS</CurrencyCode>
+		<LastRate>0.27210884</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Argentine Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="36">
+		<LastChanged>2009-04-16T14:24:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Australian Dollar</Description>
+		<CurrencyCode>AUD</CurrencyCode>
+		<LastRate>0.72066878</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Australian Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>A</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="44">
+		<LastChanged>2008-11-19T15:35:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bahamian Dollar</Description>
+		<CurrencyCode>BSD</CurrencyCode>
+		<LastRate>1.00250627</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Bahamian Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>B</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="48">
+		<LastChanged>2009-04-16T14:24:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bahraini Dinar</Description>
+		<CurrencyCode>BHD</CurrencyCode>
+		<LastRate>2.65181649</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Bahraini Dinar</IntegerDesc>
+		<FractionDesc>fils</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>BD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="50">
+		<LastChanged>2009-04-16T14:24:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Taka</Description>
+		<CurrencyCode>BDT</CurrencyCode>
+		<LastRate>0.01462523</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Taka</IntegerDesc>
+		<FractionDesc>paisa (poisha</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Tk</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="51">
+		<LastChanged>2008-10-16T03:09:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Armenian Dram</Description>
+		<CurrencyCode>AMD</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Armenian Dram</IntegerDesc>
+		<FractionDesc>luma</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="52">
+		<LastChanged>2009-04-16T14:24:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Barbados Dollar</Description>
+		<CurrencyCode>BBD</CurrencyCode>
+		<LastRate>0.50632911</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Barbados Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Bds</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="60">
+		<LastChanged>2008-11-19T15:35:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bermudian Dollar</Description>
+		<CurrencyCode>BMD</CurrencyCode>
+		<LastRate>0.99900100</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Bermudian Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Bd</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="64">
+		<LastChanged>2008-11-19T15:35:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Ngultrum</Description>
+		<CurrencyCode>BTN</CurrencyCode>
+		<LastRate>0.02185792</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Ngultrum</IntegerDesc>
+		<FractionDesc>chetrum</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Nu</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="72">
+		<LastChanged>2009-04-16T14:24:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pula</Description>
+		<CurrencyCode>BWP</CurrencyCode>
+		<LastRate>0.13519908</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Pula</IntegerDesc>
+		<FractionDesc>thebe</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>P</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="84">
+		<LastChanged>2008-11-19T15:35:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Belize Dollar</Description>
+		<CurrencyCode>BZD</CurrencyCode>
+		<LastRate>0.50766575</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Belize Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>BZ</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="90">
+		<LastChanged>2009-04-16T14:25:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Solomon Islands Dollar</Description>
+		<CurrencyCode>SBD</CurrencyCode>
+		<LastRate>0.12469916</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Solomon Islands Doll</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SI</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="96">
+		<LastChanged>2008-11-19T15:35:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Brunei Dollar</Description>
+		<CurrencyCode>BND</CurrencyCode>
+		<LastRate>0.68960761</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Brunei Dollar</IntegerDesc>
+		<FractionDesc>sen (a.k.a. 100 cent</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>B</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="100">
+		<LastChanged>2008-10-16T03:09:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lev</Description>
+		<CurrencyCode>BGL</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lev</IntegerDesc>
+		<FractionDesc>stotinki</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Lv</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="104">
+		<LastChanged>2008-10-16T03:09:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kyat</Description>
+		<CurrencyCode>MMK</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kyat</IntegerDesc>
+		<FractionDesc>pyas</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>K</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="108">
+		<LastChanged>2008-11-19T15:35:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Burundi Franc</Description>
+		<CurrencyCode>BIF</CurrencyCode>
+		<LastRate>0.00087789</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Burundi Franc</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>FBu</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="116">
+		<LastChanged>2008-10-16T03:09:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Riel</Description>
+		<CurrencyCode>KHR</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Riel</IntegerDesc>
+		<FractionDesc>sen</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>CR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="124">
+		<LastChanged>2009-04-16T14:25:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Canadian Dollar</Description>
+		<CurrencyCode>CAD</CurrencyCode>
+		<LastRate>0.82740361</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Canadian Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Can</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="132">
+		<LastChanged>2008-10-16T03:09:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cape Verde Escudo</Description>
+		<CurrencyCode>CVE</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Cape Verde Escudo</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>C.V</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="136">
+		<LastChanged>2008-11-19T15:36:13</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cayman Islands Dollar</Description>
+		<CurrencyCode>KYD</CurrencyCode>
+		<LastRate>1.21951220</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Cayman Islands Dolla</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>CI</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="144">
+		<LastChanged>2009-04-16T14:25:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Sri Lanka Rupee</Description>
+		<CurrencyCode>LKR</CurrencyCode>
+		<LastRate>0.00863558</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Sri Lanka Rupee</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SLR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="152">
+		<LastChanged>2009-04-16T14:26:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Chilean Peso</Description>
+		<CurrencyCode>CLP</CurrencyCode>
+		<LastRate>0.00173160</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Chilean Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Ch</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="156">
+		<LastChanged>2009-04-16T14:26:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Yuan Renminbi</Description>
+		<CurrencyCode>CNY</CurrencyCode>
+		<LastRate>0.14627154</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Yuan Renminbi</IntegerDesc>
+		<FractionDesc>jiao = 100 fen</FractionDesc>
+		<FractionAmount>10</FractionAmount>
+		<Sign>Y</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="170">
+		<LastChanged>2008-11-19T15:36:25</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Colombian Peso</Description>
+		<CurrencyCode>COP</CurrencyCode>
+		<LastRate>0.00042653</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Colombian Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Col</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="174">
+		<LastChanged>2009-04-16T14:26:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Comoro Franc</Description>
+		<CurrencyCode>KMF</CurrencyCode>
+		<LastRate>0.00267935</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Comoro Franc</IntegerDesc>
+		<FractionDesc/>
+		<FractionAmount>100</FractionAmount>
+		<Sign>CF</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="188">
+		<LastChanged>2008-11-19T15:36:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Costa Rican Colon</Description>
+		<CurrencyCode>CRC</CurrencyCode>
+		<LastRate>0.00193074</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Costa Rican Colon</IntegerDesc>
+		<FractionDesc>centimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>sla</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="191">
+		<LastChanged>2009-04-16T14:26:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kuna</Description>
+		<CurrencyCode>HRK</CurrencyCode>
+		<LastRate>0.17887488</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kuna</IntegerDesc>
+		<FractionDesc>lipas</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>HRK</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="192">
+		<LastChanged>2008-10-17T13:26:40</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cuban Peso</Description>
+		<CurrencyCode>CUP</CurrencyCode>
+		<LastRate>1.00000000</LastRate>
+		<RateChangedDate>2008-10-17</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Cuban Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Cu</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="196">
+		<LastChanged>2008-11-19T15:36:45</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cyprus Pound</Description>
+		<CurrencyCode>CYP</CurrencyCode>
+		<LastRate>2.51319427</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Cyprus Pound</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>£C</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="203">
+		<LastChanged>2009-04-16T14:26:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Czech Koruna</Description>
+		<CurrencyCode>CZK</CurrencyCode>
+		<LastRate>0.04928536</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Czech Koruna</IntegerDesc>
+		<FractionDesc>haleru</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Kc </Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="208">
+		<LastChanged>2009-04-16T14:27:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Danish Krone</Description>
+		<CurrencyCode>DKK</CurrencyCode>
+		<LastRate>0.17700368</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Danish Krone</IntegerDesc>
+		<FractionDesc>øre</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Dkr</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="214">
+		<LastChanged>2009-04-16T14:27:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Dominican Peso</Description>
+		<CurrencyCode>DOP</CurrencyCode>
+		<LastRate>0.02789400</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Dominican Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>RD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="222">
+		<LastChanged>2009-04-16T14:27:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>El Salvador Colon</Description>
+		<CurrencyCode>SVC</CurrencyCode>
+		<LastRate>0.11431184</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>El Salvador Colon</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="230">
+		<LastChanged>2008-11-19T15:37:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Ethiopian Birr</Description>
+		<CurrencyCode>ETB</CurrencyCode>
+		<LastRate>0.11001100</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Ethiopian Birr</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Br</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="232">
+		<LastChanged>2008-10-16T03:09:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nakfa</Description>
+		<CurrencyCode>ERN</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Nakfa</IntegerDesc>
+		<FractionDesc>senti</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>KR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="233">
+		<LastChanged>2009-04-16T14:27:23</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kroon</Description>
+		<CurrencyCode>EEK</CurrencyCode>
+		<LastRate>0.08417367</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kroon</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Nfa</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="238">
+		<LastChanged>2008-10-16T03:09:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pound</Description>
+		<CurrencyCode>FKP</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Pound</IntegerDesc>
+		<FractionDesc>pence</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>£F</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="242">
+		<LastChanged>2008-10-16T03:09:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fiji Dollar</Description>
+		<CurrencyCode>FJD</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Fiji Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>F</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="262">
+		<LastChanged>2008-10-16T03:09:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Djibouti Franc</Description>
+		<CurrencyCode>DJF</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Djibouti Franc</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>DF</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="270">
+		<LastChanged>2008-11-19T15:37:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Dalasi</Description>
+		<CurrencyCode>GMD</CurrencyCode>
+		<LastRate>0.04761905</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Dalasi</IntegerDesc>
+		<FractionDesc>butut</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>D</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="288">
+		<LastChanged>2008-11-19T15:37:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cedi</Description>
+		<CurrencyCode>GHC</CurrencyCode>
+		<LastRate>0.00010791</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Cedi</IntegerDesc>
+		<FractionDesc>psewas</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="292">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Gibraltar Pound</Description>
+		<CurrencyCode>GIP</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Gibraltar Pound</IntegerDesc>
+		<FractionDesc>pence</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>£G</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="320">
+		<LastChanged>2009-04-16T14:27:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Quetzal</Description>
+		<CurrencyCode>GTQ</CurrencyCode>
+		<LastRate>0.12366289</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Quetzal</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Q</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="324">
+		<LastChanged>2009-04-16T14:28:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Guinea Franc</Description>
+		<CurrencyCode>GNF</CurrencyCode>
+		<LastRate>0.00020356</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Guinea Franc</IntegerDesc>
+		<FractionDesc/>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="328">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Guyana Dollar</Description>
+		<CurrencyCode>GYD</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Guyana Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>G</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="332">
+		<LastChanged>2008-11-19T15:37:45</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Gourde</Description>
+		<CurrencyCode>HTG</CurrencyCode>
+		<LastRate>0.02766252</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Gourde</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>G</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="340">
+		<LastChanged>2008-11-19T15:37:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lempira</Description>
+		<CurrencyCode>HNL</CurrencyCode>
+		<LastRate>0.05293806</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lempira</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>L</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="344">
+		<LastChanged>2008-11-19T15:37:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hong Kong Dollar</Description>
+		<CurrencyCode>HKD</CurrencyCode>
+		<LastRate>0.12902726</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Hong Kong Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>HK</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="348">
+		<LastChanged>2009-04-16T14:28:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Forint</Description>
+		<CurrencyCode>HUF</CurrencyCode>
+		<LastRate>0.00451152</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Forint</IntegerDesc>
+		<FractionDesc>-none</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Ft</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="352">
+		<LastChanged>2008-11-19T15:38:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Iceland Krona</Description>
+		<CurrencyCode>ISK</CurrencyCode>
+		<LastRate>0.00444444</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Iceland Krona</IntegerDesc>
+		<FractionDesc>aurar (sg. aur</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>IKr</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="356">
+		<LastChanged>2009-04-16T14:28:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Indian Rupee</Description>
+		<CurrencyCode>INR</CurrencyCode>
+		<LastRate>0.02012882</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Indian Rupee</IntegerDesc>
+		<FractionDesc>paise</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Rs</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="360">
+		<LastChanged>2009-04-16T14:28:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rupiah</Description>
+		<CurrencyCode>IDR</CurrencyCode>
+		<LastRate>0.00009341</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Rupiah</IntegerDesc>
+		<FractionDesc>sen (no longer used</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Rp</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="364">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Iranian Rial</Description>
+		<CurrencyCode>IRR</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Iranian Rial</IntegerDesc>
+		<FractionDesc>rials = 1 toman</FractionDesc>
+		<FractionAmount>10</FractionAmount>
+		<Sign>Rls</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="368">
+		<LastChanged>2009-04-16T14:28:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Iraqi Dinar</Description>
+		<CurrencyCode>IQD</CurrencyCode>
+		<LastRate>0.00086311</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Iraqi Dinar</IntegerDesc>
+		<FractionDesc>fils</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>ID</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="376">
+		<LastChanged>2009-04-16T14:29:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>New Israeli Sheqel</Description>
+		<CurrencyCode>ILS</CurrencyCode>
+		<LastRate>0.23949228</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>New Israeli Sheqel</IntegerDesc>
+		<FractionDesc>new agorot</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>NIS</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="388">
+		<LastChanged>2009-04-16T14:29:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Jamaican Dollar</Description>
+		<CurrencyCode>JMD</CurrencyCode>
+		<LastRate>0.01136364</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Jamaican Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>J</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="392">
+		<LastChanged>2009-04-16T14:29:18</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Yen</Description>
+		<CurrencyCode>JPY</CurrencyCode>
+		<LastRate>0.01006897</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Yen</IntegerDesc>
+		<FractionDesc>sen (not used</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="398">
+		<LastChanged>2009-04-16T14:29:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tenge</Description>
+		<CurrencyCode>KZT</CurrencyCode>
+		<LastRate>0.00665779</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Tenge</IntegerDesc>
+		<FractionDesc>tiyn</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="400">
+		<LastChanged>2009-04-16T14:29:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Jordanian Dinar</Description>
+		<CurrencyCode>JOD</CurrencyCode>
+		<LastRate>1.41203050</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Jordanian Dinar</IntegerDesc>
+		<FractionDesc>fils</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>JD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="404">
+		<LastChanged>2009-04-16T14:29:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kenyan Shilling</Description>
+		<CurrencyCode>KES</CurrencyCode>
+		<LastRate>0.01251564</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kenyan Shilling</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>K S</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="408">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>North Korean Won</Description>
+		<CurrencyCode>KPW</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>North Korean Won</IntegerDesc>
+		<FractionDesc>chon</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Wn</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="410">
+		<LastChanged>2009-04-16T14:30:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Won</Description>
+		<CurrencyCode>KRW</CurrencyCode>
+		<LastRate>0.00075109</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Won</IntegerDesc>
+		<FractionDesc>chon</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>W</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="414">
+		<LastChanged>2009-04-16T14:30:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kuwaiti Dinar</Description>
+		<CurrencyCode>KWD</CurrencyCode>
+		<LastRate>3.42465753</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kuwaiti Dinar</IntegerDesc>
+		<FractionDesc>fils</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>KD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="417">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Som</Description>
+		<CurrencyCode>KGS</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Som</IntegerDesc>
+		<FractionDesc>tyyn</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="418">
+		<LastChanged>2008-10-16T03:09:13</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kip</Description>
+		<CurrencyCode>LAK</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kip</IntegerDesc>
+		<FractionDesc>at</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>KN</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="422">
+		<LastChanged>2009-04-16T14:30:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lebanese Pound</Description>
+		<CurrencyCode>LBP</CurrencyCode>
+		<LastRate>0.00066600</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lebanese Pound</IntegerDesc>
+		<FractionDesc>piastres</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>L.L</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="426">
+		<LastChanged>2009-04-16T14:30:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Loti</Description>
+		<CurrencyCode>LSL</CurrencyCode>
+		<LastRate>0.10899183</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Loti</IntegerDesc>
+		<FractionDesc>lisente</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>L, </Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="428">
+		<LastChanged>2009-04-16T14:31:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Latvian Lats</Description>
+		<CurrencyCode>LVL</CurrencyCode>
+		<LastRate>1.85873606</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Latvian Lats</IntegerDesc>
+		<FractionDesc>santims</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Ls</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="430">
+		<LastChanged>2008-10-16T03:09:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Liberian Dollar</Description>
+		<CurrencyCode>LRD</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Liberian Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="434">
+		<LastChanged>2008-10-16T03:09:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Libyan Dinar</Description>
+		<CurrencyCode>LYD</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Libyan Dinar</IntegerDesc>
+		<FractionDesc>dirhams</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>LD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="440">
+		<LastChanged>2009-04-16T14:31:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lithuanian Litas</Description>
+		<CurrencyCode>LTL</CurrencyCode>
+		<LastRate>0.38233607</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lithuanian Litas</IntegerDesc>
+		<FractionDesc>centu</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="446">
+		<LastChanged>2008-11-19T15:39:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pataca</Description>
+		<CurrencyCode>MOP</CurrencyCode>
+		<LastRate>0.12498438</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Pataca</IntegerDesc>
+		<FractionDesc>avos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>P</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="450">
+		<LastChanged>2008-10-16T03:09:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Malagasy Franc</Description>
+		<CurrencyCode>MGF</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Malagasy Franc</IntegerDesc>
+		<FractionDesc>francs = 100 centime</FractionDesc>
+		<FractionAmount>1</FractionAmount>
+		<Sign>FMG</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="454">
+		<LastChanged>2009-04-16T14:31:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kwacha</Description>
+		<CurrencyCode>MWK</CurrencyCode>
+		<LastRate>0.00711491</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kwacha</IntegerDesc>
+		<FractionDesc>tambala</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>MK</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="458">
+		<LastChanged>2009-04-16T14:32:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Malaysian Ringgit</Description>
+		<CurrencyCode>MYR</CurrencyCode>
+		<LastRate>0.27851274</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Malaysian Ringgit</IntegerDesc>
+		<FractionDesc>sen</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>RM</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="462">
+		<LastChanged>2008-11-19T15:40:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rufiyaa</Description>
+		<CurrencyCode>MVR</CurrencyCode>
+		<LastRate>0.07812500</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Rufiyaa</IntegerDesc>
+		<FractionDesc>lari</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Rf</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="470">
+		<LastChanged>2008-11-19T15:40:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Maltese Lira</Description>
+		<CurrencyCode>MTL</CurrencyCode>
+		<LastRate>3.40715503</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Maltese Lira</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Lm</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="478">
+		<LastChanged>2009-04-16T14:32:22</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Ouguiya</Description>
+		<CurrencyCode>MRO</CurrencyCode>
+		<LastRate>0.00385579</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Ouguiya</IntegerDesc>
+		<FractionDesc>khoums</FractionDesc>
+		<FractionAmount>5</FractionAmount>
+		<Sign>UM</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="480">
+		<LastChanged>2009-04-16T14:32:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Mauritius Rupee</Description>
+		<CurrencyCode>MUR</CurrencyCode>
+		<LastRate>0.02980626</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Mauritius Rupee</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Mau</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="484">
+		<LastChanged>2009-04-16T14:32:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Mexican Peso</Description>
+		<CurrencyCode>MXN</CurrencyCode>
+		<LastRate>0.07637961</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Mexican Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Mex</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="496">
+		<LastChanged>2009-04-16T14:32:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tugrik</Description>
+		<CurrencyCode>MNT</CurrencyCode>
+		<LastRate>0.00069565</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Tugrik</IntegerDesc>
+		<FractionDesc>mongos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Tug</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="498">
+		<LastChanged>2009-04-16T14:32:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Moldovan Leu</Description>
+		<CurrencyCode>MDL</CurrencyCode>
+		<LastRate>0.08869180</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Moldovan Leu</IntegerDesc>
+		<FractionDesc/>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="504">
+		<LastChanged>2009-04-16T14:33:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Moroccan Dirham</Description>
+		<CurrencyCode>MAD</CurrencyCode>
+		<LastRate>0.11835020</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Moroccan Dirham</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>DH</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="508">
+		<LastChanged>2008-10-16T03:09:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Metical</Description>
+		<CurrencyCode>MZM</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Metical</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Mt</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="512">
+		<LastChanged>2008-11-19T15:41:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rial Omani</Description>
+		<CurrencyCode>OMR</CurrencyCode>
+		<LastRate>2.59740260</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Rial Omani</IntegerDesc>
+		<FractionDesc>baizas</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>RO</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="516">
+		<LastChanged>2009-04-16T14:33:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Namibia Dollar</Description>
+		<CurrencyCode>NAD</CurrencyCode>
+		<LastRate>0.11253024</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Namibia Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>N</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="524">
+		<LastChanged>2009-04-16T14:33:47</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nepalese Rupee</Description>
+		<CurrencyCode>NPR</CurrencyCode>
+		<LastRate>0.01265823</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Nepalese Rupee</IntegerDesc>
+		<FractionDesc>paise</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>NRs</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="532">
+		<LastChanged>2009-04-16T14:34:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Antillian Guilder</Description>
+		<CurrencyCode>ANG</CurrencyCode>
+		<LastRate>0.56022409</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Antillian Guilder</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Ant</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="533">
+		<LastChanged>2008-11-19T15:42:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Aruban Guilder</Description>
+		<CurrencyCode>AWG</CurrencyCode>
+		<LastRate>0.55850321</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Aruban Guilder</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Af</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="548">
+		<LastChanged>2009-04-16T14:34:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Vatu</Description>
+		<CurrencyCode>VUV</CurrencyCode>
+		<LastRate>0.00897666</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Vatu</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>VT</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="554">
+		<LastChanged>2009-04-16T14:34:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>New Zealand Dollar</Description>
+		<CurrencyCode>NZD</CurrencyCode>
+		<LastRate>0.57270489</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>New Zealand Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>NZ</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="558">
+		<LastChanged>2008-11-19T15:42:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cordoba Oro</Description>
+		<CurrencyCode>NIO</CurrencyCode>
+		<LastRate>0.05545789</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Cordoba Oro</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>C</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="566">
+		<LastChanged>2009-04-16T14:35:18</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Naira</Description>
+		<CurrencyCode>NGN</CurrencyCode>
+		<LastRate>0.00677966</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Naira</IntegerDesc>
+		<FractionDesc>kobo</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>dou</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="578">
+		<LastChanged>2009-04-16T14:35:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Norwegian Krone</Description>
+		<CurrencyCode>NOK</CurrencyCode>
+		<LastRate>0.14990481</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Norwegian Krone</IntegerDesc>
+		<FractionDesc>øre</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>NKr</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="586">
+		<LastChanged>2009-04-16T14:35:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pakistan Rupee</Description>
+		<CurrencyCode>PKR</CurrencyCode>
+		<LastRate>0.01242236</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Pakistan Rupee</IntegerDesc>
+		<FractionDesc>paisa</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Rs</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="590">
+		<LastChanged>2008-10-17T14:57:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Balboa</Description>
+		<CurrencyCode>PAB</CurrencyCode>
+		<LastRate>1.00000000</LastRate>
+		<RateChangedDate>2008-10-17</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Balboa</IntegerDesc>
+		<FractionDesc>centesimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>B</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="598">
+		<LastChanged>2009-04-16T14:36:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kina</Description>
+		<CurrencyCode>PGK</CurrencyCode>
+		<LastRate>0.34140180</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kina</IntegerDesc>
+		<FractionDesc>toeas</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>K</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="600">
+		<LastChanged>2009-04-16T14:36:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Guarani</Description>
+		<CurrencyCode>PYG</CurrencyCode>
+		<LastRate>0.00020060</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Guarani</IntegerDesc>
+		<FractionDesc>centimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>sla</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="604">
+		<LastChanged>2009-04-16T14:37:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Nuevo Sol</Description>
+		<CurrencyCode>PEN</CurrencyCode>
+		<LastRate>0.32206119</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Nuevo Sol</IntegerDesc>
+		<FractionDesc>centimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>S</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="608">
+		<LastChanged>2009-04-16T14:37:18</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Philippine Peso</Description>
+		<CurrencyCode>PHP</CurrencyCode>
+		<LastRate>0.02099738</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Philippine Peso</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>das</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="634">
+		<LastChanged>2009-04-16T14:37:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Qatari Rial</Description>
+		<CurrencyCode>QAR</CurrencyCode>
+		<LastRate>0.27467245</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Qatari Rial</IntegerDesc>
+		<FractionDesc>dirhams</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>QR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="646">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rwanda Franc</Description>
+		<CurrencyCode>RWF</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Rwanda Franc</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>RF</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="654">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>St Helena Pound</Description>
+		<CurrencyCode>SHP</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>St Helena Pound</IntegerDesc>
+		<FractionDesc>new pence</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>£S</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="678">
+		<LastChanged>2009-04-16T14:38:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Dobra</Description>
+		<CurrencyCode>STD</CurrencyCode>
+		<LastRate>0.00006122</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Dobra</IntegerDesc>
+		<FractionDesc>centimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Db</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="682">
+		<LastChanged>2009-04-16T14:42:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Saudi Riyal</Description>
+		<CurrencyCode>SAR</CurrencyCode>
+		<LastRate>0.26664534</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Saudi Riyal</IntegerDesc>
+		<FractionDesc>halalat</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SRl</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="690">
+		<LastChanged>2009-04-16T14:46:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Seychelles Rupee</Description>
+		<CurrencyCode>SCR</CurrencyCode>
+		<LastRate>0.06688963</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Seychelles Rupee</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="694">
+		<LastChanged>2009-04-16T14:48:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Leone</Description>
+		<CurrencyCode>SLL</CurrencyCode>
+		<LastRate>0.00032520</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Leone</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Le</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="702">
+		<LastChanged>2009-04-16T14:50:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Singapore Dollar</Description>
+		<CurrencyCode>SGD</CurrencyCode>
+		<LastRate>0.66791344</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Singapore Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>S</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="703">
+		<LastChanged>2009-04-16T14:50:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Slovak Koruna</Description>
+		<CurrencyCode>SKK</CurrencyCode>
+		<LastRate>0.04635424</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Slovak Koruna</IntegerDesc>
+		<FractionDesc>haliers (halierov</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Sk</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="704">
+		<LastChanged>2009-04-16T14:51:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Dong</Description>
+		<CurrencyCode>VND</CurrencyCode>
+		<LastRate>0.00005651</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Dong</IntegerDesc>
+		<FractionDesc>hao or 100 xu</FractionDesc>
+		<FractionAmount>10</FractionAmount>
+		<Sign>D</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="705">
+		<LastChanged>2008-11-19T15:47:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tolar</Description>
+		<CurrencyCode>SIT</CurrencyCode>
+		<LastRate>0.00607201</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Tolar</IntegerDesc>
+		<FractionDesc>stotinov (stotins</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SlT</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="706">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Somali Shilling</Description>
+		<CurrencyCode>SOS</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Somali Shilling</IntegerDesc>
+		<FractionDesc>centesimi</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>So.</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="710">
+		<LastChanged>2009-04-16T14:54:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rand</Description>
+		<CurrencyCode>ZAR</CurrencyCode>
+		<LastRate>0.11226495</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Rand</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>R</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="716">
+		<LastChanged>2009-04-16T14:55:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Zimbabwe Dollar</Description>
+		<CurrencyCode>ZWD</CurrencyCode>
+		<LastRate>0.00379359</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Zimbabwe Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Z</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="736">
+		<LastChanged>2008-11-19T15:49:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Sudanese Dinar</Description>
+		<CurrencyCode>SDD</CurrencyCode>
+		<LastRate>0.00426648</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Sudanese Dinar</IntegerDesc>
+		<FractionDesc>piastres</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="740">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Surinam Guilder</Description>
+		<CurrencyCode>SRG</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Surinam Guilder</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Sur</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="748">
+		<LastChanged>2009-04-16T14:57:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lilangeni</Description>
+		<CurrencyCode>SZL</CurrencyCode>
+		<LastRate>0.10899183</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lilangeni</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>L, </Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="752">
+		<LastChanged>2009-04-16T14:58:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Swedish Krona</Description>
+		<CurrencyCode>SEK</CurrencyCode>
+		<LastRate>0.12048048</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Swedish Krona</IntegerDesc>
+		<FractionDesc>öre</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Sk</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="756">
+		<LastChanged>2009-04-16T14:59:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Swiss Franc</Description>
+		<CurrencyCode>CHF</CurrencyCode>
+		<LastRate>0.87161161</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Swiss Franc</IntegerDesc>
+		<FractionDesc>rappen/centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SwF</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="760">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Syrian Pound</Description>
+		<CurrencyCode>SYP</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Syrian Pound</IntegerDesc>
+		<FractionDesc>piasters</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>£S</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="764">
+		<LastChanged>2009-04-16T15:00:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Baht</Description>
+		<CurrencyCode>THB</CurrencyCode>
+		<LastRate>0.02827654</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Baht</IntegerDesc>
+		<FractionDesc>stang</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Bht</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="776">
+		<LastChanged>2009-04-16T15:02:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pa'anga</Description>
+		<CurrencyCode>TOP</CurrencyCode>
+		<LastRate>0.46144617</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Pa'anga</IntegerDesc>
+		<FractionDesc>seniti</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>PT </Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="780">
+		<LastChanged>2009-04-16T15:03:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Trinidad and Tobago Dolla</Description>
+		<CurrencyCode>TTD</CurrencyCode>
+		<LastRate>0.16062967</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Trinidad and Tobago </IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>TT</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="784">
+		<LastChanged>2009-04-16T15:03:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>UAE Dirham</Description>
+		<CurrencyCode>AED</CurrencyCode>
+		<LastRate>0.27224219</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>UAE Dirham</IntegerDesc>
+		<FractionDesc>fils</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Dh</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="788">
+		<LastChanged>2009-04-16T15:04:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tunisian Dinar</Description>
+		<CurrencyCode>TND</CurrencyCode>
+		<LastRate>0.71479628</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Tunisian Dinar</IntegerDesc>
+		<FractionDesc>millimes</FractionDesc>
+		<FractionAmount>1,000</FractionAmount>
+		<Sign>TD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="792">
+		<LastChanged>2008-10-16T03:09:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Turkish Lira</Description>
+		<CurrencyCode>TRL</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Turkish Lira</IntegerDesc>
+		<FractionDesc>kurus</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>TL</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="795">
+		<LastChanged>2008-10-16T03:09:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Manat</Description>
+		<CurrencyCode>TMM</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Manat</IntegerDesc>
+		<FractionDesc>tenga</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="800">
+		<LastChanged>2009-04-16T15:06:44</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Uganda Shilling</Description>
+		<CurrencyCode>UGX</CurrencyCode>
+		<LastRate>0.00046404</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Uganda Shilling</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>USh</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="807">
+		<LastChanged>2009-04-16T15:08:13</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Denar</Description>
+		<CurrencyCode>MKD</CurrencyCode>
+		<LastRate>0.02162162</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Denar</IntegerDesc>
+		<FractionDesc>deni</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>MKD</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="810">
+		<LastChanged>2009-04-16T15:10:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Russian Ruble</Description>
+		<CurrencyCode>RUB</CurrencyCode>
+		<LastRate>0.02999130</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Russian Ruble</IntegerDesc>
+		<FractionDesc>kopecks</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>R</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="818">
+		<LastChanged>2009-04-16T15:13:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Egyptian Pound</Description>
+		<CurrencyCode>EGP</CurrencyCode>
+		<LastRate>0.17743080</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Egyptian Pound</IntegerDesc>
+		<FractionDesc>piasters or 1,000 mi</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>£E</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="826">
+		<LastChanged>2009-04-16T15:16:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pound Sterling</Description>
+		<CurrencyCode>GBP</CurrencyCode>
+		<LastRate>1.49276011</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Pound Sterling</IntegerDesc>
+		<FractionDesc>pence</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="834">
+		<LastChanged>2009-04-16T15:16:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tanzanian Shilling</Description>
+		<CurrencyCode>TZS</CurrencyCode>
+		<LastRate>0.00075154</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Tanzanian Shilling</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>TSh</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="840">
+		<LastChanged>2008-10-17T16:15:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>US Dollar</Description>
+		<CurrencyCode>USD</CurrencyCode>
+		<LastRate>1.00000000</LastRate>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="858">
+		<LastChanged>2009-04-16T15:16:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Peso Uruguayo</Description>
+		<CurrencyCode>UYU</CurrencyCode>
+		<LastRate>0.04175365</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Peso Uruguayo</IntegerDesc>
+		<FractionDesc>ésimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$U</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="860">
+		<LastChanged>2008-10-16T03:09:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Uzbekistan Sum</Description>
+		<CurrencyCode>UZS</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Uzbekistan Sum</IntegerDesc>
+		<FractionDesc>tiyin</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="862">
+		<LastChanged>2008-11-19T15:57:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bolivar</Description>
+		<CurrencyCode>VEB</CurrencyCode>
+		<LastRate>0.00046566</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Bolivar</IntegerDesc>
+		<FractionDesc>centimos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Bs</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="882">
+		<LastChanged>2009-04-16T15:16:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tala</Description>
+		<CurrencyCode>WST</CurrencyCode>
+		<LastRate>0.34572169</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Tala</IntegerDesc>
+		<FractionDesc>sene</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>WS</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="886">
+		<LastChanged>2009-04-16T15:16:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Yemeni Rial</Description>
+		<CurrencyCode>YER</CurrencyCode>
+		<LastRate>0.00500501</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Yemeni Rial</IntegerDesc>
+		<FractionDesc>fils</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>YRl</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="891">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>New Dinar</Description>
+		<CurrencyCode>YUM</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>New Dinar</IntegerDesc>
+		<FractionDesc>paras</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>Din</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="894">
+		<LastChanged>2009-04-16T15:16:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Kwacha</Description>
+		<CurrencyCode>ZMK</CurrencyCode>
+		<LastRate>0.00017513</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Kwacha</IntegerDesc>
+		<FractionDesc>ngwee</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>ZK</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="901">
+		<LastChanged>2009-04-16T15:16:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>New Taiwan Dollar</Description>
+		<CurrencyCode>TWD</CurrencyCode>
+		<LastRate>0.02956393</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>New Taiwan Dollar</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>NT</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="946">
+		<LastChanged>2008-10-16T03:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Leu</Description>
+		<CurrencyCode>RON</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Leu</IntegerDesc>
+		<FractionDesc>bani</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>L</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="950">
+		<LastChanged>2008-11-19T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>CFA Franc BEAC</Description>
+		<CurrencyCode>XAF</CurrencyCode>
+		<LastRate>0.00225393</LastRate>
+		<RateChangedDate>2008-11-19</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>CFA Franc BEAC</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>CFA</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="951">
+		<LastChanged>2009-04-16T15:16:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>East Caribbean Dollar</Description>
+		<CurrencyCode>XCD</CurrencyCode>
+		<LastRate>0.37243948</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>East Caribbean Dolla</IntegerDesc>
+		<FractionDesc>cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>EC</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="952">
+		<LastChanged>2009-04-16T15:16:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>CFA Franc BCEAO</Description>
+		<CurrencyCode>XOF</CurrencyCode>
+		<LastRate>0.00201390</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>CFA Franc BCEAO</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>CFA</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="953">
+		<LastChanged>2009-04-16T15:16:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>CFP Franc</Description>
+		<CurrencyCode>XPF</CurrencyCode>
+		<LastRate>0.01107420</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>CFP Franc</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>CFP</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="960">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>SDR</Description>
+		<CurrencyCode>XDR</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>SDR</IntegerDesc>
+		<FractionDesc/>
+		<FractionAmount>100</FractionAmount>
+		<Sign>SDR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="972">
+		<LastChanged>2008-10-16T03:09:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Somoni</Description>
+		<CurrencyCode>TJS</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Somoni</IntegerDesc>
+		<FractionDesc/>
+		<FractionAmount>100</FractionAmount>
+		<Sign>100</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="974">
+		<LastChanged>2008-10-16T03:09:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Belarussian Ruble</Description>
+		<CurrencyCode>BYR</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Belarussian Ruble</IntegerDesc>
+		<FractionDesc/>
+		<FractionAmount>100</FractionAmount>
+		<Sign>BR</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="976">
+		<LastChanged>2008-10-16T03:09:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Franc Congolais</Description>
+		<CurrencyCode>CDF</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Franc Congolais</IntegerDesc>
+		<FractionDesc>centimes</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="977">
+		<LastChanged>2008-10-16T03:09:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Convertible Marks</Description>
+		<CurrencyCode>BAM</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Convertible Marks</IntegerDesc>
+		<FractionDesc>fennig</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>KM</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="978">
+		<LastChanged>2009-04-16T15:16:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Euro</Description>
+		<CurrencyCode>EUR</CurrencyCode>
+		<LastRate>1.31856540</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Euro</IntegerDesc>
+		<FractionDesc>euro-cents</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="980">
+		<LastChanged>2009-04-16T15:16:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hryvnia</Description>
+		<CurrencyCode>UAH</CurrencyCode>
+		<LastRate>0.12461059</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Hryvnia</IntegerDesc>
+		<FractionDesc>kopiykas</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="981">
+		<LastChanged>2008-10-16T03:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Lari</Description>
+		<CurrencyCode>GEL</CurrencyCode>
+		<LastRate/>
+		<RateChangedDate>2008-10-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Lari</IntegerDesc>
+		<FractionDesc>tetri</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>$</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="985">
+		<LastChanged>2009-04-16T15:16:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Zloty</Description>
+		<CurrencyCode>PLN</CurrencyCode>
+		<LastRate>0.30766391</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Zloty</IntegerDesc>
+		<FractionDesc>groszy</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>z d</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+	<Currencys ID="986">
+		<LastChanged>2009-04-16T15:16:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Brazilian Real</Description>
+		<CurrencyCode>BRL</CurrencyCode>
+		<LastRate>0.45903144</LastRate>
+		<RateChangedDate>2009-04-16</RateChangedDate>
+		<RateChangedBy>11</RateChangedBy>
+		<CostingRate/>
+		<CostingChangedDate>2008-10-16</CostingChangedDate>
+		<CostingChangedBy>11</CostingChangedBy>
+		<RoundAt/>
+		<IntegerDesc>Brazilian Real</IntegerDesc>
+		<FractionDesc>centavos</FractionDesc>
+		<FractionAmount>100</FractionAmount>
+		<Sign>R</Sign>
+		<LanguageID/>
+		<NaturalInteger/>
+		<NaturalFraction/>
+	</Currencys>
+</file>

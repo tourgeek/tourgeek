@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<TransportationClass ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>First class</Description>
+		<Code/>
+	</TransportationClass>
+	<TransportationClass ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Second class</Description>
+		<Code/>
+	</TransportationClass>
+	<TransportationClass ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Third class</Description>
+		<Code/>
+	</TransportationClass>
+</file>

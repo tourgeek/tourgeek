@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<PricingType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Use tour option pricing</Description>
+		<PricingCodes>1</PricingCodes>
+	</PricingType>
+	<PricingType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Use product pricing</Description>
+		<PricingCodes>2</PricingCodes>
+	</PricingType>
+	<PricingType ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Markup product costs</Description>
+		<PricingCodes>4</PricingCodes>
+	</PricingType>
+	<PricingType ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Use product pricing then costs</Description>
+		<PricingCodes>6</PricingCodes>
+	</PricingType>
+</file>

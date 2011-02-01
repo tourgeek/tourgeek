@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<SpecialFunction ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@base-ratio</Name>
+		<Description>Base the ratio on this</Description>
+	</SpecialFunction>
+	<SpecialFunction ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@change</Name>
+		<Description>Use the change amount</Description>
+	</SpecialFunction>
+	<SpecialFunction ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@end</Name>
+		<Description>Use the start amount</Description>
+	</SpecialFunction>
+	<SpecialFunction ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@isstart</Name>
+		<Description>Use the start I/S amount</Description>
+	</SpecialFunction>
+	<SpecialFunction ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@ratio</Name>
+		<Description>Include a ratio</Description>
+	</SpecialFunction>
+	<SpecialFunction ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@start</Name>
+		<Description>Use the start amount</Description>
+	</SpecialFunction>
+	<SpecialFunction ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>@transfer:</Name>
+		<Description>Transfer the total from here</Description>
+	</SpecialFunction>
+</file>

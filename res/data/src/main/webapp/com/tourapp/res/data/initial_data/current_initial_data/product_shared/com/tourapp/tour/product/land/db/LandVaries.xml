@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<LandVaries ID="2">
+		<LastChanged>2006-07-08T03:01:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<Description>Per room(manual)</Description>
+		<VariesBy>R</VariesBy>
+	</LandVaries>
+	<LandVaries ID="4">
+		<LastChanged>2006-07-08T03:00:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<Description>Per pax (manual)</Description>
+		<VariesBy>D</VariesBy>
+	</LandVaries>
+	<LandVaries ID="6">
+		<LastChanged>2006-07-08T03:00:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<Description>Fixed (manual)</Description>
+		<VariesBy>Y</VariesBy>
+	</LandVaries>
+	<LandVaries ID="7">
+		<LastChanged>2006-07-08T03:00:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<Description>Per pax (auto)</Description>
+		<VariesBy>P</VariesBy>
+	</LandVaries>
+	<LandVaries ID="12">
+		<LastChanged>2006-07-08T03:00:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<Description>Fixed cost(auto)</Description>
+		<VariesBy>F</VariesBy>
+	</LandVaries>
+	<LandVaries ID="25">
+		<LastChanged>2006-07-08T03:00:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<Description>Per room (auto)</Description>
+		<VariesBy>R</VariesBy>
+	</LandVaries>
+</file>

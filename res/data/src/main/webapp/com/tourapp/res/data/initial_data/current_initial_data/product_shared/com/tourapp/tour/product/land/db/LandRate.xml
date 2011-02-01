@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<LandRate ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Rack Rate</Description>
+		<Code/>
+	</LandRate>
+	<LandRate ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Travel Agent Rate</Description>
+		<Code/>
+	</LandRate>
+</file>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CruisePricing ID="1">
+		<LastChanged>2010-04-02T16:01:26</LastChanged>
+		<Deleted>N</Deleted>
+		<ProductID>1</ProductID>
+		<PaxCategoryID>6</PaxCategoryID>
+		<RateID>1</RateID>
+		<ClassID>1</ClassID>
+		<StartDate>2009-08-01</StartDate>
+		<EndDate>2011-07-31</EndDate>
+		<Cost>2,250.00</Cost>
+		<ProductTermsID/>
+		<Price/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate/>
+		<PayAt>F</PayAt>
+	</CruisePricing>
+</file>

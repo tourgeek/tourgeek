@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Registration ID="77">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>8</ResourceID>
+		<Code>GenLed</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Transaction must be balanced</KeyValue>
+		<ObjectValue>Transaction must be balanced to be reversed</ObjectValue>
+	</Registration>
+	<Registration ID="78">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>8</ResourceID>
+		<Code>GenLed</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Transaction must be selected to be reversed</KeyValue>
+		<ObjectValue>Transaction must be selected to be reversed</ObjectValue>
+	</Registration>
+	<Registration ID="79">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>8</ResourceID>
+		<Code>GenLed</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>You must enter an Account number</KeyValue>
+		<ObjectValue>You must enter an Account number</ObjectValue>
+	</Registration>
+	<Registration ID="80">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>8</ResourceID>
+		<Code>GenLed</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>You must enter a non-zero amount</KeyValue>
+		<ObjectValue>You must enter a non-zero amount</ObjectValue>
+	</Registration>
+	<Registration ID="83">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>13</ResourceID>
+		<Code>Profile</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>To SCF must be larger than or equal to From SCF</KeyValue>
+		<ObjectValue>To SCF must be larger than or equal to From SCF</ObjectValue>
+	</Registration>
+	<Registration ID="86">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Transaction voided successfully</KeyValue>
+		<ObjectValue>Transaction voided successfully</ObjectValue>
+	</Registration>
+	<Registration ID="87">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Tour</KeyValue>
+		<ObjectValue>Tour</ObjectValue>
+	</Registration>
+	<Registration ID="88">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Land</KeyValue>
+		<ObjectValue>Land</ObjectValue>
+	</Registration>
+	<Registration ID="89">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Hotel</KeyValue>
+		<ObjectValue>Hotel</ObjectValue>
+	</Registration>
+	<Registration ID="90">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Car</KeyValue>
+		<ObjectValue>Car</ObjectValue>
+	</Registration>
+	<Registration ID="91">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Cruise</KeyValue>
+		<ObjectValue>Cruise</ObjectValue>
+	</Registration>
+	<Registration ID="92">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Transportation</KeyValue>
+		<ObjectValue>Transportation</ObjectValue>
+	</Registration>
+	<Registration ID="93">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Item</KeyValue>
+		<ObjectValue>Item</ObjectValue>
+	</Registration>
+	<Registration ID="94">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Language</KeyValue>
+		<ObjectValue>English</ObjectValue>
+	</Registration>
+	<Registration ID="95">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>LanguageInEnglish</KeyValue>
+		<ObjectValue>English</ObjectValue>
+	</Registration>
+	<Registration ID="113">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Check amount</KeyValue>
+		<ObjectValue>Check amount</ObjectValue>
+	</Registration>
+	<Registration ID="114">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Deposit amount</KeyValue>
+		<ObjectValue>Deposit amount</ObjectValue>
+	</Registration>
+	<Registration ID="115">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Distribution</KeyValue>
+		<ObjectValue>Distribution</ObjectValue>
+	</Registration>
+	<Registration ID="116">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Distribution</KeyValue>
+		<ObjectValue>Distribution</ObjectValue>
+	</Registration>
+	<Registration ID="118">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Not a valid batch, can't post</KeyValue>
+		<ObjectValue>Not a valid batch, can't post</ObjectValue>
+	</Registration>
+	<Registration ID="119">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Invalid Bank account, can't post</KeyValue>
+		<ObjectValue>Invalid Bank account, can't post</ObjectValue>
+	</Registration>
+	<Registration ID="120">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>No default account set in control file</KeyValue>
+		<ObjectValue>No default account set in control file</ObjectValue>
+	</Registration>
+	<Registration ID="121">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Batch in use, can't post</KeyValue>
+		<ObjectValue>Batch in use, can't post</ObjectValue>
+	</Registration>
+	<Registration ID="122">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>4</ResourceID>
+		<Code>AssetDr</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>You must have a transaction date, can't post</KeyValue>
+		<ObjectValue>You must have a transaction date, can't post</ObjectValue>
+	</Registration>
+	<Registration ID="123">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>The batch doesn't balance, can't post</KeyValue>
+		<ObjectValue>The batch doesn't balance, can't post</ObjectValue>
+	</Registration>
+	<Registration ID="124">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Deposit</KeyValue>
+		<ObjectValue>Deposit</ObjectValue>
+	</Registration>
+	<Registration ID="125">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Final payment</KeyValue>
+		<ObjectValue>Final payment</ObjectValue>
+	</Registration>
+	<Registration ID="126">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>8</ResourceID>
+		<Code>GenLed</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Group</KeyValue>
+		<ObjectValue>Group</ObjectValue>
+	</Registration>
+	<Registration ID="127">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>RefundSubmitted</KeyValue>
+		<ObjectValue>Submitted</ObjectValue>
+	</Registration>
+	<Registration ID="128">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>RefundHeld</KeyValue>
+		<ObjectValue>Held</ObjectValue>
+	</Registration>
+	<Registration ID="129">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>RefundPaid</KeyValue>
+		<ObjectValue>Paid</ObjectValue>
+	</Registration>
+	<Registration ID="130">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>RefundPaidManual</KeyValue>
+		<ObjectValue>Paid manually</ObjectValue>
+	</Registration>
+	<Registration ID="131">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>RefundPay</KeyValue>
+		<ObjectValue>Pay</ObjectValue>
+	</Registration>
+	<Registration ID="165">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Vendor Lookup</KeyValue>
+		<ObjectValue>Vendor lookup</ObjectValue>
+	</Registration>
+	<Registration ID="166">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Tour Lookup</KeyValue>
+		<ObjectValue>Tour lookup</ObjectValue>
+	</Registration>
+	<Registration ID="167">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Invoice</KeyValue>
+		<ObjectValue>Invoice</ObjectValue>
+	</Registration>
+	<Registration ID="168">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>All</KeyValue>
+		<ObjectValue>All</ObjectValue>
+	</Registration>
+	<Registration ID="169">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Finalization Estimate</KeyValue>
+		<ObjectValue>Finalization estimate</ObjectValue>
+	</Registration>
+	<Registration ID="170">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Prepayments</KeyValue>
+		<ObjectValue>Prepayments</ObjectValue>
+	</Registration>
+	<Registration ID="171">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Prepayment for</KeyValue>
+		<ObjectValue>Prepayment for</ObjectValue>
+	</Registration>
+	<Registration ID="172">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Prepayment amt</KeyValue>
+		<ObjectValue>Prepayment amt</ObjectValue>
+	</Registration>
+	<Registration ID="173">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Print checks</KeyValue>
+		<ObjectValue>Print checks</ObjectValue>
+	</Registration>
+	<Registration ID="174">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Generalized selection</KeyValue>
+		<ObjectValue>Generalized selection</ObjectValue>
+	</Registration>
+	<Registration ID="175">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Canned checks</KeyValue>
+		<ObjectValue>Canned checks</ObjectValue>
+	</Registration>
+	<Registration ID="176">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Canned checks</KeyValue>
+		<ObjectValue>Canned checks</ObjectValue>
+	</Registration>
+	<Registration ID="177">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>XML checks</KeyValue>
+		<ObjectValue>XML checks</ObjectValue>
+	</Registration>
+	<Registration ID="178">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>2</ResourceID>
+		<Code>AcctRec</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>XML checks</KeyValue>
+		<ObjectValue>XML checks</ObjectValue>
+	</Registration>
+	<Registration ID="179">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Payment History</KeyValue>
+		<ObjectValue>Payment History</ObjectValue>
+	</Registration>
+	<Registration ID="180">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>1</ResourceID>
+		<Code>AcctPay</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Vendor currency must match bank currency</KeyValue>
+		<ObjectValue>Vendor currency must match bank currency</ObjectValue>
+	</Registration>
+	<Registration ID="181">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Range adjustments</KeyValue>
+		<ObjectValue>Range adjustments</ObjectValue>
+	</Registration>
+	<Registration ID="182">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Booking</KeyValue>
+		<ObjectValue>Booking</ObjectValue>
+	</Registration>
+	<Registration ID="183">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Booking entry</KeyValue>
+		<ObjectValue>Booking entry</ObjectValue>
+	</Registration>
+	<Registration ID="186">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Hotel</KeyValue>
+		<ObjectValue>Hotel</ObjectValue>
+	</Registration>
+	<Registration ID="187">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Menu</KeyValue>
+		<ObjectValue>Menu</ObjectValue>
+	</Registration>
+	<Registration ID="188">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Summary</KeyValue>
+		<ObjectValue>Summary</ObjectValue>
+	</Registration>
+	<Registration ID="189">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Agency</KeyValue>
+		<ObjectValue>Agency</ObjectValue>
+	</Registration>
+	<Registration ID="190">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Passengers</KeyValue>
+		<ObjectValue>Passengers</ObjectValue>
+	</Registration>
+	<Registration ID="191">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Tour</KeyValue>
+		<ObjectValue>Tour</ObjectValue>
+	</Registration>
+	<Registration ID="192">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Line</KeyValue>
+		<ObjectValue>Line</ObjectValue>
+	</Registration>
+	<Registration ID="193">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Payments</KeyValue>
+		<ObjectValue>Payments</ObjectValue>
+	</Registration>
+	<Registration ID="194">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Land</KeyValue>
+		<ObjectValue>Land</ObjectValue>
+	</Registration>
+	<Registration ID="195">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Air</KeyValue>
+		<ObjectValue>Air</ObjectValue>
+	</Registration>
+	<Registration ID="196">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Transportation</KeyValue>
+		<ObjectValue>Transportation</ObjectValue>
+	</Registration>
+	<Registration ID="197">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Car</KeyValue>
+		<ObjectValue>Car</ObjectValue>
+	</Registration>
+	<Registration ID="198">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Cruise</KeyValue>
+		<ObjectValue>Cruise</ObjectValue>
+	</Registration>
+	<Registration ID="199">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Meal</KeyValue>
+		<ObjectValue>Meal</ObjectValue>
+	</Registration>
+	<Registration ID="200">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Calendar</KeyValue>
+		<ObjectValue>Calendar</ObjectValue>
+	</Registration>
+	<Registration ID="201">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Product detail</KeyValue>
+		<ObjectValue>Product detail</ObjectValue>
+	</Registration>
+	<Registration ID="202">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Order status</KeyValue>
+		<ObjectValue>Order status</ObjectValue>
+	</Registration>
+	<Registration ID="203">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Itinerary</KeyValue>
+		<ObjectValue>Itinerary</ObjectValue>
+	</Registration>
+	<Registration ID="204">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Select Passengers</KeyValue>
+		<ObjectValue>Select Passengers</ObjectValue>
+	</Registration>
+	<Registration ID="205">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Select PassengersTip</KeyValue>
+		<ObjectValue>Select the passengers from the profile file</ObjectValue>
+	</Registration>
+	<Registration ID="206">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Add to Profile</KeyValue>
+		<ObjectValue>Add to Profile</ObjectValue>
+	</Registration>
+	<Registration ID="207">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Add to ProfileTip</KeyValue>
+		<ObjectValue>Add these passengers to the profile file</ObjectValue>
+	</Registration>
+	<Registration ID="208">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Single</KeyValue>
+		<ObjectValue>Single</ObjectValue>
+	</Registration>
+	<Registration ID="209">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Double</KeyValue>
+		<ObjectValue>Double</ObjectValue>
+	</Registration>
+	<Registration ID="210">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Triple</KeyValue>
+		<ObjectValue>Triple</ObjectValue>
+	</Registration>
+	<Registration ID="211">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Quad</KeyValue>
+		<ObjectValue>Quad</ObjectValue>
+	</Registration>
+	<Registration ID="212">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Child</KeyValue>
+		<ObjectValue>Child</ObjectValue>
+	</Registration>
+	<Registration ID="213">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Options</KeyValue>
+		<ObjectValue>Tour options</ObjectValue>
+	</Registration>
+	<Registration ID="214">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Price</KeyValue>
+		<ObjectValue>Pricing detail</ObjectValue>
+	</Registration>
+	<Registration ID="215">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Inventory</KeyValue>
+		<ObjectValue>Inventory detail</ObjectValue>
+	</Registration>
+	<Registration ID="216">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Meal</KeyValue>
+		<ObjectValue>Meal pricing</ObjectValue>
+	</Registration>
+	<Registration ID="223">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Air</KeyValue>
+		<ObjectValue>Air</ObjectValue>
+	</Registration>
+	<Registration ID="224">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Meal</KeyValue>
+		<ObjectValue>Meal</ObjectValue>
+	</Registration>
+	<Registration ID="225">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Pricing</KeyValue>
+		<ObjectValue>Pricing lookup</ObjectValue>
+	</Registration>
+	<Registration ID="226">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Inventory</KeyValue>
+		<ObjectValue>Availability</ObjectValue>
+	</Registration>
+	<Registration ID="227">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Noinv</KeyValue>
+		<ObjectValue>No Availability</ObjectValue>
+	</Registration>
+	<Registration ID="228">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Booking</KeyValue>
+		<ObjectValue>Booking</ObjectValue>
+	</Registration>
+	<Registration ID="229">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Information</KeyValue>
+		<ObjectValue>Information</ObjectValue>
+	</Registration>
+	<Registration ID="230">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Information valid</KeyValue>
+		<ObjectValue>Information valid</ObjectValue>
+	</Registration>
+	<Registration ID="231">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>pending</KeyValue>
+		<ObjectValue>pending</ObjectValue>
+	</Registration>
+	<Registration ID="232">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Search</KeyValue>
+		<ObjectValue>Search</ObjectValue>
+	</Registration>
+	<Registration ID="233">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Calendar</KeyValue>
+		<ObjectValue>Calendar</ObjectValue>
+	</Registration>
+	<Registration ID="234">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Price</KeyValue>
+		<ObjectValue>Line Items</ObjectValue>
+	</Registration>
+	<Registration ID="235">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Passenger</KeyValue>
+		<ObjectValue>Passengers</ObjectValue>
+	</Registration>
+	<Registration ID="236">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Itinerary</KeyValue>
+		<ObjectValue>Itinerary</ObjectValue>
+	</Registration>
+	<Registration ID="237">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Contact</KeyValue>
+		<ObjectValue>Contact info.</ObjectValue>
+	</Registration>
+	<Registration ID="238">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>TourTip</KeyValue>
+		<ObjectValue>Packaged Tours</ObjectValue>
+	</Registration>
+	<Registration ID="239">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>AirTip</KeyValue>
+		<ObjectValue>Flights</ObjectValue>
+	</Registration>
+	<Registration ID="240">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>LandTip</KeyValue>
+		<ObjectValue>Ground Services and Tours</ObjectValue>
+	</Registration>
+	<Registration ID="241">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>CarTip</KeyValue>
+		<ObjectValue>Car Rentals</ObjectValue>
+	</Registration>
+	<Registration ID="242">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>CruiseTip</KeyValue>
+		<ObjectValue>Cruises</ObjectValue>
+	</Registration>
+	<Registration ID="243">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>TransportationTip</KeyValue>
+		<ObjectValue>Rail and Transportation</ObjectValue>
+	</Registration>
+	<Registration ID="244">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>ItemTip</KeyValue>
+		<ObjectValue>Non-Tour Items</ObjectValue>
+	</Registration>
+	<Registration ID="245">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>MealTip</KeyValue>
+		<ObjectValue>Meal</ObjectValue>
+	</Registration>
+	<Registration ID="246">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>PriceTip</KeyValue>
+		<ObjectValue>Pricing lookup</ObjectValue>
+	</Registration>
+	<Registration ID="247">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>InventoryTip</KeyValue>
+		<ObjectValue>Availability lookup</ObjectValue>
+	</Registration>
+	<Registration ID="248">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>BookingTip</KeyValue>
+		<ObjectValue>Booking in progress</ObjectValue>
+	</Registration>
+	<Registration ID="249">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>SearchTip</KeyValue>
+		<ObjectValue>Search</ObjectValue>
+	</Registration>
+	<Registration ID="250">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>calendarTip</KeyValue>
+		<ObjectValue>Calendar</ObjectValue>
+	</Registration>
+	<Registration ID="251">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>paxTip</KeyValue>
+		<ObjectValue>Passengers</ObjectValue>
+	</Registration>
+	<Registration ID="252">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>itineraryTip</KeyValue>
+		<ObjectValue>Itinerary</ObjectValue>
+	</Registration>
+	<Registration ID="253">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>LocationTip</KeyValue>
+		<ObjectValue>Set the location (City/Country/etc.)</ObjectValue>
+	</Registration>
+	<Registration ID="254">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>date</KeyValue>
+		<ObjectValue>Date</ObjectValue>
+	</Registration>
+	<Registration ID="255">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>SearchText</KeyValue>
+		<ObjectValue>Search text</ObjectValue>
+	</Registration>
+	<Registration ID="256">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>tourType</KeyValue>
+		<ObjectValue>Select Tour Type</ObjectValue>
+	</Registration>
+	<Registration ID="257">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>pax</KeyValue>
+		<ObjectValue>Number of passengers</ObjectValue>
+	</Registration>
+	<Registration ID="258">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>hotelClass</KeyValue>
+		<ObjectValue>Select room class</ObjectValue>
+	</Registration>
+	<Registration ID="259">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>location</KeyValue>
+		<ObjectValue>Location</ObjectValue>
+	</Registration>
+	<Registration ID="260">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>locationTo</KeyValue>
+		<ObjectValue>Location to</ObjectValue>
+	</Registration>
+	<Registration ID="261">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>airClass</KeyValue>
+		<ObjectValue>Select Seat class</ObjectValue>
+	</Registration>
+	<Registration ID="262">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>airline</KeyValue>
+		<ObjectValue>Select Airline</ObjectValue>
+	</Registration>
+	<Registration ID="263">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>carClass</KeyValue>
+		<ObjectValue>Select Car class</ObjectValue>
+	</Registration>
+	<Registration ID="264">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>transClass</KeyValue>
+		<ObjectValue>Select Transportation class</ObjectValue>
+	</Registration>
+	<Registration ID="265">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>cruiseClass</KeyValue>
+		<ObjectValue>Select Cabin class</ObjectValue>
+	</Registration>
+	<Registration ID="266">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>mealPlanID</KeyValue>
+		<ObjectValue>Select Meal Plan</ObjectValue>
+	</Registration>
+	<Registration ID="267">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>dateWarning</KeyValue>
+		<ObjectValue>Please enter the starting date</ObjectValue>
+	</Registration>
+	<Registration ID="268">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>PaxCategory</KeyValue>
+		<ObjectValue>Select Room type</ObjectValue>
+	</Registration>
+	<Registration ID="269">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>BookingText</KeyValue>
+		<ObjectValue>Reservation options:</ObjectValue>
+	</Registration>
+	<Registration ID="270">
+		<LastChanged>2010-12-02T13:09:17</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>HelpText</KeyValue>
+		<ObjectValue>&lt;html&gt;&lt;body&gt;&lt;center&gt;&lt;font color="blue"&gt;tourgeek.com&lt;/font&gt;. The do-it-yourself tour construction tool.&lt;br&gt; To add components to your tour, &lt;br&gt; click on the add button or drag&lt;br&gt; the component into the calendar. &lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</ObjectValue>
+	</Registration>
+	<Registration ID="271">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>ItinDesc</KeyValue>
+		<ObjectValue><![CDATA[<html><body><center><font color="blue">Tourapp</font>.<br>
+No current itinerary.
+</center></body></html>]]></ObjectValue>
+	</Registration>
+	<Registration ID="329">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>MessageLog</KeyValue>
+		<ObjectValue>Message log</ObjectValue>
+	</Registration>
+	<Registration ID="330">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>No meal</KeyValue>
+		<ObjectValue>No pricing available for meal {0}</ObjectValue>
+	</Registration>
+	<Registration ID="331">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>No room rate</KeyValue>
+		<ObjectValue>No room rate available for these parameters</ObjectValue>
+	</Registration>
+	<Registration ID="332">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Param required</KeyValue>
+		<ObjectValue>Param required: {0}</ObjectValue>
+	</Registration>
+	<Registration ID="333">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Date required</KeyValue>
+		<ObjectValue>Date required</ObjectValue>
+	</Registration>
+	<Registration ID="334">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Passengers required</KeyValue>
+		<ObjectValue>Passengers required</ObjectValue>
+	</Registration>
+	<Registration ID="335">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Inventory lookup error</KeyValue>
+		<ObjectValue>Inventory lookup error - No inventory allocated for this date</ObjectValue>
+	</Registration>
+	<Registration ID="336">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Not sufficent inventory</KeyValue>
+		<ObjectValue>Not sufficent inventory available on this date</ObjectValue>
+	</Registration>
+	<Registration ID="337">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Info Status must be okay</KeyValue>
+		<ObjectValue>Info Status must be okay before ordering components</ObjectValue>
+	</Registration>
+	<Registration ID="338">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Cost Status must be okay</KeyValue>
+		<ObjectValue>Cost Status must be okay before ordering components</ObjectValue>
+	</Registration>
+	<Registration ID="339">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Inventory Status must be okay</KeyValue>
+		<ObjectValue>Inventory Status must be okay before ordering components</ObjectValue>
+	</Registration>
+	<Registration ID="340">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>The Order components event must occur</KeyValue>
+		<ObjectValue>The 'Order components' event must occur before booking components</ObjectValue>
+	</Registration>
+	<Registration ID="342">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Cost not found</KeyValue>
+		<ObjectValue>Cost not found</ObjectValue>
+	</Registration>
+	<Registration ID="343">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>HotelTip</KeyValue>
+		<ObjectValue>Hotel</ObjectValue>
+	</Registration>
+	<Registration ID="344">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>itemClass</KeyValue>
+		<ObjectValue>Select item class</ObjectValue>
+	</Registration>
+	<Registration ID="345">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>landClass</KeyValue>
+		<ObjectValue>Select land class</ObjectValue>
+	</Registration>
+	<Registration ID="346">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>14</ResourceID>
+		<Code>Tour</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>tourClass</KeyValue>
+		<ObjectValue>select tour class</ObjectValue>
+	</Registration>
+	<Registration ID="511">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>8</ResourceID>
+		<Code>GenLed</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>Batch must be balanced</KeyValue>
+		<ObjectValue>Batch must be balanced to do this action</ObjectValue>
+	</Registration>
+	<Registration ID="513">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>bookingLookup</KeyValue>
+		<ObjectValue>Booking or Tour lookup</ObjectValue>
+	</Registration>
+	<Registration ID="516">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>5</ResourceID>
+		<Code>Booking</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>BookingDetail</KeyValue>
+		<ObjectValue>Booking detail</ObjectValue>
+	</Registration>
+	<Registration ID="517">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>BookingDetail</KeyValue>
+		<ObjectValue>Booking detail</ObjectValue>
+	</Registration>
+	<Registration ID="518">
+		<LastChanged>2009-09-23T03:10:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ResourceID>12</ResourceID>
+		<Code>Product</Code>
+		<Language/>
+		<Locale/>
+		<KeyValue>ProductSearchDetail</KeyValue>
+		<ObjectValue>Product search detail</ObjectValue>
+	</Registration>
+</file>

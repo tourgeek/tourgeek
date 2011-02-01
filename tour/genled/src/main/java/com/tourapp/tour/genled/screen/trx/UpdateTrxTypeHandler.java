@@ -1,0 +1,101 @@
+/**
+ *  @(#)UpdateTrxTypeHandler.
+ *  Copyright © 2010 tourapp.com. All rights reserved.
+ */
+package com.tourapp.tour.genled.screen.trx;
+
+import java.awt.*;
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import com.tourapp.tour.genled.db.*;
+
+/**
+ *  UpdateTrxTypeHandler - This listener update the cache fields in the TrxType record..
+ */
+public class UpdateTrxTypeHandler extends FileListener
+{
+    /**
+     * Default constructor.
+     */
+    public UpdateTrxTypeHandler()
+    {
+        super();
+    }
+    /**
+     * UpdateTrxTypeHandler Method.
+     */
+    public UpdateTrxTypeHandler(Record record)
+    {
+        this();
+        this.init(record);
+    }
+    /**
+     * Initialize class fields.
+     */
+    public void init(Record record)
+    {
+        super.init(record);
+    }
+    /**
+     * Clone Method.
+     */
+    public Object clone()
+    {
+        return new UpdateTrxTypeHandler(null);
+    }
+    /**
+     * Called when a change is the record status is about to happen/has happened.
+     * @param field If this file change is due to a field, this is the field.
+     * @param iChangeType The type of change that occurred.
+     * @param bDisplayOption If true, display any changes.
+     * @return an error code.
+     * ADD_TYPE - Before a write.
+     * UPDATE_TYPE - Before an update.
+     * DELETE_TYPE - Before a delete.
+     * AFTER_UPDATE_TYPE - After a write or update.
+     * LOCK_TYPE - Before a lock.
+     * SELECT_TYPE - After a select.
+     * DESELECT_TYPE - After a deselect.
+     * MOVE_NEXT_TYPE - After a move.
+     * AFTER_REQUERY_TYPE - Record opened.
+     * SELECT_EOF_TYPE - EOF Hit.
+     */
+    public int doRecordChange(FieldInfo field, int iChangeType, boolean bDisplayOption)
+    {
+        switch (iChangeType)
+        {
+            case DBConstants.ADD_TYPE:
+            case DBConstants.UPDATE_TYPE:
+                Record record = this.getOwner();
+                Record recTrxGroup = ((ReferenceField)record.getField(TransactionType.kTrxGroupID)).getReference();
+                record.getField(TransactionType.kGroupCode).moveFieldToThis(recTrxGroup.getField(TrxGroup.kGroupCode));
+                record.getField(TransactionType.kGroupDesc).moveFieldToThis(recTrxGroup.getField(TrxGroup.kGroupDesc));
+        
+                Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.kTrxDescID)).getReference();
+                record.getField(TransactionType.kTrxDescID).moveFieldToThis(recTrxDesc.getField(TrxDesc.kID));
+                record.getField(TransactionType.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
+                record.getField(TransactionType.kDescription).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescription));
+        
+                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
+                record.getField(TransactionType.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
+                record.getField(TransactionType.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
+                record.getField(TransactionType.kSystemDesc).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemDesc));
+        
+                break;
+        }
+        return super.doRecordChange(field, iChangeType, bDisplayOption);
+    }
+
+}

@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MessageDetail ID="1">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>7</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="2">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Tue Nov 26 00:08:49 PST 2002
+destinationAddress=HotelAvailRQ
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="3">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID/>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>7</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="5">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:02:17 PST 2009
+sourceAddress=http\://www.tourgeek.com/reply
+destinationMessage=/ws
+destinationAddress=http\://www.tourgeek.com
+messageVersionID=9
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>37</PersonID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="6">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sat Dec 28 01:43:44 PST 2002
+sourceAddress=don@donandann.com
+XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="7">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>3</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>15</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="9">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>3</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>15</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="10">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[Manual=true
+# This will cause the email request to be sent automatically]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="11">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:01:33 PST 2009
+destinationMessage=/ws
+sourceAddress=http\://www.tourloco.com/reply
+destinationAddress=http\://www.tourgeek.com
+messageVersionID=12
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>37</PersonID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>11</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="12">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Jun 03 15:43:27 PDT 2009
+messageInCode=OTA_HotelRateAvailRQ
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+Manual=true
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelRateAvailRequest
+subject=Hotel rate and availability request
+XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
+responseMessageCode=OTA_HotelRateAvailRQUpdate
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>31</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>2</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="15">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[Manual=true
+# This will cause the email request to be sent automatically]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>16</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="16">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[Manual=true
+# This will cause the email request to be sent automatically]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="17">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>14</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="18">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun May 31 06:35:41 PDT 2009
+Manual=true
+email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelBookingRequest
+screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+responseMessageCode=OTA_HotelRateAvailRQUpdate
+local.messageInCode=OTA_HotelRateAvailRQ
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>31</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="20">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageProcessInfoID>27</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="21">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="22">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Jun 03 11:37:59 PDT 2009
+Manual=true
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="23">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Jun 03 11:37:42 PDT 2009
+Manual=true
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="24">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 05 06:26:34 PDT 2008
+sourceAddress=http\://www.tourloco.com\:8080/reply
+destinationMessage=/tour/ws
+destinationAddress=http\://www.tourloco.com\:8080
+messageVersionID=9
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>37</PersonID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="25">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Jul 19 02:17:15 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>12</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>118</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="26">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Jul 19 02:18:33 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>7</ContactTypeID>
+		<PersonID>4</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>20</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="27">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage</Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageProcessInfoID>19</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="28">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Aug 20 05:48:59 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>10</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>108</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="29">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Aug 20 05:51:34 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>8</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>128</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="30">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Aug 20 05:52:29 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>8</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>128</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="31">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Aug 20 05:53:01 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>9</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>113</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="32">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Aug 20 05:53:36 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>6</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>103</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="33">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Aug 20 05:54:04 PDT 2006
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>6</ContactTypeID>
+		<PersonID>2</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>103</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="34">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Apr 16 12:54:33 PDT 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>11</ContactTypeID>
+		<PersonID>5</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>123</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="35">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Mon Apr 21 05:59:28 PDT 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>124</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="36">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Mon Apr 21 05:59:09 PDT 2008
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageProcessInfoID>60</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>6</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="37">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Mon Apr 21 06:01:40 PDT 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>123</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="39">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:08:36 PST 2009
+destinationMessage=/xmlws
+destinationAddress=http\://www.tourgeek.com
+messageVersionID=9
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>51</PersonID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>197</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>16</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="40">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 03 01:37:05 PDT 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>51</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="41">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 03 01:38:28 PDT 2008
+messageVersionID=9
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>51</PersonID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>11</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="42">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:08:53 PST 2009
+destinationMessage=/xmlws
+destinationAddress=http\://www.tourgeek.com
+messageVersionID=9
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>51</PersonID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>16</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="43">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Fri Oct 03 02:01:16 PDT 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>51</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="44">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Nov 19 13:13:22 PST 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>11</ContactTypeID>
+		<PersonID>6</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>59</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="45">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Nov 19 13:13:48 PST 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>11</ContactTypeID>
+		<PersonID>6</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>123</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="46">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Wed Nov 19 13:29:49 PST 2008
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>11</ContactTypeID>
+		<PersonID>5</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>59</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="47">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>24</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>14</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="48">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Tue Jun 02 13:54:46 PDT 2009
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
+]]></Properties>
+		<ContactTypeID>3</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="49">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun May 31 06:30:52 PDT 2009
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+]]></Properties>
+		<ContactTypeID>3</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="50">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Tue Jun 02 13:55:12 PDT 2009
+screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelBookingRequest
+email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
+]]></Properties>
+		<ContactTypeID>3</ContactTypeID>
+		<PersonID>1</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID/>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="51">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Tue Jun 02 22:51:38 PDT 2009
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>31</PersonID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>2</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+	<MessageDetail ID="52">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:00:53 PST 2009
+dataStatus=5
+]]></Properties>
+		<ContactTypeID>1</ContactTypeID>
+		<PersonID>37</PersonID>
+		<MessageTransportID>10</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<DestinationSite/>
+		<DestinationPath/>
+		<ReturnSite/>
+		<ReturnPath/>
+		<XSLTDocument/>
+		<DefaultMessageVersionID>0</DefaultMessageVersionID>
+		<DefaultMessageTransportID>10</DefaultMessageTransportID>
+		<InitialManualTransportStatusID/>
+	</MessageDetail>
+</file>

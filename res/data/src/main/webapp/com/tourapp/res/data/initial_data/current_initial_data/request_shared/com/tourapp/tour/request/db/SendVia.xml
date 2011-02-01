@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<SendVia ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>U.S. Mail</Description>
+	</SendVia>
+	<SendVia ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>UPS</Description>
+	</SendVia>
+	<SendVia ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>FedEx</Description>
+	</SendVia>
+</file>

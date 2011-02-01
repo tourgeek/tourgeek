@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<BookingControl ID="1">
+		<LastChanged>2010-04-02T16:01:24</LastChanged>
+		<Deleted>N</Deleted>
+		<AutoBookingCode>N</AutoBookingCode>
+		<AgencyComm>0.1000</AgencyComm>
+		<DepositDays>10</DepositDays>
+		<AcceptDays>10</AcceptDays>
+		<FinalDays>30</FinalDays>
+		<FinalizationDays>30</FinalizationDays>
+		<FinalDocDays>15</FinalDocDays>
+		<TicketingDays>5</TicketingDays>
+		<ProfileTypeID>1</ProfileTypeID>
+		<BookingStatusID>1</BookingStatusID>
+		<XldBookingStatusID>4</XldBookingStatusID>
+		<PaxCategoryID>2</PaxCategoryID>
+		<TourStatusID>1</TourStatusID>
+		<XldTourStatusID>4</XldTourStatusID>
+		<TourClassID>2</TourClassID>
+		<ProductCategoryID>2</ProductCategoryID>
+		<TourHeaderID>2</TourHeaderID>
+		<ThinTourHeaderID>2</ThinTourHeaderID>
+		<RemoteTourHeaderID>9</RemoteTourHeaderID>
+		<RemoteWaitTime>10</RemoteWaitTime>
+		<Pax>2</Pax>
+		<SinglePax/>
+		<DoublePax>1</DoublePax>
+		<Nights>3</Nights>
+		<Markup>0.1000</Markup>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<SeriesTourType>-29</SeriesTourType>
+		<TourHeaderTourType>-27</TourHeaderTourType>
+		<ModuleTourType>-23</ModuleTourType>
+		<ThinTourType>-15</ThinTourType>
+	</BookingControl>
+</file>

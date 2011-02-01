@@ -1,0 +1,3794 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<FileHdr ID="1">
+		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Account</FileName>
+		<FileDesc>General Ledger Chart of Accounts file</FileDesc>
+		<FileMainFilename>Account</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[NOTE: May want to add key for account name for later
+]]></FileNotes>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Chart of accounts</FileRecCalled>
+		<DisplayClass>AccountGridScreen</DisplayClass>
+		<MaintClass>AccountScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="2">
+		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AccountBudget</FileName>
+		<FileDesc>Budget &amp; Comparatives file</FileDesc>
+		<FileMainFilename>AccountBudget</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes>Budgets and Comparatives</FileNotes>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Budget &amp; comparatives</FileRecCalled>
+		<DisplayClass>AccountBudgetGridScreen</DisplayClass>
+		<MaintClass>AccountBudgetScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="3">
+		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AcctBatch</FileName>
+		<FileDesc>G/L Transactions Batch Header file</FileDesc>
+		<FileMainFilename>AcctBatch</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>G/L Transaction Batch Header</FileRecCalled>
+		<DisplayClass>AcctBatchGridScreen</DisplayClass>
+		<MaintClass>AcctBatchScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="4">
+		<LastChanged>2007-09-08T20:00:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AcctBatchDetail</FileName>
+		<FileDesc>G/L Journal entries - transaction file</FileDesc>
+		<FileMainFilename>AcctBatchDetail</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes>Account Batch Transactions.</FileNotes>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Account Transaction</FileRecCalled>
+		<DisplayClass>AcctBatchDetailGridScreen</DisplayClass>
+		<MaintClass>AcctBatchDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>AcctDetail</FileName>
+		<FileDesc>General Journal file - G/L detail</FileDesc>
+		<FileMainFilename>AcctDetail</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[Note: May want to add system code, so the transaction can be tracked
+back to the originating system.
+]]></FileNotes>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>G/L transactions</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>AcctDetailDist</FileName>
+		<FileDesc>G/L Detail Distribution File</FileDesc>
+		<FileMainFilename>AcctDetailDist</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes>Account transaction distribution</FileNotes>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Account Detail Distribution</FileRecCalled>
+		<DisplayClass>AcctDetailDistGridScreen</DisplayClass>
+		<MaintClass>AcctDetailDistScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="7">
+		<LastChanged>2009-11-18T21:33:38</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AddressType</FileName>
+		<FileDesc>Address Type (Home/Office)</FileDesc>
+		<FileMainFilename>AddressType</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Address Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>AdGlDist</FileName>
+		<FileDesc>A/D system G/L distribution file</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Affiliation</FileName>
+		<FileDesc>Agency affiliations master file</FileDesc>
+		<FileMainFilename>Affiliation</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Affiliation</FileRecCalled>
+		<DisplayClass>AffiliationGridScreen</DisplayClass>
+		<MaintClass>AffiliationScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="10">
+		<LastChanged>2009-11-18T21:33:50</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Airline</FileName>
+		<FileDesc>Airline file</FileDesc>
+		<FileMainFilename>Airline</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Airline</FileRecCalled>
+		<DisplayClass>AirlineGridScreen</DisplayClass>
+		<MaintClass>AirlineScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="13">
+		<LastChanged>2007-09-08T19:34:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ApControl</FileName>
+		<FileDesc>A/P Control File</FileDesc>
+		<FileMainFilename>ApControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="14">
+		<LastChanged>2007-10-22T02:31:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ApTrx</FileName>
+		<FileDesc>Accounts Payable Open Item File</FileDesc>
+		<FileMainFilename>ApTrx</FileMainFilename>
+		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes><![CDATA[FILE DESCRIPTION:
+
+This file is used for Tour order/Voucher control and A/P detail.
+(A tour order should become the basis of an A/P detail)
+
+FIELD DESCRIPTION:
+
+AP_ENTRY_TYPE - Type of entry:
+ 15 - FIN_EST - Finalization estimate
+ 14 - DEP_EST - Departure estimate
+ 13 - INVOICE - Invoice
+ 12 - CR_INV - Credit Invoice
+ 11 - CR_MEMO - Credit memo
+ 10 - PP_REQ - Prepayment Request
+  9 - BROKER - Broker payment header (Pyts slctd, not yet paid)
+  8 - PRPYMT - Prepayment
+  7 - DR_MEMO - Debit memo
+  6 - PD_INV - Fully paid Invoice
+  5 - PD_CINV - Fully paid Cr-Invoice
+  4 - PD_CRMM - Fully paid Credit Memo
+  3 - DIST_PP - Fully Distributed Prepayment
+  2 - DIST_DR - Fully Distributed Debit Memo
+  1 - PD_BROK - Paid Broker payment
+
+AP_V_BASED_BK - Hotel/Land detail is contained in this booking(0=manual)
+AP_V_BASED_PAX - This Pax detail (0 = Booking detail)
+AP_V_BASED_SEQ - Hotel seq for hotel, -1 for land
+AP_V_BASED_MOD - Last voucher printed based on this bk mod (nxt mod)
+
+BK_V_DATE - Date voucher printed (0 = Not printed yet)
+AP_ACK_DATE - Date this finalization estimate must be acknowledged by.
+
+BK_GL_ACTION_DATE - Doc control/GL ctl-Date the posting/ack should occur
+AP_GL_STATUS - G/L or Vchr stat - What type of U/D needs to be done next
+0 UD_DONE - All updates done! (ie., Cancel before vouchers out)
+1 NO_VCHR - No Status (If SEND TO? = "No")
+2 REQ_VCHR - Request Voucher be printed (Voucher printed next run)
+3 ACK_VCHR - Voucher Printed, Wait for Acknowledgment (After prtd)
+4 REC_ACK - Acknowledgment Received (Voucher Confirmed)
+5 VCHR_PRTD - Voucher Printed (No Ack Requested) (After printed)
+
+6 CXL_REQ - Cancellation Voucher Requested (Xl Vchr prtd on next)
+7 ACK_CXL - Waiting for Cancellation Acknowledgement
+8 REC_ACK - Cancellation Acknowledgement Received
+9 CXL_PRTD - Cancellation Voucher Printed
+10 REQ_REPRT - Request the voucher be re-printed
+  (Set if orig. already printed)
+11 MAN_FINL - Manually entered finalization estimate
+12 DEP_TYPE - Departure estimate update --> 12
+(BK_TOUR)(BK_TOUR)Cost of Tours Sold 100.00 (AP_DEP_EST_USD->GL)
+  (CNTRL->AP_EST_GL)Uninvoiced Tour Cost 100.00
+13 IN_TYPE - Invoice update --> 16
+(INV_ENT)(AP_EST_GL)Uninvoiced Tour Cost 100.00  (AP_DEP_EST_GL)
+  (CNTRL->OVER_UNDER)Over/Under estimate   1.00
+  (CNTRL->AP_ACCT)Accounts Payable   101.00  (INV_AMT->GL)
+14 CM_TYPE - Credit Memo update --> 16
+(INV_ENT)(AP_EST_GL)Printing Expense?? 200.00  (AP_DEP_EST_USD->GL)
+  (CNTL->AP_ACCT)Accounts Payable 200.00 (INV_AMT->GL)
+15  PU_TYPE - Prepayment Paid Update -->
+(CK_DATE)(CNTL->AP_ACCT)Prepayment  150.00 (INV_AMT->INV_GL)
+  (AP_HIST>AD_ACCT)Cash   150.00 (HIST_AMT
+16  DM_TYPE - Debit Memo update -->
+(CK_DATE)(CNTL->AP_ACCT)Prepayment  170.00 (INV_AMT->INV_GL)
+   Advertising expense 170.00
+17 PA_TYPE - Payment Applied Update --> 6 or 0 (if bal = 0)
+(CK_DATE->PYMT_DATE)(AP_ACCT)Accounts Payable 100.00 (INV_GL)
+ (CNTL->GAIN_LOSS)Gain/Loss on curr.  10.00 (->GAIN/LOSS G/L)
+  (AP_HIST>AD_ACCT)Cash  110.00 (AP_HIST_AMT)
+
+Note: No G/L entries are required for broker payments, as long as the
+ cash account numbers are transfered to the invoices at the
+ time of payment.
+
+NOTE: GET RID OF AP_OPEN_VENDOR IN KEY #6
+]]></FileNotes>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>A/P Open Item</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass>ApTrxScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="15">
+		<LastChanged>2007-09-08T19:33:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ArControl</FileName>
+		<FileDesc>A/R Control File</FileDesc>
+		<FileMainFilename>ArControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Control</FileRecCalled>
+		<DisplayClass>ArControlScreen</DisplayClass>
+		<MaintClass>ArControlScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>ArTrx</FileName>
+		<FileDesc>Accounts Receivable Open Item file</FileDesc>
+		<FileMainFilename>ArTrx</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[The A/R open item file is not used until the booking is accepted by
+the customer. Acceptance is defined as changing the booking status to
+"OK" or receiving the first payment.
+
+AR_DOC_TYPE:
+ I - Initial Invoice Charge (+)
+ P - Payment (always -)
+ M - MCO payment (-)
+ C - Credit (-)
+ D - Debit (+)
+ R - Refund to customer (+)
+  (If departure date is -1, hold the refund)
+ A - Adjustment to invoice (+/-)
+  (Changes in the tour Price (+/-))
+  (Cancellation Charges (+))
+  (Type "A" is always automatic)
+
+AR_POSTED: G/L Posting status
+ 0 - Not posted yet
+  ACTION DATE is the transaction date
+ 1 - Request refund (also not posted yet)
+  ACTION DATE is the trx date
+ 2 - Post the Departure update (Type "I & A" only)
+  ACTION DATE is the departure date
+ 3 - Posted, no more action is required
+  ACTION DATE is the transaction date
+
+G/L Notes:
+
+Be careful...This is complicated.
+
+The A/R G/L accounts come from this file. They don't come from the
+booking file because A/R detail can also accept payments for non-tour
+amounts which could never be traced back to a booking, but the amount
+can be traced back to an A/R detail (booking number = 0).
+This guarantees an accurate audit-trail from the amount in the G/L.
+
+Every A/R transaction either Debits or Credits the A/R account on the
+transaction date. (Of course, reducing or increasing the amount owed)
+
+AR_TRX_DATE - Transaction date = Transaction posting date
+AR_DEPARTURE - Departure date of this booking (do not set!)
+AR_ACCT is the Accounts Receivable account. If the amount is positive,
+ the amount is a Debit on the booking date, negative is credit.
+AR_ACCT_BK is the counter - A/R account posted on the booking date.
+AR_ACCT_DR is the counter - BK account posted on the departure date.
+  (Type I & A only)
+AR_ACTION - Next trx or departure date
+
+Warning: These account numbers are supplied by the A/R G/L posting
+ program at posting time. Do not supply an account number unless
+ you want to override the information in the booking's tour
+ header.
+]]></FileNotes>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Open Item</FileRecCalled>
+		<DisplayClass>CrDrGridScreen</DisplayClass>
+		<MaintClass>CrDrScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="17">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Asset</FileName>
+		<FileDesc>Fixed Assets</FileDesc>
+		<FileMainFilename>Asset</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Asset</FileRecCalled>
+		<DisplayClass>AssetGridScreen</DisplayClass>
+		<MaintClass>AssetScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="18">
+		<LastChanged>2007-09-08T19:34:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AssetDrControl</FileName>
+		<FileDesc>Asset Debt System Control File</FileDesc>
+		<FileMainFilename>AssetDrControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Asset-Debt Control</FileRecCalled>
+		<DisplayClass>AssetDrControlScreen</DisplayClass>
+		<MaintClass>AssetDrControlScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="19">
+		<LastChanged>2007-09-08T20:01:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AssetDepreciation</FileName>
+		<FileDesc>Depreciation history</FileDesc>
+		<FileMainFilename>AssetDepreciation</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Depreciation history</FileRecCalled>
+		<DisplayClass>AssetDepreciationGridScreen</DisplayClass>
+		<MaintClass>AssetDepreciationScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="20">
+		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AutoDist</FileName>
+		<FileDesc>Auto Distribution Description File</FileDesc>
+		<FileMainFilename>AutoDist</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Auto distribution</FileRecCalled>
+		<DisplayClass>AutoDistGridScreen</DisplayClass>
+		<MaintClass>AutoDistScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="21">
+		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AutoDistDetail</FileName>
+		<FileDesc>Auto Distribution Detail</FileDesc>
+		<FileMainFilename>AutoDistDetail</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Auto Distribution Detail</FileRecCalled>
+		<DisplayClass>AutoDistDetailGridScreen</DisplayClass>
+		<MaintClass>AutoDistDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="22">
+		<LastChanged>2007-01-30T15:23:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BankAcct</FileName>
+		<FileDesc>Bank account file</FileDesc>
+		<FileMainFilename>BankAcct</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Account</FileRecCalled>
+		<DisplayClass>BankAcctGridScreen</DisplayClass>
+		<MaintClass>BankAcctScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="23">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BankTrx</FileName>
+		<FileDesc>Checking account transactions</FileDesc>
+		<FileMainFilename>BankTrx</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[Might want to enter date/time for transaction number for non checks.
+
+Types: C - Checks
+ D - Deposit
+
+]]></FileNotes>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Transaction</FileRecCalled>
+		<DisplayClass>BankTrxBatchGridScreen</DisplayClass>
+		<MaintClass>BankTrxBatchScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="24">
+		<LastChanged>2007-09-08T20:01:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BankTrxBatchDetail</FileName>
+		<FileDesc>Bank Transaction batch file</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Bank Transaction</FileRecCalled>
+		<DisplayClass>BankTrxBatchDetailGridScreen</DisplayClass>
+		<MaintClass>BankTrxBatchDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="25">
+		<LastChanged>2007-09-08T20:01:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BankTrxBatchDist</FileName>
+		<FileDesc>Bank Trx Distribution Detail</FileDesc>
+		<FileMainFilename>BankTrxBatchDist</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Bank Transaction Distribution</FileRecCalled>
+		<DisplayClass>BankTrxBatchDistGridScreen</DisplayClass>
+		<MaintClass>BankTrxBatchDistScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="26">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BkDocHist</FileName>
+		<FileDesc>Booking documentation history</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>history</DatabaseName>
+		<FileRecCalled>Documentation</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="27">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BkDocMaster</FileName>
+		<FileDesc>Master conversion for documents</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="28">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BkGroup</FileName>
+		<FileDesc>Booking group</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Group</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="31">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Booking</FileName>
+		<FileDesc>Booking Header file</FileDesc>
+		<FileMainFilename>Booking</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[The booking status is as follows:
+ OK - OK booking - Pax have accepted, money request(ed)
+ XL - Booking canceled
+ RQ - Awaiting Confirmation of services (tour has same status)
+  (When status is changed to OK a confirmation is rqstd.)
+
+----------------------------------------------------------------------
+
+Notes:
+
+The comments and remarks are in the booking comment detail file
+
+This is how the "modifications" work:
+
+Whenever the user enters the booking system by entering this booking
+number, the modification number is incremented (Note: the master
+record is NOT copied to a modification unless a change is made. If a
+change is made, the current (last modified) record is written with the
+next modification number and the "Modified by" field is updated to
+the CURRENT booking agents name.)
+
+Whenever any of the booking detail files are modified (ie., Passenger
+detail, Line Item detail, or Comments/Remarks) the system copies ALL
+of the current records to the next modification number before allowing
+changes to the current items.
+
+Whenever any of the tour detail files are modified (ie., Hotel, Tour,
+and Air detail files) the system copies the detail record to the
+current modification (0) and sets the modification number in the
+booking record (last four fields) to the current modification number.
+If no modifications are made--ie., additions--then the system assumes
+that the information is just added to the information in the master
+file.
+
+
+
+This is how the programming should be done:
+
+For the booking record, after the user is done, the current version
+of the booking should be moved to a temporary area. Then the original
+version should be read and compared. If there are any changed (including
+Hotel, Tour, Air) fields, then the old version should be deleted and
+then written to the next mod. number. Then the new booking info. (in
+the temp. area) should be moved to the booking record and written to
+modification number 0.
+
+All this should be done in the initial program.
+
+For the booking detail files (pax,line) it's easy. First (only for
+the line file) scan the appropriate file and the selected Opt/Alts.
+Then display the current detail records. If the user selects a item to
+change, then copy ALL the current line items to the NEXT_MOD number
+before allowing any changes. Make sure you change a field in the booking
+record so the booking record will be copied to match these detail.
+
+For the Tour/Booking detail files it's a little more complicated. First,
+scan and Tour Header detail and write the booking detail. Then scan the
+Opt/Alt detail and write, rewrite, or delete the original to come up
+with a valid detail. (Remember: these detail files NEVER exist for
+tours; only for tour headers and Alt/Opt. This means that the
+modifications for a Scheduled Tour will always exist and an Alt selected
+on that particular departure date.
+
+Next, display the current detail and allow the user to make any changes.
+
+If any changes are made, then update the Hotel/Tour/Trans/Air field in
+the booking record to the NEXT_MOD. This indicates when the detail was
+changed from the original form. This also insures the booking will be
+modified. If no changes are made (or the user types DEL) then the mod
+field is changed to -1 and all the detail fields are deleted.
+
+NOTE: Remember that the XXX mod field is initialized at -1. The first
+step is done ONLY if the mod field is -1.
+
+
+The tour file has only one version, because none of the information can
+be altered by the user. Everything is updated by system operations.
+
+Remember: the mod number is always (-1) for tour and tour header detail.
+
+Also see Tour file entry for a description of what to do if something
+changes.
+---
+For example, if an air segment was changed from one carrier to another,
+you might want to alert all the agents who use that air. For the
+bookings where you didn't make any changes to the air, it's easy. Just
+go the the booking option: Reprint Confirmation (modifying any field--
+such as adding a remark like Please note air changes will do the same
+thing). If you have already modified the air then you will have to go
+to the air screen in the booking and either make the changes, or type
+DEL (and probally make some changes anyway). A new confirmation will
+automatically print out.
+
+For hotels and tours it gets a little more difficult. Especially if
+tour orders have already been sent. For example, a hotel burns down,
+so the hotel has to be changed. If no modifications have been made to
+the booking record, then everything is automatic. The system attempts
+to create a new A/P estimate for each item. If one exists already, then
+the amount and the number of services are check to make sure they are
+the same. If not, then the acknowledgment date is updated, a tour order
+is created (with the word **modified**) and the mod number is added to
+the A/P estimate (even if no changes). Any new services are treated as
+new. After all the tour orders have been modified, then the current
+A/P estimates are scanned to make sure all the mod numbers are correct.
+These A/P estimates are cancelled and a cancellation voucher is
+automatically created. (Cancellation vouchers should be acknowledged,
+even though they can never become Invoices)
+
+For bookings with tour,air or hotel changes, a duplicate confirmation
+is not automatically created. To have the system print a duplicate
+confirmation, just add a remark to the remark file telling the agent
+what was changed.
+
+When an audit trail is tracked for a booking, finding changes to the
+detail file is easy (Of course changes to the booking file are easier).
+If the mod field matches the NEXT_MOD field for tour detail files, then
+you know that the previous mod was changed to get this one. If the CNGD
+field is "Y" for a booking detail file then you know the previous mod
+has the previous data.
+
+Remember, for a first-time booking the NEXT_MOD number is 0. All
+current logic will create the correct files with this MOD.
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Booking</FileRecCalled>
+		<DisplayClass>BookingGridScreen</DisplayClass>
+		<MaintClass>BookingMenuScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="32">
+		<LastChanged>2007-09-08T19:36:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingAnswer</FileName>
+		<FileDesc>Booking Answer Detail</FileDesc>
+		<FileMainFilename>BookingAnswer</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Tour options</FileRecCalled>
+		<DisplayClass>BookingAnswerGridScreen</DisplayClass>
+		<MaintClass>BookingAnswerScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="33">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingCar</FileName>
+		<FileDesc>Rental Car detail file</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Rental Car detail</FileRecCalled>
+		<DisplayClass>BookingCarGridScreen</DisplayClass>
+		<MaintClass>BookingCarScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="34">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingCommentHist</FileName>
+		<FileDesc>Comment History file</FileDesc>
+		<FileMainFilename>BookingCommentHist</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>history</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="35">
+		<LastChanged>2007-09-08T19:49:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingControl</FileName>
+		<FileDesc>Booking system control file</FileDesc>
+		<FileMainFilename>BookingControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[FILE DESCRIPTION:
+
+This is the control file for the booking system.
+
+CHANGES:
+
+Add:
+ Use: Mail/Fax/cable/Telex
+ Cut off days to use: Telex/Fax
+ (This info might be added to the vendor file)
+]]></FileNotes>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Control</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="36">
+		<LastChanged>2009-07-11T03:15:47</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingHistory</FileName>
+		<FileDesc>Tour/Booking history file</FileDesc>
+		<FileMainFilename>BookingHistory</FileMainFilename>
+		<Type>REMOTE | USER_DATA | SERVER_REWRITES | DONT_LOG_TRX</Type>
+		<FileNotes/>
+		<DatabaseName>history</DatabaseName>
+		<FileRecCalled>History</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="37">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingHotel</FileName>
+		<FileDesc>Hotel Detail file (Booking detail)</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes><![CDATA[The field HDET_VOUCHER is not really required. It is only there
+to speed up the voucher revising program (BK_V_HOTEL). Instead of
+having to read through all the A/P detail to see if an A/P detail
+exists for this land, all you have to do is read the A/P detail.
+
+Next time, add a local room and meal cost field:
+Then make the USD fields Non-existent in the record.
+This makes the A/P estimate program much easier!
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Hotel</FileRecCalled>
+		<DisplayClass>BookingHotelGridScreen</DisplayClass>
+		<MaintClass>BookingHotelScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="39">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingLand</FileName>
+		<FileDesc>Land Detail File</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Land</FileRecCalled>
+		<DisplayClass>BookingLandGridScreen</DisplayClass>
+		<MaintClass>BookingLandScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="41">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingLine</FileName>
+		<FileDesc>Booking line item file</FileDesc>
+		<FileMainFilename>BookingLine</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[The "Manual" field is here if the booking is modified. If it is
+modified, everything but the manual fields will be deleted (mod) and
+the new line items will be added.
+
+The BK_LINE_PAY_AT is used to figure the Deposit and Final pay amts
+for manually entered fields:
+ (F)inal payment date
+ (D)eposit due date
+ (A)gent item (not included in A/P)
+
+FULLY_COMMABLE is only for manually entered fields.
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Line item</FileRecCalled>
+		<DisplayClass>BookingLineGridScreen</DisplayClass>
+		<MaintClass>BookingLineScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="42">
+		<LastChanged>2009-07-11T03:16:27</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingLineHistory</FileName>
+		<FileDesc>Line item History</FileDesc>
+		<FileMainFilename>BookingLineHistory</FileMainFilename>
+		<Type>REMOTE | USER_DATA | SERVER_REWRITES | DONT_LOG_TRX</Type>
+		<FileNotes/>
+		<DatabaseName>history</DatabaseName>
+		<FileRecCalled>Line item history</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="43">
+		<LastChanged>2007-10-07T01:29:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingLookup</FileName>
+		<FileDesc>Booking Lookup Query</FileDesc>
+		<FileMainFilename>BookingLookup</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Booking</FileRecCalled>
+		<DisplayClass>BookingGridScreen</DisplayClass>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="44">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingPax</FileName>
+		<FileDesc>Passenger detail file</FileDesc>
+		<FileMainFilename>BookingPax</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[The rooming code is coded as follows:
+ 0 - Twin or triple extra passenger (must be in sequence)
+ 1 - Single passenger
+  (If share seq = 0, single)
+  (If share seq = -1, then this pax requests a share)
+  (still charged single supplement)
+  (If a match is found, change type to 2 and enter
+  then sharing booking/seq number)
+ 2 - Twin passenger (if the Share seq # = 0 then the
+  next passenger will be a 0
+  (If the share seq = -1 then this pax will be paired
+  with another twin)
+  (If the share ^= 0 then this pax is paired w/bk/seq)
+ 3 - Triple passenger
+
+Need to add more types for operations:
+- Twin/Double
+- Child share
+- Other pax types (non-skiers)
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Passenger</FileRecCalled>
+		<DisplayClass>BookingPaxGridScreen</DisplayClass>
+		<MaintClass>BookingPaxScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="45">
+		<LastChanged>2009-11-18T21:34:27</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingStatus</FileName>
+		<FileDesc>Booking Status Table</FileDesc>
+		<FileMainFilename>BookingStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>BookingStatusGridScreen</DisplayClass>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="46">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BrochuresByBundleName</FileName>
+		<FileDesc>Brochures by Bundle Name</FileDesc>
+		<FileMainFilename>BrochuresByBundleName</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="47">
+		<LastChanged>2007-09-08T19:52:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Bundle</FileName>
+		<FileDesc>Brochure Bundle Header</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure Bundle</FileRecCalled>
+		<DisplayClass>BundleGridScreen</DisplayClass>
+		<MaintClass>BundleScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="48">
+		<LastChanged>2007-09-08T19:53:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BundleDetail</FileName>
+		<FileDesc>Brochure Bundle Detail</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure Bundle Detail</FileRecCalled>
+		<DisplayClass>BundleDetailGridScreen</DisplayClass>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="49">
+		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Car</FileName>
+		<FileDesc>Rent-a-car file</FileDesc>
+		<FileMainFilename>Car</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Car</FileRecCalled>
+		<DisplayClass>CarGridScreen</DisplayClass>
+		<MaintClass>CarScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="50">
+		<LastChanged>2009-11-18T21:34:39</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CarClass</FileName>
+		<FileDesc>Rental Car Class</FileDesc>
+		<FileMainFilename>CarClass</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Car Class</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="51">
+		<LastChanged>2009-11-18T21:34:47</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Card</FileName>
+		<FileDesc>Credit card type</FileDesc>
+		<FileMainFilename>Card</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Card Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="52">
+		<LastChanged>2007-09-08T19:34:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CashBatch</FileName>
+		<FileDesc>A/R Cash Receipts batch header</FileDesc>
+		<FileMainFilename>CashBatch</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes>Cash Batch Header Record</FileNotes>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Cash Receipt</FileRecCalled>
+		<DisplayClass>CashBatchGridScreen</DisplayClass>
+		<MaintClass>CashBatchScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="53">
+		<LastChanged>2007-09-08T19:33:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CashBatchDetail</FileName>
+		<FileDesc>Cash Receipts Batch Entry file</FileDesc>
+		<FileMainFilename>CashBatchDetail</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes>Cash batch detail</FileNotes>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Cash Receipts</FileRecCalled>
+		<DisplayClass>CashBatchDetailGridScreen</DisplayClass>
+		<MaintClass>CashBatchDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="55">
+		<LastChanged>2009-11-18T21:34:50</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CertificationType</FileName>
+		<FileDesc>Certification Type</FileDesc>
+		<FileMainFilename>CertificationType</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Certification Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="56">
+		<LastChanged>2009-11-18T21:34:54</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>City</FileName>
+		<FileDesc>Airport file</FileDesc>
+		<FileMainFilename>City</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>City</FileRecCalled>
+		<DisplayClass>CityGridScreen</DisplayClass>
+		<MaintClass>CityScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="59">
+		<LastChanged>2007-09-08T19:38:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CompanyInfo</FileName>
+		<FileDesc>Company Information</FileDesc>
+		<FileMainFilename>CompanyInfo</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Company Information</FileRecCalled>
+		<DisplayClass>CompanyInfoScreen</DisplayClass>
+		<MaintClass>CompanyInfoScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="60">
+		<LastChanged>2009-11-18T21:34:59</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Continent</FileName>
+		<FileDesc>Continent File</FileDesc>
+		<FileMainFilename>Continent</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Continent</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="61">
+		<LastChanged>2009-11-18T21:35:01</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CostStatus</FileName>
+		<FileDesc>Cost Lookup Status Table</FileDesc>
+		<FileMainFilename>CostStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Cost Status</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="62">
+		<LastChanged>2009-11-18T21:35:04</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Country</FileName>
+		<FileDesc>Country file</FileDesc>
+		<FileMainFilename>Country</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Country</FileRecCalled>
+		<DisplayClass>CountryGridScreen</DisplayClass>
+		<MaintClass>CountryScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="63">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>CreditCard</FileName>
+		<FileDesc>Credit card detail file</FileDesc>
+		<FileMainFilename>CreditCard</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Credit transaction</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="64">
+		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Cruise</FileName>
+		<FileDesc>Cruise Product File</FileDesc>
+		<FileMainFilename>Cruise</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Cruise</FileRecCalled>
+		<DisplayClass>CruiseGridScreen</DisplayClass>
+		<MaintClass>CruiseScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="65">
+		<LastChanged>2009-11-18T21:35:06</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Currencys</FileName>
+		<FileDesc>Currency file</FileDesc>
+		<FileMainFilename>Currencys</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Currency</FileRecCalled>
+		<DisplayClass>CurrencysGridScreen</DisplayClass>
+		<MaintClass>CurrencysScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="66">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingDetail</FileName>
+		<FileDesc>Product Detail</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes>All Product Detail</FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Product Detail</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="67">
+		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Deduction</FileName>
+		<FileDesc>Deduction/Earnings codes file</FileDesc>
+		<FileMainFilename>Deduction</FileMainFilename>
+		<Type>TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Deduction and Earning</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass>DeductionScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="68">
+		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Department</FileName>
+		<FileDesc>Department codes</FileDesc>
+		<FileMainFilename>Department</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Department</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass>DepartmentScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="69">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Document</FileName>
+		<FileDesc>Profile document</FileDesc>
+		<FileMainFilename>Document</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Document</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="71">
+		<LastChanged>2009-11-18T21:35:29</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>EAddressType</FileName>
+		<FileDesc>Electronic Address Type</FileDesc>
+		<FileMainFilename>EAddressType</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Electronic Address Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="72">
+		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Employee</FileName>
+		<FileDesc>Employee file</FileDesc>
+		<FileMainFilename>Employee</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Employee</FileRecCalled>
+		<DisplayClass>EmployeeGridScreen</DisplayClass>
+		<MaintClass>EmployeeScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="73">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>EmployeeBuiltin</FileName>
+		<FileDesc>Employee Query</FileDesc>
+		<FileMainFilename>EmployeeBuiltin</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="74">
+		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>EmployeeControl</FileName>
+		<FileDesc>Employee control file</FileDesc>
+		<FileMainFilename>EmployeeControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[Later, information should be added to this file so that periodic
+payments of employee taxes can be made automatically. The checks
+could automatically be queued to the A/P system to be printed payable
+to the proper payee.
+
+Add:
+ Federal Payment A/P Vendor Code: I 6
+ State
+ FICA
+ SDI
+ FUTA
+ SUI
+]]></FileNotes>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Control</FileRecCalled>
+		<DisplayClass>EmployeeControlScreen</DisplayClass>
+		<MaintClass>EmployeeControlScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="75">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>EmployeeLookup</FileName>
+		<FileDesc>Employee Lookup Query</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Employee</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="76">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>EmployeeQuery</FileName>
+		<FileDesc>Employee Limited Field Query</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="77">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Extension</FileName>
+		<FileDesc>Vendor Specific Profile Extension</FileDesc>
+		<FileMainFilename>Extension</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Extension</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="80">
+		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>FinStmt</FileName>
+		<FileDesc>Financial Statement</FileDesc>
+		<FileMainFilename>FinStmt</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Statement</FileRecCalled>
+		<DisplayClass>FinStmtGridScreen</DisplayClass>
+		<MaintClass>FinStmtScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="81">
+		<LastChanged>2007-09-08T19:38:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>FinStmtDetail</FileName>
+		<FileDesc>Financial Statements detail</FileDesc>
+		<FileMainFilename>FinStmtDetail</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Statement detail</FileRecCalled>
+		<DisplayClass>FinStmtDetailGridScreen</DisplayClass>
+		<MaintClass>FinStmtDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="82">
+		<LastChanged>2007-09-08T19:38:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>FinStmtHeader</FileName>
+		<FileDesc>Financial Statement header</FileDesc>
+		<FileMainFilename>FinStmtHeader</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Statement header</FileRecCalled>
+		<DisplayClass>FinStmtHeaderGridScreen</DisplayClass>
+		<MaintClass>FinStmtHeaderScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="83">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>FinStmtQuery</FileName>
+		<FileDesc>Financial Statements Query</FileDesc>
+		<FileMainFilename>FinStmtQuery</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Financial Statement Detail</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="85">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>HistoryDisplay</FileName>
+		<FileDesc>Brochure History Query</FileDesc>
+		<FileMainFilename>HistoryDisplay</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>History</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="86">
+		<LastChanged>2009-04-17T13:28:12</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Hotel</FileName>
+		<FileDesc>Hotel file</FileDesc>
+		<FileMainFilename>Hotel</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[Note: This information does NOT change from year-to-year. This is
+the hotel information header.
+]]></FileNotes>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Hotel</FileRecCalled>
+		<DisplayClass>HotelGridScreen</DisplayClass>
+		<MaintClass>HotelScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="87">
+		<LastChanged>2009-11-18T21:36:02</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelClass</FileName>
+		<FileDesc>Hotel Class Table</FileDesc>
+		<FileMainFilename>HotelClass</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Hotel class</FileRecCalled>
+		<DisplayClass>HotelClassGridScreen</DisplayClass>
+		<MaintClass>HotelClassScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="88">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>HotelList</FileName>
+		<FileDesc>Hotel list for the Product Display</FileDesc>
+		<FileMainFilename>HotelList</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Hotel</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="89">
+		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelMealPricing</FileName>
+		<FileDesc>Hotel Meal Pricing file</FileDesc>
+		<FileMainFilename>HotelMealPricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Meal Price</FileRecCalled>
+		<DisplayClass>HotelMealPricingGridScreen</DisplayClass>
+		<MaintClass>HotelMealPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="90">
+		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelPricing</FileName>
+		<FileDesc>Hotel Detail Pricing File</FileDesc>
+		<FileMainFilename>HotelPricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[FILE DESCRIPTION:
+
+This file holds the pricing information of the hotel file.
+
+The USE_RATE_TYPE and USE_CLASS fields are used when a rate type
+doesn't apply. For example, for rate type "B" (Blocked room), the
+USE rate type would probally by "F"/"R" (FIT/Run of the house).
+Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
+]]></FileNotes>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Room Rate</FileRecCalled>
+		<DisplayClass>HotelPricingGridScreen</DisplayClass>
+		<MaintClass>HotelPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="91">
+		<LastChanged>2009-11-18T21:36:22</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelRate</FileName>
+		<FileDesc>Rate file</FileDesc>
+		<FileMainFilename>HotelRate</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Rate Code</FileRecCalled>
+		<DisplayClass>HotelRateGridScreen</DisplayClass>
+		<MaintClass>HotelRateScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="92">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Interest</FileName>
+		<FileDesc>Profile travel interest</FileDesc>
+		<FileMainFilename>Interest</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Travel Interest</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="93">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Inventory</FileName>
+		<FileDesc>Inventory Detail File</FileDesc>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes><![CDATA[This file is used for; Tours, Hotels, Land, Transportation, and Air.
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="94">
+		<LastChanged>2009-11-18T21:36:30</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>InventoryStatus</FileName>
+		<FileDesc>Inventory Lookup Status</FileDesc>
+		<FileMainFilename>InventoryStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Inventory Status</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="95">
+		<LastChanged>2007-09-08T19:52:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Brochure</FileName>
+		<FileDesc>Brochure Header file</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="97">
+		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Land</FileName>
+		<FileDesc>Land File</FileDesc>
+		<FileMainFilename>Land</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Land</FileRecCalled>
+		<DisplayClass>LandGridScreen</DisplayClass>
+		<MaintClass>LandScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="98">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>LandList</FileName>
+		<FileDesc>Land List for the Product Display</FileDesc>
+		<FileMainFilename>LandList</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Land</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="99">
+		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>LandPricing</FileName>
+		<FileDesc>Land detail pricing file</FileDesc>
+		<FileMainFilename>LandPricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Land pricing</FileRecCalled>
+		<DisplayClass>LandPricingGridScreen</DisplayClass>
+		<MaintClass>LandPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="100">
+		<LastChanged>2009-11-18T21:36:44</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>LandVaries</FileName>
+		<FileDesc>Varies descriptions</FileDesc>
+		<FileMainFilename>LandVaries</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Varies Codes</FileRecCalled>
+		<DisplayClass>LandVariesGridScreen</DisplayClass>
+		<MaintClass>LandVariesScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="101">
+		<LastChanged>2009-11-18T21:36:48</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Language</FileName>
+		<FileDesc>Language File</FileDesc>
+		<FileMainFilename>Language</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled>Language</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="104">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Mco</FileName>
+		<FileDesc>MCO Detail &amp; Transaction file</FileDesc>
+		<FileMainFilename>Mco</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[The MCO status codes are as follows:
+
+1 - Entered
+2 - Posted
+3 - Submitted
+4 - Paid
+5 - Variance posted to G/L
+
+Need to write program to Post variance between anount applied to
+A/R and the amount collected by the carrier.
+
+The field AR_MCO_GL_ACCT is used for two different purposes:
+- On MCO entry, this field holds the A/R account for the booking
+  to transfer it to A/R open on MCO posting
+- On MCO submission to carriers, this account is updated with the
+  MCO receivable account, so when the actual amount is received the
+  variance can be properly distributed.
+]]></FileNotes>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>MCO</FileRecCalled>
+		<DisplayClass>McoGridScreen</DisplayClass>
+		<MaintClass>McoScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="105">
+		<LastChanged>2009-11-18T21:36:55</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>MealPlan</FileName>
+		<FileDesc>Meal Plans</FileDesc>
+		<FileMainFilename>MealPlan</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Meal Plan</FileRecCalled>
+		<DisplayClass>MealPlanGridScreen</DisplayClass>
+		<MaintClass>MealPlanScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="106">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Memberships</FileName>
+		<FileDesc>Profile Memberships</FileDesc>
+		<FileMainFilename>Memberships</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Membership</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="109">
+		<LastChanged>2009-11-18T21:36:58</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PaxCategory</FileName>
+		<FileDesc>Passenger room category file</FileDesc>
+		<FileMainFilename>PaxCategory</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Passenger category</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="110">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>PaxGroup</FileName>
+		<FileDesc>Pax Group Table</FileDesc>
+		<FileMainFilename>PaxGroup</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Passenger group</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="111">
+		<LastChanged>2009-11-18T21:37:04</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PaymentCode</FileName>
+		<FileDesc>Payment Code Table</FileDesc>
+		<FileMainFilename>PaymentCode</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Payment Code</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="112">
+		<LastChanged>2009-11-18T21:37:25</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PaymentCycle</FileName>
+		<FileDesc>Payment Cycles</FileDesc>
+		<FileMainFilename>PaymentCycle</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Payment Cycle</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="113">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>PaymentHistory</FileName>
+		<FileDesc>Accounts Payable Payment History file</FileDesc>
+		<FileMainFilename>PaymentHistory</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[FIELD DESCRIPTIONS:
+
+AP_HIST_TYPE - Type of payment
+ A - Check
+ B - Broker draft
+ D - Debit Memo
+ P - Prepayment
+
+  Remember:
+The USD equivalent amount of the check comes from the Asset system;
+The system automatically recalls the FIFO inventory and figures out
+the weighted exchange rate to be used to calculate the Gain/Loss
+on currency changes.
+
+AP_HIST_APPL_USD - ACTUAL US Dollars used in this payment
+AP_HIST_APPL_GL - Amount this payment reduced the AP_VEN_INV_USD
+  (Amount applied * Departure exchange rate)
+ (DO NOT get rid of this field, it IS required because of
+ rounding on payments. ie., a dep est of HKD300 is estimated
+ at USD100. three payments of HKD100 would be re-created at
+ reductions of USD33.33 each)
+]]></FileNotes>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Payment History</FileRecCalled>
+		<DisplayClass>PaymentHistoryGridScreen</DisplayClass>
+		<MaintClass>PaymentHistoryScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="114">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>PaymentRequest</FileName>
+		<FileDesc>Check request header file</FileDesc>
+		<FileMainFilename>PaymentRequest</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Check request</FileRecCalled>
+		<DisplayClass>PaymentRequestGridScreen</DisplayClass>
+		<MaintClass>PaymentRequestScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="115">
+		<LastChanged>2007-09-08T20:02:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PayrollHistory</FileName>
+		<FileDesc>Payroll history file</FileDesc>
+		<FileMainFilename>PayrollHistory</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[This file should also have the codes, amounts, (and G/L numbers) of
+any special deductions, so when a check is voided, the G/L entry can 
+be reversed and the YTD, etc. amounts can be adjusted down.
+]]></FileNotes>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="116">
+		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Period</FileName>
+		<FileDesc>G/L Accounting Periods</FileDesc>
+		<FileMainFilename>Period</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Accounting period</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="117">
+		<LastChanged>2009-11-18T21:37:52</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PrepayType</FileName>
+		<FileDesc>Prepayment Types</FileDesc>
+		<FileMainFilename>PrepayType</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Prepayment Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="118">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>PrHistGl</FileName>
+		<FileDesc>G/L Detail for PR_HIST</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="119">
+		<LastChanged>2007-09-08T20:02:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Product</FileName>
+		<FileDesc>Product (abstract)</FileDesc>
+		<FileMainFilename>Product</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Product</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="120">
+		<LastChanged>2009-11-18T21:37:59</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductCategory</FileName>
+		<FileDesc>Product category file</FileDesc>
+		<FileMainFilename>ProductCategory</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Product Category</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="121">
+		<LastChanged>2009-11-20T00:53:42</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductList</FileName>
+		<FileDesc>Product List</FileDesc>
+		<FileMainFilename/>
+		<Type>MEMORY | BASE_TABLE_CLASS | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Product</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="122">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>ProductMerge</FileName>
+		<FileDesc>Product Merge File</FileDesc>
+		<FileMainFilename>ProductMerge</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Product</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="123">
+		<LastChanged>2009-11-18T21:38:02</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductStatus</FileName>
+		<FileDesc>Cust Sale Detail Status</FileDesc>
+		<FileMainFilename>ProductStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Status</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="124">
+		<LastChanged>2009-11-18T21:38:04</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductTerms</FileName>
+		<FileDesc>Term Codes</FileDesc>
+		<FileMainFilename>ProductTerms</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Term</FileRecCalled>
+		<DisplayClass>ProductTermsGridScreen</DisplayClass>
+		<MaintClass>ProductTermsScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="125">
+		<LastChanged>2009-11-18T21:38:09</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductType</FileName>
+		<FileDesc>Product Type Table</FileDesc>
+		<FileMainFilename>ProductType</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Product Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="126">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Profile</FileName>
+		<FileDesc>Profile file</FileDesc>
+		<FileMainFilename>Profile</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Profile</FileRecCalled>
+		<DisplayClass>ProfileGridScreen</DisplayClass>
+		<MaintClass>ProfileScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="127">
+		<LastChanged>2009-11-18T21:38:17</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProfileClass</FileName>
+		<FileDesc>Profile Classification</FileDesc>
+		<FileMainFilename>ProfileClass</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Profile Classification</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="128">
+		<LastChanged>2007-09-08T19:50:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProfileControl</FileName>
+		<FileDesc>Control File</FileDesc>
+		<FileMainFilename>ProfileControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="129">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>ProfileCreditCard</FileName>
+		<FileDesc>Credit Cards</FileDesc>
+		<FileMainFilename>ProfileCreditCard</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Credit Card</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="130">
+		<LastChanged>2009-11-18T21:38:31</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProfileStatus</FileName>
+		<FileDesc>Profile Status (ie., good, fair, etc)</FileDesc>
+		<FileMainFilename>ProfileStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Profile Status</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="131">
+		<LastChanged>2009-11-18T21:38:39</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProfileType</FileName>
+		<FileDesc>Type of Profile</FileDesc>
+		<FileMainFilename>ProfileType</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Profile Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="132">
+		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProfitCenter</FileName>
+		<FileDesc>Profit Center Descriptions</FileDesc>
+		<FileMainFilename>ProfitCenter</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Profit center</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="133">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>PrTimecards</FileName>
+		<FileDesc>Timecard/Department Distribution file</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Timecard</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="134">
+		<LastChanged>2009-11-18T21:39:04</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Region</FileName>
+		<FileDesc>Region File</FileDesc>
+		<FileMainFilename>Region</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Region</FileRecCalled>
+		<DisplayClass>RegionGridScreen</DisplayClass>
+		<MaintClass>RegionScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="136">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Request</FileName>
+		<FileDesc>Brochure request file</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure request</FileRecCalled>
+		<DisplayClass>RequestGridScreen</DisplayClass>
+		<MaintClass>RequestScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="137">
+		<LastChanged>2007-09-08T19:53:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>RequestControl</FileName>
+		<FileDesc>Control File</FileDesc>
+		<FileMainFilename>RequestControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="138">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>RequestDetail</FileName>
+		<FileDesc>Brochure Request Detail File</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure request detail</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="139">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>RequestHistory</FileName>
+		<FileDesc>Brochure Request History</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure Request History</FileRecCalled>
+		<DisplayClass>GridScreen</DisplayClass>
+		<MaintClass>Screen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="140">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>RequestHistoryDetail</FileName>
+		<FileDesc>Brochure Request History</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure request history</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="141">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>RequestInput</FileName>
+		<FileDesc>Brochure request Input</FileDesc>
+		<FileMainFilename/>
+		<Type>UNSHAREABLE_MEMORY</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure request Input</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="142">
+		<LastChanged>2007-09-08T19:50:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Salesperson</FileName>
+		<FileDesc>Salesperson file</FileDesc>
+		<FileMainFilename>Salesperson</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Salesperson</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="143">
+		<LastChanged>2007-09-08T19:50:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>SalesRegion</FileName>
+		<FileDesc>Sales Region</FileDesc>
+		<FileMainFilename>SalesRegion</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Region</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="144">
+		<LastChanged>2009-11-18T21:39:18</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>SCF</FileName>
+		<FileDesc>SCF Control file</FileDesc>
+		<FileMainFilename>SCF</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>SCF</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="146">
+		<LastChanged>2009-11-18T21:39:20</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>SeatChoice</FileName>
+		<FileDesc>Seat Choice</FileDesc>
+		<FileMainFilename>SeatChoice</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Seat Choice</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="148">
+		<LastChanged>2009-11-18T21:39:23</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>SendVia</FileName>
+		<FileDesc>Send Via Codes</FileDesc>
+		<FileMainFilename>SendVia</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Send Via Code</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="149">
+		<LastChanged>2009-11-18T21:39:26</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>State</FileName>
+		<FileDesc>States or Provicences</FileDesc>
+		<FileMainFilename>State</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>State</FileRecCalled>
+		<DisplayClass>StateGridScreen</DisplayClass>
+		<MaintClass>StateScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="150">
+		<LastChanged>2007-09-08T19:41:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TaxRate</FileName>
+		<FileDesc>Tax rates table</FileDesc>
+		<FileMainFilename>TaxRate</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Tax rate</FileRecCalled>
+		<DisplayClass>TaxRateGridScreen</DisplayClass>
+		<MaintClass>TaxRateScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="152">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingAir</FileName>
+		<FileDesc>Ticket detail line</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes><![CDATA[Note:
+The key ends in a sequence number rather than the time because
+the next sequential flight may not be in order because of the
+international date line.
+
+This can be fixed by reading the GMT offset from the city file.
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Ticket detail</FileRecCalled>
+		<DisplayClass>BookingAirGridScreen</DisplayClass>
+		<MaintClass>BookingAirScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="153">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingAirHeader</FileName>
+		<FileDesc>Ticket Header/Booking-Tour ticket detail</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[There can be more than one TK_HEADER for a booking. A different ticket
+for each passenger.
+The TK_ALT_SEQ number is used for the passenger seq. no. The TK_ANSW_SEQ
+field is reserved for multiple tickets for one passenger.
+
+NOTE: !!!! : This file is currently at the maximum number of characters,
+ie., 511. To use the fare const. fields, move to and from temporary
+fields.
+
+TK_UD_STATUS - U/D status of Ticket
+
+NO_TK_STAT - No Status
+REQ_TK  - Request a ticket
+ (At the booking ticket update date, all tickets are
+ automatically updated to this status!!!)
+AUTO_TK  - Print a computer generated ticket now!
+WAIT_TK  - Ticket in system (CRS) waiting for OK
+TICK_TK  - Ticketed!!! G/L updates may be done now
+ (Updated when ticket gets a number and a issue date)
+ALL_TK  - All updates done (Issue, ARC, and Departure) need O/R
+OVER_TK  - All Updates done!!!
+XL_TK  - Cancel this ticket
+XLD_TK  - Ticket cancelled
+
+These status values apply to pax mod records only, for headers, the
+only valid values are NO_TK_STATUS, REQ_TK, and AUTO_TK.
+
+This arrangement is still efficient, because the Issue, ARC, and
+Departure dates are usually close together, so sequential reads
+through the file will not be that slow.
+
+For:
+Ticket info. entry:
+If Issue date or Ticket number entered, update status = TICK_TK
+
+Internal Tickets:
+Read through all where status=AUTO_TK, Ticket no="b", and ticket by "I"
+Update Ticket no, Date issued on, Status = TICK_TK
+
+ARC Authorization:
+Read through all tickets where Status = TICK_TK and Issue date in range
+Update ARC U/D date = date
+
+Departure Update:
+Read through all tickets where Status = TICK_TK and Departure in range
+Update Departure U/D = date
+
+Issue G/L Update:
+Status = TICK_TK, Issue date in range
+Update Issue date = date
+
+Override update:
+Read through all where status = TICK_TK or ALL_TK and Override received
+Update Override received = date
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Ticket</FileRecCalled>
+		<DisplayClass>BookingAirHeaderGridScreen</DisplayClass>
+		<MaintClass>BookingAirHeaderScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="154">
+		<LastChanged>2007-10-22T03:03:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TicketTrx</FileName>
+		<FileDesc>Ticket Transaction file</FileDesc>
+		<FileMainFilename>ApTrx</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Ticket transaction</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="155">
+		<LastChanged>2007-09-08T20:03:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TimeTrx</FileName>
+		<FileDesc>Payroll Time transaction file</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[On the next revision add:
+ PR_CHECK_DATE - Actual Date of the check (Usually no per. end)
+ WEEKS_WORKED - Calculate the weeks worked for state report
+
+Several other files should be set up to tie in with this one.
+
+PR_DEPT_DIST - For department/gl distribution in time entry
+PR_JOB_DIST - For job distribution
+
+PR_GL_DIST - File to send the G/L postings to.
+ Key: G/L NUMBER,PAY PD END DATE
+G/L NUMBER
+PAY PD END DATE
+TRANSACTION AMOUNT +/-
+
+Need a simple way to allow the user the option of automatically sending
+regulay, overtime, vacation, holiday, sick, special 1 & 2, other pay,
+taxes, deductions, and net pay to the correct G/L accounts.
+
+Maybe a G/L number for all of these should be set up in the department
+file--If not, the department file should be deleted, it serves no
+purpose!
+]]></FileNotes>
+		<DatabaseName>payroll</DatabaseName>
+		<FileRecCalled>Transaction</FileRecCalled>
+		<DisplayClass>TimeTrxGridScreen</DisplayClass>
+		<MaintClass>TimeTrxScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="156">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Tour</FileName>
+		<FileDesc>Tour file</FileDesc>
+		<FileMainFilename>Tour</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[FILE DESCRIPTION:
+
+Every tour has an entry here. The tour file is the basis for everything
+having to do with the tour side of the booking (Vouchers, A/P control,
+etc...)
+
+NOTES:
+TOUR_STATUS - The tour status is as follows:
+ OK - OK tour (Services can be arranged or confirmed)
+ GB - Group Blocked
+ CL - Tour closed to more bookings (type G only)
+ XL - Tour canceled
+ RQ - Non OK status
+ NS - No status (No operations will be done on this tour)
+TOUR_DEP_DATE - The departure date of the tour
+ (Date the A/P and A/R systems are updated)
+TOUR_FINALIZED - Date the tour is finalized
+ (On the finalization date, the A/P estimates are created)
+ (This is usually the date tour orders are printed)
+TOUR_FINAL_DOC - Date to send the final documents (to the pax)
+TOUR_TICKETS - Date to write/request the tickets
+ACTION_TYPE - This type matches the DOC_PRINT_ON field in the
+  BK_TOUR_DOC file.
+
+CHANGES: Change HDR Wait to an I/2 field: default to the actual number
+of acknowledgement days.
+]]></FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Tour</FileRecCalled>
+		<DisplayClass>TourGridScreen</DisplayClass>
+		<MaintClass>TourScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="157">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourClass</FileName>
+		<FileDesc>Tour Class File</FileDesc>
+		<FileMainFilename>TourClass</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour class</FileRecCalled>
+		<DisplayClass>TourClassGridScreen</DisplayClass>
+		<MaintClass>TourClassScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="160">
+		<LastChanged>2009-11-18T21:39:54</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourEvent</FileName>
+		<FileDesc>Tour Event Type</FileDesc>
+		<FileMainFilename>TourEvent</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Event</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="161">
+		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourHeader</FileName>
+		<FileDesc>Tour Header File</FileDesc>
+		<FileMainFilename>TourHeader</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[The tour header file is used for different purposes. It all depends
+what kind of tour it is used with.
+
+Scheduled tours - The Tour Header file is not automatically copied over
+into a booking version when a tour is booked, like all the other tour
+types.
+
+ Scheduled Tour Master - This file contains the general
+ information about a tour series. The departure date is not
+ entered here, and any information which the user wants entered
+ for the individual departures may be indicated here.
+
+Unscheduled Tours - The tour master doesn't have a departure date, so
+the information entered here is copied over for each booking. The sales
+for these tours may be controlled through a tour inventory record or the
+inventory assigned to hotels or air used on the tour.
+
+ Tour Master - All the tour information except the departure date
+ is stored here.
+
+Modular Tours - Modules are set up in module building, then the detail
+information is copied to the booking detail when the modules are added.
+
+ Modular Tour Header - This header(s) has all of the header
+ information for a standard modular tour.
+
+ Modular Tour Component Header - This contains the information to
+ be used with each module. Not much of the header information is
+ used, but the detail information is very important. (Tour
+ Component Header)
+
+ The detail information is copied to the booking detail with a
+ notation of the module header that it came from. The module
+ header is not copied.
+
+FITs - These tours do not use headers; The information comes straight
+from the Hotel and Tour data.
+
+ FIT Tour Header - This header(s) has all of the standard
+ information used for FIT tour building.
+
+ FIT Module Component Header - This header is used to package
+ frequently used tour sequences. For example, this header could
+ contain the hotels and tours for a standard three days in Tokyo.
+ This is different from the modules above in that the detail is
+ immediately copied to the booking detail, where the above tours
+ remain as a package.
+
+FIELD DESCRIPTIONS:
+ HDR_FINALIZE - Days prior to the departure date to finalize the
+   tour. (0 means finalize on the booking date)
+ HDR_FINAL_DOCS - Days prior to departure to send final documents
+   (0 means no final documents)
+ HDR_SP1_DAYS - Days before departure date to print all
+  special 1 documents (ie., maybe tour recaps)
+ HDR_SP2_DAYS - Another days field
+]]></FileNotes>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour header</FileRecCalled>
+		<DisplayClass>TourProductGridScreen</DisplayClass>
+		<MaintClass>TourHeaderScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="162">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>CalendarProduct</FileName>
+		<FileDesc>Special memory-based record used for cal</FileDesc>
+		<FileMainFilename/>
+		<Type>UNSHAREABLE_VECTOR</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Product</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="163">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderHotel</FileName>
+		<FileDesc>Tour Hotel Detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Hotel Detail</FileRecCalled>
+		<DisplayClass>TourHeaderHotelGridScreen</DisplayClass>
+		<MaintClass>TourHeaderHotelScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="164">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderLand</FileName>
+		<FileDesc>Tour Land Detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Land Detail</FileRecCalled>
+		<DisplayClass>TourHeaderLandGridScreen</DisplayClass>
+		<MaintClass>TourHeaderLandScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="165">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourList</FileName>
+		<FileDesc>Tour list for the Product Display</FileDesc>
+		<FileMainFilename>TourList</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="167">
+		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderLine</FileName>
+		<FileDesc>Tour Pricing Detail File</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes><![CDATA[FILE DESCRIPTION:
+
+This file is used to store the pricing for all types of tours.
+It also stores the Changes to the header pricing for all alternates
+and optionals.
+
+NOTES:
+
+For header pricing, the PRICE_MOD_CODE should always be (R)eplace.
+This way, the sequence number when the line-items are written will be
+correct.
+
+The PRICE_SEQ number must be unique within a Header or ALT/OPT. This
+will insure that the sequence number in the line items will be unique
+if a modification to the Header is encountered and the header line item
+has to be deleted.
+]]></FileNotes>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour pricing</FileRecCalled>
+		<DisplayClass>TourHeaderLineGridScreen</DisplayClass>
+		<MaintClass>TourHeaderLineScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="168">
+		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderOption</FileName>
+		<FileDesc>Question/Answer File</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Question/Answer</FileRecCalled>
+		<DisplayClass>TourHeaderOptionGridScreen</DisplayClass>
+		<MaintClass>TourHeaderOptionScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="169">
+		<LastChanged>2009-11-18T21:40:02</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourStatus</FileName>
+		<FileDesc>Tour Status</FileDesc>
+		<FileMainFilename>TourStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="170">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderAir</FileName>
+		<FileDesc>Tour Ticket Detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour Ticket Segment Detail</FileRecCalled>
+		<DisplayClass>TourHeaderAirGridScreen</DisplayClass>
+		<MaintClass>TourHeaderAirScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="171">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourTkHeader</FileName>
+		<FileDesc>Tour Ticket Header</FileDesc>
+		<FileMainFilename>TourTkHeader</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour Ticket Header Detail</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="172">
+		<LastChanged>2009-11-18T21:40:04</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourType</FileName>
+		<FileDesc>Tour Type Table</FileDesc>
+		<FileMainFilename>TourType</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour Type</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="173">
+		<LastChanged>2009-11-18T21:40:20</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TransactionType</FileName>
+		<FileDesc>Transaction Type Table</FileDesc>
+		<FileMainFilename>TransactionType</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Transaction desc</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="174">
+		<LastChanged>2007-09-08T19:44:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Transportation</FileName>
+		<FileDesc>Transportation file</FileDesc>
+		<FileMainFilename>Transportation</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Transportation</FileRecCalled>
+		<DisplayClass>TransportationGridScreen</DisplayClass>
+		<MaintClass>TransportationScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="175">
+		<LastChanged>2009-11-18T21:40:31</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TransportationClass</FileName>
+		<FileDesc>Trans class table</FileDesc>
+		<FileMainFilename>TransportationClass</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Transportation class</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="176">
+		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TransportationPricing</FileName>
+		<FileDesc>Transportation pricing</FileDesc>
+		<FileMainFilename>TransportationPricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Transportation pricing</FileRecCalled>
+		<DisplayClass>TransportationPricingGridScreen</DisplayClass>
+		<MaintClass>TransportationPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="178">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>Vendor</FileName>
+		<FileDesc>A/P Vendor file</FileDesc>
+		<FileMainFilename>Vendor</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes><![CDATA[It would be nice to add this stuff later:
+Send Mail Via: Telex/Phone/Mail
+Our Customer number in their computer:
+EFT Account number
+Computer Mail Phone Number:
+Need Social Security Number for 1099 printing
+]]></FileNotes>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Vendor</FileRecCalled>
+		<DisplayClass>VendorGridScreen</DisplayClass>
+		<MaintClass>VendorScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="179">
+		<LastChanged>2009-11-18T21:40:34</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>VendorStatus</FileName>
+		<FileDesc>Vendor Status Codes</FileDesc>
+		<FileMainFilename>VendorStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled>Vendor Status</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="180">
+		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Versions</FileName>
+		<FileDesc>Financial Statement Version</FileDesc>
+		<FileMainFilename>Versions</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Version</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="183">
+		<LastChanged>2010-02-16T11:23:37</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Picture</FileName>
+		<FileDesc>Picture file</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>PictureGridScreen</DisplayClass>
+		<MaintClass>PictureScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="184">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BrochureClass</FileName>
+		<FileDesc>Brochure classification</FileDesc>
+		<FileMainFilename>BrochureClass</FileMainFilename>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>request</DatabaseName>
+		<FileRecCalled>Brochure classification</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="185">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>ElectronicAddress</FileName>
+		<FileDesc>Electronic Addresses for a Profile</FileDesc>
+		<FileMainFilename>ElectronicAddress</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Electronic Address</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="186">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>ProfileCertification</FileName>
+		<FileDesc>Profile's Certification detail</FileDesc>
+		<FileMainFilename>ProfileCertification</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>profile</DatabaseName>
+		<FileRecCalled>Profile Certification Detail</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="190">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingMenuLookup</FileName>
+		<FileDesc>Remote Query for the Booking Menu</FileDesc>
+		<FileMainFilename>BookingMenuLookup</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes>Make sure you sync this with the thin link (thin.app.booking.lookup.BookingMenuLookup)</FileNotes>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Tour</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="191">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourLookup</FileName>
+		<FileDesc>Tour lookup query</FileDesc>
+		<FileMainFilename/>
+		<Type>MANUAL_QUERY</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Tour</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="192">
+		<LastChanged>2010-02-16T11:21:45</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Contact</FileName>
+		<FileDesc>Contact List</FileDesc>
+		<FileMainFilename>Contact</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled>Contact</FileRecCalled>
+		<DisplayClass>ContactGridScreen</DisplayClass>
+		<MaintClass>ContactScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="194">
+		<LastChanged>2010-02-16T11:25:26</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PictureControl</FileName>
+		<FileDesc>Picture Control File</FileDesc>
+		<FileMainFilename>PictureControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>PictureControlScreen</DisplayClass>
+		<MaintClass>PictureControlScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="195">
+		<LastChanged>2010-02-16T11:25:21</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PictureType</FileName>
+		<FileDesc/>
+		<FileMainFilename>PictureType</FileMainFilename>
+		<Type>TABLE</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="201">
+		<LastChanged>2009-11-18T21:40:53</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>InfoStatus</FileName>
+		<FileDesc>Cust Sale Detail Info Status</FileDesc>
+		<FileMainFilename>InfoStatus</FileMainFilename>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="204">
+		<LastChanged>2009-11-18T21:40:51</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AirClass</FileName>
+		<FileDesc>Flight class</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Seat class</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="205">
+		<LastChanged>2009-11-18T21:40:56</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CruiseClass</FileName>
+		<FileDesc>Cruise cabin class</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Cabin class</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="206">
+		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Item</FileName>
+		<FileDesc>Item</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Item</FileRecCalled>
+		<DisplayClass>ItemGridScreen</DisplayClass>
+		<MaintClass>ItemScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="210">
+		<LastChanged>2009-11-18T21:40:58</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TrxSystem</FileName>
+		<FileDesc>Transaction System File</FileDesc>
+		<FileMainFilename>TrxSystem</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>System</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="214">
+		<LastChanged>2009-11-18T21:40:59</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TrxDesc</FileName>
+		<FileDesc>Transaction Description File</FileDesc>
+		<FileMainFilename>TrxDesc</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Transaction Description</FileRecCalled>
+		<DisplayClass>TrxDescGridScreen</DisplayClass>
+		<MaintClass>TrxDescScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="215">
+		<LastChanged>2009-11-18T21:41:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TrxStatus</FileName>
+		<FileDesc>Transaction Status</FileDesc>
+		<FileMainFilename>TrxStatus</FileMainFilename>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Transaction status</FileRecCalled>
+		<DisplayClass>TrxStatusGridScreen</DisplayClass>
+		<MaintClass>TrxStatusScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="216">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>SpecialFormat</FileName>
+		<FileDesc>Financial Statment Special Formats</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Special Format</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="217">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>NumberFormat</FileName>
+		<FileDesc>Financial Statment Number Formats</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Number format</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="218">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>SpecialFunction</FileName>
+		<FileDesc>Financial Statment Special Functions</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Special Function</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="219">
+		<LastChanged>2007-09-08T20:03:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BankTrxBatch</FileName>
+		<FileDesc>Bank Transaction Batch Header</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>assetdr</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>BankTrxBatchGridScreen</DisplayClass>
+		<MaintClass>BankTrxBatchScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="220">
+		<LastChanged>2007-09-08T19:33:55</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CashBatchDist</FileName>
+		<FileDesc>Cash Receipts distribution</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Distribution</FileRecCalled>
+		<DisplayClass>CashBatchDistGridScreen</DisplayClass>
+		<MaintClass>CashBatchDistScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="221">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>McoBatchDist</FileName>
+		<FileDesc>Mco batch distribution file</FileDesc>
+		<FileMainFilename>McoBatchDist</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Mco batch distribution</FileRecCalled>
+		<DisplayClass>McoBatchDistGridScreen</DisplayClass>
+		<MaintClass>McoBatchDistScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="222">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>CreditCardBatchDist</FileName>
+		<FileDesc>Credit card distribution file</FileDesc>
+		<FileMainFilename>CreditCardBatchDist</FileMainFilename>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>acctrec</DatabaseName>
+		<FileRecCalled>Credit card distribution</FileRecCalled>
+		<DisplayClass>CreditCardBatchDistGridScreen</DisplayClass>
+		<MaintClass>CreditCardBatchDistScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="224">
+		<LastChanged>2009-11-18T21:41:18</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TrxGroup</FileName>
+		<FileDesc>Transaction Header</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>genled</DatabaseName>
+		<FileRecCalled>Transaction Header</FileRecCalled>
+		<DisplayClass>TrxGroupGridScreen</DisplayClass>
+		<MaintClass>TrxGroupScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="225">
+		<LastChanged>2007-09-08T19:49:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CarPricing</FileName>
+		<FileDesc>Rental car pricing</FileDesc>
+		<FileMainFilename>CarPricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Rental car pricing</FileRecCalled>
+		<DisplayClass>CarPricingGridScreen</DisplayClass>
+		<MaintClass>CarPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="226">
+		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CruisePricing</FileName>
+		<FileDesc>Cruise pricing</FileDesc>
+		<FileMainFilename>CruisePricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Cruise pricing</FileRecCalled>
+		<DisplayClass>CruisePricingGridScreen</DisplayClass>
+		<MaintClass>CruisePricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="227">
+		<LastChanged>2007-09-08T19:49:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AirPricing</FileName>
+		<FileDesc>Flight pricing</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Flight pricing</FileRecCalled>
+		<DisplayClass>AirPricingGridScreen</DisplayClass>
+		<MaintClass>AirPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="228">
+		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ItemPricing</FileName>
+		<FileDesc>Item pricing</FileDesc>
+		<FileMainFilename>ItemPricing</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Item</FileRecCalled>
+		<DisplayClass>ItemPricingGridScreen</DisplayClass>
+		<MaintClass>ItemPricingScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="229">
+		<LastChanged>2009-11-18T21:41:29</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>LandClass</FileName>
+		<FileDesc>Land class of service</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Land class</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="230">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderTransportation</FileName>
+		<FileDesc>Tour header transportation detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour transportation</FileRecCalled>
+		<DisplayClass>TourHeaderTransportationGridScreen</DisplayClass>
+		<MaintClass>TourHeaderTransportationScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="231">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderCar</FileName>
+		<FileDesc>Tour header car detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>tour car detail</FileRecCalled>
+		<DisplayClass>TourHeaderCarGridScreen</DisplayClass>
+		<MaintClass>TourHeaderCarScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="232">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderCruise</FileName>
+		<FileDesc>Tour header cruise detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour cruise detail</FileRecCalled>
+		<DisplayClass>TourHeaderCruiseGridScreen</DisplayClass>
+		<MaintClass>TourHeaderCruiseScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="233">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderItem</FileName>
+		<FileDesc>Tour item detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour item</FileRecCalled>
+		<DisplayClass>TourHeaderItemGridScreen</DisplayClass>
+		<MaintClass>TourHeaderItemScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="234">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderDetail</FileName>
+		<FileDesc>Tour detail (abstract class)</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="246">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingItem</FileName>
+		<FileDesc>Booking detail item</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Booking item</FileRecCalled>
+		<DisplayClass>BookingItemGridScreen</DisplayClass>
+		<MaintClass>BookingItemScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="247">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingTransportation</FileName>
+		<FileDesc>Transportation booking detail</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Booking transportation detail</FileRecCalled>
+		<DisplayClass>BookingTransportationGridScreen</DisplayClass>
+		<MaintClass>BookingTransportationScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="248">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingCruise</FileName>
+		<FileDesc>Booking cruise detail</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Cruise detail</FileRecCalled>
+		<DisplayClass>BookingCruiseGridScreen</DisplayClass>
+		<MaintClass>BookingCruiseScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="249">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>BookingTour</FileName>
+		<FileDesc>Booking tour header detail</FileDesc>
+		<FileMainFilename>BookingDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled>Booking tour header detail</FileRecCalled>
+		<DisplayClass>BookingTourDetailGridScreen</DisplayClass>
+		<MaintClass>BookingTourDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="250">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderTour</FileName>
+		<FileDesc>Tour tour detail</FileDesc>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour tour detail</FileRecCalled>
+		<DisplayClass>TourHeaderTourHeaderGridScreen</DisplayClass>
+		<MaintClass>TourHeaderTourHeaderScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="251">
+		<LastChanged>2007-09-08T20:04:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderAirHeader</FileName>
+		<FileDesc>Tour header ticket header info</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Tour ticket header</FileRecCalled>
+		<DisplayClass>TourHeaderAirHeaderGridScreen</DisplayClass>
+		<MaintClass>TourHeaderAirHeaderScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="264">
+		<LastChanged>2009-11-18T21:41:33</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CarRate</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="265">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderTransport</FileName>
+		<FileDesc/>
+		<FileMainFilename>TourHeaderDetail</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="268">
+		<LastChanged>2010-02-16T11:25:32</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceStep</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>DanceStepGridScreen</DisplayClass>
+		<MaintClass>DanceStepScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="269">
+		<LastChanged>2010-02-16T11:21:34</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Dance</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>DanceGridScreen</DisplayClass>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="276">
+		<LastChanged>2009-11-18T21:41:35</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CruiseRate</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="277">
+		<LastChanged>2009-11-18T21:41:36</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AirRate</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="278">
+		<LastChanged>2009-11-18T21:41:39</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TransportationRate</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="279">
+		<LastChanged>2009-11-18T21:41:48</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>LandRate</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="280">
+		<LastChanged>2006-07-11T00:14:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="281">
+		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>LandInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="282">
+		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TransportationInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="283">
+		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CarInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="284">
+		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CruiseInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="285">
+		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AirInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="286">
+		<LastChanged>2006-07-11T00:16:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ItemInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="287">
+		<LastChanged>2006-07-11T00:14:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderInventory</FileName>
+		<FileDesc/>
+		<FileMainFilename>Inventory</FileMainFilename>
+		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="288">
+		<LastChanged>2009-11-18T21:41:50</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ItemRate</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="289">
+		<LastChanged>2009-11-18T21:41:52</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ItemClass</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="290">
+		<LastChanged>2007-09-08T19:46:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductControl</FileName>
+		<FileDesc>Product control file</FileDesc>
+		<FileMainFilename>ProductControl</FileMainFilename>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled>Control</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="291">
+		<LastChanged>2010-02-16T11:25:38</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceType</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="292">
+		<LastChanged>2010-02-16T11:25:43</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DancePosition</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="293">
+		<LastChanged>2010-02-16T11:25:48</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceComponents</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="295">
+		<LastChanged>2010-02-16T11:25:56</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>MoveClass</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="296">
+		<LastChanged>2010-02-16T11:26:01</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HandPosition</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="297">
+		<LastChanged>2009-11-18T21:41:59</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PricingType</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="300">
+		<LastChanged>2010-02-16T11:21:55</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ContactCategory</FileName>
+		<FileDesc>Contact category</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="317">
+		<LastChanged>2006-08-06T23:20:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>InventoryDetail</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>booking</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>InventoryDetailGridScreen</DisplayClass>
+		<MaintClass>InventoryDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="321">
+		<LastChanged>2006-09-08T05:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>OTACodeTable</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="322">
+		<LastChanged>2006-09-08T14:46:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>OTACodes</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>OTACodesGridScreen</DisplayClass>
+		<MaintClass>OTACodesScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="323">
+		<LastChanged>2009-11-18T21:42:01</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>PricingStatus</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="324">
+		<LastChanged>2009-11-18T21:42:21</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Deposit</FileName>
+		<FileDesc>Deposit policy</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>acctpay</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="325">
+		<LastChanged>2010-02-16T11:26:07</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceTeacher</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="326">
+		<LastChanged>2010-02-16T11:26:12</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceStudio</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="327">
+		<LastChanged>2010-02-16T11:23:27</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceClass</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="328">
+		<LastChanged>2010-02-16T11:23:03</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceAlignment</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="329">
+		<LastChanged>2010-02-16T11:26:18</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceDirection</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="330">
+		<LastChanged>2010-02-16T11:23:15</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>DanceArtisticClass</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>app</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="337">
+		<LastChanged>2007-10-12T03:06:00</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourEventSchedule</FileName>
+		<FileDesc>Tour document</FileDesc>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>TourEventScheduleGridScreen</DisplayClass>
+		<MaintClass>TourEventScheduleScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="338">
+		<LastChanged>2009-07-11T03:16:09</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingDetailHistory</FileName>
+		<FileDesc>Booking detail history</FileDesc>
+		<FileMainFilename>BookingDetailHistory</FileMainFilename>
+		<Type>REMOTE | USER_DATA | SERVER_REWRITES | DONT_LOG_TRX</Type>
+		<FileNotes/>
+		<DatabaseName>history</DatabaseName>
+		<FileRecCalled>Detail History</FileRecCalled>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="339">
+		<LastChanged>2009-04-25T06:06:25</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>BookingAirHeaderHistory</FileName>
+		<FileDesc>Air header history</FileDesc>
+		<FileMainFilename/>
+		<Type>REMOTE | USER_DATA | SERVER_REWRITES</Type>
+		<FileNotes/>
+		<DatabaseName>history</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="342">
+		<LastChanged>2008-10-08T23:50:33</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>OTACode</FileName>
+		<FileDesc>The virtual table that maps to a table</FileDesc>
+		<FileMainFilename/>
+		<Type>TABLE | MAPPED</Type>
+		<FileNotes>Since this is a mapped table, you will have to supply a file name.</FileNotes>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="343">
+		<LastChanged>2008-09-22T11:51:46</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>OTASeatPreference</FileName>
+		<FileDesc/>
+		<FileMainFilename>STP</FileMainFilename>
+		<Type>TABLE | MAPPED</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="344">
+		<LastChanged>2008-10-08T23:54:58</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelAvail</FileName>
+		<FileDesc/>
+		<FileMainFilename>NONE</FileMainFilename>
+		<Type>REMOTE_MEMORY</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="346">
+		<LastChanged>2009-11-18T21:42:32</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>HotelChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="347">
+		<LastChanged>2009-11-18T21:42:36</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CarChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="348">
+		<LastChanged>2009-11-18T21:42:37</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>CruiseChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="349">
+		<LastChanged>2009-11-18T21:42:38</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TourHeaderChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="350">
+		<LastChanged>2009-11-18T21:42:40</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>AirChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="351">
+		<LastChanged>2009-11-18T21:42:47</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>LandChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="353">
+		<LastChanged>2008-10-18T17:45:51</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductSearchType</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>TABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>ProductSearchTypeGridScreen</DisplayClass>
+		<MaintClass>ProductSearchTypeScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="354">
+		<LastChanged>2008-10-18T18:04:53</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductSearchCategory</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>ProductSearchCategoryGridScreen</DisplayClass>
+		<MaintClass>ProductSearchCategoryScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="355">
+		<LastChanged>2008-10-20T16:09:09</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ProductSearchDetail</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>ProductSearchDetailGridScreen</DisplayClass>
+		<MaintClass>ProductSearchDetailScreen</MaintClass>
+	</FileHdr>
+	<FileHdr ID="356">
+		<LastChanged>2009-11-18T21:43:03</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>TransportationChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="357">
+		<LastChanged>2009-11-18T21:43:05</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>ItemChain</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | SHARED_DATA | LOCALIZABLE</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass/>
+		<MaintClass/>
+	</FileHdr>
+	<FileHdr ID="358">
+		<LastChanged>2009-04-17T13:27:53</LastChanged>
+		<Deleted>N</Deleted>
+		<FileName>Air</FileName>
+		<FileDesc/>
+		<FileMainFilename/>
+		<Type>LOCAL | USER_DATA</Type>
+		<FileNotes/>
+		<DatabaseName>product</DatabaseName>
+		<FileRecCalled/>
+		<DisplayClass>AirGridScreen</DisplayClass>
+		<MaintClass>AirScreen</MaintClass>
+	</FileHdr>
+</file>

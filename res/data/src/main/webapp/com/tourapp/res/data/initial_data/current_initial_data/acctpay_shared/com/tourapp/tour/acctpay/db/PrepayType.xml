@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<PrepayType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Select invoices</Description>
+		<Code>I</Code>
+	</PrepayType>
+	<PrepayType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Select prepay</Description>
+		<Code>P</Code>
+	</PrepayType>
+	<PrepayType ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Both inv and pr</Description>
+		<Code>B</Code>
+	</PrepayType>
+	<PrepayType ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Estimate and pp</Description>
+		<Code>E</Code>
+	</PrepayType>
+</file>

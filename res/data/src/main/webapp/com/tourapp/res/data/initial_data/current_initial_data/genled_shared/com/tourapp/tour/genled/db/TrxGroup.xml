@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<TrxGroup ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ManualEntry</GroupCode>
+		<GroupDesc>Manual Entry</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RecurringTrx</GroupCode>
+		<GroupDesc>Recurring Transaction</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Accrual</GroupCode>
+		<GroupDesc>Accrual</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>AccrualReversal</GroupCode>
+		<GroupDesc>Accrual Reversal</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ClosingEntry</GroupCode>
+		<GroupDesc>Closing Entry</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>StartBalance</GroupCode>
+		<GroupDesc>Starting Balance</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>SummaryTrx</GroupCode>
+		<GroupDesc>Summarized Transactions</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ManualCheck</GroupCode>
+		<GroupDesc>Manual Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ManualDeposit</GroupCode>
+		<GroupDesc>Manual Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ForeignDeposit</GroupCode>
+		<GroupDesc>Foreign Curr Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>StartingBalance</GroupCode>
+		<GroupDesc>Starting Balance</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>TransferIn</GroupCode>
+		<GroupDesc>Transfer In</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>BankCharge</GroupCode>
+		<GroupDesc>Bank Charge</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Interest</GroupCode>
+		<GroupDesc>Interest</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>MiscAddition</GroupCode>
+		<GroupDesc>Misc Addition</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>MiscSubtraction</GroupCode>
+		<GroupDesc>Misc Subtraction</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="17">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>VoidCheck</GroupCode>
+		<GroupDesc>Void Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="18">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ReturnedDeposit</GroupCode>
+		<GroupDesc>Returned Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="19">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>EFTIn</GroupCode>
+		<GroupDesc>EFT In</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="20">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>EFTOut</GroupCode>
+		<GroupDesc>EFT Out</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="25">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Batch</GroupCode>
+		<GroupDesc>MCO Payment - Batch</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="26">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>MCO Payment - Entered</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="27">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Submitted</GroupCode>
+		<GroupDesc>MCO Payment - Submitted</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="28">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>MCO Payment - Paid</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="39">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Batch</GroupCode>
+		<GroupDesc>Credit Card Payment - Batch</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="40">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>Credit Card Payment - Entered</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="41">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Submitted</GroupCode>
+		<GroupDesc>Credit Card Payment - Submitte</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="42">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Approved</GroupCode>
+		<GroupDesc>Credit Card Payment - Approved</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="44">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>Credit Card Payment - Paid</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="59">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>DepEstManual</GroupCode>
+		<GroupDesc>Departure Estimate - Manual</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="60">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>DepartureEstimate</GroupCode>
+		<GroupDesc>Departure Estimate</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="61">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="62">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>InvoiceNonTour</GroupCode>
+		<GroupDesc>Invoice - Non Tour</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="64">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditInvoice</GroupCode>
+		<GroupDesc>Credit Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="65">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditMemo</GroupCode>
+		<GroupDesc>Credit Memo</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="69">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>BrokerPymt</GroupCode>
+		<GroupDesc>Broker Payment Header</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="70">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>DebitMemo</GroupCode>
+		<GroupDesc>Debit Memo</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="94">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Depreciation</GroupCode>
+		<GroupDesc>Fixed Asset Depreciation</GroupDesc>
+		<TrxDescID>165</TrxDescID>
+		<DescCode>AssetDepreciation</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="95">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Cash in)</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="98">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RefundPaid</GroupCode>
+		<GroupDesc>Refund - Paid</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="100">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RefundPending</GroupCode>
+		<GroupDesc>Refund - Pending MCO</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="102">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>CancellationCharge</GroupCode>
+		<GroupDesc>Cancellation Charge</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="103">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditMemo</GroupCode>
+		<GroupDesc>Credit Memo</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="105">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="106">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>InvoiceModification</GroupCode>
+		<GroupDesc>Invoice Modification</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="108">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ElectronicPayment</GroupCode>
+		<GroupDesc>Electronic Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="109">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditCard</GroupCode>
+		<GroupDesc>Credit Card Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="110">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Mco</GroupCode>
+		<GroupDesc>Mco Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="111">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>ArcSubmitted</GroupCode>
+		<GroupDesc>ARC Submitted</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="112">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>CancelTicket</GroupCode>
+		<GroupDesc>Cancelled Ticket</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="113">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>NoTicket</GroupCode>
+		<GroupDesc>No Ticket Yet</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="114">
+		<LastChanged>2007-10-31T15:04:00</LastChanged>
+		<Deleted>N</Deleted>
+		<GroupCode>OverridePaid</GroupCode>
+		<GroupDesc>Override Paid</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="115">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RequestAutoTicket</GroupCode>
+		<GroupDesc>Request Automated Ticket</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="116">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RequestTicket</GroupCode>
+		<GroupDesc>Request Ticket</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="117">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>TicketCancelled</GroupCode>
+		<GroupDesc>Ticket Cancelled</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="118">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Ticketed</GroupCode>
+		<GroupDesc>Ticketed</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="119">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>WaitingForTicket</GroupCode>
+		<GroupDesc>Waiting for Ticket</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="121">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>DebitMemo</GroupCode>
+		<GroupDesc>Debit Memo</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="122">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RefundPaidManual</GroupCode>
+		<GroupDesc>Refund - Paid Manually</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="123">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RefundSubmitted</GroupCode>
+		<GroupDesc>Refund - Submitted for Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="126">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RefundHeld</GroupCode>
+		<GroupDesc>Refund - Held</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="128">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>RefundPay</GroupCode>
+		<GroupDesc>Refund - Pay on next batch</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="131">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Check)</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="133">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="134">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>Check</GroupCode>
+		<GroupDesc>Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="135">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>PrepaymentPaidDist</GroupCode>
+		<GroupDesc>Prepayment Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="136">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>TransferOut</GroupCode>
+		<GroupDesc>Transfer Out</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="137">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>BrokerPymtPaid</GroupCode>
+		<GroupDesc>Broker Payment-Paid</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="138">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>BrokerPymtPaidDist</GroupCode>
+		<GroupDesc>Broker Pymt-Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="139">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<GroupCode>DebitMemoDist</GroupCode>
+		<GroupDesc>Debit memo distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="140">
+		<LastChanged>2008-12-05T16:14:28</LastChanged>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditInvNonTour</GroupCode>
+		<GroupDesc>Credit Invoice - Non Tour</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="141">
+		<LastChanged>2008-12-05T22:49:02</LastChanged>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditInvoiceDist</GroupCode>
+		<GroupDesc>Credit Invoice distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+	<TrxGroup ID="142">
+		<LastChanged>2008-12-05T22:49:20</LastChanged>
+		<Deleted>N</Deleted>
+		<GroupCode>CreditInvNonTourDist</GroupCode>
+		<GroupDesc>Credit Invoice (non tour) dist</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+	</TrxGroup>
+</file>

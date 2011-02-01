@@ -1,0 +1,2764 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Issue ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Need to transfer the data from based tour class in the ?Tour Class? record</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:07:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:08:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Enter data in a grid table and then lose focus DOES NOT save the change</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:08:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:08:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Since land cannot process SOAP messages, I get a null pointer on LocalMessageTransport/129</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:08:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:08:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="4">
+		<LastChanged>2006-06-18T01:21:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Finish nav area (only two items now)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:08:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-06-18T01:21:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>If not WebStart, start the browser using System.exec(xxx)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:09:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:09:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Grid Screen Does not Work against a remote table</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:09:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:10:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Don't read control file twice (server and Client)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:09:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:10:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Restore G/L Distribution</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:10:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:10:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>If no G/L on Post, use unassigned G/L</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:10:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:10:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Make all records into Sync Records (add type: Deleted/New, Add U/D post)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:10:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:11:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Thin ? Don't requery while not in view</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:11:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Focus on Header Field</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:11:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>XML File Filter</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:11:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Add Physical Record w/Non-null key = error</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:11:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Change Font size = Change font on Menus also</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:12:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>getRemoteTableType(java.rmi.server.RemoteStub.class) - ClientTable/223,4</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:12:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:13:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="17">
+		<LastChanged>2006-06-16T01:28:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix Button Bar/Header Bar/Footer Bar orders</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:13:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-06-16T01:28:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="18">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Load JOT data</Description>
+		<ProjectID>18</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:15:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T13:16:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="19">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Test Visual Components - Marathon</Description>
+		<ProjectID>18</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>4</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T13:16:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-29T13:30:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="20">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Extract from Open Travel</Description>
+		<ProjectID>19</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>8</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T22:58:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-29T13:24:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="21">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>External ? w, City.. find a source; to lowercase; City - All Tokyo = NRT + TYO</Description>
+		<ProjectID>19</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T22:59:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T23:00:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="22">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Print to File; Change template, include all fields; To file; To email</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T23:00:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T23:01:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="23">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Performace test WebStart</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T23:01:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T23:01:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="24">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>RMI - Get RMI to tunnel through the load balancer</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T23:01:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T23:01:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="25">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Open Travel - Automate the extraction and compile process</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-19T23:01:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-19T23:02:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="26">
+		<LastChanged>2010-05-11T06:24:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[Get rid of SetDirectTransportHandler -
+Have the remote call wait for booking status okay]]></Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>30</IssueSequence>
+		<EnteredDate>2006-03-22T23:32:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2010-05-11T06:24:02</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="27">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Change table sorting to show direction. Allow sorts on all tables</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-22T23:34:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-28T21:41:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="28">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Add specialized Swing Thread Handing</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-22T23:35:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-24T11:02:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="29">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Fix the popup calendar to use rollover</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-22T23:35:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-24T10:50:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="30">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Fix the JTable colors to display correctly</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-23T22:32:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-25T22:13:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="31">
+		<LastChanged>2008-10-30T15:52:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix WebStart loads to get the correct jars</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>6</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-24T23:00:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:52:11</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="32">
+		<LastChanged>2006-08-19T23:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Finish Software Schedule</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-24T23:01:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-19T23:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="33">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Fix Resource Entry</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-25T21:37:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-28T23:45:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="34">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>WebDAV</Description>
+		<ProjectID>20</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>4</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-28T23:51:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-28T23:52:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="35">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>SubVersion</Description>
+		<ProjectID>20</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>4</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-28T23:52:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-28T23:52:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="36">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Open X-Change</Description>
+		<ProjectID>20</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>4</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-28T23:52:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-28T23:53:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="37">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Apache Lenya - Version Control</Description>
+		<ProjectID>20</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>4</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-29T01:13:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-29T01:13:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="38">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Apache James - Download and test latest version</Description>
+		<ProjectID>20</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>4</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-29T02:00:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-29T02:01:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="39">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Change window (upper left) icon to tourstudio logo</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-29T13:13:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-29T13:14:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="40">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Need WebServices workbench - see details:</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>5</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-03-30T13:08:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-03-30T13:08:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="41">
+		<LastChanged>2010-05-19T14:46:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Finish Software Schedule</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>21</IssueSequence>
+		<EnteredDate>2006-04-02T06:01:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:46:46</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="42">
+		<LastChanged>2008-10-30T15:54:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Grid: Enter new maint item, immediately try to change detail</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-02T06:05:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:54:53</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="43">
+		<LastChanged>2008-10-30T15:50:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Finish ColorField to display color and allow changes</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-02T07:00:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:50:57</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="44">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Add HTML and Swing control for ColorField</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-04T14:40:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-04-04T14:40:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="45">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Move code around</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-07T00:24:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-04-07T07:42:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="46">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Change ant build script template to copy classes to WEB-INF/classes</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-07T00:25:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-04-07T06:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="47">
+		<LastChanged>2010-03-18T16:48:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Make sure Jdbc client is doing messaging properly - see ServletTask/73</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>110</IssueSequence>
+		<EnteredDate>2006-04-07T11:30:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:21</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="48">
+		<LastChanged>2006-06-16T01:28:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Grid bug fixes...</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-09T00:47:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-06-16T01:28:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="49">
+		<LastChanged>2010-03-18T16:48:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>HTML Fixes: Change to lucene/forrest themes (docbook) use xxe</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>100</IssueSequence>
+		<EnteredDate>2006-04-09T11:25:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:20</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="50">
+		<LastChanged>2006-04-18T02:09:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[If there are duplicate descriptions in a file, the popup doesn't work
+right, because I lookup the index by description]]></Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-18T02:08:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-04-18T02:09:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="51">
+		<LastChanged>2006-06-13T13:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>BookingDetail.DetailDeleted = Deleted</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-04-22T14:27:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-06-13T13:39:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="52">
+		<LastChanged>2006-06-14T17:56:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Validate current field or grid before processing button</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-06-13T13:39:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-06-14T17:56:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="53">
+		<LastChanged>2008-12-09T00:12:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Screens - Have getTitle() method lookup a resource</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-06-16T01:26:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-12-09T00:12:05</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="54">
+		<LastChanged>2006-06-18T01:19:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>GridScreen - Get blinking status icon to work</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-06-17T13:19:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-06-18T01:19:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="55">
+		<LastChanged>2008-10-30T15:58:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Show an hourglass for lengthy operations</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-06-18T01:22:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:58:14</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="56">
+		<LastChanged>2006-07-10T05:22:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Miscellaneous bugs/to do</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-06-19T03:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-07-10T05:22:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="57">
+		<LastChanged>2006-07-24T04:34:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Get rid of Module and Fit Header tour types</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-07-09T00:50:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-07-24T04:34:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="58">
+		<LastChanged>2008-10-30T15:58:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Update message filter while checking filtersBaseMessageReceiver/230</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-07-22T05:32:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:58:54</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="59">
+		<LastChanged>2006-08-20T05:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Add icon to Booking Status</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:24:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="60">
+		<LastChanged>2007-01-24T14:21:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>On Grid Selection, ADD selection icon to grid...</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:24:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2007-01-24T14:21:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="61">
+		<LastChanged>2006-08-20T05:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Land Inv. Status -&gt; Manual / Data Required for A/H xfer BKK</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:31:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="62">
+		<LastChanged>2006-08-20T05:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Half day BKK S/S, Cost -&gt; Not valid for Sep (No Error?)</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:35:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="63">
+		<LastChanged>2006-08-20T05:56:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Need to test other fares for Land (and add to Demo data)</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:38:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:56:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="64">
+		<LastChanged>2006-08-20T05:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Add manual land cost to demo</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:38:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="65">
+		<LastChanged>2006-08-20T05:55:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Default amount to 1.0 on manual land cost entry</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:46:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:55:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="66">
+		<LastChanged>2006-08-20T05:56:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rental car pricing does not work</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:46:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:56:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="67">
+		<LastChanged>2006-08-20T05:56:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Transportation - set manual inventory</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-20T01:57:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-08-20T05:56:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="68">
+		<LastChanged>2008-10-30T15:48:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[Allow changes to table record (send to server, server should listen
+and update cache)]]></Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>5</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-23T02:11:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:48:17</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="69">
+		<LastChanged>2008-10-25T04:42:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Change BaseScreen.restoreProductParam to restoreScreenRecordParam</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-08-25T06:13:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-25T04:42:12</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="70">
+		<LastChanged>2007-01-24T00:42:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Booking Detail Status Summary = Order Pending also</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-09-22T01:26:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2007-01-24T00:42:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="71">
+		<LastChanged>2006-11-24T14:14:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>If there is no current booking, don't display all the (pax) detail</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>5</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2006-11-24T14:13:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2006-11-24T14:14:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="72">
+		<LastChanged>2008-10-31T03:37:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Change color of disabled items in grid screen (darker)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-01-15T11:40:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-31T03:37:19</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="73">
+		<LastChanged>2008-12-09T00:12:33</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Thin record update message for grid and screen</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-01-18T14:28:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-12-09T00:12:33</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="75">
+		<LastChanged>2008-12-09T00:12:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Invalid A/P Record write - see detail</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-01-21T03:39:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-12-09T00:12:50</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="76">
+		<LastChanged>2008-10-30T15:55:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Move long booking operations to server tasks - see comments</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-01-24T00:37:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:55:16</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="77">
+		<LastChanged>2010-03-18T16:18:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>If a message task throws an exception, the message server stops - see notes</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>80</IssueSequence>
+		<EnteredDate>2007-01-27T23:55:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:18:41</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="78">
+		<LastChanged>2008-10-25T04:38:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Sometimes the history gets goofed (can't go back)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-01-28T01:01:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-25T04:38:16</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="79">
+		<LastChanged>2007-02-05T02:58:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Why does UpdateTourStatusHandler/103 get executed while purging BookingDetail?</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-02-02T05:56:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2007-02-05T02:58:00</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="80">
+		<LastChanged>2008-10-30T15:57:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Need to be able to orgainze bookings in folders</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-04-01T04:27:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:57:34</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="81">
+		<LastChanged>2008-10-30T15:57:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Need to do a design study for multi-threaded code (ie., gridtable)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>1</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-04-03T00:38:00</EnteredDate>
+		<EnteredByUserID>1</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:57:58</ChangedDate>
+		<ChangedByUserID>1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="82">
+		<LastChanged>2009-09-24T23:57:40</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Don't send password in cleartext in javascript</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-05-03T14:54:00</EnteredDate>
+		<EnteredByUserID>-1</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:57:40</ChangedDate>
+		<ChangedByUserID>-1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="83">
+		<LastChanged>2010-03-18T16:48:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix javascript timeout problem - see notes</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>90</IssueSequence>
+		<EnteredDate>2007-05-07T02:03:00</EnteredDate>
+		<EnteredByUserID>-1</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:19</ChangedDate>
+		<ChangedByUserID>-1</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="84">
+		<LastChanged>2010-05-19T14:46:44</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[Fix authentication token generation
+and verification MainApplication/139
+and pass auth to java]]></Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>22</IssueSequence>
+		<EnteredDate>2007-06-01T04:10:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:46:44</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="85">
+		<LastChanged>2007-06-22T00:58:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Thin logon - Test login, add save muffin</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-06-21T21:22:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2007-06-22T00:58:00</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="86">
+		<LastChanged>2008-10-30T15:49:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>After logging on always display the user menu (webstart, javascript)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-09-14T05:00:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:49:53</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="87">
+		<LastChanged>2008-10-30T15:54:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix XMLFilter/getStream to stream xml to coocon rather to a string</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-09-23T04:14:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:54:04</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="88">
+		<LastChanged>2007-10-01T13:12:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[Make submit button the default button on logon dialog
+For java and js (also change js dialog title)]]></Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2007-09-29T03:22:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2007-10-01T13:12:00</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="89">
+		<LastChanged>2008-10-30T15:50:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[Don't allow an application to free a running task
+(see AutoTask/isMainTaskCandidate and Application.free)]]></Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-02-16T16:01:24</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:50:35</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="90">
+		<LastChanged>2008-10-30T15:59:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Will RecordChangedHandler work if it is accidentily disabled</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>4</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>6</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-04-15T12:28:19</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:59:30</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="91">
+		<LastChanged>2008-10-31T11:07:47</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix grid filter - Don't display new records that don't match filter</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-04-16T12:43:49</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-31T11:07:47</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="92">
+		<LastChanged>2008-10-25T17:51:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Can't change hotel date in grid</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-05-23T08:56:42</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-25T17:51:10</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="93">
+		<LastChanged>2008-10-31T03:37:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Change to Nimbus look and feel</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>7</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-05-23T08:57:06</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-31T03:37:29</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="94">
+		<LastChanged>2008-10-30T15:47:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>No such object in table on close?</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-05-23T08:57:15</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:47:27</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="95">
+		<LastChanged>2008-10-26T12:07:25</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Send - "Reply Ignored" ? on Hotel Info Lookup</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>4</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-05-23T08:57:39</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-26T12:07:25</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="96">
+		<LastChanged>2008-10-30T15:47:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Synchronize message stack (see BaseMessageReceiver/232)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-06-01T14:13:25</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:47:36</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="97">
+		<LastChanged>2008-10-30T16:00:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Pretty print all XML before sending</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>3</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-06-03T23:39:06</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T16:00:55</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="98">
+		<LastChanged>2008-10-29T08:21:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix browser redirect for Google Chrome (Redirect Servlet)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-09-11T15:07:16</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-29T08:21:52</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="99">
+		<LastChanged>2008-10-30T15:49:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Clean up tourstudio package structure - see detail</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>5</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-09-14T04:28:46</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-30T15:49:14</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="100">
+		<LastChanged>2008-10-25T04:32:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Change value in grid and then click form button doesn't take changes</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-09-17T21:51:04</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-25T04:32:51</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="101">
+		<LastChanged>2008-10-26T11:48:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Make sure read-only tables can't be changed</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-09-17T21:51:42</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-26T11:48:48</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="102">
+		<LastChanged>2008-10-25T06:09:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Change data in properties grid (expecially change key)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-10-18T10:51:04</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-25T06:09:09</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="103">
+		<LastChanged>2008-10-23T12:57:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Resize screen on new screen</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-10-23T00:07:32</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-23T12:57:54</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="104">
+		<LastChanged>2008-10-28T11:32:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Javascript launch jnlp does not work</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-10-25T04:34:15</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-10-28T11:32:29</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="105">
+		<LastChanged>2010-05-19T14:47:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Test All Code + Enter new Test/Demo/Initial data/site</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>20</IssueSequence>
+		<EnteredDate>2008-10-25T04:34:35</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:47:34</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="106">
+		<LastChanged>2008-12-18T15:10:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix Javascript/DOJO problems - see detail</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-11-06T11:44:07</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-12-18T15:10:48</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="107">
+		<LastChanged>2008-12-09T00:10:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>user, password in uppercase on sign-on screen</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-11-06T11:45:22</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-12-09T00:10:59</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="108">
+		<LastChanged>2008-12-09T00:26:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Initial gridscreen needs to be bigger (height)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-11-13T02:00:15</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2008-12-09T00:26:34</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="109">
+		<LastChanged>2010-03-18T16:48:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>CPU goes to 100% at the server</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>80</IssueSequence>
+		<EnteredDate>2008-12-09T00:13:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:17</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="110">
+		<LastChanged>2010-07-15T07:52:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Clear user properties on Log off (javascript)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>2</IssueSequence>
+		<EnteredDate>2008-12-18T15:10:55</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-07-15T07:52:58</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="111">
+		<LastChanged>2009-09-24T23:58:25</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix layout manager to use full screen on Applet (left line moves)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2008-12-18T15:12:03</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:58:25</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="112">
+		<LastChanged>2009-09-24T23:54:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Html home -&gt; tour/tourstudio (messes up tourstudioxml)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-01-25T22:42:26</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:54:46</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="113">
+		<LastChanged>2010-03-16T05:24:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Ctrl v (down arrow - next rec) does not validate current field</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-01-25T22:43:04</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-16T05:24:11</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="114">
+		<LastChanged>2009-07-16T23:16:13</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Net tables do not work in WebStart applets</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-01-25T22:43:35</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-07-16T23:16:13</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="115">
+		<LastChanged>2009-07-16T23:15:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Thin menus do not work</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-01-26T02:21:13</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-07-16T23:15:53</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="116">
+		<LastChanged>2010-05-11T06:23:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Layout on Thin booking entry stretches menu bar (try drag-resize)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>40</IssueSequence>
+		<EnteredDate>2009-04-07T11:09:39</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-11T06:23:19</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="117">
+		<LastChanged>2010-03-18T16:48:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Too may connections error after start,stop,repeat</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>140</IssueSequence>
+		<EnteredDate>2009-04-09T03:47:08</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:26</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="118">
+		<LastChanged>2009-07-16T23:17:55</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hang on Help sometimes</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>8</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-04-09T03:47:29</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-07-16T23:17:55</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="119">
+		<LastChanged>2009-09-24T23:59:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>On applet shutdown I get an error at PrivateTaskScheduler/175</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-04-11T11:38:27</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:59:05</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="120">
+		<LastChanged>2009-09-24T23:58:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hang app while help screen is displaying (do in another thread?)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-04-11T11:39:14</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:58:41</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="121">
+		<LastChanged>2010-03-17T07:58:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Profile passenger detail - Change the (parent profile) field display to the field name</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>5</IssueSequence>
+		<EnteredDate>2009-01-14T13:58:23</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-17T07:58:42</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="122">
+		<LastChanged>2009-07-16T23:17:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Encrypt the email password in MessageTransport properties</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-06-04T11:20:29</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-07-16T23:17:01</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="123">
+		<LastChanged>2010-05-19T14:48:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>When entering land that has variable pricing, enter the variable</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>4</IssueSequence>
+		<EnteredDate>2009-07-16T21:55:11</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:48:02</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="124">
+		<LastChanged>2010-03-18T16:48:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>App slows to a crawl (on garbage collection?)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>60</IssueSequence>
+		<EnteredDate>2009-07-16T23:18:03</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:14</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="125">
+		<LastChanged>2009-09-30T13:20:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Thick calendar screen is painfully slow (cache BookingDetail)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-10T02:57:31</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-30T13:20:41</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="126">
+		<LastChanged>2009-09-30T13:20:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Itinerary screen has an access error</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-10T02:58:12</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-30T13:20:53</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="127">
+		<LastChanged>2009-09-24T23:54:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>HTML Applet screen - Home = exit, Back = java back</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-10T02:58:25</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:54:17</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="128">
+		<LastChanged>2009-09-24T23:55:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Java web locks up (add timer)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-10T02:58:54</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-24T23:55:04</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="129">
+		<LastChanged>2009-09-30T13:21:03</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Java sign-in screen layout is bad</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-10T02:59:09</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-30T13:21:03</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="130">
+		<LastChanged>2009-09-30T13:21:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Keep html pipe open to speed things up</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>6</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-10T02:59:24</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-30T13:21:16</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="131">
+		<LastChanged>2009-09-25T06:13:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Display wait cursor on help display</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-24T23:55:55</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-25T06:13:07</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="132">
+		<LastChanged>2009-09-25T06:12:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Add web site to wsdl file</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-24T23:56:18</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-25T06:12:31</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="133">
+		<LastChanged>2009-09-25T06:12:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Modules - number of nights = length (not days)</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2009-09-24T23:56:36</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2009-09-25T06:12:46</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="134">
+		<LastChanged>2010-03-18T16:48:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Add tourgeek logo everywhere</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>50</IssueSequence>
+		<EnteredDate>2009-09-30T13:21:32</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:12</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="135">
+		<LastChanged>2010-05-19T14:48:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Finish demo web site</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>10</IssueSequence>
+		<EnteredDate>2009-10-24T03:52:27</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:48:12</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="136">
+		<LastChanged>2010-05-19T14:48:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Booking display - fix order by</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>5</IssueSequence>
+		<EnteredDate>2009-10-24T03:53:20</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:48:05</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="137">
+		<LastChanged>2010-03-18T00:37:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>If itinerary is bad, screen just displays "please wait"</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>45</IssueSequence>
+		<EnteredDate>2010-02-03T19:59:35</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T00:37:26</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="138">
+		<LastChanged>2010-05-19T14:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description><![CDATA[Hyatt upgrade - Inv/manual, Rate/bk webserver. If product change,
+use the defaults]]></Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>3</IssueSequence>
+		<EnteredDate>2010-02-03T20:00:01</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:48:00</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="139">
+		<LastChanged>2010-05-14T03:58:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix - Land error on payment - null - msg not found</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>10</IssueSequence>
+		<EnteredDate>2010-02-03T20:01:00</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-14T03:58:15</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="140">
+		<LastChanged>2010-05-19T15:53:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Add YouTube video demo to demo site</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>1</IssueSequence>
+		<EnteredDate>2010-02-03T20:01:29</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T15:53:48</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="141">
+		<LastChanged>2010-03-17T08:10:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Grid writes a blank record - see ClassProject</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>10</IssueSequence>
+		<EnteredDate>2010-02-05T02:28:25</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-17T08:10:20</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="142">
+		<LastChanged>2010-03-18T16:48:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Sign all jars on deploy (jnlp and osgi) See biorhythm</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>130</IssueSequence>
+		<EnteredDate>2010-02-10T02:08:20</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:24</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="143">
+		<LastChanged>2010-03-18T16:48:23</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Need ssl certificate</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>120</IssueSequence>
+		<EnteredDate>2010-02-10T02:08:49</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T16:48:23</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="144">
+		<LastChanged>2010-03-17T14:45:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Make default font larger</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>20</IssueSequence>
+		<EnteredDate>2010-02-20T06:58:12</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-17T14:45:21</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="145">
+		<LastChanged>2010-03-18T00:37:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>A million receive/send processes are spawned  - see ScanLis vs non Jdbc</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>40</IssueSequence>
+		<EnteredDate>2010-02-23T10:00:25</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T00:37:16</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="146">
+		<LastChanged>2010-03-17T08:10:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>New folder = 0 parent (NOT NULL!)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>15</IssueSequence>
+		<EnteredDate>2010-02-23T10:01:22</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-17T08:10:41</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="147">
+		<LastChanged>2010-03-14T08:53:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix bundle not found on edit -&gt; screen preferences</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2010-03-04T04:15:54</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-14T08:53:48</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="148">
+		<LastChanged>2010-03-16T04:55:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Figure out how to do dependencies - see payroll/pom.xml</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2010-03-05T02:47:59</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-16T04:55:48</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="149">
+		<LastChanged>2010-05-19T14:46:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix request generation for cross product order - see vendor</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>15</IssueSequence>
+		<EnteredDate>2010-03-05T02:48:35</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:46:57</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="150">
+		<LastChanged>2010-03-18T10:32:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Itinerary -&gt; Click on (html) detail does not display detail.</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>2</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>50</IssueSequence>
+		<EnteredDate>2010-03-15T15:43:39</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-18T10:32:49</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="151">
+		<LastChanged>2010-03-17T07:09:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Profile detail display - Fix other detail displays</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>2</IssueSequence>
+		<EnteredDate>2010-03-16T10:01:07</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-03-17T07:09:53</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="152">
+		<LastChanged>2010-05-19T14:47:03</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix POM problems - see detail</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>11</IssueSequence>
+		<EnteredDate>2010-03-27T13:37:30</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:47:03</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="153">
+		<LastChanged>2010-05-19T14:47:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Add property listener to model</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>12</IssueSequence>
+		<EnteredDate>2010-04-28T15:55:41</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:47:01</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="154">
+		<LastChanged>2010-05-19T14:47:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Can I move thin screen to independent project</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>13</IssueSequence>
+		<EnteredDate>2010-04-28T15:55:55</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:47:00</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="155">
+		<LastChanged>2010-05-19T14:46:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Messages get stuck under maven</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>14</IssueSequence>
+		<EnteredDate>2010-04-28T15:56:20</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-19T14:46:59</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="156">
+		<LastChanged>2010-05-11T06:15:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Concurrency issue when doing initial load</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>3</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>20</IssueSequence>
+		<EnteredDate>2010-05-07T13:00:31</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-11T06:15:32</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="157">
+		<LastChanged>2010-05-17T04:54:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Popup does not disappear on calendar</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>20</IssueSequence>
+		<EnteredDate>2010-05-11T06:16:31</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-17T04:54:01</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="158">
+		<LastChanged>2010-05-17T04:54:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Don't use DragNDrop on webstart calendar</Description>
+		<ProjectID>6</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>5</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>1</IssuePriorityID>
+		<IssueSequence>30</IssueSequence>
+		<EnteredDate>2010-05-11T06:16:54</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-17T04:54:30</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="159">
+		<LastChanged>2010-05-21T11:21:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Don't write a new record for Language db (see detail)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>75</IssueSequence>
+		<EnteredDate>2010-05-21T11:19:44</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-05-21T11:21:12</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="160">
+		<LastChanged>2010-06-03T00:15:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Convert to OSGi - See detail</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>10</IssueSequence>
+		<EnteredDate>2010-06-03T00:14:39</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-06-03T00:15:04</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="161">
+		<LastChanged>2010-06-11T04:10:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Fix 1 column xsl display on demo so it always displays 1 column</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>200</IssueSequence>
+		<EnteredDate>2010-06-11T04:09:24</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-06-11T04:10:35</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="162">
+		<LastChanged>2010-06-20T06:25:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Get rid of Cocoon - see web.xml ServletFilters (xslt)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence>85</IssueSequence>
+		<EnteredDate>2010-06-20T06:24:21</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-06-20T06:25:05</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+	<Issue ID="163">
+		<LastChanged>2010-12-06T05:05:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Get rid of main db duplicates (Menus, messages, etc)</Description>
+		<ProjectID>17</ProjectID>
+		<ProjectVersionID>1</ProjectVersionID>
+		<IssueTypeID>1</IssueTypeID>
+		<IssueStatusID>1</IssueStatusID>
+		<AssignedUserID>11</AssignedUserID>
+		<IssuePriorityID>2</IssuePriorityID>
+		<IssueSequence/>
+		<EnteredDate>2010-12-06T05:03:50</EnteredDate>
+		<EnteredByUserID>11</EnteredByUserID>
+		<ChangedDate>2010-12-06T05:05:58</ChangedDate>
+		<ChangedByUserID>11</ChangedByUserID>
+		<ClassInfoID/>
+	</Issue>
+</file>

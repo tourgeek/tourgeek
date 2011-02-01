@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<PaymentCode ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>No auto select</Description>
+		<Code/>
+	</PaymentCode>
+	<PaymentCode ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Weekly</Description>
+		<Code>W</Code>
+	</PaymentCode>
+	<PaymentCode ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Bi-weekly</Description>
+		<Code>B</Code>
+	</PaymentCode>
+</file>

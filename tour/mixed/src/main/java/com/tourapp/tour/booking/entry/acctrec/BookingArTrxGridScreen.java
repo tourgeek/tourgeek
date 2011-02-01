@@ -1,0 +1,194 @@
+/**
+ *  @(#)BookingArTrxGridScreen.
+ *  Copyright © 2010 tourapp.com. All rights reserved.
+ */
+package com.tourapp.tour.booking.entry.acctrec;
+
+import java.awt.*;
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import com.tourapp.tour.booking.entry.base.*;
+import com.tourapp.tour.genled.db.*;
+import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.acctrec.db.*;
+
+/**
+ *  BookingArTrxGridScreen - A/R Open File.
+ */
+public class BookingArTrxGridScreen extends BookingSubGridScreen
+{
+    /**
+     * Default constructor.
+     */
+    public BookingArTrxGridScreen()
+    {
+        super();
+    }
+    /**
+     * Constructor.
+     * @param record The main record for this screen.
+     * @param itsLocation The location of this component within the parent.
+     * @param parentScreen The parent screen.
+     * @param fieldConverter The field this screen field is linked to.
+     * @param iDisplayFieldDesc Do I display the field desc?.
+     */
+    public BookingArTrxGridScreen(Record record, ScreenLocation itsLocation, BasePanel parentScreen, Converter fieldConverter, int iDisplayFieldDesc, Map<String,Object> properties)
+    {
+        this();
+        this.init(record, itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, properties);
+    }
+    /**
+     * Constructor.
+     * @param record The main record for this screen.
+     * @param itsLocation The location of this component within the parent.
+     * @param parentScreen The parent screen.
+     * @param fieldConverter The field this screen field is linked to.
+     * @param iDisplayFieldDesc Do I display the field desc?.
+     */
+    public void init(Record record, ScreenLocation itsLocation, BasePanel parentScreen, Converter fieldConverter, int iDisplayFieldDesc, Map<String,Object> properties)
+    {
+        parentScreen.setProperty(BookingScreenHandler.SUB_SCREEN_PARAM, Integer.toString(BookingScreenHandler.AR_TRX_SCREEN));
+        super.init(record, itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, properties);
+    }
+    /**
+     * Get the screen display title.
+     */
+    public String getTitle()
+    {
+        return "A/R Open File";
+    }
+    /**
+     * Override this to open the main file.
+     * <p />You should pass this record owner to the new main file (ie., new MyNewTable(thisRecordOwner)).
+     * @return The new record.
+     */
+    public Record openMainRecord()
+    {
+        if (this.getRecord(ArTrx.kArTrxFile) != null)
+            return this.getRecord(ArTrx.kArTrxFile);
+        return new ArTrx(this);
+    }
+    /**
+     * Add all the screen listeners.
+     */
+    public void addListeners()
+    {
+        super.addListeners();        
+        
+        this.setAppending(false);
+        this.setEditing(false);
+        this.getMainRecord().setSelected(true); // Need all selected to do source command.
+        
+        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.kArTrxFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
+        recBooking.addArDetail(recArTrx, null, false);
+    }
+    /**
+     * Add the toolbars that belong with this screen.
+     * @return The new toolbar.
+     */
+    public ToolScreen addToolbars()
+    {
+        ToolScreen toolbar = super.addToolbars();
+        
+        ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        BaseField converter = null;
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kGross);
+        ScreenField sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kStdCommission);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kNet);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kDeposit);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kDepositDueDate);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kFinalPaymentDueDate);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kBalance);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        
+        return toolbar;
+    }
+    /**
+     * Add button(s) to the toolbar.
+     */
+    public void addToolbarButtons(ToolScreen toolScreen)
+    {
+        BaseApplication application = (BaseApplication)this.getTask().getApplication();
+        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(LinkTrx.SOURCE), LinkTrx.SOURCE, LinkTrx.SOURCE, null);
+        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(AcctDetailDist.DIST_DISTRIBUTION), AcctDetailDist.DIST_DISTRIBUTION, AcctDetailDist.DIST_DISTRIBUTION, null);
+    }
+    /**
+     * Add the navigation button(s) to the left of the grid row.
+     */
+    public void addNavButtons()
+    {
+        BaseApplication application = (BaseApplication)this.getTask().getApplication();
+        new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, AcctDetailDist.DIST_DISTRIBUTION, AcctDetailDist.DIST_DISTRIBUTION, application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(AcctDetailDist.DIST_DISTRIBUTION));
+        new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, LinkTrx.SOURCE, LinkTrx.SOURCE, application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(LinkTrx.SOURCE));
+        super.addNavButtons();  // Next buttons will be "First!"
+    }
+    /**
+     * SetupSFields Method.
+     */
+    public void setupSFields()
+    {
+        this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kComments).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+    }
+    /**
+     * Process the command.
+     * <br />Step 1 - Process the command if possible and return true if processed.
+     * <br />Step 2 - If I can't process, pass to all children (with me as the source).
+     * <br />Step 3 - If children didn't process, pass to parent (with me as the source).
+     * <br />Note: Never pass to a parent or child that matches the source (to avoid an endless loop).
+     * @param strCommand The command to process.
+     * @param sourceSField The source screen field (to avoid echos).
+     * @param iCommandOptions If this command creates a new screen, create in a new window?
+     * @return true if success.
+     */
+    public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
+    {
+        if (LinkTrx.SOURCE.equalsIgnoreCase(strCommand))
+        {
+            try   {
+                int iSelection = this.getScreenFieldView().getSelectedRow();
+                if (iSelection != -1)
+                {
+                    this.finalizeThisScreen();  // Validate current control, update record, get ready to close screen.
+                    LinkTrx recAtTarget = (LinkTrx)((GridTable)this.getMainRecord().getTable()).get(iSelection);
+                    if (recAtTarget != null)
+                        strCommand = recAtTarget.getSourceCommand();
+                }
+            } catch (DBException ex)    {
+                ex.printStackTrace();
+            }
+        }
+        return super.doCommand(strCommand, sourceSField, iCommandOptions);
+    }
+
+}

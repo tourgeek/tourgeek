@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<BankAcct ID="1">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank A - Trust Account</Description>
+		<CurrencyID>840</CurrencyID>
+		<EFTRouting/>
+		<BankABA>16-339</BankABA>
+		<BankAcctNo>23-23232-70</BankAcctNo>
+		<AccountID>1</AccountID>
+		<NextCheck>1</NextCheck>
+		<Balance/>
+	</BankAcct>
+	<BankAcct ID="2">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank A - Operating Account</Description>
+		<CurrencyID>840</CurrencyID>
+		<EFTRouting/>
+		<BankABA>16-339</BankABA>
+		<BankAcctNo>112-232327-70</BankAcctNo>
+		<AccountID>2</AccountID>
+		<NextCheck>9,055</NextCheck>
+		<Balance/>
+	</BankAcct>
+	<BankAcct ID="3">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank B - USD Account</Description>
+		<CurrencyID>840</CurrencyID>
+		<EFTRouting/>
+		<BankABA>16-339</BankABA>
+		<BankAcctNo>4343-34334</BankAcctNo>
+		<AccountID>3</AccountID>
+		<NextCheck>123</NextCheck>
+		<Balance/>
+	</BankAcct>
+	<BankAcct ID="4">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank A - Money Markey Account</Description>
+		<CurrencyID>840</CurrencyID>
+		<EFTRouting/>
+		<BankABA>14-221</BankABA>
+		<BankAcctNo>343-433442-2</BankAcctNo>
+		<AccountID>5</AccountID>
+		<NextCheck>1</NextCheck>
+		<Balance/>
+	</BankAcct>
+	<BankAcct ID="5">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank B - Money Markey EURO</Description>
+		<CurrencyID>978</CurrencyID>
+		<EFTRouting/>
+		<BankABA>3843432</BankABA>
+		<BankAcctNo>232-232228</BankAcctNo>
+		<AccountID>110</AccountID>
+		<NextCheck>0</NextCheck>
+		<Balance/>
+	</BankAcct>
+	<BankAcct ID="6">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank A - Yen Account</Description>
+		<CurrencyID>392</CurrencyID>
+		<EFTRouting/>
+		<BankABA>16-339</BankABA>
+		<BankAcctNo>4343-34334229</BankAcctNo>
+		<AccountID>115</AccountID>
+		<NextCheck>1,254</NextCheck>
+		<Balance/>
+	</BankAcct>
+	<BankAcct ID="7">
+		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bank B - HKD Account</Description>
+		<CurrencyID>344</CurrencyID>
+		<EFTRouting/>
+		<BankABA>16-339</BankABA>
+		<BankAcctNo>4343-34334</BankAcctNo>
+		<AccountID>116</AccountID>
+		<NextCheck>342</NextCheck>
+		<Balance/>
+	</BankAcct>
+</file>

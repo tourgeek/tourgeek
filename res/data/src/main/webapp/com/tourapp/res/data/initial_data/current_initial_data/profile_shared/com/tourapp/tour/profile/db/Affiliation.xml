@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Affiliation ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Code>A6</Code>
+		<Description>Action 6</Description>
+		<AgentComm>0.1000</AgentComm>
+		<AffiliationComm>0.0500</AffiliationComm>
+		<VendorID>2</VendorID>
+	</Affiliation>
+	<Affiliation ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Code>BETA</Code>
+		<Description>Beta Group</Description>
+		<AgentComm>0.1200</AgentComm>
+		<AffiliationComm>0.0200</AffiliationComm>
+		<VendorID>39</VendorID>
+	</Affiliation>
+	<Affiliation ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Code>GNTS</Code>
+		<Description>Giants</Description>
+		<AgentComm>0.1400</AgentComm>
+		<AffiliationComm>0.0100</AffiliationComm>
+		<VendorID>1</VendorID>
+	</Affiliation>
+	<Affiliation ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Code>AAA</Code>
+		<Description>Auto Club</Description>
+		<AgentComm>0.1200</AgentComm>
+		<AffiliationComm>0.0300</AffiliationComm>
+		<VendorID>43</VendorID>
+	</Affiliation>
+</file>

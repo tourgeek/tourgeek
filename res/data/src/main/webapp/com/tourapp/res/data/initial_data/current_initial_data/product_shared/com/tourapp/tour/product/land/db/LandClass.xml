@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<LandClass ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Seat in coach</Description>
+		<Code>SIC</Code>
+	</LandClass>
+	<LandClass ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Private car/coach</Description>
+		<Code>PMC</Code>
+	</LandClass>
+</file>

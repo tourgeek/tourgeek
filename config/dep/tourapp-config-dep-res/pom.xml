@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-config-dep-reactor</artifactId>
+    <groupId>com.tourapp.config</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>tourapp-config-dep-res</artifactId>
+  <name>tourapp-config-dep-res - Resource dependencies</name>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.acctpay</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.acctrec</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.app</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.assetdr</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.booking</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.genled</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.payroll</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.product</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.profile</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.tour.request</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  
+</project>

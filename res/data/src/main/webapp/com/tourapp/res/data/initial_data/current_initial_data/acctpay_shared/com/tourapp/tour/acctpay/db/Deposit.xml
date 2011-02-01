@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Deposit ID="1">
+		<LastChanged>2007-02-02T01:36:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>No deposit reqd</Description>
+		<DepositType/>
+		<Quantity/>
+	</Deposit>
+	<Deposit ID="2">
+		<LastChanged>2007-02-02T01:36:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>10% deposit</Description>
+		<DepositType>P</DepositType>
+		<Quantity>10.00</Quantity>
+	</Deposit>
+	<Deposit ID="3">
+		<LastChanged>2007-02-02T01:36:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>20% deposit</Description>
+		<DepositType>P</DepositType>
+		<Quantity>20.00</Quantity>
+	</Deposit>
+	<Deposit ID="4">
+		<LastChanged>2007-02-02T01:35:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>50% deposit</Description>
+		<DepositType>P</DepositType>
+		<Quantity>50.00</Quantity>
+	</Deposit>
+	<Deposit ID="5">
+		<LastChanged>2007-02-02T01:35:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>$100 deposit</Description>
+		<DepositType>A</DepositType>
+		<Quantity>100.00</Quantity>
+	</Deposit>
+	<Deposit ID="6">
+		<LastChanged>2007-02-02T01:35:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>$200 deposit</Description>
+		<DepositType>A</DepositType>
+		<Quantity>200.00</Quantity>
+	</Deposit>
+	<Deposit ID="7">
+		<LastChanged>2007-02-02T01:35:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>One night deposit</Description>
+		<DepositType>N</DepositType>
+		<Quantity>1.00</Quantity>
+	</Deposit>
+	<Deposit ID="8">
+		<LastChanged>2007-02-02T01:35:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Full payment reqd</Description>
+		<DepositType>F</DepositType>
+		<Quantity/>
+	</Deposit>
+</file>

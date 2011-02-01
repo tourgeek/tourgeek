@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<HotelChain ID="1">
+		<LastChanged>2008-11-17T09:55:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hyatt</Description>
+		<Code/>
+	</HotelChain>
+	<HotelChain ID="2">
+		<LastChanged>2008-11-17T09:55:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Holiday Inn</Description>
+		<Code/>
+	</HotelChain>
+	<HotelChain ID="3">
+		<LastChanged>2008-11-17T09:56:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hilton</Description>
+		<Code/>
+	</HotelChain>
+</file>

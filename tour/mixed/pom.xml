@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+  	<groupId>com.tourapp.tour</groupId>
+  	<artifactId>tourapp-tour-reactor</artifactId>
+  	<version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <!-- ******************************************************************************************
+        NOTE: Do NOT create a dependency to this project. It is only a holder for the source files.
+  		The actual bundles are in the respective projects (tourapp-tour-booking, etc.)
+  	   ****************************************************************************************** -->
+  <groupId>com.tourapp.tour</groupId>
+  <artifactId>tourapp-tour-mixed</artifactId>
+  <name>tourapp-tour-mixed - Tour application code</name>
+  <description>Tour application code</description>
+  <packaging>jar</packaging>	<!-- This is NOT an OSGi bundle -->
+
+  <dependencies>
+    <dependency>
+      <groupId>com.tourapp.thin.app</groupId>
+      <artifactId>com.tourapp.thin.app.booking</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+  
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.genled</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.profile</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.assetdr</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.base</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+	  <groupId>org.jbundle.config.dep</groupId>
+	  <artifactId>jbundle-config-dep-base</artifactId>
+	  <version>${jbundleVersion}</version>
+	  <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jbundle.app.program</groupId>
+      <artifactId>org.jbundle.app.program</artifactId>	<!-- Get rid of this dependency -->
+      <version>${jbundleVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.base.screen</groupId>
+      <artifactId>org.jbundle.base.screen.view.html</artifactId>   <!-- Get rid of this dependency -->
+      <version>${jbundleVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.base.screen</groupId>
+      <artifactId>org.jbundle.base.screen.view.swing</artifactId>   <!-- Get rid of this dependency -->
+      <version>${jbundleVersion}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.jbundle.util.wsdl</groupId>
+      <artifactId>org.jbundle.util.wsdl.currencyconverter</artifactId>
+      <version>${jbundle-util-wsdlVersion}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>jtidy</groupId>
+      <artifactId>jtidy</artifactId>
+      <version>${jtidyVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${servlet-apiVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+</project>

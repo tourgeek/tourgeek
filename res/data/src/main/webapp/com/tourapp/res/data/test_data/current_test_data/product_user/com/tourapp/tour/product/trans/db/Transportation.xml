@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Transportation ID="1">
+		<LastChanged>2010-04-02T16:01:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bullet Train Tokyo - Osaka</Description>
+		<Code/>
+		<VendorID>38</VendorID>
+		<OperatorsCode>BTTYOOSA2</OperatorsCode>
+		<ProductChainID/>
+		<CityID>842</CityID>
+		<Etd>13:00:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc/>
+		<DescSort>BULLET TRA</DescSort>
+		<ProductType>Transportation</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<CityCode>NRT</CityCode>
+		<ToCityID>837</ToCityID>
+		<ToCityCode>ITM</ToCityCode>
+		<TransReverseID>2</TransReverseID>
+		<ManualFile/>
+		<Frequency>Hourly</Frequency>
+		<Distance>200km</Distance>
+		<Hours>2</Hours>
+		<Breakfasts/>
+		<Lunches/>
+		<Dinners/>
+		<DaysOfWeek/>
+		<DiscontinuedOn/>
+	</Transportation>
+	<Transportation ID="2">
+		<LastChanged>2010-04-02T16:01:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Bullet Train Osaka - Tokyo</Description>
+		<Code/>
+		<VendorID>38</VendorID>
+		<OperatorsCode>BTOSATYO2</OperatorsCode>
+		<ProductChainID/>
+		<CityID>837</CityID>
+		<Etd>13:00:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc/>
+		<DescSort>BULLET TRA</DescSort>
+		<ProductType>Transportation</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<CityCode>ITM</CityCode>
+		<ToCityID>842</ToCityID>
+		<ToCityCode>NRT</ToCityCode>
+		<TransReverseID>1</TransReverseID>
+		<ManualFile/>
+		<Frequency>Hourly</Frequency>
+		<Distance>200km</Distance>
+		<Hours>2</Hours>
+		<Breakfasts/>
+		<Lunches/>
+		<Dinners/>
+		<DaysOfWeek/>
+		<DiscontinuedOn/>
+	</Transportation>
+</file>

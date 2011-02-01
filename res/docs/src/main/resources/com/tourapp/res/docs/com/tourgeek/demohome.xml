@@ -1,0 +1,35 @@
+<HELP>
+<html>
+<a href="http://www.tourgeek.com">
+<img border="0" src="images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
+<img border="0" src="images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
+<span style="font-size: large; font-style: bold">
+My Demo Site - Main Portal Screen<br />
+</span>
+<span style="font-size: small; font-style: bold; color: red;">
+Note: This is a test site. For demonstration purposes only!<br />
+</span>
+<hr />
+<span style="font-size: 12pt">
+Welcome to the {domain} main portal page!<p />
+
+To display user specific sites, click on one of these links:<p />
+
+<ul>
+<li><a href="http://www.{domain}">www.{domain}</a> - Main web page<br/>
+It is easy to integrate your current web site with the tourgeek.com system.</li>
+<li><a href="http://home.{domain}">home.{domain}</a> - Employee portal<br/>
+All of your business functions are on-line.</li>
+<li><a href="http://vendor.{domain}">vendor.{domain}</a> - Vendor portal<br/>
+Give your suppliers the information they need to serve your customers.</li>
+<li><a href="?help=" onClick="if (tourapp) {return tourapp.util.handleLink(this);} else {return true;}">system specifications</a>
+ - Help and System specifications.<br/>
+ You can also click on the help button for screen specific help.</li>
+</ul>
+
+To start the tourgeek.com applications, click on one of these test accounts:<br />
+</span>
+<span style="font-size: 8pt">- Use the same password you entered for your account.</span><br/>
+<span style="font-size: 8pt">- There will be a short delay the first time you use these programs as the code is downloaded.</span><br/>
+</html>
+</HELP>

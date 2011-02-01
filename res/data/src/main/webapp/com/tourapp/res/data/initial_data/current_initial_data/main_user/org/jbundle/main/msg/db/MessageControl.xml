@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MessageControl ID="1">
+		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<WebServicesServer>/ws</WebServicesServer>
+		<DefaultVersionID>19</DefaultVersionID>
+		<BaseNamespace>http://www.opentravel.org/OTA/2003/05</BaseNamespace>
+		<BaseSchemaLocation>http://www.opentravel.org/</BaseSchemaLocation>
+		<WebMessageTransportID>11</WebMessageTransportID>
+	</MessageControl>
+</file>

@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MessageTransportInfo ID="1">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+formReply=hotelratereplyform
+subject=Hotel rate request
+XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+emailReply=hotelratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="2">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[emailReply=hotelratereply
+formReply=hotelratereplyform
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="4">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="5">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="6">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>2</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="7">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>3</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>N</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="8">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>4</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="9">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[formReply=hotelratereplyform
+emailReply=hotelratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="10">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+formReply=hotelratereplyform
+subject=Hotel rate request
+XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+emailReply=hotelratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="11">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="13">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="14">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>6</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="15">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>7</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="16">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+subject=Hotel inventory request
+formReply=hotelinvreplyform
+XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
+emailReply=hotelinvreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="17">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[formReply=hotelinventoryreplyform
+emailReply=hotelinventoryreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="18">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelAvailRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="19">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[messageInCode=OTA_HotelAvailRQRQ
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="20">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="21">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>9</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>N</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelAvailResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="22">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>10</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelAvailResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="23">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>11</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="24">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
+subject=Hotel booking request
+formReply=hotelbookingreplyform
+XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
+emailReply=hotelbookingreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="25">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[formReply=hotelratereplyform
+emailReply=hotelratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="26">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="28">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>12</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="29">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>13</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="30">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>14</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="31">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>15</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="32">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>16</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="33">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>20</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[formReply=landinventoryreplyform
+emailReply=landinventoryreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="34">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>20</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.land.screen.LandAvailResponseScreen
+subject=Land inventory request
+formReply=landInvreplyform
+XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
+emailReply=landinvreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="35">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>20</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.out.LandAvailRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="37">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>20</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.product.land.message.screen.LandAvailResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="39">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>21</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.out.LandAvailResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="40">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>22</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.in.LandAvailResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="41">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>23</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="42">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>24</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Tue Sep 26 03:56:15 PDT 2006
+formReply=landratereplyform
+emailReply=landratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="43">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>24</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.land.screen.LandBookingResponseScreen
+formReply=landbookingreplyform
+subject=Land booking request
+XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
+emailReply=landbookingreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="44">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>24</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="46">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>24</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.land.screen.LandRateResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="47">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>25</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="48">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>26</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="49">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>27</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.in.LandRateRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="50">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.land.screen.LandRateResponseScreen
+subject=Land rate request
+formReply=landratereplyform
+XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+emailReply=landratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="51">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[formReply=landratereplyform
+emailReply=landratereply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="52">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.out.LandRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="54">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.land.screen.LandAvailResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="55">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>30</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.in.LandRateResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="56">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>29</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.out.LandRateResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="57">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[subject=Hotel inventory request
+XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="58">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[formReply=hotelinventoryreplyform
+emailReply=hotelinventoryreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="59">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelAvailRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="61">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>31</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="62">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>32</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelAvailResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="63">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>33</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active/>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.out.LandRateRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="64">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>19</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Mar 26 07:49:55 PDT 2010
+jibx.packageName=org.jibx.ota.ping
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
+marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.request.in.PingRequestJibxMessageIn2010A
+jibx.bindingName=ping_binding
+xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.request.in.PingRequestJaxbMessageIn2010A
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="65">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>200</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>13</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>N</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.response.in.PingResponseSOAPMsgReplyIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="66">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>197</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>19</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Mar 26 07:53:03 PDT 2010
+jibx.packageName=org.jibx.ota.ping
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
+marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.request.out.PingRequestJibxMessageOut2010A
+jibx.bindingName=ping_binding
+xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.request.out.PingRequestJaxbMessageOut2010A
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="67">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>13</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>N</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.response.out.PingResponseSOAPMsgReplyOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="68">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>148</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties/>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="69">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.request.in.PingRequestSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="70">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>15</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="71">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>19</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Mar 26 07:56:22 PDT 2010
+jibx.packageName=org.jibx.ota.ping
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
+marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.response.out.PingResponseJibxMessageOut2010A
+jibx.bindingName=ping_binding
+xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.response.out.PingResponseJaxbMessageOut2010A
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="72">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>197</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>13</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.request.out.PingRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="73">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>200</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>19</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Mar 26 07:55:07 PDT 2010
+jibx.packageName=org.jibx.ota.ping
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
+marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.response.in.PingResponseJibxMessageIn2010A
+jibx.bindingName=ping_binding
+xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.response.in.PingResponseJaxbMessageIn2010A
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="74">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>13</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingRequestSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="75">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>197</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequestSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="76">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>200</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResponseSOAPMsgReplyIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="77">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingResponseSOAPMsgReplyOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="78">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>16</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="79">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>18</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="80">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>17</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="81">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>18</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMessageIn2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="82">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>17</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>12</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="83">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="84">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="85">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>2</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="86">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>3</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="87">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>4</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="88">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>6</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="89">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingRequestSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="90">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>197</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequestSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="91">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>200</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResponseSOAPMsgReplyIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="92">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingResponseSOAPMsgReplyOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="93">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>2</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="94">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>1</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="95">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="96">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>3</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="97">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>6</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="98">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>4</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>9</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="99">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>243</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+SOAPAction=http\://www.webserviceX.NET/ConversionRate
+marshallerClass=com.tourapp.tour.assetdr.process.CurrencyRequestSOAPMessageOut
+JAXBPackage=net.webservicex.currencyconverter
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="100">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>244</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.assetdr.process.CurrencyResponseSOAPMessageIn
+JAXBPackage=net.webservicex.currencyconverter
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="101">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>246</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties/>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="102">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>245</MessageProcessInfoID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+subject=Hotel rate and inventory request
+formReply=hotelrateinvreplyform
+XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
+emailReply=hotelrateinvreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="103">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>245</MessageProcessInfoID>
+		<MessageTransportID>6</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Jun 03 16:07:58 PDT 2009
+messageInCode=OTA_HotelRateAvailRQRQ
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="104">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>245</MessageProcessInfoID>
+		<MessageTransportID>9</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="105">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>245</MessageProcessInfoID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Mar 03 14:18:12 PST 2010
+marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateAvailRequestSOAPMessageOut2006A
+jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="106">
+		<LastChanged>2010-04-02T16:00:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>245</MessageProcessInfoID>
+		<MessageTransportID>13</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport/>
+		<Properties><![CDATA[#Field properties
+#Wed Jun 03 16:09:35 PDT 2009
+formReply=hotelrateinventoryreplyform
+emailReply=hotelrateinventoryreply
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="107">
+		<LastChanged>2010-11-05T10:26:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Nov 05 10:26:18 PDT 2010
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="108">
+		<LastChanged>2010-11-05T10:26:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Nov 05 10:26:46 PDT 2010
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="109">
+		<LastChanged>2010-11-05T10:28:56</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Nov 05 10:28:55 PDT 2010
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+]]></Properties>
+	</MessageTransportInfo>
+	<MessageTransportInfo ID="110">
+		<LastChanged>2010-11-05T10:29:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageVersionID>0</MessageVersionID>
+		<Active>Y</Active>
+		<DefaultTransport>Y</DefaultTransport>
+		<Properties><![CDATA[#Field properties
+#Fri Nov 05 10:29:25 PDT 2010
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+]]></Properties>
+	</MessageTransportInfo>
+</file>

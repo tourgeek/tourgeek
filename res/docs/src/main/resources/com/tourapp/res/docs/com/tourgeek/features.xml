@@ -1,0 +1,32 @@
+<HELP>
+<html>
+<a href="http://www.tourgeek.com">
+<img border="0" src="images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
+<img border="0" src="images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
+<span style="font-size: large; font-style: bold">
+The Simple, Powerful, Affordable Tour Operator Software<br />
+</span>
+<b>tourgeek<font color="orange">.</font>com</b> is the easy-to-use web-based Tour Operator solution
+that simplifies the complicated job of tour operation.<br/>
+<p>Functions:</p>
+<ul>
+	<li>Flexible Booking system that can handle any type of tour from groups to FITs</li>
+	<li>Tour Operation system powerful enough to handle those time-consuming tasks</li>
+	<li>Fully integrated accounting</li>
+</ul>
+<p>Features:</p>
+<ul>
+	<li>Easy to setup and run</li>
+	<li>Customers, vendors and employees have 24x7 access to your system from any Internet-connected computer</li>
+</ul>
+</html>
+
+<paragraph>
+<button-link>
+<name>Read our on-line manual</name>
+<link>?help=</link>
+<image>Help</image>
+</button-link>
+</paragraph>
+
+</HELP>

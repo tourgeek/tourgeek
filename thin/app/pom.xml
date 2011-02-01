@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.tourapp.thin</groupId>
+    <artifactId>tourapp-thin-reactor</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.tourapp.thin.app</groupId>
+  <artifactId>tourapp-thin-app-reactor</artifactId>
+  <packaging>pom</packaging>
+  <name>tourapp-thin-app-reactor - Tour thin app parent</name>
+
+  <modules>
+    <module>booking</module>
+    <module>request</module>
+    <module>test</module>
+  </modules>
+</project>

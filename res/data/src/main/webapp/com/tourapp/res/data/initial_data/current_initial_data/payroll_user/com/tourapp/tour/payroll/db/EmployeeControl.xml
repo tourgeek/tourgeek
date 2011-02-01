@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<EmployeeControl ID="1">
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
+		<Deleted>N</Deleted>
+		<FederalIdNo>95-1234567</FederalIdNo>
+		<FedExemption>2,500.00</FedExemption>
+		<FedTaxAcctID>265</FedTaxAcctID>
+		<FedTaxDesc>Federal Tax</FedTaxDesc>
+		<StateIdNo>155-61-223</StateIdNo>
+		<StateExemption>1,000.00</StateExemption>
+		<StateTaxAcctID>266</StateTaxAcctID>
+		<StateTaxDesc>State tax</StateTaxDesc>
+		<LocalIdNo/>
+		<LocalExemption>0.00</LocalExemption>
+		<LocalTaxAcctID/>
+		<LocalTaxDesc>Local tax</LocalTaxDesc>
+		<FicaTaxDesc>FICA</FicaTaxDesc>
+		<FICAEmployee>0.0600</FICAEmployee>
+		<FICAEmployer>0.0600</FICAEmployer>
+		<FICATaxAcctID>166</FICATaxAcctID>
+		<MaxFICA>3,887.40</MaxFICA>
+		<MedicareTaxDesc>Medicare</MedicareTaxDesc>
+		<MedicareEmployee>0.0100</MedicareEmployee>
+		<MaxMedicare>50,000.00</MaxMedicare>
+		<MaxEmployerFICA>3,887.40</MaxEmployerFICA>
+		<MedicareEmployer>0.0100</MedicareEmployer>
+		<MaxEmployerMedicare>50,000.00</MaxEmployerMedicare>
+		<FuiPer>0.0100</FuiPer>
+		<FuiMax>56.00</FuiMax>
+		<FUITaxAcctID>167</FUITaxAcctID>
+		<CashBankAcctID>2</CashBankAcctID>
+		<TaxAcctID>264</TaxAcctID>
+		<DefaultState>CA</DefaultState>
+		<SuiPer>0.0400</SuiPer>
+		<SuiMax>252.00</SuiMax>
+		<SUITaxAcctID>169</SUITaxAcctID>
+		<SdiTaxDesc>Disability</SdiTaxDesc>
+		<SdiPer>0.0100</SdiPer>
+		<SdiMax>254.14</SdiMax>
+		<SDITaxAcctID>168</SDITaxAcctID>
+		<LastBiWeekly>N</LastBiWeekly>
+		<DistToGl>P</DistToGl>
+		<DistToJobs>P</DistToJobs>
+		<RegularPayDesc>Regular pay</RegularPayDesc>
+		<OvertimePayDesc>Overtime</OvertimePayDesc>
+		<OtTimesBase>1.5000</OtTimesBase>
+		<Sp1Desc>Double time</Sp1Desc>
+		<Sp1TimesBase>2.0000</Sp1TimesBase>
+		<Sp2Desc>Triple time</Sp2Desc>
+		<Sp2TimesBase>3.0000</Sp2TimesBase>
+	</EmployeeControl>
+</file>

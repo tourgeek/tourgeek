@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<UserGroup ID="1">
+		<LastChanged>2010-04-18T10:29:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<Description>Anonymous user</Description>
+		<AccessMap>org.jbundle.app.test.*	2	1	
+com.tourapp.tour.util.*	2	1	
+org.jbundle.app.contact.*	2	1	
+org.jbundle.app.dance.*	2	1	
+org.jbundle.app.picture.*	2	1	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="2">
+		<LastChanged>2010-10-14T08:37:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>#Field properties
+#Wed Jun 06 02:51:12 PDT 2007
+home=Reservations
+</Properties>
+		<Description>Reservations</Description>
+		<AccessMap>com.tourapp.tour.booking.*	1	1	
+com.tourapp.app.booking.*	1	1	
+com.tourapp.tour.booking.*	2	2	
+com.tourapp.app.booking.*	2	2	
+org.jbundle.main.*	1	2	
+com.tourapp.tour.product.*	1	1	
+com.tourapp.tour.profile.*	1	1	
+com.tourapp.tour.request.*	1	1	
+com.tourapp.tour.product.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+com.tourapp.tour.request.*	2	2	
+com.tourapp.tour.profile.*	1	2	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="3">
+		<LastChanged>2010-10-14T08:39:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>#Field properties
+#Wed Jun 06 02:51:53 PDT 2007
+home=Administrator
+</Properties>
+		<Description>Administrator</Description>
+		<AccessMap>com.tourapp.tour.acctpay.*	1	1	
+com.tourapp.tour.acctrec.*	1	1	
+com.tourapp.tour.assetdr.*	1	1	
+com.tourapp.tour.genled.*	1	1	
+com.tourapp.tour.acctpay.*	2	2	
+com.tourapp.tour.acctrec.*	2	2	
+com.tourapp.tour.assetdr.*	2	2	
+com.tourapp.tour.genled.*	2	2	
+com.tourapp.tour.booking.*	1	1	
+com.tourapp.app.booking.*	1	1	
+com.tourapp.tour.booking.*	2	2	
+com.tourapp.app.booking.*	2	2	
+org.jbundle.app.test.*	2	1	
+com.tourapp.tour.util.*	2	1	
+org.jbundle.app.program.*	2	2	
+org.jbundle.main.*	2	2	
+org.jbundle.main.*	2	2	
+org.jbundle.app.contact.*	2	1	
+org.jbundle.app.dance.*	2	1	
+org.jbundle.app.picture.*	2	1	
+com.tourapp.tour.product.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+com.tourapp.tour.request.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="4">
+		<LastChanged>2010-10-14T08:39:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>#Field properties
+#Wed Jun 06 02:52:01 PDT 2007
+home=Accounting
+</Properties>
+		<Description>Accounting</Description>
+		<AccessMap>com.tourapp.tour.acctpay.*	2	2	
+com.tourapp.tour.acctrec.*	2	2	
+com.tourapp.tour.assetdr.*	2	2	
+com.tourapp.tour.genled.*	2	2	
+com.tourapp.tour.booking.*	1	1	
+com.tourapp.app.booking.*	1	1	
+com.tourapp.tour.booking.*	2	2	
+com.tourapp.app.booking.*	2	2	
+org.jbundle.main.*	1	2	
+com.tourapp.tour.product.*	1	1	
+com.tourapp.tour.profile.*	1	1	
+com.tourapp.tour.request.*	1	1	
+com.tourapp.tour.product.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+com.tourapp.tour.request.*	2	2	
+com.tourapp.tour.payroll.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="5">
+		<LastChanged>2010-04-02T16:00:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>#Field properties
+#Thu Jun 21 01:42:52 PDT 2007
+home=vendor
+</Properties>
+		<Description>Vendor</Description>
+		<AccessMap>com.tourapp.tour.booking.message.*	2	2	
+org.jbundle.main.msg.*	2	2	
+com.tourapp.tour.booking.operations.*	2	2	
+com.tourapp.tour.acctpay.screen.trx.*	2	2	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="6">
+		<LastChanged>2010-10-14T08:40:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>#Field properties
+#Thu Jun 21 01:41:52 PDT 2007
+home=operation
+</Properties>
+		<Description>Operations</Description>
+		<AccessMap>com.tourapp.tour.acctpay.*	1	2	
+com.tourapp.tour.acctrec.*	1	2	
+com.tourapp.tour.assetdr.*	1	2	
+com.tourapp.tour.genled.*	1	2	
+com.tourapp.tour.booking.*	1	1	
+com.tourapp.app.booking.*	1	1	
+com.tourapp.tour.booking.*	2	2	
+com.tourapp.app.booking.*	2	2	
+org.jbundle.main.*	1	2	
+com.tourapp.tour.product.*	1	1	
+com.tourapp.tour.profile.*	1	1	
+com.tourapp.tour.request.*	1	1	
+com.tourapp.tour.product.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+com.tourapp.tour.request.*	2	2	
+com.tourapp.tour.payroll.*	1	2	
+com.tourapp.tour.profile.*	1	2	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="7">
+		<LastChanged>2010-04-02T16:00:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties>#Field properties
+#Thu May 29 14:50:11 PDT 2008
+home=travelagent
+</Properties>
+		<Description>Profile/Customer</Description>
+		<AccessMap>com.tourapp.tour.booking.*	1	1	
+com.tourapp.app.booking.*	1	1	
+com.tourapp.tour.booking.*	2	2	
+com.tourapp.app.booking.*	2	2	
+com.tourapp.tour.profile.*	2	2	
+</AccessMap>
+	</UserGroup>
+	<UserGroup ID="8">
+		<LastChanged>2010-04-18T10:29:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Properties/>
+		<Description>Web user</Description>
+		<AccessMap>com.tourapp.tour.booking.*	1	2	
+com.tourapp.app.booking.*	1	2	
+org.jbundle.app.contact.*	2	2	
+org.jbundle.app.dance.*	2	2	
+org.jbundle.app.picture.*	2	2	
+</AccessMap>
+	</UserGroup>
+</file>

@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Vendor ID="1">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>ASTO01</Code>
+		<VendorName>Asian Tours</VendorName>
+		<AddressLine1>1234 Gaysorn Place</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Bangkok</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Thailand</Country>
+		<Tel/>
+		<Fax/>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-12-16</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>ASIAN </NameSort>
+		<PostalCodeSort/>
+		<Contact>Andre</Contact>
+		<ContactTitle>General Manager</ContactTitle>
+		<CountryID>88</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>2</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>L</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="2">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Regent Hotel</VendorName>
+		<AddressLine1>5432 Nathan Road</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Los Angeles</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Hong Kong</Country>
+		<Tel/>
+		<Fax/>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>REGENT</NameSort>
+		<PostalCodeSort/>
+		<Contact>Fred</Contact>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>2</PaymentCycleID>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="31">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>BASP01</Code>
+		<VendorName>Banff Springs Hotel</VendorName>
+		<AddressLine1>123 First Street</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Calgary</CityOrTown>
+		<StateOrRegion>Alberta</StateOrRegion>
+		<PostalCode/>
+		<Country>Canada</Country>
+		<Tel>123-132-1312</Tel>
+		<Fax>(312) 443-1321</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>BANFF </NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>124</CurrencysID>
+		<MessageTransportID>4</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>3</PaymentCycleID>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="32">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>BATO01</Code>
+		<VendorName>Banff Local Tours, Inc.</VendorName>
+		<AddressLine1>31212 North Street</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Calgary</CityOrTown>
+		<StateOrRegion>Alberta</StateOrRegion>
+		<PostalCode/>
+		<Country>Canada</Country>
+		<Tel>(312) 312-1322</Tel>
+		<Fax>(312) 123-3211</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>BANFF </NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>124</CurrencysID>
+		<MessageTransportID>4</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID/>
+		<PaymentCycleID/>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="33">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>EXHO01</Code>
+		<VendorName>Excelsior Hotel</VendorName>
+		<AddressLine1>3214 Park lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Hong Kong</Country>
+		<Tel>12-3122-123</Tel>
+		<Fax>01185211212331</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>EXCELS</NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>82</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID/>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="34">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>FOEX01</Code>
+		<VendorName>Foreign Exchange Corporation</VendorName>
+		<AddressLine1><![CDATA[1234 Wilshire Blvd
+Suite 1243]]></AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Los Angeles</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91234-4832</PostalCode>
+		<Country/>
+		<Tel>(213) 245-6789</Tel>
+		<Fax>(213) 245-4321</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-05-17</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>FOREIG</NameSort>
+		<PostalCodeSort>91234</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID/>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID/>
+		<PaymentCycleID/>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>109</DefaultAccountID>
+		<Send1099>Y</Send1099>
+		<TaxId>123-45-5678</TaxId>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="35">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>HOHO01</Code>
+		<VendorName>Hong Kong Hotel</VendorName>
+		<AddressLine1>39932 Kowloon Drive</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion>Kowloon</StateOrRegion>
+		<PostalCode>1212</PostalCode>
+		<Country>Hong Kong</Country>
+		<Tel>02-13221-123</Tel>
+		<Fax>01185212132121</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>HONG K</NameSort>
+		<PostalCodeSort>1212</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>344</CurrencysID>
+		<MessageTransportID/>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="36">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>HOLO01</Code>
+		<VendorName>Hong Kong Land Operator</VendorName>
+		<AddressLine1>4311 Nathan Road Suite 12312</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion>Kowloon</StateOrRegion>
+		<PostalCode/>
+		<Country>Hong Kong</Country>
+		<Tel>02-2923-23</Tel>
+		<Fax>011812828211</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2010-06-01</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>HONG K</NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>344</CurrencysID>
+		<MessageTransportID/>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>5</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="37">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>JAHO01</Code>
+		<VendorName>The Japanese Hotel Chain</VendorName>
+		<AddressLine1>12312 Ka-Kunji Road</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Yokohama</CityOrTown>
+		<StateOrRegion>Tokyo</StateOrRegion>
+		<PostalCode/>
+		<Country>Japan</Country>
+		<Tel>07-12-13212-1</Tel>
+		<Fax>01185212112321</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web>http://www.tourgeek.com</Web>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2010-06-01</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>JAPANE</NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>392</CurrencysID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:03:04 PST 2009
+destinationMessage=http\://www.tourgeek.com/ws
+wsdlPath=http\://www.tourgeek.com/wsdl
+]]></Properties>
+		<VendorStatusID/>
+		<PaymentCycleID/>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>I</OperationTypeCode>
+		<DefaultAccountID>9</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="38">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>JALO01</Code>
+		<VendorName>Japanese Land Operator</VendorName>
+		<AddressLine1>1234-12 Ginza Ku</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Tokyo</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Japan</Country>
+		<Tel>02-4323-123</Tel>
+		<Fax>01185221234321</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>JAPANE</NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>392</CurrencysID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="39">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>KYHO01</Code>
+		<VendorName>Kyoto Hotel</VendorName>
+		<AddressLine1>1231 Kyo-no</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Kyoto</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Japan</Country>
+		<Tel>11-123-123312</Tel>
+		<Fax>012132132312</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>KYOTO </NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>97</CountryID>
+		<CurrencysID>392</CurrencysID>
+		<MessageTransportID>2</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="40">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>MAHO01</Code>
+		<VendorName>Mandarin Hotel</VendorName>
+		<AddressLine1>83483 Main Street</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Hong Kong</Country>
+		<Tel>12-1324-12</Tel>
+		<Fax>01185283828211</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2010-03-02</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>MANDAR</NameSort>
+		<PostalCodeSort/>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>344</CurrencysID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>L</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="41">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>NEWO01</Code>
+		<VendorName>New World Hotel</VendorName>
+		<AddressLine1>2-40-7 Ikebukuto</AddressLine1>
+		<AddressLine2>Toshima-ku</AddressLine2>
+		<CityOrTown>Tokyo</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode>171-0014</PostalCode>
+		<Country>Japan</Country>
+		<Tel>33-32234-12</Tel>
+		<Fax>01129239132312</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2010-06-01</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>NEW WO</NameSort>
+		<PostalCodeSort>171-0</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>97</CountryID>
+		<CurrencysID>392</CurrencysID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID/>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="43">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>UPSV01</Code>
+		<VendorName>United Parcel Service</VendorName>
+		<AddressLine1>8321 South Brand Blvd</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Glendale</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91231</PostalCode>
+		<Country/>
+		<Tel>(818) 555-1212</Tel>
+		<Fax>(818) 555-2121</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>1970-07-28</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>UNITED</NameSort>
+		<PostalCodeSort>91231</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID/>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID/>
+		<PaymentCycleID/>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>88</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="44">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Hong Kong Car Rental</VendorName>
+		<AddressLine1>334 Nathan Road</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Kowloon</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>Hong Kong</Country>
+		<Tel>22-223-221</Tel>
+		<Fax>22-223-224</Fax>
+		<Email>jim@hkcar.co.hk</Email>
+		<Web/>
+		<DateEntered>2003-05-09</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>HONG K</NameSort>
+		<PostalCodeSort/>
+		<Contact>Jim</Contact>
+		<ContactTitle/>
+		<CountryID>82</CountryID>
+		<CurrencysID>344</CurrencysID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="45">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>China Cruise Company</VendorName>
+		<AddressLine1>12 Nanking Circle</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Bejing</CityOrTown>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country>China</Country>
+		<Tel>334-343443</Tel>
+		<Fax>334-344433</Fax>
+		<Email>res@chinacruise.co.ch</Email>
+		<Web/>
+		<DateEntered>2003-05-09</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>CHINA </NameSort>
+		<PostalCodeSort/>
+		<Contact>Lim</Contact>
+		<ContactTitle/>
+		<CountryID>93</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="46">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>United Airlines</VendorName>
+		<AddressLine1>1234 United Drive</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Chicago</CityOrTown>
+		<StateOrRegion>IL</StateOrRegion>
+		<PostalCode>04321</PostalCode>
+		<Country>USA</Country>
+		<Tel>223-232-3565</Tel>
+		<Fax>223-232-3443</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>2003-05-09</DateEntered>
+		<DateChanged>2009-05-17</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>UNITED</NameSort>
+		<PostalCodeSort>04321</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>L</OperationTypeCode>
+		<DefaultAccountID>109</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="47">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Certified Accounts, Inc.</VendorName>
+		<AddressLine1>1122 State Street</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Santa Barbara</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91443</PostalCode>
+		<Country>Japan</Country>
+		<Tel>661-343-3433</Tel>
+		<Fax/>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>2003-05-10</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>CERTIF</NameSort>
+		<PostalCodeSort>91443</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>1</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="48">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Travel Insurance Pros</VendorName>
+		<AddressLine1>8854 South San Pedro Street</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Los Angeles</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>90012</PostalCode>
+		<Country/>
+		<Tel>213-434-3432</Tel>
+		<Fax/>
+		<Email>vendor@tourgeek.com</Email>
+		<Web/>
+		<DateEntered>2003-05-11</DateEntered>
+		<DateChanged>2009-07-04</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>TRAVEL</NameSort>
+		<PostalCodeSort>90012</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>97</DefaultAccountID>
+		<Send1099>N</Send1099>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="49">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Sheraton Hotel</VendorName>
+		<AddressLine1>310 N. Fifth Ave.</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>New York</CityOrTown>
+		<StateOrRegion>NY</StateOrRegion>
+		<PostalCode>10031</PostalCode>
+		<Country/>
+		<Tel>212-555-3949</Tel>
+		<Fax/>
+		<Email>info@sheraton.com</Email>
+		<Web>www.sheraton.com</Web>
+		<DateEntered>2008-10-13</DateEntered>
+		<DateChanged>2009-05-17</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>SHERAT</NameSort>
+		<PostalCodeSort>10031</PostalCodeSort>
+		<Contact>William</Contact>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099/>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="50">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Marriott Hotel</VendorName>
+		<AddressLine1>441 Fifth Ave</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>New York</CityOrTown>
+		<StateOrRegion>NY</StateOrRegion>
+		<PostalCode>10031</PostalCode>
+		<Country/>
+		<Tel>212-555-4732</Tel>
+		<Fax/>
+		<Email>vendor@tourgeek.com</Email>
+		<Web>www.marriott.com</Web>
+		<DateEntered>2008-10-13</DateEntered>
+		<DateChanged>2010-06-01</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>MARRIO</NameSort>
+		<PostalCodeSort>10031</PostalCodeSort>
+		<Contact/>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties/>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099/>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+	<Vendor ID="51">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Code/>
+		<VendorName>Xanadu Hotel</VendorName>
+		<AddressLine1/>
+		<AddressLine2>211 S. Fifth Street</AddressLine2>
+		<CityOrTown>New York</CityOrTown>
+		<StateOrRegion>NY</StateOrRegion>
+		<PostalCode>10021</PostalCode>
+		<Country>USA</Country>
+		<Tel>212-332-2231</Tel>
+		<Fax>212-443-2322</Fax>
+		<Email>vendor@tourgeek.com</Email>
+		<Web>http://www.xanadu.com</Web>
+		<DateEntered>2009-05-02</DateEntered>
+		<DateChanged>2010-06-01</DateChanged>
+		<ChangedID>11</ChangedID>
+		<Comments/>
+		<UserID/>
+		<Password/>
+		<NameSort>XANADU</NameSort>
+		<PostalCodeSort>10021</PostalCodeSort>
+		<Contact>Gene</Contact>
+		<ContactTitle/>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID/>
+		<MessageServer/>
+		<WSDLPath/>
+		<Properties><![CDATA[#Field properties
+#Sun Nov 01 07:09:31 PST 2009
+destinationMessage=http\://www.tourgeek.com/xmlws
+wsdlPath=http\://www.tourgeek.com/tourapp/wsdl?wsdlversion\=1.1&version\=2004B
+]]></Properties>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<DepositID/>
+		<OperationTypeCode>A</OperationTypeCode>
+		<DefaultAccountID>58</DefaultAccountID>
+		<Send1099/>
+		<TaxId/>
+		<VendorsCustNo/>
+		<AmountSelected/>
+		<VendorBalance/>
+	</Vendor>
+</file>

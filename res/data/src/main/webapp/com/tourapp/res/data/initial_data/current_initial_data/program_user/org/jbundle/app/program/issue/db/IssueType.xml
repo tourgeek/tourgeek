@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<IssueType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Bug</Description>
+	</IssueType>
+	<IssueType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Enhancement</Description>
+	</IssueType>
+	<IssueType ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Feature</Description>
+	</IssueType>
+	<IssueType ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Investigation</Description>
+	</IssueType>
+</file>

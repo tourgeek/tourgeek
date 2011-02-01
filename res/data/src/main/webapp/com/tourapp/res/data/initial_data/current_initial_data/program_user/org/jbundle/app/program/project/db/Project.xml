@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Project ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Tour</Name>
+		<MainProjectID>0</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Backup</Name>
+		<MainProjectID>0</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Load Distributor</Name>
+		<MainProjectID>0</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Accounting</Name>
+		<MainProjectID>1</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Operations</Name>
+		<MainProjectID>1</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Booking</Name>
+		<MainProjectID>1</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Accounts Payable</Name>
+		<MainProjectID>4</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Accounts Recievable</Name>
+		<MainProjectID>4</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>General Ledger</Name>
+		<MainProjectID>4</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Bank Accounts</Name>
+		<MainProjectID>4</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Payroll</Name>
+		<MainProjectID>4</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Product</Name>
+		<MainProjectID>5</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Profile</Name>
+		<MainProjectID>5</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Operations</Name>
+		<MainProjectID>5</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Thick</Name>
+		<MainProjectID>6</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Thin</Name>
+		<MainProjectID>6</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="17">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>General Code</Name>
+		<MainProjectID>1</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="18">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Testing</Name>
+		<MainProjectID>17</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="19">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Standard file setup</Name>
+		<MainProjectID>17</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+	<Project ID="20">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Name>Research</Name>
+		<MainProjectID>0</MainProjectID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<UserID>1</UserID>
+	</Project>
+</file>

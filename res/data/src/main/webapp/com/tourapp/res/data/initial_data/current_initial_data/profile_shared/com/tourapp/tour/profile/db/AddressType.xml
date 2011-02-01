@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<AddressType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Home</Description>
+	</AddressType>
+	<AddressType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Business</Description>
+	</AddressType>
+</file>

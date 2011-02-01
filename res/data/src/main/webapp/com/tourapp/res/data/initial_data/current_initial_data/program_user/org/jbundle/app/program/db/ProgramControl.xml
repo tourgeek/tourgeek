@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProgramControl ID="1">
+		<LastChanged>2010-03-17T15:21:02</LastChanged>
+		<Deleted>N</Deleted>
+		<ProjectName>tourapp-tour</ProjectName>
+		<BaseDirectory>/home/don/</BaseDirectory>
+		<SourceDirectory>src/main/java/</SourceDirectory>
+		<ClassDirectory>target/classes/</ClassDirectory>
+		<ArchiveDirectory>data/archive/</ArchiveDirectory>
+		<ResourceType>Properties</ResourceType>
+		<ClassResourceType>ListResourceBundle</ClassResourceType>
+		<PackageName/>
+		<ThinPackage>.thin</ThinPackage>
+		<ResourcePackage>.res</ResourcePackage>
+		<LastPackageUpdate>2010-03-17T15:20:07</LastPackageUpdate>
+		<PackagesBasePath/>
+		<PackagesPath/>
+	</ProgramControl>
+</file>

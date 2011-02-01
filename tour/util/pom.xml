@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-tour-reactor</artifactId>
+    <groupId>com.tourapp.tour</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.tourapp.tour.util</artifactId>
+  <name>tourapp-tour-util - Utilities</name>
+  <description>tourapp-tour-util (Utilities)</description>
+  <packaging>bundle</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.base</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.message.jaxb</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.ota-tools.schema.jaxb</groupId>
+      <artifactId>ota-tools-schema-jaxb-2010a-codetable</artifactId>
+      <version>${otaVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctpay</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.thin</groupId>
+      <artifactId>com.tourapp.thin.tour.product</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.program</groupId>
+      <artifactId>org.jbundle.app.program</artifactId>
+      <version>${jbundleVersion}</version>
+    </dependency>
+  </dependencies>
+    
+</project>

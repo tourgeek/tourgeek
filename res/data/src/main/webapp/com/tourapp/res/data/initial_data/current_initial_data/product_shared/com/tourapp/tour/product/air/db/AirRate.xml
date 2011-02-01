@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<AirRate ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Rack rate</Description>
+		<Code/>
+	</AirRate>
+	<AirRate ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Interline rate</Description>
+		<Code/>
+	</AirRate>
+</file>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-res-reactor</artifactId>
+    <groupId>com.tourapp.res</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>tourapp-res-tour-reactor</artifactId>
+  <name>tourapp-res-tour-reactor - Tour application resources</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>acctpay</module>
+    <module>acctrec</module>
+    <module>assetdr</module>
+    <module>booking</module>
+    <module>genled</module>
+    <module>payroll</module>
+    <module>product</module>
+    <module>profile</module>
+    <module>request</module>
+    <module>util</module>
+    <module>app</module>
+    <module>base</module>
+  </modules>
+
+ <build>
+   <resources>
+     <resource>
+       <directory>${basedir}/src/main/java</directory>
+       <includes>
+       <include>**/*.properties</include>
+       </includes>
+       <filtering>false</filtering>
+     </resource>
+   </resources>
+ </build>
+
+</project>

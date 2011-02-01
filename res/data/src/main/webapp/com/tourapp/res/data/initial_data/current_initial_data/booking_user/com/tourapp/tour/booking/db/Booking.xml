@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Booking ID="1">
+		<LastChanged>2010-05-10T04:00:20</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2010-12-10</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID/>
+		<ProfileCode/>
+		<Code/>
+		<Description>Green - Seven day Bangkok Tour - Jan 14, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2010-12-10T04:00:17</ModDate>
+		<BookingStatusID>3</BookingStatusID>
+		<GenericName>The Greens</GenericName>
+		<AddressLine1>22033 Western Ave</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Portland</CityOrTown>
+		<StateOrRegion>OR</StateOrRegion>
+		<PostalCode>94202</PostalCode>
+		<Country>USA</Country>
+		<Tel>343-342-4395</Tel>
+		<Fax/>
+		<Email>green334@aol.com</Email>
+		<Contact/>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>1</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived>Y</DepositReceived>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties><![CDATA[#Field properties
+#Mon May 10 04:00:17 PDT 2010
+eventStatus.Accepted.3=Y
+eventStatus.Proposal.2=Y
+]]></Properties>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2010-12-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-01-14</FinalPaymentDueDate>
+		<NextEventDate>2010-12-10</NextEventDate>
+		<TourEventID>1</TourEventID>
+		<Gross>2,388.00</Gross>
+		<Commission>238.80</Commission>
+		<Net>2,149.20</Net>
+		<Balance>1,749.20</Balance>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+	</Booking>
+	<Booking ID="2">
+		<LastChanged>2010-05-10T03:56:33</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2010-12-10</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Feb 1, 2011</Description>
+		<EmployeeModID>-1</EmployeeModID>
+		<ModDate>2010-12-10T03:56:32</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>2</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2010-12-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-02-02</FinalPaymentDueDate>
+		<NextEventDate>2010-12-10</NextEventDate>
+		<TourEventID>1</TourEventID>
+		<Gross>2,647.00</Gross>
+		<Commission>264.70</Commission>
+		<Net>2,382.30</Net>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+	</Booking>
+	<Booking ID="3">
+		<LastChanged>2010-05-10T04:00:20</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2010-12-10</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID/>
+		<ProfileCode/>
+		<Code/>
+		<Description>Rodriguez - Customized Tour - Jan 2, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2010-12-10T04:00:17</ModDate>
+		<BookingStatusID>3</BookingStatusID>
+		<GenericName>Terry Rodriguez</GenericName>
+		<AddressLine1>33459 Bates Ave</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Los Angeles</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>90012</PostalCode>
+		<Country>USA</Country>
+		<Tel/>
+		<Fax>322-341-4592</Fax>
+		<Email>terryr33404@gmail.com</Email>
+		<Contact/>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>3</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived>Y</DepositReceived>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties><![CDATA[#Field properties
+#Mon May 10 04:00:17 PDT 2010
+eventStatus.Accepted.3=Y
+eventStatus.Proposal.2=Y
+]]></Properties>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2010-12-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-01-02</FinalPaymentDueDate>
+		<NextEventDate>2010-12-10</NextEventDate>
+		<TourEventID>1</TourEventID>
+		<Gross>3,104.98</Gross>
+		<Commission>310.50</Commission>
+		<Net>2,794.48</Net>
+		<Balance>2,394.48</Balance>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>N</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>3</TourPricingTypeID>
+		<NonTourPricingTypeID>3</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+	</Booking>
+</file>

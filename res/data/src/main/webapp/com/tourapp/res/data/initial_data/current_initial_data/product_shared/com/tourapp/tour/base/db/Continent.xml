@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Continent ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>North America</Description>
+		<Code/>
+	</Continent>
+	<Continent ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>South America</Description>
+		<Code/>
+	</Continent>
+	<Continent ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Europe</Description>
+		<Code/>
+	</Continent>
+	<Continent ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Asia</Description>
+		<Code/>
+	</Continent>
+	<Continent ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Africa</Description>
+		<Code/>
+	</Continent>
+	<Continent ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Australia</Description>
+		<Code/>
+	</Continent>
+	<Continent ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Antarctica</Description>
+		<Code/>
+	</Continent>
+</file>

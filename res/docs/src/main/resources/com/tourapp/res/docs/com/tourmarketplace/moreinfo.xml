@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+	<h2>
+		It's easy to build your custom tour with
+		<img align="bottom" alt="tourdemo.com"
+			src="images/com/nameblack.gif" />.
+	</h2>
+	<p>
+		Tourapp is not a reservation service, it is software that
+		allows you to research and purchase travel products
+		<a href="tourapp?menu=techinfo">directly from travel suppliers</a>.
+	</p>
+</div>

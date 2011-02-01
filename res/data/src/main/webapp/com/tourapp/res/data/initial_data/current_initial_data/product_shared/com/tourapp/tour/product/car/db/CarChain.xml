@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CarChain ID="1">
+		<LastChanged>2008-11-17T09:56:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hertz</Description>
+		<Code/>
+	</CarChain>
+	<CarChain ID="2">
+		<LastChanged>2008-11-17T09:56:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Budget</Description>
+		<Code/>
+	</CarChain>
+	<CarChain ID="3">
+		<LastChanged>2008-11-17T09:56:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Avis</Description>
+		<Code/>
+	</CarChain>
+</file>

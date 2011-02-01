@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<MessageVersion ID="1">
+		<LastChanged>2008-10-08T00:16:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2001A</Description>
+		<Code>2001A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2001A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:16:12 PDT 2008
+JAXBPackage=org.opentravel.ota2001a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="2">
+		<LastChanged>2008-10-08T00:16:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2001B</Description>
+		<Code>2001B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2001B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:16:27 PDT 2008
+JAXBPackage=org.opentravel.ota2001b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="3">
+		<LastChanged>2008-10-08T00:16:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2001C</Description>
+		<Code>2001C</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2001C</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:16:51 PDT 2008
+JAXBPackage=org.opentravel.ota2004b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="4">
+		<LastChanged>2008-10-08T00:17:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2002A</Description>
+		<Code>2002A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2002A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:17:04 PDT 2008
+JAXBPackage=org.opentravel.ota2002a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="5">
+		<LastChanged>2008-10-08T00:17:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2002B</Description>
+		<Code>2002B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2002B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:17:14 PDT 2008
+JAXBPackage=org.opentravel.ota2002b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="6">
+		<LastChanged>2008-10-08T00:17:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2003A</Description>
+		<Code>2003A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2003A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:17:25 PDT 2008
+JAXBPackage=org.opentravel.ota2003a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="7">
+		<LastChanged>2008-10-08T00:17:38</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2003B</Description>
+		<Code>2003B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2003B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:17:37 PDT 2008
+JAXBPackage=org.opentravel.ota2003b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="8">
+		<LastChanged>2008-10-08T00:17:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2004A</Description>
+		<Code>2004A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2004A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:17:50 PDT 2008
+JAXBPackage=org.opentravel.ota2004a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="9">
+		<LastChanged>2008-10-08T00:15:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2004B</Description>
+		<Code>2004B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2004B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:15:48 PDT 2008
+JAXBPackage=org.opentravel.ota2004b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="10">
+		<LastChanged>2008-10-08T00:18:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2005A</Description>
+		<Code>2005A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2005A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:18:02 PDT 2008
+JAXBPackage=org.opentravel.ota2005a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="11">
+		<LastChanged>2008-10-08T00:18:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2005B</Description>
+		<Code>2005B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2005B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:18:12 PDT 2008
+JAXBPackage=org.opentravel.ota2005b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="12">
+		<LastChanged>2008-10-08T00:18:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2006A</Description>
+		<Code>2006A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2006A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:18:38 PDT 2008
+JAXBPackage=org.opentravel.ota2006a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="13">
+		<LastChanged>2008-10-08T00:19:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2006B</Description>
+		<Code>2006B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2006B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:19:05 PDT 2008
+JAXBPackage=org.opentravel.ota2006b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="14">
+		<LastChanged>2008-10-08T00:19:18</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2007A</Description>
+		<Code>2007A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2007A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:19:16 PDT 2008
+JAXBPackage=org.opentravel.ota2007a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="15">
+		<LastChanged>2008-10-08T00:19:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2007B</Description>
+		<Code>2007B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2007B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:19:28 PDT 2008
+JAXBPackage=org.opentravel.ota2007b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="16">
+		<LastChanged>2008-10-08T00:19:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2008A</Description>
+		<Code>2008A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2008A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:19:44 PDT 2008
+JAXBPackage=org.opentravel.ota2008a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="17">
+		<LastChanged>2008-10-08T00:20:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2008B</Description>
+		<Code>2008B</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2008B</VersionID>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 08 00:20:15 PDT 2008
+JAXBPackage=org.opentravel.ota2008b
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="18">
+		<LastChanged>2009-06-19T11:40:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2009A</Description>
+		<Code>2009A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2009A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Fri Jun 19 11:40:30 PDT 2009
+JAXBPackage=org.opentravel.ota2009a
+]]></Properties>
+	</MessageVersion>
+	<MessageVersion ID="19">
+		<LastChanged>2010-03-20T10:03:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>2010A</Description>
+		<Code>2010A</Code>
+		<Namespace/>
+		<SchemaLocation/>
+		<NumericVersion/>
+		<VersionID>OTA2010A</VersionID>
+		<Properties><![CDATA[#Field properties
+#Sat Mar 20 09:43:31 PDT 2010
+jibx.packageName=org.ota
+jibx.bindingName=binding
+JAXBPackage=org.opentravel.ota2010a
+]]></Properties>
+	</MessageVersion>
+</file>

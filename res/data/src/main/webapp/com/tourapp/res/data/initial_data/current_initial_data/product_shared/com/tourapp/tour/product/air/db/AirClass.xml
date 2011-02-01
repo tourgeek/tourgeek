@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<AirClass ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>First class</Description>
+		<Code/>
+	</AirClass>
+	<AirClass ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Economy class</Description>
+		<Code>Y</Code>
+	</AirClass>
+	<AirClass ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Business class</Description>
+		<Code/>
+	</AirClass>
+</file>

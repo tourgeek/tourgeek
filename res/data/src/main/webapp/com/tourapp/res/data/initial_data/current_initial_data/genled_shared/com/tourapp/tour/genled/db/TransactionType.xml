@@ -1,0 +1,3446 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<TransactionType ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>ManualEntry</TypeCode>
+		<TypeDesc>Manual Entry</TypeDesc>
+		<TrxGroupID>1</TrxGroupID>
+		<GroupCode>ManualEntry</GroupCode>
+		<GroupDesc>Manual Entry</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>1</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>RecurringTrx</TypeCode>
+		<TypeDesc>Recurring Transaction</TypeDesc>
+		<TrxGroupID>2</TrxGroupID>
+		<GroupCode>RecurringTrx</GroupCode>
+		<GroupDesc>Recurring Transaction</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>2</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Accrual</TypeCode>
+		<TypeDesc>Accrual</TypeDesc>
+		<TrxGroupID>3</TrxGroupID>
+		<GroupCode>Accrual</GroupCode>
+		<GroupDesc>Accrual</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>3</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>AccrualReversal</TypeCode>
+		<TypeDesc>Accrual Reversal</TypeDesc>
+		<TrxGroupID>4</TrxGroupID>
+		<GroupCode>AccrualReversal</GroupCode>
+		<GroupDesc>Accrual Reversal</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>4</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>ClosingEntry</TypeCode>
+		<TypeDesc>Closing Entry</TypeDesc>
+		<TrxGroupID>5</TrxGroupID>
+		<GroupCode>ClosingEntry</GroupCode>
+		<GroupDesc>Closing Entry</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>5</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>StartBalance</TypeCode>
+		<TypeDesc>Starting Balance</TypeDesc>
+		<TrxGroupID>6</TrxGroupID>
+		<GroupCode>StartBalance</GroupCode>
+		<GroupDesc>Starting Balance</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>6</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>SummaryTrx</TypeCode>
+		<TypeDesc>Summarized Transactions</TypeDesc>
+		<TrxGroupID>7</TrxGroupID>
+		<GroupCode>SummaryTrx</GroupCode>
+		<GroupDesc>Summarized Transactions</GroupDesc>
+		<TrxDescID>5</TrxDescID>
+		<DescCode>AcctDetail</DescCode>
+		<Description>G/L Transactions</Description>
+		<TrxSystemID>1</TrxSystemID>
+		<SystemCode>genled</SystemCode>
+		<SystemDesc>General Ledger</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.genled.db.AcctDetail</SourceFile>
+		<SourceTrxDescID>5</SourceTrxDescID>
+		<SourceTrxStatusID>7</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Manual Check</TypeDesc>
+		<TrxGroupID>8</TrxGroupID>
+		<GroupCode>ManualCheck</GroupCode>
+		<GroupDesc>Manual Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>8</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Expense</TypeDesc>
+		<TrxGroupID>8</TrxGroupID>
+		<GroupCode>ManualCheck</GroupCode>
+		<GroupDesc>Manual Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>8</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cash</TypeDesc>
+		<TrxGroupID>10</TrxGroupID>
+		<GroupCode>ForeignDeposit</GroupCode>
+		<GroupDesc>Foreign Curr Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>10</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Income</TypeDesc>
+		<TrxGroupID>10</TrxGroupID>
+		<GroupCode>ForeignDeposit</GroupCode>
+		<GroupDesc>Foreign Curr Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>10</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Xfer In</TypeDesc>
+		<TrxGroupID>12</TrxGroupID>
+		<GroupCode>TransferIn</GroupCode>
+		<GroupDesc>Transfer In</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>12</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="13">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Bank Charge</TypeDesc>
+		<TrxGroupID>13</TrxGroupID>
+		<GroupCode>BankCharge</GroupCode>
+		<GroupDesc>Bank Charge</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>13</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="14">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Asset Debt-Bank Trx-Interest</TypeDesc>
+		<TrxGroupID>14</TrxGroupID>
+		<GroupCode>Interest</GroupCode>
+		<GroupDesc>Interest</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>14</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="15">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Misc (+)</TypeDesc>
+		<TrxGroupID>15</TrxGroupID>
+		<GroupCode>MiscAddition</GroupCode>
+		<GroupDesc>Misc Addition</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>15</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="16">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Misc (-)</TypeDesc>
+		<TrxGroupID>16</TrxGroupID>
+		<GroupCode>MiscSubtraction</GroupCode>
+		<GroupDesc>Misc Subtraction</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>16</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="17">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Void Check</TypeDesc>
+		<TrxGroupID>17</TrxGroupID>
+		<GroupCode>VoidCheck</GroupCode>
+		<GroupDesc>Void Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>17</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="18">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Return Dep</TypeDesc>
+		<TrxGroupID>18</TrxGroupID>
+		<GroupCode>ReturnedDeposit</GroupCode>
+		<GroupDesc>Returned Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>18</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="19">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>EFT In</TypeDesc>
+		<TrxGroupID>19</TrxGroupID>
+		<GroupCode>EFTIn</GroupCode>
+		<GroupDesc>EFT In</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>19</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="20">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>EFT Out</TypeDesc>
+		<TrxGroupID>20</TrxGroupID>
+		<GroupCode>EFTOut</GroupCode>
+		<GroupDesc>EFT Out</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>20</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="70">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accounts Rec (Debit Memo) Dr</TypeDesc>
+		<TrxGroupID>121</TrxGroupID>
+		<GroupCode>DebitMemo</GroupCode>
+		<GroupDesc>Debit Memo</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>121</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="71">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Distribution (Debit Memo) Cr</TypeDesc>
+		<TrxGroupID>121</TrxGroupID>
+		<GroupCode>DebitMemo</GroupCode>
+		<GroupDesc>Debit Memo</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>121</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="72">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Account rec (Refund) Debit</TypeDesc>
+		<TrxGroupID>123</TrxGroupID>
+		<GroupCode>RefundSubmitted</GroupCode>
+		<GroupDesc>Refund - Submitted for Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>123</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="73">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Refund Pending Credit</TypeDesc>
+		<TrxGroupID>123</TrxGroupID>
+		<GroupCode>RefundSubmitted</GroupCode>
+		<GroupDesc>Refund - Submitted for Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>123</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="91">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Net Cash Out</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="92">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>401K Deferral</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="93">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Non Tax Deduction</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="94">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Earnings Reduction</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="95">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Deduction</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="96">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Medicare Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="97">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>SDI Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="98">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>FICA Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="99">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Local Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="100">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>State Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="101">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Federal Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="102">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Tax</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="103">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Regular Pay</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="104">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Overtime Pay</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="105">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Special 1 Pay</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="106">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Special 2 Pay</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="107">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Earning</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="108">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Non Tax Earning</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="109">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Non Tax Sick Pay</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="110">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Taxable Sick Pay</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="111">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Deduction</TypeCode>
+		<TypeDesc>Vacation</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="112">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Void Payroll Check</TypeDesc>
+		<TrxGroupID>133</TrxGroupID>
+		<GroupCode>PayHistory</GroupCode>
+		<GroupDesc>Pay History</GroupDesc>
+		<TrxDescID>170</TrxDescID>
+		<DescCode>PayHistory</DescCode>
+		<Description>Payroll history</Description>
+		<TrxSystemID>6</TrxSystemID>
+		<SystemCode>payroll</SystemCode>
+		<SystemDesc>Payroll</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.payroll.db.PayHistory</SourceFile>
+		<SourceTrxDescID>170</SourceTrxDescID>
+		<SourceTrxStatusID>133</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField>Amount</AmountField>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="118">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cash</TypeDesc>
+		<TrxGroupID>9</TrxGroupID>
+		<GroupCode>ManualDeposit</GroupCode>
+		<GroupDesc>Manual Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>9</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="119">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Start Balance</TypeDesc>
+		<TrxGroupID>11</TrxGroupID>
+		<GroupCode>StartingBalance</GroupCode>
+		<GroupDesc>Starting Balance</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>11</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="120">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Income</TypeDesc>
+		<TrxGroupID>9</TrxGroupID>
+		<GroupCode>ManualDeposit</GroupCode>
+		<GroupDesc>Manual Deposit</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>9</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="125">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>See Mco Trx</TypeDesc>
+		<TrxGroupID>110</TrxGroupID>
+		<GroupCode>Mco</GroupCode>
+		<GroupDesc>Mco Payment</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID/>
+		<SourceTrxStatusID/>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="126">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>MCO in</TypeDesc>
+		<TrxGroupID>40</TrxGroupID>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>Credit Card Payment - Entered</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<Description>Credit Card</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.CreditCard</SourceFile>
+		<SourceTrxDescID>59</SourceTrxDescID>
+		<SourceTrxStatusID>40</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="127">
+		<LastChanged>2007-11-07T02:57:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>MCO tour payment</TypeDesc>
+		<TrxGroupID>40</TrxGroupID>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>Credit Card Payment - Entered</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<Description>Credit Card</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>59</SourceTrxDescID>
+		<SourceTrxStatusID>40</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="128">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Optional</TypeCode>
+		<TypeDesc>MCO other payment</TypeDesc>
+		<TrxGroupID>40</TrxGroupID>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>Credit Card Payment - Entered</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<Description>Credit Card</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.acctrec.db.CreditCard</SourceFile>
+		<SourceTrxDescID>59</SourceTrxDescID>
+		<SourceTrxStatusID>40</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="129">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>MCO payment</TypeDesc>
+		<TrxGroupID>26</TrxGroupID>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>MCO Payment - Entered</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<Description>MCO Payment</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.Mco</SourceFile>
+		<SourceTrxDescID>33</SourceTrxDescID>
+		<SourceTrxStatusID>26</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="130">
+		<LastChanged>2007-11-07T02:53:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payment for booking (MCO)</TypeDesc>
+		<TrxGroupID>26</TrxGroupID>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>MCO Payment - Entered</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<Description>MCO Payment</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>33</SourceTrxDescID>
+		<SourceTrxStatusID>26</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="131">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Optional</TypeCode>
+		<TypeDesc>Payment (Mco)</TypeDesc>
+		<TrxGroupID>26</TrxGroupID>
+		<GroupCode>Entered</GroupCode>
+		<GroupDesc>MCO Payment - Entered</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<Description>MCO Payment</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctrec.db.Mco</SourceFile>
+		<SourceTrxDescID>33</SourceTrxDescID>
+		<SourceTrxStatusID>26</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="132">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accounts Receivable - MCO</TypeDesc>
+		<TrxGroupID>28</TrxGroupID>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>MCO Payment - Paid</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<Description>MCO Payment</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.Mco</SourceFile>
+		<SourceTrxDescID>33</SourceTrxDescID>
+		<SourceTrxStatusID>28</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField>DatePaid</TrxDateField>
+		<EntryDateField>*</EntryDateField>
+		<UserIDField>*</UserIDField>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="133">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Suspense - MCO</TypeDesc>
+		<TrxGroupID>28</TrxGroupID>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>MCO Payment - Paid</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<Description>MCO Payment</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.Mco</SourceFile>
+		<SourceTrxDescID>33</SourceTrxDescID>
+		<SourceTrxStatusID>28</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField>DatePaid</TrxDateField>
+		<EntryDateField>*</EntryDateField>
+		<UserIDField>*</UserIDField>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="134">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Optional</TypeCode>
+		<TypeDesc>Variance - MCO</TypeDesc>
+		<TrxGroupID>28</TrxGroupID>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>MCO Payment - Paid</GroupDesc>
+		<TrxDescID>33</TrxDescID>
+		<DescCode>Mco</DescCode>
+		<Description>MCO Payment</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile>.tour.acctrec.db.Mco</SourceFile>
+		<SourceTrxDescID>33</SourceTrxDescID>
+		<SourceTrxStatusID>28</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField>DatePaid</TrxDateField>
+		<EntryDateField>*</EntryDateField>
+		<UserIDField>*</UserIDField>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="135">
+		<LastChanged>2007-11-06T18:09:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accounts Rec. - Credit Card</TypeDesc>
+		<TrxGroupID>44</TrxGroupID>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>Credit Card Payment - Paid</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<Description>Credit Card</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.CreditCard</SourceFile>
+		<SourceTrxDescID>59</SourceTrxDescID>
+		<SourceTrxStatusID>44</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField>DatePaid</TrxDateField>
+		<EntryDateField>*</EntryDateField>
+		<UserIDField>*</UserIDField>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="136">
+		<LastChanged>2007-11-06T18:09:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Suspense - Credit Card</TypeDesc>
+		<TrxGroupID>44</TrxGroupID>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>Credit Card Payment - Paid</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<Description>Credit Card</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.CreditCard</SourceFile>
+		<SourceTrxDescID>59</SourceTrxDescID>
+		<SourceTrxStatusID>44</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField>DatePaid</TrxDateField>
+		<EntryDateField>*</EntryDateField>
+		<UserIDField>*</UserIDField>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="137">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Optional</TypeCode>
+		<TypeDesc>Variance - Credit Card</TypeDesc>
+		<TrxGroupID>44</TrxGroupID>
+		<GroupCode>Paid</GroupCode>
+		<GroupDesc>Credit Card Payment - Paid</GroupDesc>
+		<TrxDescID>59</TrxDescID>
+		<DescCode>CreditCard</DescCode>
+		<Description>Credit Card</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctrec.db.CreditCard</SourceFile>
+		<SourceTrxDescID>59</SourceTrxDescID>
+		<SourceTrxStatusID>44</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField>DatePaid</TrxDateField>
+		<EntryDateField>*</EntryDateField>
+		<UserIDField>*</UserIDField>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="140">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Refunds Pending - Debit</TypeDesc>
+		<TrxGroupID>98</TrxGroupID>
+		<GroupCode>RefundPaid</GroupCode>
+		<GroupDesc>Refund - Paid</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>98</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="141">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Cash out - Credit</TypeDesc>
+		<TrxGroupID>98</TrxGroupID>
+		<GroupCode>RefundPaid</GroupCode>
+		<GroupDesc>Refund - Paid</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>98</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="142">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cost of Tours</TypeDesc>
+		<TrxGroupID>59</TrxGroupID>
+		<GroupCode>DepEstManual</GroupCode>
+		<GroupDesc>Departure Estimate - Manual</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>59</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="143">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Estimated Cost of Tours</TypeDesc>
+		<TrxGroupID>59</TrxGroupID>
+		<GroupCode>DepEstManual</GroupCode>
+		<GroupDesc>Departure Estimate - Manual</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>59</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="144">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cost of Tours</TypeDesc>
+		<TrxGroupID>60</TrxGroupID>
+		<GroupCode>DepartureEstimate</GroupCode>
+		<GroupDesc>Departure Estimate</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>60</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="145">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Estimated Cost of Tours</TypeDesc>
+		<TrxGroupID>60</TrxGroupID>
+		<GroupCode>DepartureEstimate</GroupCode>
+		<GroupDesc>Departure Estimate</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>60</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="146">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cost of Tours</TypeDesc>
+		<TrxGroupID>61</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>61</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="147">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payable Estimate</TypeDesc>
+		<TrxGroupID>61</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>61</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="148">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Currency Over/Under Est</TypeDesc>
+		<TrxGroupID>61</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>61</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="149">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accts Payable</TypeDesc>
+		<TrxGroupID>62</TrxGroupID>
+		<GroupCode>InvoiceNonTour</GroupCode>
+		<GroupDesc>Invoice - Non Tour</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>62</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="150">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Cost</TypeDesc>
+		<TrxGroupID>62</TrxGroupID>
+		<GroupCode>InvoiceNonTour</GroupCode>
+		<GroupDesc>Invoice - Non Tour</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>62</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="151">
+		<LastChanged>2008-12-05T02:33:34</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Prepaid costs</TypeDesc>
+		<TrxGroupID>70</TrxGroupID>
+		<GroupCode>DebitMemo</GroupCode>
+		<GroupDesc>Debit Memo</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>70</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="152">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Income</TypeDesc>
+		<TrxGroupID>70</TrxGroupID>
+		<GroupCode>DebitMemo</GroupCode>
+		<GroupDesc>Debit Memo</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>70</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="153">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accounts Payable</TypeDesc>
+		<TrxGroupID>65</TrxGroupID>
+		<GroupCode>CreditMemo</GroupCode>
+		<GroupDesc>Credit Memo</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>65</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="154">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Expense</TypeDesc>
+		<TrxGroupID>65</TrxGroupID>
+		<GroupCode>CreditMemo</GroupCode>
+		<GroupDesc>Credit Memo</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>65</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="155">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cash out</TypeDesc>
+		<TrxGroupID>131</TrxGroupID>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Check)</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>134</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="156">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Paid item</TypeDesc>
+		<TrxGroupID>131</TrxGroupID>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Check)</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>131</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="157">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Check</TypeDesc>
+		<TrxGroupID>134</TrxGroupID>
+		<GroupCode>Check</GroupCode>
+		<GroupDesc>Check</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>134</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="158">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Depreciation Expense</TypeDesc>
+		<TrxGroupID>94</TrxGroupID>
+		<GroupCode>Depreciation</GroupCode>
+		<GroupDesc>Fixed Asset Depreciation</GroupDesc>
+		<TrxDescID>165</TrxDescID>
+		<DescCode>AssetDepreciation</DescCode>
+		<Description>Asset Depreciation</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.AssetDepreciation</SourceFile>
+		<SourceTrxDescID>165</SourceTrxDescID>
+		<SourceTrxStatusID>94</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="159">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Accumulated Depreciation</TypeDesc>
+		<TrxGroupID>94</TrxGroupID>
+		<GroupCode>Depreciation</GroupCode>
+		<GroupDesc>Fixed Asset Depreciation</GroupDesc>
+		<TrxDescID>165</TrxDescID>
+		<DescCode>AssetDepreciation</DescCode>
+		<Description>Asset Depreciation</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.AssetDepreciation</SourceFile>
+		<SourceTrxDescID>165</SourceTrxDescID>
+		<SourceTrxStatusID>94</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="160">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Prepaid Cost</TypeDesc>
+		<TrxGroupID>135</TrxGroupID>
+		<GroupCode>PrepaymentPaidDist</GroupCode>
+		<GroupDesc>Prepayment Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>92</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="161">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payable</TypeDesc>
+		<TrxGroupID>135</TrxGroupID>
+		<GroupCode>PrepaymentPaidDist</GroupCode>
+		<GroupDesc>Prepayment Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>135</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="162">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Curr gain/loss</TypeDesc>
+		<TrxGroupID>135</TrxGroupID>
+		<GroupCode>PrepaymentPaidDist</GroupCode>
+		<GroupDesc>Prepayment Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>135</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="163">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Xfer out</TypeDesc>
+		<TrxGroupID>136</TrxGroupID>
+		<GroupCode>TransferOut</GroupCode>
+		<GroupDesc>Transfer Out</GroupDesc>
+		<TrxDescID>164</TrxDescID>
+		<DescCode>BankTrx</DescCode>
+		<Description>Bank Transaction</Description>
+		<TrxSystemID>2</TrxSystemID>
+		<SystemCode>assetdr</SystemCode>
+		<SystemDesc>Asset Debt</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>164</SourceTrxDescID>
+		<SourceTrxStatusID>137</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="164">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Currency Gain/Loss</TypeDesc>
+		<TrxGroupID>131</TrxGroupID>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Check)</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>131</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="165">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Broker Pymt</TypeDesc>
+		<TrxGroupID>69</TrxGroupID>
+		<GroupCode>BrokerPymt</GroupCode>
+		<GroupDesc>Broker Payment Header</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>69</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="166">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode/>
+		<TypeDesc>Broker Payment-Paid</TypeDesc>
+		<TrxGroupID>137</TrxGroupID>
+		<GroupCode>BrokerPymtPaid</GroupCode>
+		<GroupDesc>Broker Payment-Paid</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID/>
+		<SourceTrxStatusID/>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="167">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accts Payable</TypeDesc>
+		<TrxGroupID>138</TrxGroupID>
+		<GroupCode>BrokerPymtPaidDist</GroupCode>
+		<GroupDesc>Broker Pymt-Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>136</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="168">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payment dist</TypeDesc>
+		<TrxGroupID>138</TrxGroupID>
+		<GroupCode>BrokerPymtPaidDist</GroupCode>
+		<GroupDesc>Broker Pymt-Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>138</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="169">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Currency Gain Loss</TypeDesc>
+		<TrxGroupID>138</TrxGroupID>
+		<GroupCode>BrokerPymtPaidDist</GroupCode>
+		<GroupDesc>Broker Pymt-Distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>138</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="170">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Prepaid Cost</TypeDesc>
+		<TrxGroupID>139</TrxGroupID>
+		<GroupCode>DebitMemoDist</GroupCode>
+		<GroupDesc>Debit memo distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>89</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="171">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payable</TypeDesc>
+		<TrxGroupID>139</TrxGroupID>
+		<GroupCode>DebitMemoDist</GroupCode>
+		<GroupDesc>Debit memo distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>147</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="172">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Currency gain/loss</TypeDesc>
+		<TrxGroupID>139</TrxGroupID>
+		<GroupCode>DebitMemoDist</GroupCode>
+		<GroupDesc>Debit memo distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>147</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="173">
+		<LastChanged>2008-12-05T22:30:23</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Credit Invoice Dist</TypeDesc>
+		<TrxGroupID>64</TrxGroupID>
+		<GroupCode>CreditInvoice</GroupCode>
+		<GroupDesc>Credit Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>64</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="174">
+		<LastChanged>2007-10-31T15:09:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Override Summary</TypeDesc>
+		<TrxGroupID>114</TrxGroupID>
+		<GroupCode>OverridePaid</GroupCode>
+		<GroupDesc>Override Paid</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>Air Ticket</Description>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+		<SystemDesc>Air</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>167</SourceTrxDescID>
+		<SourceTrxStatusID>114</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="175">
+		<LastChanged>2007-10-31T15:09:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Override Receivable</TypeDesc>
+		<TrxGroupID>114</TrxGroupID>
+		<GroupCode>OverridePaid</GroupCode>
+		<GroupDesc>Override Paid</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>Air Ticket</Description>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+		<SystemDesc>Air</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>167</SourceTrxDescID>
+		<SourceTrxStatusID>114</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="176">
+		<LastChanged>2007-10-31T15:09:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Override Gain/Loss</TypeDesc>
+		<TrxGroupID>114</TrxGroupID>
+		<GroupCode>OverridePaid</GroupCode>
+		<GroupDesc>Override Paid</GroupDesc>
+		<TrxDescID>167</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>Air Ticket</Description>
+		<TrxSystemID>5</TrxSystemID>
+		<SystemCode>air</SystemCode>
+		<SystemDesc>Air</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID>167</SourceTrxDescID>
+		<SourceTrxStatusID>114</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="177">
+		<LastChanged>2007-11-04T02:26:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Cash in</TypeDesc>
+		<TrxGroupID>95</TrxGroupID>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Cash in)</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>95</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="178">
+		<LastChanged>2007-11-06T02:19:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payment for tour</TypeDesc>
+		<TrxGroupID>95</TrxGroupID>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Cash in)</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>95</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="179">
+		<LastChanged>2007-11-03T18:57:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Customer Prepayments for tours</TypeDesc>
+		<TrxGroupID>105</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>105</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="180">
+		<LastChanged>2007-11-03T18:57:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Accounts Receivable for tours</TypeDesc>
+		<TrxGroupID>105</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>105</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="181">
+		<LastChanged>2007-11-03T18:58:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Customer prepayment for tours</TypeDesc>
+		<TrxGroupID>106</TrxGroupID>
+		<GroupCode>InvoiceModification</GroupCode>
+		<GroupDesc>Invoice Modification</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>106</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="182">
+		<LastChanged>2007-11-03T18:58:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Accounts Receivable for tours</TypeDesc>
+		<TrxGroupID>106</TrxGroupID>
+		<GroupCode>InvoiceModification</GroupCode>
+		<GroupDesc>Invoice Modification</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>106</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="183">
+		<LastChanged>2007-11-04T00:57:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>DepTrx</TypeCode>
+		<TypeDesc>Customer Prepayments for tours</TypeDesc>
+		<TrxGroupID>105</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>105</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="184">
+		<LastChanged>2007-11-04T00:58:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>DepDist</TypeCode>
+		<TypeDesc>Income from tours</TypeDesc>
+		<TrxGroupID>105</TrxGroupID>
+		<GroupCode>Invoice</GroupCode>
+		<GroupDesc>Invoice</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>105</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="185">
+		<LastChanged>2007-11-04T00:58:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>DepTrx</TypeCode>
+		<TypeDesc>Customer Prepayments for tours</TypeDesc>
+		<TrxGroupID>106</TrxGroupID>
+		<GroupCode>InvoiceModification</GroupCode>
+		<GroupDesc>Invoice Modification</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>106</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="186">
+		<LastChanged>2007-11-04T00:59:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>DepDist</TypeCode>
+		<TypeDesc>Income from tours</TypeDesc>
+		<TrxGroupID>106</TrxGroupID>
+		<GroupCode>InvoiceModification</GroupCode>
+		<GroupDesc>Invoice Modification</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>106</SourceTrxStatusID>
+		<SourcePreferredSign/>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="187">
+		<LastChanged>2007-11-06T02:18:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Optional</TypeCode>
+		<TypeDesc>Non-tour deposit</TypeDesc>
+		<TrxGroupID>95</TrxGroupID>
+		<GroupCode>Payment</GroupCode>
+		<GroupDesc>Payment (Cash in)</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType/>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>95</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="188">
+		<LastChanged>2007-11-10T17:57:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Accounts Rec (Credit Memo) Cr</TypeDesc>
+		<TrxGroupID>103</TrxGroupID>
+		<GroupCode>CreditMemo</GroupCode>
+		<GroupDesc>Credit Memo</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>103</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="189">
+		<LastChanged>2007-11-10T17:57:00</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Credit Memo Dr</TypeDesc>
+		<TrxGroupID>103</TrxGroupID>
+		<GroupCode>CreditMemo</GroupCode>
+		<GroupDesc>Credit Memo</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>103</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="190">
+		<LastChanged>2008-12-05T22:30:23</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Credit Invoice</TypeDesc>
+		<TrxGroupID>64</TrxGroupID>
+		<GroupCode>CreditInvoice</GroupCode>
+		<GroupDesc>Credit Invoice</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>64</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="191">
+		<LastChanged>2008-12-05T22:30:26</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Credit Invoice Dist</TypeDesc>
+		<TrxGroupID>140</TrxGroupID>
+		<GroupCode>CreditInvNonTour</GroupCode>
+		<GroupDesc>Credit Invoice - Non Tour</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>148</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="192">
+		<LastChanged>2008-12-05T22:30:26</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Credit Invoice</TypeDesc>
+		<TrxGroupID>140</TrxGroupID>
+		<GroupCode>CreditInvNonTour</GroupCode>
+		<GroupDesc>Credit Invoice - Non Tour</GroupDesc>
+		<TrxDescID>168</TrxDescID>
+		<DescCode>ApTrx</DescCode>
+		<Description>A/P Transaction</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>148</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="193">
+		<LastChanged>2008-12-06T11:18:41</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Payable Trx</TypeDesc>
+		<TrxGroupID>141</TrxGroupID>
+		<GroupCode>CreditInvoiceDist</GroupCode>
+		<GroupDesc>Credit Invoice distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>87</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="194">
+		<LastChanged>2008-12-06T11:18:29</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payable</TypeDesc>
+		<TrxGroupID>141</TrxGroupID>
+		<GroupCode>CreditInvoiceDist</GroupCode>
+		<GroupDesc>Credit Invoice distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>150</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="195">
+		<LastChanged>2008-12-06T11:20:45</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Payable</TypeDesc>
+		<TrxGroupID>142</TrxGroupID>
+		<GroupCode>CreditInvNonTourDist</GroupCode>
+		<GroupDesc>Credit Invoice (non tour) dist</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>151</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="196">
+		<LastChanged>2008-12-06T11:20:31</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Payable Trx</TypeDesc>
+		<TrxGroupID>142</TrxGroupID>
+		<GroupCode>CreditInvNonTourDist</GroupCode>
+		<GroupDesc>Credit Invoice (non tour) dist</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile/>
+		<SourceTrxDescID>168</SourceTrxDescID>
+		<SourceTrxStatusID>149</SourceTrxStatusID>
+		<SourcePreferredSign>-</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="197">
+		<LastChanged>2008-12-06T11:20:55</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Currency gain/loss</TypeDesc>
+		<TrxGroupID>142</TrxGroupID>
+		<GroupCode>CreditInvNonTourDist</GroupCode>
+		<GroupDesc>Credit Invoice (non tour) dist</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>151</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="198">
+		<LastChanged>2008-12-06T11:18:15</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Diff</TypeCode>
+		<TypeDesc>Currency Gain/Loss</TypeDesc>
+		<TrxGroupID>141</TrxGroupID>
+		<GroupCode>CreditInvoiceDist</GroupCode>
+		<GroupDesc>Credit Invoice distribution</GroupDesc>
+		<TrxDescID>169</TrxDescID>
+		<DescCode>PaymentHistory</DescCode>
+		<Description>Payment history</Description>
+		<TrxSystemID>4</TrxSystemID>
+		<SystemCode>acctpay</SystemCode>
+		<SystemDesc>Accounts Payable</SystemDesc>
+		<TypicalBalance/>
+		<PostingType/>
+		<SourceFile>.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceTrxDescID>169</SourceTrxDescID>
+		<SourceTrxStatusID>150</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="199">
+		<LastChanged>2009-05-21T18:28:09</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Trx</TypeCode>
+		<TypeDesc>Account rec (XL chg) Debit</TypeDesc>
+		<TrxGroupID>102</TrxGroupID>
+		<GroupCode>CancellationCharge</GroupCode>
+		<GroupDesc>Cancellation Charge</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>D</TypicalBalance>
+		<PostingType>T</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>102</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+	<TransactionType ID="200">
+		<LastChanged>2009-05-21T18:28:13</LastChanged>
+		<Deleted>N</Deleted>
+		<TypeCode>Dist</TypeCode>
+		<TypeDesc>Customer Cancellation Charge</TypeDesc>
+		<TrxGroupID>102</TrxGroupID>
+		<GroupCode>CancellationCharge</GroupCode>
+		<GroupDesc>Cancellation Charge</GroupDesc>
+		<TrxDescID>166</TrxDescID>
+		<DescCode>ArTrx</DescCode>
+		<Description>A/R Transaction</Description>
+		<TrxSystemID>3</TrxSystemID>
+		<SystemCode>acctrec</SystemCode>
+		<SystemDesc>Accounts Receivable</SystemDesc>
+		<TypicalBalance>C</TypicalBalance>
+		<PostingType>X</PostingType>
+		<SourceFile>.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceTrxDescID>166</SourceTrxDescID>
+		<SourceTrxStatusID>102</SourceTrxStatusID>
+		<SourcePreferredSign>+</SourcePreferredSign>
+		<AmountField/>
+		<TrxDateField/>
+		<EntryDateField/>
+		<UserIDField/>
+		<TrxIDField/>
+		<AccountIDFile/>
+		<AccountIDField/>
+	</TransactionType>
+</file>

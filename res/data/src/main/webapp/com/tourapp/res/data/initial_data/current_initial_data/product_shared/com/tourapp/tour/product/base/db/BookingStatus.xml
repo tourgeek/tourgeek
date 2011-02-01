@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<BookingStatus ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>No Status</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ACovZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvVW5rbm93bi5naWZwdwgAAAAQAAAAEHVyAAJbSU26YCZ2
+6rKlAgAAeHAAAAEAAP///wD///8A////AP///wD///8A//////+AgP//gID//4CA//+AgAD///8A
+////AP///wD///8A////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAA//8AAP//
+AAD/AAAAAP///wD///8A////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAAAP//
+/wD//////wAA//8AAP8AAAAA////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAA
+AP///wD///8A////AP//////AAD//wAA/wAAAAD///8A////AP///wD///8A////AP//////gID/
+/wAAAP///wD///8A////AP///wD//////wAA//8AAP8AAAAA////AP///wD///8A////AP///wD/
+/////4CA//8AAAD///8A////AP///wD///8A//////8AAP//AAD/AAAAAP///wD///8A////AP//
+/wD///8A////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAA/wAAAAD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAA/wAAAAD///8A
+////AP///wD///8A////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAA/wAAAP//
+//8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//////+AgP//AAD//wAA/wAA
+AP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//////gID//wAA
+//8AAP////8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/////
+/4CA//8AAP//AAD/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+//8A////AP////8AAAD/AAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+/wD///8A////AP///wD//////4CA//+AgAD///8A////AP///wD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD//////4CA//8AAP//AAD/AAAAAP///wD///8A////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP////8AAAD/AAAA/////wD///8A////AP///wD/
+//8A////AP///3g=
+]]></Icon>
+		<Code>NS</Code>
+		<FollowsBookingStatusID/>
+	</BookingStatus>
+	<BookingStatus ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Proposal</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ACYvZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvTmV3LmdpZnB3CAAAABAAAAAQdXIAAltJTbpgJnbqsqUC
+AAB4cAAAAQAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAA
+wMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADA
+wMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwP8AAAD/DQ0N/wAAAP8NDQ3/AAAA/w0N
+Df8AAAD/DQ0N/7a2tv/Dw8MAwMDAAMDAwADAwMAAwMDAAMDAwADAwMD/DQ0N//Ly8v//////8vLy
+///////y8vL//////wAAAP//////tra2AMDAwADAwMAAwMDAAMDAwADAwMAAwMDA/wAAAP//////
+l5nD/6iq0/+foMr/srPc/wAAAP/Pz///AAAA/////wDAwMAAwMDAAMDAwADAwMAAwMDAAMDAwP8N
+DQ3/8vLy/6mq1P+hosz/tLXe/66u1v+/v+f/AAAA/w0NDf/y8vIAwMDAAMDAwADAwMAAwMDAAMDA
+wADAwMD/AAAA//////+ipM3/tbbg/6+w1//Bwej/u7rh/8/O9P8AAAD/DQ0N//Ly8gDAwMAAwMDA
+AMDAwADAwMAAwMDA/w0NDf/y8vL/uLnh/7Gx2P/Dw+r/vr3j/9DQ9v/KyOz/29j8/wAAAP////8A
+wMDAAMDAwADAwMAAwMDAAMDAwP8AAAD//////7Ky2f/FxOz/v77k/9LR9v/Lye7/2tn9AMDAwADA
+wMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMD/DQ0N//Ly8v/Hxu3/wcDm/9TT+P/Myu4AwMDAAMDA
+wADAwMD/AAAAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDA/wAAAP//////w8Ln/9bU+f/Ny+//29n9
+AMDAwP8NDQ0AwMDA/w0NDf/y8vL/DQ0NAMDAwADAwMAAwMDAAMDAwP8NDQ3/8vLy/9fV+v/OzPD/
+2tf8AMDAwADAwMAAwMDA/w0NDf/y8vL/DQ0NAMDAwP////8AwMDAAMDAwADAwMD/AAAA///////O
+zPD/2df7/8TD6QDAwMD/AAAA/w0NDf/y8vL/DQ0N//Ly8v8NDQ3/AAAAAMDAwADAwMAAwMDA/w0N
+Df8AAAD/DQ0N/wAAAP8NDQ0AwMDAAMDAwP/y8vL/DQ0N//Ly8v8NDQ0AwMDA/////wDAwMAAwMDA
+AMDAwADAwMD///////Ly8v//////8vLy/////wDAwMD/DQ0NAMDAwP8NDQ0AwMDA/w0NDQDAwMAA
+wMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwP//////AAAA/////wDA
+wMD/////eA==
+]]></Icon>
+		<Code>PR</Code>
+		<FollowsBookingStatusID/>
+	</BookingStatus>
+	<BookingStatus ID="3">
+		<LastChanged>2006-08-23T03:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Accepted</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0AC0vZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvUHJvcGVydGllcy5naWZwdwgAAAAQAAAAEHVyAAJbSU26
+YCZ26rKlAgAAeHAAAAEAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADA
+wMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDA
+wADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMD/AAAA/w0NDf8AAAD/DQ0N
+/wAAAP8NDQ3/AAAA/w0NDf+2trb/w8PDAMDAwADAwMAAwMDAAMDAwADAwMAAwMDA/w0NDf/y8vL/
+//////Ly8v//////8vLy//////8AAAD//////7a2tgDAwMAAwMDAAMDAwADAwMAAwMDAAMDAwP8A
+AAD//////5eZw/+oqtP/n6DK/7Kz3P8AAAD/z8///wAAAP////8AwMDAAMDAwADAwMAAwMDAAMDA
+wADAwMD/DQ0N//Ly8v+pqtT/oaLM/7S13v+urtb/v7/n/wAAAP8NDQ3/8vLyAMDAwADAwMAAwMDA
+AMDAwADAwMAAwMDA/wAAAP//////oqTN/7W24P+vsNf/wcHo/7u64f/PzvT/AAAA/w0NDf/y8vIA
+wMDAAMDAwADAwMAAwMDAAMDAwP8NDQ3/8vLy/7i54f+xsdj/w8Pq/7694//Q0Pb/ysjs/9vY/P8A
+AAD/////AMDAwADAwMAAwMDAAMDAwADAwMD/AAAA//////+ystn/xcTs/7++5P/S0fb/y8nu/9rZ
+/f/Ny+//DQ0NAMDAwADAwMD/AAAAAMDAwADAwMAAwMDA/w0NDf/y8vL/x8bt/8HA5v/U0/j/zMru
+AMDAwADAwMAAwMDAAMDAwADAwMD/AAAA/w0NDQDAwMAAwMDAAMDAwP8AAAD//////8PC5//W1Pn/
+zcvv/9vZ/QDAwMD/DQ0NAMDAwADAwMD/AAAA/w0NDf/y8vIAwMDAAMDAwADAwMD/DQ0N//Ly8v/X
+1fr/zszw/9rX/P/HxeoAwMDA/wAAAP//////AAAA/w0NDf/y8vIAwMDAAMDAwADAwMAAwMDA/wAA
+AP//////zszw/9nX+//Ew+n/ysjvAMDAwP8NDQ3/AAAA/w0NDf/y8vIAwMDAAMDAwADAwMAAwMDA
+AMDAwP8NDQ3/AAAA/w0NDf8AAAD/DQ0N/wAAAADAwMD/AAAA/w0NDf/y8vIAwMDAAMDAwADAwMAA
+wMDAAMDAwADAwMAAwMDA///////y8vL///////Ly8v////8AwMDA/w0NDf/y8vIAwMDAAMDAwADA
+wMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMD/////AMDA
+wADAwMAAwMDAAMDAwHg=
+]]></Icon>
+		<Code>RQ</Code>
+		<FollowsBookingStatusID>2</FollowsBookingStatusID>
+	</BookingStatus>
+	<BookingStatus ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Cancelled</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ACkvZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvQ2FuY2VsLmdpZnB3CAAAABAAAAAQdXIAAltJTbpgJnbq
+sqUCAAB4cAAAAQAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+//8A////AP///wD///8A////AP///wD///8A/////wAAAAD///8A////AP///wD///8A////AP//
+/wD///8A/////wAAAAD///8A////AP///wD///8A/////wAAAP//gID/AAAAAP///wD///8A////
+AP///wD///8A/////wAAAP//gID/AAAAAP///wD///8A////AP//////gID//wAA//8AAP8AAAAA
+////AP///wD///8A/////wAAAP//gID//wAA//8AAP8AAAAA////AP///wD/////AAAA//8AAP//
+AAD//wAA/wAAAAD///8A/////wAAAP//gID//wAA//8AAP8AAAAA////AP///wD///8A////AP//
+//8AAAD//wAA//8AAP//AAD/AAAA/wAAAP//gID//wAA//8AAP8AAAD/////AP///wD///8A////
+AP///wD///8A/////wAAAP//AAD//wAA//8AAP//gID//wAA//8AAP8AAAD/////AP///wD///8A
+////AP///wD///8A////AP///wD/////AAAA//8AAP//AAD//wAA//8AAP8AAAD/////AP///wD/
+//8A////AP///wD///8A////AP///wD/////AAAA//+AgP//AAD//wAA//8AAP//AAD//wAA/wAA
+AAD///8A////AP///wD///8A////AP///wD/////AAAA//+AgP//AAD//wAA/wAAAP8AAAD//wAA
+//8AAP//AAD/AAAAAP///wD///8A////AP///wD/////AAAA//+AgP//AAD//wAA/wAAAP////8A
+/////wAAAP//AAD//wAA//8AAP8AAAAA////AP///wD///8A//////+AgP//AAD//wAA/wAAAP//
+//8A////AP///wD/////AAAA//8AAP//AAD//wAA/wAAAAD///8A////AP////8AAAD//wAA/wAA
+AP////8A////AP///wD///8A////AP////8AAAD//wAA/wAAAAD///8A////AP///wD///8A////
+/wAAAP////8A////AP///wD///8A////AP///wD///8A/////wAAAP////8A////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+//8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+/wD///8A////eA==
+]]></Icon>
+		<Code>XL</Code>
+		<FollowsBookingStatusID/>
+	</BookingStatus>
+	<BookingStatus ID="5">
+		<LastChanged>2006-08-23T03:39:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Okay</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyABVqYXZheC5zd2luZy5JbWFnZUljb24HZDtmuS2DMgMABUkABmhlaWdodEkABXdpZHRo
+TAARYWNjZXNzaWJsZUNvbnRleHR0ACtMamF2YXgvc3dpbmcvSW1hZ2VJY29uJEFjY2Vzc2libGVJ
+bWFnZUljb247TAALZGVzY3JpcHRpb250ABJMamF2YS9sYW5nL1N0cmluZztMAA1pbWFnZU9ic2Vy
+dmVydAAeTGphdmEvYXd0L2ltYWdlL0ltYWdlT2JzZXJ2ZXI7eHAAAAAQAAAAEHB0ACcvZGF0YS9q
+YXZhL3RvdXIvaW1hZ2VzL2J1dHRvbnMvT2theS5naWZwdwgAAAAQAAAAEHVyAAJbSU26YCZ26rKl
+AgAAeHAAAAEAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+//8A////AP///wD///8A////AP////8AAAAA////AP///wD///8A////AP///wD///8A////AP//
+/wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wAAAAD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP/E/8MA////AP///wD///8A
+////AP///wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/AAAAAP////8A
+AAAA////AP///wD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/AAAA////
+//8AAAD/xP/D/wAAAAD///8A////AP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/AAAA
+/////wD/////xP/D/wD/AP8A/wD/AAAAAP///wD///8A////AP////8AAAD/xP/D/wD/AP8A/wD/
+AAAA/////wD///8A/////wAAAP8A/wD/AP8A/wD/AP8AAAAA////AP////8AAAD/xP/D/wD/AP8A
+/wD/AAAA/////wD///8A////AP///wD/////AAAA/wD/AP8A/wD/AP8A/wAAAP8AAAD/xP/D/wD/
+AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP////8AAAD/AP8A/wD/AP8A/wD/xP/D
+/wD/AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A/////wAAAP8A/wD/
+AP8A/wD/AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD/
+////AAAA/wD/AP8A/wD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A////AP//
+/wD///8A////AP////8AAAD/AAAA/////wD///8A////AP///wD///8A////AP///wD///8A////
+AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A
+////AP///3g=
+]]></Icon>
+		<Code>OK</Code>
+		<FollowsBookingStatusID>3</FollowsBookingStatusID>
+	</BookingStatus>
+</file>

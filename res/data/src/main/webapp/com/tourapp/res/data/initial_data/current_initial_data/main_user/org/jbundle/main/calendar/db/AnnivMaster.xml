@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<AnnivMaster ID="1">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2009-11-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Run Tour and Booking Events</Description>
+		<RepeatIntervalID>1</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties><![CDATA[#Field properties
+#Fri May 23 16:01:38 PDT 2008
+BookingUpdate=Y
+TourUpdate=Y
+process=.tour.product.tour.schedule.screen.TourEventUpdateProcess
+]]></Properties>
+	</AnnivMaster>
+	<AnnivMaster ID="2">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2009-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<RepeatIntervalID>3</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="3">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2008-12-26T00:00:00</StartDateTime>
+		<EndDateTime>2008-12-26T23:59:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="4">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2008-08-01T00:00:00</StartDateTime>
+		<EndDateTime>2008-08-01T23:59:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="5">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2008-09-18T00:00:00</StartDateTime>
+		<EndDateTime>2008-09-18T23:59:00</EndDateTime>
+		<Description>President's Day</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="6">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2009-02-04T00:00:00</StartDateTime>
+		<EndDateTime>2009-02-04T23:59:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="7">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2009-03-01T00:00:00</StartDateTime>
+		<EndDateTime>2009-03-01T23:59:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="8">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2009-06-27T00:00:00</StartDateTime>
+		<EndDateTime>2009-06-27T23:59:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+	<AnnivMaster ID="9">
+		<LastChanged>2010-04-02T16:00:58</LastChanged>
+		<Deleted>N</Deleted>
+		<StartDateTime>2009-07-25T00:00:00</StartDateTime>
+		<EndDateTime>2009-07-25T23:59:00</EndDateTime>
+		<Description>Christmas</Description>
+		<RepeatIntervalID>4</RepeatIntervalID>
+		<RepeatCount/>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+	</AnnivMaster>
+</file>

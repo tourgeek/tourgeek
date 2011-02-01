@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ProductSearchType ID="1">
+		<LastChanged>2008-10-18T17:43:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Activities</Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="2">
+		<LastChanged>2008-10-18T17:43:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Themes</Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="3">
+		<LastChanged>2008-10-18T17:43:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Ability</Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="4">
+		<LastChanged>2008-10-18T17:42:57</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Exertion</Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="5">
+		<LastChanged>2008-10-18T17:42:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Comfort</Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="6">
+		<LastChanged>2008-10-19T01:53:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Attraction Category Code</Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="7">
+		<LastChanged>2008-10-19T08:33:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Brand Category Code</Description>
+		<Air/>
+		<Car/>
+		<Hotel>Y</Hotel>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="8">
+		<LastChanged>2008-10-19T08:33:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Equipment Type</Description>
+		<Air>N</Air>
+		<Car>Y</Car>
+		<Hotel/>
+		<Item/>
+		<Tour/>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="9">
+		<LastChanged>2008-10-19T01:52:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hotel Amenity Code</Description>
+		<Air/>
+		<Car/>
+		<Hotel>Y</Hotel>
+		<Item/>
+		<Tour/>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="10">
+		<LastChanged>2008-10-19T08:33:25</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Location Category Codes</Description>
+		<Air>N</Air>
+		<Car>N</Car>
+		<Hotel>Y</Hotel>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise>Y</Cruise>
+		<Land>Y</Land>
+	</ProductSearchType>
+	<ProductSearchType ID="11">
+		<LastChanged>2008-10-19T08:33:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Package Type </Description>
+		<Air/>
+		<Car/>
+		<Hotel>N</Hotel>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land>Y</Land>
+	</ProductSearchType>
+	<ProductSearchType ID="12">
+		<LastChanged>2008-10-19T08:32:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Recreation Srvc Detail Code</Description>
+		<Air/>
+		<Car/>
+		<Hotel>Y</Hotel>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land>Y</Land>
+	</ProductSearchType>
+	<ProductSearchType ID="13">
+		<LastChanged>2008-10-19T01:53:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Room Amenity Type</Description>
+		<Air/>
+		<Car/>
+		<Hotel>Y</Hotel>
+		<Item/>
+		<Tour/>
+		<Transportation/>
+		<Cruise/>
+		<Land/>
+	</ProductSearchType>
+	<ProductSearchType ID="14">
+		<LastChanged>2008-10-19T08:32:34</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Recreation Srvc Type </Description>
+		<Air/>
+		<Car/>
+		<Hotel/>
+		<Item/>
+		<Tour>Y</Tour>
+		<Transportation/>
+		<Cruise/>
+		<Land>Y</Land>
+	</ProductSearchType>
+</file>

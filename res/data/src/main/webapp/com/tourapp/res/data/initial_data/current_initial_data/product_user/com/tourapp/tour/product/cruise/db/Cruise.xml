@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Cruise ID="1">
+		<LastChanged>2010-04-02T16:01:26</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Orient Cruise - 12 days from Tokyo to China</Description>
+		<Code/>
+		<VendorID>45</VendorID>
+		<OperatorsCode/>
+		<ProductChainID/>
+		<CityID>842</CityID>
+		<Etd>12:00:00</Etd>
+		<AckDays/>
+		<Comments/>
+		<Properties/>
+		<ItineraryDesc/>
+		<DescSort>ORIENT CRU</DescSort>
+		<ProductType>Cruise</ProductType>
+		<ProductCost/>
+		<ProductCostLocal/>
+		<ProductMessageTransportID/>
+		<DisplayInventoryStatusID>1</DisplayInventoryStatusID>
+		<InventoryAvailability/>
+		<CurrencyCode/>
+		<CurrencyCodeLocal/>
+		<VendorName/>
+		<DisplayCostStatusID>0</DisplayCostStatusID>
+		<PPCost/>
+		<PPCostLocal/>
+		<RateID/>
+		<ClassID/>
+		<ProductPriceLocal/>
+		<PPPriceLocal/>
+		<CityCode>NRT</CityCode>
+		<ToCityID>281</ToCityID>
+		<ToCityCode>PEK</ToCityCode>
+		<CruiseReverseID/>
+		<CruiseManFile/>
+		<Frequency/>
+		<Distance/>
+		<Days/>
+		<Breakfasts/>
+		<Lunches/>
+		<Dinners/>
+		<DiscontinuedOn/>
+	</Cruise>
+</file>

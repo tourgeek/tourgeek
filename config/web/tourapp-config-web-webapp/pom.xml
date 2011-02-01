@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <parent>
+    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourapp-config-web-reactor</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>tourapp-config-web-webapp</artifactId>
+  <name>tourapp-config-web-webapp - Tour webapp setup</name>
+  <packaging>war</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>${maven-dependency-pluginVersion}</version>
+          <executions>
+              <execution>
+                  <!-- 
+                      Copy the webstart bundle in as a resource
+                      before packaging starts.
+                  -->
+                  <phase>process-resources</phase>
+                  <goals>
+                      <goal>unpack</goal>
+                  </goals>
+              </execution>
+          </executions>
+          <configuration>
+              <artifactItems>
+                  <artifactItem>
+                    <groupId>${project.groupId}</groupId>
+                    <artifactId>tourapp-config-web-jnlp</artifactId>
+                    <version>${project.version}</version>
+                    <type>zip</type>
+                    <classifier>bin</classifier>
+                  </artifactItem>
+                  <!-- artifactItem>
+                    <groupId>org.jbundle.app.program</groupId>
+                    <artifactId>org.jbundle.app.jnlp</artifactId>
+                    <version>${jbundleVersion}</version>
+                    <type>zip</type>
+                    <classifier>bin</classifier>
+                  </artifactItem -->
+	            <artifactItem>
+	              <groupId>org.jbundle.config.web</groupId>
+	              <artifactId>jbundle-config-web-cocoon</artifactId>
+	              <version>${jbundle-config-web-cocoonVersion}</version>
+	              <type>war</type>
+	              <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
+	            </artifactItem>
+                  <artifactItem>
+                    <groupId>org.jbundle.config.web</groupId>
+                    <artifactId>jbundle-config-web-webapp</artifactId>
+                    <version>${jbundleVersion}</version>
+                    <type>war</type>
+                  </artifactItem>
+                  <artifactItem>
+                    <groupId>com.tourapp.res</groupId>
+                    <artifactId>com.tourapp.res.data</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                  </artifactItem>
+                  <artifactItem>
+                    <groupId>com.tourapp.res</groupId>
+                    <artifactId>com.tourapp.res.docs</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                  </artifactItem>
+              </artifactItems>
+              <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
+          </configuration>
+      </plugin>
+           
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${jetty-maven-pluginVersion}</version>
+        <configuration>
+          <connectors>
+            <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+              <port>8888</port>
+              <maxIdleTime>30000</maxIdleTime>
+            </connector>
+          </connectors>
+          <webAppSourceDirectory>${project.build.directory}/${project.artifactId}-${project.version}</webAppSourceDirectory>
+          <contextPath>/</contextPath>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>${maven-war-pluginVersion}</version>
+        <configuration>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+        <groupId>com.tourapp.config</groupId>
+        <artifactId>tourapp-config-dep-all</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+        <type>pom</type>
+    </dependency>
+  </dependencies>
+
+</project>

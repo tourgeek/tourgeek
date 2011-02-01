@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-thin-app-reactor</artifactId>
+    <groupId>com.tourapp.thin.app</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.tourapp.thin.app.booking</artifactId>
+  <packaging>bundle</packaging>
+  <name>tourapp-thin-app-booking - Tour thin booking code</name>
+
+  <dependencies>
+  	<dependency>
+	    <groupId>com.tourapp.thin</groupId>
+	    <artifactId>com.tourapp.thin.tour.product</artifactId>
+	    <version>0.7.7-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>com.tourapp.thin</groupId>
+	    <artifactId>com.tourapp.thin.tour.booking</artifactId>
+	    <version>0.7.7-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>com.tourapp.thin</groupId>
+	    <artifactId>com.tourapp.thin.tour.request</artifactId>
+	    <version>0.7.7-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>com.tourapp.thin</groupId>
+	    <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
+	    <version>0.7.7-SNAPSHOT</version>
+  	</dependency>
+    <dependency>
+      <groupId>org.jbundle.util.calendarpanel</groupId>
+      <artifactId>org.jbundle.util.calendarpanel</artifactId>
+      <version>${jbundle-calendarpanelVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.thin.base.screen</groupId>
+      <artifactId>org.jbundle.thin.base.screen.cal.other</artifactId>
+      <version>${jbundleVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.thin.base.screen</groupId>
+      <artifactId>org.jbundle.thin.base.screen.cal.grid</artifactId>
+      <version>${jbundleVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.thin.opt</groupId>
+      <artifactId>org.jbundle.thin.opt.location</artifactId>
+      <version>${jbundleVersion}</version>
+    </dependency>
+  </dependencies>
+
+</project>

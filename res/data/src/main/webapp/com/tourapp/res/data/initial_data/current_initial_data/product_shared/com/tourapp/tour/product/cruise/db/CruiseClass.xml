@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CruiseClass ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Outside cabin</Description>
+		<Code/>
+	</CruiseClass>
+	<CruiseClass ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Inside cabin</Description>
+		<Code/>
+	</CruiseClass>
+	<CruiseClass ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Cabin with balcony</Description>
+		<Code/>
+	</CruiseClass>
+	<CruiseClass ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Mini suite</Description>
+		<Code/>
+	</CruiseClass>
+	<CruiseClass ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Mini suite w/balcony</Description>
+		<Code/>
+	</CruiseClass>
+	<CruiseClass ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Private suite</Description>
+		<Code/>
+	</CruiseClass>
+</file>

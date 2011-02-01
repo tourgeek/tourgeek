@@ -1,0 +1,169 @@
+/**
+ *  @(#)OTACodeTable.
+ *  Copyright © 2010 tourapp.com. All rights reserved.
+ */
+package com.tourapp.tour.product.base.ota.db;
+
+import java.awt.*;
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import com.tourapp.tour.product.base.ota.screen.*;
+import com.tourapp.tour.genled.db.*;
+
+/**
+ *  OTACodeTable - .
+ */
+public class OTACodeTable extends VirtualRecord
+{
+    private static final long serialVersionUID = 1L;
+
+    //public static final int kID = kID;
+    public static final int kName = kVirtualRecordLastField + 1;
+    public static final int kNameCode = kName + 1;
+    public static final int kCreationDate = kNameCode + 1;
+    public static final int kDeletionDate = kCreationDate + 1;
+    public static final int kVersionID = kDeletionDate + 1;
+    public static final int kProperties = kVersionID + 1;
+    public static final int kOTACodeTableLastField = kProperties;
+    public static final int kOTACodeTableFields = kProperties - DBConstants.MAIN_FIELD + 1;
+
+    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
+    public static final int kNameCodeKey = kIDKey + 1;
+    public static final int kNameKey = kNameCodeKey + 1;
+    public static final int kOTACodeTableLastKey = kNameKey;
+    public static final int kOTACodeTableKeys = kNameKey - DBConstants.MAIN_KEY_FIELD + 1;
+    /**
+     * Default constructor.
+     */
+    public OTACodeTable()
+    {
+        super();
+    }
+    /**
+     * Constructor.
+     */
+    public OTACodeTable(RecordOwner screen)
+    {
+        this();
+        this.init(screen);
+    }
+    /**
+     * Initialize class fields.
+     */
+    public void init(RecordOwner screen)
+    {
+        super.init(screen);
+    }
+
+    public static final String kOTACodeTableFile = "OTACodeTable";
+    /**
+     * Get the table name.
+     */
+    public String getTableNames(boolean bAddQuotes)
+    {
+        return (m_tableName == null) ? Record.formatTableNames(kOTACodeTableFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+    }
+    /**
+     * Get the Database Name.
+     */
+    public String getDatabaseName()
+    {
+        return "product";
+    }
+    /**
+     * Is this a local (vs remote) file?.
+     */
+    public int getDatabaseType()
+    {
+        return DBConstants.REMOTE | DBConstants.USER_DATA;
+    }
+    /**
+     * MakeScreen Method.
+     */
+    public BaseScreen makeScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
+    {
+        BaseScreen screen = null;
+        if ((iDocMode & ScreenConstants.DETAIL_MODE) == ScreenConstants.DETAIL_MODE)
+            screen = new OTACodesGridScreen(this, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+        else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
+            screen = new OTACodeTableScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+        else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
+            screen = new OTACodeTableGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+        else
+            screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
+        return screen;
+    }
+    /**
+     * Add this field in the Record's field sequence.
+     */
+    public BaseField setupField(int iFieldSeq)
+    {
+        BaseField field = null;
+        //if (iFieldSeq == kID)
+        //{
+        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == kName)
+            field = new StringField(this, "Name", 60, null, null);
+        if (iFieldSeq == kNameCode)
+            field = new StringField(this, "NameCode", 3, null, null);
+        if (iFieldSeq == kCreationDate)
+            field = new DateField(this, "CreationDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == kDeletionDate)
+            field = new DateField(this, "DeletionDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == kVersionID)
+            field = new VersionField(this, "VersionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == kProperties)
+            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (field == null)
+        {
+            field = super.setupField(iFieldSeq);
+            if (field == null) if (iFieldSeq < kOTACodeTableLastField)
+                field = new EmptyField(this);
+        }
+        return field;
+    }
+    /**
+     * Add this key area description to the Record.
+     */
+    public KeyArea setupKey(int iKeyArea)
+    {
+        KeyArea keyArea = null;
+        if (iKeyArea == kIDKey)
+        {
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
+            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+        }
+        if (iKeyArea == kNameCodeKey)
+        {
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameCode");
+            keyArea.addKeyField(kNameCode, DBConstants.ASCENDING);
+        }
+        if (iKeyArea == kNameKey)
+        {
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Name");
+            keyArea.addKeyField(kName, DBConstants.ASCENDING);
+        }
+        if (keyArea == null) if (iKeyArea < kOTACodeTableLastKey)
+        {
+            keyArea = super.setupKey(iKeyArea);     
+            if (keyArea == null) if (iKeyArea < kOTACodeTableLastKey)
+                keyArea = new EmptyKey(this);
+        }
+        return keyArea;
+    }
+
+}

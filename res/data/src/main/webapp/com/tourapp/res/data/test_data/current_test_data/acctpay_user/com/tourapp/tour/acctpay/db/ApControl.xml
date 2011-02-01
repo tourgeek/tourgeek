@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ApControl ID="1">
+		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<Deleted>N</Deleted>
+		<AutoApCode>N</AutoApCode>
+		<ApBankAcctID>2</ApBankAcctID>
+		<ApAccountID>32</ApAccountID>
+		<BrokerVendorID>34</BrokerVendorID>
+		<CountryID>182</CountryID>
+		<CurrencysID>840</CurrencysID>
+		<MessageTransportID>11</MessageTransportID>
+		<VendorStatusID>1</VendorStatusID>
+		<PaymentCycleID>1</PaymentCycleID>
+		<PaymentCodeID>1</PaymentCodeID>
+		<PrepayTypeID>1</PrepayTypeID>
+		<NonTourApAccountID>33</NonTourApAccountID>
+		<CostAccountID>109</CostAccountID>
+		<CurrOUAccountID>64</CurrOUAccountID>
+		<PrepayAccountID>18</PrepayAccountID>
+		<NonTourPrepayAccountID>114</NonTourPrepayAccountID>
+		<AirAccountID>61</AirAccountID>
+		<PPTicAccountID>20</PPTicAccountID>
+		<ArcSummaryAccountID>109</ArcSummaryAccountID>
+		<OverrideRecAccountID>15</OverrideRecAccountID>
+		<OverrideSummAccountID>16</OverrideSummAccountID>
+		<OverrideGainLossAccountID>117</OverrideGainLossAccountID>
+		<Ten99Template>report</Ten99Template>
+	</ApControl>
+</file>

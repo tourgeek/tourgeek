@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<img src="images/com/tourloco/logoblack.gif" align="left" alt="Logo" />
+<img src="images/com/tourloco/nameblack.gif" alt="tourloco.com" /><br />
+<span style="font-size: 14pt; font-style: bold">
+Your travel business, on-line.<p />
+</span>
+<span style="font-size: 12pt"> Software to create, modify, and book tours on-line.<br />
+<ul>
+	<li>Create simple tours or complicated custom-built FITs.</li>
+	<li>Real-time reservations of downline components using open web-services.</li>
+	<li>Real-time Internet access to your tours via the web or open web-services.</li>
+	<li>Easy to use tour entry and operations system.</li>
+	<li>Full accounting system.</li>
+</ul>
+More about tourloco.com <a href="?xml=docs/com/tourloco/aboutus.xml">here.</a><br />
+</span>
+</html>

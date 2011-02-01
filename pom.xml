@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+  	<groupId>org.jbundle.config</groupId>
+  	<artifactId>jbundle-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../jbundle/jbundle-parent</relativePath>
+  </parent>
+
+  <groupId>com.tourapp.config</groupId>
+  <artifactId>tourapp-project-reactor</artifactId>
+  <version>0.7.7-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>tour-project-reactor - Top Level Project parent</name>
+  <description>Parent project for all applications</description>
+
+  <modules>
+    <module>res</module>
+    <module>thin</module>
+    <module>tour</module>
+    <module>config</module>
+  </modules>
+
+  <scm>
+    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/tourapp</url>
+    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/tourapp</connection>
+    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp</developerConnection>
+  </scm>
+
+</project>

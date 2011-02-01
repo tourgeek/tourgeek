@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Card ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Mastercard</Description>
+		<ServiceCharge>0.0000</ServiceCharge>
+		<CreditCardRecAccountID>112</CreditCardRecAccountID>
+		<CreditCardVarAccountID>113</CreditCardVarAccountID>
+		<CardCode/>
+	</Card>
+	<Card ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Visa</Description>
+		<ServiceCharge>0.0000</ServiceCharge>
+		<CreditCardRecAccountID>112</CreditCardRecAccountID>
+		<CreditCardVarAccountID>113</CreditCardVarAccountID>
+		<CardCode/>
+	</Card>
+	<Card ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Discover</Description>
+		<ServiceCharge>0.0000</ServiceCharge>
+		<CreditCardRecAccountID>112</CreditCardRecAccountID>
+		<CreditCardVarAccountID>113</CreditCardVarAccountID>
+		<CardCode/>
+	</Card>
+	<Card ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>American Express</Description>
+		<ServiceCharge>0.0000</ServiceCharge>
+		<CreditCardRecAccountID>112</CreditCardRecAccountID>
+		<CreditCardVarAccountID>113</CreditCardVarAccountID>
+		<CardCode/>
+	</Card>
+</file>

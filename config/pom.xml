@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>tourapp-project-reactor</artifactId>
+    <groupId>com.tourapp.config</groupId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+  <artifactId>tourapp-config-reactor</artifactId>
+  <name>tourapp-config-reactor - Tour configuration parent</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>web</module>
+    <module>tourapp-config-server</module>
+    <module>tourapp-config-tourapp</module>
+    <module>dep</module>
+  </modules>
+
+</project>

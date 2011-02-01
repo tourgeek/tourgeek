@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<IssueStatus ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Active</Description>
+	</IssueStatus>
+	<IssueStatus ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Closed</Description>
+	</IssueStatus>
+	<IssueStatus ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Assigned</Description>
+	</IssueStatus>
+	<IssueStatus ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Resolved - Not Repro</Description>
+	</IssueStatus>
+	<IssueStatus ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Resolved - Fixed</Description>
+	</IssueStatus>
+	<IssueStatus ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Resolved - Won't fix</Description>
+	</IssueStatus>
+	<IssueStatus ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Resolved - Posponed</Description>
+	</IssueStatus>
+	<IssueStatus ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Resolved - Duplicate</Description>
+	</IssueStatus>
+	<IssueStatus ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Resolved - By design</Description>
+	</IssueStatus>
+</file>
