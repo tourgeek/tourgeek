@@ -25,6 +25,7 @@
     <module>util</module>
     <module>app</module>
     <module>base</module>
+    <module>message</module>
   </modules>
 
  <build>
