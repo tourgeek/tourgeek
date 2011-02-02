@@ -12,10 +12,10 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>tourapp-config-dep-res</module>
-    <module>tourapp-config-dep-thin</module>
-    <module>tourapp-config-dep-tour</module>
-    <module>tourapp-config-dep-all</module>
+    <module>res</module>
+    <module>thin</module>
+    <module>tour</module>
+    <module>all</module>
   </modules>
 
 </project>

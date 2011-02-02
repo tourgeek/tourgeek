@@ -13,8 +13,8 @@
 
   <modules>
     <module>web</module>
-    <module>tourapp-config-server</module>
-    <module>tourapp-config-tourapp</module>
+    <module>server</module>
+    <module>tourapp</module>
     <module>dep</module>
   </modules>
 

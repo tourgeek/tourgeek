@@ -12,8 +12,8 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>tourapp-config-web-jnlp</module>
-    <module>tourapp-config-web-webapp</module>
+    <module>jnlp</module>
+    <module>webapp</module>
   </modules>
 
 </project>
