@@ -50,7 +50,7 @@
     </dependency>
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
-      <artifactId>org.jbundle.base.screen.control.cocoon</artifactId>
+      <artifactId>org.jbundle.base.screen.control.xslservlet</artifactId>
       <version>${jbundleVersion}</version>
     </dependency>
     <!-- dependency>
