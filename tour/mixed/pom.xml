@@ -79,13 +79,11 @@
     <dependency>
       <groupId>jtidy</groupId>
       <artifactId>jtidy</artifactId>
-      <version>${jtidyVersion}</version>
     </dependency>
 
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
-      <version>${servlet-apiVersion}</version>
       <scope>provided</scope>
     </dependency>
 

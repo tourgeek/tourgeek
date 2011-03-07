@@ -18,7 +18,6 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>${exec-maven-pluginVersion}</version>
         <executions>
           <execution>
           	<phase>run</phase>
