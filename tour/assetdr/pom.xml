@@ -4,31 +4,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
-    <version>0.7.7-SNAPSHOT</version>
+  	<artifactId>tourapp-project-reactor</artifactId>
+  	<groupId>com.tourapp.config</groupId>
+  	<version>0.7.7-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.assetdr</artifactId>
-  <name>tourapp-tour-assetdr - Asset debt</name>
-  <packaging>bundle</packaging>
+  <groupId>com.tourapp.tour</groupId>
+  <artifactId>tourapp-tour-assetdr-reactor</artifactId>
+  <name>tourapp-tour-assetdr-reactor - Tour asset debt parent</name>
+  <packaging>pom</packaging>
 
-  <dependencies>
-    <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.genled</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.base</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jbundle.util.wsdl</groupId>
-      <artifactId>org.jbundle.util.wsdl.currencyconverter</artifactId>
-      <version>${jbundle-util-wsdlVersion}</version>
-    </dependency>
-  </dependencies>
+  <modules>
+  	<module>core</module>
+  </modules>
 
 </project>
