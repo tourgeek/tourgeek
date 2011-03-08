@@ -19,16 +19,16 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.base.message.trx.message.external.convert.jaxb.*;
+import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jbundle.thin.base.message.*;
-import net.webservicex.currencyconverter.*;
+import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.base.message.trx.message.external.*;
 import org.jbundle.base.message.trx.message.internal.*;
 
 /**
  *  CurrencyRequestSOAPMessageOut - .
  */
-public class CurrencyRequestSOAPMessageOut extends JaxbConvertToNative
+public class CurrencyRequestSOAPMessageOut extends JibxConvertToNative
 {
     /**
      * Default constructor.
@@ -70,12 +70,11 @@ public class CurrencyRequestSOAPMessageOut extends JaxbConvertToNative
         BaseMessage message = this.getMessage();
         String currencyCode = message.getString(ManualMessage.MESSAGE_PARAM);
         
-        ObjectFactory factory = new ObjectFactory();
-        ConversionRate root = factory.createConversionRate();
-        net.webservicex.currencyconverter.Currency currency = net.webservicex.currencyconverter.Currency.valueOf(currencyCode);
+        ConversionRate root = new ConversionRate();
+        org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = org.jibx.schema.net.webservicex.currencyconvertor.Currency.valueOf(currencyCode);
         if (currency == null)
             return null;
-        root.setFromCurrency(net.webservicex.currencyconverter.Currency.USD);
+        root.setFromCurrency(org.jibx.schema.net.webservicex.currencyconvertor.Currency.USD);
         root.setToCurrency(currency);
         
         return root;

@@ -20,9 +20,14 @@
       <version>0.7.7-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>org.jbundle.util.wsdl</groupId>
-      <artifactId>org.jbundle.util.wsdl.currencyconverter</artifactId>
-      <version>${jbundle-util-wsdlVersion}</version>
+      <groupId>org.jibx.schema.net.webservicex</groupId>
+      <artifactId>org.jibx.schema.net.webservicex.currencyconvertor</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.base.message</groupId>
+      <artifactId>org.jbundle.base.message.jibx</artifactId>
+      <version>${jbundleVersion}</version>
     </dependency>
   </dependencies>
 

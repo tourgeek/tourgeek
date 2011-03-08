@@ -19,8 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.base.message.trx.message.external.convert.jaxb.*;
-import net.webservicex.currencyconverter.*;
+import org.jbundle.base.message.trx.message.external.convert.jibx.*;
+import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.trx.message.internal.*;
 import org.jbundle.base.message.trx.message.external.*;
@@ -28,7 +28,7 @@ import org.jbundle.base.message.trx.message.external.*;
 /**
  *  CurrencyResponseSOAPMessageIn - .
  */
-public class CurrencyResponseSOAPMessageIn extends JaxbConvertToMessage
+public class CurrencyResponseSOAPMessageIn extends JibxConvertToMessage
 {
     /**
      * Default constructor.

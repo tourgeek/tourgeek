@@ -22,11 +22,11 @@ import org.jbundle.model.*;
 import org.jbundle.base.thread.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourapp.tour.base.db.*;
-import net.webservicex.currencyconverter.*;
+import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.base.message.trx.message.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.trx.transport.soap.*;
-import org.jbundle.base.message.trx.message.external.convert.jaxb.*;
+import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jbundle.base.message.trx.message.external.*;
 
 /**
@@ -100,23 +100,22 @@ public class CurrencyUpdateProcess extends BaseProcess
      */
     public double getConversionRate(String currencyCode)
     {
-        ObjectFactory factory = new ObjectFactory();
-        ConversionRate root = factory.createConversionRate();
-        net.webservicex.currencyconverter.Currency currency = null;
+        ConversionRate root = new ConversionRate();
+        org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = null;
         try {
-            currency = net.webservicex.currencyconverter.Currency.valueOf(currencyCode);
+            currency = org.jibx.schema.net.webservicex.currencyconvertor.Currency.valueOf(currencyCode);
         } catch (Exception e) {
             currency = null;    // Ignore
         }
         if (currency == null)
             return 0.0;
-        root.setFromCurrency(net.webservicex.currencyconverter.Currency.USD);
+        root.setFromCurrency(org.jibx.schema.net.webservicex.currencyconvertor.Currency.USD);
         root.setToCurrency(currency);
         
         TrxMessageHeader messageHeader = new TrxMessageHeader(null, null);
         BaseMessage message = new TreeMessage(messageHeader, null);
         messageHeader.put(SOAPMessageTransport.SOAP_PACKAGE, "net.webservicex.currencyconverter");
-        messageHeader.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JaxbConvertToNative.class.getName());
+        messageHeader.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JibxConvertToNative.class.getName());
         String strDest = "http://www.webservicex.com/CurrencyConvertor.asmx";
         messageHeader.put(TrxMessageHeader.DESTINATION_PARAM, strDest);
         messageHeader.put("SOAPAction", "http://www.webserviceX.NET/ConversionRate");
@@ -129,7 +128,7 @@ public class CurrencyUpdateProcess extends BaseProcess
         SoapTrxMessageIn externalMessageIn = (SoapTrxMessageIn)messageIn.getExternalMessage();
         TrxMessageHeader messageHeaderIn = (TrxMessageHeader)messageIn.getMessageHeader();
         messageHeaderIn.put(SOAPMessageTransport.SOAP_PACKAGE, "net.webservicex.currencyconverter");
-        messageHeaderIn.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JaxbConvertToMessage.class.getName());
+        messageHeaderIn.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JibxConvertToMessage.class.getName());
         
         ConversionRateResponse rootIn = (ConversionRateResponse)externalMessageIn.convertToMessage();
         if (rootIn == null)
