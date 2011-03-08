@@ -36,6 +36,11 @@
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.assetdr.process</artifactId>
+        <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.booking</artifactId>
         <version>0.7.7-SNAPSHOT</version>
     </dependency>
