@@ -22,8 +22,8 @@ import org.jbundle.model.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jbundle.base.message.trx.message.external.*;
 import org.jbundle.thin.base.message.*;
-import org.jibx.ota.ping.*;
-import org.jibx.ota.base.*;
+import org.jibx.schema.org.opentravel._2010B.ping.*;
+import org.jibx.schema.org.opentravel._2010B.base.*;
 import org.joda.time.*;
 
 /**

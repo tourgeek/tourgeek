@@ -20,8 +20,8 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.base.message.trx.message.external.*;
-import org.jibx.ota.ping.*;
-import org.jibx.ota.base.*;
+import org.jibx.schema.org.opentravel._2010B.ping.*;
+import org.jibx.schema.org.opentravel._2010B.base.*;
 import com.tourapp.tour.message.base.request.in.*;
 import org.jbundle.thin.base.message.*;
 

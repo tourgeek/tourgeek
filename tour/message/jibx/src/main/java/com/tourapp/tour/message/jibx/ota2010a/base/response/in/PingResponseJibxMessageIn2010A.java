@@ -21,8 +21,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.message.jibx.ota2010a.base.request.in.*;
 import org.jbundle.base.message.trx.message.external.*;
-import org.jibx.ota.ping.*;
-import org.jibx.ota.base.*;
+import org.jibx.schema.org.opentravel._2010B.ping.*;
+import org.jibx.schema.org.opentravel._2010B.base.*;
 import com.tourapp.tour.message.base.request.in.*;
 import org.jbundle.thin.base.message.*;
 
@@ -67,7 +67,7 @@ public class PingResponseJibxMessageIn2010A extends BaseJibxMessageIn2010A
         if (root instanceof PingRS)
         {       // Always
             PingRS msg = (PingRS)root;
-            java.util.List<PingRS.Sequence> list = msg.getSuccesses();
+            java.util.List<PingRS.Sequence> list = null;//msg.getSuccesses();
             Errors errors = msg.getErrors();
             String messageText = null;
             String errorMessage = null;
@@ -80,10 +80,10 @@ public class PingResponseJibxMessageIn2010A extends BaseJibxMessageIn2010A
                 messageText = data.getEchoData();
             }
             if (errors != null)
-            for (_Error error : errors.getErrors())
+//            for (_Error error : errors.getErrors())
             {
-                FreeText freeText = error.getFreeText();
-                errorMessage = freeText.getString();
+  //              FreeText freeText = error.getFreeText();
+    //            errorMessage = freeText.getString();
             }
             
             BaseMessage message = this.getMessage();

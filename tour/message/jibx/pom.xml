@@ -28,11 +28,11 @@
     </dependency>
 
 	<dependency>
-      <groupId>org.jibx.ota.osgi</groupId>
-	  <artifactId>jibx-ota-osgi-ping</artifactId>
-      <version>${jibx.osgiVersion}</version>
+	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
+	  <artifactId>org.jibx.schema.org.opentravel._2010B.ping</artifactId>
+	  <version>1.0.0</version>
 	</dependency>
-    
+
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.message</artifactId>
