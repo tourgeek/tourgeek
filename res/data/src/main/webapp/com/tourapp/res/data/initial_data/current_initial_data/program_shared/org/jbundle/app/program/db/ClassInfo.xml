@@ -39744,12 +39744,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2379">
-		<LastChanged>2010-02-21T04:22:46</LastChanged>
+		<LastChanged>2011-03-09T20:15:37</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CurrencyUpdateProcess</ClassName>
 		<BaseClassName>BaseProcess</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,580</ClassProjectID>
+		<ClassProjectID>1,048,599</ClassProjectID>
 		<ClassPackage>.process</ClassPackage>
 		<ClassSourceFile>CurrencyUpdateProcess</ClassSourceFile>
 		<ClassType/>
@@ -39761,12 +39761,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2380">
-		<LastChanged>2010-02-21T04:22:54</LastChanged>
+		<LastChanged>2011-03-10T04:35:53</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CurrencyRequestSOAPMessageOut</ClassName>
-		<BaseClassName>JaxbConvertToNative</BaseClassName>
+		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,580</ClassProjectID>
+		<ClassProjectID>1,048,599</ClassProjectID>
 		<ClassPackage>.process</ClassPackage>
 		<ClassSourceFile>CurrencyRequestSOAPMessageOut</ClassSourceFile>
 		<ClassType/>
@@ -39778,12 +39778,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2381">
-		<LastChanged>2010-02-21T04:23:02</LastChanged>
+		<LastChanged>2011-03-10T04:29:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CurrencyResponseSOAPMessageIn</ClassName>
-		<BaseClassName>JaxbConvertToMessage</BaseClassName>
+		<BaseClassName>JibxConvertToMessage</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,580</ClassProjectID>
+		<ClassProjectID>1,048,599</ClassProjectID>
 		<ClassPackage>.process</ClassPackage>
 		<ClassSourceFile>CurrencyResponseSOAPMessageIn</ClassSourceFile>
 		<ClassType/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ProgramControl ID="1">
-		<LastChanged>2010-03-17T15:21:02</LastChanged>
+		<LastChanged>2011-03-09T18:36:24</LastChanged>
 		<Deleted>N</Deleted>
 		<ProjectName>tourapp-tour</ProjectName>
-		<BaseDirectory>/home/don/</BaseDirectory>
+		<BaseDirectory>/home/don/workspace</BaseDirectory>
 		<SourceDirectory>src/main/java/</SourceDirectory>
 		<ClassDirectory>target/classes/</ClassDirectory>
 		<ArchiveDirectory>data/archive/</ArchiveDirectory>

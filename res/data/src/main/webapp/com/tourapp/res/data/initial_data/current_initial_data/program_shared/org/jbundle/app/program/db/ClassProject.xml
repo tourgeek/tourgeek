@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
-	<ClassProject ID="2">
-		<LastChanged/>
-		<Deleted>N</Deleted>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Description/>
-		<SystemClasses/>
-		<PackageName/>
-		<ProjectPath/>
-		<ThinPackage/>
-		<ThinProjectPath/>
-		<ResourcePackage/>
-		<ResProjectPath/>
-		<Properties/>
-		<ArtifactId/>
-		<GroupId/>
-	</ClassProject>
 	<ClassProject ID="1048575">
-		<LastChanged>2010-02-27T08:42:43</LastChanged>
+		<LastChanged>2011-03-10T06:52:10</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour</Name>
+		<Name>tour</Name>
 		<ParentFolderID>1,048,588</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -30,7 +10,7 @@
 		<Description/>
 		<SystemClasses/>
 		<PackageName>com.tourapp.tour</PackageName>
-		<ProjectPath/>
+		<ProjectPath>tour</ProjectPath>
 		<ThinPackage>com.tourapp.thin.tour</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>com.tourapp.res.tour</ResourcePackage>
@@ -40,9 +20,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048576">
-		<LastChanged>2010-04-09T19:51:34</LastChanged>
+		<LastChanged>2011-03-10T06:56:49</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-mixed</Name>
+		<Name>mixed</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -50,19 +30,19 @@
 		<Description>Tour</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>tourapp-tour-mixed</ProjectPath>
+		<ProjectPath>mixed</ProjectPath>
 		<ThinPackage/>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-app</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/app</ThinProjectPath>
 		<ResourcePackage/>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-app</ResProjectPath>
+		<ResProjectPath>../res/tour/app</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048577">
-		<LastChanged>2010-02-19T02:54:03</LastChanged>
+		<LastChanged>2011-03-10T06:52:30</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-system</Name>
+		<Name>system</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -80,9 +60,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048578">
-		<LastChanged>2010-04-09T23:02:14</LastChanged>
+		<LastChanged>2011-03-10T06:57:05</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-acctpay</Name>
+		<Name>acctpay</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -90,19 +70,19 @@
 		<Description>Accounts payable</Description>
 		<SystemClasses/>
 		<PackageName>.acctpay</PackageName>
-		<ProjectPath>tourapp-tour-mixed</ProjectPath>
+		<ProjectPath>mixed</ProjectPath>
 		<ThinPackage>.acctpay</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-acctpay</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/acctpay</ThinProjectPath>
 		<ResourcePackage>.acctpay</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-acctpay</ResProjectPath>
+		<ResProjectPath>../res/tour/acctpay</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048579">
-		<LastChanged>2010-04-09T23:02:25</LastChanged>
+		<LastChanged>2011-03-10T06:57:19</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-acctrec</Name>
+		<Name>acctrec</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -110,39 +90,39 @@
 		<Description>Accounts receivable</Description>
 		<SystemClasses/>
 		<PackageName>.acctrec</PackageName>
-		<ProjectPath>tourapp-tour-mixed</ProjectPath>
+		<ProjectPath>mixed</ProjectPath>
 		<ThinPackage>.acctrec</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-acctrec</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/acctrec</ThinProjectPath>
 		<ResourcePackage>.acctrec</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-acctrec</ResProjectPath>
+		<ResProjectPath>../res/tour/acctrec</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048580">
-		<LastChanged>2010-04-09T19:51:42</LastChanged>
+		<LastChanged>2011-03-10T07:37:53</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-assetdr</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>core</Name>
+		<ParentFolderID>1,048,598</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
 		<Description>Asset debt</Description>
 		<SystemClasses/>
-		<PackageName>.assetdr</PackageName>
-		<ProjectPath/>
-		<ThinPackage>.assetdr</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-assetdr</ThinProjectPath>
-		<ResourcePackage>.assetdr</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-assetdr</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>core</ProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/assetdr</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/assetdr</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048581">
-		<LastChanged>2010-04-09T23:02:34</LastChanged>
+		<LastChanged>2011-03-10T06:57:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-booking</Name>
+		<Name>booking</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -150,19 +130,19 @@
 		<Description>Booking</Description>
 		<SystemClasses/>
 		<PackageName>.booking</PackageName>
-		<ProjectPath>tourapp-tour-mixed</ProjectPath>
+		<ProjectPath>mixed</ProjectPath>
 		<ThinPackage>.booking</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-booking</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/booking</ThinProjectPath>
 		<ResourcePackage>.booking</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-booking</ResProjectPath>
+		<ResProjectPath>../res/tour/booking</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048582">
-		<LastChanged>2010-04-09T19:51:48</LastChanged>
+		<LastChanged>2011-03-10T06:57:45</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-genled</Name>
+		<Name>genled</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -172,17 +152,17 @@
 		<PackageName>.genled</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.genled</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-genled</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/genled</ThinProjectPath>
 		<ResourcePackage>.genled</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-genled</ResProjectPath>
+		<ResProjectPath>../res/tour/genled</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048583">
-		<LastChanged>2010-04-09T19:51:50</LastChanged>
+		<LastChanged>2011-03-10T06:57:57</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-payroll</Name>
+		<Name>payroll</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -192,17 +172,17 @@
 		<PackageName>.payroll</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.payroll</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-payroll</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/payroll</ThinProjectPath>
 		<ResourcePackage>.payroll</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-payroll</ResProjectPath>
+		<ResProjectPath>../res/tour/payroll</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048584">
-		<LastChanged>2010-04-09T23:03:17</LastChanged>
+		<LastChanged>2011-03-10T06:58:10</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-product</Name>
+		<Name>product</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -210,19 +190,19 @@
 		<Description>Product</Description>
 		<SystemClasses/>
 		<PackageName>.product</PackageName>
-		<ProjectPath>tourapp-tour-mixed</ProjectPath>
+		<ProjectPath>mixed</ProjectPath>
 		<ThinPackage>.product</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-product</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/product</ThinProjectPath>
 		<ResourcePackage>.product</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-product</ResProjectPath>
+		<ResProjectPath>../res/tour/product</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048585">
-		<LastChanged>2010-04-09T19:51:56</LastChanged>
+		<LastChanged>2011-03-10T06:58:21</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-request</Name>
+		<Name>request</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -232,17 +212,17 @@
 		<PackageName>.request</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.request</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-request</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/request</ThinProjectPath>
 		<ResourcePackage>.request</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-request</ResProjectPath>
+		<ResProjectPath>../res/tour/request</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048586">
-		<LastChanged>2010-04-09T19:51:58</LastChanged>
+		<LastChanged>2011-03-10T06:58:32</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-profile</Name>
+		<Name>profile</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -252,17 +232,17 @@
 		<PackageName>.profile</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.profile</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-profile</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/profile</ThinProjectPath>
 		<ResourcePackage>.profile</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-profile</ResProjectPath>
+		<ResProjectPath>../res/tour/profile</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048587">
-		<LastChanged>2010-04-09T19:52:00</LastChanged>
+		<LastChanged>2011-03-10T06:53:27</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-util</Name>
+		<Name>util</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -272,18 +252,18 @@
 		<PackageName>.util</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.util</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-util</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/util</ThinProjectPath>
 		<ResourcePackage>.util</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-util</ResProjectPath>
+		<ResProjectPath>../res/tour/util</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048588">
-		<LastChanged>2010-06-09T18:05:33</LastChanged>
+		<LastChanged>2011-03-09T20:04:21</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-root</Name>
-		<ParentFolderID>16,777,257</ParentFolderID>
+		<Name>tourapp</Name>
+		<ParentFolderID>16,777,278</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
@@ -300,9 +280,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048589">
-		<LastChanged>2010-12-09T17:35:37</LastChanged>
+		<LastChanged>2011-03-10T06:52:20</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-thin-app-booking</Name>
+		<Name>booking</Name>
 		<ParentFolderID>1,048,590</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -320,9 +300,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048590">
-		<LastChanged>2010-12-09T17:34:55</LastChanged>
+		<LastChanged>2011-03-10T06:52:16</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-thin-app</Name>
+		<Name>app</Name>
 		<ParentFolderID>1,048,597</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -340,9 +320,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048591">
-		<LastChanged>2010-04-09T19:52:31</LastChanged>
+		<LastChanged>2011-03-10T06:58:45</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-base</Name>
+		<Name>base</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -352,17 +332,17 @@
 		<PackageName>.base</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.base</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-base</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/base</ThinProjectPath>
 		<ResourcePackage>.base</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-base</ResProjectPath>
+		<ResProjectPath>../res/tour/base</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048592">
-		<LastChanged>2010-04-09T19:52:27</LastChanged>
+		<LastChanged>2011-03-10T06:58:58</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-message</Name>
+		<Name>message</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -372,17 +352,17 @@
 		<PackageName>.message</PackageName>
 		<ProjectPath/>
 		<ThinPackage>.message</ThinPackage>
-		<ThinProjectPath>../tourapp-thin/tourapp-thin-tour/tourapp-thin-tour-message</ThinProjectPath>
+		<ThinProjectPath>../thin/tour/message</ThinProjectPath>
 		<ResourcePackage>.message</ResourcePackage>
-		<ResProjectPath>../tourapp-res/tourapp-res-tour/tourapp-res-tour-message</ResProjectPath>
+		<ResProjectPath>../res/tour/message</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048593">
-		<LastChanged>2010-03-20T03:27:53</LastChanged>
+		<LastChanged>2011-03-10T07:24:09</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-message-jibx</Name>
+		<Name>jibx</Name>
 		<ParentFolderID>1,048,592</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -400,9 +380,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048594">
-		<LastChanged>2010-03-20T04:06:53</LastChanged>
+		<LastChanged>2011-03-10T07:24:10</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-message-jaxb</Name>
+		<Name>jaxb</Name>
 		<ParentFolderID>1,048,592</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -420,9 +400,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048595">
-		<LastChanged>2010-03-20T04:07:00</LastChanged>
+		<LastChanged>2011-03-10T07:24:12</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-message-xmlbeans</Name>
+		<Name>xmlbeans</Name>
 		<ParentFolderID>1,048,592</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -440,9 +420,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048596">
-		<LastChanged>2010-04-09T23:04:01</LastChanged>
+		<LastChanged>2011-03-10T07:24:27</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-tour-message-core</Name>
+		<Name>core</Name>
 		<ParentFolderID>1,048,592</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -450,7 +430,7 @@
 		<Description/>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../tourapp-tour-mixed</ProjectPath>
+		<ProjectPath>../mixed</ProjectPath>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -460,9 +440,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048597">
-		<LastChanged>2010-12-09T17:32:10</LastChanged>
+		<LastChanged>2011-03-10T06:52:12</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp-thin</Name>
+		<Name>thin</Name>
 		<ParentFolderID>1,048,588</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -470,7 +450,47 @@
 		<Description>Thin tour code (not generated)</Description>
 		<SystemClasses>Y</SystemClasses>
 		<PackageName/>
+		<ProjectPath>thin</ProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048598">
+		<LastChanged>2011-03-10T07:46:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>assetdr</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Asset debt</Description>
+		<SystemClasses/>
+		<PackageName>.assetdr</PackageName>
 		<ProjectPath/>
+		<ThinPackage>.assetdr</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.assetdr</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048599">
+		<LastChanged>2011-03-10T07:25:08</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>process</Name>
+		<ParentFolderID>1,048,598</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Processes for assetdr</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>process</ProjectPath>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>

@@ -6,8 +6,8 @@
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>440.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -28,8 +28,8 @@
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>220.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -50,8 +50,8 @@
 		<PaxCategoryID>3</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>146.67</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -72,8 +72,8 @@
 		<PaxCategoryID>4</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>110.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -94,8 +94,8 @@
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>6,700.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -116,8 +116,8 @@
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>4,150.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -138,8 +138,8 @@
 		<PaxCategoryID>3</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>2,800.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -160,8 +160,8 @@
 		<PaxCategoryID>4</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>2,075.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -182,8 +182,8 @@
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>285.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -204,8 +204,8 @@
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>167.50</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -226,8 +226,8 @@
 		<PaxCategoryID>4</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>86.25</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -248,8 +248,8 @@
 		<PaxCategoryID>3</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>115.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -270,8 +270,8 @@
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>7,000.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -292,8 +292,8 @@
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2010-08-01</StartDate>
-		<EndDate>2011-07-31</EndDate>
+		<StartDate>2010-09-01</StartDate>
+		<EndDate>2011-08-31</EndDate>
 		<Cost>12,000.00</Cost>
 		<ProductTermsID/>
 		<Price/>

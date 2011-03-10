@@ -16884,7 +16884,7 @@
 		<Map/>
 	</City>
 	<City ID="805">
-		<LastChanged>2008-06-19T03:27:15</LastChanged>
+		<LastChanged>2008-10-15T06:42:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Novi Ligure</Description>
 		<CityCode>N40</CityCode>
@@ -33033,7 +33033,7 @@
 		<Map/>
 	</City>
 	<City ID="1574">
-		<LastChanged>2008-10-15T06:42:52</LastChanged>
+		<LastChanged>2008-10-17T02:28:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Binbrook</Description>
 		<CityCode>GSY</CityCode>
@@ -65163,7 +65163,7 @@
 		<Map/>
 	</City>
 	<City ID="3104">
-		<LastChanged>2008-10-15T06:28:20</LastChanged>
+		<LastChanged>2008-10-15T06:44:05</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Vermillion</Description>
 		<CityCode/>

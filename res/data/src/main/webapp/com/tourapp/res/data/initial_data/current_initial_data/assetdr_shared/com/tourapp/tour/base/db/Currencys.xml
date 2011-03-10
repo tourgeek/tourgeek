@@ -40,12 +40,12 @@
 		<NaturalFraction/>
 	</Currencys>
 	<Currencys ID="12">
-		<LastChanged>2009-04-16T14:23:55</LastChanged>
+		<LastChanged>2011-03-09T15:22:20</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Algerian Dinar</Description>
 		<CurrencyCode>DZD</CurrencyCode>
-		<LastRate>0.01360544</LastRate>
-		<RateChangedDate>2009-04-16</RateChangedDate>
+		<LastRate>0.01385905</LastRate>
+		<RateChangedDate>2011-03-09</RateChangedDate>
 		<RateChangedBy>11</RateChangedBy>
 		<CostingRate/>
 		<CostingChangedDate>2008-10-16</CostingChangedDate>

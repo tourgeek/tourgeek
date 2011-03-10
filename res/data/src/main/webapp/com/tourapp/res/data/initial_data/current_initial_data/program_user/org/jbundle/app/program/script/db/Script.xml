@@ -26,7 +26,7 @@
 		<Destination/>
 	</Script>
 	<Script ID="4">
-		<LastChanged>2010-10-21T13:20:27</LastChanged>
+		<LastChanged>2011-03-10T11:05:20</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Restore files for test and demo</Name>
 		<ParentFolderID>0</ParentFolderID>
@@ -34,8 +34,8 @@
 		<Comment>Run only under jdbc - Ignore errors</Comment>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Oct 21 13:20:24 PDT 2010
-archiveFolder=/home/don/workspace/jbundle-workspace/tourapp-root/tourapp-config/tourapp-config-data/src/main/webapp/docs/data/test-data/current-test-data
+#Thu Mar 10 11:05:18 PST 2011
+archiveFolder=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
 type=USER_DATA
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
@@ -2894,7 +2894,7 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Destination/>
 	</Script>
 	<Script ID="226">
-		<LastChanged>2008-10-16T11:30:19</LastChanged>
+		<LastChanged>2011-03-08T09:56:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Update currencies</Name>
 		<ParentFolderID>88</ParentFolderID>
@@ -2902,8 +2902,8 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Oct 16 11:29:38 PDT 2008
-process=.tour.assetdr.process.CurrencyUpdateProcess
+#Tue Mar 08 09:56:38 PST 2011
+process=com.tourapp.tour.assetdr.process.CurrencyUpdateProcess
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -3328,7 +3328,7 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Destination/>
 	</Script>
 	<Script ID="265">
-		<LastChanged>2010-06-20T01:06:51</LastChanged>
+		<LastChanged>2011-03-10T11:58:59</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup all data</Name>
 		<ParentFolderID>256</ParentFolderID>
@@ -3336,8 +3336,8 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Comment>Run from regular tourapp (not direct)</Comment>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Fri Jun 11 02:33:06 PDT 2010
-sourcePrefix=/home/don/workspace/jbundle-workspace/tourapp-root/tourapp-config/tourapp-config-data/src/main/webapp/docs/data
+#Thu Mar 10 11:58:53 PST 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data
 local=Jdbc
 standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
 table=Jdbc
@@ -3350,7 +3350,7 @@ mode=export
 		<Destination/>
 	</Script>
 	<Script ID="280">
-		<LastChanged>2010-10-21T13:22:36</LastChanged>
+		<LastChanged>2011-03-10T11:08:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export and fix demo data from current</Name>
 		<ParentFolderID>256</ParentFolderID>
@@ -3358,8 +3358,8 @@ mode=export
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Oct 21 13:22:33 PDT 2010
-sourcePrefix=/home/don/workspace/jbundle-workspace/tourapp-root/tourapp-config/tourapp-config-data/src/main/webapp/docs/data/test-data
+#Thu Mar 10 11:08:24 PST 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data/test_data
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
 		<Command/>
@@ -3367,7 +3367,7 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Destination/>
 	</Script>
 	<Script ID="281">
-		<LastChanged>2010-05-25T15:21:32</LastChanged>
+		<LastChanged>2011-01-15T09:20:11</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Delete old demo data</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3375,11 +3375,11 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Tue May 25 15:21:30 PDT 2010
-sourceDir=raw-test-data
-destDir=raw-test-data
-process=.app.program.manual.convert.ConvertCode
+#Sat Jan 15 09:20:09 PST 2011
+sourceDir=raw_test_data
+destDir=raw_test_data
 listenerClass=.app.program.script.scan.DeleteScanListener
+process=.app.program.manual.convert.ConvertCode
 extension=xml
 ]]></Properties>
 		<Command>R</Command>
@@ -3387,7 +3387,7 @@ extension=xml
 		<Destination/>
 	</Script>
 	<Script ID="282">
-		<LastChanged>2010-05-25T08:19:12</LastChanged>
+		<LastChanged>2011-03-10T12:46:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export current data to demo (parent)</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3395,23 +3395,22 @@ extension=xml
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Tue May 25 08:19:11 PDT 2010
-process=.base.thread.StandaloneProcessRunnerProcess
-remote=Jdbc
-mode=export
-standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
-type=USER_DATA
-sourceDir=raw-test-data
+#Thu Mar 10 12:46:51 PST 2011
 local=Jdbc
-project=tourapp-tour-*
+sourceDir=raw_test_data
+type=USER_DATA
+standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
 table=Jdbc
+remote=Jdbc
+process=.base.thread.StandaloneProcessRunnerProcess
+mode=export
 ]]></Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="283">
-		<LastChanged>2010-05-27T15:19:33</LastChanged>
+		<LastChanged>2011-01-15T09:21:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Fix demo data to current directory</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3419,12 +3418,12 @@ table=Jdbc
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu May 27 15:19:31 PDT 2010
-sourceDir=raw-test-data
+#Sat Jan 15 09:21:12 PST 2011
+sourceDir=raw_test_data
 converterPath=/home/don/workspace/jdance/WebContent/docs/styles/xsl/program/fixdemo.xsl
-destDir=scratch-test-data
-process=.app.program.manual.convert.ConvertCode
+destDir=scratch_test_data
 listenerClass=.app.program.script.scan.XMLScanListener
+process=.app.program.manual.convert.ConvertCode
 extension=xml
 ]]></Properties>
 		<Command>R</Command>
@@ -3432,7 +3431,7 @@ extension=xml
 		<Destination/>
 	</Script>
 	<Script ID="284">
-		<LastChanged>2010-12-09T16:14:26</LastChanged>
+		<LastChanged>2011-03-10T11:09:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Move demo data to monthly offset dir</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3440,15 +3439,15 @@ extension=xml
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Dec 09 16:14:23 PST 2010
+#Thu Mar 10 11:08:59 PST 2011
 process=.app.program.manual.convert.ConvertCode
 listenerClass=.app.program.script.scan.DateOffsetScanListener
-destDir=current-test-data
+destDir=current_test_data
 yearOffset=0
-sourceDir=scratch-test-data
+sourceDir=scratch_test_data
 endOfMonthFields=EndPeriod,EndDate
 extension=xml
-monthOffset=0
+monthOffset=1
 dayOffset=0
 ]]></Properties>
 		<Command>R</Command>
@@ -3456,7 +3455,7 @@ dayOffset=0
 		<Destination/>
 	</Script>
 	<Script ID="285">
-		<LastChanged>2010-05-27T15:19:07</LastChanged>
+		<LastChanged>2011-01-15T09:20:56</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Delete current demo data files</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3464,11 +3463,11 @@ dayOffset=0
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu May 27 15:19:03 PDT 2010
-sourceDir=scratch-test-data
-destDir=scratch-test-data
-process=.app.program.manual.convert.ConvertCode
+#Sat Jan 15 09:20:53 PST 2011
+sourceDir=scratch_test_data
+destDir=scratch_test_data
 listenerClass=.app.program.script.scan.DeleteScanListener
+process=.app.program.manual.convert.ConvertCode
 extension=xml
 ]]></Properties>
 		<Command>R</Command>
@@ -3476,7 +3475,7 @@ extension=xml
 		<Destination/>
 	</Script>
 	<Script ID="288">
-		<LastChanged>2010-05-27T15:19:54</LastChanged>
+		<LastChanged>2011-01-15T09:21:35</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Delete monthly data</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3484,11 +3483,11 @@ extension=xml
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu May 27 15:19:51 PDT 2010
-sourceDir=current-test-data
-destDir=current-test-data
-process=.app.program.manual.convert.ConvertCode
+#Sat Jan 15 09:21:32 PST 2011
+sourceDir=current_test_data
+destDir=current_test_data
 listenerClass=.app.program.script.scan.DeleteScanListener
+process=.app.program.manual.convert.ConvertCode
 extension=xml
 ]]></Properties>
 		<Command>R</Command>
@@ -3514,7 +3513,7 @@ command=test
 		<Destination/>
 	</Script>
 	<Script ID="290">
-		<LastChanged>2010-04-18T10:45:09</LastChanged>
+		<LastChanged>2011-01-15T09:29:22</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Test - Restore fred test data</Name>
 		<ParentFolderID>256</ParentFolderID>
@@ -3522,14 +3521,14 @@ command=test
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Apr 18 10:45:09 PDT 2010
+#Sat Jan 15 09:29:20 PST 2011
 package=.tour
 dbPrefix=fred_
+archiveFolder=/home/don/workspace/tourapp/tourapp-config/tourapp-config-webapp/src/main/webapp/com/tourapp/data/testdata/current
 type=USER_DATA
-archiveFolder=/home/don/workspace/tourapp/tourapp-config/tourapp-config-webapp/src/main/webapp/docs/data/testdata/current
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
 project=Tour
+mode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -3585,7 +3584,7 @@ mode=import
 		<Destination/>
 	</Script>
 	<Script ID="296">
-		<LastChanged>2010-12-05T08:12:01</LastChanged>
+		<LastChanged>2011-03-10T13:08:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Program data</Name>
 		<ParentFolderID>265</ParentFolderID>
@@ -3593,16 +3592,16 @@ mode=import
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Dec 05 08:11:58 PST 2010
-sourceDir=initial-data/current-initial-data
-project=jbundle-app-program-core
+#Thu Mar 10 13:08:38 PST 2011
+package=org.jbundle.app.program.*
+sourceDir=initial_data/current_initial_data
 ]]></Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="297">
-		<LastChanged>2010-12-09T17:40:59</LastChanged>
+		<LastChanged>2011-01-15T09:34:41</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export base program data</Name>
 		<ParentFolderID>296</ParentFolderID>
@@ -3610,11 +3609,11 @@ project=jbundle-app-program-core
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Dec 09 17:40:58 PST 2010
+#Sat Jan 15 09:34:38 PST 2011
 programSharedDBName=program_base
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
 dbSuffix=_base
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
@@ -3637,7 +3636,7 @@ package=org.jbundle.app.program.*
 		<Destination/>
 	</Script>
 	<Script ID="299">
-		<LastChanged>2010-12-05T08:27:07</LastChanged>
+		<LastChanged>2011-01-15T09:35:04</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export App program data</Name>
 		<ParentFolderID>296</ParentFolderID>
@@ -3645,18 +3644,18 @@ package=org.jbundle.app.program.*
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Dec 05 08:27:05 PST 2010
+#Sat Jan 15 09:35:00 PST 2011
 programSharedDBName=program_app
 package=org.jbundle.app.program.*
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 dbSuffix=_app
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="300">
-		<LastChanged>2010-12-05T08:27:26</LastChanged>
+		<LastChanged>2011-01-15T09:35:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Test program data</Name>
 		<ParentFolderID>296</ParentFolderID>
@@ -3664,18 +3663,18 @@ sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/j
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Dec 05 08:27:22 PST 2010
+#Sat Jan 15 09:35:25 PST 2011
 programSharedDBName=program_test
 package=org.jbundle.app.program.*
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 dbSuffix=_test
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="301">
-		<LastChanged>2010-12-05T08:12:22</LastChanged>
+		<LastChanged>2011-01-15T09:25:46</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export App data</Name>
 		<ParentFolderID>265</ParentFolderID>
@@ -3683,8 +3682,8 @@ sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/j
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Dec 05 08:12:12 PST 2010
-sourceDir=/initial-data/current-initial-data
+#Sat Jan 15 09:25:44 PST 2011
+sourceDir=/initial_data/current_initial_data
 ]]></Properties>
 		<Command/>
 		<Source/>
@@ -3704,7 +3703,7 @@ sourceDir=/initial-data/current-initial-data
 		<Destination/>
 	</Script>
 	<Script ID="303">
-		<LastChanged>2010-12-05T08:28:41</LastChanged>
+		<LastChanged>2011-01-15T09:37:31</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export all 'test' Data</Name>
 		<ParentFolderID>301</ParentFolderID>
@@ -3712,11 +3711,11 @@ sourceDir=/initial-data/current-initial-data
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Dec 05 08:28:39 PST 2010
+#Sat Jan 15 09:37:27 PST 2011
 programSharedDBName=program_test
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
@@ -3743,7 +3742,7 @@ language=es
 		<Destination/>
 	</Script>
 	<Script ID="305">
-		<LastChanged>2010-12-05T08:28:25</LastChanged>
+		<LastChanged>2011-01-15T09:37:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export 'app' app data</Name>
 		<ParentFolderID>301</ParentFolderID>
@@ -3751,18 +3750,18 @@ language=es
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Dec 05 08:28:21 PST 2010
+#Sat Jan 15 09:37:46 PST 2011
 programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="306">
-		<LastChanged>2010-04-27T15:35:51</LastChanged>
+		<LastChanged>2011-03-10T12:47:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour data</Name>
 		<ParentFolderID>282</ParentFolderID>
@@ -3770,15 +3769,15 @@ sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/j
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Tue Apr 27 15:29:47 PDT 2010
-project=tourapp-tour-*
+#Thu Mar 10 12:47:10 PST 2011
+package=com.tourapp.tour.*
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="307">
-		<LastChanged>2010-04-27T15:35:59</LastChanged>
+		<LastChanged>2011-03-10T13:04:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export user data</Name>
 		<ParentFolderID>282</ParentFolderID>
@@ -3786,8 +3785,8 @@ project=tourapp-tour-*
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Tue Apr 27 15:32:46 PDT 2010
-project=jbundle-main
+#Thu Mar 10 13:04:55 PST 2011
+package=org.jbundle.main.*
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -3811,7 +3810,7 @@ language=demo
 		<Destination/>
 	</Script>
 	<Script ID="309">
-		<LastChanged>2010-05-06T14:36:45</LastChanged>
+		<LastChanged>2011-01-15T09:30:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Restore DEMO data</Name>
 		<ParentFolderID>256</ParentFolderID>
@@ -3819,16 +3818,16 @@ language=demo
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu May 06 14:36:43 PDT 2010
+#Sat Jan 15 09:30:07 PST 2011
 process=.base.thread.StandaloneProcessRunnerProcess
 remote=Jdbc
 language=demo
 mode=import
 standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
-sourceDir=/backup-data/app-backup-data
+sourceDir=/backup_data/app_backup_data
 local=Jdbc
 locale=demo
-sourcePrefix=/home/don/workspace/tourapp/tourapp-config/tourapp-config-data/src/main/webapp/docs/data
+sourcePrefix=/home/don/workspace/tourapp/tourapp-config/tourapp-config-data/src/main/webapp/com/tourapp/data
 table=Jdbc
 ]]></Properties>
 		<Command>R</Command>
@@ -3970,7 +3969,7 @@ sourceDir=com/tourmarketplace
 		<Destination/>
 	</Script>
 	<Script ID="318">
-		<LastChanged>2010-12-06T05:23:28</LastChanged>
+		<LastChanged>2011-01-15T09:37:11</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export '' main data</Name>
 		<ParentFolderID>301</ParentFolderID>
@@ -3978,11 +3977,32 @@ sourceDir=com/tourmarketplace
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Mon Dec 06 05:22:38 PST 2010
+#Sat Jan 15 09:37:08 PST 2011
 package=org.jbundle.main.*
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/docs/data
+sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 ]]></Properties>
 		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="319">
+		<LastChanged>2011-01-18T15:25:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Tweek poms</Name>
+		<ParentFolderID>0</ParentFolderID>
+		<Sequence>600</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Jan 18 15:25:58 PST 2011
+sourcePrefix=/home/don/workspace/jbundle-workspace/
+sourceDir=
+destDir=/home/don/deleteme
+process=.app.program.manual.convert.ConvertCode
+listenerClass=org.jbundle.app.program.script.scan.DeleteMeScanListener
+extension=xml
+]]></Properties>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>

@@ -53678,7 +53678,7 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="4511">
-		<LastChanged>2008-08-29T02:14:13</LastChanged>
+		<LastChanged>2008-08-29T02:14:00</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ProductInformationRequest</ClassInfoClassName>
 		<ClassInfoID/>
@@ -57998,11 +57998,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="4945">
-		<LastChanged>2008-10-17T13:08:14</LastChanged>
+		<LastChanged>2011-03-10T04:31:00</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CurrencyRequestSOAPMessageOut</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>net.webservicex.currencyconverter</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.net.webservicex.currencyconvertor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -58046,11 +58046,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="4948">
-		<LastChanged>2008-10-17T13:10:25</LastChanged>
+		<LastChanged>2011-03-10T04:26:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CurrencyResponseSOAPMessageIn</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>net.webservicex.currencyconverter</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.net.webservicex.currencyconvertor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -58094,11 +58094,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="4953">
-		<LastChanged>2008-10-17T13:13:23</LastChanged>
+		<LastChanged>2011-03-09T18:33:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CurrencyUpdateProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>net.webservicex.currencyconverter</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.net.webservicex.currencyconvertor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -58158,11 +58158,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="4957">
-		<LastChanged>2008-10-17T13:14:09</LastChanged>
+		<LastChanged>2011-03-09T18:34:08</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CurrencyUpdateProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>JaxbConvertToNative</ClassFieldClass>
+		<ClassFieldClass>JibxConvertToNative</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59774,11 +59774,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5072">
-		<LastChanged>2010-04-16T20:30:29</LastChanged>
+		<LastChanged>2011-03-10T07:56:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageIn2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59790,11 +59790,11 @@ static  {
 		<ClassFieldsType>P</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5073">
-		<LastChanged>2010-04-16T20:30:32</LastChanged>
+		<LastChanged>2011-03-10T07:56:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageIn2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59838,11 +59838,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5076">
-		<LastChanged>2010-04-16T20:30:15</LastChanged>
+		<LastChanged>2011-03-10T07:40:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59854,11 +59854,11 @@ static  {
 		<ClassFieldsType>P</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5077">
-		<LastChanged>2010-04-16T20:30:12</LastChanged>
+		<LastChanged>2011-03-10T07:40:32</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59934,11 +59934,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5082">
-		<LastChanged>2010-04-16T20:29:54</LastChanged>
+		<LastChanged>2011-03-10T07:40:05</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59950,11 +59950,11 @@ static  {
 		<ClassFieldsType>P</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5083">
-		<LastChanged>2010-04-16T20:29:52</LastChanged>
+		<LastChanged>2011-03-10T07:40:07</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59982,11 +59982,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5085">
-		<LastChanged>2010-04-16T20:29:36</LastChanged>
+		<LastChanged>2011-03-10T07:41:06</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59998,11 +59998,11 @@ static  {
 		<ClassFieldsType>P</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5086">
-		<LastChanged>2010-04-16T20:29:19</LastChanged>
+		<LastChanged>2011-03-10T07:41:05</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -60094,11 +60094,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5092">
-		<LastChanged>2010-04-16T20:28:50</LastChanged>
+		<LastChanged>2011-03-10T07:41:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -60110,11 +60110,11 @@ static  {
 		<ClassFieldsType>P</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5093">
-		<LastChanged>2010-04-16T20:28:46</LastChanged>
+		<LastChanged>2011-03-10T07:41:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -60158,11 +60158,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5096">
-		<LastChanged>2010-04-16T20:28:21</LastChanged>
+		<LastChanged>2011-03-10T07:41:54</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -60174,11 +60174,11 @@ static  {
 		<ClassFieldsType>P</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="5097">
-		<LastChanged>2010-04-16T20:28:17</LastChanged>
+		<LastChanged>2011-03-10T07:41:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.ota.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>

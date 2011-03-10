@@ -93468,7 +93468,7 @@ try {
 		<CopyFrom/>
 	</LogicFile>
 	<LogicFile ID="7542">
-		<LastChanged>2010-03-05T08:25:12</LastChanged>
+		<LastChanged>2011-03-10T04:31:23</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>convertInternalToMarshallableObject</MethodName>
@@ -93479,12 +93479,11 @@ try {
 		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
 String currencyCode = message.getString(ManualMessage.MESSAGE_PARAM);
 
-ObjectFactory factory = new ObjectFactory();
-ConversionRate root = factory.createConversionRate();
-net.webservicex.currencyconverter.Currency currency = net.webservicex.currencyconverter.Currency.valueOf(currencyCode);
+ConversionRate root = new ConversionRate();
+org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = org.jibx.schema.net.webservicex.currencyconvertor.Currency.valueOf(currencyCode);
 if (currency == null)
     return null;
-root.setFromCurrency(net.webservicex.currencyconverter.Currency.USD);
+root.setFromCurrency(org.jibx.schema.net.webservicex.currencyconvertor.Currency.USD);
 root.setToCurrency(currency);
 
 return root;]]></LogicSource>
@@ -93516,7 +93515,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<CopyFrom/>
 	</LogicFile>
 	<LogicFile ID="7544">
-		<LastChanged>2008-10-17T13:48:37</LastChanged>
+		<LastChanged>2011-03-09T18:33:24</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>getConversionRate</MethodName>
@@ -93524,23 +93523,22 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<MethodReturns>double</MethodReturns>
 		<MethodInterface>String currencyCode</MethodInterface>
 		<MethodClassName>CurrencyUpdateProcess</MethodClassName>
-		<LogicSource><![CDATA[ObjectFactory factory = new ObjectFactory();
-ConversionRate root = factory.createConversionRate();
-net.webservicex.currencyconverter.Currency currency = null;
+		<LogicSource><![CDATA[ConversionRate root = new ConversionRate();
+org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = null;
 try {
-    currency = net.webservicex.currencyconverter.Currency.valueOf(currencyCode);
+    currency = org.jibx.schema.net.webservicex.currencyconvertor.Currency.valueOf(currencyCode);
 } catch (Exception e) {
     currency = null;    // Ignore
 }
 if (currency == null)
     return 0.0;
-root.setFromCurrency(net.webservicex.currencyconverter.Currency.USD);
+root.setFromCurrency(org.jibx.schema.net.webservicex.currencyconvertor.Currency.USD);
 root.setToCurrency(currency);
 
 TrxMessageHeader messageHeader = new TrxMessageHeader(null, null);
 BaseMessage message = new TreeMessage(messageHeader, null);
 messageHeader.put(SOAPMessageTransport.SOAP_PACKAGE, "net.webservicex.currencyconverter");
-messageHeader.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JaxbConvertToNative.class.getName());
+messageHeader.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JibxConvertToNative.class.getName());
 String strDest = "http://www.webservicex.com/CurrencyConvertor.asmx";
 messageHeader.put(TrxMessageHeader.DESTINATION_PARAM, strDest);
 messageHeader.put("SOAPAction", "http://www.webserviceX.NET/ConversionRate");
@@ -93553,7 +93551,7 @@ if (messageIn.getMessageHeader() == null)   // Yes
 SoapTrxMessageIn externalMessageIn = (SoapTrxMessageIn)messageIn.getExternalMessage();
 TrxMessageHeader messageHeaderIn = (TrxMessageHeader)messageIn.getMessageHeader();
 messageHeaderIn.put(SOAPMessageTransport.SOAP_PACKAGE, "net.webservicex.currencyconverter");
-messageHeaderIn.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JaxbConvertToMessage.class.getName());
+messageHeaderIn.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JibxConvertToMessage.class.getName());
 
 ConversionRateResponse rootIn = (ConversionRateResponse)externalMessageIn.convertToMessage();
 if (rootIn == null)

@@ -11171,7 +11171,7 @@ System highlights and the full user's manual.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1838">
-		<LastChanged>2010-10-22T03:27:52</LastChanged>
+		<LastChanged>2011-01-15T16:58:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Demo site template</Name>
 		<ParentFolderID>1,757</ParentFolderID>
@@ -11185,10 +11185,11 @@ System highlights and the full user's manual.
 <comment>Field properties</comment>
 <entry key="loadInitialData">true</entry>
 <entry key="dbPrefix">don_</entry>
-<entry key="archiveFolder">docs/data/test-data/current-test-data</entry>
+<entry key="archiveFolder">com/tourapp/data/test_data/current_test_data</entry>
 <entry key="xslTemplate">docs/styles/xsl/program/fixdemotemplate.xsl</entry>
 <entry key="mainUser">don@donandann.com</entry>
-</properties></Params>
+</properties>
+</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -11612,7 +11613,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1883">
-		<LastChanged>2010-11-09T16:48:53</LastChanged>
+		<LastChanged>2011-01-15T16:57:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Site template</Name>
 		<ParentFolderID>1,877</ParentFolderID>
@@ -11626,10 +11627,11 @@ Note: This video has an audio narration.
 <comment>Field properties</comment>
 <entry key="loadInitialData">true</entry>
 <entry key="dbPrefix">don_</entry>
-<entry key="archiveFolder">docs/data/site-data/current-site-data</entry>
+<entry key="archiveFolder">com/tourapp/data/site_data/current_site_data</entry>
 <entry key="xslTemplate">docs/styles/xsl/program/fixsitetemplate.xsl</entry>
 <entry key="mainUser">don@donandann.com</entry>
-</properties></Params>
+</properties>
+</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12017,30 +12019,6 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>
-	<Menus ID="1906">
-		<LastChanged>2010-11-14T01:12:53</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>Demo's Demo site</Name>
-		<ParentFolderID>1,757</ParentFolderID>
-		<Sequence>100</Sequence>
-		<Comment>Demo test site</Comment>
-		<Code>demo.demo.localhost</Code>
-		<Type>menu</Type>
-		<AutoDesc>Y</AutoDesc>
-		<Program>demosite</Program>
-		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="loadInitialData">true</entry>
-<entry key="dbPrefix">don_</entry>
-<entry key="archiveFolder">docs/data/test-data/current-test-data</entry>
-<entry key="xslTemplate">docs/styles/xsl/program/fixdemotemplate.xsl</entry>
-<entry key="mainUser">demo@tourgeek.com</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
 	<Menus ID="1907">
 		<LastChanged>2010-11-15T09:57:28</LastChanged>
 		<Deleted>N</Deleted>
@@ -12060,31 +12038,6 @@ please click the following link:<br/>
 		<AutoDesc>Y</AutoDesc>
 		<Program>http://www.tourgeek.com</Program>
 		<Params/>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1908">
-		<LastChanged>2010-11-24T04:50:40</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>Fred's Demo site</Name>
-		<ParentFolderID>1,757</ParentFolderID>
-		<Sequence>100</Sequence>
-		<Comment>Demo test site</Comment>
-		<Code>fred.demo.tourgeek.com</Code>
-		<Type>menu</Type>
-		<AutoDesc>Y</AutoDesc>
-		<Program>demosite</Program>
-		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="loadInitialData">true</entry>
-<entry key="dbPrefix">fred_</entry>
-<entry key="archiveFolder">/home/don/.tourapp/fred-current-test-data</entry>
-<entry key="xslTemplate">docs/styles/xsl/program/fixdemotemplate.xsl</entry>
-<entry key="mainUser">fred@tourgeek.com</entry>
-</properties>
-</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>

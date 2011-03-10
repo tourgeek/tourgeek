@@ -2,14 +2,14 @@
 	<Booking ID="1">
 		<LastChanged>2010-05-10T04:00:20</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2010-12-10</BookingDate>
+		<BookingDate>2011-01-10</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID/>
 		<ProfileCode/>
 		<Code/>
 		<Description>Green - Seven day Bangkok Tour - Jan 14, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2010-12-10T04:00:17</ModDate>
+		<ModDate>2011-01-10T04:00:17</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName>The Greens</GenericName>
 		<AddressLine1>22033 Western Ave</AddressLine1>
@@ -52,9 +52,9 @@ eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 ]]></Properties>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2010-12-25</DepositDueDate>
-		<FinalPaymentDueDate>2011-01-14</FinalPaymentDueDate>
-		<NextEventDate>2010-12-10</NextEventDate>
+		<DepositDueDate>2011-01-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-02-14</FinalPaymentDueDate>
+		<NextEventDate>2011-01-10</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,388.00</Gross>
 		<Commission>238.80</Commission>
@@ -70,14 +70,14 @@ eventStatus.Proposal.2=Y
 	<Booking ID="2">
 		<LastChanged>2010-05-10T03:56:33</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2010-12-10</BookingDate>
+		<BookingDate>2011-01-10</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Feb 1, 2011</Description>
 		<EmployeeModID>-1</EmployeeModID>
-		<ModDate>2010-12-10T03:56:32</ModDate>
+		<ModDate>2011-01-10T03:56:32</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -116,9 +116,9 @@ eventStatus.Proposal.2=Y
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2010-12-25</DepositDueDate>
-		<FinalPaymentDueDate>2011-02-02</FinalPaymentDueDate>
-		<NextEventDate>2010-12-10</NextEventDate>
+		<DepositDueDate>2011-01-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-03-02</FinalPaymentDueDate>
+		<NextEventDate>2011-01-10</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,647.00</Gross>
 		<Commission>264.70</Commission>
@@ -134,14 +134,14 @@ eventStatus.Proposal.2=Y
 	<Booking ID="3">
 		<LastChanged>2010-05-10T04:00:20</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2010-12-10</BookingDate>
+		<BookingDate>2011-01-10</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID/>
 		<ProfileCode/>
 		<Code/>
 		<Description>Rodriguez - Customized Tour - Jan 2, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2010-12-10T04:00:17</ModDate>
+		<ModDate>2011-01-10T04:00:17</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName>Terry Rodriguez</GenericName>
 		<AddressLine1>33459 Bates Ave</AddressLine1>
@@ -184,9 +184,9 @@ eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 ]]></Properties>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2010-12-25</DepositDueDate>
-		<FinalPaymentDueDate>2011-01-02</FinalPaymentDueDate>
-		<NextEventDate>2010-12-10</NextEventDate>
+		<DepositDueDate>2011-01-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-02-02</FinalPaymentDueDate>
+		<NextEventDate>2011-01-10</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>3,104.98</Gross>
 		<Commission>310.50</Commission>
