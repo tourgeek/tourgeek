@@ -6,8 +6,8 @@
 		<PaxCategoryID/>
 		<RateID/>
 		<MealPlanID>31</MealPlanID>
-		<StartDate>2011-07-01</StartDate>
-		<EndDate>2011-08-31</EndDate>
+		<StartDate>2011-08-01</StartDate>
+		<EndDate>2011-09-30</EndDate>
 		<Cost>2,100.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -22,8 +22,8 @@
 		<PaxCategoryID/>
 		<RateID/>
 		<MealPlanID>30</MealPlanID>
-		<StartDate>2011-07-01</StartDate>
-		<EndDate>2011-08-31</EndDate>
+		<StartDate>2011-08-01</StartDate>
+		<EndDate>2011-09-30</EndDate>
 		<Cost>1,880.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -38,8 +38,8 @@
 		<PaxCategoryID/>
 		<RateID/>
 		<MealPlanID>7</MealPlanID>
-		<StartDate>2011-07-01</StartDate>
-		<EndDate>2011-08-31</EndDate>
+		<StartDate>2011-08-01</StartDate>
+		<EndDate>2011-09-30</EndDate>
 		<Cost>1,660.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -54,8 +54,8 @@
 		<PaxCategoryID/>
 		<RateID/>
 		<MealPlanID>6</MealPlanID>
-		<StartDate>2011-07-01</StartDate>
-		<EndDate>2011-08-31</EndDate>
+		<StartDate>2011-08-01</StartDate>
+		<EndDate>2011-09-30</EndDate>
 		<Cost>1,150.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
