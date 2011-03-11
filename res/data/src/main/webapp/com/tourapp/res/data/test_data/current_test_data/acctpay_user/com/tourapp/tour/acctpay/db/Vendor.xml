@@ -353,7 +353,7 @@ Suite 1243</AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="37">
-		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<LastChanged>2011-03-10T16:11:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JAHO01</Code>
 		<VendorName>The Japanese Hotel Chain</VendorName>
@@ -368,7 +368,7 @@ Suite 1243</AddressLine1>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>http://www.tourgeek.com</Web>
 		<DateEntered>1970-09-28</DateEntered>
-		<DateChanged>2010-08-01</DateChanged>
+		<DateChanged>2011-04-10</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -383,8 +383,8 @@ Suite 1243</AddressLine1>
 		<MessageServer/>
 		<WSDLPath/>
 		<Properties>#Field properties
-#Sun Nov 01 07:03:04 PST 2009
-destinationMessage=http\://www.tourgeek.com/ws
+#Thu Mar 10 16:11:49 PST 2011
+destinationMessage=http\://www.tourgeek.com\:8080/ws
 wsdlPath=http\://www.tourgeek.com/wsdl
 </Properties>
 		<VendorStatusID/>

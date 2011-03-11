@@ -366,4 +366,11 @@ font.fontname=Arial
 		<Code>com.tourapp.tour.booking.anon.TourGridScreenAnon\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
+	<UserRegistration ID="39">
+		<LastChanged>2011-03-10T13:19:06</LastChanged>
+		<Deleted>N</Deleted>
+		<UserID>11</UserID>
+		<Code>org.jbundle.app.test.test.screen.basic.TestBasicScreen\TestTable</Code>
+		<Properties/>
+	</UserRegistration>
 </file>

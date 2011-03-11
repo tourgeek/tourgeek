@@ -76,6 +76,10 @@
       <version>${jbundle-util-wsdlVersion}</version>
     </dependency>
     
+	<dependency>
+	  <groupId>joda-time</groupId>
+	  <artifactId>joda-time</artifactId>
+	</dependency>
     <dependency>
       <groupId>jtidy</groupId>
       <artifactId>jtidy</artifactId>

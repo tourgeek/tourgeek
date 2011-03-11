@@ -54,14 +54,13 @@ destinationAddress=HotelAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="5">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-03-11T10:58:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
-#Sun Nov 01 07:02:17 PST 2009
-sourceAddress=http\://www.tourgeek.com/reply
+#Fri Mar 11 10:58:34 PST 2011
 destinationMessage=/ws
-destinationAddress=http\://www.tourgeek.com
-messageVersionID=9
+sourceAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8080
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -97,40 +96,6 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<DefaultMessageTransportID/>
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
-	<MessageDetail ID="7">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
-		<Deleted>N</Deleted>
-		<Properties/>
-		<ContactTypeID>3</ContactTypeID>
-		<PersonID>1</PersonID>
-		<MessageTransportID>15</MessageTransportID>
-		<MessageProcessInfoID>31</MessageProcessInfoID>
-		<DestinationSite/>
-		<DestinationPath/>
-		<ReturnSite/>
-		<ReturnPath/>
-		<XSLTDocument/>
-		<DefaultMessageVersionID>0</DefaultMessageVersionID>
-		<DefaultMessageTransportID>15</DefaultMessageTransportID>
-		<InitialManualTransportStatusID/>
-	</MessageDetail>
-	<MessageDetail ID="9">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
-		<Deleted>N</Deleted>
-		<Properties/>
-		<ContactTypeID>3</ContactTypeID>
-		<PersonID>1</PersonID>
-		<MessageTransportID>15</MessageTransportID>
-		<MessageProcessInfoID>1</MessageProcessInfoID>
-		<DestinationSite/>
-		<DestinationPath/>
-		<ReturnSite/>
-		<ReturnPath/>
-		<XSLTDocument/>
-		<DefaultMessageVersionID>0</DefaultMessageVersionID>
-		<DefaultMessageTransportID>15</DefaultMessageTransportID>
-		<InitialManualTransportStatusID/>
-	</MessageDetail>
 	<MessageDetail ID="10">
 		<LastChanged>2010-04-02T16:00:49</LastChanged>
 		<Deleted>N</Deleted>
@@ -150,14 +115,13 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="11">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-03-11T10:57:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
-#Sun Nov 01 07:01:33 PST 2009
+#Fri Mar 11 10:57:24 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourloco.com/reply
-destinationAddress=http\://www.tourgeek.com
-messageVersionID=12
+sourceAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8080
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -352,14 +316,13 @@ Manual=true
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="24">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-03-11T10:58:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
-#Sun Oct 05 06:26:34 PDT 2008
-sourceAddress=http\://www.tourloco.com\:8080/reply
-destinationMessage=/tour/ws
-destinationAddress=http\://www.tourloco.com\:8080
-messageVersionID=9
+#Fri Mar 11 10:58:02 PST 2011
+destinationMessage=/ws
+sourceAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8080
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
