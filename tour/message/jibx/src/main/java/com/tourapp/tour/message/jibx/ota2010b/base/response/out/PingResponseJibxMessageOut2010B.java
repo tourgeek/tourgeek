@@ -1,8 +1,8 @@
 /**
- *  @(#)PingResponseJibxMessageOut2010A.
+ *  @(#)PingResponseJibxMessageOut2010B.
  *  Copyright © 2010 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010a.base.response.out;
+package com.tourapp.tour.message.jibx.ota2010b.base.response.out;
 
 import java.awt.*;
 import java.util.*;
@@ -19,7 +19,7 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import com.tourapp.tour.message.jibx.ota2010a.base.request.out.*;
+import com.tourapp.tour.message.jibx.ota2010b.base.request.out.*;
 import org.jibx.schema.org.opentravel._2010B.ping.*;
 import org.jibx.schema.org.opentravel._2010B.base.*;
 import org.jbundle.thin.base.message.*;
@@ -28,14 +28,14 @@ import com.tourapp.tour.message.base.request.in.*;
 import com.tourapp.tour.message.base.response.*;
 
 /**
- *  PingResponseJibxMessageOut2010A - .
+ *  PingResponseJibxMessageOut2010B - .
  */
-public class PingResponseJibxMessageOut2010A extends BaseJibxMessageOut2010A
+public class PingResponseJibxMessageOut2010B extends BaseJibxMessageOut2010B
 {
     /**
      * Default constructor.
      */
-    public PingResponseJibxMessageOut2010A()
+    public PingResponseJibxMessageOut2010B()
     {
         super();
     }
@@ -47,7 +47,7 @@ public class PingResponseJibxMessageOut2010A extends BaseJibxMessageOut2010A
      * An ExternalTrxMessage is the message converted to a format that the receiver can
      * understand (such as ebXML).
      */
-    public PingResponseJibxMessageOut2010A(ExternalTrxMessageOut message)
+    public PingResponseJibxMessageOut2010B(ExternalTrxMessageOut message)
     {
         this();
         this.init(message);

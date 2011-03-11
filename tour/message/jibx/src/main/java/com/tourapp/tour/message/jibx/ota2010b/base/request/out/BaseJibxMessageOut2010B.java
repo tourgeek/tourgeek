@@ -1,8 +1,8 @@
 /**
- *  @(#)BaseJibxMessageOut2010A.
+ *  @(#)BaseJibxMessageOut2010B.
  *  Copyright © 2010 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010a.base.request.out;
+package com.tourapp.tour.message.jibx.ota2010b.base.request.out;
 
 import java.awt.*;
 import java.util.*;
@@ -27,14 +27,14 @@ import org.jibx.schema.org.opentravel._2010B.base.*;
 import org.joda.time.*;
 
 /**
- *  BaseJibxMessageOut2010A - .
+ *  BaseJibxMessageOut2010B - .
  */
-public class BaseJibxMessageOut2010A extends JibxConvertToNative
+public class BaseJibxMessageOut2010B extends JibxConvertToNative
 {
     /**
      * Default constructor.
      */
-    public BaseJibxMessageOut2010A()
+    public BaseJibxMessageOut2010B()
     {
         super();
     }
@@ -46,7 +46,7 @@ public class BaseJibxMessageOut2010A extends JibxConvertToNative
      * An ExternalTrxMessage is the message converted to a format that the receiver can
      * understand (such as ebXML).
      */
-    public BaseJibxMessageOut2010A(ExternalTrxMessageOut message)
+    public BaseJibxMessageOut2010B(ExternalTrxMessageOut message)
     {
         this();
         this.init(message);

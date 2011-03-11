@@ -1,8 +1,8 @@
 /**
- *  @(#)PingRequestJibxMessageIn2010A.
+ *  @(#)PingResponseJibxMessageIn2010B.
  *  Copyright © 2010 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010a.base.request.in;
+package com.tourapp.tour.message.jibx.ota2010b.base.response.in;
 
 import java.awt.*;
 import java.util.*;
@@ -19,6 +19,7 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.tour.message.jibx.ota2010b.base.request.in.*;
 import org.jbundle.base.message.trx.message.external.*;
 import org.jibx.schema.org.opentravel._2010B.ping.*;
 import org.jibx.schema.org.opentravel._2010B.base.*;
@@ -26,14 +27,14 @@ import com.tourapp.tour.message.base.request.in.*;
 import org.jbundle.thin.base.message.*;
 
 /**
- *  PingRequestJibxMessageIn2010A - .
+ *  PingResponseJibxMessageIn2010B - .
  */
-public class PingRequestJibxMessageIn2010A extends BaseJibxMessageIn2010A
+public class PingResponseJibxMessageIn2010B extends BaseJibxMessageIn2010B
 {
     /**
      * Default constructor.
      */
-    public PingRequestJibxMessageIn2010A()
+    public PingResponseJibxMessageIn2010B()
     {
         super();
     }
@@ -42,7 +43,7 @@ public class PingRequestJibxMessageIn2010A extends BaseJibxMessageIn2010A
      * This is used for outgoing EC transactions where you have the jaxb message and you need to convert it.
      * @param objRawMessage The (optional) raw data of the message.
      */
-    public PingRequestJibxMessageIn2010A(ExternalTrxMessageIn message)
+    public PingResponseJibxMessageIn2010B(ExternalTrxMessageIn message)
     {
         this();
         this.init(message);
@@ -63,20 +64,35 @@ public class PingRequestJibxMessageIn2010A extends BaseJibxMessageIn2010A
      */
     public int convertMarshallableObjectToInternal(Object root, RecordOwner recordOwner)
     {
-        if (root instanceof PingRQ)
+        if (root instanceof PingRS)
         {       // Always
-            PingRQ msg = (PingRQ)root;
-            String strMessage = msg.getEchoData();
+            PingRS msg = (PingRS)root;
+            java.util.List<PingRS.Sequence> list = msg.getSuccessList();
+            Errors errors = msg.getErrors();
+            String messageText = null;
+            String errorMessage = null;
+            boolean bSuccess = true;    // Who uses this?
+            for (PingRS.Sequence data : list)
+            {
+                Success success = data.getSuccess();
+                if (success != null)
+                    bSuccess = true;
+                messageText = data.getEchoData();
+            }
+            if (errors != null)
+            for (_Error error : errors.getErrorList())
+            {
+                FreeText freeText = error.getFreeText();
+                errorMessage = freeText.getString();
+            }
             
             BaseMessage message = this.getMessage();
-            message.put(PingRequestMessageInProcessor.MESSAGE_PARAM, strMessage);
-        
+            message.put(PingRequestMessageInProcessor.MESSAGE_PARAM, messageText);
+            
             OTAPayloadStdAttributes payloadStdAttributes = msg.getPayloadStdAttributes();
             this.addPayloadProperties(payloadStdAttributes, message);
-            return DBConstants.NORMAL_RETURN;
         }
-        else
-            return DBConstants.ERROR_RETURN;
+        return DBConstants.NORMAL_RETURN;
     }
 
 }
