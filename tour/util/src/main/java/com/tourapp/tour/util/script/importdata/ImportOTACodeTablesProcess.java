@@ -21,10 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.base.thread.*;
 import com.tourapp.tour.product.base.ota.db.*;
-import net.sourceforge.ota_tools.jaxb.ota2010a.codetable.*;
+import org.jibx.schema.org.opentravel._2010B.codetable.*;
 import javax.xml.bind.*;
 import java.io.*;
 import javax.xml.datatype.*;
+import org.jibx.schema.org.opentravel._2010B.base.*;
+import org.jibx.runtime.*;
+import org.joda.time.*;
 
 /**
  *  ImportOTACodeTablesProcess - .
@@ -78,29 +81,28 @@ public class ImportOTACodeTablesProcess extends BaseProcess
             OTACodes recOTACodes = (OTACodes)this.getRecord(OTACodes.kOTACodesFile);
             
             String strFilePath = this.getProperty("filepath");
-            String PACKAGE = OTACodeTables.class.getPackage().getName();
             String NONE = "none";
             String VALUE_PARAM = ".value";
             
-            JAXBContext jc = JAXBContext.newInstance( PACKAGE );
+            IBindingFactory jc = BindingDirectory.getFactory(CodeTables.class);
+            IUnmarshallingContext unmarshaller = jc.createUnmarshallingContext();
+            InputStream inStream = new FileInputStream( strFilePath );
+            CodeTables codeTables = (CodeTables)unmarshaller.unmarshalDocument( inStream, Constants.URL_ENCODING);
             
-            Unmarshaller u = jc.createUnmarshaller();
-            OTACodeTables codeTables = (OTACodeTables)u.unmarshal(new FileInputStream( strFilePath ) );
-            
-            if (codeTables.getOTACodeTable() != null)
-            for (OTACodeTables.OTACodeTable table : codeTables.getOTACodeTable())
+            if (codeTables.getCodeTableList() != null)
+            for (CodeTables.CodeTable table : codeTables.getCodeTableList())
             {
                 String strName = table.getName();
                 String strNameCode = table.getNameCode();
-                XMLGregorianCalendar calCreate = table.getCreationDate();
-                XMLGregorianCalendar calDeletion = table.getMarkedForDeletionDate();
-                OTACodeTables.OTACodeTable.Descriptions descriptions = table.getDescriptions();
+                LocalDate calCreate = table.getCreationDate();
+                LocalDate calDeletion = table.getMarkedForDeletionDate();
+                CodeTables.CodeTable.Descriptions descriptions = table.getDescriptions();
                 Properties properties = null;
                 if (descriptions != null)
-                    for (FreeTextType desc : descriptions.getDescription())
+                    for (FreeText desc : descriptions.getDescriptionList())
                     {
                         String strLanguage = desc.getLanguage();
-                        String strValue = desc.getValue();
+                        String strValue = desc.getString();
                         if ((strLanguage == null) || (strLanguage.length() == 0))
                             strLanguage = NONE;
                         if (properties == null)
@@ -112,30 +114,30 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                 recOTACodeTable.getField(OTACodeTable.kName).setString(strName);
                 recOTACodeTable.getField(OTACodeTable.kNameCode).setString(strNameCode);
                 if (calCreate != null)
-                    ((DateField)recOTACodeTable.getField(OTACodeTable.kCreationDate)).setCalendar(calCreate.toGregorianCalendar(), true, DBConstants.SCREEN_MOVE);
+                    ((DateField)recOTACodeTable.getField(OTACodeTable.kCreationDate)).setDate(calCreate.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
                 if (calDeletion != null)
-                    ((DateField)recOTACodeTable.getField(OTACodeTable.kDeletionDate)).setCalendar(calDeletion.toGregorianCalendar(), true, DBConstants.SCREEN_MOVE);
+                    ((DateField)recOTACodeTable.getField(OTACodeTable.kDeletionDate)).setDate(calDeletion.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
                 ((PropertiesField)recOTACodeTable.getField(OTACodeTable.kProperties)).setProperties(properties);
                 recOTACodeTable.add();
                 Object bookmark = recOTACodeTable.getLastModified(DBConstants.BOOKMARK_HANDLE);
                 
                 if (table.getCodes() != null)
-                    if (table.getCodes().getCode() != null)
-                for (OTACodeTables.OTACodeTable.Codes.Code code : table.getCodes().getCode())
+                    if (table.getCodes().getCodeList() != null)
+                for (CodeTables.CodeTable.Codes.Code code : table.getCodes().getCodeList())
                 {
                     String strValue2 = code.getValue();
-                    XMLGregorianCalendar calCreate2 = code.getCreationDate();
-                    XMLGregorianCalendar calDeletion2 = code.getMarkedForDeletionDate();
-                    OTACodeTables.OTACodeTable.Codes.Code.CodeContents contents = code.getCodeContents();
+                    LocalDate calCreate2 = code.getCreationDate();
+                    LocalDate calDeletion2 = code.getMarkedForDeletionDate();
+                    java.util.List<CodeContent> contents = code.getCodeContentList();
                     
                     String strNameDefault = null;
                     properties = null;
-                    if (contents.getCodeContent() != null)
-                    for (CodeContentType contentType : contents.getCodeContent())
+                    if (contents != null)
+                    for (CodeContent contentType : contents)
                     {
                         String strLanguage = contentType.getLanguage();
                         String strName3 = contentType.getName();
-                        String strValue3 = contentType.getValue();
+                        String strValue3 = contentType.getString();
                         
                         if (((strLanguage == null) || (strLanguage.length() == 0))
                             || (strNameDefault == null))
@@ -155,23 +157,21 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                     recOTACodes.getField(OTACodes.kValue).setString(strValue2);
                     recOTACodes.getField(OTACodes.kName).setString(strNameDefault);
                     if (calCreate2 != null)
-                        ((DateField)recOTACodes.getField(OTACodes.kCreationDate)).setCalendar(calCreate2.toGregorianCalendar(), true, DBConstants.SCREEN_MOVE);
+                        ((DateField)recOTACodes.getField(OTACodes.kCreationDate)).setDate(calCreate2.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
                     if (calDeletion2 != null)
-                        ((DateField)recOTACodes.getField(OTACodes.kDeletionDate)).setCalendar(calDeletion2.toGregorianCalendar(), true, DBConstants.SCREEN_MOVE);
+                        ((DateField)recOTACodes.getField(OTACodes.kDeletionDate)).setDate(calDeletion2.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
                     ((PropertiesField)recOTACodes.getField(OTACodes.kProperties)).setProperties(properties);
                     recOTACodes.add();
         
                 }
             }
             
-            
-        
         } catch (DBException ex) {
-            ex.printStackTrace();
-        } catch (JAXBException ex) {
             ex.printStackTrace();
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
+        } catch (JiBXException e) {
+            e.printStackTrace();
         }
     }
 

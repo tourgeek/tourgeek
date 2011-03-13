@@ -18,7 +18,5 @@
   <modules>
     <module>core</module>
     <module>jibx</module>
-    <module>jaxb</module>
-    <module>xmlbeans</module>
   </modules>
 </project>

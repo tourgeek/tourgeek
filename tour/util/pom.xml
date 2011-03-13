@@ -22,14 +22,25 @@
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.message.jaxb</artifactId>
+      <artifactId>com.tourapp.tour.message</artifactId>
       <version>0.7.7-SNAPSHOT</version>
     </dependency>
-    <dependency>
-      <groupId>net.sourceforge.ota-tools.schema.jaxb</groupId>
-      <artifactId>ota-tools-schema-jaxb-2010a-codetable</artifactId>
-      <version>${otaVersion}</version>
-    </dependency>
+
+<dependency>
+    <groupId>com.tourapp.tour</groupId>
+  <artifactId>com.tourapp.tour.product</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>com.tourapp.tour</groupId>
+  <artifactId>com.tourapp.tour.booking</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+</dependency>
+<dependency>
+  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
+  <artifactId>org.jibx.schema.org.opentravel._2010B.codetable</artifactId>
+  <version>1.0.0</version>
+</dependency>
 
     <dependency>
       <groupId>com.tourapp.tour</groupId>
