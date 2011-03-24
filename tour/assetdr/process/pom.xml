@@ -22,7 +22,6 @@
     <dependency>
       <groupId>org.jibx.schema.net.webservicex</groupId>
       <artifactId>org.jibx.schema.net.webservicex.currencyconvertor</artifactId>
-      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.base.message</groupId>

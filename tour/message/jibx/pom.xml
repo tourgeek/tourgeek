@@ -30,12 +30,10 @@
 	<dependency>
 	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
 	  <artifactId>org.jibx.schema.org.opentravel._2010B.ping</artifactId>
-	  <version>1.0.0</version>
 	</dependency>
 	<dependency>
 	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
 	  <artifactId>org.jibx.schema.org.opentravel._2010B.hotel</artifactId>
-	  <version>1.0.0</version>
 	</dependency>
 
     <dependency>
