@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
-      <artifactId>tourapp-tour-mixed</artifactId>
+      <artifactId>com.tourapp.tour.mixed</artifactId>
       <version>0.7.7-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>

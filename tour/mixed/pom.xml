@@ -14,7 +14,7 @@
   		The actual bundles are in the respective projects (tourapp-tour-booking, etc.)
   	   ****************************************************************************************** -->
   <groupId>com.tourapp.tour</groupId>
-  <artifactId>tourapp-tour-mixed</artifactId>
+  <artifactId>com.tourapp.tour.mixed</artifactId>
   <name>tourapp-tour-mixed - Tour application code</name>
   <description>Tour application code</description>
   <packaging>jar</packaging>	<!-- This is NOT an OSGi bundle -->
