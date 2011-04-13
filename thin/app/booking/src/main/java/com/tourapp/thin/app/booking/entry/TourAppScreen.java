@@ -19,6 +19,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.MessageReceiver;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
@@ -27,7 +28,6 @@ import org.jbundle.thin.base.db.KeyAreaInfo;
 import org.jbundle.thin.base.db.Params;
 import org.jbundle.thin.base.message.BaseMessageFilter;
 import org.jbundle.thin.base.message.BaseMessageManager;
-import org.jbundle.thin.base.message.BaseMessageReceiver;
 import org.jbundle.thin.base.message.JMessageListener;
 import org.jbundle.thin.base.message.MessageConstants;
 import org.jbundle.thin.base.message.event.ModelMessageHandler;
@@ -38,15 +38,15 @@ import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
-import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
-import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
-import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.util.ParamDispatcher;
 import org.jbundle.thin.base.thread.PrivateTaskScheduler;
 import org.jbundle.thin.base.thread.TaskScheduler;
 import org.jbundle.thin.opt.location.JTreePanel;
+import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
+import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
+import org.jbundle.util.calendarpanel.model.CalendarModel;
 
 import com.tourapp.thin.app.booking.entry.contact.JMainContactScreen;
 import com.tourapp.thin.app.booking.entry.context.JContextPanel;
@@ -488,7 +488,7 @@ public class TourAppScreen extends JBaseScreen
                 }
             }
         };
-        BaseMessageReceiver handler = messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
+        MessageReceiver handler = messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
 
         Properties properties = new Properties();
         properties.setProperty(MessageConstants.CLASS_NAME, MessageConstants.GRID_FILTER);

@@ -32,7 +32,6 @@ import org.jbundle.thin.base.message.BaseMessageReceiver;
 import org.jbundle.thin.base.message.MessageConstants;
 import org.jbundle.thin.base.message.MessageReceiverFilterList;
 import org.jbundle.thin.base.message.event.FieldListMessageHandler;
-import org.jbundle.thin.base.message.remote.RemoteMessageManager;
 import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.JBasePanel;
@@ -95,7 +94,7 @@ public class JItinScreen extends JBaseScreen
         RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable) table).getRemoteTableType(java.rmi.server.RemoteStub.class);
 
         BaseMessageManager messageManager = tourAppScreen.getBaseApplet().getApplication().getMessageManager();
-        BaseMessageReceiver messageReceiver = messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
+        BaseMessageReceiver messageReceiver = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
         MessageReceiverFilterList messageFilters = messageReceiver.getMessageFilterList();
         BaseMessageHeader messageHeaderFilter = new BaseMessageHeader(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE, null, null);
         

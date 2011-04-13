@@ -89,7 +89,7 @@ public class TestThinScreen extends JScreen
 //------------------------------
 
         BaseMessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
-        BaseMessageReceiver handler = messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
+        BaseMessageReceiver handler = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
 //x     JMessageListener listener = new TestMessageListener(handler);
 
         JMessageListener listenerForSession = this; // new JScreenMessageHandler(this);

@@ -149,7 +149,7 @@ public class ModifyTourSubField extends ReferenceField
                                 parentScreen.setProperty(RecordMessageConstants.TABLE_NAME, recTourSub.getTableNames(false));
                                 GridScreen screen = new TourHeaderOptionGridScreen(recTourHeader, null, null, parentScreen, null, /*ScreenConstants.SELECT_MODE |*/ ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
                                 BaseMessageManager messageManager = application.getMessageManager();
-                                BaseMessageReceiver receiver = messageManager.getMessageQueue(strQueueName, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
+                                BaseMessageReceiver receiver = (BaseMessageReceiver)messageManager.getMessageQueue(strQueueName, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
                                 BaseScreen screenTarget = (BaseScreen)sourceSField.getParentScreen();
                                 receiver.createDefaultFilter(screenTarget, true);
                             }

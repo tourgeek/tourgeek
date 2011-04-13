@@ -153,7 +153,7 @@ public class JProductGridScreen extends JGridScreen
 
             // Listen for remote (returned rate) messages.
             BaseMessageManager messageManager = applet.getApplication().getMessageManager();
-            BaseMessageReceiver handler = messageManager.getMessageQueue(MessageConstants.SESSION_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
+            BaseMessageReceiver handler = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.SESSION_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
 
             FieldTable tableMain = this.getFieldList().getTable();
             org.jbundle.thin.base.remote.RemoteTable remoteSessionMain = ((org.jbundle.thin.base.db.client.RemoteFieldTable)tableMain).getRemoteTableType(java.rmi.server.RemoteStub.class);
