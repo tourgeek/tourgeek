@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourapp-config-web-reactor</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.tourapp.web.httpweb</artifactId>
+
+	<name>tourapp-web-httpweb - Hybrid osgi webapp</name>
+	<description>web osgi httpweb bundle</description>
+
+	<packaging>bundle</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>${project.artifactId}.*;version=${project.version}</Export-Package>
+						<Import-Package>*;resolution:=optional</Import-Package>
+						<Bundle-Activator>com.tourapp.web.httpweb.HttpServiceActivator</Bundle-Activator>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<configuration>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>8888</port>
+							<maxIdleTime>30000</maxIdleTime>
+						</connector>
+					</connectors>
+					<webAppSourceDirectory>${project.build.directory}/${project.artifactId}-${project.version}
+					</webAppSourceDirectory>
+					<contextPath>/</contextPath>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>move-dojo-resources</id> <!--  Copy dojo resources before packaging starts. -->
+						<phase>process-resources</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<artifactItems>
+						<artifactItem>
+							<groupId>org.dojotoolkit</groupId>
+							<artifactId>dojo</artifactId>
+							<version>${dojoVersion}</version>
+							<type>zip</type>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+						</artifactItem>
+						<artifactItem>
+							<groupId>org.jbundle.res</groupId>
+							<artifactId>org.jbundle.res.images</artifactId>
+							<version>${project.version}</version>
+			                <classifier>root</classifier>
+							<type>jar</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}
+							</outputDirectory>
+						</artifactItem>
+						<artifactItem>
+							<groupId>org.jbundle.res</groupId>
+							<artifactId>org.jbundle.res.docs</artifactId>
+							<version>${project.version}</version>
+			                <classifier>root</classifier>
+							<type>jar</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}
+							</outputDirectory>
+							<excludes>docs\/programmer\/**,docs\/help\/specifications\/**,docs\/test\/**
+							</excludes>
+						</artifactItem>
+						<artifactItem>
+							<groupId>org.jbundle.config.web</groupId>
+							<artifactId>jbundle-config-web-jnlp</artifactId>
+							<version>${project.version}</version>
+							<classifier>bin</classifier>
+							<type>zip</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}
+							</outputDirectory>
+						</artifactItem>
+						<artifactItem>
+						  <groupId>org.jbundle.config.other</groupId>
+						  <artifactId>org.jbundle.other.uk.org.pajhome.crypt.sha1</artifactId>
+							<version>${project.version}</version>
+							<type>jar</type>
+							<outputDirectory>${project.build.directory}/sha</outputDirectory>
+						</artifactItem>
+						<artifactItem>
+							<groupId>com.tourapp.config</groupId>
+							<artifactId>tourapp-config-web-jnlp</artifactId>
+							<version>${project.version}</version>
+							<classifier>bin</classifier>
+							<type>zip</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}
+							</outputDirectory>
+						</artifactItem>
+						<!--
+							artifactItem> <groupId>org.jbundle.config</groupId>
+							<artifactId>org.jbundle.config.web.cocoon</artifactId>
+							<version>${project.version}</version> <type>war</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
+							</artifactItem -->
+					</artifactItems>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}/docs/styles/js
+							</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${project.build.directory}/dojo-${dojoVersion}
+									</directory>
+									<filtering>false</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+		<resources>
+			<resource>
+				<directory>${project.build.directory}/sha/org/jbundle/other/uk/org/pajhome/crypt/sha1</directory>
+				<targetPath>docs/styles/js/sha</targetPath>
+			</resource>
+			<resource>
+				<directory>${project.build.directory}/${project.build.finalName}</directory>
+				<targetPath></targetPath>
+			</resource>
+		</resources>
+	</build>
+
+	<dependencies>	    
+		<dependency>
+		    <groupId>com.tourapp.config</groupId>
+		    <version>0.7.7-SNAPSHOT</version>
+			<artifactId>tourapp-config-dep-all</artifactId>
+			<type>pom</type>
+			<scope>provided</scope>	<!-- Hey this is OSGi -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<scope>provided</scope> <!-- This better be provided -->
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+			<scope>provided</scope> <!-- This better be provided -->
+		</dependency>
+
+	    <dependency>
+			<groupId>org.jbundle.config.web</groupId>
+			<artifactId>org.jbundle.web.httpservice</artifactId>
+			<version>${project.version}</version>
+	    </dependency>
+	</dependencies>
+
+</project>
+
