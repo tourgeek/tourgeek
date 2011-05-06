@@ -7,7 +7,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>31</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-05-14T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Price</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -33,7 +33,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>19</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-05-14T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -59,7 +59,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>31</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-06-01T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Price</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -85,7 +85,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>19</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-06-01T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -111,7 +111,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>5</TourHeaderDetailID>
 		<TourHeaderOptionID>18</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-06-01T00:00:00</ModuleStartDate>
 		<Description>Weekend surcharge</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
