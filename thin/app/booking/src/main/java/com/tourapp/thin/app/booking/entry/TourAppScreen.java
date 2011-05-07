@@ -30,6 +30,7 @@ import org.jbundle.thin.base.message.BaseMessageFilter;
 import org.jbundle.thin.base.message.BaseMessageManager;
 import org.jbundle.thin.base.message.JMessageListener;
 import org.jbundle.thin.base.message.MessageConstants;
+import org.jbundle.thin.base.message.ThinMessageManager;
 import org.jbundle.thin.base.message.event.ModelMessageHandler;
 import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
 import org.jbundle.thin.base.remote.RemoteSession;
@@ -161,8 +162,8 @@ public class TourAppScreen extends JBaseScreen
         // Set up the calendar
         m_model = this.setupCalendarModel();
         
-        BaseMessageManager.createMessageListener(this.getFieldList(), this);    // Listen for changes
-        BaseMessageManager.createMessageListener(this.getTourRecord(), this);
+        ThinMessageManager.createMessageListener(this.getFieldList(), this);    // Listen for changes
+        ThinMessageManager.createMessageListener(this.getTourRecord(), this);
 
             // 1st level - a panel to hold everything
         parent.setLayout(new BoxLayout(parent, BoxLayout.Y_AXIS));

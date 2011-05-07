@@ -29,7 +29,7 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
 import org.jbundle.thin.base.db.converter.SecondaryRecordConverter;
-import org.jbundle.thin.base.message.BaseMessageManager;
+import org.jbundle.thin.base.message.ThinMessageManager;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -136,14 +136,14 @@ public class JProductScreen extends JScreen
         JContextPanel contextPanel = screenMain.getContextPanel();
         contextPanel.selectPanel(SearchConstants.PRODUCT, this.getRemoteTableName(), record, true);        // Display this context panel and link to this record.
         
-        BaseMessageManager.createScreenMessageListener(record, this);
+        ThinMessageManager.createScreenMessageListener(record, this);
     }
     /**
      * 
      */
     public void free()
     {
-        BaseMessageManager.freeScreenMessageListeners(this);
+        ThinMessageManager.freeScreenMessageListeners(this);
 
         TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
         JContextPanel contextPanel = screenMain.getContextPanel();

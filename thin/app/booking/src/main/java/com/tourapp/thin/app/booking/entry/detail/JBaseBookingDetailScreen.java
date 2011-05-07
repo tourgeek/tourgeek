@@ -32,7 +32,7 @@ import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
-import org.jbundle.thin.base.message.BaseMessageManager;
+import org.jbundle.thin.base.message.ThinMessageManager;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
@@ -153,7 +153,7 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
             }
         }
 
-        BaseMessageManager.createScreenMessageListener(record, this);
+        ThinMessageManager.createScreenMessageListener(record, this);
         
         TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
         JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(tourAppScreen, JTabbedPane.class);
@@ -168,7 +168,7 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
         JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(tourAppScreen, JTabbedPane.class);
         tabbedPane.removeChangeListener(this);
 
-        BaseMessageManager.freeScreenMessageListeners(this);
+        ThinMessageManager.freeScreenMessageListeners(this);
 
         FieldList recBookingDetail = this.getFieldList();
         recBookingDetail.removePropertyChangeListener(this);
