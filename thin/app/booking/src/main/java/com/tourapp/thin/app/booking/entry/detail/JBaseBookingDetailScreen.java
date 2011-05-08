@@ -32,12 +32,12 @@ import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
-import org.jbundle.thin.base.message.ThinMessageManager;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
+import org.jbundle.thin.base.util.ThinMessageManager;
 import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;

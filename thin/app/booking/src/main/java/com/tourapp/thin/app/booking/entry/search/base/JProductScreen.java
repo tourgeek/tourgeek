@@ -29,7 +29,6 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
 import org.jbundle.thin.base.db.converter.SecondaryRecordConverter;
-import org.jbundle.thin.base.message.ThinMessageManager;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -38,6 +37,7 @@ import org.jbundle.thin.base.screen.JScreen;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JFSTextScroller;
 import org.jbundle.thin.base.screen.util.LinkedConverter;
+import org.jbundle.thin.base.util.ThinMessageManager;
 import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
