@@ -19,6 +19,7 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.screen.*;
 import java.io.*;
 import com.tourapp.tour.base.db.*;

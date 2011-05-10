@@ -11,12 +11,12 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.JScreen;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.tour.booking.db.Booking;

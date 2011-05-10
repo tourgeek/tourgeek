@@ -12,13 +12,13 @@ import java.awt.GridBagConstraints;
 
 import javax.swing.JComponent;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.util.JFSTextField;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;

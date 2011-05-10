@@ -13,11 +13,11 @@ import java.awt.GridBagConstraints;
 import javax.swing.JComponent;
 import javax.swing.JTextField;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.JBaseScreen;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;
 import com.tourapp.thin.tour.product.base.db.Product;

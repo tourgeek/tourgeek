@@ -17,6 +17,7 @@ import javax.swing.JMenuBar;
 import javax.swing.KeyStroke;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.Params;
@@ -27,7 +28,6 @@ import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.action.ActionManager;
 import org.jbundle.thin.base.screen.menu.JBaseMenuScreen;
 import org.jbundle.thin.base.util.ThinMenuConstants;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.tour.booking.db.Booking;
 import com.tourapp.thin.tour.booking.db.Tour;

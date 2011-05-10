@@ -27,6 +27,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -38,7 +39,6 @@ import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
 import org.jbundle.thin.base.util.ThinMessageManager;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;

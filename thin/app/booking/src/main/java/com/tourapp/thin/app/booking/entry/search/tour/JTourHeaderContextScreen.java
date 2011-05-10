@@ -9,8 +9,8 @@ package com.tourapp.thin.app.booking.entry.search.tour;
  */
 import javax.swing.JComponent;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
 import com.tourapp.thin.tour.product.tour.db.TourHeader;

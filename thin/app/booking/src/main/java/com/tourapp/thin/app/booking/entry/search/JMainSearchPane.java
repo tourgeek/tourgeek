@@ -22,6 +22,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
 import javax.swing.ScrollPaneConstants;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -32,7 +33,6 @@ import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.util.calendarpanel.CalendarPanel;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.util.calendarpanel.util.MouseDateListener;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;

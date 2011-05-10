@@ -19,6 +19,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -30,7 +31,6 @@ import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.base.screen.grid.JCellImage;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.search.air.JAirGridScreen;

@@ -11,9 +11,9 @@ import javax.swing.BoxLayout;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
 import com.tourapp.thin.tour.product.air.db.Air;

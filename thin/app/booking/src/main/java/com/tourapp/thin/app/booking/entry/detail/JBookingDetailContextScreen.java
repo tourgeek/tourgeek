@@ -18,6 +18,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -26,7 +27,6 @@ import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarItem;

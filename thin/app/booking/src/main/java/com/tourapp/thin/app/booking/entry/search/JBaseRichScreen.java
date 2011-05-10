@@ -26,6 +26,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -41,7 +42,6 @@ import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 import org.jbundle.thin.base.screen.util.LinkedConverter;
-import org.jbundle.thin.base.util.Util;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
