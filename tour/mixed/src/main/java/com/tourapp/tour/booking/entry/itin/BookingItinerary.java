@@ -363,7 +363,7 @@ public class BookingItinerary extends BookingSubScreen
             if (this.getTask() != null)
                 if (this.getTask().getApplication() != null)
             {
-                App application = this.getTask().getApplication();
+                Service application = this.getTask().getApplication();
                 BasePanel parentScreen = Screen.makeWindow(application);
                 Map<String,Object> properties = new Hashtable<String,Object>();
                 ReferenceField fldRequestTypeID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kRequestTypeID);
