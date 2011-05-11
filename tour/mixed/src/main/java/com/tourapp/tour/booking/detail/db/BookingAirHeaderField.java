@@ -94,7 +94,7 @@ public class BookingAirHeaderField extends ReferenceField
                             task = recBookingAirHeader.getRecordOwner().getTask();
                         if (task == null)
                             task = BaseApplet.getSharedInstance();
-                        Service application = task.getApplication();
+                        App application = task.getApplication();
         
                         BasePanel parent = Screen.makeWindow(application);
                         int iDocMode = ScreenConstants.SELECT_MODE;
