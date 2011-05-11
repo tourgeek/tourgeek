@@ -19,7 +19,6 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.screen.*;
 import java.io.*;
 import com.tourapp.tour.base.db.*;
@@ -60,7 +59,7 @@ public class MergeSkymap extends MergeCity
         if (args != null)
         {
             properties = new Hashtable<String,Object>();
-            Util.parseArgs(properties, args);
+            Utility.parseArgs(properties, args);
         }
         MergeSkymap convert = new MergeSkymap(null, null, properties);
         convert.run();

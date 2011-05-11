@@ -19,8 +19,6 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.model.util.Util;
-
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.land.screen.*;
 import java.util.*;
@@ -278,7 +276,7 @@ public class LandPricing extends ProductPricing
             }
             if ((VariesByField.MANUAL_PER_PERSON.equals(strVariesBy)) || (VariesByField.MANUAL_FIXED.equals(strVariesBy)) || (VariesByField.MANUAL_PER_ROOM.equals(strVariesBy)))
             { // Cost comes from a param
-                String strKey = BookingDetail.COST_PARAM + '.' + BookingDetail.MESSAGE_PARAM + '.' + Util.fixDOMElementName(recVariesOn.getVariesParam(this.getField(LandPricing.kVariesDesc).toString()));
+                String strKey = BookingDetail.COST_PARAM + '.' + BookingDetail.MESSAGE_PARAM + '.' + ThinUtil.fixDOMElementName(recVariesOn.getVariesParam(this.getField(LandPricing.kVariesDesc).toString()));
                 if (mapProperties.get(strKey) == null)
                 {
                     String PARAM_REQUIRED = "Param required";

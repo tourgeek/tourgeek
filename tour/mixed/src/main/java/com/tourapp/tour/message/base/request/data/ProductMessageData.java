@@ -4,39 +4,31 @@
  */
 package com.tourapp.tour.message.base.request.data;
 
-import java.text.MessageFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.Record;
-import org.jbundle.base.db.RecordOwner;
-import org.jbundle.base.field.DateTimeField;
-import org.jbundle.base.field.ReferenceField;
-import org.jbundle.base.field.event.FieldDataScratchHandler;
-import org.jbundle.base.message.trx.message.TrxMessageHeader;
-import org.jbundle.base.util.DBConstants;
-import org.jbundle.base.util.DBParams;
-import org.jbundle.main.msg.db.RequestType;
-import org.jbundle.model.DBException;
-import org.jbundle.model.db.Rec;
-import org.jbundle.thin.base.db.Constants;
-import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.db.FieldList;
-import org.jbundle.thin.base.message.BaseMessageRecordDesc;
-import org.jbundle.thin.base.message.MessageDataDesc;
-import org.jbundle.thin.base.message.MessageDataParent;
-import org.jbundle.thin.base.message.MessageFieldDesc;
-import org.jbundle.thin.base.util.ThinResourceConstants;
-
-import com.tourapp.tour.booking.detail.db.BookingDetail;
-import com.tourapp.tour.message.base.BaseProductMessageData;
-import com.tourapp.tour.message.base.request.ProductRequest;
-import com.tourapp.tour.product.base.db.BaseClass;
-import com.tourapp.tour.product.base.db.BaseRate;
-import com.tourapp.tour.product.base.db.CostStatus;
-import com.tourapp.tour.product.base.db.InfoStatus;
-import com.tourapp.tour.product.base.db.PaxCategory;
-import com.tourapp.tour.product.base.db.Product;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import com.tourapp.tour.message.base.*;
+import com.tourapp.tour.product.base.db.*;
+import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.tour.message.base.request.*;
+import com.tourapp.tour.booking.db.*;
+import org.jbundle.main.msg.db.*;
+import org.jbundle.base.message.trx.message.*;
+import org.jbundle.thin.base.message.*;
+import java.text.*;
+import org.jbundle.model.db.*;
 
 /**
  *  ProductMessageData - .
