@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.thin.base.screen.print.thread.SwingSyncPageWorker;
+import org.jbundle.thin.base.screen.print.thread.SyncPage;
 import org.jbundle.thin.base.thread.*;
 import java.rmi.*;
 import com.tourapp.tour.booking.db.*;
