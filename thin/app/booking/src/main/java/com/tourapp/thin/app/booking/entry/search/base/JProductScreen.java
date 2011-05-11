@@ -35,10 +35,10 @@ import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.JScreen;
+import org.jbundle.thin.base.screen.message.ThinMessageManager;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JFSTextScroller;
 import org.jbundle.thin.base.screen.util.LinkedConverter;
-import org.jbundle.thin.base.util.ThinMessageManager;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.context.JContextPanel;
