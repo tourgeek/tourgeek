@@ -25,6 +25,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  BookingDetailSubScreen - Base screen for all booking detail screens.

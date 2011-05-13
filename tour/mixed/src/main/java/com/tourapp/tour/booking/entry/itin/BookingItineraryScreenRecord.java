@@ -21,6 +21,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.entry.detail.base.*;
 import org.jbundle.main.msg.db.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  BookingItineraryScreenRecord - .

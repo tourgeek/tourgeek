@@ -27,7 +27,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.base.message.trx.message.*;
-import org.jbundle.main.msg.db.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  ProductRateMessageListener - Handle incoming rate messages.

@@ -23,7 +23,7 @@ import org.jbundle.base.message.opt.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.base.message.trx.message.*;
-import org.jbundle.main.msg.db.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  ProductAvailabilityMessageListener - .

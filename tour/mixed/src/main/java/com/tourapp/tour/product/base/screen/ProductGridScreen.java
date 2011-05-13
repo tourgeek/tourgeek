@@ -23,7 +23,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.thin.app.booking.entry.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.event.*;
-import org.jbundle.main.msg.db.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  ProductGridScreen - Base Screen to display/search product.

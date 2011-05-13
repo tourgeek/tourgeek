@@ -28,6 +28,7 @@ import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  GetProductCostHandler - Get the product cost on a valid product record.

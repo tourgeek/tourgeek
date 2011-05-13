@@ -36,6 +36,7 @@ import com.tourapp.tour.message.hotel.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.base.message.trx.transport.local.*;
 import com.tourapp.tour.message.base.request.in.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  TestHotelRateScreen - Test XML messaging to retrieve a hotel rate..

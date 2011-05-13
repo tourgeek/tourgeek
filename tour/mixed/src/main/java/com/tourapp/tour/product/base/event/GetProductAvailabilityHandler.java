@@ -24,6 +24,7 @@ import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.base.request.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  GetProductAvailabilityHandler - Get the product cost on a valid product record.

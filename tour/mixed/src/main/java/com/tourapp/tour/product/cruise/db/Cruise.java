@@ -33,6 +33,7 @@ import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.cruise.response.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 

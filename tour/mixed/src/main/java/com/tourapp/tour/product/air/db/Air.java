@@ -32,6 +32,7 @@ import com.tourapp.tour.message.air.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.air.response.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.base.db.*;
 
 /**

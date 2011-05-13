@@ -42,6 +42,7 @@ import com.tourapp.tour.message.hotel.response.data.*;
 import com.tourapp.tour.message.hotel.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
+import org.jbundle.main.msg.db.base.*;
 
 /**
  *  HotelList - For Product display.

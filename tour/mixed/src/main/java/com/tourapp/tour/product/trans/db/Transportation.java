@@ -32,6 +32,7 @@ import com.tourapp.tour.message.trans.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.trans.response.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 

@@ -20,8 +20,9 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.detail.db.*;
-import org.jbundle.main.msg.db.*;
+import org.jbundle.main.msg.db.base.*;
 import org.jbundle.main.properties.db.*;
+import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
 
 /**
