@@ -80,7 +80,27 @@
 						</artifactItem>
 						<artifactItem>
 							<groupId>org.jbundle.res</groupId>
+							<artifactId>org.jbundle.res.images.misc</artifactId>
+							<version>${project.version}</version>
+			                <classifier>root</classifier>
+							<type>jar</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}
+							</outputDirectory>
+						</artifactItem>
+						<artifactItem>
+							<groupId>org.jbundle.res</groupId>
 							<artifactId>org.jbundle.res.docs</artifactId>
+							<version>${project.version}</version>
+			                <classifier>root</classifier>
+							<type>jar</type>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}
+							</outputDirectory>
+							<excludes>docs\/programmer\/**,docs\/help\/specifications\/**,docs\/test\/**
+							</excludes>
+						</artifactItem>
+						<artifactItem>
+							<groupId>com.tourapp.res</groupId>
+							<artifactId>com.tourapp.res.images</artifactId>
 							<version>${project.version}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>

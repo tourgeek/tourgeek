@@ -17,5 +17,6 @@
     <module>tour</module>
     <module>data</module>
     <module>docs</module>
+    <module>images</module>
   </modules>
 </project>

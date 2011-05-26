@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.tourapp.res</groupId>
+    <artifactId>tourapp-res-reactor</artifactId>
+    <version>0.7.7-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>com.tourapp.res.images</artifactId>
+  <name>tourapp-res-images - Tourapp images</name>
+
+  <packaging>bundle</packaging>
+
+  <properties>
+    <jbundlePackage>org.jbundle.res.images</jbundlePackage>	<!-- I'll need to move these -->
+    <resourceLocation>src/main/resources/org/jbundle/res</resourceLocation>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <classesDirectory>${resourceLocation}</classesDirectory>
+          <classifier>root</classifier>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
