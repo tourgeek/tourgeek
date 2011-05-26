@@ -11,6 +11,13 @@
   <packaging>bundle</packaging>
   <name>tourapp-thin-tour-product - Product thin code</name>
 
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.product;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
@@ -23,6 +30,12 @@
 	    <artifactId>org.jbundle.thin.main</artifactId>
 	    <version>${jbundleVersion}</version>
   	</dependency>
+
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.product</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
 </project>

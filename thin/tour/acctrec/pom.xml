@@ -11,6 +11,13 @@
   <packaging>bundle</packaging>
   <name>tourapp-thin-tour-acctrec - Accounts rec. thin</name>
 
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.acctrec;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
@@ -21,6 +28,12 @@
     <dependency>
       <groupId>com.tourapp.thin</groupId>
       <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.acctrec</artifactId>
       <version>0.7.7-SNAPSHOT</version>
     </dependency>
   </dependencies>

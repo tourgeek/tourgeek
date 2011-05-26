@@ -14,12 +14,25 @@
   <name>tourapp-tour-product - Tour product</name>
   <packaging>bundle</packaging>
 
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.product;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.mixed</artifactId>
       <version>0.7.7-SNAPSHOT</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.product</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

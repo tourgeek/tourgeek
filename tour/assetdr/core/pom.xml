@@ -13,6 +13,13 @@
   <name>tourapp-tour-assetdr - Asset debt</name>
   <packaging>bundle</packaging>
 
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.assetdr;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
@@ -22,6 +29,12 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.base</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.assetdr</artifactId>
       <version>0.7.7-SNAPSHOT</version>
     </dependency>
   </dependencies>

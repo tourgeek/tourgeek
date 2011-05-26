@@ -13,6 +13,13 @@
   <name>tourapp-tour-base - Common</name>
   <packaging>bundle</packaging>
 
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.base;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
+
   <dependencies>
     <dependency>
 	  <groupId>org.jbundle.config.dep</groupId>
@@ -25,6 +32,12 @@
       <artifactId>jbundle-config-dep-main</artifactId>
       <version>${jbundleVersion}</version>
 	  <type>pom</type>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.base</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

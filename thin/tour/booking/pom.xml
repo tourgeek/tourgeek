@@ -11,12 +11,25 @@
   <packaging>bundle</packaging>
   <name>tourapp-thin-tour-booking - Booking resources</name>
 
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.booking;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
       <artifactId>jbundle-config-dep-thin-base</artifactId>
       <version>${jbundleVersion}</version>
 	  <type>pom</type>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.booking</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

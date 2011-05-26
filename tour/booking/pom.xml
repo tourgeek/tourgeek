@@ -13,6 +13,13 @@
   <artifactId>com.tourapp.tour.booking</artifactId>
   <name>tourapp-tour-booking - Booking</name>
   <packaging>bundle</packaging>
+  
+  <properties>
+    <jbundlePackageImport>
+      *;resolution:=optional,
+      com.tourapp.res.tour.booking;resolution:=optional,
+    </jbundlePackageImport>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -20,6 +27,12 @@
       <artifactId>com.tourapp.tour.mixed</artifactId>
       <version>0.7.7-SNAPSHOT</version>
       <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.tourapp.res</groupId>
+      <artifactId>com.tourapp.res.tour.booking</artifactId>
+      <version>0.7.7-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
