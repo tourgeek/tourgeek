@@ -119,9 +119,9 @@
 							</outputDirectory>
 						</artifactItem>
 						<artifactItem>
-						  <groupId>org.jbundle.config.other</groupId>
-						  <artifactId>org.jbundle.other.uk.org.pajhome.crypt.sha1</artifactId>
-							<version>${project.version}</version>
+						  <groupId>org.jbundle.util.osgi.wrapped</groupId>
+						  <artifactId>org.jbundle.util.osgi.wrapped.uk.org.pajhome.crypt.sha1</artifactId>
+							<version>2.2.0</version>
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/sha</outputDirectory>
 						</artifactItem>
@@ -171,7 +171,7 @@
 
 		<resources>
 			<resource>
-				<directory>${project.build.directory}/sha/org/jbundle/other/uk/org/pajhome/crypt/sha1</directory>
+				<directory>${project.build.directory}/sha/org/jbundle/util/osgi/wrapped/uk/org/pajhome/crypt/sha1</directory>
 				<targetPath>docs/styles/js/sha</targetPath>
 			</resource>
 			<resource>
