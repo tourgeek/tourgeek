@@ -39,20 +39,6 @@
                     <type>zip</type>
                     <classifier>bin</classifier>
                   </artifactItem>
-                  <!-- artifactItem>
-                    <groupId>org.jbundle.app.program</groupId>
-                    <artifactId>org.jbundle.app.jnlp</artifactId>
-                    <version>${jbundleVersion}</version>
-                    <type>zip</type>
-                    <classifier>bin</classifier>
-                  </artifactItem -->
-	            <artifactItem>
-	              <groupId>org.jbundle.config.web</groupId>
-	              <artifactId>jbundle-config-web-cocoon</artifactId>
-	              <version>${jbundle-config-web-cocoonVersion}</version>
-	              <type>war</type>
-	              <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
-	            </artifactItem>
                   <artifactItem>
                     <groupId>org.jbundle.config.web</groupId>
                     <artifactId>jbundle-config-web-webapp</artifactId>
