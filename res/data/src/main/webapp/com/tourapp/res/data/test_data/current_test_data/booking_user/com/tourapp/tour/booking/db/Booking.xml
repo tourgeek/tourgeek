@@ -199,4 +199,68 @@ eventStatus.Proposal.2=Y
 		<NonTourPricingTypeID>3</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
 	</Booking>
+	<Booking ID="4">
+		<LastChanged>2011-05-26T13:50:00</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-06-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-06-26T13:50:00</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>8</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-07-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-07-04</FinalPaymentDueDate>
+		<NextEventDate>2011-06-24</NextEventDate>
+		<TourEventID>1</TourEventID>
+		<Gross>2,688.00</Gross>
+		<Commission>268.80</Commission>
+		<Net>2,419.20</Net>
+		<Balance>0.00</Balance>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+	</Booking>
 </file>

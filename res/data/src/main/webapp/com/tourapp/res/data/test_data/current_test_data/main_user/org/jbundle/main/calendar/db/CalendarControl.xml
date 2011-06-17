@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<CalendarControl ID="1">
-		<LastChanged>2010-10-08T13:41:36</LastChanged>
+		<LastChanged>2011-06-17T10:50:03</LastChanged>
 		<Deleted>N</Deleted>
-		<LastUpdateDate>2011-06-08T13:41:35</LastUpdateDate>
-		<StartAnnivDate>2011-06-08T13:41:35</StartAnnivDate>
-		<EndAnnivDate>2011-08-07T13:41:35</EndAnnivDate>
+		<LastUpdateDate>2011-07-17T10:50:03</LastUpdateDate>
+		<StartAnnivDate>2011-07-17T10:50:03</StartAnnivDate>
+		<EndAnnivDate>2011-09-16T10:50:03</EndAnnivDate>
 		<UpdateDays>1</UpdateDays>
 		<AnnivBackDays>0</AnnivBackDays>
 		<AnniversaryDays>60</AnniversaryDays>

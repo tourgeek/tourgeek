@@ -233,4 +233,56 @@
 		<BookingDetailID>12</BookingDetailID>
 		<PaxCategoryID>2</PaxCategoryID>
 	</BookingLine>
+	<BookingLine ID="11">
+		<LastChanged>2011-05-24T12:02:50</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>4</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>31</TourHeaderDetailID>
+		<TourHeaderOptionID>40</TourHeaderOptionID>
+		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<Description>Base Tour Price (Shoulder Season)</Description>
+		<ProductType/>
+		<RemoteReferenceNo/>
+		<Sequence>10</Sequence>
+		<Price>1,299.00</Price>
+		<Quantity>2</Quantity>
+		<Gross>2,598.00</Gross>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate>0.10</CommissionRate>
+		<Commission>259.80</Commission>
+		<Net>2,338.20</Net>
+		<PricingStatusID>5</PricingStatusID>
+		<PayAt>P</PayAt>
+		<PaxGroups/>
+		<BookingDetailID/>
+		<PaxCategoryID/>
+	</BookingLine>
+	<BookingLine ID="12">
+		<LastChanged>2011-05-24T12:02:50</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>4</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>19</TourHeaderDetailID>
+		<TourHeaderOptionID>31</TourHeaderOptionID>
+		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<Description>Tour Cancellation Insurance</Description>
+		<ProductType/>
+		<RemoteReferenceNo/>
+		<Sequence>200</Sequence>
+		<Price>45.00</Price>
+		<Quantity>2</Quantity>
+		<Gross>90.00</Gross>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate>0.10</CommissionRate>
+		<Commission>9.00</Commission>
+		<Net>81.00</Net>
+		<PricingStatusID>5</PricingStatusID>
+		<PayAt>F</PayAt>
+		<PaxGroups/>
+		<BookingDetailID/>
+		<PaxCategoryID/>
+	</BookingLine>
 </file>

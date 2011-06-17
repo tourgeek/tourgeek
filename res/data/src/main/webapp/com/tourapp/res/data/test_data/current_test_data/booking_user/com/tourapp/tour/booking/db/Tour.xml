@@ -404,4 +404,75 @@ CostStatusID.14=5,1273489154000
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
+	<Tour ID="8">
+		<LastChanged>2011-05-24T12:03:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
+		<Code/>
+		<TourHeaderID>4</TourHeaderID>
+		<DepartureDate>2011-08-04</DepartureDate>
+		<TourStatusSummary>#Field properties
+#Tue May 24 12:02:50 PDT 2011
+InfoStatusID.17=7,1306263772000
+InfoStatusID.16=7,1306263771000
+InfoStatusID.15=7,1306263771000
+CostStatusID.19=7,1306263774000
+CostStatusID.18=7,1306263774000
+CostStatusID.17=7,1306263774000
+ProductStatusID.19=2,1306263776000
+CostStatusID.16=7,1306263773000
+CostStatusID.15=7,1306263773000
+ProductStatusID.18=2,1306263776000
+ProductStatusID.17=2,1306263776000
+ProductStatusID.16=2,1306263775000
+ProductStatusID.15=2,1306263777000
+InventoryStatusID.19=5,1306263776000
+InventoryStatusID.18=5,1306263776000
+InventoryStatusID.17=5,1306263776000
+InventoryStatusID.16=5,1306263775000
+InventoryStatusID.15=7,1306263775000
+InfoStatusID.19=7,1306263772000
+InfoStatusID.18=7,1306263772000
+</TourStatusSummary>
+		<TourStatusID>7</TourStatusID>
+		<ManualTourStatus/>
+		<MinToOp/>
+		<AirRateID>1</AirRateID>
+		<AirClassID>2</AirClassID>
+		<HotelRateID>13</HotelRateID>
+		<HotelClassID>101</HotelClassID>
+		<LandRateID>1</LandRateID>
+		<LandClassID/>
+		<PMCCutoff>4</PMCCutoff>
+		<CarRateID>1</CarRateID>
+		<CarClassID>2</CarClassID>
+		<TransportationRateID>1</TransportationRateID>
+		<TransportationClassID>2</TransportationClassID>
+		<CruiseRateID>1</CruiseRateID>
+		<CruiseClassID>1</CruiseClassID>
+		<ItemRateID>1</ItemRateID>
+		<ItemClassID>1</ItemClassID>
+		<Focs/>
+		<FileNo/>
+		<FinalizeDate>2011-07-04</FinalizeDate>
+		<OrderCompDate>2011-08-04</OrderCompDate>
+		<ClosedDate>2011-08-04</ClosedDate>
+		<FinalDocDate>2011-07-09</FinalDocDate>
+		<TicketDate>2011-07-04</TicketDate>
+		<Sp1Date>2011-07-24</Sp1Date>
+		<Sp2Date>2011-08-04</Sp2Date>
+		<Finalized>N</Finalized>
+		<OrderComponents>N</OrderComponents>
+		<Closed>N</Closed>
+		<FinalDocs>N</FinalDocs>
+		<Tickets>N</Tickets>
+		<Sp1>N</Sp1>
+		<Sp2>N</Sp2>
+		<ServConf>N</ServConf>
+		<Departed>N</Departed>
+		<Cancelled/>
+		<NextEventDate>2011-07-04</NextEventDate>
+		<TourEventID>8</TourEventID>
+		<Properties/>
+	</Tour>
 </file>

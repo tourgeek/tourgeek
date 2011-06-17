@@ -1,2 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
+	<BookingLineHistory>
+		<ID>11</ID>
+		<LastChanged>2011-05-24T12:02:50</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>4</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>31</TourHeaderDetailID>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<Description>Basic Tour Price</Description>
+		<ProductType/>
+		<RemoteReferenceNo/>
+		<Sequence>100</Sequence>
+		<Price>1,149.00</Price>
+		<Quantity>2</Quantity>
+		<Gross/>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate>0.10</CommissionRate>
+		<Commission/>
+		<Net/>
+		<PricingStatusID>5</PricingStatusID>
+		<PayAt>P</PayAt>
+		<PaxGroups/>
+		<BookingDetailID/>
+		<PaxCategoryID/>
+		<HistoryDate>2011-06-24T12:02:50</HistoryDate>
+	</BookingLineHistory>
 </file>
