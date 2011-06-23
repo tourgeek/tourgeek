@@ -5,11 +5,11 @@
 		<SendViaCode>2</SendViaCode>
 		<BrochureQty>5</BrochureQty>
 		<BulkPermitCode>1</BulkPermitCode>
-		<BulkPermitText><![CDATA[***************
+		<BulkPermitText>***************
 * Bulk Rate *
 * Permit no.*
 * 234234     *
-***************]]></BulkPermitText>
+***************</BulkPermitText>
 		<BundleID>2</BundleID>
 		<ThinBundleID>2</ThinBundleID>
 		<HtmlBundleID>1</HtmlBundleID>

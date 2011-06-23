@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ClassInfo ID="2">
-		<LastChanged>2010-05-20T09:57:07</LastChanged>
+		<LastChanged>2011-05-05T13:54:53</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>Account</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
@@ -752,8 +752,8 @@ button.
 		<Deleted>N</Deleted>
 		<ClassName>AcctBatchSetRecurringBeh</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[If there are recurring entries, set the default recurring date.
-If not, disable the date field.]]></ClassDesc>
+		<ClassDesc>If there are recurring entries, set the default recurring date.
+If not, disable the date field.</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.screen.batch</ClassPackage>
 		<ClassSourceFile>AcctBatchScreen</ClassSourceFile>
@@ -770,8 +770,8 @@ If not, disable the date field.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>AcctBatchValidateBeh</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
-		<ClassDesc><![CDATA[Make sure the batch entry has an account and amount.
-Also check for (and create) Auto-reversal and Auto-distribution entries.]]></ClassDesc>
+		<ClassDesc>Make sure the batch entry has an account and amount.
+Also check for (and create) Auto-reversal and Auto-distribution entries.</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.screen.batch</ClassPackage>
 		<ClassSourceFile>AcctBatchScreen</ClassSourceFile>
@@ -1153,10 +1153,10 @@ The data entry screen asks for:
 </item-list></ClassHelp>
 		<ClassImplements/>
 		<SeeAlso/>
-		<TechnicalInfo><![CDATA[Probably need to change this program to read sequentially through the detail file rather than the account file.
+		<TechnicalInfo>Probably need to change this program to read sequentially through the detail file rather than the account file.
 Also, need to implement (Don't print detail).
 Also, Profit Centers
-Totals do not work correctly.]]></TechnicalInfo>
+Totals do not work correctly.</TechnicalInfo>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="33">
@@ -8137,11 +8137,11 @@ The Cost status will change to "in-process" until a response has been received. 
 		<Deleted>N</Deleted>
 		<ClassName>DaysOfWeekField</ClassName>
 		<BaseClassName>ShortField</BaseClassName>
-		<ClassDesc><![CDATA[Days of week - Each bit represents a day of the week.
+		<ClassDesc>Days of week - Each bit represents a day of the week.
 0 = Sunday, etc.
 If the bit is ZERO (0) then the day is valid.
 If this field is null, all days are valid.
-]]></ClassDesc>
+</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.db</ClassPackage>
 		<ClassSourceFile>DaysOfWeekField</ClassSourceFile>
@@ -14934,7 +14934,7 @@ and if you are running this as an applet, you will have the thin version of the
 		<Deleted>N</Deleted>
 		<ClassName>RequestCannedButton</ClassName>
 		<BaseClassName>SCannedBox</BaseClassName>
-		<ClassDesc><![CDATA[A canned button that does the action on the agency or pax file depending on the A/P field	]]></ClassDesc>
+		<ClassDesc>A canned button that does the action on the agency or pax file depending on the A/P field	</ClassDesc>
 		<ClassProjectID>1,048,585</ClassProjectID>
 		<ClassPackage>.screen</ClassPackage>
 		<ClassSourceFile>RequestsScreen</ClassSourceFile>
@@ -15639,8 +15639,8 @@ Descriptions of all possible shipping methods.
 		<Deleted>N</Deleted>
 		<ClassName>SetCrDrTypeHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[Set this A/R Trx to a Credit or Debit Memo depending on whether it
-is positive or negative.]]></ClassDesc>
+		<ClassDesc>Set this A/R Trx to a Credit or Debit Memo depending on whether it
+is positive or negative.</ClassDesc>
 		<ClassProjectID>1,048,579</ClassProjectID>
 		<ClassPackage>.screen.misc</ClassPackage>
 		<ClassSourceFile>CrDrGridScreen</ClassSourceFile>
@@ -15788,8 +15788,8 @@ This report will print a sub-total for each source code and a grand total for al
 		<Deleted>N</Deleted>
 		<ClassName>SpecialFormatField</ClassName>
 		<BaseClassName>StringField</BaseClassName>
-		<ClassDesc><![CDATA[Special formats:
-This special format is added as an XML tag on F/S output.]]></ClassDesc>
+		<ClassDesc>Special formats:
+This special format is added as an XML tag on F/S output.</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.finstmt</ClassPackage>
 		<ClassSourceFile>SpecialFormatField</ClassSourceFile>
@@ -15861,9 +15861,9 @@ States or Provicences within Countries.
 		<Deleted>N</Deleted>
 		<ClassName>StatementFormatField</ClassName>
 		<BaseClassName>StringField</BaseClassName>
-		<ClassDesc><![CDATA[Statement format:
+		<ClassDesc>Statement format:
 (C)olumnar
-(R)atio]]></ClassDesc>
+(R)atio</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.finstmt</ClassPackage>
 		<ClassSourceFile>StatementFormatField</ClassSourceFile>
@@ -15880,9 +15880,9 @@ States or Provicences within Countries.
 		<Deleted>N</Deleted>
 		<ClassName>StatementNumberField</ClassName>
 		<BaseClassName>StringField</BaseClassName>
-		<ClassDesc><![CDATA[Number to display on Financial Statement:
+		<ClassDesc>Number to display on Financial Statement:
 (T)o-date
-(N)et change in period]]></ClassDesc>
+(N)et change in period</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.finstmt</ClassPackage>
 		<ClassSourceFile>StatementNumberField</ClassSourceFile>
@@ -15899,10 +15899,10 @@ States or Provicences within Countries.
 		<Deleted>N</Deleted>
 		<ClassName>StatementTypeField</ClassName>
 		<BaseClassName>StringField</BaseClassName>
-		<ClassDesc><![CDATA[Statement type:
+		<ClassDesc>Statement type:
 (B)alance sheet
 (I)ncome statement
-null=Other]]></ClassDesc>
+null=Other</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.finstmt</ClassPackage>
 		<ClassSourceFile>StatementTypeField</ClassSourceFile>
@@ -18517,8 +18517,8 @@ You may enter the following fields:
 		<Deleted>N</Deleted>
 		<ClassName>UpdateAcctDetailHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
-		<ClassDesc><![CDATA[Add this behavior to the transaction that requires a G/L posting.
-When the transaction is made, this behavior creates an entry.]]></ClassDesc>
+		<ClassDesc>Add this behavior to the transaction that requires a G/L posting.
+When the transaction is made, this behavior creates an entry.</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.db</ClassPackage>
 		<ClassSourceFile>AcctDetail</ClassSourceFile>
@@ -19347,23 +19347,6 @@ You may enter the following fields:
 		<TechnicalInfo/>
 		<CopyDescFrom/>
 	</ClassInfo>
-	<ClassInfo ID="881">
-		<LastChanged>2010-02-12T07:14:22</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>Picture</ClassName>
-		<BaseClassName>Folder</BaseClassName>
-		<ClassDesc>Pictures</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.db</ClassPackage>
-		<ClassSourceFile>Picture</ClassSourceFile>
-		<ClassType>Record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
 	<ClassInfo ID="896">
 		<LastChanged>2010-02-21T04:09:38</LastChanged>
 		<Deleted>N</Deleted>
@@ -19821,16 +19804,16 @@ display to mark the labels to reprint.
 		<Deleted>N</Deleted>
 		<ClassName>XmlToRequests</ClassName>
 		<BaseClassName>BaseProcess</BaseClassName>
-		<ClassDesc><![CDATA[Parse the "Requests" xml file and add it to the Requests table.
+		<ClassDesc>Parse the "Requests" xml file and add it to the Requests table.
 To Use, just pass:
-?task=xx.xx.ProcessRunner&process=xx.xx.XmlToRequests&import=myxmlfile.xml
-See the help for other params and samples.]]></ClassDesc>
+?task=xx.xx.ProcessRunner&amp;process=xx.xx.XmlToRequests&amp;import=myxmlfile.xml
+See the help for other params and samples.</ClassDesc>
 		<ClassProjectID>1,048,585</ClassProjectID>
 		<ClassPackage>.thread</ClassPackage>
 		<ClassSourceFile>XmlToRequests</ClassSourceFile>
 		<ClassType>Process</ClassType>
 		<ClassExplain/>
-		<ClassHelp><![CDATA[To run this process manually, just call:
+		<ClassHelp>To run this process manually, just call:
 Properties properties = new Properties();
 properties.setProperty("import", "archive/request/Request.xml");
 
@@ -19841,61 +19824,61 @@ test.free();
 
 
 Sample xml file:
-<?xml version="1.0" encoding="UTF-8"?>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 
-<file>
-  <Request>
-    <ProfileCode />
-    <GenericName>Ann Corley</GenericName>
-    <AddressLine1>6047 Camellia Ave #F</AddressLine1>
-    <AddressLine2 />
-    <CityOrTown>Temple City</CityOrTown>
-    <StateOrRegion>CA</StateOrRegion>
-    <PostalCode>91780</PostalCode>
-    <Country>USA</Country>
-    <Attention />
-    <Email>anncorley@mail.com</Email>
-    <BrochureText />
-	  <RequestDetail>
-		<Item BrochureID="1">
-			<Description>Orient Adventures</Description>
-		</Item>
-		<BrochureQty>1</BrochureQty>
-	  </RequestDetail>
-	  <RequestDetail>
-		<Item BrochureID="6">
-			<Description>European Highlights</Description>
-		</Item>
-		<BrochureQty>1</BrochureQty>
-	  </RequestDetail>
-  </Request>
-  <Request>
-    <ProfileCode>05903995</ProfileCode>
-    <GenericName>XYZ Travel</GenericName>
-    <AddressLine1>1234 North</AddressLine1>
-    <AddressLine2 />
-    <CityOrTown>Los Angeles</CityOrTown>
-    <StateOrRegion>CA</StateOrRegion>
-    <PostalCode>91780</PostalCode>
-    <Country>USA</Country>
-    <Attention>Mike</Attention>
-    <Email>xyz@xyz.com</Email>
-    <BrochureText />
-	  <RequestDetail>
-		<Item BrochureID="6">
-			<Description>European Highlights</Description>
-		</Item>
-		<BrochureQty>2</BrochureQty>
-	  </RequestDetail>
-	  <RequestDetail>
-		<Item BrochureID="1">
-			<Description>Orient Adventures</Description>
-		</Item>
-		<BrochureQty>1</BrochureQty>
-	  </RequestDetail>
-  </Request>
-</file>
-]]></ClassHelp>
+&lt;file&gt;
+  &lt;Request&gt;
+    &lt;ProfileCode /&gt;
+    &lt;GenericName&gt;Ann Corley&lt;/GenericName&gt;
+    &lt;AddressLine1&gt;6047 Camellia Ave #F&lt;/AddressLine1&gt;
+    &lt;AddressLine2 /&gt;
+    &lt;CityOrTown&gt;Temple City&lt;/CityOrTown&gt;
+    &lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;
+    &lt;PostalCode&gt;91780&lt;/PostalCode&gt;
+    &lt;Country&gt;USA&lt;/Country&gt;
+    &lt;Attention /&gt;
+    &lt;Email&gt;anncorley@mail.com&lt;/Email&gt;
+    &lt;BrochureText /&gt;
+	  &lt;RequestDetail&gt;
+		&lt;Item BrochureID="1"&gt;
+			&lt;Description&gt;Orient Adventures&lt;/Description&gt;
+		&lt;/Item&gt;
+		&lt;BrochureQty&gt;1&lt;/BrochureQty&gt;
+	  &lt;/RequestDetail&gt;
+	  &lt;RequestDetail&gt;
+		&lt;Item BrochureID="6"&gt;
+			&lt;Description&gt;European Highlights&lt;/Description&gt;
+		&lt;/Item&gt;
+		&lt;BrochureQty&gt;1&lt;/BrochureQty&gt;
+	  &lt;/RequestDetail&gt;
+  &lt;/Request&gt;
+  &lt;Request&gt;
+    &lt;ProfileCode&gt;05903995&lt;/ProfileCode&gt;
+    &lt;GenericName&gt;XYZ Travel&lt;/GenericName&gt;
+    &lt;AddressLine1&gt;1234 North&lt;/AddressLine1&gt;
+    &lt;AddressLine2 /&gt;
+    &lt;CityOrTown&gt;Los Angeles&lt;/CityOrTown&gt;
+    &lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;
+    &lt;PostalCode&gt;91780&lt;/PostalCode&gt;
+    &lt;Country&gt;USA&lt;/Country&gt;
+    &lt;Attention&gt;Mike&lt;/Attention&gt;
+    &lt;Email&gt;xyz@xyz.com&lt;/Email&gt;
+    &lt;BrochureText /&gt;
+	  &lt;RequestDetail&gt;
+		&lt;Item BrochureID="6"&gt;
+			&lt;Description&gt;European Highlights&lt;/Description&gt;
+		&lt;/Item&gt;
+		&lt;BrochureQty&gt;2&lt;/BrochureQty&gt;
+	  &lt;/RequestDetail&gt;
+	  &lt;RequestDetail&gt;
+		&lt;Item BrochureID="1"&gt;
+			&lt;Description&gt;Orient Adventures&lt;/Description&gt;
+		&lt;/Item&gt;
+		&lt;BrochureQty&gt;1&lt;/BrochureQty&gt;
+	  &lt;/RequestDetail&gt;
+  &lt;/Request&gt;
+&lt;/file&gt;
+</ClassHelp>
 		<ClassImplements/>
 		<SeeAlso/>
 		<TechnicalInfo/>
@@ -19957,12 +19940,12 @@ Sample xml file:
 		<Deleted>N</Deleted>
 		<ClassName>RequestLabelsUpdate</ClassName>
 		<BaseClassName>BaseProcess</BaseClassName>
-		<ClassDesc><![CDATA[This is the logic to clear the brochure requests printed
+		<ClassDesc>This is the logic to clear the brochure requests printed
 and move them to the history file.
 Note: This is a process because there is more than one
 label printing program.
 Note: This is typically not run as a process, but is usually run
-directly (by callin]]></ClassDesc>
+directly (by callin</ClassDesc>
 		<ClassProjectID>1,048,585</ClassProjectID>
 		<ClassPackage>.report</ClassPackage>
 		<ClassSourceFile>RequestLabelsUpdate</ClassSourceFile>
@@ -20076,40 +20059,6 @@ directly (by callin]]></ClassDesc>
 		<TechnicalInfo/>
 		<CopyDescFrom/>
 	</ClassInfo>
-	<ClassInfo ID="957">
-		<LastChanged>2010-02-12T07:14:22</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureScreen</ClassName>
-		<BaseClassName>FolderScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.screen</ClassPackage>
-		<ClassSourceFile>PictureScreen</ClassSourceFile>
-		<ClassType>Screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="958">
-		<LastChanged>2010-02-12T07:14:22</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureGridScreen</ClassName>
-		<BaseClassName>FolderGridScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.screen</ClassPackage>
-		<ClassSourceFile>PictureScreen</ClassSourceFile>
-		<ClassType>Source</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
 	<ClassInfo ID="961">
 		<LastChanged>2010-02-21T04:50:55</LastChanged>
 		<Deleted>N</Deleted>
@@ -20149,63 +20098,12 @@ directly (by callin]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>TourLookupQuery</ClassName>
 		<BaseClassName>QueryRecord</BaseClassName>
-		<ClassDesc><![CDATA[This is the query used to lookup tours.
-NOTE: This is a manual query, because Tour and TourHeader are in different databases.]]></ClassDesc>
+		<ClassDesc>This is the query used to lookup tours.
+NOTE: This is a manual query, because Tour and TourHeader are in different databases.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.lookup</ClassPackage>
 		<ClassSourceFile>TourLookupQuery</ClassSourceFile>
 		<ClassType>Record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="964">
-		<LastChanged>2010-02-12T07:14:23</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>Contact</ClassName>
-		<BaseClassName>Company</BaseClassName>
-		<ClassDesc>Contacts</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.db</ClassPackage>
-		<ClassSourceFile>Contact</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain>Contact or Address list</ClassExplain>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="965">
-		<LastChanged>2010-02-12T07:14:23</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ContactScreen</ClassName>
-		<BaseClassName>Screen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.screen</ClassPackage>
-		<ClassSourceFile>ContactScreen</ClassSourceFile>
-		<ClassType>Screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="966">
-		<LastChanged>2010-02-12T07:14:23</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ContactGridScreen</ClassName>
-		<BaseClassName>GridScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.screen</ClassPackage>
-		<ClassSourceFile>ContactScreen</ClassSourceFile>
-		<ClassType>Screen</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>
@@ -20223,125 +20121,6 @@ NOTE: This is a manual query, because Tour and TourHeader are in different datab
 		<ClassPackage>.base.db</ClassPackage>
 		<ClassSourceFile>Product</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="969">
-		<LastChanged>2010-02-12T07:14:23</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureControl</ClassName>
-		<BaseClassName>ControlRecord</BaseClassName>
-		<ClassDesc>Control File</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.db</ClassPackage>
-		<ClassSourceFile>PictureControl</ClassSourceFile>
-		<ClassType>Record</ClassType>
-		<ClassExplain>Control file for pictures</ClassExplain>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="970">
-		<LastChanged>2010-02-12T07:14:24</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureControlScreen</ClassName>
-		<BaseClassName>Screen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.screen</ClassPackage>
-		<ClassSourceFile>PictureControlScreen</ClassSourceFile>
-		<ClassType>Screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="971">
-		<LastChanged>2010-02-12T07:14:24</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>SyncPictures</ClassName>
-		<BaseClassName>Screen</BaseClassName>
-		<ClassDesc>Sync pictures</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.screen</ClassPackage>
-		<ClassSourceFile>SyncPictures</ClassSourceFile>
-		<ClassType>Screen</ClassType>
-		<ClassExplain>Synchronize the physical pictures with the Picture records</ClassExplain>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="972">
-		<LastChanged>2010-02-12T07:14:24</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ProcessPictures</ClassName>
-		<BaseClassName>Screen</BaseClassName>
-		<ClassDesc>Process the pictures</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.screen</ClassPackage>
-		<ClassSourceFile>ProcessPictures</ClassSourceFile>
-		<ClassType>Screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="973">
-		<LastChanged>2010-02-12T07:14:24</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureTypeField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.db</ClassPackage>
-		<ClassSourceFile>PictureType</ClassSourceFile>
-		<ClassType>Field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="974">
-		<LastChanged>2010-02-12T07:14:24</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureType</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.db</ClassPackage>
-		<ClassSourceFile>PictureType</ClassSourceFile>
-		<ClassType>Record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="978">
-		<LastChanged>2010-02-12T07:14:25</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ExportPictures</ClassName>
-		<BaseClassName>Screen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.screen</ClassPackage>
-		<ClassSourceFile>ExportPictures</ClassSourceFile>
-		<ClassType>Screen</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>
@@ -20371,8 +20150,8 @@ NOTE: This is a manual query, because Tour and TourHeader are in different datab
 		<Deleted>N</Deleted>
 		<ClassName>ProductTypeHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[Get the product type of this detail record and return it as a string.
-This is used to fill in the virtual ProductType field in BookingDetail.]]></ClassDesc>
+		<ClassDesc>Get the product type of this detail record and return it as a string.
+This is used to fill in the virtual ProductType field in BookingDetail.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.detail.event</ClassPackage>
 		<ClassSourceFile>ProductTypeHandler</ClassSourceFile>
@@ -20481,10 +20260,10 @@ For a description of the status messages, see the <help-link>
 		<Deleted>N</Deleted>
 		<ClassName>StatusSummaryField</ClassName>
 		<BaseClassName>IntegerField</BaseClassName>
-		<ClassDesc><![CDATA[This field is used to summarize the CustSaleDetail status of:
+		<ClassDesc>This field is used to summarize the CustSaleDetail status of:
 Information
 Price
-Inventory]]></ClassDesc>
+Inventory</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.db</ClassPackage>
 		<ClassSourceFile>StatusSummaryField</ClassSourceFile>
@@ -20501,8 +20280,8 @@ Inventory]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>BookingHotelRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
-		<ClassDesc><![CDATA[This task process the incoming replies from rate requests.
-Then it uses the information to update the booking hotel detail.]]></ClassDesc>
+		<ClassDesc>This task process the incoming replies from rate requests.
+Then it uses the information to update the booking hotel detail.</ClassDesc>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.hotel.response.in</ClassPackage>
 		<ClassSourceFile>BookingHotelRateMsgReplyInProcessor</ClassSourceFile>
@@ -20553,8 +20332,8 @@ Then it uses the information to update the booking hotel detail.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>GetHotelCostHandler</ClassName>
 		<BaseClassName>GetProductCostHandler</BaseClassName>
-		<ClassDesc><![CDATA[This handler looks up the hotel cost, given the rate, class, and date
-and places the hotel cost in this field.]]></ClassDesc>
+		<ClassDesc>This handler looks up the hotel cost, given the rate, class, and date
+and places the hotel cost in this field.</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.hotel.event</ClassPackage>
 		<ClassSourceFile>GetHotelCostHandler</ClassSourceFile>
@@ -20588,8 +20367,8 @@ and places the hotel cost in this field.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>GetProductCostHandler</ClassName>
 		<BaseClassName>GetProductStatusHandler</BaseClassName>
-		<ClassDesc><![CDATA[Get the product cost on a valid product record.
-(Using the params from the ProductVars screenrecord).]]></ClassDesc>
+		<ClassDesc>Get the product cost on a valid product record.
+(Using the params from the ProductVars screenrecord).</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.event</ClassPackage>
 		<ClassSourceFile>GetProductCostHandler</ClassSourceFile>
@@ -20640,8 +20419,8 @@ and places the hotel cost in this field.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>ProductSearchSession</ClassName>
 		<BaseClassName>Session</BaseClassName>
-		<ClassDesc><![CDATA[Base class for the remote side of product searches.
-Used for thin searches in booking entry.]]></ClassDesc>
+		<ClassDesc>Base class for the remote side of product searches.
+Used for thin searches in booking entry.</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.remote.search</ClassPackage>
 		<ClassSourceFile>ProductSearchSession</ClassSourceFile>
@@ -22106,8 +21885,8 @@ Manually entered invoice.
 		<Deleted>N</Deleted>
 		<ClassName>AccountNoField</ClassName>
 		<BaseClassName>IntegerField</BaseClassName>
-		<ClassDesc><![CDATA[Display the account number with the sub-account.
-(Add the GlConverter to displays).]]></ClassDesc>
+		<ClassDesc>Display the account number with the sub-account.
+(Add the GlConverter to displays).</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.db</ClassPackage>
 		<ClassSourceFile>Account</ClassSourceFile>
@@ -22368,9 +22147,9 @@ of canned functions. The functions are system defined and are described as follo
 		<Deleted>N</Deleted>
 		<ClassName>AddNewDistHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
-		<ClassDesc><![CDATA[This special class tests for the case when the user set a single distribution
+		<ClassDesc>This special class tests for the case when the user set a single distribution
 account, but the header record was new so I couldn't write the detail
-records yet.]]></ClassDesc>
+records yet.</ClassDesc>
 		<ClassProjectID>1,048,580</ClassProjectID>
 		<ClassPackage>.screen.batch.dist</ClassPackage>
 		<ClassSourceFile>DistributionConverter</ClassSourceFile>
@@ -22404,8 +22183,8 @@ records yet.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>ReconciledConverter</ClassName>
 		<BaseClassName>CheckConverter</BaseClassName>
-		<ClassDesc><![CDATA[This is a special converter that displays a check if the reconciled date
-is non-null and sets it to the date if checked, null if unchecked]]></ClassDesc>
+		<ClassDesc>This is a special converter that displays a check if the reconciled date
+is non-null and sets it to the date if checked, null if unchecked</ClassDesc>
 		<ClassProjectID>1,048,580</ClassProjectID>
 		<ClassPackage>.report.recon</ClassPackage>
 		<ClassSourceFile>ReconciledConverter</ClassSourceFile>
@@ -23808,9 +23587,9 @@ bookings and a purchase rebate:
 		<Deleted>N</Deleted>
 		<ClassName>AddNewCashDistHandler</ClassName>
 		<BaseClassName>AddNewDistHandler</BaseClassName>
-		<ClassDesc><![CDATA[AddNewDistHandler - This special class tests for the case when the user set a single distribution
+		<ClassDesc>AddNewDistHandler - This special class tests for the case when the user set a single distribution
 account, but the header record was new so I couldn't write the detail
-records yet.]]></ClassDesc>
+records yet.</ClassDesc>
 		<ClassProjectID>1,048,579</ClassProjectID>
 		<ClassPackage>.screen.cash.dist</ClassPackage>
 		<ClassSourceFile>AddNewCashDistHandler</ClassSourceFile>
@@ -23844,8 +23623,8 @@ records yet.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>BookingDefaultHandler</ClassName>
 		<BaseClassName>CopyStringHandler</BaseClassName>
-		<ClassDesc><![CDATA[This listener sets the default amount and description for a booking
-cash receipt.]]></ClassDesc>
+		<ClassDesc>This listener sets the default amount and description for a booking
+cash receipt.</ClassDesc>
 		<ClassProjectID>1,048,579</ClassProjectID>
 		<ClassPackage>.screen.cash</ClassPackage>
 		<ClassSourceFile>BookingDefaultHandler</ClassSourceFile>
@@ -25501,8 +25280,8 @@ button. This button will display the top-level G/L posting transaction.
 		<Deleted>N</Deleted>
 		<ClassName>UpdateInvoiceVendorHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
-		<ClassDesc><![CDATA[If this departure estimate has the same vendor, use the
-same invoice number and date as last time.]]></ClassDesc>
+		<ClassDesc>If this departure estimate has the same vendor, use the
+same invoice number and date as last time.</ClassDesc>
 		<ClassProjectID>1,048,578</ClassProjectID>
 		<ClassPackage>.screen.invoice</ClassPackage>
 		<ClassSourceFile>InvoiceScreen</ClassSourceFile>
@@ -25638,9 +25417,9 @@ same invoice number and date as last time.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>UpdateActiveTrxStatus</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[If this (TrxStatus) field changes, update the target ActiveTrx
+		<ClassDesc>If this (TrxStatus) field changes, update the target ActiveTrx
 field. This is typically added to BaseTrx records to automatically
-retire completed transactions.]]></ClassDesc>
+retire completed transactions.</ClassDesc>
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.db</ClassPackage>
 		<ClassSourceFile>UpdateActiveTrxStatus</ClassSourceFile>
@@ -25825,12 +25604,12 @@ Enter a currency and all the vendors billing in this currency will diplay with t
 		<Deleted>N</Deleted>
 		<ClassName>ApTrxFilter</ClassName>
 		<BaseClassName>ApTrxBaseFilter</BaseClassName>
-		<ClassDesc><![CDATA[Filter the ApTrx depending on the flags in the ApReportScreenRecord:
+		<ClassDesc>Filter the ApTrx depending on the flags in the ApReportScreenRecord:
 - Vouchers
 - Finalization Estimates
 - Departure Estimates
 - Open Items
-- Paid Items]]></ClassDesc>
+- Paid Items</ClassDesc>
 		<ClassProjectID>1,048,578</ClassProjectID>
 		<ClassPackage>.report</ClassPackage>
 		<ClassSourceFile>ApTrxFilter</ClassSourceFile>
@@ -29597,8 +29376,8 @@ All the fields on this screen are optional:
 		<Deleted>N</Deleted>
 		<ClassName>Location</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc><![CDATA[This is the base class for all location records such as:
-Country, City, Region, etc.]]></ClassDesc>
+		<ClassDesc>This is the base class for all location records such as:
+Country, City, Region, etc.</ClassDesc>
 		<ClassProjectID>1,048,591</ClassProjectID>
 		<ClassPackage>.db</ClassPackage>
 		<ClassSourceFile>Location</ClassSourceFile>
@@ -30389,8 +30168,8 @@ either automatically (For example, a weekend surcharge selected based on the day
 		<Deleted>N</Deleted>
 		<ClassName>UseTourHeaderOptionField</ClassName>
 		<BaseClassName>TourHeaderOptionField</BaseClassName>
-		<ClassDesc><![CDATA[Tour header option reference field.
-This field has special lookup properties.]]></ClassDesc>
+		<ClassDesc>Tour header option reference field.
+This field has special lookup properties.</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.tour.db</ClassPackage>
 		<ClassSourceFile>UseTourHeaderOptionField</ClassSourceFile>
@@ -31837,10 +31616,10 @@ The main message status are:
 		<Deleted>N</Deleted>
 		<ClassName>OperationTypeField</ClassName>
 		<BaseClassName>StringPopupField</BaseClassName>
-		<ClassDesc><![CDATA[This field tells the operation system how to order products:
+		<ClassDesc>This field tells the operation system how to order products:
 1 - All together on one voucher
 2 - All like products together (ie., hotel voucher, tour voucher, etc).
-3 - Individually]]></ClassDesc>
+3 - Individually</ClassDesc>
 		<ClassProjectID>1,048,578</ClassProjectID>
 		<ClassPackage>.db</ClassPackage>
 		<ClassSourceFile>OperationTypeField</ClassSourceFile>
@@ -32850,57 +32629,6 @@ The state of the four status fields depends of the information available. Once e
 		<ClassPackage>.report.itinerary</ClassPackage>
 		<ClassSourceFile>BookingPaxReportDetail</ClassSourceFile>
 		<ClassType>screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1698">
-		<LastChanged>2010-02-12T07:14:25</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceStep</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc>Dance steps</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceStep</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain>Dance step description</ClassExplain>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1699">
-		<LastChanged>2010-02-12T07:14:25</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>Dance</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>Dance</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1700">
-		<LastChanged>2010-02-12T07:14:26</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>Dance</ClassSourceFile>
-		<ClassType>field</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>
@@ -34777,108 +34505,6 @@ To add, change, or delete a block of dates at once, press the <help-button>
 		<TechnicalInfo/>
 		<CopyDescFrom/>
 	</ClassInfo>
-	<ClassInfo ID="1824">
-		<LastChanged>2010-02-12T07:14:26</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceStepGridScreen</ClassName>
-		<BaseClassName>DetailGridScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.screen</ClassPackage>
-		<ClassSourceFile>DanceStepScreen</ClassSourceFile>
-		<ClassType>screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1825">
-		<LastChanged>2010-02-12T07:14:26</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceStepScreen</ClassName>
-		<BaseClassName>DetailScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.screen</ClassPackage>
-		<ClassSourceFile>DanceStepScreen</ClassSourceFile>
-		<ClassType>screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1826">
-		<LastChanged>2010-02-12T07:14:26</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceGridScreen</ClassName>
-		<BaseClassName>GridScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.screen</ClassPackage>
-		<ClassSourceFile>DanceScreen</ClassSourceFile>
-		<ClassType>screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1827">
-		<LastChanged>2010-02-12T07:14:27</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceScreen</ClassName>
-		<BaseClassName>Screen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.screen</ClassPackage>
-		<ClassSourceFile>DanceScreen</ClassSourceFile>
-		<ClassType>screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1828">
-		<LastChanged>2010-02-12T07:14:27</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceHeaderScreen</ClassName>
-		<BaseClassName>HeaderScreen</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.screen</ClassPackage>
-		<ClassSourceFile>DanceStepScreen</ClassSourceFile>
-		<ClassType>screen</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1829">
-		<LastChanged>2010-02-12T07:14:27</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceScreenRecord</ClassName>
-		<BaseClassName>ScreenRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.screen</ClassPackage>
-		<ClassSourceFile>DanceStepScreen</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
 	<ClassInfo ID="1830">
 		<LastChanged>2010-02-21T04:08:32</LastChanged>
 		<Deleted>N</Deleted>
@@ -35128,8 +34754,8 @@ Enter default and control values for the product system.
 		<Deleted>N</Deleted>
 		<ClassName>GetProductAvailabilityHandler</ClassName>
 		<BaseClassName>GetProductStatusHandler</BaseClassName>
-		<ClassDesc><![CDATA[Get the product cost on a valid product record.
-(Using the params from the ProductVars screenrecord).]]></ClassDesc>
+		<ClassDesc>Get the product cost on a valid product record.
+(Using the params from the ProductVars screenrecord).</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.event</ClassPackage>
 		<ClassSourceFile>GetProductAvailabilityHandler</ClassSourceFile>
@@ -35169,108 +34795,6 @@ Enter default and control values for the product system.
 		<ClassSourceFile>GetHotelAvailabilityHandler</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1848">
-		<LastChanged>2010-02-12T07:14:28</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceType</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc>Type of dance move</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceType</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1849">
-		<LastChanged>2010-02-12T07:14:28</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceTypeField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceType</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1850">
-		<LastChanged>2010-02-12T07:14:28</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DancePosition</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc>Partner hold</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DancePosition</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain>Type of partner hold</ClassExplain>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1851">
-		<LastChanged>2010-02-12T07:14:28</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DancePositionField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DancePosition</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1852">
-		<LastChanged>2010-02-12T07:14:29</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceStepField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceStep</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1853">
-		<LastChanged>2010-02-12T07:14:29</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceComponents</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc>Dance components</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceComponents</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain>Dance pattern components</ClassExplain>
 		<ClassHelp/>
 		<ClassImplements/>
 		<SeeAlso/>
@@ -35350,8 +34874,8 @@ Enter default and control values for the product system.
 		<Deleted>N</Deleted>
 		<ClassName>CheckTourOptionDisplay</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[If the "Always Answer" flag is set by adding a tour
-with an answer that is required, switch to the option screen.]]></ClassDesc>
+		<ClassDesc>If the "Always Answer" flag is set by adding a tour
+with an answer that is required, switch to the option screen.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.entry.tour</ClassPackage>
 		<ClassSourceFile>CheckTourOptionDisplay</ClassSourceFile>
@@ -35423,74 +34947,6 @@ with an answer that is required, switch to the option screen.]]></ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.tour.detail.db</ClassPackage>
 		<ClassSourceFile>TourHeaderDetail</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1868">
-		<LastChanged>2010-02-12T07:14:29</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>MoveClass</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc>Move category</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>MoveClass</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1869">
-		<LastChanged>2010-02-12T07:14:29</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>MoveClassField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>MoveClass</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1870">
-		<LastChanged>2010-02-12T07:14:30</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>HandPosition</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>HandPosition</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1871">
-		<LastChanged>2010-02-12T07:14:30</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>HandPositionField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>HandPosition</ClassSourceFile>
 		<ClassType>field</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -35920,91 +35376,6 @@ There are three ways to price a component:
 		<TechnicalInfo/>
 		<CopyDescFrom/>
 	</ClassInfo>
-	<ClassInfo ID="1912">
-		<LastChanged>2010-02-12T07:14:30</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ContactScreenRecord</ClassName>
-		<BaseClassName>ScreenRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.screen</ClassPackage>
-		<ClassSourceFile>ContactScreen</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1913">
-		<LastChanged>2010-02-12T07:14:30</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ContactCategory</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc>Contact category</ClassDesc>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.db</ClassPackage>
-		<ClassSourceFile>Contact</ClassSourceFile>
-		<ClassType>table</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1914">
-		<LastChanged>2010-02-12T07:14:31</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ContactCategoryField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.db</ClassPackage>
-		<ClassSourceFile>ContactCategory</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1915">
-		<LastChanged>2010-02-12T07:14:31</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>ContactCategoryFilter</ClassName>
-		<BaseClassName>ContactCategoryField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.contact.db</ClassPackage>
-		<ClassSourceFile>ContactCategory</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="1970">
-		<LastChanged>2010-02-12T07:14:31</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>PictureSession</ClassName>
-		<BaseClassName>Session</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.picture.remote</ClassPackage>
-		<ClassSourceFile>PictureSession</ClassSourceFile>
-		<ClassType>session</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
 	<ClassInfo ID="1982">
 		<LastChanged>2010-02-21T04:08:32</LastChanged>
 		<Deleted>N</Deleted>
@@ -36282,9 +35653,9 @@ There are three ways to price a component:
 		<Deleted>N</Deleted>
 		<ClassName>BookingDetailField</ClassName>
 		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc><![CDATA[This is just a placeholder for now.
+		<ClassDesc>This is just a placeholder for now.
 May want to add some capabilities to this field later
-(like the ability to read the booking detail)]]></ClassDesc>
+(like the ability to read the booking detail)</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.detail.db</ClassPackage>
 		<ClassSourceFile>BookingDetailField</ClassSourceFile>
@@ -36420,8 +35791,8 @@ May want to add some capabilities to this field later
 		<Deleted>N</Deleted>
 		<ClassName>TourEventHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[A tour or booking event occurred.
-Trigger the actions that are scheduled to occur.]]></ClassDesc>
+		<ClassDesc>A tour or booking event occurred.
+Trigger the actions that are scheduled to occur.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>TourEventHandler</ClassSourceFile>
@@ -36438,9 +35809,9 @@ Trigger the actions that are scheduled to occur.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>TourStatusEventHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[Monitor the tour status to trigger the following events:
+		<ClassDesc>Monitor the tour status to trigger the following events:
 - Services Confirmed (All ordered services okay)
-- Others?]]></ClassDesc>
+- Others?</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>TourStatusEventHandler</ClassSourceFile>
@@ -36457,9 +35828,9 @@ Trigger the actions that are scheduled to occur.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>BookingStatusEventHandler</ClassName>
 		<BaseClassName>TourEventHandler</BaseClassName>
-		<ClassDesc><![CDATA[Monitor the booking status for changes to trigger events:
-- Accepted -> Accepted event
-- Cancelled -> Cancelled event]]></ClassDesc>
+		<ClassDesc>Monitor the booking status for changes to trigger events:
+- Accepted -&gt; Accepted event
+- Cancelled -&gt; Cancelled event</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>BookingStatusEventHandler</ClassSourceFile>
@@ -37780,227 +37151,6 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<TechnicalInfo/>
 		<CopyDescFrom/>
 	</ClassInfo>
-	<ClassInfo ID="2148">
-		<LastChanged>2010-02-12T07:14:31</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceTeacher</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceTeacher</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2149">
-		<LastChanged>2010-02-12T07:14:32</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceStudio</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceStudio</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2150">
-		<LastChanged>2010-02-12T07:14:32</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceClass</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceClass</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2151">
-		<LastChanged>2010-02-12T07:14:32</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceAlignment</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceAlignment</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2152">
-		<LastChanged>2010-02-12T07:14:32</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceStudioField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceStudio</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2153">
-		<LastChanged>2010-02-12T07:14:33</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceTeacherField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceTeacher</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2154">
-		<LastChanged>2010-02-12T07:14:33</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceClassField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceClass</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2155">
-		<LastChanged>2010-02-12T07:14:33</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceAlignmentField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceAlignment</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2157">
-		<LastChanged>2010-02-12T07:14:33</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceDirection</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceDirection</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2158">
-		<LastChanged>2010-02-12T07:14:34</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceDirectionField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceDirection</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2159">
-		<LastChanged>2010-02-12T07:14:34</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceFootField</ClassName>
-		<BaseClassName>StringPopupField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceFootField</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2160">
-		<LastChanged>2010-02-12T07:14:34</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceArtisticClass</ClassName>
-		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceArtisticClass</ClassSourceFile>
-		<ClassType>record</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2161">
-		<LastChanged>2010-02-12T07:14:34</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>DanceArtisticClassField</ClassName>
-		<BaseClassName>ReferenceField</BaseClassName>
-		<ClassDesc/>
-		<ClassProjectID>1</ClassProjectID>
-		<ClassPackage>.dance.db</ClassPackage>
-		<ClassSourceFile>DanceArtisticClass</ClassSourceFile>
-		<ClassType>field</ClassType>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
 	<ClassInfo ID="2199">
 		<LastChanged>2010-02-21T04:13:26</LastChanged>
 		<Deleted>N</Deleted>
@@ -38091,8 +37241,8 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<Deleted>N</Deleted>
 		<ClassName>FilterApTrxDateRange</ClassName>
 		<BaseClassName>FileFilter</BaseClassName>
-		<ClassDesc><![CDATA[Filter based on the departure date range.
-Note: Can't use ExtractRange singe ApTrx.kDepartureDate is virtual.]]></ClassDesc>
+		<ClassDesc>Filter based on the departure date range.
+Note: Can't use ExtractRange singe ApTrx.kDepartureDate is virtual.</ClassDesc>
 		<ClassProjectID>1,048,578</ClassProjectID>
 		<ClassPackage>.report</ClassPackage>
 		<ClassSourceFile>FilterApTrxDateRange</ClassSourceFile>
@@ -38403,8 +37553,8 @@ A/R Transactions are also linked to the financial systems. All A/R transactions 
 		<Deleted>N</Deleted>
 		<ClassName>NewBookingHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
-		<ClassDesc><![CDATA[If a new booking is created because a new booking detail was added,
-I need to initialize the new booking record.]]></ClassDesc>
+		<ClassDesc>If a new booking is created because a new booking detail was added,
+I need to initialize the new booking record.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>NewBookingHandler</ClassSourceFile>
@@ -39322,8 +38472,8 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>ProductChain</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
-		<ClassDesc><![CDATA[Base record for product chain.
-ie., Marriott, Hertz, etc.]]></ClassDesc>
+		<ClassDesc>Base record for product chain.
+ie., Marriott, Hertz, etc.</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.db</ClassPackage>
 		<ClassSourceFile>ProductChain</ClassSourceFile>
@@ -40156,9 +39306,9 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<Deleted>N</Deleted>
 		<ClassName>CheckBookingStatusHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
-		<ClassDesc><![CDATA[Make sure the booking status is not 'no-status' if I am adding a new
+		<ClassDesc>Make sure the booking status is not 'no-status' if I am adding a new
 ArTrx. If I am adding a new trx, then the booking must have been
-'accepted'.]]></ClassDesc>
+'accepted'.</ClassDesc>
 		<ClassProjectID>1,048,579</ClassProjectID>
 		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>CheckBookingStatusHandler</ClassSourceFile>
@@ -40175,9 +39325,9 @@ ArTrx. If I am adding a new trx, then the booking must have been
 		<Deleted>N</Deleted>
 		<ClassName>BookingCancelledEventHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
-		<ClassDesc><![CDATA[Do the booking related cancellation stuff,
+		<ClassDesc>Do the booking related cancellation stuff,
 such as assessing the cancellation charge
-and creating the refund pending.]]></ClassDesc>
+and creating the refund pending.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
 		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>BookingCancelledEventHandler</ClassSourceFile>
@@ -40445,14 +39595,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2427">
-		<LastChanged>2010-03-20T03:26:16</LastChanged>
+		<LastChanged>2011-03-10T15:35:32</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>BaseJibxMessageIn2010A</ClassName>
+		<ClassName>BaseJibxMessageIn2010B</ClassName>
 		<BaseClassName>JibxConvertToMessage</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010a.base.request.in</ClassPackage>
-		<ClassSourceFile>BaseJibxMessageIn2010A</ClassSourceFile>
+		<ClassPackage>.ota2010b.base.request.in</ClassPackage>
+		<ClassSourceFile>BaseJibxMessageIn2010B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -40462,14 +39612,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2428">
-		<LastChanged>2010-03-20T03:26:38</LastChanged>
+		<LastChanged>2011-03-10T15:36:26</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingRequestJibxMessageIn2010A</ClassName>
-		<BaseClassName>BaseJibxMessageIn2010A</BaseClassName>
+		<ClassName>PingRequestJibxMessageIn2010B</ClassName>
+		<BaseClassName>BaseJibxMessageIn2010B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010a.base.request.in</ClassPackage>
-		<ClassSourceFile>PingRequestJibxMessageIn2010A</ClassSourceFile>
+		<ClassPackage>.ota2010b.base.request.in</ClassPackage>
+		<ClassSourceFile>PingRequestJibxMessageIn2010B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -40479,14 +39629,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2429">
-		<LastChanged>2010-03-20T03:25:09</LastChanged>
+		<LastChanged>2011-03-10T15:35:22</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>BaseJibxMessageOut2010A</ClassName>
+		<ClassName>BaseJibxMessageOut2010B</ClassName>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010a.base.request.out</ClassPackage>
-		<ClassSourceFile>BaseJibxMessageOut2010A</ClassSourceFile>
+		<ClassPackage>.ota2010b.base.request.out</ClassPackage>
+		<ClassSourceFile>BaseJibxMessageOut2010B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -40496,14 +39646,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2430">
-		<LastChanged>2010-03-20T03:25:23</LastChanged>
+		<LastChanged>2011-03-10T15:36:02</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingRequestJibxMessageOut2010A</ClassName>
-		<BaseClassName>BaseJibxMessageOut2010A</BaseClassName>
+		<ClassName>PingRequestJibxMessageOut2010B</ClassName>
+		<BaseClassName>BaseJibxMessageOut2010B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010a.base.request.out</ClassPackage>
-		<ClassSourceFile>PingRequestJibxMessageOut2010A</ClassSourceFile>
+		<ClassPackage>.ota2010b.base.request.out</ClassPackage>
+		<ClassSourceFile>PingRequestJibxMessageOut2010B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -40513,14 +39663,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2431">
-		<LastChanged>2010-03-20T03:27:02</LastChanged>
+		<LastChanged>2011-03-10T15:36:56</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingResponseJibxMessageIn2010A</ClassName>
-		<BaseClassName>BaseJibxMessageIn2010A</BaseClassName>
+		<ClassName>PingResponseJibxMessageIn2010B</ClassName>
+		<BaseClassName>BaseJibxMessageIn2010B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010a.base.response.in</ClassPackage>
-		<ClassSourceFile>PingResponseJibxMessageIn2010A</ClassSourceFile>
+		<ClassPackage>.ota2010b.base.response.in</ClassPackage>
+		<ClassSourceFile>PingResponseJibxMessageIn2010B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -40530,14 +39680,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2432">
-		<LastChanged>2010-03-20T03:27:19</LastChanged>
+		<LastChanged>2011-03-10T15:35:14</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingResponseJibxMessageOut2010A</ClassName>
-		<BaseClassName>BaseJibxMessageOut2010A</BaseClassName>
+		<ClassName>PingResponseJibxMessageOut2010B</ClassName>
+		<BaseClassName>BaseJibxMessageOut2010B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010a.base.response.out</ClassPackage>
-		<ClassSourceFile>PingResponseJibxMessageOut2010A</ClassSourceFile>
+		<ClassPackage>.ota2010b.base.response.out</ClassPackage>
+		<ClassSourceFile>PingResponseJibxMessageOut2010B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -40624,6 +39774,74 @@ and creating the refund pending.]]></ClassDesc>
 		<ClassPackage>.anon</ClassPackage>
 		<ClassSourceFile>TourHeaderGridScreenAnon</ClassSourceFile>
 		<ClassType>Screen</ClassType>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="2439">
+		<LastChanged>2011-03-10T17:12:55</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassName>HotelRateRequestSOAPMessageIn2010B</ClassName>
+		<BaseClassName>BaseJibxMessageIn2010B</BaseClassName>
+		<ClassDesc/>
+		<ClassProjectID>1,048,593</ClassProjectID>
+		<ClassPackage>.ota2010b.hotel.request.in</ClassPackage>
+		<ClassSourceFile>HotelRateRequestSOAPMessageIn2010B</ClassSourceFile>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="2440">
+		<LastChanged>2011-03-10T17:21:25</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassName>HotelRateRequestSOAPMessageOut2010B</ClassName>
+		<BaseClassName>JibxConvertToNative</BaseClassName>
+		<ClassDesc/>
+		<ClassProjectID>1,048,593</ClassProjectID>
+		<ClassPackage>.ota2010b.hotel.request.out</ClassPackage>
+		<ClassSourceFile>HotelRateRequestSOAPMessageOut2010</ClassSourceFile>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="2441">
+		<LastChanged>2011-03-10T18:30:06</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassName>
+		<BaseClassName>JibxConvertToMessage</BaseClassName>
+		<ClassDesc/>
+		<ClassProjectID>1,048,593</ClassProjectID>
+		<ClassPackage>.ota2010b.hotel.response.in</ClassPackage>
+		<ClassSourceFile>HotelRateResponseSOAPMsgReplyIn2010B</ClassSourceFile>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="2442">
+		<LastChanged>2011-03-10T18:30:21</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassName>
+		<BaseClassName>JibxConvertToNative</BaseClassName>
+		<ClassDesc/>
+		<ClassProjectID>1,048,593</ClassProjectID>
+		<ClassPackage>.ota2010b.hotel.response.out</ClassPackage>
+		<ClassSourceFile>HotelRateResponseSOAPMsgReplyOut2010B</ClassSourceFile>
+		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>

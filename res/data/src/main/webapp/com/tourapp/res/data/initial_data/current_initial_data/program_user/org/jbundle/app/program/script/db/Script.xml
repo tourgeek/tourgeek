@@ -33,12 +33,12 @@
 		<Sequence>10</Sequence>
 		<Comment>Run only under jdbc - Ignore errors</Comment>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 11:05:18 PST 2011
 archiveFolder=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
 type=USER_DATA
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -51,9 +51,9 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Dec 03 04:38:10 PST 2009
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -66,8 +66,8 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[xyz=abc
-]]></Properties>
+		<Properties>xyz=abc
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -80,8 +80,8 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[xyz=abc
-]]></Properties>
+		<Properties>xyz=abc
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -94,10 +94,10 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:02:45 PST 2010
 package=com.tourapp.tour.genled.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -110,10 +110,10 @@ package=com.tourapp.tour.genled.db
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:43 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -126,11 +126,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:49 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -143,10 +143,10 @@ mode=import
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:02:54 PST 2010
 package=com.tourapp.tour.assetdr.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -159,10 +159,10 @@ package=com.tourapp.tour.assetdr.db
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:01 PST 2010
 package=com.tourapp.tour.profile.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -175,10 +175,10 @@ package=com.tourapp.tour.profile.db
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:08 PST 2010
 package=com.tourapp.tour.request.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -191,10 +191,10 @@ package=com.tourapp.tour.request.db
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:55 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -207,11 +207,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:01 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -224,10 +224,10 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:10 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -240,11 +240,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:20 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -257,11 +257,11 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:38 PDT 2010
 package=.tour.request.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -274,12 +274,12 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:45 PDT 2010
 package=.tour.request.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -292,10 +292,10 @@ mode=import
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:16 PST 2010
 package=com.tourapp.tour.acctpay.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -308,10 +308,10 @@ package=com.tourapp.tour.acctpay.db
 		<Sequence>80</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:22 PST 2010
 package=com.tourapp.tour.acctrec.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -324,10 +324,10 @@ package=com.tourapp.tour.acctrec.db
 		<Sequence>90</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:30 PST 2010
 package=com.tourapp.tour.payroll.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -340,10 +340,10 @@ package=com.tourapp.tour.payroll.db
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:58 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -356,11 +356,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:05 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -373,11 +373,11 @@ mode=import
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:20 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -390,10 +390,10 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:15 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -406,10 +406,10 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:27 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -422,11 +422,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:32 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -439,10 +439,10 @@ mode=import
 		<Sequence>100</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:38 PST 2010
 package=com.tourapp.tour.product.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -455,10 +455,10 @@ package=com.tourapp.tour.product.db
 		<Sequence>110</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:03:49 PST 2010
 package=com.tourapp.tour.booking.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -471,11 +471,11 @@ package=com.tourapp.tour.booking.db
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:58 PDT 2010
 package=com.tourapp.tour.product.air.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -488,11 +488,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>15</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:15 PDT 2010
 package=com.tourapp.tour.profile.detail
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -505,12 +505,12 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:48:27 PDT 2010
 package=com.tourapp.tour.profile.detail
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -523,11 +523,11 @@ mode=import
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:09 PDT 2010
 package=com.tourapp.tour.product.cruise.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -540,11 +540,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:14 PDT 2010
 package=com.tourapp.tour.product.hotel.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -557,11 +557,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:03 PDT 2010
 package=com.tourapp.tour.product.car.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -574,11 +574,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:21 PDT 2010
 package=com.tourapp.tour.product.item.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -591,11 +591,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>80</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:32 PDT 2010
 package=com.tourapp.tour.product.tour.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -608,11 +608,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>110</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:50 PDT 2010
 package=com.tourapp.tour.product.trans.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -625,11 +625,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:49:53 PDT 2010
 package=com.tourapp.tour.product.base.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -642,11 +642,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:27 PDT 2010
 package=com.tourapp.tour.product.land.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -659,11 +659,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>90</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:37 PDT 2010
 package=com.tourapp.tour.product.tour.detail.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -676,11 +676,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>100</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:43 PDT 2010
 package=com.tourapp.tour.product.tour.schedule.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -693,12 +693,12 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>210</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:50:56 PDT 2010
 package=com.tourapp.tour.product.base.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -711,12 +711,12 @@ mode=import
 		<Sequence>220</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:00 PDT 2010
 package=com.tourapp.tour.product.air.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -729,12 +729,12 @@ mode=import
 		<Sequence>230</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:05 PDT 2010
 package=com.tourapp.tour.product.car.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -747,12 +747,12 @@ mode=import
 		<Sequence>240</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:10 PDT 2010
 package=com.tourapp.tour.product.cruise.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -765,12 +765,12 @@ mode=import
 		<Sequence>250</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:14 PDT 2010
 package=com.tourapp.tour.product.hotel.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -783,12 +783,12 @@ mode=import
 		<Sequence>260</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:19 PDT 2010
 package=com.tourapp.tour.product.item.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -801,12 +801,12 @@ mode=import
 		<Sequence>270</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:24 PDT 2010
 package=com.tourapp.tour.product.land.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -819,12 +819,12 @@ mode=import
 		<Sequence>280</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:29 PDT 2010
 package=com.tourapp.tour.product.tour.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -837,12 +837,12 @@ mode=import
 		<Sequence>290</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:35 PDT 2010
 package=com.tourapp.tour.product.tour.detail.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -855,12 +855,12 @@ mode=import
 		<Sequence>300</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:43 PDT 2010
 package=com.tourapp.tour.product.tour.schedule.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -873,12 +873,12 @@ mode=import
 		<Sequence>310</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:49 PDT 2010
 package=com.tourapp.tour.product.trans.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -891,10 +891,10 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:51:58 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -907,11 +907,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:04 PDT 2010
 package=com.tourapp.tour.booking.detail.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -924,11 +924,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:10 PDT 2010
 package=com.tourapp.tour.booking.history.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -941,11 +941,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:20 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -958,12 +958,12 @@ mode=import
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:26 PDT 2010
 package=com.tourapp.tour.booking.detail.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -976,12 +976,12 @@ mode=import
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:31 PDT 2010
 package=com.tourapp.tour.booking.history.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -994,10 +994,10 @@ mode=import
 		<Sequence>25</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:08:14 PST 2010
 package=org.jbundle.main.user.db
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -1010,10 +1010,10 @@ package=org.jbundle.main.user.db
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:45:33 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1026,11 +1026,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:45:38 PDT 2010
 package=org.jbundle.main.msg.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1043,11 +1043,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:46:22 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1060,12 +1060,12 @@ mode=import
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:46:29 PDT 2010
 package=org.jbundle.main.msg.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1078,9 +1078,9 @@ mode=import
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Dec 03 04:37:09 PST 2009
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -1093,12 +1093,12 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:13 PDT 2010
 package=org.jbundle.main.user.db
 record=UserInfo
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1111,13 +1111,13 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:20 PDT 2010
 record=UserInfo
 package=org.jbundle.main.user.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1182,12 +1182,12 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment>Download the text list from ISO (Also available in XML)</Comment>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Oct 17 14:35:56 PDT 2008
 out=/tmp/isocountrycodes.txt
 url=http\://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1-semic.txt
 process=.program.manual.importexternal.DownloadDataProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1198,10 +1198,10 @@ process=.program.manual.importexternal.DownloadDataProcess
 		<Name>Get Currency List</Name>
 		<ParentFolderID>82</ParentFolderID>
 		<Sequence>50</Sequence>
-		<Comment><![CDATA[See: currencysource.com
+		<Comment>See: currencysource.com
 and finance.yahoo.com
 See soapui test for currency example
-Try to find out how moneydance does it.]]></Comment>
+Try to find out how moneydance does it.</Comment>
 		<Code/>
 		<Properties/>
 		<Command/>
@@ -1294,11 +1294,11 @@ Try to find out how moneydance does it.]]></Comment>
 		<Sequence>35</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:15 PDT 2010
 package=com.tourapp.tour.booking.inventory.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1311,12 +1311,12 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:52:37 PDT 2010
 package=com.tourapp.tour.booking.inventory.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -1368,9 +1368,9 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Jan 18 13:20:01 PST 2007
-]]></Properties>
+</Properties>
 		<Command>t</Command>
 		<Source/>
 		<Destination/>
@@ -1383,8 +1383,8 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=toolbarButtonGraphics/
-		destination=buttons/]]></Properties>
+		<Properties>source=toolbarButtonGraphics/
+		destination=buttons/</Properties>
 		<Command>t</Command>
 		<Source>toolbarButtonGraphics/</Source>
 		<Destination>buttons/</Destination>
@@ -1462,8 +1462,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=About16.gif
-		destination=About.gif]]></Properties>
+		<Properties>source=About16.gif
+		destination=About.gif</Properties>
 		<Command>t</Command>
 		<Source>About16.gif</Source>
 		<Destination>About.gif</Destination>
@@ -1476,8 +1476,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Help16.gif
-		destination=Help.gif]]></Properties>
+		<Properties>source=Help16.gif
+		destination=Help.gif</Properties>
 		<Command>t</Command>
 		<Source>Help16.gif</Source>
 		<Destination>Help.gif</Destination>
@@ -1490,8 +1490,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ComposeMail16.gif
-		destination=EMail.gif]]></Properties>
+		<Properties>source=ComposeMail16.gif
+		destination=EMail.gif</Properties>
 		<Command>t</Command>
 		<Source>ComposeMail16.gif</Source>
 		<Destination>EMail.gif</Destination>
@@ -1504,8 +1504,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Copy16.gif
-		destination=Copy.gif]]></Properties>
+		<Properties>source=Copy16.gif
+		destination=Copy.gif</Properties>
 		<Command>t</Command>
 		<Source>Copy16.gif</Source>
 		<Destination>Copy.gif</Destination>
@@ -1518,8 +1518,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Cut16.gif
-		destination=Cut.gif]]></Properties>
+		<Properties>source=Cut16.gif
+		destination=Cut.gif</Properties>
 		<Command>t</Command>
 		<Source>Cut16.gif</Source>
 		<Destination>Cut.gif</Destination>
@@ -1532,8 +1532,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Delete16.gif
-		destination=Delete.gif]]></Properties>
+		<Properties>source=Delete16.gif
+		destination=Delete.gif</Properties>
 		<Command>t</Command>
 		<Source>Delete16.gif</Source>
 		<Destination>Delete.gif</Destination>
@@ -1546,8 +1546,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Export16.gif
-		destination=Export.gif]]></Properties>
+		<Properties>source=Export16.gif
+		destination=Export.gif</Properties>
 		<Command>t</Command>
 		<Source>Export16.gif</Source>
 		<Destination>Export.gif</Destination>
@@ -1560,8 +1560,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Find16.gif
-		destination=Find.gif]]></Properties>
+		<Properties>source=Find16.gif
+		destination=Find.gif</Properties>
 		<Command>t</Command>
 		<Source>Find16.gif</Source>
 		<Destination>Find.gif</Destination>
@@ -1574,8 +1574,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Import16.gif
-		destination=Import.gif]]></Properties>
+		<Properties>source=Import16.gif
+		destination=Import.gif</Properties>
 		<Command>t</Command>
 		<Source>Import16.gif</Source>
 		<Destination>Import.gif</Destination>
@@ -1588,8 +1588,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Information16.gif
-		destination=information.gif]]></Properties>
+		<Properties>source=Information16.gif
+		destination=information.gif</Properties>
 		<Command>t</Command>
 		<Source>Information16.gif</Source>
 		<Destination>information.gif</Destination>
@@ -1602,8 +1602,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Properties16.gif
-		destination=Properties.gif]]></Properties>
+		<Properties>source=Properties16.gif
+		destination=Properties.gif</Properties>
 		<Command>t</Command>
 		<Source>Properties16.gif</Source>
 		<Destination>Properties.gif</Destination>
@@ -1616,8 +1616,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Redo16.gif
-		destination=Redo.gif]]></Properties>
+		<Properties>source=Redo16.gif
+		destination=Redo.gif</Properties>
 		<Command>t</Command>
 		<Source>Redo16.gif</Source>
 		<Destination>Redo.gif</Destination>
@@ -1630,8 +1630,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Refresh16.gif
-		destination=Refresh.gif]]></Properties>
+		<Properties>source=Refresh16.gif
+		destination=Refresh.gif</Properties>
 		<Command>t</Command>
 		<Source>Refresh16.gif</Source>
 		<Destination>Refresh.gif</Destination>
@@ -1644,8 +1644,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Save16.gif
-		destination=Save.gif]]></Properties>
+		<Properties>source=Save16.gif
+		destination=Save.gif</Properties>
 		<Command>t</Command>
 		<Source>Save16.gif</Source>
 		<Destination>Save.gif</Destination>
@@ -1658,8 +1658,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Stop16.gif
-		destination=Stop.gif]]></Properties>
+		<Properties>source=Stop16.gif
+		destination=Stop.gif</Properties>
 		<Command>t</Command>
 		<Source>Stop16.gif</Source>
 		<Destination>Stop.gif</Destination>
@@ -1672,8 +1672,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Undo16.gif
-		destination=Undo.gif]]></Properties>
+		<Properties>source=Undo16.gif
+		destination=Undo.gif</Properties>
 		<Command>t</Command>
 		<Source>Undo16.gif</Source>
 		<Destination>Undo.gif</Destination>
@@ -1686,8 +1686,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Back16.gif
-		destination=Back.gif]]></Properties>
+		<Properties>source=Back16.gif
+		destination=Back.gif</Properties>
 		<Command>t</Command>
 		<Source>Back16.gif</Source>
 		<Destination>Back.gif</Destination>
@@ -1700,8 +1700,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Down16.gif
-		destination=Down.gif]]></Properties>
+		<Properties>source=Down16.gif
+		destination=Down.gif</Properties>
 		<Command>t</Command>
 		<Source>Down16.gif</Source>
 		<Destination>Down.gif</Destination>
@@ -1714,8 +1714,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Forward16.gif
-		destination=Forward.gif]]></Properties>
+		<Properties>source=Forward16.gif
+		destination=Forward.gif</Properties>
 		<Command>t</Command>
 		<Source>Forward16.gif</Source>
 		<Destination>Forward.gif</Destination>
@@ -1728,8 +1728,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Up16.gif
-		destination=Up.gif]]></Properties>
+		<Properties>source=Up16.gif
+		destination=Up.gif</Properties>
 		<Command>t</Command>
 		<Source>Up16.gif</Source>
 		<Destination>Up.gif</Destination>
@@ -1742,8 +1742,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Home16.gif
-		destination=Home.gif]]></Properties>
+		<Properties>source=Home16.gif
+		destination=Home.gif</Properties>
 		<Command>t</Command>
 		<Source>Home16.gif</Source>
 		<Destination>Home.gif</Destination>
@@ -1756,8 +1756,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ContextualHelp16.gif
-		destination=Context.gif]]></Properties>
+		<Properties>source=ContextualHelp16.gif
+		destination=Context.gif</Properties>
 		<Command>t</Command>
 		<Source>ContextualHelp16.gif</Source>
 		<Destination>Context.gif</Destination>
@@ -1770,8 +1770,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Zoom16.gif
-		destination=Display.gif]]></Properties>
+		<Properties>source=Zoom16.gif
+		destination=Display.gif</Properties>
 		<Command>t</Command>
 		<Source>Zoom16.gif</Source>
 		<Destination>Display.gif</Destination>
@@ -1784,8 +1784,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Applet16.gif
-		destination=Java.gif]]></Properties>
+		<Properties>source=Applet16.gif
+		destination=Java.gif</Properties>
 		<Command>t</Command>
 		<Source>Applet16.gif</Source>
 		<Destination>Java.gif</Destination>
@@ -1798,8 +1798,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=New16.gif
-		destination=New.gif]]></Properties>
+		<Properties>source=New16.gif
+		destination=New.gif</Properties>
 		<Command>t</Command>
 		<Source>New16.gif</Source>
 		<Destination>New.gif</Destination>
@@ -1812,8 +1812,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Open16.gif
-		destination=Open.gif]]></Properties>
+		<Properties>source=Open16.gif
+		destination=Open.gif</Properties>
 		<Command>t</Command>
 		<Source>Open16.gif</Source>
 		<Destination>Open.gif</Destination>
@@ -1826,8 +1826,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Print16.gif
-		destination=Print.gif]]></Properties>
+		<Properties>source=Print16.gif
+		destination=Print.gif</Properties>
 		<Command>t</Command>
 		<Source>Print16.gif</Source>
 		<Destination>Print.gif</Destination>
@@ -1840,8 +1840,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Paste16.gif
-		destination=Paste.gif]]></Properties>
+		<Properties>source=Paste16.gif
+		destination=Paste.gif</Properties>
 		<Command>t</Command>
 		<Source>Paste16.gif</Source>
 		<Destination>Paste.gif</Destination>
@@ -1854,8 +1854,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=FastForward16.gif
-		destination=Last.gif]]></Properties>
+		<Properties>source=FastForward16.gif
+		destination=Last.gif</Properties>
 		<Command>t</Command>
 		<Source>FastForward16.gif</Source>
 		<Destination>Last.gif</Destination>
@@ -1868,8 +1868,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Play16.gif
-		destination=Next.gif]]></Properties>
+		<Properties>source=Play16.gif
+		destination=Next.gif</Properties>
 		<Command>t</Command>
 		<Source>Play16.gif</Source>
 		<Destination>Next.gif</Destination>
@@ -1882,8 +1882,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Rewind16.gif
-		destination=First.gif]]></Properties>
+		<Properties>source=Rewind16.gif
+		destination=First.gif</Properties>
 		<Command>t</Command>
 		<Source>Rewind16.gif</Source>
 		<Destination>First.gif</Destination>
@@ -1896,8 +1896,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=WebComponent16.gif
-		destination=URL.gif]]></Properties>
+		<Properties>source=WebComponent16.gif
+		destination=URL.gif</Properties>
 		<Command>t</Command>
 		<Source>WebComponent16.gif</Source>
 		<Destination>URL.gif</Destination>
@@ -1910,8 +1910,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ZoomIn16.gif
-		destination=Expand.gif]]></Properties>
+		<Properties>source=ZoomIn16.gif
+		destination=Expand.gif</Properties>
 		<Command>t</Command>
 		<Source>ZoomIn16.gif</Source>
 		<Destination>Expand.gif</Destination>
@@ -1924,8 +1924,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ZoomOut16.gif
-		destination=Contract.gif]]></Properties>
+		<Properties>source=ZoomOut16.gif
+		destination=Contract.gif</Properties>
 		<Command>t</Command>
 		<Source>ZoomOut16.gif</Source>
 		<Destination>Contract.gif</Destination>
@@ -1938,8 +1938,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Refresh16.gif
-		destination=Reset.gif]]></Properties>
+		<Properties>source=Refresh16.gif
+		destination=Reset.gif</Properties>
 		<Command>t</Command>
 		<Source>Refresh16.gif</Source>
 		<Destination>Reset.gif</Destination>
@@ -1952,8 +1952,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Add16.gif
-		destination=Submit.gif]]></Properties>
+		<Properties>source=Add16.gif
+		destination=Submit.gif</Properties>
 		<Command>t</Command>
 		<Source>Add16.gif</Source>
 		<Destination>Submit.gif</Destination>
@@ -1966,8 +1966,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Zoom16.gif
-		destination=Lookup.gif]]></Properties>
+		<Properties>source=Zoom16.gif
+		destination=Lookup.gif</Properties>
 		<Command>t</Command>
 		<Source>Zoom16.gif</Source>
 		<Destination>Lookup.gif</Destination>
@@ -1993,8 +1993,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Grid16.gif
-		destination=Grid.gif]]></Properties>
+		<Properties>source=Grid16.gif
+		destination=Grid.gif</Properties>
 		<Command>t</Command>
 		<Source>Grid16.gif</Source>
 		<Destination>Grid.gif</Destination>
@@ -2007,8 +2007,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Go16.gif
-		destination=Go.gif]]></Properties>
+		<Properties>source=Go16.gif
+		destination=Go.gif</Properties>
 		<Command>t</Command>
 		<Source>Go16.gif</Source>
 		<Destination>Go.gif</Destination>
@@ -2021,8 +2021,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Run16.gif
-		destination=Run.gif]]></Properties>
+		<Properties>source=Run16.gif
+		destination=Run.gif</Properties>
 		<Command>t</Command>
 		<Source>Run16.gif</Source>
 		<Destination>Run.gif</Destination>
@@ -2035,8 +2035,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Close16.gif
-		destination=Close.gif]]></Properties>
+		<Properties>source=Close16.gif
+		destination=Close.gif</Properties>
 		<Command>t</Command>
 		<Source>Close16.gif</Source>
 		<Destination>Close.gif</Destination>
@@ -2049,8 +2049,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Add16.gif
-		destination=Add.gif]]></Properties>
+		<Properties>source=Add16.gif
+		destination=Add.gif</Properties>
 		<Command>t</Command>
 		<Source>Add16.gif</Source>
 		<Destination>Add.gif</Destination>
@@ -2063,8 +2063,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Prev16.gif
-		destination=Prev.gif]]></Properties>
+		<Properties>source=Prev16.gif
+		destination=Prev.gif</Properties>
 		<Command>t</Command>
 		<Source>Prev16.gif</Source>
 		<Destination>Prev.gif</Destination>
@@ -2077,8 +2077,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ComposeMail16.gif
-		destination=Mail.gif]]></Properties>
+		<Properties>source=ComposeMail16.gif
+		destination=Mail.gif</Properties>
 		<Command>t</Command>
 		<Source>ComposeMail16.gif</Source>
 		<Destination>Mail.gif</Destination>
@@ -2091,8 +2091,8 @@ mode=import
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=toolbarButtonGraphics/
-		destination=icons/]]></Properties>
+		<Properties>source=toolbarButtonGraphics/
+		destination=icons/</Properties>
 		<Command>t</Command>
 		<Source>toolbarButtonGraphics/</Source>
 		<Destination>icons/</Destination>
@@ -2196,8 +2196,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=WebComponent24.gif
-		destination=link.gif]]></Properties>
+		<Properties>source=WebComponent24.gif
+		destination=link.gif</Properties>
 		<Command>t</Command>
 		<Source>WebComponent24.gif</Source>
 		<Destination>link.gif</Destination>
@@ -2210,8 +2210,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Host24.gif
-		destination=screen.gif]]></Properties>
+		<Properties>source=Host24.gif
+		destination=screen.gif</Properties>
 		<Command>t</Command>
 		<Source>Host24.gif</Source>
 		<Destination>screen.gif</Destination>
@@ -2224,8 +2224,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ComposeMail24.gif
-		destination=mail.gif]]></Properties>
+		<Properties>source=ComposeMail24.gif
+		destination=mail.gif</Properties>
 		<Command>t</Command>
 		<Source>ComposeMail24.gif</Source>
 		<Destination>mail.gif</Destination>
@@ -2238,8 +2238,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Applet24.gif
-		destination=applet.gif]]></Properties>
+		<Properties>source=Applet24.gif
+		destination=applet.gif</Properties>
 		<Command>t</Command>
 		<Source>Applet24.gif</Source>
 		<Destination>applet.gif</Destination>
@@ -2252,8 +2252,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Open24.gif
-		destination=menu.gif]]></Properties>
+		<Properties>source=Open24.gif
+		destination=menu.gif</Properties>
 		<Command>t</Command>
 		<Source>Open24.gif</Source>
 		<Destination>menu.gif</Destination>
@@ -2266,8 +2266,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Save24.gif
-		destination=file.gif]]></Properties>
+		<Properties>source=Save24.gif
+		destination=file.gif</Properties>
 		<Command>t</Command>
 		<Source>Save24.gif</Source>
 		<Destination>file.gif</Destination>
@@ -2280,8 +2280,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Help24.gif
-		destination=help.gif]]></Properties>
+		<Properties>source=Help24.gif
+		destination=help.gif</Properties>
 		<Command>t</Command>
 		<Source>Help24.gif</Source>
 		<Destination>help.gif</Destination>
@@ -2294,8 +2294,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=RowInsertBefore24.gif
-		destination=record.gif]]></Properties>
+		<Properties>source=RowInsertBefore24.gif
+		destination=record.gif</Properties>
 		<Command>t</Command>
 		<Source>RowInsertBefore24.gif</Source>
 		<Destination>record.gif</Destination>
@@ -2308,8 +2308,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=AlignLeft24.gif
-		destination=form.gif]]></Properties>
+		<Properties>source=AlignLeft24.gif
+		destination=form.gif</Properties>
 		<Command>t</Command>
 		<Source>AlignLeft24.gif</Source>
 		<Destination>form.gif</Destination>
@@ -2322,8 +2322,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=AlignLeft16.gif
-		destination=Form.gif]]></Properties>
+		<Properties>source=AlignLeft16.gif
+		destination=Form.gif</Properties>
 		<Command>t</Command>
 		<Source>AlignLeft16.gif</Source>
 		<Destination>Form.gif</Destination>
@@ -2336,8 +2336,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Grid16.gif
-		destination=Detail.gif]]></Properties>
+		<Properties>source=Grid16.gif
+		destination=Detail.gif</Properties>
 		<Command>t</Command>
 		<Source>Grid16.gif</Source>
 		<Destination>Detail.gif</Destination>
@@ -2350,8 +2350,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Grid24.gif
-		destination=record.gif]]></Properties>
+		<Properties>source=Grid24.gif
+		destination=record.gif</Properties>
 		<Command>t</Command>
 		<Source>Grid24.gif</Source>
 		<Destination>record.gif</Destination>
@@ -2377,8 +2377,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=AlignLeft16.gif
-		destination=Form.gif]]></Properties>
+		<Properties>source=AlignLeft16.gif
+		destination=Form.gif</Properties>
 		<Command>t</Command>
 		<Source>AlignLeft16.gif</Source>
 		<Destination>Form.gif</Destination>
@@ -2391,8 +2391,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=noimage24.gif
-		destination=noimage.gif]]></Properties>
+		<Properties>source=noimage24.gif
+		destination=noimage.gif</Properties>
 		<Command>t</Command>
 		<Source>noimage24.gif</Source>
 		<Destination>noimage.gif</Destination>
@@ -2405,8 +2405,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=menurec24.gif
-		destination=menurec.gif]]></Properties>
+		<Properties>source=menurec24.gif
+		destination=menurec.gif</Properties>
 		<Command>t</Command>
 		<Source>menurec24.gif</Source>
 		<Destination>menurec.gif</Destination>
@@ -2419,8 +2419,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=ComposeMail24.gif
-		destination=mail.gif]]></Properties>
+		<Properties>source=ComposeMail24.gif
+		destination=mail.gif</Properties>
 		<Command>t</Command>
 		<Source>ComposeMail24.gif</Source>
 		<Destination>mail.gif</Destination>
@@ -2433,8 +2433,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Post16.gif
-		destination=Post.gif]]></Properties>
+		<Properties>source=Post16.gif
+		destination=Post.gif</Properties>
 		<Command>t</Command>
 		<Source>Post16.gif</Source>
 		<Destination>Post.gif</Destination>
@@ -2447,8 +2447,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Reversal16.gif
-		destination=Reversal.gif]]></Properties>
+		<Properties>source=Reversal16.gif
+		destination=Reversal.gif</Properties>
 		<Command>t</Command>
 		<Source>Reversal16.gif</Source>
 		<Destination>Reversal.gif</Destination>
@@ -2461,8 +2461,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Movie16.gif
-		destination=Slide.gif]]></Properties>
+		<Properties>source=Movie16.gif
+		destination=Slide.gif</Properties>
 		<Command>t</Command>
 		<Source>Movie16.gif</Source>
 		<Destination>Slide.gif</Destination>
@@ -2475,8 +2475,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Open24.gif
-		destination=folder.gif]]></Properties>
+		<Properties>source=Open24.gif
+		destination=folder.gif</Properties>
 		<Command>t</Command>
 		<Source>Open24.gif</Source>
 		<Destination>folder.gif</Destination>
@@ -2489,8 +2489,8 @@ mode=import
 		<Sequence>0</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[source=Zoom24.gif
-		destination=picture.gif]]></Properties>
+		<Properties>source=Zoom24.gif
+		destination=picture.gif</Properties>
 		<Command>t</Command>
 		<Source>Zoom24.gif</Source>
 		<Destination>picture.gif</Destination>
@@ -2503,11 +2503,11 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Sep 08 16:10:51 PDT 2006
 package=.tour.product.base.ota.db
 process=.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2520,11 +2520,11 @@ process=.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Sep 14 04:54:02 PDT 2008
 filepath=/var/tourstudio/java/lib/ota-tools/ota-schema-tools/build/2006A/docs/OTA_CodeTable20060606.xml
 process=.program.script.importdata.ImportOTACodeTablesProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2537,11 +2537,11 @@ process=.program.script.importdata.ImportOTACodeTablesProcess
 		<Sequence>100</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Sep 10 01:50:54 PDT 2006
 record=OTACodeTable
 NameCode=MPT
-]]></Properties>
+</Properties>
 		<Command>S</Command>
 		<Source/>
 		<Destination/>
@@ -2554,12 +2554,12 @@ NameCode=MPT
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Sep 10 01:20:52 PDT 2006
 record=OTACodes
 destinationRecord=MealPlan
 parentRecord=OTACodeTable
-]]></Properties>
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
@@ -2572,11 +2572,11 @@ parentRecord=OTACodeTable
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Sep 10 01:41:26 PDT 2006
 destination=ID
 source=Value
-]]></Properties>
+</Properties>
 		<Command>F</Command>
 		<Source>Value</Source>
 		<Destination>ID</Destination>
@@ -2589,11 +2589,11 @@ source=Value
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Sep 10 01:42:44 PDT 2006
 destination=Description
 source=Name
-]]></Properties>
+</Properties>
 		<Command>F</Command>
 		<Source>Name</Source>
 		<Destination>Description</Destination>
@@ -2606,10 +2606,10 @@ source=Name
 		<Sequence>200</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jan 18 13:55:24 PST 2008
 process=.main.msg.process.MessageTimeoutProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2622,11 +2622,11 @@ process=.main.msg.process.MessageTimeoutProcess
 		<Sequence>25</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:45:48 PDT 2010
 package=org.jbundle.main.calendar.db
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2639,12 +2639,12 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>45</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:46:36 PDT 2010
 package=org.jbundle.main.calendar.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2657,12 +2657,12 @@ mode=import
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Oct 15 04:47:20 PDT 2008
 destination=/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.txt
 source=/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.dat
 process=.program.data.importfix.importdata.MergeSkymap
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.dat</Source>
 		<Destination>/var/tourstudio/java/tour/data/java/tour/externaldata/skymap/Location.txt</Destination>
@@ -2675,10 +2675,10 @@ process=.program.data.importfix.importdata.MergeSkymap
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Oct 17 14:39:35 PDT 2008
 process=.program.script.data.importfix.fixdata.ScanCity
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2691,11 +2691,11 @@ process=.program.script.data.importfix.fixdata.ScanCity
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Oct 15 16:58:41 PDT 2008
 source=file\:///tmp/currency.html
 process=.program.script.data.importfix.importdata.MergeForexCurrency
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>file:///tmp/currency.html</Source>
 		<Destination/>
@@ -2708,12 +2708,12 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Oct 15 13:38:04 PDT 2008
 destination=/tmp/currency.html
 source=http\://www.forexrealm.com/additional-info/currencies-codes-a-b.html
 process=.program.script.data.importfix.util.TidyHtml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>http://www.forexrealm.com/additional-info/currencies-codes-a-b.html</Source>
 		<Destination>/tmp/currency.html</Destination>
@@ -2726,12 +2726,12 @@ process=.program.script.data.importfix.util.TidyHtml
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:18:49 PDT 2008
 destination=/tmp/currency.html
 source=http\://www.forexrealm.com/additional-info/currencies-codes-c-f.html
 process=.program.script.data.importfix.util.TidyHtml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>http://www.forexrealm.com/additional-info/currencies-codes-c-f.html</Source>
 		<Destination>/tmp/currency.html</Destination>
@@ -2744,12 +2744,12 @@ process=.program.script.data.importfix.util.TidyHtml
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:19:41 PDT 2008
 destination=/tmp/currency.html
 source=http\://www.forexrealm.com/additional-info/currencies-codes-g-k.html
 process=.program.script.data.importfix.util.TidyHtml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>http://www.forexrealm.com/additional-info/currencies-codes-g-k.html</Source>
 		<Destination>/tmp/currency.html</Destination>
@@ -2762,12 +2762,12 @@ process=.program.script.data.importfix.util.TidyHtml
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:10:04 PDT 2008
 destination=/tmp/currency.html
 source=http\://www.forexrealm.com/additional-info/currencies-codes-l-o.html
 process=.program.script.data.importfix.util.TidyHtml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>http://www.forexrealm.com/additional-info/currencies-codes-l-o.html</Source>
 		<Destination>/tmp/currency.html</Destination>
@@ -2780,12 +2780,12 @@ process=.program.script.data.importfix.util.TidyHtml
 		<Sequence>90</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:10:53 PDT 2008
 destination=/tmp/currency.html
 source=http\://www.forexrealm.com/additional-info/currencies-codes-p-s.html
 process=.program.script.data.importfix.util.TidyHtml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>http://www.forexrealm.com/additional-info/currencies-codes-p-s.html</Source>
 		<Destination>/tmp/currency.html</Destination>
@@ -2798,12 +2798,12 @@ process=.program.script.data.importfix.util.TidyHtml
 		<Sequence>110</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:31:19 PDT 2008
 destination=/tmp/currency.html
 source=http\://www.forexrealm.com/additional-info/currencies-codes-t-z.html
 process=.program.script.data.importfix.util.TidyHtml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>http://www.forexrealm.com/additional-info/currencies-codes-t-z.html</Source>
 		<Destination>/tmp/currency.html</Destination>
@@ -2816,11 +2816,11 @@ process=.program.script.data.importfix.util.TidyHtml
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:12:35 PDT 2008
 source=file\:///tmp/currency.html
 process=.program.script.data.importfix.importdata.MergeForexCurrency
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>file:///tmp/currency.html</Source>
 		<Destination/>
@@ -2833,11 +2833,11 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:13:12 PDT 2008
 source=file\:///tmp/currency.html
 process=.program.script.data.importfix.importdata.MergeForexCurrency
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>file:///tmp/currency.html</Source>
 		<Destination/>
@@ -2850,11 +2850,11 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Sequence>80</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:13:50 PDT 2008
 source=file\:///tmp/currency.html
 process=.program.script.data.importfix.importdata.MergeForexCurrency
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>file:///tmp/currency.html</Source>
 		<Destination/>
@@ -2867,11 +2867,11 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Sequence>100</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:14:21 PDT 2008
 source=file\:///tmp/currency.html
 process=.program.script.data.importfix.importdata.MergeForexCurrency
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>file:///tmp/currency.html</Source>
 		<Destination/>
@@ -2884,11 +2884,11 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Sequence>120</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Oct 16 02:14:47 PDT 2008
 source=file\:///tmp/currency.html
 process=.program.script.data.importfix.importdata.MergeForexCurrency
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source>file:///tmp/currency.html</Source>
 		<Destination/>
@@ -2901,10 +2901,10 @@ process=.program.script.data.importfix.importdata.MergeForexCurrency
 		<Sequence>200</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Mar 08 09:56:38 PST 2011
 process=com.tourapp.tour.assetdr.process.CurrencyUpdateProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2930,11 +2930,11 @@ process=com.tourapp.tour.assetdr.process.CurrencyUpdateProcess
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Oct 17 14:53:13 PDT 2008
 recordClass=.tour.product.base.db.Region
 field=Description
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2947,12 +2947,12 @@ field=Description
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Oct 17 14:54:29 PDT 2008
 recordClass=.tour.product.base.db.Region
 process=.program.script.data.importfix.base.FixCapitalization
 field=Description
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -2965,9 +2965,9 @@ field=Description
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Oct 18 07:17:30 PDT 2008
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -2980,10 +2980,10 @@ field=Description
 		<Sequence>20</Sequence>
 		<Comment>This list has all the information including calling prefixes</Comment>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Oct 18 07:16:28 PDT 2008
 source=http\://www.unc.edu/~rowlett/units/codes/country.htm
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source>http://www.unc.edu/~rowlett/units/codes/country.htm</Source>
 		<Destination/>
@@ -2996,10 +2996,10 @@ source=http\://www.unc.edu/~rowlett/units/codes/country.htm
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Oct 18 07:18:09 PDT 2008
 process=.program.script.importdata.ImportOTACodeTablesProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3012,7 +3012,7 @@ process=.program.script.importdata.ImportOTACodeTablesProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Oct 18 10:43:54 PDT 2008
 process=.program.script.data.importfix.merge.MergeCodeTable
 recordClass=.tour.product.base.db.MealPlan
@@ -3023,7 +3023,7 @@ destField2=Description
 sourceField2=Name
 sourceField1=ID
 destField1=ID
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3036,7 +3036,7 @@ destField1=ID
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Oct 18 12:44:46 PDT 2008
 destKeyField=ID
 sourceKeyField=ID
@@ -3045,7 +3045,7 @@ recordClass=.tour.profile.db.ProfileType
 sourceField1=Name
 process=.program.script.data.importfix.merge.MergeCodeTable
 destField1=Description
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3058,10 +3058,10 @@ destField1=Description
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 00:53:13 PDT 2008
 process=.program.script.data.importfix.merge.MergeCodeTableSearch
-]]></Properties>
+</Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
@@ -3074,10 +3074,10 @@ process=.program.script.data.importfix.merge.MergeCodeTableSearch
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 00:52:44 PDT 2008
 code=ACC
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3090,10 +3090,10 @@ code=ACC
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:41:13 PDT 2008
 code=BCC
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3106,10 +3106,10 @@ code=BCC
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:42:26 PDT 2008
 code=EQP
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3122,10 +3122,10 @@ code=EQP
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:43:24 PDT 2008
 code=HAC
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3138,10 +3138,10 @@ code=HAC
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:44:36 PDT 2008
 code=LOC
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3154,10 +3154,10 @@ code=LOC
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:46:00 PDT 2008
 code=PCT
-]]></Properties>
+</Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
@@ -3170,10 +3170,10 @@ code=PCT
 		<Sequence>80</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:46:47 PDT 2008
 code=PKG
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3186,10 +3186,10 @@ code=PKG
 		<Sequence>100</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:48:19 PDT 2008
 code=REC
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3202,10 +3202,10 @@ code=REC
 		<Sequence>120</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:49:22 PDT 2008
 code=RMA
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3218,10 +3218,10 @@ code=RMA
 		<Sequence>140</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Oct 19 01:50:25 PDT 2008
 code=RST
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3234,7 +3234,7 @@ code=RST
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Nov 18 09:50:41 PST 2008
 process=.program.script.data.importfix.merge.MergeCodeTable
 code=RPT
@@ -3245,7 +3245,7 @@ destField2=Description
 sourceField2=Name
 destField1=ID
 sourceField1=ID
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3258,7 +3258,7 @@ sourceField1=ID
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Nov 18 09:55:08 PST 2008
 process=.program.script.data.importfix.merge.MergeCodeTable
 code=SEG
@@ -3269,7 +3269,7 @@ destField2=Description
 sourceField2=Name
 sourceField1=ID
 destField1=ID
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3282,7 +3282,7 @@ destField1=ID
 		<Sequence>80</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Nov 18 10:06:59 PST 2008
 process=.program.script.data.importfix.merge.MergeCodeTable
 code=STP
@@ -3293,7 +3293,7 @@ destField2=Description
 sourceField2=Name
 sourceField1=ID
 destField1=ID
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3319,10 +3319,10 @@ destField1=ID
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jul 10 16:09:01 PDT 2009
 process=.base.db.util.log.RestoreBackupProcess
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3335,7 +3335,7 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Sequence>10</Sequence>
 		<Comment>Run from regular tourapp (not direct)</Comment>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 11:58:53 PST 2011
 sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data
 local=Jdbc
@@ -3344,7 +3344,7 @@ table=Jdbc
 remote=Jdbc
 process=.base.thread.StandaloneProcessRunnerProcess
 mode=export
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -3357,11 +3357,11 @@ mode=export
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 11:08:24 PST 2011
 sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data/test_data
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -3374,14 +3374,14 @@ xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,Message
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 15 09:20:09 PST 2011
 sourceDir=raw_test_data
 destDir=raw_test_data
 listenerClass=.app.program.script.scan.DeleteScanListener
 process=.app.program.manual.convert.ConvertCode
 extension=xml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3394,7 +3394,7 @@ extension=xml
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 12:46:51 PST 2011
 local=Jdbc
 sourceDir=raw_test_data
@@ -3404,7 +3404,7 @@ table=Jdbc
 remote=Jdbc
 process=.base.thread.StandaloneProcessRunnerProcess
 mode=export
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -3417,7 +3417,7 @@ mode=export
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 15 09:21:12 PST 2011
 sourceDir=raw_test_data
 converterPath=/home/don/workspace/jdance/WebContent/docs/styles/xsl/program/fixdemo.xsl
@@ -3425,7 +3425,7 @@ destDir=scratch_test_data
 listenerClass=.app.program.script.scan.XMLScanListener
 process=.app.program.manual.convert.ConvertCode
 extension=xml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3438,7 +3438,7 @@ extension=xml
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 11:08:59 PST 2011
 process=.app.program.manual.convert.ConvertCode
 listenerClass=.app.program.script.scan.DateOffsetScanListener
@@ -3449,7 +3449,7 @@ endOfMonthFields=EndPeriod,EndDate
 extension=xml
 monthOffset=1
 dayOffset=0
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3462,14 +3462,14 @@ dayOffset=0
 		<Sequence>25</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 15 09:20:53 PST 2011
 sourceDir=scratch_test_data
 destDir=scratch_test_data
 listenerClass=.app.program.script.scan.DeleteScanListener
 process=.app.program.manual.convert.ConvertCode
 extension=xml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3482,14 +3482,14 @@ extension=xml
 		<Sequence>35</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 15 09:21:32 PST 2011
 sourceDir=current_test_data
 destDir=current_test_data
 listenerClass=.app.program.script.scan.DeleteScanListener
 process=.app.program.manual.convert.ConvertCode
 extension=xml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3502,12 +3502,12 @@ extension=xml
 		<Sequence>500</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Dec 15 00:45:50 PST 2009
 record=.test.test.db.TestTable
 process=.program.script.process.RemoteRecordProcess
 command=test
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3520,7 +3520,7 @@ command=test
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 15 09:29:20 PST 2011
 package=.tour
 dbPrefix=fred_
@@ -3529,7 +3529,7 @@ type=USER_DATA
 process=.app.program.script.process.ExportRecordsToXmlProcess
 project=Tour
 mode=import
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3542,10 +3542,10 @@ mode=import
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 02 13:04:36 PST 2010
 package=com.tourapp.tour.base.db
-]]></Properties>
+</Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
@@ -3558,10 +3558,10 @@ package=com.tourapp.tour.base.db
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:30 PDT 2010
 process=.app.program.script.process.PurgeRecordsProcess
-]]></Properties>
+</Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
@@ -3574,11 +3574,11 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Apr 18 10:47:36 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
 mode=import
-]]></Properties>
+</Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
@@ -3591,30 +3591,30 @@ mode=import
 		<Sequence>100</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 13:08:38 PST 2011
 package=org.jbundle.app.program.*
 sourceDir=initial_data/current_initial_data
-]]></Properties>
+</Properties>
 		<Command>true</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="297">
-		<LastChanged>2011-01-15T09:34:41</LastChanged>
+		<LastChanged>2011-06-22T15:21:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export base program data</Name>
 		<ParentFolderID>296</ParentFolderID>
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:34:38 PST 2011
+		<Properties>#Field properties
+#Wed Jun 22 15:21:05 PDT 2011
 programSharedDBName=program_base
 mainSharedDBName=main_base
 dbSuffix=_base
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
-]]></Properties>
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
@@ -3627,48 +3627,48 @@ sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/j
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Apr 23 12:07:20 PDT 2010
 package=org.jbundle.app.program.*
-]]></Properties>
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="299">
-		<LastChanged>2011-01-15T09:35:04</LastChanged>
+		<LastChanged>2011-06-22T15:22:24</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export App program data</Name>
 		<ParentFolderID>296</ParentFolderID>
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:35:00 PST 2011
+		<Properties>#Field properties
+#Wed Jun 22 15:22:24 PDT 2011
 programSharedDBName=program_app
 package=org.jbundle.app.program.*
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 dbSuffix=_app
-]]></Properties>
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="300">
-		<LastChanged>2011-01-15T09:35:36</LastChanged>
+		<LastChanged>2011-06-22T15:22:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Test program data</Name>
 		<ParentFolderID>296</ParentFolderID>
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:35:25 PST 2011
+		<Properties>#Field properties
+#Wed Jun 22 15:22:34 PDT 2011
 programSharedDBName=program_test
 package=org.jbundle.app.program.*
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
 dbSuffix=_test
-]]></Properties>
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
@@ -3681,10 +3681,10 @@ dbSuffix=_test
 		<Sequence>200</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sat Jan 15 09:25:44 PST 2011
 sourceDir=/initial_data/current_initial_data
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -3703,59 +3703,58 @@ sourceDir=/initial_data/current_initial_data
 		<Destination/>
 	</Script>
 	<Script ID="303">
-		<LastChanged>2011-01-15T09:37:31</LastChanged>
+		<LastChanged>2011-06-22T15:23:17</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export all 'test' Data</Name>
 		<ParentFolderID>301</ParentFolderID>
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:37:27 PST 2011
+		<Properties>#Field properties
+#Wed Jun 22 15:23:17 PDT 2011
 programSharedDBName=program_test
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
-]]></Properties>
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="304">
-		<LastChanged>2010-04-23T13:40:58</LastChanged>
+		<LastChanged>2011-06-23T05:01:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export es test App Data</Name>
 		<ParentFolderID>301</ParentFolderID>
 		<Sequence>110</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Fri Apr 23 13:40:45 PDT 2010
+		<Properties>#Field properties
+#Thu Jun 23 05:01:26 PDT 2011
 locale=es
 programSharedDBName=program_test
 dbSuffix=_test
-project=jbundle-app-test
 language=es
-]]></Properties>
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="305">
-		<LastChanged>2011-01-15T09:37:48</LastChanged>
+		<LastChanged>2011-06-22T15:23:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export 'app' app data</Name>
 		<ParentFolderID>301</ParentFolderID>
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:37:46 PST 2011
+		<Properties>#Field properties
+#Wed Jun 22 15:23:29 PDT 2011
 programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
-]]></Properties>
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
@@ -3768,10 +3767,10 @@ sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/j
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 12:47:10 PST 2011
 package=com.tourapp.tour.*
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3784,10 +3783,10 @@ package=com.tourapp.tour.*
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Mar 10 13:04:55 PST 2011
 package=org.jbundle.main.*
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3800,54 +3799,29 @@ package=org.jbundle.main.*
 		<Sequence>210</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu May 06 14:25:52 PDT 2010
 locale=demo
 language=demo
-]]></Properties>
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
-	<Script ID="309">
-		<LastChanged>2011-01-15T09:30:13</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>Restore DEMO data</Name>
-		<ParentFolderID>256</ParentFolderID>
-		<Sequence>60</Sequence>
-		<Comment/>
-		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:30:07 PST 2011
-process=.base.thread.StandaloneProcessRunnerProcess
-remote=Jdbc
-language=demo
-mode=import
-standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
-sourceDir=/backup_data/app_backup_data
-local=Jdbc
-locale=demo
-sourcePrefix=/home/don/workspace/tourapp/tourapp-config/tourapp-config-data/src/main/webapp/com/tourapp/data
-table=Jdbc
-]]></Properties>
-		<Command>R</Command>
-		<Source/>
-		<Destination/>
-	</Script>
 	<Script ID="310">
-		<LastChanged>2010-05-20T21:39:58</LastChanged>
+		<LastChanged>2011-06-23T04:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Demo (quick) data</Name>
 		<ParentFolderID>301</ParentFolderID>
 		<Sequence>220</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu May 20 21:39:54 PDT 2010
 locale=demoquick
 language=demoquick
-]]></Properties>
-		<Command/>
+</Properties>
+		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>
@@ -3859,7 +3833,7 @@ language=demoquick
 		<Sequence>450</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 05 15:58:51 PDT 2010
 sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/
 converterPath=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/program/
@@ -3867,7 +3841,7 @@ destDir=flat/base
 listenerClass=.app.program.script.scan.XslImportScanListener
 process=.app.program.manual.convert.ConvertCode
 extension=xsl
-]]></Properties>
+</Properties>
 		<Command/>
 		<Source/>
 		<Destination/>
@@ -3880,10 +3854,10 @@ extension=xsl
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 05 15:59:56 PDT 2010
 sourceDir=ajax/base
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3896,10 +3870,10 @@ sourceDir=ajax/base
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 05 16:00:42 PDT 2010
 sourceDir=com/tourgeek
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3912,10 +3886,10 @@ sourceDir=com/tourgeek
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 19 13:13:11 PDT 2010
 sourceDir=com/tourapp
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3928,10 +3902,10 @@ sourceDir=com/tourapp
 		<Sequence>40</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 19 13:13:30 PDT 2010
 sourceDir=com/tourvisualizer
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3944,10 +3918,10 @@ sourceDir=com/tourvisualizer
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 19 13:13:50 PDT 2010
 sourceDir=com/tourapplication
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
@@ -3960,27 +3934,27 @@ sourceDir=com/tourapplication
 		<Sequence>60</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 19 13:14:11 PDT 2010
 sourceDir=com/tourmarketplace
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="318">
-		<LastChanged>2011-01-15T09:37:11</LastChanged>
+		<LastChanged>2011-06-22T15:23:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export '' main data</Name>
 		<ParentFolderID>301</ParentFolderID>
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
-#Sat Jan 15 09:37:08 PST 2011
+		<Properties>#Field properties
+#Wed Jun 22 15:23:10 PDT 2011
 package=org.jbundle.main.*
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-data/src/main/webapp/org/jbundle/data
-]]></Properties>
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+</Properties>
 		<Command>Z</Command>
 		<Source/>
 		<Destination/>
@@ -3993,7 +3967,7 @@ sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/j
 		<Sequence>600</Sequence>
 		<Comment/>
 		<Code/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Jan 18 15:25:58 PST 2011
 sourcePrefix=/home/don/workspace/jbundle-workspace/
 sourceDir=
@@ -4001,7 +3975,7 @@ destDir=/home/don/deleteme
 process=.app.program.manual.convert.ConvertCode
 listenerClass=org.jbundle.app.program.script.scan.DeleteMeScanListener
 extension=xml
-]]></Properties>
+</Properties>
 		<Command>R</Command>
 		<Source/>
 		<Destination/>

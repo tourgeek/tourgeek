@@ -2978,21 +2978,21 @@
 		<Params/>
 		<IconResource/>
 		<Keywords/>
-		<XmlData><![CDATA[<center><h2>Welcome to tourbean.com's download center</h2></center>
-<center>Where you can get some free Java software and an (optional) e-nuggie.<br/><hr/></center>
-<items columns=3>
-<td align=left valign=top>
-    <hr/>
-    <a href="<link/>">
-        <img src="<icon/>" ALT="<menutitle/>" width="24" height="24" border="0"  align="center"/>
-    </A>
-    <A HREF="<link/>">
-        <menutitle/>
-    </a>
-<br/><javalogo><img src="images/buttons/java.gif" width=16 height=15 border=0>&nbsp;</javalogo><span style="font-size: 10pt"><menudesc/></span>
-</td>
-</items>
-Thanks for visiting!]]></XmlData>
+		<XmlData>&lt;center&gt;&lt;h2&gt;Welcome to tourbean.com's download center&lt;/h2&gt;&lt;/center&gt;
+&lt;center&gt;Where you can get some free Java software and an (optional) e-nuggie.&lt;br/&gt;&lt;hr/&gt;&lt;/center&gt;
+&lt;items columns=3&gt;
+&lt;td align=left valign=top&gt;
+    &lt;hr/&gt;
+    &lt;a href="&lt;link/&gt;"&gt;
+        &lt;img src="&lt;icon/&gt;" ALT="&lt;menutitle/&gt;" width="24" height="24" border="0"  align="center"/&gt;
+    &lt;/A&gt;
+    &lt;A HREF="&lt;link/&gt;"&gt;
+        &lt;menutitle/&gt;
+    &lt;/a&gt;
+&lt;br/&gt;&lt;javalogo&gt;&lt;img src="images/buttons/java.gif" width=16 height=15 border=0&gt;&amp;nbsp;&lt;/javalogo&gt;&lt;span style="font-size: 10pt"&gt;&lt;menudesc/&gt;&lt;/span&gt;
+&lt;/td&gt;
+&lt;/items&gt;
+Thanks for visiting!</XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1184">
@@ -3263,23 +3263,23 @@ Thanks for visiting!]]></XmlData>
 		<Name>e-nuggie</Name>
 		<ParentFolderID>1,183</ParentFolderID>
 		<Sequence>35</Sequence>
-		<Comment><![CDATA[<html>
+		<Comment>&lt;html&gt;
   
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-</head>
+&lt;head&gt;
+&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;
+&lt;/head&gt;
 
   
-<body>
-    Be sure to follow the on screen instructions carefully.<br>
+&lt;body&gt;
+    Be sure to follow the on screen instructions carefully.&lt;br&gt;
     
-<b><i>Use at your own risk!</i></b>
-<br>
+&lt;b&gt;&lt;i&gt;Use at your own risk!&lt;/i&gt;&lt;/b&gt;
+&lt;br&gt;
     (125K)
-  </body>
+  &lt;/body&gt;
 
-</html>
-]]></Comment>
+&lt;/html&gt;
+</Comment>
 		<Code/>
 		<Type>link</Type>
 		<AutoDesc>Y</AutoDesc>
@@ -4459,25 +4459,25 @@ Thanks for visiting!]]></XmlData>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
-		<XmlData><![CDATA[<html>
-<span style="font-size: 20pt"><center>Welcome to Don and Ann's Home Page</center></span>
-<items columns="3">
-<td align="left" valign="top">
-    <hr>
-    <a href="<link/>">
-        <img src="<icon/>" ALT="<menutitle/>" width="24" height="24" border="0">
-    </A>
-    <A HREF="<link/>">
-        <menutitle/>
-    </a>
-<br><javalogo><img src="images/buttons/java.gif" width="16" height="16" border="0">&nbsp;</javalogo><span style="font-size: 10pt"><menudesc/></span>
-</td>
-</items>
-<hr>
-<table align="center"><tr><td>
-<span style="font-size: 10pt"><center></center></span>
-</td></tr></table>
-</html>]]></XmlData>
+		<XmlData>&lt;html&gt;
+&lt;span style="font-size: 20pt"&gt;&lt;center&gt;Welcome to Don and Ann's Home Page&lt;/center&gt;&lt;/span&gt;
+&lt;items columns="3"&gt;
+&lt;td align="left" valign="top"&gt;
+    &lt;hr&gt;
+    &lt;a href="&lt;link/&gt;"&gt;
+        &lt;img src="&lt;icon/&gt;" ALT="&lt;menutitle/&gt;" width="24" height="24" border="0"&gt;
+    &lt;/A&gt;
+    &lt;A HREF="&lt;link/&gt;"&gt;
+        &lt;menutitle/&gt;
+    &lt;/a&gt;
+&lt;br&gt;&lt;javalogo&gt;&lt;img src="images/buttons/java.gif" width="16" height="16" border="0"&gt;&amp;nbsp;&lt;/javalogo&gt;&lt;span style="font-size: 10pt"&gt;&lt;menudesc/&gt;&lt;/span&gt;
+&lt;/td&gt;
+&lt;/items&gt;
+&lt;hr&gt;
+&lt;table align="center"&gt;&lt;tr&gt;&lt;td&gt;
+&lt;span style="font-size: 10pt"&gt;&lt;center&gt;&lt;/center&gt;&lt;/span&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/html&gt;</XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1332">
@@ -8182,7 +8182,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1600">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-04-29T03:56:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Parts</Name>
 		<ParentFolderID>1,598</ParentFolderID>
@@ -8191,7 +8191,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.program.packages.db.Part</Program>
+		<Program>org.jbundle.app.program.packages.db.Part</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8199,7 +8199,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1601">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-04-29T03:55:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Packages</Name>
 		<ParentFolderID>1,598</ParentFolderID>
@@ -8208,7 +8208,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.program.packages.db.Packages</Program>
+		<Program>org.jbundle.app.program.packages.db.Packages</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8216,7 +8216,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1602">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-04-29T03:56:18</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Jnlp header</Name>
 		<ParentFolderID>1,598</ParentFolderID>
@@ -8225,7 +8225,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.program.packages.db.JnlpFile</Program>
+		<Program>org.jbundle.app.program.packages.db.JnlpFile</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8250,7 +8250,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1604">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-04-29T03:56:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Packages Report</Name>
 		<ParentFolderID>1,598</ParentFolderID>
@@ -8259,7 +8259,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.program.packages.screen.PackagesReport</Program>
+		<Program>org.jbundle.app.program.packages.screen.PackagesReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -9073,23 +9073,6 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>
-	<Menus ID="1659">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>Applications</Name>
-		<ParentFolderID>1,658</ParentFolderID>
-		<Sequence>10</Sequence>
-		<Comment/>
-		<Code/>
-		<Type>menu</Type>
-		<AutoDesc>Y</AutoDesc>
-		<Program>subchatmenu</Program>
-		<Params/>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
 	<Menus ID="1660">
 		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
@@ -9524,7 +9507,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1693">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-05-02T09:59:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Program control</Name>
 		<ParentFolderID>1,185</ParentFolderID>
@@ -9533,7 +9516,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.program.db.ProgramControl</Program>
+		<Program>org.jbundle.app.program.db.ProgramControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -11116,7 +11099,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1834">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-04-30T14:57:18</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Class projects</Name>
 		<ParentFolderID>1,185</ParentFolderID>
@@ -11125,7 +11108,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.program.db.ClassProject</Program>
+		<Program>org.jbundle.app.program.db.ClassProject</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -11274,23 +11257,6 @@ System highlights and the full user's manual.
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>com.tourapp.tour.booking.detail.db.BookingLand</Program>
-		<Params/>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1857">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>new menu #2</Name>
-		<ParentFolderID>1,856</ParentFolderID>
-		<Sequence>30</Sequence>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc>Y</AutoDesc>
-		<Program/>
 		<Params/>
 		<IconResource/>
 		<Keywords/>

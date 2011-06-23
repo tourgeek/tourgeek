@@ -14,8 +14,8 @@
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2010-01-16</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2010-02-16</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -58,8 +58,8 @@
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -102,8 +102,8 @@
 		<Fax>(312) 443-1321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -146,8 +146,8 @@
 		<Fax>(312) 123-3211</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -190,8 +190,8 @@
 		<Fax>01185211212331</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -224,8 +224,8 @@
 		<Deleted>N</Deleted>
 		<Code>FOEX01</Code>
 		<VendorName>Foreign Exchange Corporation</VendorName>
-		<AddressLine1><![CDATA[1234 Wilshire Blvd
-Suite 1243]]></AddressLine1>
+		<AddressLine1>1234 Wilshire Blvd
+Suite 1243</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Los Angeles</CityOrTown>
 		<StateOrRegion>CA</StateOrRegion>
@@ -235,8 +235,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>(213) 245-4321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-06-17</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-07-17</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -279,8 +279,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>01185212132121</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -323,8 +323,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>011812828211</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2010-07-01</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2010-08-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -353,7 +353,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="37">
-		<LastChanged>2010-04-02T16:01:11</LastChanged>
+		<LastChanged>2011-03-10T16:11:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JAHO01</Code>
 		<VendorName>The Japanese Hotel Chain</VendorName>
@@ -367,8 +367,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>01185212112321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>http://www.tourgeek.com</Web>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2010-07-01</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2011-04-10</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -382,11 +382,11 @@ Suite 1243]]></AddressLine1>
 		<MessageTransportID>11</MessageTransportID>
 		<MessageServer/>
 		<WSDLPath/>
-		<Properties><![CDATA[#Field properties
-#Sun Nov 01 07:03:04 PST 2009
-destinationMessage=http\://www.tourgeek.com/ws
+		<Properties>#Field properties
+#Thu Mar 10 16:11:49 PST 2011
+destinationMessage=http\://www.tourgeek.com\:8080/ws
 wsdlPath=http\://www.tourgeek.com/wsdl
-]]></Properties>
+</Properties>
 		<VendorStatusID/>
 		<PaymentCycleID/>
 		<PaymentCodeID>1</PaymentCodeID>
@@ -415,8 +415,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>01185221234321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -459,8 +459,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>012132132312</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -503,8 +503,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>01185283828211</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2010-04-02</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2010-05-02</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -547,8 +547,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>01129239132312</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2010-07-01</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2010-08-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -591,8 +591,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>(818) 555-2121</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1970-08-28</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>1970-09-28</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -635,8 +635,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>22-223-224</Fax>
 		<Email>jim@hkcar.co.hk</Email>
 		<Web/>
-		<DateEntered>2003-06-09</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>2003-07-09</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -679,8 +679,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>334-344433</Fax>
 		<Email>res@chinacruise.co.ch</Email>
 		<Web/>
-		<DateEntered>2003-06-09</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>2003-07-09</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -723,8 +723,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>223-232-3443</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>2003-06-09</DateEntered>
-		<DateChanged>2009-06-17</DateChanged>
+		<DateEntered>2003-07-09</DateEntered>
+		<DateChanged>2009-07-17</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -767,8 +767,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>2003-06-10</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>2003-07-10</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -811,8 +811,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>2003-06-11</DateEntered>
-		<DateChanged>2009-08-04</DateChanged>
+		<DateEntered>2003-07-11</DateEntered>
+		<DateChanged>2009-09-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -855,8 +855,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>info@sheraton.com</Email>
 		<Web>www.sheraton.com</Web>
-		<DateEntered>2008-11-13</DateEntered>
-		<DateChanged>2009-06-17</DateChanged>
+		<DateEntered>2008-12-13</DateEntered>
+		<DateChanged>2009-07-17</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -899,8 +899,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>www.marriott.com</Web>
-		<DateEntered>2008-11-13</DateEntered>
-		<DateChanged>2010-07-01</DateChanged>
+		<DateEntered>2008-12-13</DateEntered>
+		<DateChanged>2010-08-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -943,8 +943,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>212-443-2322</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>http://www.xanadu.com</Web>
-		<DateEntered>2009-06-02</DateEntered>
-		<DateChanged>2010-07-01</DateChanged>
+		<DateEntered>2009-07-02</DateEntered>
+		<DateChanged>2010-08-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -958,11 +958,11 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<MessageTransportID/>
 		<MessageServer/>
 		<WSDLPath/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Nov 01 07:09:31 PST 2009
 destinationMessage=http\://www.tourgeek.com/xmlws
-wsdlPath=http\://www.tourgeek.com/tourapp/wsdl?wsdlversion\=1.1&version\=2004B
-]]></Properties>
+wsdlPath=http\://www.tourgeek.com/tourapp/wsdl?wsdlversion\=1.1&amp;version\=2004B
+</Properties>
 		<VendorStatusID>1</VendorStatusID>
 		<PaymentCycleID>1</PaymentCycleID>
 		<PaymentCodeID>1</PaymentCodeID>

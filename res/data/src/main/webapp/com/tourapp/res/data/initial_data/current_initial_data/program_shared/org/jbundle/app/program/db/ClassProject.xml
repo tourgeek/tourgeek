@@ -380,17 +380,17 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048594">
-		<LastChanged>2011-03-10T07:24:10</LastChanged>
+		<LastChanged>2011-03-13T11:46:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>jaxb</Name>
-		<ParentFolderID>1,048,592</ParentFolderID>
+		<Name>jaxb obsolete</Name>
+		<ParentFolderID>1,048,600</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
 		<Description/>
 		<SystemClasses/>
-		<PackageName>.jaxb</PackageName>
-		<ProjectPath/>
+		<PackageName>.tour.message.jaxb</PackageName>
+		<ProjectPath>tour/message/jaxb</ProjectPath>
 		<ThinPackage>.jaxb</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>.jaxb</ResourcePackage>
@@ -400,17 +400,17 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048595">
-		<LastChanged>2011-03-10T07:24:12</LastChanged>
+		<LastChanged>2011-03-13T11:46:23</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>xmlbeans</Name>
-		<ParentFolderID>1,048,592</ParentFolderID>
+		<Name>xmlbeans obsolete</Name>
+		<ParentFolderID>1,048,600</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
 		<Description>xmlbeans messaging</Description>
 		<SystemClasses/>
-		<PackageName>.xmlbeans</PackageName>
-		<ProjectPath/>
+		<PackageName>.tour.message.xmlbeans</PackageName>
+		<ProjectPath>tour/message/xmlbeans</ProjectPath>
 		<ThinPackage>.xmlbeans</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>.xmlbeans</ResourcePackage>
@@ -491,6 +491,86 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath>process</ProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048600">
+		<LastChanged>2011-03-13T11:39:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>tourapp obsolete</Name>
+		<ParentFolderID>16,777,310</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Obsolete tourapp code</Description>
+		<SystemClasses/>
+		<PackageName>com.tourapp</PackageName>
+		<ProjectPath>tourapp</ProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048601">
+		<LastChanged>2011-04-30T15:06:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>other</Name>
+		<ParentFolderID>16,777,256</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Other code (not generated)</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048602">
+		<LastChanged>2011-04-30T15:07:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>remote</Name>
+		<ParentFolderID>16,777,256</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Remote code (not generated)</Description>
+		<SystemClasses/>
+		<PackageName>.remote</PackageName>
+		<ProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048603">
+		<LastChanged>2011-04-30T15:07:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>util</Name>
+		<ParentFolderID>16,777,256</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Util code (not generated)</Description>
+		<SystemClasses/>
+		<PackageName>.util</PackageName>
+		<ProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>

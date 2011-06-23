@@ -6,8 +6,8 @@
 		<FileDesc>General Ledger Chart of Accounts file</FileDesc>
 		<FileMainFilename>Account</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[NOTE: May want to add key for account name for later
-]]></FileNotes>
+		<FileNotes>NOTE: May want to add key for account name for later
+</FileNotes>
 		<DatabaseName>genled</DatabaseName>
 		<FileRecCalled>Chart of accounts</FileRecCalled>
 		<DisplayClass>AccountGridScreen</DisplayClass>
@@ -59,9 +59,9 @@
 		<FileDesc>General Journal file - G/L detail</FileDesc>
 		<FileMainFilename>AcctDetail</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[Note: May want to add system code, so the transaction can be tracked
+		<FileNotes>Note: May want to add system code, so the transaction can be tracked
 back to the originating system.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>genled</DatabaseName>
 		<FileRecCalled>G/L transactions</FileRecCalled>
 		<DisplayClass/>
@@ -152,7 +152,7 @@ back to the originating system.
 		<FileDesc>Accounts Payable Open Item File</FileDesc>
 		<FileMainFilename>ApTrx</FileMainFilename>
 		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes><![CDATA[FILE DESCRIPTION:
+		<FileNotes>FILE DESCRIPTION:
 
 This file is used for Tour order/Voucher control and A/P detail.
 (A tour order should become the basis of an A/P detail)
@@ -200,33 +200,33 @@ AP_GL_STATUS - G/L or Vchr stat - What type of U/D needs to be done next
 10 REQ_REPRT - Request the voucher be re-printed
   (Set if orig. already printed)
 11 MAN_FINL - Manually entered finalization estimate
-12 DEP_TYPE - Departure estimate update --> 12
-(BK_TOUR)(BK_TOUR)Cost of Tours Sold 100.00 (AP_DEP_EST_USD->GL)
-  (CNTRL->AP_EST_GL)Uninvoiced Tour Cost 100.00
-13 IN_TYPE - Invoice update --> 16
+12 DEP_TYPE - Departure estimate update --&gt; 12
+(BK_TOUR)(BK_TOUR)Cost of Tours Sold 100.00 (AP_DEP_EST_USD-&gt;GL)
+  (CNTRL-&gt;AP_EST_GL)Uninvoiced Tour Cost 100.00
+13 IN_TYPE - Invoice update --&gt; 16
 (INV_ENT)(AP_EST_GL)Uninvoiced Tour Cost 100.00  (AP_DEP_EST_GL)
-  (CNTRL->OVER_UNDER)Over/Under estimate   1.00
-  (CNTRL->AP_ACCT)Accounts Payable   101.00  (INV_AMT->GL)
-14 CM_TYPE - Credit Memo update --> 16
-(INV_ENT)(AP_EST_GL)Printing Expense?? 200.00  (AP_DEP_EST_USD->GL)
-  (CNTL->AP_ACCT)Accounts Payable 200.00 (INV_AMT->GL)
-15  PU_TYPE - Prepayment Paid Update -->
-(CK_DATE)(CNTL->AP_ACCT)Prepayment  150.00 (INV_AMT->INV_GL)
-  (AP_HIST>AD_ACCT)Cash   150.00 (HIST_AMT
-16  DM_TYPE - Debit Memo update -->
-(CK_DATE)(CNTL->AP_ACCT)Prepayment  170.00 (INV_AMT->INV_GL)
+  (CNTRL-&gt;OVER_UNDER)Over/Under estimate   1.00
+  (CNTRL-&gt;AP_ACCT)Accounts Payable   101.00  (INV_AMT-&gt;GL)
+14 CM_TYPE - Credit Memo update --&gt; 16
+(INV_ENT)(AP_EST_GL)Printing Expense?? 200.00  (AP_DEP_EST_USD-&gt;GL)
+  (CNTL-&gt;AP_ACCT)Accounts Payable 200.00 (INV_AMT-&gt;GL)
+15  PU_TYPE - Prepayment Paid Update --&gt;
+(CK_DATE)(CNTL-&gt;AP_ACCT)Prepayment  150.00 (INV_AMT-&gt;INV_GL)
+  (AP_HIST&gt;AD_ACCT)Cash   150.00 (HIST_AMT
+16  DM_TYPE - Debit Memo update --&gt;
+(CK_DATE)(CNTL-&gt;AP_ACCT)Prepayment  170.00 (INV_AMT-&gt;INV_GL)
    Advertising expense 170.00
-17 PA_TYPE - Payment Applied Update --> 6 or 0 (if bal = 0)
-(CK_DATE->PYMT_DATE)(AP_ACCT)Accounts Payable 100.00 (INV_GL)
- (CNTL->GAIN_LOSS)Gain/Loss on curr.  10.00 (->GAIN/LOSS G/L)
-  (AP_HIST>AD_ACCT)Cash  110.00 (AP_HIST_AMT)
+17 PA_TYPE - Payment Applied Update --&gt; 6 or 0 (if bal = 0)
+(CK_DATE-&gt;PYMT_DATE)(AP_ACCT)Accounts Payable 100.00 (INV_GL)
+ (CNTL-&gt;GAIN_LOSS)Gain/Loss on curr.  10.00 (-&gt;GAIN/LOSS G/L)
+  (AP_HIST&gt;AD_ACCT)Cash  110.00 (AP_HIST_AMT)
 
 Note: No G/L entries are required for broker payments, as long as the
  cash account numbers are transfered to the invoices at the
  time of payment.
 
 NOTE: GET RID OF AP_OPEN_VENDOR IN KEY #6
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>acctpay</DatabaseName>
 		<FileRecCalled>A/P Open Item</FileRecCalled>
 		<DisplayClass/>
@@ -252,7 +252,7 @@ NOTE: GET RID OF AP_OPEN_VENDOR IN KEY #6
 		<FileDesc>Accounts Receivable Open Item file</FileDesc>
 		<FileMainFilename>ArTrx</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[The A/R open item file is not used until the booking is accepted by
+		<FileNotes>The A/R open item file is not used until the booking is accepted by
 the customer. Acceptance is defined as changing the booking status to
 "OK" or receiving the first payment.
 
@@ -274,7 +274,7 @@ AR_POSTED: G/L Posting status
   ACTION DATE is the transaction date
  1 - Request refund (also not posted yet)
   ACTION DATE is the trx date
- 2 - Post the Departure update (Type "I & A" only)
+ 2 - Post the Departure update (Type "I &amp; A" only)
   ACTION DATE is the departure date
  3 - Posted, no more action is required
   ACTION DATE is the transaction date
@@ -298,14 +298,14 @@ AR_ACCT is the Accounts Receivable account. If the amount is positive,
  the amount is a Debit on the booking date, negative is credit.
 AR_ACCT_BK is the counter - A/R account posted on the booking date.
 AR_ACCT_DR is the counter - BK account posted on the departure date.
-  (Type I & A only)
+  (Type I &amp; A only)
 AR_ACTION - Next trx or departure date
 
 Warning: These account numbers are supplied by the A/R G/L posting
  program at posting time. Do not supply an account number unless
  you want to override the information in the booking's tour
  header.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>acctrec</DatabaseName>
 		<FileRecCalled>Open Item</FileRecCalled>
 		<DisplayClass>CrDrGridScreen</DisplayClass>
@@ -396,12 +396,12 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<FileDesc>Checking account transactions</FileDesc>
 		<FileMainFilename>BankTrx</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[Might want to enter date/time for transaction number for non checks.
+		<FileNotes>Might want to enter date/time for transaction number for non checks.
 
 Types: C - Checks
  D - Deposit
 
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>assetdr</DatabaseName>
 		<FileRecCalled>Transaction</FileRecCalled>
 		<DisplayClass>BankTrxBatchGridScreen</DisplayClass>
@@ -479,7 +479,7 @@ Types: C - Checks
 		<FileDesc>Booking Header file</FileDesc>
 		<FileMainFilename>Booking</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[The booking status is as follows:
+		<FileNotes>The booking status is as follows:
  OK - OK booking - Pax have accepted, money request(ed)
  XL - Booking canceled
  RQ - Awaiting Confirmation of services (tour has same status)
@@ -601,7 +601,7 @@ has the previous data.
 
 Remember, for a first-time booking the NEXT_MOD number is 0. All
 current logic will create the correct files with this MOD.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Booking</FileRecCalled>
 		<DisplayClass>BookingGridScreen</DisplayClass>
@@ -653,7 +653,7 @@ current logic will create the correct files with this MOD.
 		<FileDesc>Booking system control file</FileDesc>
 		<FileMainFilename>BookingControl</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[FILE DESCRIPTION:
+		<FileNotes>FILE DESCRIPTION:
 
 This is the control file for the booking system.
 
@@ -663,7 +663,7 @@ Add:
  Use: Mail/Fax/cable/Telex
  Cut off days to use: Telex/Fax
  (This info might be added to the vendor file)
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Control</FileRecCalled>
 		<DisplayClass/>
@@ -689,7 +689,7 @@ Add:
 		<FileDesc>Hotel Detail file (Booking detail)</FileDesc>
 		<FileMainFilename>BookingDetail</FileMainFilename>
 		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes><![CDATA[The field HDET_VOUCHER is not really required. It is only there
+		<FileNotes>The field HDET_VOUCHER is not really required. It is only there
 to speed up the voucher revising program (BK_V_HOTEL). Instead of
 having to read through all the A/P detail to see if an A/P detail
 exists for this land, all you have to do is read the A/P detail.
@@ -697,7 +697,7 @@ exists for this land, all you have to do is read the A/P detail.
 Next time, add a local room and meal cost field:
 Then make the USD fields Non-existent in the record.
 This makes the A/P estimate program much easier!
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Hotel</FileRecCalled>
 		<DisplayClass>BookingHotelGridScreen</DisplayClass>
@@ -723,7 +723,7 @@ This makes the A/P estimate program much easier!
 		<FileDesc>Booking line item file</FileDesc>
 		<FileMainFilename>BookingLine</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[The "Manual" field is here if the booking is modified. If it is
+		<FileNotes>The "Manual" field is here if the booking is modified. If it is
 modified, everything but the manual fields will be deleted (mod) and
 the new line items will be added.
 
@@ -734,7 +734,7 @@ for manually entered fields:
  (A)gent item (not included in A/P)
 
 FULLY_COMMABLE is only for manually entered fields.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Line item</FileRecCalled>
 		<DisplayClass>BookingLineGridScreen</DisplayClass>
@@ -773,7 +773,7 @@ FULLY_COMMABLE is only for manually entered fields.
 		<FileDesc>Passenger detail file</FileDesc>
 		<FileMainFilename>BookingPax</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[The rooming code is coded as follows:
+		<FileNotes>The rooming code is coded as follows:
  0 - Twin or triple extra passenger (must be in sequence)
  1 - Single passenger
   (If share seq = 0, single)
@@ -792,7 +792,7 @@ Need to add more types for operations:
 - Twin/Double
 - Child share
 - Other pax types (non-skiers)
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Passenger</FileRecCalled>
 		<DisplayClass>BookingPaxGridScreen</DisplayClass>
@@ -1130,7 +1130,7 @@ Need to add more types for operations:
 		<FileDesc>Employee control file</FileDesc>
 		<FileMainFilename>EmployeeControl</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[Later, information should be added to this file so that periodic
+		<FileNotes>Later, information should be added to this file so that periodic
 payments of employee taxes can be made automatically. The checks
 could automatically be queued to the A/P system to be printed payable
 to the proper payee.
@@ -1142,7 +1142,7 @@ Add:
  SDI
  FUTA
  SUI
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>payroll</DatabaseName>
 		<FileRecCalled>Control</FileRecCalled>
 		<DisplayClass>EmployeeControlScreen</DisplayClass>
@@ -1259,9 +1259,9 @@ Add:
 		<FileDesc>Hotel file</FileDesc>
 		<FileMainFilename>Hotel</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[Note: This information does NOT change from year-to-year. This is
+		<FileNotes>Note: This information does NOT change from year-to-year. This is
 the hotel information header.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Hotel</FileRecCalled>
 		<DisplayClass>HotelGridScreen</DisplayClass>
@@ -1313,7 +1313,7 @@ the hotel information header.
 		<FileDesc>Hotel Detail Pricing File</FileDesc>
 		<FileMainFilename>HotelPricing</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[FILE DESCRIPTION:
+		<FileNotes>FILE DESCRIPTION:
 
 This file holds the pricing information of the hotel file.
 
@@ -1321,7 +1321,7 @@ The USE_RATE_TYPE and USE_CLASS fields are used when a rate type
 doesn't apply. For example, for rate type "B" (Blocked room), the
 USE rate type would probally by "F"/"R" (FIT/Run of the house).
 Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Room Rate</FileRecCalled>
 		<DisplayClass>HotelPricingGridScreen</DisplayClass>
@@ -1360,8 +1360,8 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<FileDesc>Inventory Detail File</FileDesc>
 		<FileMainFilename>Inventory</FileMainFilename>
 		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes><![CDATA[This file is used for; Tours, Hotels, Land, Transportation, and Air.
-]]></FileNotes>
+		<FileNotes>This file is used for; Tours, Hotels, Land, Transportation, and Air.
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled/>
 		<DisplayClass/>
@@ -1465,7 +1465,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<FileDesc>MCO Detail &amp; Transaction file</FileDesc>
 		<FileMainFilename>Mco</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[The MCO status codes are as follows:
+		<FileNotes>The MCO status codes are as follows:
 
 1 - Entered
 2 - Posted
@@ -1482,7 +1482,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 - On MCO submission to carriers, this account is updated with the
   MCO receivable account, so when the actual amount is received the
   variance can be properly distributed.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>acctrec</DatabaseName>
 		<FileRecCalled>MCO</FileRecCalled>
 		<DisplayClass>McoGridScreen</DisplayClass>
@@ -1573,7 +1573,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<FileDesc>Accounts Payable Payment History file</FileDesc>
 		<FileMainFilename>PaymentHistory</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[FIELD DESCRIPTIONS:
+		<FileNotes>FIELD DESCRIPTIONS:
 
 AP_HIST_TYPE - Type of payment
  A - Check
@@ -1594,7 +1594,7 @@ AP_HIST_APPL_GL - Amount this payment reduced the AP_VEN_INV_USD
  rounding on payments. ie., a dep est of HKD300 is estimated
  at USD100. three payments of HKD100 would be re-created at
  reductions of USD33.33 each)
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>acctpay</DatabaseName>
 		<FileRecCalled>Payment History</FileRecCalled>
 		<DisplayClass>PaymentHistoryGridScreen</DisplayClass>
@@ -1620,10 +1620,10 @@ AP_HIST_APPL_GL - Amount this payment reduced the AP_VEN_INV_USD
 		<FileDesc>Payroll history file</FileDesc>
 		<FileMainFilename>PayrollHistory</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[This file should also have the codes, amounts, (and G/L numbers) of
+		<FileNotes>This file should also have the codes, amounts, (and G/L numbers) of
 any special deductions, so when a check is voided, the G/L entry can 
 be reversed and the YTD, etc. amounts can be adjusted down.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>payroll</DatabaseName>
 		<FileRecCalled/>
 		<DisplayClass/>
@@ -2052,13 +2052,13 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<FileDesc>Ticket detail line</FileDesc>
 		<FileMainFilename>BookingDetail</FileMainFilename>
 		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes><![CDATA[Note:
+		<FileNotes>Note:
 The key ends in a sequence number rather than the time because
 the next sequential flight may not be in order because of the
 international date line.
 
 This can be fixed by reading the GMT offset from the city file.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Ticket detail</FileRecCalled>
 		<DisplayClass>BookingAirGridScreen</DisplayClass>
@@ -2071,7 +2071,7 @@ This can be fixed by reading the GMT offset from the city file.
 		<FileDesc>Ticket Header/Booking-Tour ticket detail</FileDesc>
 		<FileMainFilename/>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[There can be more than one TK_HEADER for a booking. A different ticket
+		<FileNotes>There can be more than one TK_HEADER for a booking. A different ticket
 for each passenger.
 The TK_ALT_SEQ number is used for the passenger seq. no. The TK_ANSW_SEQ
 field is reserved for multiple tickets for one passenger.
@@ -2125,7 +2125,7 @@ Update Issue date = date
 Override update:
 Read through all where status = TICK_TK or ALL_TK and Override received
 Update Override received = date
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Ticket</FileRecCalled>
 		<DisplayClass>BookingAirHeaderGridScreen</DisplayClass>
@@ -2151,7 +2151,7 @@ Update Override received = date
 		<FileDesc>Payroll Time transaction file</FileDesc>
 		<FileMainFilename/>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[On the next revision add:
+		<FileNotes>On the next revision add:
  PR_CHECK_DATE - Actual Date of the check (Usually no per. end)
  WEEKS_WORKED - Calculate the weeks worked for state report
 
@@ -2167,13 +2167,13 @@ PAY PD END DATE
 TRANSACTION AMOUNT +/-
 
 Need a simple way to allow the user the option of automatically sending
-regulay, overtime, vacation, holiday, sick, special 1 & 2, other pay,
+regulay, overtime, vacation, holiday, sick, special 1 &amp; 2, other pay,
 taxes, deductions, and net pay to the correct G/L accounts.
 
 Maybe a G/L number for all of these should be set up in the department
 file--If not, the department file should be deleted, it serves no
 purpose!
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>payroll</DatabaseName>
 		<FileRecCalled>Transaction</FileRecCalled>
 		<DisplayClass>TimeTrxGridScreen</DisplayClass>
@@ -2186,7 +2186,7 @@ purpose!
 		<FileDesc>Tour file</FileDesc>
 		<FileMainFilename>Tour</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[FILE DESCRIPTION:
+		<FileNotes>FILE DESCRIPTION:
 
 Every tour has an entry here. The tour file is the basis for everything
 having to do with the tour side of the booking (Vouchers, A/P control,
@@ -2212,7 +2212,7 @@ ACTION_TYPE - This type matches the DOC_PRINT_ON field in the
 
 CHANGES: Change HDR Wait to an I/2 field: default to the actual number
 of acknowledgement days.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Tour</FileRecCalled>
 		<DisplayClass>TourGridScreen</DisplayClass>
@@ -2251,7 +2251,7 @@ of acknowledgement days.
 		<FileDesc>Tour Header File</FileDesc>
 		<FileMainFilename>TourHeader</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[The tour header file is used for different purposes. It all depends
+		<FileNotes>The tour header file is used for different purposes. It all depends
 what kind of tour it is used with.
 
 Scheduled tours - The Tour Header file is not automatically copied over
@@ -2307,7 +2307,7 @@ FIELD DESCRIPTIONS:
  HDR_SP1_DAYS - Days before departure date to print all
   special 1 documents (ie., maybe tour recaps)
  HDR_SP2_DAYS - Another days field
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Tour header</FileRecCalled>
 		<DisplayClass>TourProductGridScreen</DisplayClass>
@@ -2372,7 +2372,7 @@ FIELD DESCRIPTIONS:
 		<FileDesc>Tour Pricing Detail File</FileDesc>
 		<FileMainFilename/>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes><![CDATA[FILE DESCRIPTION:
+		<FileNotes>FILE DESCRIPTION:
 
 This file is used to store the pricing for all types of tours.
 It also stores the Changes to the header pricing for all alternates
@@ -2388,7 +2388,7 @@ The PRICE_SEQ number must be unique within a Header or ALT/OPT. This
 will insure that the sequence number in the line items will be unique
 if a modification to the Header is encountered and the header line item
 has to be deleted.
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Tour pricing</FileRecCalled>
 		<DisplayClass>TourHeaderLineGridScreen</DisplayClass>
@@ -2518,13 +2518,13 @@ has to be deleted.
 		<FileDesc>A/P Vendor file</FileDesc>
 		<FileMainFilename>Vendor</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes><![CDATA[It would be nice to add this stuff later:
+		<FileNotes>It would be nice to add this stuff later:
 Send Mail Via: Telex/Phone/Mail
 Our Customer number in their computer:
 EFT Account number
 Computer Mail Phone Number:
 Need Social Security Number for 1099 printing
-]]></FileNotes>
+</FileNotes>
 		<DatabaseName>acctpay</DatabaseName>
 		<FileRecCalled>Vendor</FileRecCalled>
 		<DisplayClass>VendorGridScreen</DisplayClass>

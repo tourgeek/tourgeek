@@ -1317,9 +1317,9 @@
 		<Language/>
 		<Locale/>
 		<KeyValue>ItinDesc</KeyValue>
-		<ObjectValue><![CDATA[<html><body><center><font color="blue">Tourapp</font>.<br>
+		<ObjectValue>&lt;html&gt;&lt;body&gt;&lt;center&gt;&lt;font color="blue"&gt;Tourapp&lt;/font&gt;.&lt;br&gt;
 No current itinerary.
-</center></body></html>]]></ObjectValue>
+&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</ObjectValue>
 	</Registration>
 	<Registration ID="329">
 		<LastChanged>2009-09-23T03:10:16</LastChanged>

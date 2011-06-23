@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<TestSecond ID="1">
+		<LastChanged>2009-11-21T23:35:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>A</Code>
+		<Description>Record A Uno</Description>
+		<Icon/>
+	</TestSecond>
+	<TestSecond ID="3">
+		<LastChanged>2009-11-21T23:35:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Code>C</Code>
+		<Description>Record C Tres</Description>
+		<Icon/>
+	</TestSecond>
+</file>

@@ -32042,9 +32042,9 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue><![CDATA["<html><body><center><br/>"
+		<ClassFieldInitialValue>"&lt;html&gt;&lt;body&gt;&lt;center&gt;&lt;br/&gt;"
             + "No current itinerary."
-            + "</center></body></html>"]]></ClassFieldInitialValue>
+            + "&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;"</ClassFieldInitialValue>
 		<ThinInclude/>
 		<ThickInclude>Y</ThickInclude>
 		<ClassFieldsType>N</ClassFieldsType>
@@ -32060,9 +32060,9 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue><![CDATA["<html><head></head><body><center><br/>"
+		<ClassFieldInitialValue>"&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;center&gt;&lt;br/&gt;"
                 + "Please wait... loading itinerary"
-                + "</center></body></html>"]]></ClassFieldInitialValue>
+                + "&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;"</ClassFieldInitialValue>
 		<ThinInclude/>
 		<ThickInclude>Y</ThickInclude>
 		<ClassFieldsType>N</ClassFieldsType>
@@ -32318,7 +32318,7 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue><![CDATA[new Hashtable<String,Color>();
+		<ClassFieldInitialValue>new Hashtable&lt;String,Color&gt;();
 static  {
     m_htcolorHighlight.put(ProductType.AIR, new Color(255, 192, 192));
     m_htcolorHighlight.put(ProductType.HOTEL, new Color(192, 192, 255));
@@ -32328,7 +32328,7 @@ static  {
     m_htcolorHighlight.put(ProductType.TRANSPORTATION, new Color(192, 192, 192));
     m_htcolorHighlight.put(ProductType.TOUR, new Color(255, 255, 255));
     m_htcolorHighlight.put(ProductType.ITEM, new Color(224, 224, 224));
-}]]></ClassFieldInitialValue>
+}</ClassFieldInitialValue>
 		<ThinInclude/>
 		<ThickInclude>Y</ThickInclude>
 		<ClassFieldsType>N</ClassFieldsType>
@@ -44942,11 +44942,11 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="3751">
-		<LastChanged>2010-04-09T22:17:17</LastChanged>
+		<LastChanged>2011-03-13T09:36:17</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>net.sourceforge.ota_tools.jaxb.ota2010a.codetable</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.codetable</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59760,7 +59760,7 @@ static  {
 	<ClassFields ID="5071">
 		<LastChanged>2010-03-20T02:58:08</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59776,7 +59776,7 @@ static  {
 	<ClassFields ID="5072">
 		<LastChanged>2011-03-10T07:56:49</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59792,7 +59792,7 @@ static  {
 	<ClassFields ID="5073">
 		<LastChanged>2011-03-10T07:56:52</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59808,7 +59808,7 @@ static  {
 	<ClassFields ID="5074">
 		<LastChanged>2010-03-20T03:02:22</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59824,7 +59824,7 @@ static  {
 	<ClassFields ID="5075">
 		<LastChanged>2010-03-20T03:03:50</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59840,7 +59840,7 @@ static  {
 	<ClassFields ID="5076">
 		<LastChanged>2011-03-10T07:40:31</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59856,7 +59856,7 @@ static  {
 	<ClassFields ID="5077">
 		<LastChanged>2011-03-10T07:40:32</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59872,7 +59872,7 @@ static  {
 	<ClassFields ID="5078">
 		<LastChanged>2010-03-20T03:04:31</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59888,7 +59888,7 @@ static  {
 	<ClassFields ID="5079">
 		<LastChanged>2010-03-20T03:04:35</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59904,7 +59904,7 @@ static  {
 	<ClassFields ID="5080">
 		<LastChanged>2010-03-20T03:06:33</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59920,7 +59920,7 @@ static  {
 	<ClassFields ID="5081">
 		<LastChanged>2010-03-20T03:06:39</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59936,7 +59936,7 @@ static  {
 	<ClassFields ID="5082">
 		<LastChanged>2011-03-10T07:40:05</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59952,7 +59952,7 @@ static  {
 	<ClassFields ID="5083">
 		<LastChanged>2011-03-10T07:40:07</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59968,7 +59968,7 @@ static  {
 	<ClassFields ID="5084">
 		<LastChanged>2010-03-20T03:07:33</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.joda.time</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -59984,7 +59984,7 @@ static  {
 	<ClassFields ID="5085">
 		<LastChanged>2011-03-10T07:41:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60000,7 +60000,7 @@ static  {
 	<ClassFields ID="5086">
 		<LastChanged>2011-03-10T07:41:05</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60016,7 +60016,7 @@ static  {
 	<ClassFields ID="5087">
 		<LastChanged>2010-03-20T03:09:21</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.joda.time</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60032,7 +60032,7 @@ static  {
 	<ClassFields ID="5088">
 		<LastChanged>2010-03-20T03:09:24</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60048,7 +60048,7 @@ static  {
 	<ClassFields ID="5089">
 		<LastChanged>2010-03-20T03:09:50</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60064,7 +60064,7 @@ static  {
 	<ClassFields ID="5090">
 		<LastChanged>2010-03-20T03:09:57</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60080,7 +60080,7 @@ static  {
 	<ClassFields ID="5091">
 		<LastChanged>2010-03-20T03:11:52</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60096,7 +60096,7 @@ static  {
 	<ClassFields ID="5092">
 		<LastChanged>2011-03-10T07:41:27</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60112,7 +60112,7 @@ static  {
 	<ClassFields ID="5093">
 		<LastChanged>2011-03-10T07:41:28</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60128,7 +60128,7 @@ static  {
 	<ClassFields ID="5094">
 		<LastChanged>2010-03-20T03:12:41</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60144,7 +60144,7 @@ static  {
 	<ClassFields ID="5095">
 		<LastChanged>2010-03-20T03:12:45</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60160,7 +60160,7 @@ static  {
 	<ClassFields ID="5096">
 		<LastChanged>2011-03-10T07:41:54</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60176,7 +60176,7 @@ static  {
 	<ClassFields ID="5097">
 		<LastChanged>2011-03-10T07:41:55</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60192,7 +60192,7 @@ static  {
 	<ClassFields ID="5098">
 		<LastChanged>2010-03-20T03:14:46</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60208,7 +60208,7 @@ static  {
 	<ClassFields ID="5099">
 		<LastChanged>2010-03-20T03:14:51</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60224,7 +60224,7 @@ static  {
 	<ClassFields ID="5100">
 		<LastChanged>2010-03-20T03:15:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60240,7 +60240,7 @@ static  {
 	<ClassFields ID="5101">
 		<LastChanged>2010-03-20T03:15:23</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2010A</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2010B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseProductResponse</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -60412,5 +60412,1173 @@ static  {
 		<ThinInclude/>
 		<ThickInclude>Y</ThickInclude>
 		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5112">
+		<LastChanged>2011-03-11T05:22:24</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>TrxMessageHeader</ClassFieldClass>
+		<ClassFieldSequence>5</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5113">
+		<LastChanged>2011-03-11T05:22:28</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseMessage</ClassFieldClass>
+		<ClassFieldSequence>10</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5114">
+		<LastChanged>2011-03-10T17:18:06</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>javax.xml.soap</ClassFieldClass>
+		<ClassFieldSequence>20</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5115">
+		<LastChanged>2011-03-11T05:22:39</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>Product</ClassFieldClass>
+		<ClassFieldSequence>30</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5116">
+		<LastChanged>2011-03-11T05:22:42</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>Hotel</ClassFieldClass>
+		<ClassFieldSequence>40</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5117">
+		<LastChanged>2011-03-11T05:22:46</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>HotelRateRequest</ClassFieldClass>
+		<ClassFieldSequence>50</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5118">
+		<LastChanged>2011-03-11T05:22:52</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ProductMessageData</ClassFieldClass>
+		<ClassFieldSequence>60</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5119">
+		<LastChanged>2011-03-11T05:22:56</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BookingDetail</ClassFieldClass>
+		<ClassFieldSequence>70</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5120">
+		<LastChanged>2011-03-11T05:23:00</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BookingHotel</ClassFieldClass>
+		<ClassFieldSequence>80</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5121">
+		<LastChanged>2011-03-11T05:23:04</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
+		<ClassFieldSequence>90</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5122">
+		<LastChanged>2011-03-10T17:19:32</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.hotel</ClassFieldClass>
+		<ClassFieldSequence>100</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5123">
+		<LastChanged>2011-03-10T17:21:43</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>Product</ClassFieldClass>
+		<ClassFieldSequence>10</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5124">
+		<LastChanged>2011-03-10T17:21:50</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>TrxMessageHeader</ClassFieldClass>
+		<ClassFieldSequence>20</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5125">
+		<LastChanged>2011-03-10T17:21:58</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseMessage</ClassFieldClass>
+		<ClassFieldSequence>30</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5126">
+		<LastChanged>2011-03-10T17:22:02</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>javax.xml.bind</ClassFieldClass>
+		<ClassFieldSequence>40</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5127">
+		<LastChanged>2011-03-10T17:22:07</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>Hotel</ClassFieldClass>
+		<ClassFieldSequence>50</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5128">
+		<LastChanged>2011-03-10T17:22:12</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>HotelRateRequest</ClassFieldClass>
+		<ClassFieldSequence>60</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5129">
+		<LastChanged>2011-03-10T17:22:17</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>SOAPMessageTransport</ClassFieldClass>
+		<ClassFieldSequence>70</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5130">
+		<LastChanged>2011-03-10T17:22:22</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ProductRequest</ClassFieldClass>
+		<ClassFieldSequence>80</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5131">
+		<LastChanged>2011-03-10T17:22:27</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BookingDetail</ClassFieldClass>
+		<ClassFieldSequence>90</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5132">
+		<LastChanged>2011-03-10T17:22:33</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BookingHotel</ClassFieldClass>
+		<ClassFieldSequence>100</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5133">
+		<LastChanged>2011-03-10T17:22:39</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>HotelMessageData</ClassFieldClass>
+		<ClassFieldSequence>110</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5134">
+		<LastChanged>2011-03-10T17:22:46</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
+		<ClassFieldSequence>120</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5135">
+		<LastChanged>2011-03-10T17:23:07</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.hotel</ClassFieldClass>
+		<ClassFieldSequence>130</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5136">
+		<LastChanged>2011-03-10T17:29:22</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>TrxMessageHeader</ClassFieldClass>
+		<ClassFieldSequence>10</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5137">
+		<LastChanged>2011-03-10T17:29:27</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>HotelRateResponse</ClassFieldClass>
+		<ClassFieldSequence>20</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5138">
+		<LastChanged>2011-03-10T17:29:35</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>javax.xml.soap</ClassFieldClass>
+		<ClassFieldSequence>30</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5139">
+		<LastChanged>2011-03-10T17:29:39</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>Product</ClassFieldClass>
+		<ClassFieldSequence>40</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5140">
+		<LastChanged>2011-03-10T17:29:43</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseMessage</ClassFieldClass>
+		<ClassFieldSequence>50</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5141">
+		<LastChanged>2011-03-10T17:29:50</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ProductResponseMessageData</ClassFieldClass>
+		<ClassFieldSequence>60</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5142">
+		<LastChanged>2011-03-10T17:29:57</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseProductResponse</ClassFieldClass>
+		<ClassFieldSequence>70</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5143">
+		<LastChanged>2011-03-10T17:30:07</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
+		<ClassFieldSequence>80</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5144">
+		<LastChanged>2011-03-11T07:01:56</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
+		<ClassFieldSequence>100</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5145">
+		<LastChanged>2011-03-10T17:32:45</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>TrxMessageHeader</ClassFieldClass>
+		<ClassFieldSequence>10</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5146">
+		<LastChanged>2011-03-10T17:32:49</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseMessage</ClassFieldClass>
+		<ClassFieldSequence>20</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5147">
+		<LastChanged>2011-03-10T17:32:55</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>HotelRateResponse</ClassFieldClass>
+		<ClassFieldSequence>30</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5148">
+		<LastChanged>2011-03-10T17:33:01</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>SOAPMessageTransport</ClassFieldClass>
+		<ClassFieldSequence>40</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5149">
+		<LastChanged>2011-03-10T17:33:05</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>javax.xml.bind</ClassFieldClass>
+		<ClassFieldSequence>50</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5150">
+		<LastChanged>2011-03-10T17:33:16</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>javax.xml.datatype</ClassFieldClass>
+		<ClassFieldSequence>60</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5151">
+		<LastChanged>2011-03-10T17:33:20</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>Product</ClassFieldClass>
+		<ClassFieldSequence>70</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5152">
+		<LastChanged>2011-03-10T17:33:25</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ProductResponseMessageData</ClassFieldClass>
+		<ClassFieldSequence>80</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5153">
+		<LastChanged>2011-03-10T17:33:30</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BookingDetail</ClassFieldClass>
+		<ClassFieldSequence>90</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5154">
+		<LastChanged>2011-03-10T17:33:37</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseProductResponse</ClassFieldClass>
+		<ClassFieldSequence>100</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5155">
+		<LastChanged>2011-03-10T17:33:43</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
+		<ClassFieldSequence>110</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5156">
+		<LastChanged>2011-03-11T06:59:39</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.hotel</ClassFieldClass>
+		<ClassFieldSequence>120</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5157">
+		<LastChanged>2011-03-11T05:20:23</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5158">
+		<LastChanged>2011-03-11T05:38:37</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5159">
+		<LastChanged>2011-03-11T07:00:53</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
+		<ClassFieldSequence>130</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5160">
+		<LastChanged>2011-03-11T07:00:42</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.joda.time</ClassFieldClass>
+		<ClassFieldSequence>140</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5161">
+		<LastChanged>2011-03-11T07:04:48</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BookingDetail</ClassFieldClass>
+		<ClassFieldSequence>90</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5162">
+		<LastChanged>2011-03-11T07:04:41</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.hotel</ClassFieldClass>
+		<ClassFieldSequence>140</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5163">
+		<LastChanged>2011-03-13T09:36:23</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5164">
+		<LastChanged>2011-03-13T09:37:41</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jibx.runtime</ClassFieldClass>
+		<ClassFieldSequence>10</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5165">
+		<LastChanged>2011-03-13T09:37:25</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.joda.time</ClassFieldClass>
+		<ClassFieldSequence>20</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5166">
+		<LastChanged>2011-05-10T22:36:48</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ProductMessageData</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.jbundle.model.db</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>P</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5167">
+		<LastChanged>2011-05-12T22:55:10</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>MessageDetailScreen</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5168">
+		<LastChanged>2011-05-12T22:55:46</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>MessageLogScreen</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5169">
+		<LastChanged>2011-05-12T22:56:00</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>GetWSDL</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5170">
+		<LastChanged>2011-05-12T23:21:06</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Product</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>F</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5171">
+		<LastChanged>2011-05-12T23:47:42</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>TourHeader</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect>public static final</ClassFieldProtect>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5172">
+		<LastChanged>2011-05-12T23:21:47</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ProductResponseMsgReplyInProcessor</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5173">
+		<LastChanged>2011-05-12T23:22:06</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Item</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5174">
+		<LastChanged>2011-05-12T23:48:54</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>GetProductStatusHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>C</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5175">
+		<LastChanged>2011-05-12T23:22:55</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Car</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5176">
+		<LastChanged>2011-05-12T23:23:07</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Air</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5177">
+		<LastChanged>2011-05-12T23:23:26</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>GetProductAvailabilityHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5178">
+		<LastChanged>2011-05-12T23:23:50</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>BookingDetailSubScreen</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5179">
+		<LastChanged>2011-05-12T23:52:28</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Land</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect>public static final</ClassFieldProtect>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5180">
+		<LastChanged>2011-05-12T23:24:37</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Transportation</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5181">
+		<LastChanged>2011-05-12T23:24:50</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Cruise</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5182">
+		<LastChanged>2011-05-12T23:52:17</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>Hotel</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect>public static final</ClassFieldProtect>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5183">
+		<LastChanged>2011-05-12T23:50:50</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>GetProductCostHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
+	</ClassFields>
+	<ClassFields ID="5184">
+		<LastChanged>2011-05-12T23:51:55</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>TestHotelRateScreen</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>BaseStatus</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ThinInclude/>
+		<ThickInclude>Y</ThickInclude>
+		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 </file>

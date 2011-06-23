@@ -1517,9 +1517,9 @@
 		<Name>Get auto-build working</Name>
 		<ParentProjectTaskID>71</ParentProjectTaskID>
 		<Sequence>0</Sequence>
-		<Comment><![CDATA[See Script, line 40.
+		<Comment>See Script, line 40.
 Need to queue all projects automatically
-Including: Write xml files (build.xml and jnlp xml)]]></Comment>
+Including: Write xml files (build.xml and jnlp xml)</Comment>
 		<Code/>
 		<StartDateTime>2006-08-03T08:31:00</StartDateTime>
 		<Duration>3.00000000</Duration>
@@ -2167,10 +2167,10 @@ Including: Write xml files (build.xml and jnlp xml)]]></Comment>
 		<Name>Do demo video</Name>
 		<ParentProjectTaskID>121</ParentProjectTaskID>
 		<Sequence>0</Sequence>
-		<Comment><![CDATA[Show:
+		<Comment>Show:
 old legacy offices
 new Web based apps, phones
-Show app working (booking, operations)]]></Comment>
+Show app working (booking, operations)</Comment>
 		<Code/>
 		<StartDateTime>2009-03-15T08:31:00</StartDateTime>
 		<Duration>1.00000000</Duration>

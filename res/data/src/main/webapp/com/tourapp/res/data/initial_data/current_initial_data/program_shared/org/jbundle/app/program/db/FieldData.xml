@@ -114550,7 +114550,7 @@
 		<MaximumLength/>
 		<DefaultValue/>
 		<InitialValue/>
-		<FieldDescription><![CDATA[Errors are set here, so the user can figure out why a status is not as exprected	]]></FieldDescription>
+		<FieldDescription>Errors are set here, so the user can figure out why a status is not as exprected	</FieldDescription>
 		<FieldDescVertical>Error msgs</FieldDescVertical>
 		<FieldType/>
 		<FieldDimension/>

@@ -30,7 +30,7 @@
 	<UserInfo ID="2">
 		<LastChanged>2010-05-26T16:11:35</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 20 04:28:15 PST 2002
 navmenus=No
 logos=No
@@ -38,7 +38,7 @@ home=Main
 menu=Main
 language=es
 trailers=No
-]]></Properties>
+</Properties>
 		<UserName>estella@tourgeek.com</UserName>
 		<FirstName>Estella</FirstName>
 		<LastName>España</LastName>
@@ -66,14 +66,14 @@ trailers=No
 	<UserInfo ID="3">
 		<LastChanged>2010-05-26T16:15:40</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jun 05 14:03:28 PDT 2009
 contactType=Vendor
 contactID=2
 contactTypeID=1
 home=vendor
 language=en
-]]></Properties>
+</Properties>
 		<UserName>hotel@tourgeek.com</UserName>
 		<FirstName>Harry</FirstName>
 		<LastName>Hotelvendor</LastName>
@@ -101,12 +101,12 @@ language=en
 	<UserInfo ID="4">
 		<LastChanged>2010-05-26T18:55:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed May 26 18:55:38 PDT 2010
 displayInitialHelp=true
 helplanguage=demoquick
 trailers=Yes
-]]></Properties>
+</Properties>
 		<UserName>kate@tourgeek.com</UserName>
 		<FirstName>Kate</FirstName>
 		<LastName>Quickdemo</LastName>
@@ -134,12 +134,12 @@ trailers=Yes
 	<UserInfo ID="5">
 		<LastChanged>2010-05-26T16:14:01</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Feb 26 14:48:45 PST 2004
 menubars=Yes
 home=resagent
 language=en
-]]></Properties>
+</Properties>
 		<UserName>agent@tourdemo.com</UserName>
 		<FirstName>Arturo</FirstName>
 		<LastName>Agent</LastName>
@@ -167,7 +167,7 @@ language=en
 	<UserInfo ID="6">
 		<LastChanged>2010-05-26T16:14:48</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jan 02 11:11:03 PST 2008
 contactType=Profile
 menubars=Yes
@@ -175,7 +175,7 @@ contactTypeID=2
 contactID=5
 home=travelagent
 language=en
-]]></Properties>
+</Properties>
 		<UserName>travelagent@tourgeek.com</UserName>
 		<FirstName>Tina</FirstName>
 		<LastName>Travelagent</LastName>
@@ -203,12 +203,12 @@ language=en
 	<UserInfo ID="7">
 		<LastChanged>2010-05-26T16:13:26</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Feb 26 14:46:52 PST 2004
 menubars=Yes
 home=management
 language=en
-]]></Properties>
+</Properties>
 		<UserName>mika@tourgeek.com</UserName>
 		<FirstName>Mika</FirstName>
 		<LastName>Manager</LastName>
@@ -264,13 +264,13 @@ language=en
 	<UserInfo ID="9">
 		<LastChanged>2010-05-26T16:11:57</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jul 30 23:08:01 PDT 2004
 menubars=Yes
 home=Main
 language=en
 home=ann.donandann.com
-]]></Properties>
+</Properties>
 		<UserName>ann@tourgeek.com</UserName>
 		<FirstName>Ann</FirstName>
 		<LastName>Webuser</LastName>
@@ -298,14 +298,14 @@ home=ann.donandann.com
 	<UserInfo ID="10">
 		<LastChanged>2010-05-26T16:16:14</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Jul 29 21:04:09 PDT 2004
 navmenus=Icons Only
 menubars=Yes
 home=dance.donandann.com
 trailers=No
 language=en
-]]></Properties>
+</Properties>
 		<UserName>dance@tourgeek.com</UserName>
 		<FirstName>Sally</FirstName>
 		<LastName>Site</LastName>
@@ -333,12 +333,12 @@ language=en
 	<UserInfo ID="11">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Thu Feb 26 01:49:32 PST 2009
 navmenus=
 home=dev.tourapp.com
 language=
-]]></Properties>
+</Properties>
 		<UserName>don</UserName>
 		<FirstName>Don</FirstName>
 		<LastName>Corley</LastName>
@@ -366,12 +366,12 @@ language=
 	<UserInfo ID="12">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jun 06 02:30:34 PDT 2007
 displayInitialHelp=true
 helplanguage=demo
 home=
-]]></Properties>
+</Properties>
 		<UserName>reggie@tourgeek.com</UserName>
 		<FirstName>Reggie</FirstName>
 		<LastName/>
@@ -399,12 +399,12 @@ home=
 	<UserInfo ID="13">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jun 06 02:30:17 PDT 2007
 displayInitialHelp=true
 helplanguage=demo
 trailers=Yes
-]]></Properties>
+</Properties>
 		<UserName>angie@tourgeek.com</UserName>
 		<FirstName>Angie</FirstName>
 		<LastName/>
@@ -432,12 +432,12 @@ trailers=Yes
 	<UserInfo ID="14">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jan 02 11:10:01 PST 2008
 contactType=Vendor
 contactTypeID=1
 contactID=37
-]]></Properties>
+</Properties>
 		<UserName>susie@somehotel.com</UserName>
 		<FirstName>Susie</FirstName>
 		<LastName/>
@@ -465,11 +465,11 @@ contactID=37
 	<UserInfo ID="15">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jun 06 02:30:34 PDT 2007
 displayInitialHelp=true
 helplanguage=demo
-]]></Properties>
+</Properties>
 		<UserName>oprah@tourgeek.com</UserName>
 		<FirstName>Oprah</FirstName>
 		<LastName/>
@@ -497,12 +497,12 @@ helplanguage=demo
 	<UserInfo ID="16">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jan 02 11:12:25 PST 2008
 contactType=Profile
 contactTypeID=2
 contactID=5
-]]></Properties>
+</Properties>
 		<UserName>walter@sometravelagency.com</UserName>
 		<FirstName>Walter</FirstName>
 		<LastName>Teller</LastName>
@@ -530,12 +530,12 @@ contactID=5
 	<UserInfo ID="17">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jan 04 22:18:05 PST 2008
 contactType=Vendor
 contactTypeID=1
 contactID=2
-]]></Properties>
+</Properties>
 		<UserName>reggie@regenthotel.com</UserName>
 		<FirstName>Reggie</FirstName>
 		<LastName>Smith</LastName>
@@ -563,12 +563,12 @@ contactID=2
 	<UserInfo ID="18">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jan 04 22:18:37 PST 2008
 contactType=Vendor
 contactTypeID=1
 contactID=39
-]]></Properties>
+</Properties>
 		<UserName>kevin@kyotohotel.com</UserName>
 		<FirstName>Kevin</FirstName>
 		<LastName>Smith</LastName>
@@ -596,12 +596,12 @@ contactID=39
 	<UserInfo ID="19">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jan 04 22:19:17 PST 2008
 contactType=Vendor
 contactTypeID=1
 contactID=31
-]]></Properties>
+</Properties>
 		<UserName>betty@banffhotel.com</UserName>
 		<FirstName>Betty</FirstName>
 		<LastName>Jones</LastName>
@@ -629,12 +629,12 @@ contactID=31
 	<UserInfo ID="20">
 		<LastChanged>2010-04-02T16:02:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Jun 05 13:56:03 PDT 2009
 contactType=Vendor
 contactID=2
 contactTypeID=1
-]]></Properties>
+</Properties>
 		<UserName>vendor@tourgeek.com</UserName>
 		<FirstName>Vendor</FirstName>
 		<LastName/>

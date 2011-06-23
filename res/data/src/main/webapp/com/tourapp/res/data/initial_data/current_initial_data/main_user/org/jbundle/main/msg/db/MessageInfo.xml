@@ -173,8 +173,8 @@
 		<Description>Manual Messages</Description>
 		<Code>MANUAL</Code>
 		<MessageClass/>
-		<MessageProperties><![CDATA[
-]]></MessageProperties>
+		<MessageProperties>
+</MessageProperties>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
 		<ContactTypeID/>
@@ -654,9 +654,9 @@
 		<Description>Booking Cancellation Request</Description>
 		<Code>OTA_CancelRQ</Code>
 		<MessageClass>com.tourapp.tour.message.base.request.CancelRequest</MessageClass>
-		<MessageProperties><![CDATA[#Field properties
+		<MessageProperties>#Field properties
 #Wed Apr 02 01:40:09 PDT 2008
-]]></MessageProperties>
+</MessageProperties>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>73</ReverseMessageInfoID>
 		<ContactTypeID>13</ContactTypeID>
@@ -1076,9 +1076,9 @@
 		<Description>Ping Request</Description>
 		<Code>OTA_PingRQ</Code>
 		<MessageClass>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageClass>
-		<MessageProperties><![CDATA[#Field properties
+		<MessageProperties>#Field properties
 #Fri Mar 26 07:46:04 PDT 2010
-]]></MessageProperties>
+</MessageProperties>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>107</ReverseMessageInfoID>
 		<ContactTypeID/>
@@ -1102,9 +1102,9 @@
 		<Description>Currency Conversion Request</Description>
 		<Code>ConversionRate</Code>
 		<MessageClass>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageClass>
-		<MessageProperties><![CDATA[#Field properties
+		<MessageProperties>#Field properties
 #Fri Oct 17 01:09:12 PDT 2008
-]]></MessageProperties>
+</MessageProperties>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>109</ReverseMessageInfoID>
 		<ContactTypeID/>

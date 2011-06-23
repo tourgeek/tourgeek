@@ -2,7 +2,7 @@
 	<Part ID="1">
 		<LastChanged>2010-02-28T06:13:16</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-app-dance</Description>
+		<Description>org.jbundle.app.dance</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -12,7 +12,7 @@
 	<Part ID="2">
 		<LastChanged>2010-02-28T06:13:12</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-thin-app-dance</Description>
+		<Description>org.jbundle.thin.app.dance</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -22,7 +22,7 @@
 	<Part ID="3">
 		<LastChanged>2010-02-28T06:13:10</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-res-app-dance</Description>
+		<Description>org.jbundle.res.app.dance</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -32,7 +32,7 @@
 	<Part ID="4">
 		<LastChanged>2010-02-28T06:13:09</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-app-contact</Description>
+		<Description>org.jbundle.app.contact</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -42,7 +42,7 @@
 	<Part ID="5">
 		<LastChanged>2010-02-28T06:13:08</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-thin-app-contact</Description>
+		<Description>org.jbundle.thin.app.contact</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -52,7 +52,7 @@
 	<Part ID="6">
 		<LastChanged>2010-02-28T06:13:07</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-res-app-contact</Description>
+		<Description>org.jbundle.res.app.contact</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -62,7 +62,7 @@
 	<Part ID="7">
 		<LastChanged>2010-02-28T06:13:06</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-app-picture</Description>
+		<Description>org.jbundle.app.picture</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -72,7 +72,7 @@
 	<Part ID="8">
 		<LastChanged>2010-02-28T06:13:04</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-thin-app-picture</Description>
+		<Description>org.jbundle.thin.app.picture</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -82,7 +82,7 @@
 	<Part ID="9">
 		<LastChanged>2010-02-28T06:13:01</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>jbundle-res-app-picture</Description>
+		<Description>org.jbundle.res.app.picture</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -92,7 +92,7 @@
 	<Part ID="23">
 		<LastChanged>2010-11-18T14:41:42</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-notused</Description>
+		<Description>com.tourapp.tour.notused</Description>
 		<Sequence/>
 		<Kind/>
 		<PartType/>
@@ -102,7 +102,7 @@
 	<Part ID="25">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-acctpay</Description>
+		<Description>com.tourapp.res.tour.acctpay</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -112,7 +112,7 @@
 	<Part ID="26">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-acctrec</Description>
+		<Description>com.tourapp.res.tour.acctrec</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -122,7 +122,7 @@
 	<Part ID="27">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-assetdr</Description>
+		<Description>com.tourapp.res.tour.assetdr</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -132,7 +132,7 @@
 	<Part ID="28">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-booking</Description>
+		<Description>com.tourapp.res.tour.booking</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -142,7 +142,7 @@
 	<Part ID="29">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-genled</Description>
+		<Description>com.tourapp.res.tour.genled</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -152,7 +152,7 @@
 	<Part ID="30">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-payroll</Description>
+		<Description>com.tourapp.res.tour.payroll</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -162,7 +162,7 @@
 	<Part ID="31">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-product</Description>
+		<Description>com.tourapp.res.tour.product</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -172,7 +172,7 @@
 	<Part ID="32">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-profile</Description>
+		<Description>com.tourapp.res.tour.profile</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -182,7 +182,7 @@
 	<Part ID="33">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-request</Description>
+		<Description>com.tourapp.res.tour.request</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -192,7 +192,7 @@
 	<Part ID="34">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-acctpay</Description>
+		<Description>com.tourapp.thin.tour.acctpay</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -202,7 +202,7 @@
 	<Part ID="35">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-acctrec</Description>
+		<Description>com.tourapp.thin.tour.acctrec</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -212,7 +212,7 @@
 	<Part ID="36">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-assetdr</Description>
+		<Description>com.tourapp.thin.tour.assetdr</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -222,7 +222,7 @@
 	<Part ID="37">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-booking</Description>
+		<Description>com.tourapp.thin.tour.booking</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -232,7 +232,7 @@
 	<Part ID="38">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-genled</Description>
+		<Description>com.tourapp.thin.tour.genled</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -242,7 +242,7 @@
 	<Part ID="39">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-payroll</Description>
+		<Description>com.tourapp.thin.tour.payroll</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -252,7 +252,7 @@
 	<Part ID="40">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-product</Description>
+		<Description>com.tourapp.thin.tour.product</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -262,7 +262,7 @@
 	<Part ID="41">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-profile</Description>
+		<Description>com.tourapp.thin.tour.profile</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -272,7 +272,7 @@
 	<Part ID="42">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-request</Description>
+		<Description>com.tourapp.thin.tour.request</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -282,7 +282,7 @@
 	<Part ID="43">
 		<LastChanged>2010-11-18T14:41:58</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-acctpay</Description>
+		<Description>com.tourapp.tour.acctpay</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -292,7 +292,7 @@
 	<Part ID="44">
 		<LastChanged>2010-11-18T14:41:56</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-acctrec</Description>
+		<Description>com.tourapp.tour.acctrec</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -302,7 +302,7 @@
 	<Part ID="45">
 		<LastChanged>2010-11-18T14:41:54</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-assetdr</Description>
+		<Description>com.tourapp.tour.assetdr</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -312,7 +312,7 @@
 	<Part ID="46">
 		<LastChanged>2010-11-18T14:41:46</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-booking</Description>
+		<Description>com.tourapp.tour.booking</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -322,7 +322,7 @@
 	<Part ID="47">
 		<LastChanged>2010-11-18T14:41:44</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-genled</Description>
+		<Description>com.tourapp.tour.genled</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -332,7 +332,7 @@
 	<Part ID="48">
 		<LastChanged>2010-11-18T14:41:39</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-payroll</Description>
+		<Description>com.tourapp.tour.payroll</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -342,7 +342,7 @@
 	<Part ID="49">
 		<LastChanged>2010-11-18T14:41:37</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-product</Description>
+		<Description>com.tourapp.tour.product</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -352,7 +352,7 @@
 	<Part ID="50">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-profile</Description>
+		<Description>com.tourapp.tour.profile</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -362,7 +362,7 @@
 	<Part ID="51">
 		<LastChanged>2010-11-18T14:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-request</Description>
+		<Description>com.tourapp.tour.request</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -372,7 +372,7 @@
 	<Part ID="52">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-app-booking</Description>
+		<Description>com.tourapp.thin.app.booking</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -382,7 +382,7 @@
 	<Part ID="53">
 		<LastChanged>2010-02-26T16:41:31</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-app-request</Description>
+		<Description>com.tourapp.thin.app.request</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -392,7 +392,7 @@
 	<Part ID="54">
 		<LastChanged>2010-11-18T14:41:50</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-base</Description>
+		<Description>com.tourapp.tour.base</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -402,7 +402,7 @@
 	<Part ID="56">
 		<LastChanged>2010-02-28T03:50:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-res-tour-base</Description>
+		<Description>com.tourapp.res.tour.base</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -412,7 +412,7 @@
 	<Part ID="57">
 		<LastChanged>2010-02-28T04:06:45</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-thin-tour-base</Description>
+		<Description>com.tourapp.thin.tour.base</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>
@@ -422,7 +422,7 @@
 	<Part ID="58">
 		<LastChanged>2010-12-02T15:36:53</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>tourapp-tour-message-core</Description>
+		<Description>com.tourapp.tour.message.core</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>

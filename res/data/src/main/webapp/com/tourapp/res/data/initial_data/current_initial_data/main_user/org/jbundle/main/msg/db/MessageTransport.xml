@@ -4,11 +4,11 @@
 		<Deleted>N</Deleted>
 		<Description>Fax</Description>
 		<Code>Fax</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Jan 20 13:23:18 PST 2008
 timeoutMultiplier=86400
 faxProvider=faxaway.com
-]]></Properties>
+</Properties>
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="2">
@@ -16,7 +16,7 @@ faxProvider=faxaway.com
 		<Deleted>N</Deleted>
 		<Description>Email</Description>
 		<Code>Email</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Jun 30 04:05:22 PDT 2009
 timeoutMultiplier=86400
 pop3username=don@tourgeek.com
@@ -36,7 +36,7 @@ replyTo=don@tourgeek.com
 baseURL=http\://www.tourgeek.com/
 mail.smtp.auth=true
 pop3password=NDgwEhwD
-]]></Properties>
+</Properties>
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="3">
@@ -44,11 +44,11 @@ pop3password=NDgwEhwD
 		<Deleted>N</Deleted>
 		<Description>Mail</Description>
 		<Code>Mail</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Jan 20 13:23:31 PST 2008
 messageTimeoutSeconds=777600
 timeoutMultiplier=86400
-]]></Properties>
+</Properties>
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="5">
@@ -56,11 +56,11 @@ timeoutMultiplier=86400
 		<Deleted>N</Deleted>
 		<Description>U.P.S.</Description>
 		<Code>UPS</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Sun Jan 20 13:24:13 PST 2008
 timeoutMultiplier=86400
 messageTimeoutSeconds=777600
-]]></Properties>
+</Properties>
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="6">
@@ -68,11 +68,11 @@ messageTimeoutSeconds=777600
 		<Deleted>N</Deleted>
 		<Description>Local</Description>
 		<Code>Local</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jan 16 03:12:02 PST 2008
 messageTimeoutSeconds=120
 singleDetail=true
-]]></Properties>
+</Properties>
 		<MessageTransportType>Local</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="7">
@@ -104,11 +104,11 @@ singleDetail=true
 		<Deleted>N</Deleted>
 		<Description>Web service</Description>
 		<Code>SOAP</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Jan 16 03:13:16 PST 2008
 messageTimeoutSeconds=300
 singleDetail=true
-]]></Properties>
+</Properties>
 		<MessageTransportType>AutoResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="13">
@@ -132,11 +132,11 @@ singleDetail=true
 		<Deleted>N</Deleted>
 		<Description>Client</Description>
 		<Code>Client</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Mar 11 02:08:33 PDT 2008
 queueName=trxSendLocal
 queueType=local
-]]></Properties>
+</Properties>
 		<MessageTransportType>Thread</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="16">
@@ -144,11 +144,11 @@ queueType=local
 		<Deleted>N</Deleted>
 		<Description>XML Web Service</Description>
 		<Code>XML</Code>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Tue Oct 07 20:49:46 PDT 2008
 messageTimeoutSeconds=300
 singleDetail=true
-]]></Properties>
+</Properties>
 		<MessageTransportType>AutoResp</MessageTransportType>
 	</MessageTransport>
 </file>

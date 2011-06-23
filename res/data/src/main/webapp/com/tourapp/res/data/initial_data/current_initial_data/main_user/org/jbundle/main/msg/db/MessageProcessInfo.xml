@@ -11,11 +11,11 @@
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -79,10 +79,10 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Oct 03 01:16:45 PDT 2008
 email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -130,11 +130,11 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -198,10 +198,10 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Oct 03 01:18:38 PDT 2008
 email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -505,11 +505,11 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2125,10 +2125,10 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:19:49 PDT 2006
 template=itinerary
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2144,10 +2144,10 @@ template=itinerary
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:23:39 PDT 2006
 template=invoice
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2163,10 +2163,10 @@ template=invoice
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:22:02 PDT 2006
 template=cover-detailed
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2198,10 +2198,10 @@ template=cover-detailed
 		<MessageTypeID/>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:24:37 PDT 2006
 template=itinerary-fo
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2217,10 +2217,10 @@ template=itinerary-fo
 		<MessageTypeID/>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:22:49 PDT 2006
 template=itinerary-detailed
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2236,10 +2236,10 @@ template=itinerary-detailed
 		<MessageTypeID/>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:20:45 PDT 2006
 template=agent-link-letter
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2255,10 +2255,10 @@ template=agent-link-letter
 		<MessageTypeID/>
 		<ProcessTypeID/>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Fri Aug 25 00:24:09 PDT 2006
 template=invoice-fo
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2306,13 +2306,13 @@ template=invoice-fo
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 03 15:15:50 PST 2010
 application=org.jbundle.main.schedule.app.JobSchedulerApp
 process2=org.jbundle.main.msg.process.MessageTimeoutProcess
 process1=org.jbundle.main.schedule.app.JobSchedulerProcess
 autostart=true
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -2344,10 +2344,10 @@ autostart=true
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
 		<ProcessorClass>com.tourapp.tour.message.base.request.in.ProductCancelRequestMessageInProcessor</ProcessorClass>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 ota.safe=false
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
@@ -3899,11 +3899,11 @@ ota.safe=false
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
 		<ProcessorClass/>
-		<Properties><![CDATA[#Field properties
+		<Properties>#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
-]]></Properties>
+</Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>

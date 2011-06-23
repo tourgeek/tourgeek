@@ -3,17 +3,17 @@
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Accounting</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.acctpay.*
+		<ResourceClass>com.tourapp.tour.acctpay.*
 com.tourapp.tour.acctrec.*
 com.tourapp.tour.assetdr.*
-com.tourapp.tour.genled.*]]></ResourceClass>
+com.tourapp.tour.genled.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="2">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Reservations</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.booking.*
-com.tourapp.app.booking.*]]></ResourceClass>
+		<ResourceClass>com.tourapp.tour.booking.*
+com.tourapp.app.booking.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="3">
 		<LastChanged>2010-11-29T05:52:36</LastChanged>
@@ -25,8 +25,8 @@ com.tourapp.app.booking.*]]></ResourceClass>
 		<LastChanged>2010-04-18T09:47:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>System</Description>
-		<ResourceClass><![CDATA[org.jbundle.app.program.*
-org.jbundle.main.*]]></ResourceClass>
+		<ResourceClass>org.jbundle.app.program.*
+org.jbundle.main.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="5">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
@@ -38,18 +38,18 @@ org.jbundle.main.*]]></ResourceClass>
 		<LastChanged>2010-04-18T10:29:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Applications</Description>
-		<ResourceClass><![CDATA[org.jbundle.app.contact.*
+		<ResourceClass>org.jbundle.app.contact.*
 org.jbundle.app.dance.*
-org.jbundle.app.picture.*]]></ResourceClass>
+org.jbundle.app.picture.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="7">
 		<LastChanged>2010-11-30T17:42:21</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Operations</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.product.*
+		<ResourceClass>com.tourapp.tour.product.*
 com.tourapp.tour.profile.*
 com.tourapp.tour.request.*
-com.tourapp.tour.base.*]]></ResourceClass>
+com.tourapp.tour.base.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="8">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
@@ -61,10 +61,10 @@ com.tourapp.tour.base.*]]></ResourceClass>
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Vendor access</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.booking.message.*
+		<ResourceClass>com.tourapp.tour.booking.message.*
 org.jbundle.main.msg.*
 com.tourapp.tour.booking.operations.*
-com.tourapp.tour.acctpay.screen.trx.*]]></ResourceClass>
+com.tourapp.tour.acctpay.screen.trx.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="10">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
@@ -76,8 +76,8 @@ com.tourapp.tour.acctpay.screen.trx.*]]></ResourceClass>
 		<LastChanged>2010-11-29T05:52:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Test</Description>
-		<ResourceClass><![CDATA[org.jbundle.app.test.*
+		<ResourceClass>org.jbundle.app.test.*
 com.tourapp.tour.util.*
-]]></ResourceClass>
+</ResourceClass>
 	</UserResource>
 </file>
