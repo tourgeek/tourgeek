@@ -22,7 +22,7 @@
 		<HistTimePrinted>2008-03-13T03:29:00</HistTimePrinted>
 	</RequestHistory>
 	<RequestHistory ID="2">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID>16</ProfileID>
 		<ProfileCode/>
@@ -44,7 +44,7 @@
 		<HistTimePrinted>2008-03-13T03:28:00</HistTimePrinted>
 	</RequestHistory>
 	<RequestHistory ID="3">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID>9</ProfileID>
 		<ProfileCode>40514342</ProfileCode>
@@ -66,7 +66,7 @@
 		<HistTimePrinted>2008-03-13T03:29:00</HistTimePrinted>
 	</RequestHistory>
 	<RequestHistory ID="4">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID>7</ProfileID>
 		<ProfileCode>19537965</ProfileCode>

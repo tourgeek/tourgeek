@@ -8,7 +8,7 @@
 		<EnterHours/>
 	</Deduction>
 	<Deduction ID="2">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Description>Reimbursement</Description>
 		<Type>2</Type>
@@ -16,7 +16,7 @@
 		<EnterHours/>
 	</Deduction>
 	<Deduction ID="3">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Description>Sick pay (non-tax)</Description>
 		<Type>3</Type>
@@ -24,7 +24,7 @@
 		<EnterHours/>
 	</Deduction>
 	<Deduction ID="4">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Description>Sick pay (tabable)</Description>
 		<Type>4</Type>
@@ -32,7 +32,7 @@
 		<EnterHours/>
 	</Deduction>
 	<Deduction ID="5">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Description>Vacation pay</Description>
 		<Type>5</Type>
@@ -40,7 +40,7 @@
 		<EnterHours/>
 	</Deduction>
 	<Deduction ID="6">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Description>Non tax deduction</Description>
 		<Type>6</Type>

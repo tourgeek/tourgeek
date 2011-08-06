@@ -7,21 +7,21 @@
 		<DistPercent>0.5500</DistPercent>
 	</AutoDistDetail>
 	<AutoDistDetail ID="2">
-		<LastChanged>2011-08-05T16:00:14</LastChanged>
+		<LastChanged>2010-04-02T16:01:02</LastChanged>
 		<Deleted>N</Deleted>
 		<AutoDistID>1</AutoDistID>
 		<DistAccountID>58</DistAccountID>
 		<DistPercent>0.4500</DistPercent>
 	</AutoDistDetail>
 	<AutoDistDetail ID="3">
-		<LastChanged>2011-08-05T16:00:14</LastChanged>
+		<LastChanged>2010-04-02T16:01:02</LastChanged>
 		<Deleted>N</Deleted>
 		<AutoDistID>3</AutoDistID>
 		<DistAccountID>66</DistAccountID>
 		<DistPercent>0.3000</DistPercent>
 	</AutoDistDetail>
 	<AutoDistDetail ID="4">
-		<LastChanged>2011-08-05T16:00:14</LastChanged>
+		<LastChanged>2010-04-02T16:01:02</LastChanged>
 		<Deleted>N</Deleted>
 		<AutoDistID>3</AutoDistID>
 		<DistAccountID>67</DistAccountID>

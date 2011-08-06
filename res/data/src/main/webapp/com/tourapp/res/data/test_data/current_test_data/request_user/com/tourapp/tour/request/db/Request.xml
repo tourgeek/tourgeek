@@ -21,7 +21,7 @@
 		<HistReprint>Y</HistReprint>
 	</Request>
 	<Request ID="2">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID>5</ProfileID>
 		<ProfileCode>05903995</ProfileCode>
@@ -42,7 +42,7 @@
 		<HistReprint>Y</HistReprint>
 	</Request>
 	<Request ID="3">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID>9</ProfileID>
 		<ProfileCode>40514342</ProfileCode>
@@ -63,7 +63,7 @@
 		<HistReprint>Y</HistReprint>
 	</Request>
 	<Request ID="4">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID>7</ProfileID>
 		<ProfileCode>19537965</ProfileCode>
@@ -84,7 +84,7 @@
 		<HistReprint>Y</HistReprint>
 	</Request>
 	<Request ID="5">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<ProfileID/>
 		<ProfileCode/>
@@ -105,7 +105,7 @@
 		<HistReprint/>
 	</Request>
 	<Request ID="6">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged>2010-12-01T05:23:38</LastChanged>
 		<Deleted>N</Deleted>
 		<ProfileID/>
 		<ProfileCode/>
@@ -126,7 +126,7 @@
 		<HistReprint>N</HistReprint>
 	</Request>
 	<Request ID="7">
-		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<LastChanged>2010-12-02T05:56:18</LastChanged>
 		<Deleted>N</Deleted>
 		<ProfileID/>
 		<ProfileCode>05903995</ProfileCode>

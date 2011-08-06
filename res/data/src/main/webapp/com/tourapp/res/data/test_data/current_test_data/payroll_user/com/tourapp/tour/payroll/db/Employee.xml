@@ -86,7 +86,7 @@
 		<Status>N</Status>
 	</Employee>
 	<Employee ID="2">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Bill Clinton</Name>
@@ -101,8 +101,8 @@
 		<Email/>
 		<Web/>
 		<HireDate>1997-02-22</HireDate>
-		<DateChanged>2011-09-05</DateChanged>
-		<ChangedID>11</ChangedID>
+		<DateChanged/>
+		<ChangedID/>
 		<Comments/>
 		<UserID/>
 		<Password>Bill</Password>
@@ -117,8 +117,8 @@
 		<PayFrequency>S</PayFrequency>
 		<PayType>0</PayType>
 		<Salary>0.00</Salary>
-		<HourlyRate/>
-		<OvertimeRate/>
+		<HourlyRate>0.00</HourlyRate>
+		<OvertimeRate>0.00</OvertimeRate>
 		<Special1Rate>18.00</Special1Rate>
 		<Special2Rate>27.00</Special2Rate>
 		<TaxIdNo>233-32-2354</TaxIdNo>
@@ -172,7 +172,7 @@
 		<Status>N</Status>
 	</Employee>
 	<Employee ID="3">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Tipper Gore</Name>
@@ -187,8 +187,8 @@
 		<Email/>
 		<Web/>
 		<HireDate>1996-12-12</HireDate>
-		<DateChanged>2011-09-05</DateChanged>
-		<ChangedID>11</ChangedID>
+		<DateChanged/>
+		<ChangedID/>
 		<Comments/>
 		<UserID/>
 		<Password>Tipper</Password>
@@ -203,8 +203,8 @@
 		<PayFrequency>S</PayFrequency>
 		<PayType>1</PayType>
 		<Salary>0.00</Salary>
-		<HourlyRate/>
-		<OvertimeRate/>
+		<HourlyRate>0.00</HourlyRate>
+		<OvertimeRate>0.00</OvertimeRate>
 		<Special1Rate>37.50</Special1Rate>
 		<Special2Rate>56.25</Special2Rate>
 		<TaxIdNo>585-32-2322</TaxIdNo>
@@ -258,7 +258,7 @@
 		<Status>N</Status>
 	</Employee>
 	<Employee ID="4">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Barbara Bush</Name>
@@ -273,8 +273,8 @@
 		<Email/>
 		<Web/>
 		<HireDate>1970-10-28</HireDate>
-		<DateChanged>2011-09-05</DateChanged>
-		<ChangedID>11</ChangedID>
+		<DateChanged/>
+		<ChangedID/>
 		<Comments/>
 		<UserID/>
 		<Password>Barbara</Password>
@@ -289,8 +289,8 @@
 		<PayFrequency>S</PayFrequency>
 		<PayType>1</PayType>
 		<Salary>0.00</Salary>
-		<HourlyRate/>
-		<OvertimeRate/>
+		<HourlyRate>0.00</HourlyRate>
+		<OvertimeRate>0.00</OvertimeRate>
 		<Special1Rate>0.00</Special1Rate>
 		<Special2Rate>0.00</Special2Rate>
 		<TaxIdNo>454-43-3433</TaxIdNo>
@@ -344,7 +344,7 @@
 		<Status>N</Status>
 	</Employee>
 	<Employee ID="5">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged>2010-04-02T16:01:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Al Gore</Name>
@@ -359,8 +359,8 @@
 		<Email/>
 		<Web/>
 		<HireDate>1996-12-02</HireDate>
-		<DateChanged>2011-09-05</DateChanged>
-		<ChangedID>11</ChangedID>
+		<DateChanged/>
+		<ChangedID/>
 		<Comments/>
 		<UserID/>
 		<Password>Al</Password>
@@ -375,8 +375,8 @@
 		<PayFrequency>S</PayFrequency>
 		<PayType>1</PayType>
 		<Salary>0.00</Salary>
-		<HourlyRate/>
-		<OvertimeRate/>
+		<HourlyRate>0.00</HourlyRate>
+		<OvertimeRate>0.00</OvertimeRate>
 		<Special1Rate>25.38</Special1Rate>
 		<Special2Rate>38.07</Special2Rate>
 		<TaxIdNo>844-43-2343</TaxIdNo>
