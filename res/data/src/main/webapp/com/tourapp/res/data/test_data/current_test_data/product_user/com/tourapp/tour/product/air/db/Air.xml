@@ -47,10 +47,10 @@
 		<Segment>1</Segment>
 	</Air>
 	<Air ID="2">
-		<LastChanged>2010-04-02T16:01:24</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>UA18 NRT/LAX 5:00 PM-2:18 AM -1</Description>
-		<Code>UA18</Code>
+		<Code>UA18 </Code>
 		<VendorID>46</VendorID>
 		<OperatorsCode/>
 		<ProductChainID/>

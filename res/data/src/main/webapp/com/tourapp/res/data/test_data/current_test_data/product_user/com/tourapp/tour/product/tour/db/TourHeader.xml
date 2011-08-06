@@ -44,7 +44,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="2">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Basic Tour</Description>
 		<Code/>
@@ -88,7 +88,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="4">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Seven day Bangkok Tour</Description>
 		<Code/>
@@ -132,7 +132,7 @@
 		<RegionID>10</RegionID>
 	</TourHeader>
 	<TourHeader ID="5">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bangkok Three Night Module</Description>
 		<Code/>
@@ -176,7 +176,7 @@
 		<RegionID>10</RegionID>
 	</TourHeader>
 	<TourHeader ID="6">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bangkok Three Night Component</Description>
 		<Code/>
@@ -220,7 +220,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="7">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Asian Tours Four Night Bangkok Adventure</Description>
 		<Code/>
@@ -264,7 +264,7 @@
 		<RegionID>10</RegionID>
 	</TourHeader>
 	<TourHeader ID="8">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Customized Tour</Description>
 		<Code/>
@@ -308,7 +308,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="9">
-		<LastChanged>2010-04-02T16:01:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Remotely Booked Tour</Description>
 		<Code/>

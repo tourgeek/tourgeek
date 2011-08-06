@@ -16,7 +16,7 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="8">
-		<LastChanged>2010-04-02T16:01:26</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<HotelID>8</HotelID>
 		<PaxCategoryID/>
@@ -32,7 +32,7 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="9">
-		<LastChanged>2010-04-02T16:01:26</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<HotelID>8</HotelID>
 		<PaxCategoryID/>
@@ -48,7 +48,7 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="10">
-		<LastChanged>2010-04-02T16:01:26</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<HotelID>8</HotelID>
 		<PaxCategoryID/>

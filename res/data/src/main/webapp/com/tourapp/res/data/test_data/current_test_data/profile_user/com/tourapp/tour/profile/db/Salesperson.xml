@@ -6,13 +6,13 @@
 		<VendorID>2</VendorID>
 	</Salesperson>
 	<Salesperson ID="2">
-		<LastChanged>2010-04-02T16:01:07</LastChanged>
+		<LastChanged>2011-08-05T16:00:15</LastChanged>
 		<Deleted>N</Deleted>
 		<SalespersonName>Frank Schumacher</SalespersonName>
 		<VendorID/>
 	</Salesperson>
 	<Salesperson ID="3">
-		<LastChanged>2010-04-02T16:01:07</LastChanged>
+		<LastChanged>2011-08-05T16:00:15</LastChanged>
 		<Deleted>N</Deleted>
 		<SalespersonName>Sandy Perez</SalespersonName>
 		<VendorID/>

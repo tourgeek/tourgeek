@@ -1,5 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingHistory>
+		<ID>2</ID>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-03-10</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Feb 1, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-05T15:59:57</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1/>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country/>
+		<Tel/>
+		<Fax/>
+		<Email/>
+		<Contact/>
+		<LanguageID/>
+		<CurrencysID/>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax/>
+		<Focs/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<Gateway/>
+		<TourID/>
+		<Markup/>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties>#Field properties
+#Fri Aug 05 15:59:57 PDT 2011
+eventStatus.No\ Status.1=Y
+</Properties>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-03-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-04-14</FinalPaymentDueDate>
+		<NextEventDate>2011-03-10</NextEventDate>
+		<TourEventID>1</TourEventID>
+		<Gross/>
+		<Commission/>
+		<Net/>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>N</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>4</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-05T15:59:58</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>3</ID>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-03-10</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID/>
+		<ProfileCode/>
+		<Code/>
+		<Description>Rodriguez - Customized Tour - Jan 2, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-05T15:59:57</ModDate>
+		<BookingStatusID>3</BookingStatusID>
+		<GenericName/>
+		<AddressLine1/>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country/>
+		<Tel/>
+		<Fax/>
+		<Email/>
+		<Contact/>
+		<LanguageID/>
+		<CurrencysID/>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax/>
+		<Focs/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<Gateway/>
+		<TourID/>
+		<Markup/>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties>#Field properties
+#Fri Aug 05 15:59:57 PDT 2011
+eventStatus.Accepted.3=Y
+eventStatus.Proposal.2=Y
+</Properties>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-03-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-05-02</FinalPaymentDueDate>
+		<NextEventDate>2011-03-10</NextEventDate>
+		<TourEventID>1</TourEventID>
+		<Gross/>
+		<Commission/>
+		<Net/>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>N</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>4</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-05T15:59:58</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:48</LastChanged>
 		<Deleted>N</Deleted>
@@ -328,5 +467,74 @@
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
 		<HistoryDate>2011-06-26T13:50:00</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>4</ID>
+		<LastChanged>2011-08-05T15:59:59</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-06-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-05T15:59:58</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1/>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country/>
+		<Tel/>
+		<Fax/>
+		<Email/>
+		<Contact/>
+		<LanguageID/>
+		<CurrencysID/>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax/>
+		<Focs/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<Gateway/>
+		<TourID/>
+		<Markup/>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties>#Field properties
+#Fri Aug 05 15:59:58 PDT 2011
+eventStatus.No\ Status.1=Y
+</Properties>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-03-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-04-02</FinalPaymentDueDate>
+		<NextEventDate>2011-03-25</NextEventDate>
+		<TourEventID>4</TourEventID>
+		<Gross>2,688.00</Gross>
+		<Commission>268.80</Commission>
+		<Net>2,419.20</Net>
+		<Balance>0.00</Balance>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>N</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>4</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-05T15:59:59</HistoryDate>
 	</BookingHistory>
 </file>

@@ -126,7 +126,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>15</ID>
-		<LastChanged>2011-05-24T12:02:53</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -251,7 +251,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>15</ID>
-		<LastChanged>2011-05-24T12:02:55</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -376,7 +376,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>15</ID>
-		<LastChanged>2011-05-24T12:02:57</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -501,7 +501,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>16</ID>
-		<LastChanged>2011-05-24T12:02:51</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -626,7 +626,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>16</ID>
-		<LastChanged>2011-05-24T12:02:53</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -751,7 +751,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>16</ID>
-		<LastChanged>2011-05-24T12:02:55</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -876,7 +876,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
-		<LastChanged>2011-05-24T12:02:52</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1001,7 +1001,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
-		<LastChanged>2011-05-24T12:02:54</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1126,7 +1126,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
-		<LastChanged>2011-05-24T12:02:56</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1251,7 +1251,7 @@
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
-		<LastChanged>2011-05-24T17:55:29</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1379,7 +1379,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
-		<LastChanged>2011-05-24T17:55:30</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1507,7 +1507,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
-		<LastChanged>2011-05-24T17:55:31</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1635,7 +1635,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>18</ID>
-		<LastChanged>2011-05-24T12:02:52</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1760,7 +1760,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>18</ID>
-		<LastChanged>2011-05-24T12:02:54</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1885,7 +1885,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>18</ID>
-		<LastChanged>2011-05-24T12:02:56</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -2010,7 +2010,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>19</ID>
-		<LastChanged>2011-05-24T12:02:52</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -2135,7 +2135,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>19</ID>
-		<LastChanged>2011-05-24T12:02:54</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -2260,7 +2260,7 @@ product.message.error=The 'Order components' event must occur before booking com
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>19</ID>
-		<LastChanged>2011-05-24T12:02:56</LastChanged>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<BookingPaxID>0</BookingPaxID>

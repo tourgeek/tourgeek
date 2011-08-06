@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ArTrx ID="1">
-		<LastChanged>2010-05-10T04:00:19</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
-		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-03-10T04:00:02</TrxDate>
-		<Amount>-400.00</Amount>
-		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
+		<TrxStatusID>0</TrxStatusID>
+		<TrxDate>2011-09-05T15:59:57</TrxDate>
+		<Amount>2,794.48</Amount>
+		<TrxEntry>2011-08-05T15:59:57</TrxEntry>
 		<TrxUserID>11</TrxUserID>
-		<LinkedTrxID>1</LinkedTrxID>
-		<LinkedTrxDescID>166</LinkedTrxDescID>
+		<LinkedTrxID/>
+		<LinkedTrxDescID/>
 		<BookingID>3</BookingID>
-		<Comments>Deposit</Comments>
-		<DepartureDate>2011-05-02</DepartureDate>
+		<Comments/>
+		<DepartureDate/>
 	</ArTrx>
 	<ArTrx ID="2">
 		<LastChanged>2010-05-10T04:00:19</LastChanged>

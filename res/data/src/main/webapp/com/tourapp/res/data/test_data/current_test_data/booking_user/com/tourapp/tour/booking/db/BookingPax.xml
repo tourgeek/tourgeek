@@ -18,7 +18,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="2">
-		<LastChanged>2010-05-10T03:54:21</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<Sequence>1</Sequence>
@@ -36,7 +36,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="3">
-		<LastChanged>2010-05-10T03:56:14</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<Sequence>0</Sequence>
@@ -54,7 +54,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="4">
-		<LastChanged>2010-05-10T03:56:14</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<Sequence>1</Sequence>
@@ -72,7 +72,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="5">
-		<LastChanged>2010-05-10T03:57:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<Sequence>0</Sequence>
@@ -90,7 +90,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="6">
-		<LastChanged>2010-05-10T03:57:25</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<Sequence>1</Sequence>
@@ -108,7 +108,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="7">
-		<LastChanged>2011-05-24T12:02:31</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<Sequence>0</Sequence>
@@ -126,7 +126,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="8">
-		<LastChanged>2011-05-24T12:02:31</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>4</BookingID>
 		<Sequence>1</Sequence>
