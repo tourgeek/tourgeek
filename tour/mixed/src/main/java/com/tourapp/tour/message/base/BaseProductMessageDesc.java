@@ -27,6 +27,7 @@ import org.jbundle.main.msg.db.*;
 import java.math.*;
 import javax.xml.datatype.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  BaseProductMessageDesc - .
@@ -78,7 +79,7 @@ public class BaseProductMessageDesc extends MessageRecordDesc
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         if (this.getMessage().getMessageHeader() != null)
             if (this.getMessage().getMessageHeader().get(MessageTransport.INITIAL_MESSAGE_DATA_STATUS) != null)

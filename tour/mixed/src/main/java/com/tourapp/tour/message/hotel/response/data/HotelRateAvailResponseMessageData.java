@@ -25,6 +25,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.hotel.response.*;
 import org.jbundle.main.msg.db.base.*;
+import org.jbundle.model.db.*;
 
 /**
  *  HotelRateAvailResponseMessageData - .
@@ -65,7 +66,7 @@ public class HotelRateAvailResponseMessageData extends HotelRateResponseMessageD
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
         BookingHotel recBookingHotel = (BookingHotel)record;

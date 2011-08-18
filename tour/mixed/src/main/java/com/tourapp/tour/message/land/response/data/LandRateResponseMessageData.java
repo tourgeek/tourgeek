@@ -25,6 +25,7 @@ import com.tourapp.tour.message.land.request.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  LandRateResponseMessageData - .
@@ -57,7 +58,7 @@ public class LandRateResponseMessageData extends ProductRateResponseMessageData
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
         BookingLand recBookingLand = (BookingLand)record;

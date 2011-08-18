@@ -25,6 +25,7 @@ import com.tourapp.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.cruise.request.data.*;
+import org.jbundle.model.db.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.cruise.response.*;
 import org.jbundle.main.msg.db.*;
@@ -62,7 +63,7 @@ public class CruiseBookingRequest extends ProductBookingRequest
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         int iStatus = super.checkRequestParams(record);
         if (iStatus == BaseDataStatus.DATA_VALID)

@@ -23,6 +23,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.*;
+import org.jbundle.model.db.*;
 
 /**
  *  BookingMessageData - .
@@ -58,7 +59,7 @@ public class BookingMessageData extends MessageRecordDesc
      * If this method is used, is must be overidden to move the correct fields.
      * @param record The record to get the data from.
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         Booking recBooking = ((BookingDetail)record).getBooking(true);
         int iErrorCode = DBConstants.NORMAL_RETURN;
@@ -74,7 +75,7 @@ public class BookingMessageData extends MessageRecordDesc
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         Booking recBooking = ((BookingDetail)record).getBooking(!record.getField(BookingDetail.kBookingID).isNull());
         for (int iFieldSeq = Booking.kGenericName; iFieldSeq <= Booking.kContact; iFieldSeq++)

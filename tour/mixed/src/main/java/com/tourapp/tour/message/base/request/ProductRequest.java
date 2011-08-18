@@ -28,6 +28,7 @@ import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.*;
+import org.jbundle.model.db.*;
 
 /**
  *  ProductRequest - Cost/Price request (out) message.
@@ -80,7 +81,7 @@ public class ProductRequest extends BaseProductMessageDesc
     /**
      * Make sure this BookingDetail is linked to an ApTrx.
      */
-    public int initBookingApTrx(FieldList record)
+    public int initBookingApTrx(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
         if (!recBookingDetail.getField(BookingDetail.kApTrxID).isNull())
@@ -146,7 +147,7 @@ public class ProductRequest extends BaseProductMessageDesc
      * @param record The BookingDetail record.
      * @return The error code.
      */
-    public int initBookingInventory(FieldList record)
+    public int initBookingInventory(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
         int iErrorCode = DBConstants.NORMAL_RETURN;
@@ -167,7 +168,7 @@ public class ProductRequest extends BaseProductMessageDesc
     /**
      * CheckBookingRequestParams Method.
      */
-    public int checkBookingRequestParams(FieldList record)
+    public int checkBookingRequestParams(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
         int iStatus = BaseDataStatus.DATA_VALID;

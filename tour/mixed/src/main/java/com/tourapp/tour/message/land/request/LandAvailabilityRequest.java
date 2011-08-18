@@ -25,6 +25,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.land.request.data.*;
+import org.jbundle.model.db.*;
 
 /**
  *  LandAvailabilityRequest - .
@@ -69,7 +70,7 @@ public class LandAvailabilityRequest extends ProductAvailabilityRequest
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         int iStatus = super.checkRequestParams(record);
         return iStatus;
@@ -79,7 +80,7 @@ public class LandAvailabilityRequest extends ProductAvailabilityRequest
      * If this method is used, is must be overidden to move the correct fields.
      * @param record The record to get the data from.
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         return super.putRawRecordData(record);
     }

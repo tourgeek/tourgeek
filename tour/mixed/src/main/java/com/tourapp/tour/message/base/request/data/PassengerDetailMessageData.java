@@ -24,6 +24,7 @@ import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.request.*;
+import org.jbundle.model.db.*;
 
 /**
  *  PassengerDetailMessageData - .
@@ -59,7 +60,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iErrorCode = super.getRawRecordData(record);
         Record recBookingPax = (BookingPax)record;
@@ -87,7 +88,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
      * If this method is used, is must be overidden to move the correct fields.
      * @param record The record to get the data from.
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
         
@@ -110,7 +111,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
     /**
      * Does this message only include a single booking detail item?.
      */
-    public boolean isSingleDetail(FieldList record)
+    public boolean isSingleDetail(Rec record)
     {
         return false; // Force read thru
     }
@@ -119,7 +120,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
      * @param record The base record
      * @return The new sub-record (or the base record if there is no new sub-record).
      */
-    public FieldList createSubDataRecord(FieldList record)
+    public Rec createSubDataRecord(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record;
         Booking recBooking = recBookingDetail.getBooking(!record.getField(BookingDetail.kBookingID).isNull());
@@ -132,7 +133,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
      * @param record The record to read from.
      * @return null if error, otherwise return the record.
      */
-    public FieldList readCurrentRecord(FieldList record)
+    public Rec readCurrentRecord(Rec record)
     {
         try {
             BookingPax recBookingPax = (BookingPax)record;

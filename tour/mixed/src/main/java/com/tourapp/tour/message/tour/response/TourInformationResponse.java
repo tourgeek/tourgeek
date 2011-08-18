@@ -22,6 +22,7 @@ import org.jbundle.model.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  TourInformationResponse - .

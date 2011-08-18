@@ -24,6 +24,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.thin.base.message.*;
+import org.jbundle.model.db.*;
 
 /**
  *  ProductResponseMessageData - .
@@ -68,7 +69,7 @@ public class ProductResponseMessageData extends BaseProductMessageData
      * @param record The record to initialize
      * @return An error code if there were any problems.
      */
-    public int initForMessage(FieldList record)
+    public int initForMessage(Rec record)
     {
         int iErrorCode = Constants.NORMAL_RETURN;
         // Do not clear the confirmation fields!
@@ -133,7 +134,7 @@ public class ProductResponseMessageData extends BaseProductMessageData
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;

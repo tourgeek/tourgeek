@@ -22,6 +22,7 @@ import org.jbundle.model.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  TourBookingResponse - .
@@ -54,7 +55,7 @@ public class TourBookingResponse extends ProductBookingResponse
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         // For now, don't extract the detail pricing. It was already add on the costing lookup
         // todo(don) - May want to confirm pricing?

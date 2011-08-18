@@ -25,6 +25,7 @@ import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  BaseProductMessageData - .
@@ -56,7 +57,7 @@ public class BaseProductMessageData extends MessageRecordDesc
     /**
      * Does this message only include a single booking detail item?.
      */
-    public boolean isSingleDetail(FieldList record)
+    public boolean isSingleDetail(Rec record)
     {
         boolean bSingleDetail = super.isSingleDetail(record);
         if (bSingleDetail == false)   // Default is true
@@ -74,7 +75,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iErrorCode = super.getRawRecordData(record);
         Record recBookingDetail = (BookingDetail)record;
@@ -87,7 +88,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * If this method is used, is must be overidden to move the correct fields.
      * @param record The record to get the data from.
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
         
@@ -101,7 +102,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * @param record The base record
      * @return The new sub-record (or the base record if there is no new sub-record).
      */
-    public FieldList createSubDataRecord(FieldList record)
+    public Rec createSubDataRecord(Rec record)
     {
         BookingDetail recBookingDetail = new BookingDetail(Utility.getRecordOwner((Record)record));  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         String strApTrxID = record.getField(BookingDetail.kApTrxID).getString();
@@ -115,7 +116,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * @param record The base record
      * @return The new sub-record (or the base record if there is no new sub-record).
      */
-    public FieldList createSubNodeRecord(FieldList record)
+    public Rec createSubNodeRecord(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record;
         if (recBookingDetail.getListener(SubFileFilter.class) == null)
@@ -131,7 +132,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * @param record The record to read from.
      * @return null if error, otherwise return the record.
      */
-    public FieldList readCurrentRecord(FieldList record)
+    public Rec readCurrentRecord(Rec record)
     {
         try {
             BookingDetail recBookingDetail = (BookingDetail)record;
@@ -202,7 +203,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * @param record The record to free
      * @return True if successful.
      */
-    public boolean freeSubNodeRecord(FieldList record)
+    public boolean freeSubNodeRecord(Rec record)
     {
         m_recTargetFieldList = null;
         // Do NOT call inherited (Do NOT free the sub node record!)
@@ -212,7 +213,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      * Am I using the current record as the data record?
      * @return true if I am.
      */
-    public boolean isCurrentNodeRecord(FieldList record)
+    public boolean isCurrentNodeRecord(Rec record)
     {
         return false;    // Even though I use the current record, I want the record to be updated/written like a separate record
     }

@@ -25,6 +25,7 @@ import com.tourapp.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.tour.request.data.*;
+import org.jbundle.model.db.*;
 import org.jbundle.main.msg.db.*;
 
 /**
@@ -72,7 +73,7 @@ public class TourBookingChangeRequest extends TourBookingRequest
     /**
      * Make sure this BookingDetail is linked to an ApTrx.
      */
-    public int initBookingApTrx(FieldList record)
+    public int initBookingApTrx(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
         if (recBookingDetail.getField(BookingDetail.kVendorID).isNull())

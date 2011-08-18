@@ -26,6 +26,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import java.text.*;
 import com.tourapp.tour.message.base.request.*;
+import org.jbundle.model.db.*;
 
 /**
  *  HotelMessageData - .
@@ -93,7 +94,7 @@ public class HotelMessageData extends ProductMessageData
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         int iStatus = super.checkRequestParams(record);
         if (record.getField(BookingHotel.kNights).isNull())
@@ -114,7 +115,7 @@ public class HotelMessageData extends ProductMessageData
      * @param record The record to initialize
      * @return An error code if there were any problems.
      */
-    public int initForMessage(FieldList record)
+    public int initForMessage(Rec record)
     {
         ((Record)record).getField(BookingHotel.kSingleCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         ((Record)record).getField(BookingHotel.kDoubleCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
@@ -128,7 +129,7 @@ public class HotelMessageData extends ProductMessageData
      * Move the fields of this record to this message
      * (a single Booking Detail record).
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;
@@ -163,7 +164,7 @@ public class HotelMessageData extends ProductMessageData
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         this.getRawFieldData(((Record)record).getField(BookingHotel.kNights));
         

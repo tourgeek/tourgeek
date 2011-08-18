@@ -30,6 +30,7 @@ import java.math.*;
 import javax.xml.datatype.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.model.db.*;
 
 /**
  *  BaseProductResponse - .
@@ -80,7 +81,7 @@ public class BaseProductResponse extends BaseProductMessageDesc
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iErrorCode = Constants.NORMAL_RETURN;
         {

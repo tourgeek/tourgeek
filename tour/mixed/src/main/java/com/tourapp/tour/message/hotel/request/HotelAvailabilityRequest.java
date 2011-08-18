@@ -25,6 +25,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.hotel.request.data.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.model.db.*;
 
 /**
  *  HotelAvailabilityRequest - .
@@ -65,7 +66,7 @@ public class HotelAvailabilityRequest extends ProductAvailabilityRequest
      * If this method is used, is must be overidden to move the correct fields.
      * @param record The record to get the data from.
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         return super.putRawRecordData(record);
     }

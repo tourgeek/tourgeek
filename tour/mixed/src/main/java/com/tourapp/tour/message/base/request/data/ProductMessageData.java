@@ -181,7 +181,7 @@ public class ProductMessageData extends BaseProductMessageData
      * Move the fields of this record to this message
      * (a single Booking Detail record).
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);    // Note: You MUST call SUPER here to keep from looping endlessly
         
@@ -458,7 +458,7 @@ public class ProductMessageData extends BaseProductMessageData
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iErrorCode = Constants.NORMAL_RETURN;
         BookingDetail recBookingDetail = (BookingDetail)record;
@@ -495,7 +495,7 @@ public class ProductMessageData extends BaseProductMessageData
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         int iField = -1;
         if (record.getField(BookingDetail.kInfoStatusID).getValue() != InfoStatus.VALID)

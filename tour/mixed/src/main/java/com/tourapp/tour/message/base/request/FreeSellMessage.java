@@ -22,6 +22,7 @@ import org.jbundle.model.*;
 import com.tourapp.tour.message.base.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  FreeSellMessage - Free sell this item (status is automatically set to VALID).
@@ -56,7 +57,7 @@ public class FreeSellMessage extends BaseProductMessageDesc
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         return BaseDataStatus.VALID;    // Status is always valid for free-sells
     }

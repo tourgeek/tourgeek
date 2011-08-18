@@ -23,6 +23,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  ProductInformationResponse - .
@@ -71,7 +72,7 @@ public class ProductInformationResponse extends BaseProductResponse
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iErrorCode = super.getRawRecordData(record);
         if (iErrorCode == DBConstants.NORMAL_RETURN)

@@ -26,6 +26,7 @@ import com.tourapp.tour.product.item.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
 import org.jbundle.main.msg.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  ItemMessageData - .
@@ -71,7 +72,7 @@ public class ItemMessageData extends ProductMessageData
      * The calling program will change the status if required.
      * @return DATA_REQUIRED if all the data is not present, DATA_VALID if the data is OKAY.
      */
-    public int checkRequestParams(FieldList record)
+    public int checkRequestParams(Rec record)
     {
         return super.checkRequestParams(record);
     }
@@ -81,7 +82,7 @@ public class ItemMessageData extends ProductMessageData
      * @param record The record to initialize
      * @return An error code if there were any problems.
      */
-    public int initForMessage(FieldList record)
+    public int initForMessage(Rec record)
     {
         return super.initForMessage(record);
     }
@@ -98,7 +99,7 @@ public class ItemMessageData extends ProductMessageData
      * Move the fields of this record to this message
      * (a single Booking Detail record).
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingItem recBookingItem = (BookingItem)record;

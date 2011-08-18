@@ -22,6 +22,7 @@ import org.jbundle.model.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  LineMessageData - .
@@ -55,7 +56,7 @@ public class LineMessageData extends MessageRecordDesc
      * Move the map values to the correct record fields.
      * If this method is used, is must be overidden to move the correct fields.
      */
-    public int getRawRecordData(FieldList record)
+    public int getRawRecordData(Rec record)
     {
         int iErrorCode = super.getRawRecordData(record);
         Record recBookingLine = (Record)record;
@@ -74,7 +75,7 @@ public class LineMessageData extends MessageRecordDesc
      * If this method is used, is must be overidden to move the correct fields.
      * @param record The record to get the data from.
      */
-    public int putRawRecordData(FieldList record)
+    public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record); // Create new node
         Record recBookingLine = (Record)record;
@@ -90,7 +91,7 @@ public class LineMessageData extends MessageRecordDesc
     /**
      * Does this message only include a single booking detail item?.
      */
-    public boolean isSingleDetail(FieldList record)
+    public boolean isSingleDetail(Rec record)
     {
         return false; // Force read thru
     }
@@ -99,7 +100,7 @@ public class LineMessageData extends MessageRecordDesc
      * @param record The base record
      * @return The new sub-record (or the base record if there is no new sub-record).
      */
-    public FieldList createSubDataRecord(FieldList record)
+    public Rec createSubDataRecord(Rec record)
     {
         Booking recBooking = ((BookingDetail)record).getBooking(true);
         BookingLine recBookingLine = new BookingLine(Utility.getRecordOwner(recBooking));  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
@@ -111,7 +112,7 @@ public class LineMessageData extends MessageRecordDesc
      * @param record The record to read from.
      * @return null if error, otherwise return the record.
      */
-    public FieldList readCurrentRecord(FieldList record)
+    public Rec readCurrentRecord(Rec record)
     {
         try {
             BookingLine recBookingLine = (BookingLine)record;

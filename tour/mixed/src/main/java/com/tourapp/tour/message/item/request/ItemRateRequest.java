@@ -25,6 +25,7 @@ import com.tourapp.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.item.request.data.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.model.db.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.item.response.*;
