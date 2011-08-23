@@ -12,6 +12,7 @@
   <artifactId>com.tourapp.tour.message.jibx</artifactId>
   <name>tourapp-tour-message-jibx</name>
   <description>JiBX Messaging</description>
+  <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
