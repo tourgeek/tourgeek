@@ -3,14 +3,14 @@
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:48</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-06-24</BookingDate>
+		<BookingDate>2011-08-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID/>
 		<ProfileCode/>
 		<Code/>
 		<Description/>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-06-24T12:02:31</ModDate>
+		<ModDate>2011-08-24T12:02:31</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1/>
@@ -63,20 +63,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-06-24T12:02:48</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:48</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:49</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-06-24</BookingDate>
+		<BookingDate>2011-08-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-06-24T12:02:48</ModDate>
+		<ModDate>2011-08-24T12:02:48</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -115,9 +115,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-07-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-07-04</FinalPaymentDueDate>
-		<NextEventDate>2011-06-24</NextEventDate>
+		<DepositDueDate>2011-09-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
+		<NextEventDate>2011-08-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>0.00</Gross>
 		<Commission>0.00</Commission>
@@ -129,20 +129,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-06-24T12:02:49</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:49</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:50</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-06-24</BookingDate>
+		<BookingDate>2011-08-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-06-24T12:02:49</ModDate>
+		<ModDate>2011-08-24T12:02:49</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -181,9 +181,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-07-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-07-04</FinalPaymentDueDate>
-		<NextEventDate>2011-06-24</NextEventDate>
+		<DepositDueDate>2011-09-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
+		<NextEventDate>2011-08-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,298.00</Gross>
 		<Commission>229.80</Commission>
@@ -195,20 +195,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-06-24T12:02:50</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:50</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:51</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-06-24</BookingDate>
+		<BookingDate>2011-08-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-06-24T12:02:50</ModDate>
+		<ModDate>2011-08-24T12:02:50</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -247,9 +247,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-07-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-07-04</FinalPaymentDueDate>
-		<NextEventDate>2011-06-24</NextEventDate>
+		<DepositDueDate>2011-09-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
+		<NextEventDate>2011-08-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,388.00</Gross>
 		<Commission>238.80</Commission>
@@ -261,20 +261,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-06-24T12:02:51</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:51</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-26T13:50:00</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-06-24</BookingDate>
+		<BookingDate>2011-08-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>-1</EmployeeModID>
-		<ModDate>2011-06-24T12:02:50</ModDate>
+		<ModDate>2011-08-24T12:02:50</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -313,9 +313,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-07-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-07-04</FinalPaymentDueDate>
-		<NextEventDate>2011-06-24</NextEventDate>
+		<DepositDueDate>2011-09-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
+		<NextEventDate>2011-08-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,688.00</Gross>
 		<Commission>268.80</Commission>
@@ -327,6 +327,6 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-06-26T13:50:00</HistoryDate>
+		<HistoryDate>2011-08-26T13:50:00</HistoryDate>
 	</BookingHistory>
 </file>

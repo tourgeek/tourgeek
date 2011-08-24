@@ -8,13 +8,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-08-05T12:00:00</DetailDate>
-		<GMTDate>2011-08-05T12:00:00</GMTDate>
+		<DetailDate>2011-10-05T12:00:00</DetailDate>
+		<GMTDate>2011-10-05T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -47,8 +47,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -122,7 +122,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:51</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:51</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>15</ID>
@@ -133,13 +133,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-08-05T12:00:00</DetailDate>
-		<GMTDate>2011-08-05T12:00:00</GMTDate>
+		<DetailDate>2011-10-05T12:00:00</DetailDate>
+		<GMTDate>2011-10-05T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -172,8 +172,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -247,7 +247,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:53</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:53</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>15</ID>
@@ -258,13 +258,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-08-05T12:00:00</DetailDate>
-		<GMTDate>2011-08-05T12:00:00</GMTDate>
+		<DetailDate>2011-10-05T12:00:00</DetailDate>
+		<GMTDate>2011-10-05T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -297,8 +297,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -372,7 +372,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:55</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:55</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>15</ID>
@@ -383,13 +383,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-08-05T12:00:00</DetailDate>
-		<GMTDate>2011-08-05T12:00:00</GMTDate>
+		<DetailDate>2011-10-05T12:00:00</DetailDate>
+		<GMTDate>2011-10-05T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -422,8 +422,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -497,7 +497,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:57</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:57</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>16</ID>
@@ -508,13 +508,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>28</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-05T08:30:00</DetailDate>
-		<GMTDate>2011-08-05T08:30:00</GMTDate>
+		<DetailDate>2011-10-05T08:30:00</DetailDate>
+		<GMTDate>2011-10-05T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -547,8 +547,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-05T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-05T09:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-05T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-05T09:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -622,7 +622,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:51</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:51</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>16</ID>
@@ -633,13 +633,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>28</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-05T08:30:00</DetailDate>
-		<GMTDate>2011-08-05T08:30:00</GMTDate>
+		<DetailDate>2011-10-05T08:30:00</DetailDate>
+		<GMTDate>2011-10-05T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -672,8 +672,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-05T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-05T09:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-05T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-05T09:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -747,7 +747,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:53</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:53</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>16</ID>
@@ -758,13 +758,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>28</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-05T08:30:00</DetailDate>
-		<GMTDate>2011-08-05T08:30:00</GMTDate>
+		<DetailDate>2011-10-05T08:30:00</DetailDate>
+		<GMTDate>2011-10-05T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -797,8 +797,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-05T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-05T09:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-05T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-05T09:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -872,7 +872,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:55</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:55</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
@@ -883,13 +883,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-06T08:30:00</DetailDate>
-		<GMTDate>2011-08-06T08:30:00</GMTDate>
+		<DetailDate>2011-10-06T08:30:00</DetailDate>
+		<GMTDate>2011-10-06T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -922,8 +922,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-08-06T15:30:00</GMTEndDate>
+		<DetailEndDate>2011-10-06T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T15:30:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -997,7 +997,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:52</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:52</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
@@ -1008,13 +1008,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-06T08:30:00</DetailDate>
-		<GMTDate>2011-08-06T08:30:00</GMTDate>
+		<DetailDate>2011-10-06T08:30:00</DetailDate>
+		<GMTDate>2011-10-06T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1047,8 +1047,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-08-06T15:30:00</GMTEndDate>
+		<DetailEndDate>2011-10-06T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T15:30:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1122,7 +1122,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:54</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:54</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
@@ -1133,13 +1133,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-06T08:30:00</DetailDate>
-		<GMTDate>2011-08-06T08:30:00</GMTDate>
+		<DetailDate>2011-10-06T08:30:00</DetailDate>
+		<GMTDate>2011-10-06T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1172,8 +1172,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-08-06T15:30:00</GMTEndDate>
+		<DetailEndDate>2011-10-06T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T15:30:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1247,7 +1247,7 @@
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:56</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:56</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
@@ -1258,13 +1258,13 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-06T08:30:00</DetailDate>
-		<GMTDate>2011-08-06T08:30:00</GMTDate>
+		<DetailDate>2011-10-06T08:30:00</DetailDate>
+		<GMTDate>2011-10-06T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1297,8 +1297,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-08-06T15:30:00</GMTEndDate>
+		<DetailEndDate>2011-10-06T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T15:30:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1375,7 +1375,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T17:55:29</HistoryDate>
+		<HistoryDate>2011-08-24T17:55:29</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
@@ -1386,13 +1386,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-07T03:14:53</DetailDate>
-		<GMTDate>2011-08-06T08:30:00</GMTDate>
+		<DetailDate>2011-10-07T03:14:53</DetailDate>
+		<GMTDate>2011-10-06T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1425,8 +1425,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-08-06T15:30:00</GMTEndDate>
+		<DetailEndDate>2011-10-06T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T15:30:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1503,7 +1503,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T17:55:30</HistoryDate>
+		<HistoryDate>2011-08-24T17:55:30</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>17</ID>
@@ -1514,13 +1514,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-07T03:14:53</DetailDate>
-		<GMTDate>2011-08-06T08:30:00</GMTDate>
+		<DetailDate>2011-10-07T03:14:53</DetailDate>
+		<GMTDate>2011-10-06T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1553,8 +1553,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-08-06T15:30:00</GMTEndDate>
+		<DetailEndDate>2011-10-06T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T15:30:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1631,7 +1631,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T17:55:31</HistoryDate>
+		<HistoryDate>2011-08-24T17:55:31</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>18</ID>
@@ -1642,13 +1642,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-10T08:30:00</DetailDate>
-		<GMTDate>2011-08-10T08:30:00</GMTDate>
+		<DetailDate>2011-10-10T08:30:00</DetailDate>
+		<GMTDate>2011-10-10T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1681,8 +1681,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T09:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T09:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1756,7 +1756,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:52</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:52</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>18</ID>
@@ -1767,13 +1767,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-10T08:30:00</DetailDate>
-		<GMTDate>2011-08-10T08:30:00</GMTDate>
+		<DetailDate>2011-10-10T08:30:00</DetailDate>
+		<GMTDate>2011-10-10T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1806,8 +1806,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T09:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T09:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -1881,7 +1881,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:54</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:54</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>18</ID>
@@ -1892,13 +1892,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-08-10T08:30:00</DetailDate>
-		<GMTDate>2011-08-10T08:30:00</GMTDate>
+		<DetailDate>2011-10-10T08:30:00</DetailDate>
+		<GMTDate>2011-10-10T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1931,8 +1931,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-10T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-10T09:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-10T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-10T09:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -2006,7 +2006,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:56</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:56</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>19</ID>
@@ -2017,13 +2017,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2011-08-04T12:00:00</DetailDate>
-		<GMTDate>2011-08-04T12:00:00</GMTDate>
+		<DetailDate>2011-10-04T12:00:00</DetailDate>
+		<GMTDate>2011-10-04T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -2056,8 +2056,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-04T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-04T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-04T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-04T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -2131,7 +2131,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:52</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:52</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>19</ID>
@@ -2142,13 +2142,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2011-08-04T12:00:00</DetailDate>
-		<GMTDate>2011-08-04T12:00:00</GMTDate>
+		<DetailDate>2011-10-04T12:00:00</DetailDate>
+		<GMTDate>2011-10-04T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -2181,8 +2181,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-04T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-04T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-04T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-04T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -2256,7 +2256,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:54</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:54</HistoryDate>
 	</BookingDetailHistory>
 	<BookingDetailHistory>
 		<ID>19</ID>
@@ -2267,13 +2267,13 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-08-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2011-08-04T12:00:00</DetailDate>
-		<GMTDate>2011-08-04T12:00:00</GMTDate>
+		<DetailDate>2011-10-04T12:00:00</DetailDate>
+		<GMTDate>2011-10-04T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -2306,8 +2306,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-04T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-08-04T12:00:00</GMTEndDate>
+		<DetailEndDate>2011-10-04T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-04T12:00:00</GMTEndDate>
 		<MealSummary/>
 		<StatusSummary/>
 		<ItineraryDesc/>
@@ -2381,6 +2381,6 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AskForAnswer/>
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
-		<HistoryDate>2011-06-24T12:02:56</HistoryDate>
+		<HistoryDate>2011-08-24T12:02:56</HistoryDate>
 	</BookingDetailHistory>
 </file>
