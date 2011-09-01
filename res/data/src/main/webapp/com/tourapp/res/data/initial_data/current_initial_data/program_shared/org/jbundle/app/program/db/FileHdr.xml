@@ -6,15 +6,15 @@
 		<FileDesc>General Ledger Chart of Accounts file</FileDesc>
 		<FileMainFilename>Account</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>NOTE: May want to add key for account name for later
-</FileNotes>
+		<FileNotes><![CDATA[NOTE: May want to add key for account name for later
+]]></FileNotes>
 		<DatabaseName>genled</DatabaseName>
 		<FileRecCalled>Chart of accounts</FileRecCalled>
 		<DisplayClass>AccountGridScreen</DisplayClass>
 		<MaintClass>AccountScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="2">
-		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AccountBudget</FileName>
 		<FileDesc>Budget &amp; Comparatives file</FileDesc>
@@ -27,7 +27,7 @@
 		<MaintClass>AccountBudgetScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="3">
-		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AcctBatch</FileName>
 		<FileDesc>G/L Transactions Batch Header file</FileDesc>
@@ -40,7 +40,7 @@
 		<MaintClass>AcctBatchScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="4">
-		<LastChanged>2007-09-08T20:00:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AcctBatchDetail</FileName>
 		<FileDesc>G/L Journal entries - transaction file</FileDesc>
@@ -53,22 +53,22 @@
 		<MaintClass>AcctBatchDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="5">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AcctDetail</FileName>
 		<FileDesc>General Journal file - G/L detail</FileDesc>
 		<FileMainFilename>AcctDetail</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>Note: May want to add system code, so the transaction can be tracked
+		<FileNotes><![CDATA[Note: May want to add system code, so the transaction can be tracked
 back to the originating system.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>genled</DatabaseName>
 		<FileRecCalled>G/L transactions</FileRecCalled>
 		<DisplayClass/>
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="6">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AcctDetailDist</FileName>
 		<FileDesc>G/L Detail Distribution File</FileDesc>
@@ -81,7 +81,7 @@ back to the originating system.
 		<MaintClass>AcctDetailDistScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="7">
-		<LastChanged>2009-11-18T21:33:38</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AddressType</FileName>
 		<FileDesc>Address Type (Home/Office)</FileDesc>
@@ -94,7 +94,7 @@ back to the originating system.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="8">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AdGlDist</FileName>
 		<FileDesc>A/D system G/L distribution file</FileDesc>
@@ -107,7 +107,7 @@ back to the originating system.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="9">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Affiliation</FileName>
 		<FileDesc>Agency affiliations master file</FileDesc>
@@ -120,7 +120,7 @@ back to the originating system.
 		<MaintClass>AffiliationScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="10">
-		<LastChanged>2009-11-18T21:33:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Airline</FileName>
 		<FileDesc>Airline file</FileDesc>
@@ -133,7 +133,7 @@ back to the originating system.
 		<MaintClass>AirlineScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="13">
-		<LastChanged>2007-09-08T19:34:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ApControl</FileName>
 		<FileDesc>A/P Control File</FileDesc>
@@ -146,13 +146,13 @@ back to the originating system.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="14">
-		<LastChanged>2007-10-22T02:31:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ApTrx</FileName>
 		<FileDesc>Accounts Payable Open Item File</FileDesc>
 		<FileMainFilename>ApTrx</FileMainFilename>
 		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes>FILE DESCRIPTION:
+		<FileNotes><![CDATA[FILE DESCRIPTION:
 
 This file is used for Tour order/Voucher control and A/P detail.
 (A tour order should become the basis of an A/P detail)
@@ -200,40 +200,40 @@ AP_GL_STATUS - G/L or Vchr stat - What type of U/D needs to be done next
 10 REQ_REPRT - Request the voucher be re-printed
   (Set if orig. already printed)
 11 MAN_FINL - Manually entered finalization estimate
-12 DEP_TYPE - Departure estimate update --&gt; 12
-(BK_TOUR)(BK_TOUR)Cost of Tours Sold 100.00 (AP_DEP_EST_USD-&gt;GL)
-  (CNTRL-&gt;AP_EST_GL)Uninvoiced Tour Cost 100.00
-13 IN_TYPE - Invoice update --&gt; 16
+12 DEP_TYPE - Departure estimate update --> 12
+(BK_TOUR)(BK_TOUR)Cost of Tours Sold 100.00 (AP_DEP_EST_USD->GL)
+  (CNTRL->AP_EST_GL)Uninvoiced Tour Cost 100.00
+13 IN_TYPE - Invoice update --> 16
 (INV_ENT)(AP_EST_GL)Uninvoiced Tour Cost 100.00  (AP_DEP_EST_GL)
-  (CNTRL-&gt;OVER_UNDER)Over/Under estimate   1.00
-  (CNTRL-&gt;AP_ACCT)Accounts Payable   101.00  (INV_AMT-&gt;GL)
-14 CM_TYPE - Credit Memo update --&gt; 16
-(INV_ENT)(AP_EST_GL)Printing Expense?? 200.00  (AP_DEP_EST_USD-&gt;GL)
-  (CNTL-&gt;AP_ACCT)Accounts Payable 200.00 (INV_AMT-&gt;GL)
-15  PU_TYPE - Prepayment Paid Update --&gt;
-(CK_DATE)(CNTL-&gt;AP_ACCT)Prepayment  150.00 (INV_AMT-&gt;INV_GL)
-  (AP_HIST&gt;AD_ACCT)Cash   150.00 (HIST_AMT
-16  DM_TYPE - Debit Memo update --&gt;
-(CK_DATE)(CNTL-&gt;AP_ACCT)Prepayment  170.00 (INV_AMT-&gt;INV_GL)
+  (CNTRL->OVER_UNDER)Over/Under estimate   1.00
+  (CNTRL->AP_ACCT)Accounts Payable   101.00  (INV_AMT->GL)
+14 CM_TYPE - Credit Memo update --> 16
+(INV_ENT)(AP_EST_GL)Printing Expense?? 200.00  (AP_DEP_EST_USD->GL)
+  (CNTL->AP_ACCT)Accounts Payable 200.00 (INV_AMT->GL)
+15  PU_TYPE - Prepayment Paid Update -->
+(CK_DATE)(CNTL->AP_ACCT)Prepayment  150.00 (INV_AMT->INV_GL)
+  (AP_HIST>AD_ACCT)Cash   150.00 (HIST_AMT
+16  DM_TYPE - Debit Memo update -->
+(CK_DATE)(CNTL->AP_ACCT)Prepayment  170.00 (INV_AMT->INV_GL)
    Advertising expense 170.00
-17 PA_TYPE - Payment Applied Update --&gt; 6 or 0 (if bal = 0)
-(CK_DATE-&gt;PYMT_DATE)(AP_ACCT)Accounts Payable 100.00 (INV_GL)
- (CNTL-&gt;GAIN_LOSS)Gain/Loss on curr.  10.00 (-&gt;GAIN/LOSS G/L)
-  (AP_HIST&gt;AD_ACCT)Cash  110.00 (AP_HIST_AMT)
+17 PA_TYPE - Payment Applied Update --> 6 or 0 (if bal = 0)
+(CK_DATE->PYMT_DATE)(AP_ACCT)Accounts Payable 100.00 (INV_GL)
+ (CNTL->GAIN_LOSS)Gain/Loss on curr.  10.00 (->GAIN/LOSS G/L)
+  (AP_HIST>AD_ACCT)Cash  110.00 (AP_HIST_AMT)
 
 Note: No G/L entries are required for broker payments, as long as the
  cash account numbers are transfered to the invoices at the
  time of payment.
 
 NOTE: GET RID OF AP_OPEN_VENDOR IN KEY #6
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>acctpay</DatabaseName>
 		<FileRecCalled>A/P Open Item</FileRecCalled>
 		<DisplayClass/>
 		<MaintClass>ApTrxScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="15">
-		<LastChanged>2007-09-08T19:33:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ArControl</FileName>
 		<FileDesc>A/R Control File</FileDesc>
@@ -246,13 +246,13 @@ NOTE: GET RID OF AP_OPEN_VENDOR IN KEY #6
 		<MaintClass>ArControlScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="16">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ArTrx</FileName>
 		<FileDesc>Accounts Receivable Open Item file</FileDesc>
 		<FileMainFilename>ArTrx</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>The A/R open item file is not used until the booking is accepted by
+		<FileNotes><![CDATA[The A/R open item file is not used until the booking is accepted by
 the customer. Acceptance is defined as changing the booking status to
 "OK" or receiving the first payment.
 
@@ -274,7 +274,7 @@ AR_POSTED: G/L Posting status
   ACTION DATE is the transaction date
  1 - Request refund (also not posted yet)
   ACTION DATE is the trx date
- 2 - Post the Departure update (Type "I &amp; A" only)
+ 2 - Post the Departure update (Type "I & A" only)
   ACTION DATE is the departure date
  3 - Posted, no more action is required
   ACTION DATE is the transaction date
@@ -298,21 +298,21 @@ AR_ACCT is the Accounts Receivable account. If the amount is positive,
  the amount is a Debit on the booking date, negative is credit.
 AR_ACCT_BK is the counter - A/R account posted on the booking date.
 AR_ACCT_DR is the counter - BK account posted on the departure date.
-  (Type I &amp; A only)
+  (Type I & A only)
 AR_ACTION - Next trx or departure date
 
 Warning: These account numbers are supplied by the A/R G/L posting
  program at posting time. Do not supply an account number unless
  you want to override the information in the booking's tour
  header.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>acctrec</DatabaseName>
 		<FileRecCalled>Open Item</FileRecCalled>
 		<DisplayClass>CrDrGridScreen</DisplayClass>
 		<MaintClass>CrDrScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="17">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Asset</FileName>
 		<FileDesc>Fixed Assets</FileDesc>
@@ -325,7 +325,7 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<MaintClass>AssetScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="18">
-		<LastChanged>2007-09-08T19:34:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AssetDrControl</FileName>
 		<FileDesc>Asset Debt System Control File</FileDesc>
@@ -338,7 +338,7 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<MaintClass>AssetDrControlScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="19">
-		<LastChanged>2007-09-08T20:01:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AssetDepreciation</FileName>
 		<FileDesc>Depreciation history</FileDesc>
@@ -351,7 +351,7 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<MaintClass>AssetDepreciationScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="20">
-		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AutoDist</FileName>
 		<FileDesc>Auto Distribution Description File</FileDesc>
@@ -364,7 +364,7 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<MaintClass>AutoDistScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="21">
-		<LastChanged>2007-09-08T19:37:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AutoDistDetail</FileName>
 		<FileDesc>Auto Distribution Detail</FileDesc>
@@ -377,7 +377,7 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<MaintClass>AutoDistDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="22">
-		<LastChanged>2007-01-30T15:23:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BankAcct</FileName>
 		<FileDesc>Bank account file</FileDesc>
@@ -390,25 +390,25 @@ Warning: These account numbers are supplied by the A/R G/L posting
 		<MaintClass>BankAcctScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="23">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BankTrx</FileName>
 		<FileDesc>Checking account transactions</FileDesc>
 		<FileMainFilename>BankTrx</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>Might want to enter date/time for transaction number for non checks.
+		<FileNotes><![CDATA[Might want to enter date/time for transaction number for non checks.
 
 Types: C - Checks
  D - Deposit
 
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>assetdr</DatabaseName>
 		<FileRecCalled>Transaction</FileRecCalled>
 		<DisplayClass>BankTrxBatchGridScreen</DisplayClass>
 		<MaintClass>BankTrxBatchScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="24">
-		<LastChanged>2007-09-08T20:01:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BankTrxBatchDetail</FileName>
 		<FileDesc>Bank Transaction batch file</FileDesc>
@@ -421,7 +421,7 @@ Types: C - Checks
 		<MaintClass>BankTrxBatchDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="25">
-		<LastChanged>2007-09-08T20:01:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BankTrxBatchDist</FileName>
 		<FileDesc>Bank Trx Distribution Detail</FileDesc>
@@ -434,7 +434,7 @@ Types: C - Checks
 		<MaintClass>BankTrxBatchDistScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="26">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BkDocHist</FileName>
 		<FileDesc>Booking documentation history</FileDesc>
@@ -447,7 +447,7 @@ Types: C - Checks
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="27">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BkDocMaster</FileName>
 		<FileDesc>Master conversion for documents</FileDesc>
@@ -460,7 +460,7 @@ Types: C - Checks
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="28">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BkGroup</FileName>
 		<FileDesc>Booking group</FileDesc>
@@ -473,13 +473,13 @@ Types: C - Checks
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="31">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Booking</FileName>
 		<FileDesc>Booking Header file</FileDesc>
 		<FileMainFilename>Booking</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>The booking status is as follows:
+		<FileNotes><![CDATA[The booking status is as follows:
  OK - OK booking - Pax have accepted, money request(ed)
  XL - Booking canceled
  RQ - Awaiting Confirmation of services (tour has same status)
@@ -601,14 +601,14 @@ has the previous data.
 
 Remember, for a first-time booking the NEXT_MOD number is 0. All
 current logic will create the correct files with this MOD.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Booking</FileRecCalled>
 		<DisplayClass>BookingGridScreen</DisplayClass>
 		<MaintClass>BookingMenuScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="32">
-		<LastChanged>2007-09-08T19:36:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingAnswer</FileName>
 		<FileDesc>Booking Answer Detail</FileDesc>
@@ -621,7 +621,7 @@ current logic will create the correct files with this MOD.
 		<MaintClass>BookingAnswerScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="33">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingCar</FileName>
 		<FileDesc>Rental Car detail file</FileDesc>
@@ -634,7 +634,7 @@ current logic will create the correct files with this MOD.
 		<MaintClass>BookingCarScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="34">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingCommentHist</FileName>
 		<FileDesc>Comment History file</FileDesc>
@@ -647,13 +647,13 @@ current logic will create the correct files with this MOD.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="35">
-		<LastChanged>2007-09-08T19:49:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingControl</FileName>
 		<FileDesc>Booking system control file</FileDesc>
 		<FileMainFilename>BookingControl</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>FILE DESCRIPTION:
+		<FileNotes><![CDATA[FILE DESCRIPTION:
 
 This is the control file for the booking system.
 
@@ -663,14 +663,14 @@ Add:
  Use: Mail/Fax/cable/Telex
  Cut off days to use: Telex/Fax
  (This info might be added to the vendor file)
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Control</FileRecCalled>
 		<DisplayClass/>
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="36">
-		<LastChanged>2009-07-11T03:15:47</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingHistory</FileName>
 		<FileDesc>Tour/Booking history file</FileDesc>
@@ -683,13 +683,13 @@ Add:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="37">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingHotel</FileName>
 		<FileDesc>Hotel Detail file (Booking detail)</FileDesc>
 		<FileMainFilename>BookingDetail</FileMainFilename>
 		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes>The field HDET_VOUCHER is not really required. It is only there
+		<FileNotes><![CDATA[The field HDET_VOUCHER is not really required. It is only there
 to speed up the voucher revising program (BK_V_HOTEL). Instead of
 having to read through all the A/P detail to see if an A/P detail
 exists for this land, all you have to do is read the A/P detail.
@@ -697,14 +697,14 @@ exists for this land, all you have to do is read the A/P detail.
 Next time, add a local room and meal cost field:
 Then make the USD fields Non-existent in the record.
 This makes the A/P estimate program much easier!
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Hotel</FileRecCalled>
 		<DisplayClass>BookingHotelGridScreen</DisplayClass>
 		<MaintClass>BookingHotelScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="39">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingLand</FileName>
 		<FileDesc>Land Detail File</FileDesc>
@@ -717,13 +717,13 @@ This makes the A/P estimate program much easier!
 		<MaintClass>BookingLandScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="41">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingLine</FileName>
 		<FileDesc>Booking line item file</FileDesc>
 		<FileMainFilename>BookingLine</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>The "Manual" field is here if the booking is modified. If it is
+		<FileNotes><![CDATA[The "Manual" field is here if the booking is modified. If it is
 modified, everything but the manual fields will be deleted (mod) and
 the new line items will be added.
 
@@ -734,14 +734,14 @@ for manually entered fields:
  (A)gent item (not included in A/P)
 
 FULLY_COMMABLE is only for manually entered fields.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Line item</FileRecCalled>
 		<DisplayClass>BookingLineGridScreen</DisplayClass>
 		<MaintClass>BookingLineScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="42">
-		<LastChanged>2009-07-11T03:16:27</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingLineHistory</FileName>
 		<FileDesc>Line item History</FileDesc>
@@ -754,7 +754,7 @@ FULLY_COMMABLE is only for manually entered fields.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="43">
-		<LastChanged>2007-10-07T01:29:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingLookup</FileName>
 		<FileDesc>Booking Lookup Query</FileDesc>
@@ -767,13 +767,13 @@ FULLY_COMMABLE is only for manually entered fields.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="44">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingPax</FileName>
 		<FileDesc>Passenger detail file</FileDesc>
 		<FileMainFilename>BookingPax</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>The rooming code is coded as follows:
+		<FileNotes><![CDATA[The rooming code is coded as follows:
  0 - Twin or triple extra passenger (must be in sequence)
  1 - Single passenger
   (If share seq = 0, single)
@@ -792,14 +792,14 @@ Need to add more types for operations:
 - Twin/Double
 - Child share
 - Other pax types (non-skiers)
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Passenger</FileRecCalled>
 		<DisplayClass>BookingPaxGridScreen</DisplayClass>
 		<MaintClass>BookingPaxScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="45">
-		<LastChanged>2009-11-18T21:34:27</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingStatus</FileName>
 		<FileDesc>Booking Status Table</FileDesc>
@@ -812,7 +812,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="46">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BrochuresByBundleName</FileName>
 		<FileDesc>Brochures by Bundle Name</FileDesc>
@@ -825,7 +825,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="47">
-		<LastChanged>2007-09-08T19:52:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Bundle</FileName>
 		<FileDesc>Brochure Bundle Header</FileDesc>
@@ -838,7 +838,7 @@ Need to add more types for operations:
 		<MaintClass>BundleScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="48">
-		<LastChanged>2007-09-08T19:53:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BundleDetail</FileName>
 		<FileDesc>Brochure Bundle Detail</FileDesc>
@@ -851,7 +851,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="49">
-		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Car</FileName>
 		<FileDesc>Rent-a-car file</FileDesc>
@@ -864,7 +864,7 @@ Need to add more types for operations:
 		<MaintClass>CarScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="50">
-		<LastChanged>2009-11-18T21:34:39</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CarClass</FileName>
 		<FileDesc>Rental Car Class</FileDesc>
@@ -877,7 +877,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="51">
-		<LastChanged>2009-11-18T21:34:47</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Card</FileName>
 		<FileDesc>Credit card type</FileDesc>
@@ -890,7 +890,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="52">
-		<LastChanged>2007-09-08T19:34:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CashBatch</FileName>
 		<FileDesc>A/R Cash Receipts batch header</FileDesc>
@@ -903,7 +903,7 @@ Need to add more types for operations:
 		<MaintClass>CashBatchScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="53">
-		<LastChanged>2007-09-08T19:33:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CashBatchDetail</FileName>
 		<FileDesc>Cash Receipts Batch Entry file</FileDesc>
@@ -916,7 +916,7 @@ Need to add more types for operations:
 		<MaintClass>CashBatchDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="55">
-		<LastChanged>2009-11-18T21:34:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CertificationType</FileName>
 		<FileDesc>Certification Type</FileDesc>
@@ -929,7 +929,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="56">
-		<LastChanged>2009-11-18T21:34:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>City</FileName>
 		<FileDesc>Airport file</FileDesc>
@@ -942,7 +942,7 @@ Need to add more types for operations:
 		<MaintClass>CityScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="59">
-		<LastChanged>2007-09-08T19:38:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CompanyInfo</FileName>
 		<FileDesc>Company Information</FileDesc>
@@ -955,7 +955,7 @@ Need to add more types for operations:
 		<MaintClass>CompanyInfoScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="60">
-		<LastChanged>2009-11-18T21:34:59</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Continent</FileName>
 		<FileDesc>Continent File</FileDesc>
@@ -968,7 +968,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="61">
-		<LastChanged>2009-11-18T21:35:01</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CostStatus</FileName>
 		<FileDesc>Cost Lookup Status Table</FileDesc>
@@ -981,7 +981,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="62">
-		<LastChanged>2009-11-18T21:35:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Country</FileName>
 		<FileDesc>Country file</FileDesc>
@@ -994,7 +994,7 @@ Need to add more types for operations:
 		<MaintClass>CountryScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="63">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CreditCard</FileName>
 		<FileDesc>Credit card detail file</FileDesc>
@@ -1007,7 +1007,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="64">
-		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Cruise</FileName>
 		<FileDesc>Cruise Product File</FileDesc>
@@ -1020,7 +1020,7 @@ Need to add more types for operations:
 		<MaintClass>CruiseScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="65">
-		<LastChanged>2009-11-18T21:35:06</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Currencys</FileName>
 		<FileDesc>Currency file</FileDesc>
@@ -1033,7 +1033,7 @@ Need to add more types for operations:
 		<MaintClass>CurrencysScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="66">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingDetail</FileName>
 		<FileDesc>Product Detail</FileDesc>
@@ -1046,7 +1046,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="67">
-		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Deduction</FileName>
 		<FileDesc>Deduction/Earnings codes file</FileDesc>
@@ -1059,7 +1059,7 @@ Need to add more types for operations:
 		<MaintClass>DeductionScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="68">
-		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Department</FileName>
 		<FileDesc>Department codes</FileDesc>
@@ -1072,7 +1072,7 @@ Need to add more types for operations:
 		<MaintClass>DepartmentScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="69">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Document</FileName>
 		<FileDesc>Profile document</FileDesc>
@@ -1085,7 +1085,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="71">
-		<LastChanged>2009-11-18T21:35:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>EAddressType</FileName>
 		<FileDesc>Electronic Address Type</FileDesc>
@@ -1098,7 +1098,7 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="72">
-		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Employee</FileName>
 		<FileDesc>Employee file</FileDesc>
@@ -1111,7 +1111,7 @@ Need to add more types for operations:
 		<MaintClass>EmployeeScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="73">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>EmployeeBuiltin</FileName>
 		<FileDesc>Employee Query</FileDesc>
@@ -1124,13 +1124,13 @@ Need to add more types for operations:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="74">
-		<LastChanged>2007-09-08T19:40:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>EmployeeControl</FileName>
 		<FileDesc>Employee control file</FileDesc>
 		<FileMainFilename>EmployeeControl</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>Later, information should be added to this file so that periodic
+		<FileNotes><![CDATA[Later, information should be added to this file so that periodic
 payments of employee taxes can be made automatically. The checks
 could automatically be queued to the A/P system to be printed payable
 to the proper payee.
@@ -1142,14 +1142,14 @@ Add:
  SDI
  FUTA
  SUI
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>payroll</DatabaseName>
 		<FileRecCalled>Control</FileRecCalled>
 		<DisplayClass>EmployeeControlScreen</DisplayClass>
 		<MaintClass>EmployeeControlScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="75">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>EmployeeLookup</FileName>
 		<FileDesc>Employee Lookup Query</FileDesc>
@@ -1162,7 +1162,7 @@ Add:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="76">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>EmployeeQuery</FileName>
 		<FileDesc>Employee Limited Field Query</FileDesc>
@@ -1175,7 +1175,7 @@ Add:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="77">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Extension</FileName>
 		<FileDesc>Vendor Specific Profile Extension</FileDesc>
@@ -1188,7 +1188,7 @@ Add:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="80">
-		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>FinStmt</FileName>
 		<FileDesc>Financial Statement</FileDesc>
@@ -1201,7 +1201,7 @@ Add:
 		<MaintClass>FinStmtScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="81">
-		<LastChanged>2007-09-08T19:38:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>FinStmtDetail</FileName>
 		<FileDesc>Financial Statements detail</FileDesc>
@@ -1214,7 +1214,7 @@ Add:
 		<MaintClass>FinStmtDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="82">
-		<LastChanged>2007-09-08T19:38:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>FinStmtHeader</FileName>
 		<FileDesc>Financial Statement header</FileDesc>
@@ -1227,7 +1227,7 @@ Add:
 		<MaintClass>FinStmtHeaderScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="83">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>FinStmtQuery</FileName>
 		<FileDesc>Financial Statements Query</FileDesc>
@@ -1240,7 +1240,7 @@ Add:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="85">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HistoryDisplay</FileName>
 		<FileDesc>Brochure History Query</FileDesc>
@@ -1253,22 +1253,22 @@ Add:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="86">
-		<LastChanged>2009-04-17T13:28:12</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Hotel</FileName>
 		<FileDesc>Hotel file</FileDesc>
 		<FileMainFilename>Hotel</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>Note: This information does NOT change from year-to-year. This is
+		<FileNotes><![CDATA[Note: This information does NOT change from year-to-year. This is
 the hotel information header.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Hotel</FileRecCalled>
 		<DisplayClass>HotelGridScreen</DisplayClass>
 		<MaintClass>HotelScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="87">
-		<LastChanged>2009-11-18T21:36:02</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelClass</FileName>
 		<FileDesc>Hotel Class Table</FileDesc>
@@ -1281,7 +1281,7 @@ the hotel information header.
 		<MaintClass>HotelClassScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="88">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelList</FileName>
 		<FileDesc>Hotel list for the Product Display</FileDesc>
@@ -1294,7 +1294,7 @@ the hotel information header.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="89">
-		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelMealPricing</FileName>
 		<FileDesc>Hotel Meal Pricing file</FileDesc>
@@ -1307,13 +1307,13 @@ the hotel information header.
 		<MaintClass>HotelMealPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="90">
-		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelPricing</FileName>
 		<FileDesc>Hotel Detail Pricing File</FileDesc>
 		<FileMainFilename>HotelPricing</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>FILE DESCRIPTION:
+		<FileNotes><![CDATA[FILE DESCRIPTION:
 
 This file holds the pricing information of the hotel file.
 
@@ -1321,14 +1321,14 @@ The USE_RATE_TYPE and USE_CLASS fields are used when a rate type
 doesn't apply. For example, for rate type "B" (Blocked room), the
 USE rate type would probally by "F"/"R" (FIT/Run of the house).
 Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Room Rate</FileRecCalled>
 		<DisplayClass>HotelPricingGridScreen</DisplayClass>
 		<MaintClass>HotelPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="91">
-		<LastChanged>2009-11-18T21:36:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelRate</FileName>
 		<FileDesc>Rate file</FileDesc>
@@ -1341,7 +1341,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass>HotelRateScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="92">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Interest</FileName>
 		<FileDesc>Profile travel interest</FileDesc>
@@ -1354,21 +1354,21 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="93">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Inventory</FileName>
 		<FileDesc>Inventory Detail File</FileDesc>
 		<FileMainFilename>Inventory</FileMainFilename>
 		<Type>REMOTE | BASE_TABLE_CLASS | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes>This file is used for; Tours, Hotels, Land, Transportation, and Air.
-</FileNotes>
+		<FileNotes><![CDATA[This file is used for; Tours, Hotels, Land, Transportation, and Air.
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled/>
 		<DisplayClass/>
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="94">
-		<LastChanged>2009-11-18T21:36:30</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>InventoryStatus</FileName>
 		<FileDesc>Inventory Lookup Status</FileDesc>
@@ -1381,7 +1381,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="95">
-		<LastChanged>2007-09-08T19:52:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Brochure</FileName>
 		<FileDesc>Brochure Header file</FileDesc>
@@ -1394,7 +1394,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="97">
-		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Land</FileName>
 		<FileDesc>Land File</FileDesc>
@@ -1407,7 +1407,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass>LandScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="98">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandList</FileName>
 		<FileDesc>Land List for the Product Display</FileDesc>
@@ -1420,7 +1420,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="99">
-		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandPricing</FileName>
 		<FileDesc>Land detail pricing file</FileDesc>
@@ -1433,7 +1433,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass>LandPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="100">
-		<LastChanged>2009-11-18T21:36:44</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandVaries</FileName>
 		<FileDesc>Varies descriptions</FileDesc>
@@ -1446,7 +1446,7 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass>LandVariesScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="101">
-		<LastChanged>2009-11-18T21:36:48</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Language</FileName>
 		<FileDesc>Language File</FileDesc>
@@ -1459,13 +1459,13 @@ Or "F"/"S" (FIT - Standard room) might go to "F"/"R".
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="104">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Mco</FileName>
 		<FileDesc>MCO Detail &amp; Transaction file</FileDesc>
 		<FileMainFilename>Mco</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>The MCO status codes are as follows:
+		<FileNotes><![CDATA[The MCO status codes are as follows:
 
 1 - Entered
 2 - Posted
@@ -1482,14 +1482,14 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 - On MCO submission to carriers, this account is updated with the
   MCO receivable account, so when the actual amount is received the
   variance can be properly distributed.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>acctrec</DatabaseName>
 		<FileRecCalled>MCO</FileRecCalled>
 		<DisplayClass>McoGridScreen</DisplayClass>
 		<MaintClass>McoScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="105">
-		<LastChanged>2009-11-18T21:36:55</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>MealPlan</FileName>
 		<FileDesc>Meal Plans</FileDesc>
@@ -1502,7 +1502,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<MaintClass>MealPlanScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="106">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Memberships</FileName>
 		<FileDesc>Profile Memberships</FileDesc>
@@ -1515,7 +1515,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="109">
-		<LastChanged>2009-11-18T21:36:58</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PaxCategory</FileName>
 		<FileDesc>Passenger room category file</FileDesc>
@@ -1528,7 +1528,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="110">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PaxGroup</FileName>
 		<FileDesc>Pax Group Table</FileDesc>
@@ -1541,7 +1541,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="111">
-		<LastChanged>2009-11-18T21:37:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PaymentCode</FileName>
 		<FileDesc>Payment Code Table</FileDesc>
@@ -1554,7 +1554,7 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="112">
-		<LastChanged>2009-11-18T21:37:25</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PaymentCycle</FileName>
 		<FileDesc>Payment Cycles</FileDesc>
@@ -1567,13 +1567,13 @@ The field AR_MCO_GL_ACCT is used for two different purposes:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="113">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PaymentHistory</FileName>
 		<FileDesc>Accounts Payable Payment History file</FileDesc>
 		<FileMainFilename>PaymentHistory</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>FIELD DESCRIPTIONS:
+		<FileNotes><![CDATA[FIELD DESCRIPTIONS:
 
 AP_HIST_TYPE - Type of payment
  A - Check
@@ -1594,14 +1594,14 @@ AP_HIST_APPL_GL - Amount this payment reduced the AP_VEN_INV_USD
  rounding on payments. ie., a dep est of HKD300 is estimated
  at USD100. three payments of HKD100 would be re-created at
  reductions of USD33.33 each)
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>acctpay</DatabaseName>
 		<FileRecCalled>Payment History</FileRecCalled>
 		<DisplayClass>PaymentHistoryGridScreen</DisplayClass>
 		<MaintClass>PaymentHistoryScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="114">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PaymentRequest</FileName>
 		<FileDesc>Check request header file</FileDesc>
@@ -1614,23 +1614,23 @@ AP_HIST_APPL_GL - Amount this payment reduced the AP_VEN_INV_USD
 		<MaintClass>PaymentRequestScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="115">
-		<LastChanged>2007-09-08T20:02:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PayrollHistory</FileName>
 		<FileDesc>Payroll history file</FileDesc>
 		<FileMainFilename>PayrollHistory</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>This file should also have the codes, amounts, (and G/L numbers) of
+		<FileNotes><![CDATA[This file should also have the codes, amounts, (and G/L numbers) of
 any special deductions, so when a check is voided, the G/L entry can 
 be reversed and the YTD, etc. amounts can be adjusted down.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>payroll</DatabaseName>
 		<FileRecCalled/>
 		<DisplayClass/>
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="116">
-		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Period</FileName>
 		<FileDesc>G/L Accounting Periods</FileDesc>
@@ -1643,7 +1643,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="117">
-		<LastChanged>2009-11-18T21:37:52</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PrepayType</FileName>
 		<FileDesc>Prepayment Types</FileDesc>
@@ -1656,7 +1656,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="118">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PrHistGl</FileName>
 		<FileDesc>G/L Detail for PR_HIST</FileDesc>
@@ -1669,7 +1669,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="119">
-		<LastChanged>2007-09-08T20:02:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Product</FileName>
 		<FileDesc>Product (abstract)</FileDesc>
@@ -1682,7 +1682,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="120">
-		<LastChanged>2009-11-18T21:37:59</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductCategory</FileName>
 		<FileDesc>Product category file</FileDesc>
@@ -1695,7 +1695,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="121">
-		<LastChanged>2009-11-20T00:53:42</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductList</FileName>
 		<FileDesc>Product List</FileDesc>
@@ -1708,7 +1708,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="122">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductMerge</FileName>
 		<FileDesc>Product Merge File</FileDesc>
@@ -1721,7 +1721,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="123">
-		<LastChanged>2009-11-18T21:38:02</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductStatus</FileName>
 		<FileDesc>Cust Sale Detail Status</FileDesc>
@@ -1734,7 +1734,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="124">
-		<LastChanged>2009-11-18T21:38:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductTerms</FileName>
 		<FileDesc>Term Codes</FileDesc>
@@ -1747,7 +1747,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>ProductTermsScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="125">
-		<LastChanged>2009-11-18T21:38:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductType</FileName>
 		<FileDesc>Product Type Table</FileDesc>
@@ -1760,7 +1760,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="126">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Profile</FileName>
 		<FileDesc>Profile file</FileDesc>
@@ -1773,7 +1773,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>ProfileScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="127">
-		<LastChanged>2009-11-18T21:38:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfileClass</FileName>
 		<FileDesc>Profile Classification</FileDesc>
@@ -1786,7 +1786,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="128">
-		<LastChanged>2007-09-08T19:50:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfileControl</FileName>
 		<FileDesc>Control File</FileDesc>
@@ -1799,7 +1799,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="129">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfileCreditCard</FileName>
 		<FileDesc>Credit Cards</FileDesc>
@@ -1812,7 +1812,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="130">
-		<LastChanged>2009-11-18T21:38:31</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfileStatus</FileName>
 		<FileDesc>Profile Status (ie., good, fair, etc)</FileDesc>
@@ -1825,7 +1825,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="131">
-		<LastChanged>2009-11-18T21:38:39</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfileType</FileName>
 		<FileDesc>Type of Profile</FileDesc>
@@ -1838,7 +1838,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="132">
-		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfitCenter</FileName>
 		<FileDesc>Profit Center Descriptions</FileDesc>
@@ -1851,7 +1851,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="133">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PrTimecards</FileName>
 		<FileDesc>Timecard/Department Distribution file</FileDesc>
@@ -1864,7 +1864,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="134">
-		<LastChanged>2009-11-18T21:39:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Region</FileName>
 		<FileDesc>Region File</FileDesc>
@@ -1877,7 +1877,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>RegionScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="136">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Request</FileName>
 		<FileDesc>Brochure request file</FileDesc>
@@ -1890,7 +1890,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>RequestScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="137">
-		<LastChanged>2007-09-08T19:53:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>RequestControl</FileName>
 		<FileDesc>Control File</FileDesc>
@@ -1903,7 +1903,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="138">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>RequestDetail</FileName>
 		<FileDesc>Brochure Request Detail File</FileDesc>
@@ -1916,7 +1916,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="139">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>RequestHistory</FileName>
 		<FileDesc>Brochure Request History</FileDesc>
@@ -1929,7 +1929,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>Screen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="140">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>RequestHistoryDetail</FileName>
 		<FileDesc>Brochure Request History</FileDesc>
@@ -1942,7 +1942,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="141">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>RequestInput</FileName>
 		<FileDesc>Brochure request Input</FileDesc>
@@ -1955,7 +1955,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="142">
-		<LastChanged>2007-09-08T19:50:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Salesperson</FileName>
 		<FileDesc>Salesperson file</FileDesc>
@@ -1968,7 +1968,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="143">
-		<LastChanged>2007-09-08T19:50:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>SalesRegion</FileName>
 		<FileDesc>Sales Region</FileDesc>
@@ -1981,7 +1981,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="144">
-		<LastChanged>2009-11-18T21:39:18</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>SCF</FileName>
 		<FileDesc>SCF Control file</FileDesc>
@@ -1994,7 +1994,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="146">
-		<LastChanged>2009-11-18T21:39:20</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>SeatChoice</FileName>
 		<FileDesc>Seat Choice</FileDesc>
@@ -2007,7 +2007,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="148">
-		<LastChanged>2009-11-18T21:39:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>SendVia</FileName>
 		<FileDesc>Send Via Codes</FileDesc>
@@ -2020,7 +2020,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="149">
-		<LastChanged>2009-11-18T21:39:26</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>State</FileName>
 		<FileDesc>States or Provicences</FileDesc>
@@ -2033,7 +2033,7 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>StateScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="150">
-		<LastChanged>2007-09-08T19:41:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TaxRate</FileName>
 		<FileDesc>Tax rates table</FileDesc>
@@ -2046,32 +2046,32 @@ be reversed and the YTD, etc. amounts can be adjusted down.
 		<MaintClass>TaxRateScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="152">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingAir</FileName>
 		<FileDesc>Ticket detail line</FileDesc>
 		<FileMainFilename>BookingDetail</FileMainFilename>
 		<Type>REMOTE | SHARED_TABLE | USER_DATA</Type>
-		<FileNotes>Note:
+		<FileNotes><![CDATA[Note:
 The key ends in a sequence number rather than the time because
 the next sequential flight may not be in order because of the
 international date line.
 
 This can be fixed by reading the GMT offset from the city file.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Ticket detail</FileRecCalled>
 		<DisplayClass>BookingAirGridScreen</DisplayClass>
 		<MaintClass>BookingAirScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="153">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingAirHeader</FileName>
 		<FileDesc>Ticket Header/Booking-Tour ticket detail</FileDesc>
 		<FileMainFilename/>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>There can be more than one TK_HEADER for a booking. A different ticket
+		<FileNotes><![CDATA[There can be more than one TK_HEADER for a booking. A different ticket
 for each passenger.
 The TK_ALT_SEQ number is used for the passenger seq. no. The TK_ANSW_SEQ
 field is reserved for multiple tickets for one passenger.
@@ -2125,14 +2125,14 @@ Update Issue date = date
 Override update:
 Read through all where status = TICK_TK or ALL_TK and Override received
 Update Override received = date
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Ticket</FileRecCalled>
 		<DisplayClass>BookingAirHeaderGridScreen</DisplayClass>
 		<MaintClass>BookingAirHeaderScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="154">
-		<LastChanged>2007-10-22T03:03:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TicketTrx</FileName>
 		<FileDesc>Ticket Transaction file</FileDesc>
@@ -2145,13 +2145,13 @@ Update Override received = date
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="155">
-		<LastChanged>2007-09-08T20:03:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TimeTrx</FileName>
 		<FileDesc>Payroll Time transaction file</FileDesc>
 		<FileMainFilename/>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>On the next revision add:
+		<FileNotes><![CDATA[On the next revision add:
  PR_CHECK_DATE - Actual Date of the check (Usually no per. end)
  WEEKS_WORKED - Calculate the weeks worked for state report
 
@@ -2167,26 +2167,26 @@ PAY PD END DATE
 TRANSACTION AMOUNT +/-
 
 Need a simple way to allow the user the option of automatically sending
-regulay, overtime, vacation, holiday, sick, special 1 &amp; 2, other pay,
+regulay, overtime, vacation, holiday, sick, special 1 & 2, other pay,
 taxes, deductions, and net pay to the correct G/L accounts.
 
 Maybe a G/L number for all of these should be set up in the department
 file--If not, the department file should be deleted, it serves no
 purpose!
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>payroll</DatabaseName>
 		<FileRecCalled>Transaction</FileRecCalled>
 		<DisplayClass>TimeTrxGridScreen</DisplayClass>
 		<MaintClass>TimeTrxScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="156">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Tour</FileName>
 		<FileDesc>Tour file</FileDesc>
 		<FileMainFilename>Tour</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>FILE DESCRIPTION:
+		<FileNotes><![CDATA[FILE DESCRIPTION:
 
 Every tour has an entry here. The tour file is the basis for everything
 having to do with the tour side of the booking (Vouchers, A/P control,
@@ -2212,14 +2212,14 @@ ACTION_TYPE - This type matches the DOC_PRINT_ON field in the
 
 CHANGES: Change HDR Wait to an I/2 field: default to the actual number
 of acknowledgement days.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>booking</DatabaseName>
 		<FileRecCalled>Tour</FileRecCalled>
 		<DisplayClass>TourGridScreen</DisplayClass>
 		<MaintClass>TourScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="157">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourClass</FileName>
 		<FileDesc>Tour Class File</FileDesc>
@@ -2232,7 +2232,7 @@ of acknowledgement days.
 		<MaintClass>TourClassScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="160">
-		<LastChanged>2009-11-18T21:39:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourEvent</FileName>
 		<FileDesc>Tour Event Type</FileDesc>
@@ -2245,13 +2245,13 @@ of acknowledgement days.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="161">
-		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeader</FileName>
 		<FileDesc>Tour Header File</FileDesc>
 		<FileMainFilename>TourHeader</FileMainFilename>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>The tour header file is used for different purposes. It all depends
+		<FileNotes><![CDATA[The tour header file is used for different purposes. It all depends
 what kind of tour it is used with.
 
 Scheduled tours - The Tour Header file is not automatically copied over
@@ -2307,14 +2307,14 @@ FIELD DESCRIPTIONS:
  HDR_SP1_DAYS - Days before departure date to print all
   special 1 documents (ie., maybe tour recaps)
  HDR_SP2_DAYS - Another days field
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Tour header</FileRecCalled>
 		<DisplayClass>TourProductGridScreen</DisplayClass>
 		<MaintClass>TourHeaderScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="162">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CalendarProduct</FileName>
 		<FileDesc>Special memory-based record used for cal</FileDesc>
@@ -2327,7 +2327,7 @@ FIELD DESCRIPTIONS:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="163">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderHotel</FileName>
 		<FileDesc>Tour Hotel Detail</FileDesc>
@@ -2340,7 +2340,7 @@ FIELD DESCRIPTIONS:
 		<MaintClass>TourHeaderHotelScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="164">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderLand</FileName>
 		<FileDesc>Tour Land Detail</FileDesc>
@@ -2353,7 +2353,7 @@ FIELD DESCRIPTIONS:
 		<MaintClass>TourHeaderLandScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="165">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourList</FileName>
 		<FileDesc>Tour list for the Product Display</FileDesc>
@@ -2366,13 +2366,13 @@ FIELD DESCRIPTIONS:
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="167">
-		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderLine</FileName>
 		<FileDesc>Tour Pricing Detail File</FileDesc>
 		<FileMainFilename/>
 		<Type>LOCAL | USER_DATA</Type>
-		<FileNotes>FILE DESCRIPTION:
+		<FileNotes><![CDATA[FILE DESCRIPTION:
 
 This file is used to store the pricing for all types of tours.
 It also stores the Changes to the header pricing for all alternates
@@ -2388,14 +2388,14 @@ The PRICE_SEQ number must be unique within a Header or ALT/OPT. This
 will insure that the sequence number in the line items will be unique
 if a modification to the Header is encountered and the header line item
 has to be deleted.
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>product</DatabaseName>
 		<FileRecCalled>Tour pricing</FileRecCalled>
 		<DisplayClass>TourHeaderLineGridScreen</DisplayClass>
 		<MaintClass>TourHeaderLineScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="168">
-		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderOption</FileName>
 		<FileDesc>Question/Answer File</FileDesc>
@@ -2408,7 +2408,7 @@ has to be deleted.
 		<MaintClass>TourHeaderOptionScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="169">
-		<LastChanged>2009-11-18T21:40:02</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourStatus</FileName>
 		<FileDesc>Tour Status</FileDesc>
@@ -2421,7 +2421,7 @@ has to be deleted.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="170">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderAir</FileName>
 		<FileDesc>Tour Ticket Detail</FileDesc>
@@ -2434,7 +2434,7 @@ has to be deleted.
 		<MaintClass>TourHeaderAirScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="171">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourTkHeader</FileName>
 		<FileDesc>Tour Ticket Header</FileDesc>
@@ -2447,7 +2447,7 @@ has to be deleted.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="172">
-		<LastChanged>2009-11-18T21:40:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourType</FileName>
 		<FileDesc>Tour Type Table</FileDesc>
@@ -2460,7 +2460,7 @@ has to be deleted.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="173">
-		<LastChanged>2009-11-18T21:40:20</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TransactionType</FileName>
 		<FileDesc>Transaction Type Table</FileDesc>
@@ -2473,7 +2473,7 @@ has to be deleted.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="174">
-		<LastChanged>2007-09-08T19:44:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Transportation</FileName>
 		<FileDesc>Transportation file</FileDesc>
@@ -2486,7 +2486,7 @@ has to be deleted.
 		<MaintClass>TransportationScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="175">
-		<LastChanged>2009-11-18T21:40:31</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TransportationClass</FileName>
 		<FileDesc>Trans class table</FileDesc>
@@ -2499,7 +2499,7 @@ has to be deleted.
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="176">
-		<LastChanged>2007-09-08T19:45:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TransportationPricing</FileName>
 		<FileDesc>Transportation pricing</FileDesc>
@@ -2512,26 +2512,26 @@ has to be deleted.
 		<MaintClass>TransportationPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="178">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Vendor</FileName>
 		<FileDesc>A/P Vendor file</FileDesc>
 		<FileMainFilename>Vendor</FileMainFilename>
 		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes>It would be nice to add this stuff later:
+		<FileNotes><![CDATA[It would be nice to add this stuff later:
 Send Mail Via: Telex/Phone/Mail
 Our Customer number in their computer:
 EFT Account number
 Computer Mail Phone Number:
 Need Social Security Number for 1099 printing
-</FileNotes>
+]]></FileNotes>
 		<DatabaseName>acctpay</DatabaseName>
 		<FileRecCalled>Vendor</FileRecCalled>
 		<DisplayClass>VendorGridScreen</DisplayClass>
 		<MaintClass>VendorScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="179">
-		<LastChanged>2009-11-18T21:40:34</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>VendorStatus</FileName>
 		<FileDesc>Vendor Status Codes</FileDesc>
@@ -2544,7 +2544,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="180">
-		<LastChanged>2007-09-08T19:39:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Versions</FileName>
 		<FileDesc>Financial Statement Version</FileDesc>
@@ -2557,7 +2557,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="183">
-		<LastChanged>2010-02-16T11:23:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Picture</FileName>
 		<FileDesc>Picture file</FileDesc>
@@ -2570,7 +2570,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>PictureScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="184">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BrochureClass</FileName>
 		<FileDesc>Brochure classification</FileDesc>
@@ -2583,7 +2583,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="185">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ElectronicAddress</FileName>
 		<FileDesc>Electronic Addresses for a Profile</FileDesc>
@@ -2596,7 +2596,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="186">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProfileCertification</FileName>
 		<FileDesc>Profile's Certification detail</FileDesc>
@@ -2609,7 +2609,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="190">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingMenuLookup</FileName>
 		<FileDesc>Remote Query for the Booking Menu</FileDesc>
@@ -2622,7 +2622,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="191">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourLookup</FileName>
 		<FileDesc>Tour lookup query</FileDesc>
@@ -2635,7 +2635,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="192">
-		<LastChanged>2010-02-16T11:21:45</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Contact</FileName>
 		<FileDesc>Contact List</FileDesc>
@@ -2648,7 +2648,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>ContactScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="194">
-		<LastChanged>2010-02-16T11:25:26</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PictureControl</FileName>
 		<FileDesc>Picture Control File</FileDesc>
@@ -2661,7 +2661,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>PictureControlScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="195">
-		<LastChanged>2010-02-16T11:25:21</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PictureType</FileName>
 		<FileDesc/>
@@ -2674,7 +2674,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="201">
-		<LastChanged>2009-11-18T21:40:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>InfoStatus</FileName>
 		<FileDesc>Cust Sale Detail Info Status</FileDesc>
@@ -2687,7 +2687,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="204">
-		<LastChanged>2009-11-18T21:40:51</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AirClass</FileName>
 		<FileDesc>Flight class</FileDesc>
@@ -2700,7 +2700,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="205">
-		<LastChanged>2009-11-18T21:40:56</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CruiseClass</FileName>
 		<FileDesc>Cruise cabin class</FileDesc>
@@ -2713,7 +2713,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="206">
-		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Item</FileName>
 		<FileDesc>Item</FileDesc>
@@ -2726,7 +2726,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>ItemScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="210">
-		<LastChanged>2009-11-18T21:40:58</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TrxSystem</FileName>
 		<FileDesc>Transaction System File</FileDesc>
@@ -2739,7 +2739,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="214">
-		<LastChanged>2009-11-18T21:40:59</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TrxDesc</FileName>
 		<FileDesc>Transaction Description File</FileDesc>
@@ -2752,7 +2752,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TrxDescScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="215">
-		<LastChanged>2009-11-18T21:41:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TrxStatus</FileName>
 		<FileDesc>Transaction Status</FileDesc>
@@ -2765,7 +2765,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TrxStatusScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="216">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>SpecialFormat</FileName>
 		<FileDesc>Financial Statment Special Formats</FileDesc>
@@ -2778,7 +2778,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="217">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>NumberFormat</FileName>
 		<FileDesc>Financial Statment Number Formats</FileDesc>
@@ -2791,7 +2791,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="218">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>SpecialFunction</FileName>
 		<FileDesc>Financial Statment Special Functions</FileDesc>
@@ -2804,7 +2804,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="219">
-		<LastChanged>2007-09-08T20:03:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BankTrxBatch</FileName>
 		<FileDesc>Bank Transaction Batch Header</FileDesc>
@@ -2817,7 +2817,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>BankTrxBatchScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="220">
-		<LastChanged>2007-09-08T19:33:55</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CashBatchDist</FileName>
 		<FileDesc>Cash Receipts distribution</FileDesc>
@@ -2830,7 +2830,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>CashBatchDistScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="221">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>McoBatchDist</FileName>
 		<FileDesc>Mco batch distribution file</FileDesc>
@@ -2843,7 +2843,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>McoBatchDistScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="222">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CreditCardBatchDist</FileName>
 		<FileDesc>Credit card distribution file</FileDesc>
@@ -2856,7 +2856,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>CreditCardBatchDistScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="224">
-		<LastChanged>2009-11-18T21:41:18</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TrxGroup</FileName>
 		<FileDesc>Transaction Header</FileDesc>
@@ -2869,7 +2869,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TrxGroupScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="225">
-		<LastChanged>2007-09-08T19:49:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CarPricing</FileName>
 		<FileDesc>Rental car pricing</FileDesc>
@@ -2882,7 +2882,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>CarPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="226">
-		<LastChanged>2007-09-08T19:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CruisePricing</FileName>
 		<FileDesc>Cruise pricing</FileDesc>
@@ -2895,7 +2895,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>CruisePricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="227">
-		<LastChanged>2007-09-08T19:49:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AirPricing</FileName>
 		<FileDesc>Flight pricing</FileDesc>
@@ -2908,7 +2908,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>AirPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="228">
-		<LastChanged>2007-09-08T19:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ItemPricing</FileName>
 		<FileDesc>Item pricing</FileDesc>
@@ -2921,7 +2921,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>ItemPricingScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="229">
-		<LastChanged>2009-11-18T21:41:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandClass</FileName>
 		<FileDesc>Land class of service</FileDesc>
@@ -2934,7 +2934,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="230">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderTransportation</FileName>
 		<FileDesc>Tour header transportation detail</FileDesc>
@@ -2947,7 +2947,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourHeaderTransportationScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="231">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderCar</FileName>
 		<FileDesc>Tour header car detail</FileDesc>
@@ -2960,7 +2960,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourHeaderCarScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="232">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderCruise</FileName>
 		<FileDesc>Tour header cruise detail</FileDesc>
@@ -2973,7 +2973,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourHeaderCruiseScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="233">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderItem</FileName>
 		<FileDesc>Tour item detail</FileDesc>
@@ -2986,7 +2986,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourHeaderItemScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="234">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderDetail</FileName>
 		<FileDesc>Tour detail (abstract class)</FileDesc>
@@ -2999,7 +2999,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="246">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingItem</FileName>
 		<FileDesc>Booking detail item</FileDesc>
@@ -3012,7 +3012,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>BookingItemScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="247">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingTransportation</FileName>
 		<FileDesc>Transportation booking detail</FileDesc>
@@ -3025,7 +3025,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>BookingTransportationScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="248">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingCruise</FileName>
 		<FileDesc>Booking cruise detail</FileDesc>
@@ -3038,7 +3038,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>BookingCruiseScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="249">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingTour</FileName>
 		<FileDesc>Booking tour header detail</FileDesc>
@@ -3051,7 +3051,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>BookingTourDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="250">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderTour</FileName>
 		<FileDesc>Tour tour detail</FileDesc>
@@ -3064,7 +3064,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourHeaderTourHeaderScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="251">
-		<LastChanged>2007-09-08T20:04:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderAirHeader</FileName>
 		<FileDesc>Tour header ticket header info</FileDesc>
@@ -3077,7 +3077,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourHeaderAirHeaderScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="264">
-		<LastChanged>2009-11-18T21:41:33</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CarRate</FileName>
 		<FileDesc/>
@@ -3090,7 +3090,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="265">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderTransport</FileName>
 		<FileDesc/>
@@ -3103,7 +3103,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="268">
-		<LastChanged>2010-02-16T11:25:32</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceStep</FileName>
 		<FileDesc/>
@@ -3116,7 +3116,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>DanceStepScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="269">
-		<LastChanged>2010-02-16T11:21:34</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Dance</FileName>
 		<FileDesc/>
@@ -3129,7 +3129,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="276">
-		<LastChanged>2009-11-18T21:41:35</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CruiseRate</FileName>
 		<FileDesc/>
@@ -3142,7 +3142,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="277">
-		<LastChanged>2009-11-18T21:41:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AirRate</FileName>
 		<FileDesc/>
@@ -3155,7 +3155,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="278">
-		<LastChanged>2009-11-18T21:41:39</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TransportationRate</FileName>
 		<FileDesc/>
@@ -3168,7 +3168,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="279">
-		<LastChanged>2009-11-18T21:41:48</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandRate</FileName>
 		<FileDesc/>
@@ -3181,7 +3181,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="280">
-		<LastChanged>2006-07-11T00:14:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelInventory</FileName>
 		<FileDesc/>
@@ -3194,7 +3194,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="281">
-		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandInventory</FileName>
 		<FileDesc/>
@@ -3207,7 +3207,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="282">
-		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TransportationInventory</FileName>
 		<FileDesc/>
@@ -3220,7 +3220,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="283">
-		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CarInventory</FileName>
 		<FileDesc/>
@@ -3233,7 +3233,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="284">
-		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CruiseInventory</FileName>
 		<FileDesc/>
@@ -3246,7 +3246,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="285">
-		<LastChanged>2006-07-11T00:15:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AirInventory</FileName>
 		<FileDesc/>
@@ -3259,7 +3259,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="286">
-		<LastChanged>2006-07-11T00:16:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ItemInventory</FileName>
 		<FileDesc/>
@@ -3272,7 +3272,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="287">
-		<LastChanged>2006-07-11T00:14:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderInventory</FileName>
 		<FileDesc/>
@@ -3285,7 +3285,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="288">
-		<LastChanged>2009-11-18T21:41:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ItemRate</FileName>
 		<FileDesc/>
@@ -3298,7 +3298,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="289">
-		<LastChanged>2009-11-18T21:41:52</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ItemClass</FileName>
 		<FileDesc/>
@@ -3311,7 +3311,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="290">
-		<LastChanged>2007-09-08T19:46:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductControl</FileName>
 		<FileDesc>Product control file</FileDesc>
@@ -3324,7 +3324,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="291">
-		<LastChanged>2010-02-16T11:25:38</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceType</FileName>
 		<FileDesc/>
@@ -3337,7 +3337,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="292">
-		<LastChanged>2010-02-16T11:25:43</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DancePosition</FileName>
 		<FileDesc/>
@@ -3350,7 +3350,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="293">
-		<LastChanged>2010-02-16T11:25:48</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceComponents</FileName>
 		<FileDesc/>
@@ -3363,7 +3363,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="295">
-		<LastChanged>2010-02-16T11:25:56</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>MoveClass</FileName>
 		<FileDesc/>
@@ -3376,7 +3376,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="296">
-		<LastChanged>2010-02-16T11:26:01</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HandPosition</FileName>
 		<FileDesc/>
@@ -3389,7 +3389,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="297">
-		<LastChanged>2009-11-18T21:41:59</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PricingType</FileName>
 		<FileDesc/>
@@ -3402,7 +3402,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="300">
-		<LastChanged>2010-02-16T11:21:55</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ContactCategory</FileName>
 		<FileDesc>Contact category</FileDesc>
@@ -3415,7 +3415,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="317">
-		<LastChanged>2006-08-06T23:20:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>InventoryDetail</FileName>
 		<FileDesc/>
@@ -3428,7 +3428,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>InventoryDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="321">
-		<LastChanged>2006-09-08T05:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>OTACodeTable</FileName>
 		<FileDesc/>
@@ -3441,7 +3441,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="322">
-		<LastChanged>2006-09-08T14:46:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>OTACodes</FileName>
 		<FileDesc/>
@@ -3454,7 +3454,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>OTACodesScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="323">
-		<LastChanged>2009-11-18T21:42:01</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>PricingStatus</FileName>
 		<FileDesc/>
@@ -3467,7 +3467,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="324">
-		<LastChanged>2009-11-18T21:42:21</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Deposit</FileName>
 		<FileDesc>Deposit policy</FileDesc>
@@ -3480,7 +3480,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="325">
-		<LastChanged>2010-02-16T11:26:07</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceTeacher</FileName>
 		<FileDesc/>
@@ -3493,7 +3493,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="326">
-		<LastChanged>2010-02-16T11:26:12</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceStudio</FileName>
 		<FileDesc/>
@@ -3506,7 +3506,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="327">
-		<LastChanged>2010-02-16T11:23:27</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceClass</FileName>
 		<FileDesc/>
@@ -3519,7 +3519,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="328">
-		<LastChanged>2010-02-16T11:23:03</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceAlignment</FileName>
 		<FileDesc/>
@@ -3532,7 +3532,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="329">
-		<LastChanged>2010-02-16T11:26:18</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceDirection</FileName>
 		<FileDesc/>
@@ -3545,7 +3545,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="330">
-		<LastChanged>2010-02-16T11:23:15</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>DanceArtisticClass</FileName>
 		<FileDesc/>
@@ -3558,7 +3558,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="337">
-		<LastChanged>2007-10-12T03:06:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourEventSchedule</FileName>
 		<FileDesc>Tour document</FileDesc>
@@ -3571,7 +3571,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>TourEventScheduleScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="338">
-		<LastChanged>2009-07-11T03:16:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingDetailHistory</FileName>
 		<FileDesc>Booking detail history</FileDesc>
@@ -3584,7 +3584,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="339">
-		<LastChanged>2009-04-25T06:06:25</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BookingAirHeaderHistory</FileName>
 		<FileDesc>Air header history</FileDesc>
@@ -3597,7 +3597,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="342">
-		<LastChanged>2008-10-08T23:50:33</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>OTACode</FileName>
 		<FileDesc>The virtual table that maps to a table</FileDesc>
@@ -3610,7 +3610,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="343">
-		<LastChanged>2008-09-22T11:51:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>OTASeatPreference</FileName>
 		<FileDesc/>
@@ -3623,7 +3623,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="344">
-		<LastChanged>2008-10-08T23:54:58</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelAvail</FileName>
 		<FileDesc/>
@@ -3636,7 +3636,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="346">
-		<LastChanged>2009-11-18T21:42:32</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>HotelChain</FileName>
 		<FileDesc/>
@@ -3649,7 +3649,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="347">
-		<LastChanged>2009-11-18T21:42:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CarChain</FileName>
 		<FileDesc/>
@@ -3662,7 +3662,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="348">
-		<LastChanged>2009-11-18T21:42:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>CruiseChain</FileName>
 		<FileDesc/>
@@ -3675,7 +3675,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="349">
-		<LastChanged>2009-11-18T21:42:38</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TourHeaderChain</FileName>
 		<FileDesc/>
@@ -3688,7 +3688,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="350">
-		<LastChanged>2009-11-18T21:42:40</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>AirChain</FileName>
 		<FileDesc/>
@@ -3701,7 +3701,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="351">
-		<LastChanged>2009-11-18T21:42:47</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>LandChain</FileName>
 		<FileDesc/>
@@ -3714,7 +3714,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="353">
-		<LastChanged>2008-10-18T17:45:51</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductSearchType</FileName>
 		<FileDesc/>
@@ -3727,7 +3727,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>ProductSearchTypeScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="354">
-		<LastChanged>2008-10-18T18:04:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductSearchCategory</FileName>
 		<FileDesc/>
@@ -3740,7 +3740,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>ProductSearchCategoryScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="355">
-		<LastChanged>2008-10-20T16:09:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ProductSearchDetail</FileName>
 		<FileDesc/>
@@ -3753,7 +3753,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass>ProductSearchDetailScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="356">
-		<LastChanged>2009-11-18T21:43:03</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>TransportationChain</FileName>
 		<FileDesc/>
@@ -3766,7 +3766,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="357">
-		<LastChanged>2009-11-18T21:43:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>ItemChain</FileName>
 		<FileDesc/>
@@ -3779,7 +3779,7 @@ Need Social Security Number for 1099 printing
 		<MaintClass/>
 	</FileHdr>
 	<FileHdr ID="358">
-		<LastChanged>2009-04-17T13:27:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>Air</FileName>
 		<FileDesc/>

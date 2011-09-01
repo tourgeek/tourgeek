@@ -427,8 +427,8 @@
 	<Issue ID="26">
 		<LastChanged>2010-05-11T06:24:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Get rid of SetDirectTransportHandler -
-Have the remote call wait for booking status okay</Description>
+		<Description><![CDATA[Get rid of SetDirectTransportHandler -
+Have the remote call wait for booking status okay]]></Description>
 		<ProjectID>6</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>1</IssueTypeID>
@@ -836,8 +836,8 @@ Have the remote call wait for booking status okay</Description>
 	<Issue ID="50">
 		<LastChanged>2006-04-18T02:09:00</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>If there are duplicate descriptions in a file, the popup doesn't work
-right, because I lookup the index by description</Description>
+		<Description><![CDATA[If there are duplicate descriptions in a file, the popup doesn't work
+right, because I lookup the index by description]]></Description>
 		<ProjectID>17</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>1</IssueTypeID>
@@ -1143,8 +1143,8 @@ right, because I lookup the index by description</Description>
 	<Issue ID="68">
 		<LastChanged>2008-10-30T15:48:17</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Allow changes to table record (send to server, server should listen
-and update cache)</Description>
+		<Description><![CDATA[Allow changes to table record (send to server, server should listen
+and update cache)]]></Description>
 		<ProjectID>17</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>2</IssueTypeID>
@@ -1399,9 +1399,9 @@ and update cache)</Description>
 	<Issue ID="84">
 		<LastChanged>2010-05-19T14:46:44</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Fix authentication token generation
+		<Description><![CDATA[Fix authentication token generation
 and verification MainApplication/139
-and pass auth to java</Description>
+and pass auth to java]]></Description>
 		<ProjectID>17</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>1</IssueTypeID>
@@ -1469,8 +1469,8 @@ and pass auth to java</Description>
 	<Issue ID="88">
 		<LastChanged>2007-10-01T13:12:00</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Make submit button the default button on logon dialog
-For java and js (also change js dialog title)</Description>
+		<Description><![CDATA[Make submit button the default button on logon dialog
+For java and js (also change js dialog title)]]></Description>
 		<ProjectID>17</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>1</IssueTypeID>
@@ -1487,8 +1487,8 @@ For java and js (also change js dialog title)</Description>
 	<Issue ID="89">
 		<LastChanged>2008-10-30T15:50:35</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Don't allow an application to free a running task
-(see AutoTask/isMainTaskCandidate and Application.free)</Description>
+		<Description><![CDATA[Don't allow an application to free a running task
+(see AutoTask/isMainTaskCandidate and Application.free)]]></Description>
 		<ProjectID>17</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>1</IssueTypeID>
@@ -2321,8 +2321,8 @@ For java and js (also change js dialog title)</Description>
 	<Issue ID="138">
 		<LastChanged>2010-05-19T14:48:00</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Hyatt upgrade - Inv/manual, Rate/bk webserver. If product change,
-use the defaults</Description>
+		<Description><![CDATA[Hyatt upgrade - Inv/manual, Rate/bk webserver. If product change,
+use the defaults]]></Description>
 		<ProjectID>6</ProjectID>
 		<ProjectVersionID>1</ProjectVersionID>
 		<IssueTypeID>1</IssueTypeID>
