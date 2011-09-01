@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="images/com/tourdemo/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourapp/res/images/com/tourdemo/logoblack.gif" align="left" alt="Logo" />
 <span style="font-size: 16pt; font-style: bold">
-<img src="images/com/tourdemo/nameblack.gif" alt="tourapp.com" /><br />
+<img src="com/tourapp/res/images/com/tourdemo/nameblack.gif" alt="tourapp.com" /><br />
 Tours to everywhere.<br />
 </span>
 <hr />
@@ -21,7 +21,7 @@ With <a href="http://www.tourapp.com">tourapp.com</a> you can:<br />
 	<li>Easy to use tour entry and operations system.</li>
 	<li>Full accounting system.</li>
 </ul>
-Check out the <a href="?xml=docs/help/specifications/index.xml" onClick="if (tourapp) {return tourapp.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
+Check out the <a href="?xml=org/jbundle/res/docs/help/specifications/index.xml" onClick="if (tourapp) {return tourapp.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
 Try it out <span style="font-style: bold">now</span>! Click one of these users to see their personalized page. Logout to return to this page. (All passwords are blank on this demo site.)<br />
 <span style="font-size: 10pt">The tourapp client requires java. If you click on one of these users and tourapp does not start, download java at <a href="http://www.java.com">www.java.com</a>.</span><br/>
 <hr/>

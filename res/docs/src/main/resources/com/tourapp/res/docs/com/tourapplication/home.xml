@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
-<img src="images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
+<img src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
 <span style="font-size: 14pt; font-style: bold">
 Automation consulting services for Outbound Tour Operators.<br />
 <ul>

@@ -1,7 +1,7 @@
 <HELP>
 <html>
-<img src="images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
-<img src="images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /><br />
+<img src="com/tourapp/res/images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourapp/res/images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /><br />
 <span style="font-size: large; font-style: bold">
 The Simple, Powerful, Affordable Tour Operator Software<br />
 </span>
@@ -12,19 +12,19 @@ that simplifies the complicated job of tour operation.</p>
 Contact info:<br/>
 <table border="0">
 <tr>
-<td>email:</td><td><img src="/images/buttons/EMail.gif"/></td><td><a href="mailto:info@tourgeek.com">info@tourgeek.com</a></td>
+<td>email:</td><td><img src="org/jbundle/res/images/buttons/EMail.gif"/></td><td><a href="mailto:info@tourgeek.com">info@tourgeek.com</a></td>
 </tr>
 <tr>
-<td>Phone:</td><td><img src="/images/buttons/Phone.gif"/></td><td><a href="tel:1-626-205-7017">1-626-205-7017</a></td>
+<td>Phone:</td><td><img src="org/jbundle/res/images/buttons/Phone.gif"/></td><td><a href="tel:1-626-205-7017">1-626-205-7017</a></td>
 </tr>
 <tr>
-<td>SIPhone:</td><td><img src="/images/buttons/Phone.gif"/></td><td><a href="sip:don@sip.tourgeek.com">don@sip.tourgeek.com</a></td>
+<td>SIPhone:</td><td><img src="org/jbundle/res/images/buttons/Phone.gif"/></td><td><a href="sip:don@sip.tourgeek.com">don@sip.tourgeek.com</a></td>
 </tr>
 <tr>
-<td>web:</td><td><img src="/images/buttons/URL.gif"/></td><td><a href="http://www.tourgeek.com">www.tourgeek.com</a></td>
+<td>web:</td><td><img src="org/jbundle/res/images/buttons/URL.gif"/></td><td><a href="http://www.tourgeek.com">www.tourgeek.com</a></td>
 </tr>
 <tr>
-<td>fax:</td><td><img src="/images/buttons/Fax.gif"/></td><td><a href="tel:1-206-984-1331">1-206-984-1331</a></td>
+<td>fax:</td><td><img src="org/jbundle/res/images/buttons/Fax.gif"/></td><td><a href="tel:1-206-984-1331">1-206-984-1331</a></td>
 </tr>
 </table>
 

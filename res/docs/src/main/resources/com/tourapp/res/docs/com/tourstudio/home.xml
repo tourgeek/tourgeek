@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
 <span style="font-size: 16pt; font-style: bold">
-<img src="images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
+<img src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
 Tourgeek.com Tour Operator solution.<br />
 </span>
 <span style="font-size: 12pt"> Software to create, modify, and book tours on-line.<br />
@@ -19,6 +19,6 @@ We have software for:
 	<li><a href="http://www.tourgeek.com">Travel Agents</a></li>
 	<li><a href="http://www.tourgeek.com">Destination Services</a> such as sightseeing and local tour operators.</li>
 </ul>
-Check out more about us <a href="?xml=docs/com/tourstudio/aboutus.xml">here.</a><br />
+Check out more about us <a href="?xml=org/jbundle/res/docs/com/tourstudio/aboutus.xml">here.</a><br />
 </span>
 </html>

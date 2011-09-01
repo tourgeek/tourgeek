@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="images/com/tourvisualizer/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourapp/res/images/com/tourvisualizer/logoblack.gif" align="left" alt="Logo" />
 <span style="font-size: 16pt; font-style: bold">
-<img src="images/com/tourvisualizer/nameblack.gif" alt="tourvisualizer.com" /><br />
+<img src="com/tourapp/res/images/com/tourvisualizer/nameblack.gif" alt="tourvisualizer.com" /><br />
 Create your own tour.<br />
 </span>
 <span style="font-size: 12pt">Create, modify, and book tours on-line.

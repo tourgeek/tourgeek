@@ -3,8 +3,8 @@
 <html>
 <p>
 <a href="http://www.tourgeek.com">
-<img border="0" src="images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
-<img border="0" src="images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
+<img border="0" src="com/tourapp/res/images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
+<img border="0" src="com/tourapp/res/images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
 <span style="font-size: large; font-style: bold">
 The Simple, Powerful, Affordable Tour Operator Software
 </span>
