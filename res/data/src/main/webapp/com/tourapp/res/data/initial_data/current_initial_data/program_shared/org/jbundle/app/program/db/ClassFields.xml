@@ -17472,7 +17472,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1474">
-		<LastChanged>2011-08-05T11:19:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PaymentRequestGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -31088,7 +31088,7 @@
 		<ClassFieldsType>N</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="2598">
-		<LastChanged>2011-08-05T15:26:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>OperationTypeField</ClassInfoClassName>
 		<ClassInfoID/>

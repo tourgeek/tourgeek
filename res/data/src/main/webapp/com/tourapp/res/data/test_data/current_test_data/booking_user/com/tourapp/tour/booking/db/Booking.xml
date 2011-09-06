@@ -2,14 +2,14 @@
 	<Booking ID="1">
 		<LastChanged>2010-05-10T04:00:20</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-05-10</BookingDate>
+		<BookingDate>2011-06-10</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID/>
 		<ProfileCode/>
 		<Code/>
 		<Description>Green - Seven day Bangkok Tour - Jan 14, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-05-10T04:00:17</ModDate>
+		<ModDate>2011-06-10T04:00:17</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName>The Greens</GenericName>
 		<AddressLine1>22033 Western Ave</AddressLine1>
@@ -52,9 +52,9 @@ eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 </Properties>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-05-25</DepositDueDate>
-		<FinalPaymentDueDate>2011-06-14</FinalPaymentDueDate>
-		<NextEventDate>2011-05-10</NextEventDate>
+		<DepositDueDate>2011-06-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-07-14</FinalPaymentDueDate>
+		<NextEventDate>2011-06-10</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,388.00</Gross>
 		<Commission>238.80</Commission>
@@ -70,14 +70,14 @@ eventStatus.Proposal.2=Y
 	<Booking ID="2">
 		<LastChanged>2010-05-10T03:56:33</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-05-10</BookingDate>
+		<BookingDate>2011-06-10</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Feb 1, 2011</Description>
 		<EmployeeModID>-1</EmployeeModID>
-		<ModDate>2011-05-10T03:56:32</ModDate>
+		<ModDate>2011-06-10T03:56:32</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -116,9 +116,9 @@ eventStatus.Proposal.2=Y
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-05-25</DepositDueDate>
-		<FinalPaymentDueDate>2011-07-02</FinalPaymentDueDate>
-		<NextEventDate>2011-05-10</NextEventDate>
+		<DepositDueDate>2011-06-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-08-02</FinalPaymentDueDate>
+		<NextEventDate>2011-06-10</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,647.00</Gross>
 		<Commission>264.70</Commission>
@@ -134,14 +134,14 @@ eventStatus.Proposal.2=Y
 	<Booking ID="3">
 		<LastChanged>2010-05-10T04:00:20</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-05-10</BookingDate>
+		<BookingDate>2011-06-10</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID/>
 		<ProfileCode/>
 		<Code/>
 		<Description>Rodriguez - Customized Tour - Jan 2, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-05-10T04:00:17</ModDate>
+		<ModDate>2011-06-10T04:00:17</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName>Terry Rodriguez</GenericName>
 		<AddressLine1>33459 Bates Ave</AddressLine1>
@@ -184,9 +184,9 @@ eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 </Properties>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-05-25</DepositDueDate>
-		<FinalPaymentDueDate>2011-06-02</FinalPaymentDueDate>
-		<NextEventDate>2011-05-10</NextEventDate>
+		<DepositDueDate>2011-06-25</DepositDueDate>
+		<FinalPaymentDueDate>2011-07-02</FinalPaymentDueDate>
+		<NextEventDate>2011-06-10</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>3,104.98</Gross>
 		<Commission>310.50</Commission>
@@ -202,14 +202,14 @@ eventStatus.Proposal.2=Y
 	<Booking ID="4">
 		<LastChanged>2011-05-26T13:50:00</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-24</BookingDate>
+		<BookingDate>2011-09-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-08-26T13:50:00</ModDate>
+		<ModDate>2011-09-26T13:50:00</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -248,14 +248,78 @@ eventStatus.Proposal.2=Y
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-09-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
-		<NextEventDate>2011-08-24</NextEventDate>
+		<DepositDueDate>2011-10-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-10-04</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,688.00</Gross>
 		<Commission>268.80</Commission>
 		<Net>2,419.20</Net>
 		<Balance>0.00</Balance>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+	</Booking>
+	<Booking ID="5">
+		<LastChanged>2011-08-24T11:26:55</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-09-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Sep 18, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-24T11:26:55</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>9</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-09-24</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-24</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
+		<TourEventID>6</TourEventID>
+		<Gross>4,333.66</Gross>
+		<Commission>433.37</Commission>
+		<Net>3,900.29</Net>
+		<Balance/>
 		<PricingStatusID>5</PricingStatusID>
 		<AskForAnswer>Y</AskForAnswer>
 		<AlwaysResolve>N</AlwaysResolve>

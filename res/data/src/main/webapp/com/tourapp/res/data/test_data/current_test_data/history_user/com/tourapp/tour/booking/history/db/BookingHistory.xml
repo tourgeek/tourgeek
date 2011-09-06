@@ -3,14 +3,14 @@
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:48</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-24</BookingDate>
+		<BookingDate>2011-09-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID/>
 		<ProfileCode/>
 		<Code/>
 		<Description/>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-08-24T12:02:31</ModDate>
+		<ModDate>2011-09-24T12:02:31</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1/>
@@ -63,20 +63,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-08-24T12:02:48</HistoryDate>
+		<HistoryDate>2011-09-24T12:02:48</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:49</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-24</BookingDate>
+		<BookingDate>2011-09-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-08-24T12:02:48</ModDate>
+		<ModDate>2011-09-24T12:02:48</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -115,9 +115,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-09-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
-		<NextEventDate>2011-08-24</NextEventDate>
+		<DepositDueDate>2011-10-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-10-04</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>0.00</Gross>
 		<Commission>0.00</Commission>
@@ -129,20 +129,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-08-24T12:02:49</HistoryDate>
+		<HistoryDate>2011-09-24T12:02:49</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:50</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-24</BookingDate>
+		<BookingDate>2011-09-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-08-24T12:02:49</ModDate>
+		<ModDate>2011-09-24T12:02:49</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -181,9 +181,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-09-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
-		<NextEventDate>2011-08-24</NextEventDate>
+		<DepositDueDate>2011-10-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-10-04</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,298.00</Gross>
 		<Commission>229.80</Commission>
@@ -195,20 +195,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-08-24T12:02:50</HistoryDate>
+		<HistoryDate>2011-09-24T12:02:50</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-24T12:02:51</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-24</BookingDate>
+		<BookingDate>2011-09-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-08-24T12:02:50</ModDate>
+		<ModDate>2011-09-24T12:02:50</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -247,9 +247,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-09-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
-		<NextEventDate>2011-08-24</NextEventDate>
+		<DepositDueDate>2011-10-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-10-04</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,388.00</Gross>
 		<Commission>238.80</Commission>
@@ -261,20 +261,20 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-08-24T12:02:51</HistoryDate>
+		<HistoryDate>2011-09-24T12:02:51</HistoryDate>
 	</BookingHistory>
 	<BookingHistory>
 		<ID>4</ID>
 		<LastChanged>2011-05-26T13:50:00</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-24</BookingDate>
+		<BookingDate>2011-09-24</BookingDate>
 		<EmployeeID>11</EmployeeID>
 		<ProfileID>20</ProfileID>
 		<ProfileCode/>
 		<Code/>
 		<Description>Turn - Seven day Bangkok Tour - Jul 4, 2011</Description>
 		<EmployeeModID>-1</EmployeeModID>
-		<ModDate>2011-08-24T12:02:50</ModDate>
+		<ModDate>2011-09-24T12:02:50</ModDate>
 		<BookingStatusID>1</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>114 Winchester Lane</AddressLine1>
@@ -313,9 +313,9 @@
 		<Cancelled/>
 		<Properties/>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2011-09-04</DepositDueDate>
-		<FinalPaymentDueDate>2011-09-04</FinalPaymentDueDate>
-		<NextEventDate>2011-08-24</NextEventDate>
+		<DepositDueDate>2011-10-04</DepositDueDate>
+		<FinalPaymentDueDate>2011-10-04</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>2,688.00</Gross>
 		<Commission>268.80</Commission>
@@ -327,6 +327,336 @@
 		<TourPricingTypeID>1</TourPricingTypeID>
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 		<NextLineSequence>1</NextLineSequence>
-		<HistoryDate>2011-08-26T13:50:00</HistoryDate>
+		<HistoryDate>2011-09-26T13:50:00</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>5</ID>
+		<LastChanged>2011-08-24T11:22:12</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-09-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID/>
+		<ProfileCode/>
+		<Code/>
+		<Description/>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-24T11:21:52</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1/>
+		<AddressLine2/>
+		<CityOrTown/>
+		<StateOrRegion/>
+		<PostalCode/>
+		<Country/>
+		<Tel/>
+		<Fax/>
+		<Email/>
+		<Contact/>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>0</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>0</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID/>
+		<Markup>0.1000</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit/>
+		<DepositDueDate/>
+		<FinalPaymentDueDate/>
+		<NextEventDate/>
+		<TourEventID>0</TourEventID>
+		<Gross/>
+		<Commission/>
+		<Net/>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>N</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-24T11:22:12</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>5</ID>
+		<LastChanged>2011-08-24T11:22:13</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-09-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Sep 18, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-24T11:22:12</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>9</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-09-24</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-24</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
+		<TourEventID>6</TourEventID>
+		<Gross>0.00</Gross>
+		<Commission>0.00</Commission>
+		<Net>0.00</Net>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-24T11:22:13</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>5</ID>
+		<LastChanged>2011-08-24T11:22:14</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-09-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Sep 18, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-24T11:22:12</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>9</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-09-24</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-24</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
+		<TourEventID>6</TourEventID>
+		<Gross>2,298.00</Gross>
+		<Commission>229.80</Commission>
+		<Net>2,068.20</Net>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-24T11:22:14</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>5</ID>
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-09-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Sep 18, 2011</Description>
+		<EmployeeModID>11</EmployeeModID>
+		<ModDate>2011-09-24T11:22:14</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>9</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-09-24</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-24</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
+		<TourEventID>6</TourEventID>
+		<Gross>2,388.00</Gross>
+		<Commission>238.80</Commission>
+		<Net>2,149.20</Net>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-24T11:22:15</HistoryDate>
+	</BookingHistory>
+	<BookingHistory>
+		<ID>5</ID>
+		<LastChanged>2011-08-24T11:26:55</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingDate>2011-09-24</BookingDate>
+		<EmployeeID>11</EmployeeID>
+		<ProfileID>20</ProfileID>
+		<ProfileCode/>
+		<Code/>
+		<Description>Turn - Seven day Bangkok Tour - Sep 18, 2011</Description>
+		<EmployeeModID>-1</EmployeeModID>
+		<ModDate>2011-09-24T11:22:14</ModDate>
+		<BookingStatusID>1</BookingStatusID>
+		<GenericName/>
+		<AddressLine1>114 Winchester Lane</AddressLine1>
+		<AddressLine2/>
+		<CityOrTown>Monrovia</CityOrTown>
+		<StateOrRegion>CA</StateOrRegion>
+		<PostalCode>91016</PostalCode>
+		<Country>USA</Country>
+		<Tel>626-358-2903</Tel>
+		<Fax/>
+		<Email>don@donandann.com</Email>
+		<Contact>James Turn</Contact>
+		<LanguageID>1</LanguageID>
+		<CurrencysID>840</CurrencysID>
+		<CurrencyCode/>
+		<Exchange/>
+		<Pax>2</Pax>
+		<Focs/>
+		<SinglePax>0</SinglePax>
+		<DoublePax>2</DoublePax>
+		<TriplePax>0</TriplePax>
+		<QuadPax>0</QuadPax>
+		<Children/>
+		<Gateway/>
+		<TourID>9</TourID>
+		<Markup>0.1500</Markup>
+		<StdCommission>0.1000</StdCommission>
+		<AcceptDate/>
+		<DepositRecDate/>
+		<FinalPayRecDate/>
+		<Booked/>
+		<DepositReceived/>
+		<DepositDue/>
+		<FinalPaymentReceived/>
+		<FinalPaymentDue/>
+		<Cancelled/>
+		<Properties/>
+		<Deposit>400.00</Deposit>
+		<DepositDueDate>2011-09-24</DepositDueDate>
+		<FinalPaymentDueDate>2011-09-24</FinalPaymentDueDate>
+		<NextEventDate>2011-09-24</NextEventDate>
+		<TourEventID>6</TourEventID>
+		<Gross>2,647.00</Gross>
+		<Commission>264.70</Commission>
+		<Net>2,382.30</Net>
+		<Balance/>
+		<PricingStatusID>5</PricingStatusID>
+		<AskForAnswer>Y</AskForAnswer>
+		<AlwaysResolve>N</AlwaysResolve>
+		<TourPricingTypeID>1</TourPricingTypeID>
+		<NonTourPricingTypeID>4</NonTourPricingTypeID>
+		<NextLineSequence>1</NextLineSequence>
+		<HistoryDate>2011-09-24T11:26:55</HistoryDate>
 	</BookingHistory>
 </file>

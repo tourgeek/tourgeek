@@ -3,7 +3,7 @@
 		<LastChanged>2010-05-10T04:00:19</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-05-10T04:00:02</TrxDate>
+		<TrxDate>2011-06-10T04:00:02</TrxDate>
 		<Amount>-400.00</Amount>
 		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -11,13 +11,13 @@
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>3</BookingID>
 		<Comments>Deposit</Comments>
-		<DepartureDate>2011-07-02</DepartureDate>
+		<DepartureDate>2011-08-02</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="2">
 		<LastChanged>2010-05-10T04:00:19</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
-		<TrxDate>2011-05-10T04:00:17</TrxDate>
+		<TrxDate>2011-06-10T04:00:17</TrxDate>
 		<Amount>2,794.48</Amount>
 		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -25,13 +25,13 @@
 		<LinkedTrxDescID/>
 		<BookingID>3</BookingID>
 		<Comments>Invoice</Comments>
-		<DepartureDate>2011-07-02</DepartureDate>
+		<DepartureDate>2011-08-02</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="3">
 		<LastChanged>2010-05-10T04:00:19</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-05-10T04:00:02</TrxDate>
+		<TrxDate>2011-06-10T04:00:02</TrxDate>
 		<Amount>-400.00</Amount>
 		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -39,13 +39,13 @@
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>1</BookingID>
 		<Comments>Deposit</Comments>
-		<DepartureDate>2011-07-14</DepartureDate>
+		<DepartureDate>2011-08-14</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="4">
 		<LastChanged>2010-05-10T04:00:19</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>106</TrxStatusID>
-		<TrxDate>2011-05-10T04:00:17</TrxDate>
+		<TrxDate>2011-06-10T04:00:17</TrxDate>
 		<Amount>2,149.20</Amount>
 		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -53,6 +53,6 @@
 		<LinkedTrxDescID/>
 		<BookingID>1</BookingID>
 		<Comments>Invoice Modification</Comments>
-		<DepartureDate>2011-07-14</DepartureDate>
+		<DepartureDate>2011-08-14</DepartureDate>
 	</ArTrx>
 </file>

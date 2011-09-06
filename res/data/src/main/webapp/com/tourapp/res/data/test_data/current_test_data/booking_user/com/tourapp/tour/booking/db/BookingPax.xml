@@ -143,4 +143,40 @@
 		<Gender/>
 		<Smoker/>
 	</BookingPax>
+	<BookingPax ID="9">
+		<LastChanged>2011-08-24T11:21:52</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>5</BookingID>
+		<Sequence>0</Sequence>
+		<RemoteReferenceNo/>
+		<PaxCategoryID>2</PaxCategoryID>
+		<ProfileID>21</ProfileID>
+		<ShareBookingPaxID/>
+		<Comments/>
+		<NamePrefix/>
+		<FirstName>Linda</FirstName>
+		<MiddleName/>
+		<SurName>Turn</SurName>
+		<DateOfBirth/>
+		<Gender/>
+		<Smoker/>
+	</BookingPax>
+	<BookingPax ID="10">
+		<LastChanged>2011-08-24T11:21:52</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>5</BookingID>
+		<Sequence>1</Sequence>
+		<RemoteReferenceNo/>
+		<PaxCategoryID>2</PaxCategoryID>
+		<ProfileID>20</ProfileID>
+		<ShareBookingPaxID/>
+		<Comments/>
+		<NamePrefix/>
+		<FirstName>James</FirstName>
+		<MiddleName/>
+		<SurName>Turn</SurName>
+		<DateOfBirth/>
+		<Gender/>
+		<Smoker/>
+	</BookingPax>
 </file>

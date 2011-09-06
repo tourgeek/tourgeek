@@ -11659,4 +11659,3356 @@ transportID=11
 </MessageData>
 		<ErrorText/>
 	</MessageLog>
+	<MessageLog ID="192">
+		<LastChanged>2011-08-24T11:22:14</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>193</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Information Request</Description>
+		<MessageTime>2011-08-24T11:22:12</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>20</ReferenceID>
+		<ResponseMessageLogID>193</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:12 PDT 2011
+record=BookingDetail
+userid=11
+trxID=192
+description=Hotel Information Request
+messageProcessInfoID=193
+referenceClass=com.tourapp.tour.booking.detail.db.BookingHotel
+objectID=20
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:12 PDT 2011
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelInformationRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=191
+messageRequestType=InfoStatusID
+contactType=Vendor
+responseMessageID=195
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:12 PDT 2011
+transportType=Thread
+queueName=trxSendLocal
+transportID=15
+queueType=local
+sendMessageBy=Client
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.request.HotelInformationRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSendLocal</MessageQueueName>
+		<MessageQueueType>local</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><productMessage><SourceReferenceNo>20</SourceReferenceNo><DetailDate>Mon Sep 19 12:00:00 PDT 2011</DetailDate><ProductID>6</ProductID><productDesc>Dusit Thani Hotel</productDesc><oldDetailDate>Mon Sep 19 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>20</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:13 PDT 2011</LastChanged><RateID>13</RateID><rateTypeDesc>Regular/rack</rateTypeDesc><ClassID>101</ClassID><rateClassDesc>Run of the House</rateClassDesc><Nights>5</Nights></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;20&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Mon Sep 19 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;6&lt;/ProductID&gt;&lt;productDesc&gt;Dusit Thani Hotel&lt;/productDesc&gt;&lt;oldDetailDate&gt;Mon Sep 19 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;20&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:13 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;13&lt;/RateID&gt;&lt;rateTypeDesc&gt;Regular/rack&lt;/rateTypeDesc&gt;&lt;ClassID&gt;101&lt;/ClassID&gt;&lt;rateClassDesc&gt;Run of the House&lt;/rateClassDesc&gt;&lt;Nights&gt;5&lt;/Nights&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;193&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;191&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.request.HotelInformationRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;20&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Client&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;description&gt;Hotel Information Request&lt;/description&gt;
+&lt;trxID&gt;192&lt;/trxID&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;195&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingHotel&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="193">
+		<LastChanged>2011-08-24T11:22:13</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>195</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Information Response</Description>
+		<MessageTime>2011-08-24T11:22:12</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>20</ReferenceID>
+		<ResponseMessageLogID>192</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:12 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Hotel Information Response
+messageProcessInfoID=195
+trxIDOrig=192
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:12 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.hotel.response.HotelInformationResponse
+schemaLocation=
+messageCode=195
+messageInfoType=REPLY
+messageRequestType=InfoStatusID
+process=com.tourapp.tour.message.hotel.response.in.BookingHotelInfoMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:12 PDT 2011
+queueName=trxSendLocal
+transportID=15
+queueType=local
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.response.HotelInformationResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:12.886-07:00</TimeStamp><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:12.886-07:00&lt;/TimeStamp&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;trxIDOrig&gt;192&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;195&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;process&gt;com.tourapp.tour.message.hotel.response.in.BookingHotelInfoMsgReplyInProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.response.HotelInformationResponse&lt;/internalMessageClass&gt;
+&lt;messageCode&gt;195&lt;/messageCode&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;description&gt;Hotel Information Response&lt;/description&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="194">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>233</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Information Request</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>21</ReferenceID>
+		<ResponseMessageLogID>195</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+record=BookingDetail
+userid=11
+trxID=194
+description=Land Information Request
+messageProcessInfoID=233
+referenceClass=com.tourapp.tour.booking.detail.db.BookingLand
+objectID=21
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+internalMessageClass=com.tourapp.tour.message.land.request.LandInformationRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=231
+messageRequestType=InfoStatusID
+contactType=Vendor
+responseMessageID=217
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportType=Thread
+queueName=trxSendLocal
+transportID=15
+queueType=local
+sendMessageBy=Client
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.request.LandInformationRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSendLocal</MessageQueueName>
+		<MessageQueueType>local</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><productMessage><SourceReferenceNo>21</SourceReferenceNo><DetailDate>Mon Sep 19 08:30:00 PDT 2011</DetailDate><ProductID>2</ProductID><Code>TRF-1</Code><productDesc>Airport - Hotel Transfer (Bangkok)</productDesc><oldDetailDate>Mon Sep 19 08:30:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>21</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:14 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack Rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Seat in coach</rateClassDesc></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;21&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Mon Sep 19 08:30:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;2&lt;/ProductID&gt;&lt;Code&gt;TRF-1&lt;/Code&gt;&lt;productDesc&gt;Airport - Hotel Transfer (Bangkok)&lt;/productDesc&gt;&lt;oldDetailDate&gt;Mon Sep 19 08:30:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;21&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:14 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack Rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Seat in coach&lt;/rateClassDesc&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;233&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;231&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.request.LandInformationRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;21&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Client&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;description&gt;Land Information Request&lt;/description&gt;
+&lt;trxID&gt;194&lt;/trxID&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;217&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingLand&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="195">
+		<LastChanged>2011-08-24T11:22:14</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>217</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Information Response</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>21</ReferenceID>
+		<ResponseMessageLogID>194</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Land Information Response
+messageProcessInfoID=217
+trxIDOrig=194
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.land.response.LandInformationResponse
+schemaLocation=
+messageCode=217
+messageInfoType=REPLY
+messageRequestType=InfoStatusID
+process=com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+queueName=trxSendLocal
+transportID=15
+queueType=local
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.response.LandInformationResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:13.287-07:00</TimeStamp><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:13.287-07:00&lt;/TimeStamp&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;trxIDOrig&gt;194&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;217&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;process&gt;com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.response.LandInformationResponse&lt;/internalMessageClass&gt;
+&lt;messageCode&gt;217&lt;/messageCode&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;description&gt;Land Information Response&lt;/description&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="196">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Pricing Request</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>20</ReferenceID>
+		<ResponseMessageLogID>198</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+record=BookingDetail
+userid=11
+trxID=196
+description=Hotel Pricing Request
+messageProcessInfoID=5
+referenceClass=com.tourapp.tour.booking.detail.db.BookingHotel
+objectID=20
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelRateRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+messageInCode=2
+messageRequestType=CostStatusID
+contactType=Vendor
+responseMessageID=6
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.request.HotelRateRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>20</SourceReferenceNo><DetailDate>Mon Sep 19 12:00:00 PDT 2011</DetailDate><ProductID>6</ProductID><productDesc>Dusit Thani Hotel</productDesc><oldDetailDate>Mon Sep 19 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>20</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:17 PDT 2011</LastChanged><RateID>13</RateID><rateTypeDesc>Regular/rack</rateTypeDesc><ClassID>101</ClassID><rateClassDesc>Run of the House</rateClassDesc><Nights>5</Nights></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;20&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Mon Sep 19 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;6&lt;/ProductID&gt;&lt;productDesc&gt;Dusit Thani Hotel&lt;/productDesc&gt;&lt;oldDetailDate&gt;Mon Sep 19 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;20&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:17 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;13&lt;/RateID&gt;&lt;rateTypeDesc&gt;Regular/rack&lt;/rateTypeDesc&gt;&lt;ClassID&gt;101&lt;/ClassID&gt;&lt;rateClassDesc&gt;Run of the House&lt;/rateClassDesc&gt;&lt;Nights&gt;5&lt;/Nights&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;email.XSLTDocument&gt;docs/styles/xsl/tour/message/getrates.xsl&lt;/email.XSLTDocument&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;5&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;2&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.request.HotelRateRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;20&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Hotel Pricing Request&lt;/description&gt;
+&lt;trxID&gt;196&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;6&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingHotel&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="197">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>233</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Information Request</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>22</ReferenceID>
+		<ResponseMessageLogID>200</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+record=BookingDetail
+userid=11
+trxID=197
+description=Land Information Request
+messageProcessInfoID=233
+referenceClass=com.tourapp.tour.booking.detail.db.BookingLand
+objectID=22
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+internalMessageClass=com.tourapp.tour.message.land.request.LandInformationRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=231
+messageRequestType=InfoStatusID
+contactType=Vendor
+responseMessageID=217
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportType=Thread
+queueName=trxSendLocal
+transportID=15
+queueType=local
+sendMessageBy=Client
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.request.LandInformationRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSendLocal</MessageQueueName>
+		<MessageQueueType>local</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><productMessage><SourceReferenceNo>22</SourceReferenceNo><DetailDate>Tue Sep 20 08:30:00 PDT 2011</DetailDate><ProductID>1</ProductID><Code>SS-12</Code><productDesc>Full Day Bangkok Sightseeing</productDesc><oldDetailDate>Tue Sep 20 08:30:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>22</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:14 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack Rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Seat in coach</rateClassDesc></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;22&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Tue Sep 20 08:30:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;1&lt;/ProductID&gt;&lt;Code&gt;SS-12&lt;/Code&gt;&lt;productDesc&gt;Full Day Bangkok Sightseeing&lt;/productDesc&gt;&lt;oldDetailDate&gt;Tue Sep 20 08:30:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;22&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:14 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack Rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Seat in coach&lt;/rateClassDesc&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;233&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;231&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.request.LandInformationRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;22&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Client&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;description&gt;Land Information Request&lt;/description&gt;
+&lt;trxID&gt;197&lt;/trxID&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;217&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingLand&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="198">
+		<LastChanged>2011-08-24T11:22:14</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>6</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Pricing Response</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>20</ReferenceID>
+		<ResponseMessageLogID>196</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Hotel Pricing Response
+messageProcessInfoID=6
+trxIDOrig=196
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.hotel.response.HotelRateResponse
+schemaLocation=
+messageCode=6
+messageInfoType=REPLY
+messageRequestType=CostStatusID
+process=com.tourapp.tour.message.hotel.response.in.BookingHotelRateMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.response.HotelRateResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:13.512-07:00</TimeStamp><productResponse><TotalCost1>440.0</TotalCost1><TotalCost2>440.0</TotalCost2><TotalCost3>440.0</TotalCost3><TotalCost4>440.0</TotalCost4><TotalCost5>0.0</TotalCost5><RoomCost>2200.0</RoomCost><MealCost>0.0</MealCost><TotalCost>2200.0</TotalCost></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:13.512-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;TotalCost1&gt;440.0&lt;/TotalCost1&gt;&lt;TotalCost2&gt;440.0&lt;/TotalCost2&gt;&lt;TotalCost3&gt;440.0&lt;/TotalCost3&gt;&lt;TotalCost4&gt;440.0&lt;/TotalCost4&gt;&lt;TotalCost5&gt;0.0&lt;/TotalCost5&gt;&lt;RoomCost&gt;2200.0&lt;/RoomCost&gt;&lt;MealCost&gt;0.0&lt;/MealCost&gt;&lt;TotalCost&gt;2200.0&lt;/TotalCost&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;6&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.response.HotelRateResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.hotel.response.in.BookingHotelRateMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Hotel Pricing Response&lt;/description&gt;
+&lt;trxIDOrig&gt;196&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;6&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="199">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Availability Request</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>20</ReferenceID>
+		<ResponseMessageLogID>201</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+record=BookingDetail
+userid=11
+trxID=199
+description=Hotel Availability Request
+messageProcessInfoID=8
+referenceClass=com.tourapp.tour.booking.detail.db.BookingHotel
+objectID=20
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest
+screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
+messageInCode=7
+messageRequestType=InventoryStatusID
+contactType=Vendor
+responseMessageID=10
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>20</SourceReferenceNo><DetailDate>Mon Sep 19 12:00:00 PDT 2011</DetailDate><ProductID>6</ProductID><productDesc>Dusit Thani Hotel</productDesc><oldDetailDate>Mon Sep 19 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>20</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:18 PDT 2011</LastChanged><RateID>13</RateID><rateTypeDesc>Regular/rack</rateTypeDesc><ClassID>101</ClassID><rateClassDesc>Run of the House</rateClassDesc><Nights>5</Nights></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;20&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Mon Sep 19 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;6&lt;/ProductID&gt;&lt;productDesc&gt;Dusit Thani Hotel&lt;/productDesc&gt;&lt;oldDetailDate&gt;Mon Sep 19 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;20&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:18 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;13&lt;/RateID&gt;&lt;rateTypeDesc&gt;Regular/rack&lt;/rateTypeDesc&gt;&lt;ClassID&gt;101&lt;/ClassID&gt;&lt;rateClassDesc&gt;Run of the House&lt;/rateClassDesc&gt;&lt;Nights&gt;5&lt;/Nights&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;email.XSLTDocument&gt;docs/styles/xsl/tour/message/getinventory.xsl&lt;/email.XSLTDocument&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;8&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;7&lt;/messageInCode&gt;
+&lt;screen.screen&gt;com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen&lt;/screen.screen&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InventoryStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;20&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Hotel Availability Request&lt;/description&gt;
+&lt;trxID&gt;199&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;10&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingHotel&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="200">
+		<LastChanged>2011-08-24T11:22:14</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>217</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Information Response</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>22</ReferenceID>
+		<ResponseMessageLogID>197</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Land Information Response
+messageProcessInfoID=217
+trxIDOrig=197
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.land.response.LandInformationResponse
+schemaLocation=
+messageCode=217
+messageInfoType=REPLY
+messageRequestType=InfoStatusID
+process=com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+queueName=trxSendLocal
+transportID=15
+queueType=local
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.response.LandInformationResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:13.675-07:00</TimeStamp><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:13.675-07:00&lt;/TimeStamp&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;trxIDOrig&gt;197&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;217&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;process&gt;com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.response.LandInformationResponse&lt;/internalMessageClass&gt;
+&lt;messageCode&gt;217&lt;/messageCode&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;description&gt;Land Information Response&lt;/description&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="201">
+		<LastChanged>2011-08-24T11:22:14</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>10</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Availability Response</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>20</ReferenceID>
+		<ResponseMessageLogID>199</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Hotel Availability Response
+messageProcessInfoID=10
+trxIDOrig=199
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse
+schemaLocation=
+messageCode=10
+messageInfoType=REPLY
+messageRequestType=InventoryStatusID
+process=com.tourapp.tour.message.hotel.response.in.BookingHotelAvailMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:13.724-07:00</TimeStamp><productResponse><Availability>10</Availability></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:13.724-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;Availability&gt;10&lt;/Availability&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;10&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.hotel.response.in.BookingHotelAvailMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;InventoryStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Hotel Availability Response&lt;/description&gt;
+&lt;trxIDOrig&gt;199&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;10&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="202">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Pricing Request</Description>
+		<MessageTime>2011-08-24T11:22:13</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>21</ReferenceID>
+		<ResponseMessageLogID>203</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+record=BookingDetail
+userid=11
+trxID=202
+description=Land Pricing Request
+messageProcessInfoID=28
+referenceClass=com.tourapp.tour.booking.detail.db.BookingLand
+objectID=21
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+internalMessageClass=com.tourapp.tour.message.land.request.LandRateRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=27
+messageRequestType=CostStatusID
+contactType=Vendor
+responseMessageID=30
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:13 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.request.LandRateRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>21</SourceReferenceNo><DetailDate>Mon Sep 19 08:30:00 PDT 2011</DetailDate><ProductID>2</ProductID><Code>TRF-1</Code><productDesc>Airport - Hotel Transfer (Bangkok)</productDesc><oldDetailDate>Mon Sep 19 08:30:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>21</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:18 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack Rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Seat in coach</rateClassDesc></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;21&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Mon Sep 19 08:30:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;2&lt;/ProductID&gt;&lt;Code&gt;TRF-1&lt;/Code&gt;&lt;productDesc&gt;Airport - Hotel Transfer (Bangkok)&lt;/productDesc&gt;&lt;oldDetailDate&gt;Mon Sep 19 08:30:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;21&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:18 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack Rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Seat in coach&lt;/rateClassDesc&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;28&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;27&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.request.LandRateRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;21&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Land Pricing Request&lt;/description&gt;
+&lt;trxID&gt;202&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;30&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingLand&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="203">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>30</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Pricing Response</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>21</ReferenceID>
+		<ResponseMessageLogID>202</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Land Pricing Response
+messageProcessInfoID=30
+trxIDOrig=202
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.land.response.LandRateResponse
+schemaLocation=
+messageCode=30
+messageInfoType=REPLY
+messageRequestType=CostStatusID
+process=com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.response.LandRateResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:13.937-07:00</TimeStamp><productResponse><PMCCost>54.0</PMCCost><SICCost>63.0</SICCost><PPCost>63.0</PPCost><TotalCost>63.0</TotalCost></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:13.937-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;PMCCost&gt;54.0&lt;/PMCCost&gt;&lt;SICCost&gt;63.0&lt;/SICCost&gt;&lt;PPCost&gt;63.0&lt;/PPCost&gt;&lt;TotalCost&gt;63.0&lt;/TotalCost&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;30&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.response.LandRateResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Land Pricing Response&lt;/description&gt;
+&lt;trxIDOrig&gt;202&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;30&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="204">
+		<LastChanged>2011-08-24T11:22:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>233</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Information Request</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>23</ReferenceID>
+		<ResponseMessageLogID>205</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+record=BookingDetail
+userid=11
+trxID=204
+description=Land Information Request
+messageProcessInfoID=233
+referenceClass=com.tourapp.tour.booking.detail.db.BookingLand
+objectID=23
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+internalMessageClass=com.tourapp.tour.message.land.request.LandInformationRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=231
+messageRequestType=InfoStatusID
+contactType=Vendor
+responseMessageID=217
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+transportType=Thread
+queueName=trxSendLocal
+transportID=15
+queueType=local
+sendMessageBy=Client
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.request.LandInformationRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSendLocal</MessageQueueName>
+		<MessageQueueType>local</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><productMessage><SourceReferenceNo>23</SourceReferenceNo><DetailDate>Sat Sep 24 08:30:00 PDT 2011</DetailDate><ProductID>2</ProductID><Code>TRF-1</Code><productDesc>Airport - Hotel Transfer (Bangkok)</productDesc><oldDetailDate>Sat Sep 24 08:30:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>23</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:14 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack Rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Seat in coach</rateClassDesc></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;23&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sat Sep 24 08:30:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;2&lt;/ProductID&gt;&lt;Code&gt;TRF-1&lt;/Code&gt;&lt;productDesc&gt;Airport - Hotel Transfer (Bangkok)&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sat Sep 24 08:30:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;23&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:14 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack Rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Seat in coach&lt;/rateClassDesc&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;233&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;231&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.request.LandInformationRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;23&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Client&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;description&gt;Land Information Request&lt;/description&gt;
+&lt;trxID&gt;204&lt;/trxID&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;217&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingLand&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="205">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>217</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Information Response</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>23</ReferenceID>
+		<ResponseMessageLogID>204</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Land Information Response
+messageProcessInfoID=217
+trxIDOrig=204
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.land.response.LandInformationResponse
+schemaLocation=
+messageCode=217
+messageInfoType=REPLY
+messageRequestType=InfoStatusID
+process=com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+queueName=trxSendLocal
+transportID=15
+queueType=local
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.response.LandInformationResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:14.168-07:00</TimeStamp><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:14.168-07:00&lt;/TimeStamp&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;trxIDOrig&gt;204&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;217&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;process&gt;com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.response.LandInformationResponse&lt;/internalMessageClass&gt;
+&lt;messageCode&gt;217&lt;/messageCode&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;description&gt;Land Information Response&lt;/description&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="206">
+		<LastChanged>2011-08-24T11:22:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Pricing Request</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>22</ReferenceID>
+		<ResponseMessageLogID>207</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+record=BookingDetail
+userid=11
+trxID=206
+description=Land Pricing Request
+messageProcessInfoID=28
+referenceClass=com.tourapp.tour.booking.detail.db.BookingLand
+objectID=22
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+internalMessageClass=com.tourapp.tour.message.land.request.LandRateRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=27
+messageRequestType=CostStatusID
+contactType=Vendor
+responseMessageID=30
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.request.LandRateRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>22</SourceReferenceNo><DetailDate>Tue Sep 20 08:30:00 PDT 2011</DetailDate><ProductID>1</ProductID><Code>SS-12</Code><productDesc>Full Day Bangkok Sightseeing</productDesc><oldDetailDate>Tue Sep 20 08:30:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>22</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:16 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack Rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Seat in coach</rateClassDesc></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;22&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Tue Sep 20 08:30:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;1&lt;/ProductID&gt;&lt;Code&gt;SS-12&lt;/Code&gt;&lt;productDesc&gt;Full Day Bangkok Sightseeing&lt;/productDesc&gt;&lt;oldDetailDate&gt;Tue Sep 20 08:30:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;22&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:16 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack Rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Seat in coach&lt;/rateClassDesc&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;28&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;27&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.request.LandRateRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;22&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Land Pricing Request&lt;/description&gt;
+&lt;trxID&gt;206&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;30&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingLand&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="207">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>30</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Pricing Response</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>22</ReferenceID>
+		<ResponseMessageLogID>206</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Land Pricing Response
+messageProcessInfoID=30
+trxIDOrig=206
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.land.response.LandRateResponse
+schemaLocation=
+messageCode=30
+messageInfoType=REPLY
+messageRequestType=CostStatusID
+process=com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.response.LandRateResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:14.476-07:00</TimeStamp><productResponse><PMCCost>0.0</PMCCost><SICCost>104.0</SICCost><PPCost>104.0</PPCost><TotalCost>104.0</TotalCost></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:14.476-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;PMCCost&gt;0.0&lt;/PMCCost&gt;&lt;SICCost&gt;104.0&lt;/SICCost&gt;&lt;PPCost&gt;104.0&lt;/PPCost&gt;&lt;TotalCost&gt;104.0&lt;/TotalCost&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;30&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.response.LandRateResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Land Pricing Response&lt;/description&gt;
+&lt;trxIDOrig&gt;206&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;30&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="208">
+		<LastChanged>2011-08-24T11:22:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>236</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>48</ContactID>
+		<Description>Item Information Request</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>24</ReferenceID>
+		<ResponseMessageLogID>209</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+record=BookingDetail
+userid=11
+trxID=208
+description=Item Information Request
+messageProcessInfoID=236
+referenceClass=com.tourapp.tour.booking.detail.db.BookingItem
+objectID=24
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+internalMessageClass=com.tourapp.tour.message.item.request.ItemInformationRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=234
+messageRequestType=InfoStatusID
+contactType=Vendor
+responseMessageID=214
+contactID=48
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+transportType=Thread
+queueName=trxSendLocal
+transportID=15
+queueType=local
+sendMessageBy=Client
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.item.request.ItemInformationRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSendLocal</MessageQueueName>
+		<MessageQueueType>local</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><productMessage><SourceReferenceNo>24</SourceReferenceNo><DetailDate>Sun Sep 18 12:00:00 PDT 2011</DetailDate><ProductID>1</ProductID><productDesc>Tour cancellation insurance</productDesc><oldDetailDate>Sun Sep 18 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>24</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:15 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Standard</rateClassDesc><DepartureDate>Sun Sep 18 00:00:00 PDT 2011</DepartureDate></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;24&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sun Sep 18 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;1&lt;/ProductID&gt;&lt;productDesc&gt;Tour cancellation insurance&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sun Sep 18 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;24&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:15 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Standard&lt;/rateClassDesc&gt;&lt;DepartureDate&gt;Sun Sep 18 00:00:00 PDT 2011&lt;/DepartureDate&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;236&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;234&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.item.request.ItemInformationRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;24&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Client&lt;/sendMessageBy&gt;
+&lt;contactID&gt;48&lt;/contactID&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;description&gt;Item Information Request&lt;/description&gt;
+&lt;trxID&gt;208&lt;/trxID&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;214&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingItem&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="209">
+		<LastChanged>2011-08-24T11:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>214</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>48</ContactID>
+		<Description>Item Information Response</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>24</ReferenceID>
+		<ResponseMessageLogID>208</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Item Information Response
+messageProcessInfoID=214
+trxIDOrig=208
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.item.response.ItemInformationResponse
+schemaLocation=
+messageCode=214
+messageInfoType=REPLY
+messageRequestType=InfoStatusID
+process=com.tourapp.tour.message.item.response.in.BookingItemInfoMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+queueName=trxSendLocal
+transportID=15
+queueType=local
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.item.response.ItemInformationResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:14.708-07:00</TimeStamp><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:14.708-07:00&lt;/TimeStamp&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;trxIDOrig&gt;208&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;214&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;process&gt;com.tourapp.tour.message.item.response.in.BookingItemInfoMsgReplyInProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.item.response.ItemInformationResponse&lt;/internalMessageClass&gt;
+&lt;messageCode&gt;214&lt;/messageCode&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;description&gt;Item Information Response&lt;/description&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="210">
+		<LastChanged>2011-08-24T11:22:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>28</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Pricing Request</Description>
+		<MessageTime>2011-08-24T11:22:14</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>23</ReferenceID>
+		<ResponseMessageLogID>211</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+record=BookingDetail
+userid=11
+trxID=210
+description=Land Pricing Request
+messageProcessInfoID=28
+referenceClass=com.tourapp.tour.booking.detail.db.BookingLand
+objectID=23
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+internalMessageClass=com.tourapp.tour.message.land.request.LandRateRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=27
+messageRequestType=CostStatusID
+contactType=Vendor
+responseMessageID=30
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:14 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.request.LandRateRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>23</SourceReferenceNo><DetailDate>Sat Sep 24 08:30:00 PDT 2011</DetailDate><ProductID>2</ProductID><Code>TRF-1</Code><productDesc>Airport - Hotel Transfer (Bangkok)</productDesc><oldDetailDate>Sat Sep 24 08:30:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>23</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:16 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack Rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Seat in coach</rateClassDesc></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;23&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sat Sep 24 08:30:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;2&lt;/ProductID&gt;&lt;Code&gt;TRF-1&lt;/Code&gt;&lt;productDesc&gt;Airport - Hotel Transfer (Bangkok)&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sat Sep 24 08:30:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;23&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:16 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack Rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Seat in coach&lt;/rateClassDesc&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;28&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;27&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.request.LandRateRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;23&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Land Pricing Request&lt;/description&gt;
+&lt;trxID&gt;210&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;30&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingLand&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="211">
+		<LastChanged>2011-08-24T11:22:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>30</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Land Pricing Response</Description>
+		<MessageTime>2011-08-24T11:22:15</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>23</ReferenceID>
+		<ResponseMessageLogID>210</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Land Pricing Response
+messageProcessInfoID=30
+trxIDOrig=210
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.land.response.LandRateResponse
+schemaLocation=
+messageCode=30
+messageInfoType=REPLY
+messageRequestType=CostStatusID
+process=com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.land.response.LandRateResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:14.985-07:00</TimeStamp><productResponse><PMCCost>54.0</PMCCost><SICCost>63.0</SICCost><PPCost>63.0</PPCost><TotalCost>63.0</TotalCost></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:14.985-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;PMCCost&gt;54.0&lt;/PMCCost&gt;&lt;SICCost&gt;63.0&lt;/SICCost&gt;&lt;PPCost&gt;63.0&lt;/PPCost&gt;&lt;TotalCost&gt;63.0&lt;/TotalCost&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;30&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.land.response.LandRateResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Land Pricing Response&lt;/description&gt;
+&lt;trxIDOrig&gt;210&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;30&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="212">
+		<LastChanged>2011-08-24T11:22:17</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageProcessInfoID>56</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>48</ContactID>
+		<Description>Item Pricing Request</Description>
+		<MessageTime>2011-08-24T11:22:15</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>24</ReferenceID>
+		<ResponseMessageLogID>213</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+record=BookingDetail
+userid=11
+trxID=212
+description=Item Pricing Request
+messageProcessInfoID=56
+referenceClass=com.tourapp.tour.booking.detail.db.BookingItem
+objectID=24
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+internalMessageClass=com.tourapp.tour.message.item.request.ItemRateRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=54
+messageRequestType=CostStatusID
+contactType=Vendor
+responseMessageID=64
+contactID=48
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+transportType=Direct
+transportID=7
+sendMessageBy=Direct
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.item.request.ItemRateRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>24</SourceReferenceNo><DetailDate>Sun Sep 18 12:00:00 PDT 2011</DetailDate><ProductID>1</ProductID><productDesc>Tour cancellation insurance</productDesc><oldDetailDate>Sun Sep 18 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>24</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:22:19 PDT 2011</LastChanged><RateID>1</RateID><rateTypeDesc>Rack rate</rateTypeDesc><ClassID>1</ClassID><rateClassDesc>Standard</rateClassDesc><DepartureDate>Sun Sep 18 00:00:00 PDT 2011</DepartureDate></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;24&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sun Sep 18 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;1&lt;/ProductID&gt;&lt;productDesc&gt;Tour cancellation insurance&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sun Sep 18 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;24&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:22:19 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;1&lt;/RateID&gt;&lt;rateTypeDesc&gt;Rack rate&lt;/rateTypeDesc&gt;&lt;ClassID&gt;1&lt;/ClassID&gt;&lt;rateClassDesc&gt;Standard&lt;/rateClassDesc&gt;&lt;DepartureDate&gt;Sun Sep 18 00:00:00 PDT 2011&lt;/DepartureDate&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;7&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;56&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;54&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.item.request.ItemRateRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;24&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Direct&lt;/sendMessageBy&gt;
+&lt;contactID&gt;48&lt;/contactID&gt;
+&lt;description&gt;Item Pricing Request&lt;/description&gt;
+&lt;trxID&gt;212&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;64&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingItem&lt;/referenceClass&gt;
+&lt;transportType&gt;Direct&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="213">
+		<LastChanged>2011-08-24T11:22:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>7</MessageTransportID>
+		<MessageProcessInfoID>64</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>48</ContactID>
+		<Description>Item Pricing Response</Description>
+		<MessageTime>2011-08-24T11:22:15</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>24</ReferenceID>
+		<ResponseMessageLogID>212</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Item Pricing Response
+messageProcessInfoID=64
+trxIDOrig=212
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.item.response.ItemRateResponse
+schemaLocation=
+messageCode=64
+messageInfoType=REPLY
+messageRequestType=CostStatusID
+process=com.tourapp.tour.message.item.response.in.BookingItemRateMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:22:15 PDT 2011
+transportID=7
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.item.response.ItemRateResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:22:15.249-07:00</TimeStamp><productResponse><PPCost>84.0</PPCost><TotalCost>84.0</TotalCost></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:22:15.249-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;PPCost&gt;84.0&lt;/PPCost&gt;&lt;TotalCost&gt;84.0&lt;/TotalCost&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;64&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.item.response.ItemRateResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.item.response.in.BookingItemRateMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;7&lt;/transportID&gt;
+&lt;description&gt;Item Pricing Response&lt;/description&gt;
+&lt;trxIDOrig&gt;212&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;64&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="214">
+		<LastChanged>2011-08-24T11:26:56</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>193</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Information Request</Description>
+		<MessageTime>2011-08-24T11:26:54</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>25</ReferenceID>
+		<ResponseMessageLogID>215</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:26:54 PDT 2011
+record=BookingDetail
+userid=11
+trxID=214
+description=Hotel Information Request
+messageProcessInfoID=193
+referenceClass=com.tourapp.tour.booking.detail.db.BookingHotel
+objectID=25
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:26:54 PDT 2011
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelInformationRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+messageInCode=191
+messageRequestType=InfoStatusID
+contactType=Vendor
+responseMessageID=195
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:26:54 PDT 2011
+transportType=Thread
+queueName=trxSendLocal
+transportID=15
+queueType=local
+sendMessageBy=Client
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.request.HotelInformationRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSendLocal</MessageQueueName>
+		<MessageQueueType>local</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><productMessage><SourceReferenceNo>25</SourceReferenceNo><DetailDate>Sat Sep 24 12:00:00 PDT 2011</DetailDate><ProductID>6</ProductID><productDesc>Dusit Thani Hotel</productDesc><oldDetailDate>Sat Sep 24 00:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>25</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:26:53 PDT 2011</LastChanged><RateID>13</RateID><rateTypeDesc>Regular/rack</rateTypeDesc><ClassID>101</ClassID><rateClassDesc>Run of the House</rateClassDesc><Nights>3</Nights></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;25&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sat Sep 24 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;6&lt;/ProductID&gt;&lt;productDesc&gt;Dusit Thani Hotel&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sat Sep 24 00:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;25&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:26:53 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;13&lt;/RateID&gt;&lt;rateTypeDesc&gt;Regular/rack&lt;/rateTypeDesc&gt;&lt;ClassID&gt;101&lt;/ClassID&gt;&lt;rateClassDesc&gt;Run of the House&lt;/rateClassDesc&gt;&lt;Nights&gt;3&lt;/Nights&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;193&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;191&lt;/messageInCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.request.HotelInformationRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;25&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Client&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;description&gt;Hotel Information Request&lt;/description&gt;
+&lt;trxID&gt;214&lt;/trxID&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;195&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingHotel&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="215">
+		<LastChanged>2011-08-24T11:26:55</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>15</MessageTransportID>
+		<MessageProcessInfoID>195</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Information Response</Description>
+		<MessageTime>2011-08-24T11:26:54</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>25</ReferenceID>
+		<ResponseMessageLogID>214</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:26:54 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Hotel Information Response
+messageProcessInfoID=195
+trxIDOrig=214
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:26:54 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.hotel.response.HotelInformationResponse
+schemaLocation=
+messageCode=195
+messageInfoType=REPLY
+messageRequestType=InfoStatusID
+process=com.tourapp.tour.message.hotel.response.in.BookingHotelInfoMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:26:54 PDT 2011
+queueName=trxSendLocal
+transportID=15
+queueType=local
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.response.HotelInformationResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:26:54.724-07:00</TimeStamp><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:26:54.724-07:00&lt;/TimeStamp&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;transportID&gt;15&lt;/transportID&gt;
+&lt;trxIDOrig&gt;214&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;195&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;process&gt;com.tourapp.tour.message.hotel.response.in.BookingHotelInfoMsgReplyInProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.response.HotelInformationResponse&lt;/internalMessageClass&gt;
+&lt;messageCode&gt;195&lt;/messageCode&gt;
+&lt;messageRequestType&gt;InfoStatusID&lt;/messageRequestType&gt;
+&lt;description&gt;Hotel Information Response&lt;/description&gt;
+&lt;queueType&gt;local&lt;/queueType&gt;
+&lt;queueName&gt;trxSendLocal&lt;/queueName&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="216">
+		<LastChanged>2011-08-24T11:26:57</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>5</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Pricing Request</Description>
+		<MessageTime>2011-08-24T11:26:55</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>25</ReferenceID>
+		<ResponseMessageLogID>217</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+record=BookingDetail
+userid=11
+trxID=216
+description=Hotel Pricing Request
+messageProcessInfoID=5
+referenceClass=com.tourapp.tour.booking.detail.db.BookingHotel
+objectID=25
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelRateRequest
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+messageInfoType=REQUEST
+email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
+messageInCode=2
+messageRequestType=CostStatusID
+contactType=Vendor
+responseMessageID=6
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.request.HotelRateRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>25</SourceReferenceNo><DetailDate>Sat Sep 24 12:00:00 PDT 2011</DetailDate><ProductID>6</ProductID><productDesc>Dusit Thani Hotel</productDesc><oldDetailDate>Sat Sep 24 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>25</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:26:55 PDT 2011</LastChanged><RateID>13</RateID><rateTypeDesc>Regular/rack</rateTypeDesc><ClassID>101</ClassID><rateClassDesc>Run of the House</rateClassDesc><Nights>3</Nights></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;25&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sat Sep 24 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;6&lt;/ProductID&gt;&lt;productDesc&gt;Dusit Thani Hotel&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sat Sep 24 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;25&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:26:55 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;13&lt;/RateID&gt;&lt;rateTypeDesc&gt;Regular/rack&lt;/rateTypeDesc&gt;&lt;ClassID&gt;101&lt;/ClassID&gt;&lt;rateClassDesc&gt;Run of the House&lt;/rateClassDesc&gt;&lt;Nights&gt;3&lt;/Nights&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;email.XSLTDocument&gt;docs/styles/xsl/tour/message/getrates.xsl&lt;/email.XSLTDocument&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;5&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;2&lt;/messageInCode&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.request.HotelRateRequest&lt;/internalMessageClass&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;25&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Hotel Pricing Request&lt;/description&gt;
+&lt;trxID&gt;216&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;6&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingHotel&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="217">
+		<LastChanged>2011-08-24T11:26:56</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>6</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Pricing Response</Description>
+		<MessageTime>2011-08-24T11:26:55</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>25</ReferenceID>
+		<ResponseMessageLogID>216</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Hotel Pricing Response
+messageProcessInfoID=6
+trxIDOrig=216
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.hotel.response.HotelRateResponse
+schemaLocation=
+messageCode=6
+messageInfoType=REPLY
+messageRequestType=CostStatusID
+process=com.tourapp.tour.message.hotel.response.in.BookingHotelRateMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.response.HotelRateResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:26:55.325-07:00</TimeStamp><productResponse><TotalCost1>440.0</TotalCost1><TotalCost2>440.0</TotalCost2><TotalCost3>440.0</TotalCost3><TotalCost4>440.0</TotalCost4><TotalCost5>0.0</TotalCost5><RoomCost>1320.0</RoomCost><MealCost>0.0</MealCost><TotalCost>1320.0</TotalCost></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:26:55.325-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;TotalCost1&gt;440.0&lt;/TotalCost1&gt;&lt;TotalCost2&gt;440.0&lt;/TotalCost2&gt;&lt;TotalCost3&gt;440.0&lt;/TotalCost3&gt;&lt;TotalCost4&gt;440.0&lt;/TotalCost4&gt;&lt;TotalCost5&gt;0.0&lt;/TotalCost5&gt;&lt;RoomCost&gt;1320.0&lt;/RoomCost&gt;&lt;MealCost&gt;0.0&lt;/MealCost&gt;&lt;TotalCost&gt;1320.0&lt;/TotalCost&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;6&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.response.HotelRateResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.hotel.response.in.BookingHotelRateMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;CostStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Hotel Pricing Response&lt;/description&gt;
+&lt;trxIDOrig&gt;216&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;6&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="218">
+		<LastChanged>2011-08-24T11:26:57</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>8</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Availability Request</Description>
+		<MessageTime>2011-08-24T11:26:55</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>25</ReferenceID>
+		<ResponseMessageLogID>219</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+record=BookingDetail
+userid=11
+trxID=218
+description=Hotel Availability Request
+messageProcessInfoID=8
+referenceClass=com.tourapp.tour.booking.detail.db.BookingHotel
+objectID=25
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+internalMessageClass=com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest
+screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
+messageInfoType=REQUEST
+messageInCode=7
+messageRequestType=InventoryStatusID
+contactType=Vendor
+responseMessageID=10
+contactID=1
+schemaLocation=
+messageProcessType=MESSAGE_OUT
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:26:55 PDT 2011
+transportType=Thread
+transportID=14
+sendMessageBy=Server
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><bookingMessage><GenericName/><AddressLine1>114 Winchester Lane</AddressLine1><AddressLine2/><CityOrTown>Monrovia</CityOrTown><StateOrRegion>CA</StateOrRegion><PostalCode>91016</PostalCode><Country>USA</Country><Tel>626-358-2903</Tel><Fax/><Email>don@donandann.com</Email><Contact>James Turn</Contact></bookingMessage><passengerMessage><roomType2>2</roomType2><paxDetail><Name>Linda Turn</Name><NamePrefix/><FirstName>Linda</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>9</SourceReferenceNo></paxDetail><paxDetail><Name>James Turn</Name><NamePrefix/><FirstName>James</FirstName><MiddleName/><SurName>Turn</SurName><PaxCategoryID>2</PaxCategoryID><Description>Double-King bed</Description><SourceReferenceNo>10</SourceReferenceNo></paxDetail></passengerMessage><productMessage><SourceReferenceNo>25</SourceReferenceNo><DetailDate>Sat Sep 24 12:00:00 PDT 2011</DetailDate><ProductID>6</ProductID><productDesc>Dusit Thani Hotel</productDesc><oldDetailDate>Sat Sep 24 12:00:00 PDT 2011</oldDetailDate><Pax>2</Pax><roomType2>2</roomType2><objectID>25</objectID><record>BookingDetail</record><LastChanged>Wed Aug 24 11:26:56 PDT 2011</LastChanged><RateID>13</RateID><rateTypeDesc>Regular/rack</rateTypeDesc><ClassID>101</ClassID><rateClassDesc>Run of the House</rateClassDesc><Nights>3</Nights></productMessage></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;bookingMessage&gt;&lt;GenericName/&gt;&lt;AddressLine1&gt;114 Winchester Lane&lt;/AddressLine1&gt;&lt;AddressLine2/&gt;&lt;CityOrTown&gt;Monrovia&lt;/CityOrTown&gt;&lt;StateOrRegion&gt;CA&lt;/StateOrRegion&gt;&lt;PostalCode&gt;91016&lt;/PostalCode&gt;&lt;Country&gt;USA&lt;/Country&gt;&lt;Tel&gt;626-358-2903&lt;/Tel&gt;&lt;Fax/&gt;&lt;Email&gt;don@donandann.com&lt;/Email&gt;&lt;Contact&gt;James Turn&lt;/Contact&gt;&lt;/bookingMessage&gt;&lt;passengerMessage&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;paxDetail&gt;&lt;Name&gt;Linda Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;Linda&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;9&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;paxDetail&gt;&lt;Name&gt;James Turn&lt;/Name&gt;&lt;NamePrefix/&gt;&lt;FirstName&gt;James&lt;/FirstName&gt;&lt;MiddleName/&gt;&lt;SurName&gt;Turn&lt;/SurName&gt;&lt;PaxCategoryID&gt;2&lt;/PaxCategoryID&gt;&lt;Description&gt;Double-King bed&lt;/Description&gt;&lt;SourceReferenceNo&gt;10&lt;/SourceReferenceNo&gt;&lt;/paxDetail&gt;&lt;/passengerMessage&gt;&lt;productMessage&gt;&lt;SourceReferenceNo&gt;25&lt;/SourceReferenceNo&gt;&lt;DetailDate&gt;Sat Sep 24 12:00:00 PDT 2011&lt;/DetailDate&gt;&lt;ProductID&gt;6&lt;/ProductID&gt;&lt;productDesc&gt;Dusit Thani Hotel&lt;/productDesc&gt;&lt;oldDetailDate&gt;Sat Sep 24 12:00:00 PDT 2011&lt;/oldDetailDate&gt;&lt;Pax&gt;2&lt;/Pax&gt;&lt;roomType2&gt;2&lt;/roomType2&gt;&lt;objectID&gt;25&lt;/objectID&gt;&lt;record&gt;BookingDetail&lt;/record&gt;&lt;LastChanged&gt;Wed Aug 24 11:26:56 PDT 2011&lt;/LastChanged&gt;&lt;RateID&gt;13&lt;/RateID&gt;&lt;rateTypeDesc&gt;Regular/rack&lt;/rateTypeDesc&gt;&lt;ClassID&gt;101&lt;/ClassID&gt;&lt;rateClassDesc&gt;Run of the House&lt;/rateClassDesc&gt;&lt;Nights&gt;3&lt;/Nights&gt;&lt;/productMessage&gt;&lt;header&gt;
+&lt;email.XSLTDocument&gt;docs/styles/xsl/tour/message/getinventory.xsl&lt;/email.XSLTDocument&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;userid&gt;11&lt;/userid&gt;
+&lt;messageInfoType&gt;REQUEST&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;8&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageInCode&gt;7&lt;/messageInCode&gt;
+&lt;screen.screen&gt;com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen&lt;/screen.screen&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest&lt;/internalMessageClass&gt;
+&lt;process&gt;org.jbundle.base.message.trx.processor.BaseMessageOutProcessor&lt;/process&gt;
+&lt;record&gt;BookingDetail&lt;/record&gt;
+&lt;messageRequestType&gt;InventoryStatusID&lt;/messageRequestType&gt;
+&lt;objectID&gt;25&lt;/objectID&gt;
+&lt;sendMessageBy&gt;Server&lt;/sendMessageBy&gt;
+&lt;contactID&gt;1&lt;/contactID&gt;
+&lt;description&gt;Hotel Availability Request&lt;/description&gt;
+&lt;trxID&gt;218&lt;/trxID&gt;
+&lt;contactType&gt;Vendor&lt;/contactType&gt;
+&lt;responseMessageID&gt;10&lt;/responseMessageID&gt;
+&lt;referenceClass&gt;com.tourapp.tour.booking.detail.db.BookingHotel&lt;/referenceClass&gt;
+&lt;transportType&gt;Thread&lt;/transportType&gt;
+&lt;messageProcessType&gt;MESSAGE_OUT&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="219">
+		<LastChanged>2011-08-24T11:26:57</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>14</MessageTransportID>
+		<MessageProcessInfoID>10</MessageProcessInfoID>
+		<ContactTypeID>1</ContactTypeID>
+		<ContactID>1</ContactID>
+		<Description>Hotel Availability Response</Description>
+		<MessageTime>2011-08-24T11:26:56</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType>BookingDetail</ReferenceType>
+		<ReferenceID>25</ReferenceID>
+		<ResponseMessageLogID>218</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 11:26:56 PDT 2011
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Hotel Availability Response
+messageProcessInfoID=10
+trxIDOrig=218
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 11:26:56 PDT 2011
+messageProcessType=MESSAGE_IN
+internalMessageClass=com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse
+schemaLocation=
+messageCode=10
+messageInfoType=REPLY
+messageRequestType=InventoryStatusID
+process=com.tourapp.tour.message.hotel.response.in.BookingHotelAvailMsgReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 11:26:56 PDT 2011
+transportID=14
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.ExternalMapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><TimeStamp>2011-08-24T11:26:55.956-07:00</TimeStamp><productResponse><Availability>10</Availability></productResponse><dataStatus>5</dataStatus></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;root&gt;&lt;TimeStamp&gt;2011-08-24T11:26:55.956-07:00&lt;/TimeStamp&gt;&lt;productResponse&gt;&lt;Availability&gt;10&lt;/Availability&gt;&lt;/productResponse&gt;&lt;dataStatus&gt;5&lt;/dataStatus&gt;&lt;header&gt;
+&lt;messageCode&gt;10&lt;/messageCode&gt;
+&lt;internalMessageClass&gt;com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse&lt;/internalMessageClass&gt;
+&lt;process&gt;com.tourapp.tour.message.hotel.response.in.BookingHotelAvailMsgReplyInProcessor&lt;/process&gt;
+&lt;messageRequestType&gt;InventoryStatusID&lt;/messageRequestType&gt;
+&lt;transportID&gt;14&lt;/transportID&gt;
+&lt;description&gt;Hotel Availability Response&lt;/description&gt;
+&lt;trxIDOrig&gt;218&lt;/trxIDOrig&gt;
+&lt;messageInfoType&gt;REPLY&lt;/messageInfoType&gt;
+&lt;messageProcessInfoID&gt;10&lt;/messageProcessInfoID&gt;
+&lt;schemaLocation&gt;&lt;/schemaLocation&gt;
+&lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
+&lt;/header&gt;
+&lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="220">
+		<LastChanged>2011-08-24T20:51:46</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:51:46</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:51:46 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:51:46 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:51:46 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="221">
+		<LastChanged>2011-08-24T20:51:47</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:51:46</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:51:46 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=221
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=220
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:51:46 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:51:46 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:51:46.928Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="222">
+		<LastChanged>2011-08-24T20:51:56</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:51:56</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:51:56 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:51:56 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:51:56 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="223">
+		<LastChanged>2011-08-24T20:51:57</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:51:56</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:51:56 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=223
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=222
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:51:56 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:51:56 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:51:56.049Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="224">
+		<LastChanged>2011-08-24T20:51:59</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:51:59</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:51:59 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:51:59 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:51:59 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="225">
+		<LastChanged>2011-08-24T20:52:00</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:51:59</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:51:59 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=225
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=224
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:51:59 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:51:59 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:51:59.206Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="226">
+		<LastChanged>2011-08-24T20:52:00</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="227">
+		<LastChanged>2011-08-24T20:52:01</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=227
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=226
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:00.037Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="228">
+		<LastChanged>2011-08-24T20:52:00</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="229">
+		<LastChanged>2011-08-24T20:52:01</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=229
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=228
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:00 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:00.826Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="230">
+		<LastChanged>2011-08-24T20:52:01</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:01</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:01 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:01 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:01 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="231">
+		<LastChanged>2011-08-24T20:52:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:02</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=231
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=230
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:02.006Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="232">
+		<LastChanged>2011-08-24T20:52:02</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:02</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="233">
+		<LastChanged>2011-08-24T20:52:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:02</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=233
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=232
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:02 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:02.626Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="234">
+		<LastChanged>2011-08-24T20:52:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:03</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="235">
+		<LastChanged>2011-08-24T20:52:04</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:03</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=235
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=234
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:03.19Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="236">
+		<LastChanged>2011-08-24T20:52:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:03</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="237">
+		<LastChanged>2011-08-24T20:52:04</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:03</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=237
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=236
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:03 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:03.768Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="238">
+		<LastChanged>2011-08-24T20:52:04</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:04</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:04 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:04 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:04 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="239">
+		<LastChanged>2011-08-24T20:52:05</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:04</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:04 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=239
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=238
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:04 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:04 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:04.494Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="240">
+		<LastChanged>2011-08-24T20:52:05</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>198</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Request</Description>
+		<MessageTime>2011-08-24T20:52:05</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:05 PDT 2011
+description=Ping Request
+messageProcessInfoID=198
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:05 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.BaseProductMessageDesc
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingRequestJibxMessageIn2010B
+process=com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor
+messageVersionID=20
+messageInfoType=REQUEST
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+messageVersion=2010B
+responseMessageID=199
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRQ.xsd
+messageProcessType=MESSAGE_IN
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:05 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ota="http://www.opentravel.org/OTA/2003/05"&gt;
+&lt;soap:Header/&gt;
+&lt;soap:Body&gt;
+&lt;ota:OTA_PingRQ Target="Production" TimeStamp="2011-06-30T03:05:51.26Z" Version="1.0"&gt;
+&lt;ota:EchoData&gt;hello&lt;/ota:EchoData&gt;
+&lt;/ota:OTA_PingRQ&gt;
+&lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="241">
+		<LastChanged>2011-08-24T20:52:06</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>11</MessageTransportID>
+		<MessageProcessInfoID>199</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Ping Response</Description>
+		<MessageTime>2011-08-24T20:52:05</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Aug 24 20:52:05 PDT 2011
+jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
+trxID=241
+description=Ping Response
+messageProcessInfoID=199
+trxIDOrig=240
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Aug 24 20:52:05 PDT 2011
+internalMessageClass=com.tourapp.tour.message.base.response.BaseProductResponse
+marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingResponseJibxMessageOut2010B
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+messageVersionID=20
+messageInfoType=REPLY
+messageVersion=2010B
+schemaLocation=http\://www.opentravel.org/2010B/OTA_PingRS.xsd
+messageProcessType=MESSAGE_OUT
+messageCode=199
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Aug 24 20:52:05 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=11
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>com.tourapp.tour.message.base.response.BaseProductResponse</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.SoapTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><root><message>hello</message><TimeStamp>2011-06-30T03:05:51.260Z</TimeStamp><Target>PRODUCTION</Target><Version>1.0</Version></root></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OTA_PingRS xmlns="http://www.opentravel.org/OTA/2003/05" TimeStamp="2011-08-25T03:52:05.158Z" Target="Production" Version="1.0"&gt;&lt;Success/&gt;&lt;EchoData&gt;hello&lt;/EchoData&gt;&lt;/OTA_PingRS&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
 </file>

@@ -8,7 +8,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>31</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-10-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-11-04T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Price</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -25,6 +25,6 @@
 		<PaxGroups/>
 		<BookingDetailID/>
 		<PaxCategoryID/>
-		<HistoryDate>2011-08-24T12:02:50</HistoryDate>
+		<HistoryDate>2011-09-24T12:02:50</HistoryDate>
 	</BookingLineHistory>
 </file>

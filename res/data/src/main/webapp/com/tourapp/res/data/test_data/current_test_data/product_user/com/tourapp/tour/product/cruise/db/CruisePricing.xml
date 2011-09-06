@@ -6,8 +6,8 @@
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2010-01-01</StartDate>
-		<EndDate>2011-12-31</EndDate>
+		<StartDate>2010-02-01</StartDate>
+		<EndDate>2012-01-31</EndDate>
 		<Cost>2,250.00</Cost>
 		<ProductTermsID/>
 		<Price/>
