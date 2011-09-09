@@ -56,14 +56,14 @@ public class AcctDetailCalcStartBal extends FileListener
         m_recAccount = recAccount;
         m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;
         super.init(null);
+        if (m_recAcctDetailScreenRecord != null)
+            m_recAcctDetailScreenRecord.addListener(new FileRemoveBOnCloseHandler(this));
     }
     /**
      * Free Method.
      */
     public void free()
     {
-        if (m_recAcctDetail != null)
-            m_recAcctDetail.free();
         m_recAcctDetail = null;
         super.free();
     }
@@ -89,9 +89,9 @@ public class AcctDetailCalcStartBal extends FileListener
         int errorCode = super.doRecordChange(field, iChangeType, bDisplayOption); // Initialize the record
         if (errorCode != DBConstants.NORMAL_RETURN)
             return errorCode;
-        if (m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kCalcStart).getState())
+        if (iChangeType == DBConstants.AFTER_REQUERY_TYPE)
         {
-            if (iChangeType == DBConstants.AFTER_REQUERY_TYPE)
+            if (m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kCalcStart).getState())
             {
                 if (m_recAcctDetail == null)
                 {
