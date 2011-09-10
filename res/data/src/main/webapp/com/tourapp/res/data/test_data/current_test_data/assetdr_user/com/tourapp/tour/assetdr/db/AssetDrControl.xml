@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<AssetDrControl ID="1">
-		<LastChanged>2010-04-02T16:01:04</LastChanged>
+		<LastChanged>2011-09-09T15:49:18</LastChanged>
 		<Deleted>N</Deleted>
 		<CurrencyID>2</CurrencyID>
 		<LanguageID>1</LanguageID>
 		<BankAcctID>2</BankAcctID>
 		<TrxStatusID>8</TrxStatusID>
 		<AccountID>109</AccountID>
-		<DateReconciled>2009-11-01T02:37:00</DateReconciled>
+		<DateReconciled>2010-02-01T02:37:00</DateReconciled>
 	</AssetDrControl>
 </file>

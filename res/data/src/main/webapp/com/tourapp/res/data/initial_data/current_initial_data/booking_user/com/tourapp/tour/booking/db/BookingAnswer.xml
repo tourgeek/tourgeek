@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingAnswer ID="1">
-		<LastChanged>2010-05-10T03:55:28</LastChanged>
+		<LastChanged>2011-04-01T17:22:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID/>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Basic Tour Information</Description>
+		<ProductType/>
+		<RemoteReferenceNo/>
+		<TourOrOption>T</TourOrOption>
+		<TourOrOptionID>1</TourOrOptionID>
+		<Sequence>10</Sequence>
+		<AskForAnswer/>
+		<AlwaysResolve>N</AlwaysResolve>
+		<DetailOptionExists/>
+		<DetailPriceExists>Y</DetailPriceExists>
+		<DetailAirHeaderExists/>
+		<TourDetailExists>Y</TourDetailExists>
+		<Selected>Y</Selected>
+		<DetailAdded>Y</DetailAdded>
+	</BookingAnswer>
+	<BookingAnswer ID="2">
+		<LastChanged>2011-04-01T17:24:28</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Basic Information 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -23,15 +47,15 @@
 		<Selected>Y</Selected>
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="2">
-		<LastChanged>2010-05-10T03:55:29</LastChanged>
+	<BookingAnswer ID="3">
+		<LastChanged>2011-04-01T17:24:28</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -47,15 +71,15 @@
 		<Selected>Y</Selected>
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="3">
-		<LastChanged>2010-05-10T03:55:27</LastChanged>
+	<BookingAnswer ID="4">
+		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>No Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -71,15 +95,15 @@
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="4">
-		<LastChanged>2010-05-10T03:55:27</LastChanged>
+	<BookingAnswer ID="5">
+		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Hotel Upgrades</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -95,15 +119,15 @@
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="5">
-		<LastChanged>2010-05-10T03:55:27</LastChanged>
+	<BookingAnswer ID="6">
+		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -119,15 +143,15 @@
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="6">
-		<LastChanged>2010-05-10T03:55:27</LastChanged>
+	<BookingAnswer ID="7">
+		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -143,15 +167,15 @@
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="7">
-		<LastChanged>2010-05-10T03:56:31</LastChanged>
+	<BookingAnswer ID="8">
+		<LastChanged>2011-05-01T15:21:27</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Basic Information 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -167,15 +191,15 @@
 		<Selected>Y</Selected>
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="8">
-		<LastChanged>2010-05-10T03:56:32</LastChanged>
+	<BookingAnswer ID="9">
+		<LastChanged>2011-05-01T15:21:28</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -191,15 +215,15 @@
 		<Selected>Y</Selected>
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="9">
-		<LastChanged>2010-05-10T03:56:30</LastChanged>
+	<BookingAnswer ID="10">
+		<LastChanged>2011-05-01T15:21:24</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>No Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -215,15 +239,15 @@
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="10">
-		<LastChanged>2010-05-10T03:56:32</LastChanged>
+	<BookingAnswer ID="11">
+		<LastChanged>2011-05-01T15:21:28</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>18</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Weekend Surcharge</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -239,15 +263,15 @@
 		<Selected>Y</Selected>
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="11">
-		<LastChanged>2010-05-10T03:56:30</LastChanged>
+	<BookingAnswer ID="12">
+		<LastChanged>2011-05-01T15:21:24</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Hotel Upgrades</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -263,15 +287,15 @@
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
-	<BookingAnswer ID="12">
-		<LastChanged>2010-05-10T03:56:30</LastChanged>
+	<BookingAnswer ID="13">
+		<LastChanged>2011-05-01T15:21:24</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -282,188 +306,20 @@
 		<AlwaysResolve>N</AlwaysResolve>
 		<DetailOptionExists/>
 		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists>Y</TourDetailExists>
-		<Selected>N</Selected>
-		<DetailAdded>N</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="13">
-		<LastChanged>2010-05-10T03:56:30</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
-		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>O</TourOrOption>
-		<TourOrOptionID>19</TourOrOptionID>
-		<Sequence>40</Sequence>
-		<AskForAnswer>Y</AskForAnswer>
-		<AlwaysResolve>N</AlwaysResolve>
-		<DetailOptionExists/>
-		<DetailPriceExists/>
 		<DetailAirHeaderExists/>
 		<TourDetailExists>Y</TourDetailExists>
 		<Selected>N</Selected>
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="14">
-		<LastChanged>2011-05-24T12:02:50</LastChanged>
+		<LastChanged>2011-05-01T15:21:24</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Basic Information 2010/11</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>T</TourOrOption>
-		<TourOrOptionID>4</TourOrOptionID>
-		<Sequence>12</Sequence>
-		<AskForAnswer/>
-		<AlwaysResolve>Y</AlwaysResolve>
-		<DetailOptionExists/>
-		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists>Y</TourDetailExists>
-		<Selected>Y</Selected>
-		<DetailAdded>Y</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="15">
-		<LastChanged>2011-05-24T12:02:50</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Tour Cancellation Insurance</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>T</TourOrOption>
-		<TourOrOptionID>4</TourOrOptionID>
-		<Sequence>15</Sequence>
-		<AskForAnswer>N</AskForAnswer>
-		<AlwaysResolve>Y</AlwaysResolve>
-		<DetailOptionExists/>
-		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists>Y</TourDetailExists>
-		<Selected>Y</Selected>
-		<DetailAdded>Y</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="16">
-		<LastChanged>2011-05-24T12:02:49</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>No Tour Cancellation Insurance</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>T</TourOrOption>
-		<TourOrOptionID>4</TourOrOptionID>
-		<Sequence>16</Sequence>
-		<AskForAnswer>Y</AskForAnswer>
-		<AlwaysResolve>N</AlwaysResolve>
-		<DetailOptionExists/>
-		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists>Y</TourDetailExists>
-		<Selected>N</Selected>
-		<DetailAdded>N</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="17">
-		<LastChanged>2011-05-24T12:02:50</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>40</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Shoulder Season Mods Oct/Nov 2010</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>T</TourOrOption>
-		<TourOrOptionID>4</TourOrOptionID>
-		<Sequence>30</Sequence>
-		<AskForAnswer>N</AskForAnswer>
-		<AlwaysResolve>Y</AlwaysResolve>
-		<DetailOptionExists/>
-		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists/>
-		<Selected>Y</Selected>
-		<DetailAdded>Y</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="18">
-		<LastChanged>2011-05-24T12:02:49</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Hotel Upgrades</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>T</TourOrOption>
-		<TourOrOptionID>4</TourOrOptionID>
-		<Sequence>50</Sequence>
-		<AskForAnswer>Y</AskForAnswer>
-		<AlwaysResolve>N</AlwaysResolve>
-		<DetailOptionExists>Y</DetailOptionExists>
-		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists/>
-		<Selected>N</Selected>
-		<DetailAdded>N</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="19">
-		<LastChanged>2011-05-24T12:02:49</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<TourOrOption>O</TourOrOption>
-		<TourOrOptionID>19</TourOrOptionID>
-		<Sequence>30</Sequence>
-		<AskForAnswer>Y</AskForAnswer>
-		<AlwaysResolve>N</AlwaysResolve>
-		<DetailOptionExists/>
-		<DetailPriceExists>Y</DetailPriceExists>
-		<DetailAirHeaderExists/>
-		<TourDetailExists>Y</TourDetailExists>
-		<Selected>N</Selected>
-		<DetailAdded>N</DetailAdded>
-	</BookingAnswer>
-	<BookingAnswer ID="20">
-		<LastChanged>2011-05-24T12:02:49</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>

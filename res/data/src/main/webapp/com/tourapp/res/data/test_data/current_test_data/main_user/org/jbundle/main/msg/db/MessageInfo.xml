@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<MessageInfo ID="2">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Pricing Request</Description>
 		<Code/>
@@ -12,7 +12,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="4">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Pricing Response</Description>
 		<Code/>
@@ -24,7 +24,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="10">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Pricing Request</Description>
 		<Code/>
@@ -36,7 +36,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="11">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Pricing Response</Description>
 		<Code/>
@@ -48,7 +48,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="14">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Availability Request</Description>
 		<Code/>
@@ -60,7 +60,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="15">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Availability Response</Description>
 		<Code/>
@@ -72,7 +72,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="18">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Request</Description>
 		<Code>OTA_HotelBookingRQ</Code>
@@ -84,7 +84,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="19">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Response</Description>
 		<Code>OTA_HotelBookingRS</Code>
@@ -96,7 +96,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="22">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Booking Request</Description>
 		<Code/>
@@ -108,7 +108,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="23">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Booking Response</Description>
 		<Code/>
@@ -120,7 +120,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="24">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Rate AND Availability Request</Description>
 		<Code>OTA_HotelAvailRQ</Code>
@@ -132,7 +132,7 @@
 		<RequestTypeID>5</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="25">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Rate AND Availability Response</Description>
 		<Code>OTA_HotelAvailRS</Code>
@@ -144,7 +144,7 @@
 		<RequestTypeID>5</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="29">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Availability Request</Description>
 		<Code/>
@@ -156,7 +156,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="30">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Availability Response</Description>
 		<Code/>
@@ -168,7 +168,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="31">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Manual Messages</Description>
 		<Code>MANUAL</Code>
@@ -181,7 +181,7 @@
 		<RequestTypeID>6</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="32">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Pricing Request</Description>
 		<Code/>
@@ -193,7 +193,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="33">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Pricing Response</Description>
 		<Code/>
@@ -205,7 +205,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="34">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Pricing Request</Description>
 		<Code/>
@@ -217,7 +217,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="35">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Pricing Response</Description>
 		<Code/>
@@ -229,7 +229,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="36">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Pricing Request</Description>
 		<Code/>
@@ -241,7 +241,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="37">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Pricing Response</Description>
 		<Code/>
@@ -253,7 +253,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="38">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Pricing Request</Description>
 		<Code/>
@@ -265,7 +265,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="39">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Pricing Response</Description>
 		<Code/>
@@ -277,7 +277,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="40">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Pricing Request</Description>
 		<Code/>
@@ -289,7 +289,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="41">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Pricing Response</Description>
 		<Code/>
@@ -301,7 +301,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="42">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Pricing Request</Description>
 		<Code/>
@@ -313,7 +313,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="43">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Pricing Response</Description>
 		<Code/>
@@ -325,7 +325,7 @@
 		<RequestTypeID>2</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="44">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Availability Response</Description>
 		<Code/>
@@ -337,7 +337,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="45">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Availability Request</Description>
 		<Code/>
@@ -349,7 +349,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="46">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Availability Response</Description>
 		<Code/>
@@ -361,7 +361,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="47">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Availability Request</Description>
 		<Code/>
@@ -373,7 +373,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="48">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Availability Response</Description>
 		<Code/>
@@ -385,7 +385,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="49">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Availability Request</Description>
 		<Code/>
@@ -397,7 +397,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="50">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Availability Response</Description>
 		<Code/>
@@ -409,7 +409,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="51">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Availability Request</Description>
 		<Code/>
@@ -421,7 +421,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="52">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Availability Response</Description>
 		<Code/>
@@ -433,7 +433,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="53">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Availability Request</Description>
 		<Code/>
@@ -445,7 +445,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="54">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Availability Response</Description>
 		<Code/>
@@ -457,7 +457,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="55">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Availability Request</Description>
 		<Code/>
@@ -469,7 +469,7 @@
 		<RequestTypeID>3</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="56">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Booking Response</Description>
 		<Code/>
@@ -481,7 +481,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="57">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Booking Request</Description>
 		<Code/>
@@ -493,7 +493,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="58">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Booking Response</Description>
 		<Code/>
@@ -505,7 +505,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="59">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Booking Request</Description>
 		<Code/>
@@ -517,7 +517,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="60">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Response</Description>
 		<Code/>
@@ -529,7 +529,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="61">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Request</Description>
 		<Code/>
@@ -541,7 +541,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="62">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Response</Description>
 		<Code/>
@@ -553,7 +553,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="63">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Request</Description>
 		<Code/>
@@ -565,7 +565,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="64">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Booking Response</Description>
 		<Code/>
@@ -577,7 +577,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="65">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Booking Request</Description>
 		<Code/>
@@ -589,7 +589,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="66">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Response</Description>
 		<Code/>
@@ -601,7 +601,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="67">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Request</Description>
 		<Code/>
@@ -613,7 +613,7 @@
 		<RequestTypeID>7</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="68">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Customer Booking Messages</Description>
 		<Code>BOOKING</Code>
@@ -625,7 +625,7 @@
 		<RequestTypeID>6</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="69">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Vendor tour messages</Description>
 		<Code>TOUR</Code>
@@ -637,7 +637,7 @@
 		<RequestTypeID>6</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="70">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Change Request</Description>
 		<Code>OTA_HotelResModifyRQ</Code>
@@ -649,7 +649,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="71">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Booking Cancellation Request</Description>
 		<Code>OTA_CancelRQ</Code>
@@ -663,7 +663,7 @@
 		<RequestTypeID>9</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="72">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Change Response</Description>
 		<Code>OTA_HotelResModifyRS</Code>
@@ -675,7 +675,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="73">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Booking Cancellation Response</Description>
 		<Code>OTA_CancelRS</Code>
@@ -687,7 +687,7 @@
 		<RequestTypeID>9</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="74">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Booking Change Request</Description>
 		<Code/>
@@ -699,7 +699,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="75">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Booking Change Response</Description>
 		<Code/>
@@ -711,7 +711,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="76">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Change Response</Description>
 		<Code/>
@@ -723,7 +723,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="77">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Change Request</Description>
 		<Code/>
@@ -735,7 +735,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="78">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Booking Change Response</Description>
 		<Code/>
@@ -747,7 +747,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="79">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Booking Change Request</Description>
 		<Code/>
@@ -759,7 +759,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="80">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Booking Change Response</Description>
 		<Code/>
@@ -771,7 +771,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="81">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Booking Change Request</Description>
 		<Code/>
@@ -783,7 +783,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="82">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Booking Change Response</Description>
 		<Code/>
@@ -795,7 +795,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="83">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Booking Change Request</Description>
 		<Code/>
@@ -807,7 +807,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="84">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Change Response</Description>
 		<Code/>
@@ -819,7 +819,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="85">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Change Request</Description>
 		<Code/>
@@ -831,7 +831,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="86">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Change Response</Description>
 		<Code/>
@@ -843,7 +843,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="87">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Change Request</Description>
 		<Code/>
@@ -855,7 +855,7 @@
 		<RequestTypeID>8</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="88">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Product Request Error</Description>
 		<Code/>
@@ -867,7 +867,7 @@
 		<RequestTypeID>10</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="89">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Product Reply Error</Description>
 		<Code/>
@@ -879,7 +879,7 @@
 		<RequestTypeID>10</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="90">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Information Request</Description>
 		<Code/>
@@ -891,7 +891,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="91">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Air Information Response</Description>
 		<Code/>
@@ -903,7 +903,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="92">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Information Response</Description>
 		<Code/>
@@ -915,7 +915,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="93">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Information Response</Description>
 		<Code/>
@@ -927,7 +927,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="94">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Information Response</Description>
 		<Code/>
@@ -939,7 +939,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="95">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Information Response</Description>
 		<Code/>
@@ -951,7 +951,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="96">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Information Response</Description>
 		<Code/>
@@ -963,7 +963,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="97">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Information Response</Description>
 		<Code/>
@@ -975,7 +975,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="98">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise Information Request</Description>
 		<Code/>
@@ -987,7 +987,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="99">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Information Request</Description>
 		<Code/>
@@ -999,7 +999,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="100">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Information Request</Description>
 		<Code/>
@@ -1011,7 +1011,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="101">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item Information Response</Description>
 		<Code/>
@@ -1023,7 +1023,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="102">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land Information Request</Description>
 		<Code/>
@@ -1035,7 +1035,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="103">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Information Request</Description>
 		<Code/>
@@ -1047,7 +1047,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="104">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour Information Request</Description>
 		<Code/>
@@ -1059,7 +1059,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="105">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation Information Request</Description>
 		<Code/>
@@ -1071,7 +1071,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="106">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Ping Request</Description>
 		<Code>OTA_PingRQ</Code>
@@ -1085,7 +1085,7 @@
 		<RequestTypeID/>
 	</MessageInfo>
 	<MessageInfo ID="107">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Ping Response</Description>
 		<Code>OTA_PingRS</Code>
@@ -1097,7 +1097,7 @@
 		<RequestTypeID/>
 	</MessageInfo>
 	<MessageInfo ID="108">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Currency Conversion Request</Description>
 		<Code>ConversionRate</Code>
@@ -1111,7 +1111,7 @@
 		<RequestTypeID/>
 	</MessageInfo>
 	<MessageInfo ID="109">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Currency Conversion Response</Description>
 		<Code>ConversionRateResponse</Code>
@@ -1123,7 +1123,7 @@
 		<RequestTypeID/>
 	</MessageInfo>
 	<MessageInfo ID="110">
-		<LastChanged>2010-11-05T10:24:17</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Run Remote Process Request</Description>
 		<Code>RunRemoteProcessRQ</Code>
@@ -1135,7 +1135,7 @@
 		<RequestTypeID/>
 	</MessageInfo>
 	<MessageInfo ID="111">
-		<LastChanged>2010-11-05T10:27:10</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Standard Message Response</Description>
 		<Code>StandardMessageRS</Code>

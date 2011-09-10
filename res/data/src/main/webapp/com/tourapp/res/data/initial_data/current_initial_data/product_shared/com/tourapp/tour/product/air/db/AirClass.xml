@@ -6,13 +6,13 @@
 		<Code/>
 	</AirClass>
 	<AirClass ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Economy class</Description>
 		<Code>Y</Code>
 	</AirClass>
 	<AirClass ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Business class</Description>
 		<Code/>

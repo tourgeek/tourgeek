@@ -1494,7 +1494,7 @@ return dEndValue;]]></LogicSource>
 		<CopyFrom/>
 	</LogicFile>
 	<LogicFile ID="72">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2011-09-09T12:21:59</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>5</Sequence>
 		<MethodName>AcctDetailCalcStartBal</MethodName>
@@ -1503,13 +1503,16 @@ return dEndValue;]]></LogicSource>
 		<MethodInterface>Record recAccount, Record recAcctDetailScreenRecord</MethodInterface>
 		<MethodClassName>AcctDetailCalcStartBal</MethodClassName>
 		<LogicSource><![CDATA[m_recAccount = recAccount;
-m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;]]></LogicSource>
+m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;
+super;
+if (m_recAcctDetailScreenRecord != null)
+	m_recAcctDetailScreenRecord.addListener(new FileRemoveBOnCloseHandler(this));]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>
 	</LogicFile>
 	<LogicFile ID="73">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2011-09-09T12:22:38</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>doRecordChange</MethodName>
@@ -1520,9 +1523,9 @@ m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;]]></LogicSource>
 		<LogicSource><![CDATA[int errorCode = super; // Initialize the record
 if (errorCode != DBConstants.NORMAL_RETURN)
     return errorCode;
-if (m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kCalcStart).getState())
+if (iChangeType == DBConstants.AFTER_REQUERY_TYPE)
 {
-    if (iChangeType == DBConstants.AFTER_REQUERY_TYPE)
+	if (m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kCalcStart).getState())
     {
         if (m_recAcctDetail == null)
         {
@@ -1552,7 +1555,7 @@ return errorCode;]]></LogicSource>
 		<CopyFrom/>
 	</LogicFile>
 	<LogicFile ID="74">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2011-09-09T12:22:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>free</MethodName>
@@ -1560,9 +1563,7 @@ return errorCode;]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>AcctDetailCalcStartBal</MethodClassName>
-		<LogicSource><![CDATA[if (m_recAcctDetail != null)
-	m_recAcctDetail.free();
-m_recAcctDetail = null;
+		<LogicSource><![CDATA[m_recAcctDetail = null;
 super;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>

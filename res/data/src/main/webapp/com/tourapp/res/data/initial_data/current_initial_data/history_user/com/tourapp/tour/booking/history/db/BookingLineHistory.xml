@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingLineHistory>
-		<ID>11</ID>
-		<LastChanged>2011-05-24T12:02:50</LastChanged>
+		<ID>6</ID>
+		<LastChanged>2011-05-01T15:22:09</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>31</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Basic Tour Price</Description>
+		<TourHeaderDetailID/>
+		<TourHeaderOptionID/>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
+		<Description>Dusit Thani Hotel - 5 nights (Double)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
-		<Sequence>100</Sequence>
-		<Price>1,149.00</Price>
+		<Sequence>9,999</Sequence>
+		<Price>1,405.55</Price>
 		<Quantity>2</Quantity>
 		<Gross/>
 		<Commissionable>Y</Commissionable>
@@ -21,10 +21,10 @@
 		<Commission/>
 		<Net/>
 		<PricingStatusID>5</PricingStatusID>
-		<PayAt>P</PayAt>
+		<PayAt>F</PayAt>
 		<PaxGroups/>
-		<BookingDetailID/>
-		<PaxCategoryID/>
-		<HistoryDate>2011-05-24T12:02:50</HistoryDate>
+		<BookingDetailID>13</BookingDetailID>
+		<PaxCategoryID>2</PaxCategoryID>
+		<HistoryDate>2011-08-01T15:22:05</HistoryDate>
 	</BookingLineHistory>
 </file>

@@ -1,11 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BankTrx ID="1">
-		<LastChanged>2010-05-10T04:00:17</LastChanged>
+		<LastChanged>2011-01-01T16:45:50</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>71,984.43</AmountLocal>
+		<TrxEntry>2011-01-01T16:38:19</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>2</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>71,984.43</Amount>
+		<Exchange>1.00000000</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>71,984.43</InvBalance>
+		<InvBalanceLocal>71,984.43</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="2">
+		<LastChanged>2011-01-01T16:45:55</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>102,943.41</AmountLocal>
+		<TrxEntry>2011-01-01T16:41:14</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>4</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>102,943.41</Amount>
+		<Exchange>1.00000000</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>102,943.41</InvBalance>
+		<InvBalanceLocal>102,943.41</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="3">
+		<LastChanged>2011-01-01T16:45:58</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>52,481.52</AmountLocal>
+		<TrxEntry>2011-01-01T16:42:09</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>1</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>52,481.52</Amount>
+		<Exchange>1.00000000</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>52,481.52</InvBalance>
+		<InvBalanceLocal>52,481.52</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="4">
+		<LastChanged>2011-01-01T16:46:02</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>25,675.87</AmountLocal>
+		<TrxEntry>2011-01-01T16:42:49</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>6</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>2,550,000.00</Amount>
+		<Exchange>0.01006897</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>2,550,000.00</InvBalance>
+		<InvBalanceLocal>25,675.87</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="5">
+		<LastChanged>2011-01-01T16:46:08</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>2,839.89</AmountLocal>
+		<TrxEntry>2011-01-01T16:43:31</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>7</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>22,010.00</Amount>
+		<Exchange>0.12902726</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>22,010.00</InvBalance>
+		<InvBalanceLocal>2,839.89</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="6">
+		<LastChanged>2011-01-01T16:46:12</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>15,741.34</AmountLocal>
+		<TrxEntry>2011-01-01T16:43:59</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>5</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>11,938.23</Amount>
+		<Exchange>1.31856540</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>11,938.23</InvBalance>
+		<InvBalanceLocal>15,741.34</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="7">
+		<LastChanged>2011-01-01T16:46:16</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>9</TrxStatusID>
+		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<AmountLocal>8,201.23</AmountLocal>
+		<TrxEntry>2011-01-01T16:44:30</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>3</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName/>
+		<Amount>8,201.23</Amount>
+		<Exchange>1.00000000</Exchange>
+		<InvSign>+</InvSign>
+		<InvBalance>8,201.23</InvBalance>
+		<InvBalanceLocal>8,201.23</InvBalanceLocal>
+		<Comments>Starting Balance</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="8">
+		<LastChanged>2011-04-05T15:20:16</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-06-10T04:00:02</TrxDate>
-		<AmountLocal>800.00</AmountLocal>
-		<TrxEntry>2010-05-10T04:00:17</TrxEntry>
+		<TrxDate>2011-07-05T15:19:34</TrxDate>
+		<AmountLocal>1,400.00</AmountLocal>
+		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<TrxUserID>11</TrxUserID>
 		<BankAcctID>2</BankAcctID>
 		<TrxNumber/>
@@ -13,7 +174,30 @@
 		<PayeeTrxDescID/>
 		<PayeeID/>
 		<PayeeName>Payment (Cash in)</PayeeName>
-		<Amount>800.00</Amount>
+		<Amount>1,400.00</Amount>
+		<Exchange/>
+		<InvSign/>
+		<InvBalance/>
+		<InvBalanceLocal/>
+		<Comments>Payment (Cash in)</Comments>
+		<DateReconciled/>
+		<Manual/>
+	</BankTrx>
+	<BankTrx ID="9">
+		<LastChanged>2011-05-01T15:23:34</LastChanged>
+		<Deleted>N</Deleted>
+		<TrxStatusID>95</TrxStatusID>
+		<TrxDate>2011-08-01T15:22:50</TrxDate>
+		<AmountLocal>3,427.90</AmountLocal>
+		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
+		<TrxUserID>11</TrxUserID>
+		<BankAcctID>2</BankAcctID>
+		<TrxNumber/>
+		<EFTTrxNo/>
+		<PayeeTrxDescID/>
+		<PayeeID/>
+		<PayeeName>Payment (Cash in)</PayeeName>
+		<Amount>3,427.90</Amount>
 		<Exchange/>
 		<InvSign/>
 		<InvBalance/>

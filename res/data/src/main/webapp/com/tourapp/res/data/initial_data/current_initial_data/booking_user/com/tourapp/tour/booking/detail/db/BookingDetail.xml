@@ -1,71 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingDetail ID="1">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>27</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Dusit Thani Hotel - 5 nights</Description>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>7</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Mandarin Hotel - 3 nights</Description>
 		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-04-15T12:00:00</DetailDate>
-		<GMTDate>2011-04-15T12:00:00</GMTDate>
+		<DetailDate>2011-10-22T12:00:00</DetailDate>
+		<GMTDate>2011-10-22T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
-		<ProductID>6</ProductID>
+		<ProductID>8</ProductID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
 		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>1</TourID>
+		<VendorID>40</VendorID>
+		<TourID>2</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost>2,200.00</TotalCost>
-		<Exchange>1.00000000</Exchange>
+		<TotalCost>48,306.00</TotalCost>
+		<Exchange>0.12902726</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal>2,200.00</TotalCostLocal>
+		<TotalCostLocal>6,232.79</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>5//2////6///////////2/Jul 15, 2010 12:00 PM/////</InfoRequestKey>
+		<InfoRequestKey>3//4////8///////////4/Jul 22, 2011 12:00 PM/////</InfoRequestKey>
 		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
+		<CostMessageTransportID>7</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>5//2////13/6///////////2/Jul 15, 2010 12:00 PM//////101</CostRequestKey>
+		<CostRequestKey>3//4////13/8///////////4/Jul 22, 2011 12:00 PM//////101</CostRequestKey>
 		<CostStatusRequest/>
-		<InventoryMessageTransportID>14</InventoryMessageTransportID>
+		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey>5//2////13/6///////////2/Jul 15, 2010 12:00 PM//////101</InventoryRequestKey>
+		<InventoryRequestKey/>
 		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
+		<ProductMessageTransportID>7</ProductMessageTransportID>
 		<ProductStatusID>2</ProductStatusID>
 		<ProductRequestKey/>
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-04-20T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-04-16T08:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-25T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-25T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
 
 
 
-
-
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:55:29 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:23:26 PDT 2011
+inventory.message.error=Not sufficient inventory
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+]]></ErrorProperties>
 		<PPCost/>
 		<PPPriceLocal/>
-		<Nights>5</Nights>
+		<Nights>3</Nights>
 		<MealPlan1ID/>
 		<MealPlan1Qty/>
 		<MealPlan1Days/>
@@ -83,12 +82,12 @@ product.message.error=The 'Order components' event must occur before booking com
 		<TriplePax/>
 		<QuadPax/>
 		<Children/>
-		<SingleCost>440.00</SingleCost>
-		<DoubleCost>440.00</DoubleCost>
-		<TripleCost>440.00</TripleCost>
-		<QuadCost>440.00</QuadCost>
+		<SingleCost>6,499.00</SingleCost>
+		<DoubleCost>8,051.00</DoubleCost>
+		<TripleCost>8,148.00</TripleCost>
+		<QuadCost>8,051.00</QuadCost>
 		<ChildrenCost/>
-		<RoomCost>2,200.00</RoomCost>
+		<RoomCost>48,306.00</RoomCost>
 		<MealCost>0.00</MealCost>
 		<RoomCostLocal/>
 		<MealCostLocal/>
@@ -133,65 +132,65 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="2">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>28</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>9</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Airport to Mandarin Hotel Transfer - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-04-15T12:00:00</DetailDate>
-		<GMTDate>2011-04-15T12:00:00</GMTDate>
+		<DetailDate>2011-10-22T08:30:00</DetailDate>
+		<GMTDate>2011-10-22T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
-		<ProductID>2</ProductID>
+		<ProductID>4</ProductID>
 		<RateID>1</RateID>
-		<ClassID>1</ClassID>
+		<ClassID>2</ClassID>
 		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>1</TourID>
+		<VendorID>40</VendorID>
+		<TourID>2</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost>63.00</TotalCost>
-		<Exchange>1.00000000</Exchange>
+		<TotalCost>920.00</TotalCost>
+		<Exchange>0.12902726</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal>63.00</TotalCostLocal>
+		<TotalCostLocal>118.71</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////2/2/Jul 15, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>4////4/4/Jul 22, 2011 8:30 AM</InfoRequestKey>
 		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
+		<CostMessageTransportID>7</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/2/2/Jul 15, 2010 12:00 PM/1</CostRequestKey>
+		<CostRequestKey>4////1/4/4/Jul 22, 2011 8:30 AM/2</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
 		<InventoryRequestKey/>
 		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
+		<ProductMessageTransportID>7</ProductMessageTransportID>
 		<ProductStatusID>2</ProductStatusID>
 		<ProductRequestKey/>
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-04-15T12:30:00</DetailEndDate>
-		<GMTEndDate>2011-04-15T12:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-22T08:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-22T08:30:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:55:29 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:21:57 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost>63.00</PPCost>
+]]></ErrorProperties>
+		<PPCost>920.00</PPCost>
 		<PPPriceLocal/>
 		<Nights/>
 		<MealPlan1ID/>
@@ -224,8 +223,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<VariesQty/>
 		<VariesCost/>
 		<PMCCutoff>4</PMCCutoff>
-		<PMCCost>54.00</PMCCost>
-		<SICCost>63.00</SICCost>
+		<PMCCost>0.00</PMCCost>
+		<SICCost>920.00</SICCost>
 		<BookingAirHeaderID/>
 		<GMTTime/>
 		<Etd/>
@@ -261,404 +260,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="3">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>29</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
-		<ProductType>Land</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-04-16T08:30:00</DetailDate>
-		<GMTDate>2011-04-16T08:30:00</GMTDate>
-		<GMTOffset>0.00</GMTOffset>
-		<ProductID>1</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
-		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>1</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost>104.00</TotalCost>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal>104.00</TotalCostLocal>
-		<TotalPriceLocal/>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////1/2/Jul 16, 2010 8:30 AM</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/1/2/Jul 16, 2010 8:30 AM/1</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>10</InventoryMessageTransportID>
-		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey/>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-04-16T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-04-16T15:30:00</GMTEndDate>
-		<MealSummary>
-
-</MealSummary>
-		<StatusSummary>1</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:55:29 PDT 2010
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost>104.00</PPCost>
-		<PPPriceLocal/>
-		<Nights/>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff>4</PMCCutoff>
-		<PMCCost>0.00</PMCCost>
-		<SICCost>104.00</SICCost>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
-	<BookingDetail ID="4">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>30</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
-		<ProductType>Land</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-04-19T12:00:00</DetailDate>
-		<GMTDate>2011-04-19T12:00:00</GMTDate>
-		<GMTOffset>0.00</GMTOffset>
-		<ProductID>2</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
-		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>1</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost>63.00</TotalCost>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal>63.00</TotalCostLocal>
-		<TotalPriceLocal/>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////2/2/Jul 19, 2010 12:00 PM</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/2/2/Jul 19, 2010 12:00 PM/1</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>10</InventoryMessageTransportID>
-		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey/>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-04-19T12:30:00</DetailEndDate>
-		<GMTEndDate>2011-04-19T12:30:00</GMTEndDate>
-		<MealSummary>
-
-</MealSummary>
-		<StatusSummary>1</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:55:29 PDT 2010
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost>63.00</PPCost>
-		<PPPriceLocal/>
-		<Nights/>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff>4</PMCCutoff>
-		<PMCCost>54.00</PMCCost>
-		<SICCost>63.00</SICCost>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
-	<BookingDetail ID="5">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>25</TourHeaderDetailID>
-		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Tour cancellation insurance</Description>
-		<ProductType>Item</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2011-04-14T12:00:00</DetailDate>
-		<GMTDate>2011-04-14T12:00:00</GMTDate>
-		<GMTOffset/>
-		<ProductID>1</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
-		<MarkupFromLast/>
-		<VendorID>48</VendorID>
-		<TourID>1</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost>84.00</TotalCost>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal>84.00</TotalCostLocal>
-		<TotalPriceLocal/>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////1/2/Jul 14, 2010 12:00 PM</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>7</CostMessageTransportID>
-		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/1/2/Jul 14, 2010 12:00 PM/1</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>10</InventoryMessageTransportID>
-		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey/>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>7</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-04-14T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-04-14T12:00:00</GMTEndDate>
-		<MealSummary>
-
-</MealSummary>
-		<StatusSummary>1</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:55:29 PDT 2010
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost/>
-		<PPPriceLocal/>
-		<Nights/>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff/>
-		<PMCCost/>
-		<SICCost/>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
-	<BookingDetail ID="6">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>27</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
-		<Description>Dusit Thani Hotel - 5 nights</Description>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>8</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Dusit Thani Hotel - 4 nights</Description>
 		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-05-02T12:00:00</DetailDate>
-		<GMTDate>2011-05-02T12:00:00</GMTDate>
+		<DetailDate>2011-10-25T12:00:00</DetailDate>
+		<GMTDate>2011-10-25T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -668,22 +283,22 @@ product.message.error=The 'Order components' event must occur before booking com
 		<TourID>2</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost>2,200.00</TotalCost>
+		<TotalCost>3,520.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal>2,200.00</TotalCostLocal>
+		<TotalCostLocal>3,520.00</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>5//2////6///////////2/Aug 2, 2010 12:00 PM/////</InfoRequestKey>
+		<InfoRequestKey>4//4////6///////////4/Jul 25, 2011 12:00 PM/////</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>5//2////13/6///////////2/Aug 2, 2010 12:00 PM//////101</CostRequestKey>
+		<CostRequestKey>4//4////13/6///////////4/Jul 25, 2011 12:00 PM//////101</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>14</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey>5//2////13/6///////////2/Aug 2, 2010 12:00 PM//////101</InventoryRequestKey>
+		<InventoryRequestKey>4//4////13/6///////////4/Jul 25, 2011 12:00 PM//////101</InventoryRequestKey>
 		<InventoryStatusRequest/>
 		<ProductMessageTransportID>14</ProductMessageTransportID>
 		<ProductStatusID>2</ProductStatusID>
@@ -691,26 +306,25 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-05-07T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-05-07T12:00:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-29T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-29T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
 
 
 
 
-
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:56:31 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:21:59 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+]]></ErrorProperties>
 		<PPCost/>
 		<PPPriceLocal/>
-		<Nights>5</Nights>
+		<Nights>4</Nights>
 		<MealPlan1ID/>
 		<MealPlan1Qty/>
 		<MealPlan1Days/>
@@ -733,7 +347,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<TripleCost>440.00</TripleCost>
 		<QuadCost>440.00</QuadCost>
 		<ChildrenCost/>
-		<RoomCost>2,200.00</RoomCost>
+		<RoomCost>3,520.00</RoomCost>
 		<MealCost>0.00</MealCost>
 		<RoomCostLocal/>
 		<MealCostLocal/>
@@ -777,42 +391,170 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
 	</BookingDetail>
-	<BookingDetail ID="7">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+	<BookingDetail ID="4">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>28</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
-		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>10</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Airport to Mandarin Hotel Transfer - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-05-02T12:00:00</DetailDate>
-		<GMTDate>2011-05-02T12:00:00</GMTDate>
+		<DetailDate>2011-10-25T08:30:00</DetailDate>
+		<GMTDate>2011-10-25T08:30:00</GMTDate>
+		<GMTOffset>0.00</GMTOffset>
+		<ProductID>4</ProductID>
+		<RateID>1</RateID>
+		<ClassID>2</ClassID>
+		<MarkupFromLast/>
+		<VendorID>40</VendorID>
+		<TourID>2</TourID>
+		<ApTrxID/>
+		<PricingDetailKey/>
+		<TotalCost>920.00</TotalCost>
+		<Exchange>0.12902726</Exchange>
+		<CurrencyCode/>
+		<TotalCostLocal>118.71</TotalCostLocal>
+		<TotalPriceLocal/>
+		<InfoMessageTransportID>15</InfoMessageTransportID>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>4////4/4/Jul 25, 2011 8:30 AM</InfoRequestKey>
+		<InfoStatusRequest/>
+		<CostMessageTransportID>7</CostMessageTransportID>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>4////1/4/4/Jul 25, 2011 8:30 AM/2</CostRequestKey>
+		<CostStatusRequest/>
+		<InventoryMessageTransportID>10</InventoryMessageTransportID>
+		<InventoryStatusID>5</InventoryStatusID>
+		<InventoryRequestKey/>
+		<InventoryStatusRequest/>
+		<ProductMessageTransportID>7</ProductMessageTransportID>
+		<ProductStatusID>2</ProductStatusID>
+		<ProductRequestKey/>
+		<ProductStatusRequest/>
+		<RemoteBookingNo/>
+		<AckDays/>
+		<DetailEndDate>2011-10-25T08:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-25T08:30:00</GMTEndDate>
+		<MealSummary><![CDATA[
+
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
+		<ItineraryDesc/>
+		<Properties/>
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:22:00 PDT 2011
+product.message.error=The 'Order components' event must occur before booking components
+]]></ErrorProperties>
+		<PPCost>920.00</PPCost>
+		<PPPriceLocal/>
+		<Nights/>
+		<MealPlan1ID/>
+		<MealPlan1Qty/>
+		<MealPlan1Days/>
+		<MealPlan2ID/>
+		<MealPlan2Qty/>
+		<MealPlan2Days/>
+		<MealPlan3ID/>
+		<MealPlan3Qty/>
+		<MealPlan3Days/>
+		<MealPlan4ID/>
+		<MealPlan4Qty/>
+		<MealPlan4Days/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<SingleCost/>
+		<DoubleCost/>
+		<TripleCost/>
+		<QuadCost/>
+		<ChildrenCost/>
+		<RoomCost/>
+		<MealCost/>
+		<RoomCostLocal/>
+		<MealCostLocal/>
+		<VariesCode/>
+		<VariesQty/>
+		<VariesCost/>
+		<PMCCutoff>4</PMCCutoff>
+		<PMCCost>0.00</PMCCost>
+		<SICCost>920.00</SICCost>
+		<BookingAirHeaderID/>
+		<GMTTime/>
+		<Etd/>
+		<XO/>
+		<CityCode/>
+		<CityDesc/>
+		<AirlineID/>
+		<Carrier/>
+		<FlightNo/>
+		<FlightClass/>
+		<ToCityCode/>
+		<ToCityDesc/>
+		<ArriveTime/>
+		<AddDays/>
+		<ARCStatus/>
+		<FareBasis/>
+		<StartDate/>
+		<EndDate/>
+		<Allow/>
+		<DetFare/>
+		<SegmentConfNo/>
+		<SegmentConfirmedBy/>
+		<Coupon/>
+		<Seat/>
+		<Gate/>
+		<SeatPref/>
+		<Smoking/>
+		<Meals/>
+		<Days/>
+		<Quantity/>
+		<AskForAnswer/>
+		<AlwaysResolve>N</AlwaysResolve>
+		<PricingTypeID/>
+	</BookingDetail>
+	<BookingDetail ID="5">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>1</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>11</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Airport - Hotel Transfer (Bangkok) - Private car/coach</Description>
+		<ProductType>Land</ProductType>
+		<RemoteReferenceNo/>
+		<ProductTypeID>9</ProductTypeID>
+		<DetailDate>2011-10-25T08:30:00</DetailDate>
+		<GMTDate>2011-10-25T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
-		<ClassID>1</ClassID>
+		<ClassID>2</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
 		<TourID>2</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost>63.00</TotalCost>
+		<TotalCost>54.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal>63.00</TotalCostLocal>
+		<TotalCostLocal>54.00</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////2/2/Aug 2, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>4////2/4/Jul 25, 2011 8:30 AM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/2/2/Aug 2, 2010 12:00 PM/1</CostRequestKey>
+		<CostRequestKey>4////1/2/4/Jul 25, 2011 8:30 AM/2</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
@@ -824,19 +566,275 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-05-02T12:30:00</DetailEndDate>
-		<GMTEndDate>2011-05-02T12:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-25T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-25T09:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:56:31 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:22:01 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost>63.00</PPCost>
+]]></ErrorProperties>
+		<PPCost>54.00</PPCost>
+		<PPPriceLocal/>
+		<Nights/>
+		<MealPlan1ID/>
+		<MealPlan1Qty/>
+		<MealPlan1Days/>
+		<MealPlan2ID/>
+		<MealPlan2Qty/>
+		<MealPlan2Days/>
+		<MealPlan3ID/>
+		<MealPlan3Qty/>
+		<MealPlan3Days/>
+		<MealPlan4ID/>
+		<MealPlan4Qty/>
+		<MealPlan4Days/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<SingleCost/>
+		<DoubleCost/>
+		<TripleCost/>
+		<QuadCost/>
+		<ChildrenCost/>
+		<RoomCost/>
+		<MealCost/>
+		<RoomCostLocal/>
+		<MealCostLocal/>
+		<VariesCode/>
+		<VariesQty/>
+		<VariesCost/>
+		<PMCCutoff>4</PMCCutoff>
+		<PMCCost>54.00</PMCCost>
+		<SICCost>63.00</SICCost>
+		<BookingAirHeaderID/>
+		<GMTTime/>
+		<Etd/>
+		<XO/>
+		<CityCode/>
+		<CityDesc/>
+		<AirlineID/>
+		<Carrier/>
+		<FlightNo/>
+		<FlightClass/>
+		<ToCityCode/>
+		<ToCityDesc/>
+		<ArriveTime/>
+		<AddDays/>
+		<ARCStatus/>
+		<FareBasis/>
+		<StartDate/>
+		<EndDate/>
+		<Allow/>
+		<DetFare/>
+		<SegmentConfNo/>
+		<SegmentConfirmedBy/>
+		<Coupon/>
+		<Seat/>
+		<Gate/>
+		<SeatPref/>
+		<Smoking/>
+		<Meals/>
+		<Days/>
+		<Quantity/>
+		<AskForAnswer/>
+		<AlwaysResolve>N</AlwaysResolve>
+		<PricingTypeID/>
+	</BookingDetail>
+	<BookingDetail ID="6">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>1</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>12</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Half Day Bangkok Sightseeing - Private car/coach</Description>
+		<ProductType>Land</ProductType>
+		<RemoteReferenceNo/>
+		<ProductTypeID>9</ProductTypeID>
+		<DetailDate>2011-10-26T08:30:00</DetailDate>
+		<GMTDate>2011-10-26T08:30:00</GMTDate>
+		<GMTOffset>0.00</GMTOffset>
+		<ProductID>3</ProductID>
+		<RateID>1</RateID>
+		<ClassID>2</ClassID>
+		<MarkupFromLast/>
+		<VendorID>1</VendorID>
+		<TourID>2</TourID>
+		<ApTrxID/>
+		<PricingDetailKey/>
+		<TotalCost>122.00</TotalCost>
+		<Exchange>1.00000000</Exchange>
+		<CurrencyCode/>
+		<TotalCostLocal>122.00</TotalCostLocal>
+		<TotalPriceLocal/>
+		<InfoMessageTransportID>15</InfoMessageTransportID>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>4////3/4/Jul 26, 2011 8:30 AM</InfoRequestKey>
+		<InfoStatusRequest/>
+		<CostMessageTransportID>14</CostMessageTransportID>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>4////1/3/4/Jul 26, 2011 8:30 AM/2</CostRequestKey>
+		<CostStatusRequest/>
+		<InventoryMessageTransportID>10</InventoryMessageTransportID>
+		<InventoryStatusID>5</InventoryStatusID>
+		<InventoryRequestKey/>
+		<InventoryStatusRequest/>
+		<ProductMessageTransportID>14</ProductMessageTransportID>
+		<ProductStatusID>2</ProductStatusID>
+		<ProductRequestKey/>
+		<ProductStatusRequest/>
+		<RemoteBookingNo/>
+		<AckDays/>
+		<DetailEndDate>2011-10-26T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-26T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
+
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
+		<ItineraryDesc/>
+		<Properties/>
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:22:02 PDT 2011
+product.message.error=The 'Order components' event must occur before booking components
+]]></ErrorProperties>
+		<PPCost>122.00</PPCost>
+		<PPPriceLocal/>
+		<Nights/>
+		<MealPlan1ID/>
+		<MealPlan1Qty/>
+		<MealPlan1Days/>
+		<MealPlan2ID/>
+		<MealPlan2Qty/>
+		<MealPlan2Days/>
+		<MealPlan3ID/>
+		<MealPlan3Qty/>
+		<MealPlan3Days/>
+		<MealPlan4ID/>
+		<MealPlan4Qty/>
+		<MealPlan4Days/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<SingleCost/>
+		<DoubleCost/>
+		<TripleCost/>
+		<QuadCost/>
+		<ChildrenCost/>
+		<RoomCost/>
+		<MealCost/>
+		<RoomCostLocal/>
+		<MealCostLocal/>
+		<VariesCode/>
+		<VariesQty/>
+		<VariesCost/>
+		<PMCCutoff>4</PMCCutoff>
+		<PMCCost>122.00</PMCCost>
+		<SICCost>54.00</SICCost>
+		<BookingAirHeaderID/>
+		<GMTTime/>
+		<Etd/>
+		<XO/>
+		<CityCode/>
+		<CityDesc/>
+		<AirlineID/>
+		<Carrier/>
+		<FlightNo/>
+		<FlightClass/>
+		<ToCityCode/>
+		<ToCityDesc/>
+		<ArriveTime/>
+		<AddDays/>
+		<ARCStatus/>
+		<FareBasis/>
+		<StartDate/>
+		<EndDate/>
+		<Allow/>
+		<DetFare/>
+		<SegmentConfNo/>
+		<SegmentConfirmedBy/>
+		<Coupon/>
+		<Seat/>
+		<Gate/>
+		<SeatPref/>
+		<Smoking/>
+		<Meals/>
+		<Days/>
+		<Quantity/>
+		<AskForAnswer/>
+		<AlwaysResolve>N</AlwaysResolve>
+		<PricingTypeID/>
+	</BookingDetail>
+	<BookingDetail ID="7">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>1</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>1</ModuleID>
+		<TourHeaderDetailID>13</TourHeaderDetailID>
+		<TourHeaderOptionID>13</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-21T00:00:00</ModuleStartDate>
+		<Description>Airport - Hotel Transfer (Bangkok) - Private car/coach</Description>
+		<ProductType>Land</ProductType>
+		<RemoteReferenceNo/>
+		<ProductTypeID>9</ProductTypeID>
+		<DetailDate>2011-10-28T08:30:00</DetailDate>
+		<GMTDate>2011-10-28T08:30:00</GMTDate>
+		<GMTOffset>0.00</GMTOffset>
+		<ProductID>2</ProductID>
+		<RateID>1</RateID>
+		<ClassID>2</ClassID>
+		<MarkupFromLast/>
+		<VendorID>1</VendorID>
+		<TourID>2</TourID>
+		<ApTrxID/>
+		<PricingDetailKey/>
+		<TotalCost>54.00</TotalCost>
+		<Exchange>1.00000000</Exchange>
+		<CurrencyCode/>
+		<TotalCostLocal>54.00</TotalCostLocal>
+		<TotalPriceLocal/>
+		<InfoMessageTransportID>15</InfoMessageTransportID>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>4////2/4/Jul 28, 2011 8:30 AM</InfoRequestKey>
+		<InfoStatusRequest/>
+		<CostMessageTransportID>14</CostMessageTransportID>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>4////1/2/4/Jul 28, 2011 8:30 AM/2</CostRequestKey>
+		<CostStatusRequest/>
+		<InventoryMessageTransportID>10</InventoryMessageTransportID>
+		<InventoryStatusID>5</InventoryStatusID>
+		<InventoryRequestKey/>
+		<InventoryStatusRequest/>
+		<ProductMessageTransportID>14</ProductMessageTransportID>
+		<ProductStatusID>2</ProductStatusID>
+		<ProductRequestKey/>
+		<ProductStatusRequest/>
+		<RemoteBookingNo/>
+		<AckDays/>
+		<DetailEndDate>2011-10-28T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-28T09:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
+
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
+		<ItineraryDesc/>
+		<Properties/>
+		<ErrorProperties><![CDATA[#Field properties
+#Fri Apr 01 17:22:03 PDT 2011
+product.message.error=The 'Order components' event must occur before booking components
+]]></ErrorProperties>
+		<PPCost>54.00</PPCost>
 		<PPPriceLocal/>
 		<Nights/>
 		<MealPlan1ID/>
@@ -906,67 +904,71 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="8">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>29</TourHeaderDetailID>
+		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
-		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
-		<ProductType>Land</ProductType>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
+		<Description>Dusit Thani Hotel - 5 nights</Description>
+		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
-		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-05-03T08:30:00</DetailDate>
-		<GMTDate>2011-05-03T08:30:00</GMTDate>
+		<ProductTypeID>3</ProductTypeID>
+		<DetailDate>2011-10-07T12:00:00</DetailDate>
+		<GMTDate>2011-10-07T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
-		<ProductID>1</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
+		<ProductID>6</ProductID>
+		<RateID>13</RateID>
+		<ClassID>101</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
-		<TourID>2</TourID>
-		<ApTrxID/>
+		<TourID>4</TourID>
+		<ApTrxID>1</ApTrxID>
 		<PricingDetailKey/>
-		<TotalCost>104.00</TotalCost>
+		<TotalCost>4,400.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal>104.00</TotalCostLocal>
+		<TotalCostLocal>4,400.00</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////1/2/Aug 3, 2010 8:30 AM</InfoRequestKey>
+		<InfoRequestKey>5/1/2////6///////////3/Jul 7, 2011 12:00 PM/////</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/1/2/Aug 3, 2010 8:30 AM/1</CostRequestKey>
+		<CostRequestKey>5/1/2////13/6///////////3/Jul 7, 2011 12:00 PM//////101</CostRequestKey>
 		<CostStatusRequest/>
-		<InventoryMessageTransportID>10</InventoryMessageTransportID>
+		<InventoryMessageTransportID>14</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey/>
+		<InventoryRequestKey>5/1/2////13/6///////////3/Jul 7, 2011 12:00 PM//////101</InventoryRequestKey>
 		<InventoryStatusRequest/>
 		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
+		<ProductStatusID>5</ProductStatusID>
+		<ProductRequestKey>5/1/2////13/6///////////3/Jul 7, 2011 12:00 PM//////101</ProductRequestKey>
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-05-03T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-05-03T15:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-12T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-12T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+
+
+
+
+
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:56:32 PDT 2010
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost>104.00</PPCost>
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:23:35 PDT 2011
+]]></ErrorProperties>
+		<PPCost/>
 		<PPPriceLocal/>
-		<Nights/>
+		<Nights>5</Nights>
 		<MealPlan1ID/>
 		<MealPlan1Qty/>
 		<MealPlan1Days/>
@@ -984,21 +986,21 @@ product.message.error=The 'Order components' event must occur before booking com
 		<TriplePax/>
 		<QuadPax/>
 		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
+		<SingleCost>440.00</SingleCost>
+		<DoubleCost>440.00</DoubleCost>
+		<TripleCost>440.00</TripleCost>
+		<QuadCost>440.00</QuadCost>
 		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
+		<RoomCost>4,400.00</RoomCost>
+		<MealCost>0.00</MealCost>
 		<RoomCostLocal/>
 		<MealCostLocal/>
 		<VariesCode/>
 		<VariesQty/>
 		<VariesCost/>
-		<PMCCutoff>4</PMCCutoff>
-		<PMCCost>0.00</PMCCost>
-		<SICCost>104.00</SICCost>
+		<PMCCutoff/>
+		<PMCCost/>
+		<SICCost/>
 		<BookingAirHeaderID/>
 		<GMTTime/>
 		<Etd/>
@@ -1034,28 +1036,28 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="9">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>30</TourHeaderDetailID>
+		<TourHeaderDetailID>28</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-05-06T12:00:00</DetailDate>
-		<GMTDate>2011-05-06T12:00:00</GMTDate>
+		<DetailDate>2011-10-07T08:30:00</DetailDate>
+		<GMTDate>2011-10-07T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
-		<TourID>2</TourID>
-		<ApTrxID/>
+		<TourID>4</TourID>
+		<ApTrxID>2</ApTrxID>
 		<PricingDetailKey/>
 		<TotalCost>63.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
@@ -1064,34 +1066,33 @@ product.message.error=The 'Order components' event must occur before booking com
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////2/2/Aug 6, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>1/2////2/3/Jul 7, 2011 8:30 AM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/2/2/Aug 6, 2010 12:00 PM/1</CostRequestKey>
+		<CostRequestKey>1/2////1/2/3/Jul 7, 2011 8:30 AM/1</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
 		<InventoryRequestKey/>
 		<InventoryStatusRequest/>
 		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
+		<ProductStatusID>5</ProductStatusID>
+		<ProductRequestKey>1/2////1/2/3/Jul 7, 2011 8:30 AM/1</ProductRequestKey>
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-05-06T12:30:00</DetailEndDate>
-		<GMTEndDate>2011-05-06T12:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-07T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-07T09:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:56:32 PDT 2010
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:23:35 PDT 2011
+]]></ErrorProperties>
 		<PPCost>63.00</PPCost>
 		<PPPriceLocal/>
 		<Nights/>
@@ -1162,28 +1163,280 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="10">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>2</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>29</TourHeaderDetailID>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
+		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
+		<ProductType>Land</ProductType>
+		<RemoteReferenceNo/>
+		<ProductTypeID>9</ProductTypeID>
+		<DetailDate>2011-10-08T08:30:00</DetailDate>
+		<GMTDate>2011-10-08T08:30:00</GMTDate>
+		<GMTOffset>0.00</GMTOffset>
+		<ProductID>1</ProductID>
+		<RateID>1</RateID>
+		<ClassID>1</ClassID>
+		<MarkupFromLast/>
+		<VendorID>1</VendorID>
+		<TourID>4</TourID>
+		<ApTrxID>2</ApTrxID>
+		<PricingDetailKey/>
+		<TotalCost>104.00</TotalCost>
+		<Exchange>1.00000000</Exchange>
+		<CurrencyCode/>
+		<TotalCostLocal>104.00</TotalCostLocal>
+		<TotalPriceLocal/>
+		<InfoMessageTransportID>15</InfoMessageTransportID>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>1/2////1/3/Jul 8, 2011 8:30 AM</InfoRequestKey>
+		<InfoStatusRequest/>
+		<CostMessageTransportID>14</CostMessageTransportID>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>1/2////1/1/3/Jul 8, 2011 8:30 AM/1</CostRequestKey>
+		<CostStatusRequest/>
+		<InventoryMessageTransportID>10</InventoryMessageTransportID>
+		<InventoryStatusID>5</InventoryStatusID>
+		<InventoryRequestKey/>
+		<InventoryStatusRequest/>
+		<ProductMessageTransportID>14</ProductMessageTransportID>
+		<ProductStatusID>5</ProductStatusID>
+		<ProductRequestKey>1/2////1/1/3/Jul 8, 2011 8:30 AM/1</ProductRequestKey>
+		<ProductStatusRequest/>
+		<RemoteBookingNo/>
+		<AckDays/>
+		<DetailEndDate>2011-08-05T15:59:47</DetailEndDate>
+		<GMTEndDate>2011-10-08T15:30:00</GMTEndDate>
+		<MealSummary><![CDATA[
+
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
+		<ItineraryDesc/>
+		<Properties/>
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:23:35 PDT 2011
+]]></ErrorProperties>
+		<PPCost>104.00</PPCost>
+		<PPPriceLocal/>
+		<Nights/>
+		<MealPlan1ID/>
+		<MealPlan1Qty/>
+		<MealPlan1Days/>
+		<MealPlan2ID/>
+		<MealPlan2Qty/>
+		<MealPlan2Days/>
+		<MealPlan3ID/>
+		<MealPlan3Qty/>
+		<MealPlan3Days/>
+		<MealPlan4ID/>
+		<MealPlan4Qty/>
+		<MealPlan4Days/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<SingleCost/>
+		<DoubleCost/>
+		<TripleCost/>
+		<QuadCost/>
+		<ChildrenCost/>
+		<RoomCost/>
+		<MealCost/>
+		<RoomCostLocal/>
+		<MealCostLocal/>
+		<VariesCode/>
+		<VariesQty/>
+		<VariesCost/>
+		<PMCCutoff>4</PMCCutoff>
+		<PMCCost>0.00</PMCCost>
+		<SICCost>104.00</SICCost>
+		<BookingAirHeaderID/>
+		<GMTTime/>
+		<Etd/>
+		<XO/>
+		<CityCode/>
+		<CityDesc/>
+		<AirlineID/>
+		<Carrier/>
+		<FlightNo/>
+		<FlightClass/>
+		<ToCityCode/>
+		<ToCityDesc/>
+		<ArriveTime/>
+		<AddDays/>
+		<ARCStatus/>
+		<FareBasis/>
+		<StartDate/>
+		<EndDate/>
+		<Allow/>
+		<DetFare/>
+		<SegmentConfNo/>
+		<SegmentConfirmedBy/>
+		<Coupon/>
+		<Seat/>
+		<Gate/>
+		<SeatPref/>
+		<Smoking/>
+		<Meals/>
+		<Days/>
+		<Quantity/>
+		<AskForAnswer/>
+		<AlwaysResolve>N</AlwaysResolve>
+		<PricingTypeID/>
+	</BookingDetail>
+	<BookingDetail ID="11">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>2</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>30</TourHeaderDetailID>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
+		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
+		<ProductType>Land</ProductType>
+		<RemoteReferenceNo/>
+		<ProductTypeID>9</ProductTypeID>
+		<DetailDate>2011-10-12T08:30:00</DetailDate>
+		<GMTDate>2011-10-12T08:30:00</GMTDate>
+		<GMTOffset>0.00</GMTOffset>
+		<ProductID>2</ProductID>
+		<RateID>1</RateID>
+		<ClassID>1</ClassID>
+		<MarkupFromLast/>
+		<VendorID>1</VendorID>
+		<TourID>4</TourID>
+		<ApTrxID>2</ApTrxID>
+		<PricingDetailKey/>
+		<TotalCost>63.00</TotalCost>
+		<Exchange>1.00000000</Exchange>
+		<CurrencyCode/>
+		<TotalCostLocal>63.00</TotalCostLocal>
+		<TotalPriceLocal/>
+		<InfoMessageTransportID>15</InfoMessageTransportID>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>1/2////2/3/Jul 12, 2011 8:30 AM</InfoRequestKey>
+		<InfoStatusRequest/>
+		<CostMessageTransportID>14</CostMessageTransportID>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>1/2////1/2/3/Jul 12, 2011 8:30 AM/1</CostRequestKey>
+		<CostStatusRequest/>
+		<InventoryMessageTransportID>10</InventoryMessageTransportID>
+		<InventoryStatusID>5</InventoryStatusID>
+		<InventoryRequestKey/>
+		<InventoryStatusRequest/>
+		<ProductMessageTransportID>14</ProductMessageTransportID>
+		<ProductStatusID>5</ProductStatusID>
+		<ProductRequestKey>1/2////1/2/3/Jul 12, 2011 8:30 AM/1</ProductRequestKey>
+		<ProductStatusRequest/>
+		<RemoteBookingNo/>
+		<AckDays/>
+		<DetailEndDate>2011-10-12T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-12T09:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
+
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
+		<ItineraryDesc/>
+		<Properties/>
+		<ErrorProperties/>
+		<PPCost>63.00</PPCost>
+		<PPPriceLocal/>
+		<Nights/>
+		<MealPlan1ID/>
+		<MealPlan1Qty/>
+		<MealPlan1Days/>
+		<MealPlan2ID/>
+		<MealPlan2Qty/>
+		<MealPlan2Days/>
+		<MealPlan3ID/>
+		<MealPlan3Qty/>
+		<MealPlan3Days/>
+		<MealPlan4ID/>
+		<MealPlan4Qty/>
+		<MealPlan4Days/>
+		<SinglePax/>
+		<DoublePax/>
+		<TriplePax/>
+		<QuadPax/>
+		<Children/>
+		<SingleCost/>
+		<DoubleCost/>
+		<TripleCost/>
+		<QuadCost/>
+		<ChildrenCost/>
+		<RoomCost/>
+		<MealCost/>
+		<RoomCostLocal/>
+		<MealCostLocal/>
+		<VariesCode/>
+		<VariesQty/>
+		<VariesCost/>
+		<PMCCutoff>4</PMCCutoff>
+		<PMCCost>54.00</PMCCost>
+		<SICCost>63.00</SICCost>
+		<BookingAirHeaderID/>
+		<GMTTime/>
+		<Etd/>
+		<XO/>
+		<CityCode/>
+		<CityDesc/>
+		<AirlineID/>
+		<Carrier/>
+		<FlightNo/>
+		<FlightClass/>
+		<ToCityCode/>
+		<ToCityDesc/>
+		<ArriveTime/>
+		<AddDays/>
+		<ARCStatus/>
+		<FareBasis/>
+		<StartDate/>
+		<EndDate/>
+		<Allow/>
+		<DetFare/>
+		<SegmentConfNo/>
+		<SegmentConfirmedBy/>
+		<Coupon/>
+		<Seat/>
+		<Gate/>
+		<SeatPref/>
+		<Smoking/>
+		<Meals/>
+		<Days/>
+		<Quantity/>
+		<AskForAnswer/>
+		<AlwaysResolve>N</AlwaysResolve>
+		<PricingTypeID/>
+	</BookingDetail>
+	<BookingDetail ID="12">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType>Item</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2011-05-01T12:00:00</DetailDate>
-		<GMTDate>2011-05-01T12:00:00</GMTDate>
+		<DetailDate>2011-10-06T12:00:00</DetailDate>
+		<GMTDate>2011-10-06T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
 		<MarkupFromLast/>
 		<VendorID>48</VendorID>
-		<TourID>2</TourID>
-		<ApTrxID/>
+		<TourID>4</TourID>
+		<ApTrxID>3</ApTrxID>
 		<PricingDetailKey/>
 		<TotalCost>84.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
@@ -1192,34 +1445,33 @@ product.message.error=The 'Order components' event must occur before booking com
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////1/2/Aug 1, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>1/2////1/3/Jul 6, 2011 12:00 PM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>7</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/1/2/Aug 1, 2010 12:00 PM/1</CostRequestKey>
+		<CostRequestKey>1/2////1/1/3/Jul 6, 2011 12:00 PM/1</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
 		<InventoryRequestKey/>
 		<InventoryStatusRequest/>
 		<ProductMessageTransportID>7</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
+		<ProductStatusID>5</ProductStatusID>
+		<ProductRequestKey>1/2////1/1/3/Jul 6, 2011 12:00 PM/1</ProductRequestKey>
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-05-01T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-05-01T12:00:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-06T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-06T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:56:32 PDT 2010
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:23:35 PDT 2011
+]]></ErrorProperties>
 		<PPCost/>
 		<PPPriceLocal/>
 		<Nights/>
@@ -1289,42 +1541,42 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
 	</BookingDetail>
-	<BookingDetail ID="11">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+	<BookingDetail ID="13">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID/>
-		<ModuleStartDate/>
-		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
-		<ProductType>Land</ProductType>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>27</TourHeaderDetailID>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
+		<Description>Dusit Thani Hotel - 5 nights</Description>
+		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
-		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-04-02T12:00:00</DetailDate>
-		<GMTDate>2011-04-02T12:00:00</GMTDate>
+		<ProductTypeID>3</ProductTypeID>
+		<DetailDate>2011-10-25T12:00:00</DetailDate>
+		<GMTDate>2011-10-25T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
-		<ProductID>2</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
+		<ProductID>6</ProductID>
+		<RateID>13</RateID>
+		<ClassID>101</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
-		<TourID>3</TourID>
+		<TourID>5</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost>63.00</TotalCost>
+		<TotalCost>2,200.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal>63.00</TotalCostLocal>
-		<TotalPriceLocal>80.50</TotalPriceLocal>
+		<TotalCostLocal>2,200.00</TotalCostLocal>
+		<TotalPriceLocal>2,811.10</TotalPriceLocal>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////2/2/Jul 2, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>5//2////6///////////2/Jul 25, 2011 12:44 PM/////</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/2/2/Jul 2, 2010 12:00 PM/1</CostRequestKey>
+		<CostRequestKey>5//2////13/6///////////2/Jul 25, 2011 12:00 PM//////101</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
@@ -1336,152 +1588,24 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-04-02T12:30:00</DetailEndDate>
-		<GMTEndDate>2011-04-02T12:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-30T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-30T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+
+
+
+
+
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:58:49 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:22:22 PDT 2011
+inventory.message.error=Not sufficient inventory
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost>63.00</PPCost>
-		<PPPriceLocal>40.25</PPPriceLocal>
-		<Nights/>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff>4</PMCCutoff>
-		<PMCCost>54.00</PMCCost>
-		<SICCost>63.00</SICCost>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
-	<BookingDetail ID="12">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>3</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID/>
-		<ModuleStartDate/>
-		<Description>Dusit Thani Hotel - 5 nights</Description>
-		<ProductType>Hotel</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-04-02T12:00:00</DetailDate>
-		<GMTDate>2011-04-02T12:00:00</GMTDate>
-		<GMTOffset>0.00</GMTOffset>
-		<ProductID>6</ProductID>
-		<RateID>13</RateID>
-		<ClassID>101</ClassID>
-		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>3</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost>2,200.00</TotalCost>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal>2,200.00</TotalCostLocal>
-		<TotalPriceLocal>2,811.10</TotalPriceLocal>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>5//2////6///////////2/Jul 2, 2010 12:00 PM/////</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>5//2////13/6///////////2/Jul 2, 2010 12:00 PM//////101</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>14</InventoryMessageTransportID>
-		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey>5//2////13/6///////////2/Jul 2, 2010 12:00 PM//////101</InventoryRequestKey>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-04-07T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-04-07T12:00:00</GMTEndDate>
-		<MealSummary>
-
-
-
-
-
-
-</MealSummary>
-		<StatusSummary>1</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:59:21 PDT 2010
-inventory.message.error=Data required in the Info. status field
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+]]></ErrorProperties>
 		<PPCost/>
 		<PPPriceLocal>1,405.55</PPPriceLocal>
 		<Nights>5</Nights>
@@ -1551,42 +1675,42 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
 	</BookingDetail>
-	<BookingDetail ID="13">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+	<BookingDetail ID="14">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID/>
-		<ModuleStartDate/>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>28</TourHeaderDetailID>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-04-07T12:00:00</DetailDate>
-		<GMTDate>2011-04-07T12:00:00</GMTDate>
+		<DetailDate>2011-10-25T08:30:00</DetailDate>
+		<GMTDate>2011-10-25T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
-		<TourID>3</TourID>
+		<TourID>5</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
 		<TotalCost>63.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
 		<TotalCostLocal>63.00</TotalCostLocal>
-		<TotalPriceLocal>80.50</TotalPriceLocal>
+		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////2/2/Jul 7, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>2////2/2/Jul 25, 2011 8:30 AM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/2/2/Jul 7, 2010 12:00 PM/1</CostRequestKey>
+		<CostRequestKey>2////1/2/2/Jul 25, 2011 8:30 AM/1</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
@@ -1598,20 +1722,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-04-07T12:30:00</DetailEndDate>
-		<GMTEndDate>2011-04-07T12:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-25T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-25T09:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:59:02 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:21:27 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+]]></ErrorProperties>
 		<PPCost>63.00</PPCost>
-		<PPPriceLocal>40.25</PPPriceLocal>
+		<PPPriceLocal/>
 		<Nights/>
 		<MealPlan1ID/>
 		<MealPlan1Qty/>
@@ -1679,42 +1803,42 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
 	</BookingDetail>
-	<BookingDetail ID="14">
-		<LastChanged>2011-05-06T11:20:22</LastChanged>
+	<BookingDetail ID="15">
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID/>
-		<ModuleStartDate/>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID>29</TourHeaderDetailID>
+		<TourHeaderOptionID>39</TourHeaderOptionID>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-04-03T08:30:00</DetailDate>
-		<GMTDate>2011-04-03T08:30:00</GMTDate>
+		<DetailDate>2011-10-26T08:30:00</DetailDate>
+		<GMTDate>2011-10-26T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
-		<TourID>3</TourID>
+		<TourID>5</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
 		<TotalCost>104.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
 		<TotalCostLocal>104.00</TotalCostLocal>
-		<TotalPriceLocal>132.88</TotalPriceLocal>
+		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
 		<InfoStatusID>5</InfoStatusID>
-		<InfoRequestKey>2////1/2/Jul 3, 2010 12:00 PM</InfoRequestKey>
+		<InfoRequestKey>2////1/2/Jul 26, 2011 8:30 AM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
 		<CostStatusID>5</CostStatusID>
-		<CostRequestKey>2////1/1/2/Jul 3, 2010 8:30 AM/1</CostRequestKey>
+		<CostRequestKey>2////1/1/2/Jul 26, 2011 8:30 AM/1</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
@@ -1726,20 +1850,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-04-03T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-04-03T15:30:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-26T15:30:00</DetailEndDate>
+		<GMTEndDate>2011-10-26T15:30:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
+]]></MealSummary>
 		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Mon May 10 03:59:09 PDT 2010
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:21:27 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+]]></ErrorProperties>
 		<PPCost>104.00</PPCost>
-		<PPPriceLocal>66.44</PPPriceLocal>
+		<PPPriceLocal/>
 		<Nights/>
 		<MealPlan1ID/>
 		<MealPlan1Qty/>
@@ -1807,175 +1931,42 @@ product.message.error=The 'Order components' event must occur before booking com
 		<AlwaysResolve>N</AlwaysResolve>
 		<PricingTypeID/>
 	</BookingDetail>
-	<BookingDetail ID="15">
-		<LastChanged>2011-05-24T12:02:58</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>27</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Dusit Thani Hotel - 5 nights</Description>
-		<ProductType>Hotel</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2011-07-05T12:00:00</DetailDate>
-		<GMTDate>2011-07-05T12:00:00</GMTDate>
-		<GMTOffset>0.00</GMTOffset>
-		<ProductID>6</ProductID>
-		<RateID>13</RateID>
-		<ClassID>101</ClassID>
-		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>8</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost/>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal/>
-		<TotalPriceLocal/>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>7</InfoStatusID>
-		<InfoRequestKey>5///////6////////////Jul 5, 2011 12:00 PM/////</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>7</CostStatusID>
-		<CostRequestKey>5///////13/6////////////Jul 5, 2011 12:00 PM//////101</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>14</InventoryMessageTransportID>
-		<InventoryStatusID>7</InventoryStatusID>
-		<InventoryRequestKey>5///////13/6////////////Jul 5, 2011 12:00 PM//////101</InventoryRequestKey>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-07-10T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-07-10T12:00:00</GMTEndDate>
-		<MealSummary>
-
-
-
-
-
-
-</MealSummary>
-		<StatusSummary>15</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Tue May 24 12:02:49 PDT 2011
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost/>
-		<PPPriceLocal/>
-		<Nights>5</Nights>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff/>
-		<PMCCost/>
-		<SICCost/>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
 	<BookingDetail ID="16">
-		<LastChanged>2011-05-24T12:02:56</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>28</TourHeaderDetailID>
+		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-07-05T08:30:00</DetailDate>
-		<GMTDate>2011-07-05T08:30:00</GMTDate>
+		<DetailDate>2011-10-30T08:30:00</DetailDate>
+		<GMTDate>2011-10-30T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
 		<MarkupFromLast/>
 		<VendorID>1</VendorID>
-		<TourID>8</TourID>
+		<TourID>5</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost/>
+		<TotalCost>63.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal/>
+		<TotalCostLocal>63.00</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>7</InfoStatusID>
-		<InfoRequestKey>2//Jul 5, 2011 8:30 AM</InfoRequestKey>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>2////2/2/Jul 30, 2011 8:30 AM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>7</CostStatusID>
-		<CostRequestKey>1/2//Jul 5, 2011 8:30 AM/1</CostRequestKey>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>2////1/2/2/Jul 30, 2011 8:30 AM/1</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
@@ -1987,19 +1978,19 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-07-05T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-07-05T09:00:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-30T09:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-30T09:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
-		<StatusSummary>7</StatusSummary>
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Tue May 24 12:02:50 PDT 2011
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:21:28 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost/>
+]]></ErrorProperties>
+		<PPCost>63.00</PPCost>
 		<PPPriceLocal/>
 		<Nights/>
 		<MealPlan1ID/>
@@ -2032,8 +2023,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<VariesQty/>
 		<VariesCost/>
 		<PMCCutoff>4</PMCCutoff>
-		<PMCCost/>
-		<SICCost/>
+		<PMCCost>54.00</PMCCost>
+		<SICCost>63.00</SICCost>
 		<BookingAirHeaderID/>
 		<GMTTime/>
 		<Etd/>
@@ -2069,296 +2060,41 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="17">
-		<LastChanged>2011-05-24T17:55:31</LastChanged>
+		<LastChanged>2011-09-10T16:13:45</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>29</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
-		<ProductType>Land</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-07-07T03:14:53</DetailDate>
-		<GMTDate>2011-07-06T08:30:00</GMTDate>
-		<GMTOffset>0.00</GMTOffset>
-		<ProductID>1</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
-		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>8</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost/>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal/>
-		<TotalPriceLocal/>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>7</InfoStatusID>
-		<InfoRequestKey>1//Jul 7, 2011 3:14 AM</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>7</CostStatusID>
-		<CostRequestKey>1/1//Jul 7, 2011 3:14 AM/1</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>10</InventoryMessageTransportID>
-		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey/>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-07-06T15:30:00</DetailEndDate>
-		<GMTEndDate>2011-07-06T15:30:00</GMTEndDate>
-		<MealSummary>
-</MealSummary>
-		<StatusSummary>7</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Tue May 24 17:55:30 PDT 2011
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost/>
-		<PPPriceLocal/>
-		<Nights/>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff>4</PMCCutoff>
-		<PMCCost/>
-		<SICCost/>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
-	<BookingDetail ID="18">
-		<LastChanged>2011-05-24T12:02:57</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>30</TourHeaderDetailID>
-		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
-		<ProductType>Land</ProductType>
-		<RemoteReferenceNo/>
-		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2011-07-10T08:30:00</DetailDate>
-		<GMTDate>2011-07-10T08:30:00</GMTDate>
-		<GMTOffset>0.00</GMTOffset>
-		<ProductID>2</ProductID>
-		<RateID>1</RateID>
-		<ClassID>1</ClassID>
-		<MarkupFromLast/>
-		<VendorID>1</VendorID>
-		<TourID>8</TourID>
-		<ApTrxID/>
-		<PricingDetailKey/>
-		<TotalCost/>
-		<Exchange>1.00000000</Exchange>
-		<CurrencyCode/>
-		<TotalCostLocal/>
-		<TotalPriceLocal/>
-		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>7</InfoStatusID>
-		<InfoRequestKey>2//Jul 10, 2011 8:30 AM</InfoRequestKey>
-		<InfoStatusRequest/>
-		<CostMessageTransportID>14</CostMessageTransportID>
-		<CostStatusID>7</CostStatusID>
-		<CostRequestKey>1/2//Jul 10, 2011 8:30 AM/1</CostRequestKey>
-		<CostStatusRequest/>
-		<InventoryMessageTransportID>10</InventoryMessageTransportID>
-		<InventoryStatusID>5</InventoryStatusID>
-		<InventoryRequestKey/>
-		<InventoryStatusRequest/>
-		<ProductMessageTransportID>14</ProductMessageTransportID>
-		<ProductStatusID>2</ProductStatusID>
-		<ProductRequestKey/>
-		<ProductStatusRequest/>
-		<RemoteBookingNo/>
-		<AckDays/>
-		<DetailEndDate>2011-07-10T09:00:00</DetailEndDate>
-		<GMTEndDate>2011-07-10T09:00:00</GMTEndDate>
-		<MealSummary>
-
-</MealSummary>
-		<StatusSummary>7</StatusSummary>
-		<ItineraryDesc/>
-		<Properties/>
-		<ErrorProperties>#Field properties
-#Tue May 24 12:02:50 PDT 2011
-product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
-		<PPCost/>
-		<PPPriceLocal/>
-		<Nights/>
-		<MealPlan1ID/>
-		<MealPlan1Qty/>
-		<MealPlan1Days/>
-		<MealPlan2ID/>
-		<MealPlan2Qty/>
-		<MealPlan2Days/>
-		<MealPlan3ID/>
-		<MealPlan3Qty/>
-		<MealPlan3Days/>
-		<MealPlan4ID/>
-		<MealPlan4Qty/>
-		<MealPlan4Days/>
-		<SinglePax/>
-		<DoublePax/>
-		<TriplePax/>
-		<QuadPax/>
-		<Children/>
-		<SingleCost/>
-		<DoubleCost/>
-		<TripleCost/>
-		<QuadCost/>
-		<ChildrenCost/>
-		<RoomCost/>
-		<MealCost/>
-		<RoomCostLocal/>
-		<MealCostLocal/>
-		<VariesCode/>
-		<VariesQty/>
-		<VariesCost/>
-		<PMCCutoff>4</PMCCutoff>
-		<PMCCost/>
-		<SICCost/>
-		<BookingAirHeaderID/>
-		<GMTTime/>
-		<Etd/>
-		<XO/>
-		<CityCode/>
-		<CityDesc/>
-		<AirlineID/>
-		<Carrier/>
-		<FlightNo/>
-		<FlightClass/>
-		<ToCityCode/>
-		<ToCityDesc/>
-		<ArriveTime/>
-		<AddDays/>
-		<ARCStatus/>
-		<FareBasis/>
-		<StartDate/>
-		<EndDate/>
-		<Allow/>
-		<DetFare/>
-		<SegmentConfNo/>
-		<SegmentConfirmedBy/>
-		<Coupon/>
-		<Seat/>
-		<Gate/>
-		<SeatPref/>
-		<Smoking/>
-		<Meals/>
-		<Days/>
-		<Quantity/>
-		<AskForAnswer/>
-		<AlwaysResolve>N</AlwaysResolve>
-		<PricingTypeID/>
-	</BookingDetail>
-	<BookingDetail ID="19">
-		<LastChanged>2011-05-24T12:02:57</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType>Item</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2011-07-04T12:00:00</DetailDate>
-		<GMTDate>2011-07-04T12:00:00</GMTDate>
+		<DetailDate>2011-10-24T12:00:00</DetailDate>
+		<GMTDate>2011-10-24T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
 		<MarkupFromLast/>
 		<VendorID>48</VendorID>
-		<TourID>8</TourID>
+		<TourID>5</TourID>
 		<ApTrxID/>
 		<PricingDetailKey/>
-		<TotalCost/>
+		<TotalCost>84.00</TotalCost>
 		<Exchange>1.00000000</Exchange>
 		<CurrencyCode/>
-		<TotalCostLocal/>
+		<TotalCostLocal>84.00</TotalCostLocal>
 		<TotalPriceLocal/>
 		<InfoMessageTransportID>15</InfoMessageTransportID>
-		<InfoStatusID>7</InfoStatusID>
-		<InfoRequestKey>1//Jul 4, 2011 12:00 PM</InfoRequestKey>
+		<InfoStatusID>5</InfoStatusID>
+		<InfoRequestKey>2////1/2/Jul 24, 2011 12:00 PM</InfoRequestKey>
 		<InfoStatusRequest/>
 		<CostMessageTransportID>7</CostMessageTransportID>
-		<CostStatusID>7</CostStatusID>
-		<CostRequestKey>1/1//Jul 4, 2011 12:00 PM/1</CostRequestKey>
+		<CostStatusID>5</CostStatusID>
+		<CostRequestKey>2////1/1/2/Jul 24, 2011 12:00 PM/1</CostRequestKey>
 		<CostStatusRequest/>
 		<InventoryMessageTransportID>10</InventoryMessageTransportID>
 		<InventoryStatusID>5</InventoryStatusID>
@@ -2370,18 +2106,18 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-07-04T12:00:00</DetailEndDate>
-		<GMTEndDate>2011-07-04T12:00:00</GMTEndDate>
-		<MealSummary>
+		<DetailEndDate>2011-10-24T12:00:00</DetailEndDate>
+		<GMTEndDate>2011-10-24T12:00:00</GMTEndDate>
+		<MealSummary><![CDATA[
 
-</MealSummary>
-		<StatusSummary>7</StatusSummary>
+]]></MealSummary>
+		<StatusSummary>1</StatusSummary>
 		<ItineraryDesc/>
 		<Properties/>
-		<ErrorProperties>#Field properties
-#Tue May 24 12:02:50 PDT 2011
+		<ErrorProperties><![CDATA[#Field properties
+#Sun May 01 15:21:28 PDT 2011
 product.message.error=The 'Order components' event must occur before booking components
-</ErrorProperties>
+]]></ErrorProperties>
 		<PPCost/>
 		<PPPriceLocal/>
 		<Nights/>

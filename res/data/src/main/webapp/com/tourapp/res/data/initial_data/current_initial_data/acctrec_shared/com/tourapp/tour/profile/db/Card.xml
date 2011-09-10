@@ -9,7 +9,7 @@
 		<CardCode/>
 	</Card>
 	<Card ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Visa</Description>
 		<ServiceCharge>0.0000</ServiceCharge>
@@ -18,7 +18,7 @@
 		<CardCode/>
 	</Card>
 	<Card ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Discover</Description>
 		<ServiceCharge>0.0000</ServiceCharge>
@@ -27,7 +27,7 @@
 		<CardCode/>
 	</Card>
 	<Card ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>American Express</Description>
 		<ServiceCharge>0.0000</ServiceCharge>

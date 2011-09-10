@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingLine ID="1">
-		<LastChanged>2010-05-10T03:55:27</LastChanged>
+		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
+		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>31</TourHeaderDetailID>
+		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Basic Tour Price</Description>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
+		<Description>Single Supplement</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<Sequence>100</Sequence>
-		<Price>1,149.00</Price>
-		<Quantity>2</Quantity>
-		<Gross>2,298.00</Gross>
+		<Price>449.00</Price>
+		<Quantity>1</Quantity>
+		<Gross>449.00</Gross>
 		<Commissionable>Y</Commissionable>
 		<CommissionRate>0.10</CommissionRate>
-		<Commission>229.80</Commission>
-		<Net>2,068.20</Net>
+		<Commission>44.90</Commission>
+		<Net>404.10</Net>
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>P</PayAt>
 		<PaxGroups/>
@@ -26,118 +26,92 @@
 		<PaxCategoryID/>
 	</BookingLine>
 	<BookingLine ID="2">
-		<LastChanged>2010-05-10T03:55:28</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>1</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>19</TourHeaderDetailID>
-		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-04-14T00:00:00</ModuleStartDate>
-		<Description>Tour Cancellation Insurance</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<Sequence>200</Sequence>
-		<Price>45.00</Price>
-		<Quantity>2</Quantity>
-		<Gross>90.00</Gross>
-		<Commissionable>Y</Commissionable>
-		<CommissionRate>0.10</CommissionRate>
-		<Commission>9.00</Commission>
-		<Net>81.00</Net>
-		<PricingStatusID>5</PricingStatusID>
-		<PayAt>F</PayAt>
-		<PaxGroups/>
-		<BookingDetailID/>
-		<PaxCategoryID/>
-	</BookingLine>
-	<BookingLine ID="3">
-		<LastChanged>2010-05-10T03:56:30</LastChanged>
+		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>31</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Price</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<Sequence>100</Sequence>
 		<Price>1,149.00</Price>
-		<Quantity>2</Quantity>
-		<Gross>2,298.00</Gross>
+		<Quantity>3</Quantity>
+		<Gross>3,447.00</Gross>
 		<Commissionable>Y</Commissionable>
 		<CommissionRate>0.10</CommissionRate>
-		<Commission>229.80</Commission>
-		<Net>2,068.20</Net>
+		<Commission>344.70</Commission>
+		<Net>3,102.30</Net>
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>P</PayAt>
 		<PaxGroups/>
 		<BookingDetailID/>
 		<PaxCategoryID/>
 	</BookingLine>
-	<BookingLine ID="4">
-		<LastChanged>2010-05-10T03:56:31</LastChanged>
+	<BookingLine ID="3">
+		<LastChanged>2011-04-01T17:24:28</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>19</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2011-10-06T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
 		<Sequence>200</Sequence>
 		<Price>45.00</Price>
-		<Quantity>2</Quantity>
-		<Gross>90.00</Gross>
+		<Quantity>3</Quantity>
+		<Gross>135.00</Gross>
 		<Commissionable>Y</Commissionable>
 		<CommissionRate>0.10</CommissionRate>
-		<Commission>9.00</Commission>
-		<Net>81.00</Net>
+		<Commission>13.50</Commission>
+		<Net>121.50</Net>
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>F</PayAt>
 		<PaxGroups/>
 		<BookingDetailID/>
 		<PaxCategoryID/>
 	</BookingLine>
-	<BookingLine ID="5">
-		<LastChanged>2010-05-10T03:56:32</LastChanged>
+	<BookingLine ID="4">
+		<LastChanged>2011-05-01T15:22:05</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingID>2</BookingID>
+		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>5</TourHeaderDetailID>
-		<TourHeaderOptionID>18</TourHeaderOptionID>
-		<ModuleStartDate>2011-05-01T00:00:00</ModuleStartDate>
-		<Description>Weekend surcharge</Description>
+		<TourHeaderDetailID/>
+		<TourHeaderOptionID/>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
+		<Description>Tour cancellation insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
-		<Sequence>30</Sequence>
-		<Price>129.50</Price>
+		<Sequence>9,999</Sequence>
+		<Price>53.66</Price>
 		<Quantity>2</Quantity>
-		<Gross>259.00</Gross>
+		<Gross>107.32</Gross>
 		<Commissionable>Y</Commissionable>
 		<CommissionRate>0.10</CommissionRate>
-		<Commission>25.90</Commission>
-		<Net>233.10</Net>
+		<Commission>10.73</Commission>
+		<Net>96.59</Net>
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>F</PayAt>
 		<PaxGroups/>
-		<BookingDetailID/>
-		<PaxCategoryID/>
+		<BookingDetailID>17</BookingDetailID>
+		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
-	<BookingLine ID="6">
-		<LastChanged>2010-05-10T03:58:49</LastChanged>
+	<BookingLine ID="5">
+		<LastChanged>2011-05-01T15:22:05</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
+		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate/>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -152,44 +126,18 @@
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>F</PayAt>
 		<PaxGroups/>
-		<BookingDetailID>11</BookingDetailID>
+		<BookingDetailID>14</BookingDetailID>
 		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
-	<BookingLine ID="8">
-		<LastChanged>2010-05-10T03:59:02</LastChanged>
+	<BookingLine ID="7">
+		<LastChanged>2011-05-01T15:22:05</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
+		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate/>
-		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<Sequence>9,999</Sequence>
-		<Price>40.25</Price>
-		<Quantity>2</Quantity>
-		<Gross>80.50</Gross>
-		<Commissionable>Y</Commissionable>
-		<CommissionRate>0.10</CommissionRate>
-		<Commission>8.05</Commission>
-		<Net>72.45</Net>
-		<PricingStatusID>5</PricingStatusID>
-		<PayAt>F</PayAt>
-		<PaxGroups/>
-		<BookingDetailID>13</BookingDetailID>
-		<PaxCategoryID>6</PaxCategoryID>
-	</BookingLine>
-	<BookingLine ID="9">
-		<LastChanged>2010-05-10T03:59:09</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>3</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
-		<TourHeaderDetailID/>
-		<TourHeaderOptionID/>
-		<ModuleStartDate/>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -204,18 +152,44 @@
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>F</PayAt>
 		<PaxGroups/>
-		<BookingDetailID>14</BookingDetailID>
+		<BookingDetailID>15</BookingDetailID>
 		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
-	<BookingLine ID="10">
-		<LastChanged>2010-05-10T03:59:17</LastChanged>
+	<BookingLine ID="8">
+		<LastChanged>2011-05-01T15:22:05</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>8</ModuleID>
+		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate/>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
+		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
+		<ProductType/>
+		<RemoteReferenceNo/>
+		<Sequence>9,999</Sequence>
+		<Price>40.25</Price>
+		<Quantity>2</Quantity>
+		<Gross>80.50</Gross>
+		<Commissionable>Y</Commissionable>
+		<CommissionRate>0.10</CommissionRate>
+		<Commission>8.05</Commission>
+		<Net>72.45</Net>
+		<PricingStatusID>5</PricingStatusID>
+		<PayAt>F</PayAt>
+		<PaxGroups/>
+		<BookingDetailID>16</BookingDetailID>
+		<PaxCategoryID>6</PaxCategoryID>
+	</BookingLine>
+	<BookingLine ID="9">
+		<LastChanged>2011-05-01T15:22:09</LastChanged>
+		<Deleted>N</Deleted>
+		<BookingID>3</BookingID>
+		<BookingPaxID>0</BookingPaxID>
+		<ModuleID>4</ModuleID>
+		<TourHeaderDetailID/>
+		<TourHeaderOptionID/>
+		<ModuleStartDate>2011-10-24T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights (Double)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -230,59 +204,7 @@
 		<PricingStatusID>5</PricingStatusID>
 		<PayAt>F</PayAt>
 		<PaxGroups/>
-		<BookingDetailID>12</BookingDetailID>
+		<BookingDetailID>13</BookingDetailID>
 		<PaxCategoryID>2</PaxCategoryID>
-	</BookingLine>
-	<BookingLine ID="11">
-		<LastChanged>2011-05-24T12:02:50</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>31</TourHeaderDetailID>
-		<TourHeaderOptionID>40</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Base Tour Price (Shoulder Season)</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<Sequence>10</Sequence>
-		<Price>1,299.00</Price>
-		<Quantity>2</Quantity>
-		<Gross>2,598.00</Gross>
-		<Commissionable>Y</Commissionable>
-		<CommissionRate>0.10</CommissionRate>
-		<Commission>259.80</Commission>
-		<Net>2,338.20</Net>
-		<PricingStatusID>5</PricingStatusID>
-		<PayAt>P</PayAt>
-		<PaxGroups/>
-		<BookingDetailID/>
-		<PaxCategoryID/>
-	</BookingLine>
-	<BookingLine ID="12">
-		<LastChanged>2011-05-24T12:02:50</LastChanged>
-		<Deleted>N</Deleted>
-		<BookingID>4</BookingID>
-		<BookingPaxID>0</BookingPaxID>
-		<ModuleID>4</ModuleID>
-		<TourHeaderDetailID>19</TourHeaderDetailID>
-		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-07-04T00:00:00</ModuleStartDate>
-		<Description>Tour Cancellation Insurance</Description>
-		<ProductType/>
-		<RemoteReferenceNo/>
-		<Sequence>200</Sequence>
-		<Price>45.00</Price>
-		<Quantity>2</Quantity>
-		<Gross>90.00</Gross>
-		<Commissionable>Y</Commissionable>
-		<CommissionRate>0.10</CommissionRate>
-		<Commission>9.00</Commission>
-		<Net>81.00</Net>
-		<PricingStatusID>5</PricingStatusID>
-		<PayAt>F</PayAt>
-		<PaxGroups/>
-		<BookingDetailID/>
-		<PaxCategoryID/>
 	</BookingLine>
 </file>

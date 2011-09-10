@@ -6,19 +6,19 @@
 		<Code/>
 	</CarRate>
 	<CarRate ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Interline rate</Description>
 		<Code/>
 	</CarRate>
 	<CarRate ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Travel agent rate</Description>
 		<Code/>
 	</CarRate>
 	<CarRate ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Frequent cust. rate</Description>
 		<Code/>

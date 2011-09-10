@@ -17,7 +17,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Falkland Islands</Name>
 		<Code>FK</Code>
@@ -34,7 +34,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="3">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Greenland</Name>
 		<Code>GL</Code>
@@ -51,7 +51,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Azores</Name>
 		<Code/>
@@ -68,7 +68,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="5">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cape Verde</Name>
 		<Code>CV</Code>
@@ -85,7 +85,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="6">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Sao Tome and Principe</Name>
 		<Code>ST</Code>
@@ -102,7 +102,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="7">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>St. Pierre and Miquelon</Name>
 		<Code>PM</Code>
@@ -119,7 +119,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="8">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>St. Helena</Name>
 		<Code>SH</Code>
@@ -136,7 +136,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="9">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Australia</Name>
 		<Code>AU</Code>
@@ -153,7 +153,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="10">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New Zealand</Name>
 		<Code>NZ</Code>
@@ -170,7 +170,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="11">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Christmas Island</Name>
 		<Code>CX</Code>
@@ -187,7 +187,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="12">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Canada</Name>
 		<Code>CA</Code>
@@ -204,7 +204,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="13">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bermuda</Name>
 		<Code>BM</Code>
@@ -221,7 +221,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="14">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Antigua &amp; Barbuda</Name>
 		<Code>AG</Code>
@@ -238,7 +238,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="15">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Saint Lucia</Name>
 		<Code>LC</Code>
@@ -255,7 +255,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="16">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Turks and Caicos Islands</Name>
 		<Code>TC</Code>
@@ -272,7 +272,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="17">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cayman Islands</Name>
 		<Code>KY</Code>
@@ -289,7 +289,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="18">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Dominica</Name>
 		<Code>DM</Code>
@@ -306,7 +306,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="19">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>St. Kitts and Nevis</Name>
 		<Code>KN</Code>
@@ -323,7 +323,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="20">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Netherlands Antilles</Name>
 		<Code>AN</Code>
@@ -340,7 +340,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="21">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Aruba</Name>
 		<Code>AW</Code>
@@ -357,7 +357,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="22">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Virgin Islands, U.S.</Name>
 		<Code>VI</Code>
@@ -374,7 +374,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="23">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Puerto Rico</Name>
 		<Code>PR</Code>
@@ -391,7 +391,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="24">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Jamaica</Name>
 		<Code>JM</Code>
@@ -408,7 +408,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="25">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Barbados</Name>
 		<Code>BB</Code>
@@ -425,7 +425,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="26">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Trinidad and Tobago</Name>
 		<Code>TT</Code>
@@ -442,7 +442,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="27">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bahamas</Name>
 		<Code>BS</Code>
@@ -459,7 +459,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="28">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Grenada</Name>
 		<Code>GD</Code>
@@ -476,7 +476,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="29">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Guadeloupe</Name>
 		<Code>GP</Code>
@@ -493,7 +493,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="30">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Martinique</Name>
 		<Code>MQ</Code>
@@ -510,7 +510,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="31">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Zambia</Name>
 		<Code>ZM</Code>
@@ -527,7 +527,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="32">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Malawi</Name>
 		<Code>MW</Code>
@@ -544,7 +544,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="33">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Zaire</Name>
 		<Code>ZR</Code>
@@ -561,7 +561,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="34">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Angola</Name>
 		<Code>AO</Code>
@@ -578,7 +578,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="35">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Central African Republic</Name>
 		<Code>CF</Code>
@@ -595,7 +595,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="36">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Chad</Name>
 		<Code>TD</Code>
@@ -612,7 +612,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="37">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Congo</Name>
 		<Code>CG</Code>
@@ -629,7 +629,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="38">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Belize</Name>
 		<Code>BZ</Code>
@@ -646,7 +646,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="39">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mexico</Name>
 		<Code>MX</Code>
@@ -663,7 +663,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="40">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Guatemala</Name>
 		<Code>GT</Code>
@@ -680,7 +680,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="41">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Honduras</Name>
 		<Code>HN</Code>
@@ -697,7 +697,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="42">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Nicaragua</Name>
 		<Code>NI</Code>
@@ -714,7 +714,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="43">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>El Salvador</Name>
 		<Code>SV</Code>
@@ -731,7 +731,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="44">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Costa Rica</Name>
 		<Code>CR</Code>
@@ -748,7 +748,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="45">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Panama</Name>
 		<Code>PA</Code>
@@ -765,7 +765,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="46">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cuba</Name>
 		<Code>CU</Code>
@@ -782,7 +782,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="47">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Dominican Republic</Name>
 		<Code>DO</Code>
@@ -799,7 +799,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="48">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Haiti</Name>
 		<Code>HT</Code>
@@ -816,7 +816,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="49">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cyprus</Name>
 		<Code>CY</Code>
@@ -833,7 +833,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="50">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kenya</Name>
 		<Code>KE</Code>
@@ -850,7 +850,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="51">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Uganda</Name>
 		<Code>UG</Code>
@@ -867,7 +867,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="52">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tanzania</Name>
 		<Code>TZ</Code>
@@ -884,7 +884,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="53">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Rwanda</Name>
 		<Code>RW</Code>
@@ -901,7 +901,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="54">
-		<LastChanged>2008-10-16T01:45:24</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Burundi</Name>
 		<Code>BI</Code>
@@ -918,7 +918,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="55">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Sudan</Name>
 		<Code>SD</Code>
@@ -935,7 +935,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="56">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Somalia</Name>
 		<Code>SO</Code>
@@ -952,7 +952,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="57">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ethiopia</Name>
 		<Code>ET</Code>
@@ -969,7 +969,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="58">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Djibouti</Name>
 		<Code>DJ</Code>
@@ -986,7 +986,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="60">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Poland</Name>
 		<Code>PL</Code>
@@ -1003,7 +1003,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="61">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Czech Republic</Name>
 		<Code>CZ</Code>
@@ -1020,7 +1020,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="62">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Slovakia</Name>
 		<Code>SK</Code>
@@ -1037,7 +1037,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="63">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Hungary</Name>
 		<Code>HU</Code>
@@ -1054,7 +1054,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="64">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Romania</Name>
 		<Code>RO</Code>
@@ -1071,7 +1071,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="65">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Albania</Name>
 		<Code>AL</Code>
@@ -1088,7 +1088,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="66">
-		<LastChanged>2008-10-16T01:45:24</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bulgaria</Name>
 		<Code>BG</Code>
@@ -1105,7 +1105,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="67">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Armenia</Name>
 		<Code>AM</Code>
@@ -1122,7 +1122,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="68">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Azerbaijan</Name>
 		<Code>AZ</Code>
@@ -1139,7 +1139,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="69">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Russia</Name>
 		<Code>RU</Code>
@@ -1156,7 +1156,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="70">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Latvia</Name>
 		<Code>LV</Code>
@@ -1173,7 +1173,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="71">
-		<LastChanged>2008-10-16T02:27:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Georgia</Name>
 		<Code>GE</Code>
@@ -1190,7 +1190,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="72">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ukraine</Name>
 		<Code>UA</Code>
@@ -1207,7 +1207,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="73">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kazakstan</Name>
 		<Code>KZ</Code>
@@ -1224,7 +1224,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="74">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Uzbekistan</Name>
 		<Code>UZ</Code>
@@ -1241,7 +1241,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="75">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Estonia</Name>
 		<Code>EE</Code>
@@ -1258,7 +1258,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="76">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Lithuania</Name>
 		<Code>LT</Code>
@@ -1275,7 +1275,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="77">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Belarus</Name>
 		<Code>BY</Code>
@@ -1292,7 +1292,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="78">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kyrgystan</Name>
 		<Code>KG</Code>
@@ -1309,7 +1309,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="79">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tajikistan</Name>
 		<Code>TJ</Code>
@@ -1326,7 +1326,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="80">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Moldova</Name>
 		<Code>MD</Code>
@@ -1343,7 +1343,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="81">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Turkmenistan</Name>
 		<Code>TM</Code>
@@ -1360,7 +1360,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="82">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Hong Kong</Name>
 		<Code>HK</Code>
@@ -1377,7 +1377,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="83">
-		<LastChanged>2008-10-16T01:45:24</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Brunei Darussalam</Name>
 		<Code>BN</Code>
@@ -1394,7 +1394,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="84">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Singapore</Name>
 		<Code>SG</Code>
@@ -1411,7 +1411,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="85">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Malaysia</Name>
 		<Code>MY</Code>
@@ -1428,7 +1428,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="86">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Macau</Name>
 		<Code>MO</Code>
@@ -1445,7 +1445,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="87">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Myanmar</Name>
 		<Code>MM</Code>
@@ -1462,7 +1462,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="88">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Thailand</Name>
 		<Code>TH</Code>
@@ -1479,7 +1479,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="89">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Lao People's Democratic Republic</Name>
 		<Code>LA</Code>
@@ -1496,7 +1496,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="91">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cambodia</Name>
 		<Code>KH</Code>
@@ -1513,7 +1513,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="92">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mongolia</Name>
 		<Code>MN</Code>
@@ -1530,7 +1530,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="93">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>China</Name>
 		<Code>CN</Code>
@@ -1547,7 +1547,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="94">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Taiwan, Province of China</Name>
 		<Code>TW</Code>
@@ -1564,7 +1564,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="95">
-		<LastChanged>2008-10-16T02:20:06</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Korea, Republic of</Name>
 		<Code>KR</Code>
@@ -1581,7 +1581,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="96">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Korea, Democratic People's Republic of</Name>
 		<Code>KP</Code>
@@ -1598,7 +1598,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="97">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Japan</Name>
 		<Code>JP</Code>
@@ -1615,7 +1615,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="98">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Indonesia</Name>
 		<Code>ID</Code>
@@ -1632,7 +1632,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="99">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>TIMOR</Name>
 		<Code/>
@@ -1649,7 +1649,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="100">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Philippines</Name>
 		<Code>PH</Code>
@@ -1666,7 +1666,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="101">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Seychelles</Name>
 		<Code>SC</Code>
@@ -1683,7 +1683,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="102">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Maldives</Name>
 		<Code>MV</Code>
@@ -1700,7 +1700,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="103">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>ISLE OF DIEGO GARCIA</Name>
 		<Code/>
@@ -1717,7 +1717,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="104">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cocos (Keeling) Islands</Name>
 		<Code>CC</Code>
@@ -1734,7 +1734,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="105">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>RODRIGUES ISLAND</Name>
 		<Code/>
@@ -1751,7 +1751,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="106">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mauritius</Name>
 		<Code>MU</Code>
@@ -1768,7 +1768,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="107">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Madagascar</Name>
 		<Code>MG</Code>
@@ -1785,7 +1785,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="108">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>MALAGASY REPUBLIC</Name>
 		<Code/>
@@ -1802,7 +1802,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="109">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Reunion</Name>
 		<Code>RE</Code>
@@ -1819,7 +1819,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="110">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Comoros</Name>
 		<Code>KM</Code>
@@ -1836,7 +1836,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="111">
-		<LastChanged>2008-10-16T01:45:24</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>British Indian Ocean Territory</Name>
 		<Code>IO</Code>
@@ -1853,7 +1853,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="112">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Pakistan</Name>
 		<Code>PK</Code>
@@ -1870,7 +1870,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="113">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bangladesh</Name>
 		<Code>BD</Code>
@@ -1887,7 +1887,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="114">
-		<LastChanged>2008-10-16T02:27:04</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>India</Name>
 		<Code>IN</Code>
@@ -1904,7 +1904,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="115">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bhutan</Name>
 		<Code>BT</Code>
@@ -1921,7 +1921,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="116">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Sri Lanka</Name>
 		<Code>LK</Code>
@@ -1938,7 +1938,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="117">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Afghanistan</Name>
 		<Code>AF</Code>
@@ -1955,7 +1955,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="118">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Nepal</Name>
 		<Code>NP</Code>
@@ -1972,7 +1972,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="119">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Iraq</Name>
 		<Code>IQ</Code>
@@ -1989,7 +1989,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="120">
-		<LastChanged>2008-10-16T02:20:06</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kuwait</Name>
 		<Code>KW</Code>
@@ -2006,7 +2006,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="121">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Saudi Arabia</Name>
 		<Code>SA</Code>
@@ -2023,7 +2023,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="123">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Yemen</Name>
 		<Code>YE</Code>
@@ -2040,7 +2040,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="124">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Iran</Name>
 		<Code>IR</Code>
@@ -2057,7 +2057,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="125">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Oman</Name>
 		<Code>OM</Code>
@@ -2074,7 +2074,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="126">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Qatar</Name>
 		<Code>QA</Code>
@@ -2091,7 +2091,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="127">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>United Arab Emirates</Name>
 		<Code>AE</Code>
@@ -2108,7 +2108,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="128">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Israel</Name>
 		<Code>IL</Code>
@@ -2125,7 +2125,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="129">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Jordan</Name>
 		<Code>JO</Code>
@@ -2142,7 +2142,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="130">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Syrian Arab Republic</Name>
 		<Code>SY</Code>
@@ -2159,7 +2159,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="131">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Lebanon</Name>
 		<Code>LB</Code>
@@ -2176,7 +2176,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="132">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tunisia</Name>
 		<Code>TN</Code>
@@ -2193,7 +2193,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="133">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Algeria</Name>
 		<Code>DZ</Code>
@@ -2210,7 +2210,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="134">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Morocco</Name>
 		<Code>MA</Code>
@@ -2227,7 +2227,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="135">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Egypt</Name>
 		<Code>EG</Code>
@@ -2244,7 +2244,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="136">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Libyan Arab Jamahiriya</Name>
 		<Code>LY</Code>
@@ -2261,7 +2261,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="138">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Solomon Islands</Name>
 		<Code>SB</Code>
@@ -2278,7 +2278,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="139">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Papua New Guinea</Name>
 		<Code>PG</Code>
@@ -2295,7 +2295,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="140">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cook Islands</Name>
 		<Code>CK</Code>
@@ -2312,7 +2312,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="141">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Fiji</Name>
 		<Code>FJ</Code>
@@ -2329,7 +2329,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="142">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tonga</Name>
 		<Code>TO</Code>
@@ -2346,7 +2346,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="143">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tuvalu</Name>
 		<Code>TV</Code>
@@ -2363,7 +2363,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="144">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tokelau</Name>
 		<Code>TK</Code>
@@ -2380,7 +2380,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="145">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Samoa</Name>
 		<Code>WS</Code>
@@ -2397,7 +2397,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="146">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Guam</Name>
 		<Code>GU</Code>
@@ -2414,7 +2414,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="147">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Marshall Islands</Name>
 		<Code>MH</Code>
@@ -2431,7 +2431,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="148">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>JOHNSTON ISLAND</Name>
 		<Code/>
@@ -2448,7 +2448,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="149">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>TAHITI</Name>
 		<Code/>
@@ -2465,7 +2465,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="150">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New Caledonia</Name>
 		<Code>NC</Code>
@@ -2482,7 +2482,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="151">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>PACIFIC ISLANDS</Name>
 		<Code/>
@@ -2499,7 +2499,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="152">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>WAKE ISLAND</Name>
 		<Code/>
@@ -2516,7 +2516,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="153">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Vanuatu</Name>
 		<Code>VU</Code>
@@ -2533,7 +2533,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="155">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Norfolk Island</Name>
 		<Code>NF</Code>
@@ -2550,7 +2550,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="156">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Niue</Name>
 		<Code>NU</Code>
@@ -2567,7 +2567,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="157">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Nauru</Name>
 		<Code>NR</Code>
@@ -2584,7 +2584,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="158">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>MIDWAY ISLAND</Name>
 		<Code/>
@@ -2601,7 +2601,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="159">
-		<LastChanged>2008-10-16T02:20:06</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kiribati</Name>
 		<Code>KI</Code>
@@ -2618,7 +2618,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="160">
-		<LastChanged>2008-10-16T02:19:11</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>French Polynesia</Name>
 		<Code>PF</Code>
@@ -2635,7 +2635,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="161">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Suriname</Name>
 		<Code>SR</Code>
@@ -2652,7 +2652,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="162">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Guyana</Name>
 		<Code>GY</Code>
@@ -2669,7 +2669,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="163">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>French Guiana</Name>
 		<Code>GF</Code>
@@ -2686,7 +2686,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="164">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Venezuela</Name>
 		<Code>VE</Code>
@@ -2703,7 +2703,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="165">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Colombia</Name>
 		<Code>CO</Code>
@@ -2720,7 +2720,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="166">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ecuador</Name>
 		<Code>EC</Code>
@@ -2737,7 +2737,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="167">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Peru</Name>
 		<Code>PE</Code>
@@ -2754,7 +2754,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="168">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bolivia</Name>
 		<Code>BO</Code>
@@ -2771,7 +2771,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="169">
-		<LastChanged>2008-10-16T01:45:24</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Brazil</Name>
 		<Code>BR</Code>
@@ -2788,7 +2788,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="170">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Paraguay</Name>
 		<Code>PY</Code>
@@ -2805,7 +2805,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="171">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Uruguay</Name>
 		<Code>UY</Code>
@@ -2822,7 +2822,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="172">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Argentina</Name>
 		<Code>AR</Code>
@@ -2839,7 +2839,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="173">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Chile</Name>
 		<Code>CL</Code>
@@ -2856,7 +2856,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="174">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Zimbabwe</Name>
 		<Code>ZW</Code>
@@ -2873,7 +2873,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="175">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Swaziland</Name>
 		<Code>SZ</Code>
@@ -2890,7 +2890,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="176">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>South Africa</Name>
 		<Code>ZA</Code>
@@ -2907,7 +2907,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="177">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Lesotho</Name>
 		<Code>LS</Code>
@@ -2924,7 +2924,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="178">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Namibia</Name>
 		<Code>NA</Code>
@@ -2941,7 +2941,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="179">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Botswana</Name>
 		<Code>BW</Code>
@@ -2958,7 +2958,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="180">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mozambique</Name>
 		<Code>MZ</Code>
@@ -2975,7 +2975,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="181">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>United Kingdom</Name>
 		<Code>GB</Code>
@@ -2992,7 +2992,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="182">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>USA</Name>
 		<Code>US</Code>
@@ -3009,7 +3009,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="183">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ghana</Name>
 		<Code>GH</Code>
@@ -3026,7 +3026,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="184">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Nigeria</Name>
 		<Code>NG</Code>
@@ -3043,7 +3043,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="185">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Sierra Leone</Name>
 		<Code>SL</Code>
@@ -3060,7 +3060,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="186">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Gambia</Name>
 		<Code>GM</Code>
@@ -3077,7 +3077,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="187">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Togo</Name>
 		<Code>TG</Code>
@@ -3094,7 +3094,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="188">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Western Sahara</Name>
 		<Code>EH</Code>
@@ -3111,7 +3111,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="189">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Guinea-Bissau</Name>
 		<Code>GW</Code>
@@ -3128,7 +3128,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="190">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Liberia</Name>
 		<Code>LR</Code>
@@ -3145,7 +3145,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="191">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Equatorial Guinea</Name>
 		<Code>GQ</Code>
@@ -3162,7 +3162,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="192">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mali</Name>
 		<Code>ML</Code>
@@ -3179,7 +3179,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="193">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Guinea</Name>
 		<Code>GN</Code>
@@ -3196,7 +3196,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="194">
-		<LastChanged>2008-10-16T02:19:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cameroon</Name>
 		<Code>CM</Code>
@@ -3213,7 +3213,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="195">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Benin</Name>
 		<Code>BJ</Code>
@@ -3230,7 +3230,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="196">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Gabon</Name>
 		<Code>GA</Code>
@@ -3247,7 +3247,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="197">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cote d'Ivoire</Name>
 		<Code>CI</Code>
@@ -3264,7 +3264,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="198">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mauritania</Name>
 		<Code>MR</Code>
@@ -3281,7 +3281,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="199">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Niger</Name>
 		<Code>NE</Code>
@@ -3298,7 +3298,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="200">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Senegal</Name>
 		<Code>SN</Code>
@@ -3315,7 +3315,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="201">
-		<LastChanged>2008-10-16T01:37:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Burkina Faso</Name>
 		<Code>BF</Code>
@@ -3332,7 +3332,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="202">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Gibraltar</Name>
 		<Code>GI</Code>
@@ -3349,7 +3349,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="203">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ireland</Name>
 		<Code>IE</Code>
@@ -3366,7 +3366,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="204">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>France</Name>
 		<Code>FR</Code>
@@ -3383,7 +3383,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="205">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Monaco</Name>
 		<Code>MC</Code>
@@ -3400,7 +3400,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="206">
-		<LastChanged>2008-10-16T01:37:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Belgium</Name>
 		<Code>BE</Code>
@@ -3417,7 +3417,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="207">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Netherlands</Name>
 		<Code>NL</Code>
@@ -3434,7 +3434,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="208">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Luxembourg</Name>
 		<Code>LU</Code>
@@ -3451,7 +3451,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="209">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Germany</Name>
 		<Code>DE</Code>
@@ -3468,7 +3468,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="210">
-		<LastChanged>2008-10-16T01:37:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Austria</Name>
 		<Code>AT</Code>
@@ -3485,7 +3485,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="211">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Liechtenstein</Name>
 		<Code>LI</Code>
@@ -3502,7 +3502,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="212">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Denmark</Name>
 		<Code>DK</Code>
@@ -3519,7 +3519,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="213">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Faeroe Islands</Name>
 		<Code>FO</Code>
@@ -3536,7 +3536,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="214">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Norway</Name>
 		<Code>NO</Code>
@@ -3553,7 +3553,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="215">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Sweden</Name>
 		<Code>SE</Code>
@@ -3570,7 +3570,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="216">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Finland</Name>
 		<Code>FI</Code>
@@ -3587,7 +3587,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="217">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Iceland</Name>
 		<Code>IS</Code>
@@ -3604,7 +3604,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="218">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Spain</Name>
 		<Code>ES</Code>
@@ -3621,7 +3621,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="219">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Andorra</Name>
 		<Code>AD</Code>
@@ -3638,7 +3638,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="220">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Spain (Canary Islands)</Name>
 		<Code/>
@@ -3655,7 +3655,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="221">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Portugal</Name>
 		<Code>PT</Code>
@@ -3672,7 +3672,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="222">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>PORTUGAL(MADEIRA)</Name>
 		<Code/>
@@ -3689,7 +3689,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="223">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Italy</Name>
 		<Code>IT</Code>
@@ -3706,7 +3706,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="224">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>San Marino</Name>
 		<Code>SM</Code>
@@ -3723,7 +3723,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="225">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Vatican City State</Name>
 		<Code>VA</Code>
@@ -3740,7 +3740,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="226">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Switzerland</Name>
 		<Code>CH</Code>
@@ -3757,7 +3757,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="227">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Yugoslavia</Name>
 		<Code>YU</Code>
@@ -3774,7 +3774,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="228">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Croatia</Name>
 		<Code>HR</Code>
@@ -3791,7 +3791,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="229">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Slovenia</Name>
 		<Code>SI</Code>
@@ -3808,7 +3808,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="230">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bosnia and Herzegowina</Name>
 		<Code>BA</Code>
@@ -3825,7 +3825,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="231">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Macedonia (FYROM)</Name>
 		<Code>MK</Code>
@@ -3842,7 +3842,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="232">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Greece</Name>
 		<Code>GR</Code>
@@ -3859,7 +3859,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="233">
-		<LastChanged>2008-10-16T02:31:36</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Turkey</Name>
 		<Code>TR</Code>
@@ -3876,7 +3876,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="234">
-		<LastChanged>2008-10-16T02:30:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Malta</Name>
 		<Code>MT</Code>
@@ -3893,7 +3893,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="235">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>American Samoa</Name>
 		<Code>AS</Code>
@@ -3910,7 +3910,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="236">
-		<LastChanged>2008-10-16T01:45:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Anguilla</Name>
 		<Code>AI</Code>
@@ -3927,7 +3927,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="237">
-		<LastChanged>2008-10-16T02:53:03</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Antarctica</Name>
 		<Code>AQ</Code>
@@ -3944,7 +3944,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="238">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bahrain</Name>
 		<Code>BH</Code>
@@ -3961,7 +3961,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="239">
-		<LastChanged>2008-10-16T01:45:23</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bouvet Island</Name>
 		<Code>BV</Code>
@@ -3978,7 +3978,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="240">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>East Timor</Name>
 		<Code>TP</Code>
@@ -3995,7 +3995,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="241">
-		<LastChanged>2008-10-16T02:19:10</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Eritrea</Name>
 		<Code>ER</Code>
@@ -4012,7 +4012,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="242">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Fictitious Points</Name>
 		<Code>ZZ</Code>
@@ -4029,7 +4029,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="243">
-		<LastChanged>2008-10-16T02:19:11</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>French Southern Territories</Name>
 		<Code>TF</Code>
@@ -4046,7 +4046,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="245">
-		<LastChanged>2008-10-16T02:20:05</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Heard and McDonald Islands</Name>
 		<Code>HM</Code>
@@ -4063,7 +4063,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="246">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mayotte</Name>
 		<Code>YT</Code>
@@ -4080,7 +4080,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="247">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Micronesia</Name>
 		<Code>FM</Code>
@@ -4097,7 +4097,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="248">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Montserrat</Name>
 		<Code>MS</Code>
@@ -4114,7 +4114,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="249">
-		<LastChanged>2008-10-16T02:30:17</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Northern Mariana Islands</Name>
 		<Code>MP</Code>
@@ -4131,7 +4131,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="250">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Palau</Name>
 		<Code>PW</Code>
@@ -4148,7 +4148,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="251">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Reserved</Name>
 		<Code>XS</Code>
@@ -4165,7 +4165,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="252">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Saint Vincent and the Grenadines</Name>
 		<Code>VC</Code>
@@ -4182,7 +4182,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="253">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>South Georgia and the South Sandwich Isl</Name>
 		<Code>GS</Code>
@@ -4199,7 +4199,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="254">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Svalbard and Jan Mayen Islands</Name>
 		<Code>SJ</Code>
@@ -4216,7 +4216,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="255">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>United States Minor Outlying Islands</Name>
 		<Code>UM</Code>
@@ -4233,7 +4233,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="256">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Vietnam</Name>
 		<Code>VN</Code>
@@ -4250,7 +4250,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="257">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Virgin Islands, British</Name>
 		<Code>VG</Code>
@@ -4267,7 +4267,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="258">
-		<LastChanged>2008-10-16T02:31:37</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Wallis and Futuna Islands</Name>
 		<Code>WF</Code>
@@ -4284,7 +4284,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="259">
-		<LastChanged>2008-10-16T02:30:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Pitcairn</Name>
 		<Code>PN</Code>
@@ -4301,7 +4301,7 @@
 		<Picture/>
 	</Country>
 	<Country ID="260">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>FRANCE, METROPOLITAN</Name>
 		<Code>FX</Code>

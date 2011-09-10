@@ -9,7 +9,7 @@
 		<VendorID>2</VendorID>
 	</Affiliation>
 	<Affiliation ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BETA</Code>
 		<Description>Beta Group</Description>
@@ -18,7 +18,7 @@
 		<VendorID>39</VendorID>
 	</Affiliation>
 	<Affiliation ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>GNTS</Code>
 		<Description>Giants</Description>
@@ -27,7 +27,7 @@
 		<VendorID>1</VendorID>
 	</Affiliation>
 	<Affiliation ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>AAA</Code>
 		<Description>Auto Club</Description>

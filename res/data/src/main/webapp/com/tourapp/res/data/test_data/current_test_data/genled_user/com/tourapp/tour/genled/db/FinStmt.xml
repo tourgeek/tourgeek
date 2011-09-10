@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<FinStmt ID="1">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Income Statement</StatementDesc>
 		<FinStmtHeaderID>1</FinStmtHeaderID>
@@ -10,7 +10,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="2">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Retained Earnings Statement</StatementDesc>
 		<FinStmtHeaderID>1</FinStmtHeaderID>
@@ -20,7 +20,7 @@
 		<StatementNumber>T</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="3">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Balance Sheet</StatementDesc>
 		<FinStmtHeaderID>1</FinStmtHeaderID>
@@ -30,7 +30,7 @@
 		<StatementNumber>T</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="4">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Statement of Changes in Financial Position</StatementDesc>
 		<FinStmtHeaderID>2</FinStmtHeaderID>
@@ -40,7 +40,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="5">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Deluxe Tours Income Statement</StatementDesc>
 		<FinStmtHeaderID>3</FinStmtHeaderID>
@@ -50,7 +50,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="6">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Economy Tours Income Statement</StatementDesc>
 		<FinStmtHeaderID>3</FinStmtHeaderID>
@@ -60,7 +60,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="7">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Miscellaneous Income Statement</StatementDesc>
 		<FinStmtHeaderID>3</FinStmtHeaderID>
@@ -70,7 +70,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="8">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>General and Administrative Expense</StatementDesc>
 		<FinStmtHeaderID>3</FinStmtHeaderID>
@@ -80,7 +80,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="9">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Income and Retained Earnings Statement</StatementDesc>
 		<FinStmtHeaderID>3</FinStmtHeaderID>
@@ -90,7 +90,7 @@
 		<StatementNumber>N</StatementNumber>
 	</FinStmt>
 	<FinStmt ID="10">
-		<LastChanged>2010-04-02T16:01:03</LastChanged>
+		<LastChanged>2011-09-09T15:49:13</LastChanged>
 		<Deleted>N</Deleted>
 		<StatementDesc>Balance Sheet</StatementDesc>
 		<FinStmtHeaderID>3</FinStmtHeaderID>
