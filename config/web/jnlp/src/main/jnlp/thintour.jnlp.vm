@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jnlp spec="1.0+" codebase="$$context">
+<?xml version="1.0" encoding="UTF-8"?><jnlp codebase="$$context" spec="1.0+">
 <information>
 <title>Thin Tour Application Resources</title>
 <vendor>tourapp.com</vendor>
@@ -12,8 +11,8 @@
 </information>
 <security/>
 <resources>
-<java version="1.6+" initial-heap-size="128m" max-heap-size="512m"/>
-<property name="jnlp.packEnabled" value="true"/>
+<java max-heap-size="512m" initial-heap-size="128m" version="1.6+"/>
+<property value="true" name="jnlp.packEnabled"/>
 <jar href="lib/com.tourapp.thin.app.booking-${project.version}.jar" part="com.tourapp.thin.app.booking" download="lazy"/>
 <package name="com.tourapp.thin.app.booking.*" part="com.tourapp.thin.app.booking" recursive="true"/>
 <jar href="lib/com.tourapp.thin.app.request-${project.version}.jar" part="com.tourapp.thin.app.request" download="lazy"/>
