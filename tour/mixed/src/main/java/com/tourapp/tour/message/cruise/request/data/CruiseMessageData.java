@@ -1,6 +1,6 @@
 /**
- *  @(#)CruiseMessageData.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CruiseMessageData.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.cruise.request.data;
 

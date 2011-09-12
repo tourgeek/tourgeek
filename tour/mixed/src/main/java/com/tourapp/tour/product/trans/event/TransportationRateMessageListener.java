@@ -1,6 +1,6 @@
 /**
- *  @(#)TransportationRateMessageListener.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TransportationRateMessageListener.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.trans.event;
 

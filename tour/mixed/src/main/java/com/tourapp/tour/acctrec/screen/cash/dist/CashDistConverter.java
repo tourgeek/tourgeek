@@ -1,6 +1,6 @@
 /**
- *  @(#)CashDistConverter.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CashDistConverter.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.screen.cash.dist;
 

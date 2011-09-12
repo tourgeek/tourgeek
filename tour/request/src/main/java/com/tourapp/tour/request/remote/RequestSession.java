@@ -1,6 +1,6 @@
 /**
- *  @(#)RequestSession.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)RequestSession.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.request.remote;
 

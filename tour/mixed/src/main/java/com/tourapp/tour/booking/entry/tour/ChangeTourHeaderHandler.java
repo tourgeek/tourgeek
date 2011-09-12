@@ -1,6 +1,6 @@
 /**
- *  @(#)ChangeTourHeaderHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ChangeTourHeaderHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.tour;
 

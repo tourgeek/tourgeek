@@ -1,6 +1,6 @@
 /**
- *  @(#)BankTrx_TrxUserID.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BankTrx_TrxUserID.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.db;
 

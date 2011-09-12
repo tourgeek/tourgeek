@@ -1,6 +1,6 @@
 /**
- *  @(#)CarInfoRequestMessageInProcessor.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CarInfoRequestMessageInProcessor.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.car.request.in;
 

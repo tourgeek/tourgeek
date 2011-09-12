@@ -1,6 +1,6 @@
 /**
- *  @(#)ProductScreenRecord_LastChanged.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProductScreenRecord_LastChanged.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.base.db;
 

@@ -1,12 +1,13 @@
-/**
+/*
  * BookingMenuLookup.java
  *
  * Created on February 17, 2000, 1:07 AM
  *
  * WARNING WARNING: This is manually created class to mirror tour.booking.remote.BookingMenuLookup
  * ... Remember to change this class if the remote class changes!!!
- */
  
+ * Copyright © 2011 jbundle.org. All rights reserved.
+ */
 package com.tourapp.thin.app.booking.lookup;
 
 import java.util.Date;

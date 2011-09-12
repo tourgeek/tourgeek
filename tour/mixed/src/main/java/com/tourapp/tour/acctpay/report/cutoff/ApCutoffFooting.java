@@ -1,6 +1,6 @@
 /**
- *  @(#)ApCutoffFooting.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ApCutoffFooting.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.report.cutoff;
 

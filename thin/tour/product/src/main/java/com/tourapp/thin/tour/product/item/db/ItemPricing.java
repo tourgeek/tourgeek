@@ -1,6 +1,6 @@
 /**
- *  @(#)ItemPricing.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ItemPricing.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.product.item.db;
 

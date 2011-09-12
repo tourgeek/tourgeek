@@ -1,6 +1,6 @@
 /**
- *  @(#)RegionGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)RegionGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.screen;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)SeatChoice.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)SeatChoice.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.db.shared;
 

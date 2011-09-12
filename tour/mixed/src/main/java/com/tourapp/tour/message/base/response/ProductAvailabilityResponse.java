@@ -1,6 +1,6 @@
 /**
- *  @(#)ProductAvailabilityResponse.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProductAvailabilityResponse.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.base.response;
 

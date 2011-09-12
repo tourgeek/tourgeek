@@ -1,6 +1,6 @@
 /**
- *  @(#)TrxGroupField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TrxGroupField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.genled.db;
 

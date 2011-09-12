@@ -1,6 +1,6 @@
 /**
- *  @(#)BaseStatusUpdateHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BaseStatusUpdateHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.detail.base;
 

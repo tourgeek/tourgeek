@@ -1,6 +1,6 @@
 /**
- *  @(#)VendorStatusField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)VendorStatusField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.db;
 

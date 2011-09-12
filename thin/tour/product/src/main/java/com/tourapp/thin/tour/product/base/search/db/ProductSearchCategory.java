@@ -1,6 +1,6 @@
 /**
- *  @(#)ProductSearchCategory.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProductSearchCategory.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.product.base.search.db;
 

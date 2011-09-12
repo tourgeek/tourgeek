@@ -1,6 +1,6 @@
 /**
- *  @(#)SendViaField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)SendViaField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.request.db;
 

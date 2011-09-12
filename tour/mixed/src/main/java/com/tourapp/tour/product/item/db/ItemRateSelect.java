@@ -1,6 +1,6 @@
 /**
- *  @(#)ItemRateSelect.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ItemRateSelect.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.item.db;
 

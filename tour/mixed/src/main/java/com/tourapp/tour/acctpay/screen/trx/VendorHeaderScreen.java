@@ -1,6 +1,6 @@
 /**
- *  @(#)VendorHeaderScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)VendorHeaderScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.screen.trx;
 

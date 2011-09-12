@@ -1,6 +1,6 @@
 /**
- *  @(#)TourGridScreenAnon.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TourGridScreenAnon.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.anon;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)TransportationChainField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TransportationChainField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.trans.db;
 

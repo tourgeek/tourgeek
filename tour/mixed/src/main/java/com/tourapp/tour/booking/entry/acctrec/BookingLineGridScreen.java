@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingLineGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingLineGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.acctrec;
 

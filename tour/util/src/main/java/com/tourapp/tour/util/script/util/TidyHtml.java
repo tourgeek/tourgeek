@@ -1,6 +1,6 @@
 /**
- *  @(#)TidyHtml.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TidyHtml.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.util.script.util;
 

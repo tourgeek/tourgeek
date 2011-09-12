@@ -1,6 +1,6 @@
 /**
- *  @(#)MergeCodeTableSearch.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)MergeCodeTableSearch.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.util.script.merge;
 

@@ -1,6 +1,6 @@
-/**
+/*
  *  @(#)TestTable.
- *  Copyright (c) 2005 tourgeek.com. All rights reserved.
+ * Copyright © 2011 jbundle.org. All rights reserved.
  */
 package com.tourapp.tour.util.test.hotel.thin;
 

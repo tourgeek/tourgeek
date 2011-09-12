@@ -1,6 +1,6 @@
 /**
- *  @(#)RequestHistoryDetail_MailedOn.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)RequestHistoryDetail_MailedOn.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.request.db;
 

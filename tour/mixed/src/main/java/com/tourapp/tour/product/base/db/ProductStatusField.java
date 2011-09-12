@@ -1,6 +1,6 @@
 /**
- *  @(#)ProductStatusField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProductStatusField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.base.db;
 

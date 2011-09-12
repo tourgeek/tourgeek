@@ -1,6 +1,6 @@
 /**
- *  @(#)Inventory.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Inventory.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.booking.inventory.db;
 

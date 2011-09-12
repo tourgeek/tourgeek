@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingCalendarItem.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingCalendarItem.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.calendar;
 

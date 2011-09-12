@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingTourDetailScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingTourDetailScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.detail.tour;
 

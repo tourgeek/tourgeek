@@ -1,6 +1,6 @@
 /**
- *  @(#)PaxGroup.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)PaxGroup.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.booking.db;
 

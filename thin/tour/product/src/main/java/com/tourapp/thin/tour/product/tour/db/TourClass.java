@@ -1,6 +1,6 @@
 /**
- *  @(#)TourClass.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TourClass.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.product.tour.db;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)TrxSystemHeaderScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TrxSystemHeaderScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.genled.screen.trx;
 

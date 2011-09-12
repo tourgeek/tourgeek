@@ -1,6 +1,6 @@
 /**
- *  @(#)FocusOnCheckAmount.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)FocusOnCheckAmount.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.screen.batch;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)ItineraryActionHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ItineraryActionHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.itin;
 

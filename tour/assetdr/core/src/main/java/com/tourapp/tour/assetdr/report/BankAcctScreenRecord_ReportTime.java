@@ -1,6 +1,6 @@
 /**
- *  @(#)BankAcctScreenRecord_ReportTime.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BankAcctScreenRecord_ReportTime.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.report;
 

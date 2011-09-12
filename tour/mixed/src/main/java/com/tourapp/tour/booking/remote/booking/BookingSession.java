@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingSession.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingSession.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.remote.booking;
 

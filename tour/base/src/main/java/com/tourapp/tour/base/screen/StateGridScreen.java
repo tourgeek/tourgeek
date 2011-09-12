@@ -1,6 +1,6 @@
 /**
- *  @(#)StateGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)StateGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.screen;
 

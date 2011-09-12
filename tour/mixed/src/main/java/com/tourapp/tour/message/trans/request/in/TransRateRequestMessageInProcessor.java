@@ -1,6 +1,6 @@
 /**
- *  @(#)TransRateRequestMessageInProcessor.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TransRateRequestMessageInProcessor.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.trans.request.in;
 

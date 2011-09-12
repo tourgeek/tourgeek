@@ -1,6 +1,6 @@
 /**
- *  @(#)AirPricingScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)AirPricingScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.air.screen;
 

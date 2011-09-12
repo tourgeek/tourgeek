@@ -1,6 +1,6 @@
 /**
- *  @(#)ProductInventoryScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProductInventoryScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.base.screen;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)PricingTypeField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)PricingTypeField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.tour.db;
 

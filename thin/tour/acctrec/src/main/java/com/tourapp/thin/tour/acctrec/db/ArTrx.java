@@ -1,6 +1,6 @@
 /**
- *  @(#)ArTrx.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ArTrx.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.acctrec.db;
 

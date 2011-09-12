@@ -1,6 +1,6 @@
 /**
- *  @(#)BankReconScreenRecord_ReconDate.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BankReconScreenRecord_ReconDate.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.report.recon;
 

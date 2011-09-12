@@ -1,6 +1,6 @@
 /**
- *  @(#)OTACodesScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)OTACodesScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.base.ota.screen;
 

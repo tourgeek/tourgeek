@@ -1,6 +1,6 @@
 /**
- *  @(#)ProfileCreditCardGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProfileCreditCardGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.profile.screen.detail;
 

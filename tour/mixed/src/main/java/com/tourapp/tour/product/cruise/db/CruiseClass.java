@@ -1,6 +1,6 @@
 /**
- *  @(#)CruiseClass.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CruiseClass.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.cruise.db;
 

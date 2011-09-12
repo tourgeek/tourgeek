@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingHistory.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingHistory.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.booking.history.db;
 

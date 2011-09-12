@@ -1,6 +1,6 @@
 /**
- *  @(#)DisableOnSignHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)DisableOnSignHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.screen.batch;
 

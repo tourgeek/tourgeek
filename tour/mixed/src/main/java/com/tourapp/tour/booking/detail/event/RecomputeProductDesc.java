@@ -1,6 +1,6 @@
 /**
- *  @(#)RecomputeProductDesc.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)RecomputeProductDesc.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.detail.event;
 

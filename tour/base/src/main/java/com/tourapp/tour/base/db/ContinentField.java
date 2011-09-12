@@ -1,6 +1,6 @@
 /**
- *  @(#)ContinentField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ContinentField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.db;
 

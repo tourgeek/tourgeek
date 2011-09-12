@@ -1,6 +1,6 @@
 /**
- *  @(#)RegionField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)RegionField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.db;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)BankTrxBatchScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BankTrxBatchScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.screen.batch;
 

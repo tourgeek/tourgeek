@@ -1,6 +1,6 @@
 /**
- *  @(#)TransportationRate.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TransportationRate.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.trans.db;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingTransAvailMsgReplyInProcessor.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingTransAvailMsgReplyInProcessor.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.trans.response.in;
 

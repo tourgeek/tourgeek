@@ -1,6 +1,6 @@
 /**
- *  @(#)TicketTrx.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TicketTrx.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.acctpay.db;
 

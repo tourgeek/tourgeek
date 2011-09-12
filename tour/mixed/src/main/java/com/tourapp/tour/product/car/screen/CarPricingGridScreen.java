@@ -1,6 +1,6 @@
 /**
- *  @(#)CarPricingGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CarPricingGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.car.screen;
 

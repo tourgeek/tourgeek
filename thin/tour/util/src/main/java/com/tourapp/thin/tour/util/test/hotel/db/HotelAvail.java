@@ -1,6 +1,6 @@
 /**
- *  @(#)HotelAvail.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)HotelAvail.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.util.test.hotel.db;
 

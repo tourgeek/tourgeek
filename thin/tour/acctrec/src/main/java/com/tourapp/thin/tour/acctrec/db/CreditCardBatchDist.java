@@ -1,6 +1,6 @@
 /**
- *  @(#)CreditCardBatchDist.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CreditCardBatchDist.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.acctrec.db;
 

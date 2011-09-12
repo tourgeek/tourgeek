@@ -1,6 +1,6 @@
 /**
- *  @(#)PastDueHeading.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)PastDueHeading.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.report.pastdue;
 

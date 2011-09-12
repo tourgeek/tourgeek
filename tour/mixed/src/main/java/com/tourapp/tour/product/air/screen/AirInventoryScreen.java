@@ -1,6 +1,6 @@
 /**
- *  @(#)AirInventoryScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)AirInventoryScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.air.screen;
 

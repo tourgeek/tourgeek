@@ -1,6 +1,6 @@
 /**
- *  @(#)ProductRateRequestMessageInProcessor.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProductRateRequestMessageInProcessor.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.base.request.in;
 

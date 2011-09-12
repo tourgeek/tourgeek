@@ -1,6 +1,6 @@
 /**
- *  @(#)CarRateMessageListener.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CarRateMessageListener.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.car.event;
 

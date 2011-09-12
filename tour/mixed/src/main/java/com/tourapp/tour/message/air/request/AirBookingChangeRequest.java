@@ -1,6 +1,6 @@
 /**
- *  @(#)AirBookingChangeRequest.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)AirBookingChangeRequest.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.air.request;
 

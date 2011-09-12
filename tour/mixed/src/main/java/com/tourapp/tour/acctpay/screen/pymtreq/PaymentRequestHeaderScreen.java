@@ -1,6 +1,6 @@
 /**
- *  @(#)PaymentRequestHeaderScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)PaymentRequestHeaderScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.screen.pymtreq;
 

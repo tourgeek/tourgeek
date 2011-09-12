@@ -1,6 +1,6 @@
 /**
- *  @(#)Deduction.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Deduction.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.payroll.db;
 

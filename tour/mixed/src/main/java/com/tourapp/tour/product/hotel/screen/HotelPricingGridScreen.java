@@ -1,6 +1,6 @@
 /**
- *  @(#)HotelPricingGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)HotelPricingGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.hotel.screen;
 

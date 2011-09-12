@@ -1,6 +1,6 @@
 /**
- *  @(#)CalcActionDateHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CalcActionDateHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.db.event;
 

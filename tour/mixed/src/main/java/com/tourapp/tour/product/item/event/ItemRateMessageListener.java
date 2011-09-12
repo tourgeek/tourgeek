@@ -1,6 +1,6 @@
 /**
- *  @(#)ItemRateMessageListener.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ItemRateMessageListener.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.item.event;
 

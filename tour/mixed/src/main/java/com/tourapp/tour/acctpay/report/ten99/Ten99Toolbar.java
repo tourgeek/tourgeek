@@ -1,6 +1,6 @@
 /**
- *  @(#)Ten99Toolbar.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Ten99Toolbar.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.report.ten99;
 

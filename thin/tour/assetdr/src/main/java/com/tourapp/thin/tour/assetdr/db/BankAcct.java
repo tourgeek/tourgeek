@@ -1,6 +1,6 @@
 /**
- *  @(#)BankAcct.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BankAcct.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.assetdr.db;
 

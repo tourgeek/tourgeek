@@ -1,6 +1,6 @@
 /**
- *  @(#)UpdateTourStatusSummaryHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)UpdateTourStatusSummaryHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.db.event;
 

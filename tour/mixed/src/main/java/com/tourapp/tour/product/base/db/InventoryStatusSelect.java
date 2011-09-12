@@ -1,6 +1,6 @@
 /**
- *  @(#)InventoryStatusSelect.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)InventoryStatusSelect.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.base.db;
 

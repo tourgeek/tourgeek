@@ -1,9 +1,10 @@
-/**
+/*
  * TextPane.java
  *
  * Created on October 23, 2000, 7:19 PM
- */
  
+ * Copyright © 2011 jbundle.org. All rights reserved.
+ */
 package com.tourapp.thin.app.booking.entry.itin;
 
 import javax.swing.event.HyperlinkEvent;

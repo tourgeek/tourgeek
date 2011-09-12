@@ -1,6 +1,6 @@
 /**
- *  @(#)HotelInfoRequestMessageInProcessor.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)HotelInfoRequestMessageInProcessor.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.hotel.request.in;
 

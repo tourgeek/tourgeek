@@ -1,6 +1,6 @@
 /**
- *  @(#)TourHeaderOptionGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TourHeaderOptionGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.tour.screen;
 

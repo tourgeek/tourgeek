@@ -1,6 +1,6 @@
 /**
- *  @(#)TransportationInformationResponse.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TransportationInformationResponse.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.trans.response;
 

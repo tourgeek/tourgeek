@@ -1,6 +1,6 @@
 /**
- *  @(#)CreditCard_TrxDate.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CreditCard_TrxDate.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.db;
 

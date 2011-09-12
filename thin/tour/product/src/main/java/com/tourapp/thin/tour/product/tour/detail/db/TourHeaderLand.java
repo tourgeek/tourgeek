@@ -1,6 +1,6 @@
 /**
- *  @(#)TourHeaderLand.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TourHeaderLand.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.product.tour.detail.db;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)Continent.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Continent.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.base.db;
 

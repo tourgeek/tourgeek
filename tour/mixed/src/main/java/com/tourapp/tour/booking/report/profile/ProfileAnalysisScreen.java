@@ -1,6 +1,6 @@
 /**
- *  @(#)ProfileAnalysisScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProfileAnalysisScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.report.profile;
 

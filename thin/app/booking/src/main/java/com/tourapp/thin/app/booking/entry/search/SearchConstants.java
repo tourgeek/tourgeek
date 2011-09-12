@@ -1,9 +1,10 @@
-/**
+/*
  * BookingConstants.java
  *
  * Created on June 25, 2000, 6:40 AM
- */
  
+ * Copyright © 2011 jbundle.org. All rights reserved.
+ */
 package com.tourapp.thin.app.booking.entry.search;
 
 import java.awt.Dimension;

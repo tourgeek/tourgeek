@@ -1,6 +1,6 @@
 /**
- *  @(#)Mco_TrxEntry.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Mco_TrxEntry.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.db;
 

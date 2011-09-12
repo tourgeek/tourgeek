@@ -1,6 +1,6 @@
 /**
- *  @(#)AssetScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)AssetScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.screen.asset;
 

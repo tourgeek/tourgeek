@@ -1,6 +1,6 @@
 /**
- *  @(#)AirAvailabilityRequest.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)AirAvailabilityRequest.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.air.request;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)State.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)State.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.db;
 

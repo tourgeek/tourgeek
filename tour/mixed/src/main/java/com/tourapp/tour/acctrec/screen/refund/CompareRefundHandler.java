@@ -1,6 +1,6 @@
 /**
- *  @(#)CompareRefundHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CompareRefundHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.screen.refund;
 

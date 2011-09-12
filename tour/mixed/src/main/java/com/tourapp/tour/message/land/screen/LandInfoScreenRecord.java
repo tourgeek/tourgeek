@@ -1,6 +1,6 @@
 /**
- *  @(#)LandInfoScreenRecord.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)LandInfoScreenRecord.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.land.screen;
 

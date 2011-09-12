@@ -1,6 +1,6 @@
 /**
- *  @(#)TimeTrxScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TimeTrxScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.payroll.report.payroll;
 

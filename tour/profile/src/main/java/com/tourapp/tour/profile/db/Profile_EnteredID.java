@@ -1,6 +1,6 @@
 /**
- *  @(#)Profile_EnteredID.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Profile_EnteredID.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.profile.db;
 

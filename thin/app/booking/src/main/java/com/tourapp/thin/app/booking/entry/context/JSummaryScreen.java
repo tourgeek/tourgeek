@@ -1,3 +1,6 @@
+/*
+ * Copyright © 2011 jbundle.org. All rights reserved.
+ */
 package com.tourapp.thin.app.booking.entry.context;
 import java.awt.Component;
 import java.awt.Container;

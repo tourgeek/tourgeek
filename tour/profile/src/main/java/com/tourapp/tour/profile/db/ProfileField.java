@@ -1,6 +1,6 @@
 /**
- *  @(#)ProfileField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ProfileField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.profile.db;
 

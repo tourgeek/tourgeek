@@ -1,6 +1,6 @@
 /**
- *  @(#)LandBookingRequestMessageInProcessor.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)LandBookingRequestMessageInProcessor.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.land.request.in;
 

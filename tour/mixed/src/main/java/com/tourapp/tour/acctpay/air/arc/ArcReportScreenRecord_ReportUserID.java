@@ -1,6 +1,6 @@
 /**
- *  @(#)ArcReportScreenRecord_ReportUserID.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)ArcReportScreenRecord_ReportUserID.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.air.arc;
 

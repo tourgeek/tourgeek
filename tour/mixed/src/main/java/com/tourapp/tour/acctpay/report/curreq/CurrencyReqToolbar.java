@@ -1,6 +1,6 @@
 /**
- *  @(#)CurrencyReqToolbar.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CurrencyReqToolbar.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.report.curreq;
 

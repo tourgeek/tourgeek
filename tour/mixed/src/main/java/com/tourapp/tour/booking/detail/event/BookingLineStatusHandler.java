@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingLineStatusHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingLineStatusHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.detail.event;
 

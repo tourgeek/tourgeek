@@ -1,6 +1,6 @@
 /**
- *  @(#)PrintCheckXML.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)PrintCheckXML.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.screen.check;
 

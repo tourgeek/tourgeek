@@ -1,6 +1,6 @@
 /**
- *  @(#)CreditApproveGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CreditApproveGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.screen.credit;
 

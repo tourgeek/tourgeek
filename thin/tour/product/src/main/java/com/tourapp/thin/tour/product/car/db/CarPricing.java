@@ -1,6 +1,6 @@
 /**
- *  @(#)CarPricing.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CarPricing.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.thin.tour.product.car.db;
 

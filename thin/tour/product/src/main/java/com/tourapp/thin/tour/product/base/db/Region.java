@@ -1,6 +1,6 @@
-/**
+/*
  *  @(#)Region.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * Copyright © 2011 jbundle.org. All rights reserved.
  */
 package com.tourapp.thin.tour.product.base.db;
 

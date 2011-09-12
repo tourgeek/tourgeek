@@ -1,6 +1,6 @@
 /**
- *  @(#)LandChainField.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)LandChainField.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.land.db;
 

@@ -1,6 +1,6 @@
 /**
- *  @(#)TourClassScreenRecord.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TourClassScreenRecord.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.tour.schedule.screen;
 

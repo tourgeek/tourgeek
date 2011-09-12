@@ -1,6 +1,6 @@
 /**
- *  @(#)CountryGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CountryGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.base.screen;
 

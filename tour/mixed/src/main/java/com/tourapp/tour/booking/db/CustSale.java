@@ -1,6 +1,6 @@
 /**
- *  @(#)CustSale.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)CustSale.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.db;
 

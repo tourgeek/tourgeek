@@ -1,6 +1,6 @@
 /**
- *  @(#)TimeTrxScreenRecord_PayEndingDate.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TimeTrxScreenRecord_PayEndingDate.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.payroll.report.payroll;
 

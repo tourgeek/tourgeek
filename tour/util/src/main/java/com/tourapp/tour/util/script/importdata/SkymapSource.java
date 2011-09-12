@@ -1,6 +1,6 @@
 /**
- *  @(#)SkymapSource.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)SkymapSource.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.util.script.importdata;
 

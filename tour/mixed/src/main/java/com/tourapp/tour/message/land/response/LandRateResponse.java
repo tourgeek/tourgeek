@@ -1,6 +1,6 @@
 /**
- *  @(#)LandRateResponse.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)LandRateResponse.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.land.response;
 

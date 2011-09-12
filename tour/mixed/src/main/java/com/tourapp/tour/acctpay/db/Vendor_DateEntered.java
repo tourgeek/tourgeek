@@ -1,6 +1,6 @@
 /**
- *  @(#)Vendor_DateEntered.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Vendor_DateEntered.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctpay.db;
 

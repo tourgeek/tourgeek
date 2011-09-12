@@ -1,6 +1,6 @@
 /**
- *  @(#)BookingScreenHandler.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)BookingScreenHandler.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.booking.entry.base;
 

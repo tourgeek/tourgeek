@@ -1,6 +1,6 @@
 /**
- *  @(#)Hotel.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)Hotel.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.hotel.db;
 

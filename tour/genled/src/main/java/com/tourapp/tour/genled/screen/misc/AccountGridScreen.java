@@ -1,6 +1,6 @@
 /**
- *  @(#)AccountGridScreen.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)AccountGridScreen.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.genled.screen.misc;
 

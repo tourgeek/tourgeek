@@ -1,6 +1,6 @@
 /**
- *  @(#)HotelRateRequestSOAPMessageOut2010B.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)HotelRateRequestSOAPMessageOut2010B.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.message.jibx.ota2010b.hotel.request.out;
 

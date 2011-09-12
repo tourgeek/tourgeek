@@ -1,6 +1,6 @@
 /**
- *  @(#)TourHeaderTransportation.
- *  Copyright © 2010 tourapp.com. All rights reserved.
+ * @(#)TourHeaderTransportation.
+ * Copyright © 2011 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.product.tour.detail.db;
 
