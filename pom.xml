@@ -12,7 +12,7 @@
 
   <groupId>com.tourapp.config</groupId>
   <artifactId>tourapp-project-reactor</artifactId>
-  <version>0.7.7-SNAPSHOT</version>
+  <version>0.7.7</version>
   <packaging>pom</packaging>
   <name>tour-project-reactor - Top Level Project parent</name>
   <description>Parent project for all applications</description>

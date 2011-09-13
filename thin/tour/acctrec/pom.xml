@@ -4,7 +4,7 @@
   <parent>
     <artifactId>tourapp-thin-tour-reactor</artifactId>
     <groupId>com.tourapp.thin</groupId>
-    <version>0.7.7-SNAPSHOT</version>
+    <version>0.7.7</version>
   </parent>
 
   <artifactId>com.tourapp.thin.tour.acctrec</artifactId>
@@ -28,13 +28,13 @@
     <dependency>
       <groupId>com.tourapp.thin</groupId>
       <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
+      <version>0.7.7</version>
     </dependency>
     
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.acctrec</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
+      <version>0.7.7</version>
     </dependency>
   </dependencies>
 
