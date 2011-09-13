@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-tour-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.7.7-SNAPSHOT</version>
+    <version>0.7.7</version>
   </parent>
 
   <artifactId>com.tourapp.tour.request</artifactId>
@@ -25,7 +25,7 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.profile</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
+      <version>0.7.7</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
@@ -46,7 +46,7 @@
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.request</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
+      <version>0.7.7</version>
     </dependency>
   </dependencies>
 

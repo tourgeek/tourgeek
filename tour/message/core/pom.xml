@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourapp-tour-message-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.7.7-SNAPSHOT</version>
+    <version>0.7.7</version>
   </parent>
 
   <!-- NOTE: This project is only used for packaging since this bundle contains circular dependencies -->
@@ -22,7 +22,7 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.mixed</artifactId>
-      <version>0.7.7-SNAPSHOT</version>
+      <version>0.7.7</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
