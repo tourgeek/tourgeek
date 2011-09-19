@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.tourapp.config</groupId>
     <artifactId>tourapp-config-reactor</artifactId>
-    <version>0.7.8</version>
+    <version>0.7.9-SNAPSHOT</version>
   </parent>
 
   <artifactId>tourapp-config-tourapp</artifactId>
@@ -247,7 +247,7 @@
     <dependency>
       <groupId>com.tourapp.config</groupId>
       <artifactId>tourapp-config-dep-all</artifactId>
-      <version>0.7.8</version>
+      <version>0.7.9-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
   </dependencies>

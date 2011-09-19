@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-config-dep-reactor</artifactId>
     <groupId>com.tourapp.config</groupId>
-    <version>0.7.8</version>
+    <version>0.7.9-SNAPSHOT</version>
   </parent>
 
   <artifactId>tourapp-config-dep-tour</artifactId>
@@ -17,67 +17,67 @@
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctpay</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctrec</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.base</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.assetdr</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.assetdr.process</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.booking</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.genled</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.payroll</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.product</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.profile</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.request</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.message.jibx</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.util</artifactId>
-        <version>0.7.8</version>
+        <version>0.7.9-SNAPSHOT</version>
     </dependency>
   </dependencies>
   
