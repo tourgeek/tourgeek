@@ -6,7 +6,7 @@
   <parent>
   	<groupId>com.tourapp.tour</groupId>
   	<artifactId>tourapp-tour-reactor</artifactId>
-  	<version>0.7.8-SNAPSHOT</version>
+  	<version>0.7.8</version>
   </parent>
 
   <!-- ******************************************************************************************
@@ -23,28 +23,28 @@
     <dependency>
       <groupId>com.tourapp.thin.app</groupId>
       <artifactId>com.tourapp.thin.app.booking</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
   
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.genled</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.profile</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.assetdr</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.base</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
 
     <dependency>

@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-tour-message-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.7.8-SNAPSHOT</version>
+    <version>0.7.8</version>
   </parent>
 
   <artifactId>com.tourapp.tour.message.jibx</artifactId>
@@ -40,18 +40,18 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.message</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.booking</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.product</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
   </dependencies>
 </project>

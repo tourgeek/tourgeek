@@ -4,7 +4,7 @@
   <parent>
     <artifactId>tourapp-thin-tour-reactor</artifactId>
     <groupId>com.tourapp.thin</groupId>
-    <version>0.7.8-SNAPSHOT</version>
+    <version>0.7.8</version>
   </parent>
 
   <artifactId>com.tourapp.thin.tour.base</artifactId>
@@ -29,7 +29,7 @@
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.base</artifactId>
-      <version>0.7.8-SNAPSHOT</version>
+      <version>0.7.8</version>
     </dependency>
   </dependencies>
 
