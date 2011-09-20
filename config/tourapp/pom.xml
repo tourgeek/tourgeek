@@ -67,7 +67,7 @@
 		  <artifactId>j2ee</artifactId>
 		  <version>${jbundleVersion}</version>
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
-		  <systemPath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</systemPath>
+		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
 	  </dependencies>
     </profile>
@@ -122,7 +122,7 @@
 		  <artifactId>j2ee</artifactId>
 		  <version>${jbundleVersion}</version>
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
-		  <systemPath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</systemPath>
+		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
 	  </dependencies>
     </profile>
@@ -181,7 +181,7 @@
 		  <artifactId>j2ee</artifactId>
 		  <version>1.4</version>	<!-- Made up version -->
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
-		  <systemPath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</systemPath>
+		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
 	  </dependencies>
     </profile>
@@ -237,7 +237,7 @@
 		  <artifactId>j2ee</artifactId>
 		  <version>${jbundleVersion}</version> 
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
-		  <systemPath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</systemPath>
+		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
 	  </dependencies>
     </profile>

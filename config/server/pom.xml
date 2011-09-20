@@ -67,7 +67,7 @@
       <artifactId>j2ee</artifactId>
       <version>1.4</version>
       <scope>system</scope>
-      <systemPath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</systemPath>
+      <systemPath>${j2eePath}</systemPath>
     </dependency>
   </dependencies>
 
