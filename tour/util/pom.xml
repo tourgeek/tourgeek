@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-tour-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.7.9-SNAPSHOT</version>
+    <version>0.8.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourapp.tour.util</artifactId>
@@ -25,23 +25,23 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.base</artifactId>
-      <version>0.7.9-SNAPSHOT</version>
+      <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.message</artifactId>
-      <version>0.7.9-SNAPSHOT</version>
+      <version>0.8.0-SNAPSHOT</version>
     </dependency>
 
 <dependency>
     <groupId>com.tourapp.tour</groupId>
   <artifactId>com.tourapp.tour.product</artifactId>
-    <version>0.7.9-SNAPSHOT</version>
+    <version>0.8.0-SNAPSHOT</version>
 </dependency>
 <dependency>
     <groupId>com.tourapp.tour</groupId>
   <artifactId>com.tourapp.tour.booking</artifactId>
-    <version>0.7.9-SNAPSHOT</version>
+    <version>0.8.0-SNAPSHOT</version>
 </dependency>
 <dependency>
   <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
@@ -52,12 +52,12 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctpay</artifactId>
-      <version>0.7.9-SNAPSHOT</version>
+      <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.thin</groupId>
       <artifactId>com.tourapp.thin.tour.product</artifactId>
-      <version>0.7.9-SNAPSHOT</version>
+      <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.app.program</groupId>
@@ -68,7 +68,7 @@
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.util</artifactId>
-      <version>0.7.9-SNAPSHOT</version>
+      <version>0.8.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
     
