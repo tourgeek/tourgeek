@@ -4,10 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-  	<groupId>org.jbundle.config</groupId>
-  	<artifactId>jbundle-parent</artifactId>
+    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourapp-parent</artifactId>
     <version>1.1.1-SNAPSHOT</version>
-    <relativePath>../jbundle/jbundle-parent</relativePath>
+    <relativePath>../tourapp-parent</relativePath>
   </parent>
 
   <groupId>com.tourapp.config</groupId>
@@ -15,7 +15,7 @@
   <version>0.8.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>tour-project-reactor - Top Level Project parent</name>
-  <description>Parent project for all applications</description>
+  <description>Parent project for tour applications</description>
 
   <modules>
     <module>res</module>
@@ -30,18 +30,4 @@
     <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp</developerConnection>
   </scm>
 
-  <profiles>
-    <profile> 
-      <id>sonatype-oss-release</id>
-      <properties>
-        <OBRRepositoryIndex>tourapp-repository.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
-	<releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
-	<snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
-	<publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
-	<stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
-	<publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
-      </properties>
-    </profile>
-  </profiles>
-  
 </project>
