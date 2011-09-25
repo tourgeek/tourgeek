@@ -422,7 +422,7 @@
 	<Part ID="58">
 		<LastChanged>2010-12-02T15:36:53</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>com.tourapp.tour.message.core</Description>
+		<Description>com.tourapp.tour.message</Description>
 		<Sequence/>
 		<Kind>lazy</Kind>
 		<PartType/>

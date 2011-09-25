@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ProgramControl ID="1">
-		<LastChanged>2011-03-09T18:36:24</LastChanged>
+		<LastChanged>2011-09-10T22:31:09</LastChanged>
 		<Deleted>N</Deleted>
 		<ProjectName>tourapp-tour</ProjectName>
 		<BaseDirectory>/home/don/workspace</BaseDirectory>
@@ -12,7 +12,7 @@
 		<PackageName/>
 		<ThinPackage>.thin</ThinPackage>
 		<ResourcePackage>.res</ResourcePackage>
-		<LastPackageUpdate>2010-03-17T15:20:07</LastPackageUpdate>
+		<LastPackageUpdate>2011-09-10T22:30:09</LastPackageUpdate>
 		<PackagesBasePath/>
 		<PackagesPath/>
 	</ProgramControl>
