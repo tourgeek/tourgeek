@@ -20576,7 +20576,7 @@
 		<ObjectID>151</ObjectID>
 		<ClassName>ContactType</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:28</InitTime>
+		<InitTime>2008-06-19T03:27:14</InitTime>
 		<FreeTime>2008-02-12T05:00:28</FreeTime>
 		<RecordOwner>BaseProcess</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
