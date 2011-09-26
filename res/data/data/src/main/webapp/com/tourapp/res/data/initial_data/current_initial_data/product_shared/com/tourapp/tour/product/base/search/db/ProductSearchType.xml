@@ -13,7 +13,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="2">
-		<LastChanged>2008-10-18T17:43:06</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Themes</Description>
 		<Air/>
@@ -26,7 +26,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="3">
-		<LastChanged>2008-10-18T17:43:02</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Ability</Description>
 		<Air/>
@@ -39,7 +39,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="4">
-		<LastChanged>2008-10-18T17:42:57</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Exertion</Description>
 		<Air/>
@@ -52,7 +52,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="5">
-		<LastChanged>2008-10-18T17:42:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Comfort</Description>
 		<Air/>
@@ -65,7 +65,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="6">
-		<LastChanged>2008-10-19T01:53:02</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Attraction Category Code</Description>
 		<Air/>
@@ -78,7 +78,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="7">
-		<LastChanged>2008-10-19T08:33:42</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Brand Category Code</Description>
 		<Air/>
@@ -91,7 +91,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="8">
-		<LastChanged>2008-10-19T08:33:34</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Equipment Type</Description>
 		<Air>N</Air>
@@ -104,7 +104,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="9">
-		<LastChanged>2008-10-19T01:52:32</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Amenity Code</Description>
 		<Air/>
@@ -117,7 +117,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="10">
-		<LastChanged>2008-10-19T08:33:25</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Location Category Codes</Description>
 		<Air>N</Air>
@@ -130,7 +130,7 @@
 		<Land>Y</Land>
 	</ProductSearchType>
 	<ProductSearchType ID="11">
-		<LastChanged>2008-10-19T08:33:16</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Package Type </Description>
 		<Air/>
@@ -143,7 +143,7 @@
 		<Land>Y</Land>
 	</ProductSearchType>
 	<ProductSearchType ID="12">
-		<LastChanged>2008-10-19T08:32:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Recreation Srvc Detail Code</Description>
 		<Air/>
@@ -156,7 +156,7 @@
 		<Land>Y</Land>
 	</ProductSearchType>
 	<ProductSearchType ID="13">
-		<LastChanged>2008-10-19T01:53:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Room Amenity Type</Description>
 		<Air/>
@@ -169,7 +169,7 @@
 		<Land/>
 	</ProductSearchType>
 	<ProductSearchType ID="14">
-		<LastChanged>2008-10-19T08:32:34</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Recreation Srvc Type </Description>
 		<Air/>

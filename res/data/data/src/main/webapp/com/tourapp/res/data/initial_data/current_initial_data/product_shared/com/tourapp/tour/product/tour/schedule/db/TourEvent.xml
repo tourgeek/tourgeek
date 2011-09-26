@@ -8,7 +8,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="2">
-		<LastChanged>2008-08-22T13:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Booking status change event</Description>
 		<Code/>
@@ -16,7 +16,7 @@
 		<EventOrDate>E</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="4">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Deposit due date</Description>
 		<Code>D</Code>
@@ -24,7 +24,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="5">
-		<LastChanged>2008-08-22T13:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Deposit received event</Description>
 		<Code>D</Code>
@@ -32,7 +32,7 @@
 		<EventOrDate>E</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="6">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Final payment due date</Description>
 		<Code>P</Code>
@@ -40,7 +40,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="7">
-		<LastChanged>2008-08-22T13:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Final payment received event</Description>
 		<Code>P</Code>
@@ -48,7 +48,7 @@
 		<EventOrDate>E</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="8">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Finalization date</Description>
 		<Code>F</Code>
@@ -56,7 +56,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="9">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour closed date</Description>
 		<Code/>
@@ -64,7 +64,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="10">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Order components date</Description>
 		<Code/>
@@ -72,7 +72,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="11">
-		<LastChanged>2008-08-22T13:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Services confirmed event</Description>
 		<Code/>
@@ -80,7 +80,7 @@
 		<EventOrDate>E</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="12">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Final docs date</Description>
 		<Code>X</Code>
@@ -88,7 +88,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="13">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Ticketing date</Description>
 		<Code>T</Code>
@@ -96,7 +96,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="14">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Special 1 date</Description>
 		<Code>1</Code>
@@ -104,7 +104,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="15">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Special 2 date</Description>
 		<Code>2</Code>
@@ -112,7 +112,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="16">
-		<LastChanged>2008-08-22T13:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Departure date</Description>
 		<Code/>
@@ -120,7 +120,7 @@
 		<EventOrDate>D</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="17">
-		<LastChanged>2008-08-22T13:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Booking cancelled event</Description>
 		<Code/>
@@ -128,7 +128,7 @@
 		<EventOrDate>E</EventOrDate>
 	</TourEvent>
 	<TourEvent ID="18">
-		<LastChanged>2008-08-22T13:48:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour cancelled event</Description>
 		<Code/>

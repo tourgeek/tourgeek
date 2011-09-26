@@ -7,189 +7,189 @@
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="2">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Club/concierge</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="3">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Convention</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="4">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Corporate</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="5">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Day rate</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="6">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Distressed inventory</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="7">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Family plan</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="8">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Government</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="9">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Military</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="10">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Negotiated</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="11">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Package</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="12">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Promotional</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="13">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Regular/rack</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="14">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Senior citizen</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="15">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour/wholesale</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="16">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Travel industry</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="17">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Weekend </Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="18">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Last room available</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="19">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Non-last room availa</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="20">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Consortia </Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="21">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Group</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="22">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Contract</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="23">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Promotional package/</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="24">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Published</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="25">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Net</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="101">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Series</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="102">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Ad-hoc group</Description>
 		<Code/>
 		<GeneralRate>Y</GeneralRate>
 	</HotelRate>
 	<HotelRate ID="103">
-		<LastChanged>2008-11-18T10:11:41</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Interline</Description>
 		<Code/>

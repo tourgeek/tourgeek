@@ -6,25 +6,25 @@
 		<Code/>
 	</PaymentCycle>
 	<PaymentCycle ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Pay at invoice</Description>
 		<Code>I</Code>
 	</PaymentCycle>
 	<PaymentCycle ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Statement @ EOM</Description>
 		<Code>S</Code>
 	</PaymentCycle>
 	<PaymentCycle ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Statement in mo</Description>
 		<Code>D</Code>
 	</PaymentCycle>
 	<PaymentCycle ID="5">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Prepay all</Description>
 		<Code>P</Code>

@@ -6,13 +6,13 @@
 		<Code/>
 	</PaymentCode>
 	<PaymentCode ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Weekly</Description>
 		<Code>W</Code>
 	</PaymentCode>
 	<PaymentCode ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bi-weekly</Description>
 		<Code>B</Code>

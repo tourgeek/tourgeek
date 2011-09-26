@@ -8,7 +8,7 @@
 		<TrxSystemID>1</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="33">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>Mco</DescCode>
 		<Description>MCO Payment</Description>
@@ -16,7 +16,7 @@
 		<TrxSystemID>3</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="59">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>CreditCard</DescCode>
 		<Description>Credit Card</Description>
@@ -24,7 +24,7 @@
 		<TrxSystemID>3</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="164">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>BankTrx</DescCode>
 		<Description>Bank Transaction</Description>
@@ -32,7 +32,7 @@
 		<TrxSystemID>2</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="165">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>AssetDepreciation</DescCode>
 		<Description>Asset Depreciation</Description>
@@ -40,7 +40,7 @@
 		<TrxSystemID>2</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="166">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>ArTrx</DescCode>
 		<Description>A/R Transaction</Description>
@@ -48,7 +48,7 @@
 		<TrxSystemID>3</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="167">
-		<LastChanged>2007-10-31T16:56:00</LastChanged>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>ApTrx</DescCode>
 		<Description>Air Ticket</Description>
@@ -56,7 +56,7 @@
 		<TrxSystemID>5</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="168">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>ApTrx</DescCode>
 		<Description>A/P Transaction</Description>
@@ -64,7 +64,7 @@
 		<TrxSystemID>4</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="169">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>PaymentHistory</DescCode>
 		<Description>Payment history</Description>
@@ -72,7 +72,7 @@
 		<TrxSystemID>4</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="170">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<DescCode>PayHistory</DescCode>
 		<Description>Payroll history</Description>

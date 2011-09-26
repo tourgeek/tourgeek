@@ -5,12 +5,12 @@
 		<Description>U.S. Mail</Description>
 	</SendVia>
 	<SendVia ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:56</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>UPS</Description>
 	</SendVia>
 	<SendVia ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:56</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>FedEx</Description>
 	</SendVia>

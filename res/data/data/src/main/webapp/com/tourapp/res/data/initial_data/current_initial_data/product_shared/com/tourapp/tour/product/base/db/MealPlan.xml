@@ -9,7 +9,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>American Plan</Description>
 		<Code>AP</Code>
@@ -18,7 +18,7 @@
 		<Dinner>Y</Dinner>
 	</MealPlan>
 	<MealPlan ID="3">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bed  and  breakfast</Description>
 		<Code/>
@@ -27,7 +27,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="4">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Buffet breakfast</Description>
 		<Code/>
@@ -36,7 +36,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="5">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Caribbean breakfast</Description>
 		<Code/>
@@ -45,7 +45,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="6">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cont Breakfast</Description>
 		<Code>CB</Code>
@@ -54,7 +54,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="7">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>English breakfast</Description>
 		<Code/>
@@ -63,7 +63,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="8">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>European Plan</Description>
 		<Code>EP</Code>
@@ -72,7 +72,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="9">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Family plan</Description>
 		<Code/>
@@ -81,7 +81,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="10">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Full board</Description>
 		<Code/>
@@ -90,7 +90,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="11">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Full Breakfast</Description>
 		<Code>B</Code>
@@ -99,7 +99,7 @@
 		<Dinner>N</Dinner>
 	</MealPlan>
 	<MealPlan ID="12">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Modified Am Plan</Description>
 		<Code>MP</Code>
@@ -108,7 +108,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="13">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>As brochured</Description>
 		<Code/>
@@ -117,7 +117,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="14">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Room only</Description>
 		<Code/>
@@ -126,7 +126,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="15">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Self catering</Description>
 		<Code/>
@@ -135,7 +135,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="16">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bermuda</Description>
 		<Code/>
@@ -144,7 +144,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="17">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Dinner bed and break</Description>
 		<Code/>
@@ -153,7 +153,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="18">
-		<LastChanged>2008-10-18T10:47:29</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Family American</Description>
 		<Code/>
@@ -162,7 +162,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="30">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Lunch</Description>
 		<Code>L</Code>
@@ -171,7 +171,7 @@
 		<Dinner/>
 	</MealPlan>
 	<MealPlan ID="31">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Dinner</Description>
 		<Code>D</Code>

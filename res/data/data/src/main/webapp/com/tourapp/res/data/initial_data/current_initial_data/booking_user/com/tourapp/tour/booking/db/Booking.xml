@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<Booking ID="1">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2011-09-24T03:15:29</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingDate>2011-07-01</BookingDate>
 		<EmployeeID>11</EmployeeID>
@@ -9,7 +9,7 @@
 		<Code/>
 		<Description>Eisenwiert - Hong Kong and Thailand - Jul 21, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2011-07-05T15:20:17</ModDate>
+		<ModDate>2011-09-24T03:15:29</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>Kilianstrasse 9</AddressLine1>

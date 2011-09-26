@@ -7,42 +7,42 @@
 		<BasedPaxCatID/>
 	</PaxCategory>
 	<PaxCategory ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Double-King bed</Description>
 		<RoomType>2</RoomType>
 		<BasedPaxCatID/>
 	</PaxCategory>
 	<PaxCategory ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Triple</Description>
 		<RoomType>3</RoomType>
 		<BasedPaxCatID/>
 	</PaxCategory>
 	<PaxCategory ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Quad</Description>
 		<RoomType>4</RoomType>
 		<BasedPaxCatID/>
 	</PaxCategory>
 	<PaxCategory ID="5">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Child</Description>
 		<RoomType>5</RoomType>
 		<BasedPaxCatID/>
 	</PaxCategory>
 	<PaxCategory ID="6">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>All</Description>
 		<RoomType>0</RoomType>
 		<BasedPaxCatID/>
 	</PaxCategory>
 	<PaxCategory ID="7">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Double-Twin beds</Description>
 		<RoomType>2</RoomType>

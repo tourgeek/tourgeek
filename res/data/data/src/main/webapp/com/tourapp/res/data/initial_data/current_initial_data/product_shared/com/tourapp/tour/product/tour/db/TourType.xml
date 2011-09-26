@@ -6,19 +6,19 @@
 		<Code>G</Code>
 	</TourType>
 	<TourType ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Header</Description>
 		<Code>U</Code>
 	</TourType>
 	<TourType ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Module</Description>
 		<Code>H</Code>
 	</TourType>
 	<TourType ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Thin</Description>
 		<Code>T</Code>

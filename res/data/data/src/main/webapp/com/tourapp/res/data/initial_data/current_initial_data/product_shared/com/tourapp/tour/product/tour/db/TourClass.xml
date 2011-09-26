@@ -43,7 +43,7 @@
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 	</TourClass>
 	<TourClass ID="2">
-		<LastChanged>2009-05-10T06:19:14</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>Base</ClassName>
 		<BasedClassID/>
@@ -86,7 +86,7 @@
 		<NonTourPricingTypeID>3</NonTourPricingTypeID>
 	</TourClass>
 	<TourClass ID="3">
-		<LastChanged>2009-05-10T06:19:42</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>Unscheduled</ClassName>
 		<BasedClassID>4</BasedClassID>
@@ -129,7 +129,7 @@
 		<NonTourPricingTypeID>4</NonTourPricingTypeID>
 	</TourClass>
 	<TourClass ID="4">
-		<LastChanged>2009-05-10T06:19:35</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>FIT</ClassName>
 		<BasedClassID>2</BasedClassID>

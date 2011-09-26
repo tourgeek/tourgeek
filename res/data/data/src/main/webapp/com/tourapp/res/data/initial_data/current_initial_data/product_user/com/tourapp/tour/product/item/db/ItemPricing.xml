@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ItemPricing ID="1">
-		<LastChanged>2010-04-02T16:01:27</LastChanged>
+		<LastChanged>2011-09-09T15:50:11</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2009-10-01</StartDate>
-		<EndDate>2010-09-30</EndDate>
+		<StartDate>2010-05-01</StartDate>
+		<EndDate>2011-04-30</EndDate>
 		<Cost>82.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -16,14 +16,14 @@
 		<PayAt>F</PayAt>
 	</ItemPricing>
 	<ItemPricing ID="2">
-		<LastChanged>2010-04-02T16:01:27</LastChanged>
+		<LastChanged>2011-09-09T15:50:11</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2010-10-01</StartDate>
-		<EndDate>2011-09-30</EndDate>
+		<StartDate>2011-05-01</StartDate>
+		<EndDate>2012-04-30</EndDate>
 		<Cost>84.00</Cost>
 		<ProductTermsID/>
 		<Price/>

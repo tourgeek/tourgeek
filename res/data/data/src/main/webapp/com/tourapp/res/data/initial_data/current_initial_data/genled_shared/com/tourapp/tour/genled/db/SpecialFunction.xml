@@ -6,37 +6,37 @@
 		<Description>Base the ratio on this</Description>
 	</SpecialFunction>
 	<SpecialFunction ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>@change</Name>
 		<Description>Use the change amount</Description>
 	</SpecialFunction>
 	<SpecialFunction ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>@end</Name>
 		<Description>Use the start amount</Description>
 	</SpecialFunction>
 	<SpecialFunction ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>@isstart</Name>
 		<Description>Use the start I/S amount</Description>
 	</SpecialFunction>
 	<SpecialFunction ID="5">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>@ratio</Name>
 		<Description>Include a ratio</Description>
 	</SpecialFunction>
 	<SpecialFunction ID="6">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>@start</Name>
 		<Description>Use the start amount</Description>
 	</SpecialFunction>
 	<SpecialFunction ID="7">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>@transfer:</Name>
 		<Description>Transfer the total from here</Description>

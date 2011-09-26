@@ -6,13 +6,13 @@
 		<Description>Underline</Description>
 	</NumberFormat>
 	<NumberFormat ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>font-weight: bold</Name>
 		<Description>Bold</Description>
 	</NumberFormat>
 	<NumberFormat ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:08</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>font-size: large</Name>
 		<Description>Large Text</Description>

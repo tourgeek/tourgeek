@@ -463,7 +463,7 @@
 		<TrxTypeID>177</TrxTypeID>
 		<TrxDate>2011-08-01T15:22:50</TrxDate>
 		<Amount>400.00</Amount>
-		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
+		<TrxEntry>2011-05-01T15:23:29</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>36</AcctDetailDistGroupID>
 	</AcctDetailDist>

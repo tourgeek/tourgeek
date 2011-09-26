@@ -1209,7 +1209,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2011-08-05T15:59:47</DetailEndDate>
+		<DetailEndDate>2011-10-08T15:30:00</DetailEndDate>
 		<GMTEndDate>2011-10-08T15:30:00</GMTEndDate>
 		<MealSummary><![CDATA[
 

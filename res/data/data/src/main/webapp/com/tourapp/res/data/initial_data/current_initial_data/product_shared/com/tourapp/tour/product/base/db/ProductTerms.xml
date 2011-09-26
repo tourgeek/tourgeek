@@ -8,7 +8,7 @@
 		<CommissionRate>0.0000</CommissionRate>
 	</ProductTerms>
 	<ProductTerms ID="2">
-		<LastChanged>2006-07-06T01:47:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Standard commission</Description>
 		<TaxRate>0.0000</TaxRate>
@@ -16,7 +16,7 @@
 		<CommissionRate>0.1000</CommissionRate>
 	</ProductTerms>
 	<ProductTerms ID="3">
-		<LastChanged>2008-08-02T00:38:55</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>5% Tax 2% Svc Std Cm</Description>
 		<TaxRate>0.0500</TaxRate>

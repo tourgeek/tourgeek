@@ -6,19 +6,19 @@
 		<PricingCodes>1</PricingCodes>
 	</PricingType>
 	<PricingType ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Use product pricing</Description>
 		<PricingCodes>2</PricingCodes>
 	</PricingType>
 	<PricingType ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Markup product costs</Description>
 		<PricingCodes>4</PricingCodes>
 	</PricingType>
 	<PricingType ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Use product pricing then costs</Description>
 		<PricingCodes>6</PricingCodes>

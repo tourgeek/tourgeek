@@ -8,7 +8,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>2</RequestID>
 		<BrochureID>1</BrochureID>
@@ -16,7 +16,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>2</RequestID>
 		<BrochureID>6</BrochureID>
@@ -24,7 +24,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>1</RequestID>
 		<BrochureID>1</BrochureID>
@@ -32,7 +32,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="5">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>1</RequestID>
 		<BrochureID>6</BrochureID>
@@ -40,7 +40,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="6">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>3</RequestID>
 		<BrochureID>1</BrochureID>
@@ -48,7 +48,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="7">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>3</RequestID>
 		<BrochureID>6</BrochureID>
@@ -56,7 +56,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="8">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>4</RequestID>
 		<BrochureID>1</BrochureID>
@@ -64,7 +64,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="9">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>4</RequestID>
 		<BrochureID>6</BrochureID>
@@ -72,7 +72,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="10">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>5</RequestID>
 		<BrochureID>1</BrochureID>
@@ -80,7 +80,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="11">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID>5</RequestID>
 		<BrochureID>6</BrochureID>
@@ -88,7 +88,7 @@
 		<BrochureDesc/>
 	</RequestDetail>
 	<RequestDetail ID="12">
-		<LastChanged>2010-12-01T15:14:51</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<RequestID/>
 		<BrochureID>1</BrochureID>

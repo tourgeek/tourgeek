@@ -6,19 +6,19 @@
 		<Code>I</Code>
 	</PrepayType>
 	<PrepayType ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Select prepay</Description>
 		<Code>P</Code>
 	</PrepayType>
 	<PrepayType ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Both inv and pr</Description>
 		<Code>B</Code>
 	</PrepayType>
 	<PrepayType ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Estimate and pp</Description>
 		<Code>E</Code>

@@ -26,7 +26,7 @@
 		<Destination/>
 	</Script>
 	<Script ID="4">
-		<LastChanged>2011-03-10T11:05:20</LastChanged>
+		<LastChanged>2011-09-26T07:34:32</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Restore files for test and demo</Name>
 		<ParentFolderID>0</ParentFolderID>
@@ -34,8 +34,8 @@
 		<Comment>Run only under jdbc - Ignore errors</Comment>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Mar 10 11:05:18 PST 2011
-archiveFolder=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
+#Mon Sep 26 07:34:30 PDT 2011
+archiveFolder=/home/don/workspace/workspace/tourapp/res/data/test/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
 type=USER_DATA
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
@@ -3328,7 +3328,7 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Destination/>
 	</Script>
 	<Script ID="265">
-		<LastChanged>2011-03-10T11:58:59</LastChanged>
+		<LastChanged>2011-09-26T07:36:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup all data</Name>
 		<ParentFolderID>256</ParentFolderID>
@@ -3336,8 +3336,8 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Comment>Run from regular tourapp (not direct)</Comment>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Mar 10 11:58:53 PST 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data
+#Mon Sep 26 07:35:54 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
 local=Jdbc
 standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
 table=Jdbc
@@ -3350,7 +3350,7 @@ mode=export
 		<Destination/>
 	</Script>
 	<Script ID="280">
-		<LastChanged>2011-03-10T11:08:29</LastChanged>
+		<LastChanged>2011-09-26T07:33:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export and fix demo data from current</Name>
 		<ParentFolderID>256</ParentFolderID>
@@ -3358,8 +3358,8 @@ mode=export
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Mar 10 11:08:24 PST 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/src/main/webapp/com/tourapp/res/data/test_data
+#Mon Sep 26 07:33:11 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/test/src/main/webapp/com/tourapp/res/data/test_data
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
 		<Command/>

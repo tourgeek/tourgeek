@@ -6,31 +6,31 @@
 		<SystemDesc>General Ledger</SystemDesc>
 	</TrxSystem>
 	<TrxSystem ID="2">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemCode>assetdr</SystemCode>
 		<SystemDesc>Asset Debt</SystemDesc>
 	</TrxSystem>
 	<TrxSystem ID="3">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemCode>acctrec</SystemCode>
 		<SystemDesc>Accounts Receivable</SystemDesc>
 	</TrxSystem>
 	<TrxSystem ID="4">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemCode>acctpay</SystemCode>
 		<SystemDesc>Accounts Payable</SystemDesc>
 	</TrxSystem>
 	<TrxSystem ID="5">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemCode>air</SystemCode>
 		<SystemDesc>Air</SystemDesc>
 	</TrxSystem>
 	<TrxSystem ID="6">
-		<LastChanged/>
+		<LastChanged>2011-08-05T16:00:07</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemCode>payroll</SystemCode>
 		<SystemDesc>Payroll</SystemDesc>

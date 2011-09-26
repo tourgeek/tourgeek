@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<MessageDetail ID="1">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -17,12 +17,12 @@
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="2">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Tue Nov 26 00:08:49 PST 2002
 destinationAddress=HotelAvailRQ
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>6</MessageTransportID>
@@ -37,7 +37,7 @@ destinationAddress=HotelAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="3">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -54,14 +54,14 @@ destinationAddress=HotelAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="5">
-		<LastChanged>2011-03-11T10:58:37</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Fri Mar 11 10:58:34 PST 2011
 destinationMessage=/ws
 sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationAddress=http\://www.tourgeek.com\:8080
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
 		<MessageTransportID>11</MessageTransportID>
@@ -76,13 +76,13 @@ destinationAddress=http\://www.tourgeek.com\:8080
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="6">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sat Dec 28 01:43:44 PST 2002
 sourceAddress=don@donandann.com
 XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -97,10 +97,10 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="10">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>Manual=true
-# This will cause the email request to be sent automatically</Properties>
+		<Properties><![CDATA[Manual=true
+# This will cause the email request to be sent automatically]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -115,14 +115,14 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="11">
-		<LastChanged>2011-03-11T10:57:27</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Fri Mar 11 10:57:24 PST 2011
 destinationMessage=/ws
 sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationAddress=http\://www.tourgeek.com\:8080
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
 		<MessageTransportID>11</MessageTransportID>
@@ -137,9 +137,9 @@ destinationAddress=http\://www.tourgeek.com\:8080
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="12">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Jun 03 15:43:27 PDT 2009
 messageInCode=OTA_HotelRateAvailRQ
 screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
@@ -148,7 +148,7 @@ internalMessageClass=com.tourapp.tour.message.hotel.request.HotelRateAvailReques
 subject=Hotel rate and availability request
 XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 responseMessageCode=OTA_HotelRateAvailRQUpdate
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>31</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -163,10 +163,10 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="15">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>Manual=true
-# This will cause the email request to be sent automatically</Properties>
+		<Properties><![CDATA[Manual=true
+# This will cause the email request to be sent automatically]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -181,10 +181,10 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="16">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>Manual=true
-# This will cause the email request to be sent automatically</Properties>
+		<Properties><![CDATA[Manual=true
+# This will cause the email request to be sent automatically]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -199,7 +199,7 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="17">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -216,9 +216,9 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="18">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun May 31 06:35:41 PDT 2009
 Manual=true
 email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
@@ -226,7 +226,7 @@ internalMessageClass=com.tourapp.tour.message.hotel.request.HotelBookingRequest
 screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 responseMessageCode=OTA_HotelRateAvailRQUpdate
 local.messageInCode=OTA_HotelRateAvailRQ
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>31</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -241,10 +241,10 @@ local.messageInCode=OTA_HotelRateAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="20">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage
-</Properties>
+		<Properties><![CDATA[internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>6</MessageTransportID>
@@ -259,7 +259,7 @@ local.messageInCode=OTA_HotelRateAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="21">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -276,12 +276,12 @@ local.messageInCode=OTA_HotelRateAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="22">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Jun 03 11:37:59 PDT 2009
 Manual=true
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -296,12 +296,12 @@ Manual=true
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="23">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Jun 03 11:37:42 PDT 2009
 Manual=true
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -316,14 +316,14 @@ Manual=true
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="24">
-		<LastChanged>2011-03-11T10:58:10</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Fri Mar 11 10:58:02 PST 2011
 destinationMessage=/ws
 sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationAddress=http\://www.tourgeek.com\:8080
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
 		<MessageTransportID>11</MessageTransportID>
@@ -338,12 +338,12 @@ destinationAddress=http\://www.tourgeek.com\:8080
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="25">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Jul 19 02:17:15 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>12</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -358,12 +358,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="26">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Jul 19 02:18:33 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>7</ContactTypeID>
 		<PersonID>4</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -378,7 +378,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="27">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage</Properties>
 		<ContactTypeID>1</ContactTypeID>
@@ -395,12 +395,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="28">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Aug 20 05:48:59 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>10</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -415,12 +415,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="29">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Aug 20 05:51:34 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>8</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -435,12 +435,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="30">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Aug 20 05:52:29 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>8</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -455,12 +455,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="31">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Aug 20 05:53:01 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>9</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -475,12 +475,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="32">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Aug 20 05:53:36 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>6</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -495,12 +495,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="33">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Aug 20 05:54:04 PDT 2006
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>6</ContactTypeID>
 		<PersonID>2</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -515,12 +515,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="34">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Apr 16 12:54:33 PDT 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>11</ContactTypeID>
 		<PersonID>5</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -535,12 +535,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="35">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Mon Apr 21 05:59:28 PDT 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -555,11 +555,11 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="36">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Mon Apr 21 05:59:09 PDT 2008
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>6</MessageTransportID>
@@ -574,12 +574,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="37">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Mon Apr 21 06:01:40 PDT 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -594,14 +594,14 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="39">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Nov 01 07:08:36 PST 2009
 destinationMessage=/xmlws
 destinationAddress=http\://www.tourgeek.com
 messageVersionID=9
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>51</PersonID>
 		<MessageTransportID>16</MessageTransportID>
@@ -616,12 +616,12 @@ messageVersionID=9
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="40">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Fri Oct 03 01:37:05 PDT 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>51</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -636,12 +636,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="41">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Fri Oct 03 01:38:28 PDT 2008
 messageVersionID=9
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>51</PersonID>
 		<MessageTransportID>11</MessageTransportID>
@@ -656,14 +656,14 @@ messageVersionID=9
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="42">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Nov 01 07:08:53 PST 2009
 destinationMessage=/xmlws
 destinationAddress=http\://www.tourgeek.com
 messageVersionID=9
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>51</PersonID>
 		<MessageTransportID>16</MessageTransportID>
@@ -678,12 +678,12 @@ messageVersionID=9
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="43">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:02</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Fri Oct 03 02:01:16 PDT 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>51</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -698,12 +698,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="44">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Nov 19 13:13:22 PST 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>11</ContactTypeID>
 		<PersonID>6</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -718,12 +718,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="45">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Nov 19 13:13:48 PST 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>11</ContactTypeID>
 		<PersonID>6</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -738,12 +738,12 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="46">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Wed Nov 19 13:29:49 PST 2008
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>11</ContactTypeID>
 		<PersonID>5</PersonID>
 		<MessageTransportID>10</MessageTransportID>
@@ -758,7 +758,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="47">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -775,13 +775,13 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="48">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Tue Jun 02 13:54:46 PDT 2009
 screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
-</Properties>
+]]></Properties>
 		<ContactTypeID>3</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -796,13 +796,13 @@ XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="49">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun May 31 06:30:52 PDT 2009
 screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
 XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
-</Properties>
+]]></Properties>
 		<ContactTypeID>3</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -817,14 +817,14 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="50">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Tue Jun 02 13:55:12 PDT 2009
 screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
 internalMessageClass=com.tourapp.tour.message.hotel.request.HotelBookingRequest
 email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
-</Properties>
+]]></Properties>
 		<ContactTypeID>3</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -839,11 +839,11 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="51">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Tue Jun 02 22:51:38 PDT 2009
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>31</PersonID>
 		<MessageTransportID>2</MessageTransportID>
@@ -858,12 +858,12 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="52">
-		<LastChanged>2010-04-02T16:00:49</LastChanged>
+		<LastChanged>2011-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Nov 01 07:00:53 PST 2009
 dataStatus=5
-</Properties>
+]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
 		<MessageTransportID>10</MessageTransportID>

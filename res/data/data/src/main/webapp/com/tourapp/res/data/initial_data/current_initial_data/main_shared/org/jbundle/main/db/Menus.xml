@@ -2965,7 +2965,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1183">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2011-09-05T23:40:20</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Free Software</Name>
 		<ParentFolderID>789</ParentFolderID>
@@ -2978,21 +2978,21 @@
 		<Params/>
 		<IconResource/>
 		<Keywords/>
-		<XmlData>&lt;center&gt;&lt;h2&gt;Welcome to tourbean.com's download center&lt;/h2&gt;&lt;/center&gt;
-&lt;center&gt;Where you can get some free Java software and an (optional) e-nuggie.&lt;br/&gt;&lt;hr/&gt;&lt;/center&gt;
-&lt;items columns=3&gt;
-&lt;td align=left valign=top&gt;
-    &lt;hr/&gt;
-    &lt;a href="&lt;link/&gt;"&gt;
-        &lt;img src="&lt;icon/&gt;" ALT="&lt;menutitle/&gt;" width="24" height="24" border="0"  align="center"/&gt;
-    &lt;/A&gt;
-    &lt;A HREF="&lt;link/&gt;"&gt;
-        &lt;menutitle/&gt;
-    &lt;/a&gt;
-&lt;br/&gt;&lt;javalogo&gt;&lt;img src="images/buttons/java.gif" width=16 height=15 border=0&gt;&amp;nbsp;&lt;/javalogo&gt;&lt;span style="font-size: 10pt"&gt;&lt;menudesc/&gt;&lt;/span&gt;
-&lt;/td&gt;
-&lt;/items&gt;
-Thanks for visiting!</XmlData>
+		<XmlData><![CDATA[<center><h2>Welcome to tourbean.com's download center</h2></center>
+<center>Where you can get some free Java software and an (optional) e-nuggie.<br/><hr/></center>
+<items columns="3">
+<td align="left" valign="top">
+    <hr/>
+    <a href="${link}">
+        <img src="${icon}" alt="${menutitle}" width="24" height="24" border="0"  align="center"/>
+    </a>
+    <a href="${link}">
+        ${menutitle}
+    </a>
+<br/>${javalogo}<img src="images/buttons/java.gif" width="16" height="15" border="0">&nbsp;</javalogo><span style="font-size: 10pt">${menudesc}</span>
+</td>
+${items}
+Thanks for visiting!]]></XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1184">
@@ -3263,23 +3263,23 @@ Thanks for visiting!</XmlData>
 		<Name>e-nuggie</Name>
 		<ParentFolderID>1,183</ParentFolderID>
 		<Sequence>35</Sequence>
-		<Comment>&lt;html&gt;
+		<Comment><![CDATA[<html>
   
-&lt;head&gt;
-&lt;META http-equiv="Content-Type" content="text/html; charset=UTF-8"/&gt;
-&lt;/head&gt;
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
 
   
-&lt;body&gt;
-    Be sure to follow the on screen instructions carefully.&lt;br&gt;
+<body>
+    Be sure to follow the on screen instructions carefully.<br>
     
-&lt;b&gt;&lt;i&gt;Use at your own risk!&lt;/i&gt;&lt;/b&gt;
-&lt;br&gt;
+<b><i>Use at your own risk!</i></b>
+<br>
     (125K)
-  &lt;/body&gt;
+  </body>
 
-&lt;/html&gt;
-</Comment>
+</html>
+]]></Comment>
 		<Code/>
 		<Type>link</Type>
 		<AutoDesc>Y</AutoDesc>
@@ -3572,7 +3572,7 @@ Thanks for visiting!</XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1225">
-		<LastChanged>2010-11-16T13:04:33</LastChanged>
+		<LastChanged>2011-08-31T21:53:17</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourdemo.com - Tour Operator Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -3583,8 +3583,8 @@ Thanks for visiting!</XmlData>
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourdemo.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourdemo/home.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourdemo/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -4443,7 +4443,7 @@ Thanks for visiting!</XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1331">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2011-08-31T21:47:11</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Don and Ann's Web Site</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -4454,30 +4454,30 @@ Thanks for visiting!</XmlData>
 		<AutoDesc>Y</AutoDesc>
 		<Program>donandann.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/donandann/home.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/donandann/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
-		<XmlData>&lt;html&gt;
-&lt;span style="font-size: 20pt"&gt;&lt;center&gt;Welcome to Don and Ann's Home Page&lt;/center&gt;&lt;/span&gt;
-&lt;items columns="3"&gt;
-&lt;td align="left" valign="top"&gt;
-    &lt;hr&gt;
-    &lt;a href="&lt;link/&gt;"&gt;
-        &lt;img src="&lt;icon/&gt;" ALT="&lt;menutitle/&gt;" width="24" height="24" border="0"&gt;
-    &lt;/A&gt;
-    &lt;A HREF="&lt;link/&gt;"&gt;
-        &lt;menutitle/&gt;
-    &lt;/a&gt;
-&lt;br&gt;&lt;javalogo&gt;&lt;img src="images/buttons/java.gif" width="16" height="16" border="0"&gt;&amp;nbsp;&lt;/javalogo&gt;&lt;span style="font-size: 10pt"&gt;&lt;menudesc/&gt;&lt;/span&gt;
-&lt;/td&gt;
-&lt;/items&gt;
-&lt;hr&gt;
-&lt;table align="center"&gt;&lt;tr&gt;&lt;td&gt;
-&lt;span style="font-size: 10pt"&gt;&lt;center&gt;&lt;/center&gt;&lt;/span&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/html&gt;</XmlData>
+		<XmlData><![CDATA[<html>
+<span style="font-size: 20pt"><center>Welcome to Don and Ann's Home Page</center></span>
+<items columns="3">
+<td align="left" valign="top">
+    <hr>
+    <a href="<link/>">
+        <img src="<icon/>" ALT="<menutitle/>" width="24" height="24" border="0">
+    </A>
+    <A HREF="<link/>">
+        <menutitle/>
+    </a>
+<br><javalogo><img src="images/buttons/java.gif" width="16" height="16" border="0">&nbsp;</javalogo><span style="font-size: 10pt"><menudesc/></span>
+</td>
+</items>
+<hr>
+<table align="center"><tr><td>
+<span style="font-size: 10pt"><center></center></span>
+</td></tr></table>
+</html>]]></XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1332">
@@ -9691,7 +9691,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1704">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-08-31T21:53:47</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Demo Site</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -9702,8 +9702,8 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>demosite</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourgeek/demohome.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourgeek/demohome.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10068,7 +10068,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1736">
-		<LastChanged>2010-11-16T06:13:31</LastChanged>
+		<LastChanged>2011-08-31T21:52:19</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourapplication.com - Tour Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10079,8 +10079,8 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourapplication.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourapp/home.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10235,7 +10235,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1746">
-		<LastChanged>2010-11-16T06:13:08</LastChanged>
+		<LastChanged>2011-08-31T21:51:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourapp.com - Tour Operator Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10246,12 +10246,12 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourapp.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="stylesheet-path">docs/styles/xsl/ajax/base/</entry>
-<entry key="navmenus">IconsOnly</entry>
-<entry key="xml">docs/com/tourapp/home.xml</entry>
-<entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
-<entry key="stylesheet">menus-tourgeek</entry>
+   <comment>Field properties</comment>
+   <entry key="stylesheet-path">org/jbundle/res/docs/styles/xsl/ajax/base/</entry>
+   <entry key="navmenus">IconsOnly</entry>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/home.xml</entry>
+   <entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
+   <entry key="stylesheet">menus-tourgeek</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10259,7 +10259,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1747">
-		<LastChanged>2010-11-16T06:13:26</LastChanged>
+		<LastChanged>2011-08-31T21:51:56</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourvisualizer.com - Tour Operator Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10270,8 +10270,8 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourvisualizer.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourvisualizer/home.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourvisualizer/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10279,7 +10279,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1748">
-		<LastChanged>2010-11-16T06:13:39</LastChanged>
+		<LastChanged>2011-08-31T21:52:35</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourmarketplace.com - Create your own tour</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10290,8 +10290,8 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourmarketplace.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourmarketplace/home.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourmarketplace/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10299,7 +10299,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1749">
-		<LastChanged>2010-11-16T06:13:48</LastChanged>
+		<LastChanged>2011-08-31T21:52:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourstudio.com - Destination Services Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10310,8 +10310,8 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourstudio.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourstudio/home.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourstudio/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10319,7 +10319,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1750">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-08-31T21:46:35</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourgeek.com Outbound Tour Operator Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10330,12 +10330,12 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>tourgeek.com</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="stylesheet-path">docs/styles/xsl/ajax/base/</entry>
-<entry key="navmenus">IconsOnly</entry>
-<entry key="xml">docs/com/tourgeek/home.xml</entry>
-<entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
-<entry key="stylesheet">menus-tourgeek</entry>
+   <comment>Field properties</comment>
+   <entry key="stylesheet-path">org/jbundle/res/docs/styles/xsl/ajax/base/</entry>
+   <entry key="navmenus">IconsOnly</entry>
+   <entry key="xml">com/tourapp/res/docs/com/tourgeek/home.xml</entry>
+   <entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
+   <entry key="stylesheet">menus-tourgeek</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10414,7 +10414,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1758">
-		<LastChanged>2010-11-10T11:29:42</LastChanged>
+		<LastChanged>2011-08-31T21:53:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Demo Start Screen</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -10425,8 +10425,8 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<AutoDesc>Y</AutoDesc>
 		<Program>demostart</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourgeek/demostart.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourgeek/demostart.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -11048,7 +11048,7 @@ Setting up and running your own Tour Operator demo site is quick and easy.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1823">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-08-31T23:02:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tourgeek.com video introduction</Name>
 		<ParentFolderID>1,750</ParentFolderID>
@@ -11056,7 +11056,7 @@ Setting up and running your own Tour Operator demo site is quick and easy.
 		<Comment type="XML"><html>
 <body>
 <a href="?menu=quickintro">
-<img height="82" src="/images/com/tourgeek/youtube-link.gif" width="138"/>
+<img height="82" src="com/tourapp/res/images/com/tourgeek/youtube-link.gif" width="138"/>
 </a><br/>
 A tourgeek.com Outbound Tour Operator software demonstration in under two minutes!
 </body>
@@ -11075,7 +11075,7 @@ A tourgeek.com Outbound Tour Operator software demonstration in under two minute
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1824">
-		<LastChanged>2010-10-21T15:16:41</LastChanged>
+		<LastChanged>2011-08-31T22:26:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Register</Name>
 		<ParentFolderID>1,750</ParentFolderID>
@@ -11090,8 +11090,8 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<AutoDesc>Y</AutoDesc>
 		<Program>register</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourgeek/registration.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourgeek/registration.xml</entry>
 </properties></Params>
 		<IconResource>Edit</IconResource>
 		<Keywords/>
@@ -11116,7 +11116,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1835">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2011-08-31T22:26:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>About us</Name>
 		<ParentFolderID>1,750</ParentFolderID>
@@ -11125,7 +11125,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<Code/>
 		<Type>xml</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>docs/com/tourgeek/aboutus.xml</Program>
+		<Program>com/tourapp/res/docs/com/tourgeek/aboutus.xml</Program>
 		<Params/>
 		<IconResource>Find</IconResource>
 		<Keywords/>
@@ -11133,7 +11133,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1837">
-		<LastChanged>2010-11-13T05:37:48</LastChanged>
+		<LastChanged>2011-08-31T22:25:59</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Features</Name>
 		<ParentFolderID>1,750</ParentFolderID>
@@ -11146,7 +11146,7 @@ System highlights and the full user's manual.
 		<Code/>
 		<Type>xml</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>docs/com/tourgeek/features.xml</Program>
+		<Program>com/tourapp/res/docs/com/tourgeek/features.xml</Program>
 		<Params/>
 		<IconResource>Zoom</IconResource>
 		<Keywords/>
@@ -11154,7 +11154,7 @@ System highlights and the full user's manual.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1838">
-		<LastChanged>2011-01-15T16:58:10</LastChanged>
+		<LastChanged>2011-08-31T21:56:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Demo site template</Name>
 		<ParentFolderID>1,757</ParentFolderID>
@@ -11165,14 +11165,13 @@ System highlights and the full user's manual.
 		<AutoDesc>Y</AutoDesc>
 		<Program>demosite</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="loadInitialData">true</entry>
-<entry key="dbPrefix">don_</entry>
-<entry key="archiveFolder">com/tourapp/data/test_data/current_test_data</entry>
-<entry key="xslTemplate">docs/styles/xsl/program/fixdemotemplate.xsl</entry>
-<entry key="mainUser">don@donandann.com</entry>
-</properties>
-</Params>
+   <comment>Field properties</comment>
+   <entry key="loadInitialData">true</entry>
+   <entry key="dbPrefix">don_</entry>
+   <entry key="archiveFolder">com/tourapp/data/test_data/current_test_data</entry>
+   <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
+   <entry key="mainUser">don@donandann.com</entry>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -11414,7 +11413,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1875">
-		<LastChanged>2010-11-09T17:34:20</LastChanged>
+		<LastChanged>2011-08-31T21:54:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tour Operator Site</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -11425,8 +11424,8 @@ Note: This video has an audio narration.
 		<AutoDesc>Y</AutoDesc>
 		<Program>site</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourgeek/sitehome.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourgeek/sitehome.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -11434,7 +11433,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1876">
-		<LastChanged>2010-11-10T11:30:09</LastChanged>
+		<LastChanged>2011-08-31T21:54:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tour Operator Start Screen</Name>
 		<ParentFolderID>1,745</ParentFolderID>
@@ -11445,8 +11444,8 @@ Note: This video has an audio narration.
 		<AutoDesc>Y</AutoDesc>
 		<Program>sitestart</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="xml">docs/com/tourgeek/sitestart.xml</entry>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourgeek/sitestart.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -11579,7 +11578,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1883">
-		<LastChanged>2011-01-15T16:57:53</LastChanged>
+		<LastChanged>2011-08-31T22:43:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Site template</Name>
 		<ParentFolderID>1,877</ParentFolderID>
@@ -11590,14 +11589,13 @@ Note: This video has an audio narration.
 		<AutoDesc>Y</AutoDesc>
 		<Program>site</Program>
 		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="loadInitialData">true</entry>
-<entry key="dbPrefix">don_</entry>
-<entry key="archiveFolder">com/tourapp/data/site_data/current_site_data</entry>
-<entry key="xslTemplate">docs/styles/xsl/program/fixsitetemplate.xsl</entry>
-<entry key="mainUser">don@donandann.com</entry>
-</properties>
-</Params>
+   <comment>Field properties</comment>
+   <entry key="loadInitialData">true</entry>
+   <entry key="dbPrefix">don_</entry>
+   <entry key="archiveFolder">com/tourapp/data/site_data/current_site_data</entry>
+   <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixsitetemplate.xsl</entry>
+   <entry key="mainUser">don@donandann.com</entry>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12042,8 +12040,7 @@ please click the following link:<br/>
 <entry key="user"/>
 <entry key="webStart">thick</entry>
 <entry key="menu">dev.tourapp.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12065,8 +12062,7 @@ please click the following link:<br/>
 <entry key="user"/>
 <entry key="webStart">thin</entry>
 <entry key="menu">Thin</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12089,8 +12085,7 @@ please click the following link:<br/>
 <entry key="datatype">jnlpapplet</entry>
 <entry key="webStart">thick</entry>
 <entry key="menu">dev.tourapp.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12118,8 +12113,7 @@ please click the following link:<br/>
 <entry key="splash"/>
 <entry key="jnlpextensions">docs/jnlp/thin,docs/jnlp/thintest,docs/jnlp/thintour</entry>
 <entry key="screen">org.jbundle.thin.base.screen.menu.JRemoteMenuScreen</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12145,8 +12139,7 @@ please click the following link:<br/>
 <entry key="backgroundcolor">#eeeeff</entry>
 <entry key="jbundleversion"/>
 <entry key="menu">dev.tourapp.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12168,8 +12161,7 @@ please click the following link:<br/>
 <entry key="user"/>
 <entry key="webStart">app</entry>
 <entry key="menu">dev.tourapp.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12189,8 +12181,7 @@ please click the following link:<br/>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="jnlpjars">/bio/classes/bio</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12211,8 +12202,7 @@ please click the following link:<br/>
 <comment>Field properties</comment>
 <entry key="screen">com.tourapp.thin.app.request.PopupMainScreen</entry>
 <entry key="webStart">thin</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12238,8 +12228,7 @@ please click the following link:<br/>
 <entry key="jnlpextensions">docs/jnlp/thin,docs/jnlp/thintest,docs/jnlp/thick,docs/jnlp/resource,docs/jnlp/thintour,docs/jnlp/tour,docs/jnlp/thicktest</entry>
 <entry key="backgroundcolor">#eeeeff</entry>
 <entry key="jbundleversion"/>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12261,8 +12250,7 @@ please click the following link:<br/>
 <entry key="user"/>
 <entry key="screen">com.tourapp.thin.app.booking.entry.TourAppScreen</entry>
 <entry key="webStart">thin</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12285,8 +12273,7 @@ please click the following link:<br/>
 <entry key="datatype">jnlp</entry>
 <entry key="webStart">thick</entry>
 <entry key="menu">dev.tourapp.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12342,8 +12329,7 @@ please click the following link:<br/>
 <entry key="record">org.jbundle.app.contact.db.Contact</entry>
 <entry key="user"/>
 <entry key="webStart">app</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -12361,6 +12347,31 @@ please click the following link:<br/>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.app.contact.db.Contact</Program>
 		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1925">
+		<LastChanged>2011-09-16T15:09:11</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Don's Demo site</Name>
+		<ParentFolderID>1,757</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment>Demo test site</Comment>
+		<Code>don.demo.tourgeek.com</Code>
+		<Type>menu</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>demosite</Program>
+		<Params type="XML"><properties>
+<comment>Field properties</comment>
+<entry key="loadInitialData">true</entry>
+<entry key="dbPrefix">don_</entry>
+<entry key="archiveFolder">com/tourapp/data/test_data/current_test_data</entry>
+<entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
+<entry key="mainUser">don@fred.com</entry>
+</properties>
+</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
