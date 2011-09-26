@@ -20,7 +20,7 @@
         <directory>src/main/webapp</directory>
         <filtering>false</filtering>
         <includes>
-          <include>com/tourapp/res/data/initial_data/**</include>
+          <include>com/tourapp/res/data/site_data/**</include>
         </includes>
         <excludes>
           <exclude>com/tourapp/res/data/test_data/raw_test_data/**</exclude>
