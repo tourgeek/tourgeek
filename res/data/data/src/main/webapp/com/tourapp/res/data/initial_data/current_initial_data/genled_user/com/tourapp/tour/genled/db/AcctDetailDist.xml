@@ -234,13 +234,13 @@
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="19">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2011-02-26T01:42:59</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>13</AcctDetailID>
 		<TrxID>13</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-04-01T00:00:00</TrxDate>
+		<TrxDate>2011-02-26T01:42:54</TrxDate>
 		<Amount>1,500.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
@@ -463,7 +463,7 @@
 		<TrxTypeID>177</TrxTypeID>
 		<TrxDate>2011-08-01T15:22:50</TrxDate>
 		<Amount>400.00</Amount>
-		<TrxEntry>2011-05-01T15:23:29</TrxEntry>
+		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>36</AcctDetailDistGroupID>
 	</AcctDetailDist>
@@ -507,7 +507,7 @@
 		<AcctDetailDistGroupID>37</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="40">
-		<LastChanged>2011-05-01T15:23:34</LastChanged>
+		<LastChanged>2011-02-12T05:00:57</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>32</AcctDetailID>
 		<TrxID>5</TrxID>
@@ -572,7 +572,7 @@
 		<AcctDetailDistGroupID>43</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="45">
-		<LastChanged>2011-05-01T15:23:36</LastChanged>
+		<LastChanged>2011-01-25T06:19:00</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>34</AcctDetailID>
 		<TrxID>2</TrxID>

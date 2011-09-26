@@ -45632,7 +45632,7 @@
 		<Hidden/>
 	</FieldData>
 	<FieldData ID="2292">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2011-08-05T15:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>HotelsRateType</FieldName>
 		<FieldClass>StringField</FieldClass>
