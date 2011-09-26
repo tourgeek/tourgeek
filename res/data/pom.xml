@@ -15,5 +15,6 @@
   <modules>
     <module>data</module>
     <module>test</module>
+    <module>site</module>
   </modules>
 </project>
