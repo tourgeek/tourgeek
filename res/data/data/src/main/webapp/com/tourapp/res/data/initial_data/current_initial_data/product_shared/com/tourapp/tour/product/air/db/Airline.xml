@@ -1860,7 +1860,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="469">
-		<LastChanged>2011-08-05T15:59:54</LastChanged>
+		<LastChanged>2011-07-18T23:17:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>LEAD AIR-JET SERVICES</Description>
 		<ShortDesc>LEAD AIR-JET SER</ShortDesc>
@@ -2260,7 +2260,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="489">
-		<LastChanged>2009-02-12T14:49:26</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>AIR GABON</Description>
 		<ShortDesc>AIR GABON</ShortDesc>
@@ -4200,7 +4200,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="586">
-		<LastChanged>2011-04-25T11:12:13</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>B.A.S.E. BUSINESS AIRLINES</Description>
 		<ShortDesc>B.A.S.E. BUSINES</ShortDesc>
@@ -4540,7 +4540,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="603">
-		<LastChanged>2010-10-17T07:30:27</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>AERO CONTINENTE</Description>
 		<ShortDesc>AERO CONTINENTE</ShortDesc>
@@ -8340,7 +8340,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="793">
-		<LastChanged>2011-08-05T15:59:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>EURO DIRECT BELGIE</Description>
 		<ShortDesc>EURO DIRECT BELG</ShortDesc>
@@ -9340,7 +9340,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="843">
-		<LastChanged>2011-08-05T15:59:54</LastChanged>
+		<LastChanged>2011-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>NATIONAIR CANADA</Description>
 		<ShortDesc>NATIONAIR CANADA</ShortDesc>
@@ -11460,7 +11460,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="949">
-		<LastChanged>2011-08-05T15:59:54</LastChanged>
+		<LastChanged>2009-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>CORSAIR</Description>
 		<ShortDesc>CORSAIR</ShortDesc>
