@@ -2645,7 +2645,7 @@ Auto-distributions are very simple.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="105">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-05T15:59:36</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AutoDistDetail</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
