@@ -47,7 +47,19 @@
                   </artifactItem>
                   <artifactItem>
                     <groupId>com.tourapp.res</groupId>
-                    <artifactId>com.tourapp.res.data</artifactId>
+                    <artifactId>com.tourapp.res.data.test_data</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                  </artifactItem>
+                  <artifactItem>
+                    <groupId>com.tourapp.res</groupId>
+                    <artifactId>com.tourapp.res.data.initial_data</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                  </artifactItem>
+                  <artifactItem>
+                    <groupId>com.tourapp.res</groupId>
+                    <artifactId>com.tourapp.res.data.site_data</artifactId>
                     <version>${project.version}</version>
                     <type>jar</type>
                   </artifactItem>
