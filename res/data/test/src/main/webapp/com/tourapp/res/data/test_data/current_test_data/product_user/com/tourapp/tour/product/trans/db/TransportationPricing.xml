@@ -6,8 +6,8 @@
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2010-05-01</StartDate>
-		<EndDate>2012-04-30</EndDate>
+		<StartDate>2010-06-01</StartDate>
+		<EndDate>2012-05-31</EndDate>
 		<Cost>25,000.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -24,8 +24,8 @@
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>3</ClassID>
-		<StartDate>2010-05-01</StartDate>
-		<EndDate>2012-04-30</EndDate>
+		<StartDate>2010-06-01</StartDate>
+		<EndDate>2012-05-31</EndDate>
 		<Cost>20,000.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -42,8 +42,8 @@
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2010-05-01</StartDate>
-		<EndDate>2012-04-30</EndDate>
+		<StartDate>2010-06-01</StartDate>
+		<EndDate>2012-05-31</EndDate>
 		<Cost>52,000.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -60,8 +60,8 @@
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2010-05-01</StartDate>
-		<EndDate>2012-04-30</EndDate>
+		<StartDate>2010-06-01</StartDate>
+		<EndDate>2012-05-31</EndDate>
 		<Cost>25,000.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
