@@ -11168,7 +11168,7 @@ System highlights and the full user's manual.
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
    <entry key="dbPrefix">don_</entry>
-   <entry key="archiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
+   <entry key="userArchiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
 </properties></Params>
@@ -12367,7 +12367,7 @@ please click the following link:<br/>
 <comment>Field properties</comment>
 <entry key="loadInitialData">true</entry>
 <entry key="dbPrefix">don_</entry>
-<entry key="archiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
+<entry key="userArchiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
 <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
 <entry key="mainUser">don@fred.com</entry>
 </properties>
