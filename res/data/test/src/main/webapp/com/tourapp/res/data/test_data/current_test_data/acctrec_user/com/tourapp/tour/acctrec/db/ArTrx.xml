@@ -3,7 +3,7 @@
 		<LastChanged>2011-04-05T15:20:17</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-08-05T15:19:34</TrxDate>
+		<TrxDate>2011-09-05T15:19:34</TrxDate>
 		<Amount>-600.00</Amount>
 		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -11,13 +11,13 @@
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>2</BookingID>
 		<Comments>Deposit</Comments>
-		<DepartureDate>2011-11-06</DepartureDate>
+		<DepartureDate>2011-12-06</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="2">
 		<LastChanged>2011-04-05T15:20:18</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
-		<TrxDate>2011-08-05T15:20:17</TrxDate>
+		<TrxDate>2011-09-05T15:20:17</TrxDate>
 		<Amount>3,627.90</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -25,13 +25,13 @@
 		<LinkedTrxDescID/>
 		<BookingID>2</BookingID>
 		<Comments>Invoice</Comments>
-		<DepartureDate>2011-11-06</DepartureDate>
+		<DepartureDate>2011-12-06</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="3">
 		<LastChanged>2011-04-05T15:20:18</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-08-05T15:19:34</TrxDate>
+		<TrxDate>2011-09-05T15:19:34</TrxDate>
 		<Amount>-800.00</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -39,13 +39,13 @@
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>1</BookingID>
 		<Comments>Deposit</Comments>
-		<DepartureDate>2011-11-21</DepartureDate>
+		<DepartureDate>2011-12-21</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="4">
 		<LastChanged>2011-05-01T15:23:35</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-09-01T15:22:50</TrxDate>
+		<TrxDate>2011-10-01T15:22:50</TrxDate>
 		<Amount>-400.00</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -53,13 +53,13 @@
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>3</BookingID>
 		<Comments>Deposit</Comments>
-		<DepartureDate>2011-11-24</DepartureDate>
+		<DepartureDate>2011-12-24</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="5">
 		<LastChanged>2011-05-01T15:23:35</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
-		<TrxDate>2011-09-01T15:23:34</TrxDate>
+		<TrxDate>2011-10-01T15:23:34</TrxDate>
 		<Amount>2,891.07</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -67,13 +67,13 @@
 		<LinkedTrxDescID/>
 		<BookingID>3</BookingID>
 		<Comments>Invoice</Comments>
-		<DepartureDate>2011-11-24</DepartureDate>
+		<DepartureDate>2011-12-24</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="6">
 		<LastChanged>2011-05-01T15:23:35</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-09-01T15:22:50</TrxDate>
+		<TrxDate>2011-10-01T15:22:50</TrxDate>
 		<Amount>-3,027.90</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -81,6 +81,6 @@
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>2</BookingID>
 		<Comments>Final payment</Comments>
-		<DepartureDate>2011-11-06</DepartureDate>
+		<DepartureDate>2011-12-06</DepartureDate>
 	</ArTrx>
 </file>

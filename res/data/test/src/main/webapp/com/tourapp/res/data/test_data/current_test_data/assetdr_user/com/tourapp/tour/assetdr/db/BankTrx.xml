@@ -3,7 +3,7 @@
 		<LastChanged>2011-01-01T16:45:50</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>71,984.43</AmountLocal>
 		<TrxEntry>2011-01-01T16:38:19</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -26,7 +26,7 @@
 		<LastChanged>2011-01-01T16:45:55</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>102,943.41</AmountLocal>
 		<TrxEntry>2011-01-01T16:41:14</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -49,7 +49,7 @@
 		<LastChanged>2011-01-01T16:45:58</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>52,481.52</AmountLocal>
 		<TrxEntry>2011-01-01T16:42:09</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -72,7 +72,7 @@
 		<LastChanged>2011-01-01T16:46:02</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>25,675.87</AmountLocal>
 		<TrxEntry>2011-01-01T16:42:49</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -95,7 +95,7 @@
 		<LastChanged>2011-01-01T16:46:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>2,839.89</AmountLocal>
 		<TrxEntry>2011-01-01T16:43:31</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -118,7 +118,7 @@
 		<LastChanged>2011-01-01T16:46:12</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>15,741.34</AmountLocal>
 		<TrxEntry>2011-01-01T16:43:59</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -141,7 +141,7 @@
 		<LastChanged>2011-01-01T16:46:16</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
-		<TrxDate>2011-05-01T00:00:00</TrxDate>
+		<TrxDate>2011-06-01T00:00:00</TrxDate>
 		<AmountLocal>8,201.23</AmountLocal>
 		<TrxEntry>2011-01-01T16:44:30</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -164,7 +164,7 @@
 		<LastChanged>2011-04-05T15:20:16</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-08-05T15:19:34</TrxDate>
+		<TrxDate>2011-09-05T15:19:34</TrxDate>
 		<AmountLocal>1,400.00</AmountLocal>
 		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<TrxUserID>11</TrxUserID>
@@ -187,7 +187,7 @@
 		<LastChanged>2011-05-01T15:23:34</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-09-01T15:22:50</TrxDate>
+		<TrxDate>2011-10-01T15:22:50</TrxDate>
 		<AmountLocal>3,427.90</AmountLocal>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
