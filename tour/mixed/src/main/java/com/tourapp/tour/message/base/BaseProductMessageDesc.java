@@ -68,7 +68,7 @@ public class BaseProductMessageDesc extends MessageRecordDesc
         this.addMessageFieldDesc("PrimaryLangID", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
         this.addMessageFieldDesc("SequenceNmbr", Float.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
         this.addMessageFieldDesc("Target", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
-        this.addMessageFieldDesc(MESSAGE_TIMESTAMP, org.joda.time.DateTime.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
+        this.addMessageFieldDesc(MESSAGE_TIMESTAMP, XMLGregorianCalendar.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
         this.addMessageFieldDesc("TransactionIdentifier", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
         this.addMessageFieldDesc("TransactionStatusCode", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
         this.addMessageFieldDesc("Version", Float.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
