@@ -356,9 +356,9 @@ Manual=true
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Oct 05 06:26:34 PDT 2008
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 messageVersionID=9
 </Properties>
 		<ContactTypeID>1</ContactTypeID>

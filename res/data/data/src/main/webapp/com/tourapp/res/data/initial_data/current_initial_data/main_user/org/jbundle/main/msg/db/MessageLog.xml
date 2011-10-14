@@ -2100,7 +2100,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=33
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2162,7 +2162,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=34
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2224,7 +2224,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=35
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2391,7 +2391,7 @@ transportID=11
 		<ResponseMessageLogID>35</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 16:52:22 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -2453,7 +2453,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=39
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2620,7 +2620,7 @@ transportID=11
 		<ResponseMessageLogID>39</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 16:52:39 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -2682,7 +2682,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=43
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2849,7 +2849,7 @@ transportID=11
 		<ResponseMessageLogID>43</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 16:53:14 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -2911,7 +2911,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=47
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3081,7 +3081,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=50
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3140,7 +3140,7 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>47</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 16:59:04 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3202,7 +3202,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=52
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3477,7 +3477,7 @@ transportID=11
 		<ResponseMessageLogID>50</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 17:00:02 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3536,7 +3536,7 @@ transportID=11
 		<ResponseMessageLogID>52</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 17:00:02 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3598,7 +3598,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=59
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3766,7 +3766,7 @@ transportID=11
 		<ResponseMessageLogID>59</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 17:01:50 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3828,7 +3828,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=63
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3996,7 +3996,7 @@ transportID=11
 		<ResponseMessageLogID>63</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 17:02:01 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4058,7 +4058,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=67
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4226,7 +4226,7 @@ transportID=11
 		<ResponseMessageLogID>67</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 17:02:02 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4288,7 +4288,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=71
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4456,7 +4456,7 @@ transportID=11
 		<ResponseMessageLogID>71</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Thu Mar 10 17:02:03 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4518,7 +4518,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=75
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4686,7 +4686,7 @@ transportID=11
 		<ResponseMessageLogID>75</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 07:57:50 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4748,7 +4748,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=79
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4916,7 +4916,7 @@ transportID=11
 		<ResponseMessageLogID>79</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 07:58:11 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4978,7 +4978,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.net.webservicex.currencyconvertor
 Manual=true
 trxID=83
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Currency Conversion Request
 registryID=1
 messageProcessInfoID=243
@@ -5075,7 +5075,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=85
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -5243,7 +5243,7 @@ transportID=11
 		<ResponseMessageLogID>85</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 08:03:34 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -5305,7 +5305,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=89
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -5473,7 +5473,7 @@ transportID=11
 		<ResponseMessageLogID>89</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 08:11:40 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -5535,7 +5535,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=93
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=3
 messageProcessInfoID=197
@@ -5703,7 +5703,7 @@ transportID=11
 		<ResponseMessageLogID>93</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 08:49:58 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -5762,10 +5762,10 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 08:57:35 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -5829,10 +5829,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:00:02 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -5896,10 +5896,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:00:32 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -5963,10 +5963,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:04:05 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6030,10 +6030,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:07:31 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6097,10 +6097,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:11:43 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6164,10 +6164,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:15:19 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6231,10 +6231,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 09:17:34 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6298,10 +6298,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 10:49:53 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6365,10 +6365,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 10:53:11 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6432,10 +6432,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 10:53:44 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6499,10 +6499,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 10:54:07 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6566,10 +6566,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 10:56:03 PST 2011
-sourceAddress=http\://www.tourloco.com\:8080/reply
+sourceAddress=http\://www.tourloco.com\:8181/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8080
+destinationAddress=http\://www.tourloco.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6633,10 +6633,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 10:59:24 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6698,10 +6698,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 11:02:24 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6763,10 +6763,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 11:02:49 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6828,10 +6828,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 11:05:24 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6893,10 +6893,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 11:06:18 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6958,10 +6958,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 11:49:45 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7023,10 +7023,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:13:32 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7088,10 +7088,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:14:17 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7153,10 +7153,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:16:44 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7218,10 +7218,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:17:30 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7283,11 +7283,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:42:37 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=1
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7405,11 +7405,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:46:42 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=1
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7527,11 +7527,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:48:57 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=1
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7649,11 +7649,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:56:23 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7771,11 +7771,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:56:31 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7893,11 +7893,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:57:06 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8015,11 +8015,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:57:35 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8137,11 +8137,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:59:28 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8259,11 +8259,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:59:38 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8381,11 +8381,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 12:59:54 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8503,10 +8503,10 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:15:13 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -8565,10 +8565,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:15:29 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -8627,10 +8627,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:15:51 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -8690,7 +8690,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:16:09 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -8746,10 +8746,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>143</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:16:09 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=143
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -8811,7 +8811,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:16:41 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -8867,10 +8867,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>145</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:16:41 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=145
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -8932,7 +8932,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:17:30 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -8988,10 +8988,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>147</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:17:30 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=147
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9053,7 +9053,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:19:11 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9109,10 +9109,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>149</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:19:16 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=149
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9174,7 +9174,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:19:25 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9230,10 +9230,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>151</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:21:45 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=151
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9295,7 +9295,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:21:52 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9351,10 +9351,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>153</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:22:18 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=153
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9415,10 +9415,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:22:25 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9477,10 +9477,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:22:51 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9540,7 +9540,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:24:25 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9596,10 +9596,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>157</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:24:27 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=157
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9660,10 +9660,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:24:31 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9722,10 +9722,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:25:01 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9784,10 +9784,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:25:15 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9846,10 +9846,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:27:21 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9909,7 +9909,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:28:26 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9965,10 +9965,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>163</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:29:03 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=163
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10030,7 +10030,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:29:15 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -10086,10 +10086,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>165</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:29:29 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=165
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10151,7 +10151,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:29:53 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -10207,10 +10207,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>167</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:32:19 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=167
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10272,7 +10272,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:35:10 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -10328,10 +10328,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>169</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:35:10 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 messageInfoType=REPLY
 trxIDOrig=169
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10395,7 +10395,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=171
-destinationAddress=http\://www.tourgeek.com\:8080/ws
+destinationAddress=http\://www.tourgeek.com\:8181/ws
 description=Ping Request
 registryID=4
 messageProcessInfoID=197
@@ -10563,7 +10563,7 @@ transportID=11
 		<ResponseMessageLogID>171</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:38:21 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080/ws
+sourceAddress=http\://www.tourgeek.com\:8181/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -10622,11 +10622,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:38:35 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -10744,11 +10744,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:39:43 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -10866,11 +10866,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:46:54 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -10933,11 +10933,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:47:16 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11000,11 +11000,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:47:36 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11067,11 +11067,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 13:48:41 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11134,11 +11134,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 14:10:17 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11201,11 +11201,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>187</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 14:10:51 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11379,10 +11379,10 @@ transportID=11
 		<ResponseMessageLogID>184</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 14:14:51 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080
+sourceAddress=http\://www.tourgeek.com\:8181
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
-destinationAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8181/reply
 description=Hotel Pricing Response
 registryID=6
 messageProcessInfoID=3
@@ -11440,11 +11440,11 @@ transportID=11
 		<ResponseMessageLogID>191</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 14:19:07 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8080
+destinationAddress=http\://www.tourgeek.com\:8181
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8080/reply
+sourceAddress=http\://www.tourgeek.com\:8181/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11618,10 +11618,10 @@ transportID=11
 		<ResponseMessageLogID>188</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Mar 11 14:19:09 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8080
+sourceAddress=http\://www.tourgeek.com\:8181
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
-destinationAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8181/reply
 description=Hotel Pricing Response
 registryID=6
 messageProcessInfoID=3
@@ -21992,7 +21992,7 @@ transportID=7
 Manual=true
 trxID=336
 description=Run Remote Process Request
-destinationAddress=http\://www.tourgeek.com\:8080/xmlws
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
 messageProcessInfoID=249
 registryID=1
 ]]></MessageHeaderProperties>
@@ -22044,10 +22044,10 @@ sendMessageBy=XML
 		<ResponseMessageLogID>336</ResponseMessageLogID>
 		<MessageHeaderProperties><![CDATA[#Field properties
 #Fri Sep 16 15:09:11 PDT 2011
-destinationAddress=http\://www.tourgeek.com\:8080/xmlws
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
 messageInfoType=REPLY
 trxIDOrig=336
-sourceAddress=http\://www.tourgeek.com\:8080/xmlws
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
 registryID=1
 errorMessage=Connection refused
 Manual=true

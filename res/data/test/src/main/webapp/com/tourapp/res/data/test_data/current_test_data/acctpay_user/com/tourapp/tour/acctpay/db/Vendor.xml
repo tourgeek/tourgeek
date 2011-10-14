@@ -384,7 +384,7 @@ Suite 1243</AddressLine1>
 		<WSDLPath/>
 		<Properties>#Field properties
 #Thu Mar 10 16:11:49 PST 2011
-destinationMessage=http\://www.tourgeek.com\:8080/ws
+destinationMessage=http\://www.tourgeek.com\:8181/ws
 wsdlPath=http\://www.tourgeek.com/wsdl
 </Properties>
 		<VendorStatusID/>

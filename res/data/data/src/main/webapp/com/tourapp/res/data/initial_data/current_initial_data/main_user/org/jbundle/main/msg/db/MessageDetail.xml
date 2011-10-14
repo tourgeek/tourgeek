@@ -59,8 +59,8 @@ destinationAddress=HotelAvailRQ
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 10:58:34 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourgeek.com\:8080/reply
-destinationAddress=http\://www.tourgeek.com\:8080
+sourceAddress=http\://www.tourgeek.com\:8181/reply
+destinationAddress=http\://www.tourgeek.com\:8181
 ]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -120,8 +120,8 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 10:57:24 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourgeek.com\:8080/reply
-destinationAddress=http\://www.tourgeek.com\:8080
+sourceAddress=http\://www.tourgeek.com\:8181/reply
+destinationAddress=http\://www.tourgeek.com\:8181
 ]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -321,8 +321,8 @@ Manual=true
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 10:58:02 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourgeek.com\:8080/reply
-destinationAddress=http\://www.tourgeek.com\:8080
+sourceAddress=http\://www.tourgeek.com\:8181/reply
+destinationAddress=http\://www.tourgeek.com\:8181
 ]]></Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
