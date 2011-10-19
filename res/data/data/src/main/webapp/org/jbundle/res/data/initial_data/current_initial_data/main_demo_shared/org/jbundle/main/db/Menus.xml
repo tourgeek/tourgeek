@@ -18,7 +18,7 @@
 <paragraph>In this system, you have the capability to build tours with unbelievable flexability.</paragraph></MenusHelp>
 	</Menus>
 	<Menus ID="421">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Name/>
 		<ParentFolderID/>
@@ -38,7 +38,7 @@
 This financial system is updated automatically as entries are made in all the other systems.</paragraph></MenusHelp>
 	</Menus>
 	<Menus ID="425">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Name/>
 		<ParentFolderID/>
@@ -55,7 +55,7 @@ This financial system is updated automatically as entries are made in all the ot
 		<MenusHelp type="XML"><paragraph>The General Ledger system summarizes data from all the sub-systems, so you can quickly evaluate your performance.</paragraph></MenusHelp>
 	</Menus>
 	<Menus ID="426">
-		<LastChanged>2011-08-05T16:00:15</LastChanged>
+		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Name/>
 		<ParentFolderID/>
@@ -72,253 +72,5 @@ This financial system is updated automatically as entries are made in all the ot
 		<MenusHelp type="XML"><paragraph><bold>Use the Bank Account system to keep track of your cash.</bold></paragraph>
 <paragraph>Handles local and foreign currencies.</paragraph>
 <paragraph>This system is integrated with all the other systems. For example, a refund generated from the Accounts Receivable system would be reflected in the refund account.</paragraph></MenusHelp>
-	</Menus>
-	<Menus ID="1225">
-		<LastChanged>2011-08-31T20:30:06</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourdemo/home.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1331">
-		<LastChanged>2011-08-31T20:31:34</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/donandann/home.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1704">
-		<LastChanged>2011-08-31T20:29:23</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/demohome.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1736">
-		<LastChanged>2011-08-31T20:31:11</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/home.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1746">
-		<LastChanged>2011-08-31T20:27:04</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="stylesheet-path">com/tourapp/res/docs/styles/xsl/ajax/base/</entry>
-   <entry key="navmenus">IconsOnly</entry>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/home.xml</entry>
-   <entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
-   <entry key="stylesheet">menus-tourgeek</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1747">
-		<LastChanged>2011-08-31T20:27:13</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourvisualizer/home.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1748">
-		<LastChanged>2011-08-31T20:30:57</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourmarketplace/home.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1749">
-		<LastChanged>2011-08-31T20:26:46</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourstudio/home.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1750">
-		<LastChanged>2011-08-31T20:25:34</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="stylesheet-path">com/tourapp/res/docs/styles/xsl/ajax/base/</entry>
-   <entry key="navmenus">IconsOnly</entry>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/home.xml</entry>
-   <entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
-   <entry key="stylesheet">menus-tourgeek</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1758">
-		<LastChanged>2011-08-31T20:29:44</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/demostart.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1875">
-		<LastChanged>2011-08-31T20:28:49</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/sitehome.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1876">
-		<LastChanged>2011-08-31T20:29:05</LastChanged>
-		<Deleted/>
-		<Name/>
-		<ParentFolderID/>
-		<Sequence/>
-		<Comment/>
-		<Code/>
-		<Type/>
-		<AutoDesc/>
-		<Program/>
-		<Params type="XML"><properties>
-   <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/sitestart.xml</entry>
-</properties></Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
 	</Menus>
 </file>

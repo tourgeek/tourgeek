@@ -3620,7 +3620,7 @@ sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/web
 		<Destination/>
 	</Script>
 	<Script ID="298">
-		<LastChanged>2010-04-27T14:56:49</LastChanged>
+		<LastChanged>2011-10-19T00:07:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Tour program data</Name>
 		<ParentFolderID>296</ParentFolderID>
@@ -3628,8 +3628,9 @@ sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/web
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Fri Apr 23 12:07:20 PDT 2010
+#Wed Oct 19 00:07:35 PDT 2011
 package=org.jbundle.app.program.*
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>

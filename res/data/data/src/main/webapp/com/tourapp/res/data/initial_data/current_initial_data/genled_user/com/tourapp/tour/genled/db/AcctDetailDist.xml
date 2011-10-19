@@ -307,7 +307,7 @@
 		<TrxTypeID/>
 		<TrxDate>2011-05-01T00:00:00</TrxDate>
 		<Amount>-3,320.75</Amount>
-		<TrxEntry>2010-10-17T07:30:28</TrxEntry>
+		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
@@ -593,7 +593,7 @@
 		<TrxTypeID>145</TrxTypeID>
 		<TrxDate>2011-11-06T00:00:00</TrxDate>
 		<Amount>-230.00</Amount>
-		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
+		<TrxEntry>2008-02-12T05:00:29</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>45</AcctDetailDistGroupID>
 	</AcctDetailDist>

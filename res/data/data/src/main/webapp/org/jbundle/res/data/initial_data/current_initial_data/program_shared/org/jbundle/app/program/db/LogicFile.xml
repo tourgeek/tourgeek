@@ -91254,7 +91254,7 @@ recProduct.getField(Land.kSICPriceHome).addListener(new AddCommissionHandler(nul
 		<CopyFrom/>
 	</LogicFile>
 	<LogicFile ID="7345">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2011-10-13T01:43:20</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>setupMessageDataDesc</MethodName>
@@ -91268,7 +91268,7 @@ this.addMessageFieldDesc("EchoToken", String.class, MessageFieldDesc.OPTIONAL, M
 this.addMessageFieldDesc("PrimaryLangID", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
 this.addMessageFieldDesc("SequenceNmbr", Float.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
 this.addMessageFieldDesc("Target", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
-this.addMessageFieldDesc(MESSAGE_TIMESTAMP, org.joda.time.DateTime.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
+this.addMessageFieldDesc(MESSAGE_TIMESTAMP, XMLGregorianCalendar.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
 this.addMessageFieldDesc("TransactionIdentifier", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
 this.addMessageFieldDesc("TransactionStatusCode", String.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);
 this.addMessageFieldDesc("Version", Float.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.STANDARD_PARAM | MessageFieldDesc.ECHO_PARAM, null);]]></LogicSource>

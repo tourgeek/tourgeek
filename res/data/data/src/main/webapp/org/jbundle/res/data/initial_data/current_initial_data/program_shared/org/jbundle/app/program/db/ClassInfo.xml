@@ -32263,7 +32263,7 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1667">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2011-08-01T17:24:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTransBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
@@ -33419,7 +33419,7 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1759">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:00</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ItemRateRequest</ClassName>
 		<BaseClassName>ProductRateRequest</BaseClassName>

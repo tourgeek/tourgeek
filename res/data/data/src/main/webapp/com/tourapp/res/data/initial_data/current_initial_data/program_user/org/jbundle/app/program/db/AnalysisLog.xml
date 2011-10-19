@@ -5733,7 +5733,7 @@
 		<ObjectID>76</ObjectID>
 		<ClassName>TourHeaderDetail</ClassName>
 		<DatabaseName>product</DatabaseName>
-		<InitTime>2008-07-03T00:54:45</InitTime>
+		<InitTime>2008-02-12T05:00:26</InitTime>
 		<FreeTime>2008-02-12T05:00:29</FreeTime>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
