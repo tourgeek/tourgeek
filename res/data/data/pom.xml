@@ -13,6 +13,13 @@
   <name>tourapp-res-data - Tourapp data</name>
 
   <packaging>bundle</packaging>
+  
+  <properties>
+    <jbundlePackageExport>
+    ${jbundlePackageFilter};version=${project.version},
+    org.jbundle.res.data.initial_data.*;version=${project.version},
+    </jbundlePackageExport> <!-- Bundle package to export -->
+  </properties>
 
   <build>
     <resources>
@@ -21,6 +28,7 @@
         <filtering>false</filtering>
         <includes>
           <include>com/tourapp/res/data/initial_data/**</include>
+          <include>org/jbundle/res/data/initial_data/**</include>
         </includes>
         <excludes>
           <exclude>com/tourapp/res/data/test_data/raw_test_data/**</exclude>
