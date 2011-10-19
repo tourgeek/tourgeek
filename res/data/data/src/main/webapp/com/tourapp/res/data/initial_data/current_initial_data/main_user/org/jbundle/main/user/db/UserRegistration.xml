@@ -373,11 +373,4 @@ font.fontname=Arial
 		<Code>org.jbundle.app.test.test.screen.basic.TestBasicScreen\TestTable</Code>
 		<Properties/>
 	</UserRegistration>
-	<UserRegistration ID="40">
-		<LastChanged>2011-09-10T21:37:00</LastChanged>
-		<Deleted>N</Deleted>
-		<UserID>1</UserID>
-		<Code>com.tourapp.tour.booking.lookup.BookingGridScreen\No Query Name</Code>
-		<Properties/>
-	</UserRegistration>
 </file>

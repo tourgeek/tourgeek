@@ -3792,7 +3792,7 @@ package=org.jbundle.main.*
 		<Destination/>
 	</Script>
 	<Script ID="308">
-		<LastChanged>2010-05-06T14:25:56</LastChanged>
+		<LastChanged>2011-10-18T23:40:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Demo (main) data</Name>
 		<ParentFolderID>301</ParentFolderID>
@@ -3800,8 +3800,9 @@ package=org.jbundle.main.*
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu May 06 14:25:52 PDT 2010
+#Tue Oct 18 23:40:06 PDT 2011
 locale=demo
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
 language=demo
 ]]></Properties>
 		<Command>Z</Command>
@@ -3809,7 +3810,7 @@ language=demo
 		<Destination/>
 	</Script>
 	<Script ID="310">
-		<LastChanged>2011-06-23T04:59:48</LastChanged>
+		<LastChanged>2011-10-18T23:40:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export Demo (quick) data</Name>
 		<ParentFolderID>301</ParentFolderID>
@@ -3817,8 +3818,9 @@ language=demo
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu May 20 21:39:54 PDT 2010
+#Tue Oct 18 23:40:48 PDT 2011
 locale=demoquick
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
 language=demoquick
 ]]></Properties>
 		<Command>Z</Command>
