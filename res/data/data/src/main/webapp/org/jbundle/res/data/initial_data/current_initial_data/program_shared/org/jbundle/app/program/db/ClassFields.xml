@@ -1120,7 +1120,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="101">
-		<LastChanged>2011-08-05T15:59:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>AutoDistDetailScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -1776,7 +1776,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="150">
-		<LastChanged>2011-08-18T14:34:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingTourScreen</ClassInfoClassName>
 		<ClassInfoID/>
