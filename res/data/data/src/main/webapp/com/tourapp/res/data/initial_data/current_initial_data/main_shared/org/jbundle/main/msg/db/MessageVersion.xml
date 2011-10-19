@@ -277,7 +277,7 @@ jaxb.packageName=org.opentravel.ota2010a
 		<Properties>#Field properties
 #Fri Jun 19 11:40:30 PDT 2009
 jaxb.packageName=org.opentravel.ota2010b
-jibx.packageName=org.jibx.schema.org.opentravel._2010B
+xjibx.packageName=org.jibx.schema.org.opentravel._2010B
 </Properties>
 	</MessageVersion>
 	<MessageVersion ID="21">
