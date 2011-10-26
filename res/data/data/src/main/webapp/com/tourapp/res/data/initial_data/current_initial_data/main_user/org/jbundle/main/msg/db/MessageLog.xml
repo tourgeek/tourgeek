@@ -84,7 +84,7 @@ sendMessageBy=Server
 		<ContactTypeID>1</ContactTypeID>
 		<ContactID>1</ContactID>
 		<Description>Ping Response</Description>
-		<MessageTime>2009-02-12T14:49:28</MessageTime>
+		<MessageTime>2011-03-10T13:28:49</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>
@@ -3692,7 +3692,7 @@ transportID=11
 		<ErrorText/>
 	</MessageLog>
 	<MessageLog ID="61">
-		<LastChanged>2011-09-09T15:49:03</LastChanged>
+		<LastChanged>2011-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -4217,7 +4217,7 @@ transportID=11
 		<ContactTypeID>1</ContactTypeID>
 		<ContactID>37</ContactID>
 		<Description>Ping Response</Description>
-		<MessageTime>2008-02-12T05:00:57</MessageTime>
+		<MessageTime>2011-03-10T17:02:02</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>
@@ -5694,7 +5694,7 @@ transportID=11
 		<ContactTypeID>1</ContactTypeID>
 		<ContactID>37</ContactID>
 		<Description>Ping Response</Description>
-		<MessageTime>2011-03-11T08:49:58</MessageTime>
+		<MessageTime>2008-02-12T05:01:00</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>
@@ -8240,7 +8240,7 @@ transportID=11
 		<ErrorText>Error converting to internal format</ErrorText>
 	</MessageLog>
 	<MessageLog ID="136">
-		<LastChanged>2011-09-09T15:49:04</LastChanged>
+		<LastChanged>2011-08-05T15:49:04</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -9154,7 +9154,7 @@ sendMessageBy=SOAP
 		<ErrorText>Error converting to external format</ErrorText>
 	</MessageLog>
 	<MessageLog ID="151">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-09-09T15:49:04</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -21772,7 +21772,7 @@ sendMessageBy=Server
 		<ContactTypeID>1</ContactTypeID>
 		<ContactID>1</ContactID>
 		<Description>Land Booking Response</Description>
-		<MessageTime>2011-05-01T15:59:48</MessageTime>
+		<MessageTime>2011-05-01T15:23:35</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>

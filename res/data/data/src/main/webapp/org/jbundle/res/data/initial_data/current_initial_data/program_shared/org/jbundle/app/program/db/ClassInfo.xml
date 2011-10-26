@@ -2595,7 +2595,7 @@ Currently this screen is used to document depreciation entries to be made over t
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="103">
-		<LastChanged>2011-08-05T15:48:56</LastChanged>
+		<LastChanged>2011-08-05T15:59:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AssetScreen</ClassName>
 		<BaseClassName>Screen</BaseClassName>
@@ -18599,7 +18599,7 @@ When the transaction is made, this behavior creates an entry.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="824">
-		<LastChanged>2010-05-07T04:57:22</LastChanged>
+		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>UpdateCrDrAcctDetailHandler</ClassName>
 		<BaseClassName>UpdateArTrxAcctDetailHandler</BaseClassName>
