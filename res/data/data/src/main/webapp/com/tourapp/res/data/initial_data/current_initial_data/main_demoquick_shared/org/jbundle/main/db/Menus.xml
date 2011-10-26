@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<Menus ID="305">
+		<LastChanged>2010-05-22T21:47:16</LastChanged>
+		<Deleted/>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<AutoDesc/>
+		<Program/>
+		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp type="XML"><paragraph>
+This is the booking system main menu.
+</paragraph>
+<paragraph>
+First, let's enter the passengers on our sample proposal.<br/>
+Click on the
+<navigation-item>
+<name>Passenger</name>
+<link>screen=BookingPaxGridScreen</link>
+<image>tour/buttons/Passenger</image>
+</navigation-item>
+button for the passenger entry screen.
+</paragraph></MenusHelp>
+	</Menus>
+	<Menus ID="1750">
+		<LastChanged>2011-08-05T16:00:00</LastChanged>
+		<Deleted/>
+		<Name/>
+		<ParentFolderID/>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Type/>
+		<AutoDesc/>
+		<Program/>
+		<Params/>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+</file>
