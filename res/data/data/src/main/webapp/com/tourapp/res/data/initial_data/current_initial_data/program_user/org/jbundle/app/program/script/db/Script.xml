@@ -3620,17 +3620,18 @@ sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/web
 		<Destination/>
 	</Script>
 	<Script ID="298">
-		<LastChanged>2011-10-19T00:28:14</LastChanged>
+		<LastChanged>2011-10-19T15:39:51</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>Export Tour program data</Name>
+		<Name>Export Tour (shared) program data</Name>
 		<ParentFolderID>296</ParentFolderID>
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Wed Oct 19 00:28:10 PDT 2011
+#Wed Oct 19 15:39:49 PDT 2011
 package=org.jbundle.app.program.*
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+type=SHARED_DATA
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
@@ -3980,6 +3981,497 @@ listenerClass=org.jbundle.app.program.script.scan.DeleteMeScanListener
 extension=xml
 ]]></Properties>
 		<Command>R</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="320">
+		<LastChanged>2011-10-23T13:48:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Tour (user) program data</Name>
+		<ParentFolderID>296</ParentFolderID>
+		<Sequence>21</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Sun Oct 23 13:48:35 PDT 2011
+database=program
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="321">
+		<LastChanged>2011-10-25T11:04:47</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup all data</Name>
+		<ParentFolderID>256</ParentFolderID>
+		<Sequence>5</Sequence>
+		<Comment>Run from regular tourapp (not direct)</Comment>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 11:04:45 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+sourceDir=initial_data/current_initial_data
+local=Jdbc
+standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
+table=Jdbc
+remote=Jdbc
+process=.base.thread.StandaloneProcessRunnerProcess
+mode=export
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="322">
+		<LastChanged>2011-10-25T12:20:02</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup program data</Name>
+		<ParentFolderID>321</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 12:19:57 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/src/main/webapp/org/jbundle/res/data
+database=program
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="326">
+		<LastChanged>2011-10-25T14:32:52</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export base program data</Name>
+		<ParentFolderID>322</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Wed Oct 19 17:18:44 PDT 2011
+programSharedDBName=program_base
+mainSharedDBName=main_base
+dbSuffix=_base
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="327">
+		<LastChanged>2011-10-25T14:34:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export app program data</Name>
+		<ParentFolderID>322</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Thu Oct 20 10:01:12 PDT 2011
+programSharedDBName=program_app
+mainUserDBName=main
+mainSharedDBName=main_base
+dbSuffix=_app
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="330">
+		<LastChanged>2011-10-25T14:33:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export Test program data</Name>
+		<ParentFolderID>322</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 11:06:42 PDT 2011
+programSharedDBName=program_test
+dbSuffix=_test
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="332">
+		<LastChanged>2011-10-25T14:26:58</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour program data</Name>
+		<ParentFolderID>322</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:26:56 PDT 2011
+]]></Properties>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="333">
+		<LastChanged>2011-10-25T14:27:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour (user) program data</Name>
+		<ParentFolderID>332</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:27:29 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+type=USER_DATA
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="334">
+		<LastChanged>2011-10-25T14:27:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour (shared) program data</Name>
+		<ParentFolderID>332</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:27:54 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+type=SHARED_DATA
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="335">
+		<LastChanged>2011-10-25T14:28:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour (user) main data</Name>
+		<ParentFolderID>332</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:28:39 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+type=USER_DATA
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="336">
+		<LastChanged>2011-10-25T14:28:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour (shared) main data</Name>
+		<ParentFolderID>332</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:28:19 PDT 2011
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+type=SHARED_DATA
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="337">
+		<LastChanged>2011-10-25T15:10:12</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour demo data</Name>
+		<ParentFolderID>322</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:45:33 PDT 2011
+locale=demo
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+language=demo
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="338">
+		<LastChanged>2011-10-25T15:10:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour demoquick data</Name>
+		<ParentFolderID>322</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 15:06:51 PDT 2011
+locale=demoquick
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+language=demoquick
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="339">
+		<LastChanged>2011-10-25T14:33:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export base program data</Name>
+		<ParentFolderID>326</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="340">
+		<LastChanged>2011-10-25T14:33:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export base main data</Name>
+		<ParentFolderID>326</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:33:39 PDT 2011
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="341">
+		<LastChanged>2011-10-25T14:34:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export app program data</Name>
+		<ParentFolderID>327</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="342">
+		<LastChanged>2011-10-25T14:34:53</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export app main data</Name>
+		<ParentFolderID>327</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:34:50 PDT 2011
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="343">
+		<LastChanged>2011-10-25T14:35:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export test program data</Name>
+		<ParentFolderID>330</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="344">
+		<LastChanged>2011-10-25T14:35:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export test main data</Name>
+		<ParentFolderID>330</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 14:35:38 PDT 2011
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="345">
+		<LastChanged>2011-10-25T15:11:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour demo data</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="346">
+		<LastChanged>2011-10-25T15:11:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour main data</Name>
+		<ParentFolderID>337</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 15:11:02 PDT 2011
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="347">
+		<LastChanged>2011-10-25T15:11:40</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour demoquick data</Name>
+		<ParentFolderID>338</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="348">
+		<LastChanged>2011-10-25T15:11:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Export tour demoquick main data</Name>
+		<ParentFolderID>338</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 15:11:47 PDT 2011
+database=main
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="349">
+		<LastChanged>2011-10-25T18:18:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup app data</Name>
+		<ParentFolderID>321</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties/>
+		<Command>true</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="350">
+		<LastChanged>2011-10-25T18:19:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup tour data</Name>
+		<ParentFolderID>349</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 18:19:03 PDT 2011
+package=com.tourapp.*
+sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="351">
+		<LastChanged>2011-10-25T18:21:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup test data</Name>
+		<ParentFolderID>349</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 18:21:40 PDT 2011
+programSharedDBName=program_test
+mainUserDBName=mainUserDBName
+mainSharedDBName=main_base
+database=test
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="352">
+		<LastChanged>2011-10-25T18:26:21</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup app data</Name>
+		<ParentFolderID>349</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 18:26:16 PDT 2011
+programSharedDBName=program_app
+mainUserDBName=main
+mainSharedDBName=main_base
+]]></Properties>
+		<Command/>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="353">
+		<LastChanged>2011-10-25T18:27:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup contact data</Name>
+		<ParentFolderID>352</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 18:27:21 PDT 2011
+package=org.jbundle.app.contact.*
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="354">
+		<LastChanged>2011-10-25T18:27:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup dance data</Name>
+		<ParentFolderID>352</ParentFolderID>
+		<Sequence>20</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 18:27:39 PDT 2011
+package=org.jbundle.app.dance.*
+]]></Properties>
+		<Command>Z</Command>
+		<Source/>
+		<Destination/>
+	</Script>
+	<Script ID="355">
+		<LastChanged>2011-10-25T18:28:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Backup picture data</Name>
+		<ParentFolderID>352</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment/>
+		<Code/>
+		<Properties><![CDATA[#Field properties
+#Tue Oct 25 18:27:59 PDT 2011
+package=org.jbundle.app.picture.*
+]]></Properties>
+		<Command>Z</Command>
 		<Source/>
 		<Destination/>
 	</Script>

@@ -5232,7 +5232,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="447">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2009-11-18T22:05:39</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>HotelRateScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -5760,7 +5760,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="492">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LandPricing</ClassInfoClassName>
 		<ClassInfoID/>
@@ -10768,7 +10768,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="926">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-03-10T17:02:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingDetailGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -13248,7 +13248,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1170">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>UpdateTrxSystemHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -14272,7 +14272,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1250">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-12T05:01:01</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CreditSubmitGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -14288,7 +14288,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1251">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-09-09T15:49:04</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CreditApproveGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -15296,7 +15296,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1326">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingDefaultHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -31008,7 +31008,7 @@
 		<ClassFieldsType>N</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="2593">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2009-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseProductStatus</ClassInfoClassName>
 		<ClassInfoID/>
@@ -31872,7 +31872,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="2674">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T17:21:59</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingDetailSubScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -35374,7 +35374,7 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="3006">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T17:24:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CarMessageData</ClassInfoClassName>
 		<ClassInfoID/>
@@ -52718,7 +52718,7 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="4393">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-05T15:12:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourBookingRequest</ClassInfoClassName>
 		<ClassInfoID/>

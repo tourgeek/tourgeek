@@ -1805,7 +1805,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="760">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:00:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tour cost cut-off Report</Name>
 		<ParentFolderID>758</ParentFolderID>
@@ -2026,7 +2026,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="789">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-12T05:00:45</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Home</Name>
 		<ParentFolderID>0</ParentFolderID>
@@ -2506,7 +2506,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="837">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:36:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Resources and Links</Name>
 		<ParentFolderID>821</ParentFolderID>
@@ -5816,7 +5816,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1422">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2011-03-11T08:03:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Javaside</Name>
 		<ParentFolderID>1,416</ParentFolderID>
@@ -8706,7 +8706,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1636">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2010-09-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Grid Blink Test</Name>
 		<ParentFolderID>1,512</ParentFolderID>
@@ -11154,7 +11154,7 @@ System highlights and the full user's manual.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1838">
-		<LastChanged>2011-08-31T21:56:55</LastChanged>
+		<LastChanged>2011-10-13T00:52:43</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Demo site template</Name>
 		<ParentFolderID>1,757</ParentFolderID>
@@ -11167,8 +11167,8 @@ System highlights and the full user's manual.
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
-   <entry key="dbPrefix">don_</entry>
    <entry key="userArchiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
+   <entry key="dbPrefix">don_</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
 </properties></Params>
@@ -11578,7 +11578,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1883">
-		<LastChanged>2011-08-31T22:43:58</LastChanged>
+		<LastChanged>2011-10-13T00:54:04</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Site template</Name>
 		<ParentFolderID>1,877</ParentFolderID>
@@ -11591,8 +11591,8 @@ Note: This video has an audio narration.
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
+   <entry key="userArchiveFolder">com/tourapp/res/data/site_data/current_site_data</entry>
    <entry key="dbPrefix">don_</entry>
-   <entry key="archiveFolder">com/tourapp/res/data/site_data/current_site_data</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixsitetemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
 </properties></Params>
@@ -12353,23 +12353,23 @@ please click the following link:<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1925">
-		<LastChanged>2011-09-16T15:09:11</LastChanged>
+		<LastChanged>2011-10-18T21:57:17</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>Don's Demo site</Name>
+		<Name>Fred's Demo site</Name>
 		<ParentFolderID>1,757</ParentFolderID>
 		<Sequence>100</Sequence>
 		<Comment>Demo test site</Comment>
-		<Code>don.demo.tourgeek.com</Code>
+		<Code>fred.demo.tourgeek.com</Code>
 		<Type>menu</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>demosite</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="loadInitialData">true</entry>
-<entry key="dbPrefix">don_</entry>
-<entry key="userArchiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
+<entry key="userArchiveFolder">/home/don/.tourapp/fred/current_test_data</entry>
+<entry key="dbPrefix">fred_</entry>
 <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
-<entry key="mainUser">don@fred.com</entry>
+<entry key="mainUser">fred@tourgeek.com</entry>
 </properties>
 </Params>
 		<IconResource/>
