@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>com.tourapp.res.data.site_data</artifactId>
-  <name>tourapp-res-data - Tourapp data</name>
+  <name>tourapp-res-data-site - Tourapp site data</name>
 
   <packaging>bundle</packaging>
 
