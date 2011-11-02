@@ -515,7 +515,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="34">
-		<LastChanged>2011-09-09T15:49:02</LastChanged>
+		<LastChanged>2011-09-17T07:30:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties><![CDATA[#Field properties
 #Wed Apr 16 12:54:33 PDT 2008

@@ -112,7 +112,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="8">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>AcctBatch</ClassInfoClassName>
 		<ClassInfoID/>
@@ -128,7 +128,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="9">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>AcctBatchDetail</ClassInfoClassName>
 		<ClassInfoID/>
@@ -1184,7 +1184,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="106">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BankAccountGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -1440,7 +1440,7 @@
 		<ClassFieldsType>F</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="125">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-05T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BankTrxCalcBalance</ClassInfoClassName>
 		<ClassInfoID/>
@@ -4352,7 +4352,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="365">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-05T15:41:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>DepEstScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -5872,7 +5872,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="500">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LandScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -10592,7 +10592,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="915">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:11:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>MealsHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -11520,7 +11520,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1010">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-09T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LandGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -13120,7 +13120,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1162">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TrxTypeScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -15648,7 +15648,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1352">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseArTrxPostScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -15664,7 +15664,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1353">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseArTrxPostScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -15680,7 +15680,7 @@
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="1354">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseArTrxPostScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -29344,7 +29344,7 @@
 		<ClassFieldsType>N</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="2478">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:22:10</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TransactionType</ClassInfoClassName>
 		<ClassInfoID/>
@@ -45374,7 +45374,7 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 	</ClassFields>
 	<ClassFields ID="3808">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2010-05-25T15:08:13</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Air</ClassInfoClassName>
 		<ClassInfoID/>

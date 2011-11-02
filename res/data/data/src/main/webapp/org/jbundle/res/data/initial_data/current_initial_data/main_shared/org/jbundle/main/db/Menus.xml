@@ -2540,7 +2540,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="839">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2011-03-10T13:28:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Hotel Rate, Availability, and Booking engine.</Name>
 		<ParentFolderID>821</ParentFolderID>
@@ -4239,7 +4239,7 @@ Thanks for visiting!]]></XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1318">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>recycler</Name>
 		<ParentFolderID>1,198</ParentFolderID>
@@ -4256,7 +4256,7 @@ Thanks for visiting!]]></XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1319">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Monrovia</Name>
 		<ParentFolderID>1,198</ParentFolderID>
@@ -4273,7 +4273,7 @@ Thanks for visiting!]]></XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1320">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Frank Smith</Name>
 		<ParentFolderID>1,198</ParentFolderID>
@@ -9138,7 +9138,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1666">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2010-10-17T07:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bug tracking</Name>
 		<ParentFolderID>1,185</ParentFolderID>
@@ -11154,7 +11154,7 @@ System highlights and the full user's manual.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1838">
-		<LastChanged>2011-10-13T00:52:43</LastChanged>
+		<LastChanged>2011-10-31T00:48:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Demo site template</Name>
 		<ParentFolderID>1,757</ParentFolderID>
@@ -11167,7 +11167,7 @@ System highlights and the full user's manual.
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
-   <entry key="userArchiveFolder">{archive}/res/data/test_data/current_test_data</entry>
+   <entry key="userArchiveFolder">{domain}/res/data/test_data/current_test_data</entry>
    <entry key="dbPrefix">don_</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
@@ -11536,7 +11536,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1881">
-		<LastChanged>2010-10-21T11:30:57</LastChanged>
+		<LastChanged>2010-10-21T11:30:23</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Supplier system</Name>
 		<ParentFolderID>1,875</ParentFolderID>
@@ -11578,7 +11578,7 @@ Note: This video has an audio narration.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1883">
-		<LastChanged>2011-10-13T00:54:04</LastChanged>
+		<LastChanged>2011-10-31T00:49:23</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Site template</Name>
 		<ParentFolderID>1,877</ParentFolderID>
@@ -11591,7 +11591,7 @@ Note: This video has an audio narration.
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
-   <entry key="userArchiveFolder">{archive}/res/data/site_data/current_site_data</entry>
+   <entry key="userArchiveFolder">{domain}/res/data/site_data/current_site_data</entry>
    <entry key="dbPrefix">don_</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixsitetemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
@@ -12347,31 +12347,6 @@ please click the following link:<br/>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.app.contact.db.Contact</Program>
 		<Params/>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
-	<Menus ID="1925">
-		<LastChanged>2011-10-18T21:57:17</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>Fred's Demo site</Name>
-		<ParentFolderID>1,757</ParentFolderID>
-		<Sequence>100</Sequence>
-		<Comment>Demo test site</Comment>
-		<Code>fred.demo.tourgeek.com</Code>
-		<Type>menu</Type>
-		<AutoDesc>Y</AutoDesc>
-		<Program>demosite</Program>
-		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="loadInitialData">true</entry>
-<entry key="userArchiveFolder">/home/don/.tourapp/fred/current_test_data</entry>
-<entry key="dbPrefix">fred_</entry>
-<entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
-<entry key="mainUser">fred@tourgeek.com</entry>
-</properties>
-</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>

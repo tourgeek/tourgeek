@@ -659,36 +659,4 @@ contactTypeID=1
 		<ContactTypeID/>
 		<ContactID/>
 	</UserInfo>
-	<UserInfo ID="21">
-		<LastChanged>2011-10-18T21:57:17</LastChanged>
-		<Deleted>N</Deleted>
-		<Properties><![CDATA[#Field properties
-#Tue Oct 18 21:57:16 PDT 2011
-domainName=fred.demo.tourgeek.com
-home=demostart
-]]></Properties>
-		<UserName>fred@tourgeek.com</UserName>
-		<FirstName>Fred</FirstName>
-		<LastName>Flinstone</LastName>
-		<Extension/>
-		<Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password>
-		<TerminationDate/>
-		<ReadOnlyRecord/>
-		<UserGroupID>8</UserGroupID>
-		<UserReference/>
-		<Frames/>
-		<Menubars/>
-		<NavMenus/>
-		<Java/>
-		<Banners/>
-		<Logos/>
-		<Trailers/>
-		<HelpPage/>
-		<Language/>
-		<Home>Main</Home>
-		<Menu/>
-		<MenuDesc/>
-		<ContactTypeID/>
-		<ContactID/>
-	</UserInfo>
 </file>
