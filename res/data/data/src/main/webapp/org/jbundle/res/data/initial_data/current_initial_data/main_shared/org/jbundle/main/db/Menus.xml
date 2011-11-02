@@ -11167,7 +11167,7 @@ System highlights and the full user's manual.
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
-   <entry key="userArchiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
+   <entry key="userArchiveFolder">{archive}/res/data/test_data/current_test_data</entry>
    <entry key="dbPrefix">don_</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
@@ -11591,7 +11591,7 @@ Note: This video has an audio narration.
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="loadInitialData">true</entry>
-   <entry key="userArchiveFolder">com/tourapp/res/data/site_data/current_site_data</entry>
+   <entry key="userArchiveFolder">{archive}/res/data/site_data/current_site_data</entry>
    <entry key="dbPrefix">don_</entry>
    <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixsitetemplate.xsl</entry>
    <entry key="mainUser">don@donandann.com</entry>
