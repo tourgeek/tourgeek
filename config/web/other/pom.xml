@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.tourapp.config</groupId>
+		<artifactId>tourapp-config-web-reactor</artifactId>
+		<version>0.8.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>com.tourapp.config.web.other</artifactId>
+	<name>jbundle-config-web-other - deploy webapps</name>
+
+	<packaging>bundle</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>${project.artifactId}.*;version=${project.version}</Export-Package>
+						<Import-Package>
+							*;resolution:=optional,
+						</Import-Package>
+						<Bundle-Activator>${project.artifactId}.HttpServiceActivator</Bundle-Activator>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<scope>provided</scope> <!-- This better be provided -->
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+			<scope>provided</scope> <!-- This better be provided -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.jbundle.config.dep</groupId>
+			<artifactId>jbundle-config-dep-all</artifactId>
+			<version>0.8.0-SNAPSHOT</version>
+			<type>pom</type>
+			<scope>provided</scope>	<!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.redirect</artifactId>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.files</artifactId>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.proxy</artifactId>
+			<version>${jbundle-util-webappVersion}</version>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.cgi</artifactId>
+			<version>${jbundle-util-webappVersion}</version>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.upload</artifactId>
+			<version>${jbundle-util-webappVersion}</version>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.webdav</artifactId>
+			<version>${jbundle-util-webappVersion}</version>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.website</artifactId>
+			<version>${jbundle-util-webappVersion}</version>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+          <groupId>org.jbundle.util.webapp</groupId>
+          <artifactId>org.jbundle.util.webapp.osgi</artifactId>
+          <version>${jbundle-util-webappVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.jnlpservlet</artifactId>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>catalina</artifactId>
+			<scope>provided</scope>   <!-- This is usually included in distributions. If you do include this, the 
+				servlet is tiny, the jar is huge -->
+		</dependency>
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty</artifactId>
+			<version>6.1.26</version>
+			<scope>provided</scope>   <!-- This is usually included in distributions. If you do include this, the 
+				servlet is tiny, the jar is huge -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.base.screen</groupId>
+			<version>0.8.0-SNAPSHOT</version>
+			<artifactId>org.jbundle.base.screen.control.servlet</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.util.webapp</groupId>
+			<artifactId>org.jbundle.util.webapp.jnlpservlet</artifactId>
+			<!-- Just an OSGi wrapper for: -->
+			<!-- groupId>org.codehaus.mojo.webstart</groupId --> <!-- Hopefully this will become available from java.net -->
+			<!-- artifactId>webstart-jnlp-servlet</artifactId -->
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.base.screen</groupId>
+			<artifactId>org.jbundle.base.screen.control.xslservlet</artifactId>
+			<version>0.8.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jbundle.base.message</groupId>
+			<artifactId>org.jbundle.base.message.jaxm</artifactId>
+			<version>0.8.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jbundle.util.osgi</groupId>
+			<artifactId>org.jbundle.util.osgi</artifactId>
+		</dependency>
+
+	</dependencies>
+
+</project>

@@ -15,6 +15,7 @@
     <module>jnlp</module>
     <module>webapp</module>
     <module>httpweb</module>
+    <module>other</module>
   </modules>
 
 </project>
