@@ -199,11 +199,13 @@ public class HttpServiceTracker extends ServiceTracker {
             {	// Everything else is a pointer to a static resource
             	String servicePid = DBConstants.BLANK;
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
-                dictionary.put(RedirectServlet.ALLOW_PARAM, name);
+                dictionary.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
                 dictionary.put(RedirectServlet.TARGET, Utility.addURLPath(name, "index.html"));
     	        String urlCodeBase = context.getProperty(STATIC_WEB_FILES);
                 if (urlCodeBase == null)
                 	urlCodeBase = DEFAULT_STATIC_WEB_FILES;
+                if (!"/".equals(name))
+                	urlCodeBase = Utility.addURLPath(urlCodeBase, name) + "/";	// Should have trailing '/'
                 dictionary.put(OSGiFileServlet.BASE_URL, urlCodeBase);
                 ((BaseOsgiServlet)servlet).init(context, servicePid, dictionary);
     	        httpService.registerServlet(alias, servlet, dictionary, httpContext);
@@ -222,7 +224,11 @@ public class HttpServiceTracker extends ServiceTracker {
     	for (String path : paths)
     	{
             String fullPath = Utility.addURLPath(webContextPath, path);
-            httpService.unregister(fullPath);
+            try {
+				httpService.unregister(fullPath);
+			} catch (IllegalArgumentException e) {
+				// Ignore
+			}
     	}
         super.removedService(reference, service);
     }
