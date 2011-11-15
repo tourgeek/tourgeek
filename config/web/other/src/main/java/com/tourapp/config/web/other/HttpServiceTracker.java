@@ -16,10 +16,8 @@ import org.jbundle.util.webapp.osgi.BaseOsgiServlet;
 import org.jbundle.util.webapp.osgi.OSGiFileServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
 import org.osgi.service.http.HttpContext;
 import org.osgi.service.http.HttpService;
-import org.osgi.util.tracker.ServiceTracker;
 
 /**
  * HttpServiceTracker - Wait for the http service to come up to add servlets.
@@ -27,30 +25,7 @@ import org.osgi.util.tracker.ServiceTracker;
  * @author don
  *
  */
-public class HttpServiceTracker extends ServiceTracker {
-
-	// Set this param to change root URL
-	public static final String WEB_CONTEXT = "org.jbundle.web.webcontext";
-	String webContextPath = null;
-	
-	/**
-	 * Constructor - Listen for HttpService.
-	 * @param context
-	 */
-    public HttpServiceTracker(BundleContext context) {
-        super(context, HttpService.class.getName(), null);
-    }
-    
-    /**
-     * Http Service is up, add my servlets.
-     */
-    public Object addingService(ServiceReference reference) {
-        HttpService httpService = (HttpService) context.getService(reference);
-        
-        this.addServices(httpService);
-        
-        return httpService;
-    }
+public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpServiceTracker {
     
     public static final String JBUNDLE = "jbundle";
     public static final String AWSTATS = "awstats";
@@ -96,30 +71,38 @@ public class HttpServiceTracker extends ServiceTracker {
     		PICTURES,
     		SIMPLESERVLETS,
     		UPLOAD,
-    };
+	};
     
-    /**
-     * Http Service is up, add my servlets.
-     */
-    public void addServices(HttpService httpService) {
-    	for (String path : paths)
-    	{
-    		this.addService(path, httpService);
-    	}
-    }
     public String STATIC_WEB_FILES = "staticWebFiles";
     public String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
+
+	/**
+	 * Constructor - Listen for HttpService.
+	 * @param context
+	 */
+    public HttpServiceTracker(BundleContext context) {
+        super(context, null, null);
+    }
+    
     /**
-     * Http Service is up, add my servlets.
+     * Get all the web paths to add.
+     * @return
      */
-    public void addService(String name, HttpService httpService) {
+    public String[] getServletNames()
+    {
+    	return paths;
+    }
+    
+    /**
+     * Http Service is up, add this servlet.
+     */
+    public Servlet addService(String name, HttpService httpService) {
+        Servlet servlet = null;
         try {
-            Servlet servlet = null;
             Dictionary<String,String> dictionary = new Hashtable<String,String>();
             dictionary.put(BaseServlet.PATH, name);
-        	webContextPath = context.getProperty(WEB_CONTEXT);
-            String alias = Utility.addURLPath(webContextPath, name);
-            HttpContext httpContext = null;	// Default
+            String alias = this.getPathFromName(name);
+        	String servicePid = DBConstants.BLANK;
 
             if (AWSTATS.equalsIgnoreCase(name))
     		{
@@ -150,13 +133,11 @@ public class HttpServiceTracker extends ServiceTracker {
             {
 	            servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
 	            dictionary.put("remotehost", "localhost");	// Default value
-	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
             }
             else if (WEBAPP_UPLOAD.equalsIgnoreCase(name))
             {
 	            servlet = new org.jbundle.util.webapp.upload.UploadServlet();
 	            dictionary.put("remotehost", "localhost");	// Default value
-	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
             }
             else if (WEBAPP_WEBDAV.equalsIgnoreCase(name))
             {
@@ -197,7 +178,6 @@ public class HttpServiceTracker extends ServiceTracker {
                     || (PICTURES.equalsIgnoreCase(name))
             			)
             {	// Everything else is a pointer to a static resource
-            	String servicePid = DBConstants.BLANK;
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 dictionary.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
                 dictionary.put(RedirectServlet.TARGET, Utility.addURLPath(name, "index.html"));
@@ -207,30 +187,16 @@ public class HttpServiceTracker extends ServiceTracker {
                 if (!"/".equals(name))
                 	urlCodeBase = Utility.addURLPath(urlCodeBase, name) + "/";	// Should have trailing '/'
                 dictionary.put(OSGiFileServlet.BASE_URL, urlCodeBase);
-                ((BaseOsgiServlet)servlet).init(context, servicePid, dictionary);
-    	        httpService.registerServlet(alias, servlet, dictionary, httpContext);
             }
+            if (servlet instanceof BaseOsgiServlet)
+                ((BaseOsgiServlet) servlet).init(context, servicePid, dictionary);
+            if (servlet != null)
+                httpService.registerServlet(alias, servlet, dictionary, httpContext);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return servlet;
     }
 
-    /**
-     * Http Service is down, remove my servlets.
-     */
-    public void removedService(ServiceReference reference, Object service) {
-        HttpService httpService = (HttpService) service;
-    	for (String path : paths)
-    	{
-            String fullPath = Utility.addURLPath(webContextPath, path);
-            try {
-				httpService.unregister(fullPath);
-			} catch (IllegalArgumentException e) {
-				// Ignore
-			}
-    	}
-        super.removedService(reference, service);
-    }
-    
 }
