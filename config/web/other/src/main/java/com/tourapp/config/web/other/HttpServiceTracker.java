@@ -97,7 +97,7 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
     public Servlet addService(String name, HttpService httpService) {
         Servlet servlet = null;
         try {
-            Dictionary<String,String> dictionary = new Hashtable<String,String>();
+            Dictionary<String,String> dictionary = this.getDictionary();    // Get persistent configuration
             dictionary.put(BaseServlet.PATH, name);
             String alias = this.getPathFromName(name);
         	String servicePid = DBConstants.BLANK;
