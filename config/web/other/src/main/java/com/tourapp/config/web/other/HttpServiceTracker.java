@@ -16,7 +16,6 @@ import org.jbundle.util.webapp.osgi.BaseOsgiServlet;
 import org.jbundle.util.webapp.osgi.OSGiFileServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
 import org.osgi.framework.BundleContext;
-import org.osgi.service.http.HttpContext;
 import org.osgi.service.http.HttpService;
 
 /**
@@ -33,7 +32,6 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
     public static final String GIT_WEB = "git-web";
 
     public static final String CALENDARPANEL = "calendarpanel";
-	public static final String CALENDARPANELJNLP = "calendarpaneljnlp";
 
 	public static final String WEBAPP_CGI = "jbundle-util-webapp-cgi";
     public static final String WEBAPP_FILES = "jbundle-util-webapp-files";
@@ -54,7 +52,7 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
     		JBUNDLE,
     		AWSTATS,
     		CALENDARPANEL,
-    		CALENDARPANELJNLP,
+//x    		CALENDARPANELJNLP,
 //x    		"demo",
     		DOWNLOAD,
     		GIT_WEB,
@@ -106,70 +104,55 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
 
             if (AWSTATS.equalsIgnoreCase(name))
     		{
-            	// Add code here
-    		}
-            else if (CALENDARPANELJNLP.equalsIgnoreCase(name))
-    		{
-            	// Add code here
+                servlet = new org.apache.catalina.servlets.CGIServlet();
     		}
             else if (WEBAPP_PROXY.equalsIgnoreCase(name))
             {
-//	            servlet = new org.jbundle.util.webapp.proxy.ProxyServlet();
-//	            dictionary.put("remotehost", "localhost");	// Default value
-//	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
+	            servlet = new org.jbundle.util.webapp.proxy.ProxyServlet();
             }
             else if (WEBAPP_CGI.equalsIgnoreCase(name))
             {
-//	            servlet = new org.apache.catalina.servlets.CGIServlet();
-//	            dictionary.put("remotehost", "localhost");	// Default value
-//	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
+	            servlet = new org.apache.catalina.servlets.CGIServlet();
             }
             else if (WEBAPP_FILES.equalsIgnoreCase(name))
             {
-//	            servlet = new org.apache.catalina.servlets.DefaultServlet();
-//	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
+	            servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
             }
             else if (WEBAPP_REDIRECT.equalsIgnoreCase(name))
             {
 	            servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
-	            dictionary.put("remotehost", "localhost");	// Default value
             }
             else if (WEBAPP_UPLOAD.equalsIgnoreCase(name))
             {
 	            servlet = new org.jbundle.util.webapp.upload.UploadServlet();
-	            dictionary.put("remotehost", "localhost");	// Default value
             }
             else if (WEBAPP_WEBDAV.equalsIgnoreCase(name))
             {
-//	            servlet = new org.apache.catalina.servlets.WebdavServlet();
-//	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
+	            servlet = new org.apache.catalina.servlets.WebdavServlet();
             }
             else if (WEBAPP_WEBSITE.equalsIgnoreCase(name))
             {
-//	            servlet = new org.apache.catalina.servlets.DefaultServlet();
-//	            httpService.registerServlet(alias, servlet, dictionary, httpContext);
+                servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
             }
             else if (WEBAPP_WEBSTART.equalsIgnoreCase(name))
             {
-//	            servlet = new org.jbundle.base.webapp.jnlpservlet.JnlpServlet();
-	//            dictionary.put("remotehost", "localhost");	// Default value
-	  //          httpService.registerServlet(alias, servlet, dictionary, httpContext);
+	            servlet = new org.jbundle.util.webapp.jnlpservlet.JnlpServlet();
             }
             else if (DOWNLOAD.equalsIgnoreCase(name))
     		{
-            	// Add code here
+                servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
     		}
             else if (GIT_WEB.equalsIgnoreCase(name))
     		{
-            	// Add code here
+                servlet = new org.apache.catalina.servlets.CGIServlet();
     		}
             else if (NOTES.equalsIgnoreCase(name))
     		{
-            	// Add code here
+                servlet = new org.apache.catalina.servlets.WebdavServlet();
     		}
             else if (UPLOAD.equalsIgnoreCase(name))
     		{
-            	// Add code here
+                servlet = new org.jbundle.util.webapp.upload.UploadServlet();
     		}
             else if ((JBUNDLE.equalsIgnoreCase(name))
                     || (JCALENDARBUTTON.equalsIgnoreCase(name))
