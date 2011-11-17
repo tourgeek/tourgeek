@@ -4,19 +4,15 @@
 package com.tourapp.config.web.other;
 
 import java.util.Dictionary;
-import java.util.Hashtable;
 
 import javax.servlet.Servlet;
 
-import org.jbundle.base.screen.control.servlet.html.BaseServlet;
 import org.jbundle.base.util.DBConstants;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
-import org.jbundle.util.webapp.osgi.BaseOsgiServlet;
 import org.jbundle.util.webapp.osgi.OSGiFileServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
 import org.osgi.framework.BundleContext;
-import org.osgi.service.http.HttpService;
 
 /**
  * HttpServiceTracker - Wait for the http service to come up to add servlets.
@@ -86,22 +82,21 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
      * Get all the web paths to add.
      * @return
      */
-    public String[] getServletNames()
+    public String[] getServletNames(Dictionary<String, String> dictionary)
     {
     	return paths;
     }
     
     /**
-     * Http Service is up, add this servlet.
+     * Create the servlet.
+     * The SERVLET_CLASS property must be supplied.
+     * @param dictionary
+     * @return
      */
-    public Servlet addService(String name, HttpService httpService) {
+    public Servlet makeServlet(Dictionary<String, String> dictionary)
+    {
         Servlet servlet = null;
         try {
-            Dictionary<String,String> dictionary = this.getDictionary();    // Get persistent configuration
-            dictionary.put(BaseServlet.PATH, name);
-            String alias = this.getPathFromName(name);
-        	String servicePid = DBConstants.BLANK;
-
             if (AWSTATS.equalsIgnoreCase(name))
     		{
                 servlet = new org.apache.catalina.servlets.CGIServlet();
@@ -171,11 +166,6 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
                 	urlCodeBase = Utility.addURLPath(urlCodeBase, name) + "/";	// Should have trailing '/'
                 dictionary.put(OSGiFileServlet.BASE_URL, urlCodeBase);
             }
-            if (servlet instanceof BaseOsgiServlet)
-                ((BaseOsgiServlet) servlet).init(context, servicePid, dictionary);
-            if (servlet != null)
-                httpService.registerServlet(alias, servlet, dictionary, httpContext);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
