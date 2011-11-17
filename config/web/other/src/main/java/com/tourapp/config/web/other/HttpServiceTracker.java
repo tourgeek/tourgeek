@@ -82,7 +82,7 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
      * Get all the web paths to add.
      * @return
      */
-    public String[] getServletNames(Dictionary<String, String> dictionary)
+    public String[] getServletAliases(Dictionary<String, String> dictionary)
     {
     	return paths;
     }
@@ -93,77 +93,77 @@ public class HttpServiceTracker extends org.jbundle.util.webapp.osgi.HttpService
      * @param dictionary
      * @return
      */
-    public Servlet makeServlet(Dictionary<String, String> dictionary)
+    public Servlet makeServlet(String alias, Dictionary<String, String> dictionary)
     {
         Servlet servlet = null;
         try {
-            if (AWSTATS.equalsIgnoreCase(name))
+            if (AWSTATS.equalsIgnoreCase(alias))
     		{
                 servlet = new org.apache.catalina.servlets.CGIServlet();
     		}
-            else if (WEBAPP_PROXY.equalsIgnoreCase(name))
+            else if (WEBAPP_PROXY.equalsIgnoreCase(alias))
             {
 	            servlet = new org.jbundle.util.webapp.proxy.ProxyServlet();
             }
-            else if (WEBAPP_CGI.equalsIgnoreCase(name))
+            else if (WEBAPP_CGI.equalsIgnoreCase(alias))
             {
 	            servlet = new org.apache.catalina.servlets.CGIServlet();
             }
-            else if (WEBAPP_FILES.equalsIgnoreCase(name))
+            else if (WEBAPP_FILES.equalsIgnoreCase(alias))
             {
 	            servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
             }
-            else if (WEBAPP_REDIRECT.equalsIgnoreCase(name))
+            else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
             {
 	            servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
             }
-            else if (WEBAPP_UPLOAD.equalsIgnoreCase(name))
+            else if (WEBAPP_UPLOAD.equalsIgnoreCase(alias))
             {
 	            servlet = new org.jbundle.util.webapp.upload.UploadServlet();
             }
-            else if (WEBAPP_WEBDAV.equalsIgnoreCase(name))
+            else if (WEBAPP_WEBDAV.equalsIgnoreCase(alias))
             {
 	            servlet = new org.apache.catalina.servlets.WebdavServlet();
             }
-            else if (WEBAPP_WEBSITE.equalsIgnoreCase(name))
+            else if (WEBAPP_WEBSITE.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
             }
-            else if (WEBAPP_WEBSTART.equalsIgnoreCase(name))
+            else if (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
             {
 	            servlet = new org.jbundle.util.webapp.jnlpservlet.JnlpServlet();
             }
-            else if (DOWNLOAD.equalsIgnoreCase(name))
+            else if (DOWNLOAD.equalsIgnoreCase(alias))
     		{
                 servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
     		}
-            else if (GIT_WEB.equalsIgnoreCase(name))
+            else if (GIT_WEB.equalsIgnoreCase(alias))
     		{
                 servlet = new org.apache.catalina.servlets.CGIServlet();
     		}
-            else if (NOTES.equalsIgnoreCase(name))
+            else if (NOTES.equalsIgnoreCase(alias))
     		{
                 servlet = new org.apache.catalina.servlets.WebdavServlet();
     		}
-            else if (UPLOAD.equalsIgnoreCase(name))
+            else if (UPLOAD.equalsIgnoreCase(alias))
     		{
                 servlet = new org.jbundle.util.webapp.upload.UploadServlet();
     		}
-            else if ((JBUNDLE.equalsIgnoreCase(name))
-                    || (JCALENDARBUTTON.equalsIgnoreCase(name))
-                    || (CALENDARPANEL.equalsIgnoreCase(name))
-                    || (SIMPLESERVLETS.equalsIgnoreCase(name))
-                    || (PICTURES.equalsIgnoreCase(name))
+            else if ((JBUNDLE.equalsIgnoreCase(alias))
+                    || (JCALENDARBUTTON.equalsIgnoreCase(alias))
+                    || (CALENDARPANEL.equalsIgnoreCase(alias))
+                    || (SIMPLESERVLETS.equalsIgnoreCase(alias))
+                    || (PICTURES.equalsIgnoreCase(alias))
             			)
             {	// Everything else is a pointer to a static resource
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 dictionary.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
-                dictionary.put(RedirectServlet.TARGET, Utility.addURLPath(name, "index.html"));
+                dictionary.put(RedirectServlet.TARGET, Utility.addURLPath(alias, "index.html"));
     	        String urlCodeBase = context.getProperty(STATIC_WEB_FILES);
                 if (urlCodeBase == null)
                 	urlCodeBase = DEFAULT_STATIC_WEB_FILES;
-                if (!"/".equals(name))
-                	urlCodeBase = Utility.addURLPath(urlCodeBase, name) + "/";	// Should have trailing '/'
+                if (!"/".equals(alias))
+                	urlCodeBase = Utility.addURLPath(urlCodeBase, alias) + "/";	// Should have trailing '/'
                 dictionary.put(OSGiFileServlet.BASE_URL, urlCodeBase);
             }
         } catch (Exception e) {
