@@ -4,7 +4,6 @@
 package com.tourapp.config.web.other;
 
 import java.util.Dictionary;
-import java.util.Hashtable;
 
 import javax.servlet.Servlet;
 
@@ -21,7 +20,7 @@ import org.osgi.util.tracker.ServiceTracker;
  * Start up the web service listener.
  * @author don
  */
-public class HttpServiceActivator extends org.jbundle.web.httpservice.HttpServiceActivator
+public class HttpServiceActivator extends org.jbundle.web.httpservice.MultipleHttpServiceActivator
 {
     public static final String JBUNDLE = "jbundle";
     public static final String AWSTATS = "awstats";
@@ -71,18 +70,23 @@ public class HttpServiceActivator extends org.jbundle.web.httpservice.HttpServic
     public String STATIC_WEB_FILES = "staticWebFiles";
     public String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
 
+    /**
+     * Get all the web aliases to add http services for.
+     *@return A list of the web services.
+     */
     public String[] getAliases()
     {
         return aliases;
     }
-
-    public ServiceTracker makeServletTracker(String alias)
+    
+    /**
+     * Make a servlet tracker for the servlet at this alias.
+     */
+    public ServiceTracker makeServletTracker(String alias, Dictionary<String, String> properties)
     {
-        Dictionary<String, String> dictionary = new Hashtable<String, String>();
-
 //?        dictionary.put(HttpServiceTracker.SERVICE_PID, getServicePid(context));
 //?        dictionary.put(HttpServiceTracker.SERVLET_CLASS, getServletClass(context));
-        dictionary.put(HttpServiceTracker.WEB_ALIAS, alias); 
+        properties.put(HttpServiceTracker.WEB_ALIAS, alias); 
         
         Servlet servlet = null;
         HttpContext httpContext = null;
@@ -148,14 +152,14 @@ public class HttpServiceActivator extends org.jbundle.web.httpservice.HttpServic
                         )
             {   // Everything else is a pointer to a static resource
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
-                dictionary.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
-                dictionary.put(RedirectServlet.TARGET, Utility.addURLPath(alias, "index.html"));
+                properties.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
+                properties.put(RedirectServlet.TARGET, Utility.addURLPath(alias, "index.html"));
                 String urlCodeBase = context.getProperty(STATIC_WEB_FILES);
                 if (urlCodeBase == null)
                     urlCodeBase = DEFAULT_STATIC_WEB_FILES;
                 if (!"/".equals(alias))
                     urlCodeBase = Utility.addURLPath(urlCodeBase, alias) + "/"; // Should have trailing '/'
-                dictionary.put(OSGiFileServlet.BASE_URL, urlCodeBase);
+                properties.put(OSGiFileServlet.BASE_PATH, urlCodeBase);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -163,10 +167,8 @@ public class HttpServiceActivator extends org.jbundle.web.httpservice.HttpServic
         if (httpContext == null)   
             httpContext = this.getHttpContext();
         if (serviceTracker == null)
-            serviceTracker = this.createServiceTracker(context, httpContext, dictionary);
+            serviceTracker = this.createServiceTracker(context, httpContext, properties);
         serviceTracker.setServlet(servlet);
-        serviceTracker.open();
-        context.registerService(ServiceTracker.class.getName(), serviceTracker, dictionary);    // Why isn't this done automatically?
         return serviceTracker;
     }
 }
