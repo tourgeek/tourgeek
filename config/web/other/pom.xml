@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>org.jbundle.config.dep</groupId>
 			<artifactId>jbundle-config-dep-all</artifactId>
-			<version>0.8.0-SNAPSHOT</version>
+            <version>${jbundleVersion}</version>
 			<type>pom</type>
 			<scope>provided</scope>	<!-- Hey this is OSGi -->
 		</dependency>
@@ -126,25 +126,23 @@
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.screen</groupId>
-			<version>0.8.0-SNAPSHOT</version>
 			<artifactId>org.jbundle.base.screen.control.servlet</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.jbundle.util.webapp</groupId>
-			<artifactId>org.jbundle.util.webapp.jnlpservlet</artifactId>
-			<!-- Just an OSGi wrapper for: -->
-			<!-- groupId>org.codehaus.mojo.webstart</groupId --> <!-- Hopefully this will become available from java.net -->
-			<!-- artifactId>webstart-jnlp-servlet</artifactId -->
+            <version>${jbundleVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.screen</groupId>
 			<artifactId>org.jbundle.base.screen.control.xslservlet</artifactId>
-			<version>0.8.0-SNAPSHOT</version>
+			<version>${jbundleVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.message</groupId>
 			<artifactId>org.jbundle.base.message.jaxm</artifactId>
-			<version>0.8.0-SNAPSHOT</version>
+			<version>${jbundleVersion}</version>
+		</dependency>
+		<dependency>
+          <groupId>org.jbundle.config.web</groupId>
+          <artifactId>org.jbundle.web.httpservice</artifactId>
+          <version>${jbundleVersion}</version>
 		</dependency>
 
 		<dependency>
