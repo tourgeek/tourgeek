@@ -20,7 +20,7 @@ import org.osgi.util.tracker.ServiceTracker;
  * Start up the web service listener.
  * @author don
  */
-public class HttpServiceActivator extends org.jbundle.web.httpservice.MultipleHttpServiceActivator
+public class HttpServiceActivator extends org.jbundle.config.web.httpservice.MultipleHttpServiceActivator
 {
     public static final String JBUNDLE = "jbundle";
     public static final String AWSTATS = "awstats";

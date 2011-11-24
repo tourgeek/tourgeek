@@ -8,9 +8,9 @@
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.web.httpweb</artifactId>
+  <artifactId>com.tourapp.config.web.httpweb</artifactId>
 
-	<name>tourapp-web-httpweb - Hybrid osgi webapp</name>
+	<name>tourapp-config-web-httpweb - Hybrid osgi webapp</name>
 	<description>web osgi httpweb bundle</description>
 
 	<packaging>bundle</packaging>
@@ -24,10 +24,10 @@
 				<configuration>
 					<instructions>
 						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
-						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Export-Package>${project.artifactId}.*;version=${project.version}</Export-Package>
 						<Import-Package>*;resolution:=optional</Import-Package>
-						<Bundle-Activator>com.tourapp.web.httpweb.HttpServiceActivator</Bundle-Activator>
+						<Bundle-Activator>${project.artifactId}.HttpServiceActivator</Bundle-Activator>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -202,7 +202,7 @@
 
 	    <dependency>
 			<groupId>org.jbundle.config.web</groupId>
-			<artifactId>org.jbundle.web.httpservice</artifactId>
+			<artifactId>org.jbundle.config.web.httpservice</artifactId>
 			<version>${jbundleVersion}</version>
 	    </dependency>
 	</dependencies>
