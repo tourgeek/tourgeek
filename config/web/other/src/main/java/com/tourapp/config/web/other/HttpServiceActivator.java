@@ -11,6 +11,7 @@ import org.jbundle.base.util.DBConstants;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
 import org.jbundle.util.webapp.files.FilesDefaultServlet;
+import org.jbundle.util.webapp.osgi.BaseOsgiServlet;
 import org.jbundle.util.webapp.osgi.FileHttpContext;
 import org.jbundle.util.webapp.osgi.HttpServiceTracker;
 import org.jbundle.util.webapp.osgi.OSGiFileServlet;
@@ -92,7 +93,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
     {
 //?        dictionary.put(HttpServiceTracker.SERVICE_PID, getServicePid(context));
 //?        dictionary.put(HttpServiceTracker.SERVLET_CLASS, getServletClass(context));
-        properties.put(HttpServiceTracker.WEB_ALIAS, alias); 
+        properties.put(BaseOsgiServlet.ALIAS, alias); 
         
         Servlet servlet = null;
         HttpContext httpContext = null;
@@ -117,10 +118,12 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             {
                 servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
                 this.addRedirectProperties(alias, properties);
+                properties.put(RedirectServlet.TARGET, "http://www.jbundle.org");
             }
             else if (WEBAPP_PROXY.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.proxy.ProxyServlet();
+                properties.put(org.jbundle.util.webapp.proxy.ProxyServlet.PROXY, "proxy =  http://www.jbundle.org:8181/jbundle/simpleservlets/");
             }
             else if (WEBAPP_UPLOAD.equalsIgnoreCase(alias))
             {
@@ -186,7 +189,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
     public void addRedirectProperties(String alias, Dictionary<String, String> properties)
     {
         // This redirects root url to index.html
-        properties.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
+        properties.put(RedirectServlet.MATCH, DBConstants.BLANK);
         String lastPath = alias;
         if (lastPath.lastIndexOf("/") != -1)
             lastPath = lastPath.substring(lastPath.lastIndexOf("/") + 1);
