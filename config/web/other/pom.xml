@@ -59,7 +59,6 @@
 			<artifactId>jbundle-config-dep-all</artifactId>
             <version>${jbundleVersion}</version>
 			<type>pom</type>
-			<scope>provided</scope>	<!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>

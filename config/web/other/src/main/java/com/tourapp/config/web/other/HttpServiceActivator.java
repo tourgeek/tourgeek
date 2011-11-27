@@ -10,6 +10,8 @@ import javax.servlet.Servlet;
 import org.jbundle.base.util.DBConstants;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
+import org.jbundle.util.webapp.files.FilesDefaultServlet;
+import org.jbundle.util.webapp.osgi.FileHttpContext;
 import org.jbundle.util.webapp.osgi.HttpServiceTracker;
 import org.jbundle.util.webapp.osgi.OSGiFileServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
@@ -23,9 +25,9 @@ import org.osgi.util.tracker.ServiceTracker;
 public class HttpServiceActivator extends org.jbundle.config.web.httpservice.MultipleHttpServiceActivator
 {
     public static final String JBUNDLE = "jbundle";
-    public static final String AWSTATS = "awstats";
     public static final String DOWNLOAD = "download";
     public static final String GIT_WEB = "git-web";
+    public static final String AWSTATS = "awstats";
 
     public static final String JCALENDARBUTTON = JBUNDLE + "/jcalendarbutton";
     public static final String SIMPLESERVLETS = JBUNDLE + "/simpleservlets";
@@ -33,14 +35,14 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
     public static final String CALENDARPANEL = JBUNDLE + "/calendarpanel";
     public static final String CALENDARPANEL_JNLP = JBUNDLE + "/calendarpanel/jnlp";
 
-    public static final String WEBAPP_CGI = SIMPLESERVLETS + "/jbundle-util-webapp-cgi";
-    public static final String WEBAPP_FILES = SIMPLESERVLETS + "/jbundle-util-webapp-files";
-    public static final String WEBAPP_PROXY = SIMPLESERVLETS + "/jbundle-util-webapp-proxy";
-    public static final String WEBAPP_REDIRECT = SIMPLESERVLETS + "/jbundle-util-webapp-redirect";
-    public static final String WEBAPP_UPLOAD = SIMPLESERVLETS + "/jbundle-util-webapp-upload";
-    public static final String WEBAPP_WEBDAV = SIMPLESERVLETS + "/jbundle-util-webapp-webdav";
-    public static final String WEBAPP_WEBSITE = SIMPLESERVLETS + "/jbundle-util-webapp-website";
-    public static final String WEBAPP_WEBSTART = SIMPLESERVLETS + "/jbundle-util-webapp-webstart-jnlp";
+    public static final String WEBAPP_FILES = SIMPLESERVLETS + "/files";
+    public static final String WEBAPP_WEBSITE = SIMPLESERVLETS + "/website";
+    public static final String WEBAPP_REDIRECT = SIMPLESERVLETS + "/redirect";
+    public static final String WEBAPP_PROXY = SIMPLESERVLETS + "/proxy";
+    public static final String WEBAPP_UPLOAD = SIMPLESERVLETS + "/upload";
+    public static final String WEBAPP_WEBDAV = SIMPLESERVLETS + "/webdav";
+    public static final String WEBAPP_CGI = SIMPLESERVLETS + "/cgi";
+    public static final String WEBAPP_WEBSTART = SIMPLESERVLETS + "/webstart";
 
     public static final String PICTURES = "pictures";
 
@@ -50,19 +52,19 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
     private String[] aliases = {
             JCALENDARBUTTON,
             JBUNDLE,
-            AWSTATS,
             CALENDARPANEL_JNLP,
             CALENDARPANEL,
+            AWSTATS,
 //x         "demo",
             DOWNLOAD,
             GIT_WEB,
             WEBAPP_CGI,
             WEBAPP_FILES,
-            WEBAPP_PROXY,
+            WEBAPP_WEBSITE,
             WEBAPP_REDIRECT,
+            WEBAPP_PROXY,
             WEBAPP_UPLOAD,
             WEBAPP_WEBDAV,
-            WEBAPP_WEBSITE,
             WEBAPP_WEBSTART,
             NOTES,
             PICTURES,
@@ -71,8 +73,8 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             UPLOAD,
     };
     
-    public String STATIC_WEB_FILES = "staticWebFiles";
-    public String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
+    public final String STATIC_WEB_FILES = "staticWebFiles";
+    public final String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
 
     /**
      * Get all the web aliases to add http services for.
@@ -96,41 +98,49 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
         HttpContext httpContext = null;
         HttpServiceTracker serviceTracker = null; 
         try {
-            if (AWSTATS.equalsIgnoreCase(alias))
+            if (WEBAPP_WEBSITE.equalsIgnoreCase(alias))
             {
-                servlet = new org.apache.catalina.servlets.CGIServlet();
+                //x servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();   // Need to redirect from root url
+                servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
+                this.addRedirectProperties(alias, properties);
+            }
+            else if (WEBAPP_FILES.equalsIgnoreCase(alias))
+            {
+                servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(FilesDefaultServlet.class.getName());
+                if (servlet == null)    // Fallback to OSGiServlet
+                    servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
+                httpContext = new FileHttpContext(context.getBundle());
+                this.addRedirectProperties(alias, properties);
+                properties.put(FilesDefaultServlet.BASE_PATH, "/space/web/");
+            }
+            else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
+            {
+                servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
+                this.addRedirectProperties(alias, properties);
             }
             else if (WEBAPP_PROXY.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.proxy.ProxyServlet();
             }
-            else if (WEBAPP_CGI.equalsIgnoreCase(alias))
-            {
-                servlet = new org.apache.catalina.servlets.CGIServlet();
-            }
-            else if (WEBAPP_FILES.equalsIgnoreCase(alias))
-            {
-                servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
-            }
-            else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
-            {
-                servlet = new org.jbundle.util.webapp.redirect.RegexRedirectServlet();
-            }
             else if (WEBAPP_UPLOAD.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.upload.UploadServlet();
+            }
+            else if (WEBAPP_CGI.equalsIgnoreCase(alias))
+            {
+                servlet = new org.apache.catalina.servlets.CGIServlet();
             }
             else if (WEBAPP_WEBDAV.equalsIgnoreCase(alias))
             {
                 servlet = new org.apache.catalina.servlets.WebdavServlet();
             }
-            else if (WEBAPP_WEBSITE.equalsIgnoreCase(alias))
-            {
-                servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
-            }
             else if (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.jnlpservlet.JnlpServlet();
+            }
+            else if (AWSTATS.equalsIgnoreCase(alias))
+            {
+                servlet = new org.apache.catalina.servlets.CGIServlet();
             }
             else if (DOWNLOAD.equalsIgnoreCase(alias))
             {
@@ -161,17 +171,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
                         )
             {   // Everything else is a pointer to a static resource
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
-                properties.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
-                String lastPath = alias;
-                if (lastPath.lastIndexOf("/") != -1)
-                    lastPath = lastPath.substring(lastPath.lastIndexOf("/") + 1);
-                properties.put(RedirectServlet.TARGET, Utility.addURLPath(lastPath, "index.html"));
-                String urlCodeBase = context.getProperty(STATIC_WEB_FILES);
-                if (urlCodeBase == null)
-                    urlCodeBase = DEFAULT_STATIC_WEB_FILES;
-                if (!"/".equals(alias))
-                    urlCodeBase = Utility.addURLPath(urlCodeBase, alias) + "/"; // Should have trailing '/'
-                properties.put(OSGiFileServlet.BASE_PATH, urlCodeBase);
+                this.addRedirectProperties(alias, properties);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -182,5 +182,20 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             serviceTracker = this.createServiceTracker(context, httpContext, properties);
         serviceTracker.setServlet(servlet);
         return serviceTracker;
+    }
+    public void addRedirectProperties(String alias, Dictionary<String, String> properties)
+    {
+        // This redirects root url to index.html
+        properties.put(RedirectServlet.MATCH_PARAM, DBConstants.BLANK);
+        String lastPath = alias;
+        if (lastPath.lastIndexOf("/") != -1)
+            lastPath = lastPath.substring(lastPath.lastIndexOf("/") + 1);
+        properties.put(RedirectServlet.TARGET, Utility.addURLPath(lastPath, "index.html"));
+        String urlCodeBase = context.getProperty(STATIC_WEB_FILES);
+        if (urlCodeBase == null)
+            urlCodeBase = DEFAULT_STATIC_WEB_FILES;
+        if (!"/".equals(alias))
+            urlCodeBase = Utility.addURLPath(urlCodeBase, alias) + "/"; // Should have trailing '/'
+        properties.put(OSGiFileServlet.BASE_PATH, urlCodeBase);        
     }
 }
