@@ -10,7 +10,7 @@ import javax.servlet.Servlet;
 import org.jbundle.base.util.DBConstants;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
-import org.jbundle.util.webapp.files.FilesDefaultServlet;
+import org.jbundle.util.webapp.files.DefaultServlet;
 import org.jbundle.util.webapp.osgi.BaseOsgiServlet;
 import org.jbundle.util.webapp.osgi.FileHttpContext;
 import org.jbundle.util.webapp.osgi.HttpServiceTracker;
@@ -107,12 +107,12 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (WEBAPP_FILES.equalsIgnoreCase(alias))
             {
-                servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(FilesDefaultServlet.class.getName());
+                servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(DefaultServlet.class.getName());
                 if (servlet == null)    // Fallback to OSGiServlet
                     servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 httpContext = new FileHttpContext(context.getBundle());
                 this.addRedirectProperties(alias, properties);
-                properties.put(FilesDefaultServlet.BASE_PATH, "/space/web/");
+                properties.put(DefaultServlet.BASE_PATH, "/space/web/");
             }
             else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
             {
@@ -139,7 +139,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
             {
-                servlet = new org.jbundle.util.webapp.jnlpservlet.JnlpServlet();
+                servlet = new jnlp.sample.servlet.JnlpDownloadServlet();
             }
             else if (AWSTATS.equalsIgnoreCase(alias))
             {
@@ -163,7 +163,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (CALENDARPANEL_JNLP.equalsIgnoreCase(alias))
             {
-                servlet = new org.jbundle.util.webapp.jnlpservlet.JnlpServlet();
+                servlet = new jnlp.sample.servlet.JnlpDownloadServlet();
             }
             else if ((JBUNDLE.equalsIgnoreCase(alias))
                     || (JCALENDARBUTTON.equalsIgnoreCase(alias))

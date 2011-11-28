@@ -105,9 +105,9 @@
           <artifactId>org.jbundle.util.webapp.osgi</artifactId>
           <version>${jbundle-util-webappVersion}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.jbundle.util.webapp</groupId>
-			<artifactId>org.jbundle.util.webapp.jnlpservlet</artifactId>
+        <dependency>
+            <groupId>org.jbundle.util.osgi.wrapped</groupId>
+            <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
