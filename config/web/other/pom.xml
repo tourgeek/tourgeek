@@ -102,7 +102,7 @@
 		</dependency>
 		<dependency>
           <groupId>org.jbundle.util.webapp</groupId>
-          <artifactId>org.jbundle.util.webapp.osgi</artifactId>
+          <artifactId>org.jbundle.util.webapp.base</artifactId>
           <version>${jbundle-util-webappVersion}</version>
 		</dependency>
         <dependency>

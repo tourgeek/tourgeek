@@ -10,11 +10,11 @@ import javax.servlet.Servlet;
 import org.jbundle.base.util.DBConstants;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
+import org.jbundle.util.webapp.base.BaseWebappServlet;
+import org.jbundle.util.webapp.base.FileHttpContext;
+import org.jbundle.util.webapp.base.HttpServiceTracker;
+import org.jbundle.util.webapp.base.BaseOsgiServlet;
 import org.jbundle.util.webapp.files.DefaultServlet;
-import org.jbundle.util.webapp.osgi.BaseOsgiServlet;
-import org.jbundle.util.webapp.osgi.FileHttpContext;
-import org.jbundle.util.webapp.osgi.HttpServiceTracker;
-import org.jbundle.util.webapp.osgi.OSGiFileServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
 import org.osgi.service.http.HttpContext;
 import org.osgi.util.tracker.ServiceTracker;
@@ -93,7 +93,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
     {
 //?        dictionary.put(HttpServiceTracker.SERVICE_PID, getServicePid(context));
 //?        dictionary.put(HttpServiceTracker.SERVLET_CLASS, getServletClass(context));
-        properties.put(BaseOsgiServlet.ALIAS, alias); 
+        properties.put(BaseWebappServlet.ALIAS, alias); 
         
         Servlet servlet = null;
         HttpContext httpContext = null;
@@ -147,7 +147,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (DOWNLOAD.equalsIgnoreCase(alias))
             {
-                servlet = new org.jbundle.util.webapp.osgi.OSGiFileServlet();
+                servlet = new org.jbundle.util.webapp.base.BaseOsgiServlet();
             }
             else if (GIT_WEB.equalsIgnoreCase(alias))
             {
@@ -199,6 +199,6 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             urlCodeBase = DEFAULT_STATIC_WEB_FILES;
         if (!"/".equals(alias))
             urlCodeBase = Utility.addURLPath(urlCodeBase, alias) + "/"; // Should have trailing '/'
-        properties.put(OSGiFileServlet.BASE_PATH, urlCodeBase);        
+        properties.put(BaseOsgiServlet.BASE_PATH, urlCodeBase);        
     }
 }
