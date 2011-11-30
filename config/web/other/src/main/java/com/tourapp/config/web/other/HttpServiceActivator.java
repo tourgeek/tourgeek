@@ -138,7 +138,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 httpContext = new FileHttpContext(context.getBundle());
                 this.addRedirectProperties(alias, properties);
-                properties.put(DefaultServlet.BASE_PATH, "/space/web/");
+                properties.put(DefaultServlet.BASE_PATH, "/space/web/jbundle/webapp/webdav/");
             }
             else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
             {
@@ -218,6 +218,11 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
         }
         return serviceTracker;
     }
+    /**
+     * Add properties to redirect root to index.html
+     * @param alias
+     * @param properties
+     */
     public void addRedirectProperties(String alias, Dictionary<String, String> properties)
     {
         // This redirects root url to index.html
