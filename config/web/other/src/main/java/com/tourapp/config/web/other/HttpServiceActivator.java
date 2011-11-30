@@ -8,22 +8,27 @@ import java.util.Dictionary;
 import javax.servlet.Servlet;
 
 import org.jbundle.base.util.DBConstants;
+import org.jbundle.base.util.EnvironmentActivator;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
+import org.jbundle.util.webapp.base.BaseOsgiServlet;
 import org.jbundle.util.webapp.base.BaseWebappServlet;
 import org.jbundle.util.webapp.base.FileHttpContext;
 import org.jbundle.util.webapp.base.HttpServiceTracker;
-import org.jbundle.util.webapp.base.BaseOsgiServlet;
+import org.jbundle.util.webapp.base.MultipleHttpServiceActivator;
 import org.jbundle.util.webapp.files.DefaultServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceEvent;
 import org.osgi.service.http.HttpContext;
+import org.osgi.service.log.LogService;
 import org.osgi.util.tracker.ServiceTracker;
 
 /**
  * Start up the web service listener.
  * @author don
  */
-public class HttpServiceActivator extends org.jbundle.config.web.httpservice.MultipleHttpServiceActivator
+public class HttpServiceActivator extends MultipleHttpServiceActivator
 {
     public static final String JBUNDLE = "jbundle";
     public static final String DOWNLOAD = "download";
@@ -31,19 +36,19 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
     public static final String AWSTATS = "awstats";
 
     public static final String JCALENDARBUTTON = JBUNDLE + "/jcalendarbutton";
-    public static final String SIMPLESERVLETS = JBUNDLE + "/simpleservlets";
+    public static final String WEBAPP = JBUNDLE + "/webapp";
     public static final String OSGI_WEBSTART = JBUNDLE + "/osgi-webstart";
     public static final String CALENDARPANEL = JBUNDLE + "/calendarpanel";
     public static final String CALENDARPANEL_JNLP = JBUNDLE + "/calendarpanel/jnlp";
 
-    public static final String WEBAPP_FILES = SIMPLESERVLETS + "/files";
-    public static final String WEBAPP_WEBSITE = SIMPLESERVLETS + "/website";
-    public static final String WEBAPP_REDIRECT = SIMPLESERVLETS + "/redirect";
-    public static final String WEBAPP_PROXY = SIMPLESERVLETS + "/proxy";
-    public static final String WEBAPP_UPLOAD = SIMPLESERVLETS + "/upload";
-    public static final String WEBAPP_WEBDAV = SIMPLESERVLETS + "/webdav";
-    public static final String WEBAPP_CGI = SIMPLESERVLETS + "/cgi";
-    public static final String WEBAPP_WEBSTART = SIMPLESERVLETS + "/webstart";
+    public static final String WEBAPP_FILES = WEBAPP + "/files";
+    public static final String WEBAPP_WEBSITE = WEBAPP + "/website";
+    public static final String WEBAPP_REDIRECT = WEBAPP + "/redirect";
+    public static final String WEBAPP_PROXY = WEBAPP + "/proxy";
+    public static final String WEBAPP_UPLOAD = WEBAPP + "/upload";
+    public static final String WEBAPP_WEBDAV = WEBAPP + "/webdav";
+    public static final String WEBAPP_CGI = WEBAPP + "/cgi";
+    public static final String WEBAPP_WEBSTART = WEBAPP + "/webstart";
 
     public static final String PICTURES = "pictures";
 
@@ -55,11 +60,11 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             JBUNDLE,
             CALENDARPANEL_JNLP,
             CALENDARPANEL,
-            AWSTATS,
+//            AWSTATS,
 //x         "demo",
             DOWNLOAD,
-            GIT_WEB,
-            WEBAPP_CGI,
+//            GIT_WEB,
+//            WEBAPP_CGI,
             WEBAPP_FILES,
             WEBAPP_WEBSITE,
             WEBAPP_REDIRECT,
@@ -69,13 +74,33 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             WEBAPP_WEBSTART,
             NOTES,
             PICTURES,
-            SIMPLESERVLETS,
+            WEBAPP,
             OSGI_WEBSTART,
             UPLOAD,
     };
     
     public final String STATIC_WEB_FILES = "staticWebFiles";
     public final String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
+
+    /**
+     * Called when the http service tracker come up or is shut down.
+     * Start or stop the bundle on start/stop.
+     * @param event The service event.
+     */
+    @Override
+    public void serviceChanged(ServiceEvent event) {
+        if (event.getType() == ServiceEvent.REGISTERED)
+        { // Osgi Service is up, Okay to start the server
+            ClassServiceUtility.log(context, LogService.LOG_INFO, "Starting Http Service tracker");
+            if (httpServiceTracker == null)
+            {
+                BundleContext context = event.getServiceReference().getBundle().getBundleContext();
+                this.checkDependentServicesAndStartup(context, EnvironmentActivator.class.getName(), null);
+            }
+        }
+        if (event.getType() == ServiceEvent.UNREGISTERING)
+            super.serviceChanged(event);    // httpService.close();
+    }
 
     /**
      * Get all the web aliases to add http services for.
@@ -131,7 +156,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (WEBAPP_CGI.equalsIgnoreCase(alias))
             {
-                servlet = new org.apache.catalina.servlets.CGIServlet();
+//                servlet = new org.apache.catalina.servlets.CGIServlet();
             }
             else if (WEBAPP_WEBDAV.equalsIgnoreCase(alias))
             {
@@ -143,7 +168,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (AWSTATS.equalsIgnoreCase(alias))
             {
-                servlet = new org.apache.catalina.servlets.CGIServlet();
+//                servlet = new org.apache.catalina.servlets.CGIServlet();
             }
             else if (DOWNLOAD.equalsIgnoreCase(alias))
             {
@@ -151,7 +176,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             }
             else if (GIT_WEB.equalsIgnoreCase(alias))
             {
-                servlet = new org.apache.catalina.servlets.CGIServlet();
+//                servlet = new org.apache.catalina.servlets.CGIServlet();
             }
             else if (NOTES.equalsIgnoreCase(alias))
             {
@@ -168,7 +193,7 @@ public class HttpServiceActivator extends org.jbundle.config.web.httpservice.Mul
             else if ((JBUNDLE.equalsIgnoreCase(alias))
                     || (JCALENDARBUTTON.equalsIgnoreCase(alias))
                     || (CALENDARPANEL.equalsIgnoreCase(alias))
-                    || (SIMPLESERVLETS.equalsIgnoreCase(alias))
+                    || (WEBAPP.equalsIgnoreCase(alias))
                     || (OSGI_WEBSTART.equalsIgnoreCase(alias))
                     || (PICTURES.equalsIgnoreCase(alias))
                         )

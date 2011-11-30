@@ -76,12 +76,12 @@
 			<version>${jbundle-util-webappVersion}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
-		<dependency>
+		<!-- dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.cgi</artifactId>
 			<version>${jbundle-util-webappVersion}</version>
-			<scope>provided</scope> <!-- Hey this is OSGi -->
-		</dependency>
+			<scope>provided</scope>
+		</dependency -->
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.upload</artifactId>
