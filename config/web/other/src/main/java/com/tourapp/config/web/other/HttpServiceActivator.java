@@ -72,7 +72,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             WEBAPP_PROXY,
             WEBAPP_UPLOAD,
             WEBAPP_WEBDAV,
-            WEBAPP_WEBSTART,
+//            WEBAPP_WEBSTART,
             NOTES,
             PICTURES,
             WEBAPP,
@@ -208,11 +208,14 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (httpContext == null)   
-            httpContext = this.getHttpContext();
-        if (serviceTracker == null)
-            serviceTracker = this.createServiceTracker(context, httpContext, properties);
-        serviceTracker.setServlet(servlet);
+        if (servlet != null)
+        {
+            if (httpContext == null)   
+                httpContext = this.getHttpContext();
+            if (serviceTracker == null)
+                serviceTracker = this.createServiceTracker(context, httpContext, properties);
+            serviceTracker.setServlet(servlet);
+        }
         return serviceTracker;
     }
     public void addRedirectProperties(String alias, Dictionary<String, String> properties)
