@@ -16,6 +16,7 @@ import org.jbundle.util.webapp.base.BaseWebappServlet;
 import org.jbundle.util.webapp.base.FileHttpContext;
 import org.jbundle.util.webapp.base.HttpServiceTracker;
 import org.jbundle.util.webapp.base.MultipleHttpServiceActivator;
+import org.jbundle.util.webapp.base.WebappServlet;
 import org.jbundle.util.webapp.files.DefaultServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
 import org.osgi.framework.BundleContext;
@@ -148,7 +149,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             else if (WEBAPP_PROXY.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.proxy.ProxyServlet();
-                properties.put(org.jbundle.util.webapp.proxy.ProxyServlet.PROXY, "proxy =  http://www.jbundle.org:8181/jbundle/simpleservlets/");
+                properties.put(org.jbundle.util.webapp.proxy.ProxyServlet.PROXY, "http://www.jbundle.org:8181/jbundle/webapp/");
             }
             else if (WEBAPP_UPLOAD.equalsIgnoreCase(alias))
             {
@@ -160,11 +161,14 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             }
             else if (WEBAPP_WEBDAV.equalsIgnoreCase(alias))
             {
-                servlet = new org.apache.catalina.servlets.WebdavServlet();
+                servlet = new org.jbundle.util.webapp.webdav.WebdavServlet();
+                properties.put(WebappServlet.BASE_PATH, "/space/web/jbundle/webapp/webdav");
+                properties.put("readonly", "true"); // false
+                properties.put("listings", "true");
             }
             else if (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
             {
-                servlet = new jnlp.sample.servlet.JnlpDownloadServlet();
+//                servlet = new jnlp.sample.servlet.JnlpDownloadServlet();
             }
             else if (AWSTATS.equalsIgnoreCase(alias))
             {
