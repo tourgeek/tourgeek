@@ -137,8 +137,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                 if (servlet == null)    // Fallback to OSGiServlet
                     servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 httpContext = new FileHttpContext(context.getBundle());
-                this.addRedirectProperties(alias, properties);
-                properties.put(DefaultServlet.BASE_PATH, "/space/web/jbundle/webapp/webdav/");
+                String path = "/space/web/";
+                properties.put(DefaultServlet.BASE_PATH, path);
             }
             else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
             {
