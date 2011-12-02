@@ -36,6 +36,8 @@ import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
 import com.tourapp.thin.app.booking.entry.search.SearchConstants;
 import com.tourapp.thin.tour.product.base.db.Product;
+import org.jbundle.thin.base.screen.JScreenConstants;
+import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Main Class for Product Context screen.
@@ -130,7 +132,7 @@ public class JProductContextScreen extends JBaseRichScreen
             ImageIcon icon = this.getBaseApplet().loadImageIcon(Constants.FORM);
             JButton button = new JButton(icon);
             button.setOpaque(false);
-            button.setMargin(Constants.NO_INSETS);
+            button.setMargin(JScreenConstants.NO_INSETS);
             button.setName(Constants.FORM);
             panel.add(button);
             button.addActionListener(this);
@@ -178,7 +180,7 @@ public class JProductContextScreen extends JBaseRichScreen
             Icon icon = applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType);
             JButton button = new JButton(strDesc, icon);
             button.setOpaque(false);
-            button.setMargin(Constants.NO_INSETS);
+            button.setMargin(JScreenConstants.NO_INSETS);
             button.setAlignmentX(LEFT_ALIGNMENT);
             button.setAlignmentY(TOP_ALIGNMENT);
             panel.add(Box.createHorizontalStrut(4));

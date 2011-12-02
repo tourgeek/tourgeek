@@ -26,6 +26,7 @@ import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
@@ -152,7 +153,7 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
             Util.setEnabled(component1, false);
 
             JButton component2 = new JButton(applet.loadImageIcon(Constants.FORM, Constants.FORM));
-            component2.setMargin(Constants.NO_INSETS);
+            component2.setMargin(JScreenConstants.NO_INSETS);
             component2.addActionListener(this);   // Requery catalog on change
 
             JMultiFieldPanel panel = new JMultiFieldPanel(fieldInfo, component1, component2);

@@ -49,6 +49,7 @@ import org.jbundle.thin.base.screen.util.LinkedConverter;
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Base JScreen with support for a bunch of cool controls.
@@ -172,7 +173,7 @@ public class JBaseRichScreen extends JScreen
 
         JButton buttonDate = new JButton(applet.loadImageIcon(CALENDAR, CALENDAR));
         buttonDate.setToolTipText(applet.getString("CalendarTip"));
-        buttonDate.setMargin(Constants.NO_INSETS);
+        buttonDate.setMargin(JScreenConstants.NO_INSETS);
         buttonDate.setPreferredSize(SearchConstants.DEFAULT_BUTTON_SIZE);
         buttonDate.setName(DATE_BUTTON);
         panelDate.add(buttonDate);

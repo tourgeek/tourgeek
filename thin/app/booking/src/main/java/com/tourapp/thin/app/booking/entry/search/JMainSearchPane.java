@@ -53,6 +53,7 @@ import com.tourapp.thin.tour.booking.db.Booking;
 import com.tourapp.thin.tour.booking.db.Tour;
 import com.tourapp.thin.tour.product.base.db.PricingStatus;
 import com.tourapp.thin.tour.product.tour.db.TourStatus;
+import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Main Class for applet OrderEntry
@@ -216,7 +217,7 @@ public class JMainSearchPane extends JBaseRichScreen
         buttonPanel.add(button = new JToggleButton(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strType, strType), bSelected));
         button.setToolTipText(applet.getString(strType + SearchConstants.TIP));
         buttonGroup.add(button);
-        button.setMargin(Constants.NO_INSETS);
+        button.setMargin(JScreenConstants.NO_INSETS);
         button.addActionListener(this);
         button.setName(SearchConstants.SEARCH_BUTTON);
     }

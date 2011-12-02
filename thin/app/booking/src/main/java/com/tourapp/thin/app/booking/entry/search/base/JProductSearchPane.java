@@ -49,6 +49,7 @@ import com.tourapp.thin.app.booking.entry.context.JContextPanel;
 import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
 import com.tourapp.thin.app.booking.entry.search.JMainSearchPane;
 import com.tourapp.thin.app.booking.entry.search.SearchConstants;
+import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Product search parameter input screen.
@@ -349,7 +350,7 @@ public class JProductSearchPane extends JBaseScreen
             strLookupIcon = "Location";
         JButton buttonLocation = new JButton(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strLookupIcon, strLookupIcon));
         buttonLocation.setPreferredSize(new Dimension(20, 22));
-        buttonLocation.setMargin(Constants.NO_INSETS);
+        buttonLocation.setMargin(JScreenConstants.NO_INSETS);
         buttonLocation.setName(strComponentName + SearchConstants.BUTTON);
         buttonLocation.setToolTipText(applet.getString(strLookupIcon + Constants.TIP));
         panelLocation.add(buttonLocation);
