@@ -4,30 +4,33 @@
  */
 package com.tourapp.tour.product.remote.search;
 
-import java.util.Map;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.Record;
-import org.jbundle.base.db.filter.CompareFileFilter;
-import org.jbundle.base.field.ReferenceField;
-import org.jbundle.base.remote.BaseSession;
-import org.jbundle.base.util.DBConstants;
-import org.jbundle.thin.base.message.BaseMessageFilter;
-import org.jbundle.thin.base.remote.RemoteException;
-
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.tour.base.db.City;
-import com.tourapp.tour.product.air.db.Air;
-import com.tourapp.tour.product.air.db.Airline;
-import com.tourapp.tour.product.air.event.AirRateMessageListener;
-import com.tourapp.tour.product.air.event.GetAirCostHandler;
-import com.tourapp.tour.product.air.screen.AirScreenRecord;
-import com.tourapp.tour.product.base.db.Product;
-import com.tourapp.tour.product.base.db.ProductControl;
-import com.tourapp.tour.product.base.db.ProductScreenRecord;
-import com.tourapp.tour.product.base.db.TransportProduct;
-import com.tourapp.tour.product.base.event.GetProductCostHandler;
-import com.tourapp.tour.product.base.event.ProductRateMessageListener;
-import com.tourapp.tour.product.remote.ProductSession;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.product.remote.*;
+import org.jbundle.thin.base.remote.*;
+import org.jbundle.base.remote.*;
+import org.jbundle.thin.opt.location.*;
+import com.tourapp.thin.app.booking.entry.search.*;
+import com.tourapp.tour.product.base.db.*;
+import org.jbundle.thin.base.message.*;
+import com.tourapp.tour.product.air.event.*;
+import com.tourapp.tour.product.base.event.*;
+import com.tourapp.tour.product.air.screen.*;
+import com.tourapp.tour.base.db.*;
 
 /**
  *  AirSearchSession - The remote side of the thin air search.

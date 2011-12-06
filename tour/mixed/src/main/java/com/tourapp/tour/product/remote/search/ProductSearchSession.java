@@ -4,54 +4,35 @@
  */
 package com.tourapp.tour.product.remote.search;
 
-import java.text.ParseException;
-import java.util.Date;
-import java.util.Map;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.GridTable;
-import org.jbundle.base.db.Record;
-import org.jbundle.base.db.event.FileListener;
-import org.jbundle.base.db.event.FreeOnFreeHandler;
-import org.jbundle.base.db.event.MoveOnValidHandler;
-import org.jbundle.base.db.filter.ExtractRangeFilter;
-import org.jbundle.base.field.DateTimeField;
-import org.jbundle.base.field.ReferenceField;
-import org.jbundle.base.field.event.FieldListener;
-import org.jbundle.base.field.event.MoveOnChangeHandler;
-import org.jbundle.base.field.event.ReadSecondaryHandler;
-import org.jbundle.base.remote.BaseSession;
-import org.jbundle.base.remote.db.Session;
-import org.jbundle.base.remote.db.TableSession;
-import org.jbundle.base.util.DBConstants;
-import org.jbundle.base.util.DBParams;
-import org.jbundle.base.util.MenuConstants;
-import org.jbundle.model.DBException;
-import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.message.BaseMessageFilter;
-import org.jbundle.thin.base.message.BaseMessageManager;
-import org.jbundle.thin.base.message.MessageConstants;
-import org.jbundle.thin.base.remote.RemoteException;
-import org.jbundle.thin.base.util.Application;
-import org.jbundle.thin.opt.location.JTreePanel;
-
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.tour.acctpay.db.Vendor;
-import com.tourapp.tour.base.db.City;
-import com.tourapp.tour.base.db.Continent;
-import com.tourapp.tour.base.db.Country;
-import com.tourapp.tour.base.db.Currencys;
-import com.tourapp.tour.base.db.Location;
-import com.tourapp.tour.base.db.Region;
-import com.tourapp.tour.base.db.State;
-import com.tourapp.tour.booking.db.Booking;
-import com.tourapp.tour.product.base.db.Product;
-import com.tourapp.tour.product.base.db.ProductControl;
-import com.tourapp.tour.product.base.db.ProductScreenRecord;
-import com.tourapp.tour.product.base.event.GetProductAvailabilityHandler;
-import com.tourapp.tour.product.base.event.GetProductCostHandler;
-import com.tourapp.tour.product.base.event.ProductAvailabilityMessageListener;
-import com.tourapp.tour.product.base.event.ProductRateMessageListener;
-import com.tourapp.tour.product.base.screen.CalcProductAmountHome;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.base.remote.db.*;
+import org.jbundle.thin.base.remote.*;
+import com.tourapp.tour.product.base.db.*;
+import org.jbundle.thin.opt.location.*;
+import com.tourapp.tour.product.remote.*;
+import com.tourapp.thin.app.booking.entry.search.*;
+import org.jbundle.base.remote.*;
+import com.tourapp.tour.base.db.*;
+import com.tourapp.tour.acctpay.db.*;
+import java.text.*;
+import org.jbundle.thin.base.message.*;
+import com.tourapp.tour.product.base.event.*;
+import com.tourapp.tour.product.base.screen.*;
+import com.tourapp.tour.booking.db.*;
 
 /**
  *  ProductSearchSession - Base class for the remote side of product searches.

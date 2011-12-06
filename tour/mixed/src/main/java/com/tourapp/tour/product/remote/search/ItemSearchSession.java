@@ -8,7 +8,6 @@ import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.util.*;
 import org.jbundle.thin.base.db.*;
 import org.jbundle.base.db.event.*;
@@ -22,6 +21,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.item.db.*;
 import com.tourapp.tour.product.remote.*;
+import org.jbundle.thin.base.remote.*;
 import org.jbundle.base.remote.*;
 import com.tourapp.tour.product.item.event.*;
 import com.tourapp.tour.product.base.event.*;
