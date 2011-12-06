@@ -3,12 +3,12 @@
  */
 package com.tourapp.thin.app.booking.entry.pax;
 
-import java.rmi.RemoteException;
 import java.util.Date;
 
 import org.jbundle.model.DBException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteTable;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -57,7 +57,6 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      * Add add this data to the file.
      * @param data A vector object containing the raw data for the record.
      * @exception Exception File exception.
-     * @exception RemoteException RMI exception.
      */
     public Object add(Object data, int iOpenMode) throws DBException, RemoteException
     {
@@ -94,7 +93,6 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      * Update the current record.
      * @param The data to update.
      * @exception DBException File exception.
-     * @exception RemoteException RMI exception.
      */
     public void set(Object data, int iOpenMode) throws DBException, RemoteException
     {
@@ -104,7 +102,6 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      * Delete the current record.
      * @param - This is a dummy param, because this call conflicts with a call in EJBHome.
      * @exception DBException File exception.
-     * @exception RemoteException RMI exception.
      */
     public void remove(Object data, int iOpenMode) throws DBException, RemoteException
     {
@@ -118,7 +115,6 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      * @return If I read several records, this is a vector of the returned records.
      * @return If at EOF, or error, returns the error code as a Integer.
      * @exception DBException File exception.
-     * @exception RemoteException RMI exception.
      */
     public Object doMove(int iRelPosition, int iRecordCount) throws DBException, RemoteException
     {
@@ -135,7 +131,6 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      * @param objKeyData The data for the seek (The raw data if a single field, a BaseBuffer if multiple).
      * @returns The record (as a vector) if successful, The return code (as an Boolean) if not.
      * @exception DBException File exception.
-     * @exception RemoteException RMI exception.
      */
     public Object seek(String strSeekSign, int iOpenMode, String strKeyArea, String strFields, Object objKeyData) throws DBException, RemoteException
     {
@@ -157,7 +152,6 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      * @param iRowCount The number of rows to retrieve (Used only by EjbCachedTable).
      * @return The record(s) or an error code as an Integer.
      * @exception Exception File exception.
-     * @exception RemoteException RMI exception.
      */
     public Object get(int iRowIndex, int iRowCount) throws DBException, RemoteException
     {

@@ -4,26 +4,14 @@
  */
 package com.tourapp.tour.booking.remote.booking;
 
-import java.awt.*;
-import java.util.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.db.filter.SubFileFilter;
+import org.jbundle.base.remote.BaseSession;
+import org.jbundle.base.remote.db.Session;
+import org.jbundle.thin.base.remote.RemoteException;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.base.remote.db.*;
-import org.jbundle.base.remote.*;
-import com.tourapp.tour.booking.detail.db.*;
-import java.rmi.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.booking.db.Booking;
+import com.tourapp.tour.booking.detail.db.BookingLine;
 
 /**
  *  BookingLineSession - Booking line item detail session.

@@ -4,32 +4,35 @@
  */
 package com.tourapp.tour.booking.remote.booking;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Date;
+import java.util.Map;
+import java.util.Properties;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.base.remote.opt.*;
-import java.rmi.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.thin.app.booking.entry.search.*;
-import java.text.*;
-import com.tourapp.tour.product.tour.db.*;
-import org.jbundle.base.remote.*;
-import org.jbundle.base.message.trx.message.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.remote.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.field.DateField;
+import org.jbundle.base.field.DateTimeField;
+import org.jbundle.base.field.RecordReferenceField;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.message.trx.message.TrxMessageHeader;
+import org.jbundle.base.remote.BaseSession;
+import org.jbundle.base.remote.opt.TableModelSession;
+import org.jbundle.base.util.DBConstants;
+import org.jbundle.base.util.DBParams;
+import org.jbundle.base.util.Utility;
+import org.jbundle.model.DBException;
+import org.jbundle.thin.base.db.Constants;
+import org.jbundle.thin.base.remote.RemoteException;
+
+import com.tourapp.thin.app.booking.entry.search.SearchConstants;
+import com.tourapp.tour.booking.db.Booking;
+import com.tourapp.tour.booking.db.Tour;
+import com.tourapp.tour.booking.detail.db.BookingDetail;
+import com.tourapp.tour.product.base.db.BookingControl;
+import com.tourapp.tour.product.base.db.MealPlan;
+import com.tourapp.tour.product.base.db.ProductType;
+import com.tourapp.tour.product.remote.ProductSession;
+import com.tourapp.tour.product.tour.db.TourHeader;
+import com.tourapp.tour.product.tour.db.TourTypeField;
 
 /**
  *  BookingDetailSession - .

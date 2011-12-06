@@ -4,26 +4,24 @@
  */
 package com.tourapp.tour.request.remote;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Map;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.base.remote.db.*;
-import com.tourapp.tour.request.db.*;
-import java.rmi.*;
-import org.jbundle.base.remote.*;
-import com.tourapp.tour.base.db.shared.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.db.filter.SubFileFilter;
+import org.jbundle.base.field.BaseField;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.remote.BaseSession;
+import org.jbundle.base.remote.db.Session;
+import org.jbundle.model.DBException;
+import org.jbundle.thin.base.remote.RemoteException;
+
+import com.tourapp.tour.base.db.shared.Brochure;
+import com.tourapp.tour.request.db.Bundle;
+import com.tourapp.tour.request.db.BundleDetail;
+import com.tourapp.tour.request.db.Request;
+import com.tourapp.tour.request.db.RequestControl;
+import com.tourapp.tour.request.db.RequestDetail;
+import com.tourapp.tour.request.db.RequestInput;
 
 /**
  *  RequestSession - Remote side of the thin brochure request session.

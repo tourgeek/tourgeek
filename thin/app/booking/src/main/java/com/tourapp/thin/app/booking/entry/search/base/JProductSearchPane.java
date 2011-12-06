@@ -16,7 +16,6 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.rmi.RemoteException;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -31,11 +30,13 @@ import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.JScreen;
+import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
 import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.util.JDescTextField;
@@ -49,7 +50,6 @@ import com.tourapp.thin.app.booking.entry.context.JContextPanel;
 import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
 import com.tourapp.thin.app.booking.entry.search.JMainSearchPane;
 import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Product search parameter input screen.

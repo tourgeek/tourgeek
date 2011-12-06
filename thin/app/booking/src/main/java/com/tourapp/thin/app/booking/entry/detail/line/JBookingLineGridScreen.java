@@ -11,7 +11,6 @@ package com.tourapp.thin.app.booking.entry.detail.line;
  *  @version 1.0.0.
  */
 import java.awt.Container;
-import java.rmi.RemoteException;
 
 import javax.swing.JMenuBar;
 
@@ -21,6 +20,7 @@ import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.grid.JGridScreen;

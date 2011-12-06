@@ -4,36 +4,40 @@
  */
 package com.tourapp.tour.util.test.hotel.thin;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Hashtable;
+import java.util.Map;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.base.remote.db.*;
-import org.jbundle.base.remote.*;
-import java.rmi.*;
-import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.util.test.hotel.*;
-import com.tourapp.tour.product.hotel.db.*;
-import org.jbundle.base.message.trx.message.*;
-import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.message.hotel.response.*;
-import org.jbundle.thin.base.message.session.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.message.hotel.response.data.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.message.trx.message.TrxMessageHeader;
+import org.jbundle.base.remote.BaseSession;
+import org.jbundle.base.remote.db.Session;
+import org.jbundle.base.util.DBConstants;
+import org.jbundle.main.msg.db.MessageInfoType;
+import org.jbundle.main.msg.db.MessageTransport;
+import org.jbundle.main.msg.db.MessageType;
+import org.jbundle.main.msg.db.ProcessType;
+import org.jbundle.main.msg.db.RequestType;
+import org.jbundle.model.DBException;
+import org.jbundle.thin.base.message.BaseMessage;
+import org.jbundle.thin.base.message.BaseMessageFilter;
+import org.jbundle.thin.base.message.BaseMessageHeader;
+import org.jbundle.thin.base.message.BaseMessageManager;
+import org.jbundle.thin.base.message.MapMessage;
+import org.jbundle.thin.base.message.MessageConstants;
+import org.jbundle.thin.base.message.session.SessionMessageHeader;
+import org.jbundle.thin.base.remote.RemoteException;
+import org.jbundle.thin.base.util.Application;
+
+import com.tourapp.tour.booking.detail.db.BookingDetail;
+import com.tourapp.tour.message.base.request.ProductRequest;
+import com.tourapp.tour.message.base.response.BaseProductResponse;
+import com.tourapp.tour.message.hotel.response.HotelRateResponse;
+import com.tourapp.tour.message.hotel.response.data.HotelRateResponseMessageData;
+import com.tourapp.tour.product.base.db.PaxCategory;
+import com.tourapp.tour.product.base.db.Product;
+import com.tourapp.tour.product.hotel.db.Hotel;
+import com.tourapp.tour.util.test.hotel.TestHotelRateScreenRecord;
 
 /**
  *  HotelSession - .

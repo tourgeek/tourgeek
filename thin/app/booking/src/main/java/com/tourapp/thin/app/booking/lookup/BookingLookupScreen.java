@@ -12,7 +12,6 @@ package com.tourapp.thin.app.booking.lookup;
  */
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.rmi.RemoteException;
 
 import javax.swing.JComponent;
 import javax.swing.JMenu;
@@ -24,6 +23,7 @@ import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.Params;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.BaseApplet;

@@ -3,13 +3,12 @@
  */
 package com.tourapp.thin.app.booking.entry.pax;
 
-import java.rmi.RemoteException;
-
 import org.jbundle.model.DBException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.client.SyncRemoteTable;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteTable;
 
 
@@ -62,7 +61,6 @@ public class SubFileRemoteTable extends SyncRemoteTable
      * Add add this data to the file.
      * @param data A vector object containing the raw data for the record.
      * @exception Exception File exception.
-     * @exception RemoteException RMI exception.
      */
     public Object add(Object data, int iOpenMode) throws DBException, RemoteException
     {

@@ -11,7 +11,6 @@ package com.tourapp.thin.app.booking.entry.search.base;
  *  @version 1.0.0.
  */
 import java.awt.Container;
-import java.rmi.RemoteException;
 import java.text.DateFormat;
 import java.text.FieldPosition;
 import java.util.Calendar;
@@ -33,6 +32,7 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
 import org.jbundle.thin.base.db.converter.SecondaryRecordConverter;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.BaseApplet;
