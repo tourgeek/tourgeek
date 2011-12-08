@@ -17,6 +17,7 @@ import javax.swing.BoxLayout;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
+import org.jbundle.model.Remote;
 import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -144,7 +145,7 @@ public class JAirScreen extends JProductScreen
 
             FieldList record = new Airline(this);
             this.addFieldList(record);
-            RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)this.getFieldList().getTable()).getRemoteTableType(java.rmi.server.RemoteStub.class);
+            RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)this.getFieldList().getTable()).getRemoteTableType(Remote.class);
             boolean bCacheTable = true;
 
             fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, record, Airline.DESCRIPTION, bCacheTable, Airline.ID, null, null);

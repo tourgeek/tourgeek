@@ -25,6 +25,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import org.jbundle.model.Remote;
 import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
@@ -93,7 +94,7 @@ public class JProductScreen extends JScreen
             recordIn.setTable(null);
             // No need to free the recordIn as it is freed from it's screen (just make sure the remote table/session is not freed)
             
-            remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)table).getRemoteTableType(java.rmi.server.RemoteStub.class);
+            remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)table).getRemoteTableType(Remote.class);
         }
         if (remoteSession != null)
         {   // Always
@@ -210,7 +211,7 @@ public class JProductScreen extends JScreen
 
             FieldList record = new City(this);
             this.addFieldList(record);
-            RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)this.getFieldList().getTable()).getRemoteTableType(java.rmi.server.RemoteStub.class);
+            RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)this.getFieldList().getTable()).getRemoteTableType(Remote.class);
             boolean bCacheTable = true;
             TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
             screenMain.linkRemoteSessionTable(remoteSession, record, bCacheTable);

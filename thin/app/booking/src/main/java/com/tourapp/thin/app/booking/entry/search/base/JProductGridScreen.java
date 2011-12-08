@@ -33,6 +33,7 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
+import org.jbundle.model.Remote;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -159,7 +160,7 @@ public class JProductGridScreen extends JGridScreen
             BaseMessageReceiver handler = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.SESSION_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
 
             FieldTable tableMain = this.getFieldList().getTable();
-            org.jbundle.thin.base.remote.RemoteTable remoteSessionMain = ((org.jbundle.thin.base.db.client.RemoteFieldTable)tableMain).getRemoteTableType(java.rmi.server.RemoteStub.class);
+            org.jbundle.thin.base.remote.RemoteTable remoteSessionMain = ((org.jbundle.thin.base.db.client.RemoteFieldTable)tableMain).getRemoteTableType(Remote.class);
             JMessageListener listenerForSession = new ModelMessageHandler(null, this.getGridModel())
             {
                 /**

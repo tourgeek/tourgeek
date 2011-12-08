@@ -22,6 +22,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.KeyStroke;
 
+import org.jbundle.model.Remote;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
@@ -94,7 +95,7 @@ public class JItinScreen extends JBaseScreen
         // Now add listeners to update screen when data changes
         FieldList recTour = tourAppScreen.getTourRecord();
         FieldTable table = recTour.getTable();
-        RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable) table).getRemoteTableType(java.rmi.server.RemoteStub.class);
+        RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable) table).getRemoteTableType(Remote.class);
 
         BaseMessageManager messageManager = tourAppScreen.getBaseApplet().getApplication().getMessageManager();
         BaseMessageReceiver messageReceiver = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();

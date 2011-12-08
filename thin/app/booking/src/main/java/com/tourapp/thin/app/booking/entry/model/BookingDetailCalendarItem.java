@@ -11,11 +11,12 @@ import javax.swing.ImageIcon;
 
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
+import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.popup.ProductTypeInfo;
+import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.util.calendarpanel.model.CalendarConstants;
 import org.jbundle.util.calendarpanel.model.CalendarItem;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
@@ -272,32 +273,32 @@ public class BookingDetailCalendarItem extends BookingDetail
     }
     public void setAvailability(int p1) throws java.rmi.RemoteException {
     }
-    public double getPrice() throws java.rmi.RemoteException {
+    public double getPrice() throws RemoteException {
         return 0;
     }
-    public void setPrice(double p1) throws java.rmi.RemoteException {
+    public void setPrice(double p1) throws RemoteException {
     }
-    public int getAvailability(int p1) throws java.rmi.RemoteException {
+    public int getAvailability(int p1) throws RemoteException {
         return 0;
     }
-    public java.lang.String getProductType() throws java.rmi.RemoteException {
+    public java.lang.String getProductType() throws RemoteException {
         return ProductType.HOTEL;
     }
-//  public void addCategory(final com.tourapp.jfo.product.SearchableCatalog p1) throws java.rmi.RemoteException {
+//  public void addCategory(final com.tourapp.jfo.product.SearchableCatalog p1) throws RemoteException {
 //  }
-    public void setDescriptionURL(java.lang.String p1,int p2) throws java.rmi.RemoteException {
+    public void setDescriptionURL(java.lang.String p1,int p2) throws RemoteException {
     }
 //  public com.tourapp.jfo.product.SearchableCatalog getNextCategory() throws java.rmi.RemoteException {
 //      return null;
 //  }
-    public java.lang.String getDescriptionURL(int p1) throws java.rmi.RemoteException {
+    public java.lang.String getDescriptionURL(int p1) throws RemoteException {
         return null;
     }
-    public void setDescription(java.lang.String p1) throws java.rmi.RemoteException {
+    public void setDescription(java.lang.String p1) throws RemoteException {
     }
-    public void setID(final java.lang.Object p1) throws java.rmi.RemoteException {
+    public void setID(final java.lang.Object p1) throws RemoteException {
     }
-    public java.lang.Object getID() throws java.rmi.RemoteException {
+    public java.lang.Object getID() throws RemoteException {
         return null;
     }
 }
