@@ -151,7 +151,7 @@ public class ModifyTourSubField extends ReferenceField
                                 BaseMessageManager messageManager = application.getMessageManager();
                                 BaseMessageReceiver receiver = (BaseMessageReceiver)messageManager.getMessageQueue(strQueueName, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
                                 BaseScreen screenTarget = (BaseScreen)sourceSField.getParentScreen();
-                                receiver.createDefaultFilter(screenTarget, true);
+                                receiver.createDefaultFilter(screenTarget);
                             }
                         } catch (DBException ex) {
                             ex.printStackTrace();
