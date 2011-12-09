@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
 import com.tourapp.thin.tour.product.air.db.Air;
@@ -92,11 +93,11 @@ public class JAirContextScreen extends JProductContextScreen
             panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
             
             JComponent labelDesc = super.createScreenComponent(fieldInfo);
-            Util.setEnabled(labelDesc, false);
+            ThinUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             labelDesc = super.createScreenComponent(this.getFieldList().getField(Air.ETD));
-            Util.setEnabled(labelDesc, false);
+            ThinUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             return panel;
@@ -108,15 +109,15 @@ public class JAirContextScreen extends JProductContextScreen
             panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
             
             JComponent labelDesc = super.createScreenComponent(fieldInfo);
-            Util.setEnabled(labelDesc, false);
+            ThinUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             labelDesc = super.createScreenComponent(this.getFieldList().getField(Air.ARRIVE_TIME));
-            Util.setEnabled(labelDesc, false);
+            ThinUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             labelDesc = super.createScreenComponent(this.getFieldList().getField(Air.DAYS));
-            Util.setEnabled(labelDesc, false);
+            ThinUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             return panel;

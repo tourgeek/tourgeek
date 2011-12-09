@@ -36,20 +36,20 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JScreen;
+import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.db.converter.ImageConverter;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
-import org.jbundle.thin.base.screen.grid.JCellImage;
 import org.jbundle.thin.base.screen.util.JBlinkLabel;
 import org.jbundle.thin.base.screen.util.JDescTextField;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 import org.jbundle.thin.base.screen.util.LinkedConverter;
+import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
-import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Base JScreen with support for a bunch of cool controls.
@@ -248,7 +248,7 @@ public class JBaseRichScreen extends JScreen
 //      Typically, you don't want another 2ndary, but since this is a memory table who cares.
         fieldInfo2 = new SecondaryRecordConverter(fieldInfo, null, record, strDescFieldName, bCacheTable, strIndexName, null, "1");
         JComponent component2 = new JFSTextField(fieldInfo2);
-        Util.setEnabled(component2, false);
+        ThinUtil.setEnabled(component2, false);
 
         JComponent component = new JMultiFieldPanel(fieldInfo, component1, component2);
         return component;
@@ -269,7 +269,7 @@ public class JBaseRichScreen extends JScreen
         this.stringSetup(); // Make sure local strings are set.
         StatusConverter converter = new StatusConverter(fieldInfo);
         JFSTextField component2 = new JFSTextField(converter);
-        Util.setEnabled(component2, false);
+        ThinUtil.setEnabled(component2, false);
         
         JMultiFieldPanel panel = new JMultiFieldPanel(fieldInfo, component1, component2);
         
@@ -288,12 +288,12 @@ public class JBaseRichScreen extends JScreen
         }
 
         JComponent textField = new JTextField(Constants.BLANK, 3);
-        Util.setEnabled(textField, false);
+        ThinUtil.setEnabled(textField, false);
         fldCurrency.addComponent(textField);
         panel.add(textField);
 
         JComponent labelDesc = super.createScreenComponent(fieldInfo);
-        Util.setEnabled(labelDesc, false);
+        ThinUtil.setEnabled(labelDesc, false);
         fieldInfo.addComponent(labelDesc);
         panel.add(labelDesc);
 

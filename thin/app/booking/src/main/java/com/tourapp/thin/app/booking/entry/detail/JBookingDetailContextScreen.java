@@ -21,16 +21,16 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import org.jbundle.model.DBException;
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
-import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.BaseApplet;
+import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
+import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarItem;
@@ -150,7 +150,7 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
         {
             JComponent component1 = super.createScreenComponent(fieldInfo);
             ((JTextArea)component1).setRows(1);
-            Util.setEnabled(component1, false);
+            ThinUtil.setEnabled(component1, false);
 
             JButton component2 = new JButton(applet.loadImageIcon(Constants.FORM, Constants.FORM));
             component2.setMargin(JScreenConstants.NO_INSETS);
@@ -172,9 +172,9 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
         {
             JComponent component2 = super.createScreenComponent(fieldInfo);
             fieldInfo.addComponent(component2);
-            Util.setEnabled(component2, false);
+            ThinUtil.setEnabled(component2, false);
             JComponent component1 = new JTextField(Constants.BLANK, 3);
-            Util.setEnabled(component1, false);
+            ThinUtil.setEnabled(component1, false);
             if (BookingDetail.TOTAL_COST_LOCAL.equalsIgnoreCase(fieldInfo.getFieldName()))
             {
                 TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);

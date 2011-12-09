@@ -33,7 +33,7 @@ import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.base.screen.db.converter.ImageConverter;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
-import org.jbundle.thin.base.screen.grid.JCellImage;
+import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.search.air.JAirGridScreen;
@@ -198,7 +198,7 @@ public class JDisplayPanel extends JBaseRichScreen
         fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, recCostStatus, CostStatus.ICON, bCacheTable, CostStatus.ID, null, null);
         fieldInfo = new ImageConverter(fieldInfo);  // Add this the first time.
         JComponent component = new JCellImage(fieldInfo);
-        Util.setEnabled(component, false);
+        ThinUtil.setEnabled(component, false);
         fieldInfo.addComponent(component);
         if (panel != null)
         {
@@ -209,7 +209,7 @@ public class JDisplayPanel extends JBaseRichScreen
             fieldInfo = recCostStatus.getField(CostStatus.DESCRIPTION);
             JComponent textField = super.createScreenComponent(fieldInfo);
             fieldInfo.addComponent(textField);
-            Util.setEnabled(textField, false);
+            ThinUtil.setEnabled(textField, false);
             panel.add(textField);
         }
         return component;

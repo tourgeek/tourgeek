@@ -12,8 +12,8 @@ package com.tourapp.thin.app.booking.entry.search.tour;
  */
 import javax.swing.JComponent;
 
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
+import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
 import com.tourapp.thin.tour.product.tour.db.TourHeader;
@@ -70,7 +70,7 @@ public class JTourHeaderContextScreen extends JProductContextScreen
     {
         JComponent component = super.createScreenComponent(fieldInfo);
         if (TourHeader.DAYS.equals(fieldInfo.getFieldName()))
-        	Util.setEnabled(component, false);
+            ThinUtil.setEnabled(component, false);
         return component;
     }
 }

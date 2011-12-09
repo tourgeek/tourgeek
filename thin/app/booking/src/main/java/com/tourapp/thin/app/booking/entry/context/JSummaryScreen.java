@@ -14,12 +14,12 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.JScreen;
+import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.tour.booking.db.Booking;
@@ -222,9 +222,9 @@ public class JSummaryScreen extends JScreen
         if (component == null)
             component = super.createScreenComponent(fieldInfo);
         if (fieldInfo.getFieldName().equals(Tour.DEPARTURE_DATE))
-            Util.setEnabled(component, false);
+            ThinUtil.setEnabled(component, false);
         if (fieldInfo.getFieldName().equals(Booking.GROSS))
-            Util.setEnabled(component, false);
+            ThinUtil.setEnabled(component, false);
         return component;
     }
     /**

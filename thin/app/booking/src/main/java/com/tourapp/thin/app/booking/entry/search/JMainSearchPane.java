@@ -25,14 +25,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
 import javax.swing.ScrollPaneConstants;
 
-import org.jbundle.model.util.Util;
-import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
+import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.cal.opt.TaskCalendarStatusHandler;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
+import org.jbundle.thin.base.util.ThinUtil;
 import org.jbundle.util.calendarpanel.CalendarPanel;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.util.calendarpanel.util.MouseDateListener;
@@ -53,7 +53,6 @@ import com.tourapp.thin.tour.booking.db.Booking;
 import com.tourapp.thin.tour.booking.db.Tour;
 import com.tourapp.thin.tour.product.base.db.PricingStatus;
 import com.tourapp.thin.tour.product.tour.db.TourStatus;
-import org.jbundle.thin.base.screen.JScreenConstants;
 
 /**
  * Main Class for applet OrderEntry
@@ -160,7 +159,7 @@ public class JMainSearchPane extends JBaseRichScreen
         JComponent component = this.addCurrencyAmount(fldPrice, this.getFieldList().getField(Booking.CURRENCY_CODE), panelTotal);
 
         this.addScreenComponent(infoPanel, fldPrice, component);
-        Util.setEnabled(component, false);
+        ThinUtil.setEnabled(component, false);
 
         FieldList recTour = screenMain.getTourRecord();
         Converter fldTourStatus = recTour.getField(Tour.TOUR_STATUS_ID);

@@ -135,7 +135,7 @@ public class JTourHeaderScreen extends JProductScreen
             fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, record, TourType.DESCRIPTION, bCacheTable, TourType.ID, null, null);
             component = new JFSTextField(fieldInfo);
             fieldInfo.addComponent(component);
-            Util.setEnabled(component, false);
+            ThinUtil.setEnabled(component, false);
         }
 
         if (component == null)

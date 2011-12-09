@@ -125,7 +125,7 @@ public class JProductContextScreen extends JBaseRichScreen
             component = super.createScreenComponent(fieldInfo);
             if (component instanceof JTextArea)
                 ((JTextArea)component).setRows(1);
-            Util.setEnabled(component, false);
+            ThinUtil.setEnabled(component, false);
             fieldInfo.addComponent(component);
             panel.add(component);
 
@@ -195,7 +195,7 @@ public class JProductContextScreen extends JBaseRichScreen
             component = super.createScreenComponent(fieldInfo);
         
         if (Product.VENDOR_NAME.equalsIgnoreCase(fieldInfo.getFieldName()))
-        	Util.setEnabled(component, false);
+            ThinUtil.setEnabled(component, false);
         
         return component;
     }
