@@ -24,11 +24,11 @@ import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.client.RemoteFieldTable;
 import org.jbundle.thin.base.db.client.memory.MemoryRemoteTable;
 import org.jbundle.thin.base.remote.RemoteSession;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.JScreen;
 import org.jbundle.thin.base.screen.JScreenToolbar;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.grid.opt.JAltGridScreen;
 import org.jbundle.thin.base.util.Application;
 
@@ -44,7 +44,7 @@ public class RequestMainScreen extends JBaseScreen
     private static final long serialVersionUID = 1L;
 
     protected JScreen m_screenPerson = null;
-    protected ThinTableModel m_modelBrochures = null;
+    protected AbstractThinTableModel m_modelBrochures = null;
     protected JAltGridScreen m_gridscreen = null;
     protected FieldList m_recRequestInput = null;
     protected FieldList m_recItem = null;

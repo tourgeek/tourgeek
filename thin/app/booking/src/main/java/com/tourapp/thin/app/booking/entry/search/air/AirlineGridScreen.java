@@ -15,9 +15,9 @@ import javax.swing.JOptionPane;
 
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
 import com.tourapp.thin.tour.product.air.db.Airline;
@@ -76,7 +76,7 @@ public class AirlineGridScreen extends JGridScreen
      * Override this to create a new record.
      * @return The fieldlist for this screen.
      */
-    public ThinTableModel createGridModel(FieldList record)
+    public AbstractThinTableModel createGridModel(FieldList record)
     {
         return new AirlineGridModel(record.getTable());
     }

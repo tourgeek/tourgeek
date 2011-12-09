@@ -12,8 +12,8 @@ package com.tourapp.thin.app.booking.entry.search.tour;
  */
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.JBaseScreen;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductGridScreen;
 import com.tourapp.thin.tour.product.tour.db.TourHeader;
@@ -69,7 +69,7 @@ public class JTourHeaderGridScreen extends JProductGridScreen
      * @param table The table.
      * @return The grid model.
      */
-    public ThinTableModel setupGridModel(FieldTable table)
+    public AbstractThinTableModel setupGridModel(FieldTable table)
     {
         return new TourHeaderGridModel(table);
     }

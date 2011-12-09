@@ -37,11 +37,11 @@ import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
 import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.message.ThinMessageManager;
 import org.jbundle.thin.base.screen.util.ParamDispatcher;
@@ -735,7 +735,7 @@ public class TourAppScreen extends JBaseScreen
         if (itinScreen != null)
             BaseApplet.handleAction(Constants.RESET, itinScreen, itinScreen, 0);  // Send to itin screen and children.
         // Now, clear the product detail.
-        ThinTableModel model = (ThinTableModel)this.getCalendarModel();
+        AbstractThinTableModel model = (AbstractThinTableModel)this.getCalendarModel();
         FieldTable table = model.getFieldTable();
         table.close();
         model.resetTheModel();

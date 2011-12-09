@@ -12,9 +12,9 @@ package com.tourapp.thin.app.booking.entry.search.air;
  */
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductGridScreen;
 
@@ -70,7 +70,7 @@ public class JAirGridScreen extends JProductGridScreen
      * @param table The table.
      * @return The grid model.
      */
-    public ThinTableModel setupGridModel(FieldTable table)
+    public AbstractThinTableModel setupGridModel(FieldTable table)
     {
         return new AirGridModel(table);
     }

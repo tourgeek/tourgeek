@@ -19,9 +19,9 @@ import org.jbundle.model.Remote;
 import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
-import org.jbundle.thin.base.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.JBaseScreen;
+import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;

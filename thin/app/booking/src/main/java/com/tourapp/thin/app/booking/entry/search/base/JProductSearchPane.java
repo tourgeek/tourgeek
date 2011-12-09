@@ -32,13 +32,13 @@ import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
 import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.JScreen;
 import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.util.JDescTextField;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 import org.jbundle.thin.opt.location.JLocationScreen;
@@ -260,7 +260,7 @@ public class JProductSearchPane extends JBaseScreen
                     if (!(displayPanel instanceof JDisplayPanel))
                         return;
                     JBaseScreen screenDisplay = ((JDisplayPanel)displayPanel).getDisplayScreen();
-                    ThinTableModel searchTable = null;//this.getSearchPanel().getTableModel();
+                    AbstractThinTableModel searchTable = null;//this.getSearchPanel().getTableModel();
                     if (screenDisplay instanceof JGridScreen)
                     {
                         searchTable = ((JGridScreen)screenDisplay).getGridModel();

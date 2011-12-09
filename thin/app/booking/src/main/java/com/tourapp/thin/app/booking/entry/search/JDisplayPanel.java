@@ -26,13 +26,13 @@ import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
-import org.jbundle.thin.base.db.converter.ImageConverter;
-import org.jbundle.thin.base.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
+import org.jbundle.thin.base.screen.db.converter.ImageConverter;
+import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.screen.grid.JCellImage;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;

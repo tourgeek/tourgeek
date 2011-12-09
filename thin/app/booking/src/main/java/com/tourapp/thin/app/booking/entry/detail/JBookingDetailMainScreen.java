@@ -17,9 +17,9 @@ import javax.swing.JTable;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.Params;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.util.JMainScreen;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -116,9 +116,9 @@ public class JBookingDetailMainScreen extends JMainScreen
      * @param table
      * @return
      */
-    public ThinTableModel getModel(JTable table)
+    public AbstractThinTableModel getModel(JTable table)
     {
-        ThinTableModel model = (ThinTableModel)((TourAppScreen)this.getTargetScreen(TourAppScreen.class)).getCalendarModel();
+        AbstractThinTableModel model = (AbstractThinTableModel)((TourAppScreen)this.getTargetScreen(TourAppScreen.class)).getCalendarModel();
         return model;
     }
     /**

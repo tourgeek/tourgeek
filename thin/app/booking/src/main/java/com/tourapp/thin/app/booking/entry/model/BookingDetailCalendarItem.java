@@ -12,9 +12,9 @@ import javax.swing.ImageIcon;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.remote.RemoteException;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.popup.ProductTypeInfo;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.util.calendarpanel.model.CalendarConstants;
 import org.jbundle.util.calendarpanel.model.CalendarItem;
 
@@ -32,7 +32,7 @@ public class BookingDetailCalendarItem extends BookingDetail
     protected static ImageIcon m_iconInventory = null;
     protected static ImageIcon m_iconProduct = null;
     
-    protected ThinTableModel m_model = null;
+    protected AbstractThinTableModel m_model = null;
 
     /**
      * Constructor.
@@ -44,7 +44,7 @@ public class BookingDetailCalendarItem extends BookingDetail
     /**
      * Constructor.
      */
-    public BookingDetailCalendarItem(Object object, ThinTableModel model)
+    public BookingDetailCalendarItem(Object object, AbstractThinTableModel model)
     {
         this();
         this.init(object, model);
@@ -52,7 +52,7 @@ public class BookingDetailCalendarItem extends BookingDetail
     /**
      * Constructor.
      */
-    public void init(Object object, ThinTableModel model)
+    public void init(Object object, AbstractThinTableModel model)
     {
         super.init(object);
         m_model = model;
@@ -94,7 +94,7 @@ public class BookingDetailCalendarItem extends BookingDetail
     /**
      * Set the model.
      */
-    public void setModel(ThinTableModel model)
+    public void setModel(AbstractThinTableModel model)
     {
         m_model = model;
     }

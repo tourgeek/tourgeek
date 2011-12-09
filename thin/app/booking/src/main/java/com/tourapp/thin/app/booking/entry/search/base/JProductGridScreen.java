@@ -49,12 +49,12 @@ import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
 import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.action.ActionManager;
 import org.jbundle.thin.base.screen.grid.JCellButton;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 import org.jbundle.util.calendarpanel.dnd.CalendarDnDMouseListener;
 import org.jbundle.util.calendarpanel.dnd.CalendarItemTransferable;
@@ -141,9 +141,9 @@ public class JProductGridScreen extends JGridScreen
             obj = this.setupGridModel(record.getTable());
         }
 
-        if (obj instanceof ThinTableModel)
+        if (obj instanceof AbstractThinTableModel)
         {   // Always
-            m_thinTableModel = (ThinTableModel)obj;
+            m_thinTableModel = (AbstractThinTableModel)obj;
             record = m_thinTableModel.getFieldTable().getRecord();
         }
 
@@ -213,7 +213,7 @@ public class JProductGridScreen extends JGridScreen
 
         if (this.getJTable() != null)
         {
-            ThinTableModel model = this.getGridModel();
+            AbstractThinTableModel model = this.getGridModel();
             if (model != null)
             {
                 FieldList recProduct = model.getFieldTable().getRecord();
@@ -257,8 +257,8 @@ public class JProductGridScreen extends JGridScreen
         
         m_jTableScreen.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         m_jTableScreen.setModel(m_thinTableModel);
-        if (m_thinTableModel instanceof ThinTableModel)    // Always
-            ((ThinTableModel)m_thinTableModel).setGridScreen(m_jTableScreen, false);   // Notify model of selection changes, etc.
+        if (m_thinTableModel instanceof AbstractThinTableModel)    // Always
+            ((AbstractThinTableModel)m_thinTableModel).setGridScreen(m_jTableScreen, false);   // Notify model of selection changes, etc.
         m_jTableScreen.setColumnSelectionAllowed(false);  // By default, don't allow column selections
         for (int iIndex = 0; iIndex < m_jTableScreen.getColumnModel().getColumnCount(); iIndex++)
         {
@@ -343,7 +343,7 @@ public class JProductGridScreen extends JGridScreen
             if (m_jTableScreen == null)
                 return false;
             int iRow = m_jTableScreen.getSelectedRow();
-            ThinTableModel model = (ThinTableModel)m_jTableScreen.getModel();
+            AbstractThinTableModel model = (AbstractThinTableModel)m_jTableScreen.getModel();
             FieldList recProduct = model.makeRowCurrent(iRow, false);
             if (recProduct != null)
             {
@@ -415,7 +415,7 @@ public class JProductGridScreen extends JGridScreen
      * @param table The table.
      * @return The grid model.
      */
-    public ThinTableModel setupGridModel(FieldTable table)
+    public AbstractThinTableModel setupGridModel(FieldTable table)
     {
         return null;
     }

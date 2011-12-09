@@ -13,13 +13,13 @@ import org.jbundle.model.DBException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
 import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -115,12 +115,12 @@ public class JContextPanel extends JBasePanel
         int iCurrentSelection = event.getRow();
         if ((event.getType() == MyListSelectionEvent.SELECT)
             || (event.getType() == MyListSelectionEvent.DESELECT))
-                this.selectPanel(((ThinTableModel)event.getModel()), iCurrentSelection);
+                this.selectPanel(((AbstractThinTableModel)event.getModel()), iCurrentSelection);
     }
     /**
      * These items have changed, update them on the screen.
      */
-    public void selectPanel(ThinTableModel tableModel, int iCurrentSelection)
+    public void selectPanel(AbstractThinTableModel tableModel, int iCurrentSelection)
     {
         FieldList fieldList = tableModel.getFieldTable().getRecord();
         if (iCurrentSelection >= 0)

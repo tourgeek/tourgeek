@@ -20,11 +20,11 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.Params;
 import org.jbundle.thin.base.remote.RemoteSession;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.grid.JCellRemoteComboBox;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -108,7 +108,7 @@ public class JBookingPaxGridScreen extends JGridScreen
      * Override this to create a new record.
      * @return The fieldlist for this screen.
      */
-    public ThinTableModel createGridModel(FieldList record)
+    public AbstractThinTableModel createGridModel(FieldList record)
     {
         return new BookingPaxGridModel(record.getTable());
     }
@@ -126,7 +126,7 @@ public class JBookingPaxGridScreen extends JGridScreen
         }
         else if (Constants.RESET.equalsIgnoreCase(strAction))
         {
-            ThinTableModel model = (ThinTableModel)this.getGridModel();
+            AbstractThinTableModel model = (AbstractThinTableModel)this.getGridModel();
             FieldTable table = model.getFieldTable();
             table.close();
             model.resetTheModel();

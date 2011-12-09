@@ -28,6 +28,7 @@ import org.jbundle.model.DBException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
@@ -41,7 +42,6 @@ import org.jbundle.util.calendarpanel.model.CalendarConstants;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.thin.base.screen.grid.JCellButton;
 import org.jbundle.thin.base.screen.grid.JCellCalendarButton;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.util.JBlinkLabel;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
@@ -61,7 +61,7 @@ public class JBookingDetailGridScreen extends JBaseScreen
 {
 	private static final long serialVersionUID = 1L;
 
-	protected ThinTableModel m_model = null;
+	protected AbstractThinTableModel m_model = null;
     protected int m_iSelected = -1;
 
     /**
@@ -89,7 +89,7 @@ public class JBookingDetailGridScreen extends JBaseScreen
         JCellButton button = null;
         BaseApplet applet = this.getBaseApplet();
         
-        ThinTableModel model = (ThinTableModel)((TourAppScreen)this.getTargetScreen(TourAppScreen.class)).getCalendarModel();
+        AbstractThinTableModel model = (AbstractThinTableModel)((TourAppScreen)this.getTargetScreen(TourAppScreen.class)).getCalendarModel();
         m_model = model;
         JTable screenTable = new JTable(model);
         screenTable.setCellSelectionEnabled(false);
