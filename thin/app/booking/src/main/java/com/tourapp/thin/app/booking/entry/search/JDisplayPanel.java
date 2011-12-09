@@ -49,6 +49,7 @@ import com.tourapp.thin.app.booking.entry.search.trans.JTransportationGridScreen
 import com.tourapp.thin.tour.product.base.db.CostStatus;
 import com.tourapp.thin.tour.product.base.db.InventoryStatus;
 import com.tourapp.thin.tour.product.base.db.Product;
+import org.jbundle.thin.base.screen.grid.*;
 
 /**
  * Parent screen for the tourapp display area.

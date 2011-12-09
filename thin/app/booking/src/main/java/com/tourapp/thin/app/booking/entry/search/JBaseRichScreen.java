@@ -29,7 +29,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -50,9 +49,10 @@ import org.jbundle.thin.base.util.ThinUtil;
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import org.jbundle.thin.base.screen.grid.*;
 
 /**
- * Base JScreen with support for a bunch of cool controls.
+* Base JScreen with support for a bunch of cool controls.
  */
 public class JBaseRichScreen extends JScreen
     implements PropertyChangeListener

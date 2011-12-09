@@ -24,7 +24,6 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -37,7 +36,7 @@ import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
 import com.tourapp.thin.app.booking.entry.search.SearchConstants;
 import com.tourapp.thin.tour.product.base.db.Product;
 import org.jbundle.thin.base.screen.JScreenConstants;
-import org.jbundle.thin.base.screen.JScreenConstants;
+import org.jbundle.thin.base.util.ThinUtil;
 
 /**
  * Main Class for Product Context screen.

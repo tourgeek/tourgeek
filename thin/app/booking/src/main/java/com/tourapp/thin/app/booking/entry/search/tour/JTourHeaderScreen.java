@@ -29,6 +29,7 @@ import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;
 import com.tourapp.thin.tour.product.base.db.Product;
 import com.tourapp.thin.tour.product.tour.db.TourHeader;
 import com.tourapp.thin.tour.product.tour.db.TourType;
+import org.jbundle.thin.base.util.ThinUtil;
 
 /**
  * Main Class for applet OrderEntry
