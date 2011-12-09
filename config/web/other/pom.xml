@@ -73,37 +73,38 @@
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.proxy</artifactId>
-			<version>${jbundle-util-webappVersion}</version>
+			<version>${jbundleUtilWebappVersionRange}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<!-- dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.cgi</artifactId>
-			<version>${jbundle-util-webappVersion}</version>
+			<version>${jbundleUtilWebappVersionRange}</version>
 			<scope>provided</scope>
 		</dependency -->
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.upload</artifactId>
-			<version>${jbundle-util-webappVersion}</version>
+			<version>${jbundleUtilWebappVersionRange}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.webdav</artifactId>
-			<version>${jbundle-util-webappVersion}</version>
+			<version>${jbundleUtilWebappVersionRange}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.website</artifactId>
-			<version>${jbundle-util-webappVersion}</version>
+			<version>${jbundleUtilWebappVersionRange}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
           <groupId>org.jbundle.util.webapp</groupId>
           <artifactId>org.jbundle.util.webapp.base</artifactId>
-          <version>${jbundle-util-webappVersion}</version>
+          <version>${jbundleUtilWebappVersionRange}</version>
+			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
         <dependency>
             <groupId>org.jbundle.util.osgi.wrapped</groupId>

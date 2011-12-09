@@ -73,7 +73,7 @@
     <dependency>
       <groupId>org.jbundle.util.wsdl</groupId>
       <artifactId>org.jbundle.util.wsdl.currencyconverter</artifactId>
-      <version>${jbundle-util-wsdlVersion}</version>
+      <version>${jbundleUtilWsdlVersionRange}</version>
     </dependency>
     
 	<dependency>

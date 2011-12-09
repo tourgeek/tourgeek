@@ -66,17 +66,17 @@
     <dependency>
       <groupId>org.jbundle.app.contact</groupId>
       <artifactId>org.jbundle.app.contact</artifactId>
-      <version>${jbundle-app-contactVersion}</version>
+      <version>${jbundleAppContactVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.app.contact</groupId>
       <artifactId>org.jbundle.thin.app.contact</artifactId>
-      <version>${jbundle-app-contactVersion}</version>
+      <version>${jbundleAppContactVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.app.contact</groupId>
       <artifactId>org.jbundle.res.app.contact</artifactId>
-      <version>${jbundle-app-contactVersion}</version>
+      <version>${jbundleAppContactVersion}</version>
     </dependency>
   </dependencies>
   
