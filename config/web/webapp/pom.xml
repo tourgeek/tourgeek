@@ -42,7 +42,7 @@
                   <artifactItem>
                     <groupId>org.jbundle.config.web</groupId>
                     <artifactId>jbundle-config-web-webapp</artifactId>
-                    <version>${jbundleVersionRange}</version>
+                    <version>${jbundleVersion}</version>
                     <type>war</type>
                   </artifactItem>
                   <artifactItem>
