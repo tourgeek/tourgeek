@@ -71,7 +71,7 @@
 						<artifactItem>
 							<groupId>org.jbundle.res</groupId>
 							<artifactId>org.jbundle.res.images</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundleVersionRange}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -80,7 +80,7 @@
 						<artifactItem>
 							<groupId>org.jbundle.res</groupId>
 							<artifactId>org.jbundle.res.images.misc</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundleVersionRange}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -89,7 +89,7 @@
 						<artifactItem>
 							<groupId>org.jbundle.res</groupId>
 							<artifactId>org.jbundle.res.docs</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundleVersionRange}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -111,7 +111,7 @@
 						<artifactItem>
 							<groupId>org.jbundle.config.web</groupId>
 							<artifactId>jbundle-config-web-jnlp</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundleVersionRange}</version>
 							<classifier>bin</classifier>
 							<type>zip</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -203,7 +203,7 @@
 	    <dependency>
 			<groupId>org.jbundle.config.web</groupId>
 			<artifactId>org.jbundle.config.web.httpservice</artifactId>
-			<version>${jbundleVersion}</version>
+			<version>${jbundleVersionRange}</version>
 	    </dependency>
 	</dependencies>
 

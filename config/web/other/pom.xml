@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>org.jbundle.config.dep</groupId>
 			<artifactId>jbundle-config-dep-all</artifactId>
-            <version>${jbundleVersion}</version>
+            <version>${jbundleVersionRange}</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
@@ -127,22 +127,22 @@
 		<dependency>
 			<groupId>org.jbundle.base.screen</groupId>
 			<artifactId>org.jbundle.base.screen.control.servlet</artifactId>
-            <version>${jbundleVersion}</version>
+            <version>${jbundleVersionRange}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.screen</groupId>
 			<artifactId>org.jbundle.base.screen.control.xslservlet</artifactId>
-			<version>${jbundleVersion}</version>
+			<version>${jbundleVersionRange}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.message</groupId>
 			<artifactId>org.jbundle.base.message.jaxm</artifactId>
-			<version>${jbundleVersion}</version>
+			<version>${jbundleVersionRange}</version>
 		</dependency>
 		<dependency>
           <groupId>org.jbundle.config.web</groupId>
           <artifactId>org.jbundle.config.web.httpservice</artifactId>
-          <version>${jbundleVersion}</version>
+          <version>${jbundleVersionRange}</version>
 		</dependency>
 
 		<dependency>

@@ -36,7 +36,7 @@
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
       <artifactId>org.jbundle.base.screen.view.swing</artifactId>   <!-- Get rid of this dependency -->
-      <version>${jbundleVersion}</version>
+      <version>${jbundleVersionRange}</version>
     </dependency>
 
     <dependency>

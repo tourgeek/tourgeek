@@ -65,7 +65,7 @@
 		<dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
-		  <version>${jbundleVersion}</version>
+		  <version>${jbundleVersionRange}</version>
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
 		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
@@ -120,7 +120,7 @@
 		<dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
-		  <version>${jbundleVersion}</version>
+		  <version>${jbundleVersionRange}</version>
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
 		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
@@ -235,7 +235,7 @@
 		<dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
-		  <version>${jbundleVersion}</version> 
+		  <version>${jbundleVersionRange}</version> 
 		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
 		  <systemPath>${j2eePath}</systemPath>
 		</dependency>

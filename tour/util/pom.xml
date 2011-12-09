@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.jbundle.app.program</groupId>
       <artifactId>org.jbundle.app.program</artifactId>
-      <version>${jbundleVersion}</version>
+      <version>${jbundleVersionRange}</version>
     </dependency>
 
     <dependency>

@@ -41,17 +41,17 @@
     <dependency>
       <groupId>org.jbundle.thin.base.screen</groupId>
       <artifactId>org.jbundle.thin.base.screen.cal.other</artifactId>
-      <version>${jbundleVersion}</version>
+      <version>${jbundleVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.thin.base.screen</groupId>
       <artifactId>org.jbundle.thin.base.screen.cal.grid</artifactId>
-      <version>${jbundleVersion}</version>
+      <version>${jbundleVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.thin.opt</groupId>
       <artifactId>org.jbundle.thin.opt.location</artifactId>
-      <version>${jbundleVersion}</version>
+      <version>${jbundleVersionRange}</version>
     </dependency>
   </dependencies>
 
