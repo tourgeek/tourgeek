@@ -55,6 +55,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
 
     public static final String UPLOAD = "upload";
     public static final String NOTES = "notes";
+    public static final String DEMO = "demo";
 
     private String[] aliases = {
             JCALENDARBUTTON,
@@ -62,7 +63,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             CALENDARPANEL_JNLP,
             CALENDARPANEL,
 //            AWSTATS,
-//x         "demo",
+            DEMO,
             DOWNLOAD,
 //            GIT_WEB,
 //            WEBAPP_CGI,
@@ -138,6 +139,15 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 httpContext = new FileHttpContext(context.getBundle());
                 String path = "/space/web/";
+                properties.put(DefaultServlet.BASE_PATH, path);
+            }
+            else if (DEMO.equalsIgnoreCase(alias))
+            {
+                servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
+                httpContext = new FileHttpContext(context.getBundle());
+                String path = this.getProperty("wwwDemoPath");    // Basepath (usually pointing to a directory) is supplied in menu properties
+                if (path == null)
+                    path = "com/tourapp/res/docs/com/tourgeek/www/";
                 properties.put(DefaultServlet.BASE_PATH, path);
             }
             else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))
