@@ -16,12 +16,12 @@ import java.awt.GridBagConstraints;
 import javax.swing.JComponent;
 
 import org.jbundle.model.Remote;
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -29,7 +29,6 @@ import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;
 import com.tourapp.thin.tour.product.base.db.Product;
 import com.tourapp.thin.tour.product.tour.db.TourHeader;
 import com.tourapp.thin.tour.product.tour.db.TourType;
-import org.jbundle.thin.base.util.ThinUtil;
 
 /**
  * Main Class for applet OrderEntry
@@ -136,7 +135,7 @@ public class JTourHeaderScreen extends JProductScreen
             fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, record, TourType.DESCRIPTION, bCacheTable, TourType.ID, null, null);
             component = new JFSTextField(fieldInfo);
             fieldInfo.addComponent(component);
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
         }
 
         if (component == null)

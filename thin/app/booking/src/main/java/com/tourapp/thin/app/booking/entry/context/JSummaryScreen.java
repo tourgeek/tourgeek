@@ -19,6 +19,7 @@ import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.JScreen;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -222,9 +223,9 @@ public class JSummaryScreen extends JScreen
         if (component == null)
             component = super.createScreenComponent(fieldInfo);
         if (fieldInfo.getFieldName().equals(Tour.DEPARTURE_DATE))
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
         if (fieldInfo.getFieldName().equals(Booking.GROSS))
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
         return component;
     }
     /**

@@ -9,6 +9,7 @@ import javax.swing.JTextField;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -74,7 +75,7 @@ public class CustSaleDetailThinTableModel extends CalendarThinTableModel
     /**
      * Returns the field at columnIndex.
      */
-    public Converter getFieldInfo(int iColumnIndex)
+    public Convert getFieldInfo(int iColumnIndex)
     {
         if (iColumnIndex == STATUS_COLUMN)
             return m_table.getRecord().getField(BookingDetail.STATUS_SUMMARY);
@@ -134,7 +135,7 @@ public class CustSaleDetailThinTableModel extends CalendarThinTableModel
     {
         for (int i = 0; i < this.getColumnCount(); i++)
         {
-            Converter fieldInfo = this.getFieldInfo(i);
+            Convert fieldInfo = this.getFieldInfo(i);
             if (strFieldName.equalsIgnoreCase(fieldInfo.getFieldName()))
                 return i;
         }
@@ -158,7 +159,7 @@ public class CustSaleDetailThinTableModel extends CalendarThinTableModel
         case DESCRIPTION_COLUMN:
         case LOCAL_PRICE_COLUMN:
         default:
-            Converter fieldInfo2 = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo2 = this.getFieldInfo(iColumnIndex);
             JCellTextField component2 = new JCellTextField(fieldInfo2.getMaxLength(), false);
             component2.setOpaque(false);
             if (fieldInfo2.getField() != null)
@@ -190,7 +191,7 @@ public class CustSaleDetailThinTableModel extends CalendarThinTableModel
         case END_DATE_COLUMN:
         case DESCRIPTION_COLUMN:
         default:
-            Converter fieldInfo2 = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo2 = this.getFieldInfo(iColumnIndex);
             JCellTextField component2 = new JCellTextField(fieldInfo2.getMaxLength(), false);
             component2.setOpaque(false);
             if (fieldInfo2.getField() != null)

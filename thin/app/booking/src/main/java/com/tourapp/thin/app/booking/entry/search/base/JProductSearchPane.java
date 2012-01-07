@@ -225,7 +225,7 @@ public class JProductSearchPane extends JBaseScreen
         }
         Map<String,Object> properties = this.getMainSearchPane().getTourAppScreen().getParams().getProperties();
         TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        Cursor cursor = null;
+        Object cursor = null;
 
         synchronized (this.getBaseApplet().getRemoteTask())
         {

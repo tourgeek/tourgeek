@@ -22,6 +22,7 @@ import org.jbundle.model.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.db.*;
 
 /**
  *  BookingAgencyScreen - Booking Profile Information Entry.
@@ -182,7 +183,7 @@ public class BookingAgencyScreen extends BookingSubScreen
             for (int i = 0; i < this.getSFieldCount(); i++)
             {
                 ScreenField sField = this.getSField(i);
-                Converter field = sField.getConverter();
+                Convert field = sField.getConverter();
                 if (field != null)
                     if (field.getField() != null)
                         field.getField().initField(true);

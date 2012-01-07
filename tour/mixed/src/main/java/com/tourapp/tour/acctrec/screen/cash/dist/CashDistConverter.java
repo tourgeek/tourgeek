@@ -150,7 +150,7 @@ public class CashDistConverter extends DistributionConverter
         //sFieldNo.setConverter(new AccountNoDistConverter(field, this));
         
         ScreenField sFieldDesc = this.getDisplayField(recBooking).getSFieldAt(0);
-        sFieldDesc.setConverter(new AccountDescDistConverter(sFieldDesc.getConverter(), this));
+        sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
         new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         ((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
         

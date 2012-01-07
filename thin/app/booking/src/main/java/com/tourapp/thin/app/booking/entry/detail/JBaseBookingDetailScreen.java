@@ -38,6 +38,7 @@ import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBasePanel;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.message.ThinMessageManager;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
@@ -242,7 +243,7 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
             {
                 JComponent component1 = super.createScreenComponent(fieldInfo);
                 ((JTextArea)component1).setRows(1);
-                ThinUtil.setEnabled(component1, false);
+                ScreenUtil.setEnabled(component1, false);
 
     //+            JButton component2 = new JButton(applet.loadImageIcon(Constants.FORM, Constants.FORM));
     //+            component2.setMargin(Constants.NO_INSETS);
@@ -256,16 +257,16 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
             else
             {
                 component = super.createScreenComponent(fieldInfo);
-                ThinUtil.setEnabled(component, false);
+                ScreenUtil.setEnabled(component, false);
             }
         }
         else if ((fieldInfo.getField().getDataClass() == Double.class) && (!fieldInfo.getFieldName().contains("Price")))
         {
             JComponent component2 = super.createScreenComponent(fieldInfo);
             fieldInfo.addComponent(component2);
-            ThinUtil.setEnabled(component2, false);
+            ScreenUtil.setEnabled(component2, false);
             JComponent component1 = new JTextField(Constants.BLANK, 3);
-            ThinUtil.setEnabled(component1, false);
+            ScreenUtil.setEnabled(component1, false);
             if (BookingDetail.TOTAL_COST_LOCAL.equalsIgnoreCase(fieldInfo.getFieldName()))
             {
                 TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
@@ -284,7 +285,7 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
         
         if (fieldInfo.getFieldName().contains("Price"))
             if (component != null)
-                ThinUtil.setEnabled(component, false);                
+                ScreenUtil.setEnabled(component, false);                
 
         return component;
     }

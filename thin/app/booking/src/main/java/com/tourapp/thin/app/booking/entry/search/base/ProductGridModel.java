@@ -15,6 +15,7 @@ import javax.swing.JTextField;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -81,7 +82,7 @@ public class ProductGridModel extends CalendarThinTableModel
      * Get this field (or return null if this field doesn't belong on the screen).
      * This is the method to use to filter the items to display on the screen.
      */
-    public Converter getFieldInfo(int iIndex)
+    public Convert getFieldInfo(int iIndex)
     {
         FieldList fieldList = m_table.getRecord();
         switch (iIndex)
@@ -140,7 +141,7 @@ public class ProductGridModel extends CalendarThinTableModel
             case AVAILABILITY:
                 return this.getFieldInfo(iColumnIndex).getData();
             case PRICE:
-                Converter fieldInfo =  this.getFieldInfo(iColumnIndex);
+                Convert fieldInfo =  this.getFieldInfo(iColumnIndex);
 //+                String strPrice = fieldInfo.toString();
                 if (fieldInfo.getData() == null)
                 { // Price was not available... queue a task to look it up.
@@ -196,11 +197,11 @@ public class ProductGridModel extends CalendarThinTableModel
             break;
         case PRICE_STATUS:
         case AVAILABILITY:
-            Converter fieldInfo = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo = this.getFieldInfo(iColumnIndex);
             JCellImage component = (JCellImage)fieldInfo.getField().getComponent(0);
             return component;
         default:
-            Converter fieldInfo2 = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo2 = this.getFieldInfo(iColumnIndex);
             JCellTextField component2 = new JCellTextField(fieldInfo2.getMaxLength(), false);
             component2.setOpaque(false);
             if (fieldInfo2.getField() != null)
@@ -225,11 +226,11 @@ public class ProductGridModel extends CalendarThinTableModel
             break;
         case PRICE_STATUS:
         case AVAILABILITY:
-            Converter fieldInfo = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo = this.getFieldInfo(iColumnIndex);
             JCellImage component = (JCellImage)fieldInfo.getField().getComponent(0);
             return component;
         default:
-            Converter fieldInfo2 = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo2 = this.getFieldInfo(iColumnIndex);
             JCellTextField component2 = new JCellTextField(fieldInfo2.getMaxLength(), false);
             component2.setOpaque(false);
             if (fieldInfo2.getField() != null)

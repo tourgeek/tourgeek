@@ -14,13 +14,13 @@ import javax.swing.ImageIcon;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.Constants;
-import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.grid.JCellButton;
+import org.jbundle.thin.base.screen.grid.ThinTableModel;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
 import com.tourapp.thin.tour.product.air.db.Airline;
@@ -77,7 +77,7 @@ public class AirlineGridModel extends ThinTableModel
      * Get this field (or return null if this field doesn't belong on the screen).
      * This is the method to use to filter the items to display on the screen.
      */
-    public Converter getFieldInfo(int iIndex)
+    public Convert getFieldInfo(int iIndex)
     {
         FieldList fieldList = m_table.getRecord();
         switch (iIndex)

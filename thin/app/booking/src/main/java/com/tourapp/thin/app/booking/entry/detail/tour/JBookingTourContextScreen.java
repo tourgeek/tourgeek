@@ -13,7 +13,7 @@ package com.tourapp.thin.app.booking.entry.detail.tour;
 import javax.swing.JComponent;
 
 import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.util.ThinUtil;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 
 import com.tourapp.thin.app.booking.entry.detail.JBookingDetailContextScreen;
 import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
@@ -48,7 +48,7 @@ public class JBookingTourContextScreen extends JBookingDetailContextScreen
         JComponent component = super.createScreenComponent(fieldInfo);
         
         if (fieldInfo.getFieldName().equals(BookingDetail.DETAIL_END_DATE))
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
 
         return component;
     }

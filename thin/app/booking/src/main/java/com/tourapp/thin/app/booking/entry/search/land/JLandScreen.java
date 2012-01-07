@@ -20,7 +20,7 @@ import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.JBaseScreen;
-import org.jbundle.thin.base.util.ThinUtil;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;
 import com.tourapp.thin.tour.product.base.db.Product;
@@ -159,7 +159,7 @@ public class JLandScreen extends JProductScreen
                 }
             };
             fieldInfo.addComponent(component);
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
         }
 
         if (component == null)

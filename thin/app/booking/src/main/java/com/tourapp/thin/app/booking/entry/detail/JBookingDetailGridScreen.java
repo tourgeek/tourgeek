@@ -25,8 +25,8 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.Constants;
-import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -36,14 +36,14 @@ import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.action.ActionManager;
 import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
-import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
-import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
-import org.jbundle.util.calendarpanel.model.CalendarConstants;
-import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.thin.base.screen.grid.JCellButton;
 import org.jbundle.thin.base.screen.grid.JCellCalendarButton;
 import org.jbundle.thin.base.screen.util.JBlinkLabel;
 import org.jbundle.thin.base.util.ThinMenuConstants;
+import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
+import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
+import org.jbundle.util.calendarpanel.model.CalendarConstants;
+import org.jbundle.util.calendarpanel.model.CalendarModel;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
@@ -131,7 +131,7 @@ public class JBookingDetailGridScreen extends JBaseScreen
         tableColumn.setCellEditor(button);
 
         tableColumn = columnModel.getColumn(CustSaleDetailThinTableModel.START_DATE_BUTTON_COLUMN);
-        Converter fi = model.getFieldInfo(CustSaleDetailThinTableModel.START_DATE_COLUMN);
+        Convert fi = model.getFieldInfo(CustSaleDetailThinTableModel.START_DATE_COLUMN);
         JCellCalendarButton button2 = new JCellCalendarButton(fi);
         tableColumn.setCellRenderer(button2);
         tableColumn.setMaxWidth(20);

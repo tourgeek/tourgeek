@@ -26,7 +26,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import org.jbundle.model.Remote;
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -39,6 +38,7 @@ import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.JScreen;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.message.ThinMessageManager;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JFSTextScroller;
@@ -220,7 +220,7 @@ public class JProductScreen extends JScreen
             if (!Product.CITY_ID.equalsIgnoreCase(fieldInfo.getFieldName()))
             {
                 component = super.createScreenComponent(fieldInfo);
-                ThinUtil.setEnabled(component, false);
+                ScreenUtil.setEnabled(component, false);
                 fieldInfo.addComponent(component);
                 panel.add(component);
             }
@@ -229,7 +229,7 @@ public class JProductScreen extends JScreen
                 fieldInfo = record.getField(City.CITY_CODE);
                 component = new JFSTextField(fieldInfo);
                 ((JFSTextField)component).setColumns(3);
-                ThinUtil.setEnabled(component, false);
+                ScreenUtil.setEnabled(component, false);
                 fieldInfo.addComponent(component);
                 panel.add(component);                
             }
@@ -242,7 +242,7 @@ public class JProductScreen extends JScreen
             fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, record, City.DESCRIPTION, bCacheTable, City.ID, null, null);
             component = new JFSTextField(fieldInfo);
             ((JFSTextField)component).setColumns(25);
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
             fieldInfo.addComponent(component);
             panel.add(component);
 
@@ -313,7 +313,7 @@ public class JProductScreen extends JScreen
             };
                 component = new JFSTextField(fieldInfo);
                 ((JFSTextField)component).setColumns(14);
-                ThinUtil.setEnabled(component, false);
+                ScreenUtil.setEnabled(component, false);
                 fieldInfo.addComponent(component);
                 this.add(component);                
         }
@@ -328,7 +328,7 @@ public class JProductScreen extends JScreen
             if (component instanceof JTextArea)
                 ((JTextArea)component).setRows(1);
         if (component != null)
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
         return component;
     }
     /**

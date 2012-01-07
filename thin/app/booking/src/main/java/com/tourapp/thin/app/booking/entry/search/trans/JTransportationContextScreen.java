@@ -14,9 +14,9 @@ import javax.swing.BoxLayout;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
@@ -93,11 +93,11 @@ public class JTransportationContextScreen extends JProductContextScreen
             panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
             
             JComponent labelDesc = super.createScreenComponent(fieldInfo);
-            ThinUtil.setEnabled(labelDesc, false);
+            ScreenUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             labelDesc = super.createScreenComponent(this.getFieldList().getField(Transportation.ETD));
-            ThinUtil.setEnabled(labelDesc, false);
+            ScreenUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             return panel;
@@ -109,7 +109,7 @@ public class JTransportationContextScreen extends JProductContextScreen
             panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
             
             JComponent labelDesc = super.createScreenComponent(fieldInfo);
-            ThinUtil.setEnabled(labelDesc, false);
+            ScreenUtil.setEnabled(labelDesc, false);
             panel.add(labelDesc);
             
             return panel;

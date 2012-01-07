@@ -23,9 +23,9 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.util.JFSImage;
 import org.jbundle.thin.base.screen.util.JFSTextField;
-import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;
 import com.tourapp.thin.tour.product.air.db.Air;
@@ -151,7 +151,7 @@ public class JAirScreen extends JProductScreen
             fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, record, Airline.DESCRIPTION, bCacheTable, Airline.ID, null, null);
             component = new JFSTextField(fieldInfo);
             ((JFSTextField)component).setColumns(25);
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
             fieldInfo.addComponent(component);
             panel.add(component);
 

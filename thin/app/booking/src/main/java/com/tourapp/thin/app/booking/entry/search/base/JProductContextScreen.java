@@ -29,14 +29,14 @@ import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.BaseApplet;
+import org.jbundle.thin.base.screen.JScreenConstants;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.TourAppScreen;
 import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
 import com.tourapp.thin.app.booking.entry.search.SearchConstants;
 import com.tourapp.thin.tour.product.base.db.Product;
-import org.jbundle.thin.base.screen.JScreenConstants;
-import org.jbundle.thin.base.util.ThinUtil;
 
 /**
  * Main Class for Product Context screen.
@@ -124,7 +124,7 @@ public class JProductContextScreen extends JBaseRichScreen
             component = super.createScreenComponent(fieldInfo);
             if (component instanceof JTextArea)
                 ((JTextArea)component).setRows(1);
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
             fieldInfo.addComponent(component);
             panel.add(component);
 
@@ -194,7 +194,7 @@ public class JProductContextScreen extends JBaseRichScreen
             component = super.createScreenComponent(fieldInfo);
         
         if (Product.VENDOR_NAME.equalsIgnoreCase(fieldInfo.getFieldName()))
-            ThinUtil.setEnabled(component, false);
+            ScreenUtil.setEnabled(component, false);
         
         return component;
     }

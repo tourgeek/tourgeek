@@ -22,7 +22,6 @@ import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 
-import org.jbundle.model.util.Util;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
@@ -33,6 +32,8 @@ import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.base.screen.db.converter.ImageConverter;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
+import org.jbundle.thin.base.screen.grid.JCellImage;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
@@ -49,7 +50,6 @@ import com.tourapp.thin.app.booking.entry.search.trans.JTransportationGridScreen
 import com.tourapp.thin.tour.product.base.db.CostStatus;
 import com.tourapp.thin.tour.product.base.db.InventoryStatus;
 import com.tourapp.thin.tour.product.base.db.Product;
-import org.jbundle.thin.base.screen.grid.*;
 
 /**
  * Parent screen for the tourapp display area.
@@ -199,7 +199,7 @@ public class JDisplayPanel extends JBaseRichScreen
         fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, recCostStatus, CostStatus.ICON, bCacheTable, CostStatus.ID, null, null);
         fieldInfo = new ImageConverter(fieldInfo);  // Add this the first time.
         JComponent component = new JCellImage(fieldInfo);
-        ThinUtil.setEnabled(component, false);
+        ScreenUtil.setEnabled(component, false);
         fieldInfo.addComponent(component);
         if (panel != null)
         {
@@ -210,7 +210,7 @@ public class JDisplayPanel extends JBaseRichScreen
             fieldInfo = recCostStatus.getField(CostStatus.DESCRIPTION);
             JComponent textField = super.createScreenComponent(fieldInfo);
             fieldInfo.addComponent(textField);
-            ThinUtil.setEnabled(textField, false);
+            ScreenUtil.setEnabled(textField, false);
             panel.add(textField);
         }
         return component;

@@ -28,6 +28,7 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
 import org.jbundle.thin.base.util.ThinUtil;
@@ -150,7 +151,7 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
         {
             JComponent component1 = super.createScreenComponent(fieldInfo);
             ((JTextArea)component1).setRows(1);
-            ThinUtil.setEnabled(component1, false);
+            ScreenUtil.setEnabled(component1, false);
 
             JButton component2 = new JButton(applet.loadImageIcon(Constants.FORM, Constants.FORM));
             component2.setMargin(JScreenConstants.NO_INSETS);
@@ -172,9 +173,9 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
         {
             JComponent component2 = super.createScreenComponent(fieldInfo);
             fieldInfo.addComponent(component2);
-            ThinUtil.setEnabled(component2, false);
+            ScreenUtil.setEnabled(component2, false);
             JComponent component1 = new JTextField(Constants.BLANK, 3);
-            ThinUtil.setEnabled(component1, false);
+            ScreenUtil.setEnabled(component1, false);
             if (BookingDetail.TOTAL_COST_LOCAL.equalsIgnoreCase(fieldInfo.getFieldName()))
             {
                 TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);

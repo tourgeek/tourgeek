@@ -34,6 +34,7 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
 import org.jbundle.model.Remote;
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -269,10 +270,10 @@ public class JProductGridScreen extends JGridScreen
                     && ((Product.DISPLAY_COST_STATUS_ID.equals(m_thinTableModel.getFieldInfo(iIndex).getFieldName()))
                     || (Product.DISPLAY_INVENTORY_STATUS_ID.equals(m_thinTableModel.getFieldInfo(iIndex).getFieldName()))))
                 {
-                    Converter fieldInfo = m_thinTableModel.getFieldInfo(iIndex);
+                    Convert fieldInfo = m_thinTableModel.getFieldInfo(iIndex);
                     if (fieldInfo instanceof FieldInfo)
                     {   // That way this only runs the first time.
-                        this.getDisplayPanel().addStatusComponents(fieldInfo, null, this);
+                        this.getDisplayPanel().addStatusComponents((Converter)fieldInfo, null, this);
                     }
                     newColumn.setPreferredWidth(20);    // Yeah I know, but I know the width and I don't want to have to wait to load the icon.
                     TableCellEditor button = m_thinTableModel.createColumnCellEditor(iIndex);

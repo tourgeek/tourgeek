@@ -10,7 +10,7 @@ package com.tourapp.thin.app.booking.entry.search.tour;
  *  @author Don Corley don@donandann.com
  *  @version 1.0.0.
  */
-import org.jbundle.thin.base.db.Converter;
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 
@@ -63,7 +63,7 @@ public class TourHeaderGridModel extends ProductGridModel
      * Get this field (or return null if this field doesn't belong on the screen).
      * This is the method to use to filter the items to display on the screen.
      */
-    public Converter getFieldInfo(int iIndex)
+    public Convert getFieldInfo(int iIndex)
     {
         FieldList fieldList = m_table.getRecord();
         if (iIndex == TOUR_DAYS_COLUMN)

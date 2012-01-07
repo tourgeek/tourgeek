@@ -32,7 +32,7 @@ import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.cal.opt.TaskCalendarStatusHandler;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
-import org.jbundle.thin.base.util.ThinUtil;
+import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.util.calendarpanel.CalendarPanel;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.util.calendarpanel.util.MouseDateListener;
@@ -159,7 +159,7 @@ public class JMainSearchPane extends JBaseRichScreen
         JComponent component = this.addCurrencyAmount(fldPrice, this.getFieldList().getField(Booking.CURRENCY_CODE), panelTotal);
 
         this.addScreenComponent(infoPanel, fldPrice, component);
-        ThinUtil.setEnabled(component, false);
+        ScreenUtil.setEnabled(component, false);
 
         FieldList recTour = screenMain.getTourRecord();
         Converter fldTourStatus = recTour.getField(Tour.TOUR_STATUS_ID);

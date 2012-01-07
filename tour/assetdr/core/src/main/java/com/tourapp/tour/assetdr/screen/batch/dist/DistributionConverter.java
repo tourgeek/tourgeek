@@ -256,13 +256,13 @@ public class DistributionConverter extends FieldConverter
         
         Record recAccount = ((ReferenceField)converter.getField()).getReferenceRecord();
         ScreenField sFieldNo = recAccount.getField(Account.kAccountNo).getSFieldAt(0);
-        Converter fldConverter = sFieldNo.getConverter();   // Should be the GlConverter
+        Converter fldConverter = (Converter)sFieldNo.getConverter();   // Should be the GlConverter
         BaseField field = (BaseField)fldConverter.getField();
         if (fldConverter != field)
             fldConverter.free();   // GlConverter is not necessary anymore.
         sFieldNo.setConverter(new GlConverter(new AccountNoDistConverter(field, this)));
         ScreenField sFieldDesc = this.getDisplayField(recAccount).getSFieldAt(0);
-        sFieldDesc.setConverter(new AccountDescDistConverter(sFieldDesc.getConverter(), this));
+        sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
         new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         ((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
         

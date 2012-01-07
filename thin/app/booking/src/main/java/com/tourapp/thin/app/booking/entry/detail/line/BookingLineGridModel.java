@@ -14,17 +14,18 @@ import javax.swing.ImageIcon;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
+import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
+import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.db.converter.ImageConverter;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
-import org.jbundle.thin.base.screen.grid.ThinTableModel;
-import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.grid.JCellButton;
 import org.jbundle.thin.base.screen.grid.JCellImage;
+import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
 import com.tourapp.thin.tour.booking.detail.db.BookingLine;
 import com.tourapp.thin.tour.product.base.db.PricingStatus;
@@ -88,7 +89,7 @@ public class BookingLineGridModel extends ThinTableModel
      * Get this field (or return null if this field doesn't belong on the screen).
      * This is the method to use to filter the items to display on the screen.
      */
-    public Converter getFieldInfo(int iIndex)
+    public Convert getFieldInfo(int iIndex)
     {
         FieldList fieldList = m_table.getRecord();
         switch (iIndex)
@@ -183,7 +184,7 @@ public class BookingLineGridModel extends ThinTableModel
             button.setName(Constants.FORM);
             return button;
         case STATUS_COLUMN:
-            Converter fieldInfo = this.getFieldInfo(iColumnIndex);
+            Convert fieldInfo = this.getFieldInfo(iColumnIndex);
             JCellImage component = (JCellImage)fieldInfo.getField().getComponent(0);
             return component;
         }
