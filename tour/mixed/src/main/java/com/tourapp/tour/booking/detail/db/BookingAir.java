@@ -37,13 +37,6 @@ import org.jbundle.main.msg.db.*;
 public class BookingAir extends BookingDetail
 {
     private static final long serialVersionUID = 1L;
-    public static final String NIGHTS = "Nights";
-    public static final String ROOM_COST = "RoomCost";
-    public static final String MEAL_COST = "MealCost";
-    public static final String PMC_COST = "PMCCost";
-    public static final String SIC_COST = "SICCost";
-    public static final String DAYS = "Days";
-    public static final String QUANTITY = "Quantity";
 
     //public static final int kID = kID;
     //public static final int kBookingID = kBookingID;

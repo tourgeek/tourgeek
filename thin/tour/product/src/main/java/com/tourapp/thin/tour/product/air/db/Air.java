@@ -9,13 +9,8 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Air extends FieldList
+public class Air extends com.tourapp.thin.tour.product.base.db.TransportProduct
 {
-    public static final String CITY_ID = "CityID";
-    public static final String ETD = "Etd";
-    public static final String CITY_CODE = "CityCode";
-    public static final String TO_CITY_ID = "ToCityID";
-    public static final String TO_CITY_CODE = "ToCityCode";
     public static final String AIRLINE_ID = "AirlineID";
     public static final String FLIGHT_NO = "FlightNo";
     public static final String ARRIVE_TIME = "ArriveTime";

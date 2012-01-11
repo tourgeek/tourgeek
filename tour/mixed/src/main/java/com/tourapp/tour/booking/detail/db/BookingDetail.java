@@ -62,13 +62,6 @@ public class BookingDetail extends BookingSub
     public static final String TOTAL_COST = "TotalCost";
     public static final String REMOTE_BOOKING_NO = "RemoteBookingNo";
     public static final String PP_COST = "PPCost";
-    public static final String NIGHTS = "Nights";
-    public static final String ROOM_COST = "RoomCost";
-    public static final String MEAL_COST = "MealCost";
-    public static final String PMC_COST = "PMCCost";
-    public static final String SIC_COST = "SICCost";
-    public static final String DAYS = "Days";
-    public static final String QUANTITY = "Quantity";
 
     //public static final int kID = kID;
     //public static final int kBookingID = kBookingID;

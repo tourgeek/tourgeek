@@ -1,40 +1,36 @@
 /**
- * @(#)Transportation.
+ * @(#)TransportProduct.
  * Copyright © 2011 tourapp.com. All rights reserved.
  */
-package com.tourapp.thin.tour.product.trans.db;
+package com.tourapp.thin.tour.product.base.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Transportation extends com.tourapp.thin.tour.product.base.db.TransportProduct
+public class TransportProduct extends com.tourapp.thin.tour.product.base.db.Product
 {
-    public static final String FREQUENCY = "Frequency";
-    public static final String DISTANCE = "Distance";
-    public static final String HOURS = "Hours";
-    public static final String BREAKFASTS = "Breakfasts";
-    public static final String LUNCHES = "Lunches";
-    public static final String DINNERS = "Dinners";
-    public static final String DAYS_OF_WEEK = "DaysOfWeek";
+    public static final String CITY_CODE = "CityCode";
+    public static final String TO_CITY_ID = "ToCityID";
+    public static final String TO_CITY_CODE = "ToCityCode";
 
-    public Transportation()
+    public TransportProduct()
     {
         super();
     }
-    public Transportation(Object recordOwner)
+    public TransportProduct(Object recordOwner)
     {
         this();
         this.init(recordOwner);
     }
-    public static final String TRANSPORTATION_FILE = "Transportation";
+    public static final String TRANSPORT_PRODUCT_FILE = "TransportProduct";
     /**
      *  Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Transportation.TRANSPORTATION_FILE : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? TransportProduct.TRANSPORT_PRODUCT_FILE : super.getTableNames(bAddQuotes);
     }
     /**
      *  Get the Database Name.
@@ -65,14 +61,14 @@ public class Transportation extends com.tourapp.thin.tour.product.base.db.Transp
         field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 30, null, null);
+        field = new FieldInfo(this, "Description", 50, null, null);
         field = new FieldInfo(this, "Code", 10, null, null);
         field = new FieldInfo(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, "OperatorsCode", 20, null, null);
         field = new FieldInfo(this, "ProductChainID", Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CityID", 3, null, null);
+        field = new FieldInfo(this, "CityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, "Etd", 10, null, null);
         field.setDataClass(Date.class);
@@ -118,24 +114,6 @@ public class Transportation extends com.tourapp.thin.tour.product.base.db.Transp
         field = new FieldInfo(this, "ToCityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, "ToCityCode", 3, null, null);
-        field = new FieldInfo(this, "TransReverseID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ManualFile", 30, null, null);
-        field = new FieldInfo(this, "Frequency", 15, null, null);
-        field = new FieldInfo(this, "Distance", 15, null, null);
-        field = new FieldInfo(this, "Hours", 2, null, null);
-        field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Breakfasts", 2, null, null);
-        field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Lunches", 2, null, null);
-        field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Dinners", 2, null, null);
-        field.setDataClass(Short.class);
-        field = new FieldInfo(this, "DaysOfWeek", 6, null, null);
-        field.setDataClass(Short.class);
-        field = new FieldInfo(this, "DiscontinuedOn", 12, null, null);
-        field.setDataClass(Date.class);
-        field.setScale(Constants.DATE_ONLY);
     }
     /**
     * Set up the key areas.
@@ -143,21 +121,7 @@ public class Transportation extends com.tourapp.thin.tour.product.base.db.Transp
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DescSort");
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "VendorID");
-        keyArea.addKeyField("VendorID", Constants.ASCENDING);
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CityID");
-        keyArea.addKeyField("CityID", Constants.ASCENDING);
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CityCode");
-        keyArea.addKeyField("CityCode", Constants.ASCENDING);
-        keyArea.addKeyField("ToCityCode", Constants.ASCENDING);
+        super.setupKeys();
     }
 
 }

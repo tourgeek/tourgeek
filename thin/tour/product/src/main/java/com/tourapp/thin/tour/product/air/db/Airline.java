@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class Airline extends FieldList
 {
-    public static final String ID = "ID";
     public static final String DESCRIPTION = "Description";
     public static final String AIRLINE_CODE = "AirlineCode";
     public static final String LOGO = "Logo";

@@ -11,8 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class Hotel extends com.tourapp.thin.tour.product.base.db.Product
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String VENDOR_ID = "VendorID";
     public static final String CHECK_OUT = "CheckOut";
     public static final String CONTACT = "Contact";
     public static final String CONTACT_TITLE = "ContactTitle";

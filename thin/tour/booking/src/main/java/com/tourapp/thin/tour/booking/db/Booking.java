@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class Booking extends FieldList
 {
-    public static final String ID = "ID";
     public static final String BOOKING_DATE = "BookingDate";
     public static final String EMPLOYEE_ID = "EmployeeID";
     public static final String CODE = "Code";

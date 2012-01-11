@@ -98,7 +98,7 @@ public class HotelMessageData extends ProductMessageData
     {
         int iStatus = super.checkRequestParams(record);
         if (record.getField(BookingHotel.kNights).isNull())
-            if (this.getMessageFieldDesc(BookingDetail.NIGHTS) != null)
+            if (this.getMessageFieldDesc(BookingHotel.NIGHTS) != null)
         {
             iStatus = CostStatus.DATA_REQUIRED;        // The information must be valid to lookup the price
             String strError = "Data required in the {0} field";

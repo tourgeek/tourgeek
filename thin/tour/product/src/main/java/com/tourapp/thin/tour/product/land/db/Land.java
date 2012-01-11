@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class Land extends com.tourapp.thin.tour.product.base.db.Product
 {
-    public static final String CITY_ID = "CityID";
     public static final String TYPE = "Type";
     public static final String HOURS = "Hours";
     public static final String DAYS = "Days";

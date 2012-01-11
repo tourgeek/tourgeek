@@ -9,10 +9,8 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Cruise extends FieldList
+public class Cruise extends com.tourapp.thin.tour.product.base.db.TransportProduct
 {
-    public static final String CITY_CODE = "CityCode";
-    public static final String TO_CITY_CODE = "ToCityCode";
     public static final String FREQUENCY = "Frequency";
     public static final String DISTANCE = "Distance";
     public static final String DAYS = "Days";

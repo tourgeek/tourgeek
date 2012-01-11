@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class PricingStatus extends org.jbundle.thin.main.msg.db.base.BaseStatus
 {
-    public static final String ID = "ID";
     public static final String DESCRIPTION = "Description";
     public static final String ICON = "Icon";
 

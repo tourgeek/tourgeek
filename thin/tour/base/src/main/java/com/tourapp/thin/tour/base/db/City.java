@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class City extends FieldList
 {
-    public static final String ID = "ID";
     public static final String DESCRIPTION = "Description";
     public static final String CITY_CODE = "CityCode";
 

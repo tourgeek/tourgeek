@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class InventoryStatus extends FieldList
 {
-    public static final String ID = "ID";
     public static final String ICON = "Icon";
 
     public InventoryStatus()

@@ -11,7 +11,6 @@ import org.jbundle.thin.base.db.*;
 
 public class Product extends FieldList
 {
-    public static final String ID = "ID";
     public static final String DESCRIPTION = "Description";
     public static final String VENDOR_ID = "VendorID";
     public static final String OPERATORS_CODE = "OperatorsCode";
