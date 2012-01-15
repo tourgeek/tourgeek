@@ -161,10 +161,10 @@ public class TourHeaderTour extends TourHeaderDetail
     public BaseScreen makeScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
     {
         BaseScreen screen = null;
-        if ((iDocMode & ScreenConstants.MAINT_MODE) != 0)
-            screen = new TourHeaderTourHeaderScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-        else if ((iDocMode & ScreenConstants.DISPLAY_MODE) != 0)
-            screen = new TourHeaderTourHeaderGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+        if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
+            screen = BaseScreen.makeNewScreen(TOUR_HEADER_TOUR_HEADER_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
+            screen = BaseScreen.makeNewScreen(TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;

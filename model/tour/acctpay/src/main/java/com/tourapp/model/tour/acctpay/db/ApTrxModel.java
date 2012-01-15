@@ -9,6 +9,8 @@ import com.tourapp.model.tour.genled.db.*;
 public interface ApTrxModel extends TrxModel
 {
     public final static String PRODUCT_DETAIL = "Product detail";
+    public static final String AP_TRX_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.trx.ApTrxScreen";
+    public static final String _CLASS = "com.tourapp.tour.";
     public static final String DEPARTURE_ESTIMATE = "DepEstimate";
     public static final String INVOICE = "Invoice";
     public static final String DEBIT_MEMO = "DebitMemo";

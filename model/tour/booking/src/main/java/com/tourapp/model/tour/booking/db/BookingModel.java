@@ -43,6 +43,8 @@ public interface BookingModel extends CustSaleModel
     public static final String TOUR_PRICING_TYPE_ID = "TourPricingTypeID";
     public static final String NON_TOUR_PRICING_TYPE_ID = "NonTourPricingTypeID";
     public static final String BUTTON_LOCATION = "tour/buttons/";
+    public static final String BOOKING_MENU_SCREEN_CLASS = "com.tourapp.tour.booking.entry.base.BookingMenuScreen";
+    public static final String BOOKING_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.lookup.BookingGridScreen";
 
     public static final String BOOKING_FILE = "Booking";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.Booking";

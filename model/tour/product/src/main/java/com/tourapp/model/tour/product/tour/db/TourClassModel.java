@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface TourClassModel extends Rec
 {
+    public static final String TOUR_CLASS_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourClassScreen";
+    public static final String TOUR_CLASS_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourClassGridScreen";
 
     public static final String TOUR_CLASS_FILE = "TourClass";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.db.TourClass";

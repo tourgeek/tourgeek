@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AutoDistModel extends Rec
 {
+    public static final String AUTO_DIST_SCREEN_CLASS = "com.tourapp.tour.genled.screen.autodist.AutoDistScreen";
+    public static final String AUTO_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.autodist.AutoDistGridScreen";
 
     public static final String AUTO_DIST_FILE = "AutoDist";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.AutoDist";

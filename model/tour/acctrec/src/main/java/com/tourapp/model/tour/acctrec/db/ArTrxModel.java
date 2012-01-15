@@ -8,6 +8,8 @@ import com.tourapp.model.tour.genled.db.*;
 
 public interface ArTrxModel extends LinkTrxModel
 {
+    public static final String CR_DR_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.misc.CrDrScreen";
+    public static final String CR_DR_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.misc.CrDrGridScreen";
     public static final String PAYMENT = "Payment";
     public static final String CANCELLATION_CHARGE = "CancellationCharge";
     public static final String CREDIT_CARD = "CreditCard";

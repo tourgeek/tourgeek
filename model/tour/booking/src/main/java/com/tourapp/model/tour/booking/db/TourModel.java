@@ -12,6 +12,8 @@ public interface TourModel extends JobModel
     public static final String TOUR_HEADER_ID = "TourHeaderID";
     public static final String DEPARTURE_DATE = "DepartureDate";
     public static final String TOUR_STATUS_ID = "TourStatusID";
+    public static final String TOUR_SCREEN_CLASS = "com.tourapp.tour.product.tour.other.screen.TourScreen";
+    public static final String TOUR_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.lookup.TourGridScreen";
 
     public static final String TOUR_FILE = "Tour";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.Tour";

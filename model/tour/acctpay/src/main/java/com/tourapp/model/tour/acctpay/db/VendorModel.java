@@ -8,6 +8,8 @@ import org.jbundle.model.main.db.*;
 
 public interface VendorModel extends CompanyModel
 {
+    public static final String VENDOR_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.vendor.VendorScreen";
+    public static final String VENDOR_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.vendor.VendorGridScreen";
     public static final String MESSAGE_DETAIL_SCREEN = "Message Detail";
     public static final String MESSAGE_LOG_SCREEN = "Message Log";
 

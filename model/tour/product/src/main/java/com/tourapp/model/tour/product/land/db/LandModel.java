@@ -24,6 +24,8 @@ public interface LandModel extends ProductModel
     public static final String PMC_PRICE_HOME = "PMCPriceHome";
     public static final String SIC_PRICE_HOME = "SICPriceHome";
     public static final String LAND_COST_PROPERTIES = "landCostProperties.";
+    public static final String LAND_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandScreen";
+    public static final String LAND_GRID_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandGridScreen";
 
     public static final String LAND_FILE = "Land";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.Land";

@@ -8,6 +8,8 @@ import com.tourapp.model.tour.acctrec.db.*;
 
 public interface McoModel extends BaseArPayModel
 {
+    public static final String MCO_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoScreen";
+    public static final String MCO_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoGridScreen";
 
     public static final String MCO_FILE = "Mco";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.Mco";

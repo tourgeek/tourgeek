@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface TrxDescModel extends Rec
 {
+    public static final String TRX_DESC_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxDescScreen";
+    public static final String TRX_DESC_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxDescGridScreen";
 
     public static final String TRX_DESC_FILE = "TrxDesc";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.TrxDesc";

@@ -8,6 +8,8 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface HotelMealPricingModel extends ProductPricingModel
 {
+    public static final String HOTEL_MEAL_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelMealPricingScreen";
+    public static final String HOTEL_MEAL_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelMealPricingGridScreen";
 
     public static final String HOTEL_MEAL_PRICING_FILE = "HotelMealPricing";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.hotel.db.HotelMealPricing";

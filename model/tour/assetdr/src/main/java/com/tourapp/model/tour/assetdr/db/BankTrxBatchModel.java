@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface BankTrxBatchModel extends Rec
 {
+    public static final String BANK_TRX_BATCH_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchScreen";
+    public static final String BANK_TRX_BATCH_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchGridScreen";
 
     public static final String BANK_TRX_BATCH_FILE = "BankTrxBatch";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankTrxBatch";

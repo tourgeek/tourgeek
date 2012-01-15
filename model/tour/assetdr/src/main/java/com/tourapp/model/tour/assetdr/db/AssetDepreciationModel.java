@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AssetDepreciationModel extends Rec
 {
+    public static final String ASSET_DEPRECIATION_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.asset.AssetDepreciationScreen";
+    public static final String ASSET_DEPRECIATION_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.asset.AssetDepreciationGridScreen";
 
     public static final String ASSET_DEPRECIATION_FILE = "AssetDepreciation";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.AssetDepreciation";

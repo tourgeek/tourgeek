@@ -8,6 +8,8 @@ import com.tourapp.model.tour.base.db.*;
 
 public interface StateModel extends LocationModel
 {
+    public static final String STATE_SCREEN_CLASS = "com.tourapp.tour.base.screen.StateScreen";
+    public static final String STATE_GRID_SCREEN_CLASS = "com.tourapp.tour.base.screen.StateGridScreen";
 
     public static final String STATE_FILE = "State";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.base.db.State";

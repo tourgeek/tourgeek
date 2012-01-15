@@ -8,6 +8,8 @@ import com.tourapp.model.tour.base.db.*;
 
 public interface RegionModel extends LocationModel
 {
+    public static final String REGION_SCREEN_CLASS = "com.tourapp.tour.base.screen.RegionScreen";
+    public static final String REGION_GRID_SCREEN_CLASS = "com.tourapp.tour.base.screen.RegionGridScreen";
 
     public static final String REGION_FILE = "Region";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.base.db.Region";

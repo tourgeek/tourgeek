@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AffiliationModel extends Rec
 {
+    public static final String AFFILIATION_SCREEN_CLASS = "com.tourapp.tour.profile.screen.AffiliationScreen";
+    public static final String AFFILIATION_GRID_SCREEN_CLASS = "com.tourapp.tour.profile.screen.AffiliationGridScreen";
 
     public static final String AFFILIATION_FILE = "Affiliation";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.profile.db.Affiliation";

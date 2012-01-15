@@ -22,6 +22,8 @@ public interface RequestModel extends Rec
     public static final String BROCHURE_TEXT = "BrochureText";
     public static final String PRINT_NOW = "PrintNow";
     public static final String HIST_REPRINT = "HistReprint";
+    public static final String REQUEST_SCREEN_CLASS = "com.tourapp.tour.request.screen.RequestScreen";
+    public static final String REQUEST_GRID_SCREEN_CLASS = "com.tourapp.tour.request.screen.RequestGridScreen";
 
     public static final String REQUEST_FILE = "Request";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.Request";

@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface FinStmtDetailModel extends Rec
 {
+    public static final String FIN_STMT_DETAIL_SCREEN_CLASS = "com.tourapp.tour.genled.finstmt.screen.FinStmtDetailScreen";
+    public static final String FIN_STMT_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.finstmt.screen.FinStmtDetailGridScreen";
     public static final String RENUMBER = "Renumber";
     public static final String VALIDATE = "Validate";
 

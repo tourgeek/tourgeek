@@ -8,6 +8,8 @@ import com.tourapp.model.tour.product.tour.detail.db.*;
 
 public interface TourHeaderTransportationModel extends TourHeaderTransportModel
 {
+    public static final String TOUR_HEADER_TRANSPORTATION_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderTransportationScreen";
+    public static final String TOUR_HEADER_TRANSPORTATION_GRID_SCREEN_C = "com.tourapp.tour.product.tour.detail.screen.TourHeaderTransportationGridScreen";
 
     public static final String TOUR_HEADER_TRANSPORTATION_FILE = "TourHeaderDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.detail.db.TourHeaderTransportation";

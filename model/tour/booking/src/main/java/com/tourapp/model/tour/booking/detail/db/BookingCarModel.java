@@ -12,6 +12,8 @@ public interface BookingCarModel extends BookingDetailModel
     public static final String PRODUCT_TYPE = "ProductType";
     public static final String DAYS = "Days";
     public static final String QUANTITY = "Quantity";
+    public static final String BOOKING_CAR_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.car.BookingCarScreen";
+    public static final String BOOKING_CAR_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.car.BookingCarGridScreen";
 
     public static final String BOOKING_CAR_FILE = "BookingDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingCar";

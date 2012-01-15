@@ -23,6 +23,8 @@ public interface BookingHotelModel extends BookingDetailModel
     public static final String QUAD_COST = "QuadCost";
     public static final String ROOM_COST = "RoomCost";
     public static final String MEAL_COST = "MealCost";
+    public static final String BOOKING_HOTEL_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.hotel.BookingHotelScreen";
+    public static final String BOOKING_HOTEL_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.hotel.BookingHotelGridScreen";
 
     public static final String BOOKING_HOTEL_FILE = "BookingDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingHotel";

@@ -14,6 +14,8 @@ public interface BookingLineModel extends BookingSubModel
     public static final String GROSS = "Gross";
     public static final String PRICING_STATUS_ID = "PricingStatusID";
     public static final String BOOKING_DETAIL_ID = "BookingDetailID";
+    public static final String BOOKING_LINE_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingLineScreen";
+    public static final String BOOKING_LINE_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingLineGridScreen";
 
     public static final String BOOKING_LINE_FILE = "BookingLine";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingLine";

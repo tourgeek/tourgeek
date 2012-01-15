@@ -14,6 +14,8 @@ public interface TourHeaderModel extends ProductModel
     public static final String DAYS = "Days";
     public static final String NIGHTS = "Nights";
     public static final String TOUR_DETAIL = "Tour detail";
+    public static final String TOUR_HEADER_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourHeaderScreen";
+    public static final String TOUR_PRODUCT_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourProductGridScreen";
 
     public static final String TOUR_HEADER_FILE = "TourHeader";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.db.TourHeader";

@@ -16,6 +16,8 @@ public interface AirModel extends TransportProductModel
     public static final String EQUIPMENT = "Equipment";
     public static final String DAYS = "Days";
     public static final String STOPS = "Stops";
+    public static final String AIR_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirScreen";
+    public static final String AIR_GRID_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirGridScreen";
 
     public static final String AIR_FILE = "Air";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.air.db.Air";

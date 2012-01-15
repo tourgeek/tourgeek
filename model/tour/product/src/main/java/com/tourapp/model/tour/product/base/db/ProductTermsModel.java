@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface ProductTermsModel extends Rec
 {
+    public static final String PRODUCT_TERMS_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.ProductTermsScreen";
+    public static final String PRODUCT_TERMS_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.ProductTermsGridScreen";
 
     public static final String PRODUCT_TERMS_FILE = "ProductTerms";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.db.ProductTerms";

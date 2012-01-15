@@ -8,6 +8,8 @@ import org.jbundle.model.main.db.*;
 
 public interface CompanyInfoModel extends CompanyModel
 {
+    public static final String COMPANY_INFO_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.CompanyInfoScreen";
+    public static final String COMPANY_INFO_SCREEN_2_CLASS = "com.tourapp.tour.genled.screen.misc.CompanyInfoScreen";
 
     public static final String COMPANY_INFO_FILE = "CompanyInfo";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.CompanyInfo";

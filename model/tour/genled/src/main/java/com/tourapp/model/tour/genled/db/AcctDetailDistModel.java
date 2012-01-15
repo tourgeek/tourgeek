@@ -12,6 +12,8 @@ public interface AcctDetailDistModel extends Rec
     public static final String DIST_GROUP = "Group";
     public static final String DIST_SOURCE = "Source";
     public static final String DIST_TRANSACTION = "Transaction";
+    public static final String ACCT_DETAIL_DIST_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistScreen";
+    public static final String ACCT_DETAIL_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistGridScreen";
 
     public static final String ACCT_DETAIL_DIST_FILE = "AcctDetailDist";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.AcctDetailDist";

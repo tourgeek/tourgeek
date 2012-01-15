@@ -10,6 +10,8 @@ public interface CityModel extends LocationModel
 {
     public static final String DESCRIPTION = "Description";
     public static final String CITY_CODE = "CityCode";
+    public static final String CITY_SCREEN_CLASS = "com.tourapp.tour.base.screen.CityScreen";
+    public static final String CITY_GRID_SCREEN_CLASS = "com.tourapp.tour.base.screen.CityGridScreen";
 
     public static final String CITY_FILE = "City";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.base.db.City";

@@ -8,6 +8,8 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface TransportationPricingModel extends ProductPricingModel
 {
+    public static final String TRANSPORTATION_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationPricingScreen";
+    public static final String TRANSPORTATION_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationPricingGridScreen";
 
     public static final String TRANSPORTATION_PRICING_FILE = "TransportationPricing";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.trans.db.TransportationPricing";

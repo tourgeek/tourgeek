@@ -11,6 +11,8 @@ public interface AirlineModel extends Rec
     public static final String DESCRIPTION = "Description";
     public static final String AIRLINE_CODE = "AirlineCode";
     public static final String LOGO = "Logo";
+    public static final String AIRLINE_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirlineScreen";
+    public static final String AIRLINE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirlineGridScreen";
 
     public static final String AIRLINE_FILE = "Airline";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.air.db.Airline";

@@ -8,6 +8,8 @@ import com.tourapp.model.tour.acctrec.db.*;
 
 public interface CreditCardBatchDistModel extends CashBatchDistModel
 {
+    public static final String CREDIT_CARD_BATCH_DIST_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardBatchDistScreen";
+    public static final String CREDIT_CARD_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardBatchDistGridScreen";
 
     public static final String CREDIT_CARD_BATCH_DIST_FILE = "CreditCardBatchDist";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.CreditCardBatchDist";

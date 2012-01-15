@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface TimeTrxModel extends Rec
 {
+    public static final String TIME_TRX_SCREEN_CLASS = "com.tourapp.tour.payroll.report.payroll.TimeTrxScreen";
+    public static final String TIME_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.payroll.report.payroll.TimeTrxGridScreen";
 
     public static final String TIME_TRX_FILE = "TimeTrx";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.payroll.db.TimeTrx";

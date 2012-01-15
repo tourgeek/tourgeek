@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AcctBatchDetailModel extends Rec
 {
+    public static final String ACCT_BATCH_DETAIL_SCREEN_CLASS = "com.tourapp.tour.genled.screen.batch.AcctBatchDetailScreen";
+    public static final String ACCT_BATCH_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.batch.AcctBatchDetailGridScreen";
     public static final String REVERSAL = "Reversal";
 
     public static final String ACCT_BATCH_DETAIL_FILE = "AcctBatchDetail";

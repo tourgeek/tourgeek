@@ -16,6 +16,8 @@ public interface BookingPaxModel extends Rec
     public static final String SUR_NAME = "SurName";
     public static final String SMOKER = "Smoker";
     public static final String SOURCE_REFERENCE_NO = "SourceReferenceNo";
+    public static final String BOOKING_PAX_SCREEN_CLASS = "com.tourapp.tour.booking.entry.pax.BookingPaxScreen";
+    public static final String BOOKING_PAX_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.pax.BookingPaxGridScreen";
 
     public static final String BOOKING_PAX_FILE = "BookingPax";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.BookingPax";

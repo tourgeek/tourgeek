@@ -15,6 +15,8 @@ public interface TransportationModel extends TransportProductModel
     public static final String LUNCHES = "Lunches";
     public static final String DINNERS = "Dinners";
     public static final String DAYS_OF_WEEK = "DaysOfWeek";
+    public static final String TRANSPORTATION_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationScreen";
+    public static final String TRANSPORTATION_GRID_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationGridScreen";
 
     public static final String TRANSPORTATION_FILE = "Transportation";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.trans.db.Transportation";

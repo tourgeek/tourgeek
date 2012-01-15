@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AccountModel extends Rec
 {
+    public static final String ACCOUNT_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.AccountScreen";
+    public static final String ACCOUNT_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.AccountGridScreen";
     public static final String CREDIT = "C";
     public static final String DEBIT = "D";
 

@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AssetDrControlModel extends Rec
 {
+    public static final String ASSET_DR_CONTROL_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.AssetDrControlScreen";
+    public static final String ASSET_DR_CONTROL_SCREEN_2_CLASS = "com.tourapp.tour.assetdr.screen.AssetDrControlScreen";
 
     public static final String ASSET_DR_CONTROL_FILE = "AssetDrControl";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.AssetDrControl";

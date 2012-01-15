@@ -14,6 +14,8 @@ public interface CruiseModel extends TransportProductModel
     public static final String BREAKFASTS = "Breakfasts";
     public static final String LUNCHES = "Lunches";
     public static final String DINNERS = "Dinners";
+    public static final String CRUISE_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruiseScreen";
+    public static final String CRUISE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruiseGridScreen";
 
     public static final String CRUISE_FILE = "Cruise";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.cruise.db.Cruise";

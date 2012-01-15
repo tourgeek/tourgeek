@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface AcctBatchModel extends Rec
 {
+    public static final String ACCT_BATCH_SCREEN_CLASS = "com.tourapp.tour.genled.screen.batch.AcctBatchScreen";
+    public static final String ACCT_BATCH_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.batch.AcctBatchGridScreen";
     public static final String AUTO_CLOSING = "Auto-Closing";
 
     public static final String ACCT_BATCH_FILE = "AcctBatch";

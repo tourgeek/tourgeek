@@ -8,6 +8,8 @@ import org.jbundle.model.db.*;
 
 public interface InventoryDetailModel extends Rec
 {
+    public static final String INVENTORY_DETAIL_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.InventoryDetailScreen";
+    public static final String INVENTORY_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.InventoryDetailGridScreen";
 
     public static final String INVENTORY_DETAIL_FILE = "InventoryDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.inventory.db.InventoryDetail";
