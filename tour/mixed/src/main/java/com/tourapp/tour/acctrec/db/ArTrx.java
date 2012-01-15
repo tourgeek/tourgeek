@@ -26,11 +26,13 @@ import com.tourapp.tour.acctrec.screen.refund.*;
 import com.tourapp.tour.acctrec.db.event.*;
 import com.tourapp.tour.booking.entry.acctrec.*;
 import com.tourapp.tour.acctrec.screen.display.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  ArTrx - A/R Open File.
  */
 public class ArTrx extends LinkTrx
+     implements ArTrxModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -61,21 +63,6 @@ public class ArTrx extends LinkTrx
     public static final int REFUND_CHECK_XML_PRINT = ScreenConstants.DISPLAY_MODE | 2048;
     public static final int REFUND_CHECK_CANNED_PRINT = ScreenConstants.DISPLAY_MODE | 4096;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | 8192;
-    public static final String PAYMENT = "Payment";
-    public static final String CANCELLATION_CHARGE = "CancellationCharge";
-    public static final String CREDIT_CARD = "CreditCard";
-    public static final String CREDIT_MEMO = "CreditMemo";
-    public static final String DEBIT_MEMO = "DebitMemo";
-    public static final String ELECTRONIC_PAYMENT = "ElectronicPayment";
-    public static final String INVOICE = "Invoice";
-    public static final String INVOICE_MODIFICATION = "InvoiceModification";
-    public static final String MCO = "Mco";
-    public static final String REFUND_SUBMITTED = "RefundSubmitted";
-    public static final String REFUND_HELD = "RefundHeld";
-    public static final String REFUND_PAY = "RefundPay";
-    public static final String REFUND_PAID = "RefundPaid";
-    public static final String REFUND_PAID_MANUAL = "RefundPaidManual";
-    public static final String REFUND_PENDING = "RefundPending";
     /**
      * Default constructor.
      */

@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class HotelMealPricing extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.hotel.db.*;
+
+public class HotelMealPricing extends ProductPricing
+    implements HotelMealPricingModel
 {
 
     public HotelMealPricing()

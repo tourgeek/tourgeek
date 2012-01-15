@@ -26,11 +26,13 @@ import org.jbundle.thin.base.screen.message.*;
 import org.jbundle.base.message.record.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.thin.base.screen.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourSub - Tour Sub File.
  */
 public class TourSub extends VirtualRecord
+     implements TourSubModel
 {
     private static final long serialVersionUID = 1L;
 

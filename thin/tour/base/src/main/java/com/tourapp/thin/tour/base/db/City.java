@@ -9,10 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class City extends FieldList
+import com.tourapp.thin.tour.base.db.*;
+import com.tourapp.model.tour.base.db.*;
+
+public class City extends Location
+    implements CityModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String CITY_CODE = "CityCode";
 
     public City()
     {

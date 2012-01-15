@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class CompanyInfo extends FieldList
+import org.jbundle.thin.main.db.*;
+import com.tourapp.model.tour.genled.db.*;
+
+public class CompanyInfo extends Company
+    implements CompanyInfoModel
 {
 
     public CompanyInfo()

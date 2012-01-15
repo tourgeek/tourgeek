@@ -20,10 +20,14 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.jbundle.config.dep</groupId>
-      <artifactId>jbundle-config-dep-thin-base</artifactId>
-      <version>${jbundleVersionRange}</version>
-	  <type>pom</type>
+      <groupId>com.tourapp.model</groupId>
+      <version>0.8.0-SNAPSHOT</version>
+      <artifactId>com.tourapp.model.tour.base</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.thin.main</groupId>
+      <artifactId>org.jbundle.thin.main</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
     </dependency>
     
     <dependency>

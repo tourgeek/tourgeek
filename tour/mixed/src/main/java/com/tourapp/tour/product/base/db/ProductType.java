@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  ProductType - Product Type.
  */
 public class ProductType extends VirtualRecord
+     implements ProductTypeModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -39,33 +41,6 @@ public class ProductType extends VirtualRecord
     public static final int kDescriptionKey = kCodeKey + 1;
     public static final int kProductTypeLastKey = kDescriptionKey;
     public static final int kProductTypeKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String AIR = "Air";
-    public static final int AIR_ID = 1;
-    public static final String CAR = "Car";
-    public static final int CAR_ID = 2;
-    public static final String CRUISE = "Cruise";
-    public static final int CRUISE_ID = 8;
-    public static final String HOTEL = "Hotel";
-    public static final int HOTEL_ID = 3;
-    public static final String ITEM = "Item";
-    public static final int ITEM_ID = 4;
-    public static final String LAND = "Land";
-    public static final int LAND_ID = 9;
-    public static final String TOUR = "Tour";
-    public static final int TOUR_ID = 6;
-    public static final String TRANSPORTATION = "Transportation";
-    public static final int TRANSPORTATION_ID = 7;
-    public static final String UNKNOWN = "Unknown";
-    public static final int UNKNOWN_ID = 0;
-    public static final String TOUR_CODE = "T";
-    public static final String AIR_CODE = "A";
-    public static final String HOTEL_CODE = "H";
-    public static final String LAND_CODE = "L";
-    public static final String TRANSPORTATION_CODE = "R";
-    public static final String CAR_CODE = "V";
-    public static final String CRUISE_CODE = "U";
-    public static final String ITEM_CODE = "I";
-    public static final String UNKNOWN_CODE = "U";
     /**
      * Default constructor.
      */

@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.user.db.*;
 import com.tourapp.tour.base.screen.*;
+import com.tourapp.model.tour.base.db.*;
 
 /**
  *  Currencys - Currencies.
  */
 public class Currencys extends VirtualRecord
+     implements CurrencysModel
 {
     private static final long serialVersionUID = 1L;
 

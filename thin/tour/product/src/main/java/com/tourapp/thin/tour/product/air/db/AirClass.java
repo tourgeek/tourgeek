@@ -9,9 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class AirClass extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.air.db.*;
+
+public class AirClass extends BaseClass
+    implements AirClassModel
 {
-    public static final String DESCRIPTION = "Description";
 
     public AirClass()
     {

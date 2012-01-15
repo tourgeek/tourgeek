@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class State extends FieldList
+import com.tourapp.thin.tour.base.db.*;
+import com.tourapp.model.tour.base.db.*;
+
+public class State extends Location
+    implements StateModel
 {
 
     public State()

@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.base.db.shared.*;
+import com.tourapp.model.tour.request.db.*;
 
 /**
  *  RequestInput - Input Fields.
  */
 public class RequestInput extends VirtualRecord
+     implements RequestInputModel
 {
     private static final long serialVersionUID = 1L;
 

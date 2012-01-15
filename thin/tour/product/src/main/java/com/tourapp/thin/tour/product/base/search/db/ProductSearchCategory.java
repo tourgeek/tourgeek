@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.base.search.db.*;
+
 public class ProductSearchCategory extends FieldList
+    implements ProductSearchCategoryModel
 {
 
     public ProductSearchCategory()

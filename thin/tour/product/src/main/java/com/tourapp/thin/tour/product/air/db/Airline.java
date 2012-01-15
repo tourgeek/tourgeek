@@ -9,11 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.air.db.*;
+
 public class Airline extends FieldList
+    implements AirlineModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String AIRLINE_CODE = "AirlineCode";
-    public static final String LOGO = "Logo";
 
     public Airline()
     {

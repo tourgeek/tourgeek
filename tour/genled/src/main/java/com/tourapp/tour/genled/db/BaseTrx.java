@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.user.db.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  BaseTrx - Base system transaction.
  */
 public class BaseTrx extends Trx
+     implements BaseTrxModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -40,8 +42,6 @@ public class BaseTrx extends Trx
     public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
     public static final int kBaseTrxLastKey = kIDKey;
     public static final int kBaseTrxKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String TRX_TYPE = "Trx";
-    public static final String DIST_TYPE = "Dist";
     /**
      * Default constructor.
      */

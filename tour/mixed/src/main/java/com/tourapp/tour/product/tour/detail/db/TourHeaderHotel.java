@@ -25,11 +25,13 @@ import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourHeaderHotel - Tour Hotel Detail.
  */
 public class TourHeaderHotel extends TourHeaderDetail
+     implements TourHeaderHotelModel
 {
     private static final long serialVersionUID = 1L;
 

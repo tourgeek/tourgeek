@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.screen.trx.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  TransactionType - Transaction type.
  */
 public class TransactionType extends VirtualRecord
+     implements TransactionTypeModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -64,12 +66,6 @@ public class TransactionType extends VirtualRecord
     public static final int kTransactionTypeKeys = kSourceTrxStatusIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected Map<String,Object> m_htTrxStatus;
     protected int m_iCurrentTrxStatus = -1;
-    public static final String GENLED = "genled";
-    public static final String ASSETDR = "assetdr";
-    public static final String ACCTPAY = "acctpay";
-    public static final String ACCTREC = "acctrec";
-    public static final String PAYROLL = "payroll";
-    public static final String AIR = "air";
     /**
      * Default constructor.
      */

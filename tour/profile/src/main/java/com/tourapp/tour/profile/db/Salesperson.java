@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  Salesperson - Salesperson.
  */
 public class Salesperson extends VirtualRecord
+     implements SalespersonModel
 {
     private static final long serialVersionUID = 1L;
 

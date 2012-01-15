@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.trans.db.*;
 
 /**
  *  TransportationClass - Base product class.
  */
 public class TransportationClass extends BaseClass
+     implements TransportationClassModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -39,9 +41,6 @@ public class TransportationClass extends BaseClass
     public static final int kCodeKey = kDescriptionKey + 1;
     public static final int kTransportationClassLastKey = kCodeKey;
     public static final int kTransportationClassKeys = kCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String FIRST_CLASS = "1";
-    public static final String SECOND_CLASS = "2";
-    public static final String THIRD_CLASS = "3";
     /**
      * Default constructor.
      */

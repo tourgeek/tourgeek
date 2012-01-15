@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.assetdr.screen.batch.*;
 import org.jbundle.main.user.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
 
 /**
  *  BankTrxBatch - Bank Transactions.
  */
 public class BankTrxBatch extends VirtualRecord
+     implements BankTrxBatchModel
 {
     private static final long serialVersionUID = 1L;
 

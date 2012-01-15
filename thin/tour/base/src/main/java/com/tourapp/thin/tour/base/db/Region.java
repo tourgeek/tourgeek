@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Region extends FieldList
+import com.tourapp.thin.tour.base.db.*;
+import com.tourapp.model.tour.base.db.*;
+
+public class Region extends Location
+    implements RegionModel
 {
 
     public Region()

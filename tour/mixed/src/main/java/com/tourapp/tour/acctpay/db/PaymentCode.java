@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  PaymentCode - Payment codes.
  */
 public class PaymentCode extends VirtualRecord
+     implements PaymentCodeModel
 {
     private static final long serialVersionUID = 1L;
 

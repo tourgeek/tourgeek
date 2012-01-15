@@ -29,11 +29,13 @@ import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.product.tour.schedule.db.*;
 
 /**
  *  TourEventSchedule - Tour operation schedule.
  */
 public class TourEventSchedule extends PropertiesRecord
+     implements TourEventScheduleModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -58,7 +60,6 @@ public class TourEventSchedule extends PropertiesRecord
     public static final int kTourClassIDKey = kIDKey + 1;
     public static final int kTourEventScheduleLastKey = kTourClassIDKey;
     public static final int kTourEventScheduleKeys = kTourClassIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String EVENTS = "Events";
     /**
      * Default constructor.
      */

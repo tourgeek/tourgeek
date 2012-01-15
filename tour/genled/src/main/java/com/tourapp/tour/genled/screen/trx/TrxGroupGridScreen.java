@@ -27,7 +27,6 @@ import com.tourapp.tour.genled.db.*;
  */
 public class TrxGroupGridScreen extends DetailGridScreen
 {
-    private static final long serialVersionUID = 1L;
     /**
      * Default constructor.
      */
@@ -55,8 +54,13 @@ public class TrxGroupGridScreen extends DetailGridScreen
     {
         super.init(record, itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, properties);
     }
-
-    public static final String kTrxGroupGridScreenFile = null;  // Screen field
+    /**
+     * Get the screen display title.
+     */
+    public String getTitle()
+    {
+        return "Transaction type";
+    }
     /**
      * TrxGroupGridScreen Method.
      */

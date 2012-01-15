@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.screen.autodist.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  AutoDistDetail - Automatic Distribution Entry.
  */
 public class AutoDistDetail extends VirtualRecord
+     implements AutoDistDetailModel
 {
     private static final long serialVersionUID = 1L;
 

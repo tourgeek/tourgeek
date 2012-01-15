@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.base.ota.db.*;
+
 public class OTACodes extends FieldList
+    implements OTACodesModel
 {
 
     public OTACodes()

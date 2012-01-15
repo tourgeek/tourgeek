@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Vendor extends FieldList
+import org.jbundle.thin.main.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
+
+public class Vendor extends Company
+    implements VendorModel
 {
 
     public Vendor()

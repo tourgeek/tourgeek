@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import org.jbundle.main.msg.db.base.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  BaseDataStatus - Status for all booking messages.
  */
 public class BaseDataStatus extends BaseStatus
+     implements BaseDataStatusModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -35,8 +37,6 @@ public class BaseDataStatus extends BaseStatus
     //public static final int kIcon = kIcon;
     public static final int kBaseDataStatusLastField = kBaseStatusLastField;
     public static final int kBaseDataStatusFields = kBaseStatusLastField - DBConstants.MAIN_FIELD + 1;
-    public static final String DATA_STATUS = MessageDataDesc.DATA_STATUS;
-    public static final String DATA_ERROR_MESSAGE = "dataErrorMessage";
     /**
      * Default constructor.
      */

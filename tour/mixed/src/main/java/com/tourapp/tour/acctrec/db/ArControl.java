@@ -24,11 +24,13 @@ import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.product.air.db.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  ArControl - Control File.
  */
 public class ArControl extends ControlRecord
+     implements ArControlModel
 {
     private static final long serialVersionUID = 1L;
 

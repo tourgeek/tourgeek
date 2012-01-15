@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.land.db.*;
 
 /**
  *  LandChain - .
  */
 public class LandChain extends ProductChain
+     implements LandChainModel
 {
     private static final long serialVersionUID = 1L;
 

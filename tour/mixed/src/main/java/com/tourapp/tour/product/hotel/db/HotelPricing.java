@@ -23,11 +23,13 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.hotel.screen.*;
 import java.util.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.hotel.db.*;
 
 /**
  *  HotelPricing - Hotel pricing.
  */
 public class HotelPricing extends ProductPricing
+     implements HotelPricingModel
 {
     private static final long serialVersionUID = 1L;
 

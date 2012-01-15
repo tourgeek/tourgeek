@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.finstmt.screen.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  FinStmtHeader - Financial Statements.
  */
 public class FinStmtHeader extends VirtualRecord
+     implements FinStmtHeaderModel
 {
     private static final long serialVersionUID = 1L;
 

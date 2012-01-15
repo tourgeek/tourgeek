@@ -9,14 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Cruise extends com.tourapp.thin.tour.product.base.db.TransportProduct
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.cruise.db.*;
+
+public class Cruise extends TransportProduct
+    implements CruiseModel
 {
-    public static final String FREQUENCY = "Frequency";
-    public static final String DISTANCE = "Distance";
-    public static final String DAYS = "Days";
-    public static final String BREAKFASTS = "Breakfasts";
-    public static final String LUNCHES = "Lunches";
-    public static final String DINNERS = "Dinners";
 
     public Cruise()
     {

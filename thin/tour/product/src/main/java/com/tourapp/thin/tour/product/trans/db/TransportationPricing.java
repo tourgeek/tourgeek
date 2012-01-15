@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class TransportationPricing extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.trans.db.*;
+
+public class TransportationPricing extends ProductPricing
+    implements TransportationPricingModel
 {
 
     public TransportationPricing()

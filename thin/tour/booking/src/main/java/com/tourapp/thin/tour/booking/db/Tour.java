@@ -9,12 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Tour extends FieldList
+import com.tourapp.thin.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
+
+public class Tour extends Job
+    implements TourModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String TOUR_HEADER_ID = "TourHeaderID";
-    public static final String DEPARTURE_DATE = "DepartureDate";
-    public static final String TOUR_STATUS_ID = "TourStatusID";
 
     public Tour()
     {

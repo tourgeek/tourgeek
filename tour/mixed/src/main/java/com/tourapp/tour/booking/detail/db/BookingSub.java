@@ -25,14 +25,15 @@ import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.event.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingSub - Customer Sale Sub-File.
  */
 public class BookingSub extends VirtualRecord
+     implements BookingSubModel
 {
     private static final long serialVersionUID = 1L;
-    public static final String REMOTE_REFERENCE_NO = "RemoteReferenceNo";
 
     //public static final int kID = kID;
     public static final int kBookingID = kVirtualRecordLastField + 1;
@@ -52,7 +53,6 @@ public class BookingSub extends VirtualRecord
     public static final int kBookingKey = kDetailAccessKey + 1;
     public static final int kBookingSubLastKey = kBookingKey;
     public static final int kBookingSubKeys = kBookingKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String SOURCE_REFERENCE_NO = "SourceReferenceNo";
     /**
      * Default constructor.
      */

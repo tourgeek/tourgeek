@@ -33,15 +33,15 @@ import com.tourapp.tour.message.land.response.in.*;
 import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingLand - Land detail file.
  */
 public class BookingLand extends BookingDetail
+     implements BookingLandModel
 {
     private static final long serialVersionUID = 1L;
-    public static final String PMC_COST = "PMCCost";
-    public static final String SIC_COST = "SICCost";
 
     //public static final int kID = kID;
     //public static final int kBookingID = kBookingID;

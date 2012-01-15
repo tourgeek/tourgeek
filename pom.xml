@@ -19,6 +19,7 @@
 
   <modules>
     <module>res</module>
+    <module>model</module>
     <module>thin</module>
     <module>tour</module>
     <module>config</module>

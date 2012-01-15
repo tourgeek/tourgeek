@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class RequestHistory extends com.tourapp.thin.tour.request.db.Request
+import com.tourapp.thin.tour.request.db.*;
+import com.tourapp.model.tour.request.db.*;
+
+public class RequestHistory extends Request
+    implements RequestHistoryModel
 {
 
     public RequestHistory()

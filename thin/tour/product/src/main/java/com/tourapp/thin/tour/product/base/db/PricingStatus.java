@@ -9,10 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class PricingStatus extends org.jbundle.thin.main.msg.db.base.BaseStatus
+import org.jbundle.thin.main.msg.db.base.*;
+import com.tourapp.model.tour.product.base.db.*;
+
+public class PricingStatus extends BaseStatus
+    implements PricingStatusModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String ICON = "Icon";
 
     public PricingStatus()
     {

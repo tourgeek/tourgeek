@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.payroll.screen.misc.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.assetdr.db.*;
+import com.tourapp.model.tour.payroll.db.*;
 
 /**
  *  EmployeeControl - Employee Control File.
  */
 public class EmployeeControl extends ControlRecord
+     implements EmployeeControlModel
 {
     private static final long serialVersionUID = 1L;
 

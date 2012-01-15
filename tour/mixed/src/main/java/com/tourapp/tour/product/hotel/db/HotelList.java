@@ -43,11 +43,13 @@ import com.tourapp.tour.message.hotel.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.product.hotel.db.*;
 
 /**
  *  HotelList - For Product display.
  */
 public class HotelList extends QueryRecord
+     implements HotelListModel
 {
     private static final long serialVersionUID = 1L;
     /**

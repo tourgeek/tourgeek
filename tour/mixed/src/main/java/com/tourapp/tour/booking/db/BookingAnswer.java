@@ -24,11 +24,13 @@ import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.entry.tour.*;
 import org.jbundle.thin.base.db.buff.*;
 import com.tourapp.tour.product.tour.detail.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  BookingAnswer - Booking Answer File.
  */
 public class BookingAnswer extends BookingSub
+     implements BookingAnswerModel
 {
     private static final long serialVersionUID = 1L;
 

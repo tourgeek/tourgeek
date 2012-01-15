@@ -30,11 +30,13 @@ import com.tourapp.tour.product.trans.db.*;
 import com.tourapp.tour.product.cruise.db.*;
 import com.tourapp.tour.product.item.db.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourClass - Tour class.
  */
 public class TourClass extends VirtualRecord
+     implements TourClassModel
 {
     private static final long serialVersionUID = 1L;
 

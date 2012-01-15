@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.tour.schedule.db.*;
 
 /**
  *  TourEvent - Tour event descriptions.
  */
 public class TourEvent extends VirtualRecord
+     implements TourEventModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -40,24 +42,6 @@ public class TourEvent extends VirtualRecord
     public static final int kCodeKey = kDescriptionKey + 1;
     public static final int kTourEventLastKey = kCodeKey;
     public static final int kTourEventKeys = kCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final int NO_EVENT = 0;
-    public static final int BOOKING = 1;
-    public static final int BOOKING_STATUS = 2;
-    public static final int DEPOSIT_DUE = 4;
-    public static final int DEPOSIT_RECEIVED = 5;
-    public static final int FINAL_PAY_DUE = 6;
-    public static final int FINAL_PAYMENT_RECEIVED = 7;
-    public static final int FINALIZATION = 8;
-    public static final int TOUR_CLOSED = 9;
-    public static final int ORDER_COMPONENTS = 10;
-    public static final int SERVICES_CONFIRMED = 11;
-    public static final int FINAL_DOCS = 12;
-    public static final int TICKETING = 13;
-    public static final int SPECIAL_1 = 14;
-    public static final int SPECIAL_2 = 15;
-    public static final int DEPARTURE = 16;
-    public static final int CANCELLATION = 17;
-    public static final int TOUR_CANCELLED = 18;
     /**
      * Default constructor.
      */

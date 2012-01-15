@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  TransportProduct - A travel product that takes you from one location to another..
  */
 public class TransportProduct extends Product
+     implements TransportProductModel
 {
     private static final long serialVersionUID = 1L;
 

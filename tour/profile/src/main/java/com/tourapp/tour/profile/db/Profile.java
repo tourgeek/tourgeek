@@ -28,12 +28,13 @@ import org.jbundle.main.msg.screen.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.base.db.shared.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  Profile - Passenger and Agency Profile.
  */
 public class Profile extends Company
-     implements MessageDetailTarget
+     implements ProfileModel, MessageDetailTarget
 {
     private static final long serialVersionUID = 1L;
 
@@ -98,7 +99,6 @@ public class Profile extends Company
     public static final int kProfileKeys = kNameSurKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected ProfileControl m_recProfileControl = null;
     public static final int MESSAGE_LOG_MODE = ScreenConstants.LAST_MODE * 4;
-    public static final String MESSAGE_LOG_SCREEN = "Message Log";
     /**
      * Default constructor.
      */
@@ -159,13 +159,13 @@ public class Profile extends Company
     {
         BaseScreen screen = null;
         if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.DETAIL_MODE)
-            screen = ClassFactory.createScreenFromClassName("RequestHistoryGridScreen", this, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
+            screen = BaseScreen.makeNewScreen(REQUEST_HISTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Profile.MESSAGE_LOG_MODE) == Profile.MESSAGE_LOG_MODE)
-            screen = new MessageLogGridScreen(this, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = BaseScreen.makeNewScreen(MESSAGE_LOG_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new ProfileScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = BaseScreen.makeNewScreen(MAINT_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
-            screen = new ProfileGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = BaseScreen.makeNewScreen(GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         return screen;
     }
     /**

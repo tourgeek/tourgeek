@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class AcctDetail extends FieldList
+import com.tourapp.thin.tour.genled.db.*;
+import com.tourapp.model.tour.genled.db.*;
+
+public class AcctDetail extends BaseTrx
+    implements AcctDetailModel
 {
 
     public AcctDetail()

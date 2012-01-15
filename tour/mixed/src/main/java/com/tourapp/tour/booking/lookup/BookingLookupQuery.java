@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.lookup.*;
 
 /**
  *  BookingLookupQuery - Booking and Tour Query.
  */
 public class BookingLookupQuery extends QueryRecord
+     implements BookingLookupQueryModel
 {
     private static final long serialVersionUID = 1L;
     /**

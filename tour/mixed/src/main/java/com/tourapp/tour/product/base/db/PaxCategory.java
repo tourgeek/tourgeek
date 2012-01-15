@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  PaxCategory - Passenger price category.
  */
 public class PaxCategory extends VirtualRecord
+     implements PaxCategoryModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -39,18 +41,6 @@ public class PaxCategory extends VirtualRecord
     public static final int kDescriptionKey = kIDKey + 1;
     public static final int kPaxCategoryLastKey = kDescriptionKey;
     public static final int kPaxCategoryKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String SINGLE = "Single";
-    public static final String DOUBLE = "Double";
-    public static final String TRIPLE = "Triple";
-    public static final String QUAD = "Quad";
-    public static final String CHILD = "Child";
-    public static final String ALL = "All";
-    public static final int SINGLE_ID = 1;
-    public static final int DOUBLE_ID = 2;
-    public static final int TRIPLE_ID = 3;
-    public static final int QUAD_ID = 4;
-    public static final int CHILD_ID = 5;
-    public static final int ALL_ID = 6;
     /**
      * Default constructor.
      */

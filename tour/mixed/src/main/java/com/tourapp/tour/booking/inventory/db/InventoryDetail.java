@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 
 /**
  *  InventoryDetail - The inventory detail record.
  */
 public class InventoryDetail extends VirtualRecord
+     implements InventoryDetailModel
 {
     private static final long serialVersionUID = 1L;
 

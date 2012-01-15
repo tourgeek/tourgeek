@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  EAddressType - Electronic address type.
  */
 public class EAddressType extends VirtualRecord
+     implements EAddressTypeModel
 {
     private static final long serialVersionUID = 1L;
 

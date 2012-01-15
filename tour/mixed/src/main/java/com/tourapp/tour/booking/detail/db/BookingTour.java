@@ -32,11 +32,13 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingTour - Booking tour header detail.
  */
 public class BookingTour extends BookingDetail
+     implements BookingTourModel
 {
     private static final long serialVersionUID = 1L;
 

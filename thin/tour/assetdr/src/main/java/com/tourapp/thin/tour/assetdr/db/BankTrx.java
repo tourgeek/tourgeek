@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class BankTrx extends FieldList
+import com.tourapp.thin.tour.genled.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
+
+public class BankTrx extends BaseTrx
+    implements BankTrxModel
 {
 
     public BankTrx()

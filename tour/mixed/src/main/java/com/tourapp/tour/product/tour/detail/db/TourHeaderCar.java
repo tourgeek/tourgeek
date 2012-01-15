@@ -26,11 +26,13 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.car.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourHeaderCar - .
  */
 public class TourHeaderCar extends TourHeaderTransport
+     implements TourHeaderCarModel
 {
     private static final long serialVersionUID = 1L;
 

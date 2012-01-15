@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.payroll.screen.misc.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.payroll.db.*;
 
 /**
  *  Deduction - Deduction and Earning Codes.
  */
 public class Deduction extends VirtualRecord
+     implements DeductionModel
 {
     private static final long serialVersionUID = 1L;
 

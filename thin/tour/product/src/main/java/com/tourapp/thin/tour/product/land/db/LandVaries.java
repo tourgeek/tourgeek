@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.land.db.*;
+
 public class LandVaries extends FieldList
+    implements LandVariesModel
 {
 
     public LandVaries()

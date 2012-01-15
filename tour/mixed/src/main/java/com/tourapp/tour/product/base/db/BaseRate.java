@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  BaseRate - Base product rate.
  */
 public class BaseRate extends VirtualRecord
+     implements BaseRateModel
 {
     private static final long serialVersionUID = 1L;
 

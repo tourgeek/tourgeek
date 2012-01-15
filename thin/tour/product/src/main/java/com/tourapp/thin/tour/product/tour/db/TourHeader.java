@@ -9,13 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class TourHeader extends com.tourapp.thin.tour.product.base.db.Product
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
+
+public class TourHeader extends Product
+    implements TourHeaderModel
 {
-    public static final String START_DATE = "StartDate";
-    public static final String END_DATE = "EndDate";
-    public static final String TOUR_TYPE = "TourType";
-    public static final String DAYS = "Days";
-    public static final String NIGHTS = "Nights";
 
     public TourHeader()
     {

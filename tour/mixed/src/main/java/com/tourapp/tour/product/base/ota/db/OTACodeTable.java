@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.ota.screen.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.product.base.ota.db.*;
 
 /**
  *  OTACodeTable - .
  */
 public class OTACodeTable extends VirtualRecord
+     implements OTACodeTableModel
 {
     private static final long serialVersionUID = 1L;
 

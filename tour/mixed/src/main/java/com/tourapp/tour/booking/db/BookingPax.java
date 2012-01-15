@@ -25,14 +25,15 @@ import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.booking.entry.base.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.base.field.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  BookingPax - Passenger Booking Detail.
  */
 public class BookingPax extends VirtualRecord
+     implements BookingPaxModel
 {
     private static final long serialVersionUID = 1L;
-    public static final String REMOTE_REFERENCE_NO = "RemoteReferenceNo";
 
     //public static final int kID = kID;
     public static final int kBookingID = kVirtualRecordLastField + 1;
@@ -58,7 +59,6 @@ public class BookingPax extends VirtualRecord
     public static final int kProfileIDKey = kSurNameKey + 1;
     public static final int kBookingPaxLastKey = kProfileIDKey;
     public static final int kBookingPaxKeys = kProfileIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String SOURCE_REFERENCE_NO = "SourceReferenceNo";
     /**
      * Default constructor.
      */

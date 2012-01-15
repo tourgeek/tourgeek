@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class OTASeatPreference extends com.tourapp.thin.tour.product.base.ota.db.OTACode
+import com.tourapp.thin.tour.product.base.ota.db.*;
+import com.tourapp.model.tour.product.base.ota.db.*;
+
+public class OTASeatPreference extends OTACode
+    implements OTASeatPreferenceModel
 {
 
     public OTASeatPreference()

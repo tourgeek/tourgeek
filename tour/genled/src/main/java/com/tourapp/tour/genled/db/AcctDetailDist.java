@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import java.util.*;
 import com.tourapp.tour.genled.screen.detail.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  AcctDetailDist - Account Transaction Distribution.
  */
 public class AcctDetailDist extends VirtualRecord
+     implements AcctDetailDistModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -48,10 +50,6 @@ public class AcctDetailDist extends VirtualRecord
     public static final int kTrxDescIDKey = kAcctDetailDistGroupIDKey + 1;
     public static final int kAcctDetailDistLastKey = kTrxDescIDKey;
     public static final int kAcctDetailDistKeys = kTrxDescIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String DIST_DISTRIBUTION = "Distribution";
-    public static final String DIST_GROUP = "Group";
-    public static final String DIST_SOURCE = "Source";
-    public static final String DIST_TRANSACTION = "Transaction";
     public static final int DIST_GROUP_SCREEN = ScreenConstants.DISPLAY_MODE | 4096;
     /**
      * Default constructor.

@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.finstmt.screen.*;
 import com.tourapp.tour.genled.finstmt.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  FinStmtDetail - Financial Statement Detail.
  */
 public class FinStmtDetail extends VirtualRecord
+     implements FinStmtDetailModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -49,8 +51,6 @@ public class FinStmtDetail extends VirtualRecord
     public static final int kFinStmtIDKey = kIDKey + 1;
     public static final int kFinStmtDetailLastKey = kFinStmtIDKey;
     public static final int kFinStmtDetailKeys = kFinStmtIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String RENUMBER = "Renumber";
-    public static final String VALIDATE = "Validate";
     /**
      * Default constructor.
      */

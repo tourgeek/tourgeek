@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class AirRate extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.air.db.*;
+
+public class AirRate extends BaseRate
+    implements AirRateModel
 {
 
     public AirRate()

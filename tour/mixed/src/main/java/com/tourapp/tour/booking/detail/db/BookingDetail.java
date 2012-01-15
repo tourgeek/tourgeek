@@ -47,21 +47,15 @@ import org.jbundle.thin.base.db.buff.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingDetail - Customer Sale Detail.
  */
 public class BookingDetail extends BookingSub
+     implements BookingDetailModel
 {
     private static final long serialVersionUID = 1L;
-    public static final String PRODUCT_TYPE = "ProductType";
-    public static final String DETAIL_DATE = "DetailDate";
-    public static final String PRODUCT_ID = "ProductID";
-    public static final String RATE_ID = "RateID";
-    public static final String CLASS_ID = "ClassID";
-    public static final String TOTAL_COST = "TotalCost";
-    public static final String REMOTE_BOOKING_NO = "RemoteBookingNo";
-    public static final String PP_COST = "PPCost";
 
     //public static final int kID = kID;
     //public static final int kBookingID = kBookingID;
@@ -199,12 +193,6 @@ public class BookingDetail extends BookingSub
     public static final int MESSAGE_TRANSPORT_OFFSET = BookingDetail.kInfoMessageTransportID - BookingDetail.kInfoStatusID;
     public static final int MESSAGE_KEY_OFFSET = BookingDetail.kInfoRequestKey - BookingDetail.kInfoStatusID;
     public static final int MESSAGE_REQUEST_OFFSET = BookingDetail.kInfoStatusRequest - BookingDetail.kInfoStatusID;
-    public static final String MESSAGE_PARAM = "message";
-    public static final String ERROR_PARAM = "error";
-    public static final String INFO_PARAM = "info";
-    public static final String COST_PARAM = "cost";
-    public static final String INVENTORY_PARAM = "inventory";
-    public static final String PRODUCT_PARAM = "product";
     protected BookingLine m_recBookingLine = null;
     /**
      * Default constructor.

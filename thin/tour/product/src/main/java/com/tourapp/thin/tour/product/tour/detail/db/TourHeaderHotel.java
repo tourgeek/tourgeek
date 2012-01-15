@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class TourHeaderHotel extends com.tourapp.thin.tour.product.tour.detail.db.TourHeaderDetail
+import com.tourapp.thin.tour.product.tour.detail.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
+
+public class TourHeaderHotel extends TourHeaderDetail
+    implements TourHeaderHotelModel
 {
 
     public TourHeaderHotel()

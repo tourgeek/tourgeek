@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.screen.misc.*;
 import com.tourapp.tour.genled.screen.detail.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  Account - Chart of Accounts.
  */
 public class Account extends VirtualRecord
+     implements AccountModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -47,8 +49,6 @@ public class Account extends VirtualRecord
     public static final int kAccountLastKey = kDescriptionKey;
     public static final int kAccountKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int ACCT_DETAIL_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
-    public static final String CREDIT = "C";
-    public static final String DEBIT = "D";
     /**
      * Default constructor.
      */

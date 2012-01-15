@@ -32,11 +32,13 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.acctrec.db.event.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  Booking - Booking entry.
  */
 public class Booking extends CustSale
+     implements BookingModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -115,7 +117,6 @@ public class Booking extends CustSale
     public static final int kDescriptionKey = kGenericNameKey + 1;
     public static final int kBookingLastKey = kDescriptionKey;
     public static final int kBookingKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String BUTTON_LOCATION = "tour/buttons/";
     protected Vector<Integer> m_rdwPaxMods = null;
     protected BookingDetail m_recBookingDetailModule = null;
     /**

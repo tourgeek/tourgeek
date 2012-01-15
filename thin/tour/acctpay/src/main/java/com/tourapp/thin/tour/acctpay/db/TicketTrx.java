@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class TicketTrx extends com.tourapp.thin.tour.acctpay.db.ApTrx
+import com.tourapp.thin.tour.acctpay.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
+
+public class TicketTrx extends ApTrx
+    implements TicketTrxModel
 {
 
     public TicketTrx()

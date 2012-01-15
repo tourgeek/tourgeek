@@ -9,26 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.base.db.*;
+
 public class Product extends FieldList
+    implements ProductModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String VENDOR_ID = "VendorID";
-    public static final String OPERATORS_CODE = "OperatorsCode";
-    public static final String CITY_ID = "CityID";
-    public static final String ETD = "Etd";
-    public static final String ACK_DAYS = "AckDays";
-    public static final String COMMENTS = "Comments";
-    public static final String PRODUCT_TYPE = "ProductType";
-    public static final String PRODUCT_COST = "ProductCost";
-    public static final String PRODUCT_COST_LOCAL = "ProductCostLocal";
-    public static final String DISPLAY_INVENTORY_STATUS_ID = "DisplayInventoryStatusID";
-    public static final String INVENTORY_AVAILABILITY = "InventoryAvailability";
-    public static final String CURRENCY_CODE = "CurrencyCode";
-    public static final String CURRENCY_CODE_LOCAL = "CurrencyCodeLocal";
-    public static final String VENDOR_NAME = "VendorName";
-    public static final String DISPLAY_COST_STATUS_ID = "DisplayCostStatusID";
-    public static final String PRODUCT_PRICE_LOCAL = "ProductPriceLocal";
-    public static final String PP_PRICE_LOCAL = "PPPriceLocal";
 
     public Product()
     {

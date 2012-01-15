@@ -23,11 +23,13 @@ import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.acctrec.screen.cash.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  CashBatchDist - Cash Receipts.
  */
 public class CashBatchDist extends BankTrxBatchDist
+     implements CashBatchDistModel
 {
     private static final long serialVersionUID = 1L;
 

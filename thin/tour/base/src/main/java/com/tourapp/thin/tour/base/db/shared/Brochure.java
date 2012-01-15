@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.base.db.shared.*;
+
 public class Brochure extends FieldList
+    implements BrochureModel
 {
 
     public Brochure()

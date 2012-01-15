@@ -9,21 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class BookingDetail extends FieldList
+import com.tourapp.thin.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+
+public class BookingDetail extends BookingSub
+    implements BookingDetailModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String PRODUCT_TYPE = "ProductType";
-    public static final String DETAIL_DATE = "DetailDate";
-    public static final String RATE_ID = "RateID";
-    public static final String CLASS_ID = "ClassID";
-    public static final String TOTAL_COST = "TotalCost";
-    public static final String CURRENCY_CODE = "CurrencyCode";
-    public static final String TOTAL_COST_LOCAL = "TotalCostLocal";
-    public static final String TOTAL_PRICE_LOCAL = "TotalPriceLocal";
-    public static final String DETAIL_END_DATE = "DetailEndDate";
-    public static final String MEAL_SUMMARY = "MealSummary";
-    public static final String STATUS_SUMMARY = "StatusSummary";
-    public static final String PP_PRICE_LOCAL = "PPPriceLocal";
 
     public BookingDetail()
     {

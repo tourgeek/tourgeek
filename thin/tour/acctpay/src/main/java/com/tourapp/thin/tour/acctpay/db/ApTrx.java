@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class ApTrx extends FieldList
+import com.tourapp.thin.tour.genled.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
+
+public class ApTrx extends Trx
+    implements ApTrxModel
 {
 
     public ApTrx()

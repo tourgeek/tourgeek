@@ -43,11 +43,13 @@ import com.tourapp.tour.message.hotel.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.product.hotel.db.*;
 
 /**
  *  Hotel - Hotel.
  */
 public class Hotel extends Product
+     implements HotelModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -115,8 +117,6 @@ public class Hotel extends Product
     public static final int kProductChainIDKey = kOperatorsCodeKey + 1;
     public static final int kHotelLastKey = kProductChainIDKey;
     public static final int kHotelKeys = kProductChainIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String MEAL_DETAIL = "Meal";
-    public static final String MEAL_PLAN_DAYS_PARAM = "mealDays";
     public static final String MEAL_PLAN_ID_PARAM = SearchConstants.MEAL_PLAN;
     public static final String MEAL_PLAN_QTY_PARAM = SearchConstants.MEAL_PLAN_QTY;
     protected HotelMealPricing m_recHotelMealPricing = null;
@@ -601,7 +601,7 @@ public class Hotel extends Product
         
         BaseProductResponse responseMessage = null;
         if (messageReply == null)
-            messageReply = this.getMessageProcessInfo().createReplyMessage((BaseMessage)productRequest.getMessage());
+            messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)productRequest.getMessage());
         responseMessage = (BaseProductResponse)messageReply.getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         

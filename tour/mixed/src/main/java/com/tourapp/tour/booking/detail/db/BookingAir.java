@@ -30,11 +30,13 @@ import com.tourapp.tour.product.air.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingAir - Booking Ticket Segment Detail.
  */
 public class BookingAir extends BookingDetail
+     implements BookingAirModel
 {
     private static final long serialVersionUID = 1L;
 

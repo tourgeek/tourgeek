@@ -24,11 +24,13 @@ import com.tourapp.tour.acctpay.screen.pymtreq.*;
 import com.tourapp.tour.acctpay.screen.genpymt.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  PaymentRequest - Payment Request.
  */
 public class PaymentRequest extends VirtualRecord
+     implements PaymentRequestModel
 {
     private static final long serialVersionUID = 1L;
 

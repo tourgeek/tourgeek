@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.request.screen.*;
 import com.tourapp.tour.request.html.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.request.db.*;
 
 /**
  *  Request - Brochure Requests.
  */
 public class Request extends VirtualRecord
+     implements RequestModel
 {
     private static final long serialVersionUID = 1L;
 

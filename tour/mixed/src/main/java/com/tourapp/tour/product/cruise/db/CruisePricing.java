@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.cruise.screen.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.cruise.db.*;
 
 /**
  *  CruisePricing - Cruise pricing.
  */
 public class CruisePricing extends ProductPricing
+     implements CruisePricingModel
 {
     private static final long serialVersionUID = 1L;
 

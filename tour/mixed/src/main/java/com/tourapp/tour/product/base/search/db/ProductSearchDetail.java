@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.search.screen.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.search.db.*;
 
 /**
  *  ProductSearchDetail - .
  */
 public class ProductSearchDetail extends VirtualRecord
+     implements ProductSearchDetailModel
 {
     private static final long serialVersionUID = 1L;
 

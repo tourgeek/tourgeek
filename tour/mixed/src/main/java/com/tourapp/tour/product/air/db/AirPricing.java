@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.air.screen.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.air.db.*;
 
 /**
  *  AirPricing - .
  */
 public class AirPricing extends ProductPricing
+     implements AirPricingModel
 {
     private static final long serialVersionUID = 1L;
 

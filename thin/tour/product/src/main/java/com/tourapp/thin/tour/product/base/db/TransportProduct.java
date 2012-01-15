@@ -9,11 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class TransportProduct extends com.tourapp.thin.tour.product.base.db.Product
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+
+public class TransportProduct extends Product
+    implements TransportProductModel
 {
-    public static final String CITY_CODE = "CityCode";
-    public static final String TO_CITY_ID = "ToCityID";
-    public static final String TO_CITY_CODE = "ToCityCode";
 
     public TransportProduct()
     {

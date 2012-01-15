@@ -9,14 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.base.db.*;
+
 public class PaxCategory extends FieldList
+    implements PaxCategoryModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final int SINGLE_ID = 1;
-    public static final int DOUBLE_ID = 2;
-    public static final int TRIPLE_ID = 3;
-    public static final int QUAD_ID = 4;
-    public static final int CHILD_ID = 5;
 
     public PaxCategory()
     {

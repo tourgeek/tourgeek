@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.history.db.*;
 
 /**
  *  BookingLineHistory - Line history file.
  */
 public class BookingLineHistory extends BookingLine
+     implements BookingLineHistoryModel
 {
     private static final long serialVersionUID = 1L;
 

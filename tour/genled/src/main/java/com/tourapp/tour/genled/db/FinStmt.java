@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.finstmt.screen.*;
 import com.tourapp.tour.genled.finstmt.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  FinStmt - Financial Statement.
  */
 public class FinStmt extends VirtualRecord
+     implements FinStmtModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.land.db.*;
 
 /**
  *  LandClass - Base product class.
  */
 public class LandClass extends BaseClass
+     implements LandClassModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -39,8 +41,6 @@ public class LandClass extends BaseClass
     public static final int kCodeKey = kDescriptionKey + 1;
     public static final int kLandClassLastKey = kCodeKey;
     public static final int kLandClassKeys = kCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String PRIVATE_VEHICLE_CODE = "PMC";
-    public static final String SEAT_IN_COACH_CODE = "SIC";
     /**
      * Default constructor.
      */

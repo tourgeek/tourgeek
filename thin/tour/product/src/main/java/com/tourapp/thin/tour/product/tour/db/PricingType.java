@@ -9,12 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.tour.db.*;
+
 public class PricingType extends FieldList
+    implements PricingTypeModel
 {
-    public static final String PRICING_CODES = "PricingCodes";
-    public static final int OPTION_PRICING = 1;
-    public static final int COMPONENT_PRICING = 2;
-    public static final int COMPONENT_COST_PRICING = 4;
 
     public PricingType()
     {

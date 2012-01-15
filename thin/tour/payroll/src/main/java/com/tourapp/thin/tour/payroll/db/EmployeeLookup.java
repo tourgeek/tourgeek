@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.payroll.db.*;
+
 public class EmployeeLookup extends FieldList
+    implements EmployeeLookupModel
 {
 
     public EmployeeLookup()

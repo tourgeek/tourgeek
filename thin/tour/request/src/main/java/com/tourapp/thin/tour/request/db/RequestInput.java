@@ -9,11 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.request.db.*;
+
 public class RequestInput extends FieldList
+    implements RequestInputModel
 {
-    public static final String BROCHURE_QTY = "BrochureQty";
-    public static final String BROCHURE_ID = "BrochureID";
-    public static final String BROCHURE_DESC = "BrochureDesc";
 
     public RequestInput()
     {

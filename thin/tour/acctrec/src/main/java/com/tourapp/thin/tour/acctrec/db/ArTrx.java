@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class ArTrx extends FieldList
+import com.tourapp.thin.tour.genled.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
+
+public class ArTrx extends LinkTrx
+    implements ArTrxModel
 {
 
     public ArTrx()

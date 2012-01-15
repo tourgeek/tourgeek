@@ -9,10 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.base.db.*;
+
 public class Currencys extends FieldList
+    implements CurrencysModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String CURRENCY_CODE = "CurrencyCode";
 
     public Currencys()
     {

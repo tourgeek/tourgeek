@@ -39,11 +39,13 @@ import com.tourapp.tour.message.land.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.model.tour.product.land.db.*;
 
 /**
  *  LandList - Used for Product display.
  */
 public class LandList extends QueryRecord
+     implements LandListModel
 {
     private static final long serialVersionUID = 1L;
     /**

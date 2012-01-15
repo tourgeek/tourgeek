@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class AirInventory extends com.tourapp.thin.tour.booking.inventory.db.Inventory
+import com.tourapp.thin.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
+
+public class AirInventory extends Inventory
+    implements AirInventoryModel
 {
 
     public AirInventory()

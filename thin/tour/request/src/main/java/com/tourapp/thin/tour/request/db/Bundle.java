@@ -9,9 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.request.db.*;
+
 public class Bundle extends FieldList
+    implements BundleModel
 {
-    public static final String DESCRIPTION = "Description";
 
     public Bundle()
     {

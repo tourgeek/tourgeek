@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  BaseArPay - Base payment instrument for A/R (Mcos, Credit Cards, etc.).
  */
 public class BaseArPay extends BaseTrx
+     implements BaseArPayModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -56,10 +58,6 @@ public class BaseArPay extends BaseTrx
     public static final int APPROVE_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 16;
     public static final int SUBMIT_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 32;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 64;
-    public static final String BATCH = "Batch";
-    public static final String ENTERED = "Entered";
-    public static final String SUBMITTED = "Submitted";
-    public static final String PAID = "Paid";
     /**
      * Default constructor.
      */

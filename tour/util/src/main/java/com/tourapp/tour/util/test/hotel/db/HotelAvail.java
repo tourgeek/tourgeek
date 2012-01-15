@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.util.test.hotel.db.*;
 
 /**
  *  HotelAvail - Test hotel avail using Soap table type.
  */
 public class HotelAvail extends VirtualRecord
+     implements HotelAvailModel
 {
     private static final long serialVersionUID = 1L;
 

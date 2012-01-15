@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import org.jbundle.base.db.shared.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.cruise.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 
 /**
  *  CruiseInventory - Inventory file.
  */
 public class CruiseInventory extends Inventory
+     implements CruiseInventoryModel
 {
     private static final long serialVersionUID = 1L;
 

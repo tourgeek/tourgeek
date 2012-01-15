@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.product.tour.detail.screen.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourHeaderAirHeader - Tour Ticket Header Detail.
  */
 public class TourHeaderAirHeader extends TourSub
+     implements TourHeaderAirHeaderModel
 {
     private static final long serialVersionUID = 1L;
 

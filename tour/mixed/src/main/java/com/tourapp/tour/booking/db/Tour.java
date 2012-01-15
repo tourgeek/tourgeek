@@ -37,11 +37,13 @@ import com.tourapp.tour.product.car.db.*;
 import com.tourapp.tour.product.trans.db.*;
 import com.tourapp.tour.product.cruise.db.*;
 import com.tourapp.tour.product.item.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  Tour - Tour information.
  */
 public class Tour extends Job
+     implements TourModel
 {
     private static final long serialVersionUID = 1L;
 

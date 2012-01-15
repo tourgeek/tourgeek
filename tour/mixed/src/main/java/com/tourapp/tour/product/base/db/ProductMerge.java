@@ -25,11 +25,13 @@ import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  ProductMerge - Source for Product Tree.
  */
 public class ProductMerge extends QueryRecord
+     implements ProductMergeModel
 {
     private static final long serialVersionUID = 1L;
     /**

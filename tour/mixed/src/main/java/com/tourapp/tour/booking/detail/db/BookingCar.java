@@ -32,15 +32,15 @@ import com.tourapp.tour.product.car.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingCar - Rental car detail.
  */
 public class BookingCar extends BookingDetail
+     implements BookingCarModel
 {
     private static final long serialVersionUID = 1L;
-    public static final String DAYS = "Days";
-    public static final String QUANTITY = "Quantity";
 
     //public static final int kID = kID;
     //public static final int kBookingID = kBookingID;

@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.acctpay.db.*;
+
 public class VendorStatus extends FieldList
+    implements VendorStatusModel
 {
 
     public VendorStatus()

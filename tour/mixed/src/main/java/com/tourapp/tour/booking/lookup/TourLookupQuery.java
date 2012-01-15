@@ -23,12 +23,14 @@ import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.booking.lookup.*;
 
 /**
  *  TourLookupQuery - This is the query used to lookup tours.
 NOTE: This is a manual query, because Tour and TourHeader are in different databases..
  */
 public class TourLookupQuery extends QueryRecord
+     implements TourLookupQueryModel
 {
     private static final long serialVersionUID = 1L;
     /**

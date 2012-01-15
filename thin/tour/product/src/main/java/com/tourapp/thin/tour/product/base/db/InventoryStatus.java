@@ -9,9 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class InventoryStatus extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+
+public class InventoryStatus extends BaseDataStatus
+    implements InventoryStatusModel
 {
-    public static final String ICON = "Icon";
 
     public InventoryStatus()
     {

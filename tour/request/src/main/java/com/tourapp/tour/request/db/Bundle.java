@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.request.screen.bundle.*;
+import com.tourapp.model.tour.request.db.*;
 
 /**
  *  Bundle - Brochure Bundles.
  */
 public class Bundle extends VirtualRecord
+     implements BundleModel
 {
     private static final long serialVersionUID = 1L;
 

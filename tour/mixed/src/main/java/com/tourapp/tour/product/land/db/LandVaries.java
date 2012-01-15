@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.land.screen.*;
+import com.tourapp.model.tour.product.land.db.*;
 
 /**
  *  LandVaries - Land varies codes.
  */
 public class LandVaries extends VirtualRecord
+     implements LandVariesModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -40,7 +42,6 @@ public class LandVaries extends VirtualRecord
     public static final int kDescriptionKey = kVariesByKey + 1;
     public static final int kLandVariesLastKey = kDescriptionKey;
     public static final int kLandVariesKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String VARIES_PARAM = "varies";
     /**
      * Default constructor.
      */

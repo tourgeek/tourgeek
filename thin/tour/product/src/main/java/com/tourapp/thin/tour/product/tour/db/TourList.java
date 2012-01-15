@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.tour.db.*;
+
 public class TourList extends FieldList
+    implements TourListModel
 {
 
     public TourList()

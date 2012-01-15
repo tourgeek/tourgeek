@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.profile.detail.*;
 
 /**
  *  ProfileCreditCard - Credit cards.
  */
 public class ProfileCreditCard extends VirtualRecord
+     implements ProfileCreditCardModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  PricingStatus - .
  */
 public class PricingStatus extends BaseStatus
+     implements PricingStatusModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -38,7 +40,6 @@ public class PricingStatus extends BaseStatus
     public static final int kDescriptionKey = kIDKey + 1;
     public static final int kPricingStatusLastKey = kDescriptionKey;
     public static final int kPricingStatusKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final int MANUAL = ACCEPTED;
     /**
      * Default constructor.
      */

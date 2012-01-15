@@ -27,11 +27,13 @@ import java.text.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.land.event.*;
 import com.tourapp.tour.message.land.request.data.*;
+import com.tourapp.model.tour.product.land.db.*;
 
 /**
  *  LandPricing - Land pricing.
  */
 public class LandPricing extends ProductPricing
+     implements LandPricingModel
 {
     private static final long serialVersionUID = 1L;
 

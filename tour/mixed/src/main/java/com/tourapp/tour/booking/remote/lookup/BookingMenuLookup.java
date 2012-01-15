@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.remote.lookup.*;
 
 /**
  *  BookingMenuLookup - Special query for remote section of the thin booking menu.
  */
 public class BookingMenuLookup extends QueryRecord
+     implements BookingMenuLookupModel
 {
     private static final long serialVersionUID = 1L;
     /**

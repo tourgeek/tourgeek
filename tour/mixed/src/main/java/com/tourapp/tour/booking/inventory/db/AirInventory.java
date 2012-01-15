@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import org.jbundle.base.db.shared.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 
 /**
  *  AirInventory - Inventory file.
  */
 public class AirInventory extends Inventory
+     implements AirInventoryModel
 {
     private static final long serialVersionUID = 1L;
 

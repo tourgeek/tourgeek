@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.booking.db.*;
+
 public class PaxGroup extends FieldList
+    implements PaxGroupModel
 {
 
     public PaxGroup()

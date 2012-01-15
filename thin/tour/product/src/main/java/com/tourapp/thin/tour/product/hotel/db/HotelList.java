@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.hotel.db.*;
+
 public class HotelList extends FieldList
+    implements HotelListModel
 {
 
     public HotelList()

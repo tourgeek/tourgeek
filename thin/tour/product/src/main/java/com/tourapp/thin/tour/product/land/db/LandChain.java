@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class LandChain extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.land.db.*;
+
+public class LandChain extends ProductChain
+    implements LandChainModel
 {
 
     public LandChain()

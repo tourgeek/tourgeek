@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.assetdr.db.*;
+
 public class BankTrxBatchDist extends FieldList
+    implements BankTrxBatchDistModel
 {
 
     public BankTrxBatchDist()

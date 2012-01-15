@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.db.*;
 import com.tourapp.tour.payroll.screen.emp.*;
+import com.tourapp.model.tour.payroll.db.*;
 
 /**
  *  EmployeeLookup - Current Employees.
  */
 public class EmployeeLookup extends QueryRecord
+     implements EmployeeLookupModel
 {
     private static final long serialVersionUID = 1L;
     /**

@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  InventoryStatus - Inventory status.
  */
 public class InventoryStatus extends BaseDataStatus
+     implements InventoryStatusModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -37,8 +39,6 @@ public class InventoryStatus extends BaseDataStatus
     public static final int kDescriptionKey = kIDKey + 1;
     public static final int kInventoryStatusLastKey = kDescriptionKey;
     public static final int kInventoryStatusKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String LOOKUP_ERROR_MESSAGE = "Inventory lookup error";
-    public static final String NO_INVENTORY_ERROR_MESSAGE = "Not sufficient inventory";
     /**
      * Default constructor.
      */

@@ -9,14 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.booking.db.*;
+
 public class BookingPax extends FieldList
+    implements BookingPaxModel
 {
-    public static final String PAX_CATEGORY_ID = "PaxCategoryID";
-    public static final String COMMENTS = "Comments";
-    public static final String FIRST_NAME = "FirstName";
-    public static final String MIDDLE_NAME = "MiddleName";
-    public static final String SUR_NAME = "SurName";
-    public static final String SMOKER = "Smoker";
 
     public BookingPax()
     {

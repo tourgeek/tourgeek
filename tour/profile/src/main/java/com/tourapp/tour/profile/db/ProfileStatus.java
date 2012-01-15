@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  ProfileStatus - Profile Status.
  */
 public class ProfileStatus extends VirtualRecord
+     implements ProfileStatusModel
 {
     private static final long serialVersionUID = 1L;
 

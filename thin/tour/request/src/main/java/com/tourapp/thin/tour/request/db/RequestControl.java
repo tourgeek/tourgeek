@@ -9,9 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.request.db.*;
+
 public class RequestControl extends FieldList
+    implements RequestControlModel
 {
-    public static final String THIN_BUNDLE_ID = "ThinBundleID";
 
     public RequestControl()
     {

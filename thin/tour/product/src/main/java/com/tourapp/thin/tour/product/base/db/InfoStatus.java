@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class InfoStatus extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+
+public class InfoStatus extends BaseDataStatus
+    implements InfoStatusModel
 {
 
     public InfoStatus()

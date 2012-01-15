@@ -22,12 +22,13 @@ import org.jbundle.model.*;
 import org.jbundle.base.message.trx.message.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  ProfileControl - Control File.
  */
 public class ProfileControl extends ControlRecord
-     implements MessageDetailTarget
+     implements ProfileControlModel, MessageDetailTarget
 {
     private static final long serialVersionUID = 1L;
 

@@ -27,11 +27,13 @@ import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  TicketTrx - Airline Tickets.
  */
 public class TicketTrx extends ApTrx
+     implements TicketTrxModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -103,15 +105,6 @@ public class TicketTrx extends ApTrx
     public static final int ARC_REPORT_POST = ScreenConstants.DETAIL_MODE;
     public static final int OVERRIDE_SCREEN = ScreenConstants.DISPLAY_MODE | 128;
     public static final int OVERRIDE_GRID_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
-    public static final String ARC_SUBMITTED = "ArcSubmitted";
-    public static final String CANCEL_TICKET = "CancelTicket";
-    public static final String NO_TICKET = "NoTicket";
-    public static final String OVERRIDE_PAID = "OverridePaid";
-    public static final String REQUEST_AUTO_TICKET = "RequestAutoTicket";
-    public static final String REQUEST_TICKET = "RequestTicket";
-    public static final String TICKET_CANCELLED = "TicketCancelled";
-    public static final String TICKETED = "Ticketed";
-    public static final String WAITING_FOR_TICKET = "WaitingForTicket";
     /**
      * Default constructor.
      */

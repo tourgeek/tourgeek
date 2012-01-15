@@ -48,16 +48,15 @@ import com.tourapp.tour.booking.entry.event.*;
 import com.tourapp.tour.product.air.db.*;
 import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  Product - Product.
  */
 public class Product extends VirtualRecord
-     implements MessageDetailTarget
+     implements ProductModel, MessageDetailTarget
 {
     private static final long serialVersionUID = 1L;
-    public static final String CODE = "Code";
-    public static final String OPERATORS_CODE = "OperatorsCode";
 
     //public static final int kID = kID;
     public static final int kDescription = kVirtualRecordLastField + 1;
@@ -100,30 +99,14 @@ public class Product extends VirtualRecord
     public static final int kProductChainIDKey = kOperatorsCodeKey + 1;
     public static final int kProductLastKey = kProductChainIDKey;
     public static final int kProductKeys = kProductChainIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public final static String AVAILABILITY_PARAM = "Availability";
-    public static final String PAX_PARAM = "Pax";
-    public static final String PRODUCT_NAME_PARAM = "productDesc";
-    public static final String RATE_CLASS_DESC_PARAM = "rateClassDesc";
-    public static final String RATE_TYPE_DESC_PARAM = "rateTypeDesc";
     public static final String ROOM_TYPE_PARAM = SearchConstants.ROOM_TYPE;
-    public static final String INVENTORY_PARAM = "Inventory";
-    public static final String OTHER_ID_PARAM = "otherID";
-    public static final String CONFIRMATION_NO_PARAM = "confirmationNo";
-    public static final String CONFIRMED_BY_PARAM = "confirmedBy";
-    public static final String COST_NOT_FOUND_MSG = "Cost not found";
     public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int INVENTORY_GRID_SCREEN = ScreenConstants.LAST_MODE * 2;
     public static final int INVENTORY_SCREEN = ScreenConstants.LAST_MODE * 4;
     public static final int RANGE_ADJUST_SCREEN = ScreenConstants.LAST_MODE * 16;
     public static final int BOOKING_DETAIL_GRID_SCREEN = ScreenConstants.LAST_MODE * 128;
     public static final int PRODUCT_SEARCH_DETAIL_GRID_SCREEN = ScreenConstants.LAST_MODE * 256;
-    public static final String INVENTORY_DETAIL = "Inventory";
-    public static final String PRICING_DETAIL = "Price";
-    public static final String BOOKING_DETAIL = "BookingDetail";
     public static final int MESSAGE_DETAIL_MODE = ScreenConstants.LAST_MODE * 64;
-    public static final String MESSAGE_DETAIL_SCREEN = "Message Detail";
-    public static final String MESSAGE_LOG = "MessageLog";
-    public static final String PRODUCT_SEARCH_DETAIL = "ProductSearchDetail";
     protected ProductPricing m_recProductPricing = null;
     protected ProductTerms m_recProductTerms = null;
     protected Inventory m_recInventory = null;
@@ -435,7 +418,7 @@ public class Product extends VirtualRecord
     {
         TrxMessageHeader trxMessageHeader = null;
         MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(Utility.getRecordOwner(this));
-        MessageProcessInfo recMessageProcessInfoCurrent = recMessageProcessInfo.getMessageProcessInfo(strMessageProcessorCode);
+        MessageProcessInfo recMessageProcessInfoCurrent = (MessageProcessInfo)recMessageProcessInfo.getMessageProcessInfo(strMessageProcessorCode);
         if (recMessageProcessInfoCurrent != null)
             trxMessageHeader = recMessageProcessInfoCurrent.createProcessMessageHeader(this, strMessageTransport);
         recMessageProcessInfo.free();
@@ -452,7 +435,7 @@ public class Product extends VirtualRecord
     {
         TrxMessageHeader trxMessageHeader = null;
         MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(Utility.getRecordOwner(this));
-        MessageProcessInfo recMessageProcessInfoCurrent = recMessageProcessInfo.getMessageProcessInfo(strMessageInfoType, strContactType, strRequestType, strMessageProcessType, strProcessType);
+        MessageProcessInfo recMessageProcessInfoCurrent = (MessageProcessInfo)recMessageProcessInfo.getMessageProcessInfo(strMessageInfoType, strContactType, strRequestType, strMessageProcessType, strProcessType);
         if (recMessageProcessInfoCurrent != null)
             trxMessageHeader = recMessageProcessInfoCurrent.createProcessMessageHeader(this, strMessageTransport);
         recMessageProcessInfo.free();
@@ -501,7 +484,7 @@ public class Product extends VirtualRecord
         
         BaseProductResponse responseMessage = null;
         if (messageReply == null)
-            messageReply = this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
+            messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
         responseMessage = (BaseProductResponse)messageReply.getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         
@@ -554,7 +537,7 @@ public class Product extends VirtualRecord
         
         BaseProductResponse responseMessage = null;
         if (messageReply == null)
-            messageReply = this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
+            messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
         responseMessage = (BaseProductResponse)messageReply.getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         

@@ -21,6 +21,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.screen.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  ProfileHeaderScreen - Header screen.

@@ -41,11 +41,13 @@ import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourList - Tour List for Display.
  */
 public class TourList extends QueryRecord
+     implements TourListModel
 {
     private static final long serialVersionUID = 1L;
     /**

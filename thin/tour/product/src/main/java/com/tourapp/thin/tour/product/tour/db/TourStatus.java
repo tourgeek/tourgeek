@@ -9,10 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class TourStatus extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
+
+public class TourStatus extends BaseDataStatus
+    implements TourStatusModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String ICON = "Icon";
 
     public TourStatus()
     {

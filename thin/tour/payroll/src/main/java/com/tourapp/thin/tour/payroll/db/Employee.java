@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Employee extends FieldList
+import org.jbundle.thin.main.db.*;
+import com.tourapp.model.tour.payroll.db.*;
+
+public class Employee extends Person
+    implements EmployeeModel
 {
 
     public Employee()

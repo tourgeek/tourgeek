@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.base.screen.*;
+import com.tourapp.model.tour.base.db.*;
 
 /**
  *  State - States.
  */
 public class State extends Location
+     implements StateModel
 {
     private static final long serialVersionUID = 1L;
 

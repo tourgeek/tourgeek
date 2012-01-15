@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.profile.detail.*;
 
 /**
  *  Extension - Profile extensions.
  */
 public class Extension extends VirtualRecord
+     implements ExtensionModel
 {
     private static final long serialVersionUID = 1L;
 

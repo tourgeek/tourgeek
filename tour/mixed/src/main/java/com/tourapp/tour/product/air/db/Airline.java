@@ -23,11 +23,13 @@ import com.tourapp.tour.product.air.screen.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.product.air.db.*;
 
 /**
  *  Airline - Airline.
  */
 public class Airline extends VirtualRecord
+     implements AirlineModel
 {
     private static final long serialVersionUID = 1L;
 

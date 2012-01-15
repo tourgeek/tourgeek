@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.db.*;
 import com.tourapp.tour.genled.screen.misc.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  CompanyInfo - Company Information.
  */
 public class CompanyInfo extends Company
+     implements CompanyInfoModel
 {
     private static final long serialVersionUID = 1L;
 

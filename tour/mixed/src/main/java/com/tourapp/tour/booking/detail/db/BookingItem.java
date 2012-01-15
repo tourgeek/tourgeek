@@ -30,11 +30,13 @@ import com.tourapp.tour.product.item.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingItem - Item detail.
  */
 public class BookingItem extends BookingDetail
+     implements BookingItemModel
 {
     private static final long serialVersionUID = 1L;
 

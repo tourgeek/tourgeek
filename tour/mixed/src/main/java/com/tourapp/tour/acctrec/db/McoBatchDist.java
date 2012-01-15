@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.acctrec.screen.mco.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  McoBatchDist - MCOs.
  */
 public class McoBatchDist extends CashBatchDist
+     implements McoBatchDistModel
 {
     private static final long serialVersionUID = 1L;
     /**

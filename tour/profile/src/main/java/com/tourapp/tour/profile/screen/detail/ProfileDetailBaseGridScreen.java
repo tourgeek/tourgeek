@@ -21,6 +21,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.screen.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  ProfileDetailBaseGridScreen - Profile detail screens.
@@ -133,7 +134,7 @@ public class ProfileDetailBaseGridScreen extends DetailGridScreen
             if ("Detail Passenger Detail".equalsIgnoreCase(strCommand))
                 screen = new ProfileDetailGridScreen(recHeader, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
             if ("Detail Request History".equalsIgnoreCase(strCommand))
-                screen = ClassFactory.createScreenFromClassName("RequestHistoryGridScreen", recHeader, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
+                screen = BaseScreen.makeNewScreen(ProfileModel.REQUEST_HISTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, recHeader, true);
             if ("Detail Electronic Addresses".equalsIgnoreCase(strCommand))
                 screen = new ElectronicAddressGridScreen(recHeader, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
             if ("Detail Extensions".equalsIgnoreCase(strCommand))

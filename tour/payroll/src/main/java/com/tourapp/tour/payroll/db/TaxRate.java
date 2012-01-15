@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.payroll.screen.tax.*;
+import com.tourapp.model.tour.payroll.db.*;
 
 /**
  *  TaxRate - Tax Rates.
  */
 public class TaxRate extends VirtualRecord
+     implements TaxRateModel
 {
     private static final long serialVersionUID = 1L;
 

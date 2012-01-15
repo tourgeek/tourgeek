@@ -9,17 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.base.db.*;
+
 public class ProductType extends FieldList
+    implements ProductTypeModel
 {
-    public static final String AIR = "Air";
-    public static final String CAR = "Car";
-    public static final String CRUISE = "Cruise";
-    public static final String HOTEL = "Hotel";
-    public static final String ITEM = "Item";
-    public static final String LAND = "Land";
-    public static final String TOUR = "Tour";
-    public static final String TRANSPORTATION = "Transportation";
-    public static final String UNKNOWN = "Unknown";
 
     public ProductType()
     {

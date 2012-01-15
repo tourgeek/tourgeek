@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  LinkTrx - Base for transactions that are linked to another transaction..
  */
 public class LinkTrx extends BaseTrx
+     implements LinkTrxModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -36,10 +38,7 @@ public class LinkTrx extends BaseTrx
     public static final int kLinkedTrxIDKey = kIDKey + 1;
     public static final int kLinkTrxLastKey = kLinkedTrxIDKey;
     public static final int kLinkTrxKeys = kLinkedTrxIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String PAYMENT_HISTORY_ICON = "Price";
-    public static final String SOURCE = "Source";
     public static final int LINK_DISTRIBUTION_SCREEN = ScreenConstants.DISPLAY_MODE | 8192;
-    public static final String PAYMENT_DISTRIBUTION = "Payment Distribution";
     /**
      * Default constructor.
      */

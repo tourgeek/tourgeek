@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class CashBatchDist extends com.tourapp.thin.tour.assetdr.db.BankTrxBatchDist
+import com.tourapp.thin.tour.assetdr.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
+
+public class CashBatchDist extends BankTrxBatchDist
+    implements CashBatchDistModel
 {
 
     public CashBatchDist()

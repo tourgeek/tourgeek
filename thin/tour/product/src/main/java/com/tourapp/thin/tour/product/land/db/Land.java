@@ -9,23 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Land extends com.tourapp.thin.tour.product.base.db.Product
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.land.db.*;
+
+public class Land extends Product
+    implements LandModel
 {
-    public static final String TYPE = "Type";
-    public static final String HOURS = "Hours";
-    public static final String DAYS = "Days";
-    public static final String NIGHTS = "Nights";
-    public static final String BREAKFASTS = "Breakfasts";
-    public static final String LUNCHES = "Lunches";
-    public static final String DINNERS = "Dinners";
-    public static final String DAYS_OF_WEEK = "DaysOfWeek";
-    public static final String VEHICLE = "Vehicle";
-    public static final String PMC_COST = "PMCCost";
-    public static final String PMC_COST_HOME = "PMCCostHome";
-    public static final String SIC_COST = "SICCost";
-    public static final String SIC_COST_HOME = "SICCostHome";
-    public static final String PMC_PRICE_HOME = "PMCPriceHome";
-    public static final String SIC_PRICE_HOME = "SICPriceHome";
 
     public Land()
     {

@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.screen.batch.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  AcctBatchDetail - Journal Entry Batch Detail.
  */
 public class AcctBatchDetail extends VirtualRecord
+     implements AcctBatchDetailModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -44,7 +46,6 @@ public class AcctBatchDetail extends VirtualRecord
     public static final int kAcctBatchIDKey = kIDKey + 1;
     public static final int kAcctBatchDetailLastKey = kAcctBatchIDKey;
     public static final int kAcctBatchDetailKeys = kAcctBatchIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String REVERSAL = "Reversal";
     /**
      * Default constructor.
      */

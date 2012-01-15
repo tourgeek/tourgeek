@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  ProductList - Product Merge Table.
  */
 public class ProductList extends VirtualRecord
+     implements ProductListModel
 {
     private static final long serialVersionUID = 1L;
     /**

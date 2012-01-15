@@ -19,12 +19,14 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.base.db.*;
 
 /**
  *  Location - This is the base class for all location records such as:
 Country, City, Region, etc..
  */
 public class Location extends VirtualRecord
+     implements LocationModel
 {
     private static final long serialVersionUID = 1L;
 

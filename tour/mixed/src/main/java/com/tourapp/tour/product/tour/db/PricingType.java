@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  PricingType - .
  */
 public class PricingType extends VirtualRecord
+     implements PricingTypeModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -37,9 +39,6 @@ public class PricingType extends VirtualRecord
     public static final int kDescriptionKey = kIDKey + 1;
     public static final int kPricingTypeLastKey = kDescriptionKey;
     public static final int kPricingTypeKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final int OPTION_PRICING = 1;
-    public static final int COMPONENT_PRICING = 2;
-    public static final int COMPONENT_COST_PRICING = 4;
     /**
      * Default constructor.
      */

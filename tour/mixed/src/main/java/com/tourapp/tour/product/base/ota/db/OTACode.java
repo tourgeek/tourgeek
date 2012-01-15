@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.base.ota.db.*;
 
 /**
  *  OTACode - This is the virtual table that maps to an actual OTA code table.
  */
 public class OTACode extends Record
+     implements OTACodeModel
 {
     private static final long serialVersionUID = 1L;
 

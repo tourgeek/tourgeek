@@ -1,0 +1,19 @@
+/**
+ * @(#)LandClassModel.
+ * Copyright © 2011 tourapp.com. All rights reserved.
+ */
+package com.tourapp.model.tour.product.land.db;
+
+import com.tourapp.model.tour.product.base.db.*;
+
+public interface LandClassModel extends BaseClassModel
+{
+    public static final String DESCRIPTION = "Description";
+    public static final String PRIVATE_VEHICLE_CODE = "PMC";
+    public static final String SEAT_IN_COACH_CODE = "SIC";
+
+    public static final String LAND_CLASS_FILE = "LandClass";
+    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.LandClass";
+    public static final String THICK_CLASS = "com.tourapp.tour.product.land.db.LandClass";
+
+}

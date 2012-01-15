@@ -34,11 +34,13 @@ import com.tourapp.tour.message.car.response.*;
 import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.model.tour.product.car.db.*;
 
 /**
  *  Car - Rental Car.
  */
 public class Car extends Product
+     implements CarModel
 {
     private static final long serialVersionUID = 1L;
 

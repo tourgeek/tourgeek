@@ -9,16 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Air extends com.tourapp.thin.tour.product.base.db.TransportProduct
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.air.db.*;
+
+public class Air extends TransportProduct
+    implements AirModel
 {
-    public static final String AIRLINE_ID = "AirlineID";
-    public static final String FLIGHT_NO = "FlightNo";
-    public static final String ARRIVE_TIME = "ArriveTime";
-    public static final String ADD_DAYS = "AddDays";
-    public static final String MEALS = "Meals";
-    public static final String EQUIPMENT = "Equipment";
-    public static final String DAYS = "Days";
-    public static final String STOPS = "Stops";
 
     public Air()
     {

@@ -23,11 +23,13 @@ import com.tourapp.tour.assetdr.screen.*;
 import com.tourapp.tour.assetdr.screen.trx.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
 
 /**
  *  BankAcct - Bank Accounts.
  */
 public class BankAcct extends VirtualRecord
+     implements BankAcctModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -43,11 +43,13 @@ import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.shared.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourHeader - Tour Header.
  */
 public class TourHeader extends Product
+     implements TourHeaderModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -85,7 +87,6 @@ public class TourHeader extends Product
     public static final int kTourHeaderLastKey = kCityIDKey;
     public static final int kTourHeaderKeys = kCityIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected TourHeaderLine m_recTourHeaderPricing = null;
-    public static final String TOUR_DETAIL = "Tour detail";
     public static final int TOUR_DETAIL_SCREEN = ScreenConstants.LAST_MODE * 128;
     /**
      * Default constructor.

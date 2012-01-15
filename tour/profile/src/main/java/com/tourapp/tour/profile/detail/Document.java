@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.profile.detail.*;
 
 /**
  *  Document - Documents detail.
  */
 public class Document extends VirtualRecord
+     implements DocumentModel
 {
     private static final long serialVersionUID = 1L;
 

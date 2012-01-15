@@ -24,11 +24,13 @@ import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.booking.history.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingAirHeader - Booking Ticket Header Detail.
  */
 public class BookingAirHeader extends BookingSub
+     implements BookingAirHeaderModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -19,11 +19,13 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourType - Tour type.
  */
 public class TourType extends VirtualRecord
+     implements TourTypeModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -38,7 +40,6 @@ public class TourType extends VirtualRecord
     public static final int kCodeKey = kDescriptionKey + 1;
     public static final int kTourTypeLastKey = kCodeKey;
     public static final int kTourTypeKeys = kCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final int SERIES = 1 << 1;
     /**
      * Default constructor.
      */

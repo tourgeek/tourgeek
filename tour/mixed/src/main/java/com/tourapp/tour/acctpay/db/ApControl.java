@@ -24,12 +24,13 @@ import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  ApControl - A/P Control File.
  */
 public class ApControl extends ControlRecord
-     implements MessageDetailTarget
+     implements ApControlModel, MessageDetailTarget
 {
     private static final long serialVersionUID = 1L;
 

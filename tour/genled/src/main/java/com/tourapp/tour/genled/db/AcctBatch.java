@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.screen.batch.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  AcctBatch - Transaction Entry.
  */
 public class AcctBatch extends VirtualRecord
+     implements AcctBatchModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -49,7 +51,6 @@ public class AcctBatch extends VirtualRecord
     public static final int kAcctBatchKeys = kUserIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int ACCT_BATCH_DETAIL_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int ACCT_BATCH_POST = ScreenConstants.POST_MODE;
-    public static final String AUTO_CLOSING = "Auto-Closing";
     /**
      * Default constructor.
      */

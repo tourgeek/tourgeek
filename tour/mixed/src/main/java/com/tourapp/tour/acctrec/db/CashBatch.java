@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.acctrec.screen.cash.*;
 import org.jbundle.main.user.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  CashBatch - Cash Receipts.
  */
 public class CashBatch extends BankTrxBatch
+     implements CashBatchModel
 {
     private static final long serialVersionUID = 1L;
 

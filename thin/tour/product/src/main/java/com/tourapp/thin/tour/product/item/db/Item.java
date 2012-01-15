@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Item extends com.tourapp.thin.tour.product.base.db.Product
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.item.db.*;
+
+public class Item extends Product
+    implements ItemModel
 {
 
     public Item()

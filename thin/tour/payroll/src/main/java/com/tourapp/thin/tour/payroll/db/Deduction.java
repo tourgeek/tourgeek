@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.payroll.db.*;
+
 public class Deduction extends FieldList
+    implements DeductionModel
 {
 
     public Deduction()

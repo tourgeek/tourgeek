@@ -26,11 +26,13 @@ import com.tourapp.tour.product.trans.db.*;
 import com.tourapp.tour.product.car.db.*;
 import com.tourapp.tour.product.cruise.db.*;
 import com.tourapp.tour.product.item.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  ProductControl - .
  */
 public class ProductControl extends ControlRecord
+     implements ProductControlModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -9,9 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class ItemClass extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.item.db.*;
+
+public class ItemClass extends BaseClass
+    implements ItemClassModel
 {
-    public static final String DESCRIPTION = "Description";
 
     public ItemClass()
     {

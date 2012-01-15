@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.screen.misc.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  AccountBudget - Budgets and Comparatives..
  */
 public class AccountBudget extends VirtualRecord
+     implements AccountBudgetModel
 {
     private static final long serialVersionUID = 1L;
 

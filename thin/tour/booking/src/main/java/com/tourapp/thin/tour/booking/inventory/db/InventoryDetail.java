@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.booking.inventory.db.*;
+
 public class InventoryDetail extends FieldList
+    implements InventoryDetailModel
 {
 
     public InventoryDetail()

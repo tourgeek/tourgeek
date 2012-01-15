@@ -24,11 +24,13 @@ import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourHeaderDetail - Tour Header detail.
  */
 public class TourHeaderDetail extends TourSub
+     implements TourHeaderDetailModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.product.base.db.*;
+
 public class BookingControl extends FieldList
+    implements BookingControlModel
 {
 
     public BookingControl()

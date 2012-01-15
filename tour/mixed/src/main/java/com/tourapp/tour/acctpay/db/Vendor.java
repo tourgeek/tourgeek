@@ -29,12 +29,13 @@ import org.jbundle.base.message.trx.message.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  Vendor - Vendors.
  */
 public class Vendor extends Company
-     implements MessageDetailTarget
+     implements VendorModel, MessageDetailTarget
 {
     private static final long serialVersionUID = 1L;
 
@@ -92,8 +93,6 @@ public class Vendor extends Company
     public static final int BROKER_DETAIL_MODE = ScreenConstants.DISPLAY_MODE | 128;
     public static final int MESSAGE_DETAIL_MODE = ScreenConstants.LAST_MODE * 2;
     public static final int MESSAGE_LOG_MODE = ScreenConstants.LAST_MODE * 4;
-    public static final String MESSAGE_DETAIL_SCREEN = "Message Detail";
-    public static final String MESSAGE_LOG_SCREEN = "Message Log";
     /**
      * Default constructor.
      */

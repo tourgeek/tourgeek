@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.hotel.screen.*;
+import com.tourapp.model.tour.product.hotel.db.*;
 
 /**
  *  HotelRate - Hotel rate type.
  */
 public class HotelRate extends BaseRate
+     implements HotelRateModel
 {
     private static final long serialVersionUID = 1L;
 

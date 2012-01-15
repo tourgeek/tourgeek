@@ -35,16 +35,15 @@ import org.jbundle.base.message.trx.message.*;
 import com.tourapp.tour.message.hotel.response.in.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingHotel - Booking hotel information.
  */
 public class BookingHotel extends BookingDetail
+     implements BookingHotelModel
 {
     private static final long serialVersionUID = 1L;
-    public static final String NIGHTS = "Nights";
-    public static final String ROOM_COST = "RoomCost";
-    public static final String MEAL_COST = "MealCost";
 
     //public static final int kID = kID;
     //public static final int kBookingID = kBookingID;

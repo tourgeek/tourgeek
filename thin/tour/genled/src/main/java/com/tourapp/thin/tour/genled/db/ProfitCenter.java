@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.genled.db.*;
+
 public class ProfitCenter extends FieldList
+    implements ProfitCenterModel
 {
 
     public ProfitCenter()

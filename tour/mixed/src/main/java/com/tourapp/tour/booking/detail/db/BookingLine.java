@@ -27,11 +27,13 @@ import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingLine - Booking Line Items.
  */
 public class BookingLine extends BookingSub
+     implements BookingLineModel
 {
     private static final long serialVersionUID = 1L;
 

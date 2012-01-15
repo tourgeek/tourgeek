@@ -39,11 +39,13 @@ import com.tourapp.tour.message.land.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.model.tour.product.land.db.*;
 
 /**
  *  Land - Land.
  */
 public class Land extends Product
+     implements LandModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -86,7 +88,6 @@ public class Land extends Product
     public static final int kLandLastKey = kCityIDKey;
     public static final int kLandKeys = kCityIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final String SIC_PMC_PARAM = SearchConstants.SIC_PMC;
-    public static final String LAND_COST_PROPERTIES = "landCostProperties.";
     /**
      * Default constructor.
      */

@@ -23,11 +23,13 @@ import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.assetdr.screen.trx.*;
 import com.tourapp.tour.assetdr.report.recon.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
 
 /**
  *  BankTrx - Checking account desc..
  */
 public class BankTrx extends BaseTrx
+     implements BankTrxModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -63,7 +65,6 @@ public class BankTrx extends BaseTrx
     public static final int kBankTrxLastKey = kPayeeIDKey;
     public static final int kBankTrxKeys = kPayeeIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected Record m_recBankTrx = null;
-    public static final String PAYMENT_DISTRIBUTION = "Payment Distribution";
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int BANK_RECON_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
     public static final int PAYMENT_DISTRIBUTION_SCREEN = LinkTrx.LINK_DISTRIBUTION_SCREEN;

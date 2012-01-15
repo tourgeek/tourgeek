@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.db.*;
 import com.tourapp.tour.payroll.screen.emp.*;
+import com.tourapp.model.tour.payroll.db.*;
 
 /**
  *  EmployeeStatus - Sub-Selection of Employee.
  */
 public class EmployeeStatus extends Employee
+     implements EmployeeStatusModel
 {
     private static final long serialVersionUID = 1L;
     /**

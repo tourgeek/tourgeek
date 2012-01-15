@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourStatus - Tour status.
  */
 public class TourStatus extends BaseDataStatus
+     implements TourStatusModel
 {
     private static final long serialVersionUID = 1L;
 

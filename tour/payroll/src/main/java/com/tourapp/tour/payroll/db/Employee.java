@@ -24,11 +24,13 @@ import com.tourapp.tour.payroll.screen.emp.*;
 import org.jbundle.main.user.db.*;
 import com.tourapp.tour.base.db.event.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.payroll.db.*;
 
 /**
  *  Employee - Employees.
  */
 public class Employee extends Person
+     implements EmployeeModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.profile.db.*;
+import com.tourapp.model.tour.profile.detail.*;
 
 /**
  *  ProfileCertification - Certifications.
  */
 public class ProfileCertification extends VirtualRecord
+     implements ProfileCertificationModel
 {
     private static final long serialVersionUID = 1L;
 

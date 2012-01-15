@@ -9,7 +9,10 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
+import com.tourapp.model.tour.profile.detail.*;
+
 public class Document extends FieldList
+    implements DocumentModel
 {
 
     public Document()

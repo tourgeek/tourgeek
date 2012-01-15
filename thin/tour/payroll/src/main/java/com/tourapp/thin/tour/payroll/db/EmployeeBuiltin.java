@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class EmployeeBuiltin extends com.tourapp.thin.tour.payroll.db.EmployeeQuery
+import com.tourapp.thin.tour.payroll.db.*;
+import com.tourapp.model.tour.payroll.db.*;
+
+public class EmployeeBuiltin extends EmployeeQuery
+    implements EmployeeBuiltinModel
 {
 
     public EmployeeBuiltin()

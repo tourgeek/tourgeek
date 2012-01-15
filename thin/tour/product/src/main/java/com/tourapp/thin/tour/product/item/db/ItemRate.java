@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class ItemRate extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.item.db.*;
+
+public class ItemRate extends BaseRate
+    implements ItemRateModel
 {
 
     public ItemRate()

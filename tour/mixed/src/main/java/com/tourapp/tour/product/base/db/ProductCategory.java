@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  ProductCategory - Tour Product Category.
  */
 public class ProductCategory extends VirtualRecord
+     implements ProductCategoryModel
 {
     private static final long serialVersionUID = 1L;
 

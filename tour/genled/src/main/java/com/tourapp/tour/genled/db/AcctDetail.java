@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import org.jbundle.main.user.db.*;
 import com.tourapp.tour.genled.screen.detail.*;
 import java.util.*;
+import com.tourapp.model.tour.genled.db.*;
 
 /**
  *  AcctDetail - Account Transaction Detail.
  */
 public class AcctDetail extends BaseTrx
+     implements AcctDetailModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -50,13 +52,6 @@ public class AcctDetail extends BaseTrx
     public static final int kAcctDetailLastKey = kSourceKey;
     public static final int kAcctDetailKeys = kSourceKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int ACCT_DIST_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
-    public static final String MANUALENTRY = "ManualEntry";
-    public static final String RECURRINGTRX = "RecurringTrx";
-    public static final String ACCRUAL = "Accrual";
-    public static final String ACCRUALREVERSAL = "AccrualReversal";
-    public static final String CLOSINGENTRY = "ClosingEntry";
-    public static final String STARTBALANCE = "StartBalance";
-    public static final String SUMMARYTRX = "SummaryTrx";
     /**
      * Default constructor.
      */

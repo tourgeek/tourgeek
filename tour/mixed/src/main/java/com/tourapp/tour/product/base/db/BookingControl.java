@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  BookingControl - Control file.
  */
 public class BookingControl extends ControlRecord
+     implements BookingControlModel
 {
     private static final long serialVersionUID = 1L;
 

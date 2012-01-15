@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.profile.screen.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.profile.db.*;
 
 /**
  *  Affiliation - Affiliations.
  */
 public class Affiliation extends VirtualRecord
+     implements AffiliationModel
 {
     private static final long serialVersionUID = 1L;
 

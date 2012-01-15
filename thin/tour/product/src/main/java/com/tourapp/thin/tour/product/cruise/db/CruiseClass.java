@@ -9,9 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class CruiseClass extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.cruise.db.*;
+
+public class CruiseClass extends BaseClass
+    implements CruiseClassModel
 {
-    public static final String DESCRIPTION = "Description";
 
     public CruiseClass()
     {

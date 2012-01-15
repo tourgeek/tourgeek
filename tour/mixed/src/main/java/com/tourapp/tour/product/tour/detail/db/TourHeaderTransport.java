@@ -23,11 +23,13 @@ import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourHeaderTransport - Tour detail with a starting and ending location.
  */
 public class TourHeaderTransport extends TourHeaderDetail
+     implements TourHeaderTransportModel
 {
     private static final long serialVersionUID = 1L;
 

@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class BookingAirHeader extends FieldList
+import com.tourapp.thin.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+
+public class BookingAirHeader extends BookingSub
+    implements BookingAirHeaderModel
 {
 
     public BookingAirHeader()

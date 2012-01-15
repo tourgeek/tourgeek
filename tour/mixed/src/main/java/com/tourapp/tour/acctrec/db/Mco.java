@@ -24,11 +24,13 @@ import com.tourapp.tour.acctrec.screen.mco.trx.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  Mco - MCOs.
  */
 public class Mco extends BaseArPay
+     implements McoModel
 {
     private static final long serialVersionUID = 1L;
 

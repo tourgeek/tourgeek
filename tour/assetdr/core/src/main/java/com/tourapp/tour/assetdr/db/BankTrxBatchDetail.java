@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.assetdr.screen.batch.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
 
 /**
  *  BankTrxBatchDetail - .
  */
 public class BankTrxBatchDetail extends BankTrx
+     implements BankTrxBatchDetailModel
 {
     private static final long serialVersionUID = 1L;
 

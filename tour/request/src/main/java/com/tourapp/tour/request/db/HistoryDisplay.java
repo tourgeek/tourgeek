@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.base.db.shared.*;
 import com.tourapp.tour.request.screen.detail.*;
+import com.tourapp.model.tour.request.db.*;
 
 /**
  *  HistoryDisplay - Brochure History Display.
  */
 public class HistoryDisplay extends QueryRecord
+     implements HistoryDisplayModel
 {
     private static final long serialVersionUID = 1L;
     /**

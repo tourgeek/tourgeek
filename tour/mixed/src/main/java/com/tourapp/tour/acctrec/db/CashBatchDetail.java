@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.acctrec.screen.cash.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  CashBatchDetail - Cash Receipts.
  */
 public class CashBatchDetail extends VirtualRecord
+     implements CashBatchDetailModel
 {
     private static final long serialVersionUID = 1L;
 

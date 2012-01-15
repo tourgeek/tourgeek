@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class Profile extends FieldList
+import org.jbundle.thin.main.db.*;
+import com.tourapp.model.tour.profile.db.*;
+
+public class Profile extends Company
+    implements ProfileModel
 {
 
     public Profile()

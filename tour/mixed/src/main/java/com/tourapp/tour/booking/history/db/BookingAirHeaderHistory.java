@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.history.db.*;
 
 /**
  *  BookingAirHeaderHistory - .
  */
 public class BookingAirHeaderHistory extends BookingAirHeader
+     implements BookingAirHeaderHistoryModel
 {
     private static final long serialVersionUID = 1L;
 

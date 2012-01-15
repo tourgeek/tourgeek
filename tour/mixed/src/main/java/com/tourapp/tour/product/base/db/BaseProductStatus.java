@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.main.msg.db.base.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  BaseProductStatus - .
  */
 public class BaseProductStatus extends BaseStatus
+     implements BaseProductStatusModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -34,11 +36,6 @@ public class BaseProductStatus extends BaseStatus
     public static final int kCode = kBaseStatusLastField + 1;
     public static final int kBaseProductStatusLastField = kCode;
     public static final int kBaseProductStatusFields = kCode - DBConstants.MAIN_FIELD + 1;
-    public static final String NO_STATUS_CODE = "NS";
-    public static final String PROPOSAL_CODE = "PR";
-    public static final String ACCEPTED_CODE = "RQ";
-    public static final String OKAY_CODE = "OK";
-    public static final String CANCELLED_CODE = "XL";
     /**
      * Default constructor.
      */

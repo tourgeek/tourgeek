@@ -35,11 +35,13 @@ import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.model.tour.product.trans.db.*;
 
 /**
  *  Transportation - Transportation.
  */
 public class Transportation extends TransportProduct
+     implements TransportationModel
 {
     private static final long serialVersionUID = 1L;
 

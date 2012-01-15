@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.assetdr.screen.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
 
 /**
  *  AssetDrControl - Control File.
  */
 public class AssetDrControl extends ControlRecord
+     implements AssetDrControlModel
 {
     private static final long serialVersionUID = 1L;
 

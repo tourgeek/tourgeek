@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.ota.screen.*;
+import com.tourapp.model.tour.product.base.ota.db.*;
 
 /**
  *  OTACodes - .
  */
 public class OTACodes extends VirtualRecord
+     implements OTACodesModel
 {
     private static final long serialVersionUID = 1L;
 

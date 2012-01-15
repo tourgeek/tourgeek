@@ -24,11 +24,13 @@ import com.tourapp.tour.acctrec.screen.credit.trx.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  CreditCard - Credit Cards.
  */
 public class CreditCard extends BaseArPay
+     implements CreditCardModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -59,7 +61,6 @@ public class CreditCard extends BaseArPay
     public static final int kTrxDateKey = kTrxStatusIDKey + 1;
     public static final int kCreditCardLastKey = kTrxDateKey;
     public static final int kCreditCardKeys = kTrxDateKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String APPROVED = "Approved";
     /**
      * Default constructor.
      */

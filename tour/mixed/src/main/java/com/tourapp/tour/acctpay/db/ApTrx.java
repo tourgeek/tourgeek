@@ -35,11 +35,13 @@ import com.tourapp.tour.acctpay.screen.findepest.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  ApTrx - Accounts Payable transaction file.
  */
 public class ApTrx extends Trx
+     implements ApTrxModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -108,7 +110,6 @@ public class ApTrx extends Trx
     public static final int kTourIDKey = kVendorIDKey + 1;
     public static final int kApTrxLastKey = kTourIDKey;
     public static final int kApTrxKeys = kTourIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public final static String PRODUCT_DETAIL = "Product detail";
     public static final int AP_TRX_TYPE = 0;
     public static final int TICKET_TRX_TYPE = ProductType.AIR_ID;
     public static final int BROKER_DIST_SCREEN = ScreenConstants.DISPLAY_MODE | 32768;
@@ -118,29 +119,6 @@ public class ApTrx extends Trx
     public static final int PAYMENT_HISTORY = ScreenConstants.DISPLAY_MODE | 65536;
     public static final int PAYMENT_DISTRIBUTION = ScreenConstants.DISPLAY_MODE | 262144;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DISPLAY_MODE | 131072;
-    public static final String DEPARTURE_ESTIMATE = "DepEstimate";
-    public static final String INVOICE = "Invoice";
-    public static final String DEBIT_MEMO = "DebitMemo";
-    public static final String CREDIT_MEMO = "CreditMemo";
-    public static final String CREDIT_INVOICE_NON_TOUR = "CreditInvNonTour";
-    public static final String CREDIT_INVOICE = "CreditInvoice";
-    public static final String BROKER_PAYMENT_HEADER = "BrokerPymt";
-    public static final String BROKER_PAYMENT = "BrokerPymtPaid";
-    public static final String BROKER_PAYMENT_DIST = "BrokerPymtPaidDist";
-    public static final String DEPARTURE_EST_MANUAL = "DepEstManual";
-    public static final String INVOICE_NON_TOUR = "InvoiceNonTour";
-    public static final String INVOICE_PAID = "InvoicePaid";
-    public static final String VOUCHER = "Voucher";
-    public static final String NO_VOUCHER = "NoVoucher";
-    public static final String PAYMENT = "Payment";
-    public static final String PREPAYMENT_REQUEST = "Prepayment";
-    public static final String PREPAYMENT = "PrepaymentPaid";
-    public static final String PREPAYMENT_DIST = "PrepaymentPaidDist";
-    public static final String TOUR_ORDER = "TourOrder";
-    public static final String XL_TOUR_ORDER = "XLTourOrder";
-    public static final String TOUR_ORDER_REQUESTED = "VoucherSend";
-    public static final String PAID = "Paid";
-    public static final String DIST = "Dist";
     /**
      * Default constructor.
      */

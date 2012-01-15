@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.operations.*;
 
 /**
  *  BookingDetailQuery - .
  */
 public class BookingDetailQuery extends QueryRecord
+     implements BookingDetailQueryModel
 {
     private static final long serialVersionUID = 1L;
     /**

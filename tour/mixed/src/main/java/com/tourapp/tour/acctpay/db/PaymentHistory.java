@@ -23,11 +23,13 @@ import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.acctpay.screen.hist.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.acctpay.db.*;
 
 /**
  *  PaymentHistory - .
  */
 public class PaymentHistory extends LinkTrx
+     implements PaymentHistoryModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -50,10 +52,6 @@ public class PaymentHistory extends LinkTrx
     public static final int kApTrxIDKey = kLinkedTrxIDKey + 1;
     public static final int kPaymentHistoryLastKey = kApTrxIDKey;
     public static final int kPaymentHistoryKeys = kApTrxIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final String PAYMENT = "Payment";
-    public static final String PAYMENT_DISTRIBUTION_ICON = "Transaction";
-    public static final String PAYMENT_HISTORY = "Payment History";
-    public static final String PREPAYMENT_DIST = "PrepaymentDist";
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | 4096;
     /**
      * Default constructor.

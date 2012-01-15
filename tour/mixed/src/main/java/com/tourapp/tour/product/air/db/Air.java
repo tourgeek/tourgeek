@@ -34,11 +34,13 @@ import com.tourapp.tour.message.air.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.msg.db.base.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.air.db.*;
 
 /**
  *  Air - Flights.
  */
 public class Air extends TransportProduct
+     implements AirModel
 {
     private static final long serialVersionUID = 1L;
 

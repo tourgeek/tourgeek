@@ -22,11 +22,13 @@ import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.item.screen.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.item.db.*;
 
 /**
  *  ItemPricing - Product pricing.
  */
 public class ItemPricing extends ProductPricing
+     implements ItemPricingModel
 {
     private static final long serialVersionUID = 1L;
 

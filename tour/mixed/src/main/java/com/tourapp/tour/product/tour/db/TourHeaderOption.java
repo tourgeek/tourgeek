@@ -24,11 +24,13 @@ import com.tourapp.tour.product.tour.detail.screen.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourHeaderOption - Tour product options.
  */
 public class TourHeaderOption extends VirtualRecord
+     implements TourHeaderOptionModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -70,8 +72,6 @@ public class TourHeaderOption extends VirtualRecord
     public static final int TRANSPORTATION_GRID_SCREEN = ScreenConstants.LAST_MODE * 16;
     public static final int CRUISE_GRID_SCREEN = ScreenConstants.LAST_MODE * 64;
     public static final int ITEM_GRID_SCREEN = ScreenConstants.LAST_MODE * 256;
-    public static final String OPTION = "O";
-    public static final String TOUR = "T";
     /**
      * Default constructor.
      */

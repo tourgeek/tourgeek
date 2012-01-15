@@ -21,11 +21,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.assetdr.screen.asset.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.model.tour.assetdr.db.*;
 
 /**
  *  Asset - Fixed Assets.
  */
 public class Asset extends VirtualRecord
+     implements AssetModel
 {
     private static final long serialVersionUID = 1L;
 

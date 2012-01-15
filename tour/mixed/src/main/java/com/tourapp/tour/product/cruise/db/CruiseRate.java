@@ -20,11 +20,13 @@ import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.cruise.db.*;
 
 /**
  *  CruiseRate - Base product rate.
  */
 public class CruiseRate extends BaseRate
+     implements CruiseRateModel
 {
     private static final long serialVersionUID = 1L;
 

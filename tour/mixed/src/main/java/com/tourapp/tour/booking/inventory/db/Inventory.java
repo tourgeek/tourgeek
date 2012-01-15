@@ -29,11 +29,13 @@ import com.tourapp.tour.product.item.screen.*;
 import com.tourapp.tour.product.tour.other.screen.*;
 import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 
 /**
  *  Inventory - Inventory file.
  */
 public class Inventory extends VirtualRecord
+     implements InventoryModel
 {
     private static final long serialVersionUID = 1L;
 
@@ -57,10 +59,6 @@ public class Inventory extends VirtualRecord
     public static final int kInventoryLastKey = kInvDateKey;
     public static final int kInventoryKeys = kInvDateKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected InventoryDetail m_recInventoryDetail = null;
-    public static final int NO_INVENTORY = -1;
-    public static final String NO_OTHER = "0";
-    public static final String NO_CLASS = "0";
-    public static final String NO_RATE = "0";
     /**
      * Default constructor.
      */

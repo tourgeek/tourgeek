@@ -9,9 +9,12 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class MealPlan extends FieldList
+import com.tourapp.thin.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+
+public class MealPlan extends BaseClass
+    implements MealPlanModel
 {
-    public static final String DESCRIPTION = "Description";
 
     public MealPlan()
     {

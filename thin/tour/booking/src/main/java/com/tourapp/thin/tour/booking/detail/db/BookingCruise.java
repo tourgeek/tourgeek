@@ -9,7 +9,11 @@ import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-public class BookingCruise extends com.tourapp.thin.tour.booking.detail.db.BookingDetail
+import com.tourapp.thin.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+
+public class BookingCruise extends BookingDetail
+    implements BookingCruiseModel
 {
 
     public BookingCruise()
