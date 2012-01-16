@@ -19,11 +19,11 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.main.screen.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.acctpay.screen.genpymt.*;
 import com.tourapp.tour.acctpay.screen.check.*;
+import org.jbundle.main.screen.*;
 import com.tourapp.tour.base.db.*;
 
 /**

@@ -19,10 +19,10 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.main.screen.*;
 import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.main.screen.*;
 import com.tourapp.tour.product.base.db.*;
 
 /**

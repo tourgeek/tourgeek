@@ -19,7 +19,6 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.main.screen.*;
 import com.tourapp.tour.acctrec.screen.cash.*;
 import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.acctrec.screen.mco.*;
