@@ -4,23 +4,23 @@
  */
 package com.tourapp.tour.product.tour.db;
 
-import java.awt.*;
-import java.util.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.field.BaseField;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.screen.model.BasePanel;
+import org.jbundle.base.screen.model.GridScreen;
+import org.jbundle.base.screen.model.Screen;
+import org.jbundle.base.screen.model.ScreenField;
+import org.jbundle.base.screen.model.util.SSelectBox;
+import org.jbundle.base.screen.model.util.ScreenLocation;
+import org.jbundle.base.util.ScreenConstants;
+import org.jbundle.model.Task;
+import org.jbundle.model.screen.ScreenComponent;
+import org.jbundle.thin.base.db.Converter;
+import org.jbundle.thin.base.screen.BaseApplet;
+import org.jbundle.thin.base.util.Application;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.thin.base.screen.*;
-import com.tourapp.tour.product.tour.screen.*;
+import com.tourapp.tour.product.tour.screen.TourHeaderOptionGridScreen;
 
 /**
  *  UseTourHeaderOptionField - Tour header option reference field.
@@ -65,49 +65,49 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
      */
     public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
     {
-        ScreenField sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
-        for (int i = 0; ; i++)
+ScreenField sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+for (int i = 0; ; i++)
+{
+    ScreenComponent screenField = this.getComponent(i);
+    if (screenField instanceof SSelectBox)
+    {
+        ((SSelectBox)screenField).free();
+        Record record = this.getReferenceRecord();
+        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
         {
-            ScreenField screenField = this.getSFieldAt(i);
-            if (screenField instanceof SSelectBox)
+            public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
             {
-                screenField.free();
-                Record record = this.getReferenceRecord();
-                new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
-                {
-                    public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
-                    {
-                        Task task = null;
-                        if (m_record.getRecordOwner() != null)
-                            task = m_record.getRecordOwner().getTask();
-                        if (task == null)
-                            task = BaseApplet.getSharedInstance();
-                        Application application = (Application)task.getApplication();
-        
-                        BasePanel parentScreen = Screen.makeWindow(application);
-        
-                        BaseField fldTourHeaderOptionID = (BaseField)this.getConverter().getField();
-                        Record recTourHeaderOption = fldTourHeaderOptionID.getRecord();
-                        ReferenceField fldTourOrOptionID = (ReferenceField)recTourHeaderOption.getField(TourHeaderOption.kTourOrOptionID);
-                        Record recTourOrOption = fldTourOrOptionID.getReferenceRecord();
-                        try {
-                            recTourOrOption = (Record)recTourOrOption.clone();
-                            recTourOrOption.readSameRecord(fldTourOrOptionID.getReferenceRecord(), false, true);
-                        } catch (CloneNotSupportedException ex) {
-                            ex.printStackTrace();
-                        }
-                        GridScreen screen = new TourHeaderOptionGridScreen(recTourOrOption, null, null, parentScreen, null, ScreenConstants.SELECT_MODE | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-                        //x if (m_record.getScreen() == null)
-                            screen.setSelectQuery(m_record, false); // Since this record isn't linked to the screen, manually link it.
-                        return true;    // Handled
-                    }
-                };
-                break;
+                Task task = null;
+                if (m_record.getRecordOwner() != null)
+                    task = m_record.getRecordOwner().getTask();
+                if (task == null)
+                    task = BaseApplet.getSharedInstance();
+                Application application = (Application)task.getApplication();
+
+                BasePanel parentScreen = Screen.makeWindow(application);
+
+                BaseField fldTourHeaderOptionID = (BaseField)this.getConverter().getField();
+                Record recTourHeaderOption = fldTourHeaderOptionID.getRecord();
+                ReferenceField fldTourOrOptionID = (ReferenceField)recTourHeaderOption.getField(TourHeaderOption.kTourOrOptionID);
+                Record recTourOrOption = fldTourOrOptionID.getReferenceRecord();
+                try {
+                    recTourOrOption = (Record)recTourOrOption.clone();
+                    recTourOrOption.readSameRecord(fldTourOrOptionID.getReferenceRecord(), false, true);
+                } catch (CloneNotSupportedException ex) {
+                    ex.printStackTrace();
+                }
+                GridScreen screen = new TourHeaderOptionGridScreen(recTourOrOption, null, null, parentScreen, null, ScreenConstants.SELECT_MODE | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
+                //x if (m_record.getScreen() == null)
+                    screen.setSelectQuery(m_record, false); // Since this record isn't linked to the screen, manually link it.
+                return true;    // Handled
             }
-            if (screenField == null)
-                break;  // Just being careful.
-        }
-        return sField;
+        };
+        break;
+    }
+    if (screenField == null)
+        break;  // Just being careful.
+}
+return sField;
     }
 
 }

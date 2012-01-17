@@ -4,25 +4,30 @@
  */
 package com.tourapp.tour.acctrec.screen.cash.dist;
 
-import java.awt.*;
-import java.util.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.db.RecordOwner;
+import org.jbundle.base.db.event.FreeOnFreeHandler;
+import org.jbundle.base.db.filter.SubFileFilter;
+import org.jbundle.base.field.BaseField;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.screen.model.BasePanel;
+import org.jbundle.base.screen.model.SCannedBox;
+import org.jbundle.base.screen.model.ScreenField;
+import org.jbundle.base.screen.model.util.ScreenLocation;
+import org.jbundle.base.util.MenuConstants;
+import org.jbundle.base.util.ScreenConstants;
+import org.jbundle.base.util.Utility;
+import org.jbundle.model.DBException;
+import org.jbundle.model.screen.ScreenComponent;
+import org.jbundle.thin.base.db.Converter;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import com.tourapp.tour.assetdr.screen.batch.dist.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.assetdr.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.acctrec.db.CashBatchDetail;
+import com.tourapp.tour.acctrec.db.CashBatchDist;
+import com.tourapp.tour.assetdr.db.BankTrxBatchDist;
+import com.tourapp.tour.assetdr.screen.batch.dist.AccountDescDistConverter;
+import com.tourapp.tour.assetdr.screen.batch.dist.DistributionConverter;
+import com.tourapp.tour.assetdr.screen.batch.dist.ReferenceChangedHandler;
+import com.tourapp.tour.booking.db.Booking;
 
 /**
  *  CashDistConverter - Distribution display.
@@ -137,25 +142,25 @@ public class CashDistConverter extends DistributionConverter
      */
     public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
     {
-        ScreenField sField = (ScreenField)converter.getField().setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
-        
-        Record recBooking = ((ReferenceField)converter.getField()).getReferenceRecord();
-        
-        // Don't want to display the booking number if code doesn't exist (too confusing)
-        //ScreenField sFieldNo = recBooking.getField(Booking.kCode).getSFieldAt(0);
-        //Converter fldConverter = sFieldNo.getConverter();
-        //BaseField field = (BaseField)fldConverter.getField();
-        //if (fldConverter != field)
-        //    fldConverter.free();   // not necessary anymore.
-        //sFieldNo.setConverter(new AccountNoDistConverter(field, this));
-        
-        ScreenField sFieldDesc = this.getDisplayField(recBooking).getSFieldAt(0);
-        sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
-        new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
-        ((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
-        
-        ((BaseField)this.getField()).getRecord().addListener(new AddNewCashDistHandler(null));
-        return sField;
+ScreenField sField = (ScreenField)converter.getField().setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+
+Record recBooking = ((ReferenceField)converter.getField()).getReferenceRecord();
+
+// Don't want to display the booking number if code doesn't exist (too confusing)
+//ScreenField sFieldNo = recBooking.getField(Booking.kCode).getSFieldAt(0);
+//Converter fldConverter = sFieldNo.getConverter();
+//BaseField field = (BaseField)fldConverter.getField();
+//if (fldConverter != field)
+//    fldConverter.free();   // not necessary anymore.
+//sFieldNo.setConverter(new AccountNoDistConverter(field, this));
+
+ScreenComponent sFieldDesc = this.getDisplayField(recBooking).getComponent(0);
+sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
+new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
+((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
+
+((BaseField)this.getField()).getRecord().addListener(new AddNewCashDistHandler(null));
+return sField;
     }
 
 }

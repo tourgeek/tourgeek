@@ -57,19 +57,19 @@ public class FocusOnCheckAmount extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        ReferenceField fldType = (ReferenceField)this.getOwner().getRecord().getField(BankTrxBatchDetail.kTrxStatusID);
-        Record recTrxStatus = fldType.getReference();
-        if (recTrxStatus != null)
-        {
-            String strSignHint = recTrxStatus.getField(TrxStatus.kPreferredSign).toString();
-            if (PreferredSignField.POSITIVE.equals(strSignHint))
-            {
-                BaseField fldAmount = this.getOwner().getRecord().getField(BankTrxBatchDetail.kAmount);
-                ScreenField screenField = fldAmount.getSFieldAt(1);
-                screenField.requestFocus();
-            }
-        }
-        return super.fieldChanged(bDisplayOption, iMoveMode);
+ReferenceField fldType = (ReferenceField)this.getOwner().getRecord().getField(BankTrxBatchDetail.kTrxStatusID);
+Record recTrxStatus = fldType.getReference();
+if (recTrxStatus != null)
+{
+    String strSignHint = recTrxStatus.getField(TrxStatus.kPreferredSign).toString();
+    if (PreferredSignField.POSITIVE.equals(strSignHint))
+    {
+        BaseField fldAmount = this.getOwner().getRecord().getField(BankTrxBatchDetail.kAmount);
+        ScreenField screenField = (ScreenField)fldAmount.getComponent(1);
+        screenField.requestFocus();
+    }
+}
+return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 
 }

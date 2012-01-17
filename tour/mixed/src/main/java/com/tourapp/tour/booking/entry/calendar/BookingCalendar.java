@@ -355,7 +355,7 @@ public class BookingCalendar extends CalendarScreen
             boolean bUseBaseTable = false;
             boolean bLinkGridToQuery = false;
             boolean bCloneThisQuery = false;
-            BasePanel screen = record.makeScreen(itsLocation, parentScreen, ScreenConstants.SELECT_MODE, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, properties);
+            BasePanel screen = (BasePanel)record.makeScreen(itsLocation, parentScreen, ScreenConstants.SELECT_MODE, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, properties);
             return true;    // Success
         }
         return bSuccess;

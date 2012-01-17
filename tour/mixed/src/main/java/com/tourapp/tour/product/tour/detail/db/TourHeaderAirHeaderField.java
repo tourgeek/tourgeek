@@ -4,23 +4,25 @@
  */
 package com.tourapp.tour.product.tour.detail.db;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Hashtable;
+import java.util.Map;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import com.tourapp.tour.product.tour.detail.screen.*;
-import org.jbundle.thin.base.screen.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.db.RecordOwner;
+import org.jbundle.base.field.BaseField;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.screen.model.BasePanel;
+import org.jbundle.base.screen.model.Screen;
+import org.jbundle.base.screen.model.ScreenField;
+import org.jbundle.base.screen.model.util.SSelectBox;
+import org.jbundle.base.screen.model.util.ScreenLocation;
+import org.jbundle.base.util.DBParams;
+import org.jbundle.base.util.ScreenConstants;
+import org.jbundle.model.Task;
+import org.jbundle.model.screen.ScreenComponent;
+import org.jbundle.thin.base.db.Converter;
+import org.jbundle.thin.base.screen.BaseApplet;
+import org.jbundle.thin.base.util.Application;
 
 /**
  *  TourHeaderAirHeaderField - .
@@ -71,50 +73,50 @@ public class TourHeaderAirHeaderField extends ReferenceField
      */
     public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
     {
-        Record record = this.makeReferenceRecord();
-        ScreenField sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, TourHeaderAirHeader.kAirlineDesc, true, true);
-        for (int i = 0; ; i++)
+Record record = this.makeReferenceRecord();
+ScreenField sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, TourHeaderAirHeader.kAirlineDesc, true, true);
+for (int i = 0; ; i++)
+{
+    ScreenComponent screenField = this.getComponent(i);
+    if (screenField instanceof SSelectBox)
+    {
+        ((SSelectBox)screenField).free();
+        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
         {
-            ScreenField screenField = this.getSFieldAt(i);
-            if (screenField instanceof SSelectBox)
+            public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
             {
-                screenField.free();
-                new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
-                {
-                    public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
-                    {
-                        BaseField fldTourSubID = (BaseField)this.getConverter().getField();
-                        Record recTourHeaderAir = fldTourSubID.getRecord();
-                        Record recTourHeaderAirHeader = makeReferenceRecord();
-        
-                        String strOptionID = recTourHeaderAir.getField(TourSub.kTourHeaderOptionID).toString();
-                        ScreenLocation itsLocation = null;
-        
-                        Task task = null;
-                        if (recTourHeaderAirHeader.getRecordOwner() != null)
-                            task = recTourHeaderAirHeader.getRecordOwner().getTask();
-                        if (task == null)
-                            task = BaseApplet.getSharedInstance();
-                        Application application = (Application)task.getApplication();
-        
-                        BasePanel parent = Screen.makeWindow(application);
-                        int iDocMode = ScreenConstants.SELECT_MODE;
-                        boolean bCloneThisQuery = true;
-                        boolean bReadCurrentRecord = true;
-                        boolean bUseBaseTable = true;
-                        boolean bLinkGridToQuery = true;
-                        Map<String,Object> properties = new Hashtable<String,Object>();
-                        properties.put(DBParams.HEADER_OBJECT_ID, strOptionID);
-                        recTourHeaderAirHeader.makeScreen(itsLocation, parent, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, properties);
-        
-                        return true;    // Handled
-                    }
-                };
+                BaseField fldTourSubID = (BaseField)this.getConverter().getField();
+                Record recTourHeaderAir = fldTourSubID.getRecord();
+                Record recTourHeaderAirHeader = makeReferenceRecord();
+
+                String strOptionID = recTourHeaderAir.getField(TourSub.kTourHeaderOptionID).toString();
+                ScreenLocation itsLocation = null;
+
+                Task task = null;
+                if (recTourHeaderAirHeader.getRecordOwner() != null)
+                    task = recTourHeaderAirHeader.getRecordOwner().getTask();
+                if (task == null)
+                    task = BaseApplet.getSharedInstance();
+                Application application = (Application)task.getApplication();
+
+                BasePanel parent = Screen.makeWindow(application);
+                int iDocMode = ScreenConstants.SELECT_MODE;
+                boolean bCloneThisQuery = true;
+                boolean bReadCurrentRecord = true;
+                boolean bUseBaseTable = true;
+                boolean bLinkGridToQuery = true;
+                Map<String,Object> properties = new Hashtable<String,Object>();
+                properties.put(DBParams.HEADER_OBJECT_ID, strOptionID);
+                recTourHeaderAirHeader.makeScreen(itsLocation, parent, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, properties);
+
+                return true;    // Handled
             }
-            if (screenField == null)
-                break;  // Just being careful.
-        }
-        return sField;
+        };
+    }
+    if (screenField == null)
+        break;  // Just being careful.
+}
+return sField;
     }
 
 }

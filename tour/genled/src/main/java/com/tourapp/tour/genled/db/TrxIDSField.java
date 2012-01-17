@@ -113,7 +113,7 @@ public class TrxIDSField extends SCannedBox
                 recTarget.free();
                 return true;
             }   
-            BaseScreen screen = recAcctDetailDist.getScreen();
+            BaseScreen screen = (BaseScreen)recAcctDetailDist.getRecordOwner();
             BasePanel parentScreen = screen.getParentScreen();
             ScreenLocation itsLocation = null;
             if ((iCommandOptions & ScreenConstants.USE_NEW_WINDOW) == ScreenConstants.USE_SAME_WINDOW)  // Use same window

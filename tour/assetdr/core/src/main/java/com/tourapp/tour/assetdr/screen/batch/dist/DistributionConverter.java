@@ -4,23 +4,32 @@
  */
 package com.tourapp.tour.assetdr.screen.batch.dist;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Hashtable;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import com.tourapp.tour.assetdr.db.*;
-import com.tourapp.tour.genled.db.*;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.db.RecordOwner;
+import org.jbundle.base.db.event.FreeOnFreeHandler;
+import org.jbundle.base.db.filter.SubFileFilter;
+import org.jbundle.base.field.BaseField;
+import org.jbundle.base.field.ReferenceField;
+import org.jbundle.base.field.convert.FieldConverter;
+import org.jbundle.base.field.convert.GlConverter;
+import org.jbundle.base.screen.model.BasePanel;
+import org.jbundle.base.screen.model.GridScreen;
+import org.jbundle.base.screen.model.SCannedBox;
+import org.jbundle.base.screen.model.ScreenField;
+import org.jbundle.base.screen.model.util.ScreenLocation;
+import org.jbundle.base.util.DBConstants;
+import org.jbundle.base.util.MenuConstants;
+import org.jbundle.base.util.ScreenConstants;
+import org.jbundle.base.util.Utility;
+import org.jbundle.model.DBException;
+import org.jbundle.model.screen.ScreenComponent;
+import org.jbundle.thin.base.db.Converter;
+
+import com.tourapp.tour.assetdr.db.BankTrxBatchDetail;
+import com.tourapp.tour.assetdr.db.BankTrxBatchDist;
+import com.tourapp.tour.genled.db.Account;
 
 /**
  *  DistributionConverter - .
@@ -252,22 +261,22 @@ public class DistributionConverter extends FieldConverter
      */
     public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
     {
-        ScreenField sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
-        
-        Record recAccount = ((ReferenceField)converter.getField()).getReferenceRecord();
-        ScreenField sFieldNo = recAccount.getField(Account.kAccountNo).getSFieldAt(0);
-        Converter fldConverter = (Converter)sFieldNo.getConverter();   // Should be the GlConverter
-        BaseField field = (BaseField)fldConverter.getField();
-        if (fldConverter != field)
-            fldConverter.free();   // GlConverter is not necessary anymore.
-        sFieldNo.setConverter(new GlConverter(new AccountNoDistConverter(field, this)));
-        ScreenField sFieldDesc = this.getDisplayField(recAccount).getSFieldAt(0);
-        sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
-        new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
-        ((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
-        
-        ((BaseField)this.getField()).getRecord().addListener(new AddNewDistHandler(null));
-        return sField;
+ScreenField sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+
+Record recAccount = ((ReferenceField)converter.getField()).getReferenceRecord();
+ScreenComponent sFieldNo = recAccount.getField(Account.kAccountNo).getComponent(0);
+Converter fldConverter = (Converter)sFieldNo.getConverter();   // Should be the GlConverter
+BaseField field = (BaseField)fldConverter.getField();
+if (fldConverter != field)
+    fldConverter.free();   // GlConverter is not necessary anymore.
+sFieldNo.setConverter(new GlConverter(new AccountNoDistConverter(field, this)));
+ScreenComponent sFieldDesc = this.getDisplayField(recAccount).getComponent(0);
+sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
+new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
+((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
+
+((BaseField)this.getField()).getRecord().addListener(new AddNewDistHandler(null));
+return sField;
     }
 
 }
