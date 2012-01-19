@@ -66,10 +66,10 @@ public class DrCrField extends CurrencyField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         if (converter instanceof DrCrConverter)
-            return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);   // Keep from looping through here
-        FieldConverter converter2 = new DrCrConverter(converter, true);
+            return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);   // Keep from looping through here
+        FieldConverter converter2 = new DrCrConverter((Converter)converter, true);
         converter2.setupDefaultView(itsLocation, targetScreen, iDisplayFieldDesc);
-        converter2 = new DrCrConverter(converter, false);
+        converter2 = new DrCrConverter((Converter)converter, false);
         return converter2.setupDefaultView(itsLocation, targetScreen, iDisplayFieldDesc);
     }
 

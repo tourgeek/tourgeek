@@ -88,17 +88,20 @@ public class DaysOfWeekField extends ShortField
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
         
-        new SStaticString(itsLocation, targetScreen, DBConstants.BLANK);
+        properties = new HashMap<String,Object>();
+        properties.put(ScreenModel.DISPLAY_STRING, DBConstants.BLANK);
+        createScreenComponent(ScreenModel.STATIC_STRING, itsLocation, targetScreen, null, 0, properties);
         String strDisplay = converter.getFieldDesc();
         if ((strDisplay != null) && (strDisplay.length() > 0))
         {
-            ScreenLocation descLocation = targetScreen.getNextLocation(ScreenConstants.FIELD_DESC, ScreenConstants.DONT_SET_ANCHOR);
-            SStaticString staticString = new SStaticString(descLocation, targetScreen, strDisplay);
+            ScreenLoc descLocation = targetScreen.getNextLocation(ScreenConstants.FIELD_DESC, ScreenConstants.DONT_SET_ANCHOR);
+            properties.put(ScreenModel.DISPLAY_STRING, strDisplay);
+            createScreenComponent(ScreenModel.STATIC_STRING, descLocation, targetScreen, null, 0, properties);
         }
         
         for (short i = 0; i <= 6; i++)    // 0 = First Day -> 6 = Last Day of Week
         {
-            Converter dayConverter = converter;
+            Converter dayConverter = (Converter)converter;
             String strWeek = this.getDateString(calendar.getTime(), DateFormat.DAY_OF_WEEK_FIELD);
             if (strWeek.length() > 0)
                 dayConverter = new FieldDescConverter(dayConverter, strWeek.substring(0, 1));

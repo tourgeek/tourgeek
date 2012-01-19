@@ -76,15 +76,15 @@ public class SpecialFunctionField extends StringField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        converter = new FieldLengthConverter(converter, 25);
+        converter = new FieldLengthConverter((Converter)converter, 25);
         if (m_recSpecialFunction == null)
-        {
-            m_recSpecialFunction = new SpecialFunction(Utility.getRecordOwner(this.getRecord()));
+         {
+             m_recSpecialFunction = new SpecialFunction(Utility.getRecordOwner(this.getRecord()));
             if (m_recSpecialFunction.getRecordOwner() != null)
                 m_recSpecialFunction.getRecordOwner().removeRecord(m_recSpecialFunction);
         }
-        FieldConverter convert = new QueryConverter(converter, m_recSpecialFunction, SpecialFunction.kName, true);
-        return new SComboBox(itsLocation, targetScreen, convert, iDisplayFieldDesc);
+        FieldConverter convert = new QueryConverter((Converter)converter, m_recSpecialFunction, SpecialFunction.kName, true);
+        return createScreenComponent(ScreenModel.COMBO_BOX, itsLocation, targetScreen, convert, iDisplayFieldDesc, properties);
     }
 
 }

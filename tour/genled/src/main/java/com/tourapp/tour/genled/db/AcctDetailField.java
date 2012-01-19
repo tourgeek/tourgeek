@@ -75,7 +75,7 @@ public class AcctDetailField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return new SEditText(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+        return createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 
 }

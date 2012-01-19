@@ -66,19 +66,22 @@ public class MealDays extends ShortField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField screenField = new SStaticString(targetScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), targetScreen, DBConstants.BLANK);
+        properties = new HashMap<String,Object>();
+        properties.put(ScreenModel.DISPLAY_STRING, DBConstants.BLANK);
+        ScreenComponent screenField = createScreenComponent(ScreenModel.STATIC_STRING, targetScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), targetScreen, null, 0, properties);
         String strDisplay = converter.getFieldDesc();
         if ((strDisplay != null) && (strDisplay.length() > 0))
         {
-            ScreenLocation descLocation = targetScreen.getNextLocation(ScreenConstants.FIELD_DESC, ScreenConstants.DONT_SET_ANCHOR);
-            SStaticString staticString = new SStaticString(descLocation, targetScreen, strDisplay);
+            ScreenLoc descLocation = targetScreen.getNextLocation(ScreenConstants.FIELD_DESC, ScreenConstants.DONT_SET_ANCHOR);
+            properties.put(ScreenModel.DISPLAY_STRING, strDisplay);
+            createScreenComponent(ScreenModel.STATIC_STRING, descLocation, targetScreen, null, 0, properties);
         }
         
         for (short sBitPosition = 0; sBitPosition < 5; sBitPosition++)
         {
-            Converter dayConverter = new FieldDescConverter(converter, "+" + Short.toString(sBitPosition));
+            Converter dayConverter = new FieldDescConverter((Converter)converter, "+" + Short.toString(sBitPosition));
             dayConverter = new BitConverter(dayConverter, sBitPosition, false, true);
-            ScreenLocation location = targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST_CHECKBOX, ScreenConstants.DONT_SET_ANCHOR);
+            ScreenLoc location = targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST_CHECKBOX, ScreenConstants.DONT_SET_ANCHOR);
             screenField = (ScreenField)dayConverter.setupDefaultView(location, targetScreen, ScreenConstants.DISPLAY_FIELD_DESC);
         }
         return screenField;

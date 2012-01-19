@@ -66,14 +66,14 @@ public class TrxField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        ScreenField screenField = new SEditText(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+        ScreenComponent screenField = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         screenField.setEnabled(false);
         if (record != null)
         {
             ReadSecondaryHandler behavior = new ReadSecondaryHandler(record, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false);
             this.addListener(behavior);
             BaseField conv = record.getField(Trx.kTrxStatusID);
-            conv.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC);
+            conv.setupDefaultView((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC);
             conv.setEnabled(false);
         }
         return screenField;

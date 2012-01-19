@@ -88,8 +88,8 @@ public class TrxIDField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField sField = new SEditText(itsLocation, targetScreen, converter, iDisplayFieldDesc);
-        TrxIDSField trxField = new TrxIDSField(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ScreenComponent sField = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
+        TrxIDSField trxField = new TrxIDSField((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
         return sField;
     }
 

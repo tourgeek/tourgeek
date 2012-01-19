@@ -252,9 +252,9 @@ public class DistributionConverter extends FieldConverter
      * @param  iDisplayFieldDesc Display the label? (optional).
      * @return   Return the component or ScreenField that is created for this field.
      */
-    public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
+    public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+        ScreenComponent sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         
         Record recAccount = ((ReferenceField)converter.getField()).getReferenceRecord();
         ScreenComponent sFieldNo = recAccount.getField(Account.kAccountNo).getComponent(0);
@@ -265,7 +265,7 @@ public class DistributionConverter extends FieldConverter
         sFieldNo.setConverter(new GlConverter(new AccountNoDistConverter(field, this)));
         ScreenComponent sFieldDesc = this.getDisplayField(recAccount).getComponent(0);
         sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
-        new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
+        new SCannedBox((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         ((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
         
         ((BaseField)this.getField()).getRecord().addListener(new AddNewDistHandler(null));

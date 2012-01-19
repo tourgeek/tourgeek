@@ -76,7 +76,7 @@ public class ProfileField extends CustSaleCustNo
         Converter paConverter = new FirstMLastConverter(recProfile, Profile.kNamePrefix, Profile.kNameFirst, Profile.kNameMiddle, Profile.kNameSur, Profile.kNameSuffix, Profile.kNameTitle);
         Converter altConverter = new AltFieldConverter(recProfile.getField(Profile.kName), paConverter);
         altConverter = new FieldLengthConverter(altConverter, 25);
-        altConverter = new FieldDescConverter(altConverter, converter);
+        altConverter = new FieldDescConverter((Converter)altConverter, (Converter)converter);
         ScreenField sField = (ScreenField)altConverter.setupDefaultView(itsLocation, targetScreen, altConverter, iDisplayFieldDesc, properties);
         sField.setEnabled(false);
         return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recProfile, -1, -2, true, true);

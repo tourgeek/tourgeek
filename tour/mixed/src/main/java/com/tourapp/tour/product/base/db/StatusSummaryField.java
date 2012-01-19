@@ -97,7 +97,8 @@ public class StatusSummaryField extends IntegerField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        org.jbundle.base.screen.model.opt.SBlinkImageView blink = new org.jbundle.base.screen.model.opt.SBlinkImageView(itsLocation, targetScreen, converter, iDisplayFieldDesc)
+        //?ScreenComponent blink = createScreenComponent("org.jbundle.base.screen.model.opt.SBlinkImageView", itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
+        org.jbundle.base.screen.model.opt.SBlinkImageView blink = new org.jbundle.base.screen.model.opt.SBlinkImageView((ScreenLocation)itsLocation, (BasePanel)targetScreen, (Converter)converter, iDisplayFieldDesc)
         {
             public void setEnabled(boolean bEnable)
             {
@@ -105,10 +106,10 @@ public class StatusSummaryField extends IntegerField
             }
         };
         blink.setRequestFocusEnabled(false);     // By default, make user click with mouse
-        if (targetScreen.getAppletScreen() != null)
-            if (targetScreen.getAppletScreen().getTask() instanceof org.jbundle.thin.base.screen.BaseApplet)
+        if (((BasePanel)targetScreen).getAppletScreen() != null)
+            if (((BasePanel)targetScreen).getAppletScreen().getTask() instanceof org.jbundle.thin.base.screen.BaseApplet)
         {
-            org.jbundle.thin.base.screen.BaseApplet applet = (org.jbundle.thin.base.screen.BaseApplet)targetScreen.getAppletScreen().getTask();
+            org.jbundle.thin.base.screen.BaseApplet applet = (org.jbundle.thin.base.screen.BaseApplet)((BasePanel)targetScreen).getAppletScreen().getTask();
             String strProductType = this.getProductType();
             blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType, strProductType), 0);
             blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.INFO, BookingConstants.INFO), BookingConstants.INFO_LOOKUP);
@@ -121,8 +122,8 @@ public class StatusSummaryField extends IntegerField
         {   // If it is not in a grid screen, add the description
             itsLocation = targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR);
             iDisplayFieldDesc = ScreenConstants.DONT_DISPLAY_FIELD_DESC;
-            converter = new StatusDescConverter(converter);
-            SEditText sEditText = new SEditText(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+            converter = new StatusDescConverter((Converter)converter);
+            ScreenComponent sEditText = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
             sEditText.setEnabled(false);    // Remember, can't change the cost status.
         }
         

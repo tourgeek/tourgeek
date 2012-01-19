@@ -65,7 +65,7 @@ public class EAddressStringField extends StringField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        converter = new FieldLengthConverter(converter, 40);
+        converter = new FieldLengthConverter((Converter)converter, 40);
         return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 

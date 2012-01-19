@@ -68,7 +68,7 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+        ScreenComponent sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
@@ -76,7 +76,7 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
             {
                 ((SSelectBox)screenField).free();
                 Record record = this.getReferenceRecord();
-                new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+        /*        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
                 {
                     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
                     {
@@ -106,7 +106,7 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
                     }
                 };
                 break;
-            }
+        */    }
             if (screenField == null)
                 break;  // Just being careful.
         }

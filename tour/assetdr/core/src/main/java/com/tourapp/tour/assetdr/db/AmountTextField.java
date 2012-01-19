@@ -65,9 +65,8 @@ public class AmountTextField extends CurrencyField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        converter = new AmtDescConverter(converter);
-        SEditText screenField = new SEditText(itsLocation, targetScreen, converter, iDisplayFieldDesc);
-        return screenField;
+        converter = new AmtDescConverter((Converter)converter);
+        return createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 
 }

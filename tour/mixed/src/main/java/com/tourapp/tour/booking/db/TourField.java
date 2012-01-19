@@ -104,15 +104,15 @@ public class TourField extends ReferenceField
         
         recTour.setKeyArea(Tour.kCodeKey);
         fldCode.addListener(new MainReadOnlyHandler(Tour.kCodeKey));
-        Converter conv = new FieldDescConverter(fldCode, converter); // Use the description for this field
+        Converter conv = new FieldDescConverter((Converter)fldCode, (Converter)converter); // Use the description for this field
         conv = new FieldLengthConverter(conv, 10);
-        ScreenField sfDesc = new SEditText(itsLocation, targetScreen, conv, iDisplayFieldDesc);
+        ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
         
         boolean bIncludeBlankOption = true;
         ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTour, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, bUpdateRecord, bIncludeBlankOption);
         this.addListener(pBehavior2);
         
-        ScreenField screenField = (ScreenField)fldDepartureDate.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, fldDepartureDate, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ScreenField screenField = (ScreenField)fldDepartureDate.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, fldDepartureDate, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         fldDepartureDate.setEnabled(false);
         
         conv = new FieldLengthConverter(fldTourDesc, 30);

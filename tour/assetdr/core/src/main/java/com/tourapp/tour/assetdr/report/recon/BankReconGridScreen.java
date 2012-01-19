@@ -161,7 +161,7 @@ public class BankReconGridScreen extends GridScreen
             if ((iCommandOptions & ScreenConstants.USE_NEW_WINDOW) == ScreenConstants.USE_SAME_WINDOW)  // Use same window
                 itsLocation = this.getScreenLocation();
             else
-                parentScreen = Screen.makeWindow(this.getTask().getApplication());
+                parentScreen = (BasePanel)Screen.makeWindow(this.getTask().getApplication());
             boolean bUseBaseTable = true;
             boolean bLinkGridToQuery = false;
             boolean bCloneThisQuery = false;
@@ -169,7 +169,7 @@ public class BankReconGridScreen extends GridScreen
             boolean bReadCurrentRecord = false;
             this.setScreenRecord(null);
             this.removeRecord(recordMain);
-            BasePanel pScreen = recordMain.makeScreen(itsLocation, parentScreen, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, null);
+            BasePanel pScreen = (BasePanel)recordMain.makeScreen(itsLocation, parentScreen, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, null);
             if (pScreen == null)
                 return false;
             this.free();

@@ -79,12 +79,12 @@ public class ApTrxClassField extends IntegerField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField screenField = null;
+        ScreenComponent screenField = null;
         for (int iBitPosition = ALL; iBitPosition <= PREPAYMENTS; iBitPosition++)    // Calendar.SUNDAY -> Calendar.SATURDAY
         {
-            FieldConverter convBit = new RadioConverter(converter, Integer.toString(iBitPosition), true);
+            FieldConverter convBit = new RadioConverter((Converter)converter, Integer.toString(iBitPosition), true);
             convBit = new FieldDescConverter(convBit, this.getBitDesc(iBitPosition));
-            screenField = new SRadioButton(itsLocation, targetScreen, convBit, iDisplayFieldDesc);
+            screenField = createScreenComponent(ScreenModel.RADIO_BUTTON, itsLocation, targetScreen, convBit, iDisplayFieldDesc, properties);
             itsLocation = targetScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR);
         }
         return screenField;

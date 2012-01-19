@@ -137,9 +137,9 @@ public class CashDistConverter extends DistributionConverter
      * @param  iDisplayFieldDesc Display the label? (optional).
      * @return   Return the component or ScreenField that is created for this field.
      */
-    public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
+    public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField sField = (ScreenField)converter.getField().setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
+        ScreenComponent sField = (ScreenField)converter.getField().setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         
         Record recBooking = ((ReferenceField)converter.getField()).getReferenceRecord();
         
@@ -153,7 +153,11 @@ public class CashDistConverter extends DistributionConverter
         
         ScreenComponent sFieldDesc = this.getDisplayField(recBooking).getComponent(0);
         sFieldDesc.setConverter(new AccountDescDistConverter((Converter)sFieldDesc.getConverter(), this));
-        new SCannedBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
+        
+        properties = new HashMap<String,Object>();
+        properties.put(ScreenModel.COMMAND, MenuConstants.FORMDETAIL);
+        properties.put(ScreenModel.IMAGE, MenuConstants.FORMDETAIL);
+        BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
         ((BaseField)this.getField()).addListener(new ReferenceChangedHandler(this));
         
         ((BaseField)this.getField()).getRecord().addListener(new AddNewCashDistHandler(null));

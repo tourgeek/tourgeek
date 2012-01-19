@@ -62,7 +62,7 @@ public class AccountNoField extends IntegerField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        converter = new GlConverter(converter);
+        converter = new GlConverter((Converter)converter);
         return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 

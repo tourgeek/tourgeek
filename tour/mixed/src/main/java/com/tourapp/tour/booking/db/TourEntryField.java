@@ -90,7 +90,7 @@ public class TourEntryField extends TourField
         conv = new FieldLengthConverter(fldTourDesc, 30);
         //return this.setupTableLookup(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, recTour, -1, Tour.kDescription, false, false);
         this.addListener(new ReadSecondaryHandler(recTour, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false));
-        ScreenField sfDesc = new SEditText(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC);
+        ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
         sfDesc.setEnabled(false);
         return sfDesc;
     }

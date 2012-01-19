@@ -117,7 +117,7 @@ public class DeprTypeField extends StringField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return new SPopupBox(itsLocation, targetScreen, this, iDisplayFieldDesc);
+        return createScreenComponent(ScreenModel.POPUP_BOX, itsLocation, targetScreen, this, iDisplayFieldDesc, properties);
     }
 
 }

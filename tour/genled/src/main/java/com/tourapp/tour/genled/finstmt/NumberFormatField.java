@@ -76,15 +76,15 @@ public class NumberFormatField extends StringField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        converter = new FieldLengthConverter(converter, 25);
+        converter = new FieldLengthConverter((Converter)converter, 25);
         if (m_recNumberFormat == null)
         {
             m_recNumberFormat = new NumberFormat(Utility.getRecordOwner(this.getRecord()));
             if (m_recNumberFormat.getRecordOwner() != null)
                 m_recNumberFormat.getRecordOwner().removeRecord(m_recNumberFormat);
         }
-        FieldConverter convert = new QueryConverter(converter, m_recNumberFormat, NumberFormat.kName, true);
-        return new SComboBox(itsLocation, targetScreen, convert, iDisplayFieldDesc);
+        FieldConverter convert = new QueryConverter((Converter)converter, m_recNumberFormat, NumberFormat.kName, true);
+        return createScreenComponent(ScreenModel.COMBO_BOX, itsLocation, targetScreen, convert, iDisplayFieldDesc, properties);
     }
 
 }

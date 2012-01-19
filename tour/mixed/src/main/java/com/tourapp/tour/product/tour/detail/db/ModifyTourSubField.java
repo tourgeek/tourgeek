@@ -85,7 +85,7 @@ public class ModifyTourSubField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField sField = null;
+        ScreenComponent sField = null;
         Record record = this.makeReferenceRecord();
         int fsField = TourHeaderLine.kDescription;
         if (record instanceof TourHeaderAirHeader)
@@ -112,7 +112,7 @@ public class ModifyTourSubField extends ReferenceField
             if (screenField instanceof SSelectBox)
             {
                 ((SSelectBox)screenField).free();
-                new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+        /*        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
                 {
                     public boolean doCommand(String strCommand, ScreenField sourceSField, int iComandOptions)
                     {
@@ -150,7 +150,7 @@ public class ModifyTourSubField extends ReferenceField
                                 String strQueueName = ModifyTourSubField.SELECT_QUEUE;   // This is my private queue
                                 parentScreen.setProperty(MessageConstants.QUEUE_NAME, strQueueName);
                                 parentScreen.setProperty(RecordMessageConstants.TABLE_NAME, recTourSub.getTableNames(false));
-                                GridScreen screen = new TourHeaderOptionGridScreen(recTourHeader, null, null, parentScreen, null, /*ScreenConstants.SELECT_MODE |*/ ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
+                                GridScreen screen = new TourHeaderOptionGridScreen(recTourHeader, null, null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
                                 BaseMessageManager messageManager = application.getMessageManager();
                                 BaseMessageReceiver receiver = (BaseMessageReceiver)messageManager.getMessageQueue(strQueueName, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
                                 BaseScreen screenTarget = (BaseScreen)sourceSField.getParentScreen();
@@ -167,7 +167,7 @@ public class ModifyTourSubField extends ReferenceField
                     }
                 };
                 break;
-            }
+        */    }
             if (screenField == null)
                 break;  // Just being careful.
         }

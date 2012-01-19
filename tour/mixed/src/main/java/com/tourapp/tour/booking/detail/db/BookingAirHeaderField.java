@@ -74,14 +74,14 @@ public class BookingAirHeaderField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        ScreenField sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, BookingAirHeader.kAirlineDesc, true, false);
+        ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, BookingAirHeader.kAirlineDesc, true, false);
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
             if (screenField instanceof SSelectBox)
             {
                 ((SSelectBox)screenField).free();
-                new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+        /*        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
                 {
                     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
                     {
@@ -112,7 +112,7 @@ public class BookingAirHeaderField extends ReferenceField
                         return true;    // Handled
                     }
                 };
-            }
+        */    }
             if (screenField == null)
                 break;  // Just being careful.
         }
