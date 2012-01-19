@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.acctpay.db.*;
@@ -28,7 +30,7 @@ import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.*;
-import org.jbundle.main.msg.db.base.*;
+import org.jbundle.main.db.base.*;
 
 /**
  *  GetProductCostHandler - Get the product cost on a valid product record.

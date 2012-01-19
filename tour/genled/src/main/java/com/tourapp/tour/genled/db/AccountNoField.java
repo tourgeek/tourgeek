@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.genled.screen.misc.*;
 import com.tourapp.tour.genled.screen.detail.*;
 
@@ -58,10 +60,10 @@ public class AccountNoField extends IntegerField
     /**
      * Set up the view with a GlConverter.
      */
-    public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
+    public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         converter = new GlConverter(converter);
-        return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc);
+        return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 
 }

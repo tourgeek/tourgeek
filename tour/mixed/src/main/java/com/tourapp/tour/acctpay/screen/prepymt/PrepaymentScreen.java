@@ -4,37 +4,29 @@
  */
 package com.tourapp.tour.acctpay.screen.prepymt;
 
-import java.util.Map;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.Record;
-import org.jbundle.base.field.ReferenceField;
-import org.jbundle.base.field.convert.FieldDescConverter;
-import org.jbundle.base.field.event.InitFieldHandler;
-import org.jbundle.base.field.event.MoveOnChangeHandler;
-import org.jbundle.base.field.event.ReadSecondaryHandler;
-import org.jbundle.base.screen.model.BasePanel;
-import org.jbundle.base.screen.model.SButtonBox;
-import org.jbundle.base.screen.model.Screen;
-import org.jbundle.base.screen.model.ScreenField;
-import org.jbundle.base.screen.model.ToolScreen;
-import org.jbundle.base.screen.model.util.ScreenLocation;
-import org.jbundle.base.util.BaseApplication;
-import org.jbundle.base.util.DBConstants;
-import org.jbundle.base.util.MenuConstants;
-import org.jbundle.base.util.ResourceConstants;
-import org.jbundle.base.util.ScreenConstants;
-import org.jbundle.model.Task;
-import org.jbundle.model.screen.ScreenParent;
-import org.jbundle.thin.base.db.Converter;
-
-import com.tourapp.tour.acctpay.db.ApControl;
-import com.tourapp.tour.acctpay.db.ApTrx;
-import com.tourapp.tour.acctpay.db.Vendor;
-import com.tourapp.tour.acctpay.screen.findepest.EnableScreenHandler;
-import com.tourapp.tour.acctpay.screen.trx.ApTrxClassField;
-import com.tourapp.tour.booking.db.Tour;
-import com.tourapp.tour.genled.db.TransactionType;
-import com.tourapp.tour.genled.db.TrxStatus;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
+import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.tour.genled.db.*;
+import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.acctpay.screen.findepest.*;
+import com.tourapp.tour.acctpay.screen.trx.*;
+import com.tourapp.tour.base.db.*;
 
 /**
  *  PrepaymentScreen - Prepayments.
@@ -199,30 +191,30 @@ public class PrepaymentScreen extends Screen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-if ((MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
-    || (Vendor.kVendorFile.equalsIgnoreCase(strCommand))
-    || (Tour.kTourFile.equalsIgnoreCase(strCommand)))
-{
-    Record recordMain = this.getMainRecord();
-
-    ScreenLocation itsLocation = null;
-    BasePanel parentScreen = Screen.makeWindow(this.getTask().getApplication());
-    Task task = parentScreen.getTask();//getAppletScreen().getScreenFieldView().getControl();
-    task.setProperty("DisplayType", Integer.toString(ApTrxClassField.PREPAYMENTS));
-    int iDocMode = ApTrx.TOUR_AP_SCREEN;
-    if (strCommand.equalsIgnoreCase(Vendor.kVendorFile))
-        iDocMode = ApTrx.VENDOR_AP_SCREEN;
-    iDocMode = iDocMode | ScreenConstants.SELECT_MODE;
-
-    boolean bCloneThisQuery = true;
-    boolean bReadCurrentRecord = false;
-    boolean bUseBaseTable = true;
-    boolean bLinkGridToQuery = true;
-    this.finalizeThisScreen();  // Validate current control, update record, get ready to close screen.
-    ScreenParent screen = recordMain.makeScreen(itsLocation, parentScreen, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, null);
-    return true;    // Success
-}
-return super.doCommand(strCommand, sourceSField, iCommandOptions);
+        if ((MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
+            || (Vendor.kVendorFile.equalsIgnoreCase(strCommand))
+            || (Tour.kTourFile.equalsIgnoreCase(strCommand)))
+        {
+            Record recordMain = this.getMainRecord();
+        
+            ScreenLocation itsLocation = null;
+            BasePanel parentScreen = Screen.makeWindow(this.getTask().getApplication());
+            Task task = parentScreen.getTask();//getAppletScreen().getScreenFieldView().getControl();
+            task.setProperty("DisplayType", Integer.toString(ApTrxClassField.PREPAYMENTS));
+            int iDocMode = ApTrx.TOUR_AP_SCREEN;
+            if (strCommand.equalsIgnoreCase(Vendor.kVendorFile))
+                iDocMode = ApTrx.VENDOR_AP_SCREEN;
+            iDocMode = iDocMode | ScreenConstants.SELECT_MODE;
+        
+            boolean bCloneThisQuery = true;
+            boolean bReadCurrentRecord = false;
+            boolean bUseBaseTable = true;
+            boolean bLinkGridToQuery = true;
+            this.finalizeThisScreen();  // Validate current control, update record, get ready to close screen.
+            ScreenParent screen = recordMain.makeScreen(itsLocation, parentScreen, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, null);
+            return true;    // Success
+        }
+        return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }
 
 }

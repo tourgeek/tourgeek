@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.tour.db.*;
 import java.util.*;
 import com.tourapp.tour.acctpay.db.*;
@@ -31,7 +33,7 @@ import com.tourapp.tour.product.tour.other.screen.*;
 import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.acctpay.screen.findepest.*;
-import org.jbundle.main.msg.db.base.*;
+import org.jbundle.main.db.base.*;
 
 /**
  *  TourEntryField - .
@@ -71,9 +73,10 @@ public class TourEntryField extends TourField
      * @param targetScreen Where to place this component (ie., Parent screen or GridBagLayout).
      * @param converter The converter to set the screenfield to.
      * @param iDisplayFieldDesc Display the label? (optional).
+     * @param properties Extra properties
      * @return Return the component or ScreenField that is created for this field.
      */
-    public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
+    public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record recTour = this.getReferenceRecord();
         BaseField fldDepartureDate = recTour.getField(Tour.kDepartureDate);
@@ -81,7 +84,7 @@ public class TourEntryField extends TourField
         BaseField fldTourDesc = recTour.getField(Tour.kDescription);
         //?fldAcctNo.addListener(new MainReadOnlyHandler(Account.kAccountNoKey));
         Converter conv = new FieldDescConverter(fldDepartureDate, this);    // Use the description for this field
-        conv.setupDefaultView(itsLocation, targetScreen, conv, iDisplayFieldDesc);
+        conv.setupDefaultView(itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
         //fldTourCode.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
         
         conv = new FieldLengthConverter(fldTourDesc, 30);

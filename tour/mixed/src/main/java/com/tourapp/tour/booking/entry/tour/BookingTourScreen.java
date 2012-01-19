@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.booking.entry.base.*;
 import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.booking.db.*;
@@ -250,7 +252,7 @@ public class BookingTourScreen extends BookingSubScreen
         strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.kTourHeaderTourType).toString());
         ((SSelectBox)screenField).setButtonCommand(strCommand);
         screenField.setRequestFocusEnabled(false);
-        screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, SCannedBox.CLEAR, SCannedBox.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(SCannedBox.CLEAR), null, null);
+        screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, ScreenModel.CLEAR, ScreenModel.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ScreenModel.CLEAR), null, null);
         screenField.setRequestFocusEnabled(false);
         // Tour Header Popup (right of last)
         TourHeader recTourHeader = new TourHeader(this);
@@ -386,7 +388,7 @@ public class BookingTourScreen extends BookingSubScreen
                 }
             }
         }
-        if (SCannedBox.CLEAR.equalsIgnoreCase(strCommand))
+        if (ScreenModel.CLEAR.equalsIgnoreCase(strCommand))
         {
             Record recBooking = this.getMainRecord();
             if (!recBooking.getField(Booking.kTourID).isNull())

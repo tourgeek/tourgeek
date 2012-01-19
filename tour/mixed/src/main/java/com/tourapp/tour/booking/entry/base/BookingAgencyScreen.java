@@ -19,10 +19,11 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.product.base.db.*;
-import org.jbundle.model.db.*;
 
 /**
  *  BookingAgencyScreen - Booking Profile Information Entry.
@@ -111,7 +112,7 @@ public class BookingAgencyScreen extends BookingSubScreen
         sField.setRequestFocusEnabled(false);
         sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.kBookingFile).getField(Booking.kProfileCode), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.FORM, MenuConstants.FORM, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(MenuConstants.FORM), this.getRecord(Profile.kProfileFile), null);
         sField.setRequestFocusEnabled(false);
-        sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, SCannedBox.CLEAR, SCannedBox.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(SCannedBox.CLEAR), null, null);
+        sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, ScreenModel.CLEAR, ScreenModel.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ScreenModel.CLEAR), null, null);
         sField.setRequestFocusEnabled(false);
         this.getRecord(Booking.kBookingFile).getField(Booking.kContact).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Booking.kBookingFile).getField(Booking.kGenericName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -178,7 +179,7 @@ public class BookingAgencyScreen extends BookingSubScreen
             recProfile.makeScreen(null, parentScreen, ScreenConstants.MAINT_MODE, true, true, true, true, null);
             return true;
         }
-        else if (strCommand.equalsIgnoreCase(SCannedBox.CLEAR))
+        else if (strCommand.equalsIgnoreCase(ScreenModel.CLEAR))
         {
             for (int i = 0; i < this.getSFieldCount(); i++)
             {

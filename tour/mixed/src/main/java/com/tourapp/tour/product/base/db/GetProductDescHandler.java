@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.base.db.*;
 import java.util.*;
@@ -46,7 +48,7 @@ import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.product.base.search.screen.*;
 import com.tourapp.tour.booking.entry.event.*;
 import com.tourapp.tour.product.air.db.*;
-import org.jbundle.main.msg.db.base.*;
+import org.jbundle.main.db.base.*;
 import com.tourapp.tour.booking.inventory.db.*;
 
 /**

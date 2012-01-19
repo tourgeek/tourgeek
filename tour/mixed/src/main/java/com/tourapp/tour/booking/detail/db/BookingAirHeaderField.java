@@ -4,25 +4,24 @@
  */
 package com.tourapp.tour.booking.detail.db;
 
-import java.util.Hashtable;
-import java.util.Map;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.Record;
-import org.jbundle.base.db.RecordOwner;
-import org.jbundle.base.field.BaseField;
-import org.jbundle.base.field.ReferenceField;
-import org.jbundle.base.screen.model.BasePanel;
-import org.jbundle.base.screen.model.Screen;
-import org.jbundle.base.screen.model.ScreenField;
-import org.jbundle.base.screen.model.util.SSelectBox;
-import org.jbundle.base.screen.model.util.ScreenLocation;
-import org.jbundle.base.util.DBParams;
-import org.jbundle.base.util.ScreenConstants;
-import org.jbundle.model.App;
-import org.jbundle.model.Task;
-import org.jbundle.model.screen.ScreenComponent;
-import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.screen.BaseApplet;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
+import org.jbundle.thin.base.screen.*;
 
 /**
  *  BookingAirHeaderField - .
@@ -69,54 +68,55 @@ public class BookingAirHeaderField extends ReferenceField
      * @param targetScreen Where to place this component (ie., Parent screen or GridBagLayout).
      * @param converter The converter to set the screenfield to.
      * @param iDisplayFieldDesc Display the label? (optional).
+     * @param properties Extra properties
      * @return Return the component or ScreenField that is created for this field.
      */
-    public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
+    public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-Record record = this.makeReferenceRecord();
-ScreenField sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, BookingAirHeader.kAirlineDesc, true, false);
-for (int i = 0; ; i++)
-{
-    ScreenComponent screenField = this.getComponent(i);
-    if (screenField instanceof SSelectBox)
-    {
-        ((SSelectBox)screenField).free();
-        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+        Record record = this.makeReferenceRecord();
+        ScreenField sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, BookingAirHeader.kAirlineDesc, true, false);
+        for (int i = 0; ; i++)
         {
-            public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
+            ScreenComponent screenField = this.getComponent(i);
+            if (screenField instanceof SSelectBox)
             {
-                BaseField fldBookingAirHeaderID = (BaseField)this.getConverter().getField();
-                Record recBookingAir = fldBookingAirHeaderID.getRecord();
-                Record recBookingAirHeader = makeReferenceRecord();
-
-                String strOptionID = recBookingAir.getField(BookingAir.kBookingID).toString();
-                ScreenLocation itsLocation = null;
-
-                Task task = null;
-                if (recBookingAirHeader.getRecordOwner() != null)
-                    task = recBookingAirHeader.getRecordOwner().getTask();
-                if (task == null)
-                    task = BaseApplet.getSharedInstance();
-                App application = task.getApplication();
-
-                BasePanel parent = Screen.makeWindow(application);
-                int iDocMode = ScreenConstants.SELECT_MODE;
-                boolean bCloneThisQuery = true;
-                boolean bReadCurrentRecord = true;
-                boolean bUseBaseTable = true;
-                boolean bLinkGridToQuery = true;
-                Map<String,Object> properties = new Hashtable<String,Object>();
-                properties.put(DBParams.HEADER_OBJECT_ID, strOptionID);
-                recBookingAirHeader.makeScreen(itsLocation, parent, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, properties);
-
-                return true;    // Handled
+                ((SSelectBox)screenField).free();
+                new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+                {
+                    public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
+                    {
+                        BaseField fldBookingAirHeaderID = (BaseField)this.getConverter().getField();
+                        Record recBookingAir = fldBookingAirHeaderID.getRecord();
+                        Record recBookingAirHeader = makeReferenceRecord();
+        
+                        String strOptionID = recBookingAir.getField(BookingAir.kBookingID).toString();
+                        ScreenLocation itsLocation = null;
+        
+                        Task task = null;
+                        if (recBookingAirHeader.getRecordOwner() != null)
+                            task = recBookingAirHeader.getRecordOwner().getTask();
+                        if (task == null)
+                            task = BaseApplet.getSharedInstance();
+                        App application = task.getApplication();
+        
+                        BasePanel parent = Screen.makeWindow(application);
+                        int iDocMode = ScreenConstants.SELECT_MODE;
+                        boolean bCloneThisQuery = true;
+                        boolean bReadCurrentRecord = true;
+                        boolean bUseBaseTable = true;
+                        boolean bLinkGridToQuery = true;
+                        Map<String,Object> properties = new Hashtable<String,Object>();
+                        properties.put(DBParams.HEADER_OBJECT_ID, strOptionID);
+                        recBookingAirHeader.makeScreen(itsLocation, parent, iDocMode, bCloneThisQuery, bReadCurrentRecord, bUseBaseTable, bLinkGridToQuery, properties);
+        
+                        return true;    // Handled
+                    }
+                };
             }
-        };
-    }
-    if (screenField == null)
-        break;  // Just being careful.
-}
-return sField;
+            if (screenField == null)
+                break;  // Just being careful.
+        }
+        return sField;
     }
 
 }

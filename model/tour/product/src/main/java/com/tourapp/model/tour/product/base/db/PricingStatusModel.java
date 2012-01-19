@@ -4,7 +4,7 @@
  */
 package com.tourapp.model.tour.product.base.db;
 
-import org.jbundle.model.main.msg.db.base.*;
+import org.jbundle.model.main.db.base.*;
 
 public interface PricingStatusModel extends BaseStatusModel
 {

@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 
 /**
  *  ProfileField - Profile field.
@@ -65,16 +67,17 @@ public class ProfileField extends CustSaleCustNo
      * @param targetScreen Where to place this component (ie., Parent screen or GridBagLayout).
      * @param converter The converter to set the screenfield to.
      * @param iDisplayFieldDesc Display the label? (optional).
+     * @param properties Extra properties
      * @return Return the component or ScreenField that is created for this field.
      */
-    public ScreenField setupDefaultView(ScreenLocation itsLocation, BasePanel targetScreen, Converter converter, int iDisplayFieldDesc)
+    public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Profile recProfile = (Profile)this.makeReferenceRecord();
         Converter paConverter = new FirstMLastConverter(recProfile, Profile.kNamePrefix, Profile.kNameFirst, Profile.kNameMiddle, Profile.kNameSur, Profile.kNameSuffix, Profile.kNameTitle);
         Converter altConverter = new AltFieldConverter(recProfile.getField(Profile.kName), paConverter);
         altConverter = new FieldLengthConverter(altConverter, 25);
         altConverter = new FieldDescConverter(altConverter, converter);
-        ScreenField sField = (ScreenField)altConverter.setupDefaultView(itsLocation, targetScreen, altConverter, iDisplayFieldDesc);
+        ScreenField sField = (ScreenField)altConverter.setupDefaultView(itsLocation, targetScreen, altConverter, iDisplayFieldDesc, properties);
         sField.setEnabled(false);
         return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recProfile, -1, -2, true, true);
     }

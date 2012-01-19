@@ -19,9 +19,11 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.main.msg.db.base.*;
+import org.jbundle.main.db.base.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.hotel.db.*;
@@ -29,7 +31,6 @@ import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.hotel.request.data.*;
 import com.tourapp.tour.product.base.db.*;
-import org.jbundle.model.db.*;
 
 /**
  *  HotelBookingRequest - Hotel order (booking) request message.

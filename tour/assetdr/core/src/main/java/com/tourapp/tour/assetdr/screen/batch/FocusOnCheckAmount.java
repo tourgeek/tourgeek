@@ -19,6 +19,8 @@ import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.genled.db.*;
 
@@ -57,19 +59,19 @@ public class FocusOnCheckAmount extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-ReferenceField fldType = (ReferenceField)this.getOwner().getRecord().getField(BankTrxBatchDetail.kTrxStatusID);
-Record recTrxStatus = fldType.getReference();
-if (recTrxStatus != null)
-{
-    String strSignHint = recTrxStatus.getField(TrxStatus.kPreferredSign).toString();
-    if (PreferredSignField.POSITIVE.equals(strSignHint))
-    {
-        BaseField fldAmount = this.getOwner().getRecord().getField(BankTrxBatchDetail.kAmount);
-        ScreenField screenField = (ScreenField)fldAmount.getComponent(1);
-        screenField.requestFocus();
-    }
-}
-return super.fieldChanged(bDisplayOption, iMoveMode);
+        ReferenceField fldType = (ReferenceField)this.getOwner().getRecord().getField(BankTrxBatchDetail.kTrxStatusID);
+        Record recTrxStatus = fldType.getReference();
+        if (recTrxStatus != null)
+        {
+            String strSignHint = recTrxStatus.getField(TrxStatus.kPreferredSign).toString();
+            if (PreferredSignField.POSITIVE.equals(strSignHint))
+            {
+                BaseField fldAmount = this.getOwner().getRecord().getField(BankTrxBatchDetail.kAmount);
+                ScreenField screenField = (ScreenField)fldAmount.getComponent(1);
+                screenField.requestFocus();
+            }
+        }
+        return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 
 }
