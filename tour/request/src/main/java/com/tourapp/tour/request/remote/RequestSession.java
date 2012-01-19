@@ -42,7 +42,7 @@ public class RequestSession extends Session
     /**
      * RequestSession Method.
      */
-    public RequestSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public RequestSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -50,7 +50,7 @@ public class RequestSession extends Session
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         super.init(parentSessionObject, record, objectID);
     }

@@ -42,7 +42,7 @@ public class BookingLineSession extends Session
     /**
      * BookingLineSession Method.
      */
-    public BookingLineSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public BookingLineSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -50,7 +50,7 @@ public class BookingLineSession extends Session
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         super.init(parentSessionObject, record, objectID);
     }

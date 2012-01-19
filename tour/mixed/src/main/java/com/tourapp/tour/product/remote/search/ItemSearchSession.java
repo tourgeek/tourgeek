@@ -46,7 +46,7 @@ public class ItemSearchSession extends ProductSearchSession
     /**
      * ItemSearchSession Method.
      */
-    public ItemSearchSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public ItemSearchSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -54,7 +54,7 @@ public class ItemSearchSession extends ProductSearchSession
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         super.init(parentSessionObject, record, objectID);
     }

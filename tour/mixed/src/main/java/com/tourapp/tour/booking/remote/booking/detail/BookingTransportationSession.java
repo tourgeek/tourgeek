@@ -40,7 +40,7 @@ public class BookingTransportationSession extends BookingDetailBaseSession
     /**
      * BookingTransportationSession Method.
      */
-    public BookingTransportationSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public BookingTransportationSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -48,7 +48,7 @@ public class BookingTransportationSession extends BookingDetailBaseSession
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         super.init(parentSessionObject, record, objectID);
     }

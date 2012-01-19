@@ -41,7 +41,7 @@ public class ProductSession extends TableModelSession
     /**
      * ProductSession Method.
      */
-    public ProductSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public ProductSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -49,7 +49,7 @@ public class ProductSession extends TableModelSession
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         super.init(parentSessionObject, record, objectID);
     }

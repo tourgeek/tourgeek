@@ -49,7 +49,7 @@ public class BookingDetailSession extends TableModelSession
     /**
      * BookingDetailSession Method.
      */
-    public BookingDetailSession(BaseSession parentSessionObject, Record record, Object objectID, ProductSession productSession) throws RemoteException
+    public BookingDetailSession(BaseSession parentSessionObject, Record record, Map<String,Object> objectID, ProductSession productSession) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID, productSession);
@@ -57,7 +57,7 @@ public class BookingDetailSession extends TableModelSession
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID, ProductSession productSession)
+    public void init(BaseSession parentSessionObject, Record record, Map<String,Object> objectID, ProductSession productSession)
     {
         m_productSession = null;
         m_productSession = productSession;

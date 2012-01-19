@@ -49,7 +49,7 @@ public class CruiseSearchSession extends ProductSearchSession
     /**
      * CruiseSearchSession Method.
      */
-    public CruiseSearchSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public CruiseSearchSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -57,7 +57,7 @@ public class CruiseSearchSession extends ProductSearchSession
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         super.init(parentSessionObject, record, objectID);
     }

@@ -53,7 +53,7 @@ public class HotelSession extends Session
     /**
      * HotelSession Method.
      */
-    public HotelSession(BaseSession parentSessionObject, Record record, Object objectID) throws RemoteException
+    public HotelSession(BaseSession parentSessionObject, Record record, Map<String, Object> objectID) throws RemoteException
     {
         this();
         this.init(parentSessionObject, record, objectID);
@@ -61,7 +61,7 @@ public class HotelSession extends Session
     /**
      * Initialize class fields.
      */
-    public void init(BaseSession parentSessionObject, Record record, Object objectID)
+    public void init(BaseSession parentSessionObject, Record record, Map<String, Object> objectID)
     {
         m_intRegistryID = null;
         super.init(parentSessionObject, record, objectID);
