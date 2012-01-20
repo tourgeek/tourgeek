@@ -108,15 +108,15 @@ public class AcctDetailDist extends VirtualRecord
     /**
      * MakeScreen Method.
      */
-    public BaseScreen makeScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
+    public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
-        BaseScreen screen = null;
+        ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.SCREEN_TYPE_MASK) == ScreenConstants.MAINT_MODE)
-            screen = new AcctDetailDistScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new AcctDetailDistScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else if ((iDocMode & ScreenConstants.SCREEN_TYPE_MASK) == ScreenConstants.DISPLAY_MODE)
-            screen = new AcctDetailDistGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new AcctDetailDistGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else if ((iDocMode & ScreenConstants.SCREEN_TYPE_MASK) == DIST_GROUP_SCREEN)
-            screen = new AcctDetailDistGroupGridScreen(this, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new AcctDetailDistGroupGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;

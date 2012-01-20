@@ -94,11 +94,11 @@ public class InventoryDetail extends VirtualRecord
     /**
      * MakeScreen Method.
      */
-    public BaseScreen makeScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
+    public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
-        BaseScreen screen = null;
+        ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new InventoryDetailScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new InventoryDetailScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else if ((iDocMode & ScreenConstants.DETAIL_MODE) == ScreenConstants.DETAIL_MODE)
         {
             if ((this.getEditMode() == DBConstants.EDIT_CURRENT) || (this.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
@@ -109,7 +109,7 @@ public class InventoryDetail extends VirtualRecord
                     if (recBookingDetail.seek(null))
                     {
                         recBookingDetail = recBookingDetail.getTable().getCurrentTable().getRecord();
-                        screen = recBookingDetail.makeScreen(itsLocation, parentScreen, ScreenConstants.MAINT_MODE, properties);
+                        screen = recBookingDetail.makeScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, ScreenConstants.MAINT_MODE, properties);
                     }
                 } catch (DBException ex) {
                     ex.printStackTrace();
@@ -117,9 +117,9 @@ public class InventoryDetail extends VirtualRecord
             }
         }
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
-            screen = new InventoryDetailGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new InventoryDetailGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else
-            screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
+            screen = super.makeScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, iDocMode, properties);
         return screen;
     }
     /**

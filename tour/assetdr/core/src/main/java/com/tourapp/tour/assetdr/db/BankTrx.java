@@ -126,13 +126,13 @@ public class BankTrx extends BaseTrx
     /**
      * MakeScreen Method.
      */
-    public BaseScreen makeScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
+    public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
-        BaseScreen screen = null;
+        ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == BankTrx.DISTRIBUTION_SCREEN)
-            screen = new BankTrxDistGridScreen(this, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new BankTrxDistGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else if ((iDocMode & BankTrx.BANK_RECON_SCREEN) == BankTrx.BANK_RECON_SCREEN)
-            screen = new BankReconScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new BankReconScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else if ((iDocMode & BankTrx.PAYMENT_DISTRIBUTION_SCREEN) == BankTrx.PAYMENT_DISTRIBUTION_SCREEN)
         {
             TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getField(BankTrx.kPayeeTrxDescID)).getReference();
@@ -142,12 +142,12 @@ public class BankTrx extends BaseTrx
             properties.put(DBParams.HEADER_OBJECT_ID, this.getCounterField().toString());
             if (recTrxDesc != null)
                 if ((recTrxDesc.getEditMode() == DBConstants.EDIT_CURRENT) || (recTrxDesc.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                    screen = recTrxDesc.makeLinkTrxScreen(itsLocation, parentScreen, iDocMode, properties);
+                    screen = recTrxDesc.makeLinkTrxScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, iDocMode, properties);
         }
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new BankTrxScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new BankTrxScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else
-            screen = new BankTrxGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new BankTrxGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         return screen;
     }
     /**

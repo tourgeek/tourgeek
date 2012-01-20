@@ -6,7 +6,7 @@ package com.tourapp.tour.util.script.importdata;
 
 import java.awt.*;
 import java.util.*;
-
+ 
 import org.jbundle.base.db.*;
 import org.jbundle.thin.base.util.*;
 import org.jbundle.thin.base.db.*;
@@ -30,7 +30,6 @@ import javax.xml.datatype.*;
 import org.jibx.schema.org.opentravel._2010B.base.*;
 import org.jibx.runtime.*;
 import org.joda.time.*;
-
 /**
  *  ImportOTACodeTablesProcess - .
  */
@@ -99,7 +98,7 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                 LocalDate calCreate = table.getCreationDate();
                 LocalDate calDeletion = table.getMarkedForDeletionDate();
                 CodeTables.CodeTable.Descriptions descriptions = table.getDescriptions();
-                Properties properties = null;
+                Map<String,Object> properties = null;
                 if (descriptions != null)
                     for (FreeText desc : descriptions.getDescriptionList())
                     {
@@ -108,8 +107,8 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                         if ((strLanguage == null) || (strLanguage.length() == 0))
                             strLanguage = NONE;
                         if (properties == null)
-                            properties = new Properties();
-                        properties.setProperty(strLanguage, strValue);
+                            properties = new HashMap<String,Object>();
+                        properties.put(strLanguage, strValue);
                     }
                 
                 recOTACodeTable.addNew();
@@ -147,11 +146,11 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                         if ((strLanguage == null) || (strLanguage.length() == 0))
                             strLanguage = NONE;
                         if (properties == null)
-                            properties = new Properties();
+                            properties = new HashMap<String,Object>();
                         if ((strName3 != null) && (strName3.length() > 0))
-                            properties.setProperty(strLanguage, strName3);
+                            properties.put(strLanguage, strName3);
                         if ((strValue3 != null) && (strValue3.length() > 0))
-                            properties.setProperty(strLanguage + VALUE_PARAM, strValue3);                        
+                            properties.put(strLanguage + VALUE_PARAM, strValue3);                        
                     }
                 
                     recOTACodes.addNew();

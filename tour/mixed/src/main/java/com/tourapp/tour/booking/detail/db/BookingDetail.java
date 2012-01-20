@@ -252,9 +252,9 @@ public class BookingDetail extends BookingSub
     /**
      * MakeScreen Method.
      */
-    public BaseScreen makeScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
+    public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
-        BaseScreen screen = null;
+        ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
         {
             Object objObjectID = null;
@@ -278,16 +278,16 @@ public class BookingDetail extends BookingSub
             Record record = this.getTable().getCurrentTable().getRecord();
             if (record != null)
                 if (record != this) // Record should be the concrete class
-                    return record.makeScreen(itsLocation, parentScreen, iDocMode, properties);
+                    return record.makeScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, iDocMode, properties);
             if (objObjectID != null)
                 parentScreen.setProperty(DBConstants.STRING_OBJECT_ID_HANDLE, objObjectID.toString());
             if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.HOTEL_ID)
-                screen = new BookingHotelScreen(null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                screen = new BookingHotelScreen(null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
             else //if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.LAND_ID)
-                screen = new BookingLandScreen(null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                screen = new BookingLandScreen(null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         }
         else //if ((iDocMode & ScreenConstants.DISPLAY_MODE) != 0)
-            screen = new BookingDetailGridScreen(this, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = new BookingDetailGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         return screen;
     }
     /**

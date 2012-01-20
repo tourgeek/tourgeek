@@ -135,7 +135,7 @@ public class ProfileDetailBaseGridScreen extends DetailGridScreen
             if ("Detail Passenger Detail".equalsIgnoreCase(strCommand))
                 screen = new ProfileDetailGridScreen(recHeader, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
             if ("Detail Request History".equalsIgnoreCase(strCommand))
-                screen = BaseScreen.makeNewScreen(ProfileModel.REQUEST_HISTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, recHeader, true);
+                screen = (BaseScreen)Record.makeNewScreen(ProfileModel.REQUEST_HISTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, recHeader, true);
             if ("Detail Electronic Addresses".equalsIgnoreCase(strCommand))
                 screen = new ElectronicAddressGridScreen(recHeader, null, itsLocation, parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
             if ("Detail Extensions".equalsIgnoreCase(strCommand))
