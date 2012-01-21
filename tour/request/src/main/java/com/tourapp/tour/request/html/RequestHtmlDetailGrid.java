@@ -106,7 +106,7 @@ public class RequestHtmlDetailGrid extends GridScreen
      */
     public ScreenFieldView setupScreenFieldView(boolean bEditableControl)
     {
-        if (TopScreen.HTML_TYPE.equalsIgnoreCase(this.getViewFactory().getViewSubpackage()))
+        if (ScreenModel.HTML_TYPE.equalsIgnoreCase(this.getViewFactory().getViewSubpackage()))
             return new HRequestHtmlDetailGrid(this, bEditableControl);
         else
             return null;    // Not supported!

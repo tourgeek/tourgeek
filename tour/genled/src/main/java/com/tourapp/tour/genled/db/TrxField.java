@@ -73,7 +73,7 @@ public class TrxField extends ReferenceField
             ReadSecondaryHandler behavior = new ReadSecondaryHandler(record, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false);
             this.addListener(behavior);
             BaseField conv = record.getField(Trx.kTrxStatusID);
-            conv.setupDefaultView((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC);
+            conv.setupDefaultView((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
             conv.setEnabled(false);
         }
         return screenField;

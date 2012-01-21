@@ -6,7 +6,7 @@ package com.tourapp.tour.util.script.importdata;
 
 import java.awt.*;
 import java.util.*;
- 
+
 import org.jbundle.base.db.*;
 import org.jbundle.thin.base.util.*;
 import org.jbundle.thin.base.db.*;
@@ -30,6 +30,7 @@ import javax.xml.datatype.*;
 import org.jibx.schema.org.opentravel._2010B.base.*;
 import org.jibx.runtime.*;
 import org.joda.time.*;
+
 /**
  *  ImportOTACodeTablesProcess - .
  */

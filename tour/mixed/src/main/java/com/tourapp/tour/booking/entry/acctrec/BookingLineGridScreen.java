@@ -116,7 +116,7 @@ public class BookingLineGridScreen extends BookingSubGridScreen
         
         ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
         BaseField converter = null;
-        ScreenField sField = null;
+        ScreenComponent sField = null;
         
         converter = this.getRecord(Booking.kBookingFile).getField(Booking.kGross);
         sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
