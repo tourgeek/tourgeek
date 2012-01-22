@@ -7,7 +7,7 @@ import java.util.Dictionary;
 
 import javax.servlet.Servlet;
 
-import org.jbundle.base.util.DBConstants;
+import org.jbundle.base.model.DBConstants;
 import org.jbundle.base.util.EnvironmentActivator;
 import org.jbundle.base.util.Utility;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;

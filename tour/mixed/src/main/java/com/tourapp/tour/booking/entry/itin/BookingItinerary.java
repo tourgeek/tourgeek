@@ -17,6 +17,7 @@ import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
@@ -194,7 +195,7 @@ public class BookingItinerary extends BookingSubScreen
         // NOTE NOTE NOTE. fieldConverter is only used to create the control, since the actual text is created from reading the URL
         BaseField fieldConverter = this.getRecord(BookingItineraryScreenRecord.kBookingItineraryScreenRecordFile).getField(BookingItineraryScreenRecord.kItineraryText);
         m_sHtmlView = new SHtmlView(itsLocation, this, fieldConverter, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
-        org.jbundle.base.screen.view.ScreenFieldView sView = m_sHtmlView.getScreenFieldView();
+        ScreenFieldView sView = m_sHtmlView.getScreenFieldView();
         if (sView instanceof org.jbundle.base.screen.view.swing.VScreenField)
         {   // Swing - get rid of scrollers and make transparent and get rid of the border.
             javax.swing.JEditorPane htmlPane = (javax.swing.JEditorPane)sView.getControl();
@@ -267,7 +268,7 @@ public class BookingItinerary extends BookingSubScreen
         
             String strURL = this.getDisplayURL(strBookingID, null, strTemplate, null, null, null);
             
-            org.jbundle.base.screen.view.ScreenFieldView sView = m_sHtmlView.getScreenFieldView();
+            ScreenFieldView sView = m_sHtmlView.getScreenFieldView();
             if (sView instanceof org.jbundle.base.screen.view.swing.VScreenField)
             {   // Swing - Display new link
                 org.jbundle.base.screen.view.swing.VHtmlView sHtml = (org.jbundle.base.screen.view.swing.VHtmlView)sView;
