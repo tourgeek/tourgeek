@@ -87,7 +87,7 @@ public class PaymentHistoryDistGridScreen extends BaseTrxDistGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new PaymentHistoryHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new PaymentHistoryHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

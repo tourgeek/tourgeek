@@ -116,7 +116,7 @@ public class BankTrxBatchDistGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new BankTrxBatchDetailHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BankTrxBatchDetailHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

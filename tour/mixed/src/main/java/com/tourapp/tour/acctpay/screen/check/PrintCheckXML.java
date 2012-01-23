@@ -133,7 +133,7 @@ public class PrintCheckXML extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new PrintCheckXMLToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new PrintCheckXMLToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Add button(s) to the toolbar.

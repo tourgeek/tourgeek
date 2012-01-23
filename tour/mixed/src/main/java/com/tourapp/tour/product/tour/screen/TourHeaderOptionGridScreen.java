@@ -192,9 +192,9 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
     public BasePanel makeSubScreen()
     {
         if (this.getHeaderRecord() instanceof TourHeader)
-            return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         else
-            return new TourHeaderOptionHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new TourHeaderOptionHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Create a data entry screen of this type.

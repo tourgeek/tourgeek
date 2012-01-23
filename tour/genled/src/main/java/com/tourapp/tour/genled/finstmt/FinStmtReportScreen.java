@@ -132,7 +132,7 @@ public class FinStmtReportScreen extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new FinStmtToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new FinStmtToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the Heading for this report.

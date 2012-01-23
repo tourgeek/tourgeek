@@ -213,7 +213,7 @@ public class BookingHeaderScreen extends Screen
      */
     public ToolScreen addHeaderToolbars(BasePanel screen)
     {
-        ToolScreen toolbar = new EmptyToolbar(null, screen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolbar = new EmptyToolbar(null, screen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         
         ResourceBundle resources = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
         

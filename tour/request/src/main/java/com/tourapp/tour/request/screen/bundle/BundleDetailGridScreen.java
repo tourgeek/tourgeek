@@ -124,7 +124,7 @@ public class BundleDetailGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new BundleHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BundleHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

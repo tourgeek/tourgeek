@@ -93,7 +93,7 @@ public class BankTrxDistGridScreen extends BaseTrxDistGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new BankTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BankTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

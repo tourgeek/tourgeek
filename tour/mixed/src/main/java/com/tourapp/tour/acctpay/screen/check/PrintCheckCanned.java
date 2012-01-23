@@ -133,7 +133,7 @@ public class PrintCheckCanned extends CheckPrintScreen
      */
     public ToolScreen addToolbars()
     {
-        return new PrintCheckToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new PrintCheckToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Add button(s) to the toolbar.

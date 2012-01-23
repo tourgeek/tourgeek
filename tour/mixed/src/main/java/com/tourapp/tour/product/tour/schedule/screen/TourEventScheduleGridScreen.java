@@ -133,7 +133,7 @@ public class TourEventScheduleGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new TourClassHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TourClassHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Process the command.

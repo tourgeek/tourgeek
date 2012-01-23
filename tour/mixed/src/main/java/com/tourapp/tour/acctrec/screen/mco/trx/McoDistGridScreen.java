@@ -79,7 +79,7 @@ public class McoDistGridScreen extends BaseTrxDistGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new McoHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new McoHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

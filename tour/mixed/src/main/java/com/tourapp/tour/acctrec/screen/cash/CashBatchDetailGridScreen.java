@@ -144,7 +144,7 @@ public class CashBatchDetailGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new CashBatchHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CashBatchHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

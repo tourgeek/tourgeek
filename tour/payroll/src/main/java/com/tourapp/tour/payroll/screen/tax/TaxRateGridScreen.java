@@ -107,7 +107,7 @@ public class TaxRateGridScreen extends GridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new TaxRateHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TaxRateHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

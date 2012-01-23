@@ -210,7 +210,7 @@ public class OperationsBookingDetailGridScreen extends GridScreen
      */
     public ToolScreen addToolbars()
     {
-        ToolScreen toolScreen = new EmptyToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolScreen = new EmptyToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         toolScreen.setupStartSFields();     // Back button
         toolScreen.setupDisplaySFields();
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, "Booking entry", Booking.BUTTON_LOCATION + "Booking", "Booking entry", null);

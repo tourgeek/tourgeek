@@ -149,11 +149,11 @@ public class ArTrxLinkTrxGridScreen extends LinkTrxGridScreen
     public BasePanel makeSubScreen()
     {
         if (this.getHeaderRecord() instanceof CreditCard)
-            return new CreditCardHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new CreditCardHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         else if (this.getHeaderRecord() instanceof Mco)
-            return new McoHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new McoHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         else
-            return new BankTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new BankTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

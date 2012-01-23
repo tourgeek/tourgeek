@@ -123,7 +123,7 @@ public class CurrencyReqGridScreen extends GridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new CurrencyReqHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CurrencyReqHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

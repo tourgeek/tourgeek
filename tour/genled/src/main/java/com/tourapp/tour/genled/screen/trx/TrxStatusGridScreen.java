@@ -142,7 +142,7 @@ public class TrxStatusGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new TrxDescStatusHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TrxDescStatusHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

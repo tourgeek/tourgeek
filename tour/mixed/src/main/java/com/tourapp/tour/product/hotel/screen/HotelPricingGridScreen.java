@@ -145,7 +145,7 @@ public class HotelPricingGridScreen extends ProductPricingGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new HotelHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new HotelHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

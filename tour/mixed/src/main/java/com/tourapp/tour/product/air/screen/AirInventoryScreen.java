@@ -98,7 +98,7 @@ public class AirInventoryScreen extends ProductInventoryScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new FlightHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new FlightHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

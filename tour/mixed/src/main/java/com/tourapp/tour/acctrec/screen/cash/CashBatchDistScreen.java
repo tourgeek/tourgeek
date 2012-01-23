@@ -119,7 +119,7 @@ public class CashBatchDistScreen extends Screen
      */
     public BasePanel makeSubScreen()
     {
-        return new CashBatchDetailHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CashBatchDetailHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Set up all the screen fields.

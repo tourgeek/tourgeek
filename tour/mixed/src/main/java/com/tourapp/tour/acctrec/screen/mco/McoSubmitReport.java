@@ -120,7 +120,7 @@ public class McoSubmitReport extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new McoSubmitToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new McoSubmitToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the Heading for this report.

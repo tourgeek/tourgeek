@@ -189,7 +189,7 @@ public class PaymentRequestScreen extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new PaymentRequestHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new PaymentRequestHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

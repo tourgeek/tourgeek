@@ -98,7 +98,7 @@ public class ItemInventoryScreen extends ProductInventoryScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ItemHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ItemHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

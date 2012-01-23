@@ -86,7 +86,7 @@ public class CreditCardDistGridScreen extends BaseTrxDistGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new CreditCardHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CreditCardHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

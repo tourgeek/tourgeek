@@ -141,7 +141,7 @@ public class InventoryDetailScreen extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new InventoryHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new InventoryHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Process the command.

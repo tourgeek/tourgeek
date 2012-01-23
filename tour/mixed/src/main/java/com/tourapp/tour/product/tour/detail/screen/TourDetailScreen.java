@@ -156,7 +156,7 @@ public class TourDetailScreen extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new TourHeaderOptionHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TourHeaderOptionHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

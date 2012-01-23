@@ -166,9 +166,9 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
     public BasePanel makeSubScreen()
     {
         if (this.getHeaderRecord() instanceof TourHeader)
-            return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         else
-            return new TourHeaderOptionHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new TourHeaderOptionHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Set up all the screen fields.

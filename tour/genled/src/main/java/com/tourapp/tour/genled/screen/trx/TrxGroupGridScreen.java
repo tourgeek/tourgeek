@@ -127,7 +127,7 @@ public class TrxGroupGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new TrxDescHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TrxDescHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

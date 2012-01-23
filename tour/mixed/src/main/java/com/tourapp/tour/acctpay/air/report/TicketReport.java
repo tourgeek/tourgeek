@@ -126,7 +126,7 @@ public class TicketReport extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new TicketToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TicketToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

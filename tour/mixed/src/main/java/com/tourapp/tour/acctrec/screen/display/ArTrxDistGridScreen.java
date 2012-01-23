@@ -86,7 +86,7 @@ public class ArTrxDistGridScreen extends BaseTrxDistGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ArTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ArTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

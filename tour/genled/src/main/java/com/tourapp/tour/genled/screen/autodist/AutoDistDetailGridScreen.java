@@ -111,7 +111,7 @@ public class AutoDistDetailGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new AutoDistHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AutoDistHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

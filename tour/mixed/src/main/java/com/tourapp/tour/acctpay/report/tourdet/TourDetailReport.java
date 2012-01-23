@@ -133,7 +133,7 @@ public class TourDetailReport extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new TourDetailToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TourDetailToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

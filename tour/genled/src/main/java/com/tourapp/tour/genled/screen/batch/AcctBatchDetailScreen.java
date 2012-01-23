@@ -146,7 +146,7 @@ public class AcctBatchDetailScreen extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new AcctBatchHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AcctBatchHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

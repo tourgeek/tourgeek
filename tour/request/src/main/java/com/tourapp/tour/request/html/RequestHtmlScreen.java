@@ -132,7 +132,7 @@ public class RequestHtmlScreen extends Screen
      */
     public ToolScreen addToolbars()
     {
-        return new ToolScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ToolScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Add button(s) to the toolbar.

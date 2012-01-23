@@ -126,7 +126,7 @@ public class BookingDetailGridScreen extends BookingSubGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return null; //+return new BookingCostingScreen(null, null, null, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return null; //+return new BookingCostingScreen(null, null, null, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

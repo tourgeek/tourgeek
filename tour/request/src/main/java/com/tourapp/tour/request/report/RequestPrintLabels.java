@@ -123,7 +123,7 @@ public class RequestPrintLabels extends CustomReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new RequestLabelsToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new RequestLabelsToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

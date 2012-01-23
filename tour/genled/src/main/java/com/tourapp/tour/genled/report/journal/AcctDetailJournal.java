@@ -109,7 +109,7 @@ public class AcctDetailJournal extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new AcctDetailJournalToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AcctDetailJournalToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the footing for this report.

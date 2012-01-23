@@ -173,7 +173,7 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
     {
         ToolScreen toolbar = super.addToolbars();
         /*
-        ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
         
         Converter converter = null;

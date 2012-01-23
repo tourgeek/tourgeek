@@ -168,7 +168,7 @@ public class AcctDetailGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new AccountHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AccountHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

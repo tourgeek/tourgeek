@@ -88,7 +88,7 @@ public class AssetDepreciationScreen extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new AssetHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AssetHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

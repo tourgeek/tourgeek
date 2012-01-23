@@ -139,7 +139,7 @@ public class CheckRegister extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new CheckRegisterToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CheckRegisterToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the Heading for this report.

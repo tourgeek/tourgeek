@@ -109,7 +109,7 @@ public class OverrideReport extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new OverrideToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new OverrideToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

@@ -110,7 +110,7 @@ public class LandInventoryScreen extends ProductInventoryScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new LandHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new LandHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

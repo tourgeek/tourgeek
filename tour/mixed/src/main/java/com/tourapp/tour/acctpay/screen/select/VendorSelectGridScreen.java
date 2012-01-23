@@ -147,7 +147,7 @@ public class VendorSelectGridScreen extends VendorApTrxGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new VendorSelectHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new VendorSelectHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

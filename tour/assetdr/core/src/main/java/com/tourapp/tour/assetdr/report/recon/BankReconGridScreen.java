@@ -193,7 +193,7 @@ public class BankReconGridScreen extends GridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new BankReconHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BankReconHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

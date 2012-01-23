@@ -179,7 +179,7 @@ public class PrepaymentCutoffReport extends ApBaseCutoffReport
      */
     public ToolScreen addToolbars()
     {
-        return new PrepaymentCutoffToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new PrepaymentCutoffToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

@@ -120,7 +120,7 @@ public class TransportationPricingScreen extends ProductPricingScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new TransportationHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TransportationHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

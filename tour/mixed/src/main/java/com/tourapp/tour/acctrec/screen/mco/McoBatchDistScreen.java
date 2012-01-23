@@ -119,7 +119,7 @@ public class McoBatchDistScreen extends Screen
      */
     public BasePanel makeSubScreen()
     {
-        return new BaseArPayDistHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BaseArPayDistHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Set up all the screen fields.

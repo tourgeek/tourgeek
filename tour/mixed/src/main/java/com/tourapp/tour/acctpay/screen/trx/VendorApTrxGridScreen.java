@@ -273,7 +273,7 @@ public class VendorApTrxGridScreen extends DetailGridScreen
     {
         if (this.isContactDisplay())
             return null;
-        return new VendorHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new VendorHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

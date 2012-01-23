@@ -116,7 +116,7 @@ public class TrialBalance extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new TrialBalanceToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TrialBalanceToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the Heading for this report.

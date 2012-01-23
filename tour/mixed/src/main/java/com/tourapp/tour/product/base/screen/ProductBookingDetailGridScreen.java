@@ -157,7 +157,7 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the command string to restore screen.

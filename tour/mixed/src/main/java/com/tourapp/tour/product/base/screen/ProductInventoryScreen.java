@@ -162,7 +162,7 @@ public class ProductInventoryScreen extends ProductDetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

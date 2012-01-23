@@ -129,9 +129,9 @@ public class PaymentHistoryLinkTrxGridScreen extends LinkTrxGridScreen
     public BasePanel makeSubScreen()
     {
         if (this.getHeaderRecord() instanceof ApTrx)
-            return new ApTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new ApTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         else
-            return new BankTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+            return new BankTrxHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Process the command.

@@ -71,7 +71,7 @@ public class Worksheet extends TrialBalance
      */
     public ToolScreen addToolbars()
     {
-        return new WorksheetToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new WorksheetToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

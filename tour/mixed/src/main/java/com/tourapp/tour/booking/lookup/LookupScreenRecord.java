@@ -176,7 +176,7 @@ public class LookupScreenRecord extends ScreenRecord
      */
     public ToolScreen addStandardToolbar(BasePanel parentScreen)
     {
-        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         toolScreen.setupStartSFields();     // Back button
         toolScreen.setupDisplaySFields();
         //x new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, "Booking entry", Booking.BUTTON_LOCATION + "Booking", "Booking entry", null);
@@ -191,7 +191,7 @@ public class LookupScreenRecord extends ScreenRecord
      */
     public ToolScreen addBookingToolbar(BasePanel parentScreen)
     {
-        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         this.getField(LookupScreenRecord.kStartBkDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         this.getField(LookupScreenRecord.kCurrentAgent).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         this.getField(LookupScreenRecord.kTourHdrEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
@@ -204,7 +204,7 @@ public class LookupScreenRecord extends ScreenRecord
      */
     public ToolScreen addTourToolbar(BasePanel parentScreen)
     {
-        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         this.getField(LookupScreenRecord.kTourHdrEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         this.getField(LookupScreenRecord.kTourHdrTourType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         
@@ -224,7 +224,7 @@ public class LookupScreenRecord extends ScreenRecord
      */
     public ToolScreen addTourHdrToolbar(BasePanel parentScreen)
     {
-        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         this.getField(LookupScreenRecord.kTourHdrBrochureID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         this.getField(LookupScreenRecord.kTourHdrAirlineCode).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         this.getField(LookupScreenRecord.kTourHdrTourType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);

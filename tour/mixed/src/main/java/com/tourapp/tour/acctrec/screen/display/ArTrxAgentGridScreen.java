@@ -160,7 +160,7 @@ public class ArTrxAgentGridScreen extends GridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ArTrxAgentHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ArTrxAgentHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

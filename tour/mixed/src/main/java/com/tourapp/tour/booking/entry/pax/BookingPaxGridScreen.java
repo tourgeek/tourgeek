@@ -107,7 +107,7 @@ public class BookingPaxGridScreen extends BookingSubGridScreen
     {
         ToolScreen toolbar = super.addToolbars();
         
-        ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.kBookingPaxFile);
         recBookingPax.addToolbarFields(toolbar2, this.getRecord(Booking.kBookingFile));
         

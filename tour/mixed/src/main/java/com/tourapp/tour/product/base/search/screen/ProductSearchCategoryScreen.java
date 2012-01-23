@@ -104,7 +104,7 @@ public class ProductSearchCategoryScreen extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ProductSearchTypeHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ProductSearchTypeHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

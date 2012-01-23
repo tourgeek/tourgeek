@@ -115,7 +115,7 @@ public class ProductInventoryRangeAdjust extends DetailScreen
      */
     public ToolScreen addToolbars()
     {
-        return new MenuToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new MenuToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Set up all the screen fields.
@@ -222,7 +222,7 @@ public class ProductInventoryRangeAdjust extends DetailScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ProductHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

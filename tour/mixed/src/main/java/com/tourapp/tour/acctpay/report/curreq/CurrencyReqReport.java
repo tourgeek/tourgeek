@@ -119,7 +119,7 @@ public class CurrencyReqReport extends AnalysisScreen
      */
     public ToolScreen addToolbars()
     {
-        return new CurrencyReqToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CurrencyReqToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the Heading for this report.

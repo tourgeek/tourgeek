@@ -142,7 +142,7 @@ public class AcctDetailDistGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new AcctDetailHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AcctDetailHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Process the command.

@@ -129,7 +129,7 @@ public class CashPlanReport extends AnalysisScreen
      */
     public ToolScreen addToolbars()
     {
-        return new CashPlanToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CashPlanToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

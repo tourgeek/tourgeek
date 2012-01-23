@@ -88,7 +88,7 @@ public class OTACodesGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new OTACodeTableHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new OTACodeTableHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

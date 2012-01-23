@@ -129,7 +129,7 @@ public class TourCostAnalysis extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new TourCostAnalysisToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new TourCostAnalysisToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

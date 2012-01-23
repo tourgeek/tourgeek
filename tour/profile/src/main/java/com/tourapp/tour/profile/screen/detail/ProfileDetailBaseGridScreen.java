@@ -109,7 +109,7 @@ public class ProfileDetailBaseGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new ProfileHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ProfileHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Process the command.

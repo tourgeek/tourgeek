@@ -98,7 +98,7 @@ public class CruiseInventoryScreen extends ProductInventoryScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new CruiseHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new CruiseHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

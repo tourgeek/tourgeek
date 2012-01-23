@@ -195,7 +195,7 @@ public class BrokerDistGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new BrokerHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BrokerHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Process the command.

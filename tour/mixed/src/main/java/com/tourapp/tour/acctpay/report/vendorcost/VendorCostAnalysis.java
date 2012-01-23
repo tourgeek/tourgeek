@@ -132,7 +132,7 @@ public class VendorCostAnalysis extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new VendorCostAnalysisToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new VendorCostAnalysisToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

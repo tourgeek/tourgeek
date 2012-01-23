@@ -186,7 +186,7 @@ public class ApCutoffReport extends ApBaseCutoffReport
      */
     public ToolScreen addToolbars()
     {
-        return new ApCutoffToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new ApCutoffToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

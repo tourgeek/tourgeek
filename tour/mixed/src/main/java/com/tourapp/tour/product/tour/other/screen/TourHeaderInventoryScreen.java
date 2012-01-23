@@ -98,7 +98,7 @@ public class TourHeaderInventoryScreen extends ProductInventoryScreen
      */
     public BasePanel makeSubScreen()
     {
-        return super.makeSubScreen(); //?new LandHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return super.makeSubScreen(); //?new LandHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

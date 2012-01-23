@@ -158,7 +158,7 @@ public class Ten99Report extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new Ten99Toolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new Ten99Toolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * SetupSFields Method.

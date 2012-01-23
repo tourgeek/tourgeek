@@ -141,7 +141,7 @@ public class BookingAgencyScreen extends BookingSubScreen
      */
     public ToolScreen addToolbars()
     {
-        ToolScreen toolbar = new EmptyToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        ToolScreen toolbar = new EmptyToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         toolbar.setupStartSFields();   // Back button
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GAP, ScreenConstants.SET_ANCHOR), toolbar, null, ScreenConstants.DEFAULT_DISPLAY, MenuConstants.LOOKUP);
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GAP, ScreenConstants.SET_ANCHOR), toolbar, null, ScreenConstants.DEFAULT_DISPLAY, MenuConstants.FORM);

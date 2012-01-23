@@ -188,7 +188,7 @@ public class BankTrxGridScreen extends DetailGridScreen
      */
     public BasePanel makeSubScreen()
     {
-        return new BankAcctHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new BankAcctHeaderScreen(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
 
 }

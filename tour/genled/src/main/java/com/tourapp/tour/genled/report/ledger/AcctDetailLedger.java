@@ -152,7 +152,7 @@ public class AcctDetailLedger extends ReportScreen
      */
     public ToolScreen addToolbars()
     {
-        return new AcctDetailLedgerToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        return new AcctDetailLedgerToolbar(null, this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
     }
     /**
      * Get the Heading for this report.
