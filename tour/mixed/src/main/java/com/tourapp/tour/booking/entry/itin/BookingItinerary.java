@@ -194,7 +194,7 @@ public class BookingItinerary extends BookingSubScreen
         itsLocation = this.getNextLocation(ScreenConstants.FLUSH_LEFT, ScreenConstants.FILL_REMAINDER);
         // NOTE NOTE NOTE. fieldConverter is only used to create the control, since the actual text is created from reading the URL
         BaseField fieldConverter = this.getRecord(BookingItineraryScreenRecord.kBookingItineraryScreenRecordFile).getField(BookingItineraryScreenRecord.kItineraryText);
-        m_sHtmlView = new SHtmlView(itsLocation, this, fieldConverter, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        m_sHtmlView = new SHtmlView(itsLocation, this, fieldConverter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         ScreenFieldView sView = m_sHtmlView.getScreenFieldView();
         if (sView instanceof org.jbundle.base.screen.view.swing.VScreenField)
         {   // Swing - get rid of scrollers and make transparent and get rid of the border.

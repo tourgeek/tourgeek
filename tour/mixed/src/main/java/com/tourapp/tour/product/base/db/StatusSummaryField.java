@@ -99,7 +99,7 @@ public class StatusSummaryField extends IntegerField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         //?ScreenComponent blink = createScreenComponent("org.jbundle.base.screen.model.opt.SBlinkImageView", itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
-        org.jbundle.base.screen.model.opt.SBlinkImageView blink = new org.jbundle.base.screen.model.opt.SBlinkImageView((ScreenLocation)itsLocation, (BasePanel)targetScreen, (Converter)converter, iDisplayFieldDesc)
+        org.jbundle.base.screen.model.opt.SBlinkImageView blink = new org.jbundle.base.screen.model.opt.SBlinkImageView((ScreenLocation)itsLocation, (BasePanel)targetScreen, (Converter)converter, iDisplayFieldDesc, null)
         {
             public void setEnabled(boolean bEnable)
             {
