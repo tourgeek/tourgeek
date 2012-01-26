@@ -275,7 +275,7 @@ public class BookingAnswer extends BookingSub
      fldAskForAnswer, boolean bSelect)
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
-        TourHeaderOption recTourHeaderOption = new TourHeaderOption(Utility.getRecordOwner(this));
+        TourHeaderOption recTourHeaderOption = new TourHeaderOption(this.findRecordOwner());
         try   {
             recTourHeaderOption.setKeyArea(TourHeaderOption.kTourOrOptionKey);
             recTourHeaderOption.addListener(new StringSubFileFilter(strTourOrOption, TourHeaderOption.kTourOrOption, fldTourOrOptionID.getData().toString(), TourHeaderOption.kTourOrOptionID, null, -1));
@@ -376,9 +376,9 @@ public class BookingAnswer extends BookingSub
         {
             if (m_recBookingAirHeader == null)
             {
-                m_recBookingAirHeader = new BookingAirHeader(Utility.getRecordOwner(this));
+                m_recBookingAirHeader = new BookingAirHeader(this.findRecordOwner());
                 m_recBookingAirHeader.addDetailBehaviors(recBooking, recTour);
-                m_recTourHeaderAirHeader = new TourHeaderAirHeader(Utility.getRecordOwner(this));
+                m_recTourHeaderAirHeader = new TourHeaderAirHeader(this.findRecordOwner());
             }
             iErrorCode = m_recBookingAirHeader.setupAllDetail(m_recTourHeaderAirHeader, recBooking, recTour, recBookingPax.getField(BookingPax.kID), this.getField(BookingAnswer.kTourHeaderOptionID), fldTourModuleID, dateStart);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
@@ -391,9 +391,9 @@ public class BookingAnswer extends BookingSub
             {       // Use the option pricing (otherwise, I use the component pricing or markup the cost for a price)
                 if (m_recBookingLine == null)
                 {
-                    m_recBookingLine = new BookingLine(Utility.getRecordOwner(this));
+                    m_recBookingLine = new BookingLine(this.findRecordOwner());
                     m_recBookingLine.addDetailBehaviors(recBooking, recTour);
-                    m_recTourHeaderPricing = new TourHeaderLine(Utility.getRecordOwner(this));
+                    m_recTourHeaderPricing = new TourHeaderLine(this.findRecordOwner());
                 }
                 iErrorCode = m_recBookingLine.setupAllDetail(m_recTourHeaderPricing, recBooking, recTour, recBookingPax.getField(BookingPax.kID), this.getField(BookingAnswer.kTourHeaderOptionID), fldTourModuleID, dateStart);
                 if (iErrorCode != DBConstants.NORMAL_RETURN)
@@ -404,9 +404,9 @@ public class BookingAnswer extends BookingSub
         {
             if (m_recBookingDetail == null)
             {
-                m_recBookingDetail = new BookingDetail(Utility.getRecordOwner(this));
+                m_recBookingDetail = new BookingDetail(this.findRecordOwner());
                 m_recBookingDetail.addDetailBehaviors(recBooking, recTour);
-                m_recTourHeaderDetail = new TourHeaderDetail(Utility.getRecordOwner(this));
+                m_recTourHeaderDetail = new TourHeaderDetail(this.findRecordOwner());
             }
             iErrorCode = m_recBookingDetail.setupAllDetail(m_recTourHeaderDetail, recBooking, recTour, recBookingPax.getField(BookingPax.kID), this.getField(BookingAnswer.kTourHeaderOptionID), fldTourModuleID, dateStart);
             if (iErrorCode != DBConstants.NORMAL_RETURN)

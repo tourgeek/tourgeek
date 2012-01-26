@@ -88,7 +88,7 @@ public class AddNewMcoDistHandler extends AddNewCashDistHandler
                         try {
                             if (m_recBankTrxBatchDist == null)
                             {
-                                RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+                                RecordOwner recordOwner = this.getOwner().findRecordOwner();
                                 m_recBankTrxBatchDist = new McoBatchDist(recordOwner);
                                 if (recordOwner != null)
                                     recordOwner.removeRecord(m_recBankTrxBatchDist);

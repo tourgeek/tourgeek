@@ -205,14 +205,14 @@ public class AddFinStmtDetailTotals extends FileListener
      */
     public Record getRecord(String strRecordName)
     {
-        return this.getOwner().getRecordOwner().getRecord(strRecordName);
+        return (Record)this.getOwner().getRecordOwner().getRecord(strRecordName);
     }
     /**
      * A convience method to get the screenrecord.
      */
     public Record getScreenRecord()
     {
-        return this.getOwner().getRecordOwner().getScreenRecord();
+        return (Record)this.getOwner().getRecordOwner().getScreenRecord();
     }
 
 }

@@ -122,7 +122,7 @@ public class Trx extends VirtualRecord
      */
     public void checkFiles()
     {
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         if (m_recAcctDetail == null)
         {
             m_recAcctDetail = new AcctDetail(recordOwner);
@@ -179,7 +179,7 @@ public class Trx extends VirtualRecord
     {
         if (m_recAcctDetailDistSearch == null)
         {
-            m_recAcctDetailDistSearch = new AcctDetailDist(Utility.getRecordOwner(this));
+            m_recAcctDetailDistSearch = new AcctDetailDist(this.findRecordOwner());
             if (m_recAcctDetailDistSearch.getRecordOwner() != null)
                 m_recAcctDetailDistSearch.getRecordOwner().removeRecord(m_recAcctDetailDistSearch);
         }
@@ -209,7 +209,7 @@ public class Trx extends VirtualRecord
     {
         if (m_recTransactionType == null)
         {
-            m_recTransactionType = new TransactionType(Utility.getRecordOwner(this));
+            m_recTransactionType = new TransactionType(this.findRecordOwner());
             if (m_recTransactionType.getRecordOwner() != null)
                 m_recTransactionType.getRecordOwner().removeRecord(m_recTransactionType);
         }
@@ -294,7 +294,7 @@ public class Trx extends VirtualRecord
             return -1;  // Never
         if (m_recTransactionType == null)
         {
-            m_recTransactionType = new TransactionType(Utility.getRecordOwner(this));
+            m_recTransactionType = new TransactionType(this.findRecordOwner());
             if (m_recTransactionType.getRecordOwner() != null)
                 m_recTransactionType.getRecordOwner().removeRecord(m_recTransactionType);
         }

@@ -804,7 +804,7 @@ public class BookingHotel extends BookingDetail
         if (recMealPlan != null)
             recMealPlanLocal = (MealPlan)recMealPlan;
         else
-            recMealPlanLocal = new MealPlan(Utility.getRecordOwner(this));
+            recMealPlanLocal = new MealPlan(this.findRecordOwner());
         String strMealDesc = Constants.BLANK;
         Date startDate = this.getStartDate();
         calendar.setTime(startDate);

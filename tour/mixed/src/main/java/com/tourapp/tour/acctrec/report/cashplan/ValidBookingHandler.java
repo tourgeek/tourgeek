@@ -69,7 +69,7 @@ public class ValidBookingHandler extends FileListener
     {
         if (m_iAcceptedType == 0)
         {
-            BookingStatus recBookingStatus = new BookingStatus(Utility.getRecordOwner(this.getOwner()));
+            BookingStatus recBookingStatus = new BookingStatus(this.getOwner().findRecordOwner());
             recBookingStatus.setKeyArea(BookingStatus.kCodeKey);
             recBookingStatus.getField(BookingStatus.kCode).setString(BookingStatus.OKAY_CODE);
             m_iAcceptedType = -1; // In case not found

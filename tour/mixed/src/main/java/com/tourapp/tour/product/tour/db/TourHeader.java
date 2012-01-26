@@ -347,7 +347,7 @@ public class TourHeader extends Product
         
         if (m_recTourHeaderPricing == null)
         {
-            m_recTourHeaderPricing = new TourHeaderLine(Utility.getRecordOwner(this));
+            m_recTourHeaderPricing = new TourHeaderLine(this.findRecordOwner());
             if (m_recTourHeaderPricing.getRecordOwner() != null)
                 m_recTourHeaderPricing.getRecordOwner().removeRecord(m_recTourHeaderPricing);
         }
@@ -447,7 +447,7 @@ public class TourHeader extends Product
                 Date date = (Date)productMessage.get(BookingDetail.DETAIL_DATE);
                 if (date != null)
                 {   // Departure date change.
-                    TourClass recTourClass = (TourClass)((ReferenceField)this.getField(TourHeader.kTourClassID)).getReferenceRecord(Utility.getRecordOwner(this));
+                    TourClass recTourClass = (TourClass)((ReferenceField)this.getField(TourHeader.kTourClassID)).getReferenceRecord(this.findRecordOwner());
                     BaseField fldTourCode = this.getField(TourHeader.kCode);
                     DateField fldDepartureDate = (DateField)recTour.getField(Tour.kDepartureDate);
                     BaseField fldTourDesc = this.getField(TourHeader.kDescription);
@@ -519,9 +519,9 @@ public class TourHeader extends Product
         if (intPax != null)
             iTargetPax = intPax.intValue();
         
-        TourHeaderOption recTourHeaderOption = new TourHeaderOption(Utility.getRecordOwner(this));
-        PaxCategory recPaxCategory = new PaxCategory(Utility.getRecordOwner(this));
-        TourHeaderLine recTourHeaderPricing = new TourHeaderLine(Utility.getRecordOwner(this));
+        TourHeaderOption recTourHeaderOption = new TourHeaderOption(this.findRecordOwner());
+        PaxCategory recPaxCategory = new PaxCategory(this.findRecordOwner());
+        TourHeaderLine recTourHeaderPricing = new TourHeaderLine(this.findRecordOwner());
         try {
             recTourHeaderOption.setKeyArea(TourHeaderOption.kTourOrOptionKey);
             recTourHeaderOption.addListener(new StringSubFileFilter(strTourOrOption, TourHeaderOption.kTourOrOption, fldTourOrOptionID.getData().toString(), TourHeaderOption.kTourOrOptionID, null, -1));

@@ -103,7 +103,7 @@ public class AddNewDistHandler extends FileListener
                         try {
                             if (m_recBankTrxBatchDist == null)
                             {
-                               RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+                               RecordOwner recordOwner = this.getOwner().findRecordOwner();
                                m_recBankTrxBatchDist = new BankTrxBatchDist(recordOwner);
                                 if (recordOwner != null)
                                     recordOwner.removeRecord(m_recBankTrxBatchDist);

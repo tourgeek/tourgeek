@@ -111,7 +111,7 @@ public class ApTrxStatusHandler extends FileListener
                                     if (((ReferenceField)recApTrx.getField(ApTrx.kTourID)).getReference() != null)
                                         strDesc = ((ReferenceField)recApTrx.getField(ApTrx.kTourID)).getReference().getField(Tour.kDescription).toString();
                                     Date dateStartService = ((DateField)recApTrx.getField(ApTrx.kStartServiceDate)).getDateTime();
-                                    recApTrxNew = new ApTrx(Utility.getRecordOwner(this.getOwner()));
+                                    recApTrxNew = new ApTrx(this.getOwner().findRecordOwner());
                                     Object bookmarkPP = null;
                                     if (!recApTrx.getField(ApTrx.kPrepaymentApTrxID).isNull())
                                     {

@@ -29,6 +29,7 @@ import org.jbundle.main.msg.wsdl.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.base.message.trx.message.*;
+import org.jbundle.model.message.*;
 
 /**
  *  VendorGridScreen - Vendors.

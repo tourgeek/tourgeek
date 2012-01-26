@@ -93,7 +93,7 @@ public class ExcludeClosingFilter extends FileFilter
     {
         if (m_recTransactionType == null)
         {
-            m_recTransactionType = new TransactionType(Utility.getRecordOwner(this.getOwner()));
+            m_recTransactionType = new TransactionType(this.getOwner().findRecordOwner());
             if (m_recTransactionType.getRecordOwner() != null)
                 m_recTransactionType.getRecordOwner().removeRecord(m_recTransactionType);
             m_iTypeClosing = m_recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.CLOSINGENTRY, AcctDetail.CLOSINGENTRY);

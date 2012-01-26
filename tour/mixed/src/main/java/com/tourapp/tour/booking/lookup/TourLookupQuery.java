@@ -122,7 +122,7 @@ public class TourLookupQuery extends QueryRecord
         this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Tour.kTourFile), this.getRecord(TourHeader.kTourHeaderFile), Tour.kTourHeaderID, TourHeader.kID);
         TableLink link = new TableLink(this, DBConstants.LEFT_OUTER, this.getRecord(Tour.kTourFile), this.getRecord(Inventory.kInventoryFile));
         this.getRecord(Inventory.kInventoryFile).setKeyArea(Inventory.kInvDateKey);
-        Record recProductType = new ProductType(Utility.getRecordOwner(this));
+        Record recProductType = new ProductType(this.findRecordOwner());
         recProductType.setKeyArea(ProductType.kCodeKey);
         recProductType.getField(ProductType.kCode).setString(ProductType.TOUR_CODE);
         try {

@@ -29,6 +29,7 @@ import org.jbundle.main.msg.wsdl.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.base.message.trx.message.*;
+import org.jbundle.model.message.*;
 
 /**
  *  VendorScreen - Vendors.
@@ -203,7 +204,7 @@ public class VendorScreen extends Screen
             
                 if (m_intRegistryID == null)
                 {
-                    BaseMessageManager messageManager = app.getMessageManager();
+                    MessageManager messageManager = app.getMessageManager();
                     if (messageManager != null)
                     {
                         Object source = this;

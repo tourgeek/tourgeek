@@ -23,6 +23,7 @@ import javax.swing.JMenuBar;
 import javax.swing.KeyStroke;
 
 import org.jbundle.model.Remote;
+import org.jbundle.model.message.MessageManager;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
@@ -31,7 +32,6 @@ import org.jbundle.thin.base.message.BaseMessage;
 import org.jbundle.thin.base.message.BaseMessageFilter;
 import org.jbundle.thin.base.message.BaseMessageHeader;
 import org.jbundle.thin.base.message.BaseMessageListener;
-import org.jbundle.thin.base.message.BaseMessageManager;
 import org.jbundle.thin.base.message.BaseMessageReceiver;
 import org.jbundle.thin.base.message.MessageConstants;
 import org.jbundle.thin.base.message.MessageReceiverFilterList;
@@ -97,7 +97,7 @@ public class JItinScreen extends JBaseScreen
         FieldTable table = recTour.getTable();
         RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable) table).getRemoteTableType(Remote.class);
 
-        BaseMessageManager messageManager = tourAppScreen.getBaseApplet().getApplication().getMessageManager();
+        MessageManager messageManager = tourAppScreen.getBaseApplet().getApplication().getMessageManager();
         BaseMessageReceiver messageReceiver = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
         MessageReceiverFilterList messageFilters = messageReceiver.getMessageFilterList();
         BaseMessageHeader messageHeaderFilter = new BaseMessageHeader(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE, null, null);

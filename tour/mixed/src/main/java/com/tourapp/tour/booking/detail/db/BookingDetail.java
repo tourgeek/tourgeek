@@ -997,7 +997,7 @@ public class BookingDetail extends BookingSub
         if ((recBooking.getRecordOwner() != null)
             && (recBooking.getRecordOwner().getScreenRecord() instanceof BookingScreenRecord))
         {
-            screenRecord = recBooking.getRecordOwner().getScreenRecord();
+            screenRecord = (Record)recBooking.getRecordOwner().getScreenRecord();
             Record recProduct = ((ReferenceField)this.getField(BookingDetail.kProductID)).getReferenceRecord(this.getRecordOwner());
             // Note that I add these listeners in reverse since they always do the other listeners before they do themselves.
             if (recProduct != null)
@@ -1886,7 +1886,7 @@ public class BookingDetail extends BookingSub
                         if ((recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class) == null)
                             || (recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class).isEnabledListener() == true))  // If this is DISABLED, don't change the status (only on initial setup)
                     {
-                        PricingType recPricingType2 = new PricingType(Utility.getRecordOwner(this));
+                        PricingType recPricingType2 = new PricingType(this.findRecordOwner());
                         PricingType recPricingType3 = recPricingType2.getPricingType(PricingType.COMPONENT_COST_PRICING);
                         if (recPricingType3 != null)
                             recBooking.getField(Booking.kTourPricingTypeID).moveFieldToThis(recPricingType3.getField(PricingType.kID));
@@ -2012,7 +2012,7 @@ public class BookingDetail extends BookingSub
         {
             Booking recBooking = this.getBooking(true);
             Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-            m_recBookingLine = new BookingLine(Utility.getRecordOwner(this));
+            m_recBookingLine = new BookingLine(this.findRecordOwner());
             m_recBookingLine.addDetailBehaviors(recBooking, recTour);
             if (m_recBookingLine.getRecordOwner() != null)
                 m_recBookingLine.getRecordOwner().removeRecord(m_recBookingLine);    // Set it is not on the recordowner's list

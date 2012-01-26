@@ -688,7 +688,7 @@ public class Tour extends Job
         int iErrorCode = DBConstants.NORMAL_RETURN;
         BookingDetail recBookingDetailNew = null;
         ApTrx recApTrxNew = null;
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         if (recBookingDetail == null)
         {
             if (recordOwner != null)
@@ -806,7 +806,7 @@ public class Tour extends Job
     {
         if (this.getField(Tour.kOrderComponents).getState() == false)
             return;
-        BookingDetail recBookingDetail = new BookingDetail(Utility.getRecordOwner(this));
+        BookingDetail recBookingDetail = new BookingDetail(this.findRecordOwner());
         try {
             recBookingDetail.addListener(new SubFileFilter(this));
             while (recBookingDetail.hasNext())
@@ -829,7 +829,7 @@ public class Tour extends Job
     {
         if (m_recTourEventSchedule == null)
         {
-            m_recTourEventSchedule = new TourEventSchedule(Utility.getRecordOwner(this));
+            m_recTourEventSchedule = new TourEventSchedule(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(m_recTourEventSchedule));
         }
         return m_recTourEventSchedule;

@@ -23,6 +23,7 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.text.JTextComponent;
 
+import org.jbundle.model.message.MessageManager;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -91,7 +92,7 @@ public class TestThinScreen extends JScreen
  //       RemoteSession remoteSession = ((com.tourapp.thin.base.db.client.RemoteFieldTable)table).getRemoteTableReference();
 //------------------------------
 
-        BaseMessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
+        MessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
         BaseMessageReceiver handler = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
 //x     JMessageListener listener = new TestMessageListener(handler);
 
@@ -108,7 +109,7 @@ public class TestThinScreen extends JScreen
      */
     public void free()
     {
-        BaseMessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
+        BaseMessageManager messageManager = (BaseMessageManager)this.getBaseApplet().getApplication().getMessageManager();
         messageManager.freeListenersWithSource(this);
         messageManager.freeFiltersWithSource(this);
 

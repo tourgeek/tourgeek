@@ -302,10 +302,10 @@ public class BankTrx extends BaseTrx
         Record recBankAcct = ((ReferenceField)this.getField(BankTrx.kBankAcctID)).getReference();
         if (recBankAcct == null)
             return; // Error - never.
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         Record recAssetDrControl = null;
         if (recordOwner != null)
-            recAssetDrControl = recordOwner.getRecord(AssetDrControl.kAssetDrControlFile);
+            recAssetDrControl = (Record)recordOwner.getRecord(AssetDrControl.kAssetDrControlFile);
         if (recAssetDrControl == null)
             recAssetDrControl = new AssetDrControl(recordOwner);
         

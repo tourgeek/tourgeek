@@ -70,7 +70,7 @@ public class McoDistConverter extends CashDistConverter
      */
     public Record getDetailRecord()
     {
-        return ((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(Mco.kMcoFile);
+        return (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(Mco.kMcoFile);
     }
     /**
      * CreateDistRecord Method.

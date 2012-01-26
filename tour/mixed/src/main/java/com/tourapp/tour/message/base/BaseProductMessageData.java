@@ -106,7 +106,7 @@ public class BaseProductMessageData extends MessageRecordDesc
      */
     public Rec createSubDataRecord(Rec record)
     {
-        BookingDetail recBookingDetail = new BookingDetail(Utility.getRecordOwner((Record)record));  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
+        BookingDetail recBookingDetail = new BookingDetail(((Record)record).findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         String strApTrxID = record.getField(BookingDetail.kApTrxID).getString();
         
         recBookingDetail.setKeyArea(BookingDetail.kApTrxIDKey);

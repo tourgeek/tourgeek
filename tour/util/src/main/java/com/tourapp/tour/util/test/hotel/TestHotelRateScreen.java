@@ -40,6 +40,7 @@ import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.base.message.trx.transport.local.*;
 import com.tourapp.tour.message.base.request.in.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 
 /**
  *  TestHotelRateScreen - Test XML messaging to retrieve a hotel rate..
@@ -89,9 +90,9 @@ public class TestHotelRateScreen extends Screen
     public void free()
     {
         super.free();
-        BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager(false);
+        MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager(false);
         if (messageManager != null)
-            messageManager.freeFiltersWithListener(this);  // Free all filters listening for me.
+            ((BaseMessageManager)messageManager).freeFiltersWithListener(this);  // Free all filters listening for me.
     }
     /**
      * Add all the screen listeners.
@@ -99,7 +100,7 @@ public class TestHotelRateScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+        MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         if (messageManager != null)
         {
             Object source = this;
@@ -204,7 +205,7 @@ public class TestHotelRateScreen extends Screen
                 }
                 else
                 {
-                    BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+                    MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
                     if (messageManager != null)
                         messageManager.sendMessage(messageOut);
                 }
@@ -232,7 +233,7 @@ public class TestHotelRateScreen extends Screen
                         message.put(PingRequestMessageInProcessor.MESSAGE_PARAM, "Hello");
                         if (!MessageTransport.DIRECT.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.SEND_MESSAGE_BY_PARAM)))
                         {
-                            BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+                            MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
                             if (messageManager != null)
                                 messageManager.sendMessage(message);
                         }
@@ -266,7 +267,7 @@ public class TestHotelRateScreen extends Screen
                         message.put(PingRequestMessageInProcessor.MESSAGE_PARAM, "CHF");
                         if (!MessageTransport.DIRECT.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.SEND_MESSAGE_BY_PARAM)))
                         {
-                            BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+                            MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
                             if (messageManager != null)
                                 messageManager.sendMessage(message);
                         }

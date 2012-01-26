@@ -175,9 +175,9 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
     public Record getApControl()
     {
         Record recApControl = null;
-        RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+        RecordOwner recordOwner = this.getOwner().findRecordOwner();
         if (recordOwner != null)
-            recApControl = recordOwner.getRecord(ApControl.kApControlFile);
+            recApControl = (Record)recordOwner.getRecord(ApControl.kApControlFile);
         if (recApControl == null)
         {
             recApControl = m_recApControl = new ApControl(recordOwner);

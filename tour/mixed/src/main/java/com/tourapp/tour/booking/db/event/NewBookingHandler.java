@@ -113,7 +113,7 @@ public class NewBookingHandler extends FileListener
                 {   // No tour header, use the default tour header
                     if (recBooking.getField(Booking.kTourID).isNull())
                     {
-                        Record recBookingControl = recordOwner.getRecord(BookingControl.kBookingControlFile);
+                        Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.kBookingControlFile);
                         if (m_bUseThinTourHeader)
                             recTourHeader = (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.kThinTourHeaderID)).getReference();
                        else

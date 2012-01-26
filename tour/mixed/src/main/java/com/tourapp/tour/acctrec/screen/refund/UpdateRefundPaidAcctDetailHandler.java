@@ -70,7 +70,7 @@ public class UpdateRefundPaidAcctDetailHandler extends UpdateAcctDetailHandler
     {
         Record recArTrx = this.getOwner();
         RecordOwner recordOwner = recArTrx.getRecordOwner();
-        Record recScreenRecord = recordOwner.getScreenRecord();
+        Record recScreenRecord = (Record)recordOwner.getScreenRecord();
         
         double dAmount = recArTrx.getField(ArTrx.kAmount).getValue();
         ReferenceField fldAccount = null;

@@ -375,7 +375,7 @@ public class TourClass extends VirtualRecord
         boolean[] listenerStatus = this.setEnableListeners(false);
         
         Object bookmark = this.getField(TourClass.kBasedClassID).getData();
-        TourClass recTourClass = new TourClass(Utility.getRecordOwner(this));
+        TourClass recTourClass = new TourClass(this.findRecordOwner());
         try {
             while (bookmark != null)
             {

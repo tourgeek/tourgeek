@@ -74,7 +74,7 @@ public class GetProductCostHandler extends GetProductStatusHandler
         RecordOwner recordOwner = recProduct.getRecordOwner();
         if (recordOwner != null)
         {
-            Record recBooking = recordOwner.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
             if ((recBooking != null)
                 && ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)))
             {
@@ -84,7 +84,7 @@ public class GetProductCostHandler extends GetProductStatusHandler
             }
             else
             {
-                Record recBookingControl = recordOwner.getRecord(BookingControl.kBookingControlFile);
+                Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.kBookingControlFile);
                 if (recBookingControl == null)
                     recBookingControl = new BookingControl(recordOwner);
                 PricingType recPricingType = (PricingType)((ReferenceField)recBookingControl.getField(BookingControl.kNonTourPricingTypeID)).getReference();

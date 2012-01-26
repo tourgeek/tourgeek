@@ -63,7 +63,7 @@ public class CheckTourOptionDisplay extends FieldListener
         if (iErrorCode == DBConstants.NORMAL_RETURN)
         {
             RecordOwner recordOwner = this.getOwner().getRecord().getRecordOwner();
-            Record recBooking = recordOwner.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
             if (m_bOldAlwaysResolve == false)
                 if (recBooking.getField(Booking.kAlwaysResolve).getState() == true)
             {

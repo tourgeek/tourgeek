@@ -72,7 +72,7 @@ public class UpdateRefundAcctDetailHandler extends UpdateArTrxAcctDetailHandler
     public ReferenceField getCrAccount()
     {
         boolean bTempControl = false;
-        Record recArControl = this.getOwner().getRecordOwner().getRecord(ArControl.kArControlFile);
+        Record recArControl = (Record)this.getOwner().getRecordOwner().getRecord(ArControl.kArControlFile);
         if (recArControl == null)
         {
             bTempControl = true;

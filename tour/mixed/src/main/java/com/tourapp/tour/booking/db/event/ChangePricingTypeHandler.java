@@ -72,7 +72,7 @@ public class ChangePricingTypeHandler extends FieldListener
             if ((recPricingType == null)
                 || (recPricingType.getEditMode() == DBConstants.EDIT_NONE) || (recPricingType.getEditMode() == DBConstants.EDIT_ADD))
             {   // Can't have a null booking pricing type
-                PricingType recPricingType2 = new PricingType(Utility.getRecordOwner(recBooking));
+                PricingType recPricingType2 = new PricingType(recBooking.findRecordOwner());
                 PricingType recPricingType3 = recPricingType2.getPricingType(PricingType.COMPONENT_COST_PRICING);
                 if (recPricingType3 != null)
                     this.getOwner().moveFieldToThis(recPricingType3.getField(PricingType.kID));
@@ -94,7 +94,7 @@ public class ChangePricingTypeHandler extends FieldListener
         if (!recBooking.getField(Booking.kTourID).isNull())
         {   // Always
             Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-            BookingLine recBookingLine = new BookingLine(Utility.getRecordOwner(recBooking));            
+            BookingLine recBookingLine = new BookingLine(recBooking.findRecordOwner());            
             recBookingLine.addDetailBehaviors(recBooking, recTour);
             
             // First step, delete the old pricing detail

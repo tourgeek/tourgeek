@@ -75,7 +75,7 @@ public class CurrentClearedHandler extends FieldListener
         {
             if (m_recBankTrx == null)
             {
-                RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner().getRecord());
+                RecordOwner recordOwner = this.getOwner().getRecord().findRecordOwner();
                 m_recBankTrx = new BankTrx(recordOwner);
                 if (recordOwner != null)
                     recordOwner.removeRecord(m_recBankTrx);

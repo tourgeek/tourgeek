@@ -68,7 +68,7 @@ public class MoveEstimateHandler extends FileListener
         Record recApTrx = this.getOwner();
         if (m_iDepartureEstimate == -1)
         {
-            TrxStatus recTrxStatus = new TrxStatus(Utility.getRecordOwner(this.getOwner()));  // Rarely, but if it doesn't exist in the screen, add it!
+            TrxStatus recTrxStatus = new TrxStatus(this.getOwner().findRecordOwner());  // Rarely, but if it doesn't exist in the screen, add it!
             m_iDepartureEstimate = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_ESTIMATE);
             m_iDepartureEstimateManual = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_EST_MANUAL);
             recTrxStatus.free();

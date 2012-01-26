@@ -421,9 +421,9 @@ public class ApTrx extends Trx
         this.getField(ApTrx.kDepartureDate).addListener(new GetDepartureDateHandler((TourField)this.getField(ApTrx.kTourID)));
         this.addListener(new NoDeleteModifyHandler(true, false));
         Record recApControl = null;
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         if (recordOwner != null)
-            recApControl = recordOwner.getRecord(ApControl.kApControlFile);
+            recApControl = (Record)recordOwner.getRecord(ApControl.kApControlFile);
         if (recApControl == null)
         {
             recApControl = new ApControl(recordOwner);

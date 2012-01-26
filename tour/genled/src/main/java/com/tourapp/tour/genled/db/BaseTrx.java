@@ -122,7 +122,7 @@ public class BaseTrx extends Trx
      */
     public void checkFiles()
     {
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         if (m_recAcctDetail == null)
         {
             m_recAcctDetail = new AcctDetail(recordOwner);

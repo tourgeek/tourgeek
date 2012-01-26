@@ -89,7 +89,7 @@ public class AddNewCreditCardDistHandler extends AddNewCashDistHandler
                         try {
                             if (m_recBankTrxBatchDist == null)
                             {
-                                RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+                                RecordOwner recordOwner = this.getOwner().findRecordOwner();
                                 m_recBankTrxBatchDist = new CreditCardBatchDist(recordOwner);
                                 if (recordOwner != null)
                                     recordOwner.removeRecord(m_recBankTrxBatchDist);

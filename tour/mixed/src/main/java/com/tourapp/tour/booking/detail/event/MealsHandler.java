@@ -90,7 +90,7 @@ public class MealsHandler extends FieldListener
             return super.doGetData();   // Already cached
         if (m_recMealPlan == null)
         {
-            RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner().getRecord());
+            RecordOwner recordOwner = this.getOwner().getRecord().findRecordOwner();
             m_recMealPlan = new MealPlan(recordOwner);
             if (recordOwner != null)
                 recordOwner.removeRecord(m_recMealPlan);

@@ -282,7 +282,7 @@ public class BookingCalendar extends CalendarScreen
         if ((recBooking != null)
             && (recBooking.getRecordOwner() != null)
                 && (recBooking.getRecordOwner().getScreenRecord() instanceof BookingScreenRecord))
-                    screenRecord = recBooking.getRecordOwner().getScreenRecord();
+                    screenRecord = (Record)recBooking.getRecordOwner().getScreenRecord();
         
         if (record != null)
         {       // Set the default target date.
@@ -337,7 +337,7 @@ public class BookingCalendar extends CalendarScreen
                     {
                         Record recProduct = getOwner();
                         RecordOwner gridScreen = recProduct.getRecordOwner();
-                        Record screenRecord = gridScreen.getScreenRecord();
+                        Record screenRecord = (Record)gridScreen.getScreenRecord();
                         this.addMessageProperty(message, screenRecord, ProductScreenRecord.kDetailDate);
                         this.addMessageProperty(message, screenRecord, ProductScreenRecord.kClassID);
                         this.addMessageProperty(message, screenRecord, ProductScreenRecord.kRateID);

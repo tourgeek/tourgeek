@@ -188,7 +188,7 @@ public class AcctBatchDetail extends VirtualRecord
         {
             try   {
                 Record recAcctBatchDetail = (Record)this.clone(true);
-                AutoDist recAutoDist = new AutoDist(Utility.getRecordOwner(this));
+                AutoDist recAutoDist = new AutoDist(this.findRecordOwner());
                 ((ReferenceField)recAccount.getField(Account.kAutoDistID)).setReferenceRecord(recAutoDist);
                 Record record = ((ReferenceField)recAccount.getField(Account.kAutoDistID)).getReference();
                 if (record == null)
@@ -285,7 +285,7 @@ public class AcctBatchDetail extends VirtualRecord
         }
         else if (this.getEditMode() != Constants.EDIT_CURRENT)
             return false;
-        Record recAcctBatch = screen.getRecord(AcctBatch.kAcctBatchFile);
+        Record recAcctBatch = (Record)screen.getRecord(AcctBatch.kAcctBatchFile);
         if (recAcctBatch == null)
             return false;
         if (recAcctBatch.getField(AcctBatch.kBalance).getValue() != 0.00)

@@ -313,7 +313,7 @@ public class PaymentHistory extends LinkTrx
                         fldCurrAccountID = recProductCategory.getField(ProductCategory.kCurrOUAccountID);
                     if ((fldCurrAccountID == null) || (fldCurrAccountID.isNull()))
                     {
-                        Record recApControl = recordOwner.getRecord(ApControl.kApControlFile);
+                        Record recApControl = (Record)recordOwner.getRecord(ApControl.kApControlFile);
                         if (recApControl == null)
                             recApControl = new ApControl(recordOwner);
                         fldCurrAccountID = recApControl.getField(ApControl.kCurrOUAccountID);
@@ -341,7 +341,7 @@ public class PaymentHistory extends LinkTrx
                 recApTrx.getField(ApTrx.kInvoiceBalance).setValue(-dCheckBalance);
                 recApTrx.getField(ApTrx.kInvoiceBalanceLocal).setValue(-dCheckBalanceUSD);
                 recApTrx.getField(ApTrx.kAmountSelected).setValue(0);
-                recApTrx.getField(ApTrx.kAccountID).moveFieldToThis(recordOwner.getRecord(ApControl.kApControlFile).getField(ApControl.kNonTourPrepayAccountID)); // Non-tour P/P
+                recApTrx.getField(ApTrx.kAccountID).moveFieldToThis(((Record)recordOwner.getRecord(ApControl.kApControlFile)).getField(ApControl.kNonTourPrepayAccountID)); // Non-tour P/P
                 recApTrx.add();
                 Object varBookmark = recApTrx.getLastModified(DBConstants.DATA_SOURCE_HANDLE);
                 recApTrx.setHandle(varBookmark, DBConstants.DATA_SOURCE_HANDLE);
@@ -488,9 +488,9 @@ public class PaymentHistory extends LinkTrx
                     if (((recApTrx.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recApTrx.getEditMode() == DBConstants.EDIT_CURRENT)) && (!recApTrx.getField(ApTrx.kAccountID).isNull()))
                         fldAccountID = recApTrx.getField(ApTrx.kAccountID); // Dist account for prepayments and broker payments
                     else if (recApTrx.getField(ApTrx.kTourID).isNull())
-                        fldAccountID = recordOwner.getRecord(ApControl.kApControlFile).getField(ApControl.kNonTourPrepayAccountID);
+                        fldAccountID = ((Record)recordOwner.getRecord(ApControl.kApControlFile)).getField(ApControl.kNonTourPrepayAccountID);
                     else
-                        fldAccountID = recordOwner.getRecord(ApControl.kApControlFile).getField(ApControl.kPrepayAccountID);
+                        fldAccountID = ((Record)recordOwner.getRecord(ApControl.kApControlFile)).getField(ApControl.kPrepayAccountID);
                 }
                 DateTimeField fldTrxDate = null;
                 TransactionType recTrxType = (TransactionType)recordOwner.getRecord(TransactionType.kTransactionTypeFile);

@@ -64,12 +64,12 @@ public class InvoiceAcctHandler extends FieldListener
     {
         Record recApTrx = this.getOwner().getRecord();
         RecordOwner screen = recApTrx.getRecordOwner();
-        BaseField fldApAccountID = screen.getScreenRecord().getField(InvoiceScreenRecord.kApAccountID);
-        BaseField fldCostAccountID = screen.getScreenRecord().getField(InvoiceScreenRecord.kCostAccountID);
+        BaseField fldApAccountID = ((Record)screen.getScreenRecord()).getField(InvoiceScreenRecord.kApAccountID);
+        BaseField fldCostAccountID = ((Record)screen.getScreenRecord()).getField(InvoiceScreenRecord.kCostAccountID);
         TrxStatus recTrxStatus = (TrxStatus)screen.getRecord(TrxStatus.kTrxStatusFile);
-        Record recApControl = screen.getRecord(ApControl.kApControlFile);
-        FileListener invoiceBehavior = screen.getRecord(ApTrx.kApTrxFile).getListener(UpdateInvoiceHandler.class.getName());
-        FileListener invoiceNonTourBehavior = screen.getRecord(ApTrx.kApTrxFile).getListener(UpdateNonTourInvoiceHandler.class.getName());
+        Record recApControl = (Record)screen.getRecord(ApControl.kApControlFile);
+        FileListener invoiceBehavior = ((Record)screen.getRecord(ApTrx.kApTrxFile)).getListener(UpdateInvoiceHandler.class.getName());
+        FileListener invoiceNonTourBehavior = ((Record)screen.getRecord(ApTrx.kApTrxFile)).getListener(UpdateNonTourInvoiceHandler.class.getName());
         BaseField fldTourID = recApTrx.getField(ApTrx.kTourID);
         if (fldTourID.isNull())
         { // No tour, set defaults

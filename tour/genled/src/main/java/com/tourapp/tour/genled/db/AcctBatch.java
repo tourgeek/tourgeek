@@ -228,13 +228,13 @@ public class AcctBatch extends VirtualRecord
             return false;
         }
         
-        Period recPeriod = new Period(Utility.getRecordOwner(this));
+        Period recPeriod = new Period(this.findRecordOwner());
         
-        AcctBatchDetail recAcctBatchDetail = new AcctBatchDetail(Utility.getRecordOwner(this));
+        AcctBatchDetail recAcctBatchDetail = new AcctBatchDetail(this.findRecordOwner());
         recAcctBatchDetail.addListener(new SubFileFilter(this));
         
-        Account recAccount = new Account(Utility.getRecordOwner(this));
-        AcctDetail recAccountDetail = new AcctDetail(Utility.getRecordOwner(this));
+        Account recAccount = new Account(this.findRecordOwner());
+        AcctDetail recAccountDetail = new AcctDetail(this.findRecordOwner());
         recAccountDetail.addListener(new SubFileFilter(recAccount));
         DateField fldPeriodStartDate = new DateField(null, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
         DateField fldPeriodEndDate = new DateField(null, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);

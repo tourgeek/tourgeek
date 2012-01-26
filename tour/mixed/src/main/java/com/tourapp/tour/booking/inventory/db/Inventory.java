@@ -474,7 +474,7 @@ public class Inventory extends VirtualRecord
     {
         if (m_recInventoryDetail == null)
         {
-            m_recInventoryDetail = new InventoryDetail(Utility.getRecordOwner(this));
+            m_recInventoryDetail = new InventoryDetail(this.findRecordOwner());
         }
         return m_recInventoryDetail;
     }

@@ -231,13 +231,13 @@ public class FinStmtDetail extends VirtualRecord
     {
         HashSet hsBookmarks = new HashSet();
         
-        FinStmt recFinStmt = new FinStmt(Utility.getRecordOwner(this));
+        FinStmt recFinStmt = new FinStmt(this.findRecordOwner());
         recFinStmt.addListener(new SubFileFilter(recFinStmtHeader));
         
         FileListener subFilter = new SubFileFilter(recFinStmt);
         this.addListener(subFilter);
         
-        Account recAccount = new Account(Utility.getRecordOwner(this));
+        Account recAccount = new Account(this.findRecordOwner());
         recAccount.setKeyArea(Account.kAccountNoKey);
         
         Object bookmarkIS = null;       // Default income statemet statement

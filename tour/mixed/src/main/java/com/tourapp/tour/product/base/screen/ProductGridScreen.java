@@ -27,6 +27,7 @@ import com.tourapp.thin.app.booking.entry.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.event.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductGridScreen - Base Screen to display/search product.
@@ -136,7 +137,7 @@ public class ProductGridScreen extends GridScreen
         this.getMainRecord().getField(Product.kProductCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kProductCostLocal)));
         this.getMainRecord().getField(Product.kPPCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kPPCostLocal)));
         // Create a private messageReceiver and listen for changes
-        BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+        MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         Integer intRegistryID = null;
         if (messageManager != null)
         {

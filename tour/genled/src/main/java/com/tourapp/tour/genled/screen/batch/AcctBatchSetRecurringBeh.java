@@ -90,7 +90,7 @@ public class AcctBatchSetRecurringBeh extends FieldListener
             {
                 if (m_recPeriod == null)
                 {
-                    m_recPeriod = new Period(Utility.getRecordOwner(this.getOwner().getRecord()));
+                    m_recPeriod = new Period(this.getOwner().getRecord().findRecordOwner());
                     if (m_recPeriod.getRecordOwner() != null)
                         m_recPeriod.getRecordOwner().removeRecord(m_recPeriod);
                 }

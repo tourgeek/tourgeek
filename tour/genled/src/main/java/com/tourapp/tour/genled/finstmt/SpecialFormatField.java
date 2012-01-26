@@ -81,7 +81,7 @@ public class SpecialFormatField extends StringField
         converter = new FieldLengthConverter((Converter)converter, 25);
         if (m_recSpecialFormat == null)
         {
-             m_recSpecialFormat = new SpecialFormat(Utility.getRecordOwner(this.getRecord()));
+             m_recSpecialFormat = new SpecialFormat(this.getRecord().findRecordOwner());
              if (m_recSpecialFormat.getRecordOwner() != null)
                 m_recSpecialFormat.getRecordOwner().removeRecord(m_recSpecialFormat);
         }

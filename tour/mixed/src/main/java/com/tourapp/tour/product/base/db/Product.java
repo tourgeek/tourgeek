@@ -420,7 +420,7 @@ public class Product extends VirtualRecord
     public TrxMessageHeader createProcessMessage(String strMessageProcessorCode, String strMessageTransport)
     {
         TrxMessageHeader trxMessageHeader = null;
-        MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(Utility.getRecordOwner(this));
+        MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(this.findRecordOwner());
         MessageProcessInfo recMessageProcessInfoCurrent = (MessageProcessInfo)recMessageProcessInfo.getMessageProcessInfo(strMessageProcessorCode);
         if (recMessageProcessInfoCurrent != null)
             trxMessageHeader = recMessageProcessInfoCurrent.createProcessMessageHeader(this, strMessageTransport);
@@ -437,7 +437,7 @@ public class Product extends VirtualRecord
     public TrxMessageHeader createProcessMessage(String strMessageInfoType, String strContactType, String strRequestType, String strMessageProcessType, String strProcessType, String strMessageTransport)
     {
         TrxMessageHeader trxMessageHeader = null;
-        MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(Utility.getRecordOwner(this));
+        MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(this.findRecordOwner());
         MessageProcessInfo recMessageProcessInfoCurrent = (MessageProcessInfo)recMessageProcessInfo.getMessageProcessInfo(strMessageInfoType, strContactType, strRequestType, strMessageProcessType, strProcessType);
         if (recMessageProcessInfoCurrent != null)
             trxMessageHeader = recMessageProcessInfoCurrent.createProcessMessageHeader(this, strMessageTransport);
@@ -614,7 +614,7 @@ public class Product extends VirtualRecord
     public BaseMessage processBookingRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
     {
         ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         ProductMessageData messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         ProductBookingResponse responseMessage = null;
         
@@ -641,8 +641,8 @@ public class Product extends VirtualRecord
             String strMessageTransportID = null;
             if (productRequest.getMessage().getMessageHeader() != null)
                 strMessageTransportID = (String)productRequest.getMessage().getMessageHeader().get(MessageTransport.TRANSPORT_ID_PARAM);
-            BookingDetail recBookingDetail = this.getBookingDetail(Utility.getRecordOwner(this));
-            MessageTransport recMessageTransport = new MessageTransport(Utility.getRecordOwner(this));
+            BookingDetail recBookingDetail = this.getBookingDetail(this.findRecordOwner());
+            MessageTransport recMessageTransport = new MessageTransport(this.findRecordOwner());
             boolean bIsDirectTransport = true;
             if (strMessageTransportID != null)
                 if (recMessageTransport.getMessageTransport(strMessageTransportID) != null)
@@ -887,7 +887,7 @@ public class Product extends VirtualRecord
     public Inventory getInventory()
     {
         if (m_recInventory == null)
-            m_recInventory = new Inventory(Utility.getRecordOwner(this));
+            m_recInventory = new Inventory(this.findRecordOwner());
         return m_recInventory;
     }
     /**
@@ -897,7 +897,7 @@ public class Product extends VirtualRecord
     {
         if (m_recProductPricing == null)
         {
-            m_recProductPricing = this.createProductPricing(Utility.getRecordOwner(this));
+            m_recProductPricing = this.createProductPricing(this.findRecordOwner());
             if (m_recProductPricing != null)
                 if (m_recProductPricing.getRecordOwner() != null)
             {
@@ -914,7 +914,7 @@ public class Product extends VirtualRecord
     {
         if (m_recProductTerms == null)
         {
-            m_recProductTerms = new ProductTerms(Utility.getRecordOwner(this));
+            m_recProductTerms = new ProductTerms(this.findRecordOwner());
             if (m_recProductTerms.getRecordOwner() != null)
                 m_recProductTerms.getRecordOwner().removeRecord(m_recProductTerms);
             this.addListener(new FreeOnFreeHandler(m_recProductTerms));
@@ -928,7 +928,7 @@ public class Product extends VirtualRecord
     {
         if (m_recMessageProcessInfo == null)
         {
-            RecordOwner recordOwner = Utility.getRecordOwner(this);
+            RecordOwner recordOwner = this.findRecordOwner();
             m_recMessageProcessInfo = new MessageProcessInfo(recordOwner);
             if (recordOwner != null)
                 recordOwner.removeRecord(m_recMessageProcessInfo);

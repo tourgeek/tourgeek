@@ -28,6 +28,7 @@ import org.jbundle.base.message.trx.message.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 import com.tourapp.tour.product.base.db.*;
 
 /**
@@ -84,7 +85,7 @@ public class GetProductStatusHandler extends RecordCacheHandler
             BaseMessage message = (BaseMessage)BaseMessage.createMessage(trxMessageHeader);
             if (message == null)
                 return;
-            Record screenRecord = recordOwner.getScreenRecord();
+            Record screenRecord = (Record)recordOwner.getScreenRecord();
             this.setLookupProperties(message, recProduct, screenRecord);
             if ((MessageTransportTypeField.DIRECT.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.TRANSPORT_TYPE_PARAM)))
                 || (trxMessageHeader.get(MessageTransport.TRANSPORT_TYPE_PARAM) == null))
@@ -100,7 +101,7 @@ public class GetProductStatusHandler extends RecordCacheHandler
                     if (m_intRegistryID != null)
                         trxMessageHeader.put(TrxMessageHeader.REGISTRY_ID, m_intRegistryID);    // The return Queue ID
         
-                    BaseMessageManager messageManager = ((Application)recordOwner.getTask().getApplication()).getMessageManager();
+                    MessageManager messageManager = ((Application)recordOwner.getTask().getApplication()).getMessageManager();
                     this.setupScreenStatus(recProduct, BaseStatus.REQUEST_SENT);
                     if (messageManager != null)
                         messageManager.sendMessage(message);

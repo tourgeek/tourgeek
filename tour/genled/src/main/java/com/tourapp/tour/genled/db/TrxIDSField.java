@@ -98,7 +98,7 @@ public class TrxIDSField extends SCannedBox
             RecordOwner recordOwner = null;
             if (this.getConverter() != null)
                 if (this.getConverter().getField() != null)
-                    recordOwner = Utility.getRecordOwner(((BaseField)this.getConverter().getField()).getRecord());
+                    recordOwner = ((BaseField)this.getConverter().getField()).getRecord().findRecordOwner();
             Record recTarget = Record.makeRecordFromClassName(strRecordTarget, recordOwner);
             if (recordOwner != null)
                 recordOwner.removeRecord(recTarget);    // Will be owned by the new screen

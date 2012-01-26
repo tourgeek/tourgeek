@@ -492,12 +492,12 @@ public class Booking extends CustSale
     {
         if (recBookingControl == null)
         {
-            recBookingControl = new BookingControl(Utility.getRecordOwner(this));
+            recBookingControl = new BookingControl(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(recBookingControl));
         }
         if (recProfileControl == null)
         {
-            recProfileControl = new ProfileControl(Utility.getRecordOwner(this));
+            recProfileControl = new ProfileControl(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(recProfileControl));
         }
         this.getField(Booking.kBookingStatusID).addListener(new InitFieldHandler(recBookingControl.getField(BookingControl.kBookingStatusID)));
@@ -563,7 +563,7 @@ public class Booking extends CustSale
         FileListener listener = null;
         if (recBookingAnswer == null)
         {   // If booking answer is not passed in, set up the default answers.
-            recBookingAnswer = new BookingAnswer(Utility.getRecordOwner(this));
+            recBookingAnswer = new BookingAnswer(this.findRecordOwner());
             recBookingAnswerNew = recBookingAnswer;
             iErrorCode = recBookingAnswer.setupAnswerDetail(TourHeaderOption.TOUR, recTourHeader.getField(TourHeader.kID), recTourHeader.getField(TourHeader.kID), this, recBookingPax, dateStart, fldAskForAnswer, true);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
@@ -574,7 +574,7 @@ public class Booking extends CustSale
         try {
             if (recBookingPax == null)
             {
-                recBookingPax = new BookingPax(Utility.getRecordOwner(this));
+                recBookingPax = new BookingPax(this.findRecordOwner());
                 recBookingPaxNew = recBookingPax;
             }
             if (recBookingPax.getField(BookingPax.kID).isNull())
@@ -617,7 +617,7 @@ public class Booking extends CustSale
             fldBookingPaxID = new IntegerField(null, "ID", -1, null, null);
             fldBookingPaxID.setData(new Integer(0));
         }
-        BookingAnswer recBookingAnswer = new BookingAnswer(Utility.getRecordOwner(this));
+        BookingAnswer recBookingAnswer = new BookingAnswer(this.findRecordOwner());
         recBookingAnswer.addDetailBehaviors(this, recTour);
         int iErrorCode = recBookingAnswer.changeAllDetail(this, fldBookingPaxID, recTourHeader.getField(TourHeader.kID), dateOriginal, dateStart);
         recBookingAnswer.free();
@@ -652,21 +652,21 @@ public class Booking extends CustSale
             fldBookingPaxID = new IntegerField(null, "ID", -1, null, null);
             fldBookingPaxID.setData(new Integer(0));
         }
-        BookingAirHeader recBookingAirHeader = new BookingAirHeader(Utility.getRecordOwner(this));
+        BookingAirHeader recBookingAirHeader = new BookingAirHeader(this.findRecordOwner());
         recBookingAirHeader.addDetailBehaviors(this, recTour);
         int iErrorCode = recBookingAirHeader.deleteAllDetail(this, fldBookingPaxID, fldTourModuleID, dateStart);
         recBookingAirHeader.free();
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         
-        BookingLine recBookingLine = new BookingLine(Utility.getRecordOwner(this));
+        BookingLine recBookingLine = new BookingLine(this.findRecordOwner());
         recBookingLine.addDetailBehaviors(this, recTour);
         iErrorCode = recBookingLine.deleteAllDetail(this, fldBookingPaxID, fldTourModuleID, dateStart);
         recBookingLine.free();
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         
-        BookingDetail recBookingDetail = new BookingDetail(Utility.getRecordOwner(this));
+        BookingDetail recBookingDetail = new BookingDetail(this.findRecordOwner());
         recBookingDetail.addDetailBehaviors(this, recTour);
         iErrorCode = recBookingDetail.deleteAllDetail(this, fldBookingPaxID, fldTourModuleID, dateStart);
         recBookingDetail.free();
@@ -688,7 +688,7 @@ public class Booking extends CustSale
         
         try {
             // If you just changed to TourPricing, add the main tour pricing:
-            recBookingDetails = new BookingDetail(Utility.getRecordOwner(this));
+            recBookingDetails = new BookingDetail(this.findRecordOwner());
             recBookingDetails.addDetailBehaviors(this, recTour);
             
             while (recBookingDetails.hasNext())
@@ -741,11 +741,11 @@ public class Booking extends CustSale
             if (iTourPricingType == PricingType.OPTION_PRICING)
             {
                 BaseField fldBookingPaxID = new IntegerField(null, "ID", -1, null, null);
-                recBookingAnswer = new BookingAnswer(Utility.getRecordOwner(this));
+                recBookingAnswer = new BookingAnswer(this.findRecordOwner());
                 TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
-                BookingPax recBookingPax = new BookingPax(Utility.getRecordOwner(this));
+                BookingPax recBookingPax = new BookingPax(this.findRecordOwner());
                 recBookingPax.getField(BookingPax.kID).setValue(0);
-                recTourHeaderPricing = new TourHeaderLine(Utility.getRecordOwner(this));
+                recTourHeaderPricing = new TourHeaderLine(this.findRecordOwner());
                 Date dateDeparture = ((DateField)recTour.getField(Tour.kDepartureDate)).getDateTime();
                 recBookingAnswer.addDetailBehaviors(this, recTour);
                 while (recBookingAnswer.hasNext())
@@ -852,7 +852,7 @@ public class Booking extends CustSale
         }
         if (recBookingLine == null)
         {
-            recBookingLine = new BookingLine(Utility.getRecordOwner(this));
+            recBookingLine = new BookingLine(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(recBookingLine));
         }
         if (recBookingLine.getListener(SubFileFilter.class) == null)
@@ -882,7 +882,7 @@ public class Booking extends CustSale
         }
         if (recArTrx == null)
         {
-            recArTrx = new ArTrx(Utility.getRecordOwner(this));
+            recArTrx = new ArTrx(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(recArTrx));
         }
         if (recArTrx.getListener(SubFileFilter.class) == null)
@@ -909,7 +909,7 @@ public class Booking extends CustSale
         {
             if (this.getField(Booking.kPax).getValue() > 0)
             {   // Get last name from pax list
-                BookingPax recBookingPax = new BookingPax(Utility.getRecordOwner(this));
+                BookingPax recBookingPax = new BookingPax(this.findRecordOwner());
                 try {
                     recBookingPax.addListener(new SubFileFilter(this));
                     if (recBookingPax.next() != null)
@@ -1047,7 +1047,7 @@ public class Booking extends CustSale
                 }
                 else if (recBookingDetailModule == null)
                 {   // This is rather expensive, but it shouldn't be done too often.
-                    m_recBookingDetailModule = new BookingDetail(Utility.getRecordOwner(this));
+                    m_recBookingDetailModule = new BookingDetail(this.findRecordOwner());
                     if (m_recBookingDetailModule.getRecordOwner() != null)
                         m_recBookingDetailModule.getRecordOwner().removeRecord(m_recBookingDetailModule);
                     this.addListener(new FreeOnFreeHandler(m_recBookingDetailModule)
@@ -1116,7 +1116,7 @@ public class Booking extends CustSale
             if (objID instanceof Integer)
             { // Always
                 Tour recTour = (Tour)((ReferenceField)this.getField(Booking.kTourID)).getReference();
-                TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReferenceRecord(Utility.getRecordOwner(this));
+                TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReferenceRecord(this.findRecordOwner());
                 try {
                     recTourHeader.addNew();
                     recTourHeader.setKeyArea(Tour.kIDKey);

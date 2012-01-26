@@ -92,7 +92,7 @@ public class UpdateAcctDetailHandler extends FileListener
      */
     public void checkFiles()
     {
-        RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+        RecordOwner recordOwner = this.getOwner().findRecordOwner();
         if (m_recAcctDetail == null)
         {
             m_recAcctDetail = new AcctDetail(recordOwner);
@@ -249,7 +249,7 @@ public class UpdateAcctDetailHandler extends FileListener
      */
     public TrxStatus getTrxStatus()
     {
-        RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+        RecordOwner recordOwner = this.getOwner().findRecordOwner();
         TrxStatus recTrxStatus = (TrxStatus)recordOwner.getRecord(TrxStatus.kTrxStatusFile);
         if (recTrxStatus == null)
         {

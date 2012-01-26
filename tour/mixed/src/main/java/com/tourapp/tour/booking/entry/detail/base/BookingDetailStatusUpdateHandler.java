@@ -83,7 +83,7 @@ public class BookingDetailStatusUpdateHandler extends BaseStatusUpdateHandler
                 strErrorKey = strErrorKey + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM;
                 strMessage = (String)properties.get(strErrorKey);
                 
-                RecordOwner recordOwner = Utility.getRecordOwner(recBookingDetail);
+                RecordOwner recordOwner = recBookingDetail.findRecordOwner();
                 PropertiesInput recProperties = new PropertiesInput(recordOwner);
                 if (recordOwner != null)
                     recordOwner.removeRecord(recProperties);

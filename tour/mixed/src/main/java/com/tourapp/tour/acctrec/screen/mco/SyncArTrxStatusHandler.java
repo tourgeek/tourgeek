@@ -111,7 +111,7 @@ public class SyncArTrxStatusHandler extends FileListener
         {
              if (m_recArTrx == null)
             {
-                RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+                RecordOwner recordOwner = this.getOwner().findRecordOwner();
                 m_recArTrx = new ArTrx(recordOwner);
                 if (recordOwner != null)
                     recordOwner.removeRecord(m_recArTrx);

@@ -25,6 +25,7 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.message.record.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.thin.base.screen.message.*;
+import org.jbundle.model.message.*;
 import org.jbundle.main.screen.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.tour.screen.*;
@@ -103,7 +104,7 @@ public class TourDetailGridScreen extends DetailGridScreen
                     Task task = getTask();
                     Application application = (Application)task.getApplication();
                     String strQueueName = getProperty(MessageConstants.QUEUE_NAME);
-                    BaseMessageManager messageManager = application.getMessageManager();
+                    MessageManager messageManager = application.getMessageManager();
                     Map<String,Object> propHeader = new Hashtable<String,Object>();
                     Map<String,Object> propMessage = new Hashtable<String,Object>();
                     Record record = getParentScreen().getMainRecord();

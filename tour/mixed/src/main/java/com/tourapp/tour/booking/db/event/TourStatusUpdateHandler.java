@@ -74,7 +74,7 @@ public class TourStatusUpdateHandler extends BaseStatusUpdateHandler
             {
                 String strType = strKey.substring(0, iDot);
                 String strDetailID = strKey.substring(iDot+1);
-                BookingDetail recBookingDetail = new BookingDetail(Utility.getRecordOwner(recTour));
+                BookingDetail recBookingDetail = new BookingDetail(recTour.findRecordOwner());
                 try {
                     recBookingDetail.getField(BookingDetail.kID).setString(strDetailID);
                     if (recBookingDetail.seek(null))

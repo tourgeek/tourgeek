@@ -87,7 +87,7 @@ public class UpdateDebitMemoHandler extends UpdateApTrxHandler
                 double dAmountUSD = this.getOwner().getField(ApTrx.kInvoiceLocal).getValue();
                 if (dAmountUSD > 0)
                     this.getOwner().getField(ApTrx.kInvoiceLocal).setValue(-dAmountUSD);
-                this.getOwner().getField(ApTrx.kAccountID).moveFieldToThis(this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.kPpAccountID));
+                this.getOwner().getField(ApTrx.kAccountID).moveFieldToThis(((Record)this.getOwner().getRecordOwner().getScreenRecord()).getField(DebitMemoScreenRecord.kPpAccountID));
                 this.getOwner().set();
             } catch (DBException ex) {
                 ex.printStackTrace();

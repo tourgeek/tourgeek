@@ -126,7 +126,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
     {
         BookingDetail recBookingDetail = (BookingDetail)record;
         Booking recBooking = recBookingDetail.getBooking(!record.getField(BookingDetail.kBookingID).isNull());
-        BookingPax recBookingPax = new BookingPax(Utility.getRecordOwner(recBooking));  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
+        BookingPax recBookingPax = new BookingPax(recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         recBookingPax.addListener(new SubFileFilter(recBooking));
         return recBookingPax;
     }

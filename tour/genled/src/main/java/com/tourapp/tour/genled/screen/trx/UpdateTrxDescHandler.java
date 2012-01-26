@@ -98,7 +98,7 @@ public class UpdateTrxDescHandler extends FileListener
             || (iChangeType == DBConstants.DELETE_TYPE))
         {
             TrxDesc recTrxDesc = (TrxDesc)this.getOwner();
-            RecordOwner recordOwner = Utility.getRecordOwner(recTrxDesc);
+            RecordOwner recordOwner = recTrxDesc.findRecordOwner();
             try {
                 // Update the transaction status file
                 if (m_recTrxStatus == null)

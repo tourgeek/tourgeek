@@ -62,7 +62,7 @@ public class PrepaymentAcctHandler extends FieldListener
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
         RecordOwner screen = this.getOwner().getRecord().getRecordOwner();
-        Record recApControl = screen.getRecord(ApControl.kApControlFile);
+        Record recApControl = (Record)screen.getRecord(ApControl.kApControlFile);
         BaseField fldApAccountID = this.getOwner().getRecord().getField(ApTrx.kAccountID);
         if (this.getOwner().isNull())
         { // No tour, set defaults

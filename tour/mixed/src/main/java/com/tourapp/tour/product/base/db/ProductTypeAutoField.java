@@ -98,7 +98,7 @@ public class ProductTypeAutoField extends StringPopupField
         Product recProduct = (Product)this.getRecord();
         if (m_recProductType == null)
         {
-            RecordOwner recordOwner = Utility.getRecordOwner(recProduct);
+            RecordOwner recordOwner = recProduct.findRecordOwner();
             m_recProductType = new ProductType(recordOwner);
             if (recordOwner != null)
                 recordOwner.removeRecord(m_recProductType);

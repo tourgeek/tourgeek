@@ -129,7 +129,7 @@ public class ModifyTourSubField extends ReferenceField
                         Record recTourHeaderOption = null;
                         Record recTourHeader = null;
                         try {
-                            RecordOwner recordOwner = Utility.getRecordOwner(this.getRecord());
+                            RecordOwner recordOwner = this.getRecord(.findRecordOwner());
                             recTourHeaderOption = new TourHeaderOption(recordOwner);
                             recordOwner.removeRecord(recTourHeaderOption);
                             recTourHeaderOption.getField(TourHeaderOption.kID).moveFieldToThis(recTourSub.getField(TourSub.kTourHeaderOptionID));

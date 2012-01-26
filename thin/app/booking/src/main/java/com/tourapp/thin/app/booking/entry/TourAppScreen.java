@@ -21,6 +21,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.message.MessageManager;
 import org.jbundle.model.message.MessageReceiver;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -148,7 +149,7 @@ public class TourAppScreen extends JBaseScreen
      */
     public void free()
     {
-        BaseMessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
+        BaseMessageManager messageManager = (BaseMessageManager)this.getBaseApplet().getApplication().getMessageManager();
         messageManager.freeListenersWithSource(this);
         messageManager.freeFiltersWithSource(this);
 
@@ -466,7 +467,7 @@ public class TourAppScreen extends JBaseScreen
         CustSaleDetailThinTableModel model = new CustSaleDetailThinTableModel(recBookingDetailCalendarItem.getTable());
         recBookingDetailCalendarItem.setModel(model);
 
-        BaseMessageManager messageManager = baseApplet.getApplication().getMessageManager();
+        MessageManager messageManager = baseApplet.getApplication().getMessageManager();
         JMessageListener listenerForSession = new ModelMessageHandler(null, model)
         {
             /**

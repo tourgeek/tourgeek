@@ -101,7 +101,7 @@ public class BookingAirHeaderScreen extends BookingSubScreen
     {
         super.addToolbarButtons(toolScreen);
         ResourceBundle resources = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
-        BaseField field = this.getRecord(Booking.kBookingFile).getRecordOwner().getScreenRecord().getField(BookingScreenRecord.kBkSubScreen);
+        BaseField field = ((Record)this.getRecord(Booking.kBookingFile).getRecordOwner().getScreenRecord()).getField(BookingScreenRecord.kBkSubScreen);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, field, ScreenConstants.DEFAULT_DISPLAY, null, resources.getString(ProductType.AIR), Booking.BUTTON_LOCATION + ProductType.AIR, Integer.toString(BookingScreenHandler.AIR_SCREEN), resources.getString(ProductType.AIR + "Tip"));
     }
     /**

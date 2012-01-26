@@ -72,8 +72,8 @@ public class ItineraryActionHandler extends FieldListener
     {
         RecordOwner recordOwner = this.getOwner().getRecord().getRecordOwner();
         
-        Record recBooking = recordOwner.getRecord(Booking.kBookingFile);
-        BaseField fldDestination = recordOwner.getScreenRecord().getField(BookingItineraryScreenRecord.kActionTarget);
+        Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
+        BaseField fldDestination = ((Record)recordOwner.getScreenRecord()).getField(BookingItineraryScreenRecord.kActionTarget);
         Record recMessageTransport = ((ReferenceField)recordOwner.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID)).getReference();
         if (recMessageTransport != null)
         {

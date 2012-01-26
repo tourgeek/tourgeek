@@ -94,7 +94,7 @@ public class UpdateTrxSystemHandler extends FileListener
         {
             try {
                 Record recTrxSystem = this.getOwner();
-                RecordOwner recordOwner = Utility.getRecordOwner(recTrxSystem);
+                RecordOwner recordOwner = recTrxSystem.findRecordOwner();
                 if (m_recTrxDesc == null)
                 {
                     m_recTrxDesc = new TrxDesc(recordOwner);

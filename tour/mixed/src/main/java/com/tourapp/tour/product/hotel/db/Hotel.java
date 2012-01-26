@@ -771,7 +771,7 @@ public class Hotel extends Product
         double dCost = 0;
         if (m_recHotelMealPricing == null)
         {
-            m_recHotelMealPricing = new HotelMealPricing(Utility.getRecordOwner(this));
+            m_recHotelMealPricing = new HotelMealPricing(this.findRecordOwner());
             if (m_recHotelMealPricing.getRecordOwner() != null)
                 m_recHotelMealPricing.getRecordOwner().removeRecord(m_recHotelMealPricing);
         }
@@ -800,7 +800,7 @@ public class Hotel extends Product
         {
             MealPlan recMealPlanNew = null;
             if (recMealPlan == null)
-                recMealPlan = recMealPlanNew = new MealPlan(Utility.getRecordOwner(this));
+                recMealPlan = recMealPlanNew = new MealPlan(this.findRecordOwner());
             strMealDesc += recMealPlan.getMealDesc(recProductCost.getField(HotelPricing.kMealPlanID), bDetailedDesc);
             if (recMealPlanNew != null)
                 recMealPlanNew.free();

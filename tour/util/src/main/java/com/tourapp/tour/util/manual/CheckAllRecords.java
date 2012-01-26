@@ -12,8 +12,8 @@ import org.jbundle.base.db.Record;
 import org.jbundle.base.field.BaseField;
 import org.jbundle.base.field.ReferenceField;
 import org.jbundle.base.model.DBConstants;
+import org.jbundle.base.model.Utility;
 import org.jbundle.base.thread.BaseProcess;
-import org.jbundle.base.util.Utility;
 import org.jbundle.model.DBException;
 import org.jbundle.model.RecordOwnerParent;
 

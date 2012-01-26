@@ -136,7 +136,7 @@ public class BookingLineStatusHandler extends FileListener
         }
         else if (screen != null)
         {
-            Record recBooking = screen.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)screen.getRecord(Booking.kBookingFile);
             if (recBooking != null)
             {   // Always
                 this.setMainStatus(PricingStatus.VALID);
@@ -167,7 +167,7 @@ public class BookingLineStatusHandler extends FileListener
         RecordOwner screen = this.getOwner().getRecordOwner();
         if (screen != null)
         {
-            Record recBooking = screen.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)screen.getRecord(Booking.kBookingFile);
             if (recBooking != null)
                 recBooking.getField(Booking.kPricingStatusID).setValue(iMainStatus);
         }

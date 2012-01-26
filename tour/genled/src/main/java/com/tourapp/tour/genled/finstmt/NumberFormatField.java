@@ -80,7 +80,7 @@ public class NumberFormatField extends StringField
         converter = new FieldLengthConverter((Converter)converter, 25);
         if (m_recNumberFormat == null)
         {
-            m_recNumberFormat = new NumberFormat(Utility.getRecordOwner(this.getRecord()));
+            m_recNumberFormat = new NumberFormat(this.getRecord().findRecordOwner());
             if (m_recNumberFormat.getRecordOwner() != null)
                 m_recNumberFormat.getRecordOwner().removeRecord(m_recNumberFormat);
         }

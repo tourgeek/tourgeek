@@ -132,7 +132,7 @@ public class DistributionConverter extends FieldConverter
         RecordOwner ro = recordOwner;
         if (recordOwner == null)
             if (this.getField() != null)
-                ro = Utility.getRecordOwner(((BaseField)this.getField()).getRecord());
+                ro = ((BaseField)this.getField()).getRecord().findRecordOwner();
         BankTrxBatchDist recBankTrxBatchDist = new BankTrxBatchDist(ro);
         if (recordOwner == null)
         {
@@ -151,7 +151,7 @@ public class DistributionConverter extends FieldConverter
      */
     public Record getDetailRecord()
     {
-        Record recBankTrxBatchDetail = ((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile);
+        Record recBankTrxBatchDetail = (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile);
         return recBankTrxBatchDetail;
     }
     /**

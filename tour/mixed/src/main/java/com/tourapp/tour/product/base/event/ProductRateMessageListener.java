@@ -70,7 +70,7 @@ public class ProductRateMessageListener extends AutoRecordMessageListener
             RecordOwner recordOwner = m_record.getRecordOwner();
             if (recordOwner != null)
             {
-                Record screenRecord = recordOwner.getScreenRecord();
+                Record screenRecord = (Record)recordOwner.getScreenRecord();
                 if (screenRecord instanceof ProductScreenRecord)
                 {   // Always
                     if (!((ProductScreenRecord)screenRecord).checkPriceProperties(message, (Product)m_record))

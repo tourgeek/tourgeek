@@ -101,7 +101,7 @@ public class TourEventHandler extends FieldListener
         TourEventSchedule recTourEventSchedule = recTour.getTourEventSchedule();
         if (recTourEventSchedule.getListener(SubFileFilter.class) != null)
         {   // Already in use
-            recTourEventSchedule = new TourEventSchedule(Utility.getRecordOwner(recTour)); 
+            recTourEventSchedule = new TourEventSchedule(recTour.findRecordOwner()); 
         }
         CompareFileFilter listener2 = new CompareFileFilter(TourEventSchedule.kTourEventID, Integer.toString(iTourEventID), DBConstants.EQUALS, null, false);
         recTourEventSchedule.addListener(listener2);

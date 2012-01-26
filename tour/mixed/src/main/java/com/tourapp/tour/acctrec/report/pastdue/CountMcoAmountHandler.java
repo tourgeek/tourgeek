@@ -84,7 +84,7 @@ public class CountMcoAmountHandler extends SubCountHandler
         {
             if (m_recTrxStatus == null)
             {
-                RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+                RecordOwner recordOwner = this.getOwner().findRecordOwner();
                 m_recTrxStatus = new TrxStatus(recordOwner);
                 if (recordOwner != null)
                     recordOwner.removeRecord(m_recTrxStatus);

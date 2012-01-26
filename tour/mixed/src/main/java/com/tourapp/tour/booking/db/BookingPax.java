@@ -264,8 +264,8 @@ public class BookingPax extends VirtualRecord
      */
     public void addBookingBehaviors(RecordOwner recordOwner)
     {
-        Record recBookingPax = recordOwner.getRecord(BookingPax.kBookingPaxFile);
-        Record recBooking = recordOwner.getRecord(Booking.kBookingFile);
+        Record recBookingPax = (Record)recordOwner.getRecord(BookingPax.kBookingPaxFile);
+        Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
         
         recBookingPax.addListener(new SubFileFilter(recBooking, true));
         
@@ -290,7 +290,7 @@ public class BookingPax extends VirtualRecord
             recBooking.getField(Booking.kSinglePax).setEnableListeners(rgbEnabled);
         }
         
-        recBookingPax.addListener(new PaxSelectHandler(recBooking, recordOwner.getRecord(PaxCategory.kPaxCategoryFile)));
+        recBookingPax.addListener(new PaxSelectHandler(recBooking, (Record)recordOwner.getRecord(PaxCategory.kPaxCategoryFile)));
         
         recBookingPax.getField(BookingPax.kSequence).addListener(new InitFieldHandler(recBooking.getField(Booking.kPax)));
         
@@ -300,18 +300,18 @@ public class BookingPax extends VirtualRecord
             Profile recProfileDetail = (Profile)((ReferenceField)this.getField(BookingPax.kProfileID)).getReferenceRecord();
             FileListener selectListener = new PaxDetailSelectHandler((BookingPax)recordOwner.getRecord(BookingPax.kBookingPaxFile), recProfileDetail);
             recProfileDetail.addListener(selectListener);
-            recordOwner.getScreenRecord().addListener(new FileRemoveBOnCloseHandler(selectListener));
+            ((Record)recordOwner.getScreenRecord()).addListener(new FileRemoveBOnCloseHandler(selectListener));
             
             FileListener paxSelectListener = new PaPaxSelectHandler((BookingPax)recBookingPax, recProfile, recProfileDetail);
             recProfile.addListener(paxSelectListener);
             
             if (recordOwner instanceof Screen)
             {
-                FieldListener fieldListener = new CopyFieldHandler(recordOwner.getScreenRecord().getField(BookingScreenRecord.kLastLastName), null);
+                FieldListener fieldListener = new CopyFieldHandler(((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.kLastLastName), null);
                 fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, false);
                 recBookingPax.getField(BookingPax.kSurName).addListener(fieldListener);
                 
-                fieldListener = new MoveOnChangeHandler(recBookingPax.getField(BookingPax.kSurName), recordOwner.getScreenRecord().getField(BookingScreenRecord.kLastLastName), false, false);
+                fieldListener = new MoveOnChangeHandler(recBookingPax.getField(BookingPax.kSurName), ((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.kLastLastName), false, false);
                 fieldListener.setRespondsToMode(DBConstants.SCREEN_MOVE, false);
                 fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, true);
                 fieldListener.setRespondsToMode(DBConstants.READ_MOVE, false);

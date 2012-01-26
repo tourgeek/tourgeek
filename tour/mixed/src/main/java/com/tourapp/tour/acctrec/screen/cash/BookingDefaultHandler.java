@@ -101,7 +101,7 @@ public class BookingDefaultHandler extends CopyStringHandler
                         // First, total up the balance.
                         if (m_recArTrx == null)
                         {
-                            RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner().getRecord());
+                            RecordOwner recordOwner = this.getOwner().getRecord().findRecordOwner();
                             m_recArTrx = new ArTrx(recordOwner);
                             if (recordOwner != null)
                                 recordOwner.removeRecord(m_recArTrx);

@@ -172,7 +172,7 @@ public class GenledScreenRecord extends ReportScreenRecord
         super.addListeners();
         if (m_recPeriod == null)
         {
-            m_recPeriod = new Period(Utility.getRecordOwner(this));
+            m_recPeriod = new Period(this.findRecordOwner());
             if (m_recPeriod.getRecordOwner() != null)
                 m_recPeriod.getRecordOwner().removeRecord(m_recPeriod);
         }

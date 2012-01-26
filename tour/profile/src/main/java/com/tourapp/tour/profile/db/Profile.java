@@ -384,7 +384,7 @@ public class Profile extends Company
     {
         if (m_recProfileControl == null)
         {
-            m_recProfileControl = new ProfileControl(Utility.getRecordOwner(this));
+            m_recProfileControl = new ProfileControl(this.findRecordOwner());
             if (m_recProfileControl.getRecordOwner() != null)
                 m_recProfileControl.getRecordOwner().removeRecord(m_recProfileControl);
             this.addListener(new FreeOnFreeHandler(m_recProfileControl));

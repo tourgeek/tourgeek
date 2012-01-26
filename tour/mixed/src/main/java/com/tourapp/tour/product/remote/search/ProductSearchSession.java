@@ -36,6 +36,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.event.*;
 import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductSearchSession - Base class for the remote side of product searches.
@@ -279,7 +280,7 @@ public class ProductSearchSession extends Session
         this.getMainRecord().getField(Product.kPPCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
         this.getMainRecord().getField(Product.kPPCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kPPCostLocal)));
         // Create a private messageReceiver and listen for changes
-        BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+        MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         Integer intRegistryID = null;
         if (messageManager != null)
         {
@@ -346,7 +347,7 @@ public class ProductSearchSession extends Session
     {
         // Override this to add the listeners and message queues (remember to call super)
         // Create a private messageReceiver and listen for changes
-        BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+        MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         Integer intRegistryID = null;
         if (messageManager != null)
         {

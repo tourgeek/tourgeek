@@ -203,7 +203,7 @@ public class TrxDesc extends VirtualRecord
      */
     public TrxDesc getTrxDesc(String strSystemCode, String strDescCode)
     {
-        TrxSystem recTrxSystem = new TrxSystem(Utility.getRecordOwner(this));
+        TrxSystem recTrxSystem = new TrxSystem(this.findRecordOwner());
         // TODO - Move the SystemCode to this file.
         try {
             recTrxSystem.setKeyArea(TrxSystem.kSystemCodeKey);
@@ -235,7 +235,7 @@ public class TrxDesc extends VirtualRecord
      */
     public BaseScreen makeLinkTrxScreen(ScreenLocation itsLocation, BasePanel parentScreen, int iDocMode, Map<String,Object> properties)
     {
-        Record record = this.makeSourceRecord(Utility.getRecordOwner(this));
+        Record record = this.makeSourceRecord(this.findRecordOwner());
         
         BaseScreen screen = (BaseScreen)record.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         

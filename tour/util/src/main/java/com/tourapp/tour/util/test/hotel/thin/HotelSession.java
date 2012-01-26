@@ -37,6 +37,7 @@ import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.hotel.response.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  HotelSession - .
@@ -84,7 +85,7 @@ public class HotelSession extends Session
         //        BaseMessageFilter remoteFilter = new ServerSessionMessageFilter(messageFilter.getQueueName(), messageFilter.getQueueType(), null, this);
         //System.out.println("Remote filter " + remoteFilter);
         BaseMessageFilter filterForSession = new BaseMessageFilter(MessageConstants.TRX_RETURN_QUEUE, MessageConstants.INTERNET_QUEUE, null, null);
-        BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+        MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         messageManager.addMessageFilter(filterForSession);
         filterForSession.addMessageListener(this);
         
@@ -146,7 +147,7 @@ public class HotelSession extends Session
                 }
                 else
                 {
-                    BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+                    MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
                     if (messageManager != null)
                         messageManager.sendMessage(messageOut);
                 }
@@ -173,7 +174,7 @@ public class HotelSession extends Session
                 dblRate = new Double(((HotelRateResponseMessageData)message.get(HotelRateResponse.PRODUCT_RESPONSE_MESSAGE)).getRoomCost(PaxCategory.DOUBLE_ID));
             }
         
-            BaseMessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
+            MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
             BaseMessageHeader messageFilter = message.getMessageHeader();
             BaseMessageHeader messageHeader = new SessionMessageHeader(null, this);
             Map<String,Object> properties = new Hashtable<String,Object>();

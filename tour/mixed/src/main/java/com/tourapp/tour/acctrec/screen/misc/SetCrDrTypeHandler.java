@@ -77,7 +77,7 @@ public class SetCrDrTypeHandler extends FieldListener
     {
         if (m_recTrxStatus == null)
         {
-            RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner().getRecord());
+            RecordOwner recordOwner = this.getOwner().getRecord().findRecordOwner();
             m_recTrxStatus = new TrxStatus(recordOwner);
                               if (recordOwner != null)
                                   recordOwner.removeRecord(m_recTrxStatus);

@@ -219,13 +219,13 @@ public class AcctDetailDist extends VirtualRecord
         boolean bFreePeriod = false;
         if (recPeriod == null)
         {
-            recPeriod = new Period(Utility.getRecordOwner(this));
+            recPeriod = new Period(this.findRecordOwner());
             bFreePeriod = true;
         }
         boolean bFreeAcctDetail = false;
         if (recAcctDetail == null)
         {
-            recAcctDetail = new AcctDetail(Utility.getRecordOwner(this));
+            recAcctDetail = new AcctDetail(this.findRecordOwner());
             bFreeAcctDetail = true;
         }
         Date dateTrx = null;

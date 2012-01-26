@@ -90,7 +90,7 @@ public class AddNewCashDistHandler extends AddNewDistHandler
                         try {
                             if (m_recBankTrxBatchDist == null)
                             {
-                                RecordOwner recordOwner = Utility.getRecordOwner(this.getOwner());
+                                RecordOwner recordOwner = this.getOwner().findRecordOwner();
                                 m_recBankTrxBatchDist = new CashBatchDist(recordOwner);
                                 if (recordOwner != null)
                                     recordOwner.removeRecord(m_recBankTrxBatchDist);

@@ -74,7 +74,7 @@ public class CashDistConverter extends DistributionConverter
         RecordOwner ro = recordOwner;
         if (recordOwner == null)
             if (this.getField() != null)
-                ro = Utility.getRecordOwner(((BaseField)this.getField()).getRecord());
+                ro = ((BaseField)this.getField()).getRecord().findRecordOwner();
         CashBatchDist recCashBatchDist = this.createDistRecord(ro);
         if (recordOwner == null)
         {
@@ -117,7 +117,7 @@ public class CashDistConverter extends DistributionConverter
      */
     public Record getDetailRecord()
     {
-        Record recCashBatchDetail = ((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(CashBatchDetail.kCashBatchDetailFile);
+        Record recCashBatchDetail = (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(CashBatchDetail.kCashBatchDetailFile);
         return recCashBatchDetail;
     }
     /**

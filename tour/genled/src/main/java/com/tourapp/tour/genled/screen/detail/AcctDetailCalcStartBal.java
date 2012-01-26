@@ -97,7 +97,7 @@ public class AcctDetailCalcStartBal extends FileListener
             {
                 if (m_recAcctDetail == null)
                 {
-                    m_recAcctDetail = new AcctDetail(Utility.getRecordOwner(this.getOwner()));
+                    m_recAcctDetail = new AcctDetail(this.getOwner().findRecordOwner());
                     if (m_recAcctDetail.getRecordOwner() != null)
                         m_recAcctDetail.getRecordOwner().removeRecord(m_recAcctDetail);
                     m_recAcctDetail.addListener(new SubFileFilter(m_recAccount));

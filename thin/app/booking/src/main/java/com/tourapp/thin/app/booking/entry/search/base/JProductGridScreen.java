@@ -35,6 +35,7 @@ import javax.swing.table.TableColumn;
 
 import org.jbundle.model.Remote;
 import org.jbundle.model.db.Convert;
+import org.jbundle.model.message.MessageManager;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldInfo;
@@ -157,7 +158,7 @@ public class JProductGridScreen extends JGridScreen
             ((ProductGridModel)m_thinTableModel).addMySelectionListener(contextPanel);        // Listen for (selection) changes.
 
             // Listen for remote (returned rate) messages.
-            BaseMessageManager messageManager = applet.getApplication().getMessageManager();
+            MessageManager messageManager = applet.getApplication().getMessageManager();
             BaseMessageReceiver handler = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.SESSION_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
 
             FieldTable tableMain = this.getFieldList().getTable();
@@ -199,7 +200,7 @@ public class JProductGridScreen extends JGridScreen
      */
     public void free()
     {
-        BaseMessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
+        BaseMessageManager messageManager = (BaseMessageManager)this.getBaseApplet().getApplication().getMessageManager();
         messageManager.freeListenersWithSource(this);
         messageManager.freeFiltersWithSource(this);
 

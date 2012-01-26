@@ -61,9 +61,9 @@ public class SetupLabelTextHandler extends FileListener
         super.doValidRecord(bDisplayOption); 
         Record recRequest = this.getOwner();
         RecordOwner recordOwner = recRequest.getRecordOwner();
-        Record recScreen = recordOwner.getScreenRecord();
-        Record recRequestDetail = recordOwner.getRecord(RequestDetail.kRequestDetailFile);
-        Record recItem = recordOwner.getRecord(Brochure.kBrochureFile);
+        Record recScreen = (Record)recordOwner.getScreenRecord();
+        Record recRequestDetail = (Record)recordOwner.getRecord(RequestDetail.kRequestDetailFile);
+        Record recItem = (Record)recordOwner.getRecord(Brochure.kBrochureFile);
         BaseField fldFullAddress = recScreen.getField(RequestLabelsScreenRecord.kFullAddress);
         BaseField fldRequestText = recScreen.getField(RequestLabelsScreenRecord.kRequestText);
         fldFullAddress.initField(false);

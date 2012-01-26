@@ -246,7 +246,7 @@ public class BookingDetailSession extends TableModelSession
     public String getMealDesc(Date date) throws RemoteException
     {
         BookingDetail recCustSaleDetail = (BookingDetail)this.setRecordCurrent();
-        Record recMealPlan = recCustSaleDetail.getRecordOwner().getRecord(MealPlan.kMealPlanFile);
+        Record recMealPlan = (Record)recCustSaleDetail.getRecordOwner().getRecord(MealPlan.kMealPlanFile);
         return recCustSaleDetail.getMealDesc(date, false, recMealPlan);
     }
     /**

@@ -131,7 +131,7 @@ public class PaxSelectHandler extends SubCountHandler
         {
             Booking recBooking = (Booking)((ReferenceField)((BookingPax)this.getOwner()).getField(BookingPax.kBookingID)).getReference();
             Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-            BookingLine recBookingLine = new BookingLine(Utility.getRecordOwner(recBooking));
+            BookingLine recBookingLine = new BookingLine(recBooking.findRecordOwner());
             recBookingLine.addDetailBehaviors(recBooking, recTour);
             iErrorCode = recBookingLine.deleteAllDetail(recBooking, null, null, null);
             iErrorCode = recBooking.addBookingDetailPricing(recTour, recBookingLine, null, null, true); // Recost all, fix all prices

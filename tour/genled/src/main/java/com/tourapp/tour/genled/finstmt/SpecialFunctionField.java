@@ -80,7 +80,7 @@ public class SpecialFunctionField extends StringField
         converter = new FieldLengthConverter((Converter)converter, 25);
         if (m_recSpecialFunction == null)
          {
-             m_recSpecialFunction = new SpecialFunction(Utility.getRecordOwner(this.getRecord()));
+             m_recSpecialFunction = new SpecialFunction(this.getRecord().findRecordOwner());
             if (m_recSpecialFunction.getRecordOwner() != null)
                 m_recSpecialFunction.getRecordOwner().removeRecord(m_recSpecialFunction);
         }

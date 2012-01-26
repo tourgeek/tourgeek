@@ -110,7 +110,7 @@ public class PaPaxSelectHandler extends FileListener
                 if (recBooking.getEditMode() != DBConstants.EDIT_NONE)
                     if (recBooking.getField(Booking.kProfileID).isNull())
             {   // Set the agency screen to the main profile.
-                Profile recProfile = new Profile(Utility.getRecordOwner(this.getOwner()));
+                Profile recProfile = new Profile(this.getOwner().findRecordOwner());
                 try {
                     recBooking.addSecondProfile(recProfile);    // Agency Secondary logic
                     recProfile.setHandle(bookmarkMain, DBConstants.BOOKMARK_HANDLE);

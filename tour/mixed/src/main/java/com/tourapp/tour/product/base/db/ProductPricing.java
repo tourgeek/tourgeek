@@ -159,7 +159,7 @@ public class ProductPricing extends VirtualRecord
         { // Get the markup/down
             ProductTerms recNewProductTerms = null;
             if (recProductTerms == null)
-                recNewProductTerms = recProductTerms = new ProductTerms(Utility.getRecordOwner(this));
+                recNewProductTerms = recProductTerms = new ProductTerms(this.findRecordOwner());
             dCost = recProductTerms.calcNetCost(dCost, this.getField(ProductPricing.kProductTermsID));
             if (recNewProductTerms != null)
                 recNewProductTerms.free();

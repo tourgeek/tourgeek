@@ -372,7 +372,7 @@ public class Vendor extends Company
      */
     public ApTrx addSelectBehaviors()
     {
-        RecordOwner recordOwner = Utility.getRecordOwner(this);
+        RecordOwner recordOwner = this.findRecordOwner();
         ApTrx recApTrx2 = new ApTrx(recordOwner);      // Don't add second copy to screen
         if (recordOwner != null)
             recordOwner.removeRecord(recApTrx2);
@@ -409,7 +409,7 @@ public class Vendor extends Company
     {
         if (m_recApControl == null)
         {
-            RecordOwner recordOwner = Utility.getRecordOwner(this);
+            RecordOwner recordOwner = this.findRecordOwner();
             m_recApControl = new ApControl(recordOwner);
             if (recordOwner != null)
                 recordOwner.removeRecord(m_recApControl);

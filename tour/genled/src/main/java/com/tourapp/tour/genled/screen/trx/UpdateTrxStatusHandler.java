@@ -98,7 +98,7 @@ public class UpdateTrxStatusHandler extends FileListener
             || (iChangeType == DBConstants.DELETE_TYPE))
         {
             Record recTrxStatus = this.getOwner();
-            RecordOwner recordOwner = Utility.getRecordOwner(recTrxStatus);
+            RecordOwner recordOwner = recTrxStatus.findRecordOwner();
             if (m_recTrxType == null)
             {
                 m_recTrxType = new TransactionType(recordOwner);
