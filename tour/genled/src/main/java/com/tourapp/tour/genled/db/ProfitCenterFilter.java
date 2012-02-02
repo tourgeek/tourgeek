@@ -29,7 +29,7 @@ import org.jbundle.model.screen.*;
 public class ProfitCenterFilter extends FileFilter
 {
     protected BaseField m_fldFilter = null;
-    protected int m_fsAccountNoField;
+    protected String m_fsAccountNoField;
     /**
      * Default constructor.
      */
@@ -40,7 +40,7 @@ public class ProfitCenterFilter extends FileFilter
     /**
      * ProfitCenterFilter Method.
      */
-    public ProfitCenterFilter(int fsAccountNoField, BaseField fldFilter)
+    public ProfitCenterFilter(String fsAccountNoField, BaseField fldFilter)
     {
         this();
         this.init(fsAccountNoField, fldFilter);
@@ -48,9 +48,9 @@ public class ProfitCenterFilter extends FileFilter
     /**
      * Initialize class fields.
      */
-    public void init(int fsAccountNoField, BaseField fldFilter)
+    public void init(String fsAccountNoField, BaseField fldFilter)
     {
-        m_fsAccountNoField = 0;
+        m_fsAccountNoField = "";
         super.init(null);
         m_fsAccountNoField = fsAccountNoField;
         m_fldFilter = fldFilter;
@@ -66,7 +66,7 @@ public class ProfitCenterFilter extends FileFilter
     {
         int iAccountNo = (int)this.getOwner().getField(m_fsAccountNoField).getValue();
         int iProfitCenter = iAccountNo - ((int)(iAccountNo / 1000)) * 1000;
-        int iTargetProfitCenter = (int)((ReferenceField)m_fldFilter).getReference().getField(ProfitCenter.kProfitCenterNo).getValue();
+        int iTargetProfitCenter = (int)((ReferenceField)m_fldFilter).getReference().getField(ProfitCenter.PROFIT_CENTER_NO).getValue();
         if (iTargetProfitCenter != 0)
             if (iTargetProfitCenter != iProfitCenter)
                 return false;

@@ -101,27 +101,27 @@ public class TourCostAnalysis extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(ApTrx.kApTrxFile).setKeyArea(ApTrx.kTourIDKey);
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTourID).addListener(new ReadSecondaryHandler(this.getRecord(Tour.kTourFile)));
+        this.getRecord(ApTrx.AP_TRX_FILE).setKeyArea(ApTrx.TOUR_ID_KEY);
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.TOUR_ID).addListener(new ReadSecondaryHandler(this.getRecord(Tour.TOUR_FILE)));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new CompareFileFilter(this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTourID), this.getScreenRecord().getField(CostAnalysisScreenRecord.kTourID), "=", null, true));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new FilterApTrxDateRange(ApTrx.kDepartureDate, this.getScreenRecord().getField(ApReportScreenRecord.kStartDeparture), this.getScreenRecord().getField(ApReportScreenRecord.kEndDeparture)));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new CompareFileFilter(this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.TOUR_ID), this.getScreenRecord().getField(CostAnalysisScreenRecord.TOUR_ID), "=", null, true));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new FilterApTrxDateRange(ApTrx.DEPARTURE_DATE, this.getScreenRecord().getField(ApReportScreenRecord.START_DEPARTURE), this.getScreenRecord().getField(ApReportScreenRecord.END_DEPARTURE)));
         
-        Record recPaymentHistory = this.getRecord(PaymentHistory.kPaymentHistoryFile);
-        Record recApTrx = this.getRecord(ApTrx.kApTrxFile);
+        Record recPaymentHistory = this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
+        Record recApTrx = this.getRecord(ApTrx.AP_TRX_FILE);
         recPaymentHistory.addListener(new SubFileFilter(recApTrx));
         recApTrx.addListener(new RecountOnValidHandler(recPaymentHistory));
-        recPaymentHistory.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kPayments), PaymentHistory.kAmountLocal, false, true));
+        recPaymentHistory.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.PAYMENTS), PaymentHistory.AMOUNT_LOCAL, false, true));
         
-        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kSubTotalDepEstUSD), ApTrx.kDepartureEstimateLocal, true, true, true));
-        recApTrx.addListener(new InvoiceAmountSubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kSubTotalInvoiceUSD), ApTrx.kInvoiceLocal, true, true, true));
-        recPaymentHistory.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kSubTotalPaymentsUSD), PaymentHistory.kAmountLocal, true, true, true));
-        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kSubTotalBalUSD), ApTrx.kInvoiceBalanceLocal, true, true, true));
+        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.SUB_TOTAL_DEP_EST_USD), ApTrx.DEPARTURE_ESTIMATE_LOCAL, true, true, true));
+        recApTrx.addListener(new InvoiceAmountSubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.SUB_TOTAL_INVOICE_USD), ApTrx.INVOICE_LOCAL, true, true, true));
+        recPaymentHistory.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.SUB_TOTAL_PAYMENTS_USD), PaymentHistory.AMOUNT_LOCAL, true, true, true));
+        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.SUB_TOTAL_BAL_USD), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));
         
-        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kTotalBalance), ApTrx.kDepartureEstimateLocal, true, true));
-        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kTotalInvoiceUSD), ApTrx.kInvoiceLocal, true, true));
-        recPaymentHistory.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kTotalPaymentsUSD), PaymentHistory.kAmountLocal, true, true));
-        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.kTotalUSDBal), ApTrx.kInvoiceBalanceLocal, true, true));
+        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.TOTAL_BALANCE), ApTrx.DEPARTURE_ESTIMATE_LOCAL, true, true));
+        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.TOTAL_INVOICE_USD), ApTrx.INVOICE_LOCAL, true, true));
+        recPaymentHistory.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.TOTAL_PAYMENTS_USD), PaymentHistory.AMOUNT_LOCAL, true, true));
+        recApTrx.addListener(new SubCountHandler(this.getScreenRecord().getField(CostAnalysisScreenRecord.TOTAL_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true));
     }
     /**
      * Add the toolbars that belong with this screen.

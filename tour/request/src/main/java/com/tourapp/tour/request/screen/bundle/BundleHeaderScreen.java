@@ -61,7 +61,7 @@ public class BundleHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(BundleDetailScreenRecord.kBundleID).setEnabled(true);
+        this.getScreenRecord().getField(BundleDetailScreenRecord.BUNDLE_ID).setEnabled(true);
     }
     /**
      * SetupSFields Method.

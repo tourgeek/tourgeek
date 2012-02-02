@@ -74,7 +74,7 @@ public class HotelRateField extends BaseRateField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), HotelRate.kDescriptionKey, HotelRate.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), HotelRate.DESCRIPTION_KEY, HotelRate.DESCRIPTION, true, true);
     }
 
 }

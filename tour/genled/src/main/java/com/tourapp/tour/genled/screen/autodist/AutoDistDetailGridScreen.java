@@ -95,7 +95,7 @@ public class AutoDistDetailGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(AutoDist.kAutoDistFile).getField(AutoDist.kID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(AutoDist.AUTO_DIST_FILE).getField(AutoDist.ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * SetupSFields Method.

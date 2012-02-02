@@ -61,22 +61,22 @@ public class TrxDescStatusHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxSystemID).setEnabled(true);
-        this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxDescID).setEnabled(true);
+        this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_SYSTEM_ID).setEnabled(true);
+        this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID).setEnabled(true);
         
-        if (this.getRecord(TrxStatusScreenRecord.kTrxStatusScreenRecordFile).getField(TrxStatusScreenRecord.kTrxDescID).getComponent(0) instanceof SPopupBox)   // Yes
-            this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxSystemID).addListener(new FieldReSelectHandler((SPopupBox)this.getRecord(TrxStatusScreenRecord.kTrxStatusScreenRecordFile).getField(TrxStatusScreenRecord.kTrxDescID).getComponent(0)));
-        Record rec = this.getRecord(TrxDesc.kTrxDescFile);
-        this.getRecord(TrxDesc.kTrxDescFile).setKeyArea(TrxDesc.kTrxSystemIDKey);
-        this.getRecord(TrxDesc.kTrxDescFile).addListener(new SubFileFilter(this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxSystemID), TrxDesc.kTrxSystemID, null, -1, null, -1, false));
+        if (this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID).getComponent(0) instanceof SPopupBox)   // Yes
+            this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_SYSTEM_ID).addListener(new FieldReSelectHandler((SPopupBox)this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID).getComponent(0)));
+        Record rec = this.getRecord(TrxDesc.TRX_DESC_FILE);
+        this.getRecord(TrxDesc.TRX_DESC_FILE).setKeyArea(TrxDesc.TRX_SYSTEM_ID_KEY);
+        this.getRecord(TrxDesc.TRX_DESC_FILE).addListener(new SubFileFilter(this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_SYSTEM_ID), TrxDesc.TRX_SYSTEM_ID, null, null, null, null, false));
     }
     /**
      * SetupSFields Method.
      */
     public void setupSFields()
     {
-        this.getRecord(TrxStatusScreenRecord.kTrxStatusScreenRecordFile).getField(TrxStatusScreenRecord.kTrxSystemID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxSystem.kTrxSystemFile), true);
-        this.getRecord(TrxStatusScreenRecord.kTrxStatusScreenRecordFile).getField(TrxStatusScreenRecord.kTrxDescID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxDesc.kTrxDescFile), true);
+        this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_SYSTEM_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxSystem.TRX_SYSTEM_FILE), true);
+        this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxDesc.TRX_DESC_FILE), true);
     }
 
 }

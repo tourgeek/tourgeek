@@ -32,9 +32,13 @@ public class TourEntryScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String START_TARGET_DATE = "StartTargetDate";
     public static final int kStartTargetDate = kScreenRecordLastField + 1;
+    public static final String END_TARGET_DATE = "EndTargetDate";
     public static final int kEndTargetDate = kStartTargetDate + 1;
+    public static final String TOUR_HEADER_ID = "TourHeaderID";
     public static final int kTourHeaderID = kEndTargetDate + 1;
+    public static final String LAND_CLASS_ID = "LandClassID";
     public static final int kLandClassID = kTourHeaderID + 1;
     public static final int kTourEntryScreenRecordLastField = kLandClassID;
     public static final int kTourEntryScreenRecordFields = kLandClassID - DBConstants.MAIN_FIELD + 1;

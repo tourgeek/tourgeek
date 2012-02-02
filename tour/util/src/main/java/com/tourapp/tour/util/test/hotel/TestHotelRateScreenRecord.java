@@ -32,11 +32,17 @@ public class TestHotelRateScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PRODUCT_ID = "ProductID";
     public static final int kProductID = kScreenRecordLastField + 1;
+    public static final String RATE_ID = "RateID";
     public static final int kRateID = kProductID + 1;
+    public static final String CLASS_ID = "ClassID";
     public static final int kClassID = kRateID + 1;
+    public static final String DETAIL_DATE = "DetailDate";
     public static final int kDetailDate = kClassID + 1;
+    public static final String TOTAL_COST = "TotalCost";
     public static final int kTotalCost = kDetailDate + 1;
+    public static final String DISPLAY_COST_STATUS_ID = "DisplayCostStatusID";
     public static final int kDisplayCostStatusID = kTotalCost + 1;
     public static final int kTestHotelRateScreenRecordLastField = kDisplayCostStatusID;
     public static final int kTestHotelRateScreenRecordFields = kDisplayCostStatusID - DBConstants.MAIN_FIELD + 1;

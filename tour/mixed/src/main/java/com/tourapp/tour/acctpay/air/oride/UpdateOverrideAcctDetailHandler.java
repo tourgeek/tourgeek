@@ -60,7 +60,7 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
     public BaseField getTrxDate()
     {
         Record recTicketTrx = this.getOwner();
-        return recTicketTrx.getField(TicketTrx.kOverridePaidDate);
+        return recTicketTrx.getField(TicketTrx.OVERRIDE_PAID_DATE);
     }
     /**
      * Get the Credit Account field.
@@ -68,7 +68,7 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.kApControlFile).getField(ApControl.kOverrideRecAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.OVERRIDE_REC_ACCOUNT_ID);
     }
     /**
      * Get the Debit Account field.
@@ -76,7 +76,7 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.kApControlFile).getField(ApControl.kOverrideSummAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.OVERRIDE_SUMM_ACCOUNT_ID);
     }
     /**
      * Get the differential account (Cost Over/Under) for this type of trx.
@@ -84,7 +84,7 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
      */
     public ReferenceField getDiffAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.kApControlFile).getField(ApControl.kOverrideGainLossAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.OVERRIDE_GAIN_LOSS_ACCOUNT_ID);
     }
     /**
      * Get the transaction amount for this type of transaction.
@@ -93,8 +93,8 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
      */
     public double getTrxAmount(BaseField fldTypicalBalance)
     {
-        double dOverrideReceived = this.getOwner().getField(TicketTrx.kOverridePaid).getValue();
-        double dOverrideAmount = this.getOwner().getField(TicketTrx.kOverrideAmount).getValue();
+        double dOverrideReceived = this.getOwner().getField(TicketTrx.OVERRIDE_PAID).getValue();
+        double dOverrideAmount = this.getOwner().getField(TicketTrx.OVERRIDE_AMOUNT).getValue();
         if (Account.DEBIT.equalsIgnoreCase(fldTypicalBalance.getString()))
             return dOverrideReceived;
         else if (Account.CREDIT.equalsIgnoreCase(fldTypicalBalance.getString()))
@@ -108,7 +108,7 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
      */
     public boolean isNewTrx(int iChangeType)
     {
-        if (this.getOwner().getField(ApTrx.kTrxStatusID).getValue() == this.getTrxStatusID(TicketTrx.OVERRIDE_PAID))
+        if (this.getOwner().getField(ApTrx.TRX_STATUS_ID).getValue() == this.getTrxStatusID(TicketTrx.OVER_RIDE_PAID))
             return false;
         return super.isNewTrx(iChangeType);
     }
@@ -117,7 +117,7 @@ public class UpdateOverrideAcctDetailHandler extends UpdateApTrxHandler
      */
     public int getTrxStatusID(String strTrxStatus)
     {
-        return this.getTrxStatus().getTrxStatusID(TransactionType.AIR, TicketTrx.kTicketTrxFile, strTrxStatus);
+        return this.getTrxStatus().getTrxStatusID(TransactionType.AIR, TicketTrx.TICKET_TRX_FILE, strTrxStatus);
     }
 
 }

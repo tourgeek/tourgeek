@@ -27,13 +27,13 @@ import com.tourapp.model.tour.product.base.ota.db.*;
 /**
  *  OTACode - This is the virtual table that maps to an actual OTA code table.
  */
-public class OTACode extends Record
+public class OTACode extends VirtualRecord
      implements OTACodeModel
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int kID = kRecordLastField + 1;
-    public static final int kName = kID + 1;
+    //public static final int kID = kID;
+    public static final int kName = kVirtualRecordLastField + 1;
     public static final int kOTACodeLastField = kName;
     public static final int kOTACodeFields = kName - DBConstants.MAIN_FIELD + 1;
 
@@ -83,8 +83,11 @@ public class OTACode extends Record
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
-            field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == kID)
+        //{
+        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
         if (iFieldSeq == kName)
             field = new StringField(this, "Name", 60, null, null);
         if (field == null)
@@ -126,11 +129,11 @@ public class OTACode extends Record
     public Record applyMappedFilter()
     {
         Record recOTACodes = new OTACodes(this.getRecordOwner());
-        Record recOTACodeTable = ((ReferenceField)recOTACodes.getField(OTACodes.kOTACodeTableID)).getReferenceRecord();
-        recOTACodeTable.setKeyArea(OTACodeTable.kNameCodeKey);
+        Record recOTACodeTable = ((ReferenceField)recOTACodes.getField(OTACodes.OTA_CODE_TABLE_ID)).getReferenceRecord();
+        recOTACodeTable.setKeyArea(OTACodeTable.NAME_CODE_KEY);
         recOTACodes.addListener(new SubFileFilter(recOTACodeTable));
-        recOTACodes.addListener(new CompareFileFilter(OTACodes.kDeletionDate, (String)null, FileListener.EQUALS, null, false));
-        recOTACodeTable.getField(OTACodeTable.kNameCode).setString(this.getTableNames(false));
+        recOTACodes.addListener(new CompareFileFilter(OTACodes.DELETION_DATE, (String)null, FileListener.EQUALS, null, false));
+        recOTACodeTable.getField(OTACodeTable.NAME_CODE).setString(this.getTableNames(false));
         try {
             if (!recOTACodeTable.seek(DBConstants.EQUALS))
                 return null;    // Error!
@@ -147,9 +150,9 @@ public class OTACode extends Record
      */
     public void moveDataToThin(Record record, FieldList fieldList)
     {
-        if (!record.getField(OTACodes.kValue).isNull())
-            fieldList.getField(record.getField(OTACode.kID).getFieldName()).setString(record.getField(OTACodes.kValue).toString());
-        this.moveFieldToThin(fieldList.getField(record.getField(OTACodes.kName).getFieldName()), null, record);
+        if (!record.getField(OTACodes.VALUE).isNull())
+            fieldList.getField(record.getField(OTACode.ID).getFieldName()).setString(record.getField(OTACodes.VALUE).toString());
+        this.moveFieldToThin(fieldList.getField(record.getField(OTACodes.NAME).getFieldName()), null, record);
     }
     /**
      * Free this mapped record.

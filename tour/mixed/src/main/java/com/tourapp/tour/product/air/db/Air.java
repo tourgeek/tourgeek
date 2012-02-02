@@ -286,16 +286,16 @@ public class Air extends TransportProduct
     {
         super.addMasterListeners();
         
-        this.getField(Air.kAirlineID).addListener(new SetFlightDescHandler(null));
-        this.getField(Air.kFlightNo).addListener(new SetFlightDescHandler(null));
-        this.getField(Air.kCityCode).addListener(new SetFlightDescHandler(null));
-        this.getField(Air.kToCityCode).addListener(new SetFlightDescHandler(null));
-        this.getField(Air.kEtd).addListener(new SetFlightDescHandler(null));
-        this.getField(Air.kArriveTime).addListener(new SetFlightDescHandler(null));
-        this.getField(Air.kAddDays).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.AIRLINE_ID).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.FLIGHT_NO).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.CITY_CODE).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.TO_CITY_CODE).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.ETD).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.ARRIVE_TIME).addListener(new SetFlightDescHandler(null));
+        this.getField(Air.ADD_DAYS).addListener(new SetFlightDescHandler(null));
         
-        this.getField(Air.kAirlineID).addListener(new SetFlightCodeHandler(null));
-        this.getField(Air.kFlightNo).addListener(new SetFlightCodeHandler(null));
+        this.getField(Air.AIRLINE_ID).addListener(new SetFlightCodeHandler(null));
+        this.getField(Air.FLIGHT_NO).addListener(new SetFlightCodeHandler(null));
     }
     /**
      * Read the locally stored product cost (Override).
@@ -325,21 +325,21 @@ public class Air extends TransportProduct
         double dPPCost = this.getAirCost(dateTarget, iAirRateID, iAirClassID, false);
         double dPPPriceLocal = this.getAirCost(dateTarget, iAirRateID, iAirClassID, true);
         
-        this.getField(Air.kPPCost).setValue(dPPCost);
-        this.getField(Air.kPPPriceLocal).setValue(dPPPriceLocal);
+        this.getField(Air.PP_COST).setValue(dPPCost);
+        this.getField(Air.PP_PRICE_LOCAL).setValue(dPPPriceLocal);
         
         double dAirCost = dPPCost;
         
         double dTotalLocalCost = Math.floor(dAirCost * sTargetPax * 100.00 + 0.5) / 100.00;
         double dTotalLocalPrice = Math.floor(dPPPriceLocal * sTargetPax * 100.00 + 0.5) / 100.00;
         
-        this.getField(Air.kClassID).setValue(iAirClassID);
+        this.getField(Air.CLASS_ID).setValue(iAirClassID);
         
-        this.getField(Air.kPPCost).setValue(dAirCost);
-        this.getField(Product.kProductCost).setValue(dTotalLocalCost);
-        this.getField(Product.kProductPriceLocal).setValue(dTotalLocalPrice);
+        this.getField(Air.PP_COST).setValue(dAirCost);
+        this.getField(Product.PRODUCT_COST).setValue(dTotalLocalCost);
+        this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalLocalPrice);
         
-        responseProductMessageData.setPPCost(this.getField(Air.kPPCost).getValue());
+        responseProductMessageData.setPPCost(this.getField(Air.PP_COST).getValue());
         if (iAirClassID != productMessageData.getRateClassID())
         {
             responseProductMessageData.setRateClassID(productMessageData.getRateClassID());
@@ -351,7 +351,7 @@ public class Air extends TransportProduct
         if (dTotalLocalCost == 0)
             iStatus = BaseStatus.NOT_VALID;
         responseMessage.setMessageDataStatus(iStatus);
-        this.getField(Product.kDisplayCostStatusID).setValue(iStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iStatus);
         return messageReply;
     }
     /**
@@ -400,9 +400,9 @@ public class Air extends TransportProduct
         if (recProductCostLookup != null)
         {
             if (!bGetPrice)
-                dCost += recProductCostLookup.getCost(AirPricing.kCost, this.getProductTerms());
+                dCost += recProductCostLookup.getCost(AirPricing.COST, this.getProductTerms());
             else
-                dCost += recProductCostLookup.getField(AirPricing.kPrice).getValue();
+                dCost += recProductCostLookup.getField(AirPricing.PRICE).getValue();
         }
         return dCost;
     }
@@ -416,20 +416,20 @@ public class Air extends TransportProduct
      */
     public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
     {
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getDateTime();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
         short sTargetPax = recBookingDetail.getNoPax();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.kRateID).getValue();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.kClassID).getValue();
+        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
         AirPricing recProductPricing = ((AirPricing)this.getProductPricing()).getAirCost(this, dateTarget, iRateID, iClassID);
         if (recProductPricing != null)
         {
             int iPricingType = PricingType.COMPONENT_PRICING;
             int iPaxCategory = PaxCategory.ALL_ID;
             int iQuantity = sTargetPax;
-            double dAmount = recProductPricing.getField(ProductPricing.kPrice).getValue();
-            boolean bCommissionable = recProductPricing.getField(ProductPricing.kCommissionable).getState();
-            double dCommissionRate = recProductPricing.getField(ProductPricing.kCommissionRate).getValue();
-            String strPayAt = recProductPricing.getField(ProductPricing.kPayAt).toString();
+            double dAmount = recProductPricing.getField(ProductPricing.PRICE).getValue();
+            boolean bCommissionable = recProductPricing.getField(ProductPricing.COMMISSIONABLE).getState();
+            double dCommissionRate = recProductPricing.getField(ProductPricing.COMMISSION_RATE).getValue();
+            String strPayAt = recProductPricing.getField(ProductPricing.PAY_AT).toString();
             return recBookingDetail.updateBookingLine(recBookingLine, iPricingType, iPaxCategory, iQuantity, dAmount, bCommissionable, dCommissionRate, strPayAt, PricingStatus.OKAY, iChangeType);
         }
         return DBConstants.ERROR_RETURN;

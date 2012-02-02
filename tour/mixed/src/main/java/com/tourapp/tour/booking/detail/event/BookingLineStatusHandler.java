@@ -70,7 +70,7 @@ public class BookingLineStatusHandler extends FileListener
      */
     public void doValidRecord(boolean bDisplayOption)
     {
-        m_iOldPricingStatusID = (int)this.getOwner().getField(BookingLine.kPricingStatusID).getValue();
+        m_iOldPricingStatusID = (int)this.getOwner().getField(BookingLine.PRICING_STATUS_ID).getValue();
         
         super.doValidRecord(bDisplayOption);
     }
@@ -93,7 +93,7 @@ public class BookingLineStatusHandler extends FileListener
      */
     public int doRecordChange(FieldInfo field, int iChangeType, boolean bDisplayOption)
     {
-        int iNewPricingStatusID = (int)this.getOwner().getField(BookingLine.kPricingStatusID).getValue();
+        int iNewPricingStatusID = (int)this.getOwner().getField(BookingLine.PRICING_STATUS_ID).getValue();
         switch (iChangeType)
         {
             case DBConstants.AFTER_REQUERY_TYPE:
@@ -136,14 +136,14 @@ public class BookingLineStatusHandler extends FileListener
         }
         else if (screen != null)
         {
-            Record recBooking = (Record)screen.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)screen.getRecord(Booking.BOOKING_FILE);
             if (recBooking != null)
             {   // Always
                 this.setMainStatus(PricingStatus.VALID);
                 FileListener listener = new SubFileFilter(recBooking);
                 recBookingLine.addListener(listener);
                 int iOldKeyArea = recBookingLine.getDefaultOrder();
-                recBookingLine.setKeyArea(BookingLine.kBookingKey);
+                recBookingLine.setKeyArea(BookingLine.BOOKING_KEY);
                 recBookingLine.close();
                 try {
                     while (recBookingLine.hasNext())
@@ -167,9 +167,9 @@ public class BookingLineStatusHandler extends FileListener
         RecordOwner screen = this.getOwner().getRecordOwner();
         if (screen != null)
         {
-            Record recBooking = (Record)screen.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)screen.getRecord(Booking.BOOKING_FILE);
             if (recBooking != null)
-                recBooking.getField(Booking.kPricingStatusID).setValue(iMainStatus);
+                recBooking.getField(Booking.PRICING_STATUS_ID).setValue(iMainStatus);
         }
     }
 

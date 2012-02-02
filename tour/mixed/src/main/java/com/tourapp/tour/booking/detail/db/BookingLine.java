@@ -249,10 +249,10 @@ public class BookingLine extends BookingSub
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.getField(BookingLine.kPrice).addListener(new CalcLineFieldsHandler(null));
-        this.getField(BookingLine.kQuantity).addListener(new CalcLineFieldsHandler(null));
-        this.getField(BookingLine.kCommissionRate).addListener(new CalcLineFieldsHandler(null));
-        this.getField(BookingLine.kPricingStatusID).addListener(new InitFieldHandler(Integer.toString(PricingStatus.OKAY)));
+        this.getField(BookingLine.PRICE).addListener(new CalcLineFieldsHandler(null));
+        this.getField(BookingLine.QUANTITY).addListener(new CalcLineFieldsHandler(null));
+        this.getField(BookingLine.COMMISSION_RATE).addListener(new CalcLineFieldsHandler(null));
+        this.getField(BookingLine.PRICING_STATUS_ID).addListener(new InitFieldHandler(Integer.toString(PricingStatus.OKAY)));
         
         Booking recBooking = this.getBooking(false);
         if (recBooking != null)
@@ -264,7 +264,7 @@ public class BookingLine extends BookingSub
     public void addSlaveListeners()
     {
         super.addSlaveListeners();
-        HistoryHandler histBehavior = new HistoryHandler(BookingLineHistory.class.getName(), BookingLineHistory.kHistoryDate, -1);
+        HistoryHandler histBehavior = new HistoryHandler(BookingLineHistory.class.getName(), BookingLineHistory.HISTORY_DATE, null);
         this.addListener(histBehavior);
     }
     /**
@@ -275,11 +275,11 @@ public class BookingLine extends BookingSub
         super.addDetailBehaviors(recBooking, recTour);
         if (recBooking != null)
         {
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.kGross), BookingLine.kGross, true, true));
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.kCommission), BookingLine.kCommission, true, true));
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.kNet), BookingLine.kNet, true, true));
+            this.addListener(new SubCountHandler(recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
+            this.addListener(new SubCountHandler(recBooking.getField(Booking.COMMISSION), BookingLine.COMMISSION, true, true));
+            this.addListener(new SubCountHandler(recBooking.getField(Booking.NET), BookingLine.NET, true, true));
         
-            recBooking.getField(Booking.kNet).addListener(new SetDirtyOnChangeHandler(recBooking.getField(Booking.kBookingStatusID), true, true));  // This makes sure the booking will update which will trigger an A/R update
+            recBooking.getField(Booking.NET).addListener(new SetDirtyOnChangeHandler(recBooking.getField(Booking.BOOKING_STATUS_ID), true, true));  // This makes sure the booking will update which will trigger an A/R update
             recBooking.addListener(new UpdateOnCloseHandler(null));
         
             this.addSubListeners(recBooking);
@@ -291,34 +291,34 @@ public class BookingLine extends BookingSub
     public int setDetailProductFields(TourSub recTourHeaderDetail, Booking recBooking, Tour recTour, BaseField fldPaxID, BaseField fldQaID, BaseField fldModID)
     {
         super.setDetailProductFields(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
-        this.getField(BookingLine.kSequence).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.kSequence));
-        this.getField(BookingLine.kDescription).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.kDescription));
-        this.getField(BookingLine.kPrice).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.kPrice));
+        this.getField(BookingLine.SEQUENCE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.SEQUENCE));
+        this.getField(BookingLine.DESCRIPTION).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.DESCRIPTION));
+        this.getField(BookingLine.PRICE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.PRICE));
         
-        Record recPaxCategory = ((ReferenceField)recTourHeaderDetail.getField(TourHeaderLine.kPaxCategoryID)).getReference();
+        Record recPaxCategory = ((ReferenceField)recTourHeaderDetail.getField(TourHeaderLine.PAX_CATEGORY_ID)).getReference();
         if (recPaxCategory != null)
         {
-            int iPaxCat = (int)recPaxCategory.getField(PaxCategory.kRoomType).getValue();
+            int iPaxCat = (int)recPaxCategory.getField(PaxCategory.ROOM_TYPE).getValue();
             if (iPaxCat == PaxCategory.SINGLE_ID)
-                this.getField(BookingLine.kQuantity).moveFieldToThis(recBooking.getField(Booking.kSinglePax));
+                this.getField(BookingLine.QUANTITY).moveFieldToThis(recBooking.getField(Booking.SINGLE_PAX));
             else if (iPaxCat == PaxCategory.DOUBLE_ID)
-                this.getField(BookingLine.kQuantity).moveFieldToThis(recBooking.getField(Booking.kDoublePax));
+                this.getField(BookingLine.QUANTITY).moveFieldToThis(recBooking.getField(Booking.DOUBLE_PAX));
             else if (iPaxCat == PaxCategory.TRIPLE_ID)
-                this.getField(BookingLine.kQuantity).moveFieldToThis(recBooking.getField(Booking.kTriplePax));
+                this.getField(BookingLine.QUANTITY).moveFieldToThis(recBooking.getField(Booking.TRIPLE_PAX));
             else if (iPaxCat == PaxCategory.QUAD_ID)
-                this.getField(BookingLine.kQuantity).moveFieldToThis(recBooking.getField(Booking.kQuadPax));
+                this.getField(BookingLine.QUANTITY).moveFieldToThis(recBooking.getField(Booking.QUAD_PAX));
             else if (iPaxCat == PaxCategory.CHILD_ID)
-                this.getField(BookingLine.kQuantity).moveFieldToThis(recBooking.getField(Booking.kChildren));
+                this.getField(BookingLine.QUANTITY).moveFieldToThis(recBooking.getField(Booking.CHILDREN));
             else if ((iPaxCat == 0) || (iPaxCat == PaxCategory.ALL_ID))
-                this.getField(BookingLine.kQuantity).moveFieldToThis(recBooking.getField(Booking.kPax));
+                this.getField(BookingLine.QUANTITY).moveFieldToThis(recBooking.getField(Booking.PAX));
         }
-        this.getField(BookingLine.kCommissionable).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.kCommissionable));
-        if ((recTourHeaderDetail.getField(TourHeaderLine.kCommissionable).getState() == true) || (recTourHeaderDetail.getField(TourHeaderLine.kCommissionRate).isNull()))
-            this.getField(BookingLine.kCommissionRate).moveFieldToThis(recBooking.getField(Booking.kStdCommission));
+        this.getField(BookingLine.COMMISSIONABLE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.COMMISSIONABLE));
+        if ((recTourHeaderDetail.getField(TourHeaderLine.COMMISSIONABLE).getState() == true) || (recTourHeaderDetail.getField(TourHeaderLine.COMMISSION_RATE).isNull()))
+            this.getField(BookingLine.COMMISSION_RATE).moveFieldToThis(recBooking.getField(Booking.STD_COMMISSION));
         else
-            this.getField(BookingLine.kCommissionRate).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.kCommissionRate));
-        this.getField(BookingLine.kPayAt).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.kPayAt));
-        if (this.getField(BookingLine.kQuantity).getValue() == 0)
+            this.getField(BookingLine.COMMISSION_RATE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.COMMISSION_RATE));
+        this.getField(BookingLine.PAY_AT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLine.PAY_AT));
+        if (this.getField(BookingLine.QUANTITY).getValue() == 0)
             return DBConstants.ERROR_RETURN;    // This is not an error, it just tells the caller not to write this record.
         return DBConstants.NORMAL_RETURN;
     }
@@ -329,13 +329,13 @@ public class BookingLine extends BookingSub
     {
         if (this.getListener(HistoryHandler.class.getName()) == null)
         {
-            this.addListener(new SequenceHandler(this.getField(BookingLine.kSequence), recBooking.getField(Booking.kNextLineSequence)));
+            this.addListener(new SequenceHandler(this.getField(BookingLine.SEQUENCE), recBooking.getField(Booking.NEXT_LINE_SEQUENCE)));
         
-            this.getField(BookingLine.kQuantity).addListener(new InitFieldHandler(recBooking.getField(Booking.kPax)));
-            this.getField(BookingLine.kCommissionRate).addListener(new InitFieldHandler(recBooking.getField(Booking.kStdCommission)));
-            this.getField(BookingLine.kGross).setEnabled(false);
-            this.getField(BookingLine.kCommission).setEnabled(false);
-            this.getField(BookingLine.kNet).setEnabled(false);
+            this.getField(BookingLine.QUANTITY).addListener(new InitFieldHandler(recBooking.getField(Booking.PAX)));
+            this.getField(BookingLine.COMMISSION_RATE).addListener(new InitFieldHandler(recBooking.getField(Booking.STD_COMMISSION)));
+            this.getField(BookingLine.GROSS).setEnabled(false);
+            this.getField(BookingLine.COMMISSION).setEnabled(false);
+            this.getField(BookingLine.NET).setEnabled(false);
         }
     }
     /**
@@ -343,7 +343,7 @@ public class BookingLine extends BookingSub
      */
     public int deleteAllDetail(Booking recBooking, BaseField fldBookingPaxID, BaseField fldTourModuleID, Date dateStart)
     {
-        CompareFileFilter filter = new CompareFileFilter(BookingLine.kPricingStatusID, Integer.toString(PricingStatus.MANUAL), FileListener.NOT_EQUAL, null, true);
+        CompareFileFilter filter = new CompareFileFilter(BookingLine.PRICING_STATUS_ID, Integer.toString(PricingStatus.MANUAL), FileListener.NOT_EQUAL, null, true);
         this.addListener(filter);   // Don't delete manually entered items
         int iErrorCode = super.deleteAllDetail(recBooking, fldBookingPaxID, fldTourModuleID, dateStart);
         this.removeListener(filter, true);

@@ -127,12 +127,12 @@ public class BookingSub extends VirtualRecord
     {
         FileListener subFileBeh = new SubFileFilter(recBooking, true);
         this.addListener(subFileBeh);
-        this.setKeyArea(BookingSub.kBookingKey);
+        this.setKeyArea(BookingSub.BOOKING_KEY);
         RecordOwner screen = this.getRecordOwner();
         if (screen != null) if (screen instanceof GridScreen)
         {
             FieldListener reSelect = new FieldReSelectHandler((GridScreen)screen);
-            recBooking.getField(Booking.kID).addListener(reSelect);
+            recBooking.getField(Booking.ID).addListener(reSelect);
         }
         this.addListener(new InitBookingDetailHandler(recBooking, recTour));
     }
@@ -141,10 +141,10 @@ public class BookingSub extends VirtualRecord
      */
     public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
     {
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingSub.kBookingID).isNull()))
-            this.getField(BookingSub.kBookingID).moveFieldToThis(recBooking.getField(Booking.kID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingSub.kModuleID).isNull()))
-            this.getField(BookingSub.kModuleID).moveFieldToThis(recTour.getField(Tour.kTourHeaderID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingSub.BOOKING_ID).isNull()))
+            this.getField(BookingSub.BOOKING_ID).moveFieldToThis(recBooking.getField(Booking.ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingSub.MODULE_ID).isNull()))
+            this.getField(BookingSub.MODULE_ID).moveFieldToThis(recTour.getField(Tour.TOUR_HEADER_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return DBConstants.NORMAL_RETURN;
     }
     /**
@@ -155,8 +155,8 @@ public class BookingSub extends VirtualRecord
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         int iOldKeyOrder = recTourHeaderDetail.getDefaultOrder();
-        recTourHeaderDetail.setKeyArea(TourHeaderDetail.kTourHeaderOptionIDKey);
-        SubFileFilter subFileBehavior = new SubFileFilter(fldQaID, TourHeaderDetail.kTourHeaderOptionID, null, -1, null, -1);
+        recTourHeaderDetail.setKeyArea(TourHeaderDetail.TOUR_HEADER_OPTION_ID_KEY);
+        SubFileFilter subFileBehavior = new SubFileFilter(fldQaID, TourHeaderDetail.TOUR_HEADER_OPTION_ID, null, null, null, null);
         recTourHeaderDetail.addListener(subFileBehavior);
         try   {
             Object[] rgbFieldsEnabled = this.setEnableFieldListeners(false);
@@ -195,9 +195,9 @@ public class BookingSub extends VirtualRecord
         this.setOpenMode(iOldOpenMode & ~DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
         boolean bListenerEnabledState = true;
         try   {
-            if (recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class) != null)
-                bListenerEnabledState = recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class).setEnabledListener(false); // Don't want to sense a broken tour detail (would cause the pricingtype to change)
-            if (ModifyCodeField.ADD.equals(recTourHeaderDetail.getField(TourHeaderDetail.kModifyCode).getString()))
+            if (recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class) != null)
+                bListenerEnabledState = recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class).setEnabledListener(false); // Don't want to sense a broken tour detail (would cause the pricingtype to change)
+            if (ModifyCodeField.ADD.equals(recTourHeaderDetail.getField(TourHeaderDetail.MODIFY_CODE).getString()))
             {
                 this.setupDetailKey(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);    // This will set the record type
                 this.addNew();
@@ -207,28 +207,28 @@ public class BookingSub extends VirtualRecord
                 recBookingDetail.setupDetailKey(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);
                 iErrorCode = recBookingDetail.setDetailProductInfo(null, recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
             }
-            else // if ((recTourHeaderDetail.getField(TourDetail.kModifyCode) == ModifyCodeField.REPLACE) || (recTourDetail.getField(TourDetail.kModifyCode) == ModifyCodeField.DELETE))
+            else // if ((recTourHeaderDetail.getField(TourDetail.MODIFY_CODE) == ModifyCodeField.REPLACE) || (recTourDetail.getField(TourDetail.MODIFY_CODE) == ModifyCodeField.DELETE))
             {
-                this.setKeyArea(BookingSub.kDetailAccessKey);
+                this.setKeyArea(BookingSub.DETAIL_ACCESS_KEY);
                 this.setupDetailKey(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);
-                this.getField(BookingSub.kTourHeaderDetailID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.kModifyID));
+                this.getField(BookingSub.TOUR_HEADER_DETAIL_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.MODIFY_ID));
                 boolean bSuccess = this.seek(DBConstants.EQUALS);
                 if (bSuccess)
                 {
                     BookingSub recBookingDetail = (BookingSub)this.getTable().getCurrentTable().getRecord();
-                    if (ModifyCodeField.REPLACE.equals(recTourHeaderDetail.getField(TourHeaderDetail.kModifyCode).getString()))
+                    if (ModifyCodeField.REPLACE.equals(recTourHeaderDetail.getField(TourHeaderDetail.MODIFY_CODE).getString()))
                     {
                         recBookingDetail.edit();
                         iErrorCode = recBookingDetail.setDetailProductInfo(null, recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
                     }
-                    else // if (recTourHeaderDetail.getField(TourDetail.kModifyCode) == ModifyCodeField.DELETE))
+                    else // if (recTourHeaderDetail.getField(TourDetail.MODIFY_CODE) == ModifyCodeField.DELETE))
                     {
                         recBookingDetail.remove();
                     }
                 }
                 else
                 {
-                    if (ModifyCodeField.REPLACE.equals(recTourHeaderDetail.getField(TourHeaderDetail.kModifyCode).getString()))
+                    if (ModifyCodeField.REPLACE.equals(recTourHeaderDetail.getField(TourHeaderDetail.MODIFY_CODE).getString()))
                     {   // Modify item not found, add.
                         this.setupDetailKey(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);    // This will set the record type
                         this.addNew();
@@ -247,8 +247,8 @@ public class BookingSub extends VirtualRecord
             return ex.getErrorCode();
         } finally {
             this.setOpenMode(iOldOpenMode);
-            if (recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class) != null)
-                recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class).setEnabledListener(bListenerEnabledState); // Don't want to sense a broken tour detail (would cause the pricingtype to change)
+            if (recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class) != null)
+                recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class).setEnabledListener(bListenerEnabledState); // Don't want to sense a broken tour detail (would cause the pricingtype to change)
         }
         return iErrorCode;
     }
@@ -273,9 +273,9 @@ public class BookingSub extends VirtualRecord
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         if (fldModID != null)
-            this.getField(BookingSub.kModuleID).moveFieldToThis(fldModID);
+            this.getField(BookingSub.MODULE_ID).moveFieldToThis(fldModID);
         if (fldQaID != null)
-            this.getField(BookingSub.kTourHeaderOptionID).moveFieldToThis(fldQaID);
+            this.getField(BookingSub.TOUR_HEADER_OPTION_ID).moveFieldToThis(fldQaID);
         return iErrorCode;
     }
     /**
@@ -291,19 +291,19 @@ public class BookingSub extends VirtualRecord
      */
     public int setupDetailKey(TourSub recTourHeaderDetail, Booking recBooking, Tour recTour, BaseField fldPaxID, BaseField fldQaID, BaseField fldModID, Date dateStart)
     {
-        this.getField(BookingSub.kBookingID).moveFieldToThis(recBooking.getField(Booking.kID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        this.getField(BookingSub.kBookingPaxID).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        this.getField(BookingSub.BOOKING_ID).moveFieldToThis(recBooking.getField(Booking.ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        this.getField(BookingSub.BOOKING_PAX_ID).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if (fldPaxID != null) if (fldPaxID.getValue() != 0)
-            this.getField(BookingSub.kBookingPaxID).moveFieldToThis(fldPaxID, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingSub.BOOKING_PAX_ID).moveFieldToThis(fldPaxID, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if (fldModID != null)
-            this.getField(BookingSub.kModuleID).moveFieldToThis(fldModID, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingSub.MODULE_ID).moveFieldToThis(fldModID, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         else
-            this.getField(BookingSub.kModuleID).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingSub.MODULE_ID).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if (recTourHeaderDetail == null)
-            this.getField(BookingSub.kTourHeaderDetailID).initField(DBConstants.DISPLAY);
+            this.getField(BookingSub.TOUR_HEADER_DETAIL_ID).initField(DBConstants.DISPLAY);
         else
-            this.getField(BookingSub.kTourHeaderDetailID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.kID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((DateTimeField)this.getField(BookingSub.kModuleStartDate)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingSub.TOUR_HEADER_DETAIL_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((DateTimeField)this.getField(BookingSub.MODULE_START_DATE)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return DBConstants.NORMAL_RETURN;
     }
     /**
@@ -313,7 +313,7 @@ public class BookingSub extends VirtualRecord
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         int iOldKeyOrder = this.getDefaultOrder();
-        this.setKeyArea(BookingSub.kBookingKey);
+        this.setKeyArea(BookingSub.BOOKING_KEY);
         FileListener subFileBehavior = new SubFileFilter(recBooking, true);
         this.addListener(subFileBehavior);
         
@@ -323,13 +323,13 @@ public class BookingSub extends VirtualRecord
             {
                 BookingSub recBookingSub2 = (BookingSub)this.next();
                 
-                BaseField fldDetailModuleID = this.getField(BookingSub.kModuleID);
-                Date dateDetailStart = ((DateTimeField)this.getField(BookingSub.kModuleStartDate)).getDateTime();
+                BaseField fldDetailModuleID = this.getField(BookingSub.MODULE_ID);
+                Date dateDetailStart = ((DateTimeField)this.getField(BookingSub.MODULE_START_DATE)).getDateTime();
                 if (this instanceof BookingDetail)
-                    if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.TOUR_ID)
+                    if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.TOUR_ID)
                 {
-                    fldDetailModuleID = this.getField(BookingDetail.kProductID);
-                    dateDetailStart = ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();                    
+                    fldDetailModuleID = this.getField(BookingDetail.PRODUCT_ID);
+                    dateDetailStart = ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();                    
                 }
                 if ((fldTourModuleID != null) && (!fldTourModuleID.equals(fldDetailModuleID)))
                     continue;
@@ -357,34 +357,34 @@ public class BookingSub extends VirtualRecord
         int iDaysChange = (int)((dateStart.getTime() - dateOriginal.getTime() + DBConstants.KMS_IN_A_DAY - 1) / DBConstants.KMS_IN_A_DAY);
         int iErrorCode = DBConstants.NORMAL_RETURN;
         int iOldKeyOrder = this.getDefaultOrder();
-        this.setKeyArea(BookingDetail.kDetailAccessKey);
-        SubFileFilter subFileBehavior = new SubFileFilter(recBooking.getField(Booking.kID), BookingSub.kBookingID, fldBookingPaxID, BookingSub.kBookingPaxID, fldTourModuleID, BookingSub.kModuleID);
+        this.setKeyArea(BookingDetail.DETAIL_ACCESS_KEY);
+        SubFileFilter subFileBehavior = new SubFileFilter(recBooking.getField(Booking.ID), BookingSub.BOOKING_ID, fldBookingPaxID, BookingSub.BOOKING_PAX_ID, fldTourModuleID, BookingSub.MODULE_ID);
         this.addListener(subFileBehavior);
         try   {
             this.close();
             while (this.hasNext())
             {
                 BookingSub recBookingSub2 = (BookingSub)this.next();
-                if (((DateTimeField)recBookingSub2.getField(BookingSub.kModuleStartDate)).getDateTime().equals(dateOriginal))
+                if (((DateTimeField)recBookingSub2.getField(BookingSub.MODULE_START_DATE)).getDateTime().equals(dateOriginal))
                 {
                     recBookingSub2.edit();
                     if (recBookingSub2 instanceof BookingDetail)
                     {
-                        Calendar calDate = ((DateTimeField)recBookingSub2.getField(BookingDetail.kDetailDate)).getCalendar();
+                        Calendar calDate = ((DateTimeField)recBookingSub2.getField(BookingDetail.DETAIL_DATE)).getCalendar();
                         calDate.add(Calendar.DATE, iDaysChange);
-                        ((DateTimeField)recBookingSub2.getField(BookingDetail.kDetailDate)).setCalendar(calDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                        ((DateTimeField)recBookingSub2.getField(BookingDetail.DETAIL_DATE)).setCalendar(calDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
                     }
                     if (recBookingSub2 instanceof BookingAnswer)
                     {
-                        recBookingSub2.getField(BookingAnswer.kDetailAdded).setState(false);
-                        if ((recBookingSub2.getField(BookingAnswer.kAskForAnswer).getState() == false)
-                            || (recBookingSub2.getField(BookingAnswer.kAlwaysResolve).getState() == true))
+                        recBookingSub2.getField(BookingAnswer.DETAIL_ADDED).setState(false);
+                        if ((recBookingSub2.getField(BookingAnswer.ASK_FOR_ANSWER).getState() == false)
+                            || (recBookingSub2.getField(BookingAnswer.ALWAYS_RESOLVE).getState() == true))
                         {   // If automatic or forced, must ask again
                             recBookingSub2.remove();
                             continue;
                         }
                     }
-                    ((DateTimeField)recBookingSub2.getField(BookingSub.kModuleStartDate)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                    ((DateTimeField)recBookingSub2.getField(BookingSub.MODULE_START_DATE)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
                     recBookingSub2.set();
                 }
             }
@@ -402,7 +402,7 @@ public class BookingSub extends VirtualRecord
      */
     public Booking getBooking(boolean bCreateAndReadCurrent)
     {
-        ReferenceField fldBookingID = (ReferenceField)this.getField(BookingSub.kBookingID);
+        ReferenceField fldBookingID = (ReferenceField)this.getField(BookingSub.BOOKING_ID);
         if (bCreateAndReadCurrent)
             return (Booking)fldBookingID.getReference();
         else

@@ -15,6 +15,10 @@ public class OTACode extends FieldList
     implements OTACodeModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+
     public OTACode()
     {
         super();
@@ -46,6 +50,13 @@ public class OTACode extends FieldList
         FieldInfo field = null;
         field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
+        field.setHidden(true);
+        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field.setDataClass(Date.class);
+        field.setHidden(true);
+        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field.setDataClass(Boolean.class);
+        field.setHidden(true);
         field = new FieldInfo(this, "Name", 60, null, null);
     }
     /**

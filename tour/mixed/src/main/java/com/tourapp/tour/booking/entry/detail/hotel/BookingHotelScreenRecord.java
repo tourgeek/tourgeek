@@ -41,9 +41,13 @@ public class BookingHotelScreenRecord extends BookingDetailScreenRecord
     private static final long serialVersionUID = 1L;
 
     //public static final int kMarkupFromLast = kMarkupFromLast;
+    public static final String SINGLE_COST_LOCAL = "SingleCostLocal";
     public static final int kSingleCostLocal = kBookingDetailScreenRecordLastField + 1;
+    public static final String DOUBLE_COST_LOCAL = "DoubleCostLocal";
     public static final int kDoubleCostLocal = kSingleCostLocal + 1;
+    public static final String TRIPLE_COST_LOCAL = "TripleCostLocal";
     public static final int kTripleCostLocal = kDoubleCostLocal + 1;
+    public static final String QUAD_COST_LOCAL = "QuadCostLocal";
     public static final int kQuadCostLocal = kTripleCostLocal + 1;
     public static final int kBookingHotelScreenRecordLastField = kQuadCostLocal;
     public static final int kBookingHotelScreenRecordFields = kQuadCostLocal - DBConstants.MAIN_FIELD + 1;

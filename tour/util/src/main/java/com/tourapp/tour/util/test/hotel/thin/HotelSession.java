@@ -109,8 +109,8 @@ public class HotelSession extends Session
         if ("getrate".equalsIgnoreCase(strCommand))
         {
             Object objHotelID = properties.get("ProductID");
-            this.getScreenRecord().getField(TestHotelRateScreenRecord.kProductID).setString(objHotelID.toString());
-            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.kProductID)).getReference();
+            this.getScreenRecord().getField(TestHotelRateScreenRecord.PRODUCT_ID).setString(objHotelID.toString());
+            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.PRODUCT_ID)).getReference();
             if ((recHotel.getEditMode() == DBConstants.EDIT_CURRENT)
                 || (recHotel.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
@@ -142,8 +142,8 @@ public class HotelSession extends Session
                 if (MessageTransport.DIRECT.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.SEND_MESSAGE_BY_PARAM)))
                 {
                     BaseProductResponse messageReply = (BaseProductResponse)recHotel.processCostRequestInMessage(messageOut, null).getMessageDataDesc(null);
-                    double dProductCost = recHotel.getField(Product.kProductCost).getValue();
-                    this.getRecord(TestHotelRateScreenRecord.kTestHotelRateScreenRecordFile).getField(TestHotelRateScreenRecord.kTotalCost).setValue(dProductCost);
+                    double dProductCost = recHotel.getField(Product.PRODUCT_COST).getValue();
+                    this.getScreenRecord().getField(TestHotelRateScreenRecord.TOTAL_COST).setValue(dProductCost);
                 }
                 else
                 {

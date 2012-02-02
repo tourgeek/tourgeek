@@ -63,7 +63,7 @@ public class CalcHourlyHandler extends ReComputeFieldHandler
      */
     public double computeValue(double dSrcValue)
     {
-        String tempString = this.getOwner().getRecord().getField(Employee.kPayFrequency).getString();
+        String tempString = this.getOwner().getRecord().getField(Employee.PAY_FREQUENCY).getString();
         int multiplier = 0;
         if (tempString.equalsIgnoreCase("D"))
             multiplier = 365;

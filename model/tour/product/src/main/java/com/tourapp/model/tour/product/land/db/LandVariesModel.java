@@ -8,6 +8,15 @@ import org.jbundle.model.db.*;
 
 public interface LandVariesModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String CODE = "Code";
+    public static final String DESCRIPTION = "Description";
+    public static final String VARIES_BY = "VariesBy";
+
+    public static final String VARIES_BY_KEY = "VariesBy";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final String VARIES_PARAM = "varies";
     public static final String LAND_VARIES_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandVariesScreen";
     public static final String LAND_VARIES_GRID_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandVariesGridScreen";

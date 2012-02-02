@@ -85,7 +85,7 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
      */
     public void openOtherRecords()
     {
-        String strOption = this.getMainRecord().getField(TourHeaderOption.kTourOrOption).toString();
+        String strOption = this.getMainRecord().getField(TourHeaderOption.TOUR_OR_OPTION).toString();
         StringField fldTourOrOption = new StringField(null, "TourOrOption", 1, null, null);
         fldTourOrOption.setString(strOption);
         if (TourHeaderOption.TOUR.equals(strOption))
@@ -100,14 +100,14 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
             else
                 m_recHeader = new TourHeader(this);
         }
-        Object objHandle = this.getMainRecord().getField(TourHeaderOption.kTourOrOptionID).getData();
+        Object objHandle = this.getMainRecord().getField(TourHeaderOption.TOUR_OR_OPTION_ID).getData();
         try {
             m_recHeader.setHandle(objHandle, DBConstants.BOOKMARK_HANDLE);
         } catch (DBException ex) {
             ex.printStackTrace();
         }
         this.getMainRecord().addListener(new FreeOnFreeHandler(fldTourOrOption));
-        this.getMainRecord().addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.kTourOrOption, (BaseField)this.getHeaderRecord().getCounterField(), TourHeaderOption.kTourOrOptionID, null, -1));
+        this.getMainRecord().addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.TOUR_OR_OPTION, (BaseField)this.getHeaderRecord().getCounterField(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
         super.openOtherRecords(); // Added
     }
     /**
@@ -125,19 +125,19 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(TourHeaderOption.kTourOrOptionKey);
+        this.getMainRecord().setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
         StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
         if (this.getHeaderRecord() instanceof TourHeader)
             fldTourOrOption.setString(TourHeaderOption.TOUR);
         else
         {
             fldTourOrOption.setString(TourHeaderOption.OPTION);
-            this.getMainRecord().addListener(new SubCountHandler(this.getHeaderRecord().getField(TourHeaderOption.kDetailOptionCount), false, true));
+            this.getMainRecord().addListener(new SubCountHandler(this.getHeaderRecord().getField(TourHeaderOption.DETAIL_OPTION_COUNT), false, true));
         }
-        ((ReferenceField)this.getMainRecord().getField(TourHeaderOption.kTourOrOptionID)).setReferenceRecord(m_recHeader);
+        ((ReferenceField)this.getMainRecord().getField(TourHeaderOption.TOUR_OR_OPTION_ID)).setReferenceRecord(m_recHeader);
         
         this.getMainRecord().addListener(new FreeOnFreeHandler(fldTourOrOption));
-        this.getMainRecord().addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.kTourOrOption, (BaseField)this.getHeaderRecord().getCounterField(), TourHeaderOption.kTourOrOptionID, null, -1));
+        this.getMainRecord().addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.TOUR_OR_OPTION, (BaseField)this.getHeaderRecord().getCounterField(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
         
         ((TourHeaderOption)this.getMainRecord()).addSubFileIntegrityHandlers();
     }

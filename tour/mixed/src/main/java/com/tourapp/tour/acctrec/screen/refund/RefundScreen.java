@@ -87,17 +87,17 @@ public class RefundScreen extends BookingArTrxScreen
         super.addListeners();
         
         this.getMainRecord().getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(false);    // Since I will be doing the updating
-        this.getMainRecord().addListener(new UpdateRefundAcctDetailHandler(this.getRecord(Booking.kBookingFile)));
+        this.getMainRecord().addListener(new UpdateRefundAcctDetailHandler(this.getRecord(Booking.BOOKING_FILE)));
         
         try {
             this.getMainRecord().addNew();
         } catch (DBException e) {
         }
         this.setEnabled(true);
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_SUBMITTED);
-        this.getMainRecord().getField(ArTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
-        this.getMainRecord().getField(ArTrx.kTrxStatusID).setEnabled(false);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_SUBMITTED);
+        this.getMainRecord().getField(ArTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
+        this.getMainRecord().getField(ArTrx.TRX_STATUS_ID).setEnabled(false);
     }
 
 }

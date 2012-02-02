@@ -98,10 +98,10 @@ public class CreditBaseGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(McoScreenRecord.kCardID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kCardID)));
+        this.getScreenRecord().getField(McoScreenRecord.CARD_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.CARD_ID)));
         
-        this.getMainRecord().addListener(new CompareFileFilter(CreditCard.kCardID, this.getScreenRecord().getField(McoScreenRecord.kCardID), "=", null, false));
-        this.getScreenRecord().getField(McoScreenRecord.kCardID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(CreditCard.CARD_ID, this.getScreenRecord().getField(McoScreenRecord.CARD_ID), "=", null, false));
+        this.getScreenRecord().getField(McoScreenRecord.CARD_ID).addListener(new FieldReSelectHandler(this));
         this.setAppending(false);
     }
     /**
@@ -109,7 +109,7 @@ public class CreditBaseGridScreen extends GridScreen
      */
     public void addToolbarButtons(ToolScreen toolScreen)
     {
-        this.getScreenRecord().getField(McoScreenRecord.kCardID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.CARD_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * SetupSFields Method.

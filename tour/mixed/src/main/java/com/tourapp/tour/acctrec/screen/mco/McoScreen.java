@@ -82,10 +82,10 @@ public class McoScreen extends Screen
     {
         super.addListeners();
         this.getMainRecord().setOpenMode(this.getMainRecord().getOpenMode() | DBConstants.OPEN_READ_ONLY);
-        this.getMainRecord().setKeyArea(Mco.kMcoNoKey);
+        this.getMainRecord().setKeyArea(Mco.MCO_NO_KEY);
         this.setEnabled(false);
-        this.getMainRecord().getField(Mco.kMcoNo).setEnabled(true);
-        this.getMainRecord().getField(Mco.kMcoNo).addListener(new MainFieldHandler(Mco.kMcoNoKey));
+        this.getMainRecord().getField(Mco.MCO_NO).setEnabled(true);
+        this.getMainRecord().getField(Mco.MCO_NO).addListener(new MainFieldHandler(Mco.MCO_NO_KEY));
     }
     /**
      * Add button(s) to the toolbar.

@@ -33,13 +33,21 @@ public class CashBatchScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String USER_ID = "UserID";
     public static final int kUserID = kScreenRecordLastField + 1;
+    public static final String TOTAL = "Total";
     public static final int kTotal = kUserID + 1;
+    public static final String COUNT = "Count";
     public static final int kCount = kTotal + 1;
+    public static final String MCO_NO = "McoNo";
     public static final int kMcoNo = kCount + 1;
+    public static final String BOOKING_ID = "BookingID";
     public static final int kBookingID = kMcoNo + 1;
+    public static final String CHANGE_BALANCE = "ChangeBalance";
     public static final int kChangeBalance = kBookingID + 1;
+    public static final String END_BALANCE = "EndBalance";
     public static final int kEndBalance = kChangeBalance + 1;
+    public static final String AIRLINE_ID = "AirlineID";
     public static final int kAirlineID = kEndBalance + 1;
     public static final int kCashBatchScreenRecordLastField = kAirlineID;
     public static final int kCashBatchScreenRecordFields = kAirlineID - DBConstants.MAIN_FIELD + 1;

@@ -74,18 +74,18 @@ public class BookingDefaultHandler extends CopyStringHandler
         if (!this.getOwner().isNull())
         {
             Record recCashBatchDetail = this.getOwner().getRecord();
-            if (recCashBatchDetail.getField(CashBatchDetail.kAmount).isNull())
-                if (recCashBatchDetail.getField(CashBatchDetail.kComments).isNull())
+            if (recCashBatchDetail.getField(CashBatchDetail.AMOUNT).isNull())
+                if (recCashBatchDetail.getField(CashBatchDetail.COMMENTS).isNull())
             {
-                Record recBooking = ((ReferenceField)recCashBatchDetail.getField(CashBatchDetail.kBookingID)).getReference();
+                Record recBooking = ((ReferenceField)recCashBatchDetail.getField(CashBatchDetail.BOOKING_ID)).getReference();
                 if (recBooking != null)
                 { // Got a valid booking, see if this payment is a probably a deposit or final payment
                     boolean bFinalPayment = false;
-                    if (recBooking.getField(Booking.kDepositReceived).getState() == true)
+                    if (recBooking.getField(Booking.DEPOSIT_RECEIVED).getState() == true)
                         bFinalPayment = true;
                     else
                     {
-                        Calendar calDate = ((DateTimeField)recBooking.getField(Booking.kFinalPaymentDueDate)).getCalendar();
+                        Calendar calDate = ((DateTimeField)recBooking.getField(Booking.FINAL_PAYMENT_DUE_DATE)).getCalendar();
                         if (calDate != null)
                         {
                             calDate.add(Calendar.DATE, -20);
@@ -106,7 +106,7 @@ public class BookingDefaultHandler extends CopyStringHandler
                             if (recordOwner != null)
                                 recordOwner.removeRecord(m_recArTrx);
                             m_recArTrx.addListener(new SubFileFilter(recBooking));
-                            m_recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.kBalance), ArTrx.kAmount, false, true));
+                            m_recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, false, true));
                         }
                         try {
                             m_recArTrx.close();
@@ -117,21 +117,21 @@ public class BookingDefaultHandler extends CopyStringHandler
                                 m_recArTrx.next();
                             }
                             if (bNoEntries)
-                                dAmount = recBooking.getField(Booking.kNet).getValue();
+                                dAmount = recBooking.getField(Booking.NET).getValue();
                             else
-                                dAmount = recBooking.getField(Booking.kBalance).getValue();
+                                dAmount = recBooking.getField(Booking.BALANCE).getValue();
                         } catch (DBException ex)    {
                             ex.printStackTrace();
                         }
                     }
                     else
                     {   // Deposit
-                        dAmount = recBooking.getField(Booking.kDeposit).getValue();
+                        dAmount = recBooking.getField(Booking.DEPOSIT).getValue();
                     }
                     if (dAmount != 0)
                     {
-                        recCashBatchDetail.getField(CashBatchDetail.kAmount).setValue(dAmount);
-                        recCashBatchDetail.getField(CashBatchDetail.kComments).setString(strComment);
+                        recCashBatchDetail.getField(CashBatchDetail.AMOUNT).setValue(dAmount);
+                        recCashBatchDetail.getField(CashBatchDetail.COMMENTS).setString(strComment);
                     }
                 }
             }

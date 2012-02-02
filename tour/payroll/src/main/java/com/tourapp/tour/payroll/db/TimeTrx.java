@@ -526,7 +526,7 @@ public class TimeTrx extends VirtualRecord
         /* HACK
             if (taxCode.IsEmpty())
                 return 0;
-            StringSubFileFilter temp = new StringSubFileFilter(taxCode, maritalCode, kTaxCode, kMaritalStatus);
+            StringSubFileFilter temp = new StringSubFileFilter(taxCode, maritalCode, TAX_CODE, MARITAL_STATUS);
             prTaxRates.addListener(temp);
             prTaxRates.SelectRecords(kReadOnlyMode);
             double lastCutOff = 0, lastTaxRate = 0, cutOffAmount = 0, taxRate = 0;

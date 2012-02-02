@@ -417,7 +417,7 @@ public class TourHeaderDetail extends TourSub
      */
     public BaseField getSharedRecordTypeKey()
     {
-        return this.getField(TourHeaderDetail.kProductTypeID);
+        return this.getField(TourHeaderDetail.PRODUCT_TYPE_ID);
     }
     /**
      * Get the shared record that goes with this key.

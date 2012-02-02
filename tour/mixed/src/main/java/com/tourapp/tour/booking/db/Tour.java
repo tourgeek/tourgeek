@@ -387,12 +387,12 @@ public class Tour extends Job
         
         this.addListener(new NoDeleteModifyHandler(true, false));
         
-        this.getField(Tour.kFinalized).addListener(new FinalizeHandler(null));
-        this.getField(Tour.kOrderComponents).addListener(new TourOrderHandler(null));
-        this.getField(Tour.kCancelled).addListener(new TourOrderHandler(null));
+        this.getField(Tour.FINALIZED).addListener(new FinalizeHandler(null));
+        this.getField(Tour.ORDER_COMPONENTS).addListener(new TourOrderHandler(null));
+        this.getField(Tour.CANCELLED).addListener(new TourOrderHandler(null));
         
-        this.getField(Tour.kTourStatusSummary).addListener(new UpdateTourStatusSummaryHandler(null));
-        ((TourStatusField)this.getField(Tour.kTourStatusID)).getIconField(null).addListener(new TourStatusUpdateHandler(null));
+        this.getField(Tour.TOUR_STATUS_SUMMARY).addListener(new UpdateTourStatusSummaryHandler(null));
+        ((TourStatusField)this.getField(Tour.TOUR_STATUS_ID)).getIconField(null).addListener(new TourStatusUpdateHandler(null));
         
         this.addActionListeners();
     }
@@ -403,49 +403,49 @@ public class Tour extends Job
     public void addScreenListeners(RecordOwner screen)
     {
         super.addScreenListeners(screen);
-        this.getField(Tour.kServConf).setEnabled(false);
-        if (this.getField(Tour.kManualTourStatus).getListener(DisableOnFieldHandler.class) == null)
-            this.getField(Tour.kManualTourStatus).addListener(new DisableOnFieldHandler(this.getField(Tour.kTourStatusID), BooleanField.YES, false));
+        this.getField(Tour.SERV_CONF).setEnabled(false);
+        if (this.getField(Tour.MANUAL_TOUR_STATUS).getListener(DisableOnFieldHandler.class) == null)
+            this.getField(Tour.MANUAL_TOUR_STATUS).addListener(new DisableOnFieldHandler(this.getField(Tour.TOUR_STATUS_ID), BooleanField.YES, false));
     }
     /**
      * AddActionListeners Method.
      */
     public void addActionListeners()
     {
-        this.getField(Tour.kDepartureDate).addListener(new FieldDataScratchHandler(null));
+        this.getField(Tour.DEPARTURE_DATE).addListener(new FieldDataScratchHandler(null));
         
-        this.getField(Tour.kOrderCompDate).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kFinalizeDate).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kClosedDate).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kFinalDocDate).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kTicketDate).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kSp1Date).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kSp2Date).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kDepartureDate).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.ORDER_COMP_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.FINALIZE_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.CLOSED_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.FINAL_DOC_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.TICKET_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.SP_1_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.SP_2_DATE).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.DEPARTURE_DATE).addListener(new CalcActionDateHandler(null));
         
-        this.getField(Tour.kOrderComponents).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kFinalized).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kClosed).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kFinalDocs).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kTickets).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kSp1).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kSp2).addListener(new CalcActionDateHandler(null));
-        this.getField(Tour.kDeparted).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.ORDER_COMPONENTS).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.FINALIZED).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.CLOSED).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.FINAL_DOCS).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.TICKETS).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.SP_1).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.SP_2).addListener(new CalcActionDateHandler(null));
+        this.getField(Tour.DEPARTED).addListener(new CalcActionDateHandler(null));
         
-        this.getField(Tour.kTourStatusID).addListener(new TourStatusEventHandler(null));
+        this.getField(Tour.TOUR_STATUS_ID).addListener(new TourStatusEventHandler(null));
         
-        this.getField(Tour.kOrderComponents).addListener(new TourEventHandler(TourEvent.ORDER_COMPONENTS));
-        this.getField(Tour.kFinalized).addListener(new TourEventHandler(TourEvent.FINALIZATION));
-        this.getField(Tour.kClosed).addListener(new TourEventHandler(TourEvent.TOUR_CLOSED));
-        this.getField(Tour.kFinalDocs).addListener(new TourEventHandler(TourEvent.FINAL_DOCS));
-        this.getField(Tour.kTickets).addListener(new TourEventHandler(TourEvent.TICKETING));
-        this.getField(Tour.kSp1).addListener(new TourEventHandler(TourEvent.SPECIAL_1));
-        this.getField(Tour.kSp2).addListener(new TourEventHandler(TourEvent.SPECIAL_2));
-        this.getField(Tour.kDeparted).addListener(new TourEventHandler(TourEvent.DEPARTURE));
+        this.getField(Tour.ORDER_COMPONENTS).addListener(new TourEventHandler(TourEvent.ORDER_COMPONENTS));
+        this.getField(Tour.FINALIZED).addListener(new TourEventHandler(TourEvent.FINALIZATION));
+        this.getField(Tour.CLOSED).addListener(new TourEventHandler(TourEvent.TOUR_CLOSED));
+        this.getField(Tour.FINAL_DOCS).addListener(new TourEventHandler(TourEvent.FINAL_DOCS));
+        this.getField(Tour.TICKETS).addListener(new TourEventHandler(TourEvent.TICKETING));
+        this.getField(Tour.SP_1).addListener(new TourEventHandler(TourEvent.SPECIAL_1));
+        this.getField(Tour.SP_2).addListener(new TourEventHandler(TourEvent.SPECIAL_2));
+        this.getField(Tour.DEPARTED).addListener(new TourEventHandler(TourEvent.DEPARTURE));
         
-        this.getField(Tour.kCancelled).addListener(new TourEventHandler(TourEvent.TOUR_CANCELLED));
+        this.getField(Tour.CANCELLED).addListener(new TourEventHandler(TourEvent.TOUR_CANCELLED));
         
-        this.getField(Tour.kServConf).addListener(new TourEventHandler(TourEvent.SERVICES_CONFIRMED));
+        this.getField(Tour.SERV_CONF).addListener(new TourEventHandler(TourEvent.SERVICES_CONFIRMED));
     }
     /**
      * Given the tour header and the departure date, setup or locate
@@ -457,7 +457,7 @@ public class Tour extends Job
             && (recTourHeader.getEditMode() != DBConstants.EDIT_IN_PROGRESS))
                 return DBConstants.ERROR_RETURN;    // Must pass in a valid tour header!
         boolean bNewTour = false;
-        if (recTourHeader.getField(TourHeader.kTourSeries).getState() == false)
+        if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() == false)
             bNewTour = true;    // New tour
         if (this.getRecordOwner() instanceof TourScreen)
         { // Special case - series entry
@@ -490,7 +490,7 @@ public class Tour extends Job
             rgobjEnabledFields = this.setEnableFieldListeners(false);
         
             if (fldDepartureDate == null)
-                fldDepartureDate = this.getField(Tour.kDepartureDate);
+                fldDepartureDate = this.getField(Tour.DEPARTURE_DATE);
             if (fldDepartureDate.getRecord() == this)
             {
                 fldTemp = new DateField(null, DBConstants.BLANK, DBConstants.DEFAULT_FIELD_LENGTH, DBConstants.BLANK, null);
@@ -499,8 +499,8 @@ public class Tour extends Job
             }
         
             this.addNew();
-            this.setKeyArea(Tour.kTourHeaderIDKey);
-            subBehavior = new SubFileFilter(recTourHeader.getField(TourHeader.kID), Tour.kTourHeaderID, fldDepartureDate, Tour.kDepartureDate, null, -1);
+            this.setKeyArea(Tour.TOUR_HEADER_ID_KEY);
+            subBehavior = new SubFileFilter(recTourHeader.getField(TourHeader.ID), Tour.TOUR_HEADER_ID, fldDepartureDate, Tour.DEPARTURE_DATE, null, null);
             this.addListener(subBehavior);
         
             this.close();
@@ -517,7 +517,7 @@ public class Tour extends Job
                     this.setEnableFieldListeners(rgobjEnabledFields);
                 rgobjEnabledFields = null;
         
-                this.setKeyArea(Tour.kIDKey);   // Re-read and do all listeners.
+                this.setKeyArea(Tour.ID_KEY);   // Re-read and do all listeners.
                 this.seek(DBConstants.EQUALS);
                 this.edit();
                 this.calcTourDates(recTourHeader); // If change, resched all
@@ -566,20 +566,20 @@ public class Tour extends Job
             if (fldDepDate instanceof DateTimeField)
                 calDepDate = ((DateTimeField)fldDepDate).getCalendar();
             if (calDepDate == null)
-                calDepDate = ((DateTimeField)this.getField(Tour.kDepartureDate)).getCalendar();
+                calDepDate = ((DateTimeField)this.getField(Tour.DEPARTURE_DATE)).getCalendar();
         
             if ((this.getOpenMode() & DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY) != DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY)
                 this.setOpenMode(this.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
             this.addNew();
-            ((DateTimeField)this.getField(Tour.kDepartureDate)).setCalendar(calDepDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            ((DateTimeField)this.getField(Tour.DEPARTURE_DATE)).setCalendar(calDepDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
             if (strCode == null)
                 strCode = DBConstants.BLANK;
-            this.getField(Tour.kCode).setString(strCode, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.getField(Tour.CODE).setString(strCode, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
             if ((strDescription == null) || (strDescription.length() == 0))
-                strDescription = recTourHeader.getField(TourHeader.kDescription).toString() + " - " + fldDepDate.toString();
-            this.getField(Tour.kDescription).setString(strDescription, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            this.getField(Tour.kTourHeaderID).moveFieldToThis(recTourHeader.getField(TourHeader.kID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReference();
+                strDescription = recTourHeader.getField(TourHeader.DESCRIPTION).toString() + " - " + fldDepDate.toString();
+            this.getField(Tour.DESCRIPTION).setString(strDescription, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.getField(Tour.TOUR_HEADER_ID).moveFieldToThis(recTourHeader.getField(TourHeader.ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
             recTourClass.fixBasedFields();
             this.moveTourClassInfo(recTourClass);
         
@@ -615,22 +615,22 @@ public class Tour extends Job
      */
     public void moveTourClassInfo(TourClass recTourClass)
     {
-        this.getField(Tour.kTourStatusID).moveFieldToThis(recTourClass.getField(TourClass.kInitialTourStatusID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kAirRateID).moveFieldToThis(recTourClass.getField(TourClass.kAirRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kAirClassID).moveFieldToThis(recTourClass.getField(TourClass.kAirClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kHotelRateID).moveFieldToThis(recTourClass.getField(TourClass.kHotelRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kHotelClassID).moveFieldToThis(recTourClass.getField(TourClass.kHotelClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kLandRateID).moveFieldToThis(recTourClass.getField(TourClass.kLandRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kLandClassID).moveFieldToThis(recTourClass.getField(TourClass.kLandClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kPMCCutoff).moveFieldToThis(recTourClass.getField(TourClass.kPMCCutoff), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kCarRateID).moveFieldToThis(recTourClass.getField(TourClass.kCarRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kCarClassID).moveFieldToThis(recTourClass.getField(TourClass.kCarClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kTransportationRateID).moveFieldToThis(recTourClass.getField(TourClass.kTransportationRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kTransportationClassID).moveFieldToThis(recTourClass.getField(TourClass.kTransportationClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kCruiseRateID).moveFieldToThis(recTourClass.getField(TourClass.kCruiseRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kCruiseClassID).moveFieldToThis(recTourClass.getField(TourClass.kCruiseClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kItemRateID).moveFieldToThis(recTourClass.getField(TourClass.kItemRateID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(Tour.kItemClassID).moveFieldToThis(recTourClass.getField(TourClass.kItemClassID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.TOUR_STATUS_ID).moveFieldToThis(recTourClass.getField(TourClass.INITIAL_TOUR_STATUS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.AIR_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.AIR_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.AIR_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.AIR_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.HOTEL_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.HOTEL_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.HOTEL_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.HOTEL_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.LAND_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.LAND_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.LAND_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.LAND_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.PMC_CUTOFF).moveFieldToThis(recTourClass.getField(TourClass.PMC_CUTOFF), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.CAR_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.CAR_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.CAR_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.CAR_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.TRANSPORTATION_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.TRANSPORTATION_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.TRANSPORTATION_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.TRANSPORTATION_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.CRUISE_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.CRUISE_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.CRUISE_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.CRUISE_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.ITEM_RATE_ID).moveFieldToThis(recTourClass.getField(TourClass.ITEM_RATE_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(Tour.ITEM_CLASS_ID).moveFieldToThis(recTourClass.getField(TourClass.ITEM_CLASS_ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
     }
     /**
      * CalcTourDates Method.
@@ -638,47 +638,47 @@ public class Tour extends Job
     public void calcTourDates(Record recTourHeader)
     {
         if (recTourHeader == null)
-            recTourHeader = ((ReferenceField)this.getField(Tour.kTourHeaderID)).getReference();
-        Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReference();
+            recTourHeader = ((ReferenceField)this.getField(Tour.TOUR_HEADER_ID)).getReference();
+        Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
         Calendar calDepartureDate = ((DateTimeField)this.getField(kDepartureDate)).getCalendar();
         
         Calendar calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kTicketDays).getValue());
-        ((DateTimeField)this.getField(Tour.kTicketDate)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.TICKET_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.TICKET_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kSp1Days).getValue());
-        ((DateTimeField)this.getField(Tour.kSp1Date)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.SP_1_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.SP_1_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kSp2Days).getValue());
-        ((DateTimeField)this.getField(Tour.kSp2Date)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.SP_2_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.SP_2_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kFinalDocDays).getValue());
-        ((DateTimeField)this.getField(Tour.kFinalDocDate)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.FINAL_DOC_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.FINAL_DOC_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kOrderCompDays).getValue());
-        ((DateTimeField)this.getField(Tour.kOrderCompDate)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.ORDER_COMP_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.ORDER_COMP_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kFinalizeDays).getValue());
-        ((DateTimeField)this.getField(Tour.kFinalizeDate)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.FINALIZE_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.FINALIZE_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         calTargetDate = (Calendar)calDepartureDate.clone();
-        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.kClosedDays).getValue());
-        ((DateTimeField)this.getField(Tour.kClosedDate)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.CLOSED_DAYS).getValue());
+        ((DateTimeField)this.getField(Tour.CLOSED_DATE)).setCalendar(calTargetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
-        this.getField(Tour.kClosed).setState(false);
-        this.getField(Tour.kFinalized).setState(false);
-        this.getField(Tour.kOrderComponents).setState(false);
-        this.getField(Tour.kFinalDocs).setState(false);
-        this.getField(Tour.kTickets).setState(false);
-        this.getField(Tour.kSp1).setState(false);
-        this.getField(Tour.kSp2).setState(false);
-        this.getField(Tour.kServConf).setState(false);
-        this.getField(Tour.kDeparted).setState(false);
+        this.getField(Tour.CLOSED).setState(false);
+        this.getField(Tour.FINALIZED).setState(false);
+        this.getField(Tour.ORDER_COMPONENTS).setState(false);
+        this.getField(Tour.FINAL_DOCS).setState(false);
+        this.getField(Tour.TICKETS).setState(false);
+        this.getField(Tour.SP_1).setState(false);
+        this.getField(Tour.SP_2).setState(false);
+        this.getField(Tour.SERV_CONF).setState(false);
+        this.getField(Tour.DEPARTED).setState(false);
     }
     /**
      * Update all the vouchers for this tour.
@@ -692,13 +692,13 @@ public class Tour extends Job
         if (recBookingDetail == null)
         {
             if (recordOwner != null)
-                if (recordOwner.getRecord(Booking.kBookingFile) != null)
+                if (recordOwner.getRecord(Booking.BOOKING_FILE) != null)
                 {
                 }
             recBookingDetail = new BookingDetail(recordOwner);
             recBookingDetailNew = recBookingDetail;
         }
-        recBookingDetail.setKeyArea(BookingDetail.kTourIDKey);   
+        recBookingDetail.setKeyArea(BookingDetail.TOUR_ID_KEY);   
         recBookingDetail.addListener(new SubFileFilter(this));
         
         if (recApTrx == null)
@@ -706,7 +706,7 @@ public class Tour extends Job
             recApTrx = new ApTrx(recordOwner);
             recApTrxNew = recApTrx;
         }
-        recApTrx.setKeyArea(ApTrx.kTourIDKey);
+        recApTrx.setKeyArea(ApTrx.TOUR_ID_KEY);
         recApTrx.addListener(new SubFileFilter(this));
         recApTrx.addListener(new UpdateDepEstHandler(null));
         
@@ -731,28 +731,28 @@ public class Tour extends Job
                 int intProductTypeID = 0;
                 Vendor recVendor = null;
                 if ((recApTrx == null)
-                    || ((recBookingDetail != null) && (recBookingDetail.getField(BookingDetail.kVendorID).compareTo(recApTrx.getField(ApTrx.kVendorID)) > 0)))
+                    || ((recBookingDetail != null) && (recBookingDetail.getField(BookingDetail.VENDOR_ID).compareTo(recApTrx.getField(ApTrx.VENDOR_ID)) > 0)))
                         bAddNewVoucher = true;
                 else
                 {    // (recApTrx != null)
                     if ((recBookingDetail == null)
-                        || ((recApTrx != null) && (recBookingDetail.getField(BookingDetail.kVendorID).compareTo(recApTrx.getField(ApTrx.kVendorID)) < 0)))
+                        || ((recApTrx != null) && (recBookingDetail.getField(BookingDetail.VENDOR_ID).compareTo(recApTrx.getField(ApTrx.VENDOR_ID)) < 0)))
                             bAddNewVoucher = false;
                     else
                     {
-                        recVendor = (Vendor)((ReferenceField)recApTrx.getField(ApTrx.kVendorID)).getReference();
-                        if (OperationTypeField.ALL_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
+                        recVendor = (Vendor)((ReferenceField)recApTrx.getField(ApTrx.VENDOR_ID)).getReference();
+                        if (OperationTypeField.ALL_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
                             bAddNewVoucher = false;
-                        else if (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
+                        else if (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
                         {
-                            if (recBookingDetail.getField(BookingDetail.kApTrxID).compareTo(recApTrx.getField(ApTrx.kID)) != 0)
+                            if (recBookingDetail.getField(BookingDetail.AP_TRX_ID).compareTo(recApTrx.getField(ApTrx.ID)) != 0)
                                 bAddNewVoucher = true;
                             else
                                 bAddNewVoucher = false;
                         }
-                        else // if (OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
+                        else // if (OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
                         {
-                            if (recBookingDetail.getField(BookingDetail.kProductTypeID).compareTo(recApTrx.getField(ApTrx.kProductTypeID)) > 0)
+                            if (recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID).compareTo(recApTrx.getField(ApTrx.PRODUCT_TYPE_ID)) > 0)
                                 bAddNewVoucher = true;
                             else
                                 bAddNewVoucher = false;
@@ -761,14 +761,14 @@ public class Tour extends Job
                 }
                 if (recBookingDetail != null)
                     if (recVendor == null)
-                        recVendor = (Vendor)((ReferenceField)recBookingDetail.getField(BookingDetail.kVendorID)).getReference();
+                        recVendor = (Vendor)((ReferenceField)recBookingDetail.getField(BookingDetail.VENDOR_ID)).getReference();
                 if (recVendor != null)
-                    if ((OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
-                        || (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString())))
-                            intProductTypeID = (int)recBookingDetail.getField(BookingDetail.kProductTypeID).getValue();
+                    if ((OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
+                        || (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString())))
+                            intProductTypeID = (int)recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID).getValue();
                 if (bAddNewVoucher)
                 { // Branch 1 - No A/P detail to match product detail (Create A/P detail & U/D all product detail)
-                    ApTrx recNewApTrx = recApTrxAdd.addNewApTrx(this.getField(Tour.kID), recVendor, intProductTypeID);
+                    ApTrx recNewApTrx = recApTrxAdd.addNewApTrx(this.getField(Tour.ID), recVendor, intProductTypeID);
                     iErrorCode = recNewApTrx.updateThisApTrx(tblBookingDetail, this, recVendor, intProductTypeID);
                 }
                 else
@@ -804,7 +804,7 @@ public class Tour extends Job
      */
     public void orderAllComponents()
     {
-        if (this.getField(Tour.kOrderComponents).getState() == false)
+        if (this.getField(Tour.ORDER_COMPONENTS).getState() == false)
             return;
         BookingDetail recBookingDetail = new BookingDetail(this.findRecordOwner());
         try {
@@ -814,7 +814,7 @@ public class Tour extends Job
                 recBookingDetail.next();
                 Record recBookingDetailCurrent = recBookingDetail.getTable().getCurrentTable().getRecord();
                 recBookingDetailCurrent.edit();
-                recBookingDetailCurrent.getField(BookingDetail.kProductStatusRequest).setData(Boolean.TRUE);
+                recBookingDetailCurrent.getField(BookingDetail.PRODUCT_STATUS_REQUEST).setData(Boolean.TRUE);
                 if (recBookingDetailCurrent.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                     recBookingDetailCurrent.set();   // Possible that the listeners re-wrote this record already.
             }

@@ -9,5 +9,10 @@ import org.jbundle.model.db.*;
 public interface OTACodeModel extends Rec
 {
 
+    //public static final String ID = ID;
+    public static final String NAME = "Name";
+
+    public static final String NAME_KEY = "Name";
+
 
 }

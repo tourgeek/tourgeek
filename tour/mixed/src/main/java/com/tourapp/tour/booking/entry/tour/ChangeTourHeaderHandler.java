@@ -106,11 +106,11 @@ public class ChangeTourHeaderHandler extends FieldListener
         {   // Set up a new tour or lookup the series tour!!!
             BookingAnswer recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
             BookingPax recBookingPax = null;
-            Date dateStart = ((DateTimeField)m_recTour.getField(Tour.kDepartureDate)).getDateTime();  // Use tour departure date.
+            Date dateStart = ((DateTimeField)m_recTour.getField(Tour.DEPARTURE_DATE)).getDateTime();  // Use tour departure date.
             
             if ((m_recBooking == null)
-                || (m_recBooking.getField(Booking.kTourID).getLength() == 0)
-                || (m_recTour.getField(Tour.kTourHeaderID).compareTo(m_recTourHeader.getField(TourHeader.kID)) != 0))
+                || (m_recBooking.getField(Booking.TOUR_ID).getLength() == 0)
+                || (m_recTour.getField(Tour.TOUR_HEADER_ID).compareTo(m_recTourHeader.getField(TourHeader.ID)) != 0))
             {
                 String strCode = DBConstants.BLANK;
                 String strDesc = DBConstants.BLANK;
@@ -118,19 +118,19 @@ public class ChangeTourHeaderHandler extends FieldListener
                 {
                     boolean[] rgbEnabled = null;
                     if (m_recBooking != null)
-                        rgbEnabled = m_recBooking.getField(Booking.kTourID).setEnableListeners(false);  // Since it is possible that Booking will refresh which would clear the tour record
+                        rgbEnabled = m_recBooking.getField(Booking.TOUR_ID).setEnableListeners(false);  // Since it is possible that Booking will refresh which would clear the tour record
                     m_recBooking.setupDefaultDesc(m_recTourHeader, m_fldDepDate);
                     if (rgbEnabled != null)
-                        m_recBooking.getField(Booking.kTourID).setEnableListeners(rgbEnabled);
-                    strCode = m_recBooking.getField(Booking.kCode).toString();
-                    strDesc = m_recBooking.getField(Booking.kDescription).toString();
+                        m_recBooking.getField(Booking.TOUR_ID).setEnableListeners(rgbEnabled);
+                    strCode = m_recBooking.getField(Booking.CODE).toString();
+                    strDesc = m_recBooking.getField(Booking.DESCRIPTION).toString();
                 }
                 iErrorCode = m_recTour.setupTourFromHeader(m_recTourHeader, m_fldDepDate, strCode, strDesc);
                 if (iErrorCode != DBConstants.NORMAL_RETURN)
                     return iErrorCode;
                 if (m_recBooking == null)
                     return iErrorCode;  // No need to do the booking updates
-                m_recBooking.getField(Booking.kTourID).moveFieldToThis(m_recTour.getField(Tour.kID));
+                m_recBooking.getField(Booking.TOUR_ID).moveFieldToThis(m_recTour.getField(Tour.ID));
         
                 if (this.getOwner().getRecord().getTask() instanceof SyncPage)
                 {
@@ -140,8 +140,8 @@ public class ChangeTourHeaderHandler extends FieldListener
                         { // 'Please wait...' is done displaying
                             String strCommand = "addTourDetail";
                             Map<String,Object> properties = new HashMap<String,Object>();
-                            properties.put(TourHeader.kTourHeaderFile, m_recTourHeader.getCounterField().getData());
-                            properties.put(m_recTour.getField(Tour.kDepartureDate).getFieldName(), m_recTour.getField(Tour.kDepartureDate).getData());
+                            properties.put(TourHeader.TOUR_HEADER_FILE, m_recTourHeader.getCounterField().getData());
+                            properties.put(m_recTour.getField(Tour.DEPARTURE_DATE).getFieldName(), m_recTour.getField(Tour.DEPARTURE_DATE).getData());
                             Object objReturn;
                             try {
                                 objReturn = m_recBooking.handleRemoteCommand(strCommand, properties);
@@ -157,20 +157,20 @@ public class ChangeTourHeaderHandler extends FieldListener
                             {                           
                                 BookingAnswer recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
                                 BookingPax recBookingPax = null;
-                                Date dateStart = ((DateTimeField)m_recTour.getField(Tour.kDepartureDate)).getDateTime();  // Use tour departure date.
-                                ((Booking)m_recBooking).addTourDetail(m_recTour, m_recTourHeader, recBookingPax, recBookingAnswer, dateStart, m_recBooking.getField(Booking.kAskForAnswer));
+                                Date dateStart = ((DateTimeField)m_recTour.getField(Tour.DEPARTURE_DATE)).getDateTime();  // Use tour departure date.
+                                ((Booking)m_recBooking).addTourDetail(m_recTour, m_recTourHeader, recBookingPax, recBookingAnswer, dateStart, m_recBooking.getField(Booking.ASK_FOR_ANSWER));
                             }
                         }
                     };
                     worker.start();
                 }
                 else
-                    iErrorCode = ((Booking)m_recBooking).addTourDetail(m_recTour, m_recTourHeader, recBookingPax, recBookingAnswer, dateStart, m_recBooking.getField(Booking.kAskForAnswer));
+                    iErrorCode = ((Booking)m_recBooking).addTourDetail(m_recTour, m_recTourHeader, recBookingPax, recBookingAnswer, dateStart, m_recBooking.getField(Booking.ASK_FOR_ANSWER));
             }
             else
             {
                 m_recTour.calcTourDates(m_recTourHeader);
-                final Date dateOriginal = (Date)((FieldDataScratchHandler)m_recTour.getField(Tour.kDepartureDate).getListener(FieldDataScratchHandler.class)).getOriginalData();
+                final Date dateOriginal = (Date)((FieldDataScratchHandler)m_recTour.getField(Tour.DEPARTURE_DATE).getListener(FieldDataScratchHandler.class)).getOriginalData();
                 if (this.getOwner().getRecord().getTask() instanceof SyncPage)
                 {
                     SwingSyncPageWorker worker = new SwingSyncPageWorker(((SyncPage)this.getOwner().getRecord().getTask()), true)
@@ -179,7 +179,7 @@ public class ChangeTourHeaderHandler extends FieldListener
                         {
                             BookingAnswer recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
                             BookingPax recBookingPax = null;
-                            Date dateStart = ((DateTimeField)m_recTour.getField(Tour.kDepartureDate)).getDateTime();  // Use tour departure date.
+                            Date dateStart = ((DateTimeField)m_recTour.getField(Tour.DEPARTURE_DATE)).getDateTime();  // Use tour departure date.
                             m_recBooking.changeTourDetail(m_recTour, recBookingPax, m_recTourHeader, dateOriginal, dateStart);
                         }
                     };
@@ -190,7 +190,7 @@ public class ChangeTourHeaderHandler extends FieldListener
             }
             if (iErrorCode == DBConstants.NORMAL_RETURN)
             {
-                if (m_recBooking.getField(Booking.kDescription).isNull()) // Usually Series Tours since they don't set up booking desc.
+                if (m_recBooking.getField(Booking.DESCRIPTION).isNull())    // Usually Series Tours since they don't set up booking desc.
                     m_recBooking.setupDefaultDesc(m_recTourHeader, m_fldDepDate);
                 ((Booking)m_recBooking).calcBookingDates(m_recTour, m_recTourHeader);
             }
@@ -207,14 +207,14 @@ public class ChangeTourHeaderHandler extends FieldListener
                 if (m_fldTourDesc != null) if (m_fldTourDesc.getLength() == 0)
                     iErrorCode = DBConstants.NORMAL_RETURN;
             if ((m_recBooking == null)
-                || (m_recBooking.getField(Booking.kTourID).getLength() != 0))
+                || (m_recBooking.getField(Booking.TOUR_ID).getLength() != 0))
             {   // Clear out the current tour
                 try   {
                     m_recTour.addNew();
-                    m_recBooking.getField(Booking.kTourID).initField(DBConstants.DISPLAY);
-                    m_recBooking.getField(Booking.kFinalPaymentDueDate).initField(DBConstants.DISPLAY);
-                    m_recBooking.getField(Booking.kDepositDueDate).initField(DBConstants.DISPLAY);
-                    m_recBooking.getField(Booking.kBookingStatusID).initField(DBConstants.DISPLAY);
+                    m_recBooking.getField(Booking.TOUR_ID).initField(DBConstants.DISPLAY);
+                    m_recBooking.getField(Booking.FINAL_PAYMENT_DUE_DATE).initField(DBConstants.DISPLAY);
+                    m_recBooking.getField(Booking.DEPOSIT_DUE_DATE).initField(DBConstants.DISPLAY);
+                    m_recBooking.getField(Booking.BOOKING_STATUS_ID).initField(DBConstants.DISPLAY);
                 } catch (DBException e)   {
                     System.out.println(e.getMessage());
                     e.printStackTrace();

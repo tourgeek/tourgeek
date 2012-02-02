@@ -66,7 +66,7 @@ public class VendorSelect extends VendorField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Vendor.kCodeKey, Vendor.kVendorName, false);
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Vendor.CODE_KEY, Vendor.VENDOR_NAME, false);
     }
 
 }

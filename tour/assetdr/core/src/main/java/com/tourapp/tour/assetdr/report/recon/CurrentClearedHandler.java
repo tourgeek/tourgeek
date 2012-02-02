@@ -79,10 +79,10 @@ public class CurrentClearedHandler extends FieldListener
                 m_recBankTrx = new BankTrx(recordOwner);
                 if (recordOwner != null)
                     recordOwner.removeRecord(m_recBankTrx);
-                m_recBankTrx.setKeyArea(BankTrx.kTrxDateKey);
-                m_recBankTrx.addListener(new SubFileFilter(this.getOwner(), BankTrx.kBankAcctID, null, -1, null, -1));
-                m_recBankTrx.addListener(new CompareFileFilter(m_recBankTrx.getField(BankTrx.kDateReconciled), m_fldDateCurrentCleared, "<=", null, false));
-                m_recBankTrx.addListener(new SubCountHandler(m_fldStartCleared, BankTrx.kAmount, true, false));    // Init this field override for other value
+                m_recBankTrx.setKeyArea(BankTrx.TRX_DATE_KEY);
+                m_recBankTrx.addListener(new SubFileFilter(this.getOwner(), BankTrx.BANK_ACCT_ID, null, null, null, null));
+                m_recBankTrx.addListener(new CompareFileFilter(m_recBankTrx.getField(BankTrx.DATE_RECONCILED), m_fldDateCurrentCleared, "<=", null, false));
+                m_recBankTrx.addListener(new SubCountHandler(m_fldStartCleared, BankTrx.AMOUNT, true, false));    // Init this field override for other value
                 this.fieldChanged(DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
             }
         }

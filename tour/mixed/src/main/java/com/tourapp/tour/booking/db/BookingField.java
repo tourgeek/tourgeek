@@ -74,9 +74,9 @@ public class BookingField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record recBooking = this.getReferenceRecord();
-        Converter fldDisplayFieldDesc = recBooking.getField(Booking.kDescription);
+        Converter fldDisplayFieldDesc = recBooking.getField(Booking.DESCRIPTION);
         fldDisplayFieldDesc = new FieldLengthConverter(fldDisplayFieldDesc, 30);
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recBooking, Booking.kCodeKey, fldDisplayFieldDesc, true, true);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recBooking, Booking.CODE_KEY, fldDisplayFieldDesc, true, true);
     }
 
 }

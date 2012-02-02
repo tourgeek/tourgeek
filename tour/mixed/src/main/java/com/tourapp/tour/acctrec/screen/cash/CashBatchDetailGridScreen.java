@@ -99,11 +99,11 @@ public class CashBatchDetailGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kID).addListener(new FieldReSelectHandler(this));
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubCountHandler(this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kBatchChecksActual), false, true));
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubCountHandler(this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kBatchTotalActual), CashBatchDetail.kAmount, false, true));
+        this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.ID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.BATCH_CHECKS_ACTUAL), false, true));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.BATCH_TOTAL_ACTUAL), CashBatchDetail.AMOUNT, false, true));
         
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kBookingID).addListener(new BookingDefaultHandler(null));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.BOOKING_ID).addListener(new BookingDefaultHandler(null));
     }
     /**
      * Add button(s) to the toolbar.
@@ -122,7 +122,7 @@ public class CashBatchDetailGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        Converter converter = this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kBookingID);
+        Converter converter = this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.BOOKING_ID);
         converter = new CashDistConverter(converter);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

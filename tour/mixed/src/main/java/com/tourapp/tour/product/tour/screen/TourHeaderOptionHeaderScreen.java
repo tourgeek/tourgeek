@@ -71,7 +71,7 @@ public class TourHeaderOptionHeaderScreen extends HeaderScreen
         { // Always
             Record recTourHeaderOption = ((BaseScreen)screenParent).getHeaderRecord();
             if (recTourHeaderOption instanceof TourHeaderOption) 
-                recTourHeaderOption.getField(TourHeaderOption.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+                recTourHeaderOption.getField(TourHeaderOption.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         }
     }
 

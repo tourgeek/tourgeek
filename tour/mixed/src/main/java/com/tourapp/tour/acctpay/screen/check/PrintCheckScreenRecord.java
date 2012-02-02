@@ -35,9 +35,13 @@ public class PrintCheckScreenRecord extends CheckScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String BANK_ACCT_ID = "BankAcctID";
     public static final int kBankAcctID = kCheckScreenRecordLastField + 1;
+    public static final String NEXT_CHECK_NO = "NextCheckNo";
     public static final int kNextCheckNo = kBankAcctID + 1;
+    public static final String CHECKS_TO_PRINT = "ChecksToPrint";
     public static final int kChecksToPrint = kNextCheckNo + 1;
+    public static final String TEMPLATE = "template";
     public static final int ktemplate = kChecksToPrint + 1;
     public static final int kPrintCheckScreenRecordLastField = ktemplate;
     public static final int kPrintCheckScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;

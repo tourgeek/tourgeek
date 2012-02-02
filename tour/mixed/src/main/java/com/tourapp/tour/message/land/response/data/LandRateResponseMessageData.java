@@ -64,16 +64,16 @@ public class LandRateResponseMessageData extends ProductRateResponseMessageData
     {
         int iInfoStatus = super.getRawRecordData(record);
         BookingLand recBookingLand = (BookingLand)record;
-        this.getRawFieldData(recBookingLand.getField(BookingLand.kPPCost));
-        this.getRawFieldData(recBookingLand.getField(BookingLand.kPMCCost));
-        this.getRawFieldData(recBookingLand.getField(BookingLand.kSICCost));
+        this.getRawFieldData(recBookingLand.getField(BookingLand.PP_COST));
+        this.getRawFieldData(recBookingLand.getField(BookingLand.PMC_COST));
+        this.getRawFieldData(recBookingLand.getField(BookingLand.SIC_COST));
         // In case the rate class has changed
         // This is some complicated logic... be careful
         // If the class has changed, the rate key is not correct, so you must change it now.
         if (this.get(NEW_RATE_CLASS_ID_PARAM) != null)
         {
             int iRateClass = ((Integer)this.get(NEW_RATE_CLASS_ID_PARAM)).intValue();
-            BaseField fldClass = ((Record)record).getField(BookingLand.kClassID);
+            BaseField fldClass = ((Record)record).getField(BookingLand.CLASS_ID);
             if (iRateClass != 0)
                 if (iRateClass != fldClass.getValue())
             {   // The rate class changed, recalc the rate key.
@@ -83,13 +83,13 @@ public class LandRateResponseMessageData extends ProductRateResponseMessageData
                 boolean[] rgbEnabled = fldClass.setEnableListeners(false); // Just being careful
                 tempRequest.handlePutRawRecordData(record);
                 String strSentMessageKey = tempRequest.getMessageKey(null).toString();
-                String strOrigMessageKey = recBookingLand.getField(BookingDetail.kCostRequestKey).toString();
+                String strOrigMessageKey = recBookingLand.getField(BookingDetail.COST_REQUEST_KEY).toString();
                 if (strSentMessageKey.equals(strOrigMessageKey))
                 {   // Good, this response matches the original request
-                    recBookingLand.getField(BookingLand.kClassID).setData(this.get(NEW_RATE_CLASS_ID_PARAM));   // Set new class
-                    recBookingLand.getField(BookingDetail.kDescription).setString(recBookingLand.setupProductDesc());   // The description changes
+                    recBookingLand.getField(BookingLand.CLASS_ID).setData(this.get(NEW_RATE_CLASS_ID_PARAM));   // Set new class
+                    recBookingLand.getField(BookingDetail.DESCRIPTION).setString(recBookingLand.setupProductDesc());   // The description changes
                     String strNewMessageKey = tempRequest.getMessageKey(null).toString();
-                    recBookingLand.getField(BookingDetail.kCostRequestKey).setString(strNewMessageKey);
+                    recBookingLand.getField(BookingDetail.COST_REQUEST_KEY).setString(strNewMessageKey);
                 }
                 //tempRequest.free();
                 tempMessage.setMessageHeader(null);
@@ -122,8 +122,8 @@ public class LandRateResponseMessageData extends ProductRateResponseMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Land.kLandFile) != null)
-                    return (Land)recordOwner.getRecord(Land.kLandFile);
+                if (recordOwner.getRecord(Land.LAND_FILE) != null)
+                    return (Land)recordOwner.getRecord(Land.LAND_FILE);
         return new Land(recordOwner);
     }
 

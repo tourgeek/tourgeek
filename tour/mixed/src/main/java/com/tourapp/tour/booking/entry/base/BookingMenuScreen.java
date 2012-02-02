@@ -147,7 +147,7 @@ public class BookingMenuScreen extends MenuScreen
             String strItem = (String)properties.get("item");
             if (strItem != null)
             { // Let the screen listener change the screen.
-                this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setString(strItem);
+                this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setString(strItem);
                 return true;
             }
         }

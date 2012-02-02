@@ -88,13 +88,13 @@ public class LandMessageData extends ProductMessageData
     public int initForMessage(Rec record)
     {
         int iErrorCode = super.initForMessage(record);
-        ((Record)record).getField(BookingLand.kPPCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.kVariesCode).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.kVariesQty).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.kVariesCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.kPMCCutoff).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.kPMCCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.kSICCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.PP_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.VARIES_CODE).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.VARIES_QTY).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.VARIES_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.PMC_CUTOFF).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.PMC_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLand.SIC_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -125,8 +125,8 @@ public class LandMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Land.kLandFile) != null)
-                    return (Land)recordOwner.getRecord(Land.kLandFile);
+                if (recordOwner.getRecord(Land.LAND_FILE) != null)
+                    return (Land)recordOwner.getRecord(Land.LAND_FILE);
         return new Land(recordOwner);
     }
     /**

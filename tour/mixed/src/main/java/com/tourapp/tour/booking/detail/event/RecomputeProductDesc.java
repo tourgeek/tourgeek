@@ -60,7 +60,7 @@ public class RecomputeProductDesc extends FieldListener
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         String strDesc = ((BookingDetail)this.getOwner().getRecord()).setupProductDesc();
-        iErrorCode = this.getOwner().getRecord().getField(BookingDetail.kDescription).setString(strDesc);
+        iErrorCode = this.getOwner().getRecord().getField(BookingDetail.DESCRIPTION).setString(strDesc);
         return iErrorCode;
     }
 

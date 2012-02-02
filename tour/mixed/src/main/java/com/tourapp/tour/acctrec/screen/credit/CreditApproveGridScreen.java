@@ -72,16 +72,16 @@ public class CreditApproveGridScreen extends CreditBaseGridScreen
     {
         super.addListeners();
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.APPROVED);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.APPROVED);
         String strTrxClass = Integer.toString(iTrxStatusID);
         
-        this.getMainRecord().getField(CreditCard.kPaid).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.kDateApproved), this.getScreenRecord().getField(McoScreenRecord.kToday)));
-        this.getMainRecord().getField(CreditCard.kPaid).addListener(new CopyStringHandler(this.getMainRecord().getField(CreditCard.kTrxStatusID), strTrxClass, null));
-        this.getMainRecord().getField(CreditCard.kPaid).addListener(new InitOnChangeHandler(this.getScreenRecord().getField(McoScreenRecord.kFlag))); // Wierd, but since this is a screen field, it would be set the first time and never change again
+        this.getMainRecord().getField(CreditCard.PAID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.DATE_APPROVED), this.getScreenRecord().getField(McoScreenRecord.TODAY)));
+        this.getMainRecord().getField(CreditCard.PAID).addListener(new CopyStringHandler(this.getMainRecord().getField(CreditCard.TRX_STATUS_ID), strTrxClass, null));
+        this.getMainRecord().getField(CreditCard.PAID).addListener(new InitOnChangeHandler(this.getScreenRecord().getField(McoScreenRecord.FLAG))); // Wierd, but since this is a screen field, it would be set the first time and never change again
         
-        this.getMainRecord().setKeyArea(CreditCard.kTrxStatusIDKey);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.SUBMITTED);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_STATUS_ID_KEY);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.SUBMITTED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus));
         
         this.getMainRecord().addListener(new SyncArTrxStatusHandler(null));
@@ -96,10 +96,10 @@ public class CreditApproveGridScreen extends CreditBaseGridScreen
         String strDesc = CreditCard.APPROVED;
         if (this.getTask() != null)
             strDesc = ((BaseApplication)this.getTask().getApplication()).getString(strDesc);
-        BaseField fldFlag = this.getMainRecord().getField(CreditCard.kPaid);
+        BaseField fldFlag = this.getMainRecord().getField(CreditCard.PAID);
         fldFlag.setFieldDesc(strDesc);
         new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, fldFlag, ScreenConstants.DISPLAY_FIELD_DESC);
-        this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.TRX_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

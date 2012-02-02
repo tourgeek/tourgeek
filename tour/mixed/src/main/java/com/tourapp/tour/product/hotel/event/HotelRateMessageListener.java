@@ -67,7 +67,7 @@ public class HotelRateMessageListener extends ProductRateMessageListener
         super.fixMessageMap(message);
         HotelRateResponse productRateResponse = (HotelRateResponse)message.getMessageDataDesc(null);
         HotelRateResponseMessageData messageData = (HotelRateResponseMessageData)productRateResponse.getMessageDataDesc(BaseProductResponse.PRODUCT_RESPONSE_MESSAGE);
-        String strDoubleCostParam = m_record.getField(Hotel.kDoubleCost).getFieldName();
+        String strDoubleCostParam = m_record.getField(Hotel.DOUBLE_COST).getFieldName();
         Double dblProductCost = (Double)messageData.get(BookingDetail.TOTAL_COST);
         if (dblProductCost == null)
             dblProductCost = DoubleField.ZERO;

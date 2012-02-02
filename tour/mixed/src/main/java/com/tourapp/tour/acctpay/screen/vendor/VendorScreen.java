@@ -99,17 +99,17 @@ public class VendorScreen extends Screen
         ((Vendor)this.getMainRecord()).addPropertyListeners();
         
         this.addMainKeyBehavior();
-        this.getMainRecord().getField(Vendor.kCountryID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kCountryID)));
-        this.getMainRecord().getField(Vendor.kCurrencysID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kCurrencysID)));
-        this.getMainRecord().getField(Vendor.kMessageTransportID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kMessageTransportID)));
-        this.getMainRecord().getField(Vendor.kVendorStatusID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kVendorStatusID)));
-        this.getMainRecord().getField(Vendor.kPaymentCycleID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kPaymentCycleID)));
-        this.getMainRecord().getField(Vendor.kPaymentCodeID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kPaymentCodeID)));
-        this.getMainRecord().getField(Vendor.kPrepayTypeID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kPrepayTypeID)));
-        this.getMainRecord().getField(Vendor.kDefaultAccountID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kCostAccountID)));
+        this.getMainRecord().getField(Vendor.COUNTRY_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.COUNTRY_ID)));
+        this.getMainRecord().getField(Vendor.CURRENCYS_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.CURRENCYS_ID)));
+        this.getMainRecord().getField(Vendor.MESSAGE_TRANSPORT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.MESSAGE_TRANSPORT_ID)));
+        this.getMainRecord().getField(Vendor.VENDOR_STATUS_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.VENDOR_STATUS_ID)));
+        this.getMainRecord().getField(Vendor.PAYMENT_CYCLE_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.PAYMENT_CYCLE_ID)));
+        this.getMainRecord().getField(Vendor.PAYMENT_CODE_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.PAYMENT_CODE_ID)));
+        this.getMainRecord().getField(Vendor.PREPAY_TYPE_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.PREPAY_TYPE_ID)));
+        this.getMainRecord().getField(Vendor.DEFAULT_ACCOUNT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.COST_ACCOUNT_ID)));
         
-        Record recCountry = ((ReferenceField)this.getMainRecord().getField(Vendor.kCountryID)).getReferenceRecord();
-        this.getMainRecord().getField(Vendor.kCountryID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(Vendor.kCountry), recCountry.getField(Country.kName), false,  true));
+        Record recCountry = ((ReferenceField)this.getMainRecord().getField(Vendor.COUNTRY_ID)).getReferenceRecord();
+        this.getMainRecord().getField(Vendor.COUNTRY_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(Vendor.COUNTRY), recCountry.getField(Country.NAME), false,  true));
     }
     /**
      * Add button(s) to the toolbar.
@@ -138,9 +138,9 @@ public class VendorScreen extends Screen
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kFax).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kEmail).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kWeb).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        FieldLengthConverter converter = new FieldLengthConverter(this.getRecord(Vendor.kVendorFile).getField(Vendor.kMessageServer), 60);
+        FieldLengthConverter converter = new FieldLengthConverter(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.MESSAGE_SERVER), 60);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        converter = new FieldLengthConverter(this.getRecord(Vendor.kVendorFile).getField(Vendor.kWSDLPath), 60);
+        converter = new FieldLengthConverter(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.WSDL_PATH), 60);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         BaseApplication application = (BaseApplication)this.getTask().getApplication();        
         String strRefresh = application.getResources(ResourceConstants.DEFAULT_RESOURCE, true).getString(MenuConstants.REFRESH);
@@ -180,8 +180,8 @@ public class VendorScreen extends Screen
         {
             if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_CURRENT) || (this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
-                if ((this.getMainRecord().getField(Vendor.kWeb).isModified())
-                    || (this.getMainRecord().getField(Vendor.kProperties).isModified()))
+                if ((this.getMainRecord().getField(Vendor.WEB).isModified())
+                    || (this.getMainRecord().getField(Vendor.PROPERTIES).isModified()))
                 {
                     try {
                         this.getMainRecord().writeAndRefresh();

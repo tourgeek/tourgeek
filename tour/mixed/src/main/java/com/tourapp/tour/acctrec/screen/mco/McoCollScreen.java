@@ -92,27 +92,27 @@ public class McoCollScreen extends Screen
     {
         super.addListeners();
         
-        this.getScreenRecord().getField(McoScreenRecord.kAirlineID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kAirlineID)));
+        this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AIRLINE_ID)));
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.SUBMITTED);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.SUBMITTED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus));
         
         this.getMainRecord().addListener(new McoCollCalcNetBeh(null));
         
-        this.getMainRecord().addListener(new CompareFileFilter(Mco.kAirlineID, this.getScreenRecord().getField(McoScreenRecord.kAirlineID), "=", null, false));
+        this.getMainRecord().addListener(new CompareFileFilter(Mco.AIRLINE_ID, this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID), "=", null, false));
         
-        this.getMainRecord().getField(Mco.kPaid).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(Mco.kAmountPaid), this.getScreenRecord().getField(McoScreenRecord.kNet)));
-        FieldListener fieldBehavior = new MoveOnChangeHandler(this.getMainRecord().getField(Mco.kDatePaid), this.getScreenRecord().getField(McoScreenRecord.kToday), false, true);
+        this.getMainRecord().getField(Mco.PAID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(Mco.AMOUNT_PAID), this.getScreenRecord().getField(McoScreenRecord.NET)));
+        FieldListener fieldBehavior = new MoveOnChangeHandler(this.getMainRecord().getField(Mco.DATE_PAID), this.getScreenRecord().getField(McoScreenRecord.TODAY), false, true);
         fieldBehavior.setRespondsToMode(DBConstants.INIT_MOVE, false);
         fieldBehavior.setRespondsToMode(DBConstants.READ_MOVE, false);
-        this.getMainRecord().getField(Mco.kAmountPaid).addListener(fieldBehavior);
+        this.getMainRecord().getField(Mco.AMOUNT_PAID).addListener(fieldBehavior);
         
         this.setEnabled(false);
-        this.getScreenRecord().getField(McoScreenRecord.kAirlineID).setEnabled(true);
-        this.getMainRecord().getField(Mco.kDatePaid).setEnabled(true);
-        this.getMainRecord().getField(Mco.kAmountPaid).setEnabled(true);
-        this.getMainRecord().getField(Mco.kPaid).setEnabled(true);
+        this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID).setEnabled(true);
+        this.getMainRecord().getField(Mco.DATE_PAID).setEnabled(true);
+        this.getMainRecord().getField(Mco.AMOUNT_PAID).setEnabled(true);
+        this.getMainRecord().getField(Mco.PAID).setEnabled(true);
     }
     /**
      * Add the screen fields.
@@ -135,7 +135,7 @@ public class McoCollScreen extends Screen
         this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kNet).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Mco.kMcoFile).getField(Mco.kDatePaid).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Mco.kMcoFile).getField(Mco.kAmountPaid).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(Mco.kMcoFile).getField(Mco.kPaid), ScreenConstants.DISPLAY_FIELD_DESC);
+        new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(Mco.MCO_FILE).getField(Mco.PAID), ScreenConstants.DISPLAY_FIELD_DESC);
     }
 
 }

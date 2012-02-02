@@ -105,7 +105,7 @@ public class InventoryDetail extends VirtualRecord
             if ((this.getEditMode() == DBConstants.EDIT_CURRENT) || (this.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
                 Record recBookingDetail = new BookingDetail(this.findRecordOwner());
-                recBookingDetail.getField(BookingDetail.kID).moveFieldToThis(this.getField(InventoryDetail.kBookingDetailID));
+                recBookingDetail.getField(BookingDetail.ID).moveFieldToThis(this.getField(InventoryDetail.BOOKING_DETAIL_ID));
                 try {
                     if (recBookingDetail.seek(null))
                     {

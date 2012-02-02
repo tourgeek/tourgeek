@@ -77,7 +77,7 @@ public class RequestHtmlDetailGrid extends GridScreen
     {
         super.addListeners();
         this.setEditing(true);
-        this.getRecord(RequestInput.kRequestInputFile).getField(RequestInput.kBrochureID).setEnabled(false);
+        this.getRecord(RequestInput.REQUEST_INPUT_FILE).getField(RequestInput.BROCHURE_ID).setEnabled(false);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.
@@ -95,10 +95,10 @@ public class RequestHtmlDetailGrid extends GridScreen
         if (strAgentProperty == null)
             strAgentProperty = "no";
         if (strAgentProperty.equalsIgnoreCase("yes"))
-            this.getRecord(RequestInput.kRequestInputFile).getField(RequestInput.kBrochureQty).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+            this.getRecord(RequestInput.REQUEST_INPUT_FILE).getField(RequestInput.BROCHURE_QTY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         else
-            new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(RequestInput.kRequestInputFile).getField(RequestInput.kBrochureQty), ScreenConstants.DEFAULT_DISPLAY, "1", null);
-        this.getRecord(RequestInput.kRequestInputFile).getField(RequestInput.kBrochureID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+            new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(RequestInput.REQUEST_INPUT_FILE).getField(RequestInput.BROCHURE_QTY), ScreenConstants.DEFAULT_DISPLAY, "1", null);
+        this.getRecord(RequestInput.REQUEST_INPUT_FILE).getField(RequestInput.BROCHURE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Set up the physical control (that implements Component).

@@ -143,7 +143,7 @@ public class TestHotelRateScreen extends Screen
     {
         if ("getrate".equalsIgnoreCase(strCommand))
         {
-            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.kProductID)).getReference();
+            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.PRODUCT_ID)).getReference();
             if ((recHotel.getEditMode() == DBConstants.EDIT_CURRENT)
                 || (recHotel.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
@@ -167,10 +167,10 @@ public class TestHotelRateScreen extends Screen
                     trxMessageHeader.put(TrxMessageHeader.REGISTRY_ID, m_intRegistryID);    // The return Queue ID
         
                 Record record = this.getScreenRecord();
-                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.kProductID));
-                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.kRateID));
-                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.kClassID));
-                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.kDetailDate));
+                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.PRODUCT_ID));
+                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.RATE_ID));
+                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.CLASS_ID));
+                ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).putRawFieldData(record.getField(TestHotelRateScreenRecord.DETAIL_DATE));
         
                 ((PassengerMessageData)message.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE)).setPaxInRoom(PaxCategory.DOUBLE_ID, (short)2);
                 ((PassengerMessageData)message.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE)).setTargetPax((short)2);
@@ -201,7 +201,7 @@ public class TestHotelRateScreen extends Screen
                     if (messageReply != null)
                         this.handleMessage(baseMessageReply);
                     else
-                        this.getRecord(TestHotelRateScreenRecord.kTestHotelRateScreenRecordFile).getField(TestHotelRateScreenRecord.kDisplayCostStatusID).setValue(iStatus);
+                        this.getScreenRecord().getField(TestHotelRateScreenRecord.DISPLAY_COST_STATUS_ID).setValue(iStatus);
                 }
                 else
                 {
@@ -213,13 +213,13 @@ public class TestHotelRateScreen extends Screen
         }
         if ("ping".equalsIgnoreCase(strCommand))
         {
-            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.kProductID)).getReference();
+            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.PRODUCT_ID)).getReference();
             if ((recHotel.getEditMode() == DBConstants.EDIT_CURRENT)
                 || (recHotel.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
                 MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(this);
-                recMessageProcessInfo.setKeyArea(MessageProcessInfo.kCodeKey);
-                recMessageProcessInfo.getField(MessageProcessInfo.kCode).setString("PingOutRQ");
+                recMessageProcessInfo.setKeyArea(MessageProcessInfo.CODE_KEY);
+                recMessageProcessInfo.getField(MessageProcessInfo.CODE).setString("PingOutRQ");
                 try {
                     if (recMessageProcessInfo.seek(null))
                     {
@@ -247,13 +247,13 @@ public class TestHotelRateScreen extends Screen
         }
         if ("Currency".equalsIgnoreCase(strCommand))
         {
-            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.kProductID)).getReference();
+            Hotel recHotel = (Hotel)((ReferenceField)this.getScreenRecord().getField(TestHotelRateScreenRecord.PRODUCT_ID)).getReference();
             if ((recHotel.getEditMode() == DBConstants.EDIT_CURRENT)
                 || (recHotel.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
                 MessageProcessInfo recMessageProcessInfo = new MessageProcessInfo(this);
-                recMessageProcessInfo.setKeyArea(MessageProcessInfo.kCodeKey);
-                recMessageProcessInfo.getField(MessageProcessInfo.kCode).setString("CurrencyRateOut");
+                recMessageProcessInfo.setKeyArea(MessageProcessInfo.CODE_KEY);
+                recMessageProcessInfo.getField(MessageProcessInfo.CODE).setString("CurrencyRateOut");
                 try {
                     if (recMessageProcessInfo.seek(null))
                     {
@@ -301,16 +301,16 @@ public class TestHotelRateScreen extends Screen
             
                 Double dblRate = (Double)responseMessageData.get(BookingDetail.TOTAL_COST);
                 if (dblRate != null)    // Display the rate
-                    this.getRecord(TestHotelRateScreenRecord.kTestHotelRateScreenRecordFile).getField(TestHotelRateScreenRecord.kTotalCost).setValue(dblRate.doubleValue());
+                    this.getScreenRecord().getField(TestHotelRateScreenRecord.TOTAL_COST).setValue(dblRate.doubleValue());
                 int iStatus = ((BaseProductResponse)message.getMessageDataDesc(null)).getMessageDataStatus();
-                this.getRecord(TestHotelRateScreenRecord.kTestHotelRateScreenRecordFile).getField(TestHotelRateScreenRecord.kDisplayCostStatusID).setValue(iStatus);
+                this.getScreenRecord().getField(TestHotelRateScreenRecord.DISPLAY_COST_STATUS_ID).setValue(iStatus);
             }
             else
             {
                 String strMessage = (String)message.get(PingRequestMessageInProcessor.MESSAGE_PARAM);
                 System.out.println("Message: " + strMessage);
                 if ("Hello".equalsIgnoreCase(strMessage))
-                    this.getRecord(TestHotelRateScreenRecord.kTestHotelRateScreenRecordFile).getField(TestHotelRateScreenRecord.kDisplayCostStatusID).setValue(BaseStatus.OKAY);
+                    this.getScreenRecord().getField(TestHotelRateScreenRecord.DISPLAY_COST_STATUS_ID).setValue(BaseStatus.OKAY);
             }
         }
         return super.handleMessage(message);

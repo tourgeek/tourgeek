@@ -75,64 +75,64 @@ public class CalcActionDateHandler extends FieldListener
         if (recTour.getListener(UpdateOnCloseHandler.class) == null)
             recTour.addListener(new UpdateOnCloseHandler(null)); // Make sure this is updated
         
-        BaseField actionType = recTour.getField(Tour.kTourEventID);
+        BaseField actionType = recTour.getField(Tour.TOUR_EVENT_ID);
         actionType.setValue(TourEvent.NO_EVENT);
-        recTour.getField(Tour.kNextEventDate).setToLimit(DBConstants.END_SELECT_KEY);
-        BaseField actionDate = recTour.getField(Tour.kNextEventDate);
+        recTour.getField(Tour.NEXT_EVENT_DATE).setToLimit(DBConstants.END_SELECT_KEY);
+        BaseField actionDate = recTour.getField(Tour.NEXT_EVENT_DATE);
         
-        if (recTour.getField(Tour.kDeparted).getState() == false)
-            if (recTour.getField(Tour.kDepartureDate).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.DEPARTED).getState() == false)
+            if (recTour.getField(Tour.DEPARTURE_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kDepartureDate));
+            actionDate.moveFieldToThis(recTour.getField(Tour.DEPARTURE_DATE));
             actionType.setValue(TourEvent.DEPARTURE);
         }
         
-        if (recTour.getField(Tour.kSp1).getState() == false)
-            if (recTour.getField(Tour.kSp1Date).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.SP_1).getState() == false)
+            if (recTour.getField(Tour.SP_1_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kSp1Date));
+            actionDate.moveFieldToThis(recTour.getField(Tour.SP_1_DATE));
             actionType.setValue(TourEvent.SPECIAL_1);
         }
         
-        if (recTour.getField(Tour.kSp2).getState() == false)
-            if (recTour.getField(Tour.kSp2Date).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.SP_2).getState() == false)
+            if (recTour.getField(Tour.SP_2_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kSp2Date));
+            actionDate.moveFieldToThis(recTour.getField(Tour.SP_2_DATE));
             actionType.setValue(TourEvent.SPECIAL_2);
         }
         
-        if (recTour.getField(Tour.kTickets).getState() == false)
-            if (recTour.getField(Tour.kTicketDate).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.TICKETS).getState() == false)
+            if (recTour.getField(Tour.TICKET_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kTicketDate));
+            actionDate.moveFieldToThis(recTour.getField(Tour.TICKET_DATE));
             actionType.setValue(TourEvent.TICKETING);
         }
         
-        if (recTour.getField(Tour.kFinalDocs).getState() == false)
-            if (recTour.getField(Tour.kFinalDocDate).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.FINAL_DOCS).getState() == false)
+            if (recTour.getField(Tour.FINAL_DOC_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kFinalDocDate));
+            actionDate.moveFieldToThis(recTour.getField(Tour.FINAL_DOC_DATE));
             actionType.setValue(TourEvent.FINAL_DOCS);
         }
         
-        if (recTour.getField(Tour.kFinalized).getState() == false)
-            if (recTour.getField(Tour.kFinalizeDate).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.FINALIZED).getState() == false)
+            if (recTour.getField(Tour.FINALIZE_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kFinalizeDate));
+            actionDate.moveFieldToThis(recTour.getField(Tour.FINALIZE_DATE));
             actionType.setValue(TourEvent.FINALIZATION);
         }
         
-        if (recTour.getField(Tour.kClosed).getState() == false)
-            if (recTour.getField(Tour.kClosedDate).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.CLOSED).getState() == false)
+            if (recTour.getField(Tour.CLOSED_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kClosedDate));
+            actionDate.moveFieldToThis(recTour.getField(Tour.CLOSED_DATE));
             actionType.setValue(TourEvent.TOUR_CLOSED);
         }
         
-        if (recTour.getField(Tour.kOrderComponents).getState() == false)
-            if (recTour.getField(Tour.kOrderCompDate).compareTo(actionDate) <= 0)
+        if (recTour.getField(Tour.ORDER_COMPONENTS).getState() == false)
+            if (recTour.getField(Tour.ORDER_COMP_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recTour.getField(Tour.kOrderCompDate));
+            actionDate.moveFieldToThis(recTour.getField(Tour.ORDER_COMP_DATE));
             actionType.setValue(TourEvent.ORDER_COMPONENTS);
         }
         

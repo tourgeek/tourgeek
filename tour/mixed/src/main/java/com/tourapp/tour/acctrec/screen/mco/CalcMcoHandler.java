@@ -60,12 +60,12 @@ public class CalcMcoHandler extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        double dGross = this.getOwner().getRecord().getField(Mco.kGross).getValue();
-        double dCommAmt = this.getOwner().getRecord().getField(Mco.kCommAmt).getValue();
-        double dSvcAmt = this.getOwner().getRecord().getField(Mco.kSvcAmt).getValue();
-        double dTaxAmt = this.getOwner().getRecord().getField(Mco.kTaxAmt).getValue();
+        double dGross = this.getOwner().getRecord().getField(Mco.GROSS).getValue();
+        double dCommAmt = this.getOwner().getRecord().getField(Mco.COMM_AMT).getValue();
+        double dSvcAmt = this.getOwner().getRecord().getField(Mco.SVC_AMT).getValue();
+        double dTaxAmt = this.getOwner().getRecord().getField(Mco.TAX_AMT).getValue();
         double dNet = Math.floor((dGross - dCommAmt - dSvcAmt - dTaxAmt) * 100.00 + 0.5) / 100.00;
-        this.getOwner().getRecord().getField(Mco.kNet).setValue(dNet);
+        this.getOwner().getRecord().getField(Mco.NET).setValue(dNet);
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 

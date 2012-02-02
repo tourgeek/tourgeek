@@ -69,7 +69,7 @@ public class BankReconHeaderScreen extends HeaderScreen
     {
         super.addListeners();
         this.setEditing(false);
-        this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID).setEnabled(true);
+        this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID).setEnabled(true);
     }
     /**
      * SetupSFields Method.

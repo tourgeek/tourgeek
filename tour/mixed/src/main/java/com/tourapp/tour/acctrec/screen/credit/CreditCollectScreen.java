@@ -100,19 +100,19 @@ public class CreditCollectScreen extends CreditBaseScreen
     {
         super.addListeners();
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
         
-        this.getMainRecord().getField(Mco.kPaid).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.kAmountPaid), this.getMainRecord().getField(CreditCard.kNet)));
-        this.getMainRecord().getField(Mco.kPaid).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.kDatePaid), this.getScreenRecord().getField(McoScreenRecord.kToday)));
+        this.getMainRecord().getField(Mco.PAID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.AMOUNT_PAID), this.getMainRecord().getField(CreditCard.NET)));
+        this.getMainRecord().getField(Mco.PAID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.DATE_PAID), this.getScreenRecord().getField(McoScreenRecord.TODAY)));
         
-        this.getMainRecord().setKeyArea(CreditCard.kTrxStatusIDKey);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.APPROVED);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_STATUS_ID_KEY);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.APPROVED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus));
         
         this.setEnabled(false);
-        this.getMainRecord().getField(CreditCard.kDatePaid).setEnabled(true);
-        this.getMainRecord().getField(CreditCard.kAmountPaid).setEnabled(true);
-        this.getMainRecord().getField(Mco.kPaid).setEnabled(true);
+        this.getMainRecord().getField(CreditCard.DATE_PAID).setEnabled(true);
+        this.getMainRecord().getField(CreditCard.AMOUNT_PAID).setEnabled(true);
+        this.getMainRecord().getField(Mco.PAID).setEnabled(true);
     }
     /**
      * Set up all the screen fields.
@@ -121,11 +121,11 @@ public class CreditCollectScreen extends CreditBaseScreen
     {
         super.setupSFields();
         
-        String strDesc = CreditCard.PAID;
+        String strDesc = CreditCard.ITEM_PAID;
         if (this.getTask() != null)
             strDesc = ((BaseApplication)this.getTask().getApplication()).getString(strDesc);
-        this.getMainRecord().getField(Mco.kPaid).setFieldDesc(strDesc);
-        new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getMainRecord().getField(Mco.kPaid), ScreenConstants.DISPLAY_FIELD_DESC);
+        this.getMainRecord().getField(Mco.PAID).setFieldDesc(strDesc);
+        new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getMainRecord().getField(Mco.PAID), ScreenConstants.DISPLAY_FIELD_DESC);
     }
 
 }

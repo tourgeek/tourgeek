@@ -86,7 +86,7 @@ public class TransportationMessageData extends ProductMessageData
     public int initForMessage(Rec record)
     {
         int iErrorCode = super.initForMessage(record);
-        ((Record)record).getField(BookingTransportation.kPPCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingTransportation.PP_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -116,8 +116,8 @@ public class TransportationMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Transportation.kTransportationFile) != null)
-                    return (Transportation)recordOwner.getRecord(Transportation.kTransportationFile);
+                if (recordOwner.getRecord(Transportation.TRANSPORTATION_FILE) != null)
+                    return (Transportation)recordOwner.getRecord(Transportation.TRANSPORTATION_FILE);
         return new Transportation(recordOwner);
     }
     /**

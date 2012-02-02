@@ -70,28 +70,28 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
     public void addDetailTrx(TransactionType recTransactionType, AcctDetailDist recAcctDetailDist, AcctDetail recAcctDetail, Period recPeriod, double dCurrentBalance)
     {
         Record recArTrx = this.getOwner();
-        double dAmount = recArTrx.getField(ArTrx.kAmount).getValue();
+        double dAmount = recArTrx.getField(ArTrx.AMOUNT).getValue();
         ReferenceField fldAccount = null;
-        if (Account.DEBIT.equalsIgnoreCase(recTransactionType.getField(TransactionType.kTypicalBalance).toString()))
+        if (Account.DEBIT.equalsIgnoreCase(recTransactionType.getField(TransactionType.TYPICAL_BALANCE).toString()))
             fldAccount = (ReferenceField)this.getDrAccount();
         else
         {
             fldAccount = (ReferenceField)this.getCrAccount();
             dAmount = -dAmount;
         }
-        DateTimeField fldTrxDate = (DateTimeField)recArTrx.getField(ArTrx.kTrxDate);
-        if ("DepTrx".equalsIgnoreCase(recTransactionType.getField(TransactionType.kTypeCode).toString()))
+        DateTimeField fldTrxDate = (DateTimeField)recArTrx.getField(ArTrx.TRX_DATE);
+        if ("DepTrx".equalsIgnoreCase(recTransactionType.getField(TransactionType.TYPE_CODE).toString()))
         {
-            fldTrxDate = (DateTimeField)recArTrx.getField(ArTrx.kDepartureDate);
+            fldTrxDate = (DateTimeField)recArTrx.getField(ArTrx.DEPARTURE_DATE);
             fldAccount = (ReferenceField)this.getDepartureDrAccount();
         }
-        if ("DepDist".equalsIgnoreCase(recTransactionType.getField(TransactionType.kTypeCode).toString()))
+        if ("DepDist".equalsIgnoreCase(recTransactionType.getField(TransactionType.TYPE_CODE).toString()))
         {
-            fldTrxDate = (DateTimeField)recArTrx.getField(ArTrx.kDepartureDate);
+            fldTrxDate = (DateTimeField)recArTrx.getField(ArTrx.DEPARTURE_DATE);
             fldAccount = (ReferenceField)this.getDepartureCrAccount();
         }
         DateTimeField fldEntryDate = null;  // Now
-        BaseField fldTrxTypeID = recArTrx.getField(ArTrx.kID);
+        BaseField fldTrxTypeID = recArTrx.getField(ArTrx.ID);
         int iUserID = Integer.parseInt(((BaseApplication)this.getOwner().getRecordOwner().getTask().getApplication()).getUserID());
         recAcctDetailDist.addDetailTrx(fldAccount, fldTrxDate, fldTrxTypeID, recTransactionType, fldEntryDate, dAmount, iUserID, recAcctDetail, recPeriod);
     }
@@ -101,9 +101,9 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
     public ProductCategory getProductCategory()
     {
         // Booking->Tour->TourHeader->ProductCat P/P  vs  A/R
-        Tour recTour = (Tour)((ReferenceField)m_recBooking.getField(Booking.kTourID)).getReference();
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
-        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.kProductCatID)).getReference();
+        Tour recTour = (Tour)((ReferenceField)m_recBooking.getField(Booking.TOUR_ID)).getReference();
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
+        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
         return recProductCategory;
     }
     /**
@@ -112,7 +112,7 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kArAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.AR_ACCOUNT_ID);
     }
     /**
      * Get the Credit Account field.
@@ -120,21 +120,21 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kPPAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.PP_ACCOUNT_ID);
     }
     /**
      * GetDepartureDrAccount Method.
      */
     public ReferenceField getDepartureDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kPPAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.PP_ACCOUNT_ID);
     }
     /**
      * GetDepartureCrAccount Method.
      */
     public ReferenceField getDepartureCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kIncomeAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.INCOME_ACCOUNT_ID);
     }
 
 }

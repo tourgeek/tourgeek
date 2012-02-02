@@ -70,8 +70,8 @@ public class VendorSelectGridScreen extends VendorApTrxGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(VendorScreenRecord.kTotalSelected), ApTrx.kAmountSelected, false, true));
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kAmountSelected).setEnabled(true);
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(VendorScreenRecord.TOTAL_SELECTED), ApTrx.AMOUNT_SELECTED, false, true));
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.AMOUNT_SELECTED).setEnabled(true);
         
         FilterApTrxHandler listener = (FilterApTrxHandler)this.getMainRecord().getListener(FilterApTrxHandler.class.getName());
         listener.clearFilter();
@@ -93,7 +93,7 @@ public class VendorSelectGridScreen extends VendorApTrxGridScreen
         String strDesc = "Select?";
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
         strDesc = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strDesc);
-        Converter converter = new VendorSelectCheckmark(this.getMainRecord().getField(ApTrx.kAmountSelected), null, strDesc, false);
+        Converter converter = new VendorSelectCheckmark(this.getMainRecord().getField(ApTrx.AMOUNT_SELECTED), null, strDesc, false);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -129,7 +129,7 @@ public class VendorSelectGridScreen extends VendorApTrxGridScreen
                 {
                     recApTrx.next();
                     recApTrx.edit();
-                    recApTrx.getField(ApTrx.kAmountSelected).moveFieldToThis(recApTrx.getField(ApTrx.kInvoiceAmount));
+                    recApTrx.getField(ApTrx.AMOUNT_SELECTED).moveFieldToThis(recApTrx.getField(ApTrx.INVOICE_AMOUNT));
                     recApTrx.set();
                 }
             RecordOwner screen = recApTrx.getRecordOwner();

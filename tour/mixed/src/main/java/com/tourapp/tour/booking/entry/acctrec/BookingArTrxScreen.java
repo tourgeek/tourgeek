@@ -81,8 +81,8 @@ public class BookingArTrxScreen extends BookingSubScreen
      */
     public Record openMainRecord()
     {
-        if (this.getRecord(ArTrx.kArTrxFile) != null)
-            return this.getRecord(ArTrx.kArTrxFile);
+        if (this.getRecord(ArTrx.AR_TRX_FILE) != null)
+            return this.getRecord(ArTrx.AR_TRX_FILE);
         return new ArTrx(this);
     }
     /**
@@ -95,8 +95,8 @@ public class BookingArTrxScreen extends BookingSubScreen
         this.setAppending(false);
         this.setEditing(false);
         
-        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.kArTrxFile);
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
+        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
         recBooking.addArDetail(recArTrx, null, false);
     }
     /**
@@ -118,27 +118,27 @@ public class BookingArTrxScreen extends BookingSubScreen
         
         ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         BaseField converter = null;
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kGross);
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.GROSS);
         ScreenComponent sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kStdCommission);
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.STD_COMMISSION);
         sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kNet);
-        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
-        sField.setEnabled(false);
-        
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kDeposit);
-        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
-        sField.setEnabled(false);
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kDepositDueDate);
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.NET);
         sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kFinalPaymentDueDate);
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.DEPOSIT);
         sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = this.getRecord(Booking.kBookingFile).getField(Booking.kBalance);
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.DEPOSIT_DUE_DATE);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.FINAL_PAYMENT_DUE_DATE);
+        sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
+        sField.setEnabled(false);
+        converter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.BALANCE);
         sField = converter.setupDefaultView(toolbar2.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar2, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         

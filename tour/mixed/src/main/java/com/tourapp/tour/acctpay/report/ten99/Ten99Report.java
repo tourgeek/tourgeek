@@ -105,27 +105,27 @@ public class Ten99Report extends ReportScreen
         super.addListeners();
         
         // First, set up the default fields
-        ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.kStartDate)).setDate(new Date(), false, DBConstants.INIT_MOVE);
-        Calendar cal = ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.kStartDate)).getCalendar();
+        ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.START_DATE)).setDate(new Date(), false, DBConstants.INIT_MOVE);
+        Calendar cal = ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.START_DATE)).getCalendar();
         cal.add(Calendar.MONTH, -6);
         cal.set(Calendar.DAY_OF_YEAR, 1);
-        ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.kStartDate)).setCalendar(cal, true, DBConstants.INIT_MOVE);
+        ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.START_DATE)).setCalendar(cal, true, DBConstants.INIT_MOVE);
         cal.add(Calendar.YEAR, 1);
         cal.add(Calendar.DAY_OF_YEAR, -1);
-        ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.kEndDate)).setCalendar(cal, true, DBConstants.INIT_MOVE);
+        ((DateTimeField)this.getScreenRecord().getField(ApReportScreenRecord.END_DATE)).setCalendar(cal, true, DBConstants.INIT_MOVE);
         
-        this.getScreenRecord().getField(ApReportScreenRecord.kExcludeAmount).addListener(new RegisterValueHandler(null));
-        this.getScreenRecord().getField(ApReportScreenRecord.ktemplate).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kTen99Template)));
+        this.getScreenRecord().getField(ApReportScreenRecord.EXCLUDE_AMOUNT).addListener(new RegisterValueHandler(null));
+        this.getScreenRecord().getField(ApReportScreenRecord.ktemplate).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.TEN_99_TEMPLATE)));
         
-        this.getMainRecord().addListener(new CompareFileFilter(Vendor.kSend1099, this.getScreenRecord().getField(ApReportScreenRecord.kTrueField), "=", null, false));
+        this.getMainRecord().addListener(new CompareFileFilter(Vendor.SEND_1099, this.getScreenRecord().getField(ApReportScreenRecord.TRUE_FIELD), "=", null, false));
         // Now add the logic to total the payment to this vendor
         this.getMainRecord().setOpenMode(this.getMainRecord().getOpenMode() | DBConstants.OPEN_READ_ONLY);
-        TrxDesc recTrxDesc = (TrxDesc)this.getRecord(TrxDesc.kTrxDescFile);
-        recTrxDesc.getTrxDesc(TransactionType.ACCTPAY, ApTrx.kApTrxFile);
-        Record recBankTrx = this.getRecord(BankTrx.kBankTrxFile);
-        recBankTrx.setKeyArea(BankTrx.kPayeeIDKey);
-        recBankTrx.addListener(new SubFileFilter(this.getMainRecord().getField(Vendor.kID), BankTrx.kPayeeID, recTrxDesc.getField(TrxDesc.kID), BankTrx.kPayeeTrxDescID, null, -1));
-        recBankTrx.addListener(new SubCountHandler(this.getMainRecord().getField(Vendor.kVendorBalance), BankTrx.kAmount, true, true));
+        TrxDesc recTrxDesc = (TrxDesc)this.getRecord(TrxDesc.TRX_DESC_FILE);
+        recTrxDesc.getTrxDesc(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE);
+        Record recBankTrx = this.getRecord(BankTrx.BANK_TRX_FILE);
+        recBankTrx.setKeyArea(BankTrx.PAYEE_ID_KEY);
+        recBankTrx.addListener(new SubFileFilter(this.getMainRecord().getField(Vendor.ID), BankTrx.PAYEE_ID, recTrxDesc.getField(TrxDesc.ID), BankTrx.PAYEE_TRX_DESC_ID, null, null));
+        recBankTrx.addListener(new SubCountHandler(this.getMainRecord().getField(Vendor.VENDOR_BALANCE), BankTrx.AMOUNT, true, true));
     }
     /**
      * Get the next grid record.
@@ -141,13 +141,13 @@ public class Ten99Report extends ReportScreen
             bFirstTime = false;
             if (record == null)
                 return null;    // EOF
-            Record recBankTrx = this.getRecord(BankTrx.kBankTrxFile);
+            Record recBankTrx = this.getRecord(BankTrx.BANK_TRX_FILE);
             recBankTrx.close();
             while (recBankTrx.hasNext())
             {
                 recBankTrx.next();  // Listener will add to total
             }
-            if (Math.abs(record.getField(Vendor.kVendorBalance).getValue()) < this.getScreenRecord().getField(ApReportScreenRecord.kExcludeAmount).getValue())
+            if (Math.abs(record.getField(Vendor.VENDOR_BALANCE).getValue()) < this.getScreenRecord().getField(ApReportScreenRecord.EXCLUDE_AMOUNT).getValue())
                 record = null;  // Skip this vendor
         }
         return record;

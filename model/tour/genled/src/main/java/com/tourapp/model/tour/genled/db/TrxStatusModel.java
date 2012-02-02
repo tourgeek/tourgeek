@@ -8,6 +8,20 @@ import org.jbundle.model.db.*;
 
 public interface TrxStatusModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String STATUS_CODE = "StatusCode";
+    public static final String STATUS_DESC = "StatusDesc";
+    public static final String PREFERRED_SIGN = "PreferredSign";
+    public static final String TRX_DESC_ID = "TrxDescID";
+    public static final String DESC_CODE = "DescCode";
+    public static final String TRX_SYSTEM_ID = "TrxSystemID";
+    public static final String SYSTEM_CODE = "SystemCode";
+    public static final String ACTIVE_TRX = "ActiveTrx";
+
+    public static final String TRX_DESC_ID_KEY = "TrxDescID";
+
+    public static final String SYSTEM_CODE_KEY = "SystemCode";
     public static final String TRX_STATUS_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxStatusScreen";
     public static final String TRX_STATUS_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxStatusGridScreen";
 

@@ -239,12 +239,12 @@ public class ArTrx extends LinkTrx
         this.addListener(new SubFileFilter(recBooking, true));
         this.addListener(new InitArTrxHandler(recBooking));
         if (this.getRecordOwner() instanceof GridScreen)
-            recBooking.getField(Booking.kID).addListener(new FieldReSelectHandler((GridScreen)this.getRecordOwner()));
+            recBooking.getField(Booking.ID).addListener(new FieldReSelectHandler((GridScreen)this.getRecordOwner()));
         if (recBooking != null)
         {   // Sub counts must be first.
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.kBalance), ArTrx.kAmount, true, true));
+            this.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, true, true));
         
-            this.addListener(new ArTrxInvoiceSubCountHandler(null, ArTrx.kAmount, true, true));
+            this.addListener(new ArTrxInvoiceSubCountHandler(null, ArTrx.AMOUNT, true, true));
         }
         this.addListener(new CheckBookingStatusHandler(recBooking));
         this.addListener(new UpdateArTrxAcctDetailHandler(recBooking));

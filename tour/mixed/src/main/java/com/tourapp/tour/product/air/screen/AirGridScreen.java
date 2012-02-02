@@ -87,10 +87,10 @@ public class AirGridScreen extends ProductGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Air.kAirlineID), this.getScreenRecord().getField(AirScreenRecord.kAirlineID), DBConstants.EQUALS));
-        this.getMainRecord().addListener(new CompareFileFilter(Product.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Air.AIRLINE_ID), this.getScreenRecord().getField(AirScreenRecord.AIRLINE_ID), DBConstants.EQUALS));
+        this.getMainRecord().addListener(new CompareFileFilter(Product.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), DBConstants.EQUALS, null, true));
         
-        this.getScreenRecord().getField(AirScreenRecord.kAirlineID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(AirScreenRecord.AIRLINE_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add the listeners and message queues for rate lookups.
@@ -120,13 +120,13 @@ public class AirGridScreen extends ProductGridScreen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         super.addToolbarButtons(toolScreen);
-        this.getScreenRecord().getField(AirScreenRecord.kAirlineID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kCityID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(AirScreenRecord.AIRLINE_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.CITY_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kDetailDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kRemoteQueryEnabled).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * SetupSFields Method.

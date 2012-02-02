@@ -8,25 +8,48 @@ import org.jbundle.model.db.*;
 
 public interface ProductModel extends Rec
 {
+
+    //public static final String ID = ID;
     public static final String DESCRIPTION = "Description";
     public static final String CODE = "Code";
     public static final String VENDOR_ID = "VendorID";
     public static final String OPERATORS_CODE = "OperatorsCode";
+    public static final String PRODUCT_CHAIN_ID = "ProductChainID";
     public static final String CITY_ID = "CityID";
     public static final String ETD = "Etd";
     public static final String ACK_DAYS = "AckDays";
     public static final String COMMENTS = "Comments";
+    public static final String PROPERTIES = "Properties";
+    public static final String ITINERARY_DESC = "ItineraryDesc";
+    public static final String DESC_SORT = "DescSort";
     public static final String PRODUCT_TYPE = "ProductType";
     public static final String PRODUCT_COST = "ProductCost";
     public static final String PRODUCT_COST_LOCAL = "ProductCostLocal";
+    public static final String PRODUCT_MESSAGE_TRANSPORT_ID = "ProductMessageTransportID";
     public static final String DISPLAY_INVENTORY_STATUS_ID = "DisplayInventoryStatusID";
     public static final String INVENTORY_AVAILABILITY = "InventoryAvailability";
     public static final String CURRENCY_CODE = "CurrencyCode";
     public static final String CURRENCY_CODE_LOCAL = "CurrencyCodeLocal";
     public static final String VENDOR_NAME = "VendorName";
     public static final String DISPLAY_COST_STATUS_ID = "DisplayCostStatusID";
+    public static final String PP_COST = "PPCost";
+    public static final String PP_COST_LOCAL = "PPCostLocal";
+    public static final String RATE_ID = "RateID";
+    public static final String CLASS_ID = "ClassID";
     public static final String PRODUCT_PRICE_LOCAL = "ProductPriceLocal";
     public static final String PP_PRICE_LOCAL = "PPPriceLocal";
+
+    public static final String CODE_KEY = "Code";
+
+    public static final String DESC_SORT_KEY = "DescSort";
+
+    public static final String VENDOR_ID_KEY = "VendorID";
+
+    public static final String CITY_ID_KEY = "CityID";
+
+    public static final String OPERATORS_CODE_KEY = "OperatorsCode";
+
+    public static final String PRODUCT_CHAIN_ID_KEY = "ProductChainID";
     public final static String AVAILABILITY_PARAM = "Availability";
     public static final String PAX_PARAM = "Pax";
     public static final String PRODUCT_NAME_PARAM = "productDesc";

@@ -66,14 +66,14 @@ public class BookingDetailReportScreen extends ReportScreen
      */
     public Record getMainRecord()
     {
-        return this.getRecord(BookingDetail.kBookingDetailFile);
+        return this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
     }
     /**
      * SetupSFields Method.
      */
     public void setupSFields()
     {
-        Record recBookingDetail = this.getRecord(BookingDetail.kBookingDetailFile);
+        Record recBookingDetail = this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
         for (int iFieldSeq = 0; iFieldSeq < recBookingDetail.getFieldCount(); iFieldSeq++)
         {
             this.addDetailXMLColumn(recBookingDetail, iFieldSeq);
@@ -109,7 +109,7 @@ public class BookingDetailReportScreen extends ReportScreen
         Record record = super.getNextGridRecord(bFirstTime);
         if (record != null)
         {
-            ReferenceField fldProductID = (ReferenceField)record.getField(BookingDetail.kProductID);
+            ReferenceField fldProductID = (ReferenceField)record.getField(BookingDetail.PRODUCT_ID);
             if (fldProductID.getListener(ReadSecondaryHandler.class.getName()) == null)
             {
                 fldProductID.addListener(new ReadSecondaryHandler(fldProductID.getReferenceRecord()));

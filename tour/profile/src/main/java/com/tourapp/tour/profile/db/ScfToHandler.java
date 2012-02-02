@@ -58,8 +58,8 @@ public class ScfToHandler extends FieldListener
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
         Record record = this.getOwner().getRecord();
-        String strFrom = record.getField(SCF.kScfFrom).toString();
-        String strTo =  record.getField(SCF.kScfTo).toString();
+        String strFrom = record.getField(SCF.SCF_FROM).toString();
+        String strTo =  record.getField(SCF.SCF_TO).toString();
         if ((strFrom == null) || (strFrom.length() == 0))
             strFrom = Constants.BLANK;
         if ((strTo == null) || (strTo.length() == 0))

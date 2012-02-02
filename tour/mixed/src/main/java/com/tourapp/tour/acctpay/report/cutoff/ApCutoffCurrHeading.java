@@ -69,7 +69,7 @@ public class ApCutoffCurrHeading extends ReportBreakScreen
      */
     public Object getBreakValue()
     {
-        return this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID).getData();
+        return this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID).getData();
     }
     /**
      * SetupSFields Method.

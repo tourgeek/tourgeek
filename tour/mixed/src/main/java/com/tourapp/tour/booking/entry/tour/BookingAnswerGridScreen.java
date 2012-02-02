@@ -141,43 +141,43 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(BookingAnswer.kDescription).setEnabled(false);
+        this.getMainRecord().getField(BookingAnswer.DESCRIPTION).setEnabled(false);
         
-        Record recTourHeader = this.getRecord(TourHeader.kTourHeaderFile);
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recTourHeader = this.getRecord(TourHeader.TOUR_HEADER_FILE);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         m_fldModuleStart.setString(m_strModuleStartDate);
         
-        this.getMainRecord().setKeyArea(BookingAnswer.kBookingIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(recBooking.getField(Booking.kID), BookingAnswer.kBookingID, m_recBookingPax.getField(BookingPax.kID), BookingAnswer.kBookingPaxID, recTourHeader.getField(TourHeader.kID), BookingAnswer.kModuleID));
-        this.getMainRecord().addListener(new StringSubFileFilter(m_strTourOrOption, BookingAnswer.kTourOrOption, m_strTourOrOptionID, BookingAnswer.kTourOrOptionID, null, -1));
-        this.getMainRecord().addListener(new SubFileFilter(m_fldModuleStart, BookingAnswer.kModuleStartDate, null, -1, null, -1));
+        this.getMainRecord().setKeyArea(BookingAnswer.BOOKING_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(recBooking.getField(Booking.ID), BookingAnswer.BOOKING_ID, m_recBookingPax.getField(BookingPax.ID), BookingAnswer.BOOKING_PAX_ID, recTourHeader.getField(TourHeader.ID), BookingAnswer.MODULE_ID));
+        this.getMainRecord().addListener(new StringSubFileFilter(m_strTourOrOption, BookingAnswer.TOUR_OR_OPTION, m_strTourOrOptionID, BookingAnswer.TOUR_OR_OPTION_ID, null, null));
+        this.getMainRecord().addListener(new SubFileFilter(m_fldModuleStart, BookingAnswer.MODULE_START_DATE, null, null, null, null));
         BooleanField fldTrue = new BooleanField(null, DBConstants.BLANK, DBConstants.DEFAULT_FIELD_LENGTH, DBConstants.BLANK, null);
         fldTrue.setState(true);
         this.getMainRecord().addListener(new FreeOnFreeHandler(fldTrue));
-        this.getMainRecord().addListener(new CompareFileFilter(BookingAnswer.kAskForAnswer, fldTrue, DBConstants.EQUALS, null, false));
+        this.getMainRecord().addListener(new CompareFileFilter(BookingAnswer.ASK_FOR_ANSWER, fldTrue, DBConstants.EQUALS, null, false));
         
         this.setAppending(false);
         
-        this.getMainRecord().getField(BookingAnswer.kSelected).addListener(new BookingAnswerSelectHandler(null));
+        this.getMainRecord().getField(BookingAnswer.SELECTED).addListener(new BookingAnswerSelectHandler(null));
     }
     /**
      * RestoreTheProperties Method.
      */
     public TourHeader restoreTheProperties()
     {
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         
         if (m_recBookingPax == null)
             m_recBookingPax = new BookingPax(this);
-        if (m_recBookingPax.getField(BookingPax.kID).isNull())
-            m_recBookingPax.getField(BookingPax.kID).setValue(0);
+        if (m_recBookingPax.getField(BookingPax.ID).isNull())
+            m_recBookingPax.getField(BookingPax.ID).setValue(0);
         if (this.getProperty(BookingAnswerGridScreen.TOUR_OR_OPTION) != null)
             m_strTourOrOption = this.getProperty(BookingAnswerGridScreen.TOUR_OR_OPTION);
         if (m_strTourOrOption == null)  // Never
             m_strTourOrOption = TourHeaderOption.TOUR;
         
-        Record recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+        Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
         
         if (this.getProperty(BookingAnswerGridScreen.MODULE_ID) != null)
             m_strModuleID = this.getProperty(BookingAnswerGridScreen.MODULE_ID);
@@ -188,11 +188,11 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
         if ((m_strModuleID != null)
             && (m_strModuleStartDate != null))
         {
-            if ((!m_fldModuleStart.equals(recTour.getField(Tour.kDepartureDate)))
-                || (!m_strModuleID.equals(recTourHeader.getField(TourHeader.kID).toString())))
+            if ((!m_fldModuleStart.equals(recTour.getField(Tour.DEPARTURE_DATE)))
+                || (!m_strModuleID.equals(recTourHeader.getField(TourHeader.ID).toString())))
             {
                 recTourHeader = new TourHeader(this);
-                recTourHeader.getField(TourHeader.kID).setString(m_strModuleID);
+                recTourHeader.getField(TourHeader.ID).setString(m_strModuleID);
                 try {
                     if (recTourHeader.seek(null))
                     {   // Always
@@ -205,8 +205,8 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
         }
         else
         {
-            m_strModuleID = recTourHeader.getField(TourHeader.kID).toString();
-            m_strModuleStartDate = recTour.getField(Tour.kDepartureDate).toString();
+            m_strModuleID = recTourHeader.getField(TourHeader.ID).toString();
+            m_strModuleStartDate = recTour.getField(Tour.DEPARTURE_DATE).toString();
         }
         
         if (this.getProperty(BookingAnswerGridScreen.TOUR_OR_OPTION_ID) != null)
@@ -235,8 +235,8 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
         TourHeader recTourHeader = this.restoreTheProperties();
         if (recTourHeader.getRecordOwner() == this)
         {
-            recTourHeader.getField(TourHeader.kDescription).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            recTourHeader.getField(TourHeader.kDescription).setEnabled(false);
+            recTourHeader.getField(TourHeader.DESCRIPTION).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            recTourHeader.getField(TourHeader.DESCRIPTION).setEnabled(false);
             m_fldModuleStart.setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
             m_fldModuleStart.setEnabled(false);
         }
@@ -260,7 +260,7 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
         strURL = Utility.addURLParam(strURL, BookingAnswerGridScreen.MODULE_START_DATE, m_strModuleStartDate, false);
         strURL = Utility.addURLParam(strURL, BookingAnswerGridScreen.TOUR_OR_OPTION, m_strTourOrOption, false);
         strURL = Utility.addURLParam(strURL, BookingAnswerGridScreen.TOUR_OR_OPTION_ID, m_strTourOrOptionID, false);
-        strURL = Utility.addURLParam(strURL, BookingAnswerGridScreen.BOOKING_PAX_ID, m_recBookingPax.getField(BookingPax.kID).toString(), false);
+        strURL = Utility.addURLParam(strURL, BookingAnswerGridScreen.BOOKING_PAX_ID, m_recBookingPax.getField(BookingPax.ID).toString(), false);
         return strURL;
     }
     /**
@@ -294,10 +294,10 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
                 this.removeRecord(m_recBookingPax);
             if ((iCommandOptions & ScreenConstants.USE_NEW_WINDOW) == ScreenConstants.USE_SAME_WINDOW)  // Use same window
                 m_recBookingPax = null;
-            String strModuleID = record.getField(BookingAnswer.kModuleID).toString();
-            String strDateModuleStart = record.getField(BookingAnswer.kModuleStartDate).toString();
+            String strModuleID = record.getField(BookingAnswer.MODULE_ID).toString();
+            String strDateModuleStart = record.getField(BookingAnswer.MODULE_START_DATE).toString();
             String strTourOrOption = TourHeaderOption.OPTION;
-            String strTourOrOptionID = record.getField(BookingAnswer.kTourHeaderOptionID).toString();
+            String strTourOrOptionID = record.getField(BookingAnswer.TOUR_HEADER_OPTION_ID).toString();
             Converter fieldConverter = null;
             int iDisplayFieldDesc = ScreenConstants.DISPLAY_MODE | ScreenConstants.DONT_DISPLAY_FIELD_DESC;
             if ((iCommandOptions & ScreenConstants.USE_NEW_WINDOW) == ScreenConstants.USE_SAME_WINDOW)  // Use same window

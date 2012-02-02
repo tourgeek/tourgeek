@@ -68,7 +68,7 @@ public class BaseRateField extends ReferenceField
     {
         Record record = this.makeReferenceRecord();
         if (record != null)
-            return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, BaseRate.kDescriptionKey, BaseRate.kDescription, true, true);
+            return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, BaseRate.DESCRIPTION_KEY, BaseRate.DESCRIPTION, true, true);
         return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 

@@ -90,59 +90,59 @@ public class ApCutoffReport extends ApBaseCutoffReport
     {
         super.addListeners();
         Record recApTrx = this.getMainRecord();
-        recApTrx.addListener(new ApTrxBaseFilter(ApTrx.kTrxStatusID)
+        recApTrx.addListener(new ApTrxBaseFilter(ApTrx.TRX_STATUS_ID)
         {
             public boolean checkTrxStatus(TrxStatus recTrxStatus)
             {
-                if ((recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.DEPARTURE_ESTIMATE.substring(0, 6)) != -1)
-                    || (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.INVOICE) != -1)
-                    || (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.CREDIT_MEMO) != -1))
+                if ((recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.DEP_ESTIMATE.substring(0, 6)) != -1)
+                    || (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.INVOICE) != -1)
+                    || (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.CREDIT_MEMO) != -1))
                         return true;    // Include this
                 return false; // Don't include this.
             }
         });
         
-        Record recCurrencys = ((ReferenceField)this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrencysID)).getReferenceRecord(null);
-        this.getRecord(Currencys.kCurrencysFile).addListener(new CompareFileFilter(Currencys.kID, recCurrencys.getField(Currencys.kID), "=", null, true));
+        Record recCurrencys = ((ReferenceField)this.getScreenRecord().getField(ApCutoffScreenRecord.CURRENCYS_ID)).getReferenceRecord(null);
+        this.getRecord(Currencys.CURRENCYS_FILE).addListener(new CompareFileFilter(Currencys.ID, recCurrencys.getField(Currencys.ID), "=", null, true));
         
-        Record recPaymentHistory = this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        Record recPaymentHistory = this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
         recPaymentHistory.addListener(new SubFileFilter(recApTrx));
-        recPaymentHistory.addListener(new CompareFileFilter(PaymentHistory.kTrxDate, this.getScreenRecord().getField(ApCutoffScreenRecord.kCutoffDate), "<=", null, true));
+        recPaymentHistory.addListener(new CompareFileFilter(PaymentHistory.TRX_DATE, this.getScreenRecord().getField(ApCutoffScreenRecord.CUTOFF_DATE), "<=", null, true));
         
         this.getMainRecord().setOpenMode(this.getMainRecord().getOpenMode() | DBConstants.OPEN_READ_ONLY);
-        recPaymentHistory.addListener(new SubCountHandler(this.getMainRecord().getField(ApTrx.kInvoiceBalance), PaymentHistory.kAmountApplied, true, true));
-        recPaymentHistory.addListener(new SubCountHandler(this.getMainRecord().getField(ApTrx.kInvoiceBalanceLocal), PaymentHistory.kAmountLocal, true, true));
+        recPaymentHistory.addListener(new SubCountHandler(this.getMainRecord().getField(ApTrx.INVOICE_BALANCE), PaymentHistory.AMOUNT_APPLIED, true, true));
+        recPaymentHistory.addListener(new SubCountHandler(this.getMainRecord().getField(ApTrx.INVOICE_BALANCE_LOCAL), PaymentHistory.AMOUNT_LOCAL, true, true));
         
         SubCountHandler listener = null;
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kVenEstTotal), ApTrx.kDepartureEstimate, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kVenEstUSDTotal), ApTrx.kDepartureEstimateLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kVenInvTotal), ApTrx.kInvoiceAmount, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kVenInvUSDTotal), ApTrx.kInvoiceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kVenInvBalTotal), ApTrx.kInvoiceBalance, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kVenInvBalUSDTotal), ApTrx.kInvoiceBalanceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.VEN_EST_TOTAL), ApTrx.DEPARTURE_ESTIMATE, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.VEN_EST_USD_TOTAL), ApTrx.DEPARTURE_ESTIMATE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.VEN_INV_TOTAL), ApTrx.INVOICE_AMOUNT, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.VEN_INV_USD_TOTAL), ApTrx.INVOICE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.VEN_INV_BAL_TOTAL), ApTrx.INVOICE_BALANCE, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.VEN_INV_BAL_USD_TOTAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
         
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrEstTotal), ApTrx.kDepartureEstimate, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrEstUSDTotal), ApTrx.kDepartureEstimateLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrInvoiceTotal), ApTrx.kInvoiceAmount, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrInvoiceUSDTotal), ApTrx.kInvoiceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrInvBalTotal), ApTrx.kInvoiceBalance, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kCurrInvBalUSDTotal), ApTrx.kInvoiceBalanceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.CURR_EST_TOTAL), ApTrx.DEPARTURE_ESTIMATE, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.CURR_EST_USD_TOTAL), ApTrx.DEPARTURE_ESTIMATE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.CURR_INVOICE_TOTAL), ApTrx.INVOICE_AMOUNT, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.CURR_INVOICE_USD_TOTAL), ApTrx.INVOICE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.CURR_INV_BAL_TOTAL), ApTrx.INVOICE_BALANCE, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.CURR_INV_BAL_USD_TOTAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kEstUSDTotal), ApTrx.kDepartureEstimateLocal, true, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kInvUSDTotal), ApTrx.kInvoiceLocal, true, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.kInvBalUSDTotal), ApTrx.kInvoiceBalanceLocal, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.EST_USD_TOTAL), ApTrx.DEPARTURE_ESTIMATE_LOCAL, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.INV_USD_TOTAL), ApTrx.INVOICE_LOCAL, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApCutoffScreenRecord.INV_BAL_USD_TOTAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true));
     }
     /**
      * Get the next grid record.
@@ -160,19 +160,19 @@ public class ApCutoffReport extends ApBaseCutoffReport
                 return recApTrx;    // EOF
             else
             { // Exclude those tours after the cutoff date.
-                Record recTour = ((ReferenceField)recApTrx.getField(ApTrx.kTourID)).getReference();
+                Record recTour = ((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference();
                 if (recTour == null)
                     recApTrx = null;    // Skip this one.
                 else
                 {
-                    if (!this.getScreenRecord().getField(ApCutoffScreenRecord.kCutoffDate).isNull())
-                        if (recTour.getField(Tour.kDepartureDate).compareTo(this.getScreenRecord().getField(ApCutoffScreenRecord.kCutoffDate)) > 0)
+                    if (!this.getScreenRecord().getField(ApCutoffScreenRecord.CUTOFF_DATE).isNull())
+                        if (recTour.getField(Tour.DEPARTURE_DATE).compareTo(this.getScreenRecord().getField(ApCutoffScreenRecord.CUTOFF_DATE)) > 0)
                             recApTrx = null;    // Skip this one (past the cutoff date).
                 }
             }
         }
         // Now calculate the Invoice balance at the cutoff date
-        Record recPaymentHistory = this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        Record recPaymentHistory = this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
         recPaymentHistory.close();
         while (recPaymentHistory.hasNext())
         {

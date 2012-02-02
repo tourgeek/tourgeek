@@ -92,12 +92,12 @@ public class ProductRateMessageListener extends AutoRecordMessageListener
         ProductRateResponseMessageData messageData = (ProductRateResponseMessageData)productRateResponse.getMessageDataDesc(BaseProductResponse.PRODUCT_RESPONSE_MESSAGE);
         
         message.put(DBParams.FIELD, MULTIPLE_FIELDS);
-        String strProductCostParam = m_record.getField(Product.kProductCost).getFieldName();
+        String strProductCostParam = m_record.getField(Product.PRODUCT_COST).getFieldName();
         Double dblProductCost = (Double)messageData.get(BookingDetail.TOTAL_COST);
         if (dblProductCost == null)
             dblProductCost = DoubleField.ZERO;
         message.put(strProductCostParam, dblProductCost.toString());
-        String strCostStatusParam = m_record.getField(Product.kDisplayCostStatusID).getFieldName();
+        String strCostStatusParam = m_record.getField(Product.DISPLAY_COST_STATUS_ID).getFieldName();
         Integer intProductStatus = (Integer)productRateResponse.get(BaseDataStatus.DATA_STATUS);
         if (intProductStatus == null)
             intProductStatus = BaseStatus.VALID;

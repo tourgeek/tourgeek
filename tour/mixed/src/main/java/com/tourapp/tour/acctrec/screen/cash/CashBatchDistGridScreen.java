@@ -104,10 +104,10 @@ public class CashBatchDistGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.ID).addListener(new FieldReSelectHandler(this));
         
-        this.getRecord(CashBatchDist.kCashBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), CashBatchDist.kAmount, false, true));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kEndBalance), this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kAmount), true));
+        this.getRecord(CashBatchDist.CASH_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CashBatchDist.AMOUNT, false, true));
+        this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.END_BALANCE), this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.AMOUNT), true));
     }
     /**
      * SetupSFields Method.
@@ -126,7 +126,7 @@ public class CashBatchDistGridScreen extends DetailGridScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(CashBatchDetail.kCashBatchDetailFile);
+        return this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE);
     }
     /**
      * Make a sub-screen.

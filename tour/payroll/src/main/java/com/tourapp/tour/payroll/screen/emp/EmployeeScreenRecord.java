@@ -31,7 +31,9 @@ public class EmployeeScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String EMP_KEY_NO = "EmpKeyNo";
     public static final int kEmpKeyNo = kScreenRecordLastField + 1;
+    public static final String ACTIVE_EMP = "ActiveEmp";
     public static final int kActiveEmp = kEmpKeyNo + 1;
     public static final int kEmployeeScreenRecordLastField = kActiveEmp;
     public static final int kEmployeeScreenRecordFields = kActiveEmp - DBConstants.MAIN_FIELD + 1;

@@ -63,7 +63,7 @@ public class UpdateInvoiceHandler extends UpdateNonTourInvoiceHandler
     {
         double dAmountUSD = 0;
         Record recApTrx = this.getOwner();
-        double dDrAmountUSD = recApTrx.getField(ApTrx.kDepartureEstimateLocal).getValue();
+        double dDrAmountUSD = recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).getValue();
         double dCrAmountUSD = this.getInvoiceAmtUSD();
         if (dDrAmountUSD == 0)
             dDrAmountUSD = dCrAmountUSD;
@@ -81,7 +81,7 @@ public class UpdateInvoiceHandler extends UpdateNonTourInvoiceHandler
      */
     public BaseField getTrxDate()
     {
-        return this.getOwner().getField(ApTrx.kInvoiceDate);
+        return this.getOwner().getField(ApTrx.INVOICE_DATE);
     }
     /**
      * Get the Debit Account field.
@@ -90,9 +90,9 @@ public class UpdateInvoiceHandler extends UpdateNonTourInvoiceHandler
     public ReferenceField getDrAccount()
     {
         Record recApTrx = this.getOwner();
-        if (recApTrx.getField(ApTrx.kDepartureEstimateLocal).isNull())
-                return (ReferenceField)this.getProductCategory().getField(ProductCategory.kLandAccountID);
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kUninvAccountID);
+        if (recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).isNull())
+                return (ReferenceField)this.getProductCategory().getField(ProductCategory.LAND_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.UNINV_ACCOUNT_ID);
     }
     /**
      * Get the Credit Account field.
@@ -100,7 +100,7 @@ public class UpdateInvoiceHandler extends UpdateNonTourInvoiceHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kApAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.AP_ACCOUNT_ID);
     }
     /**
      * Get the differential account (Cost Over/Under) for this type of trx.
@@ -109,9 +109,9 @@ public class UpdateInvoiceHandler extends UpdateNonTourInvoiceHandler
     public ReferenceField getDiffAccount()
     {
         Record recApTrx = this.getOwner();
-        if (recApTrx.getField(ApTrx.kDepartureEstimateLocal).isNull())
+        if (recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).isNull())
             return null;
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kCostOUAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.COST_OU_ACCOUNT_ID);
     }
     /**
      * Is this a new (invoice) trx?
@@ -121,9 +121,9 @@ public class UpdateInvoiceHandler extends UpdateNonTourInvoiceHandler
     {
         if (iChangeType == DBConstants.AFTER_ADD_TYPE)
             return true;
-        if (this.getOwner().getField(ApTrx.kTrxStatusID).getValue() == this.getTrxStatusID(ApTrx.DEPARTURE_EST_MANUAL))
+        if (this.getOwner().getField(ApTrx.TRX_STATUS_ID).getValue() == this.getTrxStatusID(ApTrx.DEPARTURE_EST_MANUAL))
             return true;
-        if (this.getOwner().getField(ApTrx.kTrxStatusID).getValue() == this.getTrxStatusID(ApTrx.DEPARTURE_ESTIMATE))
+        if (this.getOwner().getField(ApTrx.TRX_STATUS_ID).getValue() == this.getTrxStatusID(ApTrx.DEP_ESTIMATE))
             return true;
         return false;
     }

@@ -69,26 +69,26 @@ public class AccountHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kAccountID).setEnabled(true);
-        this.getRecord(Account.kAccountFile).getField(Account.kAccountNo).setEnabled(true);   // Enable Key Field
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate).addListener(new RegisterValueHandler(null));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate).addListener(new RegisterValueHandler(null));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kCalcStart).addListener(new RegisterValueHandler(null));
-        if ((this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate).isNull()) ||
-            (this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate).isNull()))
+        this.getScreenRecord().getField(AcctDetailScreenRecord.ACCOUNT_ID).setEnabled(true);
+        this.getRecord(Account.ACCOUNT_FILE).getField(Account.ACCOUNT_NO).setEnabled(true);   // Enable Key Field
+        this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE).addListener(new RegisterValueHandler(null));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE).addListener(new RegisterValueHandler(null));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.CALC_START).addListener(new RegisterValueHandler(null));
+        if ((this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE).isNull()) ||
+            (this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE).isNull()))
         {   // If the starting and ending date haven't been set yet, set them to the current period start and end.
             Date date = new Date();     // Now
             Period recPeriod = new Period((RecordOwner)this.getParentScreen()); // Note: I Use READ_MOVE, because RegisterBehavior doesn't respond to it.
-            if (this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate).isNull())
-                ((DateTimeField)this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate)).setDate(recPeriod.getPeriodStartDate(date), DBConstants.DISPLAY, DBConstants.READ_MOVE);
-            if (this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate).isNull())
-                ((DateTimeField)this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate)).setDate(recPeriod.getPeriodEndDate(date), DBConstants.DISPLAY, DBConstants.READ_MOVE);
+            if (this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE).isNull())
+                ((DateTimeField)this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE)).setDate(recPeriod.getPeriodStartDate(date), DBConstants.DISPLAY, DBConstants.READ_MOVE);
+            if (this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE).isNull())
+                ((DateTimeField)this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE)).setDate(recPeriod.getPeriodEndDate(date), DBConstants.DISPLAY, DBConstants.READ_MOVE);
             recPeriod.free();
             recPeriod = null;
         }
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate).setEnabled(true);
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate).setEnabled(true);
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kCalcStart).setEnabled(true);
+        this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE).setEnabled(true);
+        this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE).setEnabled(true);
+        this.getScreenRecord().getField(AcctDetailScreenRecord.CALC_START).setEnabled(true);
     }
     /**
      * SetupSFields Method.
@@ -96,7 +96,7 @@ public class AccountHeaderScreen extends HeaderScreen
     public void setupSFields()
     {
         // This will synchronize the screen field and make sure the lookup uses the header record
-        ((ReferenceField)this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kAccountID)).setReference(this.getRecord(Account.kAccountFile), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((ReferenceField)this.getScreenRecord().getField(AcctDetailScreenRecord.ACCOUNT_ID)).setReference(this.getRecord(Account.ACCOUNT_FILE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kStartBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);

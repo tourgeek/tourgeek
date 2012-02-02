@@ -84,7 +84,7 @@ public class BaseStatusUpdateHandler extends FieldListener
      */
     public String getDisplayMessage()
     {
-        String strMessage = this.getOwner().getRecord().getField(BaseStatus.kDescription).toString();
+        String strMessage = this.getOwner().getRecord().getField(BaseStatus.DESCRIPTION).toString();
         return strMessage;
     }
 

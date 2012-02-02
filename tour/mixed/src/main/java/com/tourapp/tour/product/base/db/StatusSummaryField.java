@@ -81,7 +81,7 @@ public class StatusSummaryField extends IntegerField
                             blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType, strProductType), 0);
                         }
                     BookingDetail recCustSaleDetail = (BookingDetail)((BaseField)this.getField()).getRecord();
-                    if (recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.kProductStatusID).getValue() == ProductStatus.CANCELED)
+                    if (recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.PRODUCT_STATUS_ID).getValue() == ProductStatus.CANCELED)
                         blink.addIcon(applet.loadImageIcon(ThinMenuConstants.CANCEL, ThinMenuConstants.CANCEL), 0);
                 }
         }
@@ -136,7 +136,7 @@ public class StatusSummaryField extends IntegerField
     public String getProductType()
     {
         BookingDetail recCustSaleDetail = (BookingDetail)((BaseField)this.getField()).getRecord();
-        String strProductType = recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.kProductType).toString();
+        String strProductType = recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.PRODUCT_TYPE).toString();
         if ((strProductType == null) || (strProductType.length() == 0))
             strProductType = ProductType.ITEM;
         return strProductType;

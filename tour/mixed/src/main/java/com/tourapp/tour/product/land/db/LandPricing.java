@@ -229,7 +229,7 @@ public class LandPricing extends ProductPricing
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.getField(LandPricing.kLandVariesID).addListener(new ManualVariesDefaultCost(null));
+        this.getField(LandPricing.LAND_VARIES_ID).addListener(new ManualVariesDefaultCost(null));
     }
     /**
      * GetQuantity Method.
@@ -237,7 +237,7 @@ public class LandPricing extends ProductPricing
     public int getQuantity(Task task, short sTargetPax, LandMessageData mapProperties, Map<String, Object> mapSurvey)
     {
         int iQuantity = 0;
-        int iPaxCategory = (int)this.getField(LandPricing.kPaxCategoryID).getValue();
+        int iPaxCategory = (int)this.getField(LandPricing.PAX_CATEGORY_ID).getValue();
         if (iPaxCategory == PaxCategory.ALL_ID)
             iQuantity = sTargetPax;
         else
@@ -247,11 +247,11 @@ public class LandPricing extends ProductPricing
             } catch (Exception ex) {
             }
         }
-        LandVaries recVariesOn = (LandVaries)((ReferenceField)this.getField(LandPricing.kLandVariesID)).getReference();
+        LandVaries recVariesOn = (LandVaries)((ReferenceField)this.getField(LandPricing.LAND_VARIES_ID)).getReference();
         if (recVariesOn != null)
             if ((recVariesOn.getEditMode() == DBConstants.EDIT_CURRENT) || (recVariesOn.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
         {
-            String strVariesBy = recVariesOn.getField(LandVaries.kVariesBy).toString();
+            String strVariesBy = recVariesOn.getField(LandVaries.VARIES_BY).toString();
             if ((strVariesBy == null) || (strVariesBy.length() == 0))
                 strVariesBy = VariesByField.AUTO_PER_PERSON;
             else if ((VariesByField.AUTO_PER_PERSON.equals(strVariesBy)) || (VariesByField.MANUAL_PER_PERSON.equals(strVariesBy)))
@@ -281,19 +281,19 @@ public class LandPricing extends ProductPricing
             }
             if ((VariesByField.MANUAL_PER_PERSON.equals(strVariesBy)) || (VariesByField.MANUAL_FIXED.equals(strVariesBy)) || (VariesByField.MANUAL_PER_ROOM.equals(strVariesBy)))
             { // Cost comes from a param
-                String strKey = BookingDetail.COST_PARAM + '.' + BookingDetail.MESSAGE_PARAM + '.' + ThinUtil.fixDOMElementName(recVariesOn.getVariesParam(this.getField(LandPricing.kVariesDesc).toString()));
+                String strKey = BookingDetail.COST_PARAM + '.' + BookingDetail.MESSAGE_PARAM + '.' + ThinUtil.fixDOMElementName(recVariesOn.getVariesParam(this.getField(LandPricing.VARIES_DESC).toString()));
                 if (mapProperties.get(strKey) == null)
                 {
                     String PARAM_REQUIRED = "Param required";
                     String strError = strKey;
                     if (mapSurvey != null)
                     { // Name of param that is missing
-                        mapSurvey.put(strKey + '.' + recVariesOn.getField(LandVaries.kDescription).getFieldName(), recVariesOn.getField(LandVaries.kDescription).toString());
-                        strError = recVariesOn.getField(LandVaries.kDescription).toString();
-                        if (!this.getField(LandPricing.kVariesDesc).isNull())
+                        mapSurvey.put(strKey + '.' + recVariesOn.getField(LandVaries.DESCRIPTION).getFieldName(), recVariesOn.getField(LandVaries.DESCRIPTION).toString());
+                        strError = recVariesOn.getField(LandVaries.DESCRIPTION).toString();
+                        if (!this.getField(LandPricing.VARIES_DESC).isNull())
                         {
-                            mapSurvey.put(strKey + '.' + this.getField(LandPricing.kVariesDesc).getFieldName(), this.getField(LandPricing.kVariesDesc).toString());
-                            strError = strError +  "(" + this.getField(LandPricing.kVariesDesc).toString() + ")";
+                            mapSurvey.put(strKey + '.' + this.getField(LandPricing.VARIES_DESC).getFieldName(), this.getField(LandPricing.VARIES_DESC).toString());
+                            strError = strError +  "(" + this.getField(LandPricing.VARIES_DESC).toString() + ")";
                         }
                     }
                     if (task != null)
@@ -313,7 +313,7 @@ public class LandPricing extends ProductPricing
      */
     public FileListener setupLandFilter(Land recLand, Date dateTarget, short sTargetPax, int iSicPmc)
     {
-        this.setKeyArea(LandPricing.kProductIDKey);
+        this.setKeyArea(LandPricing.PRODUCT_ID_KEY);
         FileListener listener = new LandPricingFilter(recLand, dateTarget, sTargetPax, iSicPmc);
         return listener;
     }

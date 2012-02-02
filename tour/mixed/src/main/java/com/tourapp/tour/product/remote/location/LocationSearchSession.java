@@ -78,14 +78,14 @@ public class LocationSearchSession extends Session
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(Region.kRegionFile).setKeyArea(Region.kContinentIDKey);
-        this.getRecord(Region.kRegionFile).addListener(new StringSubFileFilter(null, Region.kContinentID, null, -1, null, -1));
-        this.getRecord(Country.kCountryFile).setKeyArea(Country.kRegionIDKey);
-        this.getRecord(Country.kCountryFile).addListener(new StringSubFileFilter(null, Country.kRegionID, null, -1, null, -1));
-        this.getRecord(State.kStateFile).setKeyArea(State.kCountryIDKey);
-        this.getRecord(State.kStateFile).addListener(new StringSubFileFilter(null, State.kCountryID, null, -1, null, -1));
-        this.getRecord(City.kCityFile).setKeyArea(City.kCountryIDKey);
-        this.getRecord(City.kCityFile).addListener(new StringSubFileFilter(null, City.kCountryID, null, -1, null, -1));
+        this.getRecord(Region.REGION_FILE).setKeyArea(Region.CONTINENT_ID_KEY);
+        this.getRecord(Region.REGION_FILE).addListener(new StringSubFileFilter(null, Region.CONTINENT_ID, null, null, null, null));
+        this.getRecord(Country.COUNTRY_FILE).setKeyArea(Country.REGION_ID_KEY);
+        this.getRecord(Country.COUNTRY_FILE).addListener(new StringSubFileFilter(null, Country.REGION_ID, null, null, null, null));
+        this.getRecord(State.STATE_FILE).setKeyArea(State.COUNTRY_ID_KEY);
+        this.getRecord(State.STATE_FILE).addListener(new StringSubFileFilter(null, State.COUNTRY_ID, null, null, null, null));
+        this.getRecord(City.CITY_FILE).setKeyArea(City.COUNTRY_ID_KEY);
+        this.getRecord(City.CITY_FILE).addListener(new StringSubFileFilter(null, City.COUNTRY_ID, null, null, null, null));
     }
     /**
      * Override this to do an action sent from the client.

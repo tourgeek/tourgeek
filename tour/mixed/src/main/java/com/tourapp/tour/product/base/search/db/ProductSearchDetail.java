@@ -174,7 +174,7 @@ public class ProductSearchDetail extends VirtualRecord
     public void addListeners()
     {
         super.addListeners();
-        this.getField(ProductSearchDetail.kProductID).addListener(new SetProductTypeHandler(this.getField(ProductSearchDetail.kProductTypeID)));
+        this.getField(ProductSearchDetail.PRODUCT_ID).addListener(new SetProductTypeHandler(this.getField(ProductSearchDetail.PRODUCT_TYPE_ID)));
     }
 
 }

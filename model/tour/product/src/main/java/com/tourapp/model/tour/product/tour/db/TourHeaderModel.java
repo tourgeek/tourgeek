@@ -8,11 +8,30 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface TourHeaderModel extends ProductModel
 {
+
+    //public static final String ID = ID;
+    //public static final String CODE = CODE;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String VENDOR_ID = VENDOR_ID;
+    //public static final String OPERATORS_CODE = OPERATORS_CODE;
+    //public static final String PRODUCT_CHAIN_ID = PRODUCT_CHAIN_ID;
+    //public static final String CITY_ID = CITY_ID;
+    //public static final String ETD = ETD;
+    //public static final String COMMENTS = COMMENTS;
+    //public static final String ITINERARY_DESC = ITINERARY_DESC;
+    //public static final String DESC_SORT = DESC_SORT;
     public static final String START_DATE = "StartDate";
     public static final String END_DATE = "EndDate";
     public static final String TOUR_TYPE = "TourType";
+    public static final String TOUR_SERIES = "TourSeries";
     public static final String DAYS = "Days";
     public static final String NIGHTS = "Nights";
+    public static final String BROCHURE_ID = "BrochureID";
+    public static final String AIRLINE_ID = "AirlineID";
+    public static final String PRODUCT_CAT_ID = "ProductCatID";
+    public static final String TOUR_CLASS_ID = "TourClassID";
+    public static final String COUNTRY_ID = "CountryID";
+    public static final String REGION_ID = "RegionID";
     public static final String TOUR_DETAIL = "Tour detail";
     public static final String TOUR_HEADER_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourHeaderScreen";
     public static final String TOUR_PRODUCT_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourProductGridScreen";

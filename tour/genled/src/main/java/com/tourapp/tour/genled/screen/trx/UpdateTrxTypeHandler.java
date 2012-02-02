@@ -82,19 +82,19 @@ public class UpdateTrxTypeHandler extends FileListener
             case DBConstants.ADD_TYPE:
             case DBConstants.UPDATE_TYPE:
                 Record record = this.getOwner();
-                Record recTrxGroup = ((ReferenceField)record.getField(TransactionType.kTrxGroupID)).getReference();
-                record.getField(TransactionType.kGroupCode).moveFieldToThis(recTrxGroup.getField(TrxGroup.kGroupCode));
-                record.getField(TransactionType.kGroupDesc).moveFieldToThis(recTrxGroup.getField(TrxGroup.kGroupDesc));
+                Record recTrxGroup = ((ReferenceField)record.getField(TransactionType.TRX_GROUP_ID)).getReference();
+                record.getField(TransactionType.GROUP_CODE).moveFieldToThis(recTrxGroup.getField(TrxGroup.GROUP_CODE));
+                record.getField(TransactionType.GROUP_DESC).moveFieldToThis(recTrxGroup.getField(TrxGroup.GROUP_DESC));
         
-                Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.kTrxDescID)).getReference();
-                record.getField(TransactionType.kTrxDescID).moveFieldToThis(recTrxDesc.getField(TrxDesc.kID));
-                record.getField(TransactionType.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
-                record.getField(TransactionType.kDescription).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescription));
+                Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.TRX_DESC_ID)).getReference();
+                record.getField(TransactionType.TRX_DESC_ID).moveFieldToThis(recTrxDesc.getField(TrxDesc.ID));
+                record.getField(TransactionType.DESC_CODE).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESC_CODE));
+                record.getField(TransactionType.DESCRIPTION).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESCRIPTION));
         
-                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
-                record.getField(TransactionType.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
-                record.getField(TransactionType.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
-                record.getField(TransactionType.kSystemDesc).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemDesc));
+                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.TRX_SYSTEM_ID)).getReference();
+                record.getField(TransactionType.TRX_SYSTEM_ID).moveFieldToThis(recTrxSystem.getField(TrxSystem.ID));
+                record.getField(TransactionType.SYSTEM_CODE).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_CODE));
+                record.getField(TransactionType.SYSTEM_DESC).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_DESC));
         
                 break;
         }

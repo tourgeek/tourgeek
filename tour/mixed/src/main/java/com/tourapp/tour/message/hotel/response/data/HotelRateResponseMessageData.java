@@ -86,13 +86,13 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
     {
         int iInfoStatus = super.getRawRecordData(record);
         BookingHotel recBookingHotel = (BookingHotel)record;
-        for (int iFieldSeq = BookingHotel.kSingleCost, iRoomCategory = PaxCategory.SINGLE_ID; iFieldSeq <= BookingHotel.kQuadCost; iFieldSeq++, iRoomCategory++)
+        for (int iFieldSeq = recBookingHotel.getFieldSeq(BookingHotel.SINGLE_COST), iRoomCategory = PaxCategory.SINGLE_ID; iFieldSeq <= recBookingHotel.getFieldSeq(BookingHotel.QUAD_COST); iFieldSeq++, iRoomCategory++)
         {
             double dRoomCost = this.getRoomCost(iRoomCategory);
             recBookingHotel.getField(iFieldSeq).setValue(dRoomCost);
         }
-        this.getRawFieldData(recBookingHotel.getField(BookingHotel.kRoomCost));
-        this.getRawFieldData(recBookingHotel.getField(BookingHotel.kMealCost));
+        this.getRawFieldData(recBookingHotel.getField(BookingHotel.ROOM_COST));
+        this.getRawFieldData(recBookingHotel.getField(BookingHotel.MEAL_COST));
         return iInfoStatus;
     }
     /**
@@ -135,8 +135,8 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Hotel.kHotelFile) != null)
-                    return (Hotel)recordOwner.getRecord(Hotel.kHotelFile);
+                if (recordOwner.getRecord(Hotel.HOTEL_FILE) != null)
+                    return (Hotel)recordOwner.getRecord(Hotel.HOTEL_FILE);
         return new Hotel(recordOwner);
     }
 

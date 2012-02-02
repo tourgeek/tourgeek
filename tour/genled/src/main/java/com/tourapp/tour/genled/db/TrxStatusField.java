@@ -94,8 +94,8 @@ public class TrxStatusField extends ReferenceField
         String strDesc = this.getDesc();
         if ((strSystem != null) && (strDesc != null))
         {
-            record.setKeyArea(TrxStatus.kSystemCodeKey);
-            record.addListener(new StringSubFileFilter(strSystem, TrxStatus.kSystemCode, strDesc, TrxStatus.kDescCode, null, -1));
+            record.setKeyArea(TrxStatus.SYSTEM_CODE_KEY);
+            record.addListener(new StringSubFileFilter(strSystem, TrxStatus.SYSTEM_CODE, strDesc, TrxStatus.DESC_CODE, null, null));
         }
         return record;
     }
@@ -121,7 +121,7 @@ public class TrxStatusField extends ReferenceField
     {
         super.setEnabled(bEnable);
         if (this.getReferenceRecord(null, false) != null)
-            this.getReferenceRecord().getField(TrxStatus.kStatusDesc).setEnabled(bEnable);
+            this.getReferenceRecord().getField(TrxStatus.STATUS_DESC).setEnabled(bEnable);
     }
     /**
      * Set up the default screen control for this field.
@@ -136,8 +136,8 @@ public class TrxStatusField extends ReferenceField
     {
         Record record = this.getReferenceRecord();  // Get/make the record that describes the referenced class.
         if (this.isPopupControl())
-            return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, TrxStatus.kSystemCodeKey, TrxStatus.kStatusDesc, false, false);
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, TrxStatus.kStatusDesc, false, false);
+            return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, TrxStatus.SYSTEM_CODE_KEY, TrxStatus.STATUS_DESC, false, false);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, TrxStatus.STATUS_DESC, false, false);
     }
     /**
      * Is this screen control suppose to be a popup control?.

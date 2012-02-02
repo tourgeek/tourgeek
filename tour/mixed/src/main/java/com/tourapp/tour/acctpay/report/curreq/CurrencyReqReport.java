@@ -102,16 +102,16 @@ public class CurrencyReqReport extends AnalysisScreen
     {
         super.addListeners();
         
-        Record recApTrx = this.getRecord(ApTrx.kApTrxFile);
-        Record recVendor = this.getRecord(Vendor.kVendorFile);
-        Record recCurrencys = this.getRecord(Currencys.kCurrencysFile);
+        Record recApTrx = this.getRecord(ApTrx.AP_TRX_FILE);
+        Record recVendor = this.getRecord(Vendor.VENDOR_FILE);
+        Record recCurrencys = this.getRecord(Currencys.CURRENCYS_FILE);
         
-        recApTrx.getField(ApTrx.kVendorID).addListener(new ReadSecondaryHandler(recVendor));
-        recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+        recApTrx.getField(ApTrx.VENDOR_ID).addListener(new ReadSecondaryHandler(recVendor));
+        recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         
-        recApTrx.addListener(new CalcStartDateHandler(this.getScreenRecord().getField(CurrencyReqScreenRecord.kFromDate), recApTrx.getField(ApTrx.kStartServiceDate), this.getScreenRecord().getField(CurrencyReqScreenRecord.kStartDate), this.getScreenRecord().getField(CurrencyReqScreenRecord.kPeriodType), this.getScreenRecord().getField(CurrencyReqScreenRecord.kPeriodLength)));
+        recApTrx.addListener(new CalcStartDateHandler(this.getScreenRecord().getField(CurrencyReqScreenRecord.FROM_DATE), recApTrx.getField(ApTrx.START_SERVICE_DATE), this.getScreenRecord().getField(CurrencyReqScreenRecord.START_DATE), this.getScreenRecord().getField(CurrencyReqScreenRecord.PERIOD_TYPE), this.getScreenRecord().getField(CurrencyReqScreenRecord.PERIOD_LENGTH)));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new ApTrxFilter(ApTrx.kTrxStatusID, (ScreenRecord)this.getScreenRecord()));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new ApTrxFilter(ApTrx.TRX_STATUS_ID, (ScreenRecord)this.getScreenRecord()));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -155,20 +155,20 @@ public class CurrencyReqReport extends AnalysisScreen
      */
     public void addSummary(Record recSummary, BaseField[][] mxKeyFields, BaseField[][] mxDataFields)
     {
-        this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kSummaryCurrencyDesc).moveFieldToThis(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription));
-        this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kDepartureTotal).moveFieldToThis(this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDepartureEstimate));
-        this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kBalanceTotal).moveFieldToThis(this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceBalance));
-        double dEstimate = this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDepartureEstimate).getValue();
-        double dBalance = this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceBalance).getValue();
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.SUMMARY_CURRENCY_DESC).moveFieldToThis(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.DESCRIPTION));
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.DEPARTURE_TOTAL).moveFieldToThis(this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.DEPARTURE_ESTIMATE));
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.BALANCE_TOTAL).moveFieldToThis(this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.INVOICE_BALANCE));
+        double dEstimate = this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.DEPARTURE_ESTIMATE).getValue();
+        double dBalance = this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.INVOICE_BALANCE).getValue();
         double dTotal = dBalance;
         if (dTotal == 0.00)
             dTotal = dEstimate;
-        this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kTotalTotal).setValue(dTotal);
-        double dTotalUSD = dTotal * this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kLastRate).getValue();
-        this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kTotalUSD).setValue(dTotalUSD);
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.TOTAL_TOTAL).setValue(dTotal);
+        double dTotalUSD = dTotal * this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.LAST_RATE).getValue();
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.TOTAL_USD).setValue(dTotalUSD);
         
         // Add totals:
-        this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kUSDTotal).setValue(this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kUSDTotal).getValue() + this.getRecord(CurrencyReqScreenRecord.kCurrencyReqScreenRecordFile).getField(CurrencyReqScreenRecord.kTotalUSD).getValue());
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.USD_TOTAL).setValue(this.getScreenRecord().getField(CurrencyReqScreenRecord.USD_TOTAL).getValue() + this.getScreenRecord().getField(CurrencyReqScreenRecord.TOTAL_USD).getValue());
         
         super.addSummary(recSummary, mxKeyFields, mxDataFields);
     }

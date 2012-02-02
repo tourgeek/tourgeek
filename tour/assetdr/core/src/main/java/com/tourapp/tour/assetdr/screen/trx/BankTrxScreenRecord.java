@@ -31,13 +31,21 @@ public class BankTrxScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String USER_ID = "UserID";
     public static final int kUserID = kScreenRecordLastField + 1;
+    public static final String BANK_ACCT_ID = "BankAcctID";
     public static final int kBankAcctID = kUserID + 1;
+    public static final String START_DATE = "StartDate";
     public static final int kStartDate = kBankAcctID + 1;
+    public static final String DISPLAY_BALANCE = "DisplayBalance";
     public static final int kDisplayBalance = kStartDate + 1;
+    public static final String START_BALANCE = "StartBalance";
     public static final int kStartBalance = kDisplayBalance + 1;
+    public static final String END_BALANCE = "EndBalance";
     public static final int kEndBalance = kStartBalance + 1;
+    public static final String CHANGE_BALANCE = "ChangeBalance";
     public static final int kChangeBalance = kEndBalance + 1;
+    public static final String TRX_COUNT = "TrxCount";
     public static final int kTrxCount = kChangeBalance + 1;
     public static final int kBankTrxScreenRecordLastField = kTrxCount;
     public static final int kBankTrxScreenRecordFields = kTrxCount - DBConstants.MAIN_FIELD + 1;

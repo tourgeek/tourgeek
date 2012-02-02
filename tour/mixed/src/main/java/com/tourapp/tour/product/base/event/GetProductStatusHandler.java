@@ -96,7 +96,7 @@ public class GetProductStatusHandler extends RecordCacheHandler
             else if ((MessageTransportTypeField.AUTO_RESPONSE.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.TRANSPORT_TYPE_PARAM)))
                 || (MessageTransportTypeField.LOCAL.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.TRANSPORT_TYPE_PARAM))))
             {   // The user wants to do remote price lookups.
-                if (screenRecord.getField(ProductScreenRecord.kRemoteQueryEnabled).getState() == true)
+                if (screenRecord.getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).getState() == true)
                 {
                     if (m_intRegistryID != null)
                         trxMessageHeader.put(TrxMessageHeader.REGISTRY_ID, m_intRegistryID);    // The return Queue ID

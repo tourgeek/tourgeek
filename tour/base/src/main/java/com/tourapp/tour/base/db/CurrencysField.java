@@ -75,7 +75,7 @@ public class CurrencysField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Currencys.kCurrencyCodeKey, Currencys.kDescription, true);
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Currencys.CURRENCY_CODE_KEY, Currencys.DESCRIPTION, true);
     }
 
 }

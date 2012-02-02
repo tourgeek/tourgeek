@@ -164,7 +164,7 @@ public class HotelInventory extends Inventory
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(Inventory.kProductTypeID, ProductType.HOTEL_ID));
+        this.addListener(new SharedFileHandler(Inventory.PRODUCT_TYPE_ID, ProductType.HOTEL_ID));
     }
 
 }

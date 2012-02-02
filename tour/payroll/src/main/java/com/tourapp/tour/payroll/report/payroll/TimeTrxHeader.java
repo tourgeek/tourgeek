@@ -95,23 +95,23 @@ public class TimeTrxHeader extends Screen
      */
     public void addListeners()
     {
-        Record prTimeTrx = this.getRecord(TimeTrx.kTimeTrxFile);
+        Record prTimeTrx = this.getRecord(TimeTrx.TIME_TRX_FILE);
         FieldListener readKeyed = new MainFieldHandler();
-        prTimeTrx.getField(TimeTrx.kTimeEmpNo).addListener(readKeyed);
-        Record employee = this.getRecord(Employee.kEmployeeFile);
-        FileListener subFile = new SubFileFilter(this.getScreenRecord().getField(TimeTrxScreenRecord.kPayEndingDate), TimeTrx.kPayEnding, null, -1, null, -1);
+        prTimeTrx.getField(TimeTrx.TIME_EMP_NO).addListener(readKeyed);
+        Record employee = this.getRecord(Employee.EMPLOYEE_FILE);
+        FileListener subFile = new SubFileFilter(this.getScreenRecord().getField(TimeTrxScreenRecord.PAY_ENDING_DATE), TimeTrx.PAY_ENDING, null, null, null, null);
         prTimeTrx.addListener(subFile);
-        FieldListener secondary = new ReadSecondaryHandler(employee, Employee.kID);
-        //+prTimeTrx.getField(PrTimeTrx.kTimeEmpNo).addListener(secondary);
-        //+FileListener checkField = new ContainsFieldFileBehavior(Employee.kPayFrequency, this.getScreenRecord().getField(HFPrTimeTrx.kEmpToPay));
+        FieldListener secondary = new ReadSecondaryHandler(employee, Employee.ID);
+        //+prTimeTrx.getField(PrTimeTrx.TIME_EMP_NO).addListener(secondary);
+        //+FileListener checkField = new ContainsFieldFileBehavior(Employee.PAY_FREQUENCY, this.getScreenRecord().getField(HFPrTimeTrx.EMP_TO_PAY));
         //+employee.addListener(checkField);
-        //+FileListener checkTerminated = new SkipBlankBehavior(Employee.kTerminationDate, true); // Skip only if NOT null
+        //+FileListener checkTerminated = new SkipBlankBehavior(Employee.TERMINATION_DATE, true); // Skip only if NOT null
         //+employee.addListener(checkTerminated); // Skip terminated empployees
-        //+FieldListener fieldBeh = new DisableOnFieldHandler(prTimeTrx.getField(PrTimeTrx.kPaySalary), "H");
-        //+employee.getField(Employee.kPayType).addListener(fieldBeh);
-        //+FileListener disableKey = new DisableOnValid(PrTimeTrx.kTimeEmpNo);
+        //+FieldListener fieldBeh = new DisableOnFieldHandler(prTimeTrx.getField(PrTimeTrx.PAY_SALARY), "H");
+        //+employee.getField(Employee.PAY_TYPE).addListener(fieldBeh);
+        //+FileListener disableKey = new DisableOnValid(PrTimeTrx.TIME_EMP_NO);
         //+prTimeTrx.addListener(disableKey);
-        FileListener checkValid = new CheckValidEmployee(this.getScreenRecord().getField(TimeTrxScreenRecord.kEmpToPay));
+        FileListener checkValid = new CheckValidEmployee(this.getScreenRecord().getField(TimeTrxScreenRecord.EMP_TO_PAY));
         employee.addListener(checkValid);
     }
     /**

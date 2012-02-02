@@ -70,8 +70,8 @@ public class BookingDetailSession extends TableModelSession
     public void openOtherRecords()
     {
         super.openOtherRecords();
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
         recTour.setOpenMode(recTour.getOpenMode() & ~DBConstants.OPEN_READ_ONLY);    // Need to be able to change this!
     }
     /**
@@ -81,7 +81,7 @@ public class BookingDetailSession extends TableModelSession
     {
         super.addListeners();
         
-        this.getRecord(BookingDetail.kBookingDetailFile).setupRecordListener(this, true, true);
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).setupRecordListener(this, true, true);
     }
     /**
      * Override this to do an action sent from the client.
@@ -102,9 +102,9 @@ public class BookingDetailSession extends TableModelSession
      */
     public Object doAddAction(Map<String,Object> properties) throws RemoteException, DBException
     {
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
         
         String strProductType = (String)properties.get(SearchConstants.PRODUCT_TYPE);
         Object objProductID = properties.get(Constants.OBJECT_ID);
@@ -122,17 +122,17 @@ public class BookingDetailSession extends TableModelSession
                     if ((!(objProductID instanceof String)) || (!Constants.BLANK.equalsIgnoreCase((String)objProductID)))
                         if (recTourHeader.setHandle(objProductID, DBConstants.OBJECT_ID_HANDLE) != null)
                     {
-                        int iHeaderTourType = (int)this.getRecord(BookingControl.kBookingControlFile).getField(BookingControl.kTourHeaderTourType).getValue();
-                        TourTypeField fldTourType = (TourTypeField)(RecordReferenceField)recTourHeader.getField(TourHeader.kTourType);
+                        int iHeaderTourType = (int)this.getRecord(BookingControl.BOOKING_CONTROL_FILE).getField(BookingControl.TOUR_HEADER_TOUR_TYPE).getValue();
+                        TourTypeField fldTourType = (TourTypeField)(RecordReferenceField)recTourHeader.getField(TourHeader.TOUR_TYPE);
                         int iTourTypeMask = fldTourType.getBitsToCheck();
-                        if ((iHeaderTourType & (int)recTourHeader.getField(TourHeader.kTourType).getValue() & iTourTypeMask) == 0)
+                        if ((iHeaderTourType & (int)recTourHeader.getField(TourHeader.TOUR_TYPE).getValue() & iTourTypeMask) == 0)
                             bAddDetail = true;  // This is a module
                     }
                     if (bAddDetail == false)
                     {   // Set up the tour header (and the booking)
                         if (date != null)
                         {
-                            ((DateField)recTour.getField(Tour.kDepartureDate)).setDate(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                            ((DateField)recTour.getField(Tour.DEPARTURE_DATE)).setDate(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
                             if (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                                 recBooking.writeAndRefresh();
                         }
@@ -170,23 +170,23 @@ public class BookingDetailSession extends TableModelSession
         Object objProductID = properties.get(Constants.OBJECT_ID);
         Date date = (Date)Utility.getAs(properties, SearchConstants.DATE, Date.class);
         
-        BookingDetail recBookingDetail = (BookingDetail)this.getRecord(BookingDetail.kBookingDetailFile);
+        BookingDetail recBookingDetail = (BookingDetail)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
         try {
-            ProductType recProductType = (ProductType)((ReferenceField)recBookingDetail.getField(BookingDetail.kProductTypeID)).getReferenceRecord();
+            ProductType recProductType = (ProductType)((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID)).getReferenceRecord();
             int iProductType = recProductType.getProductTypeIDFromName(strProductType);
             if (iProductType == -1)
                 return this.getTask().setLastError("Unknown product type"); //Never
             int iOldOpenMode = recBookingDetail.getOpenMode();
             recBookingDetail.setOpenMode(recBookingDetail.getOpenMode() & ~DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);  // Turn this off for a sec.
-            recBookingDetail.getField(BookingDetail.kProductTypeID).setValue(iProductType);
+            recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID).setValue(iProductType);
             recBookingDetail.addNew();
             recBookingDetail.setOpenMode(iOldOpenMode);
             recBookingDetail = (BookingDetail)recBookingDetail.getTable().getCurrentTable().getRecord();
         
             recBookingDetail.setDetailProductInfo(properties, null, null, null, null, null, null);
         
-            ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            recBookingDetail.getField(BookingDetail.kProductID).setString(objProductID.toString());
+            ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            recBookingDetail.getField(BookingDetail.PRODUCT_ID).setString(objProductID.toString());
         
             if (recBookingDetail.getEditMode() == DBConstants.EDIT_ADD)
                 recBookingDetail.add(); // Never
@@ -220,7 +220,7 @@ public class BookingDetailSession extends TableModelSession
     public int getAvailability(int iQuantiry) throws RemoteException
     {
         BookingDetail recCustSaleDetail = (BookingDetail)this.setRecordCurrent();
-        boolean bInventory = recCustSaleDetail.getField(BookingDetail.kInventoryStatusID).getState();
+        boolean bInventory = recCustSaleDetail.getField(BookingDetail.INVENTORY_STATUS_ID).getState();
         return -1;
     }
     /**
@@ -246,7 +246,7 @@ public class BookingDetailSession extends TableModelSession
     public String getMealDesc(Date date) throws RemoteException
     {
         BookingDetail recCustSaleDetail = (BookingDetail)this.setRecordCurrent();
-        Record recMealPlan = (Record)recCustSaleDetail.getRecordOwner().getRecord(MealPlan.kMealPlanFile);
+        Record recMealPlan = (Record)recCustSaleDetail.getRecordOwner().getRecord(MealPlan.MEAL_PLAN_FILE);
         return recCustSaleDetail.getMealDesc(date, false, recMealPlan);
     }
     /**
@@ -268,7 +268,7 @@ public class BookingDetailSession extends TableModelSession
         Properties properties = new Properties();
         int iMode = 0;
         
-        String strMessageCode = null;//???recCustSaleDetail.getMessageRequestCode(BookingDetail.kCostStatusID);
+        String strMessageCode = null;//???recCustSaleDetail.getMessageRequestCode(BookingDetail.COST_STATUS_ID);
         properties.setProperty(TrxMessageHeader.MESSAGE_RESPONSE_CLASS, strMessageCode);
         properties.setProperty(DBParams.RECORD, recCustSaleDetail.getTableNames(false));
         try   {
@@ -278,8 +278,8 @@ public class BookingDetailSession extends TableModelSession
         }
         try   {
             // Don't need to lock, setRecordCurrent did it already!
-            int iStatus = (int)recCustSaleDetail.getField(BookingDetail.kCostStatusID).getValue();;
-            dPrice = recCustSaleDetail.getField(BookingDetail.kTotalCostLocal).getValue();
+            int iStatus = (int)recCustSaleDetail.getField(BookingDetail.COST_STATUS_ID).getValue();;
+            dPrice = recCustSaleDetail.getField(BookingDetail.TOTAL_COST_LOCAL).getValue();
             if (recCustSaleDetail.isModified())
                 recCustSaleDetail.set();
         } catch (DBException ex)    {

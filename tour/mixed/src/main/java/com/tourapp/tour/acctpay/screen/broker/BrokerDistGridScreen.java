@@ -116,18 +116,18 @@ public class BrokerDistGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        ((ReferenceField)this.getScreenRecord().getField(BrokerScreenRecord.kVendorID)).setReference(this.getRecord(Vendor.kVendorFile));
-        this.getScreenRecord().getField(BrokerScreenRecord.kVendorID).addListener(new ReadSecondaryHandler(this.getRecord(Vendor.kVendorFile)));
-        if (this.getScreenRecord().getField(BrokerScreenRecord.kVendorID).isNull())
-            this.getScreenRecord().getField(BrokerScreenRecord.kVendorID).moveFieldToThis(this.getRecord(ApControl.kApControlFile).getField(ApControl.kBrokerVendorID));
-        this.getScreenRecord().getField(BrokerScreenRecord.kVendorID).addListener(new FieldReSelectHandler(this));
+        ((ReferenceField)this.getScreenRecord().getField(BrokerScreenRecord.VENDOR_ID)).setReference(this.getRecord(Vendor.VENDOR_FILE));
+        this.getScreenRecord().getField(BrokerScreenRecord.VENDOR_ID).addListener(new ReadSecondaryHandler(this.getRecord(Vendor.VENDOR_FILE)));
+        if (this.getScreenRecord().getField(BrokerScreenRecord.VENDOR_ID).isNull())
+            this.getScreenRecord().getField(BrokerScreenRecord.VENDOR_ID).moveFieldToThis(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.BROKER_VENDOR_ID));
+        this.getScreenRecord().getField(BrokerScreenRecord.VENDOR_ID).addListener(new FieldReSelectHandler(this));
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.BROKER_PAYMENT_HEADER);
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.BROKER_PAYMENT_HEADER);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
         
         // Make sure draft is fully selected for payment
-        this.getMainRecord().getField(ApTrx.kInvoiceLocal).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kAmountSelected), this.getMainRecord().getField(ApTrx.kInvoiceLocal)));
+        this.getMainRecord().getField(ApTrx.INVOICE_LOCAL).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.AMOUNT_SELECTED), this.getMainRecord().getField(ApTrx.INVOICE_LOCAL)));
         
         FilterApTrxHandler filter = new FilterApTrxHandler(null);
         this.getMainRecord().addListener(filter);
@@ -144,35 +144,35 @@ public class BrokerDistGridScreen extends DetailGridScreen
         ReadSecondaryHandler listener = new ReadSecondaryHandler(recVendor2);
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDraftVendorID).addListener(listener);
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.DRAFT_VENDOR_ID).addListener(listener);
         recVendor2.addListener(new RecountOnValidHandler(recApTrx2));
         recApTrx2.addListener(new SubFileFilter(recVendor2));
-        recApTrx2.addListener(new SubCountHandler(this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceAmount), ApTrx.kAmountSelected, false, true));
+        recApTrx2.addListener(new SubCountHandler(this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.INVOICE_AMOUNT), ApTrx.AMOUNT_SELECTED, false, true));
         
-        this.getRecord(ApTrx.kApTrxFile).removeListener(this.getRecord(ApTrx.kApTrxFile).getListener(NoDeleteModifyHandler.class.getName()), true);
+        this.getRecord(ApTrx.AP_TRX_FILE).removeListener(this.getRecord(ApTrx.AP_TRX_FILE).getListener(NoDeleteModifyHandler.class.getName()), true);
         
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kDraftVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.DRAFT_VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            this.getMainRecord().getField(ApTrx.kDraftVendorID).addListener(new MoveOnChangeHandler(recApTrx.getField(ApTrx.kDepartureExchange), recCurrencys.getField(Currencys.kLastRate)));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            this.getMainRecord().getField(ApTrx.DRAFT_VENDOR_ID).addListener(new MoveOnChangeHandler(recApTrx.getField(ApTrx.DEPARTURE_EXCHANGE), recCurrencys.getField(Currencys.LAST_RATE)));
         }
-        recApTrx.getField(ApTrx.kDepartureExchange).addListener(new CalcBalanceHandler(recApTrx.getField(ApTrx.kInvoiceLocal), recApTrx.getField(ApTrx.kDepartureExchange), recApTrx.getField(ApTrx.kInvoiceAmount), CalcBalanceHandler.MULTIPLY, true));
-        recApTrx.getField(ApTrx.kInvoiceAmount).addListener(new CalcBalanceHandler(recApTrx.getField(ApTrx.kInvoiceLocal), recApTrx.getField(ApTrx.kDepartureExchange), recApTrx.getField(ApTrx.kInvoiceAmount), CalcBalanceHandler.MULTIPLY, true));
-        //?recApTrx.getField(ApTrx.kInvoiceUSD).addListener(new CalcBalanceHandler(recApTrx.getField(ApTrx.kDepartureExchange), recApTrx.getField(ApTrx.kInvoiceLocal), recApTrx.getField(ApTrx.kInvoiceAmount), CalcBalanceHandler.DIVIDE, true));
+        recApTrx.getField(ApTrx.DEPARTURE_EXCHANGE).addListener(new CalcBalanceHandler(recApTrx.getField(ApTrx.INVOICE_LOCAL), recApTrx.getField(ApTrx.DEPARTURE_EXCHANGE), recApTrx.getField(ApTrx.INVOICE_AMOUNT), CalcBalanceHandler.MULTIPLY, true));
+        recApTrx.getField(ApTrx.INVOICE_AMOUNT).addListener(new CalcBalanceHandler(recApTrx.getField(ApTrx.INVOICE_LOCAL), recApTrx.getField(ApTrx.DEPARTURE_EXCHANGE), recApTrx.getField(ApTrx.INVOICE_AMOUNT), CalcBalanceHandler.MULTIPLY, true));
+        //?recApTrx.getField(ApTrx.INVOICE_USD).addListener(new CalcBalanceHandler(recApTrx.getField(ApTrx.DEPARTURE_EXCHANGE), recApTrx.getField(ApTrx.INVOICE_LOCAL), recApTrx.getField(ApTrx.INVOICE_AMOUNT), CalcBalanceHandler.DIVIDE, true));
         
-        recApTrx.getField(ApTrx.kAccountID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kPrepayAccountID)));
+        recApTrx.getField(ApTrx.ACCOUNT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.PREPAY_ACCOUNT_ID)));
     }
     /**
      * SetupSFields Method.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kDraftVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.DRAFT_VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDraftVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -187,7 +187,7 @@ public class BrokerDistGridScreen extends DetailGridScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Vendor.kVendorFile);
+        return this.getRecord(Vendor.VENDOR_FILE);
     }
     /**
      * Make a sub-screen.

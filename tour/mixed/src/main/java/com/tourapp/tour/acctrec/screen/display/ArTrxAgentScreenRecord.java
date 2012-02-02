@@ -35,7 +35,9 @@ public class ArTrxAgentScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PROFILE_ID = "ProfileID";
     public static final int kProfileID = kScreenRecordLastField + 1;
+    public static final String BALANCE = "Balance";
     public static final int kBalance = kProfileID + 1;
     public static final int kArTrxAgentScreenRecordLastField = kBalance;
     public static final int kArTrxAgentScreenRecordFields = kBalance - DBConstants.MAIN_FIELD + 1;

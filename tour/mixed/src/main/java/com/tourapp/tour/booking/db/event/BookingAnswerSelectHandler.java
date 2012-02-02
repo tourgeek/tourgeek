@@ -60,13 +60,13 @@ public class BookingAnswerSelectHandler extends FieldListener
     {
         BookingAnswer recBookingAnswer = (BookingAnswer)this.getOwner().getRecord();
         RecordOwner recordOwner = recBookingAnswer.getRecordOwner();
-        Booking recBooking = (Booking)recordOwner.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)recordOwner.getRecord(Tour.kTourFile);
-        BookingPax recBookingPax = (BookingPax)((ReferenceField)recBookingAnswer.getField(BookingAnswer.kBookingPaxID)).getReference();
-        if (recBookingPax.getField(BookingPax.kID).isNull())
-            recBookingPax.getField(BookingPax.kID).moveFieldToThis(recBookingAnswer.getField(BookingAnswer.kBookingPaxID));
-        BaseField fldTourModuleID = recBookingAnswer.getField(BookingAnswer.kModuleID);
-        Date dateStart = ((DateTimeField)recBookingAnswer.getField(BookingAnswer.kModuleStartDate)).getDateTime();
+        Booking recBooking = (Booking)recordOwner.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)recordOwner.getRecord(Tour.TOUR_FILE);
+        BookingPax recBookingPax = (BookingPax)((ReferenceField)recBookingAnswer.getField(BookingAnswer.BOOKING_PAX_ID)).getReference();
+        if (recBookingPax.getField(BookingPax.ID).isNull())
+            recBookingPax.getField(BookingPax.ID).moveFieldToThis(recBookingAnswer.getField(BookingAnswer.BOOKING_PAX_ID));
+        BaseField fldTourModuleID = recBookingAnswer.getField(BookingAnswer.MODULE_ID);
+        Date dateStart = ((DateTimeField)recBookingAnswer.getField(BookingAnswer.MODULE_START_DATE)).getDateTime();
         if (this.getOwner().getState() == true)
         {    // This item was selected, add the detail.
             try {

@@ -102,26 +102,25 @@ public class CashPlanReport extends AnalysisScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(Booking.kBookingDateKey);
+        this.getMainRecord().setKeyArea(Booking.BOOKING_DATE_KEY);
         this.getMainRecord().addListener(new ValidBookingHandler(null));
         
-        Record recBooking = this.getRecord(Booking.kBookingFile);
-        Record recArTrx = this.getRecord(ArTrx.kArTrxFile);
-        Record recBookingLine = this.getRecord(BookingLine.kBookingLineFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
+        Record recArTrx = this.getRecord(ArTrx.AR_TRX_FILE);
+        Record recBookingLine = this.getRecord(BookingLine.BOOKING_LINE_FILE);
         
         recArTrx.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recArTrx));
-        recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.kBalance), ArTrx.kAmount, true, true));
+        recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, true, true));
         
         recBookingLine.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recBookingLine));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kGross), BookingLine.kGross, true, true));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kNet), BookingLine.kNet, true, true));
-        
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.NET), BookingLine.NET, true, true));
         
         recBooking.addListener(new CalcPlanTotals((ScreenRecord)this.getScreenRecord()));
-        recBooking.addListener(new CalcStartDateHandler(this.getScreenRecord().getField(CashPlanScreenRecord.kDepositPeriodDate), recBooking.getField(Booking.kDepositDueDate), this.getScreenRecord().getField(CashPlanScreenRecord.kStartDate), this.getScreenRecord().getField(CashPlanScreenRecord.kPeriodType), this.getScreenRecord().getField(CashPlanScreenRecord.kPeriodLength)));
-        recBooking.addListener(new CalcStartDateHandler(this.getScreenRecord().getField(CashPlanScreenRecord.kFinalPeriodDate), recBooking.getField(Booking.kFinalPaymentDueDate), this.getScreenRecord().getField(CashPlanScreenRecord.kStartDate), this.getScreenRecord().getField(CashPlanScreenRecord.kPeriodType), this.getScreenRecord().getField(CashPlanScreenRecord.kPeriodLength)));
+        recBooking.addListener(new CalcStartDateHandler(this.getScreenRecord().getField(CashPlanScreenRecord.DEPOSIT_PERIOD_DATE), recBooking.getField(Booking.DEPOSIT_DUE_DATE), this.getScreenRecord().getField(CashPlanScreenRecord.START_DATE), this.getScreenRecord().getField(CashPlanScreenRecord.PERIOD_TYPE), this.getScreenRecord().getField(CashPlanScreenRecord.PERIOD_LENGTH)));
+        recBooking.addListener(new CalcStartDateHandler(this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_PERIOD_DATE), recBooking.getField(Booking.FINAL_PAYMENT_DUE_DATE), this.getScreenRecord().getField(CashPlanScreenRecord.START_DATE), this.getScreenRecord().getField(CashPlanScreenRecord.PERIOD_TYPE), this.getScreenRecord().getField(CashPlanScreenRecord.PERIOD_LENGTH)));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -158,21 +157,21 @@ public class CashPlanReport extends AnalysisScreen
      */
     public void addSummary(Record recSummary, BaseField[][] mxKeyFields, BaseField[][] mxDataFields)
     {
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFromDate).moveFieldToThis(this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kDepositPeriodDate));
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kDeposits).moveFieldToThis(this.getRecord(Booking.kBookingFile).getField(Booking.kDeposit));
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kReceipts).moveFieldToThis(this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kDepositDueBalance));
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalPayments).initField(true);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalReceipts).initField(true);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kBalance).initField(true);
+        this.getScreenRecord().getField(CashPlanScreenRecord.FROM_DATE).moveFieldToThis(this.getScreenRecord().getField(CashPlanScreenRecord.DEPOSIT_PERIOD_DATE));
+        this.getScreenRecord().getField(CashPlanScreenRecord.DEPOSITS).moveFieldToThis(this.getRecord(Booking.BOOKING_FILE).getField(Booking.DEPOSIT));
+        this.getScreenRecord().getField(CashPlanScreenRecord.RECEIPTS).moveFieldToThis(this.getScreenRecord().getField(CashPlanScreenRecord.DEPOSIT_DUE_BALANCE));
+        this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_PAYMENTS).initField(true);
+        this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_RECEIPTS).initField(true);
+        this.getScreenRecord().getField(CashPlanScreenRecord.BALANCE).initField(true);
         
         super.addSummary(recSummary, mxKeyFields, mxDataFields);
         
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFromDate).moveFieldToThis(this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalPeriodDate));
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kDeposits).initField(true);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kReceipts).initField(true);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalPayments).moveFieldToThis(this.getRecord(Booking.kBookingFile).getField(Booking.kFinalPaymentDueDate));
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalReceipts).moveFieldToThis(this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalDueLessDeposit));
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kBalance).moveFieldToThis(this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalDueLessDepPymt));
+        this.getScreenRecord().getField(CashPlanScreenRecord.FROM_DATE).moveFieldToThis(this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_PERIOD_DATE));
+        this.getScreenRecord().getField(CashPlanScreenRecord.DEPOSITS).initField(true);
+        this.getScreenRecord().getField(CashPlanScreenRecord.RECEIPTS).initField(true);
+        this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_PAYMENTS).moveFieldToThis(this.getRecord(Booking.BOOKING_FILE).getField(Booking.FINAL_PAYMENT_DUE_DATE));
+        this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_RECEIPTS).moveFieldToThis(this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_DUE_LESS_DEPOSIT));
+        this.getScreenRecord().getField(CashPlanScreenRecord.BALANCE).moveFieldToThis(this.getScreenRecord().getField(CashPlanScreenRecord.FINAL_DUE_LESS_DEP_PYMT));
         
         super.addSummary(recSummary, mxKeyFields, mxDataFields);
     }

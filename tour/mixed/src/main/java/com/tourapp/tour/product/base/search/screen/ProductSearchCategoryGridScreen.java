@@ -88,7 +88,7 @@ public class ProductSearchCategoryGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(ProductSearchType.kProductSearchTypeFile).getField(ProductSearchType.kID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(ProductSearchType.PRODUCT_SEARCH_TYPE_FILE).getField(ProductSearchType.ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * SetupSFields Method.

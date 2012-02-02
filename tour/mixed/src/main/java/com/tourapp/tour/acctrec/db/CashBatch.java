@@ -184,8 +184,8 @@ public class CashBatch extends BankTrxBatch
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.addListener(new EnableOnValidHandler(CashBatch.kBatchChecksActual, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.DISABLE_ON_NEW));
-        this.addListener(new EnableOnValidHandler(CashBatch.kBatchTotalActual, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.DISABLE_ON_NEW));
+        this.addListener(new EnableOnValidHandler(CashBatch.BATCH_CHECKS_ACTUAL, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.DISABLE_ON_NEW));
+        this.addListener(new EnableOnValidHandler(CashBatch.BATCH_TOTAL_ACTUAL, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.DISABLE_ON_NEW));
         
         this.removeListener(this.getListener(SubFileIntegrityHandler.class.getName()), true);
         this.addListener(new SubFileIntegrityHandler(CashBatchDetail.class.getName(), true));

@@ -9,6 +9,11 @@ import org.jbundle.model.db.*;
 public interface CertificationTypeModel extends Rec
 {
 
+    //public static final String ID = ID;
+    public static final String DESCRIPTION = "Description";
+
+    public static final String DESCRIPTION_KEY = "Description";
+
     public static final String CERTIFICATION_TYPE_FILE = "CertificationType";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.profile.db.CertificationType";
     public static final String THICK_CLASS = "com.tourapp.tour.profile.db.CertificationType";

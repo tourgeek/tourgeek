@@ -43,7 +43,7 @@ public class ApTrxBaseFilter extends ListFileFilter
     /**
      * Constructor.
      */
-    public ApTrxBaseFilter(int fsTarget)
+    public ApTrxBaseFilter(String fsTarget)
     {
         this();
         this.init(fsTarget);
@@ -51,7 +51,7 @@ public class ApTrxBaseFilter extends ListFileFilter
     /**
      * Initialize class fields.
      */
-    public void init(int fsTarget)
+    public void init(String fsTarget)
     {
         m_recTrxDesc = null;
         m_recTrxStatus = null;
@@ -134,7 +134,7 @@ public class ApTrxBaseFilter extends ListFileFilter
      */
     public void addTrxStatusID(TrxStatus recTrxStatus)
     {
-        this.addFilter(new Integer((int)recTrxStatus.getField(TrxStatus.kID).getValue()));
+        this.addFilter(new Integer((int)recTrxStatus.getField(TrxStatus.ID).getValue()));
     }
     /**
      * Return the TrxStatus file.
@@ -151,8 +151,8 @@ public class ApTrxBaseFilter extends ListFileFilter
             m_recTrxDesc = new TrxDesc(recordOwner);
             if (recordOwner != null)
                 recordOwner.removeRecord(m_recTrxDesc);
-            m_recTrxDesc.getKeyArea(TrxDesc.kDescCodeKey);
-            m_recTrxDesc.getField(TrxDesc.kDescCode).setString(ApTrx.kApTrxFile);
+            m_recTrxDesc.getKeyArea(TrxDesc.DESC_CODE_KEY);
+            m_recTrxDesc.getField(TrxDesc.DESC_CODE).setString(ApTrx.AP_TRX_FILE);
             try {
                 if (m_recTrxDesc.seek("="))
                 {

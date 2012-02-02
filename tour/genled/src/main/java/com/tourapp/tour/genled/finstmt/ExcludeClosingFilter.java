@@ -82,7 +82,7 @@ public class ExcludeClosingFilter extends FileFilter
     {
         if (m_fldExcludeClosing != null)
             if (m_fldExcludeClosing.getState() == true)
-                if (this.getOwner().getField(AcctDetail.kTrxTypeID).getValue() == this.getClosingTrxType())
+                if (this.getOwner().getField(AcctDetail.TRX_TYPE_ID).getValue() == this.getClosingTrxType())
             return false; // Skip this record.
         return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);
     }
@@ -96,7 +96,7 @@ public class ExcludeClosingFilter extends FileFilter
             m_recTransactionType = new TransactionType(this.getOwner().findRecordOwner());
             if (m_recTransactionType.getRecordOwner() != null)
                 m_recTransactionType.getRecordOwner().removeRecord(m_recTransactionType);
-            m_iTypeClosing = m_recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.CLOSINGENTRY, AcctDetail.CLOSINGENTRY);
+            m_iTypeClosing = m_recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.ACCT_DETAIL_FILE, AcctDetail.CLOSINGENTRY, AcctDetail.CLOSINGENTRY);
         }
         return m_iTypeClosing;
     }

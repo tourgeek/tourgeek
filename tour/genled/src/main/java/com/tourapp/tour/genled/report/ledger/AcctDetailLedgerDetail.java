@@ -73,7 +73,7 @@ public class AcctDetailLedgerDetail extends ReportScreen
      */
     public Record getMainRecord()
     {
-        return this.getRecord(AcctDetail.kAcctDetailFile);
+        return this.getRecord(AcctDetail.ACCT_DETAIL_FILE);
     }
     /**
      * Get the Heading for this report.
@@ -109,7 +109,7 @@ public class AcctDetailLedgerDetail extends ReportScreen
     public boolean isPrintableControl(ScreenField sField, int iPrintOptions)
     {
         boolean flag = false;
-        if (this.getScreenRecord().getField(GenledScreenRecord.kPrintDetail).getState() == true)
+        if (this.getScreenRecord().getField(GenledScreenRecord.PRINT_DETAIL).getState() == true)
             flag = super.isPrintableControl(sField, iPrintOptions);
         return flag;
     }

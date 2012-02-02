@@ -42,7 +42,7 @@ public class CountNewClearedFieldHandler extends ReComputeFieldHandler
      * Constructor.
      * @param iTargetFieldSeq The target field sequence to recompute on field change.
      */
-    public CountNewClearedFieldHandler(int iTargetFieldSeq)
+    public CountNewClearedFieldHandler(String iTargetFieldSeq)
     {
         this();
         this.init(iTargetFieldSeq);
@@ -50,12 +50,12 @@ public class CountNewClearedFieldHandler extends ReComputeFieldHandler
     /**
      * Initialize class fields.
      */
-    public void init(int iTargetFieldSeq)
+    public void init(String iTargetFieldSeq)
     {
         m_fldCreditsCleared = null;
         m_fldCurrentCleared = null;
         m_fldDepositsCleared = null;
-        super.init(null, iTargetFieldSeq, null);
+        super.init(null, -1, iTargetFieldSeq, null);
     }
     /**
      * CheckFields Method.
@@ -65,9 +65,9 @@ public class CountNewClearedFieldHandler extends ReComputeFieldHandler
         if (m_fldCurrentCleared == null)
         {
             Record record = this.getOwner().getRecord();
-            m_fldCurrentCleared = record.getField(BankReconScreenRecord.kStartCleared);
-            m_fldDepositsCleared = record.getField(BankReconScreenRecord.kDepositsCleared);
-            m_fldCreditsCleared = record.getField(BankReconScreenRecord.kChecksCleared);
+            m_fldCurrentCleared = record.getField(BankReconScreenRecord.START_CLEARED);
+            m_fldDepositsCleared = record.getField(BankReconScreenRecord.DEPOSITS_CLEARED);
+            m_fldCreditsCleared = record.getField(BankReconScreenRecord.CHECKS_CLEARED);
         }
 
     }

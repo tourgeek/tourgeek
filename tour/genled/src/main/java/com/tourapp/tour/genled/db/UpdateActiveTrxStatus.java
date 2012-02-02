@@ -67,7 +67,7 @@ public class UpdateActiveTrxStatus extends FieldListener
             TrxStatus recTrxStatus = (TrxStatus)fldTrxStatusID.getReference();
             if (recTrxStatus != null)
             {
-                m_fldActiveTrxTarget.moveFieldToThis(recTrxStatus.getField(TrxStatus.kActiveTrx));
+                m_fldActiveTrxTarget.moveFieldToThis(recTrxStatus.getField(TrxStatus.ACTIVE_TRX));
             }
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);

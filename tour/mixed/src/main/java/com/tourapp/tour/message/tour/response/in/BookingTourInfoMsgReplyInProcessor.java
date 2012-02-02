@@ -64,11 +64,11 @@ public class BookingTourInfoMsgReplyInProcessor extends BookingDetailInfoMsgRepl
     /**
      * SetRecordDataStatus Method.
      */
-    public int setRecordDataStatus(Record record, int iFieldSeq, int iStatus, ProductMessageData productRequest)
+    public int setRecordDataStatus(Record record, String iFieldSeq, int iStatus, ProductMessageData productRequest)
     {
         if (iStatus == BaseDataStatus.OKAY)
         {
-            FieldDataScratchHandler fieldDataScratchHandler = (FieldDataScratchHandler)record.getField(BookingDetail.kDetailDate).getListener(FieldDataScratchHandler.class, false);
+            FieldDataScratchHandler fieldDataScratchHandler = (FieldDataScratchHandler)record.getField(BookingDetail.DETAIL_DATE).getListener(FieldDataScratchHandler.class, false);
             if (fieldDataScratchHandler != null)
             { // Always
                 Date dateOriginal = (Date)productRequest.get(ProductMessageData.OLD_DETAIL_DATE);

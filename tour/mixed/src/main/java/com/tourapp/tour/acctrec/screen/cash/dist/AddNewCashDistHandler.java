@@ -76,12 +76,12 @@ public class AddNewCashDistHandler extends AddNewDistHandler
         int iErrorCode = super.doRecordChange(field, iChangeType, bDisplayOption);
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
-        if (!this.getOwner().getTableNames(false).equalsIgnoreCase(CashBatchDetail.kCashBatchDetailFile))
+        if (!this.getOwner().getTableNames(false).equalsIgnoreCase(CashBatchDetail.CASH_BATCH_DETAIL_FILE))
             return DBConstants.NORMAL_RETURN;   // If this is being overidden, don't do rest of code.
         switch (iChangeType)
         {
             case DBConstants.AFTER_ADD_TYPE:
-                BaseField fldBookingID = this.getOwner().getField(CashBatchDetail.kBookingID);
+                BaseField fldBookingID = this.getOwner().getField(CashBatchDetail.BOOKING_ID);
                 if (!fldBookingID.isNull())
                 {
                     Object bookmark = this.getOwner().getLastModified(DBConstants.BOOKMARK_HANDLE);
@@ -96,9 +96,9 @@ public class AddNewCashDistHandler extends AddNewDistHandler
                                     recordOwner.removeRecord(m_recBankTrxBatchDist);
                             }
                             m_recBankTrxBatchDist.addNew();
-                            m_recBankTrxBatchDist.getField(CashBatchDist.kBankTrxBatchDetailID).setData(bookmark);
-                            m_recBankTrxBatchDist.getField(CashBatchDist.kBookingID).moveFieldToThis(fldBookingID);
-                            m_recBankTrxBatchDist.getField(CashBatchDist.kAmount).moveFieldToThis(this.getOwner().getField(CashBatchDetail.kAmount));
+                            m_recBankTrxBatchDist.getField(CashBatchDist.BANK_TRX_BATCH_DETAIL_ID).setData(bookmark);
+                            m_recBankTrxBatchDist.getField(CashBatchDist.BOOKING_ID).moveFieldToThis(fldBookingID);
+                            m_recBankTrxBatchDist.getField(CashBatchDist.AMOUNT).moveFieldToThis(this.getOwner().getField(CashBatchDetail.AMOUNT));
                             m_recBankTrxBatchDist.add();
                         } catch (DBException ex)    {
                             ex.printStackTrace();

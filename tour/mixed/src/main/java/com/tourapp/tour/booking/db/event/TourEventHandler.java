@@ -85,7 +85,7 @@ public class TourEventHandler extends FieldListener
         if (recTarget instanceof Booking)
         {
             recBooking = (Booking)recTarget;
-            recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
         }
         else if (recTarget instanceof Tour)
         {
@@ -95,15 +95,15 @@ public class TourEventHandler extends FieldListener
         {
             // Never - error
         }
-        Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
-        Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReference();
+        Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
+        Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
         
         TourEventSchedule recTourEventSchedule = recTour.getTourEventSchedule();
         if (recTourEventSchedule.getListener(SubFileFilter.class) != null)
         {   // Already in use
             recTourEventSchedule = new TourEventSchedule(recTour.findRecordOwner()); 
         }
-        CompareFileFilter listener2 = new CompareFileFilter(TourEventSchedule.kTourEventID, Integer.toString(iTourEventID), DBConstants.EQUALS, null, false);
+        CompareFileFilter listener2 = new CompareFileFilter(TourEventSchedule.TOUR_EVENT_ID, Integer.toString(iTourEventID), DBConstants.EQUALS, null, false);
         recTourEventSchedule.addListener(listener2);
         try {
         
@@ -119,7 +119,7 @@ public class TourEventHandler extends FieldListener
                     recTourEventSchedule.next();
                     if (!bBaseClass)
                     {
-                        if (recTourEventSchedule.getField(TourEventSchedule.kTourClassOnly).getState() == true)
+                        if (recTourEventSchedule.getField(TourEventSchedule.TOUR_CLASS_ONLY).getState() == true)
                             continue;   // This event runs for the base class only
                     }
                     if (bFirstTime)
@@ -128,13 +128,13 @@ public class TourEventHandler extends FieldListener
                         bFirstTime = false;
                     }
                     if (iTourEventID == TourEvent.BOOKING_STATUS)
-                        if (recTourEventSchedule.getField(TourEventSchedule.kBookingStatusID).getValue() != iBaseStatusID)
+                        if (recTourEventSchedule.getField(TourEventSchedule.BOOKING_STATUS_ID).getValue() != iBaseStatusID)
                             continue;   // Not the right booking status
                     recTourEventSchedule.doAction(recTarget);
                 }
                 bBaseClass = false;
                 recTourEventSchedule.removeListener(listener1, true);
-                recTourClass = ((ReferenceField)recTourClass.getField(TourClass.kBasedClassID)).getReference();
+                recTourClass = ((ReferenceField)recTourClass.getField(TourClass.BASED_CLASS_ID)).getReference();
             }
             if (!bFirstTime)
                 recTarget.writeAndRefresh();

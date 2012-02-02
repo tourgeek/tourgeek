@@ -74,22 +74,22 @@ public class GetProductCostHandler extends GetProductStatusHandler
         RecordOwner recordOwner = recProduct.getRecordOwner();
         if (recordOwner != null)
         {
-            Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
             if ((recBooking != null)
                 && ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)))
             {
-                PricingType recPricingType = (PricingType)((ReferenceField)recBooking.getField(Booking.kNonTourPricingTypeID)).getReference();
-                iPricingType = (int)recPricingType.getField(PricingType.kPricingCodes).getValue();
-                dMarkup = recBooking.getField(Booking.kMarkup).getValue();
+                PricingType recPricingType = (PricingType)((ReferenceField)recBooking.getField(Booking.NON_TOUR_PRICING_TYPE_ID)).getReference();
+                iPricingType = (int)recPricingType.getField(PricingType.PRICING_CODES).getValue();
+                dMarkup = recBooking.getField(Booking.MARKUP).getValue();
             }
             else
             {
-                Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.kBookingControlFile);
+                Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.BOOKING_CONTROL_FILE);
                 if (recBookingControl == null)
                     recBookingControl = new BookingControl(recordOwner);
-                PricingType recPricingType = (PricingType)((ReferenceField)recBookingControl.getField(BookingControl.kNonTourPricingTypeID)).getReference();
-                iPricingType = (int)recPricingType.getField(PricingType.kPricingCodes).getValue();
-                dMarkup = recBookingControl.getField(BookingControl.kMarkup).getValue();
+                PricingType recPricingType = (PricingType)((ReferenceField)recBookingControl.getField(BookingControl.NON_TOUR_PRICING_TYPE_ID)).getReference();
+                iPricingType = (int)recPricingType.getField(PricingType.PRICING_CODES).getValue();
+                dMarkup = recBookingControl.getField(BookingControl.MARKUP).getValue();
             }
         
             boolean bMarkupOnlyIfNoPrice = false;
@@ -115,7 +115,7 @@ public class GetProductCostHandler extends GetProductStatusHandler
      */
     public boolean isQueryComplete()
     {
-        if (!m_recProductVars.getField(ProductScreenRecord.kDetailDate).isNull())
+        if (!m_recProductVars.getField(ProductScreenRecord.DETAIL_DATE).isNull())
             return true;
         return false;
     }
@@ -137,12 +137,12 @@ public class GetProductCostHandler extends GetProductStatusHandler
     {
         if (iStatus == CostStatus.VALID)
         {
-        //    double dProductCost = recProduct.getField(Product.kProductCost).getValue();
-        //    recProduct.getField(Product.kProductCost).setValue(dProductCost);
+        //    double dProductCost = recProduct.getField(Product.PRODUCT_COST).getValue();
+        //    recProduct.getField(Product.PRODUCT_COST).setValue(dProductCost);
         }
         else
-            recProduct.getField(Product.kProductCost).setData(null);
-        recProduct.getField(Product.kDisplayCostStatusID).setValue(iStatus);
+            recProduct.getField(Product.PRODUCT_COST).setData(null);
+        recProduct.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iStatus);
     }
 
 }

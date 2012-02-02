@@ -75,9 +75,9 @@ public class AcctBatchSetRecurringBeh extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        BaseField fldAccrual = m_recAcctBatch.getField(AcctBatch.kAutoReversal);
-        DateField fldAccrualDate = (DateField)m_recAcctBatch.getField(AcctBatch.kAutoReversalDate);
-        DateField fldTrxDate = (DateField)m_recAcctBatch.getField(AcctBatch.kTrxDate);
+        BaseField fldAccrual = m_recAcctBatch.getField(AcctBatch.AUTO_REVERSAL);
+        DateField fldAccrualDate = (DateField)m_recAcctBatch.getField(AcctBatch.AUTO_REVERSAL_DATE);
+        DateField fldTrxDate = (DateField)m_recAcctBatch.getField(AcctBatch.TRX_DATE);
         if (fldAccrual.getState() == false)
         {
             fldAccrualDate.setString(Constants.BLANK);

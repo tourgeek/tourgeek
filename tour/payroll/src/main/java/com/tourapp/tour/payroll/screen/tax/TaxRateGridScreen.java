@@ -88,10 +88,10 @@ public class TaxRateGridScreen extends GridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().setKeyArea(TaxRate.kTaxCodeKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(TaxRateScreenRecord.kTaxCode), TaxRate.kTaxCode, this.getScreenRecord().getField(TaxRateScreenRecord.kMaritalStatus), TaxRate.kMaritalStatus, null, -1));
-        this.getScreenRecord().getField(TaxRateScreenRecord.kTaxCode).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(TaxRateScreenRecord.kMaritalStatus).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().setKeyArea(TaxRate.TAX_CODE_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(TaxRateScreenRecord.TAX_CODE), TaxRate.TAX_CODE, this.getScreenRecord().getField(TaxRateScreenRecord.MARITAL_STATUS), TaxRate.MARITAL_STATUS, null, null));
+        this.getScreenRecord().getField(TaxRateScreenRecord.TAX_CODE).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(TaxRateScreenRecord.MARITAL_STATUS).addListener(new FieldReSelectHandler(this));
     }
     /**
      * SetupSFields Method.

@@ -94,7 +94,7 @@ public class FinStmtDetailScreen extends Screen
     {
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSequence).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountDesc), this.getRecord(Account.kAccountFile).getField(Account.kDescription));
+        Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.ACCOUNT_DESC), this.getRecord(Account.ACCOUNT_FILE).getField(Account.DESCRIPTION));
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kIndent).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kInvisible).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -104,18 +104,18 @@ public class FinStmtDetailScreen extends Screen
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSpecialFormat).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kNumberFormat).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSpecialFunction).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Object bookmark = this.getMainRecord().getField(FinStmtDetail.kFinStmtID).getData();
+        Object bookmark = this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).getData();
         if (bookmark != null)
         {
         FinStmt recFinStmtPopup = new FinStmt(this);
         this.removeRecord(recFinStmtPopup);    // The queryconverter will free this.
         try {
             recFinStmtPopup.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
-            String strHeaderID = recFinStmtPopup.getField(FinStmt.kFinStmtHeaderID).toString();
-            recFinStmtPopup.setKeyArea(FinStmt.kFinStmtHeaderIDKey);
-            recFinStmtPopup.addListener(new StringSubFileFilter(strHeaderID, FinStmt.kFinStmtHeaderID, null, -1, null, -1));
-            ((ReferenceField)this.getMainRecord().getField(FinStmtDetail.kFinStmtID)).setReferenceRecord(null);
-            this.getMainRecord().getField(FinStmtDetail.kFinStmtID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.kFinStmtHeaderIDKey, FinStmt.kStatementDesc, false, false);
+            String strHeaderID = recFinStmtPopup.getField(FinStmt.FIN_STMT_HEADER_ID).toString();
+            recFinStmtPopup.setKeyArea(FinStmt.FIN_STMT_HEADER_ID_KEY);
+            recFinStmtPopup.addListener(new StringSubFileFilter(strHeaderID, FinStmt.FIN_STMT_HEADER_ID, null, null, null, null));
+            ((ReferenceField)this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID)).setReferenceRecord(null);
+            this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.FIN_STMT_HEADER_ID_KEY, FinStmt.STATEMENT_DESC, false, false);
         } catch (DBException ex)    {
             ex.printStackTrace();
         }

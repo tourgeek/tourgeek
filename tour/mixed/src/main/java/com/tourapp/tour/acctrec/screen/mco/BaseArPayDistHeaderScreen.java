@@ -76,10 +76,10 @@ public class BaseArPayDistHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        Record recHeader = this.getRecord(Mco.kMcoFile);
+        Record recHeader = this.getRecord(Mco.MCO_FILE);
         if (recHeader == null)
-            recHeader = this.getRecord(CreditCard.kCreditCardFile);
-        recHeader.getField(BaseArPay.kNet).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+            recHeader = this.getRecord(CreditCard.CREDIT_CARD_FILE);
+        recHeader.getField(BaseArPay.NET).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kChangeBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kEndBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }

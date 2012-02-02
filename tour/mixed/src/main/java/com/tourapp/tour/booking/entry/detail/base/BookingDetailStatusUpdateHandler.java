@@ -65,18 +65,18 @@ public class BookingDetailStatusUpdateHandler extends BaseStatusUpdateHandler
         Record recBookingDetail = fldStatusID.getRecord(); 
         int iStatusID = (int)fldStatusID.getValue();
         String strProperty = this.getFieldParam(fldStatusID);
-        int iFieldSeq = BookingDetail.kInfoStatusID;
+        String iFieldSeq = BookingDetail.INFO_STATUS_ID;
         if (strProperty.indexOf(BookingDetail.COST_PARAM) != -1)
-            iFieldSeq = BookingDetail.kCostStatusID;
+            iFieldSeq = BookingDetail.COST_STATUS_ID;
         else if (strProperty.indexOf(BookingDetail.INVENTORY_PARAM) != -1)
-            iFieldSeq = BookingDetail.kInventoryStatusID;
+            iFieldSeq = BookingDetail.INVENTORY_STATUS_ID;
         else if (strProperty.indexOf(BookingDetail.PRODUCT_PARAM) != -1)
-            iFieldSeq = BookingDetail.kProductStatusID;
+            iFieldSeq = BookingDetail.PRODUCT_STATUS_ID;
         
         String strMessage = fldStatusID.getFieldTip();   // Default display = field help text
         if (iStatusID != BaseStatus.MANUAL_REQUEST_REQUIRED)
         {
-            Map<String,Object> properties = ((PropertiesField)recBookingDetail.getField(BookingDetail.kErrorProperties)).getProperties();
+            Map<String,Object> properties = ((PropertiesField)recBookingDetail.getField(BookingDetail.ERROR_PROPERTIES)).getProperties();
             if (properties != null)
             {
                 String strErrorKey = this.getFieldParam(fldStatusID);
@@ -89,7 +89,7 @@ public class BookingDetailStatusUpdateHandler extends BaseStatusUpdateHandler
                     recordOwner.removeRecord(recProperties);
                 recBookingDetail.addListener(new FreeOnFreeHandler(recProperties));
                 Map<String,Object> mapKeyDescriptions = new Hashtable<String,Object>();
-                Map<String,Object> propErrors = ((PropertiesField)recBookingDetail.getField(BookingDetail.kErrorProperties)).getProperties();
+                Map<String,Object> propErrors = ((PropertiesField)recBookingDetail.getField(BookingDetail.ERROR_PROPERTIES)).getProperties();
                 if (propErrors != null)
                 {
                     String strStartOfParam = this.getFieldParam(fldStatusID);
@@ -115,14 +115,14 @@ public class BookingDetailStatusUpdateHandler extends BaseStatusUpdateHandler
                 {
                     // The following code says, try to recalculate the cost if the user changes the properties.
                     FieldListener listener = null;
-                    recBookingDetail.getField(BookingDetail.kProperties).addListener(listener = new InitOnChangeHandler(recBookingDetail.getField(iFieldSeq + BookingDetail.MESSAGE_KEY_OFFSET)));
+                    recBookingDetail.getField(BookingDetail.PROPERTIES).addListener(listener = new InitOnChangeHandler(recBookingDetail.getField(iFieldSeq + BookingDetail.MESSAGE_KEY_OFFSET)));
                     listener.setRespondsToMode(DBConstants.READ_MOVE, false);   // Usually, you only want to move a string on screen change
                     listener.setRespondsToMode(DBConstants.INIT_MOVE, false);   // Usually, you only want to move a string on screen change
-                    recProperties.getField(PropertiesInput.kKey).addListener(new FieldRemoveBOnCloseHandler(listener));
-                    recBookingDetail.getField(BookingDetail.kProperties).addListener(listener = new CopyDataHandler(recBookingDetail.getField(iFieldSeq + BookingDetail.MESSAGE_REQUEST_OFFSET), Boolean.TRUE, null));
-                    recProperties.getField(PropertiesInput.kKey).addListener(new FieldRemoveBOnCloseHandler(listener));
+                    recProperties.getField(PropertiesInput.KEY).addListener(new FieldRemoveBOnCloseHandler(listener));
+                    recBookingDetail.getField(BookingDetail.PROPERTIES).addListener(listener = new CopyDataHandler(recBookingDetail.getField(iFieldSeq + BookingDetail.MESSAGE_REQUEST_OFFSET), Boolean.TRUE, null));
+                    recProperties.getField(PropertiesInput.KEY).addListener(new FieldRemoveBOnCloseHandler(listener));
                     // Display the properties editor
-                    recProperties.startEditor((PropertiesField)recBookingDetail.getField(BookingDetail.kProperties), false, mapKeyDescriptions);
+                    recProperties.startEditor((PropertiesField)recBookingDetail.getField(BookingDetail.PROPERTIES), false, mapKeyDescriptions);
                 }
             }
         }
@@ -131,7 +131,7 @@ public class BookingDetailStatusUpdateHandler extends BaseStatusUpdateHandler
             strProperty += '.' + BookingDetail.MESSAGE_PARAM + '.' + BaseMessage.HEADER_TAG + '.' + MessageTransport.MANUAL_RESPONSE_PARAM;
             recBookingDetail.getField(iFieldSeq + BookingDetail.MESSAGE_KEY_OFFSET).setString(DBConstants.BLANK);     // Force message change
             String strValue = DBConstants.TRUE;
-            ((PropertiesField)recBookingDetail.getField(BookingDetail.kProperties)).setProperty(strProperty, strValue);
+            ((PropertiesField)recBookingDetail.getField(BookingDetail.PROPERTIES)).setProperty(strProperty, strValue);
             recBookingDetail.getField(iFieldSeq + BookingDetail.MESSAGE_REQUEST_OFFSET).setData(Boolean.TRUE); // Force the request to go!
         }
         if (strMessage != null)

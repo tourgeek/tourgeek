@@ -111,14 +111,14 @@ public class BookingCarScreen extends BookingDetailSubScreen
         super.addListeners();
         BookingCar recBookingCar = (BookingCar)this.getMainRecord();
         
-        recBookingCar.getField(BookingCar.kDays).setEnabled(true);
-        recBookingCar.getField(BookingCar.kQuantity).setEnabled(true);
-        recBookingCar.getField(BookingCar.kDetailEndDate).setEnabled(true);
+        recBookingCar.getField(BookingCar.DAYS).setEnabled(true);
+        recBookingCar.getField(BookingCar.QUANTITY).setEnabled(true);
+        recBookingCar.getField(BookingCar.DETAIL_END_DATE).setEnabled(true);
         
-        this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kMarkupFromLast).setEnabled(true);
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.MARKUP_FROM_LAST).setEnabled(true);
         
         // Display the USD equivalents
-        BaseField fldExchange = recBookingCar.getField(BookingCar.kExchange);
+        BaseField fldExchange = recBookingCar.getField(BookingCar.EXCHANGE);
         Record recBookingDetailScreenRecord = this.getScreenRecord();
         FieldListener fieldListener = null;
 
@@ -136,9 +136,9 @@ public class BookingCarScreen extends BookingDetailSubScreen
         this.getRecord(BookingCar.kBookingCarFile).getField(BookingCar.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingCar.kBookingCarFile).getField(BookingCar.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         // Make sure these all have this recordowner
-        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-        Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+        Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(Car.kCarFile).getField(Car.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);

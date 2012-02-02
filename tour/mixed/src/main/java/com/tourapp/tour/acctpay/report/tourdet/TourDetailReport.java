@@ -101,31 +101,31 @@ public class TourDetailReport extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(Tour.kTourFile).setKeyArea(Tour.kTourHeaderIDKey);
-        this.getRecord(ApTrx.kApTrxFile).setKeyArea(ApTrx.kTourIDKey);
+        this.getRecord(Tour.TOUR_FILE).setKeyArea(Tour.TOUR_HEADER_ID_KEY);
+        this.getRecord(ApTrx.AP_TRX_FILE).setKeyArea(ApTrx.TOUR_ID_KEY);
         
-        Record recTour = this.getRecord(Tour.kTourFile);
-        //xthis.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTourID).addListener(new ReadSecondaryHandler(recTour));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubFileFilter(recTour));
+        Record recTour = this.getRecord(Tour.TOUR_FILE);
+        //xthis.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.TOUR_ID).addListener(new ReadSecondaryHandler(recTour));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubFileFilter(recTour));
         // Add Filters
-        this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kID), this.getScreenRecord().getField(ApReportScreenRecord.kTourID), "=", null, true));
-        //this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kTourTypeID), this.getScreenRecord().getField(ApReportScreenRecord.kTourTypeID), "=", null, true));
-        this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kTourHeaderID), this.getScreenRecord().getField(ApReportScreenRecord.kTourHeaderID), "=", null, true));
-        //this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kTourClassID), this.getScreenRecord().getField(ApReportScreenRecord.kTourClassID), "=", null, true));
-        //this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kProductCategoryID), this.getScreenRecord().getField(ApReportScreenRecord.kProductCategoryID), "=", null, true));
-        this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kTourStatusID), this.getScreenRecord().getField(ApReportScreenRecord.kTourStatusID), "=", null, true));
-        this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate), this.getScreenRecord().getField(ApReportScreenRecord.kStartDeparture), ">=", null, true));
-        this.getRecord(Tour.kTourFile).addListener(new CompareFileFilter(this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate), this.getScreenRecord().getField(ApReportScreenRecord.kEndDeparture), "<=", null, true));
+        this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.ID), this.getScreenRecord().getField(ApReportScreenRecord.TOUR_ID), "=", null, true));
+        //this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_TYPE_ID), this.getScreenRecord().getField(ApReportScreenRecord.TOUR_TYPE_ID), "=", null, true));
+        this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_HEADER_ID), this.getScreenRecord().getField(ApReportScreenRecord.TOUR_HEADER_ID), "=", null, true));
+        //this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_CLASS_ID), this.getScreenRecord().getField(ApReportScreenRecord.TOUR_CLASS_ID), "=", null, true));
+        //this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.PRODUCT_CATEGORY_ID), this.getScreenRecord().getField(ApReportScreenRecord.PRODUCT_CATEGORY_ID), "=", null, true));
+        this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_STATUS_ID), this.getScreenRecord().getField(ApReportScreenRecord.TOUR_STATUS_ID), "=", null, true));
+        this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE), this.getScreenRecord().getField(ApReportScreenRecord.START_DEPARTURE), ">=", null, true));
+        this.getRecord(Tour.TOUR_FILE).addListener(new CompareFileFilter(this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE), this.getScreenRecord().getField(ApReportScreenRecord.END_DEPARTURE), "<=", null, true));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new ApTrxFilter(ApTrx.kTrxStatusID, (ScreenRecord)this.getScreenRecord()));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new ApTrxFilter(ApTrx.TRX_STATUS_ID, (ScreenRecord)this.getScreenRecord()));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kTotalUSDBal), ApTrx.kInvoiceBalanceLocal, true, true, true));    // Sub-count
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kGrandUSDBal), ApTrx.kInvoiceBalanceLocal, true, true));          // Total count
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));    // Sub-count
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.GRAND_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true));          // Total count
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kReportCount), -1, true, true, true));    // Sub-count
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kCount), -1, true, true, false));     // Total count
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.REPORT_COUNT), -1, true, true, true));    // Sub-count
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.COUNT), -1, true, true, false));     // Total count
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new MoveEstimateHandler(null));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new MoveEstimateHandler(null));
     }
     /**
      * Add the toolbars that belong with this screen.

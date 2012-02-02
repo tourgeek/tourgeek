@@ -126,16 +126,16 @@ public class SkymapSource extends BaseSource
                     strCity = strCity.substring(1);
             }
             
-            m_record.getField(City.kLatitude).setString(strLatitude);
-            m_record.getField(City.kLongitude).setString(strLongitude);
-            m_record.getField(City.kGMTOffset).setString(strGMTOffset);
-            Record recCountry = BaseFixData.getRecordFromDescription(m_record.getField(City.kCountryID), strCountry);
+            m_record.getField(City.LATITUDE).setString(strLatitude);
+            m_record.getField(City.LONGITUDE).setString(strLongitude);
+            m_record.getField(City.GMT_OFFSET).setString(strGMTOffset);
+            Record recCountry = BaseFixData.getRecordFromDescription(m_record.getField(City.COUNTRY_ID), strCountry);
             if (recCountry != null)
-                m_record.getField(City.kCountryID).moveFieldToThis(recCountry.getCounterField());
-            Record recState = BaseFixData.getRecordFromCode(m_record.getField(City.kStateID), strState, "StatePostalCode");
+                m_record.getField(City.COUNTRY_ID).moveFieldToThis(recCountry.getCounterField());
+            Record recState = BaseFixData.getRecordFromCode(m_record.getField(City.STATE_ID), strState, "StatePostalCode");
             if (recState != null)
-                m_record.getField(City.kStateID).moveFieldToThis(recState.getCounterField());
-            m_record.getField(City.kDescription).setString(strCity);
+                m_record.getField(City.STATE_ID).moveFieldToThis(recState.getCounterField());
+            m_record.getField(City.DESCRIPTION).setString(strCity);
         } catch (DBException e) {
             e.printStackTrace();
         }

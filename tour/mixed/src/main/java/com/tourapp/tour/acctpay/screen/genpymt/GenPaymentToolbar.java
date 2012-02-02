@@ -66,7 +66,7 @@ public class GenPaymentToolbar extends ReportToolbar
         super.setupSFields();
         this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kPaymentCodeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Converter converter = this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kUseCurrentSelection);
+        Converter converter = this.getScreenRecord().getField(GenPaymentScreenRecord.USE_CURRENT_SELECTION);
         Converter convTrue = new RadioConverter(converter, Boolean.TRUE, true);
         new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, convTrue, ScreenConstants.DEFAULT_DISPLAY);
         Converter convFalse = new RadioConverter(converter, Boolean.FALSE, true);

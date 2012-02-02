@@ -69,20 +69,20 @@ public class PastDueHandler extends FileListener
      */
     public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList)
     {
-        if (m_recPastDue.getField(PastDueScreenRecord.kCheckDep).getState() == true)
+        if (m_recPastDue.getField(PastDueScreenRecord.CHECK_DEP).getState() == true)
         { // Check for deposit past due
-            if (this.getOwner().getField(Booking.kDepositDueDate).compareTo(m_recPastDue.getField(PastDueScreenRecord.kAsOfDate)) < 0)
+            if (this.getOwner().getField(Booking.DEPOSIT_DUE_DATE).compareTo(m_recPastDue.getField(PastDueScreenRecord.AS_OF_DATE)) < 0)
             { // Deposit date in range
                 // count it!
-                double dNet = this.getOwner().getField(Booking.kNet).getValue();
-                double dBalance = this.getOwner().getField(Booking.kBalance).getValue();
+                double dNet = this.getOwner().getField(Booking.NET).getValue();
+                double dBalance = this.getOwner().getField(Booking.BALANCE).getValue();
                 double dAmountPaid = dNet - dBalance;
         
-                double dDepositAmt = this.getOwner().getField(Booking.kDeposit).getValue();
-                if (m_recPastDue.getField(PastDueScreenRecord.kMcoPer).getValue() > 0)
+                double dDepositAmt = this.getOwner().getField(Booking.DEPOSIT).getValue();
+                if (m_recPastDue.getField(PastDueScreenRecord.MCO_PER).getValue() > 0)
                 {
                     if (dAmountPaid < dDepositAmt)
-                        if (m_recPastDue.getField(PastDueScreenRecord.kMcoAmountPaid).getValue() < (dDepositAmt * (1.0 - m_recPastDue.getField(PastDueScreenRecord.kMcoPer).getValue())))
+                        if (m_recPastDue.getField(PastDueScreenRecord.MCO_AMOUNT_PAID).getValue() < (dDepositAmt * (1.0 - m_recPastDue.getField(PastDueScreenRecord.MCO_PER).getValue())))
                             return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);     // Deposit not paid, print record
                 }
                 else
@@ -90,11 +90,11 @@ public class PastDueHandler extends FileListener
                         return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);     // Deposit not paid, print record
             }
         }
-        if (m_recPastDue.getField(PastDueScreenRecord.kCheckFinal).getState() == true)
+        if (m_recPastDue.getField(PastDueScreenRecord.CHECK_FINAL).getState() == true)
         { // Check for final pay past due
-            if (this.getOwner().getField(Booking.kFinalPaymentDueDate).compareTo(m_recPastDue.getField(PastDueScreenRecord.kAsOfDate)) < 0)
+            if (this.getOwner().getField(Booking.FINAL_PAYMENT_DUE_DATE).compareTo(m_recPastDue.getField(PastDueScreenRecord.AS_OF_DATE)) < 0)
             { // Deposit date in range
-                double dBalance = this.getOwner().getField(Booking.kBalance).getValue();
+                double dBalance = this.getOwner().getField(Booking.BALANCE).getValue();
                 if (dBalance > 0)
                     return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);   // Not fully paid, print it
             }

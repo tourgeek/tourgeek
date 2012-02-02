@@ -95,9 +95,9 @@ public class ArTrxLinkTrxGridScreen extends LinkTrxGridScreen
             this.addRecord(m_recHeader, false);
         else
         {
-            if (CreditCard.kCreditCardFile.equalsIgnoreCase(this.getProperty(DBParams.HEADER_RECORD)))
+            if (CreditCard.CREDIT_CARD_FILE.equalsIgnoreCase(this.getProperty(DBParams.HEADER_RECORD)))
                 m_recHeader = new CreditCard(this);
-            else if (Mco.kMcoFile.equalsIgnoreCase(this.getProperty(DBParams.HEADER_RECORD)))
+            else if (Mco.MCO_FILE.equalsIgnoreCase(this.getProperty(DBParams.HEADER_RECORD)))
                 m_recHeader = new Mco(this);
             else
                 m_recHeader = new BankTrx(this);
@@ -136,7 +136,7 @@ public class ArTrxLinkTrxGridScreen extends LinkTrxGridScreen
     {
         if (LinkTrx.SOURCE.equalsIgnoreCase(strCommand))
         {
-            Record recBooking = ((ReferenceField)this.getMainRecord().getField(ArTrx.kBookingID)).getReference();
+            Record recBooking = ((ReferenceField)this.getMainRecord().getField(ArTrx.BOOKING_ID)).getReference();
             if (recBooking != null)
                 return (this.onForm(recBooking, ScreenConstants.MAINT_MODE, true, iCommandOptions, null) != null);
         }

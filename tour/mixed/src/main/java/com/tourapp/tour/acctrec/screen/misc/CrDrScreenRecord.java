@@ -36,6 +36,7 @@ public class CrDrScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String COUNTER_ACCOUNT_ID = "CounterAccountID";
     public static final int kCounterAccountID = kScreenRecordLastField + 1;
     public static final int kCrDrScreenRecordLastField = kCounterAccountID;
     public static final int kCrDrScreenRecordFields = kCounterAccountID - DBConstants.MAIN_FIELD + 1;

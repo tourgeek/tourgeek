@@ -80,9 +80,9 @@ public class ProductInformationResponse extends BaseProductResponse
         if (iErrorCode == DBConstants.NORMAL_RETURN)
         {
             BookingDetail recBookingDetail = (BookingDetail)record;
-            boolean[] rgbListeners = recBookingDetail.getField(BookingDetail.kInfoStatusRequest).setEnableListeners(false); // No Echo
+            boolean[] rgbListeners = recBookingDetail.getField(BookingDetail.INFO_STATUS_REQUEST).setEnableListeners(false); // No Echo
             iErrorCode = recBookingDetail.setDetailProductInfo(null, null, null, null, null, null, null);
-            recBookingDetail.getField(BookingDetail.kInfoStatusRequest).setEnableListeners(rgbListeners);
+            recBookingDetail.getField(BookingDetail.INFO_STATUS_REQUEST).setEnableListeners(rgbListeners);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
             {
                 int iMessageStatus = BaseDataStatus.NOT_VALID;

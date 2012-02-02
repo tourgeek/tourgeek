@@ -105,13 +105,13 @@ public class EmployeeLookup extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Employee.kEmployeeFile, Employee.kID).setSelected(true);
-        this.getField(Employee.kEmployeeFile, Employee.kFirstName).setSelected(true);
-        this.getField(Employee.kEmployeeFile, Employee.kNameSort).setSelected(true);
-        this.getField(Employee.kEmployeeFile, Employee.kName).setSelected(true);
-        this.getField(Employee.kEmployeeFile, Employee.kTitle).setSelected(true);
-        this.getField(Employee.kEmployeeFile, Employee.kID).setSelected(true);
-        this.getField(Employee.kEmployeeFile, Employee.kTerminationDate).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.ID).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.FIRST_NAME).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.NAME_SORT).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.NAME).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.TITLE).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.ID).setSelected(true);
+        this.getField(Employee.EMPLOYEE_FILE, Employee.TERMINATION_DATE).setSelected(true);
     }
 
 }

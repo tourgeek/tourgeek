@@ -8,7 +8,10 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface AirClassModel extends BaseClassModel
 {
-    public static final String DESCRIPTION = "Description";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String CODE = CODE;
 
     public static final String AIR_CLASS_FILE = "AirClass";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.air.db.AirClass";

@@ -63,8 +63,8 @@ public class ProductHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kProductID).setEnabled(true);
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kStartDate).setEnabled(true);
+        this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID).setEnabled(true);
+        this.getScreenRecord().getField(ProductScreenRecord.START_DATE).setEnabled(true);
     }
     /**
      * SetupSFields Method.
@@ -72,22 +72,22 @@ public class ProductHeaderScreen extends HeaderScreen
     public void setupSFields()
     {
         // Make sure these are linked.
-        Record recVen = ((ReferenceField)((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord((BaseScreen)this.getParentScreen());
-        Record recCurrency = ((ReferenceField)recVen.getField(Vendor.kCurrencysID)).getReferenceRecord((BaseScreen)this.getParentScreen());
-        Record recProduct = ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).getReferenceRecord(null, false);
+        Record recVen = ((ReferenceField)((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+        Record recCurrency = ((ReferenceField)recVen.getField(Vendor.CURRENCYS_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+        Record recProduct = ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).getReferenceRecord(null, false);
         if (recProduct == null)
         {    // No product is linked to the product field (link the one from the main screen)
             recProduct = this.getHeaderRecord();
-            ((ReferenceField)this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kProductID)).setReferenceRecord(recProduct);
+            ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).setReferenceRecord(recProduct);
         }
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).syncReference(recProduct);
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).syncReference(recProduct);
         
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        recProduct.getField(Product.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord();
-        recVendor.getField(Vendor.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord();
-        recCurrencys.getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        recProduct.getField(Product.VENDOR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord();
+        recVendor.getField(Vendor.CURRENCYS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord();
+        recCurrencys.getField(Currencys.COSTING_RATE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
     }
     /**
      * I added this method, so I can override it for other header screens

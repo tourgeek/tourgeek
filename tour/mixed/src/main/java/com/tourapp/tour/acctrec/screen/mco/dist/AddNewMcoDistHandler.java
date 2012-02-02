@@ -74,12 +74,12 @@ public class AddNewMcoDistHandler extends AddNewCashDistHandler
         int iErrorCode = super.doRecordChange(field, iChangeType, bDisplayOption);
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
-        if (!this.getOwner().getTableNames(false).equalsIgnoreCase(Mco.kMcoFile))
+        if (!this.getOwner().getTableNames(false).equalsIgnoreCase(Mco.MCO_FILE))
             return DBConstants.NORMAL_RETURN;   // If this is being overidden, don't do rest of code.
         switch (iChangeType)
         {
             case DBConstants.AFTER_ADD_TYPE:
-                BaseField fldBookingID = this.getOwner().getField(Mco.kBookingID);
+                BaseField fldBookingID = this.getOwner().getField(Mco.BOOKING_ID);
                 if (!fldBookingID.isNull())
                 {
                     Object bookmark = this.getOwner().getLastModified(DBConstants.BOOKMARK_HANDLE);
@@ -94,9 +94,9 @@ public class AddNewMcoDistHandler extends AddNewCashDistHandler
                                     recordOwner.removeRecord(m_recBankTrxBatchDist);
                             }
                             m_recBankTrxBatchDist.addNew();
-                            m_recBankTrxBatchDist.getField(McoBatchDist.kBankTrxBatchDetailID).setData(bookmark);
-                            m_recBankTrxBatchDist.getField(McoBatchDist.kBookingID).moveFieldToThis(fldBookingID);
-                            m_recBankTrxBatchDist.getField(McoBatchDist.kAmount).moveFieldToThis(this.getOwner().getField(Mco.kNet));
+                            m_recBankTrxBatchDist.getField(McoBatchDist.BANK_TRX_BATCH_DETAIL_ID).setData(bookmark);
+                            m_recBankTrxBatchDist.getField(McoBatchDist.BOOKING_ID).moveFieldToThis(fldBookingID);
+                            m_recBankTrxBatchDist.getField(McoBatchDist.AMOUNT).moveFieldToThis(this.getOwner().getField(Mco.NET));
                             m_recBankTrxBatchDist.add();
                         } catch (DBException ex)    {
                             ex.printStackTrace();

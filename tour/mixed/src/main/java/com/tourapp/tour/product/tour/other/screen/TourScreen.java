@@ -109,11 +109,11 @@ public class TourScreen extends ProductDetailScreen
     {
         super.addListeners();
         Tour recTour = (Tour)this.getMainRecord();
-        BaseField fldDepartureDate = recTour.getField(Tour.kDepartureDate);
+        BaseField fldDepartureDate = recTour.getField(Tour.DEPARTURE_DATE);
         TourHeader recTourHeader = (TourHeader)this.getHeaderRecord();
-        TourClass recTourClass= (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReferenceRecord();
+        TourClass recTourClass= (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReferenceRecord();
         Booking recBooking = null;
-        BaseField fldTourDesc = recTour.getField(Tour.kDescription);
+        BaseField fldTourDesc = recTour.getField(Tour.DESCRIPTION);
         fldDepartureDate.addListener(new ChangeTourHeaderHandler(recTourHeader, recTourClass, recTour, recBooking, null, fldDepartureDate, fldTourDesc));
         
         this.getHeaderRecord().addListener(new FileListener(null)
@@ -122,9 +122,9 @@ public class TourScreen extends ProductDetailScreen
             {
                 super.doValidRecord(bDisplayOption);
                 boolean bEnabledState = false;
-                if (this.getOwner().getField(TourHeader.kTourSeries).getState() == true)
+                if (this.getOwner().getField(TourHeader.TOUR_SERIES).getState() == true)
                     bEnabledState = true;
-                if (this.getOwner().getField(TourHeader.kTourSeries).isNull())  // Unknown type
+                if (this.getOwner().getField(TourHeader.TOUR_SERIES).isNull())  // Unknown type
                     bEnabledState = true;
                 setAppending(bEnabledState);
             }
@@ -140,13 +140,13 @@ public class TourScreen extends ProductDetailScreen
                 if (iChangeType == DBConstants.FIELD_CHANGED_TYPE)
                 {
                     Record recTourHeader = getHeaderRecord();
-                    if (recTourHeader.getField(TourHeader.kTourSeries).getState() != true)
+                    if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() != true)
                     {
                         try {
                             recTourHeader.edit();
-                            recTourHeader.getField(TourHeader.kTourSeries).setState(true);
-                            int iSeriesCode = ((int)recTourHeader.getField(TourHeader.kTourType).getValue() | TourType.SERIES);
-                            recTourHeader.getField(TourHeader.kTourType).setValue(iSeriesCode);
+                            recTourHeader.getField(TourHeader.TOUR_SERIES).setState(true);
+                            int iSeriesCode = ((int)recTourHeader.getField(TourHeader.TOUR_TYPE).getValue() | TourType.SERIES);
+                            recTourHeader.getField(TourHeader.TOUR_TYPE).setValue(iSeriesCode);
                             recTourHeader.writeAndRefresh();
                         } catch (DBException ex) {
                             ex.printStackTrace();

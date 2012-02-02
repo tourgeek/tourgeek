@@ -145,7 +145,7 @@ public class RequestInput extends VirtualRecord
     public void addBundleBehaviors(Record recBundle, Record recBundleDetail, Record recItem)
     {
         if (recItem != null)
-            recBundleDetail.getField(BundleDetail.kBrochureID).addListener(new ReadSecondaryHandler(recItem));
+            recBundleDetail.getField(BundleDetail.BROCHURE_ID).addListener(new ReadSecondaryHandler(recItem));
         recBundleDetail.addListener(new SubFileFilter(recBundle));
     }
     /**
@@ -173,11 +173,11 @@ public class RequestInput extends VirtualRecord
                     recBundleDetail.next();
                     this.addNew();
                     if (fldDefaultQty != null)
-                        this.getField(RequestInput.kBrochureQty).moveFieldToThis(fldDefaultQty, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                    this.getField(RequestInput.kBrochureID).moveFieldToThis(recBundleDetail.getField(BundleDetail.kBrochureID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                        this.getField(RequestInput.BROCHURE_QTY).moveFieldToThis(fldDefaultQty, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                    this.getField(RequestInput.BROCHURE_ID).moveFieldToThis(recBundleDetail.getField(BundleDetail.BROCHURE_ID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
                     if (recItem != null)
-                        this.getField(RequestInput.kBrochureDesc).moveFieldToThis(recItem.getField(Brochure.kDescription), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                    if (!this.getField(RequestInput.kBrochureID).isNull())
+                        this.getField(RequestInput.BROCHURE_DESC).moveFieldToThis(recItem.getField(Brochure.DESCRIPTION), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                    if (!this.getField(RequestInput.BROCHURE_ID).isNull())
                         this.add();
                 }
             }
@@ -185,20 +185,20 @@ public class RequestInput extends VirtualRecord
             {   // Not a valid bundle ID, set up all the items
                 recItem.close();
                 recItem.setKeyArea(recItem.getDefaultScreenKeyArea());
-                BaseListener listener = recBundleDetail.getField(BundleDetail.kBrochureID).getListener(ReadSecondaryHandler.class.getName());
+                BaseListener listener = recBundleDetail.getField(BundleDetail.BROCHURE_ID).getListener(ReadSecondaryHandler.class.getName());
                 if (listener != null)
                     listener.setEnabledListener(false);   // Don't want this listener kicking in
                 while (recItem.hasNext())
                 {
                     recItem.next();
-                    if (recItem.getField(Brochure.kDiscontinued).getState() == true)
+                    if (recItem.getField(Brochure.DISCONTINUED).getState() == true)
                         continue;
                     this.addNew();
                     if (fldDefaultQty != null)
-                        this.getField(RequestInput.kBrochureQty).moveFieldToThis(fldDefaultQty, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                    this.getField(RequestInput.kBrochureID).moveFieldToThis(recItem.getField(Brochure.kID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                    this.getField(RequestInput.kBrochureDesc).moveFieldToThis(recItem.getField(Brochure.kDescription), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                    if (!this.getField(RequestInput.kBrochureID).isNull())
+                        this.getField(RequestInput.BROCHURE_QTY).moveFieldToThis(fldDefaultQty, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                    this.getField(RequestInput.BROCHURE_ID).moveFieldToThis(recItem.getField(Brochure.ID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                    this.getField(RequestInput.BROCHURE_DESC).moveFieldToThis(recItem.getField(Brochure.DESCRIPTION), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                    if (!this.getField(RequestInput.BROCHURE_ID).isNull())
                         this.add();
                 }
                 if (listener != null)

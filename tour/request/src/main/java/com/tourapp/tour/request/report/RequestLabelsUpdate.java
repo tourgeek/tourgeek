@@ -88,21 +88,21 @@ public class RequestLabelsUpdate extends BaseProcess
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).setData(this.getProperty("sendvia"));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kSendViaCode), this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID), "="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kPrintNow), this.getScreenRecord().getField(RequestLabelsScreenRecord.kTrueField), "="));
-        this.getRecord(RequestDetail.kRequestDetailFile).addListener(new SubFileFilter(this.getMainRecord()));
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).addListener(new SubFileFilter(this.getRecord(RequestHistory.kRequestHistoryFile)));
+        this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).setData(this.getProperty("sendvia"));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.SEND_VIA_CODE), this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID), "="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.PRINT_NOW), this.getScreenRecord().getField(RequestLabelsScreenRecord.TRUE_FIELD), "="));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).addListener(new SubFileFilter(this.getMainRecord()));
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(RequestHistory.REQUEST_HISTORY_FILE)));
     }
     /**
      * Run Method.
      */
     public void run()
     {
-        Record recRequest = this.getRecord(Request.kRequestFile);
-        Record recRequestDetail = this.getRecord(RequestDetail.kRequestDetailFile);
-        Record recRequestHistory = this.getRecord(RequestHistory.kRequestHistoryFile);
-        Record recRequestHistoryDetail = this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile);
+        Record recRequest = this.getRecord(Request.REQUEST_FILE);
+        Record recRequestDetail = this.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+        Record recRequestHistory = this.getRecord(RequestHistory.REQUEST_HISTORY_FILE);
+        Record recRequestHistoryDetail = this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE);
         
         try   {
             recRequest.close();
@@ -110,7 +110,7 @@ public class RequestLabelsUpdate extends BaseProcess
             {
                 recRequest.next();
                 recRequest.edit();
-                if (recRequest.getField(Request.kHistReprint).getState() != true)
+                if (recRequest.getField(Request.HIST_REPRINT).getState() != true)
                 {   // Not reprinted = update history
                     recRequestHistory.addNew();
                     recRequestHistory.moveFields(recRequest, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
@@ -140,7 +140,7 @@ public class RequestLabelsUpdate extends BaseProcess
         
                 recRequestHistoryDetail.addNew();
                 recRequestHistoryDetail.moveFields(recRequestDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
-                recRequestHistoryDetail.getField(RequestHistoryDetail.kProfileID).moveFieldToThis(recRequest.getField(Request.kProfileID));
+                recRequestHistoryDetail.getField(RequestHistoryDetail.PROFILE_ID).moveFieldToThis(recRequest.getField(Request.PROFILE_ID));
                 recRequestHistoryDetail.add();  
         
                 recRequestDetail.remove();

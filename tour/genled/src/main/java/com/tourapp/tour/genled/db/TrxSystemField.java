@@ -74,7 +74,7 @@ public class TrxSystemField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.getReferenceRecord();  // Get/make the record that describes the referenced class.
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, TrxSystem.kSystemDesc, false, false);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, TrxSystem.SYSTEM_DESC, false, false);
     }
 
 }

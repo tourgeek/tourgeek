@@ -97,10 +97,10 @@ public class HotelSearchSession extends ProductSearchSession
     {
         super.addListeners();
         
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kClassID)).getReferenceRecord(this);
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID)).getReferenceRecord(this);
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new CompareFileFilter(Product.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new CompareFileFilter(Product.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), DBConstants.EQUALS, null, true));
     }
     /**
      * AddPriceListeners Method.
@@ -108,12 +108,12 @@ public class HotelSearchSession extends ProductSearchSession
     public void addPriceListeners(Product recProduct)
     {
         super.addPriceListeners(recProduct);
-        recProduct.getField(Hotel.kSinglePriceLocal).addListener(new AddCommissionHandler(null));
-        recProduct.getField(Hotel.kDoublePriceLocal).addListener(new AddCommissionHandler(null));
-        recProduct.getField(Hotel.kTriplePriceLocal).addListener(new AddCommissionHandler(null));
-        recProduct.getField(Hotel.kQuadPriceLocal).addListener(new AddCommissionHandler(null));
-        recProduct.getField(Hotel.kRoomPriceLocal).addListener(new AddCommissionHandler(null));
-        recProduct.getField(Hotel.kMealPriceLocal).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Hotel.SINGLE_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Hotel.DOUBLE_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Hotel.TRIPLE_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Hotel.QUAD_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Hotel.ROOM_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Hotel.MEAL_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
     }
     /**
      * Select the fields required for the grid screen.
@@ -123,18 +123,18 @@ public class HotelSearchSession extends ProductSearchSession
         super.selectGridFields();
         Record record = this.getMainRecord();
         
-        record.getField(Hotel.kSingleCost).setSelected(true);
-        record.getField(Hotel.kDoubleCost).setSelected(true);
-        record.getField(Hotel.kTripleCost).setSelected(true);
-        record.getField(Hotel.kQuadCost).setSelected(true);
-        record.getField(Hotel.kSingleCostLocal).setSelected(true);
-        record.getField(Hotel.kDoubleCostLocal).setSelected(true);
-        record.getField(Hotel.kTripleCostLocal).setSelected(true);
-        record.getField(Hotel.kQuadCostLocal).setSelected(true);
-        record.getField(Hotel.kSinglePriceLocal).setSelected(true);
-        record.getField(Hotel.kDoublePriceLocal).setSelected(true);
-        record.getField(Hotel.kTriplePriceLocal).setSelected(true);
-        record.getField(Hotel.kQuadPriceLocal).setSelected(true);
+        record.getField(Hotel.SINGLE_COST).setSelected(true);
+        record.getField(Hotel.DOUBLE_COST).setSelected(true);
+        record.getField(Hotel.TRIPLE_COST).setSelected(true);
+        record.getField(Hotel.QUAD_COST).setSelected(true);
+        record.getField(Hotel.SINGLE_COST_LOCAL).setSelected(true);
+        record.getField(Hotel.DOUBLE_COST_LOCAL).setSelected(true);
+        record.getField(Hotel.TRIPLE_COST_LOCAL).setSelected(true);
+        record.getField(Hotel.QUAD_COST_LOCAL).setSelected(true);
+        record.getField(Hotel.SINGLE_PRICE_LOCAL).setSelected(true);
+        record.getField(Hotel.DOUBLE_PRICE_LOCAL).setSelected(true);
+        record.getField(Hotel.TRIPLE_PRICE_LOCAL).setSelected(true);
+        record.getField(Hotel.QUAD_PRICE_LOCAL).setSelected(true);
     }
     /**
      * Select the fields for the maint screen.
@@ -143,13 +143,13 @@ public class HotelSearchSession extends ProductSearchSession
     {
         super.selectMaintFields();
         Record record = this.getMainRecord();
-        if (this.getMainRecord().getField(Hotel.kSingleCost).getListener(CalcProductAmountHome.class) == null)
+        if (this.getMainRecord().getField(Hotel.SINGLE_COST).getListener(CalcProductAmountHome.class) == null)
         {
-            this.getMainRecord().getField(Hotel.kSingleCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.kSingleCostLocal)));
-            this.getMainRecord().getField(Hotel.kTripleCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.kTripleCostLocal)));
-            this.getMainRecord().getField(Hotel.kQuadCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.kQuadCostLocal)));
-            this.getMainRecord().getField(Hotel.kRoomCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.kRoomCostLocal)));
-            this.getMainRecord().getField(Hotel.kMealCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.kMealCostLocal)));
+            this.getMainRecord().getField(Hotel.SINGLE_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.SINGLE_COST_LOCAL)));
+            this.getMainRecord().getField(Hotel.TRIPLE_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.TRIPLE_COST_LOCAL)));
+            this.getMainRecord().getField(Hotel.QUAD_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.QUAD_COST_LOCAL)));
+            this.getMainRecord().getField(Hotel.ROOM_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.ROOM_COST_LOCAL)));
+            this.getMainRecord().getField(Hotel.MEAL_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.MEAL_COST_LOCAL)));
         }
     }
     /**
@@ -159,8 +159,8 @@ public class HotelSearchSession extends ProductSearchSession
     {
         super.addRateMessageListeners(recProduct, screenRecord);
         // Override this to add the listeners and message queues (remember to call super)
-        this.getMainRecord().getField(Hotel.kDoubleCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Hotel.kDoubleCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.kDoubleCostLocal)));
+        this.getMainRecord().getField(Hotel.DOUBLE_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Hotel.DOUBLE_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Hotel.DOUBLE_COST_LOCAL)));
     }
     /**
      * AddProductRateMessageFilter Method.
@@ -199,10 +199,10 @@ public class HotelSearchSession extends ProductSearchSession
         Record recProduct = this.getMainRecord();
         
         String strHotelClass = (String)properties.get(SearchConstants.HOTEL_CLASS);
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).setString(strHotelClass);
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).setString(strHotelClass);
         
-        Record recProductControl = this.getRecord(ProductControl.kProductControlFile);
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).moveFieldToThis(recProductControl.getField(ProductControl.kHotelRateID));
+        Record recProductControl = this.getRecord(ProductControl.PRODUCT_CONTROL_FILE);
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).moveFieldToThis(recProductControl.getField(ProductControl.HOTEL_RATE_ID));
     }
 
 }

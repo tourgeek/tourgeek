@@ -64,7 +64,7 @@ public class GetDepartureDateHandler extends FieldListener
         if (m_fldTourID != null)
         {
             Record recTour = m_fldTourID.getReferenceRecord();
-            if ((this.getOwner().getRecord().getDefaultOrder() == ApTrx.kTourIDKey)
+            if ((ApTrx.TOUR_ID_KEY.equals(this.getOwner().getRecord().getDefaultKeyName()))
                 && ((this.getOwner().getRecord().getListener(SubFileFilter.class) != null))
                     && (recTour != null)
                         && (!m_fldTourID.equals(recTour.getCounterField())))
@@ -73,7 +73,7 @@ public class GetDepartureDateHandler extends FieldListener
                             m_fldTourID.getReference();
             if (recTour != null)
                 if ((recTour.getEditMode() == DBConstants.EDIT_CURRENT) || (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                    data = recTour.getField(Tour.kDepartureDate).getData();
+                    data = recTour.getField(Tour.DEPARTURE_DATE).getData();
         }
         return data;
     }

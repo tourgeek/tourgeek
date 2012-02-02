@@ -77,13 +77,13 @@ public class ProfileHeaderScreen extends HeaderScreen
     public void setupSFields()
     {
         // I have to get the header record, since one of the sub-screens is the profile screen.
-        ((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Profile.kName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        ((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Profile.NAME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         
         Record record = ((BaseScreen)this.getParentScreen()).getHeaderRecord();
         Converter converter = record.getCounterField();
         new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, converter, ScreenConstants.DONT_DISPLAY_DESC, record);
         
-        ((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Profile.kContact).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        ((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Profile.CONTACT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

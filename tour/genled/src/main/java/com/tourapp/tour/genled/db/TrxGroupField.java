@@ -75,7 +75,7 @@ public class TrxGroupField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();  // Get/make the record that describes the referenced class.
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, TrxGroup.kGroupDesc, false, false);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, TrxGroup.GROUP_DESC, false, false);
     }
 
 }

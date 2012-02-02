@@ -65,8 +65,8 @@ public class ArTrxAgentGridScreen extends GridScreen
     {
         super.init(record, itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, properties);
         
-        if (this.getRecord(Profile.kProfileFile).getField(Profile.kProfileCode).getComponent(0) != null)
-            ((ScreenField)this.getRecord(Profile.kProfileFile).getField(Profile.kProfileCode).getComponent(0)).requestFocus();
+        if (this.getRecord(Profile.PROFILE_FILE).getField(Profile.PROFILE_CODE).getComponent(0) != null)
+            ((ScreenField)this.getRecord(Profile.PROFILE_FILE).getField(Profile.PROFILE_CODE).getComponent(0)).requestFocus();
     }
     /**
      * Get the screen display title.
@@ -109,23 +109,23 @@ public class ArTrxAgentGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(Profile.kProfileFile).getField(Profile.kProfileCode).addListener(new MainReadOnlyHandler(Profile.kProfileCodeKey));
+        this.getRecord(Profile.PROFILE_FILE).getField(Profile.PROFILE_CODE).addListener(new MainReadOnlyHandler(Profile.PROFILE_CODE_KEY));
         
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(Profile.kProfileFile), true));
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(Profile.PROFILE_FILE), true));
         
-        this.getHeaderRecord().getField(Profile.kID).addListener(new FieldReSelectHandler(this));
-        Record recArTrx = this.getRecord(ArTrx.kArTrxFile);
-        Record recBooking = this.getRecord(Booking.kBookingFile);
-        Record recBookingLine = this.getRecord(BookingLine.kBookingLineFile);
+        this.getHeaderRecord().getField(Profile.ID).addListener(new FieldReSelectHandler(this));
+        Record recArTrx = this.getRecord(ArTrx.AR_TRX_FILE);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
+        Record recBookingLine = this.getRecord(BookingLine.BOOKING_LINE_FILE);
         recArTrx.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recArTrx));
-        recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.kBalance), ArTrx.kAmount, true, true));
+        recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, true, true));
         recBookingLine.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recBookingLine));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kGross), BookingLine.kGross, true, true));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kNet), BookingLine.kNet, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.NET), BookingLine.NET, true, true));
         
-        recBooking.addListener(new SubCountHandler(this.getScreenRecord().getField(ArTrxAgentScreenRecord.kBalance), Booking.kBalance, true, true));
+        recBooking.addListener(new SubCountHandler(this.getScreenRecord().getField(ArTrxAgentScreenRecord.BALANCE), Booking.BALANCE, true, true));
         
         this.setEnabled(false);
         this.setAppending(false);
@@ -138,7 +138,7 @@ public class ArTrxAgentGridScreen extends GridScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Profile.kProfileFile);
+        return this.getRecord(Profile.PROFILE_FILE);
     }
     /**
      * SetupSFields Method.

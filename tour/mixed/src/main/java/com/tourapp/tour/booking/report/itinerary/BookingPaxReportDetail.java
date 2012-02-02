@@ -80,7 +80,7 @@ public class BookingPaxReportDetail extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(Booking.kBookingFile)));
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(Booking.BOOKING_FILE)));
     }
     /**
      * SetupSFields Method.
@@ -88,7 +88,7 @@ public class BookingPaxReportDetail extends ReportScreen
     public void setupSFields()
     {
         Record recBookingPax = this.getMainRecord();
-        ((ReferenceField)recBookingPax.getField(BookingPax.kBookingID)).setReferenceRecord(this.getRecord(Booking.kBookingFile));
+        ((ReferenceField)recBookingPax.getField(BookingPax.BOOKING_ID)).setReferenceRecord(this.getRecord(Booking.BOOKING_FILE));
         for (int iFieldSeq = 0; iFieldSeq < recBookingPax.getFieldCount(); iFieldSeq++)
         {
             BaseField field = recBookingPax.getField(iFieldSeq);

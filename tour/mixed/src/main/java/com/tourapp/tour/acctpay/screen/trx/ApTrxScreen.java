@@ -83,13 +83,13 @@ public class ApTrxScreen extends Screen
         super.addListeners();
         this.addMainKeyBehavior();
         this.setEnabled(false);
-        this.getMainRecord().getField(ApTrx.kCode).setEnabled(true);
-        this.getMainRecord().getField(ApTrx.kDescription).setEnabled(true);
-        this.getMainRecord().getField(ApTrx.kStartServiceDate).setEnabled(true);
-        this.getMainRecord().getField(ApTrx.kEndServiceDate).setEnabled(true);
-        this.getMainRecord().getField(ApTrx.kFinalizationDate).setEnabled(true);
-        this.getMainRecord().getField(ApTrx.kInvoiceNo).setEnabled(true);
-        this.getMainRecord().getField(ApTrx.kInvoiceDate).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.CODE).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.DESCRIPTION).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.START_SERVICE_DATE).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.END_SERVICE_DATE).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.FINALIZATION_DATE).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.INVOICE_NO).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.INVOICE_DATE).setEnabled(true);
     }
     /**
      * Add button(s) to the toolbar.
@@ -102,7 +102,7 @@ public class ApTrxScreen extends Screen
         
         String strPaymentHistory = PaymentHistory.PAYMENT_HISTORY;
         strPaymentHistory = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strPaymentHistory);
-        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strPaymentHistory, PaymentHistory.PAYMENT_HISTORY_ICON, PaymentHistory.kPaymentHistoryFile, null);
+        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strPaymentHistory, PaymentHistory.PAYMENT_HISTORY_ICON, PaymentHistory.PAYMENT_HISTORY_FILE, null);
         
         strPaymentHistory = PaymentHistory.PAYMENT_DISTRIBUTION;
         strPaymentHistory = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strPaymentHistory);
@@ -110,23 +110,23 @@ public class ApTrxScreen extends Screen
         
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(AcctDetailDist.DIST_DISTRIBUTION), AcctDetailDist.DIST_DISTRIBUTION, AcctDetailDist.DIST_DISTRIBUTION, null);
         
-        String strVendor = Vendor.kVendorFile + ' ' + MenuConstants.DISPLAY;
+        String strVendor = Vendor.VENDOR_FILE + ' ' + MenuConstants.DISPLAY;
         strVendor = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strVendor);
-        String strTour = Tour.kTourFile + ' ' + MenuConstants.DISPLAY;
+        String strTour = Tour.TOUR_FILE + ' ' + MenuConstants.DISPLAY;
         strTour = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strTour);
-        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.FLUSH_LEFT, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strVendor, MenuConstants.DISPLAY, Vendor.kVendorFile, null);
-        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strTour, MenuConstants.DISPLAY, Tour.kTourFile, null);
+        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.FLUSH_LEFT, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strVendor, MenuConstants.DISPLAY, Vendor.VENDOR_FILE, null);
+        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strTour, MenuConstants.DISPLAY, Tour.TOUR_FILE, null);
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {    // Make sure currency is read for LocalCurrencyField(s).
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -164,9 +164,9 @@ public class ApTrxScreen extends Screen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-        if (Vendor.kVendorFile.equalsIgnoreCase(strCommand))
+        if (Vendor.VENDOR_FILE.equalsIgnoreCase(strCommand))
             return (this.onForm(null, ApTrx.VENDOR_AP_SCREEN, true, iCommandOptions, null) != null);
-        if (Tour.kTourFile.equalsIgnoreCase(strCommand))
+        if (Tour.TOUR_FILE.equalsIgnoreCase(strCommand))
             return (this.onForm(null, ApTrx.TOUR_AP_SCREEN, true, iCommandOptions, null) != null);
         return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }

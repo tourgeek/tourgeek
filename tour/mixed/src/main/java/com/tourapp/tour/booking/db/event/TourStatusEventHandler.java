@@ -63,7 +63,7 @@ public class TourStatusEventHandler extends FieldListener
     {
         int iTourStatus = (int)this.getOwner().getValue();
         if (iTourStatus == TourStatus.OKAY)
-            this.getOwner().getRecord().getField(Tour.kServConf).setState(true, bDisplayOption, iMoveMode);    // Trigger the services confirmed event
+            this.getOwner().getRecord().getField(Tour.SERV_CONF).setState(true, bDisplayOption, iMoveMode);    // Trigger the services confirmed event
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 

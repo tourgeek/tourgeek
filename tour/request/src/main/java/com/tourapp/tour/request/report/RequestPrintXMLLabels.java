@@ -94,12 +94,12 @@ public class RequestPrintXMLLabels extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).addListener(new InitFieldHandler(this.getRecord(RequestControl.kRequestControlFile).getField(RequestControl.kSendViaCode)));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kSendViaCode), this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID), "="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kPrintNow), this.getScreenRecord().getField(RequestLabelsScreenRecord.kTrueField), "="));
-        this.getRecord(RequestDetail.kRequestDetailFile).addListener(new SubFileFilter(this.getMainRecord()));
+        this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).addListener(new InitFieldHandler(this.getRecord(RequestControl.REQUEST_CONTROL_FILE).getField(RequestControl.SEND_VIA_CODE)));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.SEND_VIA_CODE), this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID), "="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.PRINT_NOW), this.getScreenRecord().getField(RequestLabelsScreenRecord.TRUE_FIELD), "="));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).addListener(new SubFileFilter(this.getMainRecord()));
         this.getMainRecord().addListener(new SetupLabelTextHandler(null)); 
-        this.getRecord(RequestDetail.kRequestDetailFile).getField(RequestDetail.kBrochureID).addListener(new ReadSecondaryHandler(this.getRecord(Brochure.kBrochureFile)));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).getField(RequestDetail.BROCHURE_ID).addListener(new ReadSecondaryHandler(this.getRecord(Brochure.BROCHURE_FILE)));
     }
     /**
      * Add button(s) to the toolbar.
@@ -154,7 +154,7 @@ public class RequestPrintXMLLabels extends ReportScreen
             return true;
         }
         Map properties = new HashMap();
-        properties.put("sendvia", this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).getData());
+        properties.put("sendvia", this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).getData());
         if (strCommand.equalsIgnoreCase(MenuConstants.PRINT))
         {
             // Step 1 - Move any history to the Request file before starting.
@@ -174,11 +174,11 @@ public class RequestPrintXMLLabels extends ReportScreen
             ScreenLocation itsLocation = this.getScreenLocation();
             FieldConverter fieldConverter = null;
             int iDisplayFieldDesc = ScreenConstants.DEFAULT_DISPLAY;
-            int iSendViaID = (int)this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).getValue();
+            int iSendViaID = (int)this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).getValue();
             this.free();        // Remove this screen
             parentScreen.popHistory(1, false);  // Back should skip this screen
             BaseScreen screen = new RequestPrintLabels(record, itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, properties);
-            screen.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).setValue(iSendViaID);   // Sync
+            screen.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).setValue(iSendViaID);   // Sync
         
             strCommand = MenuConstants.PRINT;
             return screen.doCommand(strCommand, sourceSField, iCommandOptions);

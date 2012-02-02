@@ -65,7 +65,7 @@ public class TrialBalanceSubTotal extends ReportBreakScreen
      */
     public void setupSFields()
     {
-        Converter converter = new FieldDescConverter(this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kStartSource), this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kSubTotal));
+        Converter converter = new FieldDescConverter(this.getScreenRecord().getField(GenledScreenRecord.START_SOURCE), this.getScreenRecord().getField(GenledScreenRecord.SUB_TOTAL));
         new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kSubTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
@@ -77,9 +77,9 @@ public class TrialBalanceSubTotal extends ReportBreakScreen
     {
         boolean bBreak = super.isBreak();
         if (bBreak)
-            bBreak = this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kSubTotals).getState();
+            bBreak = this.getScreenRecord().getField(GenledScreenRecord.SUB_TOTALS).getState();
         if (bBreak)
-            bBreak = this.getMainRecord().getField(Account.kSectionSubTotal).getState();
+            bBreak = this.getMainRecord().getField(Account.SECTION_SUB_TOTAL).getState();
         return bBreak;
     }
 

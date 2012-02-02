@@ -124,25 +124,25 @@ public class LandList extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Land.kLandFile, Land.kID).setSelected(true);
-        this.getField(Land.kLandFile, Land.kDescription).setSelected(true);
-        this.getField(Land.kLandFile, Land.kCode).setSelected(true);
-        this.getField(Land.kLandFile, Land.kVendorID).setSelected(true);
-        this.getField(Land.kLandFile, Land.kCityID).setSelected(true);
-        this.getField(City.kCityFile, City.kDescription).setSelected(true);
-        this.getField(City.kCityFile, City.kCountryID).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kVendorName).setSelected(true);
-        this.getField(Land.kLandFile, Land.kDescSort).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kNameSort).setSelected(true);
-        this.getField(City.kCityFile, City.kTicketCityDesc).setSelected(true);
+        this.getField(Land.LAND_FILE, Land.ID).setSelected(true);
+        this.getField(Land.LAND_FILE, Land.DESCRIPTION).setSelected(true);
+        this.getField(Land.LAND_FILE, Land.CODE).setSelected(true);
+        this.getField(Land.LAND_FILE, Land.VENDOR_ID).setSelected(true);
+        this.getField(Land.LAND_FILE, Land.CITY_ID).setSelected(true);
+        this.getField(City.CITY_FILE, City.DESCRIPTION).setSelected(true);
+        this.getField(City.CITY_FILE, City.COUNTRY_ID).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.VENDOR_NAME).setSelected(true);
+        this.getField(Land.LAND_FILE, Land.DESC_SORT).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.NAME_SORT).setSelected(true);
+        this.getField(City.CITY_FILE, City.TICKET_CITY_DESC).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Land.kLandFile), this.getRecord(City.kCityFile), Land.kCityID, City.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Land.kLandFile), this.getRecord(Vendor.kVendorFile), Land.kVendorID, Vendor.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Land.LAND_FILE), this.getRecord(City.CITY_FILE), Land.CITY_ID, City.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Land.LAND_FILE), this.getRecord(Vendor.VENDOR_FILE), Land.VENDOR_ID, Vendor.ID);
     }
 
 }

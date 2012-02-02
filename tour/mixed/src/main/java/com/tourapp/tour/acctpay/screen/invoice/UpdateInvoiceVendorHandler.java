@@ -67,13 +67,13 @@ public class UpdateInvoiceVendorHandler extends FileListener
      */
     public void doValidRecord(boolean bDisplayOption)
     {
-        BaseField fldVendorID = this.getOwner().getField(ApTrx.kVendorID);
-        BaseField fldLastVendorID = m_screenRecord.getField(InvoiceScreenRecord.kLastVendorID);
+        BaseField fldVendorID = this.getOwner().getField(ApTrx.VENDOR_ID);
+        BaseField fldLastVendorID = m_screenRecord.getField(InvoiceScreenRecord.LAST_VENDOR_ID);
         if (fldVendorID.equals(fldLastVendorID))
             // if (trxStatus = departure est)
         {
-            this.getOwner().getField(ApTrx.kInvoiceNo).moveFieldToThis(m_screenRecord.getField(InvoiceScreenRecord.kLastInvoiceNo), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-            this.getOwner().getField(ApTrx.kInvoiceDate).moveFieldToThis(m_screenRecord.getField(InvoiceScreenRecord.kLastInvoiceDate), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getOwner().getField(ApTrx.INVOICE_NO).moveFieldToThis(m_screenRecord.getField(InvoiceScreenRecord.LAST_INVOICE_NO), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getOwner().getField(ApTrx.INVOICE_DATE).moveFieldToThis(m_screenRecord.getField(InvoiceScreenRecord.LAST_INVOICE_DATE), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         }
         super.doValidRecord(bDisplayOption);
     }

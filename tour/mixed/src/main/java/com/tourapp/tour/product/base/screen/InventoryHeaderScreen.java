@@ -64,10 +64,10 @@ public class InventoryHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        Record recProduct = ((ReferenceField)this.getRecord(Inventory.kInventoryFile).getField(Inventory.kProductID)).getReferenceRecord();
+        Record recProduct = ((ReferenceField)this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.PRODUCT_ID)).getReferenceRecord();
         this.getRecord(Inventory.kInventoryFile).getField(Inventory.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         if (recProduct != null)
-            recProduct.getField(Product.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+            recProduct.getField(Product.VENDOR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Inventory.kInventoryFile).getField(Inventory.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Inventory.kInventoryFile).getField(Inventory.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Inventory.kInventoryFile).getField(Inventory.kInvDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

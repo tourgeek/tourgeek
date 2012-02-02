@@ -33,9 +33,13 @@ public class BookingLandScreenRecord extends BookingDetailScreenRecord
 
     //public static final int kPPCostLocal = kPPCostLocal;
     //public static final int kMarkupFromLast = kMarkupFromLast;
+    public static final String SIC_COST_LOCAL = "SICCostLocal";
     public static final int kSICCostLocal = kBookingDetailScreenRecordLastField + 1;
+    public static final String PMC_COST_LOCAL = "PMCCostLocal";
     public static final int kPMCCostLocal = kSICCostLocal + 1;
+    public static final String LAND_INFO_FLAG = "LandInfoFlag";
     public static final int kLandInfoFlag = kPMCCostLocal + 1;
+    public static final String VARY_QTY = "VaryQty";
     public static final int kVaryQty = kLandInfoFlag + 1;
     public static final int kBookingLandScreenRecordLastField = kVaryQty;
     public static final int kBookingLandScreenRecordFields = kVaryQty - DBConstants.MAIN_FIELD + 1;

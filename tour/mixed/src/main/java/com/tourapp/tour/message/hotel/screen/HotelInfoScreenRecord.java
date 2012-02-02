@@ -43,6 +43,7 @@ public class HotelInfoScreenRecord extends ProductInfoScreenRecord
     //public static final int kAvailability = kAvailability;
     //public static final int kConfirmedBy = kConfirmedBy;
     //public static final int kConfirmationNo = kConfirmationNo;
+    public static final String NIGHTS = "Nights";
     public static final int kNights = kProductInfoScreenRecordLastField + 1;
     public static final int kHotelInfoScreenRecordLastField = kNights;
     public static final int kHotelInfoScreenRecordFields = kNights - DBConstants.MAIN_FIELD + 1;

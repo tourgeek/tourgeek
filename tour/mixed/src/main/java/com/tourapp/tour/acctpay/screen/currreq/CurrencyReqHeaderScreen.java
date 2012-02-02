@@ -63,7 +63,7 @@ public class CurrencyReqHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(CurrencyReqScreenRecord.kCurrencysID).setEnabled(true);
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.CURRENCYS_ID).setEnabled(true);
     }
     /**
      * SetupSFields Method.

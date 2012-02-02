@@ -76,13 +76,13 @@ public class AccountField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record recAccount = this.makeReferenceRecord();
-        BaseField fldAcctNo = recAccount.getField(Account.kAccountNo);
-        fldAcctNo.addListener(new MainReadOnlyHandler(Account.kAccountNoKey));
+        BaseField fldAcctNo = recAccount.getField(Account.ACCOUNT_NO);
+        fldAcctNo.addListener(new MainReadOnlyHandler(Account.ACCOUNT_NO_KEY));
         Converter conv = fldAcctNo; // new GlConverter(fldAcctNo); (Don't need a converter since AccountNo has one already)
         conv = new FieldDescConverter(conv, this);  // Use the description for this field
         conv.setupDefaultView(itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
         
-        return this.setupTableLookup(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, ScreenConstants.DONT_DISPLAY_FIELD_DESC, recAccount, -1, Account.kDescription, true);
+        return this.setupTableLookup(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, ScreenConstants.DONT_DISPLAY_FIELD_DESC, recAccount, null, Account.DESCRIPTION, true);
     }
 
 }

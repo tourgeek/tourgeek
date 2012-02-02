@@ -8,6 +8,16 @@ import org.jbundle.model.db.*;
 
 public interface InventoryDetailModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String INVENTORY_ID = "InventoryID";
+    public static final String BOOKING_DETAIL_ID = "BookingDetailID";
+    public static final String TYPE = "Type";
+    public static final String AMOUNT = "Amount";
+
+    public static final String INVENTORY_ID_KEY = "InventoryID";
+
+    public static final String BOOKING_DETAIL_ID_KEY = "BookingDetailID";
     public static final String INVENTORY_DETAIL_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.InventoryDetailScreen";
     public static final String INVENTORY_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.InventoryDetailGridScreen";
 

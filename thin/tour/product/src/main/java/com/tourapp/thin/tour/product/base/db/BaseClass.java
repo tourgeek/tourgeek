@@ -15,6 +15,8 @@ public class BaseClass extends FieldList
     implements BaseClassModel
 {
 
+    //public static final String ID = ID;
+
     public BaseClass()
     {
         super();

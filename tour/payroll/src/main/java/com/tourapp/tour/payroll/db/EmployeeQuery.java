@@ -101,22 +101,22 @@ public class EmployeeQuery extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Employee.kID).setSelected(true);
-        this.getField(Employee.kNameSort).setSelected(true);
-        this.getField(Employee.kName).setSelected(true);
-        this.getField(Employee.kHireDate).setSelected(true);
-        this.getField(Employee.kDateChanged).setSelected(true);
-        this.getField(Employee.kPostalCodeSort).setSelected(true);
-        this.getField(Employee.kFirstName).setSelected(true);
-        this.getField(Employee.kDeductionID1).setSelected(true);
-        this.getField(Deduction.kDeductionFile, Deduction.kDescription).setSelected(true);
+        this.getField(Employee.ID).setSelected(true);
+        this.getField(Employee.NAME_SORT).setSelected(true);
+        this.getField(Employee.NAME).setSelected(true);
+        this.getField(Employee.HIRE_DATE).setSelected(true);
+        this.getField(Employee.DATE_CHANGED).setSelected(true);
+        this.getField(Employee.POSTAL_CODE_SORT).setSelected(true);
+        this.getField(Employee.FIRST_NAME).setSelected(true);
+        this.getField(Employee.DEDUCTION_ID1).setSelected(true);
+        this.getField(Deduction.DEDUCTION_FILE, Deduction.DESCRIPTION).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Employee.kEmployeeFile), this.getRecord(Deduction.kDeductionFile), Employee.kDeductionID1, Deduction.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Employee.EMPLOYEE_FILE), this.getRecord(Deduction.DEDUCTION_FILE), Employee.DEDUCTION_ID1, Deduction.ID);
     }
 
 }

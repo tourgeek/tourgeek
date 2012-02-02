@@ -447,7 +447,7 @@ public class TourHeaderAir extends TourHeaderTransport
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(TourHeaderDetail.kProductTypeID, ProductType.AIR_ID));
+        this.addListener(new SharedFileHandler(TourHeaderDetail.PRODUCT_TYPE_ID, ProductType.AIR_ID));
     }
 
 }

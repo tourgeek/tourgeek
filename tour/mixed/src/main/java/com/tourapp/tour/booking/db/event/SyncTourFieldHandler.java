@@ -31,7 +31,7 @@ import com.tourapp.tour.booking.db.*;
 public class SyncTourFieldHandler extends FieldListener
 {
     protected Booking m_recBooking = null;
-    protected int m_iBookingFieldSeq = -1;
+    protected String m_iBookingFieldSeq = null;
     /**
      * Default constructor.
      */
@@ -42,7 +42,7 @@ public class SyncTourFieldHandler extends FieldListener
     /**
      * SyncTourFieldHandler Method.
      */
-    public SyncTourFieldHandler(Booking recBooking, int iBookingFieldSeq)
+    public SyncTourFieldHandler(Booking recBooking, String iBookingFieldSeq)
     {
         this();
         this.init(recBooking, iBookingFieldSeq);
@@ -50,7 +50,7 @@ public class SyncTourFieldHandler extends FieldListener
     /**
      * Initialize class fields.
      */
-    public void init(Booking recBooking, int iBookingFieldSeq)
+    public void init(Booking recBooking, String iBookingFieldSeq)
     {
         m_recBooking = null;
         super.init(null);
@@ -66,12 +66,12 @@ public class SyncTourFieldHandler extends FieldListener
     {
         Tour recTour = (Tour)this.getOwner().getRecord();
         if (m_recBooking != null)
-            if (m_recBooking.getField(Booking.kTourID).equals(recTour.getCounterField()))
+            if (m_recBooking.getField(Booking.TOUR_ID).equals(recTour.getCounterField()))
                 if ((m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (m_recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
-                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
                 if (recTourHeader != null)
-                    if (recTourHeader.getField(TourHeader.kTourSeries).getState() == false)
+                    if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() == false)
                     {
                         boolean[] rgbEnabled = m_recBooking.getField(m_iBookingFieldSeq).setEnableListeners(false);
                         m_recBooking.getField(m_iBookingFieldSeq).moveFieldToThis(this.getOwner());

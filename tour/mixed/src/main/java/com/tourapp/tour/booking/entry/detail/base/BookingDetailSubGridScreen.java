@@ -76,8 +76,8 @@ public class BookingDetailSubGridScreen extends BookingSubGridScreen
     {
         super.addListeners();
         BookingDetail recBookingDetail = (BookingDetail)this.getMainRecord();
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         recBookingDetail.addDetailBehaviors(recBooking, recTour);
     }
 

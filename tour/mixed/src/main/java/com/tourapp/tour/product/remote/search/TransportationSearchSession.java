@@ -90,11 +90,11 @@ public class TransportationSearchSession extends ProductSearchSession
     {
         super.addListeners(); 
         
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kClassID)).getReferenceRecord(this);
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID)).getReferenceRecord(this);
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), DBConstants.EQUALS, null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.kToCityID, this.getScreenRecord().getField(ProductScreenRecord.kToCityID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.TO_CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.TO_CITY_ID), DBConstants.EQUALS, null, true));
     }
     /**
      * Add the screen record to this session.
@@ -111,9 +111,9 @@ public class TransportationSearchSession extends ProductSearchSession
         super.selectGridFields();
         Record record = this.getMainRecord();
         
-        record.getField(Transportation.kEtd).setSelected(true);
-        record.getField(Transportation.kCityCode).setSelected(true);
-        record.getField(Transportation.kToCityCode).setSelected(true);
+        record.getField(Transportation.ETD).setSelected(true);
+        record.getField(Transportation.CITY_CODE).setSelected(true);
+        record.getField(Transportation.TO_CITY_CODE).setSelected(true);
     }
     /**
      * Select the fields for the maint screen.
@@ -145,13 +145,13 @@ public class TransportationSearchSession extends ProductSearchSession
         super.setScreenFields(properties);
         Record recProduct = this.getMainRecord();
         
-        this.addThisRecordFilter(properties, City.kCityFile, SearchConstants.LOCATION_TO, TransportProduct.kToCityID, ProductScreenRecord.kToCityID);
+        this.addThisRecordFilter(properties, City.CITY_FILE, SearchConstants.LOCATION_TO, TransportProduct.TO_CITY_ID, ProductScreenRecord.TO_CITY_ID);
         
         String strTransClass = (String)properties.get(SearchConstants.TRANSPORTATION_CLASS);
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).setString(strTransClass);
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).setString(strTransClass);
         
-        Record recProductControl = this.getRecord(ProductControl.kProductControlFile);
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).moveFieldToThis(recProductControl.getField(ProductControl.kTransportationRateID));
+        Record recProductControl = this.getRecord(ProductControl.PRODUCT_CONTROL_FILE);
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).moveFieldToThis(recProductControl.getField(ProductControl.TRANSPORTATION_RATE_ID));
     }
 
 }

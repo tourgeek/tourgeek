@@ -116,43 +116,43 @@ public class PrintCheckPost extends BaseApTrxPostScreen
     public void addListeners()
     {
         super.addListeners();
-        if (this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).getFieldName()) != null)
-            this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).getFieldName())));
+        if (this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).getFieldName()) != null)
+            this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).getFieldName())));
         else
-            this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kApBankAcctID)));
-        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID)).getReference();  // Make sure this record is referenced
+            this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.AP_BANK_ACCT_ID)));
+        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID)).getReference();  // Make sure this record is referenced
         
         FieldListener listener = new ReadSecondaryHandler(recBankAcct);
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).addListener(listener);
+        this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).addListener(listener);
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
         
         this.getMainRecord().addListener(new SubFileFilter(recBankAcct));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kReportCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kReportTotal), PaymentRequest.kAmount, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.REPORT_COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.REPORT_TOTAL), PaymentRequest.AMOUNT, false, true));
         
-        Record recApTrx = this.getRecord(ApTrx.kApTrxFile);
-        recApTrx.setKeyArea(ApTrx.kVendorIDKey);
-        recApTrx.addListener(new SubFileFilter(this.getMainRecord().getField(PaymentRequest.kVendorID), ApTrx.kVendorID, null, -1, null, -1));
+        Record recApTrx = this.getRecord(ApTrx.AP_TRX_FILE);
+        recApTrx.setKeyArea(ApTrx.VENDOR_ID_KEY);
+        recApTrx.addListener(new SubFileFilter(this.getMainRecord().getField(PaymentRequest.VENDOR_ID), ApTrx.VENDOR_ID, null, null, null, null));
         
-        recBankAcct.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kNextCheckNo), recBankAcct.getField(BankAcct.kNextCheck)));
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kNextCheckNo).setSFieldToProperty();
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckDate).setSFieldToProperty();
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kChecksToPrint).setSFieldToProperty();
+        recBankAcct.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.NEXT_CHECK_NO), recBankAcct.getField(BankAcct.NEXT_CHECK)));
+        this.getScreenRecord().getField(PrintCheckScreenRecord.NEXT_CHECK_NO).setSFieldToProperty();
+        this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_DATE).setSFieldToProperty();
+        this.getScreenRecord().getField(PrintCheckScreenRecord.CHECKS_TO_PRINT).setSFieldToProperty();
         
-        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckNo), this.getScreenRecord().getField(PrintCheckScreenRecord.kNextCheckNo)));
+        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_NO), this.getScreenRecord().getField(PrintCheckScreenRecord.NEXT_CHECK_NO)));
         
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(PaymentRequest.kVendorID)).getReferenceRecord(this);
-        this.getMainRecord().getField(PaymentRequest.kVendorID).addListener(new ReadSecondaryHandler(recVendor));
-        recVendor.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kPayee), recVendor.getField(Vendor.kVendorName)));
-        this.getMainRecord().addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckAmount), this.getMainRecord().getField(PaymentRequest.kAmount)));
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(PaymentRequest.VENDOR_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(PaymentRequest.VENDOR_ID).addListener(new ReadSecondaryHandler(recVendor));
+        recVendor.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.PAYEE), recVendor.getField(Vendor.VENDOR_NAME)));
+        this.getMainRecord().addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_AMOUNT), this.getMainRecord().getField(PaymentRequest.AMOUNT)));
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        m_iPrepaymentTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.PREPAYMENT);   // Prepayment
-        m_iPaymentTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, PaymentHistory.kPaymentHistoryFile, PaymentHistory.PAYMENT);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        m_iPrepaymentTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.PREPAYMENT);   // Prepayment
+        m_iPaymentTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, PaymentHistory.PAYMENT_HISTORY_FILE, PaymentHistory.PAYMENT);
         
-        Record recPaymentHistory = this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        Record recPaymentHistory = this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
         recPaymentHistory.addListener(new SubFileFilter(recApTrx));
     }
     /**
@@ -184,8 +184,8 @@ public class PrintCheckPost extends BaseApTrxPostScreen
     {
         if (m_iTrxGroupID <= 0)
         {
-            TrxGroup recTrxGroup = (TrxGroup)this.getRecord(TrxGroup.kTrxGroupFile);
-            m_iTrxGroupID = recTrxGroup.getTrxGroupID(TransactionType.ACCTPAY, PaymentHistory.kPaymentHistoryFile, PaymentHistory.PAYMENT);
+            TrxGroup recTrxGroup = (TrxGroup)this.getRecord(TrxGroup.TRX_GROUP_FILE);
+            m_iTrxGroupID = recTrxGroup.getTrxGroupID(TransactionType.ACCTPAY, PaymentHistory.PAYMENT_HISTORY_FILE, PaymentHistory.PAYMENT);
         }
         return m_iTrxGroupID;
     }
@@ -195,7 +195,7 @@ public class PrintCheckPost extends BaseApTrxPostScreen
      */
     public boolean postDetailTrx()
     {
-        AcctDetailDist recAcctDetailDist = (AcctDetailDist)this.getRecord(AcctDetailDist.kAcctDetailDistFile);
+        AcctDetailDist recAcctDetailDist = (AcctDetailDist)this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
         recAcctDetailDist.startDistTrx();
         boolean bSuccess = super.postDetailTrx();
         recAcctDetailDist.endDistTrx();
@@ -206,7 +206,7 @@ public class PrintCheckPost extends BaseApTrxPostScreen
      */
     public Record getDetailRecord()
     {
-        return this.getRecord(PaymentRequest.kPaymentRequestFile);
+        return this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE);
     }
     /**
      * Return the distribution detail record.
@@ -214,7 +214,7 @@ public class PrintCheckPost extends BaseApTrxPostScreen
      */
     public Record getDistRecord()
     {
-        return this.getRecord(ApTrx.kApTrxFile);
+        return this.getRecord(ApTrx.AP_TRX_FILE);
     }
     /**
      * Get the base trx record.
@@ -222,7 +222,7 @@ public class PrintCheckPost extends BaseApTrxPostScreen
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        return (BaseTrx)this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
     }
     /**
      * Is the batch header record valid?
@@ -242,18 +242,18 @@ public class PrintCheckPost extends BaseApTrxPostScreen
         {
             int iNextCheckNo = listener.getNextCheckNo();
             try {
-                BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getRecord(PaymentRequest.kPaymentRequestFile).getField(PaymentRequest.kBankAcctID)).getReferenceRecord();
+                BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE).getField(PaymentRequest.BANK_ACCT_ID)).getReferenceRecord();
                 if (recBankAcct != null)
                 {
                     BankAcct recBankAcct2 = null;
                     try {
                         recBankAcct2 = (BankAcct)recBankAcct.clone();   // I Do this since recBankAcct is linked to a popup which makes it grid and readonly.
                         recBankAcct2.addNew();
-                        recBankAcct2.getField(BankAcct.kID).moveFieldToThis(this.getRecord(PaymentRequest.kPaymentRequestFile).getField(PaymentRequest.kBankAcctID));
+                        recBankAcct2.getField(BankAcct.ID).moveFieldToThis(this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE).getField(PaymentRequest.BANK_ACCT_ID));
                         if (recBankAcct2.seek(null))
                         {   // Always
                             recBankAcct2.edit();
-                            recBankAcct2.getField(BankAcct.kNextCheck).setValue(iNextCheckNo);
+                            recBankAcct2.getField(BankAcct.NEXT_CHECK).setValue(iNextCheckNo);
                             recBankAcct2.set();
                         }
                     } catch (CloneNotSupportedException ex) {
@@ -294,41 +294,41 @@ public class PrintCheckPost extends BaseApTrxPostScreen
     {
         boolean bSuccess = true;
         // Step 2b - Post the transaction side of the distribution.
-        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getRecord(PaymentRequest.kPaymentRequestFile).getField(PaymentRequest.kBankAcctID)).getReference();
-        BaseField fldCrAccountID = recBankAcct.getField(BankAcct.kAccountID);
+        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE).getField(PaymentRequest.BANK_ACCT_ID)).getReference();
+        BaseField fldCrAccountID = recBankAcct.getField(BankAcct.ACCOUNT_ID);
         
         Record recPaymentRequest = this.getDetailRecord();
-        double dAmount = -recPaymentRequest.getField(PaymentRequest.kAmount).getValue();
+        double dAmount = -recPaymentRequest.getField(PaymentRequest.AMOUNT).getValue();
         
         // Now post the total deposit amount
-        BaseTrx recBankTrx = (BankTrx)this.getRecord(BankTrx.kBankTrxFile);
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+        BaseTrx recBankTrx = (BankTrx)this.getRecord(BankTrx.BANK_TRX_FILE);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
         try   {
         // Step 2a - Create and write the bank transaction (in BankTrx).
             recBankTrx.addNew();
-            recBankTrx.getField(BankTrx.kTrxStatusID).moveFieldToThis(recTransactionType.getField(TransactionType.kSourceTrxStatusID));
-            recBankTrx.getField(BankTrx.kPayeeTrxDescID).moveFieldToThis(recTransactionType.getField(TransactionType.kTrxDescID));
-            recBankTrx.getField(BankTrx.kPayeeID).moveFieldToThis(recPaymentRequest.getField(PaymentRequest.kVendorID));
-            recBankTrx.getField(BankTrx.kPayeeName).moveFieldToThis(((ReferenceField)recPaymentRequest.getField(PaymentRequest.kVendorID)).getReference().getField(Vendor.kVendorName));
-            recBankTrx.getField(BankTrx.kTrxDate).moveFieldToThis(this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckDate));
-            recBankTrx.getField(BankTrx.kTrxEntry).initField(DBConstants.DONT_DISPLAY);
-            if (recPaymentRequest.getField(PaymentRequest.kCheckNo).isNull())
+            recBankTrx.getField(BankTrx.TRX_STATUS_ID).moveFieldToThis(recTransactionType.getField(TransactionType.SOURCE_TRX_STATUS_ID));
+            recBankTrx.getField(BankTrx.PAYEE_TRX_DESC_ID).moveFieldToThis(recTransactionType.getField(TransactionType.TRX_DESC_ID));
+            recBankTrx.getField(BankTrx.PAYEE_ID).moveFieldToThis(recPaymentRequest.getField(PaymentRequest.VENDOR_ID));
+            recBankTrx.getField(BankTrx.PAYEE_NAME).moveFieldToThis(((ReferenceField)recPaymentRequest.getField(PaymentRequest.VENDOR_ID)).getReference().getField(Vendor.VENDOR_NAME));
+            recBankTrx.getField(BankTrx.TRX_DATE).moveFieldToThis(this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_DATE));
+            recBankTrx.getField(BankTrx.TRX_ENTRY).initField(DBConstants.DONT_DISPLAY);
+            if (recPaymentRequest.getField(PaymentRequest.CHECK_NO).isNull())
             {   // Automatic check
-                recBankTrx.getField(BankTrx.kTrxNumber).moveFieldToThis(this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckNo));
-                recBankTrx.getField(BankTrx.kManual).setState(false);
+                recBankTrx.getField(BankTrx.TRX_NUMBER).moveFieldToThis(this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_NO));
+                recBankTrx.getField(BankTrx.MANUAL).setState(false);
             }
             else
             {   // Manual check
-                recBankTrx.getField(BankTrx.kTrxNumber).moveFieldToThis(recPaymentRequest.getField(PaymentRequest.kCheckNo));
-                recBankTrx.getField(BankTrx.kManual).setState(true);
+                recBankTrx.getField(BankTrx.TRX_NUMBER).moveFieldToThis(recPaymentRequest.getField(PaymentRequest.CHECK_NO));
+                recBankTrx.getField(BankTrx.MANUAL).setState(true);
             }
-            recBankTrx.getField(BankTrx.kBankAcctID).moveFieldToThis(recBankAcct.getField(BankAcct.kID));
-            recBankTrx.getField(BankTrx.kAmount).setValue(dAmount);
+            recBankTrx.getField(BankTrx.BANK_ACCT_ID).moveFieldToThis(recBankAcct.getField(BankAcct.ID));
+            recBankTrx.getField(BankTrx.AMOUNT).setValue(dAmount);
             ((BankTrx)recBankTrx).calcUSDAmounts(true);
-            double dAmountUSD = recBankTrx.getField(BankTrx.kAmountLocal).getValue();
-            recBankTrx.getField(BankTrx.kComments).moveFieldToThis(recPaymentRequest.getField(PaymentRequest.kComments));
-            if (recBankTrx.getField(BankTrx.kComments).isNull())
-                recBankTrx.getField(BankTrx.kComments).moveFieldToThis(recTrxStatus.getField(TrxStatus.kStatusDesc));
+            double dAmountUSD = recBankTrx.getField(BankTrx.AMOUNT_LOCAL).getValue();
+            recBankTrx.getField(BankTrx.COMMENTS).moveFieldToThis(recPaymentRequest.getField(PaymentRequest.COMMENTS));
+            if (recBankTrx.getField(BankTrx.COMMENTS).isNull())
+                recBankTrx.getField(BankTrx.COMMENTS).moveFieldToThis(recTrxStatus.getField(TrxStatus.STATUS_DESC));
             // Step 2 - Post it to the G/L
             // Step 2a - Create and write the bank transaction (in BankTrx).
             bSuccess = recBankTrx.onPostTrx();
@@ -336,9 +336,9 @@ public class PrintCheckPost extends BaseApTrxPostScreen
                 return bSuccess;
             // Step 2b - Post the transaction side of the distribution.
         //+ if (fldCrAccountID == null)
-            AcctDetail recAcctDetail = (AcctDetail)this.getRecord(AcctDetail.kAcctDetailFile);
-            AcctDetailDist recAcctDetailDist = (AcctDetailDist)this.getRecord(AcctDetailDist.kAcctDetailDistFile);
-            Period recPeriod = (Period)this.getRecord(Period.kPeriodFile);
+            AcctDetail recAcctDetail = (AcctDetail)this.getRecord(AcctDetail.ACCT_DETAIL_FILE);
+            AcctDetailDist recAcctDetailDist = (AcctDetailDist)this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+            Period recPeriod = (Period)this.getRecord(Period.PERIOD_FILE);
             bSuccess = recBankTrx.onPostTrxDist(fldCrAccountID, dAmountUSD, recTransactionType, recAcctDetail, recAcctDetailDist, recPeriod);
             if (!bSuccess)
             {       // Back out and void - bad trx.
@@ -359,15 +359,15 @@ public class PrintCheckPost extends BaseApTrxPostScreen
      */
     public boolean postDistTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
-        PaymentHistory recPaymentHistory = (PaymentHistory)this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        PaymentHistory recPaymentHistory = (PaymentHistory)this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
         ApTrx recApTrx = (ApTrx)this.getDistRecord();
         Record recPaymentRequest = this.getDetailRecord();
-        BaseField fldVendorID = recPaymentRequest.getField(PaymentRequest.kVendorID);
-        BankTrx recBankTrx = (BankTrx)this.getRecord(BankTrx.kBankTrxFile);
-        double dAmountUSD = -recBankTrx.getField(BankTrx.kAmountLocal).getValue();  // Must be positive.
-        BaseField fldTrxID = recBankTrx.getField(BankTrx.kID);
-        BaseField fldTrxDescID = ((TrxStatusField)recBankTrx.getField(BankTrx.kTrxStatusID)).getReference().getField(TrxStatus.kTrxDescID);
-        double dAmount = recPaymentRequest.getField(PaymentRequest.kAmount).getValue();
+        BaseField fldVendorID = recPaymentRequest.getField(PaymentRequest.VENDOR_ID);
+        BankTrx recBankTrx = (BankTrx)this.getRecord(BankTrx.BANK_TRX_FILE);
+        double dAmountUSD = -recBankTrx.getField(BankTrx.AMOUNT_LOCAL).getValue();  // Must be positive.
+        BaseField fldTrxID = recBankTrx.getField(BankTrx.ID);
+        BaseField fldTrxDescID = ((TrxStatusField)recBankTrx.getField(BankTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.TRX_DESC_ID);
+        double dAmount = recPaymentRequest.getField(PaymentRequest.AMOUNT).getValue();
         return recPaymentHistory.postDistTrx(this, recTransactionType, recApTrx, fldVendorID, fldTrxDescID, fldTrxID, dAmount, dAmountUSD);
     }
 

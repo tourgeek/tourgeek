@@ -98,11 +98,11 @@ public class BankTrxBatchScreen extends Screen
     {
         super.addListeners();
         
-        this.getMainRecord().getField(BankTrxBatch.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kBankAcctID)));
+        this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.BANK_ACCT_ID)));
         
-        this.getScreenRecord().getField(BankTrxScreenRecord.kUserID).moveFieldToThis(this.getMainRecord().getField(BankTrxBatch.kUserID));
-        this.getMainRecord().setKeyArea(BankTrxBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankTrxScreenRecord.kUserID), BankTrxBatch.kUserID, null, -1, null, -1));
+        this.getScreenRecord().getField(BankTrxScreenRecord.USER_ID).moveFieldToThis(this.getMainRecord().getField(BankTrxBatch.USER_ID));
+        this.getMainRecord().setKeyArea(BankTrxBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankTrxScreenRecord.USER_ID), BankTrxBatch.USER_ID, null, null, null, null));
     }
     /**
      * Add button(s) to the toolbar.
@@ -136,10 +136,10 @@ public class BankTrxBatchScreen extends Screen
         { // This is special logic to write the current empty record (with the default account id) first
             if (this.getMainRecord().getEditMode() == DBConstants.EDIT_ADD)
             {
-                if (this.getMainRecord().getField(BankTrxBatch.kBankAcctID).isNull())
+                if (this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID).isNull())
                     return false;
                 try {
-                    this.getMainRecord().getField(BankTrxBatch.kBankAcctID).setModified(true);
+                    this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID).setModified(true);
                     this.getMainRecord().writeAndRefresh();
                 } catch (DBException e) {
                     e.printStackTrace();

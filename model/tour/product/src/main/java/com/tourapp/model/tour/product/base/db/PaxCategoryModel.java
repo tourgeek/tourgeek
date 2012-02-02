@@ -8,7 +8,13 @@ import org.jbundle.model.db.*;
 
 public interface PaxCategoryModel extends Rec
 {
+
+    //public static final String ID = ID;
     public static final String DESCRIPTION = "Description";
+    public static final String ROOM_TYPE = "RoomType";
+    public static final String BASED_PAX_CAT_ID = "BasedPaxCatID";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final String SINGLE = "Single";
     public static final String DOUBLE = "Double";
     public static final String TRIPLE = "Triple";

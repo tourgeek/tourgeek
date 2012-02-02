@@ -34,7 +34,9 @@ public class AcctBatchScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String USER_ID = "UserID";
     public static final int kUserID = kScreenRecordLastField + 1;
+    public static final String RECURRING = "Recurring";
     public static final int kRecurring = kUserID + 1;
     public static final int kAcctBatchScreenRecordLastField = kRecurring;
     public static final int kAcctBatchScreenRecordFields = kRecurring - DBConstants.MAIN_FIELD + 1;

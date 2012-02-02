@@ -75,7 +75,7 @@ public class TourHeaderSelectHandler extends FileListener
             return errorCode;
         if (iChangeType == DBConstants.SELECT_TYPE)
         {   // Process the "Change field listener!)
-            errorCode = this.getOwner().getField(TourHeader.kID).handleFieldChanged(bDisplayOption, DBConstants.SCREEN_MOVE);
+            errorCode = this.getOwner().getField(TourHeader.ID).handleFieldChanged(bDisplayOption, DBConstants.SCREEN_MOVE);
         }
         return errorCode;
     }

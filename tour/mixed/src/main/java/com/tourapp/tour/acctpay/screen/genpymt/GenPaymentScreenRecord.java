@@ -34,13 +34,21 @@ public class GenPaymentScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PAYMENT_CODE_ID = "PaymentCodeID";
     public static final int kPaymentCodeID = kScreenRecordLastField + 1;
+    public static final String USE_CURRENT_SELECTION = "UseCurrentSelection";
     public static final int kUseCurrentSelection = kPaymentCodeID + 1;
+    public static final String BANK_ACCT_ID = "BankAcctID";
     public static final int kBankAcctID = kUseCurrentSelection + 1;
+    public static final String REPORT_DATE = "ReportDate";
     public static final int kReportDate = kBankAcctID + 1;
+    public static final String REPORT_TIME = "ReportTime";
     public static final int kReportTime = kReportDate + 1;
+    public static final String USER_ID = "UserID";
     public static final int kUserID = kReportTime + 1;
+    public static final String PAGE = "Page";
     public static final int kPage = kUserID + 1;
+    public static final String TOTAL = "Total";
     public static final int kTotal = kPage + 1;
     public static final int kGenPaymentScreenRecordLastField = kTotal;
     public static final int kGenPaymentScreenRecordFields = kTotal - DBConstants.MAIN_FIELD + 1;

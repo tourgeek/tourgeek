@@ -558,7 +558,7 @@ public class BookingTour extends BookingDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(BookingDetail.kProductTypeID, ProductType.TOUR_ID));
+        this.addListener(new SharedFileHandler(BookingDetail.PRODUCT_TYPE_ID, ProductType.TOUR_ID));
     }
     /**
      * AddMasterListeners Method.
@@ -568,8 +568,8 @@ public class BookingTour extends BookingDetail
         super.addMasterListeners();
         
         ChangePricingTypeHandler listener = null;
-        this.getField(BookingTour.kPricingTypeID).addListener(listener = new ChangePricingTypeHandler(null));
-        listener.setDependentStateListener(this.getField(BookingDetail.kStatusSummary).getListener(StatusHandler.class));
+        this.getField(BookingTour.PRICING_TYPE_ID).addListener(listener = new ChangePricingTypeHandler(null));
+        listener.setDependentStateListener(this.getField(BookingDetail.STATUS_SUMMARY).getListener(StatusHandler.class));
     }
     /**
      * Add the listeners to do the price and inventory lookups.
@@ -580,7 +580,7 @@ public class BookingTour extends BookingDetail
         super.addLookupListeners();
         
         BookingTourChangeHandler listener = null;
-        this.getField(BookingDetail.kInfoStatusID).addListener(listener = new BookingTourChangeHandler(null));
+        this.getField(BookingDetail.INFO_STATUS_ID).addListener(listener = new BookingTourChangeHandler(null));
         listener.setDependentStateListener(this.getListener(CopyDataHandler.class));  // Make sure this is disabled when all classes are disabled
         BookingTourDeleteHandler deleteHandler = null;
         this.addListener(deleteHandler = new BookingTourDeleteHandler(null));
@@ -596,9 +596,9 @@ public class BookingTour extends BookingDetail
         Product recTourHeader = this.getProduct();
         if (recTourHeader != null)
         {
-            int iNights = (int)recTourHeader.getField(TourHeader.kNights).getValue();
+            int iNights = (int)recTourHeader.getField(TourHeader.NIGHTS).getValue();
             if (iNights == 0)
-                iNights = (int)recTourHeader.getField(TourHeader.kDays).getValue();
+                iNights = (int)recTourHeader.getField(TourHeader.DAYS).getValue();
             calendar.setTime(startDate);
             calendar.add(Calendar.DATE, iNights);
             startDate = calendar.getTime();
@@ -638,24 +638,24 @@ public class BookingTour extends BookingDetail
     public int moveTourHeaderFields(TourSub recTourHeaderDetail, Tour recTour)
     {
         int iErrorCode = super.moveTourHeaderFields(recTourHeaderDetail, recTour);
-        if (!this.getField(BookingTour.kPricingTypeID).isModified())
+        if (!this.getField(BookingTour.PRICING_TYPE_ID).isModified())
         {   // Set the pricing type for this detail
             if (recTourHeaderDetail != null)
-                if (!recTourHeaderDetail.getField(TourHeaderDetail.kPricingTypeID).isNull())
-                    this.getField(BookingTour.kPricingTypeID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.kPricingTypeID),DBConstants.DISPLAY, DBConstants.INIT_MOVE );
+                if (!recTourHeaderDetail.getField(TourHeaderDetail.PRICING_TYPE_ID).isNull())
+                    this.getField(BookingTour.PRICING_TYPE_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.PRICING_TYPE_ID),DBConstants.DISPLAY, DBConstants.INIT_MOVE );
         }
-        if (this.getField(BookingTour.kPricingTypeID).isNull())
-            if (!this.getField(BookingDetail.kProductID).isNull())
+        if (this.getField(BookingTour.PRICING_TYPE_ID).isNull())
+            if (!this.getField(BookingDetail.PRODUCT_ID).isNull())
         {
-             Record recTourHeader = ((ReferenceField)this.getField(BookingDetail.kProductID)).getReference();
+             Record recTourHeader = ((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReference();
              if (recTourHeader != null)
              {
-                 TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReference();
+                 TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
                  if (recTourClass != null)
                      if (recTourClass.getEditMode() == DBConstants.EDIT_CURRENT)
                      {
                          recTourClass.fixBasedFields();
-                         this.getField(BookingTour.kPricingTypeID).moveFieldToThis(recTourClass.getField(TourClass.kTourPricingTypeID));                         
+                         this.getField(BookingTour.PRICING_TYPE_ID).moveFieldToThis(recTourClass.getField(TourClass.TOUR_PRICING_TYPE_ID));                         
                      }
              }
         }
@@ -672,7 +672,7 @@ public class BookingTour extends BookingDetail
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
         return super.checkRequiredParams(iStatusType);
     }

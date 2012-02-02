@@ -164,7 +164,7 @@ public class TourHeaderInventory extends Inventory
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(Inventory.kProductTypeID, ProductType.TOUR_ID));
+        this.addListener(new SharedFileHandler(Inventory.PRODUCT_TYPE_ID, ProductType.TOUR_ID));
     }
 
 }

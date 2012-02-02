@@ -57,6 +57,30 @@ public class SetAgencyCommHandler extends FileListener
         super.init(null);
     }
     /**
+     * Set the object that owns this listener.
+     * @owner The object that this listener is being added to (if null, this listener is being removed).
+     */
+    public void setOwner(ListenerOwner owner)
+    {
+        super.setOwner(owner);
+        if (owner != null)
+        {
+            m_pBookingComm.addListener(new FieldRemoveBOnCloseHandler(this));
+            m_pAmAffil = new Affiliation(null);   // Make sure close in screen change
+            FileListener pSecondary = new DisplayReadHandler(Profile.AFFILIATION_ID, m_pAmAffil, Affiliation.ID);
+            Record pAmAgcy = this.getOwner();
+            pAmAgcy.addListener(pSecondary);
+        }
+        else
+        {
+            if (m_pAmAffil != null)
+            {
+                m_pAmAffil.free();
+                m_pAmAffil = null;
+            }
+        }
+    }
+    /**
      * Called when a new blank record is required for the table/query.
      * @param bDisplayOption If true, display any changes.
      */
@@ -72,31 +96,7 @@ public class SetAgencyCommHandler extends FileListener
     public void doValidRecord(boolean bDisplayOption)
     {
         super.doValidRecord(bDisplayOption);
-        m_pBookingComm.moveFieldToThis(m_pAmAffil.getField(Affiliation.kAgentComm), bDisplayOption, DBConstants.SCREEN_MOVE);
-    }
-    /**
-     * Set the object that owns this listener.
-     * @owner The object that this listener is being added to (if null, this listener is being removed).
-     */
-    public void setOwner(ListenerOwner owner)
-    {
-        super.setOwner(owner);
-        if (owner != null)
-        {
-            m_pBookingComm.addListener(new FieldRemoveBOnCloseHandler(this));
-            m_pAmAffil = new Affiliation(null);   // Make sure close in screen change
-            FileListener pSecondary = new DisplayReadHandler(Profile.kAffiliationID, m_pAmAffil, Affiliation.kID);
-            Record pAmAgcy = this.getOwner();
-            pAmAgcy.addListener(pSecondary);
-        }
-        else
-        {
-            if (m_pAmAffil != null)
-            {
-                m_pAmAffil.free();
-                m_pAmAffil = null;
-            }
-        }
+        m_pBookingComm.moveFieldToThis(m_pAmAffil.getField(Affiliation.AGENT_COMM), bDisplayOption, DBConstants.SCREEN_MOVE);
     }
 
 }

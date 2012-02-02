@@ -60,7 +60,7 @@ public class UpdateArcHandler extends UpdateApTrxHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(ArcReportScreenRecord.kSummaryAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(ArcReportScreenRecord.SUMMARY_ACCOUNT_ID);
     }
     /**
      * Get the Debit Account field.
@@ -70,9 +70,9 @@ public class UpdateArcHandler extends UpdateApTrxHandler
     {
         ReferenceField fldAccount = null;
         if (this.getProductCategory() != null)
-            fldAccount = (ReferenceField)this.getProductCategory().getField(ProductCategory.kPPTicAccountID);
+            fldAccount = (ReferenceField)this.getProductCategory().getField(ProductCategory.PP_TIC_ACCOUNT_ID);
         if (fldAccount == null)
-            fldAccount = (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.kApControlFile).getField(ApControl.kPPTicAccountID);
+            fldAccount = (ReferenceField)this.getOwner().getRecordOwner().getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.PP_TIC_ACCOUNT_ID);
         return fldAccount;
     }
     /**
@@ -82,7 +82,7 @@ public class UpdateArcHandler extends UpdateApTrxHandler
      */
     public double getTrxAmount(BaseField fldTypicalBalance)
     {
-        return this.getOwner().getField(TicketTrx.kNetFare).getValue();
+        return this.getOwner().getField(TicketTrx.NET_FARE).getValue();
     }
 
 }

@@ -30,8 +30,11 @@ public class CityScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String DESCRIPTION = "Description";
     public static final int kDescription = kScreenRecordLastField + 1;
+    public static final String COUNTRY_ID = "CountryID";
     public static final int kCountryID = kDescription + 1;
+    public static final String STATE_ID = "StateID";
     public static final int kStateID = kCountryID + 1;
     public static final int kCityScreenRecordLastField = kStateID;
     public static final int kCityScreenRecordFields = kStateID - DBConstants.MAIN_FIELD + 1;

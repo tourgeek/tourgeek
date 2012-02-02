@@ -15,6 +15,8 @@ public class ProductPricing extends FieldList
     implements ProductPricingModel
 {
 
+    //public static final String ID = ID;
+
     public ProductPricing()
     {
         super();

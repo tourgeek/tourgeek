@@ -69,16 +69,16 @@ public class MoveEstimateHandler extends FileListener
         if (m_iDepartureEstimate == -1)
         {
             TrxStatus recTrxStatus = new TrxStatus(this.getOwner().findRecordOwner());  // Rarely, but if it doesn't exist in the screen, add it!
-            m_iDepartureEstimate = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_ESTIMATE);
-            m_iDepartureEstimateManual = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_EST_MANUAL);
+            m_iDepartureEstimate = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEP_ESTIMATE);
+            m_iDepartureEstimateManual = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEPARTURE_EST_MANUAL);
             recTrxStatus.free();
         }
-        if ((recApTrx.getField(ApTrx.kTrxStatusID).getValue() == m_iDepartureEstimate)
-            || (recApTrx.getField(ApTrx.kTrxStatusID).getValue() == m_iDepartureEstimateManual))
+        if ((recApTrx.getField(ApTrx.TRX_STATUS_ID).getValue() == m_iDepartureEstimate)
+            || (recApTrx.getField(ApTrx.TRX_STATUS_ID).getValue() == m_iDepartureEstimateManual))
         {
-            recApTrx.getField(ApTrx.kInvoiceAmount).moveFieldToThis(recApTrx.getField(ApTrx.kDepartureEstimate));
-            recApTrx.getField(ApTrx.kInvoiceBalance).moveFieldToThis(recApTrx.getField(ApTrx.kDepartureEstimate));
-            recApTrx.getField(ApTrx.kInvoiceBalanceLocal).moveFieldToThis(recApTrx.getField(ApTrx.kDepartureEstimateLocal));
+            recApTrx.getField(ApTrx.INVOICE_AMOUNT).moveFieldToThis(recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE));
+            recApTrx.getField(ApTrx.INVOICE_BALANCE).moveFieldToThis(recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE));
+            recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).moveFieldToThis(recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL));
         }
     }
 

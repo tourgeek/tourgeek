@@ -81,7 +81,7 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
      */
     public Record openHeaderRecord()
     {
-        String strProductType = this.getProperty(Product.kProductFile);
+        String strProductType = this.getProperty(Product.PRODUCT_FILE);
         return Product.getProductRecord(strProductType, this);
     }
     /**
@@ -108,13 +108,13 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
     {
         super.addListeners();
         SubFileFilter listener = null;
-        this.getMainRecord().addListener(listener = new SubFileFilter(this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kStartDate), BookingDetail.kDetailDate, null, -1, null, -1));
+        this.getMainRecord().addListener(listener = new SubFileFilter(this.getScreenRecord().getField(ProductScreenRecord.START_DATE), BookingDetail.DETAIL_DATE, null, null, null, null));
         listener.setEndKey(false);
         
-        if (this.getScreenRecord().getField(ProductScreenRecord.kStartDate).isNull())
-            this.getScreenRecord().getField(ProductScreenRecord.kStartDate).setValue(DateTimeField.currentTime(), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if (this.getScreenRecord().getField(ProductScreenRecord.START_DATE).isNull())
+            this.getScreenRecord().getField(ProductScreenRecord.START_DATE).setValue(DateTimeField.currentTime(), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kStartDate).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.START_DATE).addListener(new FieldReSelectHandler(this));
         this.setAppending(false);
         this.setEditing(false);
     }
@@ -124,11 +124,11 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
     public void addSubFileFilter()
     {
         // Override this if it is not correct.
-        this.getMainRecord().setKeyArea(BookingDetail.kProductIDKey);
+        this.getMainRecord().setKeyArea(BookingDetail.PRODUCT_ID_KEY);
         Product recProduct = (Product)this.getHeaderRecord();
-        ProductType recProductType = (ProductType)this.getRecord(ProductType.kProductTypeFile);
+        ProductType recProductType = (ProductType)this.getRecord(ProductType.PRODUCT_TYPE_FILE);
         recProductType.getProductTypeID(recProduct);
-        this.getMainRecord().addListener(new SubFileFilter(recProductType.getField(ProductType.kID), BookingDetail.kProductTypeID, this.getHeaderRecord().getField(Product.kID), BookingDetail.kProductID, null, -1));
+        this.getMainRecord().addListener(new SubFileFilter(recProductType.getField(ProductType.ID), BookingDetail.PRODUCT_TYPE_ID, this.getHeaderRecord().getField(Product.ID), BookingDetail.PRODUCT_ID, null, null));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -137,7 +137,7 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
     public ToolScreen addToolbars()
     {
         ToolScreen screen = super.addToolbars();
-        this.getScreenRecord().getField(ProductScreenRecord.kStartDate).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.START_DATE).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
         return screen;
     }
     /**
@@ -149,7 +149,7 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
         this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kDetailDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kBookingID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        ((ReferenceField)this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kBookingID)).getReferenceRecord().getField(Booking.kBookingStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        ((ReferenceField)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.BOOKING_ID)).getReferenceRecord().getField(Booking.BOOKING_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.
@@ -165,9 +165,9 @@ public class ProductBookingDetailGridScreen extends ProductDetailGridScreen
     public String getScreenURL()
     {
         String strURL = super.getScreenURL();
-        if (this.getRecord(ProductType.kProductTypeFile).getEditMode() == DBConstants.EDIT_CURRENT)
+        if (this.getRecord(ProductType.PRODUCT_TYPE_FILE).getEditMode() == DBConstants.EDIT_CURRENT)
         {   // Always
-            strURL = Utility.addURLParam(strURL, Product.kProductFile, this.getHeaderRecord().getTableNames(false));
+            strURL = Utility.addURLParam(strURL, Product.PRODUCT_FILE, this.getHeaderRecord().getTableNames(false));
         }
         return strURL;
     }

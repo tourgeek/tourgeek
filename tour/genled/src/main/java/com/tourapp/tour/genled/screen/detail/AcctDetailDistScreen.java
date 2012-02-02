@@ -87,10 +87,10 @@ public class AcctDetailDistScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(AcctDetailDist.kAcctDetailID).addListener(new ReadSecondaryHandler(this.getRecord(AcctDetail.kAcctDetailFile)));
+        this.getMainRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).addListener(new ReadSecondaryHandler(this.getRecord(AcctDetail.ACCT_DETAIL_FILE)));
         this.setEditing(false);
-        this.getRecord(AcctDetailDist.kAcctDetailDistFile).getField(AcctDetailDist.kAcctDetailID).setEnabled(true);
-        this.getRecord(AcctDetailDist.kAcctDetailDistFile).getField(AcctDetailDist.kTrxID).setEnabled(true);
+        this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE).getField(AcctDetailDist.ACCT_DETAIL_ID).setEnabled(true);
+        this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE).getField(AcctDetailDist.TRX_ID).setEnabled(true);
     }
     /**
      * Add button(s) to the toolbar.
@@ -102,7 +102,7 @@ public class AcctDetailDistScreen extends Screen
             strGroup = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strGroup);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strGroup, AcctDetailDist.DIST_GROUP, AcctDetailDist.DIST_GROUP, null);
-        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.kTrxID), ScreenConstants.DEFAULT_DISPLAY);
+        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Set up all the screen fields.
@@ -117,7 +117,7 @@ public class AcctDetailDistScreen extends Screen
         this.getRecord(AcctDetailDist.kAcctDetailDistFile).getField(AcctDetailDist.kTrxID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kComments).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kSource).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(AcctDetailDist.kAcctDetailDistFile).getField(AcctDetailDist.kAcctDetailID), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(AcctDetail.kAcctDetailFile));
+        new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE).getField(AcctDetailDist.ACCT_DETAIL_ID), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(AcctDetail.ACCT_DETAIL_FILE));
         this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
@@ -134,7 +134,7 @@ public class AcctDetailDistScreen extends Screen
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
         if (strCommand.equalsIgnoreCase(MenuConstants.FORMDETAIL))
-            return (this.onForm(this.getRecord(AcctDetail.kAcctDetailFile), AcctDetail.ACCT_DIST_GRID_SCREEN, true, iCommandOptions, null) != null);
+            return (this.onForm(this.getRecord(AcctDetail.ACCT_DETAIL_FILE), AcctDetail.ACCT_DIST_GRID_SCREEN, true, iCommandOptions, null) != null);
         else
             return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }

@@ -83,10 +83,10 @@ public class SetCrDrTypeHandler extends FieldListener
                                   recordOwner.removeRecord(m_recTrxStatus);
         }
         if (this.getOwner().getValue() < 0)
-            m_recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.CREDIT_MEMO);
+            m_recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.CREDIT_MEMO);
         else
-            m_recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.DEBIT_MEMO);
-        this.getOwner().getRecord().getField(ArTrx.kTrxStatusID).moveFieldToThis(m_recTrxStatus.getField(TrxStatus.kID));
+            m_recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.DEBIT_MEMO);
+        this.getOwner().getRecord().getField(ArTrx.TRX_STATUS_ID).moveFieldToThis(m_recTrxStatus.getField(TrxStatus.ID));
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 

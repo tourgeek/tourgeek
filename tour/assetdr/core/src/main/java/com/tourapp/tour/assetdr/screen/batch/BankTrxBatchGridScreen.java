@@ -96,11 +96,11 @@ public class BankTrxBatchGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        Record recAssetDrControl = this.getRecord(AssetDrControl.kAssetDrControlFile);
-        this.getMainRecord().getField(BankTrxBatch.kBankAcctID).addListener(new InitFieldHandler(recAssetDrControl.getField(AssetDrControl.kBankAcctID)));
-        this.getMainRecord().setKeyArea(BankTrxBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankTrxScreenRecord.kUserID), BankTrxBatch.kUserID, null, -1, null, -1));
-        this.getScreenRecord().getField(BankTrxScreenRecord.kUserID).addListener(new FieldReSelectHandler(this));
+        Record recAssetDrControl = this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE);
+        this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID).addListener(new InitFieldHandler(recAssetDrControl.getField(AssetDrControl.BANK_ACCT_ID)));
+        this.getMainRecord().setKeyArea(BankTrxBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankTrxScreenRecord.USER_ID), BankTrxBatch.USER_ID, null, null, null, null));
+        this.getScreenRecord().getField(BankTrxScreenRecord.USER_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add button(s) to the toolbar.
@@ -110,7 +110,7 @@ public class BankTrxBatchGridScreen extends GridScreen
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.POST, MenuConstants.POST, MenuConstants.POST, null);
         
-        this.getScreenRecord().getField(BankTrxScreenRecord.kUserID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(BankTrxScreenRecord.USER_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.
@@ -145,12 +145,12 @@ public class BankTrxBatchGridScreen extends GridScreen
         { // This is special logic to write the current empty record (with the default account id) first
             if (this.getMainRecord().getEditMode() == DBConstants.EDIT_ADD)
             {
-                if (this.getMainRecord().getField(BankTrxBatch.kBankAcctID).isNull())
+                if (this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID).isNull())
                     return false;
                 if (this.getScreenFieldView().getSelectedRow() == -1)
                     return false;
                 try {
-                    this.getMainRecord().getField(BankTrxBatch.kBankAcctID).setModified(true);
+                    this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID).setModified(true);
                     this.getMainRecord().writeAndRefresh();
                 } catch (DBException e) {
                     e.printStackTrace();

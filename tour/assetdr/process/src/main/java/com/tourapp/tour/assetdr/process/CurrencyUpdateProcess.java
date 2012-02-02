@@ -84,13 +84,13 @@ public class CurrencyUpdateProcess extends BaseProcess
             while (record.hasNext())
             {
                 record.next();
-                if (record.getField(Currencys.kDeleted).getState() == true)
+                if (record.getField(Currencys.DELETED).getState() == true)
                     continue;
                 record.edit();
                 
-                double dRate = this.getConversionRate(record.getField(Currencys.kCurrencyCode).toString());
+                double dRate = this.getConversionRate(record.getField(Currencys.CURRENCY_CODE).toString());
                 if (dRate != 0.0)
-                    record.getField(Currencys.kLastRate).setValue(1 / dRate);
+                    record.getField(Currencys.LAST_RATE).setValue(1 / dRate);
                 
                 record.set();
             }

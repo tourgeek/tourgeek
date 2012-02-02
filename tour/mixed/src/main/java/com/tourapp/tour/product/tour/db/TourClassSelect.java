@@ -66,7 +66,7 @@ public class TourClassSelect extends TourClassField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), TourClass.kClassNameKey, TourClass.kClassName, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), TourClass.CLASS_NAME_KEY, TourClass.CLASS_NAME, true, true);
     }
 
 }

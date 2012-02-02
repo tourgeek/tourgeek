@@ -170,7 +170,7 @@ public class AssetDrControl extends ControlRecord
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        ((TrxStatusField)this.getField(AssetDrControl.kTrxStatusID)).setDesc(BankTrx.kBankTrxFile);
+        ((TrxStatusField)this.getField(AssetDrControl.TRX_STATUS_ID)).setDesc(BankTrx.BANK_TRX_FILE);
     }
 
 }

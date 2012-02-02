@@ -74,7 +74,7 @@ public class CalcEmpTaxesHandler extends FileListener
     {
         super.doValidRecord(bDisplayOption);
         double checkNo = 1234;
-        ((NumberField)this.getOwner().getField(TimeTrx.kPrCheckNum)).setValue(checkNo);
+        ((NumberField)this.getOwner().getField(TimeTrx.PR_CHECK_NUM)).setValue(checkNo);
         checkNo++;
         ((TimeTrx)this.getOwner()).calcPay(m_QueryInfo, m_Employee, m_PrDedEarn, m_PrTaxRates, m_EmpControl);
         //?   this.getOwner().UpdateQuery();

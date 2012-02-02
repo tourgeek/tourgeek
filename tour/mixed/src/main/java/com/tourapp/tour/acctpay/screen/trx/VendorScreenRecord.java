@@ -33,16 +33,27 @@ public class VendorScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String VENDOR_KEY = "VendorKey";
     public static final int kVendorKey = kScreenRecordLastField + 1;
+    public static final String VENDOR_NAME = "VendorName";
     public static final int kVendorName = kVendorKey + 1;
+    public static final String VENDOR_COUNTRY = "VendorCountry";
     public static final int kVendorCountry = kVendorName + 1;
+    public static final String BALANCE = "Balance";
     public static final int kBalance = kVendorCountry + 1;
+    public static final String VENDOR_ID = "VendorID";
     public static final int kVendorID = kBalance + 1;
+    public static final String TOUR_ID = "TourID";
     public static final int kTourID = kVendorID + 1;
+    public static final String TOTAL = "Total";
     public static final int kTotal = kTourID + 1;
+    public static final String SELECT_FLAG = "SelectFlag";
     public static final int kSelectFlag = kTotal + 1;
+    public static final String TOTAL_SELECTED = "TotalSelected";
     public static final int kTotalSelected = kSelectFlag + 1;
+    public static final String DISPLAY_TYPE = "DisplayType";
     public static final int kDisplayType = kTotalSelected + 1;
+    public static final String DISPLAY_ACTIVE = "DisplayActive";
     public static final int kDisplayActive = kDisplayType + 1;
     public static final int kVendorScreenRecordLastField = kDisplayActive;
     public static final int kVendorScreenRecordFields = kDisplayActive - DBConstants.MAIN_FIELD + 1;

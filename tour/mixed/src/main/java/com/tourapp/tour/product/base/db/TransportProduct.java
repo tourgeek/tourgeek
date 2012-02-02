@@ -133,15 +133,15 @@ public class TransportProduct extends Product
     {
         super.addScreenListeners(screen);
         
-        Record recCity = ((ReferenceField)this.getField(TransportProduct.kCityID)).getReferenceRecord();
-        recCity.getField(City.kCityCode).addListener(new MainReadOnlyHandler(City.kCityCodeKey));
-        this.getField(TransportProduct.kCityID).addListener(new MoveOnChangeHandler(this.getField(TransportProduct.kCityCode), recCity.getField(City.kCityCode)));
-        this.getField(TransportProduct.kCityCode).addListener(new MoveOnChangeHandler(recCity.getField(City.kCityCode), this.getField(TransportProduct.kCityCode)));
+        Record recCity = ((ReferenceField)this.getField(TransportProduct.CITY_ID)).getReferenceRecord();
+        recCity.getField(City.CITY_CODE).addListener(new MainReadOnlyHandler(City.CITY_CODE_KEY));
+        this.getField(TransportProduct.CITY_ID).addListener(new MoveOnChangeHandler(this.getField(TransportProduct.CITY_CODE), recCity.getField(City.CITY_CODE)));
+        this.getField(TransportProduct.CITY_CODE).addListener(new MoveOnChangeHandler(recCity.getField(City.CITY_CODE), this.getField(TransportProduct.CITY_CODE)));
         
-        recCity = ((ReferenceField)this.getField(TransportProduct.kToCityID)).getReferenceRecord();
-        recCity.getField(City.kCityCode).addListener(new MainReadOnlyHandler(City.kCityCodeKey));
-        this.getField(TransportProduct.kToCityID).addListener(new MoveOnChangeHandler(this.getField(TransportProduct.kToCityCode), recCity.getField(City.kCityCode)));
-        this.getField(TransportProduct.kToCityCode).addListener(new MoveOnChangeHandler(recCity.getField(City.kCityCode), this.getField(TransportProduct.kToCityCode)));
+        recCity = ((ReferenceField)this.getField(TransportProduct.TO_CITY_ID)).getReferenceRecord();
+        recCity.getField(City.CITY_CODE).addListener(new MainReadOnlyHandler(City.CITY_CODE_KEY));
+        this.getField(TransportProduct.TO_CITY_ID).addListener(new MoveOnChangeHandler(this.getField(TransportProduct.TO_CITY_CODE), recCity.getField(City.CITY_CODE)));
+        this.getField(TransportProduct.TO_CITY_CODE).addListener(new MoveOnChangeHandler(recCity.getField(City.CITY_CODE), this.getField(TransportProduct.TO_CITY_CODE)));
     }
 
 }

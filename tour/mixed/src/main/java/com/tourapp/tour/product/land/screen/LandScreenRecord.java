@@ -40,6 +40,7 @@ public class LandScreenRecord extends ProductScreenRecord
     //public static final int kEndDate = kEndDate;
     //public static final int kBlocked = kBlocked;
     //public static final int kOversell = kOversell;
+    public static final String LAND_CLASS_ID = "LandClassID";
     public static final int kLandClassID = kProductScreenRecordLastField + 1;
     public static final int kLandScreenRecordLastField = kLandClassID;
     public static final int kLandScreenRecordFields = kLandClassID - DBConstants.MAIN_FIELD + 1;

@@ -33,13 +33,21 @@ public class BookingItineraryScreenRecord extends BookingDetailScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String MESSAGE_PROCESS_INFO_ID = "MessageProcessInfoID";
     public static final int kMessageProcessInfoID = kBookingDetailScreenRecordLastField + 1;
+    public static final String MESSAGE_TRANSPORT_ID = "MessageTransportID";
     public static final int kMessageTransportID = kMessageProcessInfoID + 1;
+    public static final String ITINERARY_STYLE_SHEET = "ItineraryStyleSheet";
     public static final int kItineraryStyleSheet = kMessageTransportID + 1;
+    public static final String ACTION_TARGET = "ActionTarget";
     public static final int kActionTarget = kItineraryStyleSheet + 1;
+    public static final String ITINERARY_TEXT = "ItineraryText";
     public static final int kItineraryText = kActionTarget + 1;
+    public static final String ITINERARY_PROPERTIES = "ItineraryProperties";
     public static final int kItineraryProperties = kItineraryText + 1;
+    public static final String REQUEST_TYPE_ID = "RequestTypeID";
     public static final int kRequestTypeID = kItineraryProperties + 1;
+    public static final String CONTACT_TYPE_ID = "ContactTypeID";
     public static final int kContactTypeID = kRequestTypeID + 1;
     public static final int kBookingItineraryScreenRecordLastField = kContactTypeID;
     public static final int kBookingItineraryScreenRecordFields = kContactTypeID - DBConstants.MAIN_FIELD + 1;

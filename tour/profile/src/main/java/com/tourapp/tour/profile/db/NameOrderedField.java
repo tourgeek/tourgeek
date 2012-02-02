@@ -66,7 +66,7 @@ public class NameOrderedField extends StringField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        converter = new FirstMLastConverter((Converter)converter, Profile.kNamePrefix, Profile.kNameFirst, Profile.kNameMiddle, Profile.kNameSur, Profile.kNameSuffix, Profile.kNameTitle);
+        converter = new FirstMLastConverter((Converter)converter, Profile.NAME_PREFIX, Profile.NAME_FIRST, Profile.NAME_MIDDLE, Profile.NAME_SUR, Profile.NAME_SUFFIX, Profile.NAME_TITLE);
         return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 

@@ -110,8 +110,8 @@ public class AirMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Air.kAirFile) != null)
-                    return (Air)recordOwner.getRecord(Air.kAirFile);
+                if (recordOwner.getRecord(Air.AIR_FILE) != null)
+                    return (Air)recordOwner.getRecord(Air.AIR_FILE);
         return new Air(recordOwner);
     }
     /**

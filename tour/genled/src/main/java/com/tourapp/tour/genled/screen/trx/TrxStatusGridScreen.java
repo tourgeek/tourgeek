@@ -103,9 +103,9 @@ public class TrxStatusGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(TrxStatus.kTrxDescIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxDescID), TrxStatus.kTrxDescID, null, -1, null, -1));
-        this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxDescID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().setKeyArea(TrxStatus.TRX_DESC_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID), TrxStatus.TRX_DESC_ID, null, null, null, null));
+        this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID).addListener(new FieldReSelectHandler(this));
         
         this.getMainRecord().addListener(new UpdateTrxStatusHandler(null, null));
     }
@@ -115,22 +115,22 @@ public class TrxStatusGridScreen extends DetailGridScreen
     public void setupSFields()
     {
         Record recTrxStatus = this.getMainRecord();
-        Record recTrxDesc = this.getRecord(TrxDesc.kTrxDescFile);
+        Record recTrxDesc = this.getRecord(TrxDesc.TRX_DESC_FILE);
         Record recScreenRecord = this.getScreenRecord();
         
-        ((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.kTrxDescID)).setReferenceRecord(recTrxDesc);
-        if (!recTrxDesc.getField(TrxDesc.kID).isNull())
-            recScreenRecord.getField(TrxStatusScreenRecord.kTrxDescID).moveFieldToThis(recTrxDesc.getField(TrxDesc.kID));
+        ((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_DESC_ID)).setReferenceRecord(recTrxDesc);
+        if (!recTrxDesc.getField(TrxDesc.ID).isNull())
+            recScreenRecord.getField(TrxStatusScreenRecord.TRX_DESC_ID).moveFieldToThis(recTrxDesc.getField(TrxDesc.ID));
         else
         {
-            ReferenceField field = (ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.kTrxDescID);
-            field.moveFieldToThis(recTrxStatus.getField(TrxStatus.kTrxDescID));
+            ReferenceField field = (ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_DESC_ID);
+            field.moveFieldToThis(recTrxStatus.getField(TrxStatus.TRX_DESC_ID));
             if (field.isNull())
                 if (this.getProperty(DBParams.HEADER_OBJECT_ID) != null)
                     field.setString(this.getProperty(DBParams.HEADER_OBJECT_ID));
             field.getReference();    // Read the record
         }
-        ((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.kTrxSystemID)).getReferenceRecord(this);
+        ((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_SYSTEM_ID)).getReferenceRecord(this);
         this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kStatusCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kStatusDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kPreferredSign).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

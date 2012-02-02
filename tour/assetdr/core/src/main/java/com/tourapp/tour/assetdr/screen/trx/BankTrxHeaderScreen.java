@@ -69,10 +69,10 @@ public class BankTrxHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kBankAcctID).setEnabled(true);
-        this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxNumber).setEnabled(true);
-        this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kID).setEnabled(true);
-        this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxNumber).addListener(new MainFieldHandler(BankTrx.kTrxNumberKey));
+        this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.BANK_ACCT_ID).setEnabled(true);
+        this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.TRX_NUMBER).setEnabled(true);
+        this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.ID).setEnabled(true);
+        this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.TRX_NUMBER).addListener(new MainFieldHandler(BankTrx.TRX_NUMBER_KEY));
     }
     /**
      * SetupSFields Method.
@@ -81,7 +81,7 @@ public class BankTrxHeaderScreen extends HeaderScreen
     {
         this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxNumber).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
+        ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.ID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
         screenField.setRequestFocusEnabled(false);
         this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -107,10 +107,10 @@ public class BankTrxHeaderScreen extends HeaderScreen
             boolean bReadCurrentRecord = false;
             int iDocMode = ScreenConstants.DISPLAY_MODE | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();
-            if (!this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kBankAcctID).isNull())
-                properties.put(DBParams.HEADER_OBJECT_ID, this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kBankAcctID).toString());
+            if (!this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.BANK_ACCT_ID).isNull())
+                properties.put(DBParams.HEADER_OBJECT_ID, this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.BANK_ACCT_ID).toString());
         
-            return (this.onForm(this.getRecord(BankTrx.kBankTrxFile), iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
+            return (this.onForm(this.getRecord(BankTrx.BANK_TRX_FILE), iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
         }
         return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }

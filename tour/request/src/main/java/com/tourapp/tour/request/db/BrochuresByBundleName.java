@@ -104,23 +104,23 @@ public class BrochuresByBundleName extends QueryRecord
      */
     public void selectFields()
     {
-        BundleDetail pAmBrocDetail = (BundleDetail)this.getRecord(BundleDetail.kBundleDetailFile);
-        Bundle pAmBrocBundle = (Bundle)this.getRecord(Bundle.kBundleFile);
-        this.setGridFile(pAmBrocBundle, Bundle.kDescriptionKey);
+        BundleDetail pAmBrocDetail = (BundleDetail)this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE);
+        Bundle pAmBrocBundle = (Bundle)this.getRecord(Bundle.BUNDLE_FILE);
+        this.setGridFile(pAmBrocBundle, Bundle.DESCRIPTION_KEY);
         
         this.setSelected(false);    // de-select all
         super.selectFields();
-        this.getField(Bundle.kBundleFile, Bundle.kID).setSelected(true);
-        this.getField(Bundle.kBundleFile, Bundle.kDescription).setSelected(true);
-        this.getField(Brochure.kBrochureFile, Brochure.kDescription).setSelected(true);
+        this.getField(Bundle.BUNDLE_FILE, Bundle.ID).setSelected(true);
+        this.getField(Bundle.BUNDLE_FILE, Bundle.DESCRIPTION).setSelected(true);
+        this.getField(Brochure.BROCHURE_FILE, Brochure.DESCRIPTION).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_INNER, this.getRecord(Bundle.kBundleFile), this.getRecord(BundleDetail.kBundleDetailFile), Bundle.kID, BundleDetail.kBundleID);
-        this.addRelationship(DBConstants.LEFT_INNER, this.getRecord(BundleDetail.kBundleDetailFile), this.getRecord(Brochure.kBrochureFile), BundleDetail.kBrochureID, Brochure.kID);
+        this.addRelationship(DBConstants.LEFT_INNER, this.getRecord(Bundle.BUNDLE_FILE), this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE), Bundle.ID, BundleDetail.BUNDLE_ID);
+        this.addRelationship(DBConstants.LEFT_INNER, this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE), this.getRecord(Brochure.BROCHURE_FILE), BundleDetail.BROCHURE_ID, Brochure.ID);
     }
 
 }

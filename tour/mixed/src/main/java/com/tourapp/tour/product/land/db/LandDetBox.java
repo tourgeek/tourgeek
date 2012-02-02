@@ -75,7 +75,7 @@ public class LandDetBox extends SButtonBox
      */
     public int controlToField()
     {
-        Land query = (Land)this.getParentScreen().getRecord(Land.kLandFile);
+        Land query = (Land)this.getParentScreen().getRecord(Land.LAND_FILE);
         //?CQBkLandDet screen2 = new CQBkLandDet(null, query);
         //?screen2.makeWindow();
         return DBConstants.NORMAL_RETURN;

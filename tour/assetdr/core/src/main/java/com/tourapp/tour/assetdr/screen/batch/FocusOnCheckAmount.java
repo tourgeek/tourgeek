@@ -60,14 +60,14 @@ public class FocusOnCheckAmount extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        ReferenceField fldType = (ReferenceField)this.getOwner().getRecord().getField(BankTrxBatchDetail.kTrxStatusID);
+        ReferenceField fldType = (ReferenceField)this.getOwner().getRecord().getField(BankTrxBatchDetail.TRX_STATUS_ID);
         Record recTrxStatus = fldType.getReference();
         if (recTrxStatus != null)
         {
-            String strSignHint = recTrxStatus.getField(TrxStatus.kPreferredSign).toString();
+            String strSignHint = recTrxStatus.getField(TrxStatus.PREFERRED_SIGN).toString();
             if (PreferredSignField.POSITIVE.equals(strSignHint))
             {
-                BaseField fldAmount = this.getOwner().getRecord().getField(BankTrxBatchDetail.kAmount);
+                BaseField fldAmount = this.getOwner().getRecord().getField(BankTrxBatchDetail.AMOUNT);
                 ScreenField screenField = (ScreenField)fldAmount.getComponent(1);
                 screenField.requestFocus();
             }

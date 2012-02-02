@@ -52,16 +52,16 @@ public class ReadLinkedTrxHandler extends ReadSecondaryHandler
      */
     public void init(Record record)
     {
-        super.init(null, record, DBConstants.MAIN_KEY_AREA, true, false, true);
+        super.init(null, record, -1, null, true, false, true);
     }
     /**
      * FieldChanged Method.
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        Record recTrxDesc = ((ReferenceField)this.getOwner().getRecord().getField(PaymentHistory.kLinkedTrxDescID)).getReference();
+        Record recTrxDesc = ((ReferenceField)this.getOwner().getRecord().getField(PaymentHistory.LINKED_TRX_DESC_ID)).getReference();
         if (recTrxDesc != null)
-            if (BankTrx.kBankTrxFile.equalsIgnoreCase(recTrxDesc.getField(TrxDesc.kDescCode).toString()))
+            if (BankTrx.BANK_TRX_FILE.equalsIgnoreCase(recTrxDesc.getField(TrxDesc.DESC_CODE).toString()))
                 return super.fieldChanged(bDisplayOption, iMoveMode);
         try {
             m_record.addNew();

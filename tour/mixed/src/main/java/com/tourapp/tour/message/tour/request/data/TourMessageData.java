@@ -74,8 +74,8 @@ public class TourMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(TourHeader.kTourHeaderFile) != null)
-                    return (TourHeader)recordOwner.getRecord(TourHeader.kTourHeaderFile);
+                if (recordOwner.getRecord(TourHeader.TOUR_HEADER_FILE) != null)
+                    return (TourHeader)recordOwner.getRecord(TourHeader.TOUR_HEADER_FILE);
         return new TourHeader(recordOwner);
     }
 

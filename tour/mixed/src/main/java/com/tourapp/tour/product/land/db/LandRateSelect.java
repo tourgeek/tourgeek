@@ -67,7 +67,7 @@ public class LandRateSelect extends LandRateField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), LandRate.kDescriptionKey, LandRate.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), LandRate.DESCRIPTION_KEY, LandRate.DESCRIPTION, true, true);
     }
 
 }

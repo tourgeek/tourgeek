@@ -103,9 +103,9 @@ public class BookingItinerary extends BookingSubScreen
     {
         super.addListeners();
         
-        ReferenceField fldMessageProcessInfoID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageProcessInfoID);
+        ReferenceField fldMessageProcessInfoID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_PROCESS_INFO_ID);
         Record recMessageProcessInfo = fldMessageProcessInfoID.getReferenceRecord();
-        fldMessageProcessInfoID.addListener(new MoveOnChangeHandler(this.getScreenRecord().getField(BookingItineraryScreenRecord.kItineraryStyleSheet), recMessageProcessInfo.getField(MessageProcessInfo.kProperties), false, true)
+        fldMessageProcessInfoID.addListener(new MoveOnChangeHandler(this.getScreenRecord().getField(BookingItineraryScreenRecord.ITINERARY_STYLE_SHEET), recMessageProcessInfo.getField(MessageProcessInfo.PROPERTIES), false, true)
         {   // Special logic to move the "template" property to the stylesheet field
             /**
              * Do the physical move operation.
@@ -119,24 +119,24 @@ public class BookingItinerary extends BookingSubScreen
             }
         });
         
-        fldMessageProcessInfoID.addListener(new MoveOnChangeHandler(this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID), recMessageProcessInfo.getField(MessageProcessInfo.kDefaultMessageTransportID), false, true));
+        fldMessageProcessInfoID.addListener(new MoveOnChangeHandler(this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID), recMessageProcessInfo.getField(MessageProcessInfo.DEFAULT_MESSAGE_TRANSPORT_ID), false, true));
         
-        this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID).addListener(new ItineraryActionHandler(null));
+        this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID).addListener(new ItineraryActionHandler(null));
         
-        if (this.getRecord(Booking.kBookingFile) != null)
+        if (this.getRecord(Booking.BOOKING_FILE) != null)
         {   // Set up initial default message transport.
-            Profile recProfile = (Profile)((ReferenceField)this.getRecord(Booking.kBookingFile).getField(Booking.kProfileID)).getReference();
+            Profile recProfile = (Profile)((ReferenceField)this.getRecord(Booking.BOOKING_FILE).getField(Booking.PROFILE_ID)).getReference();
             if (recProfile != null)
             {
-                this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID).moveFieldToThis(recProfile.getField(Profile.kMessageTransportID));
-                if (this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID).isNull())
+                this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID).moveFieldToThis(recProfile.getField(Profile.MESSAGE_TRANSPORT_ID));
+                if (this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID).isNull())
                 {
                     MessageDetailTarget recMessageDetailTarget = recProfile.getNextMessageDetailTarget();
                     if (recMessageDetailTarget != null)
                     {
                         MessageTransport recMessageTransport = recMessageDetailTarget.getMessageTransport(null);
                         if (recMessageTransport != null)
-                            this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID).moveFieldToThis(recMessageTransport.getField(MessageTransport.kID));
+                            this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID).moveFieldToThis(recMessageTransport.getField(MessageTransport.ID));
                     }
                 }
             }
@@ -145,7 +145,7 @@ public class BookingItinerary extends BookingSubScreen
         this.refreshText(null);
         
         if (!ScreenConstants.HTML_SCREEN_TYPE.equalsIgnoreCase(this.getViewFactory().getViewSubpackage()))
-            this.getRecord(Tour.kTourFile).setupRecordListener(this, false, false);   // I need to listen for record changes
+            this.getRecord(Tour.TOUR_FILE).setupRecordListener(this, false, false);   // I need to listen for record changes
     }
     /**
      * A record with this datasource handle changed, notify any behaviors that are checking.
@@ -193,7 +193,7 @@ public class BookingItinerary extends BookingSubScreen
         ScreenLocation itsLocation = null;
         itsLocation = this.getNextLocation(ScreenConstants.FLUSH_LEFT, ScreenConstants.FILL_REMAINDER);
         // NOTE NOTE NOTE. fieldConverter is only used to create the control, since the actual text is created from reading the URL
-        BaseField fieldConverter = this.getRecord(BookingItineraryScreenRecord.kBookingItineraryScreenRecordFile).getField(BookingItineraryScreenRecord.kItineraryText);
+        BaseField fieldConverter = this.getScreenRecord().getField(BookingItineraryScreenRecord.ITINERARY_TEXT);
         m_sHtmlView = new SHtmlView(itsLocation, this, fieldConverter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
         ScreenFieldView sView = m_sHtmlView.getScreenFieldView();
         if (sView instanceof org.jbundle.base.screen.view.swing.VScreenField)
@@ -223,13 +223,13 @@ public class BookingItinerary extends BookingSubScreen
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, resources.getString(MenuConstants.PRINT), MenuConstants.PRINT, MenuConstants.PRINT, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, resources.getString(SAVE), SAVE, SAVE, null);
         
-        this.getScreenRecord().getField(BookingItineraryScreenRecord.kItineraryStyleSheet).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(BookingItineraryScreenRecord.ITINERARY_STYLE_SHEET).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.REFRESH, MenuConstants.REFRESH, resources.getString(MenuConstants.REFRESH));
-        this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageProcessInfoID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
+        this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_PROCESS_INFO_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
         
-        this.getScreenRecord().getField(BookingItineraryScreenRecord.kActionTarget).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(BookingItineraryScreenRecord.ACTION_TARGET).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, SEND, SEND, resources.getString(SEND));
-        this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
+        this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
     }
     /**
      * RefreshText Method.
@@ -242,7 +242,7 @@ public class BookingItinerary extends BookingSubScreen
             if (timeUpdateRequested.before(m_timeLastUpdateDisplayed))
                 return;  // Already showing the current itinerary
         m_timeLastUpdateDisplayed = new Date();
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         String strBookingID = recBooking.getCounterField().toString();
         
         if ((strBookingID == null)
@@ -255,7 +255,7 @@ public class BookingItinerary extends BookingSubScreen
                 || (strText.length() == 0)
                 || (strText.equals(ITIN_DESC)))
                     strText = DEFAULT_TEXT;
-                BaseField fieldConverter = this.getRecord(BookingItineraryScreenRecord.kBookingItineraryScreenRecordFile).getField(BookingItineraryScreenRecord.kItineraryText);
+                BaseField fieldConverter = this.getScreenRecord().getField(BookingItineraryScreenRecord.ITINERARY_TEXT);
                 fieldConverter.addComponent(m_sHtmlView);
                 m_sHtmlView.setConverter(fieldConverter);
                 m_sHtmlView.setSFieldValue(strText, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
@@ -264,7 +264,7 @@ public class BookingItinerary extends BookingSubScreen
         }
         else
         {            
-            String strTemplate = this.getScreenRecord().getField(BookingItineraryScreenRecord.kItineraryStyleSheet).toString();
+            String strTemplate = this.getScreenRecord().getField(BookingItineraryScreenRecord.ITINERARY_STYLE_SHEET).toString();
         
             String strURL = this.getDisplayURL(strBookingID, null, strTemplate, null, null, null);
             
@@ -356,10 +356,10 @@ public class BookingItinerary extends BookingSubScreen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         String strBookingID = recBooking.getCounterField().toString();
         String strTourID = null;    // For now
-        String strTemplate = this.getScreenRecord().getField(BookingItineraryScreenRecord.kItineraryStyleSheet).toString();
+        String strTemplate = this.getScreenRecord().getField(BookingItineraryScreenRecord.ITINERARY_STYLE_SHEET).toString();
         
         if (MessageProcessInfoManualField.LOOKUP_WITH_PARAMS.equalsIgnoreCase(strCommand))
         {
@@ -369,11 +369,11 @@ public class BookingItinerary extends BookingSubScreen
                 App application = this.getTask().getApplication();
                 BasePanel parentScreen = Screen.makeWindow(application);
                 Map<String,Object> properties = new Hashtable<String,Object>();
-                ReferenceField fldRequestTypeID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kRequestTypeID);
+                ReferenceField fldRequestTypeID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.REQUEST_TYPE_ID);
                 properties.put(fldRequestTypeID.getFieldName(), Integer.toString(fldRequestTypeID.getIDFromCode(RequestType.MANUAL)));
-                ReferenceField fldContactTypeID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kContactTypeID);
-                properties.put(fldContactTypeID.getFieldName(), Integer.toString(fldContactTypeID.getIDFromCode(Profile.kProfileFile)));
-                Record record = ((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageProcessInfoID)).getReferenceRecord();
+                ReferenceField fldContactTypeID = (ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.CONTACT_TYPE_ID);
+                properties.put(fldContactTypeID.getFieldName(), Integer.toString(fldContactTypeID.getIDFromCode(Profile.PROFILE_FILE)));
+                Record record = ((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_PROCESS_INFO_ID)).getReferenceRecord();
                 GridScreen screen = (GridScreen)record.makeScreen(null, parentScreen, ScreenConstants.SELECT_MODE, true, true, true, true, properties);
                 //x if (record.getScreen() == null)
                     screen.setSelectQuery(record, false); // Since this record isn't linked to the screen, manually link it.
@@ -402,7 +402,7 @@ public class BookingItinerary extends BookingSubScreen
         }
         if (SAVE.equalsIgnoreCase(strCommand))
         {
-            String strFilename = this.getScreenRecord().getField(BookingItineraryScreenRecord.kActionTarget).toString();
+            String strFilename = this.getScreenRecord().getField(BookingItineraryScreenRecord.ACTION_TARGET).toString();
         
             String strURL = this.getDisplayURL(strBookingID, strTourID, strTemplate, null, null, strFilename);
             URL url = this.getTask().getApplication().getResourceURL(strURL, (BaseApplet)this.getAppletScreen().getTask());
@@ -414,26 +414,26 @@ public class BookingItinerary extends BookingSubScreen
         }
         if (SEND.equalsIgnoreCase(strCommand))
         {
-            MessageProcessInfo recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageProcessInfoID)).getReference();
-            Record recMessageTransport = ((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID)).getReference();
+            MessageProcessInfo recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_PROCESS_INFO_ID)).getReference();
+            Record recMessageTransport = ((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID)).getReference();
             if ((recMessageTransport == null) || (recMessageTransport.getEditMode() != DBConstants.EDIT_CURRENT))
                 if ((recMessageProcessInfo != null) && (recMessageProcessInfo.getEditMode() == DBConstants.EDIT_CURRENT))
-                    recMessageTransport = ((ReferenceField)recMessageProcessInfo.getField(MessageProcessInfo.kDefaultMessageTransportID)).getReference();
+                    recMessageTransport = ((ReferenceField)recMessageProcessInfo.getField(MessageProcessInfo.DEFAULT_MESSAGE_TRANSPORT_ID)).getReference();
             String strMessageTransport = null;
             if ((recMessageTransport != null) && (recMessageTransport.getEditMode() == DBConstants.EDIT_CURRENT))
-                strMessageTransport = recMessageTransport.getField(MessageTransport.kCode).toString();
+                strMessageTransport = recMessageTransport.getField(MessageTransport.CODE).toString();
             if ((strMessageTransport == null) || (strMessageTransport.length() == 0))
                 return false;    // Error
             if (!MessageTransport.SCREEN.equalsIgnoreCase(strMessageTransport))
             {
-                String strDestination = this.getScreenRecord().getField(BookingItineraryScreenRecord.kActionTarget).toString();
+                String strDestination = this.getScreenRecord().getField(BookingItineraryScreenRecord.ACTION_TARGET).toString();
                 
                 String strURL = this.getDisplayURL(strBookingID, strTourID, strTemplate, strMessageTransport, strDestination, null);
                 {   // Note: properties include SEND_BY and DESTINATION
                     // First see if the use specifies a specific message
                     if (recMessageProcessInfo == null)
-                        recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageProcessInfoID)).getReferenceRecord();
-                    Profile recProfile = (Profile)((ReferenceField)this.getRecord(Booking.kBookingFile).getField(Booking.kProfileID)).getReference();
+                        recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_PROCESS_INFO_ID)).getReferenceRecord();
+                    Profile recProfile = (Profile)((ReferenceField)this.getRecord(Booking.BOOKING_FILE).getField(Booking.PROFILE_ID)).getReference();
                     Map<String,Object> properties =  new Hashtable<String, Object>();
                     properties.put(TrxMessageHeader.REFERENCE_TYPE, recBooking.getTableNames(false));
                     properties.put(TrxMessageHeader.REFERENCE_CLASS, recBooking.getClass().getName());

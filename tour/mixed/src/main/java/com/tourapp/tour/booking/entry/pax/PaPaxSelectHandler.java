@@ -85,17 +85,17 @@ public class PaPaxSelectHandler extends FileListener
             return iErrorCode;
         if (iChangeType == DBConstants.SELECT_TYPE)
         {
-            Object bookmarkCurrent = m_recProfile.getField(Profile.kID).getData();
+            Object bookmarkCurrent = m_recProfile.getField(Profile.ID).getData();
             Object bookmarkMain = bookmarkCurrent;
-            if (m_recProfile.getField(Profile.kMainProfileID).getValue() != 0)
-                if (!m_recProfile.getField(Profile.kMainProfileID).equals(m_recProfile.getField(Profile.kID)))
+            if (m_recProfile.getField(Profile.MAIN_PROFILE_ID).getValue() != 0)
+                if (!m_recProfile.getField(Profile.MAIN_PROFILE_ID).equals(m_recProfile.getField(Profile.ID)))
             {   // If this belongs to a detail profile, then read the main profile!
-                bookmarkMain = m_recProfile.getField(Profile.kMainProfileID).getData();
+                bookmarkMain = m_recProfile.getField(Profile.MAIN_PROFILE_ID).getData();
                 try {
                     if (m_recProfile.setHandle(bookmarkMain, DBConstants.BOOKMARK_HANDLE) == null)
                     {       // If the main does not exist, make one up.
                         m_recProfile.addNew();
-                        m_recProfile.getField(Profile.kID).setData(bookmarkCurrent);
+                        m_recProfile.getField(Profile.ID).setData(bookmarkCurrent);
                     }
                 } catch (DBException ex) {
                     ex.printStackTrace();
@@ -105,10 +105,10 @@ public class PaPaxSelectHandler extends FileListener
             RecordOwner screen = m_recBookingPax.getRecordOwner();
             if (screen instanceof GridScreen)
                ((GridScreen)screen).reSelectRecords();      // Redisplay
-            Booking recBooking = (Booking)((ReferenceField)m_recBookingPax.getField(BookingPax.kBookingID)).getReferenceRecord();
+            Booking recBooking = (Booking)((ReferenceField)m_recBookingPax.getField(BookingPax.BOOKING_ID)).getReferenceRecord();
             if (recBooking != null)
                 if (recBooking.getEditMode() != DBConstants.EDIT_NONE)
-                    if (recBooking.getField(Booking.kProfileID).isNull())
+                    if (recBooking.getField(Booking.PROFILE_ID).isNull())
             {   // Set the agency screen to the main profile.
                 Profile recProfile = new Profile(this.getOwner().findRecordOwner());
                 try {

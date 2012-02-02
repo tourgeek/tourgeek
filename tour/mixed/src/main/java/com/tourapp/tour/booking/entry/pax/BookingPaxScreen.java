@@ -98,7 +98,7 @@ public class BookingPaxScreen extends BookingSubScreen
     {
         super.addListeners();
         
-        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.kBookingPaxFile);
+        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.BOOKING_PAX_FILE);
         recBookingPax.addBookingBehaviors(this);
     }
     /**
@@ -110,8 +110,8 @@ public class BookingPaxScreen extends BookingSubScreen
         ToolScreen toolbar = super.addToolbars();
         
         ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.kBookingPaxFile);
-        recBookingPax.addToolbarFields(toolbar2, this.getRecord(Booking.kBookingFile));
+        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.BOOKING_PAX_FILE);
+        recBookingPax.addToolbarFields(toolbar2, this.getRecord(Booking.BOOKING_FILE));
         
         return toolbar;
     }
@@ -121,15 +121,15 @@ public class BookingPaxScreen extends BookingSubScreen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         super.addToolbarButtons(toolScreen);
-        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.kBookingPaxFile);
-        recBookingPax.addToolbarButtons(toolScreen, this.getRecord(Profile.kProfileFile));
+        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.BOOKING_PAX_FILE);
+        recBookingPax.addToolbarButtons(toolScreen, this.getRecord(Profile.PROFILE_FILE));
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        FirstMLastConverter converter = new FirstMLastConverter(this.getRecord(BookingPax.kBookingPaxFile), BookingPax.kNamePrefix, BookingPax.kFirstName, BookingPax.kMiddleName, BookingPax.kSurName);
+        FirstMLastConverter converter = new FirstMLastConverter(this.getRecord(BookingPax.BOOKING_PAX_FILE), BookingPax.NAME_PREFIX, BookingPax.FIRST_NAME, BookingPax.MIDDLE_NAME, BookingPax.SUR_NAME);
         new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DISPLAY_FIELD_DESC);
         this.getRecord(BookingPax.kBookingPaxFile).getField(BookingPax.kPaxCategoryID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingPax.kBookingPaxFile).getField(BookingPax.kNamePrefix).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

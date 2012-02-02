@@ -101,10 +101,10 @@ public class HotelMealPricingScreen extends ProductPricingScreen
     {
         super.addListeners();
         // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(HotelScreenRecord.kProductID)).syncReference(this.getHeaderRecord());
+        ((ReferenceField)this.getScreenRecord().getField(HotelScreenRecord.PRODUCT_ID)).syncReference(this.getHeaderRecord());
         // Sub file stuff
-        FileListener subFileBehavior = new SubFileFilter(this.getRecord(Hotel.kHotelFile));
-        this.getRecord(HotelMealPricing.kHotelMealPricingFile).addListener(subFileBehavior);
+        FileListener subFileBehavior = new SubFileFilter(this.getRecord(Hotel.HOTEL_FILE));
+        this.getRecord(HotelMealPricing.HOTEL_MEAL_PRICING_FILE).addListener(subFileBehavior);
     }
     /**
      * If there is a header record, return it, otherwise, return the main record.
@@ -114,15 +114,15 @@ public class HotelMealPricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Hotel.kHotelFile);
+        return this.getRecord(Hotel.HOTEL_FILE);
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(HotelMealPricing.kHotelMealPricingFile).getField(HotelMealPricing.kMealPlanID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelMealPricing.kHotelMealPricingFile).getField(HotelMealPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelMealPricing.kHotelMealPricingFile).getField(HotelMealPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -138,7 +138,7 @@ public class HotelMealPricingScreen extends ProductPricingScreen
         if ((iDocMode == ScreenConstants.DISPLAY_MODE) || (iDocMode == ScreenConstants.SELECT_MODE))
             if (recordMain == null)
         {
-            recordMain = this.getRecord(Hotel.kHotelFile);
+            recordMain = this.getRecord(Hotel.HOTEL_FILE);
             iDocMode = Hotel.MEAL_PRICING_GRID_SCREEN;
         }
         return super.onForm(recordMain, iDocMode, bReadCurrentRecord, iCommandOptions, properties);

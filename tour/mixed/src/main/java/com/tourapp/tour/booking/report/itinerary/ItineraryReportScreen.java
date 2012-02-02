@@ -101,17 +101,17 @@ public class ItineraryReportScreen extends ReportScreen
     {
         super.addListeners();
         
-        Record recBooking = ((ReferenceField)this.getScreenRecord().getField(ItineraryScreenRecord.kBookingID)).getReferenceRecord();
-        MoveOnValidHandler moveHandler = new MoveOnValidHandler(this.getScreenRecord().getField(ItineraryScreenRecord.kTourID), recBooking.getField(Booking.kTourID));
+        Record recBooking = ((ReferenceField)this.getScreenRecord().getField(ItineraryScreenRecord.BOOKING_ID)).getReferenceRecord();
+        MoveOnValidHandler moveHandler = new MoveOnValidHandler(this.getScreenRecord().getField(ItineraryScreenRecord.TOUR_ID), recBooking.getField(Booking.TOUR_ID));
         recBooking.addListener(moveHandler);
         
-        ((ReferenceField)this.getScreenRecord().getField(ItineraryScreenRecord.kTourID)).addListener(new ReadSecondaryHandler(this.getRecord(Tour.kTourFile)));
+        ((ReferenceField)this.getScreenRecord().getField(ItineraryScreenRecord.TOUR_ID)).addListener(new ReadSecondaryHandler(this.getRecord(Tour.TOUR_FILE)));
         
-        this.getRecord(Booking.kBookingFile).addListener(new SubFileFilter(this.getRecord(Tour.kTourFile)));
-        this.getRecord(Booking.kBookingFile).addListener(new CompareFileFilter(this.getRecord(Booking.kBookingFile).getField(Booking.kID), this.getScreenRecord().getField(ItineraryScreenRecord.kBookingID), DBConstants.EQUALS));
+        this.getRecord(Booking.BOOKING_FILE).addListener(new SubFileFilter(this.getRecord(Tour.TOUR_FILE)));
+        this.getRecord(Booking.BOOKING_FILE).addListener(new CompareFileFilter(this.getRecord(Booking.BOOKING_FILE).getField(Booking.ID), this.getScreenRecord().getField(ItineraryScreenRecord.BOOKING_ID), DBConstants.EQUALS));
         
-        this.getRecord(BookingDetail.kBookingDetailFile).addListener(new SubFileFilter(this.getRecord(Booking.kBookingFile)));
-        this.getRecord(BookingDetail.kBookingDetailFile).setKeyArea(BookingDetail.kBookingIDKey);
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(Booking.BOOKING_FILE)));
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).setKeyArea(BookingDetail.BOOKING_ID_KEY);
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -126,7 +126,7 @@ public class ItineraryReportScreen extends ReportScreen
      */
     public void setupSFields()
     {
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         for (int iFieldSeq = 0; iFieldSeq < recBooking.getFieldCount(); iFieldSeq++)
         {
             BaseField field = recBooking.getField(iFieldSeq);

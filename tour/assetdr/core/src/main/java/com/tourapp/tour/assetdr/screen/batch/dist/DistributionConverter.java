@@ -107,7 +107,7 @@ public class DistributionConverter extends FieldConverter
     {
         // Then, update the cache
         String strResult = this.getDisplayField(null).toString();
-        String strAccountNo = ((ReferenceField)m_recBankTrxBatchDist.getField(BankTrxBatchDist.kAccountID)).getReference().getField(Account.kAccountNo).toString();
+        String strAccountNo = ((ReferenceField)m_recBankTrxBatchDist.getField(BankTrxBatchDist.ACCOUNT_ID)).getReference().getField(Account.ACCOUNT_NO).toString();
         m_htCache.put(bookmarkKey, strResult);
         m_htCacheAccountNo.put(bookmarkKey, strAccountNo);
         return strResult;
@@ -120,8 +120,8 @@ public class DistributionConverter extends FieldConverter
         // Now create the new distribution
         Record recBankTrxBatchDetail = this.getDetailRecord();
         m_recBankTrxBatchDist.addNew();
-        m_recBankTrxBatchDist.getField(BankTrxBatchDist.kAccountID).moveFieldToThis(referenceField);
-        m_recBankTrxBatchDist.getField(BankTrxBatchDist.kAmount).moveFieldToThis(recBankTrxBatchDetail.getField(BankTrxBatchDetail.kAmount));
+        m_recBankTrxBatchDist.getField(BankTrxBatchDist.ACCOUNT_ID).moveFieldToThis(referenceField);
+        m_recBankTrxBatchDist.getField(BankTrxBatchDist.AMOUNT).moveFieldToThis(recBankTrxBatchDetail.getField(BankTrxBatchDetail.AMOUNT));
         m_recBankTrxBatchDist.add();
     }
     /**
@@ -142,7 +142,7 @@ public class DistributionConverter extends FieldConverter
                 if (this.getField().getRecord() != null)
                     ((BaseField)this.getField()).getRecord().addListener(new FreeOnFreeHandler(recBankTrxBatchDist));
         }
-        recBankTrxBatchDist.setKeyArea(BankTrxBatchDist.kBankTrxBatchDetailIDKey);
+        recBankTrxBatchDist.setKeyArea(BankTrxBatchDist.BANK_TRX_BATCH_DETAIL_ID_KEY);
         recBankTrxBatchDist.addListener(new SubFileFilter(recBatchDetail));
         return recBankTrxBatchDist;
     }
@@ -151,7 +151,7 @@ public class DistributionConverter extends FieldConverter
      */
     public Record getDetailRecord()
     {
-        Record recBankTrxBatchDetail = (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile);
+        Record recBankTrxBatchDetail = (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE);
         return recBankTrxBatchDetail;
     }
     /**
@@ -162,8 +162,8 @@ public class DistributionConverter extends FieldConverter
     public BaseField getDisplayField(Record recSecondary)
     {
         if (recSecondary == null)
-            recSecondary = ((ReferenceField)m_recBankTrxBatchDist.getField(BankTrxBatchDist.kAccountID)).getReference();
-        return recSecondary.getField(Account.kDescription);
+            recSecondary = ((ReferenceField)m_recBankTrxBatchDist.getField(BankTrxBatchDist.ACCOUNT_ID)).getReference();
+        return recSecondary.getField(Account.DESCRIPTION);
     }
     /**
      * GetCurrentBookmark Method.
@@ -258,7 +258,7 @@ public class DistributionConverter extends FieldConverter
         ScreenComponent sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         
         Record recAccount = ((ReferenceField)converter.getField()).getReferenceRecord();
-        ScreenComponent sFieldNo = recAccount.getField(Account.kAccountNo).getComponent(0);
+        ScreenComponent sFieldNo = recAccount.getField(Account.ACCOUNT_NO).getComponent(0);
         Converter fldConverter = (Converter)sFieldNo.getConverter();   // Should be the GlConverter
         BaseField field = (BaseField)fldConverter.getField();
         if (fldConverter != field)

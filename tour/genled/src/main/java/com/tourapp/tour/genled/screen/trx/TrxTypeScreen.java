@@ -82,23 +82,23 @@ public class TrxTypeScreen extends DetailScreen
         super.addListeners();
         for (int i = 0; ;i++)
         {
-            ScreenField sField = (ScreenField)this.getRecord(TransactionType.kTransactionTypeFile).getField(TransactionType.kSourceTrxStatusID).getComponent(i);
+            ScreenField sField = (ScreenField)this.getRecord(TransactionType.TRANSACTION_TYPE_FILE).getField(TransactionType.SOURCE_TRX_STATUS_ID).getComponent(i);
             if (sField == null)
                 break;
             if (sField instanceof SCannedBox)
             {
                 String strCommand = Utility.addURLParam(null, DBParams.COMMAND, ((SCannedBox)sField).getButtonCommand());
-                BaseField field = this.getRecord(TransactionType.kTransactionTypeFile).getField(TransactionType.kTrxDescID);
+                BaseField field = this.getRecord(TransactionType.TRANSACTION_TYPE_FILE).getField(TransactionType.TRX_DESC_ID);
                 strCommand = Utility.addURLParam(strCommand, field.getFieldName(), field.toString());
-                field = this.getRecord(TransactionType.kTransactionTypeFile).getField(TransactionType.kTrxSystemID);
+                field = this.getRecord(TransactionType.TRANSACTION_TYPE_FILE).getField(TransactionType.TRX_SYSTEM_ID);
                 strCommand = Utility.addURLParam(strCommand, field.getFieldName(), field.toString());
                 ((SCannedBox)sField).setButtonCommand(strCommand);
             }
         } 
         
-        Record recTrxStatus = ((ReferenceField)this.getMainRecord().getField(TransactionType.kSourceTrxStatusID)).getReferenceRecord(this);
-        this.getMainRecord().getField(TransactionType.kSourceTrxStatusID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(TransactionType.kSourcePreferredSign), recTrxStatus.getField(TrxStatus.kPreferredSign)));
-        this.getMainRecord().getField(TransactionType.kSourceTrxStatusID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(TransactionType.kSourceTrxDescID), recTrxStatus.getField(TrxStatus.kTrxDescID)));
+        Record recTrxStatus = ((ReferenceField)this.getMainRecord().getField(TransactionType.SOURCE_TRX_STATUS_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(TransactionType.SOURCE_TRX_STATUS_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(TransactionType.SOURCE_PREFERRED_SIGN), recTrxStatus.getField(TrxStatus.PREFERRED_SIGN)));
+        this.getMainRecord().getField(TransactionType.SOURCE_TRX_STATUS_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(TransactionType.SOURCE_TRX_DESC_ID), recTrxStatus.getField(TrxStatus.TRX_DESC_ID)));
     }
     /**
      * Open the header record.

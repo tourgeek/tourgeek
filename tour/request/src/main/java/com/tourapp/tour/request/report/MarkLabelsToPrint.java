@@ -58,8 +58,8 @@ public class MarkLabelsToPrint extends BaseProcess
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).setData(this.getProperty("sendvia"));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kSendViaCode), this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID), "="));
+        this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).setData(this.getProperty("sendvia"));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.SEND_VIA_CODE), this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID), "="));
     }
     /**
      * Add the screen record.
@@ -87,7 +87,7 @@ public class MarkLabelsToPrint extends BaseProcess
             {
                 recRequest.next();
                 recRequest.edit();
-                recRequest.getField(Request.kPrintNow).setState(true);
+                recRequest.getField(Request.PRINT_NOW).setState(true);
                 recRequest.set();
             }
         } catch (DBException ex)    {

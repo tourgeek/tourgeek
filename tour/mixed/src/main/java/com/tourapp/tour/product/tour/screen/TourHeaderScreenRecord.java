@@ -35,15 +35,22 @@ import com.tourapp.tour.base.db.*;
 public class TourHeaderScreenRecord extends ProductScreenRecord
 {
     private static final long serialVersionUID = 1L;
-    public static final String TOUR_TYPE = "TourType";
 
+    public static final String DISPLAY_TYPE = "DisplayType";
     public static final int kDisplayType = kProductScreenRecordLastField + 1;
+    public static final String BROCHURE_ID = "BrochureID";
     public static final int kBrochureID = kDisplayType + 1;
+    public static final String AIRLINE_ID = "AirlineID";
     public static final int kAirlineID = kBrochureID + 1;
+    public static final String TOUR_TYPE = "TourType";
     public static final int kTourType = kAirlineID + 1;
+    public static final String START_DEPARTURE_DATE = "StartDepartureDate";
     public static final int kStartDepartureDate = kTourType + 1;
+    public static final String END_DEPARTURE_DATE = "EndDepartureDate";
     public static final int kEndDepartureDate = kStartDepartureDate + 1;
+    public static final String REGION_ID = "RegionID";
     public static final int kRegionID = kEndDepartureDate + 1;
+    public static final String KEY_ORDER = "KeyOrder";
     public static final int kKeyOrder = kRegionID + 1;
     public static final int kTourHeaderScreenRecordLastField = kKeyOrder;
     public static final int kTourHeaderScreenRecordFields = kKeyOrder - DBConstants.MAIN_FIELD + 1;

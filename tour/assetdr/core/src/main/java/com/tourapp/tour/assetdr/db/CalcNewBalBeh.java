@@ -69,7 +69,7 @@ public class CalcNewBalBeh extends FileListener
     {
         super.doValidRecord(bDisplayOption);
         if (m_DateField.getLength() == 0)
-            this.getOwner().getField(BankAcct.kBalance).initField(DBConstants.DISPLAY);
+            this.getOwner().getField(BankAcct.BALANCE).initField(DBConstants.DISPLAY);
         else
         {
             double balance = 0;
@@ -78,12 +78,12 @@ public class CalcNewBalBeh extends FileListener
                 while (m_AdChecking.hasNext())
                 {
                     m_AdChecking.next();
-                    balance += m_AdChecking.getField(BankTrx.kAmount).getValue();
+                    balance += m_AdChecking.getField(BankTrx.AMOUNT).getValue();
                 }
             } catch (DBException ex)    {
                 ex.printStackTrace();
             }
-            this.getOwner().getField(BankAcct.kBalance).setValue(balance);
+            this.getOwner().getField(BankAcct.BALANCE).setValue(balance);
         }
     }
 

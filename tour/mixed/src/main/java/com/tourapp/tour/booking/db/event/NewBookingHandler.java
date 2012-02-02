@@ -91,9 +91,9 @@ public class NewBookingHandler extends FileListener
                     {
         //x              if ((subFileFilter.getOwner().getEditMode() != DBConstants.EDIT_NONE) && (subFileFilter.getOwner().getEditMode() != DBConstants.EDIT_ADD))
                         {
-                            date = ((DateTimeField)subFileFilter.getOwner().getField(BookingDetail.kDetailDate)).getDateTime();
+                            date = ((DateTimeField)subFileFilter.getOwner().getField(BookingDetail.DETAIL_DATE)).getDateTime();
                             if (date == null)
-                                date = ((DateTimeField)subFileFilter.getOwner().getTable().getCurrentTable().getRecord().getField(BookingDetail.kDetailDate)).getDateTime();
+                                date = ((DateTimeField)subFileFilter.getOwner().getTable().getCurrentTable().getRecord().getField(BookingDetail.DETAIL_DATE)).getDateTime();
                             if (date != null)
                                 break;  // Found, done
                         }
@@ -104,20 +104,20 @@ public class NewBookingHandler extends FileListener
             if (date != null)
             {
                 RecordOwner recordOwner = recBooking.getRecordOwner();
-                Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-                TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+                Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+                TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
                 
                 int iErrorCode = DBConstants.NORMAL_RETURN;
                 if ((recTourHeader == null)
                     || ((recTourHeader.getEditMode() == DBConstants.EDIT_ADD) || (recTourHeader.getEditMode() == DBConstants.EDIT_NONE)))
                 {   // No tour header, use the default tour header
-                    if (recBooking.getField(Booking.kTourID).isNull())
+                    if (recBooking.getField(Booking.TOUR_ID).isNull())
                     {
-                        Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.kBookingControlFile);
+                        Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.BOOKING_CONTROL_FILE);
                         if (m_bUseThinTourHeader)
-                            recTourHeader = (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.kThinTourHeaderID)).getReference();
+                            recTourHeader = (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.THIN_TOUR_HEADER_ID)).getReference();
                        else
-                            recTourHeader = (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.kTourHeaderID)).getReference();
+                            recTourHeader = (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.TOUR_HEADER_ID)).getReference();
                         if ((recTourHeader == null)
                             || ((recTourHeader.getEditMode() != DBConstants.EDIT_CURRENT) && (recTourHeader.getEditMode() != DBConstants.EDIT_IN_PROGRESS)))
                                 return recordOwner.getTask().setLastError("Must have a default tour header selected in the Booking Control file");
@@ -125,13 +125,13 @@ public class NewBookingHandler extends FileListener
                 }
                 else
                 {
-                    if (!recBooking.getField(Booking.kTourID).isNull())
+                    if (!recBooking.getField(Booking.TOUR_ID).isNull())
                         return DBConstants.NORMAL_RETURN;      // A tour is already set up for this booking
                 }
                     // Setup this tour from a top-level tour header
                 DateField fldDepDate = new DateField(null, null, DBConstants.DEFAULT_FIELD_LENGTH, null, null);
                 fldDepDate.setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-                if (recBooking.getField(Booking.kTourID).isNull())
+                if (recBooking.getField(Booking.TOUR_ID).isNull())
                     iErrorCode = recTour.setupTourFromHeader(recTourHeader, fldDepDate, DBConstants.BLANK, DBConstants.BLANK);
                 if (iErrorCode != DBConstants.NORMAL_RETURN)
                 {
@@ -150,10 +150,10 @@ public class NewBookingHandler extends FileListener
                     else
                         recBooking.edit();
                 recBooking.calcBookingDates(recTour, recTourHeader);
-                recBooking.getField(Booking.kTourID).moveFieldToThis(recTour.getField(Tour.kID));
+                recBooking.getField(Booking.TOUR_ID).moveFieldToThis(recTour.getField(Tour.ID));
                 recBooking.setupDefaultDesc(recTourHeader, fldDepDate);
-                recBooking.getField(Booking.kCode).handleFieldChanged(DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-                iErrorCode = recBooking.addTourDetail(recTour, recTourHeader, null, null, fldDepDate.getDateTime(), recBooking.getField(Booking.kAskForAnswer));
+                recBooking.getField(Booking.CODE).handleFieldChanged(DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                iErrorCode = recBooking.addTourDetail(recTour, recTourHeader, null, null, fldDepDate.getDateTime(), recBooking.getField(Booking.ASK_FOR_ANSWER));
                 fldDepDate.free();
                 if (iErrorCode != DBConstants.NORMAL_RETURN)
                     return iErrorCode;

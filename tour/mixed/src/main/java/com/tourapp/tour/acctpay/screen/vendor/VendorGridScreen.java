@@ -96,19 +96,19 @@ public class VendorGridScreen extends GridScreen
         super.addListeners();
         Vendor recVendor = (Vendor)this.getMainRecord();
         Record recScreenRecord = this.getScreenRecord();
-        ((NumberField)recScreenRecord.getField(VendorScreenRecord.kVendorKey)).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        recScreenRecord.getField(VendorScreenRecord.kVendorKey).addListener(new RegisterValueHandler(null));
+        ((NumberField)recScreenRecord.getField(VendorScreenRecord.VENDOR_KEY)).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        recScreenRecord.getField(VendorScreenRecord.VENDOR_KEY).addListener(new RegisterValueHandler(null));
         this.setEditing(false);
         SortOrderHandler keyBehavior = new SortOrderHandler(this);
-        keyBehavior.setGridTable(Vendor.kNameSortKey, recVendor, 0);
-        keyBehavior.setGridTable(Vendor.kCodeKey, recVendor, 1);
-        recScreenRecord.getField(VendorScreenRecord.kVendorKey).addListener(keyBehavior);
+        keyBehavior.setGridTable(Vendor.NAME_SORT_KEY, recVendor, 0);
+        keyBehavior.setGridTable(Vendor.CODE_KEY, recVendor, 1);
+        recScreenRecord.getField(VendorScreenRecord.VENDOR_KEY).addListener(keyBehavior);
         
-        recVendor.addListener(new ExtractRangeFilter(Vendor.kNameSort, recScreenRecord.getField(VendorScreenRecord.kVendorName), ExtractRangeFilter.PAD_END_FIELD));
-        recVendor.addListener(new ExtractRangeFilter(Vendor.kCountryID, recScreenRecord.getField(VendorScreenRecord.kVendorCountry), ExtractRangeFilter.PAD_END_FIELD));
+        recVendor.addListener(new ExtractRangeFilter(Vendor.NAME_SORT, recScreenRecord.getField(VendorScreenRecord.VENDOR_NAME), ExtractRangeFilter.PAD_END_FIELD));
+        recVendor.addListener(new ExtractRangeFilter(Vendor.COUNTRY_ID, recScreenRecord.getField(VendorScreenRecord.VENDOR_COUNTRY), ExtractRangeFilter.PAD_END_FIELD));
         
-        recScreenRecord.getField(VendorScreenRecord.kVendorName).addListener(new FieldReSelectHandler(this));
-        recScreenRecord.getField(VendorScreenRecord.kVendorCountry).addListener(new FieldReSelectHandler(this));
+        recScreenRecord.getField(VendorScreenRecord.VENDOR_NAME).addListener(new FieldReSelectHandler(this));
+        recScreenRecord.getField(VendorScreenRecord.VENDOR_COUNTRY).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add button(s) to the toolbar.
@@ -117,8 +117,8 @@ public class VendorGridScreen extends GridScreen
     {
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         
-        this.getScreenRecord().getField(VendorScreenRecord.kVendorName).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(VendorScreenRecord.kVendorCountry).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(VendorScreenRecord.VENDOR_NAME).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(VendorScreenRecord.VENDOR_COUNTRY).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.

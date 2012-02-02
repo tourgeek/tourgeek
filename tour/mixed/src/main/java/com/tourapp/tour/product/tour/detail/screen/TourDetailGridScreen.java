@@ -79,11 +79,11 @@ public class TourDetailGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        int iFieldSeq = TourHeaderOption.kDetailTourDetailCount;
-        if (TourHeaderLine.kTourHeaderLineFile.equals(this.getMainRecord().getTableNames(false)))
-            iFieldSeq = TourHeaderOption.kDetailPriceCount;
-        if (TourHeaderAirHeader.kTourHeaderAirHeaderFile.equals(this.getMainRecord().getTableNames(false)))
-            iFieldSeq = TourHeaderOption.kDetailAirHeaderCount;
+        String iFieldSeq = TourHeaderOption.DETAIL_TOUR_DETAIL_COUNT;
+        if (TourHeaderLine.TOUR_HEADER_LINE_FILE.equals(this.getMainRecord().getTableNames(false)))
+            iFieldSeq = TourHeaderOption.DETAIL_PRICE_COUNT;
+        if (TourHeaderAirHeader.TOUR_HEADER_AIR_HEADER_FILE.equals(this.getMainRecord().getTableNames(false)))
+            iFieldSeq = TourHeaderOption.DETAIL_AIR_HEADER_COUNT;
         this.getMainRecord().addListener(new SubCountHandler(this.getHeaderRecord().getField(iFieldSeq), false, true));
     }
     /**
@@ -140,8 +140,8 @@ public class TourDetailGridScreen extends DetailGridScreen
     public void setupSFields()
     {
         // Override this for other fields.
-        this.getMainRecord().getField(TourHeaderDetail.kDay).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.DAY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

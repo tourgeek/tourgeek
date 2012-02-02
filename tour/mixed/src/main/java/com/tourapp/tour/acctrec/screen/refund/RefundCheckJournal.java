@@ -107,29 +107,29 @@ public class RefundCheckJournal extends ReportScreen
     {
         super.addListeners();
         
-        this.getRecord(RefundScreenRecord.kRefundScreenRecordFile).getField(RefundScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kRefundBankAcctID)));
+        this.getScreenRecord().getField(RefundScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.REFUND_BANK_ACCT_ID)));
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-        this.getMainRecord().setKeyArea(ArTrx.kTrxStatusIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(recTrxStatus.getField(TrxStatus.kID), ArTrx.kTrxStatusID, null, -1, null, -1));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+        this.getMainRecord().setKeyArea(ArTrx.TRX_STATUS_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(recTrxStatus.getField(TrxStatus.ID), ArTrx.TRX_STATUS_ID, null, null, null, null));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(RefundScreenRecord.kReportCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(RefundScreenRecord.kReportTotal), ArTrx.kAmount, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(RefundScreenRecord.REPORT_COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(RefundScreenRecord.REPORT_TOTAL), ArTrx.AMOUNT, false, true));
         
-        Record recBooking = this.getRecord(Booking.kBookingFile);
-        Record recBookingLine = this.getRecord(BookingLine.kBookingLineFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
+        Record recBookingLine = this.getRecord(BookingLine.BOOKING_LINE_FILE);
         recBookingLine.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recBookingLine));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kGross), BookingLine.kGross, true, true));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kNet), BookingLine.kNet, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.NET), BookingLine.NET, true, true));
         
-        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(RefundScreenRecord.kBankAcctID)).getReferenceRecord();
-        recBankAcct.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(RefundScreenRecord.kNextCheckNo), recBankAcct.getField(BankAcct.kNextCheck)));
+        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(RefundScreenRecord.BANK_ACCT_ID)).getReferenceRecord();
+        recBankAcct.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(RefundScreenRecord.NEXT_CHECK_NO), recBankAcct.getField(BankAcct.NEXT_CHECK)));
         
-        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(RefundScreenRecord.kCheckNo), this.getScreenRecord().getField(RefundScreenRecord.kNextCheckNo)));
+        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(RefundScreenRecord.CHECK_NO), this.getScreenRecord().getField(RefundScreenRecord.NEXT_CHECK_NO)));
         
-        this.getScreenRecord().getField(RefundScreenRecord.kBankAcctID).addListener(new ReadSecondaryHandler(recBankAcct));
+        this.getScreenRecord().getField(RefundScreenRecord.BANK_ACCT_ID).addListener(new ReadSecondaryHandler(recBankAcct));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -196,9 +196,9 @@ public class RefundCheckJournal extends ReportScreen
             || (strCommand.equalsIgnoreCase(CANNED_CHECKS))
             || (strCommand.equalsIgnoreCase(XML_CHECKS)))
         {
-            Object objBankID = this.getScreenRecord().getField(RefundScreenRecord.kBankAcctID).getData();
-            Object objCheckNo = this.getScreenRecord().getField(RefundScreenRecord.kNextCheckNo).getData();
-            Object objCheckDate = this.getScreenRecord().getField(RefundScreenRecord.kCheckDate).getData();
+            Object objBankID = this.getScreenRecord().getField(RefundScreenRecord.BANK_ACCT_ID).getData();
+            Object objCheckNo = this.getScreenRecord().getField(RefundScreenRecord.NEXT_CHECK_NO).getData();
+            Object objCheckDate = this.getScreenRecord().getField(RefundScreenRecord.CHECK_DATE).getData();
             Record record = this.getMainRecord();
             BasePanel parentScreen = this.getParentScreen();
         
@@ -217,9 +217,9 @@ public class RefundCheckJournal extends ReportScreen
                     if (screen instanceof BaseScreen)
                         if (screen.getScreenRecord() instanceof RefundScreenRecord)
                     {
-                        screen.getScreenRecord().getField(RefundScreenRecord.kBankAcctID).setData(objBankID);
-                        screen.getScreenRecord().getField(RefundScreenRecord.kNextCheckNo).setData(objCheckNo);
-                        screen.getScreenRecord().getField(RefundScreenRecord.kCheckDate).setData(objCheckDate);
+                        screen.getScreenRecord().getField(RefundScreenRecord.BANK_ACCT_ID).setData(objBankID);
+                        screen.getScreenRecord().getField(RefundScreenRecord.NEXT_CHECK_NO).setData(objCheckNo);
+                        screen.getScreenRecord().getField(RefundScreenRecord.CHECK_DATE).setData(objCheckDate);
                     }
                 }
             }

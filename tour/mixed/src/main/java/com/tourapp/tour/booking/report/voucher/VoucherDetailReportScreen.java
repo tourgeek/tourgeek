@@ -85,13 +85,13 @@ public class VoucherDetailReportScreen extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(Tour.kTourFile)));
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(Tour.TOUR_FILE)));
         
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(new ReadSecondaryHandler(recVendor));
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(new ReadSecondaryHandler(recVendor));
         
-        this.getRecord(BookingDetail.kBookingDetailFile).addListener(new SubFileFilter(this.getRecord(ApTrx.kApTrxFile)));
-        this.getRecord(BookingDetail.kBookingDetailFile).setKeyArea(BookingDetail.kApTrxIDKey);
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(ApTrx.AP_TRX_FILE)));
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).setKeyArea(BookingDetail.AP_TRX_ID_KEY);
     }
     /**
      * SetupSFields Method.
@@ -99,14 +99,14 @@ public class VoucherDetailReportScreen extends ReportScreen
     public void setupSFields()
     {
         Record recApTrx = this.getMainRecord();
-        ((ReferenceField)recApTrx.getField(ApTrx.kTourID)).setReferenceRecord(this.getRecord(Tour.kTourFile));
+        ((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).setReferenceRecord(this.getRecord(Tour.TOUR_FILE));
         for (int iFieldSeq = 0; iFieldSeq < recApTrx.getFieldCount(); iFieldSeq++)
         {
             BaseField field = recApTrx.getField(iFieldSeq);
             this.addColumn(field);
         }
         
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         for (int iFieldSeq = 0; iFieldSeq < recVendor.getFieldCount(); iFieldSeq++)
         {
             BaseField field = recVendor.getField(iFieldSeq);

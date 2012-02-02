@@ -351,7 +351,7 @@ public class TourHeader extends Product
             if (m_recTourHeaderPricing.getRecordOwner() != null)
                 m_recTourHeaderPricing.getRecordOwner().removeRecord(m_recTourHeaderPricing);
         }
-        //ReferenceField fldTourClass = (ReferenceField)m_recTourHeaderPricing.getField(TourHeaderPricing.kClassID);
+        //ReferenceField fldTourClass = (ReferenceField)m_recTourHeaderPricing.getField(TourHeaderPricing.CLASS_ID);
         TourRateResponse responseMessage = null;
         if (messageReply == null)
         {
@@ -371,14 +371,14 @@ public class TourHeader extends Product
         
         dTotalLocalCost = Math.floor(dTotalLocalCost * 100.00 + 0.5) / 100.00;
         
-        this.getField(TourHeader.kClassID).setValue(iTourClassID);
+        this.getField(TourHeader.CLASS_ID).setValue(iTourClassID);
         
-        this.getField(TourHeader.kPPCost).setValue(dTourCost);
-        this.getField(TourHeader.kPPPriceLocal).setValue(dTourPrice);
-        this.getField(Product.kProductCost).setValue(dTotalLocalCost);
-        this.getField(Product.kProductPriceLocal).setValue(dTotalLocalPrice);
+        this.getField(TourHeader.PP_COST).setValue(dTourCost);
+        this.getField(TourHeader.PP_PRICE_LOCAL).setValue(dTourPrice);
+        this.getField(Product.PRODUCT_COST).setValue(dTotalLocalCost);
+        this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalLocalPrice);
         
-        responseProductMessageData.setPPCost(this.getField(TourHeader.kPPCost).getValue());
+        responseProductMessageData.setPPCost(this.getField(TourHeader.PP_COST).getValue());
         if (iTourClassID != productMessageData.getRateClassID())
         {
             responseProductMessageData.setRateClassID(productMessageData.getRateClassID());
@@ -390,7 +390,7 @@ public class TourHeader extends Product
         if (dTotalLocalCost == 0)
             iStatus = BaseStatus.NOT_VALID;
         responseMessage.setMessageDataStatus(iStatus);
-        this.getField(Product.kDisplayCostStatusID).setValue(iStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iStatus);
         return messageReply;
     }
     /**
@@ -407,7 +407,7 @@ public class TourHeader extends Product
      */
     public int addMessageBookingDetail(BookingDetail recBookingDetail, Booking recBooking, Tour recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
     {
-        if (this.getField(TourHeader.kTourSeries).getState() == true)
+        if (this.getField(TourHeader.TOUR_SERIES).getState() == true)
             productRequest.put(ProductRequest.PRODUCT_MESSAGE, null);   // Don't need to add this detail
         if (productRequest != null)
         {
@@ -427,9 +427,9 @@ public class TourHeader extends Product
                     calendar.set(Calendar.MILLISECOND, 0);
                     objDetailDate = calendar.getTime();
                     if (objProductID != null)
-                        if (objProductID.equals(recTour.getField(Tour.kTourHeaderID).getData()))
+                        if (objProductID.equals(recTour.getField(Tour.TOUR_HEADER_ID).getData()))
                             if (objDetailDate != null)
-                                if (objDetailDate.equals(recTour.getField(Tour.kDepartureDate).getData()))
+                                if (objDetailDate.equals(recTour.getField(Tour.DEPARTURE_DATE).getData()))
                                     productRequest.put(ProductRequest.PRODUCT_MESSAGE, null);   // Don't need to add this detail
                 }
             }
@@ -441,16 +441,16 @@ public class TourHeader extends Product
      */
     public int changeMessageBookingDetail(BookingDetail recBookingDetail, Booking recBooking, Tour recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
     {
-            if (this.getField(TourHeader.kTourSeries).getState() == true)
+            if (this.getField(TourHeader.TOUR_SERIES).getState() == true)
             {
                 ProductMessageData productMessage = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
                 Date date = (Date)productMessage.get(BookingDetail.DETAIL_DATE);
                 if (date != null)
                 {   // Departure date change.
-                    TourClass recTourClass = (TourClass)((ReferenceField)this.getField(TourHeader.kTourClassID)).getReferenceRecord(this.findRecordOwner());
-                    BaseField fldTourCode = this.getField(TourHeader.kCode);
-                    DateField fldDepartureDate = (DateField)recTour.getField(Tour.kDepartureDate);
-                    BaseField fldTourDesc = this.getField(TourHeader.kDescription);
+                    TourClass recTourClass = (TourClass)((ReferenceField)this.getField(TourHeader.TOUR_CLASS_ID)).getReferenceRecord(this.findRecordOwner());
+                    BaseField fldTourCode = this.getField(TourHeader.CODE);
+                    DateField fldDepartureDate = (DateField)recTour.getField(Tour.DEPARTURE_DATE);
+                    BaseField fldTourDesc = this.getField(TourHeader.DESCRIPTION);
                             
                     FieldListener fieldBehavior = null;
                     fieldBehavior = new ChangeTourHeaderHandler(this, recTourClass, recTour, recBooking, fldTourCode, fldDepartureDate, null);
@@ -468,16 +468,16 @@ public class TourHeader extends Product
      */
     public TourHeader getBookingTourHeader(BookingControl recBookingControl)
     {
-        if (this.getField(TourHeader.kTourSeries).getState() == true)
+        if (this.getField(TourHeader.TOUR_SERIES).getState() == true)
             return this;   // This is a valid tour header, don't need to set one up
         if (recBookingControl != null)
-            if (!recBookingControl.getField(BookingControl.kTourHeaderTourType).isNull())
+            if (!recBookingControl.getField(BookingControl.TOUR_HEADER_TOUR_TYPE).isNull())
                 if ((this.getEditMode() == DBConstants.EDIT_CURRENT) || (this.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
         {
-            TourTypeField fldTourType = (TourTypeField)recBookingControl.getField(BookingControl.kTourHeaderTourType);
+            TourTypeField fldTourType = (TourTypeField)recBookingControl.getField(BookingControl.TOUR_HEADER_TOUR_TYPE);
             int iTourTypeMask = fldTourType.getBitsToCheck();
-            int iTourHeaderTourType = (int)recBookingControl.getField(BookingControl.kTourHeaderTourType).getValue();
-            if ((iTourHeaderTourType & (int)this.getField(TourHeader.kTourType).getValue() & iTourTypeMask) != 0)
+            int iTourHeaderTourType = (int)recBookingControl.getField(BookingControl.TOUR_HEADER_TOUR_TYPE).getValue();
+            if ((iTourHeaderTourType & (int)this.getField(TourHeader.TOUR_TYPE).getValue() & iTourTypeMask) != 0)
                 return this;   // This is a valid tour header, don't need to set one up
         }
         return super.getBookingTourHeader(recBookingControl);
@@ -506,7 +506,7 @@ public class TourHeader extends Product
      */
     public double getTourCost(Date dateTarget, TourMessageData productMessageData, boolean bGetPrice)
     {
-        return this.getTourCost(dateTarget, TourHeaderOption.TOUR, this.getField(TourHeader.kID), productMessageData, bGetPrice);
+        return this.getTourCost(dateTarget, TourHeaderOption.TOUR, this.getField(TourHeader.ID), productMessageData, bGetPrice);
     }
     /**
      * GetTourCost Method.
@@ -523,15 +523,15 @@ public class TourHeader extends Product
         PaxCategory recPaxCategory = new PaxCategory(this.findRecordOwner());
         TourHeaderLine recTourHeaderPricing = new TourHeaderLine(this.findRecordOwner());
         try {
-            recTourHeaderOption.setKeyArea(TourHeaderOption.kTourOrOptionKey);
-            recTourHeaderOption.addListener(new StringSubFileFilter(strTourOrOption, TourHeaderOption.kTourOrOption, fldTourOrOptionID.getData().toString(), TourHeaderOption.kTourOrOptionID, null, -1));
+            recTourHeaderOption.setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
+            recTourHeaderOption.addListener(new StringSubFileFilter(strTourOrOption, TourHeaderOption.TOUR_OR_OPTION, fldTourOrOptionID.getData().toString(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
             recTourHeaderOption.close();
             while (recTourHeaderOption.hasNext())
             {
                 recTourHeaderOption.next();
-                if (recTourHeaderOption.getField(TourHeaderOption.kAskForAnswer).getState() == true)
+                if (recTourHeaderOption.getField(TourHeaderOption.ASK_FOR_ANSWER).getState() == true)
                     continue;
-                if (recTourHeaderOption.getField(TourHeaderOption.kAlwaysResolve).getState() == false)
+                if (recTourHeaderOption.getField(TourHeaderOption.ALWAYS_RESOLVE).getState() == false)
                     continue;
                 boolean bIsValid = false;
                 int iPaxInRooms = 0;
@@ -545,11 +545,11 @@ public class TourHeader extends Product
                 while (recPaxCategory.hasNext())
                 {
                     recPaxCategory.next();
-                    if (recTourHeaderOption.isValid(null, recPaxCategory.getField(PaxCategory.kID), dateTarget))
+                    if (recTourHeaderOption.isValid(null, recPaxCategory.getField(PaxCategory.ID), dateTarget))
                     {   // This option applies to this target departure date
                         bIsValid = true;
                         short shPaxInRoomType = (short)iTargetPax;
-                        int iRoomType = (int)recPaxCategory.getField(PaxCategory.kRoomType).getValue();
+                        int iRoomType = (int)recPaxCategory.getField(PaxCategory.ROOM_TYPE).getValue();
                         if (iRoomType != 0)
                         {
                             Short shortPaxInRoomType = (Short)productMessageData.get(Product.ROOM_TYPE_PARAM + Integer.toString(iRoomType));
@@ -558,8 +558,8 @@ public class TourHeader extends Product
                                 shPaxInRoomType = shortPaxInRoomType.shortValue();
                             if (iPaxInRooms != iTargetPax)
                             {   // Special case - Didn't specify room configuration, so return the twin share price
-                                if ((recPaxCategory.getField(PaxCategory.kID).getValue() == PaxCategory.ALL_ID)
-                                    || (recPaxCategory.getField(PaxCategory.kID).getValue() == PaxCategory.DOUBLE_ID))
+                                if ((recPaxCategory.getField(PaxCategory.ID).getValue() == PaxCategory.ALL_ID)
+                                    || (recPaxCategory.getField(PaxCategory.ID).getValue() == PaxCategory.DOUBLE_ID))
                                         shPaxInRoomType = (short)iTargetPax;
                                 else
                                     shPaxInRoomType = 0;   // Don't process other room types.
@@ -567,13 +567,13 @@ public class TourHeader extends Product
                         }
                         if (shPaxInRoomType == 0)
                             continue;   // No pax in this category
-                        double dRoomCost = this.getTourCost(recTourHeaderPricing, recTourHeaderOption, recPaxCategory.getField(PaxCategory.kID), bGetPrice);
+                        double dRoomCost = this.getTourCost(recTourHeaderPricing, recTourHeaderOption, recPaxCategory.getField(PaxCategory.ID), bGetPrice);
                         dCostTotal += dRoomCost * shPaxInRoomType;
                     }
                     if (bIsValid)
-                        if (recTourHeaderOption.getField(TourHeaderOption.kDetailOptionCount).getValue() > 0)
+                        if (recTourHeaderOption.getField(TourHeaderOption.DETAIL_OPTION_COUNT).getValue() > 0)
                     {
-                        dCostTotal += this.getTourCost(dateTarget, TourHeaderOption.OPTION, recTourHeaderOption.getField(TourHeaderOption.kID), productMessageData, bGetPrice);
+                        dCostTotal += this.getTourCost(dateTarget, TourHeaderOption.OPTION, recTourHeaderOption.getField(TourHeaderOption.ID), productMessageData, bGetPrice);
                     }
                 }
             }
@@ -588,9 +588,9 @@ public class TourHeader extends Product
             recTourHeaderPricing = null;
         }
         
-        this.getField(Product.kProductCost).setValue(dCostTotal);
+        this.getField(Product.PRODUCT_COST).setValue(dCostTotal);
         int iCostStatus = CostStatus.VALID;
-        this.getField(Product.kDisplayCostStatusID).setValue(iCostStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iCostStatus);
         return dCostTotal;
     }
     /**
@@ -600,8 +600,8 @@ public class TourHeader extends Product
     {
         double dTourCost = 0;
         FileListener listener = null;
-        recTourHeaderLine.setKeyArea(TourHeaderLine.kTourHeaderOptionIDKey);
-        recTourHeaderLine.addListener(listener = new SubFileFilter(recTourHeaderOption.getField(TourHeaderOption.kID), TourHeaderLine.kTourHeaderOptionID, fldPaxCategory, TourHeaderLine.kPaxCategoryID, null, -1));
+        recTourHeaderLine.setKeyArea(TourHeaderLine.TOUR_HEADER_OPTION_ID_KEY);
+        recTourHeaderLine.addListener(listener = new SubFileFilter(recTourHeaderOption.getField(TourHeaderOption.ID), TourHeaderLine.TOUR_HEADER_OPTION_ID, fldPaxCategory, TourHeaderLine.PAX_CATEGORY_ID, null, null));
         recTourHeaderLine.close();
         try {
             while (recTourHeaderLine.hasNext())
@@ -610,14 +610,14 @@ public class TourHeader extends Product
                 double dCost = 0;
                 if (!bGetPrice)
                 {
-                    dCost = recTourHeaderLine.getField(TourHeaderLine.kCost).getValue();
-                    ProductTerms recProductTerms = (ProductTerms)((ReferenceField)recTourHeaderLine.getField(TourHeaderLine.kProductTermsID)).getReference();
+                    dCost = recTourHeaderLine.getField(TourHeaderLine.COST).getValue();
+                    ProductTerms recProductTerms = (ProductTerms)((ReferenceField)recTourHeaderLine.getField(TourHeaderLine.PRODUCT_TERMS_ID)).getReference();
                     if (recProductTerms != null)
                         if (recProductTerms.getEditMode() == DBConstants.EDIT_CURRENT)
                             dCost = recProductTerms.calcNetCost(dCost, null);
                 }
                 else
-                    dCost = recTourHeaderLine.getField(TourHeaderLine.kPrice).getValue();
+                    dCost = recTourHeaderLine.getField(TourHeaderLine.PRICE).getValue();
                 dTourCost = dTourCost + dCost;
             }
         } catch (DBException ex) {
@@ -647,24 +647,24 @@ public class TourHeader extends Product
             { // Tour code is in, read using this code and the date
                 strSave = fldTourDesc.getString();  // Save this
                 this.addNew();
-                this.getField(TourHeader.kDescription).setString(strSave);
-                strSave = this.getField(TourHeader.kDescSort).toString();
+                this.getField(TourHeader.DESCRIPTION).setString(strSave);
+                strSave = this.getField(TourHeader.DESC_SORT).toString();
                 this.addNew();
-                FileListener fileBehavior = new StringSubFileFilter(strSave, TourHeader.kDescSort, null, -1, null, -1);
+                FileListener fileBehavior = new StringSubFileFilter(strSave, TourHeader.DESC_SORT, null, null, null, null);
                 this.addListener(fileBehavior);
                 FileListener fileBehavior2 = null;
                 if (fldDepartureDate.getLength() != 0)
                 {
-                    fileBehavior2 = new ExtractRangeFilter(TourHeader.kStartDate, fldDepartureDate, TourHeader.kEndDate, fldDepartureDate, ExtractRangeFilter.PAD_END_FIELD);
+                    fileBehavior2 = new ExtractRangeFilter(TourHeader.START_DATE, fldDepartureDate, TourHeader.END_DATE, fldDepartureDate, ExtractRangeFilter.PAD_END_FIELD);
                     this.addListener(fileBehavior2);
                 }
-                this.setKeyArea(TourHeader.kDescSortKey);
+                this.setKeyArea(TourHeader.DESC_SORT_KEY);
                 this.close();
                 boolean bHasNext = this.hasNext();
                 if (bHasNext)
                     this.next();
-                this.getField(TourHeader.kDescription).setEnabled(true);
-                this.setKeyArea(TourHeader.kIDKey);
+                this.getField(TourHeader.DESCRIPTION).setEnabled(true);
+                this.setKeyArea(TourHeader.ID_KEY);
                 this.removeListener(fileBehavior, true);
                 if (fileBehavior2 != null)
                     this.removeListener(fileBehavior2, true);
@@ -681,21 +681,21 @@ public class TourHeader extends Product
             { // Tour code is in, read using this code and the date
                 strSave = fldTourCode.getString();  // Save this
                 this.addNew();
-                FileListener fileBehavior = new StringSubFileFilter(strSave, TourHeader.kCode, null, -1, null, -1);
+                FileListener fileBehavior = new StringSubFileFilter(strSave, TourHeader.CODE, null, null, null, null);
                 this.addListener(fileBehavior);
                 FileListener fileBehavior2 = null;
                 if (fldDepartureDate.getLength() != 0)
                 {
-                    fileBehavior2 = new ExtractRangeFilter(TourHeader.kStartDate, fldDepartureDate, TourHeader.kEndDate, fldDepartureDate, ExtractRangeFilter.PAD_END_FIELD);
+                    fileBehavior2 = new ExtractRangeFilter(TourHeader.START_DATE, fldDepartureDate, TourHeader.END_DATE, fldDepartureDate, ExtractRangeFilter.PAD_END_FIELD);
                     this.addListener(fileBehavior2);
                 }
-                this.setKeyArea(TourHeader.kCodeKey);
+                this.setKeyArea(TourHeader.CODE_KEY);
                 this.close();
                 boolean bHasNext = this.hasNext();
                 if (bHasNext)
                     this.next();
-                this.getField(TourHeader.kCode).setEnabled(true);
-                this.setKeyArea(TourHeader.kIDKey);
+                this.getField(TourHeader.CODE).setEnabled(true);
+                this.setKeyArea(TourHeader.ID_KEY);
                 this.removeListener(fileBehavior, true);
                 if (fileBehavior2 != null)
                     this.removeListener(fileBehavior2, true);
@@ -737,9 +737,9 @@ public class TourHeader extends Product
         ltargetDate = nextYear.getTime().getTime();
         fldEndDate.setValue(Math.max(ltargetDate, (long)fldDepartureDate.getValue()));
         
-        FileListener fileBehavior = new ExtractRangeFilter(TourHeader.kStartDate, fldStartDate, TourHeader.kEndDate, fldEndDate, ExtractRangeFilter.PAD_DEFAULT);
+        FileListener fileBehavior = new ExtractRangeFilter(TourHeader.START_DATE, fldStartDate, TourHeader.END_DATE, fldEndDate, ExtractRangeFilter.PAD_DEFAULT);
         this.addListener(fileBehavior);
-        this.setKeyArea(TourHeader.kDescSortKey);
+        this.setKeyArea(TourHeader.DESC_SORT_KEY);
         SPopupBox screenField = new SPopupBox(itsLocation, parentScreen, converter, iDisplayFieldDesc);
         this.removeListener(fileBehavior, true);
         return screenField;
@@ -759,12 +759,12 @@ public class TourHeader extends Product
                     m_recDependent = this.createSubRecord();
                 if (m_recDependent != null)
                 {
-                    m_recDependent.setKeyArea(TourHeaderOption.kTourOrOptionKey);
+                    m_recDependent.setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
                     StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
                     m_recDependent.addListener(new FreeOnFreeHandler(fldTourOrOption));
                     fldTourOrOption.setString(TourHeaderOption.TOUR);
                     if (m_recDependent.getListener(SubFileFilter.class.getName()) == null)
-                        m_recDependent.addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.kTourOrOption, (BaseField)this.getOwner().getCounterField(), TourHeaderOption.kTourOrOptionID, null, -1));
+                        m_recDependent.addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.TOUR_OR_OPTION, (BaseField)this.getOwner().getCounterField(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
                 }
                 return m_recDependent;
             }

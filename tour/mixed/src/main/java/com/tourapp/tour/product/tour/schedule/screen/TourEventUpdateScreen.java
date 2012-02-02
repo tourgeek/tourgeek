@@ -119,11 +119,11 @@ public class TourEventUpdateScreen extends Screen
             BaseMessage message = new MapMessage(new TrxMessageHeader(strQueueName, strQueueType, properties), properties);
             String strProcess = Utility.propertiesToURL(null, properties);
         
-            if (RunProcessInField.REMOTE_PROCESS.equalsIgnoreCase(this.getScreenRecord().getField(TourEventScreenRecord.kRunProcessIn).toString()))
+            if (RunProcessInField.REMOTE_PROCESS.equalsIgnoreCase(this.getScreenRecord().getField(TourEventScreenRecord.RUN_PROCESS_IN).toString()))
             {
                 app.getMessageManager().sendMessage(message);
             }
-            else if (RunProcessInField.LOCAL_PROCESS.equalsIgnoreCase(this.getScreenRecord().getField(TourEventScreenRecord.kRunProcessIn).toString()))
+            else if (RunProcessInField.LOCAL_PROCESS.equalsIgnoreCase(this.getScreenRecord().getField(TourEventScreenRecord.RUN_PROCESS_IN).toString()))
             {
                 app.getTaskScheduler().addTask(new ProcessRunnerTask(app, strProcess, null));
             }

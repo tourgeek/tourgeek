@@ -104,25 +104,25 @@ public class ProductSearchSession extends Session
     {
         super.addListeners();
         Record record = this.getMainRecord();
-        record.setKeyArea(Product.kDescSortKey);
+        record.setKeyArea(Product.DESC_SORT_KEY);
         if (!(record.getTable() instanceof GridTable))
         {
             GridTable gridTable = new GridTable(null, record);
             gridTable.setCache(true);  // Typically, the client is a gridscreen which caches the records (so I don't have to!)
         }
         
-        Record recVendor = ((ReferenceField)record.getField(Product.kVendorID)).getReferenceRecord();
-        record.getField(Product.kVendorID).addListener(new ReadSecondaryHandler(recVendor));
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord();
-        recVendor.getField(Product.kVendorID).addListener(new ReadSecondaryHandler(recCurrencys));
+        Record recVendor = ((ReferenceField)record.getField(Product.VENDOR_ID)).getReferenceRecord();
+        record.getField(Product.VENDOR_ID).addListener(new ReadSecondaryHandler(recVendor));
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord();
+        recVendor.getField(Product.VENDOR_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         FieldListener listener = null;
-        recVendor.getField(Vendor.kVendorName).addListener(listener = new MoveOnChangeHandler(record.getField(Product.kVendorName)));
+        recVendor.getField(Vendor.VENDOR_NAME).addListener(listener = new MoveOnChangeHandler(record.getField(Product.VENDOR_NAME)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recCurrencys.getField(Currencys.kCurrencyCode).addListener(listener = new MoveOnChangeHandler(record.getField(Product.kCurrencyCode)));
+        recCurrencys.getField(Currencys.CURRENCY_CODE).addListener(listener = new MoveOnChangeHandler(record.getField(Product.CURRENCY_CODE)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
         this.selectGridFields();    // Initial value
         
-        record.addListener(new MoveOnValidHandler(record.getField(Product.kCurrencyCodeLocal), this.getRecord(Booking.kBookingFile).getField(Booking.kCurrencyCode)));
+        record.addListener(new MoveOnValidHandler(record.getField(Product.CURRENCY_CODE_LOCAL), this.getRecord(Booking.BOOKING_FILE).getField(Booking.CURRENCY_CODE)));
         
         this.addRateMessageListeners((Product)this.getMainRecord(), (ProductScreenRecord)this.getScreenRecord());
         this.addAvailabilityMessageListeners((Product)this.getMainRecord(), (ProductScreenRecord)this.getScreenRecord());
@@ -133,7 +133,7 @@ public class ProductSearchSession extends Session
      */
     public void addPriceListeners(Product recProduct)
     {
-        recProduct.getField(Product.kProductPriceLocal).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Product.PRODUCT_PRICE_LOCAL).addListener(new AddCommissionHandler(null));
     }
     /**
      * Select the fields required for the grid screen.
@@ -143,20 +143,20 @@ public class ProductSearchSession extends Session
         Record record = this.getMainRecord();
         
         record.setSelected(false);
-        record.getField(Product.kID).setSelected(true);
-        record.getField(Product.kDescription).setSelected(true);
-        record.getField(Product.kProductType).setSelected(true);
-        record.getField(Product.kDisplayCostStatusID).setSelected(true);
-        record.getField(Product.kProductCost).setSelected(true);
-        record.getField(Product.kProductCostLocal).setSelected(true);
-        record.getField(Product.kProductPriceLocal).setSelected(true);
-        record.getField(Product.kPPPriceLocal).setSelected(true);
-        record.getField(Product.kInventoryAvailability).setSelected(true);
-        record.getField(Product.kDisplayInventoryStatusID).setSelected(true);
-        record.getField(Product.kVendorID).setSelected(true);
-        record.getField(Product.kCurrencyCode).setSelected(true);
-        record.getField(Product.kCurrencyCodeLocal).setSelected(true);
-        record.getField(Product.kVendorName).setSelected(true);
+        record.getField(Product.ID).setSelected(true);
+        record.getField(Product.DESCRIPTION).setSelected(true);
+        record.getField(Product.PRODUCT_TYPE).setSelected(true);
+        record.getField(Product.DISPLAY_COST_STATUS_ID).setSelected(true);
+        record.getField(Product.PRODUCT_COST).setSelected(true);
+        record.getField(Product.PRODUCT_COST_LOCAL).setSelected(true);
+        record.getField(Product.PRODUCT_PRICE_LOCAL).setSelected(true);
+        record.getField(Product.PP_PRICE_LOCAL).setSelected(true);
+        record.getField(Product.INVENTORY_AVAILABILITY).setSelected(true);
+        record.getField(Product.DISPLAY_INVENTORY_STATUS_ID).setSelected(true);
+        record.getField(Product.VENDOR_ID).setSelected(true);
+        record.getField(Product.CURRENCY_CODE).setSelected(true);
+        record.getField(Product.CURRENCY_CODE_LOCAL).setSelected(true);
+        record.getField(Product.VENDOR_NAME).setSelected(true);
         
         GetProductCostHandler listener = (GetProductCostHandler)record.getListener(GetProductCostHandler.class, false);
         if (listener != null)
@@ -173,8 +173,8 @@ public class ProductSearchSession extends Session
         Record record = this.getMainRecord();
         
         record.setSelected(true);
-        record.getField(Product.kDescSort).setSelected(false);
-        record.getField(Product.kItineraryDesc).setSelected(false);
+        record.getField(Product.DESC_SORT).setSelected(false);
+        record.getField(Product.ITINERARY_DESC).setSelected(false);
         
         GetProductCostHandler listener = (GetProductCostHandler)record.getListener(GetProductCostHandler.class, false);
         if (listener != null)
@@ -224,7 +224,7 @@ public class ProductSearchSession extends Session
         {
             Record recProduct = this.getMainRecord();
             recProduct.close();
-            recProduct.setKeyArea(Product.kDescSortKey);  // Default order
+            recProduct.setKeyArea(Product.DESC_SORT_KEY);  // Default order
             this.selectGridFields();
             TableSession session = (TableSession)this.getRemoteTable(this.getMainRecord().getTableNames(false));
             session.setFieldTypes(this.getMainRecord(), -1);
@@ -275,10 +275,10 @@ public class ProductSearchSession extends Session
     public void addRateMessageListeners(Product recProduct, ProductScreenRecord screenRecord)
     {
         // Override this to add the listeners and message queues (remember to call super)
-        this.getMainRecord().getField(Product.kProductCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Product.kProductCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kProductCostLocal)));
-        this.getMainRecord().getField(Product.kPPCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Product.kPPCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kPPCostLocal)));
+        this.getMainRecord().getField(Product.PRODUCT_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Product.PRODUCT_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.PRODUCT_COST_LOCAL)));
+        this.getMainRecord().getField(Product.PP_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Product.PP_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.PP_COST_LOCAL)));
         // Create a private messageReceiver and listen for changes
         MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         Integer intRegistryID = null;
@@ -313,20 +313,20 @@ public class ProductSearchSession extends Session
     public void setScreenFields(Map<String,Object> properties)
     {
         Record recProduct = this.getMainRecord();
-        this.addThisRecordFilter(properties, City.kCityFile, JTreePanel.LOCATION, Product.kCityID, ProductScreenRecord.kCityID);
+        this.addThisRecordFilter(properties, City.CITY_FILE, JTreePanel.LOCATION, Product.CITY_ID, ProductScreenRecord.CITY_ID);
         Date date = this.getPropertyDate((String)properties.get(SearchConstants.DATE));
         if (date != null)
-            ((DateTimeField)this.getScreenRecord().getField(ProductScreenRecord.kDetailDate)).setDateTime(date, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+            ((DateTimeField)this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE)).setDateTime(date, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
         String strSearchText = (String)properties.get(SearchConstants.SEARCH_TEXT);
         if ((strSearchText != null) && (strSearchText.length() > 0))
-            this.getScreenRecord().getField(ProductScreenRecord.kDescription).setString(strSearchText.toUpperCase());
+            this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION).setString(strSearchText.toUpperCase());
         
         String strPax = (String)properties.get(SearchConstants.PAX);
         if ((strPax == null) || (strPax.length() == 0) || (strPax.equals("0")))     // Pax will be correct when pax are in a booking.
             strPax = "2";
-        this.getScreenRecord().getField(ProductScreenRecord.kPax).setString(strPax);
+        this.getScreenRecord().getField(ProductScreenRecord.PAX).setString(strPax);
         // For now:
-        this.getScreenRecord().getField(ProductScreenRecord.kRemoteQueryEnabled).setState(true);
+        this.getScreenRecord().getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).setState(true);
     }
     /**
      * RestoreProductParam Method.
@@ -382,7 +382,7 @@ public class ProductSearchSession extends Session
      * @param iFieldSeq Sequence of the field to set the filter on.
      * @returns true If the filter was added.
      */
-    public boolean addThisRecordFilter(Map<String,Object> properties, String strRecordName, String strParamName, int iFieldSeq, int iScreenRecordField)
+    public boolean addThisRecordFilter(Map<String,Object> properties, String strRecordName, String strParamName, String iFieldSeq, String iScreenRecordField)
     {
         if (strParamName == null)
             strParamName = JTreePanel.LOCATION;
@@ -405,7 +405,7 @@ public class ProductSearchSession extends Session
     /**
      * Given this reference field and key, create a filter.
      */
-    public void addObjectIDFilter(String strID, int iFieldSeq, int iScreenRecordField)
+    public void addObjectIDFilter(String strID, String iFieldSeq, String iScreenRecordField)
     {
         Record screenRecord = this.getScreenRecord();
         ReferenceField fldReference = (ReferenceField)screenRecord.getField(iScreenRecordField);
@@ -425,7 +425,7 @@ public class ProductSearchSession extends Session
     /**
      * From the location text, look up a matching (or close) location.
      */
-    public String findRecord(Map<String,Object> properties, String strRecordName, String strParamName, int iScreenRecordField)
+    public String findRecord(Map<String,Object> properties, String strRecordName, String strParamName, String iScreenRecordField)
     {
         String strLocationText = (String)properties.get(strParamName);
         if ((strLocationText == null) || (strLocationText.length() == 0))
@@ -437,41 +437,41 @@ public class ProductSearchSession extends Session
             this.getRecord(strRecordName);
         if (recLocation == null)
         {
-            if (Continent.kContinentFile.equalsIgnoreCase(strRecordName))
+            if (Continent.CONTINENT_FILE.equalsIgnoreCase(strRecordName))
                 recLocation = new Continent(this);
-            else if (Region.kRegionFile.equalsIgnoreCase(strRecordName))
+            else if (Region.REGION_FILE.equalsIgnoreCase(strRecordName))
                 recLocation = new Region(this);
-            else if (Country.kCountryFile.equalsIgnoreCase(strRecordName))
+            else if (Country.COUNTRY_FILE.equalsIgnoreCase(strRecordName))
                 recLocation = new Country(this);
-            else if (State.kStateFile.equalsIgnoreCase(strRecordName))
+            else if (State.STATE_FILE.equalsIgnoreCase(strRecordName))
                 recLocation = new State(this);
-            else if (City.kCityFile.equalsIgnoreCase(strRecordName))
+            else if (City.CITY_FILE.equalsIgnoreCase(strRecordName))
                 recLocation = new City(this);
         }
         if (recLocation == null)
             return null;
         try {
-            int iCodeLength = recLocation.getKeyArea(Location.kCodeKey).getField(DBConstants.MAIN_FIELD).getMaxLength();
+            int iCodeLength = recLocation.getKeyArea(Location.CODE_KEY).getField(DBConstants.MAIN_FIELD).getMaxLength();
             boolean bSuccess = false;
             if (strLocationText.length() <= iCodeLength)
             {
-                recLocation.setKeyArea(Location.kCodeKey);
-                recLocation.getKeyArea(Location.kCodeKey).getField(DBConstants.MAIN_FIELD).setString(strLocationText);
+                recLocation.setKeyArea(Location.CODE_KEY);
+                recLocation.getKeyArea(Location.CODE_KEY).getField(DBConstants.MAIN_FIELD).setString(strLocationText);
                 bSuccess = recLocation.seek(null);
             }
             if (!bSuccess)
             {
-                recLocation.setKeyArea(Location.kNameKey);
-                recLocation.getKeyArea(Location.kNameKey).getField(DBConstants.MAIN_FIELD).setString(strLocationText);
+                recLocation.setKeyArea(Location.NAME_KEY);
+                recLocation.getKeyArea(Location.NAME_KEY).getField(DBConstants.MAIN_FIELD).setString(strLocationText);
                 bSuccess = recLocation.seek(">=");
                 if (bSuccess)
-                    if (!recLocation.getKeyArea(Location.kNameKey).getField(DBConstants.MAIN_FIELD).toString().toUpperCase().startsWith(strLocationText.toUpperCase()))
+                    if (!recLocation.getKeyArea(Location.NAME_KEY).getField(DBConstants.MAIN_FIELD).toString().toUpperCase().startsWith(strLocationText.toUpperCase()))
                         bSuccess = false;
             }
             if (bSuccess)
             {
                 properties.put(MODIFIED_PARAM, Boolean.TRUE);
-                properties.put(strParamName, recLocation.getKeyArea(Location.kNameKey).getField(DBConstants.MAIN_FIELD).toString());
+                properties.put(strParamName, recLocation.getKeyArea(Location.NAME_KEY).getField(DBConstants.MAIN_FIELD).toString());
                 properties.put(strParamName + DBParams.ID, recLocation.getHandle(DBConstants.OBJECT_ID_HANDLE).toString());
                 if (strRecordName != null)
                     properties.put(strParamName + MenuConstants.RECORD, strRecordName);

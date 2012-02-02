@@ -67,7 +67,7 @@ public class AirRateSelect extends AirRateField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), AirRate.kDescriptionKey, AirRate.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), AirRate.DESCRIPTION_KEY, AirRate.DESCRIPTION, true, true);
     }
 
 }

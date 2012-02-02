@@ -74,8 +74,8 @@ public class ProfileField extends CustSaleCustNo
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Profile recProfile = (Profile)this.makeReferenceRecord();
-        Converter paConverter = new FirstMLastConverter(recProfile, Profile.kNamePrefix, Profile.kNameFirst, Profile.kNameMiddle, Profile.kNameSur, Profile.kNameSuffix, Profile.kNameTitle);
-        Converter altConverter = new AltFieldConverter(recProfile.getField(Profile.kName), paConverter);
+        Converter paConverter = new FirstMLastConverter(recProfile, Profile.NAME_PREFIX, Profile.NAME_FIRST, Profile.NAME_MIDDLE, Profile.NAME_SUR, Profile.NAME_SUFFIX, Profile.NAME_TITLE);
+        Converter altConverter = new AltFieldConverter(recProfile.getField(Profile.NAME), paConverter);
         altConverter = new FieldLengthConverter(altConverter, 25);
         altConverter = new FieldDescConverter((Converter)altConverter, (Converter)converter);
         ScreenField sField = (ScreenField)altConverter.setupDefaultView(itsLocation, targetScreen, altConverter, iDisplayFieldDesc, properties);

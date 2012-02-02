@@ -35,6 +35,7 @@ public class HotelScreenRecord extends ProductScreenRecord
     //public static final int kProductID = kProductID;
     //public static final int kRateID = kRateID;
     //public static final int kClassID = kClassID;
+    public static final String PAX_CATEGORY_ID = "PaxCategoryID";
     public static final int kPaxCategoryID = kProductScreenRecordLastField + 1;
     public static final int kHotelScreenRecordLastField = kPaxCategoryID;
     public static final int kHotelScreenRecordFields = kPaxCategoryID - DBConstants.MAIN_FIELD + 1;

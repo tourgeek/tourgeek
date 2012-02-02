@@ -356,7 +356,7 @@ public class Land extends Product
             strErrorMessage = this.getTask().getApplication().getResources(ResourceConstants.BOOKING_RESOURCE, true).getString(PAX_REQUIRED);
         int iSicPmc = productMessageData.getRateClassID();
         
-        ReferenceField fldLandClass = (ReferenceField)this.getProductPricing().getField(LandPricing.kClassID);
+        ReferenceField fldLandClass = (ReferenceField)this.getProductPricing().getField(LandPricing.CLASS_ID);
         int iPMC = fldLandClass.getIDFromCode(LandClass.PRIVATE_VEHICLE_CODE);
         int iSIC = fldLandClass.getIDFromCode(LandClass.SEAT_IN_COACH_CODE);
         LandRateResponse responseMessage = null;
@@ -385,8 +385,8 @@ public class Land extends Product
                 {   // Loop until found or not
                     this.getProductPricing().next();
                     int iQuantity = ((LandPricing)this.getProductPricing()).getQuantity(this.getTask(), sTargetPax, productMessageData, mapSurvey);
-                    double dCost = ((LandPricing)this.getProductPricing()).getCost(LandPricing.kCost, m_recProductTerms);
-                    double dPrice = ((LandPricing)this.getProductPricing()).getField(LandPricing.kPrice).getValue();
+                    double dCost = ((LandPricing)this.getProductPricing()).getCost(LandPricing.COST, m_recProductTerms);
+                    double dPrice = ((LandPricing)this.getProductPricing()).getField(LandPricing.PRICE).getValue();
                     if (strPMCErrorMessage.length() == 0)
                     {
                         dCostPP += dCost * iQuantity / sTargetPax;
@@ -401,8 +401,8 @@ public class Land extends Product
                 }
                 double dPMCCostPP = dCostPP;
                 double dPMCPricePP = dPricePP;
-                this.getField(Land.kPMCCost).setValue(dPMCCostPP);
-                this.getField(Land.kPMCPriceHome).setValue(dPMCPricePP);
+                this.getField(Land.PMC_COST).setValue(dPMCCostPP);
+                this.getField(Land.PMC_PRICE_HOME).setValue(dPMCPricePP);
         
                 dCostPP = 0.00;
                 dPricePP = 0.00;
@@ -412,8 +412,8 @@ public class Land extends Product
                 {   // Loop until found or not
                     this.getProductPricing().next();
                     int iQuantity = ((LandPricing)this.getProductPricing()).getQuantity(this.getTask(), sTargetPax, productMessageData, mapSurvey);
-                    double dCost = ((LandPricing)this.getProductPricing()).getCost(LandPricing.kCost, m_recProductTerms);
-                    double dPrice = ((LandPricing)this.getProductPricing()).getField(LandPricing.kPrice).getValue();
+                    double dCost = ((LandPricing)this.getProductPricing()).getCost(LandPricing.COST, m_recProductTerms);
+                    double dPrice = ((LandPricing)this.getProductPricing()).getField(LandPricing.PRICE).getValue();
                     if (strSICErrorMessage.length() == 0)
                     {
                         dCostPP += dCost * iQuantity / sTargetPax;
@@ -428,8 +428,8 @@ public class Land extends Product
                 }
                 double dSICCostPP = dCostPP;
                 double dSICPricePP = dPricePP;
-                this.getField(Land.kSICCost).setValue(dSICCostPP);
-                this.getField(Land.kSICPriceHome).setValue(dSICPricePP);
+                this.getField(Land.SIC_COST).setValue(dSICCostPP);
+                this.getField(Land.SIC_PRICE_HOME).setValue(dSICPricePP);
             
                 if (dSICCostPP == 0)
                     if (dPMCCostPP > 0)
@@ -463,16 +463,16 @@ public class Land extends Product
                 dTotalLocalCost = Math.floor(dLandCost * sTargetPax * 100.00 + 0.5) / 100.00;
                 double dTotalLocalPrice = Math.floor(dLandPriceLocal * sTargetPax * 100.00 + 0.5) / 100.00;
             
-                this.getField(Land.kClassID).setValue(iSicPmc);
+                this.getField(Land.CLASS_ID).setValue(iSicPmc);
             
-                this.getField(Land.kPPCost).setValue(dLandCost);
-                this.getField(Land.kPPPriceLocal).setValue(dLandPriceLocal);
-                this.getField(Product.kProductCost).setValue(dTotalLocalCost);
-                this.getField(Product.kProductPriceLocal).setValue(dTotalLocalPrice);
+                this.getField(Land.PP_COST).setValue(dLandCost);
+                this.getField(Land.PP_PRICE_LOCAL).setValue(dLandPriceLocal);
+                this.getField(Product.PRODUCT_COST).setValue(dTotalLocalCost);
+                this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalLocalPrice);
             
-                responseMessageData.setPMCCost(this.getField(Land.kPMCCost).getValue());
-                responseMessageData.setSICCost(this.getField(Land.kSICCost).getValue());
-                responseMessageData.setPPCost(this.getField(Land.kPPCost).getValue());
+                responseMessageData.setPMCCost(this.getField(Land.PMC_COST).getValue());
+                responseMessageData.setSICCost(this.getField(Land.SIC_COST).getValue());
+                responseMessageData.setPPCost(this.getField(Land.PP_COST).getValue());
                 if (iSicPmc != productMessageData.getRateClassID())
                 {
                     responseMessageData.setRateClassID(productMessageData.getRateClassID());
@@ -489,7 +489,7 @@ public class Land extends Product
         if (dTotalLocalCost == 0)
             iCostStatus = BaseStatus.NOT_VALID;
         responseMessage.setMessageDataStatus(iCostStatus);
-        this.getField(Product.kDisplayCostStatusID).setValue(iCostStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iCostStatus);
         if (iCostStatus != BaseStatus.VALID)
         {
             responseMessage.setMessageDataError(strErrorMessage);
@@ -549,7 +549,7 @@ public class Land extends Product
      */
     public long getLengthTime()
     {
-        double dDays = this.getField(Land.kDays).getValue();
+        double dDays = this.getField(Land.DAYS).getValue();
         if (dDays != 0)
             return (long)(dDays * DBConstants.KMS_IN_A_DAY);
         double dHours = this.getField(kHours).getValue();
@@ -574,9 +574,9 @@ public class Land extends Product
     {
         int iErrorCode = DBConstants.ERROR_RETURN;
         
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getDateTime();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
         short sTargetPax = recBookingDetail.getNoPax();
-        int iPMC = (int)recBookingDetail.getField(BookingDetail.kClassID).getValue();
+        int iPMC = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
         
         String strPrefix = LAND_COST_PROPERTIES;
         TrxMessageHeader messageHeader = new TrxMessageHeader(null, null);
@@ -600,11 +600,11 @@ public class Land extends Product
                 if (iQuantity != 0)
                 {
                     int iPricingType = PricingType.COMPONENT_PRICING;
-                    int iPaxCategory = (int)this.getProductPricing().getField(ProductPricing.kPaxCategoryID).getValue();
-                    double dAmount = this.getProductPricing().getField(ProductPricing.kPrice).getValue();
-                    boolean bCommissionable = this.getProductPricing().getField(ProductPricing.kCommissionable).getState();
-                    double dCommissionRate = this.getProductPricing().getField(ProductPricing.kCommissionRate).getValue();
-                    String strPayAt = this.getProductPricing().getField(ProductPricing.kPayAt).toString();
+                    int iPaxCategory = (int)this.getProductPricing().getField(ProductPricing.PAX_CATEGORY_ID).getValue();
+                    double dAmount = this.getProductPricing().getField(ProductPricing.PRICE).getValue();
+                    boolean bCommissionable = this.getProductPricing().getField(ProductPricing.COMMISSIONABLE).getState();
+                    double dCommissionRate = this.getProductPricing().getField(ProductPricing.COMMISSION_RATE).getValue();
+                    String strPayAt = this.getProductPricing().getField(ProductPricing.PAY_AT).toString();
                     iErrorCode = recBookingDetail.updateBookingLine(recBookingLine, iPricingType, iPaxCategory, iQuantity, dAmount, bCommissionable, dCommissionRate, strPayAt, PricingStatus.OKAY, iChangeType);
                 }
             }
@@ -622,17 +622,17 @@ public class Land extends Product
         super.markupPriceFromCost(dMarkup, bMarkupOnlyIfNoPrice);
         if (dMarkup == 0.00)
         {
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.kPMCPriceHome).getValue() == 0))
-                this.getField(Land.kPMCPriceHome).setData(null);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.kSICPriceHome).getValue() == 0))
-                this.getField(Land.kSICPriceHome).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.PMC_PRICE_HOME).getValue() == 0))
+                this.getField(Land.PMC_PRICE_HOME).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.SIC_PRICE_HOME).getValue() == 0))
+                this.getField(Land.SIC_PRICE_HOME).setData(null);
         }
         else
         {
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.kPMCPriceHome).getValue() == 0))
-                this.getField(Land.kPMCPriceHome).setValue(Math.floor(this.getField(kPMCCostHome).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.kSICPriceHome).getValue() == 0))
-                this.getField(Land.kSICPriceHome).setValue(Math.floor(this.getField(kSICCostHome).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.PMC_PRICE_HOME).getValue() == 0))
+                this.getField(Land.PMC_PRICE_HOME).setValue(Math.floor(this.getField(kPMCCostHome).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.SIC_PRICE_HOME).getValue() == 0))
+                this.getField(Land.SIC_PRICE_HOME).setValue(Math.floor(this.getField(kSICCostHome).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
         }
     }
 

@@ -70,7 +70,7 @@ public class HotelClassScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(HotelClass.kHotelClassFile).setKeyArea(HotelClass.kDescriptionKey);
+        this.getRecord(HotelClass.HOTEL_CLASS_FILE).setKeyArea(HotelClass.DESCRIPTION_KEY);
         this.addMainKeyBehavior();
     }
     /**

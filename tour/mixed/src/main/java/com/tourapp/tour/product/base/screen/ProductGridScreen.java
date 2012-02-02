@@ -84,32 +84,32 @@ public class ProductGridScreen extends GridScreen
     {
         super.addListeners();
         this.setEditing(false);
-        this.getMainRecord().setKeyArea(Product.kDescSortKey);
+        this.getMainRecord().setKeyArea(Product.DESC_SORT_KEY);
         
         // Redisplay if any of these change
-        this.getScreenRecord().getField(ProductScreenRecord.kDescription).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(ProductScreenRecord.kCityID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.CITY_ID).addListener(new FieldReSelectHandler(this));
         
-        this.getScreenRecord().getField(ProductScreenRecord.kDetailDate).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(ProductScreenRecord.kRemoteQueryEnabled).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).addListener(new FieldReSelectHandler(this));
         
         this.addRateMessageListeners((Product)this.getMainRecord(), (ProductScreenRecord)this.getScreenRecord());
         
-        this.setThisProperty(ProductScreenRecord.kDetailDate);
-        this.setThisProperty(ProductScreenRecord.kClassID);
-        this.setThisProperty(ProductScreenRecord.kRateID);
-        this.setThisProperty(ProductScreenRecord.kPax);
-        this.setThisProperty(ProductScreenRecord.kCityID);
+        this.setThisProperty(ProductScreenRecord.DETAIL_DATE);
+        this.setThisProperty(ProductScreenRecord.CLASS_ID);
+        this.setThisProperty(ProductScreenRecord.RATE_ID);
+        this.setThisProperty(ProductScreenRecord.PAX);
+        this.setThisProperty(ProductScreenRecord.CITY_ID);
         
-        ((BaseStatusField)this.getMainRecord().getField(Product.kDisplayCostStatusID)).getIconField(null).addListener(new CostStatusUpdateHandler(null));
+        ((BaseStatusField)this.getMainRecord().getField(Product.DISPLAY_COST_STATUS_ID)).getIconField(null).addListener(new CostStatusUpdateHandler(null));
     }
     /**
      * Set this field to the property with the same name.
      * @param iScreenField Screen field sequence with the same name.
      */
-    public void setThisProperty(int iScreenField)
+    public void setThisProperty(String iScreenField)
     {
         if (this.getProperty(this.getScreenRecord().getField(iScreenField).getFieldName()) != null)
             this.getScreenRecord().getField(iScreenField).setString(this.getProperty(this.getScreenRecord().getField(iScreenField).getFieldName()));        
@@ -121,10 +121,10 @@ public class ProductGridScreen extends GridScreen
     {
         super.syncHeaderToMain();
         
-        this.restoreScreenParam(ProductScreenRecord.kRateID);
-        this.restoreScreenParam(ProductScreenRecord.kClassID);
-        this.restoreScreenParam(ProductScreenRecord.kDetailDate);
-        this.restoreScreenParam(ProductScreenRecord.kRemoteQueryEnabled);
+        this.restoreScreenParam(ProductScreenRecord.RATE_ID);
+        this.restoreScreenParam(ProductScreenRecord.CLASS_ID);
+        this.restoreScreenParam(ProductScreenRecord.DETAIL_DATE);
+        this.restoreScreenParam(ProductScreenRecord.REMOTE_QUERY_ENABLED);
     }
     /**
      * Add the listeners and message queues for rate lookups.
@@ -133,9 +133,9 @@ public class ProductGridScreen extends GridScreen
     public void addRateMessageListeners(Product recProduct, ProductScreenRecord screenRecord)
     {
         // Override this to add the listeners and message queues (remember to call super)
-        this.getMainRecord().getField(Product.kProductCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Product.kProductCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kProductCostLocal)));
-        this.getMainRecord().getField(Product.kPPCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.kPPCostLocal)));
+        this.getMainRecord().getField(Product.PRODUCT_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Product.PRODUCT_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.PRODUCT_COST_LOCAL)));
+        this.getMainRecord().getField(Product.PP_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Product.PP_COST_LOCAL)));
         // Create a private messageReceiver and listen for changes
         MessageManager messageManager = ((Application)this.getTask().getApplication()).getMessageManager();
         Integer intRegistryID = null;
@@ -191,17 +191,17 @@ public class ProductGridScreen extends GridScreen
     {
         String strCommand = super.getScreenURL();
         
-        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.kRateID);
-        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.kClassID);
-        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.kDetailDate);
-        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.kRemoteQueryEnabled);
+        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.RATE_ID);
+        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.CLASS_ID);
+        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.DETAIL_DATE);
+        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.REMOTE_QUERY_ENABLED);
         
         return strCommand;
     }
     /**
      * SaveProductParam Method.
      */
-    public String saveProductParam(String strCommand, int iFieldSeq)
+    public String saveProductParam(String strCommand, String iFieldSeq)
     {
         if (!this.getScreenRecord().getField(iFieldSeq).isNull())
             strCommand = Utility.addURLParam(strCommand, this.getScreenRecord().getField(iFieldSeq).getFieldName(), this.getScreenRecord().getField(iFieldSeq).toString());

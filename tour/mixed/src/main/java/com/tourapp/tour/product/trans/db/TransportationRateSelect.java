@@ -67,7 +67,7 @@ public class TransportationRateSelect extends TransportationRateField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), TransportationRate.kDescriptionKey, TransportationRate.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), TransportationRate.DESCRIPTION_KEY, TransportationRate.DESCRIPTION, true, true);
     }
 
 }

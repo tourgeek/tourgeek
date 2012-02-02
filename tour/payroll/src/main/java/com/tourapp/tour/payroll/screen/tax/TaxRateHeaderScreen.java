@@ -60,8 +60,8 @@ public class TaxRateHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(TaxRateScreenRecord.kTaxCode).setEnabled(true);
-        this.getScreenRecord().getField(TaxRateScreenRecord.kMaritalStatus).setEnabled(true);
+        this.getScreenRecord().getField(TaxRateScreenRecord.TAX_CODE).setEnabled(true);
+        this.getScreenRecord().getField(TaxRateScreenRecord.MARITAL_STATUS).setEnabled(true);
     }
     /**
      * SetupSFields Method.
@@ -69,7 +69,7 @@ public class TaxRateHeaderScreen extends HeaderScreen
     public void setupSFields()
     {
         Record screenRecord = this.getScreenRecord();
-        BaseField taxCode = screenRecord.getField(TaxRateScreenRecord.kTaxCode);
+        BaseField taxCode = screenRecord.getField(TaxRateScreenRecord.TAX_CODE);
         Converter fedConverter = new FedRadioConverter(taxCode, "FE", true);
         new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, fedConverter, ScreenConstants.DEFAULT_DISPLAY);
         Converter stateConverter = new StateRadioConverter(taxCode, "FE", false);

@@ -126,25 +126,25 @@ public class TourList extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kID).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kDescription).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kID).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kVendorID).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kCityID).setSelected(true);
-        this.getField(City.kCityFile, City.kDescription).setSelected(true);
-        this.getField(City.kCityFile, City.kCountryID).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kVendorName).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kDescSort).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kNameSort).setSelected(true);
-        this.getField(City.kCityFile, City.kTicketCityDesc).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.ID).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.DESCRIPTION).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.ID).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.VENDOR_ID).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.CITY_ID).setSelected(true);
+        this.getField(City.CITY_FILE, City.DESCRIPTION).setSelected(true);
+        this.getField(City.CITY_FILE, City.COUNTRY_ID).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.VENDOR_NAME).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.DESC_SORT).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.NAME_SORT).setSelected(true);
+        this.getField(City.CITY_FILE, City.TICKET_CITY_DESC).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(TourHeader.kTourHeaderFile), this.getRecord(City.kCityFile), TourHeader.kCityID, City.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(TourHeader.kTourHeaderFile), this.getRecord(Vendor.kVendorFile), TourHeader.kVendorID, Vendor.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(TourHeader.TOUR_HEADER_FILE), this.getRecord(City.CITY_FILE), TourHeader.CITY_ID, City.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(TourHeader.TOUR_HEADER_FILE), this.getRecord(Vendor.VENDOR_FILE), TourHeader.VENDOR_ID, Vendor.ID);
     }
 
 }

@@ -67,7 +67,7 @@ public class CruiseRateSelect extends CruiseRateField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), CruiseRate.kDescriptionKey, CruiseRate.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), CruiseRate.DESCRIPTION_KEY, CruiseRate.DESCRIPTION, true, true);
     }
 
 }

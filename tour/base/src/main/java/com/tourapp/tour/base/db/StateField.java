@@ -74,7 +74,7 @@ public class StateField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), State.kStatePostalCodeKey, State.kName, true, true);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), State.STATE_POSTAL_CODE_KEY, State.NAME, true, true);
     }
 
 }

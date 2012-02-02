@@ -70,36 +70,36 @@ public class BookingCancelledEventHandler extends FieldListener
         {
             Booking recBooking = (Booking)this.getOwner().getRecord();
             ArTrx recArTrx = recBooking.addArDetail(null, null, true);
-            if (recBooking.getField(Booking.kBalance).getValue() != recBooking.getField(Booking.kNet).getValue())
+            if (recBooking.getField(Booking.BALANCE).getValue() != recBooking.getField(Booking.NET).getValue())
             {   // Create a cancellation charge
-                Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+                Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
                 if (recTour != null)
                     if ((recTour.getEditMode() == DBConstants.EDIT_CURRENT) || (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                 {
-                    Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+                    Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
                     if (recTourHeader != null)
                         if ((recTourHeader.getEditMode() == DBConstants.EDIT_CURRENT) || (recTourHeader.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                     {
-                        Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReference();
+                        Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
                         if (recTourClass != null)
                             if ((recTourClass.getEditMode() == DBConstants.EDIT_CURRENT) || (recTourClass.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                         {
-                            double dCancellationCharge = recTourClass.getField(TourClass.kCancelCharge).getValue();
-                            double dAmountPaid = recBooking.getField(Booking.kNet).getValue() - recBooking.getField(Booking.kBalance).getValue();
+                            double dCancellationCharge = recTourClass.getField(TourClass.CANCEL_CHARGE).getValue();
+                            double dAmountPaid = recBooking.getField(Booking.NET).getValue() - recBooking.getField(Booking.BALANCE).getValue();
                             dCancellationCharge = Math.min(dCancellationCharge, dAmountPaid);
                             try {
-                                TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recArTrx.getField(ArTrx.kTrxStatusID)).getReferenceRecord();
-                                int iInvoiceModification = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.INVOICE_MODIFICATION);
-                                int iRefundPendingTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_SUBMITTED);
-                                int iCancelTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.CANCELLATION_CHARGE);
+                                TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReferenceRecord();
+                                int iInvoiceModification = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.INVOICE_MODIFICATION);
+                                int iRefundPendingTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_SUBMITTED);
+                                int iCancelTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.CANCELLATION_CHARGE);
                                 double dDate = DateTimeField.currentTime();
                                 
                                 // Cancel all charges
                                 recArTrx.addNew();
-                                recArTrx.getField(ArTrx.kAmount).setValue(-recBooking.getField(Booking.kNet).getValue());
-                                ((DateTimeField)recArTrx.getField(ArTrx.kTrxDate)).setValue(dDate);
-                                recArTrx.getField(ArTrx.kTrxStatusID).setValue(iInvoiceModification);
-                                recArTrx.getField(ArTrx.kComments).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kStatusDesc));
+                                recArTrx.getField(ArTrx.AMOUNT).setValue(-recBooking.getField(Booking.NET).getValue());
+                                ((DateTimeField)recArTrx.getField(ArTrx.TRX_DATE)).setValue(dDate);
+                                recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iInvoiceModification);
+                                recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
                                 recArTrx.add();
                                 // Add cancellation charge
                                 if (dCancellationCharge > 0)
@@ -107,11 +107,11 @@ public class BookingCancelledEventHandler extends FieldListener
                                     boolean bOldState = recArTrx.getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(false);    // Since I will be doing the updating
                                     recArTrx.addListener(new UpdateCancelationAcctDetailHandler(recBooking));
                                     recArTrx.addNew();
-                                    recArTrx.getField(ArTrx.kAmount).setValue(dCancellationCharge);
+                                    recArTrx.getField(ArTrx.AMOUNT).setValue(dCancellationCharge);
                                     dDate = dDate + 1000;   // One second later
-                                    ((DateTimeField)recArTrx.getField(ArTrx.kTrxDate)).setValue(dDate);
-                                    recArTrx.getField(ArTrx.kTrxStatusID).setValue(iCancelTrxStatus);
-                                    recArTrx.getField(ArTrx.kComments).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kStatusDesc));
+                                    ((DateTimeField)recArTrx.getField(ArTrx.TRX_DATE)).setValue(dDate);
+                                    recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iCancelTrxStatus);
+                                    recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
                                     recArTrx.add();
                                     recArTrx.removeListener(recArTrx.getListener(UpdateCancelationAcctDetailHandler.class), true);
                                     recArTrx.getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(bOldState);
@@ -123,11 +123,11 @@ public class BookingCancelledEventHandler extends FieldListener
                                     boolean bOldState = recArTrx.getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(false);    // Since I will be doing the updating
                                     recArTrx.addListener(new UpdateRefundAcctDetailHandler(recBooking));
                                     recArTrx.addNew();
-                                    recArTrx.getField(ArTrx.kAmount).setValue(dRefund);
+                                    recArTrx.getField(ArTrx.AMOUNT).setValue(dRefund);
                                     dDate = dDate + 1000;   // One second later
-                                    ((DateTimeField)recArTrx.getField(ArTrx.kTrxDate)).setValue(dDate);
-                                    recArTrx.getField(ArTrx.kTrxStatusID).setValue(iRefundPendingTrxStatus);
-                                    recArTrx.getField(ArTrx.kComments).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kStatusDesc));
+                                    ((DateTimeField)recArTrx.getField(ArTrx.TRX_DATE)).setValue(dDate);
+                                    recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iRefundPendingTrxStatus);
+                                    recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
                                     recArTrx.add();
                                     recArTrx.removeListener(recArTrx.getListener(UpdateRefundAcctDetailHandler.class), true);
                                     recArTrx.getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(bOldState);

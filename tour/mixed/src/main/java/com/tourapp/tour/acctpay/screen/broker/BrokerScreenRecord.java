@@ -35,6 +35,7 @@ public class BrokerScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String VENDOR_ID = "VendorID";
     public static final int kVendorID = kScreenRecordLastField + 1;
     public static final int kBrokerScreenRecordLastField = kVendorID;
     public static final int kBrokerScreenRecordFields = kVendorID - DBConstants.MAIN_FIELD + 1;

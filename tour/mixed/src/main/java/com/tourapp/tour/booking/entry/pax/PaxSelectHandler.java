@@ -58,7 +58,7 @@ public class PaxSelectHandler extends SubCountHandler
         m_recPaxCategory = null;
         m_sOldPaxType = 0;
         m_recPaxCategory = recPaxCategory;
-        super.init(null, record, Booking.kPax, null, -1, true, true, false);
+        super.init(null, record, Booking.kPax, null, -1, null, true, true, false);
     }
     /**
      * Called when a new blank record is required for the table/query.
@@ -91,6 +91,7 @@ public class PaxSelectHandler extends SubCountHandler
         int iErrorCode = super.doRecordChange(field, iChangeType, bDisplayOption);      // Initialize the record
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
+        Record booking = m_fldMain.getRecord();
         boolean[] rgbEnabled = null;
         int iProxyChangeType = iChangeType;
         if (iChangeType == DBConstants.MOVE_NEXT_TYPE)
@@ -101,36 +102,36 @@ public class PaxSelectHandler extends SubCountHandler
         }
         if (m_sOldPaxType != 0) if ((iProxyChangeType == DBConstants.AFTER_DELETE_TYPE) || (iProxyChangeType == DBConstants.AFTER_UPDATE_TYPE))
         {
-            double dPaxTypeCount = ((NumberField)m_fldMain.getRecord().getField((int)(Booking.kSinglePax + m_sOldPaxType-1))).getValue();
+            double dPaxTypeCount = ((NumberField)booking.getField((int)(booking.getFieldSeq(Booking.SINGLE_PAX) + m_sOldPaxType-1))).getValue();
             dPaxTypeCount--;
-            iErrorCode = this.setFieldCount(Booking.kSinglePax + m_sOldPaxType - 1, dPaxTypeCount, true);
+            iErrorCode = this.setFieldCount(booking.getFieldSeq(Booking.SINGLE_PAX) + m_sOldPaxType - 1, dPaxTypeCount, true);
         }
         if ((iProxyChangeType == DBConstants.AFTER_ADD_TYPE) || (iProxyChangeType == DBConstants.AFTER_UPDATE_TYPE))
         {
-            if (this.getOwner().getField(BookingPax.kPaxCategoryID).compareTo(m_recPaxCategory.getField(PaxCategory.kID)) != 0)
+            if (this.getOwner().getField(BookingPax.PAX_CATEGORY_ID).compareTo(m_recPaxCategory.getField(PaxCategory.ID)) != 0)
             {
-                m_recPaxCategory.getField(PaxCategory.kID).moveFieldToThis(this.getOwner().getField(BookingPax.kPaxCategoryID));
+                m_recPaxCategory.getField(PaxCategory.ID).moveFieldToThis(this.getOwner().getField(BookingPax.PAX_CATEGORY_ID));
                 try   {
                     int iOldOrder = m_recPaxCategory.getDefaultOrder();
-                    m_recPaxCategory.setKeyArea(PaxCategory.kIDKey);
+                    m_recPaxCategory.setKeyArea(PaxCategory.ID_KEY);
                     m_recPaxCategory.seek(DBConstants.EQUALS);
                     m_recPaxCategory.setKeyArea(iOldOrder);
                 } catch (DBException ex)   {
                     ex.printStackTrace();
                 }
             }
-            short sNewPaxType = (short)((NumberField)m_recPaxCategory.getField(PaxCategory.kRoomType)).getValue();   // This is a valid pax
+            short sNewPaxType = (short)((NumberField)m_recPaxCategory.getField(PaxCategory.ROOM_TYPE)).getValue();   // This is a valid pax
             if (sNewPaxType != 0) 
             {
-                double dPaxTypeCount = ((NumberField)m_fldMain.getRecord().getField(Booking.kSinglePax + sNewPaxType - 1)).getValue();
+                double dPaxTypeCount = ((NumberField)booking.getField(booking.getFieldSeq(Booking.SINGLE_PAX) + sNewPaxType - 1)).getValue();
                 dPaxTypeCount++;
-                iErrorCode = this.setFieldCount(Booking.kSinglePax + sNewPaxType - 1, dPaxTypeCount, true);
+                iErrorCode = this.setFieldCount(booking.getFieldSeq(Booking.SINGLE_PAX) + sNewPaxType - 1, dPaxTypeCount, true);
             }
         }
         if ((iChangeType == DBConstants.AFTER_DELETE_TYPE) || (iChangeType == DBConstants.AFTER_ADD_TYPE) || (iChangeType == DBConstants.AFTER_UPDATE_TYPE))
         {
-            Booking recBooking = (Booking)((ReferenceField)((BookingPax)this.getOwner()).getField(BookingPax.kBookingID)).getReference();
-            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            Booking recBooking = (Booking)((ReferenceField)((BookingPax)this.getOwner()).getField(BookingPax.BOOKING_ID)).getReference();
+            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             BookingLine recBookingLine = new BookingLine(recBooking.findRecordOwner());
             recBookingLine.addDetailBehaviors(recBooking, recTour);
             iErrorCode = recBookingLine.deleteAllDetail(recBooking, null, null, null);
@@ -155,19 +156,19 @@ public class PaxSelectHandler extends SubCountHandler
     public void doValidRecord(boolean bDisplayOption)
     {
         super.doValidRecord(bDisplayOption);        // Initialize the record
-        if (this.getOwner().getField(BookingPax.kPaxCategoryID).compareTo(m_recPaxCategory.getField(PaxCategory.kID)) != 0)
+        if (this.getOwner().getField(BookingPax.PAX_CATEGORY_ID).compareTo(m_recPaxCategory.getField(PaxCategory.ID)) != 0)
         {
-            m_recPaxCategory.getField(PaxCategory.kID).moveFieldToThis(this.getOwner().getField(BookingPax.kPaxCategoryID));
+            m_recPaxCategory.getField(PaxCategory.ID).moveFieldToThis(this.getOwner().getField(BookingPax.PAX_CATEGORY_ID));
             try   {
                 int iOldOrder = m_recPaxCategory.getDefaultOrder();
-                m_recPaxCategory.setKeyArea(PaxCategory.kIDKey);
+                m_recPaxCategory.setKeyArea(PaxCategory.ID_KEY);
                 m_recPaxCategory.seek(DBConstants.EQUALS);
                 m_recPaxCategory.setKeyArea(iOldOrder);
             } catch (DBException ex)   {
                 ex.printStackTrace();
             }
         }
-        m_sOldPaxType = (short)m_recPaxCategory.getField(PaxCategory.kRoomType).getValue();        // This is a valid pax
+        m_sOldPaxType = (short)m_recPaxCategory.getField(PaxCategory.ROOM_TYPE).getValue();        // This is a valid pax
     }
     /**
      * Reset the field count.
@@ -175,7 +176,8 @@ public class PaxSelectHandler extends SubCountHandler
     public int resetCount()
     {
         int iErrorCode = super.resetCount();
-        for (int iFieldSeq = Booking.kSinglePax; iFieldSeq <= Booking.kQuadPax; iFieldSeq++)
+        Record booking = m_fldMain.getRecord();
+        for (int iFieldSeq = booking.getFieldSeq(Booking.SINGLE_PAX); iFieldSeq <= booking.getFieldSeq(Booking.QUAD_PAX); iFieldSeq++)
         {    // Zero all the other fields
             iErrorCode = this.setFieldCount(iFieldSeq, 0, true);
         }

@@ -190,9 +190,9 @@ public class Account extends VirtualRecord
      */
     public void addMasterListeners()
     {
-        this.setKeyArea(Account.kAccountNoKey);   // Default key order
+        this.setKeyArea(Account.ACCOUNT_NO_KEY);    // Default key order
         
-        this.addListener(new SoftDeleteDetailHandler(this.getField(Account.kDiscontinued), null)
+        this.addListener(new SoftDeleteDetailHandler(this.getField(Account.DISCONTINUED), null)
         {
             public Record getDetailRecord(RecordOwner screen)
             {

@@ -99,24 +99,24 @@ public class OverrideGridScreen extends GridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().setKeyArea(TicketTrx.kVendorIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(OverrideScreenRecord.kVendorID), TicketTrx.kVendorID, null, -1, null, -1, true));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(OverrideScreenRecord.kStartDeparture), ">="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(OverrideScreenRecord.kEndDeparture), "<="));
+        this.getMainRecord().setKeyArea(TicketTrx.VENDOR_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(OverrideScreenRecord.VENDOR_ID), TicketTrx.VENDOR_ID, null, null, null, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(OverrideScreenRecord.START_DEPARTURE), ">="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(OverrideScreenRecord.END_DEPARTURE), "<="));
         
-        this.getScreenRecord().getField(OverrideScreenRecord.kVendorID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(OverrideScreenRecord.kStartDeparture).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(OverrideScreenRecord.kEndDeparture).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(OverrideScreenRecord.VENDOR_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(OverrideScreenRecord.START_DEPARTURE).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(OverrideScreenRecord.END_DEPARTURE).addListener(new FieldReSelectHandler(this));
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        int iOverrideStatus = recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.kTicketTrxFile, TicketTrx.OVERRIDE_PAID);  // Remember, TrxStatus may be used by UpdateOverrideAcctDetailHandler
-        this.getMainRecord().getField(TicketTrx.kOverridePaid).addListener(new CopyDataHandler(this.getMainRecord().getField(TicketTrx.kTrxStatusID), Integer.toString(iOverrideStatus), null));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        int iOverrideStatus = recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.TICKET_TRX_FILE, TicketTrx.OVER_RIDE_PAID);  // Remember, TrxStatus may be used by UpdateOverrideAcctDetailHandler
+        this.getMainRecord().getField(TicketTrx.OVERRIDE_PAID).addListener(new CopyDataHandler(this.getMainRecord().getField(TicketTrx.TRX_STATUS_ID), Integer.toString(iOverrideStatus), null));
         
-        this.getMainRecord().addListener(new DateChangedHandler(TicketTrx.kOverridePaidDate));
+        this.getMainRecord().addListener(new DateChangedHandler(TicketTrx.OVERRIDE_PAID_DATE));
         this.getMainRecord().addListener(new UpdateOverrideAcctDetailHandler(null));
         
         this.setEnabled(false);
-        this.getMainRecord().getField(TicketTrx.kOverridePaid).setEnabled(true);
+        this.getMainRecord().getField(TicketTrx.OVERRIDE_PAID).setEnabled(true);
         this.setAppending(false);
     }
     /**
@@ -124,9 +124,9 @@ public class OverrideGridScreen extends GridScreen
      */
     public void addToolbarButtons(ToolScreen toolScreen)
     {
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kVendorID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kStartDeparture).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kEndDeparture).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(OverrideScreenRecord.VENDOR_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(OverrideScreenRecord.START_DEPARTURE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(OverrideScreenRecord.END_DEPARTURE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * SetupSFields Method.
@@ -142,7 +142,7 @@ public class OverrideGridScreen extends GridScreen
         String strDesc = "Paid?";
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
         strDesc = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strDesc);
-        Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.kOverridePaid), null, strDesc, false);
+        Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.OVERRIDE_PAID), null, strDesc, false);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**

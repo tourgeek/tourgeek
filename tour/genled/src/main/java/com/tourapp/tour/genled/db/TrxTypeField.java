@@ -75,7 +75,7 @@ public class TrxTypeField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        Converter fldDisplayFieldDesc = new TrxTypeConverter(record.getField(TransactionType.kTypeDesc));
+        Converter fldDisplayFieldDesc = new TrxTypeConverter(record.getField(TransactionType.TYPE_DESC));
         return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, fldDisplayFieldDesc, false, true);
     }
 

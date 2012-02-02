@@ -103,32 +103,32 @@ public class PrintCheckJournal extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        if (this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).getFieldName()) != null)
-            this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).getFieldName())));
+        if (this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).getFieldName()) != null)
+            this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getProperty(this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).getFieldName())));
         else
-            this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kApBankAcctID)));
-        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID)).getReference();  // Make sure this record is referenced
+            this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.AP_BANK_ACCT_ID)));
+        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID)).getReference();  // Make sure this record is referenced
         
         FieldListener listener = new ReadSecondaryHandler(recBankAcct);
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kBankAcctID).addListener(listener);
+        this.getScreenRecord().getField(PrintCheckScreenRecord.BANK_ACCT_ID).addListener(listener);
         
         this.getMainRecord().addListener(new SubFileFilter(recBankAcct));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kReportCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kReportTotal), PaymentRequest.kAmount, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.REPORT_COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.REPORT_TOTAL), PaymentRequest.AMOUNT, false, true));
         
-        Record recApTrx = this.getRecord(ApTrx.kApTrxFile);
-        recApTrx.setKeyArea(ApTrx.kVendorIDKey);
-        recApTrx.addListener(new SubFileFilter(this.getMainRecord().getField(PaymentRequest.kVendorID), ApTrx.kVendorID, null, -1, null, -1));
+        Record recApTrx = this.getRecord(ApTrx.AP_TRX_FILE);
+        recApTrx.setKeyArea(ApTrx.VENDOR_ID_KEY);
+        recApTrx.addListener(new SubFileFilter(this.getMainRecord().getField(PaymentRequest.VENDOR_ID), ApTrx.VENDOR_ID, null, null, null, null));
         
-        recBankAcct.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kNextCheckNo), recBankAcct.getField(BankAcct.kNextCheck)));
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kNextCheckNo).setSFieldToProperty();
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckDate).setSFieldToProperty();
-        this.getScreenRecord().getField(PrintCheckScreenRecord.kChecksToPrint).setSFieldToProperty();
+        recBankAcct.addListener(new MoveOnValidHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.NEXT_CHECK_NO), recBankAcct.getField(BankAcct.NEXT_CHECK)));
+        this.getScreenRecord().getField(PrintCheckScreenRecord.NEXT_CHECK_NO).setSFieldToProperty();
+        this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_DATE).setSFieldToProperty();
+        this.getScreenRecord().getField(PrintCheckScreenRecord.CHECKS_TO_PRINT).setSFieldToProperty();
         
-        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.kCheckNo), this.getScreenRecord().getField(RefundScreenRecord.kNextCheckNo)));
+        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(PrintCheckScreenRecord.CHECK_NO), this.getScreenRecord().getField(RefundScreenRecord.NEXT_CHECK_NO)));
     }
     /**
      * Add the toolbars that belong with this screen.

@@ -190,14 +190,14 @@ public class TrxGroup extends VirtualRecord
     public int getTrxGroupID(String strSystemCode, String strDescCode, String strGroupCode)
     {
         int iTrxGroupID = -1;
-        this.setKeyArea(TrxGroup.kSystemCodeKey);
-        this.getField(TrxGroup.kSystemCode).setString(strSystemCode);
-        this.getField(TrxGroup.kDescCode).setString(strDescCode);
-        this.getField(TrxGroup.kGroupCode).setString(strGroupCode);
+        this.setKeyArea(TrxGroup.SYSTEM_CODE_KEY);
+        this.getField(TrxGroup.SYSTEM_CODE).setString(strSystemCode);
+        this.getField(TrxGroup.DESC_CODE).setString(strDescCode);
+        this.getField(TrxGroup.GROUP_CODE).setString(strGroupCode);
         try   {
             boolean bSuccess = this.seek("=");
             if (bSuccess)
-                iTrxGroupID = (int)this.getField(TrxGroup.kID).getValue();
+                iTrxGroupID = (int)this.getField(TrxGroup.ID).getValue();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }

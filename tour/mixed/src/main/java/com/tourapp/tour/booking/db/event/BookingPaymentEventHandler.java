@@ -71,16 +71,16 @@ public class BookingPaymentEventHandler extends FieldDataScratchHandler
         if (doubleOriginalData == null)
             doubleOriginalData = DoubleField.ZERO;
         Record recBooking = this.getOwner().getRecord();
-        double dNet = recBooking.getField(Booking.kNet).getValue();
+        double dNet = recBooking.getField(Booking.NET).getValue();
         if (doubleOriginalData.doubleValue() != 0)  // If this was just 0 zero before this change, there is no was this will trigger anything
             if (dNet > 0)
         {
-            double dBalance = Math.floor(recBooking.getField(Booking.kBalance).getValue() * 100 + 0.5) / 100;
+            double dBalance = Math.floor(recBooking.getField(Booking.BALANCE).getValue() * 100 + 0.5) / 100;
             double dPaid = Math.floor((dNet - dBalance) * 100 + 0.5) / 100;
-            if (dPaid >= recBooking.getField(Booking.kDeposit).getValue())
-                recBooking.getField(Booking.kDepositReceived).setState(true);
+            if (dPaid >= recBooking.getField(Booking.DEPOSIT).getValue())
+                recBooking.getField(Booking.DEPOSIT_RECEIVED).setState(true);
             if (dBalance <= 0)
-                recBooking.getField(Booking.kFinalPaymentReceived).setState(true);
+                recBooking.getField(Booking.FINAL_PAYMENT_RECEIVED).setState(true);
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }

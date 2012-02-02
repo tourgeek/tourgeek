@@ -65,7 +65,7 @@ public class StatusDescConverter extends DescConverter
     public String getProductType()
     {
         BookingDetail recCustSaleDetail = (BookingDetail)((BaseField)this.getField()).getRecord();
-        String strProductType = recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.kProductType).toString();
+        String strProductType = recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.PRODUCT_TYPE).toString();
         if ((strProductType == null) || (strProductType.length() == 0))
             strProductType = ProductType.ITEM;
         return strProductType;

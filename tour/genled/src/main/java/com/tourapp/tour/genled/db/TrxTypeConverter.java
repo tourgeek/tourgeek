@@ -58,20 +58,20 @@ public class TrxTypeConverter extends FieldConverter
     {
         String string = DBConstants.BLANK;
         Record record = ((BaseField)this.getField()).getRecord();
-        String strGroup = record.getField(TransactionType.kGroupDesc).toString();
-        String strType = record.getField(TransactionType.kTypeDesc).toString();
-        String strTrx = record.getField(TransactionType.kTypeCode).toString();
+        String strGroup = record.getField(TransactionType.GROUP_DESC).toString();
+        String strType = record.getField(TransactionType.TYPE_DESC).toString();
+        String strTrx = record.getField(TransactionType.TYPE_CODE).toString();
         if (strTrx.length() == 0)
             string = strType;
         else
             string = strGroup + " - " + strType;
-        //BaseField field = record.getField(TransactionType.kTypicalBalance);
+        //BaseField field = record.getField(TransactionType.TYPICAL_BALANCE);
         //String strField = field.convertIndexToDisStr(field.convertFieldToIndex());
         //if (strField.length() > 1)
         //    string += " [" + strField + "] ";
         //else
         //    string += "-";
-        //string += record.getField(TransactionType.kDescription).toString() + "-" + record.getField(TransactionType.kSystemDesc).toString();
+        //string += record.getField(TransactionType.DESCRIPTION).toString() + "-" + record.getField(TransactionType.SYSTEM_DESC).toString();
         return string;
     }
 

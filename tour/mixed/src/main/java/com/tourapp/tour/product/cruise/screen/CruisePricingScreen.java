@@ -90,7 +90,7 @@ public class CruisePricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Cruise.kCruiseFile);
+        return this.getRecord(Cruise.CRUISE_FILE);
     }
     /**
      * Set up all the screen fields.

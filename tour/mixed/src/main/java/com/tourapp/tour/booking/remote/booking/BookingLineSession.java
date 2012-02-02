@@ -75,9 +75,9 @@ public class BookingLineSession extends Session
     public void addListeners()
     {
         super.addListeners();
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
         
-        this.getRecord(BookingLine.kBookingLineFile).addListener(new SubFileFilter(recBooking, true));
+        this.getRecord(BookingLine.BOOKING_LINE_FILE).addListener(new SubFileFilter(recBooking, true));
     }
 
 }

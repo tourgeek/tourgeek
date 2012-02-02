@@ -91,16 +91,16 @@ public class AcctBatchScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kUserID).moveFieldToThis(this.getMainRecord().getField(AcctBatch.kUserID));
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kRecurring).moveFieldToThis(this.getMainRecord().getField(AcctBatch.kRecurring));
+        this.getScreenRecord().getField(AcctBatchScreenRecord.USER_ID).moveFieldToThis(this.getMainRecord().getField(AcctBatch.USER_ID));
+        this.getScreenRecord().getField(AcctBatchScreenRecord.RECURRING).moveFieldToThis(this.getMainRecord().getField(AcctBatch.RECURRING));
         
-        this.getMainRecord().getField(AcctBatch.kRecurring).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(AcctBatch.kTrxDate), BooleanField.YES, true));
-        FieldListener listener = new CopyStringHandler(this.getMainRecord().getField(AcctBatch.kTrxDate), DBConstants.BLANK, this.getMainRecord().getField(AcctBatch.kRecurring));
+        this.getMainRecord().getField(AcctBatch.RECURRING).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(AcctBatch.TRX_DATE), BooleanField.YES, true));
+        FieldListener listener = new CopyStringHandler(this.getMainRecord().getField(AcctBatch.TRX_DATE), DBConstants.BLANK, this.getMainRecord().getField(AcctBatch.RECURRING));
         listener.setRespondsToMode(DBConstants.INIT_MOVE, true);
-        this.getMainRecord().getField(AcctBatch.kTrxDate).addListener(listener);
+        this.getMainRecord().getField(AcctBatch.TRX_DATE).addListener(listener);
         
-        this.getMainRecord().setKeyArea(AcctBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(AcctBatchScreenRecord.kUserID), AcctBatch.kUserID, this.getScreenRecord().getField(AcctBatchScreenRecord.kRecurring), AcctBatch.kRecurring, null, -1));
+        this.getMainRecord().setKeyArea(AcctBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(AcctBatchScreenRecord.USER_ID), AcctBatch.USER_ID, this.getScreenRecord().getField(AcctBatchScreenRecord.RECURRING), AcctBatch.RECURRING, null, null));
     }
     /**
      * Set up all the screen fields.
@@ -117,7 +117,7 @@ public class AcctBatchScreen extends Screen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
-        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, AcctBatch.AUTO_CLOSING, "Go", AcctBatch.AUTO_CLOSING, null);
+        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, AcctBatch.AUTOCLOSING, "Go", AcctBatch.AUTOCLOSING, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.POST, MenuConstants.POST, MenuConstants.POST, null);
     }
     /**
@@ -137,7 +137,7 @@ public class AcctBatchScreen extends Screen
             return (this.onForm(null, AcctBatch.ACCT_BATCH_DETAIL_SCREEN, true, iCommandOptions, null) != null);
         else if (strCommand.equalsIgnoreCase(MenuConstants.POST))
             return (this.onForm(null, AcctBatch.ACCT_BATCH_POST, true, iCommandOptions, null) != null);
-        else if (strCommand.equalsIgnoreCase(AcctBatch.AUTO_CLOSING))
+        else if (strCommand.equalsIgnoreCase(AcctBatch.AUTOCLOSING))
         {
             AcctBatch recAcctBatch = (AcctBatch)this.getMainRecord();
             return recAcctBatch.onAutoClosing();

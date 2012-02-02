@@ -99,14 +99,14 @@ public class OverrideScreen extends Screen
     {
         super.addListeners();
         this.setEnabled(false);
-        this.getMainRecord().getField(TicketTrx.kOverridePaid).setEnabled(true);
+        this.getMainRecord().getField(TicketTrx.OVERRIDE_PAID).setEnabled(true);
         
-        this.getMainRecord().setKeyArea(TicketTrx.kVendorIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(OverrideScreenRecord.kVendorID), TicketTrx.kVendorID, null, -1, null, -1));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(OverrideScreenRecord.kStartDeparture), ">="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(OverrideScreenRecord.kEndDeparture), "<="));
+        this.getMainRecord().setKeyArea(TicketTrx.VENDOR_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(OverrideScreenRecord.VENDOR_ID), TicketTrx.VENDOR_ID, null, null, null, null));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(OverrideScreenRecord.START_DEPARTURE), ">="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(OverrideScreenRecord.END_DEPARTURE), "<="));
         
-        this.getMainRecord().addListener(new DateChangedHandler(TicketTrx.kOverridePaidDate));
+        this.getMainRecord().addListener(new DateChangedHandler(TicketTrx.OVERRIDE_PAID_DATE));
         this.getMainRecord().addListener(new UpdateOverrideAcctDetailHandler(null));
     }
     /**
@@ -114,9 +114,9 @@ public class OverrideScreen extends Screen
      */
     public void addToolbarButtons(ToolScreen toolScreen)
     {
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kAirlineID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kStartDeparture).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kEndDeparture).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(OverrideScreenRecord.AIRLINE_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(OverrideScreenRecord.START_DEPARTURE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(OverrideScreenRecord.END_DEPARTURE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Set up all the screen fields.
@@ -136,7 +136,7 @@ public class OverrideScreen extends Screen
         String strDesc = "Paid?";
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
         strDesc = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strDesc);
-        Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.kOverridePaid), null, strDesc, false);
+        Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.OVERRIDE_PAID), null, strDesc, false);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**

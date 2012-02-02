@@ -214,22 +214,22 @@ public class TransportationPricing extends ProductPricing
         dateTarget = Converter.convertTimeToDate(dateTarget);
         if ((this.getEditMode() == Constants.EDIT_IN_PROGRESS) || (this.getEditMode() == Constants.EDIT_CURRENT))
         {
-            if (this.getField(ProductPricing.kProductID).equals(recTransportation.getField(Product.kID)))
-            if (this.getField(ProductPricing.kClassID).getValue() == iClassID)
-            if (this.getField(ProductPricing.kStartDate).getValue() <= dateTarget.getTime()) // Start <= thisDate
-            if (this.getField(ProductPricing.kEndDate).getValue() >= dateTarget.getTime())   // End >= thisDate
-            if (this.getField(TransportationPricing.kFromPax).getValue() <= sTargetPax)    // Start <= thisDate
-            if (this.getField(TransportationPricing.kToPax).getValue() >= sTargetPax)  // End >= thisDate
+            if (this.getField(ProductPricing.PRODUCT_ID).equals(recTransportation.getField(Product.ID)))
+            if (this.getField(ProductPricing.CLASS_ID).getValue() == iClassID)
+            if (this.getField(ProductPricing.START_DATE).getValue() <= dateTarget.getTime()) // Start <= thisDate
+            if (this.getField(ProductPricing.END_DATE).getValue() >= dateTarget.getTime())   // End >= thisDate
+            if (this.getField(TransportationPricing.FROM_PAX).getValue() <= sTargetPax)    // Start <= thisDate
+            if (this.getField(TransportationPricing.TO_PAX).getValue() >= sTargetPax)  // End >= thisDate
                 return this;        // Valid price
         }
         
-        this.getField(ProductPricing.kProductID).moveFieldToThis(recTransportation.getField(Product.kID));
-        this.getField(ProductPricing.kClassID).setValue(iClassID);
-        ((DateTimeField)this.getField(ProductPricing.kEndDate)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(TransportationPricing.kToPax).setValue(sTargetPax);
-        this.getField(ProductPricing.kID).setValue(0);   // Since it reads from current.
+        this.getField(ProductPricing.PRODUCT_ID).moveFieldToThis(recTransportation.getField(Product.ID));
+        this.getField(ProductPricing.CLASS_ID).setValue(iClassID);
+        ((DateTimeField)this.getField(ProductPricing.END_DATE)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(TransportationPricing.TO_PAX).setValue(sTargetPax);
+        this.getField(ProductPricing.ID).setValue(0);   // Since it reads from current.
         
-        this.setKeyArea(ProductPricing.kProductIDKey);
+        this.setKeyArea(ProductPricing.PRODUCT_ID_KEY);
         FileListener behavior1 = new SubCurrentFilter(true, false);
         this.addListener(behavior1);
         
@@ -238,16 +238,16 @@ public class TransportationPricing extends ProductPricing
             while (this.hasNext())
             {   // Loop until found or not
                 this.next();
-                if (!this.getField(ProductPricing.kProductID).equals(recTransportation.getField(Product.kID)))
+                if (!this.getField(ProductPricing.PRODUCT_ID).equals(recTransportation.getField(Product.ID)))
                     break;
-                if (this.getField(ProductPricing.kClassID).getValue() != iClassID)
+                if (this.getField(ProductPricing.CLASS_ID).getValue() != iClassID)
                     break;
-                if (this.getField(ProductPricing.kStartDate).getValue() > dateTarget.getTime())    // Start > thisDate
+                if (this.getField(ProductPricing.START_DATE).getValue() > dateTarget.getTime())    // Start > thisDate
                     break;
-                if (this.getField(ProductPricing.kEndDate).getValue() >= dateTarget.getTime())   // End >= thisDate
+                if (this.getField(ProductPricing.END_DATE).getValue() >= dateTarget.getTime())   // End >= thisDate
                 {
-                    if (this.getField(TransportationPricing.kFromPax).getValue() <= sTargetPax)    // Start > thisDate
-                        if (this.getField(TransportationPricing.kToPax).getValue() >= sTargetPax)  // End >= thisDate
+                    if (this.getField(TransportationPricing.FROM_PAX).getValue() <= sTargetPax)    // Start > thisDate
+                        if (this.getField(TransportationPricing.TO_PAX).getValue() >= sTargetPax)  // End >= thisDate
                             return this;        // Valid price
                 }
             }

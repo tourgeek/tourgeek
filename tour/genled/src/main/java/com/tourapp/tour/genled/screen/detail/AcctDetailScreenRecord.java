@@ -31,12 +31,19 @@ public class AcctDetailScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String ACCOUNT_ID = "AccountID";
     public static final int kAccountID = kScreenRecordLastField + 1;
+    public static final String CALC_START = "CalcStart";
     public static final int kCalcStart = kAccountID + 1;
+    public static final String START_DATE = "StartDate";
     public static final int kStartDate = kCalcStart + 1;
+    public static final String END_DATE = "EndDate";
     public static final int kEndDate = kStartDate + 1;
+    public static final String START_BALANCE = "StartBalance";
     public static final int kStartBalance = kEndDate + 1;
+    public static final String END_BALANCE = "EndBalance";
     public static final int kEndBalance = kStartBalance + 1;
+    public static final String CHANGE_BALANCE = "ChangeBalance";
     public static final int kChangeBalance = kEndBalance + 1;
     public static final int kAcctDetailScreenRecordLastField = kChangeBalance;
     public static final int kAcctDetailScreenRecordFields = kChangeBalance - DBConstants.MAIN_FIELD + 1;

@@ -16,6 +16,9 @@ public class OTASeatPreference extends OTACode
     implements OTASeatPreferenceModel
 {
 
+    //public static final String ID = ID;
+    //public static final String NAME = NAME;
+
     public OTASeatPreference()
     {
         super();

@@ -106,8 +106,8 @@ public class CarMessageData extends ProductMessageData
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;
-        this.putRawFieldData(recBookingDetail.getField(BookingCar.kQuantity));
-        this.putRawFieldData(recBookingDetail.getField(BookingCar.kDays));
+        this.putRawFieldData(recBookingDetail.getField(BookingCar.QUANTITY));
+        this.putRawFieldData(recBookingDetail.getField(BookingCar.DAYS));
         return iErrorCode;
     }
     /**
@@ -119,8 +119,8 @@ public class CarMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Car.kCarFile) != null)
-                    return (Car)recordOwner.getRecord(Car.kCarFile);
+                if (recordOwner.getRecord(Car.CAR_FILE) != null)
+                    return (Car)recordOwner.getRecord(Car.CAR_FILE);
         return new Car(recordOwner);
     }
     /**

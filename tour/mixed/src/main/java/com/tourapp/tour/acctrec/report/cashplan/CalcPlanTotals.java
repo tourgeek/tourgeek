@@ -86,10 +86,10 @@ public class CalcPlanTotals extends FileListener
         {
             Record recBooking = this.getOwner();
         
-            double dDeposit = recBooking.getField(Booking.kDeposit).getValue();
-            double dGross = recBooking.getField(Booking.kGross).getValue();
-            double dNet = recBooking.getField(Booking.kNet).getValue();
-            double dBalance = Math.max(recBooking.getField(Booking.kBalance).getValue(), 0);
+            double dDeposit = recBooking.getField(Booking.DEPOSIT).getValue();
+            double dGross = recBooking.getField(Booking.GROSS).getValue();
+            double dNet = recBooking.getField(Booking.NET).getValue();
+            double dBalance = Math.max(recBooking.getField(Booking.BALANCE).getValue(), 0);
         
             double dAmountPaid = dNet - dBalance;
         
@@ -98,9 +98,9 @@ public class CalcPlanTotals extends FileListener
             double dFinalBalanceDue = Math.max(dNet - dDeposit, 0);
             double dCurrentBalanceDue = Math.min(dFinalBalanceDue, dBalance);
         
-            m_recCashPlan.getField(CashPlanScreenRecord.kDepositDueBalance).setValue(dDepositDue);
-            m_recCashPlan.getField(CashPlanScreenRecord.kFinalDueLessDeposit).setValue(dFinalBalanceDue);
-            m_recCashPlan.getField(CashPlanScreenRecord.kFinalDueLessDepPymt).setValue(dCurrentBalanceDue);
+            m_recCashPlan.getField(CashPlanScreenRecord.DEPOSIT_DUE_BALANCE).setValue(dDepositDue);
+            m_recCashPlan.getField(CashPlanScreenRecord.FINAL_DUE_LESS_DEPOSIT).setValue(dFinalBalanceDue);
+            m_recCashPlan.getField(CashPlanScreenRecord.FINAL_DUE_LESS_DEP_PYMT).setValue(dCurrentBalanceDue);
         }
         return iErrorCode;
     }

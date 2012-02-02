@@ -68,8 +68,8 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
     public void openOtherRecords()
     {
         super.openOtherRecords();
-        if (this.getMainRecord().getTableNames(false).equalsIgnoreCase(BankTrxBatchDetail.kBankTrxBatchDetailFile))
-            this.addRecord(((ReferenceField)this.getMainRecord().getField(BankTrxBatchDetail.kBankTrxBatchID)).getReference(), true);
+        if (this.getMainRecord().getTableNames(false).equalsIgnoreCase(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE))
+            this.addRecord(((ReferenceField)this.getMainRecord().getField(BankTrxBatchDetail.BANK_TRX_BATCH_ID)).getReference(), true);
         else
             new BankTrxBatchDetail(this);
         new AssetDrControl(this);
@@ -94,14 +94,14 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
     {
         super.addListeners();
         
-        BankTrxBatchDetail recBankTrxBatchDetail = (BankTrxBatchDetail)this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile);
+        BankTrxBatchDetail recBankTrxBatchDetail = (BankTrxBatchDetail)this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE);
         recBankTrxBatchDetail.addListener(new SubFileFilter(this.getMainRecord()));
-        recBankTrxBatchDetail.addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kEndBalance), BankTrxBatchDetail.kAmount, false, true));
-        recBankTrxBatchDetail.addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kTrxCount), false, true));
+        recBankTrxBatchDetail.addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.END_BALANCE), BankTrxBatchDetail.AMOUNT, false, true));
+        recBankTrxBatchDetail.addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.TRX_COUNT), false, true));
         
-        BankTrxBatchDist recBankTrxBatchDist = (BankTrxBatchDist)this.getRecord(BankTrxBatchDist.kBankTrxBatchDistFile);
-        recBankTrxBatchDist.addListener(new SubFileFilter(this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile)));
-        recBankTrxBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kChangeBalance), BankTrxBatchDist.kAmount, false, true));
+        BankTrxBatchDist recBankTrxBatchDist = (BankTrxBatchDist)this.getRecord(BankTrxBatchDist.BANK_TRX_BATCH_DIST_FILE);
+        recBankTrxBatchDist.addListener(new SubFileFilter(this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE)));
+        recBankTrxBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.CHANGE_BALANCE), BankTrxBatchDist.AMOUNT, false, true));
         
         try {
             recBankTrxBatchDetail.close();
@@ -134,7 +134,7 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
         boolean bSuccess = super.checkValidDetail();
         Record recBankTrxBatchDetail = this.getDetailRecord();
         if (bSuccess)
-            if (recBankTrxBatchDetail.getField(BankTrxBatchDetail.kTrxDate).isNull())
+            if (recBankTrxBatchDetail.getField(BankTrxBatchDetail.TRX_DATE).isNull())
         {
             BaseApplication application = (BaseApplication)this.getTask().getApplication();
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("You must have a transaction date, can't post"));
@@ -152,13 +152,13 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
         if (!bSuccess)
             return bSuccess;
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(BankTrxBatch.kBankAcctID)).getReference();
+        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID)).getReference();
         if (recBankAcct == null)
         {
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("Invalid Bank account, can't post"));
             return false;
         }
-        BaseField fldDefAccountID = this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kAccountID);
+        BaseField fldDefAccountID = this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.ACCOUNT_ID);
         if (fldDefAccountID.isNull())
         {
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("No default account set in control file"));
@@ -172,14 +172,14 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(BankTrx.kBankTrxFile);
+        return (BaseTrx)this.getRecord(BankTrx.BANK_TRX_FILE);
     }
     /**
      * Get the batch detail record.
      */
     public Record getDetailRecord()
     {
-        return this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile);
+        return this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE);
     }
     /**
      * Return the distribution detail record.
@@ -187,7 +187,7 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
      */
     public Record getDistRecord()
     {
-        return this.getRecord(BankTrxBatchDist.kBankTrxBatchDistFile);
+        return this.getRecord(BankTrxBatchDist.BANK_TRX_BATCH_DIST_FILE);
     }
     /**
      * Setup and post this base transaction.
@@ -197,17 +197,17 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
      */
     public boolean postBaseTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
-        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(BankTrxBatch.kBankAcctID)).getReference();
+        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID)).getReference();
         Record recBankTrxBatchDetail = this.getDetailRecord();
-        BaseField fldDrAccountID = recBankAcct.getField(BankAcct.kAccountID);
+        BaseField fldDrAccountID = recBankAcct.getField(BankAcct.ACCOUNT_ID);
         try   {
         // Step 2a - Create and write the bank transaction (in BankTrx).
             recBaseTrx.addNew();
-            for (int iFieldSeq = BankTrx.kID + 1; iFieldSeq < BankTrx.kBankTrxLastField; iFieldSeq++)
+            for (int iFieldSeq = 1; iFieldSeq < recBaseTrx.getFieldCount(); iFieldSeq++)
             {
                 recBaseTrx.getField(iFieldSeq).moveFieldToThis(recBankTrxBatchDetail.getField(iFieldSeq));
             }
-            recBaseTrx.getField(BankTrx.kBankAcctID).moveFieldToThis(this.getRecord(BankTrxBatch.kBankTrxBatchFile).getField(BankTrxBatch.kBankAcctID));
+            recBaseTrx.getField(BankTrx.BANK_ACCT_ID).moveFieldToThis(this.getRecord(BankTrxBatch.BANK_TRX_BATCH_FILE).getField(BankTrxBatch.BANK_ACCT_ID));
             ((BankTrx)recBaseTrx).calcUSDAmounts(true);
             boolean bSuccess = recBaseTrx.onPost(fldDrAccountID, null);
             return bSuccess;
@@ -226,16 +226,16 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
     {
         boolean bSuccess = true;
         Record recBankTrxBatchDist = this.getDistRecord();
-        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(BankTrxBatch.kBankAcctID)).getReference();
-        BaseField fldDefAccountID = this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kAccountID);
+        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(BankTrxBatch.BANK_ACCT_ID)).getReference();
+        BaseField fldDefAccountID = this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.ACCOUNT_ID);
         try {
             TransactionType recTrxType = recBaseTrx.getTrxType(PostingType.DIST_POST);
-            double dTotalLocal = recBaseTrx.getField(BankTrx.kAmount).getValue();
+            double dTotalLocal = recBaseTrx.getField(BankTrx.AMOUNT).getValue();
             int iSign = +1;
             if (dTotalLocal > 0)
                 iSign = -iSign; // Should have the opposite sign
             dTotalLocal = Math.abs(dTotalLocal);
-            double dTotalUSD = Math.abs(recBaseTrx.getField(BankTrx.kAmountLocal).getValue());
+            double dTotalUSD = Math.abs(recBaseTrx.getField(BankTrx.AMOUNT_LOCAL).getValue());
             double dExchange = 1.0;
             if (dTotalLocal != 0)
                 dExchange = dTotalUSD / dTotalLocal;
@@ -247,8 +247,8 @@ public class BankTrxBatchPost extends BaseTrxPostScreen
             while (recBankTrxBatchDist.hasNext())
             {
                 recBankTrxBatchDist.next();
-                BaseField fldDistAccountID = recBankTrxBatchDist.getField(BankTrxBatchDist.kAccountID);
-                double dAmountLocal = recBankTrxBatchDist.getField(BankTrxBatchDist.kAmount).getValue();
+                BaseField fldDistAccountID = recBankTrxBatchDist.getField(BankTrxBatchDist.ACCOUNT_ID);
+                double dAmountLocal = recBankTrxBatchDist.getField(BankTrxBatchDist.AMOUNT).getValue();
                 dAmountLocal = Math.abs(dAmountLocal);      // Should have same sign as the total
                 dBalanceLocal = dBalanceLocal - dAmountLocal;
         

@@ -168,10 +168,10 @@ public class ProductType extends VirtualRecord
     {
         boolean bSuccess = false;
         if (this.getEditMode() == DBConstants.EDIT_CURRENT)
-            if (string.equals(this.getField(ProductType.kDescription).toString()))
+            if (string.equals(this.getField(ProductType.DESCRIPTION).toString()))
                 bSuccess = true;    // Already current
-        this.getField(ProductType.kDescription).setString(string);
-        this.setKeyArea(ProductType.kDescriptionKey);
+        this.getField(ProductType.DESCRIPTION).setString(string);
+        this.setKeyArea(ProductType.DESCRIPTION_KEY);
         try   {
             if (bSuccess == false)
                 bSuccess = this.seek("=");
@@ -179,7 +179,7 @@ public class ProductType extends VirtualRecord
             bSuccess = false;
         }
         if (bSuccess)
-            return (int)this.getField(ProductType.kID).getValue();
+            return (int)this.getField(ProductType.ID).getValue();
         else
             return -1;  // Not found???
     }
@@ -193,7 +193,7 @@ public class ProductType extends VirtualRecord
             while (this.hasNext())
             {
                 this.next();
-                BaseField field = record.getField(this.getField(ProductType.kDescription).toString() + strFieldSuffix);
+                BaseField field = record.getField(this.getField(ProductType.DESCRIPTION).toString() + strFieldSuffix);
                 if (field != null)
                     new SCheckBox(screen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), screen, field, ScreenConstants.DEFAULT_DISPLAY);
             }

@@ -556,7 +556,7 @@ public class BookingItem extends BookingDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(BookingDetail.kProductTypeID, ProductType.ITEM_ID)); 
+        this.addListener(new SharedFileHandler(BookingDetail.PRODUCT_TYPE_ID, ProductType.ITEM_ID)); 
     }
     /**
      * When a new record is set up and you have the booking and tour
@@ -565,10 +565,10 @@ public class BookingItem extends BookingDetail
     public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingItem.kRateID).isNull()))
-            this.getField(BookingItem.kRateID).moveFieldToThis(recTour.getField(Tour.kItemRateID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingItem.kClassID).isNull()))
-            this.getField(BookingItem.kClassID).moveFieldToThis(recTour.getField(Tour.kItemClassID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingItem.RATE_ID).isNull()))
+            this.getField(BookingItem.RATE_ID).moveFieldToThis(recTour.getField(Tour.ITEM_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingItem.CLASS_ID).isNull()))
+            this.getField(BookingItem.CLASS_ID).moveFieldToThis(recTour.getField(Tour.ITEM_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -594,11 +594,11 @@ public class BookingItem extends BookingDetail
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
-        if (this.getField(BookingDetail.kProductID).isNull())
-            return BookingDetail.kProductID; // Product must be non-null
-        return 0;    // Looks good.. don't call super (date is not required here)
+        if (this.getField(BookingDetail.PRODUCT_ID).isNull())
+            return BookingDetail.PRODUCT_ID; // Product must be non-null
+        return null;    // Looks good.. don't call super (date is not required here)
     }
 
 }

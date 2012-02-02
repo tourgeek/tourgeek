@@ -104,16 +104,16 @@ public class BookingMenuLookup extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Booking.kBookingFile, Booking.kID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kBookingDate).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kEmployeeID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kCode).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kDescription).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kEmployeeModID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kModDate).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kBookingStatusID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kGenericName).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kDepartureDate).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.BOOKING_DATE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.EMPLOYEE_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.CODE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.DESCRIPTION).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.EMPLOYEE_MOD_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.MOD_DATE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.BOOKING_STATUS_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.GENERIC_NAME).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.DEPARTURE_DATE).setSelected(true);
     }
     /**
      * Set all the fields to selected/not selected.
@@ -132,12 +132,12 @@ public class BookingMenuLookup extends QueryRecord
         if (iKeyArea == DBConstants.MAIN_KEY_AREA)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(this.getField(Booking.kBookingFile, Booking.kID), DBConstants.ASCENDING);
+            keyArea.addKeyField(this.getField(Booking.BOOKING_FILE, Booking.ID), DBConstants.ASCENDING);
         }
         if (iKeyArea == DBConstants.MAIN_KEY_AREA + 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescriptionKey");
-            keyArea.addKeyField(this.getField(Booking.kBookingFile, Booking.kDescription), DBConstants.ASCENDING);
+            keyArea.addKeyField(this.getField(Booking.BOOKING_FILE, Booking.DESCRIPTION), DBConstants.ASCENDING);
         }
         return keyArea;
     }
@@ -146,7 +146,7 @@ public class BookingMenuLookup extends QueryRecord
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Booking.kBookingFile), this.getRecord(Tour.kTourFile), Booking.kTourID, Tour.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Booking.BOOKING_FILE), this.getRecord(Tour.TOUR_FILE), Booking.TOUR_ID, Tour.ID);
     }
 
 }

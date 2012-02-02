@@ -8,6 +8,11 @@ import org.jbundle.model.db.*;
 
 public interface AutoDistModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String AUTO_DIST_DESC = "AutoDistDesc";
+
+    public static final String AUTO_DIST_DESC_KEY = "AutoDistDesc";
     public static final String AUTO_DIST_SCREEN_CLASS = "com.tourapp.tour.genled.screen.autodist.AutoDistScreen";
     public static final String AUTO_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.autodist.AutoDistGridScreen";
 

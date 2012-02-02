@@ -104,12 +104,12 @@ public class BundleDetailGridScreen extends DetailGridScreen
     {
         super.addListeners();
             // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(BundleDetailScreenRecord.kBundleID)).syncReference(this.getRecord(Bundle.kBundleFile));
+        ((ReferenceField)this.getScreenRecord().getField(BundleDetailScreenRecord.BUNDLE_ID)).syncReference(this.getRecord(Bundle.BUNDLE_FILE));
             // The detail file is the sub-file to to passed-in header record.
-        this.getMainRecord().setKeyArea(BundleDetail.kBundleIDKey);     
+        this.getMainRecord().setKeyArea(BundleDetail.BUNDLE_ID_KEY);        
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
             // Any change to the bundle file triggers a re-select (note: SPopup read-thru will not respond)
-        this.getRecord(Bundle.kBundleFile).getField(Bundle.kID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(Bundle.BUNDLE_FILE).getField(Bundle.ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * SetupSFields Method.

@@ -105,33 +105,33 @@ public class McoCollPost extends BaseArTrxPostScreen
     {
         super.addTrxSpecificListeners();
         
-        BaseField fldAirlineID = this.getScreenRecord().getField(McoScreenRecord.kAirlineID);
+        BaseField fldAirlineID = this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID);
         String strAirlineID = this.getProperty(fldAirlineID.getFieldName());
         fldAirlineID.setString(strAirlineID);
         
-        this.getMainRecord().setKeyArea(Mco.kTrxStatusIDKey);
+        this.getMainRecord().setKeyArea(Mco.TRX_STATUS_ID_KEY);
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.SUBMITTED);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.SUBMITTED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus));
         
         this.getMainRecord().addListener(new McoCollCalcNetBeh(null));
         
-        this.getMainRecord().addListener(new CompareFileFilter(Mco.kAirlineID, this.getScreenRecord().getField(McoScreenRecord.kAirlineID), FileListener.EQUALS, null, false));
-        this.getScreenRecord().getField(McoScreenRecord.kNullDate).setData(null); // Just need a temporary null field to compare
-        this.getMainRecord().addListener(new CompareFileFilter(Mco.kDatePaid, this.getScreenRecord().getField(McoScreenRecord.kNullDate), FileListener.NOT_EQUAL, null, false));
+        this.getMainRecord().addListener(new CompareFileFilter(Mco.AIRLINE_ID, this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID), FileListener.EQUALS, null, false));
+        this.getScreenRecord().getField(McoScreenRecord.NULL_DATE).setData(null); // Just need a temporary null field to compare
+        this.getMainRecord().addListener(new CompareFileFilter(Mco.DATE_PAID, this.getScreenRecord().getField(McoScreenRecord.NULL_DATE), FileListener.NOT_EQUAL, null, false));
         
         Record recMco = this.getMainRecord();
-        recMco.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kCount), false, true));
-        recMco.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kTotalGross), Mco.kGross, false, true));
-        recMco.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kTotalNet), Mco.kAmountPaid, false, true));
+        recMco.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.COUNT), false, true));
+        recMco.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.TOTAL_GROSS), Mco.GROSS, false, true));
+        recMco.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.TOTAL_NET), Mco.AMOUNT_PAID, false, true));
         
         recMco.close();
         try   {   // Recount totals
             while (recMco.hasNext())
             {
                 recMco.next();
-                if (recMco.getField(Mco.kDatePaid).isNull())
+                if (recMco.getField(Mco.DATE_PAID).isNull())
                     continue;
             }
         } catch (DBException ex)    {
@@ -156,8 +156,8 @@ public class McoCollPost extends BaseArTrxPostScreen
     {
         // Step 1 - make sure batch is valid
         BaseArPay recBaseArTrx = (BaseArPay)this.getBaseTrx();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        TransactionType recTransactionType = (TransactionType)this.getRecord(TransactionType.kTransactionTypeFile);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        TransactionType recTransactionType = (TransactionType)this.getRecord(TransactionType.TRANSACTION_TYPE_FILE);
         
         // Step 2 - Post it to the G/L
         try   {
@@ -169,24 +169,24 @@ public class McoCollPost extends BaseArTrxPostScreen
             while (recBaseArTrx.hasNext())
             {
                 recBaseArTrx.next();
-                if (recBaseArTrx.getField(BaseArPay.kDatePaid).isNull())
+                if (recBaseArTrx.getField(BaseArPay.DATE_PAID).isNull())
                     continue;
         
                 recBaseArTrx.startDistTrx();
                 // Step 2a - Create and write the Mco transaction.
                 bookmark = recBaseArTrx.getHandle(DBConstants.DATA_SOURCE_HANDLE);
                 recBaseArTrx.edit();
-                recBaseArTrx.getField(BaseArPay.kTrxStatusID).setValue(iEnteredTrxClass);
-                recBaseArTrx.getField(BaseArPay.kPaymentEntered).setValue(DateTimeField.todaysDate());
+                recBaseArTrx.getField(BaseArPay.TRX_STATUS_ID).setValue(iEnteredTrxClass);
+                recBaseArTrx.getField(BaseArPay.PAYMENT_ENTERED).setValue(DateTimeField.todaysDate());
                 recBaseArTrx.set();
                 recBaseArTrx.setHandle(bookmark, DBConstants.DATA_SOURCE_HANDLE);
                 // Step 2 - Post it to the G/L
                 BaseField fldAccountID = this.getTrxAccountID(recBaseArTrx);
-                double dTrxAmount = recBaseArTrx.getField(BaseArPay.kAmtApply).getValue();
+                double dTrxAmount = recBaseArTrx.getField(BaseArPay.AMT_APPLY).getValue();
                 recBaseArTrx.onPostTrxDist(fldAccountID, -dTrxAmount, PostingType.TRX_POST);
                 // Step 2c - Post the distribution side of the transaction.
                 fldAccountID = this.getDistAccountID(recBaseArTrx);
-                double dPaid = recBaseArTrx.getField(BaseArPay.kAmountPaid).getValue();
+                double dPaid = recBaseArTrx.getField(BaseArPay.AMOUNT_PAID).getValue();
                 recBaseArTrx.onPostTrxDist(fldAccountID, dPaid, PostingType.DIST_POST);
         
                 // Step 2d - Post the variance transaction.
@@ -206,9 +206,9 @@ public class McoCollPost extends BaseArTrxPostScreen
         }
         // Step 3 - Delete the batch (if not recurring)
         recBaseArTrx.close();
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kCount).initField(DBConstants.DISPLAY);
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kTotalGross).initField(DBConstants.DISPLAY);
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kTotalNet).initField(DBConstants.DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.COUNT).initField(DBConstants.DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.TOTAL_GROSS).initField(DBConstants.DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.TOTAL_NET).initField(DBConstants.DISPLAY);
         return true;
     }
     /**
@@ -217,7 +217,7 @@ public class McoCollPost extends BaseArTrxPostScreen
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(Mco.kMcoFile);
+        return (BaseTrx)this.getRecord(Mco.MCO_FILE);
     }
     /**
      * Get the batch detail record.
@@ -231,13 +231,13 @@ public class McoCollPost extends BaseArTrxPostScreen
      */
     public BaseField getTrxAccountID(Record recBaseArTrx)
     {
-        ArControl recArControl = (ArControl)this.getRecord(ArControl.kArControlFile);
+        ArControl recArControl = (ArControl)this.getRecord(ArControl.AR_CONTROL_FILE);
         BaseField fldAccountID = null;
-        Airline recAirline = (Airline)((ReferenceField)recBaseArTrx.getField(Mco.kAirlineID)).getReference();
+        Airline recAirline = (Airline)((ReferenceField)recBaseArTrx.getField(Mco.AIRLINE_ID)).getReference();
         if (recAirline != null)
-            fldAccountID = recAirline.getField(Airline.kMcoRecAccountID);
+            fldAccountID = recAirline.getField(Airline.MCO_REC_ACCOUNT_ID);
         if ((fldAccountID == null) || (fldAccountID.getValue() == 0))
-            fldAccountID = recArControl.getField(ArControl.kMcoRecAccountID);
+            fldAccountID = recArControl.getField(ArControl.MCO_REC_ACCOUNT_ID);
         return fldAccountID;
     }
     /**
@@ -245,7 +245,7 @@ public class McoCollPost extends BaseArTrxPostScreen
      */
     public BaseField getDistAccountID(Record recBaseArTrx)
     {
-        return this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoSuspenseAccountID);
+        return this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_SUSPENSE_ACCOUNT_ID);
     }
     /**
      * GetVarAccountID Method.
@@ -253,12 +253,12 @@ public class McoCollPost extends BaseArTrxPostScreen
     public BaseField getVarAccountID(Record recBaseArTrx)
     {
         BaseField fldAccountID = null;
-        ArControl recArControl = (ArControl)this.getRecord(ArControl.kArControlFile);
-        Airline recAirline = (Airline)((ReferenceField)recBaseArTrx.getField(Mco.kAirlineID)).getReference();
+        ArControl recArControl = (ArControl)this.getRecord(ArControl.AR_CONTROL_FILE);
+        Airline recAirline = (Airline)((ReferenceField)recBaseArTrx.getField(Mco.AIRLINE_ID)).getReference();
         if (recAirline != null)
-            fldAccountID = recAirline.getField(Airline.kMcoVarAccountID);
+            fldAccountID = recAirline.getField(Airline.MCO_VAR_ACCOUNT_ID);
         if ((fldAccountID == null) || (fldAccountID.getValue() == 0))
-            fldAccountID = recArControl.getField(ArControl.kMcoVarAccountID);
+            fldAccountID = recArControl.getField(ArControl.MCO_VAR_ACCOUNT_ID);
         return fldAccountID;
     }
     /**
@@ -266,8 +266,8 @@ public class McoCollPost extends BaseArTrxPostScreen
      */
     public int getNewTrxClass()
     {
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        int iEnteredTrxClass = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.PAID);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        int iEnteredTrxClass = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.ITEM_PAID);
         return iEnteredTrxClass;
     }
 

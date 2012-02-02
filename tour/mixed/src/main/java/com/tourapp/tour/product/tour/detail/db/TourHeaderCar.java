@@ -345,7 +345,7 @@ public class TourHeaderCar extends TourHeaderTransport
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(TourHeaderDetail.kProductTypeID, ProductType.CAR_ID));
+        this.addListener(new SharedFileHandler(TourHeaderDetail.PRODUCT_TYPE_ID, ProductType.CAR_ID));
     }
 
 }

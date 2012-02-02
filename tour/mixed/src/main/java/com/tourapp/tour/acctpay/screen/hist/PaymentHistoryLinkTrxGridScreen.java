@@ -90,7 +90,7 @@ public class PaymentHistoryLinkTrxGridScreen extends LinkTrxGridScreen
      */
     public Record openHeaderRecord()
     {
-        if (ApTrx.kApTrxFile.equalsIgnoreCase(this.getProperty(DBParams.HEADER_RECORD)))
+        if (ApTrx.AP_TRX_FILE.equalsIgnoreCase(this.getProperty(DBParams.HEADER_RECORD)))
             return new ApTrx(this);
         else
             return new BankTrx(this);
@@ -104,11 +104,11 @@ public class PaymentHistoryLinkTrxGridScreen extends LinkTrxGridScreen
         if (this.getHeaderRecord() instanceof BankTrx)
         {
             this.getHeaderRecord().setOpenMode(this.getHeaderRecord().getOpenMode() | DBConstants.OPEN_READ_ONLY);
-            if (this.getHeaderRecord().getField(BankTrx.kBankAcctID).isNull())
+            if (this.getHeaderRecord().getField(BankTrx.BANK_ACCT_ID).isNull())
             {
                 ApControl recApControl = new ApControl(this);
-                this.getHeaderRecord().getField(BankTrx.kBankAcctID).moveFieldToThis(recApControl.getField(ApControl.kApBankAcctID));
-                this.getHeaderRecord().getField(BankTrx.kBankAcctID).setModified(false);
+                this.getHeaderRecord().getField(BankTrx.BANK_ACCT_ID).moveFieldToThis(recApControl.getField(ApControl.AP_BANK_ACCT_ID));
+                this.getHeaderRecord().getField(BankTrx.BANK_ACCT_ID).setModified(false);
             }
         }
     }
@@ -148,7 +148,7 @@ public class PaymentHistoryLinkTrxGridScreen extends LinkTrxGridScreen
     {
         if (LinkTrx.SOURCE.equalsIgnoreCase(strCommand))
         {
-            Record recApTrx = ((ReferenceField)this.getMainRecord().getField(PaymentHistory.kApTrxID)).getReference();
+            Record recApTrx = ((ReferenceField)this.getMainRecord().getField(PaymentHistory.AP_TRX_ID)).getReference();
             if (recApTrx != null)
                 return (this.onForm(recApTrx, ScreenConstants.MAINT_MODE, true, iCommandOptions, null) != null);
         }

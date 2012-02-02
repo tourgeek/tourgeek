@@ -100,8 +100,8 @@ public class CashBatchDistScreen extends Screen
         
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
         
-        this.getRecord(CashBatchDist.kCashBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), CashBatchDist.kAmount, false, true));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kEndBalance), this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kAmount), true));
+        this.getRecord(CashBatchDist.CASH_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CashBatchDist.AMOUNT, false, true));
+        this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.END_BALANCE), this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.AMOUNT), true));
     }
     /**
      * If there is a header record, return it, otherwise, return the main record.
@@ -111,7 +111,7 @@ public class CashBatchDistScreen extends Screen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(CashBatchDetail.kCashBatchDetailFile);
+        return this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE);
     }
     /**
      * Make a sub-screen.

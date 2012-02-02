@@ -70,11 +70,11 @@ public class ProductField extends ReferenceField
         Record record = this.makeReferenceRecord();
         if (record != null)
         {
-            Converter fldProductDesc = record.getField(Product.kDescription);
+            Converter fldProductDesc = record.getField(Product.DESCRIPTION);
             fldProductDesc = new FieldLengthConverter(fldProductDesc, 30);
-            int iKeyArea = Product.kCodeKey;
+            String iKeyArea = Product.CODE_KEY;
             if (targetScreen instanceof GridScreen)
-                iKeyArea = -1;
+                iKeyArea = null;
             return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, iKeyArea, fldProductDesc, true, true);
         }
         else
@@ -88,9 +88,9 @@ public class ProductField extends ReferenceField
         if (m_recordReference == null)
             if (this.getRecord() instanceof BookingDetail)
         {
-            ProductTypeField fldProductType = (ProductTypeField)this.getRecord().getField(BookingDetail.kProductTypeID);
+            ProductTypeField fldProductType = (ProductTypeField)this.getRecord().getField(BookingDetail.PRODUCT_TYPE_ID);
             ProductType recProductType = (ProductType)fldProductType.getReference();
-            String strProductType = recProductType.getField(ProductType.kDescription).toString();
+            String strProductType = recProductType.getField(ProductType.DESCRIPTION).toString();
             if ("Tour".equalsIgnoreCase(strProductType))
                 strProductType = "TourHeader";
             if (recProductType != null)

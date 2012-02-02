@@ -81,16 +81,16 @@ public class AcctDetailJournal extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(AcctDetail.kTrxDateKey);
+        this.getMainRecord().setKeyArea(AcctDetail.TRX_DATE_KEY);
         
-        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.kStartDate), AcctDetail.kTrxDate, null, -1, null, -1);
+        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.START_DATE), AcctDetail.TRX_DATE, null, null, null, null);
         listener.setEndKey(false);
         this.getMainRecord().addListener(listener);
-        listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.kEndDate), AcctDetail.kTrxDate, null, -1, null, -1);
+        listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.END_DATE), AcctDetail.TRX_DATE, null, null, null, null);
         listener.setInitialKey(false);
         this.getMainRecord().addListener(listener);
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kReportCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kReportTotal), AcctDetail.kAmountLocal, false, true));        
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.REPORT_COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.REPORT_TOTAL), AcctDetail.AMOUNT_LOCAL, false, true));        
         
         this.setProperty(LIMIT_PARAM, LIMIT_UNLIMITED);   // Unlimited detail records
     }

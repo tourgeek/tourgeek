@@ -65,14 +65,14 @@ public class ManualVariesDefaultCost extends FieldListener
             Record recLandVaries = ((ReferenceField)this.getOwner()).getReference();
             if (recLandVaries != null)
             {
-                String strVariesBy = recLandVaries.getField(LandVaries.kVariesBy).toString();
+                String strVariesBy = recLandVaries.getField(LandVaries.VARIES_BY).toString();
                 if ((VariesByField.MANUAL_FIXED.equals(strVariesBy))
                     || (VariesByField.MANUAL_PER_PERSON.equals(strVariesBy))
                     || (VariesByField.MANUAL_PER_ROOM.equals(strVariesBy)))
                 {
                     Record recLandPricing = this.getOwner().getRecord();
-                    if (recLandPricing.getField(LandPricing.kCost).isNull())
-                        recLandPricing.getField(LandPricing.kCost).setValue(1);
+                    if (recLandPricing.getField(LandPricing.COST).isNull())
+                        recLandPricing.getField(LandPricing.COST).setValue(1);
                 }
             }
         }

@@ -94,69 +94,69 @@ public class RequestScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        Request recRequest = (Request)this.getRecord(Request.kRequestFile);
-        Profile recProfile = (Profile)this.getRecord(Profile.kProfileFile);
-        RequestDetail recRequestDetail = (RequestDetail)this.getRecord(RequestDetail.kRequestDetailFile);
-        BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.kBundleDetailFile);
-        Brochure recItem = (Brochure)this.getRecord(Brochure.kBrochureFile);
-        RequestControl recRequestControl = (RequestControl)this.getRecord(RequestControl.kRequestControlFile);
+        Request recRequest = (Request)this.getRecord(Request.REQUEST_FILE);
+        Profile recProfile = (Profile)this.getRecord(Profile.PROFILE_FILE);
+        RequestDetail recRequestDetail = (RequestDetail)this.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+        BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE);
+        Brochure recItem = (Brochure)this.getRecord(Brochure.BROCHURE_FILE);
+        RequestControl recRequestControl = (RequestControl)this.getRecord(RequestControl.REQUEST_CONTROL_FILE);
         GridScreen gsBrocDetail = (GridScreen)this.getSField(this.getSFieldCount() - 1);
-        RequestInput recItemReqInput = (RequestInput)gsBrocDetail.getRecord(RequestInput.kRequestInputFile);
+        RequestInput recItemReqInput = (RequestInput)gsBrocDetail.getRecord(RequestInput.REQUEST_INPUT_FILE);
         
-        recRequest.getField(Request.kSendViaCode).addListener(new InitOnceFieldHandler(null));
-        recRequest.getField(Request.kSendViaCode).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.kSendViaCode)));
-        recRequest.getField(Request.kBundleID).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.kBundleID)));
-        recRequest.getField(Request.kBundleQty).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.kBrochureQty)));
+        recRequest.getField(Request.SEND_VIA_CODE).addListener(new InitOnceFieldHandler(null));
+        recRequest.getField(Request.SEND_VIA_CODE).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.SEND_VIA_CODE)));
+        recRequest.getField(Request.BUNDLE_ID).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.BUNDLE_ID)));
+        recRequest.getField(Request.BUNDLE_QTY).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.BROCHURE_QTY)));
         // Here's the code to move the agency info on select
-        ReadSecondaryHandler pSecondaryBehavior = new ReadSecondaryHandler(recProfile, Profile.kProfileCodeKey);
+        ReadSecondaryHandler pSecondaryBehavior = new ReadSecondaryHandler(recProfile, Profile.PROFILE_CODE_KEY);
         pSecondaryBehavior.setRespondsToMode(DBConstants.READ_MOVE, false);
-        recRequest.getField(Request.kProfileCode).addListener(pSecondaryBehavior);
+        recRequest.getField(Request.PROFILE_CODE).addListener(pSecondaryBehavior);
         
-        pSecondaryBehavior.addFieldSeqPair(Request.kProfileID);
-        pSecondaryBehavior.addFieldSeqPair(Request.kProfileCode, Profile.kProfileCode, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kGenericName, Profile.kGenericName, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kAddressLine1, Profile.kAddressLine1, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kAddressLine2, Profile.kAddressLine2, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kCityOrTown, Profile.kCityOrTown, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kStateOrRegion, Profile.kStateOrRegion, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kPostalCode, Profile.kPostalCode, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kCountry, Profile.kCountry, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kAttention, Profile.kNameOrdered, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
-        pSecondaryBehavior.addFieldSeqPair(Request.kEmail, Profile.kEmail, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.PROFILE_ID);
+        pSecondaryBehavior.addFieldSeqPair(Request.PROFILE_CODE, Profile.PROFILE_CODE, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.GENERIC_NAME, Profile.GENERIC_NAME, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.ADDRESS_LINE_1, Profile.ADDRESS_LINE_1, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.ADDRESS_LINE_2, Profile.ADDRESS_LINE_2, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.CITY_OR_TOWN, Profile.CITY_OR_TOWN, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.STATE_OR_REGION, Profile.STATE_OR_REGION, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.POSTAL_CODE, Profile.POSTAL_CODE, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.COUNTRY, Profile.COUNTRY, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.ATTENTION, Profile.NAME_ORDERED, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
+        pSecondaryBehavior.addFieldSeqPair(Request.EMAIL, Profile.EMAIL, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK);
         
-        recRequest.getField(Request.kProfileCode).addListener(new ChangeFocusOnChangeHandler(recRequest.getField(Request.kAttention)));
+        recRequest.getField(Request.PROFILE_CODE).addListener(new ChangeFocusOnChangeHandler(recRequest.getField(Request.ATTENTION)));
         
-        recBundleDetail.setKeyArea(BundleDetail.kBundleIDKey);
-        recBundleDetail.addListener(new SubFileFilter(recRequest.getField(Request.kBundleID), BundleDetail.kBundleID, null, -1, null, -1));
+        recBundleDetail.setKeyArea(BundleDetail.BUNDLE_ID_KEY);
+        recBundleDetail.addListener(new SubFileFilter(recRequest.getField(Request.BUNDLE_ID), BundleDetail.BUNDLE_ID, null, null, null, null));
         
         recRequestDetail.addListener(new SubFileFilter(recRequest));
         // Set up the initial detail
         
-        recItemReqInput.getField(RequestInput.kBrochureQty).addListener(new InitFieldHandler(recRequest.getField(Request.kBundleQty)));
+        recItemReqInput.getField(RequestInput.BROCHURE_QTY).addListener(new InitFieldHandler(recRequest.getField(Request.BUNDLE_QTY)));
         // These will guarantee that update calls the SetupBrocDetail listener
-        recItemReqInput.getField(RequestInput.kBrochureQty).addListener(new SetDirtyOnChangeHandler(recRequest.getField(Request.kBundleID), false, true));
-        recItemReqInput.getField(RequestInput.kBrochureID).addListener(new SetDirtyOnChangeHandler(recRequest.getField(Request.kBundleID), false, true));
+        recItemReqInput.getField(RequestInput.BROCHURE_QTY).addListener(new SetDirtyOnChangeHandler(recRequest.getField(Request.BUNDLE_ID), false, true));
+        recItemReqInput.getField(RequestInput.BROCHURE_ID).addListener(new SetDirtyOnChangeHandler(recRequest.getField(Request.BUNDLE_ID), false, true));
         
         if ((recRequest.getEditMode() == Constants.EDIT_NONE) || (recRequest.getEditMode() == Constants.EDIT_ADD))
         {
-            recRequest.getField(Request.kBundleID).initField(DBConstants.DISPLAY);
-            recRequest.getField(Request.kBundleQty).initField(DBConstants.DISPLAY);
+            recRequest.getField(Request.BUNDLE_ID).initField(DBConstants.DISPLAY);
+            recRequest.getField(Request.BUNDLE_QTY).initField(DBConstants.DISPLAY);
             this.setupBrocDetail(recRequest, recRequestDetail, recBundleDetail, recItem, recItemReqInput);
         }
         
-        recRequest.getField(Request.kBundleID).addListener(new SetBrocDetailHandler(this, gsBrocDetail, recRequest, recRequestDetail, recBundleDetail, recItem, recItemReqInput));
-        recRequest.getField(Request.kBundleQty).addListener(new SetBrocDetailHandler(this, gsBrocDetail, recRequest, recRequestDetail, recBundleDetail, recItem, recItemReqInput));
+        recRequest.getField(Request.BUNDLE_ID).addListener(new SetBrocDetailHandler(this, gsBrocDetail, recRequest, recRequestDetail, recBundleDetail, recItem, recItemReqInput));
+        recRequest.getField(Request.BUNDLE_QTY).addListener(new SetBrocDetailHandler(this, gsBrocDetail, recRequest, recRequestDetail, recBundleDetail, recItem, recItemReqInput));
         
-        recRequest.getField(Request.kID).addListener(new FieldReSelectHandler(gsBrocDetail)); // Reselect on file change
+        recRequest.getField(Request.ID).addListener(new FieldReSelectHandler(gsBrocDetail)); // Reselect on file change
         
         recRequest.addListener(new SetupBrocDetailHandler(recRequest, recRequestDetail, recBundleDetail, recItem, recItemReqInput));
         
         recRequest.setOpenMode(recRequest.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
         
         InitOnceFieldHandler listener = null;
-        recRequest.getField(Request.kBundleID).addListener(listener = new InitOnceFieldHandler(null));
+        recRequest.getField(Request.BUNDLE_ID).addListener(listener = new InitOnceFieldHandler(null));
         listener.setFirstTime(false);   // Don't allow any more changes
-        recRequest.getField(Request.kBundleQty).addListener(listener = new InitOnceFieldHandler(null));
+        recRequest.getField(Request.BUNDLE_QTY).addListener(listener = new InitOnceFieldHandler(null));
         listener.setFirstTime(false);
     }
     /**
@@ -164,10 +164,10 @@ public class RequestScreen extends Screen
      */
     public void setupSFields()
     {
-        Request pAmRequests = (Request)this.getRecord(Request.kRequestFile);
+        Request pAmRequests = (Request)this.getRecord(Request.REQUEST_FILE);
         this.getRecord(Request.kRequestFile).getField(Request.kProfileCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.kRequestFile).getField(Request.kProfileCode), ScreenConstants.DONT_DISPLAY_DESC, this.getRecord(Profile.kProfileFile));
-        new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.kRequestFile).getField(Request.kProfileCode), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(Profile.kProfileFile));
+        new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.REQUEST_FILE).getField(Request.PROFILE_CODE), ScreenConstants.DONT_DISPLAY_DESC, this.getRecord(Profile.PROFILE_FILE));
+        new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.REQUEST_FILE).getField(Request.PROFILE_CODE), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(Profile.PROFILE_FILE));
         this.getRecord(Request.kRequestFile).getField(Request.kGenericName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Request.kRequestFile).getField(Request.kAddressLine1).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Request.kRequestFile).getField(Request.kAddressLine2).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -199,7 +199,7 @@ public class RequestScreen extends Screen
     {
         if ("Request Detail".equalsIgnoreCase(strCommand))
         {
-            Record recProfile = this.getRecord(Profile.kProfileFile);
+            Record recProfile = this.getRecord(Profile.PROFILE_FILE);
             ScreenLocation itsLocation = null;
             int iDocMode = ScreenConstants.DETAIL_MODE;
             boolean bCloneThisQuery = false;
@@ -217,7 +217,7 @@ public class RequestScreen extends Screen
      */
     public void setupBrocDetail(Request recRequest, RequestDetail recRequestDetail, BundleDetail recBundleDetail, Brochure recItem, RequestInput recRequestInput)
     {
-        recRequestInput.addBundle(recRequest.getField(Request.kBundleID), recBundleDetail, null, recRequest.getField(Request.kBundleQty));
+        recRequestInput.addBundle(recRequest.getField(Request.BUNDLE_ID), recBundleDetail, null, recRequest.getField(Request.BUNDLE_QTY));
     }
 
 }

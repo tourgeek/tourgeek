@@ -68,7 +68,7 @@ public class HotelRateGridScreen extends GridScreen
      */
     public void addListeners()
     {
-        this.getMainRecord().setKeyArea(HotelRate.kDescriptionKey);
+        this.getMainRecord().setKeyArea(HotelRate.DESCRIPTION_KEY);
     }
     /**
      * SetupSFields Method.

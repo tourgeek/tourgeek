@@ -70,14 +70,14 @@ public class ValidBookingHandler extends FileListener
         if (m_iAcceptedType == 0)
         {
             BookingStatus recBookingStatus = new BookingStatus(this.getOwner().findRecordOwner());
-            recBookingStatus.setKeyArea(BookingStatus.kCodeKey);
-            recBookingStatus.getField(BookingStatus.kCode).setString(BookingStatus.OKAY_CODE);
+            recBookingStatus.setKeyArea(BookingStatus.CODE_KEY);
+            recBookingStatus.getField(BookingStatus.CODE).setString(BookingStatus.OKAY_CODE);
             m_iAcceptedType = -1; // In case not found
             try
             {
                 boolean bSuccess = recBookingStatus.seek("=");
                 if (bSuccess)
-                    m_iAcceptedType = (int)recBookingStatus.getField(BookingStatus.kID).getValue();
+                    m_iAcceptedType = (int)recBookingStatus.getField(BookingStatus.ID).getValue();
                 else
                     System.out.println("Sys error - Status not found (ValidBookingHandler)");
             } catch (DBException ex)    {
@@ -86,8 +86,8 @@ public class ValidBookingHandler extends FileListener
             recBookingStatus.free();
             recBookingStatus = null;
         }
-        if (this.getOwner().getField(Booking.kBalance).getValue() >= this.getOwner().getField(Booking.kNet).getValue())
-            if (this.getOwner().getField(Booking.kBookingStatusID).getValue() != m_iAcceptedType)
+        if (this.getOwner().getField(Booking.BALANCE).getValue() >= this.getOwner().getField(Booking.NET).getValue())
+            if (this.getOwner().getField(Booking.BOOKING_STATUS_ID).getValue() != m_iAcceptedType)
                 return false; // Skip this one; not accepted and no money in yet
         return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);   // Valid booking
     }

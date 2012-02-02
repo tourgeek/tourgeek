@@ -113,9 +113,9 @@ public class BookingHeaderScreen extends Screen
         new ProfileControl(this);
         
         Record recBooking = this.getMainRecord();
-        Record recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReferenceRecord(this);
+        Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReferenceRecord(this);
         recTour.setOpenMode((recTour.getOpenMode() & ~DBConstants.OPEN_READ_ONLY) | DBConstants.OPEN_LOCK_ON_CHANGE_STRATEGY);
-        Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReferenceRecord(this);
+        Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReferenceRecord(this);
     }
     /**
      * Add the screen fields.
@@ -134,38 +134,38 @@ public class BookingHeaderScreen extends Screen
         super.addListeners();
         this.addMainKeyBehavior();
         Booking recBooking = (Booking)this.getMainRecord();
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         if (!ScreenConstants.HTML_SCREEN_TYPE.equalsIgnoreCase(this.getViewFactory().getViewSubpackage()))
             recTour.setupRecordListener(this, false, false);   // I need to listen for record changes
-        TourHeader recTourHdr = (TourHeader)this.getRecord(TourHeader.kTourHeaderFile);
-        ReferenceField fldTourID = (ReferenceField)recBooking.getField(Booking.kTourID);
-        BookingControl recBookingControl = (BookingControl)this.getRecord(BookingControl.kBookingControlFile);
-        ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl.kProfileControlFile);
+        TourHeader recTourHdr = (TourHeader)this.getRecord(TourHeader.TOUR_HEADER_FILE);
+        ReferenceField fldTourID = (ReferenceField)recBooking.getField(Booking.TOUR_ID);
+        BookingControl recBookingControl = (BookingControl)this.getRecord(BookingControl.BOOKING_CONTROL_FILE);
+        ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl.PROFILE_CONTROL_FILE);
         
         recBooking.setOpenMode(recBooking.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
-        fldTourID.addListener(new ReadSecondaryHandler(recTour, Tour.kIDKey, DBConstants.DONT_CLOSE_ON_FREE, true, true));  // Update record
+        fldTourID.addListener(new ReadSecondaryHandler(recTour, Tour.ID_KEY, DBConstants.DONT_CLOSE_ON_FREE, true, true));  // Update record
         MoveOnValidHandler tourChangeHandler = (MoveOnValidHandler)recTour.getListener(MoveOnValidHandler.class);
         if (tourChangeHandler != null)
         {   // Always
             recTour.removeListener(tourChangeHandler, true);
             recTour.addListener(new TourChangeHandler(recBooking));
         }
-        recTour.addListener(new DisplayReadHandler(Tour.kTourHeaderID, recTourHdr, TourHeader.kID));        
-        recTour.getField(Tour.kTourHeaderID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
+        recTour.addListener(new DisplayReadHandler(Tour.TOUR_HEADER_ID, recTourHdr, TourHeader.ID));        
+        recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
         recBooking.addControlDefaults(recBookingControl, recProfileControl);
         
-        this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setData(null);  // Initial value
+        this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setData(null);  // Initial value
         FieldListener listener = new BookingScreenHandler(null, null, null);
-        this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).addListener(listener);
+        this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).addListener(listener);
         
         int iCurrentScreen = BookingScreenHandler.MENU_SCREEN;
         if (this.getProperty(BookingScreenHandler.SUB_SCREEN_PARAM) != null)
             iCurrentScreen = Integer.parseInt(this.getProperty(BookingScreenHandler.SUB_SCREEN_PARAM));  // Initial value
         listener.setEnabledListener(false); // Don't switch screens now
-        this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setValue(iCurrentScreen);  // Initial value
+        this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setValue(iCurrentScreen);  // Initial value
         listener.setEnabledListener(true);
         
-        recTour.getField(Tour.kDepartureDate).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(BookingScreenRecord.kLastDate), null, false, true));
+        recTour.getField(Tour.DEPARTURE_DATE).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(BookingScreenRecord.LAST_DATE), null, false, true));
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
     }
     /**
@@ -180,12 +180,12 @@ public class BookingHeaderScreen extends Screen
         { // Special logic to synchronize the screen number with the actual screen number
         try {
                 int value = Integer.parseInt(strValue);
-                SwitchSubScreenHandler listener = (SwitchSubScreenHandler)this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).getListener(BookingScreenHandler.class);
+                SwitchSubScreenHandler listener = (SwitchSubScreenHandler)this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).getListener(BookingScreenHandler.class);
                 if (listener != null)
                     listener.setCurrentScreenNo(value);
-                boolean[] rgbEnabled = this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setEnableListeners(false);
-                this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setValue(value);
-                this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setEnableListeners(rgbEnabled);
+                boolean[] rgbEnabled = this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setEnableListeners(false);
+                this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setValue(value);
+                this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setEnableListeners(rgbEnabled);
             } catch (Exception ex) {
                 // Ignore
             }
@@ -217,7 +217,7 @@ public class BookingHeaderScreen extends Screen
         
         ResourceBundle resources = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
         
-        BaseField field = this.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen);
+        BaseField field = this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN);
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, field, ScreenConstants.DEFAULT_DISPLAY, null, resources.getString(BookingScreenHandler.MENU), Booking.BUTTON_LOCATION + BookingScreenHandler.MENU, Integer.toString(BookingScreenHandler.MENU_SCREEN), null);
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, field, ScreenConstants.DEFAULT_DISPLAY, null, DBConstants.BLANK, Booking.BUTTON_LOCATION + BookingScreenHandler.SUMMARY, Integer.toString(BookingScreenHandler.SUMMARY_SCREEN), resources.getString(BookingScreenHandler.SUMMARY));
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, field, ScreenConstants.DEFAULT_DISPLAY, null, DBConstants.BLANK, Booking.BUTTON_LOCATION + BookingScreenHandler.AGENCY, Integer.toString(BookingScreenHandler.AGENCY_SCREEN), resources.getString(BookingScreenHandler.AGENCY));
@@ -242,12 +242,12 @@ public class BookingHeaderScreen extends Screen
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, field, ScreenConstants.DEFAULT_DISPLAY, null, DBConstants.BLANK, Booking.BUTTON_LOCATION + ProductType.CRUISE, Integer.toString(BookingScreenHandler.CRUISE_SCREEN), resources.getString(ProductType.CRUISE));
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, field, ScreenConstants.DEFAULT_DISPLAY, null, DBConstants.BLANK, Booking.BUTTON_LOCATION + ProductType.ITEM, Integer.toString(BookingScreenHandler.ITEM_SCREEN), resources.getString(ProductType.ITEM));
         
-        Converter converter = new AltFieldConverter(this.getRecord(Booking.kBookingFile).getField(Booking.kDescription), this.getRecord(Tour.kTourFile).getField(Tour.kDescription));
+        Converter converter = new AltFieldConverter(this.getRecord(Booking.BOOKING_FILE).getField(Booking.DESCRIPTION), this.getRecord(Tour.TOUR_FILE).getField(Tour.DESCRIPTION));
         converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Tour.kTourFile).getField(Tour.kTourStatusID).setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, ScreenConstants.DONT_DISPLAY_DESC);
-        if (((TourStatusField)this.getRecord(Tour.kTourFile).getField(Tour.kTourStatusID)).getIconField(null) != null)
-            if (((TourStatusField)this.getRecord(Tour.kTourFile).getField(Tour.kTourStatusID)).getIconField(null).getListener(TourStatusUpdateHandler.class) == null)
-                ((TourStatusField)this.getRecord(Tour.kTourFile).getField(Tour.kTourStatusID)).getIconField(null).addListener(new TourStatusUpdateHandler(null));   // Hack
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_STATUS_ID).setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolbar, ScreenConstants.DONT_DISPLAY_DESC);
+        if (((TourStatusField)this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_STATUS_ID)).getIconField(null) != null)
+            if (((TourStatusField)this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_STATUS_ID)).getIconField(null).getListener(TourStatusUpdateHandler.class) == null)
+                ((TourStatusField)this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_STATUS_ID)).getIconField(null).addListener(new TourStatusUpdateHandler(null));   // Hack
         new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GAP, ScreenConstants.DONT_SET_ANCHOR), toolbar, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.LOOKUP, BookingScreenHandler.BOOKING_LOOKUP, resources.getString(BookingScreenHandler.BOOKING_LOOKUP));
         
         return toolbar;

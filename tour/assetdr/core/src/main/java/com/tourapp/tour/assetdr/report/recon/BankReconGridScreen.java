@@ -98,24 +98,24 @@ public class BankReconGridScreen extends GridScreen
         
         this.setAppending(false);
         this.setEnabled(false);
-        this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kDateReconciled).setEnabled(true);
+        this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.DATE_RECONCILED).setEnabled(true);
         
-        this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kBankAcctID)));
+        this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.BANK_ACCT_ID)));
         
-        this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID).addListener(new CurrentClearedHandler((DateTimeField)this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kDateReconciled), (CurrencyField)this.getScreenRecord().getField(BankReconScreenRecord.kStartCleared)));
+        this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID).addListener(new CurrentClearedHandler((DateTimeField)this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.DATE_RECONCILED), (CurrencyField)this.getScreenRecord().getField(BankReconScreenRecord.START_CLEARED)));
         
-        this.getMainRecord().setKeyArea(BankTrx.kTrxDateKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID), BankTrx.kBankAcctID, null, -1, null, -1));
-        this.getMainRecord().addListener(new CheckReconDateHandler(this.getMainRecord().getField(BankTrx.kDateReconciled), this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kDateReconciled)));
+        this.getMainRecord().setKeyArea(BankTrx.TRX_DATE_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID), BankTrx.BANK_ACCT_ID, null, null, null, null));
+        this.getMainRecord().addListener(new CheckReconDateHandler(this.getMainRecord().getField(BankTrx.DATE_RECONCILED), this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.DATE_RECONCILED)));
         
-        this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID).addListener(new FieldReSelectHandler(this));
         
-        this.getMainRecord().addListener(new CountClearedHandler(this.getScreenRecord().getField(BankReconScreenRecord.kDepositsCleared), BankTrx.kAmount, BankTrx.kDateReconciled, true));
-        this.getMainRecord().addListener(new CountClearedHandler(this.getScreenRecord().getField(BankReconScreenRecord.kChecksCleared), BankTrx.kAmount, BankTrx.kDateReconciled, false));
+        this.getMainRecord().addListener(new CountClearedHandler(this.getScreenRecord().getField(BankReconScreenRecord.DEPOSITS_CLEARED), BankTrx.AMOUNT, BankTrx.DATE_RECONCILED, true));
+        this.getMainRecord().addListener(new CountClearedHandler(this.getScreenRecord().getField(BankReconScreenRecord.CHECKS_CLEARED), BankTrx.AMOUNT, BankTrx.DATE_RECONCILED, false));
         
-        this.getScreenRecord().getField(BankReconScreenRecord.kStartCleared).addListener(new CountNewClearedFieldHandler(BankReconScreenRecord.kNewCleared));
-        this.getScreenRecord().getField(BankReconScreenRecord.kChecksCleared).addListener(new CountNewClearedFieldHandler(BankReconScreenRecord.kNewCleared));
-        this.getScreenRecord().getField(BankReconScreenRecord.kDepositsCleared).addListener(new CountNewClearedFieldHandler(BankReconScreenRecord.kNewCleared));
+        this.getScreenRecord().getField(BankReconScreenRecord.START_CLEARED).addListener(new CountNewClearedFieldHandler(BankReconScreenRecord.NEW_CLEARED));
+        this.getScreenRecord().getField(BankReconScreenRecord.CHECKS_CLEARED).addListener(new CountNewClearedFieldHandler(BankReconScreenRecord.NEW_CLEARED));
+        this.getScreenRecord().getField(BankReconScreenRecord.DEPOSITS_CLEARED).addListener(new CountNewClearedFieldHandler(BankReconScreenRecord.NEW_CLEARED));
     }
     /**
      * Add button(s) to the toolbar.
@@ -129,8 +129,8 @@ public class BankReconGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        Converter field = this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kDateReconciled);
-        BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.kReconDate);
+        Converter field = this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.DATE_RECONCILED);
+        BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.RECON_DATE);
         Converter converter = new ReconciledConverter(field, fldTargetValue, "Reconciled?", true);
         new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

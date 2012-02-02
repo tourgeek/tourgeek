@@ -80,15 +80,15 @@ public class RequestSession extends Session
      */
     public void addListeners()
     {
-        this.getRecord(RequestDetail.kRequestDetailFile).addListener(new SubFileFilter(this.getRecord(Request.kRequestFile)));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(Request.REQUEST_FILE)));
         
-        RequestControl recControl = (RequestControl)this.getRecord(RequestControl.kRequestControlFile);
-        RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.kRequestInputFile);
-        Brochure recItem = (Brochure)this.getRecord(Brochure.kBrochureFile);
-        BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.kBundleDetailFile);
+        RequestControl recControl = (RequestControl)this.getRecord(RequestControl.REQUEST_CONTROL_FILE);
+        RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.REQUEST_INPUT_FILE);
+        Brochure recItem = (Brochure)this.getRecord(Brochure.BROCHURE_FILE);
+        BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE);
         try   {
             recControl.open();      // Read control record
-            ReferenceField fldBundleID = (ReferenceField)recControl.getField(RequestControl.kThinBundleID);
+            ReferenceField fldBundleID = (ReferenceField)recControl.getField(RequestControl.THIN_BUNDLE_ID);
             Bundle recBundle = (Bundle)fldBundleID.getReference();  // Current reference record
             recRequestInput.addBundleBehaviors(recBundle, recBundleDetail, recItem);
         } catch (DBException ex)    {
@@ -105,11 +105,11 @@ public class RequestSession extends Session
     {
         if (strCommand.equals("RebuildRequestInput"))
         {
-            RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.kRequestInputFile);
-            Brochure recItem = (Brochure)this.getRecord(Brochure.kBrochureFile);
-            BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.kBundleDetailFile);
-            Bundle recBundle = (Bundle)this.getRecord(Bundle.kBundleFile);
-            BaseField fldBundleID = recBundle.getField(Bundle.kID);
+            RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.REQUEST_INPUT_FILE);
+            Brochure recItem = (Brochure)this.getRecord(Brochure.BROCHURE_FILE);
+            BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE);
+            Bundle recBundle = (Bundle)this.getRecord(Bundle.BUNDLE_FILE);
+            BaseField fldBundleID = recBundle.getField(Bundle.ID);
             recRequestInput.addBundle(fldBundleID, recBundleDetail, recItem, null);
         }
         return super.doRemoteCommand(strCommand, properties);

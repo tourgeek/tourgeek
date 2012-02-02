@@ -16,6 +16,12 @@ public class ApTrx extends Trx
     implements ApTrxModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
+    //public static final String TRX_USER_ID = TRX_USER_ID;
+
     public ApTrx()
     {
         super();

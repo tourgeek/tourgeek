@@ -74,7 +74,7 @@ public class ProductTermsField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), ProductTerms.kDescriptionKey, ProductTerms.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), ProductTerms.DESCRIPTION_KEY, ProductTerms.DESCRIPTION, true, true);
     }
 
 }

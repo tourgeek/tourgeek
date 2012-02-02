@@ -65,7 +65,7 @@ public class ProductPricingScreen extends ProductDetailScreen
     {
         super.addListeners();
         // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).syncReference(this.getHeaderRecord());
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).syncReference(this.getHeaderRecord());
         // Sub file stuff
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
     }
@@ -83,10 +83,10 @@ public class ProductPricingScreen extends ProductDetailScreen
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ProductPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ProductPricing.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(ProductPricing.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

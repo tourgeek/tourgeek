@@ -84,7 +84,7 @@ public class SpecialFunctionField extends StringField
             if (m_recSpecialFunction.getRecordOwner() != null)
                 m_recSpecialFunction.getRecordOwner().removeRecord(m_recSpecialFunction);
         }
-        FieldConverter convert = new QueryConverter((Converter)converter, m_recSpecialFunction, SpecialFunction.kName, true);
+        FieldConverter convert = new QueryConverter((Converter)converter, m_recSpecialFunction, SpecialFunction.NAME, true);
         return createScreenComponent(ScreenModel.COMBO_BOX, itsLocation, targetScreen, convert, iDisplayFieldDesc, properties);
     }
 

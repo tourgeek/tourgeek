@@ -36,27 +36,49 @@ public class LookupScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String QUERY_KEY = "QueryKey";
     public static final int kQueryKey = kScreenRecordLastField + 1;
+    public static final String START_TARGET_FIELD = "StartTargetField";
     public static final int kStartTargetField = kQueryKey + 1;
+    public static final String START_BK_DAYS = "StartBkDays";
     public static final int kStartBkDays = kStartTargetField + 1;
+    public static final String CURRENT_AGENT = "CurrentAgent";
     public static final int kCurrentAgent = kStartBkDays + 1;
+    public static final String START_BK_DATE = "StartBkDate";
     public static final int kStartBkDate = kCurrentAgent + 1;
+    public static final String BK_DISPLAY_TYPE = "BkDisplayType";
     public static final int kBkDisplayType = kStartBkDate + 1;
+    public static final String TOUR_HDR_BROCHURE_ID = "TourHdrBrochureID";
     public static final int kTourHdrBrochureID = kBkDisplayType + 1;
+    public static final String TOUR_HDR_AIRLINE_CODE = "TourHdrAirlineCode";
     public static final int kTourHdrAirlineCode = kTourHdrBrochureID + 1;
+    public static final String TOUR_HDR_TOUR_TYPE = "TourHdrTourType";
     public static final int kTourHdrTourType = kTourHdrAirlineCode + 1;
+    public static final String TOUR_HDR_START_DATE = "TourHdrStartDate";
     public static final int kTourHdrStartDate = kTourHdrTourType + 1;
+    public static final String TOUR_HDR_END_DATE = "TourHdrEndDate";
     public static final int kTourHdrEndDate = kTourHdrStartDate + 1;
+    public static final String START_HDR_DAYS = "StartHdrDays";
     public static final int kStartHdrDays = kTourHdrEndDate + 1;
+    public static final String END_HDR_DAYS = "EndHdrDays";
     public static final int kEndHdrDays = kStartHdrDays + 1;
+    public static final String BOOKING_LIST_FORMAT = "BookingListFormat";
     public static final int kBookingListFormat = kEndHdrDays + 1;
+    public static final String BOOKING_STATUS_ID = "BookingStatusID";
     public static final int kBookingStatusID = kBookingListFormat + 1;
+    public static final String TOUR_HEADER_ID = "TourHeaderID";
     public static final int kTourHeaderID = kBookingStatusID + 1;
+    public static final String TOUR_STATUS_ID = "TourStatusID";
     public static final int kTourStatusID = kTourHeaderID + 1;
+    public static final String DEPARTURE_DATE = "DepartureDate";
     public static final int kDepartureDate = kTourStatusID + 1;
+    public static final String START_TARGET_DATE = "StartTargetDate";
     public static final int kStartTargetDate = kDepartureDate + 1;
+    public static final String END_TARGET_DATE = "EndTargetDate";
     public static final int kEndTargetDate = kStartTargetDate + 1;
+    public static final String PRODUCT_TYPE_ID = "ProductTypeID";
     public static final int kProductTypeID = kEndTargetDate + 1;
+    public static final String VENDOR_ID = "VendorID";
     public static final int kVendorID = kProductTypeID + 1;
     public static final int kLookupScreenRecordLastField = kVendorID;
     public static final int kLookupScreenRecordFields = kVendorID - DBConstants.MAIN_FIELD + 1;
@@ -150,26 +172,26 @@ public class LookupScreenRecord extends ScreenRecord
     {
         super.addListeners();
         
-        this.getField(LookupScreenRecord.kBkDisplayType).addListener(new SwitchBookingScreenHandler(null));
+        this.getField(LookupScreenRecord.BK_DISPLAY_TYPE).addListener(new SwitchBookingScreenHandler(null));
         
-        this.getField(LookupScreenRecord.kBookingListFormat).addListener(new RegisterValueHandler(null));
-        int nCommandID = (int)this.getField(LookupScreenRecord.kBookingListFormat).getValue();
+        this.getField(LookupScreenRecord.BOOKING_LIST_FORMAT).addListener(new RegisterValueHandler(null));
+        int nCommandID = (int)this.getField(LookupScreenRecord.BOOKING_LIST_FORMAT).getValue();
         
-        this.getField(LookupScreenRecord.kQueryKey).addListener(new RegisterValueHandler(null));
-        this.getField(LookupScreenRecord.kCurrentAgent).addListener(new RegisterValueHandler(null));
+        this.getField(LookupScreenRecord.QUERY_KEY).addListener(new RegisterValueHandler(null));
+        this.getField(LookupScreenRecord.CURRENT_AGENT).addListener(new RegisterValueHandler(null));
         
-        this.getField(LookupScreenRecord.kStartBkDays).addListener(new RegisterValueHandler(null));
-        this.getField(LookupScreenRecord.kStartBkDate).addListener(new InitDateOffsetHandler(this.getField(LookupScreenRecord.kStartBkDays), 0, 0, 0, false));
-        this.getField(LookupScreenRecord.kStartBkDate).initField(DBConstants.DISPLAY);  // Recompute new initial value
-        this.getField(LookupScreenRecord.kStartBkDate).addListener(new ReComputeTimeOffsetHandler(LookupScreenRecord.kStartBkDays));
+        this.getField(LookupScreenRecord.START_BK_DAYS).addListener(new RegisterValueHandler(null));
+        this.getField(LookupScreenRecord.START_BK_DATE).addListener(new InitDateOffsetHandler(this.getField(LookupScreenRecord.START_BK_DAYS), 0, 0, 0, false));
+        this.getField(LookupScreenRecord.START_BK_DATE).initField(DBConstants.DISPLAY);  // Recompute new initial value
+        this.getField(LookupScreenRecord.START_BK_DATE).addListener(new ReComputeTimeOffsetHandler(LookupScreenRecord.START_BK_DAYS));
         
-        this.getField(LookupScreenRecord.kStartHdrDays).addListener(new RegisterValueHandler(null));    
-        this.getField(LookupScreenRecord.kTourHdrStartDate).addListener(new InitDateOffsetHandler(this.getField(LookupScreenRecord.kStartHdrDays), 0, 0, 0));
-        this.getField(LookupScreenRecord.kTourHdrStartDate).initField(DBConstants.DISPLAY);   // Recompute new initial value
-        this.getField(LookupScreenRecord.kTourHdrStartDate).addListener(new ReComputeTimeOffsetHandler(LookupScreenRecord.kStartHdrDays));
+        this.getField(LookupScreenRecord.START_HDR_DAYS).addListener(new RegisterValueHandler(null));    
+        this.getField(LookupScreenRecord.TOUR_HDR_START_DATE).addListener(new InitDateOffsetHandler(this.getField(LookupScreenRecord.START_HDR_DAYS), 0, 0, 0));
+        this.getField(LookupScreenRecord.TOUR_HDR_START_DATE).initField(DBConstants.DISPLAY);   // Recompute new initial value
+        this.getField(LookupScreenRecord.TOUR_HDR_START_DATE).addListener(new ReComputeTimeOffsetHandler(LookupScreenRecord.START_HDR_DAYS));
         
-        this.getField(LookupScreenRecord.kEndHdrDays).addListener(new RegisterValueHandler(null));  
-        this.getField(LookupScreenRecord.kTourHdrEndDate).addListener(new ReComputeTimeOffsetHandler(LookupScreenRecord.kEndHdrDays));
+        this.getField(LookupScreenRecord.END_HDR_DAYS).addListener(new RegisterValueHandler(null));  
+        this.getField(LookupScreenRecord.TOUR_HDR_END_DATE).addListener(new ReComputeTimeOffsetHandler(LookupScreenRecord.END_HDR_DAYS));
     }
     /**
      * AddStandardToolbar Method.
@@ -181,9 +203,9 @@ public class LookupScreenRecord extends ScreenRecord
         toolScreen.setupDisplaySFields();
         //x new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, "Booking entry", Booking.BUTTON_LOCATION + "Booking", "Booking entry", null);
         toolScreen.setupEndSFields();
-        this.getField(LookupScreenRecord.kBkDisplayType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kStartTargetField).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourHdrStartDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.BK_DISPLAY_TYPE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.START_TARGET_FIELD).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_START_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         return toolScreen;
     }
     /**
@@ -192,11 +214,11 @@ public class LookupScreenRecord extends ScreenRecord
     public ToolScreen addBookingToolbar(BasePanel parentScreen)
     {
         ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-        this.getField(LookupScreenRecord.kStartBkDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kCurrentAgent).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourHdrEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourStatusID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kBookingStatusID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.START_BK_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.CURRENT_AGENT).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_END_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_STATUS_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.BOOKING_STATUS_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         return toolScreen;
     }
     /**
@@ -205,17 +227,17 @@ public class LookupScreenRecord extends ScreenRecord
     public ToolScreen addTourToolbar(BasePanel parentScreen)
     {
         ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-        this.getField(LookupScreenRecord.kTourHdrEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourHdrTourType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_END_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_TOUR_TYPE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)this.getField(LookupScreenRecord.kTourHeaderID)).getReferenceRecord();
-        QueryConverter tourHdrConv = new QueryConverter((ReferenceField)this.getField(LookupScreenRecord.kTourHeaderID), recTourHeader, TourHeader.kDescription, true);
-        BaseField fldDepartureDate = this.getField(LookupScreenRecord.kDepartureDate);
-        BaseField fldStartDate = this.getField(LookupScreenRecord.kStartTargetDate);
-        BaseField fldEndDate = this.getField(LookupScreenRecord.kEndTargetDate);
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)this.getField(LookupScreenRecord.TOUR_HEADER_ID)).getReferenceRecord();
+        QueryConverter tourHdrConv = new QueryConverter((ReferenceField)this.getField(LookupScreenRecord.TOUR_HEADER_ID), recTourHeader, TourHeader.DESCRIPTION, true);
+        BaseField fldDepartureDate = this.getField(LookupScreenRecord.DEPARTURE_DATE);
+        BaseField fldStartDate = this.getField(LookupScreenRecord.START_TARGET_DATE);
+        BaseField fldEndDate = this.getField(LookupScreenRecord.END_TARGET_DATE);
         recTourHeader.createTourHeaderPopup(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, tourHdrConv, ScreenConstants.DEFAULT_DISPLAY, fldDepartureDate, fldStartDate, fldEndDate, null);
         
-        this.getField(LookupScreenRecord.kTourStatusID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_STATUS_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         
         return toolScreen;
     }
@@ -225,10 +247,10 @@ public class LookupScreenRecord extends ScreenRecord
     public ToolScreen addTourHdrToolbar(BasePanel parentScreen)
     {
         ToolScreen toolScreen = new EmptyToolbar(null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-        this.getField(LookupScreenRecord.kTourHdrBrochureID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourHdrAirlineCode).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourHdrTourType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getField(LookupScreenRecord.kTourHdrEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_BROCHURE_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_AIRLINE_CODE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_TOUR_TYPE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getField(LookupScreenRecord.TOUR_HDR_END_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         return toolScreen;
     }
 

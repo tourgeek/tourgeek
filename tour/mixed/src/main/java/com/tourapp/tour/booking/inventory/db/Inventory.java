@@ -119,21 +119,21 @@ public class Inventory extends VirtualRecord
         {
             if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             {
-                if (ProductType.HOTEL_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                if (ProductType.HOTEL_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new HotelInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.LAND_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.LAND_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new LandInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.TRANSPORTATION_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.TRANSPORTATION_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new TransportationInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.CAR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.CAR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new CarInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.CRUISE_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.CRUISE_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new CruiseInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.AIR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.AIR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new AirInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.TOUR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.TOUR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new TourHeaderInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.ITEM_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.ITEM_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new ItemInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
             }
             else if ((iDocMode & ScreenConstants.DETAIL_MODE) == ScreenConstants.DETAIL_MODE)
@@ -142,21 +142,21 @@ public class Inventory extends VirtualRecord
             }
             else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
             {
-                if (ProductType.HOTEL_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                if (ProductType.HOTEL_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new HotelInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.LAND_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.LAND_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new LandInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.TRANSPORTATION_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.TRANSPORTATION_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new TransportationInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.CAR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.CAR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new CarInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.CRUISE_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.CRUISE_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new CruiseInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.AIR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.AIR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new AirInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.TOUR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.TOUR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new TourHeaderInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-                else if (ProductType.ITEM_CODE.equalsIgnoreCase(recProductType.getField(ProductType.kCode).toString()))
+                else if (ProductType.ITEM_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
                     screen = new ItemInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
             }
         }
@@ -261,8 +261,8 @@ public class Inventory extends VirtualRecord
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.getField(Inventory.kBlocked).addListener(new CalcBalanceHandler(this.getField(Inventory.kAvailable), this.getField(Inventory.kBlocked), this.getField(Inventory.kUsed), CalcBalanceHandler.MINUS, false));
-        this.getField(Inventory.kUsed).addListener(new CalcBalanceHandler(this.getField(Inventory.kAvailable), this.getField(Inventory.kBlocked), this.getField(Inventory.kUsed), CalcBalanceHandler.MINUS, false));
+        this.getField(Inventory.BLOCKED).addListener(new CalcBalanceHandler(this.getField(Inventory.AVAILABLE), this.getField(Inventory.BLOCKED), this.getField(Inventory.USED), CalcBalanceHandler.MINUS, false));
+        this.getField(Inventory.USED).addListener(new CalcBalanceHandler(this.getField(Inventory.AVAILABLE), this.getField(Inventory.BLOCKED), this.getField(Inventory.USED), CalcBalanceHandler.MINUS, false));
     }
     /**
      * Override this to add record listeners and filters to every screen where this is the main record.
@@ -271,8 +271,8 @@ public class Inventory extends VirtualRecord
     public void addScreenListeners(RecordOwner screen)
     {
         super.addScreenListeners(screen);
-        this.getField(Inventory.kUsed).setEnabled(false);
-        this.getField(Inventory.kAvailable).setEnabled(false);
+        this.getField(Inventory.USED).setEnabled(false);
+        this.getField(Inventory.AVAILABLE).setEnabled(false);
     }
     /**
      * Free Method.
@@ -292,32 +292,32 @@ public class Inventory extends VirtualRecord
         int iOldKeyOrder = this.getDefaultOrder();
         try {
             this.addNew();
-            this.setKeyArea(Inventory.kInvDateKey);
-            ProductType recProductType = (ProductType)((ReferenceField)this.getField(Inventory.kProductTypeID)).getReferenceRecord();
+            this.setKeyArea(Inventory.INV_DATE_KEY);
+            ProductType recProductType = (ProductType)((ReferenceField)this.getField(Inventory.PRODUCT_TYPE_ID)).getReferenceRecord();
             int iProductTypeID = recProductType.getProductTypeID(recProduct);
-            this.getField(Inventory.kProductTypeID).setValue(iProductTypeID);
-            this.getField(Inventory.kProductID).moveFieldToThis((BaseField)recProduct.getCounterField());
-            ((DateField)this.getField(Inventory.kInvDate)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            this.getField(Inventory.kRateID).setValue(0);
-            this.getField(Inventory.kClassID).setValue(0);
-            this.getField(Inventory.kOtherID).setValue(0);
+            this.getField(Inventory.PRODUCT_TYPE_ID).setValue(iProductTypeID);
+            this.getField(Inventory.PRODUCT_ID).moveFieldToThis((BaseField)recProduct.getCounterField());
+            ((DateField)this.getField(Inventory.INV_DATE)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.getField(Inventory.RATE_ID).setValue(0);
+            this.getField(Inventory.CLASS_ID).setValue(0);
+            this.getField(Inventory.OTHER_ID).setValue(0);
             this.close();
             while (this.seek(FileFilter.GREATER_THAN_EQUAL))
             {
-                if (this.getField(Inventory.kProductTypeID).getValue() != iProductTypeID)
+                if (this.getField(Inventory.PRODUCT_TYPE_ID).getValue() != iProductTypeID)
                     break;
-                if (!this.getField(Inventory.kProductID).equals(recProduct.getCounterField()))
+                if (!this.getField(Inventory.PRODUCT_ID).equals(recProduct.getCounterField()))
                     break;
-                if (((DateField)this.getField(Inventory.kInvDate)).compareTo(dateTarget) > 0)
+                if (((DateField)this.getField(Inventory.INV_DATE)).compareTo(dateTarget) > 0)
                     break;
-                if (this.getField(Inventory.kRateID).getValue() != 0)
-                    if (this.getField(Inventory.kRateID).getValue() != iRateID)
+                if (this.getField(Inventory.RATE_ID).getValue() != 0)
+                    if (this.getField(Inventory.RATE_ID).getValue() != iRateID)
                         continue;
-                if (this.getField(Inventory.kClassID).getValue() != 0)
-                    if (this.getField(Inventory.kClassID).getValue() != iClassID)
+                if (this.getField(Inventory.CLASS_ID).getValue() != 0)
+                    if (this.getField(Inventory.CLASS_ID).getValue() != iClassID)
                         continue;
-                if (this.getField(Inventory.kOtherID).getValue() != 0)
-                    if (this.getField(Inventory.kOtherID).getValue() != iOtherID)
+                if (this.getField(Inventory.OTHER_ID).getValue() != 0)
+                    if (this.getField(Inventory.OTHER_ID).getValue() != iOtherID)
                         continue;
                 // Great, this one matches
                 return this;
@@ -338,9 +338,9 @@ public class Inventory extends VirtualRecord
             return null;
         Set<Integer> setSurvey = new HashSet<Integer>();
         InventoryDetail recInventoryDetail = this.getInventoryDetail();
-        recInventoryDetail.setKeyArea(InventoryDetail.kBookingDetailIDKey);
+        recInventoryDetail.setKeyArea(InventoryDetail.BOOKING_DETAIL_ID_KEY);
         SubFileFilter listener = null;
-        recInventoryDetail.addListener(listener = new SubFileFilter(fldTrxID, InventoryDetail.kBookingDetailID, null, -1, null, -1));
+        recInventoryDetail.addListener(listener = new SubFileFilter(fldTrxID, InventoryDetail.BOOKING_DETAIL_ID, null, null, null, null));
         try {
             recInventoryDetail.close();
             while (recInventoryDetail.hasNext())
@@ -381,21 +381,21 @@ public class Inventory extends VirtualRecord
         try {
             this.setOpenMode(iOldOpenMode & ~DBConstants.OPEN_READ_ONLY);   // Allow write (I don't know where this file has been)
             this.edit();
-            int iOldTotal = (int)this.getField(Inventory.kUsed).getValue();
+            int iOldTotal = (int)this.getField(Inventory.USED).getValue();
             int iOldAmount = 0;
             if (bDelete)
                 iTargetAmount = 0;
             InventoryDetail recInventoryDetail = this.getInventoryDetail();
             
             recInventoryDetail.addNew();
-            recInventoryDetail.setKeyArea(InventoryDetail.kInventoryIDKey);
-            recInventoryDetail.getField(InventoryDetail.kInventoryID).moveFieldToThis((BaseField)this.getCounterField());
-            recInventoryDetail.getField(InventoryDetail.kBookingDetailID).moveFieldToThis(fldTrxID);
-            recInventoryDetail.getField(InventoryDetail.kType).setValue(iType);
+            recInventoryDetail.setKeyArea(InventoryDetail.INVENTORY_ID_KEY);
+            recInventoryDetail.getField(InventoryDetail.INVENTORY_ID).moveFieldToThis((BaseField)this.getCounterField());
+            recInventoryDetail.getField(InventoryDetail.BOOKING_DETAIL_ID).moveFieldToThis(fldTrxID);
+            recInventoryDetail.getField(InventoryDetail.TYPE).setValue(iType);
             boolean bFound = recInventoryDetail.seek(null);
             if (bFound)
-                iOldAmount = (int)recInventoryDetail.getField(InventoryDetail.kAmount).getValue();
-            if (this.getField(Inventory.kAvailable).getValue() < (iTargetAmount - iOldAmount))
+                iOldAmount = (int)recInventoryDetail.getField(InventoryDetail.AMOUNT).getValue();
+            if (this.getField(Inventory.AVAILABLE).getValue() < (iTargetAmount - iOldAmount))
             {
                 if (task != null)
                     return task.setLastError(task.getApplication().getResources(ResourceConstants.BOOKING_RESOURCE, true).getString("Not sufficent inventory"));   // Insufficient inventory
@@ -407,7 +407,7 @@ public class Inventory extends VirtualRecord
                 if (setSurvey != null)
                     setSurvey.remove((Integer)recInventoryDetail.getCounterField().getData());
                 recInventoryDetail.edit();
-                recInventoryDetail.getField(InventoryDetail.kAmount).setValue(iTargetAmount);
+                recInventoryDetail.getField(InventoryDetail.AMOUNT).setValue(iTargetAmount);
                 if ((bDelete) || (iTargetAmount == 0))
                     recInventoryDetail.remove();
                 else
@@ -416,15 +416,15 @@ public class Inventory extends VirtualRecord
             else
             {
                 recInventoryDetail.addNew();
-                recInventoryDetail.getField(InventoryDetail.kInventoryID).moveFieldToThis((BaseField)this.getCounterField());
-                recInventoryDetail.getField(InventoryDetail.kBookingDetailID).moveFieldToThis(fldTrxID);
-                recInventoryDetail.getField(InventoryDetail.kType).setValue(iType);
-                recInventoryDetail.getField(InventoryDetail.kAmount).setValue(iTargetAmount);
+                recInventoryDetail.getField(InventoryDetail.INVENTORY_ID).moveFieldToThis((BaseField)this.getCounterField());
+                recInventoryDetail.getField(InventoryDetail.BOOKING_DETAIL_ID).moveFieldToThis(fldTrxID);
+                recInventoryDetail.getField(InventoryDetail.TYPE).setValue(iType);
+                recInventoryDetail.getField(InventoryDetail.AMOUNT).setValue(iTargetAmount);
                 if (!bDelete)
                     recInventoryDetail.add();
             }
         
-            this.getField(Inventory.kUsed).setValue(iOldTotal - iOldAmount + iTargetAmount);
+            this.getField(Inventory.USED).setValue(iOldTotal - iOldAmount + iTargetAmount);
             this.set();
         } catch (DBException ex) {
             ex.printStackTrace();
@@ -447,15 +447,15 @@ public class Inventory extends VirtualRecord
             while (iterator.hasNext())
             {
                 try {
-                    recInventoryDetail.setKeyArea(InventoryDetail.kIDKey);
+                    recInventoryDetail.setKeyArea(InventoryDetail.ID_KEY);
                     recInventoryDetail.addNew();
-                    recInventoryDetail.getField(InventoryDetail.kID).setData(iterator.next());
+                    recInventoryDetail.getField(InventoryDetail.ID).setData(iterator.next());
                     if (recInventoryDetail.seek(null))
                     {
                         int iTargetAmount = 0;
-                        int iType = (int)recInventoryDetail.getField(InventoryDetail.kType).getValue();
+                        int iType = (int)recInventoryDetail.getField(InventoryDetail.TYPE).getValue();
                         boolean bDelete = true;
-                        Inventory recInventory = (Inventory)((ReferenceField)recInventoryDetail.getField(InventoryDetail.kInventoryID)).getReference();
+                        Inventory recInventory = (Inventory)((ReferenceField)recInventoryDetail.getField(InventoryDetail.INVENTORY_ID)).getReference();
                         iErrorCode = recInventory.updateAvailability(iTargetAmount, fldTrxID, iType, bDelete, null);
                         if (iErrorCode != DBConstants.NORMAL_RETURN)
                             return iErrorCode;
@@ -490,9 +490,9 @@ public class Inventory extends VirtualRecord
             task = this.getRecordOwner().getTask();
         
         InventoryDetail recInventoryDetail = this.getInventoryDetail();
-        recInventoryDetail.setKeyArea(InventoryDetail.kBookingDetailIDKey);
+        recInventoryDetail.setKeyArea(InventoryDetail.BOOKING_DETAIL_ID_KEY);
         SubFileFilter listener = null;
-        recInventoryDetail.addListener(listener = new SubFileFilter(fldTrxID, InventoryDetail.kBookingDetailID, null, -1, null, -1));
+        recInventoryDetail.addListener(listener = new SubFileFilter(fldTrxID, InventoryDetail.BOOKING_DETAIL_ID, null, null, null, null));
         try {
             recInventoryDetail.close();
             while (recInventoryDetail.hasNext())
@@ -500,8 +500,8 @@ public class Inventory extends VirtualRecord
                 recInventoryDetail.next();
                 recInventoryDetail.edit();
                 
-                this.setKeyArea(Inventory.kIDKey);
-                this.getField(Inventory.kID).moveFieldToThis(recInventoryDetail.getField(InventoryDetail.kInventoryID));
+                this.setKeyArea(Inventory.ID_KEY);
+                this.getField(Inventory.ID).moveFieldToThis(recInventoryDetail.getField(InventoryDetail.INVENTORY_ID));
                 if (!this.seek(null))
                 { // Never
                     if (task != null)
@@ -509,9 +509,9 @@ public class Inventory extends VirtualRecord
                     else
                         return DBConstants.ERROR_RETURN;
                 }
-                int iTargetAmount = (int)recInventoryDetail.getField(InventoryDetail.kAmount).getValue();
+                int iTargetAmount = (int)recInventoryDetail.getField(InventoryDetail.AMOUNT).getValue();
                 this.edit();
-                this.getField(Inventory.kUsed).setValue(this.getField(Inventory.kUsed).getValue() - iTargetAmount);    
+                this.getField(Inventory.USED).setValue(this.getField(Inventory.USED).getValue() - iTargetAmount);    
                 this.set();
         
                 
@@ -531,7 +531,7 @@ public class Inventory extends VirtualRecord
      */
     public BaseField getSharedRecordTypeKey()
     {
-        return this.getField(Inventory.kProductTypeID);
+        return this.getField(Inventory.PRODUCT_TYPE_ID);
     }
     /**
      * Get the shared record that goes with this key.

@@ -93,7 +93,7 @@ public class ItemSearchSession extends ProductSearchSession
     {
         super.addListeners(); 
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
     }
     /**
      * Select the fields required for the grid screen.
@@ -131,10 +131,10 @@ public class ItemSearchSession extends ProductSearchSession
     {
         super.setScreenFields(properties);
         Record recProduct = this.getMainRecord();
-        Record recProductControl = this.getRecord(ProductControl.kProductControlFile);
+        Record recProductControl = this.getRecord(ProductControl.PRODUCT_CONTROL_FILE);
         
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).moveFieldToThis(recProductControl.getField(ProductControl.kItemClassID));
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).moveFieldToThis(recProductControl.getField(ProductControl.kItemRateID));
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).moveFieldToThis(recProductControl.getField(ProductControl.ITEM_CLASS_ID));
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).moveFieldToThis(recProductControl.getField(ProductControl.ITEM_RATE_ID));
     }
 
 }

@@ -82,11 +82,11 @@ public class CreditCardScreen extends Screen
     {
         // Don't call super
         this.getMainRecord().setOpenMode(this.getMainRecord().getOpenMode() | DBConstants.OPEN_READ_ONLY);
-        this.getMainRecord().setKeyArea(CreditCard.kTrxDateKey);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_DATE_KEY);
         this.setEnabled(false);
         //x Can't lookup by credit card no since it is encrypted
-        //xthis.getMainRecord().getField(CreditCard.kCardNo).setEnabled(true);
-        //xthis.getMainRecord().getField(CreditCard.kCardNo).addListener(new MainFieldHandler(CreditCard.kCardNoKey));
+        //xthis.getMainRecord().getField(CreditCard.CARD_NO).setEnabled(true);
+        //xthis.getMainRecord().getField(CreditCard.CARD_NO).addListener(new MainFieldHandler(CreditCard.CARD_NO_KEY));
     }
     /**
      * Add button(s) to the toolbar.

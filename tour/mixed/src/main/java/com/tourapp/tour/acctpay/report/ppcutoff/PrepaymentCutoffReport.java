@@ -88,51 +88,51 @@ public class PrepaymentCutoffReport extends ApBaseCutoffReport
         super.addListeners();
         
         Record recApTrx = this.getMainRecord();
-        recApTrx.addListener(new ApTrxBaseFilter(ApTrx.kTrxStatusID)
+        recApTrx.addListener(new ApTrxBaseFilter(ApTrx.TRX_STATUS_ID)
         {
             public boolean checkTrxStatus(TrxStatus recTrxStatus)
             {
-                if ((recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.PREPAYMENT_REQUEST) != -1)
-                    || (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.BROKER_PAYMENT_HEADER) != -1)
-                    || (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.DEBIT_MEMO) != -1))
+                if ((recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.PREPAYMENT_REQUEST) != -1)
+                    || (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.BROKER_PAYMENT_HEADER) != -1)
+                    || (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.DEBIT_MEMO) != -1))
                         return true;    // Include this
                 return false; // Don't include this.
             }
         });
         
-        Record recCurrencys = ((ReferenceField)this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCurrencysID)).getReferenceRecord(null);
-        this.getRecord(Currencys.kCurrencysFile).addListener(new CompareFileFilter(Currencys.kID, recCurrencys.getField(Currencys.kID), "=", null, true));
+        Record recCurrencys = ((ReferenceField)this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CURRENCYS_ID)).getReferenceRecord(null);
+        this.getRecord(Currencys.CURRENCYS_FILE).addListener(new CompareFileFilter(Currencys.ID, recCurrencys.getField(Currencys.ID), "=", null, true));
         
-        Record recPaymentHistory = this.getRecord(PaymentHistory.kPaymentHistoryFile);
-        recPaymentHistory.setKeyArea(PaymentHistory.kLinkedTrxIDKey);
-        TrxDesc recTrxDesc = (TrxDesc)this.getRecord(TrxDesc.kTrxDescFile);
-        recTrxDesc.getTrxDesc(TransactionType.ACCTPAY, ApTrx.kApTrxFile);
-        recPaymentHistory.addListener(new SubFileFilter(recApTrx.getField(Trx.kID), LinkTrx.kLinkedTrxID, recTrxDesc.getField(TrxDesc.kID), LinkTrx.kLinkedTrxDescID, null, -1, true));
-        recPaymentHistory.addListener(new CompareFileFilter(PaymentHistory.kTrxDate, this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCutoffDate), "<=", null, true));
+        Record recPaymentHistory = this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
+        recPaymentHistory.setKeyArea(PaymentHistory.LINKED_TRX_ID_KEY);
+        TrxDesc recTrxDesc = (TrxDesc)this.getRecord(TrxDesc.TRX_DESC_FILE);
+        recTrxDesc.getTrxDesc(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE);
+        recPaymentHistory.addListener(new SubFileFilter(recApTrx.getField(Trx.ID), LinkTrx.LINKED_TRX_ID, recTrxDesc.getField(TrxDesc.ID), LinkTrx.LINKED_TRX_DESC_ID, null, null, true));
+        recPaymentHistory.addListener(new CompareFileFilter(PaymentHistory.TRX_DATE, this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CUTOFF_DATE), "<=", null, true));
         
         this.getMainRecord().setOpenMode(this.getMainRecord().getOpenMode() | DBConstants.OPEN_READ_ONLY);
         
         SubCountHandler listener = null;
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kVendorTotal), ApTrx.kInvoiceAmount, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kVendorTotalUSD), ApTrx.kInvoiceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kVendorBalanceTotal), ApTrx.kInvoiceBalance, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kVendorBalanceTotalUSD), ApTrx.kInvoiceBalanceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.VENDOR_TOTAL), ApTrx.INVOICE_AMOUNT, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.VENDOR_TOTAL_USD), ApTrx.INVOICE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.VENDOR_BALANCE_TOTAL), ApTrx.INVOICE_BALANCE, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.VENDOR_BALANCE_TOTAL_USD), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID));
         
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCurrTotal), ApTrx.kInvoiceAmount, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCurrTotalUSD), ApTrx.kInvoiceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCurrBalanceTotal), ApTrx.kInvoiceBalance, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
-        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCurrBalanceTotalUSD), ApTrx.kInvoiceBalanceLocal, true, true, true));
-        listener.setBreakField(this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CURR_TOTAL), ApTrx.INVOICE_AMOUNT, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CURR_TOTAL_USD), ApTrx.INVOICE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CURR_BALANCE_TOTAL), ApTrx.INVOICE_BALANCE, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
+        this.getMainRecord().addListener(listener = new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CURR_BALANCE_TOTAL_USD), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));
+        listener.setBreakField(this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.ID));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kTotalUSD), ApTrx.kInvoiceLocal, true, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kBalanceTotalUSD), ApTrx.kInvoiceBalanceLocal, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.TOTAL_USD), ApTrx.INVOICE_LOCAL, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.BALANCE_TOTAL_USD), ApTrx.INVOICE_BALANCE_LOCAL, true, true));
     }
     /**
      * Get the next grid record.
@@ -150,27 +150,27 @@ public class PrepaymentCutoffReport extends ApBaseCutoffReport
                 return recApTrx;    // EOF
             else
             { // Exclude those prepayments after the cutoff date.
-                if (!this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCutoffDate).isNull())
-                    if (recApTrx.getField(ApTrx.kInvoiceDate).compareTo(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.kCutoffDate)) > 0)
+                if (!this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CUTOFF_DATE).isNull())
+                    if (recApTrx.getField(ApTrx.INVOICE_DATE).compareTo(this.getScreenRecord().getField(PrepaymentCutoffScreenRecord.CUTOFF_DATE)) > 0)
                         recApTrx = null;    // Skip this one (past the cutoff date).
             }
         }
         // Now calculate the Invoice balance at the cutoff date
-        double dInvoiceBalance = Math.abs(recApTrx.getField(ApTrx.kInvoiceAmount).getValue());
-        double dInvoiceBalanceLocal = Math.abs(recApTrx.getField(ApTrx.kInvoiceLocal).getValue());
-        recApTrx.getField(ApTrx.kInvoiceAmount).setValue(dInvoiceBalance);  // Make sure these are positive
-        recApTrx.getField(ApTrx.kInvoiceLocal).setValue(dInvoiceBalanceLocal);
+        double dInvoiceBalance = Math.abs(recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue());
+        double dInvoiceBalanceLocal = Math.abs(recApTrx.getField(ApTrx.INVOICE_LOCAL).getValue());
+        recApTrx.getField(ApTrx.INVOICE_AMOUNT).setValue(dInvoiceBalance);  // Make sure these are positive
+        recApTrx.getField(ApTrx.INVOICE_LOCAL).setValue(dInvoiceBalanceLocal);
         
-        Record recPaymentHistory = this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        Record recPaymentHistory = this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
         recPaymentHistory.close();
         while (recPaymentHistory.hasNext())
         {
             recPaymentHistory.next();
-            dInvoiceBalance = dInvoiceBalance - recPaymentHistory.getField(PaymentHistory.kAmountApplied).getValue();   // I manually zero these
-            dInvoiceBalanceLocal = dInvoiceBalanceLocal - recPaymentHistory.getField(PaymentHistory.kAmountLocal).getValue();
+            dInvoiceBalance = dInvoiceBalance - recPaymentHistory.getField(PaymentHistory.AMOUNT_APPLIED).getValue();   // I manually zero these
+            dInvoiceBalanceLocal = dInvoiceBalanceLocal - recPaymentHistory.getField(PaymentHistory.AMOUNT_LOCAL).getValue();
         }
-        recApTrx.getField(ApTrx.kInvoiceBalance).setValue(dInvoiceBalance);
-        recApTrx.getField(ApTrx.kInvoiceBalanceLocal).setValue(dInvoiceBalanceLocal);
+        recApTrx.getField(ApTrx.INVOICE_BALANCE).setValue(dInvoiceBalance);
+        recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).setValue(dInvoiceBalanceLocal);
         return recApTrx;
     }
     /**

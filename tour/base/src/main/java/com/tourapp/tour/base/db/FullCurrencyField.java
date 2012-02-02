@@ -68,10 +68,10 @@ public class FullCurrencyField extends CurrencyField
     {
         if (targetScreen != null)
         {
-            Record recCurrencys = ((BasePanel)targetScreen).getRecord(Currencys.kCurrencysFile);
+            Record recCurrencys = ((BasePanel)targetScreen).getRecord(Currencys.CURRENCYS_FILE);
             if (recCurrencys != null)
             {
-                BaseField fldCurrencyCode = recCurrencys.getField(Currencys.kCurrencyCode);
+                BaseField fldCurrencyCode = recCurrencys.getField(Currencys.CURRENCY_CODE);
                 Converter conv = new FieldDescConverter(fldCurrencyCode, (Converter)converter);    // Use the description for this field
                 ScreenComponent sfCurrency = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
                 sfCurrency.setEnabled(false);

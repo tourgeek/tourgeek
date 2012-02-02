@@ -556,7 +556,7 @@ public class BookingCruise extends BookingDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(BookingDetail.kProductTypeID, ProductType.CRUISE_ID)); 
+        this.addListener(new SharedFileHandler(BookingDetail.PRODUCT_TYPE_ID, ProductType.CRUISE_ID)); 
     }
     /**
      * SetupEndDate Method.
@@ -568,7 +568,7 @@ public class BookingCruise extends BookingDetail
         Product recCruise = this.getProduct();
         if (recCruise != null)
         {
-            int days = (int)recCruise.getField(Cruise.kDays).getValue();
+            int days = (int)recCruise.getField(Cruise.DAYS).getValue();
             calendar.setTime(startDate);
             calendar.add(Calendar.DATE, days);
             startDate = calendar.getTime();
@@ -596,9 +596,9 @@ public class BookingCruise extends BookingDetail
         if (recCruise != null)
             if ((recCruise.getEditMode() == DBConstants.EDIT_CURRENT) || (recCruise.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
         {
-            short sBreakfasts = (short)recCruise.getField(Cruise.kBreakfasts).getValue();
-            short sLunches = (short)recCruise.getField(Cruise.kLunches).getValue();
-            short sDinners = (short)recCruise.getField(Cruise.kDinners).getValue();
+            short sBreakfasts = (short)recCruise.getField(Cruise.BREAKFASTS).getValue();
+            short sLunches = (short)recCruise.getField(Cruise.LUNCHES).getValue();
+            short sDinners = (short)recCruise.getField(Cruise.DINNERS).getValue();
             return this.getMealDescFromCount(dateTarget, bDetailedDesc, recMealPlan, sBreakfasts, sLunches, sDinners);
         }
         return DBConstants.BLANK;
@@ -610,10 +610,10 @@ public class BookingCruise extends BookingDetail
     public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCruise.kClassID).isNull()))
-            this.getField(BookingCruise.kClassID).moveFieldToThis(recTour.getField(Tour.kCruiseClassID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCruise.kRateID).isNull()))
-            this.getField(BookingCruise.kRateID).moveFieldToThis(recTour.getField(Tour.kCruiseRateID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCruise.CLASS_ID).isNull()))
+            this.getField(BookingCruise.CLASS_ID).moveFieldToThis(recTour.getField(Tour.CRUISE_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCruise.RATE_ID).isNull()))
+            this.getField(BookingCruise.RATE_ID).moveFieldToThis(recTour.getField(Tour.CRUISE_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -637,18 +637,18 @@ public class BookingCruise extends BookingDetail
             return iErrorCode;
         int iRateClassID = ((Integer)Utility.getAs(properties, BookingCruise.CLASS_ID, Integer.class, IntegerField.ZERO)).intValue();
         Record recBooking = null;
-        if (!this.getField(BookingDetail.kBookingID).isNull())
-            recBooking = ((ReferenceField)this.getField(BookingDetail.kBookingID)).getReference();
+        if (!this.getField(BookingDetail.BOOKING_ID).isNull())
+            recBooking = ((ReferenceField)this.getField(BookingDetail.BOOKING_ID)).getReference();
         Record recTour = null;
         if (recBooking != null)
-            recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-        if ((this.getField(BookingCruise.kClassID).getValue() == 0) || (iRateClassID != 0))
+            recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+        if ((this.getField(BookingCruise.CLASS_ID).getValue() == 0) || (iRateClassID != 0))
         {
             if (iRateClassID == 0)
                 if (recTour != null)
-                    iRateClassID = (int)recTour.getField(Tour.kCruiseClassID).getValue();
+                    iRateClassID = (int)recTour.getField(Tour.CRUISE_CLASS_ID).getValue();
             if (iRateClassID != 0)
-                this.getField(BookingCruise.kClassID).setValue(iRateClassID);
+                this.getField(BookingCruise.CLASS_ID).setValue(iRateClassID);
         }
         return iErrorCode;
     }
@@ -656,14 +656,14 @@ public class BookingCruise extends BookingDetail
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
-        if (iStatusType != BookingDetail.kInfoStatusID)
+        if (iStatusType != BookingDetail.INFO_STATUS_ID)
         {
-            if (this.getField(BookingDetail.kRateID).isNull())
-                return BookingDetail.kRateID;
-            if (this.getField(BookingDetail.kClassID).isNull())
-                return BookingDetail.kClassID;
+            if (this.getField(BookingDetail.RATE_ID).isNull())
+                return BookingDetail.RATE_ID;
+            if (this.getField(BookingDetail.CLASS_ID).isNull())
+                return BookingDetail.CLASS_ID;
         }
         return super.checkRequiredParams(iStatusType);
     }

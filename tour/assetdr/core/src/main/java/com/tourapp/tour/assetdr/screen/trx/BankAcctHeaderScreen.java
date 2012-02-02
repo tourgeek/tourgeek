@@ -70,20 +70,20 @@ public class BankAcctHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kBankAcctID).setEnabled(true);
-        this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate).addListener(new RegisterValueHandler(null));
-        this.getScreenRecord().getField(BankTrxScreenRecord.kDisplayBalance).addListener(new RegisterValueHandler(null));
-        if (this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate).isNull())
+        this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID).setEnabled(true);
+        this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE).addListener(new RegisterValueHandler(null));
+        this.getScreenRecord().getField(BankTrxScreenRecord.DISPLAY_BALANCE).addListener(new RegisterValueHandler(null));
+        if (this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE).isNull())
         {   // If the starting and ending date haven't been set yet, set them to the current period start and end.
             Date date = new Date();     // Now
             Period recPeriod = new Period((BaseScreen)this.getParentScreen()); // Note: I Use READ_MOVE, because RegisterBehavior doesn't respond to it.
-            if (this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate).isNull())
-                ((DateTimeField)this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate)).setDate(recPeriod.getPeriodStartDate(date), DBConstants.DISPLAY, DBConstants.READ_MOVE);
+            if (this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE).isNull())
+                ((DateTimeField)this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE)).setDate(recPeriod.getPeriodStartDate(date), DBConstants.DISPLAY, DBConstants.READ_MOVE);
             recPeriod.free();
             recPeriod = null;
         }
-        this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate).setEnabled(true);
-        this.getScreenRecord().getField(BankTrxScreenRecord.kDisplayBalance).setEnabled(true);
+        this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE).setEnabled(true);
+        this.getScreenRecord().getField(BankTrxScreenRecord.DISPLAY_BALANCE).setEnabled(true);
     }
     /**
      * SetupSFields Method.
@@ -91,7 +91,7 @@ public class BankAcctHeaderScreen extends HeaderScreen
     public void setupSFields()
     {
         // This will synchronize the screen field and make sure the lookup uses the header record
-        ((ReferenceField)this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kBankAcctID)).setReference(this.getRecord(BankAcct.kBankAcctFile), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID)).setReference(this.getRecord(BankAcct.BANK_ACCT_FILE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kDisplayBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);

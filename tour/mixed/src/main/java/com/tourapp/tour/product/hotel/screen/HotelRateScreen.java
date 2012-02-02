@@ -79,7 +79,7 @@ public class HotelRateScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(HotelRate.kHotelRateFile).setKeyArea(HotelRate.kDescriptionKey);
+        this.getRecord(HotelRate.HOTEL_RATE_FILE).setKeyArea(HotelRate.DESCRIPTION_KEY);
         this.addMainKeyBehavior();
     }
     /**

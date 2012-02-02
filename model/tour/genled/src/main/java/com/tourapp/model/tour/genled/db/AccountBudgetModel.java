@@ -8,6 +8,14 @@ import org.jbundle.model.db.*;
 
 public interface AccountBudgetModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String ACCOUNT_ID = "AccountID";
+    public static final String BUD_COM_CODE = "BudComCode";
+    public static final String DETAIL_DATE = "DetailDate";
+    public static final String AMOUNT = "Amount";
+
+    public static final String BUD_COM_CODE_KEY = "BudComCode";
     public static final String ACCOUNT_BUDGET_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.AccountBudgetScreen";
     public static final String ACCOUNT_BUDGET_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.AccountBudgetGridScreen";
 

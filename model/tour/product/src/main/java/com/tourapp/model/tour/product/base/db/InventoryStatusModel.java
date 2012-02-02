@@ -8,7 +8,10 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface InventoryStatusModel extends BaseDataStatusModel
 {
-    public static final String ICON = "Icon";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String ICON = ICON;
     public static final String LOOKUP_ERROR_MESSAGE = "Inventory lookup error";
     public static final String NO_INVENTORY_ERROR_MESSAGE = "Not sufficient inventory";
 

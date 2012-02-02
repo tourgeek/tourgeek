@@ -80,7 +80,7 @@ public class AccountScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(Account.kAccountFile).setKeyArea(Account.kAccountNoKey);
+        this.getRecord(Account.ACCOUNT_FILE).setKeyArea(Account.ACCOUNT_NO_KEY);
         this.addMainKeyBehavior();
 
     }

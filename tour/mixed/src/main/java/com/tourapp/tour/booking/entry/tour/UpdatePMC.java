@@ -70,9 +70,9 @@ public class UpdatePMC extends FieldListener
         else
         {
             Record recLandClass = fldLandClass.getReference();
-            if (LandClass.PRIVATE_VEHICLE_CODE.equals(recLandClass.getField(LandClass.kCode).toString()))
+            if (LandClass.PRIVATE_VEHICLE_CODE.equals(recLandClass.getField(LandClass.CODE).toString()))
                 m_fldPMC.setValue(0);
-            else if (LandClass.SEAT_IN_COACH_CODE.equals(recLandClass.getField(LandClass.kCode).toString()))
+            else if (LandClass.SEAT_IN_COACH_CODE.equals(recLandClass.getField(LandClass.CODE).toString()))
                 m_fldPMC.setValue(PMC_MAX);
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);

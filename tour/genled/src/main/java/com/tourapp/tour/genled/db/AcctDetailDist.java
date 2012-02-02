@@ -204,7 +204,7 @@ public class AcctDetailDist extends VirtualRecord
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.getField(AcctDetailDist.kAcctDetailDistGroupID).addListener(new InitOnceFieldHandler(null));
+        this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).addListener(new InitOnceFieldHandler(null));
         this.addListener(new NoDeleteModifyHandler(null));
     }
     /**
@@ -249,29 +249,29 @@ public class AcctDetailDist extends VirtualRecord
         try   {
             this.addNew();
         
-            this.getField(AcctDetailDist.kAcctDetailID).moveFieldToThis(recAcctDetail.getField(AcctDetail.kID));
+            this.getField(AcctDetailDist.ACCT_DETAIL_ID).moveFieldToThis(recAcctDetail.getField(AcctDetail.ID));
             if (fldTrxID != null)
-                this.getField(AcctDetailDist.kTrxID).moveFieldToThis(fldTrxID);
-            this.getField(AcctDetailDist.kTrxDescID).moveFieldToThis(recTrxType.getField(TransactionType.kSourceTrxDescID));
-            this.getField(AcctDetailDist.kTrxTypeID).moveFieldToThis(recTrxType.getField(TransactionType.kID));
+                this.getField(AcctDetailDist.TRX_ID).moveFieldToThis(fldTrxID);
+            this.getField(AcctDetailDist.TRX_DESC_ID).moveFieldToThis(recTrxType.getField(TransactionType.SOURCE_TRX_DESC_ID));
+            this.getField(AcctDetailDist.TRX_TYPE_ID).moveFieldToThis(recTrxType.getField(TransactionType.ID));
         
-            ((DateTimeField)this.getField(AcctDetailDist.kTrxDate)).setDateTime(dateTrx, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            ((DateTimeField)this.getField(AcctDetailDist.TRX_DATE)).setDateTime(dateTrx, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
-            this.getField(AcctDetailDist.kAmount).setValue(dAmount);
-            ((DateTimeField)this.getField(AcctDetailDist.kTrxEntry)).setDateTime(dateEntry, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            this.getField(AcctDetailDist.kUserID).setValue(iUserID);
-            if (this.getField(AcctDetailDist.kUserID).getValue() <= 0)
-                this.getField(AcctDetailDist.kUserID).initField(DBConstants.DISPLAY);
-            if (this.getField(AcctDetailDist.kAcctDetailDistGroupID).isNull())
-                this.getField(AcctDetailDist.kAcctDetailDistGroupID).setValue(0);    // Can't be null (key)
+            this.getField(AcctDetailDist.AMOUNT).setValue(dAmount);
+            ((DateTimeField)this.getField(AcctDetailDist.TRX_ENTRY)).setDateTime(dateEntry, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.getField(AcctDetailDist.USER_ID).setValue(iUserID);
+            if (this.getField(AcctDetailDist.USER_ID).getValue() <= 0)
+                this.getField(AcctDetailDist.USER_ID).initField(DBConstants.DISPLAY);
+            if (this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).isNull())
+                this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).setValue(0);    // Can't be null (key)
             this.add();
         
-            if (this.getField(AcctDetailDist.kAcctDetailDistGroupID).getValue() == 0)
+            if (this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).getValue() == 0)
             {   // First transaction in a group... group = this trx number
                 Object objectID = this.getLastModified(DBConstants.DATA_SOURCE_HANDLE);
                 this.setHandle(objectID, DBConstants.DATA_SOURCE_HANDLE);
                 this.edit();
-                this.getField(AcctDetailDist.kAcctDetailDistGroupID).moveFieldToThis(this.getField(AcctDetailDist.kID));
+                this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).moveFieldToThis(this.getField(AcctDetailDist.ID));
                 this.set();
             }
         
@@ -290,7 +290,7 @@ public class AcctDetailDist extends VirtualRecord
      */
     public void startDistTrx()
     {
-        this.getField(AcctDetailDist.kAcctDetailDistGroupID).setValue(0);
+        this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).setValue(0);
         //+ this.startTrx();
     }
     /**
@@ -298,7 +298,7 @@ public class AcctDetailDist extends VirtualRecord
      */
     public void endDistTrx()
     {
-        this.getField(AcctDetailDist.kAcctDetailDistGroupID).setValue(0);
+        this.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).setValue(0);
         //+ this.commitTrx();
     }
 

@@ -99,18 +99,18 @@ public class RequestHtmlScreen extends Screen
     {
         super.addListeners();
         
-        Record recRequestControl = this.getRecord(RequestControl.kRequestControlFile);
-        Request recRequest = (Request)this.getRecord(Request.kRequestFile);
-        RequestDetail recRequestDetail = (RequestDetail)this.getRecord(RequestDetail.kRequestDetailFile);
-        BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.kBundleDetailFile);
-        Brochure recItem = (Brochure)this.getRecord(Brochure.kBrochureFile);
+        Record recRequestControl = this.getRecord(RequestControl.REQUEST_CONTROL_FILE);
+        Request recRequest = (Request)this.getRecord(Request.REQUEST_FILE);
+        RequestDetail recRequestDetail = (RequestDetail)this.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+        BundleDetail recBundleDetail = (BundleDetail)this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE);
+        Brochure recItem = (Brochure)this.getRecord(Brochure.BROCHURE_FILE);
         RequestHtmlDetailGrid subScreen = null;
         for (int i = 0; i < this.getSFieldCount(); i++)
         {
             if (this.getSField(i) instanceof RequestHtmlDetailGrid)
                 subScreen = (RequestHtmlDetailGrid)this.getSField(i);
         }
-        RequestInput recRequestInput = (RequestInput)subScreen.getRecord(RequestInput.kRequestInputFile);
+        RequestInput recRequestInput = (RequestInput)subScreen.getRecord(RequestInput.REQUEST_INPUT_FILE);
         
         try   {
             recRequestControl.open();
@@ -118,9 +118,9 @@ public class RequestHtmlScreen extends Screen
             ex.printStackTrace(); // Never
         }
         // Set up the initial detail.
-        Record recBundle = ((ReferenceField)recRequestControl.getField(RequestControl.kHtmlBundleID)).getReference(); //this.getRecord(Bundle.kBundleFile);
+        Record recBundle = ((ReferenceField)recRequestControl.getField(RequestControl.HTML_BUNDLE_ID)).getReference(); //this.getRecord(Bundle.BUNDLE_FILE);
         recBundleDetail.addListener(new SubFileFilter(recBundle));
-        recRequestInput.addBundle(recRequestControl.getField(RequestControl.kHtmlBundleID), recBundleDetail, recItem, null);
+        recRequestInput.addBundle(recRequestControl.getField(RequestControl.HTML_BUNDLE_ID), recBundleDetail, recItem, null);
         // Behaviors to add brochures on submit.
         recRequestDetail.addListener(new SubFileFilter(recRequest));
         recRequest.addListener(new SetupBrocDetailHandler(recRequest, recRequestDetail, recBundleDetail, recItem, recRequestInput));
@@ -152,8 +152,8 @@ public class RequestHtmlScreen extends Screen
             strAgentParam = "no";
         if (strAgentParam.equalsIgnoreCase("yes"))
         {
-            this.getRecord(Request.kRequestFile).getField(Request.kAttention).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(Request.kRequestFile).getField(Request.kProfileCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+            this.getRecord(Request.REQUEST_FILE).getField(Request.ATTENTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+            this.getRecord(Request.REQUEST_FILE).getField(Request.PROFILE_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         }
         this.getRecord(Request.kRequestFile).getField(Request.kGenericName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Request.kRequestFile).getField(Request.kAddressLine1).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -164,7 +164,7 @@ public class RequestHtmlScreen extends Screen
         this.getRecord(Request.kRequestFile).getField(Request.kCountry).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Request.kRequestFile).getField(Request.kEmail).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Request.kRequestFile).getField(Request.kBrochureText).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.kRequestInputFile);
+        RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.REQUEST_INPUT_FILE);
         new RequestHtmlDetailGrid(recRequestInput, this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, null);
     }
     /**

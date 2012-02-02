@@ -132,7 +132,7 @@ public class BookingScreenHandler extends SwitchSubScreenHandler
         case AGENCY_SCREEN:   // Agency Maint
             screen = new BookingAgencyScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
         case PAX_SCREEN:    // Pax display
-            if ( parentScreen.getRecord(Booking.kBookingFile).getField(Booking.kPax).getValue() == 0)
+            if ( parentScreen.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getValue() == 0)
                 screen = new BookingPaxScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);
             else
                 screen = new BookingPaxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);

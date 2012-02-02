@@ -102,7 +102,7 @@ public class BookingAirScreen extends BookingDetailSubScreen
     {
         super.addListeners();
         Record recBookingAir = this.getMainRecord();
-        recBookingAir.getField(BookingAir.kBookingAirHeaderID).setEnabled(true);
+        recBookingAir.getField(BookingAir.BOOKING_AIR_HEADER_ID).setEnabled(true);
     }
     /**
      * Add button(s) to the toolbar.
@@ -111,7 +111,7 @@ public class BookingAirScreen extends BookingDetailSubScreen
     {
         super.addToolbarButtons(toolScreen);
         ResourceBundle resources = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
-        BaseField field = ((Record)this.getRecord(Booking.kBookingFile).getRecordOwner().getScreenRecord()).getField(BookingScreenRecord.kBkSubScreen);
+        BaseField field = ((Record)this.getRecord(Booking.BOOKING_FILE).getRecordOwner().getScreenRecord()).getField(BookingScreenRecord.BK_SUB_SCREEN);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, field, ScreenConstants.DEFAULT_DISPLAY, null, resources.getString(ProductType.AIR + "Header"), Booking.BUTTON_LOCATION + ProductType.AIR + "Header", Integer.toString(BookingScreenHandler.AIR_HEADER_SCREEN), resources.getString(ProductType.AIR + "HeaderTip"));
     }
     /**
@@ -124,9 +124,9 @@ public class BookingAirScreen extends BookingDetailSubScreen
         this.getRecord(BookingAir.kBookingAirFile).getField(BookingAir.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingAir.kBookingAirFile).getField(BookingAir.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         // Make sure these all have this recordowner
-        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-        Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+        Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(Air.kAirFile).getField(Air.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);

@@ -80,42 +80,42 @@ public class ApTrxStatusHandler extends FileListener
             || (iChangeType == DBConstants.AFTER_DELETE_TYPE))
         {
             Record recApTrx = this.getOwner();
-            if (ApTrx.DEPARTURE_ESTIMATE.equalsIgnoreCase(((ReferenceField)recApTrx.getField(ApTrx.kTrxStatusID)).getReference().getField(TrxStatus.kStatusCode).toString()))
+            if (ApTrx.DEP_ESTIMATE.equalsIgnoreCase(((ReferenceField)recApTrx.getField(ApTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_CODE).toString()))
             {
-                Record recVendor = ((ReferenceField)recApTrx.getField(ApTrx.kVendorID)).getReference();
+                Record recVendor = ((ReferenceField)recApTrx.getField(ApTrx.VENDOR_ID)).getReference();
                 if (recVendor != null)
                     if ((recVendor.getEditMode() == DBConstants.EDIT_CURRENT) || (recVendor.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                 {
-                    Record recDeposit = ((ReferenceField)recVendor.getField(Vendor.kDepositID)).getReference();
+                    Record recDeposit = ((ReferenceField)recVendor.getField(Vendor.DEPOSIT_ID)).getReference();
                     if (recDeposit != null)
                         if ((recDeposit.getEditMode() == DBConstants.EDIT_CURRENT) || (recDeposit.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                     {
-                        String strDepositType = recDeposit.getField(Deposit.kDepositType).toString();
+                        String strDepositType = recDeposit.getField(Deposit.DEPOSIT_TYPE).toString();
                         if ((DepositTypeField.AMOUNT.equalsIgnoreCase(strDepositType))
                             || (DepositTypeField.PERCENTAGE.equalsIgnoreCase(strDepositType))
                             || (DepositTypeField.IN_FULL.equalsIgnoreCase(strDepositType)))
                         {
-                            double dAmount = recApTrx.getField(ApTrx.kDepartureEstimate).getValue();
+                            double dAmount = recApTrx.getField(ApTrx.DEPARTURE_ESTIMATE).getValue();
                             if (dAmount != 0)
                             {
                                 if (DepositTypeField.AMOUNT.equalsIgnoreCase(strDepositType))
-                                    dAmount = recDeposit.getField(Deposit.kQuantity).getValue();
+                                    dAmount = recDeposit.getField(Deposit.QUANTITY).getValue();
                                 if (DepositTypeField.PERCENTAGE.equalsIgnoreCase(strDepositType))
-                                    dAmount = Math.floor(dAmount * recDeposit.getField(Deposit.kQuantity).getValue() * 100) / 100;
+                                    dAmount = Math.floor(dAmount * recDeposit.getField(Deposit.QUANTITY).getValue() * 100) / 100;
                                 ApTrx recApTrxNew = null;
                                 try {
                                     Object bookmark = recApTrx.getLastModified(DBConstants.BOOKMARK_HANDLE);
-                                    int iVendorID = (int)recApTrx.getField(ApTrx.kVendorID).getValue();
-                                    int iTourID = (int)recApTrx.getField(ApTrx.kTourID).getValue();
+                                    int iVendorID = (int)recApTrx.getField(ApTrx.VENDOR_ID).getValue();
+                                    int iTourID = (int)recApTrx.getField(ApTrx.TOUR_ID).getValue();
                                     String strDesc = DBConstants.BLANK;
-                                    if (((ReferenceField)recApTrx.getField(ApTrx.kTourID)).getReference() != null)
-                                        strDesc = ((ReferenceField)recApTrx.getField(ApTrx.kTourID)).getReference().getField(Tour.kDescription).toString();
-                                    Date dateStartService = ((DateField)recApTrx.getField(ApTrx.kStartServiceDate)).getDateTime();
+                                    if (((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference() != null)
+                                        strDesc = ((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference().getField(Tour.DESCRIPTION).toString();
+                                    Date dateStartService = ((DateField)recApTrx.getField(ApTrx.START_SERVICE_DATE)).getDateTime();
                                     recApTrxNew = new ApTrx(this.getOwner().findRecordOwner());
                                     Object bookmarkPP = null;
-                                    if (!recApTrx.getField(ApTrx.kPrepaymentApTrxID).isNull())
+                                    if (!recApTrx.getField(ApTrx.PREPAYMENT_AP_TRX_ID).isNull())
                                     {
-                                        bookmarkPP = recApTrx.getField(ApTrx.kPrepaymentApTrxID).getData();
+                                        bookmarkPP = recApTrx.getField(ApTrx.PREPAYMENT_AP_TRX_ID).getData();
                                         if (recApTrxNew.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE) == null)
                                             return DBConstants.ERROR_RETURN;
                                         recApTrxNew.edit();
@@ -130,25 +130,25 @@ public class ApTrxStatusHandler extends FileListener
                                     if (iChangeType == DBConstants.AFTER_DELETE_TYPE)
                                         return DBConstants.NORMAL_RETURN;
                                     
-                                    TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrxNew.getField(ApTrx.kTrxStatusID)).getReferenceRecord();
-                                    int iTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.PREPAYMENT_REQUEST);
+                                    TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrxNew.getField(ApTrx.TRX_STATUS_ID)).getReferenceRecord();
+                                    int iTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.PREPAYMENT_REQUEST);
                                     if (recApTrxNew.getEditMode() != DBConstants.EDIT_ADD)
-                                        if (recApTrxNew.getField(ApTrx.kTrxStatusID).getValue() != iTrxStatus)
+                                        if (recApTrxNew.getField(ApTrx.TRX_STATUS_ID).getValue() != iTrxStatus)
                                             return DBConstants.ERROR_RETURN;    // Prepayment request probably already paid!
-                                    recApTrxNew.getField(ApTrx.kTrxStatusID).setValue(iTrxStatus);
-                                    recApTrxNew.getField(ApTrx.kVendorID).setValue(iVendorID);
+                                    recApTrxNew.getField(ApTrx.TRX_STATUS_ID).setValue(iTrxStatus);
+                                    recApTrxNew.getField(ApTrx.VENDOR_ID).setValue(iVendorID);
                                     PrepaymentAcctHandler listener = null;
-                                    recApTrxNew.getField(ApTrx.kTourID).addListener(listener = new PrepaymentAcctHandler(null));
-                                    recApTrxNew.getField(ApTrx.kTourID).setValue(iTourID);
-                                    recApTrxNew.getField(ApTrx.kTourID).removeListener(listener, true);
-                                    ((DateField)recApTrxNew.getField(ApTrx.kStartServiceDate)).setDate(dateStartService, bDisplayOption, DBConstants.SCREEN_MOVE);
+                                    recApTrxNew.getField(ApTrx.TOUR_ID).addListener(listener = new PrepaymentAcctHandler(null));
+                                    recApTrxNew.getField(ApTrx.TOUR_ID).setValue(iTourID);
+                                    recApTrxNew.getField(ApTrx.TOUR_ID).removeListener(listener, true);
+                                    ((DateField)recApTrxNew.getField(ApTrx.START_SERVICE_DATE)).setDate(dateStartService, bDisplayOption, DBConstants.SCREEN_MOVE);
                                     BaseApplication application = (BaseApplication)recApTrx.getTask().getApplication();
                                     String strPrepaymentFor = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString("Prepayment for");
-                                    recApTrxNew.getField(ApTrx.kDescription).setString(strPrepaymentFor + ' ' + strDesc);
+                                    recApTrxNew.getField(ApTrx.DESCRIPTION).setString(strPrepaymentFor + ' ' + strDesc);
         
-                                    recApTrxNew.getField(ApTrx.kInvoiceAmount).setValue(dAmount);
-                                    recApTrxNew.getField(ApTrx.kAmountSelected).setValue(dAmount);
-                                    recApTrxNew.getField(ApTrx.kPrepaymentApTrxID).setString(bookmark.toString());
+                                    recApTrxNew.getField(ApTrx.INVOICE_AMOUNT).setValue(dAmount);
+                                    recApTrxNew.getField(ApTrx.AMOUNT_SELECTED).setValue(dAmount);
+                                    recApTrxNew.getField(ApTrx.PREPAYMENT_AP_TRX_ID).setString(bookmark.toString());
                                     
                                     if (recApTrxNew.getEditMode() == DBConstants.EDIT_ADD)
                                     {
@@ -157,7 +157,7 @@ public class ApTrxStatusHandler extends FileListener
         
                                         recApTrx.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
                                         recApTrx.edit();
-                                        recApTrx.getField(ApTrx.kPrepaymentApTrxID).setString(bookmarkPP.toString());
+                                        recApTrx.getField(ApTrx.PREPAYMENT_AP_TRX_ID).setString(bookmarkPP.toString());
                                         recApTrx.set();
                                     }
                                     else

@@ -93,7 +93,7 @@ public class PassengerMessageData extends MessageRecordDesc
         int iErrorCode = super.putRawRecordData(recBooking);
         for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
         {
-            short shPaxOfType = (short)recBooking.getField(Booking.kSinglePax + iRoomType - PaxCategory.SINGLE_ID).getValue();
+            short shPaxOfType = (short)recBooking.getField(recBooking.getFieldSeq(Booking.SINGLE_PAX) + iRoomType - PaxCategory.SINGLE_ID).getValue();
             if (shPaxOfType > 0)
             {
                 this.put(Product.ROOM_TYPE_PARAM + Integer.toString(iRoomType), new Short(shPaxOfType));
@@ -107,14 +107,14 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public int getRawRecordData(Rec record)
     {
-        Booking recBooking = ((BookingDetail)record).getBooking(!record.getField(BookingDetail.kBookingID).isNull());
+        Booking recBooking = ((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
         int iErrorCode = super.getRawRecordData(record);
         for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
         {
             short shPaxOfType = this.getPaxInRoom(iRoomType);
             if (shPaxOfType > 0)
             {
-                recBooking.getField(Booking.kSinglePax + iRoomType - PaxCategory.SINGLE_ID).setValue(shPaxOfType);
+                recBooking.getField(recBooking.getFieldSeq(Booking.SINGLE_PAX) + iRoomType - PaxCategory.SINGLE_ID).setValue(shPaxOfType);
             }
         }
         return iErrorCode;

@@ -60,7 +60,7 @@ public class LandPricingFilter extends SubFileFilter
     public void init(Land recLand, Date dateTarget, short sTargetPax, int iSicPmc)
     {
         m_sTargetPax = 0;
-        super.init(null, recLand, -1, null, -1, null, -1, null, -1, false, false, false);
+        super.init(null, recLand, null, null, -1, null, null, -1, null, null, -1, null, false, false, false);
         dateTarget = Converter.convertTimeToDate(dateTarget);
         m_dateTarget = dateTarget;
         m_sTargetPax = sTargetPax;
@@ -78,8 +78,8 @@ public class LandPricingFilter extends SubFileFilter
      */
     public void doEndKey()
     {
-        this.getOwner().getField(LandPricing.kClassID).setValue(m_iSicPmc);
-        this.getOwner().getField(LandPricing.kClassID).setModified(true);
+        this.getOwner().getField(LandPricing.CLASS_ID).setValue(m_iSicPmc);
+        this.getOwner().getField(LandPricing.CLASS_ID).setModified(true);
         super.doEndKey();   // This is the starting key, set the initial position
     }
     /**
@@ -87,12 +87,12 @@ public class LandPricingFilter extends SubFileFilter
      */
     public void doInitialKey()
     {
-        this.getOwner().getField(LandPricing.kClassID).setValue(m_iSicPmc);
-        this.getOwner().getField(LandPricing.kClassID).setModified(true);
-        ((DateTimeField)this.getOwner().getField(LandPricing.kEndDate)).setDate(m_dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getOwner().getField(LandPricing.kEndDate).setModified(true);
-        this.getOwner().getField(LandPricing.kToPax).setValue(m_sTargetPax);
-        this.getOwner().getField(LandPricing.kToPax).setModified(true);
+        this.getOwner().getField(LandPricing.CLASS_ID).setValue(m_iSicPmc);
+        this.getOwner().getField(LandPricing.CLASS_ID).setModified(true);
+        ((DateTimeField)this.getOwner().getField(LandPricing.END_DATE)).setDate(m_dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getOwner().getField(LandPricing.END_DATE).setModified(true);
+        this.getOwner().getField(LandPricing.TO_PAX).setValue(m_sTargetPax);
+        this.getOwner().getField(LandPricing.TO_PAX).setModified(true);
         super.doInitialKey();   // This is the starting key, set the initial position
     }
     /**
@@ -105,13 +105,13 @@ public class LandPricingFilter extends SubFileFilter
     public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList)
     {
         boolean bDontSkip = true;
-        if (this.getOwner().getField(LandPricing.kStartDate).getValue() > m_dateTarget.getTime())    // Start > thisDate
+        if (this.getOwner().getField(LandPricing.START_DATE).getValue() > m_dateTarget.getTime())    // Start > thisDate
             bDontSkip = false;      // Skip this one
-        if (this.getOwner().getField(LandPricing.kEndDate).getValue() < m_dateTarget.getTime())   // End >= thisDate
+        if (this.getOwner().getField(LandPricing.END_DATE).getValue() < m_dateTarget.getTime())   // End >= thisDate
             bDontSkip = false;      // Skip this one
-        if (this.getOwner().getField(LandPricing.kFromPax).getValue() > m_sTargetPax)    // Start > thisDate
+        if (this.getOwner().getField(LandPricing.FROM_PAX).getValue() > m_sTargetPax)    // Start > thisDate
             bDontSkip = false;      // Skip this one
-        if (this.getOwner().getField(LandPricing.kToPax).getValue() < m_sTargetPax)  // End >= thisDate
+        if (this.getOwner().getField(LandPricing.TO_PAX).getValue() < m_sTargetPax)  // End >= thisDate
             bDontSkip = false;      // Skip this one
         if (bDontSkip)
             bDontSkip = super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);

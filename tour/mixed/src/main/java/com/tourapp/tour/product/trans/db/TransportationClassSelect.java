@@ -66,7 +66,7 @@ public class TransportationClassSelect extends TransportationClassField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), TransportationClass.kDescriptionKey, TransportationClass.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), TransportationClass.DESCRIPTION_KEY, TransportationClass.DESCRIPTION, true, true);
     }
 
 }

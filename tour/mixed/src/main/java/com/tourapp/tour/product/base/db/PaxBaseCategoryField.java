@@ -62,7 +62,7 @@ public class PaxBaseCategoryField extends PaxCategoryField
     {
         Record record = super.makeReferenceRecord(recordOwner);
         // Only records with a null in this field
-        record.addListener(new CompareFileFilter(PaxCategory.kBasedPaxCatID, (String)null, DBConstants.EQUALS, null, false));
+        record.addListener(new CompareFileFilter(PaxCategory.BASED_PAX_CAT_ID, (String)null, DBConstants.EQUALS, null, false));
         return record;
     }
 

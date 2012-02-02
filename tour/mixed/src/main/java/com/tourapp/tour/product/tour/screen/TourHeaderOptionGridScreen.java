@@ -103,7 +103,7 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
             else
                 m_recHeader = new TourHeader(this);
         }
-        ((ReferenceField)this.getMainRecord().getField(TourHeaderOption.kTourOrOptionID)).setReferenceRecord(m_recHeader);
+        ((ReferenceField)this.getMainRecord().getField(TourHeaderOption.TOUR_OR_OPTION_ID)).setReferenceRecord(m_recHeader);
     }
     /**
      * Add the screen fields.
@@ -119,17 +119,17 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
      */
     public void addSubFileFilter()
     {
-        this.getMainRecord().setKeyArea(TourHeaderOption.kTourOrOptionKey);
+        this.getMainRecord().setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
         StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
         if (this.getHeaderRecord() instanceof TourHeader)
             fldTourOrOption.setString(TourHeaderOption.TOUR);
         else
         {
             fldTourOrOption.setString(TourHeaderOption.OPTION);
-            this.getMainRecord().addListener(new SubCountHandler(this.getHeaderRecord().getField(TourHeaderOption.kDetailOptionCount), false, true));
+            this.getMainRecord().addListener(new SubCountHandler(this.getHeaderRecord().getField(TourHeaderOption.DETAIL_OPTION_COUNT), false, true));
         }
         this.getMainRecord().addListener(new FreeOnFreeHandler(fldTourOrOption));
-        this.getMainRecord().addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.kTourOrOption, (BaseField)this.getHeaderRecord().getCounterField(), TourHeaderOption.kTourOrOptionID, null, -1));
+        this.getMainRecord().addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.TOUR_OR_OPTION, (BaseField)this.getHeaderRecord().getCounterField(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
     }
     /**
      * Add all the screen listeners.

@@ -61,7 +61,7 @@ public class GetLandCostHandler extends GetProductCostHandler
     {
         boolean bQueryComplete = super.isQueryComplete();
         if ((bQueryComplete)
-            && (m_recProductVars.getField(ProductScreenRecord.kPax).getValue() > 0))
+            && (m_recProductVars.getField(ProductScreenRecord.PAX).getValue() > 0))
             return true;
         return false;
     }
@@ -78,8 +78,8 @@ public class GetLandCostHandler extends GetProductCostHandler
         }
         else
         {
-            recProduct.getField(Land.kPMCCostHome).setData(null);
-            recProduct.getField(Land.kSICCostHome).setData(null);
+            recProduct.getField(Land.PMC_COST_HOME).setData(null);
+            recProduct.getField(Land.SIC_COST_HOME).setData(null);
         }
         super.setupScreenStatus(recProduct, iStatus);
     }

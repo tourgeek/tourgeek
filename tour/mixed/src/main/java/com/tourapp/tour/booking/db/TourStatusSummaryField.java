@@ -72,7 +72,7 @@ public class TourStatusSummaryField extends PropertiesField
     /**
      * Set the (fieldseq) property for this BookingDetail item.
      */
-    public void setDetailProperty(Record recBookingDetail, int iFieldSeq, int iChangeType)
+    public void setDetailProperty(Record recBookingDetail, String iFieldSeq, int iChangeType)
     {
         String strKey = this.getKeyFromRecord(recBookingDetail, iFieldSeq);
         String strValue = this.getValueFromRecord(recBookingDetail, iFieldSeq, iChangeType);
@@ -81,7 +81,7 @@ public class TourStatusSummaryField extends PropertiesField
     /**
      * GetKeyFromRecord Method.
      */
-    public String getKeyFromRecord(Record recBookingDetail, int iFieldSeq)
+    public String getKeyFromRecord(Record recBookingDetail, String iFieldSeq)
     {
         String bookmark = recBookingDetail.getCounterField().toString();
         BaseField fieldTarget = recBookingDetail.getField(iFieldSeq);
@@ -94,15 +94,15 @@ public class TourStatusSummaryField extends PropertiesField
     /**
      * GetValueFromRecord Method.
      */
-    public String getValueFromRecord(Record recBookingDetail, int iFieldSeq, int iChangeType)
+    public String getValueFromRecord(Record recBookingDetail, String iFieldSeq, int iChangeType)
     {
         BaseField fieldTarget = recBookingDetail.getField(iFieldSeq);
         String strValue = fieldTarget.toString();
         if (iChangeType == DBConstants.AFTER_DELETE_TYPE)
             strValue = DELETED_VALUE;
         String strLastChanged = null;
-        if (!recBookingDetail.getField(BookingDetail.kLastChanged).isNull())
-            strLastChanged = Long.toString((long)recBookingDetail.getField(BookingDetail.kLastChanged).getValue());
+        if (!recBookingDetail.getField(BookingDetail.LAST_CHANGED).isNull())
+            strLastChanged = Long.toString((long)recBookingDetail.getField(BookingDetail.LAST_CHANGED).getValue());
         if ((strValue != null) && (strLastChanged != null))
             strValue = strValue + "," + strLastChanged;
         return strValue;
@@ -145,8 +145,8 @@ public class TourStatusSummaryField extends PropertiesField
         // Okay, it isn't clear what the key value should be, so I just look it up. This is expensive, but it shouldn't happen often
         BookingDetail recBookingDetail = new BookingDetail(this.getRecord().getRecordOwner());
         String strID = this.getIDFromKey(strKey);
-        recBookingDetail.setKeyArea(BookingDetail.kIDKey);
-        recBookingDetail.getField(BookingDetail.kID).setString(strID);
+        recBookingDetail.setKeyArea(BookingDetail.ID_KEY);
+        recBookingDetail.getField(BookingDetail.ID).setString(strID);
         try {
             if (recBookingDetail.seek(DBConstants.EQUALS))
             {
@@ -155,7 +155,7 @@ public class TourStatusSummaryField extends PropertiesField
                 {
                     if (recBookingDetail.getField(iFieldSeq).getFieldName().equalsIgnoreCase(strStatus))
                     {
-                        return this.getValueFromRecord(recBookingDetail, iFieldSeq, DBConstants.AFTER_UPDATE_TYPE);
+                        return this.getValueFromRecord(recBookingDetail, recBookingDetail.getField(iFieldSeq).getFieldName(), DBConstants.AFTER_UPDATE_TYPE);
                     }
                 }
             }

@@ -111,8 +111,8 @@ public class CruiseMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Cruise.kCruiseFile) != null)
-                    return (Cruise)recordOwner.getRecord(Cruise.kCruiseFile);
+                if (recordOwner.getRecord(Cruise.CRUISE_FILE) != null)
+                    return (Cruise)recordOwner.getRecord(Cruise.CRUISE_FILE);
         return new Cruise(recordOwner);
     }
     /**

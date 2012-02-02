@@ -168,7 +168,7 @@ public class BookingCalendarItem extends CalendarRecordItem
      */
     public Color getHighlightColor()
     {
-        String strProductType = this.getBookingDetail().getField(BookingDetail.kProductType).toString();
+        String strProductType = this.getBookingDetail().getField(BookingDetail.PRODUCT_TYPE).toString();
         Color color = null;
         if (strProductType != null)
             color = m_htcolorHighlight.get(strProductType);

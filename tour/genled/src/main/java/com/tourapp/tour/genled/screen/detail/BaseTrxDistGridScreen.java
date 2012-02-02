@@ -112,7 +112,7 @@ public class BaseTrxDistGridScreen extends DetailGridScreen
      */
     public void addSubFileFilter()
     {
-        this.getMainRecord().setKeyArea(AcctDetailDist.kTrxDescIDKey);
+        this.getMainRecord().setKeyArea(AcctDetailDist.TRX_DESC_ID_KEY);
         
         m_fldTrxDescID = new TrxDescField(null, "TrxDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
         m_fldTrxID = new TrxIDField(null, "TrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
@@ -120,12 +120,12 @@ public class BaseTrxDistGridScreen extends DetailGridScreen
         if ((this.getHeaderRecord().getEditMode() == DBConstants.EDIT_NONE) || (this.getHeaderRecord().getEditMode() == DBConstants.EDIT_ADD))
             this.syncHeaderToMain();
         
-        Record recTrxStatus = ((ReferenceField)this.getHeaderRecord().getField(BaseTrx.kTrxStatusID)).getReference();
+        Record recTrxStatus = ((ReferenceField)this.getHeaderRecord().getField(BaseTrx.TRX_STATUS_ID)).getReference();
         if (recTrxStatus != null)
-            m_fldTrxDescID.moveFieldToThis(recTrxStatus.getField(TrxStatus.kTrxDescID));
-        m_fldTrxID.moveFieldToThis(this.getHeaderRecord().getField(BaseTrx.kID));
+            m_fldTrxDescID.moveFieldToThis(recTrxStatus.getField(TrxStatus.TRX_DESC_ID));
+        m_fldTrxID.moveFieldToThis(this.getHeaderRecord().getField(BaseTrx.ID));
         m_fldTrxID.setReferenceRecord(this.getHeaderRecord());
-        this.getMainRecord().addListener(new SubFileFilter(m_fldTrxDescID, AcctDetailDist.kTrxDescID, m_fldTrxID, AcctDetailDist.kTrxID, null, -1));
+        this.getMainRecord().addListener(new SubFileFilter(m_fldTrxDescID, AcctDetailDist.TRX_DESC_ID, m_fldTrxID, AcctDetailDist.TRX_ID, null, null));
         m_fldTrxDescID.addListener(new FieldReSelectHandler(this));
         m_fldTrxID.addListener(new FieldReSelectHandler(this));
     }
@@ -136,7 +136,7 @@ public class BaseTrxDistGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().getField(AcctDetailDist.kAcctDetailID).addListener(new ReadSecondaryHandler(this.getRecord(AcctDetail.kAcctDetailFile)));
+        this.getMainRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).addListener(new ReadSecondaryHandler(this.getRecord(AcctDetail.ACCT_DETAIL_FILE)));
         
         this.setEditing(false);
     }
@@ -199,7 +199,7 @@ public class BaseTrxDistGridScreen extends DetailGridScreen
             return (this.onForm(this.getMainRecord(), AcctDetailDist.DIST_GROUP_SCREEN, true, iCommandOptions, null) != null);
         else if(strCommand.equalsIgnoreCase(AcctDetailDist.DIST_TRANSACTION))
         {
-            Record recAcctDetail = ((ReferenceField)this.getMainRecord().getField(AcctDetailDist.kAcctDetailID)).getReference();
+            Record recAcctDetail = ((ReferenceField)this.getMainRecord().getField(AcctDetailDist.ACCT_DETAIL_ID)).getReference();
             if (recAcctDetail != null)
                 return (this.onForm(recAcctDetail, ScreenConstants.MAINT_MODE, true, iCommandOptions, null) != null);
         }

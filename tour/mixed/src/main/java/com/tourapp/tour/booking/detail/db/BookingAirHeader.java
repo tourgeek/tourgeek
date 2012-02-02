@@ -452,7 +452,7 @@ public class BookingAirHeader extends BookingSub
     public void addSlaveListeners()
     {
         super.addSlaveListeners();
-        HistoryHandler histBehavior = new HistoryHandler(BookingAirHeaderHistory.class.getName(), BookingAirHeaderHistory.kHistoryDate, -1);
+        HistoryHandler histBehavior = new HistoryHandler(BookingAirHeaderHistory.class.getName(), BookingAirHeaderHistory.HISTORY_DATE, null);
         this.addListener(histBehavior);
     }
     /**
@@ -462,48 +462,48 @@ public class BookingAirHeader extends BookingSub
     {
         int iErrorCode = super.setDetailProductFields(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
         
-        this.getField(BookingAirHeader.kAirlineCode).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kAirlineCode));
-        this.getField(BookingAirHeader.kAirlineIATA).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kAirlineIATA));
-        this.getField(BookingAirHeader.kAirlineDesc).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kAirlineDesc));
-        this.getField(BookingAirHeader.kConjunction).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kConjunction));
-        this.getField(BookingAirHeader.kEndorsements).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kEndorsements));
-        this.getField(BookingAirHeader.kOriginDest).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kOriginDest));
-        this.getField(BookingAirHeader.kBookingReference).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kBookingReference));
-        this.getField(BookingAirHeader.kTourCode).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTourCode));
-        this.getField(BookingAirHeader.kTotalFareBasis).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTotalFareBasis));
-        this.getField(BookingAirHeader.kFare).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kFare));
-        this.getField(BookingAirHeader.kEquivalent).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kEquivalent));
-        this.getField(BookingAirHeader.kCurrencyCode).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kCurrencyCode));
-        this.getField(BookingAirHeader.kTaxPercent).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTaxPercent));
-        this.getField(BookingAirHeader.kTax1).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTax1));
-        this.getField(BookingAirHeader.kTax1Desc).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTax1Desc));
-        this.getField(BookingAirHeader.kTax2).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTax2));
-        this.getField(BookingAirHeader.kTax2Desc).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTax2Desc));
-        this.getField(BookingAirHeader.kTotal).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTotal));
-        this.getField(BookingAirHeader.kCommission).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kCommission));
-        this.getField(BookingAirHeader.kTax).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTax));
-        this.getField(BookingAirHeader.kCommissionRate).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kCommissionRate));
-        this.getField(BookingAirHeader.kAgent).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kAgent));
-        this.getField(BookingAirHeader.kInternational).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kInternational));
-        this.getField(BookingAirHeader.kCommPercent).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kCommPercent));
-        this.getField(BookingAirHeader.kCommAmount).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kCommAmount));
-        this.getField(BookingAirHeader.kTicketBy).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kTicketBy));
-        this.getField(BookingAirHeader.kNetFare).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kNetFare));
-        this.getField(BookingAirHeader.kOverridePercent).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kOverridePercent));
-        this.getField(BookingAirHeader.kOverrideAmount).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kOverrideAmount));
-        this.getField(BookingAirHeader.kNetCost).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kNetCost));
-        this.getField(BookingAirHeader.kVoid).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kVoid));
-        this.getField(BookingAirHeader.kVoidDate).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kVoidDate));
-        this.getField(BookingAirHeader.kExchTicket).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kExchTicket));
-        this.getField(BookingAirHeader.kDepDate).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kDepDate));
-        this.getField(BookingAirHeader.kCredit).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kCredit));
-        this.getField(BookingAirHeader.kComment1).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kComment1));
-        this.getField(BookingAirHeader.kComment2).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kComment2));
-        this.getField(BookingAirHeader.kComment3).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kComment3));
-        this.getField(BookingAirHeader.kFreqFlier).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kFreqFlier));
-        this.getField(BookingAirHeader.kFare1).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kFare1));
-        this.getField(BookingAirHeader.kFare2).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kFare2));
-        this.getField(BookingAirHeader.kFare3).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.kFare3));
+        this.getField(BookingAirHeader.AIRLINE_CODE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.AIRLINE_CODE));
+        this.getField(BookingAirHeader.AIRLINE_IATA).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.AIRLINE_IATA));
+        this.getField(BookingAirHeader.AIRLINE_DESC).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.AIRLINE_DESC));
+        this.getField(BookingAirHeader.CONJUNCTION).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.CONJUNCTION));
+        this.getField(BookingAirHeader.ENDORSEMENTS).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.ENDORSEMENTS));
+        this.getField(BookingAirHeader.ORIGIN_DEST).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.ORIGIN_DEST));
+        this.getField(BookingAirHeader.BOOKING_REFERENCE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.BOOKING_REFERENCE));
+        this.getField(BookingAirHeader.TOUR_CODE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TOUR_CODE));
+        this.getField(BookingAirHeader.TOTAL_FARE_BASIS).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TOTAL_FARE_BASIS));
+        this.getField(BookingAirHeader.FARE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.FARE));
+        this.getField(BookingAirHeader.EQUIVALENT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.EQUIVALENT));
+        this.getField(BookingAirHeader.CURRENCY_CODE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.CURRENCY_CODE));
+        this.getField(BookingAirHeader.TAX_PERCENT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TAX_PERCENT));
+        this.getField(BookingAirHeader.TAX_1).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TAX_1));
+        this.getField(BookingAirHeader.TAX_1_DESC).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TAX_1_DESC));
+        this.getField(BookingAirHeader.TAX_2).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TAX_2));
+        this.getField(BookingAirHeader.TAX_2_DESC).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TAX_2_DESC));
+        this.getField(BookingAirHeader.TOTAL).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TOTAL));
+        this.getField(BookingAirHeader.COMMISSION).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMMISSION));
+        this.getField(BookingAirHeader.TAX).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TAX));
+        this.getField(BookingAirHeader.COMMISSION_RATE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMMISSION_RATE));
+        this.getField(BookingAirHeader.AGENT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.AGENT));
+        this.getField(BookingAirHeader.INTERNATIONAL).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.INTERNATIONAL));
+        this.getField(BookingAirHeader.COMM_PERCENT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMM_PERCENT));
+        this.getField(BookingAirHeader.COMM_AMOUNT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMM_AMOUNT));
+        this.getField(BookingAirHeader.TICKET_BY).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.TICKET_BY));
+        this.getField(BookingAirHeader.NET_FARE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.NET_FARE));
+        this.getField(BookingAirHeader.OVERRIDE_PERCENT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.OVERRIDE_PERCENT));
+        this.getField(BookingAirHeader.OVERRIDE_AMOUNT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.OVERRIDE_AMOUNT));
+        this.getField(BookingAirHeader.NET_COST).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.NET_COST));
+        this.getField(BookingAirHeader.VOID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.VOID));
+        this.getField(BookingAirHeader.VOID_DATE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.VOID_DATE));
+        this.getField(BookingAirHeader.EXCH_TICKET).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.EXCH_TICKET));
+        this.getField(BookingAirHeader.DEP_DATE).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.DEP_DATE));
+        this.getField(BookingAirHeader.CREDIT).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.CREDIT));
+        this.getField(BookingAirHeader.COMMENT_1).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMMENT_1));
+        this.getField(BookingAirHeader.COMMENT_2).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMMENT_2));
+        this.getField(BookingAirHeader.COMMENT_3).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.COMMENT_3));
+        this.getField(BookingAirHeader.FREQ_FLIER).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.FREQ_FLIER));
+        this.getField(BookingAirHeader.FARE_1).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.FARE_1));
+        this.getField(BookingAirHeader.FARE_2).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.FARE_2));
+        this.getField(BookingAirHeader.FARE_3).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAirHeader.FARE_3));
         
         return iErrorCode;
     }

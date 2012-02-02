@@ -103,13 +103,13 @@ public class OperationsBookingDetailGridScreen extends GridScreen
             String strUserContactType = this.getProperty(DBParams.CONTACT_TYPE);
             String strUserContactID = this.getProperty(DBParams.CONTACT_ID);
         
-            String strContactID = this.getScreenRecord().getField(LookupScreenRecord.kVendorID).toString();
-            if (Vendor.kVendorFile.equalsIgnoreCase(strUserContactType))
+            String strContactID = this.getScreenRecord().getField(LookupScreenRecord.VENDOR_ID).toString();
+            if (Vendor.VENDOR_FILE.equalsIgnoreCase(strUserContactType))
             {
                 if ((strContactID == null) || (strContactID.length() == 0))
                     if ((strUserContactID != null) && (strUserContactID.length() > 0))
-                        this.getScreenRecord().getField(LookupScreenRecord.kVendorID).setString(strContactID = strUserContactID);
-                iErrorCode = this.checkContactSecurity(Vendor.kVendorFile, strContactID);
+                        this.getScreenRecord().getField(LookupScreenRecord.VENDOR_ID).setString(strContactID = strUserContactID);
+                iErrorCode = this.checkContactSecurity(Vendor.VENDOR_FILE, strContactID);
             }
         }
         return iErrorCode;
@@ -122,10 +122,10 @@ public class OperationsBookingDetailGridScreen extends GridScreen
         String strUserContactType = this.getProperty(DBParams.CONTACT_TYPE);
         String strUserContactID = this.getProperty(DBParams.CONTACT_ID);
         
-        String strContactID = this.getScreenRecord().getField(LookupScreenRecord.kVendorID).toString();
+        String strContactID = this.getScreenRecord().getField(LookupScreenRecord.VENDOR_ID).toString();
         
         if ((strUserContactID != null) && (strUserContactID.equals(strContactID)))
-            if (Vendor.kVendorFile.equalsIgnoreCase(strUserContactType))
+            if (Vendor.VENDOR_FILE.equalsIgnoreCase(strUserContactType))
                 return true;
         return false;
     }
@@ -136,9 +136,9 @@ public class OperationsBookingDetailGridScreen extends GridScreen
     {
         super.addListeners();
         
-        BookingDetail recBookingDetail = (BookingDetail)this.getRecord(BookingDetail.kBookingDetailFile);
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        BookingDetail recBookingDetail = (BookingDetail)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         Record screenRecord = this.getScreenRecord();
         
         SortOrderHandler behQueryKeyHandler = new SortOrderHandler(this)
@@ -149,57 +149,57 @@ public class OperationsBookingDetailGridScreen extends GridScreen
                 
                 if (m_recGrid != null)
                 {
-                    if ((m_recGrid.getKeyArea().getKeyName().equals(m_recGrid.getField(BookingDetail.kBookingDetailFile, BookingDetail.kDetailDate).getFieldName()))
-                        && (!getScreenRecord().getField(LookupScreenRecord.kVendorID).isNull()))
+                    if ((m_recGrid.getKeyArea().getKeyName().equals(m_recGrid.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.DETAIL_DATE).getFieldName()))
+                        && (!getScreenRecord().getField(LookupScreenRecord.VENDOR_ID).isNull()))
                             m_recGrid.setKeyArea(m_iKeyAreaArray.length - 1);   // Vendor key
-                    else if ((m_recGrid.getKeyArea().getKeyName().equals(m_recGrid.getField(BookingDetail.kBookingDetailFile, BookingDetail.kVendorID).getFieldName()))
-                        && (getScreenRecord().getField(LookupScreenRecord.kVendorID).isNull()))
+                    else if ((m_recGrid.getKeyArea().getKeyName().equals(m_recGrid.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.VENDOR_ID).getFieldName()))
+                        && (getScreenRecord().getField(LookupScreenRecord.VENDOR_ID).isNull()))
                             m_recGrid.setKeyArea(2);   // DetailDate key
                 }
         
                 return iErrorCode;
             }
         };
-        behQueryKeyHandler.setGridTable(BookingDetail.kIDKey, recBookingDetail, -1);
-        behQueryKeyHandler.setGridTable(BookingDetail.kDetailDateKey, recBookingDetail, -1);
-        behQueryKeyHandler.setGridTable(Tour.kDescriptionKey, recTour, -1);
-        behQueryKeyHandler.setGridTable(Tour.kDepartureDateKey, recTour, -1);
-        behQueryKeyHandler.setGridTable(Booking.kCodeKey, recBooking, -1);
-        behQueryKeyHandler.setGridTable(Booking.kCodeKey, recBooking, -1);
-        behQueryKeyHandler.setGridTable(Booking.kDescriptionKey, recBooking, -1);
-        behQueryKeyHandler.setGridTable(Booking.kBookingDateKey, recBooking, -1);
-        behQueryKeyHandler.setGridTable(Booking.kBookingDateKey, recBooking, -1);
-        behQueryKeyHandler.setGridTable(Booking.kBookingDateKey, recBooking, -1);
-        behQueryKeyHandler.setGridTable(BookingDetail.kVendorIDKey, recBookingDetail, -1);
+        behQueryKeyHandler.setGridTable(BookingDetail.ID_KEY, recBookingDetail, -1);
+        behQueryKeyHandler.setGridTable(BookingDetail.DETAIL_DATE_KEY, recBookingDetail, -1);
+        behQueryKeyHandler.setGridTable(Tour.DESCRIPTION_KEY, recTour, -1);
+        behQueryKeyHandler.setGridTable(Tour.DEPARTURE_DATE_KEY, recTour, -1);
+        behQueryKeyHandler.setGridTable(Booking.CODE_KEY, recBooking, -1);
+        behQueryKeyHandler.setGridTable(Booking.CODE_KEY, recBooking, -1);
+        behQueryKeyHandler.setGridTable(Booking.DESCRIPTION_KEY, recBooking, -1);
+        behQueryKeyHandler.setGridTable(Booking.BOOKING_DATE_KEY, recBooking, -1);
+        behQueryKeyHandler.setGridTable(Booking.BOOKING_DATE_KEY, recBooking, -1);
+        behQueryKeyHandler.setGridTable(Booking.BOOKING_DATE_KEY, recBooking, -1);
+        behQueryKeyHandler.setGridTable(BookingDetail.VENDOR_ID_KEY, recBookingDetail, -1);
         
         if (this.isContactDisplay())
-            screenRecord.getField(LookupScreenRecord.kQueryKey).setValue(11);   // Vendor key
+            screenRecord.getField(LookupScreenRecord.QUERY_KEY).setValue(11);   // Vendor key
         
-        screenRecord.getField(LookupScreenRecord.kQueryKey).addListener(behQueryKeyHandler);
+        screenRecord.getField(LookupScreenRecord.QUERY_KEY).addListener(behQueryKeyHandler);
         
-        this.getMainRecord().addListener(new CompareFileFilter(recBooking.getField(Booking.kEmployeeID), screenRecord.getField(LookupScreenRecord.kCurrentAgent), "=", null, true));
-        screenRecord.getField(LookupScreenRecord.kCurrentAgent).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(recBooking.getField(Booking.kBookingDate), screenRecord.getField(LookupScreenRecord.kStartBkDate), ">=", null, true));
-        screenRecord.getField(LookupScreenRecord.kStartBkDate).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kDepartureDate), screenRecord.getField(LookupScreenRecord.kTourHdrStartDate), ">=", null, true));
-        screenRecord.getField(LookupScreenRecord.kTourHdrStartDate).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kDepartureDate), screenRecord.getField(LookupScreenRecord.kTourHdrEndDate), "<=", null, true));
-        screenRecord.getField(LookupScreenRecord.kTourHdrEndDate).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new StartSearchFilter(screenRecord.getField(LookupScreenRecord.kStartTargetField)));
+        this.getMainRecord().addListener(new CompareFileFilter(recBooking.getField(Booking.EMPLOYEE_ID), screenRecord.getField(LookupScreenRecord.CURRENT_AGENT), "=", null, true));
+        screenRecord.getField(LookupScreenRecord.CURRENT_AGENT).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recBooking.getField(Booking.BOOKING_DATE), screenRecord.getField(LookupScreenRecord.START_BK_DATE), ">=", null, true));
+        screenRecord.getField(LookupScreenRecord.START_BK_DATE).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.DEPARTURE_DATE), screenRecord.getField(LookupScreenRecord.TOUR_HDR_START_DATE), ">=", null, true));
+        screenRecord.getField(LookupScreenRecord.TOUR_HDR_START_DATE).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.DEPARTURE_DATE), screenRecord.getField(LookupScreenRecord.TOUR_HDR_END_DATE), "<=", null, true));
+        screenRecord.getField(LookupScreenRecord.TOUR_HDR_END_DATE).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new StartSearchFilter(screenRecord.getField(LookupScreenRecord.START_TARGET_FIELD)));
         
-        this.getMainRecord().addListener(new CompareFileFilter(recBooking.getField(Booking.kBookingStatusID), screenRecord.getField(LookupScreenRecord.kBookingStatusID), "=", null, true));
-        screenRecord.getField(LookupScreenRecord.kBookingStatusID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kTourStatusID), screenRecord.getField(LookupScreenRecord.kTourStatusID), "=", null, true));
-        screenRecord.getField(LookupScreenRecord.kTourStatusID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recBooking.getField(Booking.BOOKING_STATUS_ID), screenRecord.getField(LookupScreenRecord.BOOKING_STATUS_ID), "=", null, true));
+        screenRecord.getField(LookupScreenRecord.BOOKING_STATUS_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.TOUR_STATUS_ID), screenRecord.getField(LookupScreenRecord.TOUR_STATUS_ID), "=", null, true));
+        screenRecord.getField(LookupScreenRecord.TOUR_STATUS_ID).addListener(new FieldReSelectHandler(this));
         
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(BookingDetail.kProductTypeID), screenRecord.getField(LookupScreenRecord.kProductTypeID), "=", null, true));
-        screenRecord.getField(LookupScreenRecord.kProductTypeID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(BookingDetail.PRODUCT_TYPE_ID), screenRecord.getField(LookupScreenRecord.PRODUCT_TYPE_ID), "=", null, true));
+        screenRecord.getField(LookupScreenRecord.PRODUCT_TYPE_ID).addListener(new FieldReSelectHandler(this));
         
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kTourHeaderID), screenRecord.getField(LookupScreenRecord.kTourHeaderID), "=", null, true));
-        screenRecord.getField(LookupScreenRecord.kTourHeaderID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(BookingDetail.kVendorID), screenRecord.getField(LookupScreenRecord.kVendorID), "=", null, true));
-        screenRecord.getField(LookupScreenRecord.kVendorID).addListener(new FieldReSelectHandler(this));
-        screenRecord.getField(LookupScreenRecord.kVendorID).addListener(new ChangeOnChangeHandler(this.getScreenRecord().getField(LookupScreenRecord.kQueryKey)));  // Check key
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.TOUR_HEADER_ID), screenRecord.getField(LookupScreenRecord.TOUR_HEADER_ID), "=", null, true));
+        screenRecord.getField(LookupScreenRecord.TOUR_HEADER_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(BookingDetail.VENDOR_ID), screenRecord.getField(LookupScreenRecord.VENDOR_ID), "=", null, true));
+        screenRecord.getField(LookupScreenRecord.VENDOR_ID).addListener(new FieldReSelectHandler(this));
+        screenRecord.getField(LookupScreenRecord.VENDOR_ID).addListener(new ChangeOnChangeHandler(this.getScreenRecord().getField(LookupScreenRecord.QUERY_KEY)));  // Check key
         
         this.setAppending(false);
         this.setEditing(false);
@@ -217,15 +217,15 @@ public class OperationsBookingDetailGridScreen extends GridScreen
         toolScreen.setupEndSFields();
         if (!this.isContactDisplay())
         {
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kStartBkDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kBookingStatusID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kCurrentAgent).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kTourHdrStartDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kTourStatusID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kTourHeaderID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kTourHdrEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kProductTypeID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-            this.getRecord(LookupScreenRecord.kLookupScreenRecordFile).getField(LookupScreenRecord.kVendorID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.START_BK_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.BOOKING_STATUS_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.CURRENT_AGENT).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.TOUR_HDR_START_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.TOUR_STATUS_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.TOUR_HEADER_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.TOUR_HDR_END_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.PRODUCT_TYPE_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+            this.getScreenRecord().getField(LookupScreenRecord.VENDOR_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.AT_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         }
         return toolScreen;
     }
@@ -236,7 +236,7 @@ public class OperationsBookingDetailGridScreen extends GridScreen
     {
         this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kStatusSummary).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kDetailDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Converter converter = this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kBookingDetailFile, BookingDetail.kDescription);
+        Converter converter = this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.DESCRIPTION);
         converter = new FieldLengthConverter(converter, 30);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

@@ -111,8 +111,8 @@ public class FinStmtGridScreen extends DetailGridScreen
     {
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, FinStmtDetail.VALIDATE, "Go", FinStmtDetail.VALIDATE, null);
-        this.getHeaderRecord().getField(FinStmtHeader.kDescription).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
-        this.getHeaderRecord().getField(FinStmtHeader.kDescription).setEnabled(false);
+        this.getHeaderRecord().getField(FinStmtHeader.DESCRIPTION).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
+        this.getHeaderRecord().getField(FinStmtHeader.DESCRIPTION).setEnabled(false);
     }
     /**
      * SetupSFields Method.

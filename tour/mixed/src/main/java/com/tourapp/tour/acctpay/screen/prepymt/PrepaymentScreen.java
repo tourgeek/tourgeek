@@ -96,16 +96,16 @@ public class PrepaymentScreen extends Screen
         super.addListeners();
         this.addMainKeyBehavior();
         
-        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.kTrxStatusID);
+        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.TRX_STATUS_ID);
         this.getMainRecord().addListener(behavior);
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.PREPAYMENT_REQUEST);
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.PREPAYMENT_REQUEST);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
         
-        Record recTour = ((ReferenceField)this.getMainRecord().getField(ApTrx.kTourID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kStartServiceDate), recTour.getField(Tour.kDepartureDate)));
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kDescription), recTour.getField(Tour.kDescription))
+        Record recTour = ((ReferenceField)this.getMainRecord().getField(ApTrx.TOUR_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.START_SERVICE_DATE), recTour.getField(Tour.DEPARTURE_DATE)));
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.DESCRIPTION), recTour.getField(Tour.DESCRIPTION))
         {
             public int fieldChanged(boolean bDisplayOption, int iMoveMode)
             {
@@ -121,31 +121,31 @@ public class PrepaymentScreen extends Screen
             }
         });
         // Make sure prepayment is fully selected for payment
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new ForceSignHandler(+1));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kAmountSelected), this.getMainRecord().getField(ApTrx.kInvoiceAmount)));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new ForceSignHandler(+1));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.AMOUNT_SELECTED), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT)));
         
         // Remember on prepayments, the USD amounts are caclulated based on the exchange of the funding source (the bank trx).
         
         // Default prepayment account to Account in control file
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new PrepaymentAcctHandler(null));
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new PrepaymentAcctHandler(null));
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {    // Make sure currency is read for LocalCurrencyField(s).
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTourID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kStartServiceDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Converter converter = this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceAmount);
+        Converter converter = this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.INVOICE_AMOUNT);
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
         String strPrepaymentAmt = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString("Prepayment amt");
         converter = new FieldDescConverter(converter, strPrepaymentAmt);
@@ -159,12 +159,12 @@ public class PrepaymentScreen extends Screen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        String strVendor = Vendor.kVendorFile + ' ' + MenuConstants.LOOKUP;
+        String strVendor = Vendor.VENDOR_FILE + ' ' + MenuConstants.LOOKUP;
         strVendor = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strVendor);
-        String strTour = Tour.kTourFile + ' ' + MenuConstants.LOOKUP;
+        String strTour = Tour.TOUR_FILE + ' ' + MenuConstants.LOOKUP;
         strTour = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strTour);
-        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strVendor, MenuConstants.LOOKUP, Vendor.kVendorFile, null);
-        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strTour, MenuConstants.LOOKUP, Tour.kTourFile, null);
+        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strVendor, MenuConstants.LOOKUP, Vendor.VENDOR_FILE, null);
+        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strTour, MenuConstants.LOOKUP, Tour.TOUR_FILE, null);
     }
     /**
      * Enable or disable this control.
@@ -177,7 +177,7 @@ public class PrepaymentScreen extends Screen
         {
             this.getMainRecord().getField(i).setEnabled(bEnable);
         }
-        this.getMainRecord().getField(ApTrx.kID).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.ID).setEnabled(true);
     }
     /**
      * Process the command.
@@ -193,8 +193,8 @@ public class PrepaymentScreen extends Screen
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
         if ((MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
-            || (Vendor.kVendorFile.equalsIgnoreCase(strCommand))
-            || (Tour.kTourFile.equalsIgnoreCase(strCommand)))
+            || (Vendor.VENDOR_FILE.equalsIgnoreCase(strCommand))
+            || (Tour.TOUR_FILE.equalsIgnoreCase(strCommand)))
         {
             Record recordMain = this.getMainRecord();
         
@@ -203,7 +203,7 @@ public class PrepaymentScreen extends Screen
             Task task = parentScreen.getTask();//getAppletScreen().getScreenFieldView().getControl();
             task.setProperty("DisplayType", Integer.toString(ApTrxClassField.PREPAYMENTS));
             int iDocMode = ApTrx.TOUR_AP_SCREEN;
-            if (strCommand.equalsIgnoreCase(Vendor.kVendorFile))
+            if (strCommand.equalsIgnoreCase(Vendor.VENDOR_FILE))
                 iDocMode = ApTrx.VENDOR_AP_SCREEN;
             iDocMode = iDocMode | ScreenConstants.SELECT_MODE;
         

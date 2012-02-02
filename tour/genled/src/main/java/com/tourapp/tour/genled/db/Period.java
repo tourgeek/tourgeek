@@ -158,7 +158,7 @@ public class Period extends VirtualRecord
      */
     public void addMasterListeners()
     {
-        this.setKeyArea(Period.kEndPeriodKey);  // Default order
+        this.setKeyArea(Period.END_PERIOD_KEY);   // Default order
         super.addMasterListeners();
     }
     /**
@@ -188,14 +188,14 @@ public class Period extends VirtualRecord
         // Move this field as a virtual field
             DateField fldDate = new DateField(null, "EndPeriod", DBConstants.DEFAULT_FIELD_LENGTH, "Period end", null);
             fldDate.setDateTime(targetDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            FileListener behavior1 = new CompareFileFilter(Period.kEndPeriod, fldDate, ">=", null, false);
-            FileListener behavior2 = new CompareFileFilter(Period.kPeriodClosed, (String)null, "=", null, true);
+            FileListener behavior1 = new CompareFileFilter(Period.END_PERIOD, fldDate, ">=", null, false);
+            FileListener behavior2 = new CompareFileFilter(Period.PERIOD_CLOSED, (String)null, "=", null, true);
             this.addListener(behavior1);
             this.addListener(behavior2);
             if (this.hasNext())
             {
                 this.next();
-                entryDate = ((DateField)this.getField(Period.kEndPeriod)).getDateTime();
+                entryDate = ((DateField)this.getField(Period.END_PERIOD)).getDateTime();
             }
             else
             {   // Past last date, use last day of current month.
@@ -250,20 +250,20 @@ public class Period extends VirtualRecord
         //  criteria = "[EndPeriod] < #" & endDate & "#"
         try   {
             // Make sure your get the largest one.
-            this.getKeyArea(Period.kEndPeriodKey).getKeyField(DBConstants.MAIN_KEY_FIELD).setKeyOrder(DBConstants.DESCENDING);
+            this.getKeyArea(Period.END_PERIOD_KEY).getKeyField(DBConstants.MAIN_KEY_FIELD).setKeyOrder(DBConstants.DESCENDING);
             boolean bSuccess = this.seek("<");
             if (!bSuccess)
                 entryDate = targetDate;
             else
             {
-                Calendar calendar = ((DateTimeField)this.getField(Period.kEndPeriod)).getCalendar();
+                Calendar calendar = ((DateTimeField)this.getField(Period.END_PERIOD)).getCalendar();
                 calendar.add(Calendar.DATE, 1);
                 entryDate = calendar.getTime();
             }
         } catch (DBException ex)    {
             entryDate = targetDate;
         } finally {
-            this.getKeyArea(Period.kEndPeriodKey).getKeyField(DBConstants.MAIN_KEY_FIELD).setKeyOrder(DBConstants.ASCENDING);
+            this.getKeyArea(Period.END_PERIOD_KEY).getKeyField(DBConstants.MAIN_KEY_FIELD).setKeyOrder(DBConstants.ASCENDING);
         }
         
         m_lastStartDate = entryDate;
@@ -277,14 +277,14 @@ public class Period extends VirtualRecord
      * @param fsEndDateField The field to set to the end period date.
      * @param datePeriod The date to calc the period for (null for the current date).
      */
-    public void setPeriodDefaults(Record record, int fsStartDateField, int fsEndDateField, Date datePeriod)
+    public void setPeriodDefaults(Record record, String fsStartDateField, String fsEndDateField, Date datePeriod)
     {
-        if (fsStartDateField != -1)
+        if (fsStartDateField != null)
         {
             Date startDate = this.getPeriodStartDate(datePeriod);
             ((DateTimeField)record.getField(fsStartDateField)).setDate(startDate, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         }
-        if (fsEndDateField != -1)
+        if (fsEndDateField != null)
         {
             Date endDate = this.getPeriodEndDate(datePeriod);
             ((DateTimeField)record.getField(fsEndDateField)).setDate(endDate, DBConstants.DISPLAY, DBConstants.INIT_MOVE);

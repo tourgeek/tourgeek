@@ -97,7 +97,7 @@ public class VoucherDetailGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getHeaderRecord().getField(ApTrx.kID).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(ApTrx.ID).addListener(new FieldReSelectHandler(this));
         
         this.setEnabled(false);   // Do not do setEdititing(false) as this will incorrectly optomize the query
         this.setAppending(false);
@@ -108,13 +108,13 @@ public class VoucherDetailGridScreen extends DetailGridScreen
     public void setupSFields()
     {
         Record mergeTable = this.getMainRecord();
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kStatusSummary));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.STATUS_SUMMARY));
         
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kDetailDate));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.DETAIL_DATE));
         this.addColumn(new ProductDescConverter(mergeTable));
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kProductStatusID));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.PRODUCT_STATUS_ID));
         
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kTotalCostLocal));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.TOTAL_COST_LOCAL));
     }
     /**
      * Make a sub-screen.

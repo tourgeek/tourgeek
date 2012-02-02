@@ -8,6 +8,15 @@ import org.jbundle.model.db.*;
 
 public interface ProductTypeModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String DESCRIPTION = "Description";
+    public static final String CODE = "Code";
+    public static final String ICON = "Icon";
+
+    public static final String CODE_KEY = "Code";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final String AIR = "Air";
     public static final int AIR_ID = 1;
     public static final String CAR = "Car";

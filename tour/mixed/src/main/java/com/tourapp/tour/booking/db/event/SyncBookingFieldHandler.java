@@ -30,7 +30,7 @@ import com.tourapp.tour.booking.db.*;
  */
 public class SyncBookingFieldHandler extends FieldListener
 {
-    protected int m_iTourFieldSeq = -1;
+    protected String m_iTourFieldSeq = null;
     /**
      * Default constructor.
      */
@@ -41,7 +41,7 @@ public class SyncBookingFieldHandler extends FieldListener
     /**
      * SyncBookingFieldHandler Method.
      */
-    public SyncBookingFieldHandler(int iTourFieldSeq)
+    public SyncBookingFieldHandler(String iTourFieldSeq)
     {
         this();
         this.init(iTourFieldSeq);
@@ -49,7 +49,7 @@ public class SyncBookingFieldHandler extends FieldListener
     /**
      * Initialize class fields.
      */
-    public void init(int iTourFieldSeq)
+    public void init(String iTourFieldSeq)
     {
         super.init(null);
         m_iTourFieldSeq = iTourFieldSeq;
@@ -63,14 +63,14 @@ public class SyncBookingFieldHandler extends FieldListener
     {
         Booking recBooking = (Booking)this.getOwner().getRecord();
         Tour recTour = null;
-        if (!recBooking.getField(Booking.kTourID).isNull())
-            recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+        if (!recBooking.getField(Booking.TOUR_ID).isNull())
+            recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
         if (recTour != null)
             if ((recTour.getEditMode() == DBConstants.EDIT_CURRENT) || (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
-                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
                 if (recTourHeader != null)
-                    if (recTourHeader.getField(TourHeader.kTourSeries).getState() == false)
+                    if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() == false)
                     {
                         if (recBooking.getListener(WriteOnUpdateHandler.class) == null)
                             recBooking.addListener(new WriteOnUpdateHandler(recTour, false));

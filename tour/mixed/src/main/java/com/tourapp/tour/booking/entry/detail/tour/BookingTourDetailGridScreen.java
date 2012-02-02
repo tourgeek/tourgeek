@@ -93,7 +93,7 @@ public class BookingTourDetailGridScreen extends BookingDetailSubGridScreen
      */
     public void openOtherRecords()
     {
-        if (this.getRecord(BookingControl.kBookingControlFile) == null)
+        if (this.getRecord(BookingControl.BOOKING_CONTROL_FILE) == null)
             new BookingControl(this);
         super.openOtherRecords();
     }
@@ -118,8 +118,8 @@ public class BookingTourDetailGridScreen extends BookingDetailSubGridScreen
             {   // Make sure the tour header display displays only the modules
                 String strCommand = ((SSelectBox)this.getSField(i)).getButtonCommand();
                 strCommand = Utility.addURLParam(null, DBParams.COMMAND, strCommand);
-                Record recBookingControl = this.getRecord(BookingControl.kBookingControlFile);
-                strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.kModuleTourType).toString());
+                Record recBookingControl = this.getRecord(BookingControl.BOOKING_CONTROL_FILE);
+                strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.MODULE_TOUR_TYPE).toString());
                 ((SSelectBox)this.getSField(i)).setButtonCommand(strCommand);
             }
         }

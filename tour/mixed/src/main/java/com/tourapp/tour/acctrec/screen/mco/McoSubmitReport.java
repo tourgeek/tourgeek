@@ -99,20 +99,20 @@ public class McoSubmitReport extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(McoScreenRecord.kAirlineID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kAirlineID)));
-        this.getScreenRecord().getField(McoScreenRecord.kServiceCharge).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoSvcPer)));
+        this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AIRLINE_ID)));
+        this.getScreenRecord().getField(McoScreenRecord.SERVICE_CHARGE).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_SVC_PER)));
         
-        this.getMainRecord().setKeyArea(Mco.kTrxStatusIDKey);
+        this.getMainRecord().setKeyArea(Mco.TRX_STATUS_ID_KEY);
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.ENTERED);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.ENTERED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kTotalGross), Mco.kGross, false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kTotalNet), Mco.kNet, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.TOTAL_GROSS), Mco.GROSS, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.TOTAL_NET), Mco.NET, false, true));
         this.getMainRecord().addListener(new McoSubmitCalcNetBeh(null));
         
-        this.getMainRecord().addListener(new CompareFileFilter(Mco.kAirlineID, this.getScreenRecord().getField(McoScreenRecord.kAirlineID), "=", null, false));
+        this.getMainRecord().addListener(new CompareFileFilter(Mco.AIRLINE_ID, this.getScreenRecord().getField(McoScreenRecord.AIRLINE_ID), "=", null, false));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -172,9 +172,9 @@ public class McoSubmitReport extends ReportScreen
     public boolean onMcoSubmit()
     {
         try   {
-            TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+            TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
             Object bookmark = recTrxStatus.getHandle(DBConstants.DATA_SOURCE_HANDLE);
-            int iTrxClassID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.SUBMITTED);
+            int iTrxClassID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.SUBMITTED);
             recTrxStatus.setHandle(bookmark, DBConstants.DATA_SOURCE_HANDLE);
             double dToday = DateTimeField.todaysDate();
             Record recMco = this.getMainRecord();
@@ -188,9 +188,9 @@ public class McoSubmitReport extends ReportScreen
             {
                 recMco.next();
                 recMco.edit();
-                recMco.getField(Mco.kTrxStatusID).setValue(iTrxClassID);
-                recMco.getField(Mco.kCarrierSvcPer).moveFieldToThis(this.getScreenRecord().getField(McoScreenRecord.kServiceCharge));
-                recMco.getField(Mco.kDateSubmitted).setValue(dToday);
+                recMco.getField(Mco.TRX_STATUS_ID).setValue(iTrxClassID);
+                recMco.getField(Mco.CARRIER_SVC_PER).moveFieldToThis(this.getScreenRecord().getField(McoScreenRecord.SERVICE_CHARGE));
+                recMco.getField(Mco.DATE_SUBMITTED).setValue(dToday);
                 recMco.set();
             }
         } catch (DBException ex)    {

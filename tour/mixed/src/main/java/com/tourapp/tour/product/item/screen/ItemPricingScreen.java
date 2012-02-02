@@ -90,7 +90,7 @@ public class ItemPricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Item.kItemFile);
+        return this.getRecord(Item.ITEM_FILE);
     }
     /**
      * Set up all the screen fields.

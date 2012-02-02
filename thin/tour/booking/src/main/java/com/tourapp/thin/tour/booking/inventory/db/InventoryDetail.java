@@ -15,6 +15,10 @@ public class InventoryDetail extends FieldList
     implements InventoryDetailModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+
     public InventoryDetail()
     {
         super();

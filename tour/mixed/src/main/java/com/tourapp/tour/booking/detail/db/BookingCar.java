@@ -564,7 +564,7 @@ public class BookingCar extends BookingDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(BookingDetail.kProductTypeID, ProductType.CAR_ID));
+        this.addListener(new SharedFileHandler(BookingDetail.PRODUCT_TYPE_ID, ProductType.CAR_ID));
     }
     /**
      * Add the listeners to do the price and inventory lookups.
@@ -575,37 +575,37 @@ public class BookingCar extends BookingDetail
         super.addLookupListeners();
         
         Boolean boolRequestRequiredFlag = Boolean.TRUE;
-        String strManualTransportID = Integer.toString(((ReferenceField)this.getField(BookingDetail.kCostMessageTransportID)).getIDFromCode(MessageTransport.MANUAL));
-        Converter converterNotInfoManualTransport = new CheckConverter(this.getField(BookingDetail.kInfoMessageTransportID), strManualTransportID, null, false);
-        Converter converterNotCostManualTransport = new CheckConverter(this.getField(BookingDetail.kCostMessageTransportID), strManualTransportID, null, false);
-        Converter converterNotInventoryManualTransport = new CheckConverter(this.getField(BookingDetail.kInventoryMessageTransportID), strManualTransportID, null, false);
-        Converter converterNotProductManualTransport = new CheckConverter(this.getField(BookingDetail.kProductMessageTransportID), strManualTransportID, null, false);
+        String strManualTransportID = Integer.toString(((ReferenceField)this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.MANUAL));
+        Converter converterNotInfoManualTransport = new CheckConverter(this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        Converter converterNotCostManualTransport = new CheckConverter(this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        Converter converterNotInventoryManualTransport = new CheckConverter(this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        Converter converterNotProductManualTransport = new CheckConverter(this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
         
-        FieldListener dependentStateListener = this.getField(BookingDetail.kProductID).getListener(CopyDataHandler.class);
+        FieldListener dependentStateListener = this.getField(BookingDetail.PRODUCT_ID).getListener(CopyDataHandler.class);
         FieldListener fieldListener = null;
-        this.getField(BookingCar.kDays).addListener(fieldListener = new CalcCarReturnDate(null));
+        this.getField(BookingCar.DAYS).addListener(fieldListener = new CalcCarReturnDate(null));
         fieldListener.setDependentStateListener(dependentStateListener);
         
         // If any of these values change, you will have to re-lookup the price.
-        this.getField(BookingCar.kDays).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kInfoStatusRequest), boolRequestRequiredFlag, converterNotInfoManualTransport));
+        this.getField(BookingCar.DAYS).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.INFO_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInfoManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
-        this.getField(BookingCar.kDays).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingCar.DAYS).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
-        this.getField(BookingCar.kDays).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, converterNotInventoryManualTransport));
+        this.getField(BookingCar.DAYS).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInventoryManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
         // If this changes, re-request the booking
-        this.getField(BookingCar.kDays).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingCar.DAYS).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
         
         // If any of these values change, you will have to re-lookup the price.
-        this.getField(BookingCar.kQuantity).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kInfoStatusRequest), boolRequestRequiredFlag, converterNotInfoManualTransport));
+        this.getField(BookingCar.QUANTITY).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.INFO_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInfoManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
-        this.getField(BookingCar.kQuantity).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingCar.QUANTITY).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
-        this.getField(BookingCar.kQuantity).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, converterNotInventoryManualTransport));
+        this.getField(BookingCar.QUANTITY).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInventoryManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
         // If this changes, re-request the booking
-        this.getField(BookingCar.kQuantity).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingCar.QUANTITY).addListener(fieldListener = new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
         fieldListener.setDependentStateListener(dependentStateListener);
     }
     /**
@@ -616,7 +616,7 @@ public class BookingCar extends BookingDetail
         Date dateStart = this.getStartDate();
         if (dateStart == null)
             return dateStart;
-        float fDays = (float)this.getField(BookingCar.kDays).getValue();
+        float fDays = (float)this.getField(BookingCar.DAYS).getValue();
         Date dateEnd = new Date(dateStart.getTime() + (long)(fDays * DBConstants.KMS_IN_A_DAY));
         Calendar calendar = DateTimeField.m_calendar;
         
@@ -633,10 +633,10 @@ public class BookingCar extends BookingDetail
     public Date setEndDate(Date time)
     {
         // First get the number of nights
-        Calendar startDate = ((DateTimeField)this.getField(BookingCar.kDetailDate)).getCalendar();
+        Calendar startDate = ((DateTimeField)this.getField(BookingCar.DETAIL_DATE)).getCalendar();
         if (startDate != null)
         {
-            boolean[] rgbEnabled = this.getField(BookingHotel.kDetailEndDate).setEnableListeners(false);  // No echos
+            boolean[] rgbEnabled = this.getField(BookingHotel.DETAIL_END_DATE).setEnableListeners(false);  // No echos
         
             startDate.set(Calendar.SECOND, 0);
             startDate.set(Calendar.MILLISECOND, 0);
@@ -649,11 +649,11 @@ public class BookingCar extends BookingDetail
         
             if (fDays > 0)
             {
-                float fOldDays = (float)this.getField(BookingCar.kDays).getValue();
-                int iErrorCode = this.getField(BookingCar.kDays).setValue(fDays);
+                float fOldDays = (float)this.getField(BookingCar.DAYS).getValue();
+                int iErrorCode = this.getField(BookingCar.DAYS).setValue(fDays);
             }
         
-            this.getField(BookingHotel.kDetailEndDate).setEnableListeners(rgbEnabled);  // Restore state
+            this.getField(BookingHotel.DETAIL_END_DATE).setEnableListeners(rgbEnabled);  // Restore state
         }
         return this.getEndDate();
     }
@@ -667,10 +667,10 @@ public class BookingCar extends BookingDetail
         String string = super.setupProductDesc();
         if (string != null)
             if (string.length() > 0)
-                if (!this.getField(BookingCar.kDays).isNull())
+                if (!this.getField(BookingCar.DAYS).isNull())
         {
             string += " - ";
-            String tempString = this.getField(BookingCar.kDays).toString();
+            String tempString = this.getField(BookingCar.DAYS).toString();
             int i = 0;
             for (i = tempString.length() - 1; i >= 0; i--)
             {
@@ -683,7 +683,7 @@ public class BookingCar extends BookingDetail
                 tempString = tempString.substring(0, i);
             string += tempString;
             string += " day";
-            if (this.getField(BookingCar.kDays).getValue() != 1)
+            if (this.getField(BookingCar.DAYS).getValue() != 1)
                 string += "s";
         }
         return string;
@@ -695,12 +695,12 @@ public class BookingCar extends BookingDetail
     public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.kDays).isNull()))
-            this.getField(BookingCar.kDays).setValue(1, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.kRateID).isNull()))
-            this.getField(BookingCar.kRateID).moveFieldToThis(recTour.getField(Tour.kCarRateID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.kClassID).isNull()))
-            this.getField(BookingCar.kClassID).moveFieldToThis(recTour.getField(Tour.kCarClassID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.DAYS).isNull()))
+            this.getField(BookingCar.DAYS).setValue(1, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.RATE_ID).isNull()))
+            this.getField(BookingCar.RATE_ID).moveFieldToThis(recTour.getField(Tour.CAR_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.CLASS_ID).isNull()))
+            this.getField(BookingCar.CLASS_ID).moveFieldToThis(recTour.getField(Tour.CAR_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -714,9 +714,9 @@ public class BookingCar extends BookingDetail
         int iErrorCode = super.moveTourHeaderFields(recTourHeaderDetail, recTour);
         if (recTourHeaderDetail != null)
         {
-            this.getField(BookingCar.kDays).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderCar.kDays));
-            if (recTourHeaderDetail.getField(TourHeaderCar.kDays).getLength() != 0)
-                this.getField(BookingCar.kDays).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderCar.kDays));
+            this.getField(BookingCar.DAYS).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderCar.DAYS));
+            if (recTourHeaderDetail.getField(TourHeaderCar.DAYS).getLength() != 0)
+                this.getField(BookingCar.DAYS).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderCar.DAYS));
         }
         return iErrorCode;
     }
@@ -731,33 +731,33 @@ public class BookingCar extends BookingDetail
         float fDays = ((Float)Utility.getAs(properties, BookingCar.DAYS, Float.class, FloatField.ZERO)).intValue();
         int iRateTypeID = ((Integer)Utility.getAs(properties, BookingCar.RATE_ID, Integer.class, IntegerField.ZERO)).intValue();
         int iRateClassID = ((Integer)Utility.getAs(properties, BookingCar.CLASS_ID, Integer.class, IntegerField.ZERO)).intValue();
-        if ((this.getField(BookingCar.kDays).getValue() == 0) || (fDays > 0))
+        if ((this.getField(BookingCar.DAYS).getValue() == 0) || (fDays > 0))
         {
             if (fDays == 0)
                 fDays = 1;
-            this.getField(BookingCar.kDays).setValue(fDays);
+            this.getField(BookingCar.DAYS).setValue(fDays);
         }
         Record recBooking = null;
-        if (!this.getField(BookingDetail.kBookingID).isNull())
-            recBooking = ((ReferenceField)this.getField(BookingDetail.kBookingID)).getReference();
+        if (!this.getField(BookingDetail.BOOKING_ID).isNull())
+            recBooking = ((ReferenceField)this.getField(BookingDetail.BOOKING_ID)).getReference();
         Record recTour = null;
         if (recBooking != null)
-            recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
-        if ((this.getField(BookingCar.kRateID).getValue() == 0) || (iRateTypeID != 0))
+            recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+        if ((this.getField(BookingCar.RATE_ID).getValue() == 0) || (iRateTypeID != 0))
         {
             if (iRateTypeID == 0)
                 if (recTour != null)
-                    iRateTypeID = (int)recTour.getField(Tour.kCarRateID).getValue();
+                    iRateTypeID = (int)recTour.getField(Tour.CAR_RATE_ID).getValue();
         if (iRateTypeID != 0)
-            this.getField(BookingCar.kRateID).setValue(iRateTypeID);
+            this.getField(BookingCar.RATE_ID).setValue(iRateTypeID);
         }
-        if ((this.getField(BookingCar.kClassID).getValue() == 0) || (iRateClassID != 0))
+        if ((this.getField(BookingCar.CLASS_ID).getValue() == 0) || (iRateClassID != 0))
         {
             if (iRateClassID == 0)
                 if (recTour != null)
-                    iRateClassID = (int)recTour.getField(Tour.kCarClassID).getValue();
+                    iRateClassID = (int)recTour.getField(Tour.CAR_CLASS_ID).getValue();
             if (iRateClassID != 0)
-                this.getField(BookingCar.kClassID).setValue(iRateClassID);
+                this.getField(BookingCar.CLASS_ID).setValue(iRateClassID);
         }
         return iErrorCode;
     }
@@ -775,9 +775,9 @@ public class BookingCar extends BookingDetail
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         
-        double dCost = this.getField(BookingDetail.kTotalCostLocal).getValue();
-        int iQuantity = (int)this.getField(BookingCar.kQuantity).getValue();
-        iErrorCode = this.updateBookingLine(this.getBookingLine(), PricingType.COMPONENT_COST_PRICING, PaxCategory.ALL_ID, iQuantity, dCost, true, recBooking.getField(Booking.kCommission).getValue(), null, PricingStatus.OKAY, iChangeType);
+        double dCost = this.getField(BookingDetail.TOTAL_COST_LOCAL).getValue();
+        int iQuantity = (int)this.getField(BookingCar.QUANTITY).getValue();
+        iErrorCode = this.updateBookingLine(this.getBookingLine(), PricingType.COMPONENT_COST_PRICING, PaxCategory.ALL_ID, iQuantity, dCost, true, recBooking.getField(Booking.COMMISSION).getValue(), null, PricingStatus.OKAY, iChangeType);
         
         return iErrorCode;
     }
@@ -785,18 +785,18 @@ public class BookingCar extends BookingDetail
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
-        if (iStatusType != BookingDetail.kInfoStatusID)
+        if (iStatusType != BookingDetail.INFO_STATUS_ID)
         {
-            if (this.getField(BookingDetail.kRateID).isNull())
-                return BookingDetail.kRateID;
-            if (this.getField(BookingDetail.kClassID).isNull())
-                return BookingDetail.kClassID;
-            if (this.getField(BookingCar.kQuantity).isNull())
-                return BookingCar.kQuantity;
-            if (this.getField(BookingCar.kDays).isNull())
-                return BookingCar.kDays;
+            if (this.getField(BookingDetail.RATE_ID).isNull())
+                return BookingDetail.RATE_ID;
+            if (this.getField(BookingDetail.CLASS_ID).isNull())
+                return BookingDetail.CLASS_ID;
+            if (this.getField(BookingCar.QUANTITY).isNull())
+                return BookingCar.QUANTITY;
+            if (this.getField(BookingCar.DAYS).isNull())
+                return BookingCar.DAYS;
         }
         return super.checkRequiredParams(iStatusType);
     }

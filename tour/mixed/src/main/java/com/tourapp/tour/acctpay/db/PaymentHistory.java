@@ -236,17 +236,17 @@ public class PaymentHistory extends LinkTrx
             while (recApTrx.hasNext())
             {
                 recApTrx.next();
-                if (recApTrx.getField(ApTrx.kAmountSelected).getValue() == 0)
+                if (recApTrx.getField(ApTrx.AMOUNT_SELECTED).getValue() == 0)
                     continue; // Not selected
                 if (dCheckBalance <= 0)
                     break;
                 recApTrx.edit();
         
-                double dAmountSelected = recApTrx.getField(ApTrx.kAmountSelected).getValue();
-                double dInvoiceAmount = recApTrx.getField(ApTrx.kInvoiceAmount).getValue();
-                double dInvoiceAmountUSD = recApTrx.getField(ApTrx.kInvoiceLocal).getValue();
-                double dInvoiceBalance = recApTrx.getField(ApTrx.kInvoiceBalance).getValue();
-                double dInvoiceBalanceUSD = recApTrx.getField(ApTrx.kInvoiceBalanceLocal).getValue();
+                double dAmountSelected = recApTrx.getField(ApTrx.AMOUNT_SELECTED).getValue();
+                double dInvoiceAmount = recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue();
+                double dInvoiceAmountUSD = recApTrx.getField(ApTrx.INVOICE_LOCAL).getValue();
+                double dInvoiceBalance = recApTrx.getField(ApTrx.INVOICE_BALANCE).getValue();
+                double dInvoiceBalanceUSD = recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).getValue();
         
                 if (dAmountSelected > dCheckBalance)
                     dAmountSelected = dCheckBalance;
@@ -256,45 +256,45 @@ public class PaymentHistory extends LinkTrx
                 if ((dInvoiceAmountUSD == 0) || (dInvoiceAmount == 0))
                 {
                     dExchangeRate = dExchange;
-                    recApTrx.getField(ApTrx.kInvoiceLocal).setValue((Math.floor(dInvoiceAmount * dExchangeRate * 100 + 0.5)) / 100);
+                    recApTrx.getField(ApTrx.INVOICE_LOCAL).setValue((Math.floor(dInvoiceAmount * dExchangeRate * 100 + 0.5)) / 100);
                 }
                 else
                     dExchangeRate = dInvoiceAmountUSD / dInvoiceAmount;
                 double dNewBalanceUSD = (Math.floor(dNewBalance * dExchangeRate * 100 + 0.5)) / 100;
                 double dAmountSelectedUSD = dInvoiceBalanceUSD - dNewBalanceUSD;
         
-                recApTrx.getField(ApTrx.kAmountSelected).setValue(Math.max(0, dNewBalance));    // Don't select P/P
-                recApTrx.getField(ApTrx.kInvoiceBalance).setValue(dNewBalance);
-                recApTrx.getField(ApTrx.kInvoiceBalanceLocal).setValue(dNewBalanceUSD);
-                int iOrigApStatus = (int)recApTrx.getField(ApTrx.kTrxStatusID).getValue();
+                recApTrx.getField(ApTrx.AMOUNT_SELECTED).setValue(Math.max(0, dNewBalance));    // Don't select P/P
+                recApTrx.getField(ApTrx.INVOICE_BALANCE).setValue(dNewBalance);
+                recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).setValue(dNewBalanceUSD);
+                int iOrigApStatus = (int)recApTrx.getField(ApTrx.TRX_STATUS_ID).getValue();
                 if (dNewBalance <= 0)
                 {   // Change status to paid
-                    TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.kTrxStatusID)).getReference();
+                    TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.TRX_STATUS_ID)).getReference();
                     if (recTrxStatus != null)
                     {
-                        String strPaidStatus = recTrxStatus.getField(TrxStatus.kStatusCode).toString() + ApTrx.PAID;
-                        int iNewTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, strPaidStatus);
+                        String strPaidStatus = recTrxStatus.getField(TrxStatus.STATUS_CODE).toString() + ApTrx.PAID;
+                        int iNewTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, strPaidStatus);
                         if (iNewTrxStatus > 0)
-                            recApTrx.getField(ApTrx.kTrxStatusID).setValue(iNewTrxStatus);
+                            recApTrx.getField(ApTrx.TRX_STATUS_ID).setValue(iNewTrxStatus);
                     }
                 }
         
-                if (!recApTrx.getField(ApTrx.kDraftVendorID).isNull())
+                if (!recApTrx.getField(ApTrx.DRAFT_VENDOR_ID).isNull())
                 {   // Broker payment draft to distribute.
-                    int iVendorID = (int)recApTrx.getField(ApTrx.kDraftVendorID).getValue();
-                    recApTrx.getField(ApTrx.kDraftVendorID).moveFieldToThis(recApTrx.getField(ApTrx.kVendorID));
-                    recApTrx.getField(ApTrx.kVendorID).setValue(iVendorID);
+                    int iVendorID = (int)recApTrx.getField(ApTrx.DRAFT_VENDOR_ID).getValue();
+                    recApTrx.getField(ApTrx.DRAFT_VENDOR_ID).moveFieldToThis(recApTrx.getField(ApTrx.VENDOR_ID));
+                    recApTrx.getField(ApTrx.VENDOR_ID).setValue(iVendorID);
         
-                    dAmountSelected = recApTrx.getField(ApTrx.kInvoiceAmount).getValue();
-                    dAmountSelectedUSD = recApTrx.getField(ApTrx.kInvoiceLocal).getValue();
-                    recApTrx.getField(ApTrx.kAmountSelected).setValue(0);
-                    recApTrx.getField(ApTrx.kInvoiceBalance).setValue(-dAmountSelected);
-                    recApTrx.getField(ApTrx.kInvoiceBalanceLocal).setValue(-dAmountSelectedUSD);
+                    dAmountSelected = recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue();
+                    dAmountSelectedUSD = recApTrx.getField(ApTrx.INVOICE_LOCAL).getValue();
+                    recApTrx.getField(ApTrx.AMOUNT_SELECTED).setValue(0);
+                    recApTrx.getField(ApTrx.INVOICE_BALANCE).setValue(-dAmountSelected);
+                    recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).setValue(-dAmountSelectedUSD);
                 }
         
-                BaseField fldAccountID = recApTrx.getField(ApTrx.kAccountID);     // Explicit distribution
+                BaseField fldAccountID = recApTrx.getField(ApTrx.ACCOUNT_ID);     // Explicit distribution
                 if (fldAccountID.isNull())
-                    fldAccountID = recApTrx.getTrxAccountID(iOrigApStatus, PostingType.TRX_POST);    //recApTrx.getField(ApTrx.kAccountID); // The account that was credited on creation
+                    fldAccountID = recApTrx.getTrxAccountID(iOrigApStatus, PostingType.TRX_POST);    //recApTrx.getField(ApTrx.ACCOUNT_ID); // The account that was credited on creation
                 if (fldAccountID.isNull())
                 {   // Should add some code here?
                 }
@@ -310,16 +310,16 @@ public class PaymentHistory extends LinkTrx
                 {
                     Record recProductCategory = recApTrx.getProductCategory();
                     if (recProductCategory != null)
-                        fldCurrAccountID = recProductCategory.getField(ProductCategory.kCurrOUAccountID);
+                        fldCurrAccountID = recProductCategory.getField(ProductCategory.CURR_OU_ACCOUNT_ID);
                     if ((fldCurrAccountID == null) || (fldCurrAccountID.isNull()))
                     {
-                        Record recApControl = (Record)recordOwner.getRecord(ApControl.kApControlFile);
+                        Record recApControl = (Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE);
                         if (recApControl == null)
                             recApControl = new ApControl(recordOwner);
-                        fldCurrAccountID = recApControl.getField(ApControl.kCurrOUAccountID);
+                        fldCurrAccountID = recApControl.getField(ApControl.CURR_OU_ACCOUNT_ID);
                     }
                 }
-                this.addPaymentHistory(recordOwner, recApTrx, fldAccountID, PostingType.DIST_POST, (int)recTransactionType.getField(TransactionType.kSourceTrxStatusID).getValue(), fldTrxDescID, fldTrxID, dAmountSelected, dAmountSelectedUSD, fldCurrAccountID, PostingType.DIFFERENCE_POST, dCurrencyLoss);
+                this.addPaymentHistory(recordOwner, recApTrx, fldAccountID, PostingType.DIST_POST, (int)recTransactionType.getField(TransactionType.SOURCE_TRX_STATUS_ID).getValue(), fldTrxDescID, fldTrxID, dAmountSelected, dAmountSelectedUSD, fldCurrAccountID, PostingType.DIFFERENCE_POST, dCurrencyLoss);
         
                 FileListener listener = recApTrx.getListener(SubFileFilter.class);
                 if (listener != null)
@@ -332,24 +332,24 @@ public class PaymentHistory extends LinkTrx
             if (dCheckBalance != 0)
             { // Amount distributed not equal to selected amount, distribute the balance to a prepayment
                 recApTrx.addNew();
-                TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.kTrxStatusID)).getReferenceRecord();
-                int iPrepaymentTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.PREPAYMENT);   // Prepayment
-                recApTrx.getField(ApTrx.kTrxStatusID).setValue(iPrepaymentTrxStatusID);
-                recApTrx.getField(ApTrx.kVendorID).moveFieldToThis(fldVendorID);
-                recApTrx.getField(ApTrx.kInvoiceAmount).setValue(-dCheckBalance);
-                recApTrx.getField(ApTrx.kInvoiceLocal).setValue(-dCheckBalanceUSD);
-                recApTrx.getField(ApTrx.kInvoiceBalance).setValue(-dCheckBalance);
-                recApTrx.getField(ApTrx.kInvoiceBalanceLocal).setValue(-dCheckBalanceUSD);
-                recApTrx.getField(ApTrx.kAmountSelected).setValue(0);
-                recApTrx.getField(ApTrx.kAccountID).moveFieldToThis(((Record)recordOwner.getRecord(ApControl.kApControlFile)).getField(ApControl.kNonTourPrepayAccountID)); // Non-tour P/P
+                TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.TRX_STATUS_ID)).getReferenceRecord();
+                int iPrepaymentTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.PREPAYMENT);   // Prepayment
+                recApTrx.getField(ApTrx.TRX_STATUS_ID).setValue(iPrepaymentTrxStatusID);
+                recApTrx.getField(ApTrx.VENDOR_ID).moveFieldToThis(fldVendorID);
+                recApTrx.getField(ApTrx.INVOICE_AMOUNT).setValue(-dCheckBalance);
+                recApTrx.getField(ApTrx.INVOICE_LOCAL).setValue(-dCheckBalanceUSD);
+                recApTrx.getField(ApTrx.INVOICE_BALANCE).setValue(-dCheckBalance);
+                recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).setValue(-dCheckBalanceUSD);
+                recApTrx.getField(ApTrx.AMOUNT_SELECTED).setValue(0);
+                recApTrx.getField(ApTrx.ACCOUNT_ID).moveFieldToThis(((Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE)).getField(ApControl.NON_TOUR_PREPAY_ACCOUNT_ID)); // Non-tour P/P
                 recApTrx.add();
                 Object varBookmark = recApTrx.getLastModified(DBConstants.DATA_SOURCE_HANDLE);
                 recApTrx.setHandle(varBookmark, DBConstants.DATA_SOURCE_HANDLE);
         
-                BaseField fldAccountID = recApTrx.getField(ApTrx.kAccountID);     // Explicit distribution
+                BaseField fldAccountID = recApTrx.getField(ApTrx.ACCOUNT_ID);     // Explicit distribution
                 if (fldAccountID.isNull())
-                    fldAccountID = recApTrx.getTrxAccountID(-1, PostingType.TRX_POST);    //recApTrx.getField(ApTrx.kAccountID); // The account that was credited on creation
-                this.addPaymentHistory(recordOwner, recApTrx, fldAccountID, PostingType.DIST_POST, (int)recTransactionType.getField(TransactionType.kSourceTrxStatusID).getValue(), fldTrxDescID, fldTrxID, dCheckBalance, dCheckBalanceUSD, null, null, 0);
+                    fldAccountID = recApTrx.getTrxAccountID(-1, PostingType.TRX_POST);    //recApTrx.getField(ApTrx.ACCOUNT_ID); // The account that was credited on creation
+                this.addPaymentHistory(recordOwner, recApTrx, fldAccountID, PostingType.DIST_POST, (int)recTransactionType.getField(TransactionType.SOURCE_TRX_STATUS_ID).getValue(), fldTrxDescID, fldTrxID, dCheckBalance, dCheckBalanceUSD, null, null, 0);
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -377,23 +377,23 @@ public class PaymentHistory extends LinkTrx
         boolean bSuccess = false;
         try {
             this.addNew();
-            this.getField(PaymentHistory.kApTrxID).moveFieldToThis(recApTrx.getField(ApTrx.kID));
-            this.getField(PaymentHistory.kTrxStatusID).setValue(iTrxStatusID);
-            this.getField(PaymentHistory.kTrxDate).setValue(DateTimeField.todaysDate());
-            this.getField(PaymentHistory.kAmountApplied).setValue(dAmount);
-            this.getField(PaymentHistory.kAmountLocal).setValue(dAmountUSD);
-            this.getField(PaymentHistory.kCurrLossLocal).setValue(dCurrLoss);
-            this.getField(PaymentHistory.kLinkedTrxID).moveFieldToThis(fldTrxID);
+            this.getField(PaymentHistory.AP_TRX_ID).moveFieldToThis(recApTrx.getField(ApTrx.ID));
+            this.getField(PaymentHistory.TRX_STATUS_ID).setValue(iTrxStatusID);
+            this.getField(PaymentHistory.TRX_DATE).setValue(DateTimeField.todaysDate());
+            this.getField(PaymentHistory.AMOUNT_APPLIED).setValue(dAmount);
+            this.getField(PaymentHistory.AMOUNT_LOCAL).setValue(dAmountUSD);
+            this.getField(PaymentHistory.CURR_LOSS_LOCAL).setValue(dCurrLoss);
+            this.getField(PaymentHistory.LINKED_TRX_ID).moveFieldToThis(fldTrxID);
             if (fldTrxDescID != null)
-                this.getField(PaymentHistory.kLinkedTrxDescID).moveFieldToThis(fldTrxDescID);
-            this.getField(PaymentHistory.kTrxEntry).setValue(DateTimeField.currentTime());
+                this.getField(PaymentHistory.LINKED_TRX_DESC_ID).moveFieldToThis(fldTrxDescID);
+            this.getField(PaymentHistory.TRX_ENTRY).setValue(DateTimeField.currentTime());
             this.add();
             Object bookmark = this.getLastModified(DBConstants.DATA_SOURCE_HANDLE);
             this.setHandle(bookmark, DBConstants.DATA_SOURCE_HANDLE);
             // Step 2b - Post the transaction side of the distribution.
-            AcctDetail recAcctDetail = (AcctDetail)recordOwner.getRecord(AcctDetail.kAcctDetailFile);
-            AcctDetailDist recAcctDetailDist = (AcctDetailDist)recordOwner.getRecord(AcctDetailDist.kAcctDetailDistFile);
-            Period recPeriod = (Period)recordOwner.getRecord(Period.kPeriodFile);
+            AcctDetail recAcctDetail = (AcctDetail)recordOwner.getRecord(AcctDetail.ACCT_DETAIL_FILE);
+            AcctDetailDist recAcctDetailDist = (AcctDetailDist)recordOwner.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+            Period recPeriod = (Period)recordOwner.getRecord(Period.PERIOD_FILE);
             bSuccess = this.onPostTrxDist(fldAccountID, dAmountUSD, strPostType, recAcctDetail, recAcctDetailDist, recPeriod);
             if (!bSuccess)
             {       // Back out and void - bad trx.
@@ -426,45 +426,45 @@ public class PaymentHistory extends LinkTrx
         boolean bSuccess = true;
         try {
             recApTrx.edit();
-            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.kTrxStatusID)).getReference();
+            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.TRX_STATUS_ID)).getReference();
             String strPaidStatus = PaymentHistory.PREPAYMENT_DIST;
             if (recTrxStatus != null)
-                strPaidStatus = recTrxStatus.getField(TrxStatus.kStatusCode).toString() + ApTrx.DIST;
-            TransactionType recTransactionType = (TransactionType)recordOwner.getRecord(TransactionType.kTransactionTypeFile);
-            recTransactionType.getTrxTypeID(TransactionType.ACCTPAY, PaymentHistory.kPaymentHistoryFile, strPaidStatus, PaymentHistory.DIST_TYPE);
-            BaseField fldVendorID = recApTrx.getField(ApTrx.kVendorID);
+                strPaidStatus = recTrxStatus.getField(TrxStatus.STATUS_CODE).toString() + ApTrx.DIST;
+            TransactionType recTransactionType = (TransactionType)recordOwner.getRecord(TransactionType.TRANSACTION_TYPE_FILE);
+            recTransactionType.getTrxTypeID(TransactionType.ACCTPAY, PaymentHistory.PAYMENT_HISTORY_FILE, strPaidStatus, PaymentHistory.DIST_TYPE);
+            BaseField fldVendorID = recApTrx.getField(ApTrx.VENDOR_ID);
             double dExchange = 1;
-            if ((recApTrx.getField(ApTrx.kInvoiceLocal).getValue() != 0) && (recApTrx.getField(ApTrx.kInvoiceAmount).getValue() != 0))
-                dExchange = recApTrx.getField(ApTrx.kInvoiceLocal).getValue() / recApTrx.getField(ApTrx.kInvoiceAmount).getValue();
-            BaseField fldTrxID = recApTrx.getField(ApTrx.kID);
-            double dDistributedAmount = -recordOwner.getRecord(Vendor.kVendorFile).getField(Vendor.kAmountSelected).getValue();
-            if (-recApTrx.getField(ApTrx.kInvoiceBalance).getValue() < -dDistributedAmount)
-                dDistributedAmount = recApTrx.getField(ApTrx.kInvoiceBalance).getValue();  // Negative
+            if ((recApTrx.getField(ApTrx.INVOICE_LOCAL).getValue() != 0) && (recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue() != 0))
+                dExchange = recApTrx.getField(ApTrx.INVOICE_LOCAL).getValue() / recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue();
+            BaseField fldTrxID = recApTrx.getField(ApTrx.ID);
+            double dDistributedAmount = -recordOwner.getRecord(Vendor.VENDOR_FILE).getField(Vendor.AMOUNT_SELECTED).getValue();
+            if (-recApTrx.getField(ApTrx.INVOICE_BALANCE).getValue() < -dDistributedAmount)
+                dDistributedAmount = recApTrx.getField(ApTrx.INVOICE_BALANCE).getValue();  // Negative
         
-            double dBalance = recApTrx.getField(ApTrx.kInvoiceBalance).getValue();  // Negative
-            double dStartBalanceUSD = recApTrx.getField(ApTrx.kInvoiceBalanceLocal).getValue();   // Negative
+            double dBalance = recApTrx.getField(ApTrx.INVOICE_BALANCE).getValue();  // Negative
+            double dStartBalanceUSD = recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).getValue();   // Negative
         
             dBalance = dBalance - dDistributedAmount;   // Negative balance
             int iSign = (dBalance < 0) ? -1 : +1;
             double dBalanceUSD = Math.floor(Math.abs(dBalance * dExchange * 100 + 0.5)) / 100 * iSign;
             double dDistributedAmountUSD = dStartBalanceUSD - dBalanceUSD;  // Negative amount distributed
         
-            ((AcctDetailDist)recordOwner.getRecord(AcctDetailDist.kAcctDetailDistFile)).startDistTrx();
-            bSuccess = this.postDistTrx(recordOwner, recTransactionType, recSelectApTrx, fldVendorID, recTrxStatus.getField(TrxStatus.kTrxDescID), fldTrxID, -dDistributedAmount, -dDistributedAmountUSD);
-            int iDistGroupID = (int)recordOwner.getRecord(AcctDetailDist.kAcctDetailDistFile).getField(AcctDetailDist.kAcctDetailDistGroupID).getValue();
+            ((AcctDetailDist)recordOwner.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE)).startDistTrx();
+            bSuccess = this.postDistTrx(recordOwner, recTransactionType, recSelectApTrx, fldVendorID, recTrxStatus.getField(TrxStatus.TRX_DESC_ID), fldTrxID, -dDistributedAmount, -dDistributedAmountUSD);
+            int iDistGroupID = (int)recordOwner.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE).getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).getValue();
         
             if (bSuccess)
             {
-                recApTrx.getField(ApTrx.kInvoiceBalance).setValue(dBalance);
-                recApTrx.getField(ApTrx.kInvoiceBalanceLocal).setValue(dBalanceUSD);
+                recApTrx.getField(ApTrx.INVOICE_BALANCE).setValue(dBalance);
+                recApTrx.getField(ApTrx.INVOICE_BALANCE_LOCAL).setValue(dBalanceUSD);
         
-                int iOrigApStatus = (int)recApTrx.getField(ApTrx.kTrxStatusID).getValue();
+                int iOrigApStatus = (int)recApTrx.getField(ApTrx.TRX_STATUS_ID).getValue();
                 int iNewTrxStatus = -1;
                 if (dBalance == 0)
                 {   // Change status to paid
-                    iNewTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, strPaidStatus);
+                    iNewTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, strPaidStatus);
                     if (iNewTrxStatus > 0)
-                        recApTrx.getField(ApTrx.kTrxStatusID).setValue(iNewTrxStatus);
+                        recApTrx.getField(ApTrx.TRX_STATUS_ID).setValue(iNewTrxStatus);
                 }
         
                 Object bookmark = recApTrx.getHandle(DBConstants.DATA_SOURCE_HANDLE);
@@ -475,35 +475,35 @@ public class PaymentHistory extends LinkTrx
                 BaseField fldAccountID = null;
                 this.addNew();
                 int iOldKeyArea = this.getDefaultOrder();
-                this.setKeyArea(PaymentHistory.kApTrxIDKey);
-                this.getField(PaymentHistory.kApTrxID).moveFieldToThis(recApTrx.getField(ApTrx.kID));
-                this.getField(PaymentHistory.kTrxDate).setToLimit(DBConstants.START_SELECT_KEY);
-                this.getField(PaymentHistory.kID).setData(null);
+                this.setKeyArea(PaymentHistory.AP_TRX_ID_KEY);
+                this.getField(PaymentHistory.AP_TRX_ID).moveFieldToThis(recApTrx.getField(ApTrx.ID));
+                this.getField(PaymentHistory.TRX_DATE).setToLimit(DBConstants.START_SELECT_KEY);
+                this.getField(PaymentHistory.ID).setData(null);
                 if (this.seek(">="))
-                    if (this.getField(PaymentHistory.kApTrxID).equals(recApTrx.getField(ApTrx.kID)))
+                    if (this.getField(PaymentHistory.AP_TRX_ID).equals(recApTrx.getField(ApTrx.ID)))
                         fldAccountID = this.getTrxAccountID(PostingType.DIST_POST);
                 this.setKeyArea(iOldKeyArea);
                 if ((fldAccountID == null) || (fldAccountID.isNull()))
                 {       // If not found, just use a default (never?)
-                    if (((recApTrx.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recApTrx.getEditMode() == DBConstants.EDIT_CURRENT)) && (!recApTrx.getField(ApTrx.kAccountID).isNull()))
-                        fldAccountID = recApTrx.getField(ApTrx.kAccountID); // Dist account for prepayments and broker payments
-                    else if (recApTrx.getField(ApTrx.kTourID).isNull())
-                        fldAccountID = ((Record)recordOwner.getRecord(ApControl.kApControlFile)).getField(ApControl.kNonTourPrepayAccountID);
+                    if (((recApTrx.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recApTrx.getEditMode() == DBConstants.EDIT_CURRENT)) && (!recApTrx.getField(ApTrx.ACCOUNT_ID).isNull()))
+                        fldAccountID = recApTrx.getField(ApTrx.ACCOUNT_ID); // Dist account for prepayments and broker payments
+                    else if (recApTrx.getField(ApTrx.TOUR_ID).isNull())
+                        fldAccountID = ((Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE)).getField(ApControl.NON_TOUR_PREPAY_ACCOUNT_ID);
                     else
-                        fldAccountID = ((Record)recordOwner.getRecord(ApControl.kApControlFile)).getField(ApControl.kPrepayAccountID);
+                        fldAccountID = ((Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE)).getField(ApControl.PREPAY_ACCOUNT_ID);
                 }
                 DateTimeField fldTrxDate = null;
-                TransactionType recTrxType = (TransactionType)recordOwner.getRecord(TransactionType.kTransactionTypeFile);
-                recTrxType.getTrxTypeID(TransactionType.ACCTPAY, PaymentHistory.kPaymentHistoryFile, strPaidStatus, PaymentHistory.TRX_TYPE);
+                TransactionType recTrxType = (TransactionType)recordOwner.getRecord(TransactionType.TRANSACTION_TYPE_FILE);
+                recTrxType.getTrxTypeID(TransactionType.ACCTPAY, PaymentHistory.PAYMENT_HISTORY_FILE, strPaidStatus, PaymentHistory.TRX_TYPE);
                 DateTimeField fldTrxEntryDate = null;
                 int iUserID = -1;
-                AcctDetailDist recAcctDetailDist = (AcctDetailDist)recordOwner.getRecord(AcctDetailDist.kAcctDetailDistFile);
-                AcctDetail recAcctDetail = (AcctDetail)recordOwner.getRecord(AcctDetail.kAcctDetailFile);
-                Period recPeriod = (Period)recordOwner.getRecord(Period.kPeriodFile);
+                AcctDetailDist recAcctDetailDist = (AcctDetailDist)recordOwner.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+                AcctDetail recAcctDetail = (AcctDetail)recordOwner.getRecord(AcctDetail.ACCT_DETAIL_FILE);
+                Period recPeriod = (Period)recordOwner.getRecord(Period.PERIOD_FILE);
         
-                recAcctDetailDist.getField(AcctDetailDist.kAcctDetailDistGroupID).setValue(iDistGroupID);
+                recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).setValue(iDistGroupID);
                 bSuccess = recAcctDetailDist.addDetailTrx(fldAccountID, fldTrxDate, fldTrxID, recTrxType, fldTrxEntryDate, dDistributedAmountUSD, iUserID, recAcctDetail, recPeriod);
-                ((AcctDetailDist)recordOwner.getRecord(AcctDetailDist.kAcctDetailDistFile)).endDistTrx();
+                ((AcctDetailDist)recordOwner.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE)).endDistTrx();
             }
             else
             {   // Back out the transactions here!

@@ -62,10 +62,10 @@ public class ApTrxHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kID).setEnabled(true);
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kID).addListener(new MainReadOnlyHandler(ApTrx.kIDKey));
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setEnabled(true);
-        this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).addListener(new MainReadOnlyHandler(ApTrx.kCodeKey));
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.ID).setEnabled(true);
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.ID).addListener(new MainReadOnlyHandler(ApTrx.ID_KEY));
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.CODE).setEnabled(true);
+        this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.CODE).addListener(new MainReadOnlyHandler(ApTrx.CODE_KEY));
     }
     /**
      * SetupSFields Method.
@@ -73,7 +73,7 @@ public class ApTrxHeaderScreen extends HeaderScreen
     public void setupSFields()
     {
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
+        ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.ID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
         screenField.setRequestFocusEnabled(false);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -101,10 +101,10 @@ public class ApTrxHeaderScreen extends HeaderScreen
             boolean bReadCurrentRecord = false;
             int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();
-            if (!this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kVendorID).isNull())
-                properties.put(DBParams.HEADER_OBJECT_ID, this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kVendorID).toString());
+            if (!this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.VENDOR_ID).isNull())
+                properties.put(DBParams.HEADER_OBJECT_ID, this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.VENDOR_ID).toString());
         
-            return (this.onForm(this.getRecord(ApTrx.kApTrxFile), iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
+            return (this.onForm(this.getRecord(ApTrx.AP_TRX_FILE), iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
         }
         return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }

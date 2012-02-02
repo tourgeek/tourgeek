@@ -72,19 +72,19 @@ public class ItineraryActionHandler extends FieldListener
     {
         RecordOwner recordOwner = this.getOwner().getRecord().getRecordOwner();
         
-        Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
-        BaseField fldDestination = ((Record)recordOwner.getScreenRecord()).getField(BookingItineraryScreenRecord.kActionTarget);
-        Record recMessageTransport = ((ReferenceField)recordOwner.getScreenRecord().getField(BookingItineraryScreenRecord.kMessageTransportID)).getReference();
+        Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
+        BaseField fldDestination = ((Record)recordOwner.getScreenRecord()).getField(BookingItineraryScreenRecord.ACTION_TARGET);
+        Record recMessageTransport = ((ReferenceField)recordOwner.getScreenRecord().getField(BookingItineraryScreenRecord.MESSAGE_TRANSPORT_ID)).getReference();
         if (recMessageTransport != null)
         {
-            String strMessageTransport = recMessageTransport.getField(MessageTransport.kCode).toString();
+            String strMessageTransport = recMessageTransport.getField(MessageTransport.CODE).toString();
             if (MessageTransport.FAX.equalsIgnoreCase(strMessageTransport))
             {
-                fldDestination.moveFieldToThis(recBooking.getField(Booking.kFax));
+                fldDestination.moveFieldToThis(recBooking.getField(Booking.FAX));
             }
             else if (MessageTransport.EMAIL.equalsIgnoreCase(strMessageTransport))
             {
-                fldDestination.moveFieldToThis(recBooking.getField(Booking.kEmail));
+                fldDestination.moveFieldToThis(recBooking.getField(Booking.EMAIL));
             }
         }
         

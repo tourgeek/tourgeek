@@ -98,20 +98,20 @@ public class CheckRegister extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(BankAcctScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kBankAcctID)));
+        this.getScreenRecord().getField(BankAcctScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.BANK_ACCT_ID)));
         
-        this.getMainRecord().setKeyArea(BankTrx.kTrxDateKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankAcctScreenRecord.kBankAcctID), BankTrx.kBankAcctID, null, -1, null, -1));
+        this.getMainRecord().setKeyArea(BankTrx.TRX_DATE_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankAcctScreenRecord.BANK_ACCT_ID), BankTrx.BANK_ACCT_ID, null, null, null, null));
         if (!this.isPrintReport())
         {
             Period recPeriod = new Period(this);
-            recPeriod.setPeriodDefaults(this.getScreenRecord(), BankAcctScreenRecord.kStartDate, BankAcctScreenRecord.kEndDate, null);
+            recPeriod.setPeriodDefaults(this.getScreenRecord(), BankAcctScreenRecord.START_DATE, BankAcctScreenRecord.END_DATE, null);
             recPeriod.free();
         }
         else
         {        // Calc start balance
-            this.getMainRecord().addListener(new CompareFileFilter(BankTrx.kTrxDate, this.getScreenRecord().getField(BankAcctScreenRecord.kStartDate), "<", null, false));
-            this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankAcctScreenRecord.kStartBalance), BankTrx.kAmount, false, true));
+            this.getMainRecord().addListener(new CompareFileFilter(BankTrx.TRX_DATE, this.getScreenRecord().getField(BankAcctScreenRecord.START_DATE), "<", null, false));
+            this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankAcctScreenRecord.START_BALANCE), BankTrx.AMOUNT, false, true));
             try {
                 this.getMainRecord().close();
                 while (this.getMainRecord().hasNext())
@@ -126,12 +126,12 @@ public class CheckRegister extends ReportScreen
             }
         }
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(BankTrx.kTrxDate, this.getScreenRecord().getField(BankAcctScreenRecord.kStartDate), this.getScreenRecord().getField(BankAcctScreenRecord.kEndDate), ExtractRangeFilter.PAD_END_FIELD));
+        this.getMainRecord().addListener(new ExtractRangeFilter(BankTrx.TRX_DATE, this.getScreenRecord().getField(BankAcctScreenRecord.START_DATE), this.getScreenRecord().getField(BankAcctScreenRecord.END_DATE), ExtractRangeFilter.PAD_END_FIELD));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankAcctScreenRecord.kCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankAcctScreenRecord.kBalance), BankTrx.kAmount, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankAcctScreenRecord.COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankAcctScreenRecord.BALANCE), BankTrx.AMOUNT, false, true));
         
-        this.getScreenRecord().getField(BankAcctScreenRecord.kBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(BankAcctScreenRecord.kEndBalance), this.getScreenRecord().getField(BankAcctScreenRecord.kStartBalance), this.getScreenRecord().getField(BankAcctScreenRecord.kBalance), CalcBalanceHandler.PLUS, false));
+        this.getScreenRecord().getField(BankAcctScreenRecord.BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(BankAcctScreenRecord.END_BALANCE), this.getScreenRecord().getField(BankAcctScreenRecord.START_BALANCE), this.getScreenRecord().getField(BankAcctScreenRecord.BALANCE), CalcBalanceHandler.PLUS, false));
     }
     /**
      * Add the toolbars that belong with this screen.

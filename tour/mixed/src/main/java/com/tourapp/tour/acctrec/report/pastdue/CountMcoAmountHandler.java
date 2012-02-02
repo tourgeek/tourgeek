@@ -48,7 +48,7 @@ public class CountMcoAmountHandler extends SubCountHandler
     /**
      * Count a sub-field.
      */
-    public CountMcoAmountHandler(BaseField fieldMain, int ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
+    public CountMcoAmountHandler(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
     {
         this();
         this.init(fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF);
@@ -56,12 +56,12 @@ public class CountMcoAmountHandler extends SubCountHandler
     /**
      * Initialize class fields.
      */
-    public void init(BaseField fieldMain, int ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
+    public void init(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
     {
         m_iEndMcoClass = 0;
         m_iStartMcoClass = 0;
         m_recTrxStatus = null;
-        super.init(null, null, -1, fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
+        super.init(null, null, -1, fieldMain, -1, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
     }
     /**
      * Free Method.
@@ -89,11 +89,11 @@ public class CountMcoAmountHandler extends SubCountHandler
                 if (recordOwner != null)
                     recordOwner.removeRecord(m_recTrxStatus);
             }
-            m_iStartMcoClass = (int)m_recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.BATCH);
+            m_iStartMcoClass = (int)m_recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.BATCH);
             m_iEndMcoClass = m_iStartMcoClass; //(int)recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, "MCO Payment-Paid amt");
         }
-        if ((this.getOwner().getField(ArTrx.kTrxStatusID).getValue() >= m_iStartMcoClass)
-            && (this.getOwner().getField(ArTrx.kTrxStatusID).getValue() <= m_iEndMcoClass))
+        if ((this.getOwner().getField(ArTrx.TRX_STATUS_ID).getValue() >= m_iStartMcoClass)
+            && (this.getOwner().getField(ArTrx.TRX_STATUS_ID).getValue() <= m_iEndMcoClass))
                 return super.getFieldValue();
         return 0; // Not an MCO... Don't add
     }

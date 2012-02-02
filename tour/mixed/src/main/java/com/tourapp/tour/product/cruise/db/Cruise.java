@@ -308,22 +308,22 @@ public class Cruise extends TransportProduct
         double dPPCost = this.getCruiseCost(dateTarget, iCruiseRateID, iCruiseClassID, false);
         double dPPPriceLocal = this.getCruiseCost(dateTarget, iCruiseRateID, iCruiseClassID, true);
         
-        this.getField(Cruise.kPPCost).setValue(dPPCost);
-        this.getField(Cruise.kPPPriceLocal).setValue(dPPPriceLocal);
+        this.getField(Cruise.PP_COST).setValue(dPPCost);
+        this.getField(Cruise.PP_PRICE_LOCAL).setValue(dPPPriceLocal);
         
         double dCruiseCost = dPPCost;
         
         double dTotalLocalCost = Math.floor(dCruiseCost * sTargetPax * 100.00 + 0.5) / 100.00;
         double dTotalLocalPrice = Math.floor(dPPPriceLocal * sTargetPax * 100.00 + 0.5) / 100.00;
         
-        this.getField(Cruise.kClassID).setValue(iCruiseClassID);
-        this.getField(Cruise.kRateID).setValue(iCruiseRateID);
+        this.getField(Cruise.CLASS_ID).setValue(iCruiseClassID);
+        this.getField(Cruise.RATE_ID).setValue(iCruiseRateID);
         
-        this.getField(Cruise.kPPCost).setValue(dCruiseCost);
-        this.getField(Product.kProductCost).setValue(dTotalLocalCost);
-        this.getField(Product.kProductPriceLocal).setValue(dTotalLocalPrice);
+        this.getField(Cruise.PP_COST).setValue(dCruiseCost);
+        this.getField(Product.PRODUCT_COST).setValue(dTotalLocalCost);
+        this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalLocalPrice);
         
-        responseProductMessageData.setPPCost(this.getField(Cruise.kPPCost).getValue());
+        responseProductMessageData.setPPCost(this.getField(Cruise.PP_COST).getValue());
         if (iCruiseClassID != productMessageData.getRateClassID())
         {
             responseProductMessageData.setRateClassID(productMessageData.getRateClassID());
@@ -335,7 +335,7 @@ public class Cruise extends TransportProduct
         if (dTotalLocalCost == 0)
             iStatus = BaseStatus.NOT_VALID;
         responseMessage.setMessageDataStatus(iStatus);
-        this.getField(Product.kDisplayCostStatusID).setValue(iStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iStatus);
         return messageReply;
     }
     /**
@@ -384,9 +384,9 @@ public class Cruise extends TransportProduct
         if (recProductCostLookup != null)
         {
             if (!bGetPrice)
-                dCost += recProductCostLookup.getCost(CruisePricing.kCost, this.getProductTerms());
+                dCost += recProductCostLookup.getCost(CruisePricing.COST, this.getProductTerms());
             else
-                dCost += recProductCostLookup.getField(CruisePricing.kPrice).getValue();
+                dCost += recProductCostLookup.getField(CruisePricing.PRICE).getValue();
         }
         return dCost;
     }
@@ -400,20 +400,20 @@ public class Cruise extends TransportProduct
      */
     public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
     {
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getDateTime();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
         short sTargetPax = recBookingDetail.getNoPax();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.kClassID).getValue();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.kRateID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
+        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
         CruisePricing recProductPricing = ((CruisePricing)this.getProductPricing()).getCruiseCost(this, dateTarget, iRateID, iClassID);
         if (recProductPricing != null)
         {
             int iPricingType = PricingType.COMPONENT_PRICING;
             int iPaxCategory = PaxCategory.ALL_ID;
             int iQuantity = sTargetPax;
-            double dAmount = recProductPricing.getField(ProductPricing.kPrice).getValue();
-            boolean bCommissionable = recProductPricing.getField(ProductPricing.kCommissionable).getState();
-            double dCommissionRate = recProductPricing.getField(ProductPricing.kCommissionRate).getValue();
-            String strPayAt = recProductPricing.getField(ProductPricing.kPayAt).toString();
+            double dAmount = recProductPricing.getField(ProductPricing.PRICE).getValue();
+            boolean bCommissionable = recProductPricing.getField(ProductPricing.COMMISSIONABLE).getState();
+            double dCommissionRate = recProductPricing.getField(ProductPricing.COMMISSION_RATE).getValue();
+            String strPayAt = recProductPricing.getField(ProductPricing.PAY_AT).toString();
             return recBookingDetail.updateBookingLine(recBookingLine, iPricingType, iPaxCategory, iQuantity, dAmount, bCommissionable, dCommissionRate, strPayAt, PricingStatus.OKAY, iChangeType);
         }
         return DBConstants.ERROR_RETURN;

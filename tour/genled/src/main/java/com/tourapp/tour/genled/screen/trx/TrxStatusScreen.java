@@ -89,8 +89,8 @@ public class TrxStatusScreen extends DetailScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(TrxStatus.kTrxDescIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(TrxStatusScreenRecord.kTrxDescID), TrxStatus.kTrxDescID, null, -1, null, -1));
+        this.getMainRecord().setKeyArea(TrxStatus.TRX_DESC_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID), TrxStatus.TRX_DESC_ID, null, null, null, null));
         
         this.getMainRecord().addListener(new UpdateTrxStatusHandler(null, null));
     }

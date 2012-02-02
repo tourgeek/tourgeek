@@ -50,7 +50,7 @@ public class ApTrxFilter extends ApTrxBaseFilter
     /**
      * Constructor.
      */
-    public ApTrxFilter(int fsTarget, ScreenRecord screenRecord)
+    public ApTrxFilter(String fsTarget, ScreenRecord screenRecord)
     {
         this();
         this.init(fsTarget, screenRecord);
@@ -58,7 +58,7 @@ public class ApTrxFilter extends ApTrxBaseFilter
     /**
      * Initialize class fields.
      */
-    public void init(int fsTarget, ScreenRecord screenRecord)
+    public void init(String fsTarget, ScreenRecord screenRecord)
     {
         m_screenRecord = null;
         m_screenRecord = screenRecord;
@@ -72,15 +72,15 @@ public class ApTrxFilter extends ApTrxBaseFilter
      */
     public boolean isFilterChange()
     {
-        if ((m_screenRecord.getField(ApReportScreenRecord.kVouchers).getState() != m_bVouchers)
-            || (m_screenRecord.getField(ApReportScreenRecord.kDepEstimates).getState() != m_bDepEst)
-            || (m_screenRecord.getField(ApReportScreenRecord.kOpenItems).getState() != m_bOpenItems)
-            || (m_screenRecord.getField(ApReportScreenRecord.kShowPaid).getState() != m_bPaidItems))
+        if ((m_screenRecord.getField(ApReportScreenRecord.VOUCHERS).getState() != m_bVouchers)
+            || (m_screenRecord.getField(ApReportScreenRecord.DEP_ESTIMATES).getState() != m_bDepEst)
+            || (m_screenRecord.getField(ApReportScreenRecord.OPEN_ITEMS).getState() != m_bOpenItems)
+            || (m_screenRecord.getField(ApReportScreenRecord.SHOW_PAID).getState() != m_bPaidItems))
         {
-            m_bVouchers = m_screenRecord.getField(ApReportScreenRecord.kVouchers).getState();
-            m_bDepEst = m_screenRecord.getField(ApReportScreenRecord.kDepEstimates).getState();
-            m_bOpenItems = m_screenRecord.getField(ApReportScreenRecord.kOpenItems).getState();
-            m_bPaidItems = m_screenRecord.getField(ApReportScreenRecord.kShowPaid).getState();
+            m_bVouchers = m_screenRecord.getField(ApReportScreenRecord.VOUCHERS).getState();
+            m_bDepEst = m_screenRecord.getField(ApReportScreenRecord.DEP_ESTIMATES).getState();
+            m_bOpenItems = m_screenRecord.getField(ApReportScreenRecord.OPEN_ITEMS).getState();
+            m_bPaidItems = m_screenRecord.getField(ApReportScreenRecord.SHOW_PAID).getState();
             return true;
         }
         return false;
@@ -92,11 +92,11 @@ public class ApTrxFilter extends ApTrxBaseFilter
      */
     public boolean checkTrxStatus(TrxStatus recTrxStatus)
     {
-        if (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.VOUCHER) != -1)
+        if (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.VOUCHER) != -1)
             return m_bVouchers;
-        else if (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.DEPARTURE_ESTIMATE.substring(0, 6)) != -1)
+        else if (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.DEP_ESTIMATE.substring(0, 6)) != -1)
             return m_bDepEst;
-        else if (recTrxStatus.getField(TrxStatus.kActiveTrx).getState() == false)
+        else if (recTrxStatus.getField(TrxStatus.ACTIVE_TRX).getState() == false)
             return m_bPaidItems;
         else
             return m_bOpenItems;

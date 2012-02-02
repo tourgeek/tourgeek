@@ -75,7 +75,7 @@ public class ChangePricingTypeHandler extends FieldListener
                 PricingType recPricingType2 = new PricingType(recBooking.findRecordOwner());
                 PricingType recPricingType3 = recPricingType2.getPricingType(PricingType.COMPONENT_COST_PRICING);
                 if (recPricingType3 != null)
-                    this.getOwner().moveFieldToThis(recPricingType3.getField(PricingType.kID));
+                    this.getOwner().moveFieldToThis(recPricingType3.getField(PricingType.ID));
                 recPricingType2.free();                
             }
         }
@@ -87,13 +87,13 @@ public class ChangePricingTypeHandler extends FieldListener
                 e.printStackTrace();
             }
             recBooking = ((BookingDetail)this.getOwner().getRecord()).getBooking(true);
-            fldTourModuleID = this.getOwner().getRecord().getField(BookingDetail.kProductID);
-            dateStart = ((DateTimeField)this.getOwner().getRecord().getField(BookingDetail.kDetailDate)).getDateTime();
+            fldTourModuleID = this.getOwner().getRecord().getField(BookingDetail.PRODUCT_ID);
+            dateStart = ((DateTimeField)this.getOwner().getRecord().getField(BookingDetail.DETAIL_DATE)).getDateTime();
             recBooking.getTourPricingType(null, fldTourModuleID, dateStart);    // This will clear the cache
         }
-        if (!recBooking.getField(Booking.kTourID).isNull())
+        if (!recBooking.getField(Booking.TOUR_ID).isNull())
         {   // Always
-            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             BookingLine recBookingLine = new BookingLine(recBooking.findRecordOwner());            
             recBookingLine.addDetailBehaviors(recBooking, recTour);
             

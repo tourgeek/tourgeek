@@ -74,7 +74,7 @@ public class TourHeaderDetailField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return null; //+++ this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), -1, TourHeader.kDescription, false);
+        return null; //+++ this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), -1, TourHeader.DESCRIPTION, false);
     }
 
 }

@@ -95,18 +95,18 @@ public class RefundGridScreen extends BookingArTrxGridScreen
         super.addListeners();
         
         this.setEditing(false);     // Can't change current rows
-        this.getMainRecord().getField(ArTrx.kTrxDate).setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kAmount).setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kComments).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.TRX_DATE).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.AMOUNT).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.COMMENTS).setEnabled(true);
         this.setAppending(true);    // CAN append
         this.getMainRecord().setOpenMode(DBConstants.OPEN_APPEND_ONLY); // This makes it possible
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_SUBMITTED);
-        this.getMainRecord().getField(ArTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_SUBMITTED);
+        this.getMainRecord().getField(ArTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
         
         this.getMainRecord().getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(false);    // Since I will be doing the updating
-        this.getMainRecord().addListener(new UpdateRefundAcctDetailHandler(this.getRecord(Booking.kBookingFile)));
+        this.getMainRecord().addListener(new UpdateRefundAcctDetailHandler(this.getRecord(Booking.BOOKING_FILE)));
     }
     /**
      * Process the command.

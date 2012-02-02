@@ -15,6 +15,8 @@ public class BaseRate extends FieldList
     implements BaseRateModel
 {
 
+    //public static final String ID = ID;
+
     public BaseRate()
     {
         super();

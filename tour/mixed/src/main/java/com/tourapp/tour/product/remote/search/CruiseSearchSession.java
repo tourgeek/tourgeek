@@ -97,11 +97,11 @@ public class CruiseSearchSession extends ProductSearchSession
     {
         super.addListeners(); 
         
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kClassID)).getReferenceRecord(this);
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID)).getReferenceRecord(this);
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), DBConstants.EQUALS, null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.kToCityID, this.getScreenRecord().getField(ProductScreenRecord.kToCityID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.TO_CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.TO_CITY_ID), DBConstants.EQUALS, null, true));
     }
     /**
      * Select the fields required for the grid screen.
@@ -140,13 +140,13 @@ public class CruiseSearchSession extends ProductSearchSession
         super.setScreenFields(properties);
         Record recProduct = this.getMainRecord();
         
-        this.addThisRecordFilter(properties, City.kCityFile, SearchConstants.LOCATION_TO, TransportProduct.kToCityID, ProductScreenRecord.kToCityID);
+        this.addThisRecordFilter(properties, City.CITY_FILE, SearchConstants.LOCATION_TO, TransportProduct.TO_CITY_ID, ProductScreenRecord.TO_CITY_ID);
         
         String strCruiseClass = (String)properties.get(SearchConstants.CRUISE_CLASS);
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).setString(strCruiseClass);
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).setString(strCruiseClass);
         
-        Record recProductControl = this.getRecord(ProductControl.kProductControlFile);
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).moveFieldToThis(recProductControl.getField(ProductControl.kCruiseRateID));
+        Record recProductControl = this.getRecord(ProductControl.PRODUCT_CONTROL_FILE);
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).moveFieldToThis(recProductControl.getField(ProductControl.CRUISE_RATE_ID));
     }
 
 }

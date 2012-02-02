@@ -82,15 +82,15 @@ public class ProductPricingGridScreen extends ProductDetailGridScreen
     {
         super.addListeners();
         // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).syncReference(this.getHeaderRecord());
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).syncReference(this.getHeaderRecord());
         // Sub file stuff
         FileListener subFileBehavior = new SubFileFilter(this.getHeaderRecord());
         this.getMainRecord().addListener(subFileBehavior);
-        this.getHeaderRecord().getField(Product.kID).addListener(new FieldReSelectHandler(this)); 
+        this.getHeaderRecord().getField(Product.ID).addListener(new FieldReSelectHandler(this)); 
         
-        this.getMainRecord().addListener(new CompareFileFilter(ProductPricing.kEndDate, this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kStartDate), FileFilter.GREATER_THAN_EQUAL, null, true));
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kStartDate).addListener(new FieldReSelectHandler(this));
-        if (Boolean.TRUE.toString().equalsIgnoreCase(this.getProperty(this.getScreenRecord().getField(ProductScreenRecord.kReadOnly).getFieldName())))
+        this.getMainRecord().addListener(new CompareFileFilter(ProductPricing.END_DATE, this.getScreenRecord().getField(ProductScreenRecord.START_DATE), FileFilter.GREATER_THAN_EQUAL, null, true));
+        this.getScreenRecord().getField(ProductScreenRecord.START_DATE).addListener(new FieldReSelectHandler(this));
+        if (Boolean.TRUE.toString().equalsIgnoreCase(this.getProperty(this.getScreenRecord().getField(ProductScreenRecord.READ_ONLY).getFieldName())))
         {
             this.setAppending(false);
             this.setEditing(false);
@@ -104,7 +104,7 @@ public class ProductPricingGridScreen extends ProductDetailGridScreen
     {
         ToolScreen screen = super.addToolbars();
         
-        this.getScreenRecord().getField(ProductScreenRecord.kStartDate).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.START_DATE).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
         
         return screen;
     }
@@ -113,10 +113,10 @@ public class ProductPricingGridScreen extends ProductDetailGridScreen
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ProductPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ProductPricing.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(ProductPricing.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

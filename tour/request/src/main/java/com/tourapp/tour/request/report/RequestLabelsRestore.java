@@ -57,20 +57,20 @@ public class RequestLabelsRestore extends RequestLabelsUpdate
     public void addListeners()
     {
         // DO NOT CALL INHERITED (my listeners are different)
-        this.getRecord(RequestHistory.kRequestHistoryFile).setKeyArea(RequestHistory.kHistReprintKey);
-        this.getRecord(RequestHistory.kRequestHistoryFile).addListener(new SubFileFilter(this.getScreenRecord().getField(RequestLabelsScreenRecord.kTrueField), RequestHistory.kHistReprint, null, -1, null, -1));
-        this.getRecord(RequestDetail.kRequestDetailFile).addListener(new SubFileFilter(this.getRecord(Request.kRequestFile)));
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).addListener(new SubFileFilter(this.getRecord(RequestHistory.kRequestHistoryFile)));
+        this.getRecord(RequestHistory.REQUEST_HISTORY_FILE).setKeyArea(RequestHistory.HIST_REPRINT_KEY);
+        this.getRecord(RequestHistory.REQUEST_HISTORY_FILE).addListener(new SubFileFilter(this.getScreenRecord().getField(RequestLabelsScreenRecord.TRUE_FIELD), RequestHistory.HIST_REPRINT, null, null, null, null));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(Request.REQUEST_FILE)));
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(RequestHistory.REQUEST_HISTORY_FILE)));
     }
     /**
      * Restore the marked history.
      */
     public void run()
     {
-        Record recRequest = this.getRecord(Request.kRequestFile);
-        Record recRequestDetail = this.getRecord(RequestDetail.kRequestDetailFile);
-        Record recRequestHistory = this.getRecord(RequestHistory.kRequestHistoryFile);
-        Record recRequestHistoryDetail = this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile);
+        Record recRequest = this.getRecord(Request.REQUEST_FILE);
+        Record recRequestDetail = this.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+        Record recRequestHistory = this.getRecord(RequestHistory.REQUEST_HISTORY_FILE);
+        Record recRequestHistoryDetail = this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE);
         
         try {
             recRequestHistory.close();
@@ -87,7 +87,7 @@ public class RequestLabelsRestore extends RequestLabelsUpdate
         
                 this.updateRequestDetail(recRequestDetail, recRequestHistoryDetail);
         
-                recRequestHistory.getField(RequestHistory.kHistReprint).setState(false);
+                recRequestHistory.getField(RequestHistory.HIST_REPRINT).setState(false);
                 recRequestHistory.set();
             }
         } catch (DBException ex) {

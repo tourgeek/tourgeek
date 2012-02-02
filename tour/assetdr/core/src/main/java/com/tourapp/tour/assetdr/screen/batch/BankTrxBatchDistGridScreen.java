@@ -89,9 +89,9 @@ public class BankTrxBatchDistGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kID).addListener(new FieldReSelectHandler(this));
-        this.getRecord(BankTrxBatchDist.kBankTrxBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kChangeBalance), BankTrxBatchDist.kAmount, false, true));
-        this.getScreenRecord().getField(BankTrxScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kEndBalance), this.getScreenRecord().getField(BankTrxScreenRecord.kChangeBalance), this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kAmount), true));
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.ID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(BankTrxBatchDist.BANK_TRX_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.CHANGE_BALANCE), BankTrxBatchDist.AMOUNT, false, true));
+        this.getScreenRecord().getField(BankTrxScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(BankTrxScreenRecord.END_BALANCE), this.getScreenRecord().getField(BankTrxScreenRecord.CHANGE_BALANCE), this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.AMOUNT), true));
     }
     /**
      * Add the screen fields.

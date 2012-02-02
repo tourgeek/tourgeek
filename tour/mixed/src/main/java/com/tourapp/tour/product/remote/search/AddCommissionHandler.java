@@ -66,18 +66,18 @@ public class AddCommissionHandler extends FieldListener
             if (recordOwner != null)
             {
                 double dCommission = 0.00;
-                Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
+                Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
                 if ((recBooking != null)
                     && ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)))
                 {
-                    dCommission = recBooking.getField(Booking.kStdCommission).getValue();
+                    dCommission = recBooking.getField(Booking.STD_COMMISSION).getValue();
                 }
                 else
                 {
-                    Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.kBookingControlFile);
+                    Record recBookingControl = (Record)recordOwner.getRecord(BookingControl.BOOKING_CONTROL_FILE);
                     if (recBookingControl == null)
                         recBookingControl = new BookingControl(recordOwner);
-                    dCommission = recBookingControl.getField(BookingControl.kAgencyComm).getValue();
+                    dCommission = recBookingControl.getField(BookingControl.AGENCY_COMM).getValue();
                 }
                 if (dCommission != 0.00)
                 {

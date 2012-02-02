@@ -58,7 +58,7 @@ public class CreditCardDistConverter extends McoDistConverter
      */
     public Record getDetailRecord()
     {
-        return (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(CreditCard.kCreditCardFile);
+        return (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(CreditCard.CREDIT_CARD_FILE);
     }
     /**
      * CreateDistRecord Method.

@@ -164,7 +164,7 @@ public class TransportationInventory extends Inventory
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(Inventory.kProductTypeID, ProductType.TRANSPORTATION_ID));
+        this.addListener(new SharedFileHandler(Inventory.PRODUCT_TYPE_ID, ProductType.TRANSPORTATION_ID));
     }
 
 }

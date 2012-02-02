@@ -89,11 +89,11 @@ public class PrPrtCheck extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        FileListener readSecond = new DisplayReadHandler(TimeTrx.kTimeEmpNo, this.getRecord(Employee.kEmployeeFile), Employee.kID);
-        this.getRecord(TimeTrx.kTimeTrxFile).addListener(readSecond);
+        FileListener readSecond = new DisplayReadHandler(TimeTrx.TIME_EMP_NO, this.getRecord(Employee.EMPLOYEE_FILE), Employee.ID);
+        this.getRecord(TimeTrx.TIME_TRX_FILE).addListener(readSecond);
         QueryRecord queryInfo = null;
-        CalcEmpTaxesHandler calcTaxes = new CalcEmpTaxesHandler(queryInfo, this.getRecord(Employee.kEmployeeFile), this.getRecord(Deduction.kDeductionFile), this.getRecord(TaxRate.kTaxRateFile), this.getRecord(EmployeeControl.kEmployeeControlFile));
-        this.getRecord(TimeTrx.kTimeTrxFile).addListener(calcTaxes);
+        CalcEmpTaxesHandler calcTaxes = new CalcEmpTaxesHandler(queryInfo, this.getRecord(Employee.EMPLOYEE_FILE), this.getRecord(Deduction.DEDUCTION_FILE), this.getRecord(TaxRate.TAX_RATE_FILE), this.getRecord(EmployeeControl.EMPLOYEE_CONTROL_FILE));
+        this.getRecord(TimeTrx.TIME_TRX_FILE).addListener(calcTaxes);
     }
     /**
      * SetupSFields Method.

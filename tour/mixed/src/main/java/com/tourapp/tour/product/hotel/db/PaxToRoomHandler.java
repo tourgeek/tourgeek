@@ -40,7 +40,7 @@ public class PaxToRoomHandler extends ReComputeFieldHandler
      * Constructor.
      * @param iTargetFieldSeq The target field sequence to recompute on field change.
      */
-    public PaxToRoomHandler(int iTargetFieldSeq)
+    public PaxToRoomHandler(String iTargetFieldSeq)
     {
         this();
         this.init(iTargetFieldSeq);
@@ -48,9 +48,9 @@ public class PaxToRoomHandler extends ReComputeFieldHandler
     /**
      * Initialize class fields.
      */
-    public void init(int iTargetFieldSeq)
+    public void init(String iTargetFieldSeq)
     {
-        super.init(null, iTargetFieldSeq, null);
+        super.init(null, -1, iTargetFieldSeq, null);
         this.setDisableTarget(true);    // Eliminate the echo back
     }
     /**
@@ -68,7 +68,7 @@ public class PaxToRoomHandler extends ReComputeFieldHandler
     public int getPaxInRoom()
     {
         Record recHotelPricing = ((BaseField)this.getOwner()).getRecord();
-        PaxCategory recPaxCategory = (PaxCategory)((ReferenceField)recHotelPricing.getField(HotelPricing.kPaxCategoryID)).getReferenceRecord();
+        PaxCategory recPaxCategory = (PaxCategory)((ReferenceField)recHotelPricing.getField(HotelPricing.PAX_CATEGORY_ID)).getReferenceRecord();
         if (recPaxCategory != null)
             return recPaxCategory.getPaxInRoom();
         return 1;

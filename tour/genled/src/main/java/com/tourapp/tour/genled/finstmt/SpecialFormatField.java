@@ -85,7 +85,7 @@ public class SpecialFormatField extends StringField
              if (m_recSpecialFormat.getRecordOwner() != null)
                 m_recSpecialFormat.getRecordOwner().removeRecord(m_recSpecialFormat);
         }
-        FieldConverter convert = new QueryConverter((Converter)converter, m_recSpecialFormat, SpecialFormat.kName, true);
+        FieldConverter convert = new QueryConverter((Converter)converter, m_recSpecialFormat, SpecialFormat.NAME, true);
         return createScreenComponent(ScreenModel.COMBO_BOX, itsLocation, targetScreen, convert, iDisplayFieldDesc, properties);
     }
 

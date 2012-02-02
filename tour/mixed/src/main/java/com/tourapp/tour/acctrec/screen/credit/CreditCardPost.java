@@ -98,25 +98,25 @@ public class CreditCardPost extends McoPost
     public void addListeners()
     {
         // Don't call super
-        Record recTrxStatusRef = ((ReferenceField)this.getMainRecord().getField(Trx.kTrxStatusID)).getReferenceRecord(); // Make sure this TrxStatus is different from the one I use for a key.
+        Record recTrxStatusRef = ((ReferenceField)this.getMainRecord().getField(Trx.TRX_STATUS_ID)).getReferenceRecord(); // Make sure this TrxStatus is different from the one I use for a key.
         this.removeRecord(recTrxStatusRef);
         
-        m_iTrxStatusEntered = ((TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile)).getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.ENTERED);
-        ((TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile)).getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.BATCH);
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.kTrxStatusFile)));
+        m_iTrxStatusEntered = ((TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE)).getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.ENTERED);
+        ((TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE)).getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.BATCH);
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.TRX_STATUS_FILE)));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kTotal), CreditCard.kAmtApply, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.TOTAL), CreditCard.AMT_APPLY, false, true));
         
-        CreditCardBatchDist recCreditCardBatchDist = (CreditCardBatchDist)this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile);
-        recCreditCardBatchDist.addListener(new SubFileFilter(this.getRecord(CreditCard.kCreditCardFile)));
-        recCreditCardBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), CreditCardBatchDist.kAmount, false, true));
+        CreditCardBatchDist recCreditCardBatchDist = (CreditCardBatchDist)this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE);
+        recCreditCardBatchDist.addListener(new SubFileFilter(this.getRecord(CreditCard.CREDIT_CARD_FILE)));
+        recCreditCardBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CreditCardBatchDist.AMOUNT, false, true));
                 
-        CreditCard recCreditCard = (CreditCard)this.getRecord(CreditCard.kCreditCardFile);
+        CreditCard recCreditCard = (CreditCard)this.getRecord(CreditCard.CREDIT_CARD_FILE);
         
-        Booking recBooking = (Booking)((ReferenceField)recCreditCard.getField(CreditCard.kBookingID)).getReferenceRecord(this);
-        recCreditCard.getField(CreditCard.kBookingID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
-        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.kArTrxFile);
+        Booking recBooking = (Booking)((ReferenceField)recCreditCard.getField(CreditCard.BOOKING_ID)).getReferenceRecord(this);
+        recCreditCard.getField(CreditCard.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         
         recCreditCard.close();
@@ -135,7 +135,7 @@ public class CreditCardPost extends McoPost
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(CreditCard.kCreditCardFile);
+        return (BaseTrx)this.getRecord(CreditCard.CREDIT_CARD_FILE);
     }
     /**
      * Return the distribution detail record.
@@ -143,7 +143,7 @@ public class CreditCardPost extends McoPost
      */
     public Record getDistRecord()
     {
-        return this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile);
+        return this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE);
     }
     /**
      * (Optionally) update this detail transaction.
@@ -154,7 +154,7 @@ public class CreditCardPost extends McoPost
         Record recDetail = this.getDetailRecord();
         try {
             recDetail.edit();
-            recDetail.getField(Mco.kTrxStatusID).setValue(m_iTrxStatusEntered);
+            recDetail.getField(Mco.TRX_STATUS_ID).setValue(m_iTrxStatusEntered);
         } catch (DBException ex)    {
             ex.printStackTrace();
             return false;
@@ -170,7 +170,7 @@ public class CreditCardPost extends McoPost
     public boolean postBaseTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
         // Step 2b - Post the transaction side of the distribution.
-        BaseField fldDrAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kCreditCardRecAccountID);
+        BaseField fldDrAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.CREDIT_CARD_REC_ACCOUNT_ID);
         Record recDetail = this.getDetailRecord();
         try {
             recDetail.writeAndRefresh();
@@ -178,7 +178,7 @@ public class CreditCardPost extends McoPost
             ex.printStackTrace();
             return false;
         }
-        double dAmount = recDetail.getField(Mco.kAmtApply).getValue();
+        double dAmount = recDetail.getField(Mco.AMT_APPLY).getValue();
         boolean bSuccess = recBaseTrx.onPostTrxDist(fldDrAccountID, dAmount, PostingType.TRX_POST);
         return bSuccess;
     }
@@ -190,11 +190,11 @@ public class CreditCardPost extends McoPost
      */
     public boolean postDistTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
-        BaseField fldDefAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kNonTourAccountID);
+        BaseField fldDefAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.NON_TOUR_ACCOUNT_ID);
         
         Record recBatchDetail = this.getDetailRecord();
-        double dLocalTotal = recBatchDetail.getField(Mco.kAmtApply).getValue();
-        String strComment = recBatchDetail.getField(Mco.kComments).toString();
+        double dLocalTotal = recBatchDetail.getField(Mco.AMT_APPLY).getValue();
+        String strComment = recBatchDetail.getField(Mco.COMMENTS).toString();
         
         return this.postDistTrx(recBaseTrx, dLocalTotal, strComment, fldDefAccountID);
     }

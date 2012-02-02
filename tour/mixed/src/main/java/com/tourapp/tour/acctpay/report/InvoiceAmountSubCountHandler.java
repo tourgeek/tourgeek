@@ -40,7 +40,7 @@ public class InvoiceAmountSubCountHandler extends SubCountHandler
     /**
      * Count a sub-field.
      */
-    public InvoiceAmountSubCountHandler(BaseField fieldMain, int ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF, boolean bResetOnBreak)
+    public InvoiceAmountSubCountHandler(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF, boolean bResetOnBreak)
     {
         this();
         this.init(fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, bResetOnBreak);
@@ -48,9 +48,9 @@ public class InvoiceAmountSubCountHandler extends SubCountHandler
     /**
      * Initialize class fields.
      */
-    public void init(BaseField fieldMain, int ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF, boolean bResetOnBreak)
+    public void init(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF, boolean bResetOnBreak)
     {
-        super.init(null, null, -1, fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, bResetOnBreak);
+        super.init(null, null, -1, fieldMain, -1, ifsToCount, bRecountOnSelect, bVerifyOnEOF, bResetOnBreak);
     }
     /**
      * Get the value to add (Overidden from SubCountHandler).
@@ -61,9 +61,9 @@ public class InvoiceAmountSubCountHandler extends SubCountHandler
     {
         double dMainValue = super.getFieldValue();
         Record recApTrx = this.getOwner();
-        Record recTrxStatus = ((ReferenceField)recApTrx.getField(ApTrx.kTrxStatusID)).getReference();
+        Record recTrxStatus = ((ReferenceField)recApTrx.getField(ApTrx.TRX_STATUS_ID)).getReference();
         if (recTrxStatus != null)
-            if (recTrxStatus.getField(TrxStatus.kStatusCode).toString().indexOf(ApTrx.INVOICE) == -1)
+            if (recTrxStatus.getField(TrxStatus.STATUS_CODE).toString().indexOf(ApTrx.INVOICE) == -1)
                 dMainValue = 0; // Don't total non-invoice types
         return dMainValue;
     }

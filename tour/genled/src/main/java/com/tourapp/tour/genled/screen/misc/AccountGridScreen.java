@@ -79,11 +79,11 @@ public class AccountGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(Account.kAccountFile).setKeyArea(Account.kAccountNoKey);
-        this.getScreenRecord().getField(AccountScreenRecord.kAccountKeyArea).addListener(new SortOrderHandler(this));
+        this.getRecord(Account.ACCOUNT_FILE).setKeyArea(Account.ACCOUNT_NO_KEY);
+        this.getScreenRecord().getField(AccountScreenRecord.ACCOUNT_KEY_AREA).addListener(new SortOrderHandler(this));
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Account.kDescription, this.getScreenRecord().getField(AccountScreenRecord.kAcctNameSort)));
-        this.getScreenRecord().getField(AccountScreenRecord.kAcctNameSort).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Account.DESCRIPTION, this.getScreenRecord().getField(AccountScreenRecord.ACCT_NAME_SORT)));
+        this.getScreenRecord().getField(AccountScreenRecord.ACCT_NAME_SORT).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add the screen fields.
@@ -108,7 +108,7 @@ public class AccountGridScreen extends GridScreen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
-        this.getScreenRecord().getField(AccountScreenRecord.kAcctNameSort).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(AccountScreenRecord.ACCT_NAME_SORT).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * SetupSFields Method.

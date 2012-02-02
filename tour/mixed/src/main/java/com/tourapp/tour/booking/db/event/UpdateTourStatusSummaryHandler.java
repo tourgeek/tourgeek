@@ -59,7 +59,7 @@ public class UpdateTourStatusSummaryHandler extends FieldListener
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
         Record recTour = this.getOwner().getRecord();
-        if (recTour.getField(Tour.kManualTourStatus).getState() == false)
+        if (recTour.getField(Tour.MANUAL_TOUR_STATUS).getState() == false)
         {
             int iStatus = BaseDataStatus.NO_STATUS;
             String strKey = ((TourStatusSummaryField)this.getOwner()).getHighStatusKey();
@@ -69,9 +69,9 @@ public class UpdateTourStatusSummaryHandler extends FieldListener
                 iStatus = ((TourStatusSummaryField)this.getOwner()).getStatusFromProperty(strValue);
             }
             if (iStatus == BaseDataStatus.OKAY)
-                if (this.getOwner().getRecord().getField(Tour.kOrderComponents).getState() == false)
+                if (this.getOwner().getRecord().getField(Tour.ORDER_COMPONENTS).getState() == false)
                     iStatus = BaseDataStatus.DATA_VALID;
-            if (this.getOwner().getRecord().getField(Tour.kCancelled).getState() == true)
+            if (this.getOwner().getRecord().getField(Tour.CANCELLED).getState() == true)
             {
                 TourStatusSummaryField field = (TourStatusSummaryField)this.getOwner();
                 Map<String,Object> map = field.getProperties();
@@ -88,9 +88,9 @@ public class UpdateTourStatusSummaryHandler extends FieldListener
                 if (bAllCancelled)
                     iStatus = BaseDataStatus.CANCELED;
             }
-            recTour.getField(Tour.kTourStatusID).setValue(iStatus,  bDisplayOption, iMoveMode);
+            recTour.getField(Tour.TOUR_STATUS_ID).setValue(iStatus,  bDisplayOption, iMoveMode);
             if (iMoveMode == DBConstants.INIT_MOVE)
-                recTour.getField(Tour.kTourStatusID).setModified(false);
+                recTour.getField(Tour.TOUR_STATUS_ID).setModified(false);
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }

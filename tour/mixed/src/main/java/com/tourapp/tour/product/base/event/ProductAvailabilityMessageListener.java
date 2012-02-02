@@ -85,7 +85,7 @@ public class ProductAvailabilityMessageListener extends AutoRecordMessageListene
     public void fixMessageMap(BaseMessage message)
     {
         message.put(DBParams.FIELD, MULTIPLE_FIELDS);
-        String strAvailStatusParam = m_record.getField(Product.kDisplayInventoryStatusID).getFieldName();
+        String strAvailStatusParam = m_record.getField(Product.DISPLAY_INVENTORY_STATUS_ID).getFieldName();
         Integer intMessageStatus = (Integer)message.get(BaseDataStatus.DATA_STATUS);
         int iMessageStatus = BaseStatus.VALID;
         if (intMessageStatus != null)

@@ -8,6 +8,11 @@ import org.jbundle.model.main.db.base.*;
 
 public interface BaseProductStatusModel extends BaseStatusModel
 {
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String ICON = ICON;
+    public static final String CODE = "Code";
     public static final String NO_STATUS_CODE = "NS";
     public static final String PROPOSAL_CODE = "PR";
     public static final String ACCEPTED_CODE = "RQ";

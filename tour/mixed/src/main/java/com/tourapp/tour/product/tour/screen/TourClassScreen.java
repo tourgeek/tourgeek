@@ -84,21 +84,21 @@ public class TourClassScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(TourClass.kAirRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kAirRateID)));
-        this.getMainRecord().getField(TourClass.kAirClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kAirClassID)));
-        this.getMainRecord().getField(TourClass.kHotelRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kHotelRateID)));
-        this.getMainRecord().getField(TourClass.kHotelClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kHotelClassID)));
-        this.getMainRecord().getField(TourClass.kLandRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kLandRateID)));
-        this.getMainRecord().getField(TourClass.kLandClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kLandClassID)));
-        this.getMainRecord().getField(TourClass.kPMCCutoff).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kPMCCutoff)));
-        this.getMainRecord().getField(TourClass.kCarRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kCarRateID)));
-        this.getMainRecord().getField(TourClass.kCarClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kCarClassID)));
-        this.getMainRecord().getField(TourClass.kTransportationRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kTransportationRateID)));
-        this.getMainRecord().getField(TourClass.kTransportationClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kTransportationClassID)));
-        this.getMainRecord().getField(TourClass.kCruiseRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kCruiseRateID)));
-        this.getMainRecord().getField(TourClass.kCruiseClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kCruiseClassID)));
-        this.getMainRecord().getField(TourClass.kItemRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kItemRateID)));
-        this.getMainRecord().getField(TourClass.kItemClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kItemClassID)));
+        this.getMainRecord().getField(TourClass.AIR_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.AIR_RATE_ID)));
+        this.getMainRecord().getField(TourClass.AIR_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.AIR_CLASS_ID)));
+        this.getMainRecord().getField(TourClass.HOTEL_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.HOTEL_RATE_ID)));
+        this.getMainRecord().getField(TourClass.HOTEL_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.HOTEL_CLASS_ID)));
+        this.getMainRecord().getField(TourClass.LAND_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.LAND_RATE_ID)));
+        this.getMainRecord().getField(TourClass.LAND_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.LAND_CLASS_ID)));
+        this.getMainRecord().getField(TourClass.PMC_CUTOFF).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.PMC_CUTOFF)));
+        this.getMainRecord().getField(TourClass.CAR_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.CAR_RATE_ID)));
+        this.getMainRecord().getField(TourClass.CAR_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.CAR_CLASS_ID)));
+        this.getMainRecord().getField(TourClass.TRANSPORTATION_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.TRANSPORTATION_RATE_ID)));
+        this.getMainRecord().getField(TourClass.TRANSPORTATION_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.TRANSPORTATION_CLASS_ID)));
+        this.getMainRecord().getField(TourClass.CRUISE_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.CRUISE_RATE_ID)));
+        this.getMainRecord().getField(TourClass.CRUISE_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.CRUISE_CLASS_ID)));
+        this.getMainRecord().getField(TourClass.ITEM_RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.ITEM_RATE_ID)));
+        this.getMainRecord().getField(TourClass.ITEM_CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.ITEM_CLASS_ID)));
     }
     /**
      * Add button(s) to the toolbar.

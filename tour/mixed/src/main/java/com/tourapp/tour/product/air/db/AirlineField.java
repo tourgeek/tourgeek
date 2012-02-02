@@ -74,7 +74,7 @@ public class AirlineField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Airline.kAirlineCodeKey, Airline.kDescription, true);
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Airline.AIRLINE_CODE_KEY, Airline.DESCRIPTION, true);
     }
 
 }

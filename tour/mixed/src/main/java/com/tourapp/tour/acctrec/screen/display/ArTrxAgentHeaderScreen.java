@@ -66,8 +66,8 @@ public class ArTrxAgentHeaderScreen extends HeaderScreen
     {
         super.addListeners();
         this.setEnabled(false);
-        this.getRecord(Profile.kProfileFile).getField(Profile.kProfileCode).setEnabled(true);
-        this.getRecord(ArTrxAgentScreenRecord.kArTrxAgentScreenRecordFile).getField(ArTrxAgentScreenRecord.kProfileID).setEnabled(true);
+        this.getRecord(Profile.PROFILE_FILE).getField(Profile.PROFILE_CODE).setEnabled(true);
+        this.getScreenRecord().getField(ArTrxAgentScreenRecord.PROFILE_ID).setEnabled(true);
     }
     /**
      * SetupSFields Method.
@@ -76,8 +76,8 @@ public class ArTrxAgentHeaderScreen extends HeaderScreen
     {
         this.getRecord(Profile.kProfileFile).getField(Profile.kProfileCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Profile.kProfileFile).getField(Profile.kGenericName).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        BaseField fldProfile = this.getRecord(ArTrxAgentScreenRecord.kArTrxAgentScreenRecordFile).getField(ArTrxAgentScreenRecord.kProfileID);
-        Record recProfile = this.getRecord(Profile.kProfileFile);
+        BaseField fldProfile = this.getScreenRecord().getField(ArTrxAgentScreenRecord.PROFILE_ID);
+        Record recProfile = this.getRecord(Profile.PROFILE_FILE);
         fldProfile.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, fldProfile, ScreenConstants.DEFAULT_DISPLAY, recProfile, -1, -2, false, false);
         this.getRecord(ArTrxAgentScreenRecord.kArTrxAgentScreenRecordFile).getField(ArTrxAgentScreenRecord.kBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
     }

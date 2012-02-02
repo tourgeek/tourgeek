@@ -164,7 +164,7 @@ public class LandInventory extends Inventory
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(Inventory.kProductTypeID, ProductType.LAND_ID));
+        this.addListener(new SharedFileHandler(Inventory.PRODUCT_TYPE_ID, ProductType.LAND_ID));
     }
 
 }

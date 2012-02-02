@@ -215,7 +215,7 @@ public class AcctDetail extends BaseTrx
     {
         super.addListeners();
         // Make sure amount is added on merge
-        this.getField(AcctDetail.kAmountLocal).addListener(new MergeDataAddHandler(null));
+        this.getField(AcctDetail.AMOUNT_LOCAL).addListener(new MergeDataAddHandler(null));
     }
     /**
      * AddMasterListeners Method.
@@ -237,13 +237,13 @@ public class AcctDetail extends BaseTrx
         // DO NOT call inherited!
         try   {
             recAcctDetailDist.addNew();
-            recAcctDetailDist.getField(AcctDetailDist.kAcctDetailID).moveFieldToThis(this.getField(AcctDetail.kID));
-            recAcctDetailDist.getField(AcctDetailDist.kTrxID).moveFieldToThis(this.getField(AcctDetail.kID));  // No audit trail needed
-            recAcctDetailDist.getField(AcctDetailDist.kTrxDescID).moveFieldToThis(((ReferenceField)this.getField(AcctDetail.kTrxTypeID)).getReference().getField(TransactionType.kSourceTrxDescID));
-            recAcctDetailDist.getField(AcctDetailDist.kTrxDate).moveFieldToThis(this.getField(AcctDetail.kTrxDate));
-            recAcctDetailDist.getField(AcctDetailDist.kAmount).moveFieldToThis(this.getField(AcctDetail.kAmountLocal));
-            recAcctDetailDist.getField(AcctDetailDist.kTrxEntry).moveFieldToThis(this.getField(AcctDetail.kTrxEntry));
-            recAcctDetailDist.getField(AcctDetailDist.kUserID).setValue(((UserField)recAcctDetailDist.getField(AcctDetailDist.kUserID)).getUserID());
+            recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_ID).moveFieldToThis(this.getField(AcctDetail.ID));
+            recAcctDetailDist.getField(AcctDetailDist.TRX_ID).moveFieldToThis(this.getField(AcctDetail.ID));  // No audit trail needed
+            recAcctDetailDist.getField(AcctDetailDist.TRX_DESC_ID).moveFieldToThis(((ReferenceField)this.getField(AcctDetail.TRX_TYPE_ID)).getReference().getField(TransactionType.SOURCE_TRX_DESC_ID));
+            recAcctDetailDist.getField(AcctDetailDist.TRX_DATE).moveFieldToThis(this.getField(AcctDetail.TRX_DATE));
+            recAcctDetailDist.getField(AcctDetailDist.AMOUNT).moveFieldToThis(this.getField(AcctDetail.AMOUNT_LOCAL));
+            recAcctDetailDist.getField(AcctDetailDist.TRX_ENTRY).moveFieldToThis(this.getField(AcctDetail.TRX_ENTRY));
+            recAcctDetailDist.getField(AcctDetailDist.USER_ID).setValue(((UserField)recAcctDetailDist.getField(AcctDetailDist.USER_ID)).getUserID());
             recAcctDetailDist.add();
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -258,26 +258,26 @@ public class AcctDetail extends BaseTrx
     {
         int iOpenMode = this.getOpenMode();
         try   {
-            this.setKeyArea(AcctDetail.kAccountIDKey);
-            this.getField(AcctDetail.kAccountID).moveFieldToThis(accountID);
-            ((DateTimeField)this.getField(AcctDetail.kTrxDate)).setDateTime(dateTrx, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-            this.getField(AcctDetail.kTrxTypeID).moveFieldToThis(recTrxType.getField(TransactionType.kID));
-            ((DateTimeField)this.getField(AcctDetail.kTrxEntry)).setDateTime(dateTrxEntry, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.setKeyArea(AcctDetail.ACCOUNT_ID_KEY);
+            this.getField(AcctDetail.ACCOUNT_ID).moveFieldToThis(accountID);
+            ((DateTimeField)this.getField(AcctDetail.TRX_DATE)).setDateTime(dateTrx, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.getField(AcctDetail.TRX_TYPE_ID).moveFieldToThis(recTrxType.getField(TransactionType.ID));
+            ((DateTimeField)this.getField(AcctDetail.TRX_ENTRY)).setDateTime(dateTrxEntry, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
             boolean bSuccess = this.seek("=");
             this.setOpenMode(iOpenMode & ~DBConstants.OPEN_READ_ONLY);  //Often this record comes from a display which is read only
             if (!bSuccess)
             {
                 this.addNew();
-                this.getField(AcctDetail.kAccountID).moveFieldToThis(accountID);
-                ((DateField)this.getField(AcctDetail.kTrxDate)).setDateTime(dateTrx, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-                ((DateField)this.getField(AcctDetail.kTrxEntry)).setDateTime(dateTrxEntry, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-                this.getField(AcctDetail.kTrxTypeID).moveFieldToThis(recTrxType.getField(TransactionType.kID));
-                this.getField(AcctDetail.kAmountLocal).setValue(amount);
-                this.getField(AcctDetail.kSource).moveFieldToThis(recTrxType.getField(TransactionType.kSystemCode));
-                if (this.getField(AcctDetail.kSource).isNull())
-                    this.getField(AcctDetail.kSource).moveFieldToThis(recTrxType.getField(TransactionType.kSystemDesc));
-                this.getField(AcctDetail.kComments).moveFieldToThis(recTrxType.getField(TransactionType.kGroupDesc));
+                this.getField(AcctDetail.ACCOUNT_ID).moveFieldToThis(accountID);
+                ((DateField)this.getField(AcctDetail.TRX_DATE)).setDateTime(dateTrx, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                ((DateField)this.getField(AcctDetail.TRX_ENTRY)).setDateTime(dateTrxEntry, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                this.getField(AcctDetail.TRX_TYPE_ID).moveFieldToThis(recTrxType.getField(TransactionType.ID));
+                this.getField(AcctDetail.AMOUNT_LOCAL).setValue(amount);
+                this.getField(AcctDetail.SOURCE).moveFieldToThis(recTrxType.getField(TransactionType.SYSTEM_CODE));
+                if (this.getField(AcctDetail.SOURCE).isNull())
+                    this.getField(AcctDetail.SOURCE).moveFieldToThis(recTrxType.getField(TransactionType.SYSTEM_DESC));
+                this.getField(AcctDetail.COMMENTS).moveFieldToThis(recTrxType.getField(TransactionType.GROUP_DESC));
                 this.add();
                 Object bookmark = this.getLastModified(DBConstants.BOOKMARK_HANDLE);
                 this.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
@@ -286,9 +286,9 @@ public class AcctDetail extends BaseTrx
             {
                 this.edit();
             // Add code to re-try if locked+++
-                double dNewAmount = this.getField(AcctDetail.kAmountLocal).getValue();
+                double dNewAmount = this.getField(AcctDetail.AMOUNT_LOCAL).getValue();
                 dNewAmount = dNewAmount + amount;
-                this.getField(AcctDetail.kAmountLocal).setValue(dNewAmount);
+                this.getField(AcctDetail.AMOUNT_LOCAL).setValue(dNewAmount);
                 this.set();
             }
         } catch (DBException ex)    {

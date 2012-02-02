@@ -220,7 +220,7 @@ public class HotelMealPricing extends ProductPricing
         FileListener listener = null;
         try   {
             this.close();
-            this.setKeyArea(HotelMealPricing.kHotelIDKey);
+            this.setKeyArea(HotelMealPricing.HOTEL_ID_KEY);
             this.addListener(listener = new SubCurrentFilter(true, false));
             while (this.hasNext())
             {   // Loop until found or not

@@ -31,7 +31,9 @@ public class TrxStatusScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String TRX_SYSTEM_ID = "TrxSystemID";
     public static final int kTrxSystemID = kScreenRecordLastField + 1;
+    public static final String TRX_DESC_ID = "TrxDescID";
     public static final int kTrxDescID = kTrxSystemID + 1;
     public static final int kTrxStatusScreenRecordLastField = kTrxDescID;
     public static final int kTrxStatusScreenRecordFields = kTrxDescID - DBConstants.MAIN_FIELD + 1;

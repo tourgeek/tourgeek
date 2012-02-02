@@ -65,7 +65,7 @@ public class VendorSelectCheckmark extends CheckConverter
         int iErrorCode = super.setState(bState, bDisplayOption, iMoveMode);
         if (iErrorCode == DBConstants.NORMAL_RETURN)
             if (bState == true) if (this.getState() == false)
-                ((BaseField)this.getField()).moveFieldToThis(((BaseField)this.getField()).getRecord().getField(ApTrx.kInvoiceBalance));
+                ((BaseField)this.getField()).moveFieldToThis(((BaseField)this.getField()).getRecord().getField(ApTrx.INVOICE_BALANCE));
         return iErrorCode;
     }
 

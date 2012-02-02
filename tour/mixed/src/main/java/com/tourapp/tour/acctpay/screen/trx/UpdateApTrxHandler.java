@@ -81,13 +81,13 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
     public void addDetailTrx(TransactionType recTransactionType, AcctDetailDist recAcctDetailDist, AcctDetail recAcctDetail, Period recPeriod, double dCurrentBalance)
     {
         Record recApTrx = this.getOwner();
-        double dAmount = this.getTrxAmount(recTransactionType.getField(TransactionType.kTypicalBalance));
-        if (recTransactionType.getField(TransactionType.kSourcePreferredSign).getString().equals(PreferredSignField.NEGATIVE))
+        double dAmount = this.getTrxAmount(recTransactionType.getField(TransactionType.TYPICAL_BALANCE));
+        if (recTransactionType.getField(TransactionType.SOURCE_PREFERRED_SIGN).getString().equals(PreferredSignField.NEGATIVE))
             dAmount = -dAmount;
         ReferenceField fldAccount = null;
-        if (recTransactionType.getField(TransactionType.kTypicalBalance).getString().equals(Account.DEBIT))
+        if (recTransactionType.getField(TransactionType.TYPICAL_BALANCE).getString().equals(Account.DEBIT))
             fldAccount = (ReferenceField)this.getDrAccount();
-        else if (recTransactionType.getField(TransactionType.kTypicalBalance).getString().equals(Account.CREDIT))
+        else if (recTransactionType.getField(TransactionType.TYPICAL_BALANCE).getString().equals(Account.CREDIT))
         {
             fldAccount = (ReferenceField)this.getCrAccount();
             dAmount = -dAmount;
@@ -101,7 +101,7 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
         dAmount = dAmount - dCurrentBalance;
         DateTimeField fldTrxDate = (DateTimeField)this.getTrxDate();
         DateTimeField fldEntryDate = null;  // Now
-        BaseField fldTrxID = recApTrx.getField(ApTrx.kID);
+        BaseField fldTrxID = recApTrx.getField(ApTrx.ID);
         String strUserID = ((BaseApplication)this.getOwner().getRecordOwner().getTask().getApplication()).getUserID();
         if (strUserID == null)
             strUserID = "0";    // No user/System user
@@ -142,11 +142,11 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
     {
         // ApTrx->Tour->TourHeader->ProductCat P/P  vs  A/R
         Record recApTrx = this.getOwner();
-        if (recApTrx.getField(ApTrx.kTourID).isNull())
+        if (recApTrx.getField(ApTrx.TOUR_ID).isNull())
             return null;    // No tour
-        Tour recTour = (Tour)((ReferenceField)recApTrx.getField(ApTrx.kTourID)).getReference();
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
-        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.kProductCatID)).getReference();
+        Tour recTour = (Tour)((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference();
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
+        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
         return recProductCategory;
     }
     /**
@@ -158,14 +158,14 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
     {
         Record recApTrx = this.getOwner();
         double dAmountUSD = 0;
-        Vendor recVendor = (Vendor)((ReferenceField)recApTrx.getField(ApTrx.kVendorID)).getReference();
+        Vendor recVendor = (Vendor)((ReferenceField)recApTrx.getField(ApTrx.VENDOR_ID)).getReference();
         Currencys recCurrencys = null;
         if (recVendor != null)
-            recCurrencys = (Currencys)((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReference();
+            recCurrencys = (Currencys)((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReference();
         double dExchange = 1;
         if (recCurrencys != null)
-            dExchange = recCurrencys.getField(Currencys.kLastRate).getValue();
-        double dAmount = recApTrx.getField(ApTrx.kInvoiceAmount).getValue();
+            dExchange = recCurrencys.getField(Currencys.LAST_RATE).getValue();
+        double dAmount = recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue();
         dAmountUSD = (Math.floor(dAmount * dExchange * 100 + 0.5)) / 100;
         return dAmountUSD;
     }
@@ -177,7 +177,7 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
         Record recApControl = null;
         RecordOwner recordOwner = this.getOwner().findRecordOwner();
         if (recordOwner != null)
-            recApControl = (Record)recordOwner.getRecord(ApControl.kApControlFile);
+            recApControl = (Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE);
         if (recApControl == null)
         {
             recApControl = m_recApControl = new ApControl(recordOwner);
@@ -199,7 +199,7 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
      */
     public void doValidRecord(boolean bDisplayOption)
     {
-        m_iOrigTrxStatusID = (int)this.getOwner().getField(ApTrx.kTrxStatusID).getValue();
+        m_iOrigTrxStatusID = (int)this.getOwner().getField(ApTrx.TRX_STATUS_ID).getValue();
         super.doValidRecord(bDisplayOption);
     }
     /**
@@ -207,7 +207,7 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
      */
     public int getTrxStatusID(String strTrxStatus)
     {
-        return this.getTrxStatus().getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, strTrxStatus);
+        return this.getTrxStatus().getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, strTrxStatus);
     }
 
 }

@@ -77,7 +77,7 @@ public class AffiliationGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        this.getMainRecord().setKeyArea(Affiliation.kDescriptionKey);
+        this.getMainRecord().setKeyArea(Affiliation.DESCRIPTION_KEY);
         this.getRecord(Affiliation.kAffiliationFile).getField(Affiliation.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Affiliation.kAffiliationFile).getField(Affiliation.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }

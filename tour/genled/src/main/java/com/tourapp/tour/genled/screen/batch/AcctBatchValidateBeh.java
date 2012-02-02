@@ -84,13 +84,13 @@ public class AcctBatchValidateBeh extends FileListener
                 task = this.getOwner().getRecordOwner().getTask();
             if (task == null)
                 task = BaseApplet.getSharedInstance();
-            if (this.getOwner().getField(AcctBatchDetail.kAccountID).isNull())
+            if (this.getOwner().getField(AcctBatchDetail.ACCOUNT_ID).isNull())
             {
                 String strError = "You must enter an Account number";
                 strError = ((BaseApplication)task.getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strError);
                 return task.setLastError(strError);
             }
-            if (this.getOwner().getField(AcctBatchDetail.kAccountID).isNull())
+            if (this.getOwner().getField(AcctBatchDetail.ACCOUNT_ID).isNull())
             {
                 String strError = "You must enter a non-zero amount";
                 strError = ((BaseApplication)task.getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strError);
@@ -99,14 +99,14 @@ public class AcctBatchValidateBeh extends FileListener
         }
         if (iChangeType == DBConstants.AFTER_ADD_TYPE)
         {
-            Record recAccount = ((ReferenceField)this.getOwner().getField(AcctBatchDetail.kAccountID)).getReference();
+            Record recAccount = ((ReferenceField)this.getOwner().getField(AcctBatchDetail.ACCOUNT_ID)).getReference();
             if ((recAccount == null) || (recAccount.getEditMode() != Constants.EDIT_CURRENT))
                 return iErrorCode;
-            if (recAccount.getField(Account.kCounterAccountID).getState())
+            if (recAccount.getField(Account.COUNTER_ACCOUNT_ID).getState())
             {
                 return ((AcctBatchDetail)this.getOwner()).onCounterBalance(recAccount);
             }
-            else if (!recAccount.getField(Account.kAutoDistID).isNull())
+            else if (!recAccount.getField(Account.AUTO_DIST_ID).isNull())
             {
                 return ((AcctBatchDetail)this.getOwner()).onAutoDist(recAccount);
             }

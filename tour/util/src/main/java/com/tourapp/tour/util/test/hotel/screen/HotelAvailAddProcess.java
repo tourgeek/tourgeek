@@ -67,8 +67,8 @@ public class HotelAvailAddProcess extends BaseProcess
         try {
             recHotelAvail.addNew();
             
-            recHotelAvail.getField(HotelAvail.kAmountBeforeTax).setValue(Math.random());
-            recHotelAvail.getField(HotelAvail.kAmountAfterTax).setValue(iCount);
+            recHotelAvail.getField(HotelAvail.AMOUNT_BEFORE_TAX).setValue(Math.random());
+            recHotelAvail.getField(HotelAvail.AMOUNT_AFTER_TAX).setValue(iCount);
             
             recHotelAvail.add();
         } catch (DBException e) {

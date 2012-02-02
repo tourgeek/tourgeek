@@ -66,7 +66,7 @@ public class CarClassSelect extends CarClassField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), CarClass.kDescriptionKey, CarClass.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), CarClass.DESCRIPTION_KEY, CarClass.DESCRIPTION, true, true);
     }
 
 }

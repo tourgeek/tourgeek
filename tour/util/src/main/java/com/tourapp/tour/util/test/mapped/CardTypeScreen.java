@@ -74,7 +74,7 @@ public class CardTypeScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(OTACode.kNameKey);
+        this.getMainRecord().setKeyArea(OTACode.NAME_KEY);
     }
 
 }

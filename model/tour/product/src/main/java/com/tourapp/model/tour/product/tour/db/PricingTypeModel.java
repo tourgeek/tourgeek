@@ -8,7 +8,12 @@ import org.jbundle.model.db.*;
 
 public interface PricingTypeModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String DESCRIPTION = "Description";
     public static final String PRICING_CODES = "PricingCodes";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final int OPTION_PRICING = 1;
     public static final int COMPONENT_PRICING = 2;
     public static final int COMPONENT_COST_PRICING = 4;

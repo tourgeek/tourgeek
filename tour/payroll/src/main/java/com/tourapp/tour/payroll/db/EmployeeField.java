@@ -75,7 +75,7 @@ public class EmployeeField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, null, iDisplayFieldDesc, this.makeReferenceRecord(), Employee.kFirstNameKey, Employee.kFirstName, false, true);
+        return this.setupTableLookup(itsLocation, targetScreen, null, iDisplayFieldDesc, this.makeReferenceRecord(), Employee.FIRST_NAME_KEY, Employee.FIRST_NAME, false, true);
     }
 
 }

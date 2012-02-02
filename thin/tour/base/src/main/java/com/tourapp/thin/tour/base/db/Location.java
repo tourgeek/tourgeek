@@ -15,6 +15,8 @@ public class Location extends FieldList
     implements LocationModel
 {
 
+    //public static final String ID = ID;
+
     public Location()
     {
         super();

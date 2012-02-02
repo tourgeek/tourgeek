@@ -16,6 +16,7 @@ public class LinkTrx extends BaseTrx
     implements LinkTrxModel
 {
 
+
     public LinkTrx()
     {
         super();

@@ -16,6 +16,14 @@ public class Booking extends CustSale
     implements BookingModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    public static final String BOOKING_DATE = CUST_SALE_DATE;
+    public static final String EMPLOYEE_ID = CUST_SALE_AGENT;
+    public static final String PROFILE_ID = CUST_SALE_CUST_ID;
+    public static final String PROFILE_CODE = CUST_SALE_CUST_NO;
+
     public Booking()
     {
         super();

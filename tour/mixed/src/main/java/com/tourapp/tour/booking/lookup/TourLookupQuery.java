@@ -88,18 +88,18 @@ public class TourLookupQuery extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Tour.kTourFile, Tour.kID).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kDescription).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kDepartureDate).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kTourStatusID).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kID).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kDescription).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kTourType).setSelected(true);
-        this.getField(TourHeader.kTourHeaderFile, TourHeader.kCode).setSelected(true);
-        this.getField(Inventory.kInventoryFile, Inventory.kBlocked).setSelected(true);
-        this.getField(Inventory.kInventoryFile, Inventory.kUsed).setSelected(true);
-        this.getField(Inventory.kInventoryFile, Inventory.kAvailable).setSelected(true);
-        this.getField(Inventory.kInventoryFile, Inventory.kOversell).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.ID).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.DESCRIPTION).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.DEPARTURE_DATE).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.TOUR_STATUS_ID).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.ID).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.DESCRIPTION).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.TOUR_TYPE).setSelected(true);
+        this.getField(TourHeader.TOUR_HEADER_FILE, TourHeader.CODE).setSelected(true);
+        this.getField(Inventory.INVENTORY_FILE, Inventory.BLOCKED).setSelected(true);
+        this.getField(Inventory.INVENTORY_FILE, Inventory.USED).setSelected(true);
+        this.getField(Inventory.INVENTORY_FILE, Inventory.AVAILABLE).setSelected(true);
+        this.getField(Inventory.INVENTORY_FILE, Inventory.OVERSELL).setSelected(true);
     }
     /**
      * Setup this key area.
@@ -110,7 +110,7 @@ public class TourLookupQuery extends QueryRecord
         if (iKeyArea == DBConstants.MAIN_KEY_AREA)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(this.getField(Tour.kTourFile, Tour.kID), DBConstants.ASCENDING);
+            keyArea.addKeyField(this.getField(Tour.TOUR_FILE, Tour.ID), DBConstants.ASCENDING);
         }
         return keyArea;
     }
@@ -119,28 +119,28 @@ public class TourLookupQuery extends QueryRecord
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Tour.kTourFile), this.getRecord(TourHeader.kTourHeaderFile), Tour.kTourHeaderID, TourHeader.kID);
-        TableLink link = new TableLink(this, DBConstants.LEFT_OUTER, this.getRecord(Tour.kTourFile), this.getRecord(Inventory.kInventoryFile));
-        this.getRecord(Inventory.kInventoryFile).setKeyArea(Inventory.kInvDateKey);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Tour.TOUR_FILE), this.getRecord(TourHeader.TOUR_HEADER_FILE), Tour.TOUR_HEADER_ID, TourHeader.ID);
+        TableLink link = new TableLink(this, DBConstants.LEFT_OUTER, this.getRecord(Tour.TOUR_FILE), this.getRecord(Inventory.INVENTORY_FILE));
+        this.getRecord(Inventory.INVENTORY_FILE).setKeyArea(Inventory.INV_DATE_KEY);
         Record recProductType = new ProductType(this.findRecordOwner());
-        recProductType.setKeyArea(ProductType.kCodeKey);
-        recProductType.getField(ProductType.kCode).setString(ProductType.TOUR_CODE);
+        recProductType.setKeyArea(ProductType.CODE_KEY);
+        recProductType.getField(ProductType.CODE).setString(ProductType.TOUR_CODE);
         try {
             recProductType.seek("=");
-            link.addLink(recProductType.getCounterField().toString(), Inventory.kProductTypeID);
+            link.addLink(recProductType.getCounterField().toString(), Inventory.PRODUCT_TYPE_ID);
         } catch (DBException ex)    {
             ex.printStackTrace();
         } finally {
             recProductType.free();
         }
-        link.addLink(Tour.kTourHeaderID, Inventory.kProductID);
-        link.addLink("0", Inventory.kRateID);
-        link.addLink("0", Inventory.kClassID);
-        link.addLink("0", Inventory.kOtherID);
-        link.addLink(Tour.kDepartureDate, Inventory.kInvDate);
-        this.getRecord(Inventory.kInventoryFile).getField(Inventory.kBlocked).removeListener(this.getRecord(Inventory.kInventoryFile).getField(Inventory.kBlocked).getListener(InitOnceFieldHandler.class.getName()), true);
-        this.getRecord(Inventory.kInventoryFile).getField(Inventory.kUsed).removeListener(this.getRecord(Inventory.kInventoryFile).getField(Inventory.kUsed).getListener(InitOnceFieldHandler.class.getName()), true);
-        this.getRecord(Inventory.kInventoryFile).getField(Inventory.kAvailable).removeListener(this.getRecord(Inventory.kInventoryFile).getField(Inventory.kAvailable).getListener(InitOnceFieldHandler.class.getName()), true);
+        link.addLink(Tour.TOUR_HEADER_ID, Inventory.PRODUCT_ID);
+        link.addLink("0", Inventory.RATE_ID);
+        link.addLink("0", Inventory.CLASS_ID);
+        link.addLink("0", Inventory.OTHER_ID);
+        link.addLink(Tour.DEPARTURE_DATE, Inventory.INV_DATE);
+        this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.BLOCKED).removeListener(this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.BLOCKED).getListener(InitOnceFieldHandler.class.getName()), true);
+        this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.USED).removeListener(this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.USED).getListener(InitOnceFieldHandler.class.getName()), true);
+        this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.AVAILABLE).removeListener(this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.AVAILABLE).getListener(InitOnceFieldHandler.class.getName()), true);
     }
 
 }

@@ -78,7 +78,7 @@ public class TourBookingChangeRequest extends TourBookingRequest
     public int initBookingApTrx(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
-        if (recBookingDetail.getField(BookingDetail.kVendorID).isNull())
+        if (recBookingDetail.getField(BookingDetail.VENDOR_ID).isNull())
             return DBConstants.NORMAL_RETURN;   // Vendor not required for tour detail
         return super.initBookingApTrx(record);
     }

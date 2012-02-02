@@ -217,7 +217,7 @@ public class ApControl extends ControlRecord
      */
     public MessageTransport getMessageTransport(TrxMessageHeader trxMessageHeader)
     {
-        return (MessageTransport)((ReferenceField)this.getField(ApControl.kMessageTransportID)).getReference();
+        return (MessageTransport)((ReferenceField)this.getField(ApControl.MESSAGE_TRANSPORT_ID)).getReference();
     }
     /**
      * AddDestInfo Method.

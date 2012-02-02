@@ -58,12 +58,12 @@ public class TourOrderHandler extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        if (this.getOwner().getRecord().getField(Tour.kOrderComponents).getState() == true)
+        if (this.getOwner().getRecord().getField(Tour.ORDER_COMPONENTS).getState() == true)
         {
             // Note: Must be finalized to order components (setting this flag will set up the A/P detail)
             Record recTour = this.getOwner().getRecord();
             int iOldOpenMode = recTour.setOpenMode(recTour.getOpenMode() & ~DBConstants.OPEN_READ_ONLY);
-            recTour.getField(Tour.kFinalized).setState(true);
+            recTour.getField(Tour.FINALIZED).setState(true);
             try {
                 recTour.writeAndRefresh();
             } catch (DBException ex) {

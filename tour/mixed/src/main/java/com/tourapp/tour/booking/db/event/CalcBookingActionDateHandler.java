@@ -75,29 +75,29 @@ public class CalcBookingActionDateHandler extends FieldListener
         if (recBooking.getListener(UpdateOnCloseHandler.class) == null)
             recBooking.addListener(new UpdateOnCloseHandler(null)); // Make sure this is updated
         
-        BaseField actionType = recBooking.getField(Booking.kTourEventID);
+        BaseField actionType = recBooking.getField(Booking.TOUR_EVENT_ID);
         actionType.setValue(TourEvent.NO_EVENT);
-        recBooking.getField(Booking.kNextEventDate).setToLimit(DBConstants.END_SELECT_KEY);
-        BaseField actionDate = recBooking.getField(Booking.kNextEventDate);
+        recBooking.getField(Booking.NEXT_EVENT_DATE).setToLimit(DBConstants.END_SELECT_KEY);
+        BaseField actionDate = recBooking.getField(Booking.NEXT_EVENT_DATE);
         
-        if (recBooking.getField(Booking.kBooked).getState() == false)
-            if (recBooking.getField(Booking.kBookingDate).compareTo(actionDate) <= 0)
+        if (recBooking.getField(Booking.BOOKED).getState() == false)
+            if (recBooking.getField(Booking.BOOKING_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recBooking.getField(Booking.kBookingDate));
+            actionDate.moveFieldToThis(recBooking.getField(Booking.BOOKING_DATE));
             actionType.setValue(TourEvent.BOOKING);
         }
         
-        if (recBooking.getField(Booking.kDepositDue).getState() == false)
-            if (recBooking.getField(Booking.kDepositDueDate).compareTo(actionDate) <= 0)
+        if (recBooking.getField(Booking.DEPOSIT_DUE).getState() == false)
+            if (recBooking.getField(Booking.DEPOSIT_DUE_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recBooking.getField(Booking.kDepositDueDate));
+            actionDate.moveFieldToThis(recBooking.getField(Booking.DEPOSIT_DUE_DATE));
             actionType.setValue(TourEvent.DEPOSIT_DUE);
         }
         
-        if (recBooking.getField(Booking.kFinalPaymentDue).getState() == false)
-            if (recBooking.getField(Booking.kFinalPaymentDueDate).compareTo(actionDate) <= 0)
+        if (recBooking.getField(Booking.FINAL_PAYMENT_DUE).getState() == false)
+            if (recBooking.getField(Booking.FINAL_PAYMENT_DUE_DATE).compareTo(actionDate) <= 0)
         {
-            actionDate.moveFieldToThis(recBooking.getField(Booking.kFinalPaymentDueDate));
+            actionDate.moveFieldToThis(recBooking.getField(Booking.FINAL_PAYMENT_DUE_DATE));
             actionType.setValue(TourEvent.FINAL_PAY_DUE);
         }
         

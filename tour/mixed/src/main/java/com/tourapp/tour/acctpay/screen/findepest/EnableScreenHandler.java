@@ -29,7 +29,7 @@ import org.jbundle.model.screen.*;
 public class EnableScreenHandler extends FileListener
 {
     public static final int DEFAULT_SIZE = 16;
-    protected int m_fsFieldSeq = -1;
+    protected String m_fsFieldSeq = null;
     protected int m_iMaxSize = DEFAULT_SIZE;
     protected Object[] m_rgObject = null;
     /**
@@ -42,7 +42,7 @@ public class EnableScreenHandler extends FileListener
     /**
      * EnableScreenHandler Method.
      */
-    public EnableScreenHandler(int fsFieldSeq)
+    public EnableScreenHandler(String fsFieldSeq)
     {
         this();
         this.init(fsFieldSeq);
@@ -50,7 +50,7 @@ public class EnableScreenHandler extends FileListener
     /**
      * Initialize class fields.
      */
-    public void init(int fsFieldSeq)
+    public void init(String fsFieldSeq)
     {
         m_fsFieldSeq = fsFieldSeq;
         super.init(null);
@@ -58,7 +58,7 @@ public class EnableScreenHandler extends FileListener
     /**
      * EnableScreenHandler Method.
      */
-    public EnableScreenHandler(int fsFieldSeq, int iMaxSize)
+    public EnableScreenHandler(String fsFieldSeq, int iMaxSize)
     {
         this();
         this.init(fsFieldSeq, iMaxSize);
@@ -66,7 +66,7 @@ public class EnableScreenHandler extends FileListener
     /**
      * Initialize class fields.
      */
-    public void init(int fsFieldSeq, int iMaxSize)
+    public void init(String fsFieldSeq, int iMaxSize)
     {
         m_iMaxSize = iMaxSize;
         m_fsFieldSeq = fsFieldSeq;

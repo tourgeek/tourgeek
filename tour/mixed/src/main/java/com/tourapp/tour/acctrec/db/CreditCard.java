@@ -240,11 +240,11 @@ public class CreditCard extends BaseArPay
     {
         super.addMasterListeners();
         
-        this.getField(CreditCard.kGross).addListener(new CalcBalanceHandler(this.getField(CreditCard.kSvcAmt), this.getField(CreditCard.kGross), this.getField(CreditCard.kSvcPer), "*", false));
-        this.getField(CreditCard.kSvcPer).addListener(new CalcBalanceHandler(this.getField(CreditCard.kSvcAmt), this.getField(CreditCard.kGross), this.getField(CreditCard.kSvcPer), "*", false));
-        this.getField(CreditCard.kGross).addListener(new CalcBalanceHandler(this.getField(CreditCard.kNet), this.getField(CreditCard.kGross), this.getField(CreditCard.kSvcAmt), "-", false));
-        this.getField(CreditCard.kSvcAmt).addListener(new CalcBalanceHandler(this.getField(CreditCard.kNet), this.getField(CreditCard.kGross), this.getField(CreditCard.kSvcAmt), "-", false));
-        this.getField(CreditCard.kNet).addListener(new MoveOnChangeHandler(this.getField(CreditCard.kAmtApply), this.getField(CreditCard.kNet)));
+        this.getField(CreditCard.GROSS).addListener(new CalcBalanceHandler(this.getField(CreditCard.SVC_AMT), this.getField(CreditCard.GROSS), this.getField(CreditCard.SVC_PER), "*", false));
+        this.getField(CreditCard.SVC_PER).addListener(new CalcBalanceHandler(this.getField(CreditCard.SVC_AMT), this.getField(CreditCard.GROSS), this.getField(CreditCard.SVC_PER), "*", false));
+        this.getField(CreditCard.GROSS).addListener(new CalcBalanceHandler(this.getField(CreditCard.NET), this.getField(CreditCard.GROSS), this.getField(CreditCard.SVC_AMT), "-", false));
+        this.getField(CreditCard.SVC_AMT).addListener(new CalcBalanceHandler(this.getField(CreditCard.NET), this.getField(CreditCard.GROSS), this.getField(CreditCard.SVC_AMT), "-", false));
+        this.getField(CreditCard.NET).addListener(new MoveOnChangeHandler(this.getField(CreditCard.AMT_APPLY), this.getField(CreditCard.NET)));
     }
 
 }

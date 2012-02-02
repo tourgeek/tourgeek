@@ -153,13 +153,13 @@ public class BaseTrx extends Trx
      */
     public Record getCachedRecord(String strRecord)
     {
-        if (AcctDetail.kAcctDetailFile.equalsIgnoreCase(strRecord))
+        if (AcctDetail.ACCT_DETAIL_FILE.equalsIgnoreCase(strRecord))
             return m_recAcctDetail;
-        if (AcctDetailDist.kAcctDetailDistFile.equalsIgnoreCase(strRecord))
+        if (AcctDetailDist.ACCT_DETAIL_DIST_FILE.equalsIgnoreCase(strRecord))
             return m_recAcctDetailDist;
-        if (TransactionType.kTransactionTypeFile.equalsIgnoreCase(strRecord))
+        if (TransactionType.TRANSACTION_TYPE_FILE.equalsIgnoreCase(strRecord))
             return m_recTransactionType;
-        if (Period.kPeriodFile.equalsIgnoreCase(strRecord))
+        if (Period.PERIOD_FILE.equalsIgnoreCase(strRecord))
             return m_recPeriod;
         return null;
     }
@@ -260,32 +260,32 @@ public class BaseTrx extends Trx
             return this.setupErrorMessage(null, "Transaction type is not valid");
         
         DateTimeField fldTrxDate = null;
-        if (!recTrxType.getField(TransactionType.kTrxDateField).isNull())
-            fldTrxDate = (DateTimeField)this.getField(recTrxType.getField(TransactionType.kTrxDateField).toString());
+        if (!recTrxType.getField(TransactionType.TRX_DATE_FIELD).isNull())
+            fldTrxDate = (DateTimeField)this.getField(recTrxType.getField(TransactionType.TRX_DATE_FIELD).toString());
         if (fldTrxDate == null)
-            fldTrxDate = (DateTimeField)this.getField(BaseTrx.kTrxDate);
+            fldTrxDate = (DateTimeField)this.getField(BaseTrx.TRX_DATE);
         
         DateTimeField fldTrxEntryDate = null;
-        if (!recTrxType.getField(TransactionType.kEntryDateField).isNull())
-            fldTrxEntryDate = (DateTimeField)this.getField(recTrxType.getField(TransactionType.kEntryDateField).toString());
+        if (!recTrxType.getField(TransactionType.ENTRY_DATE_FIELD).isNull())
+            fldTrxEntryDate = (DateTimeField)this.getField(recTrxType.getField(TransactionType.ENTRY_DATE_FIELD).toString());
         else if (fldTrxEntryDate == null)
-            fldTrxEntryDate = (DateTimeField)this.getField(BaseTrx.kTrxEntry);
+            fldTrxEntryDate = (DateTimeField)this.getField(BaseTrx.TRX_ENTRY);
         
         int iUserID = -1;
-        if (!recTrxType.getField(TransactionType.kUserIDField).isNull())
+        if (!recTrxType.getField(TransactionType.USER_ID_FIELD).isNull())
         {
-            BaseField fldUserID = this.getField(recTrxType.getField(TransactionType.kUserIDField).toString());
+            BaseField fldUserID = this.getField(recTrxType.getField(TransactionType.USER_ID_FIELD).toString());
             if (fldUserID != null)
                 iUserID = (int)fldUserID.getValue();
         }
         else if (iUserID == -1)
-            iUserID = (int)this.getField(BaseTrx.kTrxUserID).getValue();
+            iUserID = (int)this.getField(BaseTrx.TRX_USER_ID).getValue();
         
         BaseField fldTrxID = null;
-        if (!recTrxType.getField(TransactionType.kTrxIDField).isNull())
-            fldTrxID = this.getField(recTrxType.getField(TransactionType.kTrxIDField).toString());
+        if (!recTrxType.getField(TransactionType.TRX_ID_FIELD).isNull())
+            fldTrxID = this.getField(recTrxType.getField(TransactionType.TRX_ID_FIELD).toString());
         if (fldTrxID == null)
-            fldTrxID = this.getField(BaseTrx.kID);
+            fldTrxID = this.getField(BaseTrx.ID);
         
         return recAcctDetailDist.addDetailTrx(fldAccountID, fldTrxDate, fldTrxID, recTrxType, fldTrxEntryDate, dTrxAmount, iUserID, recAcctDetail, recPeriod);
     }
@@ -312,10 +312,10 @@ public class BaseTrx extends Trx
     {
         double dTrxAmount = 0;
         TransactionType recTrxType = this.getTrxType(strPostingType);
-        if ((recTrxType != null) && (!recTrxType.getField(TransactionType.kAmountField).isNull()))
-            dTrxAmount = this.getField(recTrxType.getField(TransactionType.kAmountField).toString()).getValue();
+        if ((recTrxType != null) && (!recTrxType.getField(TransactionType.AMOUNT_FIELD).isNull()))
+            dTrxAmount = this.getField(recTrxType.getField(TransactionType.AMOUNT_FIELD).toString()).getValue();
         else
-            dTrxAmount = this.getField(BaseTrx.kAmountLocal).getValue();
+            dTrxAmount = this.getField(BaseTrx.AMOUNT_LOCAL).getValue();
         return this.onPostTrxDist(fldAccountID, dTrxAmount, strPostingType);
     }
     /**
@@ -348,7 +348,7 @@ public class BaseTrx extends Trx
     public boolean onVoidTrx()
     {
         // Step 2a - Write the transaction.
-        if (this.getField(BaseTrx.kAmountLocal).getValue() == 0)
+        if (this.getField(BaseTrx.AMOUNT_LOCAL).getValue() == 0)
             return this.setupErrorMessage(null, "Transaction already cleared");
         try   {
             if (this.getEditMode() == Constants.EDIT_CURRENT)
@@ -359,7 +359,7 @@ public class BaseTrx extends Trx
             if (this.getEditMode() != Constants.EDIT_IN_PROGRESS)
                     return this.setupErrorMessage(null, "Not a valid transaction, can't post");
         
-            this.getField(BaseTrx.kAmountLocal).setValue(0);      // Void this trx
+            this.getField(BaseTrx.AMOUNT_LOCAL).setValue(0);      // Void this trx
             Object objectID = this.getHandle(DBConstants.DATA_SOURCE_HANDLE);
             this.set();
             this.setHandle(objectID, DBConstants.DATA_SOURCE_HANDLE);   // Restore
@@ -378,23 +378,23 @@ public class BaseTrx extends Trx
         try   {
             AcctDetailDist recAcctDetailDist = this.getDistSearch();
         
-            this.getField(BaseTrx.kTrxEntry).initField(DBConstants.DONT_DISPLAY); // New Entry date = now
+            this.getField(BaseTrx.TRX_ENTRY).initField(DBConstants.DONT_DISPLAY); // New Entry date = now
         
             recAcctDetailDist.close();
             while (recAcctDetailDist.hasNext())
             {
                 recAcctDetailDist.next();
-                Record recAcctDetail = ((ReferenceField)recAcctDetailDist.getField(AcctDetailDist.kAcctDetailID)).getReference();
+                Record recAcctDetail = ((ReferenceField)recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_ID)).getReference();
                 if (recAcctDetail != null)
                     if (!recAcctDetail.isNull())
                 {
-                    Record recTransactionType = ((ReferenceField)recAcctDetail.getField(AcctDetail.kTrxTypeID)).getReference();
+                    Record recTransactionType = ((ReferenceField)recAcctDetail.getField(AcctDetail.TRX_TYPE_ID)).getReference();
                     if (recTransactionType != null)
                         if (!recTransactionType.isNull())
                     {
-                        if (recTransactionType.getField(TransactionType.kSourceTrxStatusID).getValue() == this.getField(BaseTrx.kTrxStatusID).getValue())
+                        if (recTransactionType.getField(TransactionType.SOURCE_TRX_STATUS_ID).getValue() == this.getField(BaseTrx.TRX_STATUS_ID).getValue())
                         {
-                            if (this.getField(BaseTrx.kTrxEntry).equals(recAcctDetailDist.getField(AcctDetailDist.kTrxEntry)))
+                            if (this.getField(BaseTrx.TRX_ENTRY).equals(recAcctDetailDist.getField(AcctDetailDist.TRX_ENTRY)))
                                 continue;   // This is one of my new transactions (Don't reverse)
                             boolean bSuccess = this.onVoidDist(recAcctDetailDist);
                             if (!bSuccess)
@@ -414,22 +414,22 @@ public class BaseTrx extends Trx
      */
     public boolean onVoidDist(AcctDetailDist recAcctDetailDist)
     {
-        ReferenceField fldAcctDetailID = (ReferenceField)recAcctDetailDist.getField(AcctDetailDist.kAcctDetailID);
+        ReferenceField fldAcctDetailID = (ReferenceField)recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_ID);
         AcctDetail recAcctDetail = (AcctDetail)fldAcctDetailID.getReference();
         if (recAcctDetail == null)
             return this.setupErrorMessage(null, "Distribution does not have a valid transaction");
         
-        BaseField fldAccountID = recAcctDetail.getField(AcctDetail.kAccountID);
-        ReferenceField fldTrxTypeID = (ReferenceField)recAcctDetail.getField(AcctDetail.kTrxTypeID);
+        BaseField fldAccountID = recAcctDetail.getField(AcctDetail.ACCOUNT_ID);
+        ReferenceField fldTrxTypeID = (ReferenceField)recAcctDetail.getField(AcctDetail.TRX_TYPE_ID);
         TransactionType recTransactionType = (TransactionType)fldTrxTypeID.getReference();      // Ouch.. this should NOT be necessary
         if (recTransactionType == null)
             return this.setupErrorMessage(null, "Transaction type is not valid");
         
-        DateTimeField trxDate = (DateTimeField)recAcctDetailDist.getField(AcctDetailDist.kTrxDate);
-        BaseField fldTrxID = recAcctDetailDist.getField(AcctDetailDist.kTrxID);
-        DateTimeField trxEntryDate = (DateTimeField)this.getField(BaseTrx.kTrxEntry); // New Entry date!
-        int iUserID = (int)((UserField)this.getField(BaseTrx.kTrxUserID)).getUserID();   // New User ID
-        double dAmount = -recAcctDetailDist.getField(AcctDetailDist.kAmount).getValue();
+        DateTimeField trxDate = (DateTimeField)recAcctDetailDist.getField(AcctDetailDist.TRX_DATE);
+        BaseField fldTrxID = recAcctDetailDist.getField(AcctDetailDist.TRX_ID);
+        DateTimeField trxEntryDate = (DateTimeField)this.getField(BaseTrx.TRX_ENTRY); // New Entry date!
+        int iUserID = (int)((UserField)this.getField(BaseTrx.TRX_USER_ID)).getUserID();   // New User ID
+        double dAmount = -recAcctDetailDist.getField(AcctDetailDist.AMOUNT).getValue();
         
         m_recAcctDetailDist.addDetailTrx(fldAccountID, trxDate, fldTrxID, recTransactionType, trxEntryDate, dAmount, iUserID, recAcctDetail, m_recPeriod);
         return true;    // Success

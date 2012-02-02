@@ -61,8 +61,8 @@ public class McoDistConverter extends CashDistConverter
         // Now create the new distribution
         Record recCashBatchDetail = this.getDetailRecord();
         m_recBankTrxBatchDist.addNew();
-        m_recBankTrxBatchDist.getField(CashBatchDist.kBookingID).moveFieldToThis(referenceField);
-        m_recBankTrxBatchDist.getField(CashBatchDist.kAmount).moveFieldToThis(recCashBatchDetail.getField(Mco.kNet));
+        m_recBankTrxBatchDist.getField(CashBatchDist.BOOKING_ID).moveFieldToThis(referenceField);
+        m_recBankTrxBatchDist.getField(CashBatchDist.AMOUNT).moveFieldToThis(recCashBatchDetail.getField(Mco.NET));
         m_recBankTrxBatchDist.add();
     }
     /**
@@ -70,7 +70,7 @@ public class McoDistConverter extends CashDistConverter
      */
     public Record getDetailRecord()
     {
-        return (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(Mco.kMcoFile);
+        return (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(Mco.MCO_FILE);
     }
     /**
      * CreateDistRecord Method.

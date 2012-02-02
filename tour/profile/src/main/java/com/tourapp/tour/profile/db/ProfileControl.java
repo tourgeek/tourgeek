@@ -165,7 +165,7 @@ public class ProfileControl extends ControlRecord
      */
     public MessageTransport getMessageTransport(TrxMessageHeader trxMessageHeader)
     {
-        return (MessageTransport)((ReferenceField)this.getField(ProfileControl.kMessageTransportID)).getReference();
+        return (MessageTransport)((ReferenceField)this.getField(ProfileControl.MESSAGE_TRANSPORT_ID)).getReference();
     }
     /**
      * AddDestInfo Method.

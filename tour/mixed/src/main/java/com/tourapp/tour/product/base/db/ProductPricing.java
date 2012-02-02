@@ -150,17 +150,17 @@ public class ProductPricing extends VirtualRecord
     /**
      * Retrieve this cost field and adjust it using this record's terms.
      */
-    public double getCost(int iFieldSeq, ProductTerms recProductTerms)
+    public double getCost(String iFieldSeq, ProductTerms recProductTerms)
     {
-        if (iFieldSeq == -1)
-            iFieldSeq = ProductPricing.kCost;
+        if (iFieldSeq == null)
+            iFieldSeq = ProductPricing.COST;
         double dCost = this.getField(iFieldSeq).getValue();
-        if (this.getField(ProductPricing.kProductTermsID).getLength() != 0)
+        if (this.getField(ProductPricing.PRODUCT_TERMS_ID).getLength() != 0)
         { // Get the markup/down
             ProductTerms recNewProductTerms = null;
             if (recProductTerms == null)
                 recNewProductTerms = recProductTerms = new ProductTerms(this.findRecordOwner());
-            dCost = recProductTerms.calcNetCost(dCost, this.getField(ProductPricing.kProductTermsID));
+            dCost = recProductTerms.calcNetCost(dCost, this.getField(ProductPricing.PRODUCT_TERMS_ID));
             if (recNewProductTerms != null)
                 recNewProductTerms.free();
         }
@@ -176,21 +176,21 @@ public class ProductPricing extends VirtualRecord
         dateTarget = Converter.convertTimeToDate(dateTarget);
         if ((this.getEditMode() == Constants.EDIT_IN_PROGRESS) || (this.getEditMode() == Constants.EDIT_CURRENT))
         {
-            if (this.getField(ProductPricing.kProductID).equals(recProduct.getField(Product.kID)))
-            if (this.getField(ProductPricing.kRateID).getValue() == iRateID)
-            if (this.getField(ProductPricing.kClassID).getValue() == iClassID)
-            if (this.getField(ProductPricing.kStartDate).getValue() <= dateTarget.getTime()) // Start <= thisDate
-            if (this.getField(ProductPricing.kEndDate).getValue() >= dateTarget.getTime())   // End >= thisDate
+            if (this.getField(ProductPricing.PRODUCT_ID).equals(recProduct.getField(Product.ID)))
+            if (this.getField(ProductPricing.RATE_ID).getValue() == iRateID)
+            if (this.getField(ProductPricing.CLASS_ID).getValue() == iClassID)
+            if (this.getField(ProductPricing.START_DATE).getValue() <= dateTarget.getTime()) // Start <= thisDate
+            if (this.getField(ProductPricing.END_DATE).getValue() >= dateTarget.getTime())   // End >= thisDate
                 return this;        // Valid price
         }
         
-        this.getField(ProductPricing.kProductID).moveFieldToThis(recProduct.getField(Product.kID));
-        this.getField(ProductPricing.kRateID).setValue(iRateID);
-        this.getField(ProductPricing.kClassID).setValue(iClassID);
-        ((DateTimeField)this.getField(ProductPricing.kEndDate)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(ProductPricing.kID).setValue(0);   // Since it reads from current.
+        this.getField(ProductPricing.PRODUCT_ID).moveFieldToThis(recProduct.getField(Product.ID));
+        this.getField(ProductPricing.RATE_ID).setValue(iRateID);
+        this.getField(ProductPricing.CLASS_ID).setValue(iClassID);
+        ((DateTimeField)this.getField(ProductPricing.END_DATE)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(ProductPricing.ID).setValue(0);   // Since it reads from current.
         
-        this.setKeyArea(ProductPricing.kProductIDKey);
+        this.setKeyArea(ProductPricing.PRODUCT_ID_KEY);
         FileListener behavior = new SubCurrentFilter(true, false);
         this.addListener(behavior);
         
@@ -199,15 +199,15 @@ public class ProductPricing extends VirtualRecord
             while (this.hasNext())
             {   // Loop until found or not
                 this.next();
-                if (!this.getField(ProductPricing.kProductID).equals(recProduct.getField(Product.kID)))
+                if (!this.getField(ProductPricing.PRODUCT_ID).equals(recProduct.getField(Product.ID)))
                     break;
-                if (this.getField(ProductPricing.kRateID).getValue() != iRateID)
+                if (this.getField(ProductPricing.RATE_ID).getValue() != iRateID)
                     break;
-                if (this.getField(ProductPricing.kClassID).getValue() != iClassID)
+                if (this.getField(ProductPricing.CLASS_ID).getValue() != iClassID)
                     break;
-                if (this.getField(ProductPricing.kStartDate).getValue() > dateTarget.getTime())    // Start > thisDate
+                if (this.getField(ProductPricing.START_DATE).getValue() > dateTarget.getTime())    // Start > thisDate
                     break;
-                if (this.getField(ProductPricing.kEndDate).getValue() >= dateTarget.getTime())   // End >= thisDate
+                if (this.getField(ProductPricing.END_DATE).getValue() >= dateTarget.getTime())   // End >= thisDate
                     return this;        // Valid price
             }
         } catch (DBException ex)   {

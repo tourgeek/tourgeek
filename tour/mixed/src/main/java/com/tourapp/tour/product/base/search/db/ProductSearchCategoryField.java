@@ -75,7 +75,7 @@ public class ProductSearchCategoryField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, ProductSearchCategory.kProductSearchTypeIDKey, ProductSearchCategory.kDescription, true, false);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID_KEY, ProductSearchCategory.DESCRIPTION, true, false);
     }
 
 }

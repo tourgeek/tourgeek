@@ -107,7 +107,7 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
         this.removeRecord(recAcctDetailDist); // Do not add this to the screen (because it may get mixed up with the detail record).
         this.getMainRecord().addListener(new FreeOnFreeHandler(recAcctDetailDist));
         
-        this.getMainRecord().getField(AcctDetailDist.kAcctDetailID).addListener(new ReadSecondaryHandler(this.getRecord(AcctDetail.kAcctDetailFile)));
+        this.getMainRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).addListener(new ReadSecondaryHandler(this.getRecord(AcctDetail.ACCT_DETAIL_FILE)));
         
         this.setEditing(false);
         this.setAppending(false);
@@ -117,9 +117,9 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
      */
     public void addSubFileFilter()
     {
-        this.getMainRecord().setKeyArea(AcctDetailDist.kAcctDetailDistGroupIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord().getField(AcctDetailDist.kAcctDetailDistGroupID), AcctDetailDist.kAcctDetailDistGroupID, null, -1, null, -1));
-        this.getHeaderRecord().getField(AcctDetailDist.kID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().setKeyArea(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord().getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID), AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID, null, null, null, null));
+        this.getHeaderRecord().getField(AcctDetailDist.ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add the navigation button(s) to the left of the grid row.
@@ -129,7 +129,7 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
         String strTransaction = AcctDetailDist.DIST_TRANSACTION;
         if (this.getTask() != null)
             strTransaction = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strTransaction);
-        new TrxIDSField(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, this.getMainRecord().getField(AcctDetailDist.kTrxID), ScreenConstants.DEFAULT_DISPLAY);
+        new TrxIDSField(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, AcctDetailDist.DIST_TRANSACTION, AcctDetailDist.DIST_TRANSACTION, strTransaction);
         super.addNavButtons();  // Next buttons will be "First!"
     }
@@ -142,7 +142,7 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
         if (this.getTask() != null)
             strTransaction = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strTransaction);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strTransaction, AcctDetailDist.DIST_TRANSACTION, AcctDetailDist.DIST_TRANSACTION, null);
-        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.kTrxID), ScreenConstants.DEFAULT_DISPLAY);
+        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Process the command.
@@ -159,7 +159,7 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
     {
         if(strCommand.equalsIgnoreCase(AcctDetailDist.DIST_TRANSACTION))
         {
-            Record recAcctDetail = ((ReferenceField)this.getMainRecord().getField(AcctDetailDist.kAcctDetailID)).getReference();
+            Record recAcctDetail = ((ReferenceField)this.getMainRecord().getField(AcctDetailDist.ACCT_DETAIL_ID)).getReference();
             if (recAcctDetail != null)
                 return (this.onForm(recAcctDetail, ScreenConstants.MAINT_MODE, true, iCommandOptions, null) != null);
         }

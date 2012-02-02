@@ -8,7 +8,11 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface HotelClassModel extends BaseClassModel
 {
-    public static final String DESCRIPTION = "Description";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String CODE = CODE;
+    public static final String GENERAL_CODE = "GeneralCode";
     public static final String HOTEL_CLASS_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelClassScreen";
     public static final String HOTEL_CLASS_GRID_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelClassGridScreen";
 

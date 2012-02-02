@@ -96,20 +96,20 @@ public class BankTrxGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate), BankTrx.kTrxDate, null, -1, null, -1);
+        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE), BankTrx.TRX_DATE, null, null, null, null);
         listener.setEndKey(false);
         this.getMainRecord().addListener(listener);
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kChangeBalance), BankTrx.kAmount, false, true));  // Init this field override for other value
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(BankTrxScreenRecord.CHANGE_BALANCE), BankTrx.AMOUNT, false, true));  // Init this field override for other value
         
-        this.getScreenRecord().getField(BankTrxScreenRecord.kBankAcctID).moveFieldToThis(this.getHeaderRecord().getField(BankAcct.kID));
-        ((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.kBankAcctID)).setReferenceRecord(this.getHeaderRecord());
-        this.getScreenRecord().getField(BankTrxScreenRecord.kBankAcctID).addListener(new ReadSecondaryHandler(((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.kBankAcctID)).getReferenceRecord()));
+        this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID).moveFieldToThis(this.getHeaderRecord().getField(BankAcct.ID));
+        ((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID)).setReferenceRecord(this.getHeaderRecord());
+        this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID).addListener(new ReadSecondaryHandler(((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID)).getReferenceRecord()));
         
-        this.getScreenRecord().getField(BankTrxScreenRecord.kBankAcctID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(BankTrxScreenRecord.kStartDate).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(BankTrxScreenRecord.START_DATE).addListener(new FieldReSelectHandler(this));
         
-        this.getScreenRecord().getField(BankTrxScreenRecord.kDisplayBalance).addListener(new BankTrxCalcBalance(this.getRecord(BankAcct.kBankAcctFile), this.getScreenRecord().getField(BankTrxScreenRecord.kEndBalance), this.getScreenRecord().getField(BankTrxScreenRecord.kDisplayBalance)));
-        this.getScreenRecord().getField(BankTrxScreenRecord.kBankAcctID).addListener(new ChangeOnChangeHandler(this.getScreenRecord().getField(BankTrxScreenRecord.kDisplayBalance)));
+        this.getScreenRecord().getField(BankTrxScreenRecord.DISPLAY_BALANCE).addListener(new BankTrxCalcBalance(this.getRecord(BankAcct.BANK_ACCT_FILE), this.getScreenRecord().getField(BankTrxScreenRecord.END_BALANCE), this.getScreenRecord().getField(BankTrxScreenRecord.DISPLAY_BALANCE)));
+        this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID).addListener(new ChangeOnChangeHandler(this.getScreenRecord().getField(BankTrxScreenRecord.DISPLAY_BALANCE)));
         
         this.setEditing(false);
     }

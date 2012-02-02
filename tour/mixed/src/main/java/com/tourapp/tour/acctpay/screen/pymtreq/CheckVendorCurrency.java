@@ -34,7 +34,7 @@ import org.jbundle.main.screen.*;
 public class CheckVendorCurrency extends FieldListener
 {
     protected BaseField m_fldBankCurrency = null;
-    protected int m_fsVendorCurrency;
+    protected String m_fsVendorCurrency;
     /**
      * Default constructor.
      */
@@ -45,7 +45,7 @@ public class CheckVendorCurrency extends FieldListener
     /**
      * Constructor.
      */
-    public CheckVendorCurrency(int fsVendorCurrency, BaseField fldBankCurrency)
+    public CheckVendorCurrency(String fsVendorCurrency, BaseField fldBankCurrency)
     {
         this();
         this.init(fsVendorCurrency, fldBankCurrency);
@@ -53,10 +53,10 @@ public class CheckVendorCurrency extends FieldListener
     /**
      * Initialize class fields.
      */
-    public void init(int fsVendorCurrency, BaseField fldBankCurrency)
+    public void init(String fsVendorCurrency, BaseField fldBankCurrency)
     {
         m_fldBankCurrency = null;
-        m_fsVendorCurrency = 0;
+        m_fsVendorCurrency = "";
         m_fsVendorCurrency = fsVendorCurrency;
         m_fldBankCurrency = fldBankCurrency;
         this.setRespondsToMode(DBConstants.INIT_MOVE, false);

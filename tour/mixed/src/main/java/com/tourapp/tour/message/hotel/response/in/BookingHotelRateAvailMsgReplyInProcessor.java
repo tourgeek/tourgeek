@@ -55,12 +55,12 @@ public class BookingHotelRateAvailMsgReplyInProcessor extends BookingHotelAvailM
     /**
      * SetRecordDataStatus Method.
      */
-    public int setRecordDataStatus(Record record, int iFieldSeq, int iStatus, ProductMessageData productRequest)
+    public int setRecordDataStatus(Record record, String iFieldSeq, int iStatus, ProductMessageData productRequest)
     {
         int iErrorCode = super.setRecordDataStatus(record, iFieldSeq, iStatus, productRequest);
         if (iErrorCode == DBConstants.NORMAL_RETURN)
-        if (iFieldSeq == BookingDetail.kInventoryStatusID)
-            iErrorCode = productRequest.setRecordDataStatus(record, BookingDetail.kCostStatusID, iStatus);  // Make sure all the detail has this status
+        if (iFieldSeq == BookingDetail.INVENTORY_STATUS_ID)
+            iErrorCode = productRequest.setRecordDataStatus(record, BookingDetail.COST_STATUS_ID, iStatus);  // Make sure all the detail has this status
         return iErrorCode;
     }
 

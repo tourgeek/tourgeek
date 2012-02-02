@@ -92,7 +92,7 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
         
                         BaseField fldTourHeaderOptionID = (BaseField)this.getConverter().getField();
                         Record recTourHeaderOption = fldTourHeaderOptionID.getRecord();
-                        ReferenceField fldTourOrOptionID = (ReferenceField)recTourHeaderOption.getField(TourHeaderOption.kTourOrOptionID);
+                        ReferenceField fldTourOrOptionID = (ReferenceField)recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID);
                         Record recTourOrOption = fldTourOrOptionID.getReferenceRecord();
                         try {
                             recTourOrOption = (Record)recTourOrOption.clone();

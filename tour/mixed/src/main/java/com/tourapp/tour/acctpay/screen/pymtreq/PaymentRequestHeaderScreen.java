@@ -65,19 +65,19 @@ public class PaymentRequestHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID).setEnabled(true);
-        this.getScreenRecord().getField(PaymentRequestScreenRecord.kManualChecks).setEnabled(true);
+        this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID).setEnabled(true);
+        this.getScreenRecord().getField(PaymentRequestScreenRecord.MANUAL_CHECKS).setEnabled(true);
     }
     /**
      * SetupSFields Method.
      */
     public void setupSFields()
     {
-        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+        Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
         if (recBankAcct != null)
         {    // Make sure currency is read for LocalCurrencyField(s).
-            Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.kCurrencyID)).getReferenceRecord((BaseScreen)this.getParentScreen());
-            recBankAcct.getField(BankAcct.kCurrencyID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.CURRENCY_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+            recBankAcct.getField(BankAcct.CURRENCY_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(PaymentRequestScreenRecord.kPaymentRequestScreenRecordFile).getField(PaymentRequestScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(PaymentRequestScreenRecord.kPaymentRequestScreenRecordFile).getField(PaymentRequestScreenRecord.kRequestTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

@@ -64,7 +64,7 @@ public class TourStatusUpdateHandler extends BaseStatusUpdateHandler
         Record recBaseStatus = this.getOwner().getRecord();
         BaseField fldStatusID = recBaseStatus.getReferringField();
         Record recTour = fldStatusID.getRecord(); 
-        TourStatusSummaryField fldTourStatusSummary = (TourStatusSummaryField)recTour.getField(Tour.kTourStatusSummary);
+        TourStatusSummaryField fldTourStatusSummary = (TourStatusSummaryField)recTour.getField(Tour.TOUR_STATUS_SUMMARY);
         String strSource = null;
         String strKey = fldTourStatusSummary.getHighStatusKey();
         if (strKey != null)
@@ -76,13 +76,13 @@ public class TourStatusUpdateHandler extends BaseStatusUpdateHandler
                 String strDetailID = strKey.substring(iDot+1);
                 BookingDetail recBookingDetail = new BookingDetail(recTour.findRecordOwner());
                 try {
-                    recBookingDetail.getField(BookingDetail.kID).setString(strDetailID);
+                    recBookingDetail.getField(BookingDetail.ID).setString(strDetailID);
                     if (recBookingDetail.seek(null))
                     {
                         String strErrorKey = recBookingDetail.getFieldParam(recBookingDetail.getField(strType));
                         strErrorKey = strErrorKey + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM;
-                        strMessage = ((PropertiesField)recBookingDetail.getField(BookingDetail.kErrorProperties)).getProperty(strErrorKey);
-                        strSource = recBookingDetail.getField(BookingDetail.kProductType) + " - " + recBookingDetail.getField(BookingDetail.kDescription);
+                        strMessage = ((PropertiesField)recBookingDetail.getField(BookingDetail.ERROR_PROPERTIES)).getProperty(strErrorKey);
+                        strSource = recBookingDetail.getField(BookingDetail.PRODUCT_TYPE) + " - " + recBookingDetail.getField(BookingDetail.DESCRIPTION);
                     }
                 } catch (DBException ex) {
                     ex.printStackTrace();
@@ -94,7 +94,7 @@ public class TourStatusUpdateHandler extends BaseStatusUpdateHandler
         if (strMessage != null)
             strMessage = strMessage + " (" + strSource + ")";
         else
-            strMessage = this.getOwner().getRecord().getField(TourStatus.kDescription).toString();
+            strMessage = this.getOwner().getRecord().getField(TourStatus.DESCRIPTION).toString();
         if (strMessage == null)
             strMessage = super.getDisplayMessage();
         return strMessage;

@@ -34,33 +34,61 @@ public class FinStmtReportScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String FIN_STMT_HEADER_ID = "FinStmtHeaderID";
     public static final int kFinStmtHeaderID = kReportScreenRecordLastField + 1;
+    public static final String FIN_STMT_ID = "FinStmtID";
     public static final int kFinStmtID = kFinStmtHeaderID + 1;
+    public static final String BUDGET_COMP = "BudgetComp";
     public static final int kBudgetComp = kFinStmtID + 1;
+    public static final String START_DATE = "StartDate";
     public static final int kStartDate = kBudgetComp + 1;
+    public static final String END_DATE = "EndDate";
     public static final int kEndDate = kStartDate + 1;
+    public static final String START_ENTRY = "StartEntry";
     public static final int kStartEntry = kEndDate + 1;
+    public static final String END_ENTRY = "EndEntry";
     public static final int kEndEntry = kStartEntry + 1;
+    public static final String PROFIT_CENTER_ID = "ProfitCenterID";
     public static final int kProfitCenterID = kEndEntry + 1;
+    public static final String EXCLUDE_CLOSING = "ExcludeClosing";
     public static final int kExcludeClosing = kProfitCenterID + 1;
+    public static final String TEMPLATE = "template";
     public static final int ktemplate = kExcludeClosing + 1;
+    public static final String START_BALANCE = "StartBalance";
     public static final int kStartBalance = ktemplate + 1;
+    public static final String BALANCE_CHANGE = "BalanceChange";
     public static final int kBalanceChange = kStartBalance + 1;
+    public static final String END_BALANCE = "EndBalance";
     public static final int kEndBalance = kBalanceChange + 1;
+    public static final String TARGET_AMOUNT = "TargetAmount";
     public static final int kTargetAmount = kEndBalance + 1;
+    public static final String RATIO_AMOUNT = "RatioAmount";
     public static final int kRatioAmount = kTargetAmount + 1;
+    public static final String RATIO_PERCENT = "RatioPercent";
     public static final int kRatioPercent = kRatioAmount + 1;
+    public static final String IS_AMOUNT = "ISAmount";
     public static final int kISAmount = kRatioPercent + 1;
+    public static final String LAST_STATEMENT = "LastStatement";
     public static final int kLastStatement = kISAmount + 1;
+    public static final String TOTAL_0 = "Total0";
     public static final int kTotal0 = kLastStatement + 1;
+    public static final String TOTAL_1 = "Total1";
     public static final int kTotal1 = kTotal0 + 1;
+    public static final String TOTAL_2 = "Total2";
     public static final int kTotal2 = kTotal1 + 1;
+    public static final String TOTAL_3 = "Total3";
     public static final int kTotal3 = kTotal2 + 1;
+    public static final String TOTAL_4 = "Total4";
     public static final int kTotal4 = kTotal3 + 1;
+    public static final String TOTAL_5 = "Total5";
     public static final int kTotal5 = kTotal4 + 1;
+    public static final String TOTAL_6 = "Total6";
     public static final int kTotal6 = kTotal5 + 1;
+    public static final String TOTAL_7 = "Total7";
     public static final int kTotal7 = kTotal6 + 1;
+    public static final String TOTAL_8 = "Total8";
     public static final int kTotal8 = kTotal7 + 1;
+    public static final String TOTAL_9 = "Total9";
     public static final int kTotal9 = kTotal8 + 1;
     public static final int kFinStmtReportScreenRecordLastField = kTotal9;
     public static final int kFinStmtReportScreenRecordFields = kTotal9 - DBConstants.MAIN_FIELD + 1;
@@ -183,7 +211,7 @@ public class FinStmtReportScreenRecord extends ReportScreenRecord
             if (m_recPeriod.getRecordOwner() != null)
                 m_recPeriod.getRecordOwner().removeRecord(m_recPeriod);
         }
-        m_recPeriod.setPeriodDefaults(this, FinStmtReportScreenRecord.kStartDate, FinStmtReportScreenRecord.kEndDate, null);
+        m_recPeriod.setPeriodDefaults(this, FinStmtReportScreenRecord.START_DATE, FinStmtReportScreenRecord.END_DATE, null);
     }
 
 }

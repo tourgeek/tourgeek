@@ -67,14 +67,14 @@ public class RecordReportDetail extends HeadingScreen
     /**
      * AddDetailXMLColumn Method.
      */
-    public Object addDetailXMLColumn(Record record, int iFieldSeq)
+    public Object addDetailXMLColumn(Record record, String iFieldSeq)
     {
         return this.addColumn(new MultipleTableFieldConverter(record, iFieldSeq));
     }
     /**
      * AddDetailXMLColumn Method.
      */
-    public Object addDetailXMLColumn(Record record, int iFieldSeq, int iSecondFieldSeq)
+    public Object addDetailXMLColumn(Record record, String iFieldSeq, String iSecondFieldSeq)
     {
         return this.addColumn(new MultipleTableFieldConverter(record, iFieldSeq, iSecondFieldSeq));
     }

@@ -90,7 +90,7 @@ public class CarPricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Car.kCarFile);
+        return this.getRecord(Car.CAR_FILE);
     }
     /**
      * Set up all the screen fields.

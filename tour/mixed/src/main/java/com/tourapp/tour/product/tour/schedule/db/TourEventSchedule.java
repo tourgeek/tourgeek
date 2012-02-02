@@ -214,7 +214,7 @@ public class TourEventSchedule extends PropertiesRecord
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.addPropertiesFieldBehavior(this.getField(TourEventSchedule.kActionDocumentName), DBParams.TEMPLATE);
+        this.addPropertiesFieldBehavior(this.getField(TourEventSchedule.ACTION_DOCUMENT_NAME), DBParams.TEMPLATE);
     }
     /**
      * Do the action for the current record
@@ -227,15 +227,15 @@ public class TourEventSchedule extends PropertiesRecord
         if (recTarget instanceof Booking)
         {
             recBooking = (Booking)recTarget;
-            recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
         }
         else if (recTarget instanceof Tour)
         {
             recTour = (Tour)recTarget;
         }
-        if (TourActionTypeField.TRIGGER_EVENT.equalsIgnoreCase(this.getField(TourEventSchedule.kTourActionType).toString()))
+        if (TourActionTypeField.TRIGGER_EVENT.equalsIgnoreCase(this.getField(TourEventSchedule.TOUR_ACTION_TYPE).toString()))
             return this.triggerEvent(recBooking, recTour);
-        if (TourActionTypeField.CREATE_DOCUMENT.equalsIgnoreCase(this.getField(TourEventSchedule.kTourActionType).toString()))
+        if (TourActionTypeField.CREATE_DOCUMENT.equalsIgnoreCase(this.getField(TourEventSchedule.TOUR_ACTION_TYPE).toString()))
             return this.createDocument(recBooking, recTour);
         return DBConstants.NORMAL_RETURN;
     }
@@ -244,7 +244,7 @@ public class TourEventSchedule extends PropertiesRecord
      */
     public int triggerEvent(Booking recBooking, Tour recTour)
     {
-        switch ((int)this.getField(TourEventSchedule.kActionTourEventID).getValue())
+        switch ((int)this.getField(TourEventSchedule.ACTION_TOUR_EVENT_ID).getValue())
         {
             case TourEvent.BOOKING:
             case TourEvent.BOOKING_STATUS:
@@ -258,67 +258,67 @@ public class TourEventSchedule extends PropertiesRecord
             default:
             break;  // Okay
         }
-        switch ((int)this.getField(TourEventSchedule.kActionTourEventID).getValue())
+        switch ((int)this.getField(TourEventSchedule.ACTION_TOUR_EVENT_ID).getValue())
         {
             case TourEvent.BOOKING:
-                recBooking.getField(Booking.kBooked).setState(true);
+                recBooking.getField(Booking.BOOKED).setState(true);
                 break;
             case TourEvent.BOOKING_STATUS:
-                if (!this.getField(TourEventSchedule.kActionBookingStatusID).isNull())
+                if (!this.getField(TourEventSchedule.ACTION_BOOKING_STATUS_ID).isNull())
                 {
                     FieldListener listener = null;
-                    if (recBooking.getField(Booking.kBookingStatusID).getListener(BookingStatusEventHandler.class) != null)
-                        if (!recBooking.getField(Booking.kBookingStatusID).getListener(BookingStatusEventHandler.class).isEnabled())
-                            recBooking.getField(Booking.kBookingStatusID).addListener(listener = new BookingStatusEventHandler(TourEvent.BOOKING_STATUS));
-                    recBooking.getField(Booking.kBookingStatusID).moveFieldToThis(this.getField(TourEventSchedule.kActionBookingStatusID));
+                    if (recBooking.getField(Booking.BOOKING_STATUS_ID).getListener(BookingStatusEventHandler.class) != null)
+                        if (!recBooking.getField(Booking.BOOKING_STATUS_ID).getListener(BookingStatusEventHandler.class).isEnabled())
+                            recBooking.getField(Booking.BOOKING_STATUS_ID).addListener(listener = new BookingStatusEventHandler(TourEvent.BOOKING_STATUS));
+                    recBooking.getField(Booking.BOOKING_STATUS_ID).moveFieldToThis(this.getField(TourEventSchedule.ACTION_BOOKING_STATUS_ID));
                     if (listener != null)
                         listener.free();
                 }
                 break;
             case TourEvent.DEPOSIT_DUE:
-                recBooking.getField(Booking.kDepositDue).setState(true);
+                recBooking.getField(Booking.DEPOSIT_DUE).setState(true);
                 break;
             case TourEvent.DEPOSIT_RECEIVED:
-                recBooking.getField(Booking.kDeposit).setState(true);
+                recBooking.getField(Booking.DEPOSIT).setState(true);
                 break;
             case TourEvent.FINAL_PAY_DUE:
-                recBooking.getField(Booking.kFinalPaymentDue).setState(true);
+                recBooking.getField(Booking.FINAL_PAYMENT_DUE).setState(true);
                 break;
             case TourEvent.FINAL_PAYMENT_RECEIVED:
-                recBooking.getField(Booking.kFinalPaymentReceived).setState(true);
+                recBooking.getField(Booking.FINAL_PAYMENT_RECEIVED).setState(true);
                 break;
             case TourEvent.FINALIZATION:
-                recTour.getField(Tour.kFinalized).setState(true);
+                recTour.getField(Tour.FINALIZED).setState(true);
                 break;
             case TourEvent.TOUR_CLOSED:
-                recTour.getField(Tour.kClosed).setState(true);
+                recTour.getField(Tour.CLOSED).setState(true);
                 break;
             case TourEvent.ORDER_COMPONENTS:
-                recTour.getField(Tour.kOrderComponents).setState(true);
+                recTour.getField(Tour.ORDER_COMPONENTS).setState(true);
                 break;
             case TourEvent.FINAL_DOCS:
-                recTour.getField(Tour.kFinalDocs).setState(true);
+                recTour.getField(Tour.FINAL_DOCS).setState(true);
                 break;
             case TourEvent.TICKETING:
-                recTour.getField(Tour.kTickets).setState(true);
+                recTour.getField(Tour.TICKETS).setState(true);
                 break;
             case TourEvent.SPECIAL_1:
-                recTour.getField(Tour.kSp1).setState(true);
+                recTour.getField(Tour.SP_1).setState(true);
                 break;
             case TourEvent.SPECIAL_2:
-                recTour.getField(Tour.kSp2).setState(true);
+                recTour.getField(Tour.SP_2).setState(true);
                 break;
             case TourEvent.DEPARTURE:
-                recTour.getField(Tour.kDeparted).setState(true);
+                recTour.getField(Tour.DEPARTED).setState(true);
                 break;
             case TourEvent.CANCELLATION:
-                recBooking.getField(Booking.kCancelled).setState(true);
+                recBooking.getField(Booking.CANCELLED).setState(true);
                 break;
             case TourEvent.TOUR_CANCELLED:
-                recTour.getField(Tour.kCancelled).setState(true);
+                recTour.getField(Tour.CANCELLED).setState(true);
                 break;
             case TourEvent.SERVICES_CONFIRMED:
-                recTour.getField(Tour.kServConf).setState(true);    // todo(don) Shouldn't allow this
+                recTour.getField(Tour.SERV_CONF).setState(true);    // todo(don) Shouldn't allow this
                 break;
             default:
                 return DBConstants.ERROR_RETURN; // Error = can't trigger these!
@@ -331,24 +331,24 @@ public class TourEventSchedule extends PropertiesRecord
      */
     public int createDocument(Booking recBooking, Tour recTour)
     {
-        String strBookingID = recBooking.getField(Booking.kID).toString();
-        String strTourID = recTour.getField(Tour.kID).toString();
-        String strTemplate = ((PropertiesField)this.getField(TourEventSchedule.kActionProperties)).getProperty(DBParams.TEMPLATE);
-        MessageProcessInfo recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getField(TourEventSchedule.kActionMessageProcessInfoID)).getReference();
-        Record recMessageTransport = ((ReferenceField)this.getField(TourEventSchedule.kActionMessageTransportID)).getReference();
+        String strBookingID = recBooking.getField(Booking.ID).toString();
+        String strTourID = recTour.getField(Tour.ID).toString();
+        String strTemplate = ((PropertiesField)this.getField(TourEventSchedule.ACTION_PROPERTIES)).getProperty(DBParams.TEMPLATE);
+        MessageProcessInfo recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID)).getReference();
+        Record recMessageTransport = ((ReferenceField)this.getField(TourEventSchedule.ACTION_MESSAGE_TRANSPORT_ID)).getReference();
         if ((recMessageTransport == null) || (recMessageTransport.getEditMode() != DBConstants.EDIT_CURRENT))
             if ((recMessageProcessInfo != null) && (recMessageProcessInfo.getEditMode() == DBConstants.EDIT_CURRENT))
-                recMessageTransport = ((ReferenceField)recMessageProcessInfo.getField(MessageProcessInfo.kDefaultMessageTransportID)).getReference();
+                recMessageTransport = ((ReferenceField)recMessageProcessInfo.getField(MessageProcessInfo.DEFAULT_MESSAGE_TRANSPORT_ID)).getReference();
         String strMessageTransport = null;
         if ((recMessageTransport != null) && (recMessageTransport.getEditMode() == DBConstants.EDIT_CURRENT))
-            strMessageTransport = recMessageTransport.getField(MessageTransport.kCode).toString();
+            strMessageTransport = recMessageTransport.getField(MessageTransport.CODE).toString();
         // If the transport is null, that's okay. The message manager will select a transport
         String strURL = this.getDisplayURL(strBookingID, strTourID, strTemplate);
         {   // Note: properties include SEND_BY and DESTINATION
             // First see if the use specifies a specific message
             if (recMessageProcessInfo == null)
-                recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getField(TourEventSchedule.kActionMessageProcessInfoID)).getReferenceRecord();
-            Profile recProfile = (Profile)((ReferenceField)recBooking.getField(Booking.kProfileID)).getReference();
+                recMessageProcessInfo = (MessageProcessInfo)((ReferenceField)this.getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID)).getReferenceRecord();
+            Profile recProfile = (Profile)((ReferenceField)recBooking.getField(Booking.PROFILE_ID)).getReference();
             if ((recProfile.getEditMode() == DBConstants.EDIT_NONE) || (recProfile.getEditMode() == DBConstants.EDIT_ADD))
                 recProfile = null;
             Map<String,Object> properties =  new Hashtable<String, Object>();
@@ -357,11 +357,11 @@ public class TourEventSchedule extends PropertiesRecord
             properties.put(TrxMessageHeader.REFERENCE_ID, recBooking.getCounterField().toString());
             if (recProfile == null)
             {
-                if (recBooking.getField(Booking.kEmail).isNull())
+                if (recBooking.getField(Booking.EMAIL).isNull())
                     return this.getTask().setLastError(this.getTask().getString("No email address in booking"));
                 else
                 {
-                    properties.put(TrxMessageHeader.DESTINATION_PARAM, recBooking.getField(Booking.kEmail).toString());
+                    properties.put(TrxMessageHeader.DESTINATION_PARAM, recBooking.getField(Booking.EMAIL).toString());
                     properties.put(MessageTransport.SEND_MESSAGE_BY_PARAM, MessageTransport.EMAIL);
                 }
             }

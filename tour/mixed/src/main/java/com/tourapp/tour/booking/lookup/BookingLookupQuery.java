@@ -69,7 +69,7 @@ public class BookingLookupQuery extends QueryRecord
         this.addTable(new Booking(recordOwner));
         this.addTable(new Tour(recordOwner));
         this.addTable(new BookingPax(recordOwner));
-        //this.setGridFile(bkBooking, Booking.kBookingDateKey);
+        //this.setGridFile(bkBooking, Booking.BOOKING_DATE_KEY);
     }
     /**
      * SelectFields Method.
@@ -78,22 +78,22 @@ public class BookingLookupQuery extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Booking.kBookingFile, Booking.kID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kCode).setSelected(true);
-        this.getField(BookingPax.kBookingPaxFile, BookingPax.kID).setSelected(true);
-        this.getField(BookingPax.kBookingPaxFile, BookingPax.kNamePrefix).setSelected(true);
-        this.getField(BookingPax.kBookingPaxFile, BookingPax.kFirstName).setSelected(true);
-        this.getField(BookingPax.kBookingPaxFile, BookingPax.kMiddleName).setSelected(true);
-        this.getField(BookingPax.kBookingPaxFile, BookingPax.kSurName).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kDepartureDate).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kDescription).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kTourStatusID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kGenericName).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kBookingDate).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kModDate).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kEmployeeID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kEmployeeModID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kBookingStatusID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.CODE).setSelected(true);
+        this.getField(BookingPax.BOOKING_PAX_FILE, BookingPax.ID).setSelected(true);
+        this.getField(BookingPax.BOOKING_PAX_FILE, BookingPax.NAME_PREFIX).setSelected(true);
+        this.getField(BookingPax.BOOKING_PAX_FILE, BookingPax.FIRST_NAME).setSelected(true);
+        this.getField(BookingPax.BOOKING_PAX_FILE, BookingPax.MIDDLE_NAME).setSelected(true);
+        this.getField(BookingPax.BOOKING_PAX_FILE, BookingPax.SUR_NAME).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.DEPARTURE_DATE).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.DESCRIPTION).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.TOUR_STATUS_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.GENERIC_NAME).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.BOOKING_DATE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.MOD_DATE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.EMPLOYEE_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.EMPLOYEE_MOD_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.BOOKING_STATUS_ID).setSelected(true);
     }
     /**
      * Setup this key area.
@@ -104,9 +104,9 @@ public class BookingLookupQuery extends QueryRecord
         if (iKeyArea == DBConstants.MAIN_KEY_AREA)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-        //x   keyArea.addKeyField(this.getField(Booking.kBookingFile, Booking.kID), DBConstants.ASCENDING);
+        //x   keyArea.addKeyField(this.getField(Booking.BOOKING_FILE, Booking.ID), DBConstants.ASCENDING);
         // The key must be on the bookingpax file so it will be unique (The booking file is displayed multiple times for each pax)!
-            keyArea.addKeyField(this.getField(BookingPax.kBookingPaxFile, BookingPax.kID), DBConstants.ASCENDING);
+            keyArea.addKeyField(this.getField(BookingPax.BOOKING_PAX_FILE, BookingPax.ID), DBConstants.ASCENDING);
         }
         return keyArea;
     }
@@ -115,9 +115,8 @@ public class BookingLookupQuery extends QueryRecord
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Booking.kBookingFile), this.getRecord(Tour.kTourFile), Booking.kTourID, Tour.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Booking.kBookingFile), this.getRecord(BookingPax.kBookingPaxFile),
-        Booking.kID, BookingPax.kBookingID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Booking.BOOKING_FILE), this.getRecord(Tour.TOUR_FILE), Booking.TOUR_ID, Tour.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Booking.BOOKING_FILE), this.getRecord(BookingPax.BOOKING_PAX_FILE), Booking.ID, BookingPax.BOOKING_ID);
     }
 
 }

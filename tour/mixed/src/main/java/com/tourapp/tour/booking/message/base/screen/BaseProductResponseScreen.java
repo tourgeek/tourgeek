@@ -83,10 +83,10 @@ public class BaseProductResponseScreen extends MessageScreen
     {
         super.addListeners();
         
-        this.getScreenRecord().getField(ProductInfoScreenRecord.kTotalCost).setEnabled(true);
-        this.getScreenRecord().getField(ProductInfoScreenRecord.kAvailability).setEnabled(true);
-        this.getScreenRecord().getField(ProductInfoScreenRecord.kConfirmationNo).setEnabled(true);
-        this.getScreenRecord().getField(ProductInfoScreenRecord.kConfirmedBy).setEnabled(true);
+        this.getScreenRecord().getField(ProductInfoScreenRecord.TOTAL_COST).setEnabled(true);
+        this.getScreenRecord().getField(ProductInfoScreenRecord.AVAILABILITY).setEnabled(true);
+        this.getScreenRecord().getField(ProductInfoScreenRecord.CONFIRMATION_NO).setEnabled(true);
+        this.getScreenRecord().getField(ProductInfoScreenRecord.CONFIRMED_BY).setEnabled(true);
     }
     /**
      * Does the current user have permission to access this screen.
@@ -111,10 +111,10 @@ public class BaseProductResponseScreen extends MessageScreen
     {
         Record screenRecord = this.getScreenRecord();
         ProductMessageData messageData = (ProductMessageData)message.getMessageDataDesc(null).getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
-        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.kProductID));
-        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.kRateID));
-        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.kClassID));
-        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.kDetailDate));
+        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.PRODUCT_ID));
+        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.RATE_ID));
+        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.CLASS_ID));
+        messageData.getRawFieldData(screenRecord.getField(ProductInfoScreenRecord.DETAIL_DATE));
     }
     /**
      * Move to entered fields to the return message.
@@ -124,13 +124,13 @@ public class BaseProductResponseScreen extends MessageScreen
         super.moveScreenParamsToMessage(message);
         
         ProductResponseMessageData messageData = (ProductResponseMessageData)message.getMessageDataDesc(BaseProductResponse.PRODUCT_RESPONSE_MESSAGE);
-        Double dblCost = (Double)this.getRecord(ProductInfoScreenRecord.kProductInfoScreenRecordFile).getField(ProductInfoScreenRecord.kTotalCost).getData();
+        Double dblCost = (Double)this.getScreenRecord().getField(ProductInfoScreenRecord.TOTAL_COST).getData();
         messageData.put(BookingDetail.TOTAL_COST, dblCost);
-        Integer intAvailability = (Integer)this.getRecord(ProductInfoScreenRecord.kProductInfoScreenRecordFile).getField(ProductInfoScreenRecord.kAvailability).getData();
+        Integer intAvailability = (Integer)this.getScreenRecord().getField(ProductInfoScreenRecord.AVAILABILITY).getData();
         messageData.put(Product.AVAILABILITY_PARAM, intAvailability);
-        String strConfirmationNo = this.getRecord(ProductInfoScreenRecord.kProductInfoScreenRecordFile).getField(ProductInfoScreenRecord.kConfirmationNo).getString();
+        String strConfirmationNo = this.getScreenRecord().getField(ProductInfoScreenRecord.CONFIRMATION_NO).getString();
         messageData.put(Product.CONFIRMATION_NO_PARAM, strConfirmationNo);
-        String strConfirmedBy = this.getRecord(ProductInfoScreenRecord.kProductInfoScreenRecordFile).getField(ProductInfoScreenRecord.kConfirmedBy).getString();
+        String strConfirmedBy = this.getScreenRecord().getField(ProductInfoScreenRecord.CONFIRMED_BY).getString();
         messageData.put(Product.CONFIRMED_BY_PARAM, strConfirmedBy);
         
         BaseProductResponse productResponseData = (BaseProductResponse)message.getMessageDataDesc(null);

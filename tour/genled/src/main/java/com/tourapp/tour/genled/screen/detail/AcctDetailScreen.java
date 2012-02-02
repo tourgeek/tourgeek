@@ -95,7 +95,7 @@ public class AcctDetailScreen extends Screen
     {
         this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kTrxDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        BaseField field = this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kAmountLocal);
+        BaseField field = this.getRecord(AcctDetail.ACCT_DETAIL_FILE).getField(AcctDetail.AMOUNT_LOCAL);
         Converter converter = new DrCrConverter(field, true);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         converter = new DrCrConverter(field, false);

@@ -62,15 +62,15 @@ public class PrepaymentAcctHandler extends FieldListener
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
         RecordOwner screen = this.getOwner().getRecord().getRecordOwner();
-        Record recApControl = (Record)screen.getRecord(ApControl.kApControlFile);
-        BaseField fldApAccountID = this.getOwner().getRecord().getField(ApTrx.kAccountID);
+        Record recApControl = (Record)screen.getRecord(ApControl.AP_CONTROL_FILE);
+        BaseField fldApAccountID = this.getOwner().getRecord().getField(ApTrx.ACCOUNT_ID);
         if (this.getOwner().isNull())
         { // No tour, set defaults
-            fldApAccountID.moveFieldToThis(recApControl.getField(ApControl.kNonTourPrepayAccountID));
+            fldApAccountID.moveFieldToThis(recApControl.getField(ApControl.NON_TOUR_PREPAY_ACCOUNT_ID));
         }
         else
         { // Tour set, use tour P/P account
-            fldApAccountID.moveFieldToThis(recApControl.getField(ApControl.kPrepayAccountID));
+            fldApAccountID.moveFieldToThis(recApControl.getField(ApControl.PREPAY_ACCOUNT_ID));
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }

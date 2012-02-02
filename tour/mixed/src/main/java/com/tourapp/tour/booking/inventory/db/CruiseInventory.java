@@ -164,7 +164,7 @@ public class CruiseInventory extends Inventory
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(Inventory.kProductTypeID, ProductType.CRUISE_ID));
+        this.addListener(new SharedFileHandler(Inventory.PRODUCT_TYPE_ID, ProductType.CRUISE_ID));
     }
 
 }

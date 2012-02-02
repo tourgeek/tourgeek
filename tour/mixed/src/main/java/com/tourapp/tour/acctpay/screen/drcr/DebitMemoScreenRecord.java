@@ -34,8 +34,11 @@ public class DebitMemoScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String TOUR_ACCOUNT_ID = "TourAccountID";
     public static final int kTourAccountID = kScreenRecordLastField + 1;
+    public static final String PP_ACCOUNT_ID = "PpAccountID";
     public static final int kPpAccountID = kTourAccountID + 1;
+    public static final String AP_ACCOUNT_ID = "ApAccountID";
     public static final int kApAccountID = kPpAccountID + 1;
     public static final int kDebitMemoScreenRecordLastField = kApAccountID;
     public static final int kDebitMemoScreenRecordFields = kApAccountID - DBConstants.MAIN_FIELD + 1;

@@ -71,8 +71,8 @@ public class HotelRateRequest extends ProductRateRequest
      */
     public int initForMessage(Record record)
     {
-        record.getField(BookingDetail.kTotalCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        record.getField(BookingDetail.kTotalCostLocal).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        record.getField(BookingDetail.TOTAL_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        record.getField(BookingDetail.TOTAL_COST_LOCAL).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return super.initForMessage(record);
     }
     /**

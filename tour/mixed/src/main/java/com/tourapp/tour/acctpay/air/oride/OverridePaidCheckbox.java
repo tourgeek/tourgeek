@@ -66,7 +66,7 @@ public class OverridePaidCheckbox extends CheckConverter
         int iErrorCode = super.setState(bState, bDisplayOption, iMoveMode);
         if (iErrorCode == DBConstants.NORMAL_RETURN)
             if (bState == true) if (this.getState() == false)
-                ((BaseField)this.getField()).moveFieldToThis(((BaseField)this.getField()).getRecord().getField(TicketTrx.kOverrideAmount));
+                ((BaseField)this.getField()).moveFieldToThis(((BaseField)this.getField()).getRecord().getField(TicketTrx.OVERRIDE_AMOUNT));
         return iErrorCode;
     }
 

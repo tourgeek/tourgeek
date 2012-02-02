@@ -8,7 +8,14 @@ import org.jbundle.model.db.*;
 
 public interface TourTypeModel extends Rec
 {
+
+    //public static final String ID = ID;
     public static final String DESCRIPTION = "Description";
+    public static final String CODE = "Code";
+
+    public static final String DESCRIPTION_KEY = "Description";
+
+    public static final String CODE_KEY = "Code";
     public static final int SERIES = 1 << 1;
 
     public static final String TOUR_TYPE_FILE = "TourType";

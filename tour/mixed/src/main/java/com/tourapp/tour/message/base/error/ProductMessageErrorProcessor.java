@@ -82,7 +82,7 @@ public class ProductMessageErrorProcessor extends BaseProductMessageErrorProcess
         if (internalMessage.getMessageHeader().getRegistryIDMatch() != null)
             messageReplyHeader.setRegistryIDMatch(internalMessage.getMessageHeader().getRegistryIDMatch());
          
-        MessageProcessInfo recMessageProcessInfo = (MessageProcessInfo)this.getRecord(MessageProcessInfo.kMessageProcessInfoFile);
+        MessageProcessInfo recMessageProcessInfo = (MessageProcessInfo)this.getRecord(MessageProcessInfo.MESSAGE_PROCESS_INFO_FILE);
         if (recMessageProcessInfo == null)
             recMessageProcessInfo = new MessageProcessInfo(this);
         BaseMessage errorMessage = (BaseMessage)recMessageProcessInfo.createReplyMessage(internalMessage);

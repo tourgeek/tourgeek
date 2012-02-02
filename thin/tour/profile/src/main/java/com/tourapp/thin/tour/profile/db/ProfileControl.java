@@ -15,6 +15,10 @@ public class ProfileControl extends FieldList
     implements ProfileControlModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+
     public ProfileControl()
     {
         super();

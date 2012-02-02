@@ -65,24 +65,24 @@ public class BookingDetailBaseSession extends TableSession
     public void addListeners()
     {
         super.addListeners();
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         this.getMainRecord().addListener(new SubFileFilter(recBooking));
         
         BookingDetail recBookingDetail = (BookingDetail)this.getMainRecord();
         Record recProduct = recBookingDetail.getProduct();
-        recBookingDetail.getField(BookingDetail.kProductID).addListener(new ReadSecondaryHandler(recProduct));
+        recBookingDetail.getField(BookingDetail.PRODUCT_ID).addListener(new ReadSecondaryHandler(recProduct));
         
-        Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-        recProduct.getField(Product.kVendorID).addListener(new ReadSecondaryHandler(recVendor));
+        Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        recProduct.getField(Product.VENDOR_ID).addListener(new ReadSecondaryHandler(recVendor));
         
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-        recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+        recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         
         // This code read the currency CODE into a virtual field for use in displays 
-        MoveOnChangeHandler moveListener = new MoveOnChangeHandler(recBookingDetail.getField(BookingDetail.kCurrencyCode), recCurrencys.getField(Currencys.kCurrencyCode));
+        MoveOnChangeHandler moveListener = new MoveOnChangeHandler(recBookingDetail.getField(BookingDetail.CURRENCY_CODE), recCurrencys.getField(Currencys.CURRENCY_CODE));
         moveListener.setRespondsToMode(DBConstants.INIT_MOVE, true);
         moveListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBookingDetail.getField(BookingDetail.kProductID).addListener(moveListener);
+        recBookingDetail.getField(BookingDetail.PRODUCT_ID).addListener(moveListener);
     }
 
 }

@@ -86,7 +86,7 @@ public class ProfileDetailBaseGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getHeaderRecord().getField(Profile.kID).addListener(new FieldReSelectHandler(this));  // Reselect on file change
+        this.getHeaderRecord().getField(Profile.ID).addListener(new FieldReSelectHandler(this));  // Reselect on file change
     }
     /**
      * Add button(s) to the toolbar.

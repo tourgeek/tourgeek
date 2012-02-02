@@ -63,14 +63,14 @@ public class McoCollCalcNetBeh extends FileListener
         super.doValidRecord(bDisplayOption);
         double dNet = 0;
         Record recMco = this.getOwner();
-        double dGross = recMco.getField(Mco.kGross).getValue();
-        double dCommission = recMco.getField(Mco.kCommAmt).getValue();
-        double dTaxes = recMco.getField(Mco.kTaxAmt).getValue();
-        double dServiceChargePer = recMco.getField(Mco.kCarrierSvcPer).getValue();
+        double dGross = recMco.getField(Mco.GROSS).getValue();
+        double dCommission = recMco.getField(Mco.COMM_AMT).getValue();
+        double dTaxes = recMco.getField(Mco.TAX_AMT).getValue();
+        double dServiceChargePer = recMco.getField(Mco.CARRIER_SVC_PER).getValue();
         double dServiceCharge = (Math.floor(dGross * dServiceChargePer * 100 + 0.5)) / 100;
         dNet = dGross - dCommission - dTaxes - dServiceCharge;
-        recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.kServiceCharge).setValue(dServiceCharge);
-        recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.kNet).setValue(dNet);
+        recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.SERVICE_CHARGE).setValue(dServiceCharge);
+        recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.NET).setValue(dNet);
     }
 
 }

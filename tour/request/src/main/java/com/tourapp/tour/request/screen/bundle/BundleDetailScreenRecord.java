@@ -31,6 +31,7 @@ public class BundleDetailScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String BUNDLE_ID = "BundleID";
     public static final int kBundleID = kScreenRecordLastField + 1;
     public static final int kBundleDetailScreenRecordLastField = kBundleID;
     public static final int kBundleDetailScreenRecordFields = kBundleID - DBConstants.MAIN_FIELD + 1;

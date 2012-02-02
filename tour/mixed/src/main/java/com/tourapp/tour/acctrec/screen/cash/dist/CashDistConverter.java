@@ -62,8 +62,8 @@ public class CashDistConverter extends DistributionConverter
         // Now create the new distribution
         Record recCashBatchDetail = this.getDetailRecord();
         m_recBankTrxBatchDist.addNew();
-        m_recBankTrxBatchDist.getField(CashBatchDist.kBookingID).moveFieldToThis(referenceField);
-        m_recBankTrxBatchDist.getField(CashBatchDist.kAmount).moveFieldToThis(recCashBatchDetail.getField(CashBatchDetail.kAmount));
+        m_recBankTrxBatchDist.getField(CashBatchDist.BOOKING_ID).moveFieldToThis(referenceField);
+        m_recBankTrxBatchDist.getField(CashBatchDist.AMOUNT).moveFieldToThis(recCashBatchDetail.getField(CashBatchDetail.AMOUNT));
         m_recBankTrxBatchDist.add();
     }
     /**
@@ -84,7 +84,7 @@ public class CashDistConverter extends DistributionConverter
                 if (this.getField().getRecord() != null)
                     ((BaseField)this.getField()).getRecord().addListener(new FreeOnFreeHandler(recCashBatchDist));
         }
-        recCashBatchDist.setKeyArea(CashBatchDist.kCashBatchDetailIDKey);
+        recCashBatchDist.setKeyArea(CashBatchDist.CASH_BATCH_DETAIL_ID_KEY);
         recCashBatchDist.addListener(new SubFileFilter(recBatchDetail));
         return recCashBatchDist;
     }
@@ -103,11 +103,11 @@ public class CashDistConverter extends DistributionConverter
     {
         // Then, update the cache
         String strResult = SPLIT;
-        if (!m_recBankTrxBatchDist.getField(CashBatchDist.kBookingID).isNull())
+        if (!m_recBankTrxBatchDist.getField(CashBatchDist.BOOKING_ID).isNull())
         {
             strResult = this.getDisplayField(null).toString();
             m_htCache.put(bookmarkKey, strResult);
-            String strAccountNo = ((ReferenceField)m_recBankTrxBatchDist.getField(CashBatchDist.kBookingID)).getReference().getField(Booking.kID).toString();
+            String strAccountNo = ((ReferenceField)m_recBankTrxBatchDist.getField(CashBatchDist.BOOKING_ID)).getReference().getField(Booking.ID).toString();
             m_htCacheAccountNo.put(bookmarkKey, strAccountNo);
         }
         return strResult;
@@ -117,7 +117,7 @@ public class CashDistConverter extends DistributionConverter
      */
     public Record getDetailRecord()
     {
-        Record recCashBatchDetail = (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(CashBatchDetail.kCashBatchDetailFile);
+        Record recCashBatchDetail = (Record)((BaseField)this.getField()).getRecord().getRecordOwner().getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE);
         return recCashBatchDetail;
     }
     /**
@@ -128,8 +128,8 @@ public class CashDistConverter extends DistributionConverter
     public BaseField getDisplayField(Record recSecondary)
     {
         if (recSecondary == null)
-            recSecondary = ((ReferenceField)m_recBankTrxBatchDist.getField(CashBatchDist.kBookingID)).getReference();
-        return recSecondary.getField(Booking.kDescription);
+            recSecondary = ((ReferenceField)m_recBankTrxBatchDist.getField(CashBatchDist.BOOKING_ID)).getReference();
+        return recSecondary.getField(Booking.DESCRIPTION);
     }
     /**
      * Set up the default control for this field.
@@ -145,7 +145,7 @@ public class CashDistConverter extends DistributionConverter
         Record recBooking = ((ReferenceField)converter.getField()).getReferenceRecord();
         
         // Don't want to display the booking number if code doesn't exist (too confusing)
-        //ScreenField sFieldNo = recBooking.getField(Booking.kCode).getSFieldAt(0);
+        //ScreenField sFieldNo = recBooking.getField(Booking.CODE).getSFieldAt(0);
         //Converter fldConverter = sFieldNo.getConverter();
         //BaseField field = (BaseField)fldConverter.getField();
         //if (fldConverter != field)

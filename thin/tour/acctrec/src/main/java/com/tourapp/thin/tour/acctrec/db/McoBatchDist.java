@@ -16,6 +16,14 @@ public class McoBatchDist extends CashBatchDist
     implements McoBatchDistModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    //public static final String CASH_BATCH_DETAIL_ID = CASH_BATCH_DETAIL_ID;
+    //public static final String ACCOUNT_ID = ACCOUNT_ID;
+    //public static final String AMOUNT = AMOUNT;
+    //public static final String BOOKING_ID = BOOKING_ID;
+
     public McoBatchDist()
     {
         super();

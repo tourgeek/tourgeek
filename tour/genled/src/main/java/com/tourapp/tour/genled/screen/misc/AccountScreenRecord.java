@@ -32,7 +32,9 @@ public class AccountScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String ACCT_NAME_SORT = "AcctNameSort";
     public static final int kAcctNameSort = kScreenRecordLastField + 1;
+    public static final String ACCOUNT_KEY_AREA = "AccountKeyArea";
     public static final int kAccountKeyArea = kAcctNameSort + 1;
     public static final int kAccountScreenRecordLastField = kAccountKeyArea;
     public static final int kAccountScreenRecordFields = kAccountKeyArea - DBConstants.MAIN_FIELD + 1;

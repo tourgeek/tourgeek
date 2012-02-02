@@ -75,11 +75,11 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
     public Record openHeaderRecord()
     {
         Record recProductSearchDetail = this.getMainRecord();
-        String strProductType = this.getProperty(Product.kProductFile);
+        String strProductType = this.getProperty(Product.PRODUCT_FILE);
         if (strProductType == null)
         {
-            Record recProductType = ((ReferenceField)recProductSearchDetail.getField(ProductSearchDetail.kProductTypeID)).getReference();
-            strProductType = recProductType.getField(ProductType.kDescription).toString();
+            Record recProductType = ((ReferenceField)recProductSearchDetail.getField(ProductSearchDetail.PRODUCT_TYPE_ID)).getReference();
+            strProductType = recProductType.getField(ProductType.DESCRIPTION).toString();
         }
         Product recProduct = Product.getProductRecord(strProductType, this);
         return recProduct;
@@ -91,25 +91,25 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
     {
         super.addListeners();
         // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).syncReference(this.getHeaderRecord());
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).syncReference(this.getHeaderRecord());
         // Sub file stuff
-        this.getMainRecord().setKeyArea(ProductSearchDetail.kProductIDKey);
+        this.getMainRecord().setKeyArea(ProductSearchDetail.PRODUCT_ID_KEY);
         Product recProduct = (Product)this.getHeaderRecord();
-        ProductType recProductType = (ProductType)((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductTypeID)).getReferenceRecord();
+        ProductType recProductType = (ProductType)((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_TYPE_ID)).getReferenceRecord();
         int iProductTypeID = recProductType.getProductTypeID(recProduct);
-        this.getScreenRecord().getField(ProductScreenRecord.kProductTypeID).setValue(iProductTypeID);
-        this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord().getField(Product.kID), ProductSearchDetail.kProductID, this.getScreenRecord().getField(ProductScreenRecord.kProductTypeID), ProductSearchDetail.kProductTypeID, this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kProductSearchTypeID), ProductSearchDetail.kProductSearchTypeID));
+        this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_TYPE_ID).setValue(iProductTypeID);
+        this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord().getField(Product.ID), ProductSearchDetail.PRODUCT_ID, this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_TYPE_ID), ProductSearchDetail.PRODUCT_TYPE_ID, this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_SEARCH_TYPE_ID), ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID));
         
-        if (Boolean.TRUE.toString().equalsIgnoreCase(this.getProperty(this.getScreenRecord().getField(ProductScreenRecord.kReadOnly).getFieldName())))
+        if (Boolean.TRUE.toString().equalsIgnoreCase(this.getProperty(this.getScreenRecord().getField(ProductScreenRecord.READ_ONLY).getFieldName())))
         {
             this.setAppending(false);
             this.setEditing(false);
         }
         
-        this.addProductTypeFilter((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID));    
-        SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).getComponent(0);
+        this.addProductTypeFilter((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID));    
+        SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).getComponent(0);
         control.reSelectRecords();
-        this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).addListener(new InitFieldHandler(this.getScreenRecord().getField(ProductScreenRecord.kProductSearchTypeID)));
+        this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).addListener(new InitFieldHandler(this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_SEARCH_TYPE_ID)));
     }
     /**
      * Add the screen fields.
@@ -128,8 +128,8 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
     {
         ToolScreen screen = super.addToolbars();
         
-        this.addProductTypeFilter((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductSearchTypeID));
-        this.getScreenRecord().getField(ProductScreenRecord.kProductSearchTypeID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.addProductTypeFilter((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_SEARCH_TYPE_ID));
+        this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_SEARCH_TYPE_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
         
         return screen;
     }
@@ -148,13 +148,13 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
     {
         this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 
-        SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchCategoryID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         
-        Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID)).getReferenceRecord();
-        Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchCategoryID)).getReferenceRecord();
-        recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.kProductSearchTypeID, recProductSearchType.getField(ProductSearchType.kID), DBConstants.EQUALS, null, true));
+        Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID)).getReferenceRecord();
+        Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID)).getReferenceRecord();
+        recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID, recProductSearchType.getField(ProductSearchType.ID), DBConstants.EQUALS, null, true));
         
-        this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).addListener(new FieldReSelectHandler(control)); 
+        this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).addListener(new FieldReSelectHandler(control)); 
         
         this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kSearchData).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
@@ -177,7 +177,7 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
     public String getScreenURL()
     {
         String strURL = super.getScreenURL();
-        strURL = Utility.addURLParam(strURL, Product.kProductFile, this.getHeaderRecord().getTableNames(false));
+        strURL = Utility.addURLParam(strURL, Product.PRODUCT_FILE, this.getHeaderRecord().getTableNames(false));
         return strURL;
     }
 

@@ -97,14 +97,14 @@ public class CurrencyReqGridScreen extends GridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().setKeyArea(Vendor.kCurrencysIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CurrencyReqScreenRecord.kCurrencysID), Vendor.kCurrencysID, null, -1, null, -1, true));
-        this.getScreenRecord().getField(CurrencyReqScreenRecord.kCurrencysID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().setKeyArea(Vendor.CURRENCYS_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CurrencyReqScreenRecord.CURRENCYS_ID), Vendor.CURRENCYS_ID, null, null, null, null, true));
+        this.getScreenRecord().getField(CurrencyReqScreenRecord.CURRENCYS_ID).addListener(new FieldReSelectHandler(this));
         
         ApTrx recApTrx = ((Vendor)this.getMainRecord()).addSelectBehaviors();
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CurrencyReqScreenRecord.kBalanceTotal), Vendor.kVendorBalance, true, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CurrencyReqScreenRecord.kTotalTotal), Vendor.kAmountSelected, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CurrencyReqScreenRecord.BALANCE_TOTAL), Vendor.VENDOR_BALANCE, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CurrencyReqScreenRecord.TOTAL_TOTAL), Vendor.AMOUNT_SELECTED, true, true));
         
         this.setEnabled(false);
     }

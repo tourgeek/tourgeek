@@ -93,53 +93,53 @@ public class DepEstScreen extends Screen
     {
         // Don't call super.
         this.addMainKeyBehavior();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
         
-        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.kTrxStatusID);
+        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.TRX_STATUS_ID);
         this.getMainRecord().addListener(behavior);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_EST_MANUAL);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_ESTIMATE);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEPARTURE_EST_MANUAL);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEP_ESTIMATE);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
         
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_EST_MANUAL);
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).setEnabled(false);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEPARTURE_EST_MANUAL);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).setEnabled(false);
         
-        this.getMainRecord().addListener(new EnableOnValidHandler(ApTrx.kVendorID, false, true));    // Don't allow changes here
-        this.getMainRecord().addListener(new EnableOnValidHandler(ApTrx.kTourID, false, true));    // Don't allow changes here        
+        this.getMainRecord().addListener(new EnableOnValidHandler(ApTrx.VENDOR_ID, false, true));    // Don't allow changes here
+        this.getMainRecord().addListener(new EnableOnValidHandler(ApTrx.TOUR_ID, false, true));    // Don't allow changes here        
         
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new InitOnceFieldHandler(null));
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new InitOnceFieldHandler(null));
         this.getMainRecord().addListener(new UpdateDepEstHandler(null));
         
-        this.getMainRecord().getField(ApTrx.kDepartureEstimate).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kTrxStatusID), recTrxStatus.getField(TransactionType.kID)));
-        this.getMainRecord().getField(ApTrx.kDepartureExchange).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kTrxStatusID), recTrxStatus.getField(TransactionType.kID)));
-        this.getMainRecord().getField(ApTrx.kDepartureEstimateLocal).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kTrxStatusID), recTrxStatus.getField(TransactionType.kID)));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.TRX_STATUS_ID), recTrxStatus.getField(TransactionType.ID)));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.TRX_STATUS_ID), recTrxStatus.getField(TransactionType.ID)));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.TRX_STATUS_ID), recTrxStatus.getField(TransactionType.ID)));
         
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kDepartureExchange), recCurrencys.getField(Currencys.kLastRate)));
-        this.getMainRecord().getField(ApTrx.kDepartureEstimate).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kDepartureExchange), recCurrencys.getField(Currencys.kLastRate)));
-        this.getMainRecord().getField(ApTrx.kDepartureEstimate).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kDepartureEstimateLocal), this.getMainRecord().getField(ApTrx.kDepartureExchange), this.getMainRecord().getField(ApTrx.kDepartureEstimate), CalcBalanceHandler.MULTIPLY, true));
-        this.getMainRecord().getField(ApTrx.kDepartureExchange).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kDepartureEstimateLocal), this.getMainRecord().getField(ApTrx.kDepartureExchange), this.getMainRecord().getField(ApTrx.kDepartureEstimate), CalcBalanceHandler.MULTIPLY, true));
-        this.getMainRecord().getField(ApTrx.kDepartureEstimateLocal).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kDepartureExchange), this.getMainRecord().getField(ApTrx.kDepartureEstimateLocal), this.getMainRecord().getField(ApTrx.kDepartureEstimate), CalcBalanceHandler.DIVIDE, true));
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), recCurrencys.getField(Currencys.LAST_RATE)));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), recCurrencys.getField(Currencys.LAST_RATE)));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL), this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE), CalcBalanceHandler.MULTIPLY, true));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL), this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE), CalcBalanceHandler.MULTIPLY, true));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL), this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE), CalcBalanceHandler.DIVIDE, true));
         
-        Record recTour = ((ReferenceField)this.getMainRecord().getField(ApTrx.kTourID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kStartServiceDate), recTour.getField(Tour.kDepartureDate)));
-        this.getMainRecord().getField(ApTrx.kStartServiceDate).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kEndServiceDate), this.getMainRecord().getField(ApTrx.kStartServiceDate)));
+        Record recTour = ((ReferenceField)this.getMainRecord().getField(ApTrx.TOUR_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.START_SERVICE_DATE), recTour.getField(Tour.DEPARTURE_DATE)));
+        this.getMainRecord().getField(ApTrx.START_SERVICE_DATE).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.END_SERVICE_DATE), this.getMainRecord().getField(ApTrx.START_SERVICE_DATE)));
         
-        this.getMainRecord().addListener(new ValidateFieldHandler(ApTrx.kTourID, null, false));
+        this.getMainRecord().addListener(new ValidateFieldHandler(ApTrx.TOUR_ID, null, false));
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         ScreenField screenField = null;
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -167,8 +167,8 @@ public class DepEstScreen extends Screen
         {
             this.getMainRecord().getField(i).setEnabled(bEnable);
         }
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).setEnabled(false);
-        this.getMainRecord().getField(ApTrx.kID).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).setEnabled(false);
+        this.getMainRecord().getField(ApTrx.ID).setEnabled(true);
     }
     /**
      * Returns the Component that should receive the focus after aComponent.
@@ -180,10 +180,10 @@ public class DepEstScreen extends Screen
     {
         if (iSelectField == DBConstants.SELECT_FIRST_FIELD)
         {
-            if (this.getMainRecord().getField(ApTrx.kDescription).getComponent(0) != null)
-                if (((ScreenField)this.getMainRecord().getField(ApTrx.kDescription).getComponent(0)).isEnabled())
+            if (this.getMainRecord().getField(ApTrx.DESCRIPTION).getComponent(0) != null)
+                if (((ScreenField)this.getMainRecord().getField(ApTrx.DESCRIPTION).getComponent(0)).isEnabled())
             {   // The screen is enabled, focus on the vendor code
-                return (ScreenField)((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord().getField(Vendor.kCode).getComponent(0);
+                return (ScreenField)((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord().getField(Vendor.CODE).getComponent(0);
             }
         }
         return super.getComponentAfter(sfCurrent, iSelectField);
@@ -208,8 +208,8 @@ public class DepEstScreen extends Screen
             int iDocMode = ApTrx.TOUR_AP_SCREEN | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();
             properties.put(ApTrxClassField.DISPLAY_TYPE_PARAM, Integer.toString(ApTrxClassField.ALL));
-            if (!this.getMainRecord().getField(ApTrx.kTourID).isNull())
-                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.kTourID).toString());
+            if (!this.getMainRecord().getField(ApTrx.TOUR_ID).isNull())
+                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.TOUR_ID).toString());
         
             return (this.onForm(null, iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
         }

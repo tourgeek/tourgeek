@@ -16,6 +16,13 @@ public class TourHeaderAirHeader extends TourSub
     implements TourHeaderAirHeaderModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    //public static final String TOUR_HEADER_OPTION_ID = TOUR_HEADER_OPTION_ID;
+    //public static final String MODIFY_CODE = MODIFY_CODE;
+    //public static final String MODIFY_ID = MODIFY_ID;
+
     public TourHeaderAirHeader()
     {
         super();

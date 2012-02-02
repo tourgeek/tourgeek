@@ -8,7 +8,10 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface TransportationClassModel extends BaseClassModel
 {
-    public static final String DESCRIPTION = "Description";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String CODE = CODE;
     public static final String FIRST_CLASS = "1";
     public static final String SECOND_CLASS = "2";
     public static final String THIRD_CLASS = "3";

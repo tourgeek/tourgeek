@@ -395,7 +395,7 @@ public class TicketTrx extends ApTrx
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(ApTrx.kApTrxTypeID, ApTrx.TICKET_TRX_TYPE));
+        this.addListener(new SharedFileHandler(ApTrx.AP_TRX_TYPE_ID, ApTrx.TICKET_TRX_TYPE));
     }
 
 }

@@ -190,14 +190,14 @@ public class TrxStatus extends VirtualRecord
     public int getTrxStatusID(String strSystemCode, String strDescCode, String strStatusCode)
     {
         int iTrxStatusID = 0;
-        this.setKeyArea(TrxStatus.kSystemCodeKey);
-        this.getField(TrxStatus.kSystemCode).setString(strSystemCode);
-        this.getField(TrxStatus.kDescCode).setString(strDescCode);
-        this.getField(TrxStatus.kStatusCode).setString(strStatusCode);
+        this.setKeyArea(TrxStatus.SYSTEM_CODE_KEY);
+        this.getField(TrxStatus.SYSTEM_CODE).setString(strSystemCode);
+        this.getField(TrxStatus.DESC_CODE).setString(strDescCode);
+        this.getField(TrxStatus.STATUS_CODE).setString(strStatusCode);
         try   {
             boolean bSuccess = this.seek("=");
             if (bSuccess)
-                iTrxStatusID = (int)this.getField(TrxStatus.kID).getValue();
+                iTrxStatusID = (int)this.getField(TrxStatus.ID).getValue();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }

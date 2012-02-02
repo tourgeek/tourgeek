@@ -8,6 +8,14 @@ import com.tourapp.model.tour.assetdr.db.*;
 
 public interface CashBatchDistModel extends BankTrxBatchDistModel
 {
+
+    //public static final String ID = ID;
+    public static final String CASH_BATCH_DETAIL_ID = BANK_TRX_BATCH_DETAIL_ID;
+    //public static final String ACCOUNT_ID = ACCOUNT_ID;
+    //public static final String AMOUNT = AMOUNT;
+    public static final String BOOKING_ID = "BookingID";
+
+    public static final String CASH_BATCH_DETAIL_ID_KEY = "CashBatchDetailID";
     public static final String CASH_BATCH_DIST_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.cash.CashBatchDistScreen";
     public static final String CASH_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.cash.CashBatchDistGridScreen";
 

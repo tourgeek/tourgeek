@@ -60,8 +60,8 @@ public class GetItemCostHandler extends GetProductCostHandler
     {
         boolean bQueryComplete = super.isQueryComplete();
         if ((bQueryComplete)
-            && (!m_recProductVars.getField(ProductScreenRecord.kRateID).isNull())
-            && (!m_recProductVars.getField(ProductScreenRecord.kClassID).isNull()))
+            && (!m_recProductVars.getField(ProductScreenRecord.RATE_ID).isNull())
+            && (!m_recProductVars.getField(ProductScreenRecord.CLASS_ID).isNull()))
             return true;
         return false;
     }

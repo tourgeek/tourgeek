@@ -79,18 +79,18 @@ public class UpdateArTrxHandler extends FileListener
         {   // Be careful because booking is no longer current
             Booking recBooking = (Booking)this.getOwner();
             boolean bUpdateArTrx = false;
-            if (recBooking.getField(Booking.kBookingStatusID).isModified())
+            if (recBooking.getField(Booking.BOOKING_STATUS_ID).isModified())
                 bUpdateArTrx = true;
-            if (recBooking.getField(Booking.kNet).isModified())
+            if (recBooking.getField(Booking.NET).isModified())
                 bUpdateArTrx = true;
             if (bUpdateArTrx)
             { // Only do if booking is accepted
-                BookingStatus recBookingStatus = (BookingStatus)((ReferenceField)recBooking.getField(Booking.kBookingStatusID)).getReference();
-                if ((BookingStatus.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.kCode).toString()))
-                    || (BookingStatus.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.kCode).toString())))
+                BookingStatus recBookingStatus = (BookingStatus)((ReferenceField)recBooking.getField(Booking.BOOKING_STATUS_ID)).getReference();
+                if ((BookingStatus.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString()))
+                    || (BookingStatus.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString())))
                         bUpdateArTrx = false;   // Don't update A/R if the booking has not been accepted
-                if (recBooking.getField(Booking.kBalance).getValue() != 0)
-                    if (recBooking.getField(Booking.kFinalPaymentReceived).getState() == false) // Because if final pymt was received, the balance should be 0
+                if (recBooking.getField(Booking.BALANCE).getValue() != 0)
+                    if (recBooking.getField(Booking.FINAL_PAYMENT_RECEIVED).getState() == false) // Because if final pymt was received, the balance should be 0
                         bUpdateArTrx = true;    // Special case - A/R Trx's already exist
             }
             if (bUpdateArTrx)
@@ -108,7 +108,7 @@ public class UpdateArTrxHandler extends FileListener
                         recBooking.edit();
                     ArTrx recArTrx = recBooking.addArDetail(null, null, true);     // Make sure BookingLine and ArTrx detail (totals) are there
                 // First, total the booking balance
-                    double dTotal = recBooking.getField(Booking.kNet).getValue();
+                    double dTotal = recBooking.getField(Booking.NET).getValue();
                 // Next, total the current A/R invoice total
                     
                     ArTrxInvoiceSubCountHandler subCountHandler = (ArTrxInvoiceSubCountHandler)recArTrx.getListener(ArTrxInvoiceSubCountHandler.class);
@@ -118,9 +118,9 @@ public class UpdateArTrxHandler extends FileListener
                     if (dAdjustment != 0)
                     { // Add an A/R Adjustment
                         recArTrx.addNew();
-                        recArTrx.getField(ArTrx.kTrxStatusID).setValue(iTrxStatus);   // Invoice modification
-                        recArTrx.getField(ArTrx.kAmount).setValue(dAdjustment);
-                        recArTrx.getField(ArTrx.kComments).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kStatusDesc));
+                        recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iTrxStatus);   // Invoice modification
+                        recArTrx.getField(ArTrx.AMOUNT).setValue(dAdjustment);
+                        recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
                         recArTrx.add();
                     }
                     recBooking.set();   // Since it was 'after update' this will leave booking in the same state.

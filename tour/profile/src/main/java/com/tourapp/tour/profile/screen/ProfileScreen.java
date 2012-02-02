@@ -90,23 +90,23 @@ public class ProfileScreen extends Screen
     {
         super.addListeners();
         this.addMainKeyBehavior();
-        Profile recProfile = (Profile)this.getRecord(Profile.kProfileFile);
-        ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl.kProfileControlFile);
+        Profile recProfile = (Profile)this.getRecord(Profile.PROFILE_FILE);
+        ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl.PROFILE_CONTROL_FILE);
         try   {
             recProfileControl.open();   // Read the control file
-            recProfile.getField(Profile.kProfileStatusID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.kDefaultProfileStatusID)));
-            recProfile.getField(Profile.kProfileClassID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.kDefaultProfileClassID)));
-            recProfile.getField(Profile.kProfileTypeID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.kDefaultProfileTypeID)));
-            recProfile.getField(Profile.kCountryID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.kCountryID)));
-            recProfile.getField(Profile.kPrimaryLanguageID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.kLanguageID)));
-            recProfile.getField(Profile.kCurrencysID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.kCurrencysID)));
+            recProfile.getField(Profile.PROFILE_STATUS_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.DEFAULT_PROFILE_STATUS_ID)));
+            recProfile.getField(Profile.PROFILE_CLASS_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.DEFAULT_PROFILE_CLASS_ID)));
+            recProfile.getField(Profile.PROFILE_TYPE_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.DEFAULT_PROFILE_TYPE_ID)));
+            recProfile.getField(Profile.COUNTRY_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.COUNTRY_ID)));
+            recProfile.getField(Profile.PRIMARY_LANGUAGE_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.LANGUAGE_ID)));
+            recProfile.getField(Profile.CURRENCYS_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.CURRENCYS_ID)));
         } catch (DBException ex)    {
             ex.printStackTrace();
         }
-        Record recCountry = ((ReferenceField)recProfile.getField(Profile.kCountryID)).getReferenceRecord();
-        recProfile.getField(Profile.kCountryID).addListener(new MoveOnChangeHandler(recProfile.getField(Profile.kCountry), recCountry.getField(Country.kName)));
-        recProfile.getField(Profile.kCountryID).addListener(new MoveOnChangeHandler(recProfile.getField(Profile.kPrimaryLanguageID), recCountry.getField(Country.kLanguageID)));
-        recProfile.getField(Profile.kCountryID).addListener(new MoveOnChangeHandler(recProfile.getField(Profile.kCurrencysID), recCountry.getField(Country.kCurrencysID)));
+        Record recCountry = ((ReferenceField)recProfile.getField(Profile.COUNTRY_ID)).getReferenceRecord();
+        recProfile.getField(Profile.COUNTRY_ID).addListener(new MoveOnChangeHandler(recProfile.getField(Profile.COUNTRY), recCountry.getField(Country.NAME)));
+        recProfile.getField(Profile.COUNTRY_ID).addListener(new MoveOnChangeHandler(recProfile.getField(Profile.PRIMARY_LANGUAGE_ID), recCountry.getField(Country.LANGUAGE_ID)));
+        recProfile.getField(Profile.COUNTRY_ID).addListener(new MoveOnChangeHandler(recProfile.getField(Profile.CURRENCYS_ID), recCountry.getField(Country.CURRENCYS_ID)));
     }
     /**
      * Add button(s) to the toolbar.

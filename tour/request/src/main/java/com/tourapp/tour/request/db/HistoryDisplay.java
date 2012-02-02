@@ -103,24 +103,24 @@ public class HistoryDisplay extends QueryRecord
      */
     public void selectFields()
     {
-        RequestHistoryDetail pAmReqHistory = (RequestHistoryDetail)this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile);
-        this.setGridFile(pAmReqHistory, RequestHistoryDetail.kProfileIDKey);
+        RequestHistoryDetail pAmReqHistory = (RequestHistoryDetail)this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE);
+        this.setGridFile(pAmReqHistory, RequestHistoryDetail.PROFILE_ID_KEY);
         
         this.setSelected(false);    // de-select all
         super.selectFields();
-        //xthis.getField(RequestHistoryDetail.kRequestHistoryDetailFile, RequestHistoryDetail.kUseAgency).setSelected(true);
-        this.getField(RequestHistoryDetail.kRequestHistoryDetailFile, RequestHistoryDetail.kProfileID).setSelected(true);
-        this.getField(RequestHistoryDetail.kRequestHistoryDetailFile, RequestHistoryDetail.kMailedOn).setSelected(true);
-        this.getField(RequestHistoryDetail.kRequestHistoryDetailFile, RequestHistoryDetail.kBrochureQty).setSelected(true);
-        this.getField(Brochure.kBrochureFile, Brochure.kDescription).setSelected(true);
-        this.getField(RequestHistoryDetail.kRequestHistoryDetailFile, RequestHistoryDetail.kBrochureID).setSelected(true);
+        //xthis.getField(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE, RequestHistoryDetail.USE_AGENCY).setSelected(true);
+        this.getField(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE, RequestHistoryDetail.PROFILE_ID).setSelected(true);
+        this.getField(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE, RequestHistoryDetail.MAILED_ON).setSelected(true);
+        this.getField(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE, RequestHistoryDetail.BROCHURE_QTY).setSelected(true);
+        this.getField(Brochure.BROCHURE_FILE, Brochure.DESCRIPTION).setSelected(true);
+        this.getField(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE, RequestHistoryDetail.BROCHURE_ID).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_INNER, this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile), this.getRecord(Brochure.kBrochureFile), RequestHistoryDetail.kBrochureID, Brochure.kID);
+        this.addRelationship(DBConstants.LEFT_INNER, this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE), this.getRecord(Brochure.BROCHURE_FILE), RequestHistoryDetail.BROCHURE_ID, Brochure.ID);
     }
 
 }

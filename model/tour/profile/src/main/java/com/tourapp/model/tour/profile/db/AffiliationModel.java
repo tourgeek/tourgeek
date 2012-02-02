@@ -8,6 +8,17 @@ import org.jbundle.model.db.*;
 
 public interface AffiliationModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String CODE = "Code";
+    public static final String DESCRIPTION = "Description";
+    public static final String AGENT_COMM = "AgentComm";
+    public static final String AFFILIATION_COMM = "AffiliationComm";
+    public static final String VENDOR_ID = "VendorID";
+
+    public static final String CODE_KEY = "Code";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final String AFFILIATION_SCREEN_CLASS = "com.tourapp.tour.profile.screen.AffiliationScreen";
     public static final String AFFILIATION_GRID_SCREEN_CLASS = "com.tourapp.tour.profile.screen.AffiliationGridScreen";
 

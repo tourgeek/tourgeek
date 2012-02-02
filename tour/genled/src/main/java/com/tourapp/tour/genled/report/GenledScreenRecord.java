@@ -39,25 +39,45 @@ public class GenledScreenRecord extends ReportScreenRecord
     //public static final int kReportPage = kReportPage;
     //public static final int kReportTotal = kReportTotal;
     //public static final int kReportCount = kReportCount;
+    public static final String START_ACCOUNT_ID = "StartAccountID";
     public static final int kStartAccountID = kReportScreenRecordLastField + 1;
+    public static final String END_ACCOUNT_ID = "EndAccountID";
     public static final int kEndAccountID = kStartAccountID + 1;
+    public static final String START_DATE = "StartDate";
     public static final int kStartDate = kEndAccountID + 1;
+    public static final String END_DATE = "EndDate";
     public static final int kEndDate = kStartDate + 1;
+    public static final String CUTOFF_DATE = "CutoffDate";
     public static final int kCutoffDate = kEndDate + 1;
+    public static final String PRINT_DETAIL = "PrintDetail";
     public static final int kPrintDetail = kCutoffDate + 1;
+    public static final String SUB_TOTALS = "SubTotals";
     public static final int kSubTotals = kPrintDetail + 1;
+    public static final String PAGE_BREAKS = "PageBreaks";
     public static final int kPageBreaks = kSubTotals + 1;
+    public static final String START_ENTRY = "StartEntry";
     public static final int kStartEntry = kPageBreaks + 1;
+    public static final String END_ENTRY = "EndEntry";
     public static final int kEndEntry = kStartEntry + 1;
+    public static final String PROFIT_CENTER_ID = "ProfitCenterID";
     public static final int kProfitCenterID = kEndEntry + 1;
+    public static final String START_SOURCE = "StartSource";
     public static final int kStartSource = kProfitCenterID + 1;
+    public static final String END_SOURCE = "EndSource";
     public static final int kEndSource = kStartSource + 1;
+    public static final String START_BALANCE = "StartBalance";
     public static final int kStartBalance = kEndSource + 1;
+    public static final String CHANGE_BALANCE = "ChangeBalance";
     public static final int kChangeBalance = kStartBalance + 1;
+    public static final String END_BALANCE = "EndBalance";
     public static final int kEndBalance = kChangeBalance + 1;
+    public static final String SUB_TOTAL = "SubTotal";
     public static final int kSubTotal = kEndBalance + 1;
+    public static final String DEBIT = "Debit";
     public static final int kDebit = kSubTotal + 1;
+    public static final String CREDIT = "Credit";
     public static final int kCredit = kDebit + 1;
+    public static final String TEMPLATE = "template";
     public static final int ktemplate = kCredit + 1;
     public static final int kGenledScreenRecordLastField = ktemplate;
     public static final int kGenledScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;
@@ -176,8 +196,8 @@ public class GenledScreenRecord extends ReportScreenRecord
             if (m_recPeriod.getRecordOwner() != null)
                 m_recPeriod.getRecordOwner().removeRecord(m_recPeriod);
         }
-        m_recPeriod.setPeriodDefaults(this, GenledScreenRecord.kStartDate, GenledScreenRecord.kEndDate, null);
-        this.getField(GenledScreenRecord.kCutoffDate).moveFieldToThis(this.getField(GenledScreenRecord.kEndDate));
+        m_recPeriod.setPeriodDefaults(this, GenledScreenRecord.START_DATE, GenledScreenRecord.END_DATE, null);
+        this.getField(GenledScreenRecord.CUTOFF_DATE).moveFieldToThis(this.getField(GenledScreenRecord.END_DATE));
     }
 
 }

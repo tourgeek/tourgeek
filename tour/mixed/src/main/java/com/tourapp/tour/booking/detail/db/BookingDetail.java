@@ -265,7 +265,7 @@ public class BookingDetail extends BookingSub
                 ex.printStackTrace();
             }
             if ((this.getEditMode() == DBConstants.EDIT_ADD) || (this.getEditMode() == DBConstants.EDIT_NONE))
-                if (this.getField(BookingDetail.kProductTypeID).isNull())
+                if (this.getField(BookingDetail.PRODUCT_TYPE_ID).isNull())
                     if (properties != null)
                         if (properties.get(DBConstants.OBJECT_ID) != null)
             {   // The only way to figure out the product type is to read the record
@@ -282,9 +282,9 @@ public class BookingDetail extends BookingSub
                     return record.makeScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, iDocMode, properties);
             if (objObjectID != null)
                 parentScreen.setProperty(DBConstants.STRING_OBJECT_ID_HANDLE, objObjectID.toString());
-            if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.HOTEL_ID)
+            if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.HOTEL_ID)
                 screen = new BookingHotelScreen(null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
-            else //if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.LAND_ID)
+            else //if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.LAND_ID)
                 screen = new BookingLandScreen(null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         }
         else //if ((iDocMode & ScreenConstants.DISPLAY_MODE) != 0)
@@ -759,16 +759,16 @@ public class BookingDetail extends BookingSub
     {
         super.addMasterListeners();
         
-        BookingDetailSoftDeleteHandler listener = new BookingDetailSoftDeleteHandler(this.getField(BookingDetail.kDeleted));
+        BookingDetailSoftDeleteHandler listener = new BookingDetailSoftDeleteHandler(this.getField(BookingDetail.DELETED));
         this.addListener(listener);
         listener.filterThisRecord(false);   // Display deleted record (usually switchable in screens)
         
-        this.getField(BookingDetail.kProductType).addListener(new ProductTypeHandler(null));
+        this.getField(BookingDetail.PRODUCT_TYPE).addListener(new ProductTypeHandler(null));
         // Since Meals handler is such a resource hog, you should only add it manually todo(don)
-        this.getField(BookingDetail.kMealSummary).addListener(new MealsHandler(null));
-        this.getField(BookingDetail.kStatusSummary).addListener(new StatusHandler(null));
+        this.getField(BookingDetail.MEAL_SUMMARY).addListener(new MealsHandler(null));
+        this.getField(BookingDetail.STATUS_SUMMARY).addListener(new StatusHandler(null));
         
-        this.getField(BookingDetail.kApTrxID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.kProductID), null, false));
+        this.getField(BookingDetail.AP_TRX_ID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.PRODUCT_ID), null, false));
         
         this.addLookupListeners();
     }
@@ -778,55 +778,55 @@ public class BookingDetail extends BookingSub
      */
     public void addLookupListeners()
     {
-        BaseField fldExchange = this.getField(BookingDetail.kExchange);
-        this.getField(BookingDetail.kTotalCost).addListener(new CalcBalanceHandler(this.getField(BookingDetail.kTotalCostLocal), this.getField(BookingDetail.kTotalCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        BaseField fldExchange = this.getField(BookingDetail.EXCHANGE);
+        this.getField(BookingDetail.TOTAL_COST).addListener(new CalcBalanceHandler(this.getField(BookingDetail.TOTAL_COST_LOCAL), this.getField(BookingDetail.TOTAL_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         
-        String strManualTransportID = Integer.toString(((ReferenceField)this.getField(BookingDetail.kCostMessageTransportID)).getIDFromCode(MessageTransport.MANUAL));
+        String strManualTransportID = Integer.toString(((ReferenceField)this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.MANUAL));
         
-        Converter converterNotInfoManualTransport = new CheckConverter(this.getField(BookingDetail.kInfoMessageTransportID), strManualTransportID, null, false);
-        this.getField(BookingDetail.kInfoMessageTransportID).addListener(new RemoveConverterOnFreeHandler(converterNotInfoManualTransport));
-        Converter converterNotCostManualTransport = new CheckConverter(this.getField(BookingDetail.kCostMessageTransportID), strManualTransportID, null, false);
-        this.getField(BookingDetail.kCostMessageTransportID).addListener(new RemoveConverterOnFreeHandler(converterNotCostManualTransport));
-        Converter converterNotInventoryManualTransport = new CheckConverter(this.getField(BookingDetail.kInventoryMessageTransportID), strManualTransportID, null, false);
-        this.getField(BookingDetail.kInventoryMessageTransportID).addListener(new RemoveConverterOnFreeHandler(converterNotInventoryManualTransport));
-        Converter converterNotProductManualTransport = new CheckConverter(this.getField(BookingDetail.kProductMessageTransportID), strManualTransportID, null, false);
-        this.getField(BookingDetail.kProductMessageTransportID).addListener(new RemoveConverterOnFreeHandler(converterNotProductManualTransport));
+        Converter converterNotInfoManualTransport = new CheckConverter(this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new RemoveConverterOnFreeHandler(converterNotInfoManualTransport));
+        Converter converterNotCostManualTransport = new CheckConverter(this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID).addListener(new RemoveConverterOnFreeHandler(converterNotCostManualTransport));
+        Converter converterNotInventoryManualTransport = new CheckConverter(this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID).addListener(new RemoveConverterOnFreeHandler(converterNotInventoryManualTransport));
+        Converter converterNotProductManualTransport = new CheckConverter(this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID), strManualTransportID, null, false);
+        this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID).addListener(new RemoveConverterOnFreeHandler(converterNotProductManualTransport));
         
-        this.getField(BookingDetail.kInfoMessageTransportID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.kInfoStatusID), strManualTransportID, false));
-        this.getField(BookingDetail.kInventoryMessageTransportID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.kInventoryStatusID), strManualTransportID, false));
-        this.getField(BookingDetail.kCostMessageTransportID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.kCostStatusID), strManualTransportID, false));
-        this.getField(BookingDetail.kCostMessageTransportID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.kTotalCost), strManualTransportID, false));
-        this.getField(BookingDetail.kProductMessageTransportID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.kProductStatusID), strManualTransportID, false));
+        this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.INFO_STATUS_ID), strManualTransportID, false));
+        this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.INVENTORY_STATUS_ID), strManualTransportID, false));
+        this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.COST_STATUS_ID), strManualTransportID, false));
+        this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.TOTAL_COST), strManualTransportID, false));
+        this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getField(BookingDetail.PRODUCT_STATUS_ID), strManualTransportID, false));
         
         Boolean boolRequestRequiredFlag = Boolean.TRUE;
         InitOnChangeHandler listener = null;
-        this.getField(BookingDetail.kInfoMessageTransportID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.kInfoRequestKey)));
+        this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.INFO_REQUEST_KEY)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getField(BookingDetail.kInfoMessageTransportID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInfoStatusRequest), boolRequestRequiredFlag, null));
-        this.getField(BookingDetail.kInventoryMessageTransportID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.kInventoryRequestKey)));
+        this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INFO_STATUS_REQUEST), boolRequestRequiredFlag, null));
+        this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.INVENTORY_REQUEST_KEY)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getField(BookingDetail.kInventoryMessageTransportID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, null));
-        this.getField(BookingDetail.kCostMessageTransportID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.kCostRequestKey)));
+        this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, null));
+        this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.COST_REQUEST_KEY)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getField(BookingDetail.kCostMessageTransportID).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, null));
-        this.getField(BookingDetail.kProductMessageTransportID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.kProductRequestKey)));
+        this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, null));
+        this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID).addListener(listener = new InitOnChangeHandler(this.getField(BookingDetail.PRODUCT_REQUEST_KEY)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getField(BookingDetail.kProductMessageTransportID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, null));
+        this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, null));
         
         // First, handle new information lookups
-        this.getField(BookingDetail.kProductID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInfoStatusRequest), boolRequestRequiredFlag, converterNotInfoManualTransport));
-        this.getField(BookingDetail.kDetailDate).addListener(new FieldDataScratchHandler(null, false));   // Don't change on refresh
-        this.getField(BookingDetail.kDetailDate).addListener(new CopyDataHandler(this.getField(BookingDetail.kInfoStatusRequest), boolRequestRequiredFlag, converterNotInfoManualTransport));
-        this.getField(BookingDetail.kInfoStatusRequest).addListener(new CheckRequestRequiredHandler(BookingDetail.kInfoStatusID));
+        this.getField(BookingDetail.PRODUCT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INFO_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInfoManualTransport));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new FieldDataScratchHandler(null, false));   // Don't change on refresh
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new CopyDataHandler(this.getField(BookingDetail.INFO_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInfoManualTransport));
+        this.getField(BookingDetail.INFO_STATUS_REQUEST).addListener(new CheckRequestRequiredHandler(BookingDetail.INFO_STATUS_ID));
         
         // If any of these values change, you will have to re-lookup the price.
-        this.getField(BookingDetail.kProductID).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
-        this.getField(BookingDetail.kDetailDate).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
-        this.getField(BookingDetail.kDetailEndDate).addListener(new FieldListener(null)
+        this.getField(BookingDetail.PRODUCT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingDetail.DETAIL_END_DATE).addListener(new FieldListener(null)
         { // If the end data changes call this setEndDate method
             public int fieldChanged(boolean bDisplayOption, int iMoveMode)
             { // Override to do something!
@@ -838,41 +838,41 @@ public class BookingDetail extends BookingSub
                 return iReturnCode;
             }
         });
-        this.getField(BookingDetail.kRateID).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
-        this.getField(BookingDetail.kClassID).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingDetail.RATE_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingDetail.CLASS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
         // If the info changes from valid AND the transport is not manual, change the info status to request required.
-        FieldConverter convIfCostStatusTrueAndNotManual = new AltFieldConverter(new RadioConverter(this.getField(BookingDetail.kInfoStatusID), new Integer(CostStatus.VALID), true), converterNotCostManualTransport, Integer.toString(CostStatus.VALID));
-        this.getField(BookingDetail.kInfoStatusID).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, convIfCostStatusTrueAndNotManual));
+        FieldConverter convIfCostStatusTrueAndNotManual = new AltFieldConverter(new RadioConverter(this.getField(BookingDetail.INFO_STATUS_ID), new Integer(CostStatus.VALID), true), converterNotCostManualTransport, Integer.toString(CostStatus.VALID));
+        this.getField(BookingDetail.INFO_STATUS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, convIfCostStatusTrueAndNotManual));
         // If when you update this record a Lookup is requested, set to schedule lookup and schedule the lookup.
-        this.getField(BookingDetail.kCostStatusRequest).addListener(new CheckRequestRequiredHandler(BookingDetail.kCostStatusID));
+        this.getField(BookingDetail.COST_STATUS_REQUEST).addListener(new CheckRequestRequiredHandler(BookingDetail.COST_STATUS_ID));
         
         // If any of these values change, you will have to re-lookup the inventory.
-        this.getField(BookingDetail.kProductID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, converterNotInventoryManualTransport));
-        this.getField(BookingDetail.kDetailDate).addListener(new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, converterNotInventoryManualTransport));
-        this.getField(BookingDetail.kRateID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, converterNotInventoryManualTransport));
-        this.getField(BookingDetail.kClassID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, converterNotInventoryManualTransport));
+        this.getField(BookingDetail.PRODUCT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInventoryManualTransport));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInventoryManualTransport));
+        this.getField(BookingDetail.RATE_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInventoryManualTransport));
+        this.getField(BookingDetail.CLASS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, converterNotInventoryManualTransport));
         // If the info changes from valid AND the transport is not manual, change the info status to request required.
-        FieldConverter convIfInventoryStatusTrueAndNotManual = new AltFieldConverter(new RadioConverter(this.getField(BookingDetail.kInfoStatusID), new Integer(CostStatus.VALID), true), converterNotInventoryManualTransport, Integer.toString(CostStatus.VALID));
-        this.getField(BookingDetail.kInfoStatusID).addListener(new CopyDataHandler(this.getField(BookingDetail.kInventoryStatusRequest), boolRequestRequiredFlag, convIfInventoryStatusTrueAndNotManual));
+        FieldConverter convIfInventoryStatusTrueAndNotManual = new AltFieldConverter(new RadioConverter(this.getField(BookingDetail.INFO_STATUS_ID), new Integer(CostStatus.VALID), true), converterNotInventoryManualTransport, Integer.toString(CostStatus.VALID));
+        this.getField(BookingDetail.INFO_STATUS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.INVENTORY_STATUS_REQUEST), boolRequestRequiredFlag, convIfInventoryStatusTrueAndNotManual));
         // If when you update this record a Lookup is requested, set to schedule lookup and schedule the lookup.
-        this.getField(BookingDetail.kInventoryStatusRequest).addListener(new CheckRequestRequiredHandler(BookingDetail.kInventoryStatusID));
+        this.getField(BookingDetail.INVENTORY_STATUS_REQUEST).addListener(new CheckRequestRequiredHandler(BookingDetail.INVENTORY_STATUS_ID));
         // If these change, re-request the booking
-        this.getField(BookingDetail.kProductID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
-        this.getField(BookingDetail.kDetailDate).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
-        this.getField(BookingDetail.kRateID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
-        this.getField(BookingDetail.kClassID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
-        this.getField(BookingDetail.kDeleted).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingDetail.PRODUCT_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingDetail.RATE_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingDetail.CLASS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
+        this.getField(BookingDetail.DELETED).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, converterNotProductManualTransport));
         // If the info changes from valid AND the transport is not manual, change the info status to request required.
-        FieldConverter convIfProductStatusTrueAndNotManual = new AltFieldConverter(new RadioConverter(this.getField(BookingDetail.kInfoStatusID), new Integer(CostStatus.VALID), true), converterNotProductManualTransport, Integer.toString(CostStatus.VALID));
-        this.getField(BookingDetail.kInfoStatusID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, convIfProductStatusTrueAndNotManual));
-        this.getField(BookingDetail.kInventoryStatusID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, convIfProductStatusTrueAndNotManual));
-        this.getField(BookingDetail.kCostStatusID).addListener(new CopyDataHandler(this.getField(BookingDetail.kProductStatusRequest), boolRequestRequiredFlag, convIfProductStatusTrueAndNotManual));
+        FieldConverter convIfProductStatusTrueAndNotManual = new AltFieldConverter(new RadioConverter(this.getField(BookingDetail.INFO_STATUS_ID), new Integer(CostStatus.VALID), true), converterNotProductManualTransport, Integer.toString(CostStatus.VALID));
+        this.getField(BookingDetail.INFO_STATUS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, convIfProductStatusTrueAndNotManual));
+        this.getField(BookingDetail.INVENTORY_STATUS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, convIfProductStatusTrueAndNotManual));
+        this.getField(BookingDetail.COST_STATUS_ID).addListener(new CopyDataHandler(this.getField(BookingDetail.PRODUCT_STATUS_REQUEST), boolRequestRequiredFlag, convIfProductStatusTrueAndNotManual));
         // When a product booking is requested, this listener will set up the message
-        this.getField(BookingDetail.kProductStatusRequest).addListener(new CheckRequestRequiredHandler(BookingDetail.kProductStatusID));
+        this.getField(BookingDetail.PRODUCT_STATUS_REQUEST).addListener(new CheckRequestRequiredHandler(BookingDetail.PRODUCT_STATUS_ID));
         
-        this.getField(BookingDetail.kMarkupFromLast).addListener(new CopyDataHandler(this.getField(BookingDetail.kCostStatusRequest), boolRequestRequiredFlag, converterNotCostManualTransport));
+        this.getField(BookingDetail.MARKUP_FROM_LAST).addListener(new CopyDataHandler(this.getField(BookingDetail.COST_STATUS_REQUEST), boolRequestRequiredFlag, converterNotCostManualTransport));
         FieldDataScratchHandler fieldListener = null;
-        this.getField(BookingDetail.kMarkupFromLast).addListener(fieldListener = new FieldDataScratchHandler(null)
+        this.getField(BookingDetail.MARKUP_FROM_LAST).addListener(fieldListener = new FieldDataScratchHandler(null)
         {
             public int fieldChanged(boolean bDisplayOption, int iMoveMode)
             {
@@ -886,9 +886,9 @@ public class BookingDetail extends BookingSub
                     if (fCurrent != 0)
                         if (fCurrent != fOrig)
                     {
-                        double dCost = this.getOwner().getRecord().getField(BookingDetail.kTotalCost).getValue();
+                        double dCost = this.getOwner().getRecord().getField(BookingDetail.TOTAL_COST).getValue();
                         dCost = Math.floor((dCost / (1 + fOrig)) * (1 + fCurrent) * 100 + 0.5) / 100;
-                        this.getOwner().getRecord().getField(BookingDetail.kTotalCost).setValue(dCost);
+                        this.getOwner().getRecord().getField(BookingDetail.TOTAL_COST).setValue(dCost);
                     }
                     this.setOriginalData(this.getOwner().getData());
                 }
@@ -897,10 +897,10 @@ public class BookingDetail extends BookingSub
         });
         fieldListener.setRespondsToMode(DBConstants.SCREEN_MOVE, true);
         
-        this.addListener(new UpdateTourStatusHandler(BookingDetail.kInfoStatusID));
-        this.addListener(new UpdateTourStatusHandler(BookingDetail.kInventoryStatusID));
-        this.addListener(new UpdateTourStatusHandler(BookingDetail.kCostStatusID));
-        this.addListener(new UpdateTourStatusHandler(BookingDetail.kProductStatusID));
+        this.addListener(new UpdateTourStatusHandler(BookingDetail.INFO_STATUS_ID));
+        this.addListener(new UpdateTourStatusHandler(BookingDetail.INVENTORY_STATUS_ID));
+        this.addListener(new UpdateTourStatusHandler(BookingDetail.COST_STATUS_ID));
+        this.addListener(new UpdateTourStatusHandler(BookingDetail.PRODUCT_STATUS_ID));
         
         this.addListener(new BookingDetailPriceChangeHandler(null));
     }
@@ -911,9 +911,9 @@ public class BookingDetail extends BookingSub
     public void addScreenListeners(RecordOwner screen)
     {
         super.addScreenListeners(screen);
-        String strManualTransportID = Integer.toString(((ReferenceField)this.getField(BookingDetail.kCostMessageTransportID)).getIDFromCode(MessageTransport.MANUAL));
-        if (((ReferenceField)this.getField(BookingDetail.kProductID)).getReferenceRecord() != null)
-            this.getField(BookingDetail.kInfoMessageTransportID).addListener(new ManualProductInfoHandler(((ReferenceField)this.getField(BookingDetail.kProductID)).getReferenceRecord().getField(Product.kDescription), strManualTransportID, false));
+        String strManualTransportID = Integer.toString(((ReferenceField)this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.MANUAL));
+        if (((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord() != null)
+            this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new ManualProductInfoHandler(((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord().getField(Product.DESCRIPTION), strManualTransportID, false));
     }
     /**
      * AddSlaveListeners Method.
@@ -922,7 +922,7 @@ public class BookingDetail extends BookingSub
     {
         super.addSlaveListeners();
         
-        this.addListener(new HistoryHandler(BookingDetailHistory.class.getName(), BookingDetailHistory.kHistoryDate, -1));
+        this.addListener(new HistoryHandler(BookingDetailHistory.class.getName(), BookingDetailHistory.HISTORY_DATE, null));
     }
     /**
      * Get the record type from the field that specifies the record type.
@@ -931,7 +931,7 @@ public class BookingDetail extends BookingSub
      */
     public BaseField getSharedRecordTypeKey()
     {
-        return this.getField(BookingDetail.kProductTypeID);
+        return this.getField(BookingDetail.PRODUCT_TYPE_ID);
     }
     /**
      * Get the shared record that goes with this key.
@@ -998,26 +998,26 @@ public class BookingDetail extends BookingSub
             && (recBooking.getRecordOwner().getScreenRecord() instanceof BookingScreenRecord))
         {
             screenRecord = (Record)recBooking.getRecordOwner().getScreenRecord();
-            Record recProduct = ((ReferenceField)this.getField(BookingDetail.kProductID)).getReferenceRecord(this.getRecordOwner());
+            Record recProduct = ((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this.getRecordOwner());
             // Note that I add these listeners in reverse since they always do the other listeners before they do themselves.
             if (recProduct != null)
             {
                 if (recProduct instanceof TransportProduct)
-                    this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.kLastCityID), ((TransportProduct)recProduct).getField(TransportProduct.kToCityID), null, false, false, false, true, true, null, true));
-                this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.kLastCityID), recProduct.getField(Product.kCityID), null, false, false, false, true, true, null, false));
+                    this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.LAST_CITY_ID), ((TransportProduct)recProduct).getField(TransportProduct.TO_CITY_ID), null, false, false, false, true, true, null, true));
+                this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.LAST_CITY_ID), recProduct.getField(Product.CITY_ID), null, false, false, false, true, true, null, false));
             }
             // If the end date is non-null, use it!
-            this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.kLastDate), this.getField(BookingDetail.kDetailDate), null, false, false, false, true, true, null, false));
-            this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.kLastDate), this.getField(BookingDetail.kDetailEndDate), null, false, false, false, true, true, null, true));
+            this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.LAST_DATE), this.getField(BookingDetail.DETAIL_DATE), null, false, false, false, true, true, null, false));
+            this.addListener(new MoveOnEventHandler(screenRecord.getField(BookingScreenRecord.LAST_DATE), this.getField(BookingDetail.DETAIL_END_DATE), null, false, false, false, true, true, null, true));
             
-            FieldListener listener = this.getField(BookingDetail.kDetailDate).getListener(InitOnceFieldHandler.class.getName());
+            FieldListener listener = this.getField(BookingDetail.DETAIL_DATE).getListener(InitOnceFieldHandler.class.getName());
             if (listener != null)
-                this.getField(BookingDetail.kDetailDate).removeListener(listener, true);
-            this.getField(BookingDetail.kDetailDate).addListener(new InitFieldHandler(screenRecord.getField(BookingScreenRecord.kLastDate), false));
+                this.getField(BookingDetail.DETAIL_DATE).removeListener(listener, true);
+            this.getField(BookingDetail.DETAIL_DATE).addListener(new InitFieldHandler(screenRecord.getField(BookingScreenRecord.LAST_DATE), false));
         }
         // Note these next listener are just a backup if the screenRecord date is null or not available. (First departure, then today)
-        this.getField(BookingDetail.kDetailDate).addListener(new InitFieldHandler(new Date()));
-        this.getField(BookingDetail.kDetailDate).addListener(new InitFieldHandler(recTour.getField(Tour.kDepartureDate), false));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new InitFieldHandler(new Date()));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new InitFieldHandler(recTour.getField(Tour.DEPARTURE_DATE), false));
         
         // Make sure header is up-to-date for possible server record changes.
         this.addListener(new WriteOnUpdateHandler(recBooking, true));
@@ -1030,8 +1030,8 @@ public class BookingDetail extends BookingSub
      */
     public Product getProduct()
     {
-        ((ReferenceField)this.getField(BookingDetail.kProductID)).getReferenceRecord(this.getRecordOwner());    // Reference same recordowner
-        return (Product)((ReferenceField)this.getField(BookingDetail.kProductID)).getReference();
+        ((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this.getRecordOwner());    // Reference same recordowner
+        return (Product)((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReference();
     }
     /**
      * Set the start date for this item.
@@ -1040,8 +1040,8 @@ public class BookingDetail extends BookingSub
      */
     public Date setStartDate(Date time)
     {
-        ((DateTimeField)this.getField(BookingDetail.kDetailDate)).setDateTime(time, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        return ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();
+        ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).setDateTime(time, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        return ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();
     }
     /**
      * Get the start date and time for this product.
@@ -1049,7 +1049,7 @@ public class BookingDetail extends BookingSub
      */
     public Date getStartDate()
     {
-        return ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();
+        return ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();
     }
     /**
      * Set up the date and time for this detail item 
@@ -1067,34 +1067,34 @@ public class BookingDetail extends BookingSub
             // Date comes from the # days offset for this detail
             // Time comes from the detail time field (if null, use the product's etd time)
             if ((dateStart == null) || (dateStart.getTime() == 0))
-                dateStart = ((DateTimeField)recTour.getField(Tour.kDepartureDate)).getDateTime();
+                dateStart = ((DateTimeField)recTour.getField(Tour.DEPARTURE_DATE)).getDateTime();
             calendar.setTime(dateStart);
             calendar.set(Calendar.HOUR_OF_DAY, 0);
             calendar.set(Calendar.MINUTE, 0);
             calendar.set(Calendar.SECOND, 0);
             calendar.set(Calendar.MILLISECOND, 0);
-            int iDaysOffset = (int)recTourHeaderDetail.getField(TourHeaderDetail.kDay).getValue();
+            int iDaysOffset = (int)recTourHeaderDetail.getField(TourHeaderDetail.DAY).getValue();
             iDaysOffset -= 1; // Day 1 = offset +0
             calendar.add(Calendar.DATE, iDaysOffset);
             dateStart = calendar.getTime();     // Start date
-            if (!recTourHeaderDetail.getField(TourHeaderDetail.kEtd).isNull())
+            if (!recTourHeaderDetail.getField(TourHeaderDetail.ETD).isNull())
             {
-                timeDetail = ((DateTimeField)recTourHeaderDetail.getField(TourHeaderDetail.kEtd)).getDateTime();    // Start time
+                timeDetail = ((DateTimeField)recTourHeaderDetail.getField(TourHeaderDetail.ETD)).getDateTime();    // Start time
                 bSetTime = true;    // Use this time!
             }
         }
         
         Product recProduct = this.getProduct();
         if (!bSetTime)
-            if ((recProduct != null) && (!recProduct.getField(Product.kEtd).isNull()))
+            if ((recProduct != null) && (!recProduct.getField(Product.ETD).isNull()))
         {
-            timeDetail = ((TimeField)recProduct.getField(Product.kEtd)).getDateTime();
+            timeDetail = ((TimeField)recProduct.getField(Product.ETD)).getDateTime();
             bSetTime = true;    // Did supply a time
         }
         
         if ((dateStart == null) || (dateStart.getTime() == 0)
-            || ((recTourHeaderDetail == null) && (!this.getField(BookingDetail.kDetailDate).isNull())))
-                dateStart = ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();    // Don't change date (change time only if 0 or 12)
+            || ((recTourHeaderDetail == null) && (!this.getField(BookingDetail.DETAIL_DATE).isNull())))
+                dateStart = ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();    // Don't change date (change time only if 0 or 12)
         if (dateStart != null)
             calendar.setTime(dateStart); // Time portion
         if (!bSetTime)
@@ -1127,13 +1127,13 @@ public class BookingDetail extends BookingSub
             }
         }
         
-        boolean[] rgbEnabled = this.getField(BookingDetail.kDetailDate).setEnableListeners(false);  // Don't call again
-        ((DateTimeField)this.getField(BookingDetail.kDetailDate)).setDate(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        boolean[] rgbEnabled = this.getField(BookingDetail.DETAIL_DATE).setEnableListeners(false);  // Don't call again
+        ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).setDate(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         if (timeDetail != null)
-            ((DateTimeField)this.getField(BookingDetail.kDetailDate)).setTime(timeDetail, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingDetail.kDetailDate).setEnableListeners(rgbEnabled);
+            ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).setTime(timeDetail, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingDetail.DETAIL_DATE).setEnableListeners(rgbEnabled);
         
-        return ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();
+        return ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();
     }
     /**
      * Set the ending time for this tour product.
@@ -1149,7 +1149,7 @@ public class BookingDetail extends BookingSub
      */
     public Date getEndDate()
     {
-        return ((DateTimeField)this.getField(BookingDetail.kDetailEndDate)).getDateTime();
+        return ((DateTimeField)this.getField(BookingDetail.DETAIL_END_DATE)).getDateTime();
     }
     /**
      * SetupEndDate Method.
@@ -1175,21 +1175,21 @@ public class BookingDetail extends BookingSub
         if ((recProduct != null) &&
             ((recProduct.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recProduct.getEditMode() == DBConstants.EDIT_CURRENT)))
         {
-            Record recCity = ((ReferenceField)recProduct.getField(Product.kCityID)).getReference();
+            Record recCity = ((ReferenceField)recProduct.getField(Product.CITY_ID)).getReference();
             if (recCity != null)
             {
-                this.getField(BookingDetail.kGMTOffset).moveFieldToThis(recCity.getField(City.kGMTOffset));
-                if (recCity.getField(City.kGMTOffset).isNull())
+                this.getField(BookingDetail.GMT_OFFSET).moveFieldToThis(recCity.getField(City.GMT_OFFSET));
+                if (recCity.getField(City.GMT_OFFSET).isNull())
                 {
-                    Record recCountry = ((ReferenceField)recCity.getField(City.kCountryID)).getReference();
+                    Record recCountry = ((ReferenceField)recCity.getField(City.COUNTRY_ID)).getReference();
                     if (recCountry != null)
                     {
-                        this.getField(BookingDetail.kGMTOffset).moveFieldToThis(recCountry.getField(Country.kGMTOffset));
-                        if (this.getField(BookingDetail.kGMTOffset).isNull())
+                        this.getField(BookingDetail.GMT_OFFSET).moveFieldToThis(recCountry.getField(Country.GMT_OFFSET));
+                        if (this.getField(BookingDetail.GMT_OFFSET).isNull())
                         {
-                            Record recState = ((ReferenceField)recCity.getField(City.kStateID)).getReference();
+                            Record recState = ((ReferenceField)recCity.getField(City.STATE_ID)).getReference();
                             if (recState != null)
-                                this.getField(BookingDetail.kGMTOffset).moveFieldToThis(recState.getField(State.kGMTOffset));
+                                this.getField(BookingDetail.GMT_OFFSET).moveFieldToThis(recState.getField(State.GMT_OFFSET));
                         }
                     }
                 }
@@ -1199,15 +1199,15 @@ public class BookingDetail extends BookingSub
         
         Date date = this.getStartDate();
         calendar.setTime(date);
-        calendar.add(Calendar.HOUR_OF_DAY, (int)this.getField(BookingDetail.kGMTOffset).getValue());
+        calendar.add(Calendar.HOUR_OF_DAY, (int)this.getField(BookingDetail.GMT_OFFSET).getValue());
         date = calendar.getTime();
-        ((DateTimeField)this.getField(BookingDetail.kGMTDate)).setDateTime(date,  DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((DateTimeField)this.getField(BookingDetail.GMT_DATE)).setDateTime(date,  DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
         date = this.getEndDate();
         calendar.setTime(date);
-        calendar.add(Calendar.HOUR_OF_DAY, (int)this.getField(BookingDetail.kGMTOffset).getValue());
+        calendar.add(Calendar.HOUR_OF_DAY, (int)this.getField(BookingDetail.GMT_OFFSET).getValue());
         date = calendar.getTime();
-        ((DateTimeField)this.getField(BookingDetail.kGMTEndDate)).setDateTime(date,  DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((DateTimeField)this.getField(BookingDetail.GMT_END_DATE)).setDateTime(date,  DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
     }
     /**
      * Get the description of the product for this line item.
@@ -1216,7 +1216,7 @@ public class BookingDetail extends BookingSub
      */
     public String getProductDesc()
     {
-        return this.getField(BookingDetail.kDescription).toString();
+        return this.getField(BookingDetail.DESCRIPTION).toString();
 
     }
     /**
@@ -1228,8 +1228,8 @@ public class BookingDetail extends BookingSub
     {
         Product recProduct = this.getProduct();
         if (recProduct == null)
-            return this.getField(BookingDetail.kDescription).toString();
-        return recProduct.getField(Product.kDescription).toString();
+            return this.getField(BookingDetail.DESCRIPTION).toString();
+        return recProduct.getField(Product.DESCRIPTION).toString();
     }
     /**
      * Get the meals on this day. If bDetailedDesc is false, a very short (1-3 char) desc is returned.
@@ -1297,7 +1297,7 @@ public class BookingDetail extends BookingSub
     public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
-        this.getField(BookingDetail.kTourID).moveFieldToThis(recTour.getField(Tour.kID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        this.getField(BookingDetail.TOUR_ID).moveFieldToThis(recTour.getField(Tour.ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -1309,25 +1309,25 @@ public class BookingDetail extends BookingSub
     public int setDetailProductInfo(Map<String,Object> properties, TourSub recTourHeaderDetail, Booking recBooking, Tour recTour, BaseField fldPaxID, BaseField fldQaID, BaseField fldModID)
     {
         if (((recTourHeaderDetail == null)
-            && (this.getField(BookingDetail.kProductID).getLength() == 0))
+            && (this.getField(BookingDetail.PRODUCT_ID).getLength() == 0))
             || ((recTourHeaderDetail == null)
-            && (this.getField(BookingDetail.kDetailDate).getLength() == 0)))
+            && (this.getField(BookingDetail.DETAIL_DATE).getLength() == 0)))
         {
-            this.getField(BookingDetail.kInfoStatusID).setValue(CostStatus.DATA_REQUIRED);
+            this.getField(BookingDetail.INFO_STATUS_ID).setValue(CostStatus.DATA_REQUIRED);
             String strError = "Data required in the {0} field";
             strError = this.getTask().getApplication().getResources(ThinResourceConstants.ERROR_RESOURCE, true).getString(strError);
-            strError = MessageFormat.format(strError, this.getField(BookingDetail.kInfoStatusID).getFieldDesc());
-            this.setErrorMessage(BookingDetail.kInfoStatusID, strError);
+            strError = MessageFormat.format(strError, this.getField(BookingDetail.INFO_STATUS_ID).getFieldDesc());
+            this.setErrorMessage(BookingDetail.INFO_STATUS_ID, strError);
             // Even though there is an error, continue setting the other properties (hey behaviors are disabled)
         }
         if (recBooking == null)
             recBooking = this.getBooking(true);
         if (recTour == null)
         {
-            if (this.getField(BookingDetail.kTourID).isNull())
-                recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            if (this.getField(BookingDetail.TOUR_ID).isNull())
+                recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             else
-                recTour = (Tour)((ReferenceField)this.getField(BookingDetail.kTourID)).getReference();
+                recTour = (Tour)((ReferenceField)this.getField(BookingDetail.TOUR_ID)).getReference();
         }
         
         boolean[] rgbEnabled = this.setEnableListeners(false);
@@ -1340,25 +1340,25 @@ public class BookingDetail extends BookingSub
         boolean[] rgbModified = this.getModified();
         
         this.initBookingDetailFields(recBooking, recTour, true);    // This will init any fields that aren't already set up.
-        if (this.getField(BookingDetail.kInfoMessageTransportID).isNull())
+        if (this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).isNull())
         {
-            int iDefaultInfoTransport = ((ReferenceField)this.getField(BookingDetail.kInfoMessageTransportID)).getIDFromCode(MessageTransport.DEFAULT);
-            this.getField(BookingDetail.kInfoMessageTransportID).setValue(iDefaultInfoTransport, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            int iDefaultInfoTransport = ((ReferenceField)this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.DEFAULT);
+            this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).setValue(iDefaultInfoTransport, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         }
         
-        if (this.getField(BookingDetail.kProductID).isJustModified())
+        if (this.getField(BookingDetail.PRODUCT_ID).isJustModified())
         {   // Note: No need to enable behaviors, since if info status changes, the other status' behaviors will be called also. 
-            this.getField(BookingDetail.kInfoStatusID).setValue(InfoStatus.NOT_VALID);
-            this.getField(BookingDetail.kInfoRequestKey).initField(DBConstants.DISPLAY);    // Zero this out
-            this.getField(BookingDetail.kCostMessageTransportID).initField(DBConstants.DISPLAY);
-            this.getField(BookingDetail.kCostStatusID).setValue(InfoStatus.NOT_VALID);
-            this.getField(BookingDetail.kCostRequestKey).initField(DBConstants.DISPLAY);    // Zero this out
-            this.getField(BookingDetail.kInventoryMessageTransportID).initField(DBConstants.DISPLAY);
-            this.getField(BookingDetail.kInventoryStatusID).setValue(InfoStatus.NOT_VALID);
-            this.getField(BookingDetail.kInventoryRequestKey).initField(DBConstants.DISPLAY);    // Zero this out
-            this.getField(BookingDetail.kProductMessageTransportID).initField(DBConstants.DISPLAY);
-            this.getField(BookingDetail.kProductStatusID).setValue(InfoStatus.NOT_VALID);
-            this.getField(BookingDetail.kProductRequestKey).initField(DBConstants.DISPLAY);    // Zero this out
+            this.getField(BookingDetail.INFO_STATUS_ID).setValue(InfoStatus.NOT_VALID);
+            this.getField(BookingDetail.INFO_REQUEST_KEY).initField(DBConstants.DISPLAY);    // Zero this out
+            this.getField(BookingDetail.COST_MESSAGE_TRANSPORT_ID).initField(DBConstants.DISPLAY);
+            this.getField(BookingDetail.COST_STATUS_ID).setValue(InfoStatus.NOT_VALID);
+            this.getField(BookingDetail.COST_REQUEST_KEY).initField(DBConstants.DISPLAY);    // Zero this out
+            this.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID).initField(DBConstants.DISPLAY);
+            this.getField(BookingDetail.INVENTORY_STATUS_ID).setValue(InfoStatus.NOT_VALID);
+            this.getField(BookingDetail.INVENTORY_REQUEST_KEY).initField(DBConstants.DISPLAY);    // Zero this out
+            this.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID).initField(DBConstants.DISPLAY);
+            this.getField(BookingDetail.PRODUCT_STATUS_ID).setValue(InfoStatus.NOT_VALID);
+            this.getField(BookingDetail.PRODUCT_REQUEST_KEY).initField(DBConstants.DISPLAY);    // Zero this out
         }
         
         int iErrorCode = super.setDetailProductInfo(properties, recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
@@ -1377,7 +1377,7 @@ public class BookingDetail extends BookingSub
     {
         int iErrorCode = super.setDetailProductFields(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
         if (recTourHeaderDetail != null)
-            this.getField(BookingDetail.kProductID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.kProductID));
+            this.getField(BookingDetail.PRODUCT_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.PRODUCT_ID));
         Product recProduct = this.getProduct();
         if (recProduct != null)
             if ((recProduct.getEditMode() == DBConstants.EDIT_NONE) || (recProduct.getEditMode() == DBConstants.EDIT_ADD))
@@ -1398,16 +1398,16 @@ public class BookingDetail extends BookingSub
         }
         this.setModified(rgbModifiedAfterTourHeader);
         
-        Date dateStart = ((DateTimeField)this.getField(BookingDetail.kModuleStartDate)).getDateTime();
+        Date dateStart = ((DateTimeField)this.getField(BookingDetail.MODULE_START_DATE)).getDateTime();
         Date date = this.setupStartDate(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);
-        ((DateTimeField)this.getField(BookingDetail.kDetailDate)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         date = this.setupEndDate();
-        ((DateTimeField)this.getField(BookingDetail.kDetailEndDate)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((DateTimeField)this.getField(BookingDetail.DETAIL_END_DATE)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         String strDesc = this.setupProductDesc();
-        this.getField(BookingDetail.kDescription).setString(strDesc);
+        this.getField(BookingDetail.DESCRIPTION).setString(strDesc);
         this.setupGMTDates();
         
-        this.getField(BookingDetail.kTourID).moveFieldToThis(recTour.getField(Tour.kID));   // Could be fake tour or dual series
+        this.getField(BookingDetail.TOUR_ID).moveFieldToThis(recTour.getField(Tour.ID));   // Could be fake tour or dual series
         
         return iErrorCode;
     }
@@ -1418,23 +1418,23 @@ public class BookingDetail extends BookingSub
      */
     public int moveProductFields(Product recProduct)
     {
-        if (this.getField(BookingDetail.kAckDays).isNull())
-            this.moveTargetField(recProduct, BookingDetail.kAckDays, Product.kAckDays);
+        if (this.getField(BookingDetail.ACK_DAYS).isNull())
+            this.moveTargetField(recProduct, BookingDetail.ACK_DAYS, Product.ACK_DAYS);
         
-        this.getField(BookingDetail.kVendorID).setModified(false);  // This will be auto-restored in calling (setDetailProductFields) method.
-        this.getField(BookingDetail.kVendorID).moveFieldToThis(recProduct.getField(Product.kVendorID));
-        if (this.getField(BookingDetail.kVendorID).isModified())
+        this.getField(BookingDetail.VENDOR_ID).setModified(false);  // This will be auto-restored in calling (setDetailProductFields) method.
+        this.getField(BookingDetail.VENDOR_ID).moveFieldToThis(recProduct.getField(Product.VENDOR_ID));
+        if (this.getField(BookingDetail.VENDOR_ID).isModified())
         {
-            Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReference();
+            Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReference();
             if (recVendor != null)
             {
-                Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReference();
+                Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReference();
                 if (recCurrency != null)
                 {
-                    if (!recCurrency.getField(Currencys.kCostingRate).isNull())
-                        this.getField(BookingDetail.kExchange).moveFieldToThis(recCurrency.getField(Currencys.kCostingRate));
+                    if (!recCurrency.getField(Currencys.COSTING_RATE).isNull())
+                        this.getField(BookingDetail.EXCHANGE).moveFieldToThis(recCurrency.getField(Currencys.COSTING_RATE));
                     else
-                        this.getField(BookingDetail.kExchange).moveFieldToThis(recCurrency.getField(Currencys.kLastRate));
+                        this.getField(BookingDetail.EXCHANGE).moveFieldToThis(recCurrency.getField(Currencys.LAST_RATE));
                 }
             }
         }
@@ -1450,17 +1450,17 @@ public class BookingDetail extends BookingSub
     {
         if (recTourHeaderDetail != null)
         {
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kInfoMessageTransportID, TourHeaderDetail.kInfoMessageTransportID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kInfoStatusID, TourHeaderDetail.kInfoStatusID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kInventoryMessageTransportID, TourHeaderDetail.kInventoryMessageTransportID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kInventoryStatusID, TourHeaderDetail.kInventoryStatusID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kCostMessageTransportID, TourHeaderDetail.kCostMessageTransportID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kCostStatusID, TourHeaderDetail.kCostStatusID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kProductMessageTransportID, TourHeaderDetail.kProductMessageTransportID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kProductStatusID, TourHeaderDetail.kProductStatusID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kAckDays, TourHeaderDetail.kAckDays);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kRateID, TourHeaderDetail.kRateID);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kClassID, TourHeaderDetail.kClassID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.INFO_MESSAGE_TRANSPORT_ID, TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.INFO_STATUS_ID, TourHeaderDetail.INFO_STATUS_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID, TourHeaderDetail.INVENTORY_MESSAGE_TRANSPORT_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.INVENTORY_STATUS_ID, TourHeaderDetail.INVENTORY_STATUS_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.COST_MESSAGE_TRANSPORT_ID, TourHeaderDetail.COST_MESSAGE_TRANSPORT_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.COST_STATUS_ID, TourHeaderDetail.COST_STATUS_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID, TourHeaderDetail.PRODUCT_MESSAGE_TRANSPORT_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.PRODUCT_STATUS_ID, TourHeaderDetail.PRODUCT_STATUS_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.ACK_DAYS, TourHeaderDetail.ACK_DAYS);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.RATE_ID, TourHeaderDetail.RATE_ID);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.CLASS_ID, TourHeaderDetail.CLASS_ID);
         }
         return DBConstants.NORMAL_RETURN;
     }
@@ -1472,7 +1472,7 @@ public class BookingDetail extends BookingSub
      * @param iTargetField The source field.
      * @return true If the field was changed.
      */
-    public boolean moveTargetField(Record recTarget, int iDetailField, int iTargetField)
+    public boolean moveTargetField(Record recTarget, String iDetailField, String iTargetField)
     {
         if (!this.getField(iDetailField).isModified()) if (!recTarget.getField(iTargetField).isNull())
         {
@@ -1493,8 +1493,8 @@ public class BookingDetail extends BookingSub
     public int setupDetailKey(TourSub recTourHeaderDetail, Booking recBooking, Tour recTour, BaseField fldPaxID, BaseField fldQaID, BaseField fldModID, Date dateStart)
     {
         Date date = this.setupStartDate(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);
-        ((DateTimeField)this.getField(BookingDetail.kDetailDate)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingDetail.kProductTypeID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.kProductTypeID));
+        ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingDetail.PRODUCT_TYPE_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.PRODUCT_TYPE_ID));
         int iErrorCode = super.setupDetailKey(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID, dateStart);
         return iErrorCode;
     }
@@ -1503,14 +1503,14 @@ public class BookingDetail extends BookingSub
      */
     public short getNoPax()
     {
-        if (this.getField(BookingDetail.kBookingPaxID).getValue() != 0)
+        if (this.getField(BookingDetail.BOOKING_PAX_ID).getValue() != 0)
             return 1; // Pax mod
         else
         {
             Record recBooking = this.getBooking(true);
             if (recBooking == null)
                 return 1;
-            return (short)recBooking.getField(Booking.kPax).getValue();
+            return (short)recBooking.getField(Booking.PAX).getValue();
         }
     }
     /**
@@ -1518,18 +1518,19 @@ public class BookingDetail extends BookingSub
      */
     public int getPaxInRoom(int iRoomType)
     {
-        if (this.getField(BookingDetail.kBookingPaxID).getValue() != 0)
+        if (this.getField(BookingDetail.BOOKING_PAX_ID).getValue() != 0)
             return 1; // Pax mod **FIX THIS**
         else
         {
+            Booking booking = this.getBooking(true);
             if ((iRoomType >= PaxCategory.SINGLE_ID)
                 && (iRoomType <= PaxCategory.CHILD_ID))
             {
-                int iFieldSeq = Booking.kSinglePax + iRoomType - PaxCategory.SINGLE_ID;
-                return (int)this.getBooking(true).getField(iFieldSeq).getValue();
+                int iFieldSeq = booking.getFieldSeq(Booking.SINGLE_PAX) + iRoomType - PaxCategory.SINGLE_ID;
+                return (int)booking.getField(iFieldSeq).getValue();
             }
             else
-                return this.getBooking(true).getCountPax();
+                return booking.getCountPax();
         }
     }
     /**
@@ -1539,13 +1540,13 @@ public class BookingDetail extends BookingSub
     public int getStatus()
     {
         int iStatus = (1 << 0);   // Normal status
-        if ((this.getField(BookingDetail.kInfoStatusID).getValue() != InfoStatus.VALID) && (this.getField(BookingDetail.kInfoStatusID).getValue() != InfoStatus.NO_STATUS) && (this.getField(BookingDetail.kInfoStatusID).getValue() != InfoStatus.NULL_STATUS))
+        if ((this.getField(BookingDetail.INFO_STATUS_ID).getValue() != InfoStatus.VALID) && (this.getField(BookingDetail.INFO_STATUS_ID).getValue() != InfoStatus.NO_STATUS) && (this.getField(BookingDetail.INFO_STATUS_ID).getValue() != InfoStatus.NULL_STATUS))
             iStatus = iStatus | (1 << BookingConstants.INFO_LOOKUP);
-        if ((this.getField(BookingDetail.kCostStatusID).getValue() != CostStatus.VALID) && (this.getField(BookingDetail.kCostStatusID).getValue() != CostStatus.NO_STATUS) && (this.getField(BookingDetail.kCostStatusID).getValue() != CostStatus.NULL_STATUS))
+        if ((this.getField(BookingDetail.COST_STATUS_ID).getValue() != CostStatus.VALID) && (this.getField(BookingDetail.COST_STATUS_ID).getValue() != CostStatus.NO_STATUS) && (this.getField(BookingDetail.COST_STATUS_ID).getValue() != CostStatus.NULL_STATUS))
             iStatus = iStatus | (1 << BookingConstants.COST_LOOKUP);
-        if ((this.getField(BookingDetail.kInventoryStatusID).getValue() != InventoryStatus.VALID) && (this.getField(BookingDetail.kInventoryStatusID).getValue() != InventoryStatus.NO_STATUS) && (this.getField(BookingDetail.kInventoryStatusID).getValue() != InventoryStatus.NULL_STATUS))
+        if ((this.getField(BookingDetail.INVENTORY_STATUS_ID).getValue() != InventoryStatus.VALID) && (this.getField(BookingDetail.INVENTORY_STATUS_ID).getValue() != InventoryStatus.NO_STATUS) && (this.getField(BookingDetail.INVENTORY_STATUS_ID).getValue() != InventoryStatus.NULL_STATUS))
             iStatus = iStatus | (1 << BookingConstants.INVENTORY_LOOKUP);
-        if ((this.getField(BookingDetail.kProductStatusID).getValue() != ProductStatus.VALID) && (this.getField(BookingDetail.kProductStatusID).getValue() != ProductStatus.NO_STATUS) && (this.getField(BookingDetail.kProductStatusID).getValue() != ProductStatus.NULL_STATUS) && (this.getField(BookingDetail.kProductStatusID).getValue() != ProductStatus.PROPOSAL) && (this.getField(BookingDetail.kProductStatusID).getValue() != ProductStatus.CANCELED))
+        if ((this.getField(BookingDetail.PRODUCT_STATUS_ID).getValue() != ProductStatus.VALID) && (this.getField(BookingDetail.PRODUCT_STATUS_ID).getValue() != ProductStatus.NO_STATUS) && (this.getField(BookingDetail.PRODUCT_STATUS_ID).getValue() != ProductStatus.NULL_STATUS) && (this.getField(BookingDetail.PRODUCT_STATUS_ID).getValue() != ProductStatus.PROPOSAL) && (this.getField(BookingDetail.PRODUCT_STATUS_ID).getValue() != ProductStatus.CANCELED))
             iStatus = iStatus | (1 << BookingConstants.PRODUCT_LOOKUP);
         return iStatus;
     }
@@ -1569,7 +1570,7 @@ public class BookingDetail extends BookingSub
      */
     public String getBitmap()
     {
-        return BookingConstants.BUTTON_LOCATION + this.getField(BookingDetail.kProductType).toString();
+        return BookingConstants.BUTTON_LOCATION + this.getField(BookingDetail.PRODUCT_TYPE).toString();
     }
     /**
      * Check if this request is required and process the message.
@@ -1578,10 +1579,10 @@ public class BookingDetail extends BookingSub
      * for a request is to set the corresponding flag (ie., InfoStatusRequest) to true.
      * @param iStatusType The status field to update.
      */
-    public void checkRequestRequired(int iStatusType)
+    public void checkRequestRequired(String iStatusType)
     {
-        int iFieldSeq = this.checkRequiredParams(iStatusType);  // Quickly check the fields to keep from building a message every time
-        if (iFieldSeq > 0)
+        String iFieldSeq = this.checkRequiredParams(iStatusType);  // Quickly check the fields to keep from building a message every time
+        if (iFieldSeq != null)
         {
             this.getField(iStatusType).setValue(BaseDataStatus.DATA_REQUIRED, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             String strError = "Data required in the {0} field";
@@ -1592,11 +1593,11 @@ public class BookingDetail extends BookingSub
             this.setErrorMessage(iStatusType, strError);
             return;   // Don't even start, we still need some basic information.
         }
-        if (iStatusType == BookingDetail.kInfoStatusID)
-            if (this.getField(BookingDetail.kInfoMessageTransportID).isNull())
+        if (iStatusType == BookingDetail.INFO_STATUS_ID)
+            if (this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).isNull())
         {
-            int iDefaultInfoTransport = ((ReferenceField)this.getField(BookingDetail.kInfoMessageTransportID)).getIDFromCode(MessageTransport.DEFAULT);
-            this.getField(BookingDetail.kInfoMessageTransportID).setValue(iDefaultInfoTransport);
+            int iDefaultInfoTransport = ((ReferenceField)this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.DEFAULT);
+            this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).setValue(iDefaultInfoTransport);
         }
         BaseProductMessageDesc message = this.checkMessageRequired(iStatusType);
         if (message == null)
@@ -1634,7 +1635,7 @@ public class BookingDetail extends BookingSub
             {   // Only lookup if automatic
                 try {
                     this.addListener(new SendMessageAfterUpdateHandler(message.getMessage()));
-                    Record recTour = ((ReferenceField)this.getBooking(true).getField(Booking.kTourID)).getReference();
+                    Record recTour = ((ReferenceField)this.getBooking(true).getField(Booking.TOUR_ID)).getReference();
                     recTour.writeAndRefresh();
                     this.getBooking(true).writeAndRefresh();
                     this.writeAndRefresh();
@@ -1653,20 +1654,20 @@ public class BookingDetail extends BookingSub
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
-        if (this.getField(BookingDetail.kProductID).isNull())
-            return BookingDetail.kProductID;    // Product must be non-null
-        if (this.getField(BookingDetail.kDetailDate).isNull())
-            return BookingDetail.kDetailDate; // Date must be non-null
-        return 0; // Looks good so far.
+        if (this.getField(BookingDetail.PRODUCT_ID).isNull())
+            return BookingDetail.PRODUCT_ID;    // Product must be non-null
+        if (this.getField(BookingDetail.DETAIL_DATE).isNull())
+            return BookingDetail.DETAIL_DATE; // Date must be non-null
+        return null;    // Looks good so far.
     }
     /**
      * Lookup the message for this status update.
      * If no update is required, return a null message.
      * @return The message to process (or null if no message).
      */
-    public BaseProductMessageDesc checkMessageRequired(int iStatusType)
+    public BaseProductMessageDesc checkMessageRequired(String iStatusType)
     {
         if (this.getEditMode() == DBConstants.EDIT_NONE)
             return null;
@@ -1679,7 +1680,7 @@ public class BookingDetail extends BookingSub
         String strProcessType = this.getProcessType(iStatusType);
         String strContactType = recProduct.getTableNames(false);
         if (RequestType.BOOKING_CANCEL.equalsIgnoreCase(strRequestType))
-            strContactType = Product.kProductFile;      // Cancellation message is generic
+            strContactType = Product.PRODUCT_FILE;      // Cancellation message is generic
         String strMessageTransport = this.getMessageTransport(iStatusType);
         if (MessageTransport.MANUAL.equals(strMessageTransport))
             return null;    // No need to send a message if manual
@@ -1732,30 +1733,30 @@ public class BookingDetail extends BookingSub
     /**
      * GetErrorMessage Method.
      */
-    public String getErrorMessage(int iStatusType)
+    public String getErrorMessage(String iStatusType)
     {
-        return ((PropertiesField)this.getField(BookingDetail.kErrorProperties)).getProperty(this.getFieldParam(this.getField(iStatusType)) + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM);
+        return ((PropertiesField)this.getField(BookingDetail.ERROR_PROPERTIES)).getProperty(this.getFieldParam(this.getField(iStatusType)) + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM);
     }
     /**
      * Set the error message in this record for this message type.
      */
     public void setErrorMessage(BaseProductMessageDesc messageData, String strError)
     {
-        ((PropertiesField)this.getField(BookingDetail.kErrorProperties)).setProperty(messageData.getMessageTypeParam() + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM, strError, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((PropertiesField)this.getField(BookingDetail.ERROR_PROPERTIES)).setProperty(messageData.getMessageTypeParam() + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM, strError, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
     }
     /**
      * Set the error message in this record for this status type.
      */
-    public void setErrorMessage(int iStatusType, String strError)
+    public void setErrorMessage(String iStatusType, String strError)
     {
-        ((PropertiesField)this.getField(BookingDetail.kErrorProperties)).setProperty(this.getFieldParam(this.getField(iStatusType)) + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM, strError, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((PropertiesField)this.getField(BookingDetail.ERROR_PROPERTIES)).setProperty(this.getFieldParam(this.getField(iStatusType)) + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM, strError, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
     }
     /**
      * For this kind of message, get the process type.
      * For now, all are UPDATE, which means update the information in the booking
      * when the response comes back (vs. just return the information to the caller).
      */
-    public String getProcessType(int iStatusType)
+    public String getProcessType(String iStatusType)
     {
         return ProcessType.UPDATE;
     }
@@ -1764,7 +1765,7 @@ public class BookingDetail extends BookingSub
      */
     public void addMessageProperties(String strPrefix, boolean bDeleteProperties, TrxMessageHeader messageHeader, BaseMessage message, String strNewPrefix)
     {
-        Map<String,Object> properties = ((PropertiesField)this.getField(BookingDetail.kProperties)).getProperties();
+        Map<String,Object> properties = ((PropertiesField)this.getField(BookingDetail.PROPERTIES)).getProperties();
         if (properties != null)
         {
             Iterator<String> iterator = properties.keySet().iterator();
@@ -1775,7 +1776,7 @@ public class BookingDetail extends BookingSub
                 {
                     String value = (String)properties.get(strKey);
                     if (bDeleteProperties)
-                        ((PropertiesField)this.getField(BookingDetail.kProperties)).setProperty(strKey, null);  // Remove from record
+                        ((PropertiesField)this.getField(BookingDetail.PROPERTIES)).setProperty(strKey, null);  // Remove from record
                     strKey = strKey.substring(strPrefix.length());
                     if (strNewPrefix != null)
                         strKey = strNewPrefix + strKey;
@@ -1796,20 +1797,20 @@ public class BookingDetail extends BookingSub
     public String getFieldParam(BaseField fldStatusID)
     {
         String strParam = DBConstants.BLANK;
-        if (fldStatusID == this.getField(BookingDetail.kInfoStatusID))
+        if (fldStatusID == this.getField(BookingDetail.INFO_STATUS_ID))
             strParam = BookingDetail.INFO_PARAM;
-        else if (fldStatusID == this.getField(BookingDetail.kCostStatusID))
+        else if (fldStatusID == this.getField(BookingDetail.COST_STATUS_ID))
             strParam = BookingDetail.COST_PARAM;
-        else if (fldStatusID == this.getField(BookingDetail.kInventoryStatusID))
+        else if (fldStatusID == this.getField(BookingDetail.INVENTORY_STATUS_ID))
             strParam = BookingDetail.INVENTORY_PARAM;
-        else if (fldStatusID == this.getField(BookingDetail.kProductStatusID))
+        else if (fldStatusID == this.getField(BookingDetail.PRODUCT_STATUS_ID))
             strParam = BookingDetail.PRODUCT_PARAM;
         return strParam;
     }
     /**
      * Get the request type code for this status field sequence.
      */
-    public String getRequestType(int iStatusType)
+    public String getRequestType(String iStatusType)
     {
         String strRequestType = this.getField(iStatusType).getFieldName();
         if (RequestType.BOOKING.equalsIgnoreCase(strRequestType))
@@ -1818,14 +1819,14 @@ public class BookingDetail extends BookingSub
                 strRequestType = RequestType.BOOKING_ADD;
             else
             {
-                if (this.getField(BookingDetail.kDeleted).getState() == true)
+                if (this.getField(BookingDetail.DELETED).getState() == true)
                     strRequestType = RequestType.BOOKING_CANCEL;
                 else
                 {
-                    Record recTour = ((ReferenceField)this.getField(BookingDetail.kTourID)).getReference();
+                    Record recTour = ((ReferenceField)this.getField(BookingDetail.TOUR_ID)).getReference();
                     if ((recTour != null) &&
                         ((recTour.getEditMode() == DBConstants.EDIT_CURRENT) || (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                            && (recTour.getField(Tour.kCancelled).getState() == true))
+                            && (recTour.getField(Tour.CANCELLED).getState() == true))
                         strRequestType = RequestType.BOOKING_CANCEL;
                     else
                         strRequestType = RequestType.BOOKING_CHANGE;
@@ -1839,7 +1840,7 @@ public class BookingDetail extends BookingSub
      */
     public boolean productOrdered()
     {
-        if (this.getField(BookingDetail.kProductRequestKey).isNull())
+        if (this.getField(BookingDetail.PRODUCT_REQUEST_KEY).isNull())
             return false;
         else
             return true;
@@ -1847,12 +1848,12 @@ public class BookingDetail extends BookingSub
     /**
      * Get the message transport code for this message type.
      */
-    public String getMessageTransport(int iStatusType)
+    public String getMessageTransport(String iStatusType)
     {
-        Record recMessageTransport = ((ReferenceField)this.getField(iStatusType + MESSAGE_TRANSPORT_OFFSET)).getReference();
+        Record recMessageTransport = ((ReferenceField)this.getField(this.getFieldSeq(iStatusType) + MESSAGE_TRANSPORT_OFFSET)).getReference();
         if ((recMessageTransport != null) &&
             ((recMessageTransport.getEditMode() == DBConstants.EDIT_CURRENT) || (recMessageTransport.getEditMode() == DBConstants.EDIT_IN_PROGRESS)))
-                return recMessageTransport.getField(MessageTransport.kCode).toString();
+                return recMessageTransport.getField(MessageTransport.CODE).toString();
         return null;
     }
     /**
@@ -1864,32 +1865,32 @@ public class BookingDetail extends BookingSub
         
         Booking recBooking = this.getBooking(true);
         
-        int iNonTourPricingType = (int)((ReferenceField)recBooking.getField(Booking.kNonTourPricingTypeID)).getReference().getField(PricingType.kPricingCodes).getValue();
+        int iNonTourPricingType = (int)((ReferenceField)recBooking.getField(Booking.NON_TOUR_PRICING_TYPE_ID)).getReference().getField(PricingType.PRICING_CODES).getValue();
         if (iNonTourPricingType == PricingType.OPTION_PRICING)  // Can't have option pricing on non-tours!
             iNonTourPricingType = PricingType.COMPONENT_PRICING | PricingType.COMPONENT_COST_PRICING;
         
-        if ((!this.getField(BookingDetail.kTourHeaderOptionID).isNull()) || (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.TOUR_ID))
+        if ((!this.getField(BookingDetail.TOUR_HEADER_OPTION_ID).isNull()) || (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.TOUR_ID))
         {   // Entered using a module or is a module
-            BaseField fldModuleID = this.getField(BookingDetail.kModuleID);
-            Date dateStart = ((DateTimeField)this.getField(BookingDetail.kModuleStartDate)).getDateTime();
-            if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.TOUR_ID)
+            BaseField fldModuleID = this.getField(BookingDetail.MODULE_ID);
+            Date dateStart = ((DateTimeField)this.getField(BookingDetail.MODULE_START_DATE)).getDateTime();
+            if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.TOUR_ID)
             {
-                fldModuleID = this.getField(BookingDetail.kProductID);
-                dateStart = ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();
+                fldModuleID = this.getField(BookingDetail.PRODUCT_ID);
+                dateStart = ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();
             }
             int iTourPricingType = recBooking.getTourPricingType(null, fldModuleID, dateStart);
             if ((iTourPricingType & PricingType.OPTION_PRICING) != 0)
             {
-                if ((this.getField(BookingDetail.kTotalCostLocal).isModified())
+                if ((this.getField(BookingDetail.TOTAL_COST_LOCAL).isModified())
                         || (iChangeType == DBConstants.DELETE_TYPE))   // This means the record has been deleted
                 {
-                        if ((recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class) == null)
-                            || (recBooking.getField(Booking.kTourPricingTypeID).getListener(ChangePricingTypeHandler.class).isEnabledListener() == true))  // If this is DISABLED, don't change the status (only on initial setup)
+                        if ((recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class) == null)
+                            || (recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class).isEnabledListener() == true))  // If this is DISABLED, don't change the status (only on initial setup)
                     {
                         PricingType recPricingType2 = new PricingType(this.findRecordOwner());
                         PricingType recPricingType3 = recPricingType2.getPricingType(PricingType.COMPONENT_COST_PRICING);
                         if (recPricingType3 != null)
-                            recBooking.getField(Booking.kTourPricingTypeID).moveFieldToThis(recPricingType3.getField(PricingType.kID));
+                            recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).moveFieldToThis(recPricingType3.getField(PricingType.ID));
                         recPricingType2.free();
                     }
                 }
@@ -1901,7 +1902,7 @@ public class BookingDetail extends BookingSub
         if ((iNonTourPricingType & PricingType.COMPONENT_PRICING) != 0)
         {
             String strProductKey = this.getPricingDetailKey();
-            if (!strProductKey.equals(this.getField(BookingDetail.kPricingDetailKey).toString()))
+            if (!strProductKey.equals(this.getField(BookingDetail.PRICING_DETAIL_KEY).toString()))
             {
                 Product recProduct = this.getProduct();
         
@@ -1910,12 +1911,12 @@ public class BookingDetail extends BookingSub
                 if (iErrorCode == DBConstants.NORMAL_RETURN)
                     return iErrorCode;  // Otherwise, continue and price using the cost.
                 iErrorCode = DBConstants.NORMAL_RETURN;
-                strProductKey = this.getField(BookingDetail.kPricingDetailKey).toString();
+                strProductKey = this.getField(BookingDetail.PRICING_DETAIL_KEY).toString();
             }
         }
         if ((iNonTourPricingType & PricingType.COMPONENT_COST_PRICING) != 0)
         {
-            if ((this.getField(BookingDetail.kTotalCostLocal).isModified())
+            if ((this.getField(BookingDetail.TOTAL_COST_LOCAL).isModified())
                 || (iChangeType == DBConstants.DELETE_TYPE))   // This means the record has been deleted
             {
                 return this.updateBookingComponentCostPricing(recBooking, iChangeType);
@@ -1928,7 +1929,7 @@ public class BookingDetail extends BookingSub
             int iPaxCategory = PaxCategory.ALL_ID;
             int iQuantity = this.getNoPax();
             double dAmount = 0;
-            double dCommissionRate = this.getBooking(true).getField(Booking.kStdCommission).getValue();
+            double dCommissionRate = this.getBooking(true).getField(Booking.STD_COMMISSION).getValue();
             boolean bCommissionable = dCommissionRate != 0;
             String strPayAt = PayAtField.FINAL_PAY_DATE;
             int iPricingStatus = PricingStatus.NOT_VALID;
@@ -1966,11 +1967,11 @@ public class BookingDetail extends BookingSub
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         
-        double dPPCost = this.getField(BookingDetail.kTotalCostLocal).getValue();
+        double dPPCost = this.getField(BookingDetail.TOTAL_COST_LOCAL).getValue();
         int iQuantity = this.getPaxInRoom(PaxCategory.ALL_ID);
         if (iQuantity != 0)
             dPPCost = dPPCost / iQuantity;
-        iErrorCode = this.updateBookingLine(this.getBookingLine(), PricingType.COMPONENT_COST_PRICING, PaxCategory.ALL_ID, iQuantity, dPPCost, true, recBooking.getField(Booking.kCommission).getValue(), null, PricingStatus.OKAY, iChangeType);
+        iErrorCode = this.updateBookingLine(this.getBookingLine(), PricingType.COMPONENT_COST_PRICING, PaxCategory.ALL_ID, iQuantity, dPPCost, true, recBooking.getField(Booking.COMMISSION).getValue(), null, PricingStatus.OKAY, iChangeType);
         
         return iErrorCode;
     }
@@ -1981,17 +1982,17 @@ public class BookingDetail extends BookingSub
     {
         String strReturn = DBConstants.BLANK;
         
-        strReturn = this.addKeyField(strReturn, BookingDetail.kProductID);
-        strReturn = this.addKeyField(strReturn, BookingDetail.kDetailDate);
-        strReturn = this.addKeyField(strReturn, BookingDetail.kClassID);
-        strReturn = this.addKeyField(strReturn, BookingDetail.kRateID);
+        strReturn = this.addKeyField(strReturn, BookingDetail.PRODUCT_ID);
+        strReturn = this.addKeyField(strReturn, BookingDetail.DETAIL_DATE);
+        strReturn = this.addKeyField(strReturn, BookingDetail.CLASS_ID);
+        strReturn = this.addKeyField(strReturn, BookingDetail.RATE_ID);
         
         return strReturn;
     }
     /**
      * AddKeyField Method.
      */
-    public String addKeyField(String strReturn, int iFieldSeq)
+    public String addKeyField(String strReturn, String iFieldSeq)
     {
         char chSeparator = '/'; // Character.forDigit(iCount, Character.MAX_RADIX);
         
@@ -2011,7 +2012,7 @@ public class BookingDetail extends BookingSub
         if (m_recBookingLine == null)
         {
             Booking recBooking = this.getBooking(true);
-            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             m_recBookingLine = new BookingLine(this.findRecordOwner());
             m_recBookingLine.addDetailBehaviors(recBooking, recTour);
             if (m_recBookingLine.getRecordOwner() != null)
@@ -2039,8 +2040,8 @@ public class BookingDetail extends BookingSub
         int iErrorCode = DBConstants.NORMAL_RETURN;
         if ((iPaxCategory == PaxCategory.SINGLE_ID) || (iPaxCategory == 0))
         {   // First time through
-            this.getField(BookingDetail.kTotalPriceLocal).setValue(0.00);
-            this.getField(BookingDetail.kPPPriceLocal).setValue(0.00);
+            this.getField(BookingDetail.TOTAL_PRICE_LOCAL).setValue(0.00);
+            this.getField(BookingDetail.PP_PRICE_LOCAL).setValue(0.00);
         }
         
         Booking recBooking = this.getBooking(true);        
@@ -2048,16 +2049,16 @@ public class BookingDetail extends BookingSub
             recBookingLine.addNew();
             if (iChangeType != DBConstants.ADD_TYPE)
             {
-                recBookingLine.getField(BookingLine.kBookingID).moveFieldToThis(recBooking.getField(Booking.kID));
-                recBookingLine.getField(BookingLine.kBookingPaxID).moveFieldToThis(this.getField(BookingDetail.kBookingPaxID));   // For now
-                recBookingLine.getField(BookingLine.kBookingDetailID).moveFieldToThis(this.getField(BookingDetail.kID));
-                recBookingLine.getField(BookingLine.kPaxCategoryID).setValue(iPaxCategory);
-                recBookingLine.setKeyArea(BookingLine.kBookingDetailIDKey);
+                recBookingLine.getField(BookingLine.BOOKING_ID).moveFieldToThis(recBooking.getField(Booking.ID));
+                recBookingLine.getField(BookingLine.BOOKING_PAX_ID).moveFieldToThis(this.getField(BookingDetail.BOOKING_PAX_ID));   // For now
+                recBookingLine.getField(BookingLine.BOOKING_DETAIL_ID).moveFieldToThis(this.getField(BookingDetail.ID));
+                recBookingLine.getField(BookingLine.PAX_CATEGORY_ID).setValue(iPaxCategory);
+                recBookingLine.setKeyArea(BookingLine.BOOKING_DETAIL_ID_KEY);
                 if ((recBookingLine.seek(">="))
-                    && (recBookingLine.getField(BookingLine.kBookingID).equals(recBooking.getField(Booking.kID)))
-                        && (recBookingLine.getField(BookingLine.kBookingPaxID).equals(this.getField(BookingDetail.kBookingPaxID)))
-                        && (recBookingLine.getField(BookingLine.kBookingDetailID).equals(this.getField(BookingDetail.kID)))
-                        && (recBookingLine.getField(BookingLine.kPaxCategoryID).getValue() == iPaxCategory))
+                    && (recBookingLine.getField(BookingLine.BOOKING_ID).equals(recBooking.getField(Booking.ID)))
+                        && (recBookingLine.getField(BookingLine.BOOKING_PAX_ID).equals(this.getField(BookingDetail.BOOKING_PAX_ID)))
+                        && (recBookingLine.getField(BookingLine.BOOKING_DETAIL_ID).equals(this.getField(BookingDetail.ID)))
+                        && (recBookingLine.getField(BookingLine.PAX_CATEGORY_ID).getValue() == iPaxCategory))
                     recBookingLine.edit();
                 else
                     recBookingLine.addNew();
@@ -2065,9 +2066,9 @@ public class BookingDetail extends BookingSub
         
             double dPPCost = 0;
             double dPPPrice = 0;
-            double dMarkup = recBooking.getField(Booking.kMarkup).getValue();
+            double dMarkup = recBooking.getField(Booking.MARKUP).getValue();
             if (bCommissionable)
-                dCommissionRate = recBooking.getField(Booking.kStdCommission).getValue();
+                dCommissionRate = recBooking.getField(Booking.STD_COMMISSION).getValue();
             if ((iPricingType & PricingType.COMPONENT_PRICING) != 0)
             {
                 dPPPrice = dAmount; // Price is passed in
@@ -2079,18 +2080,18 @@ public class BookingDetail extends BookingSub
                 dPPPrice = (Math.floor(dPPPrice / (1 - dCommissionRate) * 100)) / 100;    // This amount minus the commission will give the price.
             }
         
-            recBookingLine.getField(BookingLine.kBookingID).moveFieldToThis(recBooking.getField(Booking.kID));
+            recBookingLine.getField(BookingLine.BOOKING_ID).moveFieldToThis(recBooking.getField(Booking.ID));
         
-            recBookingLine.getField(BookingLine.kModuleID).moveFieldToThis(this.getField(BookingDetail.kModuleID));
-            recBookingLine.getField(BookingLine.kModuleStartDate).moveFieldToThis(this.getField(BookingDetail.kModuleStartDate));
-            if (this.getField(BookingDetail.kProductTypeID).getValue() == ProductType.TOUR_ID)
+            recBookingLine.getField(BookingLine.MODULE_ID).moveFieldToThis(this.getField(BookingDetail.MODULE_ID));
+            recBookingLine.getField(BookingLine.MODULE_START_DATE).moveFieldToThis(this.getField(BookingDetail.MODULE_START_DATE));
+            if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.TOUR_ID)
             {
-                recBookingLine.getField(BookingLine.kModuleID).moveFieldToThis(this.getField(BookingDetail.kProductID));
-                recBookingLine.getField(BookingLine.kModuleStartDate).moveFieldToThis(this.getField(BookingDetail.kDetailDate));
+                recBookingLine.getField(BookingLine.MODULE_ID).moveFieldToThis(this.getField(BookingDetail.PRODUCT_ID));
+                recBookingLine.getField(BookingLine.MODULE_START_DATE).moveFieldToThis(this.getField(BookingDetail.DETAIL_DATE));
             }
         
-            // Note: BookingLine.kSequence is assigned automatically.
-            String strDescription = this.getField(BookingDetail.kDescription).toString();
+            // Note: BookingLine.SEQUENCE is assigned automatically.
+            String strDescription = this.getField(BookingDetail.DESCRIPTION).toString();
             if (iPaxCategory != PaxCategory.ALL_ID)
             {
                 RoomTypeField fldTemp = new RoomTypeField(null, DBConstants.BLANK, DBConstants.DEFAULT_FIELD_LENGTH, null, null);
@@ -2098,32 +2099,32 @@ public class BookingDetail extends BookingSub
                 fldTemp.free();
                 strDescription = strDescription + " (" + strRoomType + ')';
             }
-            recBookingLine.getField(BookingLine.kDescription).setString(strDescription);
-            recBookingLine.getField(BookingLine.kPrice).setValue(dPPPrice);
+            recBookingLine.getField(BookingLine.DESCRIPTION).setString(strDescription);
+            recBookingLine.getField(BookingLine.PRICE).setValue(dPPPrice);
         
-            recBookingLine.getField(BookingLine.kQuantity).setValue(iQuantity);
+            recBookingLine.getField(BookingLine.QUANTITY).setValue(iQuantity);
         
-            recBookingLine.getField(BookingLine.kCommissionable).setState(bCommissionable);
-            recBookingLine.getField(BookingLine.kCommissionRate).setValue(dCommissionRate);
-            recBookingLine.getField(BookingLine.kPricingStatusID).setValue(iPricingStatusID);
+            recBookingLine.getField(BookingLine.COMMISSIONABLE).setState(bCommissionable);
+            recBookingLine.getField(BookingLine.COMMISSION_RATE).setValue(dCommissionRate);
+            recBookingLine.getField(BookingLine.PRICING_STATUS_ID).setValue(iPricingStatusID);
             if ((strPayAt == null) || (strPayAt.length() == 0))
                 strPayAt = PayAtField.FINAL_PAY_DATE;
-            recBookingLine.getField(BookingLine.kPayAt).setString(strPayAt);
-            recBookingLine.getField(BookingLine.kBookingPaxID).moveFieldToThis(this.getField(BookingDetail.kBookingPaxID));   // For now
+            recBookingLine.getField(BookingLine.PAY_AT).setString(strPayAt);
+            recBookingLine.getField(BookingLine.BOOKING_PAX_ID).moveFieldToThis(this.getField(BookingDetail.BOOKING_PAX_ID));   // For now
             
-            Object bookingDetailID = this.getField(BookingDetail.kID).getData();
+            Object bookingDetailID = this.getField(BookingDetail.ID).getData();
             if (iChangeType == DBConstants.ADD_TYPE)
                 if (bookingDetailID == null)    // Always for add
                 {
                     if (this.getEditMode() == DBConstants.EDIT_ADD)
                         this.writeAndRefresh();     // Need record ID
-                    bookingDetailID = this.getField(BookingDetail.kID).getData();
+                    bookingDetailID = this.getField(BookingDetail.ID).getData();
                 }
-            recBookingLine.getField(BookingLine.kBookingDetailID).setData(bookingDetailID);
-            recBookingLine.getField(BookingLine.kPaxCategoryID).setValue(iPaxCategory);
+            recBookingLine.getField(BookingLine.BOOKING_DETAIL_ID).setData(bookingDetailID);
+            recBookingLine.getField(BookingLine.PAX_CATEGORY_ID).setValue(iPaxCategory);
             if ((iChangeType == DBConstants.DELETE_TYPE)
-                || ((iPricingStatusID != PricingStatus.NOT_VALID) && ((recBookingLine.getField(BookingLine.kPrice).getValue() == 0)
-                        || (recBookingLine.getField(BookingLine.kQuantity).getValue() == 0))))
+                || ((iPricingStatusID != PricingStatus.NOT_VALID) && ((recBookingLine.getField(BookingLine.PRICE).getValue() == 0)
+                        || (recBookingLine.getField(BookingLine.QUANTITY).getValue() == 0))))
             {
                 if (recBookingLine.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                     recBookingLine.remove();
@@ -2138,8 +2139,8 @@ public class BookingDetail extends BookingSub
             }
             if (iErrorCode == DBConstants.NORMAL_RETURN)
             {
-                this.getField(BookingDetail.kTotalPriceLocal).setValue(this.getField(BookingDetail.kTotalPriceLocal).getValue() + recBookingLine.getField(BookingLine.kGross).getValue());
-                this.getField(BookingDetail.kPPPriceLocal).setValue(this.getField(BookingDetail.kPPPriceLocal).getValue() + recBookingLine.getField(BookingLine.kPrice).getValue());
+                this.getField(BookingDetail.TOTAL_PRICE_LOCAL).setValue(this.getField(BookingDetail.TOTAL_PRICE_LOCAL).getValue() + recBookingLine.getField(BookingLine.GROSS).getValue());
+                this.getField(BookingDetail.PP_PRICE_LOCAL).setValue(this.getField(BookingDetail.PP_PRICE_LOCAL).getValue() + recBookingLine.getField(BookingLine.PRICE).getValue());
             }
         } catch (DBException ex) {
             ex.printStackTrace();
@@ -2157,7 +2158,7 @@ public class BookingDetail extends BookingSub
         {
             BookingDetail recBookingDetail = (BookingDetail)this.getTable().getCurrentTable().getRecord();
             if (recBookingDetail.getEditMode() != DBConstants.EDIT_NONE)    // May have been deleted
-                recBookingDetail.checkRequestRequired(BookingDetail.kInfoStatusID);
+                recBookingDetail.checkRequestRequired(BookingDetail.INFO_STATUS_ID);
         }
         return iErrorCode;
     }
@@ -2173,7 +2174,7 @@ public class BookingDetail extends BookingSub
         if ((recBooking == null)
                 || (recBooking.getEditMode() == DBConstants.EDIT_NONE))
             return DBConstants.ERROR_RETURN;
-        Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+        Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
         if ((recTour == null)
                 || (recTour.getEditMode() == DBConstants.EDIT_NONE))
             return DBConstants.ERROR_RETURN;
@@ -2181,7 +2182,7 @@ public class BookingDetail extends BookingSub
         if ((recTourHeader == null)
                 || (recTourHeader.getEditMode() == DBConstants.EDIT_NONE))
             return DBConstants.ERROR_RETURN;
-        Date dateStart = ((DateTimeField)this.getField(BookingDetail.kDetailDate)).getDateTime();
+        Date dateStart = ((DateTimeField)this.getField(BookingDetail.DETAIL_DATE)).getDateTime();
         if (dateStart == null)
             return DBConstants.ERROR_RETURN;
         try {
@@ -2193,16 +2194,16 @@ public class BookingDetail extends BookingSub
         
         int iErrorCode = DBConstants.NORMAL_RETURN;
         
-        FieldDataScratchHandler fieldDataScratchHandler = (FieldDataScratchHandler)this.getField(BookingDetail.kDetailDate).getListener(FieldDataScratchHandler.class);
+        FieldDataScratchHandler fieldDataScratchHandler = (FieldDataScratchHandler)this.getField(BookingDetail.DETAIL_DATE).getListener(FieldDataScratchHandler.class);
         Date dateOriginal = (Date)fieldDataScratchHandler.getOriginalData();
         
         if (iChangeType == DBConstants.AFTER_DELETE_TYPE)
         {   // Deleted/canceled
-            iErrorCode = recBooking.deleteTourDetail(recTour, recBookingPax, this.getField(BookingTour.kProductID), dateStart);
+            iErrorCode = recBooking.deleteTourDetail(recTour, recBookingPax, this.getField(BookingTour.PRODUCT_ID), dateStart);
         }
         else if ((dateOriginal == null) || (dateOriginal.equals(dateStart)))
         {   // New
-            iErrorCode = recBooking.addTourDetail(recTour, recTourHeader, recBookingPax, recBookingAnswer, dateStart, this.getField(BookingTour.kAskForAnswer));
+            iErrorCode = recBooking.addTourDetail(recTour, recTourHeader, recBookingPax, recBookingAnswer, dateStart, this.getField(BookingTour.ASK_FOR_ANSWER));
         }
         else
         {   // Changed

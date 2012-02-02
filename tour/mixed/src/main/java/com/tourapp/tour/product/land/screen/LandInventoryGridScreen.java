@@ -110,7 +110,7 @@ public class LandInventoryGridScreen extends ProductInventoryGridScreen
     {
         ToolScreen screen = super.addToolbars();
         
-        BaseField fldLandRateCode = this.getScreenRecord().getField(LandScreenRecord.kLandClassID);
+        BaseField fldLandRateCode = this.getScreenRecord().getField(LandScreenRecord.LAND_CLASS_ID);
         new SRadioButton(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, fldLandRateCode, ScreenConstants.DISPLAY_FIELD_DESC, "P", "Private Car/MC");
         new SRadioButton(screen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), screen, fldLandRateCode, ScreenConstants.DISPLAY_FIELD_DESC, "S", "Seat in Coach");
         

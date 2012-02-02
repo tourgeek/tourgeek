@@ -175,7 +175,7 @@ public class LandVaries extends VirtualRecord
      */
     public String getVariesParam(String strVariesDesc)
     {
-        String strParam = this.getField(LandVaries.kDescription).toString();
+        String strParam = this.getField(LandVaries.DESCRIPTION).toString();
         if ((strParam == null) || (strParam.length() == 0))
             strParam = this.getCounterField().toString();
         strParam = VARIES_PARAM + '.' + strParam;

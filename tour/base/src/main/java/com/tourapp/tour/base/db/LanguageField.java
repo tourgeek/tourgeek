@@ -73,7 +73,7 @@ public class LanguageField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Language.kCodeKey, Language.kDescription, false); 
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Language.CODE_KEY, Language.DESCRIPTION, false); 
     }
 
 }

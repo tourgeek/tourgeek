@@ -298,24 +298,24 @@ public class TourHeaderOption extends VirtualRecord
      */
     public boolean isValid(Booking recBooking, BaseField fldPaxCategory, Date dateStart)
     {
-        if (!this.getField(TourHeaderOption.kStartDate).isNull())
-            if (this.getField(TourHeaderOption.kStartDate).compareTo(dateStart) > 0)
+        if (!this.getField(TourHeaderOption.START_DATE).isNull())
+            if (this.getField(TourHeaderOption.START_DATE).compareTo(dateStart) > 0)
                 return false;   // departure date is before start date.
-        if (!this.getField(TourHeaderOption.kEndDate).isNull())
-            if (this.getField(TourHeaderOption.kEndDate).compareTo(dateStart) < 0)
+        if (!this.getField(TourHeaderOption.END_DATE).isNull())
+            if (this.getField(TourHeaderOption.END_DATE).compareTo(dateStart) < 0)
                 return false;   // departure date is after end date.
-        if (!((DaysOfWeekField)this.getField(TourHeaderOption.kDaysOfWeek)).isValidDate(dateStart))
+        if (!((DaysOfWeekField)this.getField(TourHeaderOption.DAYS_OF_WEEK)).isValidDate(dateStart))
             return false;
-        if (!this.getField(TourHeaderOption.kGateway).isNull())
+        if (!this.getField(TourHeaderOption.GATEWAY).isNull())
         {
             if (recBooking != null)
-                if (!this.getField(TourHeaderOption.kGateway).equals(recBooking.getField(Booking.kGateway)))
+                if (!this.getField(TourHeaderOption.GATEWAY).equals(recBooking.getField(Booking.GATEWAY)))
                     return false;
         }
-        if (!this.getField(TourHeaderOption.kPaxCategoryID).isNull())
+        if (!this.getField(TourHeaderOption.PAX_CATEGORY_ID).isNull())
         {
             if (fldPaxCategory != null)
-                if (!this.getField(TourHeaderOption.kPaxCategoryID).equals(fldPaxCategory))
+                if (!this.getField(TourHeaderOption.PAX_CATEGORY_ID).equals(fldPaxCategory))
                     return false;
         }
         return true;
@@ -337,12 +337,12 @@ public class TourHeaderOption extends VirtualRecord
                     m_recDependent = this.createSubRecord();
                 if (m_recDependent != null)
                 {
-                    m_recDependent.setKeyArea(TourHeaderOption.kTourOrOptionKey);
+                    m_recDependent.setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
                     StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
                     m_recDependent.addListener(new FreeOnFreeHandler(fldTourOrOption));
                     fldTourOrOption.setString(TourHeaderOption.OPTION);
                     if (m_recDependent.getListener(SubFileFilter.class.getName()) == null)
-                        m_recDependent.addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.kTourOrOption, (BaseField)this.getOwner().getCounterField(), TourHeaderOption.kTourOrOptionID, null, -1));
+                        m_recDependent.addListener(new SubFileFilter(fldTourOrOption, TourHeaderOption.TOUR_OR_OPTION, (BaseField)this.getOwner().getCounterField(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
                 }
                 return m_recDependent;
             }

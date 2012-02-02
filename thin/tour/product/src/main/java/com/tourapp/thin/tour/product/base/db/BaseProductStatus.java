@@ -16,6 +16,10 @@ public class BaseProductStatus extends BaseStatus
     implements BaseProductStatusModel
 {
 
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String ICON = ICON;
+
     public BaseProductStatus()
     {
         super();

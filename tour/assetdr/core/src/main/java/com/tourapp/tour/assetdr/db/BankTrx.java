@@ -136,7 +136,7 @@ public class BankTrx extends BaseTrx
             screen = new BankReconScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         else if ((iDocMode & BankTrx.PAYMENT_DISTRIBUTION_SCREEN) == BankTrx.PAYMENT_DISTRIBUTION_SCREEN)
         {
-            TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getField(BankTrx.kPayeeTrxDescID)).getReference();
+            TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getField(BankTrx.PAYEE_TRX_DESC_ID)).getReference();
             if (properties == null)
                 properties = new HashMap<String,Object>();
             properties.put(DBParams.HEADER_RECORD, this.getTableNames(false));
@@ -270,7 +270,7 @@ public class BankTrx extends BaseTrx
     {
         super.addMasterListeners();
         this.addListener(new VoidOnDeleteHandler(null));
-        this.getField(BankTrx.kInvBalance).addListener(new UpdatePreferredSign(null, this.getField(BankTrx.kInvSign)));
+        this.getField(BankTrx.INV_BALANCE).addListener(new UpdatePreferredSign(null, this.getField(BankTrx.INV_SIGN)));
     }
     /**
      * Convert the command to the screen document type.
@@ -290,7 +290,7 @@ public class BankTrx extends BaseTrx
      */
     public boolean onVoidTrx()
     {
-        this.getField(BankTrx.kAmount).setValue(0);
+        this.getField(BankTrx.AMOUNT).setValue(0);
         return super.onVoidTrx();
     }
     /**
@@ -299,24 +299,24 @@ public class BankTrx extends BaseTrx
      */
     public void calcUSDAmounts(boolean bUpdate)
     {
-        Record recBankAcct = ((ReferenceField)this.getField(BankTrx.kBankAcctID)).getReference();
+        Record recBankAcct = ((ReferenceField)this.getField(BankTrx.BANK_ACCT_ID)).getReference();
         if (recBankAcct == null)
             return; // Error - never.
         RecordOwner recordOwner = this.findRecordOwner();
         Record recAssetDrControl = null;
         if (recordOwner != null)
-            recAssetDrControl = (Record)recordOwner.getRecord(AssetDrControl.kAssetDrControlFile);
+            recAssetDrControl = (Record)recordOwner.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE);
         if (recAssetDrControl == null)
             recAssetDrControl = new AssetDrControl(recordOwner);
         
-        double dAmount = this.getField(BankTrx.kAmount).getValue();
-        double dExchange = this.getField(BankTrx.kExchange).getValue();
-        double dAmountLocal = this.getField(BankTrx.kAmountLocal).getValue();
+        double dAmount = this.getField(BankTrx.AMOUNT).getValue();
+        double dExchange = this.getField(BankTrx.EXCHANGE).getValue();
+        double dAmountLocal = this.getField(BankTrx.AMOUNT_LOCAL).getValue();
         double dInventoryBalance = dAmount;
         double dInventoryBalanceLocal = dAmountLocal;
         double dTotalAppliedLocal = 0;
         
-        if (recBankAcct.getField(BankAcct.kCurrencyID).equals(recAssetDrControl.getField(AssetDrControl.kCurrencyID)))
+        if (recBankAcct.getField(BankAcct.CURRENCY_ID).equals(recAssetDrControl.getField(AssetDrControl.CURRENCY_ID)))
         {
             dExchange = 1.0;
             dAmountLocal = dAmount;
@@ -329,7 +329,7 @@ public class BankTrx extends BaseTrx
                 dExchange = 0.0;
             else
             {   // Deposits are the only transactions that can specify exchange rates
-        //      TrxStatus recTrxStatus = ((ReferenceField)this.getField(BankTrx.kTrxStatusID)).getReference();
+        //      TrxStatus recTrxStatus = ((ReferenceField)this.getField(BankTrx.TRX_STATUS_ID)).getReference();
             }
             if (dExchange == 0)
             {
@@ -343,13 +343,13 @@ public class BankTrx extends BaseTrx
                     this.addListener(new FreeOnFreeHandler(m_recBankTrx));
                 }
         
-                BaseField fldBankAcct = this.getField(BankTrx.kBankAcctID);
+                BaseField fldBankAcct = this.getField(BankTrx.BANK_ACCT_ID);
                 String strSign = PreferredSignField.POSITIVE;
                 if (dInventoryBalance > 0)
                     strSign = PreferredSignField.NEGATIVE;
-                FileListener filter = new StringSubFileFilter(fldBankAcct.toString(), BankTrx.kBankAcctID, strSign, BankTrx.kInvSign, null, -1);
+                FileListener filter = new StringSubFileFilter(fldBankAcct.toString(), BankTrx.BANK_ACCT_ID, strSign, BankTrx.INV_SIGN, null, null);
                 m_recBankTrx.addListener(filter);
-                m_recBankTrx.setKeyArea(BankTrx.kInvBalanceKey);
+                m_recBankTrx.setKeyArea(BankTrx.INV_BALANCE_KEY);
                 try {
                     m_recBankTrx.close();
                     while (m_recBankTrx.hasNext())
@@ -357,8 +357,8 @@ public class BankTrx extends BaseTrx
                         m_recBankTrx.next();
                         if (bUpdate)
                             m_recBankTrx.edit();
-                        double dInvCurrent = m_recBankTrx.getField(BankTrx.kInvBalance).getValue();
-                        double dInvCurrentLocal = m_recBankTrx.getField(BankTrx.kInvBalanceLocal).getValue();
+                        double dInvCurrent = m_recBankTrx.getField(BankTrx.INV_BALANCE).getValue();
+                        double dInvCurrentLocal = m_recBankTrx.getField(BankTrx.INV_BALANCE_LOCAL).getValue();
                         if (dInvCurrent != 0)
                             dExchange = dInvCurrentLocal / dInvCurrent;
                         else
@@ -380,10 +380,10 @@ public class BankTrx extends BaseTrx
         
                         if (bUpdate)
                         {
-                            m_recBankTrx.getField(BankTrx.kInvBalance).setValue(dInvCurrent);
-                            m_recBankTrx.getField(BankTrx.kInvBalanceLocal).setValue(dNewInvCurrentLocal);
+                            m_recBankTrx.getField(BankTrx.INV_BALANCE).setValue(dInvCurrent);
+                            m_recBankTrx.getField(BankTrx.INV_BALANCE_LOCAL).setValue(dNewInvCurrentLocal);
                             if (dNewInvCurrentLocal == 0)
-                                m_recBankTrx.getField(BankTrx.kInvSign).setData(0);   // Inventory used up.
+                                m_recBankTrx.getField(BankTrx.INV_SIGN).setData(0);   // Inventory used up.
                             m_recBankTrx.set();
                         }
                         if (dInventoryBalance == 0)
@@ -397,19 +397,19 @@ public class BankTrx extends BaseTrx
         
                 if (dInventoryBalance != 0)
                 {
-                    Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.kCurrencyID)).getReference();
+                    Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.CURRENCY_ID)).getReference();
                     if (recCurrencys == null)
                         dExchange = 1;  // Error
                     else
-                        dExchange = recCurrencys.getField(Currencys.kLastRate).getValue();
+                        dExchange = recCurrencys.getField(Currencys.LAST_RATE).getValue();
                 }
                 dInventoryBalanceLocal = Math.floor(dInventoryBalance * dExchange * 100 + 0.5) / 100;
                 dAmountLocal = dAmountLocal + dInventoryBalanceLocal;
             }
         }
-        this.getField(BankTrx.kAmountLocal).setValue(dAmountLocal);
-        this.getField(BankTrx.kInvBalance).setValue(dInventoryBalance);
-        this.getField(BankTrx.kInvBalanceLocal).setValue(dInventoryBalanceLocal);
+        this.getField(BankTrx.AMOUNT_LOCAL).setValue(dAmountLocal);
+        this.getField(BankTrx.INV_BALANCE).setValue(dInventoryBalance);
+        this.getField(BankTrx.INV_BALANCE_LOCAL).setValue(dInventoryBalanceLocal);
     }
 
 }

@@ -108,22 +108,22 @@ public class McoPost extends BaseArTrxPostScreen
     public void addListeners()
     {
         super.addListeners();
-        m_iTrxStatusEntered = ((TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile)).getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.ENTERED);
-        ((TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile)).getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.BATCH);
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.kTrxStatusFile)));
+        m_iTrxStatusEntered = ((TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE)).getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.ENTERED);
+        ((TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE)).getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.BATCH);
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.TRX_STATUS_FILE)));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kTotal), Mco.kAmtApply, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.TOTAL), Mco.AMT_APPLY, false, true));
         
-        McoBatchDist recMcoBatchDist = (McoBatchDist)this.getRecord(McoBatchDist.kMcoBatchDistFile);
-        recMcoBatchDist.addListener(new SubFileFilter(this.getRecord(Mco.kMcoFile)));
-        recMcoBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), McoBatchDist.kAmount, false, true));
+        McoBatchDist recMcoBatchDist = (McoBatchDist)this.getRecord(McoBatchDist.MCO_BATCH_DIST_FILE);
+        recMcoBatchDist.addListener(new SubFileFilter(this.getRecord(Mco.MCO_FILE)));
+        recMcoBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), McoBatchDist.AMOUNT, false, true));
         
-        Mco recMco = (Mco)this.getRecord(Mco.kMcoFile);
+        Mco recMco = (Mco)this.getRecord(Mco.MCO_FILE);
         
-        Booking recBooking = (Booking)((ReferenceField)recMco.getField(Mco.kBookingID)).getReferenceRecord(this);
-        recMco.getField(Mco.kBookingID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
-        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.kArTrxFile);
+        Booking recBooking = (Booking)((ReferenceField)recMco.getField(Mco.BOOKING_ID)).getReferenceRecord(this);
+        recMco.getField(Mco.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         
         recMco.close();
@@ -158,7 +158,7 @@ public class McoPost extends BaseArTrxPostScreen
      */
     public Record getDistRecord()
     {
-        return this.getRecord(McoBatchDist.kMcoBatchDistFile);
+        return this.getRecord(McoBatchDist.MCO_BATCH_DIST_FILE);
     }
     /**
      * Get the base trx record.
@@ -166,7 +166,7 @@ public class McoPost extends BaseArTrxPostScreen
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(Mco.kMcoFile);
+        return (BaseTrx)this.getRecord(Mco.MCO_FILE);
     }
     /**
      * Is the batch header record valid?
@@ -176,7 +176,7 @@ public class McoPost extends BaseArTrxPostScreen
     {
         // Don't call inherited as there is no batch header on MCOs
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        BaseField fldDefAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kArAccountID);
+        BaseField fldDefAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AR_ACCOUNT_ID);
         if (fldDefAccountID.isNull())
         {
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("No default account set in control file"));
@@ -201,7 +201,7 @@ public class McoPost extends BaseArTrxPostScreen
         Record recDetail = this.getDetailRecord();
         try {
             recDetail.edit();
-            recDetail.getField(Mco.kTrxStatusID).setValue(m_iTrxStatusEntered);
+            recDetail.getField(Mco.TRX_STATUS_ID).setValue(m_iTrxStatusEntered);
         } catch (DBException ex)    {
             ex.printStackTrace();
             return false;
@@ -217,7 +217,7 @@ public class McoPost extends BaseArTrxPostScreen
     public boolean postBaseTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
         // Step 2b - Post the transaction side of the distribution.
-        BaseField fldDrAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoRecAccountID);
+        BaseField fldDrAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_REC_ACCOUNT_ID);
         Record recDetail = this.getDetailRecord();
         try {
             recDetail.writeAndRefresh();
@@ -225,7 +225,7 @@ public class McoPost extends BaseArTrxPostScreen
             ex.printStackTrace();
             return false;
         }
-        double dAmount = recDetail.getField(Mco.kAmtApply).getValue();
+        double dAmount = recDetail.getField(Mco.AMT_APPLY).getValue();
         boolean bSuccess = recBaseTrx.onPostTrxDist(fldDrAccountID, dAmount, PostingType.TRX_POST);
         return bSuccess;
     }
@@ -237,11 +237,11 @@ public class McoPost extends BaseArTrxPostScreen
      */
     public boolean postDistTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
-        BaseField fldDefAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kNonTourAccountID);
+        BaseField fldDefAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.NON_TOUR_ACCOUNT_ID);
         
         Record recBatchDetail = this.getDetailRecord();
-        double dLocalTotal = recBatchDetail.getField(Mco.kAmtApply).getValue();
-        String strComment = recBatchDetail.getField(Mco.kComments).toString();
+        double dLocalTotal = recBatchDetail.getField(Mco.AMT_APPLY).getValue();
+        String strComment = recBatchDetail.getField(Mco.COMMENTS).toString();
         
         return this.postDistTrx(recBaseTrx, dLocalTotal, strComment, fldDefAccountID);
     }
@@ -274,8 +274,8 @@ public class McoPost extends BaseArTrxPostScreen
      */
     public boolean removeTrxHeader()
     {
-        this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kCount).setData(null);
-        this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kTotal).setData(null);
+        this.getScreenRecord().getField(CashBatchScreenRecord.COUNT).setData(null);
+        this.getScreenRecord().getField(CashBatchScreenRecord.TOTAL).setData(null);
         String strSuccess = "Posted successfully";
         strSuccess = this.getTask().getApplication().getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(strSuccess);
         this.getTask().setStatusText(this.getTask().getString(strSuccess));

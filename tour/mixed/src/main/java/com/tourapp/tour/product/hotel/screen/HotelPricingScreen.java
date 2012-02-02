@@ -109,15 +109,15 @@ public class HotelPricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Hotel.kHotelFile);
+        return this.getRecord(Hotel.HOTEL_FILE);
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(HotelPricing.kHotelPricingFile).getField(HotelPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelPricing.kHotelPricingFile).getField(HotelPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelPricing.kHotelPricingFile).getField(HotelPricing.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -146,7 +146,7 @@ public class HotelPricingScreen extends ProductPricingScreen
             if (recordMain == null)
         {
         
-            recordMain = this.getRecord(Hotel.kHotelFile);
+            recordMain = this.getRecord(Hotel.HOTEL_FILE);
             iDocMode = Hotel.PRICING_GRID_SCREEN;
         }
         return super.onForm(recordMain, iDocMode, bReadCurrentRecord, iCommandOptions, properties);

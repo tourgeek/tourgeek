@@ -93,13 +93,13 @@ public class LinkTrx extends BaseTrx
         if ((this.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
             || (this.getEditMode() == DBConstants.EDIT_CURRENT))
         {
-            String bookmark = this.getField(LinkTrx.kLinkedTrxID).toString();
+            String bookmark = this.getField(LinkTrx.LINKED_TRX_ID).toString();
             if ((bookmark != null) && (bookmark.length() > 0))
             {
-                TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getField(LinkTrx.kLinkedTrxDescID)).getReference();
+                TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getField(LinkTrx.LINKED_TRX_DESC_ID)).getReference();
                 if (recTrxDesc != null)
                 {
-                    String strRecordSource = recTrxDesc.getField(TrxDesc.kSourceFile).toString();
+                    String strRecordSource = recTrxDesc.getField(TrxDesc.SOURCE_FILE).toString();
                     if ((strRecordSource != null) && (strRecordSource.length() > 0))
                     {
                         strCommand = Utility.addURLParam(strCommand, DBParams.RECORD, strRecordSource);

@@ -219,8 +219,8 @@ public class AcctBatch extends VirtualRecord
             task.setLastError(strError);
             return false;
         }
-        if ((this.getField(AcctBatch.kNextSequence).getValue() > 1)
-            || (this.getField(AcctBatch.kBalance).getValue() != 0))
+        if ((this.getField(AcctBatch.NEXT_SEQUENCE).getValue() > 1)
+            || (this.getField(AcctBatch.BALANCE).getValue() != 0))
         {
             String strError = "Must auto-reverse a new, empty batch";
             strError = ((BaseApplication)task.getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strError);
@@ -238,25 +238,25 @@ public class AcctBatch extends VirtualRecord
         recAccountDetail.addListener(new SubFileFilter(recAccount));
         DateField fldPeriodStartDate = new DateField(null, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
         DateField fldPeriodEndDate = new DateField(null, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        Date dateEnd = recPeriod.getPeriodEndDate(((DateTimeField)this.getField(AcctBatch.kTrxDate)).getDateTime());
-        Date dateStart = recPeriod.getPeriodStartDate(((DateTimeField)this.getField(AcctBatch.kTrxDate)).getDateTime());
+        Date dateEnd = recPeriod.getPeriodEndDate(((DateTimeField)this.getField(AcctBatch.TRX_DATE)).getDateTime());
+        Date dateStart = recPeriod.getPeriodStartDate(((DateTimeField)this.getField(AcctBatch.TRX_DATE)).getDateTime());
         fldPeriodStartDate.setDate(dateStart, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         fldPeriodEndDate.setDate(dateEnd, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        recAccountDetail.addListener(new ExtractRangeFilter(AcctDetail.kTrxDate, fldPeriodStartDate, fldPeriodEndDate, ExtractRangeFilter.PAD_DEFAULT));
+        recAccountDetail.addListener(new ExtractRangeFilter(AcctDetail.TRX_DATE, fldPeriodStartDate, fldPeriodEndDate, ExtractRangeFilter.PAD_DEFAULT));
         
         try {
             double dBalance = 0.00;
             while (recAccount.hasNext())
             {
                 recAccount.next();
-                if (recAccount.getField(Account.kCloseYearEnd).getState() == false)
+                if (recAccount.getField(Account.CLOSE_YEAR_END).getState() == false)
                     continue;   // Don't close this one.
                 double dAmount = 0.00;
                 recAccountDetail.close();
                 while (recAccountDetail.hasNext())
                 {
                     recAccountDetail.next();
-                    dAmount = dAmount + recAccountDetail.getField(AcctDetail.kAmountLocal).getValue();
+                    dAmount = dAmount + recAccountDetail.getField(AcctDetail.AMOUNT_LOCAL).getValue();
                 }
         
                 if (dAmount == 0.00)
@@ -264,18 +264,18 @@ public class AcctBatch extends VirtualRecord
                 dBalance = dBalance + dAmount;
                 recAcctBatchDetail.addNew();
         
-                recAcctBatchDetail.getField(AcctBatchDetail.kSequence).setValue(1);
-                recAcctBatchDetail.getField(AcctBatchDetail.kAccountID).moveFieldToThis(recAccount.getField(Account.kID));
-                recAcctBatchDetail.getField(AcctBatchDetail.kAmount).setValue(-dAmount);
+                recAcctBatchDetail.getField(AcctBatchDetail.SEQUENCE).setValue(1);
+                recAcctBatchDetail.getField(AcctBatchDetail.ACCOUNT_ID).moveFieldToThis(recAccount.getField(Account.ID));
+                recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).setValue(-dAmount);
         
                 recAcctBatchDetail.add();
             }
         
             Object bookmark = this.getHandle(DBConstants.BOOKMARK_HANDLE);
             this.edit();
-            this.getField(AcctBatch.kAutoClosing).setState(true);
-            this.getField(AcctBatch.kTrxDate).moveFieldToThis(fldPeriodEndDate);
-            this.getField(AcctBatch.kBalance).setValue(dBalance);
+            this.getField(AcctBatch.AUTO_CLOSING).setState(true);
+            this.getField(AcctBatch.TRX_DATE).moveFieldToThis(fldPeriodEndDate);
+            this.getField(AcctBatch.BALANCE).setValue(dBalance);
             this.set();
             this.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
         

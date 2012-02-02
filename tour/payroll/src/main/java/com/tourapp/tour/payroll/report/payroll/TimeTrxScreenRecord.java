@@ -30,7 +30,9 @@ public class TimeTrxScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PAY_ENDING_DATE = "PayEndingDate";
     public static final int kPayEndingDate = kScreenRecordLastField + 1;
+    public static final String EMP_TO_PAY = "EmpToPay";
     public static final int kEmpToPay = kPayEndingDate + 1;
     public static final int kTimeTrxScreenRecordLastField = kEmpToPay;
     public static final int kTimeTrxScreenRecordFields = kEmpToPay - DBConstants.MAIN_FIELD + 1;

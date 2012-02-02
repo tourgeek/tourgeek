@@ -88,13 +88,13 @@ public class CityGridScreen extends GridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(City.kDescription, this.getScreenRecord().getField(CityScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new CompareFileFilter(City.kStateID, this.getScreenRecord().getField(CityScreenRecord.kStateID), "=", null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(City.kCountryID, this.getScreenRecord().getField(CityScreenRecord.kCountryID), "=", null, true));
+        this.getMainRecord().addListener(new ExtractRangeFilter(City.DESCRIPTION, this.getScreenRecord().getField(CityScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new CompareFileFilter(City.STATE_ID, this.getScreenRecord().getField(CityScreenRecord.STATE_ID), "=", null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(City.COUNTRY_ID, this.getScreenRecord().getField(CityScreenRecord.COUNTRY_ID), "=", null, true));
         
-        this.getScreenRecord().getField(CityScreenRecord.kDescription).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(CityScreenRecord.kStateID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(CityScreenRecord.kCountryID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(CityScreenRecord.DESCRIPTION).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(CityScreenRecord.STATE_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(CityScreenRecord.COUNTRY_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -104,9 +104,9 @@ public class CityGridScreen extends GridScreen
     {
         ToolScreen toolScreen = super.addToolbars();
         
-        this.getScreenRecord().getField(CityScreenRecord.kDescription).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(CityScreenRecord.kCountryID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(CityScreenRecord.kStateID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CityScreenRecord.DESCRIPTION).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CityScreenRecord.COUNTRY_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CityScreenRecord.STATE_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         
         return toolScreen;
     }

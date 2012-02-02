@@ -72,7 +72,7 @@ public class TourReportScreen extends RecordReportDetail
     public void addListeners()
     {
         super.addListeners();
-        ((ReferenceField)this.getRecord(Tour.kTourFile).getField(Tour.kTourHeaderID)).addListener(new ReadSecondaryHandler(this.getRecord(TourHeader.kTourHeaderFile)));
+        ((ReferenceField)this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_HEADER_ID)).addListener(new ReadSecondaryHandler(this.getRecord(TourHeader.TOUR_HEADER_FILE)));
     }
     /**
      * Get the main record for this screen.
@@ -80,7 +80,7 @@ public class TourReportScreen extends RecordReportDetail
      */
     public Record getMainRecord()
     {
-        return this.getRecord(Tour.kTourFile);
+        return this.getRecord(Tour.TOUR_FILE);
     }
     /**
      * SetupSFields Method.

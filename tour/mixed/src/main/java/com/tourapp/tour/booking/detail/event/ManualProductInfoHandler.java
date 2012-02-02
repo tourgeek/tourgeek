@@ -61,7 +61,7 @@ public class ManualProductInfoHandler extends DisableOnFieldHandler
     {
         if (m_sField == null)
         {
-            BaseField fldProductDesc = ((ReferenceField)this.getOwner().getRecord().getField(BookingDetail.kProductID)).getReferenceRecord().getField(Product.kDescription);
+            BaseField fldProductDesc = ((ReferenceField)this.getOwner().getRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord().getField(Product.DESCRIPTION);
             m_sField = (ScreenField)fldProductDesc.getComponent(0);
         }
         return m_sField;
@@ -77,8 +77,8 @@ public class ManualProductInfoHandler extends DisableOnFieldHandler
         String strProperty = "hotelName";
         BaseField fldTransportID = this.getOwner();
         BaseField oldFldToDisable = m_fldToDisable;
-        BaseField fldProductDesc = ((ReferenceField)fldTransportID.getRecord().getField(BookingDetail.kProductID)).getReferenceRecord().getField(Product.kDescription);
-        BaseField fldProperties = fldTransportID.getRecord().getField(BookingDetail.kProperties);
+        BaseField fldProductDesc = ((ReferenceField)fldTransportID.getRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord().getField(Product.DESCRIPTION);
+        BaseField fldProperties = fldTransportID.getRecord().getField(BookingDetail.PROPERTIES);
         if (bFlag)
             m_fldToDisable = fldProperties;
         else

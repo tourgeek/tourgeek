@@ -8,6 +8,16 @@ import org.jbundle.model.db.*;
 
 public interface TourEventModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String DESCRIPTION = "Description";
+    public static final String CODE = "Code";
+    public static final String BOOKING_OR_TOUR = "BookingOrTour";
+    public static final String EVENT_OR_DATE = "EventOrDate";
+
+    public static final String DESCRIPTION_KEY = "Description";
+
+    public static final String CODE_KEY = "Code";
     public static final int NO_EVENT = 0;
     public static final int BOOKING = 1;
     public static final int BOOKING_STATUS = 2;

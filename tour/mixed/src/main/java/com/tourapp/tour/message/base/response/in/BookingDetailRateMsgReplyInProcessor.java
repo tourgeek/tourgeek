@@ -54,9 +54,9 @@ public class BookingDetailRateMsgReplyInProcessor extends ProductResponseMsgRepl
     /**
      * GetStatusFieldSeq Method.
      */
-    public int getStatusFieldSeq()
+    public String getStatusFieldSeq()
     {
-        return BookingDetail.kCostStatusID;
+        return BookingDetail.COST_STATUS_ID;
     }
 
 }

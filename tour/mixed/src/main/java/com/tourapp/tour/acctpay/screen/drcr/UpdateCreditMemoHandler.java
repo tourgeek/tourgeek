@@ -60,7 +60,7 @@ public class UpdateCreditMemoHandler extends UpdateApTrxHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.kApAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.AP_ACCOUNT_ID);
     }
     /**
      * Get the Debit Account field.
@@ -68,7 +68,7 @@ public class UpdateCreditMemoHandler extends UpdateApTrxHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.kTourAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.TOUR_ACCOUNT_ID);
     }
     /**
      * Get the transaction amount for this type of transaction.
@@ -77,7 +77,7 @@ public class UpdateCreditMemoHandler extends UpdateApTrxHandler
      */
     public double getTrxAmount(BaseField fldTypicalBalance)
     {
-        return this.getOwner().getField(ApTrx.kInvoiceLocal).getValue();
+        return this.getOwner().getField(ApTrx.INVOICE_LOCAL).getValue();
     }
 
 }

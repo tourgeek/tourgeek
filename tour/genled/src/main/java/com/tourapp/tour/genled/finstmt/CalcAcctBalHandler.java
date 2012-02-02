@@ -175,31 +175,31 @@ public class CalcAcctBalHandler extends FileListener
             {
                 if (m_bInclusive)
                 {
-                    SubFileFilter listener = new SubFileFilter(m_fldStartDate, AcctDetail.kTrxDate, null, -1, null, -1);
+                    SubFileFilter listener = new SubFileFilter(m_fldStartDate, AcctDetail.TRX_DATE, null, null, null, null);
                     listener.setEndKey(false);
                     m_recAcctDetail.addListener(listener);
                 }
                 else
                 {
                     if (m_fldStartDate != null)
-                        m_recAcctDetail.addListener(new CompareFileFilter(AcctDetail.kTrxDate, m_fldStartDate, ">", null, false));
+                        m_recAcctDetail.addListener(new CompareFileFilter(AcctDetail.TRX_DATE, m_fldStartDate, ">", null, false));
                 }
             }
             if (m_fldEndDate != null)
             {
                 if (m_bInclusive)
                 {
-                    SubFileFilter listener = new SubFileFilter(m_fldEndDate, AcctDetail.kTrxDate, null, -1, null, -1);
+                    SubFileFilter listener = new SubFileFilter(m_fldEndDate, AcctDetail.TRX_DATE, null, null, null, null);
                     listener.setInitialKey(false);
                     m_recAcctDetail.addListener(listener);
                 }
                 else
                 {
                     if (m_fldEndDate != null)
-                        m_recAcctDetail.addListener(new CompareFileFilter(AcctDetail.kTrxDate, m_fldEndDate, "<", null, false));
+                        m_recAcctDetail.addListener(new CompareFileFilter(AcctDetail.TRX_DATE, m_fldEndDate, "<", null, false));
                 }
             }
-            m_recAcctDetail.addListener(new SubCountHandler(m_fldTarget, AcctDetail.kAmountLocal, false, true));
+            m_recAcctDetail.addListener(new SubCountHandler(m_fldTarget, AcctDetail.AMOUNT_LOCAL, false, true));
         }
         return m_recAcctDetail;
     }

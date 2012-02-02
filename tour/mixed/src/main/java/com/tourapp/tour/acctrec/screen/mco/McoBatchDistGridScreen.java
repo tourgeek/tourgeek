@@ -105,10 +105,10 @@ public class McoBatchDistGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getRecord(Mco.kMcoFile).getField(Mco.kID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(Mco.MCO_FILE).getField(Mco.ID).addListener(new FieldReSelectHandler(this));
         
-        this.getRecord(McoBatchDist.kMcoBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), McoBatchDist.kAmount, false, true));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kEndBalance), this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), this.getRecord(Mco.kMcoFile).getField(Mco.kNet), true));
+        this.getRecord(McoBatchDist.MCO_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), McoBatchDist.AMOUNT, false, true));
+        this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.END_BALANCE), this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), this.getRecord(Mco.MCO_FILE).getField(Mco.NET), true));
     }
     /**
      * Make a sub-screen.

@@ -87,7 +87,7 @@ public class CurrencysScreen extends Screen
     public void addListeners()
     {
         this.addMainKeyBehavior();
-        //+this.getMainRecord().getField(Currencys.kLanguageID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kLanguageID)));
+        //+this.getMainRecord().getField(Currencys.LANGUAGE_ID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.LANGUAGE_ID)));
     }
     /**
      * Set up all the screen fields.
@@ -97,10 +97,10 @@ public class CurrencysScreen extends Screen
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCurrencyCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         Record query = this.getMainRecord();
-        for (int fieldSeq = Currencys.kLastRate; fieldSeq <= Currencys.kLanguageID; fieldSeq++)
+        for (int fieldSeq = query.getFieldSeq(Currencys.LAST_RATE); fieldSeq <= query.getFieldSeq(Currencys.LANGUAGE_ID); fieldSeq++)
         {
             query.getField(fieldSeq).setupFieldView(this);
-            if ((fieldSeq == Currencys.kLastRate) || (fieldSeq == Currencys.kCostingRate))
+            if ((fieldSeq == query.getFieldSeq(Currencys.LAST_RATE)) || (fieldSeq == query.getFieldSeq(Currencys.COSTING_RATE)))
             {
                 ScreenLocation lastFieldPosition = this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR);
                 RecipFieldConverter converter = new RecipFieldConverter((NumberField)query.getField(fieldSeq));

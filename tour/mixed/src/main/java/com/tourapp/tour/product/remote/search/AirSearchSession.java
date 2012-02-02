@@ -97,12 +97,12 @@ public class AirSearchSession extends ProductSearchSession
     {
         super.addListeners();
         
-        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kClassID)).getReferenceRecord(this);
-        ((ReferenceField)this.getScreenRecord().getField(AirScreenRecord.kAirlineID)).getReferenceRecord(this); 
+        ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID)).getReferenceRecord(this);
+        ((ReferenceField)this.getScreenRecord().getField(AirScreenRecord.AIRLINE_ID)).getReferenceRecord(this); 
         
-        this.getMainRecord().addListener(new CompareFileFilter(Air.kAirlineID, this.getScreenRecord().getField(AirScreenRecord.kAirlineID), DBConstants.EQUALS, null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), DBConstants.EQUALS, null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.kToCityID, this.getScreenRecord().getField(ProductScreenRecord.kToCityID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(Air.AIRLINE_ID, this.getScreenRecord().getField(AirScreenRecord.AIRLINE_ID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(TransportProduct.TO_CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.TO_CITY_ID), DBConstants.EQUALS, null, true));
     }
     /**
      * Select the fields required for the grid screen.
@@ -112,17 +112,17 @@ public class AirSearchSession extends ProductSearchSession
         super.selectGridFields();
         Record record = this.getMainRecord();
         
-        record.getField(Air.kEtd).setSelected(true);
-        record.getField(Air.kArriveTime).setSelected(true);
-        record.getField(Air.kCityCode).setSelected(true);
-        record.getField(Air.kToCityCode).setSelected(true);
-        record.getField(Air.kAddDays).setSelected(true);
-        record.getField(Air.kEquipment).setSelected(true);
-        record.getField(Air.kMeals).setSelected(true);
-        record.getField(Air.kDays).setSelected(true);
-        record.getField(Air.kClasses).setSelected(true);
-        record.getField(Air.kStops).setSelected(true);
-        record.getField(Air.kSegment).setSelected(true);
+        record.getField(Air.ETD).setSelected(true);
+        record.getField(Air.ARRIVE_TIME).setSelected(true);
+        record.getField(Air.CITY_CODE).setSelected(true);
+        record.getField(Air.TO_CITY_CODE).setSelected(true);
+        record.getField(Air.ADD_DAYS).setSelected(true);
+        record.getField(Air.EQUIPMENT).setSelected(true);
+        record.getField(Air.MEALS).setSelected(true);
+        record.getField(Air.DAYS).setSelected(true);
+        record.getField(Air.CLASSES).setSelected(true);
+        record.getField(Air.STOPS).setSelected(true);
+        record.getField(Air.SEGMENT).setSelected(true);
     }
     /**
      * Select the fields for the maint screen.
@@ -155,15 +155,15 @@ public class AirSearchSession extends ProductSearchSession
         Record screenRecord = this.getScreenRecord();
         Record recProduct = this.getMainRecord();
         
-        this.addThisRecordFilter(properties, City.kCityFile, SearchConstants.LOCATION_TO, TransportProduct.kToCityID, ProductScreenRecord.kToCityID);
+        this.addThisRecordFilter(properties, City.CITY_FILE, SearchConstants.LOCATION_TO, TransportProduct.TO_CITY_ID, ProductScreenRecord.TO_CITY_ID);
         
         String strAirClass = (String)properties.get(SearchConstants.AIR_CLASS);
-        this.getScreenRecord().getField(ProductScreenRecord.kClassID).setString(strAirClass);
+        this.getScreenRecord().getField(ProductScreenRecord.CLASS_ID).setString(strAirClass);
         
-        Record recProductControl = this.getRecord(ProductControl.kProductControlFile);
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).moveFieldToThis(recProductControl.getField(ProductControl.kAirRateID));
+        Record recProductControl = this.getRecord(ProductControl.PRODUCT_CONTROL_FILE);
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).moveFieldToThis(recProductControl.getField(ProductControl.AIR_RATE_ID));
         
-        this.addThisRecordFilter(properties, Airline.kAirlineFile, SearchConstants.AIRLINE, Air.kAirlineID, AirScreenRecord.kAirlineID);
+        this.addThisRecordFilter(properties, Airline.AIRLINE_FILE, SearchConstants.AIRLINE, Air.AIRLINE_ID, AirScreenRecord.AIRLINE_ID);
     }
 
 }

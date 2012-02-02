@@ -95,7 +95,7 @@ public class AcctDetailDistGridScreen extends DetailGridScreen
     {
         super.addListeners();
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
-        this.getHeaderRecord().getField(AcctDetailDist.kAcctDetailID).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).addListener(new FieldReSelectHandler(this));
         this.setEditing(false);
         this.setAppending(false);
     }
@@ -109,7 +109,7 @@ public class AcctDetailDistGridScreen extends DetailGridScreen
             strGroup = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strGroup);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strGroup, AcctDetailDist.DIST_GROUP, AcctDetailDist.DIST_GROUP, null);
-        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.kTrxID), ScreenConstants.DEFAULT_DISPLAY);
+        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.
@@ -119,7 +119,7 @@ public class AcctDetailDistGridScreen extends DetailGridScreen
         String strGroup = AcctDetailDist.DIST_GROUP;
         if (this.getTask() != null)
             strGroup = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strGroup);
-        new TrxIDSField(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, this.getMainRecord().getField(AcctDetailDist.kTrxID), ScreenConstants.DEFAULT_DISPLAY);
+        new TrxIDSField(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, AcctDetailDist.DIST_GROUP, AcctDetailDist.DIST_GROUP, strGroup);
         new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         super.addNavButtons();  // Next buttons will be "First!"

@@ -81,7 +81,7 @@ public class TourHeaderSearchSession extends ProductSearchSession
     public void openOtherRecords()
     {
         super.openOtherRecords();
-        if (this.getRecord(BookingControl.kBookingControlFile) == null)
+        if (this.getRecord(BookingControl.BOOKING_CONTROL_FILE) == null)
             new BookingControl(this);
         new TourType(this);
     }
@@ -98,13 +98,13 @@ public class TourHeaderSearchSession extends ProductSearchSession
     public void addListeners()
     {
         super.addListeners();
-        if (this.getScreenRecord().getField(TourHeaderScreenRecord.kTourType).isNull())
-            this.getScreenRecord().getField(TourHeaderScreenRecord.kTourType).moveFieldToThis(this.getRecord(BookingControl.kBookingControlFile).getField(BookingControl.kThinTourType));
+        if (this.getScreenRecord().getField(TourHeaderScreenRecord.TOUR_TYPE).isNull())
+            this.getScreenRecord().getField(TourHeaderScreenRecord.TOUR_TYPE).moveFieldToThis(this.getRecord(BookingControl.BOOKING_CONTROL_FILE).getField(BookingControl.THIN_TOUR_TYPE));
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new BitFileFilter(TourHeader.kTourType, this.getScreenRecord().getField(TourHeaderScreenRecord.kTourType)));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new BitFileFilter(TourHeader.TOUR_TYPE, this.getScreenRecord().getField(TourHeaderScreenRecord.TOUR_TYPE)));
         
-        this.getMainRecord().addListener(new CompareFileFilter(TourHeader.kEndDate, this.getScreenRecord().getField(TourHeaderScreenRecord.kStartDepartureDate), FileFilter.GREATER_THAN_EQUAL, null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(TourHeader.END_DATE, this.getScreenRecord().getField(TourHeaderScreenRecord.START_DEPARTURE_DATE), FileFilter.GREATER_THAN_EQUAL, null, true));
     }
     /**
      * Select the fields required for the grid screen.
@@ -114,13 +114,13 @@ public class TourHeaderSearchSession extends ProductSearchSession
         super.selectGridFields();
         Record record = this.getMainRecord();
         
-        record.getField(TourHeader.kTourType).setSelected(true);
-        record.getField(TourHeader.kProductCatID).setSelected(true);
-        record.getField(TourHeader.kTourClassID).setSelected(true);
+        record.getField(TourHeader.TOUR_TYPE).setSelected(true);
+        record.getField(TourHeader.PRODUCT_CAT_ID).setSelected(true);
+        record.getField(TourHeader.TOUR_CLASS_ID).setSelected(true);
         
-        record.getField(TourHeader.kDays).setSelected(true);
+        record.getField(TourHeader.DAYS).setSelected(true);
         
-        this.getRecord(TourType.kTourTypeFile).setKeyArea(TourType.kDescriptionKey);
+        this.getRecord(TourType.TOUR_TYPE_FILE).setKeyArea(TourType.DESCRIPTION_KEY);
     }
     /**
      * Select the fields for the maint screen.
@@ -144,17 +144,17 @@ public class TourHeaderSearchSession extends ProductSearchSession
         {
             int sBitPosition = Integer.parseInt(strTourType);
             if (sBitPosition > 0)
-                this.getScreenRecord().getField(TourHeaderScreenRecord.kTourType).setValue(1 << sBitPosition);
+                this.getScreenRecord().getField(TourHeaderScreenRecord.TOUR_TYPE).setValue(1 << sBitPosition);
             else
                 strTourType = null;
         }
         if (strTourType == null)
-            this.getScreenRecord().getField(TourHeaderScreenRecord.kTourType).moveFieldToThis(this.getRecord(BookingControl.kBookingControlFile).getField(BookingControl.kThinTourType));
+            this.getScreenRecord().getField(TourHeaderScreenRecord.TOUR_TYPE).moveFieldToThis(this.getRecord(BookingControl.BOOKING_CONTROL_FILE).getField(BookingControl.THIN_TOUR_TYPE));
         
-        ((DateTimeField)this.getScreenRecord().getField(TourHeaderScreenRecord.kStartDepartureDate)).setValue(DateTimeField.todaysDate());
+        ((DateTimeField)this.getScreenRecord().getField(TourHeaderScreenRecord.START_DEPARTURE_DATE)).setValue(DateTimeField.todaysDate());
         
-        this.addThisRecordFilter(properties, Country.kCountryFile, JTreePanel.LOCATION, TourHeader.kCountryID, TourHeaderScreenRecord.kCountryID);
-        this.addThisRecordFilter(properties, Region.kRegionFile, JTreePanel.LOCATION, TourHeader.kRegionID, TourHeaderScreenRecord.kRegionID);
+        this.addThisRecordFilter(properties, Country.COUNTRY_FILE, JTreePanel.LOCATION, TourHeader.COUNTRY_ID, TourHeaderScreenRecord.COUNTRY_ID);
+        this.addThisRecordFilter(properties, Region.REGION_FILE, JTreePanel.LOCATION, TourHeader.REGION_ID, TourHeaderScreenRecord.REGION_ID);
     }
     /**
      * AddProductRateMessageFilter Method.

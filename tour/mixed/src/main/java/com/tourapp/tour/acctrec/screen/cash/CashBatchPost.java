@@ -84,8 +84,8 @@ public class CashBatchPost extends BaseArTrxPostScreen
     public void openOtherRecords()
     {
         super.openOtherRecords(); 
-        if (this.getMainRecord().getTableNames(false).equalsIgnoreCase(CashBatchDetail.kCashBatchDetailFile))
-            this.addRecord(((ReferenceField)this.getMainRecord().getField(CashBatchDetail.kCashBatchID)).getReference(), true);
+        if (this.getMainRecord().getTableNames(false).equalsIgnoreCase(CashBatchDetail.CASH_BATCH_DETAIL_FILE))
+            this.addRecord(((ReferenceField)this.getMainRecord().getField(CashBatchDetail.CASH_BATCH_ID)).getReference(), true);
         else
             new CashBatchDetail(this);
         new CashBatchDist(this);
@@ -105,24 +105,24 @@ public class CashBatchPost extends BaseArTrxPostScreen
     {
         super.addListeners();
         
-        this.getMainRecord().getField(CashBatch.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kArBankAcctID)));
+        this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AR_BANK_ACCT_ID)));
         
-        this.getScreenRecord().getField(CashBatchScreenRecord.kUserID).moveFieldToThis(this.getMainRecord().getField(CashBatch.kUserID));
-        this.getMainRecord().setKeyArea(CashBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CashBatchScreenRecord.kUserID), CashBatch.kUserID, null, -1, null, -1));
+        this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID).moveFieldToThis(this.getMainRecord().getField(CashBatch.USER_ID));
+        this.getMainRecord().setKeyArea(CashBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID), CashBatch.USER_ID, null, null, null, null));
         
-        CashBatchDetail recCashBatchDetail = (CashBatchDetail)this.getRecord(CashBatchDetail.kCashBatchDetailFile);
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubFileFilter(this.getRecord(CashBatch.kCashBatchFile)));
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubCountHandler(this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kBatchChecksActual), false, true));
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubCountHandler(this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kBatchTotalActual), CashBatchDetail.kAmount, false, true));
+        CashBatchDetail recCashBatchDetail = (CashBatchDetail)this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE);
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(CashBatch.CASH_BATCH_FILE)));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.BATCH_CHECKS_ACTUAL), false, true));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.BATCH_TOTAL_ACTUAL), CashBatchDetail.AMOUNT, false, true));
         
-        CashBatchDist recCashBatchDist = (CashBatchDist)this.getRecord(CashBatchDist.kCashBatchDistFile);
-        recCashBatchDist.addListener(new SubFileFilter(this.getRecord(CashBatchDetail.kCashBatchDetailFile)));
-        recCashBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), CashBatchDist.kAmount, false, true));
+        CashBatchDist recCashBatchDist = (CashBatchDist)this.getRecord(CashBatchDist.CASH_BATCH_DIST_FILE);
+        recCashBatchDist.addListener(new SubFileFilter(this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE)));
+        recCashBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CashBatchDist.AMOUNT, false, true));
         
-        Booking recBooking = (Booking)((ReferenceField)recCashBatchDist.getField(CashBatchDist.kBookingID)).getReferenceRecord(this);
-        recCashBatchDist.getField(CashBatchDist.kBookingID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
-        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.kArTrxFile);
+        Booking recBooking = (Booking)((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReferenceRecord(this);
+        recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         
         recCashBatchDetail.close();
@@ -164,7 +164,7 @@ public class CashBatchPost extends BaseArTrxPostScreen
      */
     public Record getDetailRecord()
     {
-        return this.getRecord(CashBatchDetail.kCashBatchDetailFile);
+        return this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE);
     }
     /**
      * Return the distribution detail record.
@@ -172,7 +172,7 @@ public class CashBatchPost extends BaseArTrxPostScreen
      */
     public Record getDistRecord()
     {
-        return this.getRecord(CashBatchDist.kCashBatchDistFile);
+        return this.getRecord(CashBatchDist.CASH_BATCH_DIST_FILE);
     }
     /**
      * Get the base trx record.
@@ -180,7 +180,7 @@ public class CashBatchPost extends BaseArTrxPostScreen
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(BankTrx.kBankTrxFile);
+        return (BaseTrx)this.getRecord(BankTrx.BANK_TRX_FILE);
     }
     /**
      * Is the batch header record valid?
@@ -192,25 +192,25 @@ public class CashBatchPost extends BaseArTrxPostScreen
         if (!bSuccess)
             return bSuccess;
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(CashBatch.kBankAcctID)).getReference();
+        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(CashBatch.BANK_ACCT_ID)).getReference();
         if (recBankAcct == null)
         {
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("Invalid Bank account, can't post"));
             return false;
         }
-        BaseField fldDefAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kArAccountID);
+        BaseField fldDefAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AR_ACCOUNT_ID);
         if (fldDefAccountID.isNull())
         {
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("No default account set in control file"));
             return false;
         }
-        if (this.getMainRecord().getField(CashBatch.kDetailDate).isNull())
+        if (this.getMainRecord().getField(CashBatch.DETAIL_DATE).isNull())
         {
             this.displayError(application.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString("You must have a transaction date, can't post"));
             return false;
         }
-        if (((!this.getMainRecord().getField(CashBatch.kBatchTotal).isNull()) && (Math.abs(this.getMainRecord().getField(CashBatch.kBatchTotal).getValue()) != Math.abs(this.getMainRecord().getField(CashBatch.kBatchTotalActual).getValue()))) ||
-            ((!this.getMainRecord().getField(CashBatch.kBatchChecks).isNull()) && (this.getMainRecord().getField(CashBatch.kBatchChecks).getValue() != this.getMainRecord().getField(CashBatch.kBatchChecksActual).getValue())))
+        if (((!this.getMainRecord().getField(CashBatch.BATCH_TOTAL).isNull()) && (Math.abs(this.getMainRecord().getField(CashBatch.BATCH_TOTAL).getValue()) != Math.abs(this.getMainRecord().getField(CashBatch.BATCH_TOTAL_ACTUAL).getValue()))) ||
+            ((!this.getMainRecord().getField(CashBatch.BATCH_CHECKS).isNull()) && (this.getMainRecord().getField(CashBatch.BATCH_CHECKS).getValue() != this.getMainRecord().getField(CashBatch.BATCH_CHECKS_ACTUAL).getValue())))
         {
             this.displayError(application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString("The batch doesn't balance, can't post"));
             return false;
@@ -227,20 +227,20 @@ public class CashBatchPost extends BaseArTrxPostScreen
         // Now post the total deposit amount
         BaseTrx recBaseTrx = this.getBaseTrx();
         Record recCashBatch = this.getMainRecord();
-        TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recBaseTrx.getField(BankTrx.kTrxStatusID)).getReferenceRecord();
+        TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recBaseTrx.getField(BankTrx.TRX_STATUS_ID)).getReferenceRecord();
         try   {
         // Step 2a - Create and write the bank transaction (in BankTrx).
             recBaseTrx.addNew();
-            int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.PAYMENT);
-            recBaseTrx.getField(BankTrx.kTrxStatusID).setValue(iTrxStatusID);
-            recBaseTrx.getField(BankTrx.kPayeeName).moveFieldToThis(recTrxStatus.getField(TrxStatus.kStatusDesc));
-            recBaseTrx.getField(BankTrx.kTrxDate).moveFieldToThis(recCashBatch.getField(CashBatch.kDetailDate));
-            recBaseTrx.getField(BankTrx.kAmountLocal).setValue(recCashBatch.getField(CashBatch.kBatchTotalActual).getValue());
-            recBaseTrx.getField(BankTrx.kTrxEntry).initField(DBConstants.DONT_DISPLAY);
-            recBaseTrx.getField(BankTrx.kBankAcctID).moveFieldToThis(recCashBatch.getField(CashBatch.kBankAcctID));
-            recBaseTrx.getField(BankTrx.kAmount).setValue(recCashBatch.getField(CashBatch.kBatchTotalActual).getValue());
-            recBaseTrx.getField(BankTrx.kExchange).initField(DBConstants.DONT_DISPLAY);
-            recBaseTrx.getField(BankTrx.kComments).moveFieldToThis(recTrxStatus.getField(TrxStatus.kStatusDesc));
+            int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.PAYMENT);
+            recBaseTrx.getField(BankTrx.TRX_STATUS_ID).setValue(iTrxStatusID);
+            recBaseTrx.getField(BankTrx.PAYEE_NAME).moveFieldToThis(recTrxStatus.getField(TrxStatus.STATUS_DESC));
+            recBaseTrx.getField(BankTrx.TRX_DATE).moveFieldToThis(recCashBatch.getField(CashBatch.DETAIL_DATE));
+            recBaseTrx.getField(BankTrx.AMOUNT_LOCAL).setValue(recCashBatch.getField(CashBatch.BATCH_TOTAL_ACTUAL).getValue());
+            recBaseTrx.getField(BankTrx.TRX_ENTRY).initField(DBConstants.DONT_DISPLAY);
+            recBaseTrx.getField(BankTrx.BANK_ACCT_ID).moveFieldToThis(recCashBatch.getField(CashBatch.BANK_ACCT_ID));
+            recBaseTrx.getField(BankTrx.AMOUNT).setValue(recCashBatch.getField(CashBatch.BATCH_TOTAL_ACTUAL).getValue());
+            recBaseTrx.getField(BankTrx.EXCHANGE).initField(DBConstants.DONT_DISPLAY);
+            recBaseTrx.getField(BankTrx.COMMENTS).moveFieldToThis(recTrxStatus.getField(TrxStatus.STATUS_DESC));
             // Step 2 - Post it to the G/L
             //+recAcctDetail.getDatabase().startTrx();
             // Step 2a - Create and write the bank transaction (in BankTrx).
@@ -271,10 +271,10 @@ public class CashBatchPost extends BaseArTrxPostScreen
     public boolean postBaseTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
         // Step 2b - Post the transaction side of the distribution.
-        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(CashBatch.kBankAcctID)).getReference();
-        BaseField fldDrAccountID = recBankAcct.getField(BankAcct.kAccountID);
+        BankAcct recBankAcct = (BankAcct)((ReferenceField)this.getMainRecord().getField(CashBatch.BANK_ACCT_ID)).getReference();
+        BaseField fldDrAccountID = recBankAcct.getField(BankAcct.ACCOUNT_ID);
         Record recDetail = this.getDetailRecord();
-        double dAmount = recDetail.getField(CashBatchDetail.kAmount).getValue();
+        double dAmount = recDetail.getField(CashBatchDetail.AMOUNT).getValue();
         boolean bSuccess = recBaseTrx.onPostTrxDist(fldDrAccountID, dAmount, PostingType.TRX_POST);
         return bSuccess;
     }
@@ -286,11 +286,11 @@ public class CashBatchPost extends BaseArTrxPostScreen
      */
     public boolean postDistTrx(BaseTrx recBaseTrx, TransactionType recTransactionType)
     {
-        BaseField fldDefAccountID = this.getRecord(ArControl.kArControlFile).getField(ArControl.kNonTourAccountID);
+        BaseField fldDefAccountID = this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.NON_TOUR_ACCOUNT_ID);
         
         Record recBatchDetail = this.getDetailRecord();
-        double dLocalTotal = recBatchDetail.getField(CashBatchDetail.kAmount).getValue();
-        String strComment = recBatchDetail.getField(CashBatchDetail.kComments).toString();
+        double dLocalTotal = recBatchDetail.getField(CashBatchDetail.AMOUNT).getValue();
+        String strComment = recBatchDetail.getField(CashBatchDetail.COMMENTS).toString();
         
         return this.postDistTrx(recBaseTrx, dLocalTotal, strComment, fldDefAccountID);
     }

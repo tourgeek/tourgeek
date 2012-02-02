@@ -99,14 +99,14 @@ public class HotelMessageData extends ProductMessageData
     public int checkRequestParams(Rec record)
     {
         int iStatus = super.checkRequestParams(record);
-        if (record.getField(BookingHotel.kNights).isNull())
+        if (record.getField(BookingHotel.NIGHTS).isNull())
             if (this.getMessageFieldDesc(BookingHotel.NIGHTS) != null)
         {
             iStatus = CostStatus.DATA_REQUIRED;        // The information must be valid to lookup the price
             String strError = "Data required in the {0} field";
             if (record.getTask() != null)
                 strError = record.getTask().getApplication().getResources(ThinResourceConstants.ERROR_RESOURCE, true).getString(strError);
-            strError = MessageFormat.format(strError, record.getField(BookingHotel.kNights).getFieldDesc());
+            strError = MessageFormat.format(strError, record.getField(BookingHotel.NIGHTS).getFieldDesc());
             ((BookingDetail)record).setErrorMessage((ProductRequest)this.getMessageDataParent(), strError);
         }
         return iStatus;
@@ -119,12 +119,12 @@ public class HotelMessageData extends ProductMessageData
      */
     public int initForMessage(Rec record)
     {
-        ((Record)record).getField(BookingHotel.kSingleCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingHotel.kDoubleCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingHotel.kTripleCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingHotel.kQuadCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingHotel.kRoomCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingHotel.kMealCost).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingHotel.SINGLE_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingHotel.DOUBLE_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingHotel.TRIPLE_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingHotel.QUAD_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingHotel.ROOM_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingHotel.MEAL_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return super.initForMessage(record);
     }
     /**
@@ -135,17 +135,17 @@ public class HotelMessageData extends ProductMessageData
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;
-        this.putRawFieldData(recBookingDetail.getField(BookingHotel.kNights));
+        this.putRawFieldData(recBookingDetail.getField(BookingHotel.NIGHTS));
         for (int iMealNo = 1; iMealNo <= 4; iMealNo++)
         {
-            int iFieldSeq = BookingHotel.kMealPlan1ID + ((iMealNo - 1) * (BookingHotel.kMealPlan2ID - BookingHotel.kMealPlan1ID));
+            int iFieldSeq = recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_1ID) + ((iMealNo - 1) * (recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_2ID) - recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_1ID)));
             int iMealPlanID = (int)recBookingDetail.getField(iFieldSeq).getValue();
             if (iMealPlanID > 0)
             {
                 this.put(Hotel.MEAL_PLAN_ID_PARAM + Integer.toString(iMealNo), recBookingDetail.getField(iFieldSeq).getData());
-                BaseField fieldMeals = recBookingDetail.getField(iFieldSeq + (BookingHotel.kMealPlan1Qty - BookingHotel.kMealPlan1ID));
+                BaseField fieldMeals = recBookingDetail.getField(iFieldSeq + (recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_1_QTY) - recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_1ID)));
                 this.put(Hotel.MEAL_PLAN_QTY_PARAM + Integer.toString(iMealNo), fieldMeals.getData());
-                BaseField fieldDays = recBookingDetail.getField(iFieldSeq + (BookingHotel.kMealPlan1Days - BookingHotel.kMealPlan1ID));
+                BaseField fieldDays = recBookingDetail.getField(iFieldSeq + (recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_1_DAYS) - recBookingDetail.getFieldSeq(BookingHotel.MEAL_PLAN_1ID)));
                 this.put(Hotel.MEAL_PLAN_DAYS_PARAM + Integer.toString(iMealNo), fieldDays.getData());
             }
         }
@@ -168,7 +168,7 @@ public class HotelMessageData extends ProductMessageData
      */
     public int getRawRecordData(Rec record)
     {
-        this.getRawFieldData(((Record)record).getField(BookingHotel.kNights));
+        this.getRawFieldData(((Record)record).getField(BookingHotel.NIGHTS));
         
         return super.getRawRecordData(record);
     }
@@ -221,8 +221,8 @@ public class HotelMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Hotel.kHotelFile) != null)
-                    return (Hotel)recordOwner.getRecord(Hotel.kHotelFile);
+                if (recordOwner.getRecord(Hotel.HOTEL_FILE) != null)
+                    return (Hotel)recordOwner.getRecord(Hotel.HOTEL_FILE);
         return new Hotel(recordOwner);
     }
     /**

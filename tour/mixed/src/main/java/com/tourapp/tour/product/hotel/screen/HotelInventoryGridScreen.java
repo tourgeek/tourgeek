@@ -109,11 +109,11 @@ public class HotelInventoryGridScreen extends ProductInventoryGridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().addListener(new CompareFileFilter(Inventory.kRateID, this.getScreenRecord().getField(HotelScreenRecord.kRateID), "=", null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(Inventory.kClassID, this.getScreenRecord().getField(HotelScreenRecord.kClassID), "=", null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(Inventory.RATE_ID, this.getScreenRecord().getField(HotelScreenRecord.RATE_ID), "=", null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(Inventory.CLASS_ID, this.getScreenRecord().getField(HotelScreenRecord.CLASS_ID), "=", null, true));
         
-        this.getScreenRecord().getField(HotelScreenRecord.kRateID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(HotelScreenRecord.kClassID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(HotelScreenRecord.RATE_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(HotelScreenRecord.CLASS_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -123,8 +123,8 @@ public class HotelInventoryGridScreen extends ProductInventoryGridScreen
     {
         ToolScreen screen = super.addToolbars();
         
-        this.getScreenRecord().getField(HotelScreenRecord.kRateID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(HotelScreenRecord.kClassID).setupDefaultView(screen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(HotelScreenRecord.RATE_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(HotelScreenRecord.CLASS_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
         
         return screen;
     }
@@ -133,8 +133,8 @@ public class HotelInventoryGridScreen extends ProductInventoryGridScreen
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(HotelInventory.kHotelInventoryFile).getField(HotelInventory.kInvDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelInventory.kHotelInventoryFile).getField(HotelInventory.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelInventory.kHotelInventoryFile).getField(HotelInventory.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

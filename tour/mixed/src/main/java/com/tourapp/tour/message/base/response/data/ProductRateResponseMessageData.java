@@ -78,30 +78,30 @@ public class ProductRateResponseMessageData extends ProductResponseMessageData
     {
         int iInfoStatus = super.getRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;
-        if (recBookingDetail.getField(BookingDetail.kExchange).getValue() == 0)
+        if (recBookingDetail.getField(BookingDetail.EXCHANGE).getValue() == 0)
         {
             Product recProduct = recBookingDetail.getProduct();
             if (recProduct != null)
             {
-                Vendor recVendor = (Vendor)((ReferenceField)recProduct.getField(Product.kVendorID)).getReference();
+                Vendor recVendor = (Vendor)((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReference();
                 if (recVendor != null)
                 {
-                    Currencys recCurrencys = (Currencys)((ReferenceField)recVendor.getField(recVendor.kCurrencysID)).getReference();
+                    Currencys recCurrencys = (Currencys)((ReferenceField)recVendor.getField(recVendor.CURRENCYS_ID)).getReference();
                     if (recCurrencys != null)
                     {
-                        if (!recCurrencys.getField(Currencys.kCostingRate).isNull())
-                            recBookingDetail.getField(BookingDetail.kExchange).moveFieldToThis(recCurrencys.getField(Currencys.kCostingRate));
+                        if (!recCurrencys.getField(Currencys.COSTING_RATE).isNull())
+                            recBookingDetail.getField(BookingDetail.EXCHANGE).moveFieldToThis(recCurrencys.getField(Currencys.COSTING_RATE));
                         else
-                            recBookingDetail.getField(BookingDetail.kExchange).moveFieldToThis(recCurrencys.getField(Currencys.kCostingRate));
+                            recBookingDetail.getField(BookingDetail.EXCHANGE).moveFieldToThis(recCurrencys.getField(Currencys.COSTING_RATE));
                     }
                 }
             }
-            if (recBookingDetail.getField(BookingDetail.kExchange).getValue() == 0)
-                recBookingDetail.getField(BookingDetail.kExchange).setValue(1.0);
+            if (recBookingDetail.getField(BookingDetail.EXCHANGE).getValue() == 0)
+                recBookingDetail.getField(BookingDetail.EXCHANGE).setValue(1.0);
         }
-        this.getRawFieldData(recBookingDetail.getField(BookingDetail.kTotalCost));
-        if (recBookingDetail.getField(BookingDetail.kMarkupFromLast).getValue() > 0)
-            recBookingDetail.getField(BookingDetail.kTotalCost).setValue(Math.floor(recBookingDetail.getField(BookingDetail.kTotalCost).getValue() * (1 + recBookingDetail.getField(BookingDetail.kMarkupFromLast).getValue()) * 100 + 0.5) / 100);
+        this.getRawFieldData(recBookingDetail.getField(BookingDetail.TOTAL_COST));
+        if (recBookingDetail.getField(BookingDetail.MARKUP_FROM_LAST).getValue() > 0)
+            recBookingDetail.getField(BookingDetail.TOTAL_COST).setValue(Math.floor(recBookingDetail.getField(BookingDetail.TOTAL_COST).getValue() * (1 + recBookingDetail.getField(BookingDetail.MARKUP_FROM_LAST).getValue()) * 100 + 0.5) / 100);
         return iInfoStatus;
     }
     /**

@@ -93,7 +93,7 @@ public class AcctDetailCalcStartBal extends FileListener
             return errorCode;
         if (iChangeType == DBConstants.AFTER_REQUERY_TYPE)
         {
-            if (m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kCalcStart).getState())
+            if (m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.CALC_START).getState())
             {
                 if (m_recAcctDetail == null)
                 {
@@ -102,10 +102,10 @@ public class AcctDetailCalcStartBal extends FileListener
                         m_recAcctDetail.getRecordOwner().removeRecord(m_recAcctDetail);
                     m_recAcctDetail.addListener(new SubFileFilter(m_recAccount));
         
-                    m_recAcctDetail.addListener(new CompareFileFilter(AcctDetail.kTrxDate, m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kStartDate), "<", null, false));
-                    m_recAcctDetail.addListener(new SubCountHandler(m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kStartBalance), AcctDetail.kAmountLocal, false, true));   // Init this field override for other value
+                    m_recAcctDetail.addListener(new CompareFileFilter(AcctDetail.TRX_DATE, m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.START_DATE), "<", null, false));
+                    m_recAcctDetail.addListener(new SubCountHandler(m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.START_BALANCE), AcctDetail.AMOUNT_LOCAL, false, true));   // Init this field override for other value
                 }
-                m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kStartBalance).initField(DBConstants.DISPLAY);
+                m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.START_BALANCE).initField(DBConstants.DISPLAY);
                 m_recAcctDetail.close();
                 try   {
                     while (m_recAcctDetail.hasNext())

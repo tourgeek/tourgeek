@@ -48,21 +48,21 @@ public class ScfFromHandler extends MainFieldHandler
      */
     public void init(BaseField field)
     {
-        super.init(field, SCF.kScfToKey);
+        super.init(field, SCF.SCF_TO, -1);
     }
     /**
      * Find the record.
      */
     public boolean seek(Record record) throws DBException
     {
-        String strFromTarget = record.getField(SCF.kScfFrom).toString();
-        record.getField(SCF.kScfTo).moveFieldToThis(record.getField(SCF.kScfFrom), DBConstants.DONT_DISPLAY, DBConstants.READ_MOVE);
-        record.getField(SCF.kScfFrom).setString(Constants.BLANK, DBConstants.DONT_DISPLAY, DBConstants.READ_MOVE);
+        String strFromTarget = record.getField(SCF.SCF_FROM).toString();
+        record.getField(SCF.SCF_TO).moveFieldToThis(record.getField(SCF.SCF_FROM), DBConstants.DONT_DISPLAY, DBConstants.READ_MOVE);
+        record.getField(SCF.SCF_FROM).setString(Constants.BLANK, DBConstants.DONT_DISPLAY, DBConstants.READ_MOVE);
         boolean bSuccess = record.seek(">=");
         if (bSuccess)
         {
-            String strFrom = record.getField(SCF.kScfFrom).toString();
-            String strTo = record.getField(SCF.kScfTo).toString();
+            String strFrom = record.getField(SCF.SCF_FROM).toString();
+            String strTo = record.getField(SCF.SCF_TO).toString();
             if ((strFrom == null) || (strFrom.length() == 0))
                 strFrom = Constants.BLANK;
             if ((strTo == null) || (strTo.length() == 0))

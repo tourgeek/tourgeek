@@ -82,15 +82,15 @@ public class XmlToRequests extends BaseProcess
     public void addListeners()
     {
         super.addListeners();
-        Record recRequest = this.getRecord(Request.kRequestFile);
-        Record recRequestDetail = this.getRecord(RequestDetail.kRequestDetailFile);
-        Record recRequestControl = this.getRecord(RequestControl.kRequestControlFile);
+        Record recRequest = this.getRecord(Request.REQUEST_FILE);
+        Record recRequestDetail = this.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+        Record recRequestControl = this.getRecord(RequestControl.REQUEST_CONTROL_FILE);
         try   {
             recRequestControl.open();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }
-        recRequest.getField(Request.kSendViaCode).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.kSendViaCode)));
+        recRequest.getField(Request.SEND_VIA_CODE).addListener(new InitFieldHandler(recRequestControl.getField(RequestControl.SEND_VIA_CODE)));
         
         recRequestDetail.addListener(new SubFileFilter(recRequest));
     }
@@ -123,10 +123,10 @@ public class XmlToRequests extends BaseProcess
                         }
                     }
                     // Now that I've parsed the XML file, read through it and write it to the request detail
-                    Record recRequest = this.getRecord(Request.kRequestFile);
+                    Record recRequest = this.getRecord(Request.REQUEST_FILE);
                     recRequest.setOpenMode(recRequest.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);    // So I can update the detail
-                    Record recRequestDetail = this.getRecord(RequestDetail.kRequestDetailFile);
-                    Record recItem = this.getRecord(Brochure.kBrochureFile);
+                    Record recRequestDetail = this.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+                    Record recItem = this.getRecord(Brochure.BROCHURE_FILE);
         
                     ResourceBundle resRequestLookup = new RequestConversionTable();
                     ResourceBundle resRequestDetailLookup = new RequestDetailConversionTable();
@@ -143,9 +143,9 @@ public class XmlToRequests extends BaseProcess
                                 recRequestDetail.moveFields(recXmlRequestDetail, resRequestDetailLookup, true, DBConstants.SCREEN_MOVE, true, false, false);
                                 if (recXmlItem != null)
                                     if (recXmlRequestDetail.getField("BrochureID") != null)
-                                        if (recRequestDetail.getField(RequestDetail.kBrochureDesc).isNull())
+                                        if (recRequestDetail.getField(RequestDetail.BROCHURE_DESC).isNull())
                                 {
-                                    recRequestDetail.getField(RequestDetail.kBrochureDesc).moveFieldToThis(recXmlItem.getField("Description"));
+                                    recRequestDetail.getField(RequestDetail.BROCHURE_DESC).moveFieldToThis(recXmlItem.getField("Description"));
                                 }
                                 recRequestDetail.add();
                             }

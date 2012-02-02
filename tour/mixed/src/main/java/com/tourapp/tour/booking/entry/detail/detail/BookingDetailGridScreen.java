@@ -98,11 +98,11 @@ public class BookingDetailGridScreen extends BookingSubGridScreen
     public void addListeners()
     {
         super.addListeners();
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         
         BookingDetail record = (BookingDetail)this.getMainRecord();
-        record.setKeyArea(BookingDetail.kBookingIDKey);
+        record.setKeyArea(BookingDetail.BOOKING_ID_KEY);
         record.addDetailBehaviors(recBooking, recTour);
         
         this.setAppending(false);
@@ -113,12 +113,12 @@ public class BookingDetailGridScreen extends BookingSubGridScreen
     public void setupSFields()
     {
         Record mergeTable = this.getMainRecord();
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kStatusSummary));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.STATUS_SUMMARY));
         
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kDetailDate));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.DETAIL_DATE));
         this.addColumn(new ProductDescConverter(mergeTable));
         
-        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.kTotalCostLocal));
+        this.addColumn(new MultipleTableFieldConverter(mergeTable, BookingDetail.TOTAL_COST_LOCAL));
     }
     /**
      * Make a sub-screen.

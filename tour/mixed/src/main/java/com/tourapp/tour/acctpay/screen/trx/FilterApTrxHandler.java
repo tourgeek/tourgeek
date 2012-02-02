@@ -56,7 +56,7 @@ public class FilterApTrxHandler extends ListFileFilter
         m_fldApTrxClass = null;
         m_recTrxStatus = null;
         m_fldApTrxClass = fldApTrxClass;
-        super.init(null, ApTrx.kTrxStatusID);
+        super.init(null, ApTrx.TRX_STATUS_ID);
     }
     /**
      * Free Method.
@@ -91,7 +91,7 @@ public class FilterApTrxHandler extends ListFileFilter
             else if (iValue == ApTrxClassField.DEPARTURE_ESTIMATES)
             {
                 this.addTrxStatusID(ApTrx.DEPARTURE_EST_MANUAL);
-                this.addTrxStatusID(ApTrx.DEPARTURE_ESTIMATE);
+                this.addTrxStatusID(ApTrx.DEP_ESTIMATE);
             }
             else if (iValue == ApTrxClassField.PREPAYMENTS)
             {
@@ -117,7 +117,7 @@ public class FilterApTrxHandler extends ListFileFilter
             if (recordOwner != null)
                 recordOwner.removeRecord(m_recTrxStatus);
         }
-        this.addFilter(new Integer(m_recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, strApTrxDesc)));
+        this.addFilter(new Integer(m_recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, strApTrxDesc)));
     }
 
 }

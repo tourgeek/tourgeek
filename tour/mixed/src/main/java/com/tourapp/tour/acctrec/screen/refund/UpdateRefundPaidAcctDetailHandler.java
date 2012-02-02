@@ -72,13 +72,13 @@ public class UpdateRefundPaidAcctDetailHandler extends UpdateAcctDetailHandler
         RecordOwner recordOwner = recArTrx.getRecordOwner();
         Record recScreenRecord = (Record)recordOwner.getScreenRecord();
         
-        double dAmount = recArTrx.getField(ArTrx.kAmount).getValue();
+        double dAmount = recArTrx.getField(ArTrx.AMOUNT).getValue();
         ReferenceField fldAccount = null;
-        DateTimeField fldTrxDate = (DateTimeField)recScreenRecord.getField(RefundScreenRecord.kCheckDate);
+        DateTimeField fldTrxDate = (DateTimeField)recScreenRecord.getField(RefundScreenRecord.CHECK_DATE);
         DateTimeField fldEntryDate = null;  // Now
-        BaseField fldTrxID = recArTrx.getField(ArTrx.kID);
+        BaseField fldTrxID = recArTrx.getField(ArTrx.ID);
         int iUserID = Integer.parseInt(((MainApplication)this.getOwner().getRecordOwner().getTask().getApplication()).getUserID());
-        if (recTransactionType.getField(recTransactionType.kTypicalBalance).getString().equals(Account.DEBIT))
+        if (recTransactionType.getField(recTransactionType.TYPICAL_BALANCE).getString().equals(Account.DEBIT))
         {
             fldAccount = (ReferenceField)this.getDrAccount();
             recAcctDetailDist.addDetailTrx(fldAccount, fldTrxDate, fldTrxID, recTransactionType, fldEntryDate, dAmount, iUserID, recAcctDetail, recPeriod);
@@ -86,26 +86,26 @@ public class UpdateRefundPaidAcctDetailHandler extends UpdateAcctDetailHandler
         else
         {
         // Step 2a - Create and write the bank transaction (in BankTrx).
-            BankAcct recBankAcct = (BankAcct)((ReferenceField)recScreenRecord.getField(RefundScreenRecord.kBankAcctID)).getReference();
-            BankTrx recBankTrx = (BankTrx)recordOwner.getRecord(BankTrx.kBankTrxFile);
-            Record recBooking = ((ReferenceField)recArTrx.getField(ArTrx.kBookingID)).getReference();
-            fldAccount = (ReferenceField)recBankAcct.getField(BankAcct.kAccountID);
+            BankAcct recBankAcct = (BankAcct)((ReferenceField)recScreenRecord.getField(RefundScreenRecord.BANK_ACCT_ID)).getReference();
+            BankTrx recBankTrx = (BankTrx)recordOwner.getRecord(BankTrx.BANK_TRX_FILE);
+            Record recBooking = ((ReferenceField)recArTrx.getField(ArTrx.BOOKING_ID)).getReference();
+            fldAccount = (ReferenceField)recBankAcct.getField(BankAcct.ACCOUNT_ID);
             try   {
                 recBankTrx.addNew();
-                recBankTrx.getField(BankTrx.kTrxStatusID).moveFieldToThis(recArTrx.getField(ArTrx.kTrxStatusID));
-                recBankTrx.getField(BankTrx.kTrxDate).moveFieldToThis(fldTrxDate);
-                recBankTrx.getField(BankTrx.kAmountLocal).setValue(-dAmount);
-                recBankTrx.getField(BankTrx.kTrxEntry).initField(DBConstants.DONT_DISPLAY);
-                recBankTrx.getField(BankTrx.kBankAcctID).moveFieldToThis(recScreenRecord.getField(RefundScreenRecord.kBankAcctID));
-                recBankTrx.getField(BankTrx.kAmount).setValue(-dAmount);
-                recBankTrx.getField(BankTrx.kExchange).initField(DBConstants.DONT_DISPLAY);
-                recBankTrx.getField(BankTrx.kComments).moveFieldToThis(recArTrx.getField(ArTrx.kComments));
-                if (recBankTrx.getField(BankTrx.kComments).isNull())
-                    recBankTrx.getField(BankTrx.kComments).moveFieldToThis(recTransactionType.getField(TransactionType.kGroupDesc));
-                recBankTrx.getField(BankTrx.kTrxNumber).moveFieldToThis(recScreenRecord.getField(RefundScreenRecord.kCheckNo));
-                recBankTrx.getField(BankTrx.kPayeeTrxDescID).moveFieldToThis(recTransactionType.getField(TransactionType.kTrxDescID));
-                recBankTrx.getField(BankTrx.kPayeeID).moveFieldToThis(recBooking.getField(Booking.kProfileID));
-                recBankTrx.getField(BankTrx.kPayeeName).moveFieldToThis(recBooking.getField(Booking.kGenericName));
+                recBankTrx.getField(BankTrx.TRX_STATUS_ID).moveFieldToThis(recArTrx.getField(ArTrx.TRX_STATUS_ID));
+                recBankTrx.getField(BankTrx.TRX_DATE).moveFieldToThis(fldTrxDate);
+                recBankTrx.getField(BankTrx.AMOUNT_LOCAL).setValue(-dAmount);
+                recBankTrx.getField(BankTrx.TRX_ENTRY).initField(DBConstants.DONT_DISPLAY);
+                recBankTrx.getField(BankTrx.BANK_ACCT_ID).moveFieldToThis(recScreenRecord.getField(RefundScreenRecord.BANK_ACCT_ID));
+                recBankTrx.getField(BankTrx.AMOUNT).setValue(-dAmount);
+                recBankTrx.getField(BankTrx.EXCHANGE).initField(DBConstants.DONT_DISPLAY);
+                recBankTrx.getField(BankTrx.COMMENTS).moveFieldToThis(recArTrx.getField(ArTrx.COMMENTS));
+                if (recBankTrx.getField(BankTrx.COMMENTS).isNull())
+                    recBankTrx.getField(BankTrx.COMMENTS).moveFieldToThis(recTransactionType.getField(TransactionType.GROUP_DESC));
+                recBankTrx.getField(BankTrx.TRX_NUMBER).moveFieldToThis(recScreenRecord.getField(RefundScreenRecord.CHECK_NO));
+                recBankTrx.getField(BankTrx.PAYEE_TRX_DESC_ID).moveFieldToThis(recTransactionType.getField(TransactionType.TRX_DESC_ID));
+                recBankTrx.getField(BankTrx.PAYEE_ID).moveFieldToThis(recBooking.getField(Booking.PROFILE_ID));
+                recBankTrx.getField(BankTrx.PAYEE_NAME).moveFieldToThis(recBooking.getField(Booking.GENERIC_NAME));
                 // Step 2 - Post it to the G/L
                 //+recAcctDetail.getDatabase().startTrx();
                 // Step 2a - Create and write the bank transaction (in BankTrx).
@@ -128,7 +128,7 @@ public class UpdateRefundPaidAcctDetailHandler extends UpdateAcctDetailHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ArControl.kArControlFile).getField(ArControl.kRefundSuspenseAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.REFUND_SUSPENSE_ACCOUNT_ID);
     }
 
 }

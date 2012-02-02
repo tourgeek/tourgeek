@@ -79,17 +79,17 @@ public class LookupInventoryHandler extends FileListener
     {
         int iOldKeyArea = m_recInventory.getDefaultOrder();
         try   {
-            m_recInventory.setKeyArea(Inventory.kInvDateKey);
+            m_recInventory.setKeyArea(Inventory.INV_DATE_KEY);
             m_recInventory.addNew();
             if ((m_fldID.isNull()) || (m_fldDate.isNull()))
                 return;
-            m_recInventory.getField(Inventory.kProductTypeID).setValue(m_iProductType);
-            m_recInventory.getField(Inventory.kProductID).moveFieldToThis(m_fldID);
-            m_recInventory.getField(Inventory.kInvDate).moveFieldToThis(m_fldDate);
+            m_recInventory.getField(Inventory.PRODUCT_TYPE_ID).setValue(m_iProductType);
+            m_recInventory.getField(Inventory.PRODUCT_ID).moveFieldToThis(m_fldID);
+            m_recInventory.getField(Inventory.INV_DATE).moveFieldToThis(m_fldDate);
             if (m_fldRateID != null)
-                m_recInventory.getField(Inventory.kRateID).moveFieldToThis(m_fldRateID);
+                m_recInventory.getField(Inventory.RATE_ID).moveFieldToThis(m_fldRateID);
             if (m_fldClassID != null)
-                m_recInventory.getField(Inventory.kClassID).moveFieldToThis(m_fldClassID);
+                m_recInventory.getField(Inventory.CLASS_ID).moveFieldToThis(m_fldClassID);
             if (!m_recInventory.seek(DBConstants.EQUALS))
                 m_recInventory.addNew();
         } catch (DBException ex)    {

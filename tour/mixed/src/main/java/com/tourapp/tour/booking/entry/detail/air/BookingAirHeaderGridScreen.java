@@ -88,8 +88,8 @@ public class BookingAirHeaderGridScreen extends BookingSubGridScreen
     {
         super.addListeners();
         BookingAirHeader recBookingAirHeader = (BookingAirHeader)this.getMainRecord();
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         recBookingAirHeader.addDetailBehaviors(recBooking, recTour);
     }
     /**
@@ -99,7 +99,7 @@ public class BookingAirHeaderGridScreen extends BookingSubGridScreen
     {
         super.addToolbarButtons(toolScreen);
         ResourceBundle resources = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
-        BaseField field = ((Record)this.getRecord(Booking.kBookingFile).getRecordOwner().getScreenRecord()).getField(BookingScreenRecord.kBkSubScreen);
+        BaseField field = ((Record)this.getRecord(Booking.BOOKING_FILE).getRecordOwner().getScreenRecord()).getField(BookingScreenRecord.BK_SUB_SCREEN);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), toolScreen, field, ScreenConstants.DEFAULT_DISPLAY, null, resources.getString(ProductType.AIR), Booking.BUTTON_LOCATION + ProductType.AIR, Integer.toString(BookingScreenHandler.AIR_SCREEN), resources.getString(ProductType.AIR + "Tip"));
     }
     /**

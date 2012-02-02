@@ -93,8 +93,8 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
         boolean bSuccess = true;
         
         Record recCashBatchDist = this.getDistRecord();
-        Record recTrxStatus = this.getRecord(TrxStatus.kTrxStatusFile);
-        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.kArTrxFile);
+        Record recTrxStatus = this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recArTrx.getListener(UpdateArTrxAcctDetailHandler.class).setEnabledListener(false);
         
         try {
@@ -112,12 +112,12 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
             {
                 recCashBatchDist.next();
                 iCurrCount++;
-                if (recCashBatchDist.getField(CashBatchDist.kBookingID).isNull())
+                if (recCashBatchDist.getField(CashBatchDist.BOOKING_ID).isNull())
                 {   // Non-booking distribution
-                    BaseField fldDistAccountID = recCashBatchDist.getField(CashBatchDist.kAccountID);
+                    BaseField fldDistAccountID = recCashBatchDist.getField(CashBatchDist.ACCOUNT_ID);
                     if (fldDistAccountID == null)
                         fldDistAccountID = fldDefAccountID;
-                    double dAmount = Math.abs(recCashBatchDist.getField(CashBatchDist.kAmount).getValue());
+                    double dAmount = Math.abs(recCashBatchDist.getField(CashBatchDist.AMOUNT).getValue());
                     if (iCurrCount == iDistCount)
                         dAmount = dLocalBalance;
                     double dAmountUSD = dAmount;
@@ -126,14 +126,14 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
                     dLocalBalance = dLocalBalance - dAmount;
                     dAmountUSD = -dAmountUSD;   // Negative = Credit
         
-                    DateTimeField trxDate = (DateTimeField)recBaseTrx.getField(BaseTrx.kTrxDate);
+                    DateTimeField trxDate = (DateTimeField)recBaseTrx.getField(BaseTrx.TRX_DATE);
                     BaseField fldTrxID = null;  // No reference
                     TransactionType recTrxType = recBaseTrx.getTrxType(PostingType.OPTIONAL_POST);
-                    DateTimeField trxEntryDate = (DateTimeField)recBaseTrx.getField(BaseTrx.kTrxEntry);
+                    DateTimeField trxEntryDate = (DateTimeField)recBaseTrx.getField(BaseTrx.TRX_ENTRY);
                     int iUserID = Integer.parseInt(((BaseApplication)this.getTask().getApplication()).getUserID());
-                    AcctDetailDist recAcctDetailDist = (AcctDetailDist)recBaseTrx.getCachedRecord(AcctDetailDist.kAcctDetailDistFile);
-                    AcctDetail recAcctDetail = (AcctDetail)recBaseTrx.getCachedRecord(AcctDetail.kAcctDetailFile);
-                    Period recPeriod = (Period)recBaseTrx.getCachedRecord(Period.kPeriodFile);
+                    AcctDetailDist recAcctDetailDist = (AcctDetailDist)recBaseTrx.getCachedRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+                    AcctDetail recAcctDetail = (AcctDetail)recBaseTrx.getCachedRecord(AcctDetail.ACCT_DETAIL_FILE);
+                    Period recPeriod = (Period)recBaseTrx.getCachedRecord(Period.PERIOD_FILE);
                     bSuccess = recAcctDetailDist.addDetailTrx(fldDistAccountID, trxDate, fldTrxID, recTrxType, trxEntryDate, dAmountUSD, iUserID, recAcctDetail, recPeriod);
         
                     if (!bSuccess)
@@ -142,33 +142,33 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
                 else
                 {   // Booking distribution
                     recArTrx.addNew();
-                    recArTrx.getField(ArTrx.kTrxDate).moveFieldToThis(recBaseTrx.getField(BaseTrx.kTrxDate));
-                    recArTrx.getField(ArTrx.kTrxStatusID).moveFieldToThis(recBaseTrx.getField(BaseTrx.kTrxStatusID));
-                    recArTrx.getField(ArTrx.kTrxEntry).initField(DBConstants.DONT_DISPLAY);
+                    recArTrx.getField(ArTrx.TRX_DATE).moveFieldToThis(recBaseTrx.getField(BaseTrx.TRX_DATE));
+                    recArTrx.getField(ArTrx.TRX_STATUS_ID).moveFieldToThis(recBaseTrx.getField(BaseTrx.TRX_STATUS_ID));
+                    recArTrx.getField(ArTrx.TRX_ENTRY).initField(DBConstants.DONT_DISPLAY);
                     if ((strComment != null) && (strComment.length() > 0))
-                        recArTrx.getField(ArTrx.kComments).setString(strComment);
+                        recArTrx.getField(ArTrx.COMMENTS).setString(strComment);
                     else
-                        recArTrx.getField(ArTrx.kComments).moveFieldToThis(recTrxStatus.getField(TrxStatus.kStatusDesc));
-                    ((ReferenceField)recArTrx.getField(ArTrx.kLinkedTrxID)).setReference(recBaseTrx, DBConstants.DONT_DISPLAY, DBConstants.INIT_MOVE);
+                        recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(recTrxStatus.getField(TrxStatus.STATUS_DESC));
+                    ((ReferenceField)recArTrx.getField(ArTrx.LINKED_TRX_ID)).setReference(recBaseTrx, DBConstants.DONT_DISPLAY, DBConstants.INIT_MOVE);
                     // LinkedTrxDescID must be the source file's desc
                     Record recTrxDesc = recBaseTrx.getTrxDesc(null);    // Typically this is it.
                     Record recTrxType = recBaseTrx.getTrxType(PostingType.TRX_POST);
-                    if (!recTrxType.getField(TransactionType.kSourceFile).equals(recTrxDesc.getField(TrxDesc.kSourceFile)))
+                    if (!recTrxType.getField(TransactionType.SOURCE_FILE).equals(recTrxDesc.getField(TrxDesc.SOURCE_FILE)))
                     {
                         Object bookmark = recTrxDesc.getHandle(DBConstants.BOOKMARK_HANDLE);
                         int iOldKey = recTrxDesc.getDefaultOrder();
-                        recTrxDesc.setKeyArea(TrxDesc.kSourceFileKey);
-                        recTrxDesc.getField(TrxDesc.kSourceFile).moveFieldToThis(recTrxType.getField(TransactionType.kSourceFile));
+                        recTrxDesc.setKeyArea(TrxDesc.SOURCE_FILE_KEY);
+                        recTrxDesc.getField(TrxDesc.SOURCE_FILE).moveFieldToThis(recTrxType.getField(TransactionType.SOURCE_FILE));
                         if (!recTrxDesc.seek(DBConstants.EQUALS))    // This is the correct source desc
                         {   // If not, use the orig
                             recTrxDesc.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
                         }
                         recTrxDesc.setKeyArea(iOldKey);
                     }
-                    recArTrx.getField(ArTrx.kLinkedTrxDescID).moveFieldToThis(recTrxDesc.getField(TrxDesc.kID));
+                    recArTrx.getField(ArTrx.LINKED_TRX_DESC_ID).moveFieldToThis(recTrxDesc.getField(TrxDesc.ID));
         
-                    recArTrx.getField(ArTrx.kBookingID).moveFieldToThis(recCashBatchDist.getField(CashBatchDist.kBookingID));
-                    double dAmount = Math.abs(recCashBatchDist.getField(CashBatchDist.kAmount).getValue());
+                    recArTrx.getField(ArTrx.BOOKING_ID).moveFieldToThis(recCashBatchDist.getField(CashBatchDist.BOOKING_ID));
+                    double dAmount = Math.abs(recCashBatchDist.getField(CashBatchDist.AMOUNT).getValue());
                     if (iCurrCount == iDistCount)
                         dAmount = dLocalBalance;
                     double dAmountUSD = dAmount;
@@ -176,31 +176,31 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
                         dAmountUSD = dLocalBalance;
                     dLocalBalance = dLocalBalance - dAmount;
                     dAmountUSD = -dAmountUSD;   // Credit
-                    recArTrx.getField(ArTrx.kAmount).setValue(dAmountUSD); // Subtract from booking balance
+                    recArTrx.getField(ArTrx.AMOUNT).setValue(dAmountUSD); // Subtract from booking balance
                     bSuccess = recArTrx.onPostTrx();
                     if (!bSuccess)
                         return bSuccess;
-                    BaseField fldCrAccountID = recCashBatchDist.getField(CashBatchDist.kAccountID);   // Default
-                    Record recBooking = ((ReferenceField)recCashBatchDist.getField(CashBatchDist.kBookingID)).getReference();
+                    BaseField fldCrAccountID = recCashBatchDist.getField(CashBatchDist.ACCOUNT_ID);   // Default
+                    Record recBooking = ((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReference();
                     if (recBooking != null)
                     {
-                        Record recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+                        Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
                         if (recTour != null)
                         {
-                            Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+                            Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
                             if (recTourHeader != null)
                             {
-                                Record recProductCat = ((ReferenceField)recTourHeader.getField(TourHeader.kProductCatID)).getReference();
+                                Record recProductCat = ((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
                                 if (recProductCat != null)
-                                    fldCrAccountID = recProductCat.getField(ProductCategory.kArAccountID);
+                                    fldCrAccountID = recProductCat.getField(ProductCategory.AR_ACCOUNT_ID);
                             }
                         }
                     }
                     if ((fldCrAccountID == null) || (fldCrAccountID.isNull()))
                         fldCrAccountID = fldDefAccountID;
-                    AcctDetailDist recAcctDetailDist = (AcctDetailDist)recBaseTrx.getCachedRecord(AcctDetailDist.kAcctDetailDistFile);
-                    AcctDetail recAcctDetail = (AcctDetail)recBaseTrx.getCachedRecord(AcctDetail.kAcctDetailFile);
-                    Period recPeriod = (Period)recBaseTrx.getCachedRecord(Period.kPeriodFile);
+                    AcctDetailDist recAcctDetailDist = (AcctDetailDist)recBaseTrx.getCachedRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+                    AcctDetail recAcctDetail = (AcctDetail)recBaseTrx.getCachedRecord(AcctDetail.ACCT_DETAIL_FILE);
+                    Period recPeriod = (Period)recBaseTrx.getCachedRecord(Period.PERIOD_FILE);
                     bSuccess = recArTrx.onPostTrxDist(fldCrAccountID, dAmountUSD, PostingType.DIST_POST, recAcctDetail, recAcctDetailDist, recPeriod);
                     if (!bSuccess)
                         return bSuccess;
@@ -210,14 +210,14 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
             {   // Send the rest of this dist to the default account
                 double dAmountUSD = -dLocalBalance;   // Credit
         
-                DateTimeField trxDate = (DateTimeField)recBaseTrx.getField(BaseTrx.kTrxDate);
+                DateTimeField trxDate = (DateTimeField)recBaseTrx.getField(BaseTrx.TRX_DATE);
                 BaseField fldTrxID = null;  // No reference
                 TransactionType recTrxType = recBaseTrx.getTrxType(PostingType.OPTIONAL_POST);
-                DateTimeField trxEntryDate = (DateTimeField)recBaseTrx.getField(BaseTrx.kTrxEntry);
+                DateTimeField trxEntryDate = (DateTimeField)recBaseTrx.getField(BaseTrx.TRX_ENTRY);
                 int iUserID = Integer.parseInt(((BaseApplication)this.getTask().getApplication()).getUserID());
-                AcctDetailDist recAcctDetailDist = (AcctDetailDist)recBaseTrx.getCachedRecord(AcctDetailDist.kAcctDetailDistFile);
-                AcctDetail recAcctDetail = (AcctDetail)recBaseTrx.getCachedRecord(AcctDetail.kAcctDetailFile);
-                Period recPeriod = (Period)recBaseTrx.getCachedRecord(Period.kPeriodFile);
+                AcctDetailDist recAcctDetailDist = (AcctDetailDist)recBaseTrx.getCachedRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+                AcctDetail recAcctDetail = (AcctDetail)recBaseTrx.getCachedRecord(AcctDetail.ACCT_DETAIL_FILE);
+                Period recPeriod = (Period)recBaseTrx.getCachedRecord(Period.PERIOD_FILE);
                 bSuccess = recAcctDetailDist.addDetailTrx(fldDefAccountID, trxDate, fldTrxID, recTrxType, trxEntryDate, dAmountUSD, iUserID, recAcctDetail, recPeriod);
         
                 if (!bSuccess)

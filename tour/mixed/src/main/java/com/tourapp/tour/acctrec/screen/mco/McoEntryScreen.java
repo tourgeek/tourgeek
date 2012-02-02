@@ -94,16 +94,16 @@ public class McoEntryScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(Mco.kCommPer).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoCommPer)));
-        this.getMainRecord().getField(Mco.kTaxPer).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoTaxPer)));
-        this.getMainRecord().getField(Mco.kSvcPer).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoSvcPer)));
-        this.getMainRecord().getField(Mco.kAirlineID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kAirlineID)));
+        this.getMainRecord().getField(Mco.COMM_PER).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_COMM_PER)));
+        this.getMainRecord().getField(Mco.TAX_PER).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_TAX_PER)));
+        this.getMainRecord().getField(Mco.SVC_PER).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_SVC_PER)));
+        this.getMainRecord().getField(Mco.AIRLINE_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AIRLINE_ID)));
         
-        ((TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile)).getTrxStatusID(TransactionType.ACCTREC, Mco.kMcoFile, Mco.BATCH);
-        this.getMainRecord().setKeyArea(Mco.kTrxStatusIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.kTrxStatusFile)));
+        ((TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE)).getTrxStatusID(TransactionType.ACCTREC, Mco.MCO_FILE, Mco.BATCH);
+        this.getMainRecord().setKeyArea(Mco.TRX_STATUS_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.TRX_STATUS_FILE)));
         
-        this.getMainRecord().getField(Mco.kNet).setEnabled(false);
+        this.getMainRecord().getField(Mco.NET).setEnabled(false);
         
         this.getMainRecord().addListener(new SubFileIntegrityHandler(McoBatchDist.class.getName(), true));
     }
@@ -132,7 +132,7 @@ public class McoEntryScreen extends Screen
      */
     public void setupSFields()
     {
-        Converter converter = this.getRecord(Mco.kMcoFile).getField(Mco.kBookingID);
+        Converter converter = this.getRecord(Mco.MCO_FILE).getField(Mco.BOOKING_ID);
         converter = new McoDistConverter(converter);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Mco.kMcoFile).getField(Mco.kMcoNo).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

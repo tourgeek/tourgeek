@@ -67,7 +67,7 @@ public class FinStmtToolbar extends ReportToolbar
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(FinStmtReportScreenRecord.kFinStmtReportScreenRecordFile).getField(FinStmtReportScreenRecord.kFinStmtHeaderID).addListener(new RegisterValueHandler(null));
+        this.getScreenRecord().getField(FinStmtReportScreenRecord.FIN_STMT_HEADER_ID).addListener(new RegisterValueHandler(null));
     }
     /**
      * SetupSFields Method.

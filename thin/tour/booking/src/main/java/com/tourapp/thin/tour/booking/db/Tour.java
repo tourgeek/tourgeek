@@ -16,6 +16,11 @@ public class Tour extends Job
     implements TourModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    //public static final String DESCRIPTION = DESCRIPTION;
+
     public Tour()
     {
         super();

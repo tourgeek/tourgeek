@@ -74,7 +74,7 @@ public class AutoDistField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), AutoDist.kAutoDistDescKey, AutoDist.kAutoDistDesc, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), AutoDist.AUTO_DIST_DESC_KEY, AutoDist.AUTO_DIST_DESC, true, true);
     }
 
 }

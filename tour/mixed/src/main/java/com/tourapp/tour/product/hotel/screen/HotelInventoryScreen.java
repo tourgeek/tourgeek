@@ -111,15 +111,15 @@ public class HotelInventoryScreen extends ProductInventoryScreen
     {
         super.addListeners();
         // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(HotelScreenRecord.kProductID)).syncReference(this.getHeaderRecord());
+        ((ReferenceField)this.getScreenRecord().getField(HotelScreenRecord.PRODUCT_ID)).syncReference(this.getHeaderRecord());
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(HotelInventory.kHotelInventoryFile).getField(HotelInventory.kInvDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelInventory.kHotelInventoryFile).getField(HotelInventory.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelInventory.kHotelInventoryFile).getField(HotelInventory.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

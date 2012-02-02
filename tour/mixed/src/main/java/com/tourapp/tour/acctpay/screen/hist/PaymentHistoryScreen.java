@@ -93,7 +93,7 @@ public class PaymentHistoryScreen extends Screen
         super.addListeners();
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
         
-        this.getMainRecord().getField(PaymentHistory.kLinkedTrxID).addListener(new ReadLinkedTrxHandler(this.getRecord(BankTrx.kBankTrxFile)));
+        this.getMainRecord().getField(PaymentHistory.LINKED_TRX_ID).addListener(new ReadLinkedTrxHandler(this.getRecord(BankTrx.BANK_TRX_FILE)));
         
         this.setEnabled(false);
     }
@@ -128,7 +128,7 @@ public class PaymentHistoryScreen extends Screen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(ApTrx.kApTrxFile);
+        return this.getRecord(ApTrx.AP_TRX_FILE);
     }
     /**
      * Make a sub-screen.

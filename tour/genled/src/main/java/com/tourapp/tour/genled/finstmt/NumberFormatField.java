@@ -84,7 +84,7 @@ public class NumberFormatField extends StringField
             if (m_recNumberFormat.getRecordOwner() != null)
                 m_recNumberFormat.getRecordOwner().removeRecord(m_recNumberFormat);
         }
-        FieldConverter convert = new QueryConverter((Converter)converter, m_recNumberFormat, NumberFormat.kName, true);
+        FieldConverter convert = new QueryConverter((Converter)converter, m_recNumberFormat, NumberFormat.NAME, true);
         return createScreenComponent(ScreenModel.COMBO_BOX, itsLocation, targetScreen, convert, iDisplayFieldDesc, properties);
     }
 

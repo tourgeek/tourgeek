@@ -32,11 +32,17 @@ public class ItineraryScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String TOUR_ID = "TourID";
     public static final int kTourID = kReportScreenRecordLastField + 1;
+    public static final String BOOKING_ID = "BookingID";
     public static final int kBookingID = kTourID + 1;
+    public static final String TEMPLATE = "template";
     public static final int ktemplate = kBookingID + 1;
+    public static final String FILEOUT = "fileout";
     public static final int kfileout = ktemplate + 1;
+    public static final String SEND_MESSAGE_BY = "sendMessageBy";
     public static final int ksendMessageBy = kfileout + 1;
+    public static final String DESTINATION_ADDRESS = "destinationAddress";
     public static final int kdestinationAddress = ksendMessageBy + 1;
     public static final int kItineraryScreenRecordLastField = kdestinationAddress;
     public static final int kItineraryScreenRecordFields = kdestinationAddress - DBConstants.MAIN_FIELD + 1;

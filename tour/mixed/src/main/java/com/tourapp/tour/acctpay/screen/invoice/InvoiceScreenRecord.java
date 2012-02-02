@@ -37,10 +37,15 @@ public class InvoiceScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String AP_ACCOUNT_ID = "ApAccountID";
     public static final int kApAccountID = kScreenRecordLastField + 1;
+    public static final String COST_ACCOUNT_ID = "CostAccountID";
     public static final int kCostAccountID = kApAccountID + 1;
+    public static final String LAST_VENDOR_ID = "LastVendorID";
     public static final int kLastVendorID = kCostAccountID + 1;
+    public static final String LAST_INVOICE_DATE = "LastInvoiceDate";
     public static final int kLastInvoiceDate = kLastVendorID + 1;
+    public static final String LAST_INVOICE_NO = "LastInvoiceNo";
     public static final int kLastInvoiceNo = kLastInvoiceDate + 1;
     public static final int kInvoiceScreenRecordLastField = kLastInvoiceNo;
     public static final int kInvoiceScreenRecordFields = kLastInvoiceNo - DBConstants.MAIN_FIELD + 1;

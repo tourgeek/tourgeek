@@ -8,6 +8,12 @@ import org.jbundle.model.db.*;
 
 public interface BankTrxBatchModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String USER_ID = "UserID";
+    public static final String BANK_ACCT_ID = "BankAcctID";
+
+    public static final String USER_ID_KEY = "UserID";
     public static final String BANK_TRX_BATCH_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchScreen";
     public static final String BANK_TRX_BATCH_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchGridScreen";
 

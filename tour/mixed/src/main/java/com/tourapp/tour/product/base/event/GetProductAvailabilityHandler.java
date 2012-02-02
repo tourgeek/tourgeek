@@ -81,7 +81,7 @@ public class GetProductAvailabilityHandler extends GetProductStatusHandler
      */
     public boolean isQueryComplete()
     {
-        if (!m_recProductVars.getField(ProductScreenRecord.kDetailDate).isNull())
+        if (!m_recProductVars.getField(ProductScreenRecord.DETAIL_DATE).isNull())
             return true;
         return false;
     }
@@ -101,7 +101,7 @@ public class GetProductAvailabilityHandler extends GetProductStatusHandler
      */
     public void setupScreenStatus(Record recProduct, int iStatus)
     {
-        recProduct.getField(Product.kDisplayInventoryStatusID).setValue(iStatus);
+        recProduct.getField(Product.DISPLAY_INVENTORY_STATUS_ID).setValue(iStatus);
     }
 
 }

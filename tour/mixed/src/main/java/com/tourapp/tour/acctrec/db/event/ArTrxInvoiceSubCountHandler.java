@@ -44,7 +44,7 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
     /**
      * Count a sub-field.
      */
-    public ArTrxInvoiceSubCountHandler(BaseField fieldMain, int ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
+    public ArTrxInvoiceSubCountHandler(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
     {
         this();
         this.init(fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF);
@@ -52,9 +52,9 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
     /**
      * Initialize class fields.
      */
-    public void init(BaseField fieldMain, int ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
+    public void init(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
     {
-        super.init(null, null, -1, fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
+        super.init(null, null, -1, fieldMain, -1, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
     }
     /**
      * Get the value to add (Overidden from SubCountHandler).
@@ -65,8 +65,8 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
     {
         if (iInvoiceTrxStatus == -1)
             this.firstTime();
-        if ((this.getOwner().getField(ArTrx.kTrxStatusID).getValue() == iInvoiceTrxStatus)
-            || (this.getOwner().getField(ArTrx.kTrxStatusID).getValue() == iInvoiceModTrxStatus)) // Amount of old Price
+        if ((this.getOwner().getField(ArTrx.TRX_STATUS_ID).getValue() == iInvoiceTrxStatus)
+            || (this.getOwner().getField(ArTrx.TRX_STATUS_ID).getValue() == iInvoiceModTrxStatus)) // Amount of old Price
         {
             iTrxStatus = iInvoiceModTrxStatus;      // Invoice Mod
             return super.getFieldValue();
@@ -101,13 +101,13 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
     public void firstTime()
     {
         try {
-            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)this.getOwner().getField(ArTrx.kTrxStatusID)).getReferenceRecord();
+            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)this.getOwner().getField(ArTrx.TRX_STATUS_ID)).getReferenceRecord();
             Object bookmark = null;
             if ((recTrxStatus.getEditMode() == DBConstants.EDIT_CURRENT) || (recTrxStatus.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                 bookmark = recTrxStatus.getHandle(DBConstants.BOOKMARK_HANDLE);
             boolean[] brgFieldListeners = recTrxStatus.setEnableListeners(false);
-            iInvoiceTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.INVOICE);
-            iInvoiceModTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.INVOICE_MODIFICATION);
+            iInvoiceTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.INVOICE);
+            iInvoiceModTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.INVOICE_MODIFICATION);
             if (bookmark == null)
                 recTrxStatus.addNew();
             else
@@ -143,7 +143,7 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
         {
             case DBConstants.AFTER_ADD_TYPE:
                 if (iTrxStatus == iInvoiceTrxStatus)
-                    if (iTrxStatus != this.getOwner().getField(ArTrx.kTrxStatusID).getValue())
+                    if (iTrxStatus != this.getOwner().getField(ArTrx.TRX_STATUS_ID).getValue())
                 {   // The first entry is not an "Invoice" entry, so I need to add the invoice entries first
                     this.addInvoiceEntry();
                 }
@@ -158,7 +158,7 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
     public void addInvoiceEntry()
     {
         ArTrx recArTrx = (ArTrx)this.getOwner();
-        Calendar calTrxDate = ((DateTimeField)this.getOwner().getField(ArTrx.kTrxDate)).getCalendar();
+        Calendar calTrxDate = ((DateTimeField)this.getOwner().getField(ArTrx.TRX_DATE)).getCalendar();
         if (calTrxDate != null)
             calTrxDate.add(Calendar.MINUTE, -1);    // Just so it will come before the previous entry
         boolean bOldState = this.setEnabledListener(true);  // This method IS disabled, but must be enabled if I update this record (so count is correct)
@@ -167,11 +167,11 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
             Booking recBooking = (Booking)filter.getMainRecord();
             recBooking.addArDetail(recArTrx, null, false);      // Being careful
             recArTrx.addNew();
-            double dBalance = recBooking.getField(Booking.kNet).getValue();
-            recArTrx.getField(ArTrx.kAmount).setValue(dBalance);
-            ((DateTimeField)recArTrx.getField(ArTrx.kTrxDate)).setCalendar(calTrxDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);   // Just before the previous entry.
-            recArTrx.getField(ArTrx.kTrxStatusID).setValue(iInvoiceTrxStatus);
-            recArTrx.getField(ArTrx.kComments).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kStatusDesc));
+            double dBalance = recBooking.getField(Booking.NET).getValue();
+            recArTrx.getField(ArTrx.AMOUNT).setValue(dBalance);
+            ((DateTimeField)recArTrx.getField(ArTrx.TRX_DATE)).setCalendar(calTrxDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);   // Just before the previous entry.
+            recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iInvoiceTrxStatus);
+            recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
             recArTrx.add();
         } catch (DBException ex) {
             ex.printStackTrace();

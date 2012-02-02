@@ -81,8 +81,8 @@ public class AcctPostCheckHandler extends FileListener
             return iErrorCode;
         if ((iChangeType == DBConstants.MOVE_NEXT_TYPE) || (iChangeType == DBConstants.ADD_TYPE) || (iChangeType == DBConstants.UPDATE_TYPE))
         {
-            if (this.getOwner().getField(AcctBatchDetail.kAutoReversal).getState() == true)
-                m_recAcctBatch.getField(AcctBatch.kAutoReversal).setState(true);
+            if (this.getOwner().getField(AcctBatchDetail.AUTO_REVERSAL).getState() == true)
+                m_recAcctBatch.getField(AcctBatch.AUTO_REVERSAL).setState(true);
         }
         return iErrorCode;
 

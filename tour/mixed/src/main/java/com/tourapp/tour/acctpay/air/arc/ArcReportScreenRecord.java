@@ -39,7 +39,9 @@ public class ArcReportScreenRecord extends ReportScreenRecord
     //public static final int kReportUserID = kReportUserID;
     //public static final int kReportPage = kReportPage;
     //public static final int kReportTotal = kReportTotal;
+    public static final String LAST_ARC_DATE = "LastArcDate";
     public static final int kLastArcDate = kReportScreenRecordLastField + 1;
+    public static final String SUMMARY_ACCOUNT_ID = "SummaryAccountID";
     public static final int kSummaryAccountID = kLastArcDate + 1;
     public static final int kArcReportScreenRecordLastField = kSummaryAccountID;
     public static final int kArcReportScreenRecordFields = kSummaryAccountID - DBConstants.MAIN_FIELD + 1;

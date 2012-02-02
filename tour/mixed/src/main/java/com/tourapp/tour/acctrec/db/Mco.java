@@ -257,17 +257,17 @@ public class Mco extends BaseArPay
     {
         super.addMasterListeners();
         
-        this.getField(Mco.kGross).addListener(new CalcBalanceHandler(this.getField(Mco.kCommAmt), this.getField(Mco.kGross), this.getField(Mco.kCommPer), "*", false));
-        this.getField(Mco.kCommPer).addListener(new CalcBalanceHandler(this.getField(Mco.kCommAmt), this.getField(Mco.kGross), this.getField(Mco.kCommPer), "*", false));
-        this.getField(Mco.kGross).addListener(new CalcBalanceHandler(this.getField(Mco.kSvcAmt), this.getField(Mco.kGross), this.getField(Mco.kSvcPer), "*", false));
-        this.getField(Mco.kSvcPer).addListener(new CalcBalanceHandler(this.getField(Mco.kSvcAmt), this.getField(Mco.kGross), this.getField(Mco.kSvcPer), "*", false));
-        this.getField(Mco.kGross).addListener(new CalcBalanceHandler(this.getField(Mco.kTaxAmt), this.getField(Mco.kGross), this.getField(Mco.kTaxPer), "*", false));
-        this.getField(Mco.kTaxPer).addListener(new CalcBalanceHandler(this.getField(Mco.kTaxAmt), this.getField(Mco.kGross), this.getField(Mco.kTaxPer), "*", false));
-        this.getField(Mco.kGross).addListener(new CalcMcoHandler(null));
-        this.getField(Mco.kCommAmt).addListener(new CalcMcoHandler(null));
-        this.getField(Mco.kSvcAmt).addListener(new CalcMcoHandler(null));
-        this.getField(Mco.kTaxAmt).addListener(new CalcMcoHandler(null));
-        this.getField(Mco.kNet).addListener(new MoveOnChangeHandler(this.getField(Mco.kAmtApply), this.getField(Mco.kNet)));
+        this.getField(Mco.GROSS).addListener(new CalcBalanceHandler(this.getField(Mco.COMM_AMT), this.getField(Mco.GROSS), this.getField(Mco.COMM_PER), "*", false));
+        this.getField(Mco.COMM_PER).addListener(new CalcBalanceHandler(this.getField(Mco.COMM_AMT), this.getField(Mco.GROSS), this.getField(Mco.COMM_PER), "*", false));
+        this.getField(Mco.GROSS).addListener(new CalcBalanceHandler(this.getField(Mco.SVC_AMT), this.getField(Mco.GROSS), this.getField(Mco.SVC_PER), "*", false));
+        this.getField(Mco.SVC_PER).addListener(new CalcBalanceHandler(this.getField(Mco.SVC_AMT), this.getField(Mco.GROSS), this.getField(Mco.SVC_PER), "*", false));
+        this.getField(Mco.GROSS).addListener(new CalcBalanceHandler(this.getField(Mco.TAX_AMT), this.getField(Mco.GROSS), this.getField(Mco.TAX_PER), "*", false));
+        this.getField(Mco.TAX_PER).addListener(new CalcBalanceHandler(this.getField(Mco.TAX_AMT), this.getField(Mco.GROSS), this.getField(Mco.TAX_PER), "*", false));
+        this.getField(Mco.GROSS).addListener(new CalcMcoHandler(null));
+        this.getField(Mco.COMM_AMT).addListener(new CalcMcoHandler(null));
+        this.getField(Mco.SVC_AMT).addListener(new CalcMcoHandler(null));
+        this.getField(Mco.TAX_AMT).addListener(new CalcMcoHandler(null));
+        this.getField(Mco.NET).addListener(new MoveOnChangeHandler(this.getField(Mco.AMT_APPLY), this.getField(Mco.NET)));
     }
 
 }

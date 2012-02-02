@@ -102,14 +102,14 @@ public class UpdateTrxStatusHandler extends FileListener
             if (m_recTrxType == null)
             {
                 m_recTrxType = new TransactionType(recordOwner);
-                m_recTrxType.setKeyArea(TransactionType.kSourceTrxStatusIDKey);
-                m_recTrxType.addListener(new SubFileFilter(recTrxStatus.getField(TrxStatus.kID), TransactionType.kSourceTrxStatusID, null, -1, null, -1));
+                m_recTrxType.setKeyArea(TransactionType.SOURCE_TRX_STATUS_ID_KEY);
+                m_recTrxType.addListener(new SubFileFilter(recTrxStatus.getField(TrxStatus.ID), TransactionType.SOURCE_TRX_STATUS_ID, null, null, null, null));
                 if (recordOwner != null)
                     recordOwner.removeRecord(m_recTrxType);
             }
             Record recTrxDesc = m_recTrxDesc;
             if (recTrxDesc == null)
-                recTrxDesc = ((ReferenceField)recTrxStatus.getField(TrxStatus.kTrxDescID)).getReference();
+                recTrxDesc = ((ReferenceField)recTrxStatus.getField(TrxStatus.TRX_DESC_ID)).getReference();
             try {
                 m_recTrxType.close();
                 while (m_recTrxType.hasNext())
@@ -119,17 +119,17 @@ public class UpdateTrxStatusHandler extends FileListener
                     if (iChangeType == DBConstants.UPDATE_TYPE)
                     {
                         if (recTrxDesc != null)
-                            if (recTrxDesc.getField(TrxDesc.kID).equals(recTrxStatus.getField(TrxStatus.kTrxDescID)))
-                                m_recTrxType.getField(TransactionType.kSourceFile).moveFieldToThis(recTrxDesc.getField(TrxDesc.kSourceFile));
-                        m_recTrxType.getField(TransactionType.kSourcePreferredSign).moveFieldToThis(recTrxStatus.getField(TrxStatus.kPreferredSign));
-                        m_recTrxType.getField(TransactionType.kSourceTrxDescID).moveFieldToThis(recTrxStatus.getField(TrxStatus.kTrxDescID));
+                            if (recTrxDesc.getField(TrxDesc.ID).equals(recTrxStatus.getField(TrxStatus.TRX_DESC_ID)))
+                                m_recTrxType.getField(TransactionType.SOURCE_FILE).moveFieldToThis(recTrxDesc.getField(TrxDesc.SOURCE_FILE));
+                        m_recTrxType.getField(TransactionType.SOURCE_PREFERRED_SIGN).moveFieldToThis(recTrxStatus.getField(TrxStatus.PREFERRED_SIGN));
+                        m_recTrxType.getField(TransactionType.SOURCE_TRX_DESC_ID).moveFieldToThis(recTrxStatus.getField(TrxStatus.TRX_DESC_ID));
                     }
                     else if (iChangeType == DBConstants.DELETE_TYPE)
                     {
-                        m_recTrxType.getField(TransactionType.kSourceTrxStatusID).setData(null);
-                        m_recTrxType.getField(TransactionType.kSourcePreferredSign).setData(null);
-                        m_recTrxType.getField(TransactionType.kSourceFile).setData(null);
-                        m_recTrxType.getField(TransactionType.kSourceTrxDescID).setData(null);
+                        m_recTrxType.getField(TransactionType.SOURCE_TRX_STATUS_ID).setData(null);
+                        m_recTrxType.getField(TransactionType.SOURCE_PREFERRED_SIGN).setData(null);
+                        m_recTrxType.getField(TransactionType.SOURCE_FILE).setData(null);
+                        m_recTrxType.getField(TransactionType.SOURCE_TRX_DESC_ID).setData(null);
                     }
                     m_recTrxType.set();
                 }
@@ -143,12 +143,12 @@ public class UpdateTrxStatusHandler extends FileListener
             Record recTrxStatus = this.getOwner();
             if (m_recTrxDesc == null)
             {       // Only update the TrxDesc if you are updating the status record.
-                Record recTrxDesc = ((ReferenceField)recTrxStatus.getField(TrxStatus.kTrxDescID)).getReference();
-                recTrxStatus.getField(TrxStatus.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
+                Record recTrxDesc = ((ReferenceField)recTrxStatus.getField(TrxStatus.TRX_DESC_ID)).getReference();
+                recTrxStatus.getField(TrxStatus.DESC_CODE).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESC_CODE));
         
-                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
-                recTrxStatus.getField(TrxStatus.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
-                recTrxStatus.getField(TrxStatus.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
+                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.TRX_SYSTEM_ID)).getReference();
+                recTrxStatus.getField(TrxStatus.TRX_SYSTEM_ID).moveFieldToThis(recTrxSystem.getField(TrxSystem.ID));
+                recTrxStatus.getField(TrxStatus.SYSTEM_CODE).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_CODE));
             }
         }
         return super.doRecordChange(field, iChangeType, bDisplayOption);

@@ -15,6 +15,8 @@ public class Trx extends FieldList
     implements TrxModel
 {
 
+    //public static final String ID = ID;
+
     public Trx()
     {
         super();

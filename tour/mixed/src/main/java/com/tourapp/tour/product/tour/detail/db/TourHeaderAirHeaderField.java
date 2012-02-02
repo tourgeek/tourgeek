@@ -76,7 +76,7 @@ public class TourHeaderAirHeaderField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, TourHeaderAirHeader.kAirlineDesc, true, true);
+        ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, TourHeaderAirHeader.AIRLINE_DESC, true, true);
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
@@ -91,7 +91,7 @@ public class TourHeaderAirHeaderField extends ReferenceField
                         Record recTourHeaderAir = fldTourSubID.getRecord();
                         Record recTourHeaderAirHeader = makeReferenceRecord();
         
-                        String strOptionID = recTourHeaderAir.getField(TourSub.kTourHeaderOptionID).toString();
+                        String strOptionID = recTourHeaderAir.getField(TourSub.TOUR_HEADER_OPTION_ID).toString();
                         ScreenLocation itsLocation = null;
         
                         Task task = null;

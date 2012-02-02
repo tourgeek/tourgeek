@@ -103,12 +103,12 @@ public class RequestPrintLabels extends CustomReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).addListener(new InitFieldHandler(this.getRecord(RequestControl.kRequestControlFile).getField(RequestControl.kSendViaCode)));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kSendViaCode), this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID), "="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.kPrintNow), this.getScreenRecord().getField(RequestLabelsScreenRecord.kTrueField), "="));
-        this.getRecord(RequestDetail.kRequestDetailFile).addListener(new SubFileFilter(this.getMainRecord()));
+        this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).addListener(new InitFieldHandler(this.getRecord(RequestControl.REQUEST_CONTROL_FILE).getField(RequestControl.SEND_VIA_CODE)));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.SEND_VIA_CODE), this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID), "="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(Request.PRINT_NOW), this.getScreenRecord().getField(RequestLabelsScreenRecord.TRUE_FIELD), "="));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).addListener(new SubFileFilter(this.getMainRecord()));
         this.getMainRecord().addListener(new SetupLabelTextHandler(null)); 
-        this.getRecord(RequestDetail.kRequestDetailFile).getField(RequestDetail.kBrochureID).addListener(new ReadSecondaryHandler(this.getRecord(Brochure.kBrochureFile)));
+        this.getRecord(RequestDetail.REQUEST_DETAIL_FILE).getField(RequestDetail.BROCHURE_ID).addListener(new ReadSecondaryHandler(this.getRecord(Brochure.BROCHURE_FILE)));
     }
     /**
      * Add button(s) to the toolbar.
@@ -153,7 +153,7 @@ public class RequestPrintLabels extends CustomReportScreen
             return true;
         }
         Map properties = new HashMap();
-        properties.put("sendvia", this.getScreenRecord().getField(RequestLabelsScreenRecord.kSendViaID).getData());
+        properties.put("sendvia", this.getScreenRecord().getField(RequestLabelsScreenRecord.SEND_VIA_ID).getData());
         if (strCommand.equalsIgnoreCase(MenuConstants.PRINT))
         {
             // Step 1 - Move any history to the Request file before starting.
@@ -188,12 +188,12 @@ public class RequestPrintLabels extends CustomReportScreen
         int height = 2 * 72;
         panel.setBounds(x, y, width, height);
         
-        JTextArea label = (JTextArea)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.kFullAddress).getComponent(0)).getScreenFieldView().getControl();
-        JScrollPane compTop = (JScrollPane)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.kFullAddress).getComponent(0)).getScreenFieldView().getControl(DBConstants.CONTROL_TOP);
+        JTextArea label = (JTextArea)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.FULL_ADDRESS).getComponent(0)).getScreenFieldView().getControl();
+        JScrollPane compTop = (JScrollPane)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.FULL_ADDRESS).getComponent(0)).getScreenFieldView().getControl(DBConstants.CONTROL_TOP);
         this.setupComponent(compTop, x, y, width, height);
         
-        label = (JTextArea)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.kRequestText).getComponent(0)).getScreenFieldView().getControl();
-        compTop = (JScrollPane)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.kRequestText).getComponent(0)).getScreenFieldView().getControl(DBConstants.CONTROL_TOP);
+        label = (JTextArea)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.REQUEST_TEXT).getComponent(0)).getScreenFieldView().getControl();
+        compTop = (JScrollPane)((STEView)this.getScreenRecord().getField(RequestLabelsScreenRecord.REQUEST_TEXT).getComponent(0)).getScreenFieldView().getControl(DBConstants.CONTROL_TOP);
         compTop.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         compTop.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
         y = (int)(1.5 * 72);

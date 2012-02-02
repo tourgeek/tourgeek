@@ -102,13 +102,13 @@ public class TourEventScheduleGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).moveFieldToThis(this.getHeaderRecord().getField(TourClass.kID));
-        ((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID)).setReferenceRecord(this.getHeaderRecord());
-        this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).addListener(new ReadSecondaryHandler(((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID)).getReferenceRecord()));
-        if (this.getHeaderRecord().getField(TourClass.kID).isNull())
-            this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).moveFieldToThis(this.getRecord(BookingControl.kBookingControlFile).getField(BookingControl.kTourClassID));
+        this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).moveFieldToThis(this.getHeaderRecord().getField(TourClass.ID));
+        ((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID)).setReferenceRecord(this.getHeaderRecord());
+        this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).addListener(new ReadSecondaryHandler(((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID)).getReferenceRecord()));
+        if (this.getHeaderRecord().getField(TourClass.ID).isNull())
+            this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).moveFieldToThis(this.getRecord(BookingControl.BOOKING_CONTROL_FILE).getField(BookingControl.TOUR_CLASS_ID));
         
-        this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * OpenHeaderRecord Method.
@@ -158,7 +158,7 @@ public class TourEventScheduleGridScreen extends DetailGridScreen
                 RequestType recRequestType = new RequestType(this);
                 properties.put("RequestTypeID", Integer.toString(recRequestType.getIDFromCode(RequestType.MANUAL)));
                 recRequestType.free();
-                Record record = ((ReferenceField)this.getMainRecord().getField(TourEventSchedule.kActionMessageProcessInfoID)).getReferenceRecord();
+                Record record = ((ReferenceField)this.getMainRecord().getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID)).getReferenceRecord();
                 GridScreen screen = (GridScreen)record.makeScreen(null, parentScreen, ScreenConstants.SELECT_MODE, true, true, true, true, properties);
                 //x if (record.getScreen() == null)
                     screen.setSelectQuery(record, false); // Since this record isn't linked to the screen, manually link it.

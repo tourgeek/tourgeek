@@ -95,9 +95,9 @@ public class TourEventUpdateProcess extends BaseProcess
             if (this.getProperty(strFieldName) != null)
                 this.getScreenRecord().getField(iIndex).setString(this.getProperty(strFieldName));
         }
-        if (this.getScreenRecord().getField(TourEventScreenRecord.kTourUpdate).getState())
+        if (this.getScreenRecord().getField(TourEventScreenRecord.TOUR_UPDATE).getState())
             this.updateTourEvents();
-        if (this.getScreenRecord().getField(TourEventScreenRecord.kBookingUpdate).getState())
+        if (this.getScreenRecord().getField(TourEventScreenRecord.BOOKING_UPDATE).getState())
             this.updateBookingEvents();
     }
     /**
@@ -106,38 +106,38 @@ public class TourEventUpdateProcess extends BaseProcess
     public void updateTourEvents()
     {
         try {
-            Record recTour = this.getRecord(Tour.kTourFile);
-            recTour.setKeyArea(Tour.kNextEventDateKey);
+            Record recTour = this.getRecord(Tour.TOUR_FILE);
+            recTour.setKeyArea(Tour.NEXT_EVENT_DATE_KEY);
             while (recTour.hasNext())
             {
                 recTour.next();
-                if (recTour.getField(Tour.kNextEventDate).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.kActionCutoffDate)) > 0)
+                if (recTour.getField(Tour.NEXT_EVENT_DATE).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.ACTION_CUTOFF_DATE)) > 0)
                     break;  // All done
                 int iTourEvent = -1;
-                while (recTour.getField(Tour.kNextEventDate).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.kActionCutoffDate)) <= 0)
+                while (recTour.getField(Tour.NEXT_EVENT_DATE).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.ACTION_CUTOFF_DATE)) <= 0)
                 {
-                    if (iTourEvent == recTour.getField(Tour.kTourEventID).getValue())
+                    if (iTourEvent == recTour.getField(Tour.TOUR_EVENT_ID).getValue())
                     {
                         // todo(don) Never! TourEventID didn't update!
                         break;
                     }
-                    iTourEvent = (int)recTour.getField(Tour.kTourEventID).getValue();
+                    iTourEvent = (int)recTour.getField(Tour.TOUR_EVENT_ID).getValue();
                     if (iTourEvent == TourEvent.FINALIZATION)
-                        recTour.getField(Tour.kFinalized).setState(true);
+                        recTour.getField(Tour.FINALIZED).setState(true);
                     if (iTourEvent == TourEvent.FINAL_DOCS)
-                        recTour.getField(Tour.kFinalDocs).setState(true);
+                        recTour.getField(Tour.FINAL_DOCS).setState(true);
                     if (iTourEvent == TourEvent.TICKETING)
-                        recTour.getField(Tour.kTickets).setState(true);
+                        recTour.getField(Tour.TICKETS).setState(true);
                     if (iTourEvent == TourEvent.SPECIAL_1)
-                        recTour.getField(Tour.kSp1).setState(true);
+                        recTour.getField(Tour.SP_1).setState(true);
                     if (iTourEvent == TourEvent.SPECIAL_2)
-                        recTour.getField(Tour.kSp2).setState(true);
+                        recTour.getField(Tour.SP_2).setState(true);
                     if (iTourEvent == TourEvent.DEPARTURE)
-                        recTour.getField(Tour.kDeparted).setState(true);
+                        recTour.getField(Tour.DEPARTED).setState(true);
                     if (iTourEvent == TourEvent.ORDER_COMPONENTS)
-                        recTour.getField(Tour.kOrderComponents).setState(true);
+                        recTour.getField(Tour.ORDER_COMPONENTS).setState(true);
                     if (iTourEvent == TourEvent.SERVICES_CONFIRMED)
-                        recTour.getField(Tour.kServConf).setState(true);
+                        recTour.getField(Tour.SERV_CONF).setState(true);
                 }
                 if (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                     recTour.set();
@@ -152,28 +152,28 @@ public class TourEventUpdateProcess extends BaseProcess
     public void updateBookingEvents()
     {
         try {
-            Record recBooking = this.getRecord(Booking.kBookingFile);
-            recBooking.setKeyArea(Booking.kNextEventDateKey);
+            Record recBooking = this.getRecord(Booking.BOOKING_FILE);
+            recBooking.setKeyArea(Booking.NEXT_EVENT_DATE_KEY);
             while (recBooking.hasNext())
             {
                 recBooking.next();
-                if (recBooking.getField(Booking.kNextEventDate).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.kActionCutoffDate)) > 0)
+                if (recBooking.getField(Booking.NEXT_EVENT_DATE).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.ACTION_CUTOFF_DATE)) > 0)
                     break;  // All done
                 int iTourEvent = -1;
-                while (recBooking.getField(Booking.kNextEventDate).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.kActionCutoffDate)) <= 0)
+                while (recBooking.getField(Booking.NEXT_EVENT_DATE).compareTo(this.getScreenRecord().getField(TourEventScreenRecord.ACTION_CUTOFF_DATE)) <= 0)
                 {
-                    if (iTourEvent == recBooking.getField(Booking.kTourEventID).getValue())
+                    if (iTourEvent == recBooking.getField(Booking.TOUR_EVENT_ID).getValue())
                     {
                         // todo(don) Never! TourEventID didn't update!
                         break;
                     }
-                    iTourEvent = (int)recBooking.getField(Booking.kTourEventID).getValue();
+                    iTourEvent = (int)recBooking.getField(Booking.TOUR_EVENT_ID).getValue();
                     if (iTourEvent == TourEvent.BOOKING)
-                        recBooking.getField(Booking.kBooked).setState(true);
+                        recBooking.getField(Booking.BOOKED).setState(true);
                     if (iTourEvent == TourEvent.DEPOSIT_DUE)
-                        recBooking.getField(Booking.kDepositDue).setState(true);
+                        recBooking.getField(Booking.DEPOSIT_DUE).setState(true);
                     if (iTourEvent == TourEvent.FINAL_PAY_DUE)
-                        recBooking.getField(Booking.kFinalPaymentDue).setState(true);
+                        recBooking.getField(Booking.FINAL_PAYMENT_DUE).setState(true);
                 }
                 if (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                     recBooking.set();

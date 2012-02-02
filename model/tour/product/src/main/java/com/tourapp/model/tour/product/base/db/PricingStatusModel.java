@@ -8,8 +8,10 @@ import org.jbundle.model.main.db.base.*;
 
 public interface PricingStatusModel extends BaseStatusModel
 {
-    public static final String DESCRIPTION = "Description";
-    public static final String ICON = "Icon";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String ICON = ICON;
     public static final int MANUAL = ACCEPTED;
 
     public static final String PRICING_STATUS_FILE = "PricingStatus";

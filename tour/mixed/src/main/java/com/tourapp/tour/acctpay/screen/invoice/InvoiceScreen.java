@@ -105,83 +105,83 @@ public class InvoiceScreen extends Screen
         super.addListeners();
         
         this.addMainKeyBehavior();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
         
-        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.kTrxStatusID);
+        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.TRX_STATUS_ID);
         this.getMainRecord().addListener(behavior);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_EST_MANUAL);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_ESTIMATE);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.INVOICE_NON_TOUR);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.CREDIT_INVOICE);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.INVOICE);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEPARTURE_EST_MANUAL);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEP_ESTIMATE);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.INVOICE_NON_TOUR);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.CREDIT_INVOICE);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.INVOICE);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
         
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
         
         // If Invoice date, Invoice number, or amount changes, make sure this is an Invoice
-        this.getMainRecord().getField(ApTrx.kInvoiceNo).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kTrxStatusID), recTrxStatus.getField(TrxStatus.kID)));
-        this.getMainRecord().getField(ApTrx.kInvoiceDate).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kTrxStatusID), recTrxStatus.getField(TrxStatus.kID)));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kTrxStatusID), recTrxStatus.getField(TrxStatus.kID)));
+        this.getMainRecord().getField(ApTrx.INVOICE_NO).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.TRX_STATUS_ID), recTrxStatus.getField(TrxStatus.ID)));
+        this.getMainRecord().getField(ApTrx.INVOICE_DATE).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.TRX_STATUS_ID), recTrxStatus.getField(TrxStatus.ID)));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.TRX_STATUS_ID), recTrxStatus.getField(TrxStatus.ID)));
         
         // Invoice balance = invoice amount and select for payment
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceBalance), this.getMainRecord().getField(ApTrx.kInvoiceAmount)));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kAmountSelected), this.getMainRecord().getField(ApTrx.kInvoiceAmount)));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_BALANCE), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT)));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.AMOUNT_SELECTED), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT)));
         
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kInvoiceLocal), this.getMainRecord().getField(ApTrx.kInvoiceAmount), this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kLastRate), CalcBalanceHandler.MULTIPLY, false));
-        this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kLastRate).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kInvoiceLocal), this.getMainRecord().getField(ApTrx.kInvoiceAmount), this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kLastRate), CalcBalanceHandler.MULTIPLY, false));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.INVOICE_LOCAL), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT), this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.LAST_RATE), CalcBalanceHandler.MULTIPLY, false));
+        this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.LAST_RATE).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.INVOICE_LOCAL), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT), this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.LAST_RATE), CalcBalanceHandler.MULTIPLY, false));
         FieldListener listener = null;
-        this.getMainRecord().getField(ApTrx.kInvoiceLocal).addListener(listener = new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceBalanceLocal), this.getMainRecord().getField(ApTrx.kInvoiceLocal)));
+        this.getMainRecord().getField(ApTrx.INVOICE_LOCAL).addListener(listener = new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_BALANCE_LOCAL), this.getMainRecord().getField(ApTrx.INVOICE_LOCAL)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, true);
         // Init these to the last value
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(new InitFieldHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastVendorID)));
-        this.getMainRecord().getField(ApTrx.kInvoiceNo).addListener(new InitFieldHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceNo)));
-        this.getMainRecord().getField(ApTrx.kInvoiceDate).addListener(new InitFieldHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceDate)));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(new InitFieldHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_VENDOR_ID)));
+        this.getMainRecord().getField(ApTrx.INVOICE_NO).addListener(new InitFieldHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_NO)));
+        this.getMainRecord().getField(ApTrx.INVOICE_DATE).addListener(new InitFieldHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_DATE)));
         // If vendor change, set new last vendor, clear all last.
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastVendorID), this.getMainRecord().getField(ApTrx.kVendorID)));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_VENDOR_ID), this.getMainRecord().getField(ApTrx.VENDOR_ID)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, true);
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(listener = new InitOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceNo)));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(listener = new InitOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_NO)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(listener = new InitOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceDate)));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(listener = new InitOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_DATE)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
         // Set last invoice and date if change by user
-        this.getMainRecord().getField(ApTrx.kInvoiceNo).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceNo), this.getMainRecord().getField(ApTrx.kInvoiceNo)));
+        this.getMainRecord().getField(ApTrx.INVOICE_NO).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_NO), this.getMainRecord().getField(ApTrx.INVOICE_NO)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, true);
-        this.getMainRecord().getField(ApTrx.kInvoiceDate).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceDate), this.getMainRecord().getField(ApTrx.kInvoiceDate), false, false, true));  // Not if null
+        this.getMainRecord().getField(ApTrx.INVOICE_DATE).addListener(listener = new MoveOnChangeHandler(this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_DATE), this.getMainRecord().getField(ApTrx.INVOICE_DATE), false, false, true));  // Not if null
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, true);
         // If user changes vendor no, clear invoice no and date.
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(listener = new InitOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceNo)));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(listener = new InitOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_NO)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(listener = new InitOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceDate)));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(listener = new InitOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_DATE)));
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
         
         // If invoice number or amount changes, and the date hasn't been set yet, set it.
-        this.getMainRecord().getField(ApTrx.kInvoiceNo).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceDate), this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceDate), false, true));    // Only if date is null now.
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceDate), this.getScreenRecord().getField(InvoiceScreenRecord.kLastInvoiceDate), false, true));
+        this.getMainRecord().getField(ApTrx.INVOICE_NO).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_DATE), this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_DATE), false, true));    // Only if date is null now.
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_DATE), this.getScreenRecord().getField(InvoiceScreenRecord.LAST_INVOICE_DATE), false, true));
         
         // If read dep est and vendor is same as last, set invoice no, date and amount in record
         this.getMainRecord().addListener(new UpdateInvoiceVendorHandler((ScreenRecord)this.getScreenRecord()));
         // If entering Invoice number and amount is null, move dep est amount to Invoice amount
-        this.getMainRecord().getField(ApTrx.kInvoiceNo).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kInvoiceAmount), this.getMainRecord().getField(ApTrx.kDepartureEstimate), false, true));
+        this.getMainRecord().getField(ApTrx.INVOICE_NO).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT), this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE), false, true));
         
-        Record recTour = ((ReferenceField)this.getMainRecord().getField(ApTrx.kTourID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kStartServiceDate), recTour.getField(Tour.kDepartureDate)));
-        this.getMainRecord().getField(ApTrx.kStartServiceDate).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kEndServiceDate), this.getMainRecord().getField(ApTrx.kStartServiceDate)));
+        Record recTour = ((ReferenceField)this.getMainRecord().getField(ApTrx.TOUR_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.START_SERVICE_DATE), recTour.getField(Tour.DEPARTURE_DATE)));
+        this.getMainRecord().getField(ApTrx.START_SERVICE_DATE).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.END_SERVICE_DATE), this.getMainRecord().getField(ApTrx.START_SERVICE_DATE)));
         
-        this.getMainRecord().getField(ApTrx.kTourID).addListener(new InvoiceAcctHandler(null));
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(new InvoiceAcctHandler(null));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new InvoiceAcctHandler(null));
+        this.getMainRecord().getField(ApTrx.TOUR_ID).addListener(new InvoiceAcctHandler(null));
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(new InvoiceAcctHandler(null));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new InvoiceAcctHandler(null));
         
         // Make sure this is a valid Invoice
         this.getMainRecord().addListener(new ValidateInvoiceHandler(null));
@@ -203,25 +203,25 @@ public class InvoiceScreen extends Screen
         {
             this.getMainRecord().getField(i).setEnabled(bEnable);
         }
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).setEnabled(false);
-        this.getMainRecord().getField(ApTrx.kDepartureEstimate).setEnabled(false);
-        this.getMainRecord().getField(ApTrx.kID).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).setEnabled(false);
+        this.getMainRecord().getField(ApTrx.DEPARTURE_ESTIMATE).setEnabled(false);
+        this.getMainRecord().getField(ApTrx.ID).setEnabled(true);
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {    // Make sure currency is read for LocalCurrencyField(s).
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         new SButtonBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
         
-        ((ReferenceField)this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTrxStatusID)).getReferenceRecord(null);   // Don't mix this TrxStatus record with the one I use to keep track of the current trx status (in openOther)
+        ((ReferenceField)this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.TRX_STATUS_ID)).getReferenceRecord(null);   // Don't mix this TrxStatus record with the one I use to keep track of the current trx status (in openOther)
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTourID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -255,8 +255,8 @@ public class InvoiceScreen extends Screen
             int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();
             properties.put(ApTrxClassField.DISPLAY_TYPE_PARAM, Integer.toString(ApTrxClassField.DEPARTURE_ESTIMATES));
-            if (!this.getMainRecord().getField(ApTrx.kVendorID).isNull())
-                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.kVendorID).toString());
+            if (!this.getMainRecord().getField(ApTrx.VENDOR_ID).isNull())
+                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.VENDOR_ID).toString());
         
             return (this.onForm(null, iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
         }
@@ -265,7 +265,7 @@ public class InvoiceScreen extends Screen
             Record record = this.getMainRecord();
             if (!record.isModified())
             {
-                BaseField fldInvoiceAmount = this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceAmount);
+                BaseField fldInvoiceAmount = this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.INVOICE_AMOUNT);
                 if (!fldInvoiceAmount.isNull())
                     fldInvoiceAmount.setModified(true);
             }

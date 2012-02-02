@@ -91,29 +91,29 @@ public class FinStmtReportScreen extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(FinStmt.kFinStmtHeaderIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(FinStmtReportScreenRecord.kFinStmtHeaderID), FinStmt.kFinStmtHeaderID, null, -1, null, -1));
+        this.getMainRecord().setKeyArea(FinStmt.FIN_STMT_HEADER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(FinStmtReportScreenRecord.FIN_STMT_HEADER_ID), FinStmt.FIN_STMT_HEADER_ID, null, null, null, null));
         
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).addListener(new SubFileFilter(this.getMainRecord()));
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).addListener(new SubFileFilter(this.getMainRecord()));
         
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).addListener(new DisplayReadHandler(FinStmtDetail.kAccountID, this.getRecord(Account.kAccountFile), Account.kID));
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).addListener(new DisplayReadHandler(FinStmtDetail.ACCOUNT_ID, this.getRecord(Account.ACCOUNT_FILE), Account.ID));
         
         CalcAcctBalHandler calcListener = null;
-        this.getRecord(Account.kAccountFile).addListener(calcListener = new CalcAcctBalHandler(this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartBalance), null, this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartDate), false));
+        this.getRecord(Account.ACCOUNT_FILE).addListener(calcListener = new CalcAcctBalHandler(this.getScreenRecord().getField(FinStmtReportScreenRecord.START_BALANCE), null, this.getScreenRecord().getField(FinStmtReportScreenRecord.START_DATE), false));
         // Start and end entry date filters
-        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.kTrxEntry), this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartEntry), FileFilter.GREATER_THAN_EQUAL));
-        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.kTrxEntry), this.getScreenRecord().getField(FinStmtReportScreenRecord.kEndEntry), FileFilter.LESS_THAN_EQUAL));
+        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.TRX_ENTRY), this.getScreenRecord().getField(FinStmtReportScreenRecord.START_ENTRY), FileFilter.GREATER_THAN_EQUAL));
+        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.TRX_ENTRY), this.getScreenRecord().getField(FinStmtReportScreenRecord.END_ENTRY), FileFilter.LESS_THAN_EQUAL));
         // Closing Entry Filter
-        calcListener.getAcctDetail().addListener(new ExcludeClosingFilter(this.getScreenRecord().getField(FinStmtReportScreenRecord.kExcludeClosing)));
+        calcListener.getAcctDetail().addListener(new ExcludeClosingFilter(this.getScreenRecord().getField(FinStmtReportScreenRecord.EXCLUDE_CLOSING)));
         
-        this.getRecord(Account.kAccountFile).addListener(calcListener = new CalcAcctBalHandler(this.getScreenRecord().getField(FinStmtReportScreenRecord.kBalanceChange), this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartDate), this.getScreenRecord().getField(FinStmtReportScreenRecord.kEndDate), true));
+        this.getRecord(Account.ACCOUNT_FILE).addListener(calcListener = new CalcAcctBalHandler(this.getScreenRecord().getField(FinStmtReportScreenRecord.BALANCE_CHANGE), this.getScreenRecord().getField(FinStmtReportScreenRecord.START_DATE), this.getScreenRecord().getField(FinStmtReportScreenRecord.END_DATE), true));
         // Start and end entry date filters
-        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.kTrxEntry), this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartEntry), FileFilter.GREATER_THAN_EQUAL));
-        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.kTrxEntry), this.getScreenRecord().getField(FinStmtReportScreenRecord.kEndEntry), FileFilter.LESS_THAN_EQUAL));
+        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.TRX_ENTRY), this.getScreenRecord().getField(FinStmtReportScreenRecord.START_ENTRY), FileFilter.GREATER_THAN_EQUAL));
+        calcListener.getAcctDetail().addListener(new CompareFileFilter(calcListener.getAcctDetail().getField(AcctDetail.TRX_ENTRY), this.getScreenRecord().getField(FinStmtReportScreenRecord.END_ENTRY), FileFilter.LESS_THAN_EQUAL));
         // Closing Entry Filter
-        calcListener.getAcctDetail().addListener(new ExcludeClosingFilter(this.getScreenRecord().getField(FinStmtReportScreenRecord.kExcludeClosing)));
+        calcListener.getAcctDetail().addListener(new ExcludeClosingFilter(this.getScreenRecord().getField(FinStmtReportScreenRecord.EXCLUDE_CLOSING)));
         
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).addListener(new AddFinStmtDetailTotals(null));        
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).addListener(new AddFinStmtDetailTotals(null));        
         
         this.setProperty(LIMIT_PARAM, LIMIT_UNLIMITED);   // Unlimited detail records
     }

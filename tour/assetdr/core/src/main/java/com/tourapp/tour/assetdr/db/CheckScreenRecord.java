@@ -31,10 +31,15 @@ public class CheckScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String CHECK_DATE = "CheckDate";
     public static final int kCheckDate = kReportScreenRecordLastField + 1;
+    public static final String CHECK_NO = "CheckNo";
     public static final int kCheckNo = kCheckDate + 1;
+    public static final String PAYEE = "Payee";
     public static final int kPayee = kCheckNo + 1;
+    public static final String CHECK_AMOUNT = "CheckAmount";
     public static final int kCheckAmount = kPayee + 1;
+    public static final String CHECK_AMOUNT_TEXT = "CheckAmountText";
     public static final int kCheckAmountText = kCheckAmount + 1;
     public static final int kCheckScreenRecordLastField = kCheckAmountText;
     public static final int kCheckScreenRecordFields = kCheckAmountText - DBConstants.MAIN_FIELD + 1;
@@ -92,7 +97,7 @@ public class CheckScreenRecord extends ReportScreenRecord
      */
     public void addListeners()
     {
-        this.getField(CheckScreenRecord.kCheckAmount).addListener(new CopyFieldHandler(CheckScreenRecord.kCheckAmountText));
+        this.getField(CheckScreenRecord.CHECK_AMOUNT).addListener(new CopyFieldHandler(CheckScreenRecord.CHECK_AMOUNT_TEXT));
         super.addListeners();
     }
 

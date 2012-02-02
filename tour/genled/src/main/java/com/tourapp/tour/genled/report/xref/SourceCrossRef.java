@@ -90,21 +90,21 @@ public class SourceCrossRef extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(AcctDetail.kSourceKey);
+        this.getMainRecord().setKeyArea(AcctDetail.SOURCE_KEY);
         
-        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.kStartSource), AcctDetail.kSource, null, -1, null, -1);
+        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.START_SOURCE), AcctDetail.SOURCE, null, null, null, null);
         listener.setEndKey(false);
         this.getMainRecord().addListener(listener);
-        listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.kEndSource), AcctDetail.kSource, null, -1, null, -1);
+        listener = new SubFileFilter(this.getScreenRecord().getField(GenledScreenRecord.END_SOURCE), AcctDetail.SOURCE, null, null, null, null);
         listener.setInitialKey(false);
         this.getMainRecord().addListener(listener);
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kReportCount), false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kReportTotal), AcctDetail.kAmountLocal, false, true));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kSubTotal), AcctDetail.kAmountLocal, false, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.REPORT_COUNT), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.REPORT_TOTAL), AcctDetail.AMOUNT_LOCAL, false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.SUB_TOTAL), AcctDetail.AMOUNT_LOCAL, false, true, true));
         
-        this.getRecord(AcctDetail.kAcctDetailFile).addListener(new ExtractRangeFilter(AcctDetail.kTrxDate, this.getScreenRecord().getField(GenledScreenRecord.kStartDate), this.getScreenRecord().getField(GenledScreenRecord.kEndDate), ExtractRangeFilter.PAD_END_FIELD));
-        this.getRecord(AcctDetail.kAcctDetailFile).addListener(new ExtractRangeFilter(AcctDetail.kTrxEntry, this.getScreenRecord().getField(GenledScreenRecord.kStartEntry), this.getScreenRecord().getField(GenledScreenRecord.kEndEntry), ExtractRangeFilter.PAD_END_FIELD));        
+        this.getRecord(AcctDetail.ACCT_DETAIL_FILE).addListener(new ExtractRangeFilter(AcctDetail.TRX_DATE, this.getScreenRecord().getField(GenledScreenRecord.START_DATE), this.getScreenRecord().getField(GenledScreenRecord.END_DATE), ExtractRangeFilter.PAD_END_FIELD));
+        this.getRecord(AcctDetail.ACCT_DETAIL_FILE).addListener(new ExtractRangeFilter(AcctDetail.TRX_ENTRY, this.getScreenRecord().getField(GenledScreenRecord.START_ENTRY), this.getScreenRecord().getField(GenledScreenRecord.END_ENTRY), ExtractRangeFilter.PAD_END_FIELD));        
         
         this.setProperty(LIMIT_PARAM, LIMIT_UNLIMITED);   // Unlimited detail records
     }

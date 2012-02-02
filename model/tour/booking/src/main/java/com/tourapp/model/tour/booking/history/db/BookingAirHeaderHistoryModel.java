@@ -9,6 +9,9 @@ import com.tourapp.model.tour.booking.detail.db.*;
 public interface BookingAirHeaderHistoryModel extends BookingAirHeaderModel
 {
 
+    //public static final String ID = ID;
+    public static final String HISTORY_DATE = "HistoryDate";
+
     public static final String BOOKING_AIR_HEADER_HISTORY_FILE = "BookingAirHeaderHistory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.history.db.BookingAirHeaderHistory";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.history.db.BookingAirHeaderHistory";

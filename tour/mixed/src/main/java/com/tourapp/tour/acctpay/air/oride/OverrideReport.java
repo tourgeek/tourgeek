@@ -97,11 +97,11 @@ public class OverrideReport extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(TicketTrx.kVendorIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(OverrideScreenRecord.kVendorID), TicketTrx.kVendorID, null, -1, null, -1));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(OverrideScreenRecord.kStartDeparture), ">="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(OverrideScreenRecord.kEndDeparture), "<="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kOverridePaidDate), this.getScreenRecord().getField(OverrideScreenRecord.kOverridePaidDate), DBConstants.EQUALS, null, false));
+        this.getMainRecord().setKeyArea(TicketTrx.VENDOR_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(OverrideScreenRecord.VENDOR_ID), TicketTrx.VENDOR_ID, null, null, null, null));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(OverrideScreenRecord.START_DEPARTURE), ">="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(OverrideScreenRecord.END_DEPARTURE), "<="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.OVERRIDE_PAID_DATE), this.getScreenRecord().getField(OverrideScreenRecord.OVERRIDE_PAID_DATE), DBConstants.EQUALS, null, false));
     }
     /**
      * Add the toolbars that belong with this screen.

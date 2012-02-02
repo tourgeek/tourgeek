@@ -70,11 +70,11 @@ public class VendorHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(VendorScreenRecord.kVendorScreenRecordFile).getField(VendorScreenRecord.kVendorID).setEnabled(true);
+        this.getScreenRecord().getField(VendorScreenRecord.VENDOR_ID).setEnabled(true);
         
-        ((ReferenceField)this.getRecord(VendorScreenRecord.kVendorScreenRecordFile).getField(VendorScreenRecord.kVendorID)).getReferenceRecord().getField(Vendor.kCode).setEnabled(true);
-        this.getRecord(VendorScreenRecord.kVendorScreenRecordFile).getField(VendorScreenRecord.kDisplayType).setEnabled(true);
-        this.getRecord(VendorScreenRecord.kVendorScreenRecordFile).getField(VendorScreenRecord.kDisplayActive).setEnabled(true);
+        ((ReferenceField)this.getScreenRecord().getField(VendorScreenRecord.VENDOR_ID)).getReferenceRecord().getField(Vendor.CODE).setEnabled(true);
+        this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE).setEnabled(true);
+        this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_ACTIVE).setEnabled(true);
     }
     /**
      * SetupSFields Method.

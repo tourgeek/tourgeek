@@ -95,15 +95,15 @@ public class CrDrScreen extends BookingArTrxScreen
         super.addListeners();
         
         this.getMainRecord().getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(false);    // Since I will be doing the updating
-        this.getMainRecord().addListener(new UpdateCrDrAcctDetailHandler(this.getRecord(Booking.kBookingFile)));
+        this.getMainRecord().addListener(new UpdateCrDrAcctDetailHandler(this.getRecord(Booking.BOOKING_FILE)));
         
         try {
             this.getMainRecord().addNew();
         } catch (DBException e) {
         }
         this.setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kTrxStatusID).setEnabled(false);
-        this.getMainRecord().getField(ArTrx.kAmount).addListener(new SetCrDrTypeHandler(null));
+        this.getMainRecord().getField(ArTrx.TRX_STATUS_ID).setEnabled(false);
+        this.getMainRecord().getField(ArTrx.AMOUNT).addListener(new SetCrDrTypeHandler(null));
     }
     /**
      * Set up all the screen fields.

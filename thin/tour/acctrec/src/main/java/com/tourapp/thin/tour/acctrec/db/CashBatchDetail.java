@@ -15,6 +15,10 @@ public class CashBatchDetail extends FieldList
     implements CashBatchDetailModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+
     public CashBatchDetail()
     {
         super();

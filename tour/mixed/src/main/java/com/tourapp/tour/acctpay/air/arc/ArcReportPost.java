@@ -105,14 +105,14 @@ public class ArcReportPost extends Screen
     {
         super.addListeners();
         
-        this.getScreenRecord().getField(ArcReportScreenRecord.kLastArcDate).setSFieldToProperty();
-        this.getScreenRecord().getField(ArcReportScreenRecord.kSummaryAccountID).setSFieldToProperty();
+        this.getScreenRecord().getField(ArcReportScreenRecord.LAST_ARC_DATE).setSFieldToProperty();
+        this.getScreenRecord().getField(ArcReportScreenRecord.SUMMARY_ACCOUNT_ID).setSFieldToProperty();
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        int iNewTrxType = recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.kTicketTrxFile, TicketTrx.ARC_SUBMITTED);
-        recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.kTicketTrxFile, TicketTrx.TICKETED);
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kTrxStatusID), recTrxStatus.getField(TrxStatus.kID), "="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kIssueDate), this.getScreenRecord().getField(ArcReportScreenRecord.kLastArcDate), "<="));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        int iNewTrxType = recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.TICKET_TRX_FILE, TicketTrx.ARC_SUBMITTED);
+        recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.TICKET_TRX_FILE, TicketTrx.TICKETED);
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.TRX_STATUS_ID), recTrxStatus.getField(TrxStatus.ID), "="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.ISSUE_DATE), this.getScreenRecord().getField(ArcReportScreenRecord.LAST_ARC_DATE), "<="));
         
         this.getMainRecord().addListener(new UpdateArcHandler(null));
     }
@@ -149,9 +149,9 @@ public class ArcReportPost extends Screen
     public boolean onPost()
     {
         try   {
-            TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+            TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
             Object bookmark = recTrxStatus.getHandle(DBConstants.DATA_SOURCE_HANDLE);
-            int iNewTrxType = recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.kTicketTrxFile, TicketTrx.ARC_SUBMITTED);
+            int iNewTrxType = recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.TICKET_TRX_FILE, TicketTrx.ARC_SUBMITTED);
             recTrxStatus.setHandle(bookmark, DBConstants.DATA_SOURCE_HANDLE);
             Record recTicketTrx = this.getMainRecord();
         
@@ -160,8 +160,8 @@ public class ArcReportPost extends Screen
             {
                 recTicketTrx.next();
                 recTicketTrx.edit();
-                recTicketTrx.getField(TicketTrx.kTrxStatusID).setValue(iNewTrxType);
-                recTicketTrx.getField(TicketTrx.kArcDate).setValue(DateField.todaysDate());
+                recTicketTrx.getField(TicketTrx.TRX_STATUS_ID).setValue(iNewTrxType);
+                recTicketTrx.getField(TicketTrx.ARC_DATE).setValue(DateField.todaysDate());
                 recTicketTrx.set();
             }
         } catch (DBException ex)    {

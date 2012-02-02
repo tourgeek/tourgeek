@@ -78,7 +78,7 @@ public class BrocHistList extends GridScreen
      */
     public void setupSFields()
     {
-        Converter converter = this.getRecord(Brochure.kBrochureFile).getField(Brochure.kDescription);
+        Converter converter = this.getRecord(Brochure.BROCHURE_FILE).getField(Brochure.DESCRIPTION);
         converter = new FieldLengthConverter(converter, 20);
         this.addColumn(converter);
         this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).getField(RequestHistoryDetail.kBrochureQty).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

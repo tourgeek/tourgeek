@@ -57,15 +57,15 @@ public class CalcLineFieldsHandler extends FieldListener
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
         Record recBookingLine = this.getOwner().getRecord();
-        double dPrice = recBookingLine.getField(BookingLine.kPrice).getValue();
-        double dQuantity = recBookingLine.getField(BookingLine.kQuantity).getValue();
-        double dCommissionRate = recBookingLine.getField(BookingLine.kCommissionRate).getValue();
+        double dPrice = recBookingLine.getField(BookingLine.PRICE).getValue();
+        double dQuantity = recBookingLine.getField(BookingLine.QUANTITY).getValue();
+        double dCommissionRate = recBookingLine.getField(BookingLine.COMMISSION_RATE).getValue();
         double dGross = Math.floor(dPrice * dQuantity * 100 + 0.5) / 100;
         double dCommission = Math.floor(dGross * dCommissionRate * 100 + 0.5) / 100;
         double dNet = dGross - dCommission;
-        recBookingLine.getField(BookingLine.kGross).setValue(dGross);
-        recBookingLine.getField(BookingLine.kCommission).setValue(dCommission);
-        recBookingLine.getField(BookingLine.kNet).setValue(dNet);
+        recBookingLine.getField(BookingLine.GROSS).setValue(dGross);
+        recBookingLine.getField(BookingLine.COMMISSION).setValue(dCommission);
+        recBookingLine.getField(BookingLine.NET).setValue(dNet);
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 

@@ -76,19 +76,19 @@ public class CalcProductAmountHome extends ChangeOnChangeHandler
         double dAmountHome = 0.00;
         if (dAmountLocal != 0)
         {
-            Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReference();
+            Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReference();
             if (recVendor != null)
                 if ((recVendor.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recVendor.getEditMode() == DBConstants.EDIT_CURRENT))
                 {
-                    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReference();
+                    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReference();
                     if (recCurrencys != null)
                         if ((recCurrencys.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recCurrencys.getEditMode() == DBConstants.EDIT_CURRENT))
                         {
                             double dExchange = 1.0;
-                            if (!recCurrencys.getField(Currencys.kCostingRate).isNull())
-                                dExchange = recCurrencys.getField(Currencys.kCostingRate).getValue();
+                            if (!recCurrencys.getField(Currencys.COSTING_RATE).isNull())
+                                dExchange = recCurrencys.getField(Currencys.COSTING_RATE).getValue();
                             else
-                                dExchange = recCurrencys.getField(Currencys.kLastRate).getValue();
+                                dExchange = recCurrencys.getField(Currencys.LAST_RATE).getValue();
                             dAmountHome = Math.floor(dAmountLocal * dExchange * 100.00 + 0.5) / 100.00;
                         }
                 }

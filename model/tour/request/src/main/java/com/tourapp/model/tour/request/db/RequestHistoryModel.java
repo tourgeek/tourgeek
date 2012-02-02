@@ -8,6 +8,13 @@ import com.tourapp.model.tour.request.db.*;
 
 public interface RequestHistoryModel extends RequestModel
 {
+
+    //public static final String HIST_REPRINT = HIST_REPRINT;
+    public static final String HIST_TIME_PRINTED = "HistTimePrinted";
+
+    public static final String PROFILE_ID_KEY = "ProfileID";
+
+    public static final String HIST_REPRINT_KEY = "HistReprint";
     public static final String SCREEN_CLASS = "org.jbundle.base.screen.model.Screen";
     public static final String GRID_SCREEN_CLASS = "org.jbundle.base.screen.model.GridScreen";
 

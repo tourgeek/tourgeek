@@ -70,7 +70,7 @@ public class TaxRateScreen extends Screen
     public void addListeners()
     {
         FieldListener listener = new MainFieldHandler(-1);
-        this.getMainRecord().getField(TaxRate.kCutOffAmount).addListener(listener);
+        this.getMainRecord().getField(TaxRate.CUT_OFF_AMOUNT).addListener(listener);
     }
     /**
      * Set up all the screen fields.
@@ -78,11 +78,11 @@ public class TaxRateScreen extends Screen
     public void setupSFields()
     {
         Record query = this.getMainRecord();
-        new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, query.getField(TaxRate.kTaxCode), ScreenConstants.DEFAULT_DISPLAY);
-        Converter converter = new IndexConverter(query.getField(TaxRate.kMaritalStatus));
+        new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, query.getField(TaxRate.TAX_CODE), ScreenConstants.DEFAULT_DISPLAY);
+        Converter converter = new IndexConverter(query.getField(TaxRate.MARITAL_STATUS));
         new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);
-        query.getField(TaxRate.kCutOffAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        query.getField(TaxRate.kTaxRate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        query.getField(TaxRate.CUT_OFF_AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        query.getField(TaxRate.TAX_RATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

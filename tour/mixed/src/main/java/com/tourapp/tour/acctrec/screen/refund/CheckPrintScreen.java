@@ -93,23 +93,23 @@ public class CheckPrintScreen extends CustomReportScreen
         panel.setLayout(null);
         panel.setBounds(x, y, width, height);
         
-        JTextComponent label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.kPayee).getComponent(0)).getScreenFieldView().getControl();
+        JTextComponent label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.PAYEE).getComponent(0)).getScreenFieldView().getControl();
         height = (int)(0.25 * 72);
         this.setupComponent(label, x, y, width, height);
         
-        label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.kCheckNo).getComponent(0)).getScreenFieldView().getControl();
+        label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.CHECK_NO).getComponent(0)).getScreenFieldView().getControl();
         y = (int)(.5 * 72);
         this.setupComponent(label, x, y, width, height);
         
-        label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.kCheckDate).getComponent(0)).getScreenFieldView().getControl();
+        label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.CHECK_DATE).getComponent(0)).getScreenFieldView().getControl();
         y = (int)(.75 * 72);
         this.setupComponent(label, x, y, width, height);
         
-        label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.kCheckAmount).getComponent(0)).getScreenFieldView().getControl();
+        label = (JTextField)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.CHECK_AMOUNT).getComponent(0)).getScreenFieldView().getControl();
         y = (int)(1 * 72);
         this.setupComponent(label, x, y, width, height);
         
-        label = (JTextArea)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.kCheckAmountText).getComponent(0)).getScreenFieldView().getControl();
+        label = (JTextArea)((SEditText)this.getScreenRecord().getField(CheckScreenRecord.CHECK_AMOUNT_TEXT).getComponent(0)).getScreenFieldView().getControl();
         y = (int)(1.5 * 72);
         height = (int)(0.5 * 72);
         this.setupComponent(label, x, y, width, height);

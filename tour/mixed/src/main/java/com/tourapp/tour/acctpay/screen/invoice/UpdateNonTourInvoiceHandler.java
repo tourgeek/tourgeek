@@ -79,7 +79,7 @@ public class UpdateNonTourInvoiceHandler extends UpdateApTrxHandler
             try {
                 this.getOwner().setHandle(this.getOwner().getHandle(DBConstants.DATA_SOURCE_HANDLE), DBConstants.DATA_SOURCE_HANDLE);
                 this.getOwner().edit();
-                this.getOwner().getField(ApTrx.kAccountID).moveFieldToThis(this.getCrAccount());
+                this.getOwner().getField(ApTrx.ACCOUNT_ID).moveFieldToThis(this.getCrAccount());
                 this.getOwner().set();
             } catch (DBException ex) {
                 ex.printStackTrace();
@@ -93,7 +93,7 @@ public class UpdateNonTourInvoiceHandler extends UpdateApTrxHandler
      */
     public BaseField getTrxDate()
     {
-        return this.getOwner().getField(ApTrx.kInvoiceDate);
+        return this.getOwner().getField(ApTrx.INVOICE_DATE);
     }
     /**
      * Get the transaction amount for this type of transaction.
@@ -110,7 +110,7 @@ public class UpdateNonTourInvoiceHandler extends UpdateApTrxHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(InvoiceScreenRecord.kApAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(InvoiceScreenRecord.AP_ACCOUNT_ID);
     }
     /**
      * Get the Debit Account field.
@@ -118,7 +118,7 @@ public class UpdateNonTourInvoiceHandler extends UpdateApTrxHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(InvoiceScreenRecord.kCostAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(InvoiceScreenRecord.COST_ACCOUNT_ID);
     }
 
 }

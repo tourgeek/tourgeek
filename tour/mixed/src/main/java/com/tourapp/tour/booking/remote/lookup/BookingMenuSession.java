@@ -76,7 +76,7 @@ public class BookingMenuSession extends Session
     {
         super.addListeners();
         this.getMainRecord().setKeyArea(DBConstants.MAIN_KEY_AREA + 1);
-        this.getMainRecord().addListener(new CompareFileFilter(this.getRecord(Booking.kBookingFile).getField(Booking.kEmployeeID), this.getScreenRecord().getField(ReportScreenRecord.kReportUserID), "="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getRecord(Booking.BOOKING_FILE).getField(Booking.EMPLOYEE_ID), this.getScreenRecord().getField(ReportScreenRecord.REPORT_USER_ID), "="));
     }
     /**
      * Override this to do an action sent from the client.

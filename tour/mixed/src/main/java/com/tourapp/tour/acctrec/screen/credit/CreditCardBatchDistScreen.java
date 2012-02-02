@@ -92,8 +92,8 @@ public class CreditCardBatchDistScreen extends Screen
                 
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
                 
-        this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), CreditCard.kNet, false, true));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kEndBalance), this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kNet), true));
+        this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CreditCard.NET, false, true));
+        this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.END_BALANCE), this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.NET), true));
     }
     /**
      * Add the screen fields.
@@ -112,7 +112,7 @@ public class CreditCardBatchDistScreen extends Screen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(CreditCard.kCreditCardFile);
+        return this.getRecord(CreditCard.CREDIT_CARD_FILE);
     }
     /**
      * Make a sub-screen.

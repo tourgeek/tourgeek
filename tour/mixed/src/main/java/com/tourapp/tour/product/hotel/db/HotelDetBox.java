@@ -65,7 +65,7 @@ public class HotelDetBox extends SButtonBox
      */
     public int controlToField()
     {
-        Hotel query = (Hotel)this.getParentScreen().getRecord(Hotel.kHotelFile);
+        Hotel query = (Hotel)this.getParentScreen().getRecord(Hotel.HOTEL_FILE);
         //+CQBkHotelDet screen2 = new CQBkHotelDet(null, query);
         //+screen2.makeWindow();
         return DBConstants.NORMAL_RETURN;

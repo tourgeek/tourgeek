@@ -8,7 +8,10 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface LandClassModel extends BaseClassModel
 {
-    public static final String DESCRIPTION = "Description";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String CODE = CODE;
     public static final String PRIVATE_VEHICLE_CODE = "PMC";
     public static final String SEAT_IN_COACH_CODE = "SIC";
 

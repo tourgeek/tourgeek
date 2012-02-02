@@ -36,19 +36,33 @@ public class McoScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String NET = "Net";
     public static final int kNet = kScreenRecordLastField + 1;
+    public static final String AIRLINE_ID = "AirlineID";
     public static final int kAirlineID = kNet + 1;
+    public static final String SERVICE_CHARGE = "ServiceCharge";
     public static final int kServiceCharge = kAirlineID + 1;
+    public static final String REPORT_DATE = "ReportDate";
     public static final int kReportDate = kServiceCharge + 1;
+    public static final String TOTAL_GROSS = "TotalGross";
     public static final int kTotalGross = kReportDate + 1;
+    public static final String TOTAL_NET = "TotalNet";
     public static final int kTotalNet = kTotalGross + 1;
+    public static final String COUNT = "Count";
     public static final int kCount = kTotalNet + 1;
+    public static final String FLAG = "Flag";
     public static final int kFlag = kCount + 1;
+    public static final String TODAY = "Today";
     public static final int kToday = kFlag + 1;
+    public static final String BOOKING_ID = "BookingID";
     public static final int kBookingID = kToday + 1;
+    public static final String CARD_NO = "CardNo";
     public static final int kCardNo = kBookingID + 1;
+    public static final String CARD_ID = "CardID";
     public static final int kCardID = kCardNo + 1;
+    public static final String CARD_FILTER_ID = "CardFilterID";
     public static final int kCardFilterID = kCardID + 1;
+    public static final String NULL_DATE = "NullDate";
     public static final int kNullDate = kCardFilterID + 1;
     public static final int kMcoScreenRecordLastField = kNullDate;
     public static final int kMcoScreenRecordFields = kNullDate - DBConstants.MAIN_FIELD + 1;

@@ -15,6 +15,8 @@ public class CustSale extends FieldList
     implements CustSaleModel
 {
 
+    //public static final String ID = ID;
+
     public CustSale()
     {
         super();

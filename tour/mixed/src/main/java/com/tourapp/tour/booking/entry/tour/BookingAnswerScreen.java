@@ -93,7 +93,7 @@ public class BookingAnswerScreen extends BookingSubScreen
         
         this.setAppending(false);
         
-        this.getMainRecord().getField(BookingAnswer.kSelected).addListener(new BookingAnswerSelectHandler(null));
+        this.getMainRecord().getField(BookingAnswer.SELECTED).addListener(new BookingAnswerSelectHandler(null));
     }
     /**
      * Add button(s) to the toolbar.
@@ -128,7 +128,7 @@ public class BookingAnswerScreen extends BookingSubScreen
             if ((record.getEditMode() != Constants.EDIT_CURRENT) && (record.getEditMode() != Constants.EDIT_IN_PROGRESS))
                 return false;
         
-            BookingPax recBookingPax = (BookingPax)((ReferenceField)this.getMainRecord().getField(BookingAnswer.kBookingPaxID)).getReference();
+            BookingPax recBookingPax = (BookingPax)((ReferenceField)this.getMainRecord().getField(BookingAnswer.BOOKING_PAX_ID)).getReference();
             if (recBookingPax != null)
             {
                 try {
@@ -139,10 +139,10 @@ public class BookingAnswerScreen extends BookingSubScreen
                     // Never
                 }
             }
-            String strModuleID = record.getField(BookingAnswer.kModuleID).toString();
-            String strDateModuleStart = record.getField(BookingAnswer.kModuleStartDate).toString();
+            String strModuleID = record.getField(BookingAnswer.MODULE_ID).toString();
+            String strDateModuleStart = record.getField(BookingAnswer.MODULE_START_DATE).toString();
             String strTourOrOption = TourHeaderOption.OPTION;
-            String strTourOrOptionID = record.getField(BookingAnswer.kTourHeaderOptionID).toString();
+            String strTourOrOptionID = record.getField(BookingAnswer.TOUR_HEADER_OPTION_ID).toString();
             Converter fieldConverter = null;
             int iDisplayFieldDesc = ScreenConstants.DISPLAY_MODE | ScreenConstants.DONT_DISPLAY_FIELD_DESC;
             if ((iCommandOptions & ScreenConstants.USE_NEW_WINDOW) == ScreenConstants.USE_SAME_WINDOW)  // Use same window

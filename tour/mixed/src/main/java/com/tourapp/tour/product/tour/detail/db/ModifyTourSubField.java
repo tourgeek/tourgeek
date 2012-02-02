@@ -88,23 +88,23 @@ public class ModifyTourSubField extends ReferenceField
     {
         ScreenComponent sField = null;
         Record record = this.makeReferenceRecord();
-        int fsField = TourHeaderLine.kDescription;
+        int fsField = record.getFieldSeq(TourHeaderLine.DESCRIPTION);
         if (record instanceof TourHeaderAirHeader)
-            fsField = TourHeaderAirHeader.kAirlineDesc;
+            fsField = record.getFieldSeq(TourHeaderAirHeader.AIRLINE_DESC);
         if (record instanceof TourHeaderDetail)
         {
-            Record recProduct = ((ReferenceField)record.getField(TourHeaderDetail.kProductID)).getReferenceRecord();
+            Record recProduct = ((ReferenceField)record.getField(TourHeaderDetail.PRODUCT_ID)).getReferenceRecord();
             if (recProduct != null)
             {
                 fsField = record.getFieldCount();   // This will be the sequence of the new field
                 BaseField field = new StringField(record, "Description", 30, null, null);
                 field.setVirtual(true);     // Just being careful
-                record.getField(TourHeaderDetail.kProductID).addListener(new ReadSecondaryHandler(recProduct));
-                BaseField fldProductDesc = recProduct.getField(Product.kDescription);
+                record.getField(TourHeaderDetail.PRODUCT_ID).addListener(new ReadSecondaryHandler(recProduct));
+                BaseField fldProductDesc = recProduct.getField(Product.DESCRIPTION);
                 recProduct.addListener(new MoveOnValidHandler(field, fldProductDesc));
             }
             else
-                fsField = TourHeaderDetail.kDay;    // Never (just in case)
+                fsField = record.getFieldSeq(TourHeaderDetail.DAY);    // Never (just in case)
         }
         sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, fsField, true, false);
         for (int i = 0; ; i++)
@@ -132,18 +132,18 @@ public class ModifyTourSubField extends ReferenceField
                             RecordOwner recordOwner = this.getRecord(.findRecordOwner());
                             recTourHeaderOption = new TourHeaderOption(recordOwner);
                             recordOwner.removeRecord(recTourHeaderOption);
-                            recTourHeaderOption.getField(TourHeaderOption.kID).moveFieldToThis(recTourSub.getField(TourSub.kTourHeaderOptionID));
+                            recTourHeaderOption.getField(TourHeaderOption.ID).moveFieldToThis(recTourSub.getField(TourSub.TOUR_HEADER_OPTION_ID));
                             while (recTourHeaderOption.seek(null) == true)
                             {
-                                if (TourHeaderOption.TOUR.equals(recTourHeaderOption.getField(TourHeaderOption.kTourOrOption).toString()))
+                                if (TourHeaderOption.TOUR.equals(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION).toString()))
                                 {   // Finally made it to the tour.
                                     recTourHeader = new TourHeader(recordOwner);
                                     recordOwner.removeRecord(recTourHeader); // This is belong to the new option screen
-                                    recTourHeader.getField(TourHeader.kID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kTourOrOptionID));
+                                    recTourHeader.getField(TourHeader.ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID));
                                     boolean bSuccess = recTourHeader.seek(DBConstants.EQUALS);
                                     break;
                                 }
-                                recTourHeaderOption.getField(TourHeaderOption.kID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kTourOrOptionID));
+                                recTourHeaderOption.getField(TourHeaderOption.ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID));
                             }
                             if (recTourHeader != null)
                             {

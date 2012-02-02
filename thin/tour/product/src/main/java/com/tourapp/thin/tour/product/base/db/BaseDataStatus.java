@@ -16,6 +16,10 @@ public class BaseDataStatus extends BaseStatus
     implements BaseDataStatusModel
 {
 
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String ICON = ICON;
+
     public BaseDataStatus()
     {
         super();

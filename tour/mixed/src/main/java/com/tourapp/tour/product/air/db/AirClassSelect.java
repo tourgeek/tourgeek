@@ -67,7 +67,7 @@ public class AirClassSelect extends AirClassField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), AirClass.kDescriptionKey, AirClass.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), AirClass.DESCRIPTION_KEY, AirClass.DESCRIPTION, true, true);
     }
 
 }

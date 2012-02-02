@@ -66,9 +66,9 @@ public class ScanCity extends ScanData
     public void fixRecord(Record record)
     {
         super.fixRecord(record);
-        this.fixCapitalization(record.getField(City.kDescription));
-        this.fixCapitalization(record.getField(City.kTicketCityDesc));
-        record.getField(City.kCityType).setString(CityTypeField.AIRPORT);
+        this.fixCapitalization(record.getField(City.DESCRIPTION));
+        this.fixCapitalization(record.getField(City.TICKET_CITY_DESC));
+        record.getField(City.CITY_TYPE).setString(CityTypeField.AIRPORT);
     }
 
 }

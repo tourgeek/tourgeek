@@ -74,7 +74,7 @@ public class LandVariesField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), LandVaries.kDescriptionKey, LandVaries.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), LandVaries.DESCRIPTION_KEY, LandVaries.DESCRIPTION, true, true);
     }
 
 }

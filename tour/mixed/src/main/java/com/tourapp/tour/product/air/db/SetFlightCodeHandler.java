@@ -59,11 +59,11 @@ public class SetFlightCodeHandler extends FieldListener
     {
         String strProductDesc = DBConstants.BLANK;
         Record recAir = this.getOwner().getRecord();
-        Record recAirline = ((ReferenceField)recAir.getField(Air.kAirlineID)).getReference();
+        Record recAirline = ((ReferenceField)recAir.getField(Air.AIRLINE_ID)).getReference();
         if (recAirline != null)
-            strProductDesc += recAirline.getField(Airline.kAirlineCode).toString();
-        strProductDesc += recAir.getField(Air.kFlightNo).toString() + ' ';
-        recAir.getField(Air.kCode).setString(strProductDesc, bDisplayOption, iMoveMode);
+            strProductDesc += recAirline.getField(Airline.AIRLINE_CODE).toString();
+        strProductDesc += recAir.getField(Air.FLIGHT_NO).toString() + ' ';
+        recAir.getField(Air.CODE).setString(strProductDesc, bDisplayOption, iMoveMode);
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 

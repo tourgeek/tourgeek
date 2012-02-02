@@ -61,7 +61,7 @@ public class AccountDescConverter extends MultipleFieldConverter
     {
         int iIndex = -1;
         boolean bOldTranslation = this.setEnableTranslation(false);   // To avoid re-calling this method in getField()
-        if (((BaseField)this.getField()).getRecord().getField(FinStmtDetail.kAccountID).isNull())
+        if (((BaseField)this.getField()).getRecord().getField(FinStmtDetail.ACCOUNT_ID).isNull())
             iIndex = -1;  // No account ID - use this one
         else if (bSetData)
             iIndex = -1;      // On data input, set the fin stmt desc.

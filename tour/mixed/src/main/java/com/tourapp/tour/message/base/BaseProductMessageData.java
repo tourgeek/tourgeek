@@ -69,7 +69,7 @@ public class BaseProductMessageData extends MessageRecordDesc
         if ((RequestType.BOOKING_CANCEL.equalsIgnoreCase(requestType))
             || (RequestType.BOOKING_ADD.equalsIgnoreCase(requestType))
             || (RequestType.BOOKING_CHANGE.equalsIgnoreCase(requestType)))  // For now - Add rate and avail later (probably set up a finalization est)
-                if (!record.getField(BookingDetail.kApTrxID).isNull())
+                if (!record.getField(BookingDetail.AP_TRX_ID).isNull())
                     bSingleDetail = false;  // Multiple detail
         return bSingleDetail;
     }
@@ -82,7 +82,7 @@ public class BaseProductMessageData extends MessageRecordDesc
         int iErrorCode = super.getRawRecordData(record);
         Record recBookingDetail = (BookingDetail)record;
         if (this.get(BookingDetail.SOURCE_REFERENCE_NO) != null)
-            recBookingDetail.getField(BookingDetail.kRemoteReferenceNo).setString(this.get(BookingDetail.SOURCE_REFERENCE_NO).toString());
+            recBookingDetail.getField(BookingDetail.REMOTE_REFERENCE_NO).setString(this.get(BookingDetail.SOURCE_REFERENCE_NO).toString());
         return iErrorCode;
     }
     /**
@@ -95,7 +95,7 @@ public class BaseProductMessageData extends MessageRecordDesc
         int iErrorCode = super.putRawRecordData(record);
         
         Record recBookingDetail =  (Record)record;
-        this.put(BookingDetail.SOURCE_REFERENCE_NO, recBookingDetail.getField(BookingDetail.kID).toString());  // Reference for remote system
+        this.put(BookingDetail.SOURCE_REFERENCE_NO, recBookingDetail.getField(BookingDetail.ID).toString());  // Reference for remote system
         
         return iErrorCode;
     }
@@ -107,10 +107,10 @@ public class BaseProductMessageData extends MessageRecordDesc
     public Rec createSubDataRecord(Rec record)
     {
         BookingDetail recBookingDetail = new BookingDetail(((Record)record).findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
-        String strApTrxID = record.getField(BookingDetail.kApTrxID).getString();
+        String strApTrxID = record.getField(BookingDetail.AP_TRX_ID).getString();
         
-        recBookingDetail.setKeyArea(BookingDetail.kApTrxIDKey);
-        recBookingDetail.addListener(new StringSubFileFilter(strApTrxID, BookingDetail.kApTrxID, null, -1, null, -1));
+        recBookingDetail.setKeyArea(BookingDetail.AP_TRX_ID_KEY);
+        recBookingDetail.addListener(new StringSubFileFilter(strApTrxID, BookingDetail.AP_TRX_ID, null, null, null, null));
         return recBookingDetail;
     }
     /**
@@ -124,7 +124,7 @@ public class BaseProductMessageData extends MessageRecordDesc
         if (recBookingDetail.getListener(SubFileFilter.class) == null)
         {
             Booking recBooking = recBookingDetail.getBooking(false);    // Booking should already be current
-            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReferenceRecord();
+            Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReferenceRecord();
             recBookingDetail.addDetailBehaviors(recBooking, recTour);
         }
         return recBookingDetail;
@@ -140,8 +140,8 @@ public class BaseProductMessageData extends MessageRecordDesc
             BookingDetail recBookingDetail = (BookingDetail)record;
             if (this.get(BookingDetail.REMOTE_REFERENCE_NO) != null)
             {   // A remote reference is the ID of this item (I am remote)
-                recBookingDetail.getField(BookingDetail.kID).setString(this.get(BookingDetail.REMOTE_REFERENCE_NO).toString());
-                recBookingDetail.setKeyArea(BookingDetail.kIDKey);
+                recBookingDetail.getField(BookingDetail.ID).setString(this.get(BookingDetail.REMOTE_REFERENCE_NO).toString());
+                recBookingDetail.setKeyArea(BookingDetail.ID_KEY);
                 if (recBookingDetail.seek(null))
                 { // Good
                     recBookingDetail.edit();
@@ -162,7 +162,7 @@ public class BaseProductMessageData extends MessageRecordDesc
                     while (recBookingDetail.hasNext())
                     {
                         recBookingDetail.next();
-                        if (this.get(BookingDetail.SOURCE_REFERENCE_NO).equals(recBookingDetail.getField(BookingDetail.kRemoteReferenceNo).toString()))
+                        if (this.get(BookingDetail.SOURCE_REFERENCE_NO).equals(recBookingDetail.getField(BookingDetail.REMOTE_REFERENCE_NO).toString()))
                         {
                             recBookingDetail.edit();
                             break;
@@ -188,7 +188,7 @@ public class BaseProductMessageData extends MessageRecordDesc
             if (recBookingDetail.getEditMode() == DBConstants.EDIT_ADD)
             {
                 Booking recBooking = recBookingDetail.getBooking(false);    // Booking should already be current
-                Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReferenceRecord();
+                Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReferenceRecord();
                 recBookingDetail.initBookingDetailFields(recBooking, recTour, false);
             }
             return recBookingDetail;
@@ -234,36 +234,36 @@ public class BaseProductMessageData extends MessageRecordDesc
     public String getProductID(RecordOwner recordOwner, String strChainCode, String strProductCode)
     {
         Product recProduct = this.getProductRecord(recordOwner, true);
-        recProduct.setKeyArea(Product.kOperatorsCodeKey);
-        recProduct.getField(Product.kOperatorsCode).setString(strProductCode);
+        recProduct.setKeyArea(Product.OPERATORS_CODE_KEY);
+        recProduct.getField(Product.OPERATORS_CODE).setString(strProductCode);
         String strProductID = null;
         try {
             while (recProduct.seek(">="))
             {
-                if (!strProductCode.equalsIgnoreCase(recProduct.getField(Product.kOperatorsCode).toString()))
+                if (!strProductCode.equalsIgnoreCase(recProduct.getField(Product.OPERATORS_CODE).toString()))
                     break;
                 if ((strChainCode != null) && (strChainCode.length() > 0))
                 {
-                    Record recProductChain = ((ReferenceField)recProduct.getField(Product.kProductChainID)).getReference();
+                    Record recProductChain = ((ReferenceField)recProduct.getField(Product.PRODUCT_CHAIN_ID)).getReference();
                     if (recProductChain != null)
                         if ((recProductChain.getEditMode() == DBConstants.EDIT_CURRENT) || (recProductChain.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
                     {
-                        if (strChainCode.equalsIgnoreCase(recProductChain.getField(ProductChain.kCode).toString()))
-                            return recProduct.getField(Product.kIDKey).toString();  // Found!
+                        if (strChainCode.equalsIgnoreCase(recProductChain.getField(ProductChain.CODE).toString()))
+                            return recProduct.getField(Product.ID_KEY).toString();  // Found!
                     }
                 }
-                strProductID = recProduct.getField(Product.kIDKey).toString();  // Probably it.
+                strProductID = recProduct.getField(Product.ID_KEY).toString();  // Probably it.
             }
             if (strProductID != null)
                 return strProductID;
-            recProduct.setKeyArea(Product.kCodeKey);
-            recProduct.getField(Product.kCode).setString(strProductCode);
+            recProduct.setKeyArea(Product.CODE_KEY);
+            recProduct.getField(Product.CODE).setString(strProductCode);
             if (recProduct.seek(DBConstants.EQUALS))
-                return recProduct.getField(Product.kIDKey).toString();  // Found!
-            recProduct.setKeyArea(Product.kDescSortKey);
-            recProduct.getField(Product.kDescription).setString(strProductCode);
+                return recProduct.getField(Product.ID_KEY).toString();  // Found!
+            recProduct.setKeyArea(Product.DESC_SORT_KEY);
+            recProduct.getField(Product.DESCRIPTION).setString(strProductCode);
             if (recProduct.seek(DBConstants.EQUALS))
-                return recProduct.getField(Product.kIDKey).toString();  // Found!
+                return recProduct.getField(Product.ID_KEY).toString();  // Found!
         } catch (DBException e) {
             e.printStackTrace();
         }
@@ -279,14 +279,14 @@ public class BaseProductMessageData extends MessageRecordDesc
             if ((this.get(Product.CODE) != null) && (!DBConstants.BLANK.equals(this.get(Product.CODE))))
             {   // Use code if it is available
                 recProduct.addNew();
-                recProduct.getField(Product.kCode).setString((String)this.get(Product.CODE));
-                recProduct.setKeyArea(Product.kCodeKey);
+                recProduct.getField(Product.CODE).setString((String)this.get(Product.CODE));
+                recProduct.setKeyArea(Product.CODE_KEY);
                 boolean bSuccess = recProduct.seek(null);
                 if (bSuccess)
                     return bSuccess;
                 
-                recProduct.getField(Product.kDescription).setString((String)this.get(Product.CODE));
-                recProduct.setKeyArea(Product.kDescSortKey);
+                recProduct.getField(Product.DESCRIPTION).setString((String)this.get(Product.CODE));
+                recProduct.setKeyArea(Product.DESC_SORT_KEY);
                 bSuccess = recProduct.seek(null);
                 if (bSuccess)
                     return bSuccess;
@@ -303,8 +303,8 @@ public class BaseProductMessageData extends MessageRecordDesc
                     iProductID = intProductID.intValue();
                 if (iProductID == 0)
                     return false;
-                recProduct.getField(Product.kID).setValue(iProductID);
-                recProduct.setKeyArea(Product.kIDKey);
+                recProduct.getField(Product.ID).setValue(iProductID);
+                recProduct.setKeyArea(Product.ID_KEY);
                 return recProduct.seek(null);
             }
         } catch (DBException ex)    {

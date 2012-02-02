@@ -60,7 +60,7 @@ public class ProductSession extends TableModelSession
     public String getDescription() throws RemoteException
     {
         Product recProduct = (Product)this.setRecordCurrent();
-        return recProduct.getField(Product.kDescription).toString();
+        return recProduct.getField(Product.DESCRIPTION).toString();
     }
     /**
      * Get the ID of this object. For example, if object was an employee you might return 'EmployeeID=43332'.

@@ -31,9 +31,13 @@ public class TourEventScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String ACTION_CUTOFF_DATE = "ActionCutoffDate";
     public static final int kActionCutoffDate = kScreenRecordLastField + 1;
+    public static final String BOOKING_UPDATE = "BookingUpdate";
     public static final int kBookingUpdate = kActionCutoffDate + 1;
+    public static final String TOUR_UPDATE = "TourUpdate";
     public static final int kTourUpdate = kBookingUpdate + 1;
+    public static final String RUN_PROCESS_IN = "RunProcessIn";
     public static final int kRunProcessIn = kTourUpdate + 1;
     public static final int kTourEventScreenRecordLastField = kRunProcessIn;
     public static final int kTourEventScreenRecordFields = kRunProcessIn - DBConstants.MAIN_FIELD + 1;

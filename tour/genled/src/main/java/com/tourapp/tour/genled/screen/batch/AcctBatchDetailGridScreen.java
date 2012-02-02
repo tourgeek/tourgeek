@@ -98,9 +98,9 @@ public class AcctBatchDetailGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kID).addListener(new FieldReSelectHandler(this));
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).addListener(new SubCountHandler(this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kBalance), AcctBatchDetail.kAmount, false, true));
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).addListener(new BatchSequenceHandler(this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence), this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kNextSequence), this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kBalance)));
+        this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.ID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.BALANCE), AcctBatchDetail.AMOUNT, false, true));
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).addListener(new BatchSequenceHandler(this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE), this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.NEXT_SEQUENCE), this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.BALANCE)));
         this.getMainRecord().addListener(new AcctBatchValidateBeh(null));
     }
     /**
@@ -118,7 +118,7 @@ public class AcctBatchDetailGridScreen extends DetailGridScreen
         this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence).getComponent(0);
+        ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE).getComponent(0);
         sfSequence.setRequestFocusEnabled(false);
     }
     /**
@@ -156,7 +156,7 @@ public class AcctBatchDetailGridScreen extends DetailGridScreen
                 return false;
             }
             // Write an refresh the header first
-            Record recAcctBatch = this.getRecord(AcctBatch.kAcctBatchFile);
+            Record recAcctBatch = this.getRecord(AcctBatch.ACCT_BATCH_FILE);
             if ((recAcctBatch.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                 && (recAcctBatch.isModified()))
             {       // Update and refresh, so the detail has the correct info

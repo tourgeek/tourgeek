@@ -223,7 +223,7 @@ public class BookingPax extends VirtualRecord
         Converter converter = null;
         
         String strCommand = Utility.addURLParam(null, DBParams.COMMAND, MenuConstants.LOOKUP);
-        ReferenceField fldProfileTypeID = (ReferenceField)recProfile.getField(Profile.kProfileTypeID);
+        ReferenceField fldProfileTypeID = (ReferenceField)recProfile.getField(Profile.PROFILE_TYPE_ID);
         String strFieldName = fldProfileTypeID.getFieldName();
         String strValue = Integer.toString(fldProfileTypeID.getIDFromCode("Contact"));
         if (strValue != null)
@@ -240,22 +240,22 @@ public class BookingPax extends VirtualRecord
     public void addToolbarFields(ToolScreen toolbar, Record recBooking)
     {
         Converter converter = null;
-        converter = recBooking.getField(Booking.kPax);
+        converter = recBooking.getField(Booking.PAX);
         ScreenField sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = recBooking.getField(Booking.kSinglePax);
+        converter = recBooking.getField(Booking.SINGLE_PAX);
         sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = new RoomConverter(recBooking.getField(Booking.kDoublePax), (short)2);
+        converter = new RoomConverter(recBooking.getField(Booking.DOUBLE_PAX), (short)2);
         sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = new RoomConverter(recBooking.getField(Booking.kTriplePax), (short)3);
+        converter = new RoomConverter(recBooking.getField(Booking.TRIPLE_PAX), (short)3);
         sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = new RoomConverter(recBooking.getField(Booking.kQuadPax), (short)4);
+        converter = new RoomConverter(recBooking.getField(Booking.QUAD_PAX), (short)4);
         sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
-        converter = recBooking.getField(Booking.kChildren);
+        converter = recBooking.getField(Booking.CHILDREN);
         sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
     }
@@ -264,41 +264,41 @@ public class BookingPax extends VirtualRecord
      */
     public void addBookingBehaviors(RecordOwner recordOwner)
     {
-        Record recBookingPax = (Record)recordOwner.getRecord(BookingPax.kBookingPaxFile);
-        Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
+        Record recBookingPax = (Record)recordOwner.getRecord(BookingPax.BOOKING_PAX_FILE);
+        Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
         
         recBookingPax.addListener(new SubFileFilter(recBooking, true));
         
-        recBookingPax.getField(BookingPax.kPaxCategoryID).addListener(new InitFieldHandler(recordOwner.getRecord(BookingControl.kBookingControlFile).getField(BookingControl.kPaxCategoryID)));
-        recBookingPax.getField(BookingPax.kPaxCategoryID).addListener(new InitOnceFieldHandler(null));
+        recBookingPax.getField(BookingPax.PAX_CATEGORY_ID).addListener(new InitFieldHandler(recordOwner.getRecord(BookingControl.BOOKING_CONTROL_FILE).getField(BookingControl.PAX_CATEGORY_ID)));
+        recBookingPax.getField(BookingPax.PAX_CATEGORY_ID).addListener(new InitOnceFieldHandler(null));
         
         if (recBooking.getEditMode() == DBConstants.EDIT_ADD)
-            if (!recBooking.getField(Booking.kPax).isModified())
-            if (recBooking.getField(Booking.kPax).getValue() != 0)
+            if (!recBooking.getField(Booking.PAX).isModified())
+            if (recBooking.getField(Booking.PAX).getValue() != 0)
         {   // These are going to be initialized anyway, so set them to 0 so change record is not tripped.
-            boolean[] rgbEnabled = recBooking.getField(Booking.kPax).setEnableListeners(false);
-            recBooking.getField(Booking.kPax).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-            recBooking.getField(Booking.kPax).setModified(false);
-            recBooking.getField(Booking.kPax).setEnableListeners(rgbEnabled);
-            rgbEnabled = recBooking.getField(Booking.kDoublePax).setEnableListeners(false);
-            recBooking.getField(Booking.kDoublePax).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-            recBooking.getField(Booking.kDoublePax).setModified(false);
-            recBooking.getField(Booking.kDoublePax).setEnableListeners(rgbEnabled);
-            rgbEnabled = recBooking.getField(Booking.kSinglePax).setEnableListeners(false);
-            recBooking.getField(Booking.kSinglePax).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-            recBooking.getField(Booking.kSinglePax).setModified(false);
-            recBooking.getField(Booking.kSinglePax).setEnableListeners(rgbEnabled);
+            boolean[] rgbEnabled = recBooking.getField(Booking.PAX).setEnableListeners(false);
+            recBooking.getField(Booking.PAX).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            recBooking.getField(Booking.PAX).setModified(false);
+            recBooking.getField(Booking.PAX).setEnableListeners(rgbEnabled);
+            rgbEnabled = recBooking.getField(Booking.DOUBLE_PAX).setEnableListeners(false);
+            recBooking.getField(Booking.DOUBLE_PAX).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            recBooking.getField(Booking.DOUBLE_PAX).setModified(false);
+            recBooking.getField(Booking.DOUBLE_PAX).setEnableListeners(rgbEnabled);
+            rgbEnabled = recBooking.getField(Booking.SINGLE_PAX).setEnableListeners(false);
+            recBooking.getField(Booking.SINGLE_PAX).setValue(0, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            recBooking.getField(Booking.SINGLE_PAX).setModified(false);
+            recBooking.getField(Booking.SINGLE_PAX).setEnableListeners(rgbEnabled);
         }
         
-        recBookingPax.addListener(new PaxSelectHandler(recBooking, (Record)recordOwner.getRecord(PaxCategory.kPaxCategoryFile)));
+        recBookingPax.addListener(new PaxSelectHandler(recBooking, (Record)recordOwner.getRecord(PaxCategory.PAX_CATEGORY_FILE)));
         
-        recBookingPax.getField(BookingPax.kSequence).addListener(new InitFieldHandler(recBooking.getField(Booking.kPax)));
+        recBookingPax.getField(BookingPax.SEQUENCE).addListener(new InitFieldHandler(recBooking.getField(Booking.PAX)));
         
         if (recordOwner instanceof BaseScreen)
         {
-            Profile recProfile = (Profile)recordOwner.getRecord(Profile.kProfileFile);
-            Profile recProfileDetail = (Profile)((ReferenceField)this.getField(BookingPax.kProfileID)).getReferenceRecord();
-            FileListener selectListener = new PaxDetailSelectHandler((BookingPax)recordOwner.getRecord(BookingPax.kBookingPaxFile), recProfileDetail);
+            Profile recProfile = (Profile)recordOwner.getRecord(Profile.PROFILE_FILE);
+            Profile recProfileDetail = (Profile)((ReferenceField)this.getField(BookingPax.PROFILE_ID)).getReferenceRecord();
+            FileListener selectListener = new PaxDetailSelectHandler((BookingPax)recordOwner.getRecord(BookingPax.BOOKING_PAX_FILE), recProfileDetail);
             recProfileDetail.addListener(selectListener);
             ((Record)recordOwner.getScreenRecord()).addListener(new FileRemoveBOnCloseHandler(selectListener));
             
@@ -307,21 +307,21 @@ public class BookingPax extends VirtualRecord
             
             if (recordOwner instanceof Screen)
             {
-                FieldListener fieldListener = new CopyFieldHandler(((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.kLastLastName), null);
+                FieldListener fieldListener = new CopyFieldHandler(((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.LAST_LAST_NAME), null);
                 fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-                recBookingPax.getField(BookingPax.kSurName).addListener(fieldListener);
+                recBookingPax.getField(BookingPax.SUR_NAME).addListener(fieldListener);
                 
-                fieldListener = new MoveOnChangeHandler(recBookingPax.getField(BookingPax.kSurName), ((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.kLastLastName), false, false);
+                fieldListener = new MoveOnChangeHandler(recBookingPax.getField(BookingPax.SUR_NAME), ((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.LAST_LAST_NAME), false, false);
                 fieldListener.setRespondsToMode(DBConstants.SCREEN_MOVE, false);
                 fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, true);
                 fieldListener.setRespondsToMode(DBConstants.READ_MOVE, false);
-                recBookingPax.getField(BookingPax.kSurName).addListener(fieldListener);
+                recBookingPax.getField(BookingPax.SUR_NAME).addListener(fieldListener);
             }
                     
             if (recordOwner instanceof GridScreen)
             {
                 FieldListener reSelect = new FieldReSelectHandler((GridScreen)recordOwner);
-                recBooking.getField(Booking.kID).addListener(reSelect);
+                recBooking.getField(Booking.ID).addListener(reSelect);
                 this.addListener(new FileRemoveBOnCloseHandler(reSelect));
             }
         }
@@ -333,11 +333,11 @@ public class BookingPax extends VirtualRecord
     {
         if ((recProfile.getEditMode() != Constants.EDIT_IN_PROGRESS) && (recProfile.getEditMode() != Constants.EDIT_CURRENT))
             return;
-        BaseField fldProfileID = this.getField(BookingPax.kProfileID);
+        BaseField fldProfileID = this.getField(BookingPax.PROFILE_ID);
         boolean[] rgbEnabled = fldProfileID.setEnableListeners(false);
-        FileListener subFileBeh = new SubFileFilter(recProfile.getField(Profile.kID), Profile.kMainProfileID, null, -1, null, -1);
+        FileListener subFileBeh = new SubFileFilter(recProfile.getField(Profile.ID), Profile.MAIN_PROFILE_ID, null, null, null, null);
         recProfileDetail.addListener(subFileBeh);
-        recProfileDetail.setKeyArea(Profile.kMainProfileIDKey);
+        recProfileDetail.setKeyArea(Profile.MAIN_PROFILE_ID_KEY);
         boolean bMainRecordAdded = false;
         try   {
             recProfileDetail.close();
@@ -362,7 +362,7 @@ public class BookingPax extends VirtualRecord
         } finally { // Set it back
             fldProfileID.setEnableListeners(rgbEnabled);
             recProfileDetail.removeListener(subFileBeh, true);
-            recProfileDetail.setKeyArea(Profile.kIDKey);
+            recProfileDetail.setKeyArea(Profile.ID_KEY);
         }
     }
     /**
@@ -370,12 +370,12 @@ public class BookingPax extends VirtualRecord
      */
     public void movePaPaxDetail(Record recProfile)
     {
-        this.getField(BookingPax.kProfileID).moveFieldToThis(recProfile.getField(Profile.kID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingPax.kNamePrefix).moveFieldToThis(recProfile.getField(Profile.kNamePrefix), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingPax.kFirstName).moveFieldToThis(recProfile.getField(Profile.kNameFirst), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingPax.kMiddleName).moveFieldToThis(recProfile.getField(Profile.kNameMiddle), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingPax.kSurName).moveFieldToThis(recProfile.getField(Profile.kNameSur), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getField(BookingPax.kSmoker).moveFieldToThis(recProfile.getField(Profile.kSmoker), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingPax.PROFILE_ID).moveFieldToThis(recProfile.getField(Profile.ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingPax.NAME_PREFIX).moveFieldToThis(recProfile.getField(Profile.NAME_PREFIX), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingPax.FIRST_NAME).moveFieldToThis(recProfile.getField(Profile.NAME_FIRST), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingPax.MIDDLE_NAME).moveFieldToThis(recProfile.getField(Profile.NAME_MIDDLE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingPax.SUR_NAME).moveFieldToThis(recProfile.getField(Profile.NAME_SUR), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(BookingPax.SMOKER).moveFieldToThis(recProfile.getField(Profile.SMOKER), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
     }
     /**
      * Add these booking passengers to the profile.
@@ -396,24 +396,24 @@ public class BookingPax extends VirtualRecord
                 recBookingPax = (Record)recBookingPax.getTable().get(i);
                 if (recBookingPax == null)
                     break;
-                if (!recBookingPax.getField(BookingPax.kProfileID).isNull())
+                if (!recBookingPax.getField(BookingPax.PROFILE_ID).isNull())
                 {
                     if (bookmarkMain == null)
                     {
-                        recProfile = ((ReferenceField)recBookingPax.getField(BookingPax.kProfileID)).getReference();
+                        recProfile = ((ReferenceField)recBookingPax.getField(BookingPax.PROFILE_ID)).getReference();
                         if (recProfile != null)
-                            bookmarkMain = recProfile.getField(Profile.kMainProfileID).getData();
+                            bookmarkMain = recProfile.getField(Profile.MAIN_PROFILE_ID).getData();
                     }
                     continue;
                 }
         
                 recProfile.addNew();
-                recProfile.getField(Profile.kNamePrefix).moveFieldToThis(recBookingPax.getField(BookingPax.kNamePrefix));
-                recProfile.getField(Profile.kNameFirst).moveFieldToThis(recBookingPax.getField(BookingPax.kFirstName));
-                recProfile.getField(Profile.kNameMiddle).moveFieldToThis(recBookingPax.getField(BookingPax.kMiddleName));
-                recProfile.getField(Profile.kNameSur).moveFieldToThis(recBookingPax.getField(BookingPax.kSurName));
-                recProfile.getField(Profile.kSmoker).moveFieldToThis(recBookingPax.getField(BookingPax.kSmoker));
-                recProfile.getField(Profile.kMainProfileID).setData(bookmarkMain);
+                recProfile.getField(Profile.NAME_PREFIX).moveFieldToThis(recBookingPax.getField(BookingPax.NAME_PREFIX));
+                recProfile.getField(Profile.NAME_FIRST).moveFieldToThis(recBookingPax.getField(BookingPax.FIRST_NAME));
+                recProfile.getField(Profile.NAME_MIDDLE).moveFieldToThis(recBookingPax.getField(BookingPax.MIDDLE_NAME));
+                recProfile.getField(Profile.NAME_SUR).moveFieldToThis(recBookingPax.getField(BookingPax.SUR_NAME));
+                recProfile.getField(Profile.SMOKER).moveFieldToThis(recBookingPax.getField(BookingPax.SMOKER));
+                recProfile.getField(Profile.MAIN_PROFILE_ID).setData(bookmarkMain);
                 recProfile.add();
         
                 Object bookmark = recProfile.getLastModified(DBConstants.BOOKMARK_HANDLE);
@@ -423,13 +423,13 @@ public class BookingPax extends VirtualRecord
                     if (recProfile.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE) != null)    // always
                     {
                         recProfile.edit();
-                        recProfile.getField(Profile.kMainProfileID).setData(bookmarkMain);
+                        recProfile.getField(Profile.MAIN_PROFILE_ID).setData(bookmarkMain);
                         recProfile.set();
                     }
                 }
         
                 recBookingPax.edit();
-                recBookingPax.getField(BookingPax.kProfileID).setData(bookmark);
+                recBookingPax.getField(BookingPax.PROFILE_ID).setData(bookmark);
                 recBookingPax.set();
             }
             if (bookmarkMain != null) // Return the main profile entry

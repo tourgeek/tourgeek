@@ -101,10 +101,10 @@ public class LandPricingScreen extends ProductPricingScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(LandPricing.kRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kLandRateID)));
-        this.getMainRecord().getField(LandPricing.kClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kLandClassID)));
-        this.getMainRecord().getField(LandPricing.kLandVariesID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kVariesOn)));
-        this.getMainRecord().getField(LandPricing.kProductTermsID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kProductTermsID)));
+        this.getMainRecord().getField(LandPricing.RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.LAND_RATE_ID)));
+        this.getMainRecord().getField(LandPricing.CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.LAND_CLASS_ID)));
+        this.getMainRecord().getField(LandPricing.LAND_VARIES_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.VARIES_ON)));
+        this.getMainRecord().getField(LandPricing.PRODUCT_TERMS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.PRODUCT_TERMS_ID)));
     }
     /**
      * If there is a header record, return it, otherwise, return the main record.
@@ -114,15 +114,15 @@ public class LandPricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Land.kLandFile);
+        return this.getRecord(Land.LAND_FILE);
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(LandPricing.kLandPricingFile).getField(LandPricing.kPaxCategoryID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(LandPricing.kLandPricingFile).getField(LandPricing.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(LandPricing.kLandPricingFile).getField(LandPricing.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -155,7 +155,7 @@ public class LandPricingScreen extends ProductPricingScreen
         if ((iDocMode == ScreenConstants.DISPLAY_MODE) || (iDocMode == ScreenConstants.SELECT_MODE))
             if (recordMain == null)
         {
-            recordMain = this.getRecord(Land.kLandFile);
+            recordMain = this.getRecord(Land.LAND_FILE);
             iDocMode = Land.PRICING_GRID_SCREEN;
         }
         return super.onForm(recordMain, iDocMode, bReadCurrentRecord, iCommandOptions, properties);

@@ -61,13 +61,13 @@ public class McoSubmitCalcNetBeh extends FileListener
         super.doValidRecord(bDisplayOption);
         double dNet = 0;
         Record recMco = this.getOwner();
-        double dGross = recMco.getField(Mco.kGross).getValue();
-        double dCommission = recMco.getField(Mco.kCommAmt).getValue();
-        double dTaxes = recMco.getField(Mco.kTaxAmt).getValue();
-        double dServiceChargePer = recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.kServiceCharge).getValue();
+        double dGross = recMco.getField(Mco.GROSS).getValue();
+        double dCommission = recMco.getField(Mco.COMM_AMT).getValue();
+        double dTaxes = recMco.getField(Mco.TAX_AMT).getValue();
+        double dServiceChargePer = recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.SERVICE_CHARGE).getValue();
         double dServiceCharge = (Math.floor(dGross * dServiceChargePer * 100.00 + 0.5)) / 100.00;
         dNet = dGross - dCommission - dTaxes - dServiceCharge;
-        recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.kNet).setValue(dNet);
+        recMco.getRecordOwner().getScreenRecord().getField(McoScreenRecord.NET).setValue(dNet);
     }
 
 }

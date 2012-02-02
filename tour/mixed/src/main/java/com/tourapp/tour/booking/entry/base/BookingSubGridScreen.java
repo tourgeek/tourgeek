@@ -97,7 +97,7 @@ public class BookingSubGridScreen extends GridScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Booking.kBookingFile);
+        return this.getRecord(Booking.BOOKING_FILE);
     }
     /**
      * Read the current file in the header record given the current detail record.

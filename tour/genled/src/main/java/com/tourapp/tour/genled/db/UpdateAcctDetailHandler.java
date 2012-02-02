@@ -156,8 +156,8 @@ public class UpdateAcctDetailHandler extends FileListener
             int iTrxGroupID = -1;
             if (this.getOwner() instanceof Trx)   // Always
                 iTrxGroupID = ((Trx)this.getOwner()).getTrxGroupID();
-            m_recTransactionType.setKeyArea(TransactionType.kTrxGroupIDKey);
-            FileListener behSub = new StringSubFileFilter(Integer.toString(iTrxGroupID), TransactionType.kTrxGroupID, null, -1, null, -1);
+            m_recTransactionType.setKeyArea(TransactionType.TRX_GROUP_ID_KEY);
+            FileListener behSub = new StringSubFileFilter(Integer.toString(iTrxGroupID), TransactionType.TRX_GROUP_ID, null, null, null, null);
             m_recTransactionType.addListener(behSub);
             m_recTransactionType.close();
             try   {
@@ -207,19 +207,19 @@ public class UpdateAcctDetailHandler extends FileListener
      */
     public void modifyDetailTrx(TransactionType recTransactionType, AcctDetailDist recAcctDetailDist, AcctDetail recAcctDetail, Period recPeriod)
     {
-        recAcctDetailDist.setKeyArea(AcctDetailDist.kTrxDescIDKey);
-        BaseField fldTrxDescID = recTransactionType.getField(TransactionType.kTrxDescID);
-        BaseField fldTrxID = this.getOwner().getField(Trx.kID);
-        BaseField fldTrxTypeID = recTransactionType.getField(TransactionType.kID);
+        recAcctDetailDist.setKeyArea(AcctDetailDist.TRX_DESC_ID_KEY);
+        BaseField fldTrxDescID = recTransactionType.getField(TransactionType.TRX_DESC_ID);
+        BaseField fldTrxID = this.getOwner().getField(Trx.ID);
+        BaseField fldTrxTypeID = recTransactionType.getField(TransactionType.ID);
         FileListener listener = null;
-        recAcctDetailDist.addListener(listener = new SubFileFilter(fldTrxDescID, AcctDetailDist.kTrxDescID, fldTrxID, AcctDetailDist.kTrxID, fldTrxTypeID, AcctDetailDist.kTrxTypeID));
+        recAcctDetailDist.addListener(listener = new SubFileFilter(fldTrxDescID, AcctDetailDist.TRX_DESC_ID, fldTrxID, AcctDetailDist.TRX_ID, fldTrxTypeID, AcctDetailDist.TRX_TYPE_ID));
         recAcctDetailDist.close();
         double dCurrentTotal = 0.00;
         try {
             while (recAcctDetailDist.hasNext())
             {
                 recAcctDetailDist.next();
-                dCurrentTotal = dCurrentTotal + recAcctDetailDist.getField(AcctDetailDist.kAmount).getValue();
+                dCurrentTotal = dCurrentTotal + recAcctDetailDist.getField(AcctDetailDist.AMOUNT).getValue();
             }
         } catch (DBException ex) {
             ex.printStackTrace();
@@ -250,7 +250,7 @@ public class UpdateAcctDetailHandler extends FileListener
     public TrxStatus getTrxStatus()
     {
         RecordOwner recordOwner = this.getOwner().findRecordOwner();
-        TrxStatus recTrxStatus = (TrxStatus)recordOwner.getRecord(TrxStatus.kTrxStatusFile);
+        TrxStatus recTrxStatus = (TrxStatus)recordOwner.getRecord(TrxStatus.TRX_STATUS_FILE);
         if (recTrxStatus == null)
         {
             recTrxStatus = new TrxStatus(recordOwner);  // Rarely, but if it doesn't exist in the screen, add it!

@@ -77,7 +77,7 @@ public class HotelRateAvailResponseMessageData extends HotelRateResponseMessageD
         {
             HotelAvailabilityResponse response = new HotelAvailabilityResponse(this.getMessage(), null);
             iInfoStatus = response.getRawRecordData(record);        
-            int iFieldSeq = BookingDetail.kInventoryStatusID;
+            String iFieldSeq = BookingDetail.INVENTORY_STATUS_ID;
             recBookingHotel.getField(iFieldSeq).setValue(iInfoStatus);   // Usually VALID
         }
         

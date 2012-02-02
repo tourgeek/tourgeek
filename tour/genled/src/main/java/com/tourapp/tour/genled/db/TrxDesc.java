@@ -206,13 +206,13 @@ public class TrxDesc extends VirtualRecord
         TrxSystem recTrxSystem = new TrxSystem(this.findRecordOwner());
         // TODO - Move the SystemCode to this file.
         try {
-            recTrxSystem.setKeyArea(TrxSystem.kSystemCodeKey);
-            recTrxSystem.getField(TrxSystem.kSystemCode).setString(strSystemCode);
+            recTrxSystem.setKeyArea(TrxSystem.SYSTEM_CODE_KEY);
+            recTrxSystem.getField(TrxSystem.SYSTEM_CODE).setString(strSystemCode);
             if (!recTrxSystem.seek("="))
                 return null;    // System code not found;
-            this.setKeyArea(TrxDesc.kTrxSystemIDKey);
-            this.getField(TrxDesc.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
-            this.getField(TrxDesc.kDescCode).setString(strDescCode);
+            this.setKeyArea(TrxDesc.TRX_SYSTEM_ID_KEY);
+            this.getField(TrxDesc.TRX_SYSTEM_ID).moveFieldToThis(recTrxSystem.getField(TrxSystem.ID));
+            this.getField(TrxDesc.DESC_CODE).setString(strDescCode);
             if (!this.seek("="))
                 return null;
         } catch (DBException ex)    {
@@ -227,7 +227,7 @@ public class TrxDesc extends VirtualRecord
      */
     public Record makeSourceRecord(RecordOwner recordOwner)
     {
-        String strClassName = this.getField(TrxDesc.kSourceFile).toString();
+        String strClassName = this.getField(TrxDesc.SOURCE_FILE).toString();
         return Record.makeRecordFromClassName(strClassName, recordOwner);
     }
     /**

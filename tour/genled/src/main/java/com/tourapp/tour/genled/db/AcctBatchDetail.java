@@ -184,31 +184,31 @@ public class AcctBatchDetail extends VirtualRecord
      */
     public int onAutoDist(Record recAccount)
     {
-        if (!recAccount.getField(Account.kAutoDistID).isNull())
+        if (!recAccount.getField(Account.AUTO_DIST_ID).isNull())
         {
             try   {
                 Record recAcctBatchDetail = (Record)this.clone(true);
                 AutoDist recAutoDist = new AutoDist(this.findRecordOwner());
-                ((ReferenceField)recAccount.getField(Account.kAutoDistID)).setReferenceRecord(recAutoDist);
-                Record record = ((ReferenceField)recAccount.getField(Account.kAutoDistID)).getReference();
+                ((ReferenceField)recAccount.getField(Account.AUTO_DIST_ID)).setReferenceRecord(recAutoDist);
+                Record record = ((ReferenceField)recAccount.getField(Account.AUTO_DIST_ID)).getReference();
                 if (record == null)
                     return DBConstants.NORMAL_RETURN;
                 AutoDistDetail recAutoDistDetail = new AutoDistDetail(this.getRecordOwner());
                 recAutoDistDetail.addListener(new SubFileFilter(recAutoDist));
-                double dAmount = this.getField(AcctBatchDetail.kAmount).getValue();
+                double dAmount = this.getField(AcctBatchDetail.AMOUNT).getValue();
                 double dBalance = dAmount;
                 double dPercentTotal = 0;
                 while (recAutoDistDetail.hasNext())
                 {
                     recAutoDistDetail.next();
                     recAcctBatchDetail.addNew();
-                    for (int i = DBConstants.MAIN_FIELD; i < AcctBatchDetail.kAcctBatchDetailFields; i++)
+                    for (int i = DBConstants.MAIN_FIELD; i < recAcctBatchDetail.getFieldCount(); i++)
                     {
                         recAcctBatchDetail.getField(i).moveFieldToThis(this.getField(i));
                     }
-                    recAcctBatchDetail.getField(AcctBatchDetail.kAccountID).moveFieldToThis(recAutoDistDetail.getField(AutoDistDetail.kDistAccountID));
-                    recAcctBatchDetail.getField(AcctBatchDetail.kAutoDist).setState(true);
-                    double dPercent = recAutoDistDetail.getField(AutoDistDetail.kDistPercent).getValue();
+                    recAcctBatchDetail.getField(AcctBatchDetail.ACCOUNT_ID).moveFieldToThis(recAutoDistDetail.getField(AutoDistDetail.DIST_ACCOUNT_ID));
+                    recAcctBatchDetail.getField(AcctBatchDetail.AUTO_DIST).setState(true);
+                    double dPercent = recAutoDistDetail.getField(AutoDistDetail.DIST_PERCENT).getValue();
                     dPercentTotal += dPercent;
                     double dValue = Math.floor(-dAmount * dPercent * 100 + 0.5) / 100;
                     dBalance = Math.floor((dValue + dBalance) * 100 + 0.5) / 100;
@@ -216,7 +216,7 @@ public class AcctBatchDetail extends VirtualRecord
                     { // If this is the last one, make sure the distribution equals 0. (alows for 33.33% x 3 = 100%)
                         dValue = dValue - dBalance;     // Make sure balance = 0;
                     }
-                    recAcctBatchDetail.getField(AcctBatchDetail.kAmount).setValue(dValue);
+                    recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).setValue(dValue);
                     recAcctBatchDetail.add();   // Add the counter-balance entry
                 }
                 recAcctBatchDetail.free();
@@ -238,15 +238,15 @@ public class AcctBatchDetail extends VirtualRecord
      */
     public int onCounterBalance(Record recAccount)
     {
-        if (recAccount.getField(Account.kCounterAccountID).getState())
+        if (recAccount.getField(Account.COUNTER_ACCOUNT_ID).getState())
         {
             try   {
                 Record recAcctBatchDetail = (Record)this.clone(true);
                 recAcctBatchDetail.addNew();
                 recAcctBatchDetail.moveFields(this, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false);
-                recAcctBatchDetail.getField(AcctBatchDetail.kAccountID).moveFieldToThis(recAccount.getField(Account.kCounterAccountID));
-                recAcctBatchDetail.getField(AcctBatchDetail.kAmount).setValue(-this.getField(AcctBatchDetail.kAmount).getValue());
-                recAcctBatchDetail.getField(AcctBatchDetail.kCounterBalance).setState(true);
+                recAcctBatchDetail.getField(AcctBatchDetail.ACCOUNT_ID).moveFieldToThis(recAccount.getField(Account.COUNTER_ACCOUNT_ID));
+                recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).setValue(-this.getField(AcctBatchDetail.AMOUNT).getValue());
+                recAcctBatchDetail.getField(AcctBatchDetail.COUNTER_BALANCE).setState(true);
                 recAcctBatchDetail.add();   // Add the counter-balance entry
                 recAcctBatchDetail.free();
                 recAcctBatchDetail = null;
@@ -268,7 +268,7 @@ public class AcctBatchDetail extends VirtualRecord
         RecordOwner screen = this.getRecordOwner();
         if (screen == null)
             return false;
-        int iSequence = (int)this.getField(AcctBatchDetail.kSequence).getValue();
+        int iSequence = (int)this.getField(AcctBatchDetail.SEQUENCE).getValue();
         if (this.isModified())
         {
             try {
@@ -285,10 +285,10 @@ public class AcctBatchDetail extends VirtualRecord
         }
         else if (this.getEditMode() != Constants.EDIT_CURRENT)
             return false;
-        Record recAcctBatch = (Record)screen.getRecord(AcctBatch.kAcctBatchFile);
+        Record recAcctBatch = (Record)screen.getRecord(AcctBatch.ACCT_BATCH_FILE);
         if (recAcctBatch == null)
             return false;
-        if (recAcctBatch.getField(AcctBatch.kBalance).getValue() != 0.00)
+        if (recAcctBatch.getField(AcctBatch.BALANCE).getValue() != 0.00)
         {
             String strError = "Batch must be balanced";
             ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strError);
@@ -297,26 +297,26 @@ public class AcctBatchDetail extends VirtualRecord
         }
         
         try   {
-            BaseField fldTrxSeq = (BaseField)this.getField(AcctBatchDetail.kSequence).clone();
+            BaseField fldTrxSeq = (BaseField)this.getField(AcctBatchDetail.SEQUENCE).clone();
             fldTrxSeq.setValue(iSequence);
             Record recAcctBatchDetail = (Record)this.clone();
             if (recAcctBatchDetail == null)
                 return false;
             Record recAcctBatchDetailOut = (Record)this.clone(true);
-            recAcctBatchDetail.setKeyArea(AcctBatchDetail.kAcctBatchIDKey);
+            recAcctBatchDetail.setKeyArea(AcctBatchDetail.ACCT_BATCH_ID_KEY);
             while (recAcctBatchDetail.getListener() != null)
             {
                 recAcctBatchDetail.removeListener(recAcctBatchDetail.getListener(), true);
             }
             recAcctBatchDetail.addNew();
-            FileListener listener = new SubFileFilter(recAcctBatch.getField(AcctBatch.kID), AcctBatchDetail.kAcctBatchID, fldTrxSeq, AcctBatchDetail.kSequence, null, -1);
+            FileListener listener = new SubFileFilter(recAcctBatch.getField(AcctBatch.ID), AcctBatchDetail.ACCT_BATCH_ID, fldTrxSeq, AcctBatchDetail.SEQUENCE, null, null);
             recAcctBatchDetail.addListener(listener);
             recAcctBatchDetail.close();
             double dBalance = 0;
             while (recAcctBatchDetail.hasNext())
             {
                 recAcctBatchDetail.next();
-                dBalance += recAcctBatchDetail.getField(AcctBatchDetail.kAmount).getValue();
+                dBalance += recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).getValue();
             }
             if (dBalance != 0)
             {
@@ -332,15 +332,15 @@ public class AcctBatchDetail extends VirtualRecord
                 while (recAcctBatchDetail.hasNext())
                 {
                     recAcctBatchDetail.next();
-                    if (recAcctBatchDetail.getField(AcctBatchDetail.kAutoReversal).getState())
+                    if (recAcctBatchDetail.getField(AcctBatchDetail.AUTO_REVERSAL).getState())
                         continue;   // Don't re-add this
                     recAcctBatchDetail.edit();
-                    recAcctBatchDetail.getField(AcctBatchDetail.kAutoAccrual).setState(true);
+                    recAcctBatchDetail.getField(AcctBatchDetail.AUTO_ACCRUAL).setState(true);
                     recAcctBatchDetailOut.addNew();
                     recAcctBatchDetailOut.moveFields(recAcctBatchDetail, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false);
-                    recAcctBatchDetailOut.getField(AcctBatchDetail.kSequence).moveFieldToThis(recAcctBatch.getField(AcctBatch.kNextSequence));
-                    recAcctBatchDetailOut.getField(AcctBatchDetail.kAmount).setValue(-recAcctBatchDetail.getField(AcctBatchDetail.kAmount).getValue());
-                    recAcctBatchDetailOut.getField(AcctBatchDetail.kAutoReversal).setState(true);
+                    recAcctBatchDetailOut.getField(AcctBatchDetail.SEQUENCE).moveFieldToThis(recAcctBatch.getField(AcctBatch.NEXT_SEQUENCE));
+                    recAcctBatchDetailOut.getField(AcctBatchDetail.AMOUNT).setValue(-recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).getValue());
+                    recAcctBatchDetailOut.getField(AcctBatchDetail.AUTO_REVERSAL).setState(true);
                     recAcctBatchDetailOut.add();     // Add the counter-balance entry
                     recAcctBatchDetail.set();
                 }

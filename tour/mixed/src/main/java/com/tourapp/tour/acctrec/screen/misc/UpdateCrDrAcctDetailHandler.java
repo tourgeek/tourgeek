@@ -62,9 +62,9 @@ public class UpdateCrDrAcctDetailHandler extends UpdateArTrxAcctDetailHandler
      */
     public ReferenceField getCrAccount()
     {
-        ReferenceField fldCrAccount = (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(CrDrScreenRecord.kCounterAccountID);
+        ReferenceField fldCrAccount = (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(CrDrScreenRecord.COUNTER_ACCOUNT_ID);
         if (fldCrAccount.isNull())
-            fldCrAccount = (ReferenceField)this.getOwner().getRecordOwner().getRecord(ArControl.kArControlFile).getField(ArControl.kCreditDebitAccountID);
+            fldCrAccount = (ReferenceField)this.getOwner().getRecordOwner().getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.CREDIT_DEBIT_ACCOUNT_ID);
         return fldCrAccount;
     }
     /**
@@ -73,7 +73,7 @@ public class UpdateCrDrAcctDetailHandler extends UpdateArTrxAcctDetailHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kArAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.AR_ACCOUNT_ID);
     }
 
 }

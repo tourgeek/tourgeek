@@ -16,6 +16,13 @@ public class CashBatchDist extends BankTrxBatchDist
     implements CashBatchDistModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    public static final String CASH_BATCH_DETAIL_ID = BANK_TRX_BATCH_DETAIL_ID;
+    //public static final String ACCOUNT_ID = ACCOUNT_ID;
+    //public static final String AMOUNT = AMOUNT;
+
     public CashBatchDist()
     {
         super();

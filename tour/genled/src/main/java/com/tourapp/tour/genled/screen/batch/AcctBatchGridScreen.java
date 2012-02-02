@@ -90,16 +90,16 @@ public class AcctBatchGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(AcctBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(AcctBatchScreenRecord.kUserID), AcctBatch.kUserID, this.getScreenRecord().getField(AcctBatchScreenRecord.kRecurring), AcctBatch.kRecurring, null, -1));
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kUserID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kRecurring).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().setKeyArea(AcctBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(AcctBatchScreenRecord.USER_ID), AcctBatch.USER_ID, this.getScreenRecord().getField(AcctBatchScreenRecord.RECURRING), AcctBatch.RECURRING, null, null));
+        this.getScreenRecord().getField(AcctBatchScreenRecord.USER_ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(AcctBatchScreenRecord.RECURRING).addListener(new FieldReSelectHandler(this));
         
-        this.getMainRecord().getField(AcctBatch.kRecurring).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(AcctBatch.kTrxDate), BooleanField.YES, true));
-        FieldListener listener = new CopyStringHandler(this.getMainRecord().getField(AcctBatch.kTrxDate), DBConstants.BLANK, this.getMainRecord().getField(AcctBatch.kRecurring));
+        this.getMainRecord().getField(AcctBatch.RECURRING).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(AcctBatch.TRX_DATE), BooleanField.YES, true));
+        FieldListener listener = new CopyStringHandler(this.getMainRecord().getField(AcctBatch.TRX_DATE), DBConstants.BLANK, this.getMainRecord().getField(AcctBatch.RECURRING));
         listener.setRespondsToMode(DBConstants.INIT_MOVE, true);
-        this.getMainRecord().getField(AcctBatch.kTrxDate).addListener(listener);
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kRecurring).addListener(new StickyValueHandler(null));
+        this.getMainRecord().getField(AcctBatch.TRX_DATE).addListener(listener);
+        this.getScreenRecord().getField(AcctBatchScreenRecord.RECURRING).addListener(new StickyValueHandler(null));
     }
     /**
      * SetupSFields Method.
@@ -118,8 +118,8 @@ public class AcctBatchGridScreen extends GridScreen
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.POST, MenuConstants.POST, MenuConstants.POST, null);
         
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kRecurring).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(AcctBatchScreenRecord.kUserID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(AcctBatchScreenRecord.RECURRING).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(AcctBatchScreenRecord.USER_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.

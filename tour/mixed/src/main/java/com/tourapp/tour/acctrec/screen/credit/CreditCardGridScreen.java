@@ -89,14 +89,14 @@ public class CreditCardGridScreen extends GridScreen
     public void addListeners()
     {
         // Don't call super
-        this.getMainRecord().setKeyArea(CreditCard.kTrxDateKey);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_DATE_KEY);
         // Add the filters behaviors
-        this.getMainRecord().addListener(new ExtractRangeFilter(CreditCard.kBookingID, this.getScreenRecord().getField(McoScreenRecord.kBookingID)));
-        this.getScreenRecord().getField(McoScreenRecord.kBookingID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new ExtractRangeFilter(CreditCard.kCardID, this.getScreenRecord().getField(McoScreenRecord.kCardFilterID)));
-        this.getScreenRecord().getField(McoScreenRecord.kCardFilterID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new ExtractRangeFilter(CreditCard.kCardNo, this.getScreenRecord().getField(McoScreenRecord.kCardNo)));
-        this.getScreenRecord().getField(McoScreenRecord.kCardNo).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(CreditCard.BOOKING_ID, this.getScreenRecord().getField(McoScreenRecord.BOOKING_ID)));
+        this.getScreenRecord().getField(McoScreenRecord.BOOKING_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(CreditCard.CARD_ID, this.getScreenRecord().getField(McoScreenRecord.CARD_FILTER_ID)));
+        this.getScreenRecord().getField(McoScreenRecord.CARD_FILTER_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(CreditCard.CARD_NO, this.getScreenRecord().getField(McoScreenRecord.CARD_NO)));
+        this.getScreenRecord().getField(McoScreenRecord.CARD_NO).addListener(new FieldReSelectHandler(this));
         this.setEnabled(false);
     }
     /**
@@ -116,9 +116,9 @@ public class CreditCardGridScreen extends GridScreen
     {
         ToolScreen screen = super.addToolbars();
         
-        this.getScreenRecord().getField(McoScreenRecord.kBookingID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(McoScreenRecord.kCardFilterID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(McoScreenRecord.kCardNo).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.BOOKING_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.CARD_FILTER_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(McoScreenRecord.CARD_NO).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
         return screen;
     }
     /**

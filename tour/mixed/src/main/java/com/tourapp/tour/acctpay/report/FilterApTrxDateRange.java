@@ -31,7 +31,7 @@ public class FilterApTrxDateRange extends FileFilter
 {
     protected BaseField m_fldEnd = null;
     protected BaseField m_fldStart = null;
-    protected int m_iFieldSeq = -1;
+    protected String m_iFieldSeq = null;
     /**
      * Default constructor.
      */
@@ -42,7 +42,7 @@ public class FilterApTrxDateRange extends FileFilter
     /**
      * FilterApTrxDateRange Method.
      */
-    public FilterApTrxDateRange(int iFieldSeq, BaseField fldStart, BaseField fldEnd)
+    public FilterApTrxDateRange(String iFieldSeq, BaseField fldStart, BaseField fldEnd)
     {
         this();
         this.init(iFieldSeq, fldStart, fldEnd);
@@ -50,7 +50,7 @@ public class FilterApTrxDateRange extends FileFilter
     /**
      * Initialize class fields.
      */
-    public void init(int iFieldSeq, BaseField fldStart, BaseField fldEnd)
+    public void init(String iFieldSeq, BaseField fldStart, BaseField fldEnd)
     {
         super.init(null);
         m_iFieldSeq = iFieldSeq;

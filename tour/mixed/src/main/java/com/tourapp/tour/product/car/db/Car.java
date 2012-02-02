@@ -275,21 +275,21 @@ public class Car extends Product
         double dPPCost = this.getCarCost(dateTarget, iDays, iCarRateID, iCarClassID, false);
         double dPPPriceLocal = this.getCarCost(dateTarget, iDays, iCarRateID, iCarClassID, true);
         
-        this.getField(Car.kPerVehicleCost).setValue(dPPCost);
-        this.getField(Car.kPerVehiclePriceLocal).setValue(dPPPriceLocal);
+        this.getField(Car.PER_VEHICLE_COST).setValue(dPPCost);
+        this.getField(Car.PER_VEHICLE_PRICE_LOCAL).setValue(dPPPriceLocal);
         
         double dCarCost = dPPCost;
         
         double dTotalLocalCost = Math.floor(dCarCost * sQuantity * 100.00 + 0.5) / 100.00;
         double dTotalLocalPriceLocal = Math.floor(dPPPriceLocal * sQuantity * 100.00 + 0.5) / 100.00;
         
-        this.getField(Car.kClassID).setValue(iCarClassID);
+        this.getField(Car.CLASS_ID).setValue(iCarClassID);
         
-        this.getField(Car.kPerVehicleCost).setValue(dCarCost);
-        this.getField(Product.kProductCost).setValue(dTotalLocalCost);
-        this.getField(Product.kProductPriceLocal).setValue(dTotalLocalPriceLocal);
+        this.getField(Car.PER_VEHICLE_COST).setValue(dCarCost);
+        this.getField(Product.PRODUCT_COST).setValue(dTotalLocalCost);
+        this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalLocalPriceLocal);
         
-        ((CarRateResponse)responseMessage).setPerVehicleCost(this.getField(Car.kPerVehicleCost).getValue());
+        ((CarRateResponse)responseMessage).setPerVehicleCost(this.getField(Car.PER_VEHICLE_COST).getValue());
         if (iCarClassID != productMessageData.getRateClassID())
         {
             responseProductMessageData.setRateClassID(productMessageData.getRateClassID());
@@ -304,7 +304,7 @@ public class Car extends Product
             responseMessage.setMessageDataError(this.getTask().getApplication().getResources(ResourceConstants.BOOKING_RESOURCE, true).getString(COST_NOT_FOUND_MSG));
         }
         responseMessage.setMessageDataStatus(iStatus);
-        this.getField(Product.kDisplayCostStatusID).setValue(iStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iStatus);
         return messageReply;
     }
     /**
@@ -358,9 +358,9 @@ public class Car extends Product
             if (recProductCostLookup != null)
             {
                 if (!bGetPrice)
-                    dCost += recProductCostLookup.getCost(CarPricing.kCost, this.getProductTerms());
+                    dCost += recProductCostLookup.getCost(CarPricing.COST, this.getProductTerms());
                 else
-                    dCost += recProductCostLookup.getField(CarPricing.kPrice).getValue();
+                    dCost += recProductCostLookup.getField(CarPricing.PRICE).getValue();
             }
             else
                 return 0;   // No cost for this day = error
@@ -379,19 +379,19 @@ public class Car extends Product
      */
     public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
     {
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getDateTime();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.kRateID).getValue();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.kClassID).getValue();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
+        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
         CarPricing recProductPricing = ((CarPricing)this.getProductPricing()).getCarCost(this, dateTarget, iRateID, iClassID);
         if (recProductPricing != null)
         {
             int iPricingType = PricingType.COMPONENT_PRICING;
             int iPaxCategory = PaxCategory.ALL_ID;
-            int iQuantity = (int)recBookingDetail.getField(BookingCar.kQuantity).getValue();
-            double dAmount = recProductPricing.getField(ProductPricing.kPrice).getValue();
-            boolean bCommissionable = recProductPricing.getField(ProductPricing.kCommissionable).getState();
-            double dCommissionRate = recProductPricing.getField(ProductPricing.kCommissionRate).getValue();
-            String strPayAt = recProductPricing.getField(ProductPricing.kPayAt).toString();
+            int iQuantity = (int)recBookingDetail.getField(BookingCar.QUANTITY).getValue();
+            double dAmount = recProductPricing.getField(ProductPricing.PRICE).getValue();
+            boolean bCommissionable = recProductPricing.getField(ProductPricing.COMMISSIONABLE).getState();
+            double dCommissionRate = recProductPricing.getField(ProductPricing.COMMISSION_RATE).getValue();
+            String strPayAt = recProductPricing.getField(ProductPricing.PAY_AT).toString();
             return recBookingDetail.updateBookingLine(recBookingLine, iPricingType, iPaxCategory, iQuantity, dAmount, bCommissionable, dCommissionRate, strPayAt, PricingStatus.OKAY, iChangeType);
         }
         return DBConstants.ERROR_RETURN;

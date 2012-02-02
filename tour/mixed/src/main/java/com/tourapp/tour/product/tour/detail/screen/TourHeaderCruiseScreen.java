@@ -78,11 +78,11 @@ public class TourHeaderCruiseScreen extends TourDetailScreen
         this.getRecord(TourHeaderCruise.kTourHeaderCruiseFile).getField(TourHeaderCruise.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(TourHeaderCruise.kTourHeaderCruiseFile).getField(TourHeaderCruise.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(TourHeaderCruise.kTourHeaderCruiseFile).getField(TourHeaderCruise.kCityCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kCityID);
-        field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);
+        ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.CITY_ID);
+        field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);
         this.getRecord(TourHeaderCruise.kTourHeaderCruiseFile).getField(TourHeaderCruise.kToCityCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kToCityID);
-        field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);
+        field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.TO_CITY_ID);
+        field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);
         this.addStandardScreenFields(true);
     }
 

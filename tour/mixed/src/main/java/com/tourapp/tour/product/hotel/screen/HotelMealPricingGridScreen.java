@@ -108,19 +108,19 @@ public class HotelMealPricingGridScreen extends ProductPricingGridScreen
     {
         super.addListeners();
         // Link the screen field to the passed in record
-        ((ReferenceField)this.getScreenRecord().getField(HotelScreenRecord.kProductID)).syncReference(this.getHeaderRecord());
+        ((ReferenceField)this.getScreenRecord().getField(HotelScreenRecord.PRODUCT_ID)).syncReference(this.getHeaderRecord());
         // Sub file stuff
-        FileListener subFileBehavior = new SubFileFilter(this.getRecord(Hotel.kHotelFile));
-        this.getRecord(HotelMealPricing.kHotelMealPricingFile).addListener(subFileBehavior);
-        this.getRecord(Hotel.kHotelFile).getField(Hotel.kID).addListener(new FieldReSelectHandler(this));
+        FileListener subFileBehavior = new SubFileFilter(this.getRecord(Hotel.HOTEL_FILE));
+        this.getRecord(HotelMealPricing.HOTEL_MEAL_PRICING_FILE).addListener(subFileBehavior);
+        this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * SetupSFields Method.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(HotelMealPricing.kHotelMealPricingFile).getField(HotelMealPricing.kMealPlanID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelMealPricing.kHotelMealPricingFile).getField(HotelMealPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(HotelMealPricing.kHotelMealPricingFile).getField(HotelMealPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

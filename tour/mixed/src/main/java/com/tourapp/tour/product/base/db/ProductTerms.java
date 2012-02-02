@@ -168,9 +168,9 @@ public class ProductTerms extends VirtualRecord
     public double calcNetCost(double dOrigCost, BaseField fldMarkupCode)
     {
         double dNewCost = dOrigCost;
-        if (fldMarkupCode != null) if (this.getField(ProductTerms.kID).compareTo(fldMarkupCode) != 0)
+        if (fldMarkupCode != null) if (this.getField(ProductTerms.ID).compareTo(fldMarkupCode) != 0)
         {
-            this.getField(ProductTerms.kID).moveFieldToThis(fldMarkupCode, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+            this.getField(ProductTerms.ID).moveFieldToThis(fldMarkupCode, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
             boolean bSuccess = false;
             try   {
                 bSuccess = this.seek("=");
@@ -180,9 +180,9 @@ public class ProductTerms extends VirtualRecord
             if (!bSuccess)
                 return dOrigCost;
         }
-        double dTax = this.getField(ProductTerms.kTaxRate).getValue();
-        double dSvcChg = this.getField(ProductTerms.kServiceChargeRate).getValue();
-        double dComm = this.getField(ProductTerms.kCommissionRate).getValue();
+        double dTax = this.getField(ProductTerms.TAX_RATE).getValue();
+        double dSvcChg = this.getField(ProductTerms.SERVICE_CHARGE_RATE).getValue();
+        double dComm = this.getField(ProductTerms.COMMISSION_RATE).getValue();
         dNewCost = Math.floor(dOrigCost * (1.00 + dTax + dSvcChg - dComm) * 100.00 + 0.5) / 100.00;
         return dNewCost;
     }

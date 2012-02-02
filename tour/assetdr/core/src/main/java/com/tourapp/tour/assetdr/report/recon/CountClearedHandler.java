@@ -29,7 +29,7 @@ import org.jbundle.model.screen.*;
 public class CountClearedHandler extends SubCountHandler
 {
     protected boolean m_bCountPositive;
-    protected int m_fsReconciled;
+    protected String m_fsReconciled;
     /**
      * Default constructor.
      */
@@ -40,7 +40,7 @@ public class CountClearedHandler extends SubCountHandler
     /**
      * Count a sub-field.
      */
-    public CountClearedHandler(BaseField fieldMain, int ifsToCount, int fsReconciled, boolean bCountPositive)
+    public CountClearedHandler(BaseField fieldMain, String ifsToCount, String fsReconciled, boolean bCountPositive)
     {
         this();
         this.init(fieldMain, ifsToCount, fsReconciled, bCountPositive);
@@ -48,13 +48,13 @@ public class CountClearedHandler extends SubCountHandler
     /**
      * Initialize class fields.
      */
-    public void init(BaseField fieldMain, int ifsToCount, int fsReconciled, boolean bCountPositive)
+    public void init(BaseField fieldMain, String ifsToCount, String fsReconciled, boolean bCountPositive)
     {
         m_bCountPositive = true;
-        m_fsReconciled = 0;
+        m_fsReconciled = "";
         m_fsReconciled = fsReconciled;
         m_bCountPositive = bCountPositive;
-        super.init(null, null, -1, fieldMain, ifsToCount, true, false, false);
+        super.init(null, null, -1, fieldMain, -1, ifsToCount, true, false, false);
     }
     /**
      * Get the value to add (Overidden from SubCountHandler).

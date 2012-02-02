@@ -387,15 +387,15 @@ public class Product extends VirtualRecord
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        BaseField productDesc = this.getField(Product.kDescription);
-        BaseField productSort = this.getField(Product.kDescSort);
+        BaseField productDesc = this.getField(Product.DESCRIPTION);
+        BaseField productSort = this.getField(Product.DESC_SORT);
         CopyFieldHandler copyField = new CopyFieldHandler(kDescSort);
         productDesc.addListener(copyField);
         FieldToUpperHandler toUpper = new FieldToUpperHandler(null);
         productSort.addListener(toUpper);
         CheckForTheHandler checkThe = new CheckForTheHandler(null);
         productSort.addListener(checkThe);
-        this.getField(Product.kProductType).addListener(new GetProductDescHandler(null));
+        this.getField(Product.PRODUCT_TYPE).addListener(new GetProductDescHandler(null));
     }
     /**
      * Convert the command to the screen document type.
@@ -449,9 +449,9 @@ public class Product extends VirtualRecord
      */
     public MessageDetailTarget getNextMessageDetailTarget()
     {
-        if (this.getField(Hotel.kVendorID).isNull())
+        if (this.getField(Hotel.VENDOR_ID).isNull())
             return null;
-        return (Vendor)((ReferenceField)this.getField(Hotel.kVendorID)).getReference();
+        return (Vendor)((ReferenceField)this.getField(Hotel.VENDOR_ID)).getReference();
     }
     /**
      * Get the message properties for this product.
@@ -467,7 +467,7 @@ public class Product extends VirtualRecord
      */
     public MessageTransport getMessageTransport(TrxMessageHeader trxMessageHeader)
     {
-        return (MessageTransport)((ReferenceField)this.getField(Product.kProductMessageTransportID)).getReference();
+        return (MessageTransport)((ReferenceField)this.getField(Product.PRODUCT_MESSAGE_TRANSPORT_ID)).getReference();
     }
     /**
      * AddDestInfo Method.
@@ -494,7 +494,7 @@ public class Product extends VirtualRecord
         int iProductStatus = InventoryStatus.VALID;
         String strErrorMessage = null;
         
-        //?this.getField(Product.kDisplayInfoStatusID).setValue(iProductStatus);
+        //?this.getField(Product.DISPLAY_INFO_STATUS_ID).setValue(iProductStatus);
         responseMessage.setMessageDataStatus(iProductStatus);
         if (strErrorMessage != null)
             responseMessage.setMessageDataError(strErrorMessage);
@@ -548,7 +548,7 @@ public class Product extends VirtualRecord
         Inventory recInventory = this.getInventory().getAvailability(this, dateTarget, iRateID, iClassID, iOtherID);
         int iAvailability = Inventory.NO_INVENTORY;
         if (recInventory != null)
-            iAvailability = (int)recInventory.getField(Inventory.kAvailable).getValue();
+            iAvailability = (int)recInventory.getField(Inventory.AVAILABLE).getValue();
         if (responseMessage instanceof ProductAvailabilityResponse)
         {
             ProductResponseMessageData responseMessageData = (ProductResponseMessageData)responseMessage.getMessageDataDesc(ProductAvailabilityResponse.PRODUCT_RESPONSE_MESSAGE);
@@ -594,7 +594,7 @@ public class Product extends VirtualRecord
             }
                 
         }
-        this.getField(Product.kDisplayInventoryStatusID).setValue(iInventoryStatus);
+        this.getField(Product.DISPLAY_INVENTORY_STATUS_ID).setValue(iInventoryStatus);
         responseMessage.setMessageDataStatus(iInventoryStatus);
         if (strErrorMessage != null)
             responseMessage.setMessageDataError(strErrorMessage);
@@ -672,11 +672,11 @@ public class Product extends VirtualRecord
                 
                         TourHeader recTourHeader = this.getBookingTourHeader(recBookingControl);
                         recBooking.setupDefaultDesc(recTourHeader, fldDepDate);
-                        int iErrorCode = recTour.setupTourFromHeader(recTourHeader, fldDepDate, recBooking.getField(Booking.kCode).toString(), recBooking.getField(Booking.kDescription).toString());
+                        int iErrorCode = recTour.setupTourFromHeader(recTourHeader, fldDepDate, recBooking.getField(Booking.CODE).toString(), recBooking.getField(Booking.DESCRIPTION).toString());
                         if (iErrorCode != DBConstants.NORMAL_RETURN)
                             return null;
-                        recBooking.getField(Booking.kTourID).addListener(new CalcBookingDatesHandler(recTour, recTourHeader));
-                        recBooking.getField(Booking.kTourID).moveFieldToThis(recTour.getField(Tour.kID));
+                        recBooking.getField(Booking.TOUR_ID).addListener(new CalcBookingDatesHandler(recTour, recTourHeader));
+                        recBooking.getField(Booking.TOUR_ID).moveFieldToThis(recTour.getField(Tour.ID));
                 
                         recBooking.add();
                         strBookingNo = recBooking.getLastModified(DBConstants.OBJECT_ID_HANDLE).toString();
@@ -685,15 +685,15 @@ public class Product extends VirtualRecord
                         
                         BookingAnswer recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
                         BookingPax recBookingPax = null;
-                        iErrorCode = ((Booking)recBooking).addTourDetail(recTour, recTourHeader, recBookingPax, recBookingAnswer, dateTarget, recBooking.getField(Booking.kAskForAnswer));
+                        iErrorCode = ((Booking)recBooking).addTourDetail(recTour, recTourHeader, recBookingPax, recBookingAnswer, dateTarget, recBooking.getField(Booking.ASK_FOR_ANSWER));
                         if (iErrorCode != DBConstants.NORMAL_RETURN)
                             return null;
         
                         this.addMessageBookingDetail(recBookingDetail, recBooking, recTour, strMessageTransportID, productRequest);
         
-                        recBooking.getField(Booking.kBookingStatusID).setValue(BookingStatus.OKAY); // Make sure all downline components are ordered
+                        recBooking.getField(Booking.BOOKING_STATUS_ID).setValue(BookingStatus.OKAY); // Make sure all downline components are ordered
                         recTour.refreshToCurrent(DBConstants.AFTER_UPDATE_TYPE, false);  // Make sure I have the latest copy
-                        recTour.getField(Tour.kOrderComponents).setState(true);     // Book = Order Components! (just in case the previous line didn't do this)
+                        recTour.getField(Tour.ORDER_COMPONENTS).setState(true);     // Book = Order Components! (just in case the previous line didn't do this)
                     }
                     else
                     {
@@ -705,9 +705,9 @@ public class Product extends VirtualRecord
                         }
                         else
                         {
-                            recBooking.getField(Booking.kID).setString(strBookingNo);
+                            recBooking.getField(Booking.ID).setString(strBookingNo);
                             int iOldKeyArea = recBooking.getDefaultOrder();
-                            recBooking.setKeyArea(Booking.kIDKey);
+                            recBooking.setKeyArea(Booking.ID_KEY);
                             if (!recBooking.seek(null))
                             {
                                 iMessageStatus = BaseDataStatus.NOT_VALID;
@@ -715,7 +715,7 @@ public class Product extends VirtualRecord
                             }
                             else
                             {
-                                recTour = (Tour)((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+                                recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
                                 if ((recTour == null) ||
                                         ((recTour.getEditMode() != DBConstants.EDIT_CURRENT) && (recTour.getEditMode() != DBConstants.EDIT_IN_PROGRESS)))
                                 {   // Never
@@ -733,8 +733,8 @@ public class Product extends VirtualRecord
                                 }
                                 else // if (RequestType.BOOKING_CANCEL.equalsIgnoreCase(message.getRequestType()))
                                 {
-                                    int iCancelledStatusID = ((ReferenceField)recBooking.getField(Booking.kBookingStatusID)).getIDFromCode(BookingStatus.CANCELLED_CODE);
-                                    recBooking.getField(Booking.kBookingStatusID).setValue(iCancelledStatusID);
+                                    int iCancelledStatusID = ((ReferenceField)recBooking.getField(Booking.BOOKING_STATUS_ID)).getIDFromCode(BookingStatus.CANCELLED_CODE);
+                                    recBooking.getField(Booking.BOOKING_STATUS_ID).setValue(iCancelledStatusID);
                                 }
                             }
                         }
@@ -748,15 +748,15 @@ public class Product extends VirtualRecord
                         responseMessageData.handlePutRawRecordData(recBookingDetail);
         
                         responseMessageData.setRemoteBookingNo(strBookingNo);
-                        iMessageStatus = (int)recTour.getField(Tour.kTourStatusID).getValue();
-                        long iTimeoutMS = (long)recBookingControl.getField(BookingControl.kRemoteWaitTime).getValue() * 1000;
+                        iMessageStatus = (int)recTour.getField(Tour.TOUR_STATUS_ID).getValue();
+                        long iTimeoutMS = (long)recBookingControl.getField(BookingControl.REMOTE_WAIT_TIME).getValue() * 1000;
                         if (BaseStatus.isWaiting(iMessageStatus))
                         {
                             // Setup tour status listener
                             WaitForFieldChangeHandler listener = new WaitForFieldChangeHandler(iTimeoutMS);
-                            recTour.getField(Tour.kTourStatusID).addListener(listener);
+                            recTour.getField(Tour.TOUR_STATUS_ID).addListener(listener);
                             recTour.refreshToCurrent(DBConstants.AFTER_UPDATE_TYPE, false); // Start with the most recent version
-                            iMessageStatus = (int)recTour.getField(Tour.kTourStatusID).getValue();
+                            iMessageStatus = (int)recTour.getField(Tour.TOUR_STATUS_ID).getValue();
                         // Wait for the status to change (or timeout)
                             int iErrorCode = DBConstants.NORMAL_RETURN;
                             while (BaseStatus.isWaiting(iMessageStatus))
@@ -764,21 +764,21 @@ public class Product extends VirtualRecord
                                 iErrorCode = listener.waitForChange();
                                 if (iErrorCode == WaitForFieldChangeHandler.TIMEOUT_ERROR)
                                     break;
-                                iMessageStatus = (int)recTour.getField(Tour.kTourStatusID).getValue();
+                                iMessageStatus = (int)recTour.getField(Tour.TOUR_STATUS_ID).getValue();
                             }
                             if (BaseStatus.isWaiting(iMessageStatus))
                             {
                                 strErrorMessage = null;
                                 if (recBookingDetail != null)
                                     if ((recBookingDetail.getEditMode() == DBConstants.EDIT_CURRENT) || (recBookingDetail.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                                        strErrorMessage = recBookingDetail.getErrorMessage(BookingDetail.kProductStatusID);
+                                        strErrorMessage = recBookingDetail.getErrorMessage(BookingDetail.PRODUCT_STATUS_ID);
                                 if ((strErrorMessage == null) || (strErrorMessage.length() == 0))
-                                    strErrorMessage = ((ReferenceField)recTour.getField(Tour.kTourStatusID)).getReference().getField(BaseDataStatus.kDescription).toString();
+                                    strErrorMessage = ((ReferenceField)recTour.getField(Tour.TOUR_STATUS_ID)).getReference().getField(BaseDataStatus.DESCRIPTION).toString();
                             }
                         }
                         // Don't need to transfer the cost since you got it on the costing lookup
                         // todo(don) may want to transfer cost and line items for client comparison later
-                        //msgBookingRateResponse.setProductCost(recBooking.getField(Booking.kGross).getValue());
+                        //msgBookingRateResponse.setProductCost(recBooking.getField(Booking.GROSS).getValue());
                         //msgBookingRateResponse.putRawLineItemData(recBooking);
                 
                         if (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
@@ -839,7 +839,7 @@ public class Product extends VirtualRecord
      */
     public TourHeader getBookingTourHeader(BookingControl recBookingControl)
     {
-        return (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.kRemoteTourHeaderID)).getReference();
+        return (TourHeader)((ReferenceField)recBookingControl.getField(BookingControl.REMOTE_TOUR_HEADER_ID)).getReference();
     }
     /**
      * GetProductBookingResponse Method.
@@ -941,12 +941,12 @@ public class Product extends VirtualRecord
     public String getOperatorsCode()
     {
         String strProductCode = null;
-        if (!this.getField(Product.kOperatorsCode).isNull())
-            strProductCode = this.getField(Product.kOperatorsCode).toString();
-        else if (!this.getField(Product.kCode).isNull())
-            strProductCode = this.getField(Product.kCode).toString();
+        if (!this.getField(Product.OPERATORS_CODE).isNull())
+            strProductCode = this.getField(Product.OPERATORS_CODE).toString();
+        else if (!this.getField(Product.CODE).isNull())
+            strProductCode = this.getField(Product.CODE).toString();
         else
-            strProductCode = this.getField(Product.kDescription).toString();    // Hopefully not.
+            strProductCode = this.getField(Product.DESCRIPTION).toString();    // Hopefully not.
         return strProductCode;
     }
     /**
@@ -955,11 +955,11 @@ public class Product extends VirtualRecord
     public String getChainCode()
     {
         String strChainCode = null;
-        Record recProductChain = ((ReferenceField)this.getField(Product.kProductChainID)).getReference();
+        Record recProductChain = ((ReferenceField)this.getField(Product.PRODUCT_CHAIN_ID)).getReference();
         if (recProductChain != null)
             if ((recProductChain.getEditMode() == DBConstants.EDIT_CURRENT) || (recProductChain.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                if (!recProductChain.getField(ProductChain.kCode).isNull())
-                    strChainCode = recProductChain.getField(ProductChain.kCode).toString();
+                if (!recProductChain.getField(ProductChain.CODE).isNull())
+                    strChainCode = recProductChain.getField(ProductChain.CODE).toString();
         if ((strChainCode == null) || (strChainCode.length() == 0))
             return this.getOperatorsCode();
         return strChainCode;
@@ -989,23 +989,23 @@ public class Product extends VirtualRecord
     public static Product getProductRecord(String strProductType, RecordOwner recordOwner)
     {
         Product recProduct = null;
-        if (Hotel.kHotelFile.equalsIgnoreCase(strProductType))
+        if (Hotel.HOTEL_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Hotel(recordOwner);
-        else if (Land.kLandFile.equalsIgnoreCase(strProductType))
+        else if (Land.LAND_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Land(recordOwner);
-        else if (Air.kAirFile.equalsIgnoreCase(strProductType))
+        else if (Air.AIR_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Air(recordOwner);
-        else if (Transportation.kTransportationFile.equalsIgnoreCase(strProductType))
+        else if (Transportation.TRANSPORTATION_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Transportation(recordOwner);
-        else if (Car.kCarFile.equalsIgnoreCase(strProductType))
+        else if (Car.CAR_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Car(recordOwner);
-        else if (Cruise.kCruiseFile.equalsIgnoreCase(strProductType))
+        else if (Cruise.CRUISE_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Cruise(recordOwner);
-        else if (Item.kItemFile.equalsIgnoreCase(strProductType))
+        else if (Item.ITEM_FILE.equalsIgnoreCase(strProductType))
             recProduct = new Item(recordOwner);
-        else if (TourHeader.kTourHeaderFile.equalsIgnoreCase(strProductType))
+        else if (TourHeader.TOUR_HEADER_FILE.equalsIgnoreCase(strProductType))
             recProduct = new TourHeader(recordOwner);
-        else if (Tour.kTourFile.equalsIgnoreCase(strProductType))
+        else if (Tour.TOUR_FILE.equalsIgnoreCase(strProductType))
             recProduct = new TourHeader(recordOwner);  // Yes - Tour header is a tour component
         return recProduct;
     }
@@ -1014,7 +1014,7 @@ public class Product extends VirtualRecord
      */
     public boolean setProperty(String strKey, String strProperty)
     {
-        ((PropertiesField)this.getField(Product.kProperties)).setProperty(strKey, strProperty);
+        ((PropertiesField)this.getField(Product.PROPERTIES)).setProperty(strKey, strProperty);
         return true;
     }
     /**
@@ -1022,19 +1022,19 @@ public class Product extends VirtualRecord
      */
     public String getProperty(String strKey)
     {
-        return ((PropertiesField)this.getField(Product.kProperties)).getProperty(strKey);
+        return ((PropertiesField)this.getField(Product.PROPERTIES)).getProperty(strKey);
     }
     /**
      * MarkupPriceFromCost Method.
      */
     public void markupPriceFromCost(double dMarkup, boolean bMarkupOnlyIfNoPrice)
     {
-        if ((!bMarkupOnlyIfNoPrice) || (this.getField(Product.kProductPriceLocal).getValue() == 0))
+        if ((!bMarkupOnlyIfNoPrice) || (this.getField(Product.PRODUCT_PRICE_LOCAL).getValue() == 0))
         {
             if (dMarkup == 0.00)
-                this.getField(Product.kProductPriceLocal).setData(null);
+                this.getField(Product.PRODUCT_PRICE_LOCAL).setData(null);
             else
-                this.getField(Product.kProductPriceLocal).setValue(Math.floor(this.getField(Product.kProductCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+                this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(Math.floor(this.getField(Product.PRODUCT_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
         }
     }
 

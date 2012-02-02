@@ -66,7 +66,7 @@ public class GetHotelCostHandler extends GetProductCostHandler
     {
         boolean bQueryComplete = super.isQueryComplete();
         if ((bQueryComplete)
-            && (!m_recProductVars.getField(ProductScreenRecord.kClassID).isNull()))
+            && (!m_recProductVars.getField(ProductScreenRecord.CLASS_ID).isNull()))
                 return true;
         return false;
     }
@@ -79,11 +79,11 @@ public class GetHotelCostHandler extends GetProductCostHandler
     {
         if (iStatus == CostStatus.VALID)
         {   // The returned cost is the double cost
-            double dProductCost = recProduct.getField(Product.kProductCost).getValue();
-            recProduct.getField(Hotel.kDoubleCost).setValue(dProductCost);
+            double dProductCost = recProduct.getField(Product.PRODUCT_COST).getValue();
+            recProduct.getField(Hotel.DOUBLE_COST).setValue(dProductCost);
         }
         else
-            recProduct.getField(Hotel.kDoubleCost).setData(null);
+            recProduct.getField(Hotel.DOUBLE_COST).setData(null);
         super.setupScreenStatus(recProduct, iStatus);
     }
 

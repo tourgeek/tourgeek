@@ -8,7 +8,9 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface CruiseClassModel extends BaseClassModel
 {
-    public static final String DESCRIPTION = "Description";
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
 
     public static final String CRUISE_CLASS_FILE = "CruiseClass";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.cruise.db.CruiseClass";

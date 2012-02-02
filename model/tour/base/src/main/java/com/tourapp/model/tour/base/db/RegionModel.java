@@ -8,6 +8,16 @@ import com.tourapp.model.tour.base.db.*;
 
 public interface RegionModel extends LocationModel
 {
+
+    //public static final String ID = ID;
+    public static final String DESCRIPTION = NAME;
+    public static final String CONTINENT_ID = "ContinentID";
+    public static final String MEMO = "Memo";
+    public static final String PICTURE = "Picture";
+
+    public static final String DESCRIPTION_KEY = "Description";
+
+    public static final String CONTINENT_ID_KEY = "ContinentID";
     public static final String REGION_SCREEN_CLASS = "com.tourapp.tour.base.screen.RegionScreen";
     public static final String REGION_GRID_SCREEN_CLASS = "com.tourapp.tour.base.screen.RegionGridScreen";
 

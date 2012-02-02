@@ -64,26 +64,26 @@ public class InvoiceAcctHandler extends FieldListener
     {
         Record recApTrx = this.getOwner().getRecord();
         RecordOwner screen = recApTrx.getRecordOwner();
-        BaseField fldApAccountID = ((Record)screen.getScreenRecord()).getField(InvoiceScreenRecord.kApAccountID);
-        BaseField fldCostAccountID = ((Record)screen.getScreenRecord()).getField(InvoiceScreenRecord.kCostAccountID);
-        TrxStatus recTrxStatus = (TrxStatus)screen.getRecord(TrxStatus.kTrxStatusFile);
-        Record recApControl = (Record)screen.getRecord(ApControl.kApControlFile);
-        FileListener invoiceBehavior = ((Record)screen.getRecord(ApTrx.kApTrxFile)).getListener(UpdateInvoiceHandler.class.getName());
-        FileListener invoiceNonTourBehavior = ((Record)screen.getRecord(ApTrx.kApTrxFile)).getListener(UpdateNonTourInvoiceHandler.class.getName());
-        BaseField fldTourID = recApTrx.getField(ApTrx.kTourID);
+        BaseField fldApAccountID = ((Record)screen.getScreenRecord()).getField(InvoiceScreenRecord.AP_ACCOUNT_ID);
+        BaseField fldCostAccountID = ((Record)screen.getScreenRecord()).getField(InvoiceScreenRecord.COST_ACCOUNT_ID);
+        TrxStatus recTrxStatus = (TrxStatus)screen.getRecord(TrxStatus.TRX_STATUS_FILE);
+        Record recApControl = (Record)screen.getRecord(ApControl.AP_CONTROL_FILE);
+        FileListener invoiceBehavior = ((Record)screen.getRecord(ApTrx.AP_TRX_FILE)).getListener(UpdateInvoiceHandler.class.getName());
+        FileListener invoiceNonTourBehavior = ((Record)screen.getRecord(ApTrx.AP_TRX_FILE)).getListener(UpdateNonTourInvoiceHandler.class.getName());
+        BaseField fldTourID = recApTrx.getField(ApTrx.TOUR_ID);
         if (fldTourID.isNull())
         { // No tour, set defaults
-            fldApAccountID.moveFieldToThis(recApControl.getField(ApControl.kNonTourApAccountID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-            Record recVendor = ((ReferenceField)recApTrx.getField(ApTrx.kVendorID)).getReference();
-            if ((recVendor != null) && (!recVendor.getField(Vendor.kDefaultAccountID).isNull()))
-                fldCostAccountID.moveFieldToThis(recVendor.getField(Vendor.kDefaultAccountID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            fldApAccountID.moveFieldToThis(recApControl.getField(ApControl.NON_TOUR_AP_ACCOUNT_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            Record recVendor = ((ReferenceField)recApTrx.getField(ApTrx.VENDOR_ID)).getReference();
+            if ((recVendor != null) && (!recVendor.getField(Vendor.DEFAULT_ACCOUNT_ID).isNull()))
+                fldCostAccountID.moveFieldToThis(recVendor.getField(Vendor.DEFAULT_ACCOUNT_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             else
-                fldCostAccountID.moveFieldToThis(recApControl.getField(ApControl.kCostAccountID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+                fldCostAccountID.moveFieldToThis(recApControl.getField(ApControl.COST_ACCOUNT_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         
-            if (recApTrx.getField(ApTrx.kInvoiceAmount).getValue() >= 0)
-                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.INVOICE_NON_TOUR);
+            if (recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue() >= 0)
+                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.INVOICE_NON_TOUR);
             else
-                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.CREDIT_INVOICE_NON_TOUR);
+                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.CREDIT_INVOICE_NON_TOUR);
         
             fldApAccountID.setEnabled(true);
             fldCostAccountID.setEnabled(true);
@@ -98,10 +98,10 @@ public class InvoiceAcctHandler extends FieldListener
             fldApAccountID.setString(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             fldCostAccountID.setString(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         
-            if (recApTrx.getField(ApTrx.kInvoiceAmount).getValue() >= 0)
-                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.INVOICE);
+            if (recApTrx.getField(ApTrx.INVOICE_AMOUNT).getValue() >= 0)
+                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.INVOICE);
             else
-                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.CREDIT_INVOICE);
+                recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.CREDIT_INVOICE);
         
             fldApAccountID.setEnabled(false);
             fldCostAccountID.setEnabled(false);
@@ -113,8 +113,8 @@ public class InvoiceAcctHandler extends FieldListener
         }
         if (iMoveMode != DBConstants.READ_MOVE)
         {
-            recApTrx.getField(ApTrx.kTrxStatusID).initField(bDisplayOption);
-            recApTrx.getField(ApTrx.kTrxStatusID).setModified(false);
+            recApTrx.getField(ApTrx.TRX_STATUS_ID).initField(bDisplayOption);
+            recApTrx.getField(ApTrx.TRX_STATUS_ID).setModified(false);
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }

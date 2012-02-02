@@ -80,11 +80,11 @@ public class RequestHistoryDisplayScreen extends GridScreen
         super.addListeners();
         this.setAppending(false);
         this.setEnabled(false);
-        this.getMainRecord().getField(RequestHistory.kHistReprint).setEnabled(true);
+        this.getMainRecord().getField(RequestHistory.HIST_REPRINT).setEnabled(true);
         
-        this.getMainRecord().setKeyArea(RequestHistory.kHistReprintKey);
-        this.getMainRecord().getKeyArea(RequestHistory.kHistReprintKey).getKeyField(DBConstants.MAIN_KEY_FIELD).setKeyOrder(DBConstants.DESCENDING);
-        this.getMainRecord().getKeyArea(RequestHistory.kHistReprintKey).getKeyField(DBConstants.MAIN_KEY_FIELD+1).setKeyOrder(DBConstants.DESCENDING);
+        this.getMainRecord().setKeyArea(RequestHistory.HIST_REPRINT_KEY);
+        this.getMainRecord().getKeyArea(RequestHistory.HIST_REPRINT_KEY).getKeyField(DBConstants.MAIN_KEY_FIELD).setKeyOrder(DBConstants.DESCENDING);
+        this.getMainRecord().getKeyArea(RequestHistory.HIST_REPRINT_KEY).getKeyField(DBConstants.MAIN_KEY_FIELD+1).setKeyOrder(DBConstants.DESCENDING);
     }
     /**
      * Add button(s) to the toolbar.

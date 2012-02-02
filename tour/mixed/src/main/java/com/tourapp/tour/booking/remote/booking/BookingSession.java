@@ -75,14 +75,14 @@ public class BookingSession extends TableSession
     public void openOtherRecords()
     {
         super.openOtherRecords();
-        Tour recTour = (Tour)((ReferenceField)this.getMainRecord().getField(Booking.kTourID)).getReferenceRecord(this);//new Tour(this);
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReferenceRecord(this);
+        Tour recTour = (Tour)((ReferenceField)this.getMainRecord().getField(Booking.TOUR_ID)).getReferenceRecord(this);//new Tour(this);
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReferenceRecord(this);
         
         new BookingControl(this);
         new ProfileControl(this);
         
         BookingDetail recCustSaleDetail = new BookingDetail(this);
-        recCustSaleDetail.setKeyArea(BookingDetail.kBookingIDKey);
+        recCustSaleDetail.setKeyArea(BookingDetail.BOOKING_ID_KEY);
         ProductSession productSession = null;   // pend(don) How do I do this?
         try   {
             new BookingDetailSession(this, recCustSaleDetail, null, productSession);
@@ -99,40 +99,40 @@ public class BookingSession extends TableSession
     {
         super.addListeners();
         Booking recBooking = (Booking)this.getMainRecord();
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
-        TourHeader recTourHdr = (TourHeader)this.getRecord(TourHeader.kTourHeaderFile);
-        ReferenceField fldTourID = (ReferenceField)recBooking.getField(Booking.kTourID);
-        BookingControl recBookingControl = (BookingControl)this.getRecord(BookingControl.kBookingControlFile);
-        ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl.kProfileControlFile);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
+        TourHeader recTourHdr = (TourHeader)this.getRecord(TourHeader.TOUR_HEADER_FILE);
+        ReferenceField fldTourID = (ReferenceField)recBooking.getField(Booking.TOUR_ID);
+        BookingControl recBookingControl = (BookingControl)this.getRecord(BookingControl.BOOKING_CONTROL_FILE);
+        ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl.PROFILE_CONTROL_FILE);
         
         recBooking.setOpenMode(recBooking.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
-        fldTourID.addListener(new ReadSecondaryHandler(recTour, Tour.kIDKey, DBConstants.DONT_CLOSE_ON_FREE, true, true));  // Update record
-        recTour.addListener(new DisplayReadHandler(Tour.kTourHeaderID, recTourHdr, TourHeader.kID));        
-        recTour.getField(Tour.kTourHeaderID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
+        fldTourID.addListener(new ReadSecondaryHandler(recTour, Tour.ID_KEY, DBConstants.DONT_CLOSE_ON_FREE, true, true));  // Update record
+        recTour.addListener(new DisplayReadHandler(Tour.TOUR_HEADER_ID, recTourHdr, TourHeader.ID));        
+        recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
         recBooking.addControlDefaults(recBookingControl, recProfileControl);
         
         // This code read the currency CODE into a virtual field for use in displays 
-        Record recCurrencys = ((ReferenceField)recBooking.getField(Booking.kCurrencysID)).getReferenceRecord(this);
-        recBooking.getField(Booking.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
-        MoveOnChangeHandler moveListener = new MoveOnChangeHandler(recBooking.getField(Booking.kCurrencyCode), recCurrencys.getField(Currencys.kCurrencyCode));
+        Record recCurrencys = ((ReferenceField)recBooking.getField(Booking.CURRENCYS_ID)).getReferenceRecord(this);
+        recBooking.getField(Booking.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
+        MoveOnChangeHandler moveListener = new MoveOnChangeHandler(recBooking.getField(Booking.CURRENCY_CODE), recCurrencys.getField(Currencys.CURRENCY_CODE));
         moveListener.setRespondsToMode(DBConstants.INIT_MOVE, true);
         moveListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBooking.getField(Booking.kCurrencysID).addListener(moveListener);
+        recBooking.getField(Booking.CURRENCYS_ID).addListener(moveListener);
         
-        this.getRecord(BookingDetail.kBookingDetailFile).setKeyArea(BookingDetail.kBookingIDKey);
-        ((BookingSub)this.getRecord(BookingDetail.kBookingDetailFile)).addDetailBehaviors(recBooking, recTour);
-        recBooking.addListener(new RequeryOnUpdateHandler(this.getRecord(BookingDetail.kBookingDetailFile)));
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).setKeyArea(BookingDetail.BOOKING_ID_KEY);
+        ((BookingSub)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)).addDetailBehaviors(recBooking, recTour);
+        recBooking.addListener(new RequeryOnUpdateHandler(this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)));
         
-        this.getRecord(BookingLine.kBookingLineFile).setKeyArea(BookingLine.kBookingKey);
-        ((BookingLine)this.getRecord(BookingLine.kBookingLineFile)).addDetailBehaviors(recBooking, recTour);
-        recBooking.addListener(new RecountOnValidHandler(this.getRecord(BookingLine.kBookingLineFile)));
+        this.getRecord(BookingLine.BOOKING_LINE_FILE).setKeyArea(BookingLine.BOOKING_KEY);
+        ((BookingLine)this.getRecord(BookingLine.BOOKING_LINE_FILE)).addDetailBehaviors(recBooking, recTour);
+        recBooking.addListener(new RecountOnValidHandler(this.getRecord(BookingLine.BOOKING_LINE_FILE)));
                 
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReferenceRecord(this);
-        TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReferenceRecord(this);
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReferenceRecord(this);
+        TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReferenceRecord(this);
         
-        BaseField fldTourCode = this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kCode);
-        BaseField fldDepartureDate = this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate);
-        BaseField fldTourDesc = this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kDescription);
+        BaseField fldTourCode = this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.CODE);
+        BaseField fldDepartureDate = this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE);
+        BaseField fldTourDesc = this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.DESCRIPTION);
         
         FieldListener fieldBehavior = null;
         fieldBehavior = new ChangeTourHeaderHandler(recTourHeader, recTourClass, recTour, recBooking, fldTourCode, fldDepartureDate, fldTourDesc);
@@ -152,7 +152,7 @@ public class BookingSession extends TableSession
     {
         if (BookingConstants.GET_DETAIL_COMMAND.equalsIgnoreCase(strCommand))
         {
-                return this.getRemoteTable(BookingDetail.kBookingDetailFile);
+                return this.getRemoteTable(BookingDetail.BOOKING_DETAIL_FILE);
         }
         else if (DBConstants.RESET.equalsIgnoreCase(strCommand))
         {

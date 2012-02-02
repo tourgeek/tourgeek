@@ -67,13 +67,13 @@ public class BookingStatusEventHandler extends TourEventHandler
         Stack<String> stack = new Stack<String>();
         while ((recBookingStatus != null) && (recBookingStatus.getEditMode() == DBConstants.EDIT_CURRENT))
         {
-            strKey = "eventStatus." + recBookingStatus.getField(BookingStatus.kDescription).toString() + "." + recBookingStatus.getField(BookingStatus.kID).toString();
-            if (BooleanField.YES.equals(((PropertiesField)recBooking.getField(Booking.kProperties)).getProperty(strKey)))
+            strKey = "eventStatus." + recBookingStatus.getField(BookingStatus.DESCRIPTION).toString() + "." + recBookingStatus.getField(BookingStatus.ID).toString();
+            if (BooleanField.YES.equals(((PropertiesField)recBooking.getField(Booking.PROPERTIES)).getProperty(strKey)))
                 break;  // Done
             stack.push(strKey);
-            if (BookingStatus.CANCELLED_CODE.equals(recBookingStatus.getField(BookingStatus.kCode).toString()))
-                this.getOwner().getRecord().getField(Booking.kCancelled).setState(true);
-            recBookingStatus = ((BookingStatusField)recBookingStatus.getField(BookingStatus.kFollowsBookingStatusID)).getReference();
+            if (BookingStatus.CANCELLED_CODE.equals(recBookingStatus.getField(BookingStatus.CODE).toString()))
+                this.getOwner().getRecord().getField(Booking.CANCELLED).setState(true);
+            recBookingStatus = ((BookingStatusField)recBookingStatus.getField(BookingStatus.FOLLOWS_BOOKING_STATUS_ID)).getReference();
         }
         while (!stack.empty())
         {
@@ -82,7 +82,7 @@ public class BookingStatusEventHandler extends TourEventHandler
             
             this.triggerEvent(m_iTourEventID, iBookingStatusID);
         
-            ((PropertiesField)recBooking.getField(Booking.kProperties)).setProperty(strKey, BooleanField.YES);
+            ((PropertiesField)recBooking.getField(Booking.PROPERTIES)).setProperty(strKey, BooleanField.YES);
             bBookingModified = true;
         }
         if (bBookingModified)

@@ -72,15 +72,15 @@ public class CreditCollectGridScreen extends CreditBaseGridScreen
     {
         super.addListeners();
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
         
-        this.getMainRecord().getField(CreditCard.kPaid).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.kAmountPaid), this.getMainRecord().getField(CreditCard.kNet)));
-        this.getMainRecord().getField(CreditCard.kPaid).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.kDatePaid), this.getScreenRecord().getField(McoScreenRecord.kToday)));
+        this.getMainRecord().getField(CreditCard.PAID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.AMOUNT_PAID), this.getMainRecord().getField(CreditCard.NET)));
+        this.getMainRecord().getField(CreditCard.PAID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(CreditCard.DATE_PAID), this.getScreenRecord().getField(McoScreenRecord.TODAY)));
         
-        this.getMainRecord().setKeyArea(CreditCard.kTrxStatusIDKey);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.APPROVED);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_STATUS_ID_KEY);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.APPROVED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus, true));
-        this.getMainRecord().getField(Mco.kPaid).setEnabled(true);
+        this.getMainRecord().getField(Mco.PAID).setEnabled(true);
     }
     /**
      * Add button(s) to the toolbar.
@@ -97,14 +97,14 @@ public class CreditCollectGridScreen extends CreditBaseGridScreen
     {
         super.setupSFields();
         
-        this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kDatePaid).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kAmountPaid).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.DATE_PAID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.AMOUNT_PAID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         
-        String strDesc = CreditCard.PAID;
+        String strDesc = CreditCard.ITEM_PAID;
         if (this.getTask() != null)
             strDesc = ((BaseApplication)this.getTask().getApplication()).getString(strDesc);
-        this.getMainRecord().getField(Mco.kPaid).setFieldDesc(strDesc);
-        new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getMainRecord().getField(Mco.kPaid), ScreenConstants.DISPLAY_FIELD_DESC);
+        this.getMainRecord().getField(Mco.PAID).setFieldDesc(strDesc);
+        new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getMainRecord().getField(Mco.PAID), ScreenConstants.DISPLAY_FIELD_DESC);
     }
     /**
      * Process the command.
@@ -127,7 +127,7 @@ public class CreditCollectGridScreen extends CreditBaseGridScreen
                     this.getMainRecord().set();
                 this.getMainRecord().addNew();
                 map = new Hashtable<String,Object>();
-                BaseField fldCardID = this.getScreenRecord().getField(McoScreenRecord.kCardID);
+                BaseField fldCardID = this.getScreenRecord().getField(McoScreenRecord.CARD_ID);
                 map.put(fldCardID.getFieldName(), fldCardID.toString());
             } catch (DBException ex)    {
                 ex.printStackTrace();

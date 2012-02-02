@@ -31,11 +31,17 @@ public class BankReconScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String BANK_ACCT_ID = "BankAcctID";
     public static final int kBankAcctID = kScreenRecordLastField + 1;
+    public static final String RECON_DATE = "ReconDate";
     public static final int kReconDate = kBankAcctID + 1;
+    public static final String START_CLEARED = "StartCleared";
     public static final int kStartCleared = kReconDate + 1;
+    public static final String DEPOSITS_CLEARED = "DepositsCleared";
     public static final int kDepositsCleared = kStartCleared + 1;
+    public static final String CHECKS_CLEARED = "ChecksCleared";
     public static final int kChecksCleared = kDepositsCleared + 1;
+    public static final String NEW_CLEARED = "NewCleared";
     public static final int kNewCleared = kChecksCleared + 1;
     public static final int kBankReconScreenRecordLastField = kNewCleared;
     public static final int kBankReconScreenRecordFields = kNewCleared - DBConstants.MAIN_FIELD + 1;

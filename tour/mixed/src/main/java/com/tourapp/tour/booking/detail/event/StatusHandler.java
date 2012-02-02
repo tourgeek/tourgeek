@@ -61,10 +61,10 @@ public class StatusHandler extends FieldListener
         if (this.getOwner() != null)
         {
             Record recCustSaleDetail = this.getOwner().getRecord();
-            recCustSaleDetail.getField(BookingDetail.kCostStatusID).addListener(new InitOnChangeHandler(this.getOwner()));
-            recCustSaleDetail.getField(BookingDetail.kInventoryStatusID).addListener(new InitOnChangeHandler(this.getOwner()));
-            recCustSaleDetail.getField(BookingDetail.kInfoStatusID).addListener(new InitOnChangeHandler(this.getOwner()));
-            recCustSaleDetail.getField(BookingDetail.kProductStatusID).addListener(new InitOnChangeHandler(this.getOwner()));
+            recCustSaleDetail.getField(BookingDetail.COST_STATUS_ID).addListener(new InitOnChangeHandler(this.getOwner()));
+            recCustSaleDetail.getField(BookingDetail.INVENTORY_STATUS_ID).addListener(new InitOnChangeHandler(this.getOwner()));
+            recCustSaleDetail.getField(BookingDetail.INFO_STATUS_ID).addListener(new InitOnChangeHandler(this.getOwner()));
+            recCustSaleDetail.getField(BookingDetail.PRODUCT_STATUS_ID).addListener(new InitOnChangeHandler(this.getOwner()));
         }
     }
     /**

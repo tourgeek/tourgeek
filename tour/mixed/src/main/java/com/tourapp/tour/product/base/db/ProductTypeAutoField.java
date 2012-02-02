@@ -83,7 +83,7 @@ public class ProductTypeAutoField extends StringPopupField
                 if (this.getRecord() instanceof Product)
         {
             this.getProductType();
-            String strProductCode = m_recProductType.getField(ProductType.kCode).toString();
+            String strProductCode = m_recProductType.getField(ProductType.CODE).toString();
             if (strProductCode != null)
                 if (strProductCode.length() > 0)
                     this.setString(strProductCode, bDisplayOption, DBConstants.INIT_MOVE);

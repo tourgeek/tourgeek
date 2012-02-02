@@ -99,13 +99,13 @@ public class RefundPendScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(ArTrx.kTrxStatusIDKey);
-        Record recBooking = ((ReferenceField)this.getMainRecord().getField(ArTrx.kBookingID)).getReferenceRecord();
+        this.getMainRecord().setKeyArea(ArTrx.TRX_STATUS_ID_KEY);
+        Record recBooking = ((ReferenceField)this.getMainRecord().getField(ArTrx.BOOKING_ID)).getReferenceRecord();
         if (recBooking.getRecordOwner() == null)
             this.addRecord(recBooking, false);
         this.setEnabled(false);
-        this.getMainRecord().getField(ArTrx.kTrxStatusID).setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kComments).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.TRX_STATUS_ID).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.COMMENTS).setEnabled(true);
     }
     /**
      * Set up all the screen fields.
@@ -117,15 +117,15 @@ public class RefundPendScreen extends Screen
         this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_SUBMITTED);
-        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_SUBMITTED));
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_HELD);
-        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAID_MANUAL);
-        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAID_MANUAL));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_SUBMITTED);
+        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_SUBMITTED));
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_HELD);
+        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAID_MANUAL);
+        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAID_MANUAL));
     }
 
 }

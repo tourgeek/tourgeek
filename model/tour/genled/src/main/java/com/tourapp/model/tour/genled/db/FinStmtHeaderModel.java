@@ -8,6 +8,11 @@ import org.jbundle.model.db.*;
 
 public interface FinStmtHeaderModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String DESCRIPTION = "Description";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final String FIN_STMT_HEADER_SCREEN_CLASS = "com.tourapp.tour.genled.finstmt.screen.FinStmtHeaderScreen";
     public static final String FIN_STMT_HEADER_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.finstmt.screen.FinStmtHeaderGridScreen";
 

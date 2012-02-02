@@ -214,7 +214,7 @@ public class FinStmtDetail extends VirtualRecord
                     continue;       // Already renumbered this one.
                 hsBookmarks.add(bookmark);
                 this.edit();
-                this.getField(FinStmtDetail.kSequence).setValue(iNextSeq);
+                this.getField(FinStmtDetail.SEQUENCE).setValue(iNextSeq);
                 iNextSeq = iNextSeq + 10;
                 this.set();
             }
@@ -238,7 +238,7 @@ public class FinStmtDetail extends VirtualRecord
         this.addListener(subFilter);
         
         Account recAccount = new Account(this.findRecordOwner());
-        recAccount.setKeyArea(Account.kAccountNoKey);
+        recAccount.setKeyArea(Account.ACCOUNT_NO_KEY);
         
         Object bookmarkIS = null;       // Default income statemet statement
         int iMaxDefaultSequence = 0;
@@ -255,20 +255,20 @@ public class FinStmtDetail extends VirtualRecord
                 if (bookmarkDefault == null)
                     bookmarkDefault = recFinStmt.getHandle(DBConstants.BOOKMARK_HANDLE);
                 if (bookmarkIS == null)
-                    if (StatementTypeField.INCOME_STATEMENT.equalsIgnoreCase(recFinStmt.getField(FinStmt.kStatementType).toString()))
+                    if (StatementTypeField.INCOME_STATEMENT.equalsIgnoreCase(recFinStmt.getField(FinStmt.STATEMENT_TYPE).toString()))
                         bookmarkIS = recFinStmt.getHandle(DBConstants.BOOKMARK_HANDLE);
                 if (bookmarkBS == null)
-                    if (StatementTypeField.BALANCE_SHEET.equalsIgnoreCase(recFinStmt.getField(FinStmt.kStatementType).toString()))
+                    if (StatementTypeField.BALANCE_SHEET.equalsIgnoreCase(recFinStmt.getField(FinStmt.STATEMENT_TYPE).toString()))
                         bookmarkBS = recFinStmt.getHandle(DBConstants.BOOKMARK_HANDLE);
                 int iMaxSequence = 0;
                 this.close();
                 while (this.hasNext())
                 {
                     this.next();
-                    if ((this.getField(FinStmtDetail.kAccountID).isNull())
-                        || (this.getField(FinStmtDetail.kAccountID).getValue() == 0))
+                    if ((this.getField(FinStmtDetail.ACCOUNT_ID).isNull())
+                        || (this.getField(FinStmtDetail.ACCOUNT_ID).getValue() == 0))
                             continue;   // No account, skip it.
-                    Record recAccountSecond = ((ReferenceField)this.getField(FinStmtDetail.kAccountID)).getReference();
+                    Record recAccountSecond = ((ReferenceField)this.getField(FinStmtDetail.ACCOUNT_ID)).getReference();
                     Object bookmark = null;
                     if (recAccountSecond != null)
                         bookmark = recAccountSecond.getHandle(DBConstants.BOOKMARK_HANDLE);
@@ -280,7 +280,7 @@ public class FinStmtDetail extends VirtualRecord
                         continue;
                     }
                     hsBookmarks.add(bookmark);      // This account is included in a statement
-                    iMaxSequence = (int)this.getField(FinStmtDetail.kSequence).getValue();
+                    iMaxSequence = (int)this.getField(FinStmtDetail.SEQUENCE).getValue();
                 }
                 if (bookmarkDefault == recFinStmt.getHandle(DBConstants.BOOKMARK_HANDLE))
                     iMaxDefaultSequence = iMaxSequence;
@@ -303,7 +303,7 @@ public class FinStmtDetail extends VirtualRecord
                 iMaxBSSequence = iMaxDefaultSequence;
             }
         
-            this.removeListener(subFilter, true);   // If I don't do this, The kFinStmtID field will be auto-set.
+            this.removeListener(subFilter, true);   // If I don't do this, The FIN_STMT_ID field will be auto-set.
             subFilter = null;
             // Now run through the accounts and make sure they are all in the statements... if not, add them.
             while (recAccount.hasNext())
@@ -316,22 +316,22 @@ public class FinStmtDetail extends VirtualRecord
                 // Add this to the appropriate statement
                 this.addNew();
         
-                if (recAccount.getField(Account.kCloseYearEnd).getState() == true)
+                if (recAccount.getField(Account.CLOSE_YEAR_END).getState() == true)
                 {
-                    this.getField(FinStmtDetail.kFinStmtID).setData(bookmarkIS);
+                    this.getField(FinStmtDetail.FIN_STMT_ID).setData(bookmarkIS);
                     iMaxISSequence = iMaxISSequence + 10;
-                    this.getField(FinStmtDetail.kSequence).setValue(iMaxISSequence);
+                    this.getField(FinStmtDetail.SEQUENCE).setValue(iMaxISSequence);
                 }
                 else
                 {
-                    this.getField(FinStmtDetail.kFinStmtID).setData(bookmarkBS);
+                    this.getField(FinStmtDetail.FIN_STMT_ID).setData(bookmarkBS);
                     iMaxBSSequence = iMaxBSSequence + 10;
-                    this.getField(FinStmtDetail.kSequence).setValue(iMaxBSSequence);
+                    this.getField(FinStmtDetail.SEQUENCE).setValue(iMaxBSSequence);
                 }
                 if (bookmarkIS == bookmarkBS)
                     iMaxISSequence = iMaxBSSequence = Math.max(iMaxISSequence, iMaxBSSequence);
-                this.getField(FinStmtDetail.kAccountID).moveFieldToThis(recAccount.getField(Account.kID));
-                this.getField(FinStmtDetail.kTypicalBalance).moveFieldToThis(recAccount.getField(Account.kTypicalBalance));
+                this.getField(FinStmtDetail.ACCOUNT_ID).moveFieldToThis(recAccount.getField(Account.ID));
+                this.getField(FinStmtDetail.TYPICAL_BALANCE).moveFieldToThis(recAccount.getField(Account.TYPICAL_BALANCE));
         
                 this.add();
             }

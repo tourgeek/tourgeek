@@ -105,12 +105,12 @@ public class ItemMessageData extends ProductMessageData
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingItem recBookingItem = (BookingItem)record;
-        Record recBooking = ((ReferenceField)recBookingItem.getField(BookingDetail.kBookingID)).getReference();
+        Record recBooking = ((ReferenceField)recBookingItem.getField(BookingDetail.BOOKING_ID)).getReference();
         if (recBooking != null)
         { // Since there is no product date, use the departure date
-            Record recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             if (recTour != null)
-                this.putRawFieldData(recTour.getField(Tour.kDepartureDate));
+                this.putRawFieldData(recTour.getField(Tour.DEPARTURE_DATE));
         }
         return iErrorCode;
     }
@@ -123,8 +123,8 @@ public class ItemMessageData extends ProductMessageData
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Item.kItemFile) != null)
-                    return (Item)recordOwner.getRecord(Item.kItemFile);
+                if (recordOwner.getRecord(Item.ITEM_FILE) != null)
+                    return (Item)recordOwner.getRecord(Item.ITEM_FILE);
         return new Item(recordOwner);
     }
 

@@ -100,8 +100,8 @@ public class McoBatchDistScreen extends Screen
         
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
         
-        this.getRecord(McoBatchDist.kMcoBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), Mco.kNet, false, true));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kEndBalance), this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), this.getRecord(Mco.kMcoFile).getField(Mco.kNet), true));
+        this.getRecord(McoBatchDist.MCO_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), Mco.NET, false, true));
+        this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.END_BALANCE), this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), this.getRecord(Mco.MCO_FILE).getField(Mco.NET), true));
     }
     /**
      * If there is a header record, return it, otherwise, return the main record.
@@ -111,7 +111,7 @@ public class McoBatchDistScreen extends Screen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Mco.kMcoFile);
+        return this.getRecord(Mco.MCO_FILE);
     }
     /**
      * Make a sub-screen.

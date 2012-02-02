@@ -60,28 +60,28 @@ public class CalcDepositHandler extends FieldListener
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
         Record recBooking = this.getOwner().getRecord();
-        int iPax = (int)recBooking.getField(Booking.kPax).getValue();
+        int iPax = (int)recBooking.getField(Booking.PAX).getValue();
         double dDepositAmount = 0;
-        if (!recBooking.getField(Booking.kTourID).isNull())
+        if (!recBooking.getField(Booking.TOUR_ID).isNull())
         {
-            Record recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+            Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             if (recTour != null)
             {
-                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
                 if (recTourHeader != null)
                 {
-                    TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.kTourClassID)).getReference();
+                    TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
                     if (recTourClass != null)
                     {
                         recTourClass.fixBasedFields();
-                        dDepositAmount = recTourClass.getField(TourClass.kDepositAmount).getValue();
+                        dDepositAmount = recTourClass.getField(TourClass.DEPOSIT_AMOUNT).getValue();
                     }
                 }
             }
         }
         
         double dDeposit = dDepositAmount * iPax;
-        recBooking.getField(Booking.kDeposit).setValue(dDeposit);
+        recBooking.getField(Booking.DEPOSIT).setValue(dDeposit);
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }
 

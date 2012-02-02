@@ -127,10 +127,10 @@ public class HotelInventoryRangeAdjust extends ProductInventoryRangeAdjust
      */
     public void setInvKey(Record recInventory, BaseField fldTargetDate)
     {
-        recInventory.getField(Inventory.kInvDate).moveFieldToThis(fldTargetDate);
-        recInventory.getField(Inventory.kRateID).moveFieldToThis(this.getScreenRecord().getField(HotelScreenRecord.kRateID));
-        recInventory.getField(Inventory.kClassID).moveFieldToThis(this.getScreenRecord().getField(HotelScreenRecord.kClassID));
-        recInventory.getField(Inventory.kOtherID).moveFieldToThis(this.getScreenRecord().getField(HotelScreenRecord.kPaxCategoryID));
+        recInventory.getField(Inventory.INV_DATE).moveFieldToThis(fldTargetDate);
+        recInventory.getField(Inventory.RATE_ID).moveFieldToThis(this.getScreenRecord().getField(HotelScreenRecord.RATE_ID));
+        recInventory.getField(Inventory.CLASS_ID).moveFieldToThis(this.getScreenRecord().getField(HotelScreenRecord.CLASS_ID));
+        recInventory.getField(Inventory.OTHER_ID).moveFieldToThis(this.getScreenRecord().getField(HotelScreenRecord.PAX_CATEGORY_ID));
     }
 
 }

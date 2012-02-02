@@ -146,7 +146,7 @@ public class ProductMerge extends QueryRecord
             pQueryTable = (Record)this.getRecord(strProduct);
             if (pQueryTable != null)
             {   // Make sure I can read the current record from the right file
-                pQueryTable.getField(Product.kID).moveFieldToThis(this.getField(Product.kID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                pQueryTable.getField(Product.ID).moveFieldToThis(this.getField(Product.ID), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
             }
         }
         return pQueryTable;
@@ -163,40 +163,40 @@ public class ProductMerge extends QueryRecord
      */
     public void selectFields()
     {
-        Product pProduct = (Product)this.getRecord(Product.kProductFile);
+        Product pProduct = (Product)this.getRecord(Product.PRODUCT_FILE);
         this.setSelected(false);
         super.selectFields();
         
-        pProduct.getField(Product.kID).setSelected(true);
-        pProduct.getField(Product.kDescription).setSelected(true);
-        pProduct.getField(Product.kCityID).setSelected(true);
-        this.getField(City.kCityFile, City.kTicketCityDesc).setSelected(true);
-        this.getField(City.kCityFile, City.kCountryID).setSelected(true);
+        pProduct.getField(Product.ID).setSelected(true);
+        pProduct.getField(Product.DESCRIPTION).setSelected(true);
+        pProduct.getField(Product.CITY_ID).setSelected(true);
+        this.getField(City.CITY_FILE, City.TICKET_CITY_DESC).setSelected(true);
+        this.getField(City.CITY_FILE, City.COUNTRY_ID).setSelected(true);
         
-        this.getField(Country.kCountryFile, Country.kDescription).setSelected(true);
+        this.getField(Country.COUNTRY_FILE, Country.DESCRIPTION).setSelected(true);
         
         pProduct.getField("Type").setSelected(true);
         
-        pProduct.getField(Vendor.kID).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kVendorName).setSelected(true);
+        pProduct.getField(Vendor.ID).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.VENDOR_NAME).setSelected(true);
         
-        pProduct.getField(Product.kOperatorsCode).setSelected(true);
-        pProduct.getField(Product.kCode).setSelected(true);
+        pProduct.getField(Product.OPERATORS_CODE).setSelected(true);
+        pProduct.getField(Product.CODE).setSelected(true);
         
         pProduct.getField("Product").setSelected(true);
         
-        pProduct.getField(Product.kDescSort).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kNameSort).setSelected(true);
-        this.getField(City.kCityFile, City.kDescription).setSelected(true);
+        pProduct.getField(Product.DESC_SORT).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.NAME_SORT).setSelected(true);
+        this.getField(City.CITY_FILE, City.DESCRIPTION).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Product.kProductFile), this.getRecord(City.kCityFile), Product.kCityID, City.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(City.kCityFile), this.getRecord(Country.kCountryFile), City.kCountryID, Country.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER,  this.getRecord(Product.kProductFile), this.getRecord(Vendor.kVendorFile), Product.kVendorID, Vendor.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Product.PRODUCT_FILE), this.getRecord(City.CITY_FILE), Product.CITY_ID, City.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(City.CITY_FILE), this.getRecord(Country.COUNTRY_FILE), City.COUNTRY_ID, Country.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER,  this.getRecord(Product.PRODUCT_FILE), this.getRecord(Vendor.VENDOR_FILE), Product.VENDOR_ID, Vendor.ID);
     }
 
 }

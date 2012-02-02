@@ -89,14 +89,14 @@ public class McoGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(Mco.kMcoNoKey);
+        this.getMainRecord().setKeyArea(Mco.MCO_NO_KEY);
         // Add the filters behaviors
-        this.getMainRecord().addListener(new ExtractRangeFilter(Mco.kBookingID, this.getScreenRecord().getField(CashBatchScreenRecord.kBookingID)));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kBookingID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new ExtractRangeFilter(Mco.kAirlineID, this.getScreenRecord().getField(CashBatchScreenRecord.kAirlineID)));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kAirlineID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new ExtractRangeFilter(Mco.kMcoNo, this.getScreenRecord().getField(CashBatchScreenRecord.kMcoNo)));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kMcoNo).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Mco.BOOKING_ID, this.getScreenRecord().getField(CashBatchScreenRecord.BOOKING_ID)));
+        this.getScreenRecord().getField(CashBatchScreenRecord.BOOKING_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Mco.AIRLINE_ID, this.getScreenRecord().getField(CashBatchScreenRecord.AIRLINE_ID)));
+        this.getScreenRecord().getField(CashBatchScreenRecord.AIRLINE_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Mco.MCO_NO, this.getScreenRecord().getField(CashBatchScreenRecord.MCO_NO)));
+        this.getScreenRecord().getField(CashBatchScreenRecord.MCO_NO).addListener(new FieldReSelectHandler(this));
         this.setEnabled(false);
     }
     /**
@@ -125,9 +125,9 @@ public class McoGridScreen extends GridScreen
     {
         ToolScreen screen = super.addToolbars();
         
-        this.getScreenRecord().getField(CashBatchScreenRecord.kBookingID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(CashBatchScreenRecord.kAirlineID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(CashBatchScreenRecord.kMcoNo).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CashBatchScreenRecord.BOOKING_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CashBatchScreenRecord.AIRLINE_ID).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CashBatchScreenRecord.MCO_NO).setupDefaultView(screen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), screen, ScreenConstants.DEFAULT_DISPLAY);
         return screen;
     }
     /**

@@ -60,7 +60,7 @@ public class CalcCarReturnDate extends FieldListener
     {
         BaseField fldDays = this.getOwner();
         BookingCar recBookingCar = (BookingCar)fldDays.getRecord();
-        DateTimeField fldStartDate = (DateTimeField)recBookingCar.getField(BookingCar.kDetailDate);
+        DateTimeField fldStartDate = (DateTimeField)recBookingCar.getField(BookingCar.DETAIL_DATE);
         if ((!fldStartDate.isNull())
             && (fldDays.getValue() > 0))
         {
@@ -74,7 +74,7 @@ public class CalcCarReturnDate extends FieldListener
             calendar.set(Calendar.MILLISECOND, 0);
             dateEnd = calendar.getTime();
             
-            DateTimeField fldEndDate = (DateTimeField)recBookingCar.getField(BookingCar.kDetailEndDate);
+            DateTimeField fldEndDate = (DateTimeField)recBookingCar.getField(BookingCar.DETAIL_END_DATE);
             return fldEndDate.setDateTime(dateEnd, bDisplayOption, iMoveMode);
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);

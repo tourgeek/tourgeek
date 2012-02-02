@@ -62,9 +62,9 @@ public class CheckTourSeriesHandler extends FieldListener
         if (!fldTourTypeID.isNull())
         {
             if ((TourType.SERIES & (int)this.getOwner().getValue()) != 0)
-                this.getOwner().getRecord().getField(TourHeader.kTourSeries).setState(true);
+                this.getOwner().getRecord().getField(TourHeader.TOUR_SERIES).setState(true);
             else
-                this.getOwner().getRecord().getField(TourHeader.kTourSeries).setState(false);
+                this.getOwner().getRecord().getField(TourHeader.TOUR_SERIES).setState(false);
         }
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }

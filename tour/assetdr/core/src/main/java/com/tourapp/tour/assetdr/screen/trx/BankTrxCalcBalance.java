@@ -101,7 +101,7 @@ public class BankTrxCalcBalance extends FieldListener
                         recordOwner.removeRecord(m_recBankTrx);
                     m_recBankTrx.addListener(new SubFileFilter(m_recBankAcct));
         
-                    m_recBankTrx.addListener(new SubCountHandler(m_fldBalance, BankTrx.kAmount, false, true));   // Init this field override for other value
+                    m_recBankTrx.addListener(new SubCountHandler(m_fldBalance, BankTrx.AMOUNT, false, true));   // Init this field override for other value
                 }
                 m_fldBalance.initField(DBConstants.DISPLAY);
                 m_fldBalance.setValue(0.00);

@@ -81,20 +81,20 @@ public class BankReconScreen extends Screen
         super.addListeners();
         this.setAppending(false);
         this.setEnabled(false);
-        this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kDateReconciled).setEnabled(true);
-        this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID).moveFieldToThis(this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kBankAcctID));
-        //xthis.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.kAssetDrControlFile).getField(AssetDrControl.kBankAcctID)));
+        this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.DATE_RECONCILED).setEnabled(true);
+        this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID).moveFieldToThis(this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.BANK_ACCT_ID));
+        //xthis.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE).getField(AssetDrControl.BANK_ACCT_ID)));
         
-        this.getMainRecord().setKeyArea(BankTrx.kTrxDateKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankReconScreenRecord.kBankAcctID), BankTrx.kBankAcctID, null, -1, null, -1));
+        this.getMainRecord().setKeyArea(BankTrx.TRX_DATE_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(BankReconScreenRecord.BANK_ACCT_ID), BankTrx.BANK_ACCT_ID, null, null, null, null));
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Converter field = this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kDateReconciled);
-        BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.kReconDate);
+        Converter field = this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.DATE_RECONCILED);
+        BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.RECON_DATE);
         Converter converter = new ReconciledConverter(field, fldTargetValue, "Reconciled?", true);
         new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

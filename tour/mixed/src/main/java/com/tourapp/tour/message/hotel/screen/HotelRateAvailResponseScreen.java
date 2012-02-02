@@ -75,7 +75,7 @@ public class HotelRateAvailResponseScreen extends HotelAvailResponseScreen
     {
         super.addListeners();
         
-        this.getScreenRecord().getField(HotelInfoScreenRecord.kTotalCost).setEnabled(true);
+        this.getScreenRecord().getField(HotelInfoScreenRecord.TOTAL_COST).setEnabled(true);
     }
     /**
      * Set up all the screen fields.
@@ -92,7 +92,7 @@ public class HotelRateAvailResponseScreen extends HotelAvailResponseScreen
     {
         super.moveScreenParamsToMessage(message);
         ProductResponseMessageData messageData = (ProductResponseMessageData)message.getMessageDataDesc(BaseProductResponse.PRODUCT_RESPONSE_MESSAGE);
-        Double dblHotelCost = (Double)this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kTotalCost).getData();
+        Double dblHotelCost = (Double)this.getScreenRecord().getField(HotelInfoScreenRecord.TOTAL_COST).getData();
         messageData.put(BookingDetail.TOTAL_COST, dblHotelCost);
     }
 

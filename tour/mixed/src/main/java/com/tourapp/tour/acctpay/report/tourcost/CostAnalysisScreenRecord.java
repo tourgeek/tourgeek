@@ -33,14 +33,23 @@ public class CostAnalysisScreenRecord extends ApReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String TOUR_ID = "TourID";
     public static final int kTourID = kApReportScreenRecordLastField + 1;
+    public static final String TOUR_TYPE_ID = "TourTypeID";
     public static final int kTourTypeID = kTourID + 1;
+    public static final String SUB_TOTAL_DEP_EST_USD = "SubTotalDepEstUSD";
     public static final int kSubTotalDepEstUSD = kTourTypeID + 1;
+    public static final String SUB_TOTAL_INVOICE_USD = "SubTotalInvoiceUSD";
     public static final int kSubTotalInvoiceUSD = kSubTotalDepEstUSD + 1;
+    public static final String SUB_TOTAL_PAYMENTS_USD = "SubTotalPaymentsUSD";
     public static final int kSubTotalPaymentsUSD = kSubTotalInvoiceUSD + 1;
+    public static final String SUB_TOTAL_BAL_USD = "SubTotalBalUSD";
     public static final int kSubTotalBalUSD = kSubTotalPaymentsUSD + 1;
+    public static final String TOTAL_DEP_EST_USD = "TotalDepEstUSD";
     public static final int kTotalDepEstUSD = kSubTotalBalUSD + 1;
+    public static final String TOTAL_INVOICE_USD = "TotalInvoiceUSD";
     public static final int kTotalInvoiceUSD = kTotalDepEstUSD + 1;
+    public static final String TOTAL_PAYMENTS_USD = "TotalPaymentsUSD";
     public static final int kTotalPaymentsUSD = kTotalInvoiceUSD + 1;
     public static final int kCostAnalysisScreenRecordLastField = kTotalPaymentsUSD;
     public static final int kCostAnalysisScreenRecordFields = kTotalPaymentsUSD - DBConstants.MAIN_FIELD + 1;

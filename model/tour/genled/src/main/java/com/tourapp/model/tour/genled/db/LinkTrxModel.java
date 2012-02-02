@@ -8,6 +8,11 @@ import com.tourapp.model.tour.genled.db.*;
 
 public interface LinkTrxModel extends BaseTrxModel
 {
+
+    public static final String LINKED_TRX_ID = "LinkedTrxID";
+    public static final String LINKED_TRX_DESC_ID = "LinkedTrxDescID";
+
+    public static final String LINKED_TRX_ID_KEY = "LinkedTrxID";
     public static final String PAYMENT_HISTORY_ICON = "Price";
     public static final String SOURCE = "Source";
     public static final String PAYMENT_DISTRIBUTION = "Payment Distribution";

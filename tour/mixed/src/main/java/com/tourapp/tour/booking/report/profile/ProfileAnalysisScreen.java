@@ -108,65 +108,65 @@ public class ProfileAnalysisScreen extends AnalysisScreen
     public BaseField getSourceField(int iSeq)
     {
         BaseField field = super.getSourceField(iSeq);
-        if (field.getFieldName().equals(this.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSales).getFieldName()))
+        if (field.getFieldName().equals(this.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES).getFieldName()))
         {
-            if ((this.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSalesStartDate).isNull()) && (this.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSalesEndDate).isNull()))
+            if ((this.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES_START_DATE).isNull()) && (this.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES_END_DATE).isNull()))
                 return null;    // Don't include gross sales
             Record recProfile = this.getBasisRecord();
-            if (this.getRecord(Booking.kBookingFile) == null)
+            if (this.getRecord(Booking.BOOKING_FILE) == null)
             {
                 Booking recBooking = new Booking(this);
                 BookingLine recBookingLine = new BookingLine(this);
         
                 recProfile.addListener(new RecountOnValidHandler(recBooking));
                 recBooking.addListener(new SubFileFilter(recProfile));
-        //+        recBooking.addListener(new ExtractRangeFilter(Booking.kDepDate, this.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSalesStartDate), this.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSalesEndDate), true));
+        //+        recBooking.addListener(new ExtractRangeFilter(Booking.DEP_DATE, this.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES_START_DATE), this.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES_END_DATE), true));
         
                 recBooking.addListener(new RecountOnValidHandler(recBookingLine));
                 recBookingLine.addDetailBehaviors(recBooking, null);
         
-                recBooking.addListener(new SubCountHandler(this.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSales), Booking.kGross, true, true));
+                recBooking.addListener(new SubCountHandler(this.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES), Booking.GROSS, true, true));
             }
         }
         if ((iSeq == 0) || (iSeq == 1) || (iSeq == 2))
         {
-            int iScreenRecordSeq = ProfileAnalysisScreenRecord.kPrimaryAnalysisType;
+            String iScreenRecordSeq = ProfileAnalysisScreenRecord.PRIMARY_ANALYSIS_TYPE;
             if (iSeq == 1)
-                iScreenRecordSeq = ProfileAnalysisScreenRecord.kSecondaryAnalysisType;
+                iScreenRecordSeq = ProfileAnalysisScreenRecord.SECONDARY_ANALYSIS_TYPE;
             if (iSeq == 2)
-                iScreenRecordSeq = ProfileAnalysisScreenRecord.kThirdAnalysisType;
+                iScreenRecordSeq = ProfileAnalysisScreenRecord.THIRD_ANALYSIS_TYPE;
         
             String strPrimary = this.getScreenRecord().getField(iScreenRecordSeq).toString();
-            int iPrimaryField = Profile.kProfileTypeID;
+            String iPrimaryField = Profile.PROFILE_TYPE_ID;
             if (ProfileAnalysisField.NONE.equalsIgnoreCase(strPrimary))
                 return null;
             else if (ProfileAnalysisField.AFFILIATION.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kAffiliationID;
+                iPrimaryField = Profile.AFFILIATION_ID;
             else if (ProfileAnalysisField.PROFILE_CLASS.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kProfileClassID;
+                iPrimaryField = Profile.PROFILE_CLASS_ID;
             else if (ProfileAnalysisField.PROFILE_STATUS.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kProfileStatusID;
+                iPrimaryField = Profile.PROFILE_STATUS_ID;
             else if (ProfileAnalysisField.STATE_REGION.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kStateOrRegion;
+                iPrimaryField = Profile.STATE_OR_REGION;
             else if (ProfileAnalysisField.CITY_TOWN.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kCityOrTown;
+                iPrimaryField = Profile.CITY_OR_TOWN;
             else if (ProfileAnalysisField.COUNTRY.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kCountry;
+                iPrimaryField = Profile.COUNTRY;
             else if (ProfileAnalysisField.PROFILE_TYPE.equalsIgnoreCase(strPrimary))
-                iPrimaryField = Profile.kProfileTypeID;
+                iPrimaryField = Profile.PROFILE_TYPE_ID;
             else if ((ProfileAnalysisField.SALES_REGION.equalsIgnoreCase(strPrimary))
                 || (ProfileAnalysisField.SALESPERSON.equalsIgnoreCase(strPrimary)))
             {
                 SCF recSCF = new SCF(this);
-                this.getRecord(Profile.kProfileFile).addListener(new MoveOnValidHandler(recSCF.getField(SCF.kScfFrom), this.getRecord(Profile.kProfileFile).getField(Profile.kPostalCode), null, true, true));
-                MainFieldHandler behavior = (MainFieldHandler)recSCF.getField(SCF.kScfFrom).getListener(ScfFromHandler.class.getName());
+                this.getRecord(Profile.PROFILE_FILE).addListener(new MoveOnValidHandler(recSCF.getField(SCF.SCF_FROM), this.getRecord(Profile.PROFILE_FILE).getField(Profile.POSTAL_CODE), null, true, true));
+                MainFieldHandler behavior = (MainFieldHandler)recSCF.getField(SCF.SCF_FROM).getListener(ScfFromHandler.class.getName());
                 behavior.setReadOnly(true);
                 behavior.setRespondsToMode(DBConstants.INIT_MOVE, true);
                 if (ProfileAnalysisField.SALESPERSON.equalsIgnoreCase(strPrimary))
-                    return recSCF.getField(SCF.kSalespersonID);
-                return recSCF.getField(SCF.kSalesRegionID);
+                    return recSCF.getField(SCF.SALESPERSON_ID);
+                return recSCF.getField(SCF.SALES_REGION_ID);
             }
-            field = this.getRecord(Profile.kProfileFile).getField(iPrimaryField);
+            field = this.getRecord(Profile.PROFILE_FILE).getField(iPrimaryField);
         }
         return field;
     }
@@ -180,7 +180,7 @@ public class ProfileAnalysisScreen extends AnalysisScreen
     public boolean isKeyField(BaseField field, int iSourceFieldSeq)
     {
         int iKeyCount = 0;
-        for (int iFieldSeq = ProfileAnalysisScreenRecord.kPrimaryAnalysisType; iFieldSeq <= ProfileAnalysisScreenRecord.kThirdAnalysisType; iFieldSeq++)
+        for (int iFieldSeq = this.getScreenRecord().getFieldSeq(ProfileAnalysisScreenRecord.PRIMARY_ANALYSIS_TYPE); iFieldSeq <= this.getScreenRecord().getFieldSeq(ProfileAnalysisScreenRecord.THIRD_ANALYSIS_TYPE); iFieldSeq++)
         {
             if (!ProfileAnalysisField.NONE.equals(this.getScreenRecord().getField(iFieldSeq)))
                 iKeyCount++;
@@ -212,11 +212,11 @@ public class ProfileAnalysisScreen extends AnalysisScreen
      */
     public void addToolbarButtons(ToolScreen toolScreen)
     {
-        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.kPrimaryAnalysisType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.kSecondaryAnalysisType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.kThirdAnalysisType).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSalesStartDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.kGrossSalesEndDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.PRIMARY_ANALYSIS_TYPE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.SECONDARY_ANALYSIS_TYPE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.THIRD_ANALYSIS_TYPE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES_START_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.GROSS_SALES_END_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         toolScreen.getScreenRecord().getField(ProfileAnalysisScreenRecord.ktemplate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         super.addToolbarButtons(toolScreen);
     }

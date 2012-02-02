@@ -102,23 +102,23 @@ public class HotelScreen extends ProductScreen
         super.addListeners();
         this.addMainKeyBehavior();
         Hotel bkHotel = (Hotel)this.getMainRecord();
-        Vendor apVendor = (Vendor)this.getRecord(Vendor.kVendorFile);
-        ReadSecondaryHandler secondaryStuff = new ReadSecondaryHandler(apVendor, Vendor.kIDKey);
-        bkHotel.getField(Hotel.kVendorID).addListener(secondaryStuff);
-        ReadSecondaryHandler currSecond = new ReadSecondaryHandler(this.getRecord(Currencys.kCurrencysFile), Currencys.kCurrencyCodeKey);
-        apVendor.getField(Vendor.kCurrencysID).addListener(currSecond);
+        Vendor apVendor = (Vendor)this.getRecord(Vendor.VENDOR_FILE);
+        ReadSecondaryHandler secondaryStuff = new ReadSecondaryHandler(apVendor, Vendor.ID_KEY);
+        bkHotel.getField(Hotel.VENDOR_ID).addListener(secondaryStuff);
+        ReadSecondaryHandler currSecond = new ReadSecondaryHandler(this.getRecord(Currencys.CURRENCYS_FILE), Currencys.CURRENCY_CODE_KEY);
+        apVendor.getField(Vendor.CURRENCYS_ID).addListener(currSecond);
         
-        BaseField checkMark = bkHotel.getField(Hotel.kSameAsVendor);
-        secondaryStuff.addFieldSeqPair(Hotel.kDescription, Vendor.kVendorName, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kAddressLine1, Vendor.kAddressLine1, DBConstants.MOVE_TO_DEPENDENT,DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kAddressLine2, Vendor.kAddressLine2, DBConstants.MOVE_TO_DEPENDENT,DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kCityOrTown, Vendor.kCityOrTown, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kStateOrRegion, Vendor.kStateOrRegion, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kPostalCode, Vendor.kPostalCode, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kCountry, Vendor.kCountry, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kTel, Vendor.kTel, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kFax, Vendor.kFax, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
-        secondaryStuff.addFieldSeqPair(Hotel.kEmail, Vendor.kEmail, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        BaseField checkMark = bkHotel.getField(Hotel.SAME_AS_VENDOR);
+        secondaryStuff.addFieldSeqPair(Hotel.DESCRIPTION, Vendor.VENDOR_NAME, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.ADDRESS_LINE_1, Vendor.ADDRESS_LINE_1, DBConstants.MOVE_TO_DEPENDENT,DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.ADDRESS_LINE_2, Vendor.ADDRESS_LINE_2, DBConstants.MOVE_TO_DEPENDENT,DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.CITY_OR_TOWN, Vendor.CITY_OR_TOWN, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.STATE_OR_REGION, Vendor.STATE_OR_REGION, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.POSTAL_CODE, Vendor.POSTAL_CODE, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.COUNTRY, Vendor.COUNTRY, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.TEL, Vendor.TEL, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.FAX, Vendor.FAX, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
+        secondaryStuff.addFieldSeqPair(Hotel.EMAIL, Vendor.EMAIL, DBConstants.MOVE_TO_DEPENDENT, DBConstants.DONT_MOVE_DEPENDENT_BACK, checkMark, null);
     }
     /**
      * Add button(s) to the toolbar.
@@ -138,9 +138,9 @@ public class HotelScreen extends ProductScreen
         this.getRecord(Hotel.kHotelFile).getField(Hotel.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription).setEnabled(false);
+        this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.DESCRIPTION).setEnabled(false);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
-        this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setEnabled(false);
+        this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.COSTING_RATE).setEnabled(false);
         this.getRecord(Hotel.kHotelFile).getField(Hotel.kSameAsVendor).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Hotel.kHotelFile).getField(Hotel.kCityID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Hotel.kHotelFile).getField(Hotel.kAddressLine1).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

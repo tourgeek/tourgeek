@@ -75,7 +75,7 @@ public class BaseDataStatusField extends BaseStatusField
                     {
                         if (recBookingDetail.getField(iStatusType) == this)
                         {
-                            if (recBookingDetail.checkRequiredParams(iStatusType) == 0) // Possible that the data is okay now, check it.
+                            if (recBookingDetail.checkRequiredParams(this.getFieldName()) == null) // Possible that the data is okay now, check it.
                             {   // If I say data required, but the refresh says something else, use the refresh status and recheck the data
                                 recBookingDetail.getField(iStatusType + BookingDetail.MESSAGE_REQUEST_OFFSET).setState(true);
                                 return DBConstants.NORMAL_RETURN;

@@ -353,18 +353,18 @@ public class Profile extends Company
         super.addMasterListeners();
         this.addListener(new SetUserIDHandler(kEnteredID, true));
         
-        this.getField(Company.kContact).removeListener(this.getField(Company.kContact).getListener(CopyLastHandler.class.getName()), true);
-        this.getField(Company.kName).removeListener(this.getField(Company.kName).getListener(CopyFieldHandler.class.getName()), true);
+        this.getField(Company.CONTACT).removeListener(this.getField(Company.CONTACT).getListener(CopyLastHandler.class.getName()), true);
+        this.getField(Company.NAME).removeListener(this.getField(Company.NAME).getListener(CopyFieldHandler.class.getName()), true);
         
-        Converter converter = this.getField(Company.kName);
-        Converter cnvDependent = this.getField(Profile.kNameSur);
+        Converter converter = this.getField(Company.NAME);
+        Converter cnvDependent = this.getField(Profile.NAME_SUR);
         Converter converterAlt = new AltFieldConverter(converter, cnvDependent);
         this.addListener(new RemoveConverterOnCloseHandler(converterAlt));
         
         boolean bClearIfThisNull = false;
         boolean bOnlyIfDestNull = false;
-        this.getField(Profile.kName).addListener(new MoveOnChangeHandler(this.getField(Profile.kNameSort), converterAlt, bClearIfThisNull, bOnlyIfDestNull));    // Only if dest is null (ie., company name is null)
-        this.getField(Profile.kNameSur).addListener(new MoveOnChangeHandler(this.getField(Profile.kNameSort), converterAlt));    // Only if dest is null (ie., company name is null)
+        this.getField(Profile.NAME).addListener(new MoveOnChangeHandler(this.getField(Profile.NAME_SORT), converterAlt, bClearIfThisNull, bOnlyIfDestNull));    // Only if dest is null (ie., company name is null)
+        this.getField(Profile.NAME_SUR).addListener(new MoveOnChangeHandler(this.getField(Profile.NAME_SORT), converterAlt));    // Only if dest is null (ie., company name is null)
     }
     /**
      * Convert the command to the screen document type.
@@ -405,7 +405,7 @@ public class Profile extends Company
      */
     public MessageTransport getMessageTransport(TrxMessageHeader trxMessageHeader)
     {
-        return (MessageTransport)((ReferenceField)this.getField(Profile.kMessageTransportID)).getReference();
+        return (MessageTransport)((ReferenceField)this.getField(Profile.MESSAGE_TRANSPORT_ID)).getReference();
     }
     /**
      * Add the destination information of this person to the message.
@@ -422,9 +422,9 @@ public class Profile extends Company
     public boolean setProperty(String strKey, String strProperty)
     {
         if (TrxMessageHeader.DESTINATION_PARAM.equalsIgnoreCase(strKey))
-            this.getField(Profile.kWeb).setString(strProperty);
+            this.getField(Profile.WEB).setString(strProperty);
         else
-            ((PropertiesField)this.getField(Profile.kProperties)).setProperty(strKey, strProperty);
+            ((PropertiesField)this.getField(Profile.PROPERTIES)).setProperty(strKey, strProperty);
         return true;
     }
     /**
@@ -433,9 +433,9 @@ public class Profile extends Company
     public String getProperty(String strKey)
     {
         if (TrxMessageHeader.DESTINATION_PARAM.equalsIgnoreCase(strKey))
-            return this.getField(Profile.kWeb).toString();
+            return this.getField(Profile.WEB).toString();
         else
-            return ((PropertiesField)this.getField(Profile.kProperties)).getProperty(strKey);
+            return ((PropertiesField)this.getField(Profile.PROPERTIES)).getProperty(strKey);
     }
 
 }

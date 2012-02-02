@@ -30,7 +30,7 @@ import com.tourapp.tour.booking.detail.db.*;
  */
 public class UpdateTourStatusHandler extends FileListener
 {
-    protected int m_iFieldSeq = -1;
+    protected String m_iFieldSeq = null;
     /**
      * Default constructor.
      */
@@ -41,7 +41,7 @@ public class UpdateTourStatusHandler extends FileListener
     /**
      * UpdateTourStatusHandler Method.
      */
-    public UpdateTourStatusHandler(int iFieldSeq)
+    public UpdateTourStatusHandler(String iFieldSeq)
     {
         this();
         this.init(iFieldSeq);
@@ -49,7 +49,7 @@ public class UpdateTourStatusHandler extends FileListener
     /**
      * Initialize class fields.
      */
-    public void init(int iFieldSeq)
+    public void init(String iFieldSeq)
     {
         super.init(null);
         m_iFieldSeq = iFieldSeq;
@@ -84,12 +84,12 @@ public class UpdateTourStatusHandler extends FileListener
                 // Do a special check - if the Booking's tour IS this detail's tour and it is current and locked, use that one.
                 if (recBooking != null)
                     if ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                        if (recBooking.getField(Booking.kTourID).equals(recBookingDetail.getField(BookingDetail.kTourID)))
-                            recTour = ((ReferenceField)recBooking.getField(Booking.kTourID)).getReference();
+                        if (recBooking.getField(Booking.TOUR_ID).equals(recBookingDetail.getField(BookingDetail.TOUR_ID)))
+                            recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
                 
                 boolean bUpdateTourNow = true;
                 if ((recTour == null) || ((recTour.getEditMode() != DBConstants.EDIT_IN_PROGRESS) && (recTour.getEditMode() != DBConstants.EDIT_CURRENT)))
-                    recTour = ((ReferenceField)recBookingDetail.getField(BookingDetail.kTourID)).getReference();
+                    recTour = ((ReferenceField)recBookingDetail.getField(BookingDetail.TOUR_ID)).getReference();
                 else
                     bUpdateTourNow = false;
                 if ((recTour != null)
@@ -103,7 +103,7 @@ public class UpdateTourStatusHandler extends FileListener
                         if (!bUpdateTourNow)
                             UpdateOnCloseHandler.addUpdateOnCloseHandler(recBooking, recTour, false, true, true);   // Make sure recTour is updated whenever booking is
                         recTour.edit();
-                        ((TourStatusSummaryField)recTour.getField(Tour.kTourStatusSummary)).setDetailProperty(recBookingDetail, m_iFieldSeq, iChangeType);
+                        ((TourStatusSummaryField)recTour.getField(Tour.TOUR_STATUS_SUMMARY)).setDetailProperty(recBookingDetail, m_iFieldSeq, iChangeType);
                         if (bUpdateTourNow)
                             recTour.set();
                     } catch (DBException ex) {

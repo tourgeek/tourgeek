@@ -71,71 +71,71 @@ public class AddFinStmtDetailTotals extends FileListener
     {
         super.doValidRecord(bDisplayOption);
         
-        if (this.getScreenRecord().getField(FinStmtReportScreenRecord.kLastStatement).getValue() != this.getOwner().getField(FinStmtDetail.kFinStmtID).getValue())
+        if (this.getScreenRecord().getField(FinStmtReportScreenRecord.LAST_STATEMENT).getValue() != this.getOwner().getField(FinStmtDetail.FIN_STMT_ID).getValue())
         {
-            if (this.getScreenRecord().getField(FinStmtReportScreenRecord.kLastStatement).getValue() != 0)
+            if (this.getScreenRecord().getField(FinStmtReportScreenRecord.LAST_STATEMENT).getValue() != 0)
             {   // Save the total from the last statement for subsequent uses.
-                m_htTotals.put(m_strLastReportName, new Double(this.getScreenRecord().getField(FinStmtReportScreenRecord.kTargetAmount).getValue()));
+                m_htTotals.put(m_strLastReportName, new Double(this.getScreenRecord().getField(FinStmtReportScreenRecord.TARGET_AMOUNT).getValue()));
             }
             this.resetTotals(9);    // New statement = reset all totals
-            this.getScreenRecord().getField(FinStmtReportScreenRecord.kRatioAmount).setValue(0);
-            this.getScreenRecord().getField(FinStmtReportScreenRecord.kRatioPercent).setValue(0);
-            this.getScreenRecord().getField(FinStmtReportScreenRecord.kLastStatement).moveFieldToThis(this.getOwner().getField(FinStmtDetail.kFinStmtID));
-            m_strLastReportName = this.getRecord(FinStmt.kFinStmtFile).getField(FinStmt.kStatementDesc).toString();
+            this.getScreenRecord().getField(FinStmtReportScreenRecord.RATIO_AMOUNT).setValue(0);
+            this.getScreenRecord().getField(FinStmtReportScreenRecord.RATIO_PERCENT).setValue(0);
+            this.getScreenRecord().getField(FinStmtReportScreenRecord.LAST_STATEMENT).moveFieldToThis(this.getOwner().getField(FinStmtDetail.FIN_STMT_ID));
+            m_strLastReportName = this.getRecord(FinStmt.FIN_STMT_FILE).getField(FinStmt.STATEMENT_DESC).toString();
         }
         
-        double dStartBalance = this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartBalance).getValue();
-        double dBalanceChange = this.getScreenRecord().getField(FinStmtReportScreenRecord.kBalanceChange).getValue();
+        double dStartBalance = this.getScreenRecord().getField(FinStmtReportScreenRecord.START_BALANCE).getValue();
+        double dBalanceChange = this.getScreenRecord().getField(FinStmtReportScreenRecord.BALANCE_CHANGE).getValue();
         double dEndBalance = dStartBalance + dBalanceChange;
-        this.getScreenRecord().getField(FinStmtReportScreenRecord.kEndBalance).setValue(dEndBalance);
-        if (this.getOwner().getField(FinStmtDetail.kAccountID).getValue() != 0)
+        this.getScreenRecord().getField(FinStmtReportScreenRecord.END_BALANCE).setValue(dEndBalance);
+        if (this.getOwner().getField(FinStmtDetail.ACCOUNT_ID).getValue() != 0)
         {
-            Record recAccount = ((ReferenceField)this.getOwner().getField(FinStmtDetail.kAccountID)).getReference();
+            Record recAccount = ((ReferenceField)this.getOwner().getField(FinStmtDetail.ACCOUNT_ID)).getReference();
             if (recAccount != null)
             {
-                if (recAccount.getField(Account.kCloseYearEnd).getState() == true)
-                    this.getScreenRecord().getField(FinStmtReportScreenRecord.kISAmount).setValue(this.getScreenRecord().getField(FinStmtReportScreenRecord.kISAmount).getValue() + dStartBalance);
+                if (recAccount.getField(Account.CLOSE_YEAR_END).getState() == true)
+                    this.getScreenRecord().getField(FinStmtReportScreenRecord.IS_AMOUNT).setValue(this.getScreenRecord().getField(FinStmtReportScreenRecord.IS_AMOUNT).getValue() + dStartBalance);
             }
         }
         
-        int iLevel = (int)this.getOwner().getField(FinStmtDetail.kSubTotalLevel).getValue();
+        int iLevel = (int)this.getOwner().getField(FinStmtDetail.SUB_TOTAL_LEVEL).getValue();
         double dTrxAmount = 0.00;
-        if (StatementNumberField.NET_CHANGE.equalsIgnoreCase(this.getRecord(FinStmt.kFinStmtFile).getField(FinStmt.kStatementNumber).toString()))
+        if (StatementNumberField.NET_CHANGE.equalsIgnoreCase(this.getRecord(FinStmt.FIN_STMT_FILE).getField(FinStmt.STATEMENT_NUMBER).toString()))
             dTrxAmount = dBalanceChange;
         else
             dTrxAmount = dEndBalance;
         if (this.checkCommand(null))
         {
             if (this.checkCommand(START))
-                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.kStartBalance).getValue();
+                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.START_BALANCE).getValue();
             if (this.checkCommand(END))
-                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.kEndBalance).getValue();
+                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.END_BALANCE).getValue();
             if (this.checkCommand(CHANGE))
-                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.kBalanceChange).getValue();
+                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.BALANCE_CHANGE).getValue();
             if (this.checkCommand(TRANSFER))
                 dTrxAmount = this.getTransferAmount();
             if (this.checkCommand(IS_START))
-                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.kISAmount).getValue();
+                dTrxAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.IS_AMOUNT).getValue();
         }
         this.addTotals(dTrxAmount);
-        this.getScreenRecord().getField(FinStmtReportScreenRecord.kTargetAmount).setValue(this.getTotal(iLevel));
+        this.getScreenRecord().getField(FinStmtReportScreenRecord.TARGET_AMOUNT).setValue(this.getTotal(iLevel));
         
-        if (StatementFormatField.RATIO.equalsIgnoreCase(this.getRecord(FinStmt.kFinStmtFile).getField(FinStmt.kStatementFormat).toString()))
+        if (StatementFormatField.RATIO.equalsIgnoreCase(this.getRecord(FinStmt.FIN_STMT_FILE).getField(FinStmt.STATEMENT_FORMAT).toString()))
         {
             if (this.checkCommand(BASE_RATIO))
-                this.getScreenRecord().getField(FinStmtReportScreenRecord.kRatioAmount).setValue(dTrxAmount);
+                this.getScreenRecord().getField(FinStmtReportScreenRecord.RATIO_AMOUNT).setValue(dTrxAmount);
             double dRatio = 0;
-            double dRatioAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.kRatioAmount).getValue();
+            double dRatioAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.RATIO_AMOUNT).getValue();
             if (dRatioAmount != 0)
             {
-                double dTargetAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.kTargetAmount).getValue();
+                double dTargetAmount = this.getScreenRecord().getField(FinStmtReportScreenRecord.TARGET_AMOUNT).getValue();
                 dRatio = Math.abs(dTargetAmount / dRatioAmount);
             }
-            this.getScreenRecord().getField(FinStmtReportScreenRecord.kRatioPercent).setValue(dRatio);
+            this.getScreenRecord().getField(FinStmtReportScreenRecord.RATIO_PERCENT).setValue(dRatio);
         }
         
-        if ((this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kInvisible).getState() == false)   // Invisible
-            && ((this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kDataColumn).getValue() != 0) || (this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kDataColumn).isNull())))  // Number does not display
+        if ((this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.INVISIBLE).getState() == false)   // Invisible
+            && ((this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.DATA_COLUMN).getValue() != 0) || (this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.DATA_COLUMN).isNull())))  // Number does not display
                 this.resetTotals(iLevel);
     }
     /**
@@ -145,7 +145,7 @@ public class AddFinStmtDetailTotals extends FileListener
      */
     public boolean checkCommand(String strCommand)
     {
-        String strThisCommand = this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSpecialFunction).toString();
+        String strThisCommand = this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.SPECIAL_FUNCTION).toString();
         if ((strThisCommand == null) || (strThisCommand.indexOf('@') == -1))
             return false;
         if (strCommand == null)
@@ -160,7 +160,7 @@ public class AddFinStmtDetailTotals extends FileListener
      */
     public double getTransferAmount()
     {
-        String strThisCommand = this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSpecialFunction).toString();
+        String strThisCommand = this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.SPECIAL_FUNCTION).toString();
         String strFinStmt = strThisCommand.substring(strThisCommand.toLowerCase().indexOf(TRANSFER) + TRANSFER.length());
         if (strFinStmt.startsWith(":"))
             strFinStmt = strFinStmt.substring(1);
@@ -176,7 +176,7 @@ public class AddFinStmtDetailTotals extends FileListener
      */
     public double getTotal(int iLevel)
     {
-        return this.getScreenRecord().getField(FinStmtReportScreenRecord.kTotal0 + iLevel).getValue();
+        return this.getScreenRecord().getField(FinStmtReportScreenRecord.TOTAL_0 + iLevel).getValue();
     }
     /**
      * Add this amount to all the level totals.
@@ -184,9 +184,10 @@ public class AddFinStmtDetailTotals extends FileListener
     public void addTotals(double dAmount)
     {
         Record record = this.getScreenRecord();
-        for (int iFieldSeq = FinStmtReportScreenRecord.kTotal0; iFieldSeq <= FinStmtReportScreenRecord.kTotal9; iFieldSeq++)
+        for (int iFieldSeq = 0; iFieldSeq < record.getFieldCount(); iFieldSeq++)
         {
-            record.getField(iFieldSeq).setValue(dAmount + this.getScreenRecord().getField(iFieldSeq).getValue());
+            if (record.getField(iFieldSeq).getFieldName().startsWith("total"))
+                record.getField(iFieldSeq).setValue(dAmount + this.getScreenRecord().getField(iFieldSeq).getValue());
         }
     }
     /**
@@ -195,9 +196,10 @@ public class AddFinStmtDetailTotals extends FileListener
     public void resetTotals(int iMaxLevel)
     {
         Record record = this.getScreenRecord();
-        for (int iFieldSeq = FinStmtReportScreenRecord.kTotal0; iFieldSeq <= FinStmtReportScreenRecord.kTotal0 + iMaxLevel; iFieldSeq++)
+        for (int iFieldSeq = 0; iFieldSeq < record.getFieldCount(); iFieldSeq++)
         {
-            record.getField(iFieldSeq).setValue(0.00);
+            if (record.getField(iFieldSeq).getFieldName().startsWith("total"))
+                record.getField(iFieldSeq).setValue(0.00);
         }
     }
     /**

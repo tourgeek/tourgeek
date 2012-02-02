@@ -98,30 +98,30 @@ public class PastDueReport extends ReportScreen
     {
         super.addListeners();
         
-        this.getScreenRecord().getField(PastDueScreenRecord.kMcoPer).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kMcoCommPer)));
+        this.getScreenRecord().getField(PastDueScreenRecord.MCO_PER).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.MCO_COMM_PER)));
         
-        this.getMainRecord().setKeyArea(Booking.kBookingDateKey);
-        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(PastDueScreenRecord.kAsOfDate), Booking.kBookingDate, null, -1, null, -1);
+        this.getMainRecord().setKeyArea(Booking.BOOKING_DATE_KEY);
+        SubFileFilter listener = new SubFileFilter(this.getScreenRecord().getField(PastDueScreenRecord.AS_OF_DATE), Booking.BOOKING_DATE, null, null, null, null);
         listener.setInitialKey(false);      // Search all bookings up to this booking date
         this.getMainRecord().addListener(listener);
         this.getMainRecord().addListener(new PastDueHandler(this.getScreenRecord()));
         
-        this.getMainRecord().getField(Booking.kTourID).addListener(new ReadSecondaryHandler(this.getRecord(Tour.kTourFile)));
-        this.getRecord(Tour.kTourFile).getField(Tour.kTourHeaderID).addListener(new ReadSecondaryHandler(this.getRecord(TourHeader.kTourHeaderFile)));
+        this.getMainRecord().getField(Booking.TOUR_ID).addListener(new ReadSecondaryHandler(this.getRecord(Tour.TOUR_FILE)));
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_HEADER_ID).addListener(new ReadSecondaryHandler(this.getRecord(TourHeader.TOUR_HEADER_FILE)));
         
-        Record recArTrx = this.getRecord(ArTrx.kArTrxFile);
-        Record recBooking = this.getRecord(Booking.kBookingFile);
-        Record recBookingLine = this.getRecord(BookingLine.kBookingLineFile);
+        Record recArTrx = this.getRecord(ArTrx.AR_TRX_FILE);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
+        Record recBookingLine = this.getRecord(BookingLine.BOOKING_LINE_FILE);
         
         recArTrx.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recArTrx));
-        recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.kBalance), ArTrx.kAmount, true, true));
-        recArTrx.addListener(new CountMcoAmountHandler(this.getScreenRecord().getField(PastDueScreenRecord.kMcoAmountPaid), ArTrx.kAmount, true, true));
+        recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, true, true));
+        recArTrx.addListener(new CountMcoAmountHandler(this.getScreenRecord().getField(PastDueScreenRecord.MCO_AMOUNT_PAID), ArTrx.AMOUNT, true, true));
         
         recBookingLine.addListener(new SubFileFilter(recBooking));
         recBooking.addListener(new RecountOnValidHandler(recBookingLine));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kGross), BookingLine.kGross, true, true));
-        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.kNet), BookingLine.kNet, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
+        recBookingLine.addListener(new SubCountHandler(recBooking.getField(Booking.NET), BookingLine.NET, true, true));
     }
     /**
      * Add the screen fields.

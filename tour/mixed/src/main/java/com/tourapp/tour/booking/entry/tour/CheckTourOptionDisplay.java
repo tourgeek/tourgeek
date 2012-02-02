@@ -63,14 +63,14 @@ public class CheckTourOptionDisplay extends FieldListener
         if (iErrorCode == DBConstants.NORMAL_RETURN)
         {
             RecordOwner recordOwner = this.getOwner().getRecord().getRecordOwner();
-            Record recBooking = (Record)recordOwner.getRecord(Booking.kBookingFile);
+            Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
             if (m_bOldAlwaysResolve == false)
-                if (recBooking.getField(Booking.kAlwaysResolve).getState() == true)
+                if (recBooking.getField(Booking.ALWAYS_RESOLVE).getState() == true)
             {
-                recordOwner.getScreenRecord().getField(BookingScreenRecord.kBkSubScreen).setValue(BookingScreenHandler.OPTIONS_SCREEN); // Switch to the options screen
+                recordOwner.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setValue(BookingScreenHandler.OPTIONS_SCREEN); // Switch to the options screen
             }
         
-            m_bOldAlwaysResolve = recBooking.getField(Booking.kAlwaysResolve).getState();
+            m_bOldAlwaysResolve = recBooking.getField(Booking.ALWAYS_RESOLVE).getState();
         }
         return iErrorCode;
     }

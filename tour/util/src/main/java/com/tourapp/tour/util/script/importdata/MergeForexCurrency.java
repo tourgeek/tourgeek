@@ -85,12 +85,12 @@ public class MergeForexCurrency extends MergeHtml
             }
             return;
         }
-        if (recDest.getField(Currencys.kCurrencyCode).isNull())
-            recDest.getField(Currencys.kCurrencyCode).moveFieldToThis(recSource.getField("Alphabetic code"));
-        if (recDest.getField(Currencys.kDescription).isNull())
-            recDest.getField(Currencys.kDescription).moveFieldToThis(recSource.getField("Currency"));
+        if (recDest.getField(Currencys.CURRENCY_CODE).isNull())
+            recDest.getField(Currencys.CURRENCY_CODE).moveFieldToThis(recSource.getField("Alphabetic code"));
+        if (recDest.getField(Currencys.DESCRIPTION).isNull())
+            recDest.getField(Currencys.DESCRIPTION).moveFieldToThis(recSource.getField("Currency"));
         if (!recSource.getField("Symbol").isNull())
-            recDest.getField(Currencys.kSign).moveFieldToThis(recSource.getField("Symbol"));
+            recDest.getField(Currencys.SIGN).moveFieldToThis(recSource.getField("Symbol"));
         if (!recSource.getField("Subdivision").isNull())
         {
             String strSubdivision = recSource.getField("Subdivision").toString();
@@ -101,30 +101,30 @@ public class MergeForexCurrency extends MergeHtml
                 strSubdivision = strSubdivision.substring(strSubdivision.indexOf(' ') + 1);
             }
             if (strDesc != null)
-                recDest.getField(Currencys.kFractionAmount).setString(strDesc);
-            recDest.getField(Currencys.kFractionDesc).setString(strSubdivision);
+                recDest.getField(Currencys.FRACTION_AMOUNT).setString(strDesc);
+            recDest.getField(Currencys.FRACTION_DESC).setString(strSubdivision);
         }
         if (!recSource.getField("Currency").isNull())
-            recDest.getField(Currencys.kIntegerDesc).moveFieldToThis(recSource.getField("Currency"));
+            recDest.getField(Currencys.INTEGER_DESC).moveFieldToThis(recSource.getField("Currency"));
         
         String strCountry = recSource.getField("Country").toString();
-        Record recCountry = this.getRecord(Country.kCountryFile);
-        recCountry.setKeyArea(Country.kNameKey);
-        recCountry.getField(Country.kName).setString(strCountry);
+        Record recCountry = this.getRecord(Country.COUNTRY_FILE);
+        recCountry.setKeyArea(Country.NAME_KEY);
+        recCountry.getField(Country.NAME).setString(strCountry);
         try {
             if (recDest.getCounterField().isNull())
             {
                 recDest.setAutoSequence(false);  // Disable autoseq temporarily
-                recDest.getField(Currencys.kID).moveFieldToThis(recSource.getField("Numeric code"));
+                recDest.getField(Currencys.ID).moveFieldToThis(recSource.getField("Numeric code"));
                 recDest.add();
-                recDest.setKeyArea(Currencys.kIDKey);
+                recDest.setKeyArea(Currencys.ID_KEY);
                 recDest.seek(DBConstants.EQUALS);
                 recDest.setAutoSequence(true);
             }
             if (recCountry.seek(DBConstants.EQUALS))
             {   // Default currency
                 recCountry.edit();
-                recCountry.getField(Country.kCurrencysID).moveFieldToThis(recDest.getCounterField());
+                recCountry.getField(Country.CURRENCYS_ID).moveFieldToThis(recDest.getCounterField());
                 recCountry.set();
             }
         } catch (DBException e) {
@@ -139,8 +139,8 @@ public class MergeForexCurrency extends MergeHtml
      */
     public boolean readDestRecord(FieldList recSource, Record recDest)
     {
-        recDest.getField(Currencys.kCurrencyCode).moveFieldToThis(recSource.getField("Alphabetic code"));
-        recDest.setKeyArea(Currencys.kCurrencyCodeKey);
+        recDest.getField(Currencys.CURRENCY_CODE).moveFieldToThis(recSource.getField("Alphabetic code"));
+        recDest.setKeyArea(Currencys.CURRENCY_CODE_KEY);
         try {
             return (recDest.seek(DBConstants.EQUALS));
         } catch (DBException e) {

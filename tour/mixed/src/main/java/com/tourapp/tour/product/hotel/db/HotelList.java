@@ -128,25 +128,25 @@ public class HotelList extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(Hotel.kHotelFile, Hotel.kID).setSelected(true);
-        this.getField(Hotel.kHotelFile, Hotel.kDescription).setSelected(true);
-        this.getField(Hotel.kHotelFile, Hotel.kCode).setSelected(true);
-        this.getField(Hotel.kHotelFile, Hotel.kVendorID).setSelected(true);
-        this.getField(Hotel.kHotelFile, Hotel.kCityID).setSelected(true);
-        this.getField(City.kCityFile, City.kDescription).setSelected(true);
-        this.getField(City.kCityFile, City.kCountryID).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kVendorName).setSelected(true);
-        this.getField(Hotel.kHotelFile, Hotel.kDescSort).setSelected(true);
-        this.getField(Vendor.kVendorFile, Vendor.kNameSort).setSelected(true);
-        this.getField(City.kCityFile, City.kTicketCityDesc).setSelected(true);
+        this.getField(Hotel.HOTEL_FILE, Hotel.ID).setSelected(true);
+        this.getField(Hotel.HOTEL_FILE, Hotel.DESCRIPTION).setSelected(true);
+        this.getField(Hotel.HOTEL_FILE, Hotel.CODE).setSelected(true);
+        this.getField(Hotel.HOTEL_FILE, Hotel.VENDOR_ID).setSelected(true);
+        this.getField(Hotel.HOTEL_FILE, Hotel.CITY_ID).setSelected(true);
+        this.getField(City.CITY_FILE, City.DESCRIPTION).setSelected(true);
+        this.getField(City.CITY_FILE, City.COUNTRY_ID).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.VENDOR_NAME).setSelected(true);
+        this.getField(Hotel.HOTEL_FILE, Hotel.DESC_SORT).setSelected(true);
+        this.getField(Vendor.VENDOR_FILE, Vendor.NAME_SORT).setSelected(true);
+        this.getField(City.CITY_FILE, City.TICKET_CITY_DESC).setSelected(true);
     }
     /**
      * SetupRelationships Method.
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Hotel.kHotelFile), this.getRecord(City.kCityFile), Hotel.kCityID, City.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Hotel.kHotelFile), this.getRecord(Vendor.kVendorFile), Hotel.kVendorID, Vendor.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Hotel.HOTEL_FILE), this.getRecord(City.CITY_FILE), Hotel.CITY_ID, City.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(Hotel.HOTEL_FILE), this.getRecord(Vendor.VENDOR_FILE), Hotel.VENDOR_ID, Vendor.ID);
     }
 
 }

@@ -128,14 +128,14 @@ public class BookingCalendar extends CalendarScreen
     public void addListeners()
     {
         super.addListeners();
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         
         BookingDetail record = (BookingDetail)this.getMainRecord();
-        record.setKeyArea(BookingDetail.kBookingIDKey);
+        record.setKeyArea(BookingDetail.BOOKING_ID_KEY);
         record.addDetailBehaviors(recBooking, recTour);
-        record.addListener(new CompareFileFilter(BookingDetail.kProductStatusID, Integer.toString(ProductStatus.CANCELED), FileListener.NOT_EQUAL, null, true));
-        record.addListener(new CompareFileFilter(BookingDetail.kProductTypeID, Integer.toString(ProductType.ITEM_ID), FileListener.NOT_EQUAL, null, true));
+        record.addListener(new CompareFileFilter(BookingDetail.PRODUCT_STATUS_ID, Integer.toString(ProductStatus.CANCELED), FileListener.NOT_EQUAL, null, true));
+        record.addListener(new CompareFileFilter(BookingDetail.PRODUCT_TYPE_ID, Integer.toString(ProductType.ITEM_ID), FileListener.NOT_EQUAL, null, true));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -152,9 +152,9 @@ public class BookingCalendar extends CalendarScreen
      */
     public Date getStartDate()
     {
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         if (recTour != null)
-            return ((DateTimeField)recTour.getField(Tour.kDepartureDate)).getDateTime();
+            return ((DateTimeField)recTour.getField(Tour.DEPARTURE_DATE)).getDateTime();
         return super.getStartDate();
     }
     /**
@@ -162,9 +162,9 @@ public class BookingCalendar extends CalendarScreen
      */
     public Date getSelectDate()
     {
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         if (recTour != null)
-            return ((DateTimeField)recTour.getField(Tour.kDepartureDate)).getDateTime();
+            return ((DateTimeField)recTour.getField(Tour.DEPARTURE_DATE)).getDateTime();
         return super.getSelectDate();
     }
     /**
@@ -196,10 +196,10 @@ public class BookingCalendar extends CalendarScreen
     public void setupSFields()
     {
         // This is not used as get item is implemented, but this is needed for propert toolbar alignment
-        this.getMainRecord().getField(BookingDetail.kDetailDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(BookingDetail.kDetailEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(BookingDetail.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(BookingDetail.kProductStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(BookingDetail.DETAIL_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(BookingDetail.DETAIL_END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(BookingDetail.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(BookingDetail.PRODUCT_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         
         if (this.getScreenFieldView().getControl() instanceof CalendarPanel)
         {   // Always
@@ -233,52 +233,52 @@ public class BookingCalendar extends CalendarScreen
         else if (ProductType.AIR.equalsIgnoreCase(strCommand))
         {
             record = new Air(this);
-            this.setThisProperty(properties, Tour.kAirRateID, BookingDetail.kRateID);
-            this.setThisProperty(properties, Tour.kAirClassID, BookingDetail.kClassID);
+            this.setThisProperty(properties, Tour.AIR_RATE_ID, BookingDetail.RATE_ID);
+            this.setThisProperty(properties, Tour.AIR_CLASS_ID, BookingDetail.CLASS_ID);
         }
         else if (ProductType.HOTEL.equalsIgnoreCase(strCommand))
         {
             record = new Hotel(this);
-            this.setThisProperty(properties, Tour.kHotelClassID, BookingDetail.kClassID);
-            this.setThisProperty(properties, Tour.kHotelRateID, BookingDetail.kRateID);
+            this.setThisProperty(properties, Tour.HOTEL_CLASS_ID, BookingDetail.CLASS_ID);
+            this.setThisProperty(properties, Tour.HOTEL_RATE_ID, BookingDetail.RATE_ID);
         }
         else if (ProductType.LAND.equals(strCommand))
         {
             record = new Land(this);
-            if (this.getRecord(Booking.kBookingFile).getField(Booking.kPax).getValue() > 0)
-                properties.put(this.getRecord(Booking.kBookingFile).getField(Booking.kPax).getFieldName(), this.getRecord(Booking.kBookingFile).getField(Booking.kPax).toString());
-            this.setThisProperty(properties, Tour.kLandRateID, BookingDetail.kRateID);
-            this.setThisProperty(properties, Tour.kLandClassID, BookingDetail.kClassID);
+            if (this.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getValue() > 0)
+                properties.put(this.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getFieldName(), this.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).toString());
+            this.setThisProperty(properties, Tour.LAND_RATE_ID, BookingDetail.RATE_ID);
+            this.setThisProperty(properties, Tour.LAND_CLASS_ID, BookingDetail.CLASS_ID);
         }
         else if (ProductType.TRANSPORTATION.equalsIgnoreCase(strCommand))
         {
             record = new Transportation(this);
-            if (this.getRecord(Booking.kBookingFile).getField(Booking.kPax).getValue() > 0)
-                properties.put(this.getRecord(Booking.kBookingFile).getField(Booking.kPax).getFieldName(), this.getRecord(Booking.kBookingFile).getField(Booking.kPax).toString());
-            this.setThisProperty(properties, Tour.kTransportationRateID, BookingDetail.kRateID);
-            this.setThisProperty(properties, Tour.kTransportationClassID, BookingDetail.kClassID);
+            if (this.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getValue() > 0)
+                properties.put(this.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getFieldName(), this.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).toString());
+            this.setThisProperty(properties, Tour.TRANSPORTATION_RATE_ID, BookingDetail.RATE_ID);
+            this.setThisProperty(properties, Tour.TRANSPORTATION_CLASS_ID, BookingDetail.CLASS_ID);
         }
         else if (ProductType.CAR.equalsIgnoreCase(strCommand))
         {
             record = new Car(this);
-            this.setThisProperty(properties, Tour.kCarRateID, BookingDetail.kRateID);
-            this.setThisProperty(properties, Tour.kCarClassID, BookingDetail.kClassID);
+            this.setThisProperty(properties, Tour.CAR_RATE_ID, BookingDetail.RATE_ID);
+            this.setThisProperty(properties, Tour.CAR_CLASS_ID, BookingDetail.CLASS_ID);
         }
         else if (ProductType.CRUISE.equalsIgnoreCase(strCommand))
         {
             record = new Cruise(this);
-            this.setThisProperty(properties, Tour.kCruiseRateID, BookingDetail.kRateID);
-            this.setThisProperty(properties, Tour.kCruiseClassID, BookingDetail.kClassID);
+            this.setThisProperty(properties, Tour.CRUISE_RATE_ID, BookingDetail.RATE_ID);
+            this.setThisProperty(properties, Tour.CRUISE_CLASS_ID, BookingDetail.CLASS_ID);
         }
         else if (ProductType.ITEM.equalsIgnoreCase(strCommand))
         {
             record = new Item(this);
-            this.setThisProperty(properties, Tour.kItemRateID, BookingDetail.kRateID);
-            this.setThisProperty(properties, Tour.kItemClassID, BookingDetail.kClassID);
+            this.setThisProperty(properties, Tour.ITEM_RATE_ID, BookingDetail.RATE_ID);
+            this.setThisProperty(properties, Tour.ITEM_CLASS_ID, BookingDetail.CLASS_ID);
         }
         
         Record screenRecord = null;
-        Record recBooking = this.getRecord(Booking.kBookingFile);
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
         if ((recBooking != null)
             && (recBooking.getRecordOwner() != null)
                 && (recBooking.getRecordOwner().getScreenRecord() instanceof BookingScreenRecord))
@@ -303,9 +303,9 @@ public class BookingCalendar extends CalendarScreen
                 }
                 if (date == null)
                     if (screenRecord != null)
-                    date = ((DateTimeField)screenRecord.getField(BookingScreenRecord.kLastDate)).getDateTime();
+                    date = ((DateTimeField)screenRecord.getField(BookingScreenRecord.LAST_DATE)).getDateTime();
                 if (date == null)
-                    date = ((DateTimeField)this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate)).getDateTime();
+                    date = ((DateTimeField)this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE)).getDateTime();
                 Converter.initGlobals();
                 if (date != null)
                 {
@@ -319,13 +319,13 @@ public class BookingCalendar extends CalendarScreen
                         calendar.set(Calendar.HOUR_OF_DAY, 12);
                         date = calendar.getTime();
                     }
-                    properties.put(this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kDetailDate).getFieldName(), date.toString());
+                    properties.put(this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.DETAIL_DATE).getFieldName(), date.toString());
                 }
             }
             
             if (screenRecord != null)
-                if (!screenRecord.getField(BookingScreenRecord.kLastCityID).isNull())
-                    properties.put(record.getField(Product.kCityID).getFieldName(), screenRecord.getField(BookingScreenRecord.kLastCityID).toString());
+                if (!screenRecord.getField(BookingScreenRecord.LAST_CITY_ID).isNull())
+                    properties.put(record.getField(Product.CITY_ID).getFieldName(), screenRecord.getField(BookingScreenRecord.LAST_CITY_ID).toString());
         
             this.removeRecord(record);    // Remove it from the recordowner's list    record.setRecordOwner(null);
             record.addListener(new OnSelectHandler(this, DBConstants.USER_DEFINED_TYPE)
@@ -338,13 +338,13 @@ public class BookingCalendar extends CalendarScreen
                         Record recProduct = getOwner();
                         RecordOwner gridScreen = recProduct.getRecordOwner();
                         Record screenRecord = (Record)gridScreen.getScreenRecord();
-                        this.addMessageProperty(message, screenRecord, ProductScreenRecord.kDetailDate);
-                        this.addMessageProperty(message, screenRecord, ProductScreenRecord.kClassID);
-                        this.addMessageProperty(message, screenRecord, ProductScreenRecord.kRateID);
+                        this.addMessageProperty(message, screenRecord, ProductScreenRecord.DETAIL_DATE);
+                        this.addMessageProperty(message, screenRecord, ProductScreenRecord.CLASS_ID);
+                        this.addMessageProperty(message, screenRecord, ProductScreenRecord.RATE_ID);
                     }
                     return message;
                 }
-                public void addMessageProperty(BaseMessage message, Record screenRecord, int iFieldSeq)
+                public void addMessageProperty(BaseMessage message, Record screenRecord, String iFieldSeq)
                 {
                     if (!screenRecord.getField(iFieldSeq).isNull())
                         message.put(screenRecord.getField(iFieldSeq).getFieldName(), screenRecord.getField(iFieldSeq).toString());
@@ -365,10 +365,10 @@ public class BookingCalendar extends CalendarScreen
     /**
      * This is property in this property object.
      */
-    public void setThisProperty(Map<String,Object> properties, int iTourFieldSeq, int iParamFieldSeq)
+    public void setThisProperty(Map<String,Object> properties, String iTourFieldSeq, String iParamFieldSeq)
     {
-        if (!this.getRecord(Tour.kTourFile).getField(iTourFieldSeq).isNull())
-            properties.put(this.getRecord(BookingDetail.kBookingDetailFile).getField(iParamFieldSeq).getFieldName(), this.getRecord(Tour.kTourFile).getField(iTourFieldSeq).toString());
+        if (!this.getRecord(Tour.TOUR_FILE).getField(iTourFieldSeq).isNull())
+            properties.put(this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(iParamFieldSeq).getFieldName(), this.getRecord(Tour.TOUR_FILE).getField(iTourFieldSeq).toString());
     }
     /**
      * A record with this datasource handle changed, notify any behaviors that are checking.
@@ -388,20 +388,20 @@ public class BookingCalendar extends CalendarScreen
             Object bookmark = ((RecordMessageHeader)message.getMessageHeader()).getBookmark(DBConstants.BOOKMARK_HANDLE);
             BookingDetail recBookingDetail = (BookingDetail)this.getMainRecord();
         
-            ProductType recProductType = (ProductType)this.getRecord(ProductType.kProductTypeFile);
+            ProductType recProductType = (ProductType)this.getRecord(ProductType.PRODUCT_TYPE_FILE);
             if (recProductType == null)
                 recProductType = new ProductType(this);
             recBookingDetail = (BookingDetail)recBookingDetail.createSharedRecord(new Integer(recProductType.getProductTypeIDFromName(strRecordName)), this);
             if (recBookingDetail != null)
             {   // Now I have the specific detail record to add
                 try {
-                    Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-                    Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+                    Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+                    Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
                     recBookingDetail.addDetailBehaviors(recBooking, recTour);
                     recBookingDetail.setOpenMode(recBookingDetail.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
                     recBookingDetail.addNew();
-                    this.setDetailProperty(message, recBookingDetail, BookingDetail.kDetailDate);
-                    Calendar calendar = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getCalendar();
+                    this.setDetailProperty(message, recBookingDetail, BookingDetail.DETAIL_DATE);
+                    Calendar calendar = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getCalendar();
                     if (calendar != null)
                         if (calendar.get(Calendar.HOUR_OF_DAY) == 0)
                             if (calendar.get(Calendar.MINUTE) == 0)
@@ -409,11 +409,11 @@ public class BookingCalendar extends CalendarScreen
                             if (calendar.get(Calendar.MILLISECOND) == 0)
                         {       // Default time should be noon
                             calendar.set(Calendar.HOUR_OF_DAY, 12);
-                            ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).setCalendar(calendar, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                            ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).setCalendar(calendar, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
                         }
-                    this.setDetailProperty(message, recBookingDetail, BookingDetail.kRateID);
-                    this.setDetailProperty(message, recBookingDetail, BookingDetail.kClassID);
-                    recBookingDetail.getField(BookingDetail.kProductID).setString(bookmark.toString());
+                    this.setDetailProperty(message, recBookingDetail, BookingDetail.RATE_ID);
+                    this.setDetailProperty(message, recBookingDetail, BookingDetail.CLASS_ID);
+                    recBookingDetail.getField(BookingDetail.PRODUCT_ID).setString(bookmark.toString());
                     recBookingDetail.add();
                 } catch (DBException ex) {
                     ex.printStackTrace();
@@ -427,7 +427,7 @@ public class BookingCalendar extends CalendarScreen
     /**
      * SetDetailProperty Method.
      */
-    public void setDetailProperty(BaseMessage message, Record record, int iFieldSeq)
+    public void setDetailProperty(BaseMessage message, Record record, String iFieldSeq)
     {
         String strParamName = record.getField(iFieldSeq).getFieldName();
         if (message.get(strParamName) != null)

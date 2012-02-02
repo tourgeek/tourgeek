@@ -483,11 +483,11 @@ public class Employee extends Person
         this.getField(kFirstName).addListener(upper);
         CopyFieldHandler copyState = new CopyFieldHandler(kStateTaxCode);
         this.getField(kStateOrRegion).addListener(copyState);
-        FileListener disableKey = new EnableOnValidHandler(Employee.kID, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.ENABLE_ON_NEW);
+        FileListener disableKey = new EnableOnValidHandler(Employee.ID, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.ENABLE_ON_NEW);
         this.addListener(disableKey);
-        FieldListener calcOvertime = new CalcOvertimeHandler(this.getField(Employee.kOvertimeRate));
+        FieldListener calcOvertime = new CalcOvertimeHandler(this.getField(Employee.OVERTIME_RATE));
         this.getField(kHourlyRate).addListener(calcOvertime);
-        FieldListener calcHourly = new CalcHourlyHandler(this.getField(Employee.kHourlyRate));
+        FieldListener calcHourly = new CalcHourlyHandler(this.getField(Employee.HOURLY_RATE));
         this.getField(kSalary).addListener(calcHourly);
     }
     /**
@@ -495,8 +495,8 @@ public class Employee extends Person
      */
     public int getCurrentUser()
     {
-        this.setKeyArea(Employee.kIDKey);
-        this.getField(Employee.kID).setString(((MainApplication)this.getRecordOwner().getTask().getApplication()).getUserID());   // Set to current User Name 
+        this.setKeyArea(Employee.ID_KEY);
+        this.getField(Employee.ID).setString(((MainApplication)this.getRecordOwner().getTask().getApplication()).getUserID());  // Set to current User Name   
         this.getField(kTerminationDate).setString("");
         int errorCode = DBConstants.ERROR_RETURN;
         try   {

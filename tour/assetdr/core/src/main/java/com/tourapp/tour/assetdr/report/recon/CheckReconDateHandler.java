@@ -50,7 +50,7 @@ public class CheckReconDateHandler extends CompareFileFilter
     public void init(BaseField fldToCheck, BaseField fldToCompare)
     {
         BaseField falseField = new BooleanField(null, "Name", 1, "Name", new Boolean(false));
-        super.init(null, -1, null, ">", falseField, true, fldToCheck, fldToCompare);
+        super.init(null, -1, null, null, ">", falseField, true, fldToCheck, fldToCompare);
     }
     /**
      * Clone Method.
@@ -58,6 +58,18 @@ public class CheckReconDateHandler extends CompareFileFilter
     public Object clone()
     {
         return new CheckReconDateHandler(m_fldToCheck, m_fldToCompare);
+    }
+    /**
+     * Free Method.
+     */
+    public void free()
+    {
+        if (m_fldToCheck instanceof BooleanField)
+        {
+            m_fldToCheck.free();
+            m_fldToCheck = null;
+        }
+        super.free();
     }
     /**
      * Set up/do the remote criteria.
@@ -87,18 +99,6 @@ public class CheckReconDateHandler extends CompareFileFilter
             return super.doRemoteCriteria(strbFilter, bIncludeFileName, vParamList);    // Dont skip this record
         else
             return false;   // Skip this one
-    }
-    /**
-     * Free Method.
-     */
-    public void free()
-    {
-        if (m_fldToCheck instanceof BooleanField)
-        {
-            m_fldToCheck.free();
-            m_fldToCheck = null;
-        }
-        super.free();
     }
 
 }

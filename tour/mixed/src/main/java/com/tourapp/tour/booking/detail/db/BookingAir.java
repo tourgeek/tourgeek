@@ -719,7 +719,7 @@ public class BookingAir extends BookingDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(BookingDetail.kProductTypeID, ProductType.AIR_ID));
+        this.addListener(new SharedFileHandler(BookingDetail.PRODUCT_TYPE_ID, ProductType.AIR_ID));
     }
     /**
      * SetupEndDate Method.
@@ -728,13 +728,13 @@ public class BookingAir extends BookingDetail
     {
         Date startDate = this.getStartDate();
         Calendar calendar = DateTimeField.m_calendar;
-        Date timeArrive = ((DateTimeField)this.getField(BookingAir.kArriveTime)).getDateTime();
+        Date timeArrive = ((DateTimeField)this.getField(BookingAir.ARRIVE_TIME)).getDateTime();
         if (timeArrive == null)
             return startDate;   // Never
         calendar.setTime(timeArrive);
         int iHour = calendar.get(Calendar.HOUR_OF_DAY);
         int iMinute = calendar.get(Calendar.MINUTE);
-        int iDays = (int)this.getField(BookingAir.kAddDays).getValue();
+        int iDays = (int)this.getField(BookingAir.ADD_DAYS).getValue();
         calendar.setTime(startDate);
         calendar.add(Calendar.DATE, iDays);
         
@@ -756,14 +756,14 @@ public class BookingAir extends BookingDetail
         String strProductDesc = super.setupProductDesc();
         if ((strProductDesc == null) || (strProductDesc.length() == 0))
         {
-            Record recAirline = ((ReferenceField)this.getField(BookingDetail.kAirlineID)).getReference();
+            Record recAirline = ((ReferenceField)this.getField(BookingDetail.AIRLINE_ID)).getReference();
             if (recAirline != null)
-                strProductDesc += recAirline.getField(Airline.kAirlineCode).toString();
-            strProductDesc += this.getField(BookingDetail.kFlightNo).toString() + ' ';
-            strProductDesc += this.getField(BookingDetail.kCityCode).toString() + '/' + this.getField(BookingDetail.kToCityCode).toString() + ' ';
-            strProductDesc += this.getField(BookingDetail.kEtd).toString() + '-' + this.getField(BookingDetail.kArriveTime).toString();
-            if (!this.getField(BookingDetail.kAddDays).isNull())
-                strProductDesc += " " + this.getField(BookingDetail.kAddDays).toString();
+                strProductDesc += recAirline.getField(Airline.AIRLINE_CODE).toString();
+            strProductDesc += this.getField(BookingDetail.FLIGHT_NO).toString() + ' ';
+            strProductDesc += this.getField(BookingDetail.CITY_CODE).toString() + '/' + this.getField(BookingDetail.TO_CITY_CODE).toString() + ' ';
+            strProductDesc += this.getField(BookingDetail.ETD).toString() + '-' + this.getField(BookingDetail.ARRIVE_TIME).toString();
+            if (!this.getField(BookingDetail.ADD_DAYS).isNull())
+                strProductDesc += " " + this.getField(BookingDetail.ADD_DAYS).toString();
         }
         return strProductDesc;
     }
@@ -790,7 +790,7 @@ public class BookingAir extends BookingDetail
         if (dateStart.after(dateTarget))
             return strMealDesc;     // No meals after this day
         
-        strMealDesc = this.getField(BookingAir.kMeals).toString();
+        strMealDesc = this.getField(BookingAir.MEALS).toString();
         return strMealDesc;
     }
     /**
@@ -800,10 +800,10 @@ public class BookingAir extends BookingDetail
     public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingAir.kRateID).isNull()))
-            this.getField(BookingAir.kRateID).moveFieldToThis(recTour.getField(Tour.kAirRateID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingAir.kClassID).isNull()))
-            this.getField(BookingAir.kClassID).moveFieldToThis(recTour.getField(Tour.kAirClassID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingAir.RATE_ID).isNull()))
+            this.getField(BookingAir.RATE_ID).moveFieldToThis(recTour.getField(Tour.AIR_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if ((!bOnlyIfTargetIsNull) || (this.getField(BookingAir.CLASS_ID).isNull()))
+            this.getField(BookingAir.CLASS_ID).moveFieldToThis(recTour.getField(Tour.AIR_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -815,24 +815,24 @@ public class BookingAir extends BookingDetail
     {
         int iErrorCode = super.moveProductFields(recProduct);
         
-        this.moveTargetField(recProduct, BookingDetail.kEtd, Product.kEtd);
-        this.moveTargetField(recProduct, BookingDetail.kArriveTime, Air.kArriveTime);
-        if (this.moveTargetField(recProduct, BookingDetail.kCityCode, Air.kCityCode))
+        this.moveTargetField(recProduct, BookingDetail.ETD, Product.ETD);
+        this.moveTargetField(recProduct, BookingDetail.ARRIVE_TIME, Air.ARRIVE_TIME);
+        if (this.moveTargetField(recProduct, BookingDetail.CITY_CODE, Air.CITY_CODE))
         {
-            //this.moveTargetField(recProduct, BookingDetail.kCityDesc, Air.kCityDesc);
+            //this.moveTargetField(recProduct, BookingDetail.CITY_DESC, Air.CITY_DESC);
         }
-        if (this.moveTargetField(recProduct, BookingDetail.kAirlineID, Air.kAirlineID))
+        if (this.moveTargetField(recProduct, BookingDetail.AIRLINE_ID, Air.AIRLINE_ID))
         {
-            Record recAirline = ((ReferenceField)this.getField(BookingDetail.kAirlineID)).getReference();
+            Record recAirline = ((ReferenceField)this.getField(BookingDetail.AIRLINE_ID)).getReference();
             if (recAirline != null)
-                this.getField(BookingDetail.kCarrier).moveFieldToThis(recAirline.getField(Airline.kDescription));
+                this.getField(BookingDetail.CARRIER).moveFieldToThis(recAirline.getField(Airline.DESCRIPTION));
         }
-        this.moveTargetField(recProduct, BookingDetail.kFlightNo, Air.kFlightNo);
-        this.moveTargetField(recProduct, BookingDetail.kToCityCode, Air.kToCityCode);
-        this.moveTargetField(recProduct, BookingDetail.kAddDays, Air.kAddDays);
-        this.moveTargetField(recProduct, BookingDetail.kStartDate, Air.kStartDate);
-        this.moveTargetField(recProduct, BookingDetail.kEndDate, Air.kEndDate);
-        this.moveTargetField(recProduct, BookingDetail.kMeals, Air.kMeals);
+        this.moveTargetField(recProduct, BookingDetail.FLIGHT_NO, Air.FLIGHT_NO);
+        this.moveTargetField(recProduct, BookingDetail.TO_CITY_CODE, Air.TO_CITY_CODE);
+        this.moveTargetField(recProduct, BookingDetail.ADD_DAYS, Air.ADD_DAYS);
+        this.moveTargetField(recProduct, BookingDetail.START_DATE, Air.START_DATE);
+        this.moveTargetField(recProduct, BookingDetail.END_DATE, Air.END_DATE);
+        this.moveTargetField(recProduct, BookingDetail.MEALS, Air.MEALS);
         
         return iErrorCode;
     }
@@ -847,45 +847,45 @@ public class BookingAir extends BookingDetail
         int iErrorCode = super.moveTourHeaderFields(recTourHeaderDetail, recTour);
         if (recTourHeaderDetail != null)
         {
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kEtd, TourHeaderDetail.kEtd);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kArriveTime, TourHeaderDetail.kArriveTime);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kXO, TourHeaderDetail.kXO);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kCityCode, TourHeaderDetail.kCityCode);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kCityDesc, TourHeaderDetail.kCityDesc);
-            if (this.moveTargetField(recTourHeaderDetail, BookingDetail.kAirlineID, TourHeaderDetail.kAirlineID))
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.ETD, TourHeaderDetail.ETD);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.ARRIVE_TIME, TourHeaderDetail.ARRIVE_TIME);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.XO, TourHeaderDetail.XO);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.CITY_CODE, TourHeaderDetail.CITY_CODE);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.CITY_DESC, TourHeaderDetail.CITY_DESC);
+            if (this.moveTargetField(recTourHeaderDetail, BookingDetail.AIRLINE_ID, TourHeaderDetail.AIRLINE_ID))
             {
-                Record recAirline = ((ReferenceField)this.getField(BookingDetail.kAirlineID)).getReference();
+                Record recAirline = ((ReferenceField)this.getField(BookingDetail.AIRLINE_ID)).getReference();
                 if (recAirline != null)
-                    this.getField(BookingDetail.kCarrier).moveFieldToThis(recAirline.getField(Airline.kDescription));
+                    this.getField(BookingDetail.CARRIER).moveFieldToThis(recAirline.getField(Airline.DESCRIPTION));
             }
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kFlightNo, TourHeaderDetail.kFlightNo);
-            //this.moveTargetField(recTourHeaderDetail, BookingDetail.kClass, TourHeaderDetail.kClass);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kToCityCode, TourHeaderDetail.kToCityCode);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kAddDays, TourHeaderDetail.kAddDays);
-            //this.moveTargetField(recTourHeaderDetail, BookingDetail.kStatus, TourHeaderDetail.kStatus);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kFareBasis, TourHeaderDetail.kFareBasis);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kStartDate, TourHeaderDetail.kStartDate);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kEndDate, TourHeaderDetail.kEndDate);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kAllow, TourHeaderDetail.kAllow);
-            this.moveTargetField(recTourHeaderDetail, BookingDetail.kMeals, TourHeaderDetail.kMeals);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.FLIGHT_NO, TourHeaderDetail.FLIGHT_NO);
+            //this.moveTargetField(recTourHeaderDetail, BookingDetail.CLASS, TourHeaderDetail.CLASS);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.TO_CITY_CODE, TourHeaderDetail.TO_CITY_CODE);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.ADD_DAYS, TourHeaderDetail.ADD_DAYS);
+            //this.moveTargetField(recTourHeaderDetail, BookingDetail.STATUS, TourHeaderDetail.STATUS);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.FARE_BASIS, TourHeaderDetail.FARE_BASIS);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.START_DATE, TourHeaderDetail.START_DATE);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.END_DATE, TourHeaderDetail.END_DATE);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.ALLOW, TourHeaderDetail.ALLOW);
+            this.moveTargetField(recTourHeaderDetail, BookingDetail.MEALS, TourHeaderDetail.MEALS);
         
-            if (!recTourHeaderDetail.getField(TourHeaderAir.kTourHeaderAirHeaderID).isNull())
+            if (!recTourHeaderDetail.getField(TourHeaderAir.TOUR_HEADER_AIR_HEADER_ID).isNull())
             { // Now move the air header reference (if it exists)
                 try {
-                    Record recBookingAirHeader = ((ReferenceField)this.getField(BookingAir.kBookingAirHeaderID)).getReferenceRecord();
+                    Record recBookingAirHeader = ((ReferenceField)this.getField(BookingAir.BOOKING_AIR_HEADER_ID)).getReferenceRecord();
                     recBookingAirHeader.addNew();
         
-                    recBookingAirHeader.setKeyArea(BookingAirHeader.kBookingIDKey);
-                    recBookingAirHeader.getField(BookingAirHeader.kBookingID).moveFieldToThis(this.getField(BookingAir.kBookingID));
-                    recBookingAirHeader.getField(BookingAirHeader.kBookingPaxID).moveFieldToThis(this.getField(BookingAir.kBookingPaxID));
-                    recBookingAirHeader.getField(BookingAirHeader.kModuleID).moveFieldToThis(this.getField(BookingAir.kModuleID));
-                    recBookingAirHeader.getField(BookingAirHeader.kModuleStartDate).moveFieldToThis(this.getField(BookingAir.kModuleStartDate));
+                    recBookingAirHeader.setKeyArea(BookingAirHeader.BOOKING_ID_KEY);
+                    recBookingAirHeader.getField(BookingAirHeader.BOOKING_ID).moveFieldToThis(this.getField(BookingAir.BOOKING_ID));
+                    recBookingAirHeader.getField(BookingAirHeader.BOOKING_PAX_ID).moveFieldToThis(this.getField(BookingAir.BOOKING_PAX_ID));
+                    recBookingAirHeader.getField(BookingAirHeader.MODULE_ID).moveFieldToThis(this.getField(BookingAir.MODULE_ID));
+                    recBookingAirHeader.getField(BookingAirHeader.MODULE_START_DATE).moveFieldToThis(this.getField(BookingAir.MODULE_START_DATE));
         
-                    recBookingAirHeader.getField(BookingAirHeader.kTourHeaderDetailID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAir.kTourHeaderAirHeaderID));
+                    recBookingAirHeader.getField(BookingAirHeader.TOUR_HEADER_DETAIL_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderAir.TOUR_HEADER_AIR_HEADER_ID));
         
                     if (recBookingAirHeader.seek(null))
                     {
-                        this.getField(BookingAir.kBookingAirHeaderID).moveFieldToThis(recBookingAirHeader.getField(BookingAirHeader.kID));
+                        this.getField(BookingAir.BOOKING_AIR_HEADER_ID).moveFieldToThis(recBookingAirHeader.getField(BookingAirHeader.ID));
                     }
         
         
@@ -907,14 +907,14 @@ public class BookingAir extends BookingDetail
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
-        if (iStatusType != BookingDetail.kInfoStatusID)
+        if (iStatusType != BookingDetail.INFO_STATUS_ID)
         {
-            if (this.getField(BookingDetail.kRateID).isNull())
-                return BookingDetail.kRateID;
-            if (this.getField(BookingDetail.kClassID).isNull())
-                return BookingDetail.kClassID;
+            if (this.getField(BookingDetail.RATE_ID).isNull())
+                return BookingDetail.RATE_ID;
+            if (this.getField(BookingDetail.CLASS_ID).isNull())
+                return BookingDetail.CLASS_ID;
         }
         return super.checkRequiredParams(iStatusType);
     }

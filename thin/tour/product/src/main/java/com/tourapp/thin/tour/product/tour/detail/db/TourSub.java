@@ -15,6 +15,8 @@ public class TourSub extends FieldList
     implements TourSubModel
 {
 
+    //public static final String ID = ID;
+
     public TourSub()
     {
         super();

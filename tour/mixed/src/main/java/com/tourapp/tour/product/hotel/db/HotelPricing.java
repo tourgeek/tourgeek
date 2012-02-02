@@ -236,10 +236,10 @@ public class HotelPricing extends ProductPricing
     {
         super.addMasterListeners();
         
-        this.getField(HotelPricing.kCost).addListener(new PaxToRoomHandler(HotelPricing.kRoomCost));
-        this.getField(HotelPricing.kRoomCost).addListener(new RoomToPaxHandler(HotelPricing.kCost));
-        this.getField(HotelPricing.kPrice).addListener(new PaxToRoomHandler(HotelPricing.kRoomPrice));
-        this.getField(HotelPricing.kRoomPrice).addListener(new RoomToPaxHandler(HotelPricing.kPrice));
+        this.getField(HotelPricing.COST).addListener(new PaxToRoomHandler(HotelPricing.ROOM_COST));
+        this.getField(HotelPricing.ROOM_COST).addListener(new RoomToPaxHandler(HotelPricing.COST));
+        this.getField(HotelPricing.PRICE).addListener(new PaxToRoomHandler(HotelPricing.ROOM_PRICE));
+        this.getField(HotelPricing.ROOM_PRICE).addListener(new RoomToPaxHandler(HotelPricing.PRICE));
     }
     /**
      * GetHotelCost Method.
@@ -264,60 +264,60 @@ public class HotelPricing extends ProductPricing
         Date dateEnd = calendar.getTime();
         if ((this.getEditMode() == Constants.EDIT_IN_PROGRESS) || (this.getEditMode() == Constants.EDIT_CURRENT))
         {
-            if (this.getField(ProductPricing.kProductID).getValue() == iHotelID)
-            if (this.getField(ProductPricing.kPaxCategoryID).getValue() == iPaxCategoryID)
-            if (this.getField(ProductPricing.kRateID).getValue() == iRateTypeID)
-            if (this.getField(ProductPricing.kClassID).getValue() == iRateClassID)
-            if (this.getField(ProductPricing.kStartDate).getValue() <= dateEnd.getTime()) // Start <= thisDate
-            if (this.getField(ProductPricing.kEndDate).getValue() >= dateStart.getTime())   // End >= thisDate
+            if (this.getField(ProductPricing.PRODUCT_ID).getValue() == iHotelID)
+            if (this.getField(ProductPricing.PAX_CATEGORY_ID).getValue() == iPaxCategoryID)
+            if (this.getField(ProductPricing.RATE_ID).getValue() == iRateTypeID)
+            if (this.getField(ProductPricing.CLASS_ID).getValue() == iRateClassID)
+            if (this.getField(ProductPricing.START_DATE).getValue() <= dateEnd.getTime()) // Start <= thisDate
+            if (this.getField(ProductPricing.END_DATE).getValue() >= dateStart.getTime())   // End >= thisDate
                 return this;        // Valid price
         }
-        this.getField(ProductPricing.kProductID).setValue(iHotelID);
-        this.getField(ProductPricing.kPaxCategoryID).setValue(iPaxCategoryID);
-        this.getField(ProductPricing.kRateID).setValue(iRateTypeID);
-        this.getField(ProductPricing.kClassID).setValue(iRateClassID);
-        ((DateTimeField)this.getField(ProductPricing.kEndDate)).setDate(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(ProductPricing.PRODUCT_ID).setValue(iHotelID);
+        this.getField(ProductPricing.PAX_CATEGORY_ID).setValue(iPaxCategoryID);
+        this.getField(ProductPricing.RATE_ID).setValue(iRateTypeID);
+        this.getField(ProductPricing.CLASS_ID).setValue(iRateClassID);
+        ((DateTimeField)this.getField(ProductPricing.END_DATE)).setDate(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         FileListener listener = null;
         try   {
             this.close();
-            this.setKeyArea(HotelPricing.kProductIDKey);
+            this.setKeyArea(HotelPricing.PRODUCT_ID_KEY);
             this.addListener(listener = new SubCurrentFilter(true, false));
             while (this.hasNext())
             {   // Loop until found or not
                 this.next();
-                if (this.getField(ProductPricing.kProductID).getValue() != iHotelID)
+                if (this.getField(ProductPricing.PRODUCT_ID).getValue() != iHotelID)
                     break;
-                if (this.getField(ProductPricing.kPaxCategoryID).getValue() != iPaxCategoryID)
+                if (this.getField(ProductPricing.PAX_CATEGORY_ID).getValue() != iPaxCategoryID)
                     break;
-                if (this.getField(ProductPricing.kRateID).getValue() != iRateTypeID)
+                if (this.getField(ProductPricing.RATE_ID).getValue() != iRateTypeID)
                     break;
-                if (this.getField(ProductPricing.kClassID).getValue() != iRateClassID)
+                if (this.getField(ProductPricing.CLASS_ID).getValue() != iRateClassID)
                     break;
-                if (this.getField(ProductPricing.kStartDate).getValue() > dateEnd.getTime())    // Start > thisDate
+                if (this.getField(ProductPricing.START_DATE).getValue() > dateEnd.getTime())    // Start > thisDate
                     break;
-                if (this.getField(ProductPricing.kEndDate).getValue() >= dateStart.getTime())   // End >= thisDate
+                if (this.getField(ProductPricing.END_DATE).getValue() >= dateStart.getTime())   // End >= thisDate
                 {
-                    if ((this.getField(HotelPricing.kUseRateID).getLength() == 0) &&
-                        (this.getField(HotelPricing.kUseClassID).getLength() == 0))
+                    if ((this.getField(HotelPricing.USE_RATE_ID).getLength() == 0) &&
+                        (this.getField(HotelPricing.USE_CLASS_ID).getLength() == 0))
                             return this;        // Valid price
                 // Read the "Use rate" rate
-                    iRateTypeID = (int)this.getField(HotelPricing.kUseRateID).getValue();
-                    iRateClassID = (int)this.getField(HotelPricing.kUseClassID).getValue();
-                    double dMarkupLine = this.getField(HotelPricing.kProductTermsID).getValue();
-                    double dHotelCost = this.getField(HotelPricing.kRoomCost).getValue();
-                    String strMeals = this.getField(HotelPricing.kMealPlanID).getString();
+                    iRateTypeID = (int)this.getField(HotelPricing.USE_RATE_ID).getValue();
+                    iRateClassID = (int)this.getField(HotelPricing.USE_CLASS_ID).getValue();
+                    double dMarkupLine = this.getField(HotelPricing.PRODUCT_TERMS_ID).getValue();
+                    double dHotelCost = this.getField(HotelPricing.ROOM_COST).getValue();
+                    String strMeals = this.getField(HotelPricing.MEAL_PLAN_ID).getString();
         
                     if (listener != null)
                         this.removeListener(listener, true);
                     if (this.getHotelCost(iHotelID, dateTarget, iRateTypeID, iRateClassID, iPaxCategoryID) == null)
                         return null;    // Not found
         
-                    if (this.getField(HotelPricing.kProductTermsID).isNull())
-                        this.getField(HotelPricing.kProductTermsID).setValue(dMarkupLine);
-                    if (this.getField(HotelPricing.kRoomCost).isNull())
-                        this.getField(HotelPricing.kRoomCost).setValue(dHotelCost);
-                    if (this.getField(HotelPricing.kMealPlanID).isNull())
-                        this.getField(HotelPricing.kMealPlanID).setString(strMeals);
+                    if (this.getField(HotelPricing.PRODUCT_TERMS_ID).isNull())
+                        this.getField(HotelPricing.PRODUCT_TERMS_ID).setValue(dMarkupLine);
+                    if (this.getField(HotelPricing.ROOM_COST).isNull())
+                        this.getField(HotelPricing.ROOM_COST).setValue(dHotelCost);
+                    if (this.getField(HotelPricing.MEAL_PLAN_ID).isNull())
+                        this.getField(HotelPricing.MEAL_PLAN_ID).setString(strMeals);
                     return this;        // Valid price
                 }
             }

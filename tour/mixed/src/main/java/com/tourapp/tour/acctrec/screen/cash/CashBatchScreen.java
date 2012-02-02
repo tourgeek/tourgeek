@@ -97,11 +97,11 @@ public class CashBatchScreen extends Screen
     {
         super.addListeners();
         
-        this.getMainRecord().getField(CashBatch.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kArBankAcctID)));
+        this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AR_BANK_ACCT_ID)));
         
-        this.getScreenRecord().getField(CashBatchScreenRecord.kUserID).moveFieldToThis(this.getMainRecord().getField(CashBatch.kUserID));
-        this.getMainRecord().setKeyArea(CashBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CashBatchScreenRecord.kUserID), CashBatch.kUserID, null, -1, null, -1));
+        this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID).moveFieldToThis(this.getMainRecord().getField(CashBatch.USER_ID));
+        this.getMainRecord().setKeyArea(CashBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID), CashBatch.USER_ID, null, null, null, null));
     }
     /**
      * Add button(s) to the toolbar.
@@ -140,10 +140,10 @@ public class CashBatchScreen extends Screen
         { // This is special logic to write the current empty record (with the default account id) first
             if (this.getMainRecord().getEditMode() == DBConstants.EDIT_ADD)
             {
-                if (this.getMainRecord().getField(CashBatch.kBankAcctID).isNull())
+                if (this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).isNull())
                     return false;
                 try {
-                    this.getMainRecord().getField(CashBatch.kBankAcctID).setModified(true);
+                    this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).setModified(true);
                     this.getMainRecord().writeAndRefresh();
                 } catch (DBException e) {
                     e.printStackTrace();

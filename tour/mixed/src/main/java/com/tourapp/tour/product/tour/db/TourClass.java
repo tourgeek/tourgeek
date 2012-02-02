@@ -353,7 +353,7 @@ public class TourClass extends VirtualRecord
      */
     public void fixBasedFields()
     {
-        if (this.getField(TourClass.kBasedClassID).isNull())
+        if (this.getField(TourClass.BASED_CLASS_ID).isNull())
             return;
         if ((this.getEditMode() != DBConstants.EDIT_CURRENT) && (this.getEditMode() != DBConstants.EDIT_IN_PROGRESS))
             return; // Must be a current record
@@ -374,7 +374,7 @@ public class TourClass extends VirtualRecord
         Object[] fieldListenerStatus = this.setEnableFieldListeners(false);
         boolean[] listenerStatus = this.setEnableListeners(false);
         
-        Object bookmark = this.getField(TourClass.kBasedClassID).getData();
+        Object bookmark = this.getField(TourClass.BASED_CLASS_ID).getData();
         TourClass recTourClass = new TourClass(this.findRecordOwner());
         try {
             while (bookmark != null)
@@ -382,12 +382,12 @@ public class TourClass extends VirtualRecord
                 if (recTourClass.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE) == null)
                     return;
                 // Now, move the default fields up to the main record
-                for (int iFieldSeq = TourClass.kDepositDueDays; iFieldSeq < this.getFieldCount(); iFieldSeq++)
+                for (int iFieldSeq = this.getFieldSeq(TourClass.DEPOSIT_DUE_DAYS); iFieldSeq < this.getFieldCount(); iFieldSeq++)
                 {
                     if (this.getField(iFieldSeq).isNull())
                         this.getField(iFieldSeq).moveFieldToThis(recTourClass.getField(iFieldSeq));
                 }
-                bookmark = recTourClass.getField(TourClass.kBasedClassID).getData();
+                bookmark = recTourClass.getField(TourClass.BASED_CLASS_ID).getData();
             }
         } catch (DBException ex) {
             ex.printStackTrace();

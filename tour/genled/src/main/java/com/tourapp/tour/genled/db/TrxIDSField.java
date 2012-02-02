@@ -56,7 +56,7 @@ public class TrxIDSField extends SCannedBox
     {
         if (fieldConverter != null)
         { // Make sure this field comes back on the query
-            ((BaseField)fieldConverter.getField()).getRecord().getField(AcctDetailDist.kAcctDetailID).setSelected(true);
+            ((BaseField)fieldConverter.getField()).getRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).setSelected(true);
         }
         String strDesc = AcctDetailDist.DIST_SOURCE;
         if (parentScreen instanceof GridScreen)
@@ -83,18 +83,18 @@ public class TrxIDSField extends SCannedBox
                 return true; // Command handled (and ignored)
             // First, get the transaction type
             Record recAcctDetailDist = field.getRecord();
-            Record recAcctDetail = ((ReferenceField)recAcctDetailDist.getField(AcctDetailDist.kAcctDetailID)).getReference();
-            Record recTransactionType = ((ReferenceField)recAcctDetail.getField(AcctDetail.kTrxTypeID)).getReference();
+            Record recAcctDetail = ((ReferenceField)recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_ID)).getReference();
+            Record recTransactionType = ((ReferenceField)recAcctDetail.getField(AcctDetail.TRX_TYPE_ID)).getReference();
             if ((recTransactionType == null) || (recTransactionType.getEditMode() != Constants.EDIT_CURRENT))
                 return false;
             // Next, get the Record, make it current, and display the MaintScreen.
-            String strRecordTarget = recTransactionType.getField(TransactionType.kSourceFile).toString();
+            String strRecordTarget = recTransactionType.getField(TransactionType.SOURCE_FILE).toString();
             if (strRecordTarget.length() == 0)
-                strRecordTarget = recTransactionType.getField(TransactionType.kDescCode).toString();
+                strRecordTarget = recTransactionType.getField(TransactionType.DESC_CODE).toString();
             if (strRecordTarget.length() == 0)
                 return true;
             if (strRecordTarget.indexOf('.') == -1)
-                strRecordTarget = ".tour." + recTransactionType.getField(TransactionType.kSystemCode).toString() + ".db." + strRecordTarget;
+                strRecordTarget = ".tour." + recTransactionType.getField(TransactionType.SYSTEM_CODE).toString() + ".db." + strRecordTarget;
             RecordOwner recordOwner = null;
             if (this.getConverter() != null)
                 if (this.getConverter().getField() != null)

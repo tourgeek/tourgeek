@@ -16,6 +16,9 @@ public class BaseTrx extends Trx
     implements BaseTrxModel
 {
 
+    //public static final String ID = ID;
+    //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
+
     public BaseTrx()
     {
         super();

@@ -72,26 +72,26 @@ public class MergeCodeTableSearch extends MergeCodeTable
             String strCode = this.getProperty("code");
             if (strCode == null)
                 return false;   // Never
-            Record recOTACodeTable = this.getRecord(OTACodeTable.kOTACodeTableFile);
-            recOTACodeTable.setKeyArea(OTACodeTable.kNameCodeKey);
-            recOTACodeTable.getField(OTACodeTable.kNameCode).setString(strCode);
+            Record recOTACodeTable = this.getRecord(OTACodeTable.OTA_CODE_TABLE_FILE);
+            recOTACodeTable.setKeyArea(OTACodeTable.NAME_CODE_KEY);
+            recOTACodeTable.getField(OTACodeTable.NAME_CODE).setString(strCode);
             if (!recOTACodeTable.seek(DBConstants.EQUALS))
                 return false;   // Never
-            String strCodeName = recOTACodeTable.getField(OTACodeTable.kName).toString();
+            String strCodeName = recOTACodeTable.getField(OTACodeTable.NAME).toString();
             
-            Record recProductSearchType = this.getRecord(ProductSearchType.kProductSearchTypeFile);
-            recProductSearchType.setKeyArea(ProductSearchType.kDescriptionKey);
-            recProductSearchType.getField(ProductSearchType.kDescription).setString(strCodeName);
+            Record recProductSearchType = this.getRecord(ProductSearchType.PRODUCT_SEARCH_TYPE_FILE);
+            recProductSearchType.setKeyArea(ProductSearchType.DESCRIPTION_KEY);
+            recProductSearchType.getField(ProductSearchType.DESCRIPTION).setString(strCodeName);
             if (!recProductSearchType.seek(DBConstants.EQUALS))
             {
                 recProductSearchType.addNew();
-                recProductSearchType.getField(ProductSearchType.kDescription).setString(strCodeName);
+                recProductSearchType.getField(ProductSearchType.DESCRIPTION).setString(strCodeName);
                 recProductSearchType.writeAndRefresh();
             }
             
-            recDest.getField(ProductSearchCategory.kDescription).moveFieldToThis(recSource.getField(OTACode.kName));
-            recDest.getField(ProductSearchCategory.kProductSearchTypeID).moveFieldToThis(recProductSearchType.getField(ProductSearchType.kID));
-            recDest.setKeyArea(ProductSearchCategory.kProductSearchTypeIDKey);
+            recDest.getField(ProductSearchCategory.DESCRIPTION).moveFieldToThis(recSource.getField(OTACode.NAME));
+            recDest.getField(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID).moveFieldToThis(recProductSearchType.getField(ProductSearchType.ID));
+            recDest.setKeyArea(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID_KEY);
         
             return recDest.seek(DBConstants.EQUALS);
         } catch (DBException e) {
@@ -106,10 +106,10 @@ public class MergeCodeTableSearch extends MergeCodeTable
      */
     public void mergeSourceData(Record recSource, Record recDest, boolean bFound)
     {
-        recDest.getField(ProductSearchCategory.kDescription).moveFieldToThis(recSource.getField(OTACode.kName));
-        Record recProductSearchType = this.getRecord(ProductSearchType.kProductSearchTypeFile);
-        recDest.getField(ProductSearchCategory.kProductSearchTypeID).moveFieldToThis(recProductSearchType.getField(ProductSearchType.kID));
-        recDest.getField(ProductSearchCategory.kValue).moveFieldToThis(recSource.getField(OTACode.kID));
+        recDest.getField(ProductSearchCategory.DESCRIPTION).moveFieldToThis(recSource.getField(OTACode.NAME));
+        Record recProductSearchType = this.getRecord(ProductSearchType.PRODUCT_SEARCH_TYPE_FILE);
+        recDest.getField(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID).moveFieldToThis(recProductSearchType.getField(ProductSearchType.ID));
+        recDest.getField(ProductSearchCategory.VALUE).moveFieldToThis(recSource.getField(OTACode.ID));
     }
     /**
      * Open the other files.

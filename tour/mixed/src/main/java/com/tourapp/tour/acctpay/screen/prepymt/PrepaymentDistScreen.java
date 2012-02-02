@@ -101,18 +101,18 @@ public class PrepaymentDistScreen extends Screen
     {
         super.addListeners();
         this.addMainKeyBehavior();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
         
-        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.kTrxStatusID);
+        EnableScreenHandler behavior = new EnableScreenHandler(ApTrx.TRX_STATUS_ID);
         this.getMainRecord().addListener(behavior);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.PREPAYMENT);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEBIT_MEMO);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.BROKER_PAYMENT);
-        behavior.addComparison(recTrxStatus.getField(TrxStatus.kID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.PREPAYMENT);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEBIT_MEMO);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.BROKER_PAYMENT);
+        behavior.addComparison(recTrxStatus.getField(TrxStatus.ID).getData());
         
-        m_recSelectApTrx = ((Vendor)this.getRecord(Vendor.kVendorFile)).addSelectBehaviors();
+        m_recSelectApTrx = ((Vendor)this.getRecord(Vendor.VENDOR_FILE)).addSelectBehaviors();
         FilterApTrxHandler filter = new FilterApTrxHandler(null);
         m_recSelectApTrx.addListener(filter);
         filter.addTrxStatusID(ApTrx.INVOICE);
@@ -139,19 +139,19 @@ public class PrepaymentDistScreen extends Screen
         {
             this.getMainRecord().getField(i).setEnabled(bEnable);
         }
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).setEnabled(false);
-        this.getMainRecord().getField(ApTrx.kID).setEnabled(true);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).setEnabled(false);
+        this.getMainRecord().getField(ApTrx.ID).setEnabled(true);
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         ScreenField screenField = null;
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -185,8 +185,8 @@ public class PrepaymentDistScreen extends Screen
             int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();
             properties.put(ApTrxClassField.DISPLAY_TYPE_PARAM, Integer.toString(ApTrxClassField.PREPAYMENTS));
-            if (!this.getMainRecord().getField(ApTrx.kVendorID).isNull())
-                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.kVendorID).toString());
+            if (!this.getMainRecord().getField(ApTrx.VENDOR_ID).isNull())
+                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.VENDOR_ID).toString());
         
             return (this.onForm(null, iDocMode, bReadCurrentRecord, iCommandOptions, properties) != null);
         }
@@ -201,7 +201,7 @@ public class PrepaymentDistScreen extends Screen
     public boolean distribute()
     {
         ApTrx recApTrx = (ApTrx)this.getMainRecord();
-        PaymentHistory recPaymentHistory = (PaymentHistory)this.getRecord(PaymentHistory.kPaymentHistoryFile);
+        PaymentHistory recPaymentHistory = (PaymentHistory)this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE);
         return recPaymentHistory.distribute(this, recApTrx, m_recSelectApTrx);
     }
 

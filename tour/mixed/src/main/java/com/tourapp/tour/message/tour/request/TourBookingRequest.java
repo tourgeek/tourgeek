@@ -104,7 +104,7 @@ public class TourBookingRequest extends ProductBookingRequest
      */
     public boolean isOrderComponents(BookingDetail recBookingDetail)
     {
-        MessageTransport recMessageTransport = (MessageTransport)((ReferenceField)recBookingDetail.getField(BookingDetail.kProductMessageTransportID)).getReference();
+        MessageTransport recMessageTransport = (MessageTransport)((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID)).getReference();
         if (recMessageTransport != null)
             if (recMessageTransport.isDirectTransport())
                 return true;    // Special case - For direct tours, add the tour detail immediately
@@ -116,7 +116,7 @@ public class TourBookingRequest extends ProductBookingRequest
     public int initBookingApTrx(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
-        if (recBookingDetail.getField(BookingDetail.kVendorID).isNull())
+        if (recBookingDetail.getField(BookingDetail.VENDOR_ID).isNull())
             return DBConstants.NORMAL_RETURN;   // Vendor not required for tour detail
         return super.initBookingApTrx(record);
     }

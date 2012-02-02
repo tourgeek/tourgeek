@@ -71,10 +71,10 @@ public class BrocHistButton extends SButtonBox
         pBrocHistList.setEditing(false);
         m_pAmRequests.addDependentScreen(pBrocHistList);        // When this closes, closes dependent screen
         
-        //xFileBehavior pSubFileBeh = new SubFileFilter(m_pAmRequests.getField(Request.kUseAgency), RequestHistory.kUseAgency, m_pAmRequests.getField(Request.kProfileID), RequestHistory.kAgencyNo, null, -1);
+        //xFileBehavior pSubFileBeh = new SubFileFilter(m_pAmRequests.getField(Request.USE_AGENCY), RequestHistory.USE_AGENCY, m_pAmRequests.getField(Request.PROFILE_ID), RequestHistory.AGENCY_NO, null, -1);
         //xpAmBrocHist.addListener(pSubFileBeh);
         
-        m_pAmRequests.getField(Request.kProfileCode).addListener(new FieldReSelectHandler(pBrocHistList));  // Reselect on file change
+        m_pAmRequests.getField(Request.PROFILE_CODE).addListener(new FieldReSelectHandler(pBrocHistList));  // Reselect on file change
         
         return iErrorCode;
     }

@@ -73,7 +73,7 @@ public class FinStmtDetailReportScreen extends ReportScreen
      */
     public Record getMainRecord()
     {
-        return this.getRecord(FinStmtDetail.kFinStmtDetailFile);
+        return this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE);
     }
     /**
      * SetupSFields Method.

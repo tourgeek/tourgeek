@@ -115,13 +115,13 @@ public class UpdateTrxDescHandler extends FileListener
                 {
                     m_recTrxStatus.next();
                     m_recTrxStatus.edit();
-                    m_recTrxStatus.getField(TrxStatus.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
+                    m_recTrxStatus.getField(TrxStatus.DESC_CODE).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESC_CODE));
         
-                    Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
+                    Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.TRX_SYSTEM_ID)).getReference();
                     if (recTrxSystem != null)
                     {
-                        m_recTrxStatus.getField(TrxStatus.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
-                        m_recTrxStatus.getField(TrxStatus.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
+                        m_recTrxStatus.getField(TrxStatus.SYSTEM_CODE).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_CODE));
+                        m_recTrxStatus.getField(TrxStatus.TRX_SYSTEM_ID).moveFieldToThis(recTrxSystem.getField(TrxSystem.ID));
                     }
         
                     if (iChangeType == DBConstants.UPDATE_TYPE)
@@ -145,13 +145,13 @@ public class UpdateTrxDescHandler extends FileListener
                 {
                     m_recTrxGroup.next();
                     m_recTrxGroup.edit();
-                    m_recTrxGroup.getField(TrxGroup.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
+                    m_recTrxGroup.getField(TrxGroup.DESC_CODE).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESC_CODE));
         
-                    Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
+                    Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.TRX_SYSTEM_ID)).getReference();
                     if (recTrxSystem != null)
                     {
-                        m_recTrxGroup.getField(TrxGroup.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
-                        m_recTrxGroup.getField(TrxGroup.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
+                        m_recTrxGroup.getField(TrxGroup.SYSTEM_CODE).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_CODE));
+                        m_recTrxGroup.getField(TrxGroup.TRX_SYSTEM_ID).moveFieldToThis(recTrxSystem.getField(TrxSystem.ID));
                     }
         
                     if (iChangeType == DBConstants.UPDATE_TYPE)

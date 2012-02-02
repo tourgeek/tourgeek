@@ -16,6 +16,11 @@ public class TourEventSchedule extends PropertiesRecord
     implements TourEventScheduleModel
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    public static final String ACTION_PROPERTIES = PROPERTIES;
+
     public TourEventSchedule()
     {
         super();

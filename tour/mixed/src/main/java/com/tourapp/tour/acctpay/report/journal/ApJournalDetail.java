@@ -73,7 +73,7 @@ public class ApJournalDetail extends ReportScreen
      */
     public Record getMainRecord()
     {
-        return this.getRecord(ApTrx.kApTrxFile);
+        return this.getRecord(ApTrx.AP_TRX_FILE);
     }
     /**
      * SetupSFields Method.

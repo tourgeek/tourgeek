@@ -101,20 +101,20 @@ public class ArcReport extends ReportScreen
     {
         super.addListeners();
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.kTicketTrxFile, TicketTrx.TICKETED);
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kTrxStatusID), recTrxStatus.getField(TrxStatus.kID), "="));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kIssueDate), this.getScreenRecord().getField(ArcReportScreenRecord.kLastArcDate), "<="));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.AIR, TicketTrx.TICKET_TRX_FILE, TicketTrx.TICKETED);
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.TRX_STATUS_ID), recTrxStatus.getField(TrxStatus.ID), "="));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.ISSUE_DATE), this.getScreenRecord().getField(ArcReportScreenRecord.LAST_ARC_DATE), "<="));
         
-        this.getScreenRecord().getField(ArcReportScreenRecord.kLastArcDate).setSFieldToProperty();
-        this.getScreenRecord().getField(ArcReportScreenRecord.kSummaryAccountID).setSFieldToProperty();
+        this.getScreenRecord().getField(ArcReportScreenRecord.LAST_ARC_DATE).setSFieldToProperty();
+        this.getScreenRecord().getField(ArcReportScreenRecord.SUMMARY_ACCOUNT_ID).setSFieldToProperty();
         
-        if (this.getScreenRecord().getField(ArcReportScreenRecord.kLastArcDate).isNull())
-            this.getScreenRecord().getField(ArcReportScreenRecord.kLastArcDate).setValue(DateField.todaysDate());
-        if (this.getScreenRecord().getField(ArcReportScreenRecord.kSummaryAccountID).isNull())
-            this.getScreenRecord().getField(ArcReportScreenRecord.kSummaryAccountID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kArcSummaryAccountID)));
+        if (this.getScreenRecord().getField(ArcReportScreenRecord.LAST_ARC_DATE).isNull())
+            this.getScreenRecord().getField(ArcReportScreenRecord.LAST_ARC_DATE).setValue(DateField.todaysDate());
+        if (this.getScreenRecord().getField(ArcReportScreenRecord.SUMMARY_ACCOUNT_ID).isNull())
+            this.getScreenRecord().getField(ArcReportScreenRecord.SUMMARY_ACCOUNT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.ARC_SUMMARY_ACCOUNT_ID)));
         // Report totals
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ArcReportScreenRecord.kReportTotal), TicketTrx.kNetFare, true, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ArcReportScreenRecord.REPORT_TOTAL), TicketTrx.NET_FARE, true, true));
     }
     /**
      * Add the toolbars that belong with this screen.

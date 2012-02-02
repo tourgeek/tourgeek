@@ -31,10 +31,15 @@ public class ProfileScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PROFILE_KEY = "ProfileKey";
     public static final int kProfileKey = kScreenRecordLastField + 1;
+    public static final String NAME_SORT = "NameSort";
     public static final int kNameSort = kProfileKey + 1;
+    public static final String POSTAL_CODE_SORT = "PostalCodeSort";
     public static final int kPostalCodeSort = kNameSort + 1;
+    public static final String PROFILE_TYPE_ID = "ProfileTypeID";
     public static final int kProfileTypeID = kPostalCodeSort + 1;
+    public static final String LAST_NAME_SORT = "LastNameSort";
     public static final int kLastNameSort = kProfileTypeID + 1;
     public static final int kProfileScreenRecordLastField = kLastNameSort;
     public static final int kProfileScreenRecordFields = kLastNameSort - DBConstants.MAIN_FIELD + 1;
@@ -94,9 +99,9 @@ public class ProfileScreenRecord extends ScreenRecord
     {
         super.addListeners();
         FieldToUpperHandler upper = new FieldToUpperHandler(null);
-        this.getField(ProfileScreenRecord.kNameSort).addListener(upper);
+        this.getField(ProfileScreenRecord.NAME_SORT).addListener(upper);
         CheckForTheHandler the = new CheckForTheHandler(null);
-        this.getField(ProfileScreenRecord.kNameSort).addListener(the);
+        this.getField(ProfileScreenRecord.NAME_SORT).addListener(the);
     }
 
 }

@@ -15,6 +15,8 @@ public class BookingSub extends FieldList
     implements BookingSubModel
 {
 
+    //public static final String ID = ID;
+
     public BookingSub()
     {
         super();

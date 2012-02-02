@@ -40,6 +40,7 @@ public class AirScreenRecord extends ProductScreenRecord
 
     //public static final int kRateID = kRateID;
     //public static final int kClassID = kClassID;
+    public static final String AIRLINE_ID = "AirlineID";
     public static final int kAirlineID = kProductScreenRecordLastField + 1;
     public static final int kAirScreenRecordLastField = kAirlineID;
     public static final int kAirScreenRecordFields = kAirlineID - DBConstants.MAIN_FIELD + 1;

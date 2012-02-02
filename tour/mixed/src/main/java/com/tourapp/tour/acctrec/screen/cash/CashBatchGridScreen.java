@@ -88,11 +88,11 @@ public class CashBatchGridScreen extends GridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().getField(CashBatch.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kArBankAcctID)));
+        this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.AR_BANK_ACCT_ID)));
         
-        this.getMainRecord().setKeyArea(CashBatch.kUserIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CashBatchScreenRecord.kUserID), CashBatch.kUserID, null, -1, null, -1));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kUserID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().setKeyArea(CashBatch.USER_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID), CashBatch.USER_ID, null, null, null, null));
+        this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Override this to open the other files in the query.
@@ -110,7 +110,7 @@ public class CashBatchGridScreen extends GridScreen
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.POST, MenuConstants.POST, MenuConstants.POST, null);
         
-        this.getScreenRecord().getField(CashBatchScreenRecord.kUserID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.
@@ -148,12 +148,12 @@ public class CashBatchGridScreen extends GridScreen
         { // This is special logic to write the current empty record (with the default account id) first
             if (this.getMainRecord().getEditMode() == DBConstants.EDIT_ADD)
             {
-                if (this.getMainRecord().getField(CashBatch.kBankAcctID).isNull())
+                if (this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).isNull())
                     return false;
                 if (this.getScreenFieldView().getSelectedRow() == -1)
                     return false;
                 try {
-                    this.getMainRecord().getField(CashBatch.kBankAcctID).setModified(true);
+                    this.getMainRecord().getField(CashBatch.BANK_ACCT_ID).setModified(true);
                     this.getMainRecord().writeAndRefresh();
                 } catch (DBException e) {
                     e.printStackTrace();

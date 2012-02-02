@@ -8,6 +8,9 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface TransportProductModel extends ProductModel
 {
+
+    //public static final String ID = ID;
+    //public static final String CITY_ID = CITY_ID;
     public static final String CITY_CODE = "CityCode";
     public static final String TO_CITY_ID = "ToCityID";
     public static final String TO_CITY_CODE = "ToCityCode";

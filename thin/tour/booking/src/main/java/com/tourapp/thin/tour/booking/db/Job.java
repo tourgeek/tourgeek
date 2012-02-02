@@ -15,6 +15,8 @@ public class Job extends FieldList
     implements JobModel
 {
 
+    //public static final String ID = ID;
+
     public Job()
     {
         super();

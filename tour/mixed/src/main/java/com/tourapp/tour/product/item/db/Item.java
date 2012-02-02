@@ -214,21 +214,21 @@ public class Item extends Product
         double dPPCost = this.getItemCost(dateTarget, iRateID, iClassID, false);
         double dPPPriceLocal = this.getItemCost(dateTarget, iRateID, iClassID, true);
         
-        this.getField(Item.kPPCost).setValue(dPPCost);
-        this.getField(Item.kPPPriceLocal).setValue(dPPPriceLocal);
+        this.getField(Item.PP_COST).setValue(dPPCost);
+        this.getField(Item.PP_PRICE_LOCAL).setValue(dPPPriceLocal);
         
         double dItemCost = dPPCost;
         
         double dTotalLocalCost = Math.floor(dItemCost * sTargetPax * 100.00 + 0.5) / 100.00;
         double dTotalLocalPrice = Math.floor(dPPPriceLocal * sTargetPax * 100.00 + 0.5) / 100.00;
         
-        this.getField(Item.kClassID).setValue(iClassID);
+        this.getField(Item.CLASS_ID).setValue(iClassID);
         
-        this.getField(Item.kPPCost).setValue(dItemCost);
-        this.getField(Product.kProductCost).setValue(dTotalLocalCost);
-        this.getField(Product.kProductPriceLocal).setValue(dTotalLocalPrice);
+        this.getField(Item.PP_COST).setValue(dItemCost);
+        this.getField(Product.PRODUCT_COST).setValue(dTotalLocalCost);
+        this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalLocalPrice);
         
-        responseProductMessageData.setPPCost(this.getField(Item.kPPCost).getValue());
+        responseProductMessageData.setPPCost(this.getField(Item.PP_COST).getValue());
         if (iClassID != productMessageData.getRateClassID())
         {
             responseProductMessageData.setRateClassID(productMessageData.getRateClassID());
@@ -240,7 +240,7 @@ public class Item extends Product
         if (dTotalLocalCost == 0)
             iStatus = BaseStatus.NOT_VALID;
         responseMessage.setMessageDataStatus(iStatus);
-        this.getField(Product.kDisplayCostStatusID).setValue(iStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iStatus);
         return messageReply;
     }
     /**
@@ -289,9 +289,9 @@ public class Item extends Product
         if (recProductCostLookup != null)
         {
             if (!bGetPrice)
-                dCost += recProductCostLookup.getCost(ItemPricing.kCost, this.getProductTerms());
+                dCost += recProductCostLookup.getCost(ItemPricing.COST, this.getProductTerms());
             else
-                dCost += recProductCostLookup.getField(ItemPricing.kPrice).getValue();
+                dCost += recProductCostLookup.getField(ItemPricing.PRICE).getValue();
         }
         return dCost;
     }
@@ -305,20 +305,20 @@ public class Item extends Product
      */
     public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
     {
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getDateTime();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
         short sTargetPax = recBookingDetail.getNoPax();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.kClassID).getValue();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.kRateID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
+        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
         ItemPricing recProductPricing = ((ItemPricing)this.getProductPricing()).getItemCost(this, dateTarget, iRateID, iClassID);
         if (recProductPricing != null)
         {
             int iPricingType = PricingType.COMPONENT_PRICING;
             int iPaxCategory = PaxCategory.ALL_ID;
             int iQuantity = sTargetPax;
-            double dAmount = recProductPricing.getField(ProductPricing.kPrice).getValue();
-            boolean bCommissionable = recProductPricing.getField(ProductPricing.kCommissionable).getState();
-            double dCommissionRate = recProductPricing.getField(ProductPricing.kCommissionRate).getValue();
-            String strPayAt = recProductPricing.getField(ProductPricing.kPayAt).toString();
+            double dAmount = recProductPricing.getField(ProductPricing.PRICE).getValue();
+            boolean bCommissionable = recProductPricing.getField(ProductPricing.COMMISSIONABLE).getState();
+            double dCommissionRate = recProductPricing.getField(ProductPricing.COMMISSION_RATE).getValue();
+            String strPayAt = recProductPricing.getField(ProductPricing.PAY_AT).toString();
             return recBookingDetail.updateBookingLine(recBookingLine, iPricingType, iPaxCategory, iQuantity, dAmount, bCommissionable, dCommissionRate, strPayAt, PricingStatus.OKAY, iChangeType);
         }
         return DBConstants.ERROR_RETURN;

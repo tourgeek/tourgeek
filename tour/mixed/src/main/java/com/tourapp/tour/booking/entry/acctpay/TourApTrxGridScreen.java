@@ -107,7 +107,7 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Tour.kTourFile);
+        return this.getRecord(Tour.TOUR_FILE);
     }
     /**
      * Add all the screen listeners.
@@ -116,18 +116,18 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
     {
         super.addListeners();
         
-        this.getHeaderRecord().getField(Tour.kID).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(Tour.ID).addListener(new FieldReSelectHandler(this));
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord(), true));
         /*
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(VendorScreenRecord.kTotal), ApTrx.kInvoiceAmount, false, true)); // Init this field override for other value
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(VendorScreenRecord.kBalance), ApTrx.kInvoiceBalance, false, true));    // Init this field override for other value
-        this.getScreenRecord().getField(VendorScreenRecord.kTourID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(VendorScreenRecord.TOTAL), ApTrx.INVOICE_AMOUNT, false, true));    // Init this field override for other value
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(VendorScreenRecord.BALANCE), ApTrx.INVOICE_BALANCE, false, true));   // Init this field override for other value
+        this.getScreenRecord().getField(VendorScreenRecord.TOUR_ID).addListener(new FieldReSelectHandler(this));
         
-        String strDisplayType = this.getProperty(this.getScreenRecord().getField(VendorScreenRecord.kDisplayType).getFieldName());
+        String strDisplayType = this.getProperty(this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE).getFieldName());
         if (strDisplayType != null)
-            this.getScreenRecord().getField(VendorScreenRecord.kDisplayType).setString(strDisplayType, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        this.getMainRecord().addListener(new FilterApTrxHandler(this.getScreenRecord().getField(VendorScreenRecord.kDisplayType)));
-        this.getScreenRecord().getField(VendorScreenRecord.kDisplayType).addListener(new FieldReSelectHandler(this));
+            this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE).setString(strDisplayType, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        this.getMainRecord().addListener(new FilterApTrxHandler(this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE)));
+        this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE).addListener(new FieldReSelectHandler(this));
         */
         this.setEditing(false);
         this.setAppending(false);
@@ -143,7 +143,7 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
         
         String strPaymentHistory = PaymentHistory.PAYMENT_HISTORY;
         strPaymentHistory = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strPaymentHistory);
-        new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, PaymentHistory.PAYMENT_HISTORY_ICON, PaymentHistory.kPaymentHistoryFile, strPaymentHistory);
+        new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, PaymentHistory.PAYMENT_HISTORY_ICON, PaymentHistory.PAYMENT_HISTORY_FILE, strPaymentHistory);
         new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
         super.addNavButtons();  // Next buttons will be "First!"
     }
@@ -157,13 +157,13 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
         String strPaymentHistory = PaymentHistory.PAYMENT_HISTORY;
         strPaymentHistory = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strPaymentHistory);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, MenuConstants.FORMDETAIL, null);
-        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strPaymentHistory, PaymentHistory.PAYMENT_HISTORY_ICON, PaymentHistory.kPaymentHistoryFile, null);
+        new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strPaymentHistory, PaymentHistory.PAYMENT_HISTORY_ICON, PaymentHistory.PAYMENT_HISTORY_FILE, null);
         
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(AcctDetailDist.DIST_DISTRIBUTION), AcctDetailDist.DIST_DISTRIBUTION, AcctDetailDist.DIST_DISTRIBUTION, null);
         
-        String strVendor = Vendor.kVendorFile + ' ' + MenuConstants.DISPLAY;
+        String strVendor = Vendor.VENDOR_FILE + ' ' + MenuConstants.DISPLAY;
         strVendor = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strVendor);
-        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strVendor, MenuConstants.DISPLAY, Vendor.kVendorFile, null);
+        new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strVendor, MenuConstants.DISPLAY, Vendor.VENDOR_FILE, null);
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -174,10 +174,10 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
         ToolScreen toolbar = super.addToolbars();
         /*
         ToolScreen toolbar2 = new EmptyToolbar(this.getNextLocation(ScreenConstants.LAST_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
         
         Converter converter = null;
-        converter = recTour.getField(Tour.kTotalCost);
+        converter = recTour.getField(Tour.TOTAL_COST);
         ScreenField sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         */
@@ -210,16 +210,16 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-        if (Vendor.kVendorFile.equalsIgnoreCase(strCommand))
+        if (Vendor.VENDOR_FILE.equalsIgnoreCase(strCommand))
         {
             iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROSWER;
             boolean bReadCurrentRecord = false;
             boolean bLinkGridToQuery = false;
             int iDocMode = ApTrx.VENDOR_AP_SCREEN;
             Map<String,Object> properties = new Hashtable<String,Object>();
-        //?    properties.put(this.getScreenRecord().getField(VendorScreenRecord.kDisplayType).getFieldName(), this.getScreenRecord().getField(VendorScreenRecord.kDisplayType).toString());
-            if (!this.getMainRecord().getField(ApTrx.kVendorID).isNull())
-                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.kVendorID).toString());
+        //?    properties.put(this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE).getFieldName(), this.getScreenRecord().getField(VendorScreenRecord.DISPLAY_TYPE).toString());
+            if (!this.getMainRecord().getField(ApTrx.VENDOR_ID).isNull())
+                properties.put(DBParams.HEADER_OBJECT_ID, this.getMainRecord().getField(ApTrx.VENDOR_ID).toString());
         
             Record recordMain = this.getMainRecord();
             if (recordMain.getListener(OnSelectHandler.class.getName()) != null)

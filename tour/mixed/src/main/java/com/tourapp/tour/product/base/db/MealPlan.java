@@ -179,16 +179,16 @@ public class MealPlan extends BaseClass
         String strMealDesc = Constants.BLANK;
         if ((fldMealPlanID == null) || (fldMealPlanID.getLength() == 0))
             return strMealDesc;
-        this.getField(MealPlan.kID).moveFieldToThis(fldMealPlanID, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(MealPlan.ID).moveFieldToThis(fldMealPlanID, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         try   {
             boolean bSuccess = this.seek("=");
             if (bSuccess)
             {
                 String thisMealString = Constants.BLANK;
                 if (bDetailedDesc)
-                    strMealDesc = this.getField(MealPlan.kDescription).getString();
+                    strMealDesc = this.getField(MealPlan.DESCRIPTION).getString();
                 else
-                    strMealDesc = this.getField(MealPlan.kCode).getString();
+                    strMealDesc = this.getField(MealPlan.CODE).getString();
                 if (strMealDesc.length() == 0)
                 {
                     if (this.getField(kBreakfast).getState())

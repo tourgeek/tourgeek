@@ -98,23 +98,23 @@ public class RefundPendGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(ArTrx.kTrxStatusIDKey);
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        int iSubmitted = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_SUBMITTED);
-        int iHeld = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_HELD);
-        int iPay = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-        this.getScreenRecord().getField(RefundScreenRecord.kStartTrxStatusID).setValue(Math.min(iSubmitted, Math.min(iHeld, iPay)));
-        this.getScreenRecord().getField(RefundScreenRecord.kEndTrxStatusID).setValue(Math.max(iSubmitted, Math.max(iHeld, iPay)));
+        this.getMainRecord().setKeyArea(ArTrx.TRX_STATUS_ID_KEY);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        int iSubmitted = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_SUBMITTED);
+        int iHeld = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_HELD);
+        int iPay = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+        this.getScreenRecord().getField(RefundScreenRecord.START_TRX_STATUS_ID).setValue(Math.min(iSubmitted, Math.min(iHeld, iPay)));
+        this.getScreenRecord().getField(RefundScreenRecord.END_TRX_STATUS_ID).setValue(Math.max(iSubmitted, Math.max(iHeld, iPay)));
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(ArTrx.kTrxStatusID, this.getScreenRecord().getField(RefundScreenRecord.kStartTrxStatusID), this.getScreenRecord().getField(RefundScreenRecord.kEndTrxStatusID), ExtractRangeFilter.PAD_END_FIELD));
-        this.getMainRecord().addListener(new CompareRefundHandler(this.getMainRecord().getField(ArTrx.kTrxStatusID), iSubmitted, iHeld, iPay));
+        this.getMainRecord().addListener(new ExtractRangeFilter(ArTrx.TRX_STATUS_ID, this.getScreenRecord().getField(RefundScreenRecord.START_TRX_STATUS_ID), this.getScreenRecord().getField(RefundScreenRecord.END_TRX_STATUS_ID), ExtractRangeFilter.PAD_END_FIELD));
+        this.getMainRecord().addListener(new CompareRefundHandler(this.getMainRecord().getField(ArTrx.TRX_STATUS_ID), iSubmitted, iHeld, iPay));
         
-        Record recBooking = ((ReferenceField)this.getMainRecord().getField(ArTrx.kBookingID)).getReferenceRecord();
+        Record recBooking = ((ReferenceField)this.getMainRecord().getField(ArTrx.BOOKING_ID)).getReferenceRecord();
         if (recBooking.getRecordOwner() == null)
             this.addRecord(recBooking, false);
         this.setEnabled(false);
-        this.getMainRecord().getField(ArTrx.kTrxStatusID).setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kComments).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.TRX_STATUS_ID).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.COMMENTS).setEnabled(true);
         this.setAppending(false);
     }
     /**
@@ -127,11 +127,11 @@ public class RefundPendGridScreen extends GridScreen
         this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_HELD);
-        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_HELD);
+        new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));
     }
     /**
      * Process the command.

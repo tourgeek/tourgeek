@@ -75,7 +75,7 @@ public class HotelClassField extends BaseClassField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), HotelClass.kDescriptionKey, HotelClass.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), HotelClass.DESCRIPTION_KEY, HotelClass.DESCRIPTION, true, true);
     }
 
 }

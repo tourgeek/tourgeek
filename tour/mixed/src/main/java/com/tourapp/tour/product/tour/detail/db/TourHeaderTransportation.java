@@ -336,7 +336,7 @@ public class TourHeaderTransportation extends TourHeaderTransport
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(TourHeaderDetail.kProductTypeID, ProductType.TRANSPORTATION_ID));
+        this.addListener(new SharedFileHandler(TourHeaderDetail.PRODUCT_TYPE_ID, ProductType.TRANSPORTATION_ID));
     }
 
 }

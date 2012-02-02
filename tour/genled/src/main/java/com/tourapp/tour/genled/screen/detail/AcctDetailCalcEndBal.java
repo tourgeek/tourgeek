@@ -53,7 +53,7 @@ public class AcctDetailCalcEndBal extends ReComputeFieldHandler
     {
         m_recAcctDetailScreenRecord = null;
         m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;
-        super.init(null, AcctDetailScreenRecord.kEndBalance, null);
+        super.init(null, AcctDetailScreenRecord.kEndBalance, null, null);
     }
     /**
      * Compute the target value.
@@ -62,8 +62,8 @@ public class AcctDetailCalcEndBal extends ReComputeFieldHandler
      */
     public double computeValue(double dSrcValue)
     {
-        double dEndValue = m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kStartBalance).getValue();
-        dEndValue += m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.kChangeBalance).getValue();
+        double dEndValue = m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.START_BALANCE).getValue();
+        dEndValue += m_recAcctDetailScreenRecord.getField(AcctDetailScreenRecord.CHANGE_BALANCE).getValue();
         return dEndValue;
     }
 

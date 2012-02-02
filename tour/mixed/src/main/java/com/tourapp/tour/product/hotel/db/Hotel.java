@@ -490,13 +490,13 @@ public class Hotel extends Product
         // First, calculate the room cost
         double dTotalRoomCost = 0;
         double dTotalLocalRoomPrice = 0;
-        for (int iRoomCategory = PaxCategory.SINGLE_ID, iFieldSeq = Hotel.kSingleCost, iPriceFieldSeq = Hotel.kSinglePriceLocal; iRoomCategory <= PaxCategory.CHILD_ID; iRoomCategory++, iFieldSeq++, iPriceFieldSeq++)
+        for (int iRoomCategory = PaxCategory.SINGLE_ID, iFieldSeq = this.getFieldSeq(Hotel.SINGLE_COST), iPriceFieldSeq = this.getFieldSeq(Hotel.SINGLE_PRICE_LOCAL); iRoomCategory <= PaxCategory.CHILD_ID; iRoomCategory++, iFieldSeq++, iPriceFieldSeq++)
         {
             double dRoomCost = this.getHotelCost(dateTarget, iRateType, iRateClass, (short)1, iRoomCategory, false);
             responseMessageData.setRoomCost(iRoomCategory, dRoomCost);
             dRoomCost = this.getHotelCost(dateTarget, iRateType, iRateClass, sNights, iRoomCategory, false);
             double dRoomPriceLocal = this.getHotelCost(dateTarget, iRateType, iRateClass, sNights, iRoomCategory, true);
-            if (iFieldSeq <= Hotel.kQuadCost)
+            if (iFieldSeq <= this.getFieldSeq(Hotel.QUAD_COST))
             {
                 this.getField(iFieldSeq).setValue(dRoomCost);
                 this.getField(iPriceFieldSeq).setValue(dRoomPriceLocal);
@@ -565,8 +565,8 @@ public class Hotel extends Product
         double dTotalPriceLocal = dTotalLocalRoomPrice + dTotalMealPriceLocal;
         dTotalCost = Math.floor(dTotalCost * 100.00 + 0.5) / 100.00;
         
-        this.getField(Product.kProductCost).setValue(dTotalCost);
-        this.getField(Product.kProductPriceLocal).setValue(dTotalPriceLocal);
+        this.getField(Product.PRODUCT_COST).setValue(dTotalCost);
+        this.getField(Product.PRODUCT_PRICE_LOCAL).setValue(dTotalPriceLocal);
         responseMessageData.setProductCost(dTotalCost);
         
         if (dTotalCost == 0)
@@ -576,7 +576,7 @@ public class Hotel extends Product
             if (application != null)
                 strErrorMessage = application.getResources(ResourceConstants.BOOKING_RESOURCE, true).getString(NO_ROOM_RATE);
         }
-        this.getField(Product.kDisplayCostStatusID).setValue(iCostStatus);
+        this.getField(Product.DISPLAY_COST_STATUS_ID).setValue(iCostStatus);
         responseMessage.setMessageDataStatus(iCostStatus);
         if (iCostStatus != BaseStatus.VALID)
             responseMessage.setMessageDataError(strErrorMessage);
@@ -617,7 +617,7 @@ public class Hotel extends Product
         int iErrorCode = DBConstants.NORMAL_RETURN;
         int iRoomCategory = PaxCategory.SINGLE_ID;
         Set<Integer> setSurvey = this.getInventory().surveyInventory(fldTrxID); 
-        for (int iFieldSeq = Hotel.kSingleCost; iRoomCategory <= PaxCategory.CHILD_ID; iRoomCategory++, iFieldSeq++)
+        for (int iFieldSeq = this.getFieldSeq(Hotel.SINGLE_COST); iRoomCategory <= PaxCategory.CHILD_ID; iRoomCategory++, iFieldSeq++)
         {
             dateTarget = productMessageData.getTargetDate();
             int iPaxInRoom = passengerMessageData.getPaxInRoom(iRoomCategory);
@@ -634,7 +634,7 @@ public class Hotel extends Product
                     Inventory recInventory = this.getInventory().getAvailability(this, dateTarget, iRateID, iClassID, iOtherID);
                     iAvailability = Inventory.NO_INVENTORY;
                     if (recInventory != null)
-                        iAvailability = (int)recInventory.getField(Inventory.kAvailable).getValue();
+                        iAvailability = (int)recInventory.getField(Inventory.AVAILABLE).getValue();
                     if ((recInventory != null) && (fldTrxID != null)) // If in update mode, update the availability
                     { // No need to check avail, updateAvailability checks the correct availability (taking into account previous the previous usage) 
                         boolean bIsDeleted = false;   // todo (don) Fix this.
@@ -704,7 +704,7 @@ public class Hotel extends Product
                     strErrorMessage = this.getRecordOwner().getTask().getApplication().getResources(ResourceConstants.BOOKING_RESOURCE, true).getString(strErrorMessage);
             iInventoryStatus = InventoryStatus.ERROR;
         }
-        this.getField(Product.kDisplayInventoryStatusID).setValue(iInventoryStatus);
+        this.getField(Product.DISPLAY_INVENTORY_STATUS_ID).setValue(iInventoryStatus);
         responseMessage.setMessageDataStatus(iInventoryStatus);
         if (strErrorMessage != null)
             responseMessage.setMessageDataError(strErrorMessage);
@@ -745,16 +745,16 @@ public class Hotel extends Product
         double dCost = 0;
         if (dateTarget == null)
             return 0;
-        int iHotelID = (int)this.getField(Hotel.kID).getValue();
+        int iHotelID = (int)this.getField(Hotel.ID).getValue();
         while (sNights > 0)
         {
             HotelPricing recProductCostLookup = ((HotelPricing)this.getProductPricing()).getHotelCost(iHotelID, dateTarget, iRateType, iRateClass, iRoomType);
             if (recProductCostLookup != null)
             {
                 if (!bGetPrice)
-                    dCost += recProductCostLookup.getCost(HotelPricing.kRoomCost, this.getProductTerms());
+                    dCost += recProductCostLookup.getCost(HotelPricing.ROOM_COST, this.getProductTerms());
                 else
-                    dCost += recProductCostLookup.getField(HotelPricing.kRoomPrice).getValue();
+                    dCost += recProductCostLookup.getField(HotelPricing.ROOM_PRICE).getValue();
             }
             else
                 return 0;   // No cost for this day = error
@@ -775,14 +775,14 @@ public class Hotel extends Product
             if (m_recHotelMealPricing.getRecordOwner() != null)
                 m_recHotelMealPricing.getRecordOwner().removeRecord(m_recHotelMealPricing);
         }
-        int iHotelID = (int)this.getField(Hotel.kID).getValue();
+        int iHotelID = (int)this.getField(Hotel.ID).getValue();
         HotelMealPricing recProductCostLookup = ((HotelMealPricing)m_recHotelMealPricing).getMealCost(iHotelID, dateTarget, iMealPlanID);
         if (recProductCostLookup != null)
         {
             if (!bGetPrice)
-                dCost += recProductCostLookup.getCost(HotelMealPricing.kCost, this.getProductTerms());
+                dCost += recProductCostLookup.getCost(HotelMealPricing.COST, this.getProductTerms());
             else
-                dCost += recProductCostLookup.getField(HotelMealPricing.kPrice).getValue();
+                dCost += recProductCostLookup.getField(HotelMealPricing.PRICE).getValue();
         }
         return dCost;
     }
@@ -792,7 +792,7 @@ public class Hotel extends Product
     public String getMealDesc(Date dateTarget, int iRateType, int iRateClass, boolean bDetailedDesc, MealPlan recMealPlan, ProductPricing recProductCost)
     {
         String strMealDesc = DBConstants.BLANK;
-        int iHotelID = (int)this.getField(Hotel.kID).getValue();
+        int iHotelID = (int)this.getField(Hotel.ID).getValue();
         if (recProductCost == null)
             recProductCost = this.getProductPricing();
         recProductCost = ((HotelPricing)recProductCost).getHotelCost(iHotelID, dateTarget, iRateType, iRateClass, PaxCategory.DOUBLE_ID);
@@ -801,7 +801,7 @@ public class Hotel extends Product
             MealPlan recMealPlanNew = null;
             if (recMealPlan == null)
                 recMealPlan = recMealPlanNew = new MealPlan(this.findRecordOwner());
-            strMealDesc += recMealPlan.getMealDesc(recProductCost.getField(HotelPricing.kMealPlanID), bDetailedDesc);
+            strMealDesc += recMealPlan.getMealDesc(recProductCost.getField(HotelPricing.MEAL_PLAN_ID), bDetailedDesc);
             if (recMealPlanNew != null)
                 recMealPlanNew.free();
         }
@@ -820,24 +820,24 @@ public class Hotel extends Product
         int iErrorCode = DBConstants.ERROR_RETURN;  // Error just means that there were no line items added
         Booking recBooking = recBookingDetail.getBooking(true);
         
-        int iHotelID = (int)this.getField(Product.kID).getValue();
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.kDetailDate)).getDateTime();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.kRateID).getValue();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.kClassID).getValue();
+        int iHotelID = (int)this.getField(Product.ID).getValue();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
+        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
         
         for (int iPaxCategory = PaxCategory.SINGLE_ID; iPaxCategory <= PaxCategory.CHILD_ID; iPaxCategory++)
         {
-            short sTargetPax = (short)recBooking.getField(Booking.kSinglePax + iPaxCategory - PaxCategory.SINGLE_ID).getValue();
+            short sTargetPax = (short)recBooking.getField(recBooking.getFieldSeq(Booking.SINGLE_PAX) + iPaxCategory - PaxCategory.SINGLE_ID).getValue();
             if (sTargetPax == 0)
                 continue;
             HotelPricing recProductPricing = null;
             double dAmount = 0;
-            short sNights = (short)recBookingDetail.getField(BookingHotel.kNights).getValue();
+            short sNights = (short)recBookingDetail.getField(BookingHotel.NIGHTS).getValue();
             while (sNights > 0)
             {
                 recProductPricing = ((HotelPricing)this.getProductPricing()).getHotelCost(iHotelID, dateTarget, iRateID, iClassID, iPaxCategory);
                 if (recProductPricing != null)
-                    dAmount = dAmount + recProductPricing.getField(ProductPricing.kPrice).getValue();
+                    dAmount = dAmount + recProductPricing.getField(ProductPricing.PRICE).getValue();
                 dateTarget = new Date(dateTarget.getTime() + DBConstants.KMS_IN_A_DAY);
                 sNights--;
             }
@@ -846,9 +846,9 @@ public class Hotel extends Product
             {
                 int iPricingType = PricingType.COMPONENT_PRICING;
                 int iQuantity = sTargetPax;
-                boolean bCommissionable = recProductPricing.getField(ProductPricing.kCommissionable).getState();
-                double dCommissionRate = recProductPricing.getField(ProductPricing.kCommissionRate).getValue();
-                String strPayAt = recProductPricing.getField(ProductPricing.kPayAt).toString();
+                boolean bCommissionable = recProductPricing.getField(ProductPricing.COMMISSIONABLE).getState();
+                double dCommissionRate = recProductPricing.getField(ProductPricing.COMMISSION_RATE).getValue();
+                String strPayAt = recProductPricing.getField(ProductPricing.PAY_AT).toString();
                 int iErrorCode2 = recBookingDetail.updateBookingLine(recBookingLine, iPricingType, iPaxCategory, iQuantity, dAmount, bCommissionable, dCommissionRate, strPayAt, PricingStatus.OKAY, iChangeType);
                 if (iErrorCode2 == DBConstants.NORMAL_RETURN)
                     iErrorCode = DBConstants.NORMAL_RETURN;   // Some Valid pricing was added
@@ -871,33 +871,33 @@ public class Hotel extends Product
         super.markupPriceFromCost(dMarkup, bMarkupOnlyIfNoPrice);
         if (dMarkup == 0.00)
         {
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kSinglePriceLocal).getValue() == 0))
-                this.getField(Hotel.kSinglePriceLocal).setData(null);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kDoublePriceLocal).getValue() == 0))
-                this.getField(Hotel.kDoublePriceLocal).setData(null);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kTriplePriceLocal).getValue() == 0))
-                this.getField(Hotel.kTriplePriceLocal).setData(null);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kQuadPriceLocal).getValue() == 0))
-                this.getField(Hotel.kQuadPriceLocal).setData(null);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kRoomPriceLocal).getValue() == 0))
-                this.getField(Hotel.kRoomPriceLocal).setData(null);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kMealPriceLocal).getValue() == 0))
-                this.getField(Hotel.kMealPriceLocal).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.SINGLE_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.SINGLE_PRICE_LOCAL).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.DOUBLE_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.DOUBLE_PRICE_LOCAL).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.TRIPLE_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.TRIPLE_PRICE_LOCAL).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.QUAD_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.QUAD_PRICE_LOCAL).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.ROOM_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.ROOM_PRICE_LOCAL).setData(null);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.MEAL_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.MEAL_PRICE_LOCAL).setData(null);
         }
         else
         {
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kSinglePriceLocal).getValue() == 0))
-                this.getField(Hotel.kSinglePriceLocal).setValue(Math.floor(this.getField(Hotel.kSingleCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kDoublePriceLocal).getValue() == 0))
-                this.getField(Hotel.kDoublePriceLocal).setValue(Math.floor(this.getField(Hotel.kDoubleCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kTriplePriceLocal).getValue() == 0))
-                this.getField(Hotel.kTriplePriceLocal).setValue(Math.floor(this.getField(Hotel.kTripleCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kQuadPriceLocal).getValue() == 0))
-                this.getField(Hotel.kQuadPriceLocal).setValue(Math.floor(this.getField(Hotel.kQuadCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kRoomPriceLocal).getValue() == 0))
-                this.getField(Hotel.kRoomPriceLocal).setValue(Math.floor(this.getField(Hotel.kRoomCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
-            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.kMealPriceLocal).getValue() == 0))
-                this.getField(Hotel.kMealPriceLocal).setValue(Math.floor(this.getField(Hotel.kMealCostLocal).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.SINGLE_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.SINGLE_PRICE_LOCAL).setValue(Math.floor(this.getField(Hotel.SINGLE_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.DOUBLE_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.DOUBLE_PRICE_LOCAL).setValue(Math.floor(this.getField(Hotel.DOUBLE_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.TRIPLE_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.TRIPLE_PRICE_LOCAL).setValue(Math.floor(this.getField(Hotel.TRIPLE_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.QUAD_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.QUAD_PRICE_LOCAL).setValue(Math.floor(this.getField(Hotel.QUAD_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.ROOM_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.ROOM_PRICE_LOCAL).setValue(Math.floor(this.getField(Hotel.ROOM_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+            if ((!bMarkupOnlyIfNoPrice) || (this.getField(Hotel.MEAL_PRICE_LOCAL).getValue() == 0))
+                this.getField(Hotel.MEAL_PRICE_LOCAL).setValue(Math.floor(this.getField(Hotel.MEAL_COST_LOCAL).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
         }
     }
 

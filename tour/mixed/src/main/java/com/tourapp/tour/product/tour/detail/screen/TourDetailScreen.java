@@ -81,7 +81,7 @@ public class TourDetailScreen extends DetailScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(TourHeaderOption.kTourHeaderOptionFile);
+        return this.getRecord(TourHeaderOption.TOUR_HEADER_OPTION_FILE);
     }
     /**
      * Add all the screen listeners.
@@ -91,18 +91,18 @@ public class TourDetailScreen extends DetailScreen
         super.addListeners();
         if (this.getMainRecord() instanceof TourHeaderDetail)
         {
-            String strManualTransportID = Integer.toString(((ReferenceField)this.getMainRecord().getField(TourHeaderDetail.kInfoMessageTransportID)).getIDFromCode(MessageTransport.MANUAL));
-            this.getMainRecord().getField(TourHeaderDetail.kInfoMessageTransportID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.kInfoStatusID), strManualTransportID, false));
-            this.getMainRecord().getField(TourHeaderDetail.kInventoryMessageTransportID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.kInventoryStatusID), strManualTransportID, false));
-            this.getMainRecord().getField(TourHeaderDetail.kCostMessageTransportID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.kCostStatusID), strManualTransportID, false));
-            this.getMainRecord().getField(TourHeaderDetail.kProductMessageTransportID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.kProductStatusID), strManualTransportID, false));
+            String strManualTransportID = Integer.toString(((ReferenceField)this.getMainRecord().getField(TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.MANUAL));
+            this.getMainRecord().getField(TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.INFO_STATUS_ID), strManualTransportID, false));
+            this.getMainRecord().getField(TourHeaderDetail.INVENTORY_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.INVENTORY_STATUS_ID), strManualTransportID, false));
+            this.getMainRecord().getField(TourHeaderDetail.COST_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.COST_STATUS_ID), strManualTransportID, false));
+            this.getMainRecord().getField(TourHeaderDetail.PRODUCT_MESSAGE_TRANSPORT_ID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourHeaderDetail.PRODUCT_STATUS_ID), strManualTransportID, false));
             
-            Converter convCheckMark = new RadioConverter(this.getMainRecord().getField(TourHeaderDetail.kInfoMessageTransportID), strManualTransportID, false);
-            this.getMainRecord().getField(TourHeaderDetail.kInfoMessageTransportID).addListener(new RemoveConverterOnFreeHandler(convCheckMark));
-            this.getMainRecord().getField(TourHeaderDetail.kInfoMessageTransportID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.kInfoStatusID), null, convCheckMark));
-            this.getMainRecord().getField(TourHeaderDetail.kInventoryMessageTransportID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.kInventoryStatusID), null, convCheckMark));
-            this.getMainRecord().getField(TourHeaderDetail.kCostMessageTransportID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.kCostStatusID), null, convCheckMark));
-            this.getMainRecord().getField(TourHeaderDetail.kProductMessageTransportID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.kProductStatusID), null, convCheckMark));
+            Converter convCheckMark = new RadioConverter(this.getMainRecord().getField(TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID), strManualTransportID, false);
+            this.getMainRecord().getField(TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new RemoveConverterOnFreeHandler(convCheckMark));
+            this.getMainRecord().getField(TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.INFO_STATUS_ID), null, convCheckMark));
+            this.getMainRecord().getField(TourHeaderDetail.INVENTORY_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.INVENTORY_STATUS_ID), null, convCheckMark));
+            this.getMainRecord().getField(TourHeaderDetail.COST_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.COST_STATUS_ID), null, convCheckMark));
+            this.getMainRecord().getField(TourHeaderDetail.PRODUCT_MESSAGE_TRANSPORT_ID).addListener(new CopyDataHandler(this.getMainRecord().getField(TourHeaderDetail.PRODUCT_STATUS_ID), null, convCheckMark));
         }
     }
     /**
@@ -110,16 +110,16 @@ public class TourDetailScreen extends DetailScreen
      */
     public void addStandardScreenFields(boolean bTopNext)
     {
-        this.getMainRecord().getField(TourHeaderDetail.kInfoStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kInfoMessageTransportID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kInventoryStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kInventoryMessageTransportID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kCostStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kCostMessageTransportID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kProductStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kProductMessageTransportID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kModifyCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getMainRecord().getField(TourHeaderDetail.kModifyID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.INFO_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.INFO_MESSAGE_TRANSPORT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.INVENTORY_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.INVENTORY_MESSAGE_TRANSPORT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.COST_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.COST_MESSAGE_TRANSPORT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.PRODUCT_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.PRODUCT_MESSAGE_TRANSPORT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.MODIFY_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getMainRecord().getField(TourHeaderDetail.MODIFY_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * A record with this datasource handle changed, notify any behaviors that are checking.
@@ -134,7 +134,7 @@ public class TourDetailScreen extends DetailScreen
         if (ModifyTourSubField.SELECT_QUEUE.equals(message.getMessageHeader().getQueueName()))
         {
             String strRecord = (String)message.get(RecordMessageConstants.TABLE_NAME);
-            Record recordToSync = ((ReferenceField)this.getMainRecord().getField(TourHeaderDetail.kModifyID)).getReferenceRecord();
+            Record recordToSync = ((ReferenceField)this.getMainRecord().getField(TourHeaderDetail.MODIFY_ID)).getReferenceRecord();
             if ((strRecord != null) && (strRecord.equals(recordToSync.getTableNames(false))))
             {
                 String bookmark = (String)message.get(DBConstants.STRING_OBJECT_ID_HANDLE);

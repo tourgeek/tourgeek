@@ -58,7 +58,7 @@ public class UpdateCancelationAcctDetailHandler extends UpdateArTrxAcctDetailHan
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kXLChgAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.XL_CHG_ACCOUNT_ID);
     }
 
 }

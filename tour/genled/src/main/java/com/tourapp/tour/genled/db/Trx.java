@@ -155,16 +155,16 @@ public class Trx extends VirtualRecord
      */
     public Record getRecord(String strFileName)
     {
-        if (TransactionType.kTransactionTypeFile.equalsIgnoreCase(strFileName))
+        if (TransactionType.TRANSACTION_TYPE_FILE.equalsIgnoreCase(strFileName))
             if (m_recTransactionType != null)
                 return m_recTransactionType;
-        if (AcctDetail.kAcctDetailFile.equalsIgnoreCase(strFileName))
+        if (AcctDetail.ACCT_DETAIL_FILE.equalsIgnoreCase(strFileName))
             if (m_recAcctDetail != null)
                 return m_recAcctDetail;
-        if (AcctDetailDist.kAcctDetailDistFile.equalsIgnoreCase(strFileName))
+        if (AcctDetailDist.ACCT_DETAIL_DIST_FILE.equalsIgnoreCase(strFileName))
             if (m_recAcctDetailDist != null)
                 return m_recAcctDetailDist;
-        if (Period.kPeriodFile.equalsIgnoreCase(strFileName))
+        if (Period.PERIOD_FILE.equalsIgnoreCase(strFileName))
             if (m_recPeriod != null)
                 return m_recPeriod;
         return super.getRecord(strFileName);
@@ -185,8 +185,8 @@ public class Trx extends VirtualRecord
         }
         else
             m_recAcctDetailDistSearch.removeListener(m_recAcctDetailDistSearch.getListener(SubFileFilter.class.getName()), true);
-        m_recAcctDetailDistSearch.setKeyArea(AcctDetailDist.kTrxDescIDKey);
-        m_recAcctDetailDistSearch.addListener(new SubFileFilter(fldTrxDescID, AcctDetailDist.kTrxDescID, this.getField(BaseTrx.kID), AcctDetailDist.kTrxID, null, -1));
+        m_recAcctDetailDistSearch.setKeyArea(AcctDetailDist.TRX_DESC_ID_KEY);
+        m_recAcctDetailDistSearch.addListener(new SubFileFilter(fldTrxDescID, AcctDetailDist.TRX_DESC_ID, this.getField(BaseTrx.ID), AcctDetailDist.TRX_ID, null, null));
         return m_recAcctDetailDistSearch;
     }
     /**
@@ -196,10 +196,10 @@ public class Trx extends VirtualRecord
      */
     public AcctDetailDist getDistSearch()
     {
-        Record recTrxStatus = ((ReferenceField)this.getField(Trx.kTrxStatusID)).getReference();
+        Record recTrxStatus = ((ReferenceField)this.getField(Trx.TRX_STATUS_ID)).getReference();
         if (recTrxStatus == null)
             return null;
-        return this.getDistSearch(recTrxStatus.getField(TrxStatus.kTrxDescID));
+        return this.getDistSearch(recTrxStatus.getField(TrxStatus.TRX_DESC_ID));
     }
     /**
      * Get the cached transaction type record.
@@ -234,19 +234,19 @@ public class Trx extends VirtualRecord
             while (m_recAcctDetailDistSearch.hasNext())
             {
                 m_recAcctDetailDistSearch.next();
-                Record recAcctDetail = ((ReferenceField)m_recAcctDetailDistSearch.getField(AcctDetailDist.kAcctDetailID)).getReference();
+                Record recAcctDetail = ((ReferenceField)m_recAcctDetailDistSearch.getField(AcctDetailDist.ACCT_DETAIL_ID)).getReference();
                 if (recAcctDetail != null)
                     if (!recAcctDetail.isNull())
                 {
-                    Record recTransactionType = ((ReferenceField)recAcctDetail.getField(AcctDetail.kTrxTypeID)).getReference();
+                    Record recTransactionType = ((ReferenceField)recAcctDetail.getField(AcctDetail.TRX_TYPE_ID)).getReference();
                     if (recTransactionType != null)
                         if (!recTransactionType.isNull())
                     {
-                        if (recTransactionType.getField(TransactionType.kSourceTrxStatusID).getValue() == iTrxStatusID)
-                            if ((strPostingType.equalsIgnoreCase(recTransactionType.getField(TransactionType.kPostingType).toString()))
-                                || (strPostingType.equalsIgnoreCase(recTransactionType.getField(TransactionType.kTypeCode).toString())))
+                        if (recTransactionType.getField(TransactionType.SOURCE_TRX_STATUS_ID).getValue() == iTrxStatusID)
+                            if ((strPostingType.equalsIgnoreCase(recTransactionType.getField(TransactionType.POSTING_TYPE).toString()))
+                                || (strPostingType.equalsIgnoreCase(recTransactionType.getField(TransactionType.TYPE_CODE).toString())))
                         {
-                            fldAccountID = recAcctDetail.getField(AcctDetail.kAccountID);
+                            fldAccountID = recAcctDetail.getField(AcctDetail.ACCOUNT_ID);
                             break;
                         }
                     }
@@ -267,10 +267,10 @@ public class Trx extends VirtualRecord
      */
     public BaseField getTrxAccountID(int iTrxStatusID, String strPostingType)
     {
-        Record recTrxStatus = ((ReferenceField)this.getField(Trx.kTrxStatusID)).getReference();
+        Record recTrxStatus = ((ReferenceField)this.getField(Trx.TRX_STATUS_ID)).getReference();
         if (recTrxStatus == null)
             return null;
-        return this.getTrxAccountID(recTrxStatus.getField(TrxStatus.kTrxDescID), iTrxStatusID, strPostingType);
+        return this.getTrxAccountID(recTrxStatus.getField(TrxStatus.TRX_DESC_ID), iTrxStatusID, strPostingType);
     }
     /**
      * Look at the posting distribution for this transaction and get the
@@ -280,7 +280,7 @@ public class Trx extends VirtualRecord
      */
     public BaseField getTrxAccountID(String strPostingType)
     {
-        int iTrxStatusID = (int)this.getField(Trx.kTrxStatusID).getValue();
+        int iTrxStatusID = (int)this.getField(Trx.TRX_STATUS_ID).getValue();
         return this.getTrxAccountID(iTrxStatusID, strPostingType);
     }
     /**
@@ -289,7 +289,7 @@ public class Trx extends VirtualRecord
      */
     public int getTrxGroupID()
     {
-        Record recTrxStatus = ((ReferenceField)this.getField(Trx.kTrxStatusID)).getReference();
+        Record recTrxStatus = ((ReferenceField)this.getField(Trx.TRX_STATUS_ID)).getReference();
         if (recTrxStatus == null)
             return -1;  // Never
         if (m_recTransactionType == null)
@@ -298,13 +298,13 @@ public class Trx extends VirtualRecord
             if (m_recTransactionType.getRecordOwner() != null)
                 m_recTransactionType.getRecordOwner().removeRecord(m_recTransactionType);
         }
-        m_recTransactionType.getField(TransactionType.kSourceTrxStatusID).moveFieldToThis(recTrxStatus.getField(TrxStatus.kID));
-        m_recTransactionType.getField(TransactionType.kTrxDescID).moveFieldToThis(recTrxStatus.getField(TrxStatus.kTrxDescID));
+        m_recTransactionType.getField(TransactionType.SOURCE_TRX_STATUS_ID).moveFieldToThis(recTrxStatus.getField(TrxStatus.ID));
+        m_recTransactionType.getField(TransactionType.TRX_DESC_ID).moveFieldToThis(recTrxStatus.getField(TrxStatus.TRX_DESC_ID));
         try {
-            m_recTransactionType.setKeyArea(TransactionType.kSourceTrxStatusIDKey);
+            m_recTransactionType.setKeyArea(TransactionType.SOURCE_TRX_STATUS_ID_KEY);
             if (m_recTransactionType.seek("="))
             {
-                return (int)m_recTransactionType.getField(TransactionType.kTrxGroupID).getValue();
+                return (int)m_recTransactionType.getField(TransactionType.TRX_GROUP_ID).getValue();
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -321,16 +321,16 @@ public class Trx extends VirtualRecord
         if (recTrxDesc == null)
         {
             // If there is a valid status, get the Desc from the status
-            Record recTrxStatus = ((ReferenceField)this.getField(Trx.kTrxStatusID)).getReference();
+            Record recTrxStatus = ((ReferenceField)this.getField(Trx.TRX_STATUS_ID)).getReference();
             if (recTrxStatus != null)
-                return (TrxDesc)((ReferenceField)recTrxStatus.getField(TrxStatus.kTrxDescID)).getReference();
+                return (TrxDesc)((ReferenceField)recTrxStatus.getField(TrxStatus.TRX_DESC_ID)).getReference();
             // Okay, no status. Get the desc from the linked status so TrxDesc will be freed properly
-            recTrxStatus =  ((ReferenceField)this.getField(Trx.kTrxStatusID)).getReferenceRecord();
-            recTrxDesc = (TrxDesc)((ReferenceField)recTrxStatus.getField(TrxStatus.kTrxDescID)).getReferenceRecord();
+            recTrxStatus =  ((ReferenceField)this.getField(Trx.TRX_STATUS_ID)).getReferenceRecord();
+            recTrxDesc = (TrxDesc)((ReferenceField)recTrxStatus.getField(TrxStatus.TRX_DESC_ID)).getReferenceRecord();
         }
         // Need to read the desc the hard way. Read the code which is the file name.
-        recTrxDesc.setKeyArea(TrxDesc.kDescCodeKey);
-        recTrxDesc.getField(TrxDesc.kDescCode).setString(this.getTableNames(false));
+        recTrxDesc.setKeyArea(TrxDesc.DESC_CODE_KEY);
+        recTrxDesc.getField(TrxDesc.DESC_CODE).setString(this.getTableNames(false));
         try {
             if (recTrxDesc.seek("="))
                 return recTrxDesc;

@@ -262,10 +262,10 @@ public class TransactionType extends VirtualRecord
         }
         if (m_iCurrentTrxStatus != iTrxGroupID)
         {   // Not cached yet
-            this.setKeyArea(TransactionType.kTrxGroupIDKey);
+            this.setKeyArea(TransactionType.TRX_GROUP_ID_KEY);
             StringSubFileFilter listener = (StringSubFileFilter)this.getListener(StringSubFileFilter.class.getName());
             if (listener == null)
-                this.addListener(listener = new StringSubFileFilter(Integer.toString(iTrxGroupID), TransactionType.kTrxGroupID, null, -1, null, -1));
+                this.addListener(listener = new StringSubFileFilter(Integer.toString(iTrxGroupID), TransactionType.TRX_GROUP_ID, null, null, null, null));
             listener.setFirst(Integer.toString(iTrxGroupID));
             m_htTrxStatus = new HashMap<String,Object>();
             try {
@@ -274,9 +274,9 @@ public class TransactionType extends VirtualRecord
                 {
                     this.next();
                     this.cacheTransactionType(DBConstants.BLANK, this); // This will set the default to the first one
-                    this.cacheTransactionType(this.getField(TransactionType.kTypeCode).toString(), this);
-                    this.cacheTransactionType(this.getField(TransactionType.kPostingType).toString(), this);
-                    this.cacheTransactionType(this.getField(TransactionType.kTypicalBalance).toString(), this);
+                    this.cacheTransactionType(this.getField(TransactionType.TYPE_CODE).toString(), this);
+                    this.cacheTransactionType(this.getField(TransactionType.POSTING_TYPE).toString(), this);
+                    this.cacheTransactionType(this.getField(TransactionType.TYPICAL_BALANCE).toString(), this);
                 }
             } catch (DBException ex)    {
                 ex.printStackTrace();
@@ -311,15 +311,15 @@ public class TransactionType extends VirtualRecord
     public int getTrxTypeID(String strSystemCode, String strDescCode, String strGroupCode, String strTypeCode)
     {
         int iTrxTypeID = 0;
-        this.setKeyArea(TransactionType.kTrxTypeCodeKey);
-        this.getField(TransactionType.kSystemCode).setString(strSystemCode);
-        this.getField(TransactionType.kDescCode).setString(strDescCode);
-        this.getField(TransactionType.kGroupCode).setString(strGroupCode);
-        this.getField(TransactionType.kTypeCode).setString(strTypeCode);
+        this.setKeyArea(TransactionType.TRX_TYPE_CODE_KEY);
+        this.getField(TransactionType.SYSTEM_CODE).setString(strSystemCode);
+        this.getField(TransactionType.DESC_CODE).setString(strDescCode);
+        this.getField(TransactionType.GROUP_CODE).setString(strGroupCode);
+        this.getField(TransactionType.TYPE_CODE).setString(strTypeCode);
         try   {
             boolean bSuccess = this.seek("=");
             if (bSuccess)
-                iTrxTypeID = (int)this.getField(TransactionType.kID).getValue();
+                iTrxTypeID = (int)this.getField(TransactionType.ID).getValue();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }

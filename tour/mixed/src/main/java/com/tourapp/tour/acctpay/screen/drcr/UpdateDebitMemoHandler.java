@@ -81,13 +81,13 @@ public class UpdateDebitMemoHandler extends UpdateApTrxHandler
             try {
                 this.getOwner().setHandle(this.getOwner().getHandle(DBConstants.DATA_SOURCE_HANDLE), DBConstants.DATA_SOURCE_HANDLE);
                 this.getOwner().edit();
-                double dAmount = this.getOwner().getField(ApTrx.kInvoiceAmount).getValue();
+                double dAmount = this.getOwner().getField(ApTrx.INVOICE_AMOUNT).getValue();
                 if (dAmount > 0)
-                    this.getOwner().getField(ApTrx.kInvoiceAmount).setValue(-dAmount);
-                double dAmountUSD = this.getOwner().getField(ApTrx.kInvoiceLocal).getValue();
+                    this.getOwner().getField(ApTrx.INVOICE_AMOUNT).setValue(-dAmount);
+                double dAmountUSD = this.getOwner().getField(ApTrx.INVOICE_LOCAL).getValue();
                 if (dAmountUSD > 0)
-                    this.getOwner().getField(ApTrx.kInvoiceLocal).setValue(-dAmountUSD);
-                this.getOwner().getField(ApTrx.kAccountID).moveFieldToThis(((Record)this.getOwner().getRecordOwner().getScreenRecord()).getField(DebitMemoScreenRecord.kPpAccountID));
+                    this.getOwner().getField(ApTrx.INVOICE_LOCAL).setValue(-dAmountUSD);
+                this.getOwner().getField(ApTrx.ACCOUNT_ID).moveFieldToThis(((Record)this.getOwner().getRecordOwner().getScreenRecord()).getField(DebitMemoScreenRecord.PP_ACCOUNT_ID));
                 this.getOwner().set();
             } catch (DBException ex) {
                 ex.printStackTrace();
@@ -102,7 +102,7 @@ public class UpdateDebitMemoHandler extends UpdateApTrxHandler
      */
     public double getTrxAmount(BaseField fldTypicalBalance)
     {
-        double dAmount = this.getOwner().getField(ApTrx.kInvoiceLocal).getValue();
+        double dAmount = this.getOwner().getField(ApTrx.INVOICE_LOCAL).getValue();
         if (dAmount > 0)
             dAmount = -dAmount;   // Must be negative.
         return dAmount;
@@ -113,7 +113,7 @@ public class UpdateDebitMemoHandler extends UpdateApTrxHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.kPpAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.PP_ACCOUNT_ID);
     }
     /**
      * Get the Credit Account field.
@@ -121,7 +121,7 @@ public class UpdateDebitMemoHandler extends UpdateApTrxHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.kTourAccountID);
+        return (ReferenceField)this.getOwner().getRecordOwner().getScreenRecord().getField(DebitMemoScreenRecord.TOUR_ACCOUNT_ID);
     }
 
 }

@@ -62,23 +62,23 @@ public class SetupLabelTextHandler extends FileListener
         Record recRequest = this.getOwner();
         RecordOwner recordOwner = recRequest.getRecordOwner();
         Record recScreen = (Record)recordOwner.getScreenRecord();
-        Record recRequestDetail = (Record)recordOwner.getRecord(RequestDetail.kRequestDetailFile);
-        Record recItem = (Record)recordOwner.getRecord(Brochure.kBrochureFile);
-        BaseField fldFullAddress = recScreen.getField(RequestLabelsScreenRecord.kFullAddress);
-        BaseField fldRequestText = recScreen.getField(RequestLabelsScreenRecord.kRequestText);
+        Record recRequestDetail = (Record)recordOwner.getRecord(RequestDetail.REQUEST_DETAIL_FILE);
+        Record recItem = (Record)recordOwner.getRecord(Brochure.BROCHURE_FILE);
+        BaseField fldFullAddress = recScreen.getField(RequestLabelsScreenRecord.FULL_ADDRESS);
+        BaseField fldRequestText = recScreen.getField(RequestLabelsScreenRecord.REQUEST_TEXT);
         fldFullAddress.initField(false);
         fldRequestText.initField(false);
         
         String strFullAddress = Constants.BLANK;
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kAttention, "\n");
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kGenericName, "\n");
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kAddressLine1, "\n");
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kAddressLine2, "\n");
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kCityOrTown, ", ");
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kStateOrRegion, "  ");
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kPostalCode, null);
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.ATTENTION, "\n");
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.GENERIC_NAME, "\n");
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.ADDRESS_LINE_1, "\n");
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.ADDRESS_LINE_2, "\n");
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.CITY_OR_TOWN, ", ");
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.STATE_OR_REGION, "  ");
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.POSTAL_CODE, null);
         strFullAddress += '\n';
-        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.kCountry, null);
+        strFullAddress = this.addOptionalString(strFullAddress, recRequest, Request.COUNTRY, null);
         fldFullAddress.setString(strFullAddress);
         
         String strRequestText = Constants.BLANK;
@@ -88,23 +88,23 @@ public class SetupLabelTextHandler extends FileListener
             {
                 recRequestDetail.next();
                 strRequestText += '(';
-                strRequestText = this.addOptionalString(strRequestText, recRequestDetail, RequestDetail.kBrochureQty, ")");
-                if ((recRequestDetail.getField(RequestDetail.kBrochureID).isNull()) || (recItem.getField(Brochure.kDescription).isNull()))
-                    strRequestText = this.addOptionalString(strRequestText, recRequestDetail, RequestDetail.kBrochureDesc, null);
+                strRequestText = this.addOptionalString(strRequestText, recRequestDetail, RequestDetail.BROCHURE_QTY, ")");
+                if ((recRequestDetail.getField(RequestDetail.BROCHURE_ID).isNull()) || (recItem.getField(Brochure.DESCRIPTION).isNull()))
+                    strRequestText = this.addOptionalString(strRequestText, recRequestDetail, RequestDetail.BROCHURE_DESC, null);
                 else
-                    strRequestText = this.addOptionalString(strRequestText, recItem, Brochure.kDescription, null);
+                    strRequestText = this.addOptionalString(strRequestText, recItem, Brochure.DESCRIPTION, null);
                 strRequestText += ' ';
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
         } 
-        strRequestText += recRequest.getField(Request.kBrochureText).toString();
+        strRequestText += recRequest.getField(Request.BROCHURE_TEXT).toString();
         fldRequestText.setString(strRequestText);
     }
     /**
      * Add this field's string to the current string and if the string is not null add the optional string.
      */
-    public String addOptionalString(String strFullName, Record record, int iFieldSeq, String strOptional)
+    public String addOptionalString(String strFullName, Record record, String iFieldSeq, String strOptional)
     {
         String string = record.getField(iFieldSeq).toString();
         if ((string != null) && (string.length() > 0))

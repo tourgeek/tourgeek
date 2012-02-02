@@ -114,28 +114,28 @@ public class BookingHotelScreen extends BookingDetailSubScreen
         super.addListeners();
         BookingHotel recBookingHotel = (BookingHotel)this.getMainRecord();
         
-        recBookingHotel.getField(BookingHotel.kNights).setEnabled(true);
-        for (int iFieldSeq = BookingHotel.kMealPlan1ID; iFieldSeq <= BookingHotel.kMealPlan4Days; iFieldSeq++)
+        recBookingHotel.getField(BookingHotel.NIGHTS).setEnabled(true);
+        for (int iFieldSeq = recBookingHotel.getFieldSeq(BookingHotel.MEAL_PLAN_1ID); iFieldSeq <= recBookingHotel.getFieldSeq(BookingHotel.MEAL_PLAN_4_DAYS); iFieldSeq++)
         {
             recBookingHotel.getField(iFieldSeq).setEnabled(true);
         }
         
-        recBookingHotel.getField(BookingHotel.kMealPlan1ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.kMealPlan1Qty), recBookingHotel.getField(BookingHotel.kNights), true, false));
-        recBookingHotel.getField(BookingHotel.kMealPlan2ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.kMealPlan2Qty), recBookingHotel.getField(BookingHotel.kNights), true, false));
-        recBookingHotel.getField(BookingHotel.kMealPlan3ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.kMealPlan3Qty), recBookingHotel.getField(BookingHotel.kNights), true, false));
-        recBookingHotel.getField(BookingHotel.kMealPlan4ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.kMealPlan4Qty), recBookingHotel.getField(BookingHotel.kNights), true, false));
+        recBookingHotel.getField(BookingHotel.MEAL_PLAN_1ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.MEAL_PLAN_1_QTY), recBookingHotel.getField(BookingHotel.NIGHTS), true, false));
+        recBookingHotel.getField(BookingHotel.MEAL_PLAN_2ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.MEAL_PLAN_2_QTY), recBookingHotel.getField(BookingHotel.NIGHTS), true, false));
+        recBookingHotel.getField(BookingHotel.MEAL_PLAN_3ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.MEAL_PLAN_3_QTY), recBookingHotel.getField(BookingHotel.NIGHTS), true, false));
+        recBookingHotel.getField(BookingHotel.MEAL_PLAN_4ID).addListener(new MoveOnChangeHandler(recBookingHotel.getField(BookingHotel.MEAL_PLAN_4_QTY), recBookingHotel.getField(BookingHotel.NIGHTS), true, false));
         
         // Display the USD equivalents
-        BaseField fldExchange = recBookingHotel.getField(BookingHotel.kExchange);
+        BaseField fldExchange = recBookingHotel.getField(BookingHotel.EXCHANGE);
         Record recBookingHotelScreenRecord = this.getScreenRecord();
         FieldListener fieldListener = null;
-        recBookingHotel.getField(BookingHotel.kSingleCost).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.kSingleCostLocal), recBookingHotel.getField(BookingHotel.kSingleCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingHotel.getField(BookingHotel.SINGLE_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.SINGLE_COST_LOCAL), recBookingHotel.getField(BookingHotel.SINGLE_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBookingHotel.getField(BookingHotel.kDoubleCost).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.kDoubleCostLocal), recBookingHotel.getField(BookingHotel.kDoubleCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingHotel.getField(BookingHotel.DOUBLE_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.DOUBLE_COST_LOCAL), recBookingHotel.getField(BookingHotel.DOUBLE_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBookingHotel.getField(BookingHotel.kTripleCost).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.kTripleCostLocal), recBookingHotel.getField(BookingHotel.kTripleCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingHotel.getField(BookingHotel.TRIPLE_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.TRIPLE_COST_LOCAL), recBookingHotel.getField(BookingHotel.TRIPLE_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBookingHotel.getField(BookingHotel.kQuadCost).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.kQuadCostLocal), recBookingHotel.getField(BookingHotel.kQuadCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingHotel.getField(BookingHotel.QUAD_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingHotelScreenRecord.getField(BookingHotelScreenRecord.QUAD_COST_LOCAL), recBookingHotel.getField(BookingHotel.QUAD_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
         
         for (int i = 0; i < this.getSFieldCount(); i++)
@@ -145,7 +145,7 @@ public class BookingHotelScreen extends BookingDetailSubScreen
             {
                 String strCommand = ((SCannedBox)sField).getButtonCommand();
                 if (Hotel.MEAL_DETAIL.equals(strCommand))
-                    this.getRecord(Hotel.kHotelFile).addListener(new EnableOnValidHandler(sField, true, false));
+                    this.getRecord(Hotel.HOTEL_FILE).addListener(new EnableOnValidHandler(sField, true, false));
             }
         }
     }
@@ -160,9 +160,9 @@ public class BookingHotelScreen extends BookingDetailSubScreen
         this.getRecord(BookingHotel.kBookingHotelFile).getField(BookingHotel.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingHotel.kBookingHotelFile).getField(BookingHotel.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         // Make sure these all have this recordowner
-        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-        Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+        Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
@@ -217,7 +217,7 @@ public class BookingHotelScreen extends BookingDetailSubScreen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-        Record recHotel = this.getRecord(Hotel.kHotelFile);
+        Record recHotel = this.getRecord(Hotel.HOTEL_FILE);
         if (strCommand.equalsIgnoreCase(Hotel.MEAL_DETAIL))
             return (this.onForm(recHotel, Hotel.MEAL_PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, null) != null);
         else

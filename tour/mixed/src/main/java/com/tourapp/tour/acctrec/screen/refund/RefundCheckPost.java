@@ -109,11 +109,11 @@ public class RefundCheckPost extends BaseArTrxPostScreen
     {
         super.addListeners();
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-        this.getMainRecord().setKeyArea(ArTrx.kTrxStatusIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(recTrxStatus.getField(TrxStatus.kID), ArTrx.kTrxStatusID, null, -1, null, -1));
-        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(RefundScreenRecord.kCheckNo), this.getScreenRecord().getField(RefundScreenRecord.kNextCheckNo)));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+        this.getMainRecord().setKeyArea(ArTrx.TRX_STATUS_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(recTrxStatus.getField(TrxStatus.ID), ArTrx.TRX_STATUS_ID, null, null, null, null));
+        this.getMainRecord().addListener(new BumpCheckNoHandler(this.getScreenRecord().getField(RefundScreenRecord.CHECK_NO), this.getScreenRecord().getField(RefundScreenRecord.NEXT_CHECK_NO)));
         this.getMainRecord().addListener(new UpdateRefundPaidAcctDetailHandler(null));
     }
     /**
@@ -151,9 +151,9 @@ public class RefundCheckPost extends BaseArTrxPostScreen
     public boolean onPost()
     {
         try   {
-            TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
+            TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
             Object bookmark = recTrxStatus.getHandle(DBConstants.DATA_SOURCE_HANDLE);
-            int iTrxPaidClassID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAID);
+            int iTrxPaidClassID = recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAID);
             recTrxStatus.setHandle(bookmark, DBConstants.DATA_SOURCE_HANDLE);
             Record recArTrx = this.getMainRecord();
             recArTrx.close();
@@ -161,7 +161,7 @@ public class RefundCheckPost extends BaseArTrxPostScreen
             {
                 recArTrx.next();
                 recArTrx.edit();
-                recArTrx.getField(ArTrx.kTrxStatusID).setValue(iTrxPaidClassID);
+                recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iTrxPaidClassID);
                 recArTrx.set();
             }
         } catch (DBException ex)    {

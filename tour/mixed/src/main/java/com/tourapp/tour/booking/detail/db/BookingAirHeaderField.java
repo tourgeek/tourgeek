@@ -75,7 +75,7 @@ public class BookingAirHeaderField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, BookingAirHeader.kAirlineDesc, true, false);
+        ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, BookingAirHeader.AIRLINE_DESC, true, false);
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
@@ -90,7 +90,7 @@ public class BookingAirHeaderField extends ReferenceField
                         Record recBookingAir = fldBookingAirHeaderID.getRecord();
                         Record recBookingAirHeader = makeReferenceRecord();
         
-                        String strOptionID = recBookingAir.getField(BookingAir.kBookingID).toString();
+                        String strOptionID = recBookingAir.getField(BookingAir.BOOKING_ID).toString();
                         ScreenLocation itsLocation = null;
         
                         Task task = null;

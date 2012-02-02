@@ -79,7 +79,7 @@ public class AffiliationScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(Affiliation.kDescriptionKey);
+        this.getMainRecord().setKeyArea(Affiliation.DESCRIPTION_KEY);
         this.addMainKeyBehavior();
     }
     /**

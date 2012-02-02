@@ -101,8 +101,8 @@ public class ApBaseCutoffReport extends ReportScreen
     {
         super.addListeners();
         Record recApTrx = this.getMainRecord();
-        Record recVendor = this.getRecord(Vendor.kVendorFile);
-        Record recCurrencys = this.getRecord(Currencys.kCurrencysFile);
+        Record recVendor = this.getRecord(Vendor.VENDOR_FILE);
+        Record recCurrencys = this.getRecord(Currencys.CURRENCYS_FILE);
         recVendor.addListener(new SubFileFilter(recCurrencys));
         recApTrx.addListener(new SubFileFilter(recVendor));
     }
@@ -124,19 +124,19 @@ public class ApBaseCutoffReport extends ReportScreen
                 while (recVendor == null)
                 {
                     if (!bFirstTime)
-                        recVendor = this.getRecord(Vendor.kVendorFile).next();
+                        recVendor = this.getRecord(Vendor.VENDOR_FILE).next();
                     if (recVendor == null)
                     {
                         if (bFirstTime)
-                            this.getRecord(Currencys.kCurrencysFile).close();
+                            this.getRecord(Currencys.CURRENCYS_FILE).close();
                         bFirstTime = false;
-                        Record recCurrencys = this.getRecord(Currencys.kCurrencysFile).next();
+                        Record recCurrencys = this.getRecord(Currencys.CURRENCYS_FILE).next();
                         if (recCurrencys == null)
                             return null;    // EOF
-                        this.getRecord(Vendor.kVendorFile).close();
+                        this.getRecord(Vendor.VENDOR_FILE).close();
                     }
                 }
-                this.getRecord(ApTrx.kApTrxFile).close();
+                this.getRecord(ApTrx.AP_TRX_FILE).close();
             }
         }
         return recApTrx;

@@ -350,8 +350,8 @@ public class Vendor extends Company
      */
     public void addPropertyListeners()
     {
-        BaseField fldProperties = this.getField(Vendor.kProperties);
-        BaseField fldDisplay = this.getField(Vendor.kMessageServer);
+        BaseField fldProperties = this.getField(Vendor.PROPERTIES);
+        BaseField fldDisplay = this.getField(Vendor.MESSAGE_SERVER);
         FieldListener listener = new CopyConvertersHandler(new PropertiesConverter(fldProperties, TrxMessageHeader.DESTINATION_MESSAGE_PARAM));
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
@@ -359,7 +359,7 @@ public class Vendor extends Company
         listener = new CopyConvertersHandler(fldDisplay, new PropertiesConverter(fldProperties, TrxMessageHeader.DESTINATION_MESSAGE_PARAM));
         fldProperties.addListener(listener);
         
-        fldDisplay = this.getField(Vendor.kWSDLPath);
+        fldDisplay = this.getField(Vendor.WSDL_PATH);
         listener = new CopyConvertersHandler(new PropertiesConverter(fldProperties, TrxMessageHeader.WSDL_PATH));
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
@@ -382,10 +382,10 @@ public class Vendor extends Company
         
         BooleanField fldTrue = new BooleanField(null, "True", 1, null, new Boolean(true));
         recApTrx2.addListener(new FreeOnFreeHandler(fldTrue));
-        recApTrx2.addListener(new CompareFileFilter(ApTrx.kActiveTrx, fldTrue, "=", fldTrue, true));
+        recApTrx2.addListener(new CompareFileFilter(ApTrx.ACTIVE_TRX, fldTrue, "=", fldTrue, true));
         
-        recApTrx2.addListener(new SubCountHandler(this.getField(Vendor.kAmountSelected), ApTrx.kAmountSelected, true, true));
-        recApTrx2.addListener(new SubCountHandler(this.getField(Vendor.kVendorBalance), ApTrx.kInvoiceBalance, true, true));
+        recApTrx2.addListener(new SubCountHandler(this.getField(Vendor.AMOUNT_SELECTED), ApTrx.AMOUNT_SELECTED, true, true));
+        recApTrx2.addListener(new SubCountHandler(this.getField(Vendor.VENDOR_BALANCE), ApTrx.INVOICE_BALANCE, true, true));
         
         return recApTrx2;
     }
@@ -431,7 +431,7 @@ public class Vendor extends Company
      */
     public MessageTransport getMessageTransport(TrxMessageHeader trxMessageHeader)
     {
-        return (MessageTransport)((ReferenceField)this.getField(Vendor.kMessageTransportID)).getReference();
+        return (MessageTransport)((ReferenceField)this.getField(Vendor.MESSAGE_TRANSPORT_ID)).getReference();
     }
     /**
      * Add the destination information of this person to the message.
@@ -443,16 +443,16 @@ public class Vendor extends Company
         if (((MessageTransport.SOAP.equalsIgnoreCase(strMessageTransport)) || (MessageTransport.XML.equalsIgnoreCase(strMessageTransport)))
             && (trxMessageHeader.get(TrxMessageHeader.DESTINATION_PARAM) == null))
         {
-            String strDestination = ((PropertiesField)this.getField(Vendor.kProperties)).getProperty(TrxMessageHeader.DESTINATION_MESSAGE_PARAM);
+            String strDestination = ((PropertiesField)this.getField(Vendor.PROPERTIES)).getProperty(TrxMessageHeader.DESTINATION_MESSAGE_PARAM);
             if (strDestination != null)
             {
                 if (strDestination.startsWith("/"))
-                    if (!this.getField(Person.kWeb).isNull())
-                        strDestination = this.getField(Person.kWeb).toString() + strDestination;
+                    if (!this.getField(Person.WEB).isNull())
+                        strDestination = this.getField(Person.WEB).toString() + strDestination;
                 trxMessageHeader.put(TrxMessageHeader.DESTINATION_PARAM, strDestination);
             }
             else
-                trxMessageHeader.put(TrxMessageHeader.DESTINATION_PARAM, this.getField(Person.kWeb).toString());
+                trxMessageHeader.put(TrxMessageHeader.DESTINATION_PARAM, this.getField(Person.WEB).toString());
         }
         
         trxMessageHeader = super.addDestInfo(trxMessageHeader);
@@ -465,9 +465,9 @@ public class Vendor extends Company
     public boolean setProperty(String strKey, String strProperty)
     {
         if (TrxMessageHeader.DESTINATION_PARAM.equalsIgnoreCase(strKey))
-            this.getField(Vendor.kWeb).setString(strProperty);
+            this.getField(Vendor.WEB).setString(strProperty);
         else
-            ((PropertiesField)this.getField(Vendor.kProperties)).setProperty(strKey, strProperty);
+            ((PropertiesField)this.getField(Vendor.PROPERTIES)).setProperty(strKey, strProperty);
         return true;
     }
     /**
@@ -476,9 +476,9 @@ public class Vendor extends Company
     public String getProperty(String strKey)
     {
         if (TrxMessageHeader.DESTINATION_PARAM.equalsIgnoreCase(strKey))
-            return this.getField(Vendor.kWeb).toString();
+            return this.getField(Vendor.WEB).toString();
         else
-            return ((PropertiesField)this.getField(Vendor.kProperties)).getProperty(strKey);
+            return ((PropertiesField)this.getField(Vendor.PROPERTIES)).getProperty(strKey);
     }
 
 }

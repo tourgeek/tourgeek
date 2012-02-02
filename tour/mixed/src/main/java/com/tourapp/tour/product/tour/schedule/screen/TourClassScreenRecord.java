@@ -31,6 +31,7 @@ public class TourClassScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String TOUR_CLASS_ID = "TourClassID";
     public static final int kTourClassID = kScreenRecordLastField + 1;
     public static final int kTourClassScreenRecordLastField = kTourClassID;
     public static final int kTourClassScreenRecordFields = kTourClassID - DBConstants.MAIN_FIELD + 1;

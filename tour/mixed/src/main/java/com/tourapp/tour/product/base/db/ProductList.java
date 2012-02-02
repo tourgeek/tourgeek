@@ -103,7 +103,7 @@ public class ProductList extends VirtualRecord
         TourList pBkTourList = new TourList(recordOwner);
         this.addTable(pBkTourList);
         // Add Trans, etc. here
-        this.setKeyArea(Product.kDescSortKey);
+        this.setKeyArea(Product.DESC_SORT_KEY);
     }
     /**
      * SelectFields Method.

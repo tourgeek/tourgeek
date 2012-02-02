@@ -71,9 +71,9 @@ public class MergeCity extends MergeData
         boolean bFound = super.readDestRecord(recSource, recDest);
         if (!bFound)
             return bFound;
-        if (!recSource.getField(City.kCountryID).isNull())
-            if (!recDest.getField(City.kCountryID).isNull())
-                if (!recSource.getField(City.kCountryID).equals(recDest.getField(City.kCountryID)))
+        if (!recSource.getField(City.COUNTRY_ID).isNull())
+            if (!recDest.getField(City.COUNTRY_ID).isNull())
+                if (!recSource.getField(City.COUNTRY_ID).equals(recDest.getField(City.COUNTRY_ID)))
                     return false;   // Not a match
         return bFound;
     }
@@ -86,9 +86,9 @@ public class MergeCity extends MergeData
     {
         super.mergeSourceData(recSource, recDest, bFound);
         if (!bFound)
-            recDest.getField(City.kCityType).setString(CityTypeField.CITY);
-        if ((recDest.getField(City.kTicketCityDesc).isNull()) || (recDest.getField(City.kTicketCityDesc).toString().equalsIgnoreCase(recSource.getField(City.kTicketCityDesc).toString())))
-            recDest.getField(City.kTicketCityDesc).moveFieldToThis(recSource.getField(City.kTicketCityDesc));
+            recDest.getField(City.CITY_TYPE).setString(CityTypeField.CITY);
+        if ((recDest.getField(City.TICKET_CITY_DESC).isNull()) || (recDest.getField(City.TICKET_CITY_DESC).toString().equalsIgnoreCase(recSource.getField(City.TICKET_CITY_DESC).toString())))
+            recDest.getField(City.TICKET_CITY_DESC).moveFieldToThis(recSource.getField(City.TICKET_CITY_DESC));
     }
 
 }

@@ -75,9 +75,9 @@ public class CountryField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record record = this.makeReferenceRecord();
-        Converter fldDisplayFieldDesc = record.getField(Country.kName);
+        Converter fldDisplayFieldDesc = record.getField(Country.NAME);
         fldDisplayFieldDesc = new FieldLengthConverter(fldDisplayFieldDesc, 25);
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, Country.kCodeKey, fldDisplayFieldDesc, true, true);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, Country.CODE_KEY, fldDisplayFieldDesc, true, true);
     }
 
 }

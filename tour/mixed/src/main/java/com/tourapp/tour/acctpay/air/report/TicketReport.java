@@ -100,25 +100,25 @@ public class TicketReport extends ReportScreen
     {
         super.addListeners();
         
-        //xthis.getMainRecord().setKeyArea(TicketTrx.kStartServiceDateKey);
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kAirlineID), this.getScreenRecord().getField(TicketScreenRecord.kAirline1ID), FileListener.EQUALS));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kAirlineID), this.getScreenRecord().getField(TicketScreenRecord.kAirline2ID), FileListener.EQUALS));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kAirlineID), this.getScreenRecord().getField(TicketScreenRecord.kAirline3ID), FileListener.EQUALS));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kAirlineID), this.getScreenRecord().getField(TicketScreenRecord.kAirline4ID), FileListener.EQUALS));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(TicketScreenRecord.kStartDeparture), FileListener.GREATER_THAN_EQUAL));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kStartServiceDate), this.getScreenRecord().getField(TicketScreenRecord.kEndDeparture), FileListener.LESS_THAN_EQUAL));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kIssueDate), this.getScreenRecord().getField(TicketScreenRecord.kStartIssue), FileListener.GREATER_THAN_EQUAL));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kIssueDate), this.getScreenRecord().getField(TicketScreenRecord.kEndIssue), FileListener.LESS_THAN_EQUAL));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kTicketNumber), this.getScreenRecord().getField(TicketScreenRecord.kStartTicket), FileListener.GREATER_THAN_EQUAL));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kTicketNumber), this.getScreenRecord().getField(TicketScreenRecord.kEndTicket), FileListener.LESS_THAN_EQUAL));
-        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.kVoidDate), null, FileListener.NOT_EQUAL, this.getScreenRecord().getField(TicketScreenRecord.kIncludeVoid), true));
+        //xthis.getMainRecord().setKeyArea(TicketTrx.START_SERVICE_DATE_KEY);
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.AIRLINE_ID), this.getScreenRecord().getField(TicketScreenRecord.AIRLINE_1ID), FileListener.EQUALS));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.AIRLINE_ID), this.getScreenRecord().getField(TicketScreenRecord.AIRLINE_2ID), FileListener.EQUALS));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.AIRLINE_ID), this.getScreenRecord().getField(TicketScreenRecord.AIRLINE_3ID), FileListener.EQUALS));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.AIRLINE_ID), this.getScreenRecord().getField(TicketScreenRecord.AIRLINE_4ID), FileListener.EQUALS));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(TicketScreenRecord.START_DEPARTURE), FileListener.GREATER_THAN_EQUAL));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.START_SERVICE_DATE), this.getScreenRecord().getField(TicketScreenRecord.END_DEPARTURE), FileListener.LESS_THAN_EQUAL));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.ISSUE_DATE), this.getScreenRecord().getField(TicketScreenRecord.START_ISSUE), FileListener.GREATER_THAN_EQUAL));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.ISSUE_DATE), this.getScreenRecord().getField(TicketScreenRecord.END_ISSUE), FileListener.LESS_THAN_EQUAL));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.TICKET_NUMBER), this.getScreenRecord().getField(TicketScreenRecord.START_TICKET), FileListener.GREATER_THAN_EQUAL));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.TICKET_NUMBER), this.getScreenRecord().getField(TicketScreenRecord.END_TICKET), FileListener.LESS_THAN_EQUAL));
+        this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getField(TicketTrx.VOID_DATE), (BaseField)null, FileListener.NOT_EQUAL, this.getScreenRecord().getField(TicketScreenRecord.INCLUDE_VOID), true));
         
         SortOrderHandler keyBehavior = new SortOrderHandler(this.getMainRecord());
-        this.getScreenRecord().getField(TicketScreenRecord.kReportOrder).setValue(0); // No necessary
-        //xkeyBehavior.setGridTable(TicketTrx.kStartServiceDateKey, this.getMainRecord(), 0);
-        //xkeyBehavior.setGridTable(TicketTrx.kIssueDateKey, this.getMainRecord(), 1);
-        //xkeyBehavior.setGridTable(TicketTrx.kTicketNumberKey, this.getMainRecord(), 2);
-        this.getScreenRecord().getField(TicketScreenRecord.kReportOrder).addListener(keyBehavior);
+        this.getScreenRecord().getField(TicketScreenRecord.REPORT_ORDER).setValue(0); // No necessary
+        //xkeyBehavior.setGridTable(TicketTrx.START_SERVICE_DATE_KEY, this.getMainRecord(), 0);
+        //xkeyBehavior.setGridTable(TicketTrx.ISSUE_DATE_KEY, this.getMainRecord(), 1);
+        //xkeyBehavior.setGridTable(TicketTrx.TICKET_NUMBER_KEY, this.getMainRecord(), 2);
+        this.getScreenRecord().getField(TicketScreenRecord.REPORT_ORDER).addListener(keyBehavior);
     }
     /**
      * Add the toolbars that belong with this screen.

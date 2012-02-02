@@ -36,8 +36,11 @@ public class PaymentRequestScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String BANK_ACCT_ID = "BankAcctID";
     public static final int kBankAcctID = kScreenRecordLastField + 1;
+    public static final String REQUEST_TOTAL = "RequestTotal";
     public static final int kRequestTotal = kBankAcctID + 1;
+    public static final String MANUAL_CHECKS = "ManualChecks";
     public static final int kManualChecks = kRequestTotal + 1;
     public static final int kPaymentRequestScreenRecordLastField = kManualChecks;
     public static final int kPaymentRequestScreenRecordFields = kManualChecks - DBConstants.MAIN_FIELD + 1;

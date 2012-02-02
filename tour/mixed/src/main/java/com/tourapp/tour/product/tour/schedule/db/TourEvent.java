@@ -165,9 +165,9 @@ public class TourEvent extends VirtualRecord
      * Override this to supply a different key area.
      * @return The key area to use for screens and popups.
      */
-    public int getDefaultScreenKeyArea()
+    public String getDefaultScreenKeyArea()
     {
-        return TourEvent.kIDKey;
+        return TourEvent.ID_KEY;
     }
 
 }

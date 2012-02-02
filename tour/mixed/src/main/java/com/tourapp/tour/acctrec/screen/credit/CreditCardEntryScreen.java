@@ -85,14 +85,14 @@ public class CreditCardEntryScreen extends McoEntryScreen
     public void addListeners()
     {
         // Don't call super (because MCO stuff would be set up)
-        this.getMainRecord().getField(CreditCard.kCardID).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kCardID)));
-        this.getMainRecord().getField(CreditCard.kSvcPer).addListener(new InitFieldHandler(this.getRecord(ArControl.kArControlFile).getField(ArControl.kCreditCardSvcPer)));
+        this.getMainRecord().getField(CreditCard.CARD_ID).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.CARD_ID)));
+        this.getMainRecord().getField(CreditCard.SVC_PER).addListener(new InitFieldHandler(this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.CREDIT_CARD_SVC_PER)));
         
-        ((TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile)).getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.BATCH);
-        this.getMainRecord().setKeyArea(CreditCard.kTrxStatusIDKey);
-        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.kTrxStatusFile)));
+        ((TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE)).getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.BATCH);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_STATUS_ID_KEY);
+        this.getMainRecord().addListener(new SubFileFilter(this.getRecord(TrxStatus.TRX_STATUS_FILE)));
         
-        this.getMainRecord().getField(CreditCard.kNet).setEnabled(false);
+        this.getMainRecord().getField(CreditCard.NET).setEnabled(false);
         
         this.getMainRecord().addListener(new SubFileIntegrityHandler(CreditCardBatchDist.class.getName(), true));
     }
@@ -112,7 +112,7 @@ public class CreditCardEntryScreen extends McoEntryScreen
      */
     public void setupSFields()
     {
-        Converter converter = this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kBookingID);
+        Converter converter = this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.BOOKING_ID);
         converter = new CreditCardDistConverter(converter);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

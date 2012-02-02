@@ -209,7 +209,7 @@ public class BankTrxBatchDetail extends BankTrx
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        ((TrxStatusField)this.getField(BankTrxBatchDetail.kTrxStatusID)).setDesc(BankTrx.kBankTrxFile);
+        ((TrxStatusField)this.getField(BankTrxBatchDetail.TRX_STATUS_ID)).setDesc(BankTrx.BANK_TRX_FILE);
         this.removeListener(this.getListener(VoidOnDeleteHandler.class.getName()), true); // Not used for batches.
         this.addListener(new SubFileIntegrityHandler(BankTrxBatchDist.class.getName(), true));
     }

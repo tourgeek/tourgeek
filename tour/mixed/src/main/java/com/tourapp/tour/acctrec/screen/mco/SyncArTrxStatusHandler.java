@@ -79,13 +79,13 @@ public class SyncArTrxStatusHandler extends FileListener
         if (m_fldTrxStatusID == null)
         {
             try {
-                m_fldTrxStatusID = (BaseField)recBaseArTrx.getField(BaseTrx.kTrxStatusID).clone();
+                m_fldTrxStatusID = (BaseField)recBaseArTrx.getField(BaseTrx.TRX_STATUS_ID).clone();
             } catch (CloneNotSupportedException ex) {
                 ex.printStackTrace();
             }
         }
         // Save the (previous) status, so you can change the status if updated.
-        m_fldTrxStatusID.moveFieldToThis(recBaseArTrx.getField(BaseTrx.kTrxStatusID));
+        m_fldTrxStatusID.moveFieldToThis(recBaseArTrx.getField(BaseTrx.TRX_STATUS_ID));
         super.doValidRecord(bDisplayOption);
     }
     /**
@@ -119,8 +119,8 @@ public class SyncArTrxStatusHandler extends FileListener
             Record recBaseArTrx = this.getOwner();
             if (m_recArTrx.getListener(SubFileFilter.class.getName()) == null)
             {
-                m_recArTrx.setKeyArea(ArTrx.kLinkedTrxIDKey);
-                m_recArTrx.addListener(new SubFileFilter(m_fldTrxStatusID, ArTrx.kTrxStatusID, recBaseArTrx.getField(BaseArPay.kID), ArTrx.kLinkedTrxID, null, -1));
+                m_recArTrx.setKeyArea(ArTrx.LINKED_TRX_ID_KEY);
+                m_recArTrx.addListener(new SubFileFilter(m_fldTrxStatusID, ArTrx.TRX_STATUS_ID, recBaseArTrx.getField(BaseArPay.ID), ArTrx.LINKED_TRX_ID, null, null));
             }
             try {
                 m_recArTrx.close();
@@ -128,7 +128,7 @@ public class SyncArTrxStatusHandler extends FileListener
                 {
                     m_recArTrx.next();
                     m_recArTrx.edit();
-                    m_recArTrx.getField(ArTrx.kTrxStatusID).moveFieldToThis(recBaseArTrx.getField(BaseArPay.kTrxStatusID));
+                    m_recArTrx.getField(ArTrx.TRX_STATUS_ID).moveFieldToThis(recBaseArTrx.getField(BaseArPay.TRX_STATUS_ID));
                     m_recArTrx.set();
                 }
             } catch (DBException ex)    {

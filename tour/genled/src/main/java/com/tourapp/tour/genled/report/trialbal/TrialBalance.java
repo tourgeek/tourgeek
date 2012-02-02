@@ -91,22 +91,22 @@ public class TrialBalance extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(Account.kAccountNoKey);
+        this.getMainRecord().setKeyArea(Account.ACCOUNT_NO_KEY);
         
-        SubFileFilter listener = new SubFileFilter(((AccountField)this.getScreenRecord().getField(GenledScreenRecord.kStartAccountID)).getReferenceRecord().getField(Account.kAccountNo), Account.kAccountNo, null, -1, null, -1);
+        SubFileFilter listener = new SubFileFilter(((AccountField)this.getScreenRecord().getField(GenledScreenRecord.START_ACCOUNT_ID)).getReferenceRecord().getField(Account.ACCOUNT_NO), Account.ACCOUNT_NO, null, null, null, null);
         listener.setEndKey(false);
         this.getMainRecord().addListener(listener);
-        listener = new SubFileFilter(((AccountField)this.getScreenRecord().getField(GenledScreenRecord.kEndAccountID)).getReferenceRecord().getField(Account.kAccountNo), Account.kAccountNo, null, -1, null, -1);
+        listener = new SubFileFilter(((AccountField)this.getScreenRecord().getField(GenledScreenRecord.END_ACCOUNT_ID)).getReferenceRecord().getField(Account.ACCOUNT_NO), Account.ACCOUNT_NO, null, null, null, null);
         listener.setInitialKey(false);
         this.getMainRecord().addListener(listener);
         // Profit Center filter
-        this.getMainRecord().addListener(new ProfitCenterFilter(Account.kAccountNo, this.getScreenRecord().getField(GenledScreenRecord.kProfitCenterID)));
+        this.getMainRecord().addListener(new ProfitCenterFilter(Account.ACCOUNT_NO, this.getScreenRecord().getField(GenledScreenRecord.PROFIT_CENTER_ID)));
         
         CalcAcctBalHandler calcListener = null;
-        this.getMainRecord().addListener(calcListener = new CalcAcctBalHandler(this.getScreenRecord().getField(GenledScreenRecord.kEndBalance), null, this.getScreenRecord().getField(GenledScreenRecord.kCutoffDate), true, this.getScreenRecord().getField(GenledScreenRecord.kSubTotal)));
-        calcListener.getAcctDetail().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kReportTotal), AcctDetail.kAmountLocal, false, false));
+        this.getMainRecord().addListener(calcListener = new CalcAcctBalHandler(this.getScreenRecord().getField(GenledScreenRecord.END_BALANCE), null, this.getScreenRecord().getField(GenledScreenRecord.CUTOFF_DATE), true, this.getScreenRecord().getField(GenledScreenRecord.SUB_TOTAL)));
+        calcListener.getAcctDetail().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.REPORT_TOTAL), AcctDetail.AMOUNT_LOCAL, false, false));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.kReportCount), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(GenledScreenRecord.REPORT_COUNT), false, true));
         
         this.setProperty(LIMIT_PARAM, LIMIT_UNLIMITED);   // Unlimited detail records
     }

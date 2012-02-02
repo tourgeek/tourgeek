@@ -155,26 +155,26 @@ public class ProductInventoryRangeAdjust extends DetailScreen
     {
         Record recInventory = this.getMainRecord();
         try {
-            this.getScreenRecord().getField(ProductScreenRecord.kDetailDate).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kStartDate));
+            this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.START_DATE));
             while (true)
             {
-                if (this.getScreenRecord().getField(ProductScreenRecord.kDetailDate).compareTo(this.getScreenRecord().getField(ProductScreenRecord.kEndDate)) > 0)
+                if (this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE).compareTo(this.getScreenRecord().getField(ProductScreenRecord.END_DATE)) > 0)
                     break;  // End of range
                 recInventory.addNew();  // This will set the product and product type fields.
-                this.setInvKey(recInventory, this.getScreenRecord().getField(ProductScreenRecord.kDetailDate));
+                this.setInvKey(recInventory, this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE));
                 boolean bSuccess = recInventory.seek("=");
                 if (bSuccess)
                 {   // Modify the current inventory
                     if (recInventory.edit() != DBConstants.NORMAL_RETURN)
                     {   // Locked, process error
                     }
-                    if (!this.getScreenRecord().getField(ProductScreenRecord.kBlocked).isNull())
-                        recInventory.getField(Inventory.kBlocked).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kBlocked));
-                    if (!this.getScreenRecord().getField(ProductScreenRecord.kOversell).isNull())
-                        recInventory.getField(Inventory.kOversell).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kOversell));
-                    if (this.getScreenRecord().getField(ProductScreenRecord.kClosed).getState())
-                        recInventory.getField(Inventory.kClosed).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kClosed));
-                    if (this.getScreenRecord().getField(ProductScreenRecord.kDelete).getState())
+                    if (!this.getScreenRecord().getField(ProductScreenRecord.BLOCKED).isNull())
+                        recInventory.getField(Inventory.BLOCKED).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.BLOCKED));
+                    if (!this.getScreenRecord().getField(ProductScreenRecord.OVERSELL).isNull())
+                        recInventory.getField(Inventory.OVERSELL).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.OVERSELL));
+                    if (this.getScreenRecord().getField(ProductScreenRecord.CLOSED).getState())
+                        recInventory.getField(Inventory.CLOSED).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.CLOSED));
+                    if (this.getScreenRecord().getField(ProductScreenRecord.DELETE).getState())
                         recInventory.remove();
                     else
                         recInventory.set();
@@ -182,20 +182,20 @@ public class ProductInventoryRangeAdjust extends DetailScreen
                 else
                 {   // Add New inventory
                     recInventory.addNew();  // This will set the product and product type fields.
-                    this.setInvKey(recInventory, this.getScreenRecord().getField(ProductScreenRecord.kDetailDate));
+                    this.setInvKey(recInventory, this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE));
         
-                    recInventory.getField(Inventory.kUsed).setValue(0);
-                    recInventory.getField(Inventory.kBlocked).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kBlocked));
-                    recInventory.getField(Inventory.kOversell).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kOversell));
-                    recInventory.getField(Inventory.kClosed).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.kClosed));
+                    recInventory.getField(Inventory.USED).setValue(0);
+                    recInventory.getField(Inventory.BLOCKED).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.BLOCKED));
+                    recInventory.getField(Inventory.OVERSELL).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.OVERSELL));
+                    recInventory.getField(Inventory.CLOSED).moveFieldToThis(this.getScreenRecord().getField(ProductScreenRecord.CLOSED));
         
-                    if (!this.getScreenRecord().getField(ProductScreenRecord.kDelete).getState())
+                    if (!this.getScreenRecord().getField(ProductScreenRecord.DELETE).getState())
                         recInventory.add();
                 }
         
-                Calendar calTarget = ((DateField)this.getScreenRecord().getField(ProductScreenRecord.kDetailDate)).getCalendar();
+                Calendar calTarget = ((DateField)this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE)).getCalendar();
                 calTarget.add(Calendar.DATE, 1);    // Next day.
-                ((DateField)this.getScreenRecord().getField(ProductScreenRecord.kDetailDate)).setDate(calTarget.getTime(), true, DBConstants.INIT_MOVE);
+                ((DateField)this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE)).setDate(calTarget.getTime(), true, DBConstants.INIT_MOVE);
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -211,10 +211,10 @@ public class ProductInventoryRangeAdjust extends DetailScreen
      */
     public void setInvKey(Record recInventory, BaseField fldTargetDate)
     {
-        recInventory.getField(Inventory.kInvDate).moveFieldToThis(fldTargetDate);
-        recInventory.getField(Inventory.kRateID).initField(true);
-        recInventory.getField(Inventory.kClassID).initField(true);
-        recInventory.getField(Inventory.kOtherID).initField(true);
+        recInventory.getField(Inventory.INV_DATE).moveFieldToThis(fldTargetDate);
+        recInventory.getField(Inventory.RATE_ID).initField(true);
+        recInventory.getField(Inventory.CLASS_ID).initField(true);
+        recInventory.getField(Inventory.OTHER_ID).initField(true);
     }
     /**
      * Make a sub-screen.

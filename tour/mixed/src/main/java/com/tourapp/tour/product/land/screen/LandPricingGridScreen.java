@@ -116,28 +116,28 @@ public class LandPricingGridScreen extends ProductPricingGridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().getField(LandPricing.kRateID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kLandRateID)));
-        this.getMainRecord().getField(LandPricing.kClassID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kLandClassID)));
-        this.getMainRecord().getField(LandPricing.kLandVariesID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kVariesOn)));
-        this.getMainRecord().getField(LandPricing.kProductTermsID).addListener(new InitFieldHandler(this.getRecord(ProductControl.kProductControlFile).getField(ProductControl.kProductTermsID)));
+        this.getMainRecord().getField(LandPricing.RATE_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.LAND_RATE_ID)));
+        this.getMainRecord().getField(LandPricing.CLASS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.LAND_CLASS_ID)));
+        this.getMainRecord().getField(LandPricing.LAND_VARIES_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.VARIES_ON)));
+        this.getMainRecord().getField(LandPricing.PRODUCT_TERMS_ID).addListener(new InitFieldHandler(this.getRecord(ProductControl.PRODUCT_CONTROL_FILE).getField(ProductControl.PRODUCT_TERMS_ID)));
         
-        this.getMainRecord().addListener(new CompareFileFilter(LandPricing.kClassID, this.getScreenRecord().getField(LandScreenRecord.kLandClassID), "=", null, true));
-        this.getScreenRecord().getField(LandScreenRecord.kLandClassID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(LandPricing.CLASS_ID, this.getScreenRecord().getField(LandScreenRecord.LAND_CLASS_ID), "=", null, true));
+        this.getScreenRecord().getField(LandScreenRecord.LAND_CLASS_ID).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Add button(s) to the toolbar.
      */
     public void addToolbarButtons(ToolScreen toolScreen)
     {
-        ReferenceField fldLandClass = (ReferenceField)this.getScreenRecord().getField(LandScreenRecord.kLandClassID);
+        ReferenceField fldLandClass = (ReferenceField)this.getScreenRecord().getField(LandScreenRecord.LAND_CLASS_ID);
         int iSic = fldLandClass.getIDFromCode(LandClass.SEAT_IN_COACH_CODE);
         if (iSic != 0)
         {
-            String strSic = fldLandClass.getReferenceRecord().getField(LandClass.kDescription).toString();
+            String strSic = fldLandClass.getReferenceRecord().getField(LandClass.DESCRIPTION).toString();
             int iPmc = fldLandClass.getIDFromCode(LandClass.PRIVATE_VEHICLE_CODE);
             if (iPmc != 0)
             {
-                String strPmc = fldLandClass.getReferenceRecord().getField(LandClass.kDescription).toString();
+                String strPmc = fldLandClass.getReferenceRecord().getField(LandClass.DESCRIPTION).toString();
                 new SRadioButton(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, fldLandClass, ScreenConstants.DISPLAY_FIELD_DESC, Integer.toString(iSic), strSic);
                 new SRadioButton(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, fldLandClass, ScreenConstants.DISPLAY_FIELD_DESC, Integer.toString(iPmc), strPmc);
             }
@@ -148,8 +148,8 @@ public class LandPricingGridScreen extends ProductPricingGridScreen
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(LandPricing.kLandPricingFile).getField(LandPricing.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(LandPricing.kLandPricingFile).getField(LandPricing.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(LandPricing.kLandPricingFile).getField(LandPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

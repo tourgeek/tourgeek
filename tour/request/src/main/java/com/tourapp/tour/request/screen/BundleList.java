@@ -77,7 +77,7 @@ public class BundleList extends GridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(Bundle.kBundleFile).getField(Bundle.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Bundle.BUNDLE_FILE).getField(Bundle.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the toolbars that belong with this screen.

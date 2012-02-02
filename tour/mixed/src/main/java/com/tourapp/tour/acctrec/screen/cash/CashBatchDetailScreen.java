@@ -94,22 +94,22 @@ public class CashBatchDetailScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        ((ReferenceField)this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kCashBatchID)).setReferenceRecord(this.getRecord(CashBatch.kCashBatchFile));
-        ((ReferenceField)this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kCashBatchID)).getReference();
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).setKeyArea(CashBatchDetail.kCashBatchIDKey);
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubFileFilter(this.getRecord(CashBatch.kCashBatchFile)));
-        this.getRecord(CashBatch.kCashBatchFile).addListener(new UpdateOnCloseHandler(null));
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubCountHandler(this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kBatchChecksActual), false, true));
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).addListener(new SubCountHandler(this.getRecord(CashBatch.kCashBatchFile).getField(CashBatch.kBatchTotalActual), CashBatchDetail.kAmount, false, true));
+        ((ReferenceField)this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.CASH_BATCH_ID)).setReferenceRecord(this.getRecord(CashBatch.CASH_BATCH_FILE));
+        ((ReferenceField)this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.CASH_BATCH_ID)).getReference();
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).setKeyArea(CashBatchDetail.CASH_BATCH_ID_KEY);
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(CashBatch.CASH_BATCH_FILE)));
+        this.getRecord(CashBatch.CASH_BATCH_FILE).addListener(new UpdateOnCloseHandler(null));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.BATCH_CHECKS_ACTUAL), false, true));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(CashBatch.CASH_BATCH_FILE).getField(CashBatch.BATCH_TOTAL_ACTUAL), CashBatchDetail.AMOUNT, false, true));
         
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kBookingID).addListener(new BookingDefaultHandler(null));
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.BOOKING_ID).addListener(new BookingDefaultHandler(null));
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Converter converter = this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kBookingID);
+        Converter converter = this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.BOOKING_ID);
         converter = new CashDistConverter(converter);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

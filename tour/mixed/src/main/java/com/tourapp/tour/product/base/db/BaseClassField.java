@@ -68,7 +68,7 @@ public class BaseClassField extends ReferenceField
     {
         Record record = this.makeReferenceRecord();
         if (record != null)
-            return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, BaseClass.kDescriptionKey, BaseClass.kDescription, true, true);
+            return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, BaseClass.DESCRIPTION_KEY, BaseClass.DESCRIPTION, true, true);
         return super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
     }
 

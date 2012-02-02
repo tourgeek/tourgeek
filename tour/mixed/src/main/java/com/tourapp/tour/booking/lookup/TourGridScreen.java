@@ -88,13 +88,13 @@ public class TourGridScreen extends GridScreen
                 mainRecord = this.openMainRecord();
                 this.setScreenRecord(record);
             }
-            if (Tour.kTourFile.equalsIgnoreCase(record.getTableNames(false)))
+            if (Tour.TOUR_FILE.equalsIgnoreCase(record.getTableNames(false)))
             {
                 record.free();
                 mainRecord = this.openMainRecord();
             }
             if (mainRecord == null)
-                mainRecord = this.getRecord(TourLookupQuery.kTourLookupQueryFile);
+                mainRecord = this.getRecord(TourLookupQuery.TOUR_LOOKUP_QUERY_FILE);
             this.addRecord(mainRecord, true);    // Make sure this is the main record
         }
         super.openOtherRecords();
@@ -118,38 +118,38 @@ public class TourGridScreen extends GridScreen
     {
         super.addListeners();
         
-        Tour recTour = (Tour)this.getRecord(Tour.kTourFile);
-        TourHeader recTourHeader = (TourHeader)this.getRecord(TourHeader.kTourHeaderFile);
+        Tour recTour = (Tour)this.getRecord(Tour.TOUR_FILE);
+        TourHeader recTourHeader = (TourHeader)this.getRecord(TourHeader.TOUR_HEADER_FILE);
         Record screenQuery = this.getScreenRecord();
         
-        if (((NumberField)screenQuery.getField(LookupScreenRecord.kQueryKey)).getValue() > 2)
-            ((NumberField)screenQuery.getField(LookupScreenRecord.kQueryKey)).setValue(0);
+        if (((NumberField)screenQuery.getField(LookupScreenRecord.QUERY_KEY)).getValue() > 2)
+            ((NumberField)screenQuery.getField(LookupScreenRecord.QUERY_KEY)).setValue(0);
         FieldListener behCheckRange = new CheckRangeHandler(0, 2);
-        screenQuery.getField(LookupScreenRecord.kQueryKey).addListener(behCheckRange);
+        screenQuery.getField(LookupScreenRecord.QUERY_KEY).addListener(behCheckRange);
         recTour.addListener(new FileRemoveBOnCloseHandler(behCheckRange));
         
         SortOrderHandler behQueryKeyHandler = new SortOrderHandler(this);
-        behQueryKeyHandler.setGridTable(Tour.kDescriptionKey, recTour, -1);
-        behQueryKeyHandler.setGridTable(Tour.kDepartureDateKey, recTour, -1);
-        screenQuery.getField(LookupScreenRecord.kQueryKey).addListener(behQueryKeyHandler);
+        behQueryKeyHandler.setGridTable(Tour.DESCRIPTION_KEY, recTour, -1);
+        behQueryKeyHandler.setGridTable(Tour.DEPARTURE_DATE_KEY, recTour, -1);
+        screenQuery.getField(LookupScreenRecord.QUERY_KEY).addListener(behQueryKeyHandler);
         
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kDepartureDate), screenQuery.getField(LookupScreenRecord.kTourHdrStartDate), ">=", null, true));
-        screenQuery.getField(LookupScreenRecord.kTourHdrStartDate).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kDepartureDate), screenQuery.getField(LookupScreenRecord.kTourHdrEndDate), "<=", null, true));
-        screenQuery.getField(LookupScreenRecord.kTourHdrEndDate).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new BitFileFilter(recTourHeader.getField(TourHeader.kTourType), screenQuery.getField(LookupScreenRecord.kTourHdrTourType)));
-        screenQuery.getField(LookupScreenRecord.kTourHdrTourType).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new StartSearchFilter(screenQuery.getField(LookupScreenRecord.kStartTargetField)));
-        screenQuery.getField(LookupScreenRecord.kStartTargetField).addListener(new FieldReSelectHandler(this));
-        FieldListener behInitOnChange = new InitOnChangeHandler(screenQuery.getField(LookupScreenRecord.kStartTargetField));
-        screenQuery.getField(LookupScreenRecord.kQueryKey).addListener(behInitOnChange);
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.DEPARTURE_DATE), screenQuery.getField(LookupScreenRecord.TOUR_HDR_START_DATE), ">=", null, true));
+        screenQuery.getField(LookupScreenRecord.TOUR_HDR_START_DATE).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.DEPARTURE_DATE), screenQuery.getField(LookupScreenRecord.TOUR_HDR_END_DATE), "<=", null, true));
+        screenQuery.getField(LookupScreenRecord.TOUR_HDR_END_DATE).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new BitFileFilter(recTourHeader.getField(TourHeader.TOUR_TYPE), screenQuery.getField(LookupScreenRecord.TOUR_HDR_TOUR_TYPE)));
+        screenQuery.getField(LookupScreenRecord.TOUR_HDR_TOUR_TYPE).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new StartSearchFilter(screenQuery.getField(LookupScreenRecord.START_TARGET_FIELD)));
+        screenQuery.getField(LookupScreenRecord.START_TARGET_FIELD).addListener(new FieldReSelectHandler(this));
+        FieldListener behInitOnChange = new InitOnChangeHandler(screenQuery.getField(LookupScreenRecord.START_TARGET_FIELD));
+        screenQuery.getField(LookupScreenRecord.QUERY_KEY).addListener(behInitOnChange);
         recTour.addListener(new FileRemoveBOnCloseHandler(behInitOnChange));
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kTourHeaderID), screenQuery.getField(LookupScreenRecord.kTourHeaderID), "=", null, true));
-        screenQuery.getField(LookupScreenRecord.kTourHeaderID).addListener(new FieldReSelectHandler(this));
-        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.kTourStatusID), screenQuery.getField(LookupScreenRecord.kTourStatusID), "=", null, true));
-        screenQuery.getField(LookupScreenRecord.kTourStatusID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.TOUR_HEADER_ID), screenQuery.getField(LookupScreenRecord.TOUR_HEADER_ID), "=", null, true));
+        screenQuery.getField(LookupScreenRecord.TOUR_HEADER_ID).addListener(new FieldReSelectHandler(this));
+        this.getMainRecord().addListener(new CompareFileFilter(recTour.getField(Tour.TOUR_STATUS_ID), screenQuery.getField(LookupScreenRecord.TOUR_STATUS_ID), "=", null, true));
+        screenQuery.getField(LookupScreenRecord.TOUR_STATUS_ID).addListener(new FieldReSelectHandler(this));
         
-        this.getScreenRecord().getField(LookupScreenRecord.kBkDisplayType).setValue(DisplayTypeField.TOUR_DISPLAY, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        this.getScreenRecord().getField(LookupScreenRecord.BK_DISPLAY_TYPE).setValue(DisplayTypeField.TOUR_DISPLAY, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         
         this.setEditing(false);
     }
@@ -160,11 +160,11 @@ public class TourGridScreen extends GridScreen
     {
         super.syncHeaderToMain();
         
-        this.restoreScreenParam(LookupScreenRecord.kTourHdrStartDate);
-        this.restoreScreenParam(LookupScreenRecord.kTourHdrEndDate);
-        this.restoreScreenParam(LookupScreenRecord.kTourHdrTourType);
-        this.restoreScreenParam(LookupScreenRecord.kTourHeaderID);
-        this.restoreScreenParam(LookupScreenRecord.kTourStatusID);
+        this.restoreScreenParam(LookupScreenRecord.TOUR_HDR_START_DATE);
+        this.restoreScreenParam(LookupScreenRecord.TOUR_HDR_END_DATE);
+        this.restoreScreenParam(LookupScreenRecord.TOUR_HDR_TOUR_TYPE);
+        this.restoreScreenParam(LookupScreenRecord.TOUR_HEADER_ID);
+        this.restoreScreenParam(LookupScreenRecord.TOUR_STATUS_ID);
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -188,11 +188,11 @@ public class TourGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        Converter converter = this.getMainRecord().getField(Tour.kTourFile, Tour.kDescription);
+        Converter converter = this.getMainRecord().getField(Tour.TOUR_FILE, Tour.DESCRIPTION);
         converter = new FieldLengthConverter(converter, 30);
         this.addColumn(converter);
         this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        converter = this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kTourHeaderFile, TourHeader.kDescription);
+        converter = this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.TOUR_HEADER_FILE, TourHeader.DESCRIPTION);
         converter = new FieldLengthConverter(converter, 30);
         converter = new FieldDescConverter(converter, "Header Tour Desc");
         this.addColumn(converter);
@@ -222,7 +222,7 @@ public class TourGridScreen extends GridScreen
             if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
                 (this.getMainRecord().getEditMode() == DBConstants.EDIT_CURRENT))
             {   // Add booking ID
-                String strTourID = this.getMainRecord().getField(Tour.kID).toString();
+                String strTourID = this.getMainRecord().getField(Tour.ID).toString();
                 strCommand = Utility.addURLParam(strCommand, "TourID", strTourID);
             }
         }

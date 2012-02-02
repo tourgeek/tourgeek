@@ -97,9 +97,9 @@ public class PaymentHistoryGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().setKeyArea(PaymentHistory.kApTrxIDKey);
+        this.getMainRecord().setKeyArea(PaymentHistory.AP_TRX_ID_KEY);
         
-        this.getHeaderRecord().getField(ApTrx.kID).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(ApTrx.ID).addListener(new FieldReSelectHandler(this));
         
         this.setEditing(false);
     }
@@ -127,11 +127,11 @@ public class PaymentHistoryGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         { // This is display the correct currency on local currency fields.
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(PaymentHistory.kPaymentHistoryFile).getField(PaymentHistory.kTrxDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(PaymentHistory.kPaymentHistoryFile).getField(PaymentHistory.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

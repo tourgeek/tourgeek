@@ -90,9 +90,9 @@ public class TourHeaderScreen extends ProductScreen
     {
         super.addListeners();
         this.addMainKeyBehavior();
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        recVendor.getField(Vendor.kCurrencysID).setEnabled(false);
-        this.getMainRecord().getField(TourHeader.kTourType).addListener(new CheckTourSeriesHandler(null));
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        recVendor.getField(Vendor.CURRENCYS_ID).setEnabled(false);
+        this.getMainRecord().getField(TourHeader.TOUR_TYPE).addListener(new CheckTourSeriesHandler(null));
         
         ((TourHeader)this.getMainRecord()).addSubFileIntegrityHandlers(); // Make sure detail records are gone before deleting this
     }
@@ -115,8 +115,8 @@ public class TourHeaderScreen extends ProductScreen
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

@@ -31,7 +31,9 @@ public class TaxRateScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String TAX_CODE = "TaxCode";
     public static final int kTaxCode = kScreenRecordLastField + 1;
+    public static final String MARITAL_STATUS = "MaritalStatus";
     public static final int kMaritalStatus = kTaxCode + 1;
     public static final int kTaxRateScreenRecordLastField = kMaritalStatus;
     public static final int kTaxRateScreenRecordFields = kMaritalStatus - DBConstants.MAIN_FIELD + 1;

@@ -100,34 +100,34 @@ public class PaymentRequestGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        ((ReferenceField)this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID)).makeReferenceRecord(this);  // Make sure this record is referenced
-        this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kApBankAcctID)));
+        ((ReferenceField)this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID)).makeReferenceRecord(this);  // Make sure this record is referenced
+        this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.AP_BANK_ACCT_ID)));
         
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
-        this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID).addListener(new FieldReSelectHandler(this));
         FieldListener listener = new ReadSecondaryHandler(this.getHeaderRecord());
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID).addListener(listener);
+        this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID).addListener(listener);
         
-        ((ReferenceField)this.getMainRecord().getField(PaymentRequest.kVendorID)).makeReferenceRecord(this);  // Make sure this record is referenced
+        ((ReferenceField)this.getMainRecord().getField(PaymentRequest.VENDOR_ID)).makeReferenceRecord(this);  // Make sure this record is referenced
         
         // This code does the selection count to determine the default value.
         Record recVendor = new Vendor(this);
         listener = new ReadSecondaryHandler(recVendor);
         listener.setRespondsToMode(DBConstants.READ_MOVE, false);
         listener.setRespondsToMode(DBConstants.INIT_MOVE, false);
-        this.getMainRecord().getField(PaymentRequest.kVendorID).addListener(listener);
+        this.getMainRecord().getField(PaymentRequest.VENDOR_ID).addListener(listener);
         
-        this.getMainRecord().getField(PaymentRequest.kVendorID).addListener(new CheckVendorCurrency(Vendor.kCurrencysID, this.getHeaderRecord().getField(BankAcct.kCurrencyID)));
+        this.getMainRecord().getField(PaymentRequest.VENDOR_ID).addListener(new CheckVendorCurrency(Vendor.CURRENCYS_ID, this.getHeaderRecord().getField(BankAcct.CURRENCY_ID)));
         
-        recVendor.addListener(new RecountOnValidHandler(this.getRecord(ApTrx.kApTrxFile)));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubFileFilter(recVendor));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getRecord(PaymentRequest.kPaymentRequestFile).getField(PaymentRequest.kAmount), ApTrx.kAmountSelected, false, true));
+        recVendor.addListener(new RecountOnValidHandler(this.getRecord(ApTrx.AP_TRX_FILE)));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubFileFilter(recVendor));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE).getField(PaymentRequest.AMOUNT), ApTrx.AMOUNT_SELECTED, false, true));
         
-        this.getRecord(PaymentRequest.kPaymentRequestFile).addListener(new SubCountHandler(this.getScreenRecord().getField(PaymentRequestScreenRecord.kRequestTotal), PaymentRequest.kAmount, false, true));
+        this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(PaymentRequestScreenRecord.REQUEST_TOTAL), PaymentRequest.AMOUNT, false, true));
         
-        this.getScreenRecord().getField(PaymentRequestScreenRecord.kManualChecks).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(PaymentRequest.kCheckNo), BooleanField.YES, false));
+        this.getScreenRecord().getField(PaymentRequestScreenRecord.MANUAL_CHECKS).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(PaymentRequest.CHECK_NO), BooleanField.YES, false));
     }
     /**
      * OpenHeaderRecord Method.
@@ -176,7 +176,7 @@ public class PaymentRequestGridScreen extends DetailGridScreen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-        BaseField fldBankAcctID = this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID);
+        BaseField fldBankAcctID = this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID);
         if (strCommand.equalsIgnoreCase(MenuConstants.PRINT))
         {
             strCommand = Utility.addURLParam(null, DBParams.SCREEN, PrintCheckJournal.class.getName());

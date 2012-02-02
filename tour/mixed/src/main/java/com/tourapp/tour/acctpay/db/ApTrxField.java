@@ -74,7 +74,7 @@ public class ApTrxField extends TrxField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), ApTrx.kCodeKey, ApTrx.kDescription, true);
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), ApTrx.CODE_KEY, ApTrx.DESCRIPTION, true);
     }
 
 }

@@ -77,8 +77,8 @@ public class TimeTrxGridScreen extends GridScreen
     public void addListeners()
     {
         super.addListeners();
-        FileListener readSecond = new DisplayReadHandler(TimeTrx.kTimeEmpNo, this.getRecord(Employee.kEmployeeFile), Employee.kID);
-        this.getRecord(TimeTrx.kTimeTrxFile).addListener(readSecond);
+        FileListener readSecond = new DisplayReadHandler(TimeTrx.TIME_EMP_NO, this.getRecord(Employee.EMPLOYEE_FILE), Employee.ID);
+        this.getRecord(TimeTrx.TIME_TRX_FILE).addListener(readSecond);
     }
     /**
      * SetupSFields Method.

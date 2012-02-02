@@ -76,7 +76,7 @@ public class BookingPaxSession extends Session
     public void addListeners()
     {
         super.addListeners();
-        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.kBookingPaxFile);
+        BookingPax recBookingPax = (BookingPax)this.getRecord(BookingPax.BOOKING_PAX_FILE);
         recBookingPax.addBookingBehaviors(this);
     }
 

@@ -66,7 +66,7 @@ public class CruiseClassSelect extends CruiseClassField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), CruiseClass.kDescriptionKey, CruiseClass.kDescription, true, true);
+        return this.setupTablePopup(itsLocation, targetScreen, converter, iDisplayFieldDesc, this.makeReferenceRecord(), CruiseClass.DESCRIPTION_KEY, CruiseClass.DESCRIPTION, true, true);
     }
 
 }

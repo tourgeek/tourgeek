@@ -8,6 +8,16 @@ import org.jbundle.model.db.*;
 
 public interface OTACodesModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String OTA_CODE_TABLE_ID = "OTACodeTableID";
+    public static final String VALUE = "Value";
+    public static final String NAME = "Name";
+    public static final String CREATION_DATE = "CreationDate";
+    public static final String DELETION_DATE = "DeletionDate";
+    public static final String PROPERTIES = "Properties";
+
+    public static final String OTA_CODE_TABLE_ID_KEY = "OTACodeTableID";
     public static final String OTA_CODES_SCREEN_CLASS = "com.tourapp.tour.product.base.ota.screen.OTACodesScreen";
     public static final String OTA_CODES_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.ota.screen.OTACodesGridScreen";
 

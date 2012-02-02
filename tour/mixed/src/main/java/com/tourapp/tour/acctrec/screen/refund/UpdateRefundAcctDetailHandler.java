@@ -63,7 +63,7 @@ public class UpdateRefundAcctDetailHandler extends UpdateArTrxAcctDetailHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.kArAccountID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategory.AR_ACCOUNT_ID);
     }
     /**
      * Get the Credit Account field.
@@ -72,13 +72,13 @@ public class UpdateRefundAcctDetailHandler extends UpdateArTrxAcctDetailHandler
     public ReferenceField getCrAccount()
     {
         boolean bTempControl = false;
-        Record recArControl = (Record)this.getOwner().getRecordOwner().getRecord(ArControl.kArControlFile);
+        Record recArControl = (Record)this.getOwner().getRecordOwner().getRecord(ArControl.AR_CONTROL_FILE);
         if (recArControl == null)
         {
             bTempControl = true;
             recArControl = new ArControl(this.getOwner().getRecordOwner());
         }
-        ReferenceField field = (ReferenceField)recArControl.getField(ArControl.kRefundSuspenseAccountID);
+        ReferenceField field = (ReferenceField)recArControl.getField(ArControl.REFUND_SUSPENSE_ACCOUNT_ID);
         if (bTempControl)
             recArControl.free();
         return field;

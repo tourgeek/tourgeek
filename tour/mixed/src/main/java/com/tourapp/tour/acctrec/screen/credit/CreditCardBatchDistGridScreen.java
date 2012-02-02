@@ -106,10 +106,10 @@ public class CreditCardBatchDistGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kID).addListener(new FieldReSelectHandler(this));
+        this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.ID).addListener(new FieldReSelectHandler(this));
         
-        this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), CreditCardBatchDist.kAmount, false, true));
-        this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.kEndBalance), this.getScreenRecord().getField(CashBatchScreenRecord.kChangeBalance), this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kNet), true));
+        this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CreditCardBatchDist.AMOUNT, false, true));
+        this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE).addListener(new CalcBalanceHandler(this.getScreenRecord().getField(CashBatchScreenRecord.END_BALANCE), this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.NET), true));
     }
     /**
      * SetupSFields Method.

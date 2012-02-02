@@ -100,20 +100,20 @@ public class ApJournal extends ReportScreen
     {
         super.addListeners();
         
-        this.getRecord(Vendor.kVendorFile).setKeyArea(Vendor.kCurrencysIDKey);
-        this.getRecord(Vendor.kVendorFile).addListener(new CompareFileFilter(this.getRecord(Vendor.kVendorFile).getField(Vendor.kID), this.getScreenRecord().getField(ApReportScreenRecord.kVendorID), "=", null, true));
-        this.getRecord(Vendor.kVendorFile).addListener(new CompareFileFilter(this.getRecord(Vendor.kVendorFile).getField(Vendor.kCurrencysID), this.getScreenRecord().getField(ApReportScreenRecord.kCurrencysID), "=", null, true));
+        this.getRecord(Vendor.VENDOR_FILE).setKeyArea(Vendor.CURRENCYS_ID_KEY);
+        this.getRecord(Vendor.VENDOR_FILE).addListener(new CompareFileFilter(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID), this.getScreenRecord().getField(ApReportScreenRecord.VENDOR_ID), "=", null, true));
+        this.getRecord(Vendor.VENDOR_FILE).addListener(new CompareFileFilter(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.CURRENCYS_ID), this.getScreenRecord().getField(ApReportScreenRecord.CURRENCYS_ID), "=", null, true));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubFileFilter(this.getRecord(Vendor.kVendorFile)));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new ApTrxFilter(ApTrx.kTrxStatusID, (ScreenRecord)this.getScreenRecord()));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubFileFilter(this.getRecord(Vendor.VENDOR_FILE)));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new ApTrxFilter(ApTrx.TRX_STATUS_ID, (ScreenRecord)this.getScreenRecord()));
         
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kTotalVendors), false, true));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_VENDORS), false, true));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kTotalEstimate), ApTrx.kDepartureEstimate, true, true, true));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kTotalInvoice), ApTrx.kInvoiceAmount, true, true, true));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kTotalBalance), ApTrx.kInvoiceBalance, true, true, true));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kTotalUSDBal), ApTrx.kInvoiceBalanceLocal, true, true, false));
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.kGrandUSDBal), ApTrx.kInvoiceBalanceLocal, false, false, false));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_ESTIMATE), ApTrx.DEPARTURE_ESTIMATE, true, true, true));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_INVOICE), ApTrx.INVOICE_AMOUNT, true, true, true));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_BALANCE), ApTrx.INVOICE_BALANCE, true, true, true));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true, false));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.GRAND_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, false, false, false));
     }
     /**
      * Add the toolbars that belong with this screen.

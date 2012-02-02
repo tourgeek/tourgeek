@@ -112,19 +112,19 @@ public class UpdateTrxGroupHandler extends FileListener
                 {
                     m_recTrxType.next();
                     m_recTrxType.edit();
-                    m_recTrxType.getField(TransactionType.kGroupCode).moveFieldToThis(recTrxGroup.getField(TrxGroup.kGroupCode));
-                    m_recTrxType.getField(TransactionType.kGroupDesc).moveFieldToThis(recTrxGroup.getField(TrxGroup.kGroupDesc));
+                    m_recTrxType.getField(TransactionType.GROUP_CODE).moveFieldToThis(recTrxGroup.getField(TrxGroup.GROUP_CODE));
+                    m_recTrxType.getField(TransactionType.GROUP_DESC).moveFieldToThis(recTrxGroup.getField(TrxGroup.GROUP_DESC));
         
-                    Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.kTrxDescID)).getReference();
+                    Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.TRX_DESC_ID)).getReference();
                     if (recTrxDesc != null)
                     {
-                        m_recTrxType.getField(TransactionType.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
-                        m_recTrxType.getField(TransactionType.kDescription).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescription));
-                        Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
+                        m_recTrxType.getField(TransactionType.DESC_CODE).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESC_CODE));
+                        m_recTrxType.getField(TransactionType.DESCRIPTION).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESCRIPTION));
+                        Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.TRX_SYSTEM_ID)).getReference();
                         if (recTrxSystem != null)
                         {
-                            m_recTrxType.getField(TransactionType.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
-                            m_recTrxType.getField(TransactionType.kSystemDesc).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemDesc));
+                            m_recTrxType.getField(TransactionType.SYSTEM_CODE).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_CODE));
+                            m_recTrxType.getField(TransactionType.SYSTEM_DESC).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_DESC));
                         }
                     }
         
@@ -143,12 +143,12 @@ public class UpdateTrxGroupHandler extends FileListener
             Record recTrxGroup = this.getOwner();
             if (m_recTrxDesc == null)
             {       // Only update the TrxDesc if you are updating the status record.
-                Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.kTrxDescID)).getReference();
-                recTrxGroup.getField(TrxGroup.kDescCode).moveFieldToThis(recTrxDesc.getField(TrxDesc.kDescCode));
+                Record recTrxDesc = ((ReferenceField)recTrxGroup.getField(TrxGroup.TRX_DESC_ID)).getReference();
+                recTrxGroup.getField(TrxGroup.DESC_CODE).moveFieldToThis(recTrxDesc.getField(TrxDesc.DESC_CODE));
         
-                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.kTrxSystemID)).getReference();
-                recTrxGroup.getField(TrxGroup.kTrxSystemID).moveFieldToThis(recTrxSystem.getField(TrxSystem.kID));
-                recTrxGroup.getField(TrxGroup.kSystemCode).moveFieldToThis(recTrxSystem.getField(TrxSystem.kSystemCode));
+                Record recTrxSystem = ((ReferenceField)recTrxDesc.getField(TrxDesc.TRX_SYSTEM_ID)).getReference();
+                recTrxGroup.getField(TrxGroup.TRX_SYSTEM_ID).moveFieldToThis(recTrxSystem.getField(TrxSystem.ID));
+                recTrxGroup.getField(TrxGroup.SYSTEM_CODE).moveFieldToThis(recTrxSystem.getField(TrxSystem.SYSTEM_CODE));
             }
         }
         return super.doRecordChange(field, iChangeType, bDisplayOption);

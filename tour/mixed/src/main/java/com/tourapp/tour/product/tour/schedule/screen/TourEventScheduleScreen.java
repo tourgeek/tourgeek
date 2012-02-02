@@ -103,28 +103,28 @@ public class TourEventScheduleScreen extends DetailScreen
     {
         super.addListeners();
         
-        this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).moveFieldToThis(this.getHeaderRecord().getField(TourClass.kID));
-        ((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID)).setReferenceRecord(this.getHeaderRecord());
-        this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).addListener(new ReadSecondaryHandler(((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID)).getReferenceRecord()));
-        if (this.getHeaderRecord().getField(TourClass.kID).isNull())
-            this.getScreenRecord().getField(TourClassScreenRecord.kTourClassID).moveFieldToThis(this.getRecord(BookingControl.kBookingControlFile).getField(BookingControl.kTourClassID));
+        this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).moveFieldToThis(this.getHeaderRecord().getField(TourClass.ID));
+        ((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID)).setReferenceRecord(this.getHeaderRecord());
+        this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).addListener(new ReadSecondaryHandler(((ReferenceField)this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID)).getReferenceRecord()));
+        if (this.getHeaderRecord().getField(TourClass.ID).isNull())
+            this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).moveFieldToThis(this.getRecord(BookingControl.BOOKING_CONTROL_FILE).getField(BookingControl.TOUR_CLASS_ID));
         
-        this.getMainRecord().getField(TourEventSchedule.kTourEventID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kBookingStatusID), Integer.toString(TourEvent.BOOKING_STATUS), false));
-        this.getMainRecord().getField(TourEventSchedule.kTourEventID).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kBookingStatusID), null, null));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_EVENT_ID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.BOOKING_STATUS_ID), Integer.toString(TourEvent.BOOKING_STATUS), false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_EVENT_ID).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.BOOKING_STATUS_ID), null, null));
         
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionTourEventID), TourActionTypeField.TRIGGER_EVENT, false));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kActionTourEventID), null, null));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionMessageProcessInfoID), TourActionTypeField.CREATE_DOCUMENT, false));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kActionMessageProcessInfoID), null, null));
-        this.getMainRecord().getField(TourEventSchedule.kActionTourEventID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionBookingStatusID), Integer.toString(TourEvent.BOOKING_STATUS), false));
-        this.getMainRecord().getField(TourEventSchedule.kActionTourEventID).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kActionBookingStatusID), null, null));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionMessageTransportID), TourActionTypeField.CREATE_DOCUMENT, false));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kActionMessageTransportID), null, null));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionDocumentName), TourActionTypeField.CREATE_DOCUMENT, false));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kActionDocumentName), null, null));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionProperties), TourActionTypeField.CREATE_DOCUMENT, false));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.kActionProperties), null, null));
-        this.getMainRecord().getField(TourEventSchedule.kTourActionType).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.kActionDocumentText), TourActionTypeField.CREATE_DOCUMENT, false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_TOUR_EVENT_ID), TourActionTypeField.TRIGGER_EVENT, false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_TOUR_EVENT_ID), null, null));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID), TourActionTypeField.CREATE_DOCUMENT, false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID), null, null));
+        this.getMainRecord().getField(TourEventSchedule.ACTION_TOUR_EVENT_ID).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_BOOKING_STATUS_ID), Integer.toString(TourEvent.BOOKING_STATUS), false));
+        this.getMainRecord().getField(TourEventSchedule.ACTION_TOUR_EVENT_ID).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_BOOKING_STATUS_ID), null, null));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_MESSAGE_TRANSPORT_ID), TourActionTypeField.CREATE_DOCUMENT, false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_MESSAGE_TRANSPORT_ID), null, null));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_DOCUMENT_NAME), TourActionTypeField.CREATE_DOCUMENT, false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_DOCUMENT_NAME), null, null));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_PROPERTIES), TourActionTypeField.CREATE_DOCUMENT, false));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new CopyStringHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_PROPERTIES), null, null));
+        this.getMainRecord().getField(TourEventSchedule.TOUR_ACTION_TYPE).addListener(new DisableOnFieldHandler(this.getMainRecord().getField(TourEventSchedule.ACTION_DOCUMENT_TEXT), TourActionTypeField.CREATE_DOCUMENT, false));
     }
     /**
      * If there is a header record, return it, otherwise, return the main record.
@@ -134,7 +134,7 @@ public class TourEventScheduleScreen extends DetailScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(TourClass.kTourClassFile);
+        return this.getRecord(TourClass.TOUR_CLASS_FILE);
     }
     /**
      * Set up all the screen fields.
@@ -184,7 +184,7 @@ public class TourEventScheduleScreen extends DetailScreen
                 RequestType recRequestType = new RequestType(this);
                 properties.put("RequestTypeID", Integer.toString(recRequestType.getIDFromCode(RequestType.MANUAL)));
                 recRequestType.free();
-                Record record = ((ReferenceField)this.getMainRecord().getField(TourEventSchedule.kActionMessageProcessInfoID)).getReferenceRecord();
+                Record record = ((ReferenceField)this.getMainRecord().getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID)).getReferenceRecord();
                 GridScreen screen = (GridScreen)record.makeScreen(null, parentScreen, ScreenConstants.SELECT_MODE, true, true, true, true, properties);
                 //x if (record.getScreen() == null)
                     screen.setSelectQuery(record, false); // Since this record isn't linked to the screen, manually link it.

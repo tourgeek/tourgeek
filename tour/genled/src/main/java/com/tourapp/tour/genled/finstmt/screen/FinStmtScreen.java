@@ -87,8 +87,8 @@ public class FinStmtScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(FinStmt.kFinStmtHeaderID).addListener(new ReadSecondaryHandler(this.getRecord(FinStmtHeader.kFinStmtHeaderFile)));
-        this.getHeaderRecord().getField(FinStmtHeader.kDescription).setEnabled(false);
+        this.getMainRecord().getField(FinStmt.FIN_STMT_HEADER_ID).addListener(new ReadSecondaryHandler(this.getRecord(FinStmtHeader.FIN_STMT_HEADER_FILE)));
+        this.getHeaderRecord().getField(FinStmtHeader.DESCRIPTION).setEnabled(false);
     }
     /**
      * Add button(s) to the toolbar.

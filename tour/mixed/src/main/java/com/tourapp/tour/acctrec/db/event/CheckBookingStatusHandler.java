@@ -82,14 +82,14 @@ public class CheckBookingStatusHandler extends FileListener
         { // Has to be 'after' since I use the same ArTrx file.
             if ((m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (m_recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
-                BookingStatus recBookingStatus = (BookingStatus)((ReferenceField)m_recBooking.getField(Booking.kBookingStatusID)).getReference();
-                if ((BookingStatus.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.kCode).toString()))
-                        || (BookingStatus.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.kCode).toString())))
+                BookingStatus recBookingStatus = (BookingStatus)((ReferenceField)m_recBooking.getField(Booking.BOOKING_STATUS_ID)).getReference();
+                if ((BookingStatus.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString()))
+                        || (BookingStatus.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString())))
                 {
-                    if (!this.getOwner().getField(ArTrx.kTrxStatusID).isNull())
-                        if (!ArTrx.INVOICE.equalsIgnoreCase(((TrxStatusField)this.getOwner().getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kDescCode).toString()))
-                            if (!ArTrx.INVOICE_MODIFICATION.equalsIgnoreCase(((TrxStatusField)this.getOwner().getField(ArTrx.kTrxStatusID)).getReference().getField(TrxStatus.kDescCode).toString()))
-                                if (this.getOwner().getField(ArTrx.kAmount).getValue() < 0)
+                    if (!this.getOwner().getField(ArTrx.TRX_STATUS_ID).isNull())
+                        if (!ArTrx.INVOICE.equalsIgnoreCase(((TrxStatusField)this.getOwner().getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.DESC_CODE).toString()))
+                            if (!ArTrx.INVOICE_MODIFICATION.equalsIgnoreCase(((TrxStatusField)this.getOwner().getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.DESC_CODE).toString()))
+                                if (this.getOwner().getField(ArTrx.AMOUNT).getValue() < 0)
                                 {
                                     if (m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT)
                                     {
@@ -101,9 +101,9 @@ public class CheckBookingStatusHandler extends FileListener
                                             e.printStackTrace();
                                         }
                                     }
-                                    int iAcceptedID = ((ReferenceField)m_recBooking.getField(Booking.kBookingStatusID)).getIDFromCode(BookingStatus.ACCEPTED_CODE);
+                                    int iAcceptedID = ((ReferenceField)m_recBooking.getField(Booking.BOOKING_STATUS_ID)).getIDFromCode(BookingStatus.ACCEPTED_CODE);
                                     if (iAcceptedID > 0)
-                                        m_recBooking.getField(Booking.kBookingStatusID).setValue(iAcceptedID);
+                                        m_recBooking.getField(Booking.BOOKING_STATUS_ID).setValue(iAcceptedID);
                                 }
                 }
             }

@@ -8,6 +8,13 @@ import org.jbundle.model.db.*;
 
 public interface ProductSearchCategoryModel extends Rec
 {
+
+    //public static final String ID = ID;
+    public static final String PRODUCT_SEARCH_TYPE_ID = "ProductSearchTypeID";
+    public static final String DESCRIPTION = "Description";
+    public static final String VALUE = "Value";
+
+    public static final String PRODUCT_SEARCH_TYPE_ID_KEY = "ProductSearchTypeID";
     public static final String PRODUCT_SEARCH_CATEGORY_SCREEN_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchCategoryScreen";
     public static final String PRODUCT_SEARCH_CATEGORY_GRID_SCREEN_CLAS = "com.tourapp.tour.product.base.search.screen.ProductSearchCategoryGridScreen";
 

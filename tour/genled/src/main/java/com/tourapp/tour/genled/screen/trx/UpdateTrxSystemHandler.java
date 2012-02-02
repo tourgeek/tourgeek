@@ -108,7 +108,7 @@ public class UpdateTrxSystemHandler extends FileListener
                 {
                     m_recTrxDesc.next();
                     m_recTrxDesc.edit();
-                    m_recTrxDesc.getField(TrxDesc.kDescCode).setModified(true); // Have to make sure the UpdateTrxDescHandler is called.
+                    m_recTrxDesc.getField(TrxDesc.DESC_CODE).setModified(true); // Have to make sure the UpdateTrxDescHandler is called.
                     if (iChangeType == DBConstants.UPDATE_TYPE)
                         m_recTrxDesc.set();
                     if (iChangeType == DBConstants.DELETE_TYPE)

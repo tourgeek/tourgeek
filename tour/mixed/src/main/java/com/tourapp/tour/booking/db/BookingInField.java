@@ -66,7 +66,7 @@ public class BookingInField extends BookingField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Booking.kIDKey, Booking.kGenericName, true);
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Booking.ID_KEY, Booking.GENERIC_NAME, true);
     }
 
 }

@@ -277,8 +277,8 @@ public class BookingAnswer extends BookingSub
         int iErrorCode = DBConstants.NORMAL_RETURN;
         TourHeaderOption recTourHeaderOption = new TourHeaderOption(this.findRecordOwner());
         try   {
-            recTourHeaderOption.setKeyArea(TourHeaderOption.kTourOrOptionKey);
-            recTourHeaderOption.addListener(new StringSubFileFilter(strTourOrOption, TourHeaderOption.kTourOrOption, fldTourOrOptionID.getData().toString(), TourHeaderOption.kTourOrOptionID, null, -1));
+            recTourHeaderOption.setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
+            recTourHeaderOption.addListener(new StringSubFileFilter(strTourOrOption, TourHeaderOption.TOUR_OR_OPTION, fldTourOrOptionID.getData().toString(), TourHeaderOption.TOUR_OR_OPTION_ID, null, null));
             recTourHeaderOption.close();
             while (recTourHeaderOption.hasNext())
             {
@@ -286,54 +286,54 @@ public class BookingAnswer extends BookingSub
                 BaseField fldPaxClass = null;
                 if (recBookingPax != null)
                     if ((recBookingPax.getEditMode() == DBConstants.EDIT_CURRENT) || (recBookingPax.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                        fldPaxClass = recBookingPax.getField(BookingPax.kPaxCategoryID);
+                        fldPaxClass = recBookingPax.getField(BookingPax.PAX_CATEGORY_ID);
                 if (recTourHeaderOption.isValid(recBooking, fldPaxClass, dateStart))
                 {
                     this.addNew();
-                    this.getField(BookingAnswer.kBookingID).moveFieldToThis(recBooking.getField(Booking.kID));
+                    this.getField(BookingAnswer.BOOKING_ID).moveFieldToThis(recBooking.getField(Booking.ID));
                     if (recBookingPax != null)
-                        this.getField(BookingAnswer.kBookingPaxID).moveFieldToThis(recBookingPax.getField(BookingPax.kID));
-                    if (this.getField(BookingAnswer.kBookingPaxID).isNull())
-                        this.getField(BookingAnswer.kBookingPaxID).setValue(0);
-                    this.getField(BookingAnswer.kModuleID).moveFieldToThis(fldTourHeaderID);
-                    this.getField(BookingAnswer.kTourHeaderOptionID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kID));
-                    if (recTourHeaderOption.getField(TourHeaderOption.kUseTourHeaderOptionID).getValue() != 0)
-                        this.getField(BookingAnswer.kTourHeaderOptionID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kUseTourHeaderOptionID));
-                    this.getField(BookingAnswer.kTourOrOption).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kTourOrOption));
-                    this.getField(BookingAnswer.kTourOrOptionID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kTourOrOptionID));
-                    this.getField(BookingAnswer.kSequence).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kSequence));
-                    ((DateTimeField)this.getField(BookingAnswer.kModuleStartDate)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-                    this.getField(BookingAnswer.kDescription).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kDescription));
-                    this.getField(BookingAnswer.kAlwaysResolve).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kAlwaysResolve));
-                    this.getField(BookingAnswer.kAskForAnswer).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.kAskForAnswer));
-                    if (this.getField(BookingAnswer.kAskForAnswer).getState())
+                        this.getField(BookingAnswer.BOOKING_PAX_ID).moveFieldToThis(recBookingPax.getField(BookingPax.ID));
+                    if (this.getField(BookingAnswer.BOOKING_PAX_ID).isNull())
+                        this.getField(BookingAnswer.BOOKING_PAX_ID).setValue(0);
+                    this.getField(BookingAnswer.MODULE_ID).moveFieldToThis(fldTourHeaderID);
+                    this.getField(BookingAnswer.TOUR_HEADER_OPTION_ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.ID));
+                    if (recTourHeaderOption.getField(TourHeaderOption.USE_TOUR_HEADER_OPTION_ID).getValue() != 0)
+                        this.getField(BookingAnswer.TOUR_HEADER_OPTION_ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.USE_TOUR_HEADER_OPTION_ID));
+                    this.getField(BookingAnswer.TOUR_OR_OPTION).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION));
+                    this.getField(BookingAnswer.TOUR_OR_OPTION_ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID));
+                    this.getField(BookingAnswer.SEQUENCE).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.SEQUENCE));
+                    ((DateTimeField)this.getField(BookingAnswer.MODULE_START_DATE)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                    this.getField(BookingAnswer.DESCRIPTION).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.DESCRIPTION));
+                    this.getField(BookingAnswer.ALWAYS_RESOLVE).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.ALWAYS_RESOLVE));
+                    this.getField(BookingAnswer.ASK_FOR_ANSWER).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.ASK_FOR_ANSWER));
+                    if (this.getField(BookingAnswer.ASK_FOR_ANSWER).getState())
                     {   // If there are answers to be resolved, let the booking know
                         if (fldAskForAnswer == null)
-                            fldAskForAnswer = recBooking.getField(Booking.kAskForAnswer);
+                            fldAskForAnswer = recBooking.getField(Booking.ASK_FOR_ANSWER);
                         fldAskForAnswer.setState(true);
-                        if (this.getField(BookingAnswer.kAlwaysResolve).getState())
-                                recBooking.getField(Booking.kAlwaysResolve).setState(true);
+                        if (this.getField(BookingAnswer.ALWAYS_RESOLVE).getState())
+                                recBooking.getField(Booking.ALWAYS_RESOLVE).setState(true);
                     }
-                    if (recTourHeaderOption.getField(TourHeaderOption.kDetailOptionCount).getValue() > 0)
-                        this.getField(BookingAnswer.kDetailOptionExists).setState(true);
-                    if (recTourHeaderOption.getField(TourHeaderOption.kDetailPriceCount).getValue() > 0)
-                        this.getField(BookingAnswer.kDetailPriceExists).setState(true);
-                    if (recTourHeaderOption.getField(TourHeaderOption.kDetailAirHeaderCount).getValue() > 0)
-                        this.getField(BookingAnswer.kDetailAirHeaderExists).setState(true);
-                    if (recTourHeaderOption.getField(TourHeaderOption.kDetailTourDetailCount).getValue() > 0)
-                        this.getField(BookingAnswer.kTourDetailExists).setState(true);
+                    if (recTourHeaderOption.getField(TourHeaderOption.DETAIL_OPTION_COUNT).getValue() > 0)
+                        this.getField(BookingAnswer.DETAIL_OPTION_EXISTS).setState(true);
+                    if (recTourHeaderOption.getField(TourHeaderOption.DETAIL_PRICE_COUNT).getValue() > 0)
+                        this.getField(BookingAnswer.DETAIL_PRICE_EXISTS).setState(true);
+                    if (recTourHeaderOption.getField(TourHeaderOption.DETAIL_AIR_HEADER_COUNT).getValue() > 0)
+                        this.getField(BookingAnswer.DETAIL_AIR_HEADER_EXISTS).setState(true);
+                    if (recTourHeaderOption.getField(TourHeaderOption.DETAIL_TOUR_DETAIL_COUNT).getValue() > 0)
+                        this.getField(BookingAnswer.TOUR_DETAIL_EXISTS).setState(true);
                     boolean bSetSelected = bSelect;
-                    if (this.getField(BookingAnswer.kAskForAnswer).getState() == true)
+                    if (this.getField(BookingAnswer.ASK_FOR_ANSWER).getState() == true)
                         bSetSelected = false; // Can't add this until user selects it.
-                    this.getField(BookingAnswer.kSelected).setState(bSetSelected);
-                    this.getField(BookingAnswer.kDetailAdded).setState(false);
+                    this.getField(BookingAnswer.SELECTED).setState(bSetSelected);
+                    this.getField(BookingAnswer.DETAIL_ADDED).setState(false);
                     try {
                         this.add();
                     } catch (DBException ex)    {
                         if (ex.getErrorCode() != DBConstants.DUPLICATE_KEY)   // If it was there already, use it.
                             throw ex;   // Else do the error.
                         int iOldOrder = this.getDefaultOrder();
-                        this.setKeyArea(BookingAnswer.kBookingIDKey);
+                        this.setKeyArea(BookingAnswer.BOOKING_ID_KEY);
                         if (this.seek(DBConstants.EQUALS))
                         {   // Always - Use the old answer, but in this order (Note: Expensive, but rarely used)
                             VectorBuffer buffer = new VectorBuffer(null);
@@ -346,9 +346,9 @@ public class BookingAnswer extends BookingSub
                         }
                         this.setKeyArea(iOldOrder);
                     }
-                    if (recTourHeaderOption.getField(TourHeaderOption.kDetailOptionCount).getValue() > 0)
+                    if (recTourHeaderOption.getField(TourHeaderOption.DETAIL_OPTION_COUNT).getValue() > 0)
                     {
-                        iErrorCode = this.setupAnswerDetail(TourHeaderOption.OPTION, recTourHeaderOption.getField(TourHeaderOption.kID), fldTourHeaderID, recBooking, recBookingPax, dateStart, fldAskForAnswer, bSetSelected);
+                        iErrorCode = this.setupAnswerDetail(TourHeaderOption.OPTION, recTourHeaderOption.getField(TourHeaderOption.ID), fldTourHeaderID, recBooking, recBookingPax, dateStart, fldAskForAnswer, bSetSelected);
                         if (iErrorCode != DBConstants.NORMAL_RETURN)
                             return iErrorCode;
                     }
@@ -367,12 +367,12 @@ public class BookingAnswer extends BookingSub
     public int addAnswerDetail(Booking recBooking, Tour recTour, BookingPax recBookingPax, BaseField fldTourModuleID, Date dateStart) throws DBException
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
-        if (this.getField(BookingAnswer.kSelected).getState() == false)
+        if (this.getField(BookingAnswer.SELECTED).getState() == false)
             return DBConstants.NORMAL_RETURN;   // Don't add if not selected for add.
-        if (this.getField(BookingAnswer.kDetailAdded).getState() == true)
+        if (this.getField(BookingAnswer.DETAIL_ADDED).getState() == true)
             return DBConstants.NORMAL_RETURN;   // already added.
         this.edit();
-        if (this.getField(BookingAnswer.kDetailAirHeaderExists).getState() == true)
+        if (this.getField(BookingAnswer.DETAIL_AIR_HEADER_EXISTS).getState() == true)
         {
             if (m_recBookingAirHeader == null)
             {
@@ -380,11 +380,11 @@ public class BookingAnswer extends BookingSub
                 m_recBookingAirHeader.addDetailBehaviors(recBooking, recTour);
                 m_recTourHeaderAirHeader = new TourHeaderAirHeader(this.findRecordOwner());
             }
-            iErrorCode = m_recBookingAirHeader.setupAllDetail(m_recTourHeaderAirHeader, recBooking, recTour, recBookingPax.getField(BookingPax.kID), this.getField(BookingAnswer.kTourHeaderOptionID), fldTourModuleID, dateStart);
+            iErrorCode = m_recBookingAirHeader.setupAllDetail(m_recTourHeaderAirHeader, recBooking, recTour, recBookingPax.getField(BookingPax.ID), this.getField(BookingAnswer.TOUR_HEADER_OPTION_ID), fldTourModuleID, dateStart);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
                 return iErrorCode;
         }
-        if (this.getField(BookingAnswer.kDetailPriceExists).getState() == true)
+        if (this.getField(BookingAnswer.DETAIL_PRICE_EXISTS).getState() == true)
         {
             int iTourPricingType = recBooking.getTourPricingType(recTour, fldTourModuleID, dateStart);
             if ((iTourPricingType & PricingType.OPTION_PRICING) != 0)
@@ -395,12 +395,12 @@ public class BookingAnswer extends BookingSub
                     m_recBookingLine.addDetailBehaviors(recBooking, recTour);
                     m_recTourHeaderPricing = new TourHeaderLine(this.findRecordOwner());
                 }
-                iErrorCode = m_recBookingLine.setupAllDetail(m_recTourHeaderPricing, recBooking, recTour, recBookingPax.getField(BookingPax.kID), this.getField(BookingAnswer.kTourHeaderOptionID), fldTourModuleID, dateStart);
+                iErrorCode = m_recBookingLine.setupAllDetail(m_recTourHeaderPricing, recBooking, recTour, recBookingPax.getField(BookingPax.ID), this.getField(BookingAnswer.TOUR_HEADER_OPTION_ID), fldTourModuleID, dateStart);
                 if (iErrorCode != DBConstants.NORMAL_RETURN)
                     return iErrorCode;
             }
         }
-        if (this.getField(BookingAnswer.kTourDetailExists).getState() == true)
+        if (this.getField(BookingAnswer.TOUR_DETAIL_EXISTS).getState() == true)
         {
             if (m_recBookingDetail == null)
             {
@@ -408,12 +408,12 @@ public class BookingAnswer extends BookingSub
                 m_recBookingDetail.addDetailBehaviors(recBooking, recTour);
                 m_recTourHeaderDetail = new TourHeaderDetail(this.findRecordOwner());
             }
-            iErrorCode = m_recBookingDetail.setupAllDetail(m_recTourHeaderDetail, recBooking, recTour, recBookingPax.getField(BookingPax.kID), this.getField(BookingAnswer.kTourHeaderOptionID), fldTourModuleID, dateStart);
+            iErrorCode = m_recBookingDetail.setupAllDetail(m_recTourHeaderDetail, recBooking, recTour, recBookingPax.getField(BookingPax.ID), this.getField(BookingAnswer.TOUR_HEADER_OPTION_ID), fldTourModuleID, dateStart);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
                 return iErrorCode;
         }
-        this.getField(BookingAnswer.kSelected).setState(true);  // Being careful.
-        this.getField(BookingAnswer.kDetailAdded).setState(true);
+        this.getField(BookingAnswer.SELECTED).setState(true);  // Being careful.
+        this.getField(BookingAnswer.DETAIL_ADDED).setState(true);
         this.set();
         return DBConstants.NORMAL_RETURN;
     }

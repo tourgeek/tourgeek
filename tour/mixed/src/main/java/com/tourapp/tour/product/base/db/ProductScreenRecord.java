@@ -39,29 +39,53 @@ public class ProductScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PRODUCT_ID = "ProductID";
     public static final int kProductID = kScreenRecordLastField + 1;
+    public static final String START_DATE = "StartDate";
     public static final int kStartDate = kProductID + 1;
+    public static final String END_DATE = "EndDate";
     public static final int kEndDate = kStartDate + 1;
+    public static final String DESCRIPTION = "Description";
     public static final int kDescription = kEndDate + 1;
+    public static final String CITY_ID = "CityID";
     public static final int kCityID = kDescription + 1;
+    public static final String TO_CITY_ID = "ToCityID";
     public static final int kToCityID = kCityID + 1;
+    public static final String CONTINENT_ID = "ContinentID";
     public static final int kContinentID = kToCityID + 1;
+    public static final String REGION_ID = "RegionID";
     public static final int kRegionID = kContinentID + 1;
+    public static final String COUNTRY_ID = "CountryID";
     public static final int kCountryID = kRegionID + 1;
+    public static final String STATE_ID = "StateID";
     public static final int kStateID = kCountryID + 1;
+    public static final String VENDOR_ID = "VendorID";
     public static final int kVendorID = kStateID + 1;
+    public static final String RATE_ID = "RateID";
     public static final int kRateID = kVendorID + 1;
+    public static final String CLASS_ID = "ClassID";
     public static final int kClassID = kRateID + 1;
+    public static final String DETAIL_DATE = "DetailDate";
     public static final int kDetailDate = kClassID + 1;
+    public static final String PAX = "Pax";
     public static final int kPax = kDetailDate + 1;
+    public static final String LAST_CHANGED = "LastChanged";
     public static final int kLastChanged = kPax + 1;
+    public static final String REMOTE_QUERY_ENABLED = "RemoteQueryEnabled";
     public static final int kRemoteQueryEnabled = kLastChanged + 1;
+    public static final String BLOCKED = "Blocked";
     public static final int kBlocked = kRemoteQueryEnabled + 1;
+    public static final String OVERSELL = "Oversell";
     public static final int kOversell = kBlocked + 1;
+    public static final String CLOSED = "Closed";
     public static final int kClosed = kOversell + 1;
+    public static final String DELETE = "Delete";
     public static final int kDelete = kClosed + 1;
+    public static final String READ_ONLY = "ReadOnly";
     public static final int kReadOnly = kDelete + 1;
+    public static final String PRODUCT_SEARCH_TYPE_ID = "ProductSearchTypeID";
     public static final int kProductSearchTypeID = kReadOnly + 1;
+    public static final String PRODUCT_TYPE_ID = "ProductTypeID";
     public static final int kProductTypeID = kProductSearchTypeID + 1;
     public static final int kProductScreenRecordLastField = kProductTypeID;
     public static final int kProductScreenRecordFields = kProductTypeID - DBConstants.MAIN_FIELD + 1;
@@ -158,9 +182,9 @@ public class ProductScreenRecord extends ScreenRecord
     public void addListeners()
     {
         super.addListeners();
-        this.getField(ProductScreenRecord.kDescription).addListener(new FieldToUpperHandler(null));
-        this.getField(ProductScreenRecord.kDescription).addListener(new CheckForTheHandler(null));
-        this.addListener(new DateChangedHandler(ProductScreenRecord.kLastChanged));
+        this.getField(ProductScreenRecord.DESCRIPTION).addListener(new FieldToUpperHandler(null));
+        this.getField(ProductScreenRecord.DESCRIPTION).addListener(new CheckForTheHandler(null));
+        this.addListener(new DateChangedHandler(ProductScreenRecord.LAST_CHANGED));
     }
     /**
      * Set up the properties for a price lookup.
@@ -171,10 +195,10 @@ public class ProductScreenRecord extends ScreenRecord
         ProductMessageData productMessageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData passengerMessageData = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         
-        this.addMapProperty(productMessageData, BookingDetail.DETAIL_DATE, this, ProductScreenRecord.kDetailDate);
-        this.addMapProperty(productMessageData, BookingDetail.PRODUCT_ID, recProduct, Product.kID);
-        this.addMapProperty(passengerMessageData, Product.PAX_PARAM, this, ProductScreenRecord.kPax);
-        if (this.getField(ProductScreenRecord.kPax).getValue() == 2)  // Default
+        this.addMapProperty(productMessageData, BookingDetail.DETAIL_DATE, this, ProductScreenRecord.DETAIL_DATE);
+        this.addMapProperty(productMessageData, BookingDetail.PRODUCT_ID, recProduct, Product.ID);
+        this.addMapProperty(passengerMessageData, Product.PAX_PARAM, this, ProductScreenRecord.PAX);
+        if (this.getField(ProductScreenRecord.PAX).getValue() == 2)  // Default
             passengerMessageData.put(Product.ROOM_TYPE_PARAM + Integer.toString(PaxCategory.DOUBLE_ID), new Short((short)2));   // Two pax in a double room
         
         try   {
@@ -186,9 +210,9 @@ public class ProductScreenRecord extends ScreenRecord
         productMessageData.put(Land.SIC_PMC_PARAM, LandClass.PRIVATE_VEHICLE_CODE);
         // Others
         productRequest.put(DBParams.RECORD, recProduct.getTableNames(false));
-        productRequest.put(DBParams.TIMESTAMP, Double.toString(this.getField(ProductScreenRecord.kLastChanged).getValue()));
-        this.addMapProperty(productMessageData, BookingDetail.RATE_ID, this, ProductScreenRecord.kRateID);
-        this.addMapProperty(productMessageData, BookingDetail.CLASS_ID, this, ProductScreenRecord.kClassID);
+        productRequest.put(DBParams.TIMESTAMP, Double.toString(this.getField(ProductScreenRecord.LAST_CHANGED).getValue()));
+        this.addMapProperty(productMessageData, BookingDetail.RATE_ID, this, ProductScreenRecord.RATE_ID);
+        this.addMapProperty(productMessageData, BookingDetail.CLASS_ID, this, ProductScreenRecord.CLASS_ID);
     }
     /**
      * Is this the correct message for this screen.
@@ -198,7 +222,7 @@ public class ProductScreenRecord extends ScreenRecord
     public boolean checkPriceProperties(BaseMessage map, Record recProduct)
     {
         Object objData = map.get(DBParams.TIMESTAMP);
-        Object objLast = Double.toString(this.getField(ProductScreenRecord.kLastChanged).getValue());
+        Object objLast = Double.toString(this.getField(ProductScreenRecord.LAST_CHANGED).getValue());
         if (objData != null)
             if (objData.equals(objLast))
                 return true;    // Same
@@ -207,7 +231,7 @@ public class ProductScreenRecord extends ScreenRecord
     /**
      * AddMapProperty Method.
      */
-    public void addMapProperty(MessageRecordDesc map, String strKey, Record record, int iFieldSeq)
+    public void addMapProperty(MessageRecordDesc map, String strKey, Record record, String iFieldSeq)
     {
         if (record.getField(iFieldSeq).getData() != null)
             map.put(strKey, record.getField(iFieldSeq).getData());

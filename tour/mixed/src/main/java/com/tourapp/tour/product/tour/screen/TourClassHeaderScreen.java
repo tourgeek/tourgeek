@@ -65,7 +65,7 @@ public class TourClassHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(TourClassScreenRecord.kTourClassScreenRecordFile).getField(TourClassScreenRecord.kTourClassID).setEnabled(true);
+        this.getScreenRecord().getField(TourClassScreenRecord.TOUR_CLASS_ID).setEnabled(true);
     }
     /**
      * SetupSFields Method.

@@ -8,7 +8,11 @@ import org.jbundle.model.db.*;
 
 public interface BundleModel extends Rec
 {
+
+    //public static final String ID = ID;
     public static final String DESCRIPTION = "Description";
+
+    public static final String DESCRIPTION_KEY = "Description";
     public static final String BUNDLE_SCREEN_CLASS = "com.tourapp.tour.request.screen.bundle.BundleScreen";
     public static final String BUNDLE_GRID_SCREEN_CLASS = "com.tourapp.tour.request.screen.bundle.BundleGridScreen";
 

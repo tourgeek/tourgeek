@@ -80,16 +80,16 @@ public class TourEntryField extends TourField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record recTour = this.getReferenceRecord();
-        BaseField fldDepartureDate = recTour.getField(Tour.kDepartureDate);
-        //+BaseField fldTourCode = recTour.getField(Tour.kTourCode);
-        BaseField fldTourDesc = recTour.getField(Tour.kDescription);
-        //?fldAcctNo.addListener(new MainReadOnlyHandler(Account.kAccountNoKey));
+        BaseField fldDepartureDate = recTour.getField(Tour.DEPARTURE_DATE);
+        //+BaseField fldTourCode = recTour.getField(Tour.TOUR_CODE);
+        BaseField fldTourDesc = recTour.getField(Tour.DESCRIPTION);
+        //?fldAcctNo.addListener(new MainReadOnlyHandler(Account.ACCOUNT_NO_KEY));
         Converter conv = new FieldDescConverter(fldDepartureDate, this);    // Use the description for this field
         conv.setupDefaultView(itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
         //fldTourCode.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
         
         conv = new FieldLengthConverter(fldTourDesc, 30);
-        //return this.setupTableLookup(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, recTour, -1, Tour.kDescription, false, false);
+        //return this.setupTableLookup(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, recTour, -1, Tour.DESCRIPTION, false, false);
         this.addListener(new ReadSecondaryHandler(recTour, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false));
         ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
         sfDesc.setEnabled(false);

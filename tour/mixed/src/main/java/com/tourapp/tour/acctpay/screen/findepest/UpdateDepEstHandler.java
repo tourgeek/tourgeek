@@ -67,7 +67,7 @@ public class UpdateDepEstHandler extends UpdateApTrxHandler
      */
     public BaseField getTrxDate()
     {
-        return this.getOwner().getField(ApTrx.kDepartureDate);
+        return this.getOwner().getField(ApTrx.DEPARTURE_DATE);
     }
     /**
      * Get the Debit Account field.
@@ -77,8 +77,8 @@ public class UpdateDepEstHandler extends UpdateApTrxHandler
     {
         Record recProductCat = this.getProductCategory();
         if (recProductCat != null)
-            return (ReferenceField)recProductCat.getField(ProductCategory.kLandAccountID);    // Cost of tours
-        return (ReferenceField)this.getApControl().getField(ApControl.kCostAccountID);    // Rarely
+            return (ReferenceField)recProductCat.getField(ProductCategory.LAND_ACCOUNT_ID);    // Cost of tours
+        return (ReferenceField)this.getApControl().getField(ApControl.COST_ACCOUNT_ID);    // Rarely
     }
     /**
      * Get the Credit Account field.
@@ -88,7 +88,7 @@ public class UpdateDepEstHandler extends UpdateApTrxHandler
     {
         Record recProductCat = this.getProductCategory();
         if (recProductCat != null)
-            return (ReferenceField)recProductCat.getField(ProductCategory.kUninvAccountID);    // Uninvoiced est cost of tours
+            return (ReferenceField)recProductCat.getField(ProductCategory.UNINV_ACCOUNT_ID);    // Uninvoiced est cost of tours
         return null;    // Never?
     }
     /**
@@ -98,7 +98,7 @@ public class UpdateDepEstHandler extends UpdateApTrxHandler
      */
     public double getTrxAmount(BaseField fldTypicalBalance)
     {
-        return this.getOwner().getField(ApTrx.kDepartureEstimateLocal).getValue();
+        return this.getOwner().getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).getValue();
     }
 
 }

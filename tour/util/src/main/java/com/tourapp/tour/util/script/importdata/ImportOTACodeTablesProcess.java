@@ -81,7 +81,7 @@ public class ImportOTACodeTablesProcess extends BaseProcess
     {
         try {
             OTACodeTable recOTACodeTable = (OTACodeTable)this.getMainRecord();
-            OTACodes recOTACodes = (OTACodes)this.getRecord(OTACodes.kOTACodesFile);
+            OTACodes recOTACodes = (OTACodes)this.getRecord(OTACodes.OTA_CODES_FILE);
             
             String strFilePath = this.getProperty("filepath");
             String NONE = "none";
@@ -114,13 +114,13 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                     }
                 
                 recOTACodeTable.addNew();
-                recOTACodeTable.getField(OTACodeTable.kName).setString(strName);
-                recOTACodeTable.getField(OTACodeTable.kNameCode).setString(strNameCode);
+                recOTACodeTable.getField(OTACodeTable.NAME).setString(strName);
+                recOTACodeTable.getField(OTACodeTable.NAME_CODE).setString(strNameCode);
                 if (calCreate != null)
-                    ((DateField)recOTACodeTable.getField(OTACodeTable.kCreationDate)).setDate(calCreate.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
+                    ((DateField)recOTACodeTable.getField(OTACodeTable.CREATION_DATE)).setDate(calCreate.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
                 if (calDeletion != null)
-                    ((DateField)recOTACodeTable.getField(OTACodeTable.kDeletionDate)).setDate(calDeletion.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
-                ((PropertiesField)recOTACodeTable.getField(OTACodeTable.kProperties)).setProperties(properties);
+                    ((DateField)recOTACodeTable.getField(OTACodeTable.DELETION_DATE)).setDate(calDeletion.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
+                ((PropertiesField)recOTACodeTable.getField(OTACodeTable.PROPERTIES)).setProperties(properties);
                 recOTACodeTable.add();
                 Object bookmark = recOTACodeTable.getLastModified(DBConstants.BOOKMARK_HANDLE);
                 
@@ -156,14 +156,14 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                     }
                 
                     recOTACodes.addNew();
-                    recOTACodes.getField(OTACodes.kOTACodeTableID).setString(bookmark.toString());
-                    recOTACodes.getField(OTACodes.kValue).setString(strValue2);
-                    recOTACodes.getField(OTACodes.kName).setString(strNameDefault);
+                    recOTACodes.getField(OTACodes.OTA_CODE_TABLE_ID).setString(bookmark.toString());
+                    recOTACodes.getField(OTACodes.VALUE).setString(strValue2);
+                    recOTACodes.getField(OTACodes.NAME).setString(strNameDefault);
                     if (calCreate2 != null)
-                        ((DateField)recOTACodes.getField(OTACodes.kCreationDate)).setDate(calCreate2.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
+                        ((DateField)recOTACodes.getField(OTACodes.CREATION_DATE)).setDate(calCreate2.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
                     if (calDeletion2 != null)
-                        ((DateField)recOTACodes.getField(OTACodes.kDeletionDate)).setDate(calDeletion2.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
-                    ((PropertiesField)recOTACodes.getField(OTACodes.kProperties)).setProperties(properties);
+                        ((DateField)recOTACodes.getField(OTACodes.DELETION_DATE)).setDate(calDeletion2.toDateMidnight().toDate(), true, DBConstants.SCREEN_MOVE);
+                    ((PropertiesField)recOTACodes.getField(OTACodes.PROPERTIES)).setProperties(properties);
                     recOTACodes.add();
         
                 }

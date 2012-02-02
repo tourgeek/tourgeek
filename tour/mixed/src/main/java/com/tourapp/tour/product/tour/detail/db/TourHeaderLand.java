@@ -371,7 +371,7 @@ public class TourHeaderLand extends TourHeaderDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(TourHeaderDetail.kProductTypeID, ProductType.LAND_ID));
+        this.addListener(new SharedFileHandler(TourHeaderDetail.PRODUCT_TYPE_ID, ProductType.LAND_ID));
     }
 
 }

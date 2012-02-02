@@ -94,16 +94,16 @@ public class CrDrGridScreen extends BookingArTrxGridScreen
         super.addListeners();
         
         this.setEditing(false);     // Can't change current rows
-        this.getMainRecord().getField(ArTrx.kTrxDate).setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kAmount).setEnabled(true);
-        this.getMainRecord().getField(ArTrx.kComments).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.TRX_DATE).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.AMOUNT).setEnabled(true);
+        this.getMainRecord().getField(ArTrx.COMMENTS).setEnabled(true);
         this.setAppending(true);    // CAN append
         this.getMainRecord().setOpenMode(DBConstants.OPEN_APPEND_ONLY); // This makes it possible
         
         this.getMainRecord().getListener(UpdateArTrxAcctDetailHandler.class, true).setEnabledListener(false);    // Since I will be doing the updating
-        this.getMainRecord().addListener(new UpdateCrDrAcctDetailHandler(this.getRecord(Booking.kBookingFile)));
+        this.getMainRecord().addListener(new UpdateCrDrAcctDetailHandler(this.getRecord(Booking.BOOKING_FILE)));
         
-        this.getMainRecord().getField(ArTrx.kAmount).addListener(new SetCrDrTypeHandler(null));
+        this.getMainRecord().getField(ArTrx.AMOUNT).addListener(new SetCrDrTypeHandler(null));
     }
     /**
      * Process the command.

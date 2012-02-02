@@ -74,15 +74,15 @@ public class TourChangeHandler extends FileListener
         boolean bBookingOkay = false;
         if ((m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT) ||(m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT))
         {
-            if (m_recBooking.getField(Booking.kTourID).equals(this.getOwner().getField(Tour.kID)))
+            if (m_recBooking.getField(Booking.TOUR_ID).equals(this.getOwner().getField(Tour.ID)))
                 bBookingOkay = true;
         }
         if (!bBookingOkay)
         {   // Sync booking with tour
-            Record recTourHeader = ((ReferenceField)this.getOwner().getField(Tour.kTourHeaderID)).getReference();
+            Record recTourHeader = ((ReferenceField)this.getOwner().getField(Tour.TOUR_HEADER_ID)).getReference();
             if (recTourHeader != null)
             {   // Always
-                if (recTourHeader.getField(TourHeader.kTourSeries).getState() == true)
+                if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() == true)
                 {   // Not series, sync the booking with the tour
                     //+ Read the booking for this tour
                 }

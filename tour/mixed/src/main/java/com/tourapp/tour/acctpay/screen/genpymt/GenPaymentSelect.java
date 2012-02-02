@@ -102,20 +102,20 @@ public class GenPaymentSelect extends ReportScreen
     public void addListeners()
     {
         super.addListeners();
-        Record recApControl = this.getRecord(ApControl.kApControlFile);
-        this.getScreenRecord().getField(GenPaymentScreenRecord.kPaymentCodeID).addListener(new InitFieldHandler(recApControl.getField(ApControl.kPaymentCodeID)));
-        BaseField fldBankAcctID = this.getScreenRecord().getField(GenPaymentScreenRecord.kBankAcctID);
+        Record recApControl = this.getRecord(ApControl.AP_CONTROL_FILE);
+        this.getScreenRecord().getField(GenPaymentScreenRecord.PAYMENT_CODE_ID).addListener(new InitFieldHandler(recApControl.getField(ApControl.PAYMENT_CODE_ID)));
+        BaseField fldBankAcctID = this.getScreenRecord().getField(GenPaymentScreenRecord.BANK_ACCT_ID);
         if (this.getProperty(fldBankAcctID.getFieldName()) != null)
             fldBankAcctID.setString(this.getProperty(fldBankAcctID.getFieldName()), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         else
-            fldBankAcctID.addListener(new InitFieldHandler(recApControl.getField(ApControl.kApBankAcctID)));
+            fldBankAcctID.addListener(new InitFieldHandler(recApControl.getField(ApControl.AP_BANK_ACCT_ID)));
         
         Record recVendor = this.getMainRecord();
-        recVendor.setKeyArea(Vendor.kNameSortKey);
-        recVendor.addListener(new CompareFileFilter(recVendor.getField(Vendor.kPaymentCodeID), this.getScreenRecord().getField(GenPaymentScreenRecord.kPaymentCodeID), "="));
-        recVendor.addListener(new CompareFileFilter(recVendor.getField(Vendor.kCurrencysID), (((ReferenceField)((ReferenceField)this.getScreenRecord().getField(GenPaymentScreenRecord.kBankAcctID)).getReference().getField(BankAcct.kCurrencyID))), "="));
+        recVendor.setKeyArea(Vendor.NAME_SORT_KEY);
+        recVendor.addListener(new CompareFileFilter(recVendor.getField(Vendor.PAYMENT_CODE_ID), this.getScreenRecord().getField(GenPaymentScreenRecord.PAYMENT_CODE_ID), "="));
+        recVendor.addListener(new CompareFileFilter(recVendor.getField(Vendor.CURRENCYS_ID), (((ReferenceField)((ReferenceField)this.getScreenRecord().getField(GenPaymentScreenRecord.BANK_ACCT_ID)).getReference().getField(BankAcct.CURRENCY_ID))), "="));
         
-        Record recApTrx = this.getRecord(ApTrx.kApTrxFile);
+        Record recApTrx = this.getRecord(ApTrx.AP_TRX_FILE);
         recApTrx.addListener(new SubFileFilter(recVendor));
     }
     /**
@@ -188,10 +188,10 @@ public class GenPaymentSelect extends ReportScreen
     public boolean genSelect()
     {
         Record recVendor = this.getMainRecord();
-        Record recApTrx = this.getRecord(ApTrx.kApTrxFile);
-        Record recPaymentRequest = this.getRecord(PaymentRequest.kPaymentRequestFile);
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        int iPaymentTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.PAYMENT);
+        Record recApTrx = this.getRecord(ApTrx.AP_TRX_FILE);
+        Record recPaymentRequest = this.getRecord(PaymentRequest.PAYMENT_REQUEST_FILE);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        int iPaymentTrxStatus = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.PAYMENT);
         try   {
             recVendor.close();
             while (recVendor.hasNext())
@@ -202,31 +202,31 @@ public class GenPaymentSelect extends ReportScreen
                 while (recApTrx.hasNext())
                 {
                     recApTrx.next();
-                    double dBalance = recApTrx.getField(ApTrx.kInvoiceBalance).getValue();
-                    double dAmountSelected = recApTrx.getField(ApTrx.kAmountSelected).getValue();
-                    if (this.getScreenRecord().getField(GenPaymentScreenRecord.kUseCurrentSelection).getState() == false)
+                    double dBalance = recApTrx.getField(ApTrx.INVOICE_BALANCE).getValue();
+                    double dAmountSelected = recApTrx.getField(ApTrx.AMOUNT_SELECTED).getValue();
+                    if (this.getScreenRecord().getField(GenPaymentScreenRecord.USE_CURRENT_SELECTION).getState() == false)
                         if (dBalance != dAmountSelected)
                     {
                         recApTrx.edit();
-                        recApTrx.getField(ApTrx.kAmountSelected).setValue(dBalance);
+                        recApTrx.getField(ApTrx.AMOUNT_SELECTED).setValue(dBalance);
                         recApTrx.set();
                         dAmountSelected = dBalance;
                     }
                     dTotal += dAmountSelected;
                 }
-                recPaymentRequest.setKeyArea(PaymentRequest.kBankAcctIDKey);
-                recPaymentRequest.getField(PaymentRequest.kBankAcctID).moveFieldToThis(this.getScreenRecord().getField(GenPaymentScreenRecord.kBankAcctID));
-                recPaymentRequest.getField(PaymentRequest.kVendorID).moveFieldToThis(recVendor.getField(Vendor.kID));
+                recPaymentRequest.setKeyArea(PaymentRequest.BANK_ACCT_ID_KEY);
+                recPaymentRequest.getField(PaymentRequest.BANK_ACCT_ID).moveFieldToThis(this.getScreenRecord().getField(GenPaymentScreenRecord.BANK_ACCT_ID));
+                recPaymentRequest.getField(PaymentRequest.VENDOR_ID).moveFieldToThis(recVendor.getField(Vendor.ID));
                 if (recPaymentRequest.seek("="))
                     recPaymentRequest.remove();
                 if (dTotal != 0)
                 {
                     recPaymentRequest.addNew();
-                    recPaymentRequest.getField(PaymentRequest.kBankAcctID).moveFieldToThis(this.getScreenRecord().getField(GenPaymentScreenRecord.kBankAcctID));
-                    recPaymentRequest.getField(PaymentRequest.kVendorID).moveFieldToThis(recVendor.getField(Vendor.kID));
-                    recPaymentRequest.getField(PaymentRequest.kAmount).setValue(dTotal);
-                    recPaymentRequest.getField(PaymentRequest.kTrxStatusID).setValue(iPaymentTrxStatus);
-                    recPaymentRequest.getField(PaymentRequest.kComments).moveFieldToThis(recTrxStatus.getField(TrxStatus.kStatusDesc));
+                    recPaymentRequest.getField(PaymentRequest.BANK_ACCT_ID).moveFieldToThis(this.getScreenRecord().getField(GenPaymentScreenRecord.BANK_ACCT_ID));
+                    recPaymentRequest.getField(PaymentRequest.VENDOR_ID).moveFieldToThis(recVendor.getField(Vendor.ID));
+                    recPaymentRequest.getField(PaymentRequest.AMOUNT).setValue(dTotal);
+                    recPaymentRequest.getField(PaymentRequest.TRX_STATUS_ID).setValue(iPaymentTrxStatus);
+                    recPaymentRequest.getField(PaymentRequest.COMMENTS).moveFieldToThis(recTrxStatus.getField(TrxStatus.STATUS_DESC));
                     recPaymentRequest.add();
                 }
             }

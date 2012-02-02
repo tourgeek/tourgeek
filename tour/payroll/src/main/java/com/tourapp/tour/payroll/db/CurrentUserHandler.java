@@ -64,7 +64,7 @@ public class CurrentUserHandler extends FieldListener
             Employee employee = new Employee(null);
             int errorCode = employee.getCurrentUser();
             if (errorCode == DBConstants.NORMAL_RETURN)
-                m_CurrentUserID = (int)employee.getField(Employee.kID).getValue();
+                m_CurrentUserID = (int)employee.getField(Employee.ID).getValue();
             else
                 m_CurrentUserID = 0;    // Not found in list
             employee.free();

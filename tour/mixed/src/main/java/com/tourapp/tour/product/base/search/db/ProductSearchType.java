@@ -178,7 +178,7 @@ public class ProductSearchType extends VirtualRecord
      */
     public void setupProductTypeCheckboxes(BaseScreen screen)
     {
-        ProductType recProductType = (ProductType)screen.getRecord(ProductType.kProductTypeFile);
+        ProductType recProductType = (ProductType)screen.getRecord(ProductType.PRODUCT_TYPE_FILE);
         if (recProductType == null)
             recProductType = new ProductType(screen);
         recProductType.setupProductTypeCheckboxes(screen, this, DBConstants.BLANK);

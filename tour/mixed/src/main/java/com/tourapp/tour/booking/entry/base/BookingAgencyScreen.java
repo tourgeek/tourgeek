@@ -79,7 +79,7 @@ public class BookingAgencyScreen extends BookingSubScreen
      */
     public Record getMainRecord()
     {
-        return this.getRecord(Booking.kBookingFile);    // Booking file is the main file
+        return this.getRecord(Booking.BOOKING_FILE);    // Booking file is the main file
     }
     /**
      * Override this to open the other files in the query.
@@ -96,8 +96,8 @@ public class BookingAgencyScreen extends BookingSubScreen
     {
         super.addListeners();
         
-        Booking recBooking = (Booking)this.getRecord(Booking.kBookingFile);
-        Profile recProfile = (Profile)this.getRecord(Profile.kProfileFile);
+        Booking recBooking = (Booking)this.getRecord(Booking.BOOKING_FILE);
+        Profile recProfile = (Profile)this.getRecord(Profile.PROFILE_FILE);
         recBooking.addSecondProfile(recProfile);    // Agency Secondary logic
         recProfile.setOpenMode(DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
         recProfile.addListener(new UpdateOnCloseHandler(null));   // Make sure profile information is updated
@@ -109,9 +109,9 @@ public class BookingAgencyScreen extends BookingSubScreen
     {
         this.getRecord(Booking.kBookingFile).getField(Booking.kProfileCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
-        ScreenField sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.kBookingFile).getField(Booking.kProfileCode), ScreenConstants.DONT_DISPLAY_DESC, null, null, ThinMenuConstants.LOOKUP, ThinMenuConstants.LOOKUP, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ThinMenuConstants.LOOKUP), this.getRecord(Profile.kProfileFile), null);
+        ScreenField sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.BOOKING_FILE).getField(Booking.PROFILE_CODE), ScreenConstants.DONT_DISPLAY_DESC, null, null, ThinMenuConstants.LOOKUP, ThinMenuConstants.LOOKUP, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ThinMenuConstants.LOOKUP), this.getRecord(Profile.PROFILE_FILE), null);
         sField.setRequestFocusEnabled(false);
-        sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.kBookingFile).getField(Booking.kProfileCode), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.FORM, MenuConstants.FORM, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(MenuConstants.FORM), this.getRecord(Profile.kProfileFile), null);
+        sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.BOOKING_FILE).getField(Booking.PROFILE_CODE), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.FORM, MenuConstants.FORM, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(MenuConstants.FORM), this.getRecord(Profile.PROFILE_FILE), null);
         sField.setRequestFocusEnabled(false);
         sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, ScreenModel.CLEAR, ScreenModel.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ScreenModel.CLEAR), null, null);
         sField.setRequestFocusEnabled(false);
@@ -165,7 +165,7 @@ public class BookingAgencyScreen extends BookingSubScreen
      */
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
-        Record recProfile = this.getRecord(Profile.kProfileFile);
+        Record recProfile = this.getRecord(Profile.PROFILE_FILE);
         if (strCommand.equalsIgnoreCase(MenuConstants.LOOKUP))
         {
             BasePanel parentScreen = Screen.makeWindow(this.getTask().getApplication());

@@ -95,13 +95,13 @@ public class LandGridScreen extends ProductGridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new CompareFileFilter(Product.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), "=", null, true));
-        this.getMainRecord().addListener(new CompareFileFilter(Product.kVendorID, this.getScreenRecord().getField(ProductScreenRecord.kVendorID), "=", null, true));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new CompareFileFilter(Product.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), "=", null, true));
+        this.getMainRecord().addListener(new CompareFileFilter(Product.VENDOR_ID, this.getScreenRecord().getField(ProductScreenRecord.VENDOR_ID), "=", null, true));
         
-        this.getScreenRecord().getField(ProductScreenRecord.kVendorID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.VENDOR_ID).addListener(new FieldReSelectHandler(this));
         
-        this.getScreenRecord().getField(ProductScreenRecord.kPax).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(ProductScreenRecord.PAX).addListener(new FieldReSelectHandler(this));
     }
     /**
      * Read the current file in the header record given the current detail record.
@@ -110,7 +110,7 @@ public class LandGridScreen extends ProductGridScreen
     {
         super.syncHeaderToMain();
                 
-        this.restoreScreenParam(ProductScreenRecord.kPax);
+        this.restoreScreenParam(ProductScreenRecord.PAX);
     }
     /**
      * Add the listeners and message queues for rate lookups.
@@ -119,10 +119,10 @@ public class LandGridScreen extends ProductGridScreen
     public void addRateMessageListeners(Product recProduct, ProductScreenRecord screenRecord)
     {
         super.addRateMessageListeners(recProduct, screenRecord);
-        this.getMainRecord().getField(Land.kSICCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Land.kSICCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.kSICCostHome)));
-        this.getMainRecord().getField(Land.kPMCCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Land.kPMCCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.kPMCCostHome)));
+        this.getMainRecord().getField(Land.SIC_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Land.SIC_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.SIC_COST_HOME)));
+        this.getMainRecord().getField(Land.PMC_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Land.PMC_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.PMC_COST_HOME)));
     }
     /**
      * AddProductRateMessageFilter Method.
@@ -144,13 +144,13 @@ public class LandGridScreen extends ProductGridScreen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         super.addToolbarButtons(toolScreen);
-        this.getScreenRecord().getField(ProductScreenRecord.kDescription).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kCityID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kVendorID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.CITY_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.VENDOR_ID).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
         
-        this.getScreenRecord().getField(ProductScreenRecord.kPax).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kDetailDate).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
-        this.getScreenRecord().getField(ProductScreenRecord.kRemoteQueryEnabled).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.PAX).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.DETAIL_DATE).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
+        this.getScreenRecord().getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), toolScreen, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Get the command string to restore screen.
@@ -159,7 +159,7 @@ public class LandGridScreen extends ProductGridScreen
     {
         String strCommand = super.getScreenURL();
         
-        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.kPax);
+        strCommand = this.saveProductParam(strCommand, ProductScreenRecord.PAX);
                 
         return strCommand;
     }

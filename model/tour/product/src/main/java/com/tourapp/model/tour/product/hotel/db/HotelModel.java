@@ -8,7 +8,20 @@ import com.tourapp.model.tour.product.base.db.*;
 
 public interface HotelModel extends ProductModel
 {
+
+    //public static final String ID = ID;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String CODE = CODE;
+    //public static final String VENDOR_ID = VENDOR_ID;
+    //public static final String OPERATORS_CODE = OPERATORS_CODE;
+    //public static final String PRODUCT_CHAIN_ID = PRODUCT_CHAIN_ID;
+    //public static final String CITY_ID = CITY_ID;
+    //public static final String ETD = ETD;
+    //public static final String COMMENTS = COMMENTS;
+    //public static final String ITINERARY_DESC = ITINERARY_DESC;
+    //public static final String DESC_SORT = DESC_SORT;
     public static final String CHECK_OUT = "CheckOut";
+    public static final String SAME_AS_VENDOR = "SameAsVendor";
     public static final String CONTACT = "Contact";
     public static final String CONTACT_TITLE = "ContactTitle";
     public static final String ADDRESS_LINE_1 = "AddressLine1";

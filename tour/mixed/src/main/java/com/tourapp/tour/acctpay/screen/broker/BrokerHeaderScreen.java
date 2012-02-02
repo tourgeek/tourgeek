@@ -72,7 +72,7 @@ public class BrokerHeaderScreen extends HeaderScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getRecord(BrokerScreenRecord.kBrokerScreenRecordFile).getField(BrokerScreenRecord.kVendorID).setEnabled(true);
+        this.getScreenRecord().getField(BrokerScreenRecord.VENDOR_ID).setEnabled(true);
     }
 
 }

@@ -85,18 +85,18 @@ public class AcctBatchPost extends AcctBatchScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(AcctBatch.kRecurring).removeListener((FieldListener)this.getMainRecord().getField(AcctBatch.kRecurring).getListener(DisableOnFieldHandler.class.getName()), true);
-        this.getMainRecord().getField(AcctBatch.kTrxDate).removeListener((FieldListener)this.getMainRecord().getField(AcctBatch.kTrxDate).getListener(CopyStringHandler.class.getName()), true);
-        if (this.getMainRecord().getField(AcctBatch.kRecurring).getState())
-            this.getMainRecord().getField(AcctBatch.kTrxDate).initField(true);
+        this.getMainRecord().getField(AcctBatch.RECURRING).removeListener((FieldListener)this.getMainRecord().getField(AcctBatch.RECURRING).getListener(DisableOnFieldHandler.class.getName()), true);
+        this.getMainRecord().getField(AcctBatch.TRX_DATE).removeListener((FieldListener)this.getMainRecord().getField(AcctBatch.TRX_DATE).getListener(CopyStringHandler.class.getName()), true);
+        if (this.getMainRecord().getField(AcctBatch.RECURRING).getState())
+            this.getMainRecord().getField(AcctBatch.TRX_DATE).initField(true);
         
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).addListener(new SubFileFilter(this.getRecord(AcctBatch.kAcctBatchFile)));
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).addListener(new SubCountHandler(this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kBalance), AcctBatchDetail.kAmount, false, true));
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).addListener(new BatchSequenceHandler(this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence), this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kNextSequence), this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kBalance)));
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).addListener(new AcctPostCheckHandler(this.getRecord(AcctBatch.kAcctBatchFile)));
-        this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kTrxDate).addListener(new AcctBatchSetRecurringBeh(this.getRecord(AcctBatch.kAcctBatchFile)));
-        this.getRecord(AcctBatch.kAcctBatchFile).getField(AcctBatch.kAutoReversal).addListener(new AcctBatchSetRecurringBeh(this.getRecord(AcctBatch.kAcctBatchFile)));
-        Record recAcctBatchDetail = this.getRecord(AcctBatchDetail.kAcctBatchDetailFile);
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).addListener(new SubFileFilter(this.getRecord(AcctBatch.ACCT_BATCH_FILE)));
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).addListener(new SubCountHandler(this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.BALANCE), AcctBatchDetail.AMOUNT, false, true));
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).addListener(new BatchSequenceHandler(this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE), this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.NEXT_SEQUENCE), this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.BALANCE)));
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).addListener(new AcctPostCheckHandler(this.getRecord(AcctBatch.ACCT_BATCH_FILE)));
+        this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.TRX_DATE).addListener(new AcctBatchSetRecurringBeh(this.getRecord(AcctBatch.ACCT_BATCH_FILE)));
+        this.getRecord(AcctBatch.ACCT_BATCH_FILE).getField(AcctBatch.AUTO_REVERSAL).addListener(new AcctBatchSetRecurringBeh(this.getRecord(AcctBatch.ACCT_BATCH_FILE)));
+        Record recAcctBatchDetail = this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE);
         recAcctBatchDetail.close();
         try   {
             while (recAcctBatchDetail.hasNext())
@@ -143,12 +143,12 @@ public class AcctBatchPost extends AcctBatchScreen
         BaseApplication application = (BaseApplication)this.getTask().getApplication();
         String POSTING_RESOURCE = application.getResourceClassName(this.getClass().getName(), "AcctBatchPostingResources");
         // Step 1 - make sure batch is valid
-        AcctBatch recAcctBatch = (AcctBatch)this.getRecord(AcctBatch.kAcctBatchFile);
-        AcctBatchDetail recAcctBatchDetail = (AcctBatchDetail)this.getRecord(AcctBatchDetail.kAcctBatchDetailFile);
-        AcctDetail recAcctDetail = (AcctDetail)this.getRecord(AcctDetail.kAcctDetailFile);
-        AcctDetailDist recAcctDetailDist = (AcctDetailDist)this.getRecord(AcctDetailDist.kAcctDetailDistFile);
-        TransactionType recTransactionType = (TransactionType)this.getRecord(TransactionType.kTransactionTypeFile);
-        Period recPeriod = (Period)this.getRecord(Period.kPeriodFile);
+        AcctBatch recAcctBatch = (AcctBatch)this.getRecord(AcctBatch.ACCT_BATCH_FILE);
+        AcctBatchDetail recAcctBatchDetail = (AcctBatchDetail)this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE);
+        AcctDetail recAcctDetail = (AcctDetail)this.getRecord(AcctDetail.ACCT_DETAIL_FILE);
+        AcctDetailDist recAcctDetailDist = (AcctDetailDist)this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE);
+        TransactionType recTransactionType = (TransactionType)this.getRecord(TransactionType.TRANSACTION_TYPE_FILE);
+        Period recPeriod = (Period)this.getRecord(Period.PERIOD_FILE);
         try   {
             if (recAcctBatch.getEditMode() == Constants.EDIT_CURRENT)
             {
@@ -167,18 +167,18 @@ public class AcctBatchPost extends AcctBatchScreen
             this.displayError(application.getResources(POSTING_RESOURCE, true).getString("BATCH_NOT_VALID"));
             return false;
         }
-        if (recAcctBatch.getField(AcctBatch.kTrxDate).isNull())
+        if (recAcctBatch.getField(AcctBatch.TRX_DATE).isNull())
         {
             this.displayError(application.getResources(POSTING_RESOURCE, true).getString("NEED_TRX_DATE"));
             return false;
         }
-        if (recAcctBatch.getField(AcctBatch.kBalance).getValue() != 0)
+        if (recAcctBatch.getField(AcctBatch.BALANCE).getValue() != 0)
         {
             this.displayError(application.getResources(POSTING_RESOURCE, true).getString("DOESNT_BALANCE"));
             return false;
         }
-        if (recAcctBatch.getField(AcctBatch.kAutoReversal).getState() == true)
-            if (recAcctBatch.getField(AcctBatch.kAutoReversalDate).isNull())
+        if (recAcctBatch.getField(AcctBatch.AUTO_REVERSAL).getState() == true)
+            if (recAcctBatch.getField(AcctBatch.AUTO_REVERSAL_DATE).isNull())
         {
             this.displayError(application.getResources(POSTING_RESOURCE, true).getString("NEED_AUTO_REVERSE"));
             return false;
@@ -187,12 +187,12 @@ public class AcctBatchPost extends AcctBatchScreen
         recAcctBatchDetail.close();
         recAcctDetailDist.startDistTrx();
         try   {
-            int iTypeManual = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.MANUALENTRY, AcctDetail.MANUALENTRY);
-            int iTypeRecurring = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.RECURRINGTRX, AcctDetail.RECURRINGTRX);
-            int iTypeAccrual = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.ACCRUAL, AcctDetail.ACCRUAL);
-            int iTypeReversal = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.ACCRUALREVERSAL, AcctDetail.ACCRUALREVERSAL);
-            int iTypeClosing = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.kAcctDetailFile, AcctDetail.CLOSINGENTRY, AcctDetail.CLOSINGENTRY);
-            recAcctBatch.getField(AcctBatch.kTrxEntry).initField(DBConstants.DONT_DISPLAY);     // Trx entry date/time
+            int iTypeManual = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.ACCT_DETAIL_FILE, AcctDetail.MANUALENTRY, AcctDetail.MANUALENTRY);
+            int iTypeRecurring = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.ACCT_DETAIL_FILE, AcctDetail.RECURRINGTRX, AcctDetail.RECURRINGTRX);
+            int iTypeAccrual = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.ACCT_DETAIL_FILE, AcctDetail.ACCRUAL, AcctDetail.ACCRUAL);
+            int iTypeReversal = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.ACCT_DETAIL_FILE, AcctDetail.ACCRUALREVERSAL, AcctDetail.ACCRUALREVERSAL);
+            int iTypeClosing = recTransactionType.getTrxTypeID(TransactionType.GENLED, AcctDetail.ACCT_DETAIL_FILE, AcctDetail.CLOSINGENTRY, AcctDetail.CLOSINGENTRY);
+            recAcctBatch.getField(AcctBatch.TRX_ENTRY).initField(DBConstants.DONT_DISPLAY);     // Trx entry date/time
         
             double dBatchSeq = -1;
             while (recAcctBatchDetail.hasNext())
@@ -201,40 +201,40 @@ public class AcctBatchPost extends AcctBatchScreen
         
                 // Add the acct detail for this transaction (note: I do not use the methods in acctDetail, because they summarize trx at eom. I can't because there is no detail audit trail.
                 recAcctDetail.addNew();
-                if (recAcctBatchDetail.getField(AcctBatchDetail.kSequence).getValue() != dBatchSeq)
-                    recAcctDetailDist.getField(AcctDetailDist.kAcctDetailDistGroupID).setValue(0);  // Start of trx
-                dBatchSeq = recAcctBatchDetail.getField(AcctBatchDetail.kSequence).getValue();
-                recAcctDetail.getField(AcctDetail.kAccountID).moveFieldToThis(recAcctBatchDetail.getField(AcctBatchDetail.kAccountID));
-                recAcctDetail.getField(AcctDetail.kTrxDate).moveFieldToThis(recAcctBatch.getField(AcctBatch.kTrxDate));
-                if (recAcctBatchDetail.getField(AcctBatchDetail.kAutoReversal).getState())
-                    recAcctDetail.getField(AcctDetail.kTrxDate).moveFieldToThis(recAcctBatch.getField(AcctBatch.kAutoReversalDate));
-                recAcctDetail.getField(AcctDetail.kTrxTypeID).setValue(iTypeManual);
-                if (recAcctBatch.getField(AcctBatch.kRecurring).getState())
-                    recAcctDetail.getField(AcctDetail.kTrxTypeID).setValue(iTypeRecurring);
-                if (recAcctBatchDetail.getField(AcctBatchDetail.kAutoAccrual).getState())
-                    recAcctDetail.getField(AcctDetail.kTrxTypeID).setValue(iTypeAccrual);
-                if (recAcctBatchDetail.getField(AcctBatchDetail.kAutoReversal).getState())
-                    recAcctDetail.getField(AcctDetail.kTrxTypeID).setValue(iTypeReversal);
-                if (recAcctBatch.getField(AcctBatch.kAutoClosing).getState() == true)
-                    recAcctDetail.getField(AcctDetail.kTrxTypeID).setValue(iTypeClosing);
-                recAcctDetail.getField(AcctDetail.kTrxEntry).moveFieldToThis(recAcctBatch.getField(AcctBatch.kTrxEntry));
-                recAcctDetail.getField(AcctDetail.kAmountLocal).moveFieldToThis(recAcctBatchDetail.getField(AcctBatchDetail.kAmount));
-                recAcctDetail.getField(AcctDetail.kSource).moveFieldToThis(recAcctBatch.getField(AcctBatch.kSource));
-                recAcctDetail.getField(AcctDetail.kComments).moveFieldToThis(recAcctBatch.getField(AcctBatch.kComments));
+                if (recAcctBatchDetail.getField(AcctBatchDetail.SEQUENCE).getValue() != dBatchSeq)
+                    recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).setValue(0);  // Start of trx
+                dBatchSeq = recAcctBatchDetail.getField(AcctBatchDetail.SEQUENCE).getValue();
+                recAcctDetail.getField(AcctDetail.ACCOUNT_ID).moveFieldToThis(recAcctBatchDetail.getField(AcctBatchDetail.ACCOUNT_ID));
+                recAcctDetail.getField(AcctDetail.TRX_DATE).moveFieldToThis(recAcctBatch.getField(AcctBatch.TRX_DATE));
+                if (recAcctBatchDetail.getField(AcctBatchDetail.AUTO_REVERSAL).getState())
+                    recAcctDetail.getField(AcctDetail.TRX_DATE).moveFieldToThis(recAcctBatch.getField(AcctBatch.AUTO_REVERSAL_DATE));
+                recAcctDetail.getField(AcctDetail.TRX_TYPE_ID).setValue(iTypeManual);
+                if (recAcctBatch.getField(AcctBatch.RECURRING).getState())
+                    recAcctDetail.getField(AcctDetail.TRX_TYPE_ID).setValue(iTypeRecurring);
+                if (recAcctBatchDetail.getField(AcctBatchDetail.AUTO_ACCRUAL).getState())
+                    recAcctDetail.getField(AcctDetail.TRX_TYPE_ID).setValue(iTypeAccrual);
+                if (recAcctBatchDetail.getField(AcctBatchDetail.AUTO_REVERSAL).getState())
+                    recAcctDetail.getField(AcctDetail.TRX_TYPE_ID).setValue(iTypeReversal);
+                if (recAcctBatch.getField(AcctBatch.AUTO_CLOSING).getState() == true)
+                    recAcctDetail.getField(AcctDetail.TRX_TYPE_ID).setValue(iTypeClosing);
+                recAcctDetail.getField(AcctDetail.TRX_ENTRY).moveFieldToThis(recAcctBatch.getField(AcctBatch.TRX_ENTRY));
+                recAcctDetail.getField(AcctDetail.AMOUNT_LOCAL).moveFieldToThis(recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT));
+                recAcctDetail.getField(AcctDetail.SOURCE).moveFieldToThis(recAcctBatch.getField(AcctBatch.SOURCE));
+                recAcctDetail.getField(AcctDetail.COMMENTS).moveFieldToThis(recAcctBatch.getField(AcctBatch.COMMENTS));
         
                 boolean bSuccess = recAcctDetail.onPostTrx();
                 if (!bSuccess)
                     return bSuccess;
-                BaseField fldCrAccountID = recAcctDetail.getField(AcctDetail.kAccountID);
+                BaseField fldCrAccountID = recAcctDetail.getField(AcctDetail.ACCOUNT_ID);
                 bSuccess = recAcctDetail.onPostManualDist(recAcctDetailDist);
                 if (!bSuccess)
                     return bSuccess;
-                if (recAcctDetailDist.getField(AcctDetailDist.kAcctDetailDistGroupID).getValue() == 0)
+                if (recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).getValue() == 0)
                 {   // First transaction in a group... group = this trx number
                     Object objectID = recAcctDetailDist.getLastModified(DBConstants.DATA_SOURCE_HANDLE);
                     recAcctDetailDist.setHandle(objectID, DBConstants.DATA_SOURCE_HANDLE);
                     recAcctDetailDist.edit();
-                    recAcctDetailDist.getField(AcctDetailDist.kAcctDetailDistGroupID).moveFieldToThis(recAcctDetailDist.getField(AcctDetailDist.kID));
+                    recAcctDetailDist.getField(AcctDetailDist.ACCT_DETAIL_DIST_GROUP_ID).moveFieldToThis(recAcctDetailDist.getField(AcctDetailDist.ID));
                     recAcctDetailDist.set();
                 }
             }
@@ -245,7 +245,7 @@ public class AcctBatchPost extends AcctBatchScreen
             return false;
         }
         // Step 3 - Delete the batch (if not recurring)
-        if (recAcctBatch.getField(AcctBatch.kRecurring).getState() == false)
+        if (recAcctBatch.getField(AcctBatch.RECURRING).getState() == false)
         {
             recAcctBatchDetail.close();
             try   {
@@ -263,8 +263,8 @@ public class AcctBatchPost extends AcctBatchScreen
         }
         else
         {
-            this.getMainRecord().getField(AcctBatch.kTrxDate).setData(null);
-            this.getMainRecord().getField(AcctBatch.kAutoReversalDate).setData(null);
+            this.getMainRecord().getField(AcctBatch.TRX_DATE).setData(null);
+            this.getMainRecord().getField(AcctBatch.AUTO_REVERSAL_DATE).setData(null);
         }
         return true;
     }

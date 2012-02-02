@@ -81,7 +81,7 @@ public class BookingDetailSoftDeleteHandler extends SoftDeleteHandler
      */
     public boolean isSoftDeleteThisRecord()
     {
-        if (this.getOwner().getField(BookingDetail.kApTrxID).isNull())
+        if (this.getOwner().getField(BookingDetail.AP_TRX_ID).isNull())
             return false;   // If there is no active voucher, it is okay to delete this record.
         return super.isSoftDeleteThisRecord();
     }

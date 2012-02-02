@@ -67,9 +67,9 @@ public class AddPaPaxConverter extends CommandConverter
      */
     public int doCommand(boolean bDisplayOption, int iMoveMode)
     {
-        BookingPax recBookingPax = (BookingPax)m_screenParent.getRecord(BookingPax.kBookingPaxFile);
-        Profile recProfile = (Profile)m_screenParent.getRecord(Profile.kProfileFile);
-        Profile recProfileDetail = (Profile)((ReferenceField)recBookingPax.getField(BookingPax.kProfileID)).getReferenceRecord();
+        BookingPax recBookingPax = (BookingPax)m_screenParent.getRecord(BookingPax.BOOKING_PAX_FILE);
+        Profile recProfile = (Profile)m_screenParent.getRecord(Profile.PROFILE_FILE);
+        Profile recProfileDetail = (Profile)((ReferenceField)recBookingPax.getField(BookingPax.PROFILE_ID)).getReferenceRecord();
         recBookingPax.addPaxDetail(recBookingPax, recProfileDetail);
         //  Now create the maint screen for this new record
         if (recProfileDetail.getEditMode() == DBConstants.EDIT_CURRENT)

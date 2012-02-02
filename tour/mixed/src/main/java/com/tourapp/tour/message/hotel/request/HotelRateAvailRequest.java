@@ -54,7 +54,7 @@ public class HotelRateAvailRequest extends HotelRateRequest
     public void init(MessageDataParent messageDataParent, String strKey)
     {
         super.init(messageDataParent, strKey);
-        ((ProductMessageData)this.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).setSyncFields(BookingDetail.kInventoryStatusID, BookingDetail.kCostStatusID);
+        ((ProductMessageData)this.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).setSyncFields(BookingDetail.INVENTORY_STATUS_ID, BookingDetail.COST_STATUS_ID);
     }
 
 }

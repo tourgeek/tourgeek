@@ -142,13 +142,13 @@ public class ProductResponseMessageData extends BaseProductMessageData
         BookingDetail recBookingDetail = (BookingDetail)record;
         
         String strConfirmedBy = (String)this.get(Product.CONFIRMED_BY_PARAM);
-        ((PropertiesField)recBookingDetail.getField(BookingDetail.kProperties)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + Product.CONFIRMED_BY_PARAM, strConfirmedBy);
+        ((PropertiesField)recBookingDetail.getField(BookingDetail.PROPERTIES)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + Product.CONFIRMED_BY_PARAM, strConfirmedBy);
         String strConfirmationNo = (String)this.get(Product.CONFIRMATION_NO_PARAM);
-        ((PropertiesField)recBookingDetail.getField(BookingDetail.kProperties)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + Product.CONFIRMATION_NO_PARAM, strConfirmationNo);
+        ((PropertiesField)recBookingDetail.getField(BookingDetail.PROPERTIES)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + Product.CONFIRMATION_NO_PARAM, strConfirmationNo);
         if (this.get(BookingDetail.REMOTE_BOOKING_NO) != null)
-            recBookingDetail.getField(BookingDetail.kRemoteBookingNo).setString((String)this.get(BookingDetail.REMOTE_BOOKING_NO).toString());
+            recBookingDetail.getField(BookingDetail.REMOTE_BOOKING_NO).setString((String)this.get(BookingDetail.REMOTE_BOOKING_NO).toString());
         if (this.get(BookingDetail.REMOTE_REFERENCE_NO) != null)
-            recBookingDetail.getField(BookingDetail.kRemoteReferenceNo).setString((String)this.get(BookingDetail.REMOTE_REFERENCE_NO).toString());
+            recBookingDetail.getField(BookingDetail.REMOTE_REFERENCE_NO).setString((String)this.get(BookingDetail.REMOTE_REFERENCE_NO).toString());
         
         return iInfoStatus;
     }

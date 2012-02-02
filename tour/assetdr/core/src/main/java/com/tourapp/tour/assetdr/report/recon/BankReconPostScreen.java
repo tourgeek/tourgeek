@@ -126,9 +126,9 @@ public class BankReconPostScreen extends Screen
         if (strCommand.equalsIgnoreCase(MenuConstants.POST))
         {
             try {
-                Record recAssetDrControl = this.getRecord(AssetDrControl.kAssetDrControlFile);
+                Record recAssetDrControl = this.getRecord(AssetDrControl.ASSET_DR_CONTROL_FILE);
                 recAssetDrControl.edit();
-                ((DateTimeField)recAssetDrControl.getField(AssetDrControl.kDateReconciled)).setDateTime(new Date(), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+                ((DateTimeField)recAssetDrControl.getField(AssetDrControl.DATE_RECONCILED)).setDateTime(new Date(), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
                 recAssetDrControl.set();
             } catch (DBException ex) {
                 ex.printStackTrace();

@@ -104,17 +104,17 @@ public class AcctDetailGridScreen extends DetailGridScreen
     {
         super.addListeners();
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(AcctDetail.kTrxDate, this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate), this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate), ExtractRangeFilter.PAD_DEFAULT));
-        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(AcctDetailScreenRecord.kChangeBalance), AcctDetail.kAmountLocal, true, true));    // Init this field override for other value
+        this.getMainRecord().addListener(new ExtractRangeFilter(AcctDetail.TRX_DATE, this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE), this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE), ExtractRangeFilter.PAD_DEFAULT));
+        this.getMainRecord().addListener(new SubCountHandler(this.getScreenRecord().getField(AcctDetailScreenRecord.CHANGE_BALANCE), AcctDetail.AMOUNT_LOCAL, true, true));    // Init this field override for other value
         
-        this.getHeaderRecord().getField(Account.kID).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kStartDate).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kEndDate).addListener(new FieldReSelectHandler(this));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kCalcStart).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(Account.ID).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.START_DATE).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.END_DATE).addListener(new FieldReSelectHandler(this));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.CALC_START).addListener(new FieldReSelectHandler(this));
         
-        this.getMainRecord().addListener(new AcctDetailCalcStartBal(this.getRecord(Account.kAccountFile), this.getScreenRecord()));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kStartBalance).addListener(new AcctDetailCalcEndBal(this.getScreenRecord()));
-        this.getScreenRecord().getField(AcctDetailScreenRecord.kChangeBalance).addListener(new AcctDetailCalcEndBal(this.getScreenRecord()));
+        this.getMainRecord().addListener(new AcctDetailCalcStartBal(this.getRecord(Account.ACCOUNT_FILE), this.getScreenRecord()));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.START_BALANCE).addListener(new AcctDetailCalcEndBal(this.getScreenRecord()));
+        this.getScreenRecord().getField(AcctDetailScreenRecord.CHANGE_BALANCE).addListener(new AcctDetailCalcEndBal(this.getScreenRecord()));
         
         this.setEditing(false);
     }

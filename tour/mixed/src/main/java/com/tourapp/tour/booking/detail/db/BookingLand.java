@@ -619,7 +619,7 @@ public class BookingLand extends BookingDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(BookingDetail.kProductTypeID, ProductType.LAND_ID)); 
+        this.addListener(new SharedFileHandler(BookingDetail.PRODUCT_TYPE_ID, ProductType.LAND_ID)); 
     }
     /**
      * AddMasterListeners Method.
@@ -628,12 +628,12 @@ public class BookingLand extends BookingDetail
     {
         super.addMasterListeners();
         
-        FieldListener dependentStateListener = this.getField(BookingDetail.kProductType).getListener(ProductTypeHandler.class);
+        FieldListener dependentStateListener = this.getField(BookingDetail.PRODUCT_TYPE).getListener(ProductTypeHandler.class);
         
         FieldListener fieldListener = new RecomputeProductDesc(null);
         fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, false);
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, false);
-        this.getField(BookingLand.kClassID).addListener(fieldListener);
+        this.getField(BookingLand.CLASS_ID).addListener(fieldListener);
         fieldListener.setDependentStateListener(dependentStateListener);
     }
     /**
@@ -647,10 +647,10 @@ public class BookingLand extends BookingDetail
         if (string != null)
             if (string.length() > 0)
         {
-            Record recLandClass = ((ReferenceField)this.getField(BookingLand.kClassID)).getReference();
+            Record recLandClass = ((ReferenceField)this.getField(BookingLand.CLASS_ID)).getReference();
             if (recLandClass != null)
-                if (!recLandClass.getField(LandClass.kDescription).isNull())
-                    string += " - " + recLandClass.getField(LandClass.kDescription).toString();
+                if (!recLandClass.getField(LandClass.DESCRIPTION).isNull())
+                    string += " - " + recLandClass.getField(LandClass.DESCRIPTION).toString();
         }
         return string;
     }
@@ -665,9 +665,9 @@ public class BookingLand extends BookingDetail
         if (recLand != null)
             if ((recLand.getEditMode() == DBConstants.EDIT_CURRENT) || (recLand.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
         {
-            short sBreakfasts = (short)recLand.getField(Land.kBreakfasts).getValue();
-            short sLunches = (short)recLand.getField(Land.kLunches).getValue();
-            short sDinners = (short)recLand.getField(Land.kDinners).getValue();
+            short sBreakfasts = (short)recLand.getField(Land.BREAKFASTS).getValue();
+            short sLunches = (short)recLand.getField(Land.LUNCHES).getValue();
+            short sDinners = (short)recLand.getField(Land.DINNERS).getValue();
             return this.getMealDescFromCount(dateTarget, bDetailedDesc, recMealPlan, sBreakfasts, sLunches, sDinners);
         }
         return DBConstants.BLANK;
@@ -681,16 +681,16 @@ public class BookingLand extends BookingDetail
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
         if (iErrorCode == DBConstants.NORMAL_RETURN)
         {
-            if ((!bOnlyIfTargetIsNull) || (this.getField(BookingLand.kRateID).isNull()))
-                this.getField(BookingLand.kRateID).moveFieldToThis(recTour.getField(Tour.kLandRateID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-            ReferenceField fldLandClass = (ReferenceField)this.getField(BookingLand.kClassID);
-            BaseField fldPMC = this.getField(BookingLand.kPMCCutoff);
+            if ((!bOnlyIfTargetIsNull) || (this.getField(BookingLand.RATE_ID).isNull()))
+                this.getField(BookingLand.RATE_ID).moveFieldToThis(recTour.getField(Tour.LAND_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            ReferenceField fldLandClass = (ReferenceField)this.getField(BookingLand.CLASS_ID);
+            BaseField fldPMC = this.getField(BookingLand.PMC_CUTOFF);
             if ((!bOnlyIfTargetIsNull) || (fldPMC.isNull()))
-                fldPMC.moveFieldToThis(recTour.getField(Tour.kPMCCutoff), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+                fldPMC.moveFieldToThis(recTour.getField(Tour.PMC_CUTOFF), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             if ((!bOnlyIfTargetIsNull) || (fldLandClass.isNull()))
             {
                 if (fldPMC.isNull())
-                    fldLandClass.moveFieldToThis(recTour.getField(Tour.kLandClassID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+                    fldLandClass.moveFieldToThis(recTour.getField(Tour.LAND_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
                 else
                 {
                     int iPaxCount = this.getNoPax();
@@ -714,15 +714,15 @@ public class BookingLand extends BookingDetail
         int iErrorCode = super.moveTourHeaderFields(recTourHeaderDetail, recTour);
         if (recTourHeaderDetail != null)
         {
-            if (recTourHeaderDetail.getField(TourHeaderLand.kPMCCutoff).getLength() != 0)
-                this.getField(BookingLand.kPMCCutoff).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLand.kPMCCutoff), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            if (recTourHeaderDetail.getField(TourHeaderLand.PMC_CUTOFF).getLength() != 0)
+                this.getField(BookingLand.PMC_CUTOFF).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderLand.PMC_CUTOFF), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         }
-        if (!this.getField(BookingLand.kPMCCutoff).isModified()) if (recTour.getField(Tour.kPMCCutoff).getLength() != 0)
-            this.getField(BookingLand.kPMCCutoff).moveFieldToThis(recTour.getField(Tour.kPMCCutoff), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        if (this.getField(BookingLand.kClassID).getValue() == 0)
+        if (!this.getField(BookingLand.PMC_CUTOFF).isModified()) if (recTour.getField(Tour.PMC_CUTOFF).getLength() != 0)
+            this.getField(BookingLand.PMC_CUTOFF).moveFieldToThis(recTour.getField(Tour.PMC_CUTOFF), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        if (this.getField(BookingLand.CLASS_ID).getValue() == 0)
         {
-            BaseField fldPMC = this.getField(BookingLand.kPMCCutoff);
-            ReferenceField fldLandClass = (ReferenceField)this.getField(BookingLand.kClassID);
+            BaseField fldPMC = this.getField(BookingLand.PMC_CUTOFF);
+            ReferenceField fldLandClass = (ReferenceField)this.getField(BookingLand.CLASS_ID);
             if (fldPMC.isNull())
                 fldLandClass.setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             else
@@ -748,7 +748,7 @@ public class BookingLand extends BookingDetail
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
-    public int checkRequiredParams(int iStatusType)
+    public String checkRequiredParams(String iStatusType)
     {
         return super.checkRequiredParams(iStatusType);
     }

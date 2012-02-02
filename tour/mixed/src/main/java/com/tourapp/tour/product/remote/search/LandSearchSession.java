@@ -98,8 +98,8 @@ public class LandSearchSession extends ProductSearchSession
     {
         super.addListeners();
         
-        this.getMainRecord().addListener(new ExtractRangeFilter(Product.kDescSort, this.getScreenRecord().getField(ProductScreenRecord.kDescription)));
-        this.getMainRecord().addListener(new CompareFileFilter(Product.kCityID, this.getScreenRecord().getField(ProductScreenRecord.kCityID), DBConstants.EQUALS, null, true));
+        this.getMainRecord().addListener(new ExtractRangeFilter(Product.DESC_SORT, this.getScreenRecord().getField(ProductScreenRecord.DESCRIPTION)));
+        this.getMainRecord().addListener(new CompareFileFilter(Product.CITY_ID, this.getScreenRecord().getField(ProductScreenRecord.CITY_ID), DBConstants.EQUALS, null, true));
     }
     /**
      * AddPriceListeners Method.
@@ -107,8 +107,8 @@ public class LandSearchSession extends ProductSearchSession
     public void addPriceListeners(Product recProduct)
     {
         super.addPriceListeners(recProduct);
-        recProduct.getField(Land.kPMCPriceHome).addListener(new AddCommissionHandler(null));
-        recProduct.getField(Land.kSICPriceHome).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Land.PMC_PRICE_HOME).addListener(new AddCommissionHandler(null));
+        recProduct.getField(Land.SIC_PRICE_HOME).addListener(new AddCommissionHandler(null));
     }
     /**
      * Select the fields required for the grid screen.
@@ -118,12 +118,12 @@ public class LandSearchSession extends ProductSearchSession
         super.selectGridFields();
         Record record = this.getMainRecord();
         
-        record.getField(Land.kPMCCost).setSelected(true);
-        record.getField(Land.kSICCost).setSelected(true);
-        record.getField(Land.kPMCCostHome).setSelected(true);
-        record.getField(Land.kSICCostHome).setSelected(true);
-        record.getField(Land.kPMCPriceHome).setSelected(true);
-        record.getField(Land.kSICPriceHome).setSelected(true);
+        record.getField(Land.PMC_COST).setSelected(true);
+        record.getField(Land.SIC_COST).setSelected(true);
+        record.getField(Land.PMC_COST_HOME).setSelected(true);
+        record.getField(Land.SIC_COST_HOME).setSelected(true);
+        record.getField(Land.PMC_PRICE_HOME).setSelected(true);
+        record.getField(Land.SIC_PRICE_HOME).setSelected(true);
     }
     /**
      * Select the fields for the maint screen.
@@ -140,10 +140,10 @@ public class LandSearchSession extends ProductSearchSession
     {
         super.addRateMessageListeners(recProduct, screenRecord);
         // Override this to add the listeners and message queues (remember to call super)
-        this.getMainRecord().getField(Land.kPMCCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Land.kPMCCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.kPMCCostHome)));
-        this.getMainRecord().getField(Land.kSICCost).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
-        this.getMainRecord().getField(Land.kSICCost).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.kSICCostHome)));
+        this.getMainRecord().getField(Land.PMC_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Land.PMC_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.PMC_COST_HOME)));
+        this.getMainRecord().getField(Land.SIC_COST).setSelected(true);  // Now you can calc the USD amount (since you have this local amount)
+        this.getMainRecord().getField(Land.SIC_COST).addListener(new CalcProductAmountHome(this.getMainRecord().getField(Land.SIC_COST_HOME)));
     }
     /**
      * AddProductRateMessageFilter Method.
@@ -167,10 +167,10 @@ public class LandSearchSession extends ProductSearchSession
         super.setScreenFields(properties);
         Record recProduct = this.getMainRecord();
         String strPax = (String)properties.get(SearchConstants.PAX);
-        this.getScreenRecord().getField(ProductScreenRecord.kPax).setString(strPax);
+        this.getScreenRecord().getField(ProductScreenRecord.PAX).setString(strPax);
         
-        Record recProductControl = this.getRecord(ProductControl.kProductControlFile);
-        this.getScreenRecord().getField(ProductScreenRecord.kRateID).moveFieldToThis(recProductControl.getField(ProductControl.kLandRateID));
+        Record recProductControl = this.getRecord(ProductControl.PRODUCT_CONTROL_FILE);
+        this.getScreenRecord().getField(ProductScreenRecord.RATE_ID).moveFieldToThis(recProductControl.getField(ProductControl.LAND_RATE_ID));
     }
 
 }

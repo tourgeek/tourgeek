@@ -112,17 +112,17 @@ public class BookingLandScreen extends BookingDetailSubScreen
         super.addListeners();
         BookingLand recBookingLand = (BookingLand)this.getMainRecord();
         
-        recBookingLand.getField(BookingLand.kPMCCutoff).setEnabled(true);
+        recBookingLand.getField(BookingLand.PMC_CUTOFF).setEnabled(true);
         
         // Display the USD equivalents
-        BaseField fldExchange = recBookingLand.getField(BookingDetail.kExchange);
+        BaseField fldExchange = recBookingLand.getField(BookingDetail.EXCHANGE);
         Record recBookingLandScreenRecord = this.getScreenRecord();
         FieldListener fieldListener = null;
-        recBookingLand.getField(BookingLand.kPMCCost).addListener(fieldListener = new CalcBalanceHandler(recBookingLandScreenRecord.getField(BookingLandScreenRecord.kPMCCostLocal), recBookingLand.getField(BookingLand.kPMCCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingLand.getField(BookingLand.PMC_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingLandScreenRecord.getField(BookingLandScreenRecord.PMC_COST_LOCAL), recBookingLand.getField(BookingLand.PMC_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBookingLand.getField(BookingLand.kSICCost).addListener(fieldListener = new CalcBalanceHandler(recBookingLandScreenRecord.getField(BookingLandScreenRecord.kSICCostLocal), recBookingLand.getField(BookingLand.kSICCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingLand.getField(BookingLand.SIC_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingLandScreenRecord.getField(BookingLandScreenRecord.SIC_COST_LOCAL), recBookingLand.getField(BookingLand.SIC_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
-        recBookingLand.getField(BookingLand.kPPCost).addListener(fieldListener = new CalcBalanceHandler(recBookingLandScreenRecord.getField(BookingLandScreenRecord.kPPCostLocal), recBookingLand.getField(BookingLand.kPPCost), fldExchange, CalcBalanceHandler.MULTIPLY, false));
+        recBookingLand.getField(BookingLand.PP_COST).addListener(fieldListener = new CalcBalanceHandler(recBookingLandScreenRecord.getField(BookingLandScreenRecord.PP_COST_LOCAL), recBookingLand.getField(BookingLand.PP_COST), fldExchange, CalcBalanceHandler.MULTIPLY, false));
         fieldListener.setRespondsToMode(DBConstants.READ_MOVE, true);
     }
     /**
@@ -135,9 +135,9 @@ public class BookingLandScreen extends BookingDetailSubScreen
         this.getRecord(BookingLand.kBookingLandFile).getField(BookingLand.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(BookingLand.kBookingLandFile).getField(BookingLand.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         // Make sure these all have this recordowner
-        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-        Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
+        Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+        Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
         this.getRecord(Land.kLandFile).getField(Land.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Vendor.kVendorFile).getField(Vendor.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);

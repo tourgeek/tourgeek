@@ -144,7 +144,7 @@ public class PricingType extends VirtualRecord
             while (this.hasNext())
             {
                 this.next();
-                if (this.getField(PricingType.kPricingCodes).getValue() == iPricingCode)
+                if (this.getField(PricingType.PRICING_CODES).getValue() == iPricingCode)
                     return this;
             }
         } catch (DBException ex) {

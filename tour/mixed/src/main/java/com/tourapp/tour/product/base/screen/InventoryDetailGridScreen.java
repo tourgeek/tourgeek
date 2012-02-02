@@ -116,9 +116,9 @@ public class InventoryDetailGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(InventoryDetail.kBookingDetailID).addListener(new ReadSecondaryHandler(this.getRecord(BookingDetail.kBookingDetailFile)));
-        this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kBookingID).addListener(new ReadSecondaryHandler(this.getRecord(Booking.kBookingFile)));
-        this.getRecord(Booking.kBookingFile).getField(Booking.kTourID).addListener(new ReadSecondaryHandler(this.getRecord(Tour.kTourFile)));
+        this.getMainRecord().getField(InventoryDetail.BOOKING_DETAIL_ID).addListener(new ReadSecondaryHandler(this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)));
+        this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.BOOKING_ID).addListener(new ReadSecondaryHandler(this.getRecord(Booking.BOOKING_FILE)));
+        this.getRecord(Booking.BOOKING_FILE).getField(Booking.TOUR_ID).addListener(new ReadSecondaryHandler(this.getRecord(Tour.TOUR_FILE)));
         this.setEnabled(false);   // Can't change anything
         this.setAppending(false);
     }

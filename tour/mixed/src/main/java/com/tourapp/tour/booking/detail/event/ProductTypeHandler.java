@@ -62,17 +62,17 @@ public class ProductTypeHandler extends FieldListener
     {
         String strDesc = DBConstants.BLANK;
         Record recBookingDetail = (BookingSub)this.getOwner().getRecord();
-        Record recProductType = ((ReferenceField)recBookingDetail.getField(BookingDetail.kProductTypeID)).getReference();
+        Record recProductType = ((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID)).getReference();
         if ((recProductType == null)
             || (recProductType.getEditMode() == DBConstants.EDIT_ADD)
             || (recProductType.getEditMode() == DBConstants.EDIT_NONE))
         {
             strDesc = recBookingDetail.getRecordName();
-            if (strDesc.indexOf(Booking.kBookingFile) == 0)
-                strDesc = strDesc.substring(Booking.kBookingFile.length());
+            if (strDesc.indexOf(Booking.BOOKING_FILE) == 0)
+                strDesc = strDesc.substring(Booking.BOOKING_FILE.length());
         }
         else
-            strDesc = recProductType.getField(ProductType.kDescription).toString();
+            strDesc = recProductType.getField(ProductType.DESCRIPTION).toString();
         if (this.getOwner().getRecord().isModified())
             this.getOwner().setData(strDesc);
         else

@@ -84,7 +84,7 @@ public class ProductReportDetail extends RecordReportDetail
     public int getSFieldCount()
     {
         int iFieldCount = super.getSFieldCount();
-        Record recBookingDetail = this.getRecord(BookingDetail.kBookingDetailFile);
+        Record recBookingDetail = this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
         if (recBookingDetail != null)
             if ((recBookingDetail.getEditMode() == DBConstants.EDIT_CURRENT) || (recBookingDetail.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
         {
@@ -92,17 +92,17 @@ public class ProductReportDetail extends RecordReportDetail
             if (currentTable == null)
                 currentTable = recBookingDetail.getTable();    // First time only
             recBookingDetail = currentTable.getRecord();
-            Record recProduct = ((ReferenceField)recBookingDetail.getField(BookingDetail.kProductID)).getReferenceRecord();
+            Record recProduct = ((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord();
             if (recProduct != null)
             {
-                iFieldCount = iFieldCount - Hotel.kHotelFields + recProduct.getFieldCount();
-                if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(City.kCityFile))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(City.kCityFile))))
+                iFieldCount = iFieldCount - (recProduct.getFieldSeq(Hotel.MEAL_PLAN_DAYS_PARAM) + 1) + recProduct.getFieldCount();
+                if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(City.CITY_FILE))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(City.CITY_FILE))))
                 {
-                    Record recCity = this.getRecord(City.kCityFile);
-                    ((ReferenceField)recProduct.getField(Product.kCityID)).setReferenceRecord(recCity);
-                    ((ReferenceField)recProduct.getField(Product.kCityID)).getReference();
-                    ((ReferenceField)recProduct.getField(Product.kCityID)).setReferenceRecord(null);
-                    Record recCity2 = this.getRecord("To" + City.kCityFile);
+                    Record recCity = this.getRecord(City.CITY_FILE);
+                    ((ReferenceField)recProduct.getField(Product.CITY_ID)).setReferenceRecord(recCity);
+                    ((ReferenceField)recProduct.getField(Product.CITY_ID)).getReference();
+                    ((ReferenceField)recProduct.getField(Product.CITY_ID)).setReferenceRecord(null);
+                    Record recCity2 = this.getRecord("To" + City.CITY_FILE);
                     try {
                         recCity2.addNew();
                     } catch (DBException e) {
@@ -110,19 +110,19 @@ public class ProductReportDetail extends RecordReportDetail
                     }
                     if (recProduct instanceof TransportProduct)
                     {
-                        recCity2.setTableNames(City.kCityFile);
-                        ((ReferenceField)recProduct.getField(TransportProduct.kToCityID)).setReferenceRecord(recCity2);
-                        ((ReferenceField)recProduct.getField(TransportProduct.kToCityID)).getReference();
-                        ((ReferenceField)recProduct.getField(TransportProduct.kToCityID)).setReferenceRecord(null);                   
+                        recCity2.setTableNames(City.CITY_FILE);
+                        ((ReferenceField)recProduct.getField(TransportProduct.TO_CITY_ID)).setReferenceRecord(recCity2);
+                        ((ReferenceField)recProduct.getField(TransportProduct.TO_CITY_ID)).getReference();
+                        ((ReferenceField)recProduct.getField(TransportProduct.TO_CITY_ID)).setReferenceRecord(null);                   
                         recCity2.setTableNames("To" + recCity2.getTableNames(false));
                     }
                 }
-                if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(Vendor.kVendorFile))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(Vendor.kVendorFile))))
+                if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(Vendor.VENDOR_FILE))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(Vendor.VENDOR_FILE))))
                 {
-                    Record recVendor = this.getRecord(Vendor.kVendorFile);
-                    ((ReferenceField)recProduct.getField(Product.kVendorID)).setReferenceRecord(recVendor);
-                    ((ReferenceField)recProduct.getField(Product.kVendorID)).getReference();
-                    ((ReferenceField)recProduct.getField(Product.kVendorID)).setReferenceRecord(null);
+                    Record recVendor = this.getRecord(Vendor.VENDOR_FILE);
+                    ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).setReferenceRecord(recVendor);
+                    ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReference();
+                    ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).setReferenceRecord(null);
                 }
             }
         }
@@ -133,33 +133,33 @@ public class ProductReportDetail extends RecordReportDetail
      */
     public void setupSFields()
     {
-        if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(City.kCityFile))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(City.kCityFile))))
+        if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(City.CITY_FILE))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(City.CITY_FILE))))
         {
-            Record recCity = this.getRecord(City.kCityFile);
-            for (int iFieldSeq = 0; iFieldSeq < City.kCityFields; iFieldSeq++)
+            Record recCity = this.getRecord(City.CITY_FILE);
+            for (int iFieldSeq = 0; iFieldSeq < recCity.getFieldCount(); iFieldSeq++)
             {
-                this.addDetailXMLColumn(recCity, iFieldSeq);
+                this.addDetailXMLColumn(recCity, recCity.getField(iFieldSeq).getFieldName());
             }
         
-            Record recCity2 = this.getRecord("To" + City.kCityFile);
-            for (int iFieldSeq = 0; iFieldSeq < City.kCityFields; iFieldSeq++)
+            Record recCity2 = this.getRecord("To" + City.CITY_FILE);
+            for (int iFieldSeq = 0; iFieldSeq < recCity2.getFieldCount(); iFieldSeq++)
             {
-                this.addDetailXMLColumn(recCity2, iFieldSeq);
+                this.addDetailXMLColumn(recCity2, recCity2.getField(iFieldSeq).getFieldName());
             }
         }
-        if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(Vendor.kVendorFile))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(Vendor.kVendorFile))))
+        if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(Vendor.VENDOR_FILE))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(Vendor.VENDOR_FILE))))
         {
-            Record recVendor = this.getRecord(Vendor.kVendorFile);
-            for (int iFieldSeq = 0; iFieldSeq < Vendor.kVendorFields; iFieldSeq++)
+            Record recVendor = this.getRecord(Vendor.VENDOR_FILE);
+            for (int iFieldSeq = 0; iFieldSeq < recVendor.getFieldCount(); iFieldSeq++)
             {
-                this.addDetailXMLColumn(recVendor, iFieldSeq);
+                this.addDetailXMLColumn(recVendor, recVendor.getField(iFieldSeq).getFieldName());
             }
         }
         
-        Record recBookingDetail = this.getRecord(BookingDetail.kBookingDetailFile);
-        for (int iFieldSeq = 0; iFieldSeq < Hotel.kHotelFields; iFieldSeq++)    // Hotel.kHotelFields is the largest possible value
+        Record recBookingDetail = this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
+        for (int iFieldSeq = 0; iFieldSeq < recBookingDetail.getFieldCount(); iFieldSeq++)    // Hotel.HOTEL_FIELDS is the largest possible value
         {
-            this.addDetailXMLColumn(recBookingDetail, BookingDetail.kProductID, iFieldSeq);
+            this.addDetailXMLColumn(recBookingDetail, BookingDetail.PRODUCT_ID, recBookingDetail.getField(iFieldSeq).getFieldName());
         }
     }
 

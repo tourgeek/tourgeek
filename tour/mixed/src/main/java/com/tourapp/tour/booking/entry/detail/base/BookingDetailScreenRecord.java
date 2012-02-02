@@ -31,6 +31,7 @@ public class BookingDetailScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PP_COST_LOCAL = "PPCostLocal";
     public static final int kPPCostLocal = kScreenRecordLastField + 1;
     public static final int kBookingDetailScreenRecordLastField = kPPCostLocal;
     public static final int kBookingDetailScreenRecordFields = kPPCostLocal - DBConstants.MAIN_FIELD + 1;

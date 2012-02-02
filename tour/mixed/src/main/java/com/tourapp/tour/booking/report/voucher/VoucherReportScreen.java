@@ -95,11 +95,11 @@ public class VoucherReportScreen extends ReportScreen
     {
         super.addListeners();
         
-        ((ReferenceField)this.getScreenRecord().getField(ItineraryScreenRecord.kTourID)).addListener(new ReadSecondaryHandler(this.getRecord(Tour.kTourFile)));
+        ((ReferenceField)this.getScreenRecord().getField(ItineraryScreenRecord.TOUR_ID)).addListener(new ReadSecondaryHandler(this.getRecord(Tour.TOUR_FILE)));
         
-        this.getRecord(Booking.kBookingFile).addListener(new SubFileFilter(this.getRecord(Tour.kTourFile)));
+        this.getRecord(Booking.BOOKING_FILE).addListener(new SubFileFilter(this.getRecord(Tour.TOUR_FILE)));
         
-        this.getRecord(ApTrx.kApTrxFile).addListener(new SubFileFilter(this.getRecord(Tour.kTourFile)));
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubFileFilter(this.getRecord(Tour.TOUR_FILE)));
     }
     /**
      * Add the toolbars that belong with this screen.
@@ -114,8 +114,8 @@ public class VoucherReportScreen extends ReportScreen
      */
     public void setupSFields()
     {
-        Record recBooking = this.getRecord(Booking.kBookingFile);
-        ((ReferenceField)recBooking.getField(Booking.kTourID)).setReferenceRecord(this.getRecord(Tour.kTourFile));
+        Record recBooking = this.getRecord(Booking.BOOKING_FILE);
+        ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).setReferenceRecord(this.getRecord(Tour.TOUR_FILE));
         for (int iFieldSeq = 0; iFieldSeq < recBooking.getFieldCount(); iFieldSeq++)
         {
             BaseField field = recBooking.getField(iFieldSeq);

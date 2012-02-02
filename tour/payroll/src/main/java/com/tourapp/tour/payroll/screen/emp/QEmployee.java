@@ -70,17 +70,17 @@ public class QEmployee extends BaseScreen
     public void setupSFields()
     {
         Record query = this.getScreenRecord();
-        Employee mainFile = (Employee)this.getRecord(Employee.kEmployeeFile);
-        //?ShortField empKey = (ShortField)query.getField(Employee.kEmpKeyNo);
+        Employee mainFile = (Employee)this.getRecord(Employee.EMPLOYEE_FILE);
+        //?ShortField empKey = (ShortField)query.getField(Employee.EMP_KEY_NO);
         //?Converter converter;
-        //?converter = new KeyRadioConverter(empKey, mainFile.getTable(), Employee.kLastNameKey);
+        //?converter = new KeyRadioConverter(empKey, mainFile.getTable(), Employee.LAST_NAME_KEY);
         //?new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter);
-        //?converter = new KeyRadioConverter(empKey, mainFile.getTable(), Employee.kFirstNameKey);
+        //?converter = new KeyRadioConverter(empKey, mainFile.getTable(), Employee.FIRST_NAME_KEY);
         //?new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter);
-        //?converter = new KeyRadioConverter(empKey, mainFile.getTable(), Employee.kIDKey);
+        //?converter = new KeyRadioConverter(empKey, mainFile.getTable(), Employee.ID_KEY);
         //?new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter);
         
-        BaseField activeFlag = query.getField(EmployeeScreenRecord.kActiveEmp);
+        BaseField activeFlag = query.getField(EmployeeScreenRecord.ACTIVE_EMP);
         activeFlag.setState(true, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE); // Initial state
         ScreenLocation next = this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT);
         //?activeFlag.setupDefaultView(this.getNextLocation(ScreenConstants.TOP_NEXT, ScreenConstants.ANCHOR_DEFAULT), this);
@@ -88,12 +88,12 @@ public class QEmployee extends BaseScreen
         //?gridScreen.Create(Point(0, next.y), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
         //?FieldListener fieldBehavior = new FieldReSelectHandler(gridScreen);
         //?activeFlag.addListener(fieldBehavior);
-        //?FileListener skipBehavior = new SkipBlankBehavior(Employee.kTerminationDate, true, activeFlag);
+        //?FileListener skipBehavior = new SkipBlankBehavior(Employee.TERMINATION_DATE, true, activeFlag);
         //?mainFile.addListener(skipBehavior);  // Skip terminated employees when set
         
         //?FieldListener keyBehavior = new QueryKeyHandler(gridScreen);
         //?empKey.addListener(keyBehavior);
-        //?empKey.setValue(Employee.kLastNameKey);
+        //?empKey.setValue(Employee.LAST_NAME_KEY);
     }
     /**
      * Add the screen fields.

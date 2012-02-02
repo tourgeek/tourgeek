@@ -153,7 +153,7 @@ public class PaxCategory extends VirtualRecord
      */
     public int getPaxInRoom()
     {
-        int iRoomType = (int)this.getField(PaxCategory.kRoomType).getValue();
+        int iRoomType = (int)this.getField(PaxCategory.ROOM_TYPE).getValue();
         if ((iRoomType >= PaxCategory.SINGLE_ID)
             && (iRoomType <= PaxCategory.QUAD_ID))
                 return iRoomType;
@@ -165,8 +165,8 @@ public class PaxCategory extends VirtualRecord
     public String convertNameToID(String strPaxCategory)
     {
         int iOldKeyOrder = this.getDefaultOrder();
-        this.setKeyArea(PaxCategory.kDescriptionKey);
-        this.getField(PaxCategory.kDescription).setString(strPaxCategory);
+        this.setKeyArea(PaxCategory.DESCRIPTION_KEY);
+        this.getField(PaxCategory.DESCRIPTION).setString(strPaxCategory);
         try {
             if (this.seek(null))
                 return this.getCounterField().toString();

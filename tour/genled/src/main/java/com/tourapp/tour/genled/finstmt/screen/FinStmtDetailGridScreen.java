@@ -101,8 +101,8 @@ public class FinStmtDetailGridScreen extends DetailGridScreen
     public void addToolbarButtons(ToolScreen toolScreen)
     {
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, FinStmtDetail.RENUMBER, "Go", FinStmtDetail.RENUMBER, null);
-        this.getHeaderRecord().getField(FinStmt.kStatementDesc).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
-        this.getHeaderRecord().getField(FinStmt.kStatementDesc).setEnabled(false);
+        this.getHeaderRecord().getField(FinStmt.STATEMENT_DESC).setupDefaultView(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), toolScreen, ScreenConstants.DONT_DISPLAY_DESC);
+        this.getHeaderRecord().getField(FinStmt.STATEMENT_DESC).setEnabled(false);
     }
     /**
      * SetupSFields Method.
@@ -111,7 +111,7 @@ public class FinStmtDetailGridScreen extends DetailGridScreen
     {
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSequence).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountDesc), this.getRecord(Account.kAccountFile).getField(Account.kDescription));
+        Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.ACCOUNT_DESC), this.getRecord(Account.ACCOUNT_FILE).getField(Account.DESCRIPTION));
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kIndent).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kInvisible).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
@@ -124,9 +124,9 @@ public class FinStmtDetailGridScreen extends DetailGridScreen
         Record recFinStmt = this.getHeaderRecord();
         FinStmt recFinStmtPopup = new FinStmt(this);
         this.removeRecord(recFinStmtPopup);    // The queryconverter will free this.
-        recFinStmtPopup.setKeyArea(FinStmt.kFinStmtHeaderIDKey);
-        recFinStmtPopup.addListener(new StringSubFileFilter(recFinStmt.getField(FinStmt.kFinStmtHeaderID).toString(), FinStmt.kFinStmtHeaderID, null, -1, null, -1));
-        this.getMainRecord().getField(FinStmtDetail.kFinStmtID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.kFinStmtHeaderIDKey, FinStmt.kStatementDesc, false, false);
+        recFinStmtPopup.setKeyArea(FinStmt.FIN_STMT_HEADER_ID_KEY);
+        recFinStmtPopup.addListener(new StringSubFileFilter(recFinStmt.getField(FinStmt.FIN_STMT_HEADER_ID).toString(), FinStmt.FIN_STMT_HEADER_ID, null, null, null, null));
+        this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.FIN_STMT_HEADER_ID_KEY, FinStmt.STATEMENT_DESC, false, false);
     }
     /**
      * Process the command.
@@ -144,7 +144,7 @@ public class FinStmtDetailGridScreen extends DetailGridScreen
         if (strCommand.equalsIgnoreCase(FinStmtDetail.RENUMBER))
         {
             FinStmtDetail recFinStmtDetail = new FinStmtDetail(this);
-            recFinStmtDetail.renumber(this.getRecord(FinStmt.kFinStmtFile));
+            recFinStmtDetail.renumber(this.getRecord(FinStmt.FIN_STMT_FILE));
             recFinStmtDetail.free();
             recFinStmtDetail = null;
             this.reSelectRecords();

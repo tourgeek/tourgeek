@@ -312,15 +312,15 @@ public class TourHeaderTransport extends TourHeaderDetail
     {
         super.addScreenListeners(screen);
         
-        Record recCity = ((ReferenceField)this.getField(TourHeaderTransport.kCityID)).getReferenceRecord();
-        recCity.getField(City.kCityCode).addListener(new MainReadOnlyHandler(City.kCityCodeKey));
-        this.getField(TourHeaderTransport.kCityID).addListener(new MoveOnChangeHandler(this.getField(TourHeaderTransport.kCityCode), recCity.getField(City.kCityCode)));
-        this.getField(TourHeaderTransport.kCityCode).addListener(new MoveOnChangeHandler(recCity.getField(City.kCityCode), this.getField(TourHeaderTransport.kCityCode)));
+        Record recCity = ((ReferenceField)this.getField(TourHeaderTransport.CITY_ID)).getReferenceRecord();
+        recCity.getField(City.CITY_CODE).addListener(new MainReadOnlyHandler(City.CITY_CODE_KEY));
+        this.getField(TourHeaderTransport.CITY_ID).addListener(new MoveOnChangeHandler(this.getField(TourHeaderTransport.CITY_CODE), recCity.getField(City.CITY_CODE)));
+        this.getField(TourHeaderTransport.CITY_CODE).addListener(new MoveOnChangeHandler(recCity.getField(City.CITY_CODE), this.getField(TourHeaderTransport.CITY_CODE)));
         
-        recCity = ((ReferenceField)this.getField(TourHeaderTransport.kToCityID)).getReferenceRecord();
-        recCity.getField(City.kCityCode).addListener(new MainReadOnlyHandler(City.kCityCodeKey));
-        this.getField(TourHeaderTransport.kToCityID).addListener(new MoveOnChangeHandler(this.getField(TourHeaderTransport.kToCityCode), recCity.getField(City.kCityCode)));
-        this.getField(TourHeaderTransport.kToCityCode).addListener(new MoveOnChangeHandler(recCity.getField(City.kCityCode), this.getField(TourHeaderTransport.kToCityCode)));
+        recCity = ((ReferenceField)this.getField(TourHeaderTransport.TO_CITY_ID)).getReferenceRecord();
+        recCity.getField(City.CITY_CODE).addListener(new MainReadOnlyHandler(City.CITY_CODE_KEY));
+        this.getField(TourHeaderTransport.TO_CITY_ID).addListener(new MoveOnChangeHandler(this.getField(TourHeaderTransport.TO_CITY_CODE), recCity.getField(City.CITY_CODE)));
+        this.getField(TourHeaderTransport.TO_CITY_CODE).addListener(new MoveOnChangeHandler(recCity.getField(City.CITY_CODE), this.getField(TourHeaderTransport.TO_CITY_CODE)));
     }
 
 }

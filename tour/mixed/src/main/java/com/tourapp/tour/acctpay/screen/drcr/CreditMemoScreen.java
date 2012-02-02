@@ -100,35 +100,35 @@ public class CreditMemoScreen extends Screen
     public void addListeners()
     {
         super.addListeners();
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.CREDIT_MEMO);
-        this.getMainRecord().getField(ApTrx.kTrxStatusID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.kID)));
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.CREDIT_MEMO);
+        this.getMainRecord().getField(ApTrx.TRX_STATUS_ID).addListener(new InitFieldHandler(recTrxStatus.getField(TrxStatus.ID)));
         this.getMainRecord().addListener(new UpdateCreditMemoHandler(null));
         // Invoice balance = invoice amount and select for payment
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new CopyFieldHandler(ApTrx.kInvoiceBalance));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new CopyFieldHandler(ApTrx.kAmountSelected));
-        this.getMainRecord().getField(ApTrx.kInvoiceLocal).addListener(new CopyFieldHandler(ApTrx.kInvoiceBalanceLocal));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new CopyFieldHandler(ApTrx.INVOICE_BALANCE));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new CopyFieldHandler(ApTrx.AMOUNT_SELECTED));
+        this.getMainRecord().getField(ApTrx.INVOICE_LOCAL).addListener(new CopyFieldHandler(ApTrx.INVOICE_BALANCE_LOCAL));
         
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
-        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-        this.getMainRecord().getField(ApTrx.kVendorID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kDepartureExchange), recCurrencys.getField(Currencys.kLastRate)));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.kDepartureExchange), recCurrencys.getField(Currencys.kLastRate)));
-        this.getMainRecord().getField(ApTrx.kInvoiceAmount).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kInvoiceLocal), this.getMainRecord().getField(ApTrx.kDepartureExchange), this.getMainRecord().getField(ApTrx.kInvoiceAmount), CalcBalanceHandler.MULTIPLY, true));
-        this.getMainRecord().getField(ApTrx.kDepartureExchange).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.kInvoiceLocal), this.getMainRecord().getField(ApTrx.kDepartureExchange), this.getMainRecord().getField(ApTrx.kInvoiceAmount), CalcBalanceHandler.MULTIPLY, true));
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
+        Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+        this.getMainRecord().getField(ApTrx.VENDOR_ID).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), recCurrencys.getField(Currencys.LAST_RATE)));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new MoveOnChangeHandler(this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), recCurrencys.getField(Currencys.LAST_RATE)));
+        this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.INVOICE_LOCAL), this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT), CalcBalanceHandler.MULTIPLY, true));
+        this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE).addListener(new CalcBalanceHandler(this.getMainRecord().getField(ApTrx.INVOICE_LOCAL), this.getMainRecord().getField(ApTrx.DEPARTURE_EXCHANGE), this.getMainRecord().getField(ApTrx.INVOICE_AMOUNT), CalcBalanceHandler.MULTIPLY, true));
         
-        this.getScreenRecord().getField(DebitMemoScreenRecord.kApAccountID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kApAccountID)));
-        this.getScreenRecord().getField(DebitMemoScreenRecord.kTourAccountID).addListener(new InitFieldHandler(this.getRecord(ApControl.kApControlFile).getField(ApControl.kCostAccountID)));
+        this.getScreenRecord().getField(DebitMemoScreenRecord.AP_ACCOUNT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.AP_ACCOUNT_ID)));
+        this.getScreenRecord().getField(DebitMemoScreenRecord.TOUR_ACCOUNT_ID).addListener(new InitFieldHandler(this.getRecord(ApControl.AP_CONTROL_FILE).getField(ApControl.COST_ACCOUNT_ID)));
     }
     /**
      * Set up all the screen fields.
      */
     public void setupSFields()
     {
-        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+        Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
         if (recVendor != null)
         {    // Make sure currency is read for LocalCurrencyField(s).
-            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-            recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+            Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+            recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTourID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

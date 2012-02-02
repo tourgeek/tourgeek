@@ -88,7 +88,7 @@ public class ApCutoffVenFooting extends ReportBreakScreen
      */
     public Object getBreakValue()
     {
-        return this.getRecord(Vendor.kVendorFile).getField(Vendor.kID).getData();
+        return this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.ID).getData();
     }
 
 }

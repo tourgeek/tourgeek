@@ -86,13 +86,13 @@ public class LinkTrxGridScreen extends DetailGridScreen
     public void addListeners()
     {
         super.addListeners();
-        TrxDesc recTrxDesc = (TrxDesc)this.getRecord(TrxDesc.kTrxDescFile);
+        TrxDesc recTrxDesc = (TrxDesc)this.getRecord(TrxDesc.TRX_DESC_FILE);
         recTrxDesc = ((Trx)m_recHeader).getTrxDesc(recTrxDesc);
         LinkTrx recLinkTrx = (LinkTrx)this.getMainRecord();
-        recLinkTrx.setKeyArea(LinkTrx.kLinkedTrxIDKey);
-        recLinkTrx.addListener(new SubFileFilter(this.getHeaderRecord().getField(Trx.kID), LinkTrx.kLinkedTrxID, recTrxDesc.getField(TrxDesc.kID), LinkTrx.kLinkedTrxDescID, null, -1, true));
+        recLinkTrx.setKeyArea(LinkTrx.LINKED_TRX_ID_KEY);
+        recLinkTrx.addListener(new SubFileFilter(this.getHeaderRecord().getField(Trx.ID), LinkTrx.LINKED_TRX_ID, recTrxDesc.getField(TrxDesc.ID), LinkTrx.LINKED_TRX_DESC_ID, null, null, true));
         
-        this.getHeaderRecord().getField(Trx.kID).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(Trx.ID).addListener(new FieldReSelectHandler(this));
         
         this.setEditing(false);
     }

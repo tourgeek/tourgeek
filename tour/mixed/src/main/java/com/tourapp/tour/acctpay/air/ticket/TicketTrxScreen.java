@@ -80,8 +80,8 @@ public class TicketTrxScreen extends ApTrxScreen
     public void addListeners()
     {
         super.addListeners();
-        this.getMainRecord().getField(TicketTrx.kTicketNumber).setEnabled(false);
-        this.getMainRecord().getField(TicketTrx.kIssueDate).setEnabled(false);
+        this.getMainRecord().getField(TicketTrx.TICKET_NUMBER).setEnabled(false);
+        this.getMainRecord().getField(TicketTrx.ISSUE_DATE).setEnabled(false);
     }
     /**
      * Set up all the screen fields.

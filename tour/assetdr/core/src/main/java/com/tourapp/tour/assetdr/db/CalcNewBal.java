@@ -52,7 +52,7 @@ public class CalcNewBal extends SubFileFilter
     public void init(BaseField mainFilesField, BaseField fldDate)
     {
         m_fldDate = null;
-        super.init(null, null, -1, mainFilesField, BankTrx.kBankAcctID, null, -1, null, -1, false, false, false);
+        super.init(null, null, null, null, -1, null, mainFilesField, BankTrx.kBankAcctID, null, null, -1, null, false, false, false);
         m_fldDate = fldDate;
     }
     /**
@@ -60,7 +60,7 @@ public class CalcNewBal extends SubFileFilter
      */
     public void doEndKey()
     {
-        this.getOwner().getField(BankTrx.kTrxDate).moveFieldToThis(m_fldDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getOwner().getField(BankTrx.TRX_DATE).moveFieldToThis(m_fldDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         super.doEndKey();
     }
     /**

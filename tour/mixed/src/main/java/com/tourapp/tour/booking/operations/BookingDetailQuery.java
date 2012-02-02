@@ -78,22 +78,22 @@ public class BookingDetailQuery extends QueryRecord
     {
         this.setSelected(false);
         super.selectFields();
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kID).setSelected(true);
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kProductTypeID).setSelected(true);
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kStatusSummary).setSelected(true);
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kDetailDate).setSelected(true);
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kDescription).setSelected(true);
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kBookingID).setSelected(true);
-        this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kVendorID).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kDepartureDate).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kTourStatusID).setSelected(true);
-        this.getField(Tour.kTourFile, Tour.kTourHeaderID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kGenericName).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kBookingDate).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kModDate).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kEmployeeID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kEmployeeModID).setSelected(true);
-        this.getField(Booking.kBookingFile, Booking.kBookingStatusID).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.ID).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.PRODUCT_TYPE_ID).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.STATUS_SUMMARY).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.DETAIL_DATE).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.DESCRIPTION).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.BOOKING_ID).setSelected(true);
+        this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.VENDOR_ID).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.DEPARTURE_DATE).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.TOUR_STATUS_ID).setSelected(true);
+        this.getField(Tour.TOUR_FILE, Tour.TOUR_HEADER_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.GENERIC_NAME).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.BOOKING_DATE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.MOD_DATE).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.EMPLOYEE_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.EMPLOYEE_MOD_ID).setSelected(true);
+        this.getField(Booking.BOOKING_FILE, Booking.BOOKING_STATUS_ID).setSelected(true);
     }
     /**
      * Setup this key area.
@@ -104,7 +104,7 @@ public class BookingDetailQuery extends QueryRecord
         if (iKeyArea == DBConstants.MAIN_KEY_AREA)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(this.getField(BookingDetail.kBookingDetailFile, BookingDetail.kID), DBConstants.ASCENDING);
+            keyArea.addKeyField(this.getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.ID), DBConstants.ASCENDING);
         }
         return keyArea;
     }
@@ -113,8 +113,8 @@ public class BookingDetailQuery extends QueryRecord
      */
     public void setupRelationships()
     {
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(BookingDetail.kBookingDetailFile), this.getRecord(Booking.kBookingFile), BookingDetail.kBookingID, Booking.kID);
-        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(BookingDetail.kBookingDetailFile), this.getRecord(Tour.kTourFile), BookingDetail.kTourID, Tour.kID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(BookingDetail.BOOKING_DETAIL_FILE), this.getRecord(Booking.BOOKING_FILE), BookingDetail.BOOKING_ID, Booking.ID);
+        this.addRelationship(DBConstants.LEFT_OUTER, this.getRecord(BookingDetail.BOOKING_DETAIL_FILE), this.getRecord(Tour.TOUR_FILE), BookingDetail.TOUR_ID, Tour.ID);
     }
 
 }

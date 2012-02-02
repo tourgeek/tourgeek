@@ -15,6 +15,8 @@ public class ProductChain extends FieldList
     implements ProductChainModel
 {
 
+    //public static final String ID = ID;
+
     public ProductChain()
     {
         super();

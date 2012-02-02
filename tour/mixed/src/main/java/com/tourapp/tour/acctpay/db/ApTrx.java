@@ -417,20 +417,20 @@ public class ApTrx extends Trx
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.getField(ApTrx.kTrxStatusID).addListener(new UpdateActiveTrxStatus(this.getField(ApTrx.kActiveTrx)));
-        this.getField(ApTrx.kDepartureDate).addListener(new GetDepartureDateHandler((TourField)this.getField(ApTrx.kTourID)));
+        this.getField(ApTrx.TRX_STATUS_ID).addListener(new UpdateActiveTrxStatus(this.getField(ApTrx.ACTIVE_TRX)));
+        this.getField(ApTrx.DEPARTURE_DATE).addListener(new GetDepartureDateHandler((TourField)this.getField(ApTrx.TOUR_ID)));
         this.addListener(new NoDeleteModifyHandler(true, false));
         Record recApControl = null;
         RecordOwner recordOwner = this.findRecordOwner();
         if (recordOwner != null)
-            recApControl = (Record)recordOwner.getRecord(ApControl.kApControlFile);
+            recApControl = (Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE);
         if (recApControl == null)
         {
             recApControl = new ApControl(recordOwner);
             this.addListener(new FreeOnFreeHandler(recApControl));
         }
-        if (recApControl.getField(ApControl.kAutoApCode).getState() == true)
-            this.addListener(new MoveIDToCodeHandler(null));
+        if (recApControl.getField(ApControl.AUTO_AP_CODE).getState() == true)
+            this.addListener(new MoveIDToCodeHandler((String)null));
         this.addListener(new ApTrxStatusHandler(null));
     }
     /**
@@ -440,7 +440,7 @@ public class ApTrx extends Trx
      */
     public BaseField getSharedRecordTypeKey()
     {
-        return this.getField(ApTrx.kApTrxTypeID);
+        return this.getField(ApTrx.AP_TRX_TYPE_ID);
     }
     /**
      * Get the shared record that goes with this key.
@@ -465,15 +465,15 @@ public class ApTrx extends Trx
      */
     public ProductCategory getProductCategory()
     {
-        if (this.getField(ApTrx.kTourID).isNull())
+        if (this.getField(ApTrx.TOUR_ID).isNull())
             return null;    // No tour
-        Tour recTour = (Tour)((ReferenceField)this.getField(ApTrx.kTourID)).getReference();
+        Tour recTour = (Tour)((ReferenceField)this.getField(ApTrx.TOUR_ID)).getReference();
         if (recTour == null)
             return null;
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.kTourHeaderID)).getReference();
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
         if (recTourHeader == null)
             return null;
-        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.kProductCatID)).getReference();
+        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
         return recProductCategory;
     }
     /**
@@ -483,7 +483,7 @@ public class ApTrx extends Trx
      */
     public int commandToDocType(String strCommand)
     {
-        if (PaymentHistory.kPaymentHistoryFile.equalsIgnoreCase(strCommand))
+        if (PaymentHistory.PAYMENT_HISTORY_FILE.equalsIgnoreCase(strCommand))
             return ApTrx.PAYMENT_HISTORY;
         if (PaymentHistory.PAYMENT_DISTRIBUTION.equalsIgnoreCase(strCommand))
             return ApTrx.PAYMENT_DISTRIBUTION;
@@ -503,18 +503,18 @@ public class ApTrx extends Trx
     {
         ApTrx recApTrx = null;
         try   {
-            this.getField(ApTrx.kApTrxTypeID).setValue(ApTrx.AP_TRX_TYPE);                
+            this.getField(ApTrx.AP_TRX_TYPE_ID).setValue(ApTrx.AP_TRX_TYPE);                
             if (iProductTypeID == ProductType.AIR_ID)
-                this.getField(ApTrx.kApTrxTypeID).setValue(ApTrx.TICKET_TRX_TYPE);                
+                this.getField(ApTrx.AP_TRX_TYPE_ID).setValue(ApTrx.TICKET_TRX_TYPE);                
             this.addNew();
             recApTrx = (ApTrx)this.getTable().getCurrentTable().getRecord();
-            recApTrx.getField(ApTrx.kTourID).moveFieldToThis(fldTourID);
-            recApTrx.getField(ApTrx.kVendorID).moveFieldToThis(recVendor.getField(Vendor.kID));
-            recApTrx.getField(ApTrx.kProductTypeID).setValue(iProductTypeID);
+            recApTrx.getField(ApTrx.TOUR_ID).moveFieldToThis(fldTourID);
+            recApTrx.getField(ApTrx.VENDOR_ID).moveFieldToThis(recVendor.getField(Vendor.ID));
+            recApTrx.getField(ApTrx.PRODUCT_TYPE_ID).setValue(iProductTypeID);
         
-            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.kTrxStatusID)).getReferenceRecord();
-            int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.DEPARTURE_ESTIMATE);
-            recApTrx.getField(ApTrx.kTrxStatusID).setValue(iTrxStatusID);
+            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)recApTrx.getField(ApTrx.TRX_STATUS_ID)).getReferenceRecord();
+            int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.DEP_ESTIMATE);
+            recApTrx.getField(ApTrx.TRX_STATUS_ID).setValue(iTrxStatusID);
             recApTrx.add();
             Object bookmark = recApTrx.getLastModified(DBConstants.DATA_SOURCE_HANDLE);
             recApTrx.setHandle(bookmark, DBConstants.DATA_SOURCE_HANDLE);
@@ -535,11 +535,11 @@ public class ApTrx extends Trx
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         
-        this.getField(ApTrx.kDescription).setString(DBConstants.BLANK);
-        ((DateField)this.getField(ApTrx.kStartServiceDate)).setData(null);
-        ((DateField)this.getField(ApTrx.kEndServiceDate)).setData(null);
-        this.getField(ApTrx.kDepartureEstimate).setValue(0.00);
-        this.getField(ApTrx.kDepartureEstimateLocal).setValue(0.00);
+        this.getField(ApTrx.DESCRIPTION).setString(DBConstants.BLANK);
+        ((DateField)this.getField(ApTrx.START_SERVICE_DATE)).setData(null);
+        ((DateField)this.getField(ApTrx.END_SERVICE_DATE)).setData(null);
+        this.getField(ApTrx.DEPARTURE_ESTIMATE).setValue(0.00);
+        this.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).setValue(0.00);
         
         BookingDetail recBookingDetail = (BookingDetail)tblBookingDetail.getCurrentTable().getRecord();
         int iOldOpenMode = this.getOpenMode();
@@ -552,16 +552,16 @@ public class ApTrx extends Trx
             while (recBookingDetail != null)
             {
                 boolean bProcessThisRecord = true;
-                if (!recBookingDetail.getField(BookingDetail.kApTrxID).isNull())
-                    if (!recBookingDetail.getField(BookingDetail.kApTrxID).equals(this.getField(ApTrx.kID)))
+                if (!recBookingDetail.getField(BookingDetail.AP_TRX_ID).isNull())
+                    if (!recBookingDetail.getField(BookingDetail.AP_TRX_ID).equals(this.getField(ApTrx.ID)))
                         bProcessThisRecord = false;   // If this is already tacked to another ApTrx, skip it.
-                if (!this.getField(ApTrx.kTourID).equals(recBookingDetail.getField(BookingDetail.kTourID)))
+                if (!this.getField(ApTrx.TOUR_ID).equals(recBookingDetail.getField(BookingDetail.TOUR_ID)))
                     break;
-                if (this.getField(ApTrx.kVendorID).compareTo(recBookingDetail.getField(BookingDetail.kVendorID)) != 0)
+                if (this.getField(ApTrx.VENDOR_ID).compareTo(recBookingDetail.getField(BookingDetail.VENDOR_ID)) != 0)
                     break;
                 if (recVendor.getEditMode() == DBConstants.EDIT_CURRENT)
-                    if (OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
-                        if (this.getField(ApTrx.kProductTypeID).compareTo(recBookingDetail.getField(BookingDetail.kProductTypeID)) != 0)
+                    if (OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
+                        if (this.getField(ApTrx.PRODUCT_TYPE_ID).compareTo(recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID)) != 0)
                             break;  // Each A/P Trx contains all detail items in this product type
         
                 if (bProcessThisRecord)
@@ -571,7 +571,7 @@ public class ApTrx extends Trx
                     try
                     {
                         recBookingDetail.edit();
-                        recBookingDetail.getField(BookingDetail.kApTrxID).moveFieldToThis(this.getField(ApTrx.kID));
+                        recBookingDetail.getField(BookingDetail.AP_TRX_ID).moveFieldToThis(this.getField(ApTrx.ID));
                         if (recBookingDetail.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                             recBookingDetail.set();   // Possible that the listeners re-wrote this record already.
                     }
@@ -584,7 +584,7 @@ public class ApTrx extends Trx
         
                 recBookingDetail = (BookingDetail)tblBookingDetail.next();
                 if (recVendor.getEditMode() == DBConstants.EDIT_CURRENT)
-                    if (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
+                    if (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
                         break;  // Each A/P Trx contains one detail item
             }
         
@@ -602,40 +602,40 @@ public class ApTrx extends Trx
      */
     public void addBookingDetailInfo(BookingDetail recBookingDetail)
     {
-        double dProductCost = this.getField(ApTrx.kDepartureEstimate).getValue();
-        dProductCost += recBookingDetail.getField(BookingDetail.kTotalCost).getValue();
-        this.getField(ApTrx.kDepartureEstimate).setValue(dProductCost);
-        double dProductCostLocal = this.getField(ApTrx.kDepartureEstimateLocal).getValue();
-        dProductCostLocal += recBookingDetail.getField(BookingDetail.kTotalCostLocal).getValue();
-        this.getField(ApTrx.kDepartureEstimateLocal).setValue(dProductCostLocal);
+        double dProductCost = this.getField(ApTrx.DEPARTURE_ESTIMATE).getValue();
+        dProductCost += recBookingDetail.getField(BookingDetail.TOTAL_COST).getValue();
+        this.getField(ApTrx.DEPARTURE_ESTIMATE).setValue(dProductCost);
+        double dProductCostLocal = this.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).getValue();
+        dProductCostLocal += recBookingDetail.getField(BookingDetail.TOTAL_COST_LOCAL).getValue();
+        this.getField(ApTrx.DEPARTURE_ESTIMATE_LOCAL).setValue(dProductCostLocal);
         if (dProductCostLocal != 0)
-            this.getField(ApTrx.kDepartureExchange).setValue(dProductCost / dProductCostLocal);
+            this.getField(ApTrx.DEPARTURE_EXCHANGE).setValue(dProductCost / dProductCostLocal);
         
-        String strServiceDesc = this.getField(ApTrx.kDescription).getString();
+        String strServiceDesc = this.getField(ApTrx.DESCRIPTION).getString();
         if (strServiceDesc.length() > 0)
             strServiceDesc += ", ";
         strServiceDesc += recBookingDetail.getProductDesc();
-        this.getField(ApTrx.kDescription).setString(strServiceDesc);
+        this.getField(ApTrx.DESCRIPTION).setString(strServiceDesc);
         
-        Date dateStart = ((DateField)this.getField(ApTrx.kStartServiceDate)).getDateTime();
-        Date dateEnd = ((DateField)this.getField(ApTrx.kEndServiceDate)).getDateTime();
+        Date dateStart = ((DateField)this.getField(ApTrx.START_SERVICE_DATE)).getDateTime();
+        Date dateEnd = ((DateField)this.getField(ApTrx.END_SERVICE_DATE)).getDateTime();
         Date date = recBookingDetail.getStartDate();
         if ((dateStart == null) || (date.getTime() < dateStart.getTime()))
             dateStart = date;
         date = recBookingDetail.getEndDate();
         if ((dateEnd == null) || (date.getTime() > dateEnd.getTime()))
             dateEnd = date;
-        ((DateField)this.getField(ApTrx.kStartServiceDate)).setDate(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        ((DateField)this.getField(ApTrx.kEndServiceDate)).setDate(dateEnd, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((DateField)this.getField(ApTrx.START_SERVICE_DATE)).setDate(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((DateField)this.getField(ApTrx.END_SERVICE_DATE)).setDate(dateEnd, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         
-        this.getField(ApTrx.kFinalizationDate).setValue(DateTimeField.currentTime());
+        this.getField(ApTrx.FINALIZATION_DATE).setValue(DateTimeField.currentTime());
         
-        if (this.getField(ApTrx.kVendorID).isNull())
+        if (this.getField(ApTrx.VENDOR_ID).isNull())
             if (dProductCost == 0.0)
         {   // Special case - This booking detail is a place holder such as a tour component
-            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)this.getField(ApTrx.kTrxStatusID)).getReferenceRecord();
-            int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.kApTrxFile, ApTrx.NO_VOUCHER);
-            this.getField(ApTrx.kTrxStatusID).setValue(iTrxStatusID);
+            TrxStatus recTrxStatus = (TrxStatus)((ReferenceField)this.getField(ApTrx.TRX_STATUS_ID)).getReferenceRecord();
+            int iTrxStatusID = recTrxStatus.getTrxStatusID(TransactionType.ACCTPAY, ApTrx.AP_TRX_FILE, ApTrx.NO_VOUCHER);
+            this.getField(ApTrx.TRX_STATUS_ID).setValue(iTrxStatusID);
         }
     }
     /**
@@ -647,10 +647,10 @@ public class ApTrx extends Trx
         if ((recBookingDetail == null)
             || (recBookingDetail.getEditMode() == DBConstants.EDIT_ADD)
             || (recBookingDetail.getEditMode() == DBConstants.EDIT_NONE)
-            || (!recBookingDetail.getField(BookingDetail.kApTrxID).isNull()))
+            || (!recBookingDetail.getField(BookingDetail.AP_TRX_ID).isNull()))
                 return DBConstants.ERROR_RETURN;
         // Record is current and aptrx is null.
-        Vendor recVendor = (Vendor)((ReferenceField)recBookingDetail.getField(BookingDetail.kVendorID)).getReference();
+        Vendor recVendor = (Vendor)((ReferenceField)recBookingDetail.getField(BookingDetail.VENDOR_ID)).getReference();
         if ((recVendor == null)
             || (recVendor.getEditMode() == DBConstants.EDIT_ADD)
             || (recVendor.getEditMode() == DBConstants.EDIT_NONE))
@@ -662,30 +662,30 @@ public class ApTrx extends Trx
                 this.addListener(new UpdateDepEstHandler(null));
             this.setOpenMode(iOldOpenMode & ~DBConstants.OPEN_READ_ONLY);   // Allow write (I don't know where this file has been)
             this.addNew();  // Each A/P Trx contains one detail item
-            if (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
+            if (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
                 this.addNew();  // Each A/P Trx contains one detail item
             else
             { // OperationTypeField.ALL_TOGETHER_CODE or OperationTypeField.LIKE_TOGETHER_CODE
-                this.getField(ApTrx.kTourID).moveFieldToThis(recBookingDetail.getField(BookingDetail.kTourID));
-                this.getField(ApTrx.kVendorID).moveFieldToThis(recVendor.getField(Vendor.kID));
-                if (OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
-                    this.getField(ApTrx.kProductTypeID).moveFieldToThis(recBookingDetail.getField(BookingDetail.kProductTypeID));
+                this.getField(ApTrx.TOUR_ID).moveFieldToThis(recBookingDetail.getField(BookingDetail.TOUR_ID));
+                this.getField(ApTrx.VENDOR_ID).moveFieldToThis(recVendor.getField(Vendor.ID));
+                if (OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
+                    this.getField(ApTrx.PRODUCT_TYPE_ID).moveFieldToThis(recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID));
                 if ((this.seek(">="))
-                    && (this.getField(ApTrx.kTourID).equals(recBookingDetail.getField(BookingDetail.kTourID)))
-                        && (this.getField(ApTrx.kVendorID).equals(recVendor.getField(Vendor.kID))))
+                    && (this.getField(ApTrx.TOUR_ID).equals(recBookingDetail.getField(BookingDetail.TOUR_ID)))
+                        && (this.getField(ApTrx.VENDOR_ID).equals(recVendor.getField(Vendor.ID))))
                 {
-                    if ((OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.kOperationTypeCode).toString()))
-                        && (!this.getField(ApTrx.kProductTypeID).equals(recBookingDetail.getField(BookingDetail.kProductTypeID))))
+                    if ((OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
+                        && (!this.getField(ApTrx.PRODUCT_TYPE_ID).equals(recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID))))
                             this.addNew();
                 }
                 else
                     this.addNew();
             }
             if (this.getEditMode() == DBConstants.EDIT_ADD)
-                this.addNewApTrx(recBookingDetail.getField(BookingDetail.kTourID), recVendor, (int)recBookingDetail.getField(BookingDetail.kProductTypeID).getValue());
+                this.addNewApTrx(recBookingDetail.getField(BookingDetail.TOUR_ID), recVendor, (int)recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID).getValue());
         
             recBookingDetail.edit();
-            recBookingDetail.getField(BookingDetail.kApTrxID).moveFieldToThis(this.getField(ApTrx.kID));
+            recBookingDetail.getField(BookingDetail.AP_TRX_ID).moveFieldToThis(this.getField(ApTrx.ID));
             recBookingDetail.writeAndRefresh();   // Possible that the listeners re-wrote this record already.
         
             this.edit();

@@ -58,7 +58,7 @@ public class FinalizeHandler extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        if (this.getOwner().getRecord().getField(Tour.kFinalized).getState() == true)
+        if (this.getOwner().getRecord().getField(Tour.FINALIZED).getState() == true)
             ((Tour)this.getOwner().getRecord()).updateTourApTrx(null, null);
         return super.fieldChanged(bDisplayOption, iMoveMode);
     }

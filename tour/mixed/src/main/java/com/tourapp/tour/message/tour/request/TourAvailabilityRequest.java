@@ -77,7 +77,7 @@ public class TourAvailabilityRequest extends ProductAvailabilityRequest
         if (iStatus == BaseDataStatus.DATA_VALID)
         {
             BookingDetail recBookingDetail = (BookingDetail)record;
-        //    if (recBookingDetail.getField(BookingDetail.kInventoryManual).getState() == true)
+        //    if (recBookingDetail.getField(BookingDetail.INVENTORY_MANUAL).getState() == true)
         //        iStatus = BaseMessageStatus.VALID;  // No inventory lookup required
         }
         return iStatus;
@@ -91,7 +91,7 @@ public class TourAvailabilityRequest extends ProductAvailabilityRequest
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;
-        // this.putRawFieldData(Product.INVENTORY_PARAM, recBookingDetail.getField(BookingDetail.kInventoryManual));
+        // this.putRawFieldData(Product.INVENTORY_PARAM, recBookingDetail.getField(BookingDetail.INVENTORY_MANUAL));
         return iErrorCode;
     }
     /**

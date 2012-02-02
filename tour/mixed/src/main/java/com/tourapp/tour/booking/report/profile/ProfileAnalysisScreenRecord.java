@@ -35,12 +35,19 @@ public class ProfileAnalysisScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String PRIMARY_ANALYSIS_TYPE = "PrimaryAnalysisType";
     public static final int kPrimaryAnalysisType = kReportScreenRecordLastField + 1;
+    public static final String SECONDARY_ANALYSIS_TYPE = "SecondaryAnalysisType";
     public static final int kSecondaryAnalysisType = kPrimaryAnalysisType + 1;
+    public static final String THIRD_ANALYSIS_TYPE = "ThirdAnalysisType";
     public static final int kThirdAnalysisType = kSecondaryAnalysisType + 1;
+    public static final String GROSS_SALES_START_DATE = "GrossSalesStartDate";
     public static final int kGrossSalesStartDate = kThirdAnalysisType + 1;
+    public static final String GROSS_SALES_END_DATE = "GrossSalesEndDate";
     public static final int kGrossSalesEndDate = kGrossSalesStartDate + 1;
+    public static final String GROSS_SALES = "GrossSales";
     public static final int kGrossSales = kGrossSalesEndDate + 1;
+    public static final String TEMPLATE = "template";
     public static final int ktemplate = kGrossSales + 1;
     public static final int kProfileAnalysisScreenRecordLastField = ktemplate;
     public static final int kProfileAnalysisScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;

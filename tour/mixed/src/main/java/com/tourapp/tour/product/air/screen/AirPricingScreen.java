@@ -83,7 +83,7 @@ public class AirPricingScreen extends ProductPricingScreen
      */
     public Record getHeaderRecord()
     {
-        return this.getRecord(Air.kAirFile);
+        return this.getRecord(Air.AIR_FILE);
     }
     /**
      * Set up all the screen fields.

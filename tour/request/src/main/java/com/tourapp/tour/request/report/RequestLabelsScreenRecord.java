@@ -31,12 +31,19 @@ public class RequestLabelsScreenRecord extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String SEND_VIA_ID = "SendViaID";
     public static final int kSendViaID = kScreenRecordLastField + 1;
+    public static final String RESTORE_FROM_DATE = "RestoreFromDate";
     public static final int kRestoreFromDate = kSendViaID + 1;
+    public static final String STYLESHEET = "Stylesheet";
     public static final int kStylesheet = kRestoreFromDate + 1;
+    public static final String FULL_ADDRESS = "FullAddress";
     public static final int kFullAddress = kStylesheet + 1;
+    public static final String REQUEST_TEXT = "RequestText";
     public static final int kRequestText = kFullAddress + 1;
+    public static final String TRUE_FIELD = "TrueField";
     public static final int kTrueField = kRequestText + 1;
+    public static final String TEMPLATE = "template";
     public static final int ktemplate = kTrueField + 1;
     public static final int kRequestLabelsScreenRecordLastField = ktemplate;
     public static final int kRequestLabelsScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;

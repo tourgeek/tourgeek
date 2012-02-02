@@ -371,7 +371,7 @@ public class TourHeaderHotel extends TourHeaderDetail
     {
         super.addListeners();
         
-        this.addListener(new SharedFileHandler(TourHeaderDetail.kProductTypeID, ProductType.HOTEL_ID));
+        this.addListener(new SharedFileHandler(TourHeaderDetail.PRODUCT_TYPE_ID, ProductType.HOTEL_ID));
     }
 
 }

@@ -83,8 +83,8 @@ public class SetupBrocDetailHandler extends FileListener
             while (m_rAmReqDetail.next() != null)
             {
                 m_rAmReqInput.addNew();
-                m_rAmReqInput.getField(RequestInput.kBrochureID).moveFieldToThis(m_rAmReqDetail.getField(RequestDetail.kBrochureID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                m_rAmReqInput.getField(RequestInput.kBrochureQty).moveFieldToThis(m_rAmReqDetail.getField(RequestDetail.kBrochureQty), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                m_rAmReqInput.getField(RequestInput.BROCHURE_ID).moveFieldToThis(m_rAmReqDetail.getField(RequestDetail.BROCHURE_ID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                m_rAmReqInput.getField(RequestInput.BROCHURE_QTY).moveFieldToThis(m_rAmReqDetail.getField(RequestDetail.BROCHURE_QTY), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
                 m_rAmReqInput.add();
             }
         } catch (DBException ex)    {
@@ -123,12 +123,12 @@ public class SetupBrocDetailHandler extends FileListener
                 m_rAmReqInput.close();
                 while (m_rAmReqInput.next() != null)
                 {
-                    if (m_rAmReqInput.getField(RequestInput.kBrochureQty).getValue() > 0)
+                    if (m_rAmReqInput.getField(RequestInput.BROCHURE_QTY).getValue() > 0)
                     {
                         m_rAmReqDetail.addNew();
-                        ((ReferenceField)m_rAmReqDetail.getField(RequestDetail.kRequestID)).setReference(m_rAmRequests, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                        m_rAmReqDetail.getField(RequestDetail.kBrochureID).moveFieldToThis(m_rAmReqInput.getField(RequestInput.kBrochureID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
-                        m_rAmReqDetail.getField(RequestDetail.kBrochureQty).moveFieldToThis(m_rAmReqInput.getField(RequestInput.kBrochureQty), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                        ((ReferenceField)m_rAmReqDetail.getField(RequestDetail.REQUEST_ID)).setReference(m_rAmRequests, DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                        m_rAmReqDetail.getField(RequestDetail.BROCHURE_ID).moveFieldToThis(m_rAmReqInput.getField(RequestInput.BROCHURE_ID), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
+                        m_rAmReqDetail.getField(RequestDetail.BROCHURE_QTY).moveFieldToThis(m_rAmReqInput.getField(RequestInput.BROCHURE_QTY), DBConstants.DONT_DISPLAY, DBConstants.SCREEN_MOVE);
                         m_rAmReqDetail.add();
                     }
                 }

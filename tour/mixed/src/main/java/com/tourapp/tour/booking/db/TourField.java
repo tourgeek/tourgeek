@@ -74,10 +74,10 @@ public class TourField extends ReferenceField
     public Record makeReferenceRecord(RecordOwner recordOwner)
     {
         Tour recTour = new Tour(recordOwner);
-        if (Booking.kBookingFile.equals(this.getRecord().getTableNames(false)))
+        if (Booking.BOOKING_FILE.equals(this.getRecord().getTableNames(false)))
         {    // Make sure that these are moved back to the booking if the user changes them
-            recTour.getField(Tour.kDescription).addListener(new SyncTourFieldHandler((Booking)this.getRecord(), Booking.kDescription));
-            recTour.getField(Tour.kCode).addListener(new SyncTourFieldHandler((Booking)this.getRecord(), Booking.kCode));
+            recTour.getField(Tour.DESCRIPTION).addListener(new SyncTourFieldHandler((Booking)this.getRecord(), Booking.DESCRIPTION));
+            recTour.getField(Tour.CODE).addListener(new SyncTourFieldHandler((Booking)this.getRecord(), Booking.CODE));
         }
         return recTour;
     }
@@ -98,13 +98,13 @@ public class TourField extends ReferenceField
             bUpdateRecord = true;
         else
             recTour = this.makeReferenceRecord();   // Only set read-only if this is created by me.
-        BaseField fldDepartureDate = recTour.getField(Tour.kDepartureDate);
+        BaseField fldDepartureDate = recTour.getField(Tour.DEPARTURE_DATE);
         fldDepartureDate.removeListener(fldDepartureDate.getListener(InitOnceFieldHandler.class.getName()), true);
-        BaseField fldTourDesc = recTour.getField(Tour.kDescription);
-        BaseField fldCode = recTour.getField(Tour.kCode);
+        BaseField fldTourDesc = recTour.getField(Tour.DESCRIPTION);
+        BaseField fldCode = recTour.getField(Tour.CODE);
         
-        recTour.setKeyArea(Tour.kCodeKey);
-        fldCode.addListener(new MainReadOnlyHandler(Tour.kCodeKey));
+        recTour.setKeyArea(Tour.CODE_KEY);
+        fldCode.addListener(new MainReadOnlyHandler(Tour.CODE_KEY));
         Converter conv = new FieldDescConverter((Converter)fldCode, (Converter)converter); // Use the description for this field
         conv = new FieldLengthConverter(conv, 10);
         ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);

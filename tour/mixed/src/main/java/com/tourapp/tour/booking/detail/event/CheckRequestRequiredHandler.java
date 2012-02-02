@@ -30,7 +30,7 @@ import org.jbundle.main.db.base.*;
  */
 public class CheckRequestRequiredHandler extends FieldListener
 {
-    protected int m_iFieldTypeToCheck;
+    protected String m_iFieldTypeToCheck;
     /**
      * Default constructor.
      */
@@ -41,7 +41,7 @@ public class CheckRequestRequiredHandler extends FieldListener
     /**
      * CheckRequestRequiredHandler Method.
      */
-    public CheckRequestRequiredHandler(int iFieldTypeToCheck)
+    public CheckRequestRequiredHandler(String iFieldTypeToCheck)
     {
         this();
         this.init(iFieldTypeToCheck);
@@ -49,9 +49,9 @@ public class CheckRequestRequiredHandler extends FieldListener
     /**
      * Initialize class fields.
      */
-    public void init(int iFieldTypeToCheck)
+    public void init(String iFieldTypeToCheck)
     {
-        m_iFieldTypeToCheck = 0;
+        m_iFieldTypeToCheck = "";
         super.init(null);
         m_iFieldTypeToCheck = iFieldTypeToCheck;
     }

@@ -104,31 +104,31 @@ public class CreditCardCollPost extends McoCollPost
     public void addTrxSpecificListeners()
     {
         // Don't call inherrited
-        BaseField fldCardID = this.getScreenRecord().getField(McoScreenRecord.kCardID);
+        BaseField fldCardID = this.getScreenRecord().getField(McoScreenRecord.CARD_ID);
         String strCardID = this.getProperty(fldCardID.getFieldName());
         fldCardID.setString(strCardID);
         
-        this.getMainRecord().setKeyArea(CreditCard.kTrxStatusIDKey);
+        this.getMainRecord().setKeyArea(CreditCard.TRX_STATUS_ID_KEY);
         
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.APPROVED);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.APPROVED);
         this.getMainRecord().addListener(new SubFileFilter(recTrxStatus));
         
-        this.getMainRecord().addListener(new CompareFileFilter(CreditCard.kCardID, this.getScreenRecord().getField(McoScreenRecord.kCardID), FileListener.EQUALS, null, false));
-        this.getScreenRecord().getField(McoScreenRecord.kNullDate).setData(null); // Just need a temporary null field to compare
-        this.getMainRecord().addListener(new CompareFileFilter(CreditCard.kDatePaid, this.getScreenRecord().getField(McoScreenRecord.kNullDate), FileListener.NOT_EQUAL, null, false));
+        this.getMainRecord().addListener(new CompareFileFilter(CreditCard.CARD_ID, this.getScreenRecord().getField(McoScreenRecord.CARD_ID), FileListener.EQUALS, null, false));
+        this.getScreenRecord().getField(McoScreenRecord.NULL_DATE).setData(null); // Just need a temporary null field to compare
+        this.getMainRecord().addListener(new CompareFileFilter(CreditCard.DATE_PAID, this.getScreenRecord().getField(McoScreenRecord.NULL_DATE), FileListener.NOT_EQUAL, null, false));
         
         Record recCreditCard = this.getMainRecord();
-        recCreditCard.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kCount), false, true));
-        recCreditCard.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kTotalGross), CreditCard.kGross, false, true));
-        recCreditCard.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.kTotalNet), CreditCard.kAmountPaid, false, true));
+        recCreditCard.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.COUNT), false, true));
+        recCreditCard.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.TOTAL_GROSS), CreditCard.GROSS, false, true));
+        recCreditCard.addListener(new SubCountHandler(this.getScreenRecord().getField(McoScreenRecord.TOTAL_NET), CreditCard.AMOUNT_PAID, false, true));
         
         recCreditCard.close();
         try   {   // Recount totals
             while (recCreditCard.hasNext())
             {
                 recCreditCard.next();
-                if (recCreditCard.getField(CreditCard.kDatePaid).isNull())
+                if (recCreditCard.getField(CreditCard.DATE_PAID).isNull())
                     continue;
             }
         } catch (DBException ex)    {
@@ -159,7 +159,7 @@ public class CreditCardCollPost extends McoCollPost
      */
     public BaseTrx getBaseTrx()
     {
-        return (BaseTrx)this.getRecord(CreditCard.kCreditCardFile);
+        return (BaseTrx)this.getRecord(CreditCard.CREDIT_CARD_FILE);
     }
     /**
      * Get the batch detail record.
@@ -173,8 +173,8 @@ public class CreditCardCollPost extends McoCollPost
      */
     public int getNewTrxClass()
     {
-        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-        return recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.kCreditCardFile, CreditCard.PAID);
+        TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+        return recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, CreditCard.CREDIT_CARD_FILE, CreditCard.ITEM_PAID);
     }
     /**
      * GetTrxAccountID Method.
@@ -182,12 +182,12 @@ public class CreditCardCollPost extends McoCollPost
     public BaseField getTrxAccountID(Record recBaseArTrx)
     {
         BaseField fldAccountID = null;
-        ArControl recArControl = (ArControl)this.getRecord(ArControl.kArControlFile);
-        Card recCard = (Card)((ReferenceField)recBaseArTrx.getField(CreditCard.kCardID)).getReference();
+        ArControl recArControl = (ArControl)this.getRecord(ArControl.AR_CONTROL_FILE);
+        Card recCard = (Card)((ReferenceField)recBaseArTrx.getField(CreditCard.CARD_ID)).getReference();
         if (recCard != null)
-            fldAccountID = recCard.getField(Card.kCreditCardRecAccountID);
+            fldAccountID = recCard.getField(Card.CREDIT_CARD_REC_ACCOUNT_ID);
         if ((fldAccountID == null) || (fldAccountID.getValue() == 0))
-            fldAccountID = recArControl.getField(ArControl.kCreditCardRecAccountID);
+            fldAccountID = recArControl.getField(ArControl.CREDIT_CARD_REC_ACCOUNT_ID);
         return fldAccountID;
     }
     /**
@@ -195,7 +195,7 @@ public class CreditCardCollPost extends McoCollPost
      */
     public BaseField getDistAccountID(Record recBaseArTrx)
     {
-        return this.getRecord(ArControl.kArControlFile).getField(ArControl.kCreditCardSuspenseAccountID);
+        return this.getRecord(ArControl.AR_CONTROL_FILE).getField(ArControl.CREDIT_CARD_SUSPENSE_ACCOUNT_ID);
     }
     /**
      * GetVarAccountID Method.
@@ -203,12 +203,12 @@ public class CreditCardCollPost extends McoCollPost
     public BaseField getVarAccountID(Record recBaseArTrx)
     {
         BaseField fldAccountID = null;
-        ArControl recArControl = (ArControl)this.getRecord(ArControl.kArControlFile);
-        Card recCard = (Card)((ReferenceField)recBaseArTrx.getField(CreditCard.kCardID)).getReference();
+        ArControl recArControl = (ArControl)this.getRecord(ArControl.AR_CONTROL_FILE);
+        Card recCard = (Card)((ReferenceField)recBaseArTrx.getField(CreditCard.CARD_ID)).getReference();
         if (recCard != null)
-            fldAccountID = recCard.getField(Card.kCreditCardVarAccountID);
+            fldAccountID = recCard.getField(Card.CREDIT_CARD_VAR_ACCOUNT_ID);
         if ((fldAccountID == null) || (fldAccountID.getValue() == 0))
-            fldAccountID = recArControl.getField(ArControl.kCreditCardVarAccountID);
+            fldAccountID = recArControl.getField(ArControl.CREDIT_CARD_VAR_ACCOUNT_ID);
         return fldAccountID;
     }
 

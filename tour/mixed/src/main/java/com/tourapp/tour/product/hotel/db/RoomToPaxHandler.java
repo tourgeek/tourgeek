@@ -40,7 +40,7 @@ public class RoomToPaxHandler extends PaxToRoomHandler
      * Constructor.
      * @param iTargetFieldSeq The target field sequence to recompute on field change.
      */
-    public RoomToPaxHandler(int iTargetFieldSeq)
+    public RoomToPaxHandler(String iTargetFieldSeq)
     {
         this();
         this.init(iTargetFieldSeq);
@@ -48,9 +48,9 @@ public class RoomToPaxHandler extends PaxToRoomHandler
     /**
      * Initialize class fields.
      */
-    public void init(int iTargetFieldSeq)
+    public void init(String iTargetFieldSeq)
     {
-        super.init(null, iTargetFieldSeq, null);
+        super.init(null, -1, iTargetFieldSeq, null);
     }
     /**
      * Compute the target value.

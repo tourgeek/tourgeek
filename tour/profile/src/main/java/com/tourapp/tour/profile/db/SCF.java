@@ -181,9 +181,9 @@ public class SCF extends VirtualRecord
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.getField(SCF.kScfFrom).addListener(new ScfToHandler(null));
-        this.getField(SCF.kScfFrom).addListener(new ScfFromHandler(null));
-        this.getField(SCF.kScfTo).addListener(new ScfToHandler(null));
+        this.getField(SCF.SCF_FROM).addListener(new ScfToHandler(null));
+        this.getField(SCF.SCF_FROM).addListener(new ScfFromHandler(null));
+        this.getField(SCF.SCF_TO).addListener(new ScfToHandler(null));
     }
     /**
      * Get the default key index for grid screens and popup displays.
@@ -191,9 +191,9 @@ public class SCF extends VirtualRecord
      * Override this to supply a different key area.
      * @return The key area to use for screens and popups.
      */
-    public int getDefaultScreenKeyArea()
+    public String getDefaultScreenKeyArea()
     {
-        return SCF.kScfToKey;
+        return SCF.SCF_TO_KEY;
     }
 
 }
