@@ -78,7 +78,7 @@ public class CheckAllRecords extends BaseProcess {
     {
     	BookingDetail bookingDetail = (BookingDetail)this.getMainRecord();
     	
-    	bookingDetail.setKeyArea(Booking.kIDKey);
+    	bookingDetail.setKeyArea(Booking.ID_KEY);
     	
     	try {
 			while (bookingDetail.hasNext())
