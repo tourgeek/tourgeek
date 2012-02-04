@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class TransactionType extends FieldList
     implements TransactionTypeModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public TransactionType()
     {
@@ -56,44 +54,44 @@ public class TransactionType extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TypeCode", 20, null, null);
-        field = new FieldInfo(this, "TypeDesc", 30, null, null);
-        field = new FieldInfo(this, "TrxGroupID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TYPE_CODE, 20, null, null);
+        field = new FieldInfo(this, TYPE_DESC, 30, null, null);
+        field = new FieldInfo(this, TRX_GROUP_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "GroupCode", 20, null, null);
-        field = new FieldInfo(this, "GroupDesc", 30, null, null);
-        field = new FieldInfo(this, "TrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, GROUP_CODE, 20, null, null);
+        field = new FieldInfo(this, GROUP_DESC, 30, null, null);
+        field = new FieldInfo(this, TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DescCode", 20, null, null);
-        field = new FieldInfo(this, "Description", 30, null, null);
-        field = new FieldInfo(this, "TrxSystemID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, DESC_CODE, 20, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 30, null, null);
+        field = new FieldInfo(this, TRX_SYSTEM_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "SystemCode", 20, null, null);
-        field = new FieldInfo(this, "SystemDesc", 30, null, null);
-        field = new FieldInfo(this, "TypicalBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "PostingType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "SourceFile", 50, null, null);
-        field = new FieldInfo(this, "SourceTrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, SYSTEM_CODE, 20, null, null);
+        field = new FieldInfo(this, SYSTEM_DESC, 30, null, null);
+        field = new FieldInfo(this, TYPICAL_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, POSTING_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, SOURCE_FILE, 50, null, null);
+        field = new FieldInfo(this, SOURCE_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "SourceTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, SOURCE_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "SourcePreferredSign", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "AmountField", 50, null, null);
-        field = new FieldInfo(this, "TrxDateField", 50, null, null);
-        field = new FieldInfo(this, "EntryDateField", 50, null, null);
-        field = new FieldInfo(this, "UserIDField", 50, null, null);
-        field = new FieldInfo(this, "TrxIDField", 50, null, null);
-        field = new FieldInfo(this, "AccountIDFile", 50, null, null);
-        field = new FieldInfo(this, "AccountIDField", 50, null, null);
+        field = new FieldInfo(this, SOURCE_PREFERRED_SIGN, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AMOUNT_FIELD, 50, null, null);
+        field = new FieldInfo(this, TRX_DATE_FIELD, 50, null, null);
+        field = new FieldInfo(this, ENTRY_DATE_FIELD, 50, null, null);
+        field = new FieldInfo(this, USER_ID_FIELD, 50, null, null);
+        field = new FieldInfo(this, TRX_ID_FIELD, 50, null, null);
+        field = new FieldInfo(this, ACCOUNT_ID_FILE, 50, null, null);
+        field = new FieldInfo(this, ACCOUNT_ID_FIELD, 50, null, null);
     }
     /**
     * Set up the key areas.
@@ -101,7 +99,7 @@ public class TransactionType extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxGroupID");
         keyArea.addKeyField("TrxGroupID", Constants.ASCENDING);

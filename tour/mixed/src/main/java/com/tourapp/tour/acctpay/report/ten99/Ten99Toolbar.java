@@ -74,11 +74,11 @@ public class Ten99Toolbar extends ReportToolbar
         super.setupSFields();
         //if (this.isPrintReport())
         //  return;   // Don't display params if entered
-        this.getRecord(ApReportScreenRecord.kApReportScreenRecordFile).getField(ApReportScreenRecord.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApReportScreenRecord.kApReportScreenRecordFile).getField(ApReportScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApReportScreenRecord.kApReportScreenRecordFile).getField(ApReportScreenRecord.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApReportScreenRecord.kApReportScreenRecordFile).getField(ApReportScreenRecord.kExcludeAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApReportScreenRecord.kApReportScreenRecordFile).getField(ApReportScreenRecord.ktemplate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApReportScreenRecord.AP_REPORT_SCREEN_RECORD_FILE).getField(ApReportScreenRecord.VENDOR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApReportScreenRecord.AP_REPORT_SCREEN_RECORD_FILE).getField(ApReportScreenRecord.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApReportScreenRecord.AP_REPORT_SCREEN_RECORD_FILE).getField(ApReportScreenRecord.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApReportScreenRecord.AP_REPORT_SCREEN_RECORD_FILE).getField(ApReportScreenRecord.EXCLUDE_AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApReportScreenRecord.AP_REPORT_SCREEN_RECORD_FILE).getField(ApReportScreenRecord.TEMPLATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

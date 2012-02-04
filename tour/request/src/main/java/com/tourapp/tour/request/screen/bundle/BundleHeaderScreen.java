@@ -68,7 +68,7 @@ public class BundleHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BundleDetailScreenRecord.kBundleDetailScreenRecordFile).getField(BundleDetailScreenRecord.kBundleID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BundleDetailScreenRecord.BUNDLE_DETAIL_SCREEN_RECORD_FILE).getField(BundleDetailScreenRecord.BUNDLE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

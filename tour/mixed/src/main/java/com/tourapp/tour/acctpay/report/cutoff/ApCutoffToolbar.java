@@ -68,8 +68,8 @@ public class ApCutoffToolbar extends ReportToolbar
         super.setupSFields();
         //if (this.isPrintReport())
         //  return;   // Don't display params if entered
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kCutoffDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.CURRENCYS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.CUTOFF_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

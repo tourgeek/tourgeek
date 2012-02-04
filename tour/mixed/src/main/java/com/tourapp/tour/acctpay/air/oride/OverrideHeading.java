@@ -64,13 +64,13 @@ public class OverrideHeading extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kReportDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kReportTime).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kReportUserID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kReportPage).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kAirlineID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kStartDeparture).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kEndDeparture).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.REPORT_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.REPORT_TIME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.REPORT_USER_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.REPORT_PAGE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.AIRLINE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.START_DEPARTURE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.END_DEPARTURE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

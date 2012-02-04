@@ -74,12 +74,12 @@ public class ApCutoffVenFooting extends ReportBreakScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kVenEstTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kVenEstUSDTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kVenInvTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kVenInvUSDTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kVenInvBalTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ApCutoffScreenRecord.kApCutoffScreenRecordFile).getField(ApCutoffScreenRecord.kVenInvBalUSDTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.VEN_EST_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.VEN_EST_USD_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.VEN_INV_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.VEN_INV_USD_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.VEN_INV_BAL_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ApCutoffScreenRecord.AP_CUTOFF_SCREEN_RECORD_FILE).getField(ApCutoffScreenRecord.VEN_INV_BAL_USD_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Get the value to break on.

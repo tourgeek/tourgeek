@@ -34,23 +34,6 @@ public class Account extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kAccountNo = kDescription + 1;
-    public static final int kTypicalBalance = kAccountNo + 1;
-    public static final int kSectionSubTotal = kTypicalBalance + 1;
-    public static final int kCounterAccountID = kSectionSubTotal + 1;
-    public static final int kAutoDistID = kCounterAccountID + 1;
-    public static final int kCloseYearEnd = kAutoDistID + 1;
-    public static final int kDiscontinued = kCloseYearEnd + 1;
-    public static final int kAccountLastField = kDiscontinued;
-    public static final int kAccountFields = kDiscontinued - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kAccountNoKey = kIDKey + 1;
-    public static final int kDescriptionKey = kAccountNoKey + 1;
-    public static final int kAccountLastKey = kDescriptionKey;
-    public static final int kAccountKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int ACCT_DETAIL_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     /**
      * Default constructor.
@@ -74,14 +57,12 @@ public class Account extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAccountFile = "Account";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAccountFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ACCOUNT_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -124,36 +105,42 @@ public class Account extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 30, null, null);
-        if (iFieldSeq == kAccountNo)
-            field = new AccountNoField(this, "AccountNo", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTypicalBalance)
-            field = new TypicalBalanceField(this, "TypicalBalance", 1, null, "D");
-        if (iFieldSeq == kSectionSubTotal)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 4)
+            field = new AccountNoField(this, ACCOUNT_NO, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new TypicalBalanceField(this, TYPICAL_BALANCE, 1, null, "D");
+        if (iFieldSeq == 6)
         {
-            field = new BooleanField(this, "SectionSubTotal", 1, null, new Boolean(false));
+            field = new BooleanField(this, SECTION_SUB_TOTAL, 1, null, new Boolean(false));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCounterAccountID)
-            field = new AccountField(this, "CounterAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAutoDistID)
-            field = new AutoDistField(this, "AutoDistID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCloseYearEnd)
-            field = new BooleanField(this, "CloseYearEnd", 1, null, null);
-        if (iFieldSeq == kDiscontinued)
-            field = new BooleanField(this, "Discontinued", 1, null, null);
+        if (iFieldSeq == 7)
+            field = new AccountField(this, COUNTER_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new AutoDistField(this, AUTO_DIST_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BooleanField(this, CLOSE_YEAR_END, 1, null, null);
+        if (iFieldSeq == 10)
+            field = new BooleanField(this, DISCONTINUED, 1, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAccountLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -162,27 +149,23 @@ public class Account extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAccountNoKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "AccountNo");
-            keyArea.addKeyField(kAccountNo, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACCOUNT_NO, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAccountLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAccountLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

@@ -33,18 +33,6 @@ public class LandVaries extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kCode = kVirtualRecordLastField + 1;
-    public static final int kDescription = kCode + 1;
-    public static final int kVariesBy = kDescription + 1;
-    public static final int kLandVariesLastField = kVariesBy;
-    public static final int kLandVariesFields = kVariesBy - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kVariesByKey = kIDKey + 1;
-    public static final int kDescriptionKey = kVariesByKey + 1;
-    public static final int kLandVariesLastKey = kDescriptionKey;
-    public static final int kLandVariesKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -67,14 +55,12 @@ public class LandVaries extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kLandVariesFile = "LandVaries";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kLandVariesFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(LAND_VARIES_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -117,26 +103,32 @@ public class LandVaries extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 1, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 16, null, null);
-        if (iFieldSeq == kVariesBy)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, CODE, 1, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, DESCRIPTION, 16, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new VariesByField(this, "VariesBy", Constants.DEFAULT_FIELD_LENGTH, null, "VariesByField.AUTO_PER_PERSON");
+            field = new VariesByField(this, VARIES_BY, Constants.DEFAULT_FIELD_LENGTH, null, "VariesByField.AUTO_PER_PERSON");
             field.addListener(new InitOnceFieldHandler(null));
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kLandVariesLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -145,27 +137,23 @@ public class LandVaries extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVariesByKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VariesBy");
-            keyArea.addKeyField(kVariesBy, DBConstants.ASCENDING);
+            keyArea.addKeyField(VARIES_BY, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kLandVariesLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kLandVariesLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

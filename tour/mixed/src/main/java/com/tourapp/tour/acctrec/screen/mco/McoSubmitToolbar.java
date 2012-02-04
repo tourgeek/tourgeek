@@ -73,8 +73,8 @@ public class McoSubmitToolbar extends ReportToolbar
         super.setupSFields();
         //if (this.isPrintReport())
         //  return;   // Don't display params if entered
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kAirlineID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kServiceCharge).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(McoScreenRecord.MCO_SCREEN_RECORD_FILE).getField(McoScreenRecord.AIRLINE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(McoScreenRecord.MCO_SCREEN_RECORD_FILE).getField(McoScreenRecord.SERVICE_CHARGE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         String strDesc = UPDATE_COMMAND;
         if (this.getTask() != null)
             strDesc = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(strDesc);

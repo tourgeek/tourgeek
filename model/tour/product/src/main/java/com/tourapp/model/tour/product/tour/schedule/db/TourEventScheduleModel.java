@@ -10,6 +10,8 @@ public interface TourEventScheduleModel extends PropertiesRecordModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String ACTION_PROPERTIES = PROPERTIES;
     public static final String TOUR_CLASS_ID = "TourClassID";
     public static final String TOUR_EVENT_ID = "TourEventID";

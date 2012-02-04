@@ -14,10 +14,8 @@ import com.tourapp.model.tour.booking.db.*;
 public class BookingPax extends FieldList
     implements BookingPaxModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public BookingPax()
     {
@@ -56,37 +54,37 @@ public class BookingPax extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 5, null, null);
+        field = new FieldInfo(this, ID, 5, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "BookingID", 6, null, null);
+        field = new FieldInfo(this, BOOKING_ID, 6, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Sequence", 5, null, null);
+        field = new FieldInfo(this, SEQUENCE, 5, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "RemoteReferenceNo", 60, null, null);
-        field = new FieldInfo(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, REMOTE_REFERENCE_NO, 60, null, null);
+        field = new FieldInfo(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ShareBookingPaxID", 6, null, null);
+        field = new FieldInfo(this, SHARE_BOOKING_PAX_ID, 6, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Comments", 9999, null, null);
+        field = new FieldInfo(this, COMMENTS, 9999, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "NamePrefix", 4, null, null);
-        field = new FieldInfo(this, "FirstName", 20, null, null);
-        field = new FieldInfo(this, "MiddleName", 20, null, null);
-        field = new FieldInfo(this, "SurName", 20, null, null);
-        field = new FieldInfo(this, "DateOfBirth", 12, null, null);
+        field = new FieldInfo(this, NAME_PREFIX, 4, null, null);
+        field = new FieldInfo(this, FIRST_NAME, 20, null, null);
+        field = new FieldInfo(this, MIDDLE_NAME, 20, null, null);
+        field = new FieldInfo(this, SUR_NAME, 20, null, null);
+        field = new FieldInfo(this, DATE_OF_BIRTH, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Gender", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "Smoker", 1, null, null);
+        field = new FieldInfo(this, GENDER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, SMOKER, 1, null, null);
         field.setDataClass(Boolean.class);
     }
     /**
@@ -95,7 +93,7 @@ public class BookingPax extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
         keyArea.addKeyField("BookingID", Constants.ASCENDING);

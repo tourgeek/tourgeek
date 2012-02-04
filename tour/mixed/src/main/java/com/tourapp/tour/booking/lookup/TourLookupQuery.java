@@ -36,6 +36,7 @@ public class TourLookupQuery extends QueryRecord
      implements TourLookupQueryModel
 {
     private static final long serialVersionUID = 1L;
+
     /**
      * Default constructor.
      */
@@ -59,7 +60,32 @@ public class TourLookupQuery extends QueryRecord
         super.init(screen);
     }
 
-    public static final String kTourLookupQueryFile = null;   // Screen field
+    public static final String TOUR_LOOKUP_QUERY_FILE = null; // Screen field
+    /**
+     * Add this field in the Record's field sequence.
+     */
+    public BaseField setupField(int iFieldSeq)
+    {
+        BaseField field = null;
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (field == null)
+            field = super.setupField(iFieldSeq);
+        return field;
+    }
     /**
      * GetDatabaseType Method.
      */

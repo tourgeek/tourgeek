@@ -31,9 +31,7 @@ public class FMEmployee extends ScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int kEmpScreenNo = kScreenRecordLastField + 1;
-    public static final int kFMEmployeeLastField = kEmpScreenNo;
-    public static final int kFMEmployeeFields = kEmpScreenNo - DBConstants.MAIN_FIELD + 1;
+    public static final String EMP_SCREEN_NO = "EmpScreenNo";
     /**
      * Default constructor.
      */
@@ -57,21 +55,17 @@ public class FMEmployee extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kFMEmployeeFile = null;  // Screen field
+    public static final String FM_EMPLOYEE_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kEmpScreenNo)
-            field = new ShortField(this, "EmpScreenNo", 2, null, null);
+        if (iFieldSeq == 0)
+            field = new ShortField(this, EMP_SCREEN_NO, 2, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kFMEmployeeLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

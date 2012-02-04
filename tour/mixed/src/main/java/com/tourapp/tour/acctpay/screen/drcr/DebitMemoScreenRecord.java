@@ -35,13 +35,8 @@ public class DebitMemoScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String TOUR_ACCOUNT_ID = "TourAccountID";
-    public static final int kTourAccountID = kScreenRecordLastField + 1;
     public static final String PP_ACCOUNT_ID = "PpAccountID";
-    public static final int kPpAccountID = kTourAccountID + 1;
     public static final String AP_ACCOUNT_ID = "ApAccountID";
-    public static final int kApAccountID = kPpAccountID + 1;
-    public static final int kDebitMemoScreenRecordLastField = kApAccountID;
-    public static final int kDebitMemoScreenRecordFields = kApAccountID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -65,25 +60,21 @@ public class DebitMemoScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kDebitMemoScreenRecordFile = null; // Screen field
+    public static final String DEBIT_MEMO_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kTourAccountID)
-            field = new AccountField(this, "TourAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPpAccountID)
-            field = new AccountField(this, "PpAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kApAccountID)
-            field = new AccountField(this, "ApAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new AccountField(this, TOUR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new AccountField(this, PP_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new AccountField(this, AP_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kDebitMemoScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

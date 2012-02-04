@@ -32,21 +32,12 @@ public class AcctDetailScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String ACCOUNT_ID = "AccountID";
-    public static final int kAccountID = kScreenRecordLastField + 1;
     public static final String CALC_START = "CalcStart";
-    public static final int kCalcStart = kAccountID + 1;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kCalcStart + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String START_BALANCE = "StartBalance";
-    public static final int kStartBalance = kEndDate + 1;
     public static final String END_BALANCE = "EndBalance";
-    public static final int kEndBalance = kStartBalance + 1;
     public static final String CHANGE_BALANCE = "ChangeBalance";
-    public static final int kChangeBalance = kEndBalance + 1;
-    public static final int kAcctDetailScreenRecordLastField = kChangeBalance;
-    public static final int kAcctDetailScreenRecordFields = kChangeBalance - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,33 +61,29 @@ public class AcctDetailScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kAcctDetailScreenRecordFile = null;  // Screen field
+    public static final String ACCT_DETAIL_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kAccountID)
-            field = new AccountField(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCalcStart)
-            field = new BooleanField(this, "CalcStart", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartBalance)
-            field = new CurrencyField(this, "StartBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndBalance)
-            field = new CurrencyField(this, "EndBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kChangeBalance)
-            field = new CurrencyField(this, "ChangeBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new BooleanField(this, CALC_START, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencyField(this, START_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new CurrencyField(this, END_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, CHANGE_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAcctDetailScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

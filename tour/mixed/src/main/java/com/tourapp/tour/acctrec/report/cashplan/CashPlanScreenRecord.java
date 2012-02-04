@@ -32,42 +32,28 @@ public class CashPlanScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportPage = kReportPage;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kReportScreenRecordLastField + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String PERIOD_TYPE = "PeriodType";
-    public static final int kPeriodType = kEndDate + 1;
     public static final String PERIOD_LENGTH = "PeriodLength";
-    public static final int kPeriodLength = kPeriodType + 1;
     public static final String DEPOSIT_PERIOD_DATE = "DepositPeriodDate";
-    public static final int kDepositPeriodDate = kPeriodLength + 1;
     public static final String FINAL_PERIOD_DATE = "FinalPeriodDate";
-    public static final int kFinalPeriodDate = kDepositPeriodDate + 1;
     public static final String DEPOSIT_DUE_BALANCE = "DepositDueBalance";
-    public static final int kDepositDueBalance = kFinalPeriodDate + 1;
     public static final String FINAL_DUE_LESS_DEPOSIT = "FinalDueLessDeposit";
-    public static final int kFinalDueLessDeposit = kDepositDueBalance + 1;
     public static final String FINAL_DUE_LESS_DEP_PYMT = "FinalDueLessDepPymt";
-    public static final int kFinalDueLessDepPymt = kFinalDueLessDeposit + 1;
     public static final String FROM_DATE = "FromDate";
-    public static final int kFromDate = kFinalDueLessDepPymt + 1;
     public static final String DEPOSITS = "Deposits";
-    public static final int kDeposits = kFromDate + 1;
     public static final String RECEIPTS = "Receipts";
-    public static final int kReceipts = kDeposits + 1;
     public static final String FINAL_PAYMENTS = "FinalPayments";
-    public static final int kFinalPayments = kReceipts + 1;
     public static final String FINAL_RECEIPTS = "FinalReceipts";
-    public static final int kFinalReceipts = kFinalPayments + 1;
     public static final String BALANCE = "Balance";
-    public static final int kBalance = kFinalReceipts + 1;
-    public static final int kCashPlanScreenRecordLastField = kBalance;
-    public static final int kCashPlanScreenRecordFields = kBalance - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -91,57 +77,59 @@ public class CashPlanScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kCashPlanScreenRecordFile = null;    // Screen field
+    public static final String CASH_PLAN_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new CashPlanScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new CashPlanScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportUserID)
-        //  field = new CashPlanScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportPage)
-        //  field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        if (iFieldSeq == kStartDate)
-            field = new CashPlanScreenRecord_StartDate(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPeriodType)
-            field = new PeriodTypeField(this, "PeriodType", Constants.DEFAULT_FIELD_LENGTH, null, "PeriodTypeField.MONTHLY");
-        if (iFieldSeq == kPeriodLength)
-            field = new ShortField(this, "PeriodLength", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        if (iFieldSeq == kDepositPeriodDate)
-            field = new DateField(this, "DepositPeriodDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalPeriodDate)
-            field = new DateField(this, "FinalPeriodDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepositDueBalance)
-            field = new CurrencyField(this, "DepositDueBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalDueLessDeposit)
-            field = new CurrencyField(this, "FinalDueLessDeposit", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalDueLessDepPymt)
-            field = new CurrencyField(this, "FinalDueLessDepPymt", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFromDate)
-            field = new DateField(this, "FromDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDeposits)
-            field = new CurrencyField(this, "Deposits", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReceipts)
-            field = new CurrencyField(this, "Receipts", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalPayments)
-            field = new CurrencyField(this, "FinalPayments", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalReceipts)
-            field = new CurrencyField(this, "FinalReceipts", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBalance)
-            field = new CurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new CashPlanScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new CashPlanScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new CashPlanScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CashPlanScreenRecord_StartDate(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new PeriodTypeField(this, PERIOD_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, "PeriodTypeField.MONTHLY");
+        if (iFieldSeq == 10)
+            field = new ShortField(this, PERIOD_LENGTH, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        if (iFieldSeq == 11)
+            field = new DateField(this, DEPOSIT_PERIOD_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new DateField(this, FINAL_PERIOD_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new CurrencyField(this, DEPOSIT_DUE_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new CurrencyField(this, FINAL_DUE_LESS_DEPOSIT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new CurrencyField(this, FINAL_DUE_LESS_DEP_PYMT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new DateField(this, FROM_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new CurrencyField(this, DEPOSITS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new CurrencyField(this, RECEIPTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new CurrencyField(this, FINAL_PAYMENTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new CurrencyField(this, FINAL_RECEIPTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new CurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCashPlanScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

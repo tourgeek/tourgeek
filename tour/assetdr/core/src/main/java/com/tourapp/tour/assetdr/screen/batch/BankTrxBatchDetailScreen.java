@@ -133,11 +133,11 @@ public class BankTrxBatchDetailScreen extends DetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kTrxNumber).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kTrxDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kPayeeName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.BANK_ACCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.TRX_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.TRX_NUMBER).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.TRX_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.PAYEE_NAME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         Converter convAmount = this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.AMOUNT);
         DrCrConverter converter2 = new DrCrConverter(convAmount, false);
         String strDesc = "Check amount";
@@ -151,10 +151,10 @@ public class BankTrxBatchDetailScreen extends DetailScreen
             strDesc = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString(strDesc);
         converter2.setDebitDesc(strDesc);
         converter2.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kExchange).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kAmountLocal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kComments).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kEFTTrxNo).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.EXCHANGE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.AMOUNT_LOCAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.COMMENTS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.EFT_TRX_NO).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         Converter converter = this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.DISTRIBUTION_DISPLAY);
         converter = new DistributionConverter(converter);
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);

@@ -24,9 +24,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.screen.credit.*;
 import com.tourapp.tour.acctrec.screen.credit.trx.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.genled.db.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**
@@ -37,33 +35,6 @@ public class CreditCard extends BaseArPay
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kBookingID = kBookingID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxDate = kTrxDate;
-    //public static final int kGross = kGross;
-    //public static final int kSvcPer = kSvcPer;
-    //public static final int kSvcAmt = kSvcAmt;
-    //public static final int kNet = kNet;
-    //public static final int kAmtApply = kAmtApply;
-    //public static final int kComments = kComments;
-    //public static final int kTrxEntry = kTrxEntry;
-    //public static final int kDateSubmitted = kDateSubmitted;
-    //public static final int kDatePaid = kDatePaid;
-    //public static final int kAmountPaid = kAmountPaid;
-    //public static final int kPaymentEntered = kPaymentEntered;
-    public static final int kCardID = kBaseArPayLastField + 1;
-    public static final int kCardNo = kCardID + 1;
-    public static final int kExpiration = kCardNo + 1;
-    public static final int kDateApproved = kExpiration + 1;
-    public static final int kCreditCardLastField = kDateApproved;
-    public static final int kCreditCardFields = kDateApproved - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxStatusIDKey = kIDKey + 1;
-    public static final int kTrxDateKey = kTrxStatusIDKey + 1;
-    public static final int kCreditCardLastKey = kTrxDateKey;
-    public static final int kCreditCardKeys = kTrxDateKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -86,14 +57,12 @@ public class CreditCard extends BaseArPay
     {
         super.init(screen);
     }
-
-    public static final String kCreditCardFile = "CreditCard";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCreditCardFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CREDIT_CARD_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -152,56 +121,69 @@ public class CreditCard extends BaseArPay
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kBookingID)
-        //  field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCardID)
-            field = new CardField(this, "CardID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCardNo)
-            field = new CreditCardField(this, "CardNo", 20, null, null);
-        if (iFieldSeq == kExpiration)
-            field = new StringField(this, "Expiration", 5, null, null);
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxDate)
-        //  field = new CreditCard_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kGross)
-        //  field = new CurrencyField(this, "Gross", 10, null, null);
-        //if (iFieldSeq == kSvcPer)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new PercentField(this, "SvcPer", 5, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new CreditCard_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new CreditCard_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new CurrencyField(this, AMT_APPLY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new CreditCard_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new CurrencyField(this, GROSS, 10, null, null);
+        //if (iFieldSeq == 10)
+        //{
+        //  field = new PercentField(this, SVC_PER, 5, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kSvcAmt)
-        //  field = new CurrencyField(this, "SvcAmt", 8, null, null);
-        //if (iFieldSeq == kNet)
-        //  field = new CurrencyField(this, "Net", 10, null, null);
-        //if (iFieldSeq == kAmtApply)
-        //  field = new CurrencyField(this, "AmtApply", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kComments)
-        //  field = new StringField(this, "Comments", 30, null, null);
-        //if (iFieldSeq == kTrxEntry)
-        //  field = new CreditCard_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDateSubmitted)
-        //  field = new DateTimeField(this, "DateSubmitted", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDatePaid)
-        //  field = new DateTimeField(this, "DatePaid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kAmountPaid)
-        //  field = new CurrencyField(this, "AmountPaid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kPaymentEntered)
-        //  field = new DateTimeField(this, "PaymentEntered", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDateApproved)
-            field = new DateTimeField(this, "DateApproved", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (field == null)
+        //if (iFieldSeq == 11)
+        //  field = new CurrencyField(this, SVC_AMT, 8, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new CurrencyField(this, NET, 10, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new StringField(this, COMMENTS, 30, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new DateTimeField(this, DATE_SUBMITTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 15)
+        //  field = new DateTimeField(this, DATE_PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 16)
+        //  field = new CurrencyField(this, AMOUNT_PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
         {
-            field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCreditCardLastField)
-                field = new EmptyField(this);
+            field = new BooleanField(this, PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
         }
+        //if (iFieldSeq == 18)
+        //  field = new DateTimeField(this, PAYMENT_ENTERED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new CardField(this, CARD_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new CreditCardField(this, CARD_NO, 20, null, null);
+        if (iFieldSeq == 21)
+            field = new StringField(this, EXPIRATION, 5, null, null);
+        if (iFieldSeq == 22)
+            field = new DateTimeField(this, DATE_APPROVED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (field == null)
+            field = super.setupField(iFieldSeq);
         return field;
     }
     /**
@@ -210,27 +192,23 @@ public class CreditCard extends BaseArPay
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxStatusIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatusID");
-            keyArea.addKeyField(kTrxStatusID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxDateKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCreditCardLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCreditCardLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

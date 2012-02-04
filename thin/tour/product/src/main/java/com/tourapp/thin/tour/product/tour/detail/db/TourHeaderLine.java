@@ -15,13 +15,8 @@ import com.tourapp.model.tour.product.tour.detail.db.*;
 public class TourHeaderLine extends TourSub
     implements TourHeaderLineModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String TOUR_HEADER_OPTION_ID = TOUR_HEADER_OPTION_ID;
-    //public static final String MODIFY_CODE = MODIFY_CODE;
-    //public static final String MODIFY_ID = MODIFY_ID;
 
     public TourHeaderLine()
     {
@@ -60,35 +55,35 @@ public class TourHeaderLine extends TourSub
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TourHeaderOptionID", 8, null, null);
+        field = new FieldInfo(this, TOUR_HEADER_OPTION_ID, 8, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ModifyCode", 1, null, null);
-        field = new FieldInfo(this, "ModifyID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MODIFY_CODE, 1, null, null);
+        field = new FieldInfo(this, MODIFY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Sequence", 4, null, null);
+        field = new FieldInfo(this, SEQUENCE, 4, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "PaxCategoryID", 1, null, new Integer(6) /* PaxCategory.ALL_ID */);
+        field = new FieldInfo(this, PAX_CATEGORY_ID, 1, null, new Integer(6) /* PaxCategory.ALL_ID */);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Description", 45, null, null);
-        field = new FieldInfo(this, "Price", 18, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 45, null, null);
+        field = new FieldInfo(this, PRICE, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Commissionable", 1, null, new Boolean(true));
+        field = new FieldInfo(this, COMMISSIONABLE, 1, null, new Boolean(true));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "CommissionRate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "PayAt", 1, null, null);
-        field = new FieldInfo(this, "Cost", 18, null, null);
+        field = new FieldInfo(this, PAY_AT, 1, null, null);
+        field = new FieldInfo(this, COST, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
     }
     /**
@@ -97,7 +92,7 @@ public class TourHeaderLine extends TourSub
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourHeaderOptionID");
         keyArea.addKeyField("TourHeaderOptionID", Constants.ASCENDING);

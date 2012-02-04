@@ -64,8 +64,8 @@ public class OverrideFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kCount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(OverrideScreenRecord.kOverrideScreenRecordFile).getField(OverrideScreenRecord.kTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.COUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OverrideScreenRecord.OVERRIDE_SCREEN_RECORD_FILE).getField(OverrideScreenRecord.TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

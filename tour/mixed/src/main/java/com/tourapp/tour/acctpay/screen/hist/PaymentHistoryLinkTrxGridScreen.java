@@ -117,10 +117,10 @@ public class PaymentHistoryLinkTrxGridScreen extends LinkTrxGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(PaymentHistory.kPaymentHistoryFile).getField(PaymentHistory.kTrxDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PaymentHistory.kPaymentHistoryFile).getField(PaymentHistory.kTrxStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PaymentHistory.kPaymentHistoryFile).getField(PaymentHistory.kAmountApplied).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PaymentHistory.kPaymentHistoryFile).getField(PaymentHistory.kApTrxID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE).getField(PaymentHistory.TRX_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE).getField(PaymentHistory.TRX_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE).getField(PaymentHistory.AMOUNT_APPLIED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentHistory.PAYMENT_HISTORY_FILE).getField(PaymentHistory.AP_TRX_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

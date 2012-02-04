@@ -37,13 +37,8 @@ public class PaymentRequestScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String BANK_ACCT_ID = "BankAcctID";
-    public static final int kBankAcctID = kScreenRecordLastField + 1;
     public static final String REQUEST_TOTAL = "RequestTotal";
-    public static final int kRequestTotal = kBankAcctID + 1;
     public static final String MANUAL_CHECKS = "ManualChecks";
-    public static final int kManualChecks = kRequestTotal + 1;
-    public static final int kPaymentRequestScreenRecordLastField = kManualChecks;
-    public static final int kPaymentRequestScreenRecordFields = kManualChecks - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -67,25 +62,21 @@ public class PaymentRequestScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kPaymentRequestScreenRecordFile = null;  // Screen field
+    public static final String PAYMENT_REQUEST_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kBankAcctID)
-            field = new BankAcctField(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRequestTotal)
-            field = new FullCurrencyField(this, "RequestTotal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kManualChecks)
-            field = new BooleanField(this, "ManualChecks", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new FullCurrencyField(this, REQUEST_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new BooleanField(this, MANUAL_CHECKS, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kPaymentRequestScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

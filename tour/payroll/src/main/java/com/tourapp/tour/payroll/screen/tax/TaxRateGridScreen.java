@@ -98,8 +98,8 @@ public class TaxRateGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TaxRate.kTaxRateFile).getField(TaxRate.kCutOffAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TaxRate.kTaxRateFile).getField(TaxRate.kTaxRate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TaxRate.TAX_RATE_FILE).getField(TaxRate.CUT_OFF_AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TaxRate.TAX_RATE_FILE).getField(TaxRate.TAX_RATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

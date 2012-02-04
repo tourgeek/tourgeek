@@ -15,11 +15,8 @@ import com.tourapp.model.tour.product.tour.schedule.db.*;
 public class TourEventSchedule extends PropertiesRecord
     implements TourEventScheduleModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    public static final String ACTION_PROPERTIES = PROPERTIES;
 
     public TourEventSchedule()
     {
@@ -58,38 +55,38 @@ public class TourEventSchedule extends PropertiesRecord
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ActionProperties", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACTION_PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "TourClassID", 8, null, null);
+        field = new FieldInfo(this, TOUR_CLASS_ID, 8, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TourEventID", 2, null, null);
+        field = new FieldInfo(this, TOUR_EVENT_ID, 2, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TourClassOnly", 10, null, null);
+        field = new FieldInfo(this, TOUR_CLASS_ONLY, 10, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "TourActionType", 1, null, null);
-        field = new FieldInfo(this, "ActionTourEventID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TOUR_ACTION_TYPE, 1, null, null);
+        field = new FieldInfo(this, ACTION_TOUR_EVENT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ActionBookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACTION_BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ActionMessageProcessInfoID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACTION_MESSAGE_PROCESS_INFO_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ActionMessageTransportID", 1, null, null);
+        field = new FieldInfo(this, ACTION_MESSAGE_TRANSPORT_ID, 1, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "RunProcessIn", Constants.DEFAULT_FIELD_LENGTH, null, "L");
-        //field = new FieldInfo(this, "ActionDocumentName", 30, null, null);
-        field = new FieldInfo(this, "ActionDocumentText", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, RUN_PROCESS_IN, Constants.DEFAULT_FIELD_LENGTH, null, "L");
+        //field = new FieldInfo(this, ACTION_DOCUMENT_NAME, 30, null, null);
+        field = new FieldInfo(this, ACTION_DOCUMENT_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
     }
     /**
@@ -98,7 +95,7 @@ public class TourEventSchedule extends PropertiesRecord
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourClassID");
         keyArea.addKeyField("TourClassID", Constants.ASCENDING);

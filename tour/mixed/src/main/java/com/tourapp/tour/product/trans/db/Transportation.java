@@ -37,7 +37,6 @@ import com.tourapp.tour.message.trans.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.model.tour.product.trans.db.*;
 
 /**
@@ -48,42 +47,6 @@ public class Transportation extends TransportProduct
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kCode = kCode;
-    //public static final int kCityID = kCityID;
-    //public static final int kCityCode = kCityCode;
-    //public static final int kToCityID = kToCityID;
-    //public static final int kToCityCode = kToCityCode;
-    //public static final int kDescription = kDescription;
-    //public static final int kVendorID = kVendorID;
-    //public static final int kOperatorsCode = kOperatorsCode;
-    //public static final int kProductChainID = kProductChainID;
-    //public static final int kEtd = kEtd;
-    //public static final int kComments = kComments;
-    //public static final int kItineraryDesc = kItineraryDesc;
-    //public static final int kClassID = kClassID;
-    //public static final int kDescSort = kDescSort;
-    public static final int kTransReverseID = kTransportProductLastField + 1;
-    public static final int kManualFile = kTransReverseID + 1;
-    public static final int kFrequency = kManualFile + 1;
-    public static final int kDistance = kFrequency + 1;
-    public static final int kHours = kDistance + 1;
-    public static final int kBreakfasts = kHours + 1;
-    public static final int kLunches = kBreakfasts + 1;
-    public static final int kDinners = kLunches + 1;
-    public static final int kDaysOfWeek = kDinners + 1;
-    public static final int kDiscontinuedOn = kDaysOfWeek + 1;
-    public static final int kTransportationLastField = kDiscontinuedOn;
-    public static final int kTransportationFields = kDiscontinuedOn - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kDescSortKey = kCodeKey + 1;
-    public static final int kVendorIDKey = kDescSortKey + 1;
-    public static final int kCityIDKey = kVendorIDKey + 1;
-    public static final int kCityCodeKey = kCityIDKey + 1;
-    public static final int kTransportationLastKey = kCityCodeKey;
-    public static final int kTransportationKeys = kCityCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -106,14 +69,12 @@ public class Transportation extends TransportProduct
     {
         super.init(screen);
     }
-
-    public static final String kTransportationFile = "Transportation";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTransportationFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TRANSPORTATION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -164,107 +125,189 @@ public class Transportation extends TransportProduct
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 10, null, null);
-        if (iFieldSeq == kCityID)
-            field = new CityField(this, "CityID", 3, null, null);
-        //if (iFieldSeq == kCityCode)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new StringField(this, "CityCode", 3, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProductDesc(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CODE, 10, null, null);
+        //if (iFieldSeq == 5)
+        //{
+        //  field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kToCityID)
-        //  field = new CityField(this, "ToCityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kToCityCode)
-        //{
-        //  field = new StringField(this, "ToCityCode", 3, null, null);
-        //  field.addListener(new InitOnceFieldHandler(null));
-        //}
-        if (iFieldSeq == kDescription)
-            field = new ProductDesc(this, "Description", 30, null, null);
-        if (iFieldSeq == kTransReverseID)
-            field = new TransportationField(this, "TransReverseID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kVendorID)
-        //{
-        //  field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //  field.addListener(new InitOnceFieldHandler(null));
-        //}
-        if (iFieldSeq == kOperatorsCode)
+        if (iFieldSeq == 6)
         {
-            field = new StringField(this, "OperatorsCode", 20, null, null);
+            field = new StringField(this, OPERATORS_CODE, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kProductChainID)
-            field = new TransportationChainField(this, "ProductChainID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kManualFile)
+        if (iFieldSeq == 7)
+            field = new TransportationChainField(this, PRODUCT_CHAIN_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CityField(this, CITY_ID, 3, null, null);
+        if (iFieldSeq == 9)
         {
-            field = new StringField(this, "ManualFile", 30, null, null);
+            field = new TimeField(this, ETD, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEtd)
+        //if (iFieldSeq == 10)
+        //  field = new ShortField(this, ACK_DAYS, 2, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new MemoField(this, COMMENTS, 32767, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ProductDescSort(this, DESC_SORT, 10, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new TimeField(this, "Etd", Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kFrequency)
-        {
-            field = new StringField(this, "Frequency", 15, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kDistance)
-        {
-            field = new StringField(this, "Distance", 15, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kHours)
-        {
-            field = new ShortField(this, "Hours", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kBreakfasts)
-        {
-            field = new ShortField(this, "Breakfasts", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kLunches)
-        {
-            field = new ShortField(this, "Lunches", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kDinners)
-        {
-            field = new ShortField(this, "Dinners", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kDaysOfWeek)
-        {
-            field = new DaysOfWeekField(this, "DaysOfWeek", 6, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        //if (iFieldSeq == kComments)
-        //  field = new MemoField(this, "Comments", 32767, null, null);
-        //if (iFieldSeq == kItineraryDesc)
-        //  field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDiscontinuedOn)
-            field = new DateField(this, "DiscontinuedOn", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClassID)
-        {
-            field = new TransportationClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductTypeAutoField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDescSort)
-            field = new ProductDescSort(this, "DescSort", 10, null, null);
-        if (field == null)
+        if (iFieldSeq == 16)
         {
-            field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTransportationLastField)
-                field = new EmptyField(this);
+            field = new FullCurrencyField(this, PRODUCT_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
         }
+        if (iFieldSeq == 17)
+        {
+            field = new CurrencyField(this, PRODUCT_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 18)
+        //  field = new MessageTransportSelect(this, PRODUCT_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+        {
+            field = new InventoryStatusField(this, DISPLAY_INVENTORY_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NO_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 20)
+        {
+            field = new ShortField(this, INVENTORY_AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 21)
+        {
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 22)
+        {
+            field = new StringField(this, CURRENCY_CODE_LOCAL, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 23)
+        {
+            field = new StringField(this, VENDOR_NAME, 30, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 24)
+        {
+            field = new CostStatusField(this, DISPLAY_COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NULL_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 25)
+        {
+            field = new FullCurrencyField(this, PP_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 26)
+        {
+            field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 27)
+        {
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 28)
+        {
+            field = new TransportationClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 29)
+        {
+            field = new CurrencyField(this, PRODUCT_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 30)
+        {
+            field = new CurrencyField(this, PP_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 31)
+        //{
+        //  field = new StringField(this, CITY_CODE, 3, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 32)
+        //  field = new CityField(this, TO_CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 33)
+        //{
+        //  field = new StringField(this, TO_CITY_CODE, 3, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        if (iFieldSeq == 34)
+            field = new TransportationField(this, TRANS_REVERSE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 35)
+        {
+            field = new StringField(this, MANUAL_FILE, 30, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 36)
+        {
+            field = new StringField(this, FREQUENCY, 15, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 37)
+        {
+            field = new StringField(this, DISTANCE, 15, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 38)
+        {
+            field = new ShortField(this, HOURS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 39)
+        {
+            field = new ShortField(this, BREAKFASTS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 40)
+        {
+            field = new ShortField(this, LUNCHES, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 41)
+        {
+            field = new ShortField(this, DINNERS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 42)
+        {
+            field = new DaysOfWeekField(this, DAYS_OF_WEEK, 6, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 43)
+            field = new DateField(this, DISCONTINUED_ON, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (field == null)
+            field = super.setupField(iFieldSeq);
         return field;
     }
     /**
@@ -273,45 +316,41 @@ public class Transportation extends TransportProduct
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescSort");
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityID");
-            keyArea.addKeyField(kCityID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityCodeKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityCode");
-            keyArea.addKeyField(kCityCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kToCityCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TO_CITY_CODE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTransportationLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTransportationLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

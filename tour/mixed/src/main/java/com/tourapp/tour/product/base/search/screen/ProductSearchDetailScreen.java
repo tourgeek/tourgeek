@@ -146,7 +146,7 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 
         SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         
@@ -156,7 +156,7 @@ public class ProductSearchDetailScreen extends ProductDetailScreen
         
         this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).addListener(new FieldReSelectHandler(control)); 
         
-        this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kSearchData).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.SEARCH_DATA).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * AddProductTypeFilter Method.

@@ -33,15 +33,6 @@ public class AutoDist extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kAutoDistDesc = kVirtualRecordLastField + 1;
-    public static final int kAutoDistLastField = kAutoDistDesc;
-    public static final int kAutoDistFields = kAutoDistDesc - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kAutoDistDescKey = kIDKey + 1;
-    public static final int kAutoDistLastKey = kAutoDistDescKey;
-    public static final int kAutoDistKeys = kAutoDistDescKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int AUTO_DIST_DETAIL_SCREEN = ScreenConstants.DETAIL_MODE;
     /**
      * Default constructor.
@@ -65,14 +56,12 @@ public class AutoDist extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAutoDistFile = "AutoDist";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAutoDistFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AUTO_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -115,19 +104,25 @@ public class AutoDist extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 6, null, null);
+            field = new CounterField(this, ID, 6, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kAutoDistDesc)
-            field = new StringField(this, "AutoDistDesc", 30, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, AUTO_DIST_DESC, 30, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAutoDistLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -136,22 +131,18 @@ public class AutoDist extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAutoDistDescKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AutoDistDesc");
-            keyArea.addKeyField(kAutoDistDesc, DBConstants.ASCENDING);
+            keyArea.addKeyField(AUTO_DIST_DESC, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAutoDistLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAutoDistLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

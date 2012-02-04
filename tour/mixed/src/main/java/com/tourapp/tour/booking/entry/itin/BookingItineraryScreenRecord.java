@@ -33,24 +33,15 @@ public class BookingItineraryScreenRecord extends BookingDetailScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    //public static final String PP_COST_LOCAL = PP_COST_LOCAL;
     public static final String MESSAGE_PROCESS_INFO_ID = "MessageProcessInfoID";
-    public static final int kMessageProcessInfoID = kBookingDetailScreenRecordLastField + 1;
     public static final String MESSAGE_TRANSPORT_ID = "MessageTransportID";
-    public static final int kMessageTransportID = kMessageProcessInfoID + 1;
     public static final String ITINERARY_STYLE_SHEET = "ItineraryStyleSheet";
-    public static final int kItineraryStyleSheet = kMessageTransportID + 1;
     public static final String ACTION_TARGET = "ActionTarget";
-    public static final int kActionTarget = kItineraryStyleSheet + 1;
     public static final String ITINERARY_TEXT = "ItineraryText";
-    public static final int kItineraryText = kActionTarget + 1;
     public static final String ITINERARY_PROPERTIES = "ItineraryProperties";
-    public static final int kItineraryProperties = kItineraryText + 1;
     public static final String REQUEST_TYPE_ID = "RequestTypeID";
-    public static final int kRequestTypeID = kItineraryProperties + 1;
     public static final String CONTACT_TYPE_ID = "ContactTypeID";
-    public static final int kContactTypeID = kRequestTypeID + 1;
-    public static final int kBookingItineraryScreenRecordLastField = kContactTypeID;
-    public static final int kBookingItineraryScreenRecordFields = kContactTypeID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -74,35 +65,33 @@ public class BookingItineraryScreenRecord extends BookingDetailScreenRecord
         super.init(screen);
     }
 
-    public static final String kBookingItineraryScreenRecordFile = null;    // Screen field
+    public static final String BOOKING_ITINERARY_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kMessageProcessInfoID)
-            field = new MessageProcessInfoManualField(this, "MessageProcessInfoID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMessageTransportID)
-            field = new MessageTransportManualSelect(this, "MessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kItineraryStyleSheet)
-            field = new StringField(this, "ItineraryStyleSheet", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kActionTarget)
-            field = new StringField(this, "ActionTarget", 40, null, null);
-        if (iFieldSeq == kItineraryText)
-            field = new HtmlField(this, "ItineraryText", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kItineraryProperties)
-            field = new PropertiesField(this, "ItineraryProperties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRequestTypeID)
-            field = new RequestTypeField(this, "RequestTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kContactTypeID)
-            field = new ContactTypeField(this, "ContactTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new MessageProcessInfoManualField(this, MESSAGE_PROCESS_INFO_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new MessageTransportManualSelect(this, MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new StringField(this, ITINERARY_STYLE_SHEET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, ACTION_TARGET, 40, null, null);
+        if (iFieldSeq == 5)
+            field = new HtmlField(this, ITINERARY_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new PropertiesField(this, ITINERARY_PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new RequestTypeField(this, REQUEST_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new ContactTypeField(this, CONTACT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingItineraryScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

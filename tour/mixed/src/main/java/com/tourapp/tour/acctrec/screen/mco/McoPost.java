@@ -141,8 +141,8 @@ public class McoPost extends BaseArTrxPostScreen
      */
     public void setupSFields()
     {
-        this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kCount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashBatchScreenRecord.CASH_BATCH_SCREEN_RECORD_FILE).getField(CashBatchScreenRecord.COUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashBatchScreenRecord.CASH_BATCH_SCREEN_RECORD_FILE).getField(CashBatchScreenRecord.TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, "Post", "Post", "Post", null);
     }
     /**

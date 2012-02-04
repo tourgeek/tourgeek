@@ -14,10 +14,8 @@ import com.tourapp.model.tour.payroll.db.*;
 public class TaxRate extends FieldList
     implements TaxRateModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public TaxRate()
     {
@@ -56,20 +54,20 @@ public class TaxRate extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TaxCode", 2, null, null);
-        field = new FieldInfo(this, "MaritalStatus", 1, null, null);
-        field = new FieldInfo(this, "CutOffAmount", 8, null, null);
+        field = new FieldInfo(this, TAX_CODE, 2, null, null);
+        field = new FieldInfo(this, MARITAL_STATUS, 1, null, null);
+        field = new FieldInfo(this, CUT_OFF_AMOUNT, 8, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "TaxRate", 5, null, null);
+        field = new FieldInfo(this, TAX_RATE, 5, null, null);
         field.setDataClass(Float.class);
     }
     /**
@@ -78,7 +76,7 @@ public class TaxRate extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "TaxCode");
         keyArea.addKeyField("TaxCode", Constants.ASCENDING);

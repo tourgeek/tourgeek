@@ -33,15 +33,9 @@ public class TourEntryScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String START_TARGET_DATE = "StartTargetDate";
-    public static final int kStartTargetDate = kScreenRecordLastField + 1;
     public static final String END_TARGET_DATE = "EndTargetDate";
-    public static final int kEndTargetDate = kStartTargetDate + 1;
     public static final String TOUR_HEADER_ID = "TourHeaderID";
-    public static final int kTourHeaderID = kEndTargetDate + 1;
     public static final String LAND_CLASS_ID = "LandClassID";
-    public static final int kLandClassID = kTourHeaderID + 1;
-    public static final int kTourEntryScreenRecordLastField = kLandClassID;
-    public static final int kTourEntryScreenRecordFields = kLandClassID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -65,27 +59,23 @@ public class TourEntryScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTourEntryScreenRecordFile = null; // Screen field
+    public static final String TOUR_ENTRY_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kStartTargetDate)
-            field = new DateField(this, "StartTargetDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndTargetDate)
-            field = new DateField(this, "EndTargetDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderID)
-            field = new TourHeaderField(this, "TourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kLandClassID)
-            field = new LandClassField(this, "LandClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new DateField(this, START_TARGET_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new DateField(this, END_TARGET_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new TourHeaderField(this, TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new LandClassField(this, LAND_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourEntryScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

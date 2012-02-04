@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class AcctBatchDetail extends FieldList
     implements AcctBatchDetailModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public AcctBatchDetail()
     {
@@ -56,30 +54,30 @@ public class AcctBatchDetail extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "AcctBatchID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACCT_BATCH_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Sequence", 5, null, null);
+        field = new FieldInfo(this, SEQUENCE, 5, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Amount", 18, null, null);
+        field = new FieldInfo(this, AMOUNT, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "CounterBalance", 10, null, null);
+        field = new FieldInfo(this, COUNTER_BALANCE, 10, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "AutoDist", 1, null, null);
+        field = new FieldInfo(this, AUTO_DIST, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "AutoAccrual", 10, null, null);
+        field = new FieldInfo(this, AUTO_ACCRUAL, 10, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "AutoReversal", 10, null, null);
+        field = new FieldInfo(this, AUTO_REVERSAL, 10, null, null);
         field.setDataClass(Boolean.class);
     }
     /**
@@ -88,7 +86,7 @@ public class AcctBatchDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "AcctBatchID");
         keyArea.addKeyField("AcctBatchID", Constants.ASCENDING);

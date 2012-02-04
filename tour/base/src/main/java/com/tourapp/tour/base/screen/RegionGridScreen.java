@@ -77,7 +77,7 @@ public class RegionGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(Region.kRegionFile).getField(Region.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Region.REGION_FILE).getField(Region.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

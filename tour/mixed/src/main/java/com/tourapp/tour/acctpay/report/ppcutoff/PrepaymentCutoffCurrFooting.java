@@ -67,10 +67,10 @@ public class PrepaymentCutoffCurrFooting extends ReportBreakScreen
      */
     public void setupSFields()
     {
-        this.getRecord(PrepaymentCutoffScreenRecord.kPrepaymentCutoffScreenRecordFile).getField(PrepaymentCutoffScreenRecord.kCurrTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PrepaymentCutoffScreenRecord.kPrepaymentCutoffScreenRecordFile).getField(PrepaymentCutoffScreenRecord.kCurrTotalUSD).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PrepaymentCutoffScreenRecord.kPrepaymentCutoffScreenRecordFile).getField(PrepaymentCutoffScreenRecord.kCurrBalanceTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PrepaymentCutoffScreenRecord.kPrepaymentCutoffScreenRecordFile).getField(PrepaymentCutoffScreenRecord.kCurrBalanceTotalUSD).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrepaymentCutoffScreenRecord.PREPAYMENT_CUTOFF_SCREEN_RECORD_FILE).getField(PrepaymentCutoffScreenRecord.CURR_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrepaymentCutoffScreenRecord.PREPAYMENT_CUTOFF_SCREEN_RECORD_FILE).getField(PrepaymentCutoffScreenRecord.CURR_TOTAL_USD).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrepaymentCutoffScreenRecord.PREPAYMENT_CUTOFF_SCREEN_RECORD_FILE).getField(PrepaymentCutoffScreenRecord.CURR_BALANCE_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrepaymentCutoffScreenRecord.PREPAYMENT_CUTOFF_SCREEN_RECORD_FILE).getField(PrepaymentCutoffScreenRecord.CURR_BALANCE_TOTAL_USD).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Get the value to break on.

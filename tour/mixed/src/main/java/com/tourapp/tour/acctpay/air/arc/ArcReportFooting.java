@@ -65,7 +65,7 @@ public class ArcReportFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ArcReportScreenRecord.kArcReportScreenRecordFile).getField(ArcReportScreenRecord.kReportTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ArcReportScreenRecord.ARC_REPORT_SCREEN_RECORD_FILE).getField(ArcReportScreenRecord.REPORT_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

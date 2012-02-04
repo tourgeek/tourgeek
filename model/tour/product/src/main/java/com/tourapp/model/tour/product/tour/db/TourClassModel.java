@@ -10,6 +10,8 @@ public interface TourClassModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String CLASS_NAME = "ClassName";
     public static final String BASED_CLASS_ID = "BasedClassID";
     public static final String DEPOSIT_DUE_DAYS = "DepositDueDays";

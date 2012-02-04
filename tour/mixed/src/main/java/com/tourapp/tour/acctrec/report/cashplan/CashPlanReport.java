@@ -135,12 +135,12 @@ public class CashPlanReport extends AnalysisScreen
      */
     public void setupSFields()
     {
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFromDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kDeposits).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kReceipts).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalPayments).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kFinalReceipts).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.FROM_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.DEPOSITS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.RECEIPTS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.FINAL_PAYMENTS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.FINAL_RECEIPTS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Get the Heading for this report.

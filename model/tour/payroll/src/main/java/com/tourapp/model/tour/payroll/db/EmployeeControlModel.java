@@ -10,6 +10,8 @@ public interface EmployeeControlModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String FEDERAL_ID_NO = "FederalIdNo";
     public static final String FED_EXEMPTION = "FedExemption";
     public static final String FED_TAX_ACCT_ID = "FedTaxAcctID";

@@ -34,19 +34,6 @@ public class InventoryDetail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kInventoryID = kVirtualRecordLastField + 1;
-    public static final int kBookingDetailID = kInventoryID + 1;
-    public static final int kType = kBookingDetailID + 1;
-    public static final int kAmount = kType + 1;
-    public static final int kInventoryDetailLastField = kAmount;
-    public static final int kInventoryDetailFields = kAmount - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kInventoryIDKey = kIDKey + 1;
-    public static final int kBookingDetailIDKey = kInventoryIDKey + 1;
-    public static final int kInventoryDetailLastKey = kBookingDetailIDKey;
-    public static final int kInventoryDetailKeys = kBookingDetailIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -69,14 +56,12 @@ public class InventoryDetail extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kInventoryDetailFile = "InventoryDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kInventoryDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(INVENTORY_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -129,34 +114,40 @@ public class InventoryDetail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kInventoryID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new InventoryField(this, "InventoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new InventoryField(this, INVENTORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kBookingDetailID)
+        if (iFieldSeq == 4)
         {
-            field = new BookingDetailField(this, "BookingDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BookingDetailField(this, BOOKING_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kType)
+        if (iFieldSeq == 5)
         {
-            field = new IntegerField(this, "Type", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field = new IntegerField(this, TYPE, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
             field.setNullable(false);
         }
-        if (iFieldSeq == kAmount)
-            field = new IntegerField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new IntegerField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kInventoryDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -165,31 +156,27 @@ public class InventoryDetail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kInventoryIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "InventoryID");
-            keyArea.addKeyField(kInventoryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingDetailID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kType, DBConstants.ASCENDING);
+            keyArea.addKeyField(INVENTORY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_DETAIL_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TYPE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingDetailIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "BookingDetailID");
-            keyArea.addKeyField(kBookingDetailID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kInventoryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kType, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_DETAIL_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(INVENTORY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TYPE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kInventoryDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kInventoryDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

@@ -60,7 +60,7 @@ public class ProductSearchTypeHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProductSearchType.kProductSearchTypeFile).getField(ProductSearchType.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductSearchType.PRODUCT_SEARCH_TYPE_FILE).getField(ProductSearchType.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

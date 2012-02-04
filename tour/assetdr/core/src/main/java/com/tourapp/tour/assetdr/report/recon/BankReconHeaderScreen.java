@@ -76,11 +76,11 @@ public class BankReconHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kStartCleared).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kDepositsCleared).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kChecksCleared).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kNewCleared).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.BANK_ACCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.START_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.DEPOSITS_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.CHECKS_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.NEW_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

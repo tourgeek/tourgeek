@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class AccountBudget extends FieldList
     implements AccountBudgetModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public AccountBudget()
     {
@@ -56,22 +54,22 @@ public class AccountBudget extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BudComCode", Constants.DEFAULT_FIELD_LENGTH, null, "B");
-        field = new FieldInfo(this, "DetailDate", 12, null, null);
+        field = new FieldInfo(this, BUD_COM_CODE, Constants.DEFAULT_FIELD_LENGTH, null, "B");
+        field = new FieldInfo(this, DETAIL_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Amount", 18, null, null);
+        field = new FieldInfo(this, AMOUNT, 18, null, null);
         field.setDataClass(Double.class);
     }
     /**
@@ -80,7 +78,7 @@ public class AccountBudget extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BudComCode");
         keyArea.addKeyField("BudComCode", Constants.ASCENDING);

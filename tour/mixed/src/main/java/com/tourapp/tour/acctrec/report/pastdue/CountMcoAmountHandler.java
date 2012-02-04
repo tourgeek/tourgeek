@@ -61,7 +61,7 @@ public class CountMcoAmountHandler extends SubCountHandler
         m_iEndMcoClass = 0;
         m_iStartMcoClass = 0;
         m_recTrxStatus = null;
-        super.init(null, null, -1, fieldMain, -1, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
+        super.init(null, null, null, fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
     }
     /**
      * Free Method.

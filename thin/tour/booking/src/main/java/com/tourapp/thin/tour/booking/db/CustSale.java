@@ -14,8 +14,8 @@ import com.tourapp.model.tour.booking.db.*;
 public class CustSale extends FieldList
     implements CustSaleModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public CustSale()
     {

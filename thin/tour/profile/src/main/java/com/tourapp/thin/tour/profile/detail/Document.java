@@ -14,10 +14,8 @@ import com.tourapp.model.tour.profile.detail.*;
 public class Document extends FieldList
     implements DocumentModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public Document()
     {
@@ -56,31 +54,31 @@ public class Document extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DocName", 65, null, null);
-        field = new FieldInfo(this, "DocNumber", 20, null, null);
-        field = new FieldInfo(this, "CountryCodeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, DOC_NAME, 65, null, null);
+        field = new FieldInfo(this, DOC_NUMBER, 20, null, null);
+        field = new FieldInfo(this, COUNTRY_CODE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "NationalityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, NATIONALITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "EffectiveDate", 12, null, null);
+        field = new FieldInfo(this, EFFECTIVE_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "ExpirationDate", 12, null, null);
+        field = new FieldInfo(this, EXPIRATION_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "DocumentCode", 3, null, "PP");
-        field = new FieldInfo(this, "PlaceOfIssue", 3, null, null);
+        field = new FieldInfo(this, DOCUMENT_CODE, 3, null, "PP");
+        field = new FieldInfo(this, PLACE_OF_ISSUE, 3, null, null);
     }
     /**
     * Set up the key areas.
@@ -88,7 +86,7 @@ public class Document extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProfileID");
         keyArea.addKeyField("ProfileID", Constants.ASCENDING);

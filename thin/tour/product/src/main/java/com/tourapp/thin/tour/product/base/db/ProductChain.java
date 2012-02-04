@@ -14,8 +14,8 @@ import com.tourapp.model.tour.product.base.db.*;
 public class ProductChain extends FieldList
     implements ProductChainModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public ProductChain()
     {

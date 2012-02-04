@@ -33,26 +33,6 @@ public class ProductCategory extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kIncomeAccountID = kDescription + 1;
-    public static final int kArAccountID = kIncomeAccountID + 1;
-    public static final int kPPAccountID = kArAccountID + 1;
-    public static final int kXLChgAccountID = kPPAccountID + 1;
-    public static final int kLandAccountID = kXLChgAccountID + 1;
-    public static final int kUninvAccountID = kLandAccountID + 1;
-    public static final int kCostOUAccountID = kUninvAccountID + 1;
-    public static final int kApAccountID = kCostOUAccountID + 1;
-    public static final int kCurrOUAccountID = kApAccountID + 1;
-    public static final int kAirAccountID = kCurrOUAccountID + 1;
-    public static final int kPPTicAccountID = kAirAccountID + 1;
-    public static final int kProductCategoryLastField = kPPTicAccountID;
-    public static final int kProductCategoryFields = kPPTicAccountID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDescriptionKey = kIDKey + 1;
-    public static final int kProductCategoryLastKey = kDescriptionKey;
-    public static final int kProductCategoryKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -75,14 +55,12 @@ public class ProductCategory extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kProductCategoryFile = "ProductCategory";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProductCategoryFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PRODUCT_CATEGORY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -111,41 +89,47 @@ public class ProductCategory extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 30, null, null);
-        if (iFieldSeq == kIncomeAccountID)
-            field = new AccountField(this, "IncomeAccountID", 7, null, null);
-        if (iFieldSeq == kArAccountID)
-            field = new AccountField(this, "ArAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPPAccountID)
-            field = new AccountField(this, "PPAccountID", 7, null, null);
-        if (iFieldSeq == kXLChgAccountID)
-            field = new AccountField(this, "XLChgAccountID", 7, null, null);
-        if (iFieldSeq == kLandAccountID)
-            field = new AccountField(this, "LandAccountID", 7, null, null);
-        if (iFieldSeq == kUninvAccountID)
-            field = new AccountField(this, "UninvAccountID", 7, null, null);
-        if (iFieldSeq == kCostOUAccountID)
-            field = new AccountField(this, "CostOUAccountID", 7, null, null);
-        if (iFieldSeq == kApAccountID)
-            field = new AccountField(this, "ApAccountID", 7, null, null);
-        if (iFieldSeq == kCurrOUAccountID)
-            field = new AccountField(this, "CurrOUAccountID", 7, null, null);
-        if (iFieldSeq == kAirAccountID)
-            field = new AccountField(this, "AirAccountID", 7, null, null);
-        if (iFieldSeq == kPPTicAccountID)
-            field = new AccountField(this, "PPTicAccountID", 7, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 4)
+            field = new AccountField(this, INCOME_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, AR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new AccountField(this, PP_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 7)
+            field = new AccountField(this, XL_CHG_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 8)
+            field = new AccountField(this, LAND_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 9)
+            field = new AccountField(this, UNINV_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 10)
+            field = new AccountField(this, COST_OU_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 11)
+            field = new AccountField(this, AP_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 12)
+            field = new AccountField(this, CURR_OU_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 13)
+            field = new AccountField(this, AIR_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 14)
+            field = new AccountField(this, PP_TIC_ACCOUNT_ID, 7, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProductCategoryLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -154,22 +138,18 @@ public class ProductCategory extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProductCategoryLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProductCategoryLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

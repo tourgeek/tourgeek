@@ -99,15 +99,15 @@ public class HotelInventoryRangeAdjust extends ProductInventoryRangeAdjust
      */
     public void setupSFields()
     {
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kPaxCategoryID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kBlocked).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kOversell).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kClosed).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelScreenRecord.kHotelScreenRecordFile).getField(HotelScreenRecord.kDelete).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.RATE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.CLASS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.PAX_CATEGORY_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.BLOCKED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.OVERSELL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.CLOSED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelScreenRecord.HOTEL_SCREEN_RECORD_FILE).getField(HotelScreenRecord.DELETE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         BaseApplication app = (BaseApplication)this.getTask().getApplication();
         new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, app.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString(ADJUST_RANGE), MenuConstants.POST, ADJUST_RANGE, null);
     }

@@ -86,7 +86,7 @@ public class InterestGridScreen extends ProfileDetailBaseGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(Interest.kInterestFile).getField(Interest.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Interest.INTEREST_FILE).getField(Interest.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

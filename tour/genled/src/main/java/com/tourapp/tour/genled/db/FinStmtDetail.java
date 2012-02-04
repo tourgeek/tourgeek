@@ -34,26 +34,6 @@ public class FinStmtDetail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kFinStmtID = kVirtualRecordLastField + 1;
-    public static final int kSequence = kFinStmtID + 1;
-    public static final int kAccountID = kSequence + 1;
-    public static final int kAccountDesc = kAccountID + 1;
-    public static final int kIndent = kAccountDesc + 1;
-    public static final int kInvisible = kIndent + 1;
-    public static final int kTypicalBalance = kInvisible + 1;
-    public static final int kSubTotalLevel = kTypicalBalance + 1;
-    public static final int kDataColumn = kSubTotalLevel + 1;
-    public static final int kSpecialFormat = kDataColumn + 1;
-    public static final int kNumberFormat = kSpecialFormat + 1;
-    public static final int kSpecialFunction = kNumberFormat + 1;
-    public static final int kFinStmtDetailLastField = kSpecialFunction;
-    public static final int kFinStmtDetailFields = kSpecialFunction - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kFinStmtIDKey = kIDKey + 1;
-    public static final int kFinStmtDetailLastKey = kFinStmtIDKey;
-    public static final int kFinStmtDetailKeys = kFinStmtIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -76,14 +56,12 @@ public class FinStmtDetail extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kFinStmtDetailFile = "FinStmtDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kFinStmtDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(FIN_STMT_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -126,47 +104,53 @@ public class FinStmtDetail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kFinStmtID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ReferenceField(this, "FinStmtID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ReferenceField(this, FIN_STMT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kSequence)
-            field = new ShortField(this, "Sequence", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAccountID)
-            field = new AccountField(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAccountDesc)
-            field = new StringField(this, "AccountDesc", 60, null, null);
-        if (iFieldSeq == kIndent)
-            field = new ShortField(this, "Indent", 1, null, null);
-        if (iFieldSeq == kInvisible)
-            field = new BooleanField(this, "Invisible", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTypicalBalance)
+        if (iFieldSeq == 4)
+            field = new ShortField(this, SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, ACCOUNT_DESC, 60, null, null);
+        if (iFieldSeq == 7)
+            field = new ShortField(this, INDENT, 1, null, null);
+        if (iFieldSeq == 8)
+            field = new BooleanField(this, INVISIBLE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
         {
-            field = new PreferredBalanceField(this, "TypicalBalance", Constants.DEFAULT_FIELD_LENGTH, null, "PreferredBalanceField.DEBIT");
+            field = new PreferredBalanceField(this, TYPICAL_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, "PreferredBalanceField.DEBIT");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSubTotalLevel)
-            field = new ShortField(this, "SubTotalLevel", 1, null, null);
-        if (iFieldSeq == kDataColumn)
-            field = new ShortField(this, "DataColumn", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSpecialFormat)
-            field = new SpecialFormatField(this, "SpecialFormat", 128, null, null);
-        if (iFieldSeq == kNumberFormat)
-            field = new NumberFormatField(this, "NumberFormat", 128, null, null);
-        if (iFieldSeq == kSpecialFunction)
-            field = new SpecialFunctionField(this, "SpecialFunction", 128, null, null);
+        if (iFieldSeq == 10)
+            field = new ShortField(this, SUB_TOTAL_LEVEL, 1, null, null);
+        if (iFieldSeq == 11)
+            field = new ShortField(this, DATA_COLUMN, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new SpecialFormatField(this, SPECIAL_FORMAT, 128, null, null);
+        if (iFieldSeq == 13)
+            field = new NumberFormatField(this, NUMBER_FORMAT, 128, null, null);
+        if (iFieldSeq == 14)
+            field = new SpecialFunctionField(this, SPECIAL_FUNCTION, 128, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kFinStmtDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -175,24 +159,20 @@ public class FinStmtDetail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kFinStmtIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "FinStmtID");
-            keyArea.addKeyField(kFinStmtID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
-            keyArea.addKeyField(kAccountID, DBConstants.ASCENDING);
+            keyArea.addKeyField(FIN_STMT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kFinStmtDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kFinStmtDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

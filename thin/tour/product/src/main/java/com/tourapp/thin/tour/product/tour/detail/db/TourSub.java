@@ -14,8 +14,8 @@ import com.tourapp.model.tour.product.tour.detail.db.*;
 public class TourSub extends FieldList
     implements TourSubModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public TourSub()
     {

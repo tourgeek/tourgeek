@@ -65,11 +65,11 @@ public class GenPaymentHeading extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kReportDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kReportTime).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kUserID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kPage).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kPaymentCodeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(GenPaymentScreenRecord.GEN_PAYMENT_SCREEN_RECORD_FILE).getField(GenPaymentScreenRecord.REPORT_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(GenPaymentScreenRecord.GEN_PAYMENT_SCREEN_RECORD_FILE).getField(GenPaymentScreenRecord.REPORT_TIME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(GenPaymentScreenRecord.GEN_PAYMENT_SCREEN_RECORD_FILE).getField(GenPaymentScreenRecord.USER_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(GenPaymentScreenRecord.GEN_PAYMENT_SCREEN_RECORD_FILE).getField(GenPaymentScreenRecord.PAGE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(GenPaymentScreenRecord.GEN_PAYMENT_SCREEN_RECORD_FILE).getField(GenPaymentScreenRecord.PAYMENT_CODE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

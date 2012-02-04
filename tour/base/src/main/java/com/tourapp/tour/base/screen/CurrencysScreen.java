@@ -94,8 +94,8 @@ public class CurrencysScreen extends Screen
      */
     public void setupSFields()
     {
-        this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCurrencyCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.CURRENCY_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         Record query = this.getMainRecord();
         for (int fieldSeq = query.getFieldSeq(Currencys.LAST_RATE); fieldSeq <= query.getFieldSeq(Currencys.LANGUAGE_ID); fieldSeq++)
         {

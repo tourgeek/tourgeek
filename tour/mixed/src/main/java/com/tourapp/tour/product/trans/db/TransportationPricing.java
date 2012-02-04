@@ -24,7 +24,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.trans.screen.*;
-import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.product.trans.db.*;
 
 /**
@@ -35,23 +34,6 @@ public class TransportationPricing extends ProductPricing
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kProductID = kProductID;
-    //public static final int kStartDate = kStartDate;
-    //public static final int kEndDate = kEndDate;
-    //public static final int kProductTermsID = kProductTermsID;
-    //public static final int kClassID = kClassID;
-    //public static final int kRateID = kRateID;
-    //public static final int kCost = kCost;
-    public static final int kFromPax = kProductPricingLastField + 1;
-    public static final int kToPax = kFromPax + 1;
-    public static final int kTransportationPricingLastField = kToPax;
-    public static final int kTransportationPricingFields = kToPax - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProductIDKey = kIDKey + 1;
-    public static final int kTransportationPricingLastKey = kProductIDKey;
-    public static final int kTransportationPricingKeys = kProductIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -74,14 +56,12 @@ public class TransportationPricing extends ProductPricing
     {
         super.init(screen);
     }
-
-    public static final String kTransportationPricingFile = "TransportationPricing";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTransportationPricingFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TRANSPORTATION_PRICING_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -124,56 +104,81 @@ public class TransportationPricing extends ProductPricing
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProductID)
-            field = new TransportationField(this, "ProductID", 10, null, null);
-        //if (iFieldSeq == kStartDate)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new TransportationField(this, PRODUCT_ID, 10, null, null);
+        //if (iFieldSeq == 4)
+        //{
+        //  field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.ALL_ID));
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kEndDate)
+        if (iFieldSeq == 5)
+        {
+            field = new TransportationRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 6)
+        {
+            field = new TransportationClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        //if (iFieldSeq == 7)
         //{
-        //  field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        if (iFieldSeq == kFromPax)
+        //if (iFieldSeq == 8)
+        //{
+        //  field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 9)
+        //  field = new FullCurrencyField(this, COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new ShortField(this, "FromPax", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductTermsField(this, PRODUCT_TERMS_ID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kToPax)
+        //if (iFieldSeq == 11)
+        //  field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 12)
+        //{
+        //  field = new BooleanField(this, COMMISSIONABLE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 13)
+        //{
+        //  field = new PercentField(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 14)
+        //  field = new PayAtField(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new ShortField(this, "ToPax", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ShortField(this, FROM_PAX, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kProductTermsID)
+        if (iFieldSeq == 16)
         {
-            field = new ProductTermsField(this, "ProductTermsID", 1, null, null);
+            field = new ShortField(this, TO_PAX, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kClassID)
-        {
-            field = new TransportationClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kRateID)
-        {
-            field = new TransportationRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        //if (iFieldSeq == kCost)
-        //  field = new FullCurrencyField(this, "Cost", Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTransportationPricingLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -182,26 +187,22 @@ public class TransportationPricing extends ProductPricing
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kRateID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kClassID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kEndDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kToPax, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(RATE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CLASS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(END_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TO_PAX, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTransportationPricingLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTransportationPricingLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

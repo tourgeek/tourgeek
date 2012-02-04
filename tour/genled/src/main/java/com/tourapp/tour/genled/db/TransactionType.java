@@ -33,40 +33,6 @@ public class TransactionType extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kTypeCode = kVirtualRecordLastField + 1;
-    public static final int kTypeDesc = kTypeCode + 1;
-    public static final int kTrxGroupID = kTypeDesc + 1;
-    public static final int kGroupCode = kTrxGroupID + 1;
-    public static final int kGroupDesc = kGroupCode + 1;
-    public static final int kTrxDescID = kGroupDesc + 1;
-    public static final int kDescCode = kTrxDescID + 1;
-    public static final int kDescription = kDescCode + 1;
-    public static final int kTrxSystemID = kDescription + 1;
-    public static final int kSystemCode = kTrxSystemID + 1;
-    public static final int kSystemDesc = kSystemCode + 1;
-    public static final int kTypicalBalance = kSystemDesc + 1;
-    public static final int kPostingType = kTypicalBalance + 1;
-    public static final int kSourceFile = kPostingType + 1;
-    public static final int kSourceTrxDescID = kSourceFile + 1;
-    public static final int kSourceTrxStatusID = kSourceTrxDescID + 1;
-    public static final int kSourcePreferredSign = kSourceTrxStatusID + 1;
-    public static final int kAmountField = kSourcePreferredSign + 1;
-    public static final int kTrxDateField = kAmountField + 1;
-    public static final int kEntryDateField = kTrxDateField + 1;
-    public static final int kUserIDField = kEntryDateField + 1;
-    public static final int kTrxIDField = kUserIDField + 1;
-    public static final int kAccountIDFile = kTrxIDField + 1;
-    public static final int kAccountIDField = kAccountIDFile + 1;
-    public static final int kTransactionTypeLastField = kAccountIDField;
-    public static final int kTransactionTypeFields = kAccountIDField - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxGroupIDKey = kIDKey + 1;
-    public static final int kTrxTypeCodeKey = kTrxGroupIDKey + 1;
-    public static final int kSourceTrxStatusIDKey = kTrxTypeCodeKey + 1;
-    public static final int kTransactionTypeLastKey = kSourceTrxStatusIDKey;
-    public static final int kTransactionTypeKeys = kSourceTrxStatusIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected Map<String,Object> m_htTrxStatus;
     protected int m_iCurrentTrxStatus = -1;
     /**
@@ -92,14 +58,12 @@ public class TransactionType extends VirtualRecord
         m_htTrxStatus = null;
         super.init(screen);
     }
-
-    public static final String kTransactionTypeFile = "TransactionType";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTransactionTypeFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TRANSACTION_TYPE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -140,68 +104,74 @@ public class TransactionType extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kTypeCode)
-            field = new StringField(this, "TypeCode", 20, null, null);
-        if (iFieldSeq == kTypeDesc)
-            field = new StringField(this, "TypeDesc", 30, null, null);
-        if (iFieldSeq == kTrxGroupID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, TYPE_CODE, 20, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, TYPE_DESC, 30, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new TrxGroupField(this, "TrxGroupID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TrxGroupField(this, TRX_GROUP_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kGroupCode)
-            field = new StringField(this, "GroupCode", 20, null, null);
-        if (iFieldSeq == kGroupDesc)
-            field = new StringField(this, "GroupDesc", 30, null, null);
-        if (iFieldSeq == kTrxDescID)
-            field = new TrxDescField(this, "TrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDescCode)
-            field = new StringField(this, "DescCode", 20, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 30, null, null);
-        if (iFieldSeq == kTrxSystemID)
-            field = new TrxSystemField(this, "TrxSystemID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSystemCode)
-            field = new StringField(this, "SystemCode", 20, null, null);
-        if (iFieldSeq == kSystemDesc)
-            field = new StringField(this, "SystemDesc", 30, null, null);
-        if (iFieldSeq == kTypicalBalance)
-            field = new PreferredBalanceField(this, "TypicalBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPostingType)
-            field = new PostingType(this, "PostingType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSourceFile)
-            field = new StringField(this, "SourceFile", 50, null, null);
-        if (iFieldSeq == kSourceTrxDescID)
-            field = new TrxDescField(this, "SourceTrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSourceTrxStatusID)
-            field = new TrxStatusField(this, "SourceTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSourcePreferredSign)
-            field = new PreferredSignField(this, "SourcePreferredSign", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountField)
-            field = new StringField(this, "AmountField", 50, null, null);
-        if (iFieldSeq == kTrxDateField)
-            field = new StringField(this, "TrxDateField", 50, null, null);
-        if (iFieldSeq == kEntryDateField)
-            field = new StringField(this, "EntryDateField", 50, null, null);
-        if (iFieldSeq == kUserIDField)
-            field = new StringField(this, "UserIDField", 50, null, null);
-        if (iFieldSeq == kTrxIDField)
-            field = new StringField(this, "TrxIDField", 50, null, null);
-        if (iFieldSeq == kAccountIDFile)
-            field = new StringField(this, "AccountIDFile", 50, null, null);
-        if (iFieldSeq == kAccountIDField)
-            field = new StringField(this, "AccountIDField", 50, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, GROUP_CODE, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, GROUP_DESC, 30, null, null);
+        if (iFieldSeq == 8)
+            field = new TrxDescField(this, TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, DESC_CODE, 20, null, null);
+        if (iFieldSeq == 10)
+            field = new StringField(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 11)
+            field = new TrxSystemField(this, TRX_SYSTEM_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, SYSTEM_CODE, 20, null, null);
+        if (iFieldSeq == 13)
+            field = new StringField(this, SYSTEM_DESC, 30, null, null);
+        if (iFieldSeq == 14)
+            field = new PreferredBalanceField(this, TYPICAL_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new PostingType(this, POSTING_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new StringField(this, SOURCE_FILE, 50, null, null);
+        if (iFieldSeq == 17)
+            field = new TrxDescField(this, SOURCE_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new TrxStatusField(this, SOURCE_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new PreferredSignField(this, SOURCE_PREFERRED_SIGN, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new StringField(this, AMOUNT_FIELD, 50, null, null);
+        if (iFieldSeq == 21)
+            field = new StringField(this, TRX_DATE_FIELD, 50, null, null);
+        if (iFieldSeq == 22)
+            field = new StringField(this, ENTRY_DATE_FIELD, 50, null, null);
+        if (iFieldSeq == 23)
+            field = new StringField(this, USER_ID_FIELD, 50, null, null);
+        if (iFieldSeq == 24)
+            field = new StringField(this, TRX_ID_FIELD, 50, null, null);
+        if (iFieldSeq == 25)
+            field = new StringField(this, ACCOUNT_ID_FILE, 50, null, null);
+        if (iFieldSeq == 26)
+            field = new StringField(this, ACCOUNT_ID_FIELD, 50, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTransactionTypeLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -210,37 +180,33 @@ public class TransactionType extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxGroupIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxGroupID");
-            keyArea.addKeyField(kTrxGroupID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTypeDesc, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_GROUP_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TYPE_DESC, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxTypeCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxTypeCode");
-            keyArea.addKeyField(kSystemCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kGroupCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTypeCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(SYSTEM_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(GROUP_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TYPE_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kSourceTrxStatusIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SourceTrxStatusID");
-            keyArea.addKeyField(kSourceTrxStatusID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDescID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SOURCE_TRX_STATUS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DESC_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTransactionTypeLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTransactionTypeLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

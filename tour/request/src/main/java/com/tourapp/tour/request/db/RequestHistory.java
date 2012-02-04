@@ -34,16 +34,6 @@ public class RequestHistory extends Request
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kHistReprint = kHistReprint;
-    public static final int kHistTimePrinted = kRequestLastField + 1;
-    public static final int kRequestHistoryLastField = kHistTimePrinted;
-    public static final int kRequestHistoryFields = kHistTimePrinted - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProfileIDKey = kIDKey + 1;
-    public static final int kHistReprintKey = kProfileIDKey + 1;
-    public static final int kRequestHistoryLastKey = kHistReprintKey;
-    public static final int kRequestHistoryKeys = kHistReprintKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -66,14 +56,12 @@ public class RequestHistory extends Request
     {
         super.init(screen);
     }
-
-    public static final String kRequestHistoryFile = "RequestHistory";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kRequestHistoryFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(REQUEST_HISTORY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -116,16 +104,59 @@ public class RequestHistory extends Request
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kHistTimePrinted)
-            field = new RequestHistory_HistTimePrinted(this, "HistTimePrinted", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kHistReprint)
-        //  field = new BooleanField(this, "HistReprint", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new ProfileField(this, PROFILE_ID, 8, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new StringField(this, PROFILE_CODE, 16, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new StringField(this, GENERIC_NAME, 30, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, STATE_OR_REGION, 15, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new StringField(this, POSTAL_CODE, 10, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new StringField(this, COUNTRY, 15, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new StringField(this, ATTENTION, 24, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new EMailField(this, EMAIL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new SendViaField(this, SEND_VIA_CODE, 4, null, null);
+        //if (iFieldSeq == 15)
+        //  field = new BundleFilter(this, BUNDLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 16)
+        //  field = new ShortField(this, BUNDLE_QTY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 17)
+        //  field = new StringField(this, BROCHURE_TEXT, 255, null, null);
+        //if (iFieldSeq == 18)
+        //  field = new BooleanField(this, PRINT_NOW, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //if (iFieldSeq == 19)
+        //  field = new BooleanField(this, HIST_REPRINT, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 20)
+            field = new RequestHistory_HistTimePrinted(this, HIST_TIME_PRINTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kRequestHistoryLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -134,29 +165,25 @@ public class RequestHistory extends Request
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kHistTimePrinted, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(HIST_TIME_PRINTED, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kHistReprintKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "HistReprint");
-            keyArea.addKeyField(kHistReprint, DBConstants.ASCENDING);
-            keyArea.addKeyField(kHistTimePrinted, DBConstants.ASCENDING);
+            keyArea.addKeyField(HIST_REPRINT, DBConstants.ASCENDING);
+            keyArea.addKeyField(HIST_TIME_PRINTED, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kRequestHistoryLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kRequestHistoryLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

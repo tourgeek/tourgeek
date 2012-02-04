@@ -33,19 +33,11 @@ public class TestHotelRateScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String PRODUCT_ID = "ProductID";
-    public static final int kProductID = kScreenRecordLastField + 1;
     public static final String RATE_ID = "RateID";
-    public static final int kRateID = kProductID + 1;
     public static final String CLASS_ID = "ClassID";
-    public static final int kClassID = kRateID + 1;
     public static final String DETAIL_DATE = "DetailDate";
-    public static final int kDetailDate = kClassID + 1;
     public static final String TOTAL_COST = "TotalCost";
-    public static final int kTotalCost = kDetailDate + 1;
     public static final String DISPLAY_COST_STATUS_ID = "DisplayCostStatusID";
-    public static final int kDisplayCostStatusID = kTotalCost + 1;
-    public static final int kTestHotelRateScreenRecordLastField = kDisplayCostStatusID;
-    public static final int kTestHotelRateScreenRecordFields = kDisplayCostStatusID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -69,31 +61,27 @@ public class TestHotelRateScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTestHotelRateScreenRecordFile = null; // Screen field
+    public static final String TEST_HOTEL_RATE_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kProductID)
-            field = new HotelField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRateID)
-            field = new HotelRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClassID)
-            field = new HotelClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailDate)
-            field = new DateField(this, "DetailDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalCost)
-            field = new CurrencyField(this, "TotalCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDisplayCostStatusID)
-            field = new CostStatusField(this, "DisplayCostStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new HotelField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new HotelRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new HotelClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new DateField(this, DETAIL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencyField(this, TOTAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new CostStatusField(this, DISPLAY_COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTestHotelRateScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

@@ -14,8 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class Trx extends FieldList
     implements TrxModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public Trx()
     {

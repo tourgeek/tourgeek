@@ -33,21 +33,6 @@ public class TrxDesc extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescCode = kVirtualRecordLastField + 1;
-    public static final int kDescription = kDescCode + 1;
-    public static final int kSourceFile = kDescription + 1;
-    public static final int kTrxSystemID = kSourceFile + 1;
-    public static final int kTrxDescLastField = kTrxSystemID;
-    public static final int kTrxDescFields = kTrxSystemID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDescCodeKey = kIDKey + 1;
-    public static final int kDescriptionKey = kDescCodeKey + 1;
-    public static final int kTrxSystemIDKey = kDescriptionKey + 1;
-    public static final int kSourceFileKey = kTrxSystemIDKey + 1;
-    public static final int kTrxDescLastKey = kSourceFileKey;
-    public static final int kTrxDescKeys = kSourceFileKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,14 +55,12 @@ public class TrxDesc extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kTrxDescFile = "TrxDesc";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTrxDescFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TRX_DESC_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -122,28 +105,34 @@ public class TrxDesc extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescCode)
-            field = new StringField(this, "DescCode", 20, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 30, null, null);
-        if (iFieldSeq == kSourceFile)
-            field = new StringField(this, "SourceFile", 50, null, null);
-        if (iFieldSeq == kTrxSystemID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESC_CODE, 20, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, SOURCE_FILE, 50, null, null);
+        if (iFieldSeq == 6)
         {
-            field = new TrxSystemField(this, "TrxSystemID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TrxSystemField(this, TRX_SYSTEM_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTrxDescLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -152,38 +141,34 @@ public class TrxDesc extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "DescCode");
-            keyArea.addKeyField(kDescCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxSystemIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxSystemID");
-            keyArea.addKeyField(kTrxSystemID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_SYSTEM_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kSourceFileKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SourceFile");
-            keyArea.addKeyField(kSourceFile, DBConstants.ASCENDING);
+            keyArea.addKeyField(SOURCE_FILE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTrxDescLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTrxDescLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

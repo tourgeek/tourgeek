@@ -10,10 +10,12 @@ public interface BankTrxModel extends BaseTrxModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
+    //public static final String TRX_USER_ID = TRX_USER_ID;
     //public static final String TRX_DATE = TRX_DATE;
     //public static final String AMOUNT_LOCAL = AMOUNT_LOCAL;
-    //public static final String TRX_USER_ID = TRX_USER_ID;
     //public static final String TRX_ENTRY = TRX_ENTRY;
     public static final String BANK_ACCT_ID = "BankAcctID";
     public static final String TRX_NUMBER = "TrxNumber";

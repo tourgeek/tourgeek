@@ -117,7 +117,7 @@ public class BankTrxBatchScreen extends Screen
      */
     public void setupSFields()
     {
-        this.getRecord(BankTrxBatch.kBankTrxBatchFile).getField(BankTrxBatch.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatch.BANK_TRX_BATCH_FILE).getField(BankTrxBatch.BANK_ACCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Process the command.

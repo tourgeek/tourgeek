@@ -72,7 +72,7 @@ public class TourClassHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourClassScreenRecord.kTourClassScreenRecordFile).getField(TourClassScreenRecord.kTourClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourClassScreenRecord.TOUR_CLASS_SCREEN_RECORD_FILE).getField(TourClassScreenRecord.TOUR_CLASS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

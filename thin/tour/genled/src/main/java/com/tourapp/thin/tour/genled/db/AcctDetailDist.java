@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class AcctDetailDist extends FieldList
     implements AcctDetailDistModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public AcctDetailDist()
     {
@@ -56,32 +54,32 @@ public class AcctDetailDist extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "AcctDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACCT_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TrxTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRX_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TrxDate", 25, null, null);
+        field = new FieldInfo(this, TRX_DATE, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "Amount", 18, null, null);
+        field = new FieldInfo(this, AMOUNT, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "TrxEntry", 25, null, null);
+        field = new FieldInfo(this, TRX_ENTRY, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AcctDetailDistGroupID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACCT_DETAIL_DIST_GROUP_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
     }
     /**
@@ -90,7 +88,7 @@ public class AcctDetailDist extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DistDetail");
         keyArea.addKeyField("AcctDetailID", Constants.ASCENDING);

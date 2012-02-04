@@ -34,21 +34,6 @@ public class RequestHistoryDetail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kRequestHistoryID = kVirtualRecordLastField + 1;
-    public static final int kProfileID = kRequestHistoryID + 1;
-    public static final int kBrochureID = kProfileID + 1;
-    public static final int kBrochureQty = kBrochureID + 1;
-    public static final int kBrochureDesc = kBrochureQty + 1;
-    public static final int kMailedOn = kBrochureDesc + 1;
-    public static final int kRequestHistoryDetailLastField = kMailedOn;
-    public static final int kRequestHistoryDetailFields = kMailedOn - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kRequestHistoryIDKey = kIDKey + 1;
-    public static final int kProfileIDKey = kRequestHistoryIDKey + 1;
-    public static final int kRequestHistoryDetailLastKey = kProfileIDKey;
-    public static final int kRequestHistoryDetailKeys = kProfileIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +56,12 @@ public class RequestHistoryDetail extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kRequestHistoryDetailFile = "RequestHistoryDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kRequestHistoryDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(REQUEST_HISTORY_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -107,32 +90,38 @@ public class RequestHistoryDetail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kRequestHistoryID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ReferenceField(this, "RequestHistoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ReferenceField(this, REQUEST_HISTORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kProfileID)
-            field = new ReferenceField(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBrochureID)
-            field = new BrochureField(this, "BrochureID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBrochureQty)
-            field = new ShortField(this, "BrochureQty", 3, null, null);
-        if (iFieldSeq == kBrochureDesc)
-            field = new StringField(this, "BrochureDesc", 30, null, null);
-        if (iFieldSeq == kMailedOn)
-            field = new RequestHistoryDetail_MailedOn(this, "MailedOn", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new ReferenceField(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new BrochureField(this, BROCHURE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new ShortField(this, BROCHURE_QTY, 3, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, BROCHURE_DESC, 30, null, null);
+        if (iFieldSeq == 8)
+            field = new RequestHistoryDetail_MailedOn(this, MAILED_ON, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kRequestHistoryDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -141,29 +130,25 @@ public class RequestHistoryDetail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kRequestHistoryIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "RequestHistoryID");
-            keyArea.addKeyField(kRequestHistoryID, DBConstants.ASCENDING);
+            keyArea.addKeyField(REQUEST_HISTORY_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.DESCENDING);
-            keyArea.addKeyField(kMailedOn, DBConstants.DESCENDING);
-            keyArea.addKeyField(kBrochureID, DBConstants.DESCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.DESCENDING);
+            keyArea.addKeyField(MAILED_ON, DBConstants.DESCENDING);
+            keyArea.addKeyField(BROCHURE_ID, DBConstants.DESCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kRequestHistoryDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kRequestHistoryDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

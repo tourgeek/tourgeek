@@ -32,11 +32,7 @@ public class EmployeeScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String EMP_KEY_NO = "EmpKeyNo";
-    public static final int kEmpKeyNo = kScreenRecordLastField + 1;
     public static final String ACTIVE_EMP = "ActiveEmp";
-    public static final int kActiveEmp = kEmpKeyNo + 1;
-    public static final int kEmployeeScreenRecordLastField = kActiveEmp;
-    public static final int kEmployeeScreenRecordFields = kActiveEmp - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -60,23 +56,19 @@ public class EmployeeScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kEmployeeScreenRecordFile = null;    // Screen field
+    public static final String EMPLOYEE_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kEmpKeyNo)
-            field = new ShortField(this, "EmpKeyNo", 2, null, null);
-        if (iFieldSeq == kActiveEmp)
-            field = new BooleanField(this, "ActiveEmp", 1, null, null);
+        if (iFieldSeq == 0)
+            field = new ShortField(this, EMP_KEY_NO, 2, null, null);
+        if (iFieldSeq == 1)
+            field = new BooleanField(this, ACTIVE_EMP, 1, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kEmployeeScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

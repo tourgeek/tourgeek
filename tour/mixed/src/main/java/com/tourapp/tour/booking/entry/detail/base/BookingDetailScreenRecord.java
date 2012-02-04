@@ -32,9 +32,6 @@ public class BookingDetailScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String PP_COST_LOCAL = "PPCostLocal";
-    public static final int kPPCostLocal = kScreenRecordLastField + 1;
-    public static final int kBookingDetailScreenRecordLastField = kPPCostLocal;
-    public static final int kBookingDetailScreenRecordFields = kPPCostLocal - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -58,21 +55,17 @@ public class BookingDetailScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kBookingDetailScreenRecordFile = null; // Screen field
+    public static final String BOOKING_DETAIL_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kPPCostLocal)
-            field = new CurrencyField(this, "PPCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingDetailScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

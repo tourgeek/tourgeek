@@ -15,12 +15,8 @@ import com.tourapp.model.tour.base.db.*;
 public class State extends Location
     implements StateModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String NAME = NAME;
-    public static final String STATE_POSTAL_CODE = CODE;
 
     public State()
     {
@@ -59,26 +55,26 @@ public class State extends Location
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Name", 40, null, null);
-        field = new FieldInfo(this, "StatePostalCode", 20, null, null);
-        field = new FieldInfo(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, NAME, 40, null, null);
+        field = new FieldInfo(this, STATE_POSTAL_CODE, 20, null, null);
+        field = new FieldInfo(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Description", 32000, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 32000, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "Picture", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PICTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "Polygon", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, POLYGON, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "GMTOffset", 8, null, null);
+        field = new FieldInfo(this, GMT_OFFSET, 8, null, null);
         field.setDataClass(Float.class);
     }
     /**
@@ -87,7 +83,7 @@ public class State extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Name");
         keyArea.addKeyField("Name", Constants.ASCENDING);

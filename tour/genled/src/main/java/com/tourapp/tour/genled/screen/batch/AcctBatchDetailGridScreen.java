@@ -115,9 +115,9 @@ public class AcctBatchDetailGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE).getComponent(0);
         sfSequence.setRequestFocusEnabled(false);
     }

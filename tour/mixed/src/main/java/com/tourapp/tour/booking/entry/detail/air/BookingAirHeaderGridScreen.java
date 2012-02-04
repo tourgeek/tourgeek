@@ -107,7 +107,7 @@ public class BookingAirHeaderGridScreen extends BookingSubGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BookingAirHeader.kBookingAirHeaderFile).getField(BookingAirHeader.kAirlineDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BookingAirHeader.BOOKING_AIR_HEADER_FILE).getField(BookingAirHeader.AIRLINE_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

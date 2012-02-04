@@ -50,7 +50,7 @@ public class InvoiceAmountSubCountHandler extends SubCountHandler
      */
     public void init(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF, boolean bResetOnBreak)
     {
-        super.init(null, null, -1, fieldMain, -1, ifsToCount, bRecountOnSelect, bVerifyOnEOF, bResetOnBreak);
+        super.init(null, null, null, fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, bResetOnBreak);
     }
     /**
      * Get the value to add (Overidden from SubCountHandler).

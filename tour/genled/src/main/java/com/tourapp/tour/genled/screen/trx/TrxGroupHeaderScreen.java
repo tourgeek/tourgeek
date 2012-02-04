@@ -60,7 +60,7 @@ public class TrxGroupHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TrxGroup.kTrxGroupFile).getField(TrxGroup.kGroupDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TrxGroup.TRX_GROUP_FILE).getField(TrxGroup.GROUP_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

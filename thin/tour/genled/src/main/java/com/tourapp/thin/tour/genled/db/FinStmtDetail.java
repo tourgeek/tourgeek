@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class FinStmtDetail extends FieldList
     implements FinStmtDetailModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public FinStmtDetail()
     {
@@ -56,34 +54,34 @@ public class FinStmtDetail extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "FinStmtID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, FIN_STMT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Sequence", 5, null, null);
+        field = new FieldInfo(this, SEQUENCE, 5, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AccountDesc", 60, null, null);
-        field = new FieldInfo(this, "Indent", 1, null, null);
+        field = new FieldInfo(this, ACCOUNT_DESC, 60, null, null);
+        field = new FieldInfo(this, INDENT, 1, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Invisible", 10, null, null);
+        field = new FieldInfo(this, INVISIBLE, 10, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "TypicalBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "SubTotalLevel", 1, null, null);
+        field = new FieldInfo(this, TYPICAL_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, SUB_TOTAL_LEVEL, 1, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "DataColumn", 5, null, null);
+        field = new FieldInfo(this, DATA_COLUMN, 5, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "SpecialFormat", 128, null, null);
-        field = new FieldInfo(this, "NumberFormat", 128, null, null);
-        field = new FieldInfo(this, "SpecialFunction", 128, null, null);
+        field = new FieldInfo(this, SPECIAL_FORMAT, 128, null, null);
+        field = new FieldInfo(this, NUMBER_FORMAT, 128, null, null);
+        field = new FieldInfo(this, SPECIAL_FUNCTION, 128, null, null);
     }
     /**
     * Set up the key areas.
@@ -91,7 +89,7 @@ public class FinStmtDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "FinStmtID");
         keyArea.addKeyField("FinStmtID", Constants.ASCENDING);

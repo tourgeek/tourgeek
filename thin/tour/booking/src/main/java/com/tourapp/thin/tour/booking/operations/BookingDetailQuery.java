@@ -14,6 +14,8 @@ import com.tourapp.model.tour.booking.operations.*;
 public class BookingDetailQuery extends FieldList
     implements BookingDetailQueryModel
 {
+    private static final long serialVersionUID = 1L;
+
 
     public BookingDetailQuery()
     {

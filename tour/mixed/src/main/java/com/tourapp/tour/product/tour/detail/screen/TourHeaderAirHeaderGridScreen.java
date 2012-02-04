@@ -86,8 +86,8 @@ public class TourHeaderAirHeaderGridScreen extends TourDetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourHeaderAirHeader.kTourHeaderAirHeaderFile).getField(TourHeaderAirHeader.kAirlineCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderAirHeader.kTourHeaderAirHeaderFile).getField(TourHeaderAirHeader.kAirlineDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderAirHeader.TOUR_HEADER_AIR_HEADER_FILE).getField(TourHeaderAirHeader.AIRLINE_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderAirHeader.TOUR_HEADER_AIR_HEADER_FILE).getField(TourHeaderAirHeader.AIRLINE_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

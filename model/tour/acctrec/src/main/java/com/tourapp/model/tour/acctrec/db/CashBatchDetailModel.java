@@ -10,6 +10,8 @@ public interface CashBatchDetailModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String CASH_BATCH_ID = "CashBatchID";
     public static final String BOOKING_ID = "BookingID";
     public static final String CHECK_NO = "CheckNo";

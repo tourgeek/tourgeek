@@ -32,11 +32,14 @@ public class LandInfoScreenRecord extends ProductInfoScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kProductID = kProductID;
-    //public static final int kRateID = kRateID;
-    //public static final int kClassID = kClassID;
-    public static final int kLandInfoScreenRecordLastField = kProductInfoScreenRecordLastField;
-    public static final int kLandInfoScreenRecordFields = kProductInfoScreenRecordLastField - DBConstants.MAIN_FIELD + 1;
+    //public static final String PRODUCT_ID = PRODUCT_ID;
+    //public static final String RATE_ID = RATE_ID;
+    //public static final String CLASS_ID = CLASS_ID;
+    //public static final String DETAIL_DATE = DETAIL_DATE;
+    //public static final String TOTAL_COST = TOTAL_COST;
+    //public static final String AVAILABILITY = AVAILABILITY;
+    //public static final String CONFIRMED_BY = CONFIRMED_BY;
+    //public static final String CONFIRMATION_NO = CONFIRMATION_NO;
     /**
      * Default constructor.
      */
@@ -60,25 +63,31 @@ public class LandInfoScreenRecord extends ProductInfoScreenRecord
         super.init(screen);
     }
 
-    public static final String kLandInfoScreenRecordFile = null;    // Screen field
+    public static final String LAND_INFO_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kProductID)
-            field = new LandField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRateID)
-            field = new LandRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClassID)
-            field = new LandClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new LandField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new LandRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new LandClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new DateField(this, DETAIL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new FullCurrencyField(this, TOTAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new IntegerField(this, AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, CONFIRMED_BY, 50, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new StringField(this, CONFIRMATION_NO, 60, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kLandInfoScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

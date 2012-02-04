@@ -111,7 +111,7 @@ public class CrDrScreen extends BookingArTrxScreen
     public void setupSFields()
     {
         super.setupSFields();
-        this.getRecord(CrDrScreenRecord.kCrDrScreenRecordFile).getField(CrDrScreenRecord.kCounterAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CrDrScreenRecord.CR_DR_SCREEN_RECORD_FILE).getField(CrDrScreenRecord.COUNTER_ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

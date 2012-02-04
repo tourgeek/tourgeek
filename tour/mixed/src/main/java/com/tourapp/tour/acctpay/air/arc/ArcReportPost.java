@@ -121,8 +121,8 @@ public class ArcReportPost extends Screen
      */
     public void setupSFields()
     {
-        this.getRecord(ArcReportScreenRecord.kArcReportScreenRecordFile).getField(ArcReportScreenRecord.kLastArcDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ArcReportScreenRecord.kArcReportScreenRecordFile).getField(ArcReportScreenRecord.kSummaryAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ArcReportScreenRecord.ARC_REPORT_SCREEN_RECORD_FILE).getField(ArcReportScreenRecord.LAST_ARC_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ArcReportScreenRecord.ARC_REPORT_SCREEN_RECORD_FILE).getField(ArcReportScreenRecord.SUMMARY_ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, "Post", "Post", "Post", null);
     }
     /**

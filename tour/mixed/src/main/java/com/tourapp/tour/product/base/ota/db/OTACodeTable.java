@@ -34,21 +34,6 @@ public class OTACodeTable extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kName = kVirtualRecordLastField + 1;
-    public static final int kNameCode = kName + 1;
-    public static final int kCreationDate = kNameCode + 1;
-    public static final int kDeletionDate = kCreationDate + 1;
-    public static final int kVersionID = kDeletionDate + 1;
-    public static final int kProperties = kVersionID + 1;
-    public static final int kOTACodeTableLastField = kProperties;
-    public static final int kOTACodeTableFields = kProperties - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kNameCodeKey = kIDKey + 1;
-    public static final int kNameKey = kNameCodeKey + 1;
-    public static final int kOTACodeTableLastKey = kNameKey;
-    public static final int kOTACodeTableKeys = kNameKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +56,12 @@ public class OTACodeTable extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kOTACodeTableFile = "OTACodeTable";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kOTACodeTableFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(OTA_CODE_TABLE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -116,29 +99,35 @@ public class OTACodeTable extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kName)
-            field = new StringField(this, "Name", 60, null, null);
-        if (iFieldSeq == kNameCode)
-            field = new StringField(this, "NameCode", 3, null, null);
-        if (iFieldSeq == kCreationDate)
-            field = new DateField(this, "CreationDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDeletionDate)
-            field = new DateField(this, "DeletionDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVersionID)
-            field = new VersionField(this, "VersionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, NAME, 60, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, NAME_CODE, 3, null, null);
+        if (iFieldSeq == 5)
+            field = new DateField(this, CREATION_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new DateField(this, DELETION_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new VersionField(this, VERSION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kOTACodeTableLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -147,27 +136,23 @@ public class OTACodeTable extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameCode");
-            keyArea.addKeyField(kNameCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Name");
-            keyArea.addKeyField(kName, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kOTACodeTableLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kOTACodeTableLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

@@ -10,6 +10,8 @@ public interface ProfileCertificationModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String PROFILE_ID = "ProfileID";
     public static final String CERTIFICATION_TYPE_ID = "CertificationTypeID";
     public static final String CERTIFICATION_CODE = "CertificationCode";

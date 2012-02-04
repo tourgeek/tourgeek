@@ -34,20 +34,6 @@ public class Affiliation extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kCode = kVirtualRecordLastField + 1;
-    public static final int kDescription = kCode + 1;
-    public static final int kAgentComm = kDescription + 1;
-    public static final int kAffiliationComm = kAgentComm + 1;
-    public static final int kVendorID = kAffiliationComm + 1;
-    public static final int kAffiliationLastField = kVendorID;
-    public static final int kAffiliationFields = kVendorID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kDescriptionKey = kCodeKey + 1;
-    public static final int kAffiliationLastKey = kDescriptionKey;
-    public static final int kAffiliationKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,14 +56,12 @@ public class Affiliation extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAffiliationFile = "Affiliation";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAffiliationFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AFFILIATION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -120,36 +104,42 @@ public class Affiliation extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 9, null, null);
+            field = new CounterField(this, ID, 9, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 4, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 30, null, null);
-        if (iFieldSeq == kAgentComm)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, CODE, 4, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new PercentField(this, "AgentComm", 5, null, null);
+            field = new PercentField(this, AGENT_COMM, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAffiliationComm)
+        if (iFieldSeq == 6)
         {
-            field = new PercentField(this, "AffiliationComm", 5, null, null);
+            field = new PercentField(this, AFFILIATION_COMM, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVendorID)
+        if (iFieldSeq == 7)
         {
-            field = new ContactField(this, "VendorID", 6, null, null);
+            field = new ContactField(this, VENDOR_ID, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAffiliationLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -158,27 +148,23 @@ public class Affiliation extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAffiliationLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAffiliationLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

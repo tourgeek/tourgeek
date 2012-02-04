@@ -36,25 +36,6 @@ public class PaymentHistory extends LinkTrx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxDate = kTrxDate;
-    //public static final int kAmountLocal = kAmountLocal;
-    //public static final int kTrxUserID = kTrxUserID;
-    //public static final int kLinkedTrxID = kLinkedTrxID;
-    //public static final int kLinkedTrxDescID = kLinkedTrxDescID;
-    //public static final int kTrxEntry = kTrxEntry;
-    public static final int kApTrxID = kLinkTrxLastField + 1;
-    public static final int kAmountApplied = kApTrxID + 1;
-    public static final int kCurrLossLocal = kAmountApplied + 1;
-    public static final int kPaymentHistoryLastField = kCurrLossLocal;
-    public static final int kPaymentHistoryFields = kCurrLossLocal - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kLinkedTrxIDKey = kIDKey + 1;
-    public static final int kApTrxIDKey = kLinkedTrxIDKey + 1;
-    public static final int kPaymentHistoryLastKey = kApTrxIDKey;
-    public static final int kPaymentHistoryKeys = kApTrxIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | 4096;
     /**
      * Default constructor.
@@ -78,14 +59,12 @@ public class PaymentHistory extends LinkTrx
     {
         super.init(screen);
     }
-
-    public static final String kPaymentHistoryFile = "PaymentHistory";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kPaymentHistoryFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PAYMENT_HISTORY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -133,40 +112,46 @@ public class PaymentHistory extends LinkTrx
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kApTrxID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new PaymentHistory_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new DateTimeField(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, AMOUNT_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new PaymentHistory_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new TrxField(this, LINKED_TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new TrxDescField(this, LINKED_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new ApTrxField(this, "ApTrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ApTrxField(this, AP_TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxDate)
-        //  field = new DateTimeField(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountApplied)
-            field = new FullCurrencyField(this, "AmountApplied", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountLocal)
-            field = new CurrencyField(this, "AmountLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrLossLocal)
-            field = new CurrencyField(this, "CurrLossLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxUserID)
-        //  field = new PaymentHistory_TrxUserID(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kLinkedTrxID)
-        //  field = new TrxField(this, "LinkedTrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kLinkedTrxDescID)
-        //  field = new TrxDescField(this, "LinkedTrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxEntry)
-        //  field = new PaymentHistory_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new FullCurrencyField(this, AMOUNT_APPLIED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new CurrencyField(this, CURR_LOSS_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kPaymentHistoryLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -175,29 +160,25 @@ public class PaymentHistory extends LinkTrx
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kLinkedTrxIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "LinkedTrxID");
-            keyArea.addKeyField(kLinkedTrxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kLinkedTrxDescID, DBConstants.ASCENDING);
+            keyArea.addKeyField(LINKED_TRX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(LINKED_TRX_DESC_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kApTrxIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ApTrxID");
-            keyArea.addKeyField(kApTrxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(AP_TRX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kPaymentHistoryLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kPaymentHistoryLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

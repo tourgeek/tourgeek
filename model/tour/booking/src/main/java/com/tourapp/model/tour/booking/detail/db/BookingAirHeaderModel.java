@@ -10,11 +10,17 @@ public interface BookingAirHeaderModel extends BookingSubModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     //public static final String BOOKING_ID = BOOKING_ID;
     //public static final String BOOKING_PAX_ID = BOOKING_PAX_ID;
     //public static final String MODULE_ID = MODULE_ID;
-    //public static final String PRODUCT_DETAIL_ID = PRODUCT_DETAIL_ID;
-    //public static final String QUES_ANSW_ID = QUES_ANSW_ID;
+    //public static final String TOUR_HEADER_DETAIL_ID = TOUR_HEADER_DETAIL_ID;
+    //public static final String TOUR_HEADER_OPTION_ID = TOUR_HEADER_OPTION_ID;
+    //public static final String MODULE_START_DATE = MODULE_START_DATE;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String PRODUCT_TYPE = PRODUCT_TYPE;
+    //public static final String REMOTE_REFERENCE_NO = REMOTE_REFERENCE_NO;
     public static final String TICKET_TRX_ID = "TicketTrxID";
     public static final String TICKET_NUMBER = "TicketNumber";
     public static final String AIRLINE_CODE = "AirlineCode";

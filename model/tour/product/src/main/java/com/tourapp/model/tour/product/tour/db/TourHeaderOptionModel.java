@@ -10,6 +10,8 @@ public interface TourHeaderOptionModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String TOUR_OR_OPTION = "TourOrOption";
     public static final String TOUR_OR_OPTION_ID = "TourOrOptionID";
     public static final String SEQUENCE = "Sequence";

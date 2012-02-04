@@ -37,9 +37,6 @@ public class CrDrScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String COUNTER_ACCOUNT_ID = "CounterAccountID";
-    public static final int kCounterAccountID = kScreenRecordLastField + 1;
-    public static final int kCrDrScreenRecordLastField = kCounterAccountID;
-    public static final int kCrDrScreenRecordFields = kCounterAccountID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -63,21 +60,17 @@ public class CrDrScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kCrDrScreenRecordFile = null;    // Screen field
+    public static final String CR_DR_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kCounterAccountID)
-            field = new AccountField(this, "CounterAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new AccountField(this, COUNTER_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCrDrScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

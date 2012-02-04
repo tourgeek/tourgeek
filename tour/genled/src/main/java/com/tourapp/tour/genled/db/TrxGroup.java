@@ -33,21 +33,6 @@ public class TrxGroup extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kGroupCode = kVirtualRecordLastField + 1;
-    public static final int kGroupDesc = kGroupCode + 1;
-    public static final int kTrxDescID = kGroupDesc + 1;
-    public static final int kDescCode = kTrxDescID + 1;
-    public static final int kTrxSystemID = kDescCode + 1;
-    public static final int kSystemCode = kTrxSystemID + 1;
-    public static final int kTrxGroupLastField = kSystemCode;
-    public static final int kTrxGroupFields = kSystemCode - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxDescIDKey = kIDKey + 1;
-    public static final int kSystemCodeKey = kTrxDescIDKey + 1;
-    public static final int kTrxGroupLastKey = kSystemCodeKey;
-    public static final int kTrxGroupKeys = kSystemCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,14 +55,12 @@ public class TrxGroup extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kTrxGroupFile = "TrxGroup";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTrxGroupFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TRX_GROUP_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -120,32 +103,38 @@ public class TrxGroup extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kGroupCode)
-            field = new StringField(this, "GroupCode", 20, null, null);
-        if (iFieldSeq == kGroupDesc)
-            field = new StringField(this, "GroupDesc", 30, null, null);
-        if (iFieldSeq == kTrxDescID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, GROUP_CODE, 20, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, GROUP_DESC, 30, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new TrxDescField(this, "TrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TrxDescField(this, TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kDescCode)
-            field = new StringField(this, "DescCode", 20, null, null);
-        if (iFieldSeq == kTrxSystemID)
-            field = new TrxSystemField(this, "TrxSystemID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSystemCode)
-            field = new StringField(this, "SystemCode", 20, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, DESC_CODE, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new TrxSystemField(this, TRX_SYSTEM_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new StringField(this, SYSTEM_CODE, 20, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTrxGroupLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -154,30 +143,26 @@ public class TrxGroup extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxDescIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDescID");
-            keyArea.addKeyField(kTrxDescID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kGroupDesc, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DESC_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(GROUP_DESC, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kSystemCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SystemCode");
-            keyArea.addKeyField(kSystemCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kGroupCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(SYSTEM_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(GROUP_CODE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTrxGroupLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTrxGroupLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

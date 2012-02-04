@@ -39,26 +39,6 @@ public class ArTrx extends LinkTrx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxDate = kTrxDate;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    public static final int kAmount = kAmountLocal;
-    //public static final int kTrxUserID = kTrxUserID;
-    //public static final int kLinkedTrxID = kLinkedTrxID;
-    //public static final int kLinkedTrxDescID = kLinkedTrxDescID;
-    //public static final int kTrxEntry = kTrxEntry;
-    public static final int kBookingID = kLinkTrxLastField + 1;
-    public static final int kComments = kBookingID + 1;
-    public static final int kDepartureDate = kComments + 1;
-    public static final int kArTrxLastField = kDepartureDate;
-    public static final int kArTrxFields = kDepartureDate - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kLinkedTrxIDKey = kIDKey + 1;
-    public static final int kBookingIDKey = kLinkedTrxIDKey + 1;
-    public static final int kTrxStatusIDKey = kBookingIDKey + 1;
-    public static final int kArTrxLastKey = kTrxStatusIDKey;
-    public static final int kArTrxKeys = kTrxStatusIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int CR_DR_SCREEN = ScreenConstants.DISPLAY_MODE | 192;
     public static final int REFUND_SCREEN = ScreenConstants.DISPLAY_MODE | 128;
     public static final int REFUND_PEND_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
@@ -88,14 +68,12 @@ public class ArTrx extends LinkTrx
     {
         super.init(screen);
     }
-
-    public static final String kArTrxFile = "ArTrx";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kArTrxFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AR_TRX_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -153,37 +131,43 @@ public class ArTrx extends LinkTrx
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxDate)
-            field = new ArTrx_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxStatusID)
-            field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmount)
-            field = new CurrencyField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxUserID)
-        //  field = new ArTrx_TrxUserID(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kComments)
-            field = new StringField(this, "Comments", 30, null, null);
-        //if (iFieldSeq == kLinkedTrxID)
-        //  field = new TrxField(this, "LinkedTrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kLinkedTrxDescID)
-        //  field = new TrxDescField(this, "LinkedTrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxEntry)
-        //  field = new ArTrx_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepartureDate)
-            field = new DateField(this, "DepartureDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new ArTrx_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new ArTrx_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new ArTrx_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new TrxField(this, LINKED_TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new TrxDescField(this, LINKED_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, COMMENTS, 30, null, null);
+        if (iFieldSeq == 12)
+            field = new DateField(this, DEPARTURE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kArTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -192,36 +176,32 @@ public class ArTrx extends LinkTrx
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kLinkedTrxIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "LinkedTrxID");
-            keyArea.addKeyField(kLinkedTrxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kLinkedTrxDescID, DBConstants.ASCENDING);
+            keyArea.addKeyField(LINKED_TRX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(LINKED_TRX_DESC_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxStatusID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxStatusIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatusID");
-            keyArea.addKeyField(kTrxStatusID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kArTrxLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kArTrxLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

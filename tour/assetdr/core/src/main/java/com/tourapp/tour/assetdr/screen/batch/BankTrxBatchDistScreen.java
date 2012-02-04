@@ -108,8 +108,8 @@ public class BankTrxBatchDistScreen extends DetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BankTrxBatchDist.kBankTrxBatchDistFile).getField(BankTrxBatchDist.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxBatchDist.kBankTrxBatchDistFile).getField(BankTrxBatchDist.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDist.BANK_TRX_BATCH_DIST_FILE).getField(BankTrxBatchDist.ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxBatchDist.BANK_TRX_BATCH_DIST_FILE).getField(BankTrxBatchDist.AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

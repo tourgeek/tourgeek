@@ -35,59 +35,6 @@ public class EmployeeControl extends ControlRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kFederalIdNo = kControlRecordLastField + 1;
-    public static final int kFedExemption = kFederalIdNo + 1;
-    public static final int kFedTaxAcctID = kFedExemption + 1;
-    public static final int kFedTaxDesc = kFedTaxAcctID + 1;
-    public static final int kStateIdNo = kFedTaxDesc + 1;
-    public static final int kStateExemption = kStateIdNo + 1;
-    public static final int kStateTaxAcctID = kStateExemption + 1;
-    public static final int kStateTaxDesc = kStateTaxAcctID + 1;
-    public static final int kLocalIdNo = kStateTaxDesc + 1;
-    public static final int kLocalExemption = kLocalIdNo + 1;
-    public static final int kLocalTaxAcctID = kLocalExemption + 1;
-    public static final int kLocalTaxDesc = kLocalTaxAcctID + 1;
-    public static final int kFicaTaxDesc = kLocalTaxDesc + 1;
-    public static final int kFICAEmployee = kFicaTaxDesc + 1;
-    public static final int kFICAEmployer = kFICAEmployee + 1;
-    public static final int kFICATaxAcctID = kFICAEmployer + 1;
-    public static final int kMaxFICA = kFICATaxAcctID + 1;
-    public static final int kMedicareTaxDesc = kMaxFICA + 1;
-    public static final int kMedicareEmployee = kMedicareTaxDesc + 1;
-    public static final int kMaxMedicare = kMedicareEmployee + 1;
-    public static final int kMaxEmployerFICA = kMaxMedicare + 1;
-    public static final int kMedicareEmployer = kMaxEmployerFICA + 1;
-    public static final int kMaxEmployerMedicare = kMedicareEmployer + 1;
-    public static final int kFuiPer = kMaxEmployerMedicare + 1;
-    public static final int kFuiMax = kFuiPer + 1;
-    public static final int kFUITaxAcctID = kFuiMax + 1;
-    public static final int kCashBankAcctID = kFUITaxAcctID + 1;
-    public static final int kTaxAcctID = kCashBankAcctID + 1;
-    public static final int kDefaultState = kTaxAcctID + 1;
-    public static final int kSuiPer = kDefaultState + 1;
-    public static final int kSuiMax = kSuiPer + 1;
-    public static final int kSUITaxAcctID = kSuiMax + 1;
-    public static final int kSdiTaxDesc = kSUITaxAcctID + 1;
-    public static final int kSdiPer = kSdiTaxDesc + 1;
-    public static final int kSdiMax = kSdiPer + 1;
-    public static final int kSDITaxAcctID = kSdiMax + 1;
-    public static final int kLastBiWeekly = kSDITaxAcctID + 1;
-    public static final int kDistToGl = kLastBiWeekly + 1;
-    public static final int kDistToJobs = kDistToGl + 1;
-    public static final int kRegularPayDesc = kDistToJobs + 1;
-    public static final int kOvertimePayDesc = kRegularPayDesc + 1;
-    public static final int kOtTimesBase = kOvertimePayDesc + 1;
-    public static final int kSp1Desc = kOtTimesBase + 1;
-    public static final int kSp1TimesBase = kSp1Desc + 1;
-    public static final int kSp2Desc = kSp1TimesBase + 1;
-    public static final int kSp2TimesBase = kSp2Desc + 1;
-    public static final int kEmployeeControlLastField = kSp2TimesBase;
-    public static final int kEmployeeControlFields = kSp2TimesBase - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kEmployeeControlLastKey = kIDKey;
-    public static final int kEmployeeControlKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -110,14 +57,12 @@ public class EmployeeControl extends ControlRecord
     {
         super.init(screen);
     }
-
-    public static final String kEmployeeControlFile = "EmployeeControl";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kEmployeeControlFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(EMPLOYEE_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -160,133 +105,139 @@ public class EmployeeControl extends ControlRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 4, null, null);
+            field = new CounterField(this, ID, 4, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kFederalIdNo)
-            field = new StringField(this, "FederalIdNo", 11, null, null);
-        if (iFieldSeq == kFedExemption)
-            field = new CurrencyField(this, "FedExemption", 7, null, null);
-        if (iFieldSeq == kFedTaxAcctID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, FEDERAL_ID_NO, 11, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencyField(this, FED_EXEMPTION, 7, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new AccountField(this, "FedTaxAcctID", 7, null, null);
+            field = new AccountField(this, FED_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kFedTaxDesc)
-            field = new StringField(this, "FedTaxDesc", 15, null, null);
-        if (iFieldSeq == kStateIdNo)
-            field = new StringField(this, "StateIdNo", 11, null, null);
-        if (iFieldSeq == kStateExemption)
-            field = new CurrencyField(this, "StateExemption", 7, null, null);
-        if (iFieldSeq == kStateTaxAcctID)
+        if (iFieldSeq == 6)
+            field = new StringField(this, FED_TAX_DESC, 15, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, STATE_ID_NO, 11, null, null);
+        if (iFieldSeq == 8)
+            field = new CurrencyField(this, STATE_EXEMPTION, 7, null, null);
+        if (iFieldSeq == 9)
         {
-            field = new AccountField(this, "StateTaxAcctID", 7, null, null);
+            field = new AccountField(this, STATE_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kStateTaxDesc)
-            field = new StringField(this, "StateTaxDesc", 15, null, null);
-        if (iFieldSeq == kLocalIdNo)
-            field = new StringField(this, "LocalIdNo", 11, null, null);
-        if (iFieldSeq == kLocalExemption)
-            field = new CurrencyField(this, "LocalExemption", 7, null, null);
-        if (iFieldSeq == kLocalTaxAcctID)
+        if (iFieldSeq == 10)
+            field = new StringField(this, STATE_TAX_DESC, 15, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, LOCAL_ID_NO, 11, null, null);
+        if (iFieldSeq == 12)
+            field = new CurrencyField(this, LOCAL_EXEMPTION, 7, null, null);
+        if (iFieldSeq == 13)
         {
-            field = new AccountField(this, "LocalTaxAcctID", 7, null, null);
+            field = new AccountField(this, LOCAL_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kLocalTaxDesc)
-            field = new StringField(this, "LocalTaxDesc", 15, null, null);
-        if (iFieldSeq == kFicaTaxDesc)
-            field = new StringField(this, "FicaTaxDesc", 15, null, null);
-        if (iFieldSeq == kFICAEmployee)
-            field = new PercentField(this, "FICAEmployee", 5, null, null);
-        if (iFieldSeq == kFICAEmployer)
-            field = new PercentField(this, "FICAEmployer", 5, null, null);
-        if (iFieldSeq == kFICATaxAcctID)
+        if (iFieldSeq == 14)
+            field = new StringField(this, LOCAL_TAX_DESC, 15, null, null);
+        if (iFieldSeq == 15)
+            field = new StringField(this, FICA_TAX_DESC, 15, null, null);
+        if (iFieldSeq == 16)
+            field = new PercentField(this, FICA_EMPLOYEE, 5, null, null);
+        if (iFieldSeq == 17)
+            field = new PercentField(this, FICA_EMPLOYER, 5, null, null);
+        if (iFieldSeq == 18)
         {
-            field = new AccountField(this, "FICATaxAcctID", 7, null, null);
+            field = new AccountField(this, FICA_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kMaxFICA)
-            field = new CurrencyField(this, "MaxFICA", 7, null, null);
-        if (iFieldSeq == kMedicareTaxDesc)
-            field = new StringField(this, "MedicareTaxDesc", 15, null, null);
-        if (iFieldSeq == kMedicareEmployee)
-            field = new PercentField(this, "MedicareEmployee", 4, null, null);
-        if (iFieldSeq == kMaxMedicare)
-            field = new CurrencyField(this, "MaxMedicare", 8, null, null);
-        if (iFieldSeq == kMaxEmployerFICA)
-            field = new CurrencyField(this, "MaxEmployerFICA", 8, null, null);
-        if (iFieldSeq == kMedicareEmployer)
-            field = new PercentField(this, "MedicareEmployer", 4, null, null);
-        if (iFieldSeq == kMaxEmployerMedicare)
-            field = new CurrencyField(this, "MaxEmployerMedicare", 8, null, null);
-        if (iFieldSeq == kFuiPer)
-            field = new PercentField(this, "FuiPer", 5, null, null);
-        if (iFieldSeq == kFuiMax)
-            field = new CurrencyField(this, "FuiMax", 6, null, null);
-        if (iFieldSeq == kFUITaxAcctID)
+        if (iFieldSeq == 19)
+            field = new CurrencyField(this, MAX_FICA, 7, null, null);
+        if (iFieldSeq == 20)
+            field = new StringField(this, MEDICARE_TAX_DESC, 15, null, null);
+        if (iFieldSeq == 21)
+            field = new PercentField(this, MEDICARE_EMPLOYEE, 4, null, null);
+        if (iFieldSeq == 22)
+            field = new CurrencyField(this, MAX_MEDICARE, 8, null, null);
+        if (iFieldSeq == 23)
+            field = new CurrencyField(this, MAX_EMPLOYER_FICA, 8, null, null);
+        if (iFieldSeq == 24)
+            field = new PercentField(this, MEDICARE_EMPLOYER, 4, null, null);
+        if (iFieldSeq == 25)
+            field = new CurrencyField(this, MAX_EMPLOYER_MEDICARE, 8, null, null);
+        if (iFieldSeq == 26)
+            field = new PercentField(this, FUI_PER, 5, null, null);
+        if (iFieldSeq == 27)
+            field = new CurrencyField(this, FUI_MAX, 6, null, null);
+        if (iFieldSeq == 28)
         {
-            field = new AccountField(this, "FUITaxAcctID", 7, null, null);
+            field = new AccountField(this, FUI_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kCashBankAcctID)
-            field = new BankAcctField(this, "CashBankAcctID", 2, null, null);
-        if (iFieldSeq == kTaxAcctID)
+        if (iFieldSeq == 29)
+            field = new BankAcctField(this, CASH_BANK_ACCT_ID, 2, null, null);
+        if (iFieldSeq == 30)
         {
-            field = new AccountField(this, "TaxAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, TAX_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kDefaultState)
-            field = new StringField(this, "DefaultState", 10, null, null);
-        if (iFieldSeq == kSuiPer)
-            field = new PercentField(this, "SuiPer", 5, null, null);
-        if (iFieldSeq == kSuiMax)
-            field = new CurrencyField(this, "SuiMax", 6, null, null);
-        if (iFieldSeq == kSUITaxAcctID)
+        if (iFieldSeq == 31)
+            field = new StringField(this, DEFAULT_STATE, 10, null, null);
+        if (iFieldSeq == 32)
+            field = new PercentField(this, SUI_PER, 5, null, null);
+        if (iFieldSeq == 33)
+            field = new CurrencyField(this, SUI_MAX, 6, null, null);
+        if (iFieldSeq == 34)
         {
-            field = new AccountField(this, "SUITaxAcctID", 7, null, null);
+            field = new AccountField(this, SUI_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kSdiTaxDesc)
-            field = new StringField(this, "SdiTaxDesc", 15, null, null);
-        if (iFieldSeq == kSdiPer)
-            field = new PercentField(this, "SdiPer", 5, null, null);
-        if (iFieldSeq == kSdiMax)
-            field = new CurrencyField(this, "SdiMax", 6, null, null);
-        if (iFieldSeq == kSDITaxAcctID)
+        if (iFieldSeq == 35)
+            field = new StringField(this, SDI_TAX_DESC, 15, null, null);
+        if (iFieldSeq == 36)
+            field = new PercentField(this, SDI_PER, 5, null, null);
+        if (iFieldSeq == 37)
+            field = new CurrencyField(this, SDI_MAX, 6, null, null);
+        if (iFieldSeq == 38)
         {
-            field = new AccountField(this, "SDITaxAcctID", 7, null, null);
+            field = new AccountField(this, SDI_TAX_ACCT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kLastBiWeekly)
-            field = new BooleanField(this, "LastBiWeekly", 1, null, null);
-        if (iFieldSeq == kDistToGl)
-            field = new DistField(this, "DistToGl", 1, null, null);
-        if (iFieldSeq == kDistToJobs)
-            field = new DistField(this, "DistToJobs", 1, null, null);
-        if (iFieldSeq == kRegularPayDesc)
-            field = new StringField(this, "RegularPayDesc", 15, null, null);
-        if (iFieldSeq == kOvertimePayDesc)
-            field = new StringField(this, "OvertimePayDesc", 15, null, null);
-        if (iFieldSeq == kOtTimesBase)
-            field = new PercentField(this, "OtTimesBase", 4, null, null);
-        if (iFieldSeq == kSp1Desc)
-            field = new StringField(this, "Sp1Desc", 15, null, null);
-        if (iFieldSeq == kSp1TimesBase)
-            field = new PercentField(this, "Sp1TimesBase", 4, null, null);
-        if (iFieldSeq == kSp2Desc)
-            field = new StringField(this, "Sp2Desc", 15, null, null);
-        if (iFieldSeq == kSp2TimesBase)
-            field = new PercentField(this, "Sp2TimesBase", 4, null, null);
+        if (iFieldSeq == 39)
+            field = new BooleanField(this, LAST_BI_WEEKLY, 1, null, null);
+        if (iFieldSeq == 40)
+            field = new DistField(this, DIST_TO_GL, 1, null, null);
+        if (iFieldSeq == 41)
+            field = new DistField(this, DIST_TO_JOBS, 1, null, null);
+        if (iFieldSeq == 42)
+            field = new StringField(this, REGULAR_PAY_DESC, 15, null, null);
+        if (iFieldSeq == 43)
+            field = new StringField(this, OVERTIME_PAY_DESC, 15, null, null);
+        if (iFieldSeq == 44)
+            field = new PercentField(this, OT_TIMES_BASE, 4, null, null);
+        if (iFieldSeq == 45)
+            field = new StringField(this, SP_1_DESC, 15, null, null);
+        if (iFieldSeq == 46)
+            field = new PercentField(this, SP_1_TIMES_BASE, 4, null, null);
+        if (iFieldSeq == 47)
+            field = new StringField(this, SP_2_DESC, 15, null, null);
+        if (iFieldSeq == 48)
+            field = new PercentField(this, SP_2_TIMES_BASE, 4, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kEmployeeControlLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -295,17 +246,13 @@ public class EmployeeControl extends ControlRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kEmployeeControlLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kEmployeeControlLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

@@ -10,6 +10,8 @@ public interface PeriodModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String END_PERIOD = "EndPeriod";
     public static final String PERIOD_CLOSED = "PeriodClosed";
 

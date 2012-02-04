@@ -33,34 +33,6 @@ public class City extends Location
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kName;
-    public static final int kCityCode = kCode;
-    public static final int kTicketCityDesc = kLocationLastField + 1;
-    public static final int kICAOCode = kTicketCityDesc + 1;
-    public static final int kMainCityID = kICAOCode + 1;
-    public static final int kStateID = kMainCityID + 1;
-    public static final int kCountryID = kStateID + 1;
-    public static final int kDomesticTax = kCountryID + 1;
-    public static final int kInternationalTax = kDomesticTax + 1;
-    public static final int kArrivalTax = kInternationalTax + 1;
-    public static final int kFacilitiesTax = kArrivalTax + 1;
-    public static final int kGMTOffset = kFacilitiesTax + 1;
-    public static final int kLatitude = kGMTOffset + 1;
-    public static final int kLongitude = kLatitude + 1;
-    public static final int kAltitude = kLongitude + 1;
-    public static final int kCityType = kAltitude + 1;
-    public static final int kMap = kCityType + 1;
-    public static final int kCityLastField = kMap;
-    public static final int kCityFields = kMap - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDescriptionKey = kIDKey + 1;
-    public static final int kCityCodeKey = kDescriptionKey + 1;
-    public static final int kCountryIDKey = kCityCodeKey + 1;
-    public static final int kTicketCityDescKey = kCountryIDKey + 1;
-    public static final int kCityLastKey = kTicketCityDescKey;
-    public static final int kCityKeys = kTicketCityDescKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -83,14 +55,12 @@ public class City extends Location
     {
         super.init(screen);
     }
-
-    public static final String kCityFile = "City";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCityFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CITY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -133,63 +103,69 @@ public class City extends Location
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 40, null, null);
-        if (iFieldSeq == kTicketCityDesc)
-            field = new StringField(this, "TicketCityDesc", 16, null, null);
-        if (iFieldSeq == kCityCode)
-            field = new StringField(this, "CityCode", 3, null, null);
-        if (iFieldSeq == kICAOCode)
-            field = new StringField(this, "ICAOCode", 4, null, null);
-        if (iFieldSeq == kMainCityID)
-            field = new CityField(this, "MainCityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStateID)
-            field = new StateField(this, "StateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCountryID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 40, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CITY_CODE, 3, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, TICKET_CITY_DESC, 16, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, ICAO_CODE, 4, null, null);
+        if (iFieldSeq == 7)
+            field = new CityField(this, MAIN_CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new StateField(this, STATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
         {
-            field = new CountryField(this, "CountryID", 2, null, null);
+            field = new CountryField(this, COUNTRY_ID, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDomesticTax)
+        if (iFieldSeq == 10)
         {
-            field = new DoubleField(this, "DomesticTax", 10, null, null);
+            field = new DoubleField(this, DOMESTIC_TAX, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kInternationalTax)
+        if (iFieldSeq == 11)
         {
-            field = new DoubleField(this, "InternationalTax", 10, null, null);
+            field = new DoubleField(this, INTERNATIONAL_TAX, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kArrivalTax)
-            field = new DoubleField(this, "ArrivalTax", 10, null, null);
-        if (iFieldSeq == kFacilitiesTax)
-            field = new FloatField(this, "FacilitiesTax", 8, null, null);
-        if (iFieldSeq == kGMTOffset)
+        if (iFieldSeq == 12)
+            field = new DoubleField(this, ARRIVAL_TAX, 10, null, null);
+        if (iFieldSeq == 13)
+            field = new FloatField(this, FACILITIES_TAX, 8, null, null);
+        if (iFieldSeq == 14)
         {
-            field = new FloatField(this, "GMTOffset", 5, null, null);
+            field = new FloatField(this, GMT_OFFSET, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kLatitude)
-            field = new DoubleField(this, "Latitude", 8, null, null);
-        if (iFieldSeq == kLongitude)
-            field = new DoubleField(this, "Longitude", 8, null, null);
-        if (iFieldSeq == kAltitude)
-            field = new DoubleField(this, "Altitude", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCityType)
-            field = new CityTypeField(this, "CityType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMap)
-            field = new ImageField(this, "Map", 9999, null, null);
+        if (iFieldSeq == 15)
+            field = new DoubleField(this, LATITUDE, 8, null, null);
+        if (iFieldSeq == 16)
+            field = new DoubleField(this, LONGITUDE, 8, null, null);
+        if (iFieldSeq == 17)
+            field = new DoubleField(this, ALTITUDE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new CityTypeField(this, CITY_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new ImageField(this, MAP, 9999, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCityLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -198,38 +174,34 @@ public class City extends Location
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "CityCode");
-            keyArea.addKeyField(kCityCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCountryIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CountryID");
-            keyArea.addKeyField(kCountryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(COUNTRY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTicketCityDescKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TicketCityDesc");
-            keyArea.addKeyField(kTicketCityDesc, DBConstants.ASCENDING);
+            keyArea.addKeyField(TICKET_CITY_DESC, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCityLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCityLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

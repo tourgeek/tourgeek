@@ -37,31 +37,6 @@ public class ArControl extends ControlRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kArBankAcctID = kControlRecordLastField + 1;
-    public static final int kArAccountID = kArBankAcctID + 1;
-    public static final int kMcoRecAccountID = kArAccountID + 1;
-    public static final int kMcoVarAccountID = kMcoRecAccountID + 1;
-    public static final int kMcoSuspenseAccountID = kMcoVarAccountID + 1;
-    public static final int kMcoCommPer = kMcoSuspenseAccountID + 1;
-    public static final int kMcoSvcPer = kMcoCommPer + 1;
-    public static final int kMcoTaxPer = kMcoSvcPer + 1;
-    public static final int kNonTourAccountID = kMcoTaxPer + 1;
-    public static final int kRefundBankAcctID = kNonTourAccountID + 1;
-    public static final int kRefundSuspenseAccountID = kRefundBankAcctID + 1;
-    public static final int kAirlineID = kRefundSuspenseAccountID + 1;
-    public static final int kCardID = kAirlineID + 1;
-    public static final int kCreditCardRecAccountID = kCardID + 1;
-    public static final int kCreditCardSuspenseAccountID = kCreditCardRecAccountID + 1;
-    public static final int kCreditCardVarAccountID = kCreditCardSuspenseAccountID + 1;
-    public static final int kCreditCardSvcPer = kCreditCardVarAccountID + 1;
-    public static final int kCreditDebitAccountID = kCreditCardSvcPer + 1;
-    public static final int kArControlLastField = kCreditDebitAccountID;
-    public static final int kArControlFields = kCreditDebitAccountID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kArControlLastKey = kIDKey;
-    public static final int kArControlKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -84,14 +59,12 @@ public class ArControl extends ControlRecord
     {
         super.init(screen);
     }
-
-    public static final String kArControlFile = "ArControl";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kArControlFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AR_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -134,53 +107,59 @@ public class ArControl extends ControlRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kArBankAcctID)
-            field = new BankAcctField(this, "ArBankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kArAccountID)
-            field = new AccountField(this, "ArAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoRecAccountID)
-            field = new AccountField(this, "McoRecAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoVarAccountID)
-            field = new AccountField(this, "McoVarAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoSuspenseAccountID)
-            field = new AccountField(this, "McoSuspenseAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoCommPer)
-            field = new PercentField(this, "McoCommPer", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoSvcPer)
-            field = new PercentField(this, "McoSvcPer", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoTaxPer)
-            field = new PercentField(this, "McoTaxPer", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNonTourAccountID)
-            field = new AccountField(this, "NonTourAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRefundBankAcctID)
-            field = new BankAcctField(this, "RefundBankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRefundSuspenseAccountID)
-            field = new AccountField(this, "RefundSuspenseAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirlineID)
-            field = new AirlineField(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCardID)
-            field = new CardField(this, "CardID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCreditCardRecAccountID)
-            field = new AccountField(this, "CreditCardRecAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCreditCardSuspenseAccountID)
-            field = new AccountField(this, "CreditCardSuspenseAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCreditCardVarAccountID)
-            field = new AccountField(this, "CreditCardVarAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCreditCardSvcPer)
-            field = new PercentField(this, "CreditCardSvcPer", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCreditDebitAccountID)
-            field = new AccountField(this, "CreditDebitAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new BankAcctField(this, AR_BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new AccountField(this, AR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, MCO_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new AccountField(this, MCO_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new AccountField(this, MCO_SUSPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new PercentField(this, MCO_COMM_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new PercentField(this, MCO_SVC_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new PercentField(this, MCO_TAX_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new AccountField(this, NON_TOUR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new BankAcctField(this, REFUND_BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new AccountField(this, REFUND_SUSPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new CardField(this, CARD_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new AccountField(this, CREDIT_CARD_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new AccountField(this, CREDIT_CARD_SUSPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new AccountField(this, CREDIT_CARD_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new PercentField(this, CREDIT_CARD_SVC_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new AccountField(this, CREDIT_DEBIT_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kArControlLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -189,17 +168,13 @@ public class ArControl extends ControlRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kArControlLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kArControlLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

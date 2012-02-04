@@ -31,11 +31,7 @@ public class TimeTrxScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String PAY_ENDING_DATE = "PayEndingDate";
-    public static final int kPayEndingDate = kScreenRecordLastField + 1;
     public static final String EMP_TO_PAY = "EmpToPay";
-    public static final int kEmpToPay = kPayEndingDate + 1;
-    public static final int kTimeTrxScreenRecordLastField = kEmpToPay;
-    public static final int kTimeTrxScreenRecordFields = kEmpToPay - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -59,23 +55,19 @@ public class TimeTrxScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTimeTrxScreenRecordFile = null;   // Screen field
+    public static final String TIME_TRX_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kPayEndingDate)
-            field = new TimeTrxScreenRecord_PayEndingDate(this, "PayEndingDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEmpToPay)
-            field = new StringField(this, "EmpToPay", 6, null, "S");
+        if (iFieldSeq == 0)
+            field = new TimeTrxScreenRecord_PayEndingDate(this, PAY_ENDING_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new StringField(this, EMP_TO_PAY, 6, null, "S");
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTimeTrxScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

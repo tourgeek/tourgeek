@@ -10,6 +10,8 @@ public interface ApControlModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String AUTO_AP_CODE = "AutoApCode";
     public static final String AP_BANK_ACCT_ID = "ApBankAcctID";
     public static final String AP_ACCOUNT_ID = "ApAccountID";

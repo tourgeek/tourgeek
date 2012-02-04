@@ -66,16 +66,16 @@ public class TicketToolbar extends ReportToolbar
         super.setupSFields();
         //if (this.isPrintReport())
         //  return;   // Don't display params if entered
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kReportOrder).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kStartDeparture).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kEndDeparture).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kStartIssue).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kEndIssue).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kIncludeVoid).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kAirline1ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kAirline2ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kAirline3ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TicketScreenRecord.kTicketScreenRecordFile).getField(TicketScreenRecord.kAirline4ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.REPORT_ORDER).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.START_DEPARTURE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.END_DEPARTURE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.START_ISSUE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.END_ISSUE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.INCLUDE_VOID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.AIRLINE_1ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.AIRLINE_2ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.AIRLINE_3ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TicketScreenRecord.TICKET_SCREEN_RECORD_FILE).getField(TicketScreenRecord.AIRLINE_4ID).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

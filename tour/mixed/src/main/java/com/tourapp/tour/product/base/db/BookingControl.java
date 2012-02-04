@@ -34,44 +34,6 @@ public class BookingControl extends ControlRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kAutoBookingCode = kControlRecordLastField + 1;
-    public static final int kAgencyComm = kAutoBookingCode + 1;
-    public static final int kDepositDays = kAgencyComm + 1;
-    public static final int kAcceptDays = kDepositDays + 1;
-    public static final int kFinalDays = kAcceptDays + 1;
-    public static final int kFinalizationDays = kFinalDays + 1;
-    public static final int kFinalDocDays = kFinalizationDays + 1;
-    public static final int kTicketingDays = kFinalDocDays + 1;
-    public static final int kProfileTypeID = kTicketingDays + 1;
-    public static final int kBookingStatusID = kProfileTypeID + 1;
-    public static final int kXldBookingStatusID = kBookingStatusID + 1;
-    public static final int kPaxCategoryID = kXldBookingStatusID + 1;
-    public static final int kTourStatusID = kPaxCategoryID + 1;
-    public static final int kXldTourStatusID = kTourStatusID + 1;
-    public static final int kTourClassID = kXldTourStatusID + 1;
-    public static final int kProductCategoryID = kTourClassID + 1;
-    public static final int kTourHeaderID = kProductCategoryID + 1;
-    public static final int kThinTourHeaderID = kTourHeaderID + 1;
-    public static final int kRemoteTourHeaderID = kThinTourHeaderID + 1;
-    public static final int kRemoteWaitTime = kRemoteTourHeaderID + 1;
-    public static final int kPax = kRemoteWaitTime + 1;
-    public static final int kSinglePax = kPax + 1;
-    public static final int kDoublePax = kSinglePax + 1;
-    public static final int kNights = kDoublePax + 1;
-    public static final int kMarkup = kNights + 1;
-    public static final int kTourPricingTypeID = kMarkup + 1;
-    public static final int kNonTourPricingTypeID = kTourPricingTypeID + 1;
-    public static final int kSeriesTourType = kNonTourPricingTypeID + 1;
-    public static final int kTourHeaderTourType = kSeriesTourType + 1;
-    public static final int kModuleTourType = kTourHeaderTourType + 1;
-    public static final int kThinTourType = kModuleTourType + 1;
-    public static final int kBookingControlLastField = kThinTourType;
-    public static final int kBookingControlFields = kThinTourType - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kBookingControlLastKey = kIDKey;
-    public static final int kBookingControlKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -94,14 +56,12 @@ public class BookingControl extends ControlRecord
     {
         super.init(screen);
     }
-
-    public static final String kBookingControlFile = "BookingControl";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingControlFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -130,79 +90,85 @@ public class BookingControl extends ControlRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 4, null, null);
+            field = new CounterField(this, ID, 4, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kAutoBookingCode)
-            field = new BooleanField(this, "AutoBookingCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAgencyComm)
-            field = new PercentField(this, "AgencyComm", 5, null, new Float(0.10));
-        if (iFieldSeq == kDepositDays)
-            field = new ShortField(this, "DepositDays", 3, null, new Short((short)10));
-        if (iFieldSeq == kAcceptDays)
-            field = new ShortField(this, "AcceptDays", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)10));
-        if (iFieldSeq == kFinalDays)
-            field = new ShortField(this, "FinalDays", 3, null, new Short((short)30));
-        if (iFieldSeq == kFinalizationDays)
-            field = new ShortField(this, "FinalizationDays", 3, null, new Short((short)30));
-        if (iFieldSeq == kFinalDocDays)
-            field = new ShortField(this, "FinalDocDays", 3, null, new Short((short)15));
-        if (iFieldSeq == kTicketingDays)
-            field = new ShortField(this, "TicketingDays", 3, null, new Short((short)5));
-        if (iFieldSeq == kProfileTypeID)
-            field = new ProfileTypeFilter(this, "ProfileTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingStatusID)
-            field = new BookingStatusField(this, "BookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kXldBookingStatusID)
-            field = new BookingStatusField(this, "XldBookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPaxCategoryID)
-            field = new PaxCategoryField(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourStatusID)
-            field = new TourStatusField(this, "TourStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kXldTourStatusID)
-            field = new TourStatusField(this, "XldTourStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourClassID)
-            field = new TourClassField(this, "TourClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductCategoryID)
-            field = new ProductCategoryField(this, "ProductCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderID)
-            field = new TourHeaderField(this, "TourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kThinTourHeaderID)
-            field = new TourHeaderField(this, "ThinTourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRemoteTourHeaderID)
-            field = new TourHeaderField(this, "RemoteTourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRemoteWaitTime)
-            field = new IntegerField(this, "RemoteWaitTime", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(10));
-        if (iFieldSeq == kPax)
-            field = new ShortField(this, "Pax", 2, null, null);
-        if (iFieldSeq == kSinglePax)
-            field = new ShortField(this, "SinglePax", 2, null, null);
-        if (iFieldSeq == kDoublePax)
-            field = new ShortField(this, "DoublePax", 2, null, null);
-        if (iFieldSeq == kNights)
-            field = new ShortField(this, "Nights", 2, null, new Short((short)1));
-        if (iFieldSeq == kMarkup)
-            field = new PercentField(this, "Markup", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourPricingTypeID)
-            field = new PricingTypeField(this, "TourPricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNonTourPricingTypeID)
-            field = new PricingTypeField(this, "NonTourPricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSeriesTourType)
-            field = new TourTypeField(this, "SeriesTourType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderTourType)
-            field = new TourTypeField(this, "TourHeaderTourType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kModuleTourType)
-            field = new TourTypeField(this, "ModuleTourType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kThinTourType)
-            field = new TourTypeField(this, "ThinTourType", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new BooleanField(this, AUTO_BOOKING_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new PercentField(this, AGENCY_COMM, 5, null, new Float(0.10));
+        if (iFieldSeq == 5)
+            field = new ShortField(this, DEPOSIT_DAYS, 3, null, new Short((short)10));
+        if (iFieldSeq == 6)
+            field = new ShortField(this, ACCEPT_DAYS, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)10));
+        if (iFieldSeq == 7)
+            field = new ShortField(this, FINAL_DAYS, 3, null, new Short((short)30));
+        if (iFieldSeq == 8)
+            field = new ShortField(this, FINALIZATION_DAYS, 3, null, new Short((short)30));
+        if (iFieldSeq == 9)
+            field = new ShortField(this, FINAL_DOC_DAYS, 3, null, new Short((short)15));
+        if (iFieldSeq == 10)
+            field = new ShortField(this, TICKETING_DAYS, 3, null, new Short((short)5));
+        if (iFieldSeq == 11)
+            field = new ProfileTypeFilter(this, PROFILE_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new BookingStatusField(this, BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new BookingStatusField(this, XLD_BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new PaxCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new TourStatusField(this, TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new TourStatusField(this, XLD_TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new TourClassField(this, TOUR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new ProductCategoryField(this, PRODUCT_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new TourHeaderField(this, TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new TourHeaderField(this, THIN_TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new TourHeaderField(this, REMOTE_TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
+            field = new IntegerField(this, REMOTE_WAIT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(10));
+        if (iFieldSeq == 23)
+            field = new ShortField(this, PAX, 2, null, null);
+        if (iFieldSeq == 24)
+            field = new ShortField(this, SINGLE_PAX, 2, null, null);
+        if (iFieldSeq == 25)
+            field = new ShortField(this, DOUBLE_PAX, 2, null, null);
+        if (iFieldSeq == 26)
+            field = new ShortField(this, NIGHTS, 2, null, new Short((short)1));
+        if (iFieldSeq == 27)
+            field = new PercentField(this, MARKUP, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
+            field = new PricingTypeField(this, TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new PricingTypeField(this, NON_TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new TourTypeField(this, SERIES_TOUR_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new TourTypeField(this, TOUR_HEADER_TOUR_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 32)
+            field = new TourTypeField(this, MODULE_TOUR_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 33)
+            field = new TourTypeField(this, THIN_TOUR_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingControlLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -211,17 +177,13 @@ public class BookingControl extends ControlRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingControlLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingControlLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

@@ -10,6 +10,8 @@ public interface TaxRateModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String TAX_CODE = "TaxCode";
     public static final String MARITAL_STATUS = "MaritalStatus";
     public static final String CUT_OFF_AMOUNT = "CutOffAmount";

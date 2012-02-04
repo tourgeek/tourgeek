@@ -37,35 +37,19 @@ public class McoScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String NET = "Net";
-    public static final int kNet = kScreenRecordLastField + 1;
     public static final String AIRLINE_ID = "AirlineID";
-    public static final int kAirlineID = kNet + 1;
     public static final String SERVICE_CHARGE = "ServiceCharge";
-    public static final int kServiceCharge = kAirlineID + 1;
     public static final String REPORT_DATE = "ReportDate";
-    public static final int kReportDate = kServiceCharge + 1;
     public static final String TOTAL_GROSS = "TotalGross";
-    public static final int kTotalGross = kReportDate + 1;
     public static final String TOTAL_NET = "TotalNet";
-    public static final int kTotalNet = kTotalGross + 1;
     public static final String COUNT = "Count";
-    public static final int kCount = kTotalNet + 1;
     public static final String FLAG = "Flag";
-    public static final int kFlag = kCount + 1;
     public static final String TODAY = "Today";
-    public static final int kToday = kFlag + 1;
     public static final String BOOKING_ID = "BookingID";
-    public static final int kBookingID = kToday + 1;
     public static final String CARD_NO = "CardNo";
-    public static final int kCardNo = kBookingID + 1;
     public static final String CARD_ID = "CardID";
-    public static final int kCardID = kCardNo + 1;
     public static final String CARD_FILTER_ID = "CardFilterID";
-    public static final int kCardFilterID = kCardID + 1;
     public static final String NULL_DATE = "NullDate";
-    public static final int kNullDate = kCardFilterID + 1;
-    public static final int kMcoScreenRecordLastField = kNullDate;
-    public static final int kMcoScreenRecordFields = kNullDate - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -89,47 +73,43 @@ public class McoScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kMcoScreenRecordFile = null;   // Screen field
+    public static final String MCO_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kNet)
-            field = new CurrencyField(this, "Net", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirlineID)
-            field = new AirlineField(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kServiceCharge)
-            field = new PercentField(this, "ServiceCharge", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportDate)
-            field = new McoScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalGross)
-            field = new CurrencyField(this, "TotalGross", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalNet)
-            field = new CurrencyField(this, "TotalNet", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCount)
-            field = new ShortField(this, "Count", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFlag)
-            field = new BooleanField(this, "Flag", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kToday)
-            field = new McoScreenRecord_Today(this, "Today", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCardNo)
-            field = new StringField(this, "CardNo", 20, null, null);
-        if (iFieldSeq == kCardID)
-            field = new CardField(this, "CardID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCardFilterID)
-            field = new CardFilter(this, "CardFilterID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNullDate)
-            field = new DateField(this, "NullDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new CurrencyField(this, NET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new PercentField(this, SERVICE_CHARGE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new McoScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencyField(this, TOTAL_GROSS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new CurrencyField(this, TOTAL_NET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new ShortField(this, COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new BooleanField(this, FLAG, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new McoScreenRecord_Today(this, TODAY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new StringField(this, CARD_NO, 20, null, null);
+        if (iFieldSeq == 11)
+            field = new CardField(this, CARD_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new CardFilter(this, CARD_FILTER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new DateField(this, NULL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kMcoScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

@@ -42,27 +42,6 @@ public class TourEventSchedule extends PropertiesRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kActionProperties = kProperties;
-    public static final int kTourClassID = kPropertiesRecordLastField + 1;
-    public static final int kTourEventID = kTourClassID + 1;
-    public static final int kBookingStatusID = kTourEventID + 1;
-    public static final int kTourClassOnly = kBookingStatusID + 1;
-    public static final int kTourActionType = kTourClassOnly + 1;
-    public static final int kActionTourEventID = kTourActionType + 1;
-    public static final int kActionBookingStatusID = kActionTourEventID + 1;
-    public static final int kActionMessageProcessInfoID = kActionBookingStatusID + 1;
-    public static final int kActionMessageTransportID = kActionMessageProcessInfoID + 1;
-    public static final int kRunProcessIn = kActionMessageTransportID + 1;
-    public static final int kActionDocumentName = kRunProcessIn + 1;
-    public static final int kActionDocumentText = kActionDocumentName + 1;
-    public static final int kTourEventScheduleLastField = kActionDocumentText;
-    public static final int kTourEventScheduleFields = kActionDocumentText - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTourClassIDKey = kIDKey + 1;
-    public static final int kTourEventScheduleLastKey = kTourClassIDKey;
-    public static final int kTourEventScheduleKeys = kTourClassIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -85,14 +64,12 @@ public class TourEventSchedule extends PropertiesRecord
     {
         super.init(screen);
     }
-
-    public static final String kTourEventScheduleFile = "TourEventSchedule";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTourEventScheduleFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TOUR_EVENT_SCHEDULE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -128,59 +105,65 @@ public class TourEventSchedule extends PropertiesRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kTourClassID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new PropertiesField(this, ACTION_PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
         {
-            field = new TourClassField(this, "TourClassID", 8, null, null);
+            field = new TourClassField(this, TOUR_CLASS_ID, 8, null, null);
             field.setHidden(true);
             field.setNullable(false);
         }
-        if (iFieldSeq == kTourEventID)
+        if (iFieldSeq == 5)
         {
-            field = new TourEventField(this, "TourEventID", 2, null, null);
+            field = new TourEventField(this, TOUR_EVENT_ID, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kBookingStatusID)
-            field = new BookingStatusSelect(this, "BookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourClassOnly)
-            field = new BooleanField(this, "TourClassOnly", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourActionType)
+        if (iFieldSeq == 6)
+            field = new BookingStatusSelect(this, BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new BooleanField(this, TOUR_CLASS_ONLY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new TourActionTypeField(this, "TourActionType", 1, null, null);
+            field = new TourActionTypeField(this, TOUR_ACTION_TYPE, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kActionTourEventID)
-            field = new TourEventField(this, "ActionTourEventID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kActionBookingStatusID)
-            field = new BookingStatusSelect(this, "ActionBookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kActionMessageProcessInfoID)
-            field = new MessageProcessInfoManualField(this, "ActionMessageProcessInfoID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kActionMessageTransportID)
+        if (iFieldSeq == 9)
+            field = new TourEventField(this, ACTION_TOUR_EVENT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new BookingStatusSelect(this, ACTION_BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new MessageProcessInfoManualField(this, ACTION_MESSAGE_PROCESS_INFO_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
         {
-            field = new MessageTransportManualSelect(this, "ActionMessageTransportID", 1, null, null);
+            field = new MessageTransportManualSelect(this, ACTION_MESSAGE_TRANSPORT_ID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kRunProcessIn)
-            field = new RunProcessInField(this, "RunProcessIn", Constants.DEFAULT_FIELD_LENGTH, null, "L");
-        if (iFieldSeq == kActionDocumentName)
+        if (iFieldSeq == 13)
+            field = new RunProcessInField(this, RUN_PROCESS_IN, Constants.DEFAULT_FIELD_LENGTH, null, "L");
+        if (iFieldSeq == 14)
         {
-            field = new StringField(this, "ActionDocumentName", 30, null, null);
+            field = new StringField(this, ACTION_DOCUMENT_NAME, 30, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kActionDocumentText)
-            field = new XmlField(this, "ActionDocumentText", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kActionProperties)
-            field = new PropertiesField(this, "ActionProperties", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new XmlField(this, ACTION_DOCUMENT_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourEventScheduleLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -189,23 +172,19 @@ public class TourEventSchedule extends PropertiesRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourClassIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourClassID");
-            keyArea.addKeyField(kTourClassID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourEventID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_CLASS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_EVENT_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTourEventScheduleLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTourEventScheduleLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

@@ -10,6 +10,8 @@ public interface TrxGroupModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String GROUP_CODE = "GroupCode";
     public static final String GROUP_DESC = "GroupDesc";
     public static final String TRX_DESC_ID = "TrxDescID";

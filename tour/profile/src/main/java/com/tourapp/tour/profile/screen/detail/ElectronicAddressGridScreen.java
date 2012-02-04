@@ -86,8 +86,8 @@ public class ElectronicAddressGridScreen extends ProfileDetailBaseGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ElectronicAddress.kElectronicAddressFile).getField(ElectronicAddress.kEAddressTypeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ElectronicAddress.kElectronicAddressFile).getField(ElectronicAddress.kEAddress).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ElectronicAddress.ELECTRONIC_ADDRESS_FILE).getField(ElectronicAddress.E_ADDRESS_TYPE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ElectronicAddress.ELECTRONIC_ADDRESS_FILE).getField(ElectronicAddress.E_ADDRESS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

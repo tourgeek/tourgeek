@@ -32,11 +32,7 @@ public class TaxRateScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String TAX_CODE = "TaxCode";
-    public static final int kTaxCode = kScreenRecordLastField + 1;
     public static final String MARITAL_STATUS = "MaritalStatus";
-    public static final int kMaritalStatus = kTaxCode + 1;
-    public static final int kTaxRateScreenRecordLastField = kMaritalStatus;
-    public static final int kTaxRateScreenRecordFields = kMaritalStatus - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -60,23 +56,19 @@ public class TaxRateScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTaxRateScreenRecordFile = null;   // Screen field
+    public static final String TAX_RATE_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kTaxCode)
-            field = new StringField(this, "TaxCode", 2, null, "FE");
-        if (iFieldSeq == kMaritalStatus)
-            field = new MaritalStatusField(this, "MaritalStatus", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new StringField(this, TAX_CODE, 2, null, "FE");
+        if (iFieldSeq == 1)
+            field = new MaritalStatusField(this, MARITAL_STATUS, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTaxRateScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

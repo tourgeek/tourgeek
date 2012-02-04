@@ -42,55 +42,6 @@ public class Vendor extends Company
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kCode = kCode;
-    //public static final int kContact = kContact;
-    public static final int kVendorName = kName;
-    //public static final int kAddressLine1 = kAddressLine1;
-    //public static final int kAddressLine2 = kAddressLine2;
-    //public static final int kCityOrTown = kCityOrTown;
-    //public static final int kStateOrRegion = kStateOrRegion;
-    //public static final int kPostalCode = kPostalCode;
-    //public static final int kCountry = kCountry;
-    //public static final int kTel = kTel;
-    //public static final int kDateEntered = kDateEntered;
-    //public static final int kDateChanged = kDateChanged;
-    //public static final int kChangedID = kChangedID;
-    //public static final int kFax = kFax;
-    //public static final int kEmail = kEmail;
-    //public static final int kWeb = kWeb;
-    //public static final int kComments = kComments;
-    //public static final int kPassword = kPassword;
-    //public static final int kPostalCodeSort = kPostalCodeSort;
-    //public static final int kNameSort = kNameSort;
-    public static final int kContactTitle = kCompanyLastField + 1;
-    public static final int kCountryID = kContactTitle + 1;
-    public static final int kCurrencysID = kCountryID + 1;
-    public static final int kMessageTransportID = kCurrencysID + 1;
-    public static final int kMessageServer = kMessageTransportID + 1;
-    public static final int kWSDLPath = kMessageServer + 1;
-    public static final int kProperties = kWSDLPath + 1;
-    public static final int kVendorStatusID = kProperties + 1;
-    public static final int kPaymentCycleID = kVendorStatusID + 1;
-    public static final int kPaymentCodeID = kPaymentCycleID + 1;
-    public static final int kPrepayTypeID = kPaymentCodeID + 1;
-    public static final int kDepositID = kPrepayTypeID + 1;
-    public static final int kOperationTypeCode = kDepositID + 1;
-    public static final int kDefaultAccountID = kOperationTypeCode + 1;
-    public static final int kSend1099 = kDefaultAccountID + 1;
-    public static final int kTaxId = kSend1099 + 1;
-    public static final int kVendorsCustNo = kTaxId + 1;
-    public static final int kAmountSelected = kVendorsCustNo + 1;
-    public static final int kVendorBalance = kAmountSelected + 1;
-    public static final int kVendorLastField = kVendorBalance;
-    public static final int kVendorFields = kVendorBalance - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kNameSortKey = kCodeKey + 1;
-    public static final int kCurrencysIDKey = kNameSortKey + 1;
-    public static final int kVendorLastKey = kCurrencysIDKey;
-    public static final int kVendorKeys = kCurrencysIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected ApControl m_recApControl = null;
     public static final int VENDOR_DETAIL_MODE = ScreenConstants.DISPLAY_MODE | 64;
     public static final int BROKER_DETAIL_MODE = ScreenConstants.DISPLAY_MODE | 128;
@@ -119,14 +70,12 @@ public class Vendor extends Company
         m_recApControl = null;
         super.init(screen);
     }
-
-    public static final String kVendorFile = "Vendor";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kVendorFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(VENDOR_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -175,132 +124,140 @@ public class Vendor extends Company
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 16, null, null);
-        //if (iFieldSeq == kContact)
-        //  field = new StringField(this, "Contact", 30, null, null);
-        if (iFieldSeq == kContactTitle)
-            field = new StringField(this, "ContactTitle", 30, null, null);
-        if (iFieldSeq == kVendorName)
-            field = new StringField(this, "VendorName", 30, null, null);
-        //if (iFieldSeq == kAddressLine1)
-        //  field = new StringField(this, "AddressLine1", 40, null, null);
-        //if (iFieldSeq == kAddressLine2)
-        //  field = new StringField(this, "AddressLine2", 40, null, null);
-        //if (iFieldSeq == kCityOrTown)
-        //  field = new StringField(this, "CityOrTown", 15, null, null);
-        //if (iFieldSeq == kStateOrRegion)
-        //  field = new StringField(this, "StateOrRegion", 15, null, null);
-        //if (iFieldSeq == kPostalCode)
-        //  field = new StringField(this, "PostalCode", 10, null, null);
-        //if (iFieldSeq == kCountry)
-        //  field = new StringField(this, "Country", 15, null, null);
-        if (iFieldSeq == kCountryID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, CODE, 16, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, VENDOR_NAME, 30, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new StringField(this, STATE_OR_REGION, 15, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, POSTAL_CODE, 10, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new StringField(this, COUNTRY, 15, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new PhoneField(this, TEL, 24, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new FaxField(this, FAX, 24, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new EMailField(this, EMAIL, 40, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new URLField(this, WEB, 60, null, null);
+        //if (iFieldSeq == 15)
+        //  field = new Vendor_DateEntered(this, DATE_ENTERED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 16)
+        //  field = new DateField(this, DATE_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 17)
+        //  field = new ReferenceField(this, CHANGED_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 18)
+        //  field = new MemoField(this, COMMENTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 19)
+        //  field = new UserField(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 20)
+        //  field = new StringField(this, PASSWORD, 16, null, null);
+        //if (iFieldSeq == 21)
+        //  field = new StringField(this, NAME_SORT, 6, null, null);
+        //if (iFieldSeq == 22)
+        //  field = new StringField(this, POSTAL_CODE_SORT, 5, null, null);
+        //if (iFieldSeq == 23)
+        //  field = new StringField(this, CONTACT, 30, null, null);
+        if (iFieldSeq == 24)
+            field = new StringField(this, CONTACT_TITLE, 30, null, null);
+        if (iFieldSeq == 25)
         {
-            field = new CountryField(this, "CountryID", 2, null, null);
+            field = new CountryField(this, COUNTRY_ID, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCurrencysID)
+        if (iFieldSeq == 26)
         {
-            field = new CurrencysField(this, "CurrencysID", 3, null, null);
+            field = new CurrencysField(this, CURRENCYS_ID, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kTel)
-        //  field = new PhoneField(this, "Tel", 24, null, null);
-        //if (iFieldSeq == kDateEntered)
-        //  field = new Vendor_DateEntered(this, "DateEntered", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDateChanged)
-        //  field = new DateField(this, "DateChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kChangedID)
-        //  field = new ReferenceField(this, "ChangedID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMessageTransportID)
-            field = new MessageTransportSelect(this, "MessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kFax)
-        //  field = new FaxField(this, "Fax", 24, null, null);
-        //if (iFieldSeq == kEmail)
-        //  field = new EMailField(this, "Email", 40, null, null);
-        //if (iFieldSeq == kWeb)
-        //  field = new URLField(this, "Web", 60, null, null);
-        if (iFieldSeq == kMessageServer)
+        if (iFieldSeq == 27)
+            field = new MessageTransportSelect(this, MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
         {
-            field = new StringField(this, "MessageServer", 255, null, null);
+            field = new StringField(this, MESSAGE_SERVER, 255, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kWSDLPath)
+        if (iFieldSeq == 29)
         {
-            field = new StringField(this, "WSDLPath", 255, null, null);
+            field = new StringField(this, WSDL_PATH, 255, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorStatusID)
-            field = new VendorStatusField(this, "VendorStatusID", 1, null, null);
-        if (iFieldSeq == kPaymentCycleID)
-            field = new PaymentCycleField(this, "PaymentCycleID", 1, null, null);
-        if (iFieldSeq == kPaymentCodeID)
+        if (iFieldSeq == 30)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new VendorStatusField(this, VENDOR_STATUS_ID, 1, null, null);
+        if (iFieldSeq == 32)
+            field = new PaymentCycleField(this, PAYMENT_CYCLE_ID, 1, null, null);
+        if (iFieldSeq == 33)
         {
-            field = new PaymentCodeField(this, "PaymentCodeID", 1, null, null);
+            field = new PaymentCodeField(this, PAYMENT_CODE_ID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPrepayTypeID)
+        if (iFieldSeq == 34)
         {
-            field = new PrepayTypeField(this, "PrepayTypeID", 1, null, null);
+            field = new PrepayTypeField(this, PREPAY_TYPE_ID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDepositID)
-            field = new DepositField(this, "DepositID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOperationTypeCode)
-            field = new OperationTypeField(this, "OperationTypeCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kComments)
-        //  field = new MemoField(this, "Comments", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDefaultAccountID)
+        if (iFieldSeq == 35)
+            field = new DepositField(this, DEPOSIT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 36)
+            field = new OperationTypeField(this, OPERATION_TYPE_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 37)
         {
-            field = new AccountField(this, "DefaultAccountID", 7, null, null);
+            field = new AccountField(this, DEFAULT_ACCOUNT_ID, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kSend1099)
+        if (iFieldSeq == 38)
         {
-            field = new BooleanField(this, "Send1099", 1, null, null);
+            field = new BooleanField(this, SEND_1099, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTaxId)
+        if (iFieldSeq == 39)
         {
-            field = new StringField(this, "TaxId", 11, null, "");
+            field = new StringField(this, TAX_ID, 11, null, "");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVendorsCustNo)
+        if (iFieldSeq == 40)
         {
-            field = new StringField(this, "VendorsCustNo", 20, null, null);
+            field = new StringField(this, VENDORS_CUST_NO, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kPassword)
-        //  field = new StringField(this, "Password", 16, null, null);
-        if (iFieldSeq == kAmountSelected)
+        if (iFieldSeq == 41)
         {
-            field = new FullCurrencyField(this, "AmountSelected", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, AMOUNT_SELECTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kVendorBalance)
+        if (iFieldSeq == 42)
         {
-            field = new FullCurrencyField(this, "VendorBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, VENDOR_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        //if (iFieldSeq == kPostalCodeSort)
-        //  field = new StringField(this, "PostalCodeSort", 5, null, null);
-        //if (iFieldSeq == kNameSort)
-        //  field = new StringField(this, "NameSort", 6, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kVendorLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -309,32 +266,28 @@ public class Vendor extends Company
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSort");
-            keyArea.addKeyField(kNameSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCurrencysIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CurrencysID");
-            keyArea.addKeyField(kCurrencysID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CURRENCYS_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kVendorLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kVendorLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

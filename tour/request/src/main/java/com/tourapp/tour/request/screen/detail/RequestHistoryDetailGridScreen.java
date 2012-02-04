@@ -94,9 +94,9 @@ public class RequestHistoryDetailGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).getField(RequestHistoryDetail.kBrochureID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).getField(RequestHistoryDetail.kBrochureQty).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).getField(RequestHistoryDetail.kBrochureDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).getField(RequestHistoryDetail.BROCHURE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).getField(RequestHistoryDetail.BROCHURE_QTY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).getField(RequestHistoryDetail.BROCHURE_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

@@ -35,11 +35,7 @@ public class AcctBatchScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String USER_ID = "UserID";
-    public static final int kUserID = kScreenRecordLastField + 1;
     public static final String RECURRING = "Recurring";
-    public static final int kRecurring = kUserID + 1;
-    public static final int kAcctBatchScreenRecordLastField = kRecurring;
-    public static final int kAcctBatchScreenRecordFields = kRecurring - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -63,23 +59,19 @@ public class AcctBatchScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kAcctBatchScreenRecordFile = null; // Screen field
+    public static final String ACCT_BATCH_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kUserID)
-            field = new AcctBatchScreenRecord_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRecurring)
-            field = new BooleanField(this, "Recurring", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 0)
+            field = new AcctBatchScreenRecord_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new BooleanField(this, RECURRING, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAcctBatchScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

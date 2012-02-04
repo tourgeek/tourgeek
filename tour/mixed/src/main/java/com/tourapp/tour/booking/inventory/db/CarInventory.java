@@ -35,20 +35,6 @@ public class CarInventory extends Inventory
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kProductTypeID = kProductTypeID;
-    //public static final int kProductID = kProductID;
-    //public static final int kRateID = kRateID;
-    //public static final int kClassID = kClassID;
-    //public static final int kOtherID = kOtherID;
-    //public static final int kInvDate = kInvDate;
-    //public static final int kBlocked = kBlocked;
-    //public static final int kUsed = kUsed;
-    //public static final int kAvailable = kAvailable;
-    //public static final int kOversell = kOversell;
-    //public static final int kClosed = kClosed;
-    public static final int kCarInventoryLastField = kInventoryLastField;
-    public static final int kCarInventoryFields = kInventoryLastField - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +57,12 @@ public class CarInventory extends Inventory
     {
         super.init(screen);
     }
-
-    public static final String kCarInventoryFile = "Inventory";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCarInventoryFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CAR_INVENTORY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -100,60 +84,66 @@ public class CarInventory extends Inventory
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", 10, null, null);
+        //  field = new CounterField(this, ID, 10, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProductTypeID)
-        {
-            field = new ProductTypeField(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.setNullable(false);
-        }
-        if (iFieldSeq == kProductID)
-        {
-            field = new CarField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.setNullable(false);
-        }
-        if (iFieldSeq == kRateID)
-        {
-            field = new CarRateSelect(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_RATE));
-            field.setNullable(false);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kClassID)
-        {
-            field = new CarClassSelect(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_CLASS));
-            field.setNullable(false);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kOtherID)
-        {
-            field = new ReferenceField(this, "OtherID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_OTHER));
-            field.setNullable(false);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        //if (iFieldSeq == kInvDate)
-        //  field = new DateField(this, "InvDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kBlocked)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new ShortField(this, "Blocked", 3, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+        {
+            field = new ProductTypeField(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setNullable(false);
+        }
+        if (iFieldSeq == 4)
+        {
+            field = new CarField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setNullable(false);
+        }
+        if (iFieldSeq == 5)
+        {
+            field = new CarRateSelect(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_RATE));
+            field.setNullable(false);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 6)
+        {
+            field = new CarClassSelect(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_CLASS));
+            field.setNullable(false);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 7)
+        {
+            field = new ReferenceField(this, OTHER_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_OTHER));
+            field.setNullable(false);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        //if (iFieldSeq == 8)
+        //  field = new DateField(this, INV_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //{
+        //  field = new ShortField(this, BLOCKED, 3, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kUsed)
-        //  field = new ShortField(this, "Used", 3, null, new Short((short)0));
-        //if (iFieldSeq == kAvailable)
-        //  field = new ShortField(this, "Available", 3, null, null);
-        //if (iFieldSeq == kOversell)
-        //  field = new ShortField(this, "Oversell", 3, null, null);
-        //if (iFieldSeq == kClosed)
-        //  field = new BooleanField(this, "Closed", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new ShortField(this, USED, 3, null, new Short((short)0));
+        //if (iFieldSeq == 11)
+        //  field = new ShortField(this, AVAILABLE, 3, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new ShortField(this, OVERSELL, 3, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new BooleanField(this, CLOSED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCarInventoryLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

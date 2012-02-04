@@ -14,8 +14,8 @@ import com.tourapp.model.tour.booking.detail.db.*;
 public class BookingSub extends FieldList
     implements BookingSubModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public BookingSub()
     {

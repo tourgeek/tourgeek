@@ -14,10 +14,8 @@ import com.tourapp.model.tour.acctpay.db.*;
 public class PaymentRequest extends FieldList
     implements PaymentRequestModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public PaymentRequest()
     {
@@ -56,28 +54,28 @@ public class PaymentRequest extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "VendorID", 6, null, null);
+        field = new FieldInfo(this, VENDOR_ID, 6, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Amount", 12, null, null);
+        field = new FieldInfo(this, AMOUNT, 12, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AccountID", 7, null, null);
+        field = new FieldInfo(this, ACCOUNT_ID, 7, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CheckNo", 8, null, null);
+        field = new FieldInfo(this, CHECK_NO, 8, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Comments", 30, null, null);
+        field = new FieldInfo(this, COMMENTS, 30, null, null);
     }
     /**
     * Set up the key areas.
@@ -85,7 +83,7 @@ public class PaymentRequest extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BankAcctID");
         keyArea.addKeyField("BankAcctID", Constants.ASCENDING);

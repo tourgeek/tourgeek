@@ -60,7 +60,7 @@ public class TrxSystemHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TrxSystem.kTrxSystemFile).getField(TrxSystem.kSystemDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TrxSystem.TRX_SYSTEM_FILE).getField(TrxSystem.SYSTEM_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

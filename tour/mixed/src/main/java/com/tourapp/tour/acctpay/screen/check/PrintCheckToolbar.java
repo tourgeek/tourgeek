@@ -67,10 +67,10 @@ public class PrintCheckToolbar extends ReportToolbar
         super.setupSFields();
         //if (this.isPrintReport())
         //  return;   // Don't display params if entered
-        this.getRecord(PrintCheckScreenRecord.kPrintCheckScreenRecordFile).getField(PrintCheckScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PrintCheckScreenRecord.kPrintCheckScreenRecordFile).getField(PrintCheckScreenRecord.kChecksToPrint).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PrintCheckScreenRecord.kPrintCheckScreenRecordFile).getField(PrintCheckScreenRecord.kCheckDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PrintCheckScreenRecord.kPrintCheckScreenRecordFile).getField(PrintCheckScreenRecord.kNextCheckNo).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrintCheckScreenRecord.PRINT_CHECK_SCREEN_RECORD_FILE).getField(PrintCheckScreenRecord.BANK_ACCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrintCheckScreenRecord.PRINT_CHECK_SCREEN_RECORD_FILE).getField(PrintCheckScreenRecord.CHECKS_TO_PRINT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrintCheckScreenRecord.PRINT_CHECK_SCREEN_RECORD_FILE).getField(PrintCheckScreenRecord.CHECK_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrintCheckScreenRecord.PRINT_CHECK_SCREEN_RECORD_FILE).getField(PrintCheckScreenRecord.NEXT_CHECK_NO).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

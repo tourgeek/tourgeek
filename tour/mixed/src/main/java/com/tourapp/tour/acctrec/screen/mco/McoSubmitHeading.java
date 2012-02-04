@@ -71,8 +71,8 @@ public class McoSubmitHeading extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kReportDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kAirlineID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(McoScreenRecord.MCO_SCREEN_RECORD_FILE).getField(McoScreenRecord.REPORT_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(McoScreenRecord.MCO_SCREEN_RECORD_FILE).getField(McoScreenRecord.AIRLINE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

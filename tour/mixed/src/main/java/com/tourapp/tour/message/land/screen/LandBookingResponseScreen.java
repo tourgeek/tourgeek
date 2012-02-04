@@ -86,12 +86,12 @@ public class LandBookingResponseScreen extends BaseProductResponseScreen
      */
     public void setupSFields()
     {
-        this.getRecord(LandInfoScreenRecord.kLandInfoScreenRecordFile).getField(LandInfoScreenRecord.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(LandInfoScreenRecord.kLandInfoScreenRecordFile).getField(LandInfoScreenRecord.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(LandInfoScreenRecord.kLandInfoScreenRecordFile).getField(LandInfoScreenRecord.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(LandInfoScreenRecord.kLandInfoScreenRecordFile).getField(LandInfoScreenRecord.kDetailDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(LandInfoScreenRecord.kLandInfoScreenRecordFile).getField(LandInfoScreenRecord.kConfirmationNo).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(LandInfoScreenRecord.kLandInfoScreenRecordFile).getField(LandInfoScreenRecord.kConfirmedBy).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(LandInfoScreenRecord.LAND_INFO_SCREEN_RECORD_FILE).getField(LandInfoScreenRecord.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(LandInfoScreenRecord.LAND_INFO_SCREEN_RECORD_FILE).getField(LandInfoScreenRecord.RATE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(LandInfoScreenRecord.LAND_INFO_SCREEN_RECORD_FILE).getField(LandInfoScreenRecord.CLASS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(LandInfoScreenRecord.LAND_INFO_SCREEN_RECORD_FILE).getField(LandInfoScreenRecord.DETAIL_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(LandInfoScreenRecord.LAND_INFO_SCREEN_RECORD_FILE).getField(LandInfoScreenRecord.CONFIRMATION_NO).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(LandInfoScreenRecord.LAND_INFO_SCREEN_RECORD_FILE).getField(LandInfoScreenRecord.CONFIRMED_BY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

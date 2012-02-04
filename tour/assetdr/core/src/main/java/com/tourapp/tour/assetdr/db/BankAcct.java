@@ -36,23 +36,6 @@ public class BankAcct extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kCurrencyID = kDescription + 1;
-    public static final int kEFTRouting = kCurrencyID + 1;
-    public static final int kBankABA = kEFTRouting + 1;
-    public static final int kBankAcctNo = kBankABA + 1;
-    public static final int kAccountID = kBankAcctNo + 1;
-    public static final int kNextCheck = kAccountID + 1;
-    public static final int kBalance = kNextCheck + 1;
-    public static final int kBankAcctLastField = kBalance;
-    public static final int kBankAcctFields = kBalance - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDescriptionKey = kIDKey + 1;
-    public static final int kCurrencyIDKey = kDescriptionKey + 1;
-    public static final int kBankAcctLastKey = kCurrencyIDKey;
-    public static final int kBankAcctKeys = kCurrencyIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int BANK_TRX_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     /**
      * Default constructor.
@@ -76,14 +59,12 @@ public class BankAcct extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kBankAcctFile = "BankAcct";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBankAcctFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BANK_ACCT_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -126,48 +107,54 @@ public class BankAcct extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 2, null, null);
+            field = new CounterField(this, ID, 2, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 30, null, null);
-        if (iFieldSeq == kCurrencyID)
-            field = new CurrencysField(this, "CurrencyID", 3, null, null);
-        if (iFieldSeq == kEFTRouting)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 30, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencysField(this, CURRENCY_ID, 3, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new StringField(this, "EFTRouting", 10, null, null);
+            field = new StringField(this, EFT_ROUTING, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kBankABA)
+        if (iFieldSeq == 6)
         {
-            field = new StringField(this, "BankABA", 10, null, null);
+            field = new StringField(this, BANK_ABA, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kBankAcctNo)
+        if (iFieldSeq == 7)
         {
-            field = new StringField(this, "BankAcctNo", 20, null, null);
+            field = new StringField(this, BANK_ACCT_NO, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAccountID)
+        if (iFieldSeq == 8)
         {
-            field = new AccountField(this, "AccountID", 7, null, null);
+            field = new AccountField(this, ACCOUNT_ID, 7, null, null);
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kNextCheck)
-            field = new IntegerField(this, "NextCheck", 8, null, new Integer(0));
-        if (iFieldSeq == kBalance)
+        if (iFieldSeq == 9)
+            field = new IntegerField(this, NEXT_CHECK, 8, null, new Integer(0));
+        if (iFieldSeq == 10)
         {
-            field = new CurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBankAcctLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -176,27 +163,23 @@ public class BankAcct extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCurrencyIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CurrencyID");
-            keyArea.addKeyField(kCurrencyID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CURRENCY_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBankAcctLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBankAcctLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

@@ -14,10 +14,8 @@ import com.tourapp.model.tour.product.base.db.*;
 public class ProductControl extends FieldList
     implements ProductControlModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public ProductControl()
     {
@@ -56,48 +54,48 @@ public class ProductControl extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "AirRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AIR_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AirClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AIR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "HotelRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, HOTEL_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "HotelClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, HOTEL_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "LandRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAND_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "LandClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAND_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "VariesOn", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, VARIES_ON, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PMCCutoff", 2, null, null);
+        field = new FieldInfo(this, PMC_CUTOFF, 2, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "TransportationRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRANSPORTATION_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TransportationClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRANSPORTATION_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CarRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CAR_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CarClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CAR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CruiseRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CRUISE_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CruiseClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CRUISE_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ItemRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ITEM_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ItemClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ITEM_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
     }
     /**
@@ -106,7 +104,7 @@ public class ProductControl extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
     }
 

@@ -35,25 +35,6 @@ public class AcctDetail extends BaseTrx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxDate = kTrxDate;
-    public static final int kTrxTypeID = kTrxStatusID;
-    //public static final int kTrxEntry = kTrxEntry;
-    //public static final int kAmountLocal = kAmountLocal;
-    //public static final int kTrxUserID = kTrxUserID;
-    public static final int kAccountID = kBaseTrxLastField + 1;
-    public static final int kSource = kAccountID + 1;
-    public static final int kComments = kSource + 1;
-    public static final int kVersionID = kComments + 1;
-    public static final int kAcctDetailLastField = kVersionID;
-    public static final int kAcctDetailFields = kVersionID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kAccountIDKey = kIDKey + 1;
-    public static final int kTrxDateKey = kAccountIDKey + 1;
-    public static final int kSourceKey = kTrxDateKey + 1;
-    public static final int kAcctDetailLastKey = kSourceKey;
-    public static final int kAcctDetailKeys = kSourceKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int ACCT_DIST_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     /**
      * Default constructor.
@@ -77,14 +58,12 @@ public class AcctDetail extends BaseTrx
     {
         super.init(screen);
     }
-
-    public static final String kAcctDetailFile = "AcctDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAcctDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ACCT_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -127,44 +106,50 @@ public class AcctDetail extends BaseTrx
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kAccountID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new TrxTypeField(this, TRX_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new AcctDetail_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new AcctDetail_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new DrCrField(this, AMOUNT_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new AcctDetail_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new AccountField(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kTrxDate)
-            field = new AcctDetail_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxTypeID)
-            field = new TrxTypeField(this, "TrxTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxEntry)
-            field = new AcctDetail_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountLocal)
-            field = new DrCrField(this, "AmountLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxUserID)
-        //  field = new AcctDetail_TrxUserID(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSource)
+        if (iFieldSeq == 9)
         {
-            field = new StringField(this, "Source", 10, null, null);
+            field = new StringField(this, SOURCE, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kComments)
+        if (iFieldSeq == 10)
         {
-            field = new StringField(this, "Comments", 30, null, null);
+            field = new StringField(this, COMMENTS, 30, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVersionID)
-            field = new VersionField(this, "VersionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new VersionField(this, VERSION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAcctDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -173,38 +158,34 @@ public class AcctDetail extends BaseTrx
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAccountIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AccountID");
-            keyArea.addKeyField(kAccountID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxTypeID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxEntry, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_TYPE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_ENTRY, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxDateKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxEntry, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_ENTRY, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kSourceKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Source");
-            keyArea.addKeyField(kSource, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxEntry, DBConstants.ASCENDING);
+            keyArea.addKeyField(SOURCE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_ENTRY, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAcctDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAcctDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

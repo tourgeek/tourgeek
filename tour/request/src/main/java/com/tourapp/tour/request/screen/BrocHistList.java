@@ -81,8 +81,8 @@ public class BrocHistList extends GridScreen
         Converter converter = this.getRecord(Brochure.BROCHURE_FILE).getField(Brochure.DESCRIPTION);
         converter = new FieldLengthConverter(converter, 20);
         this.addColumn(converter);
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).getField(RequestHistoryDetail.kBrochureQty).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(RequestHistoryDetail.kRequestHistoryDetailFile).getField(RequestHistoryDetail.kMailedOn).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).getField(RequestHistoryDetail.BROCHURE_QTY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).getField(RequestHistoryDetail.MAILED_ON).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the toolbars that belong with this screen.

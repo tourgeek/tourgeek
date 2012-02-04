@@ -48,71 +48,6 @@ public class ApTrx extends Trx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxUserID = kTrxUserID;
-    //public static final int kLastChanged = kLastChanged;
-    public static final int kCode = kTrxLastField + 1;
-    public static final int kDescription = kCode + 1;
-    public static final int kApTrxTypeID = kDescription + 1;
-    public static final int kActiveTrx = kApTrxTypeID + 1;
-    public static final int kVendorID = kActiveTrx + 1;
-    public static final int kTourID = kVendorID + 1;
-    public static final int kProductTypeID = kTourID + 1;
-    public static final int kStartServiceDate = kProductTypeID + 1;
-    public static final int kEndServiceDate = kStartServiceDate + 1;
-    public static final int kFinalizationDate = kEndServiceDate + 1;
-    public static final int kOrderDate = kFinalizationDate + 1;
-    public static final int kAcknowledgeDate = kOrderDate + 1;
-    public static final int kAcknowledgedOn = kAcknowledgeDate + 1;
-    public static final int kAcknowledgedBy = kAcknowledgedOn + 1;
-    public static final int kVendorConfirmationNo = kAcknowledgedBy + 1;
-    public static final int kVendorConfStatus = kVendorConfirmationNo + 1;
-    public static final int kDepartureEstimate = kVendorConfStatus + 1;
-    public static final int kDepartureExchange = kDepartureEstimate + 1;
-    public static final int kDepartureEstimateLocal = kDepartureExchange + 1;
-    public static final int kDepartureDate = kDepartureEstimateLocal + 1;
-    public static final int kInvoiceNo = kDepartureDate + 1;
-    public static final int kInvoiceDate = kInvoiceNo + 1;
-    public static final int kInvoiceAmount = kInvoiceDate + 1;
-    public static final int kInvoiceLocal = kInvoiceAmount + 1;
-    public static final int kInvoiceBalance = kInvoiceLocal + 1;
-    public static final int kInvoiceBalanceLocal = kInvoiceBalance + 1;
-    public static final int kAmountSelected = kInvoiceBalanceLocal + 1;
-    public static final int kDraftVendorID = kAmountSelected + 1;
-    public static final int kPrepaymentApTrxID = kDraftVendorID + 1;
-    public static final int kVoucherBasedDate = kPrepaymentApTrxID + 1;
-    public static final int kTrxEntry = kVoucherBasedDate + 1;
-    public static final int kAccountID = kTrxEntry + 1;
-    public static final int kTicketNumber = kAccountID + 1;
-    public static final int kIssueDate = kTicketNumber + 1;
-    public static final int kAirlineID = kIssueDate + 1;
-    public static final int kArcDate = kAirlineID + 1;
-    public static final int kArcPay = kArcDate + 1;
-    public static final int kIntl = kArcPay + 1;
-    public static final int kCreditCard = kIntl + 1;
-    public static final int kTotal = kCreditCard + 1;
-    public static final int kFare = kTotal + 1;
-    public static final int kCommAmount = kFare + 1;
-    public static final int kCommPercent = kCommAmount + 1;
-    public static final int kTaxAmount = kCommPercent + 1;
-    public static final int kTaxPercent = kTaxAmount + 1;
-    public static final int kNetFare = kTaxPercent + 1;
-    public static final int kCostAmount = kNetFare + 1;
-    public static final int kOverridePercent = kCostAmount + 1;
-    public static final int kOverrideAmount = kOverridePercent + 1;
-    public static final int kOverridePaidDate = kOverrideAmount + 1;
-    public static final int kOverridePaid = kOverridePaidDate + 1;
-    public static final int kVoidDate = kOverridePaid + 1;
-    public static final int kApTrxLastField = kVoidDate;
-    public static final int kApTrxFields = kVoidDate - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kVendorIDKey = kCodeKey + 1;
-    public static final int kTourIDKey = kVendorIDKey + 1;
-    public static final int kApTrxLastKey = kTourIDKey;
-    public static final int kApTrxKeys = kTourIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int AP_TRX_TYPE = 0;
     public static final int TICKET_TRX_TYPE = ProductType.AIR_ID;
     public static final int BROKER_DIST_SCREEN = ScreenConstants.DISPLAY_MODE | 32768;
@@ -144,14 +79,12 @@ public class ApTrx extends Trx
     {
         super.init(screen);
     }
-
-    public static final String kApTrxFile = "ApTrx";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kApTrxFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AP_TRX_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -208,169 +141,170 @@ public class ApTrx extends Trx
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 28, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 50, null, null);
-        if (iFieldSeq == kApTrxTypeID)
-        {
-            field = new IntegerField(this, "ApTrxTypeID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(ApTrx.AP_TRX_TYPE));
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxUserID)
-        //  field = new (this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kActiveTrx)
-            field = new BooleanField(this, "ActiveTrx", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourID)
-            field = new TourField(this, "TourID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductTypeID)
-            field = new ReferenceField(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kLastChanged)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new RecordChangedField(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kStartServiceDate)
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new ApTrx_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, CODE, 28, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, DESCRIPTION, 50, null, null);
+        if (iFieldSeq == 7)
         {
-            field = new DateField(this, "StartServiceDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new IntegerField(this, AP_TRX_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(ApTrx.AP_TRX_TYPE));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEndServiceDate)
+        if (iFieldSeq == 8)
+            field = new BooleanField(this, ACTIVE_TRX, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 9)
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new TourField(this, TOUR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new ReferenceField(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
         {
-            field = new DateField(this, "EndServiceDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, START_SERVICE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFinalizationDate)
+        if (iFieldSeq == 13)
         {
-            field = new DateField(this, "FinalizationDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, END_SERVICE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOrderDate)
-            field = new DateField(this, "OrderDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAcknowledgeDate)
+        if (iFieldSeq == 14)
         {
-            field = new DateField(this, "AcknowledgeDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, FINALIZATION_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAcknowledgedOn)
+        if (iFieldSeq == 15)
+            field = new DateField(this, ORDER_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
         {
-            field = new DateField(this, "AcknowledgedOn", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, ACKNOWLEDGE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAcknowledgedBy)
-            field = new ReferenceField(this, "AcknowledgedBy", 16, null, null);
-        if (iFieldSeq == kVendorConfirmationNo)
+        if (iFieldSeq == 17)
         {
-            field = new StringField(this, "VendorConfirmationNo", 20, null, null);
+            field = new DateField(this, ACKNOWLEDGED_ON, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVendorConfStatus)
-            field = new StringField(this, "VendorConfStatus", 2, null, null);
-        if (iFieldSeq == kDepartureEstimate)
-            field = new FullCurrencyField(this, "DepartureEstimate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepartureExchange)
+        if (iFieldSeq == 18)
+            field = new ReferenceField(this, ACKNOWLEDGED_BY, 16, null, null);
+        if (iFieldSeq == 19)
         {
-            field = new RealField(this, "DepartureExchange", 10, null, null);
+            field = new StringField(this, VENDOR_CONFIRMATION_NO, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDepartureEstimateLocal)
-            field = new CurrencyField(this, "DepartureEstimateLocal", 10, null, null);
-        if (iFieldSeq == kDepartureDate)
+        if (iFieldSeq == 20)
+            field = new StringField(this, VENDOR_CONF_STATUS, 2, null, null);
+        if (iFieldSeq == 21)
+            field = new FullCurrencyField(this, DEPARTURE_ESTIMATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
         {
-            field = new DateField(this, "DepartureDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new RealField(this, DEPARTURE_EXCHANGE, 10, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 23)
+            field = new CurrencyField(this, DEPARTURE_ESTIMATE_LOCAL, 10, null, null);
+        if (iFieldSeq == 24)
+        {
+            field = new DateField(this, DEPARTURE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kInvoiceNo)
-            field = new StringField(this, "InvoiceNo", 28, null, null);
-        if (iFieldSeq == kInvoiceDate)
-            field = new DateField(this, "InvoiceDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvoiceAmount)
-            field = new FullCurrencyField(this, "InvoiceAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvoiceLocal)
-            field = new CurrencyField(this, "InvoiceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvoiceBalance)
-            field = new FullCurrencyField(this, "InvoiceBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvoiceBalanceLocal)
-            field = new CurrencyField(this, "InvoiceBalanceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountSelected)
-            field = new FullCurrencyField(this, "AmountSelected", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDraftVendorID)
-            field = new VendorField(this, "DraftVendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPrepaymentApTrxID)
-            field = new ApTrxField(this, "PrepaymentApTrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVoucherBasedDate)
-            field = new DateField(this, "VoucherBasedDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxEntry)
-            field = new DateTimeField(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAccountID)
-            field = new AccountField(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTicketNumber)
+        if (iFieldSeq == 25)
+            field = new StringField(this, INVOICE_NO, 28, null, null);
+        if (iFieldSeq == 26)
+            field = new DateField(this, INVOICE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 27)
+            field = new FullCurrencyField(this, INVOICE_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
+            field = new CurrencyField(this, INVOICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new FullCurrencyField(this, INVOICE_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new CurrencyField(this, INVOICE_BALANCE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new FullCurrencyField(this, AMOUNT_SELECTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 32)
+            field = new VendorField(this, DRAFT_VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 33)
+            field = new ApTrxField(this, PREPAYMENT_AP_TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 34)
+            field = new DateField(this, VOUCHER_BASED_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 35)
+            field = new DateTimeField(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 36)
+            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 37)
         {
-            field = new StringField(this, "TicketNumber", 28, null, null);
+            field = new StringField(this, TICKET_NUMBER, 28, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kIssueDate)
+        if (iFieldSeq == 38)
         {
-            field = new DateField(this, "IssueDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, ISSUE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAirlineID)
-            field = new AirlineField(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kArcDate)
-            field = new DateField(this, "ArcDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kArcPay)
-            field = new DateField(this, "ArcPay", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kIntl)
-            field = new StringField(this, "Intl", 1, null, null);
-        if (iFieldSeq == kCreditCard)
+        if (iFieldSeq == 39)
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 40)
+            field = new DateField(this, ARC_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 41)
+            field = new DateField(this, ARC_PAY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 42)
+            field = new StringField(this, INTL, 1, null, null);
+        if (iFieldSeq == 43)
         {
-            field = new BooleanField(this, "CreditCard", 1, null, null);
+            field = new BooleanField(this, CREDIT_CARD, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTotal)
-            field = new CurrencyField(this, "Total", 10, null, null);
-        if (iFieldSeq == kFare)
-            field = new CurrencyField(this, "Fare", 10, null, null);
-        if (iFieldSeq == kCommAmount)
-            field = new CurrencyField(this, "CommAmount", 9, null, null);
-        if (iFieldSeq == kCommPercent)
-            field = new PercentField(this, "CommPercent", 5, null, null);
-        if (iFieldSeq == kTaxAmount)
-            field = new CurrencyField(this, "TaxAmount", 9, null, null);
-        if (iFieldSeq == kTaxPercent)
+        if (iFieldSeq == 44)
+            field = new CurrencyField(this, TOTAL, 10, null, null);
+        if (iFieldSeq == 45)
+            field = new CurrencyField(this, FARE, 10, null, null);
+        if (iFieldSeq == 46)
+            field = new CurrencyField(this, COMM_AMOUNT, 9, null, null);
+        if (iFieldSeq == 47)
+            field = new PercentField(this, COMM_PERCENT, 5, null, null);
+        if (iFieldSeq == 48)
+            field = new CurrencyField(this, TAX_AMOUNT, 9, null, null);
+        if (iFieldSeq == 49)
         {
-            field = new PercentField(this, "TaxPercent", 5, null, null);
+            field = new PercentField(this, TAX_PERCENT, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kNetFare)
-            field = new CurrencyField(this, "NetFare", 10, null, null);
-        if (iFieldSeq == kCostAmount)
-            field = new CurrencyField(this, "CostAmount", 10, null, null);
-        if (iFieldSeq == kOverridePercent)
-            field = new PercentField(this, "OverridePercent", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOverrideAmount)
-            field = new CurrencyField(this, "OverrideAmount", 10, null, null);
-        if (iFieldSeq == kOverridePaidDate)
-            field = new DateField(this, "OverridePaidDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOverridePaid)
-            field = new CurrencyField(this, "OverridePaid", 10, null, null);
-        if (iFieldSeq == kVoidDate)
-            field = new DateField(this, "VoidDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 50)
+            field = new CurrencyField(this, NET_FARE, 10, null, null);
+        if (iFieldSeq == 51)
+            field = new CurrencyField(this, COST_AMOUNT, 10, null, null);
+        if (iFieldSeq == 52)
+            field = new PercentField(this, OVERRIDE_PERCENT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 53)
+            field = new CurrencyField(this, OVERRIDE_AMOUNT, 10, null, null);
+        if (iFieldSeq == 54)
+            field = new DateField(this, OVERRIDE_PAID_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 55)
+            field = new CurrencyField(this, OVERRIDE_PAID, 10, null, null);
+        if (iFieldSeq == 56)
+            field = new DateField(this, VOID_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kApTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -379,36 +313,32 @@ public class ApTrx extends Trx
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kActiveTrx, DBConstants.ASCENDING);
-            keyArea.addKeyField(kStartServiceDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACTIVE_TRX, DBConstants.ASCENDING);
+            keyArea.addKeyField(START_SERVICE_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourID");
-            keyArea.addKeyField(kTourID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductTypeID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kApTrxLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kApTrxLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

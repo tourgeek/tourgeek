@@ -40,17 +40,12 @@ public class BookingHotelScreenRecord extends BookingDetailScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kMarkupFromLast = kMarkupFromLast;
+    //public static final String PP_COST_LOCAL = PP_COST_LOCAL;
+    //public static final String MARKUP_FROM_LAST = MARKUP_FROM_LAST;
     public static final String SINGLE_COST_LOCAL = "SingleCostLocal";
-    public static final int kSingleCostLocal = kBookingDetailScreenRecordLastField + 1;
     public static final String DOUBLE_COST_LOCAL = "DoubleCostLocal";
-    public static final int kDoubleCostLocal = kSingleCostLocal + 1;
     public static final String TRIPLE_COST_LOCAL = "TripleCostLocal";
-    public static final int kTripleCostLocal = kDoubleCostLocal + 1;
     public static final String QUAD_COST_LOCAL = "QuadCostLocal";
-    public static final int kQuadCostLocal = kTripleCostLocal + 1;
-    public static final int kBookingHotelScreenRecordLastField = kQuadCostLocal;
-    public static final int kBookingHotelScreenRecordFields = kQuadCostLocal - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -74,29 +69,27 @@ public class BookingHotelScreenRecord extends BookingDetailScreenRecord
         super.init(screen);
     }
 
-    public static final String kBookingHotelScreenRecordFile = null;    // Screen field
+    public static final String BOOKING_HOTEL_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kSingleCostLocal)
-            field = new CurrencyField(this, "SingleCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDoubleCostLocal)
-            field = new CurrencyField(this, "DoubleCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTripleCostLocal)
-            field = new CurrencyField(this, "TripleCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kQuadCostLocal)
-            field = new CurrencyField(this, "QuadCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kMarkupFromLast)
-        //  field = new (this, "MarkupFromLast", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new CurrencyField(this, SINGLE_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new CurrencyField(this, DOUBLE_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new CurrencyField(this, TRIPLE_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencyField(this, QUAD_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new (this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingHotelScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

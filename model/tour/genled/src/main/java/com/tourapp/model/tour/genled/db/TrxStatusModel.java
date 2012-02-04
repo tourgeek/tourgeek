@@ -10,6 +10,8 @@ public interface TrxStatusModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String STATUS_CODE = "StatusCode";
     public static final String STATUS_DESC = "StatusDesc";
     public static final String PREFERRED_SIGN = "PreferredSign";

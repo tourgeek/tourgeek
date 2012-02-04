@@ -25,7 +25,6 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.acctrec.screen.cash.*;
 import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.genled.db.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**
@@ -36,18 +35,6 @@ public class CashBatchDist extends BankTrxBatchDist
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kCashBatchDetailID = kBankTrxBatchDetailID;
-    //public static final int kAccountID = kAccountID;
-    //public static final int kAmount = kAmount;
-    public static final int kBookingID = kBankTrxBatchDistLastField + 1;
-    public static final int kCashBatchDistLastField = kBookingID;
-    public static final int kCashBatchDistFields = kBookingID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCashBatchDetailIDKey = kIDKey + 1;
-    public static final int kCashBatchDistLastKey = kCashBatchDetailIDKey;
-    public static final int kCashBatchDistKeys = kCashBatchDetailIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,14 +57,12 @@ public class CashBatchDist extends BankTrxBatchDist
     {
         super.init(screen);
     }
-
-    public static final String kCashBatchDistFile = "CashBatchDist";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCashBatchDistFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CASH_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -120,28 +105,34 @@ public class CashBatchDist extends BankTrxBatchDist
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kCashBatchDetailID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ReferenceField(this, "CashBatchDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ReferenceField(this, CASH_BATCH_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kAccountID)
-        //  field = new AccountField(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kAmount)
-        //  field = new CurrencyField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCashBatchDistLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -150,22 +141,18 @@ public class CashBatchDist extends BankTrxBatchDist
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCashBatchDetailIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchDetailID");
-            keyArea.addKeyField(kCashBatchDetailID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CASH_BATCH_DETAIL_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCashBatchDistLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCashBatchDistLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

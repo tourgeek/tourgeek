@@ -32,6 +32,7 @@ public class CreditCardBatchDist extends CashBatchDist
      implements CreditCardBatchDistModel
 {
     private static final long serialVersionUID = 1L;
+
     /**
      * Default constructor.
      */
@@ -54,14 +55,12 @@ public class CreditCardBatchDist extends CashBatchDist
     {
         super.init(screen);
     }
-
-    public static final String kCreditCardBatchDistFile = "CreditCardBatchDist";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCreditCardBatchDistFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CREDIT_CARD_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -97,6 +96,42 @@ public class CreditCardBatchDist extends CashBatchDist
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;
+    }
+    /**
+     * Add this field in the Record's field sequence.
+     */
+    public BaseField setupField(int iFieldSeq)
+    {
+        BaseField field = null;
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+        {
+            field = new ReferenceField(this, CASH_BATCH_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setNullable(false);
+        }
+        //if (iFieldSeq == 4)
+        //  field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (field == null)
+            field = super.setupField(iFieldSeq);
+        return field;
     }
 
 }

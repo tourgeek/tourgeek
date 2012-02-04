@@ -38,30 +38,6 @@ public class BookingPax extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kBookingID = kVirtualRecordLastField + 1;
-    public static final int kSequence = kBookingID + 1;
-    public static final int kRemoteReferenceNo = kSequence + 1;
-    public static final int kPaxCategoryID = kRemoteReferenceNo + 1;
-    public static final int kProfileID = kPaxCategoryID + 1;
-    public static final int kShareBookingPaxID = kProfileID + 1;
-    public static final int kComments = kShareBookingPaxID + 1;
-    public static final int kNamePrefix = kComments + 1;
-    public static final int kFirstName = kNamePrefix + 1;
-    public static final int kMiddleName = kFirstName + 1;
-    public static final int kSurName = kMiddleName + 1;
-    public static final int kDateOfBirth = kSurName + 1;
-    public static final int kGender = kDateOfBirth + 1;
-    public static final int kSmoker = kGender + 1;
-    public static final int kBookingPaxLastField = kSmoker;
-    public static final int kBookingPaxFields = kSmoker - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kBookingIDKey = kIDKey + 1;
-    public static final int kSurNameKey = kBookingIDKey + 1;
-    public static final int kProfileIDKey = kSurNameKey + 1;
-    public static final int kBookingPaxLastKey = kProfileIDKey;
-    public static final int kBookingPaxKeys = kProfileIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -84,14 +60,12 @@ public class BookingPax extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kBookingPaxFile = "BookingPax";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingPaxFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_PAX_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -134,48 +108,54 @@ public class BookingPax extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 5, null, null);
+            field = new CounterField(this, ID, 5, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", 6, null, null);
-        if (iFieldSeq == kSequence)
-            field = new ShortField(this, "Sequence", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRemoteReferenceNo)
-            field = new StringField(this, "RemoteReferenceNo", 60, null, null);
-        if (iFieldSeq == kPaxCategoryID)
-            field = new PaxCategoryField(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProfileID)
-            field = new ProfileField(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kShareBookingPaxID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new BookingField(this, BOOKING_ID, 6, null, null);
+        if (iFieldSeq == 4)
+            field = new ShortField(this, SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, REMOTE_REFERENCE_NO, 60, null, null);
+        if (iFieldSeq == 6)
+            field = new PaxCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new ProfileField(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new IntegerField(this, "ShareBookingPaxID", 6, null, null);
+            field = new IntegerField(this, SHARE_BOOKING_PAX_ID, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kComments)
-            field = new MemoField(this, "Comments", 9999, null, null);
-        if (iFieldSeq == kNamePrefix)
-            field = new TitleField(this, "NamePrefix", 4, null, null);
-        if (iFieldSeq == kFirstName)
-            field = new StringField(this, "FirstName", 20, null, null);
-        if (iFieldSeq == kMiddleName)
-            field = new StringField(this, "MiddleName", 20, null, null);
-        if (iFieldSeq == kSurName)
-            field = new StringField(this, "SurName", 20, null, null);
-        if (iFieldSeq == kDateOfBirth)
-            field = new DateField(this, "DateOfBirth", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGender)
-            field = new GenderField(this, "Gender", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSmoker)
-            field = new SmokerField(this, "Smoker", 1, null, null);
+        if (iFieldSeq == 9)
+            field = new MemoField(this, COMMENTS, 9999, null, null);
+        if (iFieldSeq == 10)
+            field = new TitleField(this, NAME_PREFIX, 4, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, FIRST_NAME, 20, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, MIDDLE_NAME, 20, null, null);
+        if (iFieldSeq == 13)
+            field = new StringField(this, SUR_NAME, 20, null, null);
+        if (iFieldSeq == 14)
+            field = new DateField(this, DATE_OF_BIRTH, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new GenderField(this, GENDER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new SmokerField(this, SMOKER, 1, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingPaxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -184,33 +164,29 @@ public class BookingPax extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kSurNameKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SurName");
-            keyArea.addKeyField(kSurName, DBConstants.ASCENDING);
+            keyArea.addKeyField(SUR_NAME, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingPaxLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingPaxLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

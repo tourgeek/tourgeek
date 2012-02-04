@@ -31,18 +31,18 @@ public class CheckScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String CHECK_DATE = "CheckDate";
-    public static final int kCheckDate = kReportScreenRecordLastField + 1;
     public static final String CHECK_NO = "CheckNo";
-    public static final int kCheckNo = kCheckDate + 1;
     public static final String PAYEE = "Payee";
-    public static final int kPayee = kCheckNo + 1;
     public static final String CHECK_AMOUNT = "CheckAmount";
-    public static final int kCheckAmount = kPayee + 1;
     public static final String CHECK_AMOUNT_TEXT = "CheckAmountText";
-    public static final int kCheckAmountText = kCheckAmount + 1;
-    public static final int kCheckScreenRecordLastField = kCheckAmountText;
-    public static final int kCheckScreenRecordFields = kCheckAmountText - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -66,29 +66,39 @@ public class CheckScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kCheckScreenRecordFile = null; // Screen field
+    public static final String CHECK_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kCheckDate)
-            field = new CheckScreenRecord_CheckDate(this, "CheckDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCheckNo)
-            field = new IntegerField(this, "CheckNo", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayee)
-            field = new StringField(this, "Payee", 60, null, null);
-        if (iFieldSeq == kCheckAmount)
-            field = new CurrencyField(this, "CheckAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCheckAmountText)
-            field = new AmountTextField(this, "CheckAmountText", 128, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new CheckScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new CheckScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new CheckScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CheckScreenRecord_CheckDate(this, CHECK_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new IntegerField(this, CHECK_NO, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, PAYEE, 60, null, null);
+        if (iFieldSeq == 10)
+            field = new CurrencyField(this, CHECK_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new AmountTextField(this, CHECK_AMOUNT_TEXT, 128, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCheckScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

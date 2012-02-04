@@ -116,9 +116,9 @@ public class CreditCardBatchDistGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile).getField(CreditCardBatchDist.kBookingID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile).getField(CreditCardBatchDist.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CreditCardBatchDist.kCreditCardBatchDistFile).getField(CreditCardBatchDist.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE).getField(CreditCardBatchDist.BOOKING_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE).getField(CreditCardBatchDist.AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CreditCardBatchDist.CREDIT_CARD_BATCH_DIST_FILE).getField(CreditCardBatchDist.ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

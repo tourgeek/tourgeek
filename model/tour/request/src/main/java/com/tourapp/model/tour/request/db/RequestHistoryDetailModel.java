@@ -10,6 +10,8 @@ public interface RequestHistoryDetailModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String REQUEST_HISTORY_ID = "RequestHistoryID";
     public static final String PROFILE_ID = "ProfileID";
     public static final String BROCHURE_ID = "BrochureID";

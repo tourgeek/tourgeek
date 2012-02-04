@@ -35,32 +35,6 @@ public class Request extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProfileID = kVirtualRecordLastField + 1;
-    public static final int kProfileCode = kProfileID + 1;
-    public static final int kGenericName = kProfileCode + 1;
-    public static final int kAddressLine1 = kGenericName + 1;
-    public static final int kAddressLine2 = kAddressLine1 + 1;
-    public static final int kCityOrTown = kAddressLine2 + 1;
-    public static final int kStateOrRegion = kCityOrTown + 1;
-    public static final int kPostalCode = kStateOrRegion + 1;
-    public static final int kCountry = kPostalCode + 1;
-    public static final int kAttention = kCountry + 1;
-    public static final int kEmail = kAttention + 1;
-    public static final int kSendViaCode = kEmail + 1;
-    public static final int kBundleID = kSendViaCode + 1;
-    public static final int kBundleQty = kBundleID + 1;
-    public static final int kBrochureText = kBundleQty + 1;
-    public static final int kPrintNow = kBrochureText + 1;
-    public static final int kHistReprint = kPrintNow + 1;
-    public static final int kRequestLastField = kHistReprint;
-    public static final int kRequestFields = kHistReprint - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kPostalCodeKey = kIDKey + 1;
-    public static final int kProfileCodeKey = kPostalCodeKey + 1;
-    public static final int kRequestLastKey = kProfileCodeKey;
-    public static final int kRequestKeys = kProfileCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -83,14 +57,12 @@ public class Request extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kRequestFile = "Request";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kRequestFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(REQUEST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -136,51 +108,57 @@ public class Request extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProfileID)
-            field = new ProfileField(this, "ProfileID", 8, null, null);
-        if (iFieldSeq == kProfileCode)
-            field = new StringField(this, "ProfileCode", 16, null, null);
-        if (iFieldSeq == kGenericName)
-            field = new StringField(this, "GenericName", 30, null, null);
-        if (iFieldSeq == kAddressLine1)
-            field = new StringField(this, "AddressLine1", 40, null, null);
-        if (iFieldSeq == kAddressLine2)
-            field = new StringField(this, "AddressLine2", 40, null, null);
-        if (iFieldSeq == kCityOrTown)
-            field = new StringField(this, "CityOrTown", 15, null, null);
-        if (iFieldSeq == kStateOrRegion)
-            field = new StringField(this, "StateOrRegion", 15, null, null);
-        if (iFieldSeq == kPostalCode)
-            field = new StringField(this, "PostalCode", 10, null, null);
-        if (iFieldSeq == kCountry)
-            field = new StringField(this, "Country", 15, null, null);
-        if (iFieldSeq == kAttention)
-            field = new StringField(this, "Attention", 24, null, null);
-        if (iFieldSeq == kEmail)
-            field = new EMailField(this, "Email", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSendViaCode)
-            field = new SendViaField(this, "SendViaCode", 4, null, null);
-        if (iFieldSeq == kBundleID)
-            field = new BundleFilter(this, "BundleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBundleQty)
-            field = new ShortField(this, "BundleQty", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBrochureText)
-            field = new StringField(this, "BrochureText", 255, null, null);
-        if (iFieldSeq == kPrintNow)
-            field = new BooleanField(this, "PrintNow", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (iFieldSeq == kHistReprint)
-            field = new BooleanField(this, "HistReprint", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProfileField(this, PROFILE_ID, 8, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, PROFILE_CODE, 16, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, GENERIC_NAME, 30, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        if (iFieldSeq == 8)
+            field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, STATE_OR_REGION, 15, null, null);
+        if (iFieldSeq == 10)
+            field = new StringField(this, POSTAL_CODE, 10, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, COUNTRY, 15, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, ATTENTION, 24, null, null);
+        if (iFieldSeq == 13)
+            field = new EMailField(this, EMAIL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new SendViaField(this, SEND_VIA_CODE, 4, null, null);
+        if (iFieldSeq == 15)
+            field = new BundleFilter(this, BUNDLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new ShortField(this, BUNDLE_QTY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new StringField(this, BROCHURE_TEXT, 255, null, null);
+        if (iFieldSeq == 18)
+            field = new BooleanField(this, PRINT_NOW, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 19)
+            field = new BooleanField(this, HIST_REPRINT, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kRequestLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -189,27 +167,23 @@ public class Request extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kPostalCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PostalCode");
-            keyArea.addKeyField(kPostalCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(POSTAL_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileCode");
-            keyArea.addKeyField(kProfileCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_CODE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kRequestLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kRequestLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

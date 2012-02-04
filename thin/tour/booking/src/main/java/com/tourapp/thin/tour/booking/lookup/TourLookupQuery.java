@@ -14,6 +14,8 @@ import com.tourapp.model.tour.booking.lookup.*;
 public class TourLookupQuery extends FieldList
     implements TourLookupQueryModel
 {
+    private static final long serialVersionUID = 1L;
+
 
     public TourLookupQuery()
     {

@@ -33,23 +33,6 @@ public class State extends Location
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kName = kName;
-    public static final int kStatePostalCode = kCode;
-    public static final int kCountryID = kLocationLastField + 1;
-    public static final int kDescription = kCountryID + 1;
-    public static final int kPicture = kDescription + 1;
-    public static final int kPolygon = kPicture + 1;
-    public static final int kGMTOffset = kPolygon + 1;
-    public static final int kStateLastField = kGMTOffset;
-    public static final int kStateFields = kGMTOffset - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kNameKey = kIDKey + 1;
-    public static final int kStatePostalCodeKey = kNameKey + 1;
-    public static final int kCountryIDKey = kStatePostalCodeKey + 1;
-    public static final int kStateLastKey = kCountryIDKey;
-    public static final int kStateKeys = kCountryIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -72,14 +55,12 @@ public class State extends Location
     {
         super.init(screen);
     }
-
-    public static final String kStateFile = "State";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kStateFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(STATE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -122,31 +103,37 @@ public class State extends Location
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kName)
-            field = new StringField(this, "Name", 40, null, null);
-        if (iFieldSeq == kStatePostalCode)
-            field = new StringField(this, "StatePostalCode", 20, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDescription)
-            field = new MemoField(this, "Description", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPicture)
-            field = new ObjectField(this, "Picture", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPolygon)
-            field = new ObjectField(this, "Polygon", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGMTOffset)
-            field = new FloatField(this, "GMTOffset", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, NAME, 40, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, STATE_POSTAL_CODE, 20, null, null);
+        if (iFieldSeq == 5)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new MemoField(this, DESCRIPTION, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new ObjectField(this, PICTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new ObjectField(this, POLYGON, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new FloatField(this, GMT_OFFSET, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kStateLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -155,33 +142,29 @@ public class State extends Location
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Name");
-            keyArea.addKeyField(kName, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kStatePostalCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "StatePostalCode");
-            keyArea.addKeyField(kStatePostalCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(STATE_POSTAL_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCountryIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CountryID");
-            keyArea.addKeyField(kCountryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kName, DBConstants.ASCENDING);
+            keyArea.addKeyField(COUNTRY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kStateLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kStateLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

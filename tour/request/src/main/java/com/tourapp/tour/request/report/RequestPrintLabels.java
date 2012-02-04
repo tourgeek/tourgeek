@@ -130,8 +130,8 @@ public class RequestPrintLabels extends CustomReportScreen
      */
     public void setupSFields()
     {
-        this.getRecord(RequestLabelsScreenRecord.kRequestLabelsScreenRecordFile).getField(RequestLabelsScreenRecord.kFullAddress).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(RequestLabelsScreenRecord.kRequestLabelsScreenRecordFile).getField(RequestLabelsScreenRecord.kRequestText).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestLabelsScreenRecord.REQUEST_LABELS_SCREEN_RECORD_FILE).getField(RequestLabelsScreenRecord.FULL_ADDRESS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestLabelsScreenRecord.REQUEST_LABELS_SCREEN_RECORD_FILE).getField(RequestLabelsScreenRecord.REQUEST_TEXT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Process the command.

@@ -78,12 +78,12 @@ public class TourHeaderLandScreen extends TourDetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourHeaderLand.kTourHeaderLandFile).getField(TourHeaderLand.kDay).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderLand.kTourHeaderLandFile).getField(TourHeaderLand.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderLand.kTourHeaderLandFile).getField(TourHeaderLand.kEtd).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderLand.kTourHeaderLandFile).getField(TourHeaderLand.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderLand.kTourHeaderLandFile).getField(TourHeaderLand.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderLand.kTourHeaderLandFile).getField(TourHeaderLand.kPMCCutoff).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderLand.TOUR_HEADER_LAND_FILE).getField(TourHeaderLand.DAY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderLand.TOUR_HEADER_LAND_FILE).getField(TourHeaderLand.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderLand.TOUR_HEADER_LAND_FILE).getField(TourHeaderLand.ETD).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderLand.TOUR_HEADER_LAND_FILE).getField(TourHeaderLand.RATE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderLand.TOUR_HEADER_LAND_FILE).getField(TourHeaderLand.CLASS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderLand.TOUR_HEADER_LAND_FILE).getField(TourHeaderLand.PMC_CUTOFF).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.addStandardScreenFields(true);
     }
 

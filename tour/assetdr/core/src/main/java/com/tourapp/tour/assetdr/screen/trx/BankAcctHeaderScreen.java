@@ -92,10 +92,10 @@ public class BankAcctHeaderScreen extends HeaderScreen
     {
         // This will synchronize the screen field and make sure the lookup uses the header record
         ((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID)).setReference(this.getRecord(BankAcct.BANK_ACCT_FILE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kDisplayBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kEndBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxScreenRecord.BANK_TRX_SCREEN_RECORD_FILE).getField(BankTrxScreenRecord.BANK_ACCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxScreenRecord.BANK_TRX_SCREEN_RECORD_FILE).getField(BankTrxScreenRecord.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxScreenRecord.BANK_TRX_SCREEN_RECORD_FILE).getField(BankTrxScreenRecord.DISPLAY_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankTrxScreenRecord.BANK_TRX_SCREEN_RECORD_FILE).getField(BankTrxScreenRecord.END_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

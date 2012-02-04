@@ -203,7 +203,7 @@ public class BookingItinerary extends BookingSubScreen
             ((org.jbundle.base.screen.view.swing.VHtmlView)sView).setupHyperLinkListener(this);
             htmlPane.setOpaque(false);
         
-            java.awt.Component component = sView.getControl(DBConstants.CONTROL_TOP);
+            java.awt.Component component = (java.awt.Component)sView.getControl(DBConstants.CONTROL_TOP);
             ((javax.swing.JScrollPane)component).setBorder(null);
             ((javax.swing.JScrollPane)component).setOpaque(false);
             ((javax.swing.JScrollPane)component).getViewport().setOpaque(false);

@@ -37,34 +37,6 @@ public class TourHeaderOption extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kTourOrOption = kVirtualRecordLastField + 1;
-    public static final int kTourOrOptionID = kTourOrOption + 1;
-    public static final int kSequence = kTourOrOptionID + 1;
-    public static final int kDescription = kSequence + 1;
-    public static final int kComments = kDescription + 1;
-    public static final int kAskForAnswer = kComments + 1;
-    public static final int kAlwaysResolve = kAskForAnswer + 1;
-    public static final int kStartDate = kAlwaysResolve + 1;
-    public static final int kEndDate = kStartDate + 1;
-    public static final int kDaysOfWeek = kEndDate + 1;
-    public static final int kGateway = kDaysOfWeek + 1;
-    public static final int kUseTourHeaderOptionID = kGateway + 1;
-    public static final int kPaxCategoryID = kUseTourHeaderOptionID + 1;
-    public static final int kDetailOptionCount = kPaxCategoryID + 1;
-    public static final int kDetailPriceCount = kDetailOptionCount + 1;
-    public static final int kDetailAirHeaderCount = kDetailPriceCount + 1;
-    public static final int kDetailTourDetailCount = kDetailAirHeaderCount + 1;
-    public static final int kTourClassID = kDetailTourDetailCount + 1;
-    public static final int kInvoiceText = kTourClassID + 1;
-    public static final int kItineraryDesc = kInvoiceText + 1;
-    public static final int kTourHeaderOptionLastField = kItineraryDesc;
-    public static final int kTourHeaderOptionFields = kItineraryDesc - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTourOrOptionKey = kIDKey + 1;
-    public static final int kTourHeaderOptionLastKey = kTourOrOptionKey;
-    public static final int kTourHeaderOptionKeys = kTourOrOptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int PRICING_GRID_SCREEN = ScreenConstants.LAST_MODE * 2;
     public static final int TOUR_GRID_SCREEN = ScreenConstants.LAST_MODE * 1024;
     public static final int AIR_GRID_SCREEN = ScreenConstants.LAST_MODE * 128;
@@ -97,14 +69,12 @@ public class TourHeaderOption extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kTourHeaderOptionFile = "TourHeaderOption";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTourHeaderOptionFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TOUR_HEADER_OPTION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -167,72 +137,78 @@ public class TourHeaderOption extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kTourOrOption)
-            field = new StringField(this, "TourOrOption", 1, null, null);
-        if (iFieldSeq == kTourOrOptionID)
-            field = new ReferenceField(this, "TourOrOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSequence)
-            field = new ShortField(this, "Sequence", 4, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 60, null, null);
-        if (iFieldSeq == kComments)
-            field = new MemoField(this, "Comments", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAskForAnswer)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, TOUR_OR_OPTION, 1, null, null);
+        if (iFieldSeq == 4)
+            field = new ReferenceField(this, TOUR_OR_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new ShortField(this, SEQUENCE, 4, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, DESCRIPTION, 60, null, null);
+        if (iFieldSeq == 7)
+            field = new MemoField(this, COMMENTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new BooleanField(this, "AskForAnswer", 1, null, null);
+            field = new BooleanField(this, ASK_FOR_ANSWER, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAlwaysResolve)
+        if (iFieldSeq == 9)
         {
-            field = new BooleanField(this, "AlwaysResolve", 1, null, new Boolean(false));
+            field = new BooleanField(this, ALWAYS_RESOLVE, 1, null, new Boolean(false));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDaysOfWeek)
+        if (iFieldSeq == 10)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
         {
-            field = new DaysOfWeekField(this, "DaysOfWeek", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DaysOfWeekField(this, DAYS_OF_WEEK, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kGateway)
+        if (iFieldSeq == 13)
         {
-            field = new StringField(this, "Gateway", 3, null, null);
+            field = new StringField(this, GATEWAY, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kUseTourHeaderOptionID)
-            field = new UseTourHeaderOptionField(this, "UseTourHeaderOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPaxCategoryID)
+        if (iFieldSeq == 14)
+            field = new UseTourHeaderOptionField(this, USE_TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new PaxCategoryField(this, "PaxCategoryID", 8, null, null);
+            field = new PaxCategoryField(this, PAX_CATEGORY_ID, 8, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDetailOptionCount)
-            field = new IntegerField(this, "DetailOptionCount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailPriceCount)
-            field = new IntegerField(this, "DetailPriceCount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailAirHeaderCount)
-            field = new IntegerField(this, "DetailAirHeaderCount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailTourDetailCount)
-            field = new IntegerField(this, "DetailTourDetailCount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourClassID)
-            field = new TourClassField(this, "TourClassID", 4, null, null);
-        if (iFieldSeq == kInvoiceText)
-            field = new XmlField(this, "InvoiceText", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kItineraryDesc)
-            field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new IntegerField(this, DETAIL_OPTION_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new IntegerField(this, DETAIL_PRICE_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new IntegerField(this, DETAIL_AIR_HEADER_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new IntegerField(this, DETAIL_TOUR_DETAIL_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new TourClassField(this, TOUR_CLASS_ID, 4, null, null);
+        if (iFieldSeq == 21)
+            field = new XmlField(this, INVOICE_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
+            field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourHeaderOptionLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -241,24 +217,20 @@ public class TourHeaderOption extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourOrOptionKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourOrOption");
-            keyArea.addKeyField(kTourOrOption, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourOrOptionID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_OR_OPTION, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_OR_OPTION_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTourHeaderOptionLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTourHeaderOptionLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

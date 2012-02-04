@@ -10,6 +10,8 @@ public interface BookingControlModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String AUTO_BOOKING_CODE = "AutoBookingCode";
     public static final String AGENCY_COMM = "AgencyComm";
     public static final String DEPOSIT_DAYS = "DepositDays";

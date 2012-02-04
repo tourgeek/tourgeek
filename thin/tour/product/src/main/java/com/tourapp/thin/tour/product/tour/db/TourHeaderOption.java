@@ -14,10 +14,8 @@ import com.tourapp.model.tour.product.tour.db.*;
 public class TourHeaderOption extends FieldList
     implements TourHeaderOptionModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public TourHeaderOption()
     {
@@ -56,53 +54,53 @@ public class TourHeaderOption extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 8, null, null);
+        field = new FieldInfo(this, ID, 8, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TourOrOption", 1, null, null);
-        field = new FieldInfo(this, "TourOrOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TOUR_OR_OPTION, 1, null, null);
+        field = new FieldInfo(this, TOUR_OR_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Sequence", 4, null, null);
+        field = new FieldInfo(this, SEQUENCE, 4, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Description", 60, null, null);
-        field = new FieldInfo(this, "Comments", 32000, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 60, null, null);
+        field = new FieldInfo(this, COMMENTS, 32000, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "AskForAnswer", 1, null, null);
+        field = new FieldInfo(this, ASK_FOR_ANSWER, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "AlwaysResolve", 1, null, new Boolean(false));
+        field = new FieldInfo(this, ALWAYS_RESOLVE, 1, null, new Boolean(false));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "StartDate", 12, null, null);
+        field = new FieldInfo(this, START_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "EndDate", 12, null, null);
+        field = new FieldInfo(this, END_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "DaysOfWeek", 5, null, null);
+        field = new FieldInfo(this, DAYS_OF_WEEK, 5, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Gateway", 3, null, null);
-        field = new FieldInfo(this, "UseTourHeaderOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, GATEWAY, 3, null, null);
+        field = new FieldInfo(this, USE_TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PaxCategoryID", 8, null, null);
+        field = new FieldInfo(this, PAX_CATEGORY_ID, 8, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DetailOptionCount", 10, null, null);
+        field = new FieldInfo(this, DETAIL_OPTION_COUNT, 10, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DetailPriceCount", 10, null, null);
+        field = new FieldInfo(this, DETAIL_PRICE_COUNT, 10, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DetailAirHeaderCount", 10, null, null);
+        field = new FieldInfo(this, DETAIL_AIR_HEADER_COUNT, 10, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DetailTourDetailCount", 10, null, null);
+        field = new FieldInfo(this, DETAIL_TOUR_DETAIL_COUNT, 10, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TourClassID", 4, null, null);
+        field = new FieldInfo(this, TOUR_CLASS_ID, 4, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "InvoiceText", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, INVOICE_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
     }
     /**
@@ -111,7 +109,7 @@ public class TourHeaderOption extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourOrOption");
         keyArea.addKeyField("TourOrOption", Constants.ASCENDING);

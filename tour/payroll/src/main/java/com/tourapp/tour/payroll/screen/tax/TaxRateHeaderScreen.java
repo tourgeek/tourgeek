@@ -74,8 +74,8 @@ public class TaxRateHeaderScreen extends HeaderScreen
         new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, fedConverter, ScreenConstants.DEFAULT_DISPLAY);
         Converter stateConverter = new StateRadioConverter(taxCode, "FE", false);
         new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, stateConverter, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TaxRateScreenRecord.kTaxRateScreenRecordFile).getField(TaxRateScreenRecord.kTaxCode).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
-        this.getRecord(TaxRateScreenRecord.kTaxRateScreenRecordFile).getField(TaxRateScreenRecord.kMaritalStatus).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TaxRateScreenRecord.TAX_RATE_SCREEN_RECORD_FILE).getField(TaxRateScreenRecord.TAX_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        this.getRecord(TaxRateScreenRecord.TAX_RATE_SCREEN_RECORD_FILE).getField(TaxRateScreenRecord.MARITAL_STATUS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

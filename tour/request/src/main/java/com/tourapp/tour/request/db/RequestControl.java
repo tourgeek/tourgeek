@@ -33,21 +33,6 @@ public class RequestControl extends ControlRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kSendViaCode = kControlRecordLastField + 1;
-    public static final int kBrochureQty = kSendViaCode + 1;
-    public static final int kBulkPermitCode = kBrochureQty + 1;
-    public static final int kBulkPermitText = kBulkPermitCode + 1;
-    public static final int kBundleID = kBulkPermitText + 1;
-    public static final int kThinBundleID = kBundleID + 1;
-    public static final int kHtmlBundleID = kThinBundleID + 1;
-    public static final int kProfileTypeID = kHtmlBundleID + 1;
-    public static final int kRequestControlLastField = kProfileTypeID;
-    public static final int kRequestControlFields = kProfileTypeID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kRequestControlLastKey = kIDKey;
-    public static final int kRequestControlKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,14 +55,12 @@ public class RequestControl extends ControlRecord
     {
         super.init(screen);
     }
-
-    public static final String kRequestControlFile = "RequestControl";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kRequestControlFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(REQUEST_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -99,33 +82,39 @@ public class RequestControl extends ControlRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kSendViaCode)
-            field = new SendViaField(this, "SendViaCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBrochureQty)
-            field = new ShortField(this, "BrochureQty", 3, null, new Short((short)5));
-        if (iFieldSeq == kBulkPermitCode)
-            field = new SendViaField(this, "BulkPermitCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBulkPermitText)
-            field = new StringField(this, "BulkPermitText", 255, null, null);
-        if (iFieldSeq == kBundleID)
-            field = new BundleFilter(this, "BundleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kThinBundleID)
-            field = new BundleFilter(this, "ThinBundleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kHtmlBundleID)
-            field = new BundleFilter(this, "HtmlBundleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProfileTypeID)
-            field = new ProfileTypeFilter(this, "ProfileTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new SendViaField(this, SEND_VIA_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new ShortField(this, BROCHURE_QTY, 3, null, new Short((short)5));
+        if (iFieldSeq == 5)
+            field = new SendViaField(this, BULK_PERMIT_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, BULK_PERMIT_TEXT, 255, null, null);
+        if (iFieldSeq == 7)
+            field = new BundleFilter(this, BUNDLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new BundleFilter(this, THIN_BUNDLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BundleFilter(this, HTML_BUNDLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new ProfileTypeFilter(this, PROFILE_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kRequestControlLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -134,17 +123,13 @@ public class RequestControl extends ControlRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kRequestControlLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kRequestControlLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

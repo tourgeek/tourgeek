@@ -14,10 +14,8 @@ import com.tourapp.model.tour.assetdr.db.*;
 public class Asset extends FieldList
     implements AssetModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public Asset()
     {
@@ -56,40 +54,40 @@ public class Asset extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 10, null, null);
+        field = new FieldInfo(this, ID, 10, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 40, null, null);
-        field = new FieldInfo(this, "Manufacturer", 30, null, null);
-        field = new FieldInfo(this, "SerialNumber", 50, null, null);
-        field = new FieldInfo(this, "InventoryNo", 50, null, null);
-        field = new FieldInfo(this, "Location", 30, null, null);
-        field = new FieldInfo(this, "PurchaseDate", 12, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 40, null, null);
+        field = new FieldInfo(this, MANUFACTURER, 30, null, null);
+        field = new FieldInfo(this, SERIAL_NUMBER, 50, null, null);
+        field = new FieldInfo(this, INVENTORY_NO, 50, null, null);
+        field = new FieldInfo(this, LOCATION, 30, null, null);
+        field = new FieldInfo(this, PURCHASE_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "SaleDate", 12, null, null);
+        field = new FieldInfo(this, SALE_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "FSDeprMethod", 1, null, null);
-        field = new FieldInfo(this, "FSLife", 2, null, null);
+        field = new FieldInfo(this, FS_DEPR_METHOD, 1, null, null);
+        field = new FieldInfo(this, FS_LIFE, 2, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "FedDeprMethod", 1, null, null);
-        field = new FieldInfo(this, "FedLife", 2, null, null);
+        field = new FieldInfo(this, FED_DEPR_METHOD, 1, null, null);
+        field = new FieldInfo(this, FED_LIFE, 2, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "StateDeprMethod", 1, null, null);
-        field = new FieldInfo(this, "StateLife", 2, null, null);
+        field = new FieldInfo(this, STATE_DEPR_METHOD, 1, null, null);
+        field = new FieldInfo(this, STATE_LIFE, 2, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "AssetAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ASSET_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DeprAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, DEPR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ExpenseAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, EXPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
     }
     /**
@@ -98,7 +96,7 @@ public class Asset extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);

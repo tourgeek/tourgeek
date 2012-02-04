@@ -60,9 +60,9 @@ public class ItineraryToolbar extends ReportToolbar
     public void setupSFields()
     {
         super.setupSFields(); // Toolbuttons
-        this.getRecord(ItineraryScreenRecord.kItineraryScreenRecordFile).getField(ItineraryScreenRecord.kTourID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ItineraryScreenRecord.kItineraryScreenRecordFile).getField(ItineraryScreenRecord.kBookingID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ItineraryScreenRecord.kItineraryScreenRecordFile).getField(ItineraryScreenRecord.ktemplate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ItineraryScreenRecord.ITINERARY_SCREEN_RECORD_FILE).getField(ItineraryScreenRecord.TOUR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ItineraryScreenRecord.ITINERARY_SCREEN_RECORD_FILE).getField(ItineraryScreenRecord.BOOKING_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ItineraryScreenRecord.ITINERARY_SCREEN_RECORD_FILE).getField(ItineraryScreenRecord.TEMPLATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

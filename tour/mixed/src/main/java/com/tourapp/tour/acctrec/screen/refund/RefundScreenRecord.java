@@ -34,30 +34,25 @@ public class RefundScreenRecord extends CheckScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportPage = kReportPage;
-    //public static final int kReportTotal = kReportTotal;
-    //public static final int kReportCount = kReportCount;
-    //public static final int kCheckNo = kCheckNo;
-    //public static final int kCheckDate = kCheckDate;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
+    //public static final String CHECK_DATE = CHECK_DATE;
+    //public static final String CHECK_NO = CHECK_NO;
+    //public static final String PAYEE = PAYEE;
+    //public static final String CHECK_AMOUNT = CHECK_AMOUNT;
+    //public static final String CHECK_AMOUNT_TEXT = CHECK_AMOUNT_TEXT;
     public static final String NEXT_CHECK_NO = "NextCheckNo";
-    public static final int kNextCheckNo = kCheckScreenRecordLastField + 1;
     public static final String START_TRX_STATUS_ID = "StartTrxStatusID";
-    public static final int kStartTrxStatusID = kNextCheckNo + 1;
     public static final String END_TRX_STATUS_ID = "EndTrxStatusID";
-    public static final int kEndTrxStatusID = kStartTrxStatusID + 1;
     public static final String BANK_ACCT_ID = "BankAcctID";
-    public static final int kBankAcctID = kEndTrxStatusID + 1;
     public static final String SUBMITTED_TRX_STATUS_ID = "SubmittedTrxStatusID";
-    public static final int kSubmittedTrxStatusID = kBankAcctID + 1;
     public static final String HELD_TRX_STATUS_ID = "HeldTrxStatusID";
-    public static final int kHeldTrxStatusID = kSubmittedTrxStatusID + 1;
     public static final String PAY_TRX_STATUS_ID = "PayTrxStatusID";
-    public static final int kPayTrxStatusID = kHeldTrxStatusID + 1;
-    public static final int kRefundScreenRecordLastField = kPayTrxStatusID;
-    public static final int kRefundScreenRecordFields = kPayTrxStatusID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -81,49 +76,53 @@ public class RefundScreenRecord extends CheckScreenRecord
         super.init(screen);
     }
 
-    public static final String kRefundScreenRecordFile = null;  // Screen field
+    public static final String REFUND_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new RefundScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportUserID)
-            field = new RefundScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new RefundScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportPage)
-        //  field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        //if (iFieldSeq == kReportTotal)
-        //  field = new CurrencyField(this, "ReportTotal", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        //if (iFieldSeq == kReportCount)
-        //  field = new IntegerField(this, "ReportCount", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
-        if (iFieldSeq == kNextCheckNo)
-            field = new IntegerField(this, "NextCheckNo", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kCheckNo)
-        //  field = new IntegerField(this, "CheckNo", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kCheckDate)
-        //  field = new RefundScreenRecord_CheckDate(this, "CheckDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartTrxStatusID)
-            field = new TrxStatusField(this, "StartTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndTrxStatusID)
-            field = new TrxStatusField(this, "EndTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBankAcctID)
-            field = new BankAcctField(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSubmittedTrxStatusID)
-            field = new TrxStatusField(this, "SubmittedTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kHeldTrxStatusID)
-            field = new TrxStatusField(this, "HeldTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayTrxStatusID)
-            field = new TrxStatusField(this, "PayTrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new RefundScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new RefundScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new RefundScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new RefundScreenRecord_CheckDate(this, CHECK_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new IntegerField(this, CHECK_NO, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, PAYEE, 60, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new CurrencyField(this, CHECK_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new AmountTextField(this, CHECK_AMOUNT_TEXT, 128, null, null);
+        if (iFieldSeq == 12)
+            field = new IntegerField(this, NEXT_CHECK_NO, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new TrxStatusField(this, START_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new TrxStatusField(this, END_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new TrxStatusField(this, SUBMITTED_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new TrxStatusField(this, HELD_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new TrxStatusField(this, PAY_TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kRefundScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

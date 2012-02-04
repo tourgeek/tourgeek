@@ -14,10 +14,8 @@ import com.tourapp.model.tour.acctrec.db.*;
 public class CashBatchDetail extends FieldList
     implements CashBatchDetailModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public CashBatchDetail()
     {
@@ -56,24 +54,24 @@ public class CashBatchDetail extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "CashBatchID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CASH_BATCH_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CheckNo", 8, null, null);
-        field = new FieldInfo(this, "CheckABA", 10, null, null);
-        field = new FieldInfo(this, "Amount", 18, null, null);
+        field = new FieldInfo(this, CHECK_NO, 8, null, null);
+        field = new FieldInfo(this, CHECK_ABA, 10, null, null);
+        field = new FieldInfo(this, AMOUNT, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Comments", 30, null, null);
+        field = new FieldInfo(this, COMMENTS, 30, null, null);
     }
     /**
     * Set up the key areas.
@@ -81,7 +79,7 @@ public class CashBatchDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CashBatchID");
         keyArea.addKeyField("CashBatchID", Constants.ASCENDING);

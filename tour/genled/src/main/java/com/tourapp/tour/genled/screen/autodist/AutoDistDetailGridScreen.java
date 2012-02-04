@@ -102,8 +102,8 @@ public class AutoDistDetailGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(AutoDistDetail.kAutoDistDetailFile).getField(AutoDistDetail.kDistAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AutoDistDetail.kAutoDistDetailFile).getField(AutoDistDetail.kDistPercent).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AutoDistDetail.AUTO_DIST_DETAIL_FILE).getField(AutoDistDetail.DIST_ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AutoDistDetail.AUTO_DIST_DETAIL_FILE).getField(AutoDistDetail.DIST_PERCENT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

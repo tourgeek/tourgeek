@@ -24,8 +24,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.screen.mco.*;
 import com.tourapp.tour.acctrec.screen.mco.trx.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.product.air.db.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
@@ -37,36 +35,6 @@ public class Mco extends BaseArPay
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kBookingID = kBookingID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxDate = kTrxDate;
-    //public static final int kGross = kGross;
-    //public static final int kSvcPer = kSvcPer;
-    //public static final int kSvcAmt = kSvcAmt;
-    //public static final int kNet = kNet;
-    //public static final int kAmtApply = kAmtApply;
-    //public static final int kComments = kComments;
-    //public static final int kTrxEntry = kTrxEntry;
-    //public static final int kDateSubmitted = kDateSubmitted;
-    //public static final int kDatePaid = kDatePaid;
-    //public static final int kAmountPaid = kAmountPaid;
-    //public static final int kPaymentEntered = kPaymentEntered;
-    public static final int kMcoNo = kBaseArPayLastField + 1;
-    public static final int kAirlineID = kMcoNo + 1;
-    public static final int kCommPer = kAirlineID + 1;
-    public static final int kCommAmt = kCommPer + 1;
-    public static final int kTaxPer = kCommAmt + 1;
-    public static final int kTaxAmt = kTaxPer + 1;
-    public static final int kCarrierSvcPer = kTaxAmt + 1;
-    public static final int kMcoLastField = kCarrierSvcPer;
-    public static final int kMcoFields = kCarrierSvcPer - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxStatusIDKey = kIDKey + 1;
-    public static final int kMcoNoKey = kTrxStatusIDKey + 1;
-    public static final int kMcoLastKey = kMcoNoKey;
-    public static final int kMcoKeys = kMcoNoKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -89,14 +57,12 @@ public class Mco extends BaseArPay
     {
         super.init(screen);
     }
-
-    public static final String kMcoFile = "Mco";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kMcoFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(MCO_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -151,74 +117,87 @@ public class Mco extends BaseArPay
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kBookingID)
-        //  field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoNo)
-            field = new StringField(this, "McoNo", 16, null, null);
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirlineID)
-        {
-            field = new AirlineField(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        //if (iFieldSeq == kTrxDate)
-        //  field = new Mco_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGross)
-            field = new CurrencyField(this, "Gross", 10, null, null);
-        if (iFieldSeq == kCommPer)
-            field = new PercentField(this, "CommPer", 5, null, new Float(0.10));
-        if (iFieldSeq == kCommAmt)
-        {
-            field = new CurrencyField(this, "CommAmt", 10, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        //if (iFieldSeq == kSvcPer)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new PercentField(this, "SvcPer", 5, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new Mco_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new Mco_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new CurrencyField(this, AMT_APPLY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new Mco_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new CurrencyField(this, GROSS, 10, null, null);
+        //if (iFieldSeq == 10)
+        //{
+        //  field = new PercentField(this, SVC_PER, 5, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kSvcAmt)
-        //  field = new CurrencyField(this, "SvcAmt", 8, null, null);
-        if (iFieldSeq == kTaxPer)
+        //if (iFieldSeq == 11)
+        //  field = new CurrencyField(this, SVC_AMT, 8, null, null);
+        if (iFieldSeq == 12)
+            field = new CurrencyField(this, NET, 10, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new StringField(this, COMMENTS, 30, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new DateTimeField(this, DATE_SUBMITTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 15)
+        //  field = new DateTimeField(this, DATE_PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 16)
+        //  field = new CurrencyField(this, AMOUNT_PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
         {
-            field = new PercentField(this, "TaxPer", 5, null, null);
+            field = new BooleanField(this, PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 18)
+        //  field = new DateTimeField(this, PAYMENT_ENTERED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new StringField(this, MCO_NO, 16, null, null);
+        if (iFieldSeq == 20)
+        {
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTaxAmt)
+        if (iFieldSeq == 21)
+            field = new PercentField(this, COMM_PER, 5, null, new Float(0.10));
+        if (iFieldSeq == 22)
         {
-            field = new CurrencyField(this, "TaxAmt", 10, null, null);
+            field = new CurrencyField(this, COMM_AMT, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kNet)
-            field = new CurrencyField(this, "Net", 10, null, null);
-        //if (iFieldSeq == kAmtApply)
-        //  field = new CurrencyField(this, "AmtApply", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kComments)
-        //  field = new StringField(this, "Comments", 30, null, null);
-        //if (iFieldSeq == kTrxEntry)
-        //  field = new Mco_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDateSubmitted)
-        //  field = new DateTimeField(this, "DateSubmitted", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDatePaid)
-        //  field = new DateTimeField(this, "DatePaid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kAmountPaid)
-        //  field = new CurrencyField(this, "AmountPaid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kPaymentEntered)
-        //  field = new DateTimeField(this, "PaymentEntered", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCarrierSvcPer)
-            field = new PercentField(this, "CarrierSvcPer", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 23)
+        {
+            field = new PercentField(this, TAX_PER, 5, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 24)
+        {
+            field = new CurrencyField(this, TAX_AMT, 10, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 25)
+            field = new PercentField(this, CARRIER_SVC_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kMcoLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -227,27 +206,23 @@ public class Mco extends BaseArPay
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxStatusIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatusID");
-            keyArea.addKeyField(kTrxStatusID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kMcoNoKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "McoNo");
-            keyArea.addKeyField(kMcoNo, DBConstants.ASCENDING);
+            keyArea.addKeyField(MCO_NO, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kMcoLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kMcoLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

@@ -34,17 +34,15 @@ public class ArcReportScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportPage = kReportPage;
-    //public static final int kReportTotal = kReportTotal;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String LAST_ARC_DATE = "LastArcDate";
-    public static final int kLastArcDate = kReportScreenRecordLastField + 1;
     public static final String SUMMARY_ACCOUNT_ID = "SummaryAccountID";
-    public static final int kSummaryAccountID = kLastArcDate + 1;
-    public static final int kArcReportScreenRecordLastField = kSummaryAccountID;
-    public static final int kArcReportScreenRecordFields = kSummaryAccountID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -68,33 +66,33 @@ public class ArcReportScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kArcReportScreenRecordFile = null; // Screen field
+    public static final String ARC_REPORT_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new ArcReportScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new ArcReportScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportUserID)
-        //  field = new ArcReportScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportPage)
-        //  field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        //if (iFieldSeq == kReportTotal)
-        //  field = new CurrencyField(this, "ReportTotal", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        if (iFieldSeq == kLastArcDate)
-            field = new DateField(this, "LastArcDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSummaryAccountID)
-            field = new AccountField(this, "SummaryAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new ArcReportScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new ArcReportScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new ArcReportScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new DateField(this, LAST_ARC_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new AccountField(this, SUMMARY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kArcReportScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

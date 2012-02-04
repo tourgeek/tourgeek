@@ -148,14 +148,14 @@ public class ProductSearchDetailGridScreen extends ProductDetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 
         Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID)).getReferenceRecord();
         Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID)).getReferenceRecord();
         this.getScreenRecord().getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID).setupTableLookup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, recProductSearchCategory, null, ProductSearchCategory.DESCRIPTION, false);
         recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID, recProductSearchType.getField(ProductSearchType.ID), DBConstants.EQUALS, null, true));
         
-        this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kSearchData).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.SEARCH_DATA).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * AddProductTypeFilter Method.

@@ -15,9 +15,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class BaseTrx extends Trx
     implements BaseTrxModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
 
     public BaseTrx()
     {

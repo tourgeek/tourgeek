@@ -102,11 +102,11 @@ public class HotelAvailResponseScreen extends BaseProductResponseScreen
      */
     public void setupSFields()
     {
-        this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kRateID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kClassID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kDetailDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kAvailability).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelInfoScreenRecord.HOTEL_INFO_SCREEN_RECORD_FILE).getField(HotelInfoScreenRecord.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelInfoScreenRecord.HOTEL_INFO_SCREEN_RECORD_FILE).getField(HotelInfoScreenRecord.RATE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelInfoScreenRecord.HOTEL_INFO_SCREEN_RECORD_FILE).getField(HotelInfoScreenRecord.CLASS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelInfoScreenRecord.HOTEL_INFO_SCREEN_RECORD_FILE).getField(HotelInfoScreenRecord.DETAIL_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelInfoScreenRecord.HOTEL_INFO_SCREEN_RECORD_FILE).getField(HotelInfoScreenRecord.AVAILABILITY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

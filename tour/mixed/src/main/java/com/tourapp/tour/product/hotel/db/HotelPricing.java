@@ -36,29 +36,6 @@ public class HotelPricing extends ProductPricing
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kProductID = kProductID;
-    //public static final int kPaxCategoryID = kPaxCategoryID;
-    //public static final int kRateID = kRateID;
-    //public static final int kClassID = kClassID;
-    //public static final int kStartDate = kStartDate;
-    //public static final int kEndDate = kEndDate;
-    //public static final int kProductTermsID = kProductTermsID;
-    //public static final int kCost = kCost;
-    //public static final int kPrice = kPrice;
-    public static final int kRoomCost = kProductPricingLastField + 1;
-    public static final int kRoomPrice = kRoomCost + 1;
-    public static final int kDaysOfWeek = kRoomPrice + 1;
-    public static final int kMealPlanID = kDaysOfWeek + 1;
-    public static final int kUseRateID = kMealPlanID + 1;
-    public static final int kUseClassID = kUseRateID + 1;
-    public static final int kHotelPricingLastField = kUseClassID;
-    public static final int kHotelPricingFields = kUseClassID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProductIDKey = kIDKey + 1;
-    public static final int kHotelPricingLastKey = kProductIDKey;
-    public static final int kHotelPricingKeys = kProductIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -81,14 +58,12 @@ public class HotelPricing extends ProductPricing
     {
         super.init(screen);
     }
-
-    public static final String kHotelPricingFile = "HotelPricing";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kHotelPricingFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(HOTEL_PRICING_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -131,74 +106,92 @@ public class HotelPricing extends ProductPricing
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProductID)
-            field = new ReferenceField(this, "ProductID", 8, null, null);
-        if (iFieldSeq == kPaxCategoryID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ReferenceField(this, PRODUCT_ID, 8, null, null);
+        if (iFieldSeq == 4)
         {
-            field = new PaxBaseCategoryField(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.DOUBLE_ID));
+            field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.DOUBLE_ID));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kRateID)
+        if (iFieldSeq == 5)
         {
-            field = new HotelRateField(this, "RateID", 4, null, new Integer(0));
+            field = new HotelRateField(this, RATE_ID, 4, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kClassID)
+        if (iFieldSeq == 6)
         {
-            field = new HotelClassField(this, "ClassID", 4, null, new Integer(0));
+            field = new HotelClassField(this, CLASS_ID, 4, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kStartDate)
+        if (iFieldSeq == 7)
         {
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEndDate)
+        if (iFieldSeq == 8)
         {
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kProductTermsID)
+        //if (iFieldSeq == 9)
+        //  field = new FullCurrencyField(this, COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new ProductTermsField(this, "ProductTermsID", 1, null, null);
+            field = new ProductTermsField(this, PRODUCT_TERMS_ID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kCost)
-        //  field = new FullCurrencyField(this, "Cost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRoomCost)
-            field = new FullCurrencyField(this, "RoomCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kPrice)
-        //  field = new CurrencyField(this, "Price", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRoomPrice)
-            field = new CurrencyField(this, "RoomPrice", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDaysOfWeek)
-            field = new DaysOfWeekField(this, "DaysOfWeek", 6, null, null);
-        if (iFieldSeq == kMealPlanID)
+        //if (iFieldSeq == 11)
+        //  field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 12)
+        //{
+        //  field = new BooleanField(this, COMMISSIONABLE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 13)
+        //{
+        //  field = new PercentField(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 14)
+        //  field = new PayAtField(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new FullCurrencyField(this, ROOM_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new CurrencyField(this, ROOM_PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new DaysOfWeekField(this, DAYS_OF_WEEK, 6, null, null);
+        if (iFieldSeq == 18)
         {
-            field = new MealPlanField(this, "MealPlanID", 4, null, null);
+            field = new MealPlanField(this, MEAL_PLAN_ID, 4, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kUseRateID)
+        if (iFieldSeq == 19)
         {
-            field = new HotelRateField(this, "UseRateID", 1, null, null);
+            field = new HotelRateField(this, USE_RATE_ID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kUseClassID)
+        if (iFieldSeq == 20)
         {
-            field = new HotelClassField(this, "UseClassID", 2, null, null);
+            field = new HotelClassField(this, USE_CLASS_ID, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kHotelPricingLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -207,26 +200,22 @@ public class HotelPricing extends ProductPricing
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "ProductID");
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kPaxCategoryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kRateID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kClassID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kEndDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAX_CATEGORY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(RATE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CLASS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(END_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kHotelPricingLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kHotelPricingLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

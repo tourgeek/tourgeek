@@ -31,18 +31,12 @@ public class BookingLandScreenRecord extends BookingDetailScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kPPCostLocal = kPPCostLocal;
-    //public static final int kMarkupFromLast = kMarkupFromLast;
+    //public static final String PP_COST_LOCAL = PP_COST_LOCAL;
+    //public static final String MARKUP_FROM_LAST = MARKUP_FROM_LAST;
     public static final String SIC_COST_LOCAL = "SICCostLocal";
-    public static final int kSICCostLocal = kBookingDetailScreenRecordLastField + 1;
     public static final String PMC_COST_LOCAL = "PMCCostLocal";
-    public static final int kPMCCostLocal = kSICCostLocal + 1;
     public static final String LAND_INFO_FLAG = "LandInfoFlag";
-    public static final int kLandInfoFlag = kPMCCostLocal + 1;
     public static final String VARY_QTY = "VaryQty";
-    public static final int kVaryQty = kLandInfoFlag + 1;
-    public static final int kBookingLandScreenRecordLastField = kVaryQty;
-    public static final int kBookingLandScreenRecordFields = kVaryQty - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -66,31 +60,27 @@ public class BookingLandScreenRecord extends BookingDetailScreenRecord
         super.init(screen);
     }
 
-    public static final String kBookingLandScreenRecordFile = null;   // Screen field
+    public static final String BOOKING_LAND_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kPPCostLocal)
-        //  field = new CurrencyField(this, "PPCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSICCostLocal)
-            field = new CurrencyField(this, "SICCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPMCCostLocal)
-            field = new CurrencyField(this, "PMCCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kMarkupFromLast)
-        //  field = new (this, "MarkupFromLast", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kLandInfoFlag)
-            field = new BooleanField(this, "LandInfoFlag", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVaryQty)
-            field = new ShortField(this, "VaryQty", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new CurrencyField(this, SIC_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new CurrencyField(this, PMC_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new (this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new BooleanField(this, LAND_INFO_FLAG, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new ShortField(this, VARY_QTY, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingLandScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

@@ -33,6 +33,7 @@ public class BookingDetailQuery extends QueryRecord
      implements BookingDetailQueryModel
 {
     private static final long serialVersionUID = 1L;
+
     /**
      * Default constructor.
      */
@@ -56,7 +57,32 @@ public class BookingDetailQuery extends QueryRecord
         super.init(screen);
     }
 
-    public static final String kBookingDetailQueryFile = null;  // Screen field
+    public static final String BOOKING_DETAIL_QUERY_FILE = null;    // Screen field
+    /**
+     * Add this field in the Record's field sequence.
+     */
+    public BaseField setupField(int iFieldSeq)
+    {
+        BaseField field = null;
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (field == null)
+            field = super.setupField(iFieldSeq);
+        return field;
+    }
     /**
      * Override this to Setup all the records for this query.
      * Only used for querys and abstract-record queries.

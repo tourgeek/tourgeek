@@ -97,13 +97,13 @@ public class AccountHeaderScreen extends HeaderScreen
     {
         // This will synchronize the screen field and make sure the lookup uses the header record
         ((ReferenceField)this.getScreenRecord().getField(AcctDetailScreenRecord.ACCOUNT_ID)).setReference(this.getRecord(Account.ACCOUNT_FILE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kStartBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kCalcStart).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kEndBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kChangeBalance).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.START_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.CALC_START).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.END_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AcctDetailScreenRecord.ACCT_DETAIL_SCREEN_RECORD_FILE).getField(AcctDetailScreenRecord.CHANGE_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

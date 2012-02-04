@@ -33,18 +33,6 @@ public class BaseTrx extends Trx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    public static final int kTrxDate = kTrxLastField + 1;
-    public static final int kAmountLocal = kTrxDate + 1;
-    public static final int kTrxEntry = kAmountLocal + 1;
-    public static final int kTrxUserID = kTrxEntry + 1;
-    public static final int kBaseTrxLastField = kTrxUserID;
-    public static final int kBaseTrxFields = kTrxUserID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kBaseTrxLastKey = kIDKey;
-    public static final int kBaseTrxKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -68,34 +56,40 @@ public class BaseTrx extends Trx
         super.init(screen);
     }
 
-    public static final String kBaseTrxFile = null;   // Screen field
+    public static final String BASE_TRX_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setHidden(true);
         }
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxDate)
-            field = new DateTimeField(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountLocal)
-            field = new CurrencyField(this, "AmountLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxEntry)
-            field = new BaseTrx_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxUserID)
-            field = new BaseTrx_TrxUserID(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new BaseTrx_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new DateTimeField(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, AMOUNT_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new BaseTrx_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBaseTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

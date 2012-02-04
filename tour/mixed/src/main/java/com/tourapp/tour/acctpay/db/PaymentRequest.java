@@ -37,21 +37,6 @@ public class PaymentRequest extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kBankAcctID = kVirtualRecordLastField + 1;
-    public static final int kVendorID = kBankAcctID + 1;
-    public static final int kAmount = kVendorID + 1;
-    public static final int kTrxStatusID = kAmount + 1;
-    public static final int kAccountID = kTrxStatusID + 1;
-    public static final int kCheckNo = kAccountID + 1;
-    public static final int kComments = kCheckNo + 1;
-    public static final int kPaymentRequestLastField = kComments;
-    public static final int kPaymentRequestFields = kComments - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kBankAcctIDKey = kIDKey + 1;
-    public static final int kPaymentRequestLastKey = kBankAcctIDKey;
-    public static final int kPaymentRequestKeys = kBankAcctIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int PRINT_CHECK_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int CHECK_POST = ScreenConstants.POST_MODE;
     /**
@@ -76,14 +61,12 @@ public class PaymentRequest extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kPaymentRequestFile = "PaymentRequest";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kPaymentRequestFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PAYMENT_REQUEST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -128,38 +111,44 @@ public class PaymentRequest extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kBankAcctID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new BankAcctField(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", 6, null, null);
-        if (iFieldSeq == kAmount)
-            field = new CurrencyField(this, "Amount", 12, null, null);
-        if (iFieldSeq == kTrxStatusID)
-            field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAccountID)
+        if (iFieldSeq == 4)
+            field = new VendorField(this, VENDOR_ID, 6, null, null);
+        if (iFieldSeq == 5)
+            field = new CurrencyField(this, AMOUNT, 12, null, null);
+        if (iFieldSeq == 6)
+            field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
         {
-            field = new AccountField(this, "AccountID", 7, null, null);
+            field = new AccountField(this, ACCOUNT_ID, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
             field.setMinimumLength(3);
         }
-        if (iFieldSeq == kCheckNo)
-            field = new IntegerField(this, "CheckNo", 8, null, null);
-        if (iFieldSeq == kComments)
-            field = new StringField(this, "Comments", 30, null, null);
+        if (iFieldSeq == 8)
+            field = new IntegerField(this, CHECK_NO, 8, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, COMMENTS, 30, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kPaymentRequestLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -168,23 +157,19 @@ public class PaymentRequest extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBankAcctIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BankAcctID");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kPaymentRequestLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kPaymentRequestLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

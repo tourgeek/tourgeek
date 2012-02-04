@@ -246,8 +246,8 @@ public class BookingAnswerGridScreen extends BookingSubGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BookingAnswer.kBookingAnswerFile).getField(BookingAnswer.kSelected).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BookingAnswer.kBookingAnswerFile).getField(BookingAnswer.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BookingAnswer.BOOKING_ANSWER_FILE).getField(BookingAnswer.SELECTED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BookingAnswer.BOOKING_ANSWER_FILE).getField(BookingAnswer.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Get the command string to restore screen.

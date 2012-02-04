@@ -54,7 +54,7 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
      */
     public void init(BaseField fieldMain, String ifsToCount, boolean bRecountOnSelect, boolean bVerifyOnEOF)
     {
-        super.init(null, null, -1, fieldMain, -1, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
+        super.init(null, null, null, fieldMain, ifsToCount, bRecountOnSelect, bVerifyOnEOF, false);
     }
     /**
      * Get the value to add (Overidden from SubCountHandler).

@@ -56,70 +56,6 @@ public class Hotel extends Product
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kDescription = kDescription;
-    //public static final int kCode = kCode;
-    //public static final int kVendorID = kVendorID;
-    //public static final int kOperatorsCode = kOperatorsCode;
-    //public static final int kProductChainID = kProductChainID;
-    //public static final int kCityID = kCityID;
-    //public static final int kEtd = kEtd;
-    //public static final int kComments = kComments;
-    //public static final int kItineraryDesc = kItineraryDesc;
-    //public static final int kDescSort = kDescSort;
-    public static final int kCheckOut = kProductLastField + 1;
-    public static final int kSameAsVendor = kCheckOut + 1;
-    public static final int kContact = kSameAsVendor + 1;
-    public static final int kContactTitle = kContact + 1;
-    public static final int kAddressLine1 = kContactTitle + 1;
-    public static final int kAddressLine2 = kAddressLine1 + 1;
-    public static final int kCityOrTown = kAddressLine2 + 1;
-    public static final int kStateOrRegion = kCityOrTown + 1;
-    public static final int kPostalCode = kStateOrRegion + 1;
-    public static final int kCountry = kPostalCode + 1;
-    public static final int kTel = kCountry + 1;
-    public static final int kFax = kTel + 1;
-    public static final int kEmail = kFax + 1;
-    public static final int kRooms = kEmail + 1;
-    public static final int kGeneralManager = kRooms + 1;
-    public static final int kSalesManager = kGeneralManager + 1;
-    public static final int kLocalContact = kSalesManager + 1;
-    public static final int kLocalPhone = kLocalContact + 1;
-    public static final int kTollFreePhone = kLocalPhone + 1;
-    public static final int kAltPhone = kTollFreePhone + 1;
-    public static final int kOneFree = kAltPhone + 1;
-    public static final int kFreeType = kOneFree + 1;
-    public static final int kChildAge = kFreeType + 1;
-    public static final int kSingleCost = kChildAge + 1;
-    public static final int kDoubleCost = kSingleCost + 1;
-    public static final int kTripleCost = kDoubleCost + 1;
-    public static final int kQuadCost = kTripleCost + 1;
-    public static final int kRoomCost = kQuadCost + 1;
-    public static final int kMealCost = kRoomCost + 1;
-    public static final int kSingleCostLocal = kMealCost + 1;
-    public static final int kDoubleCostLocal = kSingleCostLocal + 1;
-    public static final int kTripleCostLocal = kDoubleCostLocal + 1;
-    public static final int kQuadCostLocal = kTripleCostLocal + 1;
-    public static final int kRoomCostLocal = kQuadCostLocal + 1;
-    public static final int kMealCostLocal = kRoomCostLocal + 1;
-    public static final int kSinglePriceLocal = kMealCostLocal + 1;
-    public static final int kDoublePriceLocal = kSinglePriceLocal + 1;
-    public static final int kTriplePriceLocal = kDoublePriceLocal + 1;
-    public static final int kQuadPriceLocal = kTriplePriceLocal + 1;
-    public static final int kRoomPriceLocal = kQuadPriceLocal + 1;
-    public static final int kMealPriceLocal = kRoomPriceLocal + 1;
-    public static final int kHotelLastField = kMealPriceLocal;
-    public static final int kHotelFields = kMealPriceLocal - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kDescSortKey = kCodeKey + 1;
-    public static final int kVendorIDKey = kDescSortKey + 1;
-    public static final int kCityIDKey = kVendorIDKey + 1;
-    public static final int kOperatorsCodeKey = kCityIDKey + 1;
-    public static final int kProductChainIDKey = kOperatorsCodeKey + 1;
-    public static final int kHotelLastKey = kProductChainIDKey;
-    public static final int kHotelKeys = kProductChainIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final String MEAL_PLAN_ID_PARAM = SearchConstants.MEAL_PLAN;
     public static final String MEAL_PLAN_QTY_PARAM = SearchConstants.MEAL_PLAN_QTY;
     protected HotelMealPricing m_recHotelMealPricing = null;
@@ -147,14 +83,12 @@ public class Hotel extends Product
         m_recHotelMealPricing = null;
         super.init(screen);
     }
-
-    public static final String kHotelFile = "Hotel";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kHotelFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(HOTEL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -207,186 +141,273 @@ public class Hotel extends Product
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", 8, null, null);
+        //  field = new CounterField(this, ID, 8, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescription)
-            field = new ProductDesc(this, "Description", 50, null, null);
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 10, null, null);
-        if (iFieldSeq == kVendorID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProductDesc(this, DESCRIPTION, 50, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CODE, 10, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kOperatorsCode)
-        //  field = new StringField(this, "OperatorsCode", 20, null, null);
-        if (iFieldSeq == kProductChainID)
-            field = new HotelChainField(this, "ProductChainID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCityID)
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, OPERATORS_CODE, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new HotelChainField(this, PRODUCT_CHAIN_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new CityField(this, "CityID", 3, null, null);
+            field = new CityField(this, CITY_ID, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kEtd)
-        //  field = new TimeField(this, "Etd", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCheckOut)
-            field = new TimeField(this, "CheckOut", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kComments)
-        //  field = new MemoField(this, "Comments", 32767, null, null);
-        //if (iFieldSeq == kItineraryDesc)
-        //  field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDescSort)
-        //  field = new ProductDescSort(this, "DescSort", 10, null, null);
-        if (iFieldSeq == kSameAsVendor)
+        //if (iFieldSeq == 9)
+        //  field = new TimeField(this, ETD, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new ShortField(this, ACK_DAYS, 2, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new MemoField(this, COMMENTS, 32767, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new ProductDescSort(this, DESC_SORT, 10, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new BooleanField(this, "SameAsVendor", 1, null, null);
+            field = new ProductTypeAutoField(this, PRODUCT_TYPE, 15, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 16)
+        {
+            field = new FullCurrencyField(this, PRODUCT_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 17)
+        {
+            field = new CurrencyField(this, PRODUCT_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 18)
+        //  field = new MessageTransportSelect(this, PRODUCT_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+        {
+            field = new InventoryStatusField(this, DISPLAY_INVENTORY_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NO_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 20)
+        {
+            field = new ShortField(this, INVENTORY_AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 21)
+        {
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 22)
+        {
+            field = new StringField(this, CURRENCY_CODE_LOCAL, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 23)
+        {
+            field = new StringField(this, VENDOR_NAME, 30, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 24)
+        {
+            field = new CostStatusField(this, DISPLAY_COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NULL_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 25)
+        {
+            field = new FullCurrencyField(this, PP_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 26)
+        {
+            field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 27)
+        {
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 28)
+        {
+            field = new BaseClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 29)
+        {
+            field = new CurrencyField(this, PRODUCT_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 30)
+        {
+            field = new CurrencyField(this, PP_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 31)
+            field = new TimeField(this, CHECK_OUT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 32)
+        {
+            field = new BooleanField(this, SAME_AS_VENDOR, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kContact)
-            field = new StringField(this, "Contact", 30, null, null);
-        if (iFieldSeq == kContactTitle)
-            field = new StringField(this, "ContactTitle", 30, null, null);
-        if (iFieldSeq == kAddressLine1)
-            field = new StringField(this, "AddressLine1", 40, null, null);
-        if (iFieldSeq == kAddressLine2)
-            field = new StringField(this, "AddressLine2", 40, null, null);
-        if (iFieldSeq == kCityOrTown)
-            field = new StringField(this, "CityOrTown", 15, null, null);
-        if (iFieldSeq == kStateOrRegion)
-            field = new StringField(this, "StateOrRegion", 15, null, null);
-        if (iFieldSeq == kPostalCode)
-            field = new StringField(this, "PostalCode", 10, null, null);
-        if (iFieldSeq == kCountry)
-            field = new StringField(this, "Country", 15, null, null);
-        if (iFieldSeq == kTel)
-            field = new PhoneField(this, "Tel", 20, null, null);
-        if (iFieldSeq == kFax)
-            field = new FaxField(this, "Fax", 20, null, null);
-        if (iFieldSeq == kEmail)
-            field = new EMailField(this, "Email", 40, null, null);
-        if (iFieldSeq == kRooms)
-            field = new ShortField(this, "Rooms", 4, null, null);
-        if (iFieldSeq == kGeneralManager)
-            field = new StringField(this, "GeneralManager", 20, null, null);
-        if (iFieldSeq == kSalesManager)
-            field = new StringField(this, "SalesManager", 20, null, null);
-        if (iFieldSeq == kLocalContact)
-            field = new StringField(this, "LocalContact", 20, null, null);
-        if (iFieldSeq == kLocalPhone)
-            field = new PhoneField(this, "LocalPhone", 20, null, null);
-        if (iFieldSeq == kTollFreePhone)
-            field = new PhoneField(this, "TollFreePhone", 20, null, null);
-        if (iFieldSeq == kAltPhone)
-            field = new PhoneField(this, "AltPhone", 20, null, null);
-        if (iFieldSeq == kOneFree)
-            field = new ShortField(this, "OneFree", 2, null, new Short((short)15));
-        if (iFieldSeq == kFreeType)
-            field = new HotelFreeField(this, "FreeType", 1, null, "S");
-        if (iFieldSeq == kChildAge)
+        if (iFieldSeq == 33)
+            field = new StringField(this, CONTACT, 30, null, null);
+        if (iFieldSeq == 34)
+            field = new StringField(this, CONTACT_TITLE, 30, null, null);
+        if (iFieldSeq == 35)
+            field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        if (iFieldSeq == 36)
+            field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        if (iFieldSeq == 37)
+            field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        if (iFieldSeq == 38)
+            field = new StringField(this, STATE_OR_REGION, 15, null, null);
+        if (iFieldSeq == 39)
+            field = new StringField(this, POSTAL_CODE, 10, null, null);
+        if (iFieldSeq == 40)
+            field = new StringField(this, COUNTRY, 15, null, null);
+        if (iFieldSeq == 41)
+            field = new PhoneField(this, TEL, 20, null, null);
+        if (iFieldSeq == 42)
+            field = new FaxField(this, FAX, 20, null, null);
+        if (iFieldSeq == 43)
+            field = new EMailField(this, EMAIL, 40, null, null);
+        if (iFieldSeq == 44)
+            field = new ShortField(this, ROOMS, 4, null, null);
+        if (iFieldSeq == 45)
+            field = new StringField(this, GENERAL_MANAGER, 20, null, null);
+        if (iFieldSeq == 46)
+            field = new StringField(this, SALES_MANAGER, 20, null, null);
+        if (iFieldSeq == 47)
+            field = new StringField(this, LOCAL_CONTACT, 20, null, null);
+        if (iFieldSeq == 48)
+            field = new PhoneField(this, LOCAL_PHONE, 20, null, null);
+        if (iFieldSeq == 49)
+            field = new PhoneField(this, TOLL_FREE_PHONE, 20, null, null);
+        if (iFieldSeq == 50)
+            field = new PhoneField(this, ALT_PHONE, 20, null, null);
+        if (iFieldSeq == 51)
+            field = new ShortField(this, ONE_FREE, 2, null, new Short((short)15));
+        if (iFieldSeq == 52)
+            field = new HotelFreeField(this, FREE_TYPE, 1, null, "S");
+        if (iFieldSeq == 53)
         {
-            field = new ShortField(this, "ChildAge", 2, null, null);
+            field = new ShortField(this, CHILD_AGE, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSingleCost)
+        if (iFieldSeq == 54)
         {
-            field = new FullCurrencyField(this, "SingleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, SINGLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDoubleCost)
+        if (iFieldSeq == 55)
         {
-            field = new FullCurrencyField(this, "DoubleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, DOUBLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kTripleCost)
+        if (iFieldSeq == 56)
         {
-            field = new FullCurrencyField(this, "TripleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, TRIPLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kQuadCost)
+        if (iFieldSeq == 57)
         {
-            field = new FullCurrencyField(this, "QuadCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, QUAD_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kRoomCost)
+        if (iFieldSeq == 58)
         {
-            field = new FullCurrencyField(this, "RoomCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, ROOM_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kMealCost)
+        if (iFieldSeq == 59)
         {
-            field = new FullCurrencyField(this, "MealCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, MEAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kSingleCostLocal)
+        if (iFieldSeq == 60)
         {
-            field = new CurrencyField(this, "SingleCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, SINGLE_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDoubleCostLocal)
+        if (iFieldSeq == 61)
         {
-            field = new CurrencyField(this, "DoubleCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, DOUBLE_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kTripleCostLocal)
+        if (iFieldSeq == 62)
         {
-            field = new CurrencyField(this, "TripleCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, TRIPLE_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kQuadCostLocal)
+        if (iFieldSeq == 63)
         {
-            field = new CurrencyField(this, "QuadCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, QUAD_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kRoomCostLocal)
+        if (iFieldSeq == 64)
         {
-            field = new CurrencyField(this, "RoomCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, ROOM_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kMealCostLocal)
+        if (iFieldSeq == 65)
         {
-            field = new CurrencyField(this, "MealCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, MEAL_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kSinglePriceLocal)
+        if (iFieldSeq == 66)
         {
-            field = new CurrencyField(this, "SinglePriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, SINGLE_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDoublePriceLocal)
+        if (iFieldSeq == 67)
         {
-            field = new CurrencyField(this, "DoublePriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, DOUBLE_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kTriplePriceLocal)
+        if (iFieldSeq == 68)
         {
-            field = new CurrencyField(this, "TriplePriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, TRIPLE_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kQuadPriceLocal)
+        if (iFieldSeq == 69)
         {
-            field = new CurrencyField(this, "QuadPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, QUAD_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kRoomPriceLocal)
+        if (iFieldSeq == 70)
         {
-            field = new CurrencyField(this, "RoomPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, ROOM_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kMealPriceLocal)
+        if (iFieldSeq == 71)
         {
-            field = new CurrencyField(this, "MealPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, MEAL_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kHotelLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -395,50 +416,46 @@ public class Hotel extends Product
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescSort");
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityID");
-            keyArea.addKeyField(kCityID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kOperatorsCodeKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "OperatorsCode");
-            keyArea.addKeyField(kOperatorsCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(OPERATORS_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductChainIDKey)
+        if (iKeyArea == 6)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductChainID");
-            keyArea.addKeyField(kProductChainID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_CHAIN_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kHotelLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kHotelLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

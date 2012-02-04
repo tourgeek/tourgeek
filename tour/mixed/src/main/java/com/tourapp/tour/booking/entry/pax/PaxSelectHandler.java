@@ -58,7 +58,7 @@ public class PaxSelectHandler extends SubCountHandler
         m_recPaxCategory = null;
         m_sOldPaxType = 0;
         m_recPaxCategory = recPaxCategory;
-        super.init(null, record, Booking.kPax, null, -1, null, true, true, false);
+        super.init(null, record, Booking.PAX, null, null, true, true, false);
     }
     /**
      * Called when a new blank record is required for the table/query.

@@ -79,7 +79,7 @@ public class TourHeaderItemGridScreen extends TourDetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourHeaderItem.kTourHeaderItemFile).getField(TourHeaderItem.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderItem.TOUR_HEADER_ITEM_FILE).getField(TourHeaderItem.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

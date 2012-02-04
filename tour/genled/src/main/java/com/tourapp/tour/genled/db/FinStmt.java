@@ -34,20 +34,6 @@ public class FinStmt extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kStatementDesc = kVirtualRecordLastField + 1;
-    public static final int kFinStmtHeaderID = kStatementDesc + 1;
-    public static final int kStmtSequence = kFinStmtHeaderID + 1;
-    public static final int kStatementType = kStmtSequence + 1;
-    public static final int kStatementFormat = kStatementType + 1;
-    public static final int kStatementNumber = kStatementFormat + 1;
-    public static final int kFinStmtLastField = kStatementNumber;
-    public static final int kFinStmtFields = kStatementNumber - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kFinStmtHeaderIDKey = kIDKey + 1;
-    public static final int kFinStmtLastKey = kFinStmtHeaderIDKey;
-    public static final int kFinStmtKeys = kFinStmtHeaderIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int FIN_STMT_DETAIL_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     /**
      * Default constructor.
@@ -71,14 +57,12 @@ public class FinStmt extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kFinStmtFile = "FinStmt";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kFinStmtFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(FIN_STMT_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -121,32 +105,38 @@ public class FinStmt extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kStatementDesc)
-            field = new StringField(this, "StatementDesc", 60, null, null);
-        if (iFieldSeq == kFinStmtHeaderID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, STATEMENT_DESC, 60, null, null);
+        if (iFieldSeq == 4)
         {
-            field = new ReferenceField(this, "FinStmtHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ReferenceField(this, FIN_STMT_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kStmtSequence)
-            field = new ShortField(this, "StmtSequence", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStatementType)
-            field = new StatementTypeField(this, "StatementType", 1, null, null);
-        if (iFieldSeq == kStatementFormat)
-            field = new StatementFormatField(this, "StatementFormat", 1, null, null);
-        if (iFieldSeq == kStatementNumber)
-            field = new StatementNumberField(this, "StatementNumber", 1, null, null);
+        if (iFieldSeq == 5)
+            field = new ShortField(this, STMT_SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new StatementTypeField(this, STATEMENT_TYPE, 1, null, null);
+        if (iFieldSeq == 7)
+            field = new StatementFormatField(this, STATEMENT_FORMAT, 1, null, null);
+        if (iFieldSeq == 8)
+            field = new StatementNumberField(this, STATEMENT_NUMBER, 1, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kFinStmtLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -155,23 +145,19 @@ public class FinStmt extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kFinStmtHeaderIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "FinStmtHeaderID");
-            keyArea.addKeyField(kFinStmtHeaderID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kStmtSequence, DBConstants.ASCENDING);
+            keyArea.addKeyField(FIN_STMT_HEADER_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(STMT_SEQUENCE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kFinStmtLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kFinStmtLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

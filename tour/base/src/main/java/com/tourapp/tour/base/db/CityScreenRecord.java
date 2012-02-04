@@ -31,13 +31,8 @@ public class CityScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String DESCRIPTION = "Description";
-    public static final int kDescription = kScreenRecordLastField + 1;
     public static final String COUNTRY_ID = "CountryID";
-    public static final int kCountryID = kDescription + 1;
     public static final String STATE_ID = "StateID";
-    public static final int kStateID = kCountryID + 1;
-    public static final int kCityScreenRecordLastField = kStateID;
-    public static final int kCityScreenRecordFields = kStateID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -61,25 +56,21 @@ public class CityScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kCityScreenRecordFile = null;    // Screen field
+    public static final String CITY_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 10, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStateID)
-            field = new StateField(this, "StateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new StringField(this, DESCRIPTION, 10, null, null);
+        if (iFieldSeq == 1)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new StateField(this, STATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCityScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

@@ -15,26 +15,8 @@ import com.tourapp.model.tour.acctrec.db.*;
 public class Mco extends BaseArPay
     implements McoModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
-    //public static final String TRX_DATE = TRX_DATE;
-    //public static final String AMT_APPLY = AMT_APPLY;
-    //public static final String TRX_ENTRY = TRX_ENTRY;
-    //public static final String TRX_USER_ID = TRX_USER_ID;
-    //public static final String BOOKING_ID = BOOKING_ID;
-    //public static final String GROSS = GROSS;
-    //public static final String SVC_PER = SVC_PER;
-    //public static final String SVC_AMT = SVC_AMT;
-    //public static final String NET = NET;
-    //public static final String COMMENTS = COMMENTS;
-    //public static final String DATE_SUBMITTED = DATE_SUBMITTED;
-    //public static final String DATE_PAID = DATE_PAID;
-    //public static final String AMOUNT_PAID = AMOUNT_PAID;
-    //public static final String PAID = PAID;
-    //public static final String PAYMENT_ENTERED = PAYMENT_ENTERED;
 
     public Mco()
     {
@@ -73,58 +55,58 @@ public class Mco extends BaseArPay
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TrxDate", 25, null, null);
+        field = new FieldInfo(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field.setDataClass(Integer.class);
+        field = new FieldInfo(this, TRX_DATE, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "AmtApply", 18, null, null);
+        field = new FieldInfo(this, AMT_APPLY, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "TrxEntry", 25, null, null);
+        field = new FieldInfo(this, TRX_ENTRY, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Gross", 10, null, null);
+        field = new FieldInfo(this, GROSS, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "SvcPer", 5, null, null);
+        field = new FieldInfo(this, SVC_PER, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "SvcAmt", 8, null, null);
+        field = new FieldInfo(this, SVC_AMT, 8, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Net", 10, null, null);
+        field = new FieldInfo(this, NET, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Comments", 30, null, null);
-        field = new FieldInfo(this, "DateSubmitted", 25, null, null);
+        field = new FieldInfo(this, COMMENTS, 30, null, null);
+        field = new FieldInfo(this, DATE_SUBMITTED, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "DatePaid", 25, null, null);
+        field = new FieldInfo(this, DATE_PAID, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "AmountPaid", 18, null, null);
+        field = new FieldInfo(this, AMOUNT_PAID, 18, null, null);
         field.setDataClass(Double.class);
-        //field = new FieldInfo(this, "Paid", 10, null, null);
+        //field = new FieldInfo(this, PAID, 10, null, null);
         //field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "PaymentEntered", 25, null, null);
+        field = new FieldInfo(this, PAYMENT_ENTERED, 25, null, null);
         field.setDataClass(Date.class);
-        field = new FieldInfo(this, "McoNo", 16, null, null);
-        field = new FieldInfo(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MCO_NO, 16, null, null);
+        field = new FieldInfo(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CommPer", 5, null, null);
+        field = new FieldInfo(this, COMM_PER, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "CommAmt", 10, null, null);
+        field = new FieldInfo(this, COMM_AMT, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "TaxPer", 5, null, null);
+        field = new FieldInfo(this, TAX_PER, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "TaxAmt", 10, null, null);
+        field = new FieldInfo(this, TAX_AMT, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "CarrierSvcPer", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CARRIER_SVC_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Float.class);
     }
     /**
@@ -133,7 +115,7 @@ public class Mco extends BaseArPay
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxStatusID");
         keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);

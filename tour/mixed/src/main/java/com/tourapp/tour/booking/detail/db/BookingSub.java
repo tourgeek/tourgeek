@@ -38,24 +38,6 @@ public class BookingSub extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kBookingID = kVirtualRecordLastField + 1;
-    public static final int kBookingPaxID = kBookingID + 1;
-    public static final int kModuleID = kBookingPaxID + 1;
-    public static final int kTourHeaderDetailID = kModuleID + 1;
-    public static final int kTourHeaderOptionID = kTourHeaderDetailID + 1;
-    public static final int kModuleStartDate = kTourHeaderOptionID + 1;
-    public static final int kDescription = kModuleStartDate + 1;
-    public static final int kProductType = kDescription + 1;
-    public static final int kRemoteReferenceNo = kProductType + 1;
-    public static final int kBookingSubLastField = kRemoteReferenceNo;
-    public static final int kBookingSubFields = kRemoteReferenceNo - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDetailAccessKey = kIDKey + 1;
-    public static final int kBookingKey = kDetailAccessKey + 1;
-    public static final int kBookingSubLastKey = kBookingKey;
-    public static final int kBookingSubKeys = kBookingKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -79,45 +61,51 @@ public class BookingSub extends VirtualRecord
         super.init(screen);
     }
 
-    public static final String kBookingSubFile = null;  // Screen field
+    public static final String BOOKING_SUB_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingPaxID)
-            field = new BookingPaxField(this, "BookingPaxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kModuleID)
-            field = new TourHeaderField(this, "ModuleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderDetailID)
-            field = new TourHeaderDetailField(this, "TourHeaderDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderOptionID)
-            field = new TourHeaderOptionField(this, "TourHeaderOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kModuleStartDate)
-            field = new DateTimeField(this, "ModuleStartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 60, null, null);
-        if (iFieldSeq == kProductType)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new BookingPaxField(this, BOOKING_PAX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new TourHeaderField(this, MODULE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new TourHeaderDetailField(this, TOUR_HEADER_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new DateTimeField(this, MODULE_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, DESCRIPTION, 60, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new StringField(this, "ProductType", 15, null, null);
+            field = new StringField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kRemoteReferenceNo)
-            field = new StringField(this, "RemoteReferenceNo", 60, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, REMOTE_REFERENCE_NO, 60, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingSubLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

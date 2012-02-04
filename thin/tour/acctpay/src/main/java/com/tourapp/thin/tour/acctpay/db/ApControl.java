@@ -14,10 +14,8 @@ import com.tourapp.model.tour.acctpay.db.*;
 public class ApControl extends FieldList
     implements ApControlModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public ApControl()
     {
@@ -56,60 +54,60 @@ public class ApControl extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "AutoApCode", 10, null, null);
+        field = new FieldInfo(this, AUTO_AP_CODE, 10, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "ApBankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AP_BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ApAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AP_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BrokerVendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, BROKER_VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "MessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "VendorStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, VENDOR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PaymentCycleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PAYMENT_CYCLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PaymentCodeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PAYMENT_CODE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PrepayTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PREPAY_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "NonTourApAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, NON_TOUR_AP_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CostAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, COST_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CurrOUAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CURR_OU_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PrepayAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PREPAY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "NonTourPrepayAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, NON_TOUR_PREPAY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AirAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AIR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PPTicAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PP_TIC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ArcSummaryAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ARC_SUMMARY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "OverrideRecAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OVERRIDE_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "OverrideSummAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OVERRIDE_SUMM_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "OverrideGainLossAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OVERRIDE_GAIN_LOSS_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Ten99Template", Constants.DEFAULT_FIELD_LENGTH, null, "ten99");
+        field = new FieldInfo(this, TEN_99_TEMPLATE, Constants.DEFAULT_FIELD_LENGTH, null, "ten99");
     }
     /**
     * Set up the key areas.
@@ -117,7 +115,7 @@ public class ApControl extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
     }
 

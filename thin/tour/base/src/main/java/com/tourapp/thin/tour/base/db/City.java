@@ -15,12 +15,8 @@ import com.tourapp.model.tour.base.db.*;
 public class City extends Location
     implements CityModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    public static final String DESCRIPTION = NAME;
-    public static final String CITY_CODE = CODE;
 
     public City()
     {
@@ -59,43 +55,43 @@ public class City extends Location
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 40, null, null);
-        field = new FieldInfo(this, "CityCode", 3, null, null);
-        field = new FieldInfo(this, "TicketCityDesc", 16, null, null);
-        field = new FieldInfo(this, "ICAOCode", 4, null, null);
-        field = new FieldInfo(this, "MainCityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 40, null, null);
+        field = new FieldInfo(this, CITY_CODE, 3, null, null);
+        field = new FieldInfo(this, TICKET_CITY_DESC, 16, null, null);
+        field = new FieldInfo(this, ICAO_CODE, 4, null, null);
+        field = new FieldInfo(this, MAIN_CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "StateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, STATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CountryID", 2, null, null);
+        field = new FieldInfo(this, COUNTRY_ID, 2, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DomesticTax", 10, null, null);
+        field = new FieldInfo(this, DOMESTIC_TAX, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "InternationalTax", 10, null, null);
+        field = new FieldInfo(this, INTERNATIONAL_TAX, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ArrivalTax", 10, null, null);
+        field = new FieldInfo(this, ARRIVAL_TAX, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "FacilitiesTax", 8, null, null);
+        field = new FieldInfo(this, FACILITIES_TAX, 8, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "GMTOffset", 5, null, null);
+        field = new FieldInfo(this, GMT_OFFSET, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "Latitude", 8, null, null);
+        field = new FieldInfo(this, LATITUDE, 8, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Longitude", 8, null, null);
+        field = new FieldInfo(this, LONGITUDE, 8, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Altitude", 18, null, null);
+        field = new FieldInfo(this, ALTITUDE, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "CityType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "Map", 9999, null, null);
+        field = new FieldInfo(this, CITY_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MAP, 9999, null, null);
         field.setDataClass(Object.class);
     }
     /**
@@ -104,7 +100,7 @@ public class City extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);

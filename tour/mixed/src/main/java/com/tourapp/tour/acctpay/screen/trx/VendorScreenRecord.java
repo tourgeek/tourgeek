@@ -34,29 +34,16 @@ public class VendorScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String VENDOR_KEY = "VendorKey";
-    public static final int kVendorKey = kScreenRecordLastField + 1;
     public static final String VENDOR_NAME = "VendorName";
-    public static final int kVendorName = kVendorKey + 1;
     public static final String VENDOR_COUNTRY = "VendorCountry";
-    public static final int kVendorCountry = kVendorName + 1;
     public static final String BALANCE = "Balance";
-    public static final int kBalance = kVendorCountry + 1;
     public static final String VENDOR_ID = "VendorID";
-    public static final int kVendorID = kBalance + 1;
     public static final String TOUR_ID = "TourID";
-    public static final int kTourID = kVendorID + 1;
     public static final String TOTAL = "Total";
-    public static final int kTotal = kTourID + 1;
     public static final String SELECT_FLAG = "SelectFlag";
-    public static final int kSelectFlag = kTotal + 1;
     public static final String TOTAL_SELECTED = "TotalSelected";
-    public static final int kTotalSelected = kSelectFlag + 1;
     public static final String DISPLAY_TYPE = "DisplayType";
-    public static final int kDisplayType = kTotalSelected + 1;
     public static final String DISPLAY_ACTIVE = "DisplayActive";
-    public static final int kDisplayActive = kDisplayType + 1;
-    public static final int kVendorScreenRecordLastField = kDisplayActive;
-    public static final int kVendorScreenRecordFields = kDisplayActive - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -80,41 +67,37 @@ public class VendorScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kVendorScreenRecordFile = null;  // Screen field
+    public static final String VENDOR_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kVendorKey)
-            field = new ShortField(this, "VendorKey", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorName)
-            field = new StringField(this, "VendorName", 10, null, null);
-        if (iFieldSeq == kVendorCountry)
-            field = new CountryField(this, "VendorCountry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBalance)
-            field = new FullCurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourID)
-            field = new TourField(this, "TourID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal)
-            field = new FullCurrencyField(this, "Total", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSelectFlag)
-            field = new BooleanField(this, "SelectFlag", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalSelected)
-            field = new FullCurrencyField(this, "TotalSelected", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDisplayType)
-            field = new ApTrxClassField(this, "DisplayType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDisplayActive)
-            field = new BooleanField(this, "DisplayActive", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 0)
+            field = new ShortField(this, VENDOR_KEY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new StringField(this, VENDOR_NAME, 10, null, null);
+        if (iFieldSeq == 2)
+            field = new CountryField(this, VENDOR_COUNTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new FullCurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new TourField(this, TOUR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new FullCurrencyField(this, TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new BooleanField(this, SELECT_FLAG, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new FullCurrencyField(this, TOTAL_SELECTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new ApTrxClassField(this, DISPLAY_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new BooleanField(this, DISPLAY_ACTIVE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kVendorScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

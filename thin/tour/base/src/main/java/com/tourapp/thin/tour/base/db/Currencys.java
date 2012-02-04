@@ -14,10 +14,8 @@ import com.tourapp.model.tour.base.db.*;
 public class Currencys extends FieldList
     implements CurrencysModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public Currencys()
     {
@@ -56,44 +54,44 @@ public class Currencys extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 25, null, null);
-        field = new FieldInfo(this, "CurrencyCode", 3, null, null);
-        field = new FieldInfo(this, "LastRate", 10, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 25, null, null);
+        field = new FieldInfo(this, CURRENCY_CODE, 3, null, null);
+        field = new FieldInfo(this, LAST_RATE, 10, null, null);
         field.setDataClass(Double.class);
         field.setScale(-1);
-        field = new FieldInfo(this, "RateChangedDate", 12, null, null);
+        field = new FieldInfo(this, RATE_CHANGED_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "RateChangedBy", 16, null, null);
+        field = new FieldInfo(this, RATE_CHANGED_BY, 16, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CostingRate", 10, null, null);
+        field = new FieldInfo(this, COSTING_RATE, 10, null, null);
         field.setDataClass(Double.class);
         field.setScale(-1);
-        field = new FieldInfo(this, "CostingChangedDate", 12, null, null);
+        field = new FieldInfo(this, COSTING_CHANGED_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "CostingChangedBy", 16, null, null);
+        field = new FieldInfo(this, COSTING_CHANGED_BY, 16, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "RoundAt", 1, null, null);
+        field = new FieldInfo(this, ROUND_AT, 1, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "IntegerDesc", 20, null, "Dollar");
-        field = new FieldInfo(this, "FractionDesc", 20, null, null);
-        field = new FieldInfo(this, "FractionAmount", 10, null, new Integer(100));
+        field = new FieldInfo(this, INTEGER_DESC, 20, null, "Dollar");
+        field = new FieldInfo(this, FRACTION_DESC, 20, null, null);
+        field = new FieldInfo(this, FRACTION_AMOUNT, 10, null, new Integer(100));
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Sign", 3, null, "$");
-        field = new FieldInfo(this, "LanguageID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, SIGN, 3, null, "$");
+        field = new FieldInfo(this, LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "NaturalInteger", 20, null, null);
-        field = new FieldInfo(this, "NaturalFraction", 20, null, null);
+        field = new FieldInfo(this, NATURAL_INTEGER, 20, null, null);
+        field = new FieldInfo(this, NATURAL_FRACTION, 20, null, null);
     }
     /**
     * Set up the key areas.
@@ -101,7 +99,7 @@ public class Currencys extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "CurrencyCode");
         keyArea.addKeyField("CurrencyCode", Constants.ASCENDING);

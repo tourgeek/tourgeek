@@ -72,11 +72,11 @@ public class CheckPrintScreen extends CustomReportScreen
      */
     public void setupSFields()
     {
-        this.getRecord(CheckScreenRecord.kCheckScreenRecordFile).getField(CheckScreenRecord.kCheckDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CheckScreenRecord.kCheckScreenRecordFile).getField(CheckScreenRecord.kCheckNo).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CheckScreenRecord.kCheckScreenRecordFile).getField(CheckScreenRecord.kPayee).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CheckScreenRecord.kCheckScreenRecordFile).getField(CheckScreenRecord.kCheckAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CheckScreenRecord.kCheckScreenRecordFile).getField(CheckScreenRecord.kCheckAmountText).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CheckScreenRecord.CHECK_SCREEN_RECORD_FILE).getField(CheckScreenRecord.CHECK_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CheckScreenRecord.CHECK_SCREEN_RECORD_FILE).getField(CheckScreenRecord.CHECK_NO).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CheckScreenRecord.CHECK_SCREEN_RECORD_FILE).getField(CheckScreenRecord.PAYEE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CheckScreenRecord.CHECK_SCREEN_RECORD_FILE).getField(CheckScreenRecord.CHECK_AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CheckScreenRecord.CHECK_SCREEN_RECORD_FILE).getField(CheckScreenRecord.CHECK_AMOUNT_TEXT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Layout the special print control (usually a JPanel).

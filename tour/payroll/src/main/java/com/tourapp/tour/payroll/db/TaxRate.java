@@ -33,18 +33,6 @@ public class TaxRate extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kTaxCode = kVirtualRecordLastField + 1;
-    public static final int kMaritalStatus = kTaxCode + 1;
-    public static final int kCutOffAmount = kMaritalStatus + 1;
-    public static final int kTaxRate = kCutOffAmount + 1;
-    public static final int kTaxRateLastField = kTaxRate;
-    public static final int kTaxRateFields = kTaxRate - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTaxCodeKey = kIDKey + 1;
-    public static final int kTaxRateLastKey = kTaxCodeKey;
-    public static final int kTaxRateKeys = kTaxCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -67,14 +55,12 @@ public class TaxRate extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kTaxRateFile = "TaxRate";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTaxRateFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TAX_RATE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -117,28 +103,34 @@ public class TaxRate extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kTaxCode)
-            field = new StringField(this, "TaxCode", 2, null, null);
-        if (iFieldSeq == kMaritalStatus)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, TAX_CODE, 2, null, null);
+        if (iFieldSeq == 4)
         {
-            field = new MaritalStatusField(this, "MaritalStatus", 1, null, null);
+            field = new MaritalStatusField(this, MARITAL_STATUS, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCutOffAmount)
-            field = new CurrencyField(this, "CutOffAmount", 8, null, null);
-        if (iFieldSeq == kTaxRate)
-            field = new PercentField(this, "TaxRate", 5, null, null);
+        if (iFieldSeq == 5)
+            field = new CurrencyField(this, CUT_OFF_AMOUNT, 8, null, null);
+        if (iFieldSeq == 6)
+            field = new PercentField(this, TAX_RATE, 5, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTaxRateLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -147,24 +139,20 @@ public class TaxRate extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTaxCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "TaxCode");
-            keyArea.addKeyField(kTaxCode, DBConstants.ASCENDING);
-            keyArea.addKeyField(kMaritalStatus, DBConstants.ASCENDING);
-            keyArea.addKeyField(kCutOffAmount, DBConstants.ASCENDING);
+            keyArea.addKeyField(TAX_CODE, DBConstants.ASCENDING);
+            keyArea.addKeyField(MARITAL_STATUS, DBConstants.ASCENDING);
+            keyArea.addKeyField(CUT_OFF_AMOUNT, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTaxRateLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTaxRateLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

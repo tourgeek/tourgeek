@@ -37,98 +37,6 @@ public class Employee extends Person
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kUserID = kUserID;
-    //public static final int kNameSort = kNameSort;
-    //public static final int kAddressLine2 = kAddressLine2;
-    //public static final int kName = kName;
-    public static final int kHireDate = kDateEntered;
-    //public static final int kDateChanged = kDateChanged;
-    //public static final int kChangedID = kChangedID;
-    //public static final int kAddressLine1 = kAddressLine1;
-    //public static final int kCityOrTown = kCityOrTown;
-    //public static final int kStateOrRegion = kStateOrRegion;
-    //public static final int kPostalCode = kPostalCode;
-    //public static final int kCountry = kCountry;
-    public static final int kHomePhone = kTel;
-    //public static final int kEmail = kEmail;
-    //public static final int kWeb = kWeb;
-    //public static final int kComments = kComments;
-    //public static final int kPassword = kPassword;
-    //public static final int kPostalCodeSort = kPostalCodeSort;
-    public static final int kFirstName = kPersonLastField + 1;
-    public static final int kTitle = kFirstName + 1;
-    public static final int kBirthdate = kTitle + 1;
-    public static final int kExtension = kBirthdate + 1;
-    public static final int kPhoto = kExtension + 1;
-    public static final int kReportsTo = kPhoto + 1;
-    public static final int kPayFrequency = kReportsTo + 1;
-    public static final int kPayType = kPayFrequency + 1;
-    public static final int kSalary = kPayType + 1;
-    public static final int kHourlyRate = kSalary + 1;
-    public static final int kOvertimeRate = kHourlyRate + 1;
-    public static final int kSpecial1Rate = kOvertimeRate + 1;
-    public static final int kSpecial2Rate = kSpecial1Rate + 1;
-    public static final int kTaxIdNo = kSpecial2Rate + 1;
-    public static final int kMaritalStatus = kTaxIdNo + 1;
-    public static final int kFedAllow = kMaritalStatus + 1;
-    public static final int kAddDeduct = kFedAllow + 1;
-    public static final int kFedExempt = kAddDeduct + 1;
-    public static final int kStateTaxCode = kFedExempt + 1;
-    public static final int kStateAllow = kStateTaxCode + 1;
-    public static final int kAddState = kStateAllow + 1;
-    public static final int kStateExempt = kAddState + 1;
-    public static final int kLocalCode = kStateExempt + 1;
-    public static final int kLocalAllow = kLocalCode + 1;
-    public static final int kAddLocal = kLocalAllow + 1;
-    public static final int kLocalExempt = kAddLocal + 1;
-    public static final int kFicaExempt = kLocalExempt + 1;
-    public static final int kFuiExempt = kFicaExempt + 1;
-    public static final int kSuiExempt = kFuiExempt + 1;
-    public static final int kSdiExempt = kSuiExempt + 1;
-    public static final int kDepartmentID = kSdiExempt + 1;
-    public static final int kHomeAccountID = kDepartmentID + 1;
-    public static final int kInPensionPlan = kHomeAccountID + 1;
-    public static final int kEFTaccount = kInPensionPlan + 1;
-    public static final int kDistPay = kEFTaccount + 1;
-    public static final int kSickDue = kDistPay + 1;
-    public static final int kSickTaken = kSickDue + 1;
-    public static final int kVacationDue = kSickTaken + 1;
-    public static final int kVacationTaken = kVacationDue + 1;
-    public static final int kYTDSickHours = kVacationTaken + 1;
-    public static final int kYTDSickPay = kYTDSickHours + 1;
-    public static final int kDeductionID1 = kYTDSickPay + 1;
-    public static final int kFrequency1 = kDeductionID1 + 1;
-    public static final int kAmount1 = kFrequency1 + 1;
-    public static final int kDeductionID2 = kAmount1 + 1;
-    public static final int kFrequency2 = kDeductionID2 + 1;
-    public static final int kAmount2 = kFrequency2 + 1;
-    public static final int kDeductionID3 = kAmount2 + 1;
-    public static final int kFrequency3 = kDeductionID3 + 1;
-    public static final int kAmount3 = kFrequency3 + 1;
-    public static final int kDeductionID4 = kAmount3 + 1;
-    public static final int kFrequency4 = kDeductionID4 + 1;
-    public static final int kAmount4 = kFrequency4 + 1;
-    public static final int kLastRaiseDate = kAmount4 + 1;
-    public static final int kPreviousSalary = kLastRaiseDate + 1;
-    public static final int kPreviousPayRate = kPreviousSalary + 1;
-    public static final int kReviewDate = kPreviousPayRate + 1;
-    public static final int kAnniversaryDate = kReviewDate + 1;
-    public static final int kTerminationDate = kAnniversaryDate + 1;
-    public static final int kYtdSuiPaid = kTerminationDate + 1;
-    public static final int kYtdFuiPaid = kYtdSuiPaid + 1;
-    public static final int kStatus = kYtdFuiPaid + 1;
-    public static final int kEmployeeLastField = kStatus;
-    public static final int kEmployeeFields = kStatus - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kFirstNameKey = kIDKey + 1;
-    public static final int kPostalCodeKey = kFirstNameKey + 1;
-    public static final int kNameSortKey = kPostalCodeKey + 1;
-    public static final int kDepartmentIDKey = kNameSortKey + 1;
-    public static final int kUserIDKey = kDepartmentIDKey + 1;
-    public static final int kEmployeeLastKey = kUserIDKey;
-    public static final int kEmployeeKeys = kUserIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -151,14 +59,12 @@ public class Employee extends Person
     {
         super.init(screen);
     }
-
-    public static final String kEmployeeFile = "Employee";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kEmployeeFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(EMPLOYEE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -201,225 +107,235 @@ public class Employee extends Person
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kUserID)
-            field = new UserField(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFirstName)
-            field = new StringField(this, "FirstName", 20, null, null);
-        if (iFieldSeq == kNameSort)
-            field = new StringField(this, "NameSort", 6, null, null);
-        //if (iFieldSeq == kAddressLine2)
-        //  field = new StringField(this, "AddressLine2", 40, null, null);
-        if (iFieldSeq == kName)
-            field = new StringField(this, "Name", 30, null, null);
-        if (iFieldSeq == kTitle)
-            field = new StringField(this, "Title", 30, null, null);
-        if (iFieldSeq == kBirthdate)
-            field = new DateField(this, "Birthdate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kHireDate)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new StringField(this, CODE, 16, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, NAME, 30, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        if (iFieldSeq == 8)
+            field = new StringField(this, STATE_OR_REGION, 15, null, "CA");
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, POSTAL_CODE, 10, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new StringField(this, COUNTRY, 15, null, null);
+        if (iFieldSeq == 11)
+            field = new PhoneField(this, HOME_PHONE, 24, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new FaxField(this, FAX, 24, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new EMailField(this, EMAIL, 40, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new URLField(this, WEB, 60, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new Employee_HireDate(this, "HireDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new Employee_HireDate(this, HIRE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kDateChanged)
-        //  field = new DateField(this, "DateChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kChangedID)
-        //  field = new ReferenceField(this, "ChangedID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kAddressLine1)
-        //  field = new StringField(this, "AddressLine1", 40, null, null);
-        //if (iFieldSeq == kCityOrTown)
-        //  field = new StringField(this, "CityOrTown", 15, null, null);
-        if (iFieldSeq == kStateOrRegion)
-            field = new StringField(this, "StateOrRegion", 15, null, "CA");
-        //if (iFieldSeq == kPostalCode)
-        //  field = new StringField(this, "PostalCode", 10, null, null);
-        //if (iFieldSeq == kCountry)
-        //  field = new StringField(this, "Country", 15, null, null);
-        if (iFieldSeq == kHomePhone)
-            field = new PhoneField(this, "HomePhone", 24, null, null);
-        if (iFieldSeq == kExtension)
-            field = new StringField(this, "Extension", 4, null, null);
-        //if (iFieldSeq == kEmail)
-        //  field = new EMailField(this, "Email", 40, null, null);
-        //if (iFieldSeq == kWeb)
-        //  field = new URLField(this, "Web", 60, null, null);
-        if (iFieldSeq == kPhoto)
-            field = new ImageField(this, "Photo", 9999, null, null);
-        if (iFieldSeq == kComments)
-            field = new MemoField(this, "Comments", 9999, null, null);
-        if (iFieldSeq == kReportsTo)
-            field = new EmployeeField(this, "ReportsTo", 8, null, null);
-        if (iFieldSeq == kPayFrequency)
+        //if (iFieldSeq == 16)
+        //  field = new DateField(this, DATE_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 17)
+        //  field = new ReferenceField(this, CHANGED_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new MemoField(this, COMMENTS, 9999, null, null);
+        if (iFieldSeq == 19)
+            field = new UserField(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 20)
+        //  field = new StringField(this, PASSWORD, 16, null, null);
+        if (iFieldSeq == 21)
+            field = new StringField(this, NAME_SORT, 6, null, null);
+        //if (iFieldSeq == 22)
+        //  field = new StringField(this, POSTAL_CODE_SORT, 5, null, null);
+        if (iFieldSeq == 23)
+            field = new StringField(this, FIRST_NAME, 20, null, null);
+        if (iFieldSeq == 24)
+            field = new StringField(this, TITLE, 30, null, null);
+        if (iFieldSeq == 25)
+            field = new DateField(this, BIRTHDATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 26)
+            field = new StringField(this, EXTENSION, 4, null, null);
+        if (iFieldSeq == 27)
+            field = new ImageField(this, PHOTO, 9999, null, null);
+        if (iFieldSeq == 28)
+            field = new EmployeeField(this, REPORTS_TO, 8, null, null);
+        if (iFieldSeq == 29)
         {
-            field = new PeriodTypeField(this, "PayFrequency", 1, null, "PeriodTypeField.WEEKLY");
+            field = new PeriodTypeField(this, PAY_FREQUENCY, 1, null, "PeriodTypeField.WEEKLY");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPayType)
-            field = new PayTypeField(this, "PayType", 1, null, "H");
-        if (iFieldSeq == kSalary)
-            field = new CurrencyField(this, "Salary", 9, null, null);
-        if (iFieldSeq == kHourlyRate)
-            field = new CurrencyField(this, "HourlyRate", 5, null, null);
-        if (iFieldSeq == kOvertimeRate)
-            field = new CurrencyField(this, "OvertimeRate", 5, null, null);
-        if (iFieldSeq == kSpecial1Rate)
-            field = new CurrencyField(this, "Special1Rate", 5, null, null);
-        if (iFieldSeq == kSpecial2Rate)
-            field = new CurrencyField(this, "Special2Rate", 5, null, null);
-        if (iFieldSeq == kTaxIdNo)
+        if (iFieldSeq == 30)
+            field = new PayTypeField(this, PAY_TYPE, 1, null, "H");
+        if (iFieldSeq == 31)
+            field = new CurrencyField(this, SALARY, 9, null, null);
+        if (iFieldSeq == 32)
+            field = new CurrencyField(this, HOURLY_RATE, 5, null, null);
+        if (iFieldSeq == 33)
+            field = new CurrencyField(this, OVERTIME_RATE, 5, null, null);
+        if (iFieldSeq == 34)
+            field = new CurrencyField(this, SPECIAL_1_RATE, 5, null, null);
+        if (iFieldSeq == 35)
+            field = new CurrencyField(this, SPECIAL_2_RATE, 5, null, null);
+        if (iFieldSeq == 36)
         {
-            field = new StringField(this, "TaxIdNo", 11, null, null);
+            field = new StringField(this, TAX_ID_NO, 11, null, null);
             field.setMinimumLength(11);
         }
-        if (iFieldSeq == kMaritalStatus)
-            field = new MaritalStatusField(this, "MaritalStatus", 1, null, null);
-        if (iFieldSeq == kFedAllow)
-            field = new ShortField(this, "FedAllow", 2, null, new Short((short)2));
-        if (iFieldSeq == kAddDeduct)
-            field = new FloatField(this, "AddDeduct", 8, null, null);
-        if (iFieldSeq == kFedExempt)
-            field = new BooleanField(this, "FedExempt", 1, null, null);
-        if (iFieldSeq == kStateTaxCode)
-            field = new StringField(this, "StateTaxCode", 2, null, null);
-        if (iFieldSeq == kStateAllow)
-            field = new ShortField(this, "StateAllow", 2, null, null);
-        if (iFieldSeq == kAddState)
-            field = new FloatField(this, "AddState", 8, null, null);
-        if (iFieldSeq == kStateExempt)
-            field = new BooleanField(this, "StateExempt", 1, null, null);
-        if (iFieldSeq == kLocalCode)
-            field = new StringField(this, "LocalCode", 2, null, null);
-        if (iFieldSeq == kLocalAllow)
-            field = new ShortField(this, "LocalAllow", 2, null, null);
-        if (iFieldSeq == kAddLocal)
+        if (iFieldSeq == 37)
+            field = new MaritalStatusField(this, MARITAL_STATUS, 1, null, null);
+        if (iFieldSeq == 38)
+            field = new ShortField(this, FED_ALLOW, 2, null, new Short((short)2));
+        if (iFieldSeq == 39)
+            field = new FloatField(this, ADD_DEDUCT, 8, null, null);
+        if (iFieldSeq == 40)
+            field = new BooleanField(this, FED_EXEMPT, 1, null, null);
+        if (iFieldSeq == 41)
+            field = new StringField(this, STATE_TAX_CODE, 2, null, null);
+        if (iFieldSeq == 42)
+            field = new ShortField(this, STATE_ALLOW, 2, null, null);
+        if (iFieldSeq == 43)
+            field = new FloatField(this, ADD_STATE, 8, null, null);
+        if (iFieldSeq == 44)
+            field = new BooleanField(this, STATE_EXEMPT, 1, null, null);
+        if (iFieldSeq == 45)
+            field = new StringField(this, LOCAL_CODE, 2, null, null);
+        if (iFieldSeq == 46)
+            field = new ShortField(this, LOCAL_ALLOW, 2, null, null);
+        if (iFieldSeq == 47)
         {
-            field = new FloatField(this, "AddLocal", 8, null, null);
+            field = new FloatField(this, ADD_LOCAL, 8, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kLocalExempt)
-            field = new BooleanField(this, "LocalExempt", 1, null, null);
-        if (iFieldSeq == kFicaExempt)
-            field = new BooleanField(this, "FicaExempt", 1, null, null);
-        if (iFieldSeq == kFuiExempt)
-            field = new BooleanField(this, "FuiExempt", 1, null, null);
-        if (iFieldSeq == kSuiExempt)
-            field = new BooleanField(this, "SuiExempt", 1, null, null);
-        if (iFieldSeq == kSdiExempt)
-            field = new BooleanField(this, "SdiExempt", 1, null, null);
-        if (iFieldSeq == kDepartmentID)
-            field = new DepartmentField(this, "DepartmentID", 3, null, null);
-        if (iFieldSeq == kHomeAccountID)
-            field = new AccountField(this, "HomeAccountID", 7, null, null);
-        if (iFieldSeq == kInPensionPlan)
-            field = new BooleanField(this, "InPensionPlan", 1, null, new Boolean(true));
-        if (iFieldSeq == kEFTaccount)
-            field = new StringField(this, "EFTaccount", 30, null, null);
-        if (iFieldSeq == kDistPay)
-            field = new BooleanField(this, "DistPay", 1, null, null);
-        if (iFieldSeq == kSickDue)
-            field = new FloatField(this, "SickDue", 3, null, null);
-        if (iFieldSeq == kSickTaken)
-            field = new FloatField(this, "SickTaken", 3, null, null);
-        if (iFieldSeq == kVacationDue)
-            field = new FloatField(this, "VacationDue", 3, null, null);
-        if (iFieldSeq == kVacationTaken)
-            field = new FloatField(this, "VacationTaken", 3, null, null);
-        if (iFieldSeq == kYTDSickHours)
-            field = new FloatField(this, "YTDSickHours", 10, null, null);
-        if (iFieldSeq == kYTDSickPay)
-            field = new CurrencyField(this, "YTDSickPay", 10, null, null);
-        if (iFieldSeq == kDeductionID1)
+        if (iFieldSeq == 48)
+            field = new BooleanField(this, LOCAL_EXEMPT, 1, null, null);
+        if (iFieldSeq == 49)
+            field = new BooleanField(this, FICA_EXEMPT, 1, null, null);
+        if (iFieldSeq == 50)
+            field = new BooleanField(this, FUI_EXEMPT, 1, null, null);
+        if (iFieldSeq == 51)
+            field = new BooleanField(this, SUI_EXEMPT, 1, null, null);
+        if (iFieldSeq == 52)
+            field = new BooleanField(this, SDI_EXEMPT, 1, null, null);
+        if (iFieldSeq == 53)
+            field = new DepartmentField(this, DEPARTMENT_ID, 3, null, null);
+        if (iFieldSeq == 54)
+            field = new AccountField(this, HOME_ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 55)
+            field = new BooleanField(this, IN_PENSION_PLAN, 1, null, new Boolean(true));
+        if (iFieldSeq == 56)
+            field = new StringField(this, EF_TACCOUNT, 30, null, null);
+        if (iFieldSeq == 57)
+            field = new BooleanField(this, DIST_PAY, 1, null, null);
+        if (iFieldSeq == 58)
+            field = new FloatField(this, SICK_DUE, 3, null, null);
+        if (iFieldSeq == 59)
+            field = new FloatField(this, SICK_TAKEN, 3, null, null);
+        if (iFieldSeq == 60)
+            field = new FloatField(this, VACATION_DUE, 3, null, null);
+        if (iFieldSeq == 61)
+            field = new FloatField(this, VACATION_TAKEN, 3, null, null);
+        if (iFieldSeq == 62)
+            field = new FloatField(this, YTD_SICK_HOURS, 10, null, null);
+        if (iFieldSeq == 63)
+            field = new CurrencyField(this, YTD_SICK_PAY, 10, null, null);
+        if (iFieldSeq == 64)
         {
-            field = new DeductionField(this, "DeductionID1", 3, null, "");
+            field = new DeductionField(this, DEDUCTION_ID1, 3, null, "");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFrequency1)
+        if (iFieldSeq == 65)
         {
-            field = new PeriodTypeField(this, "Frequency1", 1, null, "PeriodTypeField.WEEKLY");
+            field = new PeriodTypeField(this, FREQUENCY_1, 1, null, "PeriodTypeField.WEEKLY");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAmount1)
+        if (iFieldSeq == 66)
         {
-            field = new CurrencyField(this, "Amount1", 7, null, null);
+            field = new CurrencyField(this, AMOUNT_1, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDeductionID2)
+        if (iFieldSeq == 67)
         {
-            field = new DeductionField(this, "DeductionID2", 3, null, "");
+            field = new DeductionField(this, DEDUCTION_ID2, 3, null, "");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFrequency2)
+        if (iFieldSeq == 68)
         {
-            field = new PeriodTypeField(this, "Frequency2", 1, null, "PeriodTypeField.WEEKLY");
+            field = new PeriodTypeField(this, FREQUENCY_2, 1, null, "PeriodTypeField.WEEKLY");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAmount2)
+        if (iFieldSeq == 69)
         {
-            field = new CurrencyField(this, "Amount2", 7, null, null);
+            field = new CurrencyField(this, AMOUNT_2, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDeductionID3)
+        if (iFieldSeq == 70)
         {
-            field = new DeductionField(this, "DeductionID3", 3, null, "");
+            field = new DeductionField(this, DEDUCTION_ID3, 3, null, "");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFrequency3)
+        if (iFieldSeq == 71)
         {
-            field = new PeriodTypeField(this, "Frequency3", 1, null, "PeriodTypeField.WEEKLY");
+            field = new PeriodTypeField(this, FREQUENCY_3, 1, null, "PeriodTypeField.WEEKLY");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAmount3)
+        if (iFieldSeq == 72)
         {
-            field = new CurrencyField(this, "Amount3", 7, null, null);
+            field = new CurrencyField(this, AMOUNT_3, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDeductionID4)
+        if (iFieldSeq == 73)
         {
-            field = new DeductionField(this, "DeductionID4", 3, null, "");
+            field = new DeductionField(this, DEDUCTION_ID4, 3, null, "");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFrequency4)
+        if (iFieldSeq == 74)
         {
-            field = new PeriodTypeField(this, "Frequency4", 1, null, "PeriodTypeField.WEEKLY");
+            field = new PeriodTypeField(this, FREQUENCY_4, 1, null, "PeriodTypeField.WEEKLY");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAmount4)
+        if (iFieldSeq == 75)
         {
-            field = new CurrencyField(this, "Amount4", 7, null, null);
+            field = new CurrencyField(this, AMOUNT_4, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kLastRaiseDate)
-            field = new DateField(this, "LastRaiseDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPreviousSalary)
-            field = new CurrencyField(this, "PreviousSalary", 9, null, null);
-        if (iFieldSeq == kPreviousPayRate)
-            field = new CurrencyField(this, "PreviousPayRate", 5, null, null);
-        if (iFieldSeq == kReviewDate)
-            field = new DateField(this, "ReviewDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAnniversaryDate)
-            field = new DateField(this, "AnniversaryDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTerminationDate)
-            field = new DateField(this, "TerminationDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kYtdSuiPaid)
-            field = new CurrencyField(this, "YtdSuiPaid", 7, null, null);
-        if (iFieldSeq == kYtdFuiPaid)
-            field = new CurrencyField(this, "YtdFuiPaid", 7, null, null);
-        //if (iFieldSeq == kPassword)
-        //  field = new StringField(this, "Password", 16, null, null);
-        if (iFieldSeq == kStatus)
-            field = new BooleanField(this, "Status", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kPostalCodeSort)
-        //  field = new StringField(this, "PostalCodeSort", 5, null, null);
+        if (iFieldSeq == 76)
+            field = new DateField(this, LAST_RAISE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 77)
+            field = new CurrencyField(this, PREVIOUS_SALARY, 9, null, null);
+        if (iFieldSeq == 78)
+            field = new CurrencyField(this, PREVIOUS_PAY_RATE, 5, null, null);
+        if (iFieldSeq == 79)
+            field = new DateField(this, REVIEW_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 80)
+            field = new DateField(this, ANNIVERSARY_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 81)
+            field = new DateField(this, TERMINATION_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 82)
+            field = new CurrencyField(this, YTD_SUI_PAID, 7, null, null);
+        if (iFieldSeq == 83)
+            field = new CurrencyField(this, YTD_FUI_PAID, 7, null, null);
+        if (iFieldSeq == 84)
+            field = new BooleanField(this, STATUS, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kEmployeeLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -428,44 +344,40 @@ public class Employee extends Person
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kFirstNameKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "FirstName");
-            keyArea.addKeyField(kFirstName, DBConstants.ASCENDING);
+            keyArea.addKeyField(FIRST_NAME, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kPostalCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PostalCode");
-            keyArea.addKeyField(kPostalCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(POSTAL_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameSortKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSort");
-            keyArea.addKeyField(kNameSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDepartmentIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DepartmentID");
-            keyArea.addKeyField(kDepartmentID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kNameSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(DEPARTMENT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kUserIDKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "UserID");
-            keyArea.addKeyField(kUserID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTerminationDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(USER_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TERMINATION_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kEmployeeLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kEmployeeLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -474,21 +386,21 @@ public class Employee extends Person
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        CopyLastHandler copyLast = new CopyLastHandler(kNameSort);  // This should be somewhere else!
-        this.getField(kName).addListener(copyLast);
+        CopyLastHandler copyLast = new CopyLastHandler(Employee.NAME_SORT);   // This should be somewhere else!
+        this.getField(Employee.NAME).addListener(copyLast);
             
-        CopyFieldHandler copyFirst = new CopyFieldHandler(kFirstName);
-        this.getField(kName).addListener(copyFirst);
+        CopyFieldHandler copyFirst = new CopyFieldHandler(Employee.FIRST_NAME);
+        this.getField(Employee.NAME).addListener(copyFirst);
         FieldToUpperHandler upper = new FieldToUpperHandler(null);
-        this.getField(kFirstName).addListener(upper);
-        CopyFieldHandler copyState = new CopyFieldHandler(kStateTaxCode);
-        this.getField(kStateOrRegion).addListener(copyState);
+        this.getField(Employee.FIRST_NAME).addListener(upper);
+        CopyFieldHandler copyState = new CopyFieldHandler(Employee.STATE_TAX_CODE);
+        this.getField(Employee.STATE_OR_REGION).addListener(copyState);
         FileListener disableKey = new EnableOnValidHandler(Employee.ID, EnableOnValidHandler.DISABLE_ON_VALID, EnableOnValidHandler.ENABLE_ON_NEW);
         this.addListener(disableKey);
         FieldListener calcOvertime = new CalcOvertimeHandler(this.getField(Employee.OVERTIME_RATE));
-        this.getField(kHourlyRate).addListener(calcOvertime);
+        this.getField(Employee.HOURLY_RATE).addListener(calcOvertime);
         FieldListener calcHourly = new CalcHourlyHandler(this.getField(Employee.HOURLY_RATE));
-        this.getField(kSalary).addListener(calcHourly);
+        this.getField(Employee.SALARY).addListener(calcHourly);
     }
     /**
      * GetCurrentUser Method.
@@ -497,7 +409,7 @@ public class Employee extends Person
     {
         this.setKeyArea(Employee.ID_KEY);
         this.getField(Employee.ID).setString(((MainApplication)this.getRecordOwner().getTask().getApplication()).getUserID());  // Set to current User Name   
-        this.getField(kTerminationDate).setString("");
+        this.getField(Employee.TERMINATION_DATE).setString("");
         int errorCode = DBConstants.ERROR_RETURN;
         try   {
             boolean bSuccess = this.seek(null);

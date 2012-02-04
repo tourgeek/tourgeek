@@ -32,15 +32,9 @@ public class TourEventScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String ACTION_CUTOFF_DATE = "ActionCutoffDate";
-    public static final int kActionCutoffDate = kScreenRecordLastField + 1;
     public static final String BOOKING_UPDATE = "BookingUpdate";
-    public static final int kBookingUpdate = kActionCutoffDate + 1;
     public static final String TOUR_UPDATE = "TourUpdate";
-    public static final int kTourUpdate = kBookingUpdate + 1;
     public static final String RUN_PROCESS_IN = "RunProcessIn";
-    public static final int kRunProcessIn = kTourUpdate + 1;
-    public static final int kTourEventScreenRecordLastField = kRunProcessIn;
-    public static final int kTourEventScreenRecordFields = kRunProcessIn - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -64,27 +58,23 @@ public class TourEventScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTourEventScreenRecordFile = null; // Screen field
+    public static final String TOUR_EVENT_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kActionCutoffDate)
-            field = new TourEventScreenRecord_ActionCutoffDate(this, "ActionCutoffDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingUpdate)
-            field = new BooleanField(this, "BookingUpdate", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == kTourUpdate)
-            field = new BooleanField(this, "TourUpdate", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == kRunProcessIn)
-            field = new RunProcessInField(this, "RunProcessIn", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new TourEventScreenRecord_ActionCutoffDate(this, ACTION_CUTOFF_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new BooleanField(this, BOOKING_UPDATE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 2)
+            field = new BooleanField(this, TOUR_UPDATE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 3)
+            field = new RunProcessInField(this, RUN_PROCESS_IN, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourEventScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

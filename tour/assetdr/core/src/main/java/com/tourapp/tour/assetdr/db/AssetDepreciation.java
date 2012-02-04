@@ -34,21 +34,6 @@ public class AssetDepreciation extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kAssetID = kVirtualRecordLastField + 1;
-    public static final int kDeprDate = kAssetID + 1;
-    public static final int kDeprPost = kDeprDate + 1;
-    public static final int kVersionID = kDeprPost + 1;
-    public static final int kDeprAmount = kVersionID + 1;
-    public static final int kDeprDrID = kDeprAmount + 1;
-    public static final int kDeprCrID = kDeprDrID + 1;
-    public static final int kAssetDepreciationLastField = kDeprCrID;
-    public static final int kAssetDepreciationFields = kDeprCrID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kAssetIDKey = kIDKey + 1;
-    public static final int kAssetDepreciationLastKey = kAssetIDKey;
-    public static final int kAssetDepreciationKeys = kAssetIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +56,12 @@ public class AssetDepreciation extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAssetDepreciationFile = "AssetDepreciation";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAssetDepreciationFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ASSET_DEPRECIATION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -121,43 +104,49 @@ public class AssetDepreciation extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kAssetID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new AssetField(this, "AssetID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AssetField(this, ASSET_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kDeprDate)
+        if (iFieldSeq == 4)
         {
-            field = new DateField(this, "DeprDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, DEPR_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDeprPost)
+        if (iFieldSeq == 5)
         {
-            field = new DateField(this, "DeprPost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, DEPR_POST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVersionID)
+        if (iFieldSeq == 6)
         {
-            field = new VersionField(this, "VersionID", 1, null, "X");
+            field = new VersionField(this, VERSION_ID, 1, null, "X");
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDeprAmount)
-            field = new CurrencyField(this, "DeprAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDeprDrID)
-            field = new AccountField(this, "DeprDrID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDeprCrID)
-            field = new AccountField(this, "DeprCrID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CurrencyField(this, DEPR_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new AccountField(this, DEPR_DR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new AccountField(this, DEPR_CR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAssetDepreciationLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -166,24 +155,20 @@ public class AssetDepreciation extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAssetIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AssetID");
-            keyArea.addKeyField(kAssetID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDeprDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kVersionID, DBConstants.ASCENDING);
+            keyArea.addKeyField(ASSET_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DEPR_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(VERSION_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAssetDepreciationLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAssetDepreciationLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

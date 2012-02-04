@@ -32,21 +32,12 @@ public class RequestLabelsScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String SEND_VIA_ID = "SendViaID";
-    public static final int kSendViaID = kScreenRecordLastField + 1;
     public static final String RESTORE_FROM_DATE = "RestoreFromDate";
-    public static final int kRestoreFromDate = kSendViaID + 1;
     public static final String STYLESHEET = "Stylesheet";
-    public static final int kStylesheet = kRestoreFromDate + 1;
     public static final String FULL_ADDRESS = "FullAddress";
-    public static final int kFullAddress = kStylesheet + 1;
     public static final String REQUEST_TEXT = "RequestText";
-    public static final int kRequestText = kFullAddress + 1;
     public static final String TRUE_FIELD = "TrueField";
-    public static final int kTrueField = kRequestText + 1;
     public static final String TEMPLATE = "template";
-    public static final int ktemplate = kTrueField + 1;
-    public static final int kRequestLabelsScreenRecordLastField = ktemplate;
-    public static final int kRequestLabelsScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,33 +61,29 @@ public class RequestLabelsScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kRequestLabelsScreenRecordFile = null; // Screen field
+    public static final String REQUEST_LABELS_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kSendViaID)
-            field = new SendViaFilter(this, "SendViaID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRestoreFromDate)
-            field = new DateTimeField(this, "RestoreFromDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStylesheet)
-            field = new StringField(this, "Stylesheet", 127, null, null);
-        if (iFieldSeq == kFullAddress)
-            field = new StringField(this, "FullAddress", 255, null, null);
-        if (iFieldSeq == kRequestText)
-            field = new StringField(this, "RequestText", 255, null, null);
-        if (iFieldSeq == kTrueField)
-            field = new BooleanField(this, "TrueField", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == ktemplate)
-            field = new StringField(this, "template", 40, null, "tour/labels");
+        if (iFieldSeq == 0)
+            field = new SendViaFilter(this, SEND_VIA_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new DateTimeField(this, RESTORE_FROM_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new StringField(this, STYLESHEET, 127, null, null);
+        if (iFieldSeq == 3)
+            field = new StringField(this, FULL_ADDRESS, 255, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, REQUEST_TEXT, 255, null, null);
+        if (iFieldSeq == 5)
+            field = new BooleanField(this, TRUE_FIELD, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 6)
+            field = new StringField(this, TEMPLATE, 40, null, "tour/labels");
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kRequestLabelsScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

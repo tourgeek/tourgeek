@@ -37,32 +37,6 @@ public class BookingAnswer extends BookingSub
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kBookingID = kBookingID;
-    //public static final int kBookingPaxID = kBookingPaxID;
-    //public static final int kModuleID = kModuleID;
-    //public static final int kTourHeaderOptionID = kTourHeaderOptionID;
-    //public static final int kModuleStartDate = kModuleStartDate;
-    //public static final int kDescription = kDescription;
-    public static final int kTourOrOption = kBookingSubLastField + 1;
-    public static final int kTourOrOptionID = kTourOrOption + 1;
-    public static final int kSequence = kTourOrOptionID + 1;
-    public static final int kAskForAnswer = kSequence + 1;
-    public static final int kAlwaysResolve = kAskForAnswer + 1;
-    public static final int kDetailOptionExists = kAlwaysResolve + 1;
-    public static final int kDetailPriceExists = kDetailOptionExists + 1;
-    public static final int kDetailAirHeaderExists = kDetailPriceExists + 1;
-    public static final int kTourDetailExists = kDetailAirHeaderExists + 1;
-    public static final int kSelected = kTourDetailExists + 1;
-    public static final int kDetailAdded = kSelected + 1;
-    public static final int kBookingAnswerLastField = kDetailAdded;
-    public static final int kBookingAnswerFields = kDetailAdded - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kBookingIDKey = kIDKey + 1;
-    public static final int kScanOrderKey = kBookingIDKey + 1;
-    public static final int kBookingAnswerLastKey = kScanOrderKey;
-    public static final int kBookingAnswerKeys = kScanOrderKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected BookingAirHeader m_recBookingAirHeader = null;
     protected BookingDetail m_recBookingDetail = null;
     protected BookingLine m_recBookingLine = null;
@@ -97,14 +71,12 @@ public class BookingAnswer extends BookingSub
         m_recTourHeaderPricing = null;
         super.init(screen);
     }
-
-    public static final String kBookingAnswerFile = "BookingAnswer";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingAnswerFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_ANSWER_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -147,51 +119,66 @@ public class BookingAnswer extends BookingSub
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kBookingID)
-        //  field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kBookingPaxID)
-        //  field = new BookingPaxField(this, "BookingPaxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kModuleID)
-        //  field = new TourHeaderField(this, "ModuleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTourHeaderOptionID)
-        //  field = new TourHeaderOptionField(this, "TourHeaderOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourOrOption)
-            field = new StringField(this, "TourOrOption", 1, null, null);
-        if (iFieldSeq == kTourOrOptionID)
-            field = new ReferenceField(this, "TourOrOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSequence)
-            field = new ShortField(this, "Sequence", 4, null, null);
-        //if (iFieldSeq == kModuleStartDate)
-        //  field = new DateTimeField(this, "ModuleStartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDescription)
-        //  field = new StringField(this, "Description", 60, null, null);
-        if (iFieldSeq == kAskForAnswer)
-            field = new BooleanField(this, "AskForAnswer", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAlwaysResolve)
-            field = new BooleanField(this, "AlwaysResolve", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailOptionExists)
-            field = new BooleanField(this, "DetailOptionExists", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailPriceExists)
-            field = new BooleanField(this, "DetailPriceExists", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailAirHeaderExists)
-            field = new BooleanField(this, "DetailAirHeaderExists", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourDetailExists)
-            field = new BooleanField(this, "TourDetailExists", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSelected)
-            field = new BooleanField(this, "Selected", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (iFieldSeq == kDetailAdded)
-            field = new BooleanField(this, "DetailAdded", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (field == null)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new BookingPaxField(this, BOOKING_PAX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new TourHeaderField(this, MODULE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new TourHeaderDetailField(this, TOUR_HEADER_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new DateTimeField(this, MODULE_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, DESCRIPTION, 60, null, null);
+        if (iFieldSeq == 10)
         {
-            field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingAnswerLastField)
-                field = new EmptyField(this);
+            field = new StringField(this, PRODUCT_TYPE, 15, null, null);
+            field.setVirtual(true);
         }
+        //if (iFieldSeq == 11)
+        //  field = new StringField(this, REMOTE_REFERENCE_NO, 60, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, TOUR_OR_OPTION, 1, null, null);
+        if (iFieldSeq == 13)
+            field = new ReferenceField(this, TOUR_OR_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ShortField(this, SEQUENCE, 4, null, null);
+        if (iFieldSeq == 15)
+            field = new BooleanField(this, ASK_FOR_ANSWER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new BooleanField(this, ALWAYS_RESOLVE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new BooleanField(this, DETAIL_OPTION_EXISTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new BooleanField(this, DETAIL_PRICE_EXISTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new BooleanField(this, DETAIL_AIR_HEADER_EXISTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new BooleanField(this, TOUR_DETAIL_EXISTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new BooleanField(this, SELECTED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 22)
+            field = new BooleanField(this, DETAIL_ADDED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (field == null)
+            field = super.setupField(iFieldSeq);
         return field;
     }
     /**
@@ -200,37 +187,33 @@ public class BookingAnswer extends BookingSub
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "BookingID");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingPaxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleStartDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourOrOption, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourOrOptionID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_START_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_OR_OPTION, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_OR_OPTION_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kScanOrderKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "ScanOrder");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingPaxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleStartDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_START_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingAnswerLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingAnswerLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

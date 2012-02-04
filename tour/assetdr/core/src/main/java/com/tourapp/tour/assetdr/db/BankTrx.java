@@ -36,37 +36,6 @@ public class BankTrx extends BaseTrx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxDate = kTrxDate;
-    //public static final int kAmountLocal = kAmountLocal;
-    //public static final int kTrxUserID = kTrxUserID;
-    //public static final int kTrxEntry = kTrxEntry;
-    public static final int kBankAcctID = kBaseTrxLastField + 1;
-    public static final int kTrxNumber = kBankAcctID + 1;
-    public static final int kEFTTrxNo = kTrxNumber + 1;
-    public static final int kPayeeTrxDescID = kEFTTrxNo + 1;
-    public static final int kPayeeID = kPayeeTrxDescID + 1;
-    public static final int kPayeeName = kPayeeID + 1;
-    public static final int kAmount = kPayeeName + 1;
-    public static final int kExchange = kAmount + 1;
-    public static final int kInvSign = kExchange + 1;
-    public static final int kInvBalance = kInvSign + 1;
-    public static final int kInvBalanceLocal = kInvBalance + 1;
-    public static final int kComments = kInvBalanceLocal + 1;
-    public static final int kDateReconciled = kComments + 1;
-    public static final int kManual = kDateReconciled + 1;
-    public static final int kBankTrxLastField = kManual;
-    public static final int kBankTrxFields = kManual - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxDateKey = kIDKey + 1;
-    public static final int kTrxClassKey = kTrxDateKey + 1;
-    public static final int kInvBalanceKey = kTrxClassKey + 1;
-    public static final int kTrxNumberKey = kInvBalanceKey + 1;
-    public static final int kPayeeIDKey = kTrxNumberKey + 1;
-    public static final int kBankTrxLastKey = kPayeeIDKey;
-    public static final int kBankTrxKeys = kPayeeIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected Record m_recBankTrx = null;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int BANK_RECON_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
@@ -94,14 +63,12 @@ public class BankTrx extends BaseTrx
         m_recBankTrx = null;
         super.init(screen);
     }
-
-    public static final String kBankTrxFile = "BankTrx";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBankTrxFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BANK_TRX_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -157,58 +124,64 @@ public class BankTrx extends BaseTrx
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kBankAcctID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new BankTrx_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new DateTimeField(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new CurrencyField(this, AMOUNT_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new BankTrx_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new BankAcctField(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxNumber)
-            field = new IntegerField(this, "TrxNumber", 8, null, null);
-        if (iFieldSeq == kEFTTrxNo)
-            field = new StringField(this, "EFTTrxNo", 20, null, null);
-        if (iFieldSeq == kTrxDate)
-            field = new DateTimeField(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayeeTrxDescID)
-            field = new TrxDescField(this, "PayeeTrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayeeID)
-            field = new ReferenceField(this, "PayeeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayeeName)
-            field = new StringField(this, "PayeeName", 30, null, null);
-        if (iFieldSeq == kAmount)
-            field = new FullCurrencyField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kExchange)
-            field = new RealField(this, "Exchange", 10, null, null);
-        //if (iFieldSeq == kAmountLocal)
-        //  field = new CurrencyField(this, "AmountLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxUserID)
-        //  field = new BankTrx_TrxUserID(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvSign)
-            field = new PreferredSignField(this, "InvSign", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvBalance)
-            field = new FullCurrencyField(this, "InvBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInvBalanceLocal)
-            field = new CurrencyField(this, "InvBalanceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxEntry)
-        //  field = new BankTrx_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kComments)
-            field = new StringField(this, "Comments", 30, null, null);
-        if (iFieldSeq == kDateReconciled)
-            field = new DateTimeField(this, "DateReconciled", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kManual)
-            field = new BooleanField(this, "Manual", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new IntegerField(this, TRX_NUMBER, 8, null, null);
+        if (iFieldSeq == 10)
+            field = new StringField(this, EFT_TRX_NO, 20, null, null);
+        if (iFieldSeq == 11)
+            field = new TrxDescField(this, PAYEE_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new ReferenceField(this, PAYEE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new StringField(this, PAYEE_NAME, 30, null, null);
+        if (iFieldSeq == 14)
+            field = new FullCurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new RealField(this, EXCHANGE, 10, null, null);
+        if (iFieldSeq == 16)
+            field = new PreferredSignField(this, INV_SIGN, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new FullCurrencyField(this, INV_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new CurrencyField(this, INV_BALANCE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new StringField(this, COMMENTS, 30, null, null);
+        if (iFieldSeq == 20)
+            field = new DateTimeField(this, DATE_RECONCILED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new BooleanField(this, MANUAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBankTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -217,50 +190,46 @@ public class BankTrx extends BaseTrx
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxDateKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxClassKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxClass");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxStatusID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kInvBalanceKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "InvBalance");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kInvSign, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kInvBalance, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(INV_SIGN, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(INV_BALANCE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxNumberKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxNumber");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxNumber, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_NUMBER, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kPayeeIDKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PayeeID");
-            keyArea.addKeyField(kPayeeID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kPayeeTrxDescID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAYEE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAYEE_TRX_DESC_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBankTrxLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBankTrxLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

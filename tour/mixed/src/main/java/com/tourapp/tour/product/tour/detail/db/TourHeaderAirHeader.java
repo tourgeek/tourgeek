@@ -24,7 +24,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.tour.detail.screen.*;
 import org.jbundle.thin.base.screen.*;
-import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**
@@ -35,64 +34,6 @@ public class TourHeaderAirHeader extends TourSub
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTourHeaderOptionID = kTourHeaderOptionID;
-    //public static final int kModifyCode = kModifyCode;
-    //public static final int kModifyID = kModifyID;
-    public static final int kAirlineCode = kTourSubLastField + 1;
-    public static final int kAirlineIATA = kAirlineCode + 1;
-    public static final int kAirlineDesc = kAirlineIATA + 1;
-    public static final int kConjunction = kAirlineDesc + 1;
-    public static final int kEndorsements = kConjunction + 1;
-    public static final int kOriginDest = kEndorsements + 1;
-    public static final int kBookingReference = kOriginDest + 1;
-    public static final int kTourCode = kBookingReference + 1;
-    public static final int kTotalFareBasis = kTourCode + 1;
-    public static final int kFare = kTotalFareBasis + 1;
-    public static final int kEquivalent = kFare + 1;
-    public static final int kCurrencyCode = kEquivalent + 1;
-    public static final int kTaxPercent = kCurrencyCode + 1;
-    public static final int kTax1 = kTaxPercent + 1;
-    public static final int kTax1Desc = kTax1 + 1;
-    public static final int kTax2 = kTax1Desc + 1;
-    public static final int kTax2Desc = kTax2 + 1;
-    public static final int kTotal = kTax2Desc + 1;
-    public static final int kCommission = kTotal + 1;
-    public static final int kTax = kCommission + 1;
-    public static final int kCommissionRate = kTax + 1;
-    public static final int kAgent = kCommissionRate + 1;
-    public static final int kInternational = kAgent + 1;
-    public static final int kCommPercent = kInternational + 1;
-    public static final int kCommAmount = kCommPercent + 1;
-    public static final int kTicketBy = kCommAmount + 1;
-    public static final int kNetFare = kTicketBy + 1;
-    public static final int kOverridePercent = kNetFare + 1;
-    public static final int kOverrideAmount = kOverridePercent + 1;
-    public static final int kNetCost = kOverrideAmount + 1;
-    public static final int kTkOrColl = kNetCost + 1;
-    public static final int kARCCost = kTkOrColl + 1;
-    public static final int kPNR = kARCCost + 1;
-    public static final int kVoid = kPNR + 1;
-    public static final int kVoidDate = kVoid + 1;
-    public static final int kExchTicket = kVoidDate + 1;
-    public static final int kDepDate = kExchTicket + 1;
-    public static final int kCredit = kDepDate + 1;
-    public static final int kComment1 = kCredit + 1;
-    public static final int kComment2 = kComment1 + 1;
-    public static final int kComment3 = kComment2 + 1;
-    public static final int kCRSConf = kComment3 + 1;
-    public static final int kCRSStatus = kCRSConf + 1;
-    public static final int kFreqFlier = kCRSStatus + 1;
-    public static final int kFare1 = kFreqFlier + 1;
-    public static final int kFare2 = kFare1 + 1;
-    public static final int kFare3 = kFare2 + 1;
-    public static final int kTourHeaderAirHeaderLastField = kFare3;
-    public static final int kTourHeaderAirHeaderFields = kFare3 - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTourHeaderOptionIDKey = kIDKey + 1;
-    public static final int kTourHeaderAirHeaderLastKey = kTourHeaderOptionIDKey;
-    public static final int kTourHeaderAirHeaderKeys = kTourHeaderOptionIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -115,14 +56,12 @@ public class TourHeaderAirHeader extends TourSub
     {
         super.init(screen);
     }
-
-    public static final String kTourHeaderAirHeaderFile = "TourHeaderAirHeader";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTourHeaderAirHeaderFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TOUR_HEADER_AIR_HEADER_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -165,225 +104,231 @@ public class TourHeaderAirHeader extends TourSub
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kTourHeaderOptionID)
-        //  field = new TourHeaderOptionField(this, "TourHeaderOptionID", 8, null, null);
-        //if (iFieldSeq == kModifyCode)
-        //  field = new ModifyCodeField(this, "ModifyCode", 1, null, null);
-        //if (iFieldSeq == kModifyID)
-        //  field = new ModifyTourSubField(this, "ModifyID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirlineCode)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, 8, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new ModifyCodeField(this, MODIFY_CODE, 1, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new ModifyTourSubField(this, MODIFY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
         {
-            field = new StringField(this, "AirlineCode", 2, null, null);
+            field = new StringField(this, AIRLINE_CODE, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAirlineIATA)
-            field = new ShortField(this, "AirlineIATA", 4, null, null);
-        if (iFieldSeq == kAirlineDesc)
-            field = new StringField(this, "AirlineDesc", 16, null, null);
-        if (iFieldSeq == kConjunction)
-            field = new ShortField(this, "Conjunction", 1, null, null);
-        if (iFieldSeq == kEndorsements)
+        if (iFieldSeq == 7)
+            field = new ShortField(this, AIRLINE_IATA, 4, null, null);
+        if (iFieldSeq == 8)
+            field = new StringField(this, AIRLINE_DESC, 16, null, null);
+        if (iFieldSeq == 9)
+            field = new ShortField(this, CONJUNCTION, 1, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new StringField(this, "Endorsements", 29, null, null);
+            field = new StringField(this, ENDORSEMENTS, 29, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOriginDest)
+        if (iFieldSeq == 11)
         {
-            field = new StringField(this, "OriginDest", 13, null, null);
+            field = new StringField(this, ORIGIN_DEST, 13, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kBookingReference)
-            field = new StringField(this, "BookingReference", 13, null, null);
-        if (iFieldSeq == kTourCode)
+        if (iFieldSeq == 12)
+            field = new StringField(this, BOOKING_REFERENCE, 13, null, null);
+        if (iFieldSeq == 13)
         {
-            field = new StringField(this, "TourCode", 14, null, null);
+            field = new StringField(this, TOUR_CODE, 14, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTotalFareBasis)
+        if (iFieldSeq == 14)
         {
-            field = new BooleanField(this, "TotalFareBasis", 1, null, new Boolean(false));
+            field = new BooleanField(this, TOTAL_FARE_BASIS, 1, null, new Boolean(false));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFare)
+        if (iFieldSeq == 15)
         {
-            field = new FloatField(this, "Fare", 9, null, null);
+            field = new FloatField(this, FARE, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEquivalent)
+        if (iFieldSeq == 16)
         {
-            field = new FloatField(this, "Equivalent", 8, null, null);
+            field = new FloatField(this, EQUIVALENT, 8, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCurrencyCode)
+        if (iFieldSeq == 17)
         {
-            field = new StringField(this, "CurrencyCode", 3, null, null);
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTaxPercent)
+        if (iFieldSeq == 18)
         {
-            field = new FloatField(this, "TaxPercent", 5, null, null);
+            field = new FloatField(this, TAX_PERCENT, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTax1)
+        if (iFieldSeq == 19)
         {
-            field = new FloatField(this, "Tax1", 9, null, null);
+            field = new FloatField(this, TAX_1, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTax1Desc)
+        if (iFieldSeq == 20)
         {
-            field = new StringField(this, "Tax1Desc", 2, null, null);
+            field = new StringField(this, TAX_1_DESC, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTax2)
+        if (iFieldSeq == 21)
         {
-            field = new FloatField(this, "Tax2", 9, null, null);
+            field = new FloatField(this, TAX_2, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTax2Desc)
+        if (iFieldSeq == 22)
         {
-            field = new StringField(this, "Tax2Desc", 2, null, null);
+            field = new StringField(this, TAX_2_DESC, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTotal)
+        if (iFieldSeq == 23)
         {
-            field = new FloatField(this, "Total", 9, null, null);
+            field = new FloatField(this, TOTAL, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCommission)
-            field = new StringField(this, "Commission", 10, null, "      10   ");
-        if (iFieldSeq == kTax)
-            field = new StringField(this, "Tax", 10, null, "      8   ");
-        if (iFieldSeq == kCommissionRate)
-            field = new StringField(this, "CommissionRate", 5, null, "  10 ");
-        if (iFieldSeq == kAgent)
-            field = new StringField(this, "Agent", 10, null, " AGENT");
-        if (iFieldSeq == kInternational)
-            field = new StringField(this, "International", 3, null, "X/");
-        if (iFieldSeq == kCommPercent)
+        if (iFieldSeq == 24)
+            field = new StringField(this, COMMISSION, 10, null, "      10   ");
+        if (iFieldSeq == 25)
+            field = new StringField(this, TAX, 10, null, "      8   ");
+        if (iFieldSeq == 26)
+            field = new StringField(this, COMMISSION_RATE, 5, null, "  10 ");
+        if (iFieldSeq == 27)
+            field = new StringField(this, AGENT, 10, null, " AGENT");
+        if (iFieldSeq == 28)
+            field = new StringField(this, INTERNATIONAL, 3, null, "X/");
+        if (iFieldSeq == 29)
         {
-            field = new FloatField(this, "CommPercent", 5, null, null);
+            field = new FloatField(this, COMM_PERCENT, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCommAmount)
-            field = new FloatField(this, "CommAmount", 9, null, null);
-        if (iFieldSeq == kTicketBy)
-            field = new StringField(this, "TicketBy", 1, null, "U");
-        if (iFieldSeq == kNetFare)
+        if (iFieldSeq == 30)
+            field = new FloatField(this, COMM_AMOUNT, 9, null, null);
+        if (iFieldSeq == 31)
+            field = new StringField(this, TICKET_BY, 1, null, "U");
+        if (iFieldSeq == 32)
         {
-            field = new FloatField(this, "NetFare", 9, null, null);
+            field = new FloatField(this, NET_FARE, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOverridePercent)
+        if (iFieldSeq == 33)
         {
-            field = new FloatField(this, "OverridePercent", 5, null, null);
+            field = new FloatField(this, OVERRIDE_PERCENT, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOverrideAmount)
+        if (iFieldSeq == 34)
         {
-            field = new FloatField(this, "OverrideAmount", 9, null, null);
+            field = new FloatField(this, OVERRIDE_AMOUNT, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kNetCost)
+        if (iFieldSeq == 35)
         {
-            field = new FloatField(this, "NetCost", 9, null, null);
+            field = new FloatField(this, NET_COST, 9, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTkOrColl)
+        if (iFieldSeq == 36)
         {
-            field = new FloatField(this, "TkOrColl", 9, null, null);
+            field = new FloatField(this, TK_OR_COLL, 9, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kARCCost)
+        if (iFieldSeq == 37)
         {
-            field = new FloatField(this, "ARCCost", 9, null, null);
+            field = new FloatField(this, ARC_COST, 9, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPNR)
+        if (iFieldSeq == 38)
         {
-            field = new StringField(this, "PNR", 15, null, null);
+            field = new StringField(this, PNR, 15, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVoid)
+        if (iFieldSeq == 39)
         {
-            field = new BooleanField(this, "Void", 1, null, null);
+            field = new BooleanField(this, VOID, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kVoidDate)
+        if (iFieldSeq == 40)
         {
-            field = new DateField(this, "VoidDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, VOID_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kExchTicket)
+        if (iFieldSeq == 41)
         {
-            field = new StringField(this, "ExchTicket", 20, null, null);
+            field = new StringField(this, EXCH_TICKET, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDepDate)
+        if (iFieldSeq == 42)
         {
-            field = new DateField(this, "DepDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, DEP_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCredit)
+        if (iFieldSeq == 43)
         {
-            field = new BooleanField(this, "Credit", 1, null, new Boolean(false));
+            field = new BooleanField(this, CREDIT, 1, null, new Boolean(false));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kComment1)
+        if (iFieldSeq == 44)
         {
-            field = new StringField(this, "Comment1", 20, null, null);
+            field = new StringField(this, COMMENT_1, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kComment2)
+        if (iFieldSeq == 45)
         {
-            field = new StringField(this, "Comment2", 20, null, null);
+            field = new StringField(this, COMMENT_2, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kComment3)
+        if (iFieldSeq == 46)
         {
-            field = new StringField(this, "Comment3", 20, null, null);
+            field = new StringField(this, COMMENT_3, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCRSConf)
+        if (iFieldSeq == 47)
         {
-            field = new StringField(this, "CRSConf", 20, null, null);
+            field = new StringField(this, CRS_CONF, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCRSStatus)
+        if (iFieldSeq == 48)
         {
-            field = new StringField(this, "CRSStatus", 2, null, null);
+            field = new StringField(this, CRS_STATUS, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFreqFlier)
+        if (iFieldSeq == 49)
         {
-            field = new StringField(this, "FreqFlier", 20, null, null);
+            field = new StringField(this, FREQ_FLIER, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFare1)
+        if (iFieldSeq == 50)
         {
-            field = new StringField(this, "Fare1", 60, null, null);
+            field = new StringField(this, FARE_1, 60, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFare2)
+        if (iFieldSeq == 51)
         {
-            field = new StringField(this, "Fare2", 60, null, null);
+            field = new StringField(this, FARE_2, 60, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFare3)
+        if (iFieldSeq == 52)
         {
-            field = new StringField(this, "Fare3", 60, null, null);
+            field = new StringField(this, FARE_3, 60, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourHeaderAirHeaderLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -392,22 +337,18 @@ public class TourHeaderAirHeader extends TourSub
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourHeaderOptionIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourHeaderOptionID");
-            keyArea.addKeyField(kTourHeaderOptionID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_HEADER_OPTION_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTourHeaderAirHeaderLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTourHeaderAirHeaderLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

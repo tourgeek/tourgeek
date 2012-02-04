@@ -35,23 +35,13 @@ public class GenPaymentScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String PAYMENT_CODE_ID = "PaymentCodeID";
-    public static final int kPaymentCodeID = kScreenRecordLastField + 1;
     public static final String USE_CURRENT_SELECTION = "UseCurrentSelection";
-    public static final int kUseCurrentSelection = kPaymentCodeID + 1;
     public static final String BANK_ACCT_ID = "BankAcctID";
-    public static final int kBankAcctID = kUseCurrentSelection + 1;
     public static final String REPORT_DATE = "ReportDate";
-    public static final int kReportDate = kBankAcctID + 1;
     public static final String REPORT_TIME = "ReportTime";
-    public static final int kReportTime = kReportDate + 1;
     public static final String USER_ID = "UserID";
-    public static final int kUserID = kReportTime + 1;
     public static final String PAGE = "Page";
-    public static final int kPage = kUserID + 1;
     public static final String TOTAL = "Total";
-    public static final int kTotal = kPage + 1;
-    public static final int kGenPaymentScreenRecordLastField = kTotal;
-    public static final int kGenPaymentScreenRecordFields = kTotal - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -75,35 +65,31 @@ public class GenPaymentScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kGenPaymentScreenRecordFile = null;  // Screen field
+    public static final String GEN_PAYMENT_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kPaymentCodeID)
-            field = new PaymentCodeField(this, "PaymentCodeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kUseCurrentSelection)
-            field = new BooleanField(this, "UseCurrentSelection", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == kBankAcctID)
-            field = new BankAcctField(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportDate)
-            field = new GenPaymentScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportTime)
-            field = new GenPaymentScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kUserID)
-            field = new GenPaymentScreenRecord_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPage)
-            field = new ShortField(this, "Page", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal)
-            field = new CurrencyField(this, "Total", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new PaymentCodeField(this, PAYMENT_CODE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new BooleanField(this, USE_CURRENT_SELECTION, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 2)
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new GenPaymentScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new GenPaymentScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new GenPaymentScreenRecord_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new ShortField(this, PAGE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CurrencyField(this, TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kGenPaymentScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

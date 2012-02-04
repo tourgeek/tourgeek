@@ -75,7 +75,7 @@ public class PastDueFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(PastDueScreenRecord.kPastDueScreenRecordFile).getField(PastDueScreenRecord.kReportTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PastDueScreenRecord.PAST_DUE_SCREEN_RECORD_FILE).getField(PastDueScreenRecord.REPORT_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

@@ -15,12 +15,8 @@ import com.tourapp.model.tour.base.db.*;
 public class Country extends Location
     implements CountryModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String NAME = NAME;
-    //public static final String CODE = CODE;
 
     public Country()
     {
@@ -59,36 +55,36 @@ public class Country extends Location
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Name", 40, null, null);
-        field = new FieldInfo(this, "Code", 2, null, null);
-        field = new FieldInfo(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, NAME, 40, null, null);
+        field = new FieldInfo(this, CODE, 2, null, null);
+        field = new FieldInfo(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "LanguageID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ICAOCountryCode", 3, null, null);
-        field = new FieldInfo(this, "FaxPrefix", 10, null, null);
-        field = new FieldInfo(this, "InternationalTax", 10, null, null);
+        field = new FieldInfo(this, ICAO_COUNTRY_CODE, 3, null, null);
+        field = new FieldInfo(this, FAX_PREFIX, 10, null, null);
+        field = new FieldInfo(this, INTERNATIONAL_TAX, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "DomesticTax", 10, null, null);
+        field = new FieldInfo(this, DOMESTIC_TAX, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ArrivalTax", 10, null, null);
+        field = new FieldInfo(this, ARRIVAL_TAX, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "GMTOffset", 5, null, null);
+        field = new FieldInfo(this, GMT_OFFSET, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "RegionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, REGION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Description", 9999, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 9999, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "Picture", 9999, null, null);
+        field = new FieldInfo(this, PICTURE, 9999, null, null);
         field.setDataClass(Object.class);
     }
     /**
@@ -97,7 +93,7 @@ public class Country extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Name");
         keyArea.addKeyField("Name", Constants.ASCENDING);

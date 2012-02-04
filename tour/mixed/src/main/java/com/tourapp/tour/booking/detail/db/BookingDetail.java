@@ -47,9 +47,9 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.booking.history.db.*;
 import java.text.*;
 import org.jbundle.thin.base.db.buff.*;
-import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
@@ -60,142 +60,9 @@ public class BookingDetail extends BookingSub
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kBookingID = kBookingID;
-    //public static final int kBookingPaxID = kBookingPaxID;
-    //public static final int kModuleID = kModuleID;
-    //public static final int kTourHeaderDetailID = kTourHeaderDetailID;
-    //public static final int kTourHeaderOptionID = kTourHeaderOptionID;
-    //public static final int kDescription = kDescription;
-    //public static final int kProductType = kProductType;
-    //public static final int kLastChanged = kLastChanged;
-    //public static final int kDeleted = kDeleted;
-    public static final int kProductTypeID = kBookingSubLastField + 1;
-    public static final int kDetailDate = kProductTypeID + 1;
-    public static final int kGMTDate = kDetailDate + 1;
-    public static final int kGMTOffset = kGMTDate + 1;
-    public static final int kProductID = kGMTOffset + 1;
-    public static final int kRateID = kProductID + 1;
-    public static final int kClassID = kRateID + 1;
-    public static final int kMarkupFromLast = kClassID + 1;
-    public static final int kVendorID = kMarkupFromLast + 1;
-    public static final int kTourID = kVendorID + 1;
-    public static final int kApTrxID = kTourID + 1;
-    public static final int kPricingDetailKey = kApTrxID + 1;
-    public static final int kTotalCost = kPricingDetailKey + 1;
-    public static final int kExchange = kTotalCost + 1;
-    public static final int kCurrencyCode = kExchange + 1;
-    public static final int kTotalCostLocal = kCurrencyCode + 1;
-    public static final int kTotalPriceLocal = kTotalCostLocal + 1;
-    public static final int kInfoMessageTransportID = kTotalPriceLocal + 1;
-    public static final int kInfoStatusID = kInfoMessageTransportID + 1;
-    public static final int kInfoRequestKey = kInfoStatusID + 1;
-    public static final int kInfoStatusRequest = kInfoRequestKey + 1;
-    public static final int kCostMessageTransportID = kInfoStatusRequest + 1;
-    public static final int kCostStatusID = kCostMessageTransportID + 1;
-    public static final int kCostRequestKey = kCostStatusID + 1;
-    public static final int kCostStatusRequest = kCostRequestKey + 1;
-    public static final int kInventoryMessageTransportID = kCostStatusRequest + 1;
-    public static final int kInventoryStatusID = kInventoryMessageTransportID + 1;
-    public static final int kInventoryRequestKey = kInventoryStatusID + 1;
-    public static final int kInventoryStatusRequest = kInventoryRequestKey + 1;
-    public static final int kProductMessageTransportID = kInventoryStatusRequest + 1;
-    public static final int kProductStatusID = kProductMessageTransportID + 1;
-    public static final int kProductRequestKey = kProductStatusID + 1;
-    public static final int kProductStatusRequest = kProductRequestKey + 1;
-    public static final int kRemoteBookingNo = kProductStatusRequest + 1;
-    public static final int kAckDays = kRemoteBookingNo + 1;
-    public static final int kDetailEndDate = kAckDays + 1;
-    public static final int kGMTEndDate = kDetailEndDate + 1;
-    public static final int kMealSummary = kGMTEndDate + 1;
-    public static final int kStatusSummary = kMealSummary + 1;
-    public static final int kItineraryDesc = kStatusSummary + 1;
-    public static final int kProperties = kItineraryDesc + 1;
-    public static final int kErrorProperties = kProperties + 1;
-    public static final int kPPCost = kErrorProperties + 1;
-    public static final int kPPPriceLocal = kPPCost + 1;
-    public static final int kNights = kPPPriceLocal + 1;
-    public static final int kMealPlan1ID = kNights + 1;
-    public static final int kMealPlan1Qty = kMealPlan1ID + 1;
-    public static final int kMealPlan1Days = kMealPlan1Qty + 1;
-    public static final int kMealPlan2ID = kMealPlan1Days + 1;
-    public static final int kMealPlan2Qty = kMealPlan2ID + 1;
-    public static final int kMealPlan2Days = kMealPlan2Qty + 1;
-    public static final int kMealPlan3ID = kMealPlan2Days + 1;
-    public static final int kMealPlan3Qty = kMealPlan3ID + 1;
-    public static final int kMealPlan3Days = kMealPlan3Qty + 1;
-    public static final int kMealPlan4ID = kMealPlan3Days + 1;
-    public static final int kMealPlan4Qty = kMealPlan4ID + 1;
-    public static final int kMealPlan4Days = kMealPlan4Qty + 1;
-    public static final int kSinglePax = kMealPlan4Days + 1;
-    public static final int kDoublePax = kSinglePax + 1;
-    public static final int kTriplePax = kDoublePax + 1;
-    public static final int kQuadPax = kTriplePax + 1;
-    public static final int kChildren = kQuadPax + 1;
-    public static final int kSingleCost = kChildren + 1;
-    public static final int kDoubleCost = kSingleCost + 1;
-    public static final int kTripleCost = kDoubleCost + 1;
-    public static final int kQuadCost = kTripleCost + 1;
-    public static final int kChildrenCost = kQuadCost + 1;
-    public static final int kRoomCost = kChildrenCost + 1;
-    public static final int kMealCost = kRoomCost + 1;
-    public static final int kRoomCostLocal = kMealCost + 1;
-    public static final int kMealCostLocal = kRoomCostLocal + 1;
-    public static final int kVariesCode = kMealCostLocal + 1;
-    public static final int kVariesQty = kVariesCode + 1;
-    public static final int kVariesCost = kVariesQty + 1;
-    public static final int kPMCCutoff = kVariesCost + 1;
-    public static final int kPMCCost = kPMCCutoff + 1;
-    public static final int kSICCost = kPMCCost + 1;
-    public static final int kBookingAirHeaderID = kSICCost + 1;
-    public static final int kGMTTime = kBookingAirHeaderID + 1;
-    public static final int kEtd = kGMTTime + 1;
-    public static final int kXO = kEtd + 1;
-    public static final int kCityCode = kXO + 1;
-    public static final int kCityDesc = kCityCode + 1;
-    public static final int kAirlineID = kCityDesc + 1;
-    public static final int kCarrier = kAirlineID + 1;
-    public static final int kFlightNo = kCarrier + 1;
-    public static final int kFlightClass = kFlightNo + 1;
-    public static final int kToCityCode = kFlightClass + 1;
-    public static final int kToCityDesc = kToCityCode + 1;
-    public static final int kArriveTime = kToCityDesc + 1;
-    public static final int kAddDays = kArriveTime + 1;
-    public static final int kARCStatus = kAddDays + 1;
-    public static final int kFareBasis = kARCStatus + 1;
-    public static final int kStartDate = kFareBasis + 1;
-    public static final int kEndDate = kStartDate + 1;
-    public static final int kAllow = kEndDate + 1;
-    public static final int kDetFare = kAllow + 1;
-    public static final int kSegmentConfNo = kDetFare + 1;
-    public static final int kSegmentConfirmedBy = kSegmentConfNo + 1;
-    public static final int kCoupon = kSegmentConfirmedBy + 1;
-    public static final int kSeat = kCoupon + 1;
-    public static final int kGate = kSeat + 1;
-    public static final int kSeatPref = kGate + 1;
-    public static final int kSmoking = kSeatPref + 1;
-    public static final int kMeals = kSmoking + 1;
-    public static final int kDays = kMeals + 1;
-    public static final int kQuantity = kDays + 1;
-    public static final int kAskForAnswer = kQuantity + 1;
-    public static final int kAlwaysResolve = kAskForAnswer + 1;
-    public static final int kPricingTypeID = kAlwaysResolve + 1;
-    public static final int kBookingDetailLastField = kPricingTypeID;
-    public static final int kBookingDetailFields = kPricingTypeID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDetailAccessKey = kIDKey + 1;
-    public static final int kBookingIDKey = kDetailAccessKey + 1;
-    public static final int kProductIDKey = kBookingIDKey + 1;
-    public static final int kApTrxIDKey = kProductIDKey + 1;
-    public static final int kTourIDKey = kApTrxIDKey + 1;
-    public static final int kDetailDateKey = kTourIDKey + 1;
-    public static final int kVendorIDKey = kDetailDateKey + 1;
-    public static final int kBookingDetailLastKey = kVendorIDKey;
-    public static final int kBookingDetailKeys = kVendorIDKey - DBConstants.MAIN_KEY_FIELD + 1;
-    public static final int MESSAGE_TRANSPORT_OFFSET = BookingDetail.kInfoMessageTransportID - BookingDetail.kInfoStatusID;
-    public static final int MESSAGE_KEY_OFFSET = BookingDetail.kInfoRequestKey - BookingDetail.kInfoStatusID;
-    public static final int MESSAGE_REQUEST_OFFSET = BookingDetail.kInfoStatusRequest - BookingDetail.kInfoStatusID;
+    public static final int MESSAGE_TRANSPORT_OFFSET = 4 /*InfoMessageTransportID - InfoStatusID*/;
+    public static final int MESSAGE_KEY_OFFSET = 1 /*InfoRequestKey - kInfoStatusID*/;
+    public static final int MESSAGE_REQUEST_OFFSET = 2 /*InfoStatusRequest - InfoStatusID*/;
     protected BookingLine m_recBookingLine = null;
     /**
      * Default constructor.
@@ -220,14 +87,12 @@ public class BookingDetail extends BookingSub
         m_recBookingLine = null;
         super.init(screen);
     }
-
-    public static final String kBookingDetailFile = "BookingDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -297,390 +162,390 @@ public class BookingDetail extends BookingSub
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kBookingID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kBookingPaxID)
-            field = new BookingPaxField(this, "BookingPaxID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
-        //if (iFieldSeq == kModuleID)
-        //  field = new TourHeaderField(this, "ModuleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTourHeaderDetailID)
-        //  field = new TourHeaderDetailField(this, "TourHeaderDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTourHeaderOptionID)
-        //  field = new TourHeaderOptionField(this, "TourHeaderOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDescription)
-        //  field = new StringField(this, "Description", 60, null, null);
-        if (iFieldSeq == kProductType)
+        if (iFieldSeq == 4)
+            field = new BookingPaxField(this, BOOKING_PAX_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new TourHeaderField(this, MODULE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new TourHeaderDetailField(this, TOUR_HEADER_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new DateTimeField(this, MODULE_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, DESCRIPTION, 60, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new StringField(this, "ProductType", 15, null, null);
+            field = new StringField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProductTypeID)
-            field = new ProductTypeField(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailDate)
+        //if (iFieldSeq == 11)
+        //  field = new StringField(this, REMOTE_REFERENCE_NO, 60, null, null);
+        if (iFieldSeq == 12)
+            field = new ProductTypeField(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
         {
-            field = new DateTimeField(this, "DetailDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateTimeField(this, DETAIL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kGMTDate)
+        if (iFieldSeq == 14)
         {
-            field = new DateTimeField(this, "GMTDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateTimeField(this, GMT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kGMTOffset)
-            field = new DoubleField(this, "GMTOffset", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductID)
-            field = new ProductField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRateID)
-            field = new BaseRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClassID)
-            field = new BaseClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMarkupFromLast)
-            field = new PercentField(this, "MarkupFromLast", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", 8, null, null);
-        if (iFieldSeq == kTourID)
-            field = new TourField(this, "TourID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kApTrxID)
-            field = new ApTrxField(this, "ApTrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPricingDetailKey)
-            field = new StringField(this, "PricingDetailKey", 128, null, null);
-        if (iFieldSeq == kTotalCost)
-            field = new FullCurrencyField(this, "TotalCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kExchange)
-            field = new RealField(this, "Exchange", 10, null, new Double(1.0));
-        if (iFieldSeq == kCurrencyCode)
+        if (iFieldSeq == 15)
+            field = new DoubleField(this, GMT_OFFSET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new ProductField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new BaseClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new PercentField(this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new VendorField(this, VENDOR_ID, 8, null, null);
+        if (iFieldSeq == 21)
+            field = new TourField(this, TOUR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
+            field = new ApTrxField(this, AP_TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 23)
+            field = new StringField(this, PRICING_DETAIL_KEY, 128, null, null);
+        if (iFieldSeq == 24)
+            field = new FullCurrencyField(this, TOTAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new RealField(this, EXCHANGE, 10, null, new Double(1.0));
+        if (iFieldSeq == 26)
         {
-            field = new StringField(this, "CurrencyCode", 3, null, null);
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kTotalCostLocal)
-            field = new CurrencyField(this, "TotalCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalPriceLocal)
-            field = new CurrencyField(this, "TotalPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInfoMessageTransportID)
-            field = new MessageTransportSelect(this, "InfoMessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInfoStatusID)
-            field = new InfoStatusSelect(this, "InfoStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInfoRequestKey)
-            field = new StringField(this, "InfoRequestKey", 128, null, null);
-        if (iFieldSeq == kInfoStatusRequest)
+        if (iFieldSeq == 27)
+            field = new CurrencyField(this, TOTAL_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
+            field = new CurrencyField(this, TOTAL_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new MessageTransportSelect(this, INFO_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new InfoStatusSelect(this, INFO_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new StringField(this, INFO_REQUEST_KEY, 128, null, null);
+        if (iFieldSeq == 32)
         {
-            field = new BooleanField(this, "InfoStatusRequest", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, INFO_STATUS_REQUEST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kCostMessageTransportID)
-            field = new MessageTransportSelect(this, "CostMessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCostStatusID)
-            field = new CostStatusSelect(this, "CostStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCostRequestKey)
-            field = new StringField(this, "CostRequestKey", 128, null, null);
-        if (iFieldSeq == kCostStatusRequest)
+        if (iFieldSeq == 33)
+            field = new MessageTransportSelect(this, COST_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 34)
+            field = new CostStatusSelect(this, COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 35)
+            field = new StringField(this, COST_REQUEST_KEY, 128, null, null);
+        if (iFieldSeq == 36)
         {
-            field = new BooleanField(this, "CostStatusRequest", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, COST_STATUS_REQUEST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kInventoryMessageTransportID)
-            field = new MessageTransportSelect(this, "InventoryMessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInventoryStatusID)
-            field = new InventoryStatusSelect(this, "InventoryStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kInventoryRequestKey)
-            field = new StringField(this, "InventoryRequestKey", 128, null, null);
-        if (iFieldSeq == kInventoryStatusRequest)
+        if (iFieldSeq == 37)
+            field = new MessageTransportSelect(this, INVENTORY_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 38)
+            field = new InventoryStatusSelect(this, INVENTORY_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 39)
+            field = new StringField(this, INVENTORY_REQUEST_KEY, 128, null, null);
+        if (iFieldSeq == 40)
         {
-            field = new BooleanField(this, "InventoryStatusRequest", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, INVENTORY_STATUS_REQUEST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProductMessageTransportID)
-            field = new MessageTransportSelect(this, "ProductMessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductStatusID)
-            field = new ProductStatusSelect(this, "ProductStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductRequestKey)
-            field = new StringField(this, "ProductRequestKey", 128, null, null);
-        if (iFieldSeq == kProductStatusRequest)
+        if (iFieldSeq == 41)
+            field = new MessageTransportSelect(this, PRODUCT_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 42)
+            field = new ProductStatusSelect(this, PRODUCT_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 43)
+            field = new StringField(this, PRODUCT_REQUEST_KEY, 128, null, null);
+        if (iFieldSeq == 44)
         {
-            field = new BooleanField(this, "ProductStatusRequest", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, PRODUCT_STATUS_REQUEST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kRemoteBookingNo)
-            field = new StringField(this, "RemoteBookingNo", 127, null, null);
-        if (iFieldSeq == kAckDays)
-            field = new ShortField(this, "AckDays", 4, null, null);
-        //if (iFieldSeq == kLastChanged)
-        //{
-        //  field = new RecordChangedField(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //  field.setHidden(true);
-        //}
-        //if (iFieldSeq == kDeleted)
-        //{
-        //  field = new BooleanField(this, "Deleted", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        //  field.setHidden(true);
-        //}
-        if (iFieldSeq == kDetailEndDate)
-            field = new DateTimeField(this, "DetailEndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGMTEndDate)
-            field = new DateTimeField(this, "GMTEndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMealSummary)
+        if (iFieldSeq == 45)
+            field = new StringField(this, REMOTE_BOOKING_NO, 127, null, null);
+        if (iFieldSeq == 46)
+            field = new ShortField(this, ACK_DAYS, 4, null, null);
+        if (iFieldSeq == 47)
+            field = new DateTimeField(this, DETAIL_END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 48)
+            field = new DateTimeField(this, GMT_END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 49)
         {
-            field = new StringField(this, "MealSummary", 255, null, null);
+            field = new StringField(this, MEAL_SUMMARY, 255, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kStatusSummary)
+        if (iFieldSeq == 50)
         {
-            field = new StatusSummaryField(this, "StatusSummary", 20, null, null);
+            field = new StatusSummaryField(this, STATUS_SUMMARY, 20, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kItineraryDesc)
-            field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kErrorProperties)
-            field = new PropertiesField(this, "ErrorProperties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPPCost)
-            field = new FullCurrencyField(this, "PPCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPPPriceLocal)
-            field = new CurrencyField(this, "PPPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNights)
-            field = new ShortField(this, "Nights", 2, null, null);
-        if (iFieldSeq == kMealPlan1ID)
-            field = new MealPlanField(this, "MealPlan1ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMealPlan1Qty)
-            field = new ShortField(this, "MealPlan1Qty", 2, null, null);
-        if (iFieldSeq == kMealPlan1Days)
-            field = new MealDays(this, "MealPlan1Days", 9, null, null);
-        if (iFieldSeq == kMealPlan2ID)
-            field = new MealPlanField(this, "MealPlan2ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMealPlan2Qty)
-            field = new ShortField(this, "MealPlan2Qty", 2, null, null);
-        if (iFieldSeq == kMealPlan2Days)
-            field = new MealDays(this, "MealPlan2Days", 9, null, null);
-        if (iFieldSeq == kMealPlan3ID)
-            field = new MealPlanField(this, "MealPlan3ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMealPlan3Qty)
-            field = new ShortField(this, "MealPlan3Qty", 2, null, null);
-        if (iFieldSeq == kMealPlan3Days)
-            field = new MealDays(this, "MealPlan3Days", 9, null, null);
-        if (iFieldSeq == kMealPlan4ID)
-            field = new MealPlanField(this, "MealPlan4ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMealPlan4Qty)
-            field = new ShortField(this, "MealPlan4Qty", 2, null, null);
-        if (iFieldSeq == kMealPlan4Days)
-            field = new MealDays(this, "MealPlan4Days", 9, null, null);
-        if (iFieldSeq == kSinglePax)
+        if (iFieldSeq == 51)
+            field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 52)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 53)
+            field = new PropertiesField(this, ERROR_PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 54)
+            field = new FullCurrencyField(this, PP_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 55)
+            field = new CurrencyField(this, PP_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 56)
+            field = new ShortField(this, NIGHTS, 2, null, null);
+        if (iFieldSeq == 57)
+            field = new MealPlanField(this, MEAL_PLAN_1ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 58)
+            field = new ShortField(this, MEAL_PLAN_1_QTY, 2, null, null);
+        if (iFieldSeq == 59)
+            field = new MealDays(this, MEAL_PLAN_1_DAYS, 9, null, null);
+        if (iFieldSeq == 60)
+            field = new MealPlanField(this, MEAL_PLAN_2ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 61)
+            field = new ShortField(this, MEAL_PLAN_2_QTY, 2, null, null);
+        if (iFieldSeq == 62)
+            field = new MealDays(this, MEAL_PLAN_2_DAYS, 9, null, null);
+        if (iFieldSeq == 63)
+            field = new MealPlanField(this, MEAL_PLAN_3ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 64)
+            field = new ShortField(this, MEAL_PLAN_3_QTY, 2, null, null);
+        if (iFieldSeq == 65)
+            field = new MealDays(this, MEAL_PLAN_3_DAYS, 9, null, null);
+        if (iFieldSeq == 66)
+            field = new MealPlanField(this, MEAL_PLAN_4ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 67)
+            field = new ShortField(this, MEAL_PLAN_4_QTY, 2, null, null);
+        if (iFieldSeq == 68)
+            field = new MealDays(this, MEAL_PLAN_4_DAYS, 9, null, null);
+        if (iFieldSeq == 69)
         {
-            field = new ShortField(this, "SinglePax", 4, null, null);
+            field = new ShortField(this, SINGLE_PAX, 4, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDoublePax)
+        if (iFieldSeq == 70)
         {
-            field = new ShortField(this, "DoublePax", 2, null, null);
+            field = new ShortField(this, DOUBLE_PAX, 2, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kTriplePax)
+        if (iFieldSeq == 71)
         {
-            field = new ShortField(this, "TriplePax", 2, null, null);
+            field = new ShortField(this, TRIPLE_PAX, 2, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kQuadPax)
+        if (iFieldSeq == 72)
         {
-            field = new ShortField(this, "QuadPax", 2, null, null);
+            field = new ShortField(this, QUAD_PAX, 2, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kChildren)
-            field = new ShortField(this, "Children", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSingleCost)
-            field = new FullCurrencyField(this, "SingleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDoubleCost)
-            field = new FullCurrencyField(this, "DoubleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTripleCost)
-            field = new FullCurrencyField(this, "TripleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kQuadCost)
-            field = new FullCurrencyField(this, "QuadCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kChildrenCost)
-            field = new FullCurrencyField(this, "ChildrenCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRoomCost)
-            field = new FullCurrencyField(this, "RoomCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMealCost)
-            field = new FullCurrencyField(this, "MealCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRoomCostLocal)
+        if (iFieldSeq == 73)
+            field = new ShortField(this, CHILDREN, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 74)
+            field = new FullCurrencyField(this, SINGLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 75)
+            field = new FullCurrencyField(this, DOUBLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 76)
+            field = new FullCurrencyField(this, TRIPLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 77)
+            field = new FullCurrencyField(this, QUAD_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 78)
+            field = new FullCurrencyField(this, CHILDREN_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 79)
+            field = new FullCurrencyField(this, ROOM_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 80)
+            field = new FullCurrencyField(this, MEAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 81)
         {
-            field = new CurrencyField(this, "RoomCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, ROOM_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kMealCostLocal)
+        if (iFieldSeq == 82)
         {
-            field = new CurrencyField(this, "MealCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, MEAL_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kVariesCode)
-            field = new StringField(this, "VariesCode", 1, null, "");
-        if (iFieldSeq == kVariesQty)
-            field = new ShortField(this, "VariesQty", 2, null, null);
-        if (iFieldSeq == kVariesCost)
-            field = new FullCurrencyField(this, "VariesCost", 9, null, null);
-        if (iFieldSeq == kPMCCutoff)
-            field = new ShortField(this, "PMCCutoff", 3, null, null);
-        if (iFieldSeq == kPMCCost)
-            field = new FullCurrencyField(this, "PMCCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSICCost)
-            field = new FullCurrencyField(this, "SICCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingAirHeaderID)
-            field = new BookingAirHeaderField(this, "BookingAirHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGMTTime)
+        if (iFieldSeq == 83)
+            field = new StringField(this, VARIES_CODE, 1, null, "");
+        if (iFieldSeq == 84)
+            field = new ShortField(this, VARIES_QTY, 2, null, null);
+        if (iFieldSeq == 85)
+            field = new FullCurrencyField(this, VARIES_COST, 9, null, null);
+        if (iFieldSeq == 86)
+            field = new ShortField(this, PMC_CUTOFF, 3, null, null);
+        if (iFieldSeq == 87)
+            field = new FullCurrencyField(this, PMC_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 88)
+            field = new FullCurrencyField(this, SIC_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 89)
+            field = new BookingAirHeaderField(this, BOOKING_AIR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 90)
         {
-            field = new TimeField(this, "GMTTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TimeField(this, GMT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEtd)
+        if (iFieldSeq == 91)
         {
-            field = new TimeField(this, "Etd", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TimeField(this, ETD, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kXO)
+        if (iFieldSeq == 92)
         {
-            field = new StringField(this, "XO", 1, null, null);
+            field = new StringField(this, XO, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCityCode)
+        if (iFieldSeq == 93)
         {
-            field = new StringField(this, "CityCode", 3, null, null);
+            field = new StringField(this, CITY_CODE, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCityDesc)
+        if (iFieldSeq == 94)
         {
-            field = new StringField(this, "CityDesc", 17, null, null);
+            field = new StringField(this, CITY_DESC, 17, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAirlineID)
-            field = new AirlineField(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCarrier)
+        if (iFieldSeq == 95)
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 96)
         {
-            field = new StringField(this, "Carrier", 2, null, null);
+            field = new StringField(this, CARRIER, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFlightNo)
+        if (iFieldSeq == 97)
         {
-            field = new StringField(this, "FlightNo", 4, null, null);
+            field = new StringField(this, FLIGHT_NO, 4, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFlightClass)
+        if (iFieldSeq == 98)
         {
-            field = new StringField(this, "FlightClass", 1, null, null);
+            field = new StringField(this, FLIGHT_CLASS, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kToCityCode)
+        if (iFieldSeq == 99)
         {
-            field = new StringField(this, "ToCityCode", 3, null, null);
+            field = new StringField(this, TO_CITY_CODE, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kToCityDesc)
+        if (iFieldSeq == 100)
         {
-            field = new StringField(this, "ToCityDesc", 17, null, null);
+            field = new StringField(this, TO_CITY_DESC, 17, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kArriveTime)
+        if (iFieldSeq == 101)
         {
-            field = new TimeField(this, "ArriveTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TimeField(this, ARRIVE_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAddDays)
+        if (iFieldSeq == 102)
         {
-            field = new ShortField(this, "AddDays", 2, null, null);
+            field = new ShortField(this, ADD_DAYS, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kARCStatus)
-            field = new StringField(this, "ARCStatus", 2, null, "OK");
-        if (iFieldSeq == kFareBasis)
+        if (iFieldSeq == 103)
+            field = new StringField(this, ARC_STATUS, 2, null, "OK");
+        if (iFieldSeq == 104)
         {
-            field = new StringField(this, "FareBasis", 15, null, null);
+            field = new StringField(this, FARE_BASIS, 15, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kStartDate)
+        if (iFieldSeq == 105)
         {
-            field = new DateField(this, "StartDate", 5, null, null);
+            field = new DateField(this, START_DATE, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEndDate)
+        if (iFieldSeq == 106)
         {
-            field = new DateField(this, "EndDate", 5, null, null);
+            field = new DateField(this, END_DATE, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAllow)
+        if (iFieldSeq == 107)
         {
-            field = new StringField(this, "Allow", 3, null, null);
+            field = new StringField(this, ALLOW, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDetFare)
+        if (iFieldSeq == 108)
         {
-            field = new DoubleField(this, "DetFare", 10, null, null);
+            field = new DoubleField(this, DET_FARE, 10, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSegmentConfNo)
-            field = new StringField(this, "SegmentConfNo", 128, null, null);
-        if (iFieldSeq == kSegmentConfirmedBy)
-            field = new StringField(this, "SegmentConfirmedBy", 50, null, null);
-        if (iFieldSeq == kCoupon)
+        if (iFieldSeq == 109)
+            field = new StringField(this, SEGMENT_CONF_NO, 128, null, null);
+        if (iFieldSeq == 110)
+            field = new StringField(this, SEGMENT_CONFIRMED_BY, 50, null, null);
+        if (iFieldSeq == 111)
         {
-            field = new ShortField(this, "Coupon", 1, null, null);
+            field = new ShortField(this, COUPON, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSeat)
+        if (iFieldSeq == 112)
         {
-            field = new StringField(this, "Seat", 5, null, null);
+            field = new StringField(this, SEAT, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kGate)
+        if (iFieldSeq == 113)
         {
-            field = new StringField(this, "Gate", 5, null, null);
+            field = new StringField(this, GATE, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSeatPref)
+        if (iFieldSeq == 114)
         {
-            field = new StringField(this, "SeatPref", 1, null, null);
+            field = new StringField(this, SEAT_PREF, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSmoking)
+        if (iFieldSeq == 115)
         {
-            field = new BooleanField(this, "Smoking", 1, null, null);
+            field = new BooleanField(this, SMOKING, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kMeals)
+        if (iFieldSeq == 116)
         {
-            field = new StringField(this, "Meals", 2, null, null);
+            field = new StringField(this, MEALS, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDays)
+        if (iFieldSeq == 117)
         {
-            field = new FloatField(this, "Days", Constants.DEFAULT_FIELD_LENGTH, null, new Float(1));
+            field = new FloatField(this, DAYS, Constants.DEFAULT_FIELD_LENGTH, null, new Float(1));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kQuantity)
+        if (iFieldSeq == 118)
         {
-            field = new ShortField(this, "Quantity", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+            field = new ShortField(this, QUANTITY, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAskForAnswer)
-            field = new BooleanField(this, "AskForAnswer", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (iFieldSeq == kAlwaysResolve)
+        if (iFieldSeq == 119)
+            field = new BooleanField(this, ASK_FOR_ANSWER, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 120)
         {
-            field = new BooleanField(this, "AlwaysResolve", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+            field = new BooleanField(this, ALWAYS_RESOLVE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPricingTypeID)
-            field = new PricingTypeSelect(this, "PricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 121)
+            field = new PricingTypeSelect(this, PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -689,67 +554,63 @@ public class BookingDetail extends BookingSub
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDetailAccessKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingPaxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourHeaderDetailID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleStartDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_HEADER_DETAIL_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_START_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingPaxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDetailDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
-            keyArea.addKeyField(kProductTypeID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDetailDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kApTrxIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ApTrxID");
-            keyArea.addKeyField(kApTrxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDetailDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(AP_TRX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourIDKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourID");
-            keyArea.addKeyField(kTourID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductTypeID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDetailDateKey)
+        if (iKeyArea == 6)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailDate");
-            keyArea.addKeyField(kDetailDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductTypeID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 7)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDetailDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

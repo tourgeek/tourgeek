@@ -37,51 +37,27 @@ public class LookupScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String QUERY_KEY = "QueryKey";
-    public static final int kQueryKey = kScreenRecordLastField + 1;
     public static final String START_TARGET_FIELD = "StartTargetField";
-    public static final int kStartTargetField = kQueryKey + 1;
     public static final String START_BK_DAYS = "StartBkDays";
-    public static final int kStartBkDays = kStartTargetField + 1;
     public static final String CURRENT_AGENT = "CurrentAgent";
-    public static final int kCurrentAgent = kStartBkDays + 1;
     public static final String START_BK_DATE = "StartBkDate";
-    public static final int kStartBkDate = kCurrentAgent + 1;
     public static final String BK_DISPLAY_TYPE = "BkDisplayType";
-    public static final int kBkDisplayType = kStartBkDate + 1;
     public static final String TOUR_HDR_BROCHURE_ID = "TourHdrBrochureID";
-    public static final int kTourHdrBrochureID = kBkDisplayType + 1;
     public static final String TOUR_HDR_AIRLINE_CODE = "TourHdrAirlineCode";
-    public static final int kTourHdrAirlineCode = kTourHdrBrochureID + 1;
     public static final String TOUR_HDR_TOUR_TYPE = "TourHdrTourType";
-    public static final int kTourHdrTourType = kTourHdrAirlineCode + 1;
     public static final String TOUR_HDR_START_DATE = "TourHdrStartDate";
-    public static final int kTourHdrStartDate = kTourHdrTourType + 1;
     public static final String TOUR_HDR_END_DATE = "TourHdrEndDate";
-    public static final int kTourHdrEndDate = kTourHdrStartDate + 1;
     public static final String START_HDR_DAYS = "StartHdrDays";
-    public static final int kStartHdrDays = kTourHdrEndDate + 1;
     public static final String END_HDR_DAYS = "EndHdrDays";
-    public static final int kEndHdrDays = kStartHdrDays + 1;
     public static final String BOOKING_LIST_FORMAT = "BookingListFormat";
-    public static final int kBookingListFormat = kEndHdrDays + 1;
     public static final String BOOKING_STATUS_ID = "BookingStatusID";
-    public static final int kBookingStatusID = kBookingListFormat + 1;
     public static final String TOUR_HEADER_ID = "TourHeaderID";
-    public static final int kTourHeaderID = kBookingStatusID + 1;
     public static final String TOUR_STATUS_ID = "TourStatusID";
-    public static final int kTourStatusID = kTourHeaderID + 1;
     public static final String DEPARTURE_DATE = "DepartureDate";
-    public static final int kDepartureDate = kTourStatusID + 1;
     public static final String START_TARGET_DATE = "StartTargetDate";
-    public static final int kStartTargetDate = kDepartureDate + 1;
     public static final String END_TARGET_DATE = "EndTargetDate";
-    public static final int kEndTargetDate = kStartTargetDate + 1;
     public static final String PRODUCT_TYPE_ID = "ProductTypeID";
-    public static final int kProductTypeID = kEndTargetDate + 1;
     public static final String VENDOR_ID = "VendorID";
-    public static final int kVendorID = kProductTypeID + 1;
-    public static final int kLookupScreenRecordLastField = kVendorID;
-    public static final int kLookupScreenRecordFields = kVendorID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -105,63 +81,59 @@ public class LookupScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kLookupScreenRecordFile = null;  // Screen field
+    public static final String LOOKUP_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kQueryKey)
-            field = new ShortField(this, "QueryKey", 4, null, null);
-        if (iFieldSeq == kStartTargetField)
-            field = new StringField(this, "StartTargetField", 10, null, null);
-        if (iFieldSeq == kStartBkDays)
-            field = new DoubleField(this, "StartBkDays", 15, null, new Double(-30));
-        if (iFieldSeq == kCurrentAgent)
-            field = new UserFilter(this, "CurrentAgent", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartBkDate)
-            field = new DateField(this, "StartBkDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBkDisplayType)
-            field = new DisplayTypeField(this, "BkDisplayType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHdrBrochureID)
-            field = new BrochureField(this, "TourHdrBrochureID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHdrAirlineCode)
-            field = new AirlineField(this, "TourHdrAirlineCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHdrTourType)
-            field = new TourTypeSelect(this, "TourHdrTourType", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHdrStartDate)
-            field = new DateField(this, "TourHdrStartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHdrEndDate)
-            field = new DateField(this, "TourHdrEndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartHdrDays)
-            field = new DoubleField(this, "StartHdrDays", 15, null, null);
-        if (iFieldSeq == kEndHdrDays)
-            field = new DoubleField(this, "EndHdrDays", 15, null, null);
-        if (iFieldSeq == kBookingListFormat)
-            field = new LookupScreenRecord_BookingListFormat(this, "BookingListFormat", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingStatusID)
-            field = new BookingStatusSelect(this, "BookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderID)
-            field = new TourHeaderSelect(this, "TourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourStatusID)
-            field = new TourStatusSelect(this, "TourStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepartureDate)
-            field = new DateField(this, "DepartureDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartTargetDate)
-            field = new DateField(this, "StartTargetDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndTargetDate)
-            field = new DateField(this, "EndTargetDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductTypeID)
-            field = new ProductTypeSelect(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorID)
-            field = new VendorSelect(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new ShortField(this, QUERY_KEY, 4, null, null);
+        if (iFieldSeq == 1)
+            field = new StringField(this, START_TARGET_FIELD, 10, null, null);
+        if (iFieldSeq == 2)
+            field = new DoubleField(this, START_BK_DAYS, 15, null, new Double(-30));
+        if (iFieldSeq == 3)
+            field = new UserFilter(this, CURRENT_AGENT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new DateField(this, START_BK_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new DisplayTypeField(this, BK_DISPLAY_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new BrochureField(this, TOUR_HDR_BROCHURE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new AirlineField(this, TOUR_HDR_AIRLINE_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new TourTypeSelect(this, TOUR_HDR_TOUR_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new DateField(this, TOUR_HDR_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new DateField(this, TOUR_HDR_END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new DoubleField(this, START_HDR_DAYS, 15, null, null);
+        if (iFieldSeq == 12)
+            field = new DoubleField(this, END_HDR_DAYS, 15, null, null);
+        if (iFieldSeq == 13)
+            field = new LookupScreenRecord_BookingListFormat(this, BOOKING_LIST_FORMAT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new BookingStatusSelect(this, BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new TourHeaderSelect(this, TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new TourStatusSelect(this, TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new DateField(this, DEPARTURE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new DateField(this, START_TARGET_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new DateField(this, END_TARGET_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new ProductTypeSelect(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new VendorSelect(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kLookupScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

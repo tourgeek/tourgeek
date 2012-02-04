@@ -9,6 +9,9 @@ import org.jbundle.model.db.*;
 public interface ProductSearchDetailModel extends Rec
 {
 
+    //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String PRODUCT_ID = "ProductID";
     public static final String PRODUCT_TYPE_ID = "ProductTypeID";
     public static final String PRODUCT_SEARCH_TYPE_ID = "ProductSearchTypeID";

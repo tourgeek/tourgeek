@@ -116,7 +116,7 @@ public class BundleDetailGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BundleDetail.kBundleDetailFile).getField(BundleDetail.kBrochureID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BundleDetail.BUNDLE_DETAIL_FILE).getField(BundleDetail.BROCHURE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

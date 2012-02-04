@@ -37,36 +37,6 @@ public class ApControl extends ControlRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kAutoApCode = kControlRecordLastField + 1;
-    public static final int kApBankAcctID = kAutoApCode + 1;
-    public static final int kApAccountID = kApBankAcctID + 1;
-    public static final int kBrokerVendorID = kApAccountID + 1;
-    public static final int kCountryID = kBrokerVendorID + 1;
-    public static final int kCurrencysID = kCountryID + 1;
-    public static final int kMessageTransportID = kCurrencysID + 1;
-    public static final int kVendorStatusID = kMessageTransportID + 1;
-    public static final int kPaymentCycleID = kVendorStatusID + 1;
-    public static final int kPaymentCodeID = kPaymentCycleID + 1;
-    public static final int kPrepayTypeID = kPaymentCodeID + 1;
-    public static final int kNonTourApAccountID = kPrepayTypeID + 1;
-    public static final int kCostAccountID = kNonTourApAccountID + 1;
-    public static final int kCurrOUAccountID = kCostAccountID + 1;
-    public static final int kPrepayAccountID = kCurrOUAccountID + 1;
-    public static final int kNonTourPrepayAccountID = kPrepayAccountID + 1;
-    public static final int kAirAccountID = kNonTourPrepayAccountID + 1;
-    public static final int kPPTicAccountID = kAirAccountID + 1;
-    public static final int kArcSummaryAccountID = kPPTicAccountID + 1;
-    public static final int kOverrideRecAccountID = kArcSummaryAccountID + 1;
-    public static final int kOverrideSummAccountID = kOverrideRecAccountID + 1;
-    public static final int kOverrideGainLossAccountID = kOverrideSummAccountID + 1;
-    public static final int kTen99Template = kOverrideGainLossAccountID + 1;
-    public static final int kApControlLastField = kTen99Template;
-    public static final int kApControlFields = kTen99Template - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kApControlLastKey = kIDKey;
-    public static final int kApControlKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -89,14 +59,12 @@ public class ApControl extends ControlRecord
     {
         super.init(screen);
     }
-
-    public static final String kApControlFile = "ApControl";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kApControlFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AP_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -118,63 +86,69 @@ public class ApControl extends ControlRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kAutoApCode)
-            field = new BooleanField(this, "AutoApCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kApBankAcctID)
-            field = new BankAcctField(this, "ApBankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kApAccountID)
-            field = new AccountField(this, "ApAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBrokerVendorID)
-            field = new VendorField(this, "BrokerVendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrencysID)
-            field = new CurrencysField(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMessageTransportID)
-            field = new MessageTransportField(this, "MessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorStatusID)
-            field = new VendorStatusField(this, "VendorStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPaymentCycleID)
-            field = new PaymentCycleField(this, "PaymentCycleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPaymentCodeID)
-            field = new PaymentCodeField(this, "PaymentCodeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPrepayTypeID)
-            field = new PrepayTypeField(this, "PrepayTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNonTourApAccountID)
-            field = new AccountField(this, "NonTourApAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCostAccountID)
-            field = new AccountField(this, "CostAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrOUAccountID)
-            field = new AccountField(this, "CurrOUAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPrepayAccountID)
-            field = new AccountField(this, "PrepayAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNonTourPrepayAccountID)
-            field = new AccountField(this, "NonTourPrepayAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirAccountID)
-            field = new AccountField(this, "AirAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPPTicAccountID)
-            field = new AccountField(this, "PPTicAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kArcSummaryAccountID)
-            field = new AccountField(this, "ArcSummaryAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOverrideRecAccountID)
-            field = new AccountField(this, "OverrideRecAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOverrideSummAccountID)
-            field = new AccountField(this, "OverrideSummAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOverrideGainLossAccountID)
-            field = new AccountField(this, "OverrideGainLossAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTen99Template)
-            field = new StringField(this, "Ten99Template", Constants.DEFAULT_FIELD_LENGTH, null, "ten99");
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new BooleanField(this, AUTO_AP_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new BankAcctField(this, AP_BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, AP_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new VendorField(this, BROKER_VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CurrencysField(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new MessageTransportField(this, MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new VendorStatusField(this, VENDOR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new PaymentCycleField(this, PAYMENT_CYCLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new PaymentCodeField(this, PAYMENT_CODE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new PrepayTypeField(this, PREPAY_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new AccountField(this, NON_TOUR_AP_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new AccountField(this, COST_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new AccountField(this, CURR_OU_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new AccountField(this, PREPAY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new AccountField(this, NON_TOUR_PREPAY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new AccountField(this, AIR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new AccountField(this, PP_TIC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new AccountField(this, ARC_SUMMARY_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
+            field = new AccountField(this, OVERRIDE_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 23)
+            field = new AccountField(this, OVERRIDE_SUMM_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 24)
+            field = new AccountField(this, OVERRIDE_GAIN_LOSS_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new StringField(this, TEN_99_TEMPLATE, Constants.DEFAULT_FIELD_LENGTH, null, "ten99");
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kApControlLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -183,17 +157,13 @@ public class ApControl extends ControlRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kApControlLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kApControlLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

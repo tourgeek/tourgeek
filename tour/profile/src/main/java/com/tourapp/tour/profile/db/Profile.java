@@ -41,65 +41,6 @@ public class Profile extends Company
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProfileCode = kCode;
-    //public static final int kDateEntered = kDateEntered;
-    //public static final int kChangedID = kChangedID;
-    //public static final int kDateChanged = kDateChanged;
-    public static final int kGenericName = kName;
-    //public static final int kAddressLine1 = kAddressLine1;
-    //public static final int kAddressLine2 = kAddressLine2;
-    //public static final int kCityOrTown = kCityOrTown;
-    //public static final int kStateOrRegion = kStateOrRegion;
-    //public static final int kPostalCode = kPostalCode;
-    //public static final int kCountry = kCountry;
-    //public static final int kTel = kTel;
-    //public static final int kFax = kFax;
-    //public static final int kEmail = kEmail;
-    //public static final int kWeb = kWeb;
-    public static final int kNameOrdered = kContact;
-    //public static final int kComments = kComments;
-    //public static final int kPassword = kPassword;
-    //public static final int kNameSort = kNameSort;
-    //public static final int kPostalCodeSort = kPostalCodeSort;
-    public static final int kProfileTypeID = kCompanyLastField + 1;
-    public static final int kEnteredID = kProfileTypeID + 1;
-    public static final int kAffiliationID = kEnteredID + 1;
-    public static final int kCommissionPlanCode = kAffiliationID + 1;
-    public static final int kAltPhone = kCommissionPlanCode + 1;
-    public static final int kNamePrefix = kAltPhone + 1;
-    public static final int kNameFirst = kNamePrefix + 1;
-    public static final int kNameMiddle = kNameFirst + 1;
-    public static final int kNameSur = kNameMiddle + 1;
-    public static final int kNameSuffix = kNameSur + 1;
-    public static final int kNameTitle = kNameSuffix + 1;
-    public static final int kDateOfBirth = kNameTitle + 1;
-    public static final int kGender = kDateOfBirth + 1;
-    public static final int kExpirationDate = kGender + 1;
-    public static final int kCorporatePosition = kExpirationDate + 1;
-    public static final int kPIN = kCorporatePosition + 1;
-    public static final int kCreditLimit = kPIN + 1;
-    public static final int kCountryID = kCreditLimit + 1;
-    public static final int kPrimaryLanguageID = kCountryID + 1;
-    public static final int kCurrencysID = kPrimaryLanguageID + 1;
-    public static final int kMessageTransportID = kCurrencysID + 1;
-    public static final int kProperties = kMessageTransportID + 1;
-    public static final int kProfileStatusID = kProperties + 1;
-    public static final int kProfileClassID = kProfileStatusID + 1;
-    public static final int kSmoker = kProfileClassID + 1;
-    public static final int kSeatChoiceID = kSmoker + 1;
-    public static final int kMainProfileID = kSeatChoiceID + 1;
-    public static final int kProfileLastField = kMainProfileID;
-    public static final int kProfileFields = kMainProfileID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProfileCodeKey = kIDKey + 1;
-    public static final int kNameSortKey = kProfileCodeKey + 1;
-    public static final int kMainProfileIDKey = kNameSortKey + 1;
-    public static final int kPostalCodeSortKey = kMainProfileIDKey + 1;
-    public static final int kNameSurKey = kPostalCodeSortKey + 1;
-    public static final int kProfileLastKey = kNameSurKey;
-    public static final int kProfileKeys = kNameSurKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected ProfileControl m_recProfileControl = null;
     public static final int MESSAGE_LOG_MODE = ScreenConstants.LAST_MODE * 4;
     /**
@@ -125,14 +66,12 @@ public class Profile extends Company
         m_recProfileControl = null;
         super.init(screen);
     }
-
-    public static final String kProfileFile = "Profile";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProfileFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PROFILE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -177,117 +116,125 @@ public class Profile extends Company
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", 8, null, null);
+        //  field = new CounterField(this, ID, 8, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProfileTypeID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, PROFILE_CODE, 20, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, GENERIC_NAME, 65, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new StringField(this, STATE_OR_REGION, 15, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, POSTAL_CODE, 10, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new StringField(this, COUNTRY, 15, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new PhoneField(this, TEL, 24, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new FaxField(this, FAX, 24, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new EMailField(this, EMAIL, 40, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new URLField(this, WEB, 60, null, null);
+        if (iFieldSeq == 15)
+            field = new Profile_DateEntered(this, DATE_ENTERED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new DateField(this, DATE_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new ReferenceField(this, CHANGED_ID, 6, null, null);
+        //if (iFieldSeq == 18)
+        //  field = new MemoField(this, COMMENTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 19)
+        //  field = new UserField(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 20)
+        //  field = new StringField(this, PASSWORD, 16, null, null);
+        if (iFieldSeq == 21)
+            field = new StringField(this, NAME_SORT, 6, null, null);
+        //if (iFieldSeq == 22)
+        //  field = new StringField(this, POSTAL_CODE_SORT, 5, null, null);
+        if (iFieldSeq == 23)
+            field = new NameOrderedField(this, NAME_ORDERED, 65, null, null);
+        if (iFieldSeq == 24)
         {
-            field = new ProfileTypeFilter(this, "ProfileTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProfileTypeFilter(this, PROFILE_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kProfileCode)
-            field = new StringField(this, "ProfileCode", 20, null, null);
-        if (iFieldSeq == kEnteredID)
-            field = new Profile_EnteredID(this, "EnteredID", 6, null, null);
-        if (iFieldSeq == kDateEntered)
-            field = new Profile_DateEntered(this, "DateEntered", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kChangedID)
-            field = new ReferenceField(this, "ChangedID", 6, null, null);
-        if (iFieldSeq == kDateChanged)
-            field = new DateField(this, "DateChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAffiliationID)
-            field = new AffiliationField(this, "AffiliationID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCommissionPlanCode)
-            field = new StringField(this, "CommissionPlanCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGenericName)
-            field = new StringField(this, "GenericName", 65, null, null);
-        //if (iFieldSeq == kAddressLine1)
-        //  field = new StringField(this, "AddressLine1", 40, null, null);
-        //if (iFieldSeq == kAddressLine2)
-        //  field = new StringField(this, "AddressLine2", 40, null, null);
-        //if (iFieldSeq == kCityOrTown)
-        //  field = new StringField(this, "CityOrTown", 15, null, null);
-        //if (iFieldSeq == kStateOrRegion)
-        //  field = new StringField(this, "StateOrRegion", 15, null, null);
-        //if (iFieldSeq == kPostalCode)
-        //  field = new StringField(this, "PostalCode", 10, null, null);
-        //if (iFieldSeq == kCountry)
-        //  field = new StringField(this, "Country", 15, null, null);
-        //if (iFieldSeq == kTel)
-        //  field = new PhoneField(this, "Tel", 24, null, null);
-        if (iFieldSeq == kAltPhone)
+        if (iFieldSeq == 25)
+            field = new Profile_EnteredID(this, ENTERED_ID, 6, null, null);
+        if (iFieldSeq == 26)
+            field = new AffiliationField(this, AFFILIATION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 27)
+            field = new StringField(this, COMMISSION_PLAN_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
         {
-            field = new PhoneField(this, "AltPhone", 24, null, null);
+            field = new PhoneField(this, ALT_PHONE, 24, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kFax)
-        //  field = new FaxField(this, "Fax", 24, null, null);
-        //if (iFieldSeq == kEmail)
-        //  field = new EMailField(this, "Email", 40, null, null);
-        //if (iFieldSeq == kWeb)
-        //  field = new URLField(this, "Web", 60, null, null);
-        if (iFieldSeq == kNamePrefix)
-            field = new TitleField(this, "NamePrefix", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNameFirst)
-            field = new StringField(this, "NameFirst", 65, null, null);
-        if (iFieldSeq == kNameMiddle)
-            field = new StringField(this, "NameMiddle", 65, null, null);
-        if (iFieldSeq == kNameSur)
-            field = new StringField(this, "NameSur", 65, null, null);
-        if (iFieldSeq == kNameSuffix)
-            field = new StringField(this, "NameSuffix", 10, null, null);
-        if (iFieldSeq == kNameTitle)
-            field = new StringField(this, "NameTitle", 10, null, null);
-        if (iFieldSeq == kNameOrdered)
-            field = new NameOrderedField(this, "NameOrdered", 65, null, null);
-        if (iFieldSeq == kDateOfBirth)
-            field = new DateField(this, "DateOfBirth", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGender)
-            field = new GenderField(this, "Gender", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kExpirationDate)
-            field = new DateTimeField(this, "ExpirationDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCorporatePosition)
-            field = new StringField(this, "CorporatePosition", 60, null, null);
-        if (iFieldSeq == kPIN)
-            field = new StringField(this, "PIN", 10, null, null);
-        if (iFieldSeq == kCreditLimit)
-            field = new CurrencyField(this, "CreditLimit", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPrimaryLanguageID)
-            field = new LanguageField(this, "PrimaryLanguageID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrencysID)
-            field = new CurrencysField(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMessageTransportID)
-            field = new MessageTransportSelect(this, "MessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kComments)
-        //  field = new MemoField(this, "Comments", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kPassword)
-        //  field = new StringField(this, "Password", 16, null, null);
-        if (iFieldSeq == kNameSort)
-            field = new StringField(this, "NameSort", 6, null, null);
-        if (iFieldSeq == kProfileStatusID)
-            field = new ProfileStatusField(this, "ProfileStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kPostalCodeSort)
-        //  field = new StringField(this, "PostalCodeSort", 5, null, null);
-        if (iFieldSeq == kProfileClassID)
-            field = new ProfileClassField(this, "ProfileClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSmoker)
-            field = new BooleanField(this, "Smoker", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSeatChoiceID)
-            field = new SeatChoiceField(this, "SeatChoiceID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMainProfileID)
-            field = new ProfileField(this, "MainProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new TitleField(this, NAME_PREFIX, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new StringField(this, NAME_FIRST, 65, null, null);
+        if (iFieldSeq == 31)
+            field = new StringField(this, NAME_MIDDLE, 65, null, null);
+        if (iFieldSeq == 32)
+            field = new StringField(this, NAME_SUR, 65, null, null);
+        if (iFieldSeq == 33)
+            field = new StringField(this, NAME_SUFFIX, 10, null, null);
+        if (iFieldSeq == 34)
+            field = new StringField(this, NAME_TITLE, 10, null, null);
+        if (iFieldSeq == 35)
+            field = new DateField(this, DATE_OF_BIRTH, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 36)
+            field = new GenderField(this, GENDER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 37)
+            field = new DateTimeField(this, EXPIRATION_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 38)
+            field = new StringField(this, CORPORATE_POSITION, 60, null, null);
+        if (iFieldSeq == 39)
+            field = new StringField(this, PIN, 10, null, null);
+        if (iFieldSeq == 40)
+            field = new CurrencyField(this, CREDIT_LIMIT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 41)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 42)
+            field = new LanguageField(this, PRIMARY_LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 43)
+            field = new CurrencysField(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 44)
+            field = new MessageTransportSelect(this, MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 45)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 46)
+            field = new ProfileStatusField(this, PROFILE_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 47)
+            field = new ProfileClassField(this, PROFILE_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 48)
+            field = new BooleanField(this, SMOKER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 49)
+            field = new SeatChoiceField(this, SEAT_CHOICE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 50)
+            field = new ProfileField(this, MAIN_PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProfileLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -296,43 +243,39 @@ public class Profile extends Company
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "ProfileCode");
-            keyArea.addKeyField(kProfileCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSort");
-            keyArea.addKeyField(kNameSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kMainProfileIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "MainProfileID");
-            keyArea.addKeyField(kMainProfileID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MAIN_PROFILE_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kPostalCodeSortKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PostalCodeSort");
-            keyArea.addKeyField(kPostalCodeSort, DBConstants.ASCENDING);
-            keyArea.addKeyField(kNameSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(POSTAL_CODE_SORT, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNameSurKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSur");
-            keyArea.addKeyField(kNameSur, DBConstants.ASCENDING);
+            keyArea.addKeyField(NAME_SUR, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProfileLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProfileLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -351,7 +294,7 @@ public class Profile extends Company
     public void addMasterListeners()
     {
         super.addMasterListeners();
-        this.addListener(new SetUserIDHandler(kEnteredID, true));
+        this.addListener(new SetUserIDHandler(Profile.ENTERED_ID, true));
         
         this.getField(Company.CONTACT).removeListener(this.getField(Company.CONTACT).getListener(CopyLastHandler.class.getName()), true);
         this.getField(Company.NAME).removeListener(this.getField(Company.NAME).getListener(CopyFieldHandler.class.getName()), true);

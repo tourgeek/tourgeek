@@ -34,64 +34,41 @@ public class FinStmtReportScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String FIN_STMT_HEADER_ID = "FinStmtHeaderID";
-    public static final int kFinStmtHeaderID = kReportScreenRecordLastField + 1;
     public static final String FIN_STMT_ID = "FinStmtID";
-    public static final int kFinStmtID = kFinStmtHeaderID + 1;
     public static final String BUDGET_COMP = "BudgetComp";
-    public static final int kBudgetComp = kFinStmtID + 1;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kBudgetComp + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String START_ENTRY = "StartEntry";
-    public static final int kStartEntry = kEndDate + 1;
     public static final String END_ENTRY = "EndEntry";
-    public static final int kEndEntry = kStartEntry + 1;
     public static final String PROFIT_CENTER_ID = "ProfitCenterID";
-    public static final int kProfitCenterID = kEndEntry + 1;
     public static final String EXCLUDE_CLOSING = "ExcludeClosing";
-    public static final int kExcludeClosing = kProfitCenterID + 1;
     public static final String TEMPLATE = "template";
-    public static final int ktemplate = kExcludeClosing + 1;
     public static final String START_BALANCE = "StartBalance";
-    public static final int kStartBalance = ktemplate + 1;
     public static final String BALANCE_CHANGE = "BalanceChange";
-    public static final int kBalanceChange = kStartBalance + 1;
     public static final String END_BALANCE = "EndBalance";
-    public static final int kEndBalance = kBalanceChange + 1;
     public static final String TARGET_AMOUNT = "TargetAmount";
-    public static final int kTargetAmount = kEndBalance + 1;
     public static final String RATIO_AMOUNT = "RatioAmount";
-    public static final int kRatioAmount = kTargetAmount + 1;
     public static final String RATIO_PERCENT = "RatioPercent";
-    public static final int kRatioPercent = kRatioAmount + 1;
     public static final String IS_AMOUNT = "ISAmount";
-    public static final int kISAmount = kRatioPercent + 1;
     public static final String LAST_STATEMENT = "LastStatement";
-    public static final int kLastStatement = kISAmount + 1;
     public static final String TOTAL_0 = "Total0";
-    public static final int kTotal0 = kLastStatement + 1;
     public static final String TOTAL_1 = "Total1";
-    public static final int kTotal1 = kTotal0 + 1;
     public static final String TOTAL_2 = "Total2";
-    public static final int kTotal2 = kTotal1 + 1;
     public static final String TOTAL_3 = "Total3";
-    public static final int kTotal3 = kTotal2 + 1;
     public static final String TOTAL_4 = "Total4";
-    public static final int kTotal4 = kTotal3 + 1;
     public static final String TOTAL_5 = "Total5";
-    public static final int kTotal5 = kTotal4 + 1;
     public static final String TOTAL_6 = "Total6";
-    public static final int kTotal6 = kTotal5 + 1;
     public static final String TOTAL_7 = "Total7";
-    public static final int kTotal7 = kTotal6 + 1;
     public static final String TOTAL_8 = "Total8";
-    public static final int kTotal8 = kTotal7 + 1;
     public static final String TOTAL_9 = "Total9";
-    public static final int kTotal9 = kTotal8 + 1;
-    public static final int kFinStmtReportScreenRecordLastField = kTotal9;
-    public static final int kFinStmtReportScreenRecordFields = kTotal9 - DBConstants.MAIN_FIELD + 1;
     protected Period m_recPeriod = null;
     /**
      * Default constructor.
@@ -117,75 +94,85 @@ public class FinStmtReportScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kFinStmtReportScreenRecordFile = null; // Screen field
+    public static final String FIN_STMT_REPORT_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kFinStmtHeaderID)
-            field = new FinStmtHeaderField(this, "FinStmtHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinStmtID)
-            field = new FinStmtField(this, "FinStmtID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBudgetComp)
-            field = new BudgetCompField(this, "BudgetComp", 1, null, null);
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartEntry)
-            field = new DateField(this, "StartEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndEntry)
-            field = new DateField(this, "EndEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProfitCenterID)
-            field = new ProfitCenterField(this, "ProfitCenterID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kExcludeClosing)
-            field = new BooleanField(this, "ExcludeClosing", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == ktemplate)
-            field = new StringField(this, "template", 40, null, "finstmt");
-        if (iFieldSeq == kStartBalance)
-            field = new CurrencyField(this, "StartBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBalanceChange)
-            field = new CurrencyField(this, "BalanceChange", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndBalance)
-            field = new CurrencyField(this, "EndBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTargetAmount)
-            field = new CurrencyField(this, "TargetAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRatioAmount)
-            field = new CurrencyField(this, "RatioAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRatioPercent)
-            field = new FloatField(this, "RatioPercent", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kISAmount)
-            field = new CurrencyField(this, "ISAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kLastStatement)
-            field = new ReferenceField(this, "LastStatement", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal0)
-            field = new CurrencyField(this, "Total0", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal1)
-            field = new CurrencyField(this, "Total1", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal2)
-            field = new CurrencyField(this, "Total2", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal3)
-            field = new CurrencyField(this, "Total3", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal4)
-            field = new CurrencyField(this, "Total4", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal5)
-            field = new CurrencyField(this, "Total5", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal6)
-            field = new CurrencyField(this, "Total6", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal7)
-            field = new CurrencyField(this, "Total7", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal8)
-            field = new CurrencyField(this, "Total8", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal9)
-            field = new CurrencyField(this, "Total9", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new FinStmtReportScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new FinStmtReportScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new FinStmtReportScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new FinStmtHeaderField(this, FIN_STMT_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new FinStmtField(this, FIN_STMT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BudgetCompField(this, BUDGET_COMP, 1, null, null);
+        if (iFieldSeq == 10)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new DateField(this, START_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new DateField(this, END_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ProfitCenterField(this, PROFIT_CENTER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new BooleanField(this, EXCLUDE_CLOSING, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 16)
+            field = new StringField(this, TEMPLATE, 40, null, "finstmt");
+        if (iFieldSeq == 17)
+            field = new CurrencyField(this, START_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new CurrencyField(this, BALANCE_CHANGE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new CurrencyField(this, END_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new CurrencyField(this, TARGET_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new CurrencyField(this, RATIO_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
+            field = new FloatField(this, RATIO_PERCENT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 23)
+            field = new CurrencyField(this, IS_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 24)
+            field = new ReferenceField(this, LAST_STATEMENT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new CurrencyField(this, TOTAL_0, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 26)
+            field = new CurrencyField(this, TOTAL_1, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 27)
+            field = new CurrencyField(this, TOTAL_2, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
+            field = new CurrencyField(this, TOTAL_3, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new CurrencyField(this, TOTAL_4, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new CurrencyField(this, TOTAL_5, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new CurrencyField(this, TOTAL_6, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 32)
+            field = new CurrencyField(this, TOTAL_7, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 33)
+            field = new CurrencyField(this, TOTAL_8, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 34)
+            field = new CurrencyField(this, TOTAL_9, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kFinStmtReportScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

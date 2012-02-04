@@ -24,7 +24,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.cruise.screen.*;
-import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.product.cruise.db.*;
 
 /**
@@ -35,22 +34,6 @@ public class CruisePricing extends ProductPricing
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kProductID = kProductID;
-    //public static final int kPaxCategoryID = kPaxCategoryID;
-    //public static final int kStartDate = kStartDate;
-    //public static final int kEndDate = kEndDate;
-    //public static final int kRateID = kRateID;
-    //public static final int kClassID = kClassID;
-    //public static final int kCost = kCost;
-    //public static final int kProductTermsID = kProductTermsID;
-    public static final int kCruisePricingLastField = kProductPricingLastField;
-    public static final int kCruisePricingFields = kProductPricingLastField - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProductIDKey = kIDKey + 1;
-    public static final int kCruisePricingLastKey = kProductIDKey;
-    public static final int kCruisePricingKeys = kProductIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -73,14 +56,12 @@ public class CruisePricing extends ProductPricing
     {
         super.init(screen);
     }
-
-    public static final String kCruisePricingFile = "CruisePricing";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCruisePricingFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CRUISE_PRICING_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -123,54 +104,74 @@ public class CruisePricing extends ProductPricing
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProductID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new CruiseField(this, "ProductID", 8, null, null);
+            field = new CruiseField(this, PRODUCT_ID, 8, null, null);
             field.setNullable(false);
         }
-        //if (iFieldSeq == kPaxCategoryID)
+        //if (iFieldSeq == 4)
         //{
-        //  field = new PaxBaseCategoryField(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.ALL_ID));
+        //  field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.ALL_ID));
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kStartDate)
-        //{
-        //  field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //  field.addListener(new InitOnceFieldHandler(null));
-        //}
-        //if (iFieldSeq == kEndDate)
-        //{
-        //  field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //  field.addListener(new InitOnceFieldHandler(null));
-        //}
-        if (iFieldSeq == kRateID)
+        if (iFieldSeq == 5)
         {
-            field = new CruiseRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field = new CruiseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kClassID)
+        if (iFieldSeq == 6)
         {
-            field = new CruiseClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field = new CruiseClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kCost)
-        //  field = new FullCurrencyField(this, "Cost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kProductTermsID)
+        //if (iFieldSeq == 7)
         //{
-        //  field = new ProductTermsField(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
+        //if (iFieldSeq == 8)
+        //{
+        //  field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 9)
+        //  field = new FullCurrencyField(this, COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 10)
+        //{
+        //  field = new ProductTermsField(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 11)
+        //  field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 12)
+        //{
+        //  field = new BooleanField(this, COMMISSIONABLE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 13)
+        //{
+        //  field = new PercentField(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 14)
+        //  field = new PayAtField(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCruisePricingLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -179,25 +180,21 @@ public class CruisePricing extends ProductPricing
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kPaxCategoryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kClassID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kEndDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAX_CATEGORY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CLASS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(END_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCruisePricingLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCruisePricingLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

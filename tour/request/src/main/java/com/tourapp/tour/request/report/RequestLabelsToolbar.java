@@ -69,7 +69,7 @@ public class RequestLabelsToolbar extends ReportToolbar
         super.setupSFields();
         //if (this.isPrintReport())
         //  return;   // Don't display params if entered
-        this.getRecord(RequestLabelsScreenRecord.kRequestLabelsScreenRecordFile).getField(RequestLabelsScreenRecord.kSendViaID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestLabelsScreenRecord.REQUEST_LABELS_SCREEN_RECORD_FILE).getField(RequestLabelsScreenRecord.SEND_VIA_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

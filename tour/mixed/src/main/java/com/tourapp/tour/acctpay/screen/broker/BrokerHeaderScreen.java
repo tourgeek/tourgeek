@@ -64,7 +64,7 @@ public class BrokerHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BrokerScreenRecord.kBrokerScreenRecordFile).getField(BrokerScreenRecord.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BrokerScreenRecord.BROKER_SCREEN_RECORD_FILE).getField(BrokerScreenRecord.VENDOR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add all the screen listeners.

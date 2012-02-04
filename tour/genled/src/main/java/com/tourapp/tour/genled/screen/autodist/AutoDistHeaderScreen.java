@@ -61,7 +61,7 @@ public class AutoDistHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(AutoDist.kAutoDistFile).getField(AutoDist.kAutoDistDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(AutoDist.AUTO_DIST_FILE).getField(AutoDist.AUTO_DIST_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

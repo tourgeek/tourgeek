@@ -86,9 +86,9 @@ public class TourHeaderHotelGridScreen extends TourDetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourHeaderHotel.kTourHeaderHotelFile).getField(TourHeaderHotel.kDay).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderHotel.kTourHeaderHotelFile).getField(TourHeaderHotel.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderHotel.kTourHeaderHotelFile).getField(TourHeaderHotel.kNights).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderHotel.TOUR_HEADER_HOTEL_FILE).getField(TourHeaderHotel.DAY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderHotel.TOUR_HEADER_HOTEL_FILE).getField(TourHeaderHotel.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderHotel.TOUR_HEADER_HOTEL_FILE).getField(TourHeaderHotel.NIGHTS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

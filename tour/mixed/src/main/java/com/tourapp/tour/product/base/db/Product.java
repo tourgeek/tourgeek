@@ -61,47 +61,6 @@ public class Product extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kCode = kDescription + 1;
-    public static final int kVendorID = kCode + 1;
-    public static final int kOperatorsCode = kVendorID + 1;
-    public static final int kProductChainID = kOperatorsCode + 1;
-    public static final int kCityID = kProductChainID + 1;
-    public static final int kEtd = kCityID + 1;
-    public static final int kAckDays = kEtd + 1;
-    public static final int kComments = kAckDays + 1;
-    public static final int kProperties = kComments + 1;
-    public static final int kItineraryDesc = kProperties + 1;
-    public static final int kDescSort = kItineraryDesc + 1;
-    public static final int kProductType = kDescSort + 1;
-    public static final int kProductCost = kProductType + 1;
-    public static final int kProductCostLocal = kProductCost + 1;
-    public static final int kProductMessageTransportID = kProductCostLocal + 1;
-    public static final int kDisplayInventoryStatusID = kProductMessageTransportID + 1;
-    public static final int kInventoryAvailability = kDisplayInventoryStatusID + 1;
-    public static final int kCurrencyCode = kInventoryAvailability + 1;
-    public static final int kCurrencyCodeLocal = kCurrencyCode + 1;
-    public static final int kVendorName = kCurrencyCodeLocal + 1;
-    public static final int kDisplayCostStatusID = kVendorName + 1;
-    public static final int kPPCost = kDisplayCostStatusID + 1;
-    public static final int kPPCostLocal = kPPCost + 1;
-    public static final int kRateID = kPPCostLocal + 1;
-    public static final int kClassID = kRateID + 1;
-    public static final int kProductPriceLocal = kClassID + 1;
-    public static final int kPPPriceLocal = kProductPriceLocal + 1;
-    public static final int kProductLastField = kPPPriceLocal;
-    public static final int kProductFields = kPPPriceLocal - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kDescSortKey = kCodeKey + 1;
-    public static final int kVendorIDKey = kDescSortKey + 1;
-    public static final int kCityIDKey = kVendorIDKey + 1;
-    public static final int kOperatorsCodeKey = kCityIDKey + 1;
-    public static final int kProductChainIDKey = kOperatorsCodeKey + 1;
-    public static final int kProductLastKey = kProductChainIDKey;
-    public static final int kProductKeys = kProductChainIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final String ROOM_TYPE_PARAM = SearchConstants.ROOM_TYPE;
     public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int INVENTORY_GRID_SCREEN = ScreenConstants.LAST_MODE * 2;
@@ -140,14 +99,12 @@ public class Product extends VirtualRecord
         m_recMessageProcessInfo = null;
         super.init(screen);
     }
-
-    public static final String kProductFile = "Product";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProductFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PRODUCT_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -192,121 +149,127 @@ public class Product extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kDescription)
-            field = new ProductDesc(this, "Description", 50, null, null);
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 10, null, null);
-        if (iFieldSeq == kVendorID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProductDesc(this, DESCRIPTION, 50, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CODE, 10, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOperatorsCode)
-            field = new StringField(this, "OperatorsCode", 20, null, null);
-        if (iFieldSeq == kProductChainID)
-            field = new ProductChainField(this, "ProductChainID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCityID)
-            field = new CityField(this, "CityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEtd)
-            field = new TimeField(this, "Etd", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAckDays)
-            field = new ShortField(this, "AckDays", 2, null, null);
-        if (iFieldSeq == kComments)
-            field = new MemoField(this, "Comments", 32767, null, null);
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kItineraryDesc)
-            field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDescSort)
-            field = new ProductDescSort(this, "DescSort", 10, null, null);
-        if (iFieldSeq == kProductType)
+        if (iFieldSeq == 6)
+            field = new StringField(this, OPERATORS_CODE, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new ProductChainField(this, PRODUCT_CHAIN_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CityField(this, CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new TimeField(this, ETD, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new ShortField(this, ACK_DAYS, 2, null, null);
+        if (iFieldSeq == 11)
+            field = new MemoField(this, COMMENTS, 32767, null, null);
+        if (iFieldSeq == 12)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ProductDescSort(this, DESC_SORT, 10, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new ProductTypeAutoField(this, "ProductType", 15, null, null);
+            field = new ProductTypeAutoField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProductCost)
+        if (iFieldSeq == 16)
         {
-            field = new FullCurrencyField(this, "ProductCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, PRODUCT_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProductCostLocal)
+        if (iFieldSeq == 17)
         {
-            field = new CurrencyField(this, "ProductCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, PRODUCT_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProductMessageTransportID)
-            field = new MessageTransportSelect(this, "ProductMessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDisplayInventoryStatusID)
+        if (iFieldSeq == 18)
+            field = new MessageTransportSelect(this, PRODUCT_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
         {
-            field = new InventoryStatusField(this, "DisplayInventoryStatusID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NO_STATUS));
+            field = new InventoryStatusField(this, DISPLAY_INVENTORY_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NO_STATUS));
             field.setVirtual(true);
         }
-        if (iFieldSeq == kInventoryAvailability)
+        if (iFieldSeq == 20)
         {
-            field = new ShortField(this, "InventoryAvailability", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ShortField(this, INVENTORY_AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kCurrencyCode)
+        if (iFieldSeq == 21)
         {
-            field = new StringField(this, "CurrencyCode", 3, null, null);
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kCurrencyCodeLocal)
+        if (iFieldSeq == 22)
         {
-            field = new StringField(this, "CurrencyCodeLocal", 3, null, null);
+            field = new StringField(this, CURRENCY_CODE_LOCAL, 3, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kVendorName)
+        if (iFieldSeq == 23)
         {
-            field = new StringField(this, "VendorName", 30, null, null);
+            field = new StringField(this, VENDOR_NAME, 30, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDisplayCostStatusID)
+        if (iFieldSeq == 24)
         {
-            field = new CostStatusField(this, "DisplayCostStatusID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NULL_STATUS));
+            field = new CostStatusField(this, DISPLAY_COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NULL_STATUS));
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPPCost)
+        if (iFieldSeq == 25)
         {
-            field = new FullCurrencyField(this, "PPCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, PP_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPPCostLocal)
+        if (iFieldSeq == 26)
         {
-            field = new CurrencyField(this, "PPCostLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kRateID)
+        if (iFieldSeq == 27)
         {
-            field = new BaseRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kClassID)
+        if (iFieldSeq == 28)
         {
-            field = new BaseClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BaseClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kProductPriceLocal)
+        if (iFieldSeq == 29)
         {
-            field = new CurrencyField(this, "ProductPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, PRODUCT_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPPPriceLocal)
+        if (iFieldSeq == 30)
         {
-            field = new CurrencyField(this, "PPPriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, PP_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProductLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -315,50 +278,46 @@ public class Product extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescSort");
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityID");
-            keyArea.addKeyField(kCityID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kOperatorsCodeKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "OperatorsCode");
-            keyArea.addKeyField(kOperatorsCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(OPERATORS_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductChainIDKey)
+        if (iKeyArea == 6)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductChainID");
-            keyArea.addKeyField(kProductChainID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_CHAIN_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProductLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProductLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -389,7 +348,7 @@ public class Product extends VirtualRecord
         super.addMasterListeners();
         BaseField productDesc = this.getField(Product.DESCRIPTION);
         BaseField productSort = this.getField(Product.DESC_SORT);
-        CopyFieldHandler copyField = new CopyFieldHandler(kDescSort);
+        CopyFieldHandler copyField = new CopyFieldHandler(Product.DESC_SORT);
         productDesc.addListener(copyField);
         FieldToUpperHandler toUpper = new FieldToUpperHandler(null);
         productSort.addListener(toUpper);
@@ -863,7 +822,7 @@ public class Product extends VirtualRecord
      */
     public Date getStartDate(Date date)
     {
-        Date dateEtd = ((TimeField)this.getField(kEtd)).getDateTime();
+        Date dateEtd = ((TimeField)this.getField(Product.ETD)).getDateTime();
         if (dateEtd == null)
             return date;
         Calendar calendar = Converter.gCalendar;

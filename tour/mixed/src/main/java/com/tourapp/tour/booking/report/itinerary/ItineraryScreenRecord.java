@@ -32,20 +32,19 @@ public class ItineraryScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String TOUR_ID = "TourID";
-    public static final int kTourID = kReportScreenRecordLastField + 1;
     public static final String BOOKING_ID = "BookingID";
-    public static final int kBookingID = kTourID + 1;
     public static final String TEMPLATE = "template";
-    public static final int ktemplate = kBookingID + 1;
     public static final String FILEOUT = "fileout";
-    public static final int kfileout = ktemplate + 1;
     public static final String SEND_MESSAGE_BY = "sendMessageBy";
-    public static final int ksendMessageBy = kfileout + 1;
     public static final String DESTINATION_ADDRESS = "destinationAddress";
-    public static final int kdestinationAddress = ksendMessageBy + 1;
-    public static final int kItineraryScreenRecordLastField = kdestinationAddress;
-    public static final int kItineraryScreenRecordFields = kdestinationAddress - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -69,31 +68,41 @@ public class ItineraryScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kItineraryScreenRecordFile = null; // Screen field
+    public static final String ITINERARY_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kTourID)
-            field = new ReferenceField(this, "TourID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == ktemplate)
-            field = new StringField(this, "template", 40, null, "tour/itinerary");
-        if (iFieldSeq == kfileout)
-            field = new StringField(this, "fileout", 128, null, null);
-        if (iFieldSeq == ksendMessageBy)
-            field = new StringField(this, "sendMessageBy", 30, null, null);
-        if (iFieldSeq == kdestinationAddress)
-            field = new StringField(this, "destinationAddress", 128, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new ItineraryScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new ItineraryScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new ItineraryScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new ReferenceField(this, TOUR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, TEMPLATE, 40, null, "tour/itinerary");
+        if (iFieldSeq == 10)
+            field = new StringField(this, FILEOUT, 128, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, SEND_MESSAGE_BY, 30, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, DESTINATION_ADDRESS, 128, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kItineraryScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

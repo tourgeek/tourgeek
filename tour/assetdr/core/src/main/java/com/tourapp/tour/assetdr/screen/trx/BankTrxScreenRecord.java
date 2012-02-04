@@ -32,23 +32,13 @@ public class BankTrxScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String USER_ID = "UserID";
-    public static final int kUserID = kScreenRecordLastField + 1;
     public static final String BANK_ACCT_ID = "BankAcctID";
-    public static final int kBankAcctID = kUserID + 1;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kBankAcctID + 1;
     public static final String DISPLAY_BALANCE = "DisplayBalance";
-    public static final int kDisplayBalance = kStartDate + 1;
     public static final String START_BALANCE = "StartBalance";
-    public static final int kStartBalance = kDisplayBalance + 1;
     public static final String END_BALANCE = "EndBalance";
-    public static final int kEndBalance = kStartBalance + 1;
     public static final String CHANGE_BALANCE = "ChangeBalance";
-    public static final int kChangeBalance = kEndBalance + 1;
     public static final String TRX_COUNT = "TrxCount";
-    public static final int kTrxCount = kChangeBalance + 1;
-    public static final int kBankTrxScreenRecordLastField = kTrxCount;
-    public static final int kBankTrxScreenRecordFields = kTrxCount - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -72,35 +62,31 @@ public class BankTrxScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kBankTrxScreenRecordFile = null;   // Screen field
+    public static final String BANK_TRX_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kUserID)
-            field = new BankTrxScreenRecord_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBankAcctID)
-            field = new BankAcctField(this, "BankAcctID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDisplayBalance)
-            field = new BooleanField(this, "DisplayBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartBalance)
-            field = new CurrencyField(this, "StartBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndBalance)
-            field = new CurrencyField(this, "EndBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kChangeBalance)
-            field = new CurrencyField(this, "ChangeBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxCount)
-            field = new IntegerField(this, "TrxCount", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new BankTrxScreenRecord_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new BooleanField(this, DISPLAY_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CurrencyField(this, START_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new CurrencyField(this, END_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, CHANGE_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new IntegerField(this, TRX_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBankTrxScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

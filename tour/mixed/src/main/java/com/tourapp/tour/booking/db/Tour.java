@@ -50,63 +50,6 @@ public class Tour extends Job
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kDescription = kDescription;
-    public static final int kCode = kJobLastField + 1;
-    public static final int kTourHeaderID = kCode + 1;
-    public static final int kDepartureDate = kTourHeaderID + 1;
-    public static final int kTourStatusSummary = kDepartureDate + 1;
-    public static final int kTourStatusID = kTourStatusSummary + 1;
-    public static final int kManualTourStatus = kTourStatusID + 1;
-    public static final int kMinToOp = kManualTourStatus + 1;
-    public static final int kAirRateID = kMinToOp + 1;
-    public static final int kAirClassID = kAirRateID + 1;
-    public static final int kHotelRateID = kAirClassID + 1;
-    public static final int kHotelClassID = kHotelRateID + 1;
-    public static final int kLandRateID = kHotelClassID + 1;
-    public static final int kLandClassID = kLandRateID + 1;
-    public static final int kPMCCutoff = kLandClassID + 1;
-    public static final int kCarRateID = kPMCCutoff + 1;
-    public static final int kCarClassID = kCarRateID + 1;
-    public static final int kTransportationRateID = kCarClassID + 1;
-    public static final int kTransportationClassID = kTransportationRateID + 1;
-    public static final int kCruiseRateID = kTransportationClassID + 1;
-    public static final int kCruiseClassID = kCruiseRateID + 1;
-    public static final int kItemRateID = kCruiseClassID + 1;
-    public static final int kItemClassID = kItemRateID + 1;
-    public static final int kFocs = kItemClassID + 1;
-    public static final int kFileNo = kFocs + 1;
-    public static final int kFinalizeDate = kFileNo + 1;
-    public static final int kOrderCompDate = kFinalizeDate + 1;
-    public static final int kClosedDate = kOrderCompDate + 1;
-    public static final int kFinalDocDate = kClosedDate + 1;
-    public static final int kTicketDate = kFinalDocDate + 1;
-    public static final int kSp1Date = kTicketDate + 1;
-    public static final int kSp2Date = kSp1Date + 1;
-    public static final int kFinalized = kSp2Date + 1;
-    public static final int kOrderComponents = kFinalized + 1;
-    public static final int kClosed = kOrderComponents + 1;
-    public static final int kFinalDocs = kClosed + 1;
-    public static final int kTickets = kFinalDocs + 1;
-    public static final int kSp1 = kTickets + 1;
-    public static final int kSp2 = kSp1 + 1;
-    public static final int kServConf = kSp2 + 1;
-    public static final int kDeparted = kServConf + 1;
-    public static final int kCancelled = kDeparted + 1;
-    public static final int kNextEventDate = kCancelled + 1;
-    public static final int kTourEventID = kNextEventDate + 1;
-    public static final int kProperties = kTourEventID + 1;
-    public static final int kTourLastField = kProperties;
-    public static final int kTourFields = kProperties - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kTourHeaderIDKey = kCodeKey + 1;
-    public static final int kDepartureDateKey = kTourHeaderIDKey + 1;
-    public static final int kNextEventDateKey = kDepartureDateKey + 1;
-    public static final int kDescriptionKey = kNextEventDateKey + 1;
-    public static final int kTourLastKey = kDescriptionKey;
-    public static final int kTourKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected TourEventSchedule m_recTourEventSchedule = null;
     /**
      * Default constructor.
@@ -131,14 +74,12 @@ public class Tour extends Job
         m_recTourEventSchedule = null;
         super.init(screen);
     }
-
-    public static final String kTourFile = "Tour";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTourFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TOUR_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -181,155 +122,161 @@ public class Tour extends Job
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 20, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 50, null, null);
-        if (iFieldSeq == kTourHeaderID)
-            field = new TourHeaderField(this, "TourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepartureDate)
-            field = new DateField(this, "DepartureDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourStatusSummary)
-            field = new TourStatusSummaryField(this, "TourStatusSummary", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourStatusID)
-            field = new TourStatusField(this, "TourStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kManualTourStatus)
-            field = new BooleanField(this, "ManualTourStatus", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMinToOp)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 50, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CODE, 20, null, null);
+        if (iFieldSeq == 5)
+            field = new TourHeaderField(this, TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new DateField(this, DEPARTURE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new TourStatusSummaryField(this, TOUR_STATUS_SUMMARY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new TourStatusField(this, TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BooleanField(this, MANUAL_TOUR_STATUS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new ShortField(this, "MinToOp", 2, null, null);
+            field = new ShortField(this, MIN_TO_OP, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAirRateID)
+        if (iFieldSeq == 11)
         {
-            field = new AirRateField(this, "AirRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AirRateField(this, AIR_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kAirClassID)
+        if (iFieldSeq == 12)
         {
-            field = new AirClassField(this, "AirClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AirClassField(this, AIR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kHotelRateID)
+        if (iFieldSeq == 13)
         {
-            field = new HotelRateSelect(this, "HotelRateID", 2, null, null);
+            field = new HotelRateSelect(this, HOTEL_RATE_ID, 2, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kHotelClassID)
+        if (iFieldSeq == 14)
         {
-            field = new HotelClassSelect(this, "HotelClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new HotelClassSelect(this, HOTEL_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kLandRateID)
+        if (iFieldSeq == 15)
         {
-            field = new LandRateSelect(this, "LandRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new LandRateSelect(this, LAND_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kLandClassID)
-            field = new LandClassSelect(this, "LandClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPMCCutoff)
-            field = new ShortField(this, "PMCCutoff", 3, null, null);
-        if (iFieldSeq == kCarRateID)
+        if (iFieldSeq == 16)
+            field = new LandClassSelect(this, LAND_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new ShortField(this, PMC_CUTOFF, 3, null, null);
+        if (iFieldSeq == 18)
         {
-            field = new CarRateSelect(this, "CarRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CarRateSelect(this, CAR_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCarClassID)
+        if (iFieldSeq == 19)
         {
-            field = new CarClassSelect(this, "CarClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CarClassSelect(this, CAR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTransportationRateID)
+        if (iFieldSeq == 20)
         {
-            field = new TransportationRateSelect(this, "TransportationRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TransportationRateSelect(this, TRANSPORTATION_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTransportationClassID)
+        if (iFieldSeq == 21)
         {
-            field = new TransportationClassSelect(this, "TransportationClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TransportationClassSelect(this, TRANSPORTATION_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCruiseRateID)
+        if (iFieldSeq == 22)
         {
-            field = new CruiseRateSelect(this, "CruiseRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CruiseRateSelect(this, CRUISE_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCruiseClassID)
+        if (iFieldSeq == 23)
         {
-            field = new CruiseClassSelect(this, "CruiseClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CruiseClassSelect(this, CRUISE_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kItemRateID)
-            field = new ItemRateSelect(this, "ItemRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kItemClassID)
-            field = new ItemClassSelect(this, "ItemClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFocs)
-            field = new ShortField(this, "Focs", 2, null, null);
-        if (iFieldSeq == kFileNo)
+        if (iFieldSeq == 24)
+            field = new ItemRateSelect(this, ITEM_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new ItemClassSelect(this, ITEM_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 26)
+            field = new ShortField(this, FOCS, 2, null, null);
+        if (iFieldSeq == 27)
         {
-            field = new StringField(this, "FileNo", 20, null, null);
+            field = new StringField(this, FILE_NO, 20, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFinalizeDate)
-            field = new DateField(this, "FinalizeDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOrderCompDate)
-            field = new DateField(this, "OrderCompDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClosedDate)
-            field = new DateField(this, "ClosedDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalDocDate)
-            field = new DateField(this, "FinalDocDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTicketDate)
-            field = new DateField(this, "TicketDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSp1Date)
-            field = new DateField(this, "Sp1Date", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSp2Date)
-            field = new DateField(this, "Sp2Date", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalized)
+        if (iFieldSeq == 28)
+            field = new DateField(this, FINALIZE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new DateField(this, ORDER_COMP_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new DateField(this, CLOSED_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new DateField(this, FINAL_DOC_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 32)
+            field = new DateField(this, TICKET_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 33)
+            field = new DateField(this, SP_1_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 34)
+            field = new DateField(this, SP_2_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 35)
         {
-            field = new BooleanField(this, "Finalized", 1, null, null);
+            field = new BooleanField(this, FINALIZED, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOrderComponents)
-            field = new BooleanField(this, "OrderComponents", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClosed)
-            field = new BooleanField(this, "Closed", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalDocs)
+        if (iFieldSeq == 36)
+            field = new BooleanField(this, ORDER_COMPONENTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 37)
+            field = new BooleanField(this, CLOSED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 38)
         {
-            field = new BooleanField(this, "FinalDocs", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, FINAL_DOCS, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTickets)
+        if (iFieldSeq == 39)
         {
-            field = new BooleanField(this, "Tickets", 1, null, null);
+            field = new BooleanField(this, TICKETS, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSp1)
-            field = new BooleanField(this, "Sp1", 1, null, null);
-        if (iFieldSeq == kSp2)
-            field = new BooleanField(this, "Sp2", 1, null, null);
-        if (iFieldSeq == kServConf)
-            field = new BooleanField(this, "ServConf", 1, null, null);
-        if (iFieldSeq == kDeparted)
-            field = new BooleanField(this, "Departed", 1, null, null);
-        if (iFieldSeq == kCancelled)
-            field = new BooleanField(this, "Cancelled", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNextEventDate)
-            field = new DateField(this, "NextEventDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourEventID)
-            field = new TourEventField(this, "TourEventID", 1, null, null);
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 40)
+            field = new BooleanField(this, SP_1, 1, null, null);
+        if (iFieldSeq == 41)
+            field = new BooleanField(this, SP_2, 1, null, null);
+        if (iFieldSeq == 42)
+            field = new BooleanField(this, SERV_CONF, 1, null, null);
+        if (iFieldSeq == 43)
+            field = new BooleanField(this, DEPARTED, 1, null, null);
+        if (iFieldSeq == 44)
+            field = new BooleanField(this, CANCELLED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 45)
+            field = new DateField(this, NEXT_EVENT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 46)
+            field = new TourEventField(this, TOUR_EVENT_ID, 1, null, null);
+        if (iFieldSeq == 47)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -338,44 +285,40 @@ public class Tour extends Job
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourHeaderIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourHeaderID");
-            keyArea.addKeyField(kTourHeaderID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDepartureDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_HEADER_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DEPARTURE_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDepartureDateKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DepartureDate");
-            keyArea.addKeyField(kDepartureDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(DEPARTURE_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNextEventDateKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NextEventDate");
-            keyArea.addKeyField(kNextEventDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourEventID, DBConstants.ASCENDING);
+            keyArea.addKeyField(NEXT_EVENT_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_EVENT_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTourLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTourLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -640,7 +583,7 @@ public class Tour extends Job
         if (recTourHeader == null)
             recTourHeader = ((ReferenceField)this.getField(Tour.TOUR_HEADER_ID)).getReference();
         Record recTourClass = ((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
-        Calendar calDepartureDate = ((DateTimeField)this.getField(kDepartureDate)).getCalendar();
+        Calendar calDepartureDate = ((DateTimeField)this.getField(Tour.DEPARTURE_DATE)).getCalendar();
         
         Calendar calTargetDate = (Calendar)calDepartureDate.clone();
         calTargetDate.add(Calendar.DATE, -(int)recTourClass.getField(TourClass.TICKET_DAYS).getValue());

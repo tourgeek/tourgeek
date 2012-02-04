@@ -86,8 +86,8 @@ public class ProfileCertificationGridScreen extends ProfileDetailBaseGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProfileCertification.kProfileCertificationFile).getField(ProfileCertification.kCertificationTypeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileCertification.kProfileCertificationFile).getField(ProfileCertification.kCertificationCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileCertification.PROFILE_CERTIFICATION_FILE).getField(ProfileCertification.CERTIFICATION_TYPE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileCertification.PROFILE_CERTIFICATION_FILE).getField(ProfileCertification.CERTIFICATION_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

@@ -51,6 +51,7 @@ public class LandList extends QueryRecord
      implements LandListModel
 {
     private static final long serialVersionUID = 1L;
+
     /**
      * Default constructor.
      */
@@ -73,14 +74,12 @@ public class LandList extends QueryRecord
     {
         super.init(screen);
     }
-
-    public static final String kLandListFile = "LandList";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kLandListFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(LAND_LIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -102,6 +101,31 @@ public class LandList extends QueryRecord
     public int getDatabaseType()
     {
         return DBConstants.LOCAL;
+    }
+    /**
+     * Add this field in the Record's field sequence.
+     */
+    public BaseField setupField(int iFieldSeq)
+    {
+        BaseField field = null;
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (field == null)
+            field = super.setupField(iFieldSeq);
+        return field;
     }
     /**
      * Override this to Setup all the records for this query.

@@ -10,9 +10,10 @@ public interface ApTrxModel extends TrxModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
     //public static final String TRX_USER_ID = TRX_USER_ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
     public static final String CODE = "Code";
     public static final String DESCRIPTION = "Description";
     public static final String AP_TRX_TYPE_ID = "ApTrxTypeID";

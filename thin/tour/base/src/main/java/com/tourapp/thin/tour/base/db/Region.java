@@ -15,12 +15,8 @@ import com.tourapp.model.tour.base.db.*;
 public class Region extends Location
     implements RegionModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    public static final String DESCRIPTION = NAME;
-    //public static final String CODE = CODE;
 
     public Region()
     {
@@ -59,22 +55,22 @@ public class Region extends Location
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 40, null, null);
-        field = new FieldInfo(this, "Code", 3, null, null);
-        field = new FieldInfo(this, "ContinentID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 40, null, null);
+        field = new FieldInfo(this, CODE, 3, null, null);
+        field = new FieldInfo(this, CONTINENT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Memo", 32000, null, null);
+        field = new FieldInfo(this, MEMO, 32000, null, null);
         field.setDataClass(Object.class);
-        field = new FieldInfo(this, "Picture", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PICTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
     }
     /**
@@ -83,7 +79,7 @@ public class Region extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);

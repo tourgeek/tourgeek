@@ -32,13 +32,6 @@ public class CustSale extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kCustSaleDate = kVirtualRecordLastField + 1;
-    public static final int kCustSaleAgent = kCustSaleDate + 1;
-    public static final int kCustSaleCustID = kCustSaleAgent + 1;
-    public static final int kCustSaleCustNo = kCustSaleCustID + 1;
-    public static final int kCustSaleLastField = kCustSaleCustNo;
-    public static final int kCustSaleFields = kCustSaleCustNo - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -62,32 +55,38 @@ public class CustSale extends VirtualRecord
         super.init(screen);
     }
 
-    public static final String kCustSaleFile = null;    // Screen field
+    public static final String CUST_SALE_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 6, null, null);
+            field = new CounterField(this, ID, 6, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kCustSaleDate)
-            field = new CustSale_CustSaleDate(this, "CustSaleDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCustSaleAgent)
-            field = new ReferenceField(this, "CustSaleAgent", 6, null, null);
-        if (iFieldSeq == kCustSaleCustID)
-            field = new ReferenceField(this, "CustSaleCustID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCustSaleCustNo)
-            field = new StringField(this, "CustSaleCustNo", 16, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new CustSale_CustSaleDate(this, CUST_SALE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new ReferenceField(this, CUST_SALE_AGENT, 6, null, null);
+        if (iFieldSeq == 5)
+            field = new ReferenceField(this, CUST_SALE_CUST_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, CUST_SALE_CUST_NO, 16, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCustSaleLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

@@ -86,8 +86,8 @@ public class ProfileCreditCardGridScreen extends ProfileDetailBaseGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProfileCreditCard.kProfileCreditCardFile).getField(ProfileCreditCard.kCCCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileCreditCard.kProfileCreditCardFile).getField(ProfileCreditCard.kCCHolderName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileCreditCard.PROFILE_CREDIT_CARD_FILE).getField(ProfileCreditCard.CC_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileCreditCard.PROFILE_CREDIT_CARD_FILE).getField(ProfileCreditCard.CC_HOLDER_NAME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

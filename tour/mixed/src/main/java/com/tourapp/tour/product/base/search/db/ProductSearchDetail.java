@@ -34,19 +34,6 @@ public class ProductSearchDetail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int kProductID = kVirtualRecordLastField + 1;
-    public static final int kProductTypeID = kProductID + 1;
-    public static final int kProductSearchTypeID = kProductTypeID + 1;
-    public static final int kProductSearchCategoryID = kProductSearchTypeID + 1;
-    public static final int kSearchData = kProductSearchCategoryID + 1;
-    public static final int kProductSearchDetailLastField = kSearchData;
-    public static final int kProductSearchDetailFields = kSearchData - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProductIDKey = kIDKey + 1;
-    public static final int kProductSearchCategoryIDKey = kProductIDKey + 1;
-    public static final int kProductSearchDetailLastKey = kProductSearchCategoryIDKey;
-    public static final int kProductSearchDetailKeys = kProductSearchCategoryIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -69,14 +56,12 @@ public class ProductSearchDetail extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kProductSearchDetailFile = "ProductSearchDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProductSearchDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PRODUCT_SEARCH_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -112,28 +97,39 @@ public class ProductSearchDetail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kProductID)
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ProductField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kProductTypeID)
-            field = new ProductTypeField(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductSearchTypeID)
+        if (iFieldSeq == 4)
+            field = new ProductTypeField(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new ProductSearchTypeField(this, "ProductSearchTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductSearchTypeField(this, PRODUCT_SEARCH_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kProductSearchCategoryID)
-            field = new ProductSearchCategoryField(this, "ProductSearchCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSearchData)
-            field = new StringField(this, "SearchData", 60, null, null);
+        if (iFieldSeq == 6)
+            field = new ProductSearchCategoryField(this, PRODUCT_SEARCH_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, SEARCH_DATA, 60, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProductSearchDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -142,29 +138,25 @@ public class ProductSearchDetail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductTypeID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductSearchTypeID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_SEARCH_TYPE_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProductSearchCategoryIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductSearchCategoryID");
-            keyArea.addKeyField(kProductSearchCategoryID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_SEARCH_CATEGORY_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProductSearchDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProductSearchDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

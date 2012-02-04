@@ -82,10 +82,10 @@ public class TourEventUpdateScreen extends Screen
      */
     public void setupSFields()
     {
-        this.getRecord(TourEventScreenRecord.kTourEventScreenRecordFile).getField(TourEventScreenRecord.kActionCutoffDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventScreenRecord.kTourEventScreenRecordFile).getField(TourEventScreenRecord.kTourUpdate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventScreenRecord.kTourEventScreenRecordFile).getField(TourEventScreenRecord.kBookingUpdate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventScreenRecord.kTourEventScreenRecordFile).getField(TourEventScreenRecord.kRunProcessIn).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventScreenRecord.TOUR_EVENT_SCREEN_RECORD_FILE).getField(TourEventScreenRecord.ACTION_CUTOFF_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventScreenRecord.TOUR_EVENT_SCREEN_RECORD_FILE).getField(TourEventScreenRecord.TOUR_UPDATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventScreenRecord.TOUR_EVENT_SCREEN_RECORD_FILE).getField(TourEventScreenRecord.BOOKING_UPDATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventScreenRecord.TOUR_EVENT_SCREEN_RECORD_FILE).getField(TourEventScreenRecord.RUN_PROCESS_IN).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.RUN, MenuConstants.RUN, MenuConstants.RUN, null);
     }
     /**

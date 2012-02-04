@@ -34,26 +34,20 @@ public class BankAcctScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportPage = kReportPage;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kReportScreenRecordLastField + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String BANK_ACCT_ID = "BankAcctID";
-    public static final int kBankAcctID = kEndDate + 1;
     public static final String COUNT = "Count";
-    public static final int kCount = kBankAcctID + 1;
     public static final String BALANCE = "Balance";
-    public static final int kBalance = kCount + 1;
     public static final String START_BALANCE = "StartBalance";
-    public static final int kStartBalance = kBalance + 1;
     public static final String END_BALANCE = "EndBalance";
-    public static final int kEndBalance = kStartBalance + 1;
-    public static final int kBankAcctScreenRecordLastField = kEndBalance;
-    public static final int kBankAcctScreenRecordFields = kEndBalance - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -77,47 +71,49 @@ public class BankAcctScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kBankAcctScreenRecordFile = null;    // Screen field
+    public static final String BANK_ACCT_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new BankAcctScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new BankAcctScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportUserID)
-            field = new BankAcctScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportPage)
-            field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        if (iFieldSeq == kStartDate)
+        //if (iFieldSeq == 0)
+        //  field = new BankAcctScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new BankAcctScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new BankAcctScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
         {
-            field = new BankAcctScreenRecord_StartDate(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctScreenRecord_StartDate(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEndDate)
+        if (iFieldSeq == 8)
         {
-            field = new BankAcctScreenRecord_EndDate(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctScreenRecord_EndDate(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kBankAcctID)
-            field = new BankAcctField(this, "BankAcctID", 2, null, null);
-        if (iFieldSeq == kCount)
-            field = new IntegerField(this, "Count", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBalance)
-            field = new CurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartBalance)
-            field = new CurrencyField(this, "StartBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndBalance)
-            field = new CurrencyField(this, "EndBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BankAcctField(this, BANK_ACCT_ID, 2, null, null);
+        if (iFieldSeq == 10)
+            field = new IntegerField(this, COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new CurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new CurrencyField(this, START_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new CurrencyField(this, END_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBankAcctScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

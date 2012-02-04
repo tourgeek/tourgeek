@@ -122,12 +122,12 @@ public class ProductInventoryRangeAdjust extends DetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kBlocked).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kOversell).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kClosed).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kDelete).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductScreenRecord.PRODUCT_SCREEN_RECORD_FILE).getField(ProductScreenRecord.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductScreenRecord.PRODUCT_SCREEN_RECORD_FILE).getField(ProductScreenRecord.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductScreenRecord.PRODUCT_SCREEN_RECORD_FILE).getField(ProductScreenRecord.BLOCKED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductScreenRecord.PRODUCT_SCREEN_RECORD_FILE).getField(ProductScreenRecord.OVERSELL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductScreenRecord.PRODUCT_SCREEN_RECORD_FILE).getField(ProductScreenRecord.CLOSED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductScreenRecord.PRODUCT_SCREEN_RECORD_FILE).getField(ProductScreenRecord.DELETE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         BaseApplication app = (BaseApplication)this.getTask().getApplication();
         new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, app.getResources(ResourceConstants.ASSETDR_RESOURCE, true).getString(ADJUST_RANGE), MenuConstants.POST, ADJUST_RANGE, null);
     }

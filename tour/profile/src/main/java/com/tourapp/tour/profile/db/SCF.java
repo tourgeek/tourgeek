@@ -32,21 +32,6 @@ public class SCF extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kScfFrom = kVirtualRecordLastField + 1;
-    public static final int kScfTo = kScfFrom + 1;
-    public static final int kDescription = kScfTo + 1;
-    public static final int kSalespersonID = kDescription + 1;
-    public static final int kSalesRegionID = kSalespersonID + 1;
-    public static final int kUpsZone = kSalesRegionID + 1;
-    public static final int kZipZone = kUpsZone + 1;
-    public static final int kSCFLastField = kZipZone;
-    public static final int kSCFFields = kZipZone - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kScfToKey = kIDKey + 1;
-    public static final int kSCFLastKey = kScfToKey;
-    public static final int kSCFKeys = kScfToKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -69,14 +54,12 @@ public class SCF extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kSCFFile = "SCF";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kSCFFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(SCF_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -105,49 +88,55 @@ public class SCF extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kScfFrom)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new StringField(this, "ScfFrom", 3, null, null);
+            field = new StringField(this, SCF_FROM, 3, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kScfTo)
+        if (iFieldSeq == 4)
         {
-            field = new StringField(this, "ScfTo", 3, null, null);
+            field = new StringField(this, SCF_TO, 3, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 25, null, null);
-        if (iFieldSeq == kSalespersonID)
+        if (iFieldSeq == 5)
+            field = new StringField(this, DESCRIPTION, 25, null, null);
+        if (iFieldSeq == 6)
         {
-            field = new SalespersonField(this, "SalespersonID", 3, null, null);
+            field = new SalespersonField(this, SALESPERSON_ID, 3, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSalesRegionID)
+        if (iFieldSeq == 7)
         {
-            field = new SalesRegionField(this, "SalesRegionID", 4, null, null);
+            field = new SalesRegionField(this, SALES_REGION_ID, 4, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kUpsZone)
+        if (iFieldSeq == 8)
         {
-            field = new StringField(this, "UpsZone", 1, null, null);
+            field = new StringField(this, UPS_ZONE, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kZipZone)
+        if (iFieldSeq == 9)
         {
-            field = new StringField(this, "ZipZone", 1, null, null);
+            field = new StringField(this, ZIP_ZONE, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kSCFLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -156,23 +145,19 @@ public class SCF extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kScfToKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "ScfTo");
-            keyArea.addKeyField(kScfTo, DBConstants.ASCENDING);
-            keyArea.addKeyField(kScfFrom, DBConstants.ASCENDING);
+            keyArea.addKeyField(SCF_TO, DBConstants.ASCENDING);
+            keyArea.addKeyField(SCF_FROM, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kSCFLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kSCFLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

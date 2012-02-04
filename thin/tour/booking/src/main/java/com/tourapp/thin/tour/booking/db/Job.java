@@ -14,8 +14,8 @@ import com.tourapp.model.tour.booking.db.*;
 public class Job extends FieldList
     implements JobModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public Job()
     {

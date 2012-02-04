@@ -15,6 +15,8 @@ import com.tourapp.model.tour.payroll.db.*;
 public class EmployeeStatus extends Employee
     implements EmployeeStatusModel
 {
+    private static final long serialVersionUID = 1L;
+
 
     public EmployeeStatus()
     {

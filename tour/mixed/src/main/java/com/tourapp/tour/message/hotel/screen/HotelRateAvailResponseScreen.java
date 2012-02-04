@@ -83,7 +83,7 @@ public class HotelRateAvailResponseScreen extends HotelAvailResponseScreen
     public void setupSFields()
     {
         super.setupSFields();
-        this.getRecord(HotelInfoScreenRecord.kHotelInfoScreenRecordFile).getField(HotelInfoScreenRecord.kTotalCost).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(HotelInfoScreenRecord.HOTEL_INFO_SCREEN_RECORD_FILE).getField(HotelInfoScreenRecord.TOTAL_COST).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Move to entered fields to the return message.

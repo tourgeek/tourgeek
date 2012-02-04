@@ -64,10 +64,10 @@ public class CheckRegisterFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BankAcctScreenRecord.kBankAcctScreenRecordFile).getField(BankAcctScreenRecord.kCount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankAcctScreenRecord.kBankAcctScreenRecordFile).getField(BankAcctScreenRecord.kStartBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankAcctScreenRecord.kBankAcctScreenRecordFile).getField(BankAcctScreenRecord.kBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankAcctScreenRecord.kBankAcctScreenRecordFile).getField(BankAcctScreenRecord.kEndBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankAcctScreenRecord.BANK_ACCT_SCREEN_RECORD_FILE).getField(BankAcctScreenRecord.COUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankAcctScreenRecord.BANK_ACCT_SCREEN_RECORD_FILE).getField(BankAcctScreenRecord.START_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankAcctScreenRecord.BANK_ACCT_SCREEN_RECORD_FILE).getField(BankAcctScreenRecord.BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankAcctScreenRecord.BANK_ACCT_SCREEN_RECORD_FILE).getField(BankAcctScreenRecord.END_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

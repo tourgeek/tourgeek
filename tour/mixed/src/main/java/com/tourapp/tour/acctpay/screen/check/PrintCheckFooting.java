@@ -66,7 +66,7 @@ public class PrintCheckFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(PrintCheckScreenRecord.kPrintCheckScreenRecordFile).getField(PrintCheckScreenRecord.kReportTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PrintCheckScreenRecord.PRINT_CHECK_SCREEN_RECORD_FILE).getField(PrintCheckScreenRecord.REPORT_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

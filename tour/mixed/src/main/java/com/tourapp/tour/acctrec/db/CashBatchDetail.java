@@ -35,20 +35,6 @@ public class CashBatchDetail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kCashBatchID = kVirtualRecordLastField + 1;
-    public static final int kBookingID = kCashBatchID + 1;
-    public static final int kCheckNo = kBookingID + 1;
-    public static final int kCheckABA = kCheckNo + 1;
-    public static final int kAmount = kCheckABA + 1;
-    public static final int kComments = kAmount + 1;
-    public static final int kCashBatchDetailLastField = kComments;
-    public static final int kCashBatchDetailFields = kComments - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCashBatchIDKey = kIDKey + 1;
-    public static final int kCashBatchDetailLastKey = kCashBatchIDKey;
-    public static final int kCashBatchDetailKeys = kCashBatchIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +57,12 @@ public class CashBatchDetail extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kCashBatchDetailFile = "CashBatchDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCashBatchDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CASH_BATCH_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -123,32 +107,38 @@ public class CashBatchDetail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kCashBatchID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new CashBatchField(this, "CashBatchID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CashBatchField(this, CASH_BATCH_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCheckNo)
-            field = new StringField(this, "CheckNo", 8, null, null);
-        if (iFieldSeq == kCheckABA)
-            field = new StringField(this, "CheckABA", 10, null, null);
-        if (iFieldSeq == kAmount)
-            field = new CurrencyField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kComments)
-            field = new StringField(this, "Comments", 30, null, null);
+        if (iFieldSeq == 4)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, CHECK_NO, 8, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, CHECK_ABA, 10, null, null);
+        if (iFieldSeq == 7)
+            field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new StringField(this, COMMENTS, 30, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCashBatchDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -157,23 +147,19 @@ public class CashBatchDetail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCashBatchIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchID");
-            keyArea.addKeyField(kCashBatchID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CASH_BATCH_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCashBatchDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCashBatchDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

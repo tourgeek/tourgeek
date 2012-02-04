@@ -34,22 +34,6 @@ public class BankTrxBatchDetail extends BankTrx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxDate = kTrxDate;
-    public static final int kUserID = kTrxUserID;
-    public static final int kBankTrxBatchID = kBankTrxLastField + 1;
-    public static final int kDistributionDisplay = kBankTrxBatchID + 1;
-    public static final int kBankTrxBatchDetailLastField = kDistributionDisplay;
-    public static final int kBankTrxBatchDetailFields = kDistributionDisplay - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxDateKey = kIDKey + 1;
-    public static final int kTrxStatusKey = kTrxDateKey + 1;
-    public static final int kInvBalanceKey = kTrxStatusKey + 1;
-    public static final int kBankTrxBatchIDKey = kInvBalanceKey + 1;
-    public static final int kBankTrxBatchDetailLastKey = kBankTrxBatchIDKey;
-    public static final int kBankTrxBatchDetailKeys = kBankTrxBatchIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int BANK_TRX_BATCH_DIST_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int BANK_TRX_BATCH_POST = ScreenConstants.POST_MODE;
     /**
@@ -74,14 +58,12 @@ public class BankTrxBatchDetail extends BankTrx
     {
         super.init(screen);
     }
-
-    public static final String kBankTrxBatchDetailFile = "BankTrxBatchDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBankTrxBatchDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BANK_TRX_BATCH_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -126,36 +108,77 @@ public class BankTrxBatchDetail extends BankTrx
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kTrxStatusID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTrxDate)
+        if (iFieldSeq == 4)
+            field = new BankTrxBatchDetail_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
         {
-            field = new BankTrxBatchDetail_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankTrxBatchDetail_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kUserID)
-            field = new BankTrxBatchDetail_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBankTrxBatchID)
+        //if (iFieldSeq == 6)
+        //  field = new CurrencyField(this, AMOUNT_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new BankTrxBatchDetail_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new BankTrxBatchField(this, "BankTrxBatchID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kDistributionDisplay)
-            field = new AccountField(this, "DistributionDisplay", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (field == null)
+        //if (iFieldSeq == 9)
+        //  field = new IntegerField(this, TRX_NUMBER, 8, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new StringField(this, EFT_TRX_NO, 20, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new TrxDescField(this, PAYEE_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new ReferenceField(this, PAYEE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new StringField(this, PAYEE_NAME, 30, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new FullCurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 15)
+        //  field = new RealField(this, EXCHANGE, 10, null, null);
+        //if (iFieldSeq == 16)
+        //  field = new PreferredSignField(this, INV_SIGN, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 17)
+        //  field = new FullCurrencyField(this, INV_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 18)
+        //  field = new CurrencyField(this, INV_BALANCE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 19)
+        //  field = new StringField(this, COMMENTS, 30, null, null);
+        //if (iFieldSeq == 20)
+        //  field = new DateTimeField(this, DATE_RECONCILED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 21)
+        //  field = new BooleanField(this, MANUAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
         {
-            field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBankTrxBatchDetailLastField)
-                field = new EmptyField(this);
+            field = new BankTrxBatchField(this, BANK_TRX_BATCH_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setNullable(false);
         }
+        if (iFieldSeq == 23)
+            field = new AccountField(this, DISTRIBUTION_DISPLAY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (field == null)
+            field = super.setupField(iFieldSeq);
         return field;
     }
     /**
@@ -164,43 +187,39 @@ public class BankTrxBatchDetail extends BankTrx
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxDateKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxStatusKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatus");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxStatusID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kInvBalanceKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "InvBalance");
-            keyArea.addKeyField(kBankAcctID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kInvSign, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kInvBalance, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(INV_SIGN, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(INV_BALANCE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBankTrxBatchIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BankTrxBatchID");
-            keyArea.addKeyField(kBankTrxBatchID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BANK_TRX_BATCH_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBankTrxBatchDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBankTrxBatchDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

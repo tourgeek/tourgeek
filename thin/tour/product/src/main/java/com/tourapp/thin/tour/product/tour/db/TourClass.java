@@ -14,10 +14,8 @@ import com.tourapp.model.tour.product.tour.db.*;
 public class TourClass extends FieldList
     implements TourClassModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public TourClass()
     {
@@ -56,89 +54,89 @@ public class TourClass extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 8, null, null);
+        field = new FieldInfo(this, ID, 8, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ClassName", 15, null, null);
-        field = new FieldInfo(this, "BasedClassID", 8, null, null);
+        field = new FieldInfo(this, CLASS_NAME, 15, null, null);
+        field = new FieldInfo(this, BASED_CLASS_ID, 8, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "DepositDueDays", 3, null, null);
+        field = new FieldInfo(this, DEPOSIT_DUE_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "FinalPayDays", 3, null, null);
+        field = new FieldInfo(this, FINAL_PAY_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "FinalizeDays", 3, null, null);
+        field = new FieldInfo(this, FINALIZE_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "OrderCompDays", 3, null, null);
+        field = new FieldInfo(this, ORDER_COMP_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "ClosedDays", 3, null, null);
+        field = new FieldInfo(this, CLOSED_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "FinalDocDays", 3, null, null);
+        field = new FieldInfo(this, FINAL_DOC_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "TicketDays", 3, null, null);
+        field = new FieldInfo(this, TICKET_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Sp1Days", 3, null, null);
+        field = new FieldInfo(this, SP_1_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Sp1Desc", 15, null, null);
-        field = new FieldInfo(this, "Sp2Days", 3, null, null);
+        field = new FieldInfo(this, SP_1_DESC, 15, null, null);
+        field = new FieldInfo(this, SP_2_DAYS, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Sp2Desc", 15, null, null);
-        field = new FieldInfo(this, "AddDeposit", 1, null, null);
+        field = new FieldInfo(this, SP_2_DESC, 15, null, null);
+        field = new FieldInfo(this, ADD_DEPOSIT, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "DepositAmount", 10, null, null);
+        field = new FieldInfo(this, DEPOSIT_AMOUNT, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "CancelCharge", 10, null, null);
+        field = new FieldInfo(this, CANCEL_CHARGE, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ModBeforeCharge", 10, null, null);
+        field = new FieldInfo(this, MOD_BEFORE_CHARGE, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ModAfterCharge", 10, null, null);
+        field = new FieldInfo(this, MOD_AFTER_CHARGE, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "UpgradeProfileStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, UPGRADE_PROFILE_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AirRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AIR_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AirClassID", 4, null, null);
+        field = new FieldInfo(this, AIR_CLASS_ID, 4, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "HotelRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, HOTEL_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "HotelClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, HOTEL_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "LandRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAND_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "LandClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAND_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PMCCutoff", 3, null, null);
+        field = new FieldInfo(this, PMC_CUTOFF, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "CarClassID", 4, null, null);
+        field = new FieldInfo(this, CAR_CLASS_ID, 4, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CarRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CAR_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TransportationRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TRANSPORTATION_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TransportationClassID", 4, null, null);
+        field = new FieldInfo(this, TRANSPORTATION_CLASS_ID, 4, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CruiseRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CRUISE_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CruiseClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CRUISE_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ItemRateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ITEM_RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ItemClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ITEM_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "InitialBookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, INITIAL_BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "InitialTourStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, INITIAL_TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Markup", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MARKUP, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "TourPricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "NonTourPricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, NON_TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
     }
     /**
@@ -147,7 +145,7 @@ public class TourClass extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ClassName");
         keyArea.addKeyField("ClassName", Constants.ASCENDING);

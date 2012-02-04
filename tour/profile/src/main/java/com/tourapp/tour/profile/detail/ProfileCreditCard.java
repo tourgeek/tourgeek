@@ -33,21 +33,6 @@ public class ProfileCreditCard extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProfileID = kVirtualRecordLastField + 1;
-    public static final int kCCCode = kProfileID + 1;
-    public static final int kCCHolderName = kCCCode + 1;
-    public static final int kCCNumber = kCCHolderName + 1;
-    public static final int kCCBeginDate = kCCNumber + 1;
-    public static final int kCCExpire = kCCBeginDate + 1;
-    public static final int kProfileCreditCardLastField = kCCExpire;
-    public static final int kProfileCreditCardFields = kCCExpire - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProfileIDKey = kIDKey + 1;
-    public static final int kCCNumberKey = kProfileIDKey + 1;
-    public static final int kProfileCreditCardLastKey = kCCNumberKey;
-    public static final int kProfileCreditCardKeys = kCCNumberKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,14 +55,12 @@ public class ProfileCreditCard extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kProfileCreditCardFile = "ProfileCreditCard";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProfileCreditCardFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PROFILE_CREDIT_CARD_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -106,29 +89,35 @@ public class ProfileCreditCard extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProfileID)
-            field = new ProfileField(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCCCode)
-            field = new CardField(this, "CCCode", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCCHolderName)
-            field = new StringField(this, "CCHolderName", 65, null, null);
-        if (iFieldSeq == kCCNumber)
-            field = new PasswordField(this, "CCNumber", 20, null, null);
-        if (iFieldSeq == kCCBeginDate)
-            field = new DateField(this, "CCBeginDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCCExpire)
-            field = new DateField(this, "CCExpire", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProfileField(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CardField(this, CC_CODE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, CC_HOLDER_NAME, 65, null, null);
+        if (iFieldSeq == 6)
+            field = new PasswordField(this, CC_NUMBER, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new DateField(this, CC_BEGIN_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new DateField(this, CC_EXPIRE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProfileCreditCardLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -137,27 +126,23 @@ public class ProfileCreditCard extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCCNumberKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CCNumber");
-            keyArea.addKeyField(kCCNumber, DBConstants.ASCENDING);
+            keyArea.addKeyField(CC_NUMBER, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProfileCreditCardLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProfileCreditCardLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

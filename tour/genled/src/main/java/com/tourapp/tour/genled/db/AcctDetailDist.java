@@ -34,25 +34,6 @@ public class AcctDetailDist extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kAcctDetailID = kVirtualRecordLastField + 1;
-    public static final int kTrxID = kAcctDetailID + 1;
-    public static final int kTrxDescID = kTrxID + 1;
-    public static final int kTrxTypeID = kTrxDescID + 1;
-    public static final int kTrxDate = kTrxTypeID + 1;
-    public static final int kAmount = kTrxDate + 1;
-    public static final int kTrxEntry = kAmount + 1;
-    public static final int kUserID = kTrxEntry + 1;
-    public static final int kAcctDetailDistGroupID = kUserID + 1;
-    public static final int kAcctDetailDistLastField = kAcctDetailDistGroupID;
-    public static final int kAcctDetailDistFields = kAcctDetailDistGroupID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDistDetailKey = kIDKey + 1;
-    public static final int kAcctDetailDistGroupIDKey = kDistDetailKey + 1;
-    public static final int kTrxDescIDKey = kAcctDetailDistGroupIDKey + 1;
-    public static final int kAcctDetailDistLastKey = kTrxDescIDKey;
-    public static final int kAcctDetailDistKeys = kTrxDescIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int DIST_GROUP_SCREEN = ScreenConstants.DISPLAY_MODE | 4096;
     /**
      * Default constructor.
@@ -76,14 +57,12 @@ public class AcctDetailDist extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAcctDetailDistFile = "AcctDetailDist";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAcctDetailDistFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ACCT_DETAIL_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -128,38 +107,44 @@ public class AcctDetailDist extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kAcctDetailID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new AcctDetailField(this, "AcctDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AcctDetailField(this, ACCT_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kTrxID)
-            field = new TrxIDField(this, "TrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxDescID)
-            field = new TrxDescField(this, "TrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxTypeID)
-            field = new TrxTypeField(this, "TrxTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxDate)
-            field = new DateTimeField(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmount)
-            field = new DrCrField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxEntry)
-            field = new DateTimeField(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kUserID)
-            field = new AcctDetailDist_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAcctDetailDistGroupID)
-            field = new ReferenceField(this, "AcctDetailDistGroupID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new TrxIDField(this, TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new TrxDescField(this, TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new TrxTypeField(this, TRX_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new DateTimeField(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new DrCrField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new DateTimeField(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new AcctDetailDist_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new ReferenceField(this, ACCT_DETAIL_DIST_GROUP_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAcctDetailDistLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -168,34 +153,30 @@ public class AcctDetailDist extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDistDetailKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DistDetail");
-            keyArea.addKeyField(kAcctDetailID, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACCT_DETAIL_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAcctDetailDistGroupIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AcctDetailDistGroupID");
-            keyArea.addKeyField(kAcctDetailDistGroupID, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACCT_DETAIL_DIST_GROUP_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTrxDescIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDescID");
-            keyArea.addKeyField(kTrxDescID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTrxTypeID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_DESC_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TRX_TYPE_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAcctDetailDistLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAcctDetailDistLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

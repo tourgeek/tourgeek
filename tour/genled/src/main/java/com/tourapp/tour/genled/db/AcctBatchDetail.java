@@ -33,22 +33,6 @@ public class AcctBatchDetail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kAcctBatchID = kVirtualRecordLastField + 1;
-    public static final int kSequence = kAcctBatchID + 1;
-    public static final int kAccountID = kSequence + 1;
-    public static final int kAmount = kAccountID + 1;
-    public static final int kCounterBalance = kAmount + 1;
-    public static final int kAutoDist = kCounterBalance + 1;
-    public static final int kAutoAccrual = kAutoDist + 1;
-    public static final int kAutoReversal = kAutoAccrual + 1;
-    public static final int kAcctBatchDetailLastField = kAutoReversal;
-    public static final int kAcctBatchDetailFields = kAutoReversal - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kAcctBatchIDKey = kIDKey + 1;
-    public static final int kAcctBatchDetailLastKey = kAcctBatchIDKey;
-    public static final int kAcctBatchDetailKeys = kAcctBatchIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +55,12 @@ public class AcctBatchDetail extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAcctBatchDetailFile = "AcctBatchDetail";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAcctBatchDetailFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ACCT_BATCH_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -121,36 +103,42 @@ public class AcctBatchDetail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kAcctBatchID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ReferenceField(this, "AcctBatchID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ReferenceField(this, ACCT_BATCH_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kSequence)
-            field = new ShortField(this, "Sequence", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAccountID)
-            field = new AccountField(this, "AccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmount)
-            field = new DrCrField(this, "Amount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCounterBalance)
-            field = new BooleanField(this, "CounterBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAutoDist)
-            field = new BooleanField(this, "AutoDist", 1, null, null);
-        if (iFieldSeq == kAutoAccrual)
-            field = new BooleanField(this, "AutoAccrual", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAutoReversal)
-            field = new BooleanField(this, "AutoReversal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new ShortField(this, SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new DrCrField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new BooleanField(this, COUNTER_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new BooleanField(this, AUTO_DIST, 1, null, null);
+        if (iFieldSeq == 9)
+            field = new BooleanField(this, AUTO_ACCRUAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new BooleanField(this, AUTO_REVERSAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAcctBatchDetailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -159,24 +147,20 @@ public class AcctBatchDetail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAcctBatchIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AcctBatchID");
-            keyArea.addKeyField(kAcctBatchID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea.addKeyField(ACCT_BATCH_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAcctBatchDetailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAcctBatchDetailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

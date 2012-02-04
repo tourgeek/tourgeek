@@ -122,10 +122,10 @@ public class TourEventScheduleGridScreen extends DetailGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kTourEventID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kTourActionType).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionTourEventID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionMessageProcessInfoID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.TOUR_EVENT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.TOUR_ACTION_TYPE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_TOUR_EVENT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

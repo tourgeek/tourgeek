@@ -35,40 +35,27 @@ public class TicketScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportPage = kReportPage;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String COUNT = "Count";
-    public static final int kCount = kReportScreenRecordLastField + 1;
     public static final String TOTAL = "Total";
-    public static final int kTotal = kCount + 1;
     public static final String REPORT_ORDER = "ReportOrder";
-    public static final int kReportOrder = kTotal + 1;
     public static final String START_DEPARTURE = "StartDeparture";
-    public static final int kStartDeparture = kReportOrder + 1;
     public static final String END_DEPARTURE = "EndDeparture";
-    public static final int kEndDeparture = kStartDeparture + 1;
     public static final String START_ISSUE = "StartIssue";
-    public static final int kStartIssue = kEndDeparture + 1;
     public static final String END_ISSUE = "EndIssue";
-    public static final int kEndIssue = kStartIssue + 1;
     public static final String INCLUDE_VOID = "IncludeVoid";
-    public static final int kIncludeVoid = kEndIssue + 1;
     public static final String AIRLINE_1ID = "Airline1ID";
-    public static final int kAirline1ID = kIncludeVoid + 1;
     public static final String AIRLINE_2ID = "Airline2ID";
-    public static final int kAirline2ID = kAirline1ID + 1;
     public static final String AIRLINE_3ID = "Airline3ID";
-    public static final int kAirline3ID = kAirline2ID + 1;
     public static final String AIRLINE_4ID = "Airline4ID";
-    public static final int kAirline4ID = kAirline3ID + 1;
     public static final String START_TICKET = "StartTicket";
-    public static final int kStartTicket = kAirline4ID + 1;
     public static final String END_TICKET = "EndTicket";
-    public static final int kEndTicket = kStartTicket + 1;
-    public static final int kTicketScreenRecordLastField = kEndTicket;
-    public static final int kTicketScreenRecordFields = kEndTicket - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -92,55 +79,57 @@ public class TicketScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kTicketScreenRecordFile = null;  // Screen field
+    public static final String TICKET_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new TicketScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new TicketScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportUserID)
-        //  field = new TicketScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportPage)
-        //  field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        if (iFieldSeq == kCount)
-            field = new ShortField(this, "Count", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal)
-            field = new CurrencyField(this, "Total", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReportOrder)
-            field = new TicketReportOrderField(this, "ReportOrder", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartDeparture)
-            field = new DateField(this, "StartDeparture", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDeparture)
-            field = new DateField(this, "EndDeparture", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartIssue)
-            field = new DateField(this, "StartIssue", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndIssue)
-            field = new DateField(this, "EndIssue", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kIncludeVoid)
-            field = new BooleanField(this, "IncludeVoid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirline1ID)
-            field = new AirlineField(this, "Airline1ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirline2ID)
-            field = new AirlineField(this, "Airline2ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirline3ID)
-            field = new AirlineField(this, "Airline3ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirline4ID)
-            field = new AirlineField(this, "Airline4ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartTicket)
-            field = new StringField(this, "StartTicket", 20, null, null);
-        if (iFieldSeq == kEndTicket)
-            field = new StringField(this, "EndTicket", 20, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new TicketScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new TicketScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new TicketScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new ShortField(this, COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CurrencyField(this, TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new TicketReportOrderField(this, REPORT_ORDER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new DateField(this, START_DEPARTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new DateField(this, END_DEPARTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new DateField(this, START_ISSUE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new DateField(this, END_ISSUE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new BooleanField(this, INCLUDE_VOID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new AirlineField(this, AIRLINE_1ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new AirlineField(this, AIRLINE_2ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new AirlineField(this, AIRLINE_3ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new AirlineField(this, AIRLINE_4ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new StringField(this, START_TICKET, 20, null, null);
+        if (iFieldSeq == 20)
+            field = new StringField(this, END_TICKET, 20, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTicketScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

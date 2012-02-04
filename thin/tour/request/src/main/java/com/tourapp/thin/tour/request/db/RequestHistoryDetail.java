@@ -14,10 +14,8 @@ import com.tourapp.model.tour.request.db.*;
 public class RequestHistoryDetail extends FieldList
     implements RequestHistoryDetailModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public RequestHistoryDetail()
     {
@@ -56,25 +54,25 @@ public class RequestHistoryDetail extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "RequestHistoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, REQUEST_HISTORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BrochureID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, BROCHURE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "BrochureQty", 3, null, null);
+        field = new FieldInfo(this, BROCHURE_QTY, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "BrochureDesc", 30, null, null);
-        field = new FieldInfo(this, "MailedOn", 25, null, null);
+        field = new FieldInfo(this, BROCHURE_DESC, 30, null, null);
+        field = new FieldInfo(this, MAILED_ON, 25, null, null);
         field.setDataClass(Date.class);
     }
     /**
@@ -83,7 +81,7 @@ public class RequestHistoryDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "RequestHistoryID");
         keyArea.addKeyField("RequestHistoryID", Constants.ASCENDING);

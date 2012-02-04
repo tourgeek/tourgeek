@@ -10,6 +10,8 @@ public interface TimeTrxModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String PAY_ENDING = "PayEnding";
     public static final String TIME_EMP_NO = "TimeEmpNo";
     public static final String PAY_SEQ = "PaySeq";

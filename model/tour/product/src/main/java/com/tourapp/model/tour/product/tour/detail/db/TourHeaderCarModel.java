@@ -10,6 +10,8 @@ public interface TourHeaderCarModel extends TourHeaderTransportModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     //public static final String TOUR_HEADER_OPTION_ID = TOUR_HEADER_OPTION_ID;
     //public static final String MODIFY_CODE = MODIFY_CODE;
     //public static final String MODIFY_ID = MODIFY_ID;
@@ -76,8 +78,6 @@ public interface TourHeaderCarModel extends TourHeaderTransportModel
     //public static final String MEALS = MEALS;
     //public static final String DAYS = DAYS;
     //public static final String PRICING_TYPE_ID = PRICING_TYPE_ID;
-    //public static final String INVENTORY = INVENTORY;
-    //public static final String SEND_TOUR_ORDER = SEND_TOUR_ORDER;
     public static final String TOUR_HEADER_CAR_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderCarScreen";
     public static final String TOUR_HEADER_CAR_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderCarGridScreen";
 

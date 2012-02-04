@@ -32,17 +32,10 @@ public class ProfileScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String PROFILE_KEY = "ProfileKey";
-    public static final int kProfileKey = kScreenRecordLastField + 1;
     public static final String NAME_SORT = "NameSort";
-    public static final int kNameSort = kProfileKey + 1;
     public static final String POSTAL_CODE_SORT = "PostalCodeSort";
-    public static final int kPostalCodeSort = kNameSort + 1;
     public static final String PROFILE_TYPE_ID = "ProfileTypeID";
-    public static final int kProfileTypeID = kPostalCodeSort + 1;
     public static final String LAST_NAME_SORT = "LastNameSort";
-    public static final int kLastNameSort = kProfileTypeID + 1;
-    public static final int kProfileScreenRecordLastField = kLastNameSort;
-    public static final int kProfileScreenRecordFields = kLastNameSort - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -66,29 +59,25 @@ public class ProfileScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kProfileScreenRecordFile = null;   // Screen field
+    public static final String PROFILE_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kProfileKey)
-            field = new ShortField(this, "ProfileKey", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNameSort)
-            field = new StringField(this, "NameSort", 15, null, null);
-        if (iFieldSeq == kPostalCodeSort)
-            field = new StringField(this, "PostalCodeSort", 10, null, null);
-        if (iFieldSeq == kProfileTypeID)
-            field = new ProfileTypeFilter(this, "ProfileTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kLastNameSort)
-            field = new StringField(this, "LastNameSort", 15, null, null);
+        if (iFieldSeq == 0)
+            field = new ShortField(this, PROFILE_KEY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new StringField(this, NAME_SORT, 15, null, null);
+        if (iFieldSeq == 2)
+            field = new StringField(this, POSTAL_CODE_SORT, 10, null, null);
+        if (iFieldSeq == 3)
+            field = new ProfileTypeFilter(this, PROFILE_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, LAST_NAME_SORT, 15, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProfileScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

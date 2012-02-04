@@ -60,7 +60,7 @@ public class AssetHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(Asset.kAssetFile).getField(Asset.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Asset.ASSET_FILE).getField(Asset.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

@@ -32,15 +32,6 @@ public class LinkTrx extends BaseTrx
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int kLinkedTrxID = kBaseTrxLastField + 1;
-    public static final int kLinkedTrxDescID = kLinkedTrxID + 1;
-    public static final int kLinkTrxLastField = kLinkedTrxDescID;
-    public static final int kLinkTrxFields = kLinkedTrxDescID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kLinkedTrxIDKey = kIDKey + 1;
-    public static final int kLinkTrxLastKey = kLinkedTrxIDKey;
-    public static final int kLinkTrxKeys = kLinkedTrxIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int LINK_DISTRIBUTION_SCREEN = ScreenConstants.DISPLAY_MODE | 8192;
     /**
      * Default constructor.
@@ -65,23 +56,44 @@ public class LinkTrx extends BaseTrx
         super.init(screen);
     }
 
-    public static final String kLinkTrxFile = null;   // Screen field
+    public static final String LINK_TRX_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kLinkedTrxID)
-            field = new TrxField(this, "LinkedTrxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kLinkedTrxDescID)
-            field = new TrxDescField(this, "LinkedTrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new LinkTrx_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new DateTimeField(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new CurrencyField(this, AMOUNT_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new LinkTrx_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new TrxField(this, LINKED_TRX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new TrxDescField(this, LINKED_TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kLinkTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

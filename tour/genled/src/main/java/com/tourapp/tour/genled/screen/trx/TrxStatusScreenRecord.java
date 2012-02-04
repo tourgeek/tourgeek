@@ -32,11 +32,7 @@ public class TrxStatusScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String TRX_SYSTEM_ID = "TrxSystemID";
-    public static final int kTrxSystemID = kScreenRecordLastField + 1;
     public static final String TRX_DESC_ID = "TrxDescID";
-    public static final int kTrxDescID = kTrxSystemID + 1;
-    public static final int kTrxStatusScreenRecordLastField = kTrxDescID;
-    public static final int kTrxStatusScreenRecordFields = kTrxDescID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -60,23 +56,19 @@ public class TrxStatusScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTrxStatusScreenRecordFile = null; // Screen field
+    public static final String TRX_STATUS_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kTrxSystemID)
-            field = new TrxSystemField(this, "TrxSystemID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxDescID)
-            field = new TrxDescField(this, "TrxDescID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new TrxSystemField(this, TRX_SYSTEM_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new TrxDescField(this, TRX_DESC_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTrxStatusScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

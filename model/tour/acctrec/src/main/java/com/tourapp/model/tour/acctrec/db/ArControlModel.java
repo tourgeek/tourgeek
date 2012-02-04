@@ -10,6 +10,8 @@ public interface ArControlModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String AR_BANK_ACCT_ID = "ArBankAcctID";
     public static final String AR_ACCOUNT_ID = "ArAccountID";
     public static final String MCO_REC_ACCOUNT_ID = "McoRecAccountID";

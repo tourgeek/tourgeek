@@ -63,7 +63,7 @@ public class TourHeaderGridScreenAnon extends TourHeaderGridScreen
     public void setupSFields()
     {
         super.setupSFields();
-        this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

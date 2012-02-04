@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class AcctBatch extends FieldList
     implements AcctBatchModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public AcctBatch()
     {
@@ -56,36 +54,36 @@ public class AcctBatch extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 8, null, null);
+        field = new FieldInfo(this, ID, 8, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Recurring", 1, null, null);
+        field = new FieldInfo(this, RECURRING, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "TrxDate", 12, null, null);
+        field = new FieldInfo(this, TRX_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Comments", 30, null, null);
-        field = new FieldInfo(this, "Source", 10, null, null);
-        field = new FieldInfo(this, "Balance", 18, null, null);
+        field = new FieldInfo(this, COMMENTS, 30, null, null);
+        field = new FieldInfo(this, SOURCE, 10, null, null);
+        field = new FieldInfo(this, BALANCE, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "NextSequence", 5, null, new Short((short)1));
+        field = new FieldInfo(this, NEXT_SEQUENCE, 5, null, new Short((short)1));
         field.setDataClass(Short.class);
-        //field = new FieldInfo(this, "AutoReversal", 10, null, null);
+        //field = new FieldInfo(this, AUTO_REVERSAL, 10, null, null);
         //field.setDataClass(Boolean.class);
-        //field = new FieldInfo(this, "AutoReversalDate", 12, null, null);
+        //field = new FieldInfo(this, AUTO_REVERSAL_DATE, 12, null, null);
         //field.setDataClass(Date.class);
         //field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "AutoClosing", 10, null, null);
+        field = new FieldInfo(this, AUTO_CLOSING, 10, null, null);
         field.setDataClass(Boolean.class);
-        //field = new FieldInfo(this, "TrxEntry", 25, null, null);
+        //field = new FieldInfo(this, TRX_ENTRY, 25, null, null);
         //field.setDataClass(Date.class);
     }
     /**
@@ -94,7 +92,7 @@ public class AcctBatch extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "UserID");
         keyArea.addKeyField("UserID", Constants.ASCENDING);

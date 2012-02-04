@@ -96,7 +96,7 @@ public class ProductSearchCategoryScreen extends DetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProductSearchCategory.kProductSearchCategoryFile).getField(ProductSearchCategory.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProductSearchCategory.PRODUCT_SEARCH_CATEGORY_FILE).getField(ProductSearchCategory.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

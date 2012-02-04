@@ -36,9 +36,6 @@ public class BrokerScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String VENDOR_ID = "VendorID";
-    public static final int kVendorID = kScreenRecordLastField + 1;
-    public static final int kBrokerScreenRecordLastField = kVendorID;
-    public static final int kBrokerScreenRecordFields = kVendorID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -62,21 +59,17 @@ public class BrokerScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kBrokerScreenRecordFile = null;  // Screen field
+    public static final String BROKER_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBrokerScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

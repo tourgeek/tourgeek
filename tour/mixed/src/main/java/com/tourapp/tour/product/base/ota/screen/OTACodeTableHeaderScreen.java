@@ -61,7 +61,7 @@ public class OTACodeTableHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(OTACodeTable.kOTACodeTableFile).getField(OTACodeTable.kName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(OTACodeTable.OTA_CODE_TABLE_FILE).getField(OTACodeTable.NAME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

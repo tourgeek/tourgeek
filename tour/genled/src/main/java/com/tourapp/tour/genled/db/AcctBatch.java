@@ -33,25 +33,6 @@ public class AcctBatch extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kUserID = kVirtualRecordLastField + 1;
-    public static final int kRecurring = kUserID + 1;
-    public static final int kTrxDate = kRecurring + 1;
-    public static final int kComments = kTrxDate + 1;
-    public static final int kSource = kComments + 1;
-    public static final int kBalance = kSource + 1;
-    public static final int kNextSequence = kBalance + 1;
-    public static final int kAutoReversal = kNextSequence + 1;
-    public static final int kAutoReversalDate = kAutoReversal + 1;
-    public static final int kAutoClosing = kAutoReversalDate + 1;
-    public static final int kTrxEntry = kAutoClosing + 1;
-    public static final int kAcctBatchLastField = kTrxEntry;
-    public static final int kAcctBatchFields = kTrxEntry - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kUserIDKey = kIDKey + 1;
-    public static final int kAcctBatchLastKey = kUserIDKey;
-    public static final int kAcctBatchKeys = kUserIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final int ACCT_BATCH_DETAIL_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int ACCT_BATCH_POST = ScreenConstants.POST_MODE;
     /**
@@ -76,14 +57,12 @@ public class AcctBatch extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAcctBatchFile = "AcctBatch";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAcctBatchFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ACCT_BATCH_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -128,48 +107,54 @@ public class AcctBatch extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 8, null, null);
+            field = new CounterField(this, ID, 8, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kUserID)
-            field = new AcctBatch_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRecurring)
-            field = new BooleanField(this, "Recurring", 1, null, null);
-        if (iFieldSeq == kTrxDate)
-            field = new AcctBatch_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kComments)
-            field = new StringField(this, "Comments", 30, null, null);
-        if (iFieldSeq == kSource)
-            field = new StringField(this, "Source", 10, null, null);
-        if (iFieldSeq == kBalance)
-            field = new CurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNextSequence)
-            field = new ShortField(this, "NextSequence", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        if (iFieldSeq == kAutoReversal)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new AcctBatch_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new BooleanField(this, RECURRING, 1, null, null);
+        if (iFieldSeq == 5)
+            field = new AcctBatch_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, COMMENTS, 30, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, SOURCE, 10, null, null);
+        if (iFieldSeq == 8)
+            field = new CurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new ShortField(this, NEXT_SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        if (iFieldSeq == 10)
         {
-            field = new BooleanField(this, "AutoReversal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, AUTO_REVERSAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kAutoReversalDate)
+        if (iFieldSeq == 11)
         {
-            field = new DateField(this, "AutoReversalDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, AUTO_REVERSAL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kAutoClosing)
-            field = new BooleanField(this, "AutoClosing", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxEntry)
+        if (iFieldSeq == 12)
+            field = new BooleanField(this, AUTO_CLOSING, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
         {
-            field = new AcctBatch_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AcctBatch_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAcctBatchLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -178,23 +163,19 @@ public class AcctBatch extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kUserIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "UserID");
-            keyArea.addKeyField(kUserID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kRecurring, DBConstants.ASCENDING);
+            keyArea.addKeyField(USER_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(RECURRING, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAcctBatchLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAcctBatchLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

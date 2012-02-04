@@ -68,9 +68,9 @@ public class CashBatchDetailHeaderScreen extends HeaderScreen
      */
     public void setupSFields()
     {
-        this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kAmount).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kChangeBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashBatchScreenRecord.kCashBatchScreenRecordFile).getField(CashBatchScreenRecord.kEndBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.AMOUNT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashBatchScreenRecord.CASH_BATCH_SCREEN_RECORD_FILE).getField(CashBatchScreenRecord.CHANGE_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashBatchScreenRecord.CASH_BATCH_SCREEN_RECORD_FILE).getField(CashBatchScreenRecord.END_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

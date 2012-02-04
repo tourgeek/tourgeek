@@ -35,20 +35,6 @@ public class ProfileControl extends ControlRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDefaultProfileStatusID = kControlRecordLastField + 1;
-    public static final int kDefaultProfileClassID = kDefaultProfileStatusID + 1;
-    public static final int kDefaultProfileTypeID = kDefaultProfileClassID + 1;
-    public static final int kCountryID = kDefaultProfileTypeID + 1;
-    public static final int kLanguageID = kCountryID + 1;
-    public static final int kCurrencysID = kLanguageID + 1;
-    public static final int kMessageTransportID = kCurrencysID + 1;
-    public static final int kProfileControlLastField = kMessageTransportID;
-    public static final int kProfileControlFields = kMessageTransportID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProfileControlLastKey = kIDKey;
-    public static final int kProfileControlKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -71,14 +57,12 @@ public class ProfileControl extends ControlRecord
     {
         super.init(screen);
     }
-
-    public static final String kProfileControlFile = "ProfileControl";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProfileControlFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PROFILE_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -100,31 +84,37 @@ public class ProfileControl extends ControlRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDefaultProfileStatusID)
-            field = new ProfileStatusField(this, "DefaultProfileStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDefaultProfileClassID)
-            field = new ProfileClassField(this, "DefaultProfileClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDefaultProfileTypeID)
-            field = new ProfileTypeFilter(this, "DefaultProfileTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kLanguageID)
-            field = new LanguageField(this, "LanguageID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrencysID)
-            field = new CurrencysField(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMessageTransportID)
-            field = new MessageTransportField(this, "MessageTransportID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProfileStatusField(this, DEFAULT_PROFILE_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new ProfileClassField(this, DEFAULT_PROFILE_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new ProfileTypeFilter(this, DEFAULT_PROFILE_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new LanguageField(this, LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CurrencysField(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new MessageTransportField(this, MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProfileControlLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -133,17 +123,13 @@ public class ProfileControl extends ControlRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProfileControlLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProfileControlLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

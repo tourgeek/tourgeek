@@ -10,13 +10,17 @@ public interface BookingAirModel extends BookingDetailModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     //public static final String BOOKING_ID = BOOKING_ID;
     //public static final String BOOKING_PAX_ID = BOOKING_PAX_ID;
     //public static final String MODULE_ID = MODULE_ID;
     //public static final String TOUR_HEADER_DETAIL_ID = TOUR_HEADER_DETAIL_ID;
     //public static final String TOUR_HEADER_OPTION_ID = TOUR_HEADER_OPTION_ID;
+    //public static final String MODULE_START_DATE = MODULE_START_DATE;
     //public static final String DESCRIPTION = DESCRIPTION;
     //public static final String PRODUCT_TYPE = PRODUCT_TYPE;
+    //public static final String REMOTE_REFERENCE_NO = REMOTE_REFERENCE_NO;
     //public static final String PRODUCT_TYPE_ID = PRODUCT_TYPE_ID;
     //public static final String DETAIL_DATE = DETAIL_DATE;
     //public static final String GMT_DATE = GMT_DATE;
@@ -52,8 +56,6 @@ public interface BookingAirModel extends BookingDetailModel
     //public static final String PRODUCT_STATUS_REQUEST = PRODUCT_STATUS_REQUEST;
     //public static final String REMOTE_BOOKING_NO = REMOTE_BOOKING_NO;
     //public static final String ACK_DAYS = ACK_DAYS;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
     //public static final String DETAIL_END_DATE = DETAIL_END_DATE;
     //public static final String GMT_END_DATE = GMT_END_DATE;
     //public static final String MEAL_SUMMARY = MEAL_SUMMARY;
@@ -129,12 +131,6 @@ public interface BookingAirModel extends BookingDetailModel
     //public static final String ASK_FOR_ANSWER = ASK_FOR_ANSWER;
     //public static final String ALWAYS_RESOLVE = ALWAYS_RESOLVE;
     //public static final String PRICING_TYPE_ID = PRICING_TYPE_ID;
-    //public static final String INVENTORY_MESSAGE_LOG_ID = INVENTORY_MESSAGE_LOG_ID;
-    //public static final String INFO_MESSAGE_LOG_ID = INFO_MESSAGE_LOG_ID;
-    //public static final String PRODUCT_MESSAGE_LOG_ID = PRODUCT_MESSAGE_LOG_ID;
-    //public static final String TOTAL_COST_USD = TOTAL_COST_USD;
-    //public static final String COST_MESSAGE_LOG_ID = COST_MESSAGE_LOG_ID;
-    //public static final String DETAIL_DELETED = DETAIL_DELETED;
 
     public static final String BOOKING_AIR_HEADER_ID_KEY = "BookingAirHeaderID";
 

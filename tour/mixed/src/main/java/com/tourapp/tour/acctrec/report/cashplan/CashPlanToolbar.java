@@ -73,10 +73,10 @@ public class CashPlanToolbar extends ReportToolbar
     public void setupSFields()
     {
         super.setupSFields();
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kPeriodType).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(CashPlanScreenRecord.kCashPlanScreenRecordFile).getField(CashPlanScreenRecord.kPeriodLength).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.PERIOD_TYPE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(CashPlanScreenRecord.CASH_PLAN_SCREEN_RECORD_FILE).getField(CashPlanScreenRecord.PERIOD_LENGTH).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

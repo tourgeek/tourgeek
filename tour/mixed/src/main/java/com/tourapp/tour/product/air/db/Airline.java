@@ -36,33 +36,6 @@ public class Airline extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kShortDesc = kDescription + 1;
-    public static final int kAirlineCode = kShortDesc + 1;
-    public static final int kICAOCode = kAirlineCode + 1;
-    public static final int kCountryID = kICAOCode + 1;
-    public static final int kAirlineNo = kCountryID + 1;
-    public static final int kVendorID = kAirlineNo + 1;
-    public static final int kContact = kVendorID + 1;
-    public static final int kContactTitle = kContact + 1;
-    public static final int kAcceptMCOs = kContactTitle + 1;
-    public static final int kMcoSvcChg = kAcceptMCOs + 1;
-    public static final int kMcoRecAccountID = kMcoSvcChg + 1;
-    public static final int kMcoVarAccountID = kMcoRecAccountID + 1;
-    public static final int kOverrideAccountID = kMcoVarAccountID + 1;
-    public static final int kORVarAccountID = kOverrideAccountID + 1;
-    public static final int kLogo = kORVarAccountID + 1;
-    public static final int kAirlineLastField = kLogo;
-    public static final int kAirlineFields = kLogo - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDescriptionKey = kIDKey + 1;
-    public static final int kAirlineCodeKey = kDescriptionKey + 1;
-    public static final int kAirlineNoKey = kAirlineCodeKey + 1;
-    public static final int kVendorIDKey = kAirlineNoKey + 1;
-    public static final int kAirlineLastKey = kVendorIDKey;
-    public static final int kAirlineKeys = kVendorIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -85,14 +58,12 @@ public class Airline extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kAirlineFile = "Airline";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kAirlineFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AIRLINE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -135,67 +106,73 @@ public class Airline extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 40, null, null);
-        if (iFieldSeq == kShortDesc)
-            field = new StringField(this, "ShortDesc", 16, null, null);
-        if (iFieldSeq == kAirlineCode)
-            field = new StringField(this, "AirlineCode", 2, null, null);
-        if (iFieldSeq == kICAOCode)
-            field = new StringField(this, "ICAOCode", 4, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirlineNo)
-            field = new ShortField(this, "AirlineNo", 4, null, null);
-        if (iFieldSeq == kVendorID)
-            field = new VendorSelect(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kContact)
-            field = new StringField(this, "Contact", 30, null, null);
-        if (iFieldSeq == kContactTitle)
-            field = new StringField(this, "ContactTitle", 30, null, null);
-        if (iFieldSeq == kAcceptMCOs)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 40, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, SHORT_DESC, 16, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, AIRLINE_CODE, 2, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, ICAO_CODE, 4, null, null);
+        if (iFieldSeq == 7)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new ShortField(this, AIRLINE_NO, 4, null, null);
+        if (iFieldSeq == 9)
+            field = new VendorSelect(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new StringField(this, CONTACT, 30, null, null);
+        if (iFieldSeq == 11)
+            field = new StringField(this, CONTACT_TITLE, 30, null, null);
+        if (iFieldSeq == 12)
         {
-            field = new BooleanField(this, "AcceptMCOs", 1, null, null);
+            field = new BooleanField(this, ACCEPT_MC_OS, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kMcoSvcChg)
+        if (iFieldSeq == 13)
         {
-            field = new PercentField(this, "McoSvcChg", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new PercentField(this, MCO_SVC_CHG, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kMcoRecAccountID)
+        if (iFieldSeq == 14)
         {
-            field = new AccountField(this, "McoRecAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, MCO_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kMcoVarAccountID)
+        if (iFieldSeq == 15)
         {
-            field = new AccountField(this, "McoVarAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, MCO_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kOverrideAccountID)
+        if (iFieldSeq == 16)
         {
-            field = new AccountField(this, "OverrideAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, OVERRIDE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kORVarAccountID)
+        if (iFieldSeq == 17)
         {
-            field = new AccountField(this, "ORVarAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, OR_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kLogo)
-            field = new ImageField(this, "Logo", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new ImageField(this, LOGO, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kAirlineLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -204,37 +181,33 @@ public class Airline extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAirlineCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "AirlineCode");
-            keyArea.addKeyField(kAirlineCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(AIRLINE_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kAirlineNoKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AirlineNo");
-            keyArea.addKeyField(kAirlineNo, DBConstants.ASCENDING);
+            keyArea.addKeyField(AIRLINE_NO, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kAirlineLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kAirlineLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

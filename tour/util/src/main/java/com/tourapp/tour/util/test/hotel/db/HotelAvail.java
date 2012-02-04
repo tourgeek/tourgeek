@@ -32,18 +32,6 @@ public class HotelAvail extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kHotelCode = kVirtualRecordLastField + 1;
-    public static final int kChainCode = kHotelCode + 1;
-    public static final int kCurrencyCode = kChainCode + 1;
-    public static final int kAmountBeforeTax = kCurrencyCode + 1;
-    public static final int kAmountAfterTax = kAmountBeforeTax + 1;
-    public static final int kHotelAvailLastField = kAmountAfterTax;
-    public static final int kHotelAvailFields = kAmountAfterTax - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kHotelAvailLastKey = kIDKey;
-    public static final int kHotelAvailKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -88,27 +76,33 @@ public class HotelAvail extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kHotelCode)
-            field = new StringField(this, "HotelCode", 20, null, null);
-        if (iFieldSeq == kChainCode)
-            field = new StringField(this, "ChainCode", 30, null, null);
-        if (iFieldSeq == kCurrencyCode)
-            field = new StringField(this, "CurrencyCode", 3, null, null);
-        if (iFieldSeq == kAmountBeforeTax)
-            field = new CurrencyField(this, "AmountBeforeTax", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountAfterTax)
-            field = new CurrencyField(this, "AmountAfterTax", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, HOTEL_CODE, 20, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CHAIN_CODE, 30, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, AMOUNT_BEFORE_TAX, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CurrencyField(this, AMOUNT_AFTER_TAX, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kHotelAvailLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -117,17 +111,13 @@ public class HotelAvail extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kHotelAvailLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kHotelAvailLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

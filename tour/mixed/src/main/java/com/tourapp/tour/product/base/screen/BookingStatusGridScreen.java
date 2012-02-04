@@ -70,7 +70,7 @@ public class BookingStatusGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(BookingStatus.kBookingStatusFile).getField(BookingStatus.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BookingStatus.BOOKING_STATUS_FILE).getField(BookingStatus.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

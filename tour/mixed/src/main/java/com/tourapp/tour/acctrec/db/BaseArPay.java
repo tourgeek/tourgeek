@@ -34,25 +34,6 @@ public class BaseArPay extends BaseTrx
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTrxStatusID = kTrxStatusID;
-    //public static final int kTrxDate = kTrxDate;
-    public static final int kAmtApply = kAmountLocal;
-    //public static final int kTrxEntry = kTrxEntry;
-    //public static final int kTrxUserID = kTrxUserID;
-    public static final int kBookingID = kBaseTrxLastField + 1;
-    public static final int kGross = kBookingID + 1;
-    public static final int kSvcPer = kGross + 1;
-    public static final int kSvcAmt = kSvcPer + 1;
-    public static final int kNet = kSvcAmt + 1;
-    public static final int kComments = kNet + 1;
-    public static final int kDateSubmitted = kComments + 1;
-    public static final int kDatePaid = kDateSubmitted + 1;
-    public static final int kAmountPaid = kDatePaid + 1;
-    public static final int kPaid = kAmountPaid + 1;
-    public static final int kPaymentEntered = kPaid + 1;
-    public static final int kBaseArPayLastField = kPaymentEntered;
-    public static final int kBaseArPayFields = kPaymentEntered - DBConstants.MAIN_FIELD + 1;
     public static final int POST = ScreenConstants.POST_MODE;
     public static final int ENTRY_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE;
     public static final int ENTRY_GRID_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 2;
@@ -84,62 +65,68 @@ public class BaseArPay extends BaseTrx
         super.init(screen);
     }
 
-    public static final String kBaseArPayFile = null; // Screen field
+    public static final String BASE_AR_PAY_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxStatusID)
-        //  field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTrxDate)
-            field = new BaseArPay_TrxDate(this, "TrxDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGross)
-            field = new CurrencyField(this, "Gross", 10, null, null);
-        if (iFieldSeq == kSvcPer)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new BaseArPay_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new BaseArPay_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, AMT_APPLY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new BaseArPay_TrxEntry(this, TRX_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new CurrencyField(this, GROSS, 10, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new PercentField(this, "SvcPer", 5, null, null);
+            field = new PercentField(this, SVC_PER, 5, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSvcAmt)
-            field = new CurrencyField(this, "SvcAmt", 8, null, null);
-        if (iFieldSeq == kNet)
-            field = new CurrencyField(this, "Net", 10, null, null);
-        if (iFieldSeq == kAmtApply)
-            field = new CurrencyField(this, "AmtApply", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kComments)
-            field = new StringField(this, "Comments", 30, null, null);
-        //if (iFieldSeq == kTrxEntry)
-        //  field = new BaseArPay_TrxEntry(this, "TrxEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTrxUserID)
-        //  field = new BaseArPay_TrxUserID(this, "TrxUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDateSubmitted)
-            field = new DateTimeField(this, "DateSubmitted", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDatePaid)
-            field = new DateTimeField(this, "DatePaid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAmountPaid)
-            field = new CurrencyField(this, "AmountPaid", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPaid)
+        if (iFieldSeq == 11)
+            field = new CurrencyField(this, SVC_AMT, 8, null, null);
+        if (iFieldSeq == 12)
+            field = new CurrencyField(this, NET, 10, null, null);
+        if (iFieldSeq == 13)
+            field = new StringField(this, COMMENTS, 30, null, null);
+        if (iFieldSeq == 14)
+            field = new DateTimeField(this, DATE_SUBMITTED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new DateTimeField(this, DATE_PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new CurrencyField(this, AMOUNT_PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
         {
-            field = new BooleanField(this, "Paid", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BooleanField(this, PAID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPaymentEntered)
-            field = new DateTimeField(this, "PaymentEntered", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new DateTimeField(this, PAYMENT_ENTERED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBaseArPayLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

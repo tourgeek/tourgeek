@@ -34,18 +34,6 @@ public class Deduction extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kType = kDescription + 1;
-    public static final int kAccountID = kType + 1;
-    public static final int kEnterHours = kAccountID + 1;
-    public static final int kDeductionLastField = kEnterHours;
-    public static final int kDeductionFields = kEnterHours - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDescriptionKey = kIDKey + 1;
-    public static final int kDeductionLastKey = kDescriptionKey;
-    public static final int kDeductionKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -68,14 +56,12 @@ public class Deduction extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kDeductionFile = "Deduction";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kDeductionFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(DEDUCTION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -118,28 +104,34 @@ public class Deduction extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 3, null, null);
+            field = new CounterField(this, ID, 3, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 20, null, null);
-        if (iFieldSeq == kType)
-            field = new DedEarnTypeField(this, "Type", 1, null, null);
-        if (iFieldSeq == kAccountID)
-            field = new AccountField(this, "AccountID", 7, null, null);
-        if (iFieldSeq == kEnterHours)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 20, null, null);
+        if (iFieldSeq == 4)
+            field = new DedEarnTypeField(this, TYPE, 1, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, ACCOUNT_ID, 7, null, null);
+        if (iFieldSeq == 6)
         {
-            field = new BooleanField(this, "EnterHours", 1, null, null);
+            field = new BooleanField(this, ENTER_HOURS, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kDeductionLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -148,22 +140,18 @@ public class Deduction extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kDeductionLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kDeductionLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

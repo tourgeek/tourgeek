@@ -31,6 +31,7 @@ public class OTASeatPreference extends OTACode
      implements OTASeatPreferenceModel
 {
     private static final long serialVersionUID = 1L;
+
     /**
      * Default constructor.
      */
@@ -53,14 +54,12 @@ public class OTASeatPreference extends OTACode
     {
         super.init(screen);
     }
-
-    public static final String kOTASeatPreferenceFile = "STP";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kOTASeatPreferenceFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(OTA_SEAT_PREFERENCE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -75,6 +74,33 @@ public class OTASeatPreference extends OTACode
     public int getDatabaseType()
     {
         return DBConstants.TABLE | DBConstants.MAPPED;
+    }
+    /**
+     * Add this field in the Record's field sequence.
+     */
+    public BaseField setupField(int iFieldSeq)
+    {
+        BaseField field = null;
+        //if (iFieldSeq == 0)
+        //{
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new StringField(this, NAME, 60, null, null);
+        if (field == null)
+            field = super.setupField(iFieldSeq);
+        return field;
     }
 
 }

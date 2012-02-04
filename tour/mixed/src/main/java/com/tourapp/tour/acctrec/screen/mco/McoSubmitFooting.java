@@ -71,8 +71,8 @@ public class McoSubmitFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kTotalGross).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(McoScreenRecord.kMcoScreenRecordFile).getField(McoScreenRecord.kTotalNet).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(McoScreenRecord.MCO_SCREEN_RECORD_FILE).getField(McoScreenRecord.TOTAL_GROSS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(McoScreenRecord.MCO_SCREEN_RECORD_FILE).getField(McoScreenRecord.TOTAL_NET).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

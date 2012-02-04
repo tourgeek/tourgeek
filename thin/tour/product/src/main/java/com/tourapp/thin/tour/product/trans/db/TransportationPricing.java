@@ -15,22 +15,8 @@ import com.tourapp.model.tour.product.trans.db.*;
 public class TransportationPricing extends ProductPricing
     implements TransportationPricingModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String PRODUCT_ID = PRODUCT_ID;
-    //public static final String PAX_CATEGORY_ID = PAX_CATEGORY_ID;
-    //public static final String RATE_ID = RATE_ID;
-    //public static final String CLASS_ID = CLASS_ID;
-    //public static final String START_DATE = START_DATE;
-    //public static final String END_DATE = END_DATE;
-    //public static final String COST = COST;
-    //public static final String PRODUCT_TERMS_ID = PRODUCT_TERMS_ID;
-    //public static final String PRICE = PRICE;
-    //public static final String COMMISSIONABLE = COMMISSIONABLE;
-    //public static final String COMMISSION_RATE = COMMISSION_RATE;
-    //public static final String PAY_AT = PAY_AT;
 
     public TransportationPricing()
     {
@@ -69,43 +55,43 @@ public class TransportationPricing extends ProductPricing
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ProductID", 10, null, null);
+        field = new FieldInfo(this, PRODUCT_ID, 10, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        field = new FieldInfo(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        field = new FieldInfo(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "StartDate", 12, null, null);
+        field = new FieldInfo(this, START_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "EndDate", 12, null, null);
+        field = new FieldInfo(this, END_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Cost", 18, null, null);
+        field = new FieldInfo(this, COST, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ProductTermsID", 1, null, null);
+        field = new FieldInfo(this, PRODUCT_TERMS_ID, 1, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Price", 18, null, null);
+        field = new FieldInfo(this, PRICE, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Commissionable", 10, null, new Boolean(true));
+        field = new FieldInfo(this, COMMISSIONABLE, 10, null, new Boolean(true));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "CommissionRate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "PayAt", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field = new FieldInfo(this, "FromPax", 5, null, null);
+        field = new FieldInfo(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, FROM_PAX, 5, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "ToPax", 5, null, null);
+        field = new FieldInfo(this, TO_PAX, 5, null, null);
         field.setDataClass(Short.class);
     }
     /**
@@ -114,7 +100,7 @@ public class TransportationPricing extends ProductPricing
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductID");
         keyArea.addKeyField("ProductID", Constants.ASCENDING);

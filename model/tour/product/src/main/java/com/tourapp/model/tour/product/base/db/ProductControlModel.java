@@ -10,6 +10,8 @@ public interface ProductControlModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String AIR_RATE_ID = "AirRateID";
     public static final String AIR_CLASS_ID = "AirClassID";
     public static final String HOTEL_RATE_ID = "HotelRateID";

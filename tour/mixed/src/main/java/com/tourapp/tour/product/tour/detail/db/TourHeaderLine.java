@@ -23,7 +23,6 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.tour.detail.screen.*;
-import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.product.tour.detail.db.*;
@@ -36,26 +35,6 @@ public class TourHeaderLine extends TourSub
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kTourHeaderOptionID = kTourHeaderOptionID;
-    //public static final int kModifyCode = kModifyCode;
-    //public static final int kModifyID = kModifyID;
-    public static final int kSequence = kTourSubLastField + 1;
-    public static final int kPaxCategoryID = kSequence + 1;
-    public static final int kDescription = kPaxCategoryID + 1;
-    public static final int kPrice = kDescription + 1;
-    public static final int kCommissionable = kPrice + 1;
-    public static final int kCommissionRate = kCommissionable + 1;
-    public static final int kPayAt = kCommissionRate + 1;
-    public static final int kCost = kPayAt + 1;
-    public static final int kProductTermsID = kCost + 1;
-    public static final int kTourHeaderLineLastField = kProductTermsID;
-    public static final int kTourHeaderLineFields = kProductTermsID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTourHeaderOptionIDKey = kIDKey + 1;
-    public static final int kTourHeaderLineLastKey = kTourHeaderOptionIDKey;
-    public static final int kTourHeaderLineKeys = kTourHeaderOptionIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -78,14 +57,12 @@ public class TourHeaderLine extends TourSub
     {
         super.init(screen);
     }
-
-    public static final String kTourHeaderLineFile = "TourHeaderLine";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTourHeaderLineFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TOUR_HEADER_LINE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -128,47 +105,53 @@ public class TourHeaderLine extends TourSub
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kTourHeaderOptionID)
-        //  field = new TourHeaderOptionField(this, "TourHeaderOptionID", 8, null, null);
-        if (iFieldSeq == kSequence)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, 8, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new ModifyCodeField(this, MODIFY_CODE, 1, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new ModifyTourSubField(this, MODIFY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
         {
-            field = new ShortField(this, "Sequence", 4, null, null);
+            field = new ShortField(this, SEQUENCE, 4, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPaxCategoryID)
-            field = new PaxBaseCategoryField(this, "PaxCategoryID", 1, null, new Integer(6) /* PaxCategory.ALL_ID */);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 45, null, null);
-        if (iFieldSeq == kPrice)
-            field = new FullCurrencyField(this, "Price", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCommissionable)
-            field = new BooleanField(this, "Commissionable", 1, null, new Boolean(true));
-        if (iFieldSeq == kCommissionRate)
+        if (iFieldSeq == 7)
+            field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, 1, null, new Integer(6) /* PaxCategory.ALL_ID */);
+        if (iFieldSeq == 8)
+            field = new StringField(this, DESCRIPTION, 45, null, null);
+        if (iFieldSeq == 9)
+            field = new FullCurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new BooleanField(this, COMMISSIONABLE, 1, null, new Boolean(true));
+        if (iFieldSeq == 11)
         {
-            field = new PercentField(this, "CommissionRate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new PercentField(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPayAt)
-            field = new PayAtField(this, "PayAt", 1, null, "PayAtField.FINAL_PAY_DATE");
-        if (iFieldSeq == kCost)
-            field = new FullCurrencyField(this, "Cost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductTermsID)
-            field = new ProductTermsField(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kModifyCode)
-        //  field = new ModifyCodeField(this, "ModifyCode", 1, null, null);
-        //if (iFieldSeq == kModifyID)
-        //  field = new ModifyTourSubField(this, "ModifyID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new PayAtField(this, PAY_AT, 1, null, "PayAtField.FINAL_PAY_DATE");
+        if (iFieldSeq == 13)
+            field = new FullCurrencyField(this, COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ProductTermsField(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourHeaderLineLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -177,24 +160,20 @@ public class TourHeaderLine extends TourSub
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourHeaderOptionIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourHeaderOptionID");
-            keyArea.addKeyField(kTourHeaderOptionID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kPaxCategoryID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_HEADER_OPTION_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAX_CATEGORY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTourHeaderLineLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTourHeaderLineLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

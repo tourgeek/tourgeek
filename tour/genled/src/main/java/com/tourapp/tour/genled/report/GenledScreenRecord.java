@@ -33,54 +33,33 @@ public class GenledScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportPage = kReportPage;
-    //public static final int kReportTotal = kReportTotal;
-    //public static final int kReportCount = kReportCount;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String START_ACCOUNT_ID = "StartAccountID";
-    public static final int kStartAccountID = kReportScreenRecordLastField + 1;
     public static final String END_ACCOUNT_ID = "EndAccountID";
-    public static final int kEndAccountID = kStartAccountID + 1;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kEndAccountID + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String CUTOFF_DATE = "CutoffDate";
-    public static final int kCutoffDate = kEndDate + 1;
     public static final String PRINT_DETAIL = "PrintDetail";
-    public static final int kPrintDetail = kCutoffDate + 1;
     public static final String SUB_TOTALS = "SubTotals";
-    public static final int kSubTotals = kPrintDetail + 1;
     public static final String PAGE_BREAKS = "PageBreaks";
-    public static final int kPageBreaks = kSubTotals + 1;
     public static final String START_ENTRY = "StartEntry";
-    public static final int kStartEntry = kPageBreaks + 1;
     public static final String END_ENTRY = "EndEntry";
-    public static final int kEndEntry = kStartEntry + 1;
     public static final String PROFIT_CENTER_ID = "ProfitCenterID";
-    public static final int kProfitCenterID = kEndEntry + 1;
     public static final String START_SOURCE = "StartSource";
-    public static final int kStartSource = kProfitCenterID + 1;
     public static final String END_SOURCE = "EndSource";
-    public static final int kEndSource = kStartSource + 1;
     public static final String START_BALANCE = "StartBalance";
-    public static final int kStartBalance = kEndSource + 1;
     public static final String CHANGE_BALANCE = "ChangeBalance";
-    public static final int kChangeBalance = kStartBalance + 1;
     public static final String END_BALANCE = "EndBalance";
-    public static final int kEndBalance = kChangeBalance + 1;
     public static final String SUB_TOTAL = "SubTotal";
-    public static final int kSubTotal = kEndBalance + 1;
     public static final String DEBIT = "Debit";
-    public static final int kDebit = kSubTotal + 1;
     public static final String CREDIT = "Credit";
-    public static final int kCredit = kDebit + 1;
     public static final String TEMPLATE = "template";
-    public static final int ktemplate = kCredit + 1;
-    public static final int kGenledScreenRecordLastField = ktemplate;
-    public static final int kGenledScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;
     protected Period m_recPeriod = null;
     /**
      * Default constructor.
@@ -106,71 +85,69 @@ public class GenledScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kGenledScreenRecordFile = null;  // Screen field
+    public static final String GENLED_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new GenledScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new GenledScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportUserID)
-        //  field = new GenledScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportPage)
-        //  field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        if (iFieldSeq == kReportTotal)
-            field = new DrCrField(this, "ReportTotal", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        //if (iFieldSeq == kReportCount)
-        //  field = new IntegerField(this, "ReportCount", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
-        if (iFieldSeq == kStartAccountID)
-            field = new AccountField(this, "StartAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndAccountID)
-            field = new AccountField(this, "EndAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCutoffDate)
-            field = new DateField(this, "CutoffDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPrintDetail)
-            field = new BooleanField(this, "PrintDetail", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == kSubTotals)
-            field = new BooleanField(this, "SubTotals", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPageBreaks)
-            field = new BooleanField(this, "PageBreaks", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartEntry)
-            field = new DateField(this, "StartEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndEntry)
-            field = new DateField(this, "EndEntry", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProfitCenterID)
-            field = new ProfitCenterField(this, "ProfitCenterID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartSource)
-            field = new StringField(this, "StartSource", 10, null, null);
-        if (iFieldSeq == kEndSource)
-            field = new StringField(this, "EndSource", 10, null, null);
-        if (iFieldSeq == kStartBalance)
-            field = new DrCrField(this, "StartBalance", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        if (iFieldSeq == kChangeBalance)
-            field = new DrCrField(this, "ChangeBalance", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        if (iFieldSeq == kEndBalance)
-            field = new DrCrField(this, "EndBalance", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        if (iFieldSeq == kSubTotal)
-            field = new DrCrField(this, "SubTotal", Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
-        if (iFieldSeq == kDebit)
-            field = new StringField(this, "Debit", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCredit)
-            field = new StringField(this, "Credit", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == ktemplate)
-            field = new StringField(this, "template", 40, null, null);
+        //if (iFieldSeq == 0)
+        //  field = new GenledScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new GenledScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new GenledScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        if (iFieldSeq == 5)
+            field = new DrCrField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new AccountField(this, START_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new AccountField(this, END_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new DateField(this, CUTOFF_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new BooleanField(this, PRINT_DETAIL, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 13)
+            field = new BooleanField(this, SUB_TOTALS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new BooleanField(this, PAGE_BREAKS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new DateField(this, START_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new DateField(this, END_ENTRY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new ProfitCenterField(this, PROFIT_CENTER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new StringField(this, START_SOURCE, 10, null, null);
+        if (iFieldSeq == 19)
+            field = new StringField(this, END_SOURCE, 10, null, null);
+        if (iFieldSeq == 20)
+            field = new DrCrField(this, START_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        if (iFieldSeq == 21)
+            field = new DrCrField(this, CHANGE_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        if (iFieldSeq == 22)
+            field = new DrCrField(this, END_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        if (iFieldSeq == 23)
+            field = new DrCrField(this, SUB_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        if (iFieldSeq == 24)
+            field = new StringField(this, DEBIT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new StringField(this, CREDIT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 26)
+            field = new StringField(this, TEMPLATE, 40, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kGenledScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

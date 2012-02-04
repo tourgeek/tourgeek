@@ -40,55 +40,29 @@ public class ProductScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String PRODUCT_ID = "ProductID";
-    public static final int kProductID = kScreenRecordLastField + 1;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kProductID + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String DESCRIPTION = "Description";
-    public static final int kDescription = kEndDate + 1;
     public static final String CITY_ID = "CityID";
-    public static final int kCityID = kDescription + 1;
     public static final String TO_CITY_ID = "ToCityID";
-    public static final int kToCityID = kCityID + 1;
     public static final String CONTINENT_ID = "ContinentID";
-    public static final int kContinentID = kToCityID + 1;
     public static final String REGION_ID = "RegionID";
-    public static final int kRegionID = kContinentID + 1;
     public static final String COUNTRY_ID = "CountryID";
-    public static final int kCountryID = kRegionID + 1;
     public static final String STATE_ID = "StateID";
-    public static final int kStateID = kCountryID + 1;
     public static final String VENDOR_ID = "VendorID";
-    public static final int kVendorID = kStateID + 1;
     public static final String RATE_ID = "RateID";
-    public static final int kRateID = kVendorID + 1;
     public static final String CLASS_ID = "ClassID";
-    public static final int kClassID = kRateID + 1;
     public static final String DETAIL_DATE = "DetailDate";
-    public static final int kDetailDate = kClassID + 1;
     public static final String PAX = "Pax";
-    public static final int kPax = kDetailDate + 1;
     public static final String LAST_CHANGED = "LastChanged";
-    public static final int kLastChanged = kPax + 1;
     public static final String REMOTE_QUERY_ENABLED = "RemoteQueryEnabled";
-    public static final int kRemoteQueryEnabled = kLastChanged + 1;
     public static final String BLOCKED = "Blocked";
-    public static final int kBlocked = kRemoteQueryEnabled + 1;
     public static final String OVERSELL = "Oversell";
-    public static final int kOversell = kBlocked + 1;
     public static final String CLOSED = "Closed";
-    public static final int kClosed = kOversell + 1;
     public static final String DELETE = "Delete";
-    public static final int kDelete = kClosed + 1;
     public static final String READ_ONLY = "ReadOnly";
-    public static final int kReadOnly = kDelete + 1;
     public static final String PRODUCT_SEARCH_TYPE_ID = "ProductSearchTypeID";
-    public static final int kProductSearchTypeID = kReadOnly + 1;
     public static final String PRODUCT_TYPE_ID = "ProductTypeID";
-    public static final int kProductTypeID = kProductSearchTypeID + 1;
-    public static final int kProductScreenRecordLastField = kProductTypeID;
-    public static final int kProductScreenRecordFields = kProductTypeID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -112,67 +86,63 @@ public class ProductScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kProductScreenRecordFile = null;   // Screen field
+    public static final String PRODUCT_SCREEN_RECORD_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kProductID)
-            field = new ProductField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 10, null, null);
-        if (iFieldSeq == kCityID)
-            field = new CityField(this, "CityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kToCityID)
-            field = new CityField(this, "ToCityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kContinentID)
-            field = new ContinentField(this, "ContinentID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRegionID)
-            field = new RegionField(this, "RegionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCountryID)
-            field = new CountryField(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStateID)
-            field = new StateField(this, "StateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRateID)
-            field = new BaseRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClassID)
-            field = new BaseClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetailDate)
-            field = new DateField(this, "DetailDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPax)
-            field = new ShortField(this, "Pax", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)2));
-        if (iFieldSeq == kLastChanged)
-            field = new ProductScreenRecord_LastChanged(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRemoteQueryEnabled)
-            field = new BooleanField(this, "RemoteQueryEnabled", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBlocked)
-            field = new ShortField(this, "Blocked", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOversell)
-            field = new ShortField(this, "Oversell", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClosed)
-            field = new BooleanField(this, "Closed", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDelete)
-            field = new BooleanField(this, "Delete", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kReadOnly)
-            field = new BooleanField(this, "ReadOnly", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductSearchTypeID)
-            field = new ProductSearchTypeField(this, "ProductSearchTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductTypeID)
-            field = new ProductTypeField(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new ProductField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 10, null, null);
+        if (iFieldSeq == 4)
+            field = new CityField(this, CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new CityField(this, TO_CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new ContinentField(this, CONTINENT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new RegionField(this, REGION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CountryField(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new StateField(this, STATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new BaseClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new DateField(this, DETAIL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ShortField(this, PAX, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)2));
+        if (iFieldSeq == 15)
+            field = new ProductScreenRecord_LastChanged(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new BooleanField(this, REMOTE_QUERY_ENABLED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new ShortField(this, BLOCKED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new ShortField(this, OVERSELL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new BooleanField(this, CLOSED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new BooleanField(this, DELETE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new BooleanField(this, READ_ONLY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 22)
+            field = new ProductSearchTypeField(this, PRODUCT_SEARCH_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 23)
+            field = new ProductTypeField(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProductScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

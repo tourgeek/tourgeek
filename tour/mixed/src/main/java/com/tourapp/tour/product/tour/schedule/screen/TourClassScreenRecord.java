@@ -32,9 +32,6 @@ public class TourClassScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String TOUR_CLASS_ID = "TourClassID";
-    public static final int kTourClassID = kScreenRecordLastField + 1;
-    public static final int kTourClassScreenRecordLastField = kTourClassID;
-    public static final int kTourClassScreenRecordFields = kTourClassID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -58,21 +55,17 @@ public class TourClassScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kTourClassScreenRecordFile = null; // Screen field
+    public static final String TOUR_CLASS_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kTourClassID)
-            field = new TourClassField(this, "TourClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new TourClassField(this, TOUR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourClassScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

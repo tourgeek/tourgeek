@@ -36,77 +36,45 @@ public class ApReportScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kReportDate = kReportDate;
-    //public static final int kReportTime = kReportTime;
-    //public static final int kReportUserID = kReportUserID;
-    //public static final int kReportPage = kReportPage;
-    //public static final int kReportCount = kReportCount;
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String VENDOR_ID = "VendorID";
-    public static final int kVendorID = kReportScreenRecordLastField + 1;
     public static final String CURRENCYS_ID = "CurrencysID";
-    public static final int kCurrencysID = kVendorID + 1;
     public static final String VOUCHERS = "Vouchers";
-    public static final int kVouchers = kCurrencysID + 1;
     public static final String DEP_ESTIMATES = "DepEstimates";
-    public static final int kDepEstimates = kVouchers + 1;
     public static final String OPEN_ITEMS = "OpenItems";
-    public static final int kOpenItems = kDepEstimates + 1;
     public static final String SHOW_PAID = "ShowPaid";
-    public static final int kShowPaid = kOpenItems + 1;
     public static final String TOUR_ID = "TourID";
-    public static final int kTourID = kShowPaid + 1;
     public static final String TOUR_TYPE_ID = "TourTypeID";
-    public static final int kTourTypeID = kTourID + 1;
     public static final String TOUR_HEADER_ID = "TourHeaderID";
-    public static final int kTourHeaderID = kTourTypeID + 1;
     public static final String TOUR_CLASS_ID = "TourClassID";
-    public static final int kTourClassID = kTourHeaderID + 1;
     public static final String PRODUCT_CATEGORY_ID = "ProductCategoryID";
-    public static final int kProductCategoryID = kTourClassID + 1;
     public static final String TOUR_STATUS_ID = "TourStatusID";
-    public static final int kTourStatusID = kProductCategoryID + 1;
     public static final String START_DEPARTURE = "StartDeparture";
-    public static final int kStartDeparture = kTourStatusID + 1;
     public static final String END_DEPARTURE = "EndDeparture";
-    public static final int kEndDeparture = kStartDeparture + 1;
     public static final String DETAIL = "Detail";
-    public static final int kDetail = kEndDeparture + 1;
     public static final String START_DATE = "StartDate";
-    public static final int kStartDate = kDetail + 1;
     public static final String END_DATE = "EndDate";
-    public static final int kEndDate = kStartDate + 1;
     public static final String CUTOFF_DATE = "CutoffDate";
-    public static final int kCutoffDate = kEndDate + 1;
     public static final String PAYMENTS = "Payments";
-    public static final int kPayments = kCutoffDate + 1;
     public static final String BALANCE = "Balance";
-    public static final int kBalance = kPayments + 1;
     public static final String TOTAL_ESTIMATE = "TotalEstimate";
-    public static final int kTotalEstimate = kBalance + 1;
     public static final String TOTAL_INVOICE = "TotalInvoice";
-    public static final int kTotalInvoice = kTotalEstimate + 1;
     public static final String TOTAL_BALANCE = "TotalBalance";
-    public static final int kTotalBalance = kTotalInvoice + 1;
     public static final String TOTAL_USD_BAL = "TotalUSDBal";
-    public static final int kTotalUSDBal = kTotalBalance + 1;
     public static final String TOTAL_VENDORS = "TotalVendors";
-    public static final int kTotalVendors = kTotalUSDBal + 1;
     public static final String GRAND_USD_BAL = "GrandUSDBal";
-    public static final int kGrandUSDBal = kTotalVendors + 1;
     public static final String COUNT = "Count";
-    public static final int kCount = kGrandUSDBal + 1;
     public static final String TOTAL_COST = "TotalCost";
-    public static final int kTotalCost = kCount + 1;
     public static final String TOTAL = "Total";
-    public static final int kTotal = kTotalCost + 1;
     public static final String EXCLUDE_AMOUNT = "ExcludeAmount";
-    public static final int kExcludeAmount = kTotal + 1;
     public static final String TEMPLATE = "template";
-    public static final int ktemplate = kExcludeAmount + 1;
     public static final String TRUE_FIELD = "TrueField";
-    public static final int kTrueField = ktemplate + 1;
-    public static final int kApReportScreenRecordLastField = kTrueField;
-    public static final int kApReportScreenRecordFields = kTrueField - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -130,93 +98,93 @@ public class ApReportScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kApReportScreenRecordFile = null;    // Screen field
+    public static final String AP_REPORT_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kReportDate)
-        //  field = new ApReportScreenRecord_ReportDate(this, "ReportDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportTime)
-        //  field = new ApReportScreenRecord_ReportTime(this, "ReportTime", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportUserID)
-        //  field = new ApReportScreenRecord_ReportUserID(this, "ReportUserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kReportPage)
-        //  field = new ShortField(this, "ReportPage", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        //if (iFieldSeq == kReportCount)
-        //  field = new IntegerField(this, "ReportCount", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
-        if (iFieldSeq == kVendorID)
-            field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrencysID)
-            field = new CurrencysField(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kVouchers)
-            field = new BooleanField(this, "Vouchers", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepEstimates)
-            field = new BooleanField(this, "DepEstimates", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kOpenItems)
-            field = new BooleanField(this, "OpenItems", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
-        if (iFieldSeq == kShowPaid)
-            field = new BooleanField(this, "ShowPaid", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (iFieldSeq == kTourID)
-            field = new TourField(this, "TourID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourTypeID)
-            field = new TourTypeSelect(this, "TourTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourHeaderID)
-            field = new TourHeaderSelect(this, "TourHeaderID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourClassID)
-            field = new TourClassSelect(this, "TourClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductCategoryID)
-            field = new ProductCategoryField(this, "ProductCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourStatusID)
-            field = new TourStatusSelect(this, "TourStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kStartDeparture)
-            field = new DateField(this, "StartDeparture", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDeparture)
-            field = new DateField(this, "EndDeparture", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDetail)
-            field = new BooleanField(this, "Detail", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (iFieldSeq == kStartDate)
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndDate)
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCutoffDate)
-            field = new ApReportScreenRecord_CutoffDate(this, "CutoffDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayments)
-            field = new CurrencyField(this, "Payments", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBalance)
-            field = new CurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalEstimate)
-            field = new FullCurrencyField(this, "TotalEstimate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalInvoice)
-            field = new FullCurrencyField(this, "TotalInvoice", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalBalance)
-            field = new FullCurrencyField(this, "TotalBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalUSDBal)
-            field = new CurrencyField(this, "TotalUSDBal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalVendors)
-            field = new ShortField(this, "TotalVendors", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGrandUSDBal)
-            field = new CurrencyField(this, "GrandUSDBal", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCount)
-            field = new ShortField(this, "Count", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotalCost)
-            field = new CurrencyField(this, "TotalCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal)
-            field = new CurrencyField(this, "Total", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kExcludeAmount)
-            field = new CurrencyField(this, "ExcludeAmount", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == ktemplate)
-            field = new StringField(this, "template", 60, null, null);
-        if (iFieldSeq == kTrueField)
-            field = new BooleanField(this, "TrueField", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        //if (iFieldSeq == 0)
+        //  field = new ApReportScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new ApReportScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new ApReportScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CurrencysField(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new BooleanField(this, VOUCHERS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new BooleanField(this, DEP_ESTIMATES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new BooleanField(this, OPEN_ITEMS, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        if (iFieldSeq == 12)
+            field = new BooleanField(this, SHOW_PAID, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 13)
+            field = new TourField(this, TOUR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new TourTypeSelect(this, TOUR_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new TourHeaderSelect(this, TOUR_HEADER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new TourClassSelect(this, TOUR_CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new ProductCategoryField(this, PRODUCT_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new TourStatusSelect(this, TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new DateField(this, START_DEPARTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new DateField(this, END_DEPARTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new BooleanField(this, DETAIL, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 22)
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 23)
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 24)
+            field = new ApReportScreenRecord_CutoffDate(this, CUTOFF_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new CurrencyField(this, PAYMENTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 26)
+            field = new CurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 27)
+            field = new FullCurrencyField(this, TOTAL_ESTIMATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 28)
+            field = new FullCurrencyField(this, TOTAL_INVOICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 29)
+            field = new FullCurrencyField(this, TOTAL_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 30)
+            field = new CurrencyField(this, TOTAL_USD_BAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 31)
+            field = new ShortField(this, TOTAL_VENDORS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 32)
+            field = new CurrencyField(this, GRAND_USD_BAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 33)
+            field = new ShortField(this, COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 34)
+            field = new CurrencyField(this, TOTAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 35)
+            field = new CurrencyField(this, TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 36)
+            field = new CurrencyField(this, EXCLUDE_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 37)
+            field = new StringField(this, TEMPLATE, 60, null, null);
+        if (iFieldSeq == 38)
+            field = new BooleanField(this, TRUE_FIELD, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kApReportScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

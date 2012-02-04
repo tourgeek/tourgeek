@@ -10,6 +10,8 @@ public interface OTACodeTableModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String NAME = "Name";
     public static final String NAME_CODE = "NameCode";
     public static final String CREATION_DATE = "CreationDate";

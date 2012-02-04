@@ -33,18 +33,6 @@ public class ProfileCertification extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProfileID = kVirtualRecordLastField + 1;
-    public static final int kCertificationTypeID = kProfileID + 1;
-    public static final int kCertificationCode = kCertificationTypeID + 1;
-    public static final int kProfileCertificationLastField = kCertificationCode;
-    public static final int kProfileCertificationFields = kCertificationCode - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProfileIDKey = kIDKey + 1;
-    public static final int kCertificationCodeKey = kProfileIDKey + 1;
-    public static final int kProfileCertificationLastKey = kCertificationCodeKey;
-    public static final int kProfileCertificationKeys = kCertificationCodeKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -67,14 +55,12 @@ public class ProfileCertification extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kProfileCertificationFile = "ProfileCertification";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kProfileCertificationFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(PROFILE_CERTIFICATION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -103,23 +89,29 @@ public class ProfileCertification extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProfileID)
-            field = new ProfileField(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCertificationTypeID)
-            field = new CertificationTypeField(this, "CertificationTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCertificationCode)
-            field = new StringField(this, "CertificationCode", 50, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProfileField(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new CertificationTypeField(this, CERTIFICATION_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, CERTIFICATION_CODE, 50, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProfileCertificationLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -128,27 +120,23 @@ public class ProfileCertification extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCertificationCodeKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CertificationCode");
-            keyArea.addKeyField(kCertificationCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CERTIFICATION_CODE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kProfileCertificationLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kProfileCertificationLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

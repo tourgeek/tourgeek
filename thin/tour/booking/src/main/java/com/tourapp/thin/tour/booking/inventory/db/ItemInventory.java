@@ -15,21 +15,8 @@ import com.tourapp.model.tour.booking.inventory.db.*;
 public class ItemInventory extends Inventory
     implements ItemInventoryModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String PRODUCT_TYPE_ID = PRODUCT_TYPE_ID;
-    //public static final String PRODUCT_ID = PRODUCT_ID;
-    //public static final String RATE_ID = RATE_ID;
-    //public static final String CLASS_ID = CLASS_ID;
-    //public static final String OTHER_ID = OTHER_ID;
-    //public static final String INV_DATE = INV_DATE;
-    //public static final String BLOCKED = BLOCKED;
-    //public static final String USED = USED;
-    //public static final String AVAILABLE = AVAILABLE;
-    //public static final String OVERSELL = OVERSELL;
-    //public static final String CLOSED = CLOSED;
 
     public ItemInventory()
     {
@@ -68,37 +55,37 @@ public class ItemInventory extends Inventory
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 10, null, null);
+        field = new FieldInfo(this, ID, 10, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "OtherID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OTHER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "InvDate", 12, null, null);
+        field = new FieldInfo(this, INV_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Blocked", 3, null, null);
+        field = new FieldInfo(this, BLOCKED, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Used", 3, null, new Short((short)0));
+        field = new FieldInfo(this, USED, 3, null, new Short((short)0));
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Available", 3, null, null);
+        field = new FieldInfo(this, AVAILABLE, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Oversell", 3, null, null);
+        field = new FieldInfo(this, OVERSELL, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Closed", 10, null, null);
+        field = new FieldInfo(this, CLOSED, 10, null, null);
         field.setDataClass(Boolean.class);
     }
     /**

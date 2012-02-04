@@ -33,56 +33,6 @@ public class TimeTrx extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kPayEnding = kVirtualRecordLastField + 1;
-    public static final int kTimeEmpNo = kPayEnding + 1;
-    public static final int kPaySeq = kTimeEmpNo + 1;
-    public static final int kPaySalary = kPaySeq + 1;
-    public static final int kRegularHrs = kPaySalary + 1;
-    public static final int kOvertimeHrs = kRegularHrs + 1;
-    public static final int kSp1Hours = kOvertimeHrs + 1;
-    public static final int kSp2Hours = kSp1Hours + 1;
-    public static final int kTimeDe1 = kSp2Hours + 1;
-    public static final int kTimeHrs1 = kTimeDe1 + 1;
-    public static final int kTimeAmt1 = kTimeHrs1 + 1;
-    public static final int kTimeDe2 = kTimeAmt1 + 1;
-    public static final int kTimeHrs2 = kTimeDe2 + 1;
-    public static final int kTimeAmt2 = kTimeHrs2 + 1;
-    public static final int kTimeDe3 = kTimeAmt2 + 1;
-    public static final int kTimeHrs3 = kTimeDe3 + 1;
-    public static final int kTimeAmt3 = kTimeHrs3 + 1;
-    public static final int kTimeDe4 = kTimeAmt3 + 1;
-    public static final int kTimeHrs4 = kTimeDe4 + 1;
-    public static final int kTimeAmt4 = kTimeHrs4 + 1;
-    public static final int kRegularPay = kTimeAmt4 + 1;
-    public static final int kOvertimePay = kRegularPay + 1;
-    public static final int kSpecial1Pay = kOvertimePay + 1;
-    public static final int kSpecial2Pay = kSpecial1Pay + 1;
-    public static final int kGrossPay = kSpecial2Pay + 1;
-    public static final int kStateGrossPay = kGrossPay + 1;
-    public static final int kNonTaxPay = kStateGrossPay + 1;
-    public static final int kFedTaxes = kNonTaxPay + 1;
-    public static final int kStateTaxes = kFedTaxes + 1;
-    public static final int kLocalTaxes = kStateTaxes + 1;
-    public static final int kFicaTaxes = kLocalTaxes + 1;
-    public static final int kSdiTaxes = kFicaTaxes + 1;
-    public static final int kOtherDed = kSdiTaxes + 1;
-    public static final int kNetPay = kOtherDed + 1;
-    public static final int kPrCheckNum = kNetPay + 1;
-    public static final int kWeeksWorked = kPrCheckNum + 1;
-    public static final int kDedEarnHours = kWeeksWorked + 1;
-    public static final int kDedEarnDesc = kDedEarnHours + 1;
-    public static final int kDedEarnAmt = kDedEarnDesc + 1;
-    public static final int kDedEarnYtd = kDedEarnAmt + 1;
-    public static final int kPayGross = kDedEarnYtd + 1;
-    public static final int kPayTaxes = kPayGross + 1;
-    public static final int kTimeTrxLastField = kPayTaxes;
-    public static final int kTimeTrxFields = kPayTaxes - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kPayEndingKey = kIDKey + 1;
-    public static final int kTimeTrxLastKey = kPayEndingKey;
-    public static final int kTimeTrxKeys = kPayEndingKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -105,14 +55,12 @@ public class TimeTrx extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kTimeTrxFile = "TimeTrx";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kTimeTrxFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(TIME_TRX_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -155,158 +103,164 @@ public class TimeTrx extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kPayEnding)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new TimeTrx_PayEnding(this, "PayEnding", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TimeTrx_PayEnding(this, PAY_ENDING, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeEmpNo)
+        if (iFieldSeq == 4)
         {
-            field = new IntegerField(this, "TimeEmpNo", 6, null, null);
+            field = new IntegerField(this, TIME_EMP_NO, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPaySeq)
-            field = new ShortField(this, "PaySeq", 1, null, null);
-        if (iFieldSeq == kPaySalary)
-            field = new BooleanField(this, "PaySalary", 1, null, null);
-        if (iFieldSeq == kRegularHrs)
-            field = new FloatField(this, "RegularHrs", 6, null, null);
-        if (iFieldSeq == kOvertimeHrs)
+        if (iFieldSeq == 5)
+            field = new ShortField(this, PAY_SEQ, 1, null, null);
+        if (iFieldSeq == 6)
+            field = new BooleanField(this, PAY_SALARY, 1, null, null);
+        if (iFieldSeq == 7)
+            field = new FloatField(this, REGULAR_HRS, 6, null, null);
+        if (iFieldSeq == 8)
         {
-            field = new FloatField(this, "OvertimeHrs", 6, null, null);
+            field = new FloatField(this, OVERTIME_HRS, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSp1Hours)
+        if (iFieldSeq == 9)
         {
-            field = new FloatField(this, "Sp1Hours", 6, null, null);
+            field = new FloatField(this, SP_1_HOURS, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kSp2Hours)
+        if (iFieldSeq == 10)
         {
-            field = new FloatField(this, "Sp2Hours", 6, null, null);
+            field = new FloatField(this, SP_2_HOURS, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeDe1)
-            field = new StringField(this, "TimeDe1", 3, null, null);
-        if (iFieldSeq == kTimeHrs1)
+        if (iFieldSeq == 11)
+            field = new StringField(this, TIME_DE_1, 3, null, null);
+        if (iFieldSeq == 12)
         {
-            field = new FloatField(this, "TimeHrs1", 6, null, null);
+            field = new FloatField(this, TIME_HRS_1, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeAmt1)
+        if (iFieldSeq == 13)
         {
-            field = new FloatField(this, "TimeAmt1", 7, null, null);
+            field = new FloatField(this, TIME_AMT_1, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeDe2)
-            field = new StringField(this, "TimeDe2", 3, null, null);
-        if (iFieldSeq == kTimeHrs2)
+        if (iFieldSeq == 14)
+            field = new StringField(this, TIME_DE_2, 3, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new FloatField(this, "TimeHrs2", 6, null, null);
+            field = new FloatField(this, TIME_HRS_2, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeAmt2)
+        if (iFieldSeq == 16)
         {
-            field = new FloatField(this, "TimeAmt2", 7, null, null);
+            field = new FloatField(this, TIME_AMT_2, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeDe3)
-            field = new StringField(this, "TimeDe3", 3, null, null);
-        if (iFieldSeq == kTimeHrs3)
+        if (iFieldSeq == 17)
+            field = new StringField(this, TIME_DE_3, 3, null, null);
+        if (iFieldSeq == 18)
         {
-            field = new FloatField(this, "TimeHrs3", 6, null, null);
+            field = new FloatField(this, TIME_HRS_3, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeAmt3)
+        if (iFieldSeq == 19)
         {
-            field = new FloatField(this, "TimeAmt3", 7, null, null);
+            field = new FloatField(this, TIME_AMT_3, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeDe4)
-            field = new StringField(this, "TimeDe4", 3, null, null);
-        if (iFieldSeq == kTimeHrs4)
+        if (iFieldSeq == 20)
+            field = new StringField(this, TIME_DE_4, 3, null, null);
+        if (iFieldSeq == 21)
         {
-            field = new FloatField(this, "TimeHrs4", 6, null, null);
+            field = new FloatField(this, TIME_HRS_4, 6, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kTimeAmt4)
+        if (iFieldSeq == 22)
         {
-            field = new FloatField(this, "TimeAmt4", 7, null, null);
+            field = new FloatField(this, TIME_AMT_4, 7, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kRegularPay)
-            field = new FloatField(this, "RegularPay", 8, null, null);
-        if (iFieldSeq == kOvertimePay)
-            field = new FloatField(this, "OvertimePay", 8, null, null);
-        if (iFieldSeq == kSpecial1Pay)
-            field = new FloatField(this, "Special1Pay", 8, null, null);
-        if (iFieldSeq == kSpecial2Pay)
-            field = new FloatField(this, "Special2Pay", 8, null, null);
-        if (iFieldSeq == kGrossPay)
-            field = new FloatField(this, "GrossPay", 8, null, null);
-        if (iFieldSeq == kStateGrossPay)
-            field = new FloatField(this, "StateGrossPay", 8, null, null);
-        if (iFieldSeq == kNonTaxPay)
-            field = new FloatField(this, "NonTaxPay", 8, null, null);
-        if (iFieldSeq == kFedTaxes)
-            field = new FloatField(this, "FedTaxes", 7, null, null);
-        if (iFieldSeq == kStateTaxes)
-            field = new FloatField(this, "StateTaxes", 7, null, null);
-        if (iFieldSeq == kLocalTaxes)
-            field = new FloatField(this, "LocalTaxes", 7, null, null);
-        if (iFieldSeq == kFicaTaxes)
-            field = new FloatField(this, "FicaTaxes", 7, null, null);
-        if (iFieldSeq == kSdiTaxes)
-            field = new FloatField(this, "SdiTaxes", 7, null, null);
-        if (iFieldSeq == kOtherDed)
-            field = new FloatField(this, "OtherDed", 7, null, null);
-        if (iFieldSeq == kNetPay)
-            field = new FloatField(this, "NetPay", 8, null, null);
-        if (iFieldSeq == kPrCheckNum)
-            field = new IntegerField(this, "PrCheckNum", 6, null, null);
-        if (iFieldSeq == kWeeksWorked)
-            field = new FloatField(this, "WeeksWorked", 6, null, null);
-        if (iFieldSeq == kDedEarnHours)
+        if (iFieldSeq == 23)
+            field = new FloatField(this, REGULAR_PAY, 8, null, null);
+        if (iFieldSeq == 24)
+            field = new FloatField(this, OVERTIME_PAY, 8, null, null);
+        if (iFieldSeq == 25)
+            field = new FloatField(this, SPECIAL_1_PAY, 8, null, null);
+        if (iFieldSeq == 26)
+            field = new FloatField(this, SPECIAL_2_PAY, 8, null, null);
+        if (iFieldSeq == 27)
+            field = new FloatField(this, GROSS_PAY, 8, null, null);
+        if (iFieldSeq == 28)
+            field = new FloatField(this, STATE_GROSS_PAY, 8, null, null);
+        if (iFieldSeq == 29)
+            field = new FloatField(this, NON_TAX_PAY, 8, null, null);
+        if (iFieldSeq == 30)
+            field = new FloatField(this, FED_TAXES, 7, null, null);
+        if (iFieldSeq == 31)
+            field = new FloatField(this, STATE_TAXES, 7, null, null);
+        if (iFieldSeq == 32)
+            field = new FloatField(this, LOCAL_TAXES, 7, null, null);
+        if (iFieldSeq == 33)
+            field = new FloatField(this, FICA_TAXES, 7, null, null);
+        if (iFieldSeq == 34)
+            field = new FloatField(this, SDI_TAXES, 7, null, null);
+        if (iFieldSeq == 35)
+            field = new FloatField(this, OTHER_DED, 7, null, null);
+        if (iFieldSeq == 36)
+            field = new FloatField(this, NET_PAY, 8, null, null);
+        if (iFieldSeq == 37)
+            field = new IntegerField(this, PR_CHECK_NUM, 6, null, null);
+        if (iFieldSeq == 38)
+            field = new FloatField(this, WEEKS_WORKED, 6, null, null);
+        if (iFieldSeq == 39)
         {
-            field = new FloatField(this, "DedEarnHours", 6, null, null);
+            field = new FloatField(this, DED_EARN_HOURS, 6, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDedEarnDesc)
+        if (iFieldSeq == 40)
         {
-            field = new StringField(this, "DedEarnDesc", 16, null, null);
+            field = new StringField(this, DED_EARN_DESC, 16, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDedEarnAmt)
+        if (iFieldSeq == 41)
         {
-            field = new FloatField(this, "DedEarnAmt", 8, null, null);
+            field = new FloatField(this, DED_EARN_AMT, 8, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kDedEarnYtd)
+        if (iFieldSeq == 42)
         {
-            field = new DoubleField(this, "DedEarnYtd", 10, null, null);
+            field = new DoubleField(this, DED_EARN_YTD, 10, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPayGross)
+        if (iFieldSeq == 43)
         {
-            field = new FloatField(this, "PayGross", 8, null, null);
+            field = new FloatField(this, PAY_GROSS, 8, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPayTaxes)
+        if (iFieldSeq == 44)
         {
-            field = new FloatField(this, "PayTaxes", 8, null, null);
+            field = new FloatField(this, PAY_TAXES, 8, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTimeTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -315,24 +269,20 @@ public class TimeTrx extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kPayEndingKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "PayEnding");
-            keyArea.addKeyField(kPayEnding, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTimeEmpNo, DBConstants.ASCENDING);
-            keyArea.addKeyField(kPaySeq, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAY_ENDING, DBConstants.ASCENDING);
+            keyArea.addKeyField(TIME_EMP_NO, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAY_SEQ, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kTimeTrxLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kTimeTrxLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

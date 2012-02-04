@@ -131,10 +131,10 @@ public class TrxStatusGridScreen extends DetailGridScreen
             field.getReference();    // Read the record
         }
         ((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_SYSTEM_ID)).getReferenceRecord(this);
-        this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kStatusCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kStatusDesc).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kPreferredSign).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TrxStatus.kTrxStatusFile).getField(TrxStatus.kActiveTrx).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TrxStatus.TRX_STATUS_FILE).getField(TrxStatus.STATUS_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TrxStatus.TRX_STATUS_FILE).getField(TrxStatus.STATUS_DESC).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TrxStatus.TRX_STATUS_FILE).getField(TrxStatus.PREFERRED_SIGN).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TrxStatus.TRX_STATUS_FILE).getField(TrxStatus.ACTIVE_TRX).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

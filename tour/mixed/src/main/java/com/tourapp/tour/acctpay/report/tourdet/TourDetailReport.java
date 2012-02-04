@@ -122,8 +122,8 @@ public class TourDetailReport extends ReportScreen
         this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.TOTAL_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true, true));    // Sub-count
         this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.GRAND_USD_BAL), ApTrx.INVOICE_BALANCE_LOCAL, true, true));          // Total count
         
-        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.REPORT_COUNT), -1, true, true, true));    // Sub-count
-        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.COUNT), -1, true, true, false));     // Total count
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.REPORT_COUNT), null, true, true, true));    // Sub-count
+        this.getRecord(ApTrx.AP_TRX_FILE).addListener(new SubCountHandler(this.getScreenRecord().getField(ApReportScreenRecord.COUNT), null, true, true, false));     // Total count
         
         this.getRecord(ApTrx.AP_TRX_FILE).addListener(new MoveEstimateHandler(null));
     }
@@ -140,11 +140,11 @@ public class TourDetailReport extends ReportScreen
      */
     public void setupSFields()
     {
-        this.getRecord(Tour.kTourFile).getField(Tour.kCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Tour.kTourFile).getField(Tour.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Tour.kTourFile).getField(Tour.kTourHeaderID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(Tour.kTourFile).getField(Tour.kTourStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_HEADER_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Get the Heading for this report.

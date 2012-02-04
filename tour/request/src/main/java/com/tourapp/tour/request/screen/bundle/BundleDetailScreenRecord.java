@@ -32,9 +32,6 @@ public class BundleDetailScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String BUNDLE_ID = "BundleID";
-    public static final int kBundleID = kScreenRecordLastField + 1;
-    public static final int kBundleDetailScreenRecordLastField = kBundleID;
-    public static final int kBundleDetailScreenRecordFields = kBundleID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -58,21 +55,17 @@ public class BundleDetailScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kBundleDetailScreenRecordFile = null;    // Screen field
+    public static final String BUNDLE_DETAIL_SCREEN_RECORD_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kBundleID)
-            field = new BundleField(this, "BundleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new BundleField(this, BUNDLE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBundleDetailScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

@@ -15,6 +15,7 @@ import com.tourapp.model.tour.genled.db.*;
 public class LinkTrx extends BaseTrx
     implements LinkTrxModel
 {
+    private static final long serialVersionUID = 1L;
 
 
     public LinkTrx()

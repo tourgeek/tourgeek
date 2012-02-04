@@ -29,7 +29,6 @@ import com.tourapp.tour.booking.history.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.db.event.*;
-import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
@@ -40,35 +39,6 @@ public class BookingLine extends BookingSub
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kBookingID = kBookingID;
-    //public static final int kBookingPaxID = kBookingPaxID;
-    //public static final int kModuleID = kModuleID;
-    //public static final int kTourHeaderOptionID = kTourHeaderOptionID;
-    //public static final int kModuleStartDate = kModuleStartDate;
-    //public static final int kDescription = kDescription;
-    public static final int kSequence = kBookingSubLastField + 1;
-    public static final int kPrice = kSequence + 1;
-    public static final int kQuantity = kPrice + 1;
-    public static final int kGross = kQuantity + 1;
-    public static final int kCommissionable = kGross + 1;
-    public static final int kCommissionRate = kCommissionable + 1;
-    public static final int kCommission = kCommissionRate + 1;
-    public static final int kNet = kCommission + 1;
-    public static final int kPricingStatusID = kNet + 1;
-    public static final int kPayAt = kPricingStatusID + 1;
-    public static final int kPaxGroups = kPayAt + 1;
-    public static final int kBookingDetailID = kPaxGroups + 1;
-    public static final int kPaxCategoryID = kBookingDetailID + 1;
-    public static final int kBookingLineLastField = kPaxCategoryID;
-    public static final int kBookingLineFields = kPaxCategoryID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kDetailAccessKey = kIDKey + 1;
-    public static final int kBookingIDKey = kDetailAccessKey + 1;
-    public static final int kBookingDetailIDKey = kBookingIDKey + 1;
-    public static final int kBookingLineLastKey = kBookingDetailIDKey;
-    public static final int kBookingLineKeys = kBookingDetailIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -91,14 +61,12 @@ public class BookingLine extends BookingSub
     {
         super.init(screen);
     }
-
-    public static final String kBookingLineFile = "BookingLine";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingLineFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_LINE_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -141,64 +109,79 @@ public class BookingLine extends BookingSub
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kBookingID)
-        //  field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kBookingPaxID)
-        //  field = new BookingPaxField(this, "BookingPaxID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kSequence)
-            field = new ShortField(this, "Sequence", 4, null, new Short((short)9999));
-        //if (iFieldSeq == kModuleID)
-        //  field = new TourHeaderField(this, "ModuleID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTourHeaderOptionID)
-        //  field = new TourHeaderOptionField(this, "TourHeaderOptionID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kModuleStartDate)
-        //  field = new DateTimeField(this, "ModuleStartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 60, null, null);
-        if (iFieldSeq == kPrice)
-            field = new CurrencyField(this, "Price", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kQuantity)
-            field = new ShortField(this, "Quantity", 3, null, null);
-        if (iFieldSeq == kGross)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new BookingPaxField(this, BOOKING_PAX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new TourHeaderField(this, MODULE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new TourHeaderDetailField(this, TOUR_HEADER_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new DateTimeField(this, MODULE_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new StringField(this, DESCRIPTION, 60, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new CurrencyField(this, "Gross", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new StringField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kCommissionable)
-            field = new BooleanField(this, "Commissionable", 1, null, new Boolean(true));
-        if (iFieldSeq == kCommissionRate)
-            field = new BookingLine_CommissionRate(this, "CommissionRate", 5, null, null);
-        if (iFieldSeq == kCommission)
+        //if (iFieldSeq == 11)
+        //  field = new StringField(this, REMOTE_REFERENCE_NO, 60, null, null);
+        if (iFieldSeq == 12)
+            field = new ShortField(this, SEQUENCE, 4, null, new Short((short)9999));
+        if (iFieldSeq == 13)
+            field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new ShortField(this, QUANTITY, 3, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new CurrencyField(this, "Commission", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, GROSS, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kNet)
+        if (iFieldSeq == 16)
+            field = new BooleanField(this, COMMISSIONABLE, 1, null, new Boolean(true));
+        if (iFieldSeq == 17)
+            field = new BookingLine_CommissionRate(this, COMMISSION_RATE, 5, null, null);
+        if (iFieldSeq == 18)
         {
-            field = new CurrencyField(this, "Net", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, COMMISSION, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPricingStatusID)
-            field = new PricingStatusField(this, "PricingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPayAt)
-            field = new PayAtField(this, "PayAt", 1, null, "PayAtField.FINAL_PAY_DATE");
-        if (iFieldSeq == kPaxGroups)
-            field = new IntegerField(this, "PaxGroups", 8, null, null);
-        if (iFieldSeq == kBookingDetailID)
-            field = new ReferenceField(this, "BookingDetailID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPaxCategoryID)
-            field = new PaxBaseCategoryField(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+        {
+            field = new CurrencyField(this, NET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 20)
+            field = new PricingStatusField(this, PRICING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 21)
+            field = new PayAtField(this, PAY_AT, 1, null, "PayAtField.FINAL_PAY_DATE");
+        if (iFieldSeq == 22)
+            field = new IntegerField(this, PAX_GROUPS, 8, null, null);
+        if (iFieldSeq == 23)
+            field = new ReferenceField(this, BOOKING_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 24)
+            field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingLineLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -207,40 +190,36 @@ public class BookingLine extends BookingSub
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDetailAccessKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingPaxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kTourHeaderDetailID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kModuleStartDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_HEADER_DETAIL_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MODULE_START_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kSequence, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingDetailIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingDetailID");
-            keyArea.addKeyField(kBookingID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingPaxID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingDetailID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kPaxCategoryID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_DETAIL_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PAX_CATEGORY_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingLineLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingLineLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

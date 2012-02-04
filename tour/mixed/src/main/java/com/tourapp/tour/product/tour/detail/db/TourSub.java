@@ -39,12 +39,6 @@ public class TourSub extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kTourHeaderOptionID = kVirtualRecordLastField + 1;
-    public static final int kModifyCode = kTourHeaderOptionID + 1;
-    public static final int kModifyID = kModifyCode + 1;
-    public static final int kTourSubLastField = kModifyID;
-    public static final int kTourSubFields = kModifyID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -68,30 +62,36 @@ public class TourSub extends VirtualRecord
         super.init(screen);
     }
 
-    public static final String kTourSubFile = null;   // Screen field
+    public static final String TOUR_SUB_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kTourHeaderOptionID)
-            field = new TourHeaderOptionField(this, "TourHeaderOptionID", 8, null, null);
-        if (iFieldSeq == kModifyCode)
-            field = new ModifyCodeField(this, "ModifyCode", 1, null, null);
-        if (iFieldSeq == kModifyID)
-            field = new ModifyTourSubField(this, "ModifyID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, 8, null, null);
+        if (iFieldSeq == 4)
+            field = new ModifyCodeField(this, MODIFY_CODE, 1, null, null);
+        if (iFieldSeq == 5)
+            field = new ModifyTourSubField(this, MODIFY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTourSubLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

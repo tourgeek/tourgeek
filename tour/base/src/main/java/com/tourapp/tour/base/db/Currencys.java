@@ -34,31 +34,6 @@ public class Currencys extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kDescription = kVirtualRecordLastField + 1;
-    public static final int kCurrencyCode = kDescription + 1;
-    public static final int kLastRate = kCurrencyCode + 1;
-    public static final int kRateChangedDate = kLastRate + 1;
-    public static final int kRateChangedBy = kRateChangedDate + 1;
-    public static final int kCostingRate = kRateChangedBy + 1;
-    public static final int kCostingChangedDate = kCostingRate + 1;
-    public static final int kCostingChangedBy = kCostingChangedDate + 1;
-    public static final int kRoundAt = kCostingChangedBy + 1;
-    public static final int kIntegerDesc = kRoundAt + 1;
-    public static final int kFractionDesc = kIntegerDesc + 1;
-    public static final int kFractionAmount = kFractionDesc + 1;
-    public static final int kSign = kFractionAmount + 1;
-    public static final int kLanguageID = kSign + 1;
-    public static final int kNaturalInteger = kLanguageID + 1;
-    public static final int kNaturalFraction = kNaturalInteger + 1;
-    public static final int kCurrencysLastField = kNaturalFraction;
-    public static final int kCurrencysFields = kNaturalFraction - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCurrencyCodeKey = kIDKey + 1;
-    public static final int kDescriptionKey = kCurrencyCodeKey + 1;
-    public static final int kCurrencysLastKey = kDescriptionKey;
-    public static final int kCurrencysKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -81,14 +56,12 @@ public class Currencys extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kCurrencysFile = "Currencys";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCurrencysFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CURRENCYS_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -131,52 +104,58 @@ public class Currencys extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 25, null, null);
-        if (iFieldSeq == kCurrencyCode)
-            field = new StringField(this, "CurrencyCode", 3, null, null);
-        if (iFieldSeq == kLastRate)
-            field = new RealField(this, "LastRate", 10, null, null);
-        if (iFieldSeq == kRateChangedDate)
-            field = new DateField(this, "RateChangedDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRateChangedBy)
-            field = new UserField(this, "RateChangedBy", 16, null, null);
-        if (iFieldSeq == kCostingRate)
-            field = new RealField(this, "CostingRate", 10, null, null);
-        if (iFieldSeq == kCostingChangedDate)
-            field = new DateField(this, "CostingChangedDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCostingChangedBy)
-            field = new UserField(this, "CostingChangedBy", 16, null, null);
-        if (iFieldSeq == kRoundAt)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new StringField(this, DESCRIPTION, 25, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
+        if (iFieldSeq == 5)
+            field = new RealField(this, LAST_RATE, 10, null, null);
+        if (iFieldSeq == 6)
+            field = new DateField(this, RATE_CHANGED_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new UserField(this, RATE_CHANGED_BY, 16, null, null);
+        if (iFieldSeq == 8)
+            field = new RealField(this, COSTING_RATE, 10, null, null);
+        if (iFieldSeq == 9)
+            field = new DateField(this, COSTING_CHANGED_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new UserField(this, COSTING_CHANGED_BY, 16, null, null);
+        if (iFieldSeq == 11)
         {
-            field = new ShortField(this, "RoundAt", 1, null, null);
+            field = new ShortField(this, ROUND_AT, 1, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kIntegerDesc)
-            field = new StringField(this, "IntegerDesc", 20, null, "Dollar");
-        if (iFieldSeq == kFractionDesc)
-            field = new StringField(this, "FractionDesc", 20, null, null);
-        if (iFieldSeq == kFractionAmount)
-            field = new IntegerField(this, "FractionAmount", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(100));
-        if (iFieldSeq == kSign)
-            field = new StringField(this, "Sign", 3, null, "$");
-        if (iFieldSeq == kLanguageID)
-            field = new LanguageField(this, "LanguageID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNaturalInteger)
-            field = new StringField(this, "NaturalInteger", 20, null, null);
-        if (iFieldSeq == kNaturalFraction)
-            field = new StringField(this, "NaturalFraction", 20, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, INTEGER_DESC, 20, null, "Dollar");
+        if (iFieldSeq == 13)
+            field = new StringField(this, FRACTION_DESC, 20, null, null);
+        if (iFieldSeq == 14)
+            field = new IntegerField(this, FRACTION_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(100));
+        if (iFieldSeq == 15)
+            field = new StringField(this, SIGN, 3, null, "$");
+        if (iFieldSeq == 16)
+            field = new LanguageField(this, LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new StringField(this, NATURAL_INTEGER, 20, null, null);
+        if (iFieldSeq == 18)
+            field = new StringField(this, NATURAL_FRACTION, 20, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCurrencysLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -185,27 +164,23 @@ public class Currencys extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCurrencyCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "CurrencyCode");
-            keyArea.addKeyField(kCurrencyCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CURRENCY_CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCurrencysLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCurrencysLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -213,14 +188,14 @@ public class Currencys extends VirtualRecord
      */
     public void addMasterListeners()
     {
-        DateUpdatedHandler update1 = new DateUpdatedHandler(kRateChangedDate);
-        this.getField(kLastRate).addListener(update1);
-        ChangedByHandler name1 = new ChangedByHandler(kRateChangedBy);
-        this.getField(kLastRate).addListener(name1);
-        DateUpdatedHandler update2 = new DateUpdatedHandler(kCostingChangedDate);
-        this.getField(kCostingRate).addListener(update2);
-        ChangedByHandler name2 = new ChangedByHandler(kCostingChangedBy);
-        this.getField(kCostingRate).addListener(name2);
+        DateUpdatedHandler update1 = new DateUpdatedHandler(Currencys.RATE_CHANGED_DATE);
+        this.getField(Currencys.LAST_RATE).addListener(update1);
+        ChangedByHandler name1 = new ChangedByHandler(Currencys.RATE_CHANGED_BY);
+        this.getField(Currencys.LAST_RATE).addListener(name1);
+        DateUpdatedHandler update2 = new DateUpdatedHandler(Currencys.COSTING_CHANGED_DATE);
+        this.getField(Currencys.COSTING_RATE).addListener(update2);
+        ChangedByHandler name2 = new ChangedByHandler(Currencys.COSTING_CHANGED_BY);
+        this.getField(Currencys.COSTING_RATE).addListener(name2);
     }
     /**
      * Convert to USD.
@@ -228,10 +203,10 @@ public class Currencys extends VirtualRecord
     public double convertCostToUSD(double dCost, boolean bCostingExchange)
     {
         double dExchange;
-        if ((bCostingExchange) && (!this.getField(kCostingRate).isNull()))
-            dExchange = this.getField(kCostingRate).getValue();
+        if ((bCostingExchange) && (!this.getField(Currencys.COSTING_RATE).isNull()))
+            dExchange = this.getField(Currencys.COSTING_RATE).getValue();
         else
-            dExchange = this.getField(kLastRate).getValue();
+            dExchange = this.getField(Currencys.LAST_RATE).getValue();
         dCost = Math.floor(dCost * dExchange * 100.00 + 0.5) / 100.00;
         return dCost;
     }

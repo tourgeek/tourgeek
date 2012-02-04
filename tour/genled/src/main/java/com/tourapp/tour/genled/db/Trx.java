@@ -32,14 +32,6 @@ public class Trx extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kTrxStatusID = kVirtualRecordLastField + 1;
-    public static final int kTrxLastField = kTrxStatusID;
-    public static final int kTrxFields = kTrxStatusID - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kTrxLastKey = kIDKey;
-    public static final int kTrxKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected AcctDetail m_recAcctDetail = null;
     protected AcctDetailDist m_recAcctDetailDist = null;
     protected AcctDetailDist m_recAcctDetailDistSearch = null;
@@ -73,26 +65,34 @@ public class Trx extends VirtualRecord
         super.init(screen);
     }
 
-    public static final String kTrxFile = null;   // Screen field
+    public static final String TRX_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kTrxStatusID)
-            field = new TrxStatusField(this, "TrxStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new Trx_TrxUserID(this, TRX_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kTrxLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

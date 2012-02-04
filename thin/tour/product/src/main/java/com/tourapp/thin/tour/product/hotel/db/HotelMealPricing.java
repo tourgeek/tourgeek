@@ -15,22 +15,8 @@ import com.tourapp.model.tour.product.hotel.db.*;
 public class HotelMealPricing extends ProductPricing
     implements HotelMealPricingModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    public static final String HOTEL_ID = PRODUCT_ID;
-    //public static final String PAX_CATEGORY_ID = PAX_CATEGORY_ID;
-    //public static final String RATE_ID = RATE_ID;
-    public static final String MEAL_PLAN_ID = CLASS_ID;
-    //public static final String START_DATE = START_DATE;
-    //public static final String END_DATE = END_DATE;
-    //public static final String COST = COST;
-    //public static final String PRODUCT_TERMS_ID = PRODUCT_TERMS_ID;
-    //public static final String PRICE = PRICE;
-    //public static final String COMMISSIONABLE = COMMISSIONABLE;
-    //public static final String COMMISSION_RATE = COMMISSION_RATE;
-    //public static final String PAY_AT = PAY_AT;
 
     public HotelMealPricing()
     {
@@ -69,40 +55,40 @@ public class HotelMealPricing extends ProductPricing
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "HotelID", 8, null, null);
+        field = new FieldInfo(this, HOTEL_ID, 8, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        field = new FieldInfo(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "MealPlanID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        field = new FieldInfo(this, MEAL_PLAN_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "StartDate", 12, null, null);
+        field = new FieldInfo(this, START_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "EndDate", 12, null, null);
+        field = new FieldInfo(this, END_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Cost", 10, null, null);
+        field = new FieldInfo(this, COST, 10, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Price", 18, null, null);
+        field = new FieldInfo(this, PRICE, 18, null, null);
         field.setDataClass(Double.class);
-        field = new FieldInfo(this, "Commissionable", 10, null, new Boolean(true));
+        field = new FieldInfo(this, COMMISSIONABLE, 10, null, new Boolean(true));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "CommissionRate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "PayAt", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
     }
     /**
     * Set up the key areas.
@@ -110,7 +96,7 @@ public class HotelMealPricing extends ProductPricing
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "HotelID");
         keyArea.addKeyField("HotelID", Constants.ASCENDING);

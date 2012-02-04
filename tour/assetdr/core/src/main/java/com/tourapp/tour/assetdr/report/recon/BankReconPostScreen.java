@@ -101,10 +101,10 @@ public class BankReconPostScreen extends Screen
     public void setupSFields()
     {
         this.setScreenRecord(this.getMainRecord());
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kStartCleared).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kDepositsCleared).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kChecksCleared).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(BankReconScreenRecord.kBankReconScreenRecordFile).getField(BankReconScreenRecord.kNewCleared).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.START_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.DEPOSITS_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.CHECKS_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(BankReconScreenRecord.BANK_RECON_SCREEN_RECORD_FILE).getField(BankReconScreenRecord.NEW_CLEARED).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.setEnabled(false);
         SCannedBox box = new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, MenuConstants.POST, MenuConstants.POST, MenuConstants.POST, null);
         box.setEnabled(true);

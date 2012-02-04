@@ -14,10 +14,8 @@ import com.tourapp.model.tour.product.air.db.*;
 public class Airline extends FieldList
     implements AirlineModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public Airline()
     {
@@ -56,40 +54,40 @@ public class Airline extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 40, null, null);
-        field = new FieldInfo(this, "ShortDesc", 16, null, null);
-        field = new FieldInfo(this, "AirlineCode", 2, null, null);
-        field = new FieldInfo(this, "ICAOCode", 4, null, null);
-        field = new FieldInfo(this, "CountryID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 40, null, null);
+        field = new FieldInfo(this, SHORT_DESC, 16, null, null);
+        field = new FieldInfo(this, AIRLINE_CODE, 2, null, null);
+        field = new FieldInfo(this, ICAO_CODE, 4, null, null);
+        field = new FieldInfo(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AirlineNo", 4, null, null);
+        field = new FieldInfo(this, AIRLINE_NO, 4, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Contact", 30, null, null);
-        field = new FieldInfo(this, "ContactTitle", 30, null, null);
-        field = new FieldInfo(this, "AcceptMCOs", 1, null, null);
+        field = new FieldInfo(this, CONTACT, 30, null, null);
+        field = new FieldInfo(this, CONTACT_TITLE, 30, null, null);
+        field = new FieldInfo(this, ACCEPT_MC_OS, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "McoSvcChg", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MCO_SVC_CHG, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "McoRecAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MCO_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "McoVarAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MCO_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "OverrideAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OVERRIDE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ORVarAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OR_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "Logo", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LOGO, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
     }
     /**
@@ -98,7 +96,7 @@ public class Airline extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);

@@ -71,9 +71,9 @@ public class TourHeaderTourHeaderScreen extends TourDetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourHeaderTour.kTourHeaderTourFile).getField(TourHeaderTour.kDay).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderTour.kTourHeaderTourFile).getField(TourHeaderTour.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderTour.kTourHeaderTourFile).getField(TourHeaderTour.kPricingTypeID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderTour.TOUR_HEADER_TOUR_FILE).getField(TourHeaderTour.DAY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderTour.TOUR_HEADER_TOUR_FILE).getField(TourHeaderTour.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderTour.TOUR_HEADER_TOUR_FILE).getField(TourHeaderTour.PRICING_TYPE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         this.addStandardScreenFields(true);
     }
 

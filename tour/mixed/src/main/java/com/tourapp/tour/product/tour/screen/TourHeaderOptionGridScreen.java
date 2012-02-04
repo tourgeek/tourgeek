@@ -182,8 +182,8 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourHeaderOption.kTourHeaderOptionFile).getField(TourHeaderOption.kSequence).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourHeaderOption.kTourHeaderOptionFile).getField(TourHeaderOption.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderOption.TOUR_HEADER_OPTION_FILE).getField(TourHeaderOption.SEQUENCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourHeaderOption.TOUR_HEADER_OPTION_FILE).getField(TourHeaderOption.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

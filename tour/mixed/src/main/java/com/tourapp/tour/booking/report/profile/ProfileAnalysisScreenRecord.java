@@ -35,22 +35,20 @@ public class ProfileAnalysisScreenRecord extends ReportScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
+    //public static final String REPORT_DATE = REPORT_DATE;
+    //public static final String REPORT_TIME = REPORT_TIME;
+    //public static final String REPORT_USER_ID = REPORT_USER_ID;
+    //public static final String REPORT_PAGE = REPORT_PAGE;
+    //public static final String REPORT_COUNT = REPORT_COUNT;
+    //public static final String REPORT_TOTAL = REPORT_TOTAL;
+    //public static final String REPORT_KEY_AREA = REPORT_KEY_AREA;
     public static final String PRIMARY_ANALYSIS_TYPE = "PrimaryAnalysisType";
-    public static final int kPrimaryAnalysisType = kReportScreenRecordLastField + 1;
     public static final String SECONDARY_ANALYSIS_TYPE = "SecondaryAnalysisType";
-    public static final int kSecondaryAnalysisType = kPrimaryAnalysisType + 1;
     public static final String THIRD_ANALYSIS_TYPE = "ThirdAnalysisType";
-    public static final int kThirdAnalysisType = kSecondaryAnalysisType + 1;
     public static final String GROSS_SALES_START_DATE = "GrossSalesStartDate";
-    public static final int kGrossSalesStartDate = kThirdAnalysisType + 1;
     public static final String GROSS_SALES_END_DATE = "GrossSalesEndDate";
-    public static final int kGrossSalesEndDate = kGrossSalesStartDate + 1;
     public static final String GROSS_SALES = "GrossSales";
-    public static final int kGrossSales = kGrossSalesEndDate + 1;
     public static final String TEMPLATE = "template";
-    public static final int ktemplate = kGrossSales + 1;
-    public static final int kProfileAnalysisScreenRecordLastField = ktemplate;
-    public static final int kProfileAnalysisScreenRecordFields = ktemplate - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -74,33 +72,43 @@ public class ProfileAnalysisScreenRecord extends ReportScreenRecord
         super.init(screen);
     }
 
-    public static final String kProfileAnalysisScreenRecordFile = null;   // Screen field
+    public static final String PROFILE_ANALYSIS_SCREEN_RECORD_FILE = null;  // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kPrimaryAnalysisType)
-            field = new ProfileAnalysisField(this, "PrimaryAnalysisType", Constants.DEFAULT_FIELD_LENGTH, null, "ProfileAnalysisField.PROFILE_STATUS");
-        if (iFieldSeq == kSecondaryAnalysisType)
-            field = new ProfileAnalysisField(this, "SecondaryAnalysisType", Constants.DEFAULT_FIELD_LENGTH, null, "ProfileAnalysisField.STATE_REGION");
-        if (iFieldSeq == kThirdAnalysisType)
-            field = new ProfileAnalysisField(this, "ThirdAnalysisType", Constants.DEFAULT_FIELD_LENGTH, null, "ProfileAnalysisField.NONE");
-        if (iFieldSeq == kGrossSalesStartDate)
-            field = new DateField(this, "GrossSalesStartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGrossSalesEndDate)
-            field = new DateField(this, "GrossSalesEndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kGrossSales)
-            field = new CurrencyField(this, "GrossSales", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == ktemplate)
-            field = new StringField(this, "template", 60, null, "report");
+        //if (iFieldSeq == 0)
+        //  field = new ProfileAnalysisScreenRecord_ReportDate(this, REPORT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 1)
+        //  field = new ProfileAnalysisScreenRecord_ReportTime(this, REPORT_TIME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 2)
+        //  field = new ProfileAnalysisScreenRecord_ReportUserID(this, REPORT_USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new ShortField(this, REPORT_PAGE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        //if (iFieldSeq == 4)
+        //  field = new IntegerField(this, REPORT_COUNT, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, REPORT_TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, new Double(0));
+        //if (iFieldSeq == 6)
+        //  field = new IntegerField(this, REPORT_KEY_AREA, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new ProfileAnalysisField(this, PRIMARY_ANALYSIS_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, "ProfileAnalysisField.PROFILE_STATUS");
+        if (iFieldSeq == 8)
+            field = new ProfileAnalysisField(this, SECONDARY_ANALYSIS_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, "ProfileAnalysisField.STATE_REGION");
+        if (iFieldSeq == 9)
+            field = new ProfileAnalysisField(this, THIRD_ANALYSIS_TYPE, Constants.DEFAULT_FIELD_LENGTH, null, "ProfileAnalysisField.NONE");
+        if (iFieldSeq == 10)
+            field = new DateField(this, GROSS_SALES_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new DateField(this, GROSS_SALES_END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new CurrencyField(this, GROSS_SALES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new StringField(this, TEMPLATE, 60, null, "report");
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProfileAnalysisScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

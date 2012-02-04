@@ -14,10 +14,8 @@ import com.tourapp.model.tour.booking.inventory.db.*;
 public class Inventory extends FieldList
     implements InventoryModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public Inventory()
     {
@@ -56,37 +54,37 @@ public class Inventory extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", 10, null, null);
+        field = new FieldInfo(this, ID, 10, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "OtherID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, OTHER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "InvDate", 12, null, null);
+        field = new FieldInfo(this, INV_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Blocked", 3, null, null);
+        field = new FieldInfo(this, BLOCKED, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Used", 3, null, new Short((short)0));
+        field = new FieldInfo(this, USED, 3, null, new Short((short)0));
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Available", 3, null, null);
+        field = new FieldInfo(this, AVAILABLE, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Oversell", 3, null, null);
+        field = new FieldInfo(this, OVERSELL, 3, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Closed", 10, null, null);
+        field = new FieldInfo(this, CLOSED, 10, null, null);
         field.setDataClass(Boolean.class);
     }
     /**
@@ -95,7 +93,7 @@ public class Inventory extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "InvDate");
         keyArea.addKeyField("ProductID", Constants.ASCENDING);

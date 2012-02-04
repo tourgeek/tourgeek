@@ -14,8 +14,8 @@ import com.tourapp.model.tour.product.base.db.*;
 public class BaseClass extends FieldList
     implements BaseClassModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
 
     public BaseClass()
     {

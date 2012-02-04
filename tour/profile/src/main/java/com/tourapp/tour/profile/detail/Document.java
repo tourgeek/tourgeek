@@ -34,23 +34,6 @@ public class Document extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProfileID = kVirtualRecordLastField + 1;
-    public static final int kDocName = kProfileID + 1;
-    public static final int kDocNumber = kDocName + 1;
-    public static final int kCountryCodeID = kDocNumber + 1;
-    public static final int kNationalityID = kCountryCodeID + 1;
-    public static final int kEffectiveDate = kNationalityID + 1;
-    public static final int kExpirationDate = kEffectiveDate + 1;
-    public static final int kDocumentCode = kExpirationDate + 1;
-    public static final int kPlaceOfIssue = kDocumentCode + 1;
-    public static final int kDocumentLastField = kPlaceOfIssue;
-    public static final int kDocumentFields = kPlaceOfIssue - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProfileIDKey = kIDKey + 1;
-    public static final int kDocumentLastKey = kProfileIDKey;
-    public static final int kDocumentKeys = kProfileIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -73,14 +56,12 @@ public class Document extends VirtualRecord
     {
         super.init(screen);
     }
-
-    public static final String kDocumentFile = "Document";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kDocumentFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(DOCUMENT_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -109,35 +90,41 @@ public class Document extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProfileID)
-            field = new ProfileField(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDocName)
-            field = new StringField(this, "DocName", 65, null, null);
-        if (iFieldSeq == kDocNumber)
-            field = new StringField(this, "DocNumber", 20, null, null);
-        if (iFieldSeq == kCountryCodeID)
-            field = new CountryField(this, "CountryCodeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNationalityID)
-            field = new CountryField(this, "NationalityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEffectiveDate)
-            field = new DateField(this, "EffectiveDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kExpirationDate)
-            field = new DateField(this, "ExpirationDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDocumentCode)
-            field = new StringField(this, "DocumentCode", 3, null, "PP");
-        if (iFieldSeq == kPlaceOfIssue)
-            field = new StringField(this, "PlaceOfIssue", 3, null, null);
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProfileField(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, DOC_NAME, 65, null, null);
+        if (iFieldSeq == 5)
+            field = new StringField(this, DOC_NUMBER, 20, null, null);
+        if (iFieldSeq == 6)
+            field = new CountryField(this, COUNTRY_CODE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new CountryField(this, NATIONALITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new DateField(this, EFFECTIVE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new DateField(this, EXPIRATION_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new StringField(this, DOCUMENT_CODE, 3, null, "PP");
+        if (iFieldSeq == 11)
+            field = new StringField(this, PLACE_OF_ISSUE, 3, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kDocumentLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -146,22 +133,18 @@ public class Document extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kDocumentLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kDocumentLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
 

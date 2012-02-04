@@ -54,7 +54,7 @@ public class CountClearedHandler extends SubCountHandler
         m_fsReconciled = "";
         m_fsReconciled = fsReconciled;
         m_bCountPositive = bCountPositive;
-        super.init(null, null, -1, fieldMain, -1, ifsToCount, true, false, false);
+        super.init(null, null, null, fieldMain, ifsToCount, true, false, false);
     }
     /**
      * Get the value to add (Overidden from SubCountHandler).

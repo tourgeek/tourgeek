@@ -141,17 +141,17 @@ public class TourEventScheduleScreen extends DetailScreen
      */
     public void setupSFields()
     {
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kTourEventID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kBookingStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kTourClassOnly).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kTourActionType).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionTourEventID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionBookingStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionMessageProcessInfoID).setupDefaultView(this.getNextLocation(ScreenConstants.TOP_NEXT, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionMessageTransportID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionDocumentName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionProperties).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(TourEventSchedule.kTourEventScheduleFile).getField(TourEventSchedule.kActionDocumentText).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.TOUR_EVENT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.BOOKING_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.TOUR_CLASS_ONLY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.TOUR_ACTION_TYPE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_TOUR_EVENT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_BOOKING_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_MESSAGE_PROCESS_INFO_ID).setupDefaultView(this.getNextLocation(ScreenConstants.TOP_NEXT, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_MESSAGE_TRANSPORT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_DOCUMENT_NAME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_PROPERTIES).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(TourEventSchedule.TOUR_EVENT_SCHEDULE_FILE).getField(TourEventSchedule.ACTION_DOCUMENT_TEXT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Make a sub-screen.

@@ -34,23 +34,13 @@ public class CashBatchScreenRecord extends ScreenRecord
     private static final long serialVersionUID = 1L;
 
     public static final String USER_ID = "UserID";
-    public static final int kUserID = kScreenRecordLastField + 1;
     public static final String TOTAL = "Total";
-    public static final int kTotal = kUserID + 1;
     public static final String COUNT = "Count";
-    public static final int kCount = kTotal + 1;
     public static final String MCO_NO = "McoNo";
-    public static final int kMcoNo = kCount + 1;
     public static final String BOOKING_ID = "BookingID";
-    public static final int kBookingID = kMcoNo + 1;
     public static final String CHANGE_BALANCE = "ChangeBalance";
-    public static final int kChangeBalance = kBookingID + 1;
     public static final String END_BALANCE = "EndBalance";
-    public static final int kEndBalance = kChangeBalance + 1;
     public static final String AIRLINE_ID = "AirlineID";
-    public static final int kAirlineID = kEndBalance + 1;
-    public static final int kCashBatchScreenRecordLastField = kAirlineID;
-    public static final int kCashBatchScreenRecordFields = kAirlineID - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -74,35 +64,31 @@ public class CashBatchScreenRecord extends ScreenRecord
         super.init(screen);
     }
 
-    public static final String kCashBatchScreenRecordFile = null; // Screen field
+    public static final String CASH_BATCH_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kUserID)
-            field = new CashBatchScreenRecord_UserID(this, "UserID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTotal)
-            field = new CurrencyField(this, "Total", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCount)
-            field = new ShortField(this, "Count", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kMcoNo)
-            field = new StringField(this, "McoNo", 16, null, null);
-        if (iFieldSeq == kBookingID)
-            field = new BookingField(this, "BookingID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kChangeBalance)
-            field = new CurrencyField(this, "ChangeBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEndBalance)
-            field = new CurrencyField(this, "EndBalance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kAirlineID)
-            field = new AirlineField(this, "AirlineID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 0)
+            field = new CashBatchScreenRecord_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new CurrencyField(this, TOTAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new ShortField(this, COUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 3)
+            field = new StringField(this, MCO_NO, 16, null, null);
+        if (iFieldSeq == 4)
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new CurrencyField(this, CHANGE_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new CurrencyField(this, END_BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCashBatchScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

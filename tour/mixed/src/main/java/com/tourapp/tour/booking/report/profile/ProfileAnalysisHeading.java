@@ -62,13 +62,13 @@ public class ProfileAnalysisHeading extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kReportDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kReportTime).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kReportUserID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kReportPage).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kPrimaryAnalysisType).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kSecondaryAnalysisType).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(ProfileAnalysisScreenRecord.kProfileAnalysisScreenRecordFile).getField(ProfileAnalysisScreenRecord.kThirdAnalysisType).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.REPORT_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.REPORT_TIME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.REPORT_USER_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.REPORT_PAGE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.PRIMARY_ANALYSIS_TYPE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.SECONDARY_ANALYSIS_TYPE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(ProfileAnalysisScreenRecord.PROFILE_ANALYSIS_SCREEN_RECORD_FILE).getField(ProfileAnalysisScreenRecord.THIRD_ANALYSIS_TYPE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

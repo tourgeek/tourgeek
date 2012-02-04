@@ -45,81 +45,6 @@ public class Booking extends CustSale
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kBookingDate = kCustSaleDate;
-    public static final int kEmployeeID = kCustSaleAgent;
-    public static final int kProfileID = kCustSaleCustID;
-    public static final int kProfileCode = kCustSaleCustNo;
-    public static final int kCode = kCustSaleLastField + 1;
-    public static final int kDescription = kCode + 1;
-    public static final int kEmployeeModID = kDescription + 1;
-    public static final int kModDate = kEmployeeModID + 1;
-    public static final int kBookingStatusID = kModDate + 1;
-    public static final int kGenericName = kBookingStatusID + 1;
-    public static final int kAddressLine1 = kGenericName + 1;
-    public static final int kAddressLine2 = kAddressLine1 + 1;
-    public static final int kCityOrTown = kAddressLine2 + 1;
-    public static final int kStateOrRegion = kCityOrTown + 1;
-    public static final int kPostalCode = kStateOrRegion + 1;
-    public static final int kCountry = kPostalCode + 1;
-    public static final int kTel = kCountry + 1;
-    public static final int kFax = kTel + 1;
-    public static final int kEmail = kFax + 1;
-    public static final int kContact = kEmail + 1;
-    public static final int kLanguageID = kContact + 1;
-    public static final int kCurrencysID = kLanguageID + 1;
-    public static final int kCurrencyCode = kCurrencysID + 1;
-    public static final int kExchange = kCurrencyCode + 1;
-    public static final int kPax = kExchange + 1;
-    public static final int kFocs = kPax + 1;
-    public static final int kSinglePax = kFocs + 1;
-    public static final int kDoublePax = kSinglePax + 1;
-    public static final int kTriplePax = kDoublePax + 1;
-    public static final int kQuadPax = kTriplePax + 1;
-    public static final int kChildren = kQuadPax + 1;
-    public static final int kGateway = kChildren + 1;
-    public static final int kTourID = kGateway + 1;
-    public static final int kMarkup = kTourID + 1;
-    public static final int kStdCommission = kMarkup + 1;
-    public static final int kAcceptDate = kStdCommission + 1;
-    public static final int kDepositRecDate = kAcceptDate + 1;
-    public static final int kFinalPayRecDate = kDepositRecDate + 1;
-    public static final int kBooked = kFinalPayRecDate + 1;
-    public static final int kDepositReceived = kBooked + 1;
-    public static final int kDepositDue = kDepositReceived + 1;
-    public static final int kFinalPaymentReceived = kDepositDue + 1;
-    public static final int kFinalPaymentDue = kFinalPaymentReceived + 1;
-    public static final int kCancelled = kFinalPaymentDue + 1;
-    public static final int kProperties = kCancelled + 1;
-    public static final int kDeposit = kProperties + 1;
-    public static final int kDepositDueDate = kDeposit + 1;
-    public static final int kFinalPaymentDueDate = kDepositDueDate + 1;
-    public static final int kNextEventDate = kFinalPaymentDueDate + 1;
-    public static final int kTourEventID = kNextEventDate + 1;
-    public static final int kGross = kTourEventID + 1;
-    public static final int kCommission = kGross + 1;
-    public static final int kNet = kCommission + 1;
-    public static final int kBalance = kNet + 1;
-    public static final int kPricingStatusID = kBalance + 1;
-    public static final int kAskForAnswer = kPricingStatusID + 1;
-    public static final int kAlwaysResolve = kAskForAnswer + 1;
-    public static final int kTourPricingTypeID = kAlwaysResolve + 1;
-    public static final int kNonTourPricingTypeID = kTourPricingTypeID + 1;
-    public static final int kNextLineSequence = kNonTourPricingTypeID + 1;
-    public static final int kBookingLastField = kNextLineSequence;
-    public static final int kBookingFields = kNextLineSequence - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kProfileIDKey = kCodeKey + 1;
-    public static final int kTourIDKey = kProfileIDKey + 1;
-    public static final int kNextEventDateKey = kTourIDKey + 1;
-    public static final int kBookingDateKey = kNextEventDateKey + 1;
-    public static final int kModDateKey = kBookingDateKey + 1;
-    public static final int kGenericNameKey = kModDateKey + 1;
-    public static final int kDescriptionKey = kGenericNameKey + 1;
-    public static final int kBookingLastKey = kDescriptionKey;
-    public static final int kBookingKeys = kDescriptionKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected Vector<Integer> m_rdwPaxMods = null;
     protected BookingDetail m_recBookingDetailModule = null;
     /**
@@ -146,14 +71,12 @@ public class Booking extends CustSale
         m_recBookingDetailModule = null;
         super.init(screen);
     }
-
-    public static final String kBookingFile = "Booking";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -196,155 +119,161 @@ public class Booking extends CustSale
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 6, null, null);
+            field = new CounterField(this, ID, 6, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 20, null, null);
-        if (iFieldSeq == kDescription)
-            field = new StringField(this, "Description", 50, null, null);
-        if (iFieldSeq == kBookingDate)
-            field = new Booking_BookingDate(this, "BookingDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kEmployeeID)
-            field = new ReferenceField(this, "EmployeeID", 6, null, null);
-        if (iFieldSeq == kEmployeeModID)
-            field = new ReferenceField(this, "EmployeeModID", 6, null, null);
-        if (iFieldSeq == kModDate)
-            field = new DateTimeField(this, "ModDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBookingStatusID)
-            field = new BookingStatusField(this, "BookingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProfileID)
-            field = new ProfileField(this, "ProfileID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProfileCode)
-            field = new StringField(this, "ProfileCode", 16, null, null);
-        if (iFieldSeq == kGenericName)
-            field = new StringField(this, "GenericName", 30, null, null);
-        if (iFieldSeq == kAddressLine1)
-            field = new StringField(this, "AddressLine1", 40, null, null);
-        if (iFieldSeq == kAddressLine2)
-            field = new StringField(this, "AddressLine2", 40, null, null);
-        if (iFieldSeq == kCityOrTown)
-            field = new StringField(this, "CityOrTown", 15, null, null);
-        if (iFieldSeq == kStateOrRegion)
-            field = new StringField(this, "StateOrRegion", 15, null, null);
-        if (iFieldSeq == kPostalCode)
-            field = new StringField(this, "PostalCode", 10, null, null);
-        if (iFieldSeq == kCountry)
-            field = new StringField(this, "Country", 15, null, null);
-        if (iFieldSeq == kTel)
-            field = new PhoneField(this, "Tel", 24, null, null);
-        if (iFieldSeq == kFax)
-            field = new FaxField(this, "Fax", 24, null, null);
-        if (iFieldSeq == kEmail)
-            field = new EMailField(this, "Email", 40, null, null);
-        if (iFieldSeq == kContact)
-            field = new StringField(this, "Contact", 25, null, null);
-        if (iFieldSeq == kLanguageID)
-            field = new LanguageField(this, "LanguageID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrencysID)
-            field = new CurrencysField(this, "CurrencysID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCurrencyCode)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new Booking_BookingDate(this, BOOKING_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new ReferenceField(this, EMPLOYEE_ID, 6, null, null);
+        if (iFieldSeq == 5)
+            field = new ProfileField(this, PROFILE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 6)
+            field = new StringField(this, PROFILE_CODE, 16, null, null);
+        if (iFieldSeq == 7)
+            field = new StringField(this, CODE, 20, null, null);
+        if (iFieldSeq == 8)
+            field = new StringField(this, DESCRIPTION, 50, null, null);
+        if (iFieldSeq == 9)
+            field = new ReferenceField(this, EMPLOYEE_MOD_ID, 6, null, null);
+        if (iFieldSeq == 10)
+            field = new DateTimeField(this, MOD_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new BookingStatusField(this, BOOKING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new StringField(this, GENERIC_NAME, 30, null, null);
+        if (iFieldSeq == 13)
+            field = new StringField(this, ADDRESS_LINE_1, 40, null, null);
+        if (iFieldSeq == 14)
+            field = new StringField(this, ADDRESS_LINE_2, 40, null, null);
+        if (iFieldSeq == 15)
+            field = new StringField(this, CITY_OR_TOWN, 15, null, null);
+        if (iFieldSeq == 16)
+            field = new StringField(this, STATE_OR_REGION, 15, null, null);
+        if (iFieldSeq == 17)
+            field = new StringField(this, POSTAL_CODE, 10, null, null);
+        if (iFieldSeq == 18)
+            field = new StringField(this, COUNTRY, 15, null, null);
+        if (iFieldSeq == 19)
+            field = new PhoneField(this, TEL, 24, null, null);
+        if (iFieldSeq == 20)
+            field = new FaxField(this, FAX, 24, null, null);
+        if (iFieldSeq == 21)
+            field = new EMailField(this, EMAIL, 40, null, null);
+        if (iFieldSeq == 22)
+            field = new StringField(this, CONTACT, 25, null, null);
+        if (iFieldSeq == 23)
+            field = new LanguageField(this, LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 24)
+            field = new CurrencysField(this, CURRENCYS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
         {
-            field = new StringField(this, "CurrencyCode", 3, null, null);
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kExchange)
-            field = new RealField(this, "Exchange", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPax)
-            field = new ShortField(this, "Pax", 3, null, null);
-        if (iFieldSeq == kFocs)
-            field = new ShortField(this, "Focs", 2, null, null);
-        if (iFieldSeq == kSinglePax)
-            field = new ShortField(this, "SinglePax", 2, null, null);
-        if (iFieldSeq == kDoublePax)
-            field = new ShortField(this, "DoublePax", 2, null, null);
-        if (iFieldSeq == kTriplePax)
-            field = new ShortField(this, "TriplePax", 2, null, null);
-        if (iFieldSeq == kQuadPax)
-            field = new ShortField(this, "QuadPax", 2, null, null);
-        if (iFieldSeq == kChildren)
-            field = new ShortField(this, "Children", 2, null, null);
-        if (iFieldSeq == kGateway)
-            field = new CityField(this, "Gateway", 3, null, null);
-        if (iFieldSeq == kTourID)
-            field = new TourField(this, "TourID", 6, null, null);
-        if (iFieldSeq == kMarkup)
-            field = new PercentField(this, "Markup", 5, null, null);
-        if (iFieldSeq == kStdCommission)
-            field = new PercentField(this, "StdCommission", 5, null, new Float(0.10));
-        if (iFieldSeq == kAcceptDate)
-            field = new DateField(this, "AcceptDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepositRecDate)
-            field = new DateField(this, "DepositRecDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalPayRecDate)
-            field = new DateField(this, "FinalPayRecDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBooked)
-            field = new BooleanField(this, "Booked", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepositReceived)
-            field = new BooleanField(this, "DepositReceived", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDepositDue)
-            field = new BooleanField(this, "DepositDue", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalPaymentReceived)
-            field = new BooleanField(this, "FinalPaymentReceived", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kFinalPaymentDue)
-            field = new BooleanField(this, "FinalPaymentDue", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCancelled)
-            field = new BooleanField(this, "Cancelled", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProperties)
-            field = new PropertiesField(this, "Properties", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kDeposit)
+        if (iFieldSeq == 26)
+            field = new RealField(this, EXCHANGE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 27)
+            field = new ShortField(this, PAX, 3, null, null);
+        if (iFieldSeq == 28)
+            field = new ShortField(this, FOCS, 2, null, null);
+        if (iFieldSeq == 29)
+            field = new ShortField(this, SINGLE_PAX, 2, null, null);
+        if (iFieldSeq == 30)
+            field = new ShortField(this, DOUBLE_PAX, 2, null, null);
+        if (iFieldSeq == 31)
+            field = new ShortField(this, TRIPLE_PAX, 2, null, null);
+        if (iFieldSeq == 32)
+            field = new ShortField(this, QUAD_PAX, 2, null, null);
+        if (iFieldSeq == 33)
+            field = new ShortField(this, CHILDREN, 2, null, null);
+        if (iFieldSeq == 34)
+            field = new CityField(this, GATEWAY, 3, null, null);
+        if (iFieldSeq == 35)
+            field = new TourField(this, TOUR_ID, 6, null, null);
+        if (iFieldSeq == 36)
+            field = new PercentField(this, MARKUP, 5, null, null);
+        if (iFieldSeq == 37)
+            field = new PercentField(this, STD_COMMISSION, 5, null, new Float(0.10));
+        if (iFieldSeq == 38)
+            field = new DateField(this, ACCEPT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 39)
+            field = new DateField(this, DEPOSIT_REC_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 40)
+            field = new DateField(this, FINAL_PAY_REC_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 41)
+            field = new BooleanField(this, BOOKED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 42)
+            field = new BooleanField(this, DEPOSIT_RECEIVED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 43)
+            field = new BooleanField(this, DEPOSIT_DUE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 44)
+            field = new BooleanField(this, FINAL_PAYMENT_RECEIVED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 45)
+            field = new BooleanField(this, FINAL_PAYMENT_DUE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 46)
+            field = new BooleanField(this, CANCELLED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 47)
+            field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 48)
         {
-            field = new DoubleField(this, "Deposit", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DoubleField(this, DEPOSIT, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kDepositDueDate)
+        if (iFieldSeq == 49)
         {
-            field = new DateField(this, "DepositDueDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, DEPOSIT_DUE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kFinalPaymentDueDate)
+        if (iFieldSeq == 50)
         {
-            field = new DateField(this, "FinalPaymentDueDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, FINAL_PAYMENT_DUE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kNextEventDate)
-            field = new DateField(this, "NextEventDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kTourEventID)
-            field = new TourEventField(this, "TourEventID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(TourEvent.NO_EVENT));
-        if (iFieldSeq == kGross)
-            field = new CurrencyField(this, "Gross", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCommission)
-            field = new CurrencyField(this, "Commission", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNet)
-            field = new CurrencyField(this, "Net", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBalance)
-            field = new CurrencyField(this, "Balance", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kPricingStatusID)
+        if (iFieldSeq == 51)
+            field = new DateField(this, NEXT_EVENT_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 52)
+            field = new TourEventField(this, TOUR_EVENT_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(TourEvent.NO_EVENT));
+        if (iFieldSeq == 53)
+            field = new CurrencyField(this, GROSS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 54)
+            field = new CurrencyField(this, COMMISSION, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 55)
+            field = new CurrencyField(this, NET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 56)
+            field = new CurrencyField(this, BALANCE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 57)
         {
-            field = new PricingStatusField(this, "PricingStatusID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PricingStatus.OKAY));
+            field = new PricingStatusField(this, PRICING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PricingStatus.OKAY));
             field.setVirtual(true);
         }
-        if (iFieldSeq == kAskForAnswer)
-            field = new BooleanField(this, "AskForAnswer", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
-        if (iFieldSeq == kAlwaysResolve)
+        if (iFieldSeq == 58)
+            field = new BooleanField(this, ASK_FOR_ANSWER, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        if (iFieldSeq == 59)
         {
-            field = new BooleanField(this, "AlwaysResolve", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+            field = new BooleanField(this, ALWAYS_RESOLVE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
             field.setVirtual(true);
         }
-        if (iFieldSeq == kTourPricingTypeID)
-            field = new PricingTypeField(this, "TourPricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNonTourPricingTypeID)
-            field = new PricingTypeField(this, "NonTourPricingTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNextLineSequence)
-            field = new ShortField(this, "NextLineSequence", Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
+        if (iFieldSeq == 60)
+            field = new PricingTypeField(this, TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 61)
+            field = new PricingTypeField(this, NON_TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 62)
+            field = new ShortField(this, NEXT_LINE_SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -353,58 +282,54 @@ public class Booking extends CustSale
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kProfileIDKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
-            keyArea.addKeyField(kProfileID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kBookingDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kTourIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourID");
-            keyArea.addKeyField(kTourID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TOUR_ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kNextEventDateKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NextEventDate");
-            keyArea.addKeyField(kNextEventDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(NEXT_EVENT_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kBookingDateKey)
+        if (iKeyArea == 5)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingDate");
-            keyArea.addKeyField(kBookingDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kModDateKey)
+        if (iKeyArea == 6)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ModDate");
-            keyArea.addKeyField(kModDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(MOD_DATE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kGenericNameKey)
+        if (iKeyArea == 7)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "GenericName");
-            keyArea.addKeyField(kGenericName, DBConstants.ASCENDING);
+            keyArea.addKeyField(GENERIC_NAME, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescriptionKey)
+        if (iKeyArea == 8)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
-            keyArea.addKeyField(kDescription, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -948,7 +873,7 @@ public class Booking extends CustSale
      */
     public int getCountPax()
     {
-        return (int)this.getField(kPax).getValue();
+        return (int)this.getField(Booking.PAX).getValue();
     }
     /**
      * Get number of pax for this mod.

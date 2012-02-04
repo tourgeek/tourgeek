@@ -36,7 +36,6 @@ import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.car.response.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.model.tour.product.car.db.*;
 
 /**
@@ -47,31 +46,6 @@ public class Car extends Product
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kDescription = kDescription;
-    //public static final int kCode = kCode;
-    //public static final int kCityID = kCityID;
-    //public static final int kVendorID = kVendorID;
-    //public static final int kOperatorsCode = kOperatorsCode;
-    //public static final int kProductChainID = kProductChainID;
-    //public static final int kComments = kComments;
-    //public static final int kItineraryDesc = kItineraryDesc;
-    //public static final int kDescSort = kDescSort;
-    //public static final int kClassID = kClassID;
-    public static final int kManualFile = kProductLastField + 1;
-    public static final int kVehicle = kManualFile + 1;
-    public static final int kPerVehicleCost = kVehicle + 1;
-    public static final int kPerVehiclePriceLocal = kPerVehicleCost + 1;
-    public static final int kCarLastField = kPerVehiclePriceLocal;
-    public static final int kCarFields = kPerVehiclePriceLocal - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kDescSortKey = kCodeKey + 1;
-    public static final int kVendorIDKey = kDescSortKey + 1;
-    public static final int kCityIDKey = kVendorIDKey + 1;
-    public static final int kCarLastKey = kCityIDKey;
-    public static final int kCarKeys = kCityIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -94,14 +68,12 @@ public class Car extends Product
     {
         super.init(screen);
     }
-
-    public static final String kCarFile = "Car";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kCarFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CAR_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -152,57 +124,141 @@ public class Car extends Product
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", 8, null, null);
+        //  field = new CounterField(this, ID, 8, null, null);
         //  field.setHidden(true);
         //}
-        //if (iFieldSeq == kDescription)
-        //  field = new ProductDesc(this, "Description", 50, null, null);
-        //if (iFieldSeq == kCode)
-        //  field = new StringField(this, "Code", 10, null, null);
-        //if (iFieldSeq == kCityID)
-        //  field = new CityField(this, "CityID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kVendorID)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new ProductDesc(this, DESCRIPTION, 50, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new StringField(this, CODE, 10, null, null);
+        //if (iFieldSeq == 5)
+        //{
+        //  field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kOperatorsCode)
-        //  field = new StringField(this, "OperatorsCode", 20, null, null);
-        if (iFieldSeq == kProductChainID)
-            field = new CarChainField(this, "ProductChainID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kManualFile)
-            field = new StringField(this, "ManualFile", 30, null, null);
-        if (iFieldSeq == kVehicle)
-            field = new StringField(this, "Vehicle", 20, null, null);
-        //if (iFieldSeq == kComments)
-        //  field = new MemoField(this, "Comments", 32767, null, null);
-        //if (iFieldSeq == kItineraryDesc)
-        //  field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDescSort)
-        //  field = new ProductDescSort(this, "DescSort", 10, null, null);
-        if (iFieldSeq == kClassID)
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, OPERATORS_CODE, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new CarChainField(this, PRODUCT_CHAIN_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new CityField(this, CITY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new TimeField(this, ETD, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 10)
+        //  field = new ShortField(this, ACK_DAYS, 2, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new MemoField(this, COMMENTS, 32767, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new ProductDescSort(this, DESC_SORT, 10, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new CarClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductTypeAutoField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPerVehicleCost)
+        if (iFieldSeq == 16)
         {
-            field = new FullCurrencyField(this, "PerVehicleCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, PRODUCT_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPerVehiclePriceLocal)
+        if (iFieldSeq == 17)
         {
-            field = new CurrencyField(this, "PerVehiclePriceLocal", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, PRODUCT_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 18)
+        //  field = new MessageTransportSelect(this, PRODUCT_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+        {
+            field = new InventoryStatusField(this, DISPLAY_INVENTORY_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NO_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 20)
+        {
+            field = new ShortField(this, INVENTORY_AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 21)
+        {
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 22)
+        {
+            field = new StringField(this, CURRENCY_CODE_LOCAL, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 23)
+        {
+            field = new StringField(this, VENDOR_NAME, 30, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 24)
+        {
+            field = new CostStatusField(this, DISPLAY_COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NULL_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 25)
+        {
+            field = new FullCurrencyField(this, PP_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 26)
+        {
+            field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 27)
+        {
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 28)
+        {
+            field = new CarClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 29)
+        {
+            field = new CurrencyField(this, PRODUCT_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 30)
+        {
+            field = new CurrencyField(this, PP_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 31)
+            field = new StringField(this, MANUAL_FILE, 30, null, null);
+        if (iFieldSeq == 32)
+            field = new StringField(this, VEHICLE, 20, null, null);
+        if (iFieldSeq == 33)
+        {
+            field = new FullCurrencyField(this, PER_VEHICLE_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 34)
+        {
+            field = new CurrencyField(this, PER_VEHICLE_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kCarLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -211,39 +267,35 @@ public class Car extends Product
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescSort");
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityID");
-            keyArea.addKeyField(kCityID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kCarLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kCarLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

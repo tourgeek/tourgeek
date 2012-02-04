@@ -35,18 +35,15 @@ public class HotelInfoScreenRecord extends ProductInfoScreenRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kProductID = kProductID;
-    //public static final int kRateID = kRateID;
-    //public static final int kClassID = kClassID;
-    //public static final int kDetailDate = kDetailDate;
-    //public static final int kTotalCost = kTotalCost;
-    //public static final int kAvailability = kAvailability;
-    //public static final int kConfirmedBy = kConfirmedBy;
-    //public static final int kConfirmationNo = kConfirmationNo;
+    //public static final String PRODUCT_ID = PRODUCT_ID;
+    //public static final String RATE_ID = RATE_ID;
+    //public static final String CLASS_ID = CLASS_ID;
+    //public static final String DETAIL_DATE = DETAIL_DATE;
+    //public static final String TOTAL_COST = TOTAL_COST;
+    //public static final String AVAILABILITY = AVAILABILITY;
+    //public static final String CONFIRMED_BY = CONFIRMED_BY;
+    //public static final String CONFIRMATION_NO = CONFIRMATION_NO;
     public static final String NIGHTS = "Nights";
-    public static final int kNights = kProductInfoScreenRecordLastField + 1;
-    public static final int kHotelInfoScreenRecordLastField = kNights;
-    public static final int kHotelInfoScreenRecordFields = kNights - DBConstants.MAIN_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -70,37 +67,33 @@ public class HotelInfoScreenRecord extends ProductInfoScreenRecord
         super.init(screen);
     }
 
-    public static final String kHotelInfoScreenRecordFile = null; // Screen field
+    public static final String HOTEL_INFO_SCREEN_RECORD_FILE = null;    // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kProductID)
-            field = new HotelField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kRateID)
-            field = new HotelRateField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kClassID)
-            field = new HotelClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDetailDate)
-        //  field = new DateField(this, "DetailDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kTotalCost)
-        //  field = new FullCurrencyField(this, "TotalCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kNights)
-            field = new ShortField(this, "Nights", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kAvailability)
-        //  field = new IntegerField(this, "Availability", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kConfirmedBy)
-        //  field = new StringField(this, "ConfirmedBy", 50, null, null);
-        //if (iFieldSeq == kConfirmationNo)
-        //  field = new StringField(this, "ConfirmationNo", 60, null, null);
+        if (iFieldSeq == 0)
+            field = new HotelField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 1)
+            field = new HotelRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 2)
+            field = new HotelClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 3)
+        //  field = new DateField(this, DETAIL_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new FullCurrencyField(this, TOTAL_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new IntegerField(this, AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, CONFIRMED_BY, 50, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new StringField(this, CONFIRMATION_NO, 60, null, null);
+        if (iFieldSeq == 8)
+            field = new ShortField(this, NIGHTS, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kHotelInfoScreenRecordLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
 

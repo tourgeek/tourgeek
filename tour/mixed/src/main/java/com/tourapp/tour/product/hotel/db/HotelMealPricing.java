@@ -36,20 +36,6 @@ public class HotelMealPricing extends ProductPricing
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kHotelID = kProductID;
-    public static final int kMealPlanID = kClassID;
-    //public static final int kStartDate = kStartDate;
-    //public static final int kEndDate = kEndDate;
-    //public static final int kProductTermsID = kProductTermsID;
-    //public static final int kCost = kCost;
-    public static final int kHotelMealPricingLastField = kProductPricingLastField;
-    public static final int kHotelMealPricingFields = kProductPricingLastField - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kHotelIDKey = kIDKey + 1;
-    public static final int kHotelMealPricingLastKey = kHotelIDKey;
-    public static final int kHotelMealPricingKeys = kHotelIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -72,14 +58,12 @@ public class HotelMealPricing extends ProductPricing
     {
         super.init(screen);
     }
-
-    public static final String kHotelMealPricingFile = "HotelMealPricing";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kHotelMealPricingFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(HOTEL_MEAL_PRICING_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -122,41 +106,71 @@ public class HotelMealPricing extends ProductPricing
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kHotelID)
-            field = new ReferenceField(this, "HotelID", 8, null, null);
-        if (iFieldSeq == kMealPlanID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ReferenceField(this, HOTEL_ID, 8, null, null);
+        //if (iFieldSeq == 4)
+        //{
+        //  field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.ALL_ID));
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 5)
+        //{
+        //  field = new ReferenceField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        if (iFieldSeq == 6)
         {
-            field = new MealPlanField(this, "MealPlanID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field = new MealPlanField(this, MEAL_PLAN_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kStartDate)
+        //if (iFieldSeq == 7)
         //{
-        //  field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kEndDate)
+        //if (iFieldSeq == 8)
         //{
-        //  field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kProductTermsID)
+        if (iFieldSeq == 9)
+            field = new FullCurrencyField(this, COST, 10, null, null);
+        //if (iFieldSeq == 10)
         //{
-        //  field = new ProductTermsField(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new ProductTermsField(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        if (iFieldSeq == kCost)
-            field = new FullCurrencyField(this, "Cost", 10, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 12)
+        //{
+        //  field = new BooleanField(this, COMMISSIONABLE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 13)
+        //{
+        //  field = new PercentField(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.addListener(new InitOnceFieldHandler(null));
+        //}
+        //if (iFieldSeq == 14)
+        //  field = new PayAtField(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kHotelMealPricingLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -165,24 +179,20 @@ public class HotelMealPricing extends ProductPricing
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kHotelIDKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "HotelID");
-            keyArea.addKeyField(kHotelID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kMealPlanID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kEndDate, DBConstants.ASCENDING);
+            keyArea.addKeyField(HOTEL_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(MEAL_PLAN_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(END_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kHotelMealPricingLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kHotelMealPricingLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -208,15 +218,15 @@ public class HotelMealPricing extends ProductPricing
         Date dateEnd = calendar.getTime();
         if ((this.getEditMode() == Constants.EDIT_IN_PROGRESS) || (this.getEditMode() == Constants.EDIT_CURRENT))
         {
-            if (this.getField(kHotelID).getValue() == iHotelID)
-            if (this.getField(kMealPlanID).getValue() == iMealPlanID)
-            if (this.getField(kStartDate).getValue() <= dateEnd.getTime()) // Start <= thisDate
-            if (this.getField(kEndDate).getValue() >= dateStart.getTime())   // End >= thisDate
+            if (this.getField(HotelMealPricing.HOTEL_ID).getValue() == iHotelID)
+            if (this.getField(HotelMealPricing.MEAL_PLAN_ID).getValue() == iMealPlanID)
+            if (this.getField(HotelMealPricing.START_DATE).getValue() <= dateEnd.getTime()) // Start <= thisDate
+            if (this.getField(HotelMealPricing.END_DATE).getValue() >= dateStart.getTime())   // End >= thisDate
                 return this;        // Valid price
         }
-        this.getField(kHotelID).setValue(iHotelID);
-        this.getField(kMealPlanID).setValue(iMealPlanID);
-        ((DateTimeField)this.getField(kEndDate)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        this.getField(HotelMealPricing.HOTEL_ID).setValue(iHotelID);
+        this.getField(HotelMealPricing.MEAL_PLAN_ID).setValue(iMealPlanID);
+        ((DateTimeField)this.getField(HotelMealPricing.END_DATE)).setDateTime(dateStart, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         FileListener listener = null;
         try   {
             this.close();
@@ -225,13 +235,13 @@ public class HotelMealPricing extends ProductPricing
             while (this.hasNext())
             {   // Loop until found or not
                 this.next();
-                if (this.getField(kHotelID).getValue() != iHotelID)
+                if (this.getField(HotelMealPricing.HOTEL_ID).getValue() != iHotelID)
                     break;
-                if (this.getField(kMealPlanID).getValue() != iMealPlanID)
+                if (this.getField(HotelMealPricing.MEAL_PLAN_ID).getValue() != iMealPlanID)
                     break;
-                if (this.getField(kStartDate).getValue() > dateEnd.getTime()) // Start > thisDate
+                if (this.getField(HotelMealPricing.START_DATE).getValue() > dateEnd.getTime()) // Start > thisDate
                     break;
-                if (this.getField(kEndDate).getValue() >= dateStart.getTime())   // End >= thisDate
+                if (this.getField(HotelMealPricing.END_DATE).getValue() >= dateStart.getTime())   // End >= thisDate
                     return this;        // Valid price
             }
         } catch (DBException e)   {

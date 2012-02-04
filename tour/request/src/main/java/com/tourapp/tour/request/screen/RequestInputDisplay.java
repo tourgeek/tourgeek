@@ -77,8 +77,8 @@ public class RequestInputDisplay extends GridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(RequestInput.kRequestInputFile).getField(RequestInput.kBrochureQty).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(RequestInput.kRequestInputFile).getField(RequestInput.kBrochureID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestInput.REQUEST_INPUT_FILE).getField(RequestInput.BROCHURE_QTY).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(RequestInput.REQUEST_INPUT_FILE).getField(RequestInput.BROCHURE_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
      * Add the navigation button(s) to the left of the grid row.

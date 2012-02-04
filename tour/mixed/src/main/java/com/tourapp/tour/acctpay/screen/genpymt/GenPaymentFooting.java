@@ -65,7 +65,7 @@ public class GenPaymentFooting extends HeadingScreen
      */
     public void setupSFields()
     {
-        this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(GenPaymentScreenRecord.GEN_PAYMENT_SCREEN_RECORD_FILE).getField(GenPaymentScreenRecord.TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

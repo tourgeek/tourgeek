@@ -14,10 +14,8 @@ import com.tourapp.model.tour.genled.db.*;
 public class Account extends FieldList
     implements AccountModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public Account()
     {
@@ -56,28 +54,28 @@ public class Account extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Description", 30, null, null);
-        field = new FieldInfo(this, "AccountNo", 10, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 30, null, null);
+        field = new FieldInfo(this, ACCOUNT_NO, 10, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "TypicalBalance", 1, null, "D");
-        field = new FieldInfo(this, "SectionSubTotal", 1, null, new Boolean(false));
+        field = new FieldInfo(this, TYPICAL_BALANCE, 1, null, "D");
+        field = new FieldInfo(this, SECTION_SUB_TOTAL, 1, null, new Boolean(false));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "CounterAccountID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, COUNTER_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AutoDistID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, AUTO_DIST_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "CloseYearEnd", 1, null, null);
+        field = new FieldInfo(this, CLOSE_YEAR_END, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "Discontinued", 1, null, null);
+        field = new FieldInfo(this, DISCONTINUED, 1, null, null);
         field.setDataClass(Boolean.class);
     }
     /**
@@ -86,7 +84,7 @@ public class Account extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "AccountNo");
         keyArea.addKeyField("AccountNo", Constants.ASCENDING);

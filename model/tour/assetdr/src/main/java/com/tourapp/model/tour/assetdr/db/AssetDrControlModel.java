@@ -10,6 +10,8 @@ public interface AssetDrControlModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String CURRENCY_ID = "CurrencyID";
     public static final String LANGUAGE_ID = "LanguageID";
     public static final String BANK_ACCT_ID = "BankAcctID";

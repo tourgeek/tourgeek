@@ -14,10 +14,8 @@ import com.tourapp.model.tour.profile.db.*;
 public class SCF extends FieldList
     implements SCFModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
 
     public SCF()
     {
@@ -56,24 +54,24 @@ public class SCF extends FieldList
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "ScfFrom", 3, null, null);
-        field = new FieldInfo(this, "ScfTo", 3, null, null);
-        field = new FieldInfo(this, "Description", 25, null, null);
-        field = new FieldInfo(this, "SalespersonID", 3, null, null);
+        field = new FieldInfo(this, SCF_FROM, 3, null, null);
+        field = new FieldInfo(this, SCF_TO, 3, null, null);
+        field = new FieldInfo(this, DESCRIPTION, 25, null, null);
+        field = new FieldInfo(this, SALESPERSON_ID, 3, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "SalesRegionID", 4, null, null);
+        field = new FieldInfo(this, SALES_REGION_ID, 4, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "UpsZone", 1, null, null);
-        field = new FieldInfo(this, "ZipZone", 1, null, null);
+        field = new FieldInfo(this, UPS_ZONE, 1, null, null);
+        field = new FieldInfo(this, ZIP_ZONE, 1, null, null);
     }
     /**
     * Set up the key areas.
@@ -81,7 +79,7 @@ public class SCF extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ScfTo");
         keyArea.addKeyField("ScfTo", Constants.ASCENDING);

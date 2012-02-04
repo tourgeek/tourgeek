@@ -10,6 +10,8 @@ public interface BankTrxBatchDistModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String BANK_TRX_BATCH_DETAIL_ID = "BankTrxBatchDetailID";
     public static final String ACCOUNT_ID = "AccountID";
     public static final String AMOUNT = "Amount";

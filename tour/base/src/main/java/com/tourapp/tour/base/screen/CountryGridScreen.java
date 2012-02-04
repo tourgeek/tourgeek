@@ -70,7 +70,7 @@ public class CountryGridScreen extends GridScreen
      */
     public void setupSFields()
     {
-        this.getRecord(Country.kCountryFile).getField(Country.kName).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(Country.COUNTRY_FILE).getField(Country.NAME).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

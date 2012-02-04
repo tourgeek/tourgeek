@@ -15,13 +15,8 @@ import com.tourapp.model.tour.product.tour.detail.db.*;
 public class TourHeaderAirHeader extends TourSub
     implements TourHeaderAirHeaderModel
 {
+    private static final long serialVersionUID = 1L;
 
-    //public static final String ID = ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
-    //public static final String DELETED = DELETED;
-    //public static final String TOUR_HEADER_OPTION_ID = TOUR_HEADER_OPTION_ID;
-    //public static final String MODIFY_CODE = MODIFY_CODE;
-    //public static final String MODIFY_ID = MODIFY_ID;
 
     public TourHeaderAirHeader()
     {
@@ -60,90 +55,90 @@ public class TourHeaderAirHeader extends TourSub
     public void setupFields()
     {
         FieldInfo field = null;
-        field = new FieldInfo(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "LastChanged", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Date.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "Deleted", 10, null, new Boolean(false));
+        field = new FieldInfo(this, DELETED, 10, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field.setHidden(true);
-        field = new FieldInfo(this, "TourHeaderOptionID", 8, null, null);
+        field = new FieldInfo(this, TOUR_HEADER_OPTION_ID, 8, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "ModifyCode", 1, null, null);
-        field = new FieldInfo(this, "ModifyID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        field = new FieldInfo(this, MODIFY_CODE, 1, null, null);
+        field = new FieldInfo(this, MODIFY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, "AirlineCode", 2, null, null);
-        field = new FieldInfo(this, "AirlineIATA", 4, null, null);
+        field = new FieldInfo(this, AIRLINE_CODE, 2, null, null);
+        field = new FieldInfo(this, AIRLINE_IATA, 4, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "AirlineDesc", 16, null, null);
-        field = new FieldInfo(this, "Conjunction", 1, null, null);
+        field = new FieldInfo(this, AIRLINE_DESC, 16, null, null);
+        field = new FieldInfo(this, CONJUNCTION, 1, null, null);
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, "Endorsements", 29, null, null);
-        field = new FieldInfo(this, "OriginDest", 13, null, null);
-        field = new FieldInfo(this, "BookingReference", 13, null, null);
-        field = new FieldInfo(this, "TourCode", 14, null, null);
-        field = new FieldInfo(this, "TotalFareBasis", 1, null, new Boolean(false));
+        field = new FieldInfo(this, ENDORSEMENTS, 29, null, null);
+        field = new FieldInfo(this, ORIGIN_DEST, 13, null, null);
+        field = new FieldInfo(this, BOOKING_REFERENCE, 13, null, null);
+        field = new FieldInfo(this, TOUR_CODE, 14, null, null);
+        field = new FieldInfo(this, TOTAL_FARE_BASIS, 1, null, new Boolean(false));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "Fare", 9, null, null);
+        field = new FieldInfo(this, FARE, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "Equivalent", 8, null, null);
+        field = new FieldInfo(this, EQUIVALENT, 8, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "CurrencyCode", 3, null, null);
-        field = new FieldInfo(this, "TaxPercent", 5, null, null);
+        field = new FieldInfo(this, CURRENCY_CODE, 3, null, null);
+        field = new FieldInfo(this, TAX_PERCENT, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "Tax1", 9, null, null);
+        field = new FieldInfo(this, TAX_1, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "Tax1Desc", 2, null, null);
-        field = new FieldInfo(this, "Tax2", 9, null, null);
+        field = new FieldInfo(this, TAX_1_DESC, 2, null, null);
+        field = new FieldInfo(this, TAX_2, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "Tax2Desc", 2, null, null);
-        field = new FieldInfo(this, "Total", 9, null, null);
+        field = new FieldInfo(this, TAX_2_DESC, 2, null, null);
+        field = new FieldInfo(this, TOTAL, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "Commission", 10, null, "      10   ");
-        field = new FieldInfo(this, "Tax", 10, null, "      8   ");
-        field = new FieldInfo(this, "CommissionRate", 5, null, "  10 ");
-        field = new FieldInfo(this, "Agent", 10, null, " AGENT");
-        field = new FieldInfo(this, "International", 3, null, "X/");
-        field = new FieldInfo(this, "CommPercent", 5, null, null);
+        field = new FieldInfo(this, COMMISSION, 10, null, "      10   ");
+        field = new FieldInfo(this, TAX, 10, null, "      8   ");
+        field = new FieldInfo(this, COMMISSION_RATE, 5, null, "  10 ");
+        field = new FieldInfo(this, AGENT, 10, null, " AGENT");
+        field = new FieldInfo(this, INTERNATIONAL, 3, null, "X/");
+        field = new FieldInfo(this, COMM_PERCENT, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "CommAmount", 9, null, null);
+        field = new FieldInfo(this, COMM_AMOUNT, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "TicketBy", 1, null, "U");
-        field = new FieldInfo(this, "NetFare", 9, null, null);
+        field = new FieldInfo(this, TICKET_BY, 1, null, "U");
+        field = new FieldInfo(this, NET_FARE, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "OverridePercent", 5, null, null);
+        field = new FieldInfo(this, OVERRIDE_PERCENT, 5, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "OverrideAmount", 9, null, null);
+        field = new FieldInfo(this, OVERRIDE_AMOUNT, 9, null, null);
         field.setDataClass(Float.class);
-        field = new FieldInfo(this, "NetCost", 9, null, null);
+        field = new FieldInfo(this, NET_COST, 9, null, null);
         field.setDataClass(Float.class);
-        //field = new FieldInfo(this, "TkOrColl", 9, null, null);
+        //field = new FieldInfo(this, TK_OR_COLL, 9, null, null);
         //field.setDataClass(Float.class);
-        //field = new FieldInfo(this, "ARCCost", 9, null, null);
+        //field = new FieldInfo(this, ARC_COST, 9, null, null);
         //field.setDataClass(Float.class);
-        field = new FieldInfo(this, "PNR", 15, null, null);
-        field = new FieldInfo(this, "Void", 1, null, null);
+        field = new FieldInfo(this, PNR, 15, null, null);
+        field = new FieldInfo(this, VOID, 1, null, null);
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "VoidDate", 12, null, null);
+        field = new FieldInfo(this, VOID_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "ExchTicket", 20, null, null);
-        field = new FieldInfo(this, "DepDate", 12, null, null);
+        field = new FieldInfo(this, EXCH_TICKET, 20, null, null);
+        field = new FieldInfo(this, DEP_DATE, 12, null, null);
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, "Credit", 1, null, new Boolean(false));
+        field = new FieldInfo(this, CREDIT, 1, null, new Boolean(false));
         field.setDataClass(Boolean.class);
-        field = new FieldInfo(this, "Comment1", 20, null, null);
-        field = new FieldInfo(this, "Comment2", 20, null, null);
-        field = new FieldInfo(this, "Comment3", 20, null, null);
-        field = new FieldInfo(this, "CRSConf", 20, null, null);
-        field = new FieldInfo(this, "CRSStatus", 2, null, null);
-        field = new FieldInfo(this, "FreqFlier", 20, null, null);
-        field = new FieldInfo(this, "Fare1", 60, null, null);
-        field = new FieldInfo(this, "Fare2", 60, null, null);
-        field = new FieldInfo(this, "Fare3", 60, null, null);
+        field = new FieldInfo(this, COMMENT_1, 20, null, null);
+        field = new FieldInfo(this, COMMENT_2, 20, null, null);
+        field = new FieldInfo(this, COMMENT_3, 20, null, null);
+        field = new FieldInfo(this, CRS_CONF, 20, null, null);
+        field = new FieldInfo(this, CRS_STATUS, 2, null, null);
+        field = new FieldInfo(this, FREQ_FLIER, 20, null, null);
+        field = new FieldInfo(this, FARE_1, 60, null, null);
+        field = new FieldInfo(this, FARE_2, 60, null, null);
+        field = new FieldInfo(this, FARE_3, 60, null, null);
     }
     /**
     * Set up the key areas.
@@ -151,7 +146,7 @@ public class TourHeaderAirHeader extends TourSub
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PrimaryKey");
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourHeaderOptionID");
         keyArea.addKeyField("TourHeaderOptionID", Constants.ASCENDING);

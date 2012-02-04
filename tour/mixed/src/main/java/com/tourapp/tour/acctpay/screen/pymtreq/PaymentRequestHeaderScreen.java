@@ -79,9 +79,9 @@ public class PaymentRequestHeaderScreen extends HeaderScreen
             Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.CURRENCY_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
             recBankAcct.getField(BankAcct.CURRENCY_ID).addListener(new ReadSecondaryHandler(recCurrencys));
         }
-        this.getRecord(PaymentRequestScreenRecord.kPaymentRequestScreenRecordFile).getField(PaymentRequestScreenRecord.kBankAcctID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PaymentRequestScreenRecord.kPaymentRequestScreenRecordFile).getField(PaymentRequestScreenRecord.kRequestTotal).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(PaymentRequestScreenRecord.kPaymentRequestScreenRecordFile).getField(PaymentRequestScreenRecord.kManualChecks).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentRequestScreenRecord.PAYMENT_REQUEST_SCREEN_RECORD_FILE).getField(PaymentRequestScreenRecord.BANK_ACCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentRequestScreenRecord.PAYMENT_REQUEST_SCREEN_RECORD_FILE).getField(PaymentRequestScreenRecord.REQUEST_TOTAL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(PaymentRequestScreenRecord.PAYMENT_REQUEST_SCREEN_RECORD_FILE).getField(PaymentRequestScreenRecord.MANUAL_CHECKS).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
     }
 
 }

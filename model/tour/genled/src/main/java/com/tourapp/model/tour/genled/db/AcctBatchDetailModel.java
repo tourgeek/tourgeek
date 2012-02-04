@@ -10,6 +10,8 @@ public interface AcctBatchDetailModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String ACCT_BATCH_ID = "AcctBatchID";
     public static final String SEQUENCE = "Sequence";
     public static final String ACCOUNT_ID = "AccountID";

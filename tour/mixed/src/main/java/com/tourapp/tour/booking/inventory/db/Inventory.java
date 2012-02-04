@@ -42,25 +42,6 @@ public class Inventory extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProductTypeID = kVirtualRecordLastField + 1;
-    public static final int kProductID = kProductTypeID + 1;
-    public static final int kRateID = kProductID + 1;
-    public static final int kClassID = kRateID + 1;
-    public static final int kOtherID = kClassID + 1;
-    public static final int kInvDate = kOtherID + 1;
-    public static final int kBlocked = kInvDate + 1;
-    public static final int kUsed = kBlocked + 1;
-    public static final int kAvailable = kUsed + 1;
-    public static final int kOversell = kAvailable + 1;
-    public static final int kClosed = kOversell + 1;
-    public static final int kInventoryLastField = kClosed;
-    public static final int kInventoryFields = kClosed - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kInvDateKey = kIDKey + 1;
-    public static final int kInventoryLastKey = kInvDateKey;
-    public static final int kInventoryKeys = kInvDateKey - DBConstants.MAIN_KEY_FIELD + 1;
     protected InventoryDetail m_recInventoryDetail = null;
     /**
      * Default constructor.
@@ -85,14 +66,12 @@ public class Inventory extends VirtualRecord
         m_recInventoryDetail = null;
         super.init(screen);
     }
-
-    public static final String kInventoryFile = "Inventory";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kInventoryFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(INVENTORY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -113,7 +92,7 @@ public class Inventory extends VirtualRecord
      */
     public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
-        ProductType recProductType = (ProductType)((ReferenceField)this.getField(kProductTypeID)).getReference();
+        ProductType recProductType = (ProductType)((ReferenceField)this.getField(Inventory.PRODUCT_TYPE_ID)).getReference();
         ScreenParent screen = null;
         if (recProductType != null)
         {
@@ -170,60 +149,66 @@ public class Inventory extends VirtualRecord
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new CounterField(this, "ID", 10, null, null);
+            field = new CounterField(this, ID, 10, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kProductTypeID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ProductTypeField(this, "ProductTypeID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductTypeField(this, PRODUCT_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kProductID)
+        if (iFieldSeq == 4)
         {
-            field = new ProductField(this, "ProductID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductField(this, PRODUCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kRateID)
+        if (iFieldSeq == 5)
         {
-            field = new ReferenceField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_RATE));
-            field.setNullable(false);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kClassID)
-        {
-            field = new ReferenceField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_CLASS));
-            field.setNullable(false);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kOtherID)
-        {
-            field = new ReferenceField(this, "OtherID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_OTHER));
+            field = new ReferenceField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_RATE));
             field.setNullable(false);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kInvDate)
-            field = new DateField(this, "InvDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kBlocked)
+        if (iFieldSeq == 6)
         {
-            field = new ShortField(this, "Blocked", 3, null, null);
+            field = new ReferenceField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_CLASS));
+            field.setNullable(false);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kUsed)
-            field = new ShortField(this, "Used", 3, null, new Short((short)0));
-        if (iFieldSeq == kAvailable)
-            field = new ShortField(this, "Available", 3, null, null);
-        if (iFieldSeq == kOversell)
-            field = new ShortField(this, "Oversell", 3, null, null);
-        if (iFieldSeq == kClosed)
-            field = new BooleanField(this, "Closed", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+        {
+            field = new ReferenceField(this, OTHER_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(Inventory.NO_OTHER));
+            field.setNullable(false);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 8)
+            field = new DateField(this, INV_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+        {
+            field = new ShortField(this, BLOCKED, 3, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 10)
+            field = new ShortField(this, USED, 3, null, new Short((short)0));
+        if (iFieldSeq == 11)
+            field = new ShortField(this, AVAILABLE, 3, null, null);
+        if (iFieldSeq == 12)
+            field = new ShortField(this, OVERSELL, 3, null, null);
+        if (iFieldSeq == 13)
+            field = new BooleanField(this, CLOSED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kInventoryLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -232,27 +217,23 @@ public class Inventory extends VirtualRecord
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kInvDateKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "InvDate");
-            keyArea.addKeyField(kProductID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kProductTypeID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kInvDate, DBConstants.ASCENDING);
-            keyArea.addKeyField(kRateID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kClassID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kOtherID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(INV_DATE, DBConstants.ASCENDING);
+            keyArea.addKeyField(RATE_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(CLASS_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(OTHER_ID, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kInventoryLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kInventoryLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**

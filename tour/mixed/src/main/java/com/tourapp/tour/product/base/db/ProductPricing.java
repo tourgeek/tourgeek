@@ -33,26 +33,6 @@ public class ProductPricing extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kProductID = kVirtualRecordLastField + 1;
-    public static final int kPaxCategoryID = kProductID + 1;
-    public static final int kRateID = kPaxCategoryID + 1;
-    public static final int kClassID = kRateID + 1;
-    public static final int kStartDate = kClassID + 1;
-    public static final int kEndDate = kStartDate + 1;
-    public static final int kCost = kEndDate + 1;
-    public static final int kProductTermsID = kCost + 1;
-    public static final int kPrice = kProductTermsID + 1;
-    public static final int kCommissionable = kPrice + 1;
-    public static final int kCommissionRate = kCommissionable + 1;
-    public static final int kPayAt = kCommissionRate + 1;
-    public static final int kProductPricingLastField = kPayAt;
-    public static final int kProductPricingFields = kPayAt - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kProductIDKey = kIDKey + 1;
-    public static final int kProductPricingLastKey = kProductIDKey;
-    public static final int kProductPricingKeys = kProductIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -76,75 +56,81 @@ public class ProductPricing extends VirtualRecord
         super.init(screen);
     }
 
-    public static final String kProductPricingFile = null;  // Screen field
+    public static final String PRODUCT_PRICING_FILE = null;   // Screen field
     /**
      * Add this field in the Record's field sequence.
      */
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new CounterField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kProductID)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
         {
-            field = new ReferenceField(this, "ProductID", 8, null, null);
+            field = new ReferenceField(this, PRODUCT_ID, 8, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == kPaxCategoryID)
+        if (iFieldSeq == 4)
         {
-            field = new PaxBaseCategoryField(this, "PaxCategoryID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.ALL_ID));
+            field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(PaxCategory.ALL_ID));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kRateID)
+        if (iFieldSeq == 5)
         {
-            field = new ReferenceField(this, "RateID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field = new ReferenceField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kClassID)
+        if (iFieldSeq == 6)
         {
-            field = new ReferenceField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
+            field = new ReferenceField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(0));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kStartDate)
+        if (iFieldSeq == 7)
         {
-            field = new DateField(this, "StartDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kEndDate)
+        if (iFieldSeq == 8)
         {
-            field = new DateField(this, "EndDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateField(this, END_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCost)
-            field = new FullCurrencyField(this, "Cost", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kProductTermsID)
+        if (iFieldSeq == 9)
+            field = new FullCurrencyField(this, COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
         {
-            field = new ProductTermsField(this, "ProductTermsID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductTermsField(this, PRODUCT_TERMS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPrice)
-            field = new CurrencyField(this, "Price", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCommissionable)
+        if (iFieldSeq == 11)
+            field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
         {
-            field = new BooleanField(this, "Commissionable", Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
+            field = new BooleanField(this, COMMISSIONABLE, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(true));
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kCommissionRate)
+        if (iFieldSeq == 13)
         {
-            field = new PercentField(this, "CommissionRate", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new PercentField(this, COMMISSION_RATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        if (iFieldSeq == kPayAt)
-            field = new PayAtField(this, "PayAt", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new PayAtField(this, PAY_AT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kProductPricingLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**

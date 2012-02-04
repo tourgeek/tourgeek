@@ -10,6 +10,8 @@ public interface CurrencysModel extends Rec
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String DESCRIPTION = "Description";
     public static final String CURRENCY_CODE = "CurrencyCode";
     public static final String LAST_RATE = "LastRate";

@@ -92,18 +92,18 @@ public class FinStmtDetailScreen extends Screen
      */
     public void setupSFields()
     {
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSequence).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.SEQUENCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.ACCOUNT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.ACCOUNT_DESC), this.getRecord(Account.ACCOUNT_FILE).getField(Account.DESCRIPTION));
         converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kIndent).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kInvisible).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kTypicalBalance).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSubTotalLevel).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kDataColumn).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSpecialFormat).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kNumberFormat).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-        this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kSpecialFunction).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.INDENT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.INVISIBLE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.TYPICAL_BALANCE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.SUB_TOTAL_LEVEL).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.DATA_COLUMN).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.SPECIAL_FORMAT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.NUMBER_FORMAT).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.SPECIAL_FUNCTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
         Object bookmark = this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).getData();
         if (bookmark != null)
         {

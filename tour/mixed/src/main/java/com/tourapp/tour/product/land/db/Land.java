@@ -52,44 +52,6 @@ public class Land extends Product
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    //public static final int kDescription = kDescription;
-    //public static final int kCode = kCode;
-    //public static final int kVendorID = kVendorID;
-    //public static final int kOperatorsCode = kOperatorsCode;
-    //public static final int kProductChainID = kProductChainID;
-    //public static final int kCityID = kCityID;
-    //public static final int kEtd = kEtd;
-    //public static final int kComments = kComments;
-    //public static final int kItineraryDesc = kItineraryDesc;
-    //public static final int kDescSort = kDescSort;
-    //public static final int kClassID = kClassID;
-    public static final int kType = kProductLastField + 1;
-    public static final int kManualFile = kType + 1;
-    public static final int kHours = kManualFile + 1;
-    public static final int kDays = kHours + 1;
-    public static final int kNights = kDays + 1;
-    public static final int kBreakfasts = kNights + 1;
-    public static final int kLunches = kBreakfasts + 1;
-    public static final int kDinners = kLunches + 1;
-    public static final int kDaysOfWeek = kDinners + 1;
-    public static final int kVehicle = kDaysOfWeek + 1;
-    public static final int kPMCCost = kVehicle + 1;
-    public static final int kPMCCostHome = kPMCCost + 1;
-    public static final int kSICCost = kPMCCostHome + 1;
-    public static final int kSICCostHome = kSICCost + 1;
-    public static final int kPMCPriceHome = kSICCostHome + 1;
-    public static final int kSICPriceHome = kPMCPriceHome + 1;
-    public static final int kLandLastField = kSICPriceHome;
-    public static final int kLandFields = kSICPriceHome - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kCodeKey = kIDKey + 1;
-    public static final int kDescSortKey = kCodeKey + 1;
-    public static final int kVendorIDKey = kDescSortKey + 1;
-    public static final int kCityIDKey = kVendorIDKey + 1;
-    public static final int kLandLastKey = kCityIDKey;
-    public static final int kLandKeys = kCityIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     public static final String SIC_PMC_PARAM = SearchConstants.SIC_PMC;
     /**
      * Default constructor.
@@ -113,14 +75,12 @@ public class Land extends Product
     {
         super.init(screen);
     }
-
-    public static final String kLandFile = "Land";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kLandFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(LAND_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -171,122 +131,204 @@ public class Land extends Product
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        //if (iFieldSeq == kID)
+        //if (iFieldSeq == 0)
         //{
-        //  field = new CounterField(this, "ID", 8, null, null);
+        //  field = new CounterField(this, ID, 8, null, null);
         //  field.setHidden(true);
         //}
-        if (iFieldSeq == kDescription)
-            field = new ProductDesc(this, "Description", 50, null, null);
-        if (iFieldSeq == kCode)
-            field = new StringField(this, "Code", 10, null, null);
-        //if (iFieldSeq == kVendorID)
+        //if (iFieldSeq == 1)
         //{
-        //  field = new VendorField(this, "VendorID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        if (iFieldSeq == 3)
+            field = new ProductDesc(this, DESCRIPTION, 50, null, null);
+        if (iFieldSeq == 4)
+            field = new StringField(this, CODE, 10, null, null);
+        //if (iFieldSeq == 5)
+        //{
+        //  field = new VendorField(this, VENDOR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //  field.addListener(new InitOnceFieldHandler(null));
         //}
-        //if (iFieldSeq == kOperatorsCode)
-        //  field = new StringField(this, "OperatorsCode", 20, null, null);
-        if (iFieldSeq == kProductChainID)
-            field = new LandChainField(this, "ProductChainID", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == kCityID)
-            field = new CityField(this, "CityID", 3, null, null);
-        if (iFieldSeq == kEtd)
+        //if (iFieldSeq == 6)
+        //  field = new StringField(this, OPERATORS_CODE, 20, null, null);
+        if (iFieldSeq == 7)
+            field = new LandChainField(this, PRODUCT_CHAIN_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new CityField(this, CITY_ID, 3, null, null);
+        if (iFieldSeq == 9)
         {
-            field = new TimeField(this, "Etd", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new TimeField(this, ETD, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.addListener(new InitOnceFieldHandler(null));
         }
-        //if (iFieldSeq == kComments)
-        //  field = new MemoField(this, "Comments", 32767, null, null);
-        //if (iFieldSeq == kItineraryDesc)
-        //  field = new XmlField(this, "ItineraryDesc", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == kDescSort)
-        //  field = new ProductDescSort(this, "DescSort", 10, null, null);
-        if (iFieldSeq == kType)
-            field = new LandTypeField(this, "Type", 1, null, "S");
-        if (iFieldSeq == kManualFile)
+        //if (iFieldSeq == 10)
+        //  field = new ShortField(this, ACK_DAYS, 2, null, null);
+        //if (iFieldSeq == 11)
+        //  field = new MemoField(this, COMMENTS, 32767, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new PropertiesField(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 13)
+        //  field = new XmlField(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new ProductDescSort(this, DESC_SORT, 10, null, null);
+        if (iFieldSeq == 15)
         {
-            field = new StringField(this, "ManualFile", 30, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kHours)
-            field = new FloatField(this, "Hours", 5, null, null);
-        if (iFieldSeq == kDays)
-        {
-            field = new ShortField(this, "Days", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kNights)
-        {
-            field = new ShortField(this, "Nights", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kBreakfasts)
-        {
-            field = new ShortField(this, "Breakfasts", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kLunches)
-        {
-            field = new ShortField(this, "Lunches", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kDinners)
-        {
-            field = new ShortField(this, "Dinners", 2, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kDaysOfWeek)
-        {
-            field = new DaysOfWeekField(this, "DaysOfWeek", 6, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kVehicle)
-        {
-            field = new StringField(this, "Vehicle", 15, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
-        if (iFieldSeq == kPMCCost)
-        {
-            field = new FullCurrencyField(this, "PMCCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ProductTypeAutoField(this, PRODUCT_TYPE, 15, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPMCCostHome)
+        if (iFieldSeq == 16)
         {
-            field = new CurrencyField(this, "PMCCostHome", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new FullCurrencyField(this, PRODUCT_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kSICCost)
+        if (iFieldSeq == 17)
         {
-            field = new FullCurrencyField(this, "SICCost", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new CurrencyField(this, PRODUCT_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kSICCostHome)
+        //if (iFieldSeq == 18)
+        //  field = new MessageTransportSelect(this, PRODUCT_MESSAGE_TRANSPORT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
         {
-            field = new CurrencyField(this, "SICCostHome", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new InventoryStatusField(this, DISPLAY_INVENTORY_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NO_STATUS));
             field.setVirtual(true);
         }
-        if (iFieldSeq == kClassID)
+        if (iFieldSeq == 20)
         {
-            field = new LandClassField(this, "ClassID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ShortField(this, INVENTORY_AVAILABILITY, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kPMCPriceHome)
+        if (iFieldSeq == 21)
         {
-            field = new CurrencyField(this, "PMCPriceHome", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new StringField(this, CURRENCY_CODE, 3, null, null);
             field.setVirtual(true);
         }
-        if (iFieldSeq == kSICPriceHome)
+        if (iFieldSeq == 22)
         {
-            field = new CurrencyField(this, "SICPriceHome", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new StringField(this, CURRENCY_CODE_LOCAL, 3, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 23)
+        {
+            field = new StringField(this, VENDOR_NAME, 30, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 24)
+        {
+            field = new CostStatusField(this, DISPLAY_COST_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, new Integer(BaseStatus.NULL_STATUS));
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 25)
+        {
+            field = new FullCurrencyField(this, PP_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 26)
+        {
+            field = new CurrencyField(this, PP_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 27)
+        {
+            field = new BaseRateField(this, RATE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 28)
+        {
+            field = new LandClassField(this, CLASS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 29)
+        {
+            field = new CurrencyField(this, PRODUCT_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 30)
+        {
+            field = new CurrencyField(this, PP_PRICE_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 31)
+            field = new LandTypeField(this, TYPE, 1, null, "S");
+        if (iFieldSeq == 32)
+        {
+            field = new StringField(this, MANUAL_FILE, 30, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 33)
+            field = new FloatField(this, HOURS, 5, null, null);
+        if (iFieldSeq == 34)
+        {
+            field = new ShortField(this, DAYS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 35)
+        {
+            field = new ShortField(this, NIGHTS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 36)
+        {
+            field = new ShortField(this, BREAKFASTS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 37)
+        {
+            field = new ShortField(this, LUNCHES, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 38)
+        {
+            field = new ShortField(this, DINNERS, 2, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 39)
+        {
+            field = new DaysOfWeekField(this, DAYS_OF_WEEK, 6, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 40)
+        {
+            field = new StringField(this, VEHICLE, 15, null, null);
+            field.addListener(new InitOnceFieldHandler(null));
+        }
+        if (iFieldSeq == 41)
+        {
+            field = new FullCurrencyField(this, PMC_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 42)
+        {
+            field = new CurrencyField(this, PMC_COST_HOME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 43)
+        {
+            field = new FullCurrencyField(this, SIC_COST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 44)
+        {
+            field = new CurrencyField(this, SIC_COST_HOME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 45)
+        {
+            field = new CurrencyField(this, PMC_PRICE_HOME, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 46)
+        {
+            field = new CurrencyField(this, SIC_PRICE_HOME, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setVirtual(true);
         }
         if (field == null)
-        {
             field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kLandLastField)
-                field = new EmptyField(this);
-        }
         return field;
     }
     /**
@@ -295,40 +337,36 @@ public class Land extends Product
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCodeKey)
+        if (iKeyArea == 1)
         {
             keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
-            keyArea.addKeyField(kCode, DBConstants.ASCENDING);
+            keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kDescSortKey)
+        if (iKeyArea == 2)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescSort");
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kVendorIDKey)
+        if (iKeyArea == 3)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
-            keyArea.addKeyField(kVendorID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (iKeyArea == kCityIDKey)
+        if (iKeyArea == 4)
         {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityID");
-            keyArea.addKeyField(kCityID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kType, DBConstants.ASCENDING);
-            keyArea.addKeyField(kDescSort, DBConstants.ASCENDING);
+            keyArea.addKeyField(CITY_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(TYPE, DBConstants.ASCENDING);
+            keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kLandLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kLandLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -552,7 +590,7 @@ public class Land extends Product
         double dDays = this.getField(Land.DAYS).getValue();
         if (dDays != 0)
             return (long)(dDays * DBConstants.KMS_IN_A_DAY);
-        double dHours = this.getField(kHours).getValue();
+        double dHours = this.getField(Land.HOURS).getValue();
         return (long)(dHours * 60 * 60 * 1000); // Milliseconds
     }
     /**
@@ -630,9 +668,9 @@ public class Land extends Product
         else
         {
             if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.PMC_PRICE_HOME).getValue() == 0))
-                this.getField(Land.PMC_PRICE_HOME).setValue(Math.floor(this.getField(kPMCCostHome).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+                this.getField(Land.PMC_PRICE_HOME).setValue(Math.floor(this.getField(Land.PMC_COST_HOME).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
             if ((!bMarkupOnlyIfNoPrice) || (this.getField(Land.SIC_PRICE_HOME).getValue() == 0))
-                this.getField(Land.SIC_PRICE_HOME).setValue(Math.floor(this.getField(kSICCostHome).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
+                this.getField(Land.SIC_PRICE_HOME).setValue(Math.floor(this.getField(Land.SIC_COST_HOME).getValue() * (1 + dMarkup) * 100 + 0.5) / 100);
         }
     }
 

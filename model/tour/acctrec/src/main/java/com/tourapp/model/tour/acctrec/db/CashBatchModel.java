@@ -10,6 +10,8 @@ public interface CashBatchModel extends BankTrxBatchModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     //public static final String USER_ID = USER_ID;
     //public static final String BANK_ACCT_ID = BANK_ACCT_ID;
     public static final String DETAIL_DATE = "DetailDate";

@@ -10,6 +10,10 @@ public interface LandChainModel extends ProductChainModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    //public static final String DESCRIPTION = DESCRIPTION;
+    //public static final String CODE = CODE;
 
     public static final String LAND_CHAIN_FILE = "LandChain";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.LandChain";

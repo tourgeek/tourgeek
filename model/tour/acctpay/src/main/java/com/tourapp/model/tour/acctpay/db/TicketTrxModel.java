@@ -10,16 +10,17 @@ public interface TicketTrxModel extends ApTrxModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
+    //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
+    //public static final String TRX_USER_ID = TRX_USER_ID;
     //public static final String CODE = CODE;
     //public static final String DESCRIPTION = DESCRIPTION;
     //public static final String AP_TRX_TYPE_ID = AP_TRX_TYPE_ID;
-    //public static final String TRX_STATUS_ID = TRX_STATUS_ID;
-    //public static final String TRX_USER_ID = TRX_USER_ID;
     //public static final String ACTIVE_TRX = ACTIVE_TRX;
     //public static final String VENDOR_ID = VENDOR_ID;
     //public static final String TOUR_ID = TOUR_ID;
     //public static final String PRODUCT_TYPE_ID = PRODUCT_TYPE_ID;
-    //public static final String LAST_CHANGED = LAST_CHANGED;
     //public static final String START_SERVICE_DATE = START_SERVICE_DATE;
     //public static final String END_SERVICE_DATE = END_SERVICE_DATE;
     //public static final String FINALIZATION_DATE = FINALIZATION_DATE;

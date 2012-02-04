@@ -33,14 +33,6 @@ public class BookingLineHistory extends BookingLine
 {
     private static final long serialVersionUID = 1L;
 
-    //public static final int kID = kID;
-    public static final int kHistoryDate = kBookingLineLastField + 1;
-    public static final int kBookingLineHistoryLastField = kHistoryDate;
-    public static final int kBookingLineHistoryFields = kHistoryDate - DBConstants.MAIN_FIELD + 1;
-
-    public static final int kIDKey = DBConstants.MAIN_KEY_FIELD;
-    public static final int kBookingLineHistoryLastKey = kIDKey;
-    public static final int kBookingLineHistoryKeys = kIDKey - DBConstants.MAIN_KEY_FIELD + 1;
     /**
      * Default constructor.
      */
@@ -63,14 +55,12 @@ public class BookingLineHistory extends BookingLine
     {
         super.init(screen);
     }
-
-    public static final String kBookingLineHistoryFile = "BookingLineHistory";
     /**
      * Get the table name.
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(kBookingLineHistoryFile, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(BOOKING_LINE_HISTORY_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
@@ -99,19 +89,81 @@ public class BookingLineHistory extends BookingLine
     public BaseField setupField(int iFieldSeq)
     {
         BaseField field = null;
-        if (iFieldSeq == kID)
+        if (iFieldSeq == 0)
         {
-            field = new IntegerField(this, "ID", Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new IntegerField(this, ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setHidden(true);
         }
-        if (iFieldSeq == kHistoryDate)
-            field = new DateTimeField(this, "HistoryDate", Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (field == null)
+        //if (iFieldSeq == 1)
+        //{
+        //  field = new RecordChangedField(this, LAST_CHANGED, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 2)
+        //{
+        //  field = new BooleanField(this, DELETED, Constants.DEFAULT_FIELD_LENGTH, null, new Boolean(false));
+        //  field.setHidden(true);
+        //}
+        //if (iFieldSeq == 3)
+        //  field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new BookingPaxField(this, BOOKING_PAX_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new TourHeaderField(this, MODULE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 6)
+        //  field = new TourHeaderDetailField(this, TOUR_HEADER_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 7)
+        //  field = new TourHeaderOptionField(this, TOUR_HEADER_OPTION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 8)
+        //  field = new DateTimeField(this, MODULE_START_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 9)
+        //  field = new StringField(this, DESCRIPTION, 60, null, null);
+        if (iFieldSeq == 10)
         {
-            field = super.setupField(iFieldSeq);
-            if (field == null) if (iFieldSeq < kBookingLineHistoryLastField)
-                field = new EmptyField(this);
+            field = new StringField(this, PRODUCT_TYPE, 15, null, null);
+            field.setVirtual(true);
         }
+        //if (iFieldSeq == 11)
+        //  field = new StringField(this, REMOTE_REFERENCE_NO, 60, null, null);
+        //if (iFieldSeq == 12)
+        //  field = new ShortField(this, SEQUENCE, 4, null, new Short((short)9999));
+        //if (iFieldSeq == 13)
+        //  field = new CurrencyField(this, PRICE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 14)
+        //  field = new ShortField(this, QUANTITY, 3, null, null);
+        if (iFieldSeq == 15)
+        {
+            field = new CurrencyField(this, GROSS, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 16)
+        //  field = new BooleanField(this, COMMISSIONABLE, 1, null, new Boolean(true));
+        //if (iFieldSeq == 17)
+        //  field = new BookingLineHistory_CommissionRate(this, COMMISSION_RATE, 5, null, null);
+        if (iFieldSeq == 18)
+        {
+            field = new CurrencyField(this, COMMISSION, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        if (iFieldSeq == 19)
+        {
+            field = new CurrencyField(this, NET, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field.setVirtual(true);
+        }
+        //if (iFieldSeq == 20)
+        //  field = new PricingStatusField(this, PRICING_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 21)
+        //  field = new PayAtField(this, PAY_AT, 1, null, "PayAtField.FINAL_PAY_DATE");
+        //if (iFieldSeq == 22)
+        //  field = new IntegerField(this, PAX_GROUPS, 8, null, null);
+        //if (iFieldSeq == 23)
+        //  field = new ReferenceField(this, BOOKING_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 24)
+        //  field = new PaxBaseCategoryField(this, PAX_CATEGORY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 25)
+            field = new DateTimeField(this, HISTORY_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (field == null)
+            field = super.setupField(iFieldSeq);
         return field;
     }
     /**
@@ -120,18 +172,14 @@ public class BookingLineHistory extends BookingLine
     public KeyArea setupKey(int iKeyArea)
     {
         KeyArea keyArea = null;
-        if (iKeyArea == kIDKey)
+        if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "PrimaryKey");
-            keyArea.addKeyField(kID, DBConstants.ASCENDING);
-            keyArea.addKeyField(kHistoryDate, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea.addKeyField(ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(HISTORY_DATE, DBConstants.ASCENDING);
         }
-        if (keyArea == null) if (iKeyArea < kBookingLineHistoryLastKey)
-        {
+        if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
-            if (keyArea == null) if (iKeyArea < kBookingLineHistoryLastKey)
-                keyArea = new EmptyKey(this);
-        }
         return keyArea;
     }
     /**
@@ -141,7 +189,7 @@ public class BookingLineHistory extends BookingLine
     public void addListeners()
     {
         // Don't call inherited
-        this.addListener(new UniqueKeyHandler(this.getField(kHistoryDate)));
+        this.addListener(new UniqueKeyHandler(this.getField(BookingLineHistory.HISTORY_DATE)));
     }
 
 }

@@ -10,10 +10,9 @@ public interface ProfileModel extends CompanyModel
 {
 
     //public static final String ID = ID;
+    //public static final String LAST_CHANGED = LAST_CHANGED;
+    //public static final String DELETED = DELETED;
     public static final String PROFILE_CODE = CODE;
-    //public static final String DATE_ENTERED = DATE_ENTERED;
-    //public static final String CHANGED_ID = CHANGED_ID;
-    //public static final String DATE_CHANGED = DATE_CHANGED;
     public static final String GENERIC_NAME = NAME;
     //public static final String ADDRESS_LINE_1 = ADDRESS_LINE_1;
     //public static final String ADDRESS_LINE_2 = ADDRESS_LINE_2;
@@ -25,11 +24,15 @@ public interface ProfileModel extends CompanyModel
     //public static final String FAX = FAX;
     //public static final String EMAIL = EMAIL;
     //public static final String WEB = WEB;
-    public static final String NAME_ORDERED = CONTACT;
+    //public static final String DATE_ENTERED = DATE_ENTERED;
+    //public static final String DATE_CHANGED = DATE_CHANGED;
+    //public static final String CHANGED_ID = CHANGED_ID;
     //public static final String COMMENTS = COMMENTS;
+    //public static final String USER_ID = USER_ID;
     //public static final String PASSWORD = PASSWORD;
     //public static final String NAME_SORT = NAME_SORT;
     //public static final String POSTAL_CODE_SORT = POSTAL_CODE_SORT;
+    public static final String NAME_ORDERED = CONTACT;
     public static final String PROFILE_TYPE_ID = "ProfileTypeID";
     public static final String ENTERED_ID = "EnteredID";
     public static final String AFFILIATION_ID = "AffiliationID";
