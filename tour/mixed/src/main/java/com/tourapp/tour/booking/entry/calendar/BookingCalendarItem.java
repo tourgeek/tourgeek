@@ -4,47 +4,22 @@
  */
 package com.tourapp.tour.booking.entry.calendar;
 
-import java.awt.*;
-import java.util.*;
+import java.util.Date;
+import java.util.Hashtable;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
-import org.jbundle.util.calendarpanel.model.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.booking.entry.detail.base.*;
-import com.tourapp.tour.booking.entry.base.*;
-import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.record.*;
-import org.jbundle.thin.base.screen.cal.popup.*;
-import org.jbundle.base.screen.view.swing.*;
-import org.jbundle.util.calendarpanel.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.product.trans.db.*;
-import com.tourapp.tour.product.car.db.*;
-import com.tourapp.tour.product.cruise.db.*;
-import com.tourapp.tour.product.air.db.*;
-import com.tourapp.tour.product.item.db.*;
-import org.jbundle.base.screen.model.calendar.*;
-import javax.swing.*;
-import org.jbundle.thin.base.screen.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.thin.app.booking.entry.*;
+import javax.swing.ImageIcon;
+
+import org.jbundle.base.model.MenuConstants;
+import org.jbundle.base.screen.model.BaseScreen;
+import org.jbundle.base.screen.model.calendar.CalendarRecordItem;
+import org.jbundle.model.util.Colors;
+import org.jbundle.thin.base.screen.BaseApplet;
+import org.jbundle.util.calendarpanel.model.CalendarConstants;
+import org.jbundle.util.calendarpanel.model.CalendarItem;
+
+import com.tourapp.thin.app.booking.entry.BookingConstants;
+import com.tourapp.tour.booking.detail.db.BookingDetail;
+import com.tourapp.tour.product.base.db.ProductType;
 
 /**
  *  BookingCalendarItem - .
@@ -52,16 +27,16 @@ import com.tourapp.thin.app.booking.entry.*;
 public class BookingCalendarItem extends CalendarRecordItem
      implements CalendarItem
 {
-    public static Hashtable<String,Color> m_htcolorHighlight = new Hashtable<String,Color>();
+    public static Hashtable<String,Integer> m_htcolorHighlight = new Hashtable<String,Integer>();
     static  {
-        m_htcolorHighlight.put(ProductType.AIR, new Color(255, 192, 192));
-        m_htcolorHighlight.put(ProductType.HOTEL, new Color(192, 192, 255));
-        m_htcolorHighlight.put(ProductType.LAND, new Color(192, 255, 255));
-        m_htcolorHighlight.put(ProductType.CAR, new Color(255, 192, 255));
-        m_htcolorHighlight.put(ProductType.CRUISE, new Color(192, 255, 192));
-        m_htcolorHighlight.put(ProductType.TRANSPORTATION, new Color(192, 192, 192));
-        m_htcolorHighlight.put(ProductType.TOUR, new Color(255, 255, 255));
-        m_htcolorHighlight.put(ProductType.ITEM, new Color(224, 224, 224));
+        m_htcolorHighlight.put(ProductType.AIR, 0x00ffc0c0);
+        m_htcolorHighlight.put(ProductType.HOTEL, 0x00c0c0ff);
+        m_htcolorHighlight.put(ProductType.LAND, 0x00c0ffff);
+        m_htcolorHighlight.put(ProductType.CAR, 0x00ffc0ff);
+        m_htcolorHighlight.put(ProductType.CRUISE, 0x00c0ffc0);
+        m_htcolorHighlight.put(ProductType.TRANSPORTATION, 0x00c0c0c0);
+        m_htcolorHighlight.put(ProductType.TOUR, 0x00ffffff);
+        m_htcolorHighlight.put(ProductType.ITEM, 0x00e0e0e0);
     };
     protected static ImageIcon m_iconLookup = null;
     protected static ImageIcon m_iconPrice = null;
@@ -166,22 +141,22 @@ public class BookingCalendarItem extends CalendarRecordItem
      * Highlight color (optional).
      * @return The highlight color (green).
      */
-    public Color getHighlightColor()
+    public int getHighlightColor()
     {
         String strProductType = this.getBookingDetail().getField(BookingDetail.PRODUCT_TYPE).toString();
-        Color color = null;
+        int color = Colors.NULL;
         if (strProductType != null)
             color = m_htcolorHighlight.get(strProductType);
-        if (color == null)
-            color = Color.green;
+        if (color == Colors.NULL)
+            color = Colors.GREEN;
         return color;
     }
     /**
      * Get the selection colot.
      */
-    public Color getSelectColor()
+    public int getSelectColor()
     {
-        return null;    // Have the calendar screen figure out a color
+        return Colors.NULL;    // Have the calendar screen figure out a color
     }
     /**
      * Get the Visual Javabean.

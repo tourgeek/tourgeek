@@ -3,7 +3,6 @@
  */
 package com.tourapp.thin.app.booking.entry.model;
 
-import java.awt.Color;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -189,14 +188,14 @@ public class BookingDetailCalendarItem extends BookingDetail
     /**
      * Highlight color (optional).
      */
-    public Color getHighlightColor()
+    public int getHighlightColor()
     {
         return ProductTypeInfo.getProductType(this.getLocalProductType()).getHighlightColor();
     }
     /**
      * Highlight color (optional).
      */
-    public Color getSelectColor()
+    public int getSelectColor()
     {
         return ProductTypeInfo.getProductType(this.getLocalProductType()).getSelectColor();
     }
