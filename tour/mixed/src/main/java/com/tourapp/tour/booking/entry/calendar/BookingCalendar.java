@@ -45,6 +45,7 @@ import javax.swing.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.thin.app.booking.entry.*;
+import org.jbundle.model.util.*;
 
 /**
  *  BookingCalendar - Booking entry sub-screen to manipulate itinerary using a calendar screen.

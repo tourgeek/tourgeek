@@ -88,9 +88,9 @@ public class JLegendScreen extends JBasePanel
         if (this.getBaseApplet() != null)
         	image = this.getBaseApplet().getBackgroundImage();
         JUnderlinedLabel label;
-        panel.add(label = new JUnderlinedLabel(null, productType.getStartIcon(), false, productType.getHighlightColor(), productType.getSelectColor(), 0, null, false));
+        panel.add(label = new JUnderlinedLabel(null, productType.getStartIcon(), false, new Color(productType.getHighlightColor()), new Color(productType.getSelectColor()), 0, null, false));
         label.setBackgroundImage(image);
-        panel.add(label = new JUnderlinedLabel(null, productType.getDescription(), true, productType.getHighlightColor(), productType.getSelectColor(), 0, null, false));
+        panel.add(label = new JUnderlinedLabel(null, productType.getDescription(), true, new Color(productType.getHighlightColor()), new Color(productType.getSelectColor()), 0, null, false));
         label.setBackgroundImage(image);
     }
 }
