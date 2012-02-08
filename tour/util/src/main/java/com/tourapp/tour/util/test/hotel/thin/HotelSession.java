@@ -28,7 +28,7 @@ import org.jbundle.thin.base.remote.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.util.test.hotel.*;
 import com.tourapp.tour.product.hotel.db.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.hotel.response.*;

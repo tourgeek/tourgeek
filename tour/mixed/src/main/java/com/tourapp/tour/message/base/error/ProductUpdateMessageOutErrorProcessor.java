@@ -28,7 +28,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.main.msg.db.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 
 /**
  *  ProductUpdateMessageOutErrorProcessor - .

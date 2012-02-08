@@ -31,7 +31,7 @@ import com.tourapp.tour.product.land.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.thin.app.booking.entry.search.*;
 import org.jbundle.main.msg.db.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.main.msg.screen.*;
 import com.tourapp.tour.message.base.response.*;

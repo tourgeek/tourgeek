@@ -22,7 +22,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.base.db.*;

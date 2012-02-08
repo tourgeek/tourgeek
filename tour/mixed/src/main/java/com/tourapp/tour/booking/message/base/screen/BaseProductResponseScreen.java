@@ -30,7 +30,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.base.response.data.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.profile.db.*;
 

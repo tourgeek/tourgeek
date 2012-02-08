@@ -29,7 +29,7 @@ import java.util.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.thin.app.booking.entry.search.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.land.request.*;
 import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.message.base.response.*;

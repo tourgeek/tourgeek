@@ -26,7 +26,7 @@ import org.jbundle.base.thread.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourapp.tour.base.db.*;
 import org.jibx.schema.net.webservicex.currencyconvertor.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.trx.transport.soap.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;

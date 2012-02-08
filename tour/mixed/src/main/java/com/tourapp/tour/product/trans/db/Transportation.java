@@ -25,7 +25,7 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.trans.screen.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.tour.db.*;

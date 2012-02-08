@@ -30,7 +30,7 @@ import com.tourapp.tour.booking.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.thin.app.booking.entry.*;
 import com.tourapp.tour.booking.detail.event.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.booking.entry.detail.land.*;
 import com.tourapp.tour.booking.entry.detail.hotel.*;
 import com.tourapp.tour.booking.entry.detail.detail.*;

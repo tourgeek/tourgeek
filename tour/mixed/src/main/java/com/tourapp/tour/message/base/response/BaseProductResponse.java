@@ -28,7 +28,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.message.base.response.data.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import java.math.*;
 import javax.xml.datatype.*;
 import com.tourapp.tour.message.base.request.*;

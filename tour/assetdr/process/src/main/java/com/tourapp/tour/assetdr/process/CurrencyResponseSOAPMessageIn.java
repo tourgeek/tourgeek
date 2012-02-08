@@ -25,7 +25,7 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.trx.message.internal.*;
+import org.jbundle.base.message.core.trx.internal.*;
 import org.jbundle.base.message.trx.message.external.*;
 
 /**

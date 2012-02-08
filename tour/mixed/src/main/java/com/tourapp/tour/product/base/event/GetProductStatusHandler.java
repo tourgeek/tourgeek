@@ -24,7 +24,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.db.grid.*;
 import org.jbundle.main.msg.db.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.main.db.base.*;

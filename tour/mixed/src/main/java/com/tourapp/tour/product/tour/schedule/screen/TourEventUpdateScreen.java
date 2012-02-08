@@ -26,7 +26,7 @@ import org.jbundle.thin.base.screen.*;
 import org.jbundle.base.thread.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.main.msg.db.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 
 /**
  *  TourEventUpdateScreen - Manually run the booking and tour actions.

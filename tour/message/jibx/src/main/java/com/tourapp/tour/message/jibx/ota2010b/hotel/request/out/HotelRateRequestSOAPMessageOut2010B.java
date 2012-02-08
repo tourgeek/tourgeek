@@ -25,7 +25,7 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jibx.schema.org.opentravel._2010B.base.*;
 import com.tourapp.tour.product.base.db.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 import javax.xml.bind.*;
 import com.tourapp.tour.product.hotel.db.*;

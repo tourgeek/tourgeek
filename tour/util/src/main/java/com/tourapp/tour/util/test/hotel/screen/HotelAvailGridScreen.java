@@ -25,7 +25,7 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.util.test.hotel.db.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 
 /**
  *  HotelAvailGridScreen - .

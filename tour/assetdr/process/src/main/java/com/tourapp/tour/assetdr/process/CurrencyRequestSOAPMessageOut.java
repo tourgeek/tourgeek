@@ -26,7 +26,7 @@ import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jbundle.thin.base.message.*;
 import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.base.message.trx.message.external.*;
-import org.jbundle.base.message.trx.message.internal.*;
+import org.jbundle.base.message.core.trx.internal.*;
 
 /**
  *  CurrencyRequestSOAPMessageOut - .

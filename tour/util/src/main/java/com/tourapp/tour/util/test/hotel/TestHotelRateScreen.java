@@ -24,7 +24,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.hotel.db.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import org.jbundle.base.message.trx.processor.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.message.hotel.request.out.*;

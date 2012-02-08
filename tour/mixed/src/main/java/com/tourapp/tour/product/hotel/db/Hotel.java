@@ -33,7 +33,7 @@ import com.tourapp.thin.app.booking.entry.search.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.message.hotel.request.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.base.message.trx.message.*;
+import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.thin.base.screen.*;
