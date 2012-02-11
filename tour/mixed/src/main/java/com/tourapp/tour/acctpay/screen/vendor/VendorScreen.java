@@ -25,7 +25,6 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctpay.screen.trx.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
-import org.jbundle.main.msg.wsdl.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.base.message.core.trx.*;
@@ -197,7 +196,7 @@ public class VendorScreen extends Screen
                     e.printStackTrace();
                 }
                 
-                map.put(DBParams.PROCESS, GetWSDL.class.getName());   // Default
+//                map.put(DBParams.PROCESS, GetWSDL.class.getName());   // Default
                 Application app = (Application)this.getTask().getApplication();
                 String strQueueName = MessageConstants.TRX_SEND_QUEUE;
                 String strQueueType = MessageConstants.INTRANET_QUEUE;

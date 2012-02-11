@@ -89,6 +89,56 @@
                   <artifactId>com.tourapp.tour.message</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.genled</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.product</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.acctrec</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.acctpay</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.assetdr</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.base</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.booking</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.payroll</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.profile</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.model</groupId>
+                  <artifactId>com.tourapp.model.tour.request</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
               </jarResources>
             </jnlpFile>
             <jnlpFile>
