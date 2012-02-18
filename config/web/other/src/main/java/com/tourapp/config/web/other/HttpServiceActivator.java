@@ -50,6 +50,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     public static final String WEBAPP_WEBDAV = WEBAPP + "/webdav";
     public static final String WEBAPP_CGI = WEBAPP + "/cgi";
     public static final String WEBAPP_WEBSTART = WEBAPP + "/webstart";
+    public static final String WEBAPP_WEBSTART_APPLET = WEBAPP + "/webstart.html";
 
     public static final String PICTURES = "pictures";
 
@@ -73,7 +74,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             WEBAPP_PROXY,
             WEBAPP_UPLOAD,
             WEBAPP_WEBDAV,
-//            WEBAPP_WEBSTART,
+//            WEBAPP_WEBSTART,   // Already enabled by osgi-webstart
+//            WEBAPP_WEBSTART_APPLET,   // Already enabled by osgi-webstart
             NOTES,
             PICTURES,
             WEBAPP,
