@@ -6,7 +6,7 @@
  * WARNING WARNING: This is manually created class to mirror tour.booking.remote.BookingMenuLookup
  * ... Remember to change this class if the remote class changes!!!
  
- * Copyright © 2011 jbundle.org. All rights reserved.
+ * Copyright © 2012 jbundle.org. All rights reserved.
  */
 package com.tourapp.thin.app.booking.lookup;
 

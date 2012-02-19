@@ -1,11 +1,11 @@
 /*
- * Copyright © 2011 jbundle.org. All rights reserved.
+ * Copyright © 2012 jbundle.org. All rights reserved.
  */
 package com.tourapp.thin.app.booking.entry.search.cruise;
 
 /**
  * OrderEntry.java:   Applet
- *  Copyright (c) 2005 tourgeek.com. All rights reserved.
+ *  Copyright © 2012 tourgeek.com. All rights reserved.
  *  
  *  @author Don Corley don@donandann.com
  *  @version 1.0.0.

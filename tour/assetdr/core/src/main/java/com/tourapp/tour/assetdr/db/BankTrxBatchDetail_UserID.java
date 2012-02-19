@@ -1,6 +1,6 @@
 /**
  * @(#)BankTrxBatchDetail_UserID.
- * Copyright © 2011 tourapp.com. All rights reserved.
+ * Copyright © 2012 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.db;
 
