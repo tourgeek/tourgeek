@@ -126,7 +126,7 @@ public class BookingCalendarItem extends CalendarRecordItem
      * Get the icon (opt).
      * @return The icon.
      */
-    public ImageIcon getIcon(int iIconType)
+    public Object getIcon(int iIconType)
     {
         String strIcon = null;
         if (iIconType == CalendarConstants.START_ICON)

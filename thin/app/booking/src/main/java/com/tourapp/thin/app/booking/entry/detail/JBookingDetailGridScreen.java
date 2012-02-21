@@ -113,7 +113,7 @@ public class JBookingDetailGridScreen extends JBaseScreen
                     BookingDetailCalendarItem item =
                         (BookingDetailCalendarItem)((CustSaleDetailThinTableModel)m_table.getModel()).getItem(m_iThisRow);
                     if (item != null)
-                        return item.getIcon(CalendarConstants.START_ICON);
+                        return (ImageIcon)item.getIcon(CalendarConstants.START_ICON);
                 }
                 return icon;
             }

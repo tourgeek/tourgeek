@@ -168,7 +168,7 @@ public class BookingDetailCalendarItem extends BookingDetail
     /**
      * Get the icon (opt).
      */
-    public ImageIcon getIcon(int iIconType)
+    public Object getIcon(int iIconType)
     {
         if (iIconType == CalendarConstants.END_ICON)
             return ProductTypeInfo.getProductType(this.getLocalProductType()).getEndIcon();
@@ -242,7 +242,7 @@ public class BookingDetailCalendarItem extends BookingDetail
     /**
      * Set the icon (opt).
      */
-    public void setIcon(ImageIcon icon, int iIconType)
+    public void setIcon(Object icon, int iIconType)
     {
     }
     /**
