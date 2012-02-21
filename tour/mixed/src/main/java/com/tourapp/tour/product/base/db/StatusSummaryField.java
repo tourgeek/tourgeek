@@ -76,7 +76,7 @@ public class StatusSummaryField extends IntegerField
                 {
                     org.jbundle.thin.base.screen.BaseApplet applet = (org.jbundle.thin.base.screen.BaseApplet)targetScreen.getAppletScreen().getTask();
                     if ((blink.getImageIcon(IntegerField.ZERO) == null)
-                        || (blink.getImageIcon(IntegerField.ZERO).getDescription() != strProductType))
+                        || (!strProductType.equalsIgnoreCase(blink.getImageIcon(IntegerField.ZERO).toString())))
                         {
                             blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType, strProductType), 0);
                         }
