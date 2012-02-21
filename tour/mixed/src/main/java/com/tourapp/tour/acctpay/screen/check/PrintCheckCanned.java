@@ -179,8 +179,11 @@ public class PrintCheckCanned extends CheckPrintScreen
     }
     /**
      * Layout the special print control (usually a JPanel).
+     * ***** NOTE: This method is obsolete *****
+     * The base code is now in the swing implementation
+     * (VCustomReportScreen) since I can't reference awt from here.
      */
-    public void layoutPrintControl(Component control)
+    public void layoutPrintControl(Object control)
     {
         super.layoutPrintControl(control);
     }

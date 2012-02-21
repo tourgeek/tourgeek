@@ -196,7 +196,7 @@ public class VendorScreen extends Screen
                     e.printStackTrace();
                 }
                 
-//                map.put(DBParams.PROCESS, GetWSDL.class.getName());   // Default
+                map.put(DBParams.PROCESS, "org.jbundle.main.msg.wsdl.GetWSDL");   // Default
                 Application app = (Application)this.getTask().getApplication();
                 String strQueueName = MessageConstants.TRX_SEND_QUEUE;
                 String strQueueType = MessageConstants.INTRANET_QUEUE;
