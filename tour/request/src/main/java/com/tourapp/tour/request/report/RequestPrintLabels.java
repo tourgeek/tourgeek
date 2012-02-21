@@ -24,7 +24,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.report.*;
 import com.tourapp.tour.request.db.*;
-import javax.swing.*;
 import com.tourapp.tour.request.screen.*;
 import com.tourapp.tour.base.db.shared.*;
 
@@ -178,9 +177,13 @@ public class RequestPrintLabels extends CustomReportScreen
     }
     /**
      * Layout the special print control (usually a JPanel).
+     * ***** NOTE: This method is obsolete *****
+     * The base code is now in the swing implementation
+     * (VCustomReportScreen) since I can't reference awt from here.
      */
-    public void layoutPrintControl(Component control)
+    public void layoutPrintControl(Object control)
     {
+        /*
         JPanel panel = (JPanel)control;
         int x = 0;
         int y = 0;
@@ -200,6 +203,7 @@ public class RequestPrintLabels extends CustomReportScreen
         height = (int)(0.5 * 72);
         this.setupComponent(compTop, x, y, width, height);
         label.setFont(new Font("SansSerif", Font.PLAIN, 8));
+        */
     }
 
 }

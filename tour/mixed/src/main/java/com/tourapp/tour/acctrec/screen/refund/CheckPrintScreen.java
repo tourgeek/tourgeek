@@ -23,7 +23,6 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.report.*;
-import javax.swing.*;
 import com.tourapp.tour.assetdr.db.*;
 import javax.swing.text.*;
 
@@ -80,9 +79,13 @@ public class CheckPrintScreen extends CustomReportScreen
     }
     /**
      * Layout the special print control (usually a JPanel).
+     * ***** NOTE: This method is obsolete *****
+     * The base code is now in the swing implementation
+     * (VCustomReportScreen) since I can't reference awt from here.
      */
-    public void layoutPrintControl(Component control)
+    public void layoutPrintControl(Object control)
     {
+        /*
         JPanel panel = (JPanel)control;
         int x = 0;
         int y = 0;
@@ -115,6 +118,7 @@ public class CheckPrintScreen extends CustomReportScreen
         this.setupComponent(label, x, y, width, height);
         
         panel.setLayout(null);
+        */
     }
 
 }
