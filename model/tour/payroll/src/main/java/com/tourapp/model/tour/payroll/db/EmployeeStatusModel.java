@@ -94,8 +94,6 @@ public interface EmployeeStatusModel extends EmployeeModel
     //public static final String YTD_SUI_PAID = YTD_SUI_PAID;
     //public static final String YTD_FUI_PAID = YTD_FUI_PAID;
     //public static final String STATUS = STATUS;
-    //public static final String TEL = TEL;
-    //public static final String DATE_ENTERED = DATE_ENTERED;
 
     public static final String EMPLOYEE_STATUS_FILE = "EmployeeStatus";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.payroll.db.EmployeeStatus";

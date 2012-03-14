@@ -291,10 +291,6 @@ public class EmployeeStatus extends Employee
         //  field = new CurrencyField(this, YTD_FUI_PAID, 7, null, null);
         //if (iFieldSeq == 84)
         //  field = new BooleanField(this, STATUS, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == 85)
-        //  field = new PhoneField(this, TEL, 24, null, null);
-        //if (iFieldSeq == 86)
-        //  field = new EmployeeStatus_DateEntered(this, DATE_ENTERED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;

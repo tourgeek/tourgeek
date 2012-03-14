@@ -80,7 +80,7 @@ public class CustSale extends VirtualRecord
         if (iFieldSeq == 3)
             field = new CustSale_CustSaleDate(this, CUST_SALE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 4)
-            field = new ReferenceField(this, CUST_SALE_AGENT, 6, null, null);
+            field = new ReferenceField(this, CUST_SALE_AGENT_ID, 6, null, null);
         if (iFieldSeq == 5)
             field = new ReferenceField(this, CUST_SALE_CUST_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 6)

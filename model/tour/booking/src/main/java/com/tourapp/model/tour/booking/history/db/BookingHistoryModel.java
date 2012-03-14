@@ -72,10 +72,6 @@ public interface BookingHistoryModel extends BookingModel
     //public static final String TOUR_PRICING_TYPE_ID = TOUR_PRICING_TYPE_ID;
     //public static final String NON_TOUR_PRICING_TYPE_ID = NON_TOUR_PRICING_TYPE_ID;
     //public static final String NEXT_LINE_SEQUENCE = NEXT_LINE_SEQUENCE;
-    //public static final String CUST_SALE_DATE = CUST_SALE_DATE;
-    //public static final String CUST_SALE_AGENT = CUST_SALE_AGENT;
-    //public static final String CUST_SALE_CUST_ID = CUST_SALE_CUST_ID;
-    //public static final String CUST_SALE_CUST_NO = CUST_SALE_CUST_NO;
     public static final String HISTORY_DATE = "HistoryDate";
 
     public static final String BOOKING_HISTORY_FILE = "BookingHistory";

@@ -243,15 +243,7 @@ public class BookingHistory extends Booking
         //  field = new PricingTypeField(this, NON_TOUR_PRICING_TYPE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //if (iFieldSeq == 62)
         //  field = new ShortField(this, NEXT_LINE_SEQUENCE, Constants.DEFAULT_FIELD_LENGTH, null, new Short((short)1));
-        //if (iFieldSeq == 63)
-        //  field = new BookingHistory_CustSaleDate(this, CUST_SALE_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == 64)
-        //  field = new ReferenceField(this, CUST_SALE_AGENT, 6, null, null);
-        //if (iFieldSeq == 65)
-        //  field = new ReferenceField(this, CUST_SALE_CUST_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == 66)
-        //  field = new StringField(this, CUST_SALE_CUST_NO, 16, null, null);
-        if (iFieldSeq == 67)
+        if (iFieldSeq == 63)
             field = new DateTimeField(this, HISTORY_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);

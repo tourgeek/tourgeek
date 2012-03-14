@@ -177,14 +177,6 @@ public class BookingHistory extends Booking
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, NEXT_LINE_SEQUENCE, 5, null, new Short((short)1));
         field.setDataClass(Short.class);
-        field = new FieldInfo(this, CUST_SALE_DATE, 12, null, null);
-        field.setDataClass(Date.class);
-        field.setScale(Constants.DATE_ONLY);
-        field = new FieldInfo(this, CUST_SALE_AGENT, 6, null, null);
-        field.setDataClass(Integer.class);
-        field = new FieldInfo(this, CUST_SALE_CUST_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Integer.class);
-        field = new FieldInfo(this, CUST_SALE_CUST_NO, 16, null, null);
         field = new FieldInfo(this, HISTORY_DATE, 25, null, null);
         field.setDataClass(Date.class);
     }
