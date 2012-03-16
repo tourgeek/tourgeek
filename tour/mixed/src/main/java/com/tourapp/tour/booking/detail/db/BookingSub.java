@@ -115,7 +115,7 @@ public class BookingSub extends VirtualRecord
     {
         FileListener subFileBeh = new SubFileFilter(recBooking, true);
         this.addListener(subFileBeh);
-        this.setKeyArea(BookingSub.BOOKING_KEY);
+        this.setKeyArea(BookingSub.BOOKING_ID_KEY);
         RecordOwner screen = this.getRecordOwner();
         if (screen != null) if (screen instanceof GridScreen)
         {
@@ -301,7 +301,7 @@ public class BookingSub extends VirtualRecord
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         int iOldKeyOrder = this.getDefaultOrder();
-        this.setKeyArea(BookingSub.BOOKING_KEY);
+        this.setKeyArea(BookingSub.BOOKING_ID_KEY);
         FileListener subFileBehavior = new SubFileFilter(recBooking, true);
         this.addListener(subFileBehavior);
         

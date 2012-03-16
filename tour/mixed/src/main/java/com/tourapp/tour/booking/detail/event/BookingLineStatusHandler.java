@@ -143,7 +143,7 @@ public class BookingLineStatusHandler extends FileListener
                 FileListener listener = new SubFileFilter(recBooking);
                 recBookingLine.addListener(listener);
                 int iOldKeyArea = recBookingLine.getDefaultOrder();
-                recBookingLine.setKeyArea(BookingLine.BOOKING_KEY);
+                recBookingLine.setKeyArea(BookingLine.BOOKING_ID_KEY);
                 recBookingLine.close();
                 try {
                     while (recBookingLine.hasNext())

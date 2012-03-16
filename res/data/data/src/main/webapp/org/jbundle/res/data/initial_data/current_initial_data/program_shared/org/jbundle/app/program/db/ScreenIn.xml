@@ -378,7 +378,7 @@
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="22">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AcctBatchDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -391,7 +391,7 @@
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence).getComponent(0);
+		<ScreenText><![CDATA[ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE).getComponent(0);
 sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -523,7 +523,7 @@ sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="30">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AcctBatchDetailScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -536,7 +536,7 @@ sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.kAcctBatchDetailFile).getField(AcctBatchDetail.kSequence).getComponent(0);
+		<ScreenText><![CDATA[ScreenField sfSequence = (ScreenField)this.getRecord(AcctBatchDetail.ACCT_BATCH_DETAIL_FILE).getField(AcctBatchDetail.SEQUENCE).getComponent(0);
 sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -902,7 +902,7 @@ sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="51">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-02T04:33:06</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AccountHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -916,7 +916,7 @@ sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// This will synchronize the screen field and make sure the lookup uses the header record
-((ReferenceField)this.getRecord(AcctDetailScreenRecord.kAcctDetailScreenRecordFile).getField(AcctDetailScreenRecord.kAccountID)).setReference(this.getRecord(Account.kAccountFile), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);]]></ScreenText>
+((ReferenceField)this.getScreenRecord().getField(AcctDetailScreenRecord.ACCOUNT_ID)).setReference(this.getRecord(Account.ACCOUNT_FILE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -1825,7 +1825,7 @@ sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="103">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AcctDetailScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -1838,7 +1838,7 @@ sfSequence.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[BaseField field = this.getRecord(AcctDetail.kAcctDetailFile).getField(AcctDetail.kAmountLocal);
+		<ScreenText><![CDATA[BaseField field = this.getRecord(AcctDetail.ACCT_DETAIL_FILE).getField(AcctDetail.AMOUNT_LOCAL);
 Converter converter = new DrCrConverter(field, true);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 converter = new DrCrConverter(field, false);
@@ -2261,7 +2261,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="127">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AcctDetailDistScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -2274,7 +2274,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(AcctDetailDist.kAcctDetailDistFile).getField(AcctDetailDist.kAcctDetailID), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(AcctDetail.kAcctDetailFile));</ScreenText>
+		<ScreenText>new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(AcctDetailDist.ACCT_DETAIL_DIST_FILE).getField(AcctDetailDist.ACCT_DETAIL_ID), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(AcctDetail.ACCT_DETAIL_FILE));</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -2297,7 +2297,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="129">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AffiliationGridScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -2310,7 +2310,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>this.getMainRecord().setKeyArea(Affiliation.kDescriptionKey);</ScreenText>
+		<ScreenText>this.getMainRecord().setKeyArea(Affiliation.DESCRIPTION_KEY);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -4499,7 +4499,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="336">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankReconGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -4512,8 +4512,8 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter field = this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kDateReconciled);
-BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.kReconDate);
+		<ScreenText><![CDATA[Converter field = this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.DATE_RECONCILED);
+BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.RECON_DATE);
 Converter converter = new ReconciledConverter(field, fldTargetValue, "Reconciled?", true);
 new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);
 ]]></ScreenText>
@@ -4647,7 +4647,7 @@ new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="344">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankReconScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -4660,8 +4660,8 @@ new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter field = this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kDateReconciled);
-BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.kReconDate);
+		<ScreenText><![CDATA[Converter field = this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.DATE_RECONCILED);
+BaseField fldTargetValue = this.getScreenRecord().getField(BankReconScreenRecord.RECON_DATE);
 Converter converter = new ReconciledConverter(field, fldTargetValue, "Reconciled?", true);
 new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -5064,7 +5064,7 @@ new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="367">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankTrxBatchDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -5077,7 +5077,7 @@ new SCheckBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter convAmount = this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kAmount);
+		<ScreenText><![CDATA[Converter convAmount = this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.AMOUNT);
 DrCrConverter converter2 = new DrCrConverter(convAmount, false);
 String strDesc = "Check amount";
 if (this.getTask() != null)
@@ -5204,7 +5204,7 @@ box.setEnabled(true);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="375">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankTrxBatchDetailScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -5217,7 +5217,7 @@ box.setEnabled(true);]]></ScreenText>
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter convAmount = this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kAmount);
+		<ScreenText><![CDATA[Converter convAmount = this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.AMOUNT);
 DrCrConverter converter2 = new DrCrConverter(convAmount, false);
 String strDesc = "Check amount";
 if (this.getTask() != null)
@@ -5540,7 +5540,7 @@ converter2.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, S
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="393">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-02T04:38:22</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankAcctHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -5554,7 +5554,7 @@ converter2.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, S
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// This will synchronize the screen field and make sure the lookup uses the header record
-((ReferenceField)this.getRecord(BankTrxScreenRecord.kBankTrxScreenRecordFile).getField(BankTrxScreenRecord.kBankAcctID)).setReference(this.getRecord(BankAcct.kBankAcctFile), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);]]></ScreenText>
+((ReferenceField)this.getScreenRecord().getField(BankTrxScreenRecord.BANK_ACCT_ID)).setReference(this.getRecord(BankAcct.BANK_ACCT_FILE), DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -5811,7 +5811,7 @@ converter2.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, S
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="450">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingAgencyScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -5825,11 +5825,11 @@ converter2.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, S
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[BaseApplication application = (BaseApplication)this.getTask().getApplication();
-ScreenField sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.kBookingFile).getField(Booking.kProfileCode), ScreenConstants.DONT_DISPLAY_DESC, null, null, ThinMenuConstants.LOOKUP, ThinMenuConstants.LOOKUP, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ThinMenuConstants.LOOKUP), this.getRecord(Profile.kProfileFile), null);
+ScreenField sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.BOOKING_FILE).getField(Booking.PROFILE_CODE), ScreenConstants.DONT_DISPLAY_DESC, null, null, ThinMenuConstants.LOOKUP, ThinMenuConstants.LOOKUP, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ThinMenuConstants.LOOKUP), this.getRecord(Profile.PROFILE_FILE), null);
 sField.setRequestFocusEnabled(false);
-sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.kBookingFile).getField(Booking.kProfileCode), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.FORM, MenuConstants.FORM, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(MenuConstants.FORM), this.getRecord(Profile.kProfileFile), null);
+sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Booking.BOOKING_FILE).getField(Booking.PROFILE_CODE), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.FORM, MenuConstants.FORM, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(MenuConstants.FORM), this.getRecord(Profile.PROFILE_FILE), null);
 sField.setRequestFocusEnabled(false);
-sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, SCannedBox.CLEAR, SCannedBox.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(SCannedBox.CLEAR), null, null);
+sField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, ScreenModel.CLEAR, ScreenModel.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ScreenModel.CLEAR), null, null);
 sField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -6141,7 +6141,7 @@ sField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="477">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6154,13 +6154,13 @@ sField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[TourCodeConverter tourCodeConv = new TourCodeConverter(this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kCode), this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate));
+		<ScreenText><![CDATA[TourCodeConverter tourCodeConv = new TourCodeConverter(this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.CODE), this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE));
 new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, tourCodeConv, ScreenConstants.DISPLAY_FIELD_DESC);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="478">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6174,19 +6174,19 @@ new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Lookup Tour Hdr (right of last)
-screenField = new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(TourHeader.kTourHeaderFile));
+screenField = new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(TourHeader.TOUR_HEADER_FILE));
 // Make sure the tour header display displays only the modules
 String strCommand = ((SSelectBox)screenField).getButtonCommand();
 strCommand = Utility.addURLParam(null, DBParams.COMMAND, strCommand);
-Record recBookingControl = this.getRecord(BookingControl.kBookingControlFile);
-strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.kTourHeaderTourType).toString());
+Record recBookingControl = this.getRecord(BookingControl.BOOKING_CONTROL_FILE);
+strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.TOUR_HEADER_TOUR_TYPE).toString());
 ((SSelectBox)screenField).setButtonCommand(strCommand);
 screenField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="479">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-01-18T10:17:35</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6199,13 +6199,13 @@ screenField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, SCannedBox.CLEAR, SCannedBox.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(SCannedBox.CLEAR), null, null);
+		<ScreenText><![CDATA[screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, ScreenModel.CLEAR, ScreenModel.CLEAR, application.getResources(ResourceConstants.MENU_RESOURCE, true).getString(ScreenModel.CLEAR), null, null);
 screenField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="480">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-02T04:50:33</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6222,22 +6222,22 @@ screenField.setRequestFocusEnabled(false);]]></ScreenText>
 TourHeader recTourHeader = new TourHeader(this);
 this.removeRecord(recTourHeader);
 this.getMainRecord().addListener(new FreeOnFreeHandler(recTourHeader));
-BaseField fldDepartureDate = this.getRecord(Tour.kTourFile).getField(Tour.kDepartureDate);
-BaseField fldStartDate = this.getRecord(TourEntryScreenRecord.kTourEntryScreenRecordFile).getField(TourEntryScreenRecord.kStartTargetDate);
-BaseField fldEndDate = this.getRecord(TourEntryScreenRecord.kTourEntryScreenRecordFile).getField(TourEntryScreenRecord.kEndTargetDate);
+BaseField fldDepartureDate = this.getRecord(Tour.TOUR_FILE).getField(Tour.DEPARTURE_DATE);
+BaseField fldStartDate = this.getScreenRecord().getField(TourEntryScreenRecord.START_TARGET_DATE);
+BaseField fldEndDate = this.getScreenRecord().getField(TourEntryScreenRecord.END_TARGET_DATE);
 
-BitFileFilter filter = new BitFileFilter(TourHeader.kTourType, recBookingControl.getField(BookingControl.kTourHeaderTourType));
+BitFileFilter filter = new BitFileFilter(TourHeader.TOUR_TYPE, recBookingControl.getField(BookingControl.TOUR_HEADER_TOUR_TYPE));
 filter.setNoFilterIfNone(true);
 recTourHeader.addListener(filter);
 
-this.getRecord(TourEntryScreenRecord.kTourEntryScreenRecordFile).getField(TourEntryScreenRecord.kTourHeaderID).moveFieldToThis(this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kID));
-QueryConverter tourHdrConv = new QueryConverter((ReferenceField)this.getRecord(TourEntryScreenRecord.kTourEntryScreenRecordFile).getField(TourEntryScreenRecord.kTourHeaderID), recTourHeader, TourHeader.kDescription, true);
-recTourHeader.createTourHeaderPopup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.ANCHOR_DEFAULT), this, tourHdrConv, ScreenConstants.DONT_DISPLAY_FIELD_DESC, fldDepartureDate, fldStartDate, fldEndDate, recBookingControl.getField(BookingControl.kTourHeaderTourType));
+this.getScreenRecord().getField(TourEntryScreenRecord.TOUR_HEADER_ID).moveFieldToThis(this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.ID));
+QueryConverter tourHdrConv = new QueryConverter((ReferenceField)this.getScreenRecord().getField(TourEntryScreenRecord.TOUR_HEADER_ID), recTourHeader, TourHeader.DESCRIPTION, true);
+recTourHeader.createTourHeaderPopup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.ANCHOR_DEFAULT), this, tourHdrConv, ScreenConstants.DONT_DISPLAY_FIELD_DESC, fldDepartureDate, fldStartDate, fldEndDate, recBookingControl.getField(BookingControl.TOUR_HEADER_TOUR_TYPE));
 
-recTourHeader.setKeyArea(TourHeader.kIDKey);
-recTourHeader.getField(TourHeader.kID).moveFieldToThis(this.getRecord(Tour.kTourFile).getField(Tour.kTourHeaderID));
+recTourHeader.setKeyArea(TourHeader.ID_KEY);
+recTourHeader.getField(TourHeader.ID).moveFieldToThis(this.getRecord(Tour.TOUR_FILE).getField(Tour.TOUR_HEADER_ID));
 try   {
-    if (recTourHeader.getField(TourHeader.kID).getLength() == 0)
+    if (recTourHeader.getField(TourHeader.ID).getLength() == 0)
         recTourHeader.addNew();
     else
         recTourHeader.seek(DBConstants.EQUALS);
@@ -6266,7 +6266,7 @@ try   {
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="482">
-		<LastChanged>2011-08-05T15:59:43</LastChanged>
+		<LastChanged>2012-02-02T04:51:10</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6279,12 +6279,12 @@ try   {
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Tour.kTourFile).getField(Tour.kID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(Tour.kTourFile))
+		<ScreenText><![CDATA[new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Tour.TOUR_FILE).getField(Tour.ID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(Tour.TOUR_FILE))
 {
    public String getProperties(String strCommand, Map<String,Object> properties)
     {
         strCommand = super.getProperties(strCommand, properties);
-        BaseField fldTourHeaderID = BookingTourScreen.this.getRecord(TourEntryScreenRecord.kTourEntryScreenRecordFile).getField(TourEntryScreenRecord.kTourHeaderID);
+        BaseField fldTourHeaderID = BookingTourScreen.this.getScreenRecord().getField(TourEntryScreenRecord.TOUR_HEADER_ID);
         Utility.addFieldParam(properties, fldTourHeaderID);
         return strCommand;
     }
@@ -6851,7 +6851,7 @@ try   {
 		<ScreenControlType>disabled</ScreenControlType>
 	</ScreenIn>
 	<ScreenIn ID="515">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6865,7 +6865,7 @@ try   {
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[ScreenLocation descLocation = m_screenParent.getNextLocation(ScreenConstants.FIELD_DESC, ScreenConstants.DONT_SET_ANCHOR);
-BaseField sp1Desc = this.getRecord(TourClass.kTourClassFile).getField(TourClass.kSp1Desc);
+BaseField sp1Desc = this.getRecord(TourClass.TOUR_CLASS_FILE).getField(TourClass.SP_1_DESC);
 new SStaticText(descLocation, this, sp1Desc, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -6926,7 +6926,7 @@ new SStaticText(descLocation, this, sp1Desc, ScreenConstants.DONT_DISPLAY_FIELD_
 		<ScreenControlType>disabled</ScreenControlType>
 	</ScreenIn>
 	<ScreenIn ID="519">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -6940,7 +6940,7 @@ new SStaticText(descLocation, this, sp1Desc, ScreenConstants.DONT_DISPLAY_FIELD_
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[ScreenLocation desc2Location = m_screenParent.getNextLocation(ScreenConstants.FIELD_DESC, ScreenConstants.DONT_SET_ANCHOR);
-BaseField sp2Desc = this.getRecord(TourClass.kTourClassFile).getField(TourClass.kSp2Desc);
+BaseField sp2Desc = this.getRecord(TourClass.TOUR_CLASS_FILE).getField(TourClass.SP_2_DESC);
 new SStaticText(desc2Location, this, sp2Desc, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -8279,7 +8279,7 @@ new SStaticText(desc2Location, this, sp2Desc, ScreenConstants.DONT_DISPLAY_FIELD
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="631">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingPaxGridScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -8292,7 +8292,7 @@ new SStaticText(desc2Location, this, sp2Desc, ScreenConstants.DONT_DISPLAY_FIELD
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[FirstMLastConverter converter = new FirstMLastConverter(this.getRecord(BookingPax.kBookingPaxFile), BookingPax.kNamePrefix, BookingPax.kFirstName, BookingPax.kMiddleName, BookingPax.kSurName);
+		<ScreenText><![CDATA[FirstMLastConverter converter = new FirstMLastConverter(this.getRecord(BookingPax.BOOKING_PAX_FILE), BookingPax.NAME_PREFIX, BookingPax.FIRST_NAME, BookingPax.MIDDLE_NAME, BookingPax.SUR_NAME);
 new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -8316,7 +8316,7 @@ new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="633">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingPaxScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -8329,7 +8329,7 @@ new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[FirstMLastConverter converter = new FirstMLastConverter(this.getRecord(BookingPax.kBookingPaxFile), BookingPax.kNamePrefix, BookingPax.kFirstName, BookingPax.kMiddleName, BookingPax.kSurName);
+		<ScreenText><![CDATA[FirstMLastConverter converter = new FirstMLastConverter(this.getRecord(BookingPax.BOOKING_PAX_FILE), BookingPax.NAME_PREFIX, BookingPax.FIRST_NAME, BookingPax.MIDDLE_NAME, BookingPax.SUR_NAME);
 new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DISPLAY_FIELD_DESC);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -8479,7 +8479,7 @@ new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="642">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BrocHistList</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -8492,7 +8492,7 @@ new SEditText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(Brochure.kBrochureFile).getField(Brochure.kDescription);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(Brochure.BROCHURE_FILE).getField(Brochure.DESCRIPTION);
 converter = new FieldLengthConverter(converter, 20);
 this.addColumn(converter);]]></ScreenText>
 		<ScreenAnchor/>
@@ -8769,7 +8769,7 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="660">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CashBatchDetailScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -8782,7 +8782,7 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kBookingID);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.BOOKING_ID);
 converter = new CashDistConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -10591,7 +10591,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="778">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CreditCardEntryScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -10604,7 +10604,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kBookingID);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.BOOKING_ID);
 converter = new CreditCardDistConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -11225,7 +11225,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="853">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:21:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CurrencysScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -11239,10 +11239,10 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[Record query = this.getMainRecord();
-for (int fieldSeq = Currencys.kLastRate; fieldSeq <= Currencys.kLanguageID; fieldSeq++)
+for (int fieldSeq = query.getFieldSeq(Currencys.LAST_RATE); fieldSeq <= query.getFieldSeq(Currencys.LANGUAGE_ID); fieldSeq++)
 {
 	query.getField(fieldSeq).setupFieldView(this);
-	if ((fieldSeq == Currencys.kLastRate) || (fieldSeq == Currencys.kCostingRate))
+	if ((fieldSeq == query.getFieldSeq(Currencys.LAST_RATE)) || (fieldSeq == query.getFieldSeq(Currencys.COSTING_RATE)))
 	{
 		ScreenLocation lastFieldPosition = this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR);
 		RecipFieldConverter converter = new RecipFieldConverter((NumberField)query.getField(fieldSeq));
@@ -12045,7 +12045,7 @@ for (int fieldSeq = Currencys.kLastRate; fieldSeq <= Currencys.kLanguageID; fiel
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="909">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>FinStmtDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -12058,7 +12058,7 @@ for (int fieldSeq = Currencys.kLastRate; fieldSeq <= Currencys.kLanguageID; fiel
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountDesc), this.getRecord(Account.kAccountFile).getField(Account.kDescription));
+		<ScreenText><![CDATA[Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.ACCOUNT_DESC), this.getRecord(Account.ACCOUNT_FILE).getField(Account.DESCRIPTION));
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -12172,7 +12172,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="916">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:31:25</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>FinStmtDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -12188,9 +12188,9 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenText><![CDATA[Record recFinStmt = this.getHeaderRecord();
 FinStmt recFinStmtPopup = new FinStmt(this);
 this.removeRecord(recFinStmtPopup);    // The queryconverter will free this.
-recFinStmtPopup.setKeyArea(FinStmt.kFinStmtHeaderIDKey);
-recFinStmtPopup.addListener(new StringSubFileFilter(recFinStmt.getField(FinStmt.kFinStmtHeaderID).toString(), FinStmt.kFinStmtHeaderID, null, -1, null, -1));
-this.getMainRecord().getField(FinStmtDetail.kFinStmtID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.kFinStmtHeaderIDKey, FinStmt.kStatementDesc, false, false);]]></ScreenText>
+recFinStmtPopup.setKeyArea(FinStmt.FIN_STMT_HEADER_ID_KEY);
+recFinStmtPopup.addListener(new StringSubFileFilter(recFinStmt.getField(FinStmt.FIN_STMT_HEADER_ID).toString(), FinStmt.FIN_STMT_HEADER_ID, null, null, null, null));
+this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.FIN_STMT_HEADER_ID_KEY, FinStmt.STATEMENT_DESC, false, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -12231,7 +12231,7 @@ this.getMainRecord().getField(FinStmtDetail.kFinStmtID).setupTablePopup(this.get
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="919">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>FinStmtDetailScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -12244,7 +12244,7 @@ this.getMainRecord().getField(FinStmtDetail.kFinStmtID).setupTablePopup(this.get
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.kFinStmtDetailFile).getField(FinStmtDetail.kAccountDesc), this.getRecord(Account.kAccountFile).getField(Account.kDescription));
+		<ScreenText><![CDATA[Converter converter = new AccountDescConverter(this.getRecord(FinStmtDetail.FIN_STMT_DETAIL_FILE).getField(FinStmtDetail.ACCOUNT_DESC), this.getRecord(Account.ACCOUNT_FILE).getField(Account.DESCRIPTION));
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -12358,7 +12358,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="926">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:30:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>FinStmtDetailScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -12371,18 +12371,18 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Object bookmark = this.getMainRecord().getField(FinStmtDetail.kFinStmtID).getData();
+		<ScreenText><![CDATA[Object bookmark = this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).getData();
 if (bookmark != null)
 {
 FinStmt recFinStmtPopup = new FinStmt(this);
 this.removeRecord(recFinStmtPopup);    // The queryconverter will free this.
 try {
     recFinStmtPopup.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
-    String strHeaderID = recFinStmtPopup.getField(FinStmt.kFinStmtHeaderID).toString();
-    recFinStmtPopup.setKeyArea(FinStmt.kFinStmtHeaderIDKey);
-    recFinStmtPopup.addListener(new StringSubFileFilter(strHeaderID, FinStmt.kFinStmtHeaderID, null, -1, null, -1));
-    ((ReferenceField)this.getMainRecord().getField(FinStmtDetail.kFinStmtID)).setReferenceRecord(null);
-    this.getMainRecord().getField(FinStmtDetail.kFinStmtID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.kFinStmtHeaderIDKey, FinStmt.kStatementDesc, false, false);
+    String strHeaderID = recFinStmtPopup.getField(FinStmt.FIN_STMT_HEADER_ID).toString();
+    recFinStmtPopup.setKeyArea(FinStmt.FIN_STMT_HEADER_ID_KEY);
+    recFinStmtPopup.addListener(new StringSubFileFilter(strHeaderID, FinStmt.FIN_STMT_HEADER_ID, null, null, null, null));
+    ((ReferenceField)this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID)).setReferenceRecord(null);
+    this.getMainRecord().getField(FinStmtDetail.FIN_STMT_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, recFinStmtPopup, FinStmt.FIN_STMT_HEADER_ID_KEY, FinStmt.STATEMENT_DESC, false, false);
 } catch (DBException ex)    {
     ex.printStackTrace();
 }
@@ -13113,7 +13113,7 @@ try {
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="971">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:52:19</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>GenPaymentToolbar</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -13126,7 +13126,7 @@ try {
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation>NEXT_INPUT_LOCATION</ScreenLocation>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(GenPaymentScreenRecord.kGenPaymentScreenRecordFile).getField(GenPaymentScreenRecord.kUseCurrentSelection);
+		<ScreenText><![CDATA[Converter converter = this.getScreenRecord().getField(GenPaymentScreenRecord.USE_CURRENT_SELECTION);
 Converter convTrue = new RadioConverter(converter, Boolean.TRUE, true);
 new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), this, convTrue, ScreenConstants.DEFAULT_DISPLAY);
 Converter convFalse = new RadioConverter(converter, Boolean.FALSE, true);
@@ -14342,7 +14342,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1047">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -14355,12 +14355,12 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription).setEnabled(false);</ScreenText>
+		<ScreenText>this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.DESCRIPTION).setEnabled(false);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1048">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -14373,7 +14373,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation>RIGHT_OF_LAST</ScreenLocation>
 		<ScreenFieldDesc>DONT_DISPLAY_FIELD_DESC</ScreenFieldDesc>
-		<ScreenText>this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setEnabled(false);</ScreenText>
+		<ScreenText>this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.COSTING_RATE).setEnabled(false);</ScreenText>
 		<ScreenAnchor>DONT_SET_ANCHOR</ScreenAnchor>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -15368,7 +15368,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1134">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>LandScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -15381,12 +15381,12 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kDescription).setEnabled(false);</ScreenText>
+		<ScreenText>this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.DESCRIPTION).setEnabled(false);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1135">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>LandScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -15399,7 +15399,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation>RIGHT_OF_LAST</ScreenLocation>
 		<ScreenFieldDesc>DONT_DISPLAY_FIELD_DESC</ScreenFieldDesc>
-		<ScreenText>this.getRecord(Currencys.kCurrencysFile).getField(Currencys.kCostingRate).setEnabled(false);</ScreenText>
+		<ScreenText>this.getRecord(Currencys.CURRENCYS_FILE).getField(Currencys.COSTING_RATE).setEnabled(false);</ScreenText>
 		<ScreenAnchor>DONT_SET_ANCHOR</ScreenAnchor>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -15872,7 +15872,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1184">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>McoCollGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -15885,7 +15885,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(Mco.kMcoFile).getField(Mco.kPaid), ScreenConstants.DISPLAY_FIELD_DESC);</ScreenText>
+		<ScreenText>new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(Mco.MCO_FILE).getField(Mco.PAID), ScreenConstants.DISPLAY_FIELD_DESC);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -16088,7 +16088,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1196">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>McoCollScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -16101,7 +16101,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(Mco.kMcoFile).getField(Mco.kPaid), ScreenConstants.DISPLAY_FIELD_DESC);</ScreenText>
+		<ScreenText>new SButtonBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(Mco.MCO_FILE).getField(Mco.PAID), ScreenConstants.DISPLAY_FIELD_DESC);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -16646,7 +16646,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1228">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>McoEntryScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -16659,7 +16659,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenCon
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(Mco.kMcoFile).getField(Mco.kBookingID);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(Mco.MCO_FILE).getField(Mco.BOOKING_ID);
 converter = new McoDistConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -19125,7 +19125,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenC
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1386">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PrepaymentDistScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -19138,11 +19138,11 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenC
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }
 ScreenField screenField = null;
 ]]></ScreenText>
@@ -19332,7 +19332,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1399">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PrepaymentScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -19345,7 +19345,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kInvoiceAmount);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.INVOICE_AMOUNT);
 BaseApplication application = (BaseApplication)this.getTask().getApplication();
 String strPrepaymentAmt = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString("Prepayment amt");
 converter = new FieldDescConverter(converter, strPrepaymentAmt);
@@ -19914,7 +19914,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1431">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProfileGridScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -19927,7 +19927,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(Profile.kProfileFile).getField(Profile.kGenericName);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(Profile.PROFILE_FILE).getField(Profile.GENERIC_NAME);
 converter = new FieldLengthConverter(converter, 25);
 this.addColumn(converter);]]></ScreenText>
 		<ScreenAnchor/>
@@ -20872,7 +20872,7 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1488">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:56:01</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>RefundPendScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -20886,15 +20886,15 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[BaseApplication application = (BaseApplication)this.getTask().getApplication();
-TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_SUBMITTED);
-new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_SUBMITTED));
-recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
-recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_HELD);
-new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));
-recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAID_MANUAL);
-new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAID_MANUAL));]]></ScreenText>
+TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_SUBMITTED);
+new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_SUBMITTED));
+recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
+recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_HELD);
+new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));
+recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAID_MANUAL);
+new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAID_MANUAL));]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -20971,7 +20971,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1493">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>RequestScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -20984,7 +20984,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>Request pAmRequests = (Request)this.getRecord(Request.kRequestFile);</ScreenText>
+		<ScreenText>Request pAmRequests = (Request)this.getRecord(Request.REQUEST_FILE);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -21007,7 +21007,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1495">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>RequestScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -21020,8 +21020,8 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.kRequestFile).getField(Request.kProfileCode), ScreenConstants.DONT_DISPLAY_DESC, this.getRecord(Profile.kProfileFile));
-new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.kRequestFile).getField(Request.kProfileCode), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(Profile.kProfileFile));]]></ScreenText>
+		<ScreenText><![CDATA[new SSelectBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.REQUEST_FILE).getField(Request.PROFILE_CODE), ScreenConstants.DONT_DISPLAY_DESC, this.getRecord(Profile.PROFILE_FILE));
+new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(Request.REQUEST_FILE).getField(Request.PROFILE_CODE), MenuConstants.FORM, ScreenConstants.DONT_DISPLAY_FIELD_DESC, this.getRecord(Profile.PROFILE_FILE));]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -24334,7 +24334,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1798">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>VendorSelectGridScreen</ScreenInProgName>
 		<ScreenOutNumber>1</ScreenOutNumber>
@@ -24350,7 +24350,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenText><![CDATA[String strDesc = "Select?";
 BaseApplication application = (BaseApplication)this.getTask().getApplication();
 strDesc = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strDesc);
-Converter converter = new VendorSelectCheckmark(this.getMainRecord().getField(ApTrx.kAmountSelected), null, strDesc, false);
+Converter converter = new VendorSelectCheckmark(this.getMainRecord().getField(ApTrx.AMOUNT_SELECTED), null, strDesc, false);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -24484,7 +24484,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1856">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProfileGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -24497,7 +24497,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation>Default</ScreenLocation>
 		<ScreenFieldDesc>Default</ScreenFieldDesc>
-		<ScreenText><![CDATA[converter = this.getRecord(Profile.kProfileFile).getField(Profile.kNameOrdered);
+		<ScreenText><![CDATA[converter = this.getRecord(Profile.PROFILE_FILE).getField(Profile.NAME_ORDERED);
 converter = new FieldLengthConverter(converter, 25);
 this.addColumn(converter);]]></ScreenText>
 		<ScreenAnchor>Default</ScreenAnchor>
@@ -24702,7 +24702,7 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1868">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>RequestHtmlScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -24720,14 +24720,14 @@ if (strAgentParam == null)
 	strAgentParam = "no";
 if (strAgentParam.equalsIgnoreCase("yes"))
 {
-	this.getRecord(Request.kRequestFile).getField(Request.kAttention).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-	this.getRecord(Request.kRequestFile).getField(Request.kProfileCode).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+	this.getRecord(Request.REQUEST_FILE).getField(Request.ATTENTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+	this.getRecord(Request.REQUEST_FILE).getField(Request.PROFILE_CODE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1874">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>RequestHtmlScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>
@@ -24740,7 +24740,7 @@ if (strAgentParam.equalsIgnoreCase("yes"))
 		<ScreenPhysicalNum>0</ScreenPhysicalNum>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.kRequestInputFile);
+		<ScreenText><![CDATA[RequestInput recRequestInput = (RequestInput)this.getRecord(RequestInput.REQUEST_INPUT_FILE);
 new RequestHtmlDetailGrid(recRequestInput, this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, null, ScreenConstants.DEFAULT_DISPLAY, null);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -24910,7 +24910,7 @@ new RequestHtmlDetailGrid(recRequestInput, this.getNextLocation(ScreenConstants.
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1928">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -24923,7 +24923,7 @@ new RequestHtmlDetailGrid(recRequestInput, this.getNextLocation(ScreenConstants.
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getMainRecord().getField(Tour.kTourFile, Tour.kDescription);
+		<ScreenText><![CDATA[Converter converter = this.getMainRecord().getField(Tour.TOUR_FILE, Tour.DESCRIPTION);
 converter = new FieldLengthConverter(converter, 30);
 this.addColumn(converter);]]></ScreenText>
 		<ScreenAnchor/>
@@ -24948,7 +24948,7 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1930">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -24961,7 +24961,7 @@ this.addColumn(converter);]]></ScreenText>
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[converter = this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kTourHeaderFile, TourHeader.kDescription);
+		<ScreenText><![CDATA[converter = this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.TOUR_HEADER_FILE, TourHeader.DESCRIPTION);
 converter = new FieldLengthConverter(converter, 30);
 converter = new FieldDescConverter(converter, "Header Tour Desc");
 this.addColumn(converter);]]></ScreenText>
@@ -25479,7 +25479,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1961">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PictureGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -25492,7 +25492,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(Picture.kPictureFile).getField(Picture.kPictureFile, Picture.kShortDesc);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(Picture.PICTURE_FILE).getField(Picture.PICTURE_FILE, Picture.SHORT_DESC);
 converter = new FieldLengthConverter(converter, 30);
 this.addColumn(converter);]]></ScreenText>
 		<ScreenAnchor/>
@@ -25682,7 +25682,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="1982">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>VendorScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -25695,7 +25695,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[FieldLengthConverter converter = new FieldLengthConverter(this.getRecord(Vendor.kVendorFile).getField(Vendor.kMessageServer), 60);
+		<ScreenText><![CDATA[FieldLengthConverter converter = new FieldLengthConverter(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.MESSAGE_SERVER), 60);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -26338,7 +26338,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2036">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:34:04</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TrxDescStatusHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -26351,7 +26351,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>this.getRecord(TrxStatusScreenRecord.kTrxStatusScreenRecordFile).getField(TrxStatusScreenRecord.kTrxDescID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxDesc.kTrxDescFile), true);</ScreenText>
+		<ScreenText>this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_DESC_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxDesc.TRX_DESC_FILE), true);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -27364,7 +27364,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2095">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankTrxBatchDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -27377,14 +27377,14 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kDistributionDisplay);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.DISTRIBUTION_DISPLAY);
 converter = new DistributionConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2096">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankTrxBatchDetailScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -27397,7 +27397,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(BankTrxBatchDetail.kBankTrxBatchDetailFile).getField(BankTrxBatchDetail.kDistributionDisplay);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_FILE).getField(BankTrxBatchDetail.DISTRIBUTION_DISPLAY);
 converter = new DistributionConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -28687,7 +28687,7 @@ box.setRequestFocusEnabled(true);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2177">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CashBatchDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -28700,7 +28700,7 @@ box.setRequestFocusEnabled(true);]]></ScreenText>
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(CashBatchDetail.kCashBatchDetailFile).getField(CashBatchDetail.kBookingID);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE).getField(CashBatchDetail.BOOKING_ID);
 converter = new CashDistConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -29123,7 +29123,7 @@ box.setEnabled(true);]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2203">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>McoEntryGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -29136,14 +29136,14 @@ box.setEnabled(true);]]></ScreenText>
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(Mco.kMcoFile).getField(Mco.kBookingID);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(Mco.MCO_FILE).getField(Mco.BOOKING_ID);
 converter = new McoDistConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2204">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CreditCardEntryGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -29156,7 +29156,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(CreditCard.kCreditCardFile).getField(CreditCard.kBookingID);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(CreditCard.CREDIT_CARD_FILE).getField(CreditCard.BOOKING_ID);
 converter = new CreditCardDistConverter(converter);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -29379,7 +29379,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2217">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BaseArPayDistHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -29392,10 +29392,10 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recHeader = this.getRecord(Mco.kMcoFile);
+		<ScreenText><![CDATA[Record recHeader = this.getRecord(Mco.MCO_FILE);
 if (recHeader == null)
-    recHeader = this.getRecord(CreditCard.kCreditCardFile);
-recHeader.getField(BaseArPay.kNet).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
+    recHeader = this.getRecord(CreditCard.CREDIT_CARD_FILE);
+recHeader.getField(BaseArPay.NET).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -29688,7 +29688,7 @@ recHeader.getField(BaseArPay.kNet).setupDefaultView(this.getNextLocation(ScreenC
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2234">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:56:02</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>RefundPendGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -29702,11 +29702,11 @@ recHeader.getField(BaseArPay.kNet).setupDefaultView(this.getNextLocation(ScreenC
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[BaseApplication application = (BaseApplication)this.getTask().getApplication();
-TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.kTrxStatusFile);
-recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_PAY);
-new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
-recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.kArTrxFile, ArTrx.REFUND_HELD);
-new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.kArTrxFile).getField(ArTrx.kTrxStatusID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.kID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));]]></ScreenText>
+TrxStatus recTrxStatus = (TrxStatus)this.getRecord(TrxStatus.TRX_STATUS_FILE);
+recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_PAY);
+new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_PAY));
+recTrxStatus.getTrxStatusID(TransactionType.ACCTREC, ArTrx.AR_TRX_FILE, ArTrx.REFUND_HELD);
+new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, this.getRecord(ArTrx.AR_TRX_FILE).getField(ArTrx.TRX_STATUS_ID), ScreenConstants.DEFAULT_DISPLAY, recTrxStatus.getField(TrxStatus.ID).toString(), application.getResources(ResourceConstants.ACCTREC_RESOURCE, true).getString(ArTrx.REFUND_HELD));]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -30359,7 +30359,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2277">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>FinEstScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30372,17 +30372,17 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2278">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>DepEstScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30395,11 +30395,11 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -30444,7 +30444,7 @@ screenField = new SButtonBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST,
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2281">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>InvoiceScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30457,17 +30457,17 @@ screenField = new SButtonBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST,
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {    // Make sure currency is read for LocalCurrencyField(s).
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2282">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>InvoiceScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30482,7 +30482,7 @@ if (recVendor != null)
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[new SButtonBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
 
-((ReferenceField)this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kTrxStatusID)).getReferenceRecord(null);   // Don't mix this TrxStatus record with the one I use to keep track of the current trx status (in openOther)]]></ScreenText>
+((ReferenceField)this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.TRX_STATUS_ID)).getReferenceRecord(null);   // Don't mix this TrxStatus record with the one I use to keep track of the current trx status (in openOther)]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -30559,7 +30559,7 @@ if (recVendor != null)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2290">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CreditMemoScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30572,17 +30572,17 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {    // Make sure currency is read for LocalCurrencyField(s).
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2291">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>DebitMemoScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30595,17 +30595,17 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {    // Make sure currency is read for LocalCurrencyField(s).
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2292">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PrepaymentScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30618,11 +30618,11 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {    // Make sure currency is read for LocalCurrencyField(s).
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -30682,7 +30682,7 @@ if (recVendor != null)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2296">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PaymentRequestHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -30695,11 +30695,11 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PaymentRequestScreenRecord.kBankAcctID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+		<ScreenText><![CDATA[Record recBankAcct = ((ReferenceField)this.getScreenRecord().getField(PaymentRequestScreenRecord.BANK_ACCT_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
 if (recBankAcct != null)
 {    // Make sure currency is read for LocalCurrencyField(s).
-    Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.kCurrencyID)).getReferenceRecord((BaseScreen)this.getParentScreen());
-    recBankAcct.getField(BankAcct.kCurrencyID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recBankAcct.getField(BankAcct.CURRENCY_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+    recBankAcct.getField(BankAcct.CURRENCY_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -30993,7 +30993,7 @@ if (recBankAcct != null)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2313">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PrintCheckXML</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -31006,7 +31006,7 @@ if (recBankAcct != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>Record recVendor = ((ReferenceField)this.getMainRecord().getField(PaymentRequest.kVendorID)).getReferenceRecord(this);</ScreenText>
+		<ScreenText>Record recVendor = ((ReferenceField)this.getMainRecord().getField(PaymentRequest.VENDOR_ID)).getReferenceRecord(this);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -31371,7 +31371,7 @@ if (recBankAcct != null)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2337">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:56:02</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TrxStatusGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -31385,27 +31385,27 @@ if (recBankAcct != null)
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[Record recTrxStatus = this.getMainRecord();
-Record recTrxDesc = this.getRecord(TrxDesc.kTrxDescFile);
+Record recTrxDesc = this.getRecord(TrxDesc.TRX_DESC_FILE);
 Record recScreenRecord = this.getScreenRecord();
 
-((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.kTrxDescID)).setReferenceRecord(recTrxDesc);
-if (!recTrxDesc.getField(TrxDesc.kID).isNull())
-    recScreenRecord.getField(TrxStatusScreenRecord.kTrxDescID).moveFieldToThis(recTrxDesc.getField(TrxDesc.kID));
+((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_DESC_ID)).setReferenceRecord(recTrxDesc);
+if (!recTrxDesc.getField(TrxDesc.ID).isNull())
+    recScreenRecord.getField(TrxStatusScreenRecord.TRX_DESC_ID).moveFieldToThis(recTrxDesc.getField(TrxDesc.ID));
 else
 {
-    ReferenceField field = (ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.kTrxDescID);
-    field.moveFieldToThis(recTrxStatus.getField(TrxStatus.kTrxDescID));
+    ReferenceField field = (ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_DESC_ID);
+    field.moveFieldToThis(recTrxStatus.getField(TrxStatus.TRX_DESC_ID));
     if (field.isNull())
         if (this.getProperty(DBParams.HEADER_OBJECT_ID) != null)
             field.setString(this.getProperty(DBParams.HEADER_OBJECT_ID));
     field.getReference();    // Read the record
 }
-((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.kTrxSystemID)).getReferenceRecord(this);]]></ScreenText>
+((ReferenceField)recScreenRecord.getField(TrxStatusScreenRecord.TRX_SYSTEM_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2338">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:33:42</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TrxDescStatusHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -31418,7 +31418,7 @@ else
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>this.getRecord(TrxStatusScreenRecord.kTrxStatusScreenRecordFile).getField(TrxStatusScreenRecord.kTrxSystemID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxSystem.kTrxSystemFile), true);</ScreenText>
+		<ScreenText>this.getScreenRecord().getField(TrxStatusScreenRecord.TRX_SYSTEM_ID).setupTablePopup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, this.getRecord(TrxSystem.TRX_SYSTEM_FILE), true);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -31947,7 +31947,7 @@ screenField.setRequestFocusEnabled(false);
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2381">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BrokerDistGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -31960,18 +31960,18 @@ screenField.setRequestFocusEnabled(false);
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kDraftVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.DRAFT_VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }
 ]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2382">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BrokerDistScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -31984,11 +31984,11 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kDraftVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.DRAFT_VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -32067,7 +32067,7 @@ if (recVendor != null)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2389">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:56:02</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ApTrxHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -32080,14 +32080,14 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
+		<ScreenText><![CDATA[ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.ID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
 screenField.setRequestFocusEnabled(false);
 ]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2390">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>PaymentHistoryGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -32100,11 +32100,11 @@ screenField.setRequestFocusEnabled(false);
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 { // This is display the correct currency on local currency fields.
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -32273,7 +32273,7 @@ if (recVendor != null)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2400">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:56:02</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BankTrxHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -32286,7 +32286,7 @@ if (recVendor != null)
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(BankTrx.kBankTrxFile).getField(BankTrx.kID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
+		<ScreenText><![CDATA[ScreenField screenField = new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, this.getRecord(BankTrx.BANK_TRX_FILE).getField(BankTrx.ID), ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, null, MenuConstants.LOOKUP, MenuConstants.LOOKUP, null);
 screenField.setRequestFocusEnabled(false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -34420,7 +34420,7 @@ new PrepaymentCutoffCurrFooting(null, null, this, null, ScreenConstants.DONT_DIS
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2554">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TaxRateHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34434,7 +34434,7 @@ new PrepaymentCutoffCurrFooting(null, null, this, null, ScreenConstants.DONT_DIS
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[Record screenRecord = this.getScreenRecord();
-BaseField taxCode = screenRecord.getField(TaxRateScreenRecord.kTaxCode);
+BaseField taxCode = screenRecord.getField(TaxRateScreenRecord.TAX_CODE);
 Converter fedConverter = new FedRadioConverter(taxCode, "FE", true);
 new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, fedConverter, ScreenConstants.DEFAULT_DISPLAY);
 Converter stateConverter = new StateRadioConverter(taxCode, "FE", false);
@@ -34461,7 +34461,7 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2556">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelInventoryGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34474,13 +34474,13 @@ new SRadioButton(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConsta
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2557">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelPricingGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34493,13 +34493,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2558">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>LandPricingGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34512,13 +34512,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2559">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelMealPricingGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34531,13 +34531,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2561">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelPricingScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34550,13 +34550,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2562">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelMealPricingScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34569,13 +34569,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2563">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>LandPricingScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34588,13 +34588,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2565">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>HotelInventoryScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -34607,8 +34607,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.kHotelFile).getField(Hotel.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(Hotel.HOTEL_FILE).getField(Hotel.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -35245,7 +35245,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2615">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TransportationScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -35258,8 +35258,8 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -35588,7 +35588,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2643">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CarScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -35601,8 +35601,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -35769,7 +35769,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2658">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CruiseScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -35782,8 +35782,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -36094,7 +36094,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2681">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AirScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36107,8 +36107,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -36437,7 +36437,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2700">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:58:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AirScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36450,13 +36450,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getRecord(Air.kAirFile).getField(Air.kCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getRecord(Air.AIR_FILE).getField(Air.CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2701">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:58:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AirScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36469,13 +36469,13 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[field = (ReferenceField)this.getRecord(Air.kAirFile).getField(Air.kToCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[field = (ReferenceField)this.getRecord(Air.AIR_FILE).getField(Air.TO_CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2703">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:42:12</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36488,20 +36488,20 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recProduct = ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).getReferenceRecord(null, false);
+		<ScreenText><![CDATA[Record recProduct = ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).getReferenceRecord(null, false);
 if (recProduct == null)
 {    // No product is linked to the product field (link the one from the main screen)
     recProduct = this.getHeaderRecord();
-    ((ReferenceField)this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kProductID)).setReferenceRecord(recProduct);
+    ((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).setReferenceRecord(recProduct);
 }
-((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.kProductID)).syncReference(recProduct);
+((ReferenceField)this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID)).syncReference(recProduct);
 
-this.getRecord(ProductScreenRecord.kProductScreenRecordFile).getField(ProductScreenRecord.kProductID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-recProduct.getField(Product.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord();
-recVendor.getField(Vendor.kCurrencysID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord();
-recCurrencys.getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);]]></ScreenText>
+this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+recProduct.getField(Product.VENDOR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord();
+recVendor.getField(Vendor.CURRENCYS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord();
+recCurrencys.getField(Currencys.COSTING_RATE).setupDefaultView(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -36758,7 +36758,7 @@ recCurrencys.getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocat
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2718">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TransportationPricingGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36771,13 +36771,13 @@ recCurrencys.getField(Currencys.kCostingRate).setupDefaultView(this.getNextLocat
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2719">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TransportationPricingScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36790,13 +36790,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2720">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductPricingScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -36809,10 +36809,10 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-this.getMainRecord().getField(ProductPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+this.getMainRecord().getField(ProductPricing.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+this.getMainRecord().getField(ProductPricing.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -37033,7 +37033,7 @@ this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.get
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2733">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductPricingGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37046,10 +37046,10 @@ this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.get
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-this.getMainRecord().getField(ProductPricing.kStartDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
-this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+this.getMainRecord().getField(ProductPricing.START_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+this.getMainRecord().getField(ProductPricing.END_DATE).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -37288,7 +37288,7 @@ this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.get
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2747">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ItemScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37301,8 +37301,8 @@ this.getMainRecord().getField(ProductPricing.kEndDate).setupDefaultView(this.get
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -37433,7 +37433,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2761">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductInventoryGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37446,8 +37446,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -37560,7 +37560,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2768">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductInventoryScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37573,8 +37573,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -37813,7 +37813,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2782">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:56:33</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TransportationScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37826,13 +37826,13 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TransportProduct.kCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TransportProduct.CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2783">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:56:46</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TransportationScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37845,13 +37845,13 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TransportProduct.kToCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TransportProduct.TO_CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2784">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:58:07</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CruiseScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37864,8 +37864,8 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TransportProduct.kCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TransportProduct.CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -37888,7 +37888,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2786">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:58:23</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CruiseScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37901,13 +37901,13 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TransportProduct.kToCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TransportProduct.TO_CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2787">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourProductGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -37920,7 +37920,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = new FieldLengthConverter(this.getRecord(TourHeader.kTourHeaderFile).getField(TourHeader.kDescription), 30);
+		<ScreenText><![CDATA[Converter converter = new FieldLengthConverter(this.getRecord(TourHeader.TOUR_HEADER_FILE).getField(TourHeader.DESCRIPTION), 30);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -37998,7 +37998,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2792">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>LandScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -38011,13 +38011,13 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2793">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -38030,8 +38030,8 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -38432,7 +38432,7 @@ Record recCurrency = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).g
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2820">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderOptionHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -38450,7 +38450,7 @@ if (screenParent instanceof BaseScreen)
 {	// Always
     Record recTourHeaderOption = ((BaseScreen)screenParent).getHeaderRecord();
     if (recTourHeaderOption instanceof TourHeaderOption) 
-        recTourHeaderOption.getField(TourHeaderOption.kDescription).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+        recTourHeaderOption.getField(TourHeaderOption.DESCRIPTION).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -38708,7 +38708,7 @@ if (screenParent instanceof BaseScreen)
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2836">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -38722,8 +38722,8 @@ if (screenParent instanceof BaseScreen)
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these are linked.
-Record recVen = ((ReferenceField)((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Product.kVendorID)).getReferenceRecord((BaseScreen)this.getParentScreen());
-Record recCurrency = ((ReferenceField)recVen.getField(Vendor.kCurrencysID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+Record recVen = ((ReferenceField)((BaseScreen)this.getParentScreen()).getHeaderRecord().getField(Product.VENDOR_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
+Record recCurrency = ((ReferenceField)recVen.getField(Vendor.CURRENCYS_ID)).getReferenceRecord((BaseScreen)this.getParentScreen());
 ]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -39557,7 +39557,7 @@ Record recCurrency = ((ReferenceField)recVen.getField(Vendor.kCurrencysID)).getR
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2915">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:52:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderTransportationScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -39570,13 +39570,13 @@ Record recCurrency = ((ReferenceField)recVen.getField(Vendor.kCurrencysID)).getR
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2916">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderTransportationScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -39589,8 +39589,8 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kToCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.TO_CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -39631,7 +39631,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2919">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:44:23</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderCarScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -39644,13 +39644,13 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2920">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:44:13</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderCarScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -39663,8 +39663,8 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kToCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.TO_CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -39705,7 +39705,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2923">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:55:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderCruiseScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -39718,13 +39718,13 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[ReferenceField field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="2924">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-02T04:56:01</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourHeaderCruiseScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -39737,8 +39737,8 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.kToCityID);
-field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), -1, City.kDescription, false);]]></ScreenText>
+		<ScreenText><![CDATA[field = (ReferenceField)this.getMainRecord().getField(TourHeaderTransport.TO_CITY_ID);
+field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, field.makeReferenceRecord(), null, City.DESCRIPTION, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -41543,7 +41543,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3114">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -41556,12 +41556,12 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>int iOldEditMode = ((ReferenceField)this.getRecord(Booking.kBookingFile).getField(Booking.kTourID)).getReferenceRecord().getOpenMode();</ScreenText>
+		<ScreenText>int iOldEditMode = ((ReferenceField)this.getRecord(Booking.BOOKING_FILE).getField(Booking.TOUR_ID)).getReferenceRecord().getOpenMode();</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType>disabled</ScreenControlType>
 	</ScreenIn>
 	<ScreenIn ID="3115">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -41574,7 +41574,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>((ReferenceField)this.getRecord(Booking.kBookingFile).getField(Booking.kTourID)).getReferenceRecord().setOpenMode(iOldEditMode);</ScreenText>
+		<ScreenText>((ReferenceField)this.getRecord(Booking.BOOKING_FILE).getField(Booking.TOUR_ID)).getReferenceRecord().setOpenMode(iOldEditMode);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType>disabled</ScreenControlType>
 	</ScreenIn>
@@ -41615,7 +41615,7 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3131">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingHotelScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -41629,9 +41629,9 @@ field.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, Scree
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -41888,7 +41888,7 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3161">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingLandScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -41902,9 +41902,9 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -42197,7 +42197,7 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3179">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTransportationScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -42211,9 +42211,9 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -42542,7 +42542,7 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3207">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingCruiseScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -42556,9 +42556,9 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -42887,7 +42887,7 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3233">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingCarScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -42901,9 +42901,9 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -43142,7 +43142,7 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3292">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourDetailScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -43156,9 +43156,9 @@ Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -43388,7 +43388,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3311">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingItemScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -43402,9 +43402,9 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -43757,7 +43757,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3339">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingAirScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -43771,9 +43771,9 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Make sure these all have this recordowner
-Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.kProductID)).getReferenceRecord(this);    // Reference same recordowner
-Record recVendor = ((ReferenceField)recProduct.getField(Product.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);]]></ScreenText>
+Record recProduct = ((ReferenceField)this.getMainRecord().getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this);    // Reference same recordowner
+Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -45725,7 +45725,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3478">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -45739,7 +45739,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstant
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// Button to switch to the option screen (see doCommand)
-Converter fieldConverter = this.getRecord(Booking.kBookingFile).getField(Booking.kAskForAnswer);
+Converter fieldConverter = this.getRecord(Booking.BOOKING_FILE).getField(Booking.ASK_FOR_ANSWER);
 new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GAP, ScreenConstants.DONT_SET_ANCHOR), this, fieldConverter, ScreenConstants.DEFAULT_DISPLAY, null, BookingScreenHandler.OPTIONS, Booking.BUTTON_LOCATION + BookingScreenHandler.OPTIONS, BookingScreenHandler.OPTIONS, null);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -47581,7 +47581,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GA
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3595">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourDetailScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -47597,10 +47597,10 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GA
 		<ScreenText><![CDATA[// Button to switch to the option screen (see doCommand)
 if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_NONE) || (this.getMainRecord().getEditMode() == DBConstants.EDIT_ADD))
 {
-    this.getRecord(BookingTour.kBookingTourFile).getField(BookingTour.kAskForAnswer).setState(false);
-    this.getRecord(Booking.kBookingFile).getField(Booking.kAlwaysResolve).setState(false);
+    this.getRecord(BookingTour.BOOKING_TOUR_FILE).getField(BookingTour.ASK_FOR_ANSWER).setState(false);
+    this.getRecord(Booking.BOOKING_FILE).getField(Booking.ALWAYS_RESOLVE).setState(false);
 }
-Converter fieldConverter = this.getRecord(BookingTour.kBookingTourFile).getField(BookingTour.kAskForAnswer);
+Converter fieldConverter = this.getRecord(BookingTour.BOOKING_TOUR_FILE).getField(BookingTour.ASK_FOR_ANSWER);
 new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GAP, ScreenConstants.DONT_SET_ANCHOR), this, fieldConverter, ScreenConstants.DEFAULT_DISPLAY, null, BookingScreenHandler.OPTIONS, Booking.BUTTON_LOCATION + BookingScreenHandler.OPTIONS, BookingScreenHandler.OPTIONS, null);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -48344,7 +48344,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GA
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3652">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-02T04:34:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AcctDetailLedgerDetailStart</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -48358,13 +48358,13 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST_BUTTON_WITH_GA
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[// This will display the "Start Balance" description followed by a blank (then followed by the Debit and Credit amounts)
-Converter converter = new FieldDescConverter(this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kStartSource), this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kStartBalance));
+Converter converter = new FieldDescConverter(this.getScreenRecord().getField(GenledScreenRecord.START_SOURCE), this.getScreenRecord().getField(GenledScreenRecord.START_BALANCE));
 new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3653">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-02T04:36:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>AcctDetailLedgerDetailEnd</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -48377,7 +48377,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = new FieldDescConverter(this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kStartSource), this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kEndBalance));
+		<ScreenText><![CDATA[Converter converter = new FieldDescConverter(this.getScreenRecord().getField(GenledScreenRecord.START_SOURCE), this.getScreenRecord().getField(GenledScreenRecord.END_BALANCE));
 new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -48419,7 +48419,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3656">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-02T04:32:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TrialBalanceSubTotal</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -48432,7 +48432,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = new FieldDescConverter(this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kStartSource), this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kSubTotal));
+		<ScreenText><![CDATA[Converter converter = new FieldDescConverter(this.getScreenRecord().getField(GenledScreenRecord.START_SOURCE), this.getScreenRecord().getField(GenledScreenRecord.SUB_TOTAL));
 new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -48456,7 +48456,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3658">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-02T04:35:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>SourceCrossRefSubTotal</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -48469,7 +48469,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = new FieldDescConverter(this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kStartSource), this.getRecord(GenledScreenRecord.kGenledScreenRecordFile).getField(GenledScreenRecord.kSubTotal));
+		<ScreenText><![CDATA[Converter converter = new FieldDescConverter(this.getScreenRecord().getField(GenledScreenRecord.START_SOURCE), this.getScreenRecord().getField(GenledScreenRecord.SUB_TOTAL));
 new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, converter, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -49393,7 +49393,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3879">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>InventoryHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -49406,12 +49406,12 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>Record recProduct = ((ReferenceField)this.getRecord(Inventory.kInventoryFile).getField(Inventory.kProductID)).getReferenceRecord();</ScreenText>
+		<ScreenText>Record recProduct = ((ReferenceField)this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.PRODUCT_ID)).getReferenceRecord();</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="3880">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>InventoryHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -49425,7 +49425,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[if (recProduct != null)
-    recProduct.getField(Product.kVendorID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
+    recProduct.getField(Product.VENDOR_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -51554,7 +51554,7 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4073">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>TourDetailDetail</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -51567,9 +51567,9 @@ new SStaticText(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(ApTrx.kApTrxFile).getField(ApTrx.kVendorID)).getReferenceRecord(this);
-Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));]]></ScreenText>
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getRecord(ApTrx.AP_TRX_FILE).getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
+Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -51952,7 +51952,7 @@ recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(rec
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4098">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>OverrideGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -51968,13 +51968,13 @@ recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(rec
 		<ScreenText><![CDATA[String strDesc = "Paid?";
 BaseApplication application = (BaseApplication)this.getTask().getApplication();
 strDesc = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strDesc);
-Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.kOverridePaid), null, strDesc, false);
+Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.OVERRIDE_PAID), null, strDesc, false);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4099">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>OverrideScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -51990,7 +51990,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenText><![CDATA[String strDesc = "Paid?";
 BaseApplication application = (BaseApplication)this.getTask().getApplication();
 strDesc = application.getResources(ResourceConstants.ACCTPAY_RESOURCE, true).getString(strDesc);
-Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.kOverridePaid), null, strDesc, false);
+Converter converter = new OverridePaidCheckbox(this.getMainRecord().getField(ApTrx.OVERRIDE_PAID), null, strDesc, false);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -52104,7 +52104,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4113">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-02T05:26:59</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ArTrxAgentHeaderScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52117,8 +52117,8 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[BaseField fldProfile = this.getRecord(ArTrxAgentScreenRecord.kArTrxAgentScreenRecordFile).getField(ArTrxAgentScreenRecord.kProfileID);
-Record recProfile = this.getRecord(Profile.kProfileFile);
+		<ScreenText><![CDATA[BaseField fldProfile = this.getScreenRecord().getField(ArTrxAgentScreenRecord.PROFILE_ID);
+Record recProfile = this.getRecord(Profile.PROFILE_FILE);
 fldProfile.setupTableLookup(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), this, fldProfile, ScreenConstants.DEFAULT_DISPLAY, recProfile, -1, -2, false, false);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -52287,7 +52287,7 @@ ScreenField screenField = null;]]></ScreenText>
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4125">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>VendorScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52300,7 +52300,7 @@ ScreenField screenField = null;]]></ScreenText>
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[converter = new FieldLengthConverter(this.getRecord(Vendor.kVendorFile).getField(Vendor.kWSDLPath), 60);
+		<ScreenText><![CDATA[converter = new FieldLengthConverter(this.getRecord(Vendor.VENDOR_FILE).getField(Vendor.WSDL_PATH), 60);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
@@ -52434,7 +52434,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4133">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourDetailScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52453,8 +52453,8 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
     {   // Make sure the tour header display displays only the modules
         String strCommand = ((SSelectBox)this.getSField(i)).getButtonCommand();
         strCommand = Utility.addURLParam(null, DBParams.COMMAND, strCommand);
-        Record recBookingControl = this.getRecord(BookingControl.kBookingControlFile);
-        strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.kModuleTourType).toString());
+        Record recBookingControl = this.getRecord(BookingControl.BOOKING_CONTROL_FILE);
+        strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.MODULE_TOUR_TYPE).toString());
         ((SSelectBox)this.getSField(i)).setButtonCommand(strCommand);
     }
 }]]></ScreenText>
@@ -52462,7 +52462,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4134">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>BookingTourDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52481,8 +52481,8 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
     {   // Make sure the tour header display displays only the modules
         String strCommand = ((SSelectBox)this.getSField(i)).getButtonCommand();
         strCommand = Utility.addURLParam(null, DBParams.COMMAND, strCommand);
-        Record recBookingControl = this.getRecord(BookingControl.kBookingControlFile);
-        strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.kModuleTourType).toString());
+        Record recBookingControl = this.getRecord(BookingControl.BOOKING_CONTROL_FILE);
+        strCommand = Utility.addURLParam(strCommand, TourHeaderScreenRecord.TOUR_TYPE, recBookingControl.getField(BookingControl.MODULE_TOUR_TYPE).toString());
         ((SSelectBox)this.getSField(i)).setButtonCommand(strCommand);
     }
 }]]></ScreenText>
@@ -52508,7 +52508,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4136">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductBookingDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52521,7 +52521,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>((ReferenceField)this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kBookingID)).getReferenceRecord().getField(Booking.kBookingStatusID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);</ScreenText>
+		<ScreenText>((ReferenceField)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.BOOKING_ID)).getReferenceRecord().getField(Booking.BOOKING_STATUS_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -52598,7 +52598,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4142">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>OperationsBookingDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52611,7 +52611,7 @@ new SCannedBox(this.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstan
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Converter converter = this.getRecord(BookingDetail.kBookingDetailFile).getField(BookingDetail.kBookingDetailFile, BookingDetail.kDescription);
+		<ScreenText><![CDATA[Converter converter = this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).getField(BookingDetail.BOOKING_DETAIL_FILE, BookingDetail.DESCRIPTION);
 converter = new FieldLengthConverter(converter, 30);
 converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);]]></ScreenText>
 		<ScreenAnchor/>
@@ -52852,7 +52852,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4158">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductSearchTypeScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52865,7 +52865,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText>((ProductSearchType)this.getRecord(ProductSearchType.kProductSearchTypeFile)).setupProductTypeCheckboxes(this);</ScreenText>
+		<ScreenText>((ProductSearchType)this.getRecord(ProductSearchType.PRODUCT_SEARCH_TYPE_FILE)).setupProductTypeCheckboxes(this);</ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>
 	</ScreenIn>
@@ -52906,7 +52906,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4161">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-02T05:03:06</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductSearchDetailGridScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52920,10 +52920,10 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[
-Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID)).getReferenceRecord();
-Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchCategoryID)).getReferenceRecord();
-this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchCategoryID).setupTableLookup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, recProductSearchCategory, -1, ProductSearchCategory.kDescription, false);
-recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.kProductSearchTypeID, recProductSearchType.getField(ProductSearchType.kID), DBConstants.EQUALS, null, true));
+Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID)).getReferenceRecord();
+Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID)).getReferenceRecord();
+this.getScreenRecord().getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID).setupTableLookup(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY, recProductSearchCategory, null, ProductSearchCategory.DESCRIPTION, false);
+recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID, recProductSearchType.getField(ProductSearchType.ID), DBConstants.EQUALS, null, true));
 
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -52948,7 +52948,7 @@ recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4163">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:56:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ProductSearchDetailScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -52962,13 +52962,13 @@ recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
 		<ScreenText><![CDATA[
-SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchCategoryID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
+SPopupBox control = (SPopupBox)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID).setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), this, ScreenConstants.DEFAULT_DISPLAY);
 
-Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID)).getReferenceRecord();
-Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchCategoryID)).getReferenceRecord();
-recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.kProductSearchTypeID, recProductSearchType.getField(ProductSearchType.kID), DBConstants.EQUALS, null, true));
+Record recProductSearchType = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID)).getReferenceRecord();
+Record recProductSearchCategory = ((ReferenceField)this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_CATEGORY_ID)).getReferenceRecord();
+recProductSearchCategory.addListener(new CompareFileFilter(ProductSearchCategory.PRODUCT_SEARCH_TYPE_ID, recProductSearchType.getField(ProductSearchType.ID), DBConstants.EQUALS, null, true));
 
-this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSearchDetail.kProductSearchTypeID).addListener(new FieldReSelectHandler(control)); 
+this.getRecord(ProductSearchDetail.PRODUCT_SEARCH_DETAIL_FILE).getField(ProductSearchDetail.PRODUCT_SEARCH_TYPE_ID).addListener(new FieldReSelectHandler(control)); 
 
 ]]></ScreenText>
 		<ScreenAnchor/>
@@ -53083,7 +53083,7 @@ this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSea
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="4170">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2012-02-01T18:48:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>ApTrxScreen</ScreenInProgName>
 		<ScreenOutNumber/>
@@ -53096,11 +53096,11 @@ this.getRecord(ProductSearchDetail.kProductSearchDetailFile).getField(ProductSea
 		<ScreenPhysicalNum/>
 		<ScreenLocation/>
 		<ScreenFieldDesc/>
-		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.kVendorID)).getReferenceRecord(this);
+		<ScreenText><![CDATA[Record recVendor = ((ReferenceField)this.getMainRecord().getField(ApTrx.VENDOR_ID)).getReferenceRecord(this);
 if (recVendor != null)
 {    // Make sure currency is read for LocalCurrencyField(s).
-    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.kCurrencysID)).getReferenceRecord(this);
-    recVendor.getField(Vendor.kCurrencysID).addListener(new ReadSecondaryHandler(recCurrencys));
+    Record recCurrencys = ((ReferenceField)recVendor.getField(Vendor.CURRENCYS_ID)).getReferenceRecord(this);
+    recVendor.getField(Vendor.CURRENCYS_ID).addListener(new ReadSecondaryHandler(recCurrencys));
 }]]></ScreenText>
 		<ScreenAnchor/>
 		<ScreenControlType/>

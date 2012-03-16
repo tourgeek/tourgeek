@@ -499,19 +499,19 @@ public class BookingAir extends BookingDetail
         }
         if (iKeyArea == 1)
         {
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
+            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
+            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
+        }
+        if (iKeyArea == 2)
+        {
             keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TOUR_HEADER_DETAIL_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_START_DATE, DBConstants.ASCENDING);
-        }
-        if (iKeyArea == 2)
-        {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
-            keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
-            keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
-            keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {

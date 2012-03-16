@@ -113,15 +113,15 @@ public class BookingLine extends BookingSub
         KeyAreaInfo keyArea = null;
         keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
         keyArea.addKeyField("ID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
+        keyArea.addKeyField("BookingID", Constants.ASCENDING);
+        keyArea.addKeyField("Sequence", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DetailAccess");
         keyArea.addKeyField("BookingID", Constants.ASCENDING);
         keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
         keyArea.addKeyField("ModuleID", Constants.ASCENDING);
         keyArea.addKeyField("TourHeaderDetailID", Constants.ASCENDING);
         keyArea.addKeyField("ModuleStartDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("Sequence", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingDetailID");
         keyArea.addKeyField("BookingID", Constants.ASCENDING);
         keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);

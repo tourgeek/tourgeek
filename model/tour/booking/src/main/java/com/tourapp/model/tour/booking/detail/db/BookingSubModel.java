@@ -22,9 +22,9 @@ public interface BookingSubModel extends Rec
     public static final String PRODUCT_TYPE = "ProductType";
     public static final String REMOTE_REFERENCE_NO = "RemoteReferenceNo";
 
-    public static final String DETAIL_ACCESS_KEY = "DetailAccess";
+    public static final String BOOKING_ID_KEY = "BookingID";
 
-    public static final String BOOKING_KEY = "Booking";
+    public static final String DETAIL_ACCESS_KEY = "DetailAccess";
     public static final String SOURCE_REFERENCE_NO = "SourceReferenceNo";
 
     public static final String BOOKING_SUB_FILE = "BookingSub";

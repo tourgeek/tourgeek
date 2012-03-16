@@ -132,8 +132,6 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String ALWAYS_RESOLVE = "AlwaysResolve";
     public static final String PRICING_TYPE_ID = "PricingTypeID";
 
-    public static final String BOOKING_ID_KEY = "BookingID";
-
     public static final String PRODUCT_ID_KEY = "ProductID";
 
     public static final String AP_TRX_ID_KEY = "ApTrxID";

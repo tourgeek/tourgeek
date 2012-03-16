@@ -56,34 +56,8 @@ public class TransportProduct extends Product
     {
         super.init(screen);
     }
-    /**
-     * Get the table name.
-     */
-    public String getTableNames(boolean bAddQuotes)
-    {
-        return (m_tableName == null) ? Record.formatTableNames(TRANSPORT_PRODUCT_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
-    }
-    /**
-     * Get the name of a single record.
-     */
-    public String getRecordName()
-    {
-        return "product";
-    }
-    /**
-     * Get the Database Name.
-     */
-    public String getDatabaseName()
-    {
-        return "product";
-    }
-    /**
-     * Is this a local (vs remote) file?.
-     */
-    public int getDatabaseType()
-    {
-        return DBConstants.LOCAL | DBConstants.USER_DATA;
-    }
+
+    public static final String TRANSPORT_PRODUCT_FILE = null; // Screen field
     /**
      * Add this field in the Record's field sequence.
      */

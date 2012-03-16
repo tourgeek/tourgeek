@@ -33,8 +33,6 @@ public interface BookingAnswerModel extends BookingSubModel
     public static final String SELECTED = "Selected";
     public static final String DETAIL_ADDED = "DetailAdded";
 
-    public static final String BOOKING_ID_KEY = "BookingID";
-
     public static final String SCAN_ORDER_KEY = "ScanOrder";
     public static final String BOOKING_ANSWER_SCREEN_CLASS = "com.tourapp.tour.booking.entry.tour.BookingAnswerScreen";
     public static final String BOOKING_ANSWER_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.tour.BookingAnswerGridScreen";

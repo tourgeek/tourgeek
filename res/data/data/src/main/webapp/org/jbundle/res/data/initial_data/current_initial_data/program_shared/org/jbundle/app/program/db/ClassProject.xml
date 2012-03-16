@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ClassProject ID="1048575">
-		<LastChanged>2011-03-10T06:52:10</LastChanged>
+		<LastChanged>2012-01-13T19:52:21</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tour</Name>
 		<ParentFolderID>1,048,588</ParentFolderID>
@@ -11,6 +11,8 @@
 		<SystemClasses/>
 		<PackageName>com.tourapp.tour</PackageName>
 		<ProjectPath>tour</ProjectPath>
+		<InterfacePackage>com.tourapp.model.tour</InterfacePackage>
+		<InterfaceProjectPath/>
 		<ThinPackage>com.tourapp.thin.tour</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>com.tourapp.res.tour</ResourcePackage>
@@ -20,7 +22,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048576">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:58:35</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>mixed</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -31,6 +33,8 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath>mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../model/tour/app</InterfaceProjectPath>
 		<ThinPackage/>
 		<ThinProjectPath>../thin/tour/app</ThinProjectPath>
 		<ResourcePackage/>
@@ -51,6 +55,8 @@
 		<SystemClasses>Y</SystemClasses>
 		<PackageName>com.tourapp</PackageName>
 		<ProjectPath>tourapp-tour-core</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -60,7 +66,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048578">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:58:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>acctpay</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -71,6 +77,8 @@
 		<SystemClasses/>
 		<PackageName>.acctpay</PackageName>
 		<ProjectPath>mixed</ProjectPath>
+		<InterfacePackage>.acctpay</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/acctpay</InterfaceProjectPath>
 		<ThinPackage>.acctpay</ThinPackage>
 		<ThinProjectPath>../thin/tour/acctpay</ThinProjectPath>
 		<ResourcePackage>.acctpay</ResourcePackage>
@@ -80,7 +88,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048579">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:59:04</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>acctrec</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -91,6 +99,8 @@
 		<SystemClasses/>
 		<PackageName>.acctrec</PackageName>
 		<ProjectPath>mixed</ProjectPath>
+		<InterfacePackage>.acctrec</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/acctrec</InterfaceProjectPath>
 		<ThinPackage>.acctrec</ThinPackage>
 		<ThinProjectPath>../thin/tour/acctrec</ThinProjectPath>
 		<ResourcePackage>.acctrec</ResourcePackage>
@@ -100,7 +110,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048580">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T19:58:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>core</Name>
 		<ParentFolderID>1,048,598</ParentFolderID>
@@ -111,6 +121,8 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath>core</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/assetdr</InterfaceProjectPath>
 		<ThinPackage/>
 		<ThinProjectPath>../../thin/tour/assetdr</ThinProjectPath>
 		<ResourcePackage/>
@@ -120,7 +132,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048581">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:59:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>booking</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -131,6 +143,8 @@
 		<SystemClasses/>
 		<PackageName>.booking</PackageName>
 		<ProjectPath>mixed</ProjectPath>
+		<InterfacePackage>.booking</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/booking</InterfaceProjectPath>
 		<ThinPackage>.booking</ThinPackage>
 		<ThinProjectPath>../thin/tour/booking</ThinProjectPath>
 		<ResourcePackage>.booking</ResourcePackage>
@@ -140,7 +154,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048582">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:52:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>genled</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -151,6 +165,8 @@
 		<SystemClasses/>
 		<PackageName>.genled</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.genled</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/genled</InterfaceProjectPath>
 		<ThinPackage>.genled</ThinPackage>
 		<ThinProjectPath>../thin/tour/genled</ThinProjectPath>
 		<ResourcePackage>.genled</ResourcePackage>
@@ -160,7 +176,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048583">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:59:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>payroll</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -171,6 +187,8 @@
 		<SystemClasses/>
 		<PackageName>.payroll</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.payroll</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/payroll</InterfaceProjectPath>
 		<ThinPackage>.payroll</ThinPackage>
 		<ThinProjectPath>../thin/tour/payroll</ThinProjectPath>
 		<ResourcePackage>.payroll</ResourcePackage>
@@ -180,7 +198,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048584">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T10:59:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>product</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -191,6 +209,8 @@
 		<SystemClasses/>
 		<PackageName>.product</PackageName>
 		<ProjectPath>mixed</ProjectPath>
+		<InterfacePackage>.product</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/product</InterfaceProjectPath>
 		<ThinPackage>.product</ThinPackage>
 		<ThinProjectPath>../thin/tour/product</ThinProjectPath>
 		<ResourcePackage>.product</ResourcePackage>
@@ -200,7 +220,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048585">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T11:00:01</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>request</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -211,6 +231,8 @@
 		<SystemClasses/>
 		<PackageName>.request</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.request</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/request</InterfaceProjectPath>
 		<ThinPackage>.request</ThinPackage>
 		<ThinProjectPath>../thin/tour/request</ThinProjectPath>
 		<ResourcePackage>.request</ResourcePackage>
@@ -220,7 +242,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048586">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T11:00:11</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>profile</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -231,6 +253,8 @@
 		<SystemClasses/>
 		<PackageName>.profile</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.profile</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/profile</InterfaceProjectPath>
 		<ThinPackage>.profile</ThinPackage>
 		<ThinProjectPath>../thin/tour/profile</ThinProjectPath>
 		<ResourcePackage>.profile</ResourcePackage>
@@ -240,7 +264,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048587">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T11:00:23</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>util</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -251,6 +275,8 @@
 		<SystemClasses/>
 		<PackageName>.util</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.util</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/util</InterfaceProjectPath>
 		<ThinPackage>.util</ThinPackage>
 		<ThinProjectPath>../thin/tour/util</ThinProjectPath>
 		<ResourcePackage>.util</ResourcePackage>
@@ -271,6 +297,8 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -291,6 +319,8 @@
 		<SystemClasses>Y</SystemClasses>
 		<PackageName>com.tourapp.thin.app.booking</PackageName>
 		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -311,6 +341,8 @@
 		<SystemClasses>Y</SystemClasses>
 		<PackageName/>
 		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -320,7 +352,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048591">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T11:00:38</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>base</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -331,6 +363,8 @@
 		<SystemClasses/>
 		<PackageName>.base</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.base</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/base</InterfaceProjectPath>
 		<ThinPackage>.base</ThinPackage>
 		<ThinProjectPath>../thin/tour/base</ThinProjectPath>
 		<ResourcePackage>.base</ResourcePackage>
@@ -340,7 +374,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048592">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T11:00:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>message</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
@@ -351,6 +385,8 @@
 		<SystemClasses/>
 		<PackageName>.message</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.message</InterfacePackage>
+		<InterfaceProjectPath>../model/tour/message</InterfaceProjectPath>
 		<ThinPackage>.message</ThinPackage>
 		<ThinProjectPath>../thin/tour/message</ThinProjectPath>
 		<ResourcePackage>.message</ResourcePackage>
@@ -371,6 +407,8 @@
 		<SystemClasses/>
 		<PackageName>.jibx</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.jibx</InterfacePackage>
+		<InterfaceProjectPath/>
 		<ThinPackage>.jibx</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>.jibx</ResourcePackage>
@@ -391,6 +429,8 @@
 		<SystemClasses/>
 		<PackageName>.tour.message.jaxb</PackageName>
 		<ProjectPath>tour/message/jaxb</ProjectPath>
+		<InterfacePackage>.jaxb</InterfacePackage>
+		<InterfaceProjectPath/>
 		<ThinPackage>.jaxb</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>.jaxb</ResourcePackage>
@@ -411,6 +451,8 @@
 		<SystemClasses/>
 		<PackageName>.tour.message.xmlbeans</PackageName>
 		<ProjectPath>tour/message/xmlbeans</ProjectPath>
+		<InterfacePackage>.xmlbeans</InterfacePackage>
+		<InterfaceProjectPath/>
 		<ThinPackage>.xmlbeans</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>.xmlbeans</ResourcePackage>
@@ -431,6 +473,8 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -451,6 +495,8 @@
 		<SystemClasses>Y</SystemClasses>
 		<PackageName/>
 		<ProjectPath>thin</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -460,17 +506,19 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048598">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-01-13T19:57:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>assetdr</Name>
 		<ParentFolderID>1,048,575</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Asset debt</Description>
+		<Description>Asset debt (Parent project)</Description>
 		<SystemClasses/>
 		<PackageName>.assetdr</PackageName>
 		<ProjectPath/>
+		<InterfacePackage>.assetdr</InterfacePackage>
+		<InterfaceProjectPath/>
 		<ThinPackage>.assetdr</ThinPackage>
 		<ThinProjectPath/>
 		<ResourcePackage>.assetdr</ResourcePackage>
@@ -491,6 +539,8 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath>process</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -511,6 +561,8 @@
 		<SystemClasses/>
 		<PackageName>com.tourapp</PackageName>
 		<ProjectPath>tourapp</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -531,6 +583,8 @@
 		<SystemClasses/>
 		<PackageName/>
 		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -551,6 +605,8 @@
 		<SystemClasses/>
 		<PackageName>.remote</PackageName>
 		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>
@@ -571,6 +627,8 @@
 		<SystemClasses/>
 		<PackageName>.util</PackageName>
 		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
 		<ThinPackage/>
 		<ThinProjectPath/>
 		<ResourcePackage/>

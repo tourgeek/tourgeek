@@ -123,7 +123,7 @@ public class BookingSession extends TableSession
         ((BookingSub)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)).addDetailBehaviors(recBooking, recTour);
         recBooking.addListener(new RequeryOnUpdateHandler(this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)));
         
-        this.getRecord(BookingLine.BOOKING_LINE_FILE).setKeyArea(BookingLine.BOOKING_KEY);
+        this.getRecord(BookingLine.BOOKING_LINE_FILE).setKeyArea(BookingLine.BOOKING_ID_KEY);
         ((BookingLine)this.getRecord(BookingLine.BOOKING_LINE_FILE)).addDetailBehaviors(recBooking, recTour);
         recBooking.addListener(new RecountOnValidHandler(this.getRecord(BookingLine.BOOKING_LINE_FILE)));
                 

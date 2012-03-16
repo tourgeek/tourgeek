@@ -70,8 +70,6 @@ public interface BookingAirHeaderModel extends BookingSubModel
     public static final String FARE_2 = "Fare2";
     public static final String FARE_3 = "Fare3";
 
-    public static final String BOOKING_ID_KEY = "BookingID";
-
     public static final String TICKET_NUMBER_KEY = "TicketNumber";
 
     public static final String DEP_DATE_KEY = "DepDate";

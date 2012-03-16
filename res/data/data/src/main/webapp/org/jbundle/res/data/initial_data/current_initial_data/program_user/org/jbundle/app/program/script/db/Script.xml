@@ -26,7 +26,7 @@
 		<Destination/>
 	</Script>
 	<Script ID="4">
-		<LastChanged>2011-09-26T07:34:32</LastChanged>
+		<LastChanged>2012-03-14T15:29:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Restore files for test and demo</Name>
 		<ParentFolderID>0</ParentFolderID>
@@ -34,8 +34,8 @@
 		<Comment>Run only under jdbc - Ignore errors</Comment>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Mon Sep 26 07:34:30 PDT 2011
-archiveFolder=/home/don/workspace/workspace/tourapp/res/data/test/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
+#Wed Mar 14 15:29:25 PDT 2012
+userArchiveFolder=/home/don/workspace/workspace/tourapp/res/data/test/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
 type=USER_DATA
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
@@ -3409,7 +3409,7 @@ extension=xml
 		<Destination/>
 	</Script>
 	<Script ID="284">
-		<LastChanged>2011-10-06T17:40:09</LastChanged>
+		<LastChanged>2012-01-03T21:38:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Move demo data to monthly offset dir</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3417,7 +3417,7 @@ extension=xml
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Thu Oct 06 17:40:06 PDT 2011
+#Tue Jan 03 21:38:24 PST 2012
 process=.app.program.manual.convert.ConvertCode
 listenerClass=.app.program.script.scan.DateOffsetScanListener
 destDir=current_test_data

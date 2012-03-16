@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ClassInfo ID="2">
-		<LastChanged>2011-05-05T13:54:53</LastChanged>
+		<LastChanged>2012-01-18T14:47:42</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>Account</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
@@ -24887,7 +24887,7 @@ Manually entered invoice.
 		<CopyDescFrom>TransactionType</CopyDescFrom>
 	</ClassInfo>
 	<ClassInfo ID="1228">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-01-14T07:31:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TrxGroupGridScreen</ClassName>
 		<BaseClassName>DetailGridScreen</BaseClassName>
@@ -24895,7 +24895,7 @@ Manually entered invoice.
 		<ClassProjectID>1,048,582</ClassProjectID>
 		<ClassPackage>.screen.trx</ClassPackage>
 		<ClassSourceFile>TrxGroupScreen</ClassSourceFile>
-		<ClassType>record</ClassType>
+		<ClassType>screen</ClassType>
 		<ClassExplain>Transaction type maintenance</ClassExplain>
 		<ClassHelp type="XML"><paragraph>
 The transaction type file contains the information all the sub-systems need to post a transaction to the General Ledger. Usually, this files does not need to be modified.
@@ -27764,7 +27764,7 @@ Product classes are varing service levels, such as first class, etc.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1369">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-03-14T16:22:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransportProduct</ClassName>
 		<BaseClassName>Product</BaseClassName>
@@ -27772,7 +27772,7 @@ Product classes are varing service levels, such as first class, etc.
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.db</ClassPackage>
 		<ClassSourceFile>TransportProduct</ClassSourceFile>
-		<ClassType>record</ClassType>
+		<ClassType>Record</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>
@@ -27897,7 +27897,7 @@ There are also several detail screens:
 		<CopyDescFrom>TourHeader</CopyDescFrom>
 	</ClassInfo>
 	<ClassInfo ID="1371">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-01-15T06:40:18</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourHeaderScreenRecord</ClassName>
 		<BaseClassName>ProductScreenRecord</BaseClassName>
@@ -29372,7 +29372,7 @@ All the fields on this screen are optional:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1420">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-01-13T20:50:59</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>Location</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
@@ -29381,7 +29381,7 @@ Country, City, Region, etc.]]></ClassDesc>
 		<ClassProjectID>1,048,591</ClassProjectID>
 		<ClassPackage>.db</ClassPackage>
 		<ClassSourceFile>Location</ClassSourceFile>
-		<ClassType>record</ClassType>
+		<ClassType>Record</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>
@@ -38043,10 +38043,10 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2299">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-02-02T05:00:11</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>OTACode</ClassName>
-		<BaseClassName>Record</BaseClassName>
+		<BaseClassName>VirtualRecord</BaseClassName>
 		<ClassDesc>This is the virtual table that maps to an actual OTA code table</ClassDesc>
 		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.ota.db</ClassPackage>

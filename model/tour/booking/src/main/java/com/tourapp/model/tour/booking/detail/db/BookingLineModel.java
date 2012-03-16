@@ -35,8 +35,6 @@ public interface BookingLineModel extends BookingSubModel
     public static final String BOOKING_DETAIL_ID = "BookingDetailID";
     public static final String PAX_CATEGORY_ID = "PaxCategoryID";
 
-    public static final String BOOKING_ID_KEY = "BookingID";
-
     public static final String BOOKING_DETAIL_ID_KEY = "BookingDetailID";
     public static final String BOOKING_LINE_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingLineScreen";
     public static final String BOOKING_LINE_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingLineGridScreen";
