@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<CalendarCategory ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Appointment</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</CalendarCategory>
+	<CalendarCategory ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Anniversary</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</CalendarCategory>
+	<CalendarCategory ID="3">
+		<LastChanged>2008-05-23T16:19:17</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Holiday</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</CalendarCategory>
+</file>

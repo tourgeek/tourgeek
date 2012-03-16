@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<BaseStatus ID="1">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>No status</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Not used (Proposal)</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="3">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Not Used (Accepted)</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="4">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Canceled</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="5">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Valid</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="6">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Request required</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="7">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Request sent</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="8">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Error</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="9">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Data required</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="10">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Manual request reqd.</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="11">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Manual request sent</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="12">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<Description>Not valid</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+	<BaseStatus ID="13">
+		<LastChanged>2007-01-25T15:48:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Data valid (Not used</Description>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+	</BaseStatus>
+</file>

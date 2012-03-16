@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<ContactType ID="1">
+		<LastChanged>2009-02-26T01:42:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Vendor</Description>
+		<Code>Vendor</Code>
+		<Level>1</Level>
+		<ParentContactTypeID>3</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.acctpay.db.Vendor</RecordClass>
+	</ContactType>
+	<ContactType ID="2">
+		<LastChanged>2009-02-26T01:43:30</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Agent/Customer</Description>
+		<Code>Profile</Code>
+		<Level>1</Level>
+		<ParentContactTypeID>4</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.profile.db.Profile</RecordClass>
+	</ContactType>
+	<ContactType ID="3">
+		<LastChanged>2009-02-26T01:42:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>A/P Control</Description>
+		<Code>ApControl</Code>
+		<Level>3</Level>
+		<ParentContactTypeID/>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.acctpay.db.ApControl</RecordClass>
+	</ContactType>
+	<ContactType ID="4">
+		<LastChanged>2009-02-26T01:44:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Profile Control</Description>
+		<Code>ProfileControl</Code>
+		<Level>3</Level>
+		<ParentContactTypeID/>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.profile.db.ProfileControl</RecordClass>
+	</ContactType>
+	<ContactType ID="5">
+		<LastChanged>2009-02-26T01:46:04</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Hotel</Description>
+		<Code>Hotel</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.hotel.db.Hotel</RecordClass>
+	</ContactType>
+	<ContactType ID="6">
+		<LastChanged>2009-02-26T01:45:43</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Air Flight</Description>
+		<Code>Air</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.air.db.Air</RecordClass>
+	</ContactType>
+	<ContactType ID="7">
+		<LastChanged>2009-02-26T01:46:24</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Land</Description>
+		<Code>Land</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.land.db.Land</RecordClass>
+	</ContactType>
+	<ContactType ID="8">
+		<LastChanged>2009-02-26T01:47:00</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Transportation</Description>
+		<Code>Transportation</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.trans.db.Transportation</RecordClass>
+	</ContactType>
+	<ContactType ID="9">
+		<LastChanged>2009-02-26T01:45:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Cruise</Description>
+		<Code>Cruise</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.cruise.db.Cruise</RecordClass>
+	</ContactType>
+	<ContactType ID="10">
+		<LastChanged>2009-02-26T01:46:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Rental Car</Description>
+		<Code>Car</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.car.db.Car</RecordClass>
+	</ContactType>
+	<ContactType ID="11">
+		<LastChanged>2009-02-26T01:47:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Tour Package</Description>
+		<Code>TourHeader</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.tour.db.TourHeader</RecordClass>
+	</ContactType>
+	<ContactType ID="12">
+		<LastChanged>2009-02-26T01:46:14</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Item</Description>
+		<Code>Item</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>13</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.item.db.Item</RecordClass>
+	</ContactType>
+	<ContactType ID="13">
+		<LastChanged>2009-02-26T01:45:05</LastChanged>
+		<Deleted>N</Deleted>
+		<Description>Product</Description>
+		<Code>Product</Code>
+		<Level>2</Level>
+		<ParentContactTypeID>1</ParentContactTypeID>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
+Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
+AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
+AABweA==
+]]></Icon>
+		<RecordClass>com.tourapp.tour.product.base.db.Product</RecordClass>
+	</ContactType>
+</file>
