@@ -32637,7 +32637,7 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1701">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2011-08-12T14:49:23</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>UpdatePMC</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>

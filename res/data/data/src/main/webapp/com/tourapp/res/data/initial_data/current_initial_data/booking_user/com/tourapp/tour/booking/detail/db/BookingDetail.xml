@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingDetail ID="1">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -132,7 +132,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="2">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -260,7 +260,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="3">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -392,7 +392,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="4">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -520,7 +520,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="5">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -648,7 +648,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="6">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -776,7 +776,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="7">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -904,7 +904,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="8">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1036,7 +1036,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="9">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1163,7 +1163,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="10">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1290,7 +1290,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="11">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1415,7 +1415,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="12">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1542,7 +1542,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="13">
-		<LastChanged>2011-10-26T06:15:25</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1676,7 +1676,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="14">
-		<LastChanged>2011-10-26T06:15:26</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1804,7 +1804,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="15">
-		<LastChanged>2011-10-26T06:15:26</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -1932,7 +1932,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="16">
-		<LastChanged>2011-10-26T06:15:26</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
@@ -2060,7 +2060,7 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="17">
-		<LastChanged>2011-10-26T06:15:26</LastChanged>
+		<LastChanged>2012-03-15T17:46:22</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>

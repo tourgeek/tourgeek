@@ -3,10 +3,10 @@
 		<LastChanged>2011-04-05T15:20:17</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-08-05T15:19:34</TrxDate>
-		<Amount>-600.00</Amount>
-		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<TrxUserID>11</TrxUserID>
+		<TrxDate>2011-08-05T15:19:34</TrxDate>
+		<AmountLocal>-600.00</AmountLocal>
+		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<LinkedTrxID>8</LinkedTrxID>
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>2</BookingID>
@@ -17,10 +17,10 @@
 		<LastChanged>2011-04-05T15:20:18</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
-		<TrxDate>2011-08-05T15:20:17</TrxDate>
-		<Amount>3,627.90</Amount>
-		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
+		<TrxDate>2011-08-05T15:20:17</TrxDate>
+		<AmountLocal>3,627.90</AmountLocal>
+		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<LinkedTrxID/>
 		<LinkedTrxDescID/>
 		<BookingID>2</BookingID>
@@ -31,10 +31,10 @@
 		<LastChanged>2011-04-05T15:20:18</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-08-05T15:19:34</TrxDate>
-		<Amount>-800.00</Amount>
-		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<TrxUserID>11</TrxUserID>
+		<TrxDate>2011-08-05T15:19:34</TrxDate>
+		<AmountLocal>-800.00</AmountLocal>
+		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<LinkedTrxID>8</LinkedTrxID>
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>1</BookingID>
@@ -45,10 +45,10 @@
 		<LastChanged>2011-05-01T15:23:35</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-09-01T15:22:50</TrxDate>
-		<Amount>-400.00</Amount>
-		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
+		<TrxDate>2011-09-01T15:22:50</TrxDate>
+		<AmountLocal>-400.00</AmountLocal>
+		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<LinkedTrxID>9</LinkedTrxID>
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>3</BookingID>
@@ -59,10 +59,10 @@
 		<LastChanged>2011-05-19T03:27:14</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
-		<TrxDate>2011-09-01T15:23:34</TrxDate>
-		<Amount>2,891.07</Amount>
-		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
+		<TrxDate>2011-09-01T15:23:34</TrxDate>
+		<AmountLocal>2,891.07</AmountLocal>
+		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<LinkedTrxID/>
 		<LinkedTrxDescID/>
 		<BookingID>3</BookingID>
@@ -73,10 +73,10 @@
 		<LastChanged>2011-05-01T15:23:35</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
-		<TrxDate>2011-09-01T15:22:50</TrxDate>
-		<Amount>-3,027.90</Amount>
-		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<TrxUserID>11</TrxUserID>
+		<TrxDate>2011-09-01T15:22:50</TrxDate>
+		<AmountLocal>-3,027.90</AmountLocal>
+		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<LinkedTrxID>9</LinkedTrxID>
 		<LinkedTrxDescID>166</LinkedTrxDescID>
 		<BookingID>2</BookingID>

@@ -939,7 +939,7 @@
 		<RequestTypeID>1</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="95">
-		<LastChanged>2011-09-09T15:49:03</LastChanged>
+		<LastChanged>2011-09-09T05:00:46</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car Information Response</Description>
 		<Code/>

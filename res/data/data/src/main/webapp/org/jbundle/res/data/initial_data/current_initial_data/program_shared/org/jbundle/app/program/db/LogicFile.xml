@@ -14317,7 +14317,7 @@ return iErrorCode;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="958">
-		<LastChanged>2012-02-01T19:02:07</LastChanged>
+		<LastChanged>2012-03-15T17:00:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>50</Sequence>
 		<MethodName>addDetailBehaviors</MethodName>
@@ -14327,7 +14327,7 @@ return iErrorCode;]]></LogicSource>
 		<MethodClassName>BookingSub</MethodClassName>
 		<LogicSource><![CDATA[FileListener subFileBeh = new SubFileFilter(recBooking, true);
 this.addListener(subFileBeh);
-this.setKeyArea(BookingSub.BOOKING_KEY);
+this.setKeyArea(BookingSub.BOOKING_ID_KEY);
 RecordOwner screen = this.getRecordOwner();
 if (screen != null) if (screen instanceof GridScreen)
 {
@@ -36502,7 +36502,7 @@ return -1;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2980">
-		<LastChanged>2012-02-01T08:03:04</LastChanged>
+		<LastChanged>2012-03-15T16:59:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -36536,7 +36536,7 @@ this.getRecord(BookingDetail.BOOKING_DETAIL_FILE).setKeyArea(BookingDetail.BOOKI
 ((BookingSub)this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)).addDetailBehaviors(recBooking, recTour);
 recBooking.addListener(new RequeryOnUpdateHandler(this.getRecord(BookingDetail.BOOKING_DETAIL_FILE)));
 
-this.getRecord(BookingLine.BOOKING_LINE_FILE).setKeyArea(BookingLine.BOOKING_KEY);
+this.getRecord(BookingLine.BOOKING_LINE_FILE).setKeyArea(BookingLine.BOOKING_ID_KEY);
 ((BookingLine)this.getRecord(BookingLine.BOOKING_LINE_FILE)).addDetailBehaviors(recBooking, recTour);
 recBooking.addListener(new RecountOnValidHandler(this.getRecord(BookingLine.BOOKING_LINE_FILE)));
         
@@ -88435,7 +88435,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="6720">
-		<LastChanged>2012-01-31T10:43:51</LastChanged>
+		<LastChanged>2012-03-15T17:00:43</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>600</Sequence>
 		<MethodName>deleteAllDetail</MethodName>
@@ -88445,7 +88445,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<MethodClassName>BookingSub</MethodClassName>
 		<LogicSource><![CDATA[int iErrorCode = DBConstants.NORMAL_RETURN;
 int iOldKeyOrder = this.getDefaultOrder();
-this.setKeyArea(BookingSub.BOOKING_KEY);
+this.setKeyArea(BookingSub.BOOKING_ID_KEY);
 FileListener subFileBehavior = new SubFileFilter(recBooking, true);
 this.addListener(subFileBehavior);
 
@@ -88730,7 +88730,7 @@ super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="6730">
-		<LastChanged>2012-01-31T10:43:51</LastChanged>
+		<LastChanged>2012-03-15T16:57:05</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>400</Sequence>
 		<MethodName>rescanStatus</MethodName>
@@ -88753,7 +88753,7 @@ else if (screen != null)
         FileListener listener = new SubFileFilter(recBooking);
         recBookingLine.addListener(listener);
         int iOldKeyArea = recBookingLine.getDefaultOrder();
-        recBookingLine.setKeyArea(BookingLine.BOOKING_KEY);
+        recBookingLine.setKeyArea(BookingLine.BOOKING_ID_KEY);
         recBookingLine.close();
         try {
             while (recBookingLine.hasNext())

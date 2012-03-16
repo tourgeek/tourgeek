@@ -59,8 +59,8 @@ destinationAddress=HotelAvailRQ
 		<Properties>#Field properties
 #Fri Mar 11 10:58:34 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourgeek.com\:8181/reply
-destinationAddress=http\://www.tourgeek.com\:8181
+sourceAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8080
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -120,8 +120,8 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<Properties>#Field properties
 #Fri Mar 11 10:57:24 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourgeek.com\:8181/reply
-destinationAddress=http\://www.tourgeek.com\:8181
+sourceAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8080
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -321,8 +321,8 @@ Manual=true
 		<Properties>#Field properties
 #Fri Mar 11 10:58:02 PST 2011
 destinationMessage=/ws
-sourceAddress=http\://www.tourgeek.com\:8181/reply
-destinationAddress=http\://www.tourgeek.com\:8181
+sourceAddress=http\://www.tourgeek.com\:8080/reply
+destinationAddress=http\://www.tourgeek.com\:8080
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>37</PersonID>
@@ -515,7 +515,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="34">
-		<LastChanged>2011-09-09T15:49:02</LastChanged>
+		<LastChanged>2011-09-17T07:30:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Apr 16 12:54:33 PDT 2008

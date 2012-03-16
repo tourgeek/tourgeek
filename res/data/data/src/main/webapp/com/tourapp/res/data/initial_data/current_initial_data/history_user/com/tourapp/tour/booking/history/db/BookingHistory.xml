@@ -3,10 +3,10 @@
 		<ID>1</ID>
 		<LastChanged>2011-04-01T17:21:52</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID/>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description/>
 		<EmployeeModID>11</EmployeeModID>
@@ -69,10 +69,10 @@
 		<ID>1</ID>
 		<LastChanged>2011-09-09T17:17:52</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2012-01-09</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID/>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description/>
 		<EmployeeModID>11</EmployeeModID>
@@ -135,10 +135,10 @@
 		<ID>2</ID>
 		<LastChanged>2011-04-01T17:24:26</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID/>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description/>
 		<EmployeeModID>11</EmployeeModID>
@@ -201,10 +201,10 @@
 		<ID>2</ID>
 		<LastChanged>2011-04-01T17:24:27</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -267,10 +267,10 @@
 		<ID>2</ID>
 		<LastChanged>2011-04-01T17:24:28</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -333,10 +333,10 @@
 		<ID>2</ID>
 		<LastChanged>2011-04-05T15:20:18</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -399,10 +399,10 @@
 		<ID>2</ID>
 		<LastChanged>2011-04-05T15:20:19</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -465,10 +465,10 @@
 		<ID>2</ID>
 		<LastChanged>2011-04-05T15:20:20</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -534,10 +534,10 @@ eventStatus.Proposal.2=Y
 		<ID>2</ID>
 		<LastChanged>2011-05-01T15:23:34</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -604,10 +604,10 @@ eventStatus.Proposal.2=Y
 		<ID>2</ID>
 		<LastChanged>2011-05-01T15:23:36</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-08-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>22</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -674,10 +674,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:21:24</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID/>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description/>
 		<EmployeeModID>11</EmployeeModID>
@@ -740,10 +740,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:21:25</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -806,10 +806,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:21:27</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -872,10 +872,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:21:46</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -938,10 +938,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:22:05</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -1004,10 +1004,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:22:09</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -1070,10 +1070,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:22:10</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -1136,10 +1136,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:23:35</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -1202,10 +1202,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:23:36</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
@@ -1268,10 +1268,10 @@ eventStatus.Proposal.2=Y
 		<ID>3</ID>
 		<LastChanged>2011-05-01T15:23:37</LastChanged>
 		<Deleted>N</Deleted>
-		<BookingDate>2011-09-01</BookingDate>
-		<EmployeeID>11</EmployeeID>
-		<ProfileID>27</ProfileID>
-		<ProfileCode/>
+		<CustSaleDate>2012-03-14</CustSaleDate>
+		<CustSaleAgentID/>
+		<CustSaleCustID/>
+		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>

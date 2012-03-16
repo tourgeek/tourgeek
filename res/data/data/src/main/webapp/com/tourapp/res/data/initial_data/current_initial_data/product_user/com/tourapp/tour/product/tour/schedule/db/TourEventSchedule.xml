@@ -2,7 +2,7 @@
 	<TourEventSchedule ID="2">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>2</TourClassID>
 		<TourEventID>7</TourEventID>
 		<BookingStatusID/>
@@ -19,7 +19,7 @@
 	<TourEventSchedule ID="3">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>2</TourClassID>
 		<TourEventID>2</TourEventID>
 		<BookingStatusID>5</BookingStatusID>
@@ -36,7 +36,7 @@
 	<TourEventSchedule ID="5">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>2</TourClassID>
 		<TourEventID>17</TourEventID>
 		<BookingStatusID/>
@@ -53,7 +53,7 @@
 	<TourEventSchedule ID="6">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>3</TourClassID>
 		<TourEventID>17</TourEventID>
 		<BookingStatusID/>
@@ -70,7 +70,7 @@
 	<TourEventSchedule ID="7">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>4</TourClassID>
 		<TourEventID>2</TourEventID>
 		<BookingStatusID>5</BookingStatusID>
@@ -87,7 +87,7 @@
 	<TourEventSchedule ID="8">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>4</TourClassID>
 		<TourEventID>2</TourEventID>
 		<BookingStatusID>5</BookingStatusID>
@@ -104,7 +104,7 @@
 	<TourEventSchedule ID="9">
 		<LastChanged>2011-09-09T15:50:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ActionProperties/>
+		<Properties/>
 		<TourClassID>4</TourClassID>
 		<TourEventID>17</TourEventID>
 		<BookingStatusID/>

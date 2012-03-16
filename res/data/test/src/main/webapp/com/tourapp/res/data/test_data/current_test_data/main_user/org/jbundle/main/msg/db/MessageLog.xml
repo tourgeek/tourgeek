@@ -1067,7 +1067,7 @@ sendMessageBy=SOAP
 		<ContactTypeID>1</ContactTypeID>
 		<ContactID>37</ContactID>
 		<Description>Error converting to internal format</Description>
-		<MessageTime>2011-03-10T14:22:24</MessageTime>
+		<MessageTime>2011-03-10T14:22:29</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>
@@ -1768,7 +1768,7 @@ sendMessageBy=SOAP
 		<ErrorText>Error converting to external format</ErrorText>
 	</MessageLog>
 	<MessageLog ID="28">
-		<LastChanged>2011-09-09T15:49:03</LastChanged>
+		<LastChanged>2009-02-12T14:49:29</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -2100,7 +2100,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=33
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2162,7 +2162,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=34
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2224,7 +2224,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=35
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2317,7 +2317,7 @@ transportID=11
 		<ErrorText>Error converting to internal format</ErrorText>
 	</MessageLog>
 	<MessageLog ID="37">
-		<LastChanged>2011-09-09T15:49:03</LastChanged>
+		<LastChanged>2011-10-26T15:49:03</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -2391,7 +2391,7 @@ transportID=11
 		<ResponseMessageLogID>35</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 16:52:22 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -2453,7 +2453,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=39
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2620,7 +2620,7 @@ transportID=11
 		<ResponseMessageLogID>39</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 16:52:39 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -2682,7 +2682,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=43
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -2849,7 +2849,7 @@ transportID=11
 		<ResponseMessageLogID>43</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 16:53:14 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -2911,7 +2911,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=47
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3081,7 +3081,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=50
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3140,7 +3140,7 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>47</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 16:59:04 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3202,7 +3202,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=52
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3477,7 +3477,7 @@ transportID=11
 		<ResponseMessageLogID>50</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 17:00:02 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3536,7 +3536,7 @@ transportID=11
 		<ResponseMessageLogID>52</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 17:00:02 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3598,7 +3598,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=59
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3692,7 +3692,7 @@ transportID=11
 		<ErrorText/>
 	</MessageLog>
 	<MessageLog ID="61">
-		<LastChanged>2011-09-09T15:49:03</LastChanged>
+		<LastChanged>2011-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -3766,7 +3766,7 @@ transportID=11
 		<ResponseMessageLogID>59</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 17:01:50 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -3828,7 +3828,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=63
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -3996,7 +3996,7 @@ transportID=11
 		<ResponseMessageLogID>63</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 17:02:01 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4058,7 +4058,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=67
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4226,7 +4226,7 @@ transportID=11
 		<ResponseMessageLogID>67</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 17:02:02 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4288,7 +4288,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=71
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4456,7 +4456,7 @@ transportID=11
 		<ResponseMessageLogID>71</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Thu Mar 10 17:02:03 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4518,7 +4518,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=75
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4686,7 +4686,7 @@ transportID=11
 		<ResponseMessageLogID>75</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 07:57:50 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4748,7 +4748,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=79
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -4916,7 +4916,7 @@ transportID=11
 		<ResponseMessageLogID>79</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 07:58:11 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -4978,7 +4978,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.net.webservicex.currencyconvertor
 Manual=true
 trxID=83
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Currency Conversion Request
 registryID=1
 messageProcessInfoID=243
@@ -5075,7 +5075,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=85
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -5243,7 +5243,7 @@ transportID=11
 		<ResponseMessageLogID>85</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 08:03:34 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -5305,7 +5305,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=89
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=1
 messageProcessInfoID=197
@@ -5473,7 +5473,7 @@ transportID=11
 		<ResponseMessageLogID>89</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 08:11:40 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -5535,7 +5535,7 @@ transportID=11
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=93
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=3
 messageProcessInfoID=197
@@ -5694,7 +5694,7 @@ transportID=11
 		<ContactTypeID>1</ContactTypeID>
 		<ContactID>37</ContactID>
 		<Description>Ping Response</Description>
-		<MessageTime>2011-03-11T08:49:58</MessageTime>
+		<MessageTime>2008-02-12T05:01:00</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>
@@ -5703,7 +5703,7 @@ transportID=11
 		<ResponseMessageLogID>93</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 08:49:58 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -5762,10 +5762,10 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 08:57:35 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -5829,10 +5829,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:00:02 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -5896,10 +5896,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:00:32 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -5963,10 +5963,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:04:05 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6030,10 +6030,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:07:31 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6097,10 +6097,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:11:43 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6164,10 +6164,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:15:19 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6231,10 +6231,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 09:17:34 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=3
 messageProcessInfoID=1
@@ -6298,10 +6298,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 10:49:53 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6365,10 +6365,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 10:53:11 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6432,10 +6432,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 10:53:44 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6499,10 +6499,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 10:54:07 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6566,10 +6566,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 10:56:03 PST 2011
-sourceAddress=http\://www.tourloco.com\:8181/reply
+sourceAddress=http\://www.tourloco.com\:8080/reply
 destinationMessage=/tour/ws
 Manual=true
-destinationAddress=http\://www.tourloco.com\:8181
+destinationAddress=http\://www.tourloco.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6633,10 +6633,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 10:59:24 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6698,10 +6698,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 11:02:24 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6763,10 +6763,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 11:02:49 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6828,10 +6828,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 11:05:24 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6893,10 +6893,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 11:06:18 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -6958,10 +6958,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 11:49:45 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7023,10 +7023,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:13:32 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7088,10 +7088,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:14:17 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7153,10 +7153,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:16:44 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7218,10 +7218,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:17:30 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=1
 messageProcessInfoID=1
@@ -7283,11 +7283,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:42:37 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=1
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7405,11 +7405,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:46:42 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=1
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7527,11 +7527,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:48:57 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=1
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7649,11 +7649,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:56:23 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7771,11 +7771,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:56:31 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7893,11 +7893,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:57:06 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -7951,7 +7951,7 @@ sendMessageBy=SOAP
 		<ContactTypeID/>
 		<ContactID/>
 		<Description>Error converting to internal format</Description>
-		<MessageTime>2011-03-11T12:57:32</MessageTime>
+		<MessageTime>2011-08-05T15:59:48</MessageTime>
 		<TimeoutSeconds>0</TimeoutSeconds>
 		<TimeoutTime/>
 		<UserID>11</UserID>
@@ -8015,11 +8015,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:57:35 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8137,11 +8137,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:59:28 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8240,7 +8240,7 @@ transportID=11
 		<ErrorText>Error converting to internal format</ErrorText>
 	</MessageLog>
 	<MessageLog ID="136">
-		<LastChanged>2011-09-09T15:49:04</LastChanged>
+		<LastChanged>2011-08-05T15:49:04</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -8259,11 +8259,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:59:38 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8381,11 +8381,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 12:59:54 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -8503,10 +8503,10 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:15:13 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -8565,10 +8565,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:15:29 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -8627,10 +8627,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:15:51 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -8690,7 +8690,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:16:09 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -8746,10 +8746,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>143</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:16:09 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=143
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -8811,7 +8811,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:16:41 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -8867,10 +8867,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>145</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:16:41 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=145
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -8932,7 +8932,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:17:30 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -8988,10 +8988,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>147</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:17:30 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=147
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9053,7 +9053,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:19:11 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9109,10 +9109,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>149</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:19:16 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=149
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9174,7 +9174,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:19:25 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9230,10 +9230,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>151</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:21:45 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=151
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9295,7 +9295,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:21:52 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9351,10 +9351,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>153</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:22:18 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=153
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9415,10 +9415,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:22:25 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9477,10 +9477,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:22:51 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9540,7 +9540,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:24:25 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9596,10 +9596,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>157</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:24:27 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=157
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -9660,10 +9660,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:24:31 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9722,10 +9722,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:25:01 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9784,10 +9784,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:25:15 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9846,10 +9846,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:27:21 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 destinationMessage=/ws
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 description=Hotel Pricing Request
 registryID=2
 messageProcessInfoID=1
@@ -9909,7 +9909,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:28:26 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -9965,10 +9965,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>163</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:29:03 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=163
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10030,7 +10030,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:29:15 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -10086,10 +10086,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>165</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:29:29 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=165
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10151,7 +10151,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:29:53 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -10207,10 +10207,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>167</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:32:19 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=167
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10272,7 +10272,7 @@ sendMessageBy=SOAP
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:35:10 PST 2011
 Manual=true
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=2
 messageProcessInfoID=197
@@ -10328,10 +10328,10 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>169</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:35:10 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 messageInfoType=REPLY
 trxIDOrig=169
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 registryID=2
 errorMessage=Error converting to external format
 Manual=true
@@ -10395,7 +10395,7 @@ sendMessageBy=SOAP
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.ping
 Manual=true
 trxID=171
-destinationAddress=http\://www.tourgeek.com\:8181/ws
+destinationAddress=http\://www.tourgeek.com\:8080/ws
 description=Ping Request
 registryID=4
 messageProcessInfoID=197
@@ -10563,7 +10563,7 @@ transportID=11
 		<ResponseMessageLogID>171</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:38:21 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181/ws
+sourceAddress=http\://www.tourgeek.com\:8080/ws
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
 description=Ping Response
@@ -10622,11 +10622,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:38:35 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -10744,11 +10744,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:39:43 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=4
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -10866,11 +10866,11 @@ transportID=11
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:46:54 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -10926,18 +10926,18 @@ sendMessageBy=SOAP
 		<Description>Hotel Pricing Request</Description>
 		<MessageTime>2011-03-11T13:47:16</MessageTime>
 		<TimeoutSeconds>300</TimeoutSeconds>
-		<TimeoutTime>2011-03-11T13:52:16</TimeoutTime>
+		<TimeoutTime>2009-02-12T14:49:27</TimeoutTime>
 		<UserID>11</UserID>
 		<ReferenceType/>
 		<ReferenceID/>
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:47:16 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11000,11 +11000,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:47:36 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11067,11 +11067,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 13:48:41 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11134,11 +11134,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID/>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 14:10:17 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11201,11 +11201,11 @@ sendMessageBy=SOAP
 		<ResponseMessageLogID>187</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 14:10:51 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11379,10 +11379,10 @@ transportID=11
 		<ResponseMessageLogID>184</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 14:14:51 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181
+sourceAddress=http\://www.tourgeek.com\:8080
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
-destinationAddress=http\://www.tourgeek.com\:8181/reply
+destinationAddress=http\://www.tourgeek.com\:8080/reply
 description=Hotel Pricing Response
 registryID=6
 messageProcessInfoID=3
@@ -11440,11 +11440,11 @@ transportID=11
 		<ResponseMessageLogID>191</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 14:19:07 PST 2011
-destinationAddress=http\://www.tourgeek.com\:8181
+destinationAddress=http\://www.tourgeek.com\:8080
 destinationMessage=/ws
 jibx.packageName=org.jibx.schema.org.opentravel._2010B.hotel
 registryID=6
-sourceAddress=http\://www.tourgeek.com\:8181/reply
+sourceAddress=http\://www.tourgeek.com\:8080/reply
 Manual=true
 messageProcessInfoID=1
 description=Hotel Pricing Request
@@ -11618,10 +11618,10 @@ transportID=11
 		<ResponseMessageLogID>188</ResponseMessageLogID>
 		<MessageHeaderProperties>#Field properties
 #Fri Mar 11 14:19:09 PST 2011
-sourceAddress=http\://www.tourgeek.com\:8181
+sourceAddress=http\://www.tourgeek.com\:8080
 messageProcessType=MESSAGE_IN
 messageInfoType=REPLY
-destinationAddress=http\://www.tourgeek.com\:8181/reply
+destinationAddress=http\://www.tourgeek.com\:8080/reply
 description=Hotel Pricing Response
 registryID=6
 messageProcessInfoID=3
@@ -19484,7 +19484,7 @@ sendMessageBy=Server
 		<ErrorText/>
 	</MessageLog>
 	<MessageLog ID="302">
-		<LastChanged>2011-05-01T15:21:28</LastChanged>
+		<LastChanged>2011-05-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<MessageTypeID>1</MessageTypeID>
@@ -21967,6 +21967,1694 @@ transportID=7
 &lt;messageProcessType&gt;MESSAGE_IN&lt;/messageProcessType&gt;
 &lt;/header&gt;
 &lt;/root&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="336">
+		<LastChanged>2011-10-18T21:57:20</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-18T21:57:19</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>339</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+Manual=true
+trxID=336
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="337">
+		<LastChanged>2011-10-18T21:57:16</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-18T21:57:16</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Tue Oct 18 21:57:16 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Tue Oct 18 21:57:16 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Tue Oct 18 21:57:16 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="338">
+		<LastChanged>2011-10-18T21:57:20</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-18T21:57:19</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+trxID=338
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=337
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="339">
+		<LastChanged>2011-10-18T21:57:20</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-18T21:57:19</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>336</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=336
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Tue Oct 18 21:57:19 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="340">
+		<LastChanged>2011-10-26T14:06:39</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T14:06:38</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>343</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+Manual=true
+trxID=340
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="341">
+		<LastChanged>2011-10-26T14:06:36</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T14:06:36</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:06:36 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:06:36 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:06:36 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="342">
+		<LastChanged>2011-10-26T14:06:39</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T14:06:38</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+trxID=342
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=341
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="343">
+		<LastChanged>2011-10-26T14:06:39</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T14:06:38</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>340</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=340
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:06:38 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="344">
+		<LastChanged>2011-10-26T14:43:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T14:43:02</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>347</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+Manual=true
+trxID=344
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="345">
+		<LastChanged>2011-10-26T14:42:59</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T14:42:59</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:42:59 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:42:59 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:42:59 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="346">
+		<LastChanged>2011-10-26T14:43:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T14:43:02</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+trxID=346
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=345
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="347">
+		<LastChanged>2011-10-26T14:43:03</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T14:43:02</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>344</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=344
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 14:43:02 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="348">
+		<LastChanged>2011-10-26T15:41:36</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T15:41:35</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>351</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+Manual=true
+trxID=348
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="349">
+		<LastChanged>2011-10-26T15:41:32</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T15:41:32</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 15:41:32 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 15:41:32 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 15:41:32 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="350">
+		<LastChanged>2011-10-26T15:41:36</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T15:41:35</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+trxID=350
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=349
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="351">
+		<LastChanged>2011-10-26T15:41:48</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T15:41:35</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>348</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=348
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 15:41:35 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="352">
+		<LastChanged>2011-10-26T16:59:37</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T16:59:36</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>355</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+Manual=true
+trxID=352
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="353">
+		<LastChanged>2011-10-26T16:59:34</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T16:59:34</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 16:59:34 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 16:59:34 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 16:59:34 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="354">
+		<LastChanged>2011-10-26T16:59:37</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T16:59:36</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+trxID=354
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=353
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="355">
+		<LastChanged>2011-10-26T16:59:37</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T16:59:36</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>352</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=352
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 16:59:36 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="356">
+		<LastChanged>2011-10-26T17:01:35</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T17:01:33</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>359</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+Manual=true
+trxID=356
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=2
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>wilma@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>wilma@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>wilma.demo.tourgeek.com</domainName><sitePrefix>wilma</sitePrefix><SiteName>Wilma's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;wilma@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;wilma@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;wilma.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;wilma&lt;/sitePrefix&gt;&lt;SiteName&gt;Wilma's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="357">
+		<LastChanged>2011-10-26T17:01:32</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-26T17:01:32</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 17:01:32 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 17:01:32 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 17:01:32 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>wilma@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>wilma@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>wilma.demo.tourgeek.com</domainName><sitePrefix>wilma</sitePrefix><SiteName>Wilma's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;wilma@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;wilma@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;wilma.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;wilma&lt;/sitePrefix&gt;&lt;SiteName&gt;Wilma's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="358">
+		<LastChanged>2011-10-26T17:01:34</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T17:01:33</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+trxID=358
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=357
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: wilma</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: wilma&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="359">
+		<LastChanged>2011-10-26T17:01:34</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-26T17:01:33</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>356</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=2
+messageProcessInfoID=248
+trxIDOrig=356
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Wed Oct 26 17:01:33 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: wilma</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: wilma&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="360">
+		<LastChanged>2011-10-27T00:25:01</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-27T00:25:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>363</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+Manual=true
+trxID=360
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>barney@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>barney@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>barney.demo.tourgeek.com</domainName><sitePrefix>barney</sitePrefix><SiteName>Barney's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;barney@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;barney@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;barney.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;barney&lt;/sitePrefix&gt;&lt;SiteName&gt;Barney's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="361">
+		<LastChanged>2011-10-27T00:24:57</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-27T00:24:57</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Thu Oct 27 00:24:57 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Thu Oct 27 00:24:57 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Thu Oct 27 00:24:57 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>barney@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>barney@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>barney.demo.tourgeek.com</domainName><sitePrefix>barney</sitePrefix><SiteName>Barney's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;barney@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;barney@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;barney.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;barney&lt;/sitePrefix&gt;&lt;SiteName&gt;Barney's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="362">
+		<LastChanged>2011-10-27T00:25:01</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-27T00:25:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+trxID=362
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=361
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: barney</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: barney&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="363">
+		<LastChanged>2011-10-27T00:25:01</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-27T00:25:00</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>360</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=360
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Thu Oct 27 00:25:00 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: barney</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: barney&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="364">
+		<LastChanged>2011-10-30T11:23:36</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>249</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-30T11:23:35</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>367</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+Manual=true
+trxID=364
+description=Run Remote Process Request
+destinationAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessInfoID=249
+registryID=1
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+process=org.jbundle.base.message.trx.processor.BaseMessageOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+messageTimeoutSeconds=300
+transportType=AutoResp
+singleDetail=true
+transportID=16
+sendMessageBy=XML
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="365">
+		<LastChanged>2011-10-30T11:23:31</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>1</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>250</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Run Remote Process Request</Description>
+		<MessageTime>2011-10-30T11:23:31</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Sun Oct 30 11:23:31 PDT 2011
+description=Run Remote Process Request
+messageProcessInfoID=250
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Sun Oct 30 11:23:31 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.RunRemoteProcessMessageData
+schemaLocation=http\://www.opentravel.org/RunRemoteProcessRQ.xsd
+messageInfoType=REQUEST
+responseMessageID=247
+process=org.jbundle.base.message.remote.RunRemoteProcessMessageInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Sun Oct 30 11:23:31 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.RunRemoteProcessMessageData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REQUEST</MessageDataType>
+		<XMLMessageData type="XML"><RunRemoteProcess><ProcessClassName>org.jbundle.app.program.demo.BaseSetupSiteProcess</ProcessClassName><user>fred@tourgeek.com</user><auth>sbDuK9kFdXbDVKwIEyg06MOaCQA=</auth><CreateSite><UserInfo><UserName>fred@tourgeek.com</UserName><Password>sbDuK9kFdXbDVKwIEyg06MOaCQA=</Password></UserInfo><Menus><domainName>fred.demo.tourgeek.com</domainName><sitePrefix>fred</sitePrefix><SiteName>Fred's Demo site</SiteName><xslTemplate>com/tourapp/res/data/test_data/current_test_data</xslTemplate><SiteTemplateCode>template.tourgeek.com</SiteTemplateCode><SiteHomeCode>demostart</SiteHomeCode></Menus></CreateSite></RunRemoteProcess></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;RunRemoteProcess&gt;&lt;ProcessClassName&gt;org.jbundle.app.program.demo.BaseSetupSiteProcess&lt;/ProcessClassName&gt;&lt;user&gt;fred@tourgeek.com&lt;/user&gt;&lt;auth&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/auth&gt;&lt;CreateSite&gt;&lt;UserInfo&gt;&lt;UserName&gt;fred@tourgeek.com&lt;/UserName&gt;&lt;Password&gt;sbDuK9kFdXbDVKwIEyg06MOaCQA=&lt;/Password&gt;&lt;/UserInfo&gt;&lt;Menus&gt;&lt;domainName&gt;fred.demo.tourgeek.com&lt;/domainName&gt;&lt;sitePrefix&gt;fred&lt;/sitePrefix&gt;&lt;SiteName&gt;Fred's Demo site&lt;/SiteName&gt;&lt;xslTemplate&gt;com/tourapp/res/data/test_data/current_test_data&lt;/xslTemplate&gt;&lt;SiteTemplateCode&gt;template.tourgeek.com&lt;/SiteTemplateCode&gt;&lt;SiteHomeCode&gt;demostart&lt;/SiteHomeCode&gt;&lt;/Menus&gt;&lt;/CreateSite&gt;&lt;/RunRemoteProcess&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="366">
+		<LastChanged>2011-10-30T11:23:36</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>1</MessageTypeID>
+		<MessageStatusID>6</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>247</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-30T11:23:35</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID/>
+		<MessageHeaderProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+trxID=366
+description=Standard Message Response
+messageProcessInfoID=247
+trxIDOrig=365
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+messageProcessType=MESSAGE_OUT
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToNative
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageCode=247
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyOutProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageOut</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
+		<ErrorText/>
+	</MessageLog>
+	<MessageLog ID="367">
+		<LastChanged>2011-10-30T11:23:36</LastChanged>
+		<Deleted>N</Deleted>
+		<MessageInfoTypeID>2</MessageInfoTypeID>
+		<MessageTypeID>2</MessageTypeID>
+		<MessageStatusID>1</MessageStatusID>
+		<MessageTransportID>16</MessageTransportID>
+		<MessageProcessInfoID>248</MessageProcessInfoID>
+		<ContactTypeID/>
+		<ContactID/>
+		<Description>Standard Message Response</Description>
+		<MessageTime>2011-10-30T11:23:35</MessageTime>
+		<TimeoutSeconds>0</TimeoutSeconds>
+		<TimeoutTime/>
+		<UserID>11</UserID>
+		<ReferenceType/>
+		<ReferenceID/>
+		<ResponseMessageLogID>364</ResponseMessageLogID>
+		<MessageHeaderProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+sourceAddress=http\://www.tourgeek.com\:8181/xmlws
+messageProcessType=MESSAGE_IN
+messageInfoType=REPLY
+description=Standard Message Response
+registryID=1
+messageProcessInfoID=248
+trxIDOrig=364
+</MessageHeaderProperties>
+		<MessageInfoProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+messageProcessType=MESSAGE_IN
+marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlConvertToMessage
+internalMessageClass=org.jbundle.base.message.remote.StandardMessageResponseData
+schemaLocation=http\://www.opentravel.org/StandardMessageRS.xsd
+messageInfoType=REPLY
+process=org.jbundle.base.message.trx.processor.BaseMessageReplyInProcessor
+</MessageInfoProperties>
+		<MessageTransportProperties>#Field properties
+#Sun Oct 30 11:23:35 PDT 2011
+messageTimeoutSeconds=300
+singleDetail=true
+transportID=16
+</MessageTransportProperties>
+		<MessageClassName>org.jbundle.thin.base.message.TreeMessage</MessageClassName>
+		<MessageHeaderClassName>org.jbundle.base.message.trx.message.TrxMessageHeader</MessageHeaderClassName>
+		<MessageDataClassName>org.jbundle.base.message.remote.StandardMessageResponseData</MessageDataClassName>
+		<ExternalMessageClassName>org.jbundle.base.message.trx.message.external.XmlTrxMessageIn</ExternalMessageClassName>
+		<MessageQueueName>trxSend</MessageQueueName>
+		<MessageQueueType>internet</MessageQueueType>
+		<MessageDataType>REPLY</MessageDataType>
+		<XMLMessageData type="XML"><StandardMessageResponse><Message>Okay: fred</Message></StandardMessageResponse></XMLMessageData>
+		<MessageData>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;StandardMessageResponse&gt;&lt;Message&gt;Okay: fred&lt;/Message&gt;&lt;/StandardMessageResponse&gt;</MessageData>
 		<ErrorText/>
 	</MessageLog>
 </file>

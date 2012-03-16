@@ -3,6 +3,7 @@
 		<LastChanged>2011-05-01T15:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>60</TrxStatusID>
+		<TrxUserID>11</TrxUserID>
 		<Code/>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ApTrxTypeID>0</ApTrxTypeID>
@@ -60,6 +61,7 @@
 		<LastChanged>2011-05-01T15:23:38</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>60</TrxStatusID>
+		<TrxUserID>11</TrxUserID>
 		<Code/>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ApTrxTypeID>0</ApTrxTypeID>
@@ -117,6 +119,7 @@
 		<LastChanged>2011-05-01T15:23:38</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>60</TrxStatusID>
+		<TrxUserID>11</TrxUserID>
 		<Code/>
 		<Description>Tour cancellation insurance</Description>
 		<ApTrxTypeID>0</ApTrxTypeID>

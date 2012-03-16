@@ -3,7 +3,7 @@
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>ASTO01</Code>
-		<VendorName>Asian Tours</VendorName>
+		<Name>Asian Tours</Name>
 		<AddressLine1>1234 Gaysorn Place</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Bangkok</CityOrTown>
@@ -47,7 +47,7 @@
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Regent Hotel</VendorName>
+		<Name>Regent Hotel</Name>
 		<AddressLine1>5432 Nathan Road</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Los Angeles</CityOrTown>
@@ -91,7 +91,7 @@
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BASP01</Code>
-		<VendorName>Banff Springs Hotel</VendorName>
+		<Name>Banff Springs Hotel</Name>
 		<AddressLine1>123 First Street</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Calgary</CityOrTown>
@@ -135,7 +135,7 @@
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BATO01</Code>
-		<VendorName>Banff Local Tours, Inc.</VendorName>
+		<Name>Banff Local Tours, Inc.</Name>
 		<AddressLine1>31212 North Street</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Calgary</CityOrTown>
@@ -179,7 +179,7 @@
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>EXHO01</Code>
-		<VendorName>Excelsior Hotel</VendorName>
+		<Name>Excelsior Hotel</Name>
 		<AddressLine1>3214 Park lane</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown/>
@@ -223,7 +223,7 @@
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>FOEX01</Code>
-		<VendorName>Foreign Exchange Corporation</VendorName>
+		<Name>Foreign Exchange Corporation</Name>
 		<AddressLine1><![CDATA[1234 Wilshire Blvd
 Suite 1243]]></AddressLine1>
 		<AddressLine2/>
@@ -268,7 +268,7 @@ Suite 1243]]></AddressLine1>
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>HOHO01</Code>
-		<VendorName>Hong Kong Hotel</VendorName>
+		<Name>Hong Kong Hotel</Name>
 		<AddressLine1>39932 Kowloon Drive</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown/>
@@ -312,7 +312,7 @@ Suite 1243]]></AddressLine1>
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>HOLO01</Code>
-		<VendorName>Hong Kong Land Operator</VendorName>
+		<Name>Hong Kong Land Operator</Name>
 		<AddressLine1>4311 Nathan Road Suite 12312</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown/>
@@ -356,7 +356,7 @@ Suite 1243]]></AddressLine1>
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JAHO01</Code>
-		<VendorName>The Japanese Hotel Chain</VendorName>
+		<Name>The Japanese Hotel Chain</Name>
 		<AddressLine1>12312 Ka-Kunji Road</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Yokohama</CityOrTown>
@@ -404,7 +404,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JALO01</Code>
-		<VendorName>Japanese Land Operator</VendorName>
+		<Name>Japanese Land Operator</Name>
 		<AddressLine1>1234-12 Ginza Ku</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Tokyo</CityOrTown>
@@ -448,7 +448,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>KYHO01</Code>
-		<VendorName>Kyoto Hotel</VendorName>
+		<Name>Kyoto Hotel</Name>
 		<AddressLine1>1231 Kyo-no</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Kyoto</CityOrTown>
@@ -492,7 +492,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>MAHO01</Code>
-		<VendorName>Mandarin Hotel</VendorName>
+		<Name>Mandarin Hotel</Name>
 		<AddressLine1>83483 Main Street</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown/>
@@ -536,7 +536,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>NEWO01</Code>
-		<VendorName>New World Hotel</VendorName>
+		<Name>New World Hotel</Name>
 		<AddressLine1>2-40-7 Ikebukuto</AddressLine1>
 		<AddressLine2>Toshima-ku</AddressLine2>
 		<CityOrTown>Tokyo</CityOrTown>
@@ -580,7 +580,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>UPSV01</Code>
-		<VendorName>United Parcel Service</VendorName>
+		<Name>United Parcel Service</Name>
 		<AddressLine1>8321 South Brand Blvd</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Glendale</CityOrTown>
@@ -624,7 +624,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Hong Kong Car Rental</VendorName>
+		<Name>Hong Kong Car Rental</Name>
 		<AddressLine1>334 Nathan Road</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Kowloon</CityOrTown>
@@ -668,7 +668,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>China Cruise Company</VendorName>
+		<Name>China Cruise Company</Name>
 		<AddressLine1>12 Nanking Circle</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Bejing</CityOrTown>
@@ -712,7 +712,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>United Airlines</VendorName>
+		<Name>United Airlines</Name>
 		<AddressLine1>1234 United Drive</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Chicago</CityOrTown>
@@ -756,7 +756,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Certified Accounts, Inc.</VendorName>
+		<Name>Certified Accounts, Inc.</Name>
 		<AddressLine1>1122 State Street</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Santa Barbara</CityOrTown>
@@ -800,7 +800,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Travel Insurance Pros</VendorName>
+		<Name>Travel Insurance Pros</Name>
 		<AddressLine1>8854 South San Pedro Street</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Los Angeles</CityOrTown>
@@ -844,7 +844,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Sheraton Hotel</VendorName>
+		<Name>Sheraton Hotel</Name>
 		<AddressLine1>310 N. Fifth Ave.</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>New York</CityOrTown>
@@ -888,7 +888,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Marriott Hotel</VendorName>
+		<Name>Marriott Hotel</Name>
 		<AddressLine1>441 Fifth Ave</AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>New York</CityOrTown>
@@ -932,7 +932,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<LastChanged>2011-09-09T15:49:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
-		<VendorName>Xanadu Hotel</VendorName>
+		<Name>Xanadu Hotel</Name>
 		<AddressLine1/>
 		<AddressLine2>211 S. Fifth Street</AddressLine2>
 		<CityOrTown>New York</CityOrTown>
