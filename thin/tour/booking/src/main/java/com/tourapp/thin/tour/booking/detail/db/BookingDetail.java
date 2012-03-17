@@ -143,6 +143,8 @@ public class BookingDetail extends BookingSub
         field = new FieldInfo(this, REMOTE_BOOKING_NO, 127, null, null);
         field = new FieldInfo(this, ACK_DAYS, 4, null, null);
         field.setDataClass(Short.class);
+        field = new FieldInfo(this, DETAIL_END_DATE, 25, null, null);
+        field.setDataClass(Date.class);
         field = new FieldInfo(this, GMT_END_DATE, 25, null, null);
         field.setDataClass(Date.class);
         //field = new FieldInfo(this, MEAL_SUMMARY, 255, null, null);

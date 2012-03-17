@@ -82,7 +82,7 @@ public class BookingAirHeaderField extends ReferenceField
             if (screenField instanceof SSelectBox)
             {
                 ((SSelectBox)screenField).free();
-        /*        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+                new SSelectBox((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, (Converter)converter, ScreenConstants.DONT_DISPLAY_DESC, record)
                 {
                     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
                     {
@@ -113,7 +113,7 @@ public class BookingAirHeaderField extends ReferenceField
                         return true;    // Handled
                     }
                 };
-        */    }
+            }
             if (screenField == null)
                 break;  // Just being careful.
         }

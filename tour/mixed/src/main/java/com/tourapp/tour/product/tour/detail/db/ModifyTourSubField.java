@@ -29,6 +29,7 @@ import org.jbundle.thin.base.screen.message.*;
 import org.jbundle.base.message.record.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.thin.base.screen.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ModifyTourSubField - Tour sub field to modify.
@@ -113,7 +114,7 @@ public class ModifyTourSubField extends ReferenceField
             if (screenField instanceof SSelectBox)
             {
                 ((SSelectBox)screenField).free();
-        /*        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+                new SSelectBox((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, (Converter)converter, ScreenConstants.DONT_DISPLAY_DESC, record)
                 {
                     public boolean doCommand(String strCommand, ScreenField sourceSField, int iComandOptions)
                     {
@@ -129,7 +130,7 @@ public class ModifyTourSubField extends ReferenceField
                         Record recTourHeaderOption = null;
                         Record recTourHeader = null;
                         try {
-                            RecordOwner recordOwner = this.getRecord(.findRecordOwner());
+                            RecordOwner recordOwner = this.getRecord().findRecordOwner();
                             recTourHeaderOption = new TourHeaderOption(recordOwner);
                             recordOwner.removeRecord(recTourHeaderOption);
                             recTourHeaderOption.getField(TourHeaderOption.ID).moveFieldToThis(recTourSub.getField(TourSub.TOUR_HEADER_OPTION_ID));
@@ -152,7 +153,7 @@ public class ModifyTourSubField extends ReferenceField
                                 parentScreen.setProperty(MessageConstants.QUEUE_NAME, strQueueName);
                                 parentScreen.setProperty(RecordMessageConstants.TABLE_NAME, recTourSub.getTableNames(false));
                                 GridScreen screen = new TourHeaderOptionGridScreen(recTourHeader, null, null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-                                BaseMessageManager messageManager = application.getMessageManager();
+                                MessageManager messageManager = application.getMessageManager();
                                 BaseMessageReceiver receiver = (BaseMessageReceiver)messageManager.getMessageQueue(strQueueName, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
                                 BaseScreen screenTarget = (BaseScreen)sourceSField.getParentScreen();
                                 receiver.createDefaultFilter(screenTarget);
@@ -168,7 +169,7 @@ public class ModifyTourSubField extends ReferenceField
                     }
                 };
                 break;
-        */    }
+            }
             if (screenField == null)
                 break;  // Just being careful.
         }

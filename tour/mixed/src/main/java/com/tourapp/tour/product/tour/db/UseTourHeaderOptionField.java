@@ -77,7 +77,7 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
             {
                 ((SSelectBox)screenField).free();
                 Record record = this.getReferenceRecord();
-        /*        new SSelectBox(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_DESC, record)
+                new SSelectBox((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, (Converter)converter, ScreenConstants.DONT_DISPLAY_DESC, record)
                 {
                     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
                     {
@@ -107,7 +107,7 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
                     }
                 };
                 break;
-        */    }
+            }
             if (screenField == null)
                 break;  // Just being careful.
         }
