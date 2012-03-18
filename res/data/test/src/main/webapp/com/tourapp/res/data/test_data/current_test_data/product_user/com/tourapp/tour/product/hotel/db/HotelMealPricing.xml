@@ -2,12 +2,12 @@
 	<HotelMealPricing ID="7">
 		<LastChanged>2011-09-09T15:50:09</LastChanged>
 		<Deleted>N</Deleted>
-		<ProductID>8</ProductID>
+		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
-		<ClassID>31</ClassID>
-		<StartDate>2012-08-01</StartDate>
-		<EndDate>2012-09-30</EndDate>
+		<ClassID>0</ClassID>
+		<StartDate>2012-10-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<Cost>2,100.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -18,12 +18,12 @@
 	<HotelMealPricing ID="8">
 		<LastChanged>2011-09-09T15:50:09</LastChanged>
 		<Deleted>N</Deleted>
-		<ProductID>8</ProductID>
+		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
-		<ClassID>30</ClassID>
-		<StartDate>2012-08-01</StartDate>
-		<EndDate>2012-09-30</EndDate>
+		<ClassID>0</ClassID>
+		<StartDate>2012-10-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<Cost>1,880.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -34,12 +34,12 @@
 	<HotelMealPricing ID="9">
 		<LastChanged>2011-09-09T15:50:09</LastChanged>
 		<Deleted>N</Deleted>
-		<ProductID>8</ProductID>
+		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
-		<ClassID>7</ClassID>
-		<StartDate>2012-08-01</StartDate>
-		<EndDate>2012-09-30</EndDate>
+		<ClassID>0</ClassID>
+		<StartDate>2012-10-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<Cost>1,660.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -50,12 +50,12 @@
 	<HotelMealPricing ID="10">
 		<LastChanged>2011-09-09T15:50:09</LastChanged>
 		<Deleted>N</Deleted>
-		<ProductID>8</ProductID>
+		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
-		<ClassID>6</ClassID>
-		<StartDate>2012-08-01</StartDate>
-		<EndDate>2012-09-30</EndDate>
+		<ClassID>0</ClassID>
+		<StartDate>2012-10-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<Cost>1,150.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>

@@ -637,7 +637,7 @@
 		<RequestTypeID>6</RequestTypeID>
 	</MessageInfo>
 	<MessageInfo ID="70">
-		<LastChanged>2011-09-09T15:49:03</LastChanged>
+		<LastChanged>2011-09-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Change Request</Description>
 		<Code>OTA_HotelResModifyRQ</Code>

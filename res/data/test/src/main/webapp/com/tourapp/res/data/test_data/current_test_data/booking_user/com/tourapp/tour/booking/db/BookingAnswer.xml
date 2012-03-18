@@ -7,7 +7,7 @@
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-21T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Information</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -31,7 +31,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-06T00:00:00</ModuleStartDate>
 		<Description>Basic Information 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -55,7 +55,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-06T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -79,7 +79,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-06T00:00:00</ModuleStartDate>
 		<Description>No Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -103,7 +103,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-06T00:00:00</ModuleStartDate>
 		<Description>Hotel Upgrades</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -127,7 +127,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-06T00:00:00</ModuleStartDate>
 		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -151,7 +151,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-06T00:00:00</ModuleStartDate>
 		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -175,7 +175,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>Basic Information 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -199,7 +199,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -223,7 +223,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>No Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -247,7 +247,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>18</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>Weekend Surcharge</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -271,7 +271,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>Hotel Upgrades</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -295,7 +295,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -319,7 +319,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2011-12-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-05-24T00:00:00</ModuleStartDate>
 		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
