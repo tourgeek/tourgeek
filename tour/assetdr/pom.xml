@@ -15,7 +15,9 @@
   <packaging>pom</packaging>
 
   <modules>
-  	<module>core</module>
+  	<module>db</module>
+  	<module>screen</module>
+  	<module>report</module>
   	<module>process</module>
   </modules>
 

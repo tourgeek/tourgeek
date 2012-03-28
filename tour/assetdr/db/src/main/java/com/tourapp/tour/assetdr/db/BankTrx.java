@@ -21,8 +21,6 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.assetdr.screen.trx.*;
-import com.tourapp.tour.assetdr.report.recon.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.assetdr.db.*;
 

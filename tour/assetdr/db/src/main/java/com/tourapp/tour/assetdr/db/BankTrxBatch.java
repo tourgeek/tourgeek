@@ -1,5 +1,5 @@
 /**
- * @(#)BankTrxBatchDist.
+ * @(#)BankTrxBatch.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.db;
@@ -20,29 +20,28 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.assetdr.screen.batch.*;
-import com.tourapp.tour.genled.db.*;
+import org.jbundle.main.user.db.*;
 import com.tourapp.model.tour.assetdr.db.*;
 
 /**
- *  BankTrxBatchDist - Temporary Distribution file for Bank Transactions..
+ *  BankTrxBatch - Bank Transactions.
  */
-public class BankTrxBatchDist extends VirtualRecord
-     implements BankTrxBatchDistModel
+public class BankTrxBatch extends VirtualRecord
+     implements BankTrxBatchModel
 {
     private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor.
      */
-    public BankTrxBatchDist()
+    public BankTrxBatch()
     {
         super();
     }
     /**
      * Constructor.
      */
-    public BankTrxBatchDist(RecordOwner screen)
+    public BankTrxBatch(RecordOwner screen)
     {
         this();
         this.init(screen);
@@ -59,14 +58,7 @@ public class BankTrxBatchDist extends VirtualRecord
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(BANK_TRX_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
-    }
-    /**
-     * Get the name of a single record.
-     */
-    public String getRecordName()
-    {
-        return "Bank Transaction Distribution";
+        return (m_tableName == null) ? Record.formatTableNames(BANK_TRX_BATCH_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the Database Name.
@@ -83,17 +75,19 @@ public class BankTrxBatchDist extends VirtualRecord
         return DBConstants.LOCAL | DBConstants.USER_DATA;
     }
     /**
-     * Make a default screen.
+     * MakeScreen Method.
      */
     public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
         ScreenParent screen = null;
-        if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = Record.makeNewScreen(BANK_TRX_BATCH_DIST_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-        if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
-            screen = Record.makeNewScreen(BANK_TRX_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.DETAIL_MODE)
+            screen = Record.makeNewScreen(BankTrxBatchDetail.BANK_TRX_BATCH_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        else if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.POST_MODE)
+            screen = Record.makeNewScreen(BANK_TRX_BATCH_POST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
+            screen = Record.makeNewScreen(BANK_TRX_BATCH_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
-            screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
+            screen = Record.makeNewScreen(BANK_TRX_BATCH_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         return screen;
     }
     /**
@@ -118,14 +112,9 @@ public class BankTrxBatchDist extends VirtualRecord
         //  field.setHidden(true);
         //}
         if (iFieldSeq == 3)
-        {
-            field = new ReferenceField(this, BANK_TRX_BATCH_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.setNullable(false);
-        }
+            field = new UserField(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 4)
-            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == 5)
-            field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;
@@ -143,13 +132,20 @@ public class BankTrxBatchDist extends VirtualRecord
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BankTrxBatchDetailID");
-            keyArea.addKeyField(BANK_TRX_BATCH_DETAIL_ID, DBConstants.ASCENDING);
-            keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "UserID");
+            keyArea.addKeyField(USER_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
         return keyArea;
+    }
+    /**
+     * AddMasterListeners Method.
+     */
+    public void addMasterListeners()
+    {
+        super.addMasterListeners();
+        this.addListener(new SubFileIntegrityHandler(BankTrxBatchDetail.class.getName(), true));
     }
 
 }

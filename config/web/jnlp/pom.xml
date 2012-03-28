@@ -51,7 +51,17 @@
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.assetdr</artifactId>
+                  <artifactId>com.tourapp.tour.assetdr.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.assetdr.screen</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.assetdr.report</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>

@@ -1,5 +1,5 @@
 /**
- * @(#)AssetDepreciation.
+ * @(#)AssetDrControl.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.assetdr.db;
@@ -20,29 +20,29 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.assetdr.screen.asset.*;
 import com.tourapp.tour.genled.db.*;
+import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.assetdr.db.*;
 
 /**
- *  AssetDepreciation - Asset Depreciation Detail.
+ *  AssetDrControl - Control File.
  */
-public class AssetDepreciation extends VirtualRecord
-     implements AssetDepreciationModel
+public class AssetDrControl extends ControlRecord
+     implements AssetDrControlModel
 {
     private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor.
      */
-    public AssetDepreciation()
+    public AssetDrControl()
     {
         super();
     }
     /**
      * Constructor.
      */
-    public AssetDepreciation(RecordOwner screen)
+    public AssetDrControl(RecordOwner screen)
     {
         this();
         this.init(screen);
@@ -59,14 +59,14 @@ public class AssetDepreciation extends VirtualRecord
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(ASSET_DEPRECIATION_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(ASSET_DR_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
      */
     public String getRecordName()
     {
-        return "Depreciation history";
+        return "Asset-Debt Control";
     }
     /**
      * Get the Database Name.
@@ -89,9 +89,9 @@ public class AssetDepreciation extends VirtualRecord
     {
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = Record.makeNewScreen(ASSET_DEPRECIATION_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(ASSET_DR_CONTROL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
-            screen = Record.makeNewScreen(ASSET_DEPRECIATION_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(ASSET_DR_CONTROL_SCREEN_2_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;
@@ -118,31 +118,17 @@ public class AssetDepreciation extends VirtualRecord
         //  field.setHidden(true);
         //}
         if (iFieldSeq == 3)
-        {
-            field = new AssetField(this, ASSET_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.setNullable(false);
-        }
+            field = new CurrencysField(this, CURRENCY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 4)
-        {
-            field = new DateField(this, DEPR_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
+            field = new LanguageField(this, LANGUAGE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 5)
-        {
-            field = new DateField(this, DEPR_POST, Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.addListener(new InitOnceFieldHandler(null));
-        }
+            field = new BankAcctField(this, BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 6)
-        {
-            field = new VersionField(this, VERSION_ID, 1, null, "X");
-            field.addListener(new InitOnceFieldHandler(null));
-        }
+            field = new TrxStatusField(this, TRX_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 7)
-            field = new CurrencyField(this, DEPR_AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 8)
-            field = new AccountField(this, DEPR_DR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == 9)
-            field = new AccountField(this, DEPR_CR_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new DateTimeField(this, DATE_RECONCILED, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;
@@ -155,19 +141,20 @@ public class AssetDepreciation extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
-        }
-        if (iKeyArea == 1)
-        {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AssetID");
-            keyArea.addKeyField(ASSET_ID, DBConstants.ASCENDING);
-            keyArea.addKeyField(DEPR_DATE, DBConstants.ASCENDING);
-            keyArea.addKeyField(VERSION_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
         return keyArea;
+    }
+    /**
+     * AddMasterListeners Method.
+     */
+    public void addMasterListeners()
+    {
+        super.addMasterListeners();
+        ((TrxStatusField)this.getField(AssetDrControl.TRX_STATUS_ID)).setDesc(BankTrx.BANK_TRX_FILE);
     }
 
 }
