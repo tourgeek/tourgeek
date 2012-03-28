@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -134,11 +132,11 @@ public class Product extends VirtualRecord
     {
         ScreenParent screen = null;
         if ((iDocMode & Product.MESSAGE_DETAIL_MODE) == Product.MESSAGE_DETAIL_MODE)
-            screen = new MessageDetailGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(MessageDetail.MESSAGE_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.BOOKING_DETAIL_GRID_SCREEN) == Product.BOOKING_DETAIL_GRID_SCREEN)
-            screen = new ProductBookingDetailGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(Booking.PRODUCT_BOOKING_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.PRODUCT_SEARCH_DETAIL_GRID_SCREEN) == Product.PRODUCT_SEARCH_DETAIL_GRID_SCREEN)
-            screen = new ProductSearchDetailGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(PRODUCT_SEARCH_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;

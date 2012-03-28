@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -98,9 +96,9 @@ public class BankTrx extends BaseTrx
     {
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == BankTrx.DISTRIBUTION_SCREEN)
-            screen = new BankTrxDistGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BANK_TRX_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & BankTrx.BANK_RECON_SCREEN) == BankTrx.BANK_RECON_SCREEN)
-            screen = new BankReconScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BANK_RECON_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & BankTrx.PAYMENT_DISTRIBUTION_SCREEN) == BankTrx.PAYMENT_DISTRIBUTION_SCREEN)
         {
             TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getField(BankTrx.PAYEE_TRX_DESC_ID)).getReference();
@@ -110,12 +108,12 @@ public class BankTrx extends BaseTrx
             properties.put(DBParams.HEADER_OBJECT_ID, this.getCounterField().toString());
             if (recTrxDesc != null)
                 if ((recTrxDesc.getEditMode() == DBConstants.EDIT_CURRENT) || (recTrxDesc.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                    screen = recTrxDesc.makeLinkTrxScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, iDocMode, properties);
+                    screen = recTrxDesc.makeLinkTrxScreen(itsLocation, parentScreen, iDocMode, properties);
         }
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new BankTrxScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BANK_TRX_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
-            screen = new BankTrxGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BANK_TRX_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         return screen;
     }
     /**

@@ -15,15 +15,11 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctrec.screen.credit.*;
-import com.tourapp.tour.acctrec.screen.credit.trx.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
@@ -35,6 +31,17 @@ public class CreditCard extends BaseArPay
 {
     private static final long serialVersionUID = 1L;
 
+    public static final String CREDIT_CARD_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.trx.CreditCardDistGridScreen";
+    public static final String CREDIT_CARD_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardGridScreen";
+    public static final String CREDIT_CARD_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardScreen";
+    public static final String CREDIT_CARD_POST_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardPost";
+    public static final String CREDIT_CARD_ENTRY_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardEntryScreen";
+    public static final String CREDIT_CARD_ENTRY_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardEntryGridScreen";
+    public static final String CREDIT_CARD_COLL_POST_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardCollPost";
+    public static final String CREDIT_COLLECT_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCollectScreen";
+    public static final String CREDIT_SUBMIT_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditSubmitGridScreen";
+    public static final String CREDIT_APPROVE_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditApproveGridScreen";
+    public static final String CREDIT_CARD_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardBatchDistGridScreen";
     /**
      * Default constructor.
      */
@@ -92,27 +99,27 @@ public class CreditCard extends BaseArPay
     {
         ScreenParent screen = null;
         if ((iDocMode & BaseArPay.DISTRIBUTION_SCREEN) == BaseArPay.DISTRIBUTION_SCREEN)
-            screen = new CreditCardDistGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.POST_MODE)
-            screen = new CreditCardPost(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_POST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == CreditCard.ENTRY_SCREEN)
-            screen = new CreditCardEntryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_ENTRY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == CreditCard.ENTRY_GRID_SCREEN)
-            screen = new CreditCardEntryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_ENTRY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == CreditCard.COLL_POST)
-            screen = new CreditCardCollPost(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_COLL_POST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == CreditCard.SUBMIT_SCREEN)
-            screen = new CreditSubmitGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_SUBMIT_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == CreditCard.COLL_SCREEN)
-            screen = new CreditCollectScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_COLLECT_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == CreditCard.APPROVE_SCREEN)
-            screen = new CreditApproveGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_APPROVE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.DETAIL_MODE)
-            screen = new CreditCardBatchDistGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new CreditCardScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
-            screen = new CreditCardGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CREDIT_CARD_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         return screen;
     }
     /**

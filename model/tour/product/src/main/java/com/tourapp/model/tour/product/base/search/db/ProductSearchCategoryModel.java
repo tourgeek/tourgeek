@@ -18,7 +18,7 @@ public interface ProductSearchCategoryModel extends Rec
 
     public static final String PRODUCT_SEARCH_TYPE_ID_KEY = "ProductSearchTypeID";
     public static final String PRODUCT_SEARCH_CATEGORY_SCREEN_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchCategoryScreen";
-    public static final String PRODUCT_SEARCH_CATEGORY_GRID_SCREEN_CLAS = "com.tourapp.tour.product.base.search.screen.ProductSearchCategoryGridScreen";
+    public static final String PRODUCT_SEARCH_CATEGORY_GRID_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchCategoryGridScreen";
 
     public static final String PRODUCT_SEARCH_CATEGORY_FILE = "ProductSearchCategory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.search.db.ProductSearchCategory";

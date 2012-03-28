@@ -23,6 +23,8 @@ public interface TransportationInventoryModel extends InventoryModel
     //public static final String AVAILABLE = AVAILABLE;
     //public static final String OVERSELL = OVERSELL;
     //public static final String CLOSED = CLOSED;
+    public static final String TRANSPORTATION_INVENTORY_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationInventoryScreen";
+    public static final String TRANSPORTATION_INVENTORY_GRID_CLASS = "com.tourapp.tour.product.trans.screen.TransportationInventoryGridScreen";
 
     public static final String TRANSPORTATION_INVENTORY_FILE = "Inventory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.inventory.db.TransportationInventory";

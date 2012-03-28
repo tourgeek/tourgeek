@@ -66,6 +66,7 @@ public interface TourHeaderAirHeaderModel extends TourSubModel
     public static final String TOUR_HEADER_OPTION_ID_KEY = "TourHeaderOptionID";
     public static final String TOUR_HEADER_AIR_HEADER_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderAirHeaderScreen";
     public static final String TOUR_HEADER_AIR_HEADER_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderAirHeaderGridScreen";
+    public static final String TOUR_HEADER_AIR_HEADER_SFIELD_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderAirHeaderScreenField";
 
     public static final String TOUR_HEADER_AIR_HEADER_FILE = "TourHeaderAirHeader";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.detail.db.TourHeaderAirHeader";

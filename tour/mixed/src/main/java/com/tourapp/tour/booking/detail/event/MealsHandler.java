@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -72,7 +70,7 @@ public class MealsHandler extends FieldListener
         if (this.getOwner() != null)
         {
             RecordOwner screen = this.getOwner().getRecord().getRecordOwner();
-            if (screen != null) if (screen instanceof GridScreen)
+            if (screen != null) if (screen instanceof GridScreenParent)
             {
                 this.getOwner().setSelected(false);
             }

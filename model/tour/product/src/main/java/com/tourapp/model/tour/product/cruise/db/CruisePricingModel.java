@@ -26,6 +26,7 @@ public interface CruisePricingModel extends ProductPricingModel
     //public static final String PAY_AT = PAY_AT;
     public static final String CRUISE_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruisePricingScreen";
     public static final String CRUISE_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruisePricingGridScreen";
+    public static final String CRUISE_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.cruise.screen.CruiseInventoryRangeAdjust";
 
     public static final String CRUISE_PRICING_FILE = "CruisePricing";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.cruise.db.CruisePricing";

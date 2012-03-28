@@ -41,6 +41,13 @@ public interface McoModel extends BaseArPayModel
     public static final String MCO_NO_KEY = "McoNo";
     public static final String MCO_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoScreen";
     public static final String MCO_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoGridScreen";
+    public static final String MCO_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.trx.McoDistGridScreen";
+    public static final String MCO_POST_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoPost";
+    public static final String MCO_ENTRY_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoEntryScreen";
+    public static final String MCO_ENTRY_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoEntryGridScreen";
+    public static final String MCO_COLL_POST_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoCollPost";
+    public static final String MCO_COLL_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoCollScreen";
+    public static final String MCO_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.mco.McoBatchDistGridScreen";
 
     public static final String MCO_FILE = "Mco";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.Mco";

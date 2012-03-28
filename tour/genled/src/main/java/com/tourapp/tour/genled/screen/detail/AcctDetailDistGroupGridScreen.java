@@ -129,7 +129,7 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
         String strTransaction = AcctDetailDist.DIST_TRANSACTION;
         if (this.getTask() != null)
             strTransaction = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strTransaction);
-        new TrxIDSField(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
+        BaseField.createScreenComponent(TransactionType.TRX_ID_SFIELD_CLASS, this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY, null);
         new SCannedBox(this.getNextLocation(ScreenConstants.FIRST_SCREEN_LOCATION, ScreenConstants.SET_ANCHOR), this, null, ScreenConstants.DEFAULT_DISPLAY, null, null, AcctDetailDist.DIST_TRANSACTION, AcctDetailDist.DIST_TRANSACTION, strTransaction);
         super.addNavButtons();  // Next buttons will be "First!"
     }
@@ -142,7 +142,7 @@ public class AcctDetailDistGroupGridScreen extends DetailGridScreen
         if (this.getTask() != null)
             strTransaction = ((BaseApplication)this.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strTransaction);
         new SCannedBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, null, ScreenConstants.DEFAULT_DISPLAY, null, strTransaction, AcctDetailDist.DIST_TRANSACTION, AcctDetailDist.DIST_TRANSACTION, null);
-        new TrxIDSField(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY);
+        BaseField.createScreenComponent(TransactionType.TRX_ID_SFIELD_CLASS, toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), toolScreen, this.getMainRecord().getField(AcctDetailDist.TRX_ID), ScreenConstants.DEFAULT_DISPLAY, null);
     }
     /**
      * Process the command.

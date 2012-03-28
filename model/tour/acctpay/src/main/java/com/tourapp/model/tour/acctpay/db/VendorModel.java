@@ -58,6 +58,7 @@ public interface VendorModel extends CompanyModel
     public static final String CURRENCYS_ID_KEY = "CurrencysID";
     public static final String VENDOR_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.vendor.VendorScreen";
     public static final String VENDOR_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.vendor.VendorGridScreen";
+    public static final String BROKER_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.broker.BrokerDistGridScreen";
     public static final String MESSAGE_DETAIL_SCREEN = "Message Detail";
     public static final String MESSAGE_LOG_SCREEN = "Message Log";
 

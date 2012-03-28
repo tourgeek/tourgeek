@@ -44,6 +44,10 @@ public interface BankTrxModel extends BaseTrxModel
     public static final String PAYMENT_DISTRIBUTION = "Payment Distribution";
     public static final String BANK_TRX_BATCH_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchScreen";
     public static final String BANK_TRX_BATCH_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchGridScreen";
+    public static final String BANK_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.trx.BankTrxGridScreen";
+    public static final String BANK_TRX_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.trx.BankTrxScreen";
+    public static final String BANK_RECON_SCREEN_CLASS = "com.tourapp.tour.assetdr.report.recon.BankReconScreen";
+    public static final String BANK_TRX_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.trx.BankTrxDistGridScreen";
 
     public static final String BANK_TRX_FILE = "BankTrx";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankTrx";

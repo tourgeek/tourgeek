@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -174,7 +172,7 @@ public class ProductType extends VirtualRecord
     /**
      * SetupProductTypeCheckboxes Method.
      */
-    public void setupProductTypeCheckboxes(BaseScreen screen, Record record, String strFieldSuffix)
+    public void setupProductTypeCheckboxes(ScreenParent screen, Record record, String strFieldSuffix)
     {
         try {
             this.close();
@@ -183,7 +181,7 @@ public class ProductType extends VirtualRecord
                 this.next();
                 BaseField field = record.getField(this.getField(ProductType.DESCRIPTION).toString() + strFieldSuffix);
                 if (field != null)
-                    new SCheckBox(screen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), screen, field, ScreenConstants.DEFAULT_DISPLAY);
+                    BaseField.createScreenComponent(ScreenModel.CHECK_BOX, screen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.ANCHOR_DEFAULT), screen, field, ScreenConstants.DEFAULT_DISPLAY, null);
             }
         } catch (DBException e) {
             e.printStackTrace();

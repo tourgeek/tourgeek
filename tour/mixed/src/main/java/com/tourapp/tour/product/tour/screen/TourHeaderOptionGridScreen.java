@@ -97,7 +97,7 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
             this.addRecord(m_recHeader, false);
         else
         {
-            String strType = this.getProperty(TourHeaderOptionScreen.TOUR_OR_OPTION);
+            String strType = this.getProperty(TourHeaderOption.TOUR_OR_OPTION);
             if (TourHeaderOption.OPTION.equals(strType))
                 m_recHeader = new TourHeaderOption(this);
             else
@@ -120,7 +120,7 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
     public void addSubFileFilter()
     {
         this.getMainRecord().setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
-        StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
+        StringField fldTourOrOption = new StringField(null, TourHeaderOption.TOUR_OR_OPTION, 1, null, null);
         if (this.getHeaderRecord() instanceof TourHeader)
             fldTourOrOption.setString(TourHeaderOption.TOUR);
         else
@@ -223,7 +223,7 @@ public class TourHeaderOptionGridScreen extends BaseFolderGridScreen
         String strValue = TourHeaderOption.OPTION;
         if (this.getHeaderRecord() instanceof TourHeader)
             strValue = TourHeaderOption.TOUR;
-        strCommand = Utility.addURLParam(strCommand, TourHeaderOptionScreen.TOUR_OR_OPTION, strValue);
+        strCommand = Utility.addURLParam(strCommand, TourHeaderOption.TOUR_OR_OPTION, strValue);
         
         return strCommand;
     }

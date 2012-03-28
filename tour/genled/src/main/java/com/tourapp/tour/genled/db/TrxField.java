@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -74,7 +72,7 @@ public class TrxField extends ReferenceField
             ReadSecondaryHandler behavior = new ReadSecondaryHandler(record, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false);
             this.addListener(behavior);
             BaseField conv = record.getField(Trx.TRX_STATUS_ID);
-            conv.setupDefaultView((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
+            conv.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
             conv.setEnabled(false);
         }
         return screenField;

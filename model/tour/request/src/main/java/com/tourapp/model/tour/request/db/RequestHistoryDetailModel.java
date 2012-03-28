@@ -22,6 +22,7 @@ public interface RequestHistoryDetailModel extends Rec
     public static final String REQUEST_HISTORY_ID_KEY = "RequestHistoryID";
 
     public static final String PROFILE_ID_KEY = "ProfileID";
+    public static final String REQUEST_HISTORY_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.request.screen.detail.RequestHistoryDetailGridScreen";
 
     public static final String REQUEST_HISTORY_DETAIL_FILE = "RequestHistoryDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.RequestHistoryDetail";

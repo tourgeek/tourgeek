@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -117,9 +115,9 @@ public class BookingSub extends VirtualRecord
         this.addListener(subFileBeh);
         this.setKeyArea(BookingSub.BOOKING_ID_KEY);
         RecordOwner screen = this.getRecordOwner();
-        if (screen != null) if (screen instanceof GridScreen)
+        if (screen != null) if (screen instanceof GridScreenParent)
         {
-            FieldListener reSelect = new FieldReSelectHandler((GridScreen)screen);
+            FieldListener reSelect = new FieldReSelectHandler((GridScreenParent)screen);
             recBooking.getField(Booking.ID).addListener(reSelect);
         }
         this.addListener(new InitBookingDetailHandler(recBooking, recTour));

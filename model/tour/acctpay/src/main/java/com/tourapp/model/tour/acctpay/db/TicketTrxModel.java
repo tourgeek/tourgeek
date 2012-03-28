@@ -66,6 +66,11 @@ public interface TicketTrxModel extends ApTrxModel
     //public static final String OVERRIDE_PAID_DATE = OVERRIDE_PAID_DATE;
     //public static final String OVERRIDE_PAID = OVERRIDE_PAID;
     //public static final String VOID_DATE = VOID_DATE;
+    public static final String ARC_REPORT_POST_CLASS = "com.tourapp.tour.acctpay.air.arc.ArcReportPost";
+    public static final String TICKET_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.ticket.TicketTrxGridScreen";
+    public static final String OVERRIDE_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.oride.OverrideScreen";
+    public static final String OVERRIDE_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.oride.OverrideGridScreen";
+    public static final String TICKET_TRX_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.ticket.TicketTrxScreen";
     public static final String ARC_SUBMITTED = "ArcSubmitted";
     public static final String CANCEL_TICKET = "CancelTicket";
     public static final String NO_TICKET = "NoTicket";

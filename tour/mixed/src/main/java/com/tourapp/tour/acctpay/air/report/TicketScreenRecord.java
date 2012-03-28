@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -26,6 +24,7 @@ import org.jbundle.base.screen.model.report.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.main.db.*;
+import org.jbundle.base.screen.model.util.*;
 import com.tourapp.tour.product.air.db.*;
 
 /**

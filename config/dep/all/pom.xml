@@ -65,7 +65,12 @@
     </dependency>
     <dependency>
       <groupId>org.jbundle.app.contact</groupId>
-      <artifactId>org.jbundle.app.contact</artifactId>
+      <artifactId>org.jbundle.app.contact.db</artifactId>
+      <version>${jbundleAppContactVersionRange}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.contact</groupId>
+      <artifactId>org.jbundle.app.contact.screen</artifactId>
       <version>${jbundleAppContactVersionRange}</version>
     </dependency>
     <dependency>

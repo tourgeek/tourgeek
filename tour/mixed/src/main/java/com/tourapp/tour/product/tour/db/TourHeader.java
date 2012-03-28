@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -116,19 +114,19 @@ public class TourHeader extends Product
     {
         ScreenParent screen = null;
         if ((iDocMode & Product.PRICING_GRID_SCREEN) == Product.PRICING_GRID_SCREEN)
-            screen = new TourHeaderOptionGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderOption.TOUR_HEADER_OPTION_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeader.TOUR_DETAIL_SCREEN) == TourHeader.TOUR_DETAIL_SCREEN)
-            screen = new TourHeaderTourGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderTour.TOUR_HEADER_TOUR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_GRID_SCREEN) == Product.INVENTORY_GRID_SCREEN)
-            screen = new TourHeaderInventoryGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_SCREEN) == Product.INVENTORY_SCREEN)
-            screen = new TourHeaderInventoryScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.RANGE_ADJUST_SCREEN) == Product.RANGE_ADJUST_SCREEN)
-            screen = new TourHeaderInventoryRangeAdjust(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new TourHeaderScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TOUR_HEADER_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
-            screen = new TourProductGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TOUR_PRODUCT_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;
@@ -768,7 +766,7 @@ public class TourHeader extends Product
     /**
      * Create a popup control using this record.
      */
-    public SPopupBox createTourHeaderPopup(ScreenLocation itsLocation, BasePanel parentScreen, Converter converter, int iDisplayFieldDesc, BaseField fldDepartureDate, BaseField fldStartDate, BaseField
+    public ScreenComponent createTourHeaderPopup(ScreenLoc itsLocation, ComponentParent parentScreen, Converter converter, int iDisplayFieldDesc, BaseField fldDepartureDate, BaseField fldStartDate, BaseField
      fldEndDate, BaseField fldTourType)
     {
         Date dateTarget = new Date();
@@ -788,7 +786,7 @@ public class TourHeader extends Product
         FileListener fileBehavior = new ExtractRangeFilter(TourHeader.START_DATE, fldStartDate, TourHeader.END_DATE, fldEndDate, ExtractRangeFilter.PAD_DEFAULT);
         this.addListener(fileBehavior);
         this.setKeyArea(TourHeader.DESC_SORT_KEY);
-        SPopupBox screenField = new SPopupBox(itsLocation, parentScreen, converter, iDisplayFieldDesc);
+        ScreenComponent screenField = BaseField.createScreenComponent(ScreenModel.POPUP_BOX, itsLocation, parentScreen, converter, iDisplayFieldDesc, null);
         this.removeListener(fileBehavior, true);
         return screenField;
     }
@@ -808,7 +806,7 @@ public class TourHeader extends Product
                 if (m_recDependent != null)
                 {
                     m_recDependent.setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
-                    StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
+                    StringField fldTourOrOption = new StringField(null, TourHeaderOption.TOUR_OR_OPTION, 1, null, null);
                     m_recDependent.addListener(new FreeOnFreeHandler(fldTourOrOption));
                     fldTourOrOption.setString(TourHeaderOption.TOUR);
                     if (m_recDependent.getListener(SubFileFilter.class.getName()) == null)

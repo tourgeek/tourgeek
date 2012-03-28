@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -103,26 +101,26 @@ public class ArTrx extends LinkTrx
     {
         ScreenParent screen = null;
         if ((iDocMode & ArTrx.LINK_DISTRIBUTION_SCREEN) == ArTrx.LINK_DISTRIBUTION_SCREEN)
-            screen = new ArTrxLinkTrxGridScreen(null, this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(AR_TRX_LINK_TRX_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode == ScreenConstants.DETAIL_MODE)
             || (iDocMode == ArTrx.DISTRIBUTION_SCREEN))
-                screen = new ArTrxDistGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                screen = Record.makeNewScreen(AR_TRX_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == ArTrx.CR_DR_SCREEN)
-            screen = new CrDrScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(CR_DR_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == ArTrx.REFUND_SCREEN)
-            screen = new RefundScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(REFUND_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == ArTrx.REFUND_PEND_SCREEN)
-            screen = new RefundPendScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(REFUND_PEND_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == ArTrx.REFUND_CHECK_POST)
-            screen = new RefundCheckPost(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(REFUND_CHECK_POST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == ArTrx.REFUND_CHECK_XML_PRINT)
-            screen = new RefundCheckXMLPrint(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(REFUND_CHECK_XML_PRINT_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if (iDocMode == ArTrx.REFUND_CHECK_CANNED_PRINT)
-            screen = new RefundCheckPrint(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(REFUND_CHECK_PRINT_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new BookingArTrxScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BOOKING_AR_TRX_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
-            screen = new BookingArTrxGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BOOKING_AR_TRX_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         return screen;
     }
     /**
@@ -218,8 +216,8 @@ public class ArTrx extends LinkTrx
     {
         this.addListener(new SubFileFilter(recBooking, true));
         this.addListener(new InitArTrxHandler(recBooking));
-        if (this.getRecordOwner() instanceof GridScreen)
-            recBooking.getField(Booking.ID).addListener(new FieldReSelectHandler((GridScreen)this.getRecordOwner()));
+        if (this.getRecordOwner() instanceof GridScreenParent)
+            recBooking.getField(Booking.ID).addListener(new FieldReSelectHandler((GridScreenParent)this.getRecordOwner()));
         if (recBooking != null)
         {   // Sub counts must be first.
             this.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, true, true));

@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -73,7 +71,7 @@ public class DaysOfWeekField extends ShortField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        ScreenField screenField = null;
+        ScreenComponent screenField = null;
         // Now get the first box on the calendar
         Converter.initGlobals();
         Calendar calendar = Converter.gCalendar;
@@ -109,7 +107,7 @@ public class DaysOfWeekField extends ShortField
             int sBitPosition = this.getBitDayOfWeek(calendar);
             dayConverter = new BitConverter(dayConverter, sBitPosition, false, true);
             itsLocation = targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST_CHECKBOX, ScreenConstants.DONT_SET_ANCHOR);
-            screenField = (ScreenField)dayConverter.setupDefaultView(itsLocation, targetScreen, iDisplayFieldDesc);
+            screenField = dayConverter.setupDefaultView(itsLocation, targetScreen, iDisplayFieldDesc);
         
             calendar.add(Calendar.DATE, 1);
         }

@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -84,14 +82,14 @@ public class ProductSearchType extends VirtualRecord
     {
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.DETAIL_MODE) == ScreenConstants.DETAIL_MODE)
-            screen = new ProductSearchCategoryGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(ProductSearchCategory.PRODUCT_SEARCH_CATEGORY_GRID_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) != 0)
-            screen = new ProductSearchTypeGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(PRODUCT_SEARCH_TYPE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) != 0)
-            screen = new ProductSearchTypeScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(PRODUCT_SEARCH_TYPE_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
-                return screen;
+        return screen;
     }
     /**
      * Add this field in the Record's field sequence.
@@ -159,11 +157,11 @@ public class ProductSearchType extends VirtualRecord
     /**
      * SetupProductTypeCheckboxes Method.
      */
-    public void setupProductTypeCheckboxes(BaseScreen screen)
+    public void setupProductTypeCheckboxes(ScreenParent screen)
     {
         ProductType recProductType = (ProductType)screen.getRecord(ProductType.PRODUCT_TYPE_FILE);
         if (recProductType == null)
-            recProductType = new ProductType(screen);
+            recProductType = new ProductType((RecordOwner)screen);
         recProductType.setupProductTypeCheckboxes(screen, this, DBConstants.BLANK);
     }
 

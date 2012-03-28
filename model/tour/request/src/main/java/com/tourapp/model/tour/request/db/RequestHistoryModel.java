@@ -34,8 +34,8 @@ public interface RequestHistoryModel extends RequestModel
     public static final String PROFILE_ID_KEY = "ProfileID";
 
     public static final String HIST_REPRINT_KEY = "HistReprint";
-    public static final String SCREEN_CLASS = "org.jbundle.base.screen.model.Screen";
-    public static final String GRID_SCREEN_CLASS = "org.jbundle.base.screen.model.GridScreen";
+    public static final String REQUEST_HISTORY_SCREEN_CLASS = "com.tourapp.tour.request.screen.detail.RequestHistoryScreen";
+    public static final String REQUEST_HISTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.request.screen.detail.RequestHistoryGridScreen";
 
     public static final String REQUEST_HISTORY_FILE = "RequestHistory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.RequestHistory";

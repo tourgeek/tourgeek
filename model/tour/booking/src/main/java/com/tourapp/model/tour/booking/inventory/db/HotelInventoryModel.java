@@ -23,6 +23,9 @@ public interface HotelInventoryModel extends InventoryModel
     //public static final String AVAILABLE = AVAILABLE;
     //public static final String OVERSELL = OVERSELL;
     //public static final String CLOSED = CLOSED;
+    public static final String HOTEL_INVENTORY_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelInventoryScreen";
+    public static final String HOTEL_INVENTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelInventoryGridScreen";
+    public static final String HOTEL_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.hotel.screen.HotelInventoryRangeAdjust";
 
     public static final String HOTEL_INVENTORY_FILE = "Inventory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.inventory.db.HotelInventory";

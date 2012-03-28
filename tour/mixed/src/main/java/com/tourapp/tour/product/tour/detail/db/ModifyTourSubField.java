@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -111,67 +109,22 @@ public class ModifyTourSubField extends ReferenceField
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
-            if (screenField instanceof SSelectBox)
-            {
-                ((SSelectBox)screenField).free();
-                new SSelectBox((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, (Converter)converter, ScreenConstants.DONT_DISPLAY_DESC, record)
-                {
-                    public boolean doCommand(String strCommand, ScreenField sourceSField, int iComandOptions)
-                    {
-                        Task task = null;
-                        if (m_record.getRecordOwner() != null)
-                            task = m_record.getRecordOwner().getTask();
-                        if (task == null)
-                            task = BaseApplet.getSharedInstance();
-                        Application application = (Application)task.getApplication();
-        
-                        BaseField fldTourSubID = (BaseField)this.getConverter().getField();
-                        Record recTourSub = fldTourSubID.getRecord();
-                        Record recTourHeaderOption = null;
-                        Record recTourHeader = null;
-                        try {
-                            RecordOwner recordOwner = this.getRecord().findRecordOwner();
-                            recTourHeaderOption = new TourHeaderOption(recordOwner);
-                            recordOwner.removeRecord(recTourHeaderOption);
-                            recTourHeaderOption.getField(TourHeaderOption.ID).moveFieldToThis(recTourSub.getField(TourSub.TOUR_HEADER_OPTION_ID));
-                            while (recTourHeaderOption.seek(null) == true)
-                            {
-                                if (TourHeaderOption.TOUR.equals(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION).toString()))
-                                {   // Finally made it to the tour.
-                                    recTourHeader = new TourHeader(recordOwner);
-                                    recordOwner.removeRecord(recTourHeader); // This is belong to the new option screen
-                                    recTourHeader.getField(TourHeader.ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID));
-                                    boolean bSuccess = recTourHeader.seek(DBConstants.EQUALS);
-                                    break;
-                                }
-                                recTourHeaderOption.getField(TourHeaderOption.ID).moveFieldToThis(recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID));
-                            }
-                            if (recTourHeader != null)
-                            {
-                                BasePanel parentScreen = Screen.makeWindow(application);
-                                String strQueueName = ModifyTourSubField.SELECT_QUEUE;   // This is my private queue
-                                parentScreen.setProperty(MessageConstants.QUEUE_NAME, strQueueName);
-                                parentScreen.setProperty(RecordMessageConstants.TABLE_NAME, recTourSub.getTableNames(false));
-                                GridScreen screen = new TourHeaderOptionGridScreen(recTourHeader, null, null, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-                                MessageManager messageManager = application.getMessageManager();
-                                BaseMessageReceiver receiver = (BaseMessageReceiver)messageManager.getMessageQueue(strQueueName, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
-                                BaseScreen screenTarget = (BaseScreen)sourceSField.getParentScreen();
-                                receiver.createDefaultFilter(screenTarget);
-                            }
-                        } catch (DBException ex) {
-                            ex.printStackTrace();
-                        } finally {
-                            if (recTourHeaderOption != null)
-                                recTourHeaderOption.free();
-                            recTourHeaderOption = null;
-                        }
-                        return true;    // Handled
-                    }
-                };
-                break;
-            }
             if (screenField == null)
                 break;  // Just being careful.
+            Class<?> cannedBox = null;
+            try {
+                cannedBox = Class.forName(ScreenModel.CANNED_BOX);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            if (screenField.getClass().isAssignableFrom(cannedBox))
+            {
+                screenField.free();
+                properties = new HashMap<String,Object>();
+                properties.put(ScreenModel.RECORD, record);
+                screenField = createScreenComponent(TourSub.MODIFY_TOUR_SUB_SCREEN_FIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                break;
+            }
         }
         return sField;
     }

@@ -23,6 +23,9 @@ public interface ItemInventoryModel extends InventoryModel
     //public static final String AVAILABLE = AVAILABLE;
     //public static final String OVERSELL = OVERSELL;
     //public static final String CLOSED = CLOSED;
+    public static final String ITEM_INVENTORY_SCREEN_CLASS = "com.tourapp.tour.product.item.screen.ItemInventoryScreen";
+    public static final String ITEM_INVENTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.product.item.screen.ItemInventoryGridScreen";
+    public static final String ITEM_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.item.screen.ItemInventoryRangeAdjust";
 
     public static final String ITEM_INVENTORY_FILE = "Inventory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.inventory.db.ItemInventory";

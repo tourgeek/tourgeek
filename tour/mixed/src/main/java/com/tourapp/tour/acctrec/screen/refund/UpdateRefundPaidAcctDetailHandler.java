@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -29,6 +27,7 @@ import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.acctrec.screen.cash.*;
 import com.tourapp.tour.assetdr.db.*;
+import org.jbundle.base.screen.model.util.*;
 
 /**
  *  UpdateRefundPaidAcctDetailHandler - After printing the Refund checks, post the ArTrx to BankTrx and G/L.

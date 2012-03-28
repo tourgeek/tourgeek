@@ -74,7 +74,14 @@ public interface ApTrxModel extends TrxModel
     public static final String TOUR_ID_KEY = "TourID";
     public final static String PRODUCT_DETAIL = "Product detail";
     public static final String AP_TRX_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.trx.ApTrxScreen";
-    public static final String _CLASS = "com.tourapp.tour.";
+    public static final String BROKER_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.broker.BrokerDistGridScreen";
+    public static final String BROKER_DIST_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.broker.BrokerDistScreen";
+    public static final String TOUR_AP_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctpay.TourApTrxGridScreen";
+    public static final String VENDOR_AP_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.trx.VendorApTrxGridScreen";
+    public static final String PAYMENT_HISTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryGridScreen";
+    public static final String PAYMENT_HISTORY_LINK_TRX_GRID_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen";
+    public static final String AP_TRX_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.trx.ApTrxDistGridScreen";
+    public static final String VOUCHER_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctpay.VoucherDetailGridScreen";
     public static final String DEP_ESTIMATE = "DepEstimate";
     public static final String INVOICE = "Invoice";
     public static final String DEBIT_MEMO = "DebitMemo";

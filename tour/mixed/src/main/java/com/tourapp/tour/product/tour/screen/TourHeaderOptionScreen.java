@@ -35,7 +35,6 @@ import com.tourapp.tour.booking.db.*;
  */
 public class TourHeaderOptionScreen extends BaseFolderScreen
 {
-    public static final String TOUR_OR_OPTION = "TourOrOption";
     /**
      * Default constructor.
      */
@@ -92,7 +91,7 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
             m_recHeader = new TourHeader(this);
         else
         {
-            String strType = this.getProperty(TourHeaderOptionScreen.TOUR_OR_OPTION);
+            String strType = this.getProperty(TourHeaderOption.TOUR_OR_OPTION);
             if (strType == null)
                 strType = strOption;
             if (TourHeaderOption.OPTION.equals(strType))
@@ -126,7 +125,7 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
     {
         super.addListeners();
         this.getMainRecord().setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
-        StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
+        StringField fldTourOrOption = new StringField(null, TourHeaderOption.TOUR_OR_OPTION, 1, null, null);
         if (this.getHeaderRecord() instanceof TourHeader)
             fldTourOrOption.setString(TourHeaderOption.TOUR);
         else
@@ -200,7 +199,7 @@ public class TourHeaderOptionScreen extends BaseFolderScreen
         String strValue = TourHeaderOption.OPTION;
         if (this.getHeaderRecord() instanceof TourHeader)
             strValue = TourHeaderOption.TOUR;
-        strCommand = Utility.addURLParam(strCommand, TourHeaderOptionScreen.TOUR_OR_OPTION, strValue);
+        strCommand = Utility.addURLParam(strCommand, TourHeaderOption.TOUR_OR_OPTION, strValue);
         
         return strCommand;
     }

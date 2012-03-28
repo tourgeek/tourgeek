@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -73,43 +71,23 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
-            if (screenField instanceof SSelectBox)
-            {
-                ((SSelectBox)screenField).free();
-                Record record = this.getReferenceRecord();
-                new SSelectBox((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, (Converter)converter, ScreenConstants.DONT_DISPLAY_DESC, record)
-                {
-                    public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
-                    {
-                        Task task = null;
-                        if (m_record.getRecordOwner() != null)
-                            task = m_record.getRecordOwner().getTask();
-                        if (task == null)
-                            task = BaseApplet.getSharedInstance();
-                        Application application = (Application)task.getApplication();
-        
-                        BasePanel parentScreen = Screen.makeWindow(application);
-        
-                        BaseField fldTourHeaderOptionID = (BaseField)this.getConverter().getField();
-                        Record recTourHeaderOption = fldTourHeaderOptionID.getRecord();
-                        ReferenceField fldTourOrOptionID = (ReferenceField)recTourHeaderOption.getField(TourHeaderOption.TOUR_OR_OPTION_ID);
-                        Record recTourOrOption = fldTourOrOptionID.getReferenceRecord();
-                        try {
-                            recTourOrOption = (Record)recTourOrOption.clone();
-                            recTourOrOption.readSameRecord(fldTourOrOptionID.getReferenceRecord(), false, true);
-                        } catch (CloneNotSupportedException ex) {
-                            ex.printStackTrace();
-                        }
-                        GridScreen screen = new TourHeaderOptionGridScreen(recTourOrOption, null, null, parentScreen, null, ScreenConstants.SELECT_MODE | ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
-                        //x if (m_record.getScreen() == null)
-                            screen.setSelectQuery(m_record, false); // Since this record isn't linked to the screen, manually link it.
-                        return true;    // Handled
-                    }
-                };
-                break;
-            }
             if (screenField == null)
                 break;  // Just being careful.
+            Class<?> cannedBox = null;
+            try {
+                cannedBox = Class.forName(ScreenModel.CANNED_BOX);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            if (screenField.getClass().isAssignableFrom(cannedBox))
+            {
+                screenField.free();
+                Record record = this.getReferenceRecord();
+                properties = new HashMap<String,Object>();
+                properties.put(ScreenModel.RECORD, record);
+                screenField = createScreenComponent(TourHeaderOption.USE_TOUR_HEADER_OPTION_SFIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                break;
+            }
         }
         return sField;
     }

@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -83,7 +81,7 @@ public class MealDays extends ShortField
             Converter dayConverter = new FieldDescConverter((Converter)converter, "+" + Short.toString(sBitPosition));
             dayConverter = new BitConverter(dayConverter, sBitPosition, false, true);
             ScreenLoc location = targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST_CHECKBOX, ScreenConstants.DONT_SET_ANCHOR);
-            screenField = (ScreenField)dayConverter.setupDefaultView(location, targetScreen, ScreenConstants.DISPLAY_FIELD_DESC);
+            screenField = dayConverter.setupDefaultView(location, targetScreen, ScreenConstants.DISPLAY_FIELD_DESC);
         }
         return screenField;
     }

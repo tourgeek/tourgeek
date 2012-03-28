@@ -39,6 +39,7 @@ public interface BankTrxBatchDetailModel extends BankTrxModel
     public static final String BANK_TRX_BATCH_ID_KEY = "BankTrxBatchID";
     public static final String BANK_TRX_BATCH_DETAIL_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchDetailScreen";
     public static final String BANK_TRX_BATCH_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchDetailGridScreen";
+    public static final String BANK_TRX_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchDistGridScreen";
 
     public static final String BANK_TRX_BATCH_DETAIL_FILE = "BankTrxBatchDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankTrxBatchDetail";

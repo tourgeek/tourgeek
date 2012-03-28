@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -25,6 +23,7 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.booking.entry.base.*;
+import org.jbundle.base.screen.model.util.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 

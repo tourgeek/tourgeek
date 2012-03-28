@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -73,7 +71,7 @@ public class ProductField extends ReferenceField
             Converter fldProductDesc = record.getField(Product.DESCRIPTION);
             fldProductDesc = new FieldLengthConverter(fldProductDesc, 30);
             String iKeyArea = Product.CODE_KEY;
-            if (targetScreen instanceof GridScreen)
+            if (targetScreen instanceof GridScreenParent)
                 iKeyArea = null;
             return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, iKeyArea, fldProductDesc, true, true);
         }

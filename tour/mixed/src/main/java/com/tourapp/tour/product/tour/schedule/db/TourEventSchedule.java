@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -355,8 +353,8 @@ public class TourEventSchedule extends PropertiesRecord
     {
         RecordOwner recordOwner = this.getRecordOwner();
         String strURL = DBConstants.DEFAULT_XHTML_SERVLET;
-        if (recordOwner instanceof BasePanel)
-            strURL = ((BasePanel)recordOwner).getServletPath(DBParams.XHTMLSERVLET);
+        if (recordOwner instanceof ScreenModel)
+            strURL = Utility.getServletPath(recordOwner.getTask(), DBParams.XHTMLSERVLET);
         strURL = Utility.addURLParam(strURL, DBParams.SCREEN, ItineraryReportScreen.class.getName());
         strURL = Utility.addURLParam(strURL, "forms", "display");
         if ((strTemplate == null) || (strTemplate.length() == 0))

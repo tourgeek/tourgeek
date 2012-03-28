@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -78,7 +76,7 @@ public class ProfileField extends CustSaleCustNo
         Converter altConverter = new AltFieldConverter(recProfile.getField(Profile.NAME), paConverter);
         altConverter = new FieldLengthConverter(altConverter, 25);
         altConverter = new FieldDescConverter((Converter)altConverter, (Converter)converter);
-        ScreenField sField = (ScreenField)altConverter.setupDefaultView(itsLocation, targetScreen, altConverter, iDisplayFieldDesc, properties);
+        ScreenComponent sField = altConverter.setupDefaultView(itsLocation, targetScreen, altConverter, iDisplayFieldDesc, properties);
         sField.setEnabled(false);
         return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recProfile, -1, -2, true, true);
     }

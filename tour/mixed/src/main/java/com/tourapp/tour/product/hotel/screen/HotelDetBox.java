@@ -2,7 +2,7 @@
  * @(#)HotelDetBox.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.product.hotel.db;
+package com.tourapp.tour.product.hotel.screen;
 
 import java.awt.*;
 import java.util.*;
@@ -15,16 +15,16 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.hotel.screen.*;
 import java.util.*;
+import com.tourapp.tour.product.hotel.db.*;
 
 /**
  *  HotelDetBox - .

@@ -15,14 +15,11 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.screen.*;
 import com.tourapp.tour.product.tour.detail.screen.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
@@ -104,29 +101,29 @@ public class TourHeaderOption extends VirtualRecord
     {
         ScreenParent screen = null;
         if ((iDocMode & TourHeaderOption.PRICING_GRID_SCREEN) == TourHeaderOption.PRICING_GRID_SCREEN)
-            screen = new TourHeaderLineGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderLine.TOUR_HEADER_LINE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.HOTEL_GRID_SCREEN) == TourHeaderOption.HOTEL_GRID_SCREEN)
-            screen = new TourHeaderHotelGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderHotel.TOUR_HEADER_HOTEL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.LAND_GRID_SCREEN) == TourHeaderOption.LAND_GRID_SCREEN)
-            screen = new TourHeaderLandGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderLand.TOUR_HEADER_LAND_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.TRANSPORTATION_GRID_SCREEN) == TourHeaderOption.TRANSPORTATION_GRID_SCREEN)
-            screen = new TourHeaderTransportationGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderTransportation.TOUR_HEADER_TRANSPORTATION_GRID_SCREEN_C, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.CAR_GRID_SCREEN) == TourHeaderOption.CAR_GRID_SCREEN)
-            screen = new TourHeaderCarGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderCar.TOUR_HEADER_CAR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.CRUISE_GRID_SCREEN) == TourHeaderOption.CRUISE_GRID_SCREEN)
-            screen = new TourHeaderCruiseGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderCruise.TOUR_HEADER_CRUISE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.TOUR_GRID_SCREEN) == TourHeaderOption.TOUR_GRID_SCREEN)
-            screen = new TourHeaderTourHeaderGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderTour.TOUR_HEADER_TOUR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.AIR_GRID_SCREEN) == TourHeaderOption.AIR_GRID_SCREEN)
-            screen = new TourHeaderAirGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderAir.TOUR_HEADER_AIR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.AIR_HEADER_GRID_SCREEN) == TourHeaderOption.AIR_HEADER_GRID_SCREEN)
-            screen = new TourHeaderAirHeaderGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderAirHeader.TOUR_HEADER_AIR_HEADER_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.ITEM_GRID_SCREEN) == TourHeaderOption.ITEM_GRID_SCREEN)
-            screen = new TourHeaderItemGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TourHeaderItem.TOUR_HEADER_ITEM_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = new TourHeaderOptionScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TOUR_HEADER_OPTION_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) != 0)
-            screen = new TourHeaderOptionGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(TOUR_HEADER_OPTION_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;
@@ -310,7 +307,7 @@ public class TourHeaderOption extends VirtualRecord
                 if (m_recDependent != null)
                 {
                     m_recDependent.setKeyArea(TourHeaderOption.TOUR_OR_OPTION_KEY);
-                    StringField fldTourOrOption = new StringField(null, TourHeaderOptionScreen.TOUR_OR_OPTION, 1, null, null);
+                    StringField fldTourOrOption = new StringField(null, TourHeaderOption.TOUR_OR_OPTION, 1, null, null);
                     m_recDependent.addListener(new FreeOnFreeHandler(fldTourOrOption));
                     fldTourOrOption.setString(TourHeaderOption.OPTION);
                     if (m_recDependent.getListener(SubFileFilter.class.getName()) == null)

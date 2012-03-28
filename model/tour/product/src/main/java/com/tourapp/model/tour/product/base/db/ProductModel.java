@@ -62,6 +62,7 @@ public interface ProductModel extends Rec
     public static final String CONFIRMATION_NO_PARAM = "confirmationNo";
     public static final String CONFIRMED_BY_PARAM = "confirmedBy";
     public static final String COST_NOT_FOUND_MSG = "Cost not found";
+    public static final String PRODUCT_SEARCH_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchDetailGridScreen";
     public static final String INVENTORY_DETAIL = "Inventory";
     public static final String PRICING_DETAIL = "Price";
     public static final String BOOKING_DETAIL = "BookingDetail";

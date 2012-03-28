@@ -89,6 +89,7 @@ public interface BookingModel extends CustSaleModel
 
     public static final String DESCRIPTION_KEY = "Description";
     public static final String BUTTON_LOCATION = "tour/buttons/";
+    public static final String PRODUCT_BOOKING_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.ProductBookingDetailGridScreen";
     public static final String BOOKING_MENU_SCREEN_CLASS = "com.tourapp.tour.booking.entry.base.BookingMenuScreen";
     public static final String BOOKING_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.lookup.BookingGridScreen";
 

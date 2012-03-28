@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -30,7 +28,6 @@ import com.tourapp.tour.product.cruise.screen.*;
 import com.tourapp.tour.product.air.screen.*;
 import com.tourapp.tour.product.item.screen.*;
 import com.tourapp.tour.product.tour.other.screen.*;
-import com.tourapp.tour.product.base.screen.*;
 
 /**
  *  InventoryField - .

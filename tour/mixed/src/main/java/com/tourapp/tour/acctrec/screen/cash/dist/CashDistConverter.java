@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -26,6 +24,7 @@ import com.tourapp.tour.assetdr.screen.batch.dist.*;
 import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.base.screen.model.*;
 
 /**
  *  CashDistConverter - Distribution display.

@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -69,10 +67,10 @@ public class TrxIDField extends ReferenceField
         {
             for (int iPosition = 0; ; iPosition++)
             {
-                ScreenField sField = (ScreenField)this.getComponent(iPosition);
+                ScreenComponent sField = this.getComponent(iPosition);
                 if (sField == null)
                     break;
-                if (sField instanceof SEditText)
+                if (sField.getClass().getName().contains(ScreenModel.EDIT_TEXT))
                     continue;   // Don't enable this control
                 sField.setEnabled(bEnable);
             }
@@ -90,7 +88,7 @@ public class TrxIDField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         ScreenComponent sField = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
-        TrxIDSField trxField = new TrxIDSField((ScreenLocation)targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), (BasePanel)targetScreen, this, ScreenConstants.DONT_DISPLAY_FIELD_DESC);
+        createScreenComponent(TransactionType.TRX_ID_SFIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, this, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         return sField;
     }
 

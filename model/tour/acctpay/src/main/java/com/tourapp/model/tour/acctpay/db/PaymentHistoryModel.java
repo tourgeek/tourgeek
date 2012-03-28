@@ -30,6 +30,8 @@ public interface PaymentHistoryModel extends LinkTrxModel
     public static final String PREPAYMENT_DIST = "PrepaymentDist";
     public static final String PAYMENT_HISTORY_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryScreen";
     public static final String PAYMENT_HISTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryGridScreen";
+    public static final String PAYMENT_HISTORY_LINK_TRX_GRID_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen";
+    public static final String PAYMENT_HISTORY_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryDistGridScreen";
 
     public static final String PAYMENT_HISTORY_FILE = "PaymentHistory";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.acctpay.db.PaymentHistory";

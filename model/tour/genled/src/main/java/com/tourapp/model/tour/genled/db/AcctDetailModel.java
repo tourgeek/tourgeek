@@ -27,6 +27,9 @@ public interface AcctDetailModel extends BaseTrxModel
     public static final String TRX_DATE_KEY = "TrxDate";
 
     public static final String SOURCE_KEY = "Source";
+    public static final String ACCT_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailGridScreen";
+    public static final String ACCT_DETAIL_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailScreen";
+    public static final String ACCT_DETAIL_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistGridScreen";
     public static final String MANUALENTRY = "ManualEntry";
     public static final String RECURRINGTRX = "RecurringTrx";
     public static final String ACCRUAL = "Accrual";

@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -30,7 +28,6 @@ import com.tourapp.tour.product.cruise.screen.*;
 import com.tourapp.tour.product.air.screen.*;
 import com.tourapp.tour.product.item.screen.*;
 import com.tourapp.tour.product.tour.other.screen.*;
-import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
 
@@ -99,44 +96,44 @@ public class Inventory extends VirtualRecord
             if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             {
                 if (ProductType.HOTEL_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new HotelInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(HotelInventory.HOTEL_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.LAND_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new LandInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(LandInventory.LAND_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.TRANSPORTATION_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new TransportationInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(TransportationInventory.TRANSPORTATION_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.CAR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new CarInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(CarInventory.CAR_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.CRUISE_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new CruiseInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(CruiseInventory.CRUISE_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.AIR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new AirInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(AirInventory.AIR_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.TOUR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new TourHeaderInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.ITEM_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new ItemInventoryScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(ItemInventory.ITEM_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
             }
             else if ((iDocMode & ScreenConstants.DETAIL_MODE) == ScreenConstants.DETAIL_MODE)
             {
-                screen = new InventoryDetailGridScreen(this, null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                screen = Record.makeNewScreen(InventoryDetail.INVENTORY_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
             }
             else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
             {
                 if (ProductType.HOTEL_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new HotelInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(HotelInventory.HOTEL_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.LAND_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new LandInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(LandInventory.LAND_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.TRANSPORTATION_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new TransportationInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(TransportationInventory.TRANSPORTATION_INVENTORY_GRID_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.CAR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new CarInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(CarInventory.CAR_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.CRUISE_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new CruiseInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(CruiseInventory.CRUISE_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.AIR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new AirInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(AirInventory.AIR_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.TOUR_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new TourHeaderInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
                 else if (ProductType.ITEM_CODE.equalsIgnoreCase(recProductType.getField(ProductType.CODE).toString()))
-                    screen = new ItemInventoryGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                    screen = Record.makeNewScreen(ItemInventory.ITEM_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
             }
         }
         if (screen == null)

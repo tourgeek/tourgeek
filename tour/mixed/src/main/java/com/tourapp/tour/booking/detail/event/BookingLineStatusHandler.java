@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -130,9 +128,9 @@ public class BookingLineStatusHandler extends FileListener
     {
         Record recBookingLine = this.getOwner();
         RecordOwner screen = this.getOwner().getRecordOwner();
-        if (screen instanceof GridScreen)
+        if (screen instanceof GridScreenParent)
         {
-            ((GridScreen)screen).reSelectRecords();
+            ((GridScreenParent)screen).reSelectRecords();
         }
         else if (screen != null)
         {

@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -26,6 +24,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.entry.pax.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.booking.entry.base.*;
+import org.jbundle.base.screen.model.util.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.booking.db.*;
@@ -192,7 +191,7 @@ public class BookingPax extends VirtualRecord
     /**
      * Add the booking toolbar buttons to sync the profile records.
      */
-    public void addToolbarButtons(ToolScreen toolbar, Record recProfile)
+    public void addToolbarButtons(ComponentParent toolbar, Record recProfile)
     {
         ResourceBundle resources = ((BaseApplication)recProfile.getRecordOwner().getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
         String strKey = "Select Passengers";
@@ -204,35 +203,46 @@ public class BookingPax extends VirtualRecord
         String strValue = Integer.toString(fldProfileTypeID.getIDFromCode("Contact"));
         if (strValue != null)
             strCommand = Utility.addURLParam(strCommand, strFieldName, strValue);
-        new SCannedBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.ANCHOR_DEFAULT), toolbar, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, resources.getString(strKey), MenuConstants.LOOKUP, strCommand, resources.getString(strKey + "Tip"), recProfile, null);
+        Map<String,Object> properties = new HashMap<String,Object>();
+        properties.put(ScreenModel.DESC, resources.getString(strKey));
+        properties.put(ScreenModel.IMAGE, MenuConstants.LOOKUP);
+        properties.put(ScreenModel.COMMAND, strCommand);
+        properties.put(ScreenModel.TOOLTIP, resources.getString(strKey + "Tip"));
+        properties.put(ScreenModel.RECORD, recProfile);
+        BaseField.createScreenComponent(ScreenModel.CANNED_BOX, toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.ANCHOR_DEFAULT), toolbar, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         
         strKey = "Add to Profile";
         converter = new AddPaPaxConverter(null);
-        new SButtonBox(toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.ANCHOR_DEFAULT), toolbar, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null, resources.getString(strKey), Booking.BUTTON_LOCATION + "Passenger", null, resources.getString(strKey + "Tip"));
+        properties = new HashMap<String,Object>();
+        properties.put(ScreenModel.DESC, resources.getString(strKey));
+        properties.put(ScreenModel.IMAGE, Booking.BUTTON_LOCATION + "Passenger");
+        properties.put(ScreenModel.TOOLTIP, resources.getString(strKey + "Tip"));
+        BaseField.createScreenComponent(ScreenModel.BUTTON_BOX, toolbar.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.ANCHOR_DEFAULT), toolbar, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+
     }
     /**
      * Add the pax count screen fields to this toolbar.
      */
-    public void addToolbarFields(ToolScreen toolbar, Record recBooking)
+    public void addToolbarFields(ComponentParent toolbar, Record recBooking)
     {
         Converter converter = null;
         converter = recBooking.getField(Booking.PAX);
-        ScreenField sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
+        ScreenComponent sField = converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.NEXT_INPUT_LOCATION, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         converter = recBooking.getField(Booking.SINGLE_PAX);
-        sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
+        sField = converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         converter = new RoomConverter(recBooking.getField(Booking.DOUBLE_PAX), (short)2);
-        sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
+        sField = converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         converter = new RoomConverter(recBooking.getField(Booking.TRIPLE_PAX), (short)3);
-        sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
+        sField = converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         converter = new RoomConverter(recBooking.getField(Booking.QUAD_PAX), (short)4);
-        sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
+        sField = converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
         converter = recBooking.getField(Booking.CHILDREN);
-        sField = (ScreenField)converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
+        sField = converter.setupDefaultView(toolbar.getNextLocation(ScreenConstants.RIGHT_WITH_DESC, ScreenConstants.ANCHOR_DEFAULT), toolbar, ScreenConstants.DEFAULT_DISPLAY);
         sField.setEnabled(false);
     }
     /**
@@ -270,7 +280,7 @@ public class BookingPax extends VirtualRecord
         
         recBookingPax.getField(BookingPax.SEQUENCE).addListener(new InitFieldHandler(recBooking.getField(Booking.PAX)));
         
-        if (recordOwner instanceof BaseScreen)
+        if (recordOwner instanceof ScreenParent)
         {
             Profile recProfile = (Profile)recordOwner.getRecord(Profile.PROFILE_FILE);
             Profile recProfileDetail = (Profile)((ReferenceField)this.getField(BookingPax.PROFILE_ID)).getReferenceRecord();
@@ -281,22 +291,22 @@ public class BookingPax extends VirtualRecord
             FileListener paxSelectListener = new PaPaxSelectHandler((BookingPax)recBookingPax, recProfile, recProfileDetail);
             recProfile.addListener(paxSelectListener);
             
-            if (recordOwner instanceof Screen)
-            {
-                FieldListener fieldListener = new CopyFieldHandler(((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.LAST_LAST_NAME), null);
+            if (!(recordOwner instanceof GridScreenParent))
+            {   // Screen
+                FieldListener fieldListener = new CopyFieldHandler((BaseField)((ScreenParent)recordOwner).getScreenRecord().getField(BookingScreenRecord.LAST_LAST_NAME), null);
                 fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, false);
                 recBookingPax.getField(BookingPax.SUR_NAME).addListener(fieldListener);
                 
-                fieldListener = new MoveOnChangeHandler(recBookingPax.getField(BookingPax.SUR_NAME), ((Screen)recordOwner).getScreenRecord().getField(BookingScreenRecord.LAST_LAST_NAME), false, false);
+                fieldListener = new MoveOnChangeHandler(recBookingPax.getField(BookingPax.SUR_NAME), (BaseField)((ScreenParent)recordOwner).getScreenRecord().getField(BookingScreenRecord.LAST_LAST_NAME), false, false);
                 fieldListener.setRespondsToMode(DBConstants.SCREEN_MOVE, false);
                 fieldListener.setRespondsToMode(DBConstants.INIT_MOVE, true);
                 fieldListener.setRespondsToMode(DBConstants.READ_MOVE, false);
                 recBookingPax.getField(BookingPax.SUR_NAME).addListener(fieldListener);
             }
                     
-            if (recordOwner instanceof GridScreen)
+            if (recordOwner instanceof GridScreenParent)
             {
-                FieldListener reSelect = new FieldReSelectHandler((GridScreen)recordOwner);
+                FieldListener reSelect = new FieldReSelectHandler((GridScreenParent)recordOwner);
                 recBooking.getField(Booking.ID).addListener(reSelect);
                 this.addListener(new FileRemoveBOnCloseHandler(reSelect));
             }

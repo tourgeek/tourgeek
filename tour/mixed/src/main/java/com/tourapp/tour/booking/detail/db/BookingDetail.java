@@ -15,8 +15,6 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
@@ -144,16 +142,16 @@ public class BookingDetail extends BookingSub
             Record record = this.getTable().getCurrentTable().getRecord();
             if (record != null)
                 if (record != this) // Record should be the concrete class
-                    return record.makeScreen((ScreenLocation)itsLocation, (BasePanel)parentScreen, iDocMode, properties);
+                    return record.makeScreen(itsLocation, parentScreen, iDocMode, properties);
             if (objObjectID != null)
                 parentScreen.setProperty(DBConstants.STRING_OBJECT_ID_HANDLE, objObjectID.toString());
             if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.HOTEL_ID)
-                screen = new BookingHotelScreen(null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                screen = Record.makeNewScreen(BookingHotel.BOOKING_HOTEL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
             else //if (this.getField(BookingDetail.PRODUCT_TYPE_ID).getValue() == ProductType.LAND_ID)
-                screen = new BookingLandScreen(null, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+                screen = Record.makeNewScreen(BookingLand.BOOKING_LAND_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         }
         else //if ((iDocMode & ScreenConstants.DISPLAY_MODE) != 0)
-            screen = new BookingDetailGridScreen(this, (ScreenLocation)itsLocation, (BasePanel)parentScreen, null, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
+            screen = Record.makeNewScreen(BOOKING_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         return screen;
     }
     /**

@@ -18,6 +18,7 @@ public interface BankTrxBatchModel extends Rec
     public static final String USER_ID_KEY = "UserID";
     public static final String BANK_TRX_BATCH_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchScreen";
     public static final String BANK_TRX_BATCH_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchGridScreen";
+    public static final String BANK_TRX_BATCH_POST_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchPost";
 
     public static final String BANK_TRX_BATCH_FILE = "BankTrxBatch";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankTrxBatch";

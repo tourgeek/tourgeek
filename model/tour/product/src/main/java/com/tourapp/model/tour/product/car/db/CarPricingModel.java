@@ -27,6 +27,7 @@ public interface CarPricingModel extends ProductPricingModel
     public static final String MAX_PAX = "MaxPax";
     public static final String CAR_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarPricingScreen";
     public static final String CAR_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarPricingGridScreen";
+    public static final String CAR_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.car.screen.CarInventoryRangeAdjust";
 
     public static final String CAR_PRICING_FILE = "CarPricing";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.car.db.CarPricing";

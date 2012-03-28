@@ -147,6 +147,7 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String COST_PARAM = "cost";
     public static final String INVENTORY_PARAM = "inventory";
     public static final String PRODUCT_PARAM = "product";
+    public static final String BOOKING_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.detail.BookingDetailGridScreen";
 
     public static final String BOOKING_DETAIL_FILE = "BookingDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingDetail";

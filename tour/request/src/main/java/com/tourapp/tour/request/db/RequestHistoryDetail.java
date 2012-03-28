@@ -15,15 +15,12 @@ import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
 import org.jbundle.base.field.convert.*;
 import org.jbundle.base.field.event.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.model.*;
 import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.base.db.shared.*;
-import com.tourapp.tour.request.screen.detail.*;
 import com.tourapp.model.tour.request.db.*;
 
 /**
@@ -83,6 +80,18 @@ public class RequestHistoryDetail extends VirtualRecord
     public int getDatabaseType()
     {
         return DBConstants.REMOTE | DBConstants.USER_DATA;
+    }
+    /**
+     * Make a default screen.
+     */
+    public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
+    {
+        ScreenParent screen = null;
+        if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
+            screen = Record.makeNewScreen(REQUEST_HISTORY_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        else
+            screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
+        return screen;
     }
     /**
      * Add this field in the Record's field sequence.
