@@ -22,8 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 
 /**
  *  CashBatchScreenRecord - Cash Batch Variables.

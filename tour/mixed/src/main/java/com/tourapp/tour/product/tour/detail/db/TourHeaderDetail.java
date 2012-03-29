@@ -24,7 +24,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.product.tour.detail.db.*;
 
 /**

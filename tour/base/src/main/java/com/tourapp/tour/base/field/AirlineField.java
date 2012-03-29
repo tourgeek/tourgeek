@@ -2,7 +2,7 @@
  * @(#)AirlineField.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.product.air.db;
+package com.tourapp.tour.base.field;
 
 import java.awt.*;
 import java.util.*;
@@ -20,7 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.air.screen.*;
+import com.tourapp.model.tour.product.air.db.*;
 
 /**
  *  AirlineField - .
@@ -59,7 +59,7 @@ public class AirlineField extends ReferenceField
      */
     public Record makeReferenceRecord(RecordOwner recordOwner)
     {
-        return new Airline(recordOwner);
+        return Record.makeRecordFromClassName(AirlineModel.THICK_CLASS, recordOwner);
     }
     /**
      * Set up the default screen control for this field.
@@ -72,7 +72,7 @@ public class AirlineField extends ReferenceField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), Airline.AIRLINE_CODE_KEY, Airline.DESCRIPTION, true);
+        return this.setupTableLookup(itsLocation, targetScreen, iDisplayFieldDesc, this.makeReferenceRecord(), AirlineModel.AIRLINE_CODE_KEY, AirlineModel.DESCRIPTION, true);
     }
 
 }

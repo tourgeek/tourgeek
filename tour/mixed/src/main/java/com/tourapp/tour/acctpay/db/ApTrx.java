@@ -35,7 +35,7 @@ import com.tourapp.tour.acctpay.db.event.*;
 import com.tourapp.tour.acctpay.screen.findepest.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctpay.db.*;
 
 /**

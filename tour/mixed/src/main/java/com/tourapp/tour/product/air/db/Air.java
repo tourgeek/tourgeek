@@ -36,6 +36,7 @@ import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.product.air.db.*;
 
 /**

@@ -22,7 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.screen.mco.*;
 import com.tourapp.tour.acctrec.screen.mco.trx.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**

@@ -20,6 +20,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.tour.base.field.*;
 
 /**
  *  BookingInField - Booking field with booking number display/input.

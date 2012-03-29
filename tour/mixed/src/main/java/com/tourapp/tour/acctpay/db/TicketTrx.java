@@ -21,7 +21,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.db.shared.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctpay.db.*;
 
 /**

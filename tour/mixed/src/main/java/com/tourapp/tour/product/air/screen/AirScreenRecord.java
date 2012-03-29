@@ -28,6 +28,7 @@ import com.tourapp.tour.product.air.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.tour.base.field.*;
 
 /**
  *  AirScreenRecord - .

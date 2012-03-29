@@ -24,8 +24,7 @@ import org.jbundle.base.screen.model.report.*;
 import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.genled.db.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.product.air.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.profile.db.*;
 
 /**

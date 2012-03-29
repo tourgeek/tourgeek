@@ -2,7 +2,7 @@
  * @(#)BookingField.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.db;
+package com.tourapp.tour.base.field;
 
 import java.awt.*;
 import java.util.*;
@@ -20,6 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  BookingField - Booking Reference/Lookup Field.
@@ -58,7 +59,7 @@ public class BookingField extends ReferenceField
      */
     public Record makeReferenceRecord(RecordOwner recordOwner)
     {
-        return new Booking(recordOwner);
+        return Record.makeRecordFromClassName(BookingModel.THICK_CLASS, recordOwner);
     }
     /**
      * Set up the default screen control for this field.
@@ -72,9 +73,9 @@ public class BookingField extends ReferenceField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         Record recBooking = this.getReferenceRecord();
-        Converter fldDisplayFieldDesc = recBooking.getField(Booking.DESCRIPTION);
+        Converter fldDisplayFieldDesc = recBooking.getField(BookingModel.DESCRIPTION);
         fldDisplayFieldDesc = new FieldLengthConverter(fldDisplayFieldDesc, 30);
-        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recBooking, Booking.CODE_KEY, fldDisplayFieldDesc, true, true);
+        return this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, recBooking, BookingModel.CODE_KEY, fldDisplayFieldDesc, true, true);
     }
 
 }

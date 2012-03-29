@@ -23,7 +23,7 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.screen.misc.*;
 import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.model.tour.acctrec.db.*;
 

@@ -27,6 +27,7 @@ import com.tourapp.tour.acctrec.screen.refund.*;
 import com.tourapp.tour.acctrec.db.event.*;
 import com.tourapp.tour.booking.entry.acctrec.*;
 import com.tourapp.tour.acctrec.screen.display.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**

@@ -43,7 +43,7 @@ import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.shared.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.product.tour.db.*;
 
 /**

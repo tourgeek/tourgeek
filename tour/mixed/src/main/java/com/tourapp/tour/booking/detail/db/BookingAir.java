@@ -27,6 +27,7 @@ import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.air.db.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 /**

@@ -25,7 +25,7 @@ import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.main.db.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourapp.tour.base.field.*;
 
 /**
  *  TicketScreenRecord - .

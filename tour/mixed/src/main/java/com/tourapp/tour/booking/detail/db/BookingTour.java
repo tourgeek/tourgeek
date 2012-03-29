@@ -29,6 +29,7 @@ import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
