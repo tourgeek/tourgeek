@@ -23,12 +23,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.assetdr.screen.batch.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.acctrec.db.event.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  BaseArTrxPostScreen - Post A/R transactions.
@@ -184,15 +184,15 @@ public class BaseArTrxPostScreen extends BaseTrxPostScreen
                     Record recBooking = ((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReference();
                     if (recBooking != null)
                     {
-                        Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+                        Record recTour = ((ReferenceField)recBooking.getField(BookingModel.TOUR_ID)).getReference();
                         if (recTour != null)
                         {
-                            Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
+                            Record recTourHeader = ((ReferenceField)recTour.getField(TourModel.TOUR_HEADER_ID)).getReference();
                             if (recTourHeader != null)
                             {
-                                Record recProductCat = ((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
+                                Record recProductCat = ((ReferenceField)recTourHeader.getField(TourHeaderModel.PRODUCT_CAT_ID)).getReference();
                                 if (recProductCat != null)
-                                    fldCrAccountID = recProductCat.getField(ProductCategory.AR_ACCOUNT_ID);
+                                    fldCrAccountID = recProductCat.getField(ProductCategoryModel.AR_ACCOUNT_ID);
                             }
                         }
                     }

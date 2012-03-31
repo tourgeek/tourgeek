@@ -1,5 +1,5 @@
 /**
- * @(#)CreditCardBatchDist.
+ * @(#)McoBatchDist.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.db;
@@ -20,28 +20,27 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctrec.screen.credit.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**
- *  CreditCardBatchDist - Credit Cards.
+ *  McoBatchDist - MCOs.
  */
-public class CreditCardBatchDist extends CashBatchDist
-     implements CreditCardBatchDistModel
+public class McoBatchDist extends CashBatchDist
+     implements McoBatchDistModel
 {
     private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor.
      */
-    public CreditCardBatchDist()
+    public McoBatchDist()
     {
         super();
     }
     /**
      * Constructor.
      */
-    public CreditCardBatchDist(RecordOwner screen)
+    public McoBatchDist(RecordOwner screen)
     {
         this();
         this.init(screen);
@@ -58,14 +57,14 @@ public class CreditCardBatchDist extends CashBatchDist
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(CREDIT_CARD_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(MCO_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
      */
     public String getRecordName()
     {
-        return "Credit card distribution";
+        return "Mco batch distribution";
     }
     /**
      * Get the Database Name.
@@ -88,9 +87,9 @@ public class CreditCardBatchDist extends CashBatchDist
     {
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = Record.makeNewScreen(CREDIT_CARD_BATCH_DIST_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(MCO_BATCH_DIST_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
-            screen = Record.makeNewScreen(CREDIT_CARD_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(MCO_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;

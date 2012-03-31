@@ -20,10 +20,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.acctrec.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 import com.tourapp.tour.genled.db.*;
 
 /**
@@ -75,20 +75,20 @@ public class UpdateArTrxHandler extends FileListener
         if ((iChangeType == DBConstants.AFTER_UPDATE_TYPE)
             || (iChangeType == DBConstants.AFTER_ADD_TYPE))
         {   // Be careful because booking is no longer current
-            Booking recBooking = (Booking)this.getOwner();
+            BookingModel recBooking = (BookingModel)this.getOwner();
             boolean bUpdateArTrx = false;
-            if (recBooking.getField(Booking.BOOKING_STATUS_ID).isModified())
+            if (recBooking.getField(BookingModel.BOOKING_STATUS_ID).isModified())
                 bUpdateArTrx = true;
-            if (recBooking.getField(Booking.NET).isModified())
+            if (recBooking.getField(BookingModel.NET).isModified())
                 bUpdateArTrx = true;
             if (bUpdateArTrx)
             { // Only do if booking is accepted
-                BookingStatus recBookingStatus = (BookingStatus)((ReferenceField)recBooking.getField(Booking.BOOKING_STATUS_ID)).getReference();
-                if ((BookingStatus.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString()))
-                    || (BookingStatus.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString())))
+                BookingStatusModel recBookingStatus = (BookingStatusModel)((ReferenceField)recBooking.getField(BookingModel.BOOKING_STATUS_ID)).getReference();
+                if ((BookingStatusModel.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatusModel.CODE).toString()))
+                    || (BookingStatusModel.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatusModel.CODE).toString())))
                         bUpdateArTrx = false;   // Don't update A/R if the booking has not been accepted
-                if (recBooking.getField(Booking.BALANCE).getValue() != 0)
-                    if (recBooking.getField(Booking.FINAL_PAYMENT_RECEIVED).getState() == false) // Because if final pymt was received, the balance should be 0
+                if (recBooking.getField(BookingModel.BALANCE).getValue() != 0)
+                    if (recBooking.getField(BookingModel.FINAL_PAYMENT_RECEIVED).getState() == false) // Because if final pymt was received, the balance should be 0
                         bUpdateArTrx = true;    // Special case - A/R Trx's already exist
             }
             if (bUpdateArTrx)
@@ -96,32 +96,32 @@ public class UpdateArTrxHandler extends FileListener
                 try   {
                     Object bookmark = null;
                     if (iChangeType == DBConstants.AFTER_UPDATE_TYPE)
-                        bookmark = recBooking.getHandle(DBConstants.BOOKMARK_HANDLE);
+                        bookmark = recBooking.getTable().getHandle(DBConstants.BOOKMARK_HANDLE);
                     else
-                        bookmark = recBooking.getLastModified(DBConstants.BOOKMARK_HANDLE);
+                        bookmark = recBooking.getTable().getLastModified(DBConstants.BOOKMARK_HANDLE);
                     if (bookmark == null)
                         return this.getOwner().getTask().setLastError("Booking not current on A/R update");    // Should never happen
-                    recBooking.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
+                    recBooking.getTable().setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
                     if (recBooking.getEditMode() == DBConstants.EDIT_CURRENT)
-                        recBooking.edit();
-                    ArTrx recArTrx = recBooking.addArDetail(null, null, true);     // Make sure BookingLine and ArTrx detail (totals) are there
+                        recBooking.getTable().edit();
+                    ArTrxModel recArTrx = recBooking.addArDetail(null, null, true);     // Make sure BookingLine and ArTrx detail (totals) are there
                 // First, total the booking balance
-                    double dTotal = recBooking.getField(Booking.NET).getValue();
+                    double dTotal = recBooking.getField(BookingModel.NET).getValue();
                 // Next, total the current A/R invoice total
                     
-                    ArTrxInvoiceSubCountHandler subCountHandler = (ArTrxInvoiceSubCountHandler)recArTrx.getListener(ArTrxInvoiceSubCountHandler.class);
+                    ArTrxInvoiceSubCountHandler subCountHandler = (ArTrxInvoiceSubCountHandler)((Record)recArTrx).getListener(ArTrxInvoiceSubCountHandler.class);
                     double dOldNet = subCountHandler.getTotalToVerify();
                     int iTrxStatus = subCountHandler.getTrxStatus();
                     double dAdjustment = Math.floor((dTotal - dOldNet) * 100.00 + 0.5) / 100.00;
                     if (dAdjustment != 0)
                     { // Add an A/R Adjustment
-                        recArTrx.addNew();
+                        recArTrx.getTable().addNew();
                         recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iTrxStatus);   // Invoice modification
                         recArTrx.getField(ArTrx.AMOUNT).setValue(dAdjustment);
-                        recArTrx.getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
-                        recArTrx.add();
+                        ((Record)recArTrx).getField(ArTrx.COMMENTS).moveFieldToThis(((ReferenceField)recArTrx.getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.STATUS_DESC));
+                        recArTrx.getTable().add(recArTrx);
                     }
-                    recBooking.set();   // Since it was 'after update' this will leave booking in the same state.
+                    recBooking.getTable().set(recBooking);   // Since it was 'after update' this will leave booking in the same state.
                 } catch (DBException ex)    {
                     ex.printStackTrace();
                 }

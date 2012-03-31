@@ -21,7 +21,6 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.assetdr.db.*;
-import com.tourapp.tour.acctrec.screen.cash.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**

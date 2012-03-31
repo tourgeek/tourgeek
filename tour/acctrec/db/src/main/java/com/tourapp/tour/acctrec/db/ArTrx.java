@@ -21,12 +21,8 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctrec.screen.misc.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.acctrec.screen.refund.*;
 import com.tourapp.tour.acctrec.db.event.*;
-import com.tourapp.tour.booking.entry.acctrec.*;
-import com.tourapp.tour.acctrec.screen.display.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
@@ -213,20 +209,20 @@ public class ArTrx extends LinkTrx
     /**
      * Add the booking detail behaviors.
      */
-    public void addDetailBehaviors(Booking recBooking)
+    public void addDetailBehaviors(Rec recBooking)
     {
-        this.addListener(new SubFileFilter(recBooking, true));
-        this.addListener(new InitArTrxHandler(recBooking));
+        this.addListener(new SubFileFilter((Record)recBooking, true));
+        this.addListener(new InitArTrxHandler((Record)recBooking));
         if (this.getRecordOwner() instanceof GridScreenParent)
-            recBooking.getField(Booking.ID).addListener(new FieldReSelectHandler((GridScreenParent)this.getRecordOwner()));
+            ((BaseField)recBooking.getField(BookingModel.ID)).addListener(new FieldReSelectHandler((GridScreenParent)this.getRecordOwner()));
         if (recBooking != null)
         {   // Sub counts must be first.
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, true, true));
+            this.addListener(new SubCountHandler((BaseField)recBooking.getField(BookingModel.BALANCE), ArTrx.AMOUNT, true, true));
         
             this.addListener(new ArTrxInvoiceSubCountHandler(null, ArTrx.AMOUNT, true, true));
         }
-        this.addListener(new CheckBookingStatusHandler(recBooking));
-        this.addListener(new UpdateArTrxAcctDetailHandler(recBooking));
+        this.addListener(new CheckBookingStatusHandler((BookingModel)recBooking));
+        this.addListener(new UpdateArTrxAcctDetailHandler((Record)recBooking));
     }
     /**
      * Convert the command to the screen document type.

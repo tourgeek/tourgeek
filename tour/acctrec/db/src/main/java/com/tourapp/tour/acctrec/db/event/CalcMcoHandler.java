@@ -2,7 +2,7 @@
  * @(#)CalcMcoHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.acctrec.screen.mco;
+package com.tourapp.tour.acctrec.db.event;
 
 import java.awt.*;
 import java.util.*;
@@ -20,10 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import org.jbundle.base.screen.model.*;
 import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.acctrec.screen.cash.*;
-import com.tourapp.tour.genled.db.*;
 
 /**
  *  CalcMcoHandler - Calculate the MCO Net.

@@ -21,9 +21,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  CheckBookingStatusHandler - Make sure the booking status is not 'no-status' if I am adding a new
@@ -32,7 +32,7 @@ ArTrx. If I am adding a new trx, then the booking must have been
  */
 public class CheckBookingStatusHandler extends FileListener
 {
-    protected Booking m_recBooking = null;
+    protected BookingModel m_recBooking = null;
     /**
      * Default constructor.
      */
@@ -43,7 +43,7 @@ public class CheckBookingStatusHandler extends FileListener
     /**
      * CheckBookingStatusHandler Method.
      */
-    public CheckBookingStatusHandler(Booking recBooking)
+    public CheckBookingStatusHandler(BookingModel recBooking)
     {
         this();
         this.init(recBooking);
@@ -51,7 +51,7 @@ public class CheckBookingStatusHandler extends FileListener
     /**
      * Initialize class fields.
      */
-    public void init(Booking recBooking)
+    public void init(BookingModel recBooking)
     {
         m_recBooking = null;
         m_recBooking = recBooking;
@@ -80,9 +80,9 @@ public class CheckBookingStatusHandler extends FileListener
         { // Has to be 'after' since I use the same ArTrx file.
             if ((m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (m_recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
-                BookingStatus recBookingStatus = (BookingStatus)((ReferenceField)m_recBooking.getField(Booking.BOOKING_STATUS_ID)).getReference();
-                if ((BookingStatus.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString()))
-                        || (BookingStatus.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatus.CODE).toString())))
+                Record recBookingStatus = ((ReferenceField)m_recBooking.getField(BookingModel.BOOKING_STATUS_ID)).getReference();
+                if ((BookingStatusModel.NO_STATUS_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatusModel.CODE).toString()))
+                        || (BookingStatusModel.PROPOSAL_CODE.equalsIgnoreCase(recBookingStatus.getField(BookingStatusModel.CODE).toString())))
                 {
                     if (!this.getOwner().getField(ArTrx.TRX_STATUS_ID).isNull())
                         if (!ArTrx.INVOICE.equalsIgnoreCase(((TrxStatusField)this.getOwner().getField(ArTrx.TRX_STATUS_ID)).getReference().getField(TrxStatus.DESC_CODE).toString()))
@@ -94,14 +94,14 @@ public class CheckBookingStatusHandler extends FileListener
                                         if ((m_recBooking.getOpenMode() & DBConstants.OPEN_READ_ONLY) != 0)
                                             m_recBooking.setOpenMode(m_recBooking.getOpenMode() & ~DBConstants.OPEN_READ_ONLY);
                                         try {
-                                            m_recBooking.edit();
+                                            m_recBooking.getTable().edit();
                                         } catch (DBException e) {
                                             e.printStackTrace();
                                         }
                                     }
-                                    int iAcceptedID = ((ReferenceField)m_recBooking.getField(Booking.BOOKING_STATUS_ID)).getIDFromCode(BookingStatus.ACCEPTED_CODE);
+                                    int iAcceptedID = ((ReferenceField)m_recBooking.getField(BookingModel.BOOKING_STATUS_ID)).getIDFromCode(BookingStatusModel.ACCEPTED_CODE);
                                     if (iAcceptedID > 0)
-                                        m_recBooking.getField(Booking.BOOKING_STATUS_ID).setValue(iAcceptedID);
+                                        m_recBooking.getField(BookingModel.BOOKING_STATUS_ID).setValue(iAcceptedID);
                                 }
                 }
             }

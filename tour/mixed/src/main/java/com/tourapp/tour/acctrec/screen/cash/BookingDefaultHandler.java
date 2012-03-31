@@ -21,7 +21,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  BookingDefaultHandler - This listener sets the default amount and description for a booking
@@ -79,11 +79,11 @@ public class BookingDefaultHandler extends CopyStringHandler
                 if (recBooking != null)
                 { // Got a valid booking, see if this payment is a probably a deposit or final payment
                     boolean bFinalPayment = false;
-                    if (recBooking.getField(Booking.DEPOSIT_RECEIVED).getState() == true)
+                    if (recBooking.getField(BookingModel.DEPOSIT_RECEIVED).getState() == true)
                         bFinalPayment = true;
                     else
                     {
-                        Calendar calDate = ((DateTimeField)recBooking.getField(Booking.FINAL_PAYMENT_DUE_DATE)).getCalendar();
+                        Calendar calDate = ((DateTimeField)recBooking.getField(BookingModel.FINAL_PAYMENT_DUE_DATE)).getCalendar();
                         if (calDate != null)
                         {
                             calDate.add(Calendar.DATE, -20);
@@ -104,7 +104,7 @@ public class BookingDefaultHandler extends CopyStringHandler
                             if (recordOwner != null)
                                 recordOwner.removeRecord(m_recArTrx);
                             m_recArTrx.addListener(new SubFileFilter(recBooking));
-                            m_recArTrx.addListener(new SubCountHandler(recBooking.getField(Booking.BALANCE), ArTrx.AMOUNT, false, true));
+                            m_recArTrx.addListener(new SubCountHandler(recBooking.getField(BookingModel.BALANCE), ArTrx.AMOUNT, false, true));
                         }
                         try {
                             m_recArTrx.close();
@@ -115,16 +115,16 @@ public class BookingDefaultHandler extends CopyStringHandler
                                 m_recArTrx.next();
                             }
                             if (bNoEntries)
-                                dAmount = recBooking.getField(Booking.NET).getValue();
+                                dAmount = recBooking.getField(BookingModel.NET).getValue();
                             else
-                                dAmount = recBooking.getField(Booking.BALANCE).getValue();
+                                dAmount = recBooking.getField(BookingModel.BALANCE).getValue();
                         } catch (DBException ex)    {
                             ex.printStackTrace();
                         }
                     }
                     else
                     {   // Deposit
-                        dAmount = recBooking.getField(Booking.DEPOSIT).getValue();
+                        dAmount = recBooking.getField(BookingModel.DEPOSIT).getValue();
                     }
                     if (dAmount != 0)
                     {

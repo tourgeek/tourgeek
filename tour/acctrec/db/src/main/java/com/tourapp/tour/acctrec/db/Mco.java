@@ -20,8 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctrec.screen.mco.*;
-import com.tourapp.tour.acctrec.screen.mco.trx.*;
+import com.tourapp.tour.acctrec.db.event.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctrec.db.*;
 

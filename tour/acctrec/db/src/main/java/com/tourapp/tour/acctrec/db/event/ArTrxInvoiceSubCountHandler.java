@@ -22,7 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  ArTrxInvoiceSubCountHandler - .
@@ -162,10 +162,10 @@ public class ArTrxInvoiceSubCountHandler extends SubCountHandler
         boolean bOldState = this.setEnabledListener(true);  // This method IS disabled, but must be enabled if I update this record (so count is correct)
         try {
             SubFileFilter filter = (SubFileFilter)this.getOwner().getListener(SubFileFilter.class);
-            Booking recBooking = (Booking)filter.getMainRecord();
+            BookingModel recBooking = (BookingModel)filter.getMainRecord();
             recBooking.addArDetail(recArTrx, null, false);      // Being careful
             recArTrx.addNew();
-            double dBalance = recBooking.getField(Booking.NET).getValue();
+            double dBalance = recBooking.getField(BookingModel.NET).getValue();
             recArTrx.getField(ArTrx.AMOUNT).setValue(dBalance);
             ((DateTimeField)recArTrx.getField(ArTrx.TRX_DATE)).setCalendar(calTrxDate, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);   // Just before the previous entry.
             recArTrx.getField(ArTrx.TRX_STATUS_ID).setValue(iInvoiceTrxStatus);

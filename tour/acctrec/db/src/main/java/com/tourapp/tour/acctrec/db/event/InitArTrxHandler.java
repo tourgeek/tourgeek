@@ -21,7 +21,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  InitArTrxHandler - .
@@ -61,8 +61,8 @@ public class InitArTrxHandler extends FileListener
     {
         super.doNewRecord(bDisplayOption);
         // Booking->Tour->TourHeader->ProductCat P/P  vs  A/R
-        Tour recTour = (Tour)((ReferenceField)m_recBooking.getField(Booking.TOUR_ID)).getReference();
-        BaseField fldDepartureDate = recTour.getField(Tour.DEPARTURE_DATE);
+        Record recTour = ((ReferenceField)m_recBooking.getField(BookingModel.TOUR_ID)).getReference();
+        BaseField fldDepartureDate = recTour.getField(TourModel.DEPARTURE_DATE);
         this.getOwner().getField(ArTrx.DEPARTURE_DATE).moveFieldToThis(fldDepartureDate, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
     }
 

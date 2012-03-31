@@ -32,6 +32,8 @@ import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.acctrec.db.event.*;
+import com.tourapp.model.tour.acctrec.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.booking.db.*;
 
@@ -760,7 +762,7 @@ public class Booking extends CustSale
      * Also add all the listeners for these files.
      * @param bForceRecount If true, make sure the booking totals are correct, especially if this record is in an indeterminate state.
      */
-    public ArTrx addArDetail(ArTrx recArTrx, BookingLine recBookingLine, boolean bForceRecount)
+    public ArTrxModel addArDetail(ArTrxModel recArTrx, BookingLineModel recBookingLine, boolean bForceRecount)
     {
         FreeOnFreeHandler listener = (FreeOnFreeHandler)this.getListener(FreeOnFreeHandler.class);
         if (recBookingLine == null)
@@ -780,13 +782,13 @@ public class Booking extends CustSale
             recBookingLine = new BookingLine(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(recBookingLine));
         }
-        if (recBookingLine.getListener(SubFileFilter.class) == null)
-            recBookingLine.addDetailBehaviors(this, (Tour)((ReferenceField)this.getField(Booking.TOUR_ID)).getReferenceRecord());
-        RecountOnValidHandler recountOnValidHandler = (RecountOnValidHandler)recBookingLine.getListener(RecountOnValidHandler.class);
+        if (((Record)recBookingLine).getListener(SubFileFilter.class) == null)
+            ((BookingLine)recBookingLine).addDetailBehaviors(this, (Tour)((ReferenceField)this.getField(Booking.TOUR_ID)).getReferenceRecord());
+        RecountOnValidHandler recountOnValidHandler = (RecountOnValidHandler)((Record)recBookingLine).getListener(RecountOnValidHandler.class);
         if (recountOnValidHandler == null)
         {
             int iCurrentEditMode = this.setEditMode(DBConstants.EDIT_NONE);    // This keeps a recount from happening on addListener.
-            this.addListener(recountOnValidHandler = new RecountOnValidHandler(recBookingLine, true));
+            this.addListener(recountOnValidHandler = new RecountOnValidHandler((Record)recBookingLine, true));
             this.setEditMode(iCurrentEditMode);            
         }
         if (bForceRecount)
@@ -810,13 +812,13 @@ public class Booking extends CustSale
             recArTrx = new ArTrx(this.findRecordOwner());
             this.addListener(new FreeOnFreeHandler(recArTrx));
         }
-        if (recArTrx.getListener(SubFileFilter.class) == null)
+        if (((Record)recArTrx).getListener(SubFileFilter.class) == null)
             recArTrx.addDetailBehaviors(this);
-        recountOnValidHandler = (RecountOnValidHandler)recBookingLine.getListener(RecountOnValidHandler.class);
+        recountOnValidHandler = (RecountOnValidHandler)((Record)recBookingLine).getListener(RecountOnValidHandler.class);
         if (recountOnValidHandler == null)
         {
             int iCurrentEditMode = this.setEditMode(DBConstants.EDIT_NONE);    // This keeps a recount from happening on addListener.
-            this.addListener(recountOnValidHandler = new RecountOnValidHandler(recArTrx, true));
+            this.addListener(recountOnValidHandler = new RecountOnValidHandler((Record)recArTrx, true));
             this.setEditMode(iCurrentEditMode);            
         }
         if (bForceRecount)

@@ -1,5 +1,5 @@
 /**
- * @(#)CashBatchDetail.
+ * @(#)CashBatchDist.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.db;
@@ -20,31 +20,29 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctrec.screen.cash.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**
- *  CashBatchDetail - Cash Receipts.
+ *  CashBatchDist - Cash Receipts.
  */
-public class CashBatchDetail extends VirtualRecord
-     implements CashBatchDetailModel
+public class CashBatchDist extends BankTrxBatchDist
+     implements CashBatchDistModel
 {
     private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor.
      */
-    public CashBatchDetail()
+    public CashBatchDist()
     {
         super();
     }
     /**
      * Constructor.
      */
-    public CashBatchDetail(RecordOwner screen)
+    public CashBatchDist(RecordOwner screen)
     {
         this();
         this.init(screen);
@@ -61,14 +59,14 @@ public class CashBatchDetail extends VirtualRecord
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(CASH_BATCH_DETAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(CASH_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
      */
     public String getRecordName()
     {
-        return "Cash Receipts";
+        return "Distribution";
     }
     /**
      * Get the Database Name.
@@ -85,19 +83,17 @@ public class CashBatchDetail extends VirtualRecord
         return DBConstants.LOCAL | DBConstants.USER_DATA;
     }
     /**
-     * MakeScreen Method.
+     * Make a default screen.
      */
     public ScreenParent makeScreen(ScreenLoc itsLocation, ComponentParent parentScreen, int iDocMode, Map<String,Object> properties)
     {
         ScreenParent screen = null;
-        if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.DETAIL_MODE)
-            screen = Record.makeNewScreen(CashBatchDist.CASH_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-        else if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.POST_MODE)
-            screen = Record.makeNewScreen(CashBatch.CASH_BATCH_POST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-        else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = Record.makeNewScreen(CASH_BATCH_DETAIL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
+            screen = Record.makeNewScreen(CASH_BATCH_DIST_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+        if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
+            screen = Record.makeNewScreen(CASH_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
-            screen = Record.makeNewScreen(CASH_BATCH_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;
     }
     /**
@@ -123,19 +119,15 @@ public class CashBatchDetail extends VirtualRecord
         //}
         if (iFieldSeq == 3)
         {
-            field = new CashBatchField(this, CASH_BATCH_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new ReferenceField(this, CASH_BATCH_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
             field.setNullable(false);
         }
-        if (iFieldSeq == 4)
-            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == 5)
-            field = new StringField(this, CHECK_NO, 8, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //if (iFieldSeq == 5)
+        //  field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 6)
-            field = new StringField(this, CHECK_ABA, 10, null, null);
-        if (iFieldSeq == 7)
-            field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        if (iFieldSeq == 8)
-            field = new StringField(this, COMMENTS, 30, null, null);
+            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;
@@ -153,22 +145,12 @@ public class CashBatchDetail extends VirtualRecord
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchID");
-            keyArea.addKeyField(CASH_BATCH_ID, DBConstants.ASCENDING);
-            keyArea.addKeyField(ID, DBConstants.ASCENDING);
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchDetailID");
+            keyArea.addKeyField(CASH_BATCH_DETAIL_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     
         return keyArea;
-    }
-    /**
-     * AddMasterListeners Method.
-     */
-    public void addMasterListeners()
-    {
-        super.addMasterListeners();
-        
-        this.addListener(new SubFileIntegrityHandler(CashBatchDist.class.getName(), true));
     }
 
 }

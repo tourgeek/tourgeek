@@ -1,5 +1,5 @@
 /**
- * @(#)CashBatchDist.
+ * @(#)ArControl.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
 package com.tourapp.tour.acctrec.db;
@@ -21,29 +21,30 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.assetdr.db.*;
-import com.tourapp.tour.acctrec.screen.cash.*;
+import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.base.field.*;
+import com.tourapp.tour.profile.db.*;
 import com.tourapp.model.tour.acctrec.db.*;
 
 /**
- *  CashBatchDist - Cash Receipts.
+ *  ArControl - Control File.
  */
-public class CashBatchDist extends BankTrxBatchDist
-     implements CashBatchDistModel
+public class ArControl extends ControlRecord
+     implements ArControlModel
 {
     private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor.
      */
-    public CashBatchDist()
+    public ArControl()
     {
         super();
     }
     /**
      * Constructor.
      */
-    public CashBatchDist(RecordOwner screen)
+    public ArControl(RecordOwner screen)
     {
         this();
         this.init(screen);
@@ -60,14 +61,14 @@ public class CashBatchDist extends BankTrxBatchDist
      */
     public String getTableNames(boolean bAddQuotes)
     {
-        return (m_tableName == null) ? Record.formatTableNames(CASH_BATCH_DIST_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
+        return (m_tableName == null) ? Record.formatTableNames(AR_CONTROL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
     }
     /**
      * Get the name of a single record.
      */
     public String getRecordName()
     {
-        return "Distribution";
+        return "Control";
     }
     /**
      * Get the Database Name.
@@ -90,9 +91,9 @@ public class CashBatchDist extends BankTrxBatchDist
     {
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
-            screen = Record.makeNewScreen(CASH_BATCH_DIST_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(AR_CONTROL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
-            screen = Record.makeNewScreen(CASH_BATCH_DIST_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(AR_CONTROL_SCREEN_2_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
         return screen;
@@ -119,16 +120,41 @@ public class CashBatchDist extends BankTrxBatchDist
         //  field.setHidden(true);
         //}
         if (iFieldSeq == 3)
-        {
-            field = new ReferenceField(this, CASH_BATCH_DETAIL_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-            field.setNullable(false);
-        }
-        //if (iFieldSeq == 4)
-        //  field = new AccountField(this, ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        //if (iFieldSeq == 5)
-        //  field = new CurrencyField(this, AMOUNT, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new BankAcctField(this, AR_BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 4)
+            field = new AccountField(this, AR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 5)
+            field = new AccountField(this, MCO_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 6)
-            field = new BookingField(this, BOOKING_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+            field = new AccountField(this, MCO_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 7)
+            field = new AccountField(this, MCO_SUSPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 8)
+            field = new PercentField(this, MCO_COMM_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 9)
+            field = new PercentField(this, MCO_SVC_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 10)
+            field = new PercentField(this, MCO_TAX_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 11)
+            field = new AccountField(this, NON_TOUR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 12)
+            field = new BankAcctField(this, REFUND_BANK_ACCT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 13)
+            field = new AccountField(this, REFUND_SUSPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 14)
+            field = new AirlineField(this, AIRLINE_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 15)
+            field = new CardField(this, CARD_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 16)
+            field = new AccountField(this, CREDIT_CARD_REC_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 17)
+            field = new AccountField(this, CREDIT_CARD_SUSPENSE_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 18)
+            field = new AccountField(this, CREDIT_CARD_VAR_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 19)
+            field = new PercentField(this, CREDIT_CARD_SVC_PER, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        if (iFieldSeq == 20)
+            field = new AccountField(this, CREDIT_DEBIT_ACCOUNT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;
@@ -143,11 +169,6 @@ public class CashBatchDist extends BankTrxBatchDist
         {
             keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
-        }
-        if (iKeyArea == 1)
-        {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchDetailID");
-            keyArea.addKeyField(CASH_BATCH_DETAIL_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)
             keyArea = super.setupKey(iKeyArea);     

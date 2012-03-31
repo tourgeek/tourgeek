@@ -4,6 +4,7 @@
  */
 package com.tourapp.thin.tour.acctrec.db;
 
+import org.jbundle.model.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -103,6 +104,13 @@ public class ArTrx extends LinkTrx
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxStatusID");
         keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
         keyArea.addKeyField("TrxDate", Constants.ASCENDING);
+    }
+    /**
+     * Add the booking detail behaviors.
+     */
+    public void addDetailBehaviors(Rec recBooking)
+    {
+        // Empty implementation
     }
 
 }

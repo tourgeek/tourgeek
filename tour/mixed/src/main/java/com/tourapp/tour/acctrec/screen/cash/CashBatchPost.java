@@ -28,6 +28,7 @@ import com.tourapp.tour.assetdr.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  CashBatchPost - Post the Cash Receipts.
@@ -120,8 +121,8 @@ public class CashBatchPost extends BaseArTrxPostScreen
         recCashBatchDist.addListener(new SubFileFilter(this.getRecord(CashBatchDetail.CASH_BATCH_DETAIL_FILE)));
         recCashBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CashBatchDist.AMOUNT, false, true));
         
-        Booking recBooking = (Booking)((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReferenceRecord(this);
-        recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        BookingModel recBooking = (BookingModel)((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReferenceRecord(this);
+        recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler((Record)recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
         ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         

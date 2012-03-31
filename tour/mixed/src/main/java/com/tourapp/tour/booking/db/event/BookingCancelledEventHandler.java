@@ -67,7 +67,7 @@ public class BookingCancelledEventHandler extends FieldListener
         if (this.getOwner().getState() == true)
         {
             Booking recBooking = (Booking)this.getOwner().getRecord();
-            ArTrx recArTrx = recBooking.addArDetail(null, null, true);
+            ArTrx recArTrx = (ArTrx)recBooking.addArDetail(null, null, true);
             if (recBooking.getField(Booking.BALANCE).getValue() != recBooking.getField(Booking.NET).getValue())
             {   // Create a cancellation charge
                 Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();

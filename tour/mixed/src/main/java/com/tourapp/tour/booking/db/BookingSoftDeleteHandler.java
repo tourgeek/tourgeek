@@ -32,6 +32,8 @@ import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.acctrec.db.event.*;
+import com.tourapp.model.tour.acctrec.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingSoftDeleteHandler - Soft delete this bookingAdd code to make this work..

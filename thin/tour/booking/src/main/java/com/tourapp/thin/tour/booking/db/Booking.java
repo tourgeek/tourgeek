@@ -4,6 +4,8 @@
  */
 package com.tourapp.thin.tour.booking.db;
 
+import com.tourapp.model.tour.acctrec.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -203,6 +205,15 @@ public class Booking extends CustSale
         keyArea.addKeyField("GenericName", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);
+    }
+    /**
+     * Add the ArTrx and BookingLine detail files if they don't already exist.
+     * Also add all the listeners for these files.
+     * @param bForceRecount If true, make sure the booking totals are correct, especially if this record is in an indeterminate state.
+     */
+    public ArTrxModel addArDetail(ArTrxModel recArTrx, BookingLineModel recBookingLine, boolean bForceRecount)
+    {
+        return null; // Empty implementation
     }
 
 }

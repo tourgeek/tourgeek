@@ -4,6 +4,7 @@
  */
 package com.tourapp.model.tour.acctrec.db;
 
+import org.jbundle.model.db.*;
 import com.tourapp.model.tour.genled.db.*;
 
 public interface ArTrxModel extends LinkTrxModel
@@ -56,5 +57,9 @@ public interface ArTrxModel extends LinkTrxModel
     public static final String AR_TRX_FILE = "ArTrx";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.ArTrx";
     public static final String THICK_CLASS = "com.tourapp.tour.acctrec.db.ArTrx";
+    /**
+     * Add the booking detail behaviors.
+     */
+    public void addDetailBehaviors(Rec recBooking);
 
 }

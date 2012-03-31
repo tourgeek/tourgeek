@@ -4,6 +4,8 @@
  */
 package com.tourapp.model.tour.booking.db;
 
+import com.tourapp.model.tour.acctrec.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.db.*;
 
 public interface BookingModel extends CustSaleModel
@@ -96,5 +98,11 @@ public interface BookingModel extends CustSaleModel
     public static final String BOOKING_FILE = "Booking";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.Booking";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.db.Booking";
+    /**
+     * Add the ArTrx and BookingLine detail files if they don't already exist.
+     * Also add all the listeners for these files.
+     * @param bForceRecount If true, make sure the booking totals are correct, especially if this record is in an indeterminate state.
+     */
+    public ArTrxModel addArDetail(ArTrxModel recArTrx, BookingLineModel recBookingLine, boolean bForceRecount);
 
 }

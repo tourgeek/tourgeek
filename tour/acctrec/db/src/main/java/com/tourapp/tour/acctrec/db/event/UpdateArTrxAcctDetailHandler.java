@@ -21,10 +21,10 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  UpdateArTrxAcctDetailHandler - Update the G/L Detail when a booking adds an A/R modification..
@@ -96,12 +96,12 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
     /**
      * Get the product category for this booking.
      */
-    public ProductCategory getProductCategory()
+    public Record getProductCategory()
     {
         // Booking->Tour->TourHeader->ProductCat P/P  vs  A/R
-        Tour recTour = (Tour)((ReferenceField)m_recBooking.getField(Booking.TOUR_ID)).getReference();
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
-        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
+        Record recTour = ((ReferenceField)m_recBooking.getField(BookingModel.TOUR_ID)).getReference();
+        Record recTourHeader = ((ReferenceField)recTour.getField(TourModel.TOUR_HEADER_ID)).getReference();
+        Record recProductCategory = ((ReferenceField)recTourHeader.getField(TourHeaderModel.PRODUCT_CAT_ID)).getReference();
         return recProductCategory;
     }
     /**
@@ -110,7 +110,7 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.AR_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategoryModel.AR_ACCOUNT_ID);
     }
     /**
      * Get the Credit Account field.
@@ -118,21 +118,21 @@ public class UpdateArTrxAcctDetailHandler extends UpdateAcctDetailHandler
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.PP_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategoryModel.PP_ACCOUNT_ID);
     }
     /**
      * GetDepartureDrAccount Method.
      */
     public ReferenceField getDepartureDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.PP_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategoryModel.PP_ACCOUNT_ID);
     }
     /**
      * GetDepartureCrAccount Method.
      */
     public ReferenceField getDepartureCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.INCOME_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategoryModel.INCOME_ACCOUNT_ID);
     }
 
 }
