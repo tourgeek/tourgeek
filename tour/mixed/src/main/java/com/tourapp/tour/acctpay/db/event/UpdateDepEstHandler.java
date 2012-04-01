@@ -2,7 +2,7 @@
  * @(#)UpdateDepEstHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.acctpay.screen.findepest;
+package com.tourapp.tour.acctpay.db.event;
 
 import java.awt.*;
 import java.util.*;
@@ -20,7 +20,6 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctpay.screen.trx.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 

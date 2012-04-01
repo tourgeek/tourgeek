@@ -2,7 +2,7 @@
  * @(#)UpdateApTrxHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.acctpay.screen.trx;
+package com.tourapp.tour.acctpay.db.event;
 
 import java.awt.*;
 import java.util.*;

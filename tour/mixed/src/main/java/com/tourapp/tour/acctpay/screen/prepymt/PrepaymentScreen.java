@@ -28,6 +28,7 @@ import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.acctpay.screen.findepest.*;
 import com.tourapp.tour.acctpay.screen.trx.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.tour.acctpay.db.event.*;
 
 /**
  *  PrepaymentScreen - Prepayments.

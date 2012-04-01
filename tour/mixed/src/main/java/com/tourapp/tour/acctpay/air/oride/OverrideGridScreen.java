@@ -24,7 +24,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctpay.screen.trx.*;
+import com.tourapp.tour.acctpay.db.event.*;
 
 /**
  *  OverrideGridScreen - Enter override information.

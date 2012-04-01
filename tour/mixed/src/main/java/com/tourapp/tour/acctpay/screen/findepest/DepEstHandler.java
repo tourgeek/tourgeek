@@ -27,6 +27,7 @@ import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.acctpay.screen.trx.*;
+import com.tourapp.tour.acctpay.db.event.*;
 
 /**
  *  DepEstHandler - Make sure this is a Fin Est or Manual Dep Est, and change to Dep Est.

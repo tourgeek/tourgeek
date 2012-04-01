@@ -21,8 +21,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctpay.screen.hist.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.acctpay.db.*;
 
@@ -289,7 +288,7 @@ public class PaymentHistory extends LinkTrx
                 {
                     Record recProductCategory = (Record)recApTrx.getProductCategory();
                     if (recProductCategory != null)
-                        fldCurrAccountID = recProductCategory.getField(ProductCategory.CURR_OU_ACCOUNT_ID);
+                        fldCurrAccountID = recProductCategory.getField(ProductCategoryModel.CURR_OU_ACCOUNT_ID);
                     if ((fldCurrAccountID == null) || (fldCurrAccountID.isNull()))
                     {
                         Record recApControl = (Record)recordOwner.getRecord(ApControl.AP_CONTROL_FILE);

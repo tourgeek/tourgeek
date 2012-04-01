@@ -23,7 +23,7 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctpay.screen.trx.*;
+import com.tourapp.tour.acctpay.db.event.*;
 import com.tourapp.tour.product.base.db.*;
 
 /**

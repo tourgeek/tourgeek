@@ -5,6 +5,7 @@
 package com.tourapp.thin.tour.acctpay.db;
 
 import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 

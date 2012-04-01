@@ -22,8 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctpay.screen.prepymt.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  ApTrxStatusHandler - .
@@ -107,7 +106,7 @@ public class ApTrxStatusHandler extends FileListener
                                     int iTourID = (int)recApTrx.getField(ApTrx.TOUR_ID).getValue();
                                     String strDesc = DBConstants.BLANK;
                                     if (((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference() != null)
-                                        strDesc = ((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference().getField(Tour.DESCRIPTION).toString();
+                                        strDesc = ((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference().getField(TourModel.DESCRIPTION).toString();
                                     Date dateStartService = ((DateField)recApTrx.getField(ApTrx.START_SERVICE_DATE)).getDateTime();
                                     recApTrxNew = new ApTrx(this.getOwner().findRecordOwner());
                                     Object bookmarkPP = null;

@@ -4,6 +4,7 @@
  */
 package com.tourapp.model.tour.booking.detail.db;
 
+import java.util.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 public interface BookingDetailModel extends BookingSubModel
@@ -152,5 +153,21 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String BOOKING_DETAIL_FILE = "BookingDetail";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingDetail";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingDetail";
+    /**
+     * Get the start date and time for this product.
+     * Return null if there is no date and time.
+     */
+    public Date getStartDate();
+    /**
+     * Get the end product date and time.
+     * @return The date.
+     */
+    public Date getEndDate();
+    /**
+     * Get the description of the product for this line item.
+     * Usually, you just get the description of the current product.
+     * For manual lines, the manual description is returned.
+     */
+    public String getProductDesc();
 
 }

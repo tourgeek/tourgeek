@@ -21,11 +21,6 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.*;
-import com.tourapp.tour.acctpay.screen.broker.*;
-import com.tourapp.tour.acctpay.screen.vendor.*;
-import com.tourapp.tour.acctpay.screen.trx.*;
-import org.jbundle.main.msg.screen.*;
-import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 

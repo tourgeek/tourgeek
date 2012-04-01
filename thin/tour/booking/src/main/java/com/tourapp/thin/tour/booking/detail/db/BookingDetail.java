@@ -5,6 +5,7 @@
 package com.tourapp.thin.tour.booking.detail.db;
 
 import java.util.*;
+import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
@@ -317,6 +318,31 @@ public class BookingDetail extends BookingSub
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "VendorID");
         keyArea.addKeyField("VendorID", Constants.ASCENDING);
         keyArea.addKeyField("DetailDate", Constants.ASCENDING);
+    }
+    /**
+     * Get the start date and time for this product.
+     * Return null if there is no date and time.
+     */
+    public Date getStartDate()
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * Get the end product date and time.
+     * @return The date.
+     */
+    public Date getEndDate()
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * Get the description of the product for this line item.
+     * Usually, you just get the description of the current product.
+     * For manual lines, the manual description is returned.
+     */
+    public String getProductDesc()
+    {
+        return null; // Empty implementation
     }
 
 }
