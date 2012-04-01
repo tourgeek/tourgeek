@@ -287,7 +287,7 @@ public class PaymentHistory extends LinkTrx
                 BaseField fldCurrAccountID = null;
                 if (dCurrencyLoss != 0)
                 {
-                    Record recProductCategory = recApTrx.getProductCategory();
+                    Record recProductCategory = (Record)recApTrx.getProductCategory();
                     if (recProductCategory != null)
                         fldCurrAccountID = recProductCategory.getField(ProductCategory.CURR_OU_ACCOUNT_ID);
                     if ((fldCurrAccountID == null) || (fldCurrAccountID.isNull()))

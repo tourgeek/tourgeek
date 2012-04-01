@@ -22,6 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.field.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  GetDepartureDateHandler - .
@@ -71,7 +72,7 @@ public class GetDepartureDateHandler extends FieldListener
                             m_fldTourID.getReference();
             if (recTour != null)
                 if ((recTour.getEditMode() == DBConstants.EDIT_CURRENT) || (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                    data = recTour.getField(Tour.DEPARTURE_DATE).getData();
+                    data = recTour.getField(TourModel.DEPARTURE_DATE).getData();
         }
         return data;
     }

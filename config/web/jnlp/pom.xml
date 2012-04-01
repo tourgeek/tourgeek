@@ -56,7 +56,22 @@
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.acctpay</artifactId>
+                  <artifactId>com.tourapp.tour.acctpay.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.acctpay.air</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.acctpay.screen</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.acctpay.report</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>
