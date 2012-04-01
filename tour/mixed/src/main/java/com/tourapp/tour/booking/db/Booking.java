@@ -35,6 +35,7 @@ import com.tourapp.tour.acctrec.db.event.*;
 import com.tourapp.model.tour.acctrec.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
+import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.booking.db.*;
 
 /**

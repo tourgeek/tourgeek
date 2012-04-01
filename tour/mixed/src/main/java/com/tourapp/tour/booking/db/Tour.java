@@ -32,6 +32,7 @@ import com.tourapp.tour.product.tour.other.screen.*;
 import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.acctpay.screen.findepest.*;
+import com.tourapp.tour.base.field.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.product.air.db.*;
 import com.tourapp.tour.product.car.db.*;

@@ -4,6 +4,7 @@
  */
 package com.tourapp.model.tour.acctpay.db;
 
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.model.tour.genled.db.*;
 
 public interface ApTrxModel extends TrxModel

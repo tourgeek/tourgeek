@@ -33,9 +33,10 @@ import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.acctpay.db.event.*;
 import com.tourapp.tour.acctpay.screen.findepest.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.base.field.*;
+import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.acctpay.db.*;
 
 /**
@@ -391,14 +392,14 @@ public class ApTrx extends Trx
     /**
      * Get the product category for this tour.
      */
-    public ProductCategory getProductCategory()
+    public ProductCategoryModel getProductCategory()
     {
         if (this.getField(ApTrx.TOUR_ID).isNull())
             return null;    // No tour
-        Tour recTour = (Tour)((ReferenceField)this.getField(ApTrx.TOUR_ID)).getReference();
+        Record recTour = ((ReferenceField)this.getField(ApTrx.TOUR_ID)).getReference();
         if (recTour == null)
             return null;
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
+        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(TourModel.TOUR_HEADER_ID)).getReference();
         if (recTourHeader == null)
             return null;
         ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
@@ -459,7 +460,7 @@ public class ApTrx extends Trx
      * @param fldVoucherType Unique ID (field).
      * @return An error code.
      */
-    public int updateThisApTrx(BaseTable tblBookingDetail, Tour recTour, Vendor recVendor, int iProductTypeID)
+    public int updateThisApTrx(BaseTable tblBookingDetail, Record recTour, Vendor recVendor, int iProductTypeID)
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         

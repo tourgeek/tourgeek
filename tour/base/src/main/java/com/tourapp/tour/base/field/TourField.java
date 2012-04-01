@@ -2,7 +2,7 @@
  * @(#)TourField.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.db;
+package com.tourapp.tour.base.field;
 
 import java.awt.*;
 import java.util.*;
@@ -20,19 +20,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
-import java.util.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.booking.lookup.*;
-import com.tourapp.tour.booking.detail.event.*;
-import com.tourapp.tour.product.tour.other.screen.*;
-import com.tourapp.tour.product.tour.schedule.db.*;
-import com.tourapp.tour.booking.db.event.*;
-import com.tourapp.tour.acctpay.screen.findepest.*;
-import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourField - .
@@ -71,11 +60,11 @@ public class TourField extends ReferenceField
      */
     public Record makeReferenceRecord(RecordOwner recordOwner)
     {
-        Tour recTour = new Tour(recordOwner);
-        if (Booking.BOOKING_FILE.equals(this.getRecord().getTableNames(false)))
+        Record recTour = Record.makeRecordFromClassName(TourModel.THICK_CLASS, recordOwner);
+        if (BookingModel.BOOKING_FILE.equals(this.getRecord().getTableNames(false)))
         {    // Make sure that these are moved back to the booking if the user changes them
-            recTour.getField(Tour.DESCRIPTION).addListener(new SyncTourFieldHandler((Booking)this.getRecord(), Booking.DESCRIPTION));
-            recTour.getField(Tour.CODE).addListener(new SyncTourFieldHandler((Booking)this.getRecord(), Booking.CODE));
+            recTour.getField(TourModel.DESCRIPTION).addListener(new SyncTourFieldHandler(this.getRecord(), BookingModel.DESCRIPTION));
+            recTour.getField(TourModel.CODE).addListener(new SyncTourFieldHandler(this.getRecord(), BookingModel.CODE));
         }
         return recTour;
     }
@@ -96,13 +85,13 @@ public class TourField extends ReferenceField
             bUpdateRecord = true;
         else
             recTour = this.makeReferenceRecord();   // Only set read-only if this is created by me.
-        BaseField fldDepartureDate = recTour.getField(Tour.DEPARTURE_DATE);
+        BaseField fldDepartureDate = recTour.getField(TourModel.DEPARTURE_DATE);
         fldDepartureDate.removeListener(fldDepartureDate.getListener(InitOnceFieldHandler.class.getName()), true);
-        BaseField fldTourDesc = recTour.getField(Tour.DESCRIPTION);
-        BaseField fldCode = recTour.getField(Tour.CODE);
+        BaseField fldTourDesc = recTour.getField(TourModel.DESCRIPTION);
+        BaseField fldCode = recTour.getField(TourModel.CODE);
         
-        recTour.setKeyArea(Tour.CODE_KEY);
-        fldCode.addListener(new MainReadOnlyHandler(Tour.CODE_KEY));
+        recTour.setKeyArea(TourModel.CODE_KEY);
+        fldCode.addListener(new MainReadOnlyHandler(TourModel.CODE_KEY));
         Converter conv = new FieldDescConverter((Converter)fldCode, (Converter)converter); // Use the description for this field
         conv = new FieldLengthConverter(conv, 10);
         ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);

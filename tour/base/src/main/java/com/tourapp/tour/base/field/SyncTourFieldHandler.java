@@ -2,7 +2,7 @@
  * @(#)SyncTourFieldHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.db.event;
+package com.tourapp.tour.base.field;
 
 import java.awt.*;
 import java.util.*;
@@ -20,15 +20,15 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  SyncTourFieldHandler - .
  */
 public class SyncTourFieldHandler extends FieldListener
 {
-    protected Booking m_recBooking = null;
+    protected Record m_recBooking = null;
     protected String m_iBookingFieldSeq = null;
     /**
      * Default constructor.
@@ -40,7 +40,7 @@ public class SyncTourFieldHandler extends FieldListener
     /**
      * SyncTourFieldHandler Method.
      */
-    public SyncTourFieldHandler(Booking recBooking, String iBookingFieldSeq)
+    public SyncTourFieldHandler(Record recBooking, String iBookingFieldSeq)
     {
         this();
         this.init(recBooking, iBookingFieldSeq);
@@ -48,7 +48,7 @@ public class SyncTourFieldHandler extends FieldListener
     /**
      * Initialize class fields.
      */
-    public void init(Booking recBooking, String iBookingFieldSeq)
+    public void init(Record recBooking, String iBookingFieldSeq)
     {
         m_recBooking = null;
         super.init(null);
@@ -62,14 +62,14 @@ public class SyncTourFieldHandler extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        Tour recTour = (Tour)this.getOwner().getRecord();
+        Record recTour = this.getOwner().getRecord();
         if (m_recBooking != null)
-            if (m_recBooking.getField(Booking.TOUR_ID).equals(recTour.getCounterField()))
+            if (m_recBooking.getField(BookingModel.TOUR_ID).equals(recTour.getCounterField()))
                 if ((m_recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (m_recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
             {
-                Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
+                Record recTourHeader = ((ReferenceField)recTour.getField(TourModel.TOUR_HEADER_ID)).getReference();
                 if (recTourHeader != null)
-                    if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() == false)
+                    if (recTourHeader.getField(TourHeaderModel.TOUR_SERIES).getState() == false)
                     {
                         boolean[] rgbEnabled = m_recBooking.getField(m_iBookingFieldSeq).setEnableListeners(false);
                         m_recBooking.getField(m_iBookingFieldSeq).moveFieldToThis(this.getOwner());
