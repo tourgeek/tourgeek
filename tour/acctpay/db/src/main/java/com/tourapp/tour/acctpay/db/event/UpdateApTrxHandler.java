@@ -22,10 +22,10 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  UpdateApTrxHandler - Base class to do A/P G/L Updates for A/P Transactions.
@@ -136,15 +136,15 @@ public class UpdateApTrxHandler extends UpdateAcctDetailHandler
      * (The product category contains many of the G/L accounts).
      * @return The product category record for this trx.
      */
-    public ProductCategory getProductCategory()
+    public ProductCategoryModel getProductCategory()
     {
         // ApTrx->Tour->TourHeader->ProductCat P/P  vs  A/R
         Record recApTrx = this.getOwner();
         if (recApTrx.getField(ApTrx.TOUR_ID).isNull())
             return null;    // No tour
-        Tour recTour = (Tour)((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference();
-        TourHeader recTourHeader = (TourHeader)((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).getReference();
-        ProductCategory recProductCategory = (ProductCategory)((ReferenceField)recTourHeader.getField(TourHeader.PRODUCT_CAT_ID)).getReference();
+        Record recTour =((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference();
+        Record recTourHeader = ((ReferenceField)recTour.getField(TourModel.TOUR_HEADER_ID)).getReference();
+        ProductCategoryModel recProductCategory = (ProductCategoryModel)((ReferenceField)recTourHeader.getField(TourHeaderModel.PRODUCT_CAT_ID)).getReference();
         return recProductCategory;
     }
     /**

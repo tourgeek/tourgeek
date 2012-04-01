@@ -20,7 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 
 /**
@@ -72,9 +72,9 @@ public class UpdateDepEstHandler extends UpdateApTrxHandler
      */
     public ReferenceField getDrAccount()
     {
-        Record recProductCat = this.getProductCategory();
+        ProductCategoryModel recProductCat = this.getProductCategory();
         if (recProductCat != null)
-            return (ReferenceField)recProductCat.getField(ProductCategory.LAND_ACCOUNT_ID);    // Cost of tours
+            return (ReferenceField)recProductCat.getField(ProductCategoryModel.LAND_ACCOUNT_ID);    // Cost of tours
         return (ReferenceField)this.getApControl().getField(ApControl.COST_ACCOUNT_ID);    // Rarely
     }
     /**
@@ -83,9 +83,9 @@ public class UpdateDepEstHandler extends UpdateApTrxHandler
      */
     public ReferenceField getCrAccount()
     {
-        Record recProductCat = this.getProductCategory();
+        ProductCategoryModel recProductCat = this.getProductCategory();
         if (recProductCat != null)
-            return (ReferenceField)recProductCat.getField(ProductCategory.UNINV_ACCOUNT_ID);    // Uninvoiced est cost of tours
+            return (ReferenceField)recProductCat.getField(ProductCategoryModel.UNINV_ACCOUNT_ID);    // Uninvoiced est cost of tours
         return null;    // Never?
     }
     /**
