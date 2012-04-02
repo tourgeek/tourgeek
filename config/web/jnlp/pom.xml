@@ -35,9 +35,24 @@
               <jarResources>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.genled</artifactId>
+                  <artifactId>com.tourapp.tour.genled.screen</artifactId>
                   <version>${project.version}</version>
                   <mainClass>com.tourapp.tour.genled.screen.detail.LinkTrxGridScreen</mainClass>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.genled.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.genled.report</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.genled.finstmt</artifactId>
+                  <version>${project.version}</version>
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
