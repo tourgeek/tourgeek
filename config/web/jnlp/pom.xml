@@ -101,7 +101,17 @@
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.payroll</artifactId>
+                  <artifactId>com.tourapp.tour.payroll.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.payroll.screen</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.payroll.report</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>
@@ -111,12 +121,37 @@
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.profile</artifactId>
+                  <artifactId>com.tourapp.tour.profile.db</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.request</artifactId>
+                  <artifactId>com.tourapp.tour.profile.detail</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.profile.screen</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.request.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.request.screen</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.request.report</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.request.misc</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>

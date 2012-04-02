@@ -86,7 +86,17 @@
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
-        <artifactId>com.tourapp.tour.payroll</artifactId>
+        <artifactId>com.tourapp.tour.payroll.db</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.payroll.screen</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.payroll.report</artifactId>
         <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
@@ -96,12 +106,37 @@
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
-        <artifactId>com.tourapp.tour.profile</artifactId>
+        <artifactId>com.tourapp.tour.profile.db</artifactId>
         <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
-        <artifactId>com.tourapp.tour.request</artifactId>
+        <artifactId>com.tourapp.tour.profile.detail</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.profile.screen</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.request.db</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.request.screen</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.request.report</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>com.tourapp.tour.request.misc</artifactId>
         <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>

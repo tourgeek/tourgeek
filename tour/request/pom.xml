@@ -4,55 +4,21 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
-    <version>0.8.0-SNAPSHOT</version>
+        <groupId>com.tourapp.tour</groupId>
+        <artifactId>tourapp-tour-reactor</artifactId>
+  	<version>0.8.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.request</artifactId>
-  <name>tourapp-tour-request - Request</name>
-  <description>tourapp-tour-request (Request)</description>
-  <packaging>bundle</packaging>
+  <groupId>com.tourapp.tour</groupId>
+  <artifactId>tourapp-tour-request-reactor</artifactId>
+  <name>tourapp-tour-request-reactor - Tour request parent</name>
+  <packaging>pom</packaging>
 
-  <properties>
-    <jbundlePackageImport>
-      *;resolution:=optional,
-      com.tourapp.res.tour.request;resolution:=optional,
-    </jbundlePackageImport>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
-      <artifactId>com.tourapp.model.tour.request</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.profile</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jbundle.base.screen</groupId>
-      <artifactId>org.jbundle.base.screen.view.html</artifactId>   <!-- Get rid of this dependency -->
-      <version>${jbundleVersionRange}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jbundle.base.screen</groupId>
-      <artifactId>org.jbundle.base.screen.view.xml</artifactId>   <!-- Get rid of this dependency -->
-      <version>${jbundleVersionRange}</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.request</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
+  <modules>
+  	<module>db</module>
+  	<module>screen</module>
+  	<module>report</module>
+  	<module>misc</module>
+  </modules>
 
 </project>
