@@ -66,61 +66,61 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048578">
-		<LastChanged>2012-01-13T10:58:54</LastChanged>
+		<LastChanged>2012-04-01T10:58:45</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>acctpay</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,609</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
 		<Description>Accounts payable</Description>
 		<SystemClasses/>
-		<PackageName>.acctpay</PackageName>
-		<ProjectPath>mixed</ProjectPath>
-		<InterfacePackage>.acctpay</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/acctpay</InterfaceProjectPath>
-		<ThinPackage>.acctpay</ThinPackage>
-		<ThinProjectPath>../thin/tour/acctpay</ThinProjectPath>
-		<ResourcePackage>.acctpay</ResourcePackage>
-		<ResProjectPath>../res/tour/acctpay</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>db</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctpay</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctpay</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048579">
-		<LastChanged>2012-01-13T10:59:04</LastChanged>
+		<LastChanged>2012-03-31T10:03:30</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>acctrec</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,606</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Accounts receivable</Description>
+		<Description>Accounts receivable db</Description>
 		<SystemClasses/>
-		<PackageName>.acctrec</PackageName>
-		<ProjectPath>mixed</ProjectPath>
-		<InterfacePackage>.acctrec</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/acctrec</InterfaceProjectPath>
-		<ThinPackage>.acctrec</ThinPackage>
-		<ThinProjectPath>../thin/tour/acctrec</ThinProjectPath>
-		<ResourcePackage>.acctrec</ResourcePackage>
-		<ResProjectPath>../res/tour/acctrec</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>db</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctrec</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctrec</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctrec</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048580">
-		<LastChanged>2012-01-13T19:58:15</LastChanged>
+		<LastChanged>2012-03-28T10:44:27</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>core</Name>
+		<Name>db</Name>
 		<ParentFolderID>1,048,598</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Asset debt</Description>
+		<Description>Asset debt dbs</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>core</ProjectPath>
+		<ProjectPath>db</ProjectPath>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/assetdr</InterfaceProjectPath>
 		<ThinPackage/>
@@ -132,133 +132,133 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048581">
-		<LastChanged>2012-01-13T10:59:16</LastChanged>
+		<LastChanged>2012-04-01T09:29:43</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>booking</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,613</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Booking</Description>
+		<Description>Booking db</Description>
 		<SystemClasses/>
-		<PackageName>.booking</PackageName>
-		<ProjectPath>mixed</ProjectPath>
-		<InterfacePackage>.booking</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/booking</InterfaceProjectPath>
-		<ThinPackage>.booking</ThinPackage>
-		<ThinProjectPath>../thin/tour/booking</ThinProjectPath>
-		<ResourcePackage>.booking</ResourcePackage>
-		<ResProjectPath>../res/tour/booking</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/booking</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/booking</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048582">
-		<LastChanged>2012-01-13T10:52:30</LastChanged>
+		<LastChanged>2012-04-02T01:49:23</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>genled</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,618</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>General ledger</Description>
+		<Description>General ledger db</Description>
 		<SystemClasses/>
-		<PackageName>.genled</PackageName>
-		<ProjectPath/>
-		<InterfacePackage>.genled</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/genled</InterfaceProjectPath>
-		<ThinPackage>.genled</ThinPackage>
-		<ThinProjectPath>../thin/tour/genled</ThinProjectPath>
-		<ResourcePackage>.genled</ResourcePackage>
-		<ResProjectPath>../res/tour/genled</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>db</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/genled</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/genled</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/genled</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048583">
-		<LastChanged>2012-01-13T10:59:33</LastChanged>
+		<LastChanged>2012-04-01T11:58:26</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>payroll</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,615</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Payroll</Description>
+		<Description>Payroll db</Description>
 		<SystemClasses/>
-		<PackageName>.payroll</PackageName>
-		<ProjectPath/>
-		<InterfacePackage>.payroll</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/payroll</InterfaceProjectPath>
-		<ThinPackage>.payroll</ThinPackage>
-		<ThinProjectPath>../thin/tour/payroll</ThinProjectPath>
-		<ResourcePackage>.payroll</ResourcePackage>
-		<ResProjectPath>../res/tour/payroll</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>db</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/payroll</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/payroll</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/payroll</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048584">
-		<LastChanged>2012-01-13T10:59:44</LastChanged>
+		<LastChanged>2012-04-02T01:40:50</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>product</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,614</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Product</Description>
+		<Description>Product db</Description>
 		<SystemClasses/>
-		<PackageName>.product</PackageName>
-		<ProjectPath>mixed</ProjectPath>
-		<InterfacePackage>.product</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/product</InterfaceProjectPath>
-		<ThinPackage>.product</ThinPackage>
-		<ThinProjectPath>../thin/tour/product</ThinProjectPath>
-		<ResourcePackage>.product</ResourcePackage>
-		<ResProjectPath>../res/tour/product</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/product</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/product</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/product</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048585">
-		<LastChanged>2012-01-13T11:00:01</LastChanged>
+		<LastChanged>2012-04-01T11:54:13</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>request</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,616</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Request</Description>
+		<Description>Request db</Description>
 		<SystemClasses/>
-		<PackageName>.request</PackageName>
-		<ProjectPath/>
-		<InterfacePackage>.request</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/request</InterfaceProjectPath>
-		<ThinPackage>.request</ThinPackage>
-		<ThinProjectPath>../thin/tour/request</ThinProjectPath>
-		<ResourcePackage>.request</ResourcePackage>
-		<ResProjectPath>../res/tour/request</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>db</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/request</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/request</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/request</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048586">
-		<LastChanged>2012-01-13T11:00:11</LastChanged>
+		<LastChanged>2012-04-01T11:50:37</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>profile</Name>
-		<ParentFolderID>1,048,575</ParentFolderID>
+		<Name>db</Name>
+		<ParentFolderID>1,048,617</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
 		<Description>Profile</Description>
 		<SystemClasses/>
-		<PackageName>.profile</PackageName>
-		<ProjectPath/>
-		<InterfacePackage>.profile</InterfacePackage>
-		<InterfaceProjectPath>../model/tour/profile</InterfaceProjectPath>
-		<ThinPackage>.profile</ThinPackage>
-		<ThinProjectPath>../thin/tour/profile</ThinProjectPath>
-		<ResourcePackage>.profile</ResourcePackage>
-		<ResProjectPath>../res/tour/profile</ResProjectPath>
+		<PackageName/>
+		<ProjectPath>db</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/profile</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/profile</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/profile</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>
@@ -633,6 +633,644 @@
 		<ThinProjectPath/>
 		<ResourcePackage/>
 		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048604">
+		<LastChanged>2012-03-28T11:43:01</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,598</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Asset debt screens</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>screen</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/assetdr</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/assetdr</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/assetdr</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048605">
+		<LastChanged>2012-03-28T11:43:23</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,598</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Asset debt reports</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/assetdr</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/assetdr</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/assetdr</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048606">
+		<LastChanged>2012-03-29T10:22:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>acctrec</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts receivable</Description>
+		<SystemClasses/>
+		<PackageName>.acctrec</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.acctrec</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.acctrec</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.acctrec</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048607">
+		<LastChanged>2012-03-31T15:53:16</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,606</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts receivable screen</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctrec</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctrec</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctrec</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048608">
+		<LastChanged>2012-03-31T15:53:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,606</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts receivable reports</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctrec</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctrec</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctrec</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048609">
+		<LastChanged>2012-03-31T19:02:27</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>acctpay</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts payable</Description>
+		<SystemClasses/>
+		<PackageName>.acctpay</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.acctpay</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.acctpay</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.acctpay</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048610">
+		<LastChanged>2012-04-01T10:01:06</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>air</Name>
+		<ParentFolderID>1,048,609</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts payable air</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctpay</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctpay</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048611">
+		<LastChanged>2012-04-01T10:01:09</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,609</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts payable screen</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctpay</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctpay</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048612">
+		<LastChanged>2012-04-01T10:00:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,609</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Accounts payable report</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/acctpay</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/acctpay</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048613">
+		<LastChanged>2012-03-31T19:02:46</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>booking</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Booking</Description>
+		<SystemClasses/>
+		<PackageName>.booking</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.booking</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.booking</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.booking</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048614">
+		<LastChanged>2012-03-31T19:03:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>product</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Product</Description>
+		<SystemClasses/>
+		<PackageName>.product</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.product</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.product</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.product</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048615">
+		<LastChanged>2012-03-31T19:03:44</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>payroll</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Payroll</Description>
+		<SystemClasses/>
+		<PackageName>.payroll</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.payroll</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.payroll</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.payroll</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048616">
+		<LastChanged>2012-03-31T19:04:22</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>request</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Request</Description>
+		<SystemClasses/>
+		<PackageName>.request</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.request</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.request</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.request</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048617">
+		<LastChanged>2012-03-31T19:04:44</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>profile</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Profile</Description>
+		<SystemClasses/>
+		<PackageName>.profile</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.profile</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.profile</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.profile</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048618">
+		<LastChanged>2012-03-31T19:05:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>genled</Name>
+		<ParentFolderID>1,048,575</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>General ledger</Description>
+		<SystemClasses/>
+		<PackageName>.genled</PackageName>
+		<ProjectPath/>
+		<InterfacePackage>.genled</InterfacePackage>
+		<InterfaceProjectPath/>
+		<ThinPackage>.genled</ThinPackage>
+		<ThinProjectPath/>
+		<ResourcePackage>.genled</ResourcePackage>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048619">
+		<LastChanged>2012-04-02T01:49:32</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>finstmt</Name>
+		<ParentFolderID>1,048,618</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>General ledger finstmt</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>finstmt</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/genled</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/genled</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/genled</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048620">
+		<LastChanged>2012-04-02T01:49:39</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,618</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>General ledger report</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>report</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/genled</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/genled</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/genled</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048621">
+		<LastChanged>2012-04-02T01:49:48</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,618</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>General ledger screen</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>screen</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/genled</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/genled</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/genled</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048622">
+		<LastChanged>2012-04-01T11:58:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,615</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Payroll reports</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>report</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/payroll</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/payroll</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/payroll</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048623">
+		<LastChanged>2012-04-01T11:58:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,615</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Payroll screens</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>screen</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/payroll</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/payroll</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/payroll</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048624">
+		<LastChanged>2012-04-01T09:20:29</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,614</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Product screens</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/product</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/product</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/product</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048625">
+		<LastChanged>2012-04-01T09:27:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>entry</Name>
+		<ParentFolderID>1,048,613</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Booking entry</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/booking</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/booking</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048626">
+		<LastChanged>2012-04-01T09:27:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>remote</Name>
+		<ParentFolderID>1,048,613</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Booking remote</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/booking</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/booking</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048627">
+		<LastChanged>2012-04-01T09:27:51</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,613</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Booking reports</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>../mixed</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/booking</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/booking</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048628">
+		<LastChanged>2012-04-01T11:54:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,616</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Request screens</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>screen</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/request</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/request</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/request</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048629">
+		<LastChanged>2012-04-01T11:54:25</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>report</Name>
+		<ParentFolderID>1,048,616</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Request reports</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>report</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/request</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/request</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/request</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048630">
+		<LastChanged>2012-04-01T11:54:31</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>misc</Name>
+		<ParentFolderID>1,048,616</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Request other</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>misc</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/request</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/request</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/request</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048631">
+		<LastChanged>2012-04-01T11:50:44</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>screen</Name>
+		<ParentFolderID>1,048,617</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Profile screen</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>screen</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/profile</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/profile</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/profile</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048632">
+		<LastChanged>2012-04-01T11:50:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>detail</Name>
+		<ParentFolderID>1,048,617</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Profile detail db</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>detail</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath>../../model/tour/profile</InterfaceProjectPath>
+		<ThinPackage/>
+		<ThinProjectPath>../../thin/tour/profile</ThinProjectPath>
+		<ResourcePackage/>
+		<ResProjectPath>../../res/tour/profile</ResProjectPath>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>

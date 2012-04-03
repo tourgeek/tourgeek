@@ -8517,7 +8517,7 @@
 		<LastChanged>2011-08-05T15:59:43</LastChanged>
 		<Deleted>N</Deleted>
 		<KeyFilename>BookingLine</KeyFilename>
-		<KeyNumber>3</KeyNumber>
+		<KeyNumber>2</KeyNumber>
 		<KeyField1>BookingID</KeyField1>
 		<KeyField2>Sequence</KeyField2>
 		<KeyField3/>
@@ -8535,7 +8535,7 @@
 		<LastChanged>2011-08-05T15:59:43</LastChanged>
 		<Deleted>N</Deleted>
 		<KeyFilename>BookingLine</KeyFilename>
-		<KeyNumber>2</KeyNumber>
+		<KeyNumber>3</KeyNumber>
 		<KeyField1>BookingID</KeyField1>
 		<KeyField2>BookingPaxID</KeyField2>
 		<KeyField3>ModuleID</KeyField3>

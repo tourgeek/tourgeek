@@ -6380,7 +6380,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="344">
-		<LastChanged>2011-08-05T15:59:45</LastChanged>
+		<LastChanged>2007-03-05T11:10:00</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>ApCurrInvTotal</FieldName>
 		<FieldClass>DoubleField</FieldClass>
@@ -104500,7 +104500,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="6272">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-19T03:27:10</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>LinkedTrxID</FieldName>
 		<FieldClass>TrxField</FieldClass>

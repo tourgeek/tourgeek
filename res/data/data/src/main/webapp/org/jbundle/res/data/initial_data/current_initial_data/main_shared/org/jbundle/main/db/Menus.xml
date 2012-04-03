@@ -833,7 +833,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="430">
-		<LastChanged>2010-10-17T07:30:27</LastChanged>
+		<LastChanged>2010-10-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Profile Support Files</Name>
 		<ParentFolderID>423</ParentFolderID>
@@ -6678,7 +6678,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1509">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2009-04-25T07:14:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Chat menu</Name>
 		<ParentFolderID>1,205</ParentFolderID>
