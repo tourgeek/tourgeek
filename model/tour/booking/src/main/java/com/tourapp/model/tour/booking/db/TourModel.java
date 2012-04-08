@@ -4,6 +4,8 @@
  */
 package com.tourapp.model.tour.booking.db;
 
+import com.tourapp.model.tour.product.tour.db.*;
+import org.jbundle.model.db.*;
 import com.tourapp.model.tour.booking.db.*;
 
 public interface TourModel extends JobModel
@@ -73,5 +75,14 @@ public interface TourModel extends JobModel
     public static final String TOUR_FILE = "Tour";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.Tour";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.db.Tour";
+    /**
+     * Given the tour header and the departure date, setup or locate
+     * the correct tour.
+     */
+    public int setupTourFromHeader(TourHeaderModel recTourHeader, Field fldDepDate, String strCode, String strDescription);
+    /**
+     * CalcTourDates Method.
+     */
+    public void calcTourDates(Rec recTourHeader);
 
 }

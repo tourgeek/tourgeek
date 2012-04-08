@@ -27,6 +27,7 @@ import com.tourapp.tour.booking.history.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.db.event.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
@@ -231,7 +232,7 @@ public class BookingLine extends BookingSub
         this.getField(BookingLine.COMMISSION_RATE).addListener(new CalcLineFieldsHandler(null));
         this.getField(BookingLine.PRICING_STATUS_ID).addListener(new InitFieldHandler(Integer.toString(PricingStatus.OKAY)));
         
-        Booking recBooking = this.getBooking(false);
+        Booking recBooking = (Booking)this.getBooking(false);
         if (recBooking != null)
             this.addSubListeners(recBooking);
     }
@@ -247,19 +248,19 @@ public class BookingLine extends BookingSub
     /**
      * AddDetailBehaviors Method.
      */
-    public void addDetailBehaviors(Booking recBooking, Tour recTour)
+    public void addDetailBehaviors(BookingModel recBooking, TourModel recTour)
     {
         super.addDetailBehaviors(recBooking, recTour);
         if (recBooking != null)
         {
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.COMMISSION), BookingLine.COMMISSION, true, true));
-            this.addListener(new SubCountHandler(recBooking.getField(Booking.NET), BookingLine.NET, true, true));
+            this.addListener(new SubCountHandler((BaseField)recBooking.getField(Booking.GROSS), BookingLine.GROSS, true, true));
+            this.addListener(new SubCountHandler((BaseField)recBooking.getField(Booking.COMMISSION), BookingLine.COMMISSION, true, true));
+            this.addListener(new SubCountHandler((BaseField)recBooking.getField(Booking.NET), BookingLine.NET, true, true));
         
-            recBooking.getField(Booking.NET).addListener(new SetDirtyOnChangeHandler(recBooking.getField(Booking.BOOKING_STATUS_ID), true, true));  // This makes sure the booking will update which will trigger an A/R update
-            recBooking.addListener(new UpdateOnCloseHandler(null));
+            ((Record)recBooking.getField(Booking.NET)).addListener(new SetDirtyOnChangeHandler((BaseField)recBooking.getField(Booking.BOOKING_STATUS_ID), true, true));  // This makes sure the booking will update which will trigger an A/R update
+            ((Record)recBooking).addListener(new UpdateOnCloseHandler(null));
         
-            this.addSubListeners(recBooking);
+            this.addSubListeners((Booking)recBooking);
         }
     }
     /**

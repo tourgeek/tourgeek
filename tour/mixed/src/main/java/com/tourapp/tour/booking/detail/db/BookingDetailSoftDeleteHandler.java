@@ -45,6 +45,8 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.booking.history.db.*;
 import java.text.*;
 import org.jbundle.thin.base.db.buff.*;
+import com.tourapp.model.tour.booking.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  BookingDetailSoftDeleteHandler - .

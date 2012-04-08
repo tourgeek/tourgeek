@@ -20,14 +20,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.hotel.screen.*;
-import com.tourapp.tour.product.land.screen.*;
-import com.tourapp.tour.product.trans.screen.*;
-import com.tourapp.tour.product.car.screen.*;
-import com.tourapp.tour.product.cruise.screen.*;
-import com.tourapp.tour.product.air.screen.*;
-import com.tourapp.tour.product.item.screen.*;
-import com.tourapp.tour.product.tour.other.screen.*;
+import java.util.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  InventoryField - .

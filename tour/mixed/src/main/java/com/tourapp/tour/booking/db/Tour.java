@@ -32,6 +32,7 @@ import com.tourapp.tour.product.tour.other.screen.*;
 import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.acctpay.db.event.*;
+import com.tourapp.model.tour.product.tour.db.*;
 import com.tourapp.tour.base.field.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.product.air.db.*;
@@ -393,7 +394,7 @@ public class Tour extends Job
      * Given the tour header and the departure date, setup or locate
      * the correct tour.
      */
-    public int setupTourFromHeader(TourHeader recTourHeader, BaseField fldDepDate, String strCode, String strDescription)
+    public int setupTourFromHeader(TourHeaderModel recTourHeader, Field fldDepDate, String strCode, String strDescription)
     {
         if ((recTourHeader.getEditMode() != DBConstants.EDIT_CURRENT)
             && (recTourHeader.getEditMode() != DBConstants.EDIT_IN_PROGRESS))
@@ -409,11 +410,11 @@ public class Tour extends Job
         }
         if (bNewTour)
         { // Tour Header - Create this booking's tour from the tour header
-            return this.setupNewTour(recTourHeader, fldDepDate, strCode, strDescription);
+            return this.setupNewTour((Record)recTourHeader, (BaseField)fldDepDate, strCode, strDescription);
         }
         else
         { // Series - Get the booking's tour from the tour header
-            return this.lookupTour(recTourHeader, fldDepDate);
+            return this.lookupTour((Record)recTourHeader, (BaseField)fldDepDate);
         }
     }
     /**
@@ -577,7 +578,7 @@ public class Tour extends Job
     /**
      * CalcTourDates Method.
      */
-    public void calcTourDates(Record recTourHeader)
+    public void calcTourDates(Rec recTourHeader)
     {
         if (recTourHeader == null)
             recTourHeader = ((ReferenceField)this.getField(Tour.TOUR_HEADER_ID)).getReference();

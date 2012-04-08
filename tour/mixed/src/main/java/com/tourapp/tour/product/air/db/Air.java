@@ -21,11 +21,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.air.screen.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.*;
@@ -34,7 +32,8 @@ import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.air.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.product.air.db.*;
@@ -99,11 +98,11 @@ public class Air extends TransportProduct
         if ((iDocMode & Product.PRICING_GRID_SCREEN) == Product.PRICING_GRID_SCREEN)
             screen = Record.makeNewScreen(AirPricing.AIR_PRICING_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_GRID_SCREEN) == Product.INVENTORY_GRID_SCREEN)
-            screen = Record.makeNewScreen(AirInventory.AIR_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(AirInventoryModel.AIR_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_SCREEN) == Product.INVENTORY_SCREEN)
-            screen = Record.makeNewScreen(AirInventory.AIR_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(AirInventoryModel.AIR_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.RANGE_ADJUST_SCREEN) == Product.RANGE_ADJUST_SCREEN)
-            screen = Record.makeNewScreen(AirInventory.AIR_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(AirInventoryModel.AIR_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(AIR_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
@@ -445,9 +444,9 @@ public class Air extends TransportProduct
     /**
      * Create the booking detail for this product type.
      */
-    public BookingDetail getBookingDetail(RecordOwner recordOwner)
+    public BookingDetailModel getBookingDetail(RecordOwner recordOwner)
     {
-        return new BookingAir(recordOwner);
+        return (BookingDetailModel)Record.makeRecordFromClassName(BookingAirModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetAirCost Method.
@@ -473,12 +472,12 @@ public class Air extends TransportProduct
      * @return NORMAL_RETURN if price exists and was added
      * @return ERROR_RETURN if no pricing (or a zero price) was added.
      */
-    public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
+    public int updateBookingPricing(BookingLineModel recBookingLine, BookingDetailModel recBookingDetail, int iChangeType)
     {
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetailModel.DETAIL_DATE)).getDateTime();
         short sTargetPax = recBookingDetail.getNoPax();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
+        int iRateID = (int)recBookingDetail.getField(BookingDetailModel.RATE_ID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetailModel.CLASS_ID).getValue();
         AirPricing recProductPricing = ((AirPricing)this.getProductPricing()).getAirCost(this, dateTarget, iRateID, iClassID);
         if (recProductPricing != null)
         {

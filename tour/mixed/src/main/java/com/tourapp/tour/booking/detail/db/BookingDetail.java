@@ -45,6 +45,8 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.booking.history.db.*;
 import java.text.*;
 import org.jbundle.thin.base.db.buff.*;
+import com.tourapp.model.tour.booking.db.*;
+import org.jbundle.model.message.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.tour.db.*;
@@ -58,9 +60,6 @@ public class BookingDetail extends BookingSub
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int MESSAGE_TRANSPORT_OFFSET = 4 /*InfoMessageTransportID - InfoStatusID*/;
-    public static final int MESSAGE_KEY_OFFSET = 1 /*InfoRequestKey - kInfoStatusID*/;
-    public static final int MESSAGE_REQUEST_OFFSET = 2 /*InfoStatusRequest - InfoStatusID*/;
     protected BookingLine m_recBookingLine = null;
     /**
      * Default constructor.
@@ -849,14 +848,14 @@ public class BookingDetail extends BookingSub
     /**
      * AddDetailBehaviors Method.
      */
-    public void addDetailBehaviors(Booking recBooking, Tour recTour)
+    public void addDetailBehaviors(BookingModel recBooking, TourModel recTour)
     {
         // NOTE: This next set of logic should really go somewhere else, but this date/city default logic is easy here.
         Record screenRecord = null;
-        if ((recBooking.getRecordOwner() != null)
-            && (recBooking.getRecordOwner().getScreenRecord() instanceof BookingScreenRecord))
+        if ((((Record)recBooking).getRecordOwner() != null)
+            && (((Record)recBooking).getRecordOwner().getScreenRecord() instanceof BookingScreenRecord))
         {
-            screenRecord = (Record)recBooking.getRecordOwner().getScreenRecord();
+            screenRecord = (Record)((Record)recBooking).getRecordOwner().getScreenRecord();
             Record recProduct = ((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this.getRecordOwner());
             // Note that I add these listeners in reverse since they always do the other listeners before they do themselves.
             if (recProduct != null)
@@ -876,10 +875,10 @@ public class BookingDetail extends BookingSub
         }
         // Note these next listener are just a backup if the screenRecord date is null or not available. (First departure, then today)
         this.getField(BookingDetail.DETAIL_DATE).addListener(new InitFieldHandler(new Date()));
-        this.getField(BookingDetail.DETAIL_DATE).addListener(new InitFieldHandler(recTour.getField(Tour.DEPARTURE_DATE), false));
+        this.getField(BookingDetail.DETAIL_DATE).addListener(new InitFieldHandler((BaseField)recTour.getField(Tour.DEPARTURE_DATE), false));
         
         // Make sure header is up-to-date for possible server record changes.
-        this.addListener(new WriteOnUpdateHandler(recBooking, true));
+        this.addListener(new WriteOnUpdateHandler((Record)recBooking, true));
         super.addDetailBehaviors(recBooking, recTour); 
         
         this.setOpenMode(this.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
@@ -1180,7 +1179,7 @@ public class BookingDetail extends BookingSub
             // Even though there is an error, continue setting the other properties (hey behaviors are disabled)
         }
         if (recBooking == null)
-            recBooking = this.getBooking(true);
+            recBooking = (Booking)this.getBooking(true);
         if (recTour == null)
         {
             if (this.getField(BookingDetail.TOUR_ID).isNull())
@@ -1366,7 +1365,7 @@ public class BookingDetail extends BookingSub
             return 1; // Pax mod
         else
         {
-            Record recBooking = this.getBooking(true);
+            BookingModel recBooking = this.getBooking(true);
             if (recBooking == null)
                 return 1;
             return (short)recBooking.getField(Booking.PAX).getValue();
@@ -1381,7 +1380,7 @@ public class BookingDetail extends BookingSub
             return 1; // Pax mod **FIX THIS**
         else
         {
-            Booking booking = this.getBooking(true);
+            Booking booking = (Booking)this.getBooking(true);
             if ((iRoomType >= PaxCategory.SINGLE_ID)
                 && (iRoomType <= PaxCategory.CHILD_ID))
             {
@@ -1496,7 +1495,7 @@ public class BookingDetail extends BookingSub
                     this.addListener(new SendMessageAfterUpdateHandler(message.getMessage()));
                     Record recTour = ((ReferenceField)this.getBooking(true).getField(Booking.TOUR_ID)).getReference();
                     recTour.writeAndRefresh();
-                    this.getBooking(true).writeAndRefresh();
+                    ((Booking)this.getBooking(true)).writeAndRefresh();
                     this.writeAndRefresh();
                     if (this.getListener(SendMessageAfterUpdateHandler.class) != null) // Just in case write and refresh didn't need to write this (also frees listener)
                         this.getListener(SendMessageAfterUpdateHandler.class).doRecordChange(null, DBConstants.AFTER_UPDATE_TYPE, DBConstants.DISPLAY);
@@ -1622,7 +1621,7 @@ public class BookingDetail extends BookingSub
     /**
      * Add any message properties that are set in this record.
      */
-    public void addMessageProperties(String strPrefix, boolean bDeleteProperties, TrxMessageHeader messageHeader, BaseMessage message, String strNewPrefix)
+    public void addMessageProperties(String strPrefix, boolean bDeleteProperties, MessageHeader messageHeader, Message message, String strNewPrefix)
     {
         Map<String,Object> properties = ((PropertiesField)this.getField(BookingDetail.PROPERTIES)).getProperties();
         if (properties != null)
@@ -1639,11 +1638,11 @@ public class BookingDetail extends BookingSub
                     strKey = strKey.substring(strPrefix.length());
                     if (strNewPrefix != null)
                         strKey = strNewPrefix + strKey;
-                    if (messageHeader != null)
-                        messageHeader.put(strKey, value);
-                    if (message != null)
-                        if (message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE) != null)
-                            ((MessageRecordDesc)message.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).put(strKey, value);
+                    if (messageHeader instanceof TrxMessageHeader) // Always
+                        ((TrxMessageHeader)messageHeader).put(strKey, value);
+                    if (message instanceof BaseMessage) // Always
+                        if (((BaseMessage)message).getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE) != null)
+                            ((MessageRecordDesc)((BaseMessage)message).getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).put(strKey, value);
                 }
             }
         }
@@ -1722,7 +1721,7 @@ public class BookingDetail extends BookingSub
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         
-        Booking recBooking = this.getBooking(true);
+        Booking recBooking = (Booking)this.getBooking(true);
         
         int iNonTourPricingType = (int)((ReferenceField)recBooking.getField(Booking.NON_TOUR_PRICING_TYPE_ID)).getReference().getField(PricingType.PRICING_CODES).getValue();
         if (iNonTourPricingType == PricingType.OPTION_PRICING)  // Can't have option pricing on non-tours!
@@ -1870,7 +1869,7 @@ public class BookingDetail extends BookingSub
     {
         if (m_recBookingLine == null)
         {
-            Booking recBooking = this.getBooking(true);
+            Booking recBooking = (Booking)this.getBooking(true);
             Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
             m_recBookingLine = new BookingLine(this.findRecordOwner());
             m_recBookingLine.addDetailBehaviors(recBooking, recTour);
@@ -1893,7 +1892,7 @@ public class BookingDetail extends BookingSub
      * @return NORMAL_RETURN if a pricing item was added
      * @return ERROR_RETURN If no pricing was added, or a item was deleted making this line item total zero.
      */
-    public int updateBookingLine(BookingLine recBookingLine, int iPricingType, int iPaxCategory,  int iQuantity, double dAmount, boolean bCommissionable, double dCommissionRate, String
+    public int updateBookingLine(BookingLineModel bookingLine, int iPricingType, int iPaxCategory,  int iQuantity, double dAmount, boolean bCommissionable, double dCommissionRate, String
      strPayAt, int iPricingStatusID, int iChangeType)
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
@@ -1903,7 +1902,8 @@ public class BookingDetail extends BookingSub
             this.getField(BookingDetail.PP_PRICE_LOCAL).setValue(0.00);
         }
         
-        Booking recBooking = this.getBooking(true);        
+        Booking recBooking = (Booking)this.getBooking(true);        
+        BookingLine recBookingLine = (BookingLine)bookingLine;
         try {
             recBookingLine.addNew();
             if (iChangeType != DBConstants.ADD_TYPE)
@@ -2029,7 +2029,7 @@ public class BookingDetail extends BookingSub
     {
         BookingAnswer recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
         BookingPax recBookingPax = null;
-        Booking recBooking = this.getBooking(true);
+        Booking recBooking = (Booking)this.getBooking(true);
         if ((recBooking == null)
                 || (recBooking.getEditMode() == DBConstants.EDIT_NONE))
             return DBConstants.ERROR_RETURN;

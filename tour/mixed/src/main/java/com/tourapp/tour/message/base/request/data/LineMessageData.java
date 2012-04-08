@@ -102,7 +102,7 @@ public class LineMessageData extends MessageRecordDesc
      */
     public Rec createSubDataRecord(Rec record)
     {
-        Booking recBooking = ((BookingDetail)record).getBooking(true);
+        Booking recBooking = (Booking)((BookingDetail)record).getBooking(true);
         BookingLine recBookingLine = new BookingLine(recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         recBookingLine.addListener(new SubFileFilter(recBooking));
         return recBookingLine;

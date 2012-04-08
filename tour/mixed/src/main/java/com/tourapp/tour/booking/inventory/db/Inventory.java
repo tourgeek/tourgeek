@@ -20,14 +20,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.hotel.screen.*;
-import com.tourapp.tour.product.land.screen.*;
-import com.tourapp.tour.product.trans.screen.*;
-import com.tourapp.tour.product.car.screen.*;
-import com.tourapp.tour.product.cruise.screen.*;
-import com.tourapp.tour.product.air.screen.*;
-import com.tourapp.tour.product.item.screen.*;
-import com.tourapp.tour.product.tour.other.screen.*;
+import java.util.*;
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
 
@@ -265,14 +259,14 @@ public class Inventory extends VirtualRecord
     /**
      * GetAvailability Method.
      */
-    public Inventory getAvailability(Product recProduct, Date dateTarget, int iRateID, int iClassID, int iOtherID)
+    public InventoryModel getAvailability(ProductModel recProduct, Date dateTarget, int iRateID, int iClassID, int iOtherID)
     {
         int iOldKeyOrder = this.getDefaultOrder();
         try {
             this.addNew();
             this.setKeyArea(Inventory.INV_DATE_KEY);
             ProductType recProductType = (ProductType)((ReferenceField)this.getField(Inventory.PRODUCT_TYPE_ID)).getReferenceRecord();
-            int iProductTypeID = recProductType.getProductTypeID(recProduct);
+            int iProductTypeID = recProductType.getProductTypeID((Product)recProduct);
             this.getField(Inventory.PRODUCT_TYPE_ID).setValue(iProductTypeID);
             this.getField(Inventory.PRODUCT_ID).moveFieldToThis((BaseField)recProduct.getCounterField());
             ((DateField)this.getField(Inventory.INV_DATE)).setDate(dateTarget, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
@@ -310,7 +304,7 @@ public class Inventory extends VirtualRecord
     /**
      * Get all the transaction IDs for this BookingDetail trx ID.
      */
-    public Set<Integer> surveyInventory(BaseField fldTrxID)
+    public Set<Integer> surveyInventory(Field fldTrxID)
     {
         if (fldTrxID == null)
             return null;
@@ -318,7 +312,7 @@ public class Inventory extends VirtualRecord
         InventoryDetail recInventoryDetail = this.getInventoryDetail();
         recInventoryDetail.setKeyArea(InventoryDetail.BOOKING_DETAIL_ID_KEY);
         SubFileFilter listener = null;
-        recInventoryDetail.addListener(listener = new SubFileFilter(fldTrxID, InventoryDetail.BOOKING_DETAIL_ID, null, null, null, null));
+        recInventoryDetail.addListener(listener = new SubFileFilter((BaseField)fldTrxID, InventoryDetail.BOOKING_DETAIL_ID, null, null, null, null));
         try {
             recInventoryDetail.close();
             while (recInventoryDetail.hasNext())
@@ -343,7 +337,7 @@ public class Inventory extends VirtualRecord
      * @param mapSurvey If a changed transaction is contained in this map, remove it
      * @return Error code.
      */
-    public int updateAvailability(int iTargetAmount, BaseField fldTrxID, int iType, boolean bDelete, Set<Integer> setSurvey)
+    public int updateAvailability(int iTargetAmount, Field fldTrxID, int iType, boolean bDelete, Set<Integer> setSurvey)
     {
         Task task = null;
         if (this.getRecordOwner() != null)
@@ -368,7 +362,7 @@ public class Inventory extends VirtualRecord
             recInventoryDetail.addNew();
             recInventoryDetail.setKeyArea(InventoryDetail.INVENTORY_ID_KEY);
             recInventoryDetail.getField(InventoryDetail.INVENTORY_ID).moveFieldToThis((BaseField)this.getCounterField());
-            recInventoryDetail.getField(InventoryDetail.BOOKING_DETAIL_ID).moveFieldToThis(fldTrxID);
+            recInventoryDetail.getField(InventoryDetail.BOOKING_DETAIL_ID).moveFieldToThis((BaseField)fldTrxID);
             recInventoryDetail.getField(InventoryDetail.TYPE).setValue(iType);
             boolean bFound = recInventoryDetail.seek(null);
             if (bFound)
@@ -395,7 +389,7 @@ public class Inventory extends VirtualRecord
             {
                 recInventoryDetail.addNew();
                 recInventoryDetail.getField(InventoryDetail.INVENTORY_ID).moveFieldToThis((BaseField)this.getCounterField());
-                recInventoryDetail.getField(InventoryDetail.BOOKING_DETAIL_ID).moveFieldToThis(fldTrxID);
+                recInventoryDetail.getField(InventoryDetail.BOOKING_DETAIL_ID).moveFieldToThis((BaseField)fldTrxID);
                 recInventoryDetail.getField(InventoryDetail.TYPE).setValue(iType);
                 recInventoryDetail.getField(InventoryDetail.AMOUNT).setValue(iTargetAmount);
                 if (!bDelete)
@@ -414,7 +408,7 @@ public class Inventory extends VirtualRecord
     /**
      * Remove the transactions contained in this map.
      */
-    public int removeTrxs(BaseField fldTrxID, Set<Integer> setSurvey)
+    public int removeTrxs(Field fldTrxID, Set<Integer> setSurvey)
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         if (setSurvey != null)
@@ -460,7 +454,7 @@ public class Inventory extends VirtualRecord
      * Remove the inventory for this BookingDetail trxID.
      * (Deletes the links, and adds the inventory back).
      */
-    public int removeInventory(BaseField fldTrxID)
+    public int removeInventory(Field fldTrxID)
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         Task task = null;
@@ -470,7 +464,7 @@ public class Inventory extends VirtualRecord
         InventoryDetail recInventoryDetail = this.getInventoryDetail();
         recInventoryDetail.setKeyArea(InventoryDetail.BOOKING_DETAIL_ID_KEY);
         SubFileFilter listener = null;
-        recInventoryDetail.addListener(listener = new SubFileFilter(fldTrxID, InventoryDetail.BOOKING_DETAIL_ID, null, null, null, null));
+        recInventoryDetail.addListener(listener = new SubFileFilter((BaseField)fldTrxID, InventoryDetail.BOOKING_DETAIL_ID, null, null, null, null));
         try {
             recInventoryDetail.close();
             while (recInventoryDetail.hasNext())

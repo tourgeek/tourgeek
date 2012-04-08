@@ -24,11 +24,11 @@ import org.jbundle.base.message.opt.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.base.remote.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ProductRateMessageListener - Handle incoming rate messages.
@@ -91,7 +91,7 @@ public class ProductRateMessageListener extends AutoRecordMessageListener
         
         message.put(DBParams.FIELD, MULTIPLE_FIELDS);
         String strProductCostParam = m_record.getField(Product.PRODUCT_COST).getFieldName();
-        Double dblProductCost = (Double)messageData.get(BookingDetail.TOTAL_COST);
+        Double dblProductCost = (Double)messageData.get(BookingDetailModel.TOTAL_COST);
         if (dblProductCost == null)
             dblProductCost = DoubleField.ZERO;
         message.put(strProductCostParam, dblProductCost.toString());

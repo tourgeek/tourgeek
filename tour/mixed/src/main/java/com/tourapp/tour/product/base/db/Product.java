@@ -20,7 +20,6 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.base.db.*;
 import java.util.*;
 import com.tourapp.tour.product.hotel.db.*;
@@ -30,7 +29,6 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.thin.app.booking.entry.search.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.main.msg.screen.*;
 import com.tourapp.tour.message.base.response.*;
 import java.text.*;
@@ -45,10 +43,12 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.product.base.search.screen.*;
-import com.tourapp.tour.booking.entry.event.*;
 import com.tourapp.tour.product.air.db.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.tour.booking.inventory.db.*;
+import com.tourapp.tour.product.base.event.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.model.tour.product.base.db.*;
 
 /**
@@ -69,7 +69,7 @@ public class Product extends VirtualRecord
     public static final int MESSAGE_DETAIL_MODE = ScreenConstants.LAST_MODE * 64;
     protected ProductPricing m_recProductPricing = null;
     protected ProductTerms m_recProductTerms = null;
-    protected Inventory m_recInventory = null;
+    protected InventoryModel m_recInventory = null;
     protected MessageProcessInfo m_recMessageProcessInfo = null;
     /**
      * Default constructor.
@@ -134,7 +134,7 @@ public class Product extends VirtualRecord
         if ((iDocMode & Product.MESSAGE_DETAIL_MODE) == Product.MESSAGE_DETAIL_MODE)
             screen = Record.makeNewScreen(MessageDetail.MESSAGE_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.BOOKING_DETAIL_GRID_SCREEN) == Product.BOOKING_DETAIL_GRID_SCREEN)
-            screen = Record.makeNewScreen(Booking.PRODUCT_BOOKING_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(BookingModel.PRODUCT_BOOKING_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.PRODUCT_SEARCH_DETAIL_GRID_SCREEN) == Product.PRODUCT_SEARCH_DETAIL_GRID_SCREEN)
             screen = Record.makeNewScreen(PRODUCT_SEARCH_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
@@ -492,7 +492,7 @@ public class Product extends VirtualRecord
         int iClassID = messageData.getRateClassID();
         Object objOtherID = messageData.get(Product.OTHER_ID_PARAM);
         if (objOtherID == null)
-            objOtherID = Inventory.NO_OTHER;
+            objOtherID = InventoryModel.NO_OTHER;
         int iOtherID = Integer.parseInt(objOtherID.toString());
         
         BaseProductResponse responseMessage = null;
@@ -502,10 +502,10 @@ public class Product extends VirtualRecord
         responseMessage.moveRequestInfoToReply(messageIn);
         
         // First, calculate the room cost
-        Inventory recInventory = this.getInventory().getAvailability(this, dateTarget, iRateID, iClassID, iOtherID);
-        int iAvailability = Inventory.NO_INVENTORY;
+        InventoryModel recInventory = this.getInventory().getAvailability(this, dateTarget, iRateID, iClassID, iOtherID);
+        int iAvailability = InventoryModel.NO_INVENTORY;
         if (recInventory != null)
-            iAvailability = (int)recInventory.getField(Inventory.AVAILABLE).getValue();
+            iAvailability = (int)recInventory.getField(InventoryModel.AVAILABLE).getValue();
         if (responseMessage instanceof ProductAvailabilityResponse)
         {
             ProductResponseMessageData responseMessageData = (ProductResponseMessageData)responseMessage.getMessageDataDesc(ProductAvailabilityResponse.PRODUCT_RESPONSE_MESSAGE);
@@ -525,7 +525,7 @@ public class Product extends VirtualRecord
             }
             iInventoryStatus = InventoryStatus.NOT_VALID;
         }
-        else if (iAvailability == Inventory.NO_INVENTORY)
+        else if (iAvailability == InventoryModel.NO_INVENTORY)
         {
             strErrorMessage = InventoryStatus.LOOKUP_ERROR_MESSAGE;
             if (this.getRecordOwner() != null)
@@ -557,7 +557,7 @@ public class Product extends VirtualRecord
             responseMessage.setMessageDataError(strErrorMessage);
         
         ProductResponseMessageData responseMessageData = (ProductResponseMessageData)responseMessage.getMessageDataDesc(ProductRateResponse.PRODUCT_RESPONSE_MESSAGE);
-        responseMessageData.put(BookingDetail.PRODUCT_ID, messageData.get(BookingDetail.PRODUCT_ID));
+        responseMessageData.put(BookingDetailModel.PRODUCT_ID, messageData.get(BookingDetailModel.PRODUCT_ID));
         responseMessageData.setMessageDataStatus(iInventoryStatus);   // Status for this segment
         if (strErrorMessage != null)
             responseMessageData.setMessageDataError(strErrorMessage);
@@ -598,7 +598,7 @@ public class Product extends VirtualRecord
             String strMessageTransportID = null;
             if (productRequest.getMessage().getMessageHeader() != null)
                 strMessageTransportID = (String)productRequest.getMessage().getMessageHeader().get(MessageTransport.TRANSPORT_ID_PARAM);
-            BookingDetail recBookingDetail = this.getBookingDetail(this.findRecordOwner());
+            BookingDetailModel recBookingDetail = this.getBookingDetail(this.findRecordOwner());
             MessageTransport recMessageTransport = new MessageTransport(this.findRecordOwner());
             boolean bIsDirectTransport = true;
             if (strMessageTransportID != null)
@@ -614,8 +614,8 @@ public class Product extends VirtualRecord
             else
             { 
                 // Now create a new booking from the data passed in
-                Booking recBooking = new Booking(recordOwner);
-                Tour recTour = new Tour(recordOwner);
+                BookingModel recBooking = (BookingModel)Record.makeRecordFromClassName(BookingModel.THICK_CLASS, recordOwner);
+                TourModel recTour = (TourModel)Record.makeRecordFromClassName(TourModel.THICK_CLASS, recordOwner);
                 BookingControl recBookingControl = new BookingControl(recordOwner);
                 ProfileControl recProfileControl = new ProfileControl(recordOwner);
                 recBooking.addControlDefaults(recBookingControl, recProfileControl);
@@ -625,36 +625,36 @@ public class Product extends VirtualRecord
                 try {
                     if (RequestType.BOOKING_ADD.equalsIgnoreCase(productRequest.getRequestType()))
                     {
-                        recBooking.addNew();
+                        recBooking.getTable().addNew();
                 
                         TourHeader recTourHeader = this.getBookingTourHeader(recBookingControl);
                         recBooking.setupDefaultDesc(recTourHeader, fldDepDate);
-                        int iErrorCode = recTour.setupTourFromHeader(recTourHeader, fldDepDate, recBooking.getField(Booking.CODE).toString(), recBooking.getField(Booking.DESCRIPTION).toString());
+                        int iErrorCode = recTour.setupTourFromHeader(recTourHeader, fldDepDate, recBooking.getField(BookingModel.CODE).toString(), recBooking.getField(BookingModel.DESCRIPTION).toString());
                         if (iErrorCode != DBConstants.NORMAL_RETURN)
                             return null;
-                        recBooking.getField(Booking.TOUR_ID).addListener(new CalcBookingDatesHandler(recTour, recTourHeader));
-                        recBooking.getField(Booking.TOUR_ID).moveFieldToThis(recTour.getField(Tour.ID));
+                        ((BaseField)recBooking.getField(BookingModel.TOUR_ID)).addListener(new CalcBookingDatesHandler((Record)recTour, recTourHeader));
+                        ((BaseField)recBooking.getField(BookingModel.TOUR_ID)).moveFieldToThis((BaseField)recTour.getField(TourModel.ID));
                 
-                        recBooking.add();
-                        strBookingNo = recBooking.getLastModified(DBConstants.OBJECT_ID_HANDLE).toString();
-                        recBooking.setHandle(strBookingNo, DBConstants.OBJECT_ID_HANDLE);
-                        recBooking.edit();
+                        recBooking.getTable().add(recBooking);
+                        strBookingNo = recBooking.getTable().getLastModified(DBConstants.OBJECT_ID_HANDLE).toString();
+                        recBooking.getTable().setHandle(strBookingNo, DBConstants.OBJECT_ID_HANDLE);
+                        recBooking.getTable().edit();
                         
-                        BookingAnswer recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
-                        BookingPax recBookingPax = null;
-                        iErrorCode = ((Booking)recBooking).addTourDetail(recTour, recTourHeader, recBookingPax, recBookingAnswer, dateTarget, recBooking.getField(Booking.ASK_FOR_ANSWER));
+                        BookingAnswerModel recBookingAnswer = null;  // This causes addTourDetail to resolve the answers automatically
+                        BookingPaxModel recBookingPax = null;
+                        iErrorCode = ((BookingModel)recBooking).addTourDetail(recTour, recTourHeader, recBookingPax, recBookingAnswer, dateTarget, recBooking.getField(BookingModel.ASK_FOR_ANSWER));
                         if (iErrorCode != DBConstants.NORMAL_RETURN)
                             return null;
         
                         this.addMessageBookingDetail(recBookingDetail, recBooking, recTour, strMessageTransportID, productRequest);
         
-                        recBooking.getField(Booking.BOOKING_STATUS_ID).setValue(BookingStatus.OKAY); // Make sure all downline components are ordered
+                        recBooking.getField(BookingModel.BOOKING_STATUS_ID).setValue(BookingStatus.OKAY); // Make sure all downline components are ordered
                         recTour.refreshToCurrent(DBConstants.AFTER_UPDATE_TYPE, false);  // Make sure I have the latest copy
-                        recTour.getField(Tour.ORDER_COMPONENTS).setState(true);     // Book = Order Components! (just in case the previous line didn't do this)
+                        recTour.getField(TourModel.ORDER_COMPONENTS).setState(true);     // Book = Order Components! (just in case the previous line didn't do this)
                     }
                     else
                     {
-                        strBookingNo = (String)messageData.get(BookingDetail.REMOTE_BOOKING_NO);
+                        strBookingNo = (String)messageData.get(BookingDetailModel.REMOTE_BOOKING_NO);
                         if ((strBookingNo == null) || (strBookingNo.length() == 0))
                         {   
                             iMessageStatus = BaseDataStatus.NOT_VALID;
@@ -662,17 +662,17 @@ public class Product extends VirtualRecord
                         }
                         else
                         {
-                            recBooking.getField(Booking.ID).setString(strBookingNo);
+                            recBooking.getField(BookingModel.ID).setString(strBookingNo);
                             int iOldKeyArea = recBooking.getDefaultOrder();
-                            recBooking.setKeyArea(Booking.ID_KEY);
-                            if (!recBooking.seek(null))
+                            recBooking.setKeyArea(BookingModel.ID_KEY);
+                            if (!recBooking.getTable().seek(null))
                             {
                                 iMessageStatus = BaseDataStatus.NOT_VALID;
                                 strErrorMessage = "Invalid booking number supplied";
                             }
                             else
                             {
-                                recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+                                recTour = (TourModel)((ReferenceField)recBooking.getField(BookingModel.TOUR_ID)).getReference();
                                 if ((recTour == null) ||
                                         ((recTour.getEditMode() != DBConstants.EDIT_CURRENT) && (recTour.getEditMode() != DBConstants.EDIT_IN_PROGRESS)))
                                 {   // Never
@@ -680,7 +680,7 @@ public class Product extends VirtualRecord
                                     strErrorMessage = "No tour associated with this booking";
                                 }
                             }
-                            recBooking.setKeyArea(iOldKeyArea);
+                            ((Record)recBooking).setKeyArea(iOldKeyArea);
                             
                             if (iMessageStatus == BaseDataStatus.OKAY)
                             {
@@ -690,8 +690,8 @@ public class Product extends VirtualRecord
                                 }
                                 else // if (RequestType.BOOKING_CANCEL.equalsIgnoreCase(message.getRequestType()))
                                 {
-                                    int iCancelledStatusID = ((ReferenceField)recBooking.getField(Booking.BOOKING_STATUS_ID)).getIDFromCode(BookingStatus.CANCELLED_CODE);
-                                    recBooking.getField(Booking.BOOKING_STATUS_ID).setValue(iCancelledStatusID);
+                                    int iCancelledStatusID = ((ReferenceField)recBooking.getField(BookingModel.BOOKING_STATUS_ID)).getIDFromCode(BookingStatus.CANCELLED_CODE);
+                                    recBooking.getField(BookingModel.BOOKING_STATUS_ID).setValue(iCancelledStatusID);
                                 }
                             }
                         }
@@ -705,15 +705,15 @@ public class Product extends VirtualRecord
                         responseMessageData.handlePutRawRecordData(recBookingDetail);
         
                         responseMessageData.setRemoteBookingNo(strBookingNo);
-                        iMessageStatus = (int)recTour.getField(Tour.TOUR_STATUS_ID).getValue();
+                        iMessageStatus = (int)recTour.getField(TourModel.TOUR_STATUS_ID).getValue();
                         long iTimeoutMS = (long)recBookingControl.getField(BookingControl.REMOTE_WAIT_TIME).getValue() * 1000;
                         if (BaseStatus.isWaiting(iMessageStatus))
                         {
                             // Setup tour status listener
                             WaitForFieldChangeHandler listener = new WaitForFieldChangeHandler(iTimeoutMS);
-                            recTour.getField(Tour.TOUR_STATUS_ID).addListener(listener);
+                            ((BaseField)recTour.getField(TourModel.TOUR_STATUS_ID)).addListener(listener);
                             recTour.refreshToCurrent(DBConstants.AFTER_UPDATE_TYPE, false); // Start with the most recent version
-                            iMessageStatus = (int)recTour.getField(Tour.TOUR_STATUS_ID).getValue();
+                            iMessageStatus = (int)recTour.getField(TourModel.TOUR_STATUS_ID).getValue();
                         // Wait for the status to change (or timeout)
                             int iErrorCode = DBConstants.NORMAL_RETURN;
                             while (BaseStatus.isWaiting(iMessageStatus))
@@ -721,16 +721,16 @@ public class Product extends VirtualRecord
                                 iErrorCode = listener.waitForChange();
                                 if (iErrorCode == WaitForFieldChangeHandler.TIMEOUT_ERROR)
                                     break;
-                                iMessageStatus = (int)recTour.getField(Tour.TOUR_STATUS_ID).getValue();
+                                iMessageStatus = (int)recTour.getField(TourModel.TOUR_STATUS_ID).getValue();
                             }
                             if (BaseStatus.isWaiting(iMessageStatus))
                             {
                                 strErrorMessage = null;
                                 if (recBookingDetail != null)
                                     if ((recBookingDetail.getEditMode() == DBConstants.EDIT_CURRENT) || (recBookingDetail.getEditMode() == DBConstants.EDIT_IN_PROGRESS))
-                                        strErrorMessage = recBookingDetail.getErrorMessage(BookingDetail.PRODUCT_STATUS_ID);
+                                        strErrorMessage = recBookingDetail.getErrorMessage(BookingDetailModel.PRODUCT_STATUS_ID);
                                 if ((strErrorMessage == null) || (strErrorMessage.length() == 0))
-                                    strErrorMessage = ((ReferenceField)recTour.getField(Tour.TOUR_STATUS_ID)).getReference().getField(BaseDataStatus.DESCRIPTION).toString();
+                                    strErrorMessage = ((ReferenceField)recTour.getField(TourModel.TOUR_STATUS_ID)).getReference().getField(BaseDataStatus.DESCRIPTION).toString();
                             }
                         }
                         // Don't need to transfer the cost since you got it on the costing lookup
@@ -739,9 +739,9 @@ public class Product extends VirtualRecord
                         //msgBookingRateResponse.putRawLineItemData(recBooking);
                 
                         if (recTour.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
-                            recTour.set();
+                            recTour.getTable().set(recTour);
                         if (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
-                            recBooking.set();
+                            recBooking.getTable().set(recBooking);
                     }
                 } catch (DBException ex) {
                     ex.printStackTrace();
@@ -758,7 +758,7 @@ public class Product extends VirtualRecord
                 responseMessage.setMessageDataError(strErrorMessage);
         
             ProductResponseMessageData responseMessageData = (ProductResponseMessageData)responseMessage.getMessageDataDesc(ProductRateResponse.PRODUCT_RESPONSE_MESSAGE);
-            responseMessageData.put(BookingDetail.PRODUCT_ID, messageData.get(BookingDetail.PRODUCT_ID));
+            responseMessageData.put(BookingDetailModel.PRODUCT_ID, messageData.get(BookingDetailModel.PRODUCT_ID));
             responseMessageData.setMessageDataStatus(iMessageStatus);   // Status for this segment
             if (strErrorMessage != null)
                 responseMessageData.setMessageDataError(strErrorMessage);
@@ -770,7 +770,7 @@ public class Product extends VirtualRecord
     /**
      * Add the booking detail that goes with the product in this message.
      */
-    public int addMessageBookingDetail(BookingDetail recBookingDetail, Booking recBooking, Tour recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
+    public int addMessageBookingDetail(BookingDetailModel recBookingDetail, BookingModel recBooking, TourModel recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
     {
         //+ String strDestination = null;   // todo(don) Need to figure out where this message was sent to (what is my xyz [soap?] address?)
         
@@ -782,7 +782,7 @@ public class Product extends VirtualRecord
     /**
      * ChangeMessageBookingDetail Method.
      */
-    public int changeMessageBookingDetail(BookingDetail recBookingDetail, Booking recBooking, Tour recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
+    public int changeMessageBookingDetail(BookingDetailModel recBookingDetail, BookingModel recBooking, TourModel recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
     {
         String strDestination = null;   // todo(don) Need to figure out where this message was sent to (what is my xyz [soap?] address?)
         
@@ -810,7 +810,7 @@ public class Product extends VirtualRecord
     /**
      * Create the booking detail for this product type.
      */
-    public BookingDetail getBookingDetail(RecordOwner recordOwner)
+    public BookingDetailModel getBookingDetail(RecordOwner recordOwner)
     {
         return null;    // Override this!
     }
@@ -841,10 +841,10 @@ public class Product extends VirtualRecord
     /**
      * Get the inventory record.
      */
-    public Inventory getInventory()
+    public InventoryModel getInventory()
     {
         if (m_recInventory == null)
-            m_recInventory = new Inventory(this.findRecordOwner());
+            m_recInventory = (InventoryModel)Record.makeRecordFromClassName(InventoryModel.THICK_CLASS, this.findRecordOwner());
         return m_recInventory;
     }
     /**
@@ -936,7 +936,7 @@ public class Product extends VirtualRecord
      * @return NORMAL_RETURN if price exists and was added
      * @return ERROR_RETURN if no pricing (or a zero price) was added.
      */
-    public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
+    public int updateBookingPricing(BookingLineModel recBookingLine, BookingDetailModel recBookingDetail, int iChangeType)
     {
         return DBConstants.ERROR_RETURN;    // No update done.
     }
@@ -962,7 +962,7 @@ public class Product extends VirtualRecord
             recProduct = new Item(recordOwner);
         else if (TourHeader.TOUR_HEADER_FILE.equalsIgnoreCase(strProductType))
             recProduct = new TourHeader(recordOwner);
-        else if (Tour.TOUR_FILE.equalsIgnoreCase(strProductType))
+        else if (TourModel.TOUR_FILE.equalsIgnoreCase(strProductType))
             recProduct = new TourHeader(recordOwner);  // Yes - Tour header is a tour component
         return recProduct;
     }

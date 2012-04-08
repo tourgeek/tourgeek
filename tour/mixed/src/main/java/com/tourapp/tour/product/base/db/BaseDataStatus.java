@@ -22,7 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.base.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.product.base.db.*;
 
 /**

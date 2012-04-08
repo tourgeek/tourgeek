@@ -4,6 +4,7 @@
  */
 package com.tourapp.model.tour.booking.detail.db;
 
+import com.tourapp.model.tour.booking.db.*;
 import org.jbundle.model.db.*;
 
 public interface BookingSubModel extends Rec
@@ -30,5 +31,14 @@ public interface BookingSubModel extends Rec
     public static final String BOOKING_SUB_FILE = "BookingSub";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingSub";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingSub";
+    /**
+     * AddDetailBehaviors Method.
+     */
+    public void addDetailBehaviors(BookingModel recBooking, TourModel recTour);
+    /**
+     * Get the main (Booking) record for this detail record.
+     * Note: This will only return the main record if it already exists.
+     */
+    public BookingModel getBooking(boolean bCreateAndReadCurrent);
 
 }

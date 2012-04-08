@@ -22,7 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.base.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BaseDataStatusField - .
@@ -66,16 +66,16 @@ public class BaseDataStatusField extends BaseStatusField
         if (objData instanceof Integer) // Always
             if (((Integer)objData).intValue() == BaseStatus.DATA_REQUIRED)
             {
-                if (this.getRecord() instanceof BookingDetail)
+                if (this.getRecord() instanceof BookingDetailModel)
                 {
-                    BookingDetail recBookingDetail = (BookingDetail)this.getRecord();
+                    BookingDetailModel recBookingDetail = (BookingDetailModel)this.getRecord();
                     for (int iStatusType = 0; iStatusType < recBookingDetail.getFieldCount(); iStatusType++)
                     {
                         if (recBookingDetail.getField(iStatusType) == this)
                         {
                             if (recBookingDetail.checkRequiredParams(this.getFieldName()) == null) // Possible that the data is okay now, check it.
                             {   // If I say data required, but the refresh says something else, use the refresh status and recheck the data
-                                recBookingDetail.getField(iStatusType + BookingDetail.MESSAGE_REQUEST_OFFSET).setState(true);
+                                recBookingDetail.getField(iStatusType + BookingDetailModel.MESSAGE_REQUEST_OFFSET).setState(true);
                                 return DBConstants.NORMAL_RETURN;
                             }
                             break;

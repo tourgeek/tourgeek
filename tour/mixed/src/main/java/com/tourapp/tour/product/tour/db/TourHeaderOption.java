@@ -21,8 +21,8 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.tour.detail.screen.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.model.tour.product.tour.db.*;
 
@@ -265,7 +265,7 @@ public class TourHeaderOption extends VirtualRecord
     /**
      * Does this option apply to this booking/pax/date?.
      */
-    public boolean isValid(Booking recBooking, BaseField fldPaxCategory, Date dateStart)
+    public boolean isValid(BookingModel recBooking, BaseField fldPaxCategory, Date dateStart)
     {
         if (!this.getField(TourHeaderOption.START_DATE).isNull())
             if (this.getField(TourHeaderOption.START_DATE).compareTo(dateStart) > 0)
@@ -278,7 +278,7 @@ public class TourHeaderOption extends VirtualRecord
         if (!this.getField(TourHeaderOption.GATEWAY).isNull())
         {
             if (recBooking != null)
-                if (!this.getField(TourHeaderOption.GATEWAY).equals(recBooking.getField(Booking.GATEWAY)))
+                if (!this.getField(TourHeaderOption.GATEWAY).equals(recBooking.getField(BookingModel.GATEWAY)))
                     return false;
         }
         if (!this.getField(TourHeaderOption.PAX_CATEGORY_ID).isNull())

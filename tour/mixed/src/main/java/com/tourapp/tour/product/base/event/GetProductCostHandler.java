@@ -28,8 +28,8 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  GetProductCostHandler - Get the product cost on a valid product record.
@@ -72,13 +72,13 @@ public class GetProductCostHandler extends GetProductStatusHandler
         RecordOwner recordOwner = recProduct.getRecordOwner();
         if (recordOwner != null)
         {
-            Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
+            Record recBooking = (Record)recordOwner.getRecord(BookingModel.BOOKING_FILE);
             if ((recBooking != null)
                 && ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)))
             {
-                PricingType recPricingType = (PricingType)((ReferenceField)recBooking.getField(Booking.NON_TOUR_PRICING_TYPE_ID)).getReference();
+                PricingType recPricingType = (PricingType)((ReferenceField)recBooking.getField(BookingModel.NON_TOUR_PRICING_TYPE_ID)).getReference();
                 iPricingType = (int)recPricingType.getField(PricingType.PRICING_CODES).getValue();
-                dMarkup = recBooking.getField(Booking.MARKUP).getValue();
+                dMarkup = recBooking.getField(BookingModel.MARKUP).getValue();
             }
             else
             {

@@ -21,21 +21,17 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.hotel.screen.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import java.util.*;
 import com.tourapp.tour.acctpay.db.*;
 import java.text.*;
 import com.tourapp.thin.app.booking.entry.search.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.message.hotel.request.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.thin.base.screen.*;
-import com.tourapp.tour.booking.inventory.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.hotel.request.data.*;
@@ -44,6 +40,9 @@ import com.tourapp.tour.message.hotel.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.product.hotel.db.*;
 
 /**
@@ -118,13 +117,13 @@ public class Hotel extends Product
         if ((iDocMode & Hotel.PRICING_GRID_SCREEN) == Hotel.PRICING_GRID_SCREEN)
             screen = Record.makeNewScreen(HotelPricing.HOTEL_PRICING_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Hotel.INVENTORY_GRID_SCREEN) == Hotel.INVENTORY_GRID_SCREEN)
-            screen = Record.makeNewScreen(HotelInventory.HOTEL_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(HotelInventoryModel.HOTEL_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Hotel.INVENTORY_SCREEN) == Hotel.INVENTORY_SCREEN)
-            screen = Record.makeNewScreen(HotelInventory.HOTEL_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(HotelInventoryModel.HOTEL_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Hotel.MEAL_PRICING_GRID_SCREEN) == Hotel.MEAL_PRICING_GRID_SCREEN)
             screen = Record.makeNewScreen(HotelMealPricing.HOTEL_MEAL_PRICING_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Hotel.RANGE_ADJUST_SCREEN) == Hotel.RANGE_ADJUST_SCREEN)
-            screen = Record.makeNewScreen(HotelInventory.HOTEL_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(HotelInventoryModel.HOTEL_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(HOTEL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
@@ -612,7 +611,7 @@ public class Hotel extends Product
         int iClassID = productMessageData.getRateClassID();
         Object objOtherID = productMessageData.get(Product.OTHER_ID_PARAM);
         if (objOtherID == null)
-            objOtherID = Inventory.NO_OTHER;
+            objOtherID = InventoryModel.NO_OTHER;
         int iOtherID = Integer.parseInt(objOtherID.toString());
         String strErrorMessage = null;
         int iInventoryStatus = InventoryStatus.VALID;
@@ -646,10 +645,10 @@ public class Hotel extends Product
             {
                 for (int day = 0; day < iNights; day++)
                 {
-                    Inventory recInventory = this.getInventory().getAvailability(this, dateTarget, iRateID, iClassID, iOtherID);
-                    iAvailability = Inventory.NO_INVENTORY;
+                    InventoryModel recInventory = (InventoryModel)this.getInventory().getAvailability(this, dateTarget, iRateID, iClassID, iOtherID);
+                    iAvailability = InventoryModel.NO_INVENTORY;
                     if (recInventory != null)
-                        iAvailability = (int)recInventory.getField(Inventory.AVAILABLE).getValue();
+                        iAvailability = (int)recInventory.getField(InventoryModel.AVAILABLE).getValue();
                     if ((recInventory != null) && (fldTrxID != null)) // If in update mode, update the availability
                     { // No need to check avail, updateAvailability checks the correct availability (taking into account previous the previous usage) 
                         boolean bIsDeleted = false;   // todo (don) Fix this.
@@ -659,7 +658,7 @@ public class Hotel extends Product
                     }
                     else if (iAvailability < iRooms)
                         break;
-                    else if (iAvailability == Inventory.NO_INVENTORY)
+                    else if (iAvailability == InventoryModel.NO_INVENTORY)
                         break;
                     DateConverter.initGlobals();
                     DateConverter.gCalendar.setTime(dateTarget);
@@ -667,13 +666,13 @@ public class Hotel extends Product
                     dateTarget = DateConverter.gCalendar.getTime();
                 }
             }
-            if ((iAvailability < iRooms) || (iAvailability == Inventory.NO_INVENTORY)
+            if ((iAvailability < iRooms) || (iAvailability == InventoryModel.NO_INVENTORY)
                     || (iErrorCode != DBConstants.NORMAL_RETURN))
                 break;
         }
         if (fldTrxID != null) // If in update mode, fix the availability
         {
-            if ((iAvailability < iRooms) || (iAvailability == Inventory.NO_INVENTORY)
+            if ((iAvailability < iRooms) || (iAvailability == InventoryModel.NO_INVENTORY)
                 || (iErrorCode != DBConstants.NORMAL_RETURN))
             { // Have to back-out the changes and return.
                 int iErrorCode2 = this.getInventory().removeInventory(fldTrxID);
@@ -711,7 +710,7 @@ public class Hotel extends Product
             }
             iInventoryStatus = InventoryStatus.NOT_VALID;
         }
-        else if (iAvailability == Inventory.NO_INVENTORY)
+        else if (iAvailability == InventoryModel.NO_INVENTORY)
         {
             strErrorMessage = InventoryStatus.LOOKUP_ERROR_MESSAGE;
             if (this.getRecordOwner() != null)
@@ -748,9 +747,9 @@ public class Hotel extends Product
     /**
      * Create the booking detail for this product type.
      */
-    public BookingDetail getBookingDetail(RecordOwner recordOwner)
+    public BookingDetailModel getBookingDetail(RecordOwner recordOwner)
     {
-        return new BookingHotel(recordOwner);
+        return (BookingDetailModel)Record.makeRecordFromClassName(BookingHotelModel.THICK_CLASS, recordOwner);
     }
     /**
      * Calc the hotel cost given parameters.
@@ -830,24 +829,24 @@ public class Hotel extends Product
      * @return NORMAL_RETURN if price exists and was added
      * @return ERROR_RETURN if no pricing (or a zero price) was added.
      */
-    public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
+    public int updateBookingPricing(BookingLineModel recBookingLine, BookingDetailModel recBookingDetail, int iChangeType)
     {
         int iErrorCode = DBConstants.ERROR_RETURN;  // Error just means that there were no line items added
-        Booking recBooking = recBookingDetail.getBooking(true);
+        BookingModel recBooking = recBookingDetail.getBooking(true);
         
         int iHotelID = (int)this.getField(Product.ID).getValue();
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
-        int iRateID = (int)recBookingDetail.getField(BookingDetail.RATE_ID).getValue();
-        int iClassID = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetailModel.DETAIL_DATE)).getDateTime();
+        int iRateID = (int)recBookingDetail.getField(BookingDetailModel.RATE_ID).getValue();
+        int iClassID = (int)recBookingDetail.getField(BookingDetailModel.CLASS_ID).getValue();
         
         for (int iPaxCategory = PaxCategory.SINGLE_ID; iPaxCategory <= PaxCategory.CHILD_ID; iPaxCategory++)
         {
-            short sTargetPax = (short)recBooking.getField(recBooking.getFieldSeq(Booking.SINGLE_PAX) + iPaxCategory - PaxCategory.SINGLE_ID).getValue();
+            short sTargetPax = (short)recBooking.getField(((Record)recBooking).getFieldSeq(BookingModel.SINGLE_PAX) + iPaxCategory - PaxCategory.SINGLE_ID).getValue();
             if (sTargetPax == 0)
                 continue;
             HotelPricing recProductPricing = null;
             double dAmount = 0;
-            short sNights = (short)recBookingDetail.getField(BookingHotel.NIGHTS).getValue();
+            short sNights = (short)recBookingDetail.getField(BookingHotelModel.NIGHTS).getValue();
             while (sNights > 0)
             {
                 recProductPricing = ((HotelPricing)this.getProductPricing()).getHotelCost(iHotelID, dateTarget, iRateID, iClassID, iPaxCategory);

@@ -34,6 +34,8 @@ import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.acctrec.db.event.*;
 import com.tourapp.model.tour.acctrec.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
+import java.util.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.booking.db.*;
@@ -416,7 +418,7 @@ public class Booking extends CustSale
     /**
      * Add the defaults from the control file when you have a new record.
      */
-    public Record addControlDefaults(Record recBookingControl, Record recProfileControl)
+    public Rec addControlDefaults(Rec recBookingControl, Rec recProfileControl)
     {
         if (recBookingControl == null)
         {
@@ -436,9 +438,9 @@ public class Booking extends CustSale
         this.getField(Booking.LANGUAGE_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.LANGUAGE_ID)));
         this.getField(Booking.CURRENCYS_ID).addListener(new InitFieldHandler(recProfileControl.getField(ProfileControl.CURRENCYS_ID)));
         
-        this.getField(Booking.PAX).addListener(new InitFieldHandler(recBookingControl.getField(BookingControl.PAX), true, true));
-        this.getField(Booking.SINGLE_PAX).addListener(new InitFieldHandler(recBookingControl.getField(BookingControl.SINGLE_PAX), true, true));
-        this.getField(Booking.DOUBLE_PAX).addListener(new InitFieldHandler(recBookingControl.getField(BookingControl.DOUBLE_PAX), true, true));
+        this.getField(Booking.PAX).addListener(new InitFieldHandler((BaseField)recBookingControl.getField(BookingControl.PAX), true, true));
+        this.getField(Booking.SINGLE_PAX).addListener(new InitFieldHandler((BaseField)recBookingControl.getField(BookingControl.SINGLE_PAX), true, true));
+        this.getField(Booking.DOUBLE_PAX).addListener(new InitFieldHandler((BaseField)recBookingControl.getField(BookingControl.DOUBLE_PAX), true, true));
         
         if (recBookingControl.getField(BookingControl.AUTO_BOOKING_CODE).getState() == true)
             this.addListener(new MoveIDToCodeHandler(Booking.CODE)); // If auto-booking numbers are turned on, set them
@@ -482,7 +484,7 @@ public class Booking extends CustSale
      * @param dateStart
      * @return An error code or NORMAL_RETURN if okay.
      */
-    public int addTourDetail(Tour recTour, TourHeader recTourHeader, BookingPax recBookingPax, BookingAnswer recBookingAnswer, Date dateStart, BaseField fldAskForAnswer)
+    public int addTourDetail(TourModel recTour, TourHeaderModel recTourHeader, BookingPaxModel recBookingPax, BookingAnswerModel recBookingAnswer, Date dateStart, Field fldAskForAnswer)
     {
         int iErrorCode = DBConstants.NORMAL_RETURN;
         
@@ -492,37 +494,37 @@ public class Booking extends CustSale
         if (recBookingAnswer == null)
         {   // If booking answer is not passed in, set up the default answers.
             recBookingAnswer = new BookingAnswer(this.findRecordOwner());
-            recBookingAnswerNew = recBookingAnswer;
-            iErrorCode = recBookingAnswer.setupAnswerDetail(TourHeaderOption.TOUR, recTourHeader.getField(TourHeader.ID), recTourHeader.getField(TourHeader.ID), this, recBookingPax, dateStart, fldAskForAnswer, true);
+            recBookingAnswerNew = (BookingAnswer)recBookingAnswer;
+            iErrorCode = ((BookingAnswer)recBookingAnswer).setupAnswerDetail(TourHeaderOption.TOUR, (BaseField)recTourHeader.getField(TourHeader.ID), (BaseField)recTourHeader.getField(TourHeader.ID), this, (BookingPax)recBookingPax, dateStart, (BaseField)fldAskForAnswer, true);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
                 return iErrorCode;
         }
         
-        BaseField fldTourModuleID = recTourHeader.getField(TourHeader.ID);
+        BaseField fldTourModuleID = (BaseField)recTourHeader.getField(TourHeader.ID);
         try {
             if (recBookingPax == null)
             {
                 recBookingPax = new BookingPax(this.findRecordOwner());
-                recBookingPaxNew = recBookingPax;
+                recBookingPaxNew = (BookingPax)recBookingPax;
             }
             if (recBookingPax.getField(BookingPax.ID).isNull())
                 recBookingPax.getField(BookingPax.ID).setValue(0);
         
             recBookingAnswer.setKeyArea(BookingAnswer.SCAN_ORDER_KEY);
-            recBookingAnswer.addListener(listener = new SubFileFilter(this.getField(Booking.ID), BookingAnswer.BOOKING_ID, recBookingPax.getField(BookingPax.ID), BookingAnswer.BOOKING_PAX_ID, fldTourModuleID, BookingAnswer.MODULE_ID));
+            ((Record)recBookingAnswer).addListener(listener = new SubFileFilter(this.getField(Booking.ID), BookingAnswer.BOOKING_ID, (BaseField)recBookingPax.getField(BookingPax.ID), BookingAnswer.BOOKING_PAX_ID, fldTourModuleID, BookingAnswer.MODULE_ID));
         //+++    recBookingAnswer.addListener(listener2 = new SubFileFilter(dateStart, BookingAnswer.MODULE_START_DATE, null, -1, null, -1));
-            recBookingAnswer.close();
-            while (recBookingAnswer.hasNext())
+            recBookingAnswer.getTable().close();
+            while (recBookingAnswer.getTable().hasNext())
             {
-                recBookingAnswer.next();
-                iErrorCode = recBookingAnswer.addAnswerDetail(this, recTour, recBookingPax, fldTourModuleID, dateStart);
+                recBookingAnswer.getTable().next();
+                iErrorCode = ((BookingAnswer)recBookingAnswer).addAnswerDetail(this, (Tour)recTour, (BookingPax)recBookingPax, fldTourModuleID, dateStart);
                 if (iErrorCode != DBConstants.NORMAL_RETURN)
                     ; // Keep going
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
         } finally {
-            recBookingAnswer.removeListener(listener, true);
+            ((Record)recBookingAnswer).removeListener(listener, true);
             if (recBookingAnswerNew != null)
                 recBookingAnswer.free();
             recBookingAnswer = null;
@@ -535,11 +537,11 @@ public class Booking extends CustSale
     /**
      * ChangeTourDetail Method.
      */
-    public int changeTourDetail(Tour recTour, BookingPax recBookingPax, TourHeader recTourHeader, Date dateOriginal, Date dateStart)
+    public int changeTourDetail(TourModel recTour, BookingPaxModel recBookingPax, TourHeaderModel recTourHeader, Date dateOriginal, Date dateStart)
     {
         BaseField fldBookingPaxID = null;
         if (recBookingPax != null)
-            fldBookingPaxID = recBookingPax.getField(BookingPax.ID);
+            fldBookingPaxID = (BaseField)recBookingPax.getField(BookingPax.ID);
         else
         {
             fldBookingPaxID = new IntegerField(null, "ID", -1, null, null);
@@ -547,13 +549,13 @@ public class Booking extends CustSale
         }
         BookingAnswer recBookingAnswer = new BookingAnswer(this.findRecordOwner());
         recBookingAnswer.addDetailBehaviors(this, recTour);
-        int iErrorCode = recBookingAnswer.changeAllDetail(this, fldBookingPaxID, recTourHeader.getField(TourHeader.ID), dateOriginal, dateStart);
+        int iErrorCode = recBookingAnswer.changeAllDetail(this, fldBookingPaxID, (BaseField)recTourHeader.getField(TourHeader.ID), dateOriginal, dateStart);
         recBookingAnswer.free();
         recBookingAnswer = null;    // The makes answers re-resolve
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         
-        iErrorCode = this.deleteTourDetail(recTour, recBookingPax, recTourHeader.getField(TourHeader.ID), dateOriginal);
+        iErrorCode = this.deleteTourDetail(recTour, recBookingPax, (BaseField)recTourHeader.getField(TourHeader.ID), dateOriginal);
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         
@@ -570,11 +572,11 @@ public class Booking extends CustSale
     /**
      * DeleteTourDetail Method.
      */
-    public int deleteTourDetail(Tour recTour, BookingPax recBookingPax, BaseField fldTourModuleID, Date dateStart)
+    public int deleteTourDetail(TourModel recTour, BookingPaxModel recBookingPax, Field fldTourModuleID, Date dateStart)
     {
         BaseField fldBookingPaxID = null;
         if (recBookingPax != null)
-            fldBookingPaxID = recBookingPax.getField(BookingPax.ID);
+            fldBookingPaxID = (BaseField)recBookingPax.getField(BookingPax.ID);
         else
         {
             fldBookingPaxID = new IntegerField(null, "ID", -1, null, null);
@@ -582,21 +584,21 @@ public class Booking extends CustSale
         }
         BookingAirHeader recBookingAirHeader = new BookingAirHeader(this.findRecordOwner());
         recBookingAirHeader.addDetailBehaviors(this, recTour);
-        int iErrorCode = recBookingAirHeader.deleteAllDetail(this, fldBookingPaxID, fldTourModuleID, dateStart);
+        int iErrorCode = recBookingAirHeader.deleteAllDetail(this, fldBookingPaxID, (BaseField)fldTourModuleID, dateStart);
         recBookingAirHeader.free();
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         
         BookingLine recBookingLine = new BookingLine(this.findRecordOwner());
         recBookingLine.addDetailBehaviors(this, recTour);
-        iErrorCode = recBookingLine.deleteAllDetail(this, fldBookingPaxID, fldTourModuleID, dateStart);
+        iErrorCode = recBookingLine.deleteAllDetail(this, fldBookingPaxID, (BaseField)fldTourModuleID, dateStart);
         recBookingLine.free();
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
         
         BookingDetail recBookingDetail = new BookingDetail(this.findRecordOwner());
         recBookingDetail.addDetailBehaviors(this, recTour);
-        iErrorCode = recBookingDetail.deleteAllDetail(this, fldBookingPaxID, fldTourModuleID, dateStart);
+        iErrorCode = recBookingDetail.deleteAllDetail(this, fldBookingPaxID, (BaseField)fldTourModuleID, dateStart);
         recBookingDetail.free();
         if (iErrorCode != DBConstants.NORMAL_RETURN)
             return iErrorCode;
@@ -728,7 +730,7 @@ public class Booking extends CustSale
     /**
      * CalcBookingDates Method.
      */
-    public int calcBookingDates(Record recTour, Record recTourHeader)
+    public int calcBookingDates(Rec recTour, Rec recTourHeader)
     {
         TourClass recTourClass = (TourClass)((ReferenceField)recTourHeader.getField(TourHeader.TOUR_CLASS_ID)).getReference();
         recTourClass.fixBasedFields();
@@ -830,7 +832,7 @@ public class Booking extends CustSale
     /**
      * Setup the default booking description and code.
      */
-    public String setupDefaultDesc(Record recTourHeader, BaseField fldDepDate)
+    public String setupDefaultDesc(Rec recTourHeader, Field fldDepDate)
     {
         String strDesc = DBConstants.BLANK;
         if (!this.getCounterField().isNull())

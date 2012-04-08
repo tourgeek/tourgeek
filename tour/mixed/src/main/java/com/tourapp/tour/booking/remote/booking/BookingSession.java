@@ -30,7 +30,7 @@ import com.tourapp.thin.app.booking.entry.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.booking.entry.tour.*;
+import com.tourapp.tour.product.base.event.*;
 import com.tourapp.tour.booking.db.event.*;
 
 /**

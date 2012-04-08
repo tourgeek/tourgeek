@@ -21,15 +21,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.land.screen.*;
 import java.util.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.thin.app.booking.entry.search.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.land.request.*;
-import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
@@ -39,6 +36,8 @@ import com.tourapp.tour.message.land.response.*;
 import com.tourapp.tour.message.land.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.model.tour.product.land.db.*;
 
@@ -110,11 +109,11 @@ public class Land extends Product
         if ((iDocMode & Product.PRICING_GRID_SCREEN) == Product.PRICING_GRID_SCREEN)
             screen = Record.makeNewScreen(LandPricing.LAND_PRICING_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_GRID_SCREEN) == Product.INVENTORY_GRID_SCREEN)
-            screen = Record.makeNewScreen(LandInventory.LAND_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(LandInventoryModel.LAND_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_SCREEN) == Product.INVENTORY_SCREEN)
-            screen = Record.makeNewScreen(LandInventory.LAND_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(LandInventoryModel.LAND_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.RANGE_ADJUST_SCREEN) == Product.RANGE_ADJUST_SCREEN)
-            screen = Record.makeNewScreen(LandInventory.LAND_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(LandInventoryModel.LAND_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(LAND_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
@@ -575,9 +574,9 @@ public class Land extends Product
     /**
      * Create the booking detail for this product type.
      */
-    public BookingDetail getBookingDetail(RecordOwner recordOwner)
+    public BookingDetailModel getBookingDetail(RecordOwner recordOwner)
     {
-        return new BookingLand(recordOwner);
+        return (BookingDetailModel)Record.makeRecordFromClassName(BookingLandModel.THICK_CLASS, recordOwner);
     }
     /**
      * Get the est. time of this product.
@@ -606,13 +605,13 @@ public class Land extends Product
      * @return NORMAL_RETURN if price exists and was added
      * @return ERROR_RETURN if no pricing (or a zero price) was added.
      */
-    public int updateBookingPricing(BookingLine recBookingLine, BookingDetail recBookingDetail, int iChangeType)
+    public int updateBookingPricing(BookingLineModel recBookingLine, BookingDetailModel recBookingDetail, int iChangeType)
     {
         int iErrorCode = DBConstants.ERROR_RETURN;
         
-        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE)).getDateTime();
+        Date dateTarget = ((DateTimeField)recBookingDetail.getField(BookingDetailModel.DETAIL_DATE)).getDateTime();
         short sTargetPax = recBookingDetail.getNoPax();
-        int iPMC = (int)recBookingDetail.getField(BookingDetail.CLASS_ID).getValue();
+        int iPMC = (int)recBookingDetail.getField(BookingDetailModel.CLASS_ID).getValue();
         
         String strPrefix = LAND_COST_PROPERTIES;
         TrxMessageHeader messageHeader = new TrxMessageHeader(null, null);

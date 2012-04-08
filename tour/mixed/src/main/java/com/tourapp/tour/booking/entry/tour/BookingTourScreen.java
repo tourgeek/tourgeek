@@ -29,7 +29,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import java.util.*;
-import com.tourapp.tour.booking.entry.event.*;
+import com.tourapp.tour.product.base.event.*;
 import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.product.tour.screen.*;
 

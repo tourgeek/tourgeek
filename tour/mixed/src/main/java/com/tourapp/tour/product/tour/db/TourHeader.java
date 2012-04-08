@@ -21,25 +21,22 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.lookup.*;
-import com.tourapp.tour.product.tour.screen.*;
-import com.tourapp.tour.product.tour.other.screen.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.profile.db.*;
 import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.tour.response.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.tour.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.booking.entry.tour.*;
-import com.tourapp.tour.booking.inventory.db.*;
+import com.tourapp.tour.product.base.event.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.product.tour.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.shared.*;
@@ -118,11 +115,11 @@ public class TourHeader extends Product
         else if ((iDocMode & TourHeader.TOUR_DETAIL_SCREEN) == TourHeader.TOUR_DETAIL_SCREEN)
             screen = Record.makeNewScreen(TourHeaderTour.TOUR_HEADER_TOUR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_GRID_SCREEN) == Product.INVENTORY_GRID_SCREEN)
-            screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(TourHeaderInventoryModel.TOUR_HEADER_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_SCREEN) == Product.INVENTORY_SCREEN)
-            screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(TourHeaderInventoryModel.TOUR_HEADER_INVENTORY_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.RANGE_ADJUST_SCREEN) == Product.RANGE_ADJUST_SCREEN)
-            screen = Record.makeNewScreen(TourHeaderInventory.TOUR_HEADER_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(TourHeaderInventoryModel.TOUR_HEADER_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(TOUR_HEADER_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
@@ -451,7 +448,7 @@ public class TourHeader extends Product
     /**
      * Add the booking detail that goes with the product in this message.
      */
-    public int addMessageBookingDetail(BookingDetail recBookingDetail, Booking recBooking, Tour recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
+    public int addMessageBookingDetail(BookingDetailModel recBookingDetail, BookingModel recBooking, TourModel recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
     {
         if (this.getField(TourHeader.TOUR_SERIES).getState() == true)
             productRequest.put(ProductRequest.PRODUCT_MESSAGE, null);   // Don't need to add this detail
@@ -473,9 +470,9 @@ public class TourHeader extends Product
                     calendar.set(Calendar.MILLISECOND, 0);
                     objDetailDate = calendar.getTime();
                     if (objProductID != null)
-                        if (objProductID.equals(recTour.getField(Tour.TOUR_HEADER_ID).getData()))
+                        if (objProductID.equals(recTour.getField(TourModel.TOUR_HEADER_ID).getData()))
                             if (objDetailDate != null)
-                                if (objDetailDate.equals(recTour.getField(Tour.DEPARTURE_DATE).getData()))
+                                if (objDetailDate.equals(recTour.getField(TourModel.DEPARTURE_DATE).getData()))
                                     productRequest.put(ProductRequest.PRODUCT_MESSAGE, null);   // Don't need to add this detail
                 }
             }
@@ -485,21 +482,21 @@ public class TourHeader extends Product
     /**
      * ChangeMessageBookingDetail Method.
      */
-    public int changeMessageBookingDetail(BookingDetail recBookingDetail, Booking recBooking, Tour recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
+    public int changeMessageBookingDetail(BookingDetailModel recBookingDetail, BookingModel recBooking, TourModel recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
     {
             if (this.getField(TourHeader.TOUR_SERIES).getState() == true)
             {
                 ProductMessageData productMessage = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
-                Date date = (Date)productMessage.get(BookingDetail.DETAIL_DATE);
+                Date date = (Date)productMessage.get(BookingDetailModel.DETAIL_DATE);
                 if (date != null)
                 {   // Departure date change.
                     TourClass recTourClass = (TourClass)((ReferenceField)this.getField(TourHeader.TOUR_CLASS_ID)).getReferenceRecord(this.findRecordOwner());
                     BaseField fldTourCode = this.getField(TourHeader.CODE);
-                    DateField fldDepartureDate = (DateField)recTour.getField(Tour.DEPARTURE_DATE);
+                    DateField fldDepartureDate = (DateField)recTour.getField(TourModel.DEPARTURE_DATE);
                     BaseField fldTourDesc = this.getField(TourHeader.DESCRIPTION);
                             
                     FieldListener fieldBehavior = null;
-                    fieldBehavior = new ChangeTourHeaderHandler(this, recTourClass, recTour, recBooking, fldTourCode, fldDepartureDate, null);
+                    fieldBehavior = new ChangeTourHeaderHandler(this, recTourClass, (TourModel)recTour, (BookingModel)recBooking, fldTourCode, fldDepartureDate, null);
                     fldDepartureDate.addListener(fieldBehavior);
                     fldDepartureDate.setDateTime(date, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
         //          +message.addPassengersToBooking(recBooking);
@@ -543,9 +540,9 @@ public class TourHeader extends Product
     /**
      * Create the booking detail for this product type.
      */
-    public BookingDetail getBookingDetail(RecordOwner recordOwner)
+    public BookingDetailModel getBookingDetail(RecordOwner recordOwner)
     {
-        return new BookingTour(recordOwner);
+        return (BookingDetailModel)Record.makeRecordFromClassName(BookingTourModel.THICK_CLASS, recordOwner);
     }
     /**
      * Get the tour cost for the pax category.
@@ -795,8 +792,8 @@ public class TourHeader extends Product
      */
     public void addSubFileIntegrityHandlers()
     {
-        this.addListener(new SubFileIntegrityHandler(Tour.class.getName(), false));
-        this.addListener(new SubFileIntegrityHandler(TourHeaderInventory.class.getName(), false));
+        this.addListener(new SubFileIntegrityHandler(TourModel.class.getName(), false));
+        this.addListener(new SubFileIntegrityHandler(TourHeaderInventoryModel.class.getName(), false));
         this.addListener(new SubFileIntegrityHandler(TourHeaderOption.class.getName(), false)
         {
             public Record getSubRecord()

@@ -2,7 +2,7 @@
  * @(#)CalcBookingDatesHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.entry.event;
+package com.tourapp.tour.product.base.event;
 
 import java.awt.*;
 import java.util.*;
@@ -20,7 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  CalcBookingDatesHandler - Recalc bk dates, status.
@@ -74,7 +74,7 @@ public class CalcBookingDatesHandler extends FieldListener
      */
     public int fieldChanged(boolean bDisplayOption, int iMoveMode)
     {
-        Booking recBooking = (Booking)this.getOwner().getRecord();
+        BookingModel recBooking = (BookingModel)this.getOwner().getRecord();
         return recBooking.calcBookingDates(m_recTour, m_recTourHeader);
     }
 

@@ -21,8 +21,8 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.tour.detail.screen.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.detail.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  TourHeaderOptionField - .

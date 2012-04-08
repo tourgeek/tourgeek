@@ -24,7 +24,7 @@ import com.tourapp.tour.product.base.event.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.message.hotel.response.*;
 import com.tourapp.tour.message.hotel.response.data.*;
 import com.tourapp.tour.message.base.response.*;
@@ -66,7 +66,7 @@ public class HotelRateMessageListener extends ProductRateMessageListener
         HotelRateResponse productRateResponse = (HotelRateResponse)message.getMessageDataDesc(null);
         HotelRateResponseMessageData messageData = (HotelRateResponseMessageData)productRateResponse.getMessageDataDesc(BaseProductResponse.PRODUCT_RESPONSE_MESSAGE);
         String strDoubleCostParam = m_record.getField(Hotel.DOUBLE_COST).getFieldName();
-        Double dblProductCost = (Double)messageData.get(BookingDetail.TOTAL_COST);
+        Double dblProductCost = (Double)messageData.get(BookingDetailModel.TOTAL_COST);
         if (dblProductCost == null)
             dblProductCost = DoubleField.ZERO;
         message.put(strDoubleCostParam, dblProductCost.toString());

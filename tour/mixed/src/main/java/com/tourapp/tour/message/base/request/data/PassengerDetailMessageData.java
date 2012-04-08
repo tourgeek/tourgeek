@@ -123,7 +123,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
     public Rec createSubDataRecord(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record;
-        Booking recBooking = recBookingDetail.getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
+        Booking recBooking = (Booking)recBookingDetail.getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
         BookingPax recBookingPax = new BookingPax(recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         recBookingPax.addListener(new SubFileFilter(recBooking));
         return recBookingPax;

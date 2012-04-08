@@ -4,6 +4,7 @@
  */
 package com.tourapp.thin.tour.booking.detail.db;
 
+import com.tourapp.model.tour.booking.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -25,6 +26,21 @@ public class BookingSub extends FieldList
     {
         this();
         this.init(recordOwner);
+    }
+    /**
+     * AddDetailBehaviors Method.
+     */
+    public void addDetailBehaviors(BookingModel recBooking, TourModel recTour)
+    {
+        // Empty implementation
+    }
+    /**
+     * Get the main (Booking) record for this detail record.
+     * Note: This will only return the main record if it already exists.
+     */
+    public BookingModel getBooking(boolean bCreateAndReadCurrent)
+    {
+        return null; // Empty implementation
     }
 
 }

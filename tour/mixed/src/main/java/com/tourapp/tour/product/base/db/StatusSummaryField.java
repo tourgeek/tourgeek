@@ -21,9 +21,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.thin.app.booking.entry.*;
 import org.jbundle.base.screen.model.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  StatusSummaryField - This field is used to summarize the CustSaleDetail status of:
@@ -80,8 +80,8 @@ public class StatusSummaryField extends IntegerField
                         {
                             blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType, strProductType), 0);
                         }
-                    BookingDetail recCustSaleDetail = (BookingDetail)((BaseField)this.getField()).getRecord();
-                    if (recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.PRODUCT_STATUS_ID).getValue() == ProductStatus.CANCELED)
+                    BookingDetailModel recCustSaleDetail = (BookingDetailModel)((BaseField)this.getField()).getRecord();
+                    if (recCustSaleDetail.getField(BookingDetailModel.PRODUCT_STATUS_ID).getValue() == ProductStatus.CANCELED)
                         blink.addIcon(applet.loadImageIcon(ThinMenuConstants.CANCEL, ThinMenuConstants.CANCEL), 0);
                 }
         }
@@ -135,8 +135,8 @@ public class StatusSummaryField extends IntegerField
      */
     public String getProductType()
     {
-        BookingDetail recCustSaleDetail = (BookingDetail)((BaseField)this.getField()).getRecord();
-        String strProductType = recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.PRODUCT_TYPE).toString();
+        BookingDetailModel recCustSaleDetail = (BookingDetailModel)((BaseField)this.getField()).getRecord();
+        String strProductType = recCustSaleDetail.getField(BookingDetailModel.PRODUCT_TYPE).toString();
         if ((strProductType == null) || (strProductType.length() == 0))
             strProductType = ProductType.ITEM;
         return strProductType;

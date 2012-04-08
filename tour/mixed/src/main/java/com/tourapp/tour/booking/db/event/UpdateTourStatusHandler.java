@@ -78,7 +78,7 @@ public class UpdateTourStatusHandler extends FileListener
             if ((iChangeType == DBConstants.AFTER_DELETE_TYPE) || (fieldTarget.isModified()))
             {                
                 Record recTour = null;
-                Booking recBooking = recBookingDetail.getBooking(false);
+                Booking recBooking = (Booking)recBookingDetail.getBooking(false);
                 // Do a special check - if the Booking's tour IS this detail's tour and it is current and locked, use that one.
                 if (recBooking != null)
                     if ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS))

@@ -4,6 +4,8 @@
  */
 package com.tourapp.thin.tour.booking.db;
 
+import com.tourapp.model.tour.product.tour.db.*;
+import org.jbundle.model.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -181,6 +183,21 @@ public class Tour extends Job
         keyArea.addKeyField("TourEventID", Constants.ASCENDING);
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);
+    }
+    /**
+     * Given the tour header and the departure date, setup or locate
+     * the correct tour.
+     */
+    public int setupTourFromHeader(TourHeaderModel recTourHeader, Field fldDepDate, String strCode, String strDescription)
+    {
+        return -1; // Empty implementation
+    }
+    /**
+     * CalcTourDates Method.
+     */
+    public void calcTourDates(Rec recTourHeader)
+    {
+        // Empty implementation
     }
 
 }

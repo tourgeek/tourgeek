@@ -20,7 +20,6 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.model.tour.product.base.db.*;
 
 /**

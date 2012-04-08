@@ -20,7 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ProductField - Base product field.
@@ -84,9 +84,9 @@ public class ProductField extends ReferenceField
     public Record makeReferenceRecord(RecordOwner recordOwner)
     {
         if (m_recordReference == null)
-            if (this.getRecord() instanceof BookingDetail)
+            if (this.getRecord() instanceof BookingDetailModel)
         {
-            ProductTypeField fldProductType = (ProductTypeField)this.getRecord().getField(BookingDetail.PRODUCT_TYPE_ID);
+            ProductTypeField fldProductType = (ProductTypeField)this.getRecord().getField(BookingDetailModel.PRODUCT_TYPE_ID);
             ProductType recProductType = (ProductType)fldProductType.getReference();
             String strProductType = recProductType.getField(ProductType.DESCRIPTION).toString();
             if ("Tour".equalsIgnoreCase(strProductType))

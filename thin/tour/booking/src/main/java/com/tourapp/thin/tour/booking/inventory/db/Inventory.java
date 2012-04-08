@@ -4,6 +4,8 @@
  */
 package com.tourapp.thin.tour.booking.inventory.db;
 
+import com.tourapp.model.tour.product.base.db.*;
+import org.jbundle.model.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -102,6 +104,48 @@ public class Inventory extends FieldList
         keyArea.addKeyField("RateID", Constants.ASCENDING);
         keyArea.addKeyField("ClassID", Constants.ASCENDING);
         keyArea.addKeyField("OtherID", Constants.ASCENDING);
+    }
+    /**
+     * GetAvailability Method.
+     */
+    public InventoryModel getAvailability(ProductModel recProduct, Date dateTarget, int iRateID, int iClassID, int iOtherID)
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * Get all the transaction IDs for this BookingDetail trx ID.
+     */
+    public Set<Integer> surveyInventory(Field fldTrxID)
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * For the current record, update the availability using this amount
+     * @param iTargetAmount Amount to reduce the inventory by.
+     * @param fldTrxID The (BookingDetail) trx to tie this inventory to
+     * @param iType Option type (ie., room type)
+     * @param bDelete If true, delete this inventory
+     * @param mapSurvey If a changed transaction is contained in this map, remove it
+     * @return Error code.
+     */
+    public int updateAvailability(int iTargetAmount, Field fldTrxID, int iType, boolean bDelete, Set<Integer> setSurvey)
+    {
+        return -1; // Empty implementation
+    }
+    /**
+     * Remove the transactions contained in this map.
+     */
+    public int removeTrxs(Field fldTrxID, Set<Integer> setSurvey)
+    {
+        return -1; // Empty implementation
+    }
+    /**
+     * Remove the inventory for this BookingDetail trxID.
+     * (Deletes the links, and adds the inventory back).
+     */
+    public int removeInventory(Field fldTrxID)
+    {
+        return -1; // Empty implementation
     }
 
 }

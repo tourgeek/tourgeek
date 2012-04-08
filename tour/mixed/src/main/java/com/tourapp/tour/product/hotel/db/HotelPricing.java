@@ -23,7 +23,6 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.hotel.screen.*;
 import java.util.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.model.tour.product.hotel.db.*;

@@ -20,12 +20,11 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.request.data.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.product.base.search.db.*;
@@ -163,8 +162,8 @@ public class ProductScreenRecord extends ScreenRecord
         ProductMessageData productMessageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData passengerMessageData = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         
-        this.addMapProperty(productMessageData, BookingDetail.DETAIL_DATE, this, ProductScreenRecord.DETAIL_DATE);
-        this.addMapProperty(productMessageData, BookingDetail.PRODUCT_ID, recProduct, Product.ID);
+        this.addMapProperty(productMessageData, BookingDetailModel.DETAIL_DATE, this, ProductScreenRecord.DETAIL_DATE);
+        this.addMapProperty(productMessageData, BookingDetailModel.PRODUCT_ID, recProduct, Product.ID);
         this.addMapProperty(passengerMessageData, Product.PAX_PARAM, this, ProductScreenRecord.PAX);
         if (this.getField(ProductScreenRecord.PAX).getValue() == 2)  // Default
             passengerMessageData.put(Product.ROOM_TYPE_PARAM + Integer.toString(PaxCategory.DOUBLE_ID), new Short((short)2));   // Two pax in a double room
@@ -179,8 +178,8 @@ public class ProductScreenRecord extends ScreenRecord
         // Others
         productRequest.put(DBParams.RECORD, recProduct.getTableNames(false));
         productRequest.put(DBParams.TIMESTAMP, Double.toString(this.getField(ProductScreenRecord.LAST_CHANGED).getValue()));
-        this.addMapProperty(productMessageData, BookingDetail.RATE_ID, this, ProductScreenRecord.RATE_ID);
-        this.addMapProperty(productMessageData, BookingDetail.CLASS_ID, this, ProductScreenRecord.CLASS_ID);
+        this.addMapProperty(productMessageData, BookingDetailModel.RATE_ID, this, ProductScreenRecord.RATE_ID);
+        this.addMapProperty(productMessageData, BookingDetailModel.CLASS_ID, this, ProductScreenRecord.CLASS_ID);
     }
     /**
      * Is this the correct message for this screen.

@@ -84,7 +84,7 @@ public class ChangePricingTypeHandler extends FieldListener
             } catch (DBException e) {
                 e.printStackTrace();
             }
-            recBooking = ((BookingDetail)this.getOwner().getRecord()).getBooking(true);
+            recBooking = (Booking)((BookingDetail)this.getOwner().getRecord()).getBooking(true);
             fldTourModuleID = this.getOwner().getRecord().getField(BookingDetail.PRODUCT_ID);
             dateStart = ((DateTimeField)this.getOwner().getRecord().getField(BookingDetail.DETAIL_DATE)).getDateTime();
             recBooking.getTourPricingType(null, fldTourModuleID, dateStart);    // This will clear the cache

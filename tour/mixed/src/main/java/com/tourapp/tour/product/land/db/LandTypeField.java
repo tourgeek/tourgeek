@@ -21,15 +21,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.land.screen.*;
 import java.util.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.thin.app.booking.entry.search.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 import com.tourapp.tour.message.land.request.*;
-import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
@@ -39,6 +36,8 @@ import com.tourapp.tour.message.land.response.*;
 import com.tourapp.tour.message.land.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.tour.acctpay.db.*;
 
 /**

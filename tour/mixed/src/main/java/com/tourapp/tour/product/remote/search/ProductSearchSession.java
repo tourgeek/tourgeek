@@ -33,8 +33,8 @@ import java.text.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.event.*;
 import com.tourapp.tour.product.base.screen.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  ProductSearchSession - Base class for the remote side of product searches.
@@ -120,7 +120,7 @@ public class ProductSearchSession extends Session
         listener.setRespondsToMode(DBConstants.READ_MOVE, true);
         this.selectGridFields();    // Initial value
         
-        record.addListener(new MoveOnValidHandler(record.getField(Product.CURRENCY_CODE_LOCAL), this.getRecord(Booking.BOOKING_FILE).getField(Booking.CURRENCY_CODE)));
+        record.addListener(new MoveOnValidHandler(record.getField(Product.CURRENCY_CODE_LOCAL), this.getRecord(BookingModel.BOOKING_FILE).getField(BookingModel.CURRENCY_CODE)));
         
         this.addRateMessageListeners((Product)this.getMainRecord(), (ProductScreenRecord)this.getScreenRecord());
         this.addAvailabilityMessageListeners((Product)this.getMainRecord(), (ProductScreenRecord)this.getScreenRecord());

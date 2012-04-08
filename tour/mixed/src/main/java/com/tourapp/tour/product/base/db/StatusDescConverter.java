@@ -21,9 +21,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.thin.app.booking.entry.*;
 import org.jbundle.base.screen.model.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  StatusDescConverter - .
@@ -64,8 +64,8 @@ public class StatusDescConverter extends DescConverter
      */
     public String getProductType()
     {
-        BookingDetail recCustSaleDetail = (BookingDetail)((BaseField)this.getField()).getRecord();
-        String strProductType = recCustSaleDetail.getField(com.tourapp.tour.booking.detail.db.BookingDetail.PRODUCT_TYPE).toString();
+        BookingDetailModel recCustSaleDetail = (BookingDetailModel)((BaseField)this.getField()).getRecord();
+        String strProductType = recCustSaleDetail.getField(BookingDetailModel.PRODUCT_TYPE).toString();
         if ((strProductType == null) || (strProductType.length() == 0))
             strProductType = ProductType.ITEM;
         return strProductType;

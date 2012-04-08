@@ -5,6 +5,7 @@
 package com.tourapp.model.tour.booking.detail.db;
 
 import java.util.*;
+import org.jbundle.model.message.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 public interface BookingDetailModel extends BookingSubModel
@@ -142,6 +143,9 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String DETAIL_DATE_KEY = "DetailDate";
 
     public static final String VENDOR_ID_KEY = "VendorID";
+    public static final int MESSAGE_TRANSPORT_OFFSET = 4 /*InfoMessageTransportID - InfoStatusID*/;
+    public static final int MESSAGE_KEY_OFFSET = 1 /*InfoRequestKey - kInfoStatusID*/;
+    public static final int MESSAGE_REQUEST_OFFSET = 2 /*InfoStatusRequest - InfoStatusID*/;
     public static final String MESSAGE_PARAM = "message";
     public static final String ERROR_PARAM = "error";
     public static final String INFO_PARAM = "info";
@@ -169,5 +173,37 @@ public interface BookingDetailModel extends BookingSubModel
      * For manual lines, the manual description is returned.
      */
     public String getProductDesc();
+    /**
+     * Get Pax using this service.
+     */
+    public short getNoPax();
+    /**
+     * Pre-check to see if the minimal required params are set.
+     * @return If okay, return 0, otherwise return the field that is required.
+     */
+    public String checkRequiredParams(String iStatusType);
+    /**
+     * GetErrorMessage Method.
+     */
+    public String getErrorMessage(String iStatusType);
+    /**
+     * Add any message properties that are set in this record.
+     */
+    public void addMessageProperties(String strPrefix, boolean bDeleteProperties, MessageHeader messageHeader, Message message, String strNewPrefix);
+    /**
+     * Add the booking line item for this booking detail.
+     * @param recBookingLine The line file
+     * @param iPricingType Cost or Pricing.
+     * @param iPaxCategory The passenger room type (category)
+     * @param iQuantity The number to add
+     * @param dAmount The unit amount
+     * @param bCommissionable Is this line item fully commissionable?
+     * @param dCommission The commission rate if not fully commissionable.
+     * @param iChangeType The detail change type
+     * @return NORMAL_RETURN if a pricing item was added
+     * @return ERROR_RETURN If no pricing was added, or a item was deleted making this line item total zero.
+     */
+    public int updateBookingLine(BookingLineModel bookingLine, int iPricingType, int iPaxCategory,  int iQuantity, double dAmount, boolean bCommissionable, double dCommissionRate, String
+     strPayAt, int iPricingStatusID, int iChangeType);
 
 }

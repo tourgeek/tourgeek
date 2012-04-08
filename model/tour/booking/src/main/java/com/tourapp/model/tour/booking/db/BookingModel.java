@@ -6,6 +6,9 @@ package com.tourapp.model.tour.booking.db;
 
 import com.tourapp.model.tour.acctrec.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
+import org.jbundle.model.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
+import java.util.*;
 import com.tourapp.model.tour.booking.db.*;
 
 public interface BookingModel extends CustSaleModel
@@ -99,10 +102,36 @@ public interface BookingModel extends CustSaleModel
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.Booking";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.db.Booking";
     /**
+     * Add the defaults from the control file when you have a new record.
+     */
+    public Rec addControlDefaults(Rec recBookingControl, Rec recProfileControl);
+    /**
+     * Add all the tour detail to this booking.
+     * @param recTour
+     * @param recTourHeader
+     * @param recBookingPax
+     * @param recBookingAnswer If null, set up the default booking answers.
+     * @param dateStart
+     * @return An error code or NORMAL_RETURN if okay.
+     */
+    public int addTourDetail(TourModel recTour, TourHeaderModel recTourHeader, BookingPaxModel recBookingPax, BookingAnswerModel recBookingAnswer, Date dateStart, Field fldAskForAnswer);
+    /**
+     * ChangeTourDetail Method.
+     */
+    public int changeTourDetail(TourModel recTour, BookingPaxModel recBookingPax, TourHeaderModel recTourHeader, Date dateOriginal, Date dateStart);
+    /**
+     * CalcBookingDates Method.
+     */
+    public int calcBookingDates(Rec recTour, Rec recTourHeader);
+    /**
      * Add the ArTrx and BookingLine detail files if they don't already exist.
      * Also add all the listeners for these files.
      * @param bForceRecount If true, make sure the booking totals are correct, especially if this record is in an indeterminate state.
      */
     public ArTrxModel addArDetail(ArTrxModel recArTrx, BookingLineModel recBookingLine, boolean bForceRecount);
+    /**
+     * Setup the default booking description and code.
+     */
+    public String setupDefaultDesc(Rec recTourHeader, Field fldDepDate);
 
 }

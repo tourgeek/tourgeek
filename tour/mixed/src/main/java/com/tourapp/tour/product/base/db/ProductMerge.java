@@ -24,8 +24,7 @@ import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 import com.tourapp.model.tour.product.base.db.*;
 
 /**
@@ -147,8 +146,8 @@ public class ProductMerge extends QueryRecord
         Hotel pBkHotel = new Hotel(recordOwner);
         this.addTable(pBkHotel);
         
-        TourHeader pBkTourHdr = new TourHeader(recordOwner);
-        this.addTable(pBkTourHdr);
+        Record tourHdr = Record.makeRecordFromClassName(TourHeaderModel.THICK_CLASS, recordOwner);
+        this.addTable(tourHdr);
     }
     /**
      * Get the actual record to add/edit/etc

@@ -5,6 +5,7 @@
 package com.tourapp.thin.tour.booking.detail.db;
 
 import java.util.*;
+import org.jbundle.model.message.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -320,6 +321,21 @@ public class BookingDetail extends BookingSub
         keyArea.addKeyField("DetailDate", Constants.ASCENDING);
     }
     /**
+     * No thin implementation.
+     */
+    public short getNoPax()
+    {
+        return -1;
+    }
+    /**
+     * No thin implementation.
+     */
+    public int updateBookingLine(BookingLineModel recBookingLine, int iPricingType, int iPaxCategory,  int iQuantity, double dAmount, boolean bCommissionable, double dCommissionRate, String
+     strPayAt, int iPricingStatusID, int iChangeType)
+    {
+        return -1;
+    }
+    /**
      * Get the start date and time for this product.
      * Return null if there is no date and time.
      */
@@ -343,6 +359,28 @@ public class BookingDetail extends BookingSub
     public String getProductDesc()
     {
         return null; // Empty implementation
+    }
+    /**
+     * Pre-check to see if the minimal required params are set.
+     * @return If okay, return 0, otherwise return the field that is required.
+     */
+    public String checkRequiredParams(String iStatusType)
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * GetErrorMessage Method.
+     */
+    public String getErrorMessage(String iStatusType)
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * Add any message properties that are set in this record.
+     */
+    public void addMessageProperties(String strPrefix, boolean bDeleteProperties, MessageHeader messageHeader, Message message, String strNewPrefix)
+    {
+        // Empty implementation
     }
 
 }

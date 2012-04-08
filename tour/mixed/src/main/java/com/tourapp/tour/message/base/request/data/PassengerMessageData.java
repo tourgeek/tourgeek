@@ -87,7 +87,7 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public int putRawRecordData(Rec record)
     {
-        Booking recBooking = ((BookingDetail)record).getBooking(true);
+        Booking recBooking = (Booking)((BookingDetail)record).getBooking(true);
         int iErrorCode = super.putRawRecordData(recBooking);
         for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
         {
@@ -105,7 +105,7 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public int getRawRecordData(Rec record)
     {
-        Booking recBooking = ((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
+        Booking recBooking = (Booking)((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
         int iErrorCode = super.getRawRecordData(record);
         for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
         {

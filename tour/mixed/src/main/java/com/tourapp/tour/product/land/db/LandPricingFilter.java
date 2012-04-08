@@ -23,13 +23,12 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.land.screen.*;
 import java.util.*;
 import com.tourapp.tour.base.db.*;
 import java.text.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.land.event.*;
 import com.tourapp.tour.message.land.request.data.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  LandPricingFilter - A filter for the valid pricing records for a land.

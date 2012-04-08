@@ -26,6 +26,7 @@ import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.event.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
@@ -110,18 +111,18 @@ public class BookingSub extends VirtualRecord
     /**
      * AddDetailBehaviors Method.
      */
-    public void addDetailBehaviors(Booking recBooking, Tour recTour)
+    public void addDetailBehaviors(BookingModel recBooking, TourModel recTour)
     {
-        FileListener subFileBeh = new SubFileFilter(recBooking, true);
+        FileListener subFileBeh = new SubFileFilter((Record)recBooking, true);
         this.addListener(subFileBeh);
         this.setKeyArea(BookingSub.BOOKING_ID_KEY);
         RecordOwner screen = this.getRecordOwner();
         if (screen != null) if (screen instanceof GridScreenParent)
         {
             FieldListener reSelect = new FieldReSelectHandler((GridScreenParent)screen);
-            recBooking.getField(Booking.ID).addListener(reSelect);
+            ((BaseField)recBooking.getField(Booking.ID)).addListener(reSelect);
         }
-        this.addListener(new InitBookingDetailHandler(recBooking, recTour));
+        this.addListener(new InitBookingDetailHandler((Booking)recBooking, (Tour)recTour));
     }
     /**
      * InitBookingDetailFields Method.
@@ -387,7 +388,7 @@ public class BookingSub extends VirtualRecord
      * Get the main (Booking) record for this detail record.
      * Note: This will only return the main record if it already exists.
      */
-    public Booking getBooking(boolean bCreateAndReadCurrent)
+    public BookingModel getBooking(boolean bCreateAndReadCurrent)
     {
         ReferenceField fldBookingID = (ReferenceField)this.getField(BookingSub.BOOKING_ID);
         if (bCreateAndReadCurrent)

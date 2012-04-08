@@ -121,7 +121,7 @@ public class BaseProductMessageData extends MessageRecordDesc
         BookingDetail recBookingDetail = (BookingDetail)record;
         if (recBookingDetail.getListener(SubFileFilter.class) == null)
         {
-            Booking recBooking = recBookingDetail.getBooking(false);    // Booking should already be current
+            Booking recBooking = (Booking)recBookingDetail.getBooking(false);    // Booking should already be current
             Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReferenceRecord();
             recBookingDetail.addDetailBehaviors(recBooking, recTour);
         }
@@ -185,7 +185,7 @@ public class BaseProductMessageData extends MessageRecordDesc
             }
             if (recBookingDetail.getEditMode() == DBConstants.EDIT_ADD)
             {
-                Booking recBooking = recBookingDetail.getBooking(false);    // Booking should already be current
+                Booking recBooking = (Booking)recBookingDetail.getBooking(false);    // Booking should already be current
                 Tour recTour = (Tour)((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReferenceRecord();
                 recBookingDetail.initBookingDetailFields(recBooking, recTour, false);
             }

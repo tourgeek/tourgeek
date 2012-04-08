@@ -61,7 +61,7 @@ public class BookingMessageData extends MessageRecordDesc
      */
     public int putRawRecordData(Rec record)
     {
-        Booking recBooking = ((BookingDetail)record).getBooking(true);
+        Booking recBooking = (Booking)((BookingDetail)record).getBooking(true);
         int iErrorCode = DBConstants.NORMAL_RETURN;
         for (int iFieldSeq = recBooking.getFieldSeq(Booking.GENERIC_NAME); iFieldSeq <= recBooking.getFieldSeq(Booking.CONTACT); iFieldSeq++)
         {
@@ -77,7 +77,7 @@ public class BookingMessageData extends MessageRecordDesc
      */
     public int getRawRecordData(Rec record)
     {
-        Booking recBooking = ((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
+        Booking recBooking = (Booking)((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
         for (int iFieldSeq = recBooking.getFieldSeq(Booking.GENERIC_NAME); iFieldSeq <= recBooking.getFieldSeq(Booking.CONTACT); iFieldSeq++)
         {
             this.getRawFieldData(recBooking.getField(iFieldSeq));

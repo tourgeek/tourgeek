@@ -20,8 +20,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  AddCommissionHandler - Add agency commission to the price.
@@ -64,11 +64,11 @@ public class AddCommissionHandler extends FieldListener
             if (recordOwner != null)
             {
                 double dCommission = 0.00;
-                Record recBooking = (Record)recordOwner.getRecord(Booking.BOOKING_FILE);
+                Record recBooking = (Record)recordOwner.getRecord(BookingModel.BOOKING_FILE);
                 if ((recBooking != null)
                     && ((recBooking.getEditMode() == DBConstants.EDIT_CURRENT) || (recBooking.getEditMode() == DBConstants.EDIT_IN_PROGRESS)))
                 {
-                    dCommission = recBooking.getField(Booking.STD_COMMISSION).getValue();
+                    dCommission = recBooking.getField(BookingModel.STD_COMMISSION).getValue();
                 }
                 else
                 {
