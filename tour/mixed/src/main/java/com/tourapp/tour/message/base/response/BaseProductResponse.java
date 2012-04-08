@@ -31,6 +31,7 @@ import java.math.*;
 import javax.xml.datatype.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  BaseProductResponse - .

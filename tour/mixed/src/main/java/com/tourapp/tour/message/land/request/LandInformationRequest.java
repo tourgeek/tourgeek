@@ -24,6 +24,7 @@ import com.tourapp.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.land.request.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  LandInformationRequest - .

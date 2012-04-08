@@ -23,11 +23,12 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
-import org.jbundle.thin.base.message.*;
+import org.jbundle.model.message.*;
 import com.tourapp.tour.message.item.request.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.main.msg.db.*;
+import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.item.response.*;
 
 /**

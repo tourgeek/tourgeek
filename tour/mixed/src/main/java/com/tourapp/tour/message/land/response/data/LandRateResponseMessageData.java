@@ -23,9 +23,10 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.land.request.*;
-import org.jbundle.thin.base.message.*;
+import org.jbundle.model.message.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.thin.base.message.*;
 
 /**
  *  LandRateResponseMessageData - .

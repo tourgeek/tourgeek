@@ -28,6 +28,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.land.request.*;
 import com.tourapp.tour.message.land.response.data.*;
 import com.tourapp.tour.message.base.response.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  LandRateResponse - .

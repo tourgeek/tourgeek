@@ -28,6 +28,7 @@ import org.jbundle.main.msg.db.*;
 import java.math.*;
 import javax.xml.datatype.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  BaseProductMessageDesc - .

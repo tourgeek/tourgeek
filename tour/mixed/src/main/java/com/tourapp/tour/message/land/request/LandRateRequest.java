@@ -25,6 +25,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.land.request.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  LandRateRequest - .

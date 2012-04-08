@@ -29,6 +29,7 @@ import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductRequest - Cost/Price request (out) message.

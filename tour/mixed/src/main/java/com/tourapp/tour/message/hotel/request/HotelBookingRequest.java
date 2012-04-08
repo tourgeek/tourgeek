@@ -30,6 +30,7 @@ import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.hotel.request.data.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  HotelBookingRequest - Hotel order (booking) request message.

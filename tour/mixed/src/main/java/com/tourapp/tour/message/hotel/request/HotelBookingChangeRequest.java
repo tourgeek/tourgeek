@@ -24,6 +24,7 @@ import org.jbundle.thin.base.message.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  HotelBookingChangeRequest - .

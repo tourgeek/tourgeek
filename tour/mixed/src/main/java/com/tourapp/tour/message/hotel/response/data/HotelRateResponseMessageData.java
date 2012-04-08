@@ -25,6 +25,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  HotelRateResponseMessageData - .

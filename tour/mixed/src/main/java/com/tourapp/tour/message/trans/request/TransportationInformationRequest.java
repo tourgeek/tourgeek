@@ -26,6 +26,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.trans.request.data.*;
+import org.jbundle.model.message.*;
 import org.jbundle.main.msg.db.*;
 
 /**

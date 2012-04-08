@@ -26,6 +26,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.tour.message.base.response.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductRateResponse - .

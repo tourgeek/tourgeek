@@ -21,10 +21,11 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.land.request.*;
-import org.jbundle.thin.base.message.*;
+import org.jbundle.model.message.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.booking.detail.db.*;
+import org.jbundle.thin.base.message.*;
 
 /**
  *  LandBookingChangeResponse - .

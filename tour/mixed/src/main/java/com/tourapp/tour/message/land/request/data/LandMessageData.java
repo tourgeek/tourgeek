@@ -26,6 +26,7 @@ import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  LandMessageData - .

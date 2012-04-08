@@ -22,6 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.thin.base.message.*;
+import org.jbundle.model.message.*;
 
 /**
  *  TransportationAvailabilityResponse - .

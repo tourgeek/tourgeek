@@ -24,6 +24,7 @@ import com.tourapp.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.car.request.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  CarRateRequest - .

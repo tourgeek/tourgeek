@@ -27,6 +27,7 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.message.hotel.response.data.*;
 import com.tourapp.tour.message.base.response.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  HotelRateResponse - .

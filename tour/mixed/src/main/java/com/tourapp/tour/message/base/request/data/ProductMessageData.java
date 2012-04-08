@@ -29,6 +29,7 @@ import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 import java.text.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductMessageData - .

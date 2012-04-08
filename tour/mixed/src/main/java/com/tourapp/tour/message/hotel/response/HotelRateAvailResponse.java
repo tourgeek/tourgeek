@@ -26,6 +26,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.hotel.response.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  HotelRateAvailResponse - Combined Rate and Availability response message.

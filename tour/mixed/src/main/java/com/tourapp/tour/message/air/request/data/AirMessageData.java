@@ -26,6 +26,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.air.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.booking.detail.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  AirMessageData - .

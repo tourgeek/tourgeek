@@ -23,6 +23,7 @@ import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  LineMessageData - .

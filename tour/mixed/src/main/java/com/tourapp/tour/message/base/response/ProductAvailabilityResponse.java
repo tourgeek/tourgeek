@@ -26,6 +26,7 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.message.base.response.data.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductAvailabilityResponse - .

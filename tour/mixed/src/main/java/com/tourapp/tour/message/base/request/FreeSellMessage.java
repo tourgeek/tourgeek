@@ -23,6 +23,7 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  FreeSellMessage - Free sell this item (status is automatically set to VALID).

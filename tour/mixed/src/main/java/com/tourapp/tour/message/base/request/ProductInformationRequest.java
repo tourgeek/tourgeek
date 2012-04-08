@@ -20,12 +20,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import org.jbundle.thin.base.message.*;
+import org.jbundle.model.message.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
+import org.jbundle.thin.base.message.*;
 
 /**
  *  ProductInformationRequest - .
