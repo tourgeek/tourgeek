@@ -26,7 +26,6 @@ import com.tourapp.tour.acctpay.screen.trx.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.thin.base.message.*;
-import org.jbundle.thin.base.screen.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.model.message.*;
 

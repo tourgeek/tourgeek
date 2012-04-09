@@ -24,6 +24,7 @@
     <module>request</module>
     <module>util</module>
     <module>base</module>
+    <module>message</module>
   </modules>
 
 </project>

@@ -46,6 +46,7 @@ import com.tourapp.tour.product.base.search.screen.*;
 import com.tourapp.tour.product.air.db.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.product.base.event.*;
+import com.tourapp.model.tour.message.base.response.*;
 import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
@@ -438,23 +439,22 @@ public class Product extends VirtualRecord
      */
     public BaseMessage processInfoRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
-        ProductMessageData messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
-        Date dateTarget = messageData.getTargetDate();
+        MessageRecordDesc productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        MessageRecordDesc messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         
-        BaseProductResponse responseMessage = null;
+        BaseProductResponseModel responseMessage = null;
         if (messageReply == null)
             messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
-        responseMessage = (BaseProductResponse)messageReply.getMessageDataDesc(null);
+        responseMessage = (BaseProductResponseModel)messageReply.getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         
         int iProductStatus = InventoryStatus.VALID;
-        String strErrorMessage = null;
+        //?String strErrorMessage = null;
         
         //?this.getField(Product.DISPLAY_INFO_STATUS_ID).setValue(iProductStatus);
         responseMessage.setMessageDataStatus(iProductStatus);
-        if (strErrorMessage != null)
-            responseMessage.setMessageDataError(strErrorMessage);
+        //?if (strErrorMessage != null)
+        //?    responseMessage.setMessageDataError(strErrorMessage);
         return messageReply;
     }
     /**

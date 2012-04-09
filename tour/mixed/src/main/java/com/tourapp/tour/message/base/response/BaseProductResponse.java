@@ -32,11 +32,13 @@ import javax.xml.datatype.*;
 import com.tourapp.tour.message.base.request.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.message.base.response.*;
 
 /**
  *  BaseProductResponse - .
  */
 public class BaseProductResponse extends BaseProductMessageDesc
+     implements BaseProductResponseModel
 {
     public static final String PRODUCT_RESPONSE_MESSAGE = "productResponse";
     /**
@@ -147,11 +149,11 @@ public class BaseProductResponse extends BaseProductMessageDesc
     /**
      * Move the pertinenent information from the request to this reply message.
      */
-    public void moveRequestInfoToReply(BaseMessage messageRequest)
+    public void moveRequestInfoToReply(Message messageRequest)
     {
         super.moveRequestInfoToReply(messageRequest);
         
-        BaseProductMessageDesc baseProductMessage = (BaseProductMessageDesc)messageRequest.getMessageDataDesc(null); // This is a given
+        BaseProductMessageDesc baseProductMessage = (BaseProductMessageDesc)((BaseMessage)messageRequest).getMessageDataDesc(null); // This is a given
         ProductMessageData productMessageDesc = (ProductMessageData)baseProductMessage.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         int iNodeIndex = 0;
         if (productMessageDesc != null)
