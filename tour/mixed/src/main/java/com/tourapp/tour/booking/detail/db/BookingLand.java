@@ -30,7 +30,6 @@ import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.product.land.db.*;
 import org.jbundle.base.db.shared.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.land.response.in.*;
 import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 

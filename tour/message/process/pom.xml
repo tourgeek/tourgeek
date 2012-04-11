@@ -9,17 +9,20 @@
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.message.jibx</artifactId>
-  <name>tourapp-tour-message-jibx</name>
-  <description>JiBX Messaging</description>
+  <artifactId>com.tourapp.tour.message.process</artifactId>
+  <name>tourapp-tour-message-process</name>
+  <description>Message processes</description>
   <packaging>bundle</packaging>
 
+  <properties>
+    <jbundlePackageExport>
+    com.tourapp.tour.message.*.in;version=${project.version},
+    com.tourapp.tour.message.*.out;version=${project.version},
+    com.tourapp.tour.message.*.screen;version=${project.version},
+    </jbundlePackageExport>
+  </properties>
+
   <dependencies>
-    <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <version>0.8.0-SNAPSHOT</version>
-      <artifactId>com.tourapp.tour.message.process</artifactId>
-    </dependency>
     <dependency>
 	  <groupId>org.jbundle.config.dep</groupId>
 	  <artifactId>jbundle-config-dep-base</artifactId>
@@ -48,6 +51,11 @@
       <version>0.8.0-SNAPSHOT</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctpay.db</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.booking</artifactId>

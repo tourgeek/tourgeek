@@ -25,7 +25,6 @@ import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.message.hotel.request.out.*;
 
 /**
  *  GetHotelCostHandler - This handler looks up the hotel cost, given the rate, class, and date

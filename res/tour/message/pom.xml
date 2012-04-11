@@ -13,6 +13,6 @@
   <name>tourapp-res-message-reactor - Resources parent</name>
 
   <modules>
-    <module>core</module>
+    <module>process</module>
   </modules>
 </project>

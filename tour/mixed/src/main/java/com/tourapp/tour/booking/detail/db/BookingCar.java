@@ -24,7 +24,6 @@ import com.tourapp.tour.booking.entry.detail.car.*;
 import org.jbundle.base.db.shared.*;
 import java.util.*;
 import com.tourapp.tour.product.tour.detail.db.*;
-import com.tourapp.tour.message.car.response.in.*;
 import com.tourapp.tour.booking.detail.event.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.product.tour.db.*;

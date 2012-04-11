@@ -33,7 +33,6 @@ import org.jbundle.base.db.shared.*;
 import com.tourapp.tour.message.hotel.request.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.hotel.response.in.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
