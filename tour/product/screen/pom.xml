@@ -15,10 +15,9 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageImport>
-      *;resolution:=optional,
-      com.tourapp.res.tour.product;resolution:=optional,
-    </jbundlePackageImport>
+    <jbundlePackageExport>
+    com.tourapp.tour.product.*.screen;version=${project.version},
+    </jbundlePackageExport>
   </properties>
 
   <dependencies>

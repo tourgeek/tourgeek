@@ -131,7 +131,12 @@
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.product</artifactId>
+                  <artifactId>com.tourapp.tour.product.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.product.screen</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>

@@ -15,7 +15,7 @@
 
   <properties>
     <jbundlePackageExport>
-    com.tourapp.tour.product.*.db;version=${project.version},
+    com.tourapp.tour.product.*;version=${project.version},
     </jbundlePackageExport>
     <jbundlePackageImport>
       *;resolution:=optional,
