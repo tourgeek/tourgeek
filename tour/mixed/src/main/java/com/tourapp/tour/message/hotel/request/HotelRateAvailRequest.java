@@ -22,10 +22,10 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  HotelRateAvailRequest - Combined rate and availability request.
@@ -53,7 +53,7 @@ public class HotelRateAvailRequest extends HotelRateRequest
     public void init(MessageDataParent messageDataParent, String strKey)
     {
         super.init(messageDataParent, strKey);
-        ((ProductMessageData)this.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).setSyncFields(BookingDetail.INVENTORY_STATUS_ID, BookingDetail.COST_STATUS_ID);
+        ((ProductMessageData)this.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE)).setSyncFields(BookingDetailModel.INVENTORY_STATUS_ID, BookingDetailModel.COST_STATUS_ID);
     }
 
 }

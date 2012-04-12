@@ -50,6 +50,7 @@ import com.tourapp.model.tour.message.base.response.*;
 import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
+import org.jbundle.model.message.*;
 
 /**
  *  ProductDescSort - Desc sort field.

@@ -21,17 +21,18 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  PassengerMessageData - .
  */
 public class PassengerMessageData extends MessageRecordDesc
 {
+    public static final String PASSENGER_MESSAGE = "passengerMessage";
     /**
      * Default constructor.
      */
@@ -53,7 +54,7 @@ public class PassengerMessageData extends MessageRecordDesc
     public void init(MessageDataParent messageDataParent, String strKey)
     {
         if (strKey == null)
-            strKey = ProductRequest.PASSENGER_MESSAGE;
+            strKey = PassengerMessageData.PASSENGER_MESSAGE;
         super.init(messageDataParent, strKey);
     }
     /**
@@ -63,10 +64,10 @@ public class PassengerMessageData extends MessageRecordDesc
     {
         super.setupMessageDataDesc();
         
-        this.addMessageDataDesc(new PassengerDetailMessageData(this, ProductRequest.PASSENGER_DETAIL));
+        this.addMessageDataDesc(new PassengerDetailMessageData(this, PassengerDetailMessageData.PASSENGER_DETAIL));
         
-        this.addMessageFieldDesc(Product.PAX_PARAM, Short.class, MessageFieldDesc.REQUIRED, null);
-        this.addMessageFieldDesc(Product.ROOM_TYPE_PARAM, Short.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.COMPOUND_PARAM | PaxCategory.CHILD_ID, null);
+        this.addMessageFieldDesc(ProductModel.PAX_PARAM, Short.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(ProductModel.ROOM_TYPE_PARAM, Short.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.COMPOUND_PARAM | PaxCategoryModel.CHILD_ID, null);
     }
     /**
      * Get the data description for this param.
@@ -74,10 +75,10 @@ public class PassengerMessageData extends MessageRecordDesc
     public MessageDataDesc getMessageDataDesc(String strParam)
     {
         String strParamOrig = strParam;
-        if (strParam.startsWith(Product.ROOM_TYPE_PARAM))
-            strParam = Product.ROOM_TYPE_PARAM;
+        if (strParam.startsWith(ProductModel.ROOM_TYPE_PARAM))
+            strParam = ProductModel.ROOM_TYPE_PARAM;
         MessageDataDesc messageDataDesc = super.getMessageDataDesc(strParam);
-        if (strParamOrig.startsWith(Product.ROOM_TYPE_PARAM))
+        if (strParamOrig.startsWith(ProductModel.ROOM_TYPE_PARAM))
             messageDataDesc.setKey(strParamOrig);
         return messageDataDesc;
     }
@@ -88,14 +89,14 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public int putRawRecordData(Rec record)
     {
-        Booking recBooking = (Booking)((BookingDetail)record).getBooking(true);
+        BookingModel recBooking = ((BookingDetailModel)record).getBooking(true);
         int iErrorCode = super.putRawRecordData(recBooking);
-        for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
+        for (int iRoomType = PaxCategoryModel.SINGLE_ID; iRoomType <= PaxCategoryModel.CHILD_ID; iRoomType++)
         {
-            short shPaxOfType = (short)recBooking.getField(recBooking.getFieldSeq(Booking.SINGLE_PAX) + iRoomType - PaxCategory.SINGLE_ID).getValue();
+            short shPaxOfType = (short)recBooking.getField(((Record)recBooking).getFieldSeq(BookingModel.SINGLE_PAX) + iRoomType - PaxCategoryModel.SINGLE_ID).getValue();
             if (shPaxOfType > 0)
             {
-                this.put(Product.ROOM_TYPE_PARAM + Integer.toString(iRoomType), new Short(shPaxOfType));
+                this.put(ProductModel.ROOM_TYPE_PARAM + Integer.toString(iRoomType), new Short(shPaxOfType));
             }
         }
         return iErrorCode;
@@ -106,14 +107,14 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public int getRawRecordData(Rec record)
     {
-        Booking recBooking = (Booking)((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
+        BookingModel recBooking = (BookingModel)((BookingDetailModel)record).getBooking(!record.getField(BookingDetailModel.BOOKING_ID).isNull());
         int iErrorCode = super.getRawRecordData(record);
-        for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
+        for (int iRoomType = PaxCategoryModel.SINGLE_ID; iRoomType <= PaxCategoryModel.CHILD_ID; iRoomType++)
         {
             short shPaxOfType = this.getPaxInRoom(iRoomType);
             if (shPaxOfType > 0)
             {
-                recBooking.getField(recBooking.getFieldSeq(Booking.SINGLE_PAX) + iRoomType - PaxCategory.SINGLE_ID).setValue(shPaxOfType);
+                recBooking.getField(((Record)recBooking).getFieldSeq(BookingModel.SINGLE_PAX) + iRoomType - PaxCategoryModel.SINGLE_ID).setValue(shPaxOfType);
             }
         }
         return iErrorCode;
@@ -123,7 +124,7 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public short getTargetPax()
     {
-        Short shortTargetPax = (Short)this.get(Product.PAX_PARAM);
+        Short shortTargetPax = (Short)this.get(ProductModel.PAX_PARAM);
         short sTargetPax = 0;
         if (shortTargetPax != null)
             sTargetPax = shortTargetPax.shortValue();
@@ -136,14 +137,14 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public void setTargetPax(short sPax)
     {
-        this.put(Product.PAX_PARAM, new Short(sPax));
+        this.put(ProductModel.PAX_PARAM, new Short(sPax));
     }
     /**
      * GetPaxInRoom Method.
      */
     public short getPaxInRoom(int iRoomCategory)
     {
-        Short shPaxInRoom = (Short)this.get(Product.ROOM_TYPE_PARAM + Integer.toString(iRoomCategory));
+        Short shPaxInRoom = (Short)this.get(ProductModel.ROOM_TYPE_PARAM + Integer.toString(iRoomCategory));
         if (shPaxInRoom == null)
             return (short)0;
         return shPaxInRoom.shortValue();
@@ -153,7 +154,7 @@ public class PassengerMessageData extends MessageRecordDesc
      */
     public void setPaxInRoom(int iRoomCategory, short shPaxInRoom)
     {
-        this.put(Product.ROOM_TYPE_PARAM + Integer.toString(iRoomCategory), new Short(shPaxInRoom));
+        this.put(ProductModel.ROOM_TYPE_PARAM + Integer.toString(iRoomCategory), new Short(shPaxInRoom));
     }
 
 }

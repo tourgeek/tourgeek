@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.land.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  LandMessageData - .
@@ -61,11 +61,11 @@ public class LandMessageData extends ProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.removeMessageDataDesc(BookingDetail.RATE_ID);
-        this.removeMessageDataDesc(BookingDetail.CLASS_ID);
-        this.addMessageFieldDesc(BookingDetail.RATE_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BookingDetail.CLASS_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(Product.ROOM_TYPE_PARAM, Short.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.COMPOUND_PARAM | PaxCategory.CHILD_ID, null);
+        this.removeMessageDataDesc(BookingDetailModel.RATE_ID);
+        this.removeMessageDataDesc(BookingDetailModel.CLASS_ID);
+        this.addMessageFieldDesc(BookingDetailModel.RATE_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingDetailModel.CLASS_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(ProductModel.ROOM_TYPE_PARAM, Short.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.COMPOUND_PARAM | PaxCategoryModel.CHILD_ID, null);
     }
     /**
      * Check to make sure all the data is present to attempt a cost lookup.
@@ -87,13 +87,13 @@ public class LandMessageData extends ProductMessageData
     public int initForMessage(Rec record)
     {
         int iErrorCode = super.initForMessage(record);
-        ((Record)record).getField(BookingLand.PP_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.VARIES_CODE).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.VARIES_QTY).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.VARIES_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.PMC_CUTOFF).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.PMC_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        ((Record)record).getField(BookingLand.SIC_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.PP_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.VARIES_CODE).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.VARIES_QTY).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.VARIES_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.PMC_CUTOFF).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.PMC_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingLandModel.SIC_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -103,7 +103,7 @@ public class LandMessageData extends ProductMessageData
     public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
-        BookingLand recBookingLand = (BookingLand)record;
+        BookingLandModel recBookingLand = (BookingLandModel)record;
         return iErrorCode;
     }
     /**
@@ -111,36 +111,36 @@ public class LandMessageData extends ProductMessageData
      */
     public void putRawProperties(PropertyOwner propertyOwner)
     {
-        this.put(BookingDetail.RATE_ID, propertyOwner.getProperty(BookingDetail.RATE_ID));
-        this.put(BookingDetail.CLASS_ID, propertyOwner.getProperty(BookingDetail.CLASS_ID));
-        this.put(BookingDetail.DETAIL_DATE, propertyOwner.getProperty(BookingDetail.DETAIL_DATE));
+        this.put(BookingDetailModel.RATE_ID, propertyOwner.getProperty(BookingDetailModel.RATE_ID));
+        this.put(BookingDetailModel.CLASS_ID, propertyOwner.getProperty(BookingDetailModel.CLASS_ID));
+        this.put(BookingDetailModel.DETAIL_DATE, propertyOwner.getProperty(BookingDetailModel.DETAIL_DATE));
     }
     /**
      * Get/Create the product record.
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Land.LAND_FILE) != null)
-                    return (Land)recordOwner.getRecord(Land.LAND_FILE);
-        return new Land(recordOwner);
+                if (recordOwner.getRecord(LandModel.LAND_FILE) != null)
+                    return (LandModel)recordOwner.getRecord(LandModel.LAND_FILE);
+        return (LandModel)Record.makeRecordFromClassName(LandModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductClass Method.
      */
-    public BaseClass getProductClass(RecordOwner recordOwner)
+    public BaseClassModel getProductClass(RecordOwner recordOwner)
     {
-        return new LandClass(recordOwner);
+        return (LandClassModel)Record.makeRecordFromClassName(LandClassModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductRate Method.
      */
-    public BaseRate getProductRate(RecordOwner recordOwner)
+    public BaseRateModel getProductRate(RecordOwner recordOwner)
     {
-        return new LandRate(recordOwner);
+        return (LandRateModel)Record.makeRecordFromClassName(LandRateModel.THICK_CLASS, recordOwner);
     }
 
 }

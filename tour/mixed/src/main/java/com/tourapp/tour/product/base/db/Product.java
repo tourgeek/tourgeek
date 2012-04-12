@@ -50,6 +50,7 @@ import com.tourapp.model.tour.message.base.response.*;
 import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
+import org.jbundle.model.message.*;
 import com.tourapp.model.tour.product.base.db.*;
 
 /**
@@ -60,7 +61,6 @@ public class Product extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final String ROOM_TYPE_PARAM = SearchConstants.ROOM_TYPE;
     public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
     public static final int INVENTORY_GRID_SCREEN = ScreenConstants.LAST_MODE * 2;
     public static final int INVENTORY_SCREEN = ScreenConstants.LAST_MODE * 4;
@@ -437,15 +437,15 @@ public class Product extends VirtualRecord
     /**
      * Process this product information request (override this).
      */
-    public BaseMessage processInfoRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processInfoRequestInMessage(Message messageIn, Message messageReply)
     {
-        MessageRecordDesc productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        MessageRecordDesc productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         MessageRecordDesc messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         
         BaseProductResponseModel responseMessage = null;
         if (messageReply == null)
             messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
-        responseMessage = (BaseProductResponseModel)messageReply.getMessageDataDesc(null);
+        responseMessage = (BaseProductResponseModel)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         
         int iProductStatus = InventoryStatus.VALID;
@@ -460,26 +460,18 @@ public class Product extends VirtualRecord
     /**
      * Read the locally stored product cost (Override).
      */
-    public BaseMessage processCostRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processCostRequestInMessage(Message messageIn, Message messageReply)
     {
         return null;    // Unknown (Override this!)
-    }
-    /**
-     * Get the est. time of this product.
-     * @return The duration of this product (in seconds).
-     */
-    public long getLengthTime()
-    {
-        return 0; // Override
     }
     /**
      * Check the inventory for this detail.
      * @param message Contains all the update data for this check
      * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
      */
-    public BaseMessage processAvailabilityRequestInMessage(BaseMessage messageIn, BaseMessage messageReply, BaseField fldTrxID)
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         ProductMessageData messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData bookingMessageData = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         Date dateTarget = messageData.getTargetDate();
@@ -498,7 +490,7 @@ public class Product extends VirtualRecord
         BaseProductResponse responseMessage = null;
         if (messageReply == null)
             messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
-        responseMessage = (BaseProductResponse)messageReply.getMessageDataDesc(null);
+        responseMessage = (BaseProductResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         
         // First, calculate the room cost
@@ -568,9 +560,9 @@ public class Product extends VirtualRecord
      * This is for products that can be externally booked.
      * @return the booking reply message with the proper params.
      */
-    public BaseMessage processBookingRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processBookingRequestInMessage(Message messageIn, Message messageReply)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         RecordOwner recordOwner = this.findRecordOwner();
         ProductMessageData messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         ProductBookingResponse responseMessage = null;
@@ -592,7 +584,7 @@ public class Product extends VirtualRecord
                 responseMessage = this.getProductBookingResponse(productRequest.getRequestType(), messageReply, null);
             }
             else
-                responseMessage = (ProductBookingResponse)messageReply.getMessageDataDesc(null);
+                responseMessage = (ProductBookingResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
             responseMessage.moveRequestInfoToReply(messageIn);
         
             String strMessageTransportID = null;
@@ -768,6 +760,14 @@ public class Product extends VirtualRecord
         return messageReply;
     }
     /**
+     * Get the est. time of this product.
+     * @return The duration of this product (in seconds).
+     */
+    public long getLengthTime()
+    {
+        return 0; // Override
+    }
+    /**
      * Add the booking detail that goes with the product in this message.
      */
     public int addMessageBookingDetail(BookingDetailModel recBookingDetail, BookingModel recBooking, TourModel recTour, String strMessageTransportID, MessageRecordDesc productRequest) throws DBException
@@ -801,10 +801,10 @@ public class Product extends VirtualRecord
     /**
      * GetProductBookingResponse Method.
      */
-    public ProductBookingResponse getProductBookingResponse(String strRequestType, BaseMessage message, String strKey)
+    public ProductBookingResponse getProductBookingResponse(String strRequestType, Message message, String strKey)
     {
         if (RequestType.BOOKING_CANCEL.equalsIgnoreCase(strRequestType))
-            return new CancelResponse(message, strKey);
+            return new CancelResponse((BaseMessage)message, strKey);
         return null;    // Override this!
     }
     /**

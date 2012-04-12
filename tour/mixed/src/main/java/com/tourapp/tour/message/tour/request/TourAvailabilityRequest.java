@@ -28,6 +28,7 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.tour.request.data.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  TourAvailabilityRequest - .
@@ -62,7 +63,7 @@ public class TourAvailabilityRequest extends ProductAvailabilityRequest
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        // this.addDataDesc(Product.INVENTORY_PARAM, Boolean.class, String.class, null, OPTIONAL, null);
+        // this.addDataDesc(ProductModel.INVENTORY_PARAM, Boolean.class, String.class, null, OPTIONAL, null);
     }
     /**
      * Check to make sure all the data is present to attempt a cost lookup.
@@ -76,7 +77,7 @@ public class TourAvailabilityRequest extends ProductAvailabilityRequest
         if (iStatus == BaseDataStatus.DATA_VALID)
         {
             BookingDetail recBookingDetail = (BookingDetail)record;
-        //    if (recBookingDetail.getField(BookingDetail.INVENTORY_MANUAL).getState() == true)
+        //    if (recBookingDetail.getField(BookingDetailModel.INVENTORY_MANUAL).getState() == true)
         //        iStatus = BaseMessageStatus.VALID;  // No inventory lookup required
         }
         return iStatus;
@@ -90,7 +91,7 @@ public class TourAvailabilityRequest extends ProductAvailabilityRequest
     {
         int iErrorCode = super.putRawRecordData(record);
         BookingDetail recBookingDetail = (BookingDetail)record;
-        // this.putRawFieldData(Product.INVENTORY_PARAM, recBookingDetail.getField(BookingDetail.INVENTORY_MANUAL));
+        // this.putRawFieldData(ProductModel.INVENTORY_PARAM, recBookingDetail.getField(BookingDetailModel.INVENTORY_MANUAL));
         return iErrorCode;
     }
     /**
@@ -99,7 +100,7 @@ public class TourAvailabilityRequest extends ProductAvailabilityRequest
     public void putRawProperties(PropertyOwner propertyOwner)
     {
         super.putRawProperties(propertyOwner);
-        // this.putRaw(Product.INVENTORY_PARAM, propertyOwner.getProperty(Product.INVENTORY_PARAM));
+        // this.putRaw(ProductModel.INVENTORY_PARAM, propertyOwner.getProperty(ProductModel.INVENTORY_PARAM));
     }
     /**
      * CreateProductMessageData Method.

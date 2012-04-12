@@ -21,21 +21,22 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 import java.text.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  ProductMessageData - .
  */
 public class ProductMessageData extends BaseProductMessageData
 {
+    public static final String PRODUCT_MESSAGE = "productMessage";
     public static final String OLD_DETAIL_DATE = "oldDetailDate";
     protected String m_iSyncedSourceFieldSeq = null;
     protected String m_iSyncedDestFieldSeq = null;
@@ -60,7 +61,7 @@ public class ProductMessageData extends BaseProductMessageData
     public void init(MessageDataParent messageDataParent, String strKey)
     {
         if (strKey == null)
-            strKey = ProductRequest.PRODUCT_MESSAGE;
+            strKey = ProductMessageData.PRODUCT_MESSAGE;
         super.init(messageDataParent, strKey);
         this.setNodeType(NON_UNIQUE_NODE);
     }
@@ -70,21 +71,21 @@ public class ProductMessageData extends BaseProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        new MessageFieldDesc(this, BookingDetail.PRODUCT_ID, Integer.class, MessageFieldDesc.REQUIRED, null)
+        new MessageFieldDesc(this, BookingDetailModel.PRODUCT_ID, Integer.class, MessageFieldDesc.REQUIRED, null)
         {
             public int getRawFieldData(Converter field)
             {   // Special logic - If there is a product CODE and this field has already been populated, don't move it again.
-                if (((BaseMessageRecordDesc)this.getMessageDataParent()).get(Product.CODE) != null)
+                if (((BaseMessageRecordDesc)this.getMessageDataParent()).get(ProductModel.CODE) != null)
                     if (!field.getField().isNull())
                         return DBConstants.NORMAL_RETURN;
                 return super.getRawFieldData(field);
             }
         };
-        this.addMessageFieldDesc(BookingDetail.RATE_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
-        this.addMessageFieldDesc(BookingDetail.CLASS_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
-        this.addMessageFieldDesc(BookingDetail.DETAIL_DATE, Date.class, MessageFieldDesc.REQUIRED, null);
-        this.addMessageFieldDesc(Product.PAX_PARAM, Short.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(Product.ROOM_TYPE_PARAM, Short.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.COMPOUND_PARAM | PaxCategory.CHILD_ID, null);
+        this.addMessageFieldDesc(BookingDetailModel.RATE_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(BookingDetailModel.CLASS_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(BookingDetailModel.DETAIL_DATE, Date.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(ProductModel.PAX_PARAM, Short.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(ProductModel.ROOM_TYPE_PARAM, Short.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.COMPOUND_PARAM | PaxCategoryModel.CHILD_ID, null);
         this.addMessageFieldDesc(OLD_DETAIL_DATE, Date.class, MessageFieldDesc.OPTIONAL, MessageFieldDesc.NOT_UNIQUE, null);    // Not in key
     }
     /**
@@ -93,11 +94,11 @@ public class ProductMessageData extends BaseProductMessageData
     public MessageDataDesc getMessageDataDesc(String strParam)
     {
         String strParamOrig = strParam;
-        if (strParam.startsWith(Product.ROOM_TYPE_PARAM))
-            strParam = Product.ROOM_TYPE_PARAM;
+        if (strParam.startsWith(ProductModel.ROOM_TYPE_PARAM))
+            strParam = ProductModel.ROOM_TYPE_PARAM;
         MessageDataDesc messageDataDesc = super.getMessageDataDesc(strParam);
         if (messageDataDesc != null)
-            if (strParamOrig.startsWith(Product.ROOM_TYPE_PARAM))
+            if (strParamOrig.startsWith(ProductModel.ROOM_TYPE_PARAM))
                 messageDataDesc.setKey(strParamOrig);
         return messageDataDesc;
     }
@@ -168,14 +169,14 @@ public class ProductMessageData extends BaseProductMessageData
      */
     public boolean updateMessageKey(Record record, String iStatusType)
     {
-        String strMessageKeyLastTime = record.getField(record.getFieldSeq(iStatusType) + BookingDetail.MESSAGE_KEY_OFFSET).toString();
+        String strMessageKeyLastTime = record.getField(record.getFieldSeq(iStatusType) + BookingDetailModel.MESSAGE_KEY_OFFSET).toString();
         String strMessageKey = this.getMessageKey(null).toString();
         if (((strMessageKeyLastTime == null) && (strMessageKeyLastTime == strMessageKey))
             || (strMessageKeyLastTime.equals(strMessageKey)))
         { // No actual changes, return the status to the orig value
             return false; // If the data hasn't changed, don't change the status.
         }
-        record.getField(iStatusType + BookingDetail.MESSAGE_KEY_OFFSET).setString(strMessageKey);
+        record.getField(iStatusType + BookingDetailModel.MESSAGE_KEY_OFFSET).setString(strMessageKey);
         return true;    // Key changed
     }
     /**
@@ -186,12 +187,12 @@ public class ProductMessageData extends BaseProductMessageData
     {
         int iErrorCode = super.putRawRecordData(record);    // Note: You MUST call SUPER here to keep from looping endlessly
         
-        BookingDetail recBookingDetail = (BookingDetail)record;
-        if (recBookingDetail.getField(BookingDetail.MARKUP_FROM_LAST).isNull())
-            this.putRawFieldData(recBookingDetail.getField(BookingDetail.DETAIL_DATE));
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record;
+        if (recBookingDetail.getField(BookingDetailModel.MARKUP_FROM_LAST).isNull())
+            this.putRawFieldData(recBookingDetail.getField(BookingDetailModel.DETAIL_DATE));
         else
         {
-            DateTimeField field = (DateTimeField)recBookingDetail.getField(BookingDetail.DETAIL_DATE);
+            DateTimeField field = (DateTimeField)recBookingDetail.getField(BookingDetailModel.DETAIL_DATE);
             String strKey = this.getFullKey(field.getFieldName());
             Calendar calendar = field.getCalendar();
             calendar.add(Calendar.YEAR, -1);
@@ -204,16 +205,16 @@ public class ProductMessageData extends BaseProductMessageData
             }
             this.getMessage().putNative(strKey, objValue);
         }
-        this.putRawFieldData(recBookingDetail.getField(BookingDetail.PRODUCT_ID));
-        Record recProduct = ((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_ID)).getReference();
+        this.putRawFieldData(recBookingDetail.getField(BookingDetailModel.PRODUCT_ID));
+        Record recProduct = ((ReferenceField)recBookingDetail.getField(BookingDetailModel.PRODUCT_ID)).getReference();
         if (recProduct != null)
         {
-            if (!recProduct.getField(Product.OPERATORS_CODE).isNull())  // Operator's product code
-                this.put(Product.CODE, recProduct.getField(Product.OPERATORS_CODE).toString());
-            this.put(Product.PRODUCT_NAME_PARAM, recProduct.getField(Product.DESCRIPTION).toString());
+            if (!recProduct.getField(ProductModel.OPERATORS_CODE).isNull())  // Operator's product code
+                this.put(ProductModel.CODE, recProduct.getField(ProductModel.OPERATORS_CODE).toString());
+            this.put(ProductModel.PRODUCT_NAME_PARAM, recProduct.getField(ProductModel.DESCRIPTION).toString());
         }
         // Get the old date
-        FieldDataScratchHandler fieldDataScratchHandler = (FieldDataScratchHandler)recBookingDetail.getField(BookingDetail.DETAIL_DATE).getListener(FieldDataScratchHandler.class);
+        FieldDataScratchHandler fieldDataScratchHandler = (FieldDataScratchHandler)((Record)recBookingDetail).getField(BookingDetailModel.DETAIL_DATE).getListener(FieldDataScratchHandler.class);
         if (fieldDataScratchHandler != null)
         {
             Date dateOriginal = (Date)fieldDataScratchHandler.getOriginalData();  // Make sure you know the original date
@@ -221,43 +222,43 @@ public class ProductMessageData extends BaseProductMessageData
                 this.put(OLD_DETAIL_DATE, dateOriginal);
         }
         
-        this.put(Product.PAX_PARAM, new Short(recBookingDetail.getNoPax()));
-        for (int iRoomType = PaxCategory.SINGLE_ID; iRoomType <= PaxCategory.CHILD_ID; iRoomType++)
+        this.put(ProductModel.PAX_PARAM, new Short(recBookingDetail.getNoPax()));
+        for (int iRoomType = PaxCategoryModel.SINGLE_ID; iRoomType <= PaxCategoryModel.CHILD_ID; iRoomType++)
         {
             short shPaxOfType = (short)recBookingDetail.getPaxInRoom(iRoomType);
             if (shPaxOfType > 0)
             {
-                this.put(Product.ROOM_TYPE_PARAM + Integer.toString(iRoomType), new Short(shPaxOfType));
+                this.put(ProductModel.ROOM_TYPE_PARAM + Integer.toString(iRoomType), new Short(shPaxOfType));
             }
         }
         
         try   {
             if (recBookingDetail.getEditMode() == DBConstants.EDIT_ADD)
             {       // Then refresh the record so I have and object ID.
-                recBookingDetail.add();
-                Object bookmark = recBookingDetail.getLastModified(DBConstants.OBJECT_ID_HANDLE);
-                recBookingDetail.setHandle(bookmark, DBConstants.OBJECT_ID_HANDLE);
-                recBookingDetail.edit();
+                recBookingDetail.getTable().add(recBookingDetail);
+                Object bookmark = recBookingDetail.getTable().getLastModified(DBConstants.OBJECT_ID_HANDLE);
+                recBookingDetail.getTable().setHandle(bookmark, DBConstants.OBJECT_ID_HANDLE);
+                recBookingDetail.getTable().edit();
             }
-            if (recBookingDetail.getHandle(DBConstants.OBJECT_ID_HANDLE) != null)
-                this.put(DBConstants.STRING_OBJECT_ID_HANDLE, recBookingDetail.getHandle(DBConstants.OBJECT_ID_HANDLE));
+            if (recBookingDetail.getTable().getHandle(DBConstants.OBJECT_ID_HANDLE) != null)
+                this.put(DBConstants.STRING_OBJECT_ID_HANDLE, recBookingDetail.getTable().getHandle(DBConstants.OBJECT_ID_HANDLE));
             this.put(DBParams.RECORD, recBookingDetail.getTableNames(false));
-            this.putRawFieldData(recBookingDetail.getField(BookingDetail.LAST_CHANGED));
+            this.putRawFieldData(recBookingDetail.getField(BookingDetailModel.LAST_CHANGED));
         } catch (DBException ex)    {
             ex.printStackTrace();
         }
-        this.putRawFieldData(recBookingDetail.getField(BookingDetail.RATE_ID));
-        Record recRateType = ((ReferenceField)recBookingDetail.getField(BookingDetail.RATE_ID)).getReference();
+        this.putRawFieldData(recBookingDetail.getField(BookingDetailModel.RATE_ID));
+        Record recRateType = ((ReferenceField)recBookingDetail.getField(BookingDetailModel.RATE_ID)).getReference();
         if (recRateType != null)
-            this.put(Product.RATE_TYPE_DESC_PARAM, recRateType.getField(BaseRate.DESCRIPTION).getString());
-        this.putRawFieldData(recBookingDetail.getField(BookingDetail.CLASS_ID));
-        Record recRateClass = ((ReferenceField)recBookingDetail.getField(BookingDetail.CLASS_ID)).getReference();
+            this.put(ProductModel.RATE_TYPE_DESC_PARAM, recRateType.getField(BaseRateModel.DESCRIPTION).getString());
+        this.putRawFieldData(recBookingDetail.getField(BookingDetailModel.CLASS_ID));
+        Record recRateClass = ((ReferenceField)recBookingDetail.getField(BookingDetailModel.CLASS_ID)).getReference();
         if (recRateClass != null)
-            this.put(Product.RATE_CLASS_DESC_PARAM, recRateClass.getField(BaseClass.DESCRIPTION).toString());
+            this.put(ProductModel.RATE_CLASS_DESC_PARAM, recRateClass.getField(BaseClassModel.DESCRIPTION).toString());
         
-        if (!recBookingDetail.getField(BookingDetail.ACK_DAYS).isNull())
+        if (!recBookingDetail.getField(BookingDetailModel.ACK_DAYS).isNull())
         {
-            int iAckTime = (int)recBookingDetail.getField(BookingDetail.ACK_DAYS).getValue();
+            int iAckTime = (int)recBookingDetail.getField(BookingDetailModel.ACK_DAYS).getValue();
             if (this.getMessage() != null)
                 if (this.getMessage().getMessageHeader() instanceof TrxMessageHeader)
                 {   // Always
@@ -280,7 +281,7 @@ public class ProductMessageData extends BaseProductMessageData
     {
         int iRateType = 0;
         try {
-            Integer intRateType = (Integer)Converter.convertObjectToDatatype(this.get(BookingDetail.RATE_ID), Integer.class, null);
+            Integer intRateType = (Integer)Converter.convertObjectToDatatype(this.get(BookingDetailModel.RATE_ID), Integer.class, null);
             if (intRateType != null)
                 iRateType = intRateType.intValue();
         } catch (Exception e) {
@@ -292,7 +293,7 @@ public class ProductMessageData extends BaseProductMessageData
      */
     public Date getTargetDate()
     {
-        return (Date)this.get(BookingDetail.DETAIL_DATE);
+        return (Date)this.get(BookingDetailModel.DETAIL_DATE);
     }
     /**
      * GetRateClassID Method.
@@ -301,7 +302,7 @@ public class ProductMessageData extends BaseProductMessageData
     {
         int iRateClass = 0;
         try {
-            Integer intRateClass = (Integer)Converter.convertObjectToDatatype(this.get(BookingDetail.CLASS_ID), Integer.class, null);
+            Integer intRateClass = (Integer)Converter.convertObjectToDatatype(this.get(BookingDetailModel.CLASS_ID), Integer.class, null);
             if (intRateClass != null)
                 iRateClass = intRateClass.intValue();
         } catch (Exception e) {
@@ -314,10 +315,10 @@ public class ProductMessageData extends BaseProductMessageData
     public String convertIDToProductName(RecordOwner recordOwner, Object objProductID)
     {
         String strProductName = DBConstants.BLANK;
-        Product recProduct = this.getProductRecord(recordOwner, false);
+        ProductModel recProduct = this.getProductRecord(recordOwner, false);
         try {
-            if (recProduct.setHandle(objProductID, DBConstants.BOOKMARK_HANDLE) != null)
-                strProductName = recProduct.getField(Product.DESCRIPTION).toString();
+            if (recProduct.getTable().setHandle(objProductID, DBConstants.BOOKMARK_HANDLE) != null)
+                strProductName = recProduct.getField(ProductModel.DESCRIPTION).toString();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }
@@ -330,15 +331,15 @@ public class ProductMessageData extends BaseProductMessageData
     public Integer convertProductNameToID(RecordOwner recordOwner, String strProductName)
     {
         Object objProductID = null;
-        Product recProduct = this.getProductRecord(recordOwner, false);
+        ProductModel recProduct = this.getProductRecord(recordOwner, false);
         try {
-            recProduct.setKeyArea(Product.DESC_SORT_KEY);
-            recProduct.getField(Product.DESCRIPTION).setString(strProductName);
-            strProductName = recProduct.getField(Product.DESC_SORT).toString();
-            if (recProduct.seek(">="))
+            recProduct.setKeyArea(ProductModel.DESC_SORT_KEY);
+            recProduct.getField(ProductModel.DESCRIPTION).setString(strProductName);
+            strProductName = recProduct.getField(ProductModel.DESC_SORT).toString();
+            if (recProduct.getTable().seek(">="))
             {
-                if (recProduct.getField(Product.DESCRIPTION).toString().toUpperCase().startsWith(strProductName.toUpperCase()))
-                    objProductID = recProduct.getField(Product.ID).getData();
+                if (recProduct.getField(ProductModel.DESCRIPTION).toString().toUpperCase().startsWith(strProductName.toUpperCase()))
+                    objProductID = recProduct.getField(ProductModel.ID).getData();
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -352,10 +353,10 @@ public class ProductMessageData extends BaseProductMessageData
     public String convertIDToProductClass(Object objProductClassID)
     {
         String strProductClass = DBConstants.BLANK;
-        BaseClass recProductClass = this.getProductClass(null);
+        BaseClassModel recProductClass = this.getProductClass(null);
         try {
-            if (recProductClass.setHandle(objProductClassID, DBConstants.BOOKMARK_HANDLE) != null)
-                strProductClass = recProductClass.getField(BaseClass.DESCRIPTION).toString();
+            if (recProductClass.getTable().setHandle(objProductClassID, DBConstants.BOOKMARK_HANDLE) != null)
+                strProductClass = recProductClass.getField(BaseClassModel.DESCRIPTION).toString();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }
@@ -368,14 +369,14 @@ public class ProductMessageData extends BaseProductMessageData
     public Integer convertProductClassCodeToID(String strProductClassCode)
     {
         Object objProductClassID = null;
-        BaseClass recProductClass = this.getProductClass(null);
+        BaseClassModel recProductClass = this.getProductClass(null);
         try {
-            recProductClass.setKeyArea(BaseClass.CODE_KEY);
-            recProductClass.getField(BaseClass.CODE).setString(strProductClassCode);
-            if (recProductClass.seek(DBConstants.EQUALS))
+            recProductClass.setKeyArea(BaseClassModel.CODE_KEY);
+            recProductClass.getField(BaseClassModel.CODE).setString(strProductClassCode);
+            if (recProductClass.getTable().seek(DBConstants.EQUALS))
             {
-                if (recProductClass.getField(BaseClass.CODE).toString().toUpperCase().startsWith(strProductClassCode.toUpperCase()))
-                    objProductClassID = recProductClass.getField(BaseClass.ID).getData();
+                if (recProductClass.getField(BaseClassModel.CODE).toString().toUpperCase().startsWith(strProductClassCode.toUpperCase()))
+                    objProductClassID = recProductClass.getField(BaseClassModel.ID).getData();
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -389,14 +390,14 @@ public class ProductMessageData extends BaseProductMessageData
     public Integer convertProductClassNameToID(String strProductClassName)
     {
         Object objProductClassID = null;
-        BaseClass recProductClass = this.getProductClass(null);
+        BaseClassModel recProductClass = this.getProductClass(null);
         try {
-            recProductClass.setKeyArea(BaseClass.DESCRIPTION_KEY);
-            recProductClass.getField(BaseClass.DESCRIPTION).setString(strProductClassName);
-            if (recProductClass.seek(">="))
+            recProductClass.setKeyArea(BaseClassModel.DESCRIPTION_KEY);
+            recProductClass.getField(BaseClassModel.DESCRIPTION).setString(strProductClassName);
+            if (recProductClass.getTable().seek(">="))
             {
-                if (recProductClass.getField(BaseClass.DESCRIPTION).toString().toUpperCase().startsWith(strProductClassName.toUpperCase()))
-                    objProductClassID = recProductClass.getField(BaseClass.ID).getData();
+                if (recProductClass.getField(BaseClassModel.DESCRIPTION).toString().toUpperCase().startsWith(strProductClassName.toUpperCase()))
+                    objProductClassID = recProductClass.getField(BaseClassModel.ID).getData();
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -407,7 +408,7 @@ public class ProductMessageData extends BaseProductMessageData
     /**
      * GetProductClass Method.
      */
-    public BaseClass getProductClass(RecordOwner recordOwner)
+    public BaseClassModel getProductClass(RecordOwner recordOwner)
     {
         return null;    // Override this!
     }
@@ -417,10 +418,10 @@ public class ProductMessageData extends BaseProductMessageData
     public String convertIDToProductRatePlan(Object objRatePlanID)
     {
         String strProductRate = DBConstants.BLANK;
-        BaseRate recProductRate = this.getProductRate(null);
+        BaseRateModel recProductRate = this.getProductRate(null);
         try {
-            if (recProductRate.setHandle(objRatePlanID, DBConstants.BOOKMARK_HANDLE) != null)
-                strProductRate = recProductRate.getField(BaseRate.DESCRIPTION).toString();
+            if (recProductRate.getTable().setHandle(objRatePlanID, DBConstants.BOOKMARK_HANDLE) != null)
+                strProductRate = recProductRate.getField(BaseRateModel.DESCRIPTION).toString();
         } catch (DBException ex)    {
             ex.printStackTrace();
         }
@@ -433,14 +434,14 @@ public class ProductMessageData extends BaseProductMessageData
     public Integer convertProductRatePlanToID(String strRatePlanDesc)
     {
         Object objProductRateID = null;
-        BaseRate recProductRate = this.getProductRate(null);
+        BaseRateModel recProductRate = this.getProductRate(null);
         try {
-            recProductRate.setKeyArea(BaseRate.DESCRIPTION_KEY);
-            recProductRate.getField(BaseRate.DESCRIPTION).setString(strRatePlanDesc);
-            if (recProductRate.seek(">="))
+            recProductRate.setKeyArea(BaseRateModel.DESCRIPTION_KEY);
+            recProductRate.getField(BaseRateModel.DESCRIPTION).setString(strRatePlanDesc);
+            if (recProductRate.getTable().seek(">="))
             {
-                if (recProductRate.getField(BaseRate.DESCRIPTION).toString().toUpperCase().startsWith(strRatePlanDesc.toUpperCase()))
-                    objProductRateID = recProductRate.getField(BaseRate.ID).getData();
+                if (recProductRate.getField(BaseRateModel.DESCRIPTION).toString().toUpperCase().startsWith(strRatePlanDesc.toUpperCase()))
+                    objProductRateID = recProductRate.getField(BaseRateModel.ID).getData();
             }
         } catch (DBException ex)    {
             ex.printStackTrace();
@@ -451,7 +452,7 @@ public class ProductMessageData extends BaseProductMessageData
     /**
      * GetProductRate Method.
      */
-    public BaseRate getProductRate(RecordOwner recordOwner)
+    public BaseRateModel getProductRate(RecordOwner recordOwner)
     {
         return null;    // Override this
     }
@@ -462,29 +463,29 @@ public class ProductMessageData extends BaseProductMessageData
     public int getRawRecordData(Rec record)
     {
         int iErrorCode = Constants.NORMAL_RETURN;
-        BookingDetail recBookingDetail = (BookingDetail)record;
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record;
         
-        this.getRawFieldData(recBookingDetail.getField(BookingDetail.DETAIL_DATE));
-        if ((this.get(Product.CODE) != null) && (!DBConstants.BLANK.equals(this.get(Product.CODE))))
+        this.getRawFieldData(recBookingDetail.getField(BookingDetailModel.DETAIL_DATE));
+        if ((this.get(ProductModel.CODE) != null) && (!DBConstants.BLANK.equals(this.get(ProductModel.CODE))))
         {
-            Product recProduct = recBookingDetail.getProduct();
+            ProductModel recProduct = recBookingDetail.getProduct();
             int iOldOrder = recProduct.getDefaultOrder();
             try {
-                recProduct.getField(Product.CODE).setString((String)this.get(Product.CODE));
-                recProduct.setKeyArea(Product.CODE_KEY);
-                if (recProduct.seek(null))
-                    recBookingDetail.getField(BookingDetail.PRODUCT_ID).moveFieldToThis(recProduct.getField(Product.ID));
+                recProduct.getField(ProductModel.CODE).setString((String)this.get(ProductModel.CODE));
+                recProduct.setKeyArea(ProductModel.CODE_KEY);
+                if (recProduct.getTable().seek(null))
+                    ((BaseField)recBookingDetail.getField(BookingDetailModel.PRODUCT_ID)).moveFieldToThis((BaseField)recProduct.getField(ProductModel.ID));
             } catch (DBException ex)    {
                 ex.printStackTrace();
             } finally {
-                recProduct.setKeyArea(iOldOrder);
+                ((Record)recProduct).setKeyArea(iOldOrder);
             }
         }
-        if (recBookingDetail.getField(BookingDetail.PRODUCT_ID).isNull())
-            this.getRawFieldData(recBookingDetail.getField(BookingDetail.PRODUCT_ID));
+        if (recBookingDetail.getField(BookingDetailModel.PRODUCT_ID).isNull())
+            this.getRawFieldData(recBookingDetail.getField(BookingDetailModel.PRODUCT_ID));
         
-        this.getRawFieldData(recBookingDetail.getField(BookingDetail.RATE_ID));
-        this.getRawFieldData(recBookingDetail.getField(BookingDetail.CLASS_ID));
+        this.getRawFieldData(recBookingDetail.getField(BookingDetailModel.RATE_ID));
+        this.getRawFieldData(recBookingDetail.getField(BookingDetailModel.CLASS_ID));
         
         iErrorCode = super.getRawRecordData(record);
         
@@ -499,36 +500,36 @@ public class ProductMessageData extends BaseProductMessageData
     public int checkRequestParams(Rec record)
     {
         String iField = null;
-        if (record.getField(BookingDetail.INFO_STATUS_ID).getValue() != InfoStatus.VALID)
+        if (record.getField(BookingDetailModel.INFO_STATUS_ID).getValue() != InfoStatusModel.VALID)
         {
-            iField = BookingDetail.INFO_STATUS_ID;        // The information must be valid to lookup the price
+            iField = BookingDetailModel.INFO_STATUS_ID;        // The information must be valid to lookup the price
             if (this.getMessageDataParent() instanceof ProductRequest)
                 if (RequestType.INFORMATION.equalsIgnoreCase(((ProductRequest)this.getMessageDataParent()).getRequestType()))
                     iField = null;    // Special case - Info status not required for an info request
         }
-        if (record.getField(BookingDetail.DETAIL_DATE).isNull())
-            if (this.getMessageFieldDesc(BookingDetail.DETAIL_DATE) != null)
-                if (this.getMessageFieldDesc(BookingDetail.DETAIL_DATE).isRequired())
-                    iField = BookingDetail.DETAIL_DATE;
-        if (record.getField(BookingDetail.PRODUCT_ID).isNull())
-            iField = BookingDetail.PRODUCT_ID;
-        if (record.getField(BookingDetail.RATE_ID).isNull())
-            if (this.getMessageFieldDesc(BookingDetail.RATE_ID) != null)
-                if (this.getMessageFieldDesc(BookingDetail.RATE_ID).isRequired())
-                    iField = BookingDetail.RATE_ID;
-        if (record.getField(BookingDetail.CLASS_ID).isNull())
-            if (this.getMessageFieldDesc(BookingDetail.CLASS_ID) != null)
-                if (this.getMessageFieldDesc(BookingDetail.CLASS_ID).isRequired())
-                    iField = BookingDetail.CLASS_ID;
+        if (record.getField(BookingDetailModel.DETAIL_DATE).isNull())
+            if (this.getMessageFieldDesc(BookingDetailModel.DETAIL_DATE) != null)
+                if (this.getMessageFieldDesc(BookingDetailModel.DETAIL_DATE).isRequired())
+                    iField = BookingDetailModel.DETAIL_DATE;
+        if (record.getField(BookingDetailModel.PRODUCT_ID).isNull())
+            iField = BookingDetailModel.PRODUCT_ID;
+        if (record.getField(BookingDetailModel.RATE_ID).isNull())
+            if (this.getMessageFieldDesc(BookingDetailModel.RATE_ID) != null)
+                if (this.getMessageFieldDesc(BookingDetailModel.RATE_ID).isRequired())
+                    iField = BookingDetailModel.RATE_ID;
+        if (record.getField(BookingDetailModel.CLASS_ID).isNull())
+            if (this.getMessageFieldDesc(BookingDetailModel.CLASS_ID) != null)
+                if (this.getMessageFieldDesc(BookingDetailModel.CLASS_ID).isRequired())
+                    iField = BookingDetailModel.CLASS_ID;
         int iStatus = super.checkRequestParams(record);
         if (iField != null)
         {
-            iStatus = CostStatus.DATA_REQUIRED;        // The information must be valid to lookup the price
+            iStatus = CostStatusModel.DATA_REQUIRED;        // The information must be valid to lookup the price
             String strError = "Data required in the {0} field";
             if (record.getTask() != null)
                 strError = record.getTask().getApplication().getResources(ThinResourceConstants.ERROR_RESOURCE, true).getString(strError);
             strError = MessageFormat.format(strError, record.getField(iField).getFieldDesc());
-            ((BookingDetail)record).setErrorMessage((ProductRequest)this.getMessageDataParent(), strError);
+            ((BookingDetailModel)record).setErrorMessage((ProductRequest)this.getMessageDataParent(), strError);
         }
         return iStatus;
     }

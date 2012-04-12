@@ -28,6 +28,8 @@ import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
@@ -464,7 +466,7 @@ public class BookingTour extends BookingDetail
     {
         Date startDate = this.getStartDate();
         Calendar calendar = DateTimeField.m_calendar;
-        Product recTourHeader = this.getProduct();
+        ProductModel recTourHeader = this.getProduct();
         if (recTourHeader != null)
         {
             int iNights = (int)recTourHeader.getField(TourHeader.NIGHTS).getValue();
@@ -496,7 +498,7 @@ public class BookingTour extends BookingDetail
      * When a new record is set up and you have the booking and tour
      * records, init the detail fields.
      */
-    public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull)
     {
         return super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
     }

@@ -83,6 +83,8 @@ public interface HotelModel extends ProductModel
     public static final String MEAL_PRICE_LOCAL = "MealPriceLocal";
     public static final String MEAL_DETAIL = "Meal";
     public static final String MEAL_PLAN_DAYS_PARAM = "mealDays";
+    public static final String MEAL_PLAN_ID_PARAM = "mealPlanID"; //SearchConstants.MEAL_PLAN;
+    public static final String MEAL_PLAN_QTY_PARAM = "mealPlanQty"; //SearchConstants.MEAL_PLAN_QTY;
     public static final String HOTEL_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelScreen";
     public static final String HOTEL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelGridScreen";
 

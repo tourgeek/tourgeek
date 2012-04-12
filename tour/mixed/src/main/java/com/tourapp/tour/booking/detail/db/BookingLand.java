@@ -31,6 +31,8 @@ import com.tourapp.tour.product.land.db.*;
 import org.jbundle.base.db.shared.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.booking.detail.event.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
@@ -517,7 +519,7 @@ public class BookingLand extends BookingDetail
      */
     public String getMealDesc(Date dateTarget, boolean bDetailedDesc, Record recMealPlan)
     {
-        Product recLand = this.getProduct();
+        ProductModel recLand = this.getProduct();
         if (recLand != null)
             recLand.setOpenMode(recLand.getOpenMode() | DBConstants.OPEN_CACHE_RECORDS);    // Cache recently used records.
         if (recLand != null)
@@ -534,21 +536,21 @@ public class BookingLand extends BookingDetail
      * When a new record is set up and you have the booking and tour
      * records, init the detail fields.
      */
-    public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
         if (iErrorCode == DBConstants.NORMAL_RETURN)
         {
             if ((!bOnlyIfTargetIsNull) || (this.getField(BookingLand.RATE_ID).isNull()))
-                this.getField(BookingLand.RATE_ID).moveFieldToThis(recTour.getField(Tour.LAND_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+                this.getField(BookingLand.RATE_ID).moveFieldToThis((BaseField)recTour.getField(Tour.LAND_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             ReferenceField fldLandClass = (ReferenceField)this.getField(BookingLand.CLASS_ID);
             BaseField fldPMC = this.getField(BookingLand.PMC_CUTOFF);
             if ((!bOnlyIfTargetIsNull) || (fldPMC.isNull()))
-                fldPMC.moveFieldToThis(recTour.getField(Tour.PMC_CUTOFF), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+                fldPMC.moveFieldToThis((BaseField)recTour.getField(Tour.PMC_CUTOFF), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             if ((!bOnlyIfTargetIsNull) || (fldLandClass.isNull()))
             {
                 if (fldPMC.isNull())
-                    fldLandClass.moveFieldToThis(recTour.getField(Tour.LAND_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+                    fldLandClass.moveFieldToThis((BaseField)recTour.getField(Tour.LAND_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
                 else
                 {
                     int iPaxCount = this.getNoPax();

@@ -22,10 +22,10 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.base.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.hotel.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  HotelRateResponseMessageData - .
@@ -60,9 +60,9 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.addMessageFieldDesc(BookingDetail.TOTAL_COST, Double.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BookingHotel.ROOM_COST, Double.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BookingHotel.MEAL_COST, Double.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingDetailModel.TOTAL_COST, Double.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingHotelModel.ROOM_COST, Double.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingHotelModel.MEAL_COST, Double.class, MessageFieldDesc.OPTIONAL, null);
     }
     /**
      * Get the data description for this param.
@@ -70,10 +70,10 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
     public MessageDataDesc getMessageDataDesc(String strParam)
     {
         String strParamOrig = strParam;
-        if (strParam.startsWith(BookingDetail.TOTAL_COST))
-            strParam = BookingDetail.TOTAL_COST;
+        if (strParam.startsWith(BookingDetailModel.TOTAL_COST))
+            strParam = BookingDetailModel.TOTAL_COST;
         MessageDataDesc messageDataDesc = super.getMessageDataDesc(strParam);
-        if (strParamOrig.startsWith(BookingDetail.TOTAL_COST))
+        if (strParamOrig.startsWith(BookingDetailModel.TOTAL_COST))
             messageDataDesc.setKey(strParamOrig);
         return messageDataDesc;
     }
@@ -84,14 +84,14 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
     public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
-        BookingHotel recBookingHotel = (BookingHotel)record;
-        for (int iFieldSeq = recBookingHotel.getFieldSeq(BookingHotel.SINGLE_COST), iRoomCategory = PaxCategory.SINGLE_ID; iFieldSeq <= recBookingHotel.getFieldSeq(BookingHotel.QUAD_COST); iFieldSeq++, iRoomCategory++)
+        BookingHotelModel recBookingHotel = (BookingHotelModel)record;
+        for (int iFieldSeq = ((Record)recBookingHotel).getFieldSeq(BookingHotelModel.SINGLE_COST), iRoomCategory = PaxCategoryModel.SINGLE_ID; iFieldSeq <= ((Record)recBookingHotel).getFieldSeq(BookingHotelModel.QUAD_COST); iFieldSeq++, iRoomCategory++)
         {
             double dRoomCost = this.getRoomCost(iRoomCategory);
             recBookingHotel.getField(iFieldSeq).setValue(dRoomCost);
         }
-        this.getRawFieldData(recBookingHotel.getField(BookingHotel.ROOM_COST));
-        this.getRawFieldData(recBookingHotel.getField(BookingHotel.MEAL_COST));
+        this.getRawFieldData(recBookingHotel.getField(BookingHotelModel.ROOM_COST));
+        this.getRawFieldData(recBookingHotel.getField(BookingHotelModel.MEAL_COST));
         return iInfoStatus;
     }
     /**
@@ -99,28 +99,28 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
      */
     public void setRoomCost(int iRoomCategory, double dCost)
     {
-        this.put(BookingDetail.TOTAL_COST + Integer.toString(iRoomCategory - PaxCategory.SINGLE_ID + 1), new Double(dCost));
+        this.put(BookingDetailModel.TOTAL_COST + Integer.toString(iRoomCategory - PaxCategoryModel.SINGLE_ID + 1), new Double(dCost));
     }
     /**
      * SetTotalRoomCost Method.
      */
     public void setTotalRoomCost(double dCost)
     {
-        this.put(BookingHotel.ROOM_COST, new Double(dCost));
+        this.put(BookingHotelModel.ROOM_COST, new Double(dCost));
     }
     /**
      * SetTotalMealCost Method.
      */
     public void setTotalMealCost(double dCost)
     {
-        this.put(BookingHotel.MEAL_COST, new Double(dCost));
+        this.put(BookingHotelModel.MEAL_COST, new Double(dCost));
     }
     /**
      * GetRoomCost Method.
      */
     public double getRoomCost(int iRoomCategory)
     {
-        Double dblRoomCost = (Double)this.get(BookingDetail.TOTAL_COST + Integer.toString(iRoomCategory - PaxCategory.SINGLE_ID + 1));
+        Double dblRoomCost = (Double)this.get(BookingDetailModel.TOTAL_COST + Integer.toString(iRoomCategory - PaxCategoryModel.SINGLE_ID + 1));
         if (dblRoomCost == null)
             return 0;
         return dblRoomCost.doubleValue();
@@ -130,13 +130,13 @@ public class HotelRateResponseMessageData extends ProductRateResponseMessageData
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Hotel.HOTEL_FILE) != null)
-                    return (Hotel)recordOwner.getRecord(Hotel.HOTEL_FILE);
-        return new Hotel(recordOwner);
+                if (recordOwner.getRecord(HotelModel.HOTEL_FILE) != null)
+                    return (HotelModel)recordOwner.getRecord(HotelModel.HOTEL_FILE);
+        return (HotelModel)Record.makeRecordFromClassName(HotelModel.THICK_CLASS, recordOwner);
     }
 
 }

@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.car.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.product.car.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  CarMessageData - .
@@ -62,8 +62,8 @@ public class CarMessageData extends ProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.addMessageFieldDesc(BookingCar.DAYS, Integer.class, MessageFieldDesc.REQUIRED, null);
-        this.addMessageFieldDesc(BookingCar.QUANTITY, Short.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(BookingCarModel.DAYS, Integer.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(BookingCarModel.QUANTITY, Short.class, MessageFieldDesc.REQUIRED, null);
     }
     /**
      * Check to make sure all the data is present to attempt a cost lookup.
@@ -91,11 +91,11 @@ public class CarMessageData extends ProductMessageData
      */
     public void putRawProperties(PropertyOwner propertyOwner)
     {
-        this.put(BookingCar.DAYS, propertyOwner.getProperty(BookingCar.DAYS));
-        this.put(BookingCar.QUANTITY, propertyOwner.getProperty(BookingCar.QUANTITY));
-        this.put(BookingDetail.CLASS_ID, propertyOwner.getProperty(BookingDetail.CLASS_ID));
-        this.put(BookingDetail.RATE_ID, propertyOwner.getProperty(BookingDetail.RATE_ID));
-        this.put(BookingDetail.DETAIL_DATE, propertyOwner.getProperty(BookingDetail.DETAIL_DATE));
+        this.put(BookingCarModel.DAYS, propertyOwner.getProperty(BookingCarModel.DAYS));
+        this.put(BookingCarModel.QUANTITY, propertyOwner.getProperty(BookingCarModel.QUANTITY));
+        this.put(BookingDetailModel.CLASS_ID, propertyOwner.getProperty(BookingDetailModel.CLASS_ID));
+        this.put(BookingDetailModel.RATE_ID, propertyOwner.getProperty(BookingDetailModel.RATE_ID));
+        this.put(BookingDetailModel.DETAIL_DATE, propertyOwner.getProperty(BookingDetailModel.DETAIL_DATE));
     }
     /**
      * Move the fields of this record to this message
@@ -104,9 +104,9 @@ public class CarMessageData extends ProductMessageData
     public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
-        BookingDetail recBookingDetail = (BookingDetail)record;
-        this.putRawFieldData(recBookingDetail.getField(BookingCar.QUANTITY));
-        this.putRawFieldData(recBookingDetail.getField(BookingCar.DAYS));
+        Rec recBookingDetail = (BookingDetailModel)record;
+        this.putRawFieldData(recBookingDetail.getField(BookingCarModel.QUANTITY));
+        this.putRawFieldData(recBookingDetail.getField(BookingCarModel.DAYS));
         return iErrorCode;
     }
     /**
@@ -114,34 +114,34 @@ public class CarMessageData extends ProductMessageData
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Car.CAR_FILE) != null)
-                    return (Car)recordOwner.getRecord(Car.CAR_FILE);
-        return new Car(recordOwner);
+                if (recordOwner.getRecord(CarModel.CAR_FILE) != null)
+                    return (CarModel)recordOwner.getRecord(CarModel.CAR_FILE);
+        return (CarModel)Record.makeRecordFromClassName(CarModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductRate Method.
      */
-    public BaseRate getProductRate(RecordOwner recordOwner)
+    public BaseRateModel getProductRate(RecordOwner recordOwner)
     {
-        return new CarRate(recordOwner);
+        return (CarRateModel)Record.makeRecordFromClassName(CarRateModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductClass Method.
      */
-    public BaseClass getProductClass(RecordOwner recordOwner)
+    public BaseClassModel getProductClass(RecordOwner recordOwner)
     {
-        return new CarClass(recordOwner);
+        return (CarClassModel)Record.makeRecordFromClassName(CarClassModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetQuantity Method.
      */
     public short getQuantity()
     {
-        Short shQuantity = (Short)this.get(BookingCar.QUANTITY);
+        Short shQuantity = (Short)this.get(BookingCarModel.QUANTITY);
         if (shQuantity == null)
             shQuantity = QUANTITY_DEFAULT;
         return shQuantity.shortValue();
@@ -151,7 +151,7 @@ public class CarMessageData extends ProductMessageData
      */
     public int getDays()
     {
-        Integer intDays = (Integer)this.get(BookingCar.DAYS);
+        Integer intDays = (Integer)this.get(BookingCarModel.DAYS);
         if (intDays == null)
             intDays = 1;
         return intDays.intValue();

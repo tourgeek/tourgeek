@@ -23,10 +23,11 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.land.request.data.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  LandAvailabilityRequest - .
@@ -62,8 +63,8 @@ public class LandAvailabilityRequest extends ProductAvailabilityRequest
     {
         super.setupMessageDataDesc();
         // The SIC/PMC field is required for a inventory lookup
-        this.removeMessageDataDesc(BookingDetail.RATE_ID);
-        this.addMessageFieldDesc(BookingDetail.CLASS_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
+        this.removeMessageDataDesc(BookingDetailModel.RATE_ID);
+        this.addMessageFieldDesc(BookingDetailModel.CLASS_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
     }
     /**
      * Check to make sure all the data is present to attempt a cost lookup.

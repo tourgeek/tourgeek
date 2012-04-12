@@ -30,6 +30,7 @@ import com.tourapp.tour.message.base.response.*;
 import com.tourapp.tour.message.item.request.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ItemBookingResponse - .

@@ -23,10 +23,11 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.air.db.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.product.air.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  AirMessageData - .
@@ -88,7 +89,7 @@ public class AirMessageData extends ProductMessageData
      */
     public int putRawRecordData(Rec record)
     {
-        BookingAir recBookingAir = (BookingAir)record;
+        BookingAirModel recBookingAir = (BookingAirModel)record;
         return super.putRawRecordData(record);
     }
     /**
@@ -96,36 +97,36 @@ public class AirMessageData extends ProductMessageData
      */
     public void putRawProperties(PropertyOwner propertyOwner)
     {
-        this.put(BookingDetail.RATE_ID, propertyOwner.getProperty(BookingDetail.RATE_ID));
-        this.put(BookingDetail.CLASS_ID, propertyOwner.getProperty(BookingDetail.CLASS_ID));
-        this.put(BookingDetail.DETAIL_DATE, propertyOwner.getProperty(BookingDetail.DETAIL_DATE));
+        this.put(BookingDetailModel.RATE_ID, propertyOwner.getProperty(BookingDetailModel.RATE_ID));
+        this.put(BookingDetailModel.CLASS_ID, propertyOwner.getProperty(BookingDetailModel.CLASS_ID));
+        this.put(BookingDetailModel.DETAIL_DATE, propertyOwner.getProperty(BookingDetailModel.DETAIL_DATE));
     }
     /**
      * Get/Create the product record.
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Air.AIR_FILE) != null)
-                    return (Air)recordOwner.getRecord(Air.AIR_FILE);
-        return new Air(recordOwner);
+                if (recordOwner.getRecord(AirModel.AIR_FILE) != null)
+                    return (AirModel)recordOwner.getRecord(AirModel.AIR_FILE);
+        return (AirModel)Record.makeRecordFromClassName(AirModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductRate Method.
      */
-    public BaseRate getProductRate(RecordOwner recordOwner)
+    public BaseRateModel getProductRate(RecordOwner recordOwner)
     {
-        return new AirRate(recordOwner);
+        return (AirRateModel)Record.makeRecordFromClassName(AirRateModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductClass Method.
      */
-    public BaseClass getProductClass(RecordOwner recordOwner)
+    public BaseClassModel getProductClass(RecordOwner recordOwner)
     {
-        return new AirClass(recordOwner);
+        return (AirClassModel)Record.makeRecordFromClassName(AirClassModel.THICK_CLASS, recordOwner);
     }
 
 }

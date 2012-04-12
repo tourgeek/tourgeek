@@ -6,6 +6,8 @@ package com.tourapp.thin.tour.booking.detail.db;
 
 import java.util.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -336,6 +338,13 @@ public class BookingDetail extends BookingSub
         return -1;
     }
     /**
+     * Get the product for this detail.
+     */
+    public ProductModel getProduct()
+    {
+        return null; // Empty implementation
+    }
+    /**
      * Get the start date and time for this product.
      * Return null if there is no date and time.
      */
@@ -361,10 +370,35 @@ public class BookingDetail extends BookingSub
         return null; // Empty implementation
     }
     /**
+     * From the current detail and product info,
+     * setup the product description.
+     * @return The product description (using the product).
+     */
+    public String setupProductDesc()
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * How many of this type of passenger (ie., single, double, etc.) are in this type of room?.
+     */
+    public int getPaxInRoom(int iRoomType)
+    {
+        return -1; // Empty implementation
+    }
+    /**
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
     public String checkRequiredParams(String iStatusType)
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * Lookup the message for this status update.
+     * If no update is required, return a null message.
+     * @return The message to process (or null if no message).
+     */
+    public MessageDataParent checkMessageRequired(String iStatusType)
     {
         return null; // Empty implementation
     }
@@ -374,6 +408,20 @@ public class BookingDetail extends BookingSub
     public String getErrorMessage(String iStatusType)
     {
         return null; // Empty implementation
+    }
+    /**
+     * Set the error message in this record for this message type.
+     */
+    public void setErrorMessage(MessageDataParent messageData, String strError)
+    {
+        // Empty implementation
+    }
+    /**
+     * Set the error message in this record for this status type.
+     */
+    public void setErrorMessage(String iStatusType, String strError)
+    {
+        // Empty implementation
     }
     /**
      * Add any message properties that are set in this record.

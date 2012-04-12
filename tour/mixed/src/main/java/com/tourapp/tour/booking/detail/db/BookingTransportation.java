@@ -24,6 +24,8 @@ import com.tourapp.tour.booking.entry.detail.trans.*;
 import org.jbundle.base.db.shared.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.trans.db.*;
 import com.tourapp.tour.product.base.db.*;
@@ -435,7 +437,7 @@ public class BookingTransportation extends BookingDetail
     {
         Date startDate = this.getStartDate();
         Calendar calendar = DateTimeField.m_calendar;
-        Product recTransportation = this.getProduct();
+        ProductModel recTransportation = this.getProduct();
         if (recTransportation != null)
         {
             short hours = (short)recTransportation.getField(Transportation.HOURS).getValue();
@@ -467,7 +469,7 @@ public class BookingTransportation extends BookingDetail
      */
     public String getMealDesc(Date dateTarget, boolean bDetailedDesc, Record recMealPlan)
     {
-        Product recTransportation = this.getProduct();
+        ProductModel recTransportation = this.getProduct();
         if (recTransportation != null)
             recTransportation.setOpenMode(recTransportation.getOpenMode() | DBConstants.OPEN_CACHE_RECORDS);    // Cache recently used records.
         if (recTransportation != null)
@@ -484,13 +486,13 @@ public class BookingTransportation extends BookingDetail
      * When a new record is set up and you have the booking and tour
      * records, init the detail fields.
      */
-    public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingTransportation.RATE_ID).isNull()))
-            this.getField(BookingTransportation.RATE_ID).moveFieldToThis(recTour.getField(Tour.TRANSPORTATION_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingTransportation.RATE_ID).moveFieldToThis((BaseField)recTour.getField(Tour.TRANSPORTATION_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingTransportation.CLASS_ID).isNull()))
-            this.getField(BookingTransportation.CLASS_ID).moveFieldToThis(recTour.getField(Tour.TRANSPORTATION_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingTransportation.CLASS_ID).moveFieldToThis((BaseField)recTour.getField(Tour.TRANSPORTATION_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**

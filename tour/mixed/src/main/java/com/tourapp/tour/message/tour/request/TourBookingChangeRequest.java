@@ -28,6 +28,7 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.tour.request.data.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  TourBookingChangeRequest - .
@@ -62,7 +63,7 @@ public class TourBookingChangeRequest extends TourBookingRequest
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        ((ProductMessageData)this.getMessageDataDesc(PRODUCT_MESSAGE)).addMessageFieldDesc(BookingDetail.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
+        ((ProductMessageData)this.getMessageDataDesc(PRODUCT_MESSAGE)).addMessageFieldDesc(BookingDetailModel.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
     }
     /**
      * GetRequestType Method.
@@ -77,7 +78,7 @@ public class TourBookingChangeRequest extends TourBookingRequest
     public int initBookingApTrx(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
-        if (recBookingDetail.getField(BookingDetail.VENDOR_ID).isNull())
+        if (recBookingDetail.getField(BookingDetailModel.VENDOR_ID).isNull())
             return DBConstants.NORMAL_RETURN;   // Vendor not required for tour detail
         return super.initBookingApTrx(record);
     }

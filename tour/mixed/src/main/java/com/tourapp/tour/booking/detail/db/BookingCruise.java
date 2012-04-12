@@ -24,6 +24,8 @@ import com.tourapp.tour.booking.entry.detail.cruise.*;
 import org.jbundle.base.db.shared.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.cruise.db.*;
 import com.tourapp.tour.product.base.db.*;
@@ -435,7 +437,7 @@ public class BookingCruise extends BookingDetail
     {
         Date startDate = this.getStartDate();
         Calendar calendar = DateTimeField.m_calendar;
-        Product recCruise = this.getProduct();
+        ProductModel recCruise = this.getProduct();
         if (recCruise != null)
         {
             int days = (int)recCruise.getField(Cruise.DAYS).getValue();
@@ -460,7 +462,7 @@ public class BookingCruise extends BookingDetail
      */
     public String getMealDesc(Date dateTarget, boolean bDetailedDesc, Record recMealPlan)
     {
-        Product recCruise = this.getProduct();
+        ProductModel recCruise = this.getProduct();
         if (recCruise != null)
             recCruise.setOpenMode(recCruise.getOpenMode() | DBConstants.OPEN_CACHE_RECORDS);    // Cache recently used records.
         if (recCruise != null)
@@ -477,13 +479,13 @@ public class BookingCruise extends BookingDetail
      * When a new record is set up and you have the booking and tour
      * records, init the detail fields.
      */
-    public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCruise.CLASS_ID).isNull()))
-            this.getField(BookingCruise.CLASS_ID).moveFieldToThis(recTour.getField(Tour.CRUISE_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingCruise.CLASS_ID).moveFieldToThis((BaseField)recTour.getField(Tour.CRUISE_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCruise.RATE_ID).isNull()))
-            this.getField(BookingCruise.RATE_ID).moveFieldToThis(recTour.getField(Tour.CRUISE_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingCruise.RATE_ID).moveFieldToThis((BaseField)recTour.getField(Tour.CRUISE_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**

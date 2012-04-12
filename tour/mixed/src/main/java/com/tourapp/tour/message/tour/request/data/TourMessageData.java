@@ -23,10 +23,10 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.tour.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.product.tour.db.*;
 
 /**
  *  TourMessageData - .
@@ -61,21 +61,21 @@ public class TourMessageData extends ProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.removeMessageDataDesc(BookingDetail.RATE_ID);
-        this.removeMessageDataDesc(BookingDetail.CLASS_ID);
+        this.removeMessageDataDesc(BookingDetailModel.RATE_ID);
+        this.removeMessageDataDesc(BookingDetailModel.CLASS_ID);
     }
     /**
      * Get/Create the product record.
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(TourHeader.TOUR_HEADER_FILE) != null)
-                    return (TourHeader)recordOwner.getRecord(TourHeader.TOUR_HEADER_FILE);
-        return new TourHeader(recordOwner);
+                if (recordOwner.getRecord(TourHeaderModel.TOUR_HEADER_FILE) != null)
+                    return (TourHeaderModel)recordOwner.getRecord(TourHeaderModel.TOUR_HEADER_FILE);
+        return (TourHeaderModel)Record.makeRecordFromClassName(TourHeaderModel.THICK_CLASS, recordOwner);
     }
 
 }

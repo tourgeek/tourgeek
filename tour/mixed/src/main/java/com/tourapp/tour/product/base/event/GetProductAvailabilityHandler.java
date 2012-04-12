@@ -68,7 +68,7 @@ public class GetProductAvailabilityHandler extends GetProductStatusHandler
      */
     public int getDirectProductInfo(Product recProduct, BaseMessage message)
     {
-        BaseProductResponse response = (BaseProductResponse)recProduct.processAvailabilityRequestInMessage(message, null, null).getMessageDataDesc(null);
+        BaseProductResponse response = (BaseProductResponse)((BaseMessage)recProduct.processAvailabilityRequestInMessage(message, null, null)).getMessageDataDesc(null);
         if (response != null)
             return response.getMessageDataStatus();
         return BaseStatus.NOT_VALID;

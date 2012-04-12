@@ -22,9 +22,9 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.response.data.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ProductInformationResponse - .
@@ -67,7 +67,7 @@ public class ProductInformationResponse extends BaseProductResponse
     {
         super.setupMessageDataDesc();
         ProductResponseMessageData messageData = (ProductResponseMessageData)this.getMessageDataDesc(PRODUCT_RESPONSE_MESSAGE);
-        messageData.addMessageFieldDesc(Product.PRODUCT_NAME_PARAM, String.class, MessageFieldDesc.REQUIRED, null);
+        messageData.addMessageFieldDesc(ProductModel.PRODUCT_NAME_PARAM, String.class, MessageFieldDesc.REQUIRED, null);
     }
     /**
      * Move the map values to the correct record fields.
@@ -76,20 +76,21 @@ public class ProductInformationResponse extends BaseProductResponse
     public int getRawRecordData(Rec record)
     {
         int iErrorCode = super.getRawRecordData(record);
+        
         if (iErrorCode == DBConstants.NORMAL_RETURN)
         {
-            BookingDetail recBookingDetail = (BookingDetail)record;
-            boolean[] rgbListeners = recBookingDetail.getField(BookingDetail.INFO_STATUS_REQUEST).setEnableListeners(false); // No Echo
+            BookingDetailModel recBookingDetail = (BookingDetailModel)record;
+            boolean[] rgbListeners = ((BaseField)recBookingDetail.getField(BookingDetailModel.INFO_STATUS_REQUEST)).setEnableListeners(false); // No Echo
             iErrorCode = recBookingDetail.setDetailProductInfo(null, null, null, null, null, null, null);
-            recBookingDetail.getField(BookingDetail.INFO_STATUS_REQUEST).setEnableListeners(rgbListeners);
+            ((Record)recBookingDetail).getField(BookingDetailModel.INFO_STATUS_REQUEST).setEnableListeners(rgbListeners);
             if (iErrorCode != DBConstants.NORMAL_RETURN)
             {
-                int iMessageStatus = BaseDataStatus.NOT_VALID;
+                int iMessageStatus = BaseDataStatusModel.NOT_VALID;
                 this.setMessageDataStatus(iMessageStatus);
                 String setError = "Error";
-                if (recBookingDetail.getRecordOwner() != null)
-                    if (recBookingDetail.getRecordOwner().getTask() != null)
-                        recBookingDetail.getRecordOwner().getTask().getLastError(iErrorCode);
+                if (((Record)recBookingDetail).getRecordOwner() != null)
+                    if (((Record)recBookingDetail).getRecordOwner().getTask() != null)
+                        ((Record)recBookingDetail).getRecordOwner().getTask().getLastError(iErrorCode);
                 recBookingDetail.setErrorMessage(this, setError);
             }                
         }

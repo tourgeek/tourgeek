@@ -71,9 +71,9 @@ public class HotelRateAvailRequestMessageInProcessor extends HotelRateRequestMes
         {   // Error, hotel not found
             // pend(don)
         }
-        BaseProductResponse productAvailResponseOut = (BaseProductResponse)recProduct.processAvailabilityRequestInMessage((BaseMessage)msgProductAvailRequestIn.getMessage(), null, null).getMessageDataDesc(null);
+        BaseProductResponse productAvailResponseOut = (BaseProductResponse)((BaseMessage)recProduct.processAvailabilityRequestInMessage((BaseMessage)msgProductAvailRequestIn.getMessage(), null, null)).getMessageDataDesc(null);
         //        ProductAvailabilityResponse
-        BaseProductResponse productRateResponseOut = (BaseProductResponse)recProduct.processCostRequestInMessage((BaseMessage)msgProductAvailRequestIn.getMessage(), null).getMessageDataDesc(null);
+        BaseProductResponse productRateResponseOut = (BaseProductResponse)((BaseMessage)recProduct.processCostRequestInMessage((BaseMessage)msgProductAvailRequestIn.getMessage(), null)).getMessageDataDesc(null);
         
         TrxMessageHeader messageHeader = (TrxMessageHeader)productAvailResponseOut.getMessage().getMessageHeader();
         //?Map<String,Object> mapMessage = productAvailResponseOut.getMap();

@@ -80,5 +80,12 @@ public class PaxCategory extends FieldList
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
         keyArea.addKeyField("Description", Constants.ASCENDING);
     }
+    /**
+     * Convert this description to an ID.
+     */
+    public String convertNameToID(String strPaxCategory)
+    {
+        return null; // Empty implementation
+    }
 
 }

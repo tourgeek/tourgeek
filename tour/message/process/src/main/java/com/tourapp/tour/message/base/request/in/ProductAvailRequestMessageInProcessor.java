@@ -87,7 +87,7 @@ public class ProductAvailRequestMessageInProcessor extends BaseMessageInProcesso
                 {   // Error, product not found
                     // pend(don)
                 }
-                messageReply = recProduct.processAvailabilityRequestInMessage(internalMessage, messageReply, null);
+                messageReply = (BaseMessage)recProduct.processAvailabilityRequestInMessage(internalMessage, messageReply, null);
             }
         }
         return messageReply;

@@ -36,6 +36,7 @@ import com.tourapp.tour.message.land.response.*;
 import com.tourapp.tour.message.land.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.tour.acctpay.db.*;
@@ -369,7 +370,7 @@ public class Land extends Product
     /**
      * Read the locally stored product cost (Override).
      */
-    public BaseMessage processCostRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processCostRequestInMessage(Message messageIn, Message messageReply)
     {
         String DATE_REQUIRED = "Date required";
         String PAX_REQUIRED = "Passengers required";
@@ -379,7 +380,7 @@ public class Land extends Product
         String strPMCErrorMessage = DBConstants.BLANK;
         String strSICErrorMessage = DBConstants.BLANK;
         
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         LandMessageData productMessageData = (LandMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData passengerMessageData = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         
@@ -398,10 +399,10 @@ public class Land extends Product
         if (messageReply == null)
         {
             messageReply = new TreeMessage(null, null);
-            responseMessage =  new LandRateResponse(messageReply, null);
+            responseMessage =  new LandRateResponse((BaseMessage)messageReply, null);
         }
         else
-            responseMessage = (LandRateResponse)messageReply.getMessageDataDesc(null);
+            responseMessage = (LandRateResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         LandRateResponseMessageData responseMessageData = (LandRateResponseMessageData)responseMessage.getMessageDataDesc(ProductRateResponse.PRODUCT_RESPONSE_MESSAGE);
         
@@ -547,7 +548,7 @@ public class Land extends Product
      * @param message Contains all the update data for this check
      * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
      */
-    public BaseMessage processAvailabilityRequestInMessage(BaseMessage messageIn, BaseMessage messageReply, BaseField fldTrxID)
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID)
     {
         return super.processAvailabilityRequestInMessage(messageIn, messageReply, fldTrxID);
     }
@@ -555,19 +556,19 @@ public class Land extends Product
      * This is for products that can be externally booked.
      * @return the booking reply message with the proper params.
      */
-    public BaseMessage processBookingRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processBookingRequestInMessage(Message messageIn, Message messageReply)
     {
         return super.processBookingRequestInMessage(messageIn, messageReply);
     }
     /**
      * GetProductBookingResponse Method.
      */
-    public ProductBookingResponse getProductBookingResponse(String strRequestType, BaseMessage message, String strKey)
+    public ProductBookingResponse getProductBookingResponse(String strRequestType, Message message, String strKey)
     {
         if (RequestType.BOOKING_ADD.equalsIgnoreCase(strRequestType))
-            return new LandBookingResponse(message, strKey);
+            return new LandBookingResponse((BaseMessage)message, strKey);
         else if (RequestType.BOOKING_CHANGE.equalsIgnoreCase(strRequestType))
-            return new LandBookingChangeResponse(message, strKey);
+            return new LandBookingChangeResponse((BaseMessage)message, strKey);
         else
             return super.getProductBookingResponse(strRequestType, message, strKey);
     }

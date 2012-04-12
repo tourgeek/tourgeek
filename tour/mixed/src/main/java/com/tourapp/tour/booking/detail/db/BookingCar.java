@@ -28,6 +28,7 @@ import com.tourapp.tour.booking.detail.event.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.car.db.*;
 import com.tourapp.tour.product.base.db.*;
@@ -564,15 +565,15 @@ public class BookingCar extends BookingDetail
      * When a new record is set up and you have the booking and tour
      * records, init the detail fields.
      */
-    public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.DAYS).isNull()))
             this.getField(BookingCar.DAYS).setValue(1, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.RATE_ID).isNull()))
-            this.getField(BookingCar.RATE_ID).moveFieldToThis(recTour.getField(Tour.CAR_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingCar.RATE_ID).moveFieldToThis((BaseField)recTour.getField(Tour.CAR_RATE_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         if ((!bOnlyIfTargetIsNull) || (this.getField(BookingCar.CLASS_ID).isNull()))
-            this.getField(BookingCar.CLASS_ID).moveFieldToThis(recTour.getField(Tour.CAR_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(BookingCar.CLASS_ID).moveFieldToThis((BaseField)recTour.getField(Tour.CAR_CLASS_ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**

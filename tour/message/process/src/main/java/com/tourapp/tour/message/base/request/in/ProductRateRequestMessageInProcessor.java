@@ -87,7 +87,7 @@ public class ProductRateRequestMessageInProcessor extends BaseMessageInProcessor
                 {   // Error, product not found
                     // pend(don)
                 }
-                messageReply = recProduct.processCostRequestInMessage(internalMessage, messageReply);
+                messageReply = (BaseMessage)recProduct.processCostRequestInMessage(internalMessage, messageReply);
             }
         }
         return messageReply;

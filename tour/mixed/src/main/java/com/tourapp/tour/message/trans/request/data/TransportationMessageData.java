@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.trans.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.trans.db.*;
 
 /**
  *  TransportationMessageData - .
@@ -61,10 +61,10 @@ public class TransportationMessageData extends ProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.removeMessageDataDesc(BookingDetail.RATE_ID);
-        this.removeMessageDataDesc(BookingDetail.CLASS_ID);
-        this.addMessageFieldDesc(BookingDetail.RATE_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BookingDetail.CLASS_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.removeMessageDataDesc(BookingDetailModel.RATE_ID);
+        this.removeMessageDataDesc(BookingDetailModel.CLASS_ID);
+        this.addMessageFieldDesc(BookingDetailModel.RATE_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingDetailModel.CLASS_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
     }
     /**
      * Check to make sure all the data is present to attempt a cost lookup.
@@ -85,7 +85,7 @@ public class TransportationMessageData extends ProductMessageData
     public int initForMessage(Rec record)
     {
         int iErrorCode = super.initForMessage(record);
-        ((Record)record).getField(BookingTransportation.PP_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        ((Record)record).getField(BookingTransportationModel.PP_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -95,7 +95,7 @@ public class TransportationMessageData extends ProductMessageData
     public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
-        BookingTransportation recBookingTransportation = (BookingTransportation)record;
+        BookingTransportationModel recBookingTransportation = (BookingTransportationModel)record;
         return iErrorCode;
     }
     /**
@@ -103,28 +103,35 @@ public class TransportationMessageData extends ProductMessageData
      */
     public void putRawProperties(PropertyOwner propertyOwner)
     {
-        this.put(BookingDetail.CLASS_ID, propertyOwner.getProperty(BookingDetail.CLASS_ID));
-        this.put(BookingDetail.DETAIL_DATE, propertyOwner.getProperty(BookingDetail.DETAIL_DATE));
+        this.put(BookingDetailModel.CLASS_ID, propertyOwner.getProperty(BookingDetailModel.CLASS_ID));
+        this.put(BookingDetailModel.DETAIL_DATE, propertyOwner.getProperty(BookingDetailModel.DETAIL_DATE));
     }
     /**
      * Get/Create the product record.
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Transportation.TRANSPORTATION_FILE) != null)
-                    return (Transportation)recordOwner.getRecord(Transportation.TRANSPORTATION_FILE);
-        return new Transportation(recordOwner);
+                if (recordOwner.getRecord(TransportationModel.TRANSPORTATION_FILE) != null)
+                    return (TransportationModel)recordOwner.getRecord(TransportationModel.TRANSPORTATION_FILE);
+        return (TransportationModel)Record.makeRecordFromClassName(TransportationModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductClass Method.
      */
-    public BaseClass getProductClass(RecordOwner recordOwner)
+    public BaseClassModel getProductClass(RecordOwner recordOwner)
     {
-        return new TransportationClass(recordOwner);
+        return (TransportationClassModel)Record.makeRecordFromClassName(TransportationClassModel.THICK_CLASS, recordOwner);
+    }
+    /**
+     * GetProductRate Method.
+     */
+    public BaseRateModel getProductRate(RecordOwner recordOwner)
+    {
+        return (TransportationRateModel)Record.makeRecordFromClassName(TransportationRateModel.THICK_CLASS, recordOwner);
     }
 
 }

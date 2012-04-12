@@ -4,6 +4,8 @@
  */
 package com.tourapp.thin.tour.product.base.db;
 
+import org.jbundle.model.message.*;
+import org.jbundle.model.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -136,6 +138,23 @@ public class Product extends FieldList
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductChainID");
         keyArea.addKeyField("ProductChainID", Constants.ASCENDING);
         keyArea.addKeyField("DescSort", Constants.ASCENDING);
+    }
+    /**
+     * Check the inventory for this detail.
+     * @param message Contains all the update data for this check
+     * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
+     */
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID)
+    {
+        return null; // Empty implementation
+    }
+    /**
+     * Get the est. time of this product.
+     * @return The duration of this product (in seconds).
+     */
+    public long getLengthTime()
+    {
+        return -1; // Empty implementation
     }
 
 }

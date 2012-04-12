@@ -21,11 +21,11 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  CancelRequest - Cancellation request.
@@ -61,14 +61,14 @@ public class CancelRequest extends ProductRequest
     {
         super.setupMessageDataDesc();
         ProductMessageData productMessage = (ProductMessageData)this.getMessageDataDesc(PRODUCT_MESSAGE);
-        productMessage.addMessageFieldDesc(BookingDetail.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
+        productMessage.addMessageFieldDesc(BookingDetailModel.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
         // UNIQUE adds this to the key making it different from product order
-        productMessage.addMessageFieldDesc(BookingDetail.PRODUCT_TYPE, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.UNIQUE | MessageFieldDesc.DONT_INIT, null);
+        productMessage.addMessageFieldDesc(BookingDetailModel.PRODUCT_TYPE, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.UNIQUE | MessageFieldDesc.DONT_INIT, null);
         
-        ((MessageFieldDesc)productMessage.getMessageDataDesc(BookingDetail.RATE_ID)).setRequired(MessageFieldDesc.OPTIONAL);
-        ((MessageFieldDesc)productMessage.getMessageDataDesc(BookingDetail.CLASS_ID)).setRequired(MessageFieldDesc.OPTIONAL);
-        ((MessageFieldDesc)productMessage.getMessageDataDesc(Product.PAX_PARAM)).setRequired(MessageFieldDesc.OPTIONAL);
-        ((MessageFieldDesc)productMessage.getMessageDataDesc(Product.ROOM_TYPE_PARAM)).setRequired(MessageFieldDesc.OPTIONAL);
+        ((MessageFieldDesc)productMessage.getMessageDataDesc(BookingDetailModel.RATE_ID)).setRequired(MessageFieldDesc.OPTIONAL);
+        ((MessageFieldDesc)productMessage.getMessageDataDesc(BookingDetailModel.CLASS_ID)).setRequired(MessageFieldDesc.OPTIONAL);
+        ((MessageFieldDesc)productMessage.getMessageDataDesc(ProductModel.PAX_PARAM)).setRequired(MessageFieldDesc.OPTIONAL);
+        ((MessageFieldDesc)productMessage.getMessageDataDesc(ProductModel.ROOM_TYPE_PARAM)).setRequired(MessageFieldDesc.OPTIONAL);
     }
     /**
      * Initialize the fields in this record to prepare for this message.

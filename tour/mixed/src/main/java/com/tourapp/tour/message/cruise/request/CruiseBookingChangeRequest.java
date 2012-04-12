@@ -28,6 +28,7 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.cruise.request.data.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.message.cruise.response.*;
 import org.jbundle.main.msg.db.*;
 
@@ -64,7 +65,7 @@ public class CruiseBookingChangeRequest extends CruiseBookingRequest
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        ((ProductMessageData)this.getMessageDataDesc(PRODUCT_MESSAGE)).addMessageFieldDesc(BookingDetail.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
+        ((ProductMessageData)this.getMessageDataDesc(PRODUCT_MESSAGE)).addMessageFieldDesc(BookingDetailModel.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
     }
     /**
      * GetRequestType Method.

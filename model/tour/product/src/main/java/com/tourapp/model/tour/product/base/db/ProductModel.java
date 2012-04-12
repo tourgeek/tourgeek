@@ -4,6 +4,8 @@
  */
 package com.tourapp.model.tour.product.base.db;
 
+import org.jbundle.model.message.*;
+import org.jbundle.model.db.*;
 import org.jbundle.model.db.*;
 
 public interface ProductModel extends Rec
@@ -57,6 +59,7 @@ public interface ProductModel extends Rec
     public static final String PRODUCT_NAME_PARAM = "productDesc";
     public static final String RATE_CLASS_DESC_PARAM = "rateClassDesc";
     public static final String RATE_TYPE_DESC_PARAM = "rateTypeDesc";
+    public static final String ROOM_TYPE_PARAM = "roomType"; // SearchConstants.ROOM_TYPE;
     public static final String INVENTORY_PARAM = "Inventory";
     public static final String OTHER_ID_PARAM = "otherID";
     public static final String CONFIRMATION_NO_PARAM = "confirmationNo";
@@ -73,5 +76,16 @@ public interface ProductModel extends Rec
     public static final String PRODUCT_FILE = "Product";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.db.Product";
     public static final String THICK_CLASS = "com.tourapp.tour.product.base.db.Product";
+    /**
+     * Check the inventory for this detail.
+     * @param message Contains all the update data for this check
+     * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
+     */
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID);
+    /**
+     * Get the est. time of this product.
+     * @return The duration of this product (in seconds).
+     */
+    public long getLengthTime();
 
 }

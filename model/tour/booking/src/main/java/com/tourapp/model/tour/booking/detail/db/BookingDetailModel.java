@@ -6,6 +6,8 @@ package com.tourapp.model.tour.booking.detail.db;
 
 import java.util.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 
 public interface BookingDetailModel extends BookingSubModel
@@ -158,6 +160,10 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingDetail";
     public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingDetail";
     /**
+     * Get the product for this detail.
+     */
+    public ProductModel getProduct();
+    /**
      * Get the start date and time for this product.
      * Return null if there is no date and time.
      */
@@ -174,18 +180,38 @@ public interface BookingDetailModel extends BookingSubModel
      */
     public String getProductDesc();
     /**
+     * From the current detail and product info,
+     * setup the product description.
+     * @return The product description (using the product).
+     */
+    public String setupProductDesc();
+    /**
      * Get Pax using this service.
      */
     public short getNoPax();
+    /**
+     * How many of this type of passenger (ie., single, double, etc.) are in this type of room?.
+     */
+    public int getPaxInRoom(int iRoomType);
     /**
      * Pre-check to see if the minimal required params are set.
      * @return If okay, return 0, otherwise return the field that is required.
      */
     public String checkRequiredParams(String iStatusType);
     /**
+     * Lookup the message for this status update.
+     * If no update is required, return a null message.
+     * @return The message to process (or null if no message).
+     */
+    public MessageDataParent checkMessageRequired(String iStatusType);
+    /**
      * GetErrorMessage Method.
      */
     public String getErrorMessage(String iStatusType);
+    /**
+     * Set the error message in this record for this message type.
+     */
+    public void setErrorMessage(MessageDataParent messageData, String strError);
     /**
      * Add any message properties that are set in this record.
      */

@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.booking.inventory.db.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
 
 /**
  *  ProductAvailabilityResponse - .
@@ -62,7 +62,7 @@ public class ProductAvailabilityResponse extends BaseProductResponse
     {
         super.setupMessageDataDesc();
         ProductResponseMessageData messageData = (ProductResponseMessageData)this.getMessageDataDesc(PRODUCT_RESPONSE_MESSAGE);
-        messageData.addMessageFieldDesc(Product.AVAILABILITY_PARAM, Integer.class, MessageFieldDesc.REQUIRED, null);
+        messageData.addMessageFieldDesc(ProductModel.AVAILABILITY_PARAM, Integer.class, MessageFieldDesc.REQUIRED, null);
     }
     /**
      * Move the map values to the correct record fields.

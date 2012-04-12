@@ -40,6 +40,7 @@ import com.tourapp.tour.message.hotel.response.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.data.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.model.tour.booking.db.*;
@@ -53,8 +54,6 @@ public class Hotel extends Product
 {
     private static final long serialVersionUID = 1L;
 
-    public static final String MEAL_PLAN_ID_PARAM = SearchConstants.MEAL_PLAN;
-    public static final String MEAL_PLAN_QTY_PARAM = SearchConstants.MEAL_PLAN_QTY;
     protected HotelMealPricing m_recHotelMealPricing = null;
     public static final int MEAL_PRICING_GRID_SCREEN = ScreenConstants.LAST_MODE * 32;
     /**
@@ -470,9 +469,9 @@ public class Hotel extends Product
     /**
      * Read the locally stored product cost (Override).
      */
-    public BaseMessage processCostRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processCostRequestInMessage(Message messageIn, Message messageReply)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         String NO_ROOM_RATE = "No room rate";
         BaseApplication application = null;
         if (this.getRecordOwner() != null)
@@ -494,10 +493,10 @@ public class Hotel extends Product
         if (messageReply == null)
         {
             messageReply = new TreeMessage(null, null);
-            responseMessage =  new HotelRateResponse(messageReply, null);
+            responseMessage =  new HotelRateResponse((BaseMessage)messageReply, null);
         }
         else
-            responseMessage = (HotelRateResponse)messageReply.getMessageDataDesc(null);
+            responseMessage = (HotelRateResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         HotelRateResponseMessageData responseMessageData = (HotelRateResponseMessageData)responseMessage.getMessageDataDesc(ProductRateResponse.PRODUCT_RESPONSE_MESSAGE);
         
@@ -601,9 +600,9 @@ public class Hotel extends Product
      * @param message Contains all the update data for this check
      * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
      */
-    public BaseMessage processAvailabilityRequestInMessage(BaseMessage messageIn, BaseMessage messageReply, BaseField fldTrxID)
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         ProductMessageData productMessageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData passengerMessageData = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         Date dateTarget = productMessageData.getTargetDate();
@@ -619,7 +618,7 @@ public class Hotel extends Product
         BaseProductResponse responseMessage = null;
         if (messageReply == null)
             messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)productRequest.getMessage());
-        responseMessage = (BaseProductResponse)messageReply.getMessageDataDesc(null);
+        responseMessage = (BaseProductResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         
         //       First, calculate the room cost
@@ -728,19 +727,19 @@ public class Hotel extends Product
      * This is for products that can be externally booked.
      * @return the booking reply message with the proper params.
      */
-    public BaseMessage processBookingRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processBookingRequestInMessage(Message messageIn, Message messageReply)
     {
         return super.processBookingRequestInMessage(messageIn, messageReply);
     }
     /**
      * GetProductBookingResponse Method.
      */
-    public ProductBookingResponse getProductBookingResponse(String strRequestType, BaseMessage message, String strKey)
+    public ProductBookingResponse getProductBookingResponse(String strRequestType, Message message, String strKey)
     {
         if (RequestType.BOOKING_ADD.equalsIgnoreCase(strRequestType))
-            return new HotelBookingResponse(message, strKey);
+            return new HotelBookingResponse((BaseMessage)message, strKey);
         else if (RequestType.BOOKING_CHANGE.equalsIgnoreCase(strRequestType))
-            return new HotelBookingChangeResponse(message, strKey);
+            return new HotelBookingChangeResponse((BaseMessage)message, strKey);
         else
             return super.getProductBookingResponse(strRequestType, message, strKey);
     }

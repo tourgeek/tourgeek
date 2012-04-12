@@ -33,6 +33,7 @@ import com.tourapp.tour.message.cruise.response.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.tour.base.db.*;
@@ -317,9 +318,9 @@ public class Cruise extends TransportProduct
     /**
      * Read the locally stored product cost (Override).
      */
-    public BaseMessage processCostRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processCostRequestInMessage(Message messageIn, Message messageReply)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         CruiseMessageData productMessageData = (CruiseMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData passengerMessageData  = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         
@@ -342,10 +343,10 @@ public class Cruise extends TransportProduct
         if (messageReply == null)
         {
             messageReply = new TreeMessage(null, null);
-            responseMessage =  new CruiseRateResponse(messageReply, null);
+            responseMessage =  new CruiseRateResponse((BaseMessage)messageReply, null);
         }
         else
-            responseMessage = (CruiseRateResponse)messageReply.getMessageDataDesc(null);
+            responseMessage = (CruiseRateResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         
         responseMessage.moveRequestInfoToReply(messageIn);
         ProductRateResponseMessageData responseProductMessageData = (ProductRateResponseMessageData)responseMessage.getMessageDataDesc(ProductRateResponse.PRODUCT_RESPONSE_MESSAGE);
@@ -388,7 +389,7 @@ public class Cruise extends TransportProduct
      * @param message Contains all the update data for this check
      * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
      */
-    public BaseMessage processAvailabilityRequestInMessage(BaseMessage messageIn, BaseMessage messageReply, BaseField fldTrxID)
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID)
     {
         return super.processAvailabilityRequestInMessage(messageIn, messageReply, fldTrxID);
     }
@@ -396,19 +397,19 @@ public class Cruise extends TransportProduct
      * This is for products that can be externally booked.
      * @return the booking reply message with the proper params.
      */
-    public BaseMessage processBookingRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processBookingRequestInMessage(Message messageIn, Message messageReply)
     {
         return super.processBookingRequestInMessage(messageIn, messageReply);
     }
     /**
      * GetProductBookingResponse Method.
      */
-    public ProductBookingResponse getProductBookingResponse(String strRequestType, BaseMessage message, String strKey)
+    public ProductBookingResponse getProductBookingResponse(String strRequestType, Message message, String strKey)
     {
         if (RequestType.BOOKING_ADD.equalsIgnoreCase(strRequestType))
-            return new CruiseBookingResponse(message, strKey);
+            return new CruiseBookingResponse((BaseMessage)message, strKey);
         else if (RequestType.BOOKING_CHANGE.equalsIgnoreCase(strRequestType))
-            return new CruiseBookingChangeResponse(message, strKey);
+            return new CruiseBookingChangeResponse((BaseMessage)message, strKey);
         else
             return super.getProductBookingResponse(strRequestType, message, strKey);
     }

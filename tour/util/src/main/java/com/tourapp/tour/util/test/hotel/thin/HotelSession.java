@@ -139,7 +139,7 @@ public class HotelSession extends Session
         
                 if (MessageTransport.DIRECT.equalsIgnoreCase((String)trxMessageHeader.get(MessageTransport.SEND_MESSAGE_BY_PARAM)))
                 {
-                    BaseProductResponse messageReply = (BaseProductResponse)recHotel.processCostRequestInMessage(messageOut, null).getMessageDataDesc(null);
+                    BaseProductResponse messageReply = (BaseProductResponse)((BaseMessage)recHotel.processCostRequestInMessage(messageOut, null)).getMessageDataDesc(null);
                     double dProductCost = recHotel.getField(Product.PRODUCT_COST).getValue();
                     this.getScreenRecord().getField(TestHotelRateScreenRecord.TOTAL_COST).setValue(dProductCost);
                 }

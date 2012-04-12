@@ -23,10 +23,10 @@ import org.jbundle.model.screen.*;
 import org.jbundle.model.message.*;
 import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  ProductInformationRequest - .
@@ -69,8 +69,8 @@ public class ProductInformationRequest extends ProductRequest
     {
         ProductMessageData productMessageData = null;
         this.addMessageDataDesc(productMessageData = this.createProductMessageData());
-        productMessageData.removeMessageDataDesc(BookingDetail.RATE_ID);    // No required for information
-        productMessageData.removeMessageDataDesc(BookingDetail.CLASS_ID);
+        productMessageData.removeMessageDataDesc(BookingDetailModel.RATE_ID);    // No required for information
+        productMessageData.removeMessageDataDesc(BookingDetailModel.CLASS_ID);
         // Don't need the booking and pax info.
     }
     /**
@@ -83,10 +83,10 @@ public class ProductInformationRequest extends ProductRequest
             public void setupMessageDataDesc()
             {
                 // For now, just use these fields in the message
-                this.addMessageFieldDesc(BookingDetail.PRODUCT_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
-                this.addMessageFieldDesc(BookingDetail.DETAIL_DATE, Date.class, MessageFieldDesc.REQUIRED, null);
-                this.addMessageFieldDesc(Product.OPERATORS_CODE, String.class, MessageFieldDesc.OPTIONAL, null);
-                this.addMessageFieldDesc(Product.PRODUCT_NAME_PARAM, String.class, MessageFieldDesc.OPTIONAL, null);
+                this.addMessageFieldDesc(BookingDetailModel.PRODUCT_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
+                this.addMessageFieldDesc(BookingDetailModel.DETAIL_DATE, Date.class, MessageFieldDesc.REQUIRED, null);
+                this.addMessageFieldDesc(ProductModel.OPERATORS_CODE, String.class, MessageFieldDesc.OPTIONAL, null);
+                this.addMessageFieldDesc(ProductModel.PRODUCT_NAME_PARAM, String.class, MessageFieldDesc.OPTIONAL, null);
             }
         };
     }

@@ -21,11 +21,11 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.model.message.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ProductResponseMessageData - .
@@ -60,9 +60,9 @@ public class ProductResponseMessageData extends BaseProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.addMessageFieldDesc(BookingDetail.PRODUCT_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BaseDataStatus.DATA_STATUS, Integer.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BaseDataStatus.DATA_ERROR_MESSAGE, String.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingDetailModel.PRODUCT_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BaseDataStatusModel.DATA_STATUS, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BaseDataStatusModel.DATA_ERROR_MESSAGE, String.class, MessageFieldDesc.OPTIONAL, null);
     }
     /**
      * Initialize the fields in this record to prepare for this message.
@@ -81,7 +81,7 @@ public class ProductResponseMessageData extends BaseProductMessageData
      */
     public String getMessageDataError()
     {
-        String strErrorMessage = (String)this.get(BaseDataStatus.DATA_ERROR_MESSAGE);
+        String strErrorMessage = (String)this.get(BaseDataStatusModel.DATA_ERROR_MESSAGE);
         if (strErrorMessage == null)
             strErrorMessage = DBConstants.BLANK;
         return strErrorMessage;
@@ -91,9 +91,9 @@ public class ProductResponseMessageData extends BaseProductMessageData
      */
     public int getMessageDataStatus()
     {
-        Integer intMessageStatus = (Integer)this.get(BaseDataStatus.DATA_STATUS);
+        Integer intMessageStatus = (Integer)this.get(BaseDataStatusModel.DATA_STATUS);
         if (intMessageStatus == null)
-            intMessageStatus = new Integer(BaseDataStatus.NO_STATUS);
+            intMessageStatus = new Integer(BaseDataStatusModel.NO_STATUS);
         return intMessageStatus.intValue();
     }
     /**
@@ -101,35 +101,35 @@ public class ProductResponseMessageData extends BaseProductMessageData
      */
     public void setMessageDataError(String strErrorMessage)
     {
-        this.put(BaseDataStatus.DATA_ERROR_MESSAGE, strErrorMessage);
+        this.put(BaseDataStatusModel.DATA_ERROR_MESSAGE, strErrorMessage);
     }
     /**
      * SetMessageDataStatus Method.
      */
     public void setMessageDataStatus(int iMessageStatus)
     {
-        this.put(BaseDataStatus.DATA_STATUS, new Integer(iMessageStatus));
+        this.put(BaseDataStatusModel.DATA_STATUS, new Integer(iMessageStatus));
     }
     /**
      * SetAvailability Method.
      */
     public void setAvailability(int iAvailability)
     {
-        this.put(Product.AVAILABILITY_PARAM, new Integer(iAvailability));
+        this.put(ProductModel.AVAILABILITY_PARAM, new Integer(iAvailability));
     }
     /**
      * SetProductCost Method.
      */
     public void setProductCost(double dCost)
     {
-        this.put(BookingDetail.TOTAL_COST, new Double(dCost));
+        this.put(BookingDetailModel.TOTAL_COST, new Double(dCost));
     }
     /**
      * Set the remote booking number.
      */
     public void setRemoteBookingNo(String strRemoteBookingNo)
     {
-        this.put(BookingDetail.REMOTE_BOOKING_NO, strRemoteBookingNo);
+        this.put(BookingDetailModel.REMOTE_BOOKING_NO, strRemoteBookingNo);
     }
     /**
      * Move the map values to the correct record fields.
@@ -138,16 +138,16 @@ public class ProductResponseMessageData extends BaseProductMessageData
     public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
-        BookingDetail recBookingDetail = (BookingDetail)record;
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record;
         
-        String strConfirmedBy = (String)this.get(Product.CONFIRMED_BY_PARAM);
-        ((PropertiesField)recBookingDetail.getField(BookingDetail.PROPERTIES)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + Product.CONFIRMED_BY_PARAM, strConfirmedBy);
-        String strConfirmationNo = (String)this.get(Product.CONFIRMATION_NO_PARAM);
-        ((PropertiesField)recBookingDetail.getField(BookingDetail.PROPERTIES)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + Product.CONFIRMATION_NO_PARAM, strConfirmationNo);
-        if (this.get(BookingDetail.REMOTE_BOOKING_NO) != null)
-            recBookingDetail.getField(BookingDetail.REMOTE_BOOKING_NO).setString((String)this.get(BookingDetail.REMOTE_BOOKING_NO).toString());
-        if (this.get(BookingDetail.REMOTE_REFERENCE_NO) != null)
-            recBookingDetail.getField(BookingDetail.REMOTE_REFERENCE_NO).setString((String)this.get(BookingDetail.REMOTE_REFERENCE_NO).toString());
+        String strConfirmedBy = (String)this.get(ProductModel.CONFIRMED_BY_PARAM);
+        ((PropertiesField)recBookingDetail.getField(BookingDetailModel.PROPERTIES)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + ProductModel.CONFIRMED_BY_PARAM, strConfirmedBy);
+        String strConfirmationNo = (String)this.get(ProductModel.CONFIRMATION_NO_PARAM);
+        ((PropertiesField)recBookingDetail.getField(BookingDetailModel.PROPERTIES)).setProperty(((BaseProductResponse)this.getMessageDataParent()).getKeyPrefix() + ProductModel.CONFIRMATION_NO_PARAM, strConfirmationNo);
+        if (this.get(BookingDetailModel.REMOTE_BOOKING_NO) != null)
+            recBookingDetail.getField(BookingDetailModel.REMOTE_BOOKING_NO).setString((String)this.get(BookingDetailModel.REMOTE_BOOKING_NO).toString());
+        if (this.get(BookingDetailModel.REMOTE_REFERENCE_NO) != null)
+            recBookingDetail.getField(BookingDetailModel.REMOTE_REFERENCE_NO).setString((String)this.get(BookingDetailModel.REMOTE_REFERENCE_NO).toString());
         
         return iInfoStatus;
     }

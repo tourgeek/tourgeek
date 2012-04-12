@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.hotel.request.data.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.hotel.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  HotelRateRequest - .
@@ -70,8 +70,8 @@ public class HotelRateRequest extends ProductRateRequest
      */
     public int initForMessage(Record record)
     {
-        record.getField(BookingDetail.TOTAL_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
-        record.getField(BookingDetail.TOTAL_COST_LOCAL).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        record.getField(BookingDetailModel.TOTAL_COST).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        record.getField(BookingDetailModel.TOTAL_COST_LOCAL).setData(null, DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return super.initForMessage(record);
     }
     /**

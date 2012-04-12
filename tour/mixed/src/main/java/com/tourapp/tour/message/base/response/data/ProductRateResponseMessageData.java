@@ -21,19 +21,19 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import org.jbundle.model.message.*;
 import com.tourapp.tour.message.base.response.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ProductRateResponseMessageData - .
  */
 public class ProductRateResponseMessageData extends ProductResponseMessageData
 {
-    public static final String NEW_RATE_CLASS_ID_PARAM = BookingDetail.RATE_ID + "New";
+    public static final String NEW_RATE_CLASS_ID_PARAM = BookingDetailModel.RATE_ID + "New";
     /**
      * Default constructor.
      */
@@ -64,10 +64,10 @@ public class ProductRateResponseMessageData extends ProductResponseMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.addMessageFieldDesc(BookingDetail.TOTAL_COST, Double.class, MessageFieldDesc.REQUIRED, null);
-        this.addMessageFieldDesc(BookingDetail.PP_COST, Double.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(BookingDetailModel.TOTAL_COST, Double.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(BookingDetailModel.PP_COST, Double.class, MessageFieldDesc.REQUIRED, null);
         this.addMessageFieldDesc(NEW_RATE_CLASS_ID_PARAM, Integer.class, MessageFieldDesc.REQUIRED, null);
-        //?this.addMessageFieldDesc(BookingDetail.CLASS_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
+        //?this.addMessageFieldDesc(BookingDetailModel.CLASS_ID, Integer.class, MessageFieldDesc.REQUIRED, null);
     }
     /**
      * Move the map values to the correct record fields.
@@ -76,31 +76,31 @@ public class ProductRateResponseMessageData extends ProductResponseMessageData
     public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
-        BookingDetail recBookingDetail = (BookingDetail)record;
-        if (recBookingDetail.getField(BookingDetail.EXCHANGE).getValue() == 0)
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record;
+        if (recBookingDetail.getField(BookingDetailModel.EXCHANGE).getValue() == 0)
         {
-            Product recProduct = recBookingDetail.getProduct();
+            ProductModel recProduct = recBookingDetail.getProduct();
             if (recProduct != null)
             {
-                Vendor recVendor = (Vendor)((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReference();
+                Vendor recVendor = (Vendor)((ReferenceField)recProduct.getField(ProductModel.VENDOR_ID)).getReference();
                 if (recVendor != null)
                 {
                     Currencys recCurrencys = (Currencys)((ReferenceField)recVendor.getField(recVendor.CURRENCYS_ID)).getReference();
                     if (recCurrencys != null)
                     {
                         if (!recCurrencys.getField(Currencys.COSTING_RATE).isNull())
-                            recBookingDetail.getField(BookingDetail.EXCHANGE).moveFieldToThis(recCurrencys.getField(Currencys.COSTING_RATE));
+                            ((Record)recBookingDetail).getField(BookingDetailModel.EXCHANGE).moveFieldToThis((BaseField)recCurrencys.getField(Currencys.COSTING_RATE));
                         else
-                            recBookingDetail.getField(BookingDetail.EXCHANGE).moveFieldToThis(recCurrencys.getField(Currencys.COSTING_RATE));
+                            ((Record)recBookingDetail).getField(BookingDetailModel.EXCHANGE).moveFieldToThis((BaseField)recCurrencys.getField(Currencys.COSTING_RATE));
                     }
                 }
             }
-            if (recBookingDetail.getField(BookingDetail.EXCHANGE).getValue() == 0)
-                recBookingDetail.getField(BookingDetail.EXCHANGE).setValue(1.0);
+            if (recBookingDetail.getField(BookingDetailModel.EXCHANGE).getValue() == 0)
+                recBookingDetail.getField(BookingDetailModel.EXCHANGE).setValue(1.0);
         }
-        this.getRawFieldData(recBookingDetail.getField(BookingDetail.TOTAL_COST));
-        if (recBookingDetail.getField(BookingDetail.MARKUP_FROM_LAST).getValue() > 0)
-            recBookingDetail.getField(BookingDetail.TOTAL_COST).setValue(Math.floor(recBookingDetail.getField(BookingDetail.TOTAL_COST).getValue() * (1 + recBookingDetail.getField(BookingDetail.MARKUP_FROM_LAST).getValue()) * 100 + 0.5) / 100);
+        this.getRawFieldData(recBookingDetail.getField(BookingDetailModel.TOTAL_COST));
+        if (recBookingDetail.getField(BookingDetailModel.MARKUP_FROM_LAST).getValue() > 0)
+            recBookingDetail.getField(BookingDetailModel.TOTAL_COST).setValue(Math.floor(recBookingDetail.getField(BookingDetailModel.TOTAL_COST).getValue() * (1 + recBookingDetail.getField(BookingDetailModel.MARKUP_FROM_LAST).getValue()) * 100 + 0.5) / 100);
         return iInfoStatus;
     }
     /**
@@ -108,7 +108,7 @@ public class ProductRateResponseMessageData extends ProductResponseMessageData
      */
     public void setPPCost(double dCost)
     {
-        this.put(BookingDetail.PP_COST, new Double(dCost));
+        this.put(BookingDetailModel.PP_COST, new Double(dCost));
     }
     /**
      * SetNewRateClassID Method.
@@ -122,7 +122,7 @@ public class ProductRateResponseMessageData extends ProductResponseMessageData
      */
     public void setRateClassID(int iClassID)
     {
-        this.put(BookingDetail.CLASS_ID, new Integer(iClassID));
+        this.put(BookingDetailModel.CLASS_ID, new Integer(iClassID));
     }
 
 }

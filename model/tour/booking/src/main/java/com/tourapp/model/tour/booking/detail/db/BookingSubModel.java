@@ -5,6 +5,9 @@
 package com.tourapp.model.tour.booking.detail.db;
 
 import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
+import java.util.*;
+import org.jbundle.model.db.*;
 import org.jbundle.model.db.*;
 
 public interface BookingSubModel extends Rec
@@ -35,6 +38,17 @@ public interface BookingSubModel extends Rec
      * AddDetailBehaviors Method.
      */
     public void addDetailBehaviors(BookingModel recBooking, TourModel recTour);
+    /**
+     * InitBookingDetailFields Method.
+     */
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull);
+    /**
+     * Set-up the current product info.
+     * If properties are supplied, look in the properties for new values.
+     * Else, if the target values are not already set, use the default values
+     * supplied in the tour and booking records.
+     */
+    public int setDetailProductInfo(Map<String,Object> properties, TourSubModel recTourHeaderDetail, BookingModel recBooking, TourModel recTour, Field fldPaxID, Field fldQaID, Field fldModID);
     /**
      * Get the main (Booking) record for this detail record.
      * Note: This will only return the main record if it already exists.

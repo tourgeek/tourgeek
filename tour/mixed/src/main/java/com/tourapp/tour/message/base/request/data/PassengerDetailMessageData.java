@@ -21,17 +21,18 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  PassengerDetailMessageData - .
  */
 public class PassengerDetailMessageData extends MessageRecordDesc
 {
+    public static final String PASSENGER_DETAIL = "paxDetail";
     /**
      * Default constructor.
      */
@@ -53,7 +54,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
     public void init(MessageDataParent messageDataParent, String strKey)
     {
         if (strKey == null)
-            strKey = ProductRequest.PASSENGER_DETAIL;
+            strKey = PassengerDetailMessageData.PASSENGER_DETAIL;
         super.init(messageDataParent, strKey);
         this.setNodeType(NON_UNIQUE_NODE);
     }
@@ -64,21 +65,21 @@ public class PassengerDetailMessageData extends MessageRecordDesc
     public int getRawRecordData(Rec record)
     {
         int iErrorCode = super.getRawRecordData(record);
-        Record recBookingPax = (BookingPax)record;
-        if (this.get(BookingPax.SOURCE_REFERENCE_NO) != null)
-            recBookingPax.getField(BookingPax.REMOTE_REFERENCE_NO).setString(this.get(BookingPax.SOURCE_REFERENCE_NO).toString());
-        FirstMLastConverter converter = new FirstMLastConverter(recBookingPax, BookingPax.NAME_PREFIX, BookingPax.FIRST_NAME, BookingPax.MIDDLE_NAME, BookingPax.SUR_NAME);
+        Record recBookingPax = (Record)record;
+        if (this.get(BookingPaxModel.SOURCE_REFERENCE_NO) != null)
+            recBookingPax.getField(BookingPaxModel.REMOTE_REFERENCE_NO).setString(this.get(BookingPaxModel.SOURCE_REFERENCE_NO).toString());
+        FirstMLastConverter converter = new FirstMLastConverter(recBookingPax, BookingPaxModel.NAME_PREFIX, BookingPaxModel.FIRST_NAME, BookingPaxModel.MIDDLE_NAME, BookingPaxModel.SUR_NAME);
         String strFullName = (String)this.get(converter.getFieldDesc());
         converter.setString(strFullName);
         converter.free();
-        this.getRawFieldData(recBookingPax.getField(BookingPax.SMOKER));
-        PaxCategory recPaxCategory = (PaxCategory)((ReferenceField)recBookingPax.getField(BookingPax.PAX_CATEGORY_ID)).getReferenceRecord();
-        String strParam = recPaxCategory.getField(PaxCategory.DESCRIPTION).getFieldName();
+        this.getRawFieldData(recBookingPax.getField(BookingPaxModel.SMOKER));
+        PaxCategoryModel recPaxCategory = (PaxCategoryModel)((ReferenceField)recBookingPax.getField(BookingPaxModel.PAX_CATEGORY_ID)).getReferenceRecord();
+        String strParam = recPaxCategory.getField(PaxCategoryModel.DESCRIPTION).getFieldName();
         String strPaxCategory = (String)this.get(strParam);
         String strPaxCategoryID = recPaxCategory.convertNameToID(strPaxCategory);
         if (strPaxCategoryID != null)
-            recBookingPax.getField(BookingPax.PAX_CATEGORY_ID).setString(strPaxCategoryID);
-        //    for (int iFieldSeq = BookingPax.NAME_PREFIX; iFieldSeq <= BookingPax.SUR_NAME; iFieldSeq++)
+            recBookingPax.getField(BookingPaxModel.PAX_CATEGORY_ID).setString(strPaxCategoryID);
+        //    for (int iFieldSeq = BookingPaxModel.NAME_PREFIX; iFieldSeq <= BookingPaxModel.SUR_NAME; iFieldSeq++)
         {
         //        this.getRawFieldData(cat.getFieldInfo(iFieldSeq));
         }
@@ -94,17 +95,17 @@ public class PassengerDetailMessageData extends MessageRecordDesc
         int iErrorCode = super.putRawRecordData(record);
         
         Record recBookingPax =  (Record)record;
-        FirstMLastConverter converter = new FirstMLastConverter(recBookingPax, BookingPax.NAME_PREFIX, BookingPax.FIRST_NAME, BookingPax.MIDDLE_NAME, BookingPax.SUR_NAME);
+        FirstMLastConverter converter = new FirstMLastConverter(recBookingPax, BookingPaxModel.NAME_PREFIX, BookingPaxModel.FIRST_NAME, BookingPaxModel.MIDDLE_NAME, BookingPaxModel.SUR_NAME);
         this.put(converter.getFieldDesc(), converter.toString());   // Full Name
-        for (int iFieldSeq = recBookingPax.getFieldSeq(BookingPax.NAME_PREFIX); iFieldSeq <= recBookingPax.getFieldSeq(BookingPax.SUR_NAME); iFieldSeq++)
+        for (int iFieldSeq = recBookingPax.getFieldSeq(BookingPaxModel.NAME_PREFIX); iFieldSeq <= recBookingPax.getFieldSeq(BookingPaxModel.SUR_NAME); iFieldSeq++)
         {
             this.putRawFieldData(recBookingPax.getField(iFieldSeq));
         }
-        this.putRawFieldData(recBookingPax.getField(BookingPax.SMOKER));
-        this.putRawFieldData(recBookingPax.getField(BookingPax.PAX_CATEGORY_ID));
-        this.putRawFieldData(((ReferenceField)recBookingPax.getField(BookingPax.PAX_CATEGORY_ID)).getReference().getField(PaxCategory.DESCRIPTION));
-        this.putRawFieldData(recBookingPax.getField(BookingPax.PAX_CATEGORY_ID));
-        this.put(BookingPax.SOURCE_REFERENCE_NO, recBookingPax.getField(BookingPax.ID).toString());  // Reference for remote system
+        this.putRawFieldData(recBookingPax.getField(BookingPaxModel.SMOKER));
+        this.putRawFieldData(recBookingPax.getField(BookingPaxModel.PAX_CATEGORY_ID));
+        this.putRawFieldData(((ReferenceField)recBookingPax.getField(BookingPaxModel.PAX_CATEGORY_ID)).getReference().getField(PaxCategoryModel.DESCRIPTION));
+        this.putRawFieldData(recBookingPax.getField(BookingPaxModel.PAX_CATEGORY_ID));
+        this.put(BookingPaxModel.SOURCE_REFERENCE_NO, recBookingPax.getField(BookingPaxModel.ID).toString());  // Reference for remote system
         converter.free();
         
         return iErrorCode;
@@ -123,9 +124,9 @@ public class PassengerDetailMessageData extends MessageRecordDesc
      */
     public Rec createSubDataRecord(Rec record)
     {
-        BookingDetail recBookingDetail = (BookingDetail)record;
-        Booking recBooking = (Booking)recBookingDetail.getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
-        BookingPax recBookingPax = new BookingPax(recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record;
+        Record recBooking = (Record)recBookingDetail.getBooking(!record.getField(BookingDetailModel.BOOKING_ID).isNull());
+        Record recBookingPax = Record.makeRecordFromClassName(BookingPaxModel.THICK_CLASS, recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         recBookingPax.addListener(new SubFileFilter(recBooking));
         return recBookingPax;
     }
@@ -137,12 +138,12 @@ public class PassengerDetailMessageData extends MessageRecordDesc
     public Rec readCurrentRecord(Rec record)
     {
         try {
-            BookingPax recBookingPax = (BookingPax)record;
+            Record recBookingPax = (Record)record;
             recBookingPax.addNew();
-            if (this.get(BookingPax.REMOTE_REFERENCE_NO) != null)
+            if (this.get(BookingPaxModel.REMOTE_REFERENCE_NO) != null)
             {   // A remote reference is the ID of this item (I am remote)
-                recBookingPax.getField(BookingPax.ID).setString(this.get(BookingPax.REMOTE_REFERENCE_NO).toString());
-                recBookingPax.setKeyArea(BookingPax.ID_KEY);
+                recBookingPax.getField(BookingPaxModel.ID).setString(this.get(BookingPaxModel.REMOTE_REFERENCE_NO).toString());
+                recBookingPax.setKeyArea(BookingPaxModel.ID_KEY);
                 if (recBookingPax.seek(null))
                 { // Good
                     recBookingPax.edit();
@@ -155,7 +156,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
                     return null;
                 }
             }
-            else if (this.get(BookingPax.SOURCE_REFERENCE_NO) != null)
+            else if (this.get(BookingPaxModel.SOURCE_REFERENCE_NO) != null)
             {   // A Source reference is the reference of the remote pax.
                 recBookingPax.close();
                 if (!ADD_RECORD.equalsIgnoreCase((String)this.get(MESSAGE_RECORD_TYPE)))
@@ -163,7 +164,7 @@ public class PassengerDetailMessageData extends MessageRecordDesc
                     while (recBookingPax.hasNext())
                     {
                         recBookingPax.next();
-                        if (this.get(BookingPax.SOURCE_REFERENCE_NO).equals(recBookingPax.getField(BookingPax.REMOTE_REFERENCE_NO).toString()))
+                        if (this.get(BookingPaxModel.SOURCE_REFERENCE_NO).equals(recBookingPax.getField(BookingPaxModel.REMOTE_REFERENCE_NO).toString()))
                         {
                             recBookingPax.edit();
                             break;

@@ -21,16 +21,17 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.message.base.request.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  BookingMessageData - .
  */
 public class BookingMessageData extends MessageRecordDesc
 {
+    public static final String BOOKING_MESSAGE = "bookingMessage";
     /**
      * Default constructor.
      */
@@ -52,7 +53,7 @@ public class BookingMessageData extends MessageRecordDesc
     public void init(MessageDataParent messageDataParent, String strKey)
     {
         if (strKey == null)
-            strKey = ProductRequest.BOOKING_MESSAGE;
+            strKey = BookingMessageData.BOOKING_MESSAGE;
         super.init(messageDataParent, strKey);
     }
     /**
@@ -62,9 +63,9 @@ public class BookingMessageData extends MessageRecordDesc
      */
     public int putRawRecordData(Rec record)
     {
-        Booking recBooking = (Booking)((BookingDetail)record).getBooking(true);
+        Record recBooking = (Record)((BookingDetailModel)record).getBooking(true);
         int iErrorCode = DBConstants.NORMAL_RETURN;
-        for (int iFieldSeq = recBooking.getFieldSeq(Booking.GENERIC_NAME); iFieldSeq <= recBooking.getFieldSeq(Booking.CONTACT); iFieldSeq++)
+        for (int iFieldSeq = recBooking.getFieldSeq(BookingModel.GENERIC_NAME); iFieldSeq <= recBooking.getFieldSeq(BookingModel.CONTACT); iFieldSeq++)
         {
             iErrorCode = this.putRawFieldData(recBooking.getField(iFieldSeq));
             if (iErrorCode != DBConstants.NORMAL_RETURN)
@@ -78,8 +79,8 @@ public class BookingMessageData extends MessageRecordDesc
      */
     public int getRawRecordData(Rec record)
     {
-        Booking recBooking = (Booking)((BookingDetail)record).getBooking(!record.getField(BookingDetail.BOOKING_ID).isNull());
-        for (int iFieldSeq = recBooking.getFieldSeq(Booking.GENERIC_NAME); iFieldSeq <= recBooking.getFieldSeq(Booking.CONTACT); iFieldSeq++)
+        Record recBooking = (Record)((BookingDetailModel)record).getBooking(!record.getField(BookingDetailModel.BOOKING_ID).isNull());
+        for (int iFieldSeq = recBooking.getFieldSeq(BookingModel.GENERIC_NAME); iFieldSeq <= recBooking.getFieldSeq(BookingModel.CONTACT); iFieldSeq++)
         {
             this.getRawFieldData(recBooking.getField(iFieldSeq));
         }

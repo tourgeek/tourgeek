@@ -33,6 +33,7 @@ import com.tourapp.tour.message.base.response.data.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.product.base.event.*;
 import org.jbundle.main.db.base.*;
+import org.jbundle.model.message.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
 import com.tourapp.model.tour.booking.db.*;
@@ -377,9 +378,9 @@ public class TourHeader extends Product
     /**
      * Read the locally stored product cost (Override).
      */
-    public BaseMessage processCostRequestInMessage(BaseMessage messageIn, BaseMessage messageReply)
+    public Message processCostRequestInMessage(Message messageIn, Message messageReply)
     {
-        ProductRequest productRequest = (ProductRequest)messageIn.getMessageDataDesc(null);
+        ProductRequest productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         TourMessageData productMessageData = (TourMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         PassengerMessageData passengerMessageData  = (PassengerMessageData)productRequest.getMessageDataDesc(ProductRequest.PASSENGER_MESSAGE);
         
@@ -399,10 +400,10 @@ public class TourHeader extends Product
         if (messageReply == null)
         {
             messageReply = new TreeMessage(null, null);
-            responseMessage =  new TourRateResponse(messageReply, null);
+            responseMessage =  new TourRateResponse((BaseMessage)messageReply, null);
         }
         else
-            responseMessage = (TourRateResponse)messageReply.getMessageDataDesc(null);
+            responseMessage = (TourRateResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         ProductRateResponseMessageData responseProductMessageData = (ProductRateResponseMessageData)responseMessage.getMessageDataDesc(ProductRateResponse.PRODUCT_RESPONSE_MESSAGE);
         
@@ -441,7 +442,7 @@ public class TourHeader extends Product
      * @param message Contains all the update data for this check
      * @param fldTrxID If null, just check the inventory, if not null, update the inventory using this BookingDetail trxID.
      */
-    public BaseMessage processAvailabilityRequestInMessage(BaseMessage messageIn, BaseMessage messageReply, BaseField fldTrxID)
+    public Message processAvailabilityRequestInMessage(Message messageIn, Message messageReply, Field fldTrxID)
     {
         return super.processAvailabilityRequestInMessage(messageIn, messageReply, fldTrxID);
     }
@@ -528,12 +529,12 @@ public class TourHeader extends Product
     /**
      * GetProductBookingResponse Method.
      */
-    public ProductBookingResponse getProductBookingResponse(String strRequestType, BaseMessage message, String strKey)
+    public ProductBookingResponse getProductBookingResponse(String strRequestType, Message message, String strKey)
     {
         if (RequestType.BOOKING_ADD.equalsIgnoreCase(strRequestType))
-            return new TourBookingResponse(message, strKey);
+            return new TourBookingResponse((BaseMessage)message, strKey);
         else if (RequestType.BOOKING_CHANGE.equalsIgnoreCase(strRequestType))
-            return new TourBookingChangeResponse(message, strKey);
+            return new TourBookingChangeResponse((BaseMessage)message, strKey);
         else
             return super.getProductBookingResponse(strRequestType, message, strKey);
     }

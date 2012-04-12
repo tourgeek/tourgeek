@@ -28,6 +28,7 @@ import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.tour.request.data.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  TourBookingRequest - .
@@ -101,9 +102,9 @@ public class TourBookingRequest extends ProductBookingRequest
     /**
      * IsOrderComponents Method.
      */
-    public boolean isOrderComponents(BookingDetail recBookingDetail)
+    public boolean isOrderComponents(BookingDetailModel recBookingDetail)
     {
-        MessageTransport recMessageTransport = (MessageTransport)((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_MESSAGE_TRANSPORT_ID)).getReference();
+        MessageTransport recMessageTransport = (MessageTransport)((ReferenceField)recBookingDetail.getField(BookingDetailModel.PRODUCT_MESSAGE_TRANSPORT_ID)).getReference();
         if (recMessageTransport != null)
             if (recMessageTransport.isDirectTransport())
                 return true;    // Special case - For direct tours, add the tour detail immediately
@@ -115,7 +116,7 @@ public class TourBookingRequest extends ProductBookingRequest
     public int initBookingApTrx(Rec record)
     {
         BookingDetail recBookingDetail = (BookingDetail)record; 
-        if (recBookingDetail.getField(BookingDetail.VENDOR_ID).isNull())
+        if (recBookingDetail.getField(BookingDetailModel.VENDOR_ID).isNull())
             return DBConstants.NORMAL_RETURN;   // Vendor not required for tour detail
         return super.initBookingApTrx(record);
     }

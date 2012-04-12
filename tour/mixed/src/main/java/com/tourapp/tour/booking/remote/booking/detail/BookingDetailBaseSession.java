@@ -67,7 +67,7 @@ public class BookingDetailBaseSession extends TableSession
         this.getMainRecord().addListener(new SubFileFilter(recBooking));
         
         BookingDetail recBookingDetail = (BookingDetail)this.getMainRecord();
-        Record recProduct = recBookingDetail.getProduct();
+        Record recProduct = (Record)recBookingDetail.getProduct();
         recBookingDetail.getField(BookingDetail.PRODUCT_ID).addListener(new ReadSecondaryHandler(recProduct));
         
         Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReferenceRecord(this);

@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.cruise.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.cruise.db.*;
 
 /**
  *  CruiseMessageData - .
@@ -89,7 +89,7 @@ public class CruiseMessageData extends ProductMessageData
      */
     public int putRawRecordData(Rec record)
     {
-        BookingDetail recBookingDetail = (BookingDetail)record;
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record;
         return super.putRawRecordData(record);
     }
     /**
@@ -97,36 +97,36 @@ public class CruiseMessageData extends ProductMessageData
      */
     public void putRawProperties(PropertyOwner propertyOwner)
     {
-        this.put(BookingDetail.CLASS_ID, propertyOwner.getProperty(BookingDetail.CLASS_ID));
-        this.put(BookingDetail.RATE_ID, propertyOwner.getProperty(BookingDetail.RATE_ID));
-        this.put(BookingDetail.DETAIL_DATE, propertyOwner.getProperty(BookingDetail.DETAIL_DATE));
+        this.put(BookingDetailModel.CLASS_ID, propertyOwner.getProperty(BookingDetailModel.CLASS_ID));
+        this.put(BookingDetailModel.RATE_ID, propertyOwner.getProperty(BookingDetailModel.RATE_ID));
+        this.put(BookingDetailModel.DETAIL_DATE, propertyOwner.getProperty(BookingDetailModel.DETAIL_DATE));
     }
     /**
      * Get/Create the product record.
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Cruise.CRUISE_FILE) != null)
-                    return (Cruise)recordOwner.getRecord(Cruise.CRUISE_FILE);
-        return new Cruise(recordOwner);
+                if (recordOwner.getRecord(CruiseModel.CRUISE_FILE) != null)
+                    return (CruiseModel)recordOwner.getRecord(CruiseModel.CRUISE_FILE);
+        return (CruiseModel)Record.makeRecordFromClassName(CruiseModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductClass Method.
      */
-    public BaseClass getProductClass(RecordOwner recordOwner)
+    public BaseClassModel getProductClass(RecordOwner recordOwner)
     {
-        return new CruiseClass(recordOwner);
+        return (CruiseClassModel)Record.makeRecordFromClassName(CruiseClassModel.THICK_CLASS, recordOwner);
     }
     /**
      * GetProductRate Method.
      */
-    public BaseRate getProductRate(RecordOwner recordOwner)
+    public BaseRateModel getProductRate(RecordOwner recordOwner)
     {
-        return new CruiseRate(recordOwner);
+        return (CruiseRateModel)Record.makeRecordFromClassName(CruiseRateModel.THICK_CLASS, recordOwner);
     }
 
 }

@@ -21,10 +21,10 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.response.data.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  ProductBookingResponse - .
@@ -59,7 +59,7 @@ public class ProductBookingResponse extends BaseProductResponse
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        ((ProductResponseMessageData)this.getMessageDataDesc(PRODUCT_RESPONSE_MESSAGE)).addMessageFieldDesc(BookingDetail.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
+        ((ProductResponseMessageData)this.getMessageDataDesc(PRODUCT_RESPONSE_MESSAGE)).addMessageFieldDesc(BookingDetailModel.REMOTE_BOOKING_NO, String.class, MessageFieldDesc.REQUIRED, MessageFieldDesc.NOT_UNIQUE | MessageFieldDesc.DONT_INIT, null);
     }
     /**
      * Get the key prefix for this type of message.

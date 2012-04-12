@@ -65,7 +65,7 @@ public class GetProductCostHandler extends GetProductStatusHandler
      */
     public int getDirectProductInfo(Product recProduct, BaseMessage message)
     {
-        BaseProductResponse response = (BaseProductResponse)recProduct.processCostRequestInMessage(message, null).getMessageDataDesc(null);
+        BaseProductResponse response = (BaseProductResponse)((BaseMessage)recProduct.processCostRequestInMessage(message, null)).getMessageDataDesc(null);
         
         int iPricingType = PricingType.COMPONENT_PRICING | PricingType.COMPONENT_COST_PRICING;
         double dMarkup = 0.00;

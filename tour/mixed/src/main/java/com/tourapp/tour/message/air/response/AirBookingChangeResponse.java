@@ -30,6 +30,7 @@ import com.tourapp.tour.message.base.response.*;
 import org.jbundle.model.message.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  AirBookingChangeResponse - .

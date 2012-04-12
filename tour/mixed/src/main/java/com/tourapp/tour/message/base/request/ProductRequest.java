@@ -21,25 +21,26 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.main.msg.db.*;
 import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.base.response.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  ProductRequest - Cost/Price request (out) message.
  */
 public class ProductRequest extends BaseProductMessageDesc
 {
-    public static final String PRODUCT_MESSAGE = "productMessage";
-    public static final String BOOKING_MESSAGE = "bookingMessage";
-    public static final String PASSENGER_MESSAGE = "passengerMessage";
-    public static final String PASSENGER_DETAIL = "paxDetail";
+    public static final String PRODUCT_MESSAGE = ProductMessageData.PRODUCT_MESSAGE;
+    public static final String BOOKING_MESSAGE = BookingMessageData.BOOKING_MESSAGE;
+    public static final String PASSENGER_MESSAGE = PassengerMessageData.PASSENGER_MESSAGE;
+    public static final String PASSENGER_DETAIL = PassengerDetailMessageData.PASSENGER_DETAIL;
     /**
      * Default constructor.
      */
@@ -84,17 +85,17 @@ public class ProductRequest extends BaseProductMessageDesc
      */
     public int initBookingApTrx(Rec record)
     {
-        BookingDetail recBookingDetail = (BookingDetail)record; 
-        if (!recBookingDetail.getField(BookingDetail.AP_TRX_ID).isNull())
+        Record recBookingDetail = (Record)record; 
+        if (!recBookingDetail.getField(BookingDetailModel.AP_TRX_ID).isNull())
         {
             int iOldOrder = recBookingDetail.getDefaultOrder();
             FileListener listener = null;
             Object bookmark = null;
             try {
                 bookmark = recBookingDetail.getHandle(DBConstants.BOOKMARK_HANDLE);
-                ApTrx recApTrx = (ApTrx)((ReferenceField)recBookingDetail.getField(BookingDetail.AP_TRX_ID)).getReference();
+                ApTrx recApTrx = (ApTrx)((ReferenceField)recBookingDetail.getField(BookingDetailModel.AP_TRX_ID)).getReference();
                 Vendor recVendor = (Vendor)((ReferenceField)recApTrx.getField(ApTrx.VENDOR_ID)).getReference();
-                Tour recTour = (Tour)((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference();
+                Record recTour = (Record)((ReferenceField)recApTrx.getField(ApTrx.TOUR_ID)).getReference();
                 if (recBookingDetail.getEditMode() == DBConstants.EDIT_IN_PROGRESS)
                     recBookingDetail.set();
         
@@ -103,13 +104,13 @@ public class ProductRequest extends BaseProductMessageDesc
                 {
                     if ((OperationTypeField.LIKE_TOGETHER_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString()))
                         || (OperationTypeField.INDIVIDUALLY_CODE.equalsIgnoreCase(recVendor.getField(Vendor.OPERATION_TYPE_CODE).toString())))
-                            iProductTypeID = (int)recBookingDetail.getField(BookingDetail.PRODUCT_TYPE_ID).getValue();
+                            iProductTypeID = (int)recBookingDetail.getField(BookingDetailModel.PRODUCT_TYPE_ID).getValue();
                 }
                 // Ouch - This is very expensive, but realistically booking orders are not very frequent
-                recBookingDetail = new BookingDetail(recBookingDetail.getRecordOwner());
+                recBookingDetail = Record.makeRecordFromClassName(BookingDetailModel.THICK_CLASS, recBookingDetail.getRecordOwner());
         
-                recBookingDetail.setKeyArea(BookingDetail.TOUR_ID_KEY);
-                recBookingDetail.addListener(listener = new SubFileFilter(recTour.getField(Tour.ID), BookingDetail.TOUR_ID, recVendor.getField(Vendor.ID), BookingDetail.VENDOR_ID, null, null));
+                recBookingDetail.setKeyArea(BookingDetailModel.TOUR_ID_KEY);
+                recBookingDetail.addListener(listener = new SubFileFilter(recTour.getField(TourModel.ID), BookingDetailModel.TOUR_ID, recVendor.getField(Vendor.ID), BookingDetailModel.VENDOR_ID, null, null));
                 BaseTable tblBookingDetail = recBookingDetail.getTable();
                 tblBookingDetail.close();
         
@@ -117,7 +118,7 @@ public class ProductRequest extends BaseProductMessageDesc
                 {   // Spin until I get to the right product type.
                     if (iProductTypeID == 0)
                         break;
-                    if (iProductTypeID == tblBookingDetail.getCurrentTable().getRecord().getField(BookingDetail.PRODUCT_TYPE_ID).getValue())
+                    if (iProductTypeID == tblBookingDetail.getCurrentTable().getRecord().getField(BookingDetailModel.PRODUCT_TYPE_ID).getValue())
                         break;
                 }
         
@@ -140,8 +141,8 @@ public class ProductRequest extends BaseProductMessageDesc
             
             return DBConstants.NORMAL_RETURN; // Good already linked to an ApTrx
         }
-        ApTrx recApTrx = (ApTrx)((ReferenceField)recBookingDetail.getField(BookingDetail.AP_TRX_ID)).getReferenceRecord();
-        return recApTrx.linkBookingDetailToApTrx((BookingDetail)record);
+        ApTrx recApTrx = (ApTrx)((ReferenceField)recBookingDetail.getField(BookingDetailModel.AP_TRX_ID)).getReferenceRecord();
+        return recApTrx.linkBookingDetailToApTrx((BookingDetailModel)record);
     }
     /**
      * Reduce the internal inventory before sending the booking request.
@@ -150,19 +151,19 @@ public class ProductRequest extends BaseProductMessageDesc
      */
     public int initBookingInventory(Rec record)
     {
-        BookingDetail recBookingDetail = (BookingDetail)record; 
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record; 
         int iErrorCode = DBConstants.NORMAL_RETURN;
-        Product product = recBookingDetail.getProduct();
+        ProductModel product = recBookingDetail.getProduct();
         // This next line UPDATES the inventory and returns a (unusable) response message with an error code.
-        if (!(((MessageTransport)((ReferenceField)recBookingDetail.getField(BookingDetail.INVENTORY_MESSAGE_TRANSPORT_ID)).getReference()).isDirectTransport()))
+        if (!(((MessageTransport)((ReferenceField)recBookingDetail.getField(BookingDetailModel.INVENTORY_MESSAGE_TRANSPORT_ID)).getReference()).isDirectTransport()))
             return DBConstants.NORMAL_RETURN; // No need to check inventory if this is not taking from the direct inventory
-        BaseProductResponse response = (BaseProductResponse)product.processAvailabilityRequestInMessage((BaseMessage)this.getMessage(), null, (BaseField)record.getCounterField()).getMessageDataDesc(null);
+        BaseProductResponse response = (BaseProductResponse)((BaseMessage)product.processAvailabilityRequestInMessage(this.getMessage(), null, (BaseField)record.getCounterField())).getMessageDataDesc(null);
         if (response.getMessageDataStatus() != BaseDataStatus.VALID)
         {
             iErrorCode = DBConstants.ERROR_RETURN;
-            if (recBookingDetail.getRecordOwner() != null)
-                if (recBookingDetail.getRecordOwner().getTask() != null)
-                    iErrorCode = recBookingDetail.getRecordOwner().getTask().setLastError((response.getMessageDataError()));
+            if (((Record)recBookingDetail).getRecordOwner() != null)
+                if (((Record)recBookingDetail).getRecordOwner().getTask() != null)
+                    iErrorCode = ((Record)recBookingDetail).getRecordOwner().getTask().setLastError((response.getMessageDataError()));
         }
         return iErrorCode;
     }
@@ -171,23 +172,23 @@ public class ProductRequest extends BaseProductMessageDesc
      */
     public int checkBookingRequestParams(Rec record)
     {
-        BookingDetail recBookingDetail = (BookingDetail)record; 
+        BookingDetailModel recBookingDetail = (BookingDetailModel)record; 
         int iStatus = BaseDataStatus.DATA_VALID;
         if (this.isOrderComponents(recBookingDetail) == false)
         {
             iStatus = BaseDataStatus.PROPOSAL;        // The information must be valid to lookup the price
             String strError = "The Order components event must occur";
-            strError = this.getString(recBookingDetail, ResourceConstants.BOOKING_RESOURCE, strError);
+            strError = this.getString((Record)recBookingDetail, ResourceConstants.BOOKING_RESOURCE, strError);
             recBookingDetail.setErrorMessage(this, strError);
         }
         else
         {
             String strError = null;
-            if (recBookingDetail.getField(BookingDetail.INVENTORY_STATUS_ID).getValue() != BaseDataStatus.OKAY)
+            if (recBookingDetail.getField(BookingDetailModel.INVENTORY_STATUS_ID).getValue() != BaseDataStatus.OKAY)
                 strError = "Inventory Status must be okay";
-            if (recBookingDetail.getField(BookingDetail.COST_STATUS_ID).getValue() != BaseDataStatus.OKAY)
+            if (recBookingDetail.getField(BookingDetailModel.COST_STATUS_ID).getValue() != BaseDataStatus.OKAY)
                 strError = "Cost Status must be okay";
-            if (recBookingDetail.getField(BookingDetail.INFO_STATUS_ID).getValue() != BaseDataStatus.OKAY)
+            if (recBookingDetail.getField(BookingDetailModel.INFO_STATUS_ID).getValue() != BaseDataStatus.OKAY)
                 strError = "Info Status must be okay";
             if (strError == null)
             {
@@ -197,28 +198,28 @@ public class ProductRequest extends BaseProductMessageDesc
                 // The booking update can be called before the inventory update is done (since the inventory status is hasn't been changed from okay)
                 if (iStatus == BaseDataStatus.DATA_VALID)
                 {
-                    String strOldKey = recBookingDetail.getField(BookingDetail.INVENTORY_REQUEST_KEY).toString();
-                    boolean bOldIsModified = recBookingDetail.getField(BookingDetail.INVENTORY_REQUEST_KEY).isModified();
-                    BaseProductMessageDesc message = recBookingDetail.checkMessageRequired(BookingDetail.INVENTORY_STATUS_ID);
+                    String strOldKey = recBookingDetail.getField(BookingDetailModel.INVENTORY_REQUEST_KEY).toString();
+                    boolean bOldIsModified = recBookingDetail.getField(BookingDetailModel.INVENTORY_REQUEST_KEY).isModified();
+                    BaseProductMessageDesc message = (BaseProductMessageDesc)recBookingDetail.checkMessageRequired(BookingDetailModel.INVENTORY_STATUS_ID);
                     if (message != null)
-                        if (recBookingDetail.getField(BookingDetail.INVENTORY_REQUEST_KEY).isModified())
-                            if (!recBookingDetail.getField(BookingDetail.INVENTORY_REQUEST_KEY).toString().equals(strOldKey))
+                        if (recBookingDetail.getField(BookingDetailModel.INVENTORY_REQUEST_KEY).isModified())
+                            if (!recBookingDetail.getField(BookingDetailModel.INVENTORY_REQUEST_KEY).toString().equals(strOldKey))
                     {
-                        recBookingDetail.getField(BookingDetail.INVENTORY_REQUEST_KEY).setString(strOldKey);
-                        recBookingDetail.getField(BookingDetail.INVENTORY_REQUEST_KEY).setModified(bOldIsModified);                    
+                        recBookingDetail.getField(BookingDetailModel.INVENTORY_REQUEST_KEY).setString(strOldKey);
+                        recBookingDetail.getField(BookingDetailModel.INVENTORY_REQUEST_KEY).setModified(bOldIsModified);                    
                         strError = "Waiting for Inventory Status";
                     }
                     else
                     {
-                        strOldKey = recBookingDetail.getField(BookingDetail.COST_REQUEST_KEY).toString();
-                        bOldIsModified = recBookingDetail.getField(BookingDetail.COST_REQUEST_KEY).isModified();
-                        message = recBookingDetail.checkMessageRequired(BookingDetail.COST_STATUS_ID);
+                        strOldKey = recBookingDetail.getField(BookingDetailModel.COST_REQUEST_KEY).toString();
+                        bOldIsModified = recBookingDetail.getField(BookingDetailModel.COST_REQUEST_KEY).isModified();
+                        message = (BaseProductMessageDesc)recBookingDetail.checkMessageRequired(BookingDetailModel.COST_STATUS_ID);
                         if (message != null)
-                            if (recBookingDetail.getField(BookingDetail.COST_REQUEST_KEY).isModified())
-                                if (!recBookingDetail.getField(BookingDetail.COST_REQUEST_KEY).toString().equals(strOldKey))
+                            if (recBookingDetail.getField(BookingDetailModel.COST_REQUEST_KEY).isModified())
+                                if (!recBookingDetail.getField(BookingDetailModel.COST_REQUEST_KEY).toString().equals(strOldKey))
                         {
-                            recBookingDetail.getField(BookingDetail.COST_REQUEST_KEY).setString(strOldKey);
-                            recBookingDetail.getField(BookingDetail.COST_REQUEST_KEY).setModified(bOldIsModified);                    
+                            recBookingDetail.getField(BookingDetailModel.COST_REQUEST_KEY).setString(strOldKey);
+                            recBookingDetail.getField(BookingDetailModel.COST_REQUEST_KEY).setModified(bOldIsModified);                    
                             strError = "Waiting for Cost Status";
                         }                        
                     }
@@ -227,7 +228,7 @@ public class ProductRequest extends BaseProductMessageDesc
             if (strError != null)
             {
                 iStatus = BaseDataStatus.DATA_REQUIRED;        // The information must be valid to lookup the price
-                strError = this.getString(recBookingDetail, ResourceConstants.BOOKING_RESOURCE, strError);
+                strError = this.getString((Record)recBookingDetail, ResourceConstants.BOOKING_RESOURCE, strError);
                 recBookingDetail.setErrorMessage(this, strError);
             }
         }
@@ -236,10 +237,10 @@ public class ProductRequest extends BaseProductMessageDesc
     /**
      * IsOrderComponents Method.
      */
-    public boolean isOrderComponents(BookingDetail recBookingDetail)
+    public boolean isOrderComponents(BookingDetailModel recBookingDetail)
     {
-        Record recTour = ((ReferenceField)recBookingDetail.getField(BookingDetail.TOUR_ID)).getReference();
-        return recTour.getField(Tour.ORDER_COMPONENTS).getState();
+        Record recTour = ((ReferenceField)recBookingDetail.getField(BookingDetailModel.TOUR_ID)).getReference();
+        return recTour.getField(TourModel.ORDER_COMPONENTS).getState();
     }
     /**
      * GetRequestType Method.

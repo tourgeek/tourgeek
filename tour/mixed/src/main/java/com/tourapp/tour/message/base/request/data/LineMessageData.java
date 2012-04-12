@@ -21,9 +21,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  LineMessageData - .
@@ -61,14 +61,14 @@ public class LineMessageData extends MessageRecordDesc
     {
         int iErrorCode = super.getRawRecordData(record);
         Record recBookingLine = (Record)record;
-        this.getRawFieldData(recBookingLine.getField(BookingLine.DESCRIPTION));
-        this.getRawFieldData(recBookingLine.getField(BookingLine.PRICE));
-        this.getRawFieldData(recBookingLine.getField(BookingLine.QUANTITY));
-        this.getRawFieldData(recBookingLine.getField(BookingLine.GROSS));
-        this.getRawFieldData(recBookingLine.getField(BookingLine.COMMISSION));
-        this.getRawFieldData(recBookingLine.getField(BookingLine.NET));
-        if (this.get(BookingLine.SOURCE_REFERENCE_NO) != null)
-            recBookingLine.getField(BookingLine.REMOTE_REFERENCE_NO).setString(this.get(BookingLine.SOURCE_REFERENCE_NO).toString());
+        this.getRawFieldData(recBookingLine.getField(BookingLineModel.DESCRIPTION));
+        this.getRawFieldData(recBookingLine.getField(BookingLineModel.PRICE));
+        this.getRawFieldData(recBookingLine.getField(BookingLineModel.QUANTITY));
+        this.getRawFieldData(recBookingLine.getField(BookingLineModel.GROSS));
+        this.getRawFieldData(recBookingLine.getField(BookingLineModel.COMMISSION));
+        this.getRawFieldData(recBookingLine.getField(BookingLineModel.NET));
+        if (this.get(BookingLineModel.SOURCE_REFERENCE_NO) != null)
+            recBookingLine.getField(BookingLineModel.REMOTE_REFERENCE_NO).setString(this.get(BookingLineModel.SOURCE_REFERENCE_NO).toString());
         return iErrorCode;
     }
     /**
@@ -80,13 +80,13 @@ public class LineMessageData extends MessageRecordDesc
     {
         int iErrorCode = super.putRawRecordData(record); // Create new node
         Record recBookingLine = (Record)record;
-        this.putRawFieldData(recBookingLine.getField(BookingLine.DESCRIPTION));
-        this.putRawFieldData(recBookingLine.getField(BookingLine.PRICE));
-        this.putRawFieldData(recBookingLine.getField(BookingLine.QUANTITY));
-        this.putRawFieldData(recBookingLine.getField(BookingLine.GROSS));
-        this.putRawFieldData(recBookingLine.getField(BookingLine.COMMISSION));
-        this.putRawFieldData(recBookingLine.getField(BookingLine.NET));
-        this.put(BookingLine.SOURCE_REFERENCE_NO, recBookingLine.getField(BookingLine.ID).toString());  // Reference for remote system
+        this.putRawFieldData(recBookingLine.getField(BookingLineModel.DESCRIPTION));
+        this.putRawFieldData(recBookingLine.getField(BookingLineModel.PRICE));
+        this.putRawFieldData(recBookingLine.getField(BookingLineModel.QUANTITY));
+        this.putRawFieldData(recBookingLine.getField(BookingLineModel.GROSS));
+        this.putRawFieldData(recBookingLine.getField(BookingLineModel.COMMISSION));
+        this.putRawFieldData(recBookingLine.getField(BookingLineModel.NET));
+        this.put(BookingLineModel.SOURCE_REFERENCE_NO, recBookingLine.getField(BookingLineModel.ID).toString());  // Reference for remote system
         return iErrorCode;
     }
     /**
@@ -103,8 +103,8 @@ public class LineMessageData extends MessageRecordDesc
      */
     public Rec createSubDataRecord(Rec record)
     {
-        Booking recBooking = (Booking)((BookingDetail)record).getBooking(true);
-        BookingLine recBookingLine = new BookingLine(recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
+        Record recBooking = (Record)((BookingDetailModel)record).getBooking(true);
+        Record recBookingLine = Record.makeRecordFromClassName(BookingLineModel.THICK_CLASS, recBooking.findRecordOwner());  // Note I'm safe using this recordowner, since I'll be freeing this in a second.
         recBookingLine.addListener(new SubFileFilter(recBooking));
         return recBookingLine;
     }
@@ -116,11 +116,11 @@ public class LineMessageData extends MessageRecordDesc
     public Rec readCurrentRecord(Rec record)
     {
         try {
-            BookingLine recBookingLine = (BookingLine)record;
-            if (this.get(BookingLine.REMOTE_REFERENCE_NO) != null)
+            Record recBookingLine = (Record)record;
+            if (this.get(BookingLineModel.REMOTE_REFERENCE_NO) != null)
             {   // A remote reference is the ID of this item (I am remote)
-                recBookingLine.getField(BookingLine.ID).setString(this.get(BookingLine.REMOTE_REFERENCE_NO).toString());
-                recBookingLine.setKeyArea(BookingLine.ID_KEY);
+                recBookingLine.getField(BookingLineModel.ID).setString(this.get(BookingLineModel.REMOTE_REFERENCE_NO).toString());
+                recBookingLine.setKeyArea(BookingLineModel.ID_KEY);
                 if (recBookingLine.seek(null))
                 { // Good
                     recBookingLine.edit();
@@ -133,7 +133,7 @@ public class LineMessageData extends MessageRecordDesc
                     return null;
                 }
             }
-            else if (this.get(BookingLine.SOURCE_REFERENCE_NO) != null)
+            else if (this.get(BookingLineModel.SOURCE_REFERENCE_NO) != null)
             {   // A Source reference is the reference of the remote pax.
                 recBookingLine.close();
                 if (!ADD_RECORD.equalsIgnoreCase((String)this.get(MESSAGE_RECORD_TYPE)))
@@ -141,7 +141,7 @@ public class LineMessageData extends MessageRecordDesc
                     while (recBookingLine.hasNext())
                     {
                         recBookingLine.next();
-                        if (this.get(BookingLine.SOURCE_REFERENCE_NO).equals(recBookingLine.getField(BookingLine.REMOTE_REFERENCE_NO).toString()))
+                        if (this.get(BookingLineModel.SOURCE_REFERENCE_NO).equals(recBookingLine.getField(BookingLineModel.REMOTE_REFERENCE_NO).toString()))
                         {
                             recBookingLine.edit();
                             break;

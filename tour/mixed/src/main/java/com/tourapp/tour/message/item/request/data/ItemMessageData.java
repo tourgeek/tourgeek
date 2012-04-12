@@ -22,12 +22,12 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.item.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.booking.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.product.item.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.db.*;
 
 /**
  *  ItemMessageData - .
@@ -62,10 +62,10 @@ public class ItemMessageData extends ProductMessageData
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.removeMessageDataDesc(BookingDetail.RATE_ID);
-        this.removeMessageDataDesc(BookingDetail.CLASS_ID);
-        this.addMessageFieldDesc(BookingDetail.RATE_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
-        this.addMessageFieldDesc(BookingDetail.CLASS_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.removeMessageDataDesc(BookingDetailModel.RATE_ID);
+        this.removeMessageDataDesc(BookingDetailModel.CLASS_ID);
+        this.addMessageFieldDesc(BookingDetailModel.RATE_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
+        this.addMessageFieldDesc(BookingDetailModel.CLASS_ID, Integer.class, MessageFieldDesc.OPTIONAL, null);
     }
     /**
      * Check to make sure all the data is present to attempt a cost lookup.
@@ -92,9 +92,9 @@ public class ItemMessageData extends ProductMessageData
      */
     public void putRawProperties(PropertyOwner propertyOwner)
     {
-        //xthis.put(Product.RATE_TYPE_ID_PARAM, propertyOwner.getProperty(Product.RATE_TYPE_ID_PARAM));
-        //xthis.put(Product.RATE_CLASS_ID_PARAM, propertyOwner.getProperty(Product.RATE_CLASS_ID_PARAM));
-        this.put(BookingDetail.DETAIL_DATE, propertyOwner.getProperty(BookingDetail.DETAIL_DATE));
+        //xthis.put(ProductModel.RATE_TYPE_ID_PARAM, propertyOwner.getProperty(ProductModel.RATE_TYPE_ID_PARAM));
+        //xthis.put(ProductModel.RATE_CLASS_ID_PARAM, propertyOwner.getProperty(ProductModel.RATE_CLASS_ID_PARAM));
+        this.put(BookingDetailModel.DETAIL_DATE, propertyOwner.getProperty(BookingDetailModel.DETAIL_DATE));
     }
     /**
      * Move the fields of this record to this message
@@ -103,13 +103,13 @@ public class ItemMessageData extends ProductMessageData
     public int putRawRecordData(Rec record)
     {
         int iErrorCode = super.putRawRecordData(record);
-        BookingItem recBookingItem = (BookingItem)record;
-        Record recBooking = ((ReferenceField)recBookingItem.getField(BookingDetail.BOOKING_ID)).getReference();
+        BookingItemModel recBookingItem = (BookingItemModel)record;
+        Record recBooking = ((ReferenceField)recBookingItem.getField(BookingDetailModel.BOOKING_ID)).getReference();
         if (recBooking != null)
         { // Since there is no product date, use the departure date
-            Record recTour = ((ReferenceField)recBooking.getField(Booking.TOUR_ID)).getReference();
+            Record recTour = ((ReferenceField)recBooking.getField(BookingModel.TOUR_ID)).getReference();
             if (recTour != null)
-                this.putRawFieldData(recTour.getField(Tour.DEPARTURE_DATE));
+                this.putRawFieldData(recTour.getField(TourModel.DEPARTURE_DATE));
         }
         return iErrorCode;
     }
@@ -118,13 +118,13 @@ public class ItemMessageData extends ProductMessageData
      * @param bFindFirst If true, try to lookup the record first.
      * @return The product record.
      */
-    public Product getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
+    public ProductModel getProductRecord(RecordOwner recordOwner, boolean bFindFirst)
     {
         if (bFindFirst)
             if (recordOwner != null)
-                if (recordOwner.getRecord(Item.ITEM_FILE) != null)
-                    return (Item)recordOwner.getRecord(Item.ITEM_FILE);
-        return new Item(recordOwner);
+                if (recordOwner.getRecord(ItemModel.ITEM_FILE) != null)
+                    return (ItemModel)recordOwner.getRecord(ItemModel.ITEM_FILE);
+        return (ItemModel)Record.makeRecordFromClassName(ItemModel.THICK_CLASS, recordOwner);
     }
 
 }

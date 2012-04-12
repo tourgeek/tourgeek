@@ -86,7 +86,7 @@ public class ProductBookingRequestMessageInProcessor extends BaseMessageInProces
                 {   // Error, product not found
                     // pend(don)
                 }
-                messageReply = recProduct.processBookingRequestInMessage(internalMessage, messageReply);
+                messageReply = (BaseMessage)recProduct.processBookingRequestInMessage(internalMessage, messageReply);
             }
         }
         return messageReply;

@@ -24,8 +24,8 @@ import com.tourapp.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.data.*;
 import com.tourapp.tour.message.car.request.data.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  CarInformationRequest - .
@@ -68,8 +68,8 @@ public class CarInformationRequest extends ProductInformationRequest
     {
         super.setupMessageDataDesc();
         ProductMessageData productMessageData = (ProductMessageData)this.getMessageDataDesc(PRODUCT_MESSAGE);
-        // productMessageData.removeMessageDataDesc(BookingCar.DAYS);    // Yes - Days is required for the END DATE Not required for information
-        productMessageData.removeMessageDataDesc(BookingCar.QUANTITY);
+        // productMessageData.removeMessageDataDesc(BookingCarModel.DAYS);    // Yes - Days is required for the END DATE Not required for information
+        productMessageData.removeMessageDataDesc(BookingCarModel.QUANTITY);
     }
 
 }

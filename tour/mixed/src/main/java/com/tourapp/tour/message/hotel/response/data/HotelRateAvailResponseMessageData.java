@@ -21,12 +21,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.detail.db.*;
 import org.jbundle.model.message.*;
 import com.tourapp.tour.message.hotel.response.*;
 import org.jbundle.main.db.base.*;
+import com.tourapp.model.tour.product.hotel.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
 
 /**
  *  HotelRateAvailResponseMessageData - .
@@ -61,7 +61,7 @@ public class HotelRateAvailResponseMessageData extends HotelRateResponseMessageD
     public void setupMessageDataDesc()
     {
         super.setupMessageDataDesc();
-        this.addMessageFieldDesc(Product.AVAILABILITY_PARAM, Integer.class, MessageFieldDesc.REQUIRED, null);
+        this.addMessageFieldDesc(ProductModel.AVAILABILITY_PARAM, Integer.class, MessageFieldDesc.REQUIRED, null);
     }
     /**
      * Move the map values to the correct record fields.
@@ -70,13 +70,13 @@ public class HotelRateAvailResponseMessageData extends HotelRateResponseMessageD
     public int getRawRecordData(Rec record)
     {
         int iInfoStatus = super.getRawRecordData(record);
-        BookingHotel recBookingHotel = (BookingHotel)record;
+        BookingHotelModel recBookingHotel = (BookingHotelModel)record;
         
         if (iInfoStatus == BaseStatus.VALID)
         {
             HotelAvailabilityResponse response = new HotelAvailabilityResponse(this.getMessage(), null);
             iInfoStatus = response.getRawRecordData(record);        
-            String iFieldSeq = BookingDetail.INVENTORY_STATUS_ID;
+            String iFieldSeq = BookingDetailModel.INVENTORY_STATUS_ID;
             recBookingHotel.getField(iFieldSeq).setValue(iInfoStatus);   // Usually VALID
         }
         

@@ -96,9 +96,9 @@ public class LandRate extends BaseRate
         //  field.setHidden(true);
         //}
         //if (iFieldSeq == 3)
-        //  field = new StringField(this, DESCRIPTION, 20, null, null);
-        //if (iFieldSeq == 4)
         //  field = new StringField(this, CODE, 2, null, null);
+        //if (iFieldSeq == 4)
+        //  field = new StringField(this, DESCRIPTION, 20, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;

@@ -47,6 +47,8 @@ import java.text.*;
 import org.jbundle.thin.base.db.buff.*;
 import com.tourapp.model.tour.booking.db.*;
 import org.jbundle.model.message.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.*;
 import com.tourapp.tour.base.field.*;
 import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.product.tour.db.*;
@@ -886,7 +888,7 @@ public class BookingDetail extends BookingSub
     /**
      * Get the product for this detail.
      */
-    public Product getProduct()
+    public ProductModel getProduct()
     {
         ((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord(this.getRecordOwner());    // Reference same recordowner
         return (Product)((ReferenceField)this.getField(BookingDetail.PRODUCT_ID)).getReference();
@@ -942,7 +944,7 @@ public class BookingDetail extends BookingSub
             }
         }
         
-        Product recProduct = this.getProduct();
+        ProductModel recProduct = this.getProduct();
         if (!bSetTime)
             if ((recProduct != null) && (!recProduct.getField(Product.ETD).isNull()))
         {
@@ -1015,7 +1017,7 @@ public class BookingDetail extends BookingSub
     public Date setupEndDate()
     {
         long lLengthTime = 0;
-        Product recProduct = this.getProduct();
+        ProductModel recProduct = this.getProduct();
         if (recProduct != null)
             lLengthTime = recProduct.getLengthTime();
         Date dateStart = this.getStartDate();
@@ -1029,7 +1031,7 @@ public class BookingDetail extends BookingSub
      */
     public void setupGMTDates()
     {
-        Product recProduct = this.getProduct();
+        ProductModel recProduct = this.getProduct();
         if ((recProduct != null) &&
             ((recProduct.getEditMode() == DBConstants.EDIT_IN_PROGRESS) || (recProduct.getEditMode() == DBConstants.EDIT_CURRENT)))
         {
@@ -1084,7 +1086,7 @@ public class BookingDetail extends BookingSub
      */
     public String setupProductDesc()
     {
-        Product recProduct = this.getProduct();
+        ProductModel recProduct = this.getProduct();
         if (recProduct == null)
             return this.getField(BookingDetail.DESCRIPTION).toString();
         return recProduct.getField(Product.DESCRIPTION).toString();
@@ -1152,10 +1154,10 @@ public class BookingDetail extends BookingSub
      * When a new record is set up and you have the booking and tour
      * records, init the detail fields.
      */
-    public int initBookingDetailFields(Booking recBooking, Tour recTour, boolean bOnlyIfTargetIsNull)
+    public int initBookingDetailFields(BookingModel recBooking, TourModel recTour, boolean bOnlyIfTargetIsNull)
     {
         int iErrorCode = super.initBookingDetailFields(recBooking, recTour, bOnlyIfTargetIsNull);
-        this.getField(BookingDetail.TOUR_ID).moveFieldToThis(recTour.getField(Tour.ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+        this.getField(BookingDetail.TOUR_ID).moveFieldToThis((BaseField)recTour.getField(Tour.ID), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
         return iErrorCode;
     }
     /**
@@ -1164,7 +1166,7 @@ public class BookingDetail extends BookingSub
      * Else, if the target values are not already set, use the default values
      * supplied in the tour and booking records.
      */
-    public int setDetailProductInfo(Map<String,Object> properties, TourSub recTourHeaderDetail, Booking recBooking, Tour recTour, BaseField fldPaxID, BaseField fldQaID, BaseField fldModID)
+    public int setDetailProductInfo(Map<String,Object> properties, TourSubModel recTourHeaderDetail, BookingModel recBooking, TourModel recTour, Field fldPaxID, Field fldQaID, Field fldModID)
     {
         if (((recTourHeaderDetail == null)
             && (this.getField(BookingDetail.PRODUCT_ID).getLength() == 0))
@@ -1236,7 +1238,7 @@ public class BookingDetail extends BookingSub
         int iErrorCode = super.setDetailProductFields(recTourHeaderDetail, recBooking, recTour, fldPaxID, fldQaID, fldModID);
         if (recTourHeaderDetail != null)
             this.getField(BookingDetail.PRODUCT_ID).moveFieldToThis(recTourHeaderDetail.getField(TourHeaderDetail.PRODUCT_ID));
-        Product recProduct = this.getProduct();
+        ProductModel recProduct = this.getProduct();
         if (recProduct != null)
             if ((recProduct.getEditMode() == DBConstants.EDIT_NONE) || (recProduct.getEditMode() == DBConstants.EDIT_ADD))
                 recProduct = null;
@@ -1274,13 +1276,13 @@ public class BookingDetail extends BookingSub
      * @param recProduct the souce product record.
      * @return An error code.
      */
-    public int moveProductFields(Product recProduct)
+    public int moveProductFields(ProductModel recProduct)
     {
         if (this.getField(BookingDetail.ACK_DAYS).isNull())
-            this.moveTargetField(recProduct, BookingDetail.ACK_DAYS, Product.ACK_DAYS);
+            this.moveTargetField((Record)recProduct, BookingDetail.ACK_DAYS, Product.ACK_DAYS);
         
         this.getField(BookingDetail.VENDOR_ID).setModified(false);  // This will be auto-restored in calling (setDetailProductFields) method.
-        this.getField(BookingDetail.VENDOR_ID).moveFieldToThis(recProduct.getField(Product.VENDOR_ID));
+        this.getField(BookingDetail.VENDOR_ID).moveFieldToThis((BaseField)recProduct.getField(Product.VENDOR_ID));
         if (this.getField(BookingDetail.VENDOR_ID).isModified())
         {
             Record recVendor = ((ReferenceField)recProduct.getField(Product.VENDOR_ID)).getReference();
@@ -1330,7 +1332,7 @@ public class BookingDetail extends BookingSub
      * @param iTargetField The source field.
      * @return true If the field was changed.
      */
-    public boolean moveTargetField(Record recTarget, String iDetailField, String iTargetField)
+    public boolean moveTargetField(Rec recTarget, String iDetailField, String iTargetField)
     {
         if (!this.getField(iDetailField).isModified()) if (!recTarget.getField(iTargetField).isNull())
         {
@@ -1338,7 +1340,7 @@ public class BookingDetail extends BookingSub
             boolean bOldState = false;
             if (listener != null)
                 bOldState = listener.setEnabledListener(false);
-            this.getField(iDetailField).moveFieldToThis(recTarget.getField(iTargetField), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
+            this.getField(iDetailField).moveFieldToThis((BaseField)recTarget.getField(iTargetField), DBConstants.DISPLAY, DBConstants.INIT_MOVE);
             if (listener != null)
                 listener.setEnabledListener(bOldState);
             return true;
@@ -1457,7 +1459,7 @@ public class BookingDetail extends BookingSub
             int iDefaultInfoTransport = ((ReferenceField)this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID)).getIDFromCode(MessageTransport.DEFAULT);
             this.getField(BookingDetail.INFO_MESSAGE_TRANSPORT_ID).setValue(iDefaultInfoTransport);
         }
-        BaseProductMessageDesc message = this.checkMessageRequired(iStatusType);
+        BaseProductMessageDesc message = (BaseProductMessageDesc)this.checkMessageRequired(iStatusType);
         if (message == null)
             return;
         int iStatus = (int)this.getField(iStatusType).getValue();
@@ -1525,11 +1527,11 @@ public class BookingDetail extends BookingSub
      * If no update is required, return a null message.
      * @return The message to process (or null if no message).
      */
-    public BaseProductMessageDesc checkMessageRequired(String iStatusType)
+    public MessageDataParent checkMessageRequired(String iStatusType)
     {
         if (this.getEditMode() == DBConstants.EDIT_NONE)
             return null;
-        Product recProduct = this.getProduct();
+        ProductModel recProduct = this.getProduct();
         if (recProduct == null)
             return null;   // Never
         String strMessageInfoType = MessageInfoType.REQUEST;
@@ -1542,7 +1544,7 @@ public class BookingDetail extends BookingSub
         String strMessageTransport = this.getMessageTransport(iStatusType);
         if (MessageTransport.MANUAL.equals(strMessageTransport))
             return null;    // No need to send a message if manual
-        TrxMessageHeader trxMessageHeader = recProduct.createProcessMessage(strMessageInfoType, strContactType, strRequestType, strMessageProcessType, strProcessType, strMessageTransport);
+        TrxMessageHeader trxMessageHeader = ((Product)recProduct).createProcessMessage(strMessageInfoType, strContactType, strRequestType, strMessageProcessType, strProcessType, strMessageTransport);
         if (trxMessageHeader == null)
             return null;
         String strPrefix = this.getFieldParam(this.getField(iStatusType)) + '.' + BookingDetail.MESSAGE_PARAM + '.' + BaseMessage.HEADER_TAG + '.';
@@ -1598,9 +1600,9 @@ public class BookingDetail extends BookingSub
     /**
      * Set the error message in this record for this message type.
      */
-    public void setErrorMessage(BaseProductMessageDesc messageData, String strError)
+    public void setErrorMessage(MessageDataParent messageData, String strError)
     {
-        ((PropertiesField)this.getField(BookingDetail.ERROR_PROPERTIES)).setProperty(messageData.getMessageTypeParam() + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM, strError, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
+        ((PropertiesField)this.getField(BookingDetail.ERROR_PROPERTIES)).setProperty(((BaseProductMessageDesc)messageData).getMessageTypeParam() + '.' + BookingDetail.MESSAGE_PARAM + '.' + BookingDetail.ERROR_PARAM, strError, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE);
     }
     /**
      * Set the error message in this record for this status type.
@@ -1762,9 +1764,9 @@ public class BookingDetail extends BookingSub
             String strProductKey = this.getPricingDetailKey();
             if (!strProductKey.equals(this.getField(BookingDetail.PRICING_DETAIL_KEY).toString()))
             {
-                Product recProduct = this.getProduct();
+                ProductModel recProduct = this.getProduct();
         
-                iErrorCode = this.updateBookingComponentPricing(recProduct, iChangeType);
+                iErrorCode = this.updateBookingComponentPricing((Product)recProduct, iChangeType);
         
                 if (iErrorCode == DBConstants.NORMAL_RETURN)
                     return iErrorCode;  // Otherwise, continue and price using the cost.
