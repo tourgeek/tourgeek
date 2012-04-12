@@ -46,7 +46,6 @@ import com.tourapp.tour.product.base.search.screen.*;
 import com.tourapp.tour.product.air.db.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.product.base.event.*;
-import com.tourapp.model.tour.message.base.response.*;
 import com.tourapp.model.tour.booking.db.*;
 import com.tourapp.model.tour.booking.detail.db.*;
 import com.tourapp.model.tour.booking.inventory.db.*;
@@ -442,10 +441,10 @@ public class Product extends VirtualRecord
         MessageRecordDesc productRequest = (ProductRequest)((BaseMessage)messageIn).getMessageDataDesc(null);
         MessageRecordDesc messageData = (ProductMessageData)productRequest.getMessageDataDesc(ProductRequest.PRODUCT_MESSAGE);
         
-        BaseProductResponseModel responseMessage = null;
+        BaseProductResponse responseMessage = null;
         if (messageReply == null)
             messageReply = (BaseMessage)this.getMessageProcessInfo().createReplyMessage((BaseMessage)messageData.getMessage());
-        responseMessage = (BaseProductResponseModel)((BaseMessage)messageReply).getMessageDataDesc(null);
+        responseMessage = (BaseProductResponse)((BaseMessage)messageReply).getMessageDataDesc(null);
         responseMessage.moveRequestInfoToReply(messageIn);
         
         int iProductStatus = InventoryStatus.VALID;

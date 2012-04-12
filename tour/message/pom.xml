@@ -16,7 +16,7 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>core</module>
+    <module>message</module>
     <module>process</module>
     <module>jibx</module>
   </modules>
