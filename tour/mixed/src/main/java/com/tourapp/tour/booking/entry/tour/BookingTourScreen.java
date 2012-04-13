@@ -32,6 +32,7 @@ import java.util.*;
 import com.tourapp.tour.product.base.event.*;
 import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.product.tour.screen.*;
+import com.tourapp.tour.booking.db.event.*;
 
 /**
  *  BookingTourScreen - Tour information.

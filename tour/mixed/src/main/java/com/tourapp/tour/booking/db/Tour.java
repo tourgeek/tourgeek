@@ -26,7 +26,6 @@ import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.booking.lookup.*;
 import com.tourapp.tour.booking.detail.event.*;
 import com.tourapp.tour.product.tour.other.screen.*;
 import com.tourapp.tour.product.tour.schedule.db.*;
@@ -403,7 +402,7 @@ public class Tour extends Job
         boolean bNewTour = false;
         if (recTourHeader.getField(TourHeader.TOUR_SERIES).getState() == false)
             bNewTour = true;    // New tour
-        if (this.getRecordOwner() instanceof TourScreen)
+        if (TOUR_SCREEN_CLASS.equalsIgnoreCase(this.getRecordOwner().getClass().toString()))
         { // Special case - series entry
             if (bNewTour)
                 return DBConstants.ERROR_RETURN;    // Can't enter series tour for a non-series header

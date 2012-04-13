@@ -2,7 +2,7 @@
  * @(#)RoomConverter.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.db;
+package com.tourapp.tour.booking.db.event;
 
 import java.awt.*;
 import java.util.*;
@@ -21,11 +21,8 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.entry.pax.*;
 import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.booking.entry.base.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.booking.detail.db.*;
 
 /**
  *  RoomConverter - Convert Pax in room to rooms.

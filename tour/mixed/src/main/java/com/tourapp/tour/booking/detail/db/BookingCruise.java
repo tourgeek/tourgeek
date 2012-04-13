@@ -20,7 +20,6 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.detail.cruise.*;
 import org.jbundle.base.db.shared.*;
 import com.tourapp.tour.product.tour.detail.db.*;
 import com.tourapp.tour.booking.db.*;

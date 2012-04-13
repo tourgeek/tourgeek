@@ -22,6 +22,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.screen.model.*;
+import com.tourapp.tour.booking.db.event.*;
 
 /**
  *  SwitchBookingScreenHandler - .

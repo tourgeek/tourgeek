@@ -20,8 +20,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.base.*;
+import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.booking.entry.base.*;
 
 /**
  *  CheckTourOptionDisplay - If the "Always Answer" flag is set by adding a tour

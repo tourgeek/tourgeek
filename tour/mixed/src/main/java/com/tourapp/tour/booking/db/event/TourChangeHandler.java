@@ -2,7 +2,7 @@
  * @(#)TourChangeHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.entry.base;
+package com.tourapp.tour.booking.db.event;
 
 import java.awt.*;
 import java.util.*;

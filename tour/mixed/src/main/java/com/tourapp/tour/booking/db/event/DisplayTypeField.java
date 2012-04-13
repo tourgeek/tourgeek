@@ -2,7 +2,7 @@
  * @(#)DisplayTypeField.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.lookup;
+package com.tourapp.tour.booking.db.event;
 
 import java.awt.*;
 import java.util.*;

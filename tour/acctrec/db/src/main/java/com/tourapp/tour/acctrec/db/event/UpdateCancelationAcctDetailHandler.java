@@ -2,7 +2,7 @@
  * @(#)UpdateCancelationAcctDetailHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.acctrec.screen.refund;
+package com.tourapp.tour.acctrec.db.event;
 
 import java.awt.*;
 import java.util.*;
@@ -20,8 +20,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctrec.db.event.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
 
 /**
  *  UpdateCancelationAcctDetailHandler - Post the cancellation charge.
@@ -56,7 +55,7 @@ public class UpdateCancelationAcctDetailHandler extends UpdateArTrxAcctDetailHan
      */
     public ReferenceField getCrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.XL_CHG_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategoryModel.XL_CHG_ACCOUNT_ID);
     }
 
 }

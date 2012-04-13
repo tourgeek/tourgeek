@@ -25,7 +25,6 @@ import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.genled.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.acctrec.db.event.*;
-import com.tourapp.tour.acctrec.screen.refund.*;
 
 /**
  *  BookingCancelledEventHandler - Do the booking related cancellation stuff,

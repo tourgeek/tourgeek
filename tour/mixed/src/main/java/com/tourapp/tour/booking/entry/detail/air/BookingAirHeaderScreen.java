@@ -26,6 +26,7 @@ import com.tourapp.tour.booking.entry.base.*;
 import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.base.db.*;
+import com.tourapp.tour.booking.db.event.*;
 
 /**
  *  BookingAirHeaderScreen - Booking Ticket Header Detail.

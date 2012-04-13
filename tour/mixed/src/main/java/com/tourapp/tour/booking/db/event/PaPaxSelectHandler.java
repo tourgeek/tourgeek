@@ -2,7 +2,7 @@
  * @(#)PaPaxSelectHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.booking.entry.pax;
+package com.tourapp.tour.booking.db.event;
 
 import java.awt.*;
 import java.util.*;
@@ -23,6 +23,8 @@ import org.jbundle.model.screen.*;
 import com.tourapp.tour.profile.db.*;
 import org.jbundle.base.screen.model.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.tour.product.base.db.*;
 
 /**
  *  PaPaxSelectHandler - Add the profile detail records to this booking.

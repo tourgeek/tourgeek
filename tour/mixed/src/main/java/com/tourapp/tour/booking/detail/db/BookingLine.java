@@ -20,7 +20,6 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.acctrec.*;
 import java.util.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.booking.history.db.*;

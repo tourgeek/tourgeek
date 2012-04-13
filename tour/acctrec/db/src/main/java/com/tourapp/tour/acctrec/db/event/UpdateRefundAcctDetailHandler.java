@@ -2,7 +2,7 @@
  * @(#)UpdateRefundAcctDetailHandler.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.acctrec.screen.refund;
+package com.tourapp.tour.acctrec.db.event;
 
 import java.awt.*;
 import java.util.*;
@@ -20,13 +20,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.acctrec.*;
-import com.tourapp.tour.acctrec.screen.misc.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.acctrec.db.event.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourapp.model.tour.product.base.db.*;
+import com.tourapp.model.tour.acctrec.db.*;
 
 /**
  *  UpdateRefundAcctDetailHandler - Update the G/L for a refund transaction.
@@ -61,7 +56,7 @@ public class UpdateRefundAcctDetailHandler extends UpdateArTrxAcctDetailHandler
      */
     public ReferenceField getDrAccount()
     {
-        return (ReferenceField)this.getProductCategory().getField(ProductCategory.AR_ACCOUNT_ID);
+        return (ReferenceField)this.getProductCategory().getField(ProductCategoryModel.AR_ACCOUNT_ID);
     }
     /**
      * Get the Credit Account field.
@@ -70,13 +65,13 @@ public class UpdateRefundAcctDetailHandler extends UpdateArTrxAcctDetailHandler
     public ReferenceField getCrAccount()
     {
         boolean bTempControl = false;
-        Record recArControl = (Record)this.getOwner().getRecordOwner().getRecord(ArControl.AR_CONTROL_FILE);
+        Record recArControl = (Record)this.getOwner().getRecordOwner().getRecord(ArControlModel.AR_CONTROL_FILE);
         if (recArControl == null)
         {
             bTempControl = true;
-            recArControl = new ArControl(this.getOwner().getRecordOwner());
+            recArControl = Record.makeRecordFromClassName(ArControlModel.THICK_CLASS, this.getOwner().getRecordOwner());
         }
-        ReferenceField field = (ReferenceField)recArControl.getField(ArControl.REFUND_SUSPENSE_ACCOUNT_ID);
+        ReferenceField field = (ReferenceField)recArControl.getField(ArControlModel.REFUND_SUSPENSE_ACCOUNT_ID);
         if (bTempControl)
             recArControl.free();
         return field;

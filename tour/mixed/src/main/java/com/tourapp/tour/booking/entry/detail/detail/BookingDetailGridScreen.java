@@ -28,6 +28,7 @@ import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.booking.entry.detail.base.*;
+import com.tourapp.tour.booking.db.event.*;
 
 /**
  *  BookingDetailGridScreen - Product detail display.

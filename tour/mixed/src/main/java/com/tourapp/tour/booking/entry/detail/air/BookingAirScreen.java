@@ -31,6 +31,7 @@ import com.tourapp.tour.acctpay.db.*;
 import com.tourapp.tour.base.db.*;
 import com.tourapp.thin.app.booking.entry.*;
 import com.tourapp.tour.booking.db.*;
+import com.tourapp.tour.booking.db.event.*;
 
 /**
  *  BookingAirScreen - Booking Ticket Segment Detail.

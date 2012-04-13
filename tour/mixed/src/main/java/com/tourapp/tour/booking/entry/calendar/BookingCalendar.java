@@ -32,6 +32,7 @@ import org.jbundle.base.message.record.*;
 import org.jbundle.thin.base.screen.cal.popup.*;
 import org.jbundle.base.screen.view.swing.*;
 import org.jbundle.util.calendarpanel.*;
+import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;

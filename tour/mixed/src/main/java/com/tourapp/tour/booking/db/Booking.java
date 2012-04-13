@@ -25,8 +25,6 @@ import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.acctrec.db.*;
 import com.tourapp.tour.booking.history.db.*;
 import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.booking.lookup.*;
-import com.tourapp.tour.booking.entry.base.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.detail.db.*;

@@ -26,7 +26,7 @@ import com.tourapp.tour.product.base.screen.*;
 import com.tourapp.tour.booking.db.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.tour.product.tour.screen.*;
-import com.tourapp.tour.booking.lookup.*;
+import com.tourapp.tour.booking.db.event.*;
 
 /**
  *  TourHeaderTourGridScreen - Tour tour detail.
