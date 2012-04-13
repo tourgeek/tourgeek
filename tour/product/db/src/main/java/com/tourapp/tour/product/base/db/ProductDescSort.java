@@ -1,0 +1,84 @@
+/**
+ * @(#)ProductDescSort.
+ * Copyright © 2012 tourapp.com. All rights reserved.
+ */
+package com.tourapp.tour.product.base.db;
+
+import java.awt.*;
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.model.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
+import com.tourapp.tour.base.db.*;
+import java.util.*;
+import com.tourapp.tour.product.hotel.db.*;
+import com.tourapp.tour.acctpay.db.*;
+import com.tourapp.tour.product.land.db.*;
+import org.jbundle.thin.base.message.*;
+import com.tourapp.thin.app.booking.entry.search.*;
+import org.jbundle.main.msg.db.*;
+import org.jbundle.base.message.core.trx.*;
+import com.tourapp.tour.message.base.response.*;
+import java.text.*;
+import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.tour.profile.db.*;
+import com.tourapp.tour.product.trans.db.*;
+import com.tourapp.tour.product.car.db.*;
+import com.tourapp.tour.product.cruise.db.*;
+import com.tourapp.tour.product.item.db.*;
+import com.tourapp.tour.message.base.request.*;
+import com.tourapp.tour.message.base.request.data.*;
+import com.tourapp.tour.message.base.response.data.*;
+import com.tourapp.tour.product.air.db.*;
+import org.jbundle.main.db.base.*;
+import com.tourapp.tour.product.base.event.*;
+import com.tourapp.model.tour.booking.db.*;
+import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourapp.model.tour.booking.inventory.db.*;
+import org.jbundle.model.message.*;
+
+/**
+ *  ProductDescSort - Desc sort field.
+ */
+public class ProductDescSort extends StringField
+{
+    /**
+     * Default constructor.
+     */
+    public ProductDescSort()
+    {
+        super();
+    }
+    /**
+     * Constructor.
+     * @param record The parent record.
+     * @param strName The field name.
+     * @param iDataLength The maximum string length (pass -1 for default).
+     * @param strDesc The string description (usually pass null, to use the resource file desc).
+     * @param strDefault The default value (if object, this value is the default value, if string, the string is the default).
+     */
+    public ProductDescSort(Record record, String strName, int iDataLength, String strDesc, Object strDefault)
+    {
+        this();
+        this.init(record, strName, iDataLength, strDesc, strDefault);
+    }
+    /**
+     * Initialize class fields.
+     */
+    public void init(Record record, String strName, int iDataLength, String strDesc, Object strDefault)
+    {
+        super.init(record, strName, iDataLength, strDesc, strDefault);
+    }
+
+}

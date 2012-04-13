@@ -6,6 +6,7 @@ package com.tourapp.thin.tour.booking.db;
 
 import com.tourapp.model.tour.product.tour.db.*;
 import org.jbundle.model.db.*;
+import com.tourapp.model.tour.product.tour.schedule.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
@@ -198,6 +199,13 @@ public class Tour extends Job
     public void calcTourDates(Rec recTourHeader)
     {
         // Empty implementation
+    }
+    /**
+     * Convenience method.
+     */
+    public TourEventScheduleModel getTourEventSchedule()
+    {
+        return null; // Empty implementation
     }
 
 }

@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>com.tourapp.tour.product.db</artifactId>
-  <name>tourapp-tour-product - Tour product</name>
+  <name>tourapp-tour-product-db - Tour product databases</name>
   <packaging>bundle</packaging>
 
   <properties>
@@ -24,6 +24,12 @@
   </properties>
 
   <dependencies>
+    <dependency>	<!-- Get rid of this dependency -->
+      <groupId>com.tourapp.thin.app</groupId>
+      <artifactId>com.tourapp.thin.app.booking</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.base</artifactId>
@@ -43,6 +49,11 @@
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctpay.db</artifactId>
       <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <version>0.8.0-SNAPSHOT</version>
+      <artifactId>com.tourapp.tour.message</artifactId>
     </dependency>
 
     <dependency>

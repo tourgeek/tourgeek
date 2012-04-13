@@ -33,6 +33,7 @@ import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.acctpay.db.event.*;
 import com.tourapp.model.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.base.field.*;
 import org.jbundle.main.db.base.*;
 import com.tourapp.tour.product.air.db.*;
@@ -768,7 +769,7 @@ public class Tour extends Job
     /**
      * Convenience method.
      */
-    public TourEventSchedule getTourEventSchedule()
+    public TourEventScheduleModel getTourEventSchedule()
     {
         if (m_recTourEventSchedule == null)
         {

@@ -111,7 +111,22 @@
                 </jarResource>
                 <jarResource>
                   <groupId>com.tourapp.tour</groupId>
-                  <artifactId>com.tourapp.tour.booking</artifactId>
+                  <artifactId>com.tourapp.tour.booking.db</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.booking.entry</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.booking.remote</artifactId>
+                  <version>${project.version}</version>
+                </jarResource>
+                <jarResource>
+                  <groupId>com.tourapp.tour</groupId>
+                  <artifactId>com.tourapp.tour.booking.report</artifactId>
                   <version>${project.version}</version>
                 </jarResource>
                 <jarResource>

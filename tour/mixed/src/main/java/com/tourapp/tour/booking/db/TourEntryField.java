@@ -33,6 +33,7 @@ import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.acctpay.db.event.*;
 import com.tourapp.model.tour.product.tour.db.*;
+import com.tourapp.model.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.base.field.*;
 import org.jbundle.main.db.base.*;
 

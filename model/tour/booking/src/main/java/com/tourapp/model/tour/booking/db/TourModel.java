@@ -6,6 +6,7 @@ package com.tourapp.model.tour.booking.db;
 
 import com.tourapp.model.tour.product.tour.db.*;
 import org.jbundle.model.db.*;
+import com.tourapp.model.tour.product.tour.schedule.db.*;
 import com.tourapp.model.tour.booking.db.*;
 
 public interface TourModel extends JobModel
@@ -84,5 +85,9 @@ public interface TourModel extends JobModel
      * CalcTourDates Method.
      */
     public void calcTourDates(Rec recTourHeader);
+    /**
+     * Convenience method.
+     */
+    public TourEventScheduleModel getTourEventSchedule();
 
 }
