@@ -15,6 +15,12 @@
   <packaging>bundle</packaging>
   
   <properties>
+    <jbundlePackageExport>
+    com.tourapp.tour.booking.db.*;version=${project.version},
+    com.tourapp.tour.booking.detail.db.*;version=${project.version},
+    com.tourapp.tour.booking.history.db.*;version=${project.version},
+    com.tourapp.tour.booking.inventory.db.*;version=${project.version},
+    </jbundlePackageExport>
     <jbundlePackageImport>
       *;resolution:=optional,
       com.tourapp.res.tour.booking;resolution:=optional,
