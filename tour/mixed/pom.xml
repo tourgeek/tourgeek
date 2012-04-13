@@ -73,7 +73,32 @@
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctrec.screen</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctrec.report</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctpay.db</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctpay.screen</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctpay.report</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.acctpay.air</artifactId>
       <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
@@ -94,6 +119,11 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.product.db</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.product.screen</artifactId>
       <version>0.8.0-SNAPSHOT</version>
     </dependency>
     <dependency>
