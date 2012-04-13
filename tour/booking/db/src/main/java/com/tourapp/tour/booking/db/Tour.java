@@ -27,7 +27,6 @@ import com.tourapp.tour.booking.detail.db.*;
 import com.tourapp.tour.product.hotel.db.*;
 import com.tourapp.tour.product.land.db.*;
 import com.tourapp.tour.booking.detail.event.*;
-import com.tourapp.tour.product.tour.other.screen.*;
 import com.tourapp.tour.product.tour.schedule.db.*;
 import com.tourapp.tour.booking.db.event.*;
 import com.tourapp.tour.acctpay.db.event.*;

@@ -36,16 +36,10 @@
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.mixed</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
-    <!-- dependency>
-      <groupId>com.tourapp.tour</groupId>
       <version>0.8.0-SNAPSHOT</version>
       <artifactId>com.tourapp.tour.product.db</artifactId>
-    </dependency -->
-    
+    </dependency>
+
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.booking</artifactId>
