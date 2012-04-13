@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>com.tourapp.tour.acctpay.report</artifactId>
-  <name>tourapp-tour-acctpay - Accounts payable report</name>
+  <name>tourapp-tour-acctpay-report - Accounts payable report</name>
   <packaging>bundle</packaging>
 
   <dependencies>
@@ -19,6 +19,12 @@
       <artifactId>com.tourapp.tour.acctpay.db</artifactId>
       <version>0.8.0-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>com.tourapp.tour</groupId>
+      <artifactId>com.tourapp.tour.booking.db</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+
     <dependency>
       <groupId>com.tourapp.model</groupId>
       <version>0.8.0-SNAPSHOT</version>

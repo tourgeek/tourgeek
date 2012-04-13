@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>com.tourapp.tour.acctpay.db</artifactId>
-  <name>tourapp-tour-acctpay - Accounts payable db</name>
+  <name>tourapp-tour-acctpay-db - Accounts payable db</name>
   <packaging>bundle</packaging>
 
   <dependencies>

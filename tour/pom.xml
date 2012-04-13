@@ -22,7 +22,6 @@
   	<module>payroll</module>
   	<module>request</module>
   	<module>profile</module>
-  	<module>mixed</module>
   	<module>acctpay</module>
   	<module>acctrec</module>
   	<module>product</module>
