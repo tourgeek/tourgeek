@@ -95,7 +95,7 @@ public class BookingLine extends BookingSub
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(BOOKING_LINE_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-        if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
+        else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
             screen = Record.makeNewScreen(BOOKING_LINE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
             screen = super.makeScreen(itsLocation, parentScreen, iDocMode, properties);
@@ -256,7 +256,7 @@ public class BookingLine extends BookingSub
             this.addListener(new SubCountHandler((BaseField)recBooking.getField(Booking.COMMISSION), BookingLine.COMMISSION, true, true));
             this.addListener(new SubCountHandler((BaseField)recBooking.getField(Booking.NET), BookingLine.NET, true, true));
         
-            ((Record)recBooking.getField(Booking.NET)).addListener(new SetDirtyOnChangeHandler((BaseField)recBooking.getField(Booking.BOOKING_STATUS_ID), true, true));  // This makes sure the booking will update which will trigger an A/R update
+            ((Record)recBooking).getField(Booking.NET).addListener(new SetDirtyOnChangeHandler((BaseField)recBooking.getField(Booking.BOOKING_STATUS_ID), true, true));  // This makes sure the booking will update which will trigger an A/R update
             ((Record)recBooking).addListener(new UpdateOnCloseHandler(null));
         
             this.addSubListeners((Booking)recBooking);
