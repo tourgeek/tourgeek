@@ -62,13 +62,13 @@
       <version>0.8.0-SNAPSHOT</version>
       <type>pom</type>
     </dependency>
-    <dependency>
+    <!-- dependency>
       <groupId>javax</groupId>
       <artifactId>j2ee</artifactId>
       <version>1.4</version>
       <scope>system</scope>
       <systemPath>${j2eePath}</systemPath>
-    </dependency>
+    </dependency -->
   </dependencies>
 
 </project>

@@ -61,15 +61,15 @@
 	      </plugin>
 	    </plugins>
 	  </build>
-	  <dependencies>
+	  <!-- dependencies>
 		<dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
 		  <version>${j2eeVersion}</version>
-		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
+		  <scope>system</scope>
 		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
-	  </dependencies>
+	  </dependencies -->
     </profile>
     <profile>
       <id>base</id>
@@ -116,15 +116,15 @@
 	      </plugin>
 	    </plugins>
 	  </build>
-	  <dependencies>
+	  <!-- dependencies>
 		<dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
 		  <version>${j2eeVersion}</version>
-		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
+		  <scope>system</scope>
 		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
-	  </dependencies>
+	  </dependencies -->
     </profile>
     <profile>
       <id>app</id>
@@ -175,15 +175,15 @@
 	      </plugin>
 	    </plugins>
 	  </build>
-	  <dependencies>
+	  <!-- dependencies>
 		<dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
-		  <version>1.4</version>	<!-- Made up version -->
-		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
+		  <version>1.4</version>
+		  <scope>system</scope>
 		  <systemPath>${j2eePath}</systemPath>
 		</dependency>
-	  </dependencies>
+	  </dependencies -->
     </profile>
     <profile>
       <id>test</id>
@@ -232,13 +232,13 @@
 	    </plugins>
 	  </build>
 	  <dependencies>
-		<dependency>
+		<!-- dependency>
 		  <groupId>javax</groupId>
 		  <artifactId>j2ee</artifactId>
 		  <version>${j2eeVersion}</version> 
-		  <scope>system</scope> <!-- *** Need javax.mail for some stuff -->
+		  <scope>system</scope>
 		  <systemPath>${j2eePath}</systemPath>
-		</dependency>
+		</dependency -->
 	  </dependencies>
     </profile>
   </profiles>
