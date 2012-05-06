@@ -74,8 +74,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             WEBAPP_PROXY,
             WEBAPP_UPLOAD,
             WEBAPP_WEBDAV,
-            WEBAPP_WEBSTART,   // Already enabled by osgi-webstart
-            WEBAPP_WEBSTART_APPLET,   // Already enabled by osgi-webstart
+//            WEBAPP_WEBSTART,          // Already enabled by osgi-webstart
+//            WEBAPP_WEBSTART_APPLET,   // Already enabled by osgi-webstart
             NOTES,
             PICTURES,
             WEBAPP,
