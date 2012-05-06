@@ -74,8 +74,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             WEBAPP_PROXY,
             WEBAPP_UPLOAD,
             WEBAPP_WEBDAV,
-//            WEBAPP_WEBSTART,   // Already enabled by osgi-webstart
-//            WEBAPP_WEBSTART_APPLET,   // Already enabled by osgi-webstart
+            WEBAPP_WEBSTART,   // Already enabled by osgi-webstart
+            WEBAPP_WEBSTART_APPLET,   // Already enabled by osgi-webstart
             NOTES,
             PICTURES,
             WEBAPP,
@@ -212,6 +212,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     || (WEBAPP.equalsIgnoreCase(alias))
                     || (OSGI_WEBSTART.equalsIgnoreCase(alias))
                     || (PICTURES.equalsIgnoreCase(alias))
+                    || (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
+                    || (WEBAPP_WEBSTART_APPLET.equalsIgnoreCase(alias))
                         )
             {   // Everything else is a pointer to a static resource
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
