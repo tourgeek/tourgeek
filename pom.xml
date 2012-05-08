@@ -17,6 +17,16 @@
   <name>tour-project-reactor - Top Level Project parent</name>
   <description>Parent project for tour applications</description>
 
+  <properties>
+    <projectName>tourapp</projectName>
+  </properties>
+
+  <scm>
+    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/tourapp</url>
+    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/tourapp</connection>
+    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp</developerConnection>
+  </scm>
+
   <modules>
     <module>res</module>
     <module>model</module>
@@ -24,11 +34,5 @@
     <module>tour</module>
     <module>config</module>
   </modules>
-
-  <scm>
-    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/tourapp</url>
-    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/tourapp</connection>
-    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp</developerConnection>
-  </scm>
 
 </project>
