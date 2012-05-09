@@ -108,7 +108,7 @@
 							<excludes>docs\/programmer\/**,docs\/help\/specifications\/**,docs\/test\/**
 							</excludes>
 						</artifactItem>
-						<artifactItem>
+						<!-- artifactItem>
 							<groupId>org.jbundle.config.web</groupId>
 							<artifactId>jbundle-config-web-jnlp</artifactId>
 							<version>${jbundleVersion}</version>
@@ -116,7 +116,7 @@
 							<type>zip</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
 							</outputDirectory>
-						</artifactItem>
+						</artifactItem -->
 						<artifactItem>
 						  <groupId>org.jbundle.util.osgi.wrapped</groupId>
 						  <artifactId>org.jbundle.util.osgi.wrapped.uk.org.pajhome.crypt.sha1</artifactId>
@@ -124,7 +124,7 @@
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/sha</outputDirectory>
 						</artifactItem>
-						<artifactItem>
+						<!-- artifactItem>
 							<groupId>com.tourapp.config</groupId>
 							<artifactId>tourapp-config-web-jnlp</artifactId>
 							<version>${project.version}</version>
@@ -132,7 +132,7 @@
 							<type>zip</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
 							</outputDirectory>
-						</artifactItem>
+						</artifactItem -->
 						<!--
 							artifactItem> <groupId>org.jbundle.config</groupId>
 							<artifactId>org.jbundle.config.web.cocoon</artifactId>
