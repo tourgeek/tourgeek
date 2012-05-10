@@ -9,21 +9,113 @@
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-config-tourapp</artifactId>
-  <packaging>pom</packaging>
-  <name>tourapp-config-tourapp - Run standalone tourapp</name>
+  <artifactId>com.tourapp.config.main</artifactId>
+  <packaging>bundle</packaging>
+  <name>tourapp-config-main - Run standalone tourapp</name>
   
   <properties>
     <jbundle.db.local>Client</jbundle.db.local>
     <jbundle.db.remote>Client</jbundle.db.remote>
-    <jbundle.db.table>Table</jbundle.db.table>
+    <jbundle.db.table>Net</jbundle.db.table>
   </properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Export-Package>com.tourapp;version=${project.version}</Export-Package>
+						<Import-Package>
+   							*;resolution:=optional,
+                            com.tourapp.tour.acctpay.screen.vendor;resolution:=optional,
+                            com.tourapp.tour.acctpay.air.ticket;resolution:=optional,
+                            com.tourapp.tour.acctpay.report;resolution:=optional,
+                            com.tourapp.tour.acctrec.report.cashplan;resolution:=optional,
+                            com.tourapp.tour.acctrec.screen.misc;resolution:=optional,
+                            com.tourapp.tour.assetdr.screen;resolution:=optional,
+                            com.tourapp.tour.assetdr.report;resolution:=optional,
+                            com.tourapp.tour.assetdr.process;resolution:=optional,
+                            com.tourapp.tour.booking.report.voucher;resolution:=optional,
+                            com.tourapp.tour.booking.entry.base;resolution:=optional,
+                            <!-- com.tourapp.tour.booking.remote.lookup;resolution:=optional, -->
+                            com.tourapp.tour.genled.screen.misc;resolution:=optional,
+                            com.tourapp.tour.genled.report;resolution:=optional,
+                            com.tourapp.tour.payroll.screen.misc;resolution:=optional,
+                            com.tourapp.tour.payroll.report.payroll;resolution:=optional,
+                            com.tourapp.tour.product.base.screen;resolution:=optional,
+                            com.tourapp.tour.profile.screen;resolution:=optional,
+                            com.tourapp.tour.request.report;resolution:=optional,
+                            <!-- com.tourapp.tour.request.request.thread;resolution:=optional, -->
+						</Import-Package>
+						<!-- Bundle-Activator>com.tourapp.Main</Bundle-Activator -->
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
   <profiles>
     <profile>
-      <id>tour</id>
+      <id>run</id>
       <activation>
         <activeByDefault>true</activeByDefault>
+      </activation>
+	  <build>
+	    <plugins>      
+	      <plugin>
+	        <groupId>org.codehaus.mojo</groupId>
+	        <artifactId>exec-maven-plugin</artifactId>
+	        <executions>
+	          <execution>
+	          	<phase>run</phase>
+	            <goals>
+	              <goal>exec</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+	        <configuration>
+            <mainClass>com.tourapp.Main</mainClass>
+            <arguments>
+              <argument>menu=dev.tourapp.com</argument>
+              <argument>background=backgrounds/worldmapalpha.gif</argument>
+              <argument>backgroundcolor=#EEEEFF</argument>
+              <argument>connectionType=proxy</argument>
+              <argument>mainSharedDBName=main_base</argument>
+		<argument>remotehost=${jbundle.server}</argument>
+		<argument>codebase=${jbundle.codebase}</argument>
+		<argument>local=${jbundle.db.local}</argument>
+		<argument>remote=${jbundle.db.remote}</argument>
+		<argument>table=${jbundle.db.table}</argument>
+            </arguments>
+          <systemProperties>
+            <systemProperty>
+              <key>myproperty</key>
+              <value>myvalue</value>
+            </systemProperty>
+          </systemProperties>
+	        </configuration>
+	      </plugin>
+	    </plugins>
+	  </build>
+	  <!-- dependencies>
+		<dependency>
+		  <groupId>javax</groupId>
+		  <artifactId>j2ee</artifactId>
+		  <version>${j2eeVersion}</version>
+		  <scope>system</scope>
+		  <systemPath>${j2eePath}</systemPath>
+		</dependency>
+	  </dependencies -->
+    </profile>
+    <profile>
+      <id>tour</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
       </activation>
 	  <build>
 	    <plugins>      

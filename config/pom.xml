@@ -14,8 +14,8 @@
   <modules>
     <module>web</module>
     <module>server</module>
-    <module>tourapp</module>
     <module>dep</module>
+    <module>main</module>
   </modules>
 
 </project>
