@@ -56,7 +56,7 @@
 <dependency>
   <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
   <artifactId>org.jibx.schema.org.opentravel._2010B.codetable</artifactId>
-  <version>1.0.0</version>
+  <version>${jibxSchemaVersion}</version>
 </dependency>
 
     <dependency>

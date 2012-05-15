@@ -113,6 +113,56 @@
 	  </dependencies -->
     </profile>
     <profile>
+      <id>jdbc</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+	  <build>
+	    <plugins>      
+	      <plugin>
+	        <groupId>org.codehaus.mojo</groupId>
+	        <artifactId>exec-maven-plugin</artifactId>
+	        <executions>
+	          <execution>
+	          	<phase>run</phase>
+	            <goals>
+	              <goal>exec</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+	        <configuration>
+            <mainClass>com.tourapp.Main</mainClass>
+            <arguments>
+              <argument>background=backgrounds/worldmapalpha.gif</argument>
+              <argument>backgroundcolor=#EEEEFF</argument>
+              <argument>connectionType=proxy</argument>
+		<argument>remotehost=${jbundle.server}</argument>
+		<argument>codebase=${jbundle.codebase}</argument>
+		<argument>local=Jdbc</argument>
+		<argument>remote=Jdbc</argument>
+		<argument>table=Jdbc</argument>
+            </arguments>
+          <systemProperties>
+            <systemProperty>
+              <key>myproperty</key>
+              <value>myvalue</value>
+            </systemProperty>
+          </systemProperties>
+	        </configuration>
+	      </plugin>
+	    </plugins>
+	  </build>
+	  <!-- dependencies>
+		<dependency>
+		  <groupId>javax</groupId>
+		  <artifactId>j2ee</artifactId>
+		  <version>${j2eeVersion}</version>
+		  <scope>system</scope>
+		  <systemPath>${j2eePath}</systemPath>
+		</dependency>
+	  </dependencies -->
+    </profile>
+    <profile>
       <id>tour</id>
       <activation>
         <activeByDefault>false</activeByDefault>
