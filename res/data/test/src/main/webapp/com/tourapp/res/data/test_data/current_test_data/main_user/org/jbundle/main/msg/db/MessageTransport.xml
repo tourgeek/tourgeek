@@ -146,6 +146,7 @@ transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport
 #Tue Mar 11 02:08:33 PDT 2008
 queueName=trxSendLocal
 queueType=local
+transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport.html.HTMLMessageTransport
 </Properties>
 		<MessageTransportType>Thread</MessageTransportType>
 	</MessageTransport>
@@ -158,6 +159,7 @@ queueType=local
 #Tue Oct 07 20:49:46 PDT 2008
 messageTimeoutSeconds=300
 singleDetail=true
+transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport.xml.XMLMessageTransport
 </Properties>
 		<MessageTransportType>AutoResp</MessageTransportType>
 	</MessageTransport>
