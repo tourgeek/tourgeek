@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<MessageTransportInfo ID="1">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>1</MessageProcessInfoID>
@@ -18,7 +18,7 @@ emailReply=hotelratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="2">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>1</MessageProcessInfoID>
@@ -31,7 +31,7 @@ formReply=hotelratereplyform
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="4">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>1</MessageProcessInfoID>
@@ -45,7 +45,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.request.out.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="5">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>1</MessageProcessInfoID>
@@ -59,7 +59,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="6">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>2</MessageProcessInfoID>
@@ -74,7 +74,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.request.in.HotelRat
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="7">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>3</MessageProcessInfoID>
@@ -89,7 +89,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.response.in.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="8">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>4</MessageProcessInfoID>
@@ -103,7 +103,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.response.out.HotelR
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="9">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>5</MessageProcessInfoID>
@@ -116,7 +116,7 @@ emailReply=hotelratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="10">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>5</MessageProcessInfoID>
@@ -134,7 +134,7 @@ emailReply=hotelratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="11">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>5</MessageProcessInfoID>
@@ -148,7 +148,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.request.out.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="13">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>5</MessageProcessInfoID>
@@ -162,7 +162,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="14">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>6</MessageProcessInfoID>
@@ -177,7 +177,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.response.in.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="15">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>7</MessageProcessInfoID>
@@ -192,7 +192,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2006a.hotel.request.in.HotelRat
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="16">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>8</MessageProcessInfoID>
@@ -210,7 +210,7 @@ emailReply=hotelinvreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="17">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>8</MessageProcessInfoID>
@@ -223,7 +223,7 @@ emailReply=hotelinventoryreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="18">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>8</MessageProcessInfoID>
@@ -237,7 +237,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.request.out.HotelAv
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="19">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>8</MessageProcessInfoID>
@@ -249,7 +249,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.request.out.HotelAv
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="20">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>8</MessageProcessInfoID>
@@ -263,7 +263,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="21">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>9</MessageProcessInfoID>
@@ -278,7 +278,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="22">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>10</MessageProcessInfoID>
@@ -293,7 +293,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="23">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>11</MessageProcessInfoID>
@@ -308,7 +308,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="24">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>12</MessageProcessInfoID>
@@ -326,7 +326,7 @@ emailReply=hotelbookingreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="25">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>12</MessageProcessInfoID>
@@ -339,7 +339,7 @@ emailReply=hotelratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="26">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>12</MessageProcessInfoID>
@@ -354,7 +354,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="28">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>12</MessageProcessInfoID>
@@ -368,7 +368,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="29">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>13</MessageProcessInfoID>
@@ -383,7 +383,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="30">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>14</MessageProcessInfoID>
@@ -398,7 +398,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="31">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>15</MessageProcessInfoID>
@@ -413,7 +413,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="32">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>16</MessageProcessInfoID>
@@ -428,7 +428,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="33">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>20</MessageProcessInfoID>
@@ -441,7 +441,7 @@ emailReply=landinventoryreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="34">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>20</MessageProcessInfoID>
@@ -459,7 +459,7 @@ emailReply=landinvreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="35">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>20</MessageProcessInfoID>
@@ -474,7 +474,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="37">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>20</MessageProcessInfoID>
@@ -488,7 +488,7 @@ screen=com.tourapp.tour.product.land.message.screen.LandAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="39">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>21</MessageProcessInfoID>
@@ -503,7 +503,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="40">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>22</MessageProcessInfoID>
@@ -518,7 +518,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="41">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>23</MessageProcessInfoID>
@@ -533,7 +533,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="42">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>24</MessageProcessInfoID>
@@ -548,7 +548,7 @@ emailReply=landratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="43">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>24</MessageProcessInfoID>
@@ -566,7 +566,7 @@ emailReply=landbookingreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="44">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>24</MessageProcessInfoID>
@@ -581,7 +581,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="46">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>24</MessageProcessInfoID>
@@ -595,7 +595,7 @@ screen=com.tourapp.tour.booking.message.land.screen.LandRateResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="47">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>25</MessageProcessInfoID>
@@ -610,7 +610,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="48">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>26</MessageProcessInfoID>
@@ -625,7 +625,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="49">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>27</MessageProcessInfoID>
@@ -640,7 +640,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="50">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>28</MessageProcessInfoID>
@@ -658,7 +658,7 @@ emailReply=landratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="51">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>28</MessageProcessInfoID>
@@ -671,7 +671,7 @@ emailReply=landratereply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="52">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>28</MessageProcessInfoID>
@@ -686,7 +686,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="54">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>28</MessageProcessInfoID>
@@ -700,7 +700,7 @@ screen=com.tourapp.tour.booking.message.land.screen.LandAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="55">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>30</MessageProcessInfoID>
@@ -715,7 +715,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="56">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>29</MessageProcessInfoID>
@@ -730,7 +730,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="57">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>31</MessageProcessInfoID>
@@ -743,7 +743,7 @@ XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="58">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>31</MessageProcessInfoID>
@@ -756,7 +756,7 @@ emailReply=hotelinventoryreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="59">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>31</MessageProcessInfoID>
@@ -770,7 +770,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.hotel.request.out.HotelAv
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="61">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>31</MessageProcessInfoID>
@@ -784,7 +784,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="62">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>32</MessageProcessInfoID>
@@ -798,7 +798,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelAv
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="63">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>33</MessageProcessInfoID>
@@ -813,7 +813,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="64">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>198</MessageProcessInfoID>
@@ -828,7 +828,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.in.PingReque
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="65">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>200</MessageProcessInfoID>
@@ -843,7 +843,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="66">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>197</MessageProcessInfoID>
@@ -857,7 +857,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.request.out.PingRequ
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="67">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>199</MessageProcessInfoID>
@@ -872,7 +872,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="68">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>148</MessageProcessInfoID>
@@ -883,7 +883,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<Properties/>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="69">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>198</MessageProcessInfoID>
@@ -898,7 +898,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="70">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>15</MessageProcessInfoID>
@@ -913,7 +913,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="71">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>199</MessageProcessInfoID>
@@ -927,7 +927,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.out.PingRes
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="72">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>197</MessageProcessInfoID>
@@ -942,7 +942,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="73">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>200</MessageProcessInfoID>
@@ -957,7 +957,7 @@ marshallerClass=com.tourapp.tour.message.jibx.ota2010b.base.response.in.PingResp
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="74">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>198</MessageProcessInfoID>
@@ -971,7 +971,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingReque
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="75">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>197</MessageProcessInfoID>
@@ -985,7 +985,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequ
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="76">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>200</MessageProcessInfoID>
@@ -999,7 +999,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResp
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="77">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>199</MessageProcessInfoID>
@@ -1013,7 +1013,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingRes
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="78">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>16</MessageProcessInfoID>
@@ -1028,7 +1028,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="79">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>18</MessageProcessInfoID>
@@ -1043,7 +1043,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="80">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>17</MessageProcessInfoID>
@@ -1058,7 +1058,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="81">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>18</MessageProcessInfoID>
@@ -1073,7 +1073,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="82">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>17</MessageProcessInfoID>
@@ -1088,7 +1088,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="83">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>5</MessageProcessInfoID>
@@ -1102,7 +1102,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="84">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>1</MessageProcessInfoID>
@@ -1116,7 +1116,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="85">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>2</MessageProcessInfoID>
@@ -1130,7 +1130,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRat
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="86">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>3</MessageProcessInfoID>
@@ -1144,7 +1144,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="87">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>4</MessageProcessInfoID>
@@ -1158,7 +1158,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelR
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="88">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>6</MessageProcessInfoID>
@@ -1172,7 +1172,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="89">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>198</MessageProcessInfoID>
@@ -1186,7 +1186,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingReque
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="90">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>197</MessageProcessInfoID>
@@ -1200,7 +1200,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequ
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="91">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>200</MessageProcessInfoID>
@@ -1214,7 +1214,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResp
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="92">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>199</MessageProcessInfoID>
@@ -1228,7 +1228,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingRes
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="93">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>2</MessageProcessInfoID>
@@ -1242,7 +1242,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRat
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="94">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>1</MessageProcessInfoID>
@@ -1256,7 +1256,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="95">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>5</MessageProcessInfoID>
@@ -1270,7 +1270,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="96">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>3</MessageProcessInfoID>
@@ -1284,7 +1284,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="97">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>6</MessageProcessInfoID>
@@ -1298,7 +1298,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="98">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>4</MessageProcessInfoID>
@@ -1312,7 +1312,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelR
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="99">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>243</MessageProcessInfoID>
@@ -1328,7 +1328,7 @@ JAXBPackage=net.webservicex.currencyconverter
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="100">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>244</MessageProcessInfoID>
@@ -1343,7 +1343,7 @@ JAXBPackage=net.webservicex.currencyconverter
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="101">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>246</MessageProcessInfoID>
@@ -1354,7 +1354,7 @@ JAXBPackage=net.webservicex.currencyconverter
 		<Properties/>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="102">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>245</MessageProcessInfoID>
@@ -1372,7 +1372,7 @@ emailReply=hotelrateinvreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="103">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>245</MessageProcessInfoID>
@@ -1386,7 +1386,7 @@ messageInCode=OTA_HotelRateAvailRQRQ
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="104">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>245</MessageProcessInfoID>
@@ -1400,7 +1400,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScree
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="105">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>245</MessageProcessInfoID>
@@ -1415,7 +1415,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="106">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>245</MessageProcessInfoID>
@@ -1430,7 +1430,7 @@ emailReply=hotelrateinventoryreply
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="107">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>248</MessageProcessInfoID>
@@ -1444,7 +1444,7 @@ marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlCon
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="108">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>247</MessageProcessInfoID>
@@ -1458,7 +1458,7 @@ marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlCon
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="109">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>250</MessageProcessInfoID>
@@ -1472,7 +1472,7 @@ marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlCon
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="110">
-		<LastChanged>2011-09-09T15:49:05</LastChanged>
+		<LastChanged>2012-05-16T03:01:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<MessageProcessInfoID>249</MessageProcessInfoID>
