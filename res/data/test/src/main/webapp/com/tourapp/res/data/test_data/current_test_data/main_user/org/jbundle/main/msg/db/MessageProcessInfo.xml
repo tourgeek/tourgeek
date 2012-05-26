@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<MessageProcessInfo ID="1">
-		<LastChanged>2012-05-16T03:01:24</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRQOut</Code>
 		<Description>Hotel Pricing Outbound Request</Description>
@@ -20,7 +20,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="2">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRQ</Code>
 		<Description>Hotel Pricing Inbound Request</Description>
@@ -36,7 +36,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="3">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRS</Code>
 		<Description>Hotel Pricing Inbound Response</Description>
@@ -52,7 +52,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="4">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRSOut</Code>
 		<Description>Hotel Pricing Outbound Response</Description>
@@ -68,7 +68,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="5">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRQUpdate</Code>
 		<Description>Hotel Pricing Outbound Update Request</Description>
@@ -87,7 +87,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="6">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRSUpdate</Code>
 		<Description>Hotel Pricing Inbound Update Response</Description>
@@ -103,7 +103,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="7">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRQRQ</Code>
 		<Description>Hotel Availability Inbound Request</Description>
@@ -119,7 +119,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="8">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRQRQUpdate</Code>
 		<Description>Hotel Availability Outbound Update Request</Description>
@@ -139,7 +139,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="9">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRSRS</Code>
 		<Description>Hotel Availability Inbound Response</Description>
@@ -155,7 +155,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="10">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRSRSUpdate</Code>
 		<Description>Hotel Availability Inbound Update Response</Description>
@@ -171,7 +171,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="11">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelBookingRQ</Code>
 		<Description>Hotel Booking Inbound Request</Description>
@@ -187,7 +187,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="12">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelBookingRQUpdate</Code>
 		<Description>Hotel Booking Outbound Request</Description>
@@ -206,7 +206,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="13">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelBookingRS</Code>
 		<Description>Hotel Booking Outbound Response</Description>
@@ -222,7 +222,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="14">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelBookingRSUpdate</Code>
 		<Description>Hotel Booking Inbound Response</Description>
@@ -238,7 +238,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="15">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelRateAvailRQ</Code>
 		<Description>Hotel Rate AND Availability Inbound Request</Description>
@@ -254,7 +254,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="16">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Rate AND Availability Outbound Request</Description>
@@ -270,7 +270,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="17">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelRateAvailRS</Code>
 		<Description>Hotel Rate AND Avail. Outbound Response</Description>
@@ -286,7 +286,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="18">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelRateAvailRQUpdate</Code>
 		<Description>Hotel Rate AND Avail Inbound Update Response</Description>
@@ -302,7 +302,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="19">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRQRQ</Code>
 		<Description>Land Availability Inbound Request</Description>
@@ -318,7 +318,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="20">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRQRQUpdate</Code>
 		<Description>Land Availability Outbound Update Request</Description>
@@ -334,7 +334,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID>5</InitialMessageStatusID>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="21">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRSRS</Code>
 		<Description>Land Availability Outbound Response</Description>
@@ -350,7 +350,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="22">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRSRSUpdate</Code>
 		<Description>Land Availability Inbound Update Response</Description>
@@ -366,7 +366,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="23">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandBookingRQ</Code>
 		<Description>Land Booking Inbound Request</Description>
@@ -382,7 +382,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="24">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandBookingRQUpdate</Code>
 		<Description>Land Booking Outbound Request</Description>
@@ -398,7 +398,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="25">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandBookingRS</Code>
 		<Description>Land Booking Outbound Response</Description>
@@ -414,7 +414,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="26">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandBookingRSUpdate</Code>
 		<Description>Land Booking Inbound Response</Description>
@@ -430,7 +430,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="27">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRQ</Code>
 		<Description>Land Pricing Inbound Request</Description>
@@ -446,7 +446,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="28">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRQUpdate</Code>
 		<Description>Land Pricing Outbound Update Request</Description>
@@ -462,7 +462,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="29">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRS</Code>
 		<Description>Land Pricing Outbound Response</Description>
@@ -478,7 +478,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="30">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_LandAvailRSUpdate</Code>
 		<Description>Land Pricing Inbound Update Response</Description>
@@ -494,7 +494,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="31">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRQRQOut</Code>
 		<Description>Hotel Availability Outbound Request</Description>
@@ -514,7 +514,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="32">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelAvailRSOut</Code>
 		<Description>Hotel Availability Outbound Response</Description>
@@ -530,7 +530,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="33">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Pricing Outbound Request</Description>
@@ -546,7 +546,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="34">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Pricing Inbound Response</Description>
@@ -562,7 +562,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="35">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Pricing Outbound Request</Description>
@@ -578,7 +578,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="36">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Pricing Outbound Update Request</Description>
@@ -594,7 +594,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="37">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Pricing Inbound Request</Description>
@@ -610,7 +610,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="38">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Pricing Outbound Response</Description>
@@ -626,7 +626,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="39">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Pricing Inbound Response</Description>
@@ -642,7 +642,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="40">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Pricing Inbound Update Response</Description>
@@ -658,7 +658,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="42">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Pricing Outbound Request</Description>
@@ -674,7 +674,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="43">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Pricing Outbound Update Request</Description>
@@ -690,7 +690,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="44">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Pricing Inbound Request</Description>
@@ -706,7 +706,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="45">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Pricing Outbound Response</Description>
@@ -722,7 +722,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="46">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Pricing Inbound Update Response</Description>
@@ -738,7 +738,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="47">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Pricing Inbound Response</Description>
@@ -754,7 +754,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="48">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Pricing Outbound Request</Description>
@@ -770,7 +770,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="49">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Pricing Outbound Update Request</Description>
@@ -786,7 +786,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="50">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Pricing Inbound Request</Description>
@@ -802,7 +802,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="51">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Pricing Inbound Request</Description>
@@ -818,7 +818,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="52">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Pricing Outbound Request</Description>
@@ -834,7 +834,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="53">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Pricing Outbound Update Request</Description>
@@ -850,7 +850,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="54">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Pricing Inbound Request</Description>
@@ -866,7 +866,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="55">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Pricing Outbound Request</Description>
@@ -882,7 +882,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="56">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Pricing Outbound Update Request</Description>
@@ -898,7 +898,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="57">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Pricing Inbound Request</Description>
@@ -914,7 +914,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="59">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Pricing Outbound Update Request</Description>
@@ -930,7 +930,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="60">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Pricing Outbound Request</Description>
@@ -946,7 +946,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="61">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Pricing Inbound Update Response</Description>
@@ -962,7 +962,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="62">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Pricing Inbound Response</Description>
@@ -978,7 +978,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="63">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Pricing Outbound Response</Description>
@@ -994,7 +994,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="64">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Pricing Inbound Update Response</Description>
@@ -1010,7 +1010,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="65">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Pricing Inbound Response</Description>
@@ -1026,7 +1026,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="66">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Pricing Outbound Response</Description>
@@ -1042,7 +1042,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="67">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Pricing Inbound Update Response</Description>
@@ -1058,7 +1058,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="68">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Pricing Inbound Response</Description>
@@ -1074,7 +1074,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="69">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Pricing Outbound Response</Description>
@@ -1090,7 +1090,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="70">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Pricing Inbound Update Response</Description>
@@ -1106,7 +1106,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="71">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Pricing Inbound Response</Description>
@@ -1122,7 +1122,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="72">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Pricing Outbound Response</Description>
@@ -1138,7 +1138,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="73">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Inbound Update Response</Description>
@@ -1154,7 +1154,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="74">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Inbound Response</Description>
@@ -1170,7 +1170,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="75">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Outbound Response</Description>
@@ -1186,7 +1186,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="76">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Inbound Update Response</Description>
@@ -1202,7 +1202,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="78">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Outbound Response</Description>
@@ -1218,7 +1218,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="79">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Availability Inbound Update Response</Description>
@@ -1234,7 +1234,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="80">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Availability Inbound Response</Description>
@@ -1250,7 +1250,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="81">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Availability Outbound Response</Description>
@@ -1266,7 +1266,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="82">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Inbound Update Response</Description>
@@ -1282,7 +1282,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="83">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Outbound Response</Description>
@@ -1298,7 +1298,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="84">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Availability Inbound Update Response</Description>
@@ -1314,7 +1314,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="85">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Availability Inbound Response</Description>
@@ -1330,7 +1330,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="86">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Availability Outbound Response</Description>
@@ -1346,7 +1346,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="87">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Inbound Update Response</Description>
@@ -1362,7 +1362,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="88">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Outbound Response</Description>
@@ -1378,7 +1378,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="89">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Availability Inbound Update Response</Description>
@@ -1394,7 +1394,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="90">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Availability Inbound Response</Description>
@@ -1410,7 +1410,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="91">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Availability Outbound Response</Description>
@@ -1426,7 +1426,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="92">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Inbound Update Response</Description>
@@ -1442,7 +1442,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="93">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Outbound Response</Description>
@@ -1458,7 +1458,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="94">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Availability Inbound Update Response</Description>
@@ -1474,7 +1474,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="95">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Availability Outbound Response</Description>
@@ -1490,7 +1490,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="96">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Inbound Response</Description>
@@ -1506,7 +1506,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="97">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Outbound Response</Description>
@@ -1522,7 +1522,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="98">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Availability Inbound Update Respon</Description>
@@ -1538,7 +1538,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="99">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Availability Outbound Response</Description>
@@ -1554,7 +1554,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="100">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Availability Inbound Response</Description>
@@ -1570,7 +1570,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="101">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Inbound Response</Description>
@@ -1586,7 +1586,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="102">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Outbound Response</Description>
@@ -1602,7 +1602,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="103">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Outbound Update Request</Description>
@@ -1618,7 +1618,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="104">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Outbound Request</Description>
@@ -1634,7 +1634,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="105">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Inbound Request</Description>
@@ -1650,7 +1650,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="106">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Outbound Request</Description>
@@ -1666,7 +1666,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="107">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Inbound Request</Description>
@@ -1682,7 +1682,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="108">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Availability Outbound Update Request</Description>
@@ -1698,7 +1698,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="109">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Availability Outbound Request</Description>
@@ -1714,7 +1714,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="110">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Availability Inbound Request</Description>
@@ -1730,7 +1730,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="111">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Outbound Update Request</Description>
@@ -1746,7 +1746,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="112">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Inbound Request</Description>
@@ -1762,7 +1762,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="113">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Availability Outbound Update Request</Description>
@@ -1778,7 +1778,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="114">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Availability Outbound Request</Description>
@@ -1794,7 +1794,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="115">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Availability Inbound Request</Description>
@@ -1810,7 +1810,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="116">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Outbound Update Request</Description>
@@ -1826,7 +1826,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="117">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Inbound Request</Description>
@@ -1842,7 +1842,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="118">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Availability Outbound Update Request</Description>
@@ -1858,7 +1858,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="119">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Availability Outbound Request</Description>
@@ -1874,7 +1874,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="120">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Availability Inbound Request</Description>
@@ -1890,7 +1890,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="121">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Outbound Request</Description>
@@ -1906,7 +1906,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="122">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Inbound Request</Description>
@@ -1922,7 +1922,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="123">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Availability Outbound Update Request</Description>
@@ -1938,7 +1938,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="124">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Availability Outbound Request</Description>
@@ -1954,7 +1954,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="125">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Availability Inbound Request</Description>
@@ -1970,7 +1970,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="126">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Outbound Request</Description>
@@ -1986,7 +1986,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="127">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Inbound Request</Description>
@@ -2002,7 +2002,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="128">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Availability Outbound Update Reques</Description>
@@ -2018,7 +2018,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="129">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Availability Outbound Request</Description>
@@ -2034,7 +2034,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="130">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Availability Inbound Request</Description>
@@ -2050,7 +2050,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="131">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Outbound Request</Description>
@@ -2066,7 +2066,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="132">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Inbound Request</Description>
@@ -2082,7 +2082,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="133">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Availability Inbound Response</Description>
@@ -2098,7 +2098,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="134">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>MANUAL</Code>
 		<Description>Outgoing manual message</Description>
@@ -2114,7 +2114,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="135">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>ITINERARY</Code>
 		<Description>Itinerary</Description>
@@ -2133,7 +2133,7 @@ template=itinerary
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="136">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>INVOICE</Code>
 		<Description>Invoice</Description>
@@ -2152,7 +2152,7 @@ template=invoice
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="137">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>COVER</Code>
 		<Description>Cover Letter with detailed itinerary</Description>
@@ -2171,7 +2171,7 @@ template=cover-detailed
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="138">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BOOKING_MANUAL</Code>
 		<Description>Booking Customer Message (default)</Description>
@@ -2187,7 +2187,7 @@ template=cover-detailed
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="139">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Sales itinerary (pdf)</Description>
@@ -2206,7 +2206,7 @@ template=itinerary-fo
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="140">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Detailed itinerary (html)</Description>
@@ -2225,7 +2225,7 @@ template=itinerary-detailed
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="142">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Agent sales letter with links</Description>
@@ -2244,7 +2244,7 @@ template=agent-link-letter
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="143">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Sales invoice (pdf)</Description>
@@ -2263,7 +2263,7 @@ template=invoice-fo
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="144">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Vouchers</Description>
@@ -2279,7 +2279,7 @@ template=invoice-fo
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="145">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour orders</Description>
@@ -2295,7 +2295,7 @@ template=invoice-fo
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="146">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>jobSchedulerQueue</Code>
 		<Description>Start the Job Scheduler</Description>
@@ -2317,7 +2317,7 @@ autostart=true
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="147">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_Cancel_RQ</Code>
 		<Description>Booking Cancellation Outbound Request</Description>
@@ -2333,7 +2333,7 @@ autostart=true
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="148">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_Cancel_RQRQ</Code>
 		<Description>Booking Cancellation Inbound Request</Description>
@@ -2352,7 +2352,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="149">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelResModify_RQOut</Code>
 		<Description>Hotel Booking Outbound Change Request</Description>
@@ -2368,7 +2368,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="150">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelResModify_RQ</Code>
 		<Description>Hotel Booking Inbound Change Request</Description>
@@ -2384,7 +2384,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="151">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelResModify_RQOut</Code>
 		<Description>Hotel Booking Outbound Change Response</Description>
@@ -2400,7 +2400,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="152">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelResModify_RS</Code>
 		<Description>Hotel Booking Inbound Change Response</Description>
@@ -2416,7 +2416,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="153">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Booking Cancellation Inbound Response</Description>
@@ -2432,7 +2432,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="154">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Booking Cancellation Outbound Response</Description>
@@ -2448,7 +2448,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="155">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Change Outbound Request</Description>
@@ -2464,7 +2464,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="156">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Change Inbound Request</Description>
@@ -2480,7 +2480,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="157">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Change Inbound Response</Description>
@@ -2496,7 +2496,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="158">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Booking Change Outbound Response</Description>
@@ -2512,7 +2512,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="159">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Change Inbound Request</Description>
@@ -2528,7 +2528,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="160">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Change Outbound Request</Description>
@@ -2544,7 +2544,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="161">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Change Outbound Response</Description>
@@ -2560,7 +2560,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="162">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Change Inbound Response</Description>
@@ -2576,7 +2576,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="163">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Change Outbound Request</Description>
@@ -2592,7 +2592,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="164">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Change Inbound Request</Description>
@@ -2608,7 +2608,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="165">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Change Outbound Response</Description>
@@ -2624,7 +2624,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="166">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Change Inbound Response</Description>
@@ -2640,7 +2640,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="167">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Change Outbound Request</Description>
@@ -2656,7 +2656,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="168">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Change Inbound Request</Description>
@@ -2672,7 +2672,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="169">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Change Outbound Response</Description>
@@ -2688,7 +2688,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="170">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Booking Change Inbound Response</Description>
@@ -2704,7 +2704,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="171">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Booking Change Outbound Request</Description>
@@ -2720,7 +2720,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="172">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Booking Change Inbound Request</Description>
@@ -2736,7 +2736,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="173">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Booking Change Outbound Response</Description>
@@ -2752,7 +2752,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="174">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Booking Change Inbound Response</Description>
@@ -2768,7 +2768,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="175">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Change Outbound Request</Description>
@@ -2784,7 +2784,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="176">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Change Inbound Request</Description>
@@ -2800,7 +2800,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="177">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Change Outbound Response</Description>
@@ -2816,7 +2816,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="178">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Booking Change Inbound Response</Description>
@@ -2832,7 +2832,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="179">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Change Outbound Request</Description>
@@ -2848,7 +2848,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="180">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Change Inbound Request</Description>
@@ -2864,7 +2864,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="181">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Change Outbound Response</Description>
@@ -2880,7 +2880,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="182">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Booking Change Inbound Response</Description>
@@ -2896,7 +2896,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="183">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Update Request Out Error Processor</Description>
@@ -2912,7 +2912,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="184">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Request Out Error Processor</Description>
@@ -2928,7 +2928,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="185">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Request In Error Processor</Description>
@@ -2944,7 +2944,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="186">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Update Request In Error Processor</Description>
@@ -2960,7 +2960,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="187">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Reply In Error Update Processor</Description>
@@ -2976,7 +2976,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="188">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Reply Out Error Update Processor</Description>
@@ -2992,7 +2992,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="189">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Reply In Error Processor</Description>
@@ -3008,7 +3008,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="190">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Reply Out Error Processor</Description>
@@ -3024,7 +3024,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="191">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Information Inbound Request</Description>
@@ -3040,7 +3040,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="192">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Information Outbound Request</Description>
@@ -3056,7 +3056,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="193">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Information Outbound Update Request</Description>
@@ -3072,7 +3072,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="194">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Information Inbound Response</Description>
@@ -3088,7 +3088,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="195">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Information Inbound Update Response</Description>
@@ -3104,7 +3104,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="196">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Information Outbound Response</Description>
@@ -3120,7 +3120,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="197">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>PingOutRQ</Code>
 		<Description>Ping Outgoing Request</Description>
@@ -3136,7 +3136,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="198">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>PingInRQ</Code>
 		<Description>Ping Incoming Request</Description>
@@ -3152,7 +3152,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="199">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>PingOutRS</Code>
 		<Description>Ping Outgoing Response</Description>
@@ -3168,7 +3168,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="200">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>PingInRS</Code>
 		<Description>Ping Incoming Response</Description>
@@ -3184,7 +3184,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="201">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Inbound Request</Description>
@@ -3200,7 +3200,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="202">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Outbound Request</Description>
@@ -3216,7 +3216,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="203">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Outbound Update Request</Description>
@@ -3232,7 +3232,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="204">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Inbound Response</Description>
@@ -3248,7 +3248,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="205">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Inbound Update Response</Description>
@@ -3264,7 +3264,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="206">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Outbound Response</Description>
@@ -3280,7 +3280,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="207">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Information Inbound Response</Description>
@@ -3296,7 +3296,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="208">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Information Inbound Update Response</Description>
@@ -3312,7 +3312,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="209">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Information Outbound Response</Description>
@@ -3328,7 +3328,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="210">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Information Inbound Response</Description>
@@ -3344,7 +3344,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="211">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Information Inbound Update Response</Description>
@@ -3360,7 +3360,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="212">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Information Outbound Response</Description>
@@ -3376,7 +3376,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="213">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Information Inbound Response</Description>
@@ -3392,7 +3392,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="214">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Information Inbound Update Response</Description>
@@ -3408,7 +3408,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="215">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Information Outbound Response</Description>
@@ -3424,7 +3424,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="216">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Information Inbound Response</Description>
@@ -3440,7 +3440,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="217">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Information Inbound Update Response</Description>
@@ -3456,7 +3456,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="218">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Information Outbound Response</Description>
@@ -3472,7 +3472,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="219">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Information Inbound Response</Description>
@@ -3488,7 +3488,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="220">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Information Inbound Update Response</Description>
@@ -3504,7 +3504,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="221">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Information Outbound Response</Description>
@@ -3520,7 +3520,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="222">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Information Inbound Response</Description>
@@ -3536,7 +3536,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="223">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Information Inbound Update Response</Description>
@@ -3552,7 +3552,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="224">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Information Outbound Response</Description>
@@ -3568,7 +3568,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="225">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Information Inbound Request</Description>
@@ -3584,7 +3584,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="226">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Information Outbound Request</Description>
@@ -3600,7 +3600,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="227">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Transportation Information Outbound Update Request</Description>
@@ -3616,7 +3616,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="228">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Information Inbound Request</Description>
@@ -3632,7 +3632,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="229">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Information Outbound Request</Description>
@@ -3648,7 +3648,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="230">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Tour Information Outbound Update Request</Description>
@@ -3664,7 +3664,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="231">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Information Inbound Request</Description>
@@ -3680,7 +3680,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="232">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Information Outbound Request</Description>
@@ -3696,7 +3696,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="233">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Land Information Outbound Update Request</Description>
@@ -3712,7 +3712,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="234">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Information Inbound Request</Description>
@@ -3728,7 +3728,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="235">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Information Outbound Request</Description>
@@ -3744,7 +3744,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="236">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Item Information Outbound Update Request</Description>
@@ -3760,7 +3760,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="237">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Information Inbound Request</Description>
@@ -3776,7 +3776,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="238">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Information Outbound Request</Description>
@@ -3792,7 +3792,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="239">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Information Outbound Update Request</Description>
@@ -3808,7 +3808,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="240">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Information Inbound Request</Description>
@@ -3824,7 +3824,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="241">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Information Outbound Request</Description>
@@ -3840,7 +3840,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="242">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Car Information Outbound Update Request</Description>
@@ -3856,7 +3856,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="243">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>CurrencyRateOut</Code>
 		<Description>Currency Conversion Rate Request</Description>
@@ -3872,7 +3872,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="244">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>ConversionRateResponseIn</Code>
 		<Description>Currency Conversion Rate Response</Description>
@@ -3888,7 +3888,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="245">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Hotel Rate AND Availability Outbound Update Req.</Description>
@@ -3908,7 +3908,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="246">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>OTA_HotelRateAvailRSRS</Code>
 		<Description>Hotel Rate AND Availability Inbound Response</Description>
@@ -3924,7 +3924,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="247">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>StandardMessageRS</Code>
 		<Description>Standard Message Response Out</Description>
@@ -3940,7 +3940,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="248">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>StandardMessageResponse</Code>
 		<Description>Standard Message Response In</Description>
@@ -3956,7 +3956,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="249">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>RunRemoteProcessRQ</Code>
 		<Description>Run Remote Process Request Out</Description>
@@ -3972,7 +3972,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="250">
-		<LastChanged>2012-05-16T03:01:25</LastChanged>
+		<LastChanged>2012-05-26T02:54:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>RunRemoteProcess</Code>
 		<Description>Run Remote Process Request In</Description>

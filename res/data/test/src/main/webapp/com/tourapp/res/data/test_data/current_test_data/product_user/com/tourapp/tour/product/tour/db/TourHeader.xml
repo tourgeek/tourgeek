@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<TourHeader ID="1">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hong Kong and Thailand 7 Day Group Tour</Description>
 		<Code>HKT</Code>
@@ -30,8 +30,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-01-01</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-02-01</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-1</TourType>
 		<TourSeries>Y</TourSeries>
 		<Days>8</Days>
@@ -44,7 +44,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="2">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Basic Tour</Description>
 		<Code/>
@@ -74,8 +74,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-01-01</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-02-01</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-11</TourType>
 		<TourSeries/>
 		<Days/>
@@ -88,7 +88,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="4">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Seven day Bangkok Tour</Description>
 		<Code/>
@@ -118,8 +118,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-05-01</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-06-01</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-3</TourType>
 		<TourSeries>N</TourSeries>
 		<Days>7</Days>
@@ -132,7 +132,7 @@
 		<RegionID>10</RegionID>
 	</TourHeader>
 	<TourHeader ID="5">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bangkok Three Night Module</Description>
 		<Code/>
@@ -162,8 +162,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-09-26</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-10-26</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-7</TourType>
 		<TourSeries/>
 		<Days>4</Days>
@@ -176,7 +176,7 @@
 		<RegionID>10</RegionID>
 	</TourHeader>
 	<TourHeader ID="6">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bangkok Three Night Component</Description>
 		<Code/>
@@ -206,8 +206,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-09-26</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-10-26</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-7</TourType>
 		<TourSeries/>
 		<Days>4</Days>
@@ -220,7 +220,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="7">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Asian Tours Four Night Bangkok Adventure</Description>
 		<Code/>
@@ -250,8 +250,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-01-01</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-02-01</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-7</TourType>
 		<TourSeries/>
 		<Days>5</Days>
@@ -264,7 +264,7 @@
 		<RegionID>10</RegionID>
 	</TourHeader>
 	<TourHeader ID="8">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Customized Tour</Description>
 		<Code/>
@@ -294,8 +294,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-01-01</StartDate>
-		<EndDate>2013-12-31</EndDate>
+		<StartDate>2012-02-01</StartDate>
+		<EndDate>2014-01-31</EndDate>
 		<TourType>-11</TourType>
 		<TourSeries>N</TourSeries>
 		<Days/>
@@ -308,7 +308,7 @@
 		<RegionID/>
 	</TourHeader>
 	<TourHeader ID="9">
-		<LastChanged>2012-05-16T03:02:56</LastChanged>
+		<LastChanged>2012-05-26T02:56:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Remotely Booked Tour</Description>
 		<Code/>
@@ -338,8 +338,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2011-01-01</StartDate>
-		<EndDate>2012-12-31</EndDate>
+		<StartDate>2011-02-01</StartDate>
+		<EndDate>2013-01-31</EndDate>
 		<TourType>-31</TourType>
 		<TourSeries>N</TourSeries>
 		<Days/>
