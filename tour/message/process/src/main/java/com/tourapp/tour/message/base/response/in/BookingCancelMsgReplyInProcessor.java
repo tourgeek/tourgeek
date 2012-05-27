@@ -88,9 +88,9 @@ public class BookingCancelMsgReplyInProcessor extends ProductResponseMsgReplyInP
         return record;
     }
     /**
-     * GetStatusFieldSeq Method.
+     * GetStatusFieldName Method.
      */
-    public String getStatusFieldSeq()
+    public String getStatusFieldName()
     {
         return BookingDetail.PRODUCT_STATUS_ID;
     }

@@ -167,16 +167,16 @@ public class ProductMessageData extends BaseProductMessageData
     /**
      * Update this message key to match the message key in this message.
      */
-    public boolean updateMessageKey(Record record, String iStatusType)
+    public boolean updateMessageKey(Record record, String statusType)
     {
-        String strMessageKeyLastTime = record.getField(record.getFieldSeq(iStatusType) + BookingDetailModel.MESSAGE_KEY_OFFSET).toString();
+        String strMessageKeyLastTime = record.getField(record.getFieldSeq(statusType) + BookingDetailModel.MESSAGE_KEY_OFFSET).toString();
         String strMessageKey = this.getMessageKey(null).toString();
         if (((strMessageKeyLastTime == null) && (strMessageKeyLastTime == strMessageKey))
             || (strMessageKeyLastTime.equals(strMessageKey)))
         { // No actual changes, return the status to the orig value
             return false; // If the data hasn't changed, don't change the status.
         }
-        record.getField(iStatusType + BookingDetailModel.MESSAGE_KEY_OFFSET).setString(strMessageKey);
+        record.getField(record.getFieldSeq(statusType) + BookingDetailModel.MESSAGE_KEY_OFFSET).setString(strMessageKey);
         return true;    // Key changed
     }
     /**

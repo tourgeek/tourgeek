@@ -28,7 +28,7 @@ import org.jbundle.main.db.base.*;
  */
 public class CheckRequestRequiredHandler extends FieldListener
 {
-    protected String m_iFieldTypeToCheck;
+    protected String fieldTypeToCheck;
     /**
      * Default constructor.
      */
@@ -39,19 +39,19 @@ public class CheckRequestRequiredHandler extends FieldListener
     /**
      * CheckRequestRequiredHandler Method.
      */
-    public CheckRequestRequiredHandler(String iFieldTypeToCheck)
+    public CheckRequestRequiredHandler(String fieldTypeToCheck)
     {
         this();
-        this.init(iFieldTypeToCheck);
+        this.init(fieldTypeToCheck);
     }
     /**
      * Initialize class fields.
      */
-    public void init(String iFieldTypeToCheck)
+    public void init(String fieldTypeToCheck)
     {
-        m_iFieldTypeToCheck = "";
+        fieldTypeToCheck = "";
         super.init(null);
-        m_iFieldTypeToCheck = iFieldTypeToCheck;
+        this.fieldTypeToCheck = fieldTypeToCheck;
     }
     /**
      * FieldChanged Method.
@@ -62,8 +62,8 @@ public class CheckRequestRequiredHandler extends FieldListener
             if (this.getOwner().getState() == true)
         { // Call on screen moves only
             BookingDetail recBookingDetail = (BookingDetail)this.getOwner().getRecord();
-            recBookingDetail.checkRequestRequired(m_iFieldTypeToCheck);
-            recBookingDetail.getField(m_iFieldTypeToCheck + BookingHotel.MESSAGE_REQUEST_OFFSET).setState(false); // Reset flag
+            recBookingDetail.checkRequestRequired(fieldTypeToCheck);
+            recBookingDetail.getField(recBookingDetail.getFieldSeq(fieldTypeToCheck) + BookingHotel.MESSAGE_REQUEST_OFFSET).setState(false);    // Reset flag
         }
         return DBConstants.NORMAL_RETURN;
     }

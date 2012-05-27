@@ -1566,10 +1566,11 @@ public class BookingDetail extends BookingSub
         String strMessageTransportID = (String)message.getMessageHeader().get(MessageTransport.TRANSPORT_ID_PARAM);
         if ((strMessageTransportID != null) && (strMessageTransportID.length() > 0))
         {
-            boolean[] brgEnabled = this.getField(iStatusType + MESSAGE_TRANSPORT_OFFSET).setEnableListeners(false);    // No echo
-            this.getField(iStatusType + MESSAGE_TRANSPORT_OFFSET).setString(strMessageTransportID);   // Set the message transport
-            this.getField(iStatusType + MESSAGE_TRANSPORT_OFFSET).setEnableListeners(brgEnabled);
-            if (!strMessageTransportID.equals(this.getField(iStatusType + MESSAGE_TRANSPORT_OFFSET).toString()))
+            int fieldSeq = this.getFieldSeq(iStatusType);
+            boolean[] brgEnabled = this.getField(fieldSeq + MESSAGE_TRANSPORT_OFFSET).setEnableListeners(false);    // No echo
+            this.getField(fieldSeq + MESSAGE_TRANSPORT_OFFSET).setString(strMessageTransportID);   // Set the message transport
+            this.getField(fieldSeq + MESSAGE_TRANSPORT_OFFSET).setEnableListeners(brgEnabled);
+            if (!strMessageTransportID.equals(this.getField(fieldSeq + MESSAGE_TRANSPORT_OFFSET).toString()))
             { // Transport was changed, I must get the NEW message (for the new transport)!
                 return this.checkMessageRequired(iStatusType);
             }

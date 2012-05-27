@@ -70,7 +70,7 @@ public class ProductResponseMsgReplyInProcessor extends BaseMessageReplyInProces
         super.addListeners();
         Record recBookingDetail = (BookingDetail)this.getMainRecord();
         if (recBookingDetail != null)
-            if (this.getStatusFieldSeq() != BookingDetail.INFO_STATUS_ID)    // An info change CAN trigger a pricing change
+            if (!BookingDetail.INFO_STATUS_ID.equalsIgnoreCase(this.getStatusFieldName()))    // An info change CAN trigger a pricing change
         {
             Record recBooking = ((ReferenceField)recBookingDetail.getField(BookingDetail.BOOKING_ID)).getReferenceRecord();
             FieldListener listener = recBooking.getField(Booking.TOUR_PRICING_TYPE_ID).getListener(ChangePricingTypeHandler.class);
@@ -116,8 +116,8 @@ public class ProductResponseMsgReplyInProcessor extends BaseMessageReplyInProces
                         record = record.setHandle(strObjectID, DBConstants.OBJECT_ID_HANDLE);
                         if (record != null)
                         {   // This will also notify anyone listening for this change.
-                            String strOrigMessageKey = record.getField(this.getStatusFieldSeq() + BookingDetail.MESSAGE_KEY_OFFSET).toString();
-                            int iCurrentStatus = (int)record.getField(this.getStatusFieldSeq()).getValue();
+                            String strOrigMessageKey = record.getField(record.getFieldSeq(this.getStatusFieldName()) + BookingDetail.MESSAGE_KEY_OFFSET).toString();
+                            int iCurrentStatus = (int)record.getField(this.getStatusFieldName()).getValue();
                             if (strSentMessageKey != null)
                                 if (strSentMessageKey.equals(strOrigMessageKey))
                                 {
@@ -130,7 +130,7 @@ public class ProductResponseMsgReplyInProcessor extends BaseMessageReplyInProces
                                             int iStatus = productResponse.getMessageDataStatus();
                                             if (iStatus == BaseDataStatus.NO_STATUS)
                                                 iStatus = ((BaseProductResponse)message.getMessageDataDesc(null)).getMessageDataStatus();   // Use the message status
-                                            String iFieldSeq = this.getStatusFieldSeq();
+                                            String iFieldSeq = this.getStatusFieldName();
                                             iErrorCode = this.setRecordDataStatus(record, iFieldSeq, iStatus, productRequest);  // Make sure all the detail has this status
                                             if (record.getEditMode() == DBConstants.EDIT_IN_PROGRESS) // Previous action could have u/d record
                                                 record.set();
@@ -160,9 +160,9 @@ public class ProductResponseMsgReplyInProcessor extends BaseMessageReplyInProces
         return productRequest.setRecordDataStatus(record, iFieldSeq, iStatus);  // Make sure all the detail has this status
     }
     /**
-     * GetStatusFieldSeq Method.
+     * GetStatusFieldName Method.
      */
-    public String getStatusFieldSeq()
+    public String getStatusFieldName()
     {
         return null;    // Override this
     }

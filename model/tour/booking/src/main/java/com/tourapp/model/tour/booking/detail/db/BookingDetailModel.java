@@ -145,7 +145,7 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String DETAIL_DATE_KEY = "DetailDate";
 
     public static final String VENDOR_ID_KEY = "VendorID";
-    public static final int MESSAGE_TRANSPORT_OFFSET = 4 /*InfoMessageTransportID - InfoStatusID*/;
+    public static final int MESSAGE_TRANSPORT_OFFSET = -1 /*InfoMessageTransportID - InfoStatusID*/;
     public static final int MESSAGE_KEY_OFFSET = 1 /*InfoRequestKey - kInfoStatusID*/;
     public static final int MESSAGE_REQUEST_OFFSET = 2 /*InfoStatusRequest - InfoStatusID*/;
     public static final String MESSAGE_PARAM = "message";

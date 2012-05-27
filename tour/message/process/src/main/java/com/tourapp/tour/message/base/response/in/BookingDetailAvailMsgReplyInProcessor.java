@@ -50,9 +50,9 @@ public class BookingDetailAvailMsgReplyInProcessor extends ProductResponseMsgRep
         super.init(taskParent, recordMain, properties);
     }
     /**
-     * GetStatusFieldSeq Method.
+     * GetStatusFieldName Method.
      */
-    public String getStatusFieldSeq()
+    public String getStatusFieldName()
     {
         return BookingDetail.INVENTORY_STATUS_ID;
     }
