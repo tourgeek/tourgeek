@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<TaxRate ID="1">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -8,7 +8,7 @@
 		<TaxRate>0.0100</TaxRate>
 	</TaxRate>
 	<TaxRate ID="2">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -16,7 +16,7 @@
 		<TaxRate>0.0200</TaxRate>
 	</TaxRate>
 	<TaxRate ID="3">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -24,7 +24,7 @@
 		<TaxRate>0.0400</TaxRate>
 	</TaxRate>
 	<TaxRate ID="4">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -32,7 +32,7 @@
 		<TaxRate>0.0600</TaxRate>
 	</TaxRate>
 	<TaxRate ID="5">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -40,7 +40,7 @@
 		<TaxRate>0.0800</TaxRate>
 	</TaxRate>
 	<TaxRate ID="6">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -48,7 +48,7 @@
 		<TaxRate>0.0900</TaxRate>
 	</TaxRate>
 	<TaxRate ID="7">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -56,7 +56,7 @@
 		<TaxRate>0.0100</TaxRate>
 	</TaxRate>
 	<TaxRate ID="8">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -64,7 +64,7 @@
 		<TaxRate>0.0200</TaxRate>
 	</TaxRate>
 	<TaxRate ID="9">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -72,7 +72,7 @@
 		<TaxRate>0.0400</TaxRate>
 	</TaxRate>
 	<TaxRate ID="10">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -80,7 +80,7 @@
 		<TaxRate>0.0600</TaxRate>
 	</TaxRate>
 	<TaxRate ID="11">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -88,7 +88,7 @@
 		<TaxRate>0.0800</TaxRate>
 	</TaxRate>
 	<TaxRate ID="12">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -96,7 +96,7 @@
 		<TaxRate>0.0900</TaxRate>
 	</TaxRate>
 	<TaxRate ID="13">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -104,7 +104,7 @@
 		<TaxRate>0.0100</TaxRate>
 	</TaxRate>
 	<TaxRate ID="14">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -112,7 +112,7 @@
 		<TaxRate>0.0200</TaxRate>
 	</TaxRate>
 	<TaxRate ID="15">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -120,7 +120,7 @@
 		<TaxRate>0.0400</TaxRate>
 	</TaxRate>
 	<TaxRate ID="16">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -128,7 +128,7 @@
 		<TaxRate>0.0600</TaxRate>
 	</TaxRate>
 	<TaxRate ID="17">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -136,7 +136,7 @@
 		<TaxRate>0.0800</TaxRate>
 	</TaxRate>
 	<TaxRate ID="18">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>CA</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -144,7 +144,7 @@
 		<TaxRate>0.0900</TaxRate>
 	</TaxRate>
 	<TaxRate ID="19">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -152,7 +152,7 @@
 		<TaxRate>0.1500</TaxRate>
 	</TaxRate>
 	<TaxRate ID="20">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -160,7 +160,7 @@
 		<TaxRate>0.2800</TaxRate>
 	</TaxRate>
 	<TaxRate ID="21">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -168,7 +168,7 @@
 		<TaxRate>0.3100</TaxRate>
 	</TaxRate>
 	<TaxRate ID="22">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -176,7 +176,7 @@
 		<TaxRate>0.3600</TaxRate>
 	</TaxRate>
 	<TaxRate ID="23">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>H</MaritalStatus>
@@ -184,7 +184,7 @@
 		<TaxRate>0.4000</TaxRate>
 	</TaxRate>
 	<TaxRate ID="24">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -192,7 +192,7 @@
 		<TaxRate>0.1500</TaxRate>
 	</TaxRate>
 	<TaxRate ID="25">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -200,7 +200,7 @@
 		<TaxRate>0.2800</TaxRate>
 	</TaxRate>
 	<TaxRate ID="26">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -208,7 +208,7 @@
 		<TaxRate>0.3100</TaxRate>
 	</TaxRate>
 	<TaxRate ID="27">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -216,7 +216,7 @@
 		<TaxRate>0.3600</TaxRate>
 	</TaxRate>
 	<TaxRate ID="28">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>M</MaritalStatus>
@@ -224,7 +224,7 @@
 		<TaxRate>0.4000</TaxRate>
 	</TaxRate>
 	<TaxRate ID="29">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -232,7 +232,7 @@
 		<TaxRate>0.1500</TaxRate>
 	</TaxRate>
 	<TaxRate ID="30">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -240,7 +240,7 @@
 		<TaxRate>0.2800</TaxRate>
 	</TaxRate>
 	<TaxRate ID="31">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -248,7 +248,7 @@
 		<TaxRate>0.3100</TaxRate>
 	</TaxRate>
 	<TaxRate ID="32">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>S</MaritalStatus>
@@ -256,7 +256,7 @@
 		<TaxRate>0.3600</TaxRate>
 	</TaxRate>
 	<TaxRate ID="33">
-		<LastChanged>2012-05-26T02:55:28</LastChanged>
+		<LastChanged>2012-05-27T06:40:13</LastChanged>
 		<Deleted>N</Deleted>
 		<TaxCode>FE</TaxCode>
 		<MaritalStatus>S</MaritalStatus>

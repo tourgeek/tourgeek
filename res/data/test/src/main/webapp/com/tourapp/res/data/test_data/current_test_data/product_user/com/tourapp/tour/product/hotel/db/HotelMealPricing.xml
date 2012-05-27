@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<HotelMealPricing ID="7">
-		<LastChanged>2012-05-26T02:56:01</LastChanged>
+		<LastChanged>2012-05-27T06:40:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
 		<ClassID>0</ClassID>
-		<StartDate>2012-12-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2013-01-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>2,100.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -16,14 +16,14 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="8">
-		<LastChanged>2012-05-26T02:56:01</LastChanged>
+		<LastChanged>2012-05-27T06:40:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
 		<ClassID>0</ClassID>
-		<StartDate>2012-12-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2013-01-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>1,880.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -32,14 +32,14 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="9">
-		<LastChanged>2012-05-26T02:56:01</LastChanged>
+		<LastChanged>2012-05-27T06:40:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
 		<ClassID>0</ClassID>
-		<StartDate>2012-12-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2013-01-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>1,660.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
@@ -48,14 +48,14 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="10">
-		<LastChanged>2012-05-26T02:56:01</LastChanged>
+		<LastChanged>2012-05-27T06:40:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
 		<RateID/>
 		<ClassID>0</ClassID>
-		<StartDate>2012-12-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2013-01-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>1,150.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>

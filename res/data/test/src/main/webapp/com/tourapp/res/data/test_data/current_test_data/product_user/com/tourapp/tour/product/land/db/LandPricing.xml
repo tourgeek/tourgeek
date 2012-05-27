@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<LandPricing ID="5">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2011-02-01</StartDate>
-		<EndDate>2012-01-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2012-02-29</EndDate>
 		<Cost>102.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -20,14 +20,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="6">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>4</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2011-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>920.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -40,14 +40,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="7">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2011-02-01</StartDate>
-		<EndDate>2012-01-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2012-02-29</EndDate>
 		<Cost>52.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -60,14 +60,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="8">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2011-02-01</StartDate>
-		<EndDate>2012-01-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2012-02-29</EndDate>
 		<Cost>57.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -80,14 +80,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="9">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2011-02-01</StartDate>
-		<EndDate>2012-01-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2012-02-29</EndDate>
 		<Cost>61.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -100,14 +100,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="10">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>3</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>54.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -120,14 +120,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="11">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>3</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>122.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -140,14 +140,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="12">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>3</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>71.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -160,14 +160,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="13">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>3</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>48.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -180,14 +180,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="14">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>5</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2011-02-01</StartDate>
-		<EndDate>2012-01-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2012-02-29</EndDate>
 		<Cost>43.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -200,14 +200,14 @@
 		<VariesDesc>Hours</VariesDesc>
 	</LandPricing>
 	<LandPricing ID="15">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>59.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -220,14 +220,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="16">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>54.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -240,14 +240,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="17">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>63.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -260,14 +260,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="18">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>5</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>2</ClassID>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>45.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>
@@ -280,14 +280,14 @@
 		<VariesDesc/>
 	</LandPricing>
 	<LandPricing ID="19">
-		<LastChanged>2012-05-26T02:56:05</LastChanged>
+		<LastChanged>2012-05-27T06:40:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>104.00</Cost>
 		<ProductTermsID>1</ProductTermsID>
 		<Price/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<Asset ID="1">
-		<LastChanged>2012-05-26T02:55:02</LastChanged>
+		<LastChanged>2012-05-27T06:39:43</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Truck</Description>
 		<Manufacturer>Mitsubishi</Manufacturer>
 		<SerialNumber/>
 		<InventoryNo/>
 		<Location>Garage</Location>
-		<PurchaseDate>2008-03-03</PurchaseDate>
+		<PurchaseDate>2008-04-03</PurchaseDate>
 		<SaleDate/>
 		<FSDeprMethod>S</FSDeprMethod>
 		<FSLife>8</FSLife>
