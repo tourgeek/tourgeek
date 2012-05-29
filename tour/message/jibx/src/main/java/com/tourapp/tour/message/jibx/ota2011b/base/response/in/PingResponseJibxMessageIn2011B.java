@@ -83,8 +83,7 @@ public class PingResponseJibxMessageIn2011B extends BaseJibxMessageIn2011B
             if (errors != null)
             for (_Error error : errors.getErrorList())
             {
-//                FreeText freeText = error.getString();
-//                errorMessage = freeText.getString();
+                errorMessage = error.getString();
             }
             
             BaseMessage message = this.getMessage();

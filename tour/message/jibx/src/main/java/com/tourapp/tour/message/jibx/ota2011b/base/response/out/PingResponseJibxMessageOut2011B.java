@@ -98,10 +98,8 @@ public class PingResponseJibxMessageOut2011B extends BaseJibxMessageOut2011B
             Errors errors = new Errors();
             _Error item = new _Error();
             item.setType("1");
-            FreeText freeText = new FreeText();
-            freeText.setString(strErrorMessage);
-            freeText.setLanguage("en");    // TODO
-//            item.setFreeText(freeText);
+            item.setString(strErrorMessage);
+            item.setLanguage("en");    // TODO
             errors.addError(item);
             root.setErrors(errors);
         }
