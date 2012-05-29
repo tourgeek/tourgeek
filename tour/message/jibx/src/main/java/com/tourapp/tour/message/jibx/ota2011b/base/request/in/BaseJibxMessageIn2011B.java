@@ -1,8 +1,8 @@
 /**
- * @(#)BaseJibxMessageIn2010B.
+ * @(#)BaseJibxMessageIn2011B.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010b.base.request.in;
+package com.tourapp.tour.message.jibx.ota2011b.base.request.in;
 
 import java.awt.*;
 import java.util.*;
@@ -22,19 +22,18 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jbundle.base.message.trx.message.external.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
-import org.jibx.schema.org.opentravel._2010B.ping.*;
 import org.jbundle.thin.base.message.*;
+import org.jibx.schema.org.opentravel._2011B.base.*;
 
 /**
- *  BaseJibxMessageIn2010B - .
+ *  BaseJibxMessageIn2011B - .
  */
-public class BaseJibxMessageIn2010B extends JibxConvertToMessage
+public class BaseJibxMessageIn2011B extends JibxConvertToMessage
 {
     /**
      * Default constructor.
      */
-    public BaseJibxMessageIn2010B()
+    public BaseJibxMessageIn2011B()
     {
         super();
     }
@@ -43,7 +42,7 @@ public class BaseJibxMessageIn2010B extends JibxConvertToMessage
      * This is used for outgoing EC transactions where you have the jaxb message and you need to convert it.
      * @param objRawMessage The (optional) raw data of the message.
      */
-    public BaseJibxMessageIn2010B(ExternalTrxMessageIn message)
+    public BaseJibxMessageIn2011B(ExternalTrxMessageIn message)
     {
         this();
         this.init(message);

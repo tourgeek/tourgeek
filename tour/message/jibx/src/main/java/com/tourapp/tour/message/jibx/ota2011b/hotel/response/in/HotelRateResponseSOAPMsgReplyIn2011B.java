@@ -1,8 +1,8 @@
 /**
- * @(#)HotelRateResponseSOAPMsgReplyIn2010B.
+ * @(#)HotelRateResponseSOAPMsgReplyIn2011B.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010b.hotel.response.in;
+package com.tourapp.tour.message.jibx.ota2011b.hotel.response.in;
 
 import java.awt.*;
 import java.util.*;
@@ -21,27 +21,24 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
-import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.hotel.response.*;
-import javax.xml.soap.*;
-import com.tourapp.tour.product.base.db.*;
-import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.base.response.data.*;
-import com.tourapp.tour.message.base.response.*;
 import org.jbundle.base.message.trx.message.external.*;
+import com.tourapp.tour.message.hotel.request.*;
+import com.tourapp.tour.product.base.db.*;
 import com.tourapp.tour.booking.detail.db.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
-import org.jibx.schema.org.opentravel._2010B.hotel.*;
+import org.jibx.schema.org.opentravel._2011B.hotel.*;
+import com.tourapp.tour.message.base.response.*;
+import com.tourapp.tour.message.base.response.data.*;
+import org.jbundle.thin.base.message.*;
 
 /**
- *  HotelRateResponseSOAPMsgReplyIn2010B - .
+ *  HotelRateResponseSOAPMsgReplyIn2011B - .
  */
-public class HotelRateResponseSOAPMsgReplyIn2010B extends JibxConvertToMessage
+public class HotelRateResponseSOAPMsgReplyIn2011B extends JibxConvertToMessage
 {
     /**
      * Default constructor.
      */
-    public HotelRateResponseSOAPMsgReplyIn2010B()
+    public HotelRateResponseSOAPMsgReplyIn2011B()
     {
         super();
     }
@@ -50,7 +47,7 @@ public class HotelRateResponseSOAPMsgReplyIn2010B extends JibxConvertToMessage
      * This is used for outgoing EC transactions where you have the jaxb message and you need to convert it.
      * @param objRawMessage The (optional) raw data of the message.
      */
-    public HotelRateResponseSOAPMsgReplyIn2010B(ExternalTrxMessageIn message)
+    public HotelRateResponseSOAPMsgReplyIn2011B(ExternalTrxMessageIn message)
     {
         this();
         this.init(message);

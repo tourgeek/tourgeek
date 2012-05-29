@@ -1,8 +1,8 @@
 /**
- * @(#)BaseJibxMessageOut2010B.
+ * @(#)BaseJibxMessageOut2011B.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010b.base.request.out;
+package com.tourapp.tour.message.jibx.ota2011b.base.request.out;
 
 import java.awt.*;
 import java.util.*;
@@ -21,21 +21,20 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
+import org.jibx.schema.org.opentravel._2011B.base.*;
 import org.jbundle.base.message.trx.message.external.*;
 import org.jbundle.thin.base.message.*;
-import org.jibx.schema.org.opentravel._2010B.ping.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
 import org.joda.time.*;
 
 /**
- *  BaseJibxMessageOut2010B - .
+ *  BaseJibxMessageOut2011B - .
  */
-public class BaseJibxMessageOut2010B extends JibxConvertToNative
+public class BaseJibxMessageOut2011B extends JibxConvertToNative
 {
     /**
      * Default constructor.
      */
-    public BaseJibxMessageOut2010B()
+    public BaseJibxMessageOut2011B()
     {
         super();
     }
@@ -47,7 +46,7 @@ public class BaseJibxMessageOut2010B extends JibxConvertToNative
      * An ExternalTrxMessage is the message converted to a format that the receiver can
      * understand (such as ebXML).
      */
-    public BaseJibxMessageOut2010B(ExternalTrxMessageOut message)
+    public BaseJibxMessageOut2011B(ExternalTrxMessageOut message)
     {
         this();
         this.init(message);

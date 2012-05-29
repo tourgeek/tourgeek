@@ -1,8 +1,8 @@
 /**
- * @(#)PingResponseJibxMessageIn2010B.
+ * @(#)PingResponseJibxMessageIn2011B.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010b.base.response.in;
+package com.tourapp.tour.message.jibx.ota2011b.base.response.in;
 
 import java.awt.*;
 import java.util.*;
@@ -20,22 +20,22 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.jibx.ota2010b.base.request.in.*;
+import com.tourapp.tour.message.jibx.ota2011b.base.request.in.*;
+import org.jibx.schema.org.opentravel._2011B.ping.*;
+import org.jibx.schema.org.opentravel._2011B.base.*;
 import org.jbundle.base.message.trx.message.external.*;
-import org.jibx.schema.org.opentravel._2010B.ping.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
-import com.tourapp.tour.message.base.request.in.*;
 import org.jbundle.thin.base.message.*;
+import com.tourapp.tour.message.base.request.in.*;
 
 /**
- *  PingResponseJibxMessageIn2010B - .
+ *  PingResponseJibxMessageIn2011B - .
  */
-public class PingResponseJibxMessageIn2010B extends BaseJibxMessageIn2010B
+public class PingResponseJibxMessageIn2011B extends BaseJibxMessageIn2011B
 {
     /**
      * Default constructor.
      */
-    public PingResponseJibxMessageIn2010B()
+    public PingResponseJibxMessageIn2011B()
     {
         super();
     }
@@ -44,7 +44,7 @@ public class PingResponseJibxMessageIn2010B extends BaseJibxMessageIn2010B
      * This is used for outgoing EC transactions where you have the jaxb message and you need to convert it.
      * @param objRawMessage The (optional) raw data of the message.
      */
-    public PingResponseJibxMessageIn2010B(ExternalTrxMessageIn message)
+    public PingResponseJibxMessageIn2011B(ExternalTrxMessageIn message)
     {
         this();
         this.init(message);
@@ -83,8 +83,8 @@ public class PingResponseJibxMessageIn2010B extends BaseJibxMessageIn2010B
             if (errors != null)
             for (_Error error : errors.getErrorList())
             {
-                FreeText freeText = error.getFreeText();
-                errorMessage = freeText.getString();
+//                FreeText freeText = error.getString();
+//                errorMessage = freeText.getString();
             }
             
             BaseMessage message = this.getMessage();

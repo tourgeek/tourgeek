@@ -1,8 +1,8 @@
 /**
- * @(#)HotelRateRequestSOAPMessageOut2010B.
+ * @(#)HotelRateRequestSOAPMessageOut2011B.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010b.hotel.request.out;
+package com.tourapp.tour.message.jibx.ota2011b.hotel.request.out;
 
 import java.awt.*;
 import java.util.*;
@@ -21,29 +21,27 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
-import com.tourapp.tour.product.base.db.*;
-import org.jbundle.base.message.core.trx.*;
-import org.jbundle.thin.base.message.*;
-import javax.xml.bind.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.message.hotel.request.*;
-import org.jbundle.base.message.trx.transport.soap.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.message.hotel.request.data.*;
 import org.jbundle.base.message.trx.message.external.*;
-import org.jibx.schema.org.opentravel._2010B.hotel.*;
+import com.tourapp.tour.booking.detail.db.*;
+import com.tourapp.tour.product.base.db.*;
+import com.tourapp.tour.message.hotel.request.*;
+import org.jibx.schema.org.opentravel._2011B.hotel.*;
+import org.jibx.schema.org.opentravel._2011B.base.*;
+import org.jibx.schema.org.opentravel._2011B.base.hotelres.*;
+import org.jbundle.thin.base.message.*;
+import com.tourapp.tour.message.hotel.request.data.*;
+import org.jbundle.base.message.core.trx.*;
+import com.tourapp.tour.message.base.request.*;
 
 /**
- *  HotelRateRequestSOAPMessageOut2010B - .
+ *  HotelRateRequestSOAPMessageOut2011B - .
  */
-public class HotelRateRequestSOAPMessageOut2010B extends JibxConvertToNative
+public class HotelRateRequestSOAPMessageOut2011B extends JibxConvertToNative
 {
     /**
      * Default constructor.
      */
-    public HotelRateRequestSOAPMessageOut2010B()
+    public HotelRateRequestSOAPMessageOut2011B()
     {
         super();
     }
@@ -55,7 +53,7 @@ public class HotelRateRequestSOAPMessageOut2010B extends JibxConvertToNative
      * An ExternalTrxMessage is the message converted to a format that the receiver can
      * understand (such as ebXML).
      */
-    public HotelRateRequestSOAPMessageOut2010B(ExternalTrxMessageOut message)
+    public HotelRateRequestSOAPMessageOut2011B(ExternalTrxMessageOut message)
     {
         this();
         this.init(message);

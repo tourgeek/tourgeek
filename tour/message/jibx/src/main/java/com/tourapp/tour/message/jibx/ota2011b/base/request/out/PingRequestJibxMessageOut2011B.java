@@ -1,8 +1,8 @@
 /**
- * @(#)PingResponseJibxMessageOut2010B.
+ * @(#)PingRequestJibxMessageOut2011B.
  * Copyright © 2012 tourapp.com. All rights reserved.
  */
-package com.tourapp.tour.message.jibx.ota2010b.base.response.out;
+package com.tourapp.tour.message.jibx.ota2011b.base.request.out;
 
 import java.awt.*;
 import java.util.*;
@@ -20,23 +20,21 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.jibx.ota2010b.base.request.out.*;
-import org.jibx.schema.org.opentravel._2010B.ping.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
-import org.jbundle.thin.base.message.*;
+import org.jibx.schema.org.opentravel._2011B.ping.*;
+import org.jibx.schema.org.opentravel._2011B.base.*;
 import org.jbundle.base.message.trx.message.external.*;
+import org.jbundle.thin.base.message.*;
 import com.tourapp.tour.message.base.request.in.*;
-import com.tourapp.tour.message.base.response.*;
 
 /**
- *  PingResponseJibxMessageOut2010B - .
+ *  PingRequestJibxMessageOut2011B - .
  */
-public class PingResponseJibxMessageOut2010B extends BaseJibxMessageOut2010B
+public class PingRequestJibxMessageOut2011B extends BaseJibxMessageOut2011B
 {
     /**
      * Default constructor.
      */
-    public PingResponseJibxMessageOut2010B()
+    public PingRequestJibxMessageOut2011B()
     {
         super();
     }
@@ -48,7 +46,7 @@ public class PingResponseJibxMessageOut2010B extends BaseJibxMessageOut2010B
      * An ExternalTrxMessage is the message converted to a format that the receiver can
      * understand (such as ebXML).
      */
-    public PingResponseJibxMessageOut2010B(ExternalTrxMessageOut message)
+    public PingRequestJibxMessageOut2011B(ExternalTrxMessageOut message)
     {
         this();
         this.init(message);
@@ -72,39 +70,9 @@ public class PingResponseJibxMessageOut2010B extends BaseJibxMessageOut2010B
     {
         BaseMessage message = this.getMessage();
         String strMessage = message.getString(PingRequestMessageInProcessor.MESSAGE_PARAM);
-        
-        PingRS root = new PingRS();
-        if (strMessage != null)
-        {
-            PingRS.Sequence item = new PingRS.Sequence();
-            item.setSuccess(new Success());
-            item.setEchoData(strMessage);
-            root.addSuccess(item);
-        }
-        else
-        {
-            String strErrorMessage = null;
-            if (message.getMessageDataDesc(null) instanceof BaseProductResponse)
-            {   // Always
-                BaseProductResponse productResponse = (BaseProductResponse)message.getMessageDataDesc(null);
-                if (productResponse.getMessageDataStatus() == MessageDataDesc.ERROR)
-                {   // Always
-                    strErrorMessage = productResponse.getMessageDataError();
-                }
-            }
-            if (strErrorMessage == null)
-                strErrorMessage = "Error - No data to PING";
-        
-            Errors errors = new Errors();
-            _Error item = new _Error();
-            item.setType("1");
-            FreeText freeText = new FreeText();
-            freeText.setString(strErrorMessage);
-            freeText.setLanguage("en");    // TODO
-            item.setFreeText(freeText);
-            errors.addError(item);
-            root.setErrors(errors);
-        }
+            
+        PingRQ root = new PingRQ();
+        root.setEchoData(strMessage);
         
         OTAPayloadStdAttributes payloadStdAttributes = new OTAPayloadStdAttributes();
         this.setPayloadProperties(message, payloadStdAttributes);

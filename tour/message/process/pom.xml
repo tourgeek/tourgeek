@@ -36,15 +36,6 @@
       <version>${jbundleVersionRange}</version>
     </dependency>
 
-	<dependency>
-	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
-	  <artifactId>org.jibx.schema.org.opentravel._2010B.ping</artifactId>
-	</dependency>
-	<dependency>
-	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
-	  <artifactId>org.jibx.schema.org.opentravel._2010B.hotel</artifactId>
-	</dependency>
-
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.message</artifactId>
