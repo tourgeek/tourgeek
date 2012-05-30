@@ -34,12 +34,12 @@ public class ArTrx extends LinkTrx
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int CR_DR_SCREEN = ScreenConstants.DISPLAY_MODE | 192;
-    public static final int REFUND_SCREEN = ScreenConstants.DISPLAY_MODE | 128;
-    public static final int REFUND_PEND_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
-    public static final int REFUND_CHECK_POST = ScreenConstants.DISPLAY_MODE | 512;
-    public static final int REFUND_CHECK_XML_PRINT = ScreenConstants.DISPLAY_MODE | 2048;
-    public static final int REFUND_CHECK_CANNED_PRINT = ScreenConstants.DISPLAY_MODE | 4096;
+    public static final int CR_DR_SCREEN = ScreenConstants.DETAIL_MODE | 192;
+    public static final int REFUND_SCREEN = ScreenConstants.DETAIL_MODE | 128;
+    public static final int REFUND_PEND_SCREEN = ScreenConstants.DETAIL_MODE | 256;
+    public static final int REFUND_CHECK_POST = ScreenConstants.DETAIL_MODE | 512;
+    public static final int REFUND_CHECK_XML_PRINT = ScreenConstants.DETAIL_MODE | 2048;
+    public static final int REFUND_CHECK_CANNED_PRINT = ScreenConstants.DETAIL_MODE | 4096;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | 8192;
     /**
      * Default constructor.

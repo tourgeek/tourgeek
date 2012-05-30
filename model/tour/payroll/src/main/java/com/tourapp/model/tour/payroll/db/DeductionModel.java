@@ -19,7 +19,6 @@ public interface DeductionModel extends Rec
 
     public static final String DESCRIPTION_KEY = "Description";
     public static final String DEDUCTION_SCREEN_CLASS = "com.tourapp.tour.payroll.screen.misc.DeductionScreen";
-    public static final String _CLASS = "com.tourapp.tour.";
 
     public static final String DEDUCTION_FILE = "Deduction";
     public static final String THIN_CLASS = "com.tourapp.thin.tour.payroll.db.Deduction";

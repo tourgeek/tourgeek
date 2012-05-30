@@ -40,13 +40,13 @@ public class ApTrx extends Trx
 
     public static final int AP_TRX_TYPE = 0;
     public static final int TICKET_TRX_TYPE = ProductTypeModel.AIR_ID;
-    public static final int BROKER_DIST_SCREEN = ScreenConstants.DISPLAY_MODE | 32768;
-    public static final int BROKER_DIST_GRID_SCREEN = ScreenConstants.DISPLAY_MODE | 16384;
-    public static final int TOUR_AP_SCREEN = ScreenConstants.DISPLAY_MODE | 4096;
-    public static final int VENDOR_AP_SCREEN = ScreenConstants.DISPLAY_MODE | 8192;
-    public static final int PAYMENT_HISTORY = ScreenConstants.DISPLAY_MODE | 65536;
-    public static final int PAYMENT_DISTRIBUTION = ScreenConstants.DISPLAY_MODE | 262144;
-    public static final int DISTRIBUTION_SCREEN = ScreenConstants.DISPLAY_MODE | 131072;
+    public static final int BROKER_DIST_SCREEN = ScreenConstants.DETAIL_MODE | 32768;
+    public static final int BROKER_DIST_GRID_SCREEN = ScreenConstants.DETAIL_MODE | 16384;
+    public static final int TOUR_AP_SCREEN = ScreenConstants.DETAIL_MODE | 4096;
+    public static final int VENDOR_AP_SCREEN = ScreenConstants.DETAIL_MODE | 8192;
+    public static final int PAYMENT_HISTORY = ScreenConstants.DETAIL_MODE | 65536;
+    public static final int PAYMENT_DISTRIBUTION = ScreenConstants.DETAIL_MODE | 262144;
+    public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | 131072;
     /**
      * Default constructor.
      */

@@ -33,12 +33,12 @@ public class BaseArPay extends BaseTrx
     private static final long serialVersionUID = 1L;
 
     public static final int POST = ScreenConstants.POST_MODE;
-    public static final int ENTRY_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE;
-    public static final int ENTRY_GRID_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 2;
-    public static final int COLL_POST = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 4;
-    public static final int COLL_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 8;
-    public static final int APPROVE_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 16;
-    public static final int SUBMIT_SCREEN = ScreenConstants.DISPLAY_MODE | ScreenConstants.LAST_MODE * 32;
+    public static final int ENTRY_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE;
+    public static final int ENTRY_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 2;
+    public static final int COLL_POST = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4;
+    public static final int COLL_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 8;
+    public static final int APPROVE_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 16;
+    public static final int SUBMIT_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 32;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 64;
     /**
      * Default constructor.

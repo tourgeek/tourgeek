@@ -31,7 +31,7 @@ public class AcctDetailDist extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int DIST_GROUP_SCREEN = ScreenConstants.DISPLAY_MODE | 4096;
+    public static final int DIST_GROUP_SCREEN = ScreenConstants.DETAIL_MODE | 4096;
     /**
      * Default constructor.
      */

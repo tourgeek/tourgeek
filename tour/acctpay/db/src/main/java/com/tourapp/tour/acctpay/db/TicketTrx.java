@@ -33,8 +33,8 @@ public class TicketTrx extends ApTrx
     private static final long serialVersionUID = 1L;
 
     public static final int ARC_REPORT_POST = ScreenConstants.DETAIL_MODE;
-    public static final int OVERRIDE_SCREEN = ScreenConstants.DISPLAY_MODE | 128;
-    public static final int OVERRIDE_GRID_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
+    public static final int OVERRIDE_SCREEN = ScreenConstants.DETAIL_MODE | 128;
+    public static final int OVERRIDE_GRID_SCREEN = ScreenConstants.DETAIL_MODE | 256;
     /**
      * Default constructor.
      */

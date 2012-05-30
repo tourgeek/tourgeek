@@ -34,7 +34,7 @@ public class BankTrx extends BaseTrx
 
     protected Record m_recBankTrx = null;
     public static final int DISTRIBUTION_SCREEN = ScreenConstants.DETAIL_MODE;
-    public static final int BANK_RECON_SCREEN = ScreenConstants.DISPLAY_MODE | 256;
+    public static final int BANK_RECON_SCREEN = ScreenConstants.DETAIL_MODE | 256;
     public static final int PAYMENT_DISTRIBUTION_SCREEN = LinkTrx.LINK_DISTRIBUTION_SCREEN;
     /**
      * Default constructor.
