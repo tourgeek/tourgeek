@@ -3,22 +3,17 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourapp-tour-message-reactor</artifactId>
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
 
-  <!-- NOTE: This project is only used for packaging since this bundle contains circular dependencies -->
-  <artifactId>tourapp-tour-message-reactor</artifactId>
-  <name>tourapp-tour-message-reactor - Messaging parent</name>
-  <description>Messaging parent</description>
+  <artifactId>tourapp-tour-message-service-reactor</artifactId>
+  <name>tourapp-tour-message-service-reactor - Messaging parent</name>
   <packaging>pom</packaging>
 
   <modules>
-    <module>message</module>
-    <module>process</module>
-    <module>jibx</module>
-    <module>service</module>
+    <module>_2011B</module>
   </modules>
 </project>
