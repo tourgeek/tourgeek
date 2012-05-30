@@ -114,7 +114,6 @@ transportClassName=org.jbundle.main.msg.screen.ScreenMessageTransport
 #Wed May 16 03:07:14 PDT 2012
 messageTimeoutSeconds=300
 singleDetail=true
-transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport.xml.XMLMessageTransport
 </Properties>
 		<MessageTransportType>AutoResp</MessageTransportType>
 	</MessageTransport>

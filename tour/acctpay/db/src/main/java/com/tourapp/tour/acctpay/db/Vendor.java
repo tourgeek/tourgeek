@@ -37,10 +37,10 @@ public class Vendor extends Company
     private static final long serialVersionUID = 1L;
 
     protected ApControl m_recApControl = null;
-    public static final int VENDOR_DETAIL_MODE = ScreenConstants.DISPLAY_MODE | 64;
-    public static final int BROKER_DETAIL_MODE = ScreenConstants.DISPLAY_MODE | 128;
-    public static final int MESSAGE_DETAIL_MODE = ScreenConstants.LAST_MODE * 2;
-    public static final int MESSAGE_LOG_MODE = ScreenConstants.LAST_MODE * 4;
+    public static final int VENDOR_DETAIL_MODE = ScreenConstants.DETAIL_MODE | 64;
+    public static final int BROKER_DETAIL_MODE = ScreenConstants.DETAIL_MODE | 128;
+    public static final int MESSAGE_DETAIL_MODE = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 2;
+    public static final int MESSAGE_LOG_MODE = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4;
     /**
      * Default constructor.
      */

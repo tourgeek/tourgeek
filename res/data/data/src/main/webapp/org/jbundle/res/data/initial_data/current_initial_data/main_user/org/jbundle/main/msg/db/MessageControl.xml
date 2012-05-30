@@ -4,7 +4,7 @@
 		<Deleted>N</Deleted>
 		<Properties/>
 		<WebServicesServer>/ws</WebServicesServer>
-		<DefaultVersionID>19</DefaultVersionID>
+		<DefaultVersionID>22</DefaultVersionID>
 		<BaseNamespace>http://www.opentravel.org/OTA/2003/05</BaseNamespace>
 		<BaseSchemaLocation>http://www.opentravel.org/</BaseSchemaLocation>
 		<WebMessageTransportID>11</WebMessageTransportID>
