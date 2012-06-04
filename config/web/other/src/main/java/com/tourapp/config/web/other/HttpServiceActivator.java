@@ -9,7 +9,9 @@ import javax.servlet.Servlet;
 
 import org.jbundle.base.model.DBConstants;
 import org.jbundle.base.model.Utility;
+import org.jbundle.base.util.Environment;
 import org.jbundle.base.util.EnvironmentActivator;
+import org.jbundle.model.Env;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
 import org.jbundle.util.webapp.base.BaseOsgiServlet;
 import org.jbundle.util.webapp.base.BaseWebappServlet;
@@ -87,23 +89,16 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     public final String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
 
     /**
-     * Called when the http service tracker come up or is shut down.
-     * Start or stop the bundle on start/stop.
-     * @param event The service event.
+     * Make sure the dependent services are up, then call startupService.
+     * @param versionRange Bundle version
+     * @param baseBundleServiceClassName
+     * @return false if I'm waiting for the service to startup.
      */
-    @Override
-    public void serviceChanged(ServiceEvent event) {
-        if (event.getType() == ServiceEvent.REGISTERED)
-        { // Osgi Service is up, Okay to start the server
-            ClassServiceUtility.log(context, LogService.LOG_INFO, "Starting Http Service tracker");
-            if (httpServiceTracker == null)
-            {
-                BundleContext context = event.getServiceReference().getBundle().getBundleContext();
-                this.checkDependentServicesAndStartup(context, EnvironmentActivator.class.getName(), null);
-            }
-        }
-        if (event.getType() == ServiceEvent.UNREGISTERING)
-            super.serviceChanged(event);    // httpService.close();
+    public boolean checkDependentServices(BundleContext bundleContext)
+    {
+    	boolean success = this.addDependentService(context, Env.class.getName(), Environment.class.getName(), null, null);
+    	success = success & super.checkDependentServices(bundleContext);
+    	return success;
     }
 
     /**

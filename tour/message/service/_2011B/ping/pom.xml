@@ -46,6 +46,17 @@
 		<groupId>org.jibx.schema.org.opentravel._2011B</groupId>
 		<artifactId>org.jibx.schema.org.opentravel._2011B.ping</artifactId>
 	</dependency>
+    <dependency>
+      <groupId>org.jbundle.base</groupId>
+      <artifactId>org.jbundle.base</artifactId>
+      <version>0.8.0-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <scope>provided</scope> <!-- This better be provided -->
+    </dependency>
   </dependencies>
 
 </project>
