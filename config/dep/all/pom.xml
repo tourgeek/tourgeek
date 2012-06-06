@@ -83,6 +83,11 @@
       <artifactId>org.jbundle.res.app.contact</artifactId>
       <version>${jbundleAppContactVersionRange}</version>
     </dependency>
-  </dependencies>
+    <dependency>
+      <groupId>org.jbundle.app.test</groupId>
+      <artifactId>org.jbundle.thin.app.test.manual</artifactId>
+      <version>${jbundleVersionRange}</version>
+    </dependency>
+    </dependencies>
   
 </project>
