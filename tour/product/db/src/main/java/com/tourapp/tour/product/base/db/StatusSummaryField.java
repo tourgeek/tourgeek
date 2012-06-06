@@ -98,25 +98,19 @@ public class StatusSummaryField extends IntegerField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
-        //?ScreenComponent blink = createScreenComponent("org.jbundle.base.screen.model.opt.SBlinkImageView", itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
-        org.jbundle.base.screen.model.opt.SBlinkImageView blink = new org.jbundle.base.screen.model.opt.SBlinkImageView((ScreenLocation)itsLocation, (BasePanel)targetScreen, (Converter)converter, iDisplayFieldDesc, null)
-        {
-            public void setEnabled(boolean bEnable)
-            {
-                super.setEnabled(true); // Always stay enabled.
-            }
-        };
+        properties.put(ScreenModel.NEVER_DISABLE, Constants.TRUE);
+        ScreenComponent blink = createScreenComponent(ScreenModel.BLINK_IMAGE, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         blink.setRequestFocusEnabled(false);     // By default, make user click with mouse
         if (((BasePanel)targetScreen).getAppletScreen() != null)
             if (((BasePanel)targetScreen).getAppletScreen().getTask() instanceof org.jbundle.thin.base.screen.BaseApplet)
         {
             org.jbundle.thin.base.screen.BaseApplet applet = (org.jbundle.thin.base.screen.BaseApplet)((BasePanel)targetScreen).getAppletScreen().getTask();
             String strProductType = this.getProductType();
-            blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType, strProductType), 0);
-            blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.INFO, BookingConstants.INFO), BookingConstants.INFO_LOOKUP);
-            blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.COST, BookingConstants.COST), BookingConstants.COST_LOOKUP);
-            blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.INVENTORY, BookingConstants.INVENTORY), BookingConstants.INVENTORY_LOOKUP);
-            blink.addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.PRODUCT, BookingConstants.PRODUCT), BookingConstants.PRODUCT_LOOKUP);
+            ((ExtendedComponent)blink).addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + strProductType, strProductType), 0);
+            ((ExtendedComponent)blink).addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.INFO, BookingConstants.INFO), BookingConstants.INFO_LOOKUP);
+            ((ExtendedComponent)blink).addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.COST, BookingConstants.COST), BookingConstants.COST_LOOKUP);
+            ((ExtendedComponent)blink).addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.INVENTORY, BookingConstants.INVENTORY), BookingConstants.INVENTORY_LOOKUP);
+            ((ExtendedComponent)blink).addIcon(applet.loadImageIcon(BookingConstants.BUTTON_LOCATION + BookingConstants.PRODUCT, BookingConstants.PRODUCT), BookingConstants.PRODUCT_LOOKUP);
         }
         
         if (!(targetScreen instanceof GridScreen))
