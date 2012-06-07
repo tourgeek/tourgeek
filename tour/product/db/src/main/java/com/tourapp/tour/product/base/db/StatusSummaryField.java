@@ -98,6 +98,8 @@ public class StatusSummaryField extends IntegerField
      */
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
+        if (properties == null)
+            properties = new HashMap<String,Object>();
         properties.put(ScreenModel.NEVER_DISABLE, Constants.TRUE);
         ScreenComponent blink = createScreenComponent(ScreenModel.BLINK_IMAGE, itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
         blink.setRequestFocusEnabled(false);     // By default, make user click with mouse
