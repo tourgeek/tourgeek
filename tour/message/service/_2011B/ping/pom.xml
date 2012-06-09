@@ -16,13 +16,6 @@
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
@@ -35,6 +28,7 @@
 	                        *;resolution:=optional,
                         </Import-Package>
                         <Require-Bundle>org.apache.cxf.bundle</Require-Bundle>
+                        <Bundle-Activator>com.tourapp.tour.message.service._2011B.ping.PingServiceActivator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>
@@ -47,10 +41,9 @@
 		<artifactId>org.jibx.schema.org.opentravel._2011B.ping</artifactId>
 	</dependency>
     <dependency>
-      <groupId>org.jbundle.base</groupId>
-      <artifactId>org.jbundle.base</artifactId>
+      <groupId>org.jbundle.base.message</groupId>
+      <artifactId>org.jbundle.base.message.service</artifactId>
       <version>0.8.0-SNAPSHOT</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>

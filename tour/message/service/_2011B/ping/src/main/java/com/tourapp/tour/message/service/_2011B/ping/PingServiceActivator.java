@@ -9,42 +9,23 @@ package com.tourapp.tour.message.service._2011B.ping;
 
 import java.util.Map;
 
-import org.jbundle.base.model.MessageApp;
-import org.jbundle.base.model.Utility;
-import org.jbundle.base.util.BaseThickActivator;
-import org.osgi.framework.BundleContext;
+import org.jbundle.base.db.Record;
+import org.jbundle.base.message.service.BaseMessageServiceActivator;
+import org.jbundle.model.RecordOwnerParent;
 
-public class PingServiceActivator extends BaseThickActivator
+public class PingServiceActivator extends BaseMessageServiceActivator
 {
 	
-    /**
-     * Make sure the dependent services are up, then call startupService.
-     * @param versionRange Bundle version
-     * @param baseBundleServiceClassName
-     * @return false if I'm waiting for the service to startup.
-     */
-    public boolean checkDependentServices(BundleContext bundleContext)
+    public Object createMessageService(RecordOwnerParent task, Record recordMain, Map<String, Object> properties)
     {
-//?    	boolean success = this.addDependentServiceListener(bundleContext, MessageServerActivator.class.getName(), MessageApp.class.getName(), MessageInfoApplication.class.getName(), null);
-    	boolean success = this.addDependentService(bundleContext, MessageApp.class.getName(), "org.jbundle.main.msg.app.MessageInfoApplication", null, null);
-    	success = success & super.checkDependentServices(bundleContext);
-    	return success;
+        return new PingService2011BImpl(task, null, properties);
     }
     /**
-     * Start this service.
-     * Override this to do all the startup.
-     * @return true if successful.
+     * Get the interface/service class name.
+     * @return
      */
-    public Object startupService(BundleContext bundleContext)
+    public Class<?> getInterfaceClass()
     {
-        Map<String,Object> props = this.getServiceProperties();
-        MessageApp app = (MessageApp)this.getService(MessageApp.class.getName());
-        try {
-            service = new PingService2011BImpl(app, null, props);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-    	return service;
+        return org.jibx.schema.org.opentravel._2011B.ping.ws.PingService.class;
     }
 }
