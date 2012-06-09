@@ -1,19 +1,37 @@
+/**
+ * @(#)PingService2011BImpl.
+ * Copyright © 2012 tourapp.com. All rights reserved.
+ */
 package com.tourapp.tour.message.service._2011B.ping;
 
-import java.util.Map;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.Record;
-import org.jbundle.base.message.service.BaseServiceMessageTransport;
-import org.jbundle.model.RecordOwnerParent;
-import org.jibx.schema.org.opentravel._2011B.ping.PingRQ;
-import org.jibx.schema.org.opentravel._2011B.ping.PingRS;
-import org.jibx.schema.org.opentravel._2011B.ping.ws.PingService;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.model.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
+import org.jbundle.base.message.service.*;
+import org.jibx.schema.org.opentravel._2011B.ping.*;
+import org.jibx.schema.org.opentravel._2011B.ping.ws.*;
 
+/**
+ *  PingService2011BImpl - .
+ */
 public class PingService2011BImpl extends BaseServiceMessageTransport
-	implements PingService
+     implements PingService
 {
     /**
-     * Constructor.
+     * Default constructor.
      */
     public PingService2011BImpl()
     {
@@ -21,39 +39,25 @@ public class PingService2011BImpl extends BaseServiceMessageTransport
     }
     /**
      * Constructor.
-     * @param application The parent application.
-     * @param strParams The task properties.
      */
-    public PingService2011BImpl(RecordOwnerParent task, Record recordMain, Map<String, Object> properties)
+    public PingService2011BImpl(RecordOwnerParent parent, Rec recordMain, Map<String, Object> properties)
     {
         this();
-        this.init(task, recordMain, properties);
+        this.init(parent, recordMain, properties);
     }
     /**
-     * Initialization.
-     * @param taskParent Optional task param used to get parent's properties, etc.
-     * @param recordMain Optional main record.
-     * @param properties Optional properties object (note you can add properties later).
+     * Initialize class fields.
      */
-    public void init(RecordOwnerParent task, Record recordMain, Map<String, Object> properties)
+    public void init(RecordOwnerParent parent, Rec recordMain, Map<String, Object> properties)
     {
-        super.init(task, recordMain, properties);
+        super.init(parent, recordMain, properties);
     }
     /**
-     * Free all the resources belonging to this task.
+     * Ping Method.
      */
-    public void free()
+    public PingRS ping(PingRQ request)
     {
-    	super.free();
+        return (PingRS)this.processMessage(request);
     }
-	
-	/**
-	 * Service the ping request.
-	 * @param request
-	 * @return
-	 */
-	public PingRS ping(PingRQ request)
-	{
-	    return (PingRS)this.processMessage(request);
-	}
+
 }
