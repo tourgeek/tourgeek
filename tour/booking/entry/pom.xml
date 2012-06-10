@@ -23,6 +23,7 @@
       *;resolution:=optional,
       com.tourapp.res.tour.booking;resolution:=optional,
       org.jbundle.res.images.tour.buttons;resolution:=optional,
+      com.tourapp.tour.message.base.request.in;resolution:=optional,
     </jbundlePackageImport>
   </properties>
 
