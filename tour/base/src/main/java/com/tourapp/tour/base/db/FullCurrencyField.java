@@ -66,7 +66,7 @@ public class FullCurrencyField extends CurrencyField
     {
         if (targetScreen != null)
         {
-            Record recCurrencys = (Record)((RecordOwner)targetScreen).getRecord(Currencys.CURRENCYS_FILE);
+            Record recCurrencys = (Record)Utility.getRecordOwner(targetScreen).getRecord(Currencys.CURRENCYS_FILE);
             if (recCurrencys != null)
             {
                 BaseField fldCurrencyCode = recCurrencys.getField(Currencys.CURRENCY_CODE);

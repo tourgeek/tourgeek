@@ -58,12 +58,12 @@ public class Product extends VirtualRecord
     private static final long serialVersionUID = 1L;
 
     public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
-    public static final int INVENTORY_GRID_SCREEN = ScreenConstants.LAST_MODE * 2;
-    public static final int INVENTORY_SCREEN = ScreenConstants.LAST_MODE * 4;
-    public static final int RANGE_ADJUST_SCREEN = ScreenConstants.LAST_MODE * 16;
-    public static final int BOOKING_DETAIL_GRID_SCREEN = ScreenConstants.LAST_MODE * 128;
-    public static final int PRODUCT_SEARCH_DETAIL_GRID_SCREEN = ScreenConstants.LAST_MODE * 256;
-    public static final int MESSAGE_DETAIL_MODE = ScreenConstants.LAST_MODE * 64;
+    public static final int INVENTORY_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 2;
+    public static final int INVENTORY_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4;
+    public static final int RANGE_ADJUST_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 16;
+    public static final int BOOKING_DETAIL_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 128;
+    public static final int PRODUCT_SEARCH_DETAIL_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 256;
+    public static final int MESSAGE_DETAIL_MODE = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 64;
     protected ProductPricing m_recProductPricing = null;
     protected ProductTerms m_recProductTerms = null;
     protected InventoryModel m_recInventory = null;
