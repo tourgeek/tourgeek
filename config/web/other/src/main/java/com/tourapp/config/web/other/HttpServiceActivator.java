@@ -41,6 +41,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     public static final String JCALENDARBUTTON = JBUNDLE + "/jcalendarbutton";
     public static final String WEBAPP = JBUNDLE + "/webapp";
     public static final String OSGI_WEBSTART = JBUNDLE + "/osgi-webstart";
+    public static final String OSGI = JBUNDLE + "/osgi";
+    public static final String JBUNDLE_SITE = JBUNDLE + "/jbundle";
     public static final String CALENDARPANEL = JBUNDLE + "/calendarpanel";
     public static final String CALENDARPANEL_JNLP = JBUNDLE + "/calendarpanel/jnlp";
 
@@ -82,6 +84,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             PICTURES,
             WEBAPP,
             OSGI_WEBSTART,
+            OSGI,
+            JBUNDLE_SITE,
             UPLOAD,
     };
     
@@ -206,6 +210,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     || (CALENDARPANEL.equalsIgnoreCase(alias))
                     || (WEBAPP.equalsIgnoreCase(alias))
                     || (OSGI_WEBSTART.equalsIgnoreCase(alias))
+                    || (OSGI.equalsIgnoreCase(alias))
+                    || (JBUNDLE_SITE.equalsIgnoreCase(alias))
                     || (PICTURES.equalsIgnoreCase(alias))
                     || (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
                     || (WEBAPP_WEBSTART_APPLET.equalsIgnoreCase(alias))
