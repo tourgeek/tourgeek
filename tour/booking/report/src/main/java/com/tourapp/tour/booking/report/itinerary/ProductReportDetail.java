@@ -95,7 +95,7 @@ public class ProductReportDetail extends RecordReportDetail
             Record recProduct = ((ReferenceField)recBookingDetail.getField(BookingDetail.PRODUCT_ID)).getReferenceRecord();
             if (recProduct != null)
             {
-                iFieldCount = iFieldCount - (recProduct.getFieldSeq(Hotel.MEAL_PLAN_DAYS_PARAM) + 1) + recProduct.getFieldCount();
+                //iFieldCount = iFieldCount - (recProduct.getFieldSeq(Hotel.MEAL_PLAN_DAYS_PARAM) + 1) + recProduct.getFieldCount();
                 if ((DBConstants.TRUE.equalsIgnoreCase(this.getProperty(City.CITY_FILE))) || (DBConstants.YES.equalsIgnoreCase(this.getProperty(City.CITY_FILE))))
                 {
                     Record recCity = this.getRecord(City.CITY_FILE);
@@ -157,9 +157,10 @@ public class ProductReportDetail extends RecordReportDetail
         }
         
         Record recBookingDetail = this.getRecord(BookingDetail.BOOKING_DETAIL_FILE);
-        for (int iFieldSeq = 0; iFieldSeq < recBookingDetail.getFieldCount(); iFieldSeq++)    // Hotel.HOTEL_FIELDS is the largest possible value
+        for (int iFieldSeq = 0; iFieldSeq < 80; iFieldSeq++)    // Hotel.HOTEL_FIELDS is the largest possible value
         {
-            this.addDetailXMLColumn(recBookingDetail, BookingDetail.PRODUCT_ID, recBookingDetail.getField(iFieldSeq).getFieldName());
+            int iProductID = recBookingDetail.getFieldSeq(BookingDetail.PRODUCT_ID);
+            this.addDetailXMLColumn(recBookingDetail, iProductID, iFieldSeq);
         }
     }
 

@@ -89,6 +89,13 @@ public class RecordReportDetail extends HeadingScreen
             return converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenConstants.SET_ANCHOR), this, ScreenConstants.DEFAULT_DISPLAY);
     }
     /**
+     * AddDetailXMLColumn Method.
+     */
+    public Object addDetailXMLColumn(Record record, int iFieldSeq, int iSecondFieldSeq)
+    {
+        return this.addColumn(new MultipleTableFieldConverter(record, iFieldSeq, iSecondFieldSeq));
+    }
+    /**
      * Display this sub-control in html input format?
      * @param iPrintOptions The view specific print options.
      * @return True if this sub-control is printable.
