@@ -122,7 +122,10 @@ public class AcctBatch extends VirtualRecord
         if (iFieldSeq == 3)
             field = new AcctBatch_UserID(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 4)
-            field = new BooleanField(this, RECURRING, 1, null, null);
+        {
+            field = new BooleanField(this, RECURRING, 1, null, new Boolean(false));
+            field.setNullable(false);
+        }
         if (iFieldSeq == 5)
             field = new AcctBatch_TrxDate(this, TRX_DATE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 6)

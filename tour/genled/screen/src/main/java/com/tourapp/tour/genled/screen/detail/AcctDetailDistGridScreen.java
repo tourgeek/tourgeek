@@ -95,7 +95,7 @@ public class AcctDetailDistGridScreen extends DetailGridScreen
     {
         super.addListeners();
         this.getMainRecord().addListener(new SubFileFilter(this.getHeaderRecord()));
-        this.getHeaderRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).addListener(new FieldReSelectHandler(this));
+        this.getHeaderRecord().getField(AcctDetail.ID).addListener(new FieldReSelectHandler(this));
         this.setEditing(false);
         this.setAppending(false);
     }

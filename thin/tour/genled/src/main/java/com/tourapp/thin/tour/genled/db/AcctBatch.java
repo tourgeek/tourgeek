@@ -65,7 +65,7 @@ public class AcctBatch extends FieldList
         field.setHidden(true);
         field = new FieldInfo(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
-        field = new FieldInfo(this, RECURRING, 1, null, null);
+        field = new FieldInfo(this, RECURRING, 1, null, new Boolean(false));
         field.setDataClass(Boolean.class);
         field = new FieldInfo(this, TRX_DATE, 12, null, null);
         field.setDataClass(Date.class);

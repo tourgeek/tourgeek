@@ -104,6 +104,16 @@ public class AcctBatchDetailGridScreen extends DetailGridScreen
         this.getMainRecord().addListener(new AcctBatchValidateBeh(null));
     }
     /**
+     * AddSubFileFilter Method.
+     */
+    public void addSubFileFilter()
+    {
+        super.addSubFileFilter();
+        SubFileFilter listener = (SubFileFilter)this.getMainRecord().getListener(SubFileFilter.class);
+        if (listener != null)
+            listener.setAddNewHeaderOnAdd(true);    // Create header record if none
+    }
+    /**
      * Add button(s) to the toolbar.
      */
     public void addToolbarButtons(ToolScreen toolScreen)
