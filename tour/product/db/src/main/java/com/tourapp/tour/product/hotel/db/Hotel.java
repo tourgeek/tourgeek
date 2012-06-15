@@ -55,7 +55,7 @@ public class Hotel extends Product
     private static final long serialVersionUID = 1L;
 
     protected HotelMealPricing m_recHotelMealPricing = null;
-    public static final int MEAL_PRICING_GRID_SCREEN = ScreenConstants.LAST_MODE * 32;
+    public static final int MEAL_PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 512;
     /**
      * Default constructor.
      */

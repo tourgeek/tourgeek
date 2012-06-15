@@ -57,7 +57,7 @@ public class Product extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE;
+    public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 32;
     public static final int INVENTORY_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 2;
     public static final int INVENTORY_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4;
     public static final int RANGE_ADJUST_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 16;
