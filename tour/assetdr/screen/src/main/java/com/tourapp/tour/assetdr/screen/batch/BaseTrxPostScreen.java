@@ -71,7 +71,7 @@ public class BaseTrxPostScreen extends Screen
     {
         super.addListeners();
         
-        Record recTrxStatusRef = ((ReferenceField)this.getMainRecord().getField(Trx.TRX_STATUS_ID)).getReferenceRecord(); // Make sure this TrxStatus is different from the one I use for a key.
+        Record recTrxStatusRef = ((ReferenceField)this.getDetailRecord().getField(Trx.TRX_STATUS_ID)).getReferenceRecord(); // Make sure this TrxStatus is different from the one I use for a key.
         this.removeRecord(recTrxStatusRef);
     }
     /**
