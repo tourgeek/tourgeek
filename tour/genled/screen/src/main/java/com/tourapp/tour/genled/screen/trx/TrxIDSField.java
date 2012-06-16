@@ -63,6 +63,33 @@ public class TrxIDSField extends SCannedBox
         super.init(itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, null, strDesc, AcctDetailDist.DIST_SOURCE, AcctDetailDist.DIST_SOURCE, null, null, null);
     }
     /**
+     * Constructor.
+     * @param itsLocation The location of this component within the parent.
+     * @param parentScreen The parent screen.
+     * @param fieldConverter The field this screen field is linked to.
+     * @param iDisplayFieldDesc Do I display the field desc?.
+     */
+    public void init(ScreenLocation itsLocation, BasePanel parentScreen, Converter fieldConverter, int iDisplayFieldDesc, Map<String,Object> properties)
+    {
+        if (fieldConverter != null)
+        { // Make sure this field comes back on the query
+            ((BaseField)fieldConverter.getField()).getRecord().getField(AcctDetailDist.ACCT_DETAIL_ID).setSelected(true);
+        }
+        if (properties == null)
+            properties = new HashMap<String,Object>();
+        String strDesc = AcctDetailDist.DIST_SOURCE;
+        if (parentScreen != null)
+            if (parentScreen.getTask() != null)
+                if (parentScreen.getTask().getApplication() instanceof BaseApplication)
+                    strDesc = ((BaseApplication)parentScreen.getTask().getApplication()).getResources(ResourceConstants.GENLED_RESOURCE, true).getString(strDesc);
+        if (!(parentScreen instanceof GridScreen))
+            if (strDesc != null)
+                properties.put(ScreenModel.DESC, strDesc);
+        properties.put(ScreenModel.IMAGE, AcctDetailDist.DIST_SOURCE);
+        properties.put(ScreenModel.COMMAND, AcctDetailDist.DIST_SOURCE);
+        super.init(itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, properties);
+    }
+    /**
      * Process the command.
      * <br />Step 1 - Process the command if possible and return true if processed.
      * <br />Step 2 - If I can't process, pass to all children (with me as the source).
