@@ -179,8 +179,17 @@ public class BankTrxGridScreen extends DetailGridScreen
     {
         if (strCommand.equalsIgnoreCase(AcctDetailDist.DIST_DISTRIBUTION))
             return (this.onForm(null, BankTrx.DISTRIBUTION_SCREEN, true, iCommandOptions, null) != null);
-        else
-            return super.doCommand(strCommand, sourceSField, iCommandOptions);
+        if (strCommand.equalsIgnoreCase(BankTrx.PAYMENT_DISTRIBUTION))
+        {
+            TrxDesc recTrxDesc = (TrxDesc)((ReferenceField)this.getMainRecord().getField(BankTrx.PAYEE_TRX_DESC_ID)).getReference();
+            if ((recTrxDesc == null)
+                || ((recTrxDesc.getEditMode() != DBConstants.EDIT_CURRENT) && (recTrxDesc.getEditMode() != DBConstants.EDIT_IN_PROGRESS)))
+            {
+                this.getTask().setStatusText(this.getTask().getApplication().getResources(this.getTask().getApplication().getProperty(Params.RESOURCE), true).getString("Payment distribution only exists if a payee is set"));
+                return false;
+            }
+        }
+        return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }
     /**
      * Make a sub-screen.
