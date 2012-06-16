@@ -88,7 +88,7 @@ public class TrxDesc extends VirtualRecord
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == ScreenConstants.DETAIL_MODE)
             screen = Record.makeNewScreen(TrxGroup.TRX_GROUP_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-        else if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == (ScreenConstants.DISPLAY_MODE | 4096))
+        else if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == (ScreenConstants.DETAIL_MODE | 4096))
             screen = Record.makeNewScreen(TrxStatus.TRX_STATUS_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(TRX_DESC_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
@@ -176,7 +176,7 @@ public class TrxDesc extends VirtualRecord
     public int commandToDocType(String strCommand)
     {
         if ("Status".equalsIgnoreCase(strCommand))
-            return ScreenConstants.DISPLAY_MODE | 4096;
+            return ScreenConstants.DETAIL_MODE | 4096;
         else
             return super.commandToDocType(strCommand);
     }

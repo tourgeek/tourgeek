@@ -175,7 +175,7 @@ public class AddFinStmtDetailTotals extends FileListener
      */
     public double getTotal(int iLevel)
     {
-        return this.getScreenRecord().getField(FinStmtReportScreenRecord.TOTAL_0 + iLevel).getValue();
+        return this.getScreenRecord().getField(this.getScreenRecord().getFieldSeq(FinStmtReportScreenRecord.TOTAL_0) + iLevel).getValue();
     }
     /**
      * Add this amount to all the level totals.

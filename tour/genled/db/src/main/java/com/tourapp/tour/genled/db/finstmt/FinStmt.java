@@ -88,7 +88,7 @@ public class FinStmt extends VirtualRecord
     {
         ScreenParent screen = null;
         if ((iDocMode & ScreenConstants.DOC_MODE_MASK) == FinStmt.FIN_STMT_DETAIL_GRID_SCREEN)
-            screen = Record.makeNewScreen(FinStmtDetail.FIN_STMT_DETAIL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(FinStmtDetail.FIN_STMT_DETAIL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
             screen = Record.makeNewScreen(FIN_STMT_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else
