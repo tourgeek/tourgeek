@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Vendor ID="1">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>ASTO01</Code>
 		<Name>Asian Tours</Name>
@@ -14,8 +14,8 @@
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-10-16</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-07-16</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -44,7 +44,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="2">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Regent Hotel</Name>
@@ -58,8 +58,8 @@
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -88,7 +88,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="31">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BASP01</Code>
 		<Name>Banff Springs Hotel</Name>
@@ -102,8 +102,8 @@
 		<Fax>(312) 443-1321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -132,7 +132,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="32">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BATO01</Code>
 		<Name>Banff Local Tours, Inc.</Name>
@@ -146,8 +146,8 @@
 		<Fax>(312) 123-3211</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -176,7 +176,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="33">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>EXHO01</Code>
 		<Name>Excelsior Hotel</Name>
@@ -190,8 +190,8 @@
 		<Fax>01185211212331</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -220,7 +220,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="34">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>FOEX01</Code>
 		<Name>Foreign Exchange Corporation</Name>
@@ -235,8 +235,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>(213) 245-4321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-03-17</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2010-12-17</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -265,7 +265,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="35">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>HOHO01</Code>
 		<Name>Hong Kong Hotel</Name>
@@ -279,8 +279,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>01185212132121</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -309,7 +309,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="36">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>HOLO01</Code>
 		<Name>Hong Kong Land Operator</Name>
@@ -323,8 +323,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>011812828211</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2011-04-01</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2012-01-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -353,7 +353,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="37">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JAHO01</Code>
 		<Name>The Japanese Hotel Chain</Name>
@@ -367,8 +367,8 @@ Suite 1243]]></AddressLine1>
 		<Fax>01185212112321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>http://www.tourgeek.com</Web>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2011-12-10</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2012-09-10</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -384,7 +384,7 @@ Suite 1243]]></AddressLine1>
 		<WSDLPath/>
 		<Properties><![CDATA[#Field properties
 #Thu Mar 10 16:11:49 PST 2011
-destinationMessage=http\://www.tourgeek.com\:8080/ws
+destinationMessage=http\://www.tourgeek.com\:8181/ws
 wsdlPath=http\://www.tourgeek.com/wsdl
 ]]></Properties>
 		<VendorStatusID/>
@@ -401,7 +401,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="38">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JALO01</Code>
 		<Name>Japanese Land Operator</Name>
@@ -415,8 +415,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>01185221234321</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -445,7 +445,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="39">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>KYHO01</Code>
 		<Name>Kyoto Hotel</Name>
@@ -459,8 +459,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>012132132312</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -489,7 +489,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="40">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>MAHO01</Code>
 		<Name>Mandarin Hotel</Name>
@@ -503,8 +503,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>01185283828211</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2011-01-02</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-10-02</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -533,7 +533,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="41">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>NEWO01</Code>
 		<Name>New World Hotel</Name>
@@ -547,8 +547,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>01129239132312</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2011-04-01</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2012-01-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -577,7 +577,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="43">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>UPSV01</Code>
 		<Name>United Parcel Service</Name>
@@ -591,8 +591,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>(818) 555-2121</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>1971-05-28</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>1972-02-28</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -621,7 +621,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="44">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Hong Kong Car Rental</Name>
@@ -635,8 +635,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>22-223-224</Fax>
 		<Email>jim@hkcar.co.hk</Email>
 		<Web/>
-		<DateEntered>2004-03-09</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>2004-12-09</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -665,7 +665,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="45">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>China Cruise Company</Name>
@@ -679,8 +679,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>334-344433</Fax>
 		<Email>res@chinacruise.co.ch</Email>
 		<Web/>
-		<DateEntered>2004-03-09</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>2004-12-09</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -709,7 +709,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="46">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>United Airlines</Name>
@@ -723,8 +723,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>223-232-3443</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>2004-03-09</DateEntered>
-		<DateChanged>2010-03-17</DateChanged>
+		<DateEntered>2004-12-09</DateEntered>
+		<DateChanged>2010-12-17</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -753,7 +753,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="47">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Certified Accounts, Inc.</Name>
@@ -767,8 +767,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>2004-03-10</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>2004-12-10</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -797,7 +797,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="48">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Travel Insurance Pros</Name>
@@ -811,8 +811,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web/>
-		<DateEntered>2004-03-11</DateEntered>
-		<DateChanged>2010-05-04</DateChanged>
+		<DateEntered>2004-12-11</DateEntered>
+		<DateChanged>2011-02-04</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -841,7 +841,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="49">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Sheraton Hotel</Name>
@@ -855,8 +855,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>info@sheraton.com</Email>
 		<Web>www.sheraton.com</Web>
-		<DateEntered>2009-08-13</DateEntered>
-		<DateChanged>2010-03-17</DateChanged>
+		<DateEntered>2010-05-13</DateEntered>
+		<DateChanged>2010-12-17</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -885,7 +885,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="50">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Marriott Hotel</Name>
@@ -899,8 +899,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax/>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>www.marriott.com</Web>
-		<DateEntered>2009-08-13</DateEntered>
-		<DateChanged>2011-04-01</DateChanged>
+		<DateEntered>2010-05-13</DateEntered>
+		<DateChanged>2012-01-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>
@@ -929,7 +929,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="51">
-		<LastChanged>2011-09-09T15:49:33</LastChanged>
+		<LastChanged>2012-06-18T09:53:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Xanadu Hotel</Name>
@@ -943,8 +943,8 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Fax>212-443-2322</Fax>
 		<Email>vendor@tourgeek.com</Email>
 		<Web>http://www.xanadu.com</Web>
-		<DateEntered>2010-03-02</DateEntered>
-		<DateChanged>2011-04-01</DateChanged>
+		<DateEntered>2010-12-02</DateEntered>
+		<DateChanged>2012-01-01</DateChanged>
 		<ChangedID>11</ChangedID>
 		<Comments/>
 		<UserID/>

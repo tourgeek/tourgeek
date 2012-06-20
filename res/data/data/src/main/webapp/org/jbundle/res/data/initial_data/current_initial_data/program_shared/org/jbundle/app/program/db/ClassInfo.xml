@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<ClassInfo ID="2">
 		<LastChanged>2012-01-18T14:47:42</LastChanged>
 		<Deleted>N</Deleted>
@@ -1483,13 +1483,13 @@ button. This button will display the top-level G/L posting transaction.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="46">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-12T21:07:25</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AddPaPaxConverter</ClassName>
 		<BaseClassName>CommandConverter</BaseClassName>
 		<ClassDesc>Add these pax to the Profile and Detail</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.pax</ClassPackage>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>AddPaPaxConverter</ClassSourceFile>
 		<ClassType>Converter</ClassType>
 		<ClassExplain/>
@@ -2595,7 +2595,7 @@ Currently this screen is used to document depreciation entries to be made over t
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="103">
-		<LastChanged>2010-02-05T11:18:11</LastChanged>
+		<LastChanged>2012-03-28T11:03:00</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AssetScreen</ClassName>
 		<BaseClassName>Screen</BaseClassName>
@@ -3894,14 +3894,14 @@ The language preference sets the language for the booking and the currency prefe
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="150">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-12T21:12:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingScreenRecord</ClassName>
 		<BaseClassName>ScreenRecord</BaseClassName>
 		<ClassDesc>Screen Fields for BkBooking</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.base</ClassPackage>
-		<ClassSourceFile>BookingHeaderScreen</ClassSourceFile>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
+		<ClassSourceFile>BookingScreenRecord</ClassSourceFile>
 		<ClassType>Record</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -4164,14 +4164,14 @@ If there are options that require answers, the <help-button>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="162">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2012-04-06T22:52:54</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>RoomTypeField</ClassName>
 		<BaseClassName>ShortField</BaseClassName>
 		<ClassDesc>Room Code Popup</ClassDesc>
-		<ClassProjectID>1,048,581</ClassProjectID>
-		<ClassPackage>.db</ClassPackage>
-		<ClassSourceFile>BookingPax</ClassSourceFile>
+		<ClassProjectID>1,048,584</ClassProjectID>
+		<ClassPackage>.base.db</ClassPackage>
+		<ClassSourceFile>RoomTypeField</ClassSourceFile>
 		<ClassType>Field</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -5830,13 +5830,13 @@ Enter the brochures that make up this bundle of brochures.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="212">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-06T10:16:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CalcBookingDatesHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
 		<ClassDesc>Recalc bk dates, status</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.event</ClassPackage>
+		<ClassProjectID>1,048,584</ClassProjectID>
+		<ClassPackage>.base.event</ClassPackage>
 		<ClassSourceFile>CalcBookingDatesHandler</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
 		<ClassExplain/>
@@ -5847,7 +5847,7 @@ Enter the brochures that make up this bundle of brochures.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="214">
-		<LastChanged>2009-02-12T14:49:24</LastChanged>
+		<LastChanged>2011-08-05T15:59:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CalcEmpTaxesHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
@@ -6708,13 +6708,13 @@ specification.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="243">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-07T09:49:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ChangeTourHeaderHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
 		<ClassDesc>Lookup tour hdr, get tour</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.tour</ClassPackage>
+		<ClassProjectID>1,048,584</ClassProjectID>
+		<ClassPackage>.base.event</ClassPackage>
 		<ClassSourceFile>ChangeTourHeaderHandler</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
 		<ClassExplain/>
@@ -8461,13 +8461,13 @@ estimate.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="330">
-		<LastChanged>2012-04-01T10:52:28</LastChanged>
+		<LastChanged>2012-04-12T21:07:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>DisplayTypeField</ClassName>
 		<BaseClassName>ShortField</BaseClassName>
 		<ClassDesc>Type of display</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.lookup</ClassPackage>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>DisplayTypeField</ClassSourceFile>
 		<ClassType>Field</ClassType>
 		<ClassExplain/>
@@ -12432,13 +12432,13 @@ carrier is distributed to the override summary account:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="533">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-12T21:08:37</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PaxDetailSelectHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
 		<ClassDesc>Move Info On Select</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.pax</ClassPackage>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>PaxDetailSelectHandler</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
 		<ClassExplain/>
@@ -12449,13 +12449,13 @@ carrier is distributed to the override summary account:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="534">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-12T21:08:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PaPaxSelectHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
 		<ClassDesc>Add the profile detail records to this booking</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.pax</ClassPackage>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>PaPaxSelectHandler</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
 		<ClassExplain/>
@@ -12640,14 +12640,14 @@ This table is used in the passenger price file to specify the passenger category
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="548">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-12T21:08:54</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PaxSelectHandler</ClassName>
 		<BaseClassName>SubCountHandler</BaseClassName>
 		<ClassDesc>Count the Passengers and types</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.pax</ClassPackage>
-		<ClassSourceFile>BookingPax</ClassSourceFile>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
+		<ClassSourceFile>PaPaxSelectHandler</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -13670,13 +13670,13 @@ The 'Uninvoiced Tour Cost' account is usually netted with the 'Accounts Payable'
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="588">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T21:09:04</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductDescConverter</ClassName>
 		<BaseClassName>FieldConverter</BaseClassName>
 		<ClassDesc>Convert product name to long</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
-		<ClassPackage>.db</ClassPackage>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>ProductDescConverter</ClassSourceFile>
 		<ClassType>Converter</ClassType>
 		<ClassExplain/>
@@ -15311,13 +15311,13 @@ and if you are running this as an applet, you will have the thin version of the
 		<CopyDescFrom>Request</CopyDescFrom>
 	</ClassInfo>
 	<ClassInfo ID="665">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T21:09:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>RoomConverter</ClassName>
 		<BaseClassName>FieldConverter</BaseClassName>
 		<ClassDesc>Convert Pax in room to rooms</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
-		<ClassPackage>.db</ClassPackage>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>BookingPax</ClassSourceFile>
 		<ClassType>Converter</ClassType>
 		<ClassExplain/>
@@ -15867,7 +15867,7 @@ States or Provicences within Countries.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="724">
-		<LastChanged>2012-04-02T08:19:19</LastChanged>
+		<LastChanged>2010-03-17T15:20:41</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>StatementTypeField</ClassName>
 		<BaseClassName>StringField</BaseClassName>
@@ -16815,7 +16815,7 @@ This screen is used to enter Employee Timecards.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="759">
-		<LastChanged>2012-04-01T09:49:29</LastChanged>
+		<LastChanged>2012-04-01T09:50:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TimeTrxScreen</ClassName>
 		<BaseClassName>Screen</BaseClassName>
@@ -18673,14 +18673,14 @@ When the transaction is made, this behavior creates an entry.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="834">
-		<LastChanged>2012-03-29T10:38:00</LastChanged>
+		<LastChanged>2012-04-12T22:05:33</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>UpdateRefundAcctDetailHandler</ClassName>
 		<BaseClassName>UpdateArTrxAcctDetailHandler</BaseClassName>
 		<ClassDesc>Update the G/L for a refund transaction</ClassDesc>
-		<ClassProjectID>1,048,607</ClassProjectID>
-		<ClassPackage>.screen.refund</ClassPackage>
-		<ClassSourceFile>RefundGridScreen</ClassSourceFile>
+		<ClassProjectID>1,048,579</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
+		<ClassSourceFile>UpdateRefundAcctDetailHandler</ClassSourceFile>
 		<ClassType>Behavior</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -20248,13 +20248,13 @@ Inventory]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1011">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingHotelRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc><![CDATA[This task process the incoming replies from rate requests.
 Then it uses the information to update the booking hotel detail.]]></ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.response.in</ClassPackage>
 		<ClassSourceFile>BookingHotelRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -20283,12 +20283,12 @@ Then it uses the information to update the booking hotel detail.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1018">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingLandRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc>Process the incoming land rates.</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.response.in</ClassPackage>
 		<ClassSourceFile>BookingLandRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>messageprocess</ClassType>
@@ -25171,14 +25171,14 @@ Manually entered invoice.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1243">
-		<LastChanged>2012-03-31T15:58:55</LastChanged>
+		<LastChanged>2012-04-13T00:24:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ApTrxHeaderScreen</ClassName>
 		<BaseClassName>HeaderScreen</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,611</ClassProjectID>
-		<ClassPackage>.screen.trx</ClassPackage>
-		<ClassSourceFile>ApTrxDistGridScreen</ClassSourceFile>
+		<ClassProjectID>1,048,625</ClassProjectID>
+		<ClassPackage>.entry.acctpay</ClassPackage>
+		<ClassSourceFile>ApTrxHeaderScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -27869,13 +27869,13 @@ There are also several detail screens:
 		<CopyDescFrom>TourHeader</CopyDescFrom>
 	</ClassInfo>
 	<ClassInfo ID="1371">
-		<LastChanged>2012-04-01T10:46:59</LastChanged>
+		<LastChanged>2012-04-13T00:43:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourHeaderScreenRecord</ClassName>
 		<BaseClassName>ProductScreenRecord</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
-		<ClassPackage>.tour.screen</ClassPackage>
+		<ClassProjectID>1,048,625</ClassProjectID>
+		<ClassPackage>.entry.tour</ClassPackage>
 		<ClassSourceFile>TourHeaderScreenRecord</ClassSourceFile>
 		<ClassType>record</ClassType>
 		<ClassExplain/>
@@ -29362,12 +29362,12 @@ Country, City, Region, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1432">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateRequestMessageOutProcessor</ClassName>
 		<BaseClassName>BaseMessageOutProcessor</BaseClassName>
 		<ClassDesc>Send a rate request directly to a hotel.</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.request.out</ClassPackage>
 		<ClassSourceFile>HotelRateRequestMessageOutProcessor</ClassSourceFile>
 		<ClassType>messageprocessor</ClassType>
@@ -29379,12 +29379,12 @@ Country, City, Region, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1440">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.request.in</ClassPackage>
 		<ClassSourceFile>HotelRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -29396,12 +29396,12 @@ Country, City, Region, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1447">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateResponseScreen</ClassName>
 		<BaseClassName>BaseProductResponseScreen</BaseClassName>
 		<ClassDesc>Enter the hotel availabilty price</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.screen</ClassPackage>
 		<ClassSourceFile>HotelRateResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -29413,12 +29413,12 @@ Country, City, Region, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1448">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelInfoScreenRecord</ClassName>
 		<BaseClassName>ProductInfoScreenRecord</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.screen</ClassPackage>
 		<ClassSourceFile>HotelInfoScreenRecord</ClassSourceFile>
 		<ClassType>record</ClassType>
@@ -30916,12 +30916,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1525">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductResponseMsgReplyInProcessor</ClassName>
 		<BaseClassName>BaseMessageReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.response.in</ClassPackage>
 		<ClassSourceFile>ProductResponseMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31035,12 +31035,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1556">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.land.request.data</ClassPackage>
 		<ClassSourceFile>LandMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -31052,12 +31052,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1558">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-11T09:50:24</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BaseProductMessageDesc</ClassName>
 		<BaseClassName>MessageRecordDesc</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base</ClassPackage>
 		<ClassSourceFile>BaseProductMessageDesc</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -31086,12 +31086,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1560">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.request.in</ClassPackage>
 		<ClassSourceFile>LandRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -31103,12 +31103,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1563">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>BaseMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.request.in</ClassPackage>
 		<ClassSourceFile>ProductAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31239,12 +31239,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1571">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>BaseMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.request.in</ClassPackage>
 		<ClassSourceFile>ProductAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -31256,12 +31256,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1572">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.request.in</ClassPackage>
 		<ClassSourceFile>HotelAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -31273,12 +31273,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1573">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.request.in</ClassPackage>
 		<ClassSourceFile>LandAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -31290,12 +31290,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1574">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingLandAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.response.in</ClassPackage>
 		<ClassSourceFile>BookingLandAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -31307,12 +31307,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1575">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingHotelAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.response.in</ClassPackage>
 		<ClassSourceFile>BookingHotelAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -31324,12 +31324,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1576">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingHotelInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.response.in</ClassPackage>
 		<ClassSourceFile>BookingHotelInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31341,12 +31341,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1577">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingLandInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.response.in</ClassPackage>
 		<ClassSourceFile>BookingLandInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31358,12 +31358,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1578">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingHotelBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.response.in</ClassPackage>
 		<ClassSourceFile>BookingHotelBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31375,12 +31375,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1579">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingLandBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.response.in</ClassPackage>
 		<ClassSourceFile>BookingLandBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31494,12 +31494,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1592">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>BaseMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.request.in</ClassPackage>
 		<ClassSourceFile>ProductAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31511,12 +31511,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1593">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.request.in</ClassPackage>
 		<ClassSourceFile>HotelBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31528,12 +31528,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1594">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.request.in</ClassPackage>
 		<ClassSourceFile>LandBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31604,12 +31604,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1604">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelAvailResponseScreen</ClassName>
 		<BaseClassName>BaseProductResponseScreen</BaseClassName>
 		<ClassDesc>Hotel inventory screen</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.screen</ClassPackage>
 		<ClassSourceFile>HotelAvailResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -31621,12 +31621,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1606">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingDetailAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>ProductResponseMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.response.in</ClassPackage>
 		<ClassSourceFile>BookingDetailAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31638,12 +31638,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1607">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingDetailBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>ProductResponseMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.response.in</ClassPackage>
 		<ClassSourceFile>BookingDetailBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31655,12 +31655,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1608">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingDetailRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>ProductResponseMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.response.in</ClassPackage>
 		<ClassSourceFile>BookingDetailRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31672,12 +31672,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1609">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingDetailInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>ProductResponseMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.response.in</ClassPackage>
 		<ClassSourceFile>BookingDetailInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31689,7 +31689,7 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1610">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T13:09:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BaseProductResponse</ClassName>
 		<BaseClassName>BaseProductMessageDesc</BaseClassName>
@@ -31723,12 +31723,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1612">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateAvailResponseScreen</ClassName>
 		<BaseClassName>HotelAvailResponseScreen</BaseClassName>
 		<ClassDesc>Combined Rate and availability screen</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.screen</ClassPackage>
 		<ClassSourceFile>HotelRateAvailResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -31757,12 +31757,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1614">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>HotelRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc>Process a combined rate and availability message</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.request.in</ClassPackage>
 		<ClassSourceFile>HotelRateAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31791,12 +31791,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1616">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingHotelRateAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingHotelAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc>Processor for a combined Rate AND Availability message</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.response.in</ClassPackage>
 		<ClassSourceFile>BookingHotelRateAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -31808,12 +31808,12 @@ The main message status are:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1617">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelBookingResponseScreen</ClassName>
 		<BaseClassName>BaseProductResponseScreen</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.screen</ClassPackage>
 		<ClassSourceFile>HotelBookingResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -32048,12 +32048,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1656">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCarAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.response.in</ClassPackage>
 		<ClassSourceFile>BookingCarAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32065,12 +32065,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1657">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCarBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.response.in</ClassPackage>
 		<ClassSourceFile>BookingCarBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32082,12 +32082,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1658">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCarInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.response.in</ClassPackage>
 		<ClassSourceFile>BookingCarInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32099,12 +32099,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1659">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCarRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.response.in</ClassPackage>
 		<ClassSourceFile>BookingCarRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32150,12 +32150,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1662">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCruiseAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.response.in</ClassPackage>
 		<ClassSourceFile>BookingCruiseAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32167,12 +32167,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1663">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCruiseBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.response.in</ClassPackage>
 		<ClassSourceFile>BookingCruiseBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32184,12 +32184,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1664">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCruiseInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.response.in</ClassPackage>
 		<ClassSourceFile>BookingCruiseInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32201,12 +32201,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1665">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCruiseRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.response.in</ClassPackage>
 		<ClassSourceFile>BookingCruiseRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32218,12 +32218,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1666">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTransAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.response.in</ClassPackage>
 		<ClassSourceFile>BookingTransAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32235,12 +32235,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1667">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTransBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.response.in</ClassPackage>
 		<ClassSourceFile>BookingTransBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32252,12 +32252,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1668">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTransInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.response.in</ClassPackage>
 		<ClassSourceFile>BookingTransInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32269,12 +32269,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1669">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTransRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.response.in</ClassPackage>
 		<ClassSourceFile>BookingTransRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32286,12 +32286,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1670">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingAirAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.response.in</ClassPackage>
 		<ClassSourceFile>BookingAirAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32303,12 +32303,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1671">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingAirBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.response.in</ClassPackage>
 		<ClassSourceFile>BookingAirAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32320,12 +32320,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1672">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingAirInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.response.in</ClassPackage>
 		<ClassSourceFile>BookingAirInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32337,12 +32337,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1673">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingAirRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.response.in</ClassPackage>
 		<ClassSourceFile>BookingAirRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32354,12 +32354,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1674">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingItemAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.response.in</ClassPackage>
 		<ClassSourceFile>BookingItemAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32371,12 +32371,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1675">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingItemBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.response.in</ClassPackage>
 		<ClassSourceFile>BookingItemBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32388,12 +32388,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1676">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingItemInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.response.in</ClassPackage>
 		<ClassSourceFile>BookingItemInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32405,12 +32405,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1677">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingItemRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.response.in</ClassPackage>
 		<ClassSourceFile>BookingItemRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32422,12 +32422,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1678">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTourAvailMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailAvailMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.response.in</ClassPackage>
 		<ClassSourceFile>BookingTourAvailMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32439,12 +32439,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1679">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTourBookingMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailBookingMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.response.in</ClassPackage>
 		<ClassSourceFile>BookingTourBookingMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32456,12 +32456,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1680">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTourInfoMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailInfoMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.response.in</ClassPackage>
 		<ClassSourceFile>BookingTourInfoMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32473,12 +32473,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1681">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingTourRateMsgReplyInProcessor</ClassName>
 		<BaseClassName>BookingDetailRateMsgReplyInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.response.in</ClassPackage>
 		<ClassSourceFile>BookingTourRateMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -32711,12 +32711,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1719">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransportationMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.trans.request.data</ClassPackage>
 		<ClassSourceFile>TransportationMessageData</ClassSourceFile>
 		<ClassType/>
@@ -32864,12 +32864,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1728">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CarMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.car.request.data</ClassPackage>
 		<ClassSourceFile>CarMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -33017,12 +33017,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1737">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.cruise.request.data</ClassPackage>
 		<ClassSourceFile>CruiseMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -33034,14 +33034,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1738">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:09:36</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseAvailabilityRequest</ClassName>
 		<BaseClassName>ProductAvailabilityRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.request</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33051,14 +33051,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1739">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:08:48</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseBookingRequest</ClassName>
 		<BaseClassName>ProductBookingRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.request</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33068,14 +33068,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1740">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:11:16</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseInformationRequest</ClassName>
 		<BaseClassName>ProductInformationRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.request</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingRequest</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33085,14 +33085,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1741">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:10:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseRateRequest</ClassName>
 		<BaseClassName>ProductRateRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.request</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingRequest</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33102,14 +33102,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1742">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:14:11</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseAvailabilityResponse</ClassName>
 		<BaseClassName>ProductAvailabilityResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.response</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33119,14 +33119,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1743">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:13:19</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseBookingResponse</ClassName>
 		<BaseClassName>ProductBookingResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.response</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33136,14 +33136,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1744">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:14:35</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseInformationResponse</ClassName>
 		<BaseClassName>ProductInformationResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.response</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33153,14 +33153,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1745">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:14:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseRateResponse</ClassName>
 		<BaseClassName>ProductRateResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.response</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33170,12 +33170,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1746">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.air.request.data</ClassPackage>
 		<ClassSourceFile>AirMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -33187,14 +33187,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1747">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:00:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirAvailabilityRequest</ClassName>
 		<BaseClassName>ProductAvailabilityRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.request</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33204,14 +33204,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1748">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T11:58:17</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirBookingRequest</ClassName>
 		<BaseClassName>ProductBookingRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.request</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33221,14 +33221,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1749">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:00:15</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirInformationRequest</ClassName>
 		<BaseClassName>ProductInformationRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.request</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33238,14 +33238,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1750">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T11:59:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirRateRequest</ClassName>
 		<BaseClassName>ProductRateRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.request</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33255,14 +33255,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1751">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:02:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirAvailabilityResponse</ClassName>
 		<BaseClassName>ProductAvailabilityResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.response</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33272,14 +33272,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1752">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:01:41</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirBookingResponse</ClassName>
 		<BaseClassName>ProductBookingResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.response</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33289,14 +33289,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1753">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:03:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirInformationResponse</ClassName>
 		<BaseClassName>ProductInformationResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.response</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33306,14 +33306,14 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1754">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:03:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirRateResponse</ClassName>
 		<BaseClassName>ProductRateResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.response</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -33323,12 +33323,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1755">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ItemMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.item.request.data</ClassPackage>
 		<ClassSourceFile>ItemMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -33476,12 +33476,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1764">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.tour.request.data</ClassPackage>
 		<ClassSourceFile>TourMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -33646,12 +33646,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1784">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.request.in</ClassPackage>
 		<ClassSourceFile>TransRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33663,12 +33663,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1785">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CarRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.request.in</ClassPackage>
 		<ClassSourceFile>CarRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33680,12 +33680,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1786">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.request.in</ClassPackage>
 		<ClassSourceFile>AirRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33697,12 +33697,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1787">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.request.in</ClassPackage>
 		<ClassSourceFile>CruiseRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33714,12 +33714,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1788">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ItemRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.request.in</ClassPackage>
 		<ClassSourceFile>ItemRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33731,12 +33731,12 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1789">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourRateRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductRateRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.request.in</ClassPackage>
 		<ClassSourceFile>TourRateRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33977,12 +33977,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1803">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.request.in</ClassPackage>
 		<ClassSourceFile>TransBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -33994,12 +33994,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1804">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CarBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.request.in</ClassPackage>
 		<ClassSourceFile>CarBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34011,12 +34011,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1805">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.request.in</ClassPackage>
 		<ClassSourceFile>CruiseBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34028,12 +34028,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1806">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.request.in</ClassPackage>
 		<ClassSourceFile>AirBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34045,12 +34045,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1807">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ItemBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.request.in</ClassPackage>
 		<ClassSourceFile>ItemBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34062,12 +34062,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1808">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourBookingRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductBookingRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.request.in</ClassPackage>
 		<ClassSourceFile>TourBookingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34079,12 +34079,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1809">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.request.in</ClassPackage>
 		<ClassSourceFile>TransAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34096,12 +34096,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1810">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CarAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.request.in</ClassPackage>
 		<ClassSourceFile>CarAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34113,12 +34113,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1811">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.request.in</ClassPackage>
 		<ClassSourceFile>CruiseAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34130,12 +34130,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1812">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.request.in</ClassPackage>
 		<ClassSourceFile>AirAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34147,12 +34147,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1813">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ItemAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.request.in</ClassPackage>
 		<ClassSourceFile>ItemAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -34164,12 +34164,12 @@ Enter the rate classes to used for this product.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1814">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourAvailRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductAvailRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.request.in</ClassPackage>
 		<ClassSourceFile>TourAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -35230,13 +35230,13 @@ There are three ways to price a component:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1903">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T21:07:43</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingSoftDeleteHandler</ClassName>
 		<BaseClassName>SoftDeleteHandler</BaseClassName>
 		<ClassDesc>Soft delete this bookingAdd code to make this work.</ClassDesc>
 		<ClassProjectID>1,048,581</ClassProjectID>
-		<ClassPackage>.db</ClassPackage>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>Booking</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
@@ -35417,14 +35417,14 @@ There are three ways to price a component:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1989">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-07T08:27:25</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BaseStatusUpdateHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.detail.base</ClassPackage>
-		<ClassSourceFile>BookingDetailSubScreen</ClassSourceFile>
+		<ClassProjectID>1,048,584</ClassProjectID>
+		<ClassPackage>.base.event</ClassPackage>
+		<ClassSourceFile>BaseStatusUpdateHandler</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -35759,14 +35759,14 @@ May want to add some capabilities to this field later
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2020">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T17:16:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourEventHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
 		<ClassDesc><![CDATA[A tour or booking event occurred.
 Trigger the actions that are scheduled to occur.]]></ClassDesc>
-		<ClassProjectID>1,048,581</ClassProjectID>
-		<ClassPackage>.db.event</ClassPackage>
+		<ClassProjectID>1,048,584</ClassProjectID>
+		<ClassPackage>.tour.schedule.db</ClassPackage>
 		<ClassSourceFile>TourEventHandler</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
@@ -35796,15 +35796,15 @@ Trigger the actions that are scheduled to occur.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2022">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T17:16:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingStatusEventHandler</ClassName>
 		<BaseClassName>TourEventHandler</BaseClassName>
 		<ClassDesc><![CDATA[Monitor the booking status for changes to trigger events:
 - Accepted -> Accepted event
 - Cancelled -> Cancelled event]]></ClassDesc>
-		<ClassProjectID>1,048,581</ClassProjectID>
-		<ClassPackage>.db.event</ClassPackage>
+		<ClassProjectID>1,048,584</ClassProjectID>
+		<ClassPackage>.tour.schedule.db</ClassPackage>
 		<ClassSourceFile>BookingStatusEventHandler</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
@@ -36291,12 +36291,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2082">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingCancelMsgReplyInProcessor</ClassName>
 		<BaseClassName>ProductResponseMsgReplyInProcessor</BaseClassName>
 		<ClassDesc>Process cancel booking message</ClassDesc>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.response.in</ClassPackage>
 		<ClassSourceFile>BookingCancelMsgReplyInProcessor</ClassSourceFile>
 		<ClassType>processor</ClassType>
@@ -36308,12 +36308,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2083">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductCancelRequestMessageInProcessor</ClassName>
 		<BaseClassName>BaseMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.request.in</ClassPackage>
 		<ClassSourceFile>ProductAvailRequestMessageInProcessor</ClassSourceFile>
 		<ClassType>process</ClassType>
@@ -36325,14 +36325,14 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2084">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:02:05</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirBookingChangeResponse</ClassName>
 		<BaseClassName>AirBookingResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.response</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingResponse</ClassSourceFile>
 		<ClassType>process</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -36342,14 +36342,14 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2085">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:00:32</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirBookingChangeRequest</ClassName>
 		<BaseClassName>AirBookingRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.air.request</ClassPackage>
-		<ClassSourceFile>AirRequest</ClassSourceFile>
+		<ClassSourceFile>AirBookingRequest</ClassSourceFile>
 		<ClassType>process</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -36495,14 +36495,14 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2094">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:09:15</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseBookingChangeRequest</ClassName>
 		<BaseClassName>CruiseBookingRequest</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.request</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingRequest</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -36512,14 +36512,14 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2095">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-12T12:13:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseBookingChangeResponse</ClassName>
 		<BaseClassName>CruiseBookingResponse</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,596</ClassProjectID>
 		<ClassPackage>.cruise.response</ClassPackage>
-		<ClassSourceFile>CruiseRequest</ClassSourceFile>
+		<ClassSourceFile>CruiseBookingResponse</ClassSourceFile>
 		<ClassType>message</ClassType>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -36563,12 +36563,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2098">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandRateResponseScreen</ClassName>
 		<BaseClassName>BaseProductResponseScreen</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.screen</ClassPackage>
 		<ClassSourceFile>LandRateResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -36597,12 +36597,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2100">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandInfoScreenRecord</ClassName>
 		<BaseClassName>ProductInfoScreenRecord</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.screen</ClassPackage>
 		<ClassSourceFile>LandInfoScreenRecord</ClassSourceFile>
 		<ClassType>record</ClassType>
@@ -36614,12 +36614,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2101">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandAvailResponseScreen</ClassName>
 		<BaseClassName>BaseProductResponseScreen</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.screen</ClassPackage>
 		<ClassSourceFile>LandAvailResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -36631,12 +36631,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2102">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:10:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandBookingResponseScreen</ClassName>
 		<BaseClassName>BaseProductResponseScreen</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.screen</ClassPackage>
 		<ClassSourceFile>LandBookingResponseScreen</ClassSourceFile>
 		<ClassType>screen</ClassType>
@@ -36648,12 +36648,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2104">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductResponseMessageData</ClassName>
 		<BaseClassName>BaseProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.response.data</ClassPackage>
 		<ClassSourceFile>ProductResponseMessageData</ClassSourceFile>
 		<ClassType>messagedata</ClassType>
@@ -36665,12 +36665,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2105">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BookingMessageData</ClassName>
 		<BaseClassName>MessageRecordDesc</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.request.data</ClassPackage>
 		<ClassSourceFile>BookingMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36682,12 +36682,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2106">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LineMessageData</ClassName>
 		<BaseClassName>MessageRecordDesc</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.request.data</ClassPackage>
 		<ClassSourceFile>LineMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36699,12 +36699,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2107">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PassengerMessageData</ClassName>
 		<BaseClassName>MessageRecordDesc</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.request.data</ClassPackage>
 		<ClassSourceFile>PassengerMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36716,12 +36716,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2108">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductMessageData</ClassName>
 		<BaseClassName>BaseProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.request.data</ClassPackage>
 		<ClassSourceFile>ProductMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36733,12 +36733,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2109">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductRateResponseMessageData</ClassName>
 		<BaseClassName>ProductResponseMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.response.data</ClassPackage>
 		<ClassSourceFile>ProductRateResponseMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36750,12 +36750,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2110">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelMessageData</ClassName>
 		<BaseClassName>ProductMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.hotel.request.data</ClassPackage>
 		<ClassSourceFile>HotelMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36767,12 +36767,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2111">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateAvailResponseMessageData</ClassName>
 		<BaseClassName>HotelRateResponseMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.hotel.response.data</ClassPackage>
 		<ClassSourceFile>HotelRateAvailResponseMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36784,12 +36784,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2112">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelRateResponseMessageData</ClassName>
 		<BaseClassName>ProductRateResponseMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.hotel.response.data</ClassPackage>
 		<ClassSourceFile>HotelRateResponseMessageData</ClassSourceFile>
 		<ClassType/>
@@ -36801,12 +36801,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2116">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PassengerDetailMessageData</ClassName>
 		<BaseClassName>MessageRecordDesc</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base.request.data</ClassPackage>
 		<ClassSourceFile>PassengerDetailMessageData</ClassSourceFile>
 		<ClassType>messagedata</ClassType>
@@ -36886,12 +36886,12 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2129">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T08:20:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandRateResponseMessageData</ClassName>
 		<BaseClassName>ProductRateResponseMessageData</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.land.response.data</ClassPackage>
 		<ClassSourceFile>LandRateResponseMessageData</ClassSourceFile>
 		<ClassType>message</ClassType>
@@ -37141,13 +37141,13 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2200">
-		<LastChanged>2012-04-01T10:52:04</LastChanged>
+		<LastChanged>2012-04-12T21:09:32</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourChangeHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
 		<ClassDesc>If tour header is changed in booking entry, adjust the current booking</ClassDesc>
-		<ClassProjectID>1,048,625</ClassProjectID>
-		<ClassPackage>.entry.base</ClassPackage>
+		<ClassProjectID>1,048,581</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>TourChangeHandler</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
@@ -37607,12 +37607,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2238">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-11T09:50:37</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BaseProductMessageData</ClassName>
 		<BaseClassName>MessageRecordDesc</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,636</ClassProjectID>
 		<ClassPackage>.base</ClassPackage>
 		<ClassSourceFile>BaseProductMessageData</ClassSourceFile>
 		<ClassType/>
@@ -37624,12 +37624,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2245">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>HotelInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.hotel.request.in</ClassPackage>
 		<ClassSourceFile>HotelInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37641,12 +37641,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2246">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>BaseMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.request.in</ClassPackage>
 		<ClassSourceFile>ProductInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37658,12 +37658,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2254">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PingRequestMessageInProcessor</ClassName>
 		<BaseClassName>BaseMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.base.request.in</ClassPackage>
 		<ClassSourceFile>PingRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37675,12 +37675,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2259">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.trans.request.in</ClassPackage>
 		<ClassSourceFile>TransInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37692,12 +37692,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2260">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.tour.request.in</ClassPackage>
 		<ClassSourceFile>TourInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37709,12 +37709,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2261">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.land.request.in</ClassPackage>
 		<ClassSourceFile>LandInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37726,12 +37726,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2262">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ItemInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.item.request.in</ClassPackage>
 		<ClassSourceFile>ItemInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37743,12 +37743,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2263">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.cruise.request.in</ClassPackage>
 		<ClassSourceFile>CruiseInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37760,12 +37760,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2264">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CarInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.car.request.in</ClassPackage>
 		<ClassSourceFile>CarInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -37777,12 +37777,12 @@ I need to initialize the new booking record.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2265">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-04-10T21:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>AirInfoRequestMessageInProcessor</ClassName>
 		<BaseClassName>ProductInfoRequestMessageInProcessor</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,596</ClassProjectID>
+		<ClassProjectID>1,048,637</ClassProjectID>
 		<ClassPackage>.air.request.in</ClassPackage>
 		<ClassSourceFile>AirInfoRequestMessageInProcessor</ClassSourceFile>
 		<ClassType/>
@@ -38934,12 +38934,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2385">
-		<LastChanged>2012-04-01T10:47:00</LastChanged>
+		<LastChanged>2012-04-12T16:42:34</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductSearchType</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
+		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.search.db</ClassPackage>
 		<ClassSourceFile>ProductSearchType</ClassSourceFile>
 		<ClassType>record</ClassType>
@@ -38951,12 +38951,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2386">
-		<LastChanged>2012-04-01T10:47:00</LastChanged>
+		<LastChanged>2012-04-12T16:42:44</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductSearchTypeField</ClassName>
 		<BaseClassName>ReferenceField</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
+		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.search.db</ClassPackage>
 		<ClassSourceFile>ProductSearchType</ClassSourceFile>
 		<ClassType/>
@@ -38968,12 +38968,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2387">
-		<LastChanged>2012-04-01T10:47:00</LastChanged>
+		<LastChanged>2012-04-12T16:42:02</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductSearchDetail</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
+		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.search.db</ClassPackage>
 		<ClassSourceFile>ProductSearchDetail</ClassSourceFile>
 		<ClassType/>
@@ -38985,12 +38985,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2388">
-		<LastChanged>2012-04-01T10:47:00</LastChanged>
+		<LastChanged>2012-04-12T16:41:23</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductSearchCategoryField</ClassName>
 		<BaseClassName>ReferenceField</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
+		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.search.db</ClassPackage>
 		<ClassSourceFile>ProductSearchCategory</ClassSourceFile>
 		<ClassType/>
@@ -39002,12 +39002,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2389">
-		<LastChanged>2012-04-01T10:47:00</LastChanged>
+		<LastChanged>2012-04-12T16:41:41</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProductSearchCategory</ClassName>
 		<BaseClassName>VirtualRecord</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
+		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.search.db</ClassPackage>
 		<ClassSourceFile>ProductSearchCategory</ClassSourceFile>
 		<ClassType/>
@@ -39155,12 +39155,12 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2398">
-		<LastChanged>2012-04-01T10:47:00</LastChanged>
+		<LastChanged>2012-04-12T16:43:17</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>SetProductTypeHandler</ClassName>
 		<BaseClassName>FieldListener</BaseClassName>
 		<ClassDesc/>
-		<ClassProjectID>1,048,624</ClassProjectID>
+		<ClassProjectID>1,048,584</ClassProjectID>
 		<ClassPackage>.base.search.db</ClassPackage>
 		<ClassSourceFile>ProductSearchDetail</ClassSourceFile>
 		<ClassType/>
@@ -39312,13 +39312,13 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2411">
-		<LastChanged>2012-03-29T10:38:01</LastChanged>
+		<LastChanged>2012-04-12T22:04:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>UpdateCancelationAcctDetailHandler</ClassName>
 		<BaseClassName>UpdateArTrxAcctDetailHandler</BaseClassName>
 		<ClassDesc>Post the cancellation charge</ClassDesc>
-		<ClassProjectID>1,048,607</ClassProjectID>
-		<ClassPackage>.screen.refund</ClassPackage>
+		<ClassProjectID>1,048,579</ClassProjectID>
+		<ClassPackage>.db.event</ClassPackage>
 		<ClassSourceFile>UpdateCancelationAcctDetailHandler</ClassSourceFile>
 		<ClassType>listener</ClassType>
 		<ClassExplain/>
@@ -39431,14 +39431,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2427">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T10:34:56</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>BaseJibxMessageIn2010B</ClassName>
+		<ClassName>BaseJibxMessageIn2011B</ClassName>
 		<BaseClassName>JibxConvertToMessage</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.base.request.in</ClassPackage>
-		<ClassSourceFile>BaseJibxMessageIn2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.base.request.in</ClassPackage>
+		<ClassSourceFile>BaseJibxMessageIn2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39448,14 +39448,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2428">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T10:35:51</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingRequestJibxMessageIn2010B</ClassName>
-		<BaseClassName>BaseJibxMessageIn2010B</BaseClassName>
+		<ClassName>PingRequestJibxMessageIn2011B</ClassName>
+		<BaseClassName>BaseJibxMessageIn2011B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.base.request.in</ClassPackage>
-		<ClassSourceFile>PingRequestJibxMessageIn2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.base.request.in</ClassPackage>
+		<ClassSourceFile>PingRequestJibxMessageIn2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39465,14 +39465,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2429">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T10:34:56</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>BaseJibxMessageOut2010B</ClassName>
+		<ClassName>BaseJibxMessageOut2011B</ClassName>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.base.request.out</ClassPackage>
-		<ClassSourceFile>BaseJibxMessageOut2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.base.request.out</ClassPackage>
+		<ClassSourceFile>BaseJibxMessageOut2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39482,14 +39482,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2430">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T10:36:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingRequestJibxMessageOut2010B</ClassName>
-		<BaseClassName>BaseJibxMessageOut2010B</BaseClassName>
+		<ClassName>PingRequestJibxMessageOut2011B</ClassName>
+		<BaseClassName>BaseJibxMessageOut2011B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.base.request.out</ClassPackage>
-		<ClassSourceFile>PingRequestJibxMessageOut2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.base.request.out</ClassPackage>
+		<ClassSourceFile>PingRequestJibxMessageOut2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39499,14 +39499,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2431">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T10:36:20</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingResponseJibxMessageIn2010B</ClassName>
-		<BaseClassName>BaseJibxMessageIn2010B</BaseClassName>
+		<ClassName>PingResponseJibxMessageIn2011B</ClassName>
+		<BaseClassName>BaseJibxMessageIn2011B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.base.response.in</ClassPackage>
-		<ClassSourceFile>PingResponseJibxMessageIn2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.base.response.in</ClassPackage>
+		<ClassSourceFile>PingResponseJibxMessageIn2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39516,14 +39516,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2432">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T10:36:34</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>PingResponseJibxMessageOut2010B</ClassName>
-		<BaseClassName>BaseJibxMessageOut2010B</BaseClassName>
+		<ClassName>PingResponseJibxMessageOut2011B</ClassName>
+		<BaseClassName>BaseJibxMessageOut2011B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.base.response.out</ClassPackage>
-		<ClassSourceFile>PingResponseJibxMessageOut2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.base.response.out</ClassPackage>
+		<ClassSourceFile>PingResponseJibxMessageOut2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39618,14 +39618,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2439">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T14:51:09</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>HotelRateRequestSOAPMessageIn2010B</ClassName>
-		<BaseClassName>BaseJibxMessageIn2010B</BaseClassName>
+		<ClassName>HotelRateRequestSOAPMessageIn2011B</ClassName>
+		<BaseClassName>BaseJibxMessageIn2011B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.hotel.request.in</ClassPackage>
-		<ClassSourceFile>HotelRateRequestSOAPMessageIn2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.hotel.request.in</ClassPackage>
+		<ClassSourceFile>HotelRateRequestSOAPMessageIn2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39635,13 +39635,13 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2440">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T11:19:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>HotelRateRequestSOAPMessageOut2010B</ClassName>
+		<ClassName>HotelRateRequestSOAPMessageOut2011B</ClassName>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.hotel.request.out</ClassPackage>
+		<ClassPackage>.ota2011b.hotel.request.out</ClassPackage>
 		<ClassSourceFile>HotelRateRequestSOAPMessageOut2010</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39652,14 +39652,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2441">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T11:20:19</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>HotelRateResponseSOAPMsgReplyIn2010B</ClassName>
+		<ClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassName>
 		<BaseClassName>JibxConvertToMessage</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.hotel.response.in</ClassPackage>
-		<ClassSourceFile>HotelRateResponseSOAPMsgReplyIn2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.hotel.response.in</ClassPackage>
+		<ClassSourceFile>HotelRateResponseSOAPMsgReplyIn2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39669,14 +39669,14 @@ and creating the refund pending.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2442">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2012-05-29T11:16:44</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassName>HotelRateResponseSOAPMsgReplyOut2010B</ClassName>
+		<ClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassName>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>.ota2010b.hotel.response.out</ClassPackage>
-		<ClassSourceFile>HotelRateResponseSOAPMsgReplyOut2010B</ClassSourceFile>
+		<ClassPackage>.ota2011b.hotel.response.out</ClassPackage>
+		<ClassSourceFile>HotelRateResponseSOAPMsgReplyOut2011B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
 		<ClassHelp/>
@@ -39766,6 +39766,40 @@ and creating the refund pending.]]></ClassDesc>
 		<ClassExplain/>
 		<ClassHelp/>
 		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="2448">
+		<LastChanged>2012-06-09T12:40:15</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassName>PingServiceActivator</ClassName>
+		<BaseClassName>BaseMessageServiceActivator</BaseClassName>
+		<ClassDesc/>
+		<ClassProjectID>1,048,640</ClassProjectID>
+		<ClassPackage/>
+		<ClassSourceFile>PingServiceActivator</ClassSourceFile>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="2449">
+		<LastChanged>2012-06-09T12:46:48</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassName>PingService2011BImpl</ClassName>
+		<BaseClassName>BaseServiceMessageTransport</BaseClassName>
+		<ClassDesc/>
+		<ClassProjectID>1,048,640</ClassProjectID>
+		<ClassPackage/>
+		<ClassSourceFile>PingService2011BImpl</ClassSourceFile>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements>PingService</ClassImplements>
 		<SeeAlso/>
 		<TechnicalInfo/>
 		<CopyDescFrom/>

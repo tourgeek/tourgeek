@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<BookingPax ID="1">
-		<LastChanged>2011-04-01T17:21:34</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<Sequence>0</Sequence>
@@ -18,7 +18,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="2">
-		<LastChanged>2011-04-01T17:21:34</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<Sequence>1</Sequence>
@@ -36,7 +36,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="3">
-		<LastChanged>2011-04-01T17:21:34</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<Sequence>2</Sequence>
@@ -54,7 +54,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="4">
-		<LastChanged>2011-04-01T17:21:35</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<Sequence>3</Sequence>
@@ -72,7 +72,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="5">
-		<LastChanged>2011-04-01T17:23:59</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<Sequence>0</Sequence>
@@ -90,7 +90,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="6">
-		<LastChanged>2011-04-01T17:23:59</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<Sequence>1</Sequence>
@@ -108,7 +108,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="7">
-		<LastChanged>2011-04-01T17:24:07</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<Sequence>2</Sequence>
@@ -126,7 +126,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="8">
-		<LastChanged>2011-05-01T15:20:35</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<Sequence>0</Sequence>
@@ -144,7 +144,7 @@
 		<Smoker/>
 	</BookingPax>
 	<BookingPax ID="9">
-		<LastChanged>2011-05-01T15:20:35</LastChanged>
+		<LastChanged>2012-06-18T09:55:02</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<Sequence>1</Sequence>

@@ -1,636 +1,636 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<AcctDetailDist ID="1">
-		<LastChanged>2011-01-01T16:45:51</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>1</AcctDetailID>
 		<TrxID>1</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>71,984.43</Amount>
 		<TrxEntry>2011-01-01T16:38:19</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>1</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="2">
-		<LastChanged>2011-01-01T16:45:50</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>1</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-71,984.43</Amount>
 		<TrxEntry>2011-01-01T16:38:19</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>1</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="3">
-		<LastChanged>2011-01-01T16:45:56</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>3</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>102,943.41</Amount>
 		<TrxEntry>2011-01-01T16:41:14</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>3</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="4">
-		<LastChanged>2011-01-01T16:45:55</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-102,943.41</Amount>
 		<TrxEntry>2011-01-01T16:41:14</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>3</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="5">
-		<LastChanged>2011-01-01T16:45:59</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>4</AcctDetailID>
 		<TrxID>3</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>52,481.52</Amount>
 		<TrxEntry>2011-01-01T16:42:09</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>5</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="6">
-		<LastChanged>2011-01-01T16:45:59</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>3</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-52,481.52</Amount>
 		<TrxEntry>2011-01-01T16:42:09</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>5</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="7">
-		<LastChanged>2011-01-01T16:46:03</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>5</AcctDetailID>
 		<TrxID>4</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>25,675.87</Amount>
 		<TrxEntry>2011-01-01T16:42:49</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>7</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="8">
-		<LastChanged>2011-01-01T16:46:02</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>4</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-25,675.87</Amount>
 		<TrxEntry>2011-01-01T16:42:49</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>7</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="9">
-		<LastChanged>2011-01-01T16:46:09</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>6</AcctDetailID>
 		<TrxID>5</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>2,839.89</Amount>
 		<TrxEntry>2011-01-01T16:43:31</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>9</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="10">
-		<LastChanged>2011-01-01T16:46:08</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>5</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-2,839.89</Amount>
 		<TrxEntry>2011-01-01T16:43:31</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>9</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="11">
-		<LastChanged>2011-01-01T16:46:13</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>7</AcctDetailID>
 		<TrxID>6</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>15,741.34</Amount>
 		<TrxEntry>2011-01-01T16:43:59</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>11</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="12">
-		<LastChanged>2011-01-01T16:46:12</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>6</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-15,741.34</Amount>
 		<TrxEntry>2011-01-01T16:43:59</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>11</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="13">
-		<LastChanged>2011-01-01T16:46:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>8</AcctDetailID>
 		<TrxID>7</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>118</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>8,201.23</Amount>
 		<TrxEntry>2011-01-01T16:44:30</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>13</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="14">
-		<LastChanged>2011-01-01T16:46:16</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>2</AcctDetailID>
 		<TrxID>7</TrxID>
 		<TrxDescID>164</TrxDescID>
 		<TrxTypeID>120</TrxTypeID>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-8,201.23</Amount>
 		<TrxEntry>2011-01-01T16:44:30</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>13</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="15">
-		<LastChanged>2011-01-01T16:51:00</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>9</AcctDetailID>
 		<TrxID>9</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>439.18</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="16">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>10</AcctDetailID>
 		<TrxID>10</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>100,000.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="17">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>11</AcctDetailID>
 		<TrxID>11</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>11,993.95</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="18">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>12</AcctDetailID>
 		<TrxID>12</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>1,800.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="19">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>13</AcctDetailID>
 		<TrxID>13</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>1,500.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="20">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>14</AcctDetailID>
 		<TrxID>14</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>402.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="21">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>15</AcctDetailID>
 		<TrxID>15</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>18,459.57</Amount>
-		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
+		<TrxEntry>2012-04-01T09:42:28</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="22">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>16</AcctDetailID>
 		<TrxID>16</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2008-12-19T03:27:02</TrxDate>
+		<TrxDate>2009-03-19T03:27:02</TrxDate>
 		<Amount>-7,194.60</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="23">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>17</AcctDetailID>
 		<TrxID>17</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>8,180.01</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="24">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>18</AcctDetailID>
 		<TrxID>18</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-3,320.75</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="25">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>19</AcctDetailID>
 		<TrxID>19</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-200,000.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="26">
-		<LastChanged>2011-01-01T16:51:53</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>20</AcctDetailID>
 		<TrxID>20</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>-32,259.36</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="27">
-		<LastChanged>2007-01-25T06:06:00</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>21</AcctDetailID>
 		<TrxID>21</TrxID>
 		<TrxDescID>5</TrxDescID>
 		<TrxTypeID/>
-		<TrxDate>2011-11-01T00:00:00</TrxDate>
+		<TrxDate>2012-02-01T00:00:00</TrxDate>
 		<Amount>100,000.00</Amount>
 		<TrxEntry>2011-01-01T00:00:00</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>15</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="28">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>22</AcctDetailID>
 		<TrxID>8</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>177</TrxTypeID>
-		<TrxDate>2012-02-05T15:19:34</TrxDate>
+		<TrxDate>2012-05-05T15:19:34</TrxDate>
 		<Amount>600.00</Amount>
 		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>28</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="29">
-		<LastChanged>2011-04-05T15:20:18</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>23</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>180</TrxTypeID>
-		<TrxDate>2012-02-05T15:20:17</TrxDate>
+		<TrxDate>2012-05-05T15:20:17</TrxDate>
 		<Amount>3,627.90</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>29</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="30">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>24</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>179</TrxTypeID>
-		<TrxDate>2012-02-05T15:20:17</TrxDate>
+		<TrxDate>2012-05-05T15:20:17</TrxDate>
 		<Amount>-3,627.90</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>29</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="31">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>25</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>183</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>3,627.90</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>29</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="32">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>26</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>184</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>-3,627.90</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>29</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="33">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>27</AcctDetailID>
 		<TrxID>1</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>178</TrxTypeID>
-		<TrxDate>2012-02-05T15:19:34</TrxDate>
+		<TrxDate>2012-05-05T15:19:34</TrxDate>
 		<Amount>-600.00</Amount>
 		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>28</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="34">
-		<LastChanged>2011-04-05T15:20:18</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>22</AcctDetailID>
 		<TrxID>8</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>177</TrxTypeID>
-		<TrxDate>2012-02-05T15:19:34</TrxDate>
+		<TrxDate>2012-05-05T15:19:34</TrxDate>
 		<Amount>800.00</Amount>
 		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>34</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="35">
-		<LastChanged>2011-04-05T15:20:17</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>27</AcctDetailID>
 		<TrxID>3</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>178</TrxTypeID>
-		<TrxDate>2012-02-05T15:19:34</TrxDate>
+		<TrxDate>2012-05-05T15:19:34</TrxDate>
 		<Amount>-800.00</Amount>
 		<TrxEntry>2011-04-05T15:20:17</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>34</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="36">
-		<LastChanged>2011-05-01T15:23:35</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>28</AcctDetailID>
 		<TrxID>9</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>177</TrxTypeID>
-		<TrxDate>2012-03-01T15:22:50</TrxDate>
+		<TrxDate>2012-06-01T15:22:50</TrxDate>
 		<Amount>400.00</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>36</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="37">
-		<LastChanged>2011-05-01T15:23:35</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>29</AcctDetailID>
 		<TrxID>5</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>180</TrxTypeID>
-		<TrxDate>2012-03-01T15:23:34</TrxDate>
+		<TrxDate>2012-06-01T15:23:34</TrxDate>
 		<Amount>2,891.07</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>37</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="38">
-		<LastChanged>2011-05-01T15:23:34</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>30</AcctDetailID>
 		<TrxID>5</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>179</TrxTypeID>
-		<TrxDate>2012-03-01T15:23:34</TrxDate>
+		<TrxDate>2012-06-01T15:23:34</TrxDate>
 		<Amount>-2,891.07</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>37</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="39">
-		<LastChanged>2011-05-01T15:23:34</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>31</AcctDetailID>
 		<TrxID>5</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>183</TrxTypeID>
-		<TrxDate>2012-05-24T00:00:00</TrxDate>
+		<TrxDate>2012-08-24T00:00:00</TrxDate>
 		<Amount>2,891.07</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>37</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="40">
-		<LastChanged>2011-05-01T15:23:34</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>32</AcctDetailID>
 		<TrxID>5</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>184</TrxTypeID>
-		<TrxDate>2012-05-24T00:00:00</TrxDate>
+		<TrxDate>2012-08-24T00:00:00</TrxDate>
 		<Amount>-2,891.07</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>37</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="41">
-		<LastChanged>2011-05-01T15:23:34</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>33</AcctDetailID>
 		<TrxID>4</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>178</TrxTypeID>
-		<TrxDate>2012-03-01T15:22:50</TrxDate>
+		<TrxDate>2012-06-01T15:22:50</TrxDate>
 		<Amount>-400.00</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>36</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="42">
-		<LastChanged>2011-05-01T15:23:35</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>28</AcctDetailID>
 		<TrxID>9</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>177</TrxTypeID>
-		<TrxDate>2012-03-01T15:22:50</TrxDate>
+		<TrxDate>2012-06-01T15:22:50</TrxDate>
 		<Amount>3,027.90</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>42</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="43">
-		<LastChanged>2011-05-01T15:23:36</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>34</AcctDetailID>
 		<TrxID>1</TrxID>
 		<TrxDescID>168</TrxDescID>
 		<TrxTypeID>144</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>4,400.00</Amount>
 		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>43</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="44">
-		<LastChanged>2011-05-01T15:23:35</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>35</AcctDetailID>
 		<TrxID>1</TrxID>
 		<TrxDescID>168</TrxDescID>
 		<TrxTypeID>145</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>-4,400.00</Amount>
 		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>43</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="45">
-		<LastChanged>2011-05-01T15:23:36</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>34</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>168</TrxDescID>
 		<TrxTypeID>144</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>230.00</Amount>
 		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>45</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="46">
-		<LastChanged>2011-05-01T15:23:35</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>35</AcctDetailID>
 		<TrxID>2</TrxID>
 		<TrxDescID>168</TrxDescID>
 		<TrxTypeID>145</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>-230.00</Amount>
 		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>45</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="47">
-		<LastChanged>2011-05-01T15:23:36</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>34</AcctDetailID>
 		<TrxID>3</TrxID>
 		<TrxDescID>168</TrxDescID>
 		<TrxTypeID>144</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>84.00</Amount>
 		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>47</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="48">
-		<LastChanged>2011-05-01T15:23:35</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>35</AcctDetailID>
 		<TrxID>3</TrxID>
 		<TrxDescID>168</TrxDescID>
 		<TrxTypeID>145</TrxTypeID>
-		<TrxDate>2012-05-06T00:00:00</TrxDate>
+		<TrxDate>2012-08-06T00:00:00</TrxDate>
 		<Amount>-84.00</Amount>
 		<TrxEntry>2011-05-01T15:23:35</TrxEntry>
 		<UserID>11</UserID>
 		<AcctDetailDistGroupID>47</AcctDetailDistGroupID>
 	</AcctDetailDist>
 	<AcctDetailDist ID="49">
-		<LastChanged>2011-05-01T15:23:36</LastChanged>
+		<LastChanged>2012-06-18T09:53:23</LastChanged>
 		<Deleted>N</Deleted>
 		<AcctDetailID>33</AcctDetailID>
 		<TrxID>6</TrxID>
 		<TrxDescID>166</TrxDescID>
 		<TrxTypeID>178</TrxTypeID>
-		<TrxDate>2012-03-01T15:22:50</TrxDate>
+		<TrxDate>2012-06-01T15:22:50</TrxDate>
 		<Amount>-3,027.90</Amount>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<UserID>11</UserID>

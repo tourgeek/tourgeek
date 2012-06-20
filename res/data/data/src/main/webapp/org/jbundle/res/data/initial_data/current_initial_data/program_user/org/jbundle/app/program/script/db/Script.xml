@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Script ID="2">
 		<LastChanged/>
 		<Deleted>N</Deleted>
@@ -3409,7 +3409,7 @@ extension=xml
 		<Destination/>
 	</Script>
 	<Script ID="284">
-		<LastChanged>2012-03-18T10:34:56</LastChanged>
+		<LastChanged>2012-06-10T04:34:12</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Move demo data to monthly offset dir</Name>
 		<ParentFolderID>280</ParentFolderID>
@@ -3417,7 +3417,7 @@ extension=xml
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Sun Mar 18 10:34:46 PDT 2012
+#Sun Jun 10 04:34:10 PDT 2012
 process=.app.program.manual.convert.ConvertCode
 listenerClass=.app.program.script.scan.DateOffsetScanListener
 destDir=current_test_data
@@ -3425,7 +3425,7 @@ yearOffset=0
 sourceDir=scratch_test_data
 endOfMonthFields=EndPeriod,EndDate
 extension=xml
-monthOffset=6
+monthOffset=1
 dayOffset=0
 ]]></Properties>
 		<Command>R</Command>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Issue ID="1">
 		<LastChanged/>
 		<Deleted>N</Deleted>
@@ -981,7 +981,7 @@ right, because I lookup the index by description]]></Description>
 		<AssignedUserID>1</AssignedUserID>
 		<IssuePriorityID>2</IssuePriorityID>
 		<IssueSequence/>
-		<EnteredDate>2010-02-05T11:21:00</EnteredDate>
+		<EnteredDate>2006-07-22T05:32:00</EnteredDate>
 		<EnteredByUserID>1</EnteredByUserID>
 		<ChangedDate>2008-10-30T15:58:54</ChangedDate>
 		<ChangedByUserID>1</ChangedByUserID>
@@ -2042,7 +2042,7 @@ For java and js (also change js dialog title)]]></Description>
 		<IssueSequence>5</IssueSequence>
 		<EnteredDate>2009-01-14T13:58:23</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
-		<ChangedDate>2011-09-09T15:58:42</ChangedDate>
+		<ChangedDate>2010-03-17T07:58:42</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
 		<ClassInfoID/>
 	</Issue>
@@ -2364,7 +2364,7 @@ use the defaults]]></Description>
 		<AssignedUserID>11</AssignedUserID>
 		<IssuePriorityID>2</IssuePriorityID>
 		<IssueSequence>1</IssueSequence>
-		<EnteredDate>2010-02-05T11:21:03</EnteredDate>
+		<EnteredDate>2010-02-03T20:01:29</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
 		<ChangedDate>2010-05-19T15:53:48</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>

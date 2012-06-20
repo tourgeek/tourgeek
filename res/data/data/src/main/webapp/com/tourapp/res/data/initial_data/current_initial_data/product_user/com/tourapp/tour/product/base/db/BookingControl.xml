@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<BookingControl ID="1">
-		<LastChanged>2011-09-09T15:50:02</LastChanged>
+		<LastChanged>2012-06-18T09:54:37</LastChanged>
 		<Deleted>N</Deleted>
 		<AutoBookingCode>N</AutoBookingCode>
 		<AgencyComm>0.1000</AgencyComm>

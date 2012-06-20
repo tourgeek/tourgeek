@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<ClassProject ID="1048575">
 		<LastChanged>2012-01-13T19:52:21</LastChanged>
 		<Deleted>N</Deleted>
@@ -66,7 +66,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048578">
-		<LastChanged>2012-04-01T10:58:45</LastChanged>
+		<LastChanged>2012-04-12T22:50:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>db</Name>
 		<ParentFolderID>1,048,609</ParentFolderID>
@@ -76,7 +76,7 @@
 		<Description>Accounts payable</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>db</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
 		<ThinPackage/>
@@ -88,7 +88,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048579">
-		<LastChanged>2012-03-31T10:03:30</LastChanged>
+		<LastChanged>2012-04-12T22:50:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>db</Name>
 		<ParentFolderID>1,048,606</ParentFolderID>
@@ -98,7 +98,7 @@
 		<Description>Accounts receivable db</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>db</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctrec</InterfaceProjectPath>
 		<ThinPackage/>
@@ -132,7 +132,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048581">
-		<LastChanged>2012-04-01T09:29:43</LastChanged>
+		<LastChanged>2012-04-12T22:13:35</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>db</Name>
 		<ParentFolderID>1,048,613</ParentFolderID>
@@ -142,7 +142,7 @@
 		<Description>Booking db</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
 		<ThinPackage/>
@@ -198,7 +198,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048584">
-		<LastChanged>2012-04-02T01:40:50</LastChanged>
+		<LastChanged>2012-04-12T13:49:17</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>db</Name>
 		<ParentFolderID>1,048,614</ParentFolderID>
@@ -208,7 +208,7 @@
 		<Description>Product db</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/product</InterfaceProjectPath>
 		<ThinPackage/>
@@ -462,17 +462,17 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048596">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2012-04-12T12:47:05</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>core</Name>
+		<Name>message</Name>
 		<ParentFolderID>1,048,592</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description/>
+		<Description>Messaging core code</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath/>
 		<ThinPackage/>
@@ -704,7 +704,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048607">
-		<LastChanged>2012-03-31T15:53:16</LastChanged>
+		<LastChanged>2012-04-12T22:50:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>screen</Name>
 		<ParentFolderID>1,048,606</ParentFolderID>
@@ -714,7 +714,7 @@
 		<Description>Accounts receivable screen</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctrec</InterfaceProjectPath>
 		<ThinPackage/>
@@ -726,7 +726,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048608">
-		<LastChanged>2012-03-31T15:53:10</LastChanged>
+		<LastChanged>2012-04-12T22:50:32</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>report</Name>
 		<ParentFolderID>1,048,606</ParentFolderID>
@@ -736,7 +736,7 @@
 		<Description>Accounts receivable reports</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctrec</InterfaceProjectPath>
 		<ThinPackage/>
@@ -770,7 +770,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048610">
-		<LastChanged>2012-04-01T10:01:06</LastChanged>
+		<LastChanged>2012-04-12T22:50:01</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>air</Name>
 		<ParentFolderID>1,048,609</ParentFolderID>
@@ -780,7 +780,7 @@
 		<Description>Accounts payable air</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
 		<ThinPackage/>
@@ -792,7 +792,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048611">
-		<LastChanged>2012-04-01T10:01:09</LastChanged>
+		<LastChanged>2012-04-12T22:50:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>screen</Name>
 		<ParentFolderID>1,048,609</ParentFolderID>
@@ -802,7 +802,7 @@
 		<Description>Accounts payable screen</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
 		<ThinPackage/>
@@ -814,7 +814,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048612">
-		<LastChanged>2012-04-01T10:00:50</LastChanged>
+		<LastChanged>2012-04-12T22:50:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>report</Name>
 		<ParentFolderID>1,048,609</ParentFolderID>
@@ -824,7 +824,7 @@
 		<Description>Accounts payable report</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/acctpay</InterfaceProjectPath>
 		<ThinPackage/>
@@ -1078,7 +1078,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048624">
-		<LastChanged>2012-04-01T09:20:29</LastChanged>
+		<LastChanged>2012-04-12T22:50:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>screen</Name>
 		<ParentFolderID>1,048,614</ParentFolderID>
@@ -1088,7 +1088,7 @@
 		<Description>Product screens</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/product</InterfaceProjectPath>
 		<ThinPackage/>
@@ -1100,7 +1100,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048625">
-		<LastChanged>2012-04-01T09:27:07</LastChanged>
+		<LastChanged>2012-04-13T01:09:46</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>entry</Name>
 		<ParentFolderID>1,048,613</ParentFolderID>
@@ -1110,7 +1110,7 @@
 		<Description>Booking entry</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
 		<ThinPackage/>
@@ -1122,7 +1122,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048626">
-		<LastChanged>2012-04-01T09:27:28</LastChanged>
+		<LastChanged>2012-04-13T01:09:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>remote</Name>
 		<ParentFolderID>1,048,613</ParentFolderID>
@@ -1132,7 +1132,7 @@
 		<Description>Booking remote</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
 		<ThinPackage/>
@@ -1144,7 +1144,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048627">
-		<LastChanged>2012-04-01T09:27:51</LastChanged>
+		<LastChanged>2012-04-13T01:09:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>report</Name>
 		<ParentFolderID>1,048,613</ParentFolderID>
@@ -1154,7 +1154,7 @@
 		<Description>Booking reports</Description>
 		<SystemClasses/>
 		<PackageName/>
-		<ProjectPath>../mixed</ProjectPath>
+		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath>../../model/tour/booking</InterfaceProjectPath>
 		<ThinPackage/>
@@ -1271,6 +1271,182 @@
 		<ThinProjectPath>../../thin/tour/profile</ThinProjectPath>
 		<ResourcePackage/>
 		<ResProjectPath>../../res/tour/profile</ResProjectPath>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048633">
+		<LastChanged>2012-04-08T07:48:10</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>model</Name>
+		<ParentFolderID>1,048,588</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Tour model classes</Description>
+		<SystemClasses>N</SystemClasses>
+		<PackageName>com.tourapp.model</PackageName>
+		<ProjectPath>model</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048634">
+		<LastChanged>2012-04-08T09:07:20</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>tour</Name>
+		<ParentFolderID>1,048,633</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Tour model projects</Description>
+		<SystemClasses>N</SystemClasses>
+		<PackageName>.tour</PackageName>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048635">
+		<LastChanged>2012-04-08T09:10:07</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>message</Name>
+		<ParentFolderID>1,048,634</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Tour message model</Description>
+		<SystemClasses/>
+		<PackageName>.message</PackageName>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048636">
+		<LastChanged>2012-04-12T12:52:37</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>data</Name>
+		<ParentFolderID>1,048,592</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Messaging (same as core) data</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath>message</ProjectPath>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048637">
+		<LastChanged>2012-04-10T21:13:19</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>process</Name>
+		<ParentFolderID>1,048,592</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Message processes</Description>
+		<SystemClasses/>
+		<PackageName/>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048638">
+		<LastChanged>2012-06-09T12:38:49</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>service</Name>
+		<ParentFolderID>1,048,592</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>Message services</Description>
+		<SystemClasses/>
+		<PackageName>.service</PackageName>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048639">
+		<LastChanged>2012-06-09T12:39:15</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>_2011B</Name>
+		<ParentFolderID>1,048,638</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>_2011B services</Description>
+		<SystemClasses/>
+		<PackageName>._2011B</PackageName>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
+		<Properties/>
+		<ArtifactId/>
+		<GroupId/>
+	</ClassProject>
+	<ClassProject ID="1048640">
+		<LastChanged>2012-06-09T12:39:40</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>ping</Name>
+		<ParentFolderID>1,048,639</ParentFolderID>
+		<Sequence/>
+		<Comment/>
+		<Code/>
+		<Description>OTA 2011B ping service</Description>
+		<SystemClasses/>
+		<PackageName>.ping</PackageName>
+		<ProjectPath/>
+		<InterfacePackage/>
+		<InterfaceProjectPath/>
+		<ThinPackage/>
+		<ThinProjectPath/>
+		<ResourcePackage/>
+		<ResProjectPath/>
 		<Properties/>
 		<ArtifactId/>
 		<GroupId/>

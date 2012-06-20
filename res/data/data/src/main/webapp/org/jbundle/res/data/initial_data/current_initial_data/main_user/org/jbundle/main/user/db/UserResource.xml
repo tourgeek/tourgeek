@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<UserResource ID="1">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Accounting</Description>
 		<ResourceClass><![CDATA[com.tourapp.tour.acctpay.*
@@ -9,33 +9,33 @@ com.tourapp.tour.assetdr.*
 com.tourapp.tour.genled.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="2">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Reservations</Description>
 		<ResourceClass><![CDATA[com.tourapp.tour.booking.*
 com.tourapp.app.booking.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="3">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Anonymous</Description>
 		<ResourceClass>*.anon.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="4">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>System</Description>
 		<ResourceClass><![CDATA[org.jbundle.app.program.*
 org.jbundle.main.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="5">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Administration</Description>
 		<ResourceClass>org.jbundle.main.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="6">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Applications</Description>
 		<ResourceClass><![CDATA[org.jbundle.app.contact.*
@@ -43,7 +43,7 @@ org.jbundle.app.dance.*
 org.jbundle.app.picture.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="7">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Operations</Description>
 		<ResourceClass><![CDATA[com.tourapp.tour.product.*
@@ -52,13 +52,13 @@ com.tourapp.tour.request.*
 com.tourapp.tour.base.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="8">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Payroll</Description>
 		<ResourceClass>com.tourapp.tour.payroll.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="9">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Vendor access</Description>
 		<ResourceClass><![CDATA[com.tourapp.tour.booking.message.*
@@ -67,13 +67,13 @@ com.tourapp.tour.booking.operations.*
 com.tourapp.tour.acctpay.screen.trx.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="10">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Customer/Profile</Description>
 		<ResourceClass>com.tourapp.tour.profile.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="11">
-		<LastChanged>2011-09-09T15:49:01</LastChanged>
+		<LastChanged>2012-06-18T09:53:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Test</Description>
 		<ResourceClass><![CDATA[org.jbundle.app.test.*
