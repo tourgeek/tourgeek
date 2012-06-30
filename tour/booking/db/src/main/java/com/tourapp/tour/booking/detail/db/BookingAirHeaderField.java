@@ -74,26 +74,24 @@ public class BookingAirHeaderField extends ReferenceField
     {
         Record record = this.makeReferenceRecord();
         ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, BookingAirHeader.AIRLINE_DESC, true, false);
+        ScreenComponent sfTemp = BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
             if (screenField == null)
                 break;  // Just being careful.
-            Class<?> cannedBox = null;
-            try {
-                cannedBox = Class.forName(ScreenModel.CANNED_BOX);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-            if (screenField.getClass().isAssignableFrom(cannedBox))
+            if (screenField.getClass().isAssignableFrom(sfTemp.getClass()))
             {
                 screenField.free();
                 properties = new HashMap<String,Object>();
                 properties.put(ScreenModel.RECORD, record);
+                properties.put(ScreenModel.COMMAND, ThinMenuConstants.LOOKUP);
+                properties.put(ScreenModel.IMAGE, ThinMenuConstants.LOOKUP);
                 screenField = createScreenComponent(BookingAirHeader.BOOKING_AIR_HEADER_SCREEN_FIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
                 break;
             }
         }
+        sfTemp.free();
         return sField;
     }
 

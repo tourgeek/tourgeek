@@ -67,27 +67,25 @@ public class UseTourHeaderOptionField extends TourHeaderOptionField
     public ScreenComponent setupDefaultView(ScreenLoc itsLocation, ComponentParent targetScreen, Convert converter, int iDisplayFieldDesc, Map<String, Object> properties)
     {
         ScreenComponent sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
+        ScreenComponent sfTemp = BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
         for (int i = 0; ; i++)
         {
             ScreenComponent screenField = this.getComponent(i);
             if (screenField == null)
                 break;  // Just being careful.
-            Class<?> cannedBox = null;
-            try {
-                cannedBox = Class.forName(ScreenModel.CANNED_BOX);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-            if (screenField.getClass().isAssignableFrom(cannedBox))
+            if (screenField.getClass().isAssignableFrom(sfTemp.getClass()))
             {
                 screenField.free();
                 Record record = this.getReferenceRecord();
                 properties = new HashMap<String,Object>();
                 properties.put(ScreenModel.RECORD, record);
+                properties.put(ScreenModel.COMMAND, ThinMenuConstants.LOOKUP);
+                properties.put(ScreenModel.IMAGE, ThinMenuConstants.LOOKUP);
                 screenField = createScreenComponent(TourHeaderOption.USE_TOUR_HEADER_OPTION_SFIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
                 break;
             }
         }
+        sfTemp.free();
         return sField;
     }
 
