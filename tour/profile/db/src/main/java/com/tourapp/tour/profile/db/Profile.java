@@ -38,7 +38,7 @@ public class Profile extends Company
     private static final long serialVersionUID = 1L;
 
     protected ProfileControl m_recProfileControl = null;
-    public static final int MESSAGE_LOG_MODE = ScreenConstants.LAST_MODE * 4;
+    public static final int MESSAGE_LOG_MODE = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4;
     /**
      * Default constructor.
      */
