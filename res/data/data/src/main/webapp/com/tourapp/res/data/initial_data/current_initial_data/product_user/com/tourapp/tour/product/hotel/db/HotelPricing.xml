@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<HotelPricing ID="19">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
@@ -22,7 +22,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="20">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
@@ -44,7 +44,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="21">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>3</PaxCategoryID>
@@ -66,7 +66,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="22">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>4</PaxCategoryID>
@@ -88,7 +88,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="23">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
@@ -110,7 +110,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="24">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
@@ -132,7 +132,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="25">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>3</PaxCategoryID>
@@ -154,7 +154,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="26">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>4</PaxCategoryID>
@@ -176,7 +176,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="27">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
@@ -198,7 +198,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="28">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
@@ -220,7 +220,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="29">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>4</PaxCategoryID>
@@ -242,7 +242,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="30">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>3</PaxCategoryID>
@@ -264,7 +264,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="31">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>9</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
@@ -286,7 +286,7 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="32">
-		<LastChanged>2012-06-18T09:54:43</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>9</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>

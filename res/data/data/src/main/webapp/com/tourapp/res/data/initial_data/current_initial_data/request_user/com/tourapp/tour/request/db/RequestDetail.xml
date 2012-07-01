@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<RequestDetail ID="1">
 		<LastChanged/>
 		<Deleted>N</Deleted>
@@ -93,6 +93,22 @@
 		<RequestID/>
 		<BrochureID>1</BrochureID>
 		<BrochureQty>1</BrochureQty>
+		<BrochureDesc/>
+	</RequestDetail>
+	<RequestDetail ID="13">
+		<LastChanged>2012-06-30T12:15:56</LastChanged>
+		<Deleted>N</Deleted>
+		<RequestID>8</RequestID>
+		<BrochureID>1</BrochureID>
+		<BrochureQty>5</BrochureQty>
+		<BrochureDesc/>
+	</RequestDetail>
+	<RequestDetail ID="14">
+		<LastChanged>2012-06-30T12:15:56</LastChanged>
+		<Deleted>N</Deleted>
+		<RequestID>8</RequestID>
+		<BrochureID>6</BrochureID>
+		<BrochureQty>5</BrochureQty>
 		<BrochureDesc/>
 	</RequestDetail>
 </file>

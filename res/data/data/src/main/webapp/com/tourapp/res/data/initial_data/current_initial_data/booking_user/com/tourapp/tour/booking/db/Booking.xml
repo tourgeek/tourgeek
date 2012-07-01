@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Booking ID="1">
-		<LastChanged>2012-06-18T09:55:02</LastChanged>
+		<LastChanged>2012-07-01T02:34:42</LastChanged>
 		<Deleted>N</Deleted>
 		<CustSaleDate>2012-05-01</CustSaleDate>
 		<CustSaleAgentID>11</CustSaleAgentID>
@@ -68,7 +68,7 @@ eventStatus.Proposal.2=Y
 		<NextLineSequence>1</NextLineSequence>
 	</Booking>
 	<Booking ID="2">
-		<LastChanged>2012-06-18T09:55:02</LastChanged>
+		<LastChanged>2012-07-01T02:34:42</LastChanged>
 		<Deleted>N</Deleted>
 		<CustSaleDate>2012-05-01</CustSaleDate>
 		<CustSaleAgentID>11</CustSaleAgentID>
@@ -137,7 +137,7 @@ eventStatus.Okay.5=Y
 		<NextLineSequence>1</NextLineSequence>
 	</Booking>
 	<Booking ID="3">
-		<LastChanged>2012-06-18T09:55:02</LastChanged>
+		<LastChanged>2012-07-01T02:34:42</LastChanged>
 		<Deleted>N</Deleted>
 		<CustSaleDate>2012-06-01</CustSaleDate>
 		<CustSaleAgentID>11</CustSaleAgentID>

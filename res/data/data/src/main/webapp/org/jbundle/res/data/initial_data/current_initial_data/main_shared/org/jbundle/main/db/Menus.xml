@@ -4633,7 +4633,7 @@ aim: doncorley
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1341">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2012-06-30T12:22:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Profile analysis</Name>
 		<ParentFolderID>1,176</ParentFolderID>
@@ -4642,7 +4642,7 @@ aim: doncorley
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.report.ProfileAnalysisScreen</Program>
+		<Program>com.tourapp.tour.booking.report.profile.ProfileAnalysisScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -6213,7 +6213,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1457">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2012-06-30T22:10:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Seat choice</Name>
 		<ParentFolderID>1,349</ParentFolderID>
@@ -6222,7 +6222,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.air.db.SeatChoice</Program>
+		<Program>com.tourapp.tour.base.db.shared.SeatChoice</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -6752,7 +6752,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1513">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T11:32:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Test grid screen</Name>
 		<ParentFolderID>1,512</ParentFolderID>
@@ -6832,7 +6832,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1517">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New fancy grid</Name>
 		<ParentFolderID>1,512</ParentFolderID>
@@ -10104,8 +10104,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 <entry key="record">com.tourapp.tour.booking.db.Booking</entry>
 <entry key="user">reggie@tourgeek.com</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -10147,8 +10146,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 <entry key="user">angie@tourgeek.com</entry>
 <entry key="menu">Accounting</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -10170,8 +10168,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 <entry key="user">oprah@tourgeek.com</entry>
 <entry key="menu">operation</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -10193,8 +10190,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 <entry key="screen">org.jbundle.thin.app.booking.lookup.BookingLookupScreen</entry>
 <entry key="user">walter@sometravelagency.com</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourthin.properties</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -11175,8 +11171,7 @@ System highlights and the full user's manual.
 <entry key="dbPrefix">don_</entry>
 <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
 <entry key="mainUser">don@donandann.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
@@ -11319,15 +11314,14 @@ System highlights and the full user's manual.
 <entry key="record">com.tourapp.tour.booking.db.Booking</entry>
 <entry key="user">kate@tourgeek.com</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1866">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2010-10-17T11:32:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Contact Application</Name>
 		<ParentFolderID>1,195</ParentFolderID>
@@ -12374,6 +12368,31 @@ please click the following link:<br/>
    <entry key="userid"/>
    <entry key="webStartPropertiesFile">/org/jbundle/res/webstart/tourapp.properties</entry>
 </properties></Params>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1926">
+		<LastChanged>2012-07-01T09:53:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Fred's Demo site</Name>
+		<ParentFolderID>1,757</ParentFolderID>
+		<Sequence>100</Sequence>
+		<Comment>Demo test site</Comment>
+		<Code>fred.demo.tourgeek.com</Code>
+		<Type>menu</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>demosite</Program>
+		<Params type="XML"><properties>
+<comment>Field properties</comment>
+<entry key="loadInitialData">true</entry>
+<entry key="userArchiveFolder">/home/don/.tourapp/fred/current_test_data</entry>
+<entry key="dbPrefix">fred_</entry>
+<entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
+<entry key="mainUser">fred@tourgeek.com</entry>
+</properties>
+</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>

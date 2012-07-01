@@ -6435,7 +6435,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="644">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-10-17T07:30:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>RefundScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -12600,7 +12600,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1292">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-01-15T08:36:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CarSearchSession</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18165,22 +18165,22 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1772">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:57:10</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>int</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldSequence>5</ClassFieldSequence>
 		<ClassFieldName>PRICING_GRID_SCREEN</ClassFieldName>
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 2</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 2</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1773">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18190,12 +18190,12 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 4</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1774">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:35</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18205,12 +18205,12 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 8</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 8</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1775">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:40</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18220,12 +18220,12 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 32</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 32</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1776">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:45</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18235,12 +18235,12 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 16</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 16</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1777">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18250,12 +18250,12 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 64</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 64</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1778">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:19</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18265,12 +18265,12 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 128</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 128</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1779">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:57</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18280,7 +18280,7 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 256</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 256</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
@@ -18450,7 +18450,7 @@
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1793">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:45:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeader</ClassInfoClassName>
 		<ClassInfoID/>
@@ -18460,7 +18460,7 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 128</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 128</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
@@ -21705,7 +21705,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2120">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:25</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -21715,7 +21715,7 @@
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 512</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 512</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
@@ -22950,7 +22950,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2298">
-		<LastChanged>2012-04-11T02:30:06</LastChanged>
+		<LastChanged>2010-12-04T02:30:06</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LandMessageData</ClassInfoClassName>
 		<ClassInfoID/>
@@ -30539,7 +30539,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="3007">
-		<LastChanged>2012-04-11T02:32:31</LastChanged>
+		<LastChanged>2010-11-29T05:59:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CarMessageData</ClassInfoClassName>
 		<ClassInfoID/>
@@ -34664,7 +34664,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="3303">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T16:56:12</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderOption</ClassInfoClassName>
 		<ClassInfoID/>
@@ -34674,7 +34674,7 @@ static  {
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 1024</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 1024</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
@@ -36434,7 +36434,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="3438">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2012-06-30T14:11:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Profile</ClassInfoClassName>
 		<ClassInfoID/>
@@ -36444,7 +36444,7 @@ static  {
 		<ClassFieldDesc/>
 		<ClassFieldProtect>public static final</ClassFieldProtect>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>ScreenConstants.LAST_MODE * 4</ClassFieldInitialValue>
+		<ClassFieldInitialValue>ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4</ClassFieldInitialValue>
 		<ClassFieldsType>N</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
@@ -37979,7 +37979,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="3633">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:59:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourEventHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -44309,7 +44309,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4156">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-05T15:59:33</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ChangePricingTypeHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -46409,7 +46409,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4408">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2012-07-01T02:32:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ProductReplyInErrorProcessor</ClassInfoClassName>
 		<ClassInfoID/>
@@ -47789,7 +47789,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4625">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-31T17:13:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Booking</ClassInfoClassName>
 		<ClassInfoID/>
@@ -52184,7 +52184,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5035">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-05T15:59:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ChangeTourHeaderHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -56834,17 +56834,17 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5434">
-		<LastChanged>2012-03-27T13:28:32</LastChanged>
+		<LastChanged>2012-06-30T21:17:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourHeaderTour</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>TourHeaderTourGridScreen</ClassFieldClass>
-		<ClassFieldSequence>1,010</ClassFieldSequence>
+		<ClassFieldSequence>1,030</ClassFieldSequence>
 		<ClassFieldName>TOUR_HEADER_TOUR_GRID_SCREEN_CLASS</ClassFieldName>
 		<ClassFieldDesc/>
 		<ClassFieldProtect/>
 		<ClassFieldInitial/>
-		<ClassFieldInitialValue>DISPLAY_MODE</ClassFieldInitialValue>
+		<ClassFieldInitialValue/>
 		<ClassFieldsType>S</ClassFieldsType>
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
@@ -57659,7 +57659,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5489">
-		<LastChanged>2012-03-26T09:36:26</LastChanged>
+		<LastChanged>2009-02-12T14:49:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>AcctDetailDist</ClassInfoClassName>
 		<ClassInfoID/>
@@ -58424,7 +58424,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5540">
-		<LastChanged>2012-03-27T12:24:26</LastChanged>
+		<LastChanged>2012-07-01T02:32:32</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ApTrx</ClassInfoClassName>
 		<ClassInfoID/>
@@ -61949,7 +61949,7 @@ static  {
 		<IncludeScope>7</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5782">
-		<LastChanged>2012-04-11T15:02:42</LastChanged>
+		<LastChanged>2011-09-02T12:14:09</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Air</ClassInfoClassName>
 		<ClassInfoID/>
@@ -62909,7 +62909,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5848">
-		<LastChanged>2012-05-29T11:47:19</LastChanged>
+		<LastChanged>2012-03-25T13:36:38</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageIn2011B</ClassInfoClassName>
 		<ClassInfoID/>
@@ -63927,5 +63927,35 @@ static  {
 		<ClassFieldInitialValue/>
 		<ClassFieldsType>P</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5924">
+		<LastChanged>2012-06-30T21:17:37</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>TourHeaderTour</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>TourHeaderTourHeaderGridScreen</ClassFieldClass>
+		<ClassFieldSequence>1,020</ClassFieldSequence>
+		<ClassFieldName>TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS</ClassFieldName>
+		<ClassFieldDesc/>
+		<ClassFieldProtect>public static final</ClassFieldProtect>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue>DISPLAY_MODE</ClassFieldInitialValue>
+		<ClassFieldsType>S</ClassFieldsType>
+		<IncludeScope>4</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5925">
+		<LastChanged>2012-06-30T21:22:15</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>TourHeaderTour</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>TourHeaderTourHeaderScreen</ClassFieldClass>
+		<ClassFieldSequence>1,010</ClassFieldSequence>
+		<ClassFieldName>TOUR_HEADER_TOUR_HEADER_SCREEN</ClassFieldName>
+		<ClassFieldDesc/>
+		<ClassFieldProtect>public static final</ClassFieldProtect>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue>MAINT_MODE</ClassFieldInitialValue>
+		<ClassFieldsType>S</ClassFieldsType>
+		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 </file>

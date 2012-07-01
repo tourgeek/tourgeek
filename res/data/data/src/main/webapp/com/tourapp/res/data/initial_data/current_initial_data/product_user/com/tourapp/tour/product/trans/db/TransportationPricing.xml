@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<TransportationPricing ID="1">
-		<LastChanged>2012-06-18T09:54:53</LastChanged>
+		<LastChanged>2012-07-01T02:34:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
@@ -18,7 +18,7 @@
 		<ToPax>999</ToPax>
 	</TransportationPricing>
 	<TransportationPricing ID="2">
-		<LastChanged>2012-06-18T09:54:53</LastChanged>
+		<LastChanged>2012-07-01T02:34:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
@@ -36,7 +36,7 @@
 		<ToPax>999</ToPax>
 	</TransportationPricing>
 	<TransportationPricing ID="3">
-		<LastChanged>2012-06-18T09:54:53</LastChanged>
+		<LastChanged>2012-07-01T02:34:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
@@ -54,7 +54,7 @@
 		<ToPax>999</ToPax>
 	</TransportationPricing>
 	<TransportationPricing ID="4">
-		<LastChanged>2012-06-18T09:54:53</LastChanged>
+		<LastChanged>2012-07-01T02:34:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>2</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>

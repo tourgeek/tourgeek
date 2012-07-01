@@ -55886,7 +55886,7 @@ return screen;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4137">
-		<LastChanged>2012-04-07T12:27:45</LastChanged>
+		<LastChanged>2012-07-01T00:18:17</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>makeScreen</MethodName>
@@ -55896,7 +55896,7 @@ return screen;]]></LogicSource>
 		<MethodClassName>Cruise</MethodClassName>
 		<LogicSource><![CDATA[ScreenParent screen = null;
 if ((iDocMode & Product.PRICING_GRID_SCREEN) == Product.PRICING_GRID_SCREEN)
-    screen = Record.makeNewScreen(CruisePricing.CRUISE_PRICING_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+    screen = Record.makeNewScreen(CruisePricing.CRUISE_PRICING_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & Product.INVENTORY_GRID_SCREEN) == Product.INVENTORY_GRID_SCREEN)
     screen = Record.makeNewScreen(CruiseInventoryModel.CRUISE_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & Product.INVENTORY_SCREEN) == Product.INVENTORY_SCREEN)
@@ -57927,7 +57927,7 @@ else
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4271">
-		<LastChanged>2012-04-12T16:48:55</LastChanged>
+		<LastChanged>2012-06-30T21:27:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>makeScreen</MethodName>
@@ -57949,7 +57949,7 @@ else if ((iDocMode & TourHeaderOption.CAR_GRID_SCREEN) == TourHeaderOption.CAR_G
 else if ((iDocMode & TourHeaderOption.CRUISE_GRID_SCREEN) == TourHeaderOption.CRUISE_GRID_SCREEN)
     screen = Record.makeNewScreen(TourHeaderCruiseModel.TOUR_HEADER_CRUISE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & TourHeaderOption.TOUR_GRID_SCREEN) == TourHeaderOption.TOUR_GRID_SCREEN)
-    screen = Record.makeNewScreen(TourHeaderTourModel.TOUR_HEADER_TOUR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+    screen = Record.makeNewScreen(TourHeaderTourModel.TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & TourHeaderOption.AIR_GRID_SCREEN) == TourHeaderOption.AIR_GRID_SCREEN)
     screen = Record.makeNewScreen(TourHeaderAirModel.TOUR_HEADER_AIR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & TourHeaderOption.AIR_HEADER_GRID_SCREEN) == TourHeaderOption.AIR_HEADER_GRID_SCREEN)
@@ -61904,7 +61904,7 @@ this.setRespondsToMode(DBConstants.INIT_MOVE, false);]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4601">
-		<LastChanged>2012-03-27T22:45:19</LastChanged>
+		<LastChanged>2012-06-30T16:29:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -61913,27 +61913,25 @@ this.setRespondsToMode(DBConstants.INIT_MOVE, false);]]></LogicSource>
 		<MethodInterface/>
 		<MethodClassName>UseTourHeaderOptionField</MethodClassName>
 		<LogicSource><![CDATA[ScreenComponent sField = super.setupDefaultView(itsLocation, targetScreen, converter, iDisplayFieldDesc, properties);
+ScreenComponent sfTemp = BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
 for (int i = 0; ; i++)
 {
     ScreenComponent screenField = this.getComponent(i);
     if (screenField == null)
         break;  // Just being careful.
-    Class<?> cannedBox = null;
-    try {
-        cannedBox = Class.forName(ScreenModel.CANNED_BOX);
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-    if (screenField.getClass().isAssignableFrom(cannedBox))
+    if (screenField.getClass().isAssignableFrom(sfTemp.getClass()))
     {
         screenField.free();
         Record record = this.getReferenceRecord();
         properties = new HashMap<String,Object>();
         properties.put(ScreenModel.RECORD, record);
+        properties.put(ScreenModel.COMMAND, ThinMenuConstants.LOOKUP);
+        properties.put(ScreenModel.IMAGE, ThinMenuConstants.LOOKUP);
         screenField = createScreenComponent(TourHeaderOption.USE_TOUR_HEADER_OPTION_SFIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         break;
     }
 }
+sfTemp.free();
 return sField;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
@@ -62057,7 +62055,7 @@ return null;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4609">
-		<LastChanged>2012-03-28T09:13:42</LastChanged>
+		<LastChanged>2012-06-30T16:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -62086,26 +62084,24 @@ if (record instanceof TourHeaderDetail)
         fsField = record.getFieldSeq(TourHeaderDetail.DAY);    // Never (just in case)
 }
 sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, -1, fsField, true, false);
+ScreenComponent sfTemp = BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
 for (int i = 0; ; i++)
 {
     ScreenComponent screenField = this.getComponent(i);
     if (screenField == null)
         break;  // Just being careful.
-    Class<?> cannedBox = null;
-    try {
-        cannedBox = Class.forName(ScreenModel.CANNED_BOX);
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-    if (screenField.getClass().isAssignableFrom(cannedBox))
+    if (screenField.getClass().isAssignableFrom(sfTemp.getClass()))
     {
         screenField.free();
         properties = new HashMap<String,Object>();
         properties.put(ScreenModel.RECORD, record);
+        properties.put(ScreenModel.COMMAND, ThinMenuConstants.LOOKUP);
+        properties.put(ScreenModel.IMAGE, ThinMenuConstants.LOOKUP);
         screenField = createScreenComponent(TourSub.MODIFY_TOUR_SUB_SCREEN_FIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         break;
     }
 }
+sfTemp.free();
 return sField;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
@@ -75428,7 +75424,7 @@ return iErrorCode;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="5682">
-		<LastChanged>2012-03-27T21:43:24</LastChanged>
+		<LastChanged>2012-06-30T16:28:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>200</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -75438,26 +75434,24 @@ return iErrorCode;]]></LogicSource>
 		<MethodClassName>TourHeaderAirHeaderField</MethodClassName>
 		<LogicSource><![CDATA[Record record = this.makeReferenceRecord();
 ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, TourHeaderAirHeader.AIRLINE_DESC, true, true);
+ScreenComponent sfTemp = BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
 for (int i = 0; ; i++)
 {
     ScreenComponent screenField = this.getComponent(i);
     if (screenField == null)
         break;  // Just being careful.
-    Class<?> cannedBox = null;
-    try {
-        cannedBox = Class.forName(ScreenModel.CANNED_BOX);
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-    if (screenField.getClass().isAssignableFrom(cannedBox))
+    if (screenField.getClass().isAssignableFrom(sfTemp.getClass()))
     {
         screenField.free();
         properties = new HashMap<String,Object>();
         properties.put(ScreenModel.RECORD, record);
+        properties.put(ScreenModel.COMMAND, ThinMenuConstants.LOOKUP);
+        properties.put(ScreenModel.IMAGE, ThinMenuConstants.LOOKUP);
         screenField = createScreenComponent(TourHeaderAirHeader.TOUR_HEADER_AIR_HEADER_SFIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         break;
     }
 }
+sfTemp.free();
 return sField;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
@@ -75480,7 +75474,7 @@ return sField;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="5684">
-		<LastChanged>2012-03-27T20:58:38</LastChanged>
+		<LastChanged>2012-06-30T16:28:21</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>200</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -75490,26 +75484,24 @@ return sField;]]></LogicSource>
 		<MethodClassName>BookingAirHeaderField</MethodClassName>
 		<LogicSource><![CDATA[Record record = this.makeReferenceRecord();
 ScreenComponent sField = this.setupTableLookup(itsLocation, targetScreen, converter, iDisplayFieldDesc, record, null, BookingAirHeader.AIRLINE_DESC, true, false);
+ScreenComponent sfTemp = BaseField.createScreenComponent(ScreenModel.CANNED_BOX, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, null, ScreenConstants.DEFAULT_DISPLAY, properties);
 for (int i = 0; ; i++)
 {
     ScreenComponent screenField = this.getComponent(i);
     if (screenField == null)
         break;  // Just being careful.
-    Class<?> cannedBox = null;
-    try {
-        cannedBox = Class.forName(ScreenModel.CANNED_BOX);
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-    if (screenField.getClass().isAssignableFrom(cannedBox))
+    if (screenField.getClass().isAssignableFrom(sfTemp.getClass()))
     {
         screenField.free();
         properties = new HashMap<String,Object>();
         properties.put(ScreenModel.RECORD, record);
+        properties.put(ScreenModel.COMMAND, ThinMenuConstants.LOOKUP);
+        properties.put(ScreenModel.IMAGE, ThinMenuConstants.LOOKUP);
         screenField = createScreenComponent(BookingAirHeader.BOOKING_AIR_HEADER_SCREEN_FIELD_CLASS, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties);
         break;
     }
 }
+sfTemp.free();
 return sField;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>

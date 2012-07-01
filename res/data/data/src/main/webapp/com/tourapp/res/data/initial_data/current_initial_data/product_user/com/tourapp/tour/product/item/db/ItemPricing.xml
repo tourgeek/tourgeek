@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<ItemPricing ID="1">
-		<LastChanged>2012-06-18T09:54:45</LastChanged>
+		<LastChanged>2012-07-01T02:34:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
@@ -16,7 +16,7 @@
 		<PayAt>F</PayAt>
 	</ItemPricing>
 	<ItemPricing ID="2">
-		<LastChanged>2012-06-18T09:54:45</LastChanged>
+		<LastChanged>2012-07-01T02:34:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>

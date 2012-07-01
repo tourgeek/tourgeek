@@ -881,7 +881,7 @@ right, because I lookup the index by description]]></Description>
 		<IssueSequence/>
 		<EnteredDate>2006-06-13T13:39:00</EnteredDate>
 		<EnteredByUserID>1</EnteredByUserID>
-		<ChangedDate>2006-06-14T17:56:00</ChangedDate>
+		<ChangedDate>2006-06-01T02:32:35</ChangedDate>
 		<ChangedByUserID>1</ChangedByUserID>
 		<ClassInfoID/>
 	</Issue>
@@ -1787,7 +1787,7 @@ For java and js (also change js dialog title)]]></Description>
 		<IssueSequence/>
 		<EnteredDate>2008-11-06T11:44:07</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
-		<ChangedDate>2008-12-18T15:10:48</ChangedDate>
+		<ChangedDate>2008-12-18T16:10:48</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
 		<ClassInfoID/>
 	</Issue>
@@ -1870,7 +1870,7 @@ For java and js (also change js dialog title)]]></Description>
 		<AssignedUserID>11</AssignedUserID>
 		<IssuePriorityID>2</IssuePriorityID>
 		<IssueSequence/>
-		<EnteredDate>2008-12-18T15:12:03</EnteredDate>
+		<EnteredDate>2010-10-15T10:11:03</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
 		<ChangedDate>2009-09-24T23:58:25</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
@@ -2295,7 +2295,7 @@ For java and js (also change js dialog title)]]></Description>
 		<AssignedUserID>11</AssignedUserID>
 		<IssuePriorityID>2</IssuePriorityID>
 		<IssueSequence>5</IssueSequence>
-		<EnteredDate>2009-10-24T03:53:20</EnteredDate>
+		<EnteredDate>2012-07-01T02:33:03</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
 		<ChangedDate>2010-05-19T14:48:05</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
@@ -2723,7 +2723,7 @@ use the defaults]]></Description>
 		<IssueSequence>200</IssueSequence>
 		<EnteredDate>2010-06-11T04:09:24</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
-		<ChangedDate>2010-06-11T04:10:35</ChangedDate>
+		<ChangedDate>2011-09-02T12:44:10</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
 		<ClassInfoID/>
 	</Issue>

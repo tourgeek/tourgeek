@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<State ID="7">
 		<LastChanged/>
 		<Deleted>N</Deleted>
 		<Name>Alaska</Name>
-		<StatePostalCode>AK</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -11,10 +11,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="8">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Alberta</Name>
-		<StatePostalCode>AL</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -22,10 +22,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="9">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Alabama</Name>
-		<StatePostalCode>AL</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -33,10 +33,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="10">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Arkansas</Name>
-		<StatePostalCode>AR</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -44,10 +44,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="11">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Arizona</Name>
-		<StatePostalCode>AZ</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -55,10 +55,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="12">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bale</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>226</CountryID>
 		<Description/>
 		<Picture/>
@@ -66,10 +66,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="13">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>British Columbia</Name>
-		<StatePostalCode>BC</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -77,10 +77,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="14">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Bonn</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>209</CountryID>
 		<Description/>
 		<Picture/>
@@ -88,10 +88,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="15">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>California</Name>
-		<StatePostalCode>CA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -99,10 +99,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="16">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Chartres</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -110,10 +110,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="17">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Cherbourg</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -121,10 +121,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="18">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Colorado</Name>
-		<StatePostalCode>CO</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -132,10 +132,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="19">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Connecticut</Name>
-		<StatePostalCode>CT</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -143,10 +143,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="20">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Dictrict of Columbia</Name>
-		<StatePostalCode>DC</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -154,10 +154,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="21">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Delaware</Name>
-		<StatePostalCode>DE</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -165,10 +165,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="22">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Florida</Name>
-		<StatePostalCode>FL</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -176,10 +176,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="23">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Georgia</Name>
-		<StatePostalCode>GA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -187,10 +187,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="24">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Haguenau</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -198,10 +198,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="25">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Hawaii</Name>
-		<StatePostalCode>HI</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -209,10 +209,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="26">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Iowa</Name>
-		<StatePostalCode>IA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -220,10 +220,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="27">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Idaho</Name>
-		<StatePostalCode>ID</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -231,10 +231,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="28">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Illinois</Name>
-		<StatePostalCode>IL</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -242,10 +242,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="29">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Indiana</Name>
-		<StatePostalCode>IN</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -253,10 +253,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="30">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Interlaken</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>226</CountryID>
 		<Description/>
 		<Picture/>
@@ -264,10 +264,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="31">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kassel</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>209</CountryID>
 		<Description/>
 		<Picture/>
@@ -275,10 +275,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="32">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kansas</Name>
-		<StatePostalCode>KS</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -286,10 +286,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="33">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Kentucky</Name>
-		<StatePostalCode>KY</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -297,10 +297,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="34">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Louisania</Name>
-		<StatePostalCode>LA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -308,10 +308,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="35">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Lucerne</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>226</CountryID>
 		<Description/>
 		<Picture/>
@@ -319,10 +319,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="36">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Massachusetts</Name>
-		<StatePostalCode>MA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -330,10 +330,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="37">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Manitoba</Name>
-		<StatePostalCode>MB</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -341,10 +341,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="38">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Maryland</Name>
-		<StatePostalCode>MD</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -352,10 +352,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="39">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Maine</Name>
-		<StatePostalCode>ME</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -363,10 +363,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="40">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Metz</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -374,10 +374,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="41">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Michigan</Name>
-		<StatePostalCode>MI</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -385,10 +385,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="42">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Minnesota</Name>
-		<StatePostalCode>MN</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -396,10 +396,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="43">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Missouri</Name>
-		<StatePostalCode>MO</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -407,10 +407,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="44">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Molsheim</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -418,10 +418,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="45">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mont</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -429,10 +429,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="46">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mississippi</Name>
-		<StatePostalCode>MS</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -440,10 +440,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="47">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Montana</Name>
-		<StatePostalCode>MT</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -451,10 +451,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="48">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New Brunswick</Name>
-		<StatePostalCode>NB</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -462,10 +462,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="49">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>North Carolina</Name>
-		<StatePostalCode>NC</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -473,10 +473,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="50">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>North Dakota</Name>
-		<StatePostalCode>ND</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -484,10 +484,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="51">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New England</Name>
-		<StatePostalCode>NE</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -495,10 +495,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="52">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Newfoundland</Name>
-		<StatePostalCode>NF</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -506,10 +506,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="53">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New Hamphire</Name>
-		<StatePostalCode>NH</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -517,10 +517,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="54">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New Jersey</Name>
-		<StatePostalCode>NJ</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -528,10 +528,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="55">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New Mexico</Name>
-		<StatePostalCode>NM</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -539,10 +539,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="56">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Novia Scotia</Name>
-		<StatePostalCode>NS</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -550,10 +550,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="57">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Nevada</Name>
-		<StatePostalCode>NV</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -561,10 +561,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="58">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Northwest Territory</Name>
-		<StatePostalCode>NWT</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -572,10 +572,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="59">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>New York</Name>
-		<StatePostalCode>NY</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -583,10 +583,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="60">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ohio</Name>
-		<StatePostalCode>OH</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -594,10 +594,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="61">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Oklahoma</Name>
-		<StatePostalCode>OK</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -605,10 +605,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="62">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ontario</Name>
-		<StatePostalCode>ON</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -616,10 +616,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="63">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Oregon</Name>
-		<StatePostalCode>OR</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -627,10 +627,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="64">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Pennsylvania</Name>
-		<StatePostalCode>PA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -638,10 +638,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="65">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Prince Edward Island</Name>
-		<StatePostalCode>PEI</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -649,10 +649,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="66">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Quebec</Name>
-		<StatePostalCode>QU</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -660,10 +660,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="67">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Rhode Island</Name>
-		<StatePostalCode>RI</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -671,10 +671,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="68">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>South Carolina</Name>
-		<StatePostalCode>SC</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -682,10 +682,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="69">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>South Dakota</Name>
-		<StatePostalCode>SD</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -693,10 +693,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="70">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Sélestat</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -704,10 +704,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="71">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Saskatchewan</Name>
-		<StatePostalCode>SK</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>
@@ -715,10 +715,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="72">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Tennessee</Name>
-		<StatePostalCode>TN</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -726,10 +726,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="73">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Toulouse</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -737,10 +737,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="74">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Texas</Name>
-		<StatePostalCode>TX</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -748,10 +748,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="75">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Utah</Name>
-		<StatePostalCode>UT</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -759,10 +759,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="76">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Virginia</Name>
-		<StatePostalCode>VA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -770,10 +770,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="77">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Washington</Name>
-		<StatePostalCode>WA</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -781,10 +781,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="78">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Wisconsin</Name>
-		<StatePostalCode>WI</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -792,10 +792,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="79">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Wissembourg</Name>
-		<StatePostalCode/>
+		<Code/>
 		<CountryID>204</CountryID>
 		<Description/>
 		<Picture/>
@@ -803,10 +803,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="80">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>West Virginia</Name>
-		<StatePostalCode>WV</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -814,10 +814,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="81">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Wyoming</Name>
-		<StatePostalCode>WY</StatePostalCode>
+		<Code/>
 		<CountryID>182</CountryID>
 		<Description/>
 		<Picture/>
@@ -825,10 +825,10 @@
 		<GMTOffset/>
 	</State>
 	<State ID="82">
-		<LastChanged/>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Yukon Territory</Name>
-		<StatePostalCode>YT</StatePostalCode>
+		<Code/>
 		<CountryID>12</CountryID>
 		<Description/>
 		<Picture/>

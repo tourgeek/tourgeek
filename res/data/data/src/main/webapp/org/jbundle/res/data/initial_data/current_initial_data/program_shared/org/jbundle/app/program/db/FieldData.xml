@@ -42592,7 +42592,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="2232">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T15:55:10</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>HotelCheck</FieldName>
 		<FieldClass>StringField</FieldClass>
@@ -42878,7 +42878,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="2248">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-06-05T15:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>Contact</FieldName>
 		<FieldClass>StringField</FieldClass>
@@ -44286,7 +44286,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="2323">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T15:40:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>HsClass</FieldName>
 		<FieldClass>StringField</FieldClass>
@@ -59224,7 +59224,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="3183">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T15:26:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>RecapStartHtl</FieldName>
 		<FieldClass>StringField</FieldClass>
@@ -71324,7 +71324,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="3831">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-19T17:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>TkITotalNet</FieldName>
 		<FieldClass>DoubleField</FieldClass>
@@ -72292,7 +72292,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="3892">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T09:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>TkOvEnd</FieldName>
 		<FieldClass>DateField</FieldClass>
@@ -85558,7 +85558,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="4725">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-11-28T21:31:51</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>Description</FieldName>
 		<FieldClass/>
@@ -101024,7 +101024,7 @@
 		<IncludeScope>1</IncludeScope>
 	</FieldData>
 	<FieldData ID="6008">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-18T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>ID</FieldName>
 		<FieldClass/>
@@ -103136,7 +103136,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="6137">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-18T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>CashBatchDetailID</FieldName>
 		<FieldClass>ReferenceField</FieldClass>
@@ -116886,7 +116886,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="7278">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-00T00:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>OrderCompDate</FieldName>
 		<FieldClass>DateField</FieldClass>

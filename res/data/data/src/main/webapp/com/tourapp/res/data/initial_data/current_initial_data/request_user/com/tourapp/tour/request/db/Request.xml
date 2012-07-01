@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Request ID="1">
 		<LastChanged/>
 		<Deleted>N</Deleted>
@@ -142,6 +142,27 @@
 		<SendViaCode/>
 		<BundleID/>
 		<BundleQty/>
+		<BrochureText/>
+		<PrintNow>N</PrintNow>
+		<HistReprint>N</HistReprint>
+	</Request>
+	<Request ID="8">
+		<LastChanged>2012-06-30T12:15:56</LastChanged>
+		<Deleted>N</Deleted>
+		<ProfileID>5</ProfileID>
+		<ProfileCode>05903995</ProfileCode>
+		<GenericName>Hallmark Travel</GenericName>
+		<AddressLine1>First Floor</AddressLine1>
+		<AddressLine2>3801 Greeway Plaza</AddressLine2>
+		<CityOrTown>Atlanta</CityOrTown>
+		<StateOrRegion>GA</StateOrRegion>
+		<PostalCode>30303</PostalCode>
+		<Country>USA</Country>
+		<Attention/>
+		<Email>travelagent@tourgeek.com</Email>
+		<SendViaCode>2</SendViaCode>
+		<BundleID>2</BundleID>
+		<BundleQty>5</BundleQty>
 		<BrochureText/>
 		<PrintNow>N</PrintNow>
 		<HistReprint>N</HistReprint>
