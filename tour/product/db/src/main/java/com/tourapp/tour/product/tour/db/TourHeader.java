@@ -53,7 +53,7 @@ public class TourHeader extends Product
     private static final long serialVersionUID = 1L;
 
     protected TourHeaderLine m_recTourHeaderPricing = null;
-    public static final int TOUR_DETAIL_SCREEN = ScreenConstants.LAST_MODE * 128;
+    public static final int TOUR_DETAIL_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 128;
     /**
      * Default constructor.
      */

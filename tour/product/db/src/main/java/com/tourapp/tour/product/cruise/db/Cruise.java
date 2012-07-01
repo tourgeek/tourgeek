@@ -104,7 +104,7 @@ public class Cruise extends TransportProduct
     {
         ScreenParent screen = null;
         if ((iDocMode & Product.PRICING_GRID_SCREEN) == Product.PRICING_GRID_SCREEN)
-            screen = Record.makeNewScreen(CruisePricing.CRUISE_PRICING_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(CruisePricing.CRUISE_PRICING_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_GRID_SCREEN) == Product.INVENTORY_GRID_SCREEN)
             screen = Record.makeNewScreen(CruiseInventoryModel.CRUISE_INVENTORY_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & Product.INVENTORY_SCREEN) == Product.INVENTORY_SCREEN)

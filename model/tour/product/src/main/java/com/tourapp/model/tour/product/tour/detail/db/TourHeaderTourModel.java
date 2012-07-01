@@ -78,6 +78,8 @@ public interface TourHeaderTourModel extends TourHeaderDetailModel
     //public static final String MEALS = MEALS;
     //public static final String DAYS = DAYS;
     //public static final String PRICING_TYPE_ID = PRICING_TYPE_ID;
+    public static final String TOUR_HEADER_TOUR_HEADER_SCREEN = "com.tourapp.tour.product.tour.detail.screen.TourHeaderTourHeaderScreen";
+    public static final String TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderTourHeaderGridScreen";
     public static final String TOUR_HEADER_TOUR_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.other.screen.TourHeaderTourGridScreen";
 
     public static final String TOUR_HEADER_TOUR_FILE = "TourHeaderDetail";

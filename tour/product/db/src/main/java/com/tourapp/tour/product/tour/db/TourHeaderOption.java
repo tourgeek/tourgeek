@@ -33,16 +33,16 @@ public class TourHeaderOption extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final int PRICING_GRID_SCREEN = ScreenConstants.LAST_MODE * 2;
-    public static final int TOUR_GRID_SCREEN = ScreenConstants.LAST_MODE * 1024;
-    public static final int AIR_GRID_SCREEN = ScreenConstants.LAST_MODE * 128;
-    public static final int AIR_HEADER_GRID_SCREEN = ScreenConstants.LAST_MODE * 512;
-    public static final int HOTEL_GRID_SCREEN = ScreenConstants.LAST_MODE * 4;
-    public static final int LAND_GRID_SCREEN = ScreenConstants.LAST_MODE * 8;
-    public static final int CAR_GRID_SCREEN = ScreenConstants.LAST_MODE * 32;
-    public static final int TRANSPORTATION_GRID_SCREEN = ScreenConstants.LAST_MODE * 16;
-    public static final int CRUISE_GRID_SCREEN = ScreenConstants.LAST_MODE * 64;
-    public static final int ITEM_GRID_SCREEN = ScreenConstants.LAST_MODE * 256;
+    public static final int PRICING_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 2;
+    public static final int TOUR_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 1024;
+    public static final int AIR_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 128;
+    public static final int AIR_HEADER_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 512;
+    public static final int HOTEL_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 4;
+    public static final int LAND_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 8;
+    public static final int CAR_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 32;
+    public static final int TRANSPORTATION_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 16;
+    public static final int CRUISE_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 64;
+    public static final int ITEM_GRID_SCREEN = ScreenConstants.DETAIL_MODE | ScreenConstants.LAST_MODE * 256;
     /**
      * Default constructor.
      */
@@ -112,7 +112,7 @@ public class TourHeaderOption extends VirtualRecord
         else if ((iDocMode & TourHeaderOption.CRUISE_GRID_SCREEN) == TourHeaderOption.CRUISE_GRID_SCREEN)
             screen = Record.makeNewScreen(TourHeaderCruiseModel.TOUR_HEADER_CRUISE_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.TOUR_GRID_SCREEN) == TourHeaderOption.TOUR_GRID_SCREEN)
-            screen = Record.makeNewScreen(TourHeaderTourModel.TOUR_HEADER_TOUR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
+            screen = Record.makeNewScreen(TourHeaderTourModel.TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.AIR_GRID_SCREEN) == TourHeaderOption.AIR_GRID_SCREEN)
             screen = Record.makeNewScreen(TourHeaderAirModel.TOUR_HEADER_AIR_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
         else if ((iDocMode & TourHeaderOption.AIR_HEADER_GRID_SCREEN) == TourHeaderOption.AIR_HEADER_GRID_SCREEN)

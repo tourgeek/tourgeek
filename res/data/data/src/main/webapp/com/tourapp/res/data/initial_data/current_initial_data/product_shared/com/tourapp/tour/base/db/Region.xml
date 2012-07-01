@@ -1,206 +1,206 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+<?xml version="1.0" encoding="UTF-8"?><file>
 	<Region ID="1">
 		<LastChanged>2008-10-17T14:54:40</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Atlantic Ocean Islands</Name>
 		<Code/>
 		<ContinentID>0</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="2">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Australasia</Name>
 		<Code/>
 		<ContinentID>6</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="3">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Canada</Name>
 		<Code/>
 		<ContinentID>1</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="4">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Caribbean Area</Name>
 		<Code/>
 		<ContinentID>1</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="5">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Central Africa</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="6">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Central America</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="7">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Cyprus</Name>
 		<Code/>
 		<ContinentID>3</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="8">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>East Africa</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="9">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Eastern Europe</Name>
 		<Code/>
 		<ContinentID>3</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="10">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Far East</Name>
 		<Code/>
 		<ContinentID>4</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="11">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Indian Ocean Islands</Name>
 		<Code/>
 		<ContinentID>4</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="12">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Indian Sub-Continent</Name>
 		<Code/>
 		<ContinentID>4</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="13">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Middle East</Name>
 		<Code/>
 		<ContinentID>4</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="14">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Near East</Name>
 		<Code/>
 		<ContinentID>3</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="15">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>North Africa</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="16">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Oil Rigs</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="17">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Pacific Ocean Islands</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="18">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>South America</Name>
 		<Code/>
 		<ContinentID>2</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="19">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Southern Africa</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="20">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>United Kingdom</Name>
 		<Code/>
 		<ContinentID>3</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="21">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>United States Of America</Name>
 		<Code/>
 		<ContinentID>1</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="22">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>West Africa</Name>
 		<Code/>
 		<ContinentID>5</ContinentID>
 		<Memo/>
 		<Picture/>
 	</Region>
 	<Region ID="23">
-		<LastChanged>2011-08-05T15:59:55</LastChanged>
+		<LastChanged>2008-10-17T14:54:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name/>
+		<Name>Western Europe</Name>
 		<Code/>
 		<ContinentID>3</ContinentID>
 		<Memo/>

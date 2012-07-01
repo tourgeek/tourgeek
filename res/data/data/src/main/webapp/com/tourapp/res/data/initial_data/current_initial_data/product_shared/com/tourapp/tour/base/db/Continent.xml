@@ -2,43 +2,43 @@
 	<Continent ID="1">
 		<LastChanged/>
 		<Deleted>N</Deleted>
-		<Description>North America</Description>
+		<Name>North America</Name>
 		<Code/>
 	</Continent>
 	<Continent ID="2">
 		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>South America</Description>
+		<Name>South America</Name>
 		<Code/>
 	</Continent>
 	<Continent ID="3">
 		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Europe</Description>
+		<Name>Europe</Name>
 		<Code/>
 	</Continent>
 	<Continent ID="4">
 		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Asia</Description>
+		<Name>Asia</Name>
 		<Code/>
 	</Continent>
 	<Continent ID="5">
 		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Africa</Description>
+		<Name>Africa</Name>
 		<Code/>
 	</Continent>
 	<Continent ID="6">
 		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Australia</Description>
+		<Name>Australia</Name>
 		<Code/>
 	</Continent>
 	<Continent ID="7">
 		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Antarctica</Description>
+		<Name>Antarctica</Name>
 		<Code/>
 	</Continent>
 </file>
