@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><file>
+	<BundleDetail ID="2">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<BundleID>1</BundleID>
+		<BrochureID>2</BrochureID>
+	</BundleDetail>
+	<BundleDetail ID="3">
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<Deleted>N</Deleted>
+		<BundleID>2</BundleID>
+		<BrochureID>1</BrochureID>
+	</BundleDetail>
+	<BundleDetail ID="5">
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<Deleted>N</Deleted>
+		<BundleID>1</BundleID>
+		<BrochureID>6</BrochureID>
+	</BundleDetail>
+	<BundleDetail ID="13">
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<Deleted>N</Deleted>
+		<BundleID>1</BundleID>
+		<BrochureID>5</BrochureID>
+	</BundleDetail>
+	<BundleDetail ID="15">
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
+		<Deleted>N</Deleted>
+		<BundleID>2</BundleID>
+		<BrochureID>6</BrochureID>
+	</BundleDetail>
+</file>
