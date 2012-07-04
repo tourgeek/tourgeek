@@ -44,10 +44,10 @@ import org.jbundle.thin.base.screen.JBasePanel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
-import org.jbundle.thin.base.screen.message.ThinMessageManager;
 import org.jbundle.thin.base.screen.util.ParamDispatcher;
 import org.jbundle.thin.base.thread.PrivateTaskScheduler;
 import org.jbundle.thin.base.thread.TaskScheduler;
+import org.jbundle.thin.base.util.message.ThinMessageManager;
 import org.jbundle.thin.opt.location.JTreePanel;
 import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
 import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
@@ -166,8 +166,8 @@ public class TourAppScreen extends JBaseScreen
         // Set up the calendar
         m_model = this.setupCalendarModel();
         
-        ThinMessageManager.createMessageListener(this.getFieldList(), this);    // Listen for changes
-        ThinMessageManager.createMessageListener(this.getTourRecord(), this);
+        ThinMessageManager.createScreenMessageListener(this.getFieldList(), this);    // Listen for changes
+        ThinMessageManager.createScreenMessageListener(this.getTourRecord(), this);
 
             // 1st level - a panel to hold everything
         parent.setLayout(new BoxLayout(parent, BoxLayout.Y_AXIS));

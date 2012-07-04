@@ -4,30 +4,14 @@
  */
 package com.tourapp.tour.product.tour.detail.db;
 
-import java.awt.*;
-import java.util.*;
+import org.jbundle.base.db.VirtualRecord;
+import org.jbundle.base.field.BaseField;
+import org.jbundle.base.model.RecordOwner;
+import org.jbundle.thin.base.db.Constants;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
-import org.jbundle.thin.base.message.*;
-import org.jbundle.thin.base.screen.message.*;
-import org.jbundle.base.message.record.*;
-import com.tourapp.tour.product.base.db.*;
-import org.jbundle.thin.base.screen.*;
-import org.jbundle.model.message.*;
-import com.tourapp.model.tour.product.tour.detail.db.*;
+import com.tourapp.model.tour.product.tour.detail.db.TourSubModel;
+import com.tourapp.tour.product.tour.db.ModifyCodeField;
+import com.tourapp.tour.product.tour.db.TourHeaderOptionField;
 
 /**
  *  TourSub - Tour Sub File.

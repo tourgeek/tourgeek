@@ -32,6 +32,7 @@ import javax.swing.JTextField;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
+import org.jbundle.thin.base.db.LinkedConverter;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JScreen;
@@ -45,7 +46,6 @@ import org.jbundle.thin.base.screen.util.JDescTextField;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
-import org.jbundle.thin.base.screen.util.LinkedConverter;
 import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
