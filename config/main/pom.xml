@@ -409,6 +409,7 @@
               <argument>loadInitialData=false</argument>
               <argument>archiveDir=/home/don/workspace/workspace/jbundle/jbundle/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
               /home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
+	      /home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
               /home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
               /home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data/initial_data/current_initial_data/</argument>
               <argument>connectionType=proxy</argument>
