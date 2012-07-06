@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<Air ID="1">
-		<LastChanged>2012-07-01T02:34:14</LastChanged>
+		<LastChanged>2012-07-05T22:02:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>UA17 LAX/NRT 2:10 PM-3:55 PM 1</Description>
 		<Code>UA17</Code>
@@ -47,7 +47,7 @@
 		<Segment>1</Segment>
 	</Air>
 	<Air ID="2">
-		<LastChanged>2012-07-01T02:34:14</LastChanged>
+		<LastChanged>2012-07-05T22:02:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>UA18 NRT/LAX 5:00 PM-2:18 AM -1</Description>
 		<Code>UA18</Code>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<ArTrx ID="1">
-		<LastChanged>2012-07-01T02:33:44</LastChanged>
+		<LastChanged>2012-07-05T22:02:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -14,7 +14,7 @@
 		<DepartureDate>2012-09-06</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="2">
-		<LastChanged>2012-07-01T02:33:44</LastChanged>
+		<LastChanged>2012-07-05T22:02:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -28,7 +28,7 @@
 		<DepartureDate>2012-09-06</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="3">
-		<LastChanged>2012-07-01T02:33:44</LastChanged>
+		<LastChanged>2012-07-05T22:02:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -42,7 +42,7 @@
 		<DepartureDate>2012-09-21</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="4">
-		<LastChanged>2012-07-01T02:33:44</LastChanged>
+		<LastChanged>2012-07-05T22:02:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -56,7 +56,7 @@
 		<DepartureDate>2012-09-24</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="5">
-		<LastChanged>2012-07-01T02:33:44</LastChanged>
+		<LastChanged>2012-07-05T22:02:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>105</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -70,7 +70,7 @@
 		<DepartureDate>2012-09-24</DepartureDate>
 	</ArTrx>
 	<ArTrx ID="6">
-		<LastChanged>2012-07-01T02:33:44</LastChanged>
+		<LastChanged>2012-07-05T22:02:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>

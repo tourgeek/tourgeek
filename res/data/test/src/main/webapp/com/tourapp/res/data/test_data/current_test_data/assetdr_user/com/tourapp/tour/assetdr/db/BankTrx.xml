@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BankTrx ID="1">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -23,7 +23,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="2">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -46,7 +46,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="3">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -69,7 +69,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="4">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -92,7 +92,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="5">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -115,7 +115,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="6">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -138,7 +138,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="7">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -161,7 +161,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="8">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
@@ -184,7 +184,7 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="9">
-		<LastChanged>2012-07-01T02:33:08</LastChanged>
+		<LastChanged>2012-07-05T22:01:45</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
