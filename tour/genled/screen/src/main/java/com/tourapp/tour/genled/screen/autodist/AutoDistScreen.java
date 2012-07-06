@@ -1,7 +1,8 @@
 /**
- * @(#)AutoDistScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)AutoDistScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.genled.screen.autodist;
 
 import java.awt.*;

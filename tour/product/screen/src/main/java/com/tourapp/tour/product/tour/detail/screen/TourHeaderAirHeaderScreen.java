@@ -1,7 +1,8 @@
 /**
- * @(#)TourHeaderAirHeaderScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TourHeaderAirHeaderScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.tour.detail.screen;
 
 import java.awt.*;

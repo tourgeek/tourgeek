@@ -1,7 +1,8 @@
 /**
- * @(#)VendorStatus.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)VendorStatus.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.acctpay.db;
 
 import java.util.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)ItemBookingChangeResponse.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ItemBookingChangeResponse.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.item.response;
 
 import java.awt.*;

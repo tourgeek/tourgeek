@@ -1,7 +1,8 @@
 /**
- * @(#)CurrencysModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CurrencysModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.base.db;
 
 import org.jbundle.model.db.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)TimeTrxScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TimeTrxScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.payroll.report.payroll;
 
 import java.awt.*;

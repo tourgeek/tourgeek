@@ -1,7 +1,8 @@
 /**
- * @(#)CruiseClassModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CruiseClassModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.product.cruise.db;
 
 import com.tourapp.model.tour.product.base.db.*;

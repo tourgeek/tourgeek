@@ -1,7 +1,8 @@
 /**
- * @(#)CreditApproveGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CreditApproveGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctrec.screen.credit;
 
 import java.awt.*;

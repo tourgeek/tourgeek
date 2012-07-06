@@ -1,7 +1,8 @@
 /**
- * @(#)InventoryDetailScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)InventoryDetailScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.base.screen;
 
 import java.awt.*;

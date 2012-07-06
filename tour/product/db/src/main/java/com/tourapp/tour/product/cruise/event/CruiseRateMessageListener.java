@@ -1,7 +1,8 @@
 /**
- * @(#)CruiseRateMessageListener.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CruiseRateMessageListener.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.cruise.event;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)RequestLabelsUpdate.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)RequestLabelsUpdate.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.request.report;
 
 import java.awt.*;

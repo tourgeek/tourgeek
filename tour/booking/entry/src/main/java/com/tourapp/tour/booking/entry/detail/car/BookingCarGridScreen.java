@@ -1,7 +1,8 @@
 /**
- * @(#)BookingCarGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingCarGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.entry.detail.car;
 
 import java.awt.*;

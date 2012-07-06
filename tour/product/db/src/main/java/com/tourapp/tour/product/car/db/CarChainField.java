@@ -1,7 +1,8 @@
 /**
- * @(#)CarChainField.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CarChainField.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.car.db;
 
 import java.awt.*;

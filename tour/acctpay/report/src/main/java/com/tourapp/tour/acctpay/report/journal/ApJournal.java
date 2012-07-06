@@ -1,7 +1,8 @@
 /**
- * @(#)ApJournal.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ApJournal.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.report.journal;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)AirAvailRequestMessageInProcessor.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)AirAvailRequestMessageInProcessor.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.air.request.in;
 
 import java.awt.*;

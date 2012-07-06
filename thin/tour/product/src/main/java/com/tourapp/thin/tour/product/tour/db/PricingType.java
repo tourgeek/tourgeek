@@ -1,7 +1,8 @@
 /**
- * @(#)PricingType.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)PricingType.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.product.tour.db;
 
 import java.util.*;

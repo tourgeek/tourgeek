@@ -1,7 +1,8 @@
 /**
- * @(#)NameOrderedField.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)NameOrderedField.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.profile.db;
 
 import java.awt.*;

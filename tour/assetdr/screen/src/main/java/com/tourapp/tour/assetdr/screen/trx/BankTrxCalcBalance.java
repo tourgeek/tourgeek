@@ -1,7 +1,8 @@
 /**
- * @(#)BankTrxCalcBalance.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BankTrxCalcBalance.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.assetdr.screen.trx;
 
 import java.awt.*;

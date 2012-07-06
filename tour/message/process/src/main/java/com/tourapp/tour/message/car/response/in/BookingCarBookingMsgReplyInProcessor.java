@@ -1,7 +1,8 @@
 /**
- * @(#)BookingCarBookingMsgReplyInProcessor.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingCarBookingMsgReplyInProcessor.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.car.response.in;
 
 import java.awt.*;

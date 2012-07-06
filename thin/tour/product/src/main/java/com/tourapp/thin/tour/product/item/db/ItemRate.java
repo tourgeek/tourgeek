@@ -1,7 +1,8 @@
 /**
- * @(#)ItemRate.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ItemRate.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.product.item.db;
 
 import java.util.*;

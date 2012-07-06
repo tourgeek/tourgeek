@@ -1,7 +1,8 @@
 /**
- * @(#)AirAvailabilityResponse.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)AirAvailabilityResponse.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.air.response;
 
 import java.awt.*;

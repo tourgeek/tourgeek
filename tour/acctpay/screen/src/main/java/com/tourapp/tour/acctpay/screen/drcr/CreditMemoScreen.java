@@ -1,7 +1,8 @@
 /**
- * @(#)CreditMemoScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CreditMemoScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.screen.drcr;
 
 import java.awt.*;

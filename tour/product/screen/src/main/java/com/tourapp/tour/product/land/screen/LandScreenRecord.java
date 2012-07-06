@@ -1,7 +1,8 @@
 /**
- * @(#)LandScreenRecord.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)LandScreenRecord.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.land.screen;
 
 import java.awt.*;

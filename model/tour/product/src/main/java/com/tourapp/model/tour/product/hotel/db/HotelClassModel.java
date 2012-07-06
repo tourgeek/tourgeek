@@ -1,7 +1,8 @@
 /**
- * @(#)HotelClassModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)HotelClassModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.product.hotel.db;
 
 import com.tourapp.model.tour.product.base.db.*;

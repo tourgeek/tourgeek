@@ -1,7 +1,8 @@
 /**
- * @(#)PrepaymentDistScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)PrepaymentDistScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.screen.prepymt;
 
 import java.awt.*;

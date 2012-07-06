@@ -1,7 +1,8 @@
 /**
- * @(#)Ten99Report.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)Ten99Report.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.report.ten99;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)TourHeaderInventoryModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TourHeaderInventoryModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.booking.inventory.db;
 
 import com.tourapp.model.tour.booking.inventory.db.*;

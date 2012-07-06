@@ -1,7 +1,8 @@
 /**
- * @(#)AirClassSelect.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)AirClassSelect.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.air.db;
 
 import java.awt.*;

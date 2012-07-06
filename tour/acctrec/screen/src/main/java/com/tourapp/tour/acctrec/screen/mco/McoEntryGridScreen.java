@@ -1,7 +1,8 @@
 /**
- * @(#)McoEntryGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)McoEntryGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctrec.screen.mco;
 
 import java.awt.*;

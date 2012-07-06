@@ -1,7 +1,8 @@
 /**
- * @(#)BookingItineraryScreenRecord.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingItineraryScreenRecord.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.entry.itin;
 
 import java.awt.*;

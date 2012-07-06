@@ -1,7 +1,8 @@
 /**
- * @(#)BookingTransportation.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingTransportation.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.booking.detail.db;
 
 import java.util.*;

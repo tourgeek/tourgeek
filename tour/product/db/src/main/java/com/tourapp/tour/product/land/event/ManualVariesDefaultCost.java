@@ -1,7 +1,8 @@
 /**
- * @(#)ManualVariesDefaultCost.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ManualVariesDefaultCost.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.land.event;
 
 import java.awt.*;

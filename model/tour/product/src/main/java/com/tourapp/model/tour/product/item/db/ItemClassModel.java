@@ -1,7 +1,8 @@
 /**
- * @(#)ItemClassModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ItemClassModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.product.item.db;
 
 import com.tourapp.model.tour.product.base.db.*;

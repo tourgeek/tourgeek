@@ -1,7 +1,8 @@
 /**
- * @(#)CarPricingModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CarPricingModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.product.car.db;
 
 import com.tourapp.model.tour.product.base.db.*;

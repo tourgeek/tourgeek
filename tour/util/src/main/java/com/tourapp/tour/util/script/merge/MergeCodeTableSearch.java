@@ -1,7 +1,8 @@
 /**
- * @(#)MergeCodeTableSearch.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)MergeCodeTableSearch.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.util.script.merge;
 
 import java.awt.*;

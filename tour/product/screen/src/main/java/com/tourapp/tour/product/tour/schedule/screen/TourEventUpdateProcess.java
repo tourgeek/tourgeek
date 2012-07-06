@@ -1,7 +1,8 @@
 /**
- * @(#)TourEventUpdateProcess.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TourEventUpdateProcess.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.tour.schedule.screen;
 
 import java.awt.*;

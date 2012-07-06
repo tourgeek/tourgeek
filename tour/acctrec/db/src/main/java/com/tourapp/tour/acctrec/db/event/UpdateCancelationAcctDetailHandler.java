@@ -1,7 +1,8 @@
 /**
- * @(#)UpdateCancelationAcctDetailHandler.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)UpdateCancelationAcctDetailHandler.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctrec.db.event;
 
 import java.awt.*;

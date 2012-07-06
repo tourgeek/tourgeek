@@ -1,7 +1,8 @@
 /**
- * @(#)BrocHistButton.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BrocHistButton.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.request.screen;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)Airline.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)Airline.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.product.air.db;
 
 import java.util.*;

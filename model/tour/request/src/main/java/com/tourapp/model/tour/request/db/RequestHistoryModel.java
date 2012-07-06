@@ -1,7 +1,8 @@
 /**
- * @(#)RequestHistoryModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)RequestHistoryModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.request.db;
 
 import com.tourapp.model.tour.request.db.*;

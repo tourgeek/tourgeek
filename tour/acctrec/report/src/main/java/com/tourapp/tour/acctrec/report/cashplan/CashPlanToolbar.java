@@ -1,7 +1,8 @@
 /**
- * @(#)CashPlanToolbar.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CashPlanToolbar.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctrec.report.cashplan;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)BaseArPay.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BaseArPay.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.acctrec.db;
 
 import java.util.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)CruiseMessageData.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CruiseMessageData.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.cruise.request.data;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)UpdateTrxSystemHandler.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)UpdateTrxSystemHandler.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.genled.screen.trx;
 
 import java.awt.*;

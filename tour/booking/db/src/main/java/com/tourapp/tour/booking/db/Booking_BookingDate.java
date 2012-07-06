@@ -1,7 +1,8 @@
 /**
- * @(#)Booking_BookingDate.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)Booking_BookingDate.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.db;
 
 import java.awt.*;

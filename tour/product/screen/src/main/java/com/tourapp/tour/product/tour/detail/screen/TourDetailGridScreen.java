@@ -1,38 +1,37 @@
 /**
- * @(#)TourDetailGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TourDetailGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.tour.detail.screen;
 
-import java.util.Hashtable;
-import java.util.Map;
+import java.awt.*;
+import java.util.*;
 
-import org.jbundle.base.db.Record;
-import org.jbundle.base.db.event.SubCountHandler;
-import org.jbundle.base.message.record.RecordMessageConstants;
-import org.jbundle.base.model.DBConstants;
-import org.jbundle.base.model.MenuConstants;
-import org.jbundle.base.model.ScreenConstants;
-import org.jbundle.base.screen.model.BasePanel;
-import org.jbundle.base.screen.model.DetailGridScreen;
-import org.jbundle.base.screen.model.SCannedBox;
-import org.jbundle.base.screen.model.ScreenField;
-import org.jbundle.base.screen.model.util.ScreenLocation;
-import org.jbundle.model.DBException;
-import org.jbundle.model.Task;
-import org.jbundle.model.message.MessageManager;
-import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.message.BaseMessage;
-import org.jbundle.thin.base.message.BaseMessageHeader;
-import org.jbundle.thin.base.message.MapMessage;
-import org.jbundle.thin.base.message.MessageConstants;
-import org.jbundle.thin.base.util.Application;
-
-import com.tourapp.tour.product.tour.db.TourHeaderOption;
-import com.tourapp.tour.product.tour.detail.db.TourHeaderAirHeader;
-import com.tourapp.tour.product.tour.detail.db.TourHeaderDetail;
-import com.tourapp.tour.product.tour.detail.db.TourHeaderLine;
-import com.tourapp.tour.product.tour.screen.TourHeaderOptionHeaderScreen;
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.screen.model.*;
+import org.jbundle.base.screen.model.util.*;
+import org.jbundle.base.model.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
+import org.jbundle.base.message.record.*;
+import org.jbundle.thin.base.message.*;
+import org.jbundle.thin.base.util.message.*;
+import org.jbundle.model.message.*;
+import org.jbundle.main.screen.*;
+import com.tourapp.tour.product.tour.db.*;
+import com.tourapp.tour.product.tour.screen.*;
+import com.tourapp.tour.product.tour.detail.db.*;
+import org.jbundle.main.msg.db.*;
 
 /**
  *  TourDetailGridScreen - .

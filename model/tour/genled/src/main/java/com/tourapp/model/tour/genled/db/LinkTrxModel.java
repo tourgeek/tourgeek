@@ -1,7 +1,8 @@
 /**
- * @(#)LinkTrxModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)LinkTrxModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.genled.db;
 
 import com.tourapp.model.tour.genled.db.*;

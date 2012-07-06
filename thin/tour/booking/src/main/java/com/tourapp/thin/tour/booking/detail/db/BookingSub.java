@@ -1,7 +1,8 @@
 /**
- * @(#)BookingSub.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingSub.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.booking.detail.db;
 
 import com.tourapp.model.tour.booking.db.*;

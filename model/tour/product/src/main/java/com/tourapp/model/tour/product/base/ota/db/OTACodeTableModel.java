@@ -1,7 +1,8 @@
 /**
- * @(#)OTACodeTableModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)OTACodeTableModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.product.base.ota.db;
 
 import org.jbundle.model.db.*;

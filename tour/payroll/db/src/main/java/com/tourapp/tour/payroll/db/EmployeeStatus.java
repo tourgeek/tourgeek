@@ -1,7 +1,8 @@
 /**
- * @(#)EmployeeStatus.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)EmployeeStatus.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.payroll.db;
 
 import java.awt.*;

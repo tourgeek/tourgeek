@@ -1,7 +1,8 @@
 /**
- * @(#)PaxGroupModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)PaxGroupModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.booking.db;
 
 import org.jbundle.model.db.*;

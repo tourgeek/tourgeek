@@ -1,7 +1,8 @@
 /**
- * @(#)GetTransportationCostHandler.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)GetTransportationCostHandler.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.trans.event;
 
 import java.awt.*;

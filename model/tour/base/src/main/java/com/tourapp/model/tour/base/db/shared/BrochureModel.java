@@ -1,7 +1,8 @@
 /**
- * @(#)BrochureModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BrochureModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.base.db.shared;
 
 import org.jbundle.model.db.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)GetCarCostHandler.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)GetCarCostHandler.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.car.event;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)PingService2011BImpl.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)PingService2011BImpl.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.service._2011B.ping;
 
 import java.awt.*;

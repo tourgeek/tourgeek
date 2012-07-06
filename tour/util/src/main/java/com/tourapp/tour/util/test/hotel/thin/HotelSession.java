@@ -1,7 +1,8 @@
 /**
- * @(#)HotelSession.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)HotelSession.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.util.test.hotel.thin;
 
 import java.awt.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)OperationsBookingDetailGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)OperationsBookingDetailGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.operations;
 
 import java.awt.*;

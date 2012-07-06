@@ -1,7 +1,8 @@
 /**
- * @(#)VersionsModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)VersionsModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.genled.db;
 
 import org.jbundle.model.db.*;

@@ -1,7 +1,8 @@
 /**
- * @(#)HotelRateRequestSOAPMessageIn2011B.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)HotelRateRequestSOAPMessageIn2011B.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.jibx.ota2011b.hotel.request.in;
 
 import java.awt.*;

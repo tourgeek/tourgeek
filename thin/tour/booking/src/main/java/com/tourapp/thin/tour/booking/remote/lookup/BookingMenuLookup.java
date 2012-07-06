@@ -1,7 +1,8 @@
 /**
- * @(#)BookingMenuLookup.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingMenuLookup.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.booking.remote.lookup;
 
 import java.util.*;

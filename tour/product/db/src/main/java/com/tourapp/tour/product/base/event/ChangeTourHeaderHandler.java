@@ -1,14 +1,14 @@
 /**
- * @(#)ChangeTourHeaderHandler.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ChangeTourHeaderHandler.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.product.base.event;
 
 import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;
-import org.jbundle.thin.base.thread.SyncPage;
 import org.jbundle.thin.base.util.*;
 import org.jbundle.thin.base.db.*;
 import org.jbundle.base.db.event.*;
@@ -23,6 +23,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.screen.print.thread.*;
 import org.jbundle.thin.base.remote.*;
+import org.jbundle.thin.base.thread.*;
 import com.tourapp.tour.product.tour.db.*;
 import com.tourapp.model.tour.booking.db.*;
 

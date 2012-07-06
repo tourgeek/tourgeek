@@ -1,7 +1,8 @@
 /**
- * @(#)ContinentField.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ContinentField.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.base.db;
 
 import java.awt.*;

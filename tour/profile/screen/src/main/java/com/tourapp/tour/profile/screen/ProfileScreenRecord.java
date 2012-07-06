@@ -1,7 +1,8 @@
 /**
- * @(#)ProfileScreenRecord.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ProfileScreenRecord.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.profile.screen;
 
 import java.awt.*;

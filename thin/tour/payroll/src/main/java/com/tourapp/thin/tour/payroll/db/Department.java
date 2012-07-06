@@ -1,7 +1,8 @@
 /**
- * @(#)Department.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)Department.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.payroll.db;
 
 import java.util.*;

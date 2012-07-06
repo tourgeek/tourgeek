@@ -1,7 +1,8 @@
 /**
- * @(#)HotelBookingRequest.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)HotelBookingRequest.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.hotel.request;
 
 import java.awt.*;

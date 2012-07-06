@@ -1,7 +1,8 @@
 /**
- * @(#)BankTrxBatchDetailModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BankTrxBatchDetailModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.assetdr.db;
 
 import com.tourapp.model.tour.assetdr.db.*;

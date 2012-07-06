@@ -1,7 +1,8 @@
 /**
- * @(#)TransInfoRequestMessageInProcessor.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TransInfoRequestMessageInProcessor.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.trans.request.in;
 
 import java.awt.*;

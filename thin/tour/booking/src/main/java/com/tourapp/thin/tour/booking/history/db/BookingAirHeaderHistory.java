@@ -1,7 +1,8 @@
 /**
- * @(#)BookingAirHeaderHistory.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingAirHeaderHistory.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.booking.history.db;
 
 import java.util.*;

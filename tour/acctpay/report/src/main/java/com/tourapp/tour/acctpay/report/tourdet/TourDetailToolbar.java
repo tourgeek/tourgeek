@@ -1,7 +1,8 @@
 /**
- * @(#)TourDetailToolbar.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)TourDetailToolbar.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.report.tourdet;
 
 import java.awt.*;

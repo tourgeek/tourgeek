@@ -1,7 +1,8 @@
 /**
- * @(#)BookingTourRateMsgReplyInProcessor.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingTourRateMsgReplyInProcessor.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.message.tour.response.in;
 
 import java.awt.*;

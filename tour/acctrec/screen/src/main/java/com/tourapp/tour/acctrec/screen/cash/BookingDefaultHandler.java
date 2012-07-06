@@ -1,7 +1,8 @@
 /**
- * @(#)BookingDefaultHandler.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingDefaultHandler.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctrec.screen.cash;
 
 import java.awt.*;

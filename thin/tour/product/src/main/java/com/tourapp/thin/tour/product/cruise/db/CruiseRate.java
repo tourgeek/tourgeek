@@ -1,7 +1,8 @@
 /**
- * @(#)CruiseRate.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CruiseRate.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.thin.tour.product.cruise.db;
 
 import java.util.*;

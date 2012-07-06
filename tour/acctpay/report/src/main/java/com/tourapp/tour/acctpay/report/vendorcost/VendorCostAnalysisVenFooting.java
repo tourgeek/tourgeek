@@ -1,7 +1,8 @@
 /**
- * @(#)VendorCostAnalysisVenFooting.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)VendorCostAnalysisVenFooting.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.report.vendorcost;
 
 import java.awt.*;

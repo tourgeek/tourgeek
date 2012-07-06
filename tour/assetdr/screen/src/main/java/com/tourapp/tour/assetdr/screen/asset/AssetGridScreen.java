@@ -1,7 +1,8 @@
 /**
- * @(#)AssetGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)AssetGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.assetdr.screen.asset;
 
 import java.awt.*;

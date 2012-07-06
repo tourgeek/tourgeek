@@ -1,7 +1,8 @@
 /**
- * @(#)RegionModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)RegionModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.base.db;
 
 import com.tourapp.model.tour.base.db.*;

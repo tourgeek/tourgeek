@@ -1,7 +1,8 @@
 /**
- * @(#)BankAcctField.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BankAcctField.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.assetdr.db;
 
 import java.awt.*;

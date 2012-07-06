@@ -1,7 +1,8 @@
 /**
- * @(#)BookingPaxScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingPaxScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.entry.pax;
 
 import java.awt.*;

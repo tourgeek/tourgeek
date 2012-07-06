@@ -1,7 +1,8 @@
 /**
- * @(#)OperationTypeField.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)OperationTypeField.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.acctpay.db;
 
 import java.awt.*;

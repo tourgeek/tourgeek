@@ -1,7 +1,8 @@
 /**
- * @(#)SalesRegion.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)SalesRegion.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.profile.db;
 
 import java.awt.*;

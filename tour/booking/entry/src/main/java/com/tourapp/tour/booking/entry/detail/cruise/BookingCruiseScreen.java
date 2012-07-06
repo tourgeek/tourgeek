@@ -1,7 +1,8 @@
 /**
- * @(#)BookingCruiseScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BookingCruiseScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.entry.detail.cruise;
 
 import java.awt.*;

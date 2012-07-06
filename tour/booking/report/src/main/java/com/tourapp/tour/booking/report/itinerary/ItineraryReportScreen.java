@@ -1,7 +1,8 @@
 /**
- * @(#)ItineraryReportScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)ItineraryReportScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.booking.report.itinerary;
 
 import java.awt.*;

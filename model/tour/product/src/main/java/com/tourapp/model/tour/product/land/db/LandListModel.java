@@ -1,7 +1,8 @@
 /**
- * @(#)LandListModel.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)LandListModel.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.model.tour.product.land.db;
 
 import org.jbundle.model.db.*;

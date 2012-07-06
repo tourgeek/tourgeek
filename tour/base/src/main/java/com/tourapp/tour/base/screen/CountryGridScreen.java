@@ -1,7 +1,8 @@
 /**
- * @(#)CountryGridScreen.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)CountryGridScreen.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.base.screen;
 
 import java.awt.*;

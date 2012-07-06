@@ -1,7 +1,8 @@
 /**
- * @(#)BankReconScreenRecord.
- * Copyright © 2012 tourapp.com. All rights reserved.
- */
+  * @(#)BankReconScreenRecord.
+  * Copyright © 2012 tourapp.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourapp.tour.assetdr.report.recon;
 
 import java.awt.*;
