@@ -4,98 +4,62 @@
 		<Deleted>N</Deleted>
 		<Description>Air</Description>
 		<Code>A</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="2">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Car</Description>
 		<Code>V</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="3">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hotel</Description>
 		<Code>H</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="4">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Item</Description>
 		<Code>I</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="6">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Tour</Description>
 		<Code>T</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="7">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Transportation</Description>
 		<Code>R</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="8">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Cruise</Description>
 		<Code>U</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="9">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Land</Description>
 		<Code>L</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 	<ProductType ID="11">
 		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Unknown</Description>
 		<Code>U</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAAAABweA==]]></Icon>
 	</ProductType>
 </file>
