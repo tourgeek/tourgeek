@@ -19,7 +19,6 @@ public interface BookingStatusModel extends BaseProductStatusModel
     public static final String FOLLOWS_BOOKING_STATUS_ID = "FollowsBookingStatusID";
 
     public static final String CODE_KEY = "Code";
-    public static final String _CLASS = "com.tourapp.tour.";
     public static final String BOOKING_STATUS_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.BookingStatusGridScreen";
 
     public static final String BOOKING_STATUS_FILE = "BookingStatus";
