@@ -1,79 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<MessageStatus ID="1">
-		<LastChanged>2008-01-25T14:33:00</LastChanged>
+		<LastChanged>2012-07-09T10:06:09</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Received</Description>
 		<Code>RECEIVED</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAADViVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAnElEQVR42rVTSRGAMAzEQL3UAGIwgJcaqJgaqJcaCEkgHSb0ZCCfHY49moVl+WuMMYAAgm80IEaAEBKLpJRgOgGRvY+cgKZviUNO18ucwLmQE6jnZY113cHajVESyDXhyHGyM5HvOLOLh8gQWVendzBSKZIinj0wihiR5X4zyVkdxfbo7IrYq5SdamTC/xPoRZaw2Yb+4mr42V97AEXWPwaVOK9aAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</MessageStatus>
 	<MessageStatus ID="2">
-		<LastChanged>2008-01-25T14:40:00</LastChanged>
+		<LastChanged>2012-07-09T10:08:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Sent - Waiting reply</Description>
 		<Code>SENT</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAD3iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvklEQVR42mNgoDWQlpb+r6Gh8R9Ek2UASPPN9WvBhpCt+dmeXQRd8J+Xl/c/Og3SdOly8P+NjiEwF8DlQQCuGyT46dMnsCCMhmmGhQFYvKLi/6fs7P8w9SguAIE7d3b9f/nyOJgGaTp6zO3/Pr9EsCEg8XlAsdWmprhdAFK0a0ssVs3IhhN0AbrfkTWDaLwuwKb5+MEssMtANEEXEHI+TheABNE1Y4taGI3iArxRhxS16DTWlEd2modlHAZ6AwBkUlUYlAnk2gAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</MessageStatus>
 	<MessageStatus ID="3">
-		<LastChanged>2008-01-25T14:36:00</LastChanged>
+		<LastChanged>2012-07-09T10:09:35</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Trx ID Hold</Description>
 		<Code>HOLD</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAB2iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAPUlEQVR42mNgGFTA2DjtPwwTI47VgJkzz4AxCBASx2lAWtpMrAagi48aMHwNACnCZgA2cazgPxIgRnzgAQDRCgHapqlyMAAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</MessageStatus>
 	<MessageStatus ID="4">
-		<LastChanged>2008-01-25T14:42:00</LastChanged>
+		<LastChanged>2012-07-09T10:09:47</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Unknown</Description>
 		<Code>UNKNOWN</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACLiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUklEQVR42mNgwAH+NzT8R8YMpACwJiCFjBkgmDTNcDFiDcGmmSRDYAZglaOLAUR67f/AaQYB+mjGSEykaqaKAYjYYyBbMwNZGYkq0YfuBXxhAABL+pd7aXx1rAAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</MessageStatus>
 	<MessageStatus ID="5">
-		<LastChanged>2008-01-25T14:29:00</LastChanged>
+		<LastChanged>2012-07-09T10:05:19</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Error</Description>
 		<Code>ERROR</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACRiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWElEQVR42mNgwA3+r+Pl/Q+iP3369J+BRADWfG/2bLINgWs+FhwMNgAESHYBSPOoCyhwAUwzzAUkGQB1Ltx2Up2PYgg5qZBqgPK8QHYsQBVT5AK4IYQ0AwCPB6erzl+ImQAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</MessageStatus>
 	<MessageStatus ID="6">
-		<LastChanged>2008-01-25T14:34:48</LastChanged>
+		<LastChanged>2012-07-09T10:06:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Sent</Description>
 		<Code>SENTOK</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAADbiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAoklEQVR42mNgGCzgPy8v739SaBCA6wYJfvr0CSyIl66o+P8pO/s/TD2KC0Dgzp1d/1++PI6Tnqeh8X+1qSluF4AU7doSi9cQEI3XBccPZuHUBOOT5QIDg0S4ISSHAchQW9u8/4cOfcIfC/iiDuSCefPOww3BcAFM8fnz/8GKsNETJx5CMQTF/cS6AGQINhcQBKAwgGkmK63DYoHszEKRZnwAAMoxeH7zGIaMAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</MessageStatus>
 	<MessageStatus ID="7">
-		<LastChanged>2008-01-25T14:42:00</LastChanged>
+		<LastChanged>2012-07-09T10:08:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Sent - Reply Ignored</Description>
 		<Code>IGNORED</Code>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACfiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZklEQVR42q2S0Q0AIQhDmdad2ImdajQ5Q1TQE/qlCX1agChRyACEIBBBCNIBpfAzZABeITsANj3CTQ+g1e4Nqs/mFL6i+SUDRkvNYaSmeRCcvfDNh0hzjEuCMkT2o4tZfkdwf5SmCusQpCmhMCIPAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</MessageStatus>
 </file>

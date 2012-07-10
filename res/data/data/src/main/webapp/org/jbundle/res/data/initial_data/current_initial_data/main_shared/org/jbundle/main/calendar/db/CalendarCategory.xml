@@ -1,32 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<CalendarCategory ID="1">
-		<LastChanged/>
+		<LastChanged>2012-07-09T10:11:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Appointment</Description>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACQiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAV0lEQVR42mNgoCH4TwTGrXnbtm04MSED/k+feRgnhhmOywCCzgYZgtcAEMBmMwgQbQAuQLIBvLy85BkA0gjDA+OCwWEAtnCAGYA3FRKKRoJ5gJIMRBYAAApVd3k13nzSAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</CalendarCategory>
 	<CalendarCategory ID="2">
-		<LastChanged/>
+		<LastChanged>2012-07-09T10:11:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Anniversary</Description>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACaiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYUlEQVR42mNgoCH4TwTGrXnbtm04MSED/k+feRgnhhmOywCCzgYZgtcAEMBmMwgQbQAuQJEBvLy85BkA0gjCZLsAppkkA2CakDWTbAC6ZpK9gM8AvKmQUDQSzAOUZCCyAAB8fHpPemirVQAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</CalendarCategory>
 	<CalendarCategory ID="3">
-		<LastChanged>2008-05-23T16:19:17</LastChanged>
+		<LastChanged>2012-07-09T10:11:47</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Holiday</Description>
-		<Icon enctype="base64"><![CDATA[rO0ABXNyADNvcmcuamJ1bmRsZS50aGluLmJhc2Uuc2NyZWVuLnV0aWwuU2VyaWFsaXphYmxlSW1h
-Z2UAAAAAAAAAAQIAAHhyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAA
-AAAAAQMAA0kABmhlaWdodEkABXdpZHRoWwAGcGl4ZWxzdAACW0l4cAAAAAAAAAAAcHcIAAAAAAAA
-AABweA==
-]]></Icon>
+		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAC9iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhElEQVR42p2R0Q2AIAxEGZ01XMNfV3ABP5ilpsboAXeh0KRRK309rinxsCbnIudcAfwba+97HMCSQdqftAnUxKcNZSN5Vb5yf82D1ge7drNzM7YduTaEevOT5WBX7KZ3BvvTAULtXxDmSDBTII1FOCr7DqnVsGlQq6akKGDUE7rGbEiPbpMJ0iTmzpnNAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</CalendarCategory>
 </file>

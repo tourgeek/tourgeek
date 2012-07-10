@@ -8,13 +8,13 @@
 	<TourStatus ID="2">
 		<LastChanged>2012-07-07T10:49:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Not used (Proposal)</Description>
+		<Description>Proposal</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAFciVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABI0lEQVR42s2TS0/CQBSF+wf6+40rlbhQFihVGh+RWouvUihKpRSMkWhEDaJpDPGB+XQaigVbG3eezc3kzjlz5s4ZSfpvQJZlkqqqqhiGQSJbbPJ9H4HpKkQEhMivDgRmZg2WsnXm5k2UtfOAbNvfIqkOlrMOCxmL9cIFuVwDTeuOryH6qQ4yixUK6iUrqy66fsv2Vge7+pwuEjY3Njvk882vgd1T3LmiVhtgHvVoN4ep1wiaiuKxX+qhFa85PRlQPu7T8j5IfcPQweHBA/ruDU79BcvsTxPTZ2DsdWk4r1TKj7RHJ4/yMD4kXMc6cM/eqFpPtNwhcf2QHDeLwIEge+47JeOOaEJDckSEHw5iYhwghhzrQEqI8cQMovVvP43JOIv6Ce3fXPVTQPU5AAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</TourStatus>
 	<TourStatus ID="3">
 		<LastChanged>2012-07-07T10:50:17</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Not Used (Accepted)</Description>
+		<Description>Accepted</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAC6iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVR42mNgGGzgPwFM2ABcACZHlAFbtpz539AwE0x3dy8Baz5zhjhDwAqQNZ858/T/smUH4N4gygB0zc+eQcSIMQQsiU0zsiEEDcClGUQTZQAezcRFIzbNK5Yf/I+UVggHIh6bCXsBj80EUybeJIycIpFSKHFpmVgvMBAb0jA2ACyLWB3PBc8SAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
 	</TourStatus>
 	<TourStatus ID="4">
@@ -74,7 +74,7 @@
 	<TourStatus ID="13">
 		<LastChanged>2012-07-07T10:46:53</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Data valid (Not used</Description>
+		<Description>Data valid</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACOiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVUlEQVR42tXSQQoAIAhEUY/uEb2RYSAEaem0SmhV71MQ0c+jT1hEFI1MzMwewbCt9QaKYJvqe1JM2ZVK2A/4ZhC54lOkjMNIF4eRLt4iCF7/BYxbMwDEHrzROXNWjwAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</TourStatus>
 </file>
