@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Booking ID="1">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
-		<CustSaleDate>2012-05-01</CustSaleDate>
+		<CustSaleDate>2012-06-01</CustSaleDate>
 		<CustSaleAgentID>11</CustSaleAgentID>
 		<CustSaleCustID>29</CustSaleCustID>
 		<CustSaleCustNo/>
 		<Code/>
 		<Description>Eisenwiert - Hong Kong and Thailand - Jul 21, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2012-05-05T15:20:17</ModDate>
+		<ModDate>2012-06-05T15:20:17</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>Kilianstrasse 9</AddressLine1>
@@ -52,9 +52,9 @@ eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 ]]></Properties>
 		<Deposit>800.00</Deposit>
-		<DepositDueDate>2012-05-16</DepositDueDate>
-		<FinalPaymentDueDate>2012-07-21</FinalPaymentDueDate>
-		<NextEventDate>2012-05-01</NextEventDate>
+		<DepositDueDate>2012-06-16</DepositDueDate>
+		<FinalPaymentDueDate>2012-08-21</FinalPaymentDueDate>
+		<NextEventDate>2012-06-01</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>0.00</Gross>
 		<Commission>0.00</Commission>
@@ -68,16 +68,16 @@ eventStatus.Proposal.2=Y
 		<NextLineSequence>1</NextLineSequence>
 	</Booking>
 	<Booking ID="2">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
-		<CustSaleDate>2012-05-01</CustSaleDate>
+		<CustSaleDate>2012-06-01</CustSaleDate>
 		<CustSaleAgentID>11</CustSaleAgentID>
 		<CustSaleCustID>22</CustSaleCustID>
 		<CustSaleCustNo/>
 		<Code/>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2012-06-01T15:23:36</ModDate>
+		<ModDate>2012-07-01T15:23:36</ModDate>
 		<BookingStatusID>5</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>1941 Jones Ave</AddressLine1>
@@ -121,9 +121,9 @@ eventStatus.Proposal.2=Y
 eventStatus.Okay.5=Y
 ]]></Properties>
 		<Deposit>600.00</Deposit>
-		<DepositDueDate>2012-05-16</DepositDueDate>
-		<FinalPaymentDueDate>2012-07-06</FinalPaymentDueDate>
-		<NextEventDate>2012-05-01</NextEventDate>
+		<DepositDueDate>2012-06-16</DepositDueDate>
+		<FinalPaymentDueDate>2012-08-06</FinalPaymentDueDate>
+		<NextEventDate>2012-06-01</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>4,031.00</Gross>
 		<Commission>403.10</Commission>
@@ -137,16 +137,16 @@ eventStatus.Okay.5=Y
 		<NextLineSequence>1</NextLineSequence>
 	</Booking>
 	<Booking ID="3">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
-		<CustSaleDate>2012-06-01</CustSaleDate>
+		<CustSaleDate>2012-07-01</CustSaleDate>
 		<CustSaleAgentID>11</CustSaleAgentID>
 		<CustSaleCustID>27</CustSaleCustID>
 		<CustSaleCustNo/>
 		<Code/>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<EmployeeModID>11</EmployeeModID>
-		<ModDate>2012-06-01T15:23:34</ModDate>
+		<ModDate>2012-07-01T15:23:34</ModDate>
 		<BookingStatusID>3</BookingStatusID>
 		<GenericName/>
 		<AddressLine1>8838 Flower Street</AddressLine1>
@@ -189,9 +189,9 @@ eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 ]]></Properties>
 		<Deposit>400.00</Deposit>
-		<DepositDueDate>2012-06-16</DepositDueDate>
-		<FinalPaymentDueDate>2012-07-24</FinalPaymentDueDate>
-		<NextEventDate>2012-06-01</NextEventDate>
+		<DepositDueDate>2012-07-16</DepositDueDate>
+		<FinalPaymentDueDate>2012-08-24</FinalPaymentDueDate>
+		<NextEventDate>2012-07-01</NextEventDate>
 		<TourEventID>1</TourEventID>
 		<Gross>3,212.30</Gross>
 		<Commission>321.23</Commission>

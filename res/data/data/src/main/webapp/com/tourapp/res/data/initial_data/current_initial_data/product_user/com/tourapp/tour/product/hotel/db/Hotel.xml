@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Hotel ID="4">
-		<LastChanged>2012-07-01T02:34:19</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hyatt Tokyo</Description>
 		<Code/>
@@ -73,7 +73,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="5">
-		<LastChanged>2012-07-01T02:34:19</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Regent Hotel</Description>
 		<Code/>
@@ -146,7 +146,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="6">
-		<LastChanged>2012-07-01T02:34:19</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Dusit Thani Hotel</Description>
 		<Code/>
@@ -220,7 +220,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="7">
-		<LastChanged>2012-07-01T02:34:19</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Kyoto Hotel</Description>
 		<Code/>
@@ -293,7 +293,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="8">
-		<LastChanged>2012-07-01T02:34:20</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Mandarin Hotel</Description>
 		<Code/>
@@ -367,7 +367,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="9">
-		<LastChanged>2012-07-01T02:34:20</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>New World Hotel</Description>
 		<Code>NRTNE01</Code>
@@ -440,7 +440,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="10">
-		<LastChanged>2012-07-01T02:34:20</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Banff Springs Hotel</Description>
 		<Code/>
@@ -513,7 +513,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="11">
-		<LastChanged>2012-07-01T02:34:20</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Sheraton Bangkok</Description>
 		<Code/>
@@ -586,7 +586,7 @@
 		<MealPriceLocal/>
 	</Hotel>
 	<Hotel ID="12">
-		<LastChanged>2012-07-01T02:34:20</LastChanged>
+		<LastChanged>2012-07-16T10:42:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Marriott Bangkok</Description>
 		<Code/>

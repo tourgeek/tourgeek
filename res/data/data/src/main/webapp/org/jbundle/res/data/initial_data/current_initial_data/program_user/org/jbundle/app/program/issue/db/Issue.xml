@@ -1503,7 +1503,7 @@ For java and js (also change js dialog title)]]></Description>
 		<ClassInfoID/>
 	</Issue>
 	<Issue ID="90">
-		<LastChanged>2008-10-30T15:59:30</LastChanged>
+		<LastChanged>2008-10-30T15:59:03</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Will RecordChangedHandler work if it is accidentily disabled</Description>
 		<ProjectID>17</ProjectID>

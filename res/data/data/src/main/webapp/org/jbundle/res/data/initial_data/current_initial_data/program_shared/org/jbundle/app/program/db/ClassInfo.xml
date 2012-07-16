@@ -11797,7 +11797,7 @@ entry.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="497">
-		<LastChanged>2012-03-29T10:38:00</LastChanged>
+		<LastChanged>2012-07-16T10:41:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>McoEntryScreen</ClassName>
 		<BaseClassName>Screen</BaseClassName>

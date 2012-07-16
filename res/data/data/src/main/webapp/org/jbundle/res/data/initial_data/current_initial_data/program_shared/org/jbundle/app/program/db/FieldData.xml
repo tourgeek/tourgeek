@@ -116886,7 +116886,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="7278">
-		<LastChanged>2011-08-00T00:00:00</LastChanged>
+		<LastChanged>2011-07-31T00:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>OrderCompDate</FieldName>
 		<FieldClass>DateField</FieldClass>

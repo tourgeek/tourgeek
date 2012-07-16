@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<TourEventSchedule ID="2">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>2</TourClassID>
@@ -17,7 +17,7 @@
 		<ActionDocumentText/>
 	</TourEventSchedule>
 	<TourEventSchedule ID="3">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>2</TourClassID>
@@ -34,7 +34,7 @@
 		<ActionDocumentText/>
 	</TourEventSchedule>
 	<TourEventSchedule ID="5">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>2</TourClassID>
@@ -51,7 +51,7 @@
 		<ActionDocumentText/>
 	</TourEventSchedule>
 	<TourEventSchedule ID="6">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>3</TourClassID>
@@ -68,7 +68,7 @@
 		<ActionDocumentText/>
 	</TourEventSchedule>
 	<TourEventSchedule ID="7">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>4</TourClassID>
@@ -85,7 +85,7 @@
 		<ActionDocumentText/>
 	</TourEventSchedule>
 	<TourEventSchedule ID="8">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>4</TourClassID>
@@ -102,7 +102,7 @@
 		<ActionDocumentText/>
 	</TourEventSchedule>
 	<TourEventSchedule ID="9">
-		<LastChanged>2012-07-01T02:34:29</LastChanged>
+		<LastChanged>2012-07-16T10:43:02</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<TourClassID>4</TourClassID>

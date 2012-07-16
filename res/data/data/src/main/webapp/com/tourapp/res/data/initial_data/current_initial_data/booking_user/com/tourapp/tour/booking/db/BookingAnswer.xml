@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<BookingAnswer ID="1">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Information</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -24,14 +24,14 @@
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="2">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
 		<Description>Basic Information 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -48,14 +48,14 @@
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="3">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -72,14 +72,14 @@
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="4">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
 		<Description>No Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -96,14 +96,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="5">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
 		<Description>Hotel Upgrades</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -120,14 +120,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="6">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
 		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -144,14 +144,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="7">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
 		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -168,14 +168,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="8">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>Basic Information 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -192,14 +192,14 @@
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="9">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -216,14 +216,14 @@
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="10">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>No Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -240,14 +240,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="11">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>18</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>Weekend Surcharge</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -264,14 +264,14 @@
 		<DetailAdded>Y</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="12">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>19</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>Hotel Upgrades</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -288,14 +288,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="13">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>Hyatt Tokyo Upgrade 2010/11</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -312,14 +312,14 @@
 		<DetailAdded>N</DetailAdded>
 	</BookingAnswer>
 	<BookingAnswer ID="14">
-		<LastChanged>2012-07-01T02:34:42</LastChanged>
+		<LastChanged>2012-07-16T10:43:14</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
-		<ModuleStartDate>2012-08-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
 		<Description>Kyoto Hotel Upgrade 2010/11 (Same price)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>

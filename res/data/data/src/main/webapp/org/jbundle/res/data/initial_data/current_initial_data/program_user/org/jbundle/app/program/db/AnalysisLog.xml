@@ -120,7 +120,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="6">
-		<LastChanged>2008-02-12T05:00:06</LastChanged>
+		<LastChanged>2008-02-12T15:59:03</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>350,001,518</SystemID>
 		<ObjectID>15</ObjectID>
@@ -671,7 +671,7 @@
 		<ClassName>LookupScreenRecord</ClassName>
 		<DatabaseName>Screen</DatabaseName>
 		<InitTime>2008-02-12T05:00:05</InitTime>
-		<FreeTime>2008-02-12T05:00:06</FreeTime>
+		<FreeTime>2008-02-12T05:00:54</FreeTime>
 		<RecordOwner>BookingGridScreen</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
 	at com.tourstudio.base.util.Debug.getStackTrace(Debug.java:236)
@@ -2777,7 +2777,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="64">
-		<LastChanged>2008-02-12T05:00:15</LastChanged>
+		<LastChanged>2008-02-12T05:00:59</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>2,062,514,756</SystemID>
 		<ObjectID>58</ObjectID>
@@ -3281,7 +3281,7 @@
 		<ClassName>TourClass</ClassName>
 		<DatabaseName>product</DatabaseName>
 		<InitTime>2008-02-12T05:00:17</InitTime>
-		<FreeTime>2008-02-12T05:00:35</FreeTime>
+		<FreeTime>2008-02-12T05:00:57</FreeTime>
 		<RecordOwner>BookingTourScreen</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
 	at com.tourstudio.base.util.Debug.getStackTrace(Debug.java:236)
@@ -8576,7 +8576,7 @@
 		<ObjectID>119</ObjectID>
 		<ClassName>ProductType</ClassName>
 		<DatabaseName>product</DatabaseName>
-		<InitTime>2008-02-12T05:00:37</InitTime>
+		<InitTime>2008-02-12T05:00:59</InitTime>
 		<FreeTime/>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -10845,7 +10845,7 @@
 		<ObjectID>134</ObjectID>
 		<ClassName>BookingPax</ClassName>
 		<DatabaseName>booking</DatabaseName>
-		<InitTime>2008-02-12T05:00:44</InitTime>
+		<InitTime>2008-02-12T05:01:00</InitTime>
 		<FreeTime>2008-02-12T05:00:44</FreeTime>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -11894,7 +11894,7 @@
 		<ObjectID>157</ObjectID>
 		<ClassName>Inventory</ClassName>
 		<DatabaseName>booking</DatabaseName>
-		<InitTime>2008-02-12T05:00:45</InitTime>
+		<InitTime>2008-02-12T05:49:04</InitTime>
 		<FreeTime>2008-02-12T05:00:45</FreeTime>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -15853,7 +15853,7 @@
 		<ObjectID>323</ObjectID>
 		<ClassName>ApControl</ClassName>
 		<DatabaseName>acctpay</DatabaseName>
-		<InitTime>2008-02-12T05:00:59</InitTime>
+		<InitTime>2008-02-12T07:30:28</InitTime>
 		<FreeTime>2008-02-12T05:01:00</FreeTime>
 		<RecordOwner>BaseProcess</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -17204,7 +17204,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="16777360">
-		<LastChanged>2009-02-12T14:49:26</LastChanged>
+		<LastChanged>2009-02-09T15:49:05</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>2,062,514,756</SystemID>
 		<ObjectID>84</ObjectID>
@@ -21039,7 +21039,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="16777433">
-		<LastChanged>2009-02-12T14:49:26</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>350,001,518</SystemID>
 		<ObjectID>157</ObjectID>
@@ -24473,7 +24473,7 @@
 		<ClassName>MessageDetail</ClassName>
 		<DatabaseName>main</DatabaseName>
 		<InitTime>2008-02-12T05:00:43</InitTime>
-		<FreeTime>2008-02-12T05:00:44</FreeTime>
+		<FreeTime>2010-10-17T06:30:28</FreeTime>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
 	at com.tourstudio.base.util.Debug.getStackTrace(Debug.java:236)
@@ -29049,7 +29049,7 @@
 		<ClassName>QueueName</ClassName>
 		<DatabaseName>main</DatabaseName>
 		<InitTime>2008-02-12T05:00:46</InitTime>
-		<FreeTime>2008-02-12T05:00:46</FreeTime>
+		<FreeTime>2012-07-16T10:41:31</FreeTime>
 		<RecordOwner>BookingHotelScreen</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
 	at com.tourstudio.base.util.Debug.getStackTrace(Debug.java:236)
@@ -29243,7 +29243,7 @@
 		<ObjectID>308</ObjectID>
 		<ClassName>MessageTransport</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:46</InitTime>
+		<InitTime>2012-06-30T12:22:29</InitTime>
 		<FreeTime>2008-02-12T05:00:46</FreeTime>
 		<RecordOwner>BookingHotelScreen</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -30559,7 +30559,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="16777665">
-		<LastChanged>2009-02-12T14:49:26</LastChanged>
+		<LastChanged>2012-06-30T10:39:38</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>350,001,518</SystemID>
 		<ObjectID>324</ObjectID>
@@ -31872,7 +31872,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="16777694">
-		<LastChanged>2009-02-12T14:49:26</LastChanged>
+		<LastChanged>2012-07-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>350,001,518</SystemID>
 		<ObjectID>347</ObjectID>
@@ -33509,7 +33509,7 @@
 		<ObjectID>385</ObjectID>
 		<ClassName>ContactType</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:54</InitTime>
+		<InitTime>2009-02-12T05:00:54</InitTime>
 		<FreeTime>2008-02-12T05:00:54</FreeTime>
 		<RecordOwner>BaseProcess</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -35595,7 +35595,7 @@
 		<ObjectID>206</ObjectID>
 		<ClassName>ContactType</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:55</InitTime>
+		<InitTime>2008-02-12T05:00:28</InitTime>
 		<FreeTime>2008-02-12T05:00:59</FreeTime>
 		<RecordOwner>LocalMessageTransport</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -36027,7 +36027,7 @@
 		<ObjectID>211</ObjectID>
 		<ClassName>MessageTransportInfo</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:56</InitTime>
+		<InitTime>2008-02-12T05:00:28</InitTime>
 		<FreeTime>2008-02-12T05:00:56</FreeTime>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -37668,7 +37668,7 @@
 		<ObjectID>235</ObjectID>
 		<ClassName>MessageInfo</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:57</InitTime>
+		<InitTime>2008-08-05T15:59:48</InitTime>
 		<FreeTime>2008-02-12T05:00:57</FreeTime>
 		<RecordOwner>DatabaseSession</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception
@@ -38539,7 +38539,7 @@
 ]]></StackTrace>
 	</AnalysisLog>
 	<AnalysisLog ID="16777861">
-		<LastChanged>2009-02-12T14:49:26</LastChanged>
+		<LastChanged>2009-02-12T16:16:14</LastChanged>
 		<Deleted>N</Deleted>
 		<SystemID>350,001,518</SystemID>
 		<ObjectID>438</ObjectID>

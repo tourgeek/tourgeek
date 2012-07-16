@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Air ID="1">
-		<LastChanged>2012-07-01T02:34:14</LastChanged>
+		<LastChanged>2012-07-16T10:42:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>UA17 LAX/NRT 2:10 PM-3:55 PM 1</Description>
 		<Code>UA17</Code>
@@ -38,8 +38,8 @@
 		<ArriveTime>15:55:00</ArriveTime>
 		<AddDays>1</AddDays>
 		<Meals>BLD</Meals>
-		<StartDate>2011-03-01</StartDate>
-		<EndDate>2013-02-28</EndDate>
+		<StartDate>2011-04-01</StartDate>
+		<EndDate>2013-03-31</EndDate>
 		<Equipment>747</Equipment>
 		<Days/>
 		<Classes>YQFB</Classes>
@@ -47,7 +47,7 @@
 		<Segment>1</Segment>
 	</Air>
 	<Air ID="2">
-		<LastChanged>2012-07-01T02:34:14</LastChanged>
+		<LastChanged>2012-07-16T10:42:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>UA18 NRT/LAX 5:00 PM-2:18 AM -1</Description>
 		<Code>UA18</Code>
@@ -85,8 +85,8 @@
 		<ArriveTime>02:18:00</ArriveTime>
 		<AddDays>-1</AddDays>
 		<Meals>BLD</Meals>
-		<StartDate>2011-03-01</StartDate>
-		<EndDate>2013-02-28</EndDate>
+		<StartDate>2011-04-01</StartDate>
+		<EndDate>2013-03-31</EndDate>
 		<Equipment>747</Equipment>
 		<Days/>
 		<Classes>YQFB</Classes>

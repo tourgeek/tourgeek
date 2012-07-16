@@ -1275,7 +1275,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="148">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-05T05:00:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingTourScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -1935,7 +1935,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="225">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2009-02-12T14:49:26</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingLand</ClassInfoClassName>
 		<ClassInfoID/>
@@ -2910,7 +2910,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="307">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-09-09T15:49:04</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CreditCardCollPost</ClassInfoClassName>
 		<ClassInfoID/>
@@ -3810,7 +3810,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="407">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Hotel</ClassInfoClassName>
 		<ClassInfoID/>
@@ -8175,7 +8175,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="828">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:59:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>RequestHtmlScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -10425,7 +10425,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1079">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ItemSearchSession</ClassInfoClassName>
 		<ClassInfoID/>
@@ -12165,7 +12165,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1252">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2009-02-12T14:49:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>McoEntryGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -13680,7 +13680,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1378">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2009-02-12T14:49:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>RefundCheckXMLPrint</ClassInfoClassName>
 		<ClassInfoID/>
@@ -20625,7 +20625,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2032">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:57:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingLandScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -26310,7 +26310,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2564">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2009-11-22T12:25:12</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Vendor</ClassInfoClassName>
 		<ClassInfoID/>
@@ -30254,7 +30254,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2987">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-03-10T15:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TransportationClass</ClassInfoClassName>
 		<ClassInfoID/>
@@ -30269,7 +30269,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2988">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-03-10T15:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TransportationClass</ClassInfoClassName>
 		<ClassInfoID/>
@@ -30284,7 +30284,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2989">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-03-10T15:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TransportationClass</ClassInfoClassName>
 		<ClassInfoID/>
@@ -30299,7 +30299,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="2990">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-03-10T15:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TransportationMessageData</ClassInfoClassName>
 		<ClassInfoID/>
@@ -35309,7 +35309,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="3351">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T17:48:16</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingAnswerGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -37199,7 +37199,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="3558">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-05T15:52:33</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourEvent</ClassInfoClassName>
 		<ClassInfoID/>
@@ -47804,7 +47804,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4628">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-05T10:41:06</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Product</ClassInfoClassName>
 		<ClassInfoID/>
@@ -54658,21 +54658,6 @@ static  {
 		<ClassFieldsType>S</ClassFieldsType>
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
-	<ClassFields ID="5285">
-		<LastChanged>2012-01-15T12:09:59</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>BookingStatus</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass/>
-		<ClassFieldSequence>1,000</ClassFieldSequence>
-		<ClassFieldName>_CLASS</ClassFieldName>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue>MAINT_MODE</ClassFieldInitialValue>
-		<ClassFieldsType>S</ClassFieldsType>
-		<IncludeScope>4</IncludeScope>
-	</ClassFields>
 	<ClassFields ID="5286">
 		<LastChanged>2012-01-15T12:09:59</LastChanged>
 		<Deleted>N</Deleted>
@@ -57242,21 +57227,6 @@ static  {
 		<LastChanged>2012-01-17T14:27:39</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>UseTourHeaderOptionField</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass>ScreenComponent</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
-		<ClassFieldName/>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue/>
-		<ClassFieldsType>I</ClassFieldsType>
-		<IncludeScope>1</IncludeScope>
-	</ClassFields>
-	<ClassFields ID="5462">
-		<LastChanged>2012-01-17T14:33:51</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>ModifyTourSubField</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ScreenComponent</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63957,5 +63927,20 @@ static  {
 		<ClassFieldInitialValue>MAINT_MODE</ClassFieldInitialValue>
 		<ClassFieldsType>S</ClassFieldsType>
 		<IncludeScope>4</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5926">
+		<LastChanged>2012-07-05T18:06:10</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ChangeTourHeaderHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>SyncPage</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>I</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 </file>

@@ -6247,7 +6247,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1460">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:30:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Base product class</Name>
 		<ParentFolderID>1,346</ParentFolderID>
@@ -7471,7 +7471,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1557">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2012-07-16T10:41:32</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Hitis</Name>
 		<ParentFolderID>1,556</ParentFolderID>
@@ -7539,7 +7539,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1561">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2010-10-12T05:00:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Elf Autochem</Name>
 		<ParentFolderID>1,319</ParentFolderID>
@@ -11321,7 +11321,7 @@ System highlights and the full user's manual.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1866">
-		<LastChanged>2010-10-17T11:32:44</LastChanged>
+		<LastChanged>2008-02-12T05:00:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Contact Application</Name>
 		<ParentFolderID>1,195</ParentFolderID>
@@ -11882,7 +11882,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1900">
-		<LastChanged>2010-11-10T09:09:56</LastChanged>
+		<LastChanged>2012-07-09T09:17:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Contact type</Name>
 		<ParentFolderID>1,896</ParentFolderID>
@@ -11891,7 +11891,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.main.msg.db.ContactType</Program>
+		<Program>org.jbundle.main.db.base.ContactType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -11916,7 +11916,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1902">
-		<LastChanged>2010-11-10T09:09:31</LastChanged>
+		<LastChanged>2012-07-09T09:17:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Message type</Name>
 		<ParentFolderID>1,896</ParentFolderID>
@@ -11925,7 +11925,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.main.msg.db.MessageType</Program>
+		<Program>org.jbundle.main.db.base.MessageType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -12391,8 +12391,7 @@ please click the following link:<br/>
 <entry key="dbPrefix">fred_</entry>
 <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
 <entry key="mainUser">fred@tourgeek.com</entry>
-</properties>
-</Params>
+</properties></Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>

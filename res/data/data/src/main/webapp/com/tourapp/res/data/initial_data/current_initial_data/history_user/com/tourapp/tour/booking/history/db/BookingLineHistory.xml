@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<BookingLineHistory>
 		<ID>6</ID>
-		<LastChanged>2012-07-01T02:34:46</LastChanged>
+		<LastChanged>2012-07-16T10:43:18</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-03-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-04-24T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights (Double)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -25,6 +25,6 @@
 		<PaxGroups/>
 		<BookingDetailID>13</BookingDetailID>
 		<PaxCategoryID>2</PaxCategoryID>
-		<HistoryDate>2012-01-01T15:22:05</HistoryDate>
+		<HistoryDate>2012-02-01T15:22:05</HistoryDate>
 	</BookingLineHistory>
 </file>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Land ID="1">
-		<LastChanged>2012-07-01T02:34:23</LastChanged>
+		<LastChanged>2012-07-16T10:42:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Full Day Bangkok Sightseeing</Description>
 		<Code>BKKS2</Code>
@@ -59,7 +59,7 @@ then you will continue to explore the city for the rest of the day.
 		<SICPriceHome/>
 	</Land>
 	<Land ID="2">
-		<LastChanged>2012-07-01T02:34:23</LastChanged>
+		<LastChanged>2012-07-16T10:42:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Airport - Hotel Transfer (Bangkok)</Description>
 		<Code/>
@@ -110,7 +110,7 @@ vehicle between your hotel and the airport.
 		<SICPriceHome/>
 	</Land>
 	<Land ID="3">
-		<LastChanged>2012-07-01T02:34:23</LastChanged>
+		<LastChanged>2012-07-16T10:42:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Half Day Bangkok Sightseeing</Description>
 		<Code>BKKS1</Code>
@@ -165,7 +165,7 @@ After lunch you will continue to explore the city for the rest of the afternoon.
 		<SICPriceHome/>
 	</Land>
 	<Land ID="4">
-		<LastChanged>2012-07-01T02:34:23</LastChanged>
+		<LastChanged>2012-07-16T10:42:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Airport to Mandarin Hotel Transfer</Description>
 		<Code/>
@@ -216,7 +216,7 @@ vehicle between the Mandarin Hotel and the airport.
 		<SICPriceHome/>
 	</Land>
 	<Land ID="5">
-		<LastChanged>2012-07-01T02:34:23</LastChanged>
+		<LastChanged>2012-07-16T10:42:57</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bangkok Private Tour Guide</Description>
 		<Code/>

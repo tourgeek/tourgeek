@@ -17238,7 +17238,7 @@ return strMealDesc;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1186">
-		<LastChanged>2012-04-07T12:18:13</LastChanged>
+		<LastChanged>2012-07-05T14:28:50</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>makeScreen</MethodName>
@@ -17259,7 +17259,7 @@ else if ((iDocMode & Hotel.RANGE_ADJUST_SCREEN) == Hotel.RANGE_ADJUST_SCREEN)
     screen = Record.makeNewScreen(HotelInventoryModel.HOTEL_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
     screen = Record.makeNewScreen(HOTEL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
+else if ((iDocMode & ScreenConstants.SCREEN_TYPE_MASK) == ScreenConstants.DISPLAY_MODE)
     screen = Record.makeNewScreen(HOTEL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else
     screen = super;
