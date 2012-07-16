@@ -135,9 +135,11 @@
             <arguments>
               <argument>background=backgrounds/worldmapalpha.gif</argument>
               <argument>backgroundcolor=#EEEEFF</argument>
-              <argument>connectionType=proxy</argument>
+              <!-- argument>connectionType=proxy</argument>
 		<argument>remotehost=${jbundle.server}</argument>
-		<argument>codebase=${jbundle.codebase}</argument>
+		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
+		<argument>jmsserver=false</argument>
+		<argument>databaseproduct=derby</argument>
 		<argument>local=Jdbc</argument>
 		<argument>remote=Jdbc</argument>
 		<argument>table=Jdbc</argument>
