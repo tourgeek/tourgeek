@@ -4,90 +4,77 @@
 		<Deleted>N</Deleted>
 		<Description>No status</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAB6iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQUlEQVR42mNgoAbg5eX9D8MgQIoY3ABkABL7jwaQxXAaQIqLUdQj20IMIFU9GU4iVf3AGzAaiFTIC/jSPSExigEA1i7kAVYRON4AAAAASUVORK5CYIJ0AANwbmc=]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="2">
 		<LastChanged>2012-07-07T10:49:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Not used (Proposal)</Description>
+		<Description>Proposal</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAFciVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABI0lEQVR42s2TS0/CQBSF+wf6+40rlbhQFihVGh+RWouvUihKpRSMkWhEDaJpDPGB+XQaigVbG3eezc3kzjlz5s4ZSfpvQJZlkqqqqhiGQSJbbPJ9H4HpKkQEhMivDgRmZg2WsnXm5k2UtfOAbNvfIqkOlrMOCxmL9cIFuVwDTeuOryH6qQ4yixUK6iUrqy66fsv2Vge7+pwuEjY3Njvk882vgd1T3LmiVhtgHvVoN4ep1wiaiuKxX+qhFa85PRlQPu7T8j5IfcPQweHBA/ruDU79BcvsTxPTZ2DsdWk4r1TKj7RHJ4/yMD4kXMc6cM/eqFpPtNwhcf2QHDeLwIEge+47JeOOaEJDckSEHw5iYhwghhzrQEqI8cQMovVvP43JOIv6Ce3fXPVTQPU5AAAAAElFTkSuQmCCdAADcG5n]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="3">
 		<LastChanged>2012-07-07T10:50:17</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Not Used (Accepted)</Description>
+		<Description>Accepted</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAC6iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVR42mNgGGzgPwFM2ABcACZHlAFbtpz539AwE0x3dy8Baz5zhjhDwAqQNZ858/T/smUH4N4gygB0zc+eQcSIMQQsiU0zsiEEDcClGUQTZQAezcRFIzbNK5Yf/I+UVggHIh6bCXsBj80EUybeJIycIpFSKHFpmVgvMBAb0jA2ACyLWB3PBc8SAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="4">
 		<LastChanged>2012-07-07T10:38:06</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Canceled</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACViVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXElEQVR42r2RUQoAIAhDO3o3X0gQQeomRf5ue+Js7fHgxgP0DgKJPSbADFNEFM48S3QMEBaEkCNsk5a0Q6phH1IOb1uTXnh4dSBCsns5RCiLQpSyhDN40/I3/swAzljCSdnCbcAAAAAASUVORK5CYIJ0AANwbmc=]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="5">
 		<LastChanged>2012-07-07T10:38:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Valid</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACMiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAU0lEQVR42tXSywkAIAwD0O6/lu4VUaFU/LXxZHp+IYIiPwdPOCOBLekYWsLhdmYBGFzjfc8Wy26SC+t8e2PJFZ9K3HhZEsXrJUE8lxDY/gsah1IAQ62tuYQMcD8AAAAASUVORK5CYIJ0AANwbmc=]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="6">
 		<LastChanged>2012-07-07T10:41:38</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Request required</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAD3iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAvklEQVR42mNgoDWQlpb+r6Gh8R9Ek2UASPPN9WvBhpCt+dmeXQRd8J+Xl/c/Og3SdOly8P+NjiEwF8DlQQCuGyT46dMnsCCMhmmGhQFYvKLi/6fs7P8w9SguAIE7d3b9f/nyOJgGaTp6zO3/Pr9EsCEg8XlAsdWmprhdAFK0a0ssVs3IhhN0AbrfkTWDaLwuwKb5+MEssMtANEEXEHI+TheABNE1Y4taGI3iArxRhxS16DTWlEd2modlHAZ6AwBkUlUYlAnk2gAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="7">
 		<LastChanged>2012-07-07T10:41:05</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Request sent</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAADbiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAoklEQVR42mNgGCzgPy8v739SaBCA6wYJfvr0CSyIl66o+P8pO/s/TD2KC0Dgzp1d/1++PI6Tnqeh8X+1qSluF4AU7doSi9cQEI3XBccPZuHUBOOT5QIDg0S4ISSHAchQW9u8/4cOfcIfC/iiDuSCefPOww3BcAFM8fnz/8GKsNETJx5CMQTF/cS6AGQINhcQBKAwgGkmK63DYoHszEKRZnwAAMoxeH7zGIaMAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="8">
 		<LastChanged>2012-07-07T10:47:09</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Error</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACRiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWElEQVR42mNgwA3+r+Pl/Q+iP3369J+BRADWfG/2bLINgWs+FhwMNgAESHYBSPOoCyhwAUwzzAUkGQB1Ltx2Up2PYgg5qZBqgPK8QHYsQBVT5AK4IYQ0AwCPB6erzl+ImQAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="9">
 		<LastChanged>2012-07-07T10:46:31</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Data required</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACLiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUklEQVR42mNgwAH+NzT8R8YMpACwJiCFjBkgmDTNcDFiDcGmmSRDYAZglaOLAUR67f/AaQYB+mjGSEykaqaKAYjYYyBbMwNZGYkq0YfuBXxhAABL+pd7aXx1rAAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="10">
 		<LastChanged>2012-07-07T10:45:05</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Manual request reqd.</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAAB/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARklEQVR42mNgoDH4D8XkaT5z5v//mTPPkGUIXDMMk2oIRQZgaCbFEJyaiTWEIgMIaiZkyH8SMe1SHdkuAIcBMXjwhgFZAABo3NtYyt1GCwAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="11">
 		<LastChanged>2012-07-07T10:42:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Manual request sent</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAADUiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAm0lEQVR42rVTWxHAIAzDAF4wMDEzMC81UDEYwAsGOsquux7v7TZ+chSShgDG/DmstZSAeLwiex8JMTwX0WQA/0ykRV4WYbJzO23bkTEEymSZMw5FYox5kbGVgV5fieJ2wGLLJLm60oGuTwL0qfNF0g50fRRk3gQAlQNEvOvd40gn3lzaZrLUlxxIxxKnDhqBVTh8TOV99/CzH3sCgrAz6g5ZaDcAAAAASUVORK5CYIJ0AANwbmc=]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="12">
 		<LastChanged>2012-07-07T10:47:46</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Not valid</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACZiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYElEQVR42r2RUQoAIAxCu/8NutPuZBQUQW0aRUJf0zdmKT0WbjwwAwjE99RBztaeAwHzjOHGAGGBC1nCVWFJM+Q0vIUch+etQS883DtQIdG9HCKURSFKWfwMoWn5N/6oAAMR9aSQ7mbTAAAAAElFTkSuQmCCdAADcG5n]]></Icon>
-		<Code/>
 	</ProductStatus>
 	<ProductStatus ID="13">
 		<LastChanged>2012-07-07T10:46:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Data valid (Not used</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACOiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVUlEQVR42tXSQQoAIAhEUY/uEb2RYSAEaem0SmhV71MQ0c+jT1hEFI1MzMwewbCt9QaKYJvqe1JM2ZVK2A/4ZhC54lOkjMNIF4eRLt4iCF7/BYxbMwDEHrzROXNWjwAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
-		<Code/>
 	</ProductStatus>
 </file>

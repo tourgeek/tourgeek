@@ -1760,7 +1760,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="464">
-		<LastChanged>2011-08-05T02:32:54</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>AIR JET</Description>
 		<ShortDesc>AIR JET</ShortDesc>
@@ -6520,7 +6520,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="702">
-		<LastChanged>2011-08-05T17:59:19</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>BRITISH MEDITERRANEAN AIRWAYS</Description>
 		<ShortDesc>BRITISH MEDITERR</ShortDesc>
@@ -8180,7 +8180,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="785">
-		<LastChanged>2011-08-05T15:32:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>EUROPEAN AIR TRANSPORT</Description>
 		<ShortDesc>EUROPEAN AIR TRA</ShortDesc>
@@ -22580,7 +22580,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="1505">
-		<LastChanged>2012-08-15T15:00:57</LastChanged>
+		<LastChanged>2011-08-05T15:59:54</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>CALEDONIAN AIRWAYS</Description>
 		<ShortDesc>CALEDONIAN AIRWA</ShortDesc>
@@ -27560,7 +27560,7 @@
 		<Logo/>
 	</Airline>
 	<Airline ID="1754">
-		<LastChanged>2011-07-05T15:59:55</LastChanged>
+		<LastChanged>2011-08-05T15:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>CRETAN AIRLINES</Description>
 		<ShortDesc>CRETAN AIRLINES</ShortDesc>

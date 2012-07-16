@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<CruisePricing ID="1">
-		<LastChanged>2012-07-05T22:02:48</LastChanged>
+		<LastChanged>2012-07-01T02:34:18</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2011-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2011-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>2,250.00</Cost>
 		<ProductTermsID/>
 		<Price/>

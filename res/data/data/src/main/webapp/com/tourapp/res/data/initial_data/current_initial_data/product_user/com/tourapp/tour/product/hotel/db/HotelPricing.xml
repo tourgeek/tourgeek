@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<HotelPricing ID="19">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>440.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -22,14 +22,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="20">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>220.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -44,14 +44,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="21">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>3</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>146.67</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -66,14 +66,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="22">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>6</ProductID>
 		<PaxCategoryID>4</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>110.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -88,14 +88,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="23">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>6,700.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -110,14 +110,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="24">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>4,150.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -132,14 +132,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="25">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>3</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>2,800.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -154,14 +154,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="26">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>8</ProductID>
 		<PaxCategoryID>4</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>2,075.00</Cost>
 		<ProductTermsID>3</ProductTermsID>
 		<Price/>
@@ -176,14 +176,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="27">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>285.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -198,14 +198,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="28">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>167.50</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -220,14 +220,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="29">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>4</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>86.25</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -242,14 +242,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="30">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>12</ProductID>
 		<PaxCategoryID>3</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>115.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -264,14 +264,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="31">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>9</ProductID>
 		<PaxCategoryID>2</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>7,000.00</Cost>
 		<ProductTermsID/>
 		<Price/>
@@ -286,14 +286,14 @@
 		<UseClassID/>
 	</HotelPricing>
 	<HotelPricing ID="32">
-		<LastChanged>2012-07-05T22:02:50</LastChanged>
+		<LastChanged>2012-07-01T02:34:20</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>9</ProductID>
 		<PaxCategoryID>1</PaxCategoryID>
 		<RateID>13</RateID>
 		<ClassID>101</ClassID>
-		<StartDate>2012-04-01</StartDate>
-		<EndDate>2013-03-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<Cost>12,000.00</Cost>
 		<ProductTermsID/>
 		<Price/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<UserRegistration ID="1">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>screen</Code>
@@ -11,7 +11,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="2">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.tour.booking.lookup.BookingGridScreen\No Query Name</Code>
@@ -23,28 +23,28 @@ StartHdrDays=
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="3">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.tour.profile.screen.ProfileGridScreen\Profile</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="4">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.tour.acctpay.screen.vendor.VendorGridScreen\Vendor</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="5">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.tour.booking.lookup.TourGridScreen\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="6">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.tour.booking.operations.OperationsBookingDetailGridScreen\No Query Name</Code>
@@ -54,7 +54,7 @@ StartBkDays=-49.00
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="7">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>15</UserID>
 		<Code>screen</Code>
@@ -65,7 +65,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="8">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>13</UserID>
 		<Code>com.tourapp.tour.booking.lookup.BookingGridScreen\No Query Name</Code>
@@ -76,7 +76,7 @@ StartBkDays=
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="9">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>13</UserID>
 		<Code>screen</Code>
@@ -87,7 +87,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="10">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>12</UserID>
 		<Code>com.tourapp.tour.booking.lookup.BookingGridScreen\No Query Name</Code>
@@ -97,7 +97,7 @@ StartBkDays=
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="11">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>12</UserID>
 		<Code>screen</Code>
@@ -108,28 +108,28 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="12">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>12</UserID>
 		<Code>com.tourapp.tour.profile.screen.ProfileGridScreen\Profile</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="13">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:51</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>12</UserID>
 		<Code>com.tourapp.tour.booking.lookup.TourGridScreen\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="14">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.test.test.screen.basic.TestBasicScreen\TestTable</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="15">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.program.issue.screen.IssueGridScreen\Issue</Code>
@@ -139,14 +139,14 @@ IssueStatusID=1
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="16">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>org.jbundle.test.test.screen.basic.TestBasicScreen\TestTable</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="17">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>org.jbundle.program.issue.screen.IssueGridScreen\Issue</Code>
@@ -156,14 +156,14 @@ IssueStatusID=1
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="18">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>15</UserID>
 		<Code>com.tourapp.tour.booking.lookup.BookingGridScreen\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="19">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>19</UserID>
 		<Code>screen</Code>
@@ -174,7 +174,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="20">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>20</UserID>
 		<Code>screen</Code>
@@ -185,7 +185,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="21">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>1</UserID>
 		<Code>screen</Code>
@@ -196,7 +196,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="22">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>2</UserID>
 		<Code>screen</Code>
@@ -207,7 +207,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="23">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>3</UserID>
 		<Code>screen</Code>
@@ -218,7 +218,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="24">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>4</UserID>
 		<Code>screen</Code>
@@ -229,7 +229,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="25">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>5</UserID>
 		<Code>screen</Code>
@@ -240,7 +240,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="26">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>6</UserID>
 		<Code>screen</Code>
@@ -251,7 +251,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="27">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>7</UserID>
 		<Code>screen</Code>
@@ -262,7 +262,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="28">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>8</UserID>
 		<Code>screen</Code>
@@ -273,7 +273,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="29">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>9</UserID>
 		<Code>screen</Code>
@@ -284,7 +284,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="30">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>10</UserID>
 		<Code>screen</Code>
@@ -295,7 +295,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="31">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>14</UserID>
 		<Code>screen</Code>
@@ -306,7 +306,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="32">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>17</UserID>
 		<Code>screen</Code>
@@ -317,7 +317,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="33">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>16</UserID>
 		<Code>screen</Code>
@@ -328,7 +328,7 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="34">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>18</UserID>
 		<Code>screen</Code>
@@ -339,45 +339,38 @@ font.fontname=Arial
 ]]></Properties>
 	</UserRegistration>
 	<UserRegistration ID="35">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>1</UserID>
 		<Code>org.jbundle.app.test.test.screen.basic.TestBasicScreen\TestTable</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="36">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>1</UserID>
 		<Code>com.tourapp.tour.booking.lookup.TourGridScreen\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="37">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>1</UserID>
 		<Code>com.tourapp.tour.booking.anon.TourGridScreenAnon\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="38">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>com.tourapp.tour.booking.anon.TourGridScreenAnon\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 	<UserRegistration ID="39">
-		<LastChanged>2012-07-05T22:01:24</LastChanged>
+		<LastChanged>2012-07-01T02:32:52</LastChanged>
 		<Deleted>N</Deleted>
 		<UserID>11</UserID>
 		<Code>org.jbundle.app.test.test.screen.basic.TestBasicScreen\TestTable</Code>
-		<Properties/>
-	</UserRegistration>
-	<UserRegistration ID="40">
-		<LastChanged>2012-07-09T10:46:56</LastChanged>
-		<Deleted>N</Deleted>
-		<UserID>1</UserID>
-		<Code>com.tourapp.tour.booking.lookup.BookingGridScreen\No Query Name</Code>
 		<Properties/>
 	</UserRegistration>
 </file>

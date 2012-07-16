@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<MessageTransport ID="1">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Fax</Description>
 		<Code>Fax</Code>
@@ -12,7 +12,7 @@ faxProvider=faxaway.com
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="2">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Email</Description>
 		<Code>Email</Code>
@@ -43,7 +43,7 @@ pop3password=NDgwEhwD
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="3">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Mail</Description>
 		<Code>Mail</Code>
@@ -55,7 +55,7 @@ timeoutMultiplier=86400
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="5">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>U.P.S.</Description>
 		<Code>UPS</Code>
@@ -67,7 +67,7 @@ messageTimeoutSeconds=777600
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="6">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Local</Description>
 		<Code>Local</Code>
@@ -79,7 +79,7 @@ singleDetail=true
 		<MessageTransportType>Local</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="7">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Direct lookup</Description>
 		<Code>Direct</Code>
@@ -87,7 +87,7 @@ singleDetail=true
 		<MessageTransportType>Direct</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="9">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Screen</Description>
 		<Code>Screen</Code>
@@ -98,7 +98,7 @@ transportClassName=org.jbundle.main.msg.screen.ScreenMessageTransport
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="10">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Manual</Description>
 		<Code>Manual</Code>
@@ -106,7 +106,7 @@ transportClassName=org.jbundle.main.msg.screen.ScreenMessageTransport
 		<MessageTransportType>ManualComm</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="11">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Web service</Description>
 		<Code>SOAP</Code>
@@ -118,7 +118,7 @@ singleDetail=true
 		<MessageTransportType>AutoResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="13">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>HTML</Description>
 		<Code>HTML</Code>
@@ -129,7 +129,7 @@ transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="14">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Server</Description>
 		<Code>Server</Code>
@@ -137,7 +137,7 @@ transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport
 		<MessageTransportType>Thread</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="15">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Client</Description>
 		<Code>Client</Code>
@@ -149,7 +149,7 @@ queueType=local
 		<MessageTransportType>Thread</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="16">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>XML Web Service</Description>
 		<Code>XML</Code>
@@ -162,7 +162,7 @@ transportClassName=org.jbundle.base.screen.control.servlet.message.trx.transport
 		<MessageTransportType>AutoResp</MessageTransportType>
 	</MessageTransport>
 	<MessageTransport ID="17">
-		<LastChanged>2012-07-05T22:01:28</LastChanged>
+		<LastChanged>2012-07-01T02:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>OSGi Service</Description>
 		<Code>Service</Code>

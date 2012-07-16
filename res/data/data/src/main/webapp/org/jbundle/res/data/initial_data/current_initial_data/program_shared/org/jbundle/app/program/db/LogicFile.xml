@@ -10051,7 +10051,7 @@ return screen;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="663">
-		<LastChanged>2011-08-01T15:59:51</LastChanged>
+		<LastChanged>2011-08-05T15:59:51</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>BrocBundleButton</MethodName>
@@ -17238,7 +17238,7 @@ return strMealDesc;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1186">
-		<LastChanged>2012-07-05T14:28:50</LastChanged>
+		<LastChanged>2012-04-07T12:18:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>makeScreen</MethodName>
@@ -17259,7 +17259,7 @@ else if ((iDocMode & Hotel.RANGE_ADJUST_SCREEN) == Hotel.RANGE_ADJUST_SCREEN)
     screen = Record.makeNewScreen(HotelInventoryModel.HOTEL_INVENTORY_RANGE_ADJUST_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else if ((iDocMode & ScreenConstants.MAINT_MODE) == ScreenConstants.MAINT_MODE)
     screen = Record.makeNewScreen(HOTEL_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
-else if ((iDocMode & ScreenConstants.SCREEN_TYPE_MASK) == ScreenConstants.DISPLAY_MODE)
+else if ((iDocMode & ScreenConstants.DISPLAY_MODE) == ScreenConstants.DISPLAY_MODE)
     screen = Record.makeNewScreen(HOTEL_GRID_SCREEN_CLASS, itsLocation, parentScreen, iDocMode | ScreenConstants.DONT_DISPLAY_FIELD_DESC, properties, this, true);
 else
     screen = super;
@@ -22643,7 +22643,7 @@ this.getScreenRecord().getField(PaymentRequestScreenRecord.MANUAL_CHECKS).addLis
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1570">
-		<LastChanged>2011-10-20T10:00:09</LastChanged>
+		<LastChanged>2011-08-05T15:59:51</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>200</Sequence>
 		<MethodName>addToolbarButtons</MethodName>
@@ -24566,7 +24566,7 @@ this.getField(Profile.NAME_SUR).addListener(new MoveOnChangeHandler(this.getFiel
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1685">
-		<LastChanged>2011-08-05T10:59:40</LastChanged>
+		<LastChanged>2011-08-05T15:59:51</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>80</Sequence>
 		<MethodName>makeReferenceRecord</MethodName>
@@ -37129,7 +37129,7 @@ else
 		<IncludeScope>5</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3051">
-		<LastChanged>2012-01-31T10:43:56</LastChanged>
+		<LastChanged>2012-01-31T10:43:27</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>63</Sequence>
 		<MethodName>setStartDate</MethodName>
@@ -40881,7 +40881,7 @@ this.getHeaderRecord().getField(Profile.ID).addListener(new FieldReSelectHandler
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3279">
-		<LastChanged>2012-01-23T08:57:39</LastChanged>
+		<LastChanged>2012-01-23T08:57:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>2,000</Sequence>
 		<MethodName>makeSubScreen</MethodName>
@@ -46557,7 +46557,7 @@ return createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, c
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3585">
-		<LastChanged>0000-10-20T10:05:08</LastChanged>
+		<LastChanged>2012-01-31T10:43:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -55445,7 +55445,7 @@ this.getScreenRecord().getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).setupD
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4113">
-		<LastChanged>2011-10-20T10:05:45</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>40</Sequence>
 		<MethodName>addToolbarButtons</MethodName>
@@ -62356,7 +62356,7 @@ return toolbar;    // No toolbar (not even the default toolbars]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4618">
-		<LastChanged>2011-10-20T10:05:53</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>70</Sequence>
 		<MethodName>addToolbars</MethodName>
@@ -80376,7 +80376,7 @@ else
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="6142">
-		<LastChanged>2012-04-12T10:13:15</LastChanged>
+		<LastChanged>2012-04-12T10:13:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>2,310</Sequence>
 		<MethodName>getProductBookingResponse</MethodName>
@@ -97576,7 +97576,7 @@ if ((recDest.getField(City.TICKET_CITY_DESC).isNull()) || (recDest.getField(City
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7503">
-		<LastChanged>2011-08-05T15:59:42</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>main</MethodName>
@@ -98787,7 +98787,7 @@ this.getScreenRecord().getField(ProductScreenRecord.PRODUCT_SEARCH_TYPE_ID).addL
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7589">
-		<LastChanged>2011-08-05T15:32:39</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>50</Sequence>
 		<MethodName>addScreenRecord</MethodName>

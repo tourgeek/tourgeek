@@ -5460,7 +5460,7 @@ Maintain the booking status descriptions.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="196">
-		<LastChanged>2012-07-15T13:59:48</LastChanged>
+		<LastChanged>2012-04-01T09:46:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>BrocBundleButton</ClassName>
 		<BaseClassName>SButtonBox</BaseClassName>
@@ -15625,7 +15625,7 @@ is positive or negative.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="701">
-		<LastChanged>2012-03-15T09:46:03</LastChanged>
+		<LastChanged>2012-04-01T09:46:03</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>SetupBrocDetailHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
@@ -23428,7 +23428,7 @@ bookings and a purchase rebate:
 		<CopyDescFrom>CashBatch</CopyDescFrom>
 	</ClassInfo>
 	<ClassInfo ID="1166">
-		<LastChanged>2012-03-29T10:21:55</LastChanged>
+		<LastChanged>2012-03-29T10:38:00</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CashBatchDistScreen</ClassName>
 		<BaseClassName>Screen</BaseClassName>
@@ -30136,7 +30136,7 @@ either automatically (For example, a weekend surcharge selected based on the day
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1501">
-		<LastChanged>2008-10-18T10:43:58</LastChanged>
+		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>UseTourHeaderOptionField</ClassName>
 		<BaseClassName>TourHeaderOptionField</BaseClassName>
@@ -33578,7 +33578,7 @@ The state of the four status fields depends of the information available. Once e
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1770">
-		<LastChanged>2011-08-05T15:32:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TourBookingResponse</ClassName>
 		<BaseClassName>ProductBookingResponse</BaseClassName>
@@ -36096,7 +36096,7 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2066">
-		<LastChanged>2011-08-05T15:32:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>OTACodeTableField</ClassName>
 		<BaseClassName>ReferenceField</BaseClassName>
@@ -36495,7 +36495,7 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2094">
-		<LastChanged>2012-04-01T12:09:15</LastChanged>
+		<LastChanged>2012-04-12T12:09:15</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseBookingChangeRequest</ClassName>
 		<BaseClassName>CruiseBookingRequest</BaseClassName>
@@ -38526,7 +38526,7 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2349">
-		<LastChanged>2011-07-05T15:59:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CruiseChainField</ClassName>
 		<BaseClassName>ProductChainField</BaseClassName>
@@ -38645,7 +38645,7 @@ ie., Marriott, Hertz, etc.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2356">
-		<LastChanged>2011-08-05T02:59:50</LastChanged>
+		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>TransportationChain</ClassName>
 		<BaseClassName>ProductChain</BaseClassName>

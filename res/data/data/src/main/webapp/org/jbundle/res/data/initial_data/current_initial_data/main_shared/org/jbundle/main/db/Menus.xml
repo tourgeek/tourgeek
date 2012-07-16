@@ -1516,7 +1516,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="733">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Agent A/R Account inquiry</Name>
 		<ParentFolderID>427</ParentFolderID>
@@ -2009,7 +2009,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="784">
-		<LastChanged>2008-02-12T05:00:59</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Ticket analysis</Name>
 		<ParentFolderID>781</ParentFolderID>
@@ -2319,7 +2319,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="826">
-		<LastChanged>2010-11-28T21:31:54</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Travel Agents</Name>
 		<ParentFolderID>817</ParentFolderID>
@@ -2676,7 +2676,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="847">
-		<LastChanged>2010-10-28T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Brochure request HTML Servlet</Name>
 		<ParentFolderID>843</ParentFolderID>
@@ -4735,7 +4735,7 @@ aim: doncorley
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1349">
-		<LastChanged>2010-10-12T05:00:44</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Air support files</Name>
 		<ParentFolderID>436</ParentFolderID>
@@ -5918,7 +5918,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1428">
-		<LastChanged>0000-07-01T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Developerworks</Name>
 		<ParentFolderID>1,416</ParentFolderID>
@@ -7607,7 +7607,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1565">
-		<LastChanged>2010-10-17T07:32:25</LastChanged>
+		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Inter/Network Designs</Name>
 		<ParentFolderID>1,319</ParentFolderID>
@@ -7797,7 +7797,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1576">
-		<LastChanged>2010-07-10T07:30:29</LastChanged>
+		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Mt. Sierra College</Name>
 		<ParentFolderID>1,319</ParentFolderID>
@@ -8114,7 +8114,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1594">
-		<LastChanged>2010-10-17T07:32:26</LastChanged>
+		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>dmoz.org Web Start Chapter</Name>
 		<ParentFolderID>1,583</ParentFolderID>
@@ -8478,7 +8478,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1620">
-		<LastChanged>2010-03-10T07:30:29</LastChanged>
+		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Main application menu</Name>
 		<ParentFolderID>1,619</ParentFolderID>
@@ -8545,7 +8545,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1623">
-		<LastChanged>2010-10-01T02:32:26</LastChanged>
+		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Brochure request</Name>
 		<ParentFolderID>1,621</ParentFolderID>
@@ -11882,7 +11882,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1900">
-		<LastChanged>2012-07-09T09:17:30</LastChanged>
+		<LastChanged>2010-11-10T09:09:56</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Contact type</Name>
 		<ParentFolderID>1,896</ParentFolderID>
@@ -11891,7 +11891,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.main.db.base.ContactType</Program>
+		<Program>org.jbundle.main.msg.db.ContactType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -11916,7 +11916,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1902">
-		<LastChanged>2012-07-09T09:17:54</LastChanged>
+		<LastChanged>2010-11-10T09:09:31</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Message type</Name>
 		<ParentFolderID>1,896</ParentFolderID>
@@ -11925,7 +11925,7 @@ Setting up and running your own Tour Operator site is quick and easy.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.main.db.base.MessageType</Program>
+		<Program>org.jbundle.main.msg.db.MessageType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -12008,7 +12008,7 @@ please click the following link:<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1909">
-		<LastChanged>2012-01-15T11:32:43</LastChanged>
+		<LastChanged>2010-11-30T13:42:14</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Applets</Name>
 		<ParentFolderID>1,193</ParentFolderID>
@@ -12391,7 +12391,8 @@ please click the following link:<br/>
 <entry key="dbPrefix">fred_</entry>
 <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
 <entry key="mainUser">fred@tourgeek.com</entry>
-</properties></Params>
+</properties>
+</Params>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>

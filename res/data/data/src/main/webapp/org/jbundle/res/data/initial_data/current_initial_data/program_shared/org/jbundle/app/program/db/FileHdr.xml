@@ -838,7 +838,7 @@ Need to add more types for operations:
 		<MaintClass>BundleScreen</MaintClass>
 	</FileHdr>
 	<FileHdr ID="48">
-		<LastChanged>0000-10-19T16:47:55</LastChanged>
+		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
 		<FileName>BundleDetail</FileName>
 		<FileDesc>Brochure Bundle Detail</FileDesc>
