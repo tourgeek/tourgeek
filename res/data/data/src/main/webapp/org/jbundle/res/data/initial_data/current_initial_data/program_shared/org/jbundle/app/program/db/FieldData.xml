@@ -22462,7 +22462,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1177">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T02:32:37</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>BkStartDpt</FieldName>
 		<FieldClass>DateField</FieldClass>
@@ -25586,7 +25586,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1367">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:29</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>CopyAirDet</FieldName>
 		<FieldClass>BooleanField</FieldClass>
@@ -26642,7 +26642,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1425">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>OperatorsCode</FieldName>
 		<FieldClass/>
@@ -29986,7 +29986,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1594">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T23:35:59</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>DisplayFit</FieldName>
 		<FieldClass>BooleanField</FieldClass>
@@ -34210,7 +34210,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1810">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T02:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>FitExt</FieldName>
 		<FieldClass>StringField</FieldClass>
@@ -34452,7 +34452,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1821">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-06T05:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>FitSeq</FieldName>
 		<FieldClass>ShortField</FieldClass>
@@ -36300,7 +36300,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="1907">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-01T15:59:46</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>GlChartTotal</FieldName>
 		<FieldClass>IntegerField</FieldClass>
@@ -40920,7 +40920,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="2136">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-08-05T15:59:12</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>HavailDate</FieldName>
 		<FieldClass>DateField</FieldClass>
@@ -46662,7 +46662,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="2453">
-		<LastChanged>2011-08-05T15:59:46</LastChanged>
+		<LastChanged>2011-01-01T00:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>Nights</FieldName>
 		<FieldClass>ShortField</FieldClass>
@@ -116886,7 +116886,7 @@
 		<IncludeScope>4</IncludeScope>
 	</FieldData>
 	<FieldData ID="7278">
-		<LastChanged>2011-08-00T00:00:00</LastChanged>
+		<LastChanged>2011-07-31T00:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<FieldName>OrderCompDate</FieldName>
 		<FieldClass>DateField</FieldClass>

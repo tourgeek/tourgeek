@@ -1532,7 +1532,7 @@ For java and js (also change js dialog title)]]></Description>
 		<IssueSequence/>
 		<EnteredDate>2008-04-16T12:43:49</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
-		<ChangedDate>2008-10-31T11:07:47</ChangedDate>
+		<ChangedDate>2008-10-31T11:32:47</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
 		<ClassInfoID/>
 	</Issue>
@@ -1904,7 +1904,7 @@ For java and js (also change js dialog title)]]></Description>
 		<AssignedUserID>11</AssignedUserID>
 		<IssuePriorityID>1</IssuePriorityID>
 		<IssueSequence/>
-		<EnteredDate>2009-01-25T22:43:04</EnteredDate>
+		<EnteredDate>2009-01-25T22:54:04</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
 		<ChangedDate>2010-03-16T05:24:11</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
@@ -2694,7 +2694,7 @@ use the defaults]]></Description>
 		<ClassInfoID/>
 	</Issue>
 	<Issue ID="160">
-		<LastChanged>2010-06-03T00:15:04</LastChanged>
+		<LastChanged>2010-06-03T00:15:32</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Convert to OSGi - See detail</Description>
 		<ProjectID>17</ProjectID>
