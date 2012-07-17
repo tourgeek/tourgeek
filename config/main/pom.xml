@@ -139,7 +139,7 @@
 		<argument>remotehost=${jbundle.server}</argument>
 		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
 		<argument>jmsserver=false</argument>
-		<argument>databaseproduct=derby</argument>
+		<!-- argument>databaseproduct=derby</argument -->
 		<argument>local=Jdbc</argument>
 		<argument>remote=Jdbc</argument>
 		<argument>table=Jdbc</argument>
@@ -414,12 +414,13 @@
 	      /home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
               /home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
               /home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data/initial_data/current_initial_data/</argument>
-              <argument>connectionType=proxy</argument>
+              <!-- argument>connectionType=proxy</argument>
         <argument>remotehost=${jbundle.server}</argument>
-        <argument>codebase=${jbundle.codebase}</argument>
+        <argument>codebase=${jbundle.codebase}</argument -->
         <argument>local=Jdbc</argument>
         <argument>remote=Jdbc</argument>
         <argument>table=Jdbc</argument>
+		<!-- argument>databaseproduct=derby</argument -->
             </arguments>
           <systemProperties>
             <systemProperty>
@@ -437,6 +438,16 @@
       <artifactId>tourapp-config-dep-all</artifactId>
       <version>0.8.0-SNAPSHOT</version>
       <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.dance</groupId>
+      <artifactId>org.jbundle.app.dance</artifactId>
+      <version>${jbundleAppDanceVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.picture</groupId>
+      <artifactId>org.jbundle.app.picture</artifactId>
+      <version>${jbundleAppPictureVersion}</version>
     </dependency>
       </dependencies>
     </profile>
