@@ -205,15 +205,47 @@
 	      </plugin>
 	    </plugins>
 	  </build>
-	  <!-- dependencies>
-		<dependency>
-		  <groupId>javax</groupId>
-		  <artifactId>j2ee</artifactId>
-		  <version>${j2eeVersion}</version>
-		  <scope>system</scope>
-		  <systemPath>${j2eePath}</systemPath>
-		</dependency>
-	  </dependencies -->
+    </profile>
+    <profile>
+      <id>tourjdbc</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+	  <properties>
+	    <jbundle.db.local>Jdbc</jbundle.db.local>
+	    <jbundle.db.remote>Jdbc</jbundle.db.remote>
+	    <jbundle.db.table>Jdbc</jbundle.db.table>
+	  </properties>
+	  <build>
+	    <plugins>      
+	      <plugin>
+	        <groupId>org.codehaus.mojo</groupId>
+	        <artifactId>exec-maven-plugin</artifactId>
+	        <executions>
+	          <execution>
+	          	<phase>run</phase>
+	            <goals>
+	              <goal>java</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+	        <configuration>
+		        <executable>java</executable>
+			    <arguments>
+		        	<argument>-classpath</argument>\
+		        	<classpath />
+		            <argument>org.jbundle.Main</argument>
+		            <argument>local=${jbundle.db.local}</argument>
+		            <argument>remote=${jbundle.db.remote}</argument>
+		            <argument>table=${jbundle.db.table}</argument>
+		            <argument>background=backgrounds/worldmapalpha.gif</argument>
+		            <argument>backgroundcolor=#EEEEFF</argument>
+		            <argument>jmsserver=false</argument>
+		        </arguments>
+	        </configuration>
+	      </plugin>
+	    </plugins>
+	  </build>
     </profile>
     <profile>
       <id>base</id>
