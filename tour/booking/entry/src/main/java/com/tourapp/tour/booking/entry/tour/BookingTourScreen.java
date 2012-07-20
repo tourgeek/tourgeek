@@ -160,7 +160,7 @@ public class BookingTourScreen extends BookingSubScreen
         recInventory.addListener(new FileRemoveBOnCloseHandler(fieldBehavior));
         
         // Make sure the screen record's field is set to the header ID
-        ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTourHeader, DBConstants.MAIN_FIELD, DBConstants.DONT_CLOSE_ON_FREE, false, false);
+        ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTourHeader, null, DBConstants.DONT_CLOSE_ON_FREE, false, false);
         this.getScreenRecord().getField(TourEntryScreenRecord.TOUR_HEADER_ID).addListener(pBehavior2);
         recInventory.addListener(new FileRemoveBOnCloseHandler(pBehavior2));
         

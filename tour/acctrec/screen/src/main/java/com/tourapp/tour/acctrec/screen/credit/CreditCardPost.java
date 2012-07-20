@@ -116,7 +116,7 @@ public class CreditCardPost extends McoPost
         CreditCard recCreditCard = (CreditCard)this.getRecord(CreditCard.CREDIT_CARD_FILE);
         
         Booking recBooking = (Booking)((ReferenceField)recCreditCard.getField(CreditCard.BOOKING_ID)).getReferenceRecord(this);
-        recCreditCard.getField(CreditCard.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        recCreditCard.getField(CreditCard.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, null, true, true, true));     // Update record
         ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         

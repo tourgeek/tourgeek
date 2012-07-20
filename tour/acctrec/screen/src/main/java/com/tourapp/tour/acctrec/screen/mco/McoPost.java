@@ -123,7 +123,7 @@ public class McoPost extends BaseArTrxPostScreen
         Mco recMco = (Mco)this.getRecord(Mco.MCO_FILE);
         
         Booking recBooking = (Booking)((ReferenceField)recMco.getField(Mco.BOOKING_ID)).getReferenceRecord(this);
-        recMco.getField(Mco.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        recMco.getField(Mco.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, null, true, true, true));     // Update record
         ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         

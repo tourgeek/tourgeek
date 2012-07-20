@@ -49,7 +49,7 @@ public class RoomToPaxHandler extends PaxToRoomHandler
      */
     public void init(String iTargetFieldSeq)
     {
-        super.init(null, -1, iTargetFieldSeq, null);
+        super.init(null, iTargetFieldSeq, null);
     }
     /**
      * Compute the target value.

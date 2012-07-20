@@ -58,7 +58,7 @@ public class ForceSignHandler extends ReComputeFieldHandler
      */
     public void init(int iTargetSign)
     {
-        super.init(null, -1, null, null);
+        super.init(null, null, null);
         if (iTargetSign != -1)
             iTargetSign = 1;
         m_iTargetSign = iTargetSign;

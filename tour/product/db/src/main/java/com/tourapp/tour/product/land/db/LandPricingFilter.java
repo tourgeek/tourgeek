@@ -60,7 +60,7 @@ public class LandPricingFilter extends SubFileFilter
     public void init(Land recLand, Date dateTarget, short sTargetPax, int iSicPmc)
     {
         m_sTargetPax = 0;
-        super.init(null, recLand, null, null, -1, null, null, -1, null, null, -1, null, false, false, false);
+        super.init(null, recLand, null, null, null, null, null, null, null, false, false, false);
         dateTarget = Converter.convertTimeToDate(dateTarget);
         m_dateTarget = dateTarget;
         m_sTargetPax = sTargetPax;

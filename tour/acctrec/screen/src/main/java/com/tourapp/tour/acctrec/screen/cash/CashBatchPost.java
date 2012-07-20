@@ -123,7 +123,7 @@ public class CashBatchPost extends BaseArTrxPostScreen
         recCashBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CashBatchDist.AMOUNT, false, true));
         
         BookingModel recBooking = (BookingModel)((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReferenceRecord(this);
-        recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler((Record)recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+        recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler((Record)recBooking, null, true, true, true));     // Update record
         ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
         recBooking.addArDetail(recArTrx, null, false);
         

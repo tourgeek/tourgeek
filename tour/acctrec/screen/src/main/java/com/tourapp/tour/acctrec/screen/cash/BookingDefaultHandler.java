@@ -53,7 +53,7 @@ public class BookingDefaultHandler extends CopyStringHandler
     public void init(BaseField field)
     {
         m_recArTrx = null;
-        super.init(field, null, null, null);
+        super.init(field, (BaseField)null, (String)null, (Converter)null);
     }
     /**
      * Free the resources.

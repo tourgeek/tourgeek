@@ -51,7 +51,7 @@ public class CheckReconDateHandler extends CompareFileFilter
     public void init(BaseField fldToCheck, BaseField fldToCompare)
     {
         BaseField falseField = new BooleanField(null, "Name", 1, "Name", new Boolean(false));
-        super.init(null, -1, null, null, ">", falseField, true, fldToCheck, fldToCompare);
+        super.init(null, null, null, ">", falseField, true, fldToCheck, fldToCompare);
     }
     /**
      * Clone Method.

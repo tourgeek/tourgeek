@@ -47,7 +47,7 @@ public class ScfFromHandler extends MainFieldHandler
      */
     public void init(BaseField field)
     {
-        super.init(field, SCF.SCF_TO, -1);
+        super.init(field, SCF.SCF_TO);
     }
     /**
      * Find the record.

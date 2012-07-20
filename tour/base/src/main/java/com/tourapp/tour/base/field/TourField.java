@@ -98,7 +98,7 @@ public class TourField extends ReferenceField
         ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
         
         boolean bIncludeBlankOption = true;
-        ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTour, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, bUpdateRecord, bIncludeBlankOption);
+        ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTour, null, DBConstants.CLOSE_ON_FREE, bUpdateRecord, bIncludeBlankOption);
         this.addListener(pBehavior2);
         
         ScreenComponent screenField = (ScreenComponent)fldDepartureDate.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, fldDepartureDate, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);

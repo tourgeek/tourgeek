@@ -50,7 +50,7 @@ public class CalcNewBal extends SubFileFilter
     {
         m_fldDate = null;
         m_fldDate = fldDate;
-        super.init(null, null, null, null, -1, null, mainFilesField, -1, BankTrx.BANK_ACCT_ID, null, -1, null, false, false, false);
+        super.init(null, null, null, null, null, mainFilesField, BankTrx.BANK_ACCT_ID, null, null, false, false, false);
     }
     /**
      * DoEndKey Method.

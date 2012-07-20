@@ -152,7 +152,7 @@ public class BookingHeaderScreen extends Screen
             recTour.addListener(new TourChangeHandler(recBooking));
         }
         recTour.addListener(new DisplayReadHandler(Tour.TOUR_HEADER_ID, recTourHdr, TourHeader.ID));        
-        recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
+        recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(null));
         recBooking.addControlDefaults(recBookingControl, recProfileControl);
         
         this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setData(null);  // Initial value

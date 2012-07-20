@@ -53,7 +53,7 @@ public class AcctDetailCalcEndBal extends ReComputeFieldHandler
     {
         m_recAcctDetailScreenRecord = null;
         m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;
-        super.init(null, -1, AcctDetailScreenRecord.END_BALANCE, null);
+        super.init(null, AcctDetailScreenRecord.END_BALANCE, null);
     }
     /**
      * Compute the target value.

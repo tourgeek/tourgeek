@@ -107,7 +107,7 @@ public class BookingSession extends TableSession
         recBooking.setOpenMode(recBooking.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
         fldTourID.addListener(new ReadSecondaryHandler(recTour, Tour.ID_KEY, DBConstants.DONT_CLOSE_ON_FREE, true, true));  // Update record
         recTour.addListener(new DisplayReadHandler(Tour.TOUR_HEADER_ID, recTourHdr, TourHeader.ID));        
-        recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
+        recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(null));
         recBooking.addControlDefaults(recBookingControl, recProfileControl);
         
         // This code read the currency CODE into a virtual field for use in displays 

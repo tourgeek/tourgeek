@@ -54,7 +54,7 @@ public class CountNewClearedFieldHandler extends ReComputeFieldHandler
         m_fldCreditsCleared = null;
         m_fldCurrentCleared = null;
         m_fldDepositsCleared = null;
-        super.init(null, -1, iTargetFieldSeq, null);
+        super.init(null, iTargetFieldSeq, null);
     }
     /**
      * CheckFields Method.

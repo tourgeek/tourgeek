@@ -52,7 +52,7 @@ public class ReadLinkedTrxHandler extends ReadSecondaryHandler
      */
     public void init(Record record)
     {
-        super.init(null, record, -1, null, true, false, true);
+        super.init(null, record, null, true, false, true);
     }
     /**
      * FieldChanged Method.

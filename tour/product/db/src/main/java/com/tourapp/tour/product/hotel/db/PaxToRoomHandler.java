@@ -49,7 +49,7 @@ public class PaxToRoomHandler extends ReComputeFieldHandler
      */
     public void init(String iTargetFieldSeq)
     {
-        super.init(null, -1, iTargetFieldSeq, null);
+        super.init(null, iTargetFieldSeq, null);
         this.setDisableTarget(true);    // Eliminate the echo back
     }
     /**

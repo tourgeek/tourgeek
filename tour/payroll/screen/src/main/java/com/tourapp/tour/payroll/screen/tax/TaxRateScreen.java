@@ -70,7 +70,7 @@ public class TaxRateScreen extends Screen
      */
     public void addListeners()
     {
-        FieldListener listener = new MainFieldHandler(-1);
+        FieldListener listener = new MainFieldHandler(null);
         this.getMainRecord().getField(TaxRate.CUT_OFF_AMOUNT).addListener(listener);
     }
     /**
