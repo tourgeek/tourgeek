@@ -154,15 +154,6 @@
 	      </plugin>
 	    </plugins>
 	  </build>
-	  <!-- dependencies>
-		<dependency>
-		  <groupId>javax</groupId>
-		  <artifactId>j2ee</artifactId>
-		  <version>${j2eeVersion}</version>
-		  <scope>system</scope>
-		  <systemPath>${j2eePath}</systemPath>
-		</dependency>
-	  </dependencies -->
     </profile>
     <profile>
       <id>tour</id>
@@ -183,16 +174,9 @@
 	          </execution>
 	        </executions>
 	        <configuration>
-		        <executable>java</executable>
-			    <arguments>
-		        	<argument>-classpath</argument>\
-		        	<classpath />
+            <mainClass>com.tourapp.Main</mainClass>
+            <arguments>
 		            <argument>org.jbundle.Main</argument>
-		        <!-- 
-		            <argument>$DEBUG</argument>
-		            <argument>-Xms256m</argument>
-		            <argument>-Xmx512m</argument>
-		         -->
 		            <argument>background=backgrounds/worldmapalpha.gif</argument>
 		            <argument>backgroundcolor=#EEEEFF</argument>
 		            <argument>remotehost=${jbundle.server}</argument>
