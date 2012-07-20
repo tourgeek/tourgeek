@@ -61,7 +61,7 @@
 		<AssignedUserID>1</AssignedUserID>
 		<IssuePriorityID>3</IssuePriorityID>
 		<IssueSequence/>
-		<EnteredDate>2006-03-19T13:08:00</EnteredDate>
+		<EnteredDate>2011-08-05T15:59:49</EnteredDate>
 		<EnteredByUserID>1</EnteredByUserID>
 		<ChangedDate>2006-06-18T01:21:00</ChangedDate>
 		<ChangedByUserID>1</ChangedByUserID>
@@ -1066,7 +1066,7 @@ right, because I lookup the index by description]]></Description>
 		<AssignedUserID>1</AssignedUserID>
 		<IssuePriorityID>1</IssuePriorityID>
 		<IssueSequence/>
-		<EnteredDate>2006-08-20T01:38:00</EnteredDate>
+		<EnteredDate>2006-08-20T01:53:06</EnteredDate>
 		<EnteredByUserID>1</EnteredByUserID>
 		<ChangedDate>2006-08-20T05:56:00</ChangedDate>
 		<ChangedByUserID>1</ChangedByUserID>
@@ -1397,7 +1397,7 @@ and update cache)]]></Description>
 		<ClassInfoID/>
 	</Issue>
 	<Issue ID="84">
-		<LastChanged>2010-05-19T14:46:44</LastChanged>
+		<LastChanged>2010-05-19T14:46:31</LastChanged>
 		<Deleted>N</Deleted>
 		<Description><![CDATA[Fix authentication token generation
 and verification MainApplication/139
@@ -1617,7 +1617,7 @@ For java and js (also change js dialog title)]]></Description>
 		<IssueSequence/>
 		<EnteredDate>2008-06-01T14:13:25</EnteredDate>
 		<EnteredByUserID>11</EnteredByUserID>
-		<ChangedDate>2008-10-30T15:47:36</ChangedDate>
+		<ChangedDate>2008-10-30T15:41:36</ChangedDate>
 		<ChangedByUserID>11</ChangedByUserID>
 		<ClassInfoID/>
 	</Issue>

@@ -6766,7 +6766,7 @@ a starting and ending balance.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="248">
-		<LastChanged>2012-03-28T11:04:24</LastChanged>
+		<LastChanged>2012-03-28T10:41:31</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CheckRegisterFooting</ClassName>
 		<BaseClassName>HeadingScreen</BaseClassName>

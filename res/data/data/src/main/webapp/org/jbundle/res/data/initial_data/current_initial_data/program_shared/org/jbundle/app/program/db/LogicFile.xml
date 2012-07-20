@@ -1528,12 +1528,12 @@ try   {
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="70">
-		<LastChanged>2012-02-03T19:45:00</LastChanged>
+		<LastChanged>2012-07-19T14:26:12</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>AcctDetailCalcEndBal</MethodName>
 		<LogicDescription/>
-		<MethodReturns>null, -1, AcctDetailScreenRecord.END_BALANCE, null</MethodReturns>
+		<MethodReturns>null, AcctDetailScreenRecord.END_BALANCE, null</MethodReturns>
 		<MethodInterface>Record recAcctDetailScreenRecord</MethodInterface>
 		<MethodClassName>AcctDetailCalcEndBal</MethodClassName>
 		<LogicSource>m_recAcctDetailScreenRecord = recAcctDetailScreenRecord;</LogicSource>
@@ -7124,7 +7124,7 @@ new Profile(this);]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="481">
-		<LastChanged>2012-02-01T19:02:07</LastChanged>
+		<LastChanged>2012-07-19T14:24:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>40</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -7175,7 +7175,7 @@ this.getRecord(Booking.BOOKING_FILE).getField(Booking.ALWAYS_RESOLVE).addListene
 recInventory.addListener(new FileRemoveBOnCloseHandler(fieldBehavior));
 
 // Make sure the screen record's field is set to the header ID
-ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTourHeader, DBConstants.MAIN_FIELD, DBConstants.DONT_CLOSE_ON_FREE, false, false);
+ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTourHeader, null, DBConstants.DONT_CLOSE_ON_FREE, false, false);
 this.getScreenRecord().getField(TourEntryScreenRecord.TOUR_HEADER_ID).addListener(pBehavior2);
 recInventory.addListener(new FileRemoveBOnCloseHandler(pBehavior2));
 
@@ -9810,7 +9810,7 @@ new Profile(this);]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="652">
-		<LastChanged>2012-02-01T09:50:06</LastChanged>
+		<LastChanged>2012-07-19T14:22:44</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -9838,7 +9838,7 @@ if (tourChangeHandler != null)
     recTour.addListener(new TourChangeHandler(recBooking));
 }
 recTour.addListener(new DisplayReadHandler(Tour.TOUR_HEADER_ID, recTourHdr, TourHeader.ID));        
-recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
+recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(null));
 recBooking.addControlDefaults(recBookingControl, recProfileControl);
 
 this.getScreenRecord().getField(BookingScreenRecord.BK_SUB_SCREEN).setData(null);  // Initial value
@@ -10985,12 +10985,12 @@ return super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="721">
-		<LastChanged>2012-02-03T21:06:51</LastChanged>
+		<LastChanged>2012-07-19T11:30:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>CalcNewBal</MethodName>
 		<LogicDescription/>
-		<MethodReturns>null, null, null, null, -1, null, mainFilesField, -1, BankTrx.BANK_ACCT_ID, null, -1, null, false, false, false</MethodReturns>
+		<MethodReturns>null, null, null, null, null, mainFilesField, BankTrx.BANK_ACCT_ID, null, null, false, false, false</MethodReturns>
 		<MethodInterface>BaseField mainFilesField, BaseField fldDate</MethodInterface>
 		<MethodClassName>CalcNewBal</MethodClassName>
 		<LogicSource>m_fldDate = fldDate;</LogicSource>
@@ -11472,7 +11472,7 @@ this.getScreenRecord().getField(CashBatchScreenRecord.USER_ID).setupDefaultView(
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="752">
-		<LastChanged>2012-03-29T09:54:57</LastChanged>
+		<LastChanged>2012-07-19T16:47:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -11498,7 +11498,7 @@ recCashBatchDist.addListener(new SubFileFilter(this.getRecord(CashBatchDetail.CA
 recCashBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(CashBatchScreenRecord.CHANGE_BALANCE), CashBatchDist.AMOUNT, false, true));
 
 BookingModel recBooking = (BookingModel)((ReferenceField)recCashBatchDist.getField(CashBatchDist.BOOKING_ID)).getReferenceRecord(this);
-recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler((Record)recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+recCashBatchDist.getField(CashBatchDist.BOOKING_ID).addListener(new ReadSecondaryHandler((Record)recBooking, null, true, true, true));     // Update record
 ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
 recBooking.addArDetail(recArTrx, null, false);
 
@@ -11961,12 +11961,12 @@ return iErrorCode;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="777">
-		<LastChanged>2012-01-31T20:43:26</LastChanged>
+		<LastChanged>2012-07-19T14:20:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>CheckReconDateHandler</MethodName>
 		<LogicDescription>Constructor</LogicDescription>
-		<MethodReturns>null, -1, null, null, "&gt;", falseField, true, fldToCheck, fldToCompare</MethodReturns>
+		<MethodReturns>null, null, null, "&gt;", falseField, true, fldToCheck, fldToCompare</MethodReturns>
 		<MethodInterface>BaseField fldToCheck, BaseField fldToCompare</MethodInterface>
 		<MethodClassName>CheckReconDateHandler</MethodClassName>
 		<LogicSource>BaseField falseField = new BooleanField(null, "Name", 1, "Name", new Boolean(false));</LogicSource>
@@ -13148,7 +13148,7 @@ this.setEnabled(false);
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="873">
-		<LastChanged>2012-01-31T10:43:13</LastChanged>
+		<LastChanged>2012-07-19T14:19:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -13174,7 +13174,7 @@ recCreditCardBatchDist.addListener(new SubCountHandler(this.getScreenRecord().ge
 CreditCard recCreditCard = (CreditCard)this.getRecord(CreditCard.CREDIT_CARD_FILE);
 
 Booking recBooking = (Booking)((ReferenceField)recCreditCard.getField(CreditCard.BOOKING_ID)).getReferenceRecord(this);
-recCreditCard.getField(CreditCard.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+recCreditCard.getField(CreditCard.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, null, true, true, true));     // Update record
 ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
 recBooking.addArDetail(recArTrx, null, false);
 
@@ -20410,7 +20410,7 @@ this.getMainRecord().getField(Mco.MCO_NO).addListener(new MainFieldHandler(Mco.M
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1438">
-		<LastChanged>2012-01-31T10:43:19</LastChanged>
+		<LastChanged>2012-07-19T14:19:51</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -20433,7 +20433,7 @@ recMcoBatchDist.addListener(new SubCountHandler(this.getScreenRecord().getField(
 Mco recMco = (Mco)this.getRecord(Mco.MCO_FILE);
 
 Booking recBooking = (Booking)((ReferenceField)recMco.getField(Mco.BOOKING_ID)).getReferenceRecord(this);
-recMco.getField(Mco.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, DBConstants.MAIN_KEY_AREA, true, true, true));     // Update record
+recMco.getField(Mco.BOOKING_ID).addListener(new ReadSecondaryHandler(recBooking, null, true, true, true));     // Update record
 ArTrx recArTrx = (ArTrx)this.getRecord(ArTrx.AR_TRX_FILE);
 recBooking.addArDetail(recArTrx, null, false);
 
@@ -26950,7 +26950,7 @@ return 0;	// null or default]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1905">
-		<LastChanged>2012-01-31T10:43:21</LastChanged>
+		<LastChanged>2012-07-19T14:26:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -26958,7 +26958,7 @@ return 0;	// null or default]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>TaxRateScreen</MethodClassName>
-		<LogicSource><![CDATA[FieldListener listener = new MainFieldHandler(-1);
+		<LogicSource><![CDATA[FieldListener listener = new MainFieldHandler(null);
 this.getMainRecord().getField(TaxRate.CUT_OFF_AMOUNT).addListener(listener);]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
@@ -29063,7 +29063,7 @@ return recTour;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1998">
-		<LastChanged>2012-03-31T21:46:48</LastChanged>
+		<LastChanged>2012-07-19T16:49:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>20</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -29089,7 +29089,7 @@ conv = new FieldLengthConverter(conv, 10);
 ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, itsLocation, targetScreen, conv, iDisplayFieldDesc, properties);
 
 boolean bIncludeBlankOption = true;
-ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTour, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, bUpdateRecord, bIncludeBlankOption);
+ReadSecondaryHandler pBehavior2 = new ReadSecondaryHandler(recTour, null, DBConstants.CLOSE_ON_FREE, bUpdateRecord, bIncludeBlankOption);
 this.addListener(pBehavior2);
 
 ScreenComponent screenField = (ScreenComponent)fldDepartureDate.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, fldDepartureDate, ScreenConstants.DONT_DISPLAY_FIELD_DESC, null);
@@ -32474,12 +32474,12 @@ return bSuccess;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2291">
-		<LastChanged>2012-01-31T16:29:37</LastChanged>
+		<LastChanged>2012-07-19T14:28:19</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>ScfFromHandler</MethodName>
 		<LogicDescription/>
-		<MethodReturns>field, SCF.SCF_TO, -1</MethodReturns>
+		<MethodReturns>field, SCF.SCF_TO</MethodReturns>
 		<MethodInterface>BaseField field</MethodInterface>
 		<MethodClassName>ScfFromHandler</MethodClassName>
 		<LogicSource/>
@@ -36507,7 +36507,7 @@ return -1;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2980">
-		<LastChanged>2012-03-15T16:59:30</LastChanged>
+		<LastChanged>2012-07-19T14:25:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addListeners</MethodName>
@@ -36526,7 +36526,7 @@ ProfileControl recProfileControl = (ProfileControl)this.getRecord(ProfileControl
 recBooking.setOpenMode(recBooking.getOpenMode() | DBConstants.OPEN_REFRESH_AND_LOCK_ON_CHANGE_STRATEGY);
 fldTourID.addListener(new ReadSecondaryHandler(recTour, Tour.ID_KEY, DBConstants.DONT_CLOSE_ON_FREE, true, true));  // Update record
 recTour.addListener(new DisplayReadHandler(Tour.TOUR_HEADER_ID, recTourHdr, TourHeader.ID));        
-recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(DBConstants.MAIN_KEY_AREA));
+recTour.getField(Tour.TOUR_HEADER_ID).addListener(new MainReadOnlyHandler(null));
 recBooking.addControlDefaults(recBookingControl, recProfileControl);
 
 // This code read the currency CODE into a virtual field for use in displays 
@@ -40472,12 +40472,12 @@ return dCurrentCleared + dDepositsCleared + dCreditsCleared;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3245">
-		<LastChanged>2012-01-31T20:50:56</LastChanged>
+		<LastChanged>2012-07-19T14:20:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>CountNewClearedFieldHandler</MethodName>
 		<LogicDescription/>
-		<MethodReturns>null, -1, iTargetFieldSeq, null</MethodReturns>
+		<MethodReturns>null, iTargetFieldSeq, null</MethodReturns>
 		<MethodInterface/>
 		<MethodClassName>CountNewClearedFieldHandler</MethodClassName>
 		<LogicSource/>
@@ -43877,13 +43877,13 @@ return recAcctDetailDist.addDetailTrx(fldAccountID, fldTrxDate, fldTrxID, recTrx
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3442">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2012-07-19T18:37:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>BookingDefaultHandler</MethodName>
 		<LogicDescription><![CDATA[Constructor.
 @param (Don't pass the field param).]]></LogicDescription>
-		<MethodReturns>field, null, null, null</MethodReturns>
+		<MethodReturns>field, (BaseField)null, (String)null, (Converter)null</MethodReturns>
 		<MethodInterface>BaseField field</MethodInterface>
 		<MethodClassName>BookingDefaultHandler</MethodClassName>
 		<LogicSource/>
@@ -47474,7 +47474,7 @@ this.setRespondsToMode(DBConstants.INIT_MOVE, false);]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3636">
-		<LastChanged>2012-01-31T10:43:31</LastChanged>
+		<LastChanged>2012-07-19T14:20:55</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -47493,7 +47493,7 @@ conv.setupDefaultView(itsLocation, targetScreen, conv, iDisplayFieldDesc, proper
 
 conv = new FieldLengthConverter(fldTourDesc, 30);
 //return this.setupTableLookup(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, converter, ScreenConstants.DONT_DISPLAY_FIELD_DESC, recTour, -1, Tour.DESCRIPTION, false, false);
-this.addListener(new ReadSecondaryHandler(recTour, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false));
+this.addListener(new ReadSecondaryHandler(recTour, null, DBConstants.CLOSE_ON_FREE, false, false));
 ScreenComponent sfDesc = createScreenComponent(ScreenModel.EDIT_TEXT, targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
 sfDesc.setEnabled(false);
 return sfDesc;]]></LogicSource>
@@ -52484,7 +52484,7 @@ return super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3890">
-		<LastChanged>2012-03-26T10:09:31</LastChanged>
+		<LastChanged>2012-07-19T16:49:47</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>setupDefaultView</MethodName>
@@ -52497,7 +52497,7 @@ ScreenComponent screenField = createScreenComponent(ScreenModel.EDIT_TEXT, itsLo
 screenField.setEnabled(false);
 if (record != null)
 {
-    ReadSecondaryHandler behavior = new ReadSecondaryHandler(record, DBConstants.MAIN_FIELD, DBConstants.CLOSE_ON_FREE, false, false);
+    ReadSecondaryHandler behavior = new ReadSecondaryHandler(record, null, DBConstants.CLOSE_ON_FREE, false, false);
     this.addListener(behavior);
     BaseField conv = record.getField(Trx.TRX_STATUS_ID);
     conv.setupDefaultView(targetScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenConstants.DONT_SET_ANCHOR), targetScreen, conv, ScreenConstants.DONT_DISPLAY_DESC, properties);
@@ -79130,12 +79130,12 @@ return strParam;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="6042">
-		<LastChanged>2012-02-01T15:34:31</LastChanged>
+		<LastChanged>2012-07-19T11:32:34</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>LandPricingFilter</MethodName>
 		<LogicDescription/>
-		<MethodReturns>null, recLand, null, null, -1, null, null, -1, null, null, -1, null, false, false, false</MethodReturns>
+		<MethodReturns>null, recLand, null, null, null, null, null, null, null, false, false, false</MethodReturns>
 		<MethodInterface>Land recLand, Date dateTarget, short sTargetPax, int iSicPmc</MethodInterface>
 		<MethodClassName>LandPricingFilter</MethodClassName>
 		<LogicSource><![CDATA[super;
@@ -90844,12 +90844,12 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="6960">
-		<LastChanged>2012-02-01T14:48:02</LastChanged>
+		<LastChanged>2012-07-19T14:16:24</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>ReadLinkedTrxHandler</MethodName>
 		<LogicDescription/>
-		<MethodReturns>null, record, -1, null, true, false, true</MethodReturns>
+		<MethodReturns>null, record, null, true, false, true</MethodReturns>
 		<MethodInterface>Record record</MethodInterface>
 		<MethodClassName>ReadLinkedTrxHandler</MethodClassName>
 		<LogicSource/>
@@ -91228,14 +91228,14 @@ this.addListener(new SharedFileHandler(ApTrx.AP_TRX_TYPE_ID, ApTrx.TICKET_TRX_TY
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="6981">
-		<LastChanged>2012-01-29T10:01:03</LastChanged>
+		<LastChanged>2012-07-19T14:16:45</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>10</Sequence>
 		<MethodName>ForceSignHandler</MethodName>
 		<LogicDescription><![CDATA[Constructor.
 1 = Sign forced to positive
 -1 = Sign is forced to negative.]]></LogicDescription>
-		<MethodReturns>null, -1, null, null</MethodReturns>
+		<MethodReturns>null, null, null</MethodReturns>
 		<MethodInterface>int iTargetSign</MethodInterface>
 		<MethodClassName>ForceSignHandler</MethodClassName>
 		<LogicSource><![CDATA[super;
