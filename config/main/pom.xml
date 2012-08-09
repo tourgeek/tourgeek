@@ -448,7 +448,10 @@
           </plugin>
         </plugins>
       </build>
-      <dependencies>
+    </profile>
+  </profiles>
+  
+  <dependencies>
     <dependency>
       <groupId>com.tourapp.config</groupId>
       <artifactId>tourapp-config-dep-all</artifactId>
@@ -464,17 +467,6 @@
       <groupId>org.jbundle.app.picture</groupId>
       <artifactId>org.jbundle.app.picture</artifactId>
       <version>${jbundleAppPictureVersion}</version>
-    </dependency>
-      </dependencies>
-    </profile>
-  </profiles>
-  
-  <dependencies>
-    <dependency>
-      <groupId>com.tourapp.config</groupId>
-      <artifactId>tourapp-config-dep-all</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
-      <type>pom</type>
     </dependency>
   </dependencies>
 
