@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Vendor ID="1">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>ASTO01</Code>
 		<Name>Asian Tours</Name>
@@ -44,7 +44,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="2">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Regent Hotel</Name>
@@ -88,7 +88,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="31">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BASP01</Code>
 		<Name>Banff Springs Hotel</Name>
@@ -132,7 +132,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="32">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>BATO01</Code>
 		<Name>Banff Local Tours, Inc.</Name>
@@ -176,7 +176,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="33">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>EXHO01</Code>
 		<Name>Excelsior Hotel</Name>
@@ -220,7 +220,7 @@
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="34">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>FOEX01</Code>
 		<Name>Foreign Exchange Corporation</Name>
@@ -265,7 +265,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="35">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>HOHO01</Code>
 		<Name>Hong Kong Hotel</Name>
@@ -309,7 +309,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="36">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>HOLO01</Code>
 		<Name>Hong Kong Land Operator</Name>
@@ -353,7 +353,7 @@ Suite 1243]]></AddressLine1>
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="37">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JAHO01</Code>
 		<Name>The Japanese Hotel Chain</Name>
@@ -401,7 +401,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="38">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>JALO01</Code>
 		<Name>Japanese Land Operator</Name>
@@ -445,7 +445,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="39">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>KYHO01</Code>
 		<Name>Kyoto Hotel</Name>
@@ -489,7 +489,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="40">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>MAHO01</Code>
 		<Name>Mandarin Hotel</Name>
@@ -533,7 +533,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="41">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>NEWO01</Code>
 		<Name>New World Hotel</Name>
@@ -577,7 +577,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="43">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code>UPSV01</Code>
 		<Name>United Parcel Service</Name>
@@ -621,7 +621,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="44">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Hong Kong Car Rental</Name>
@@ -665,7 +665,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="45">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>China Cruise Company</Name>
@@ -709,7 +709,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="46">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>United Airlines</Name>
@@ -753,7 +753,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="47">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Certified Accounts, Inc.</Name>
@@ -797,7 +797,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="48">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Travel Insurance Pros</Name>
@@ -841,7 +841,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="49">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Sheraton Hotel</Name>
@@ -885,7 +885,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="50">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Marriott Hotel</Name>
@@ -929,7 +929,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<VendorBalance/>
 	</Vendor>
 	<Vendor ID="51">
-		<LastChanged>2012-07-16T10:41:59</LastChanged>
+		<LastChanged>2012-08-09T14:22:39</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Name>Xanadu Hotel</Name>

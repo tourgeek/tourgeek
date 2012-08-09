@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BankTrx ID="1">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>71,984.43</AmountLocal>
 		<TrxEntry>2011-01-01T16:38:19</TrxEntry>
 		<BankAcctID>2</BankAcctID>
@@ -23,11 +23,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="2">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>102,943.41</AmountLocal>
 		<TrxEntry>2011-01-01T16:41:14</TrxEntry>
 		<BankAcctID>4</BankAcctID>
@@ -46,11 +46,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="3">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>52,481.52</AmountLocal>
 		<TrxEntry>2011-01-01T16:42:09</TrxEntry>
 		<BankAcctID>1</BankAcctID>
@@ -69,11 +69,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="4">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>25,675.87</AmountLocal>
 		<TrxEntry>2011-01-01T16:42:49</TrxEntry>
 		<BankAcctID>6</BankAcctID>
@@ -92,11 +92,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="5">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>2,839.89</AmountLocal>
 		<TrxEntry>2011-01-01T16:43:31</TrxEntry>
 		<BankAcctID>7</BankAcctID>
@@ -115,11 +115,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="6">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>15,741.34</AmountLocal>
 		<TrxEntry>2011-01-01T16:43:59</TrxEntry>
 		<BankAcctID>5</BankAcctID>
@@ -138,11 +138,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="7">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>9</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-03-01T00:00:00</TrxDate>
+		<TrxDate>2012-04-01T00:00:00</TrxDate>
 		<AmountLocal>8,201.23</AmountLocal>
 		<TrxEntry>2011-01-01T16:44:30</TrxEntry>
 		<BankAcctID>3</BankAcctID>
@@ -161,11 +161,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="8">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-06-05T15:19:34</TrxDate>
+		<TrxDate>2012-07-05T15:19:34</TrxDate>
 		<AmountLocal>1,400.00</AmountLocal>
 		<TrxEntry>2011-04-05T15:20:16</TrxEntry>
 		<BankAcctID>2</BankAcctID>
@@ -184,11 +184,11 @@
 		<Manual/>
 	</BankTrx>
 	<BankTrx ID="9">
-		<LastChanged>2012-07-05T22:01:45</LastChanged>
+		<LastChanged>2012-08-09T14:22:04</LastChanged>
 		<Deleted>N</Deleted>
 		<TrxStatusID>95</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-07-01T15:22:50</TrxDate>
+		<TrxDate>2012-08-01T15:22:50</TrxDate>
 		<AmountLocal>3,427.90</AmountLocal>
 		<TrxEntry>2011-05-01T15:23:34</TrxEntry>
 		<BankAcctID>2</BankAcctID>

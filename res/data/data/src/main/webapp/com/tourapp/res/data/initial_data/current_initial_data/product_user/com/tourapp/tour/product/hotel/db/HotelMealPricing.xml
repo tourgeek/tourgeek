@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<HotelMealPricing ID="7">
-		<LastChanged>2012-07-16T10:42:53</LastChanged>
+		<LastChanged>2012-08-09T14:23:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
@@ -16,7 +16,7 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="8">
-		<LastChanged>2012-07-16T10:42:53</LastChanged>
+		<LastChanged>2012-08-09T14:23:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
@@ -32,7 +32,7 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="9">
-		<LastChanged>2012-07-16T10:42:53</LastChanged>
+		<LastChanged>2012-08-09T14:23:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>
@@ -48,7 +48,7 @@
 		<PayAt>F</PayAt>
 	</HotelMealPricing>
 	<HotelMealPricing ID="10">
-		<LastChanged>2012-07-16T10:42:53</LastChanged>
+		<LastChanged>2012-08-09T14:23:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID/>
 		<PaxCategoryID/>

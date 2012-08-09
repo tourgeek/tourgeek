@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingLine ID="1">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-06T00:00:00</ModuleStartDate>
 		<Description>Single Supplement</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -26,14 +26,14 @@
 		<PaxCategoryID/>
 	</BookingLine>
 	<BookingLine ID="2">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>31</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-06T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Price</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -52,14 +52,14 @@
 		<PaxCategoryID/>
 	</BookingLine>
 	<BookingLine ID="3">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>19</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-06T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -78,14 +78,14 @@
 		<PaxCategoryID/>
 	</BookingLine>
 	<BookingLine ID="4">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-24T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -104,14 +104,14 @@
 		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
 	<BookingLine ID="5">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -130,14 +130,14 @@
 		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
 	<BookingLine ID="7">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-24T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -156,14 +156,14 @@
 		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
 	<BookingLine ID="8">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -182,14 +182,14 @@
 		<PaxCategoryID>6</PaxCategoryID>
 	</BookingLine>
 	<BookingLine ID="9">
-		<LastChanged>2012-07-05T22:03:24</LastChanged>
+		<LastChanged>2012-08-09T14:24:04</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-10-24T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights (Double)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
