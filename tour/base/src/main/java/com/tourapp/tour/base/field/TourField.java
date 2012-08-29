@@ -109,5 +109,8 @@ public class TourField extends ReferenceField
         
         return sfDesc;
     }
-
+    public int doSetData(Object vpData, boolean bDisplayOption, int iMoveMode)
+    {
+        return super.doSetData(vpData, bDisplayOption, iMoveMode);
+    }
 }
