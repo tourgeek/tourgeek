@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<Tour ID="1">
-		<LastChanged>2012-08-09T14:24:02</LastChanged>
+		<LastChanged>2012-08-29T12:25:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hong Kong and Thailand 7 Day Group Tour #1</Description>
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
-		<DepartureDate>2012-06-24</DepartureDate>
+		<DepartureDate>2012-07-24</DepartureDate>
 		<TourStatusSummary/>
 		<TourStatusID>1</TourStatusID>
 		<ManualTourStatus>N</ManualTourStatus>
@@ -27,13 +27,13 @@
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2012-05-17</FinalizeDate>
-		<OrderCompDate>2012-05-22</OrderCompDate>
-		<ClosedDate>2012-05-22</ClosedDate>
-		<FinalDocDate>2012-05-27</FinalDocDate>
-		<TicketDate>2012-05-27</TicketDate>
-		<Sp1Date>2012-06-19</Sp1Date>
-		<Sp2Date>2012-06-24</Sp2Date>
+		<FinalizeDate>2012-06-17</FinalizeDate>
+		<OrderCompDate>2012-06-22</OrderCompDate>
+		<ClosedDate>2012-06-22</ClosedDate>
+		<FinalDocDate>2012-06-27</FinalDocDate>
+		<TicketDate>2012-06-27</TicketDate>
+		<Sp1Date>2012-07-19</Sp1Date>
+		<Sp2Date>2012-07-24</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -44,17 +44,17 @@
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2012-05-17</NextEventDate>
+		<NextEventDate>2012-06-17</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
 	<Tour ID="2">
-		<LastChanged>2012-08-09T14:24:02</LastChanged>
+		<LastChanged>2012-08-29T12:25:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hong Kong and Thailand 7 Day Group Tour #2</Description>
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
-		<DepartureDate>2012-10-21</DepartureDate>
+		<DepartureDate>2012-11-21</DepartureDate>
 		<TourStatusSummary>#Field properties
 #Fri Apr 01 17:23:29 PDT 2011
 InfoStatusID.5=5,1301703720000
@@ -106,13 +106,13 @@ InfoStatusID.6=5,1301703721000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2012-09-16</FinalizeDate>
-		<OrderCompDate>2012-09-21</OrderCompDate>
-		<ClosedDate>2012-09-21</ClosedDate>
-		<FinalDocDate>2012-09-26</FinalDocDate>
-		<TicketDate>2012-09-26</TicketDate>
-		<Sp1Date>2012-10-16</Sp1Date>
-		<Sp2Date>2012-10-21</Sp2Date>
+		<FinalizeDate>2012-10-16</FinalizeDate>
+		<OrderCompDate>2012-10-21</OrderCompDate>
+		<ClosedDate>2012-10-21</ClosedDate>
+		<FinalDocDate>2012-10-26</FinalDocDate>
+		<TicketDate>2012-10-26</TicketDate>
+		<Sp1Date>2012-11-16</Sp1Date>
+		<Sp2Date>2012-11-21</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -123,17 +123,17 @@ InfoStatusID.6=5,1301703721000
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2012-09-16</NextEventDate>
+		<NextEventDate>2012-10-16</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
 	<Tour ID="3">
-		<LastChanged>2012-08-09T14:24:02</LastChanged>
+		<LastChanged>2012-08-29T12:25:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Hong Kong and Thailand 7 Day Group Tour #3</Description>
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
-		<DepartureDate>2013-02-17</DepartureDate>
+		<DepartureDate>2013-03-17</DepartureDate>
 		<TourStatusSummary/>
 		<TourStatusID>1</TourStatusID>
 		<ManualTourStatus/>
@@ -155,13 +155,13 @@ InfoStatusID.6=5,1301703721000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2013-01-13</FinalizeDate>
-		<OrderCompDate>2013-01-18</OrderCompDate>
-		<ClosedDate>2013-01-18</ClosedDate>
-		<FinalDocDate>2013-01-23</FinalDocDate>
-		<TicketDate>2013-01-23</TicketDate>
-		<Sp1Date>2013-02-12</Sp1Date>
-		<Sp2Date>2013-02-17</Sp2Date>
+		<FinalizeDate>2013-02-13</FinalizeDate>
+		<OrderCompDate>2013-02-18</OrderCompDate>
+		<ClosedDate>2013-02-18</ClosedDate>
+		<FinalDocDate>2013-02-23</FinalDocDate>
+		<TicketDate>2013-02-23</TicketDate>
+		<Sp1Date>2013-03-12</Sp1Date>
+		<Sp2Date>2013-03-17</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -172,17 +172,17 @@ InfoStatusID.6=5,1301703721000
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2013-01-13</NextEventDate>
+		<NextEventDate>2013-02-13</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
 	<Tour ID="4">
-		<LastChanged>2012-08-09T14:24:02</LastChanged>
+		<LastChanged>2012-08-29T12:25:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<Code/>
 		<TourHeaderID>4</TourHeaderID>
-		<DepartureDate>2012-10-06</DepartureDate>
+		<DepartureDate>2012-11-06</DepartureDate>
 		<TourStatusSummary>#Field properties
 #Sun May 01 15:23:36 PDT 2011
 InfoStatusID.12=5,1301703875000
@@ -226,13 +226,13 @@ InfoStatusID.8=5,1301703872000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2012-09-06</FinalizeDate>
-		<OrderCompDate>2012-10-06</OrderCompDate>
-		<ClosedDate>2012-10-06</ClosedDate>
-		<FinalDocDate>2012-09-11</FinalDocDate>
-		<TicketDate>2012-09-06</TicketDate>
-		<Sp1Date>2012-09-26</Sp1Date>
-		<Sp2Date>2012-10-06</Sp2Date>
+		<FinalizeDate>2012-10-06</FinalizeDate>
+		<OrderCompDate>2012-11-06</OrderCompDate>
+		<ClosedDate>2012-11-06</ClosedDate>
+		<FinalDocDate>2012-10-11</FinalDocDate>
+		<TicketDate>2012-10-06</TicketDate>
+		<Sp1Date>2012-10-26</Sp1Date>
+		<Sp2Date>2012-11-06</Sp2Date>
 		<Finalized>Y</Finalized>
 		<OrderComponents>Y</OrderComponents>
 		<Closed>N</Closed>
@@ -243,17 +243,17 @@ InfoStatusID.8=5,1301703872000
 		<ServConf>Y</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2012-09-06</NextEventDate>
+		<NextEventDate>2012-10-06</NextEventDate>
 		<TourEventID>13</TourEventID>
 		<Properties/>
 	</Tour>
 	<Tour ID="5">
-		<LastChanged>2012-08-09T14:24:02</LastChanged>
+		<LastChanged>2012-08-29T12:25:15</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<Code/>
 		<TourHeaderID>4</TourHeaderID>
-		<DepartureDate>2012-10-24</DepartureDate>
+		<DepartureDate>2012-11-24</DepartureDate>
 		<TourStatusSummary>#Field properties
 #Sun May 01 15:22:25 PDT 2011
 InfoStatusID.17=5,1304288496000
@@ -297,13 +297,13 @@ InventoryStatusID.13=5,1304288545000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2012-09-24</FinalizeDate>
-		<OrderCompDate>2012-10-24</OrderCompDate>
-		<ClosedDate>2012-10-24</ClosedDate>
-		<FinalDocDate>2012-09-29</FinalDocDate>
-		<TicketDate>2012-09-24</TicketDate>
-		<Sp1Date>2012-10-14</Sp1Date>
-		<Sp2Date>2012-10-24</Sp2Date>
+		<FinalizeDate>2012-10-24</FinalizeDate>
+		<OrderCompDate>2012-11-24</OrderCompDate>
+		<ClosedDate>2012-11-24</ClosedDate>
+		<FinalDocDate>2012-10-29</FinalDocDate>
+		<TicketDate>2012-10-24</TicketDate>
+		<Sp1Date>2012-11-14</Sp1Date>
+		<Sp2Date>2012-11-24</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -314,7 +314,7 @@ InventoryStatusID.13=5,1304288545000
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2012-09-24</NextEventDate>
+		<NextEventDate>2012-10-24</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<MessageDetail ID="1">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -17,7 +17,7 @@
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="2">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Tue Nov 26 00:08:49 PST 2002
@@ -37,7 +37,7 @@ destinationAddress=HotelAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="3">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -54,7 +54,7 @@ destinationAddress=HotelAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="5">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Fri Mar 11 10:58:34 PST 2011
@@ -76,7 +76,7 @@ destinationAddress=http\://www.tourgeek.com\:8181
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="6">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sat Dec 28 01:43:44 PST 2002
@@ -97,7 +97,7 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="10">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>Manual=true
 # This will cause the email request to be sent automatically</Properties>
@@ -115,7 +115,7 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="11">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Fri Mar 11 10:57:24 PST 2011
@@ -137,7 +137,7 @@ destinationAddress=http\://www.tourgeek.com\:8181
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="12">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Jun 03 15:43:27 PDT 2009
@@ -163,7 +163,7 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="15">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>Manual=true
 # This will cause the email request to be sent automatically</Properties>
@@ -181,7 +181,7 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="16">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>Manual=true
 # This will cause the email request to be sent automatically</Properties>
@@ -199,7 +199,7 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="17">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -216,7 +216,7 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="18">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun May 31 06:35:41 PDT 2009
@@ -241,7 +241,7 @@ local.messageInCode=OTA_HotelRateAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="20">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage
 </Properties>
@@ -259,7 +259,7 @@ local.messageInCode=OTA_HotelRateAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="21">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -276,7 +276,7 @@ local.messageInCode=OTA_HotelRateAvailRQ
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="22">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Jun 03 11:37:59 PDT 2009
@@ -296,7 +296,7 @@ Manual=true
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="23">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Jun 03 11:37:42 PDT 2009
@@ -316,7 +316,7 @@ Manual=true
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="24">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Fri Mar 11 10:58:02 PST 2011
@@ -338,7 +338,7 @@ destinationAddress=http\://www.tourgeek.com\:8181
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="25">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Jul 19 02:17:15 PDT 2006
@@ -358,7 +358,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="26">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Jul 19 02:18:33 PDT 2006
@@ -378,7 +378,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="27">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage</Properties>
 		<ContactTypeID>1</ContactTypeID>
@@ -395,7 +395,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="28">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Aug 20 05:48:59 PDT 2006
@@ -415,7 +415,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="29">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Aug 20 05:51:34 PDT 2006
@@ -435,7 +435,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="30">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Aug 20 05:52:29 PDT 2006
@@ -455,7 +455,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="31">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Aug 20 05:53:01 PDT 2006
@@ -475,7 +475,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="32">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Aug 20 05:53:36 PDT 2006
@@ -495,7 +495,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="33">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Aug 20 05:54:04 PDT 2006
@@ -515,7 +515,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="34">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Apr 16 12:54:33 PDT 2008
@@ -535,7 +535,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="35">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Mon Apr 21 05:59:28 PDT 2008
@@ -555,7 +555,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="36">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Mon Apr 21 05:59:09 PDT 2008
@@ -574,7 +574,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="37">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Mon Apr 21 06:01:40 PDT 2008
@@ -594,7 +594,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="39">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Nov 01 07:08:36 PST 2009
@@ -616,7 +616,7 @@ messageVersionID=9
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="40">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Fri Oct 03 01:37:05 PDT 2008
@@ -636,7 +636,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="41">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Fri Oct 03 01:38:28 PDT 2008
@@ -656,7 +656,7 @@ messageVersionID=9
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="42">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Nov 01 07:08:53 PST 2009
@@ -678,7 +678,7 @@ messageVersionID=9
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="43">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Fri Oct 03 02:01:16 PDT 2008
@@ -698,7 +698,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="44">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Nov 19 13:13:22 PST 2008
@@ -718,7 +718,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="45">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Nov 19 13:13:48 PST 2008
@@ -738,7 +738,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="46">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Wed Nov 19 13:29:49 PST 2008
@@ -758,7 +758,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="47">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties/>
 		<ContactTypeID>1</ContactTypeID>
@@ -775,7 +775,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="48">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Tue Jun 02 13:54:46 PDT 2009
@@ -796,7 +796,7 @@ XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="49">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun May 31 06:30:52 PDT 2009
@@ -817,7 +817,7 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="50">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Tue Jun 02 13:55:12 PDT 2009
@@ -839,7 +839,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="51">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Tue Jun 02 22:51:38 PDT 2009
@@ -858,7 +858,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="52">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun Nov 01 07:00:53 PST 2009
@@ -878,7 +878,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="53">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:06:43 PDT 2012
@@ -898,7 +898,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="54">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:10:38 PDT 2012
@@ -918,7 +918,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="55">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:11:26 PDT 2012
@@ -939,7 +939,7 @@ messageVersionID=
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="56">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:12:40 PDT 2012
@@ -960,7 +960,7 @@ messageVersionID=
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="57">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:13:38 PDT 2012
@@ -980,7 +980,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="58">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:14:27 PDT 2012
@@ -1000,7 +1000,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="59">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:15:36 PDT 2012
@@ -1020,7 +1020,7 @@ dataStatus=5
 		<InitialManualTransportStatusID/>
 	</MessageDetail>
 	<MessageDetail ID="60">
-		<LastChanged>2012-08-09T14:21:48</LastChanged>
+		<LastChanged>2012-08-29T12:23:37</LastChanged>
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Thu Jul 05 22:16:41 PDT 2012
