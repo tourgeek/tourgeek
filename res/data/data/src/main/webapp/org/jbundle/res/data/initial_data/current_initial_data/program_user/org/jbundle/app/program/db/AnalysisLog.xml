@@ -32995,7 +32995,7 @@
 		<ObjectID>378</ObjectID>
 		<ClassName>MessageInfoType</ClassName>
 		<DatabaseName>main</DatabaseName>
-		<InitTime>2008-02-12T05:00:48</InitTime>
+		<InitTime>2008-02-12T05:00:54</InitTime>
 		<FreeTime>2008-02-12T05:00:54</FreeTime>
 		<RecordOwner>BaseProcess</RecordOwner>
 		<StackTrace><![CDATA[java.lang.Exception

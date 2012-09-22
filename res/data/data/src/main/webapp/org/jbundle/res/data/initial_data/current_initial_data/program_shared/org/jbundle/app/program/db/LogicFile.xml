@@ -19150,7 +19150,7 @@ this.getScreenRecord().getField(LandScreenRecord.LAND_CLASS_ID).addListener(new 
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1332">
-		<LastChanged>2012-01-19T15:31:52</LastChanged>
+		<LastChanged>2012-01-31T10:43:18</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>50</Sequence>
 		<MethodName>addToolbarButtons</MethodName>
@@ -21257,7 +21257,7 @@ else
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1480">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2011-08-06T00:00:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>1,000</Sequence>
 		<MethodName>doRecordSelected</MethodName>
@@ -57252,7 +57252,7 @@ recCurrency.getField(Currencys.COSTING_RATE).setEnabled(false);]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4226">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2011-08-05T15:59:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>25</Sequence>
 		<MethodName>addScreenRecord</MethodName>
