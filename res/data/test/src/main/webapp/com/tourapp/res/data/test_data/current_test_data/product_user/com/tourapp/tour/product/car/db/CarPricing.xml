@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<CarPricing ID="1">
-		<LastChanged>2012-08-29T12:24:49</LastChanged>
+		<LastChanged>2012-09-21T18:06:50</LastChanged>
 		<Deleted>N</Deleted>
 		<ProductID>1</ProductID>
 		<PaxCategoryID>6</PaxCategoryID>
 		<RateID>1</RateID>
 		<ClassID>1</ClassID>
-		<StartDate>2011-06-01</StartDate>
-		<EndDate>2013-05-31</EndDate>
+		<StartDate>2011-07-01</StartDate>
+		<EndDate>2013-06-30</EndDate>
 		<Cost>820.00</Cost>
 		<ProductTermsID/>
 		<Price/>

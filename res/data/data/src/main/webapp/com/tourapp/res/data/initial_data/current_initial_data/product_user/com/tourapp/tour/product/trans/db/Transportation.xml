@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Transportation ID="1">
-		<LastChanged>2012-08-09T14:23:33</LastChanged>
+		<LastChanged>2012-09-21T18:07:06</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bullet Train Tokyo - Osaka</Description>
 		<Code/>
@@ -45,7 +45,7 @@
 		<DiscontinuedOn/>
 	</Transportation>
 	<Transportation ID="2">
-		<LastChanged>2012-08-09T14:23:33</LastChanged>
+		<LastChanged>2012-09-21T18:07:06</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Bullet Train Osaka - Tokyo</Description>
 		<Code/>

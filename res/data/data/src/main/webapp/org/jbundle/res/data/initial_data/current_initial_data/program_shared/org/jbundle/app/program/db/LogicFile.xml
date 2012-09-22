@@ -19150,7 +19150,7 @@ this.getScreenRecord().getField(LandScreenRecord.LAND_CLASS_ID).addListener(new 
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1332">
-		<LastChanged>2012-01-31T10:43:18</LastChanged>
+		<LastChanged>2012-01-19T15:31:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>50</Sequence>
 		<MethodName>addToolbarButtons</MethodName>

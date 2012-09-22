@@ -4710,7 +4710,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="496">
-		<LastChanged>2011-08-05T15:59:00</LastChanged>
+		<LastChanged>2011-08-05T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LandHeaderScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -47234,7 +47234,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4514">
-		<LastChanged>2012-06-18T23:49:07</LastChanged>
+		<LastChanged>2011-08-05T15:59:49</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ProductInformationRequest</ClassInfoClassName>
 		<ClassInfoID/>
@@ -57284,7 +57284,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5466">
-		<LastChanged>2011-03-10T13:37:31</LastChanged>
+		<LastChanged>2012-01-25T22:49:06</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TourDetailGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -57794,7 +57794,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5500">
-		<LastChanged>2012-08-09T14:21:20</LastChanged>
+		<LastChanged>2012-03-27T10:07:27</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Request</ClassInfoClassName>
 		<ClassInfoID/>
@@ -58319,7 +58319,7 @@ static  {
 		<IncludeScope>4</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5535">
-		<LastChanged>2012-08-09T14:21:20</LastChanged>
+		<LastChanged>2012-03-27T12:11:21</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ArTrx</ClassInfoClassName>
 		<ClassInfoID/>
@@ -62084,7 +62084,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="5793">
-		<LastChanged>2011-03-10T18:05:57</LastChanged>
+		<LastChanged>2012-04-11T23:25:52</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>HotelBookingChangeRequest</ClassInfoClassName>
 		<ClassInfoID/>

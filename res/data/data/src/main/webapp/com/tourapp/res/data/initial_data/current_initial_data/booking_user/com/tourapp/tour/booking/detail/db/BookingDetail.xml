@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<BookingDetail ID="1">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>7</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Mandarin Hotel - 3 nights</Description>
 		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2012-09-22T12:00:00</DetailDate>
-		<GMTDate>2012-09-22T12:00:00</GMTDate>
+		<DetailDate>2012-11-22T12:00:00</DetailDate>
+		<GMTDate>2012-11-22T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>8</ProductID>
 		<RateID>13</RateID>
@@ -46,8 +46,8 @@
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-25T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-25T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-25T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-25T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 
@@ -132,20 +132,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="2">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>9</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Airport to Mandarin Hotel Transfer - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-22T08:30:00</DetailDate>
-		<GMTDate>2012-09-22T08:30:00</GMTDate>
+		<DetailDate>2012-11-22T08:30:00</DetailDate>
+		<GMTDate>2012-11-22T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>4</ProductID>
 		<RateID>1</RateID>
@@ -178,8 +178,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-22T08:30:00</DetailEndDate>
-		<GMTEndDate>2012-09-22T08:30:00</GMTEndDate>
+		<DetailEndDate>2012-11-22T08:30:00</DetailEndDate>
+		<GMTEndDate>2012-11-22T08:30:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -260,20 +260,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="3">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>8</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 4 nights</Description>
 		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2012-09-25T12:00:00</DetailDate>
-		<GMTDate>2012-09-25T12:00:00</GMTDate>
+		<DetailDate>2012-11-25T12:00:00</DetailDate>
+		<GMTDate>2012-11-25T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -306,8 +306,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-29T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-29T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-29T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-29T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 
@@ -392,20 +392,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="4">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>10</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Airport to Mandarin Hotel Transfer - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-25T08:30:00</DetailDate>
-		<GMTDate>2012-09-25T08:30:00</GMTDate>
+		<DetailDate>2012-11-25T08:30:00</DetailDate>
+		<GMTDate>2012-11-25T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>4</ProductID>
 		<RateID>1</RateID>
@@ -438,8 +438,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-25T08:30:00</DetailEndDate>
-		<GMTEndDate>2012-09-25T08:30:00</GMTEndDate>
+		<DetailEndDate>2012-11-25T08:30:00</DetailEndDate>
+		<GMTEndDate>2012-11-25T08:30:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -520,20 +520,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="5">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>11</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-25T08:30:00</DetailDate>
-		<GMTDate>2012-09-25T08:30:00</GMTDate>
+		<DetailDate>2012-11-25T08:30:00</DetailDate>
+		<GMTDate>2012-11-25T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -566,8 +566,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-25T09:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-25T09:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-25T09:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-25T09:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -648,20 +648,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="6">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>12</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Half Day Bangkok Sightseeing - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-26T08:30:00</DetailDate>
-		<GMTDate>2012-09-26T08:30:00</GMTDate>
+		<DetailDate>2012-11-26T08:30:00</DetailDate>
+		<GMTDate>2012-11-26T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>3</ProductID>
 		<RateID>1</RateID>
@@ -694,8 +694,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-26T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-26T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-26T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-26T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -776,20 +776,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="7">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>1</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>1</ModuleID>
 		<TourHeaderDetailID>13</TourHeaderDetailID>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-21T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-21T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Private car/coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-28T08:30:00</DetailDate>
-		<GMTDate>2012-09-28T08:30:00</GMTDate>
+		<DetailDate>2012-11-28T08:30:00</DetailDate>
+		<GMTDate>2012-11-28T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -822,8 +822,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-28T09:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-28T09:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-28T09:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-28T09:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -904,20 +904,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="8">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-06T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2012-09-07T12:00:00</DetailDate>
-		<GMTDate>2012-09-07T12:00:00</GMTDate>
+		<DetailDate>2012-11-07T12:00:00</DetailDate>
+		<GMTDate>2012-11-07T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -950,8 +950,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-12T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-12T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-12T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-12T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 
@@ -1036,20 +1036,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="9">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>28</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-06T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-07T08:30:00</DetailDate>
-		<GMTDate>2012-09-07T08:30:00</GMTDate>
+		<DetailDate>2012-11-07T08:30:00</DetailDate>
+		<GMTDate>2012-11-07T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1082,8 +1082,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-07T09:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-07T09:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-07T09:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-07T09:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -1163,20 +1163,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="10">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-06T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-08T08:30:00</DetailDate>
-		<GMTDate>2012-09-08T08:30:00</GMTDate>
+		<DetailDate>2012-11-08T08:30:00</DetailDate>
+		<GMTDate>2012-11-08T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1209,8 +1209,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-08T15:30:00</DetailEndDate>
-		<GMTEndDate>2012-09-08T15:30:00</GMTEndDate>
+		<DetailEndDate>2012-11-08T15:30:00</DetailEndDate>
+		<GMTEndDate>2012-11-08T15:30:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -1290,20 +1290,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="11">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-06T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-12T08:30:00</DetailDate>
-		<GMTDate>2012-09-12T08:30:00</GMTDate>
+		<DetailDate>2012-11-12T08:30:00</DetailDate>
+		<GMTDate>2012-11-12T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1336,8 +1336,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-12T09:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-12T09:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-12T09:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-12T09:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -1415,20 +1415,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="12">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>2</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-06T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType>Item</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2012-09-06T12:00:00</DetailDate>
-		<GMTDate>2012-09-06T12:00:00</GMTDate>
+		<DetailDate>2012-11-06T12:00:00</DetailDate>
+		<GMTDate>2012-11-06T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1461,8 +1461,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-06T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-06T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-06T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-06T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -1542,20 +1542,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="13">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>27</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-24T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights</Description>
 		<ProductType>Hotel</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>3</ProductTypeID>
-		<DetailDate>2012-09-25T12:00:00</DetailDate>
-		<GMTDate>2012-09-25T12:00:00</GMTDate>
+		<DetailDate>2012-11-25T12:00:00</DetailDate>
+		<GMTDate>2012-11-25T12:00:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>6</ProductID>
 		<RateID>13</RateID>
@@ -1588,8 +1588,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-30T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-30T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-30T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-30T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 
@@ -1676,20 +1676,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="14">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>28</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-25T08:30:00</DetailDate>
-		<GMTDate>2012-09-25T08:30:00</GMTDate>
+		<DetailDate>2012-11-25T08:30:00</DetailDate>
+		<GMTDate>2012-11-25T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1722,8 +1722,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-25T09:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-25T09:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-25T09:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-25T09:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -1804,20 +1804,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="15">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>29</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-24T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-26T08:30:00</DetailDate>
-		<GMTDate>2012-09-26T08:30:00</GMTDate>
+		<DetailDate>2012-11-26T08:30:00</DetailDate>
+		<GMTDate>2012-11-26T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -1850,8 +1850,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-26T15:30:00</DetailEndDate>
-		<GMTEndDate>2012-09-26T15:30:00</GMTEndDate>
+		<DetailEndDate>2012-11-26T15:30:00</DetailEndDate>
+		<GMTEndDate>2012-11-26T15:30:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -1932,20 +1932,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="16">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:20</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType>Land</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>9</ProductTypeID>
-		<DetailDate>2012-09-30T08:30:00</DetailDate>
-		<GMTDate>2012-09-30T08:30:00</GMTDate>
+		<DetailDate>2012-11-30T08:30:00</DetailDate>
+		<GMTDate>2012-11-30T08:30:00</GMTDate>
 		<GMTOffset>0.00</GMTOffset>
 		<ProductID>2</ProductID>
 		<RateID>1</RateID>
@@ -1978,8 +1978,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-30T09:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-30T09:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-30T09:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-30T09:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>
@@ -2060,20 +2060,20 @@ product.message.error=The 'Order components' event must occur before booking com
 		<PricingTypeID/>
 	</BookingDetail>
 	<BookingDetail ID="17">
-		<LastChanged>2012-08-09T14:24:04</LastChanged>
+		<LastChanged>2012-09-21T18:07:21</LastChanged>
 		<Deleted>N</Deleted>
 		<BookingID>3</BookingID>
 		<BookingPaxID>0</BookingPaxID>
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>25</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2012-09-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-24T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType>Item</ProductType>
 		<RemoteReferenceNo/>
 		<ProductTypeID>4</ProductTypeID>
-		<DetailDate>2012-09-24T12:00:00</DetailDate>
-		<GMTDate>2012-09-24T12:00:00</GMTDate>
+		<DetailDate>2012-11-24T12:00:00</DetailDate>
+		<GMTDate>2012-11-24T12:00:00</GMTDate>
 		<GMTOffset/>
 		<ProductID>1</ProductID>
 		<RateID>1</RateID>
@@ -2106,8 +2106,8 @@ product.message.error=The 'Order components' event must occur before booking com
 		<ProductStatusRequest/>
 		<RemoteBookingNo/>
 		<AckDays/>
-		<DetailEndDate>2012-09-24T12:00:00</DetailEndDate>
-		<GMTEndDate>2012-09-24T12:00:00</GMTEndDate>
+		<DetailEndDate>2012-11-24T12:00:00</DetailEndDate>
+		<GMTEndDate>2012-11-24T12:00:00</GMTEndDate>
 		<MealSummary><![CDATA[
 
 ]]></MealSummary>

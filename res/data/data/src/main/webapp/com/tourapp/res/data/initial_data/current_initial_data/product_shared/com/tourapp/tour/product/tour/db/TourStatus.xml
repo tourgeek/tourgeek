@@ -74,7 +74,7 @@
 	<TourStatus ID="13">
 		<LastChanged>2012-07-07T10:46:53</LastChanged>
 		<Deleted>N</Deleted>
-		<Description>Data valid</Description>
+		<Description>Data valid (Not used</Description>
 		<Icon enctype="base64"><![CDATA[rO0ABXNyACRvcmcuamJ1bmRsZS5tb2RlbC51dGlsLlBvcnRhYmxlSW1hZ2UAAAAAAAAAAQIABEkABmhlaWdodEkABXdpZHRoWwAEZGF0YXQAAltCTAAGZm9ybWF0dAASTGphdmEvbGFuZy9TdHJpbmc7eHAAAAAQAAAAEHVyAAJbQqzzF/gGCFTgAgAAeHAAAACOiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVUlEQVR42tXSQQoAIAhEUY/uEb2RYSAEaem0SmhV71MQ0c+jT1hEFI1MzMwewbCt9QaKYJvqe1JM2ZVK2A/4ZhC54lOkjMNIF4eRLt4iCF7/BYxbMwDEHrzROXNWjwAAAABJRU5ErkJggnQAA3BuZw==]]></Icon>
 	</TourStatus>
 </file>
