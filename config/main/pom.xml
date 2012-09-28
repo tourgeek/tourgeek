@@ -139,7 +139,7 @@
 		<argument>remotehost=${jbundle.server}</argument>
 		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
 		<argument>jmsserver=false</argument>
-		<!-- argument>databaseproduct=derby</argument -->
+		<argument>databaseproduct=derby</argument>
 		<argument>local=Jdbc</argument>
 		<argument>remote=Jdbc</argument>
 		<argument>table=Jdbc</argument>

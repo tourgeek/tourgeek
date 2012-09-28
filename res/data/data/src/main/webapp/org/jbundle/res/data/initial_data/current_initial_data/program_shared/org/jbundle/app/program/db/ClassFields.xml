@@ -7069,7 +7069,7 @@
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Tour</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>APTrx</ClassFieldClass>
+		<ClassFieldClass>ApTrx</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -7564,7 +7564,7 @@
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>UpdateArTrxAcctDetailHandler</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>ARTrx</ClassFieldClass>
+		<ClassFieldClass>ArTrx</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
