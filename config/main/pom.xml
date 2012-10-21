@@ -17,6 +17,7 @@
     <jbundle.db.local>Client</jbundle.db.local>
     <jbundle.db.remote>Client</jbundle.db.remote>
     <jbundle.db.table>Net</jbundle.db.table>
+    <databaseproduct></databaseproduct>
   </properties>
 
 	<build>
@@ -139,7 +140,7 @@
 		<argument>remotehost=${jbundle.server}</argument>
 		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
 		<argument>jmsserver=false</argument>
-		<!-- argument>databaseproduct=mysql</argument -->
+		<argument>databaseproduct=${databaseproduct}</argument>
 		<argument>local=Jdbc</argument>
 		<argument>remote=Jdbc</argument>
 		<argument>table=Jdbc</argument>
