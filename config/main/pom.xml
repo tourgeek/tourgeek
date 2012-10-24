@@ -13,12 +13,6 @@
   <packaging>bundle</packaging>
   <name>tourapp-config-main - Run standalone tourapp</name>
   
-  <properties>
-    <jbundle.db.local>Client</jbundle.db.local>
-    <jbundle.db.remote>Client</jbundle.db.remote>
-    <jbundle.db.table>Net</jbundle.db.table>
-  </properties>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -139,7 +133,7 @@
 		<argument>remotehost=${jbundle.server}</argument>
 		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
 		<argument>jmsserver=false</argument>
-		<argument>databaseproduct=${databaseproduct}</argument>
+		<argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
 		<argument>local=Jdbc</argument>
 		<argument>remote=Jdbc</argument>
 		<argument>table=Jdbc</argument>
