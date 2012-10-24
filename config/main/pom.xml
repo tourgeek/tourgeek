@@ -17,7 +17,6 @@
     <jbundle.db.local>Client</jbundle.db.local>
     <jbundle.db.remote>Client</jbundle.db.remote>
     <jbundle.db.table>Net</jbundle.db.table>
-    <databaseproduct></databaseproduct>
   </properties>
 
 	<build>
