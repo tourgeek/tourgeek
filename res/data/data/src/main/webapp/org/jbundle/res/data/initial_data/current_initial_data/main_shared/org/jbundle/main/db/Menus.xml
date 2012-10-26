@@ -12414,4 +12414,25 @@ please click the following link:<br/>
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>
+	<Menus ID="1928">
+		<LastChanged>2010-11-15T10:22:36</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>jbundle.org - Open Source Application Framework Software</Name>
+		<ParentFolderID>1,745</ParentFolderID>
+		<Sequence>79</Sequence>
+		<Comment/>
+		<Code>jbundle.org</Code>
+		<Type>menu</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>jbundle.org</Program>
+		<Params type="XML"><properties>
+<comment>Field properties</comment>
+<entry key="meta-redirect">http://www.jbundle.org/jbundle/index.html</entry>
+<entry key="stylesheet">redirect</entry>
+</properties></Params>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
 </file>

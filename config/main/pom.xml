@@ -75,7 +75,7 @@
 	        <configuration>
             <mainClass>com.tourapp.Main</mainClass>
             <arguments>
-              <argument>menu=dev.tourapp.com</argument>
+              <argument>menu=Switch</argument>
               <argument>background=backgrounds/worldmapalpha.gif</argument>
               <argument>backgroundcolor=#EEEEFF</argument>
               <argument>connectionType=proxy</argument>
