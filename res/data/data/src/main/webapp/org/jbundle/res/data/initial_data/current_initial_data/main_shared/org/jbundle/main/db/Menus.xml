@@ -2989,7 +2989,7 @@
     <a href="${link}">
         ${menutitle}
     </a>
-<br/>${javalogo}<img src="images/buttons/java.gif" width="16" height="15" border="0">&nbsp;</javalogo><span style="font-size: 10pt">${menudesc}</span>
+<br/>${javalogo}<img src="images/buttons/java.gif" width="16" height="15" border="0">&#160;</javalogo><span style="font-size: 10pt">${menudesc}</span>
 </td>
 ${items}
 Thanks for visiting!]]></XmlData>
@@ -4470,7 +4470,7 @@ Thanks for visiting!]]></XmlData>
     <A HREF="<link/>">
         <menutitle/>
     </a>
-<br><javalogo><img src="images/buttons/java.gif" width="16" height="16" border="0">&nbsp;</javalogo><span style="font-size: 10pt"><menudesc/></span>
+<br><javalogo><img src="images/buttons/java.gif" width="16" height="16" border="0">&#160;</javalogo><span style="font-size: 10pt"><menudesc/></span>
 </td>
 </items>
 <hr>
