@@ -73,7 +73,7 @@
 	          </execution>
 	        </executions>
 	        <configuration>
-            <mainClass>com.tourapp.Main</mainClass>
+            <mainClass>org.jbundle.Main</mainClass>
             <arguments>
               <argument>menu=Switch</argument>
               <argument>background=backgrounds/worldmapalpha.gif</argument>
@@ -125,7 +125,7 @@
 	          </execution>
 	        </executions>
 	        <configuration>
-            <mainClass>com.tourapp.Main</mainClass>
+            <mainClass>org.jbundle.Main</mainClass>
             <arguments>
               <argument>background=backgrounds/worldmapalpha.gif</argument>
               <argument>backgroundcolor=#EEEEFF</argument>
@@ -168,7 +168,7 @@
 	          </execution>
 	        </executions>
 	        <configuration>
-            <mainClass>com.tourapp.Main</mainClass>
+            <mainClass>org.jbundle.Main</mainClass>
             <arguments>
 		            <argument>org.jbundle.Main</argument>
 		            <argument>background=backgrounds/worldmapalpha.gif</argument>
