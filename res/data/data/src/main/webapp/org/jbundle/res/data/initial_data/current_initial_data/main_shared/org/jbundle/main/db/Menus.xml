@@ -2984,14 +2984,14 @@
 <td align="left" valign="top">
     <hr/>
     <a href="${link}">
-        <img src="${icon}" alt="${menutitle}" width="24" height="24" border="0"  align="center"/>
+        <img src="${icon}" alt="${menutitle}" width="24" height="24" border="0"  align="center" />
     </a>
     <a href="${link}">
         ${menutitle}
     </a>
-<br/>${javalogo}<img src="images/buttons/java.gif" width="16" height="15" border="0">&#160;</javalogo><span style="font-size: 10pt">${menudesc}</span>
+<br/>${javalogo}<img src="images/buttons/java.gif" width="16" height="15" border="0" />&#160;<span style="font-size: 10pt">${menudesc}</span>
 </td>
-${items}
+</items>
 Thanks for visiting!]]></XmlData>
 		<MenusHelp/>
 	</Menus>
@@ -3162,12 +3162,12 @@ Thanks for visiting!]]></XmlData>
 <td align="left" valign="top">
     <hr/>
     <a href="{link}">
-        <img align="center" alt="{menutitle}" border="0" height="24" src="{icon}" width="24"/>
+        <img align="center" alt="{menutitle}" border="0" height="24" src="{icon}" width="24" />
     </a>
     <a href="{link}">
         {menutitle}
     </a>
-<br/><javalogo><img border="0" height="16" src="images/buttons/Java.gif" width="16"/> </javalogo><span style="font-size: 10pt">{menudesc}</span>
+<br/><javalogo><img border="0" height="16" src="images/buttons/Java.gif" width="16" /> </javalogo><span style="font-size: 10pt">{menudesc}</span>
 </td>
 </items></XmlData>
 		<MenusHelp/>
@@ -4465,12 +4465,12 @@ Thanks for visiting!]]></XmlData>
 <td align="left" valign="top">
     <hr>
     <a href="<link/>">
-        <img src="<icon/>" ALT="<menutitle/>" width="24" height="24" border="0">
+        <img src="<icon/>" ALT="<menutitle/>" width="24" height="24" border="0" />
     </A>
     <A HREF="<link/>">
         <menutitle/>
     </a>
-<br><javalogo><img src="images/buttons/java.gif" width="16" height="16" border="0">&#160;</javalogo><span style="font-size: 10pt"><menudesc/></span>
+<br><javalogo><img src="images/buttons/java.gif" width="16" height="16" border="0" />&#160;</javalogo><span style="font-size: 10pt"><menudesc/></span>
 </td>
 </items>
 <hr>
@@ -11056,7 +11056,7 @@ Setting up and running your own Tour Operator demo site is quick and easy.
 		<Comment type="XML"><html>
 <body>
 <a href="?menu=quickintro">
-<img height="82" src="com/tourapp/res/images/com/tourgeek/youtube-link.gif" width="138"/>
+<img height="82" src="com/tourapp/res/images/com/tourgeek/youtube-link.gif" width="138" />
 </a><br/>
 A tourgeek.com Outbound Tour Operator software demonstration in under two minutes!
 </body>
