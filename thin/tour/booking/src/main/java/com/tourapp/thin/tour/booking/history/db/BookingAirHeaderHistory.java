@@ -162,9 +162,9 @@ public class BookingAirHeaderHistory extends BookingAirHeader
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea.addKeyField("HistoryDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea.addKeyField(HISTORY_DATE, Constants.ASCENDING);
     }
     /**
     * This is not an auto-counter record.

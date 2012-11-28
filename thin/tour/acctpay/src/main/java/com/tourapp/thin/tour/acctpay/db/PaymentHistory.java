@@ -92,14 +92,14 @@ public class PaymentHistory extends LinkTrx
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "LinkedTrxID");
-        keyArea.addKeyField("LinkedTrxID", Constants.ASCENDING);
-        keyArea.addKeyField("LinkedTrxDescID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ApTrxID");
-        keyArea.addKeyField("ApTrxID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, LINKED_TRX_ID_KEY);
+        keyArea.addKeyField(LINKED_TRX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(LINKED_TRX_DESC_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, AP_TRX_ID_KEY);
+        keyArea.addKeyField(AP_TRX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
     }
 
 }

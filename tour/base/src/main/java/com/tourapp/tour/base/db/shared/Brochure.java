@@ -130,17 +130,17 @@ public class Brochure extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DESCRIPTION_KEY);
             keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BrochureClassID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BROCHURE_CLASS_ID_KEY);
             keyArea.addKeyField(BROCHURE_CLASS_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

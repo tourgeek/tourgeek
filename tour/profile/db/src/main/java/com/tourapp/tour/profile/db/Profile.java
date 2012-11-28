@@ -242,33 +242,33 @@ public class Profile extends Company
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "ProfileCode");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, PROFILE_CODE_KEY);
             keyArea.addKeyField(PROFILE_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSort");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, NAME_SORT_KEY);
             keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "MainProfileID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, MAIN_PROFILE_ID_KEY);
             keyArea.addKeyField(MAIN_PROFILE_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PostalCodeSort");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, POSTAL_CODE_SORT_KEY);
             keyArea.addKeyField(POSTAL_CODE_SORT, DBConstants.ASCENDING);
             keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSur");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, NAME_SUR_KEY);
             keyArea.addKeyField(NAME_SUR, DBConstants.ASCENDING);
         }
         if (keyArea == null)

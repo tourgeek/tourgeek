@@ -112,22 +112,22 @@ public class BookingLine extends BookingSub
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("Sequence", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DetailAccess");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleID", Constants.ASCENDING);
-        keyArea.addKeyField("TourHeaderDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleStartDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingDetailID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("PaxCategoryID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BOOKING_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(SEQUENCE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_HEADER_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_START_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BOOKING_DETAIL_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PAX_CATEGORY_ID, Constants.ASCENDING);
     }
 
 }

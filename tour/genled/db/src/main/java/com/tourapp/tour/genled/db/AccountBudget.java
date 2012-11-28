@@ -139,12 +139,12 @@ public class AccountBudget extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BudComCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BUD_COM_CODE_KEY);
             keyArea.addKeyField(BUD_COM_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);

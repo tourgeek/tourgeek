@@ -160,18 +160,18 @@ public class PaymentHistory extends LinkTrx
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "LinkedTrxID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, LINKED_TRX_ID_KEY);
             keyArea.addKeyField(LINKED_TRX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(LINKED_TRX_DESC_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ApTrxID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, AP_TRX_ID_KEY);
             keyArea.addKeyField(AP_TRX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }

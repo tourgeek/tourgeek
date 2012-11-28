@@ -101,17 +101,17 @@ public class City extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
-        keyArea.addKeyField("Description", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "CityCode");
-        keyArea.addKeyField("CityCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CountryID");
-        keyArea.addKeyField("CountryID", Constants.ASCENDING);
-        keyArea.addKeyField("Description", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TicketCityDesc");
-        keyArea.addKeyField("TicketCityDesc", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DESCRIPTION_KEY);
+        keyArea.addKeyField(DESCRIPTION, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CITY_CODE_KEY);
+        keyArea.addKeyField(CITY_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, COUNTRY_ID_KEY);
+        keyArea.addKeyField(COUNTRY_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DESCRIPTION, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TICKET_CITY_DESC_KEY);
+        keyArea.addKeyField(TICKET_CITY_DESC, Constants.ASCENDING);
     }
 
 }

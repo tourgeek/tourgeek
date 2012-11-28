@@ -79,11 +79,11 @@ public class FinStmt extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "FinStmtHeaderID");
-        keyArea.addKeyField("FinStmtHeaderID", Constants.ASCENDING);
-        keyArea.addKeyField("StmtSequence", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, FIN_STMT_HEADER_ID_KEY);
+        keyArea.addKeyField(FIN_STMT_HEADER_ID, Constants.ASCENDING);
+        keyArea.addKeyField(STMT_SEQUENCE, Constants.ASCENDING);
     }
 
 }

@@ -96,11 +96,11 @@ public class TourEventSchedule extends PropertiesRecord
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourClassID");
-        keyArea.addKeyField("TourClassID", Constants.ASCENDING);
-        keyArea.addKeyField("TourEventID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TOUR_CLASS_ID_KEY);
+        keyArea.addKeyField(TOUR_CLASS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_EVENT_ID, Constants.ASCENDING);
     }
 
 }

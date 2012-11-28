@@ -202,12 +202,12 @@ public class LandPricing extends ProductPricing
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PRODUCT_ID_KEY);
             keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(CLASS_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(END_DATE, DBConstants.ASCENDING);

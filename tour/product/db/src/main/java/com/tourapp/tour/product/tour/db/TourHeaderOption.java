@@ -216,12 +216,12 @@ public class TourHeaderOption extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourOrOption");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_OR_OPTION_KEY);
             keyArea.addKeyField(TOUR_OR_OPTION, DBConstants.ASCENDING);
             keyArea.addKeyField(TOUR_OR_OPTION_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);

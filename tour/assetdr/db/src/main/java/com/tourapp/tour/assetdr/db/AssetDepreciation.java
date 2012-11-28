@@ -155,12 +155,12 @@ public class AssetDepreciation extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AssetID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, ASSET_ID_KEY);
             keyArea.addKeyField(ASSET_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DEPR_DATE, DBConstants.ASCENDING);
             keyArea.addKeyField(VERSION_ID, DBConstants.ASCENDING);

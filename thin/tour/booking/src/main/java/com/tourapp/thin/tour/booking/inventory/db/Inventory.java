@@ -96,15 +96,15 @@ public class Inventory extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "InvDate");
-        keyArea.addKeyField("ProductID", Constants.ASCENDING);
-        keyArea.addKeyField("ProductTypeID", Constants.ASCENDING);
-        keyArea.addKeyField("InvDate", Constants.ASCENDING);
-        keyArea.addKeyField("RateID", Constants.ASCENDING);
-        keyArea.addKeyField("ClassID", Constants.ASCENDING);
-        keyArea.addKeyField("OtherID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, INV_DATE_KEY);
+        keyArea.addKeyField(PRODUCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PRODUCT_TYPE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(INV_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(RATE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(CLASS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(OTHER_ID, Constants.ASCENDING);
     }
     /**
      * GetAvailability Method.

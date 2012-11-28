@@ -202,17 +202,17 @@ public class CreditCard extends BaseArPay
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatusID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_STATUS_ID_KEY);
             keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_DATE_KEY);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
         if (keyArea == null)

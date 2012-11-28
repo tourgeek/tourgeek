@@ -82,15 +82,15 @@ public class TrxStatus extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxDescID");
-        keyArea.addKeyField("TrxDescID", Constants.ASCENDING);
-        keyArea.addKeyField("StatusDesc", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "SystemCode");
-        keyArea.addKeyField("SystemCode", Constants.ASCENDING);
-        keyArea.addKeyField("DescCode", Constants.ASCENDING);
-        keyArea.addKeyField("StatusCode", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_DESC_ID_KEY);
+        keyArea.addKeyField(TRX_DESC_ID, Constants.ASCENDING);
+        keyArea.addKeyField(STATUS_DESC, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, SYSTEM_CODE_KEY);
+        keyArea.addKeyField(SYSTEM_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(DESC_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(STATUS_CODE, Constants.ASCENDING);
     }
 
 }

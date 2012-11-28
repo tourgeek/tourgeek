@@ -76,11 +76,11 @@ public class ProductSearchCategory extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "ProductSearchTypeID");
-        keyArea.addKeyField("ProductSearchTypeID", Constants.ASCENDING);
-        keyArea.addKeyField("Description", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, PRODUCT_SEARCH_TYPE_ID_KEY);
+        keyArea.addKeyField(PRODUCT_SEARCH_TYPE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DESCRIPTION, Constants.ASCENDING);
     }
 
 }

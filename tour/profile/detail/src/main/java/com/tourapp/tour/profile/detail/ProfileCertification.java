@@ -121,17 +121,17 @@ public class ProfileCertification extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PROFILE_ID_KEY);
             keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CertificationCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, CERTIFICATION_CODE_KEY);
             keyArea.addKeyField(CERTIFICATION_CODE, DBConstants.ASCENDING);
         }
         if (keyArea == null)

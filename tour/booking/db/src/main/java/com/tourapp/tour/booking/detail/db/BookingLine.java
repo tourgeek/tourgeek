@@ -191,18 +191,18 @@ public class BookingLine extends BookingSub
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
@@ -211,7 +211,7 @@ public class BookingLine extends BookingSub
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingDetailID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_DETAIL_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_DETAIL_ID, DBConstants.ASCENDING);

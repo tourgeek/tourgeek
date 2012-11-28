@@ -145,18 +145,18 @@ public class TrxStatus extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDescID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_DESC_ID_KEY);
             keyArea.addKeyField(TRX_DESC_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(STATUS_DESC, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SystemCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, SYSTEM_CODE_KEY);
             keyArea.addKeyField(SYSTEM_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(STATUS_CODE, DBConstants.ASCENDING);

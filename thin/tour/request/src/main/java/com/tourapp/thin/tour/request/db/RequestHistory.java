@@ -97,14 +97,14 @@ public class RequestHistory extends Request
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProfileID");
-        keyArea.addKeyField("ProfileID", Constants.ASCENDING);
-        keyArea.addKeyField("HistTimePrinted", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "HistReprint");
-        keyArea.addKeyField("HistReprint", Constants.ASCENDING);
-        keyArea.addKeyField("HistTimePrinted", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PROFILE_ID_KEY);
+        keyArea.addKeyField(PROFILE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(HIST_TIME_PRINTED, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, HIST_REPRINT_KEY);
+        keyArea.addKeyField(HIST_REPRINT, Constants.ASCENDING);
+        keyArea.addKeyField(HIST_TIME_PRINTED, Constants.ASCENDING);
     }
 
 }

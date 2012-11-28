@@ -286,48 +286,48 @@ public class Booking extends CustSale
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, CODE_KEY);
             keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PROFILE_ID_KEY);
             keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_ID_KEY);
             keyArea.addKeyField(TOUR_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NextEventDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, NEXT_EVENT_DATE_KEY);
             keyArea.addKeyField(NEXT_EVENT_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_DATE_KEY);
             keyArea.addKeyField(BOOKING_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 6)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ModDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, MOD_DATE_KEY);
             keyArea.addKeyField(MOD_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 7)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "GenericName");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, GENERIC_NAME_KEY);
             keyArea.addKeyField(GENERIC_NAME, DBConstants.ASCENDING);
         }
         if (iKeyArea == 8)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DESCRIPTION_KEY);
             keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
         if (keyArea == null)

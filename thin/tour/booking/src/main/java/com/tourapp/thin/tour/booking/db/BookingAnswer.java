@@ -108,22 +108,22 @@ public class BookingAnswer extends BookingSub
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleStartDate", Constants.ASCENDING);
-        keyArea.addKeyField("TourOrOption", Constants.ASCENDING);
-        keyArea.addKeyField("TourOrOptionID", Constants.ASCENDING);
-        keyArea.addKeyField("Sequence", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ScanOrder");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleStartDate", Constants.ASCENDING);
-        keyArea.addKeyField("ID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, BOOKING_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_START_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_OR_OPTION, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_OR_OPTION_ID, Constants.ASCENDING);
+        keyArea.addKeyField(SEQUENCE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, SCAN_ORDER_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_START_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
     }
 
 }

@@ -79,12 +79,12 @@ public class AccountBudget extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BudComCode");
-        keyArea.addKeyField("BudComCode", Constants.ASCENDING);
-        keyArea.addKeyField("AccountID", Constants.ASCENDING);
-        keyArea.addKeyField("DetailDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BUD_COM_CODE_KEY);
+        keyArea.addKeyField(BUD_COM_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(ACCOUNT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DETAIL_DATE, Constants.ASCENDING);
     }
 
 }

@@ -39328,40 +39328,6 @@ and creating the refund pending.]]></ClassDesc>
 		<TechnicalInfo/>
 		<CopyDescFrom/>
 	</ClassInfo>
-	<ClassInfo ID="2412">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName/>
-		<BaseClassName/>
-		<ClassDesc/>
-		<ClassProjectID>1,048,576</ClassProjectID>
-		<ClassPackage/>
-		<ClassSourceFile/>
-		<ClassType/>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
-	<ClassInfo ID="2420">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassName>TestSecond</ClassName>
-		<BaseClassName/>
-		<ClassDesc/>
-		<ClassProjectID/>
-		<ClassPackage/>
-		<ClassSourceFile/>
-		<ClassType/>
-		<ClassExplain/>
-		<ClassHelp/>
-		<ClassImplements/>
-		<SeeAlso/>
-		<TechnicalInfo/>
-		<CopyDescFrom/>
-	</ClassInfo>
 	<ClassInfo ID="2423">
 		<LastChanged>2011-08-05T15:59:50</LastChanged>
 		<Deleted>N</Deleted>

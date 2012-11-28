@@ -151,12 +151,12 @@ public class TimeTrx extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "PayEnding");
-        keyArea.addKeyField("PayEnding", Constants.ASCENDING);
-        keyArea.addKeyField("TimeEmpNo", Constants.ASCENDING);
-        keyArea.addKeyField("PaySeq", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, PAY_ENDING_KEY);
+        keyArea.addKeyField(PAY_ENDING, Constants.ASCENDING);
+        keyArea.addKeyField(TIME_EMP_NO, Constants.ASCENDING);
+        keyArea.addKeyField(PAY_SEQ, Constants.ASCENDING);
     }
 
 }

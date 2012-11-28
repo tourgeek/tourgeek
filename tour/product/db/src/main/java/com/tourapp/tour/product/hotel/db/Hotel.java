@@ -415,39 +415,39 @@ public class Hotel extends Product
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, CODE_KEY);
             keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DescSort");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DESC_SORT_KEY);
             keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, VENDOR_ID_KEY);
             keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, CITY_ID_KEY);
             keyArea.addKeyField(CITY_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "OperatorsCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, OPERATORS_CODE_KEY);
             keyArea.addKeyField(OPERATORS_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 6)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductChainID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PRODUCT_CHAIN_ID_KEY);
             keyArea.addKeyField(PRODUCT_CHAIN_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DESC_SORT, DBConstants.ASCENDING);
         }

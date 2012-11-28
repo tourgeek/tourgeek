@@ -94,15 +94,15 @@ public class Country extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Name");
-        keyArea.addKeyField("Name", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "RegionID");
-        keyArea.addKeyField("RegionID", Constants.ASCENDING);
-        keyArea.addKeyField("Name", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NAME_KEY);
+        keyArea.addKeyField(NAME, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CODE_KEY);
+        keyArea.addKeyField(CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, REGION_ID_KEY);
+        keyArea.addKeyField(REGION_ID, Constants.ASCENDING);
+        keyArea.addKeyField(NAME, Constants.ASCENDING);
     }
 
 }

@@ -122,23 +122,23 @@ public class Product extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DescSort");
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "VendorID");
-        keyArea.addKeyField("VendorID", Constants.ASCENDING);
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CityID");
-        keyArea.addKeyField("CityID", Constants.ASCENDING);
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "OperatorsCode");
-        keyArea.addKeyField("OperatorsCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductChainID");
-        keyArea.addKeyField("ProductChainID", Constants.ASCENDING);
-        keyArea.addKeyField("DescSort", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CODE_KEY);
+        keyArea.addKeyField(CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DESC_SORT_KEY);
+        keyArea.addKeyField(DESC_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, VENDOR_ID_KEY);
+        keyArea.addKeyField(VENDOR_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DESC_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, CITY_ID_KEY);
+        keyArea.addKeyField(CITY_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DESC_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, OPERATORS_CODE_KEY);
+        keyArea.addKeyField(OPERATORS_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PRODUCT_CHAIN_ID_KEY);
+        keyArea.addKeyField(PRODUCT_CHAIN_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DESC_SORT, Constants.ASCENDING);
     }
     /**
      * Check the inventory for this detail.

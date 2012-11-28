@@ -181,27 +181,27 @@ public class Airline extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DESCRIPTION_KEY);
             keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "AirlineCode");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, AIRLINE_CODE_KEY);
             keyArea.addKeyField(AIRLINE_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AirlineNo");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, AIRLINE_NO_KEY);
             keyArea.addKeyField(AIRLINE_NO, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, VENDOR_ID_KEY);
             keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

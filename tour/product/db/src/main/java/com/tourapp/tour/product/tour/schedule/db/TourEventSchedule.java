@@ -173,12 +173,12 @@ public class TourEventSchedule extends PropertiesRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourClassID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_CLASS_ID_KEY);
             keyArea.addKeyField(TOUR_CLASS_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TOUR_EVENT_ID, DBConstants.ASCENDING);
         }

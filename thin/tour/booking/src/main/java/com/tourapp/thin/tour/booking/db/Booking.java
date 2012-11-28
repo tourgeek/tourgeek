@@ -190,25 +190,25 @@ public class Booking extends CustSale
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProfileID");
-        keyArea.addKeyField("ProfileID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourID");
-        keyArea.addKeyField("TourID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "NextEventDate");
-        keyArea.addKeyField("NextEventDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingDate");
-        keyArea.addKeyField("BookingDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ModDate");
-        keyArea.addKeyField("ModDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "GenericName");
-        keyArea.addKeyField("GenericName", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
-        keyArea.addKeyField("Description", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CODE_KEY);
+        keyArea.addKeyField(CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PROFILE_ID_KEY);
+        keyArea.addKeyField(PROFILE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TOUR_ID_KEY);
+        keyArea.addKeyField(TOUR_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NEXT_EVENT_DATE_KEY);
+        keyArea.addKeyField(NEXT_EVENT_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BOOKING_DATE_KEY);
+        keyArea.addKeyField(BOOKING_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, MOD_DATE_KEY);
+        keyArea.addKeyField(MOD_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, GENERIC_NAME_KEY);
+        keyArea.addKeyField(GENERIC_NAME, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DESCRIPTION_KEY);
+        keyArea.addKeyField(DESCRIPTION, Constants.ASCENDING);
     }
     /**
      * Add the defaults from the control file when you have a new record.

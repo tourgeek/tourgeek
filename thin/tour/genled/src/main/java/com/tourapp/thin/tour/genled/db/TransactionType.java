@@ -100,19 +100,19 @@ public class TransactionType extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxGroupID");
-        keyArea.addKeyField("TrxGroupID", Constants.ASCENDING);
-        keyArea.addKeyField("TypeDesc", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxTypeCode");
-        keyArea.addKeyField("SystemCode", Constants.ASCENDING);
-        keyArea.addKeyField("DescCode", Constants.ASCENDING);
-        keyArea.addKeyField("GroupCode", Constants.ASCENDING);
-        keyArea.addKeyField("TypeCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "SourceTrxStatusID");
-        keyArea.addKeyField("SourceTrxStatusID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDescID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_GROUP_ID_KEY);
+        keyArea.addKeyField(TRX_GROUP_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TYPE_DESC, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_TYPE_CODE_KEY);
+        keyArea.addKeyField(SYSTEM_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(DESC_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(GROUP_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(TYPE_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, SOURCE_TRX_STATUS_ID_KEY);
+        keyArea.addKeyField(SOURCE_TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DESC_ID, Constants.ASCENDING);
     }
 
 }

@@ -187,25 +187,25 @@ public class BankTrxBatchDetail extends BankTrx
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_DATE_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatus");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_STATUS_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "InvBalance");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, INV_BALANCE_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(INV_SIGN, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
@@ -213,7 +213,7 @@ public class BankTrxBatchDetail extends BankTrx
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BankTrxBatchID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BANK_TRX_BATCH_ID_KEY);
             keyArea.addKeyField(BANK_TRX_BATCH_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

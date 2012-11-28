@@ -155,12 +155,12 @@ public class PaymentRequest extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BankAcctID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BANK_ACCT_ID_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
         }

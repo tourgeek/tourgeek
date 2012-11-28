@@ -432,19 +432,19 @@ public class BookingHotel extends BookingDetail
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
@@ -453,19 +453,19 @@ public class BookingHotel extends BookingDetail
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PRODUCT_ID_KEY);
             keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ApTrxID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, AP_TRX_ID_KEY);
             keyArea.addKeyField(AP_TRX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_ID_KEY);
             keyArea.addKeyField(TOUR_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);

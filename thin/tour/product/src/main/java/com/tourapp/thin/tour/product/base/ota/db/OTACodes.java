@@ -84,11 +84,11 @@ public class OTACodes extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "OTACodeTableID");
-        keyArea.addKeyField("OTACodeTableID", Constants.ASCENDING);
-        keyArea.addKeyField("Name", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, OTA_CODE_TABLE_ID_KEY);
+        keyArea.addKeyField(OTA_CODE_TABLE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(NAME, Constants.ASCENDING);
     }
 
 }

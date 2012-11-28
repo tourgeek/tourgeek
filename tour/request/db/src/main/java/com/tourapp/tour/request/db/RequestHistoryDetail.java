@@ -142,17 +142,17 @@ public class RequestHistoryDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "RequestHistoryID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, REQUEST_HISTORY_ID_KEY);
             keyArea.addKeyField(REQUEST_HISTORY_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PROFILE_ID_KEY);
             keyArea.addKeyField(PROFILE_ID, DBConstants.DESCENDING);
             keyArea.addKeyField(MAILED_ON, DBConstants.DESCENDING);
             keyArea.addKeyField(BROCHURE_ID, DBConstants.DESCENDING);

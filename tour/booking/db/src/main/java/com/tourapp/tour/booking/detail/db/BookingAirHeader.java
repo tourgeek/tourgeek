@@ -346,12 +346,12 @@ public class BookingAirHeader extends BookingSub
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
@@ -360,22 +360,22 @@ public class BookingAirHeader extends BookingSub
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TicketNumber");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TICKET_NUMBER_KEY);
             keyArea.addKeyField(TICKET_NUMBER, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DepDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DEP_DATE_KEY);
             keyArea.addKeyField(DEP_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "IssueDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, ISSUE_DATE_KEY);
             keyArea.addKeyField(ISSUE_DATE, DBConstants.ASCENDING);
         }
         if (keyArea == null)

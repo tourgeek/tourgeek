@@ -171,20 +171,20 @@ public class Tour extends Job
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourHeaderID");
-        keyArea.addKeyField("TourHeaderID", Constants.ASCENDING);
-        keyArea.addKeyField("DepartureDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DepartureDate");
-        keyArea.addKeyField("DepartureDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "NextEventDate");
-        keyArea.addKeyField("NextEventDate", Constants.ASCENDING);
-        keyArea.addKeyField("TourEventID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Description");
-        keyArea.addKeyField("Description", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CODE_KEY);
+        keyArea.addKeyField(CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TOUR_HEADER_ID_KEY);
+        keyArea.addKeyField(TOUR_HEADER_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DEPARTURE_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DEPARTURE_DATE_KEY);
+        keyArea.addKeyField(DEPARTURE_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NEXT_EVENT_DATE_KEY);
+        keyArea.addKeyField(NEXT_EVENT_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_EVENT_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DESCRIPTION_KEY);
+        keyArea.addKeyField(DESCRIPTION, Constants.ASCENDING);
     }
     /**
      * Given the tour header and the departure date, setup or locate

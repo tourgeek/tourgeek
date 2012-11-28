@@ -165,18 +165,18 @@ public class RequestHistory extends Request
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PROFILE_ID_KEY);
             keyArea.addKeyField(PROFILE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(HIST_TIME_PRINTED, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "HistReprint");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, HIST_REPRINT_KEY);
             keyArea.addKeyField(HIST_REPRINT, DBConstants.ASCENDING);
             keyArea.addKeyField(HIST_TIME_PRINTED, DBConstants.ASCENDING);
         }

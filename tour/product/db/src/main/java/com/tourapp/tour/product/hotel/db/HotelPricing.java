@@ -202,12 +202,12 @@ public class HotelPricing extends ProductPricing
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ProductID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, PRODUCT_ID_KEY);
             keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(PAX_CATEGORY_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(RATE_ID, DBConstants.ASCENDING);

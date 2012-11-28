@@ -339,12 +339,12 @@ public class TourHeaderAirHeader extends TourSub
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourHeaderOptionID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_HEADER_OPTION_ID_KEY);
             keyArea.addKeyField(TOUR_HEADER_OPTION_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

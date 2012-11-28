@@ -206,17 +206,17 @@ public class Mco extends BaseArPay
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatusID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_STATUS_ID_KEY);
             keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "McoNo");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, MCO_NO_KEY);
             keyArea.addKeyField(MCO_NO, DBConstants.ASCENDING);
         }
         if (keyArea == null)

@@ -144,19 +144,19 @@ public class Profile extends Company
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "ProfileCode");
-        keyArea.addKeyField("ProfileCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "NameSort");
-        keyArea.addKeyField("NameSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "MainProfileID");
-        keyArea.addKeyField("MainProfileID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "PostalCodeSort");
-        keyArea.addKeyField("PostalCodeSort", Constants.ASCENDING);
-        keyArea.addKeyField("NameSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "NameSur");
-        keyArea.addKeyField("NameSur", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, PROFILE_CODE_KEY);
+        keyArea.addKeyField(PROFILE_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NAME_SORT_KEY);
+        keyArea.addKeyField(NAME_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, MAIN_PROFILE_ID_KEY);
+        keyArea.addKeyField(MAIN_PROFILE_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, POSTAL_CODE_SORT_KEY);
+        keyArea.addKeyField(POSTAL_CODE_SORT, Constants.ASCENDING);
+        keyArea.addKeyField(NAME_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NAME_SUR_KEY);
+        keyArea.addKeyField(NAME_SUR, Constants.ASCENDING);
     }
 
 }

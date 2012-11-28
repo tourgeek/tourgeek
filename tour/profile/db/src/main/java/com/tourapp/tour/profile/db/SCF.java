@@ -146,12 +146,12 @@ public class SCF extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ScfTo");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, SCF_TO_KEY);
             keyArea.addKeyField(SCF_TO, DBConstants.ASCENDING);
             keyArea.addKeyField(SCF_FROM, DBConstants.ASCENDING);
         }

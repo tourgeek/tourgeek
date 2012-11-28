@@ -79,16 +79,16 @@ public class InventoryDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "InventoryID");
-        keyArea.addKeyField("InventoryID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("Type", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "BookingDetailID");
-        keyArea.addKeyField("BookingDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("InventoryID", Constants.ASCENDING);
-        keyArea.addKeyField("Type", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, INVENTORY_ID_KEY);
+        keyArea.addKeyField(INVENTORY_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TYPE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, BOOKING_DETAIL_ID_KEY);
+        keyArea.addKeyField(BOOKING_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(INVENTORY_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TYPE, Constants.ASCENDING);
     }
 
 }

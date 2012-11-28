@@ -159,12 +159,12 @@ public class FinStmtDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "FinStmtID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, FIN_STMT_ID_KEY);
             keyArea.addKeyField(FIN_STMT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
             keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);

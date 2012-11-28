@@ -80,14 +80,14 @@ public class ProductSearchDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductID");
-        keyArea.addKeyField("ProductID", Constants.ASCENDING);
-        keyArea.addKeyField("ProductTypeID", Constants.ASCENDING);
-        keyArea.addKeyField("ProductSearchTypeID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductSearchCategoryID");
-        keyArea.addKeyField("ProductSearchCategoryID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PRODUCT_ID_KEY);
+        keyArea.addKeyField(PRODUCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PRODUCT_TYPE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PRODUCT_SEARCH_TYPE_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PRODUCT_SEARCH_CATEGORY_ID_KEY);
+        keyArea.addKeyField(PRODUCT_SEARCH_CATEGORY_ID, Constants.ASCENDING);
     }
 
 }

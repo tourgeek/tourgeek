@@ -89,16 +89,16 @@ public class AcctDetailDist extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DistDetail");
-        keyArea.addKeyField("AcctDetailID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "AcctDetailDistGroupID");
-        keyArea.addKeyField("AcctDetailDistGroupID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxDescID");
-        keyArea.addKeyField("TrxDescID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxTypeID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DIST_DETAIL_KEY);
+        keyArea.addKeyField(ACCT_DETAIL_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, ACCT_DETAIL_DIST_GROUP_ID_KEY);
+        keyArea.addKeyField(ACCT_DETAIL_DIST_GROUP_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_DESC_ID_KEY);
+        keyArea.addKeyField(TRX_DESC_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_TYPE_ID, Constants.ASCENDING);
     }
 
 }

@@ -179,12 +179,12 @@ public class HotelMealPricing extends ProductPricing
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "HotelID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, HOTEL_ID_KEY);
             keyArea.addKeyField(HOTEL_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MEAL_PLAN_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(END_DATE, DBConstants.ASCENDING);

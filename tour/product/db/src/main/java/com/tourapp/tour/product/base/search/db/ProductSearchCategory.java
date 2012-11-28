@@ -127,12 +127,12 @@ public class ProductSearchCategory extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "ProductSearchTypeID");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, PRODUCT_SEARCH_TYPE_ID_KEY);
             keyArea.addKeyField(PRODUCT_SEARCH_TYPE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }

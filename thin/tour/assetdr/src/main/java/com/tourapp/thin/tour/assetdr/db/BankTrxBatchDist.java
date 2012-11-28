@@ -77,11 +77,11 @@ public class BankTrxBatchDist extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BankTrxBatchDetailID");
-        keyArea.addKeyField("BankTrxBatchDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("AccountID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BANK_TRX_BATCH_DETAIL_ID_KEY);
+        keyArea.addKeyField(BANK_TRX_BATCH_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(ACCOUNT_ID, Constants.ASCENDING);
     }
 
 }

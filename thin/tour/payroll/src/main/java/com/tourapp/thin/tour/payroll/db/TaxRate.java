@@ -77,12 +77,12 @@ public class TaxRate extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "TaxCode");
-        keyArea.addKeyField("TaxCode", Constants.ASCENDING);
-        keyArea.addKeyField("MaritalStatus", Constants.ASCENDING);
-        keyArea.addKeyField("CutOffAmount", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, TAX_CODE_KEY);
+        keyArea.addKeyField(TAX_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(MARITAL_STATUS, Constants.ASCENDING);
+        keyArea.addKeyField(CUT_OFF_AMOUNT, Constants.ASCENDING);
     }
 
 }

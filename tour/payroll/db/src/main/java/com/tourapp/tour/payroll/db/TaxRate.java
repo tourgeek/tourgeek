@@ -139,12 +139,12 @@ public class TaxRate extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "TaxCode");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, TAX_CODE_KEY);
             keyArea.addKeyField(TAX_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(MARITAL_STATUS, DBConstants.ASCENDING);
             keyArea.addKeyField(CUT_OFF_AMOUNT, DBConstants.ASCENDING);

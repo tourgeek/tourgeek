@@ -143,22 +143,22 @@ public class State extends Location
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Name");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, NAME_KEY);
             keyArea.addKeyField(NAME, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "StatePostalCode");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, STATE_POSTAL_CODE_KEY);
             keyArea.addKeyField(STATE_POSTAL_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CountryID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, COUNTRY_ID_KEY);
             keyArea.addKeyField(COUNTRY_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(NAME, DBConstants.ASCENDING);
         }

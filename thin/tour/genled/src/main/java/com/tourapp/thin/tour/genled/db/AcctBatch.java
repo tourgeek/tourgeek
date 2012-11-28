@@ -93,11 +93,11 @@ public class AcctBatch extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "UserID");
-        keyArea.addKeyField("UserID", Constants.ASCENDING);
-        keyArea.addKeyField("Recurring", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, USER_ID_KEY);
+        keyArea.addKeyField(USER_ID, Constants.ASCENDING);
+        keyArea.addKeyField(RECURRING, Constants.ASCENDING);
     }
 
 }

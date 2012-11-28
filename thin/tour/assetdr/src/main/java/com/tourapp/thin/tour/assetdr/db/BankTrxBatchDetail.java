@@ -111,22 +111,22 @@ public class BankTrxBatchDetail extends BankTrx
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxDate");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxStatus");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "InvBalance");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("InvSign", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea.addKeyField("InvBalance", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BankTrxBatchID");
-        keyArea.addKeyField("BankTrxBatchID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_DATE_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_STATUS_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, INV_BALANCE_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(INV_SIGN, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(INV_BALANCE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BANK_TRX_BATCH_ID_KEY);
+        keyArea.addKeyField(BANK_TRX_BATCH_ID, Constants.ASCENDING);
     }
 
 }

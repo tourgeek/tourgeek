@@ -107,26 +107,26 @@ public class BankTrx extends BaseTrx
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxDate");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxClass");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "InvBalance");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("InvSign", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea.addKeyField("InvBalance", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxNumber");
-        keyArea.addKeyField("BankAcctID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxNumber", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "PayeeID");
-        keyArea.addKeyField("PayeeID", Constants.ASCENDING);
-        keyArea.addKeyField("PayeeTrxDescID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_DATE_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_CLASS_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, INV_BALANCE_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(INV_SIGN, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(INV_BALANCE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_NUMBER_KEY);
+        keyArea.addKeyField(BANK_ACCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_NUMBER, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PAYEE_ID_KEY);
+        keyArea.addKeyField(PAYEE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PAYEE_TRX_DESC_ID, Constants.ASCENDING);
     }
 
 }

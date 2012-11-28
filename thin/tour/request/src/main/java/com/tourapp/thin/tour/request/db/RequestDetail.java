@@ -78,11 +78,11 @@ public class RequestDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "RequestID");
-        keyArea.addKeyField("RequestID", Constants.ASCENDING);
-        keyArea.addKeyField("BrochureID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, REQUEST_ID_KEY);
+        keyArea.addKeyField(REQUEST_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BROCHURE_ID, Constants.ASCENDING);
     }
 
 }

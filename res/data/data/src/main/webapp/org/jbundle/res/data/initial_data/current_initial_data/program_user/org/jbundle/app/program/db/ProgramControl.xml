@@ -3,7 +3,7 @@
 		<LastChanged>2012-01-13T10:52:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ProjectName>tourapp-tour</ProjectName>
-		<BaseDirectory>/home/don/workspace</BaseDirectory>
+		<BaseDirectory>${user.home}/</BaseDirectory>
 		<SourceDirectory>src/main/java/</SourceDirectory>
 		<ClassDirectory>target/classes/</ClassDirectory>
 		<ArchiveDirectory>data/archive/</ArchiveDirectory>

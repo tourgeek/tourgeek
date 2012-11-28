@@ -141,12 +141,12 @@ public class CashBatchDist extends BankTrxBatchDist
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchDetailID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, CASH_BATCH_DETAIL_ID_KEY);
             keyArea.addKeyField(CASH_BATCH_DETAIL_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

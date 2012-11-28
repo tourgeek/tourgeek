@@ -156,19 +156,19 @@ public class InventoryDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "InventoryID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, INVENTORY_ID_KEY);
             keyArea.addKeyField(INVENTORY_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_DETAIL_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TYPE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "BookingDetailID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, BOOKING_DETAIL_ID_KEY);
             keyArea.addKeyField(BOOKING_DETAIL_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(INVENTORY_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TYPE, DBConstants.ASCENDING);

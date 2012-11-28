@@ -187,12 +187,12 @@ public class BookingAnswer extends BookingSub
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "BookingID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, BOOKING_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
@@ -203,7 +203,7 @@ public class BookingAnswer extends BookingSub
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ScanOrder");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, SCAN_ORDER_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);

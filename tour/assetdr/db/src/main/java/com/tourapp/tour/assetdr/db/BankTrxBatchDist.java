@@ -138,12 +138,12 @@ public class BankTrxBatchDist extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BankTrxBatchDetailID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BANK_TRX_BATCH_DETAIL_ID_KEY);
             keyArea.addKeyField(BANK_TRX_BATCH_DETAIL_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);
         }

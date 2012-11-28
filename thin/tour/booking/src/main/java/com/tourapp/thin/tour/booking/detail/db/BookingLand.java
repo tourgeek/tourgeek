@@ -287,28 +287,28 @@ public class BookingLand extends BookingDetail
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("DetailDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DetailAccess");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleID", Constants.ASCENDING);
-        keyArea.addKeyField("TourHeaderDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleStartDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductID");
-        keyArea.addKeyField("ProductID", Constants.ASCENDING);
-        keyArea.addKeyField("DetailDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ApTrxID");
-        keyArea.addKeyField("ApTrxID", Constants.ASCENDING);
-        keyArea.addKeyField("DetailDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourID");
-        keyArea.addKeyField("TourID", Constants.ASCENDING);
-        keyArea.addKeyField("VendorID", Constants.ASCENDING);
-        keyArea.addKeyField("ProductTypeID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BOOKING_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DETAIL_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_HEADER_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_START_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PRODUCT_ID_KEY);
+        keyArea.addKeyField(PRODUCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DETAIL_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, AP_TRX_ID_KEY);
+        keyArea.addKeyField(AP_TRX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DETAIL_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TOUR_ID_KEY);
+        keyArea.addKeyField(TOUR_ID, Constants.ASCENDING);
+        keyArea.addKeyField(VENDOR_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PRODUCT_TYPE_ID, Constants.ASCENDING);
     }
 
 }

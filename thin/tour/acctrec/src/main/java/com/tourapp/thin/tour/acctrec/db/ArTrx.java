@@ -93,18 +93,18 @@ public class ArTrx extends LinkTrx
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "LinkedTrxID");
-        keyArea.addKeyField("LinkedTrxID", Constants.ASCENDING);
-        keyArea.addKeyField("LinkedTrxDescID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxStatusID");
-        keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, LINKED_TRX_ID_KEY);
+        keyArea.addKeyField(LINKED_TRX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(LINKED_TRX_DESC_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BOOKING_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_STATUS_ID_KEY);
+        keyArea.addKeyField(TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
     }
     /**
      * Add the booking detail behaviors.

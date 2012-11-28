@@ -119,12 +119,12 @@ public class Salesperson extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SalespersonName");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, SALESPERSON_NAME_KEY);
             keyArea.addKeyField(SALESPERSON_NAME, DBConstants.ASCENDING);
         }
         if (keyArea == null)

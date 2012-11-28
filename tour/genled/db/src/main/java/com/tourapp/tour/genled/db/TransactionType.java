@@ -180,18 +180,18 @@ public class TransactionType extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxGroupID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_GROUP_ID_KEY);
             keyArea.addKeyField(TRX_GROUP_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TYPE_DESC, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxTypeCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_TYPE_CODE_KEY);
             keyArea.addKeyField(SYSTEM_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(GROUP_CODE, DBConstants.ASCENDING);
@@ -199,7 +199,7 @@ public class TransactionType extends VirtualRecord
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SourceTrxStatusID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, SOURCE_TRX_STATUS_ID_KEY);
             keyArea.addKeyField(SOURCE_TRX_STATUS_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DESC_ID, DBConstants.ASCENDING);
         }

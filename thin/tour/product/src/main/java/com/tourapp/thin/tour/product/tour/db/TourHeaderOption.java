@@ -110,12 +110,12 @@ public class TourHeaderOption extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourOrOption");
-        keyArea.addKeyField("TourOrOption", Constants.ASCENDING);
-        keyArea.addKeyField("TourOrOptionID", Constants.ASCENDING);
-        keyArea.addKeyField("Sequence", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TOUR_OR_OPTION_KEY);
+        keyArea.addKeyField(TOUR_OR_OPTION, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_OR_OPTION_ID, Constants.ASCENDING);
+        keyArea.addKeyField(SEQUENCE, Constants.ASCENDING);
     }
 
 }

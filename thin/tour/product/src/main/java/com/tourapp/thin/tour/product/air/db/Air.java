@@ -146,18 +146,18 @@ public class Air extends TransportProduct
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CityCode");
-        keyArea.addKeyField("CityCode", Constants.ASCENDING);
-        keyArea.addKeyField("ToCityCode", Constants.ASCENDING);
-        keyArea.addKeyField("AirlineID", Constants.ASCENDING);
-        keyArea.addKeyField("FlightNo", Constants.ASCENDING);
-        keyArea.addKeyField("EndDate", Constants.ASCENDING);
-        keyArea.addKeyField("Days", Constants.ASCENDING);
-        keyArea.addKeyField("Segment", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CODE_KEY);
+        keyArea.addKeyField(CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, CITY_CODE_KEY);
+        keyArea.addKeyField(CITY_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(TO_CITY_CODE, Constants.ASCENDING);
+        keyArea.addKeyField(AIRLINE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(FLIGHT_NO, Constants.ASCENDING);
+        keyArea.addKeyField(END_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(DAYS, Constants.ASCENDING);
+        keyArea.addKeyField(SEGMENT, Constants.ASCENDING);
     }
 
 }

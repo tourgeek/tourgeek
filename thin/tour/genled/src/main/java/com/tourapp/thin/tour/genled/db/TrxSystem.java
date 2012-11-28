@@ -73,12 +73,12 @@ public class TrxSystem extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "SystemCode");
-        keyArea.addKeyField("SystemCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "SystemDesc");
-        keyArea.addKeyField("SystemDesc", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, SYSTEM_CODE_KEY);
+        keyArea.addKeyField(SYSTEM_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, SYSTEM_DESC_KEY);
+        keyArea.addKeyField(SYSTEM_DESC, Constants.ASCENDING);
     }
 
 }

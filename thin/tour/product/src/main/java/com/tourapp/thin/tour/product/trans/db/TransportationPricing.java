@@ -101,14 +101,14 @@ public class TransportationPricing extends ProductPricing
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProductID");
-        keyArea.addKeyField("ProductID", Constants.ASCENDING);
-        keyArea.addKeyField("RateID", Constants.ASCENDING);
-        keyArea.addKeyField("ClassID", Constants.ASCENDING);
-        keyArea.addKeyField("EndDate", Constants.ASCENDING);
-        keyArea.addKeyField("ToPax", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PRODUCT_ID_KEY);
+        keyArea.addKeyField(PRODUCT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(RATE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(CLASS_ID, Constants.ASCENDING);
+        keyArea.addKeyField(END_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TO_PAX, Constants.ASCENDING);
     }
 
 }

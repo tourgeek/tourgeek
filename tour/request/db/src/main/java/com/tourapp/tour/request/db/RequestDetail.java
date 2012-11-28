@@ -123,12 +123,12 @@ public class RequestDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "RequestID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, REQUEST_ID_KEY);
             keyArea.addKeyField(REQUEST_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BROCHURE_ID, DBConstants.ASCENDING);
         }

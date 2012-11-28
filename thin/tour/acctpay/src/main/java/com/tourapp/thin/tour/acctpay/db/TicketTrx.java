@@ -188,18 +188,18 @@ public class TicketTrx extends ApTrx
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "Code");
-        keyArea.addKeyField("Code", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "VendorID");
-        keyArea.addKeyField("VendorID", Constants.ASCENDING);
-        keyArea.addKeyField("ActiveTrx", Constants.ASCENDING);
-        keyArea.addKeyField("StartServiceDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TourID");
-        keyArea.addKeyField("TourID", Constants.ASCENDING);
-        keyArea.addKeyField("VendorID", Constants.ASCENDING);
-        keyArea.addKeyField("ProductTypeID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, CODE_KEY);
+        keyArea.addKeyField(CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, VENDOR_ID_KEY);
+        keyArea.addKeyField(VENDOR_ID, Constants.ASCENDING);
+        keyArea.addKeyField(ACTIVE_TRX, Constants.ASCENDING);
+        keyArea.addKeyField(START_SERVICE_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TOUR_ID_KEY);
+        keyArea.addKeyField(TOUR_ID, Constants.ASCENDING);
+        keyArea.addKeyField(VENDOR_ID, Constants.ASCENDING);
+        keyArea.addKeyField(PRODUCT_TYPE_ID, Constants.ASCENDING);
     }
 
 }

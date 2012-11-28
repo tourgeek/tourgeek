@@ -87,12 +87,12 @@ public class AssetDepreciation extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "AssetID");
-        keyArea.addKeyField("AssetID", Constants.ASCENDING);
-        keyArea.addKeyField("DeprDate", Constants.ASCENDING);
-        keyArea.addKeyField("VersionID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, ASSET_ID_KEY);
+        keyArea.addKeyField(ASSET_ID, Constants.ASCENDING);
+        keyArea.addKeyField(DEPR_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(VERSION_ID, Constants.ASCENDING);
     }
 
 }

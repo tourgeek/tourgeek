@@ -131,12 +131,12 @@ public class AutoDist extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AutoDistDesc");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, AUTO_DIST_DESC_KEY);
             keyArea.addKeyField(AUTO_DIST_DESC, DBConstants.ASCENDING);
         }
         if (keyArea == null)

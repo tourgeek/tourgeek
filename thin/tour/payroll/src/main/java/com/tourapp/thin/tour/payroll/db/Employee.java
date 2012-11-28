@@ -214,20 +214,20 @@ public class Employee extends Person
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "FirstName");
-        keyArea.addKeyField("FirstName", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "PostalCode");
-        keyArea.addKeyField("PostalCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "NameSort");
-        keyArea.addKeyField("NameSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DepartmentID");
-        keyArea.addKeyField("DepartmentID", Constants.ASCENDING);
-        keyArea.addKeyField("NameSort", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "UserID");
-        keyArea.addKeyField("UserID", Constants.ASCENDING);
-        keyArea.addKeyField("TerminationDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, FIRST_NAME_KEY);
+        keyArea.addKeyField(FIRST_NAME, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, POSTAL_CODE_KEY);
+        keyArea.addKeyField(POSTAL_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NAME_SORT_KEY);
+        keyArea.addKeyField(NAME_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DEPARTMENT_ID_KEY);
+        keyArea.addKeyField(DEPARTMENT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(NAME_SORT, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, USER_ID_KEY);
+        keyArea.addKeyField(USER_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TERMINATION_DATE, Constants.ASCENDING);
     }
 
 }

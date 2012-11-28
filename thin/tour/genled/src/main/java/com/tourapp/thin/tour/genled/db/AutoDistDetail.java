@@ -77,10 +77,10 @@ public class AutoDistDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "AutoDistID");
-        keyArea.addKeyField("AutoDistID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, AUTO_DIST_ID_KEY);
+        keyArea.addKeyField(AUTO_DIST_ID, Constants.ASCENDING);
     }
 
 }

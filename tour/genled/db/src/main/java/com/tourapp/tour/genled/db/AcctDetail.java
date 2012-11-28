@@ -158,12 +158,12 @@ public class AcctDetail extends BaseTrx
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AccountID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, ACCOUNT_ID_KEY);
             keyArea.addKeyField(ACCOUNT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_TYPE_ID, DBConstants.ASCENDING);
@@ -171,13 +171,13 @@ public class AcctDetail extends BaseTrx
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_DATE_KEY);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_ENTRY, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Source");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, SOURCE_KEY);
             keyArea.addKeyField(SOURCE, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_ENTRY, DBConstants.ASCENDING);

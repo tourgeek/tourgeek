@@ -82,14 +82,14 @@ public class RequestHistoryDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "RequestHistoryID");
-        keyArea.addKeyField("RequestHistoryID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProfileID");
-        keyArea.addKeyField("ProfileID", Constants.DESCENDING);
-        keyArea.addKeyField("MailedOn", Constants.DESCENDING);
-        keyArea.addKeyField("BrochureID", Constants.DESCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, REQUEST_HISTORY_ID_KEY);
+        keyArea.addKeyField(REQUEST_HISTORY_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PROFILE_ID_KEY);
+        keyArea.addKeyField(PROFILE_ID, Constants.DESCENDING);
+        keyArea.addKeyField(MAILED_ON, Constants.DESCENDING);
+        keyArea.addKeyField(BROCHURE_ID, Constants.DESCENDING);
     }
 
 }

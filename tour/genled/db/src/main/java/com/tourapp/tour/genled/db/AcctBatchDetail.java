@@ -147,12 +147,12 @@ public class AcctBatchDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AcctBatchID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, ACCT_BATCH_ID_KEY);
             keyArea.addKeyField(ACCT_BATCH_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(SEQUENCE, DBConstants.ASCENDING);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);

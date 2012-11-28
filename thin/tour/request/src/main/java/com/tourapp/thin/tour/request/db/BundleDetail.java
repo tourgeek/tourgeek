@@ -75,11 +75,11 @@ public class BundleDetail extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "BundleID");
-        keyArea.addKeyField("BundleID", Constants.ASCENDING);
-        keyArea.addKeyField("BrochureID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, BUNDLE_ID_KEY);
+        keyArea.addKeyField(BUNDLE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BROCHURE_ID, Constants.ASCENDING);
     }
 
 }

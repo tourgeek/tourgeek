@@ -116,12 +116,12 @@ public class Mco extends BaseArPay
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxStatusID");
-        keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "McoNo");
-        keyArea.addKeyField("McoNo", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_STATUS_ID_KEY);
+        keyArea.addKeyField(TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, MCO_NO_KEY);
+        keyArea.addKeyField(MCO_NO, Constants.ASCENDING);
     }
 
 }

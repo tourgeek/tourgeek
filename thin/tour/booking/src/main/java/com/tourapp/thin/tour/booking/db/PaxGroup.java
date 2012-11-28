@@ -78,12 +78,12 @@ public class PaxGroup extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("GroupNo", Constants.ASCENDING);
-        keyArea.addKeyField("PaxID", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, BOOKING_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(GROUP_NO, Constants.ASCENDING);
+        keyArea.addKeyField(PAX_ID, Constants.ASCENDING);
     }
 
 }

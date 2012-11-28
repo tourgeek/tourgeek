@@ -94,12 +94,12 @@ public class Request extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "PostalCode");
-        keyArea.addKeyField("PostalCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "ProfileCode");
-        keyArea.addKeyField("ProfileCode", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, POSTAL_CODE_KEY);
+        keyArea.addKeyField(POSTAL_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, PROFILE_CODE_KEY);
+        keyArea.addKeyField(PROFILE_CODE, Constants.ASCENDING);
     }
 
 }

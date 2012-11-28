@@ -134,17 +134,17 @@ public class TrxSystem extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "SystemCode");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, SYSTEM_CODE_KEY);
             keyArea.addKeyField(SYSTEM_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SystemDesc");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, SYSTEM_DESC_KEY);
             keyArea.addKeyField(SYSTEM_DESC, DBConstants.ASCENDING);
         }
         if (keyArea == null)

@@ -189,25 +189,25 @@ public class BankTrx extends BaseTrx
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_DATE_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxClass");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_CLASS_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "InvBalance");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, INV_BALANCE_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(INV_SIGN, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
@@ -215,13 +215,13 @@ public class BankTrx extends BaseTrx
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxNumber");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_NUMBER_KEY);
             keyArea.addKeyField(BANK_ACCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_NUMBER, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PayeeID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PAYEE_ID_KEY);
             keyArea.addKeyField(PAYEE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(PAYEE_TRX_DESC_ID, DBConstants.ASCENDING);
         }

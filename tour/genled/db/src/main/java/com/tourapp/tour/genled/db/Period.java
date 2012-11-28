@@ -130,12 +130,12 @@ public class Period extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "EndPeriod");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, END_PERIOD_KEY);
             keyArea.addKeyField(END_PERIOD, DBConstants.ASCENDING);
         }
         if (keyArea == null)

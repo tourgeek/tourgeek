@@ -128,12 +128,12 @@ public class BankTrxBatch extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "UserID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, USER_ID_KEY);
             keyArea.addKeyField(USER_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

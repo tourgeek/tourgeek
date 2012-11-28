@@ -144,12 +144,12 @@ public class FinStmt extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "FinStmtHeaderID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, FIN_STMT_HEADER_ID_KEY);
             keyArea.addKeyField(FIN_STMT_HEADER_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(STMT_SEQUENCE, DBConstants.ASCENDING);
         }

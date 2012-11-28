@@ -344,33 +344,33 @@ public class Employee extends Person
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "FirstName");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, FIRST_NAME_KEY);
             keyArea.addKeyField(FIRST_NAME, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PostalCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, POSTAL_CODE_KEY);
             keyArea.addKeyField(POSTAL_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSort");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, NAME_SORT_KEY);
             keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DepartmentID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DEPARTMENT_ID_KEY);
             keyArea.addKeyField(DEPARTMENT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "UserID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, USER_ID_KEY);
             keyArea.addKeyField(USER_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TERMINATION_DATE, DBConstants.ASCENDING);
         }

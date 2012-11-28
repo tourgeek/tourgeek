@@ -174,25 +174,25 @@ public class ArTrx extends LinkTrx
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "LinkedTrxID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, LINKED_TRX_ID_KEY);
             keyArea.addKeyField(LINKED_TRX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(LINKED_TRX_DESC_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxStatusID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_STATUS_ID_KEY);
             keyArea.addKeyField(TRX_STATUS_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_DATE, DBConstants.ASCENDING);
         }

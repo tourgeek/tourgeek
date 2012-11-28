@@ -146,12 +146,12 @@ public class CashBatchDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CashBatchID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, CASH_BATCH_ID_KEY);
             keyArea.addKeyField(CASH_BATCH_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }

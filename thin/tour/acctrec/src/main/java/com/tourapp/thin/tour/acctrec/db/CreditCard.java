@@ -110,12 +110,12 @@ public class CreditCard extends BaseArPay
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxStatusID");
-        keyArea.addKeyField("TrxStatusID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxDate");
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_STATUS_ID_KEY);
+        keyArea.addKeyField(TRX_STATUS_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_DATE_KEY);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
     }
 
 }

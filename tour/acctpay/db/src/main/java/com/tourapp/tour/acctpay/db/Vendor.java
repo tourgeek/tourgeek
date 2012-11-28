@@ -263,22 +263,22 @@ public class Vendor extends Company
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, CODE_KEY);
             keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "NameSort");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, NAME_SORT_KEY);
             keyArea.addKeyField(NAME_SORT, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CurrencysID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, CURRENCYS_ID_KEY);
             keyArea.addKeyField(CURRENCYS_ID, DBConstants.ASCENDING);
         }
         if (keyArea == null)

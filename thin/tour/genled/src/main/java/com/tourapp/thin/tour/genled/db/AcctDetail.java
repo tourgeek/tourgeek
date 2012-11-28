@@ -90,20 +90,20 @@ public class AcctDetail extends BaseTrx
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "AccountID");
-        keyArea.addKeyField("AccountID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea.addKeyField("TrxTypeID", Constants.ASCENDING);
-        keyArea.addKeyField("TrxEntry", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TrxDate");
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea.addKeyField("TrxEntry", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Source");
-        keyArea.addKeyField("Source", Constants.ASCENDING);
-        keyArea.addKeyField("TrxDate", Constants.ASCENDING);
-        keyArea.addKeyField("TrxEntry", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, ACCOUNT_ID_KEY);
+        keyArea.addKeyField(ACCOUNT_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_TYPE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_ENTRY, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TRX_DATE_KEY);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_ENTRY, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, SOURCE_KEY);
+        keyArea.addKeyField(SOURCE, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_DATE, Constants.ASCENDING);
+        keyArea.addKeyField(TRX_ENTRY, Constants.ASCENDING);
     }
 
 }

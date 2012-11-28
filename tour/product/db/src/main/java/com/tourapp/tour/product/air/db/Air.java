@@ -316,17 +316,17 @@ public class Air extends TransportProduct
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "Code");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, CODE_KEY);
             keyArea.addKeyField(CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "CityCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, CITY_CODE_KEY);
             keyArea.addKeyField(CITY_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(TO_CITY_CODE, DBConstants.ASCENDING);
             keyArea.addKeyField(AIRLINE_ID, DBConstants.ASCENDING);

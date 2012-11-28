@@ -552,19 +552,19 @@ public class BookingDetail extends BookingSub
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "BookingID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, BOOKING_ID_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailAccess");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
             keyArea.addKeyField(BOOKING_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BOOKING_PAX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(MODULE_ID, DBConstants.ASCENDING);
@@ -573,7 +573,7 @@ public class BookingDetail extends BookingSub
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PRODUCT_ID_KEY);
             keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
@@ -581,27 +581,27 @@ public class BookingDetail extends BookingSub
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ApTrxID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, AP_TRX_ID_KEY);
             keyArea.addKeyField(AP_TRX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_ID_KEY);
             keyArea.addKeyField(TOUR_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 6)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DetailDate");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DETAIL_DATE_KEY);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
             keyArea.addKeyField(PRODUCT_TYPE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 7)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "VendorID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, VENDOR_ID_KEY);
             keyArea.addKeyField(VENDOR_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DETAIL_DATE, DBConstants.ASCENDING);
         }

@@ -134,12 +134,12 @@ public class BundleDetail extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "BundleID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, BUNDLE_ID_KEY);
             keyArea.addKeyField(BUNDLE_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(BROCHURE_ID, DBConstants.ASCENDING);
         }

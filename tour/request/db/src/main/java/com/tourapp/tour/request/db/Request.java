@@ -166,17 +166,17 @@ public class Request extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "PostalCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, POSTAL_CODE_KEY);
             keyArea.addKeyField(POSTAL_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProfileCode");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PROFILE_CODE_KEY);
             keyArea.addKeyField(PROFILE_CODE, DBConstants.ASCENDING);
         }
         if (keyArea == null)

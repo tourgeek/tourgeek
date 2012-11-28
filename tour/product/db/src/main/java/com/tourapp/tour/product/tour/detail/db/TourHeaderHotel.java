@@ -263,19 +263,19 @@ public class TourHeaderHotel extends TourHeaderDetail
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TourHeaderOptionID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TOUR_HEADER_OPTION_ID_KEY);
             keyArea.addKeyField(TOUR_HEADER_OPTION_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DAY, DBConstants.ASCENDING);
             keyArea.addKeyField(ETD, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "ProductID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, PRODUCT_ID_KEY);
             keyArea.addKeyField(PRODUCT_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DAY, DBConstants.ASCENDING);
             keyArea.addKeyField(ETD, DBConstants.ASCENDING);

@@ -80,11 +80,11 @@ public class SCF extends FieldList
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ScfTo");
-        keyArea.addKeyField("ScfTo", Constants.ASCENDING);
-        keyArea.addKeyField("ScfFrom", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, SCF_TO_KEY);
+        keyArea.addKeyField(SCF_TO, Constants.ASCENDING);
+        keyArea.addKeyField(SCF_FROM, Constants.ASCENDING);
     }
 
 }

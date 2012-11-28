@@ -97,12 +97,12 @@ public class HotelMealPricing extends ProductPricing
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "HotelID");
-        keyArea.addKeyField("HotelID", Constants.ASCENDING);
-        keyArea.addKeyField("MealPlanID", Constants.ASCENDING);
-        keyArea.addKeyField("EndDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, HOTEL_ID_KEY);
+        keyArea.addKeyField(HOTEL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MEAL_PLAN_ID, Constants.ASCENDING);
+        keyArea.addKeyField(END_DATE, Constants.ASCENDING);
     }
 
 }

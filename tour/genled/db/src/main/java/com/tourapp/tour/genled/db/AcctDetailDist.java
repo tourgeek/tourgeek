@@ -153,22 +153,22 @@ public class AcctDetailDist extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "DistDetail");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DIST_DETAIL_KEY);
             keyArea.addKeyField(ACCT_DETAIL_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "AcctDetailDistGroupID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, ACCT_DETAIL_DIST_GROUP_ID_KEY);
             keyArea.addKeyField(ACCT_DETAIL_DIST_GROUP_ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxDescID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_DESC_ID_KEY);
             keyArea.addKeyField(TRX_DESC_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TRX_TYPE_ID, DBConstants.ASCENDING);

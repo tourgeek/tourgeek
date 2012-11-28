@@ -160,22 +160,22 @@ public class BookingAirHeader extends BookingSub
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DetailAccess");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea.addKeyField("BookingPaxID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleID", Constants.ASCENDING);
-        keyArea.addKeyField("TourHeaderDetailID", Constants.ASCENDING);
-        keyArea.addKeyField("ModuleStartDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "BookingID");
-        keyArea.addKeyField("BookingID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "TicketNumber");
-        keyArea.addKeyField("TicketNumber", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "DepDate");
-        keyArea.addKeyField("DepDate", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "IssueDate");
-        keyArea.addKeyField("IssueDate", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DETAIL_ACCESS_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea.addKeyField(BOOKING_PAX_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_ID, Constants.ASCENDING);
+        keyArea.addKeyField(TOUR_HEADER_DETAIL_ID, Constants.ASCENDING);
+        keyArea.addKeyField(MODULE_START_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, BOOKING_ID_KEY);
+        keyArea.addKeyField(BOOKING_ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, TICKET_NUMBER_KEY);
+        keyArea.addKeyField(TICKET_NUMBER, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DEP_DATE_KEY);
+        keyArea.addKeyField(DEP_DATE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, ISSUE_DATE_KEY);
+        keyArea.addKeyField(ISSUE_DATE, Constants.ASCENDING);
     }
 
 }

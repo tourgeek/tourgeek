@@ -141,28 +141,28 @@ public class TrxDesc extends VirtualRecord
         KeyArea keyArea = null;
         if (iKeyArea == 0)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, "ID");
+            keyArea = this.makeIndex(DBConstants.UNIQUE, ID_KEY);
             keyArea.addKeyField(ID, DBConstants.ASCENDING);
         }
         if (iKeyArea == 1)
         {
-            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, "DescCode");
+            keyArea = this.makeIndex(DBConstants.SECONDARY_KEY, DESC_CODE_KEY);
             keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 2)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "Description");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, DESCRIPTION_KEY);
             keyArea.addKeyField(DESCRIPTION, DBConstants.ASCENDING);
         }
         if (iKeyArea == 3)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "TrxSystemID");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, TRX_SYSTEM_ID_KEY);
             keyArea.addKeyField(TRX_SYSTEM_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(DESC_CODE, DBConstants.ASCENDING);
         }
         if (iKeyArea == 4)
         {
-            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, "SourceFile");
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, SOURCE_FILE_KEY);
             keyArea.addKeyField(SOURCE_FILE, DBConstants.ASCENDING);
         }
         if (keyArea == null)

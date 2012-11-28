@@ -84,15 +84,15 @@ public class State extends Location
     public void setupKeys()
     {
         KeyAreaInfo keyArea = null;
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, "ID");
-        keyArea.addKeyField("ID", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "Name");
-        keyArea.addKeyField("Name", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, "StatePostalCode");
-        keyArea.addKeyField("StatePostalCode", Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, "CountryID");
-        keyArea.addKeyField("CountryID", Constants.ASCENDING);
-        keyArea.addKeyField("Name", Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, ID_KEY);
+        keyArea.addKeyField(ID, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, NAME_KEY);
+        keyArea.addKeyField(NAME, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.SECONDARY_KEY, STATE_POSTAL_CODE_KEY);
+        keyArea.addKeyField(STATE_POSTAL_CODE, Constants.ASCENDING);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, COUNTRY_ID_KEY);
+        keyArea.addKeyField(COUNTRY_ID, Constants.ASCENDING);
+        keyArea.addKeyField(NAME, Constants.ASCENDING);
     }
 
 }
