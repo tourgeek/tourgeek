@@ -149,7 +149,6 @@ public class Booking extends CustSale
         field = new FieldInfo(this, CANCELLED, 10, null, null);
         field.setDataClass(Boolean.class);
         field = new FieldInfo(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, DEPOSIT, 18, null, null);
         field.setDataClass(Double.class);
         field = new FieldInfo(this, DEPOSIT_DUE_DATE, 12, null, null);

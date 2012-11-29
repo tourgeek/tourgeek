@@ -66,7 +66,6 @@ public class TourEventSchedule extends PropertiesRecord
         field.setDataClass(Boolean.class);
         field.setHidden(true);
         field = new FieldInfo(this, ACTION_PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, TOUR_CLASS_ID, 8, null, null);
         field.setDataClass(Integer.class);
         field.setHidden(true);
@@ -88,7 +87,6 @@ public class TourEventSchedule extends PropertiesRecord
         field = new FieldInfo(this, RUN_PROCESS_IN, Constants.DEFAULT_FIELD_LENGTH, null, "L");
         //field = new FieldInfo(this, ACTION_DOCUMENT_NAME, 30, null, null);
         field = new FieldInfo(this, ACTION_DOCUMENT_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
     }
     /**
     * Set up the key areas.

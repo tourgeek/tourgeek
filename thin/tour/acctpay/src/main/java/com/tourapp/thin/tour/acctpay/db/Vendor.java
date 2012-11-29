@@ -86,7 +86,6 @@ public class Vendor extends Company
         field = new FieldInfo(this, CHANGED_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, COMMENTS, 32000, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, PASSWORD, 16, null, null);
@@ -103,7 +102,6 @@ public class Vendor extends Company
         //field = new FieldInfo(this, MESSAGE_SERVER, 255, null, null);
         //field = new FieldInfo(this, WSDL_PATH, 255, null, null);
         field = new FieldInfo(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, VENDOR_STATUS_ID, 1, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, PAYMENT_CYCLE_ID, 1, null, null);

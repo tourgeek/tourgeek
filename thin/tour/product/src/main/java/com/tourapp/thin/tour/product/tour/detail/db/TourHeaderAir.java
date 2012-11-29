@@ -102,9 +102,7 @@ public class TourHeaderAir extends TourHeaderTransport
         field = new FieldInfo(this, ACK_DAYS, 2, null, null);
         field.setDataClass(Short.class);
         field = new FieldInfo(this, COMMENTS, 32000, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, NIGHTS, 2, null, new Short((short)1));
         field.setDataClass(Short.class);
         field = new FieldInfo(this, MEAL_1, 2, null, null);

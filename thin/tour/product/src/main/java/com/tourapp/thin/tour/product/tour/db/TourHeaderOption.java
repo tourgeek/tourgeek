@@ -71,7 +71,6 @@ public class TourHeaderOption extends FieldList
         field.setDataClass(Short.class);
         field = new FieldInfo(this, DESCRIPTION, 60, null, null);
         field = new FieldInfo(this, COMMENTS, 32000, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, ASK_FOR_ANSWER, 1, null, null);
         field.setDataClass(Boolean.class);
         field = new FieldInfo(this, ALWAYS_RESOLVE, 1, null, new Boolean(false));
@@ -100,9 +99,7 @@ public class TourHeaderOption extends FieldList
         field = new FieldInfo(this, TOUR_CLASS_ID, 4, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, INVOICE_TEXT, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
     }
     /**
     * Set up the key areas.

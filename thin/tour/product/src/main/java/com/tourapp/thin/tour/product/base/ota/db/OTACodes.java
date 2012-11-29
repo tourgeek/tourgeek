@@ -76,7 +76,6 @@ public class OTACodes extends FieldList
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
         field = new FieldInfo(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
     }
     /**
     * Set up the key areas.

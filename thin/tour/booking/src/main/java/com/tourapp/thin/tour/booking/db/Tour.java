@@ -76,7 +76,6 @@ public class Tour extends Job
         field.setDataClass(Date.class);
         field.setScale(Constants.DATE_ONLY);
         field = new FieldInfo(this, TOUR_STATUS_SUMMARY, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, TOUR_STATUS_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, MANUAL_TOUR_STATUS, 10, null, null);
@@ -163,7 +162,6 @@ public class Tour extends Job
         field = new FieldInfo(this, TOUR_EVENT_ID, 1, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
     }
     /**
     * Set up the key areas.

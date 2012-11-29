@@ -99,7 +99,6 @@ public class CreditCard extends BaseArPay
         field = new FieldInfo(this, CARD_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, CARD_NO, 20, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, EXPIRATION, 5, null, null);
         field = new FieldInfo(this, DATE_APPROVED, 25, null, null);
         field.setDataClass(Date.class);

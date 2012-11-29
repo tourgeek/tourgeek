@@ -76,7 +76,6 @@ public class BookingPax extends FieldList
         field = new FieldInfo(this, SHARE_BOOKING_PAX_ID, 6, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, COMMENTS, 9999, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, NAME_PREFIX, 4, null, null);
         field = new FieldInfo(this, FIRST_NAME, 20, null, null);
         field = new FieldInfo(this, MIDDLE_NAME, 20, null, null);

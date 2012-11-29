@@ -152,11 +152,8 @@ public class BookingHotel extends BookingDetail
         //field = new FieldInfo(this, STATUS_SUMMARY, 20, null, null);
         //field.setDataClass(Integer.class);
         field = new FieldInfo(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, ERROR_PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, PP_COST, 18, null, null);
         field.setDataClass(Double.class);
         field = new FieldInfo(this, PP_PRICE_LOCAL, 18, null, null);

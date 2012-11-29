@@ -73,7 +73,7 @@ public class BookingLandScreenRecord extends BookingDetailScreenRecord
         if (iFieldSeq == 2)
             field = new CurrencyField(this, PMC_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //if (iFieldSeq == 3)
-        //  field = new (this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new StringField(this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 4)
             field = new BooleanField(this, LAND_INFO_FLAG, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (iFieldSeq == 5)

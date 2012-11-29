@@ -70,7 +70,6 @@ public class Region extends Location
         field = new FieldInfo(this, CONTINENT_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, MEMO, 32000, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, PICTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Object.class);
     }

@@ -84,7 +84,6 @@ public class Country extends Location
         field = new FieldInfo(this, REGION_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, DESCRIPTION, 9999, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, PICTURE, 9999, null, null);
         field.setDataClass(Object.class);
     }

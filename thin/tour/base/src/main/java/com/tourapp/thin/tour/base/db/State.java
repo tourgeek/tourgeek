@@ -70,11 +70,8 @@ public class State extends Location
         field = new FieldInfo(this, COUNTRY_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, DESCRIPTION, 32000, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, PICTURE, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, POLYGON, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, GMT_OFFSET, 8, null, null);
         field.setDataClass(Float.class);
     }

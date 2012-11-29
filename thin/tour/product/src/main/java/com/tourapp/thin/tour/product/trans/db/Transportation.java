@@ -80,11 +80,8 @@ public class Transportation extends TransportProduct
         field = new FieldInfo(this, ACK_DAYS, 2, null, null);
         field.setDataClass(Short.class);
         field = new FieldInfo(this, COMMENTS, 32767, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, PROPERTIES, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, ITINERARY_DESC, Constants.DEFAULT_FIELD_LENGTH, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, DESC_SORT, 10, null, null);
         //field = new FieldInfo(this, PRODUCT_TYPE, 15, null, null);
         //field = new FieldInfo(this, PRODUCT_COST, 18, null, null);

@@ -86,7 +86,7 @@ public class BookingHotelScreenRecord extends BookingDetailScreenRecord
         if (iFieldSeq == 4)
             field = new CurrencyField(this, QUAD_COST_LOCAL, Constants.DEFAULT_FIELD_LENGTH, null, null);
         //if (iFieldSeq == 5)
-        //  field = new (this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
+        //  field = new StringField(this, MARKUP_FROM_LAST, Constants.DEFAULT_FIELD_LENGTH, null, null);
         if (field == null)
             field = super.setupField(iFieldSeq);
         return field;

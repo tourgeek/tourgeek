@@ -86,7 +86,6 @@ public class Employee extends Person
         field = new FieldInfo(this, CHANGED_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, COMMENTS, 9999, null, null);
-        field.setDataClass(Object.class);
         field = new FieldInfo(this, USER_ID, Constants.DEFAULT_FIELD_LENGTH, null, null);
         field.setDataClass(Integer.class);
         field = new FieldInfo(this, PASSWORD, 16, null, null);
