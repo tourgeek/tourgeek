@@ -8915,7 +8915,7 @@ converter.setupDefaultView(this.getNextLocation(ScreenConstants.NEXT_LOGICAL, Sc
 		<ScreenControlType/>
 	</ScreenIn>
 	<ScreenIn ID="671">
-		<LastChanged>2011-08-05T15:59:44</LastChanged>
+		<LastChanged>0000-08-25T02:59:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ScreenInProgName>CashBatchGridScreen</ScreenInProgName>
 		<ScreenOutNumber>0</ScreenOutNumber>

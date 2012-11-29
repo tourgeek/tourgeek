@@ -2325,7 +2325,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="260">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-17T01:00:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BundleList</ClassInfoClassName>
 		<ClassInfoID/>
@@ -3780,7 +3780,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="405">
-		<LastChanged>2012-04-07T08:35:09</LastChanged>
+		<LastChanged>2010-10-28T06:09:19</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>Hotel</ClassInfoClassName>
 		<ClassInfoID/>
@@ -4545,7 +4545,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="475">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-15T12:09:59</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LandInventoryGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -5445,7 +5445,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="553">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-05T15:59:38</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PaPaxSelectHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -6135,7 +6135,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="624">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ProfileScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -6465,7 +6465,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="647">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-21T18:05:38</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>RequestCannedButton</ClassInfoClassName>
 		<ClassInfoID/>
@@ -6885,7 +6885,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="682">
-		<LastChanged>2011-08-05T15:59:47</LastChanged>
+		<LastChanged>2011-08-05T15:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>TaxRateScreen</ClassInfoClassName>
 		<ClassInfoID/>
@@ -12045,7 +12045,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1239">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>CountNewClearedFieldHandler</ClassInfoClassName>
 		<ClassInfoID/>
@@ -19155,7 +19155,7 @@
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="1861">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
+		<LastChanged>2011-08-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>LocationSearchSession</ClassInfoClassName>
 		<ClassInfoID/>
@@ -49679,7 +49679,7 @@ static  {
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4813">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
+		<LastChanged>2011-08-05T15:05:04</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseXmlbeansMessageOut2010A</ClassInfoClassName>
 		<ClassInfoID/>

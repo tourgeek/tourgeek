@@ -57657,7 +57657,7 @@ this.getScreenRecord().getField(ProductScreenRecord.REMOTE_QUERY_ENABLED).setupD
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4253">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2011-08-05T15:00:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>30</Sequence>
 		<MethodName>addScreenRecord</MethodName>

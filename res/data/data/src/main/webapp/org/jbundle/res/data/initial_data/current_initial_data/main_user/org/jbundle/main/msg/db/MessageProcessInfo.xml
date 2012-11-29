@@ -1154,7 +1154,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="74">
-		<LastChanged>2012-09-21T18:05:38</LastChanged>
+		<LastChanged>2012-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Availability Inbound Response</Description>
@@ -1362,7 +1362,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="88">
-		<LastChanged>2012-09-21T18:05:38</LastChanged>
+		<LastChanged>2012-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Cruise Booking Outbound Response</Description>
@@ -2512,7 +2512,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="159">
-		<LastChanged>2012-09-21T18:05:39</LastChanged>
+		<LastChanged>2011-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Booking Change Inbound Request</Description>
@@ -2944,7 +2944,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="186">
-		<LastChanged>2012-09-21T18:05:39</LastChanged>
+		<LastChanged>2012-09-21T18:07:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Product Update Request In Error Processor</Description>
@@ -3232,7 +3232,7 @@ ota.safe=false
 		<InitialMessageStatusID/>
 	</MessageProcessInfo>
 	<MessageProcessInfo ID="204">
-		<LastChanged>2012-09-21T18:05:39</LastChanged>
+		<LastChanged>2012-09-21T18:07:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Code/>
 		<Description>Air Information Inbound Response</Description>

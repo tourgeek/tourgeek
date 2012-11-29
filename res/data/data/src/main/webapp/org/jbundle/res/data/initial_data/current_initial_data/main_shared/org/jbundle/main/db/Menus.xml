@@ -1312,7 +1312,7 @@
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="721">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-28T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Credit Card menu</Name>
 		<ParentFolderID>427</ParentFolderID>
@@ -2978,21 +2978,21 @@
 		<Params/>
 		<IconResource/>
 		<Keywords/>
-		<XmlData><![CDATA[<center><h2>Welcome to tourbean.com's download center</h2></center>
+		<XmlData type="XML"><center><h2>Welcome to tourbean.com's download center</h2></center>
 <center>Where you can get some free Java software and an (optional) e-nuggie.<br/><hr/></center>
 <items columns="3">
 <td align="left" valign="top">
     <hr/>
     <a href="${link}">
-        <img src="${icon}" alt="${menutitle}" width="24" height="24" border="0"  align="center" />
+        <img align="center" alt="${menutitle}" border="0" height="24" src="${icon}" width="24"/>
     </a>
     <a href="${link}">
         ${menutitle}
     </a>
-<br/>${javalogo}<img src="images/buttons/java.gif" width="16" height="15" border="0" />&#160;<span style="font-size: 10pt">${menudesc}</span>
+<br/>${javalogo}<img border="0" height="15" src="images/buttons/java.gif" width="16"/> <span style="font-size: 10pt">${menudesc}</span>
 </td>
 </items>
-Thanks for visiting!]]></XmlData>
+Thanks for visiting!</XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1184">
@@ -3162,12 +3162,12 @@ Thanks for visiting!]]></XmlData>
 <td align="left" valign="top">
     <hr/>
     <a href="{link}">
-        <img align="center" alt="{menutitle}" border="0" height="24" src="{icon}" width="24" />
+        <img align="center" alt="{menutitle}" border="0" height="24" src="{icon}" width="24"/>
     </a>
     <a href="{link}">
         {menutitle}
     </a>
-<br/><javalogo><img border="0" height="16" src="images/buttons/Java.gif" width="16" /> </javalogo><span style="font-size: 10pt">{menudesc}</span>
+<br/><javalogo><img border="0" height="16" src="images/buttons/Java.gif" width="16"/> </javalogo><span style="font-size: 10pt">{menudesc}</span>
 </td>
 </items></XmlData>
 		<MenusHelp/>
@@ -3521,7 +3521,7 @@ Thanks for visiting!]]></XmlData>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1219">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2011-08-05T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Control File</Name>
 		<ParentFolderID>1,201</ParentFolderID>
@@ -5799,7 +5799,7 @@ You need Java to run this program.<br/>
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1421">
-		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<LastChanged>2010-10-17T07:30:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>developer.java.sun.com/developer/TechTips/</Name>
 		<ParentFolderID>1,416</ParentFolderID>
@@ -9490,7 +9490,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1692">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2010-10-17T07:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Project calendar</Name>
 		<ParentFolderID>1,689</ParentFolderID>
@@ -11056,7 +11056,7 @@ Setting up and running your own Tour Operator demo site is quick and easy.
 		<Comment type="XML"><html>
 <body>
 <a href="?menu=quickintro">
-<img height="82" src="com/tourapp/res/images/com/tourgeek/youtube-link.gif" width="138" />
+<img height="82" src="com/tourapp/res/images/com/tourgeek/youtube-link.gif" width="138"/>
 </a><br/>
 A tourgeek.com Outbound Tour Operator software demonstration in under two minutes!
 </body>
@@ -11263,7 +11263,7 @@ System highlights and the full user's manual.
 		<MenusHelp/>
 	</Menus>
 	<Menus ID="1858">
-		<LastChanged>2010-10-17T07:30:29</LastChanged>
+		<LastChanged>2010-10-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Main control</Name>
 		<ParentFolderID>1,185</ParentFolderID>
@@ -12417,7 +12417,7 @@ please click the following link:<br/>
 	<Menus ID="1928">
 		<LastChanged>2010-11-15T10:22:36</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>jbundle.org - Open Source Application Framework Software</Name>
+		<Name>jbundle.org - Open Source Application Framework So</Name>
 		<ParentFolderID>1,745</ParentFolderID>
 		<Sequence>79</Sequence>
 		<Comment/>
