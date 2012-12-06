@@ -90,7 +90,8 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     };
     
     public final String STATIC_WEB_FILES = "staticWebFiles";
-    public final String DEFAULT_STATIC_WEB_FILES = "file:/space/web/";
+    public final String DEFAULT_STATIC_WEB_PATH = "/web/";
+    public final String DEFAULT_STATIC_WEB_FILES = "file:" + DEFAULT_STATIC_WEB_PATH;
 
     /**
      * Make sure the dependent services are up, then call startupService.
@@ -139,7 +140,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                 if (servlet == null)    // Fallback to OSGiServlet
                     servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 httpContext = new FileHttpContext(context.getBundle());
-                String path = "/space/web/";
+                String path = DEFAULT_STATIC_WEB_PATH;
                 properties.put(DefaultServlet.BASE_PATH, path);
             }
             else if (DEMO.equalsIgnoreCase(alias))
@@ -173,7 +174,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             else if (WEBAPP_WEBDAV.equalsIgnoreCase(alias))
             {
                 servlet = new org.jbundle.util.webapp.webdav.WebdavServlet();
-                properties.put(WebappServlet.BASE_PATH, "/space/web/jbundle/webapp/webdav");
+                properties.put(WebappServlet.BASE_PATH, DEFAULT_STATIC_WEB_PATH + "jbundle/webapp/webdav");
                 properties.put("readonly", "true"); // false
                 properties.put("listings", "true");
             }
