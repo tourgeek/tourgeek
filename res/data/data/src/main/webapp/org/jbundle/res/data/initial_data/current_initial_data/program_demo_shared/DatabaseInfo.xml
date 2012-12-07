@@ -7,7 +7,7 @@
 		<Version>1.0.0</Version>
 		<StartID/>
 		<EndID>16,777,215</EndID>
-		<BaseDatabase>program</BaseDatabase>
+		<BaseDatabase>program_tour</BaseDatabase>
 		<Properties/>
 	</DatabaseInfo_program_demo>
 </file>
