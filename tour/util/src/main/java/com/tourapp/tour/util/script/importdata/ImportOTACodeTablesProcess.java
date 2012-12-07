@@ -23,11 +23,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
 import com.tourapp.tour.product.base.ota.db.*;
-import org.jibx.schema.org.opentravel._2010B.codetable.*;
+import org.jibx.schema.org.opentravel._2012A.codetable.*;
 import javax.xml.bind.*;
 import java.io.*;
 import javax.xml.datatype.*;
-import org.jibx.schema.org.opentravel._2010B.base.*;
+import org.jibx.schema.org.opentravel._2012A.base.*;
 import org.jibx.runtime.*;
 import org.joda.time.*;
 
