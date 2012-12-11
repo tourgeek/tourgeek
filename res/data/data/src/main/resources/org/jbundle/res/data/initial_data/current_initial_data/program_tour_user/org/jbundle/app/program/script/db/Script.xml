@@ -3782,7 +3782,7 @@ database=program
 #Wed Oct 19 17:18:44 PDT 2011
 programSharedDBName=program_base
 mainSharedDBName=main_base
-dbSuffix=_base
+systemname=_base
 ]]></Properties>
 		<Command/>
 		<Source/>
@@ -3802,7 +3802,7 @@ programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
 sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data
-dbSuffix=_app
+systemname=_app
 ]]></Properties>
 		<Command/>
 		<Source/>
@@ -3820,7 +3820,7 @@ dbSuffix=_app
 #Wed Oct 26 11:17:05 PDT 2011
 programSharedDBName=program_test
 sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/webapp/org/jbundle/res/data
-dbSuffix=_test
+systemname=_test
 ]]></Properties>
 		<Command/>
 		<Source/>

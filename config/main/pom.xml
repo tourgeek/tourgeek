@@ -132,7 +132,7 @@
               <!-- argument>connectionType=proxy</argument>
 		<argument>remotehost=${jbundle.server}</argument>
 		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
-		<argument>jmsserver=false</argument>
+		<argument>messageserver=false</argument>
 		<argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
 		<argument>local=Jdbc</argument>
 		<argument>remote=Jdbc</argument>
@@ -218,7 +218,7 @@
 		            <argument>table=${jbundle.db.table}</argument>
 		            <argument>background=backgrounds/worldmapalpha.gif</argument>
 		            <argument>backgroundcolor=#EEEEFF</argument>
-		            <argument>jmsserver=false</argument>
+		            <argument>messageserver=false</argument>
 		        </arguments>
 	        </configuration>
 	      </plugin>
@@ -261,7 +261,7 @@
 		            <argument>local=${jbundle.db.local}</argument>
 		            <argument>remote=${jbundle.db.remote}</argument>
 		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>dbSuffix=_base</argument>
+		            <argument>systemname=_base</argument>
 		            <argument>programSharedDBName=program_base</argument>
 		            <argument>mainSharedDBName=main_base</argument>
 		            <argument>mainUserDBName=main</argument>
@@ -319,7 +319,7 @@
 		            <argument>local=${jbundle.db.local}</argument>
 		            <argument>remote=${jbundle.db.remote}</argument>
 		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>dbSuffix=_base</argument>
+		            <argument>systemname=_base</argument>
 		            <argument>mainUserDBName=main</argument>
 		            <argument>appUserDBName=app</argument>
 		            <argument>programSharedDBName=program_app</argument>
@@ -375,7 +375,7 @@
 		            <argument>local=${jbundle.db.local}</argument>
 		            <argument>remote=${jbundle.db.remote}</argument>
 		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>dbSuffix=_base</argument>
+		            <argument>systemname=_base</argument>
 		            <argument>mainUserDBName=main</argument>
 		            <argument>testUserDBName=test</argument>
 		            <argument>programSharedDBName=program_test</argument>

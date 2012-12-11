@@ -36,7 +36,7 @@
 	         -->
 	            <argument>-Djava.rmi.server.codebase=${jbundle.rmicodebase}</argument>
 	            <argument>-Djava.security.policy=${jbundle.policyfile}</argument>
-	            <argument>jmsserver=true</argument>
+	            <argument>messageserver=true</argument>
 	            <argument>appname=org.jbundle.main.msg.app.MessageServerActivator</argument>
 	            <argument>provider=${jbundle.server}</argument>
 	        </arguments>
