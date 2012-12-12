@@ -56,6 +56,13 @@ public class HotelAvail extends VirtualRecord
         super.init(screen);
     }
     /**
+     * Get the table name.
+     */
+    public String getTableNames(boolean bAddQuotes)
+    {
+        return (m_tableName == null) ? Record.formatTableNames(HOTEL_AVAIL_FILE, bAddQuotes) : super.getTableNames(bAddQuotes);
+    }
+    /**
      * Get the Database Name.
      */
     public String getDatabaseName()

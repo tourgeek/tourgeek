@@ -1410,14 +1410,14 @@
 	<ClassProject ID="1048639">
 		<LastChanged>2012-06-09T12:39:15</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>_2011B</Name>
+		<Name>_2012A</Name>
 		<ParentFolderID>1,048,638</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>_2011B services</Description>
+		<Description>_2012A services</Description>
 		<SystemClasses/>
-		<PackageName>._2011B</PackageName>
+		<PackageName>._2012A</PackageName>
 		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath/>
@@ -1437,7 +1437,7 @@
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>OTA 2011B ping service</Description>
+		<Description>OTA 2012A ping service</Description>
 		<SystemClasses/>
 		<PackageName>.ping</PackageName>
 		<ProjectPath/>

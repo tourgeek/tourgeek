@@ -39168,7 +39168,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.codetable</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.codetable</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -52863,7 +52863,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2010B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62851,7 +62851,7 @@ static  {
 	<ClassFields ID="5846">
 		<LastChanged>2012-05-29T11:47:05</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -62866,7 +62866,7 @@ static  {
 	<ClassFields ID="5847">
 		<LastChanged>2012-05-29T11:47:11</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -62881,9 +62881,9 @@ static  {
 	<ClassFields ID="5848">
 		<LastChanged>2012-03-25T13:36:38</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62896,9 +62896,9 @@ static  {
 	<ClassFields ID="5850">
 		<LastChanged>2012-05-29T14:43:47</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62911,9 +62911,9 @@ static  {
 	<ClassFields ID="5851">
 		<LastChanged>2012-05-29T14:43:44</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62926,7 +62926,7 @@ static  {
 	<ClassFields ID="5852">
 		<LastChanged>2012-05-29T14:38:19</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -62941,9 +62941,9 @@ static  {
 	<ClassFields ID="5854">
 		<LastChanged>2012-05-29T14:39:34</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62956,7 +62956,7 @@ static  {
 	<ClassFields ID="5855">
 		<LastChanged>2012-05-29T14:39:44</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -62971,7 +62971,7 @@ static  {
 	<ClassFields ID="5856">
 		<LastChanged>2012-05-29T14:39:59</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -62986,7 +62986,7 @@ static  {
 	<ClassFields ID="5857">
 		<LastChanged>2012-05-29T14:40:28</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>BaseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>BaseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.joda.time</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63001,9 +63001,9 @@ static  {
 	<ClassFields ID="5858">
 		<LastChanged>2012-05-29T14:41:57</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63016,9 +63016,9 @@ static  {
 	<ClassFields ID="5859">
 		<LastChanged>2012-05-29T14:42:37</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63031,7 +63031,7 @@ static  {
 	<ClassFields ID="5860">
 		<LastChanged>2012-05-29T14:42:49</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63046,7 +63046,7 @@ static  {
 	<ClassFields ID="5861">
 		<LastChanged>2012-05-29T14:43:02</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63061,7 +63061,7 @@ static  {
 	<ClassFields ID="5862">
 		<LastChanged>2012-05-29T14:43:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63076,7 +63076,7 @@ static  {
 	<ClassFields ID="5863">
 		<LastChanged>2012-05-29T14:44:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63091,7 +63091,7 @@ static  {
 	<ClassFields ID="5864">
 		<LastChanged>2012-05-29T14:44:10</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingRequestJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingRequestJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63106,9 +63106,9 @@ static  {
 	<ClassFields ID="5865">
 		<LastChanged>2012-05-29T14:46:40</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63121,9 +63121,9 @@ static  {
 	<ClassFields ID="5866">
 		<LastChanged>2012-05-29T14:46:37</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63136,7 +63136,7 @@ static  {
 	<ClassFields ID="5867">
 		<LastChanged>2012-05-29T14:46:21</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63151,7 +63151,7 @@ static  {
 	<ClassFields ID="5868">
 		<LastChanged>2012-05-29T14:46:56</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63166,7 +63166,7 @@ static  {
 	<ClassFields ID="5869">
 		<LastChanged>2012-05-29T14:47:00</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63181,9 +63181,9 @@ static  {
 	<ClassFields ID="5870">
 		<LastChanged>2012-05-29T14:49:14</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63196,9 +63196,9 @@ static  {
 	<ClassFields ID="5871">
 		<LastChanged>2012-05-29T14:49:19</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63211,7 +63211,7 @@ static  {
 	<ClassFields ID="5872">
 		<LastChanged>2012-05-29T14:49:32</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63226,7 +63226,7 @@ static  {
 	<ClassFields ID="5873">
 		<LastChanged>2012-05-29T14:49:43</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63241,7 +63241,7 @@ static  {
 	<ClassFields ID="5874">
 		<LastChanged>2012-05-29T14:50:02</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseProductResponse</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63256,7 +63256,7 @@ static  {
 	<ClassFields ID="5875">
 		<LastChanged>2012-05-29T14:50:15</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingResponseJibxMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>PingResponseJibxMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>PingRequestMessageInProcessor</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63271,7 +63271,7 @@ static  {
 	<ClassFields ID="5876">
 		<LastChanged>2012-05-29T14:51:39</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63286,9 +63286,9 @@ static  {
 	<ClassFields ID="5877">
 		<LastChanged>2012-05-29T14:52:29</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.hotel</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.hotel</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63301,9 +63301,9 @@ static  {
 	<ClassFields ID="5879">
 		<LastChanged>2012-05-29T14:53:49</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63316,9 +63316,9 @@ static  {
 	<ClassFields ID="5880">
 		<LastChanged>2012-05-29T14:54:55</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base.hotelres</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base.hotelres</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63331,7 +63331,7 @@ static  {
 	<ClassFields ID="5881">
 		<LastChanged>2012-05-29T14:55:13</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ProductMessageData</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63346,7 +63346,7 @@ static  {
 	<ClassFields ID="5882">
 		<LastChanged>2012-05-29T14:55:18</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BookingDetail</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63361,7 +63361,7 @@ static  {
 	<ClassFields ID="5883">
 		<LastChanged>2012-05-29T14:55:24</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>Product</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63376,7 +63376,7 @@ static  {
 	<ClassFields ID="5884">
 		<LastChanged>2012-05-29T14:55:34</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>HotelRateRequest</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63391,7 +63391,7 @@ static  {
 	<ClassFields ID="5885">
 		<LastChanged>2012-05-29T14:56:26</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63406,7 +63406,7 @@ static  {
 	<ClassFields ID="5887">
 		<LastChanged>2012-05-29T14:56:37</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BookingDetail</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63421,7 +63421,7 @@ static  {
 	<ClassFields ID="5888">
 		<LastChanged>2012-05-29T14:56:42</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>Product</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63436,7 +63436,7 @@ static  {
 	<ClassFields ID="5889">
 		<LastChanged>2012-05-29T14:56:46</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>HotelRateRequest</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63451,9 +63451,9 @@ static  {
 	<ClassFields ID="5890">
 		<LastChanged>2012-05-29T14:56:55</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.hotel</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.hotel</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63466,9 +63466,9 @@ static  {
 	<ClassFields ID="5892">
 		<LastChanged>2012-05-29T14:57:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63481,9 +63481,9 @@ static  {
 	<ClassFields ID="5893">
 		<LastChanged>2012-05-29T14:57:11</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base.hotelres</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base.hotelres</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63496,7 +63496,7 @@ static  {
 	<ClassFields ID="5894">
 		<LastChanged>2012-05-29T14:57:32</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63511,7 +63511,7 @@ static  {
 	<ClassFields ID="5895">
 		<LastChanged>2012-05-29T14:57:37</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>HotelMessageData</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63526,7 +63526,7 @@ static  {
 	<ClassFields ID="5896">
 		<LastChanged>2012-05-29T14:57:53</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>TrxMessageHeader</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63541,7 +63541,7 @@ static  {
 	<ClassFields ID="5897">
 		<LastChanged>2012-05-29T14:58:04</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateRequestSOAPMessageOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ProductRequest</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63556,7 +63556,7 @@ static  {
 	<ClassFields ID="5898">
 		<LastChanged>2012-05-29T15:00:20</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageIn</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63571,7 +63571,7 @@ static  {
 	<ClassFields ID="5899">
 		<LastChanged>2012-05-29T15:00:26</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>HotelRateRequest</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63586,7 +63586,7 @@ static  {
 	<ClassFields ID="5900">
 		<LastChanged>2012-05-29T15:00:29</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>Product</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63601,7 +63601,7 @@ static  {
 	<ClassFields ID="5901">
 		<LastChanged>2012-05-29T15:00:33</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BookingDetail</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63616,9 +63616,9 @@ static  {
 	<ClassFields ID="5903">
 		<LastChanged>2012-05-29T15:00:45</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.hotel</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.hotel</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63631,7 +63631,7 @@ static  {
 	<ClassFields ID="5906">
 		<LastChanged>2012-05-29T15:01:14</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ProductRateResponse</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63646,7 +63646,7 @@ static  {
 	<ClassFields ID="5907">
 		<LastChanged>2012-05-29T15:01:26</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ProductResponseMessageData</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63661,7 +63661,7 @@ static  {
 	<ClassFields ID="5908">
 		<LastChanged>2012-05-29T15:01:30</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyIn2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>MessageDataDesc</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63676,7 +63676,7 @@ static  {
 	<ClassFields ID="5909">
 		<LastChanged>2012-05-29T15:02:53</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ExternalTrxMessageOut</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63691,9 +63691,9 @@ static  {
 	<ClassFields ID="5910">
 		<LastChanged>2012-05-29T15:03:05</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.hotel</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.hotel</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63706,9 +63706,9 @@ static  {
 	<ClassFields ID="5911">
 		<LastChanged>2012-05-29T15:03:11</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63721,9 +63721,9 @@ static  {
 	<ClassFields ID="5912">
 		<LastChanged>2012-05-29T15:03:36</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.base.hotelres</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.base.hotelres</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63736,7 +63736,7 @@ static  {
 	<ClassFields ID="5913">
 		<LastChanged>2012-05-29T15:04:01</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>HotelRateResponse</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63751,7 +63751,7 @@ static  {
 	<ClassFields ID="5914">
 		<LastChanged>2012-05-29T15:04:06</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>TrxMessageHeader</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63766,7 +63766,7 @@ static  {
 	<ClassFields ID="5915">
 		<LastChanged>2012-05-29T15:04:30</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.joda.time</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63781,7 +63781,7 @@ static  {
 	<ClassFields ID="5916">
 		<LastChanged>2012-05-29T15:04:50</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>ProductResponseMessageData</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63796,7 +63796,7 @@ static  {
 	<ClassFields ID="5917">
 		<LastChanged>2012-05-29T15:05:09</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseMessage</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63811,7 +63811,7 @@ static  {
 	<ClassFields ID="5918">
 		<LastChanged>2012-05-29T15:05:21</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseProductResponse</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63826,7 +63826,7 @@ static  {
 	<ClassFields ID="5919">
 		<LastChanged>2012-05-29T15:05:26</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2011B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012A</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BookingDetail</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63871,9 +63871,9 @@ static  {
 	<ClassFields ID="5922">
 		<LastChanged>2012-06-09T12:47:50</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingService2011BImpl</ClassInfoClassName>
+		<ClassInfoClassName>PingService2012AImpl</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63886,9 +63886,9 @@ static  {
 	<ClassFields ID="5923">
 		<LastChanged>2012-06-09T12:47:55</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingService2011BImpl</ClassInfoClassName>
+		<ClassInfoClassName>PingService2012AImpl</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2011B.ping.ws</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel._2012A.ping.ws</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>

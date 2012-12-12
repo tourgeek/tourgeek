@@ -53,349 +53,32 @@
 		</plugins>
 	</build>
 
+  <properties>
+        <projectname>tour</projectname>
+  </properties>
+
   <profiles>
     <profile>
-      <id>run</id>
+      <id>dev</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>exec</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-            <mainClass>org.jbundle.Main</mainClass>
-            <arguments>
-              <argument>menu=Switch</argument>
-              <argument>background=backgrounds/worldmapalpha.gif</argument>
-              <argument>backgroundcolor=#EEEEFF</argument>
-              <argument>connectionType=proxy</argument>
-              <argument>mainSharedDBName=main_base</argument>
-		<argument>remotehost=${jbundle.server}</argument>
-		<argument>codebase=${jbundle.codebase}</argument>
-		<argument>local=${jbundle.db.local}</argument>
-		<argument>remote=${jbundle.db.remote}</argument>
-		<argument>table=${jbundle.db.table}</argument>
-            </arguments>
-          <systemProperties>
-            <systemProperty>
-              <key>myproperty</key>
-              <value>myvalue</value>
-            </systemProperty>
-          </systemProperties>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-	  <!-- dependencies>
-		<dependency>
-		  <groupId>javax</groupId>
-		  <artifactId>j2ee</artifactId>
-		  <version>${j2eeVersion}</version>
-		  <scope>system</scope>
-		  <systemPath>${j2eePath}</systemPath>
-		</dependency>
-	  </dependencies -->
-    </profile>
-    <profile>
-      <id>jdbc</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>exec</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-            <mainClass>org.jbundle.Main</mainClass>
-            <arguments>
-              <argument>background=backgrounds/worldmapalpha.gif</argument>
-              <argument>backgroundcolor=#EEEEFF</argument>
-              <!-- argument>connectionType=proxy</argument>
-		<argument>remotehost=${jbundle.server}</argument>
-		<argument>codebase=${jbundle.codebase}</argument  **standalone** -->
-		<argument>messageserver=false</argument>
-		<argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
-		<argument>local=Jdbc</argument>
-		<argument>remote=Jdbc</argument>
-		<argument>table=Jdbc</argument>
-            </arguments>
-          <systemProperties>
-            <systemProperty>
-              <key>myproperty</key>
-              <value>myvalue</value>
-            </systemProperty>
-          </systemProperties>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-    </profile>
-    <profile>
-      <id>tour</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>exec</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-            <mainClass>org.jbundle.Main</mainClass>
-            <arguments>
-		            <argument>org.jbundle.Main</argument>
-		            <argument>background=backgrounds/worldmapalpha.gif</argument>
-		            <argument>backgroundcolor=#EEEEFF</argument>
-		            <argument>remotehost=${jbundle.server}</argument>
-		            <argument>codebase=${jbundle.codebase}</argument>
-		            <argument>local=${jbundle.db.local}</argument>
-		            <argument>remote=${jbundle.db.remote}</argument>
-		            <argument>table=${jbundle.db.table}</argument>
-		        </arguments>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-    </profile>
-    <profile>
-      <id>tourjdbc</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-	  <properties>
-	    <jbundle.db.local>Jdbc</jbundle.db.local>
-	    <jbundle.db.remote>Jdbc</jbundle.db.remote>
-	    <jbundle.db.table>Jdbc</jbundle.db.table>
-	  </properties>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>java</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-		        <executable>java</executable>
-			    <arguments>
-		        	<argument>-classpath</argument>\
-		        	<classpath />
-		            <argument>org.jbundle.Main</argument>
-		            <argument>local=${jbundle.db.local}</argument>
-		            <argument>remote=${jbundle.db.remote}</argument>
-		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>background=backgrounds/worldmapalpha.gif</argument>
-		            <argument>backgroundcolor=#EEEEFF</argument>
-		            <argument>messageserver=false</argument>
-		        </arguments>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-    </profile>
-    <profile>
-      <id>base</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-	  <properties>
-	    <jbundle.db.local>Jdbc</jbundle.db.local>
-	    <jbundle.db.remote>Jdbc</jbundle.db.remote>
-	    <jbundle.db.table>Jdbc</jbundle.db.table>
-	  </properties>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>java</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-	          <executable>java</executable>
-	          <arguments>
-		        	<argument>-classpath</argument>
-		        	<classpath />
-		            <argument>org.jbundle.Main</argument>
-		            <argument>background=backgrounds/worldmapalpha.gif</argument>
-		            <argument>backgroundcolor=#CCFFCC</argument>
-		            <argument>remotehost=${jbundle.server}</argument>
-		            <argument>codebase=${jbundle.codebase}</argument>
-		            <argument>local=${jbundle.db.local}</argument>
-		            <argument>remote=${jbundle.db.remote}</argument>
-		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>systemname=_base</argument>
-		            <argument>programSharedDBName=program_base</argument>
-		            <argument>mainSharedDBName=main_base</argument>
-		            <argument>mainUserDBName=main</argument>
-		        </arguments>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-	  <!-- dependencies>
-		<dependency>
-		  <groupId>javax</groupId>
-		  <artifactId>j2ee</artifactId>
-		  <version>${j2eeVersion}</version>
-		  <scope>system</scope>
-		  <systemPath>${j2eePath}</systemPath>
-		</dependency>
-	  </dependencies -->
+      <properties>
+          <menu>Switch</menu>
+      </properties>
     </profile>
     <profile>
       <id>app</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-	  <properties>
-	    <jbundle.db.local>Jdbc</jbundle.db.local>
-	    <jbundle.db.remote>Jdbc</jbundle.db.remote>
-	    <jbundle.db.table>Jdbc</jbundle.db.table>
-	  </properties>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>java</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-	          <executable>java</executable>
-	          <arguments>
-		            <argument>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</argument>
-		            <argument>-Xms256m</argument>
-		            <argument>-Xmx512m</argument>
-		        	<argument>-classpath</argument>
-		        	<classpath />
-		            <argument>org.jbundle.Main</argument>
-		            <argument>background=backgrounds/worldmapalpha.gif</argument>
-		            <argument>backgroundcolor=#CCFFCC</argument>
-		            <argument>remotehost=${jbundle.server}</argument>
-		            <argument>codebase=${jbundle.codebase}</argument>
-		            <argument>local=${jbundle.db.local}</argument>
-		            <argument>remote=${jbundle.db.remote}</argument>
-		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>systemname=_base</argument>
-		            <argument>mainUserDBName=main</argument>
-		            <argument>appUserDBName=app</argument>
-		            <argument>programSharedDBName=program_app</argument>
-		            <argument>programUserDBName=program_app</argument>
-		        </arguments>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-	  <!-- dependencies>
-		<dependency>
-		  <groupId>javax</groupId>
-		  <artifactId>j2ee</artifactId>
-		  <version>1.4</version>
-		  <scope>system</scope>
-		  <systemPath>${j2eePath}</systemPath>
-		</dependency>
-	  </dependencies -->
+      <properties>
+          <systemname>app</systemname>
+      </properties>
     </profile>
     <profile>
       <id>test</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-	  <properties>
-	    <jbundle.db.local>Jdbc</jbundle.db.local>
-	    <jbundle.db.remote>Jdbc</jbundle.db.remote>
-	    <jbundle.db.table>Jdbc</jbundle.db.table>
-	  </properties>
-	  <build>
-	    <plugins>      
-	      <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>exec-maven-plugin</artifactId>
-	        <executions>
-	          <execution>
-	          	<phase>run</phase>
-	            <goals>
-	              <goal>java</goal>
-	            </goals>
-	          </execution>
-	        </executions>
-	        <configuration>
-	          <executable>java</executable>
-	          <arguments>
-		        	<argument>-classpath</argument>
-		        	<classpath />
-		            <argument>org.jbundle.Main</argument>
-		            <argument>background=backgrounds/worldmapalpha.gif</argument>
-		            <argument>backgroundcolor=#CCFFCC</argument>
-		            <argument>remotehost=${jbundle.server}</argument>
-		            <argument>codebase=${jbundle.codebase}</argument>
-		            <argument>local=${jbundle.db.local}</argument>
-		            <argument>remote=${jbundle.db.remote}</argument>
-		            <argument>table=${jbundle.db.table}</argument>
-		            <argument>systemname=_base</argument>
-		            <argument>mainUserDBName=main</argument>
-		            <argument>testUserDBName=test</argument>
-		            <argument>programSharedDBName=program_test</argument>
-		            <argument>programUserDBName=program_test</argument>
-		        </arguments>
-	        </configuration>
-	      </plugin>
-	    </plugins>
-	  </build>
-	  <dependencies>
-		<!-- dependency>
-		  <groupId>javax</groupId>
-		  <artifactId>j2ee</artifactId>
-		  <version>${j2eeVersion}</version> 
-		  <scope>system</scope>
-		  <systemPath>${j2eePath}</systemPath>
-		</dependency -->
-	  </dependencies>
+      <properties>
+          <systemname>test</systemname>
+      </properties>
     </profile>
-
     <profile>
       <id>import</id>
       <activation>
@@ -447,11 +130,70 @@
   
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.config</groupId>
-      <artifactId>tourapp-config-dep-all</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+        <groupId>com.tourapp.config</groupId>
+        <artifactId>tourapp-config-dep-res</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+        <type>pom</type>
+    </dependency>
+    <!-- dependency>
+        <groupId>com.tourapp.config</groupId>
+        <artifactId>tourapp-config-dep-thin</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+        <type>pom</type>
+    </dependency -->
+    <!-- dependency>
+        <groupId>com.tourapp.config</groupId>
+        <artifactId>tourapp-config-dep-tour</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+        <type>pom</type>
+    </dependency -->
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.data.test_data</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.data.site_data</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.data.initial_data</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+        <groupId>com.tourapp.res</groupId>
+        <artifactId>com.tourapp.res.docs</artifactId>
+        <version>0.8.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.config.dep</groupId>
+      <artifactId>jbundle-config-dep-all</artifactId>
+      <version>${jbundleVersionRange}</version>
       <type>pom</type>
     </dependency>
+    <dependency>
+      <groupId>org.jbundle.base.screen</groupId>
+      <artifactId>org.jbundle.base.screen.control.xslservlet</artifactId>
+      <version>${jbundleVersionRange}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.contact</groupId>
+      <artifactId>org.jbundle.app.contact.db</artifactId>
+      <version>${jbundleAppContactVersionRange}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.contact</groupId>
+      <artifactId>org.jbundle.app.contact.screen</artifactId>
+      <version>${jbundleAppContactVersionRange}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.app.contact</groupId>
+      <artifactId>org.jbundle.res.app.contact</artifactId>
+      <version>${jbundleAppContactVersionRange}</version>
+    </dependency>
+
     <dependency>
       <groupId>org.jbundle.app.dance</groupId>
       <artifactId>org.jbundle.app.dance</artifactId>

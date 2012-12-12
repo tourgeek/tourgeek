@@ -88,6 +88,6 @@
       <artifactId>org.jbundle.thin.app.test.manual</artifactId>
       <version>${jbundleVersionRange}</version>
     </dependency>
-    </dependencies>
+  </dependencies>
   
 </project>
