@@ -54,7 +54,7 @@
 	</build>
 
   <properties>
-        <projectname>tour</projectname>
+        <projectName>tour</projectName>
   </properties>
 
   <profiles>
@@ -179,17 +179,17 @@
       <version>${jbundleVersionRange}</version>
     </dependency>
     <dependency>
-      <groupId>org.jbundle.app.contact</groupId>
+      <groupId>org.jbundle.app.office</groupId>
       <artifactId>org.jbundle.app.contact.db</artifactId>
       <version>${jbundleAppContactVersionRange}</version>
     </dependency>
     <dependency>
-      <groupId>org.jbundle.app.contact</groupId>
+      <groupId>org.jbundle.app.office</groupId>
       <artifactId>org.jbundle.app.contact.screen</artifactId>
       <version>${jbundleAppContactVersionRange}</version>
     </dependency>
     <dependency>
-      <groupId>org.jbundle.app.contact</groupId>
+      <groupId>org.jbundle.app.office</groupId>
       <artifactId>org.jbundle.res.app.contact</artifactId>
       <version>${jbundleAppContactVersionRange}</version>
     </dependency>

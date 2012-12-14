@@ -2634,19 +2634,6 @@ Need Social Security Number for 1099 printing
 		<DisplayClass/>
 		<MaintClass/>
 	</FileHdr>
-	<FileHdr ID="192">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
-		<Deleted>N</Deleted>
-		<FileName>Contact</FileName>
-		<FileDesc>Contact List</FileDesc>
-		<FileMainFilename>Contact</FileMainFilename>
-		<Type>REMOTE | USER_DATA</Type>
-		<FileNotes/>
-		<DatabaseName>app</DatabaseName>
-		<FileRecCalled>Contact</FileRecCalled>
-		<DisplayClass>ContactGridScreen</DisplayClass>
-		<MaintClass>ContactScreen</MaintClass>
-	</FileHdr>
 	<FileHdr ID="194">
 		<LastChanged>2011-08-05T15:59:52</LastChanged>
 		<Deleted>N</Deleted>
@@ -3397,19 +3384,6 @@ Need Social Security Number for 1099 printing
 		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
 		<FileNotes/>
 		<DatabaseName>product</DatabaseName>
-		<FileRecCalled/>
-		<DisplayClass/>
-		<MaintClass/>
-	</FileHdr>
-	<FileHdr ID="300">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
-		<Deleted>N</Deleted>
-		<FileName>ContactCategory</FileName>
-		<FileDesc>Contact category</FileDesc>
-		<FileMainFilename/>
-		<Type>TABLE | SHARED_DATA | LOCALIZABLE</Type>
-		<FileNotes/>
-		<DatabaseName>app</DatabaseName>
 		<FileRecCalled/>
 		<DisplayClass/>
 		<MaintClass/>

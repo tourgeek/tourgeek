@@ -8639,36 +8639,6 @@
 		<ClassFieldsType>I</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
-	<ClassFields ID="888">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>ContactScreen</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass>Contact</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
-		<ClassFieldName/>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue/>
-		<ClassFieldsType>I</ClassFieldsType>
-		<IncludeScope>1</IncludeScope>
-	</ClassFields>
-	<ClassFields ID="889">
-		<LastChanged>2011-08-05T15:59:48</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>Contact</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass>ContactScreen</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
-		<ClassFieldName/>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue/>
-		<ClassFieldsType>I</ClassFieldsType>
-		<IncludeScope>1</IncludeScope>
-	</ClassFields>
 	<ClassFields ID="891">
 		<LastChanged>2011-08-05T15:59:48</LastChanged>
 		<Deleted>N</Deleted>
