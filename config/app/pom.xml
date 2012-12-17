@@ -68,18 +68,6 @@
       </properties>
     </profile>
     <profile>
-      <id>app</id>
-      <properties>
-          <systemname>app</systemname>
-      </properties>
-    </profile>
-    <profile>
-      <id>test</id>
-      <properties>
-          <systemname>test</systemname>
-      </properties>
-    </profile>
-    <profile>
       <id>import</id>
       <activation>
         <activeByDefault>false</activeByDefault>

@@ -129,7 +129,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:47:49 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -210,7 +210,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:48:01 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -243,7 +243,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:48:20 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -278,7 +278,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 #Sun Apr 18 10:48:45 PDT 2010
 package=.tour.request.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -359,7 +359,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:49:05 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -376,7 +376,7 @@ mode=import
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:49:20 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -425,7 +425,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:49:32 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -509,7 +509,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 #Sun Apr 18 10:48:27 PDT 2010
 package=com.tourapp.tour.profile.detail
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -697,7 +697,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 #Sun Apr 18 10:50:56 PDT 2010
 package=com.tourapp.tour.product.base.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -715,7 +715,7 @@ mode=import
 #Sun Apr 18 10:51:00 PDT 2010
 package=com.tourapp.tour.product.air.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -733,7 +733,7 @@ mode=import
 #Sun Apr 18 10:51:05 PDT 2010
 package=com.tourapp.tour.product.car.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -751,7 +751,7 @@ mode=import
 #Sun Apr 18 10:51:10 PDT 2010
 package=com.tourapp.tour.product.cruise.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -769,7 +769,7 @@ mode=import
 #Sun Apr 18 10:51:14 PDT 2010
 package=com.tourapp.tour.product.hotel.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -787,7 +787,7 @@ mode=import
 #Sun Apr 18 10:51:19 PDT 2010
 package=com.tourapp.tour.product.item.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -805,7 +805,7 @@ mode=import
 #Sun Apr 18 10:51:24 PDT 2010
 package=com.tourapp.tour.product.land.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -823,7 +823,7 @@ mode=import
 #Sun Apr 18 10:51:29 PDT 2010
 package=com.tourapp.tour.product.tour.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -841,7 +841,7 @@ mode=import
 #Sun Apr 18 10:51:35 PDT 2010
 package=com.tourapp.tour.product.tour.detail.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -859,7 +859,7 @@ mode=import
 #Sun Apr 18 10:51:43 PDT 2010
 package=com.tourapp.tour.product.tour.schedule.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -877,7 +877,7 @@ mode=import
 #Sun Apr 18 10:51:49 PDT 2010
 package=com.tourapp.tour.product.trans.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -944,7 +944,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:52:20 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -962,7 +962,7 @@ mode=import
 #Sun Apr 18 10:52:26 PDT 2010
 package=com.tourapp.tour.booking.detail.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -980,7 +980,7 @@ mode=import
 #Sun Apr 18 10:52:31 PDT 2010
 package=com.tourapp.tour.booking.history.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -1046,7 +1046,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:46:22 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -1064,7 +1064,7 @@ mode=import
 #Sun Apr 18 10:46:29 PDT 2010
 package=org.jbundle.main.msg.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -1116,7 +1116,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 record=UserInfo
 package=org.jbundle.main.user.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -1315,7 +1315,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 #Sun Apr 18 10:52:37 PDT 2010
 package=com.tourapp.tour.booking.inventory.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -2643,7 +2643,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 #Sun Apr 18 10:46:36 PDT 2010
 package=org.jbundle.main.calendar.db
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -3381,7 +3381,7 @@ standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
 table=Jdbc
 remote=Jdbc
 process=.base.thread.StandaloneProcessRunnerProcess
-mode=export
+transferMode=export
 ]]></Properties>
 		<Command/>
 		<Source/>
@@ -3506,7 +3506,7 @@ archiveFolder=/home/don/workspace/tourapp/tourapp-config/tourapp-config-webapp/s
 type=USER_DATA
 process=.app.program.script.process.ExportRecordsToXmlProcess
 project=Tour
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>R</Command>
 		<Source/>
@@ -3555,7 +3555,7 @@ process=.app.program.script.process.PurgeRecordsProcess
 		<Properties><![CDATA[#Field properties
 #Sun Apr 18 10:47:36 PDT 2010
 process=.app.program.script.process.ExportRecordsToXmlProcess
-mode=import
+transferMode=import
 ]]></Properties>
 		<Command>true</Command>
 		<Source/>
@@ -3748,7 +3748,7 @@ standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
 table=Jdbc
 remote=Jdbc
 process=.base.thread.StandaloneProcessRunnerProcess
-mode=export
+transferMode=export
 ]]></Properties>
 		<Command>true</Command>
 		<Source/>
