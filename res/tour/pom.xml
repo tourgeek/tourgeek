@@ -31,7 +31,7 @@
  <build>
    <resources>
      <resource>
-       <directory>${basedir}/src/main/java</directory>
+       <directory>${basedir}/src/main/resources</directory>
        <includes>
        <include>**/*.properties</include>
        </includes>
