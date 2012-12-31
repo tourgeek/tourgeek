@@ -122,6 +122,12 @@
         <artifactId>tourapp-config-dep-all</artifactId>
         <version>0.8.0-SNAPSHOT</version>
         <type>pom</type>
+        <exclusions>
+          <exclusion> <!-- Remove this - This will be fixed with the new version of JiBX -->
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+          </exclusion>
+        </exclusions>
     </dependency>
   </dependencies>
 
