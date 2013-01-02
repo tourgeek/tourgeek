@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.request.html;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;
@@ -46,7 +45,7 @@ public class HRequestHtmlDetailGrid extends HGridScreen
     /**
      * HRequestHtmlDetailGrid Method.
      */
-    public HRequestHtmlDetailGrid(ScreenField model,boolean bEditableControl)
+    public HRequestHtmlDetailGrid(ScreenField model, boolean bEditableControl)
     {
         this();
         this.init(model, bEditableControl);

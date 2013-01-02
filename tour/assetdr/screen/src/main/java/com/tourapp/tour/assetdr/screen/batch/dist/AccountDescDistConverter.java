@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.assetdr.screen.batch.dist;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

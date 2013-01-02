@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.acctpay.screen.currreq;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

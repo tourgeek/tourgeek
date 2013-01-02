@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.util.script.importdata;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

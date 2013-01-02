@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.message.service._2012A.ping;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.request.html;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;
@@ -42,7 +41,7 @@ public class HRequestHtmlScreen extends HScreen
     /**
      * HRequestHtmlScreen Method.
      */
-    public HRequestHtmlScreen(ScreenField model,boolean bEditableControl)
+    public HRequestHtmlScreen(ScreenField model, boolean bEditableControl)
     {
         this();
         this.init(model, bEditableControl);
@@ -50,7 +49,7 @@ public class HRequestHtmlScreen extends HScreen
     /**
      * Initialize class fields.
      */
-    public void init(ScreenField model,boolean bEditableControl)
+    public void init(ScreenField model, boolean bEditableControl)
     {
         super.init(model, bEditableControl);
     }

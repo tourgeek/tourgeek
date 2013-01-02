@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.message.jibx._2012A.base.response.out;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

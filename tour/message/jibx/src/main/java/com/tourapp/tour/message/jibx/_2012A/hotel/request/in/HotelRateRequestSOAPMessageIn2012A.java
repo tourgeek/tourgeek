@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.message.jibx._2012A.hotel.request.in;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

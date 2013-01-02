@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.acctrec.report.cashplan;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

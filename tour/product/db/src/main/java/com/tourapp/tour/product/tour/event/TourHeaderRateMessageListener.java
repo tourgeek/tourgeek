@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.product.tour.event;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

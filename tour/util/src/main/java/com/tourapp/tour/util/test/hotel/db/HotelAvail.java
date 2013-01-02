@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.util.test.hotel.db;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

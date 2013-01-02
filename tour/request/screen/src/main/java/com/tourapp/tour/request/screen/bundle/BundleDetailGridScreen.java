@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.request.screen.bundle;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

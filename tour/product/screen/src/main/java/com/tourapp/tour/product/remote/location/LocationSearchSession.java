@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.product.remote.location;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;

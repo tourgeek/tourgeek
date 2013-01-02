@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.acctpay.screen.vendor;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;
@@ -219,7 +218,7 @@ public class VendorScreen extends Screen
                 app.getMessageManager().sendMessage(message);
                 
                 String strMessage = app.getResources(ResourceConstants.DEFAULT_RESOURCE, true).getString("Remote action queued");
-                this.getTask().setStatusText(strMessage, Cursor.WAIT_CURSOR);
+                this.getTask().setStatusText(strMessage, Constants.WAIT);
             }
         }
         return super.doCommand(strCommand, sourceSField, iCommandOptions);

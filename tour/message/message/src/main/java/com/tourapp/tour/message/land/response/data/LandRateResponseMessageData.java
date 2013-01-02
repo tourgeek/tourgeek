@@ -5,7 +5,6 @@
   */
 package com.tourapp.tour.message.land.response.data;
 
-import java.awt.*;
 import java.util.*;
 
 import org.jbundle.base.db.*;
