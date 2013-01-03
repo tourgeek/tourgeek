@@ -9,7 +9,7 @@
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.res.dev.initial_data</artifactId>
+  <artifactId>com.tourapp.res.data.dev</artifactId>
   <name>tourapp-res-dev - Tourapp dev data</name>
 
   <packaging>bundle</packaging>
