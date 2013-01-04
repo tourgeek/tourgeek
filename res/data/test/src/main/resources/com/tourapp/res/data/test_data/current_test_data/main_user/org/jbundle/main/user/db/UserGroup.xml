@@ -5,7 +5,7 @@
 		<Properties/>
 		<Description>Anonymous user</Description>
 		<AccessMap>*.anon.*	1	1	
-org.jbundle.app.contact.*	2	1	
+org.jbundle.app.office.*	2	1	
 org.jbundle.app.dance.*	2	1	
 org.jbundle.app.picture.*	2	1	
 org.jbundle.app.test.*	2	1	
@@ -53,7 +53,7 @@ com.tourapp.app.booking.*	2	2
 org.jbundle.app.program.*	2	2	
 org.jbundle.main.*	2	2	
 org.jbundle.main.*	2	2	
-org.jbundle.app.contact.*	2	1	
+org.jbundle.app.office.*	2	1	
 org.jbundle.app.dance.*	2	1	
 org.jbundle.app.picture.*	2	1	
 com.tourapp.tour.product.*	2	2	
@@ -157,7 +157,7 @@ com.tourapp.tour.profile.*	2	2
 		<Properties/>
 		<Description>Web user</Description>
 		<AccessMap>*.anon.*	1	1	
-org.jbundle.app.contact.*	2	2	
+org.jbundle.app.office.*	2	2	
 org.jbundle.app.dance.*	2	2	
 org.jbundle.app.picture.*	2	2	
 </AccessMap>

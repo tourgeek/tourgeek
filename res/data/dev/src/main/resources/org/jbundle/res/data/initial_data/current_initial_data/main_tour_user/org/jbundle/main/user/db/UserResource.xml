@@ -38,7 +38,7 @@ org.jbundle.main.*]]></ResourceClass>
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Applications</Description>
-		<ResourceClass><![CDATA[org.jbundle.app.contact.*
+		<ResourceClass><![CDATA[org.jbundle.app.office.*
 org.jbundle.app.dance.*
 org.jbundle.app.picture.*]]></ResourceClass>
 	</UserResource>

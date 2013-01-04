@@ -4139,7 +4139,7 @@ sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 18:27:21 PDT 2011
-package=org.jbundle.app.contact.*
+package=org.jbundle.app.office.*
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
