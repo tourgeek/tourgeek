@@ -139,14 +139,14 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(DefaultServlet.class.getName());
                 if (servlet == null)    // Fallback to OSGiServlet
                     servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
-                httpContext = new FileHttpContext(context.getBundle());
+                httpContext = new FileHttpContext(servlet, context.getBundle());
                 String path = DEFAULT_STATIC_WEB_PATH;
                 properties.put(DefaultServlet.BASE_PATH, path);
             }
             else if (DEMO.equalsIgnoreCase(alias))
             {
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
-                httpContext = new FileHttpContext(context.getBundle());
+                httpContext = new FileHttpContext(servlet, context.getBundle());
                 String path = this.getProperty("wwwDemoPath");    // Basepath (usually pointing to a directory) is supplied in menu properties
                 if (path == null)
                     path = "com/tourapp/res/docs/com/tourgeek/www/";
