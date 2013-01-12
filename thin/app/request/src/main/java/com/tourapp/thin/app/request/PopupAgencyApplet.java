@@ -55,10 +55,10 @@ public class PopupAgencyApplet extends AgencyApplet
     /**
      * Add any applet sub-panel(s) now.
      */
-    public boolean addSubPanels(Container parent)
+    public boolean addSubPanels(Container parent, int options)
     {
         parent.setLayout(new BorderLayout());
         AgencyMainScreen baseScreen = new PopupMainScreen(parent, this);
-        return this.changeSubScreen(parent, baseScreen, null);
+        return this.changeSubScreen(parent, baseScreen, null, options);
     }
 }

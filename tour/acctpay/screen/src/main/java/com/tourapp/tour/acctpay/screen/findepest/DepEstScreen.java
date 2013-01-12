@@ -204,7 +204,7 @@ public class DepEstScreen extends Screen
     {
         if (MenuConstants.DISPLAY.equalsIgnoreCase(strCommand))
         {
-            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
             boolean bReadCurrentRecord = false;
             int iDocMode = ApTrx.TOUR_AP_SCREEN | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();

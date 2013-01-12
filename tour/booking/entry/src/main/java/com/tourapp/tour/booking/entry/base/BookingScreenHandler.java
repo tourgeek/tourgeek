@@ -126,51 +126,51 @@ public class BookingScreenHandler extends SwitchSubScreenHandler
         switch(screenNo)
         {
         case MENU_SCREEN: // Menu
-            screen = new BookingMenuScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingMenuScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case SUMMARY_SCREEN:    // Summary screen
-            screen = new BookingSummaryScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingSummaryScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case AGENCY_SCREEN:   // Agency Maint
-            screen = new BookingAgencyScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingAgencyScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case PAX_SCREEN:    // Pax display
             if ( parentScreen.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getValue() == 0)
-                screen = new BookingPaxScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);
+                screen = new BookingPaxScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);
             else
-                screen = new BookingPaxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);
+                screen = new BookingPaxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);
             break;
         case TOUR_SCREEN: // Tour maint
-            screen = new BookingTourScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingTourScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case LINE_SCREEN: // Line maint
-            screen = new BookingLineGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingLineGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case AR_TRX_SCREEN:   // A/R display
-            screen = new BookingArTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingArTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case AIR_HEADER_SCREEN:   // Air maint
-            screen = new BookingAirHeaderGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingAirHeaderGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case AIR_SCREEN:    // Air maint
-            screen = new BookingAirGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingAirGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case HOTEL_SCREEN:  // Hotel maint
-            screen = new BookingHotelGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingHotelGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case LAND_SCREEN: // Land maint
-            screen = new BookingLandGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingLandGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case TRANSPORTATION_SCREEN: // Transportation maint
-            screen = new BookingTransportationGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingTransportationGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case CAR_SCREEN:    // Car maint
-            screen = new BookingCarGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingCarGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case CRUISE_SCREEN:   // Cruise maint
-            screen = new BookingCruiseGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingCruiseGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case ITEM_SCREEN: // Item maint
-            screen = new BookingItemGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingItemGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case TOUR_DETAIL_SCREEN:    // Tour detail
-            screen = new BookingTourDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingTourDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case OPTIONS_SCREEN: // Tour options selection
-            screen = new BookingAnswerGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingAnswerGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case CALENDAR_SCREEN: // Calendar maint
-            screen = new BookingCalendar(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingCalendar(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case FIT_SCREEN:    // FIT maint
-            screen = new BookingDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case VOUCHER_SCREEN: // Voucher maint
-            screen = new TourApTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new TourApTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         case ITIN_SCREEN: // Itinerary maint
-            screen = new BookingItinerary(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+            screen = new BookingItinerary(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
         default:
             screen = null;
         }

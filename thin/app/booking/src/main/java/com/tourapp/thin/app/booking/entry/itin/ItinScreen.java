@@ -91,7 +91,7 @@ public class ItinScreen extends JHtmlView
 
             this.linkActivated(JHtmlView.getURLFromPath(strURL, this.getBaseApplet()));
             if (this.getBaseApplet() != null)
-                this.getBaseApplet().popHistory();      // This should not be considered part of the history
+                this.getBaseApplet().popHistory(1, true);      // This should not be considered part of the history
         }
     }
     /**

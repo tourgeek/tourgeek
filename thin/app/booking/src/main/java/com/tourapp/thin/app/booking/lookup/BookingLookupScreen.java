@@ -87,7 +87,7 @@ public class BookingLookupScreen extends JBaseMenuScreen
             applet.setProperty(Params.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
             if ((Util.isNumeric(strAction)) && (!"0".equals(strAction)))
                 applet.setProperty(Constants.OBJECT_ID, strAction);
-            applet.addSubPanels(null);
+            applet.addSubPanels(null, 0);
         }
         return super.doAction(strAction, iOptions);
     }

@@ -211,7 +211,7 @@ public class TourApTrxGridScreen extends BookingSubGridScreen
     {
         if (Vendor.VENDOR_FILE.equalsIgnoreCase(strCommand))
         {
-            iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROSWER;
+            iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROWSER;
             boolean bReadCurrentRecord = false;
             boolean bLinkGridToQuery = false;
             int iDocMode = ApTrx.VENDOR_AP_SCREEN;

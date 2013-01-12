@@ -207,9 +207,9 @@ public class BookingDetailSubScreen extends BookingSubScreen
             map.put("StartDate", startDate);
         map.put("ReadOnly", Boolean.TRUE.toString());
         if (strCommand.equalsIgnoreCase(Product.PRICING_DETAIL))
-            return (this.onForm(recProduct, Product.PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, map) != null);
+            return (this.onForm(recProduct, Product.PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER, map) != null);
         else if (strCommand.equalsIgnoreCase(Product.INVENTORY_DETAIL))
-            return (this.onForm(recProduct, Product.INVENTORY_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, map) != null);
+            return (this.onForm(recProduct, Product.INVENTORY_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER, map) != null);
         else if (strCommand.equalsIgnoreCase(MessageLog.MESSAGE_LOG_FILE))
         {
             Record recMessageLog = new MessageLog(this);
@@ -224,7 +224,7 @@ public class BookingDetailSubScreen extends BookingSubScreen
                 properties.put(strReferenceFieldName, strReferenceID);
                 properties.put(strReferenceTypeFieldName, strReferenceType);
             }
-            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
             this.onForm(recMessageLog, ScreenConstants.DISPLAY_MODE, false, iCommandOptions, false, properties);
             return true;
         }

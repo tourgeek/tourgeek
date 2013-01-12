@@ -34,7 +34,6 @@ import org.jbundle.thin.base.screen.db.converter.ImageConverter;
 import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.screen.grid.JCellImage;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
-import org.jbundle.thin.base.util.ThinUtil;
 
 import com.tourapp.thin.app.booking.entry.BookingConstants;
 import com.tourapp.thin.app.booking.entry.search.air.JAirGridScreen;
@@ -97,7 +96,7 @@ public class JDisplayPanel extends JBaseRichScreen
         
         m_parent = obj;
 
-        this.switchScreens(applet, null);   // Default screen = menu screen
+        this.switchScreens(applet, null, Constants.DONT_PUSH_TO_BROWSER);   // Default screen = menu screen
     }
     /**
      *  For the action listener (menu commands).
@@ -117,9 +116,9 @@ public class JDisplayPanel extends JBaseRichScreen
             else if (button instanceof JLabel)
                 icon = (ImageIcon)((JLabel)button).getIcon();
             String strDesc = icon.getDescription();
-            this.getTourAppScreen().handleAction(BookingConstants.SEARCH, null, 0);  // Make sure we are on the search tab
+            BaseApplet.handleAction(BookingConstants.SEARCH, this.getTourAppScreen(), null, 0);  // Make sure we are on the search tab
             JDisplayPanel displayPanel = this.getTourAppScreen().getDisplayPanel();
-            displayPanel.switchScreens(applet, strDesc);
+            displayPanel.switchScreens(applet, strDesc, Constants.DONT_PUSH_TO_BROWSER);
         }
         else
             super.actionPerformed(evt);
@@ -127,10 +126,11 @@ public class JDisplayPanel extends JBaseRichScreen
     /**
      * Switch the search pane and the display screen to this (product type) display.
      * @param strDesc The product type (such as Hotel, Land, etc).
+     * @param iOptions options
      */
-    public JProductSearchPane switchScreens(BaseApplet applet, String strDesc)
+    public JProductSearchPane switchScreens(BaseApplet applet, String strDesc, int iOptions)
     {
-        JProductSearchPane searchPane = this.getTourAppScreen().getMainSearchPane().switchScreens(applet, strDesc);
+        JProductSearchPane searchPane = this.getTourAppScreen().getMainSearchPane().switchScreens(applet, strDesc, iOptions);
         
         JBaseScreen displayScreen = this.getDisplayScreen();
         if (displayScreen != null)
@@ -158,7 +158,7 @@ public class JDisplayPanel extends JBaseRichScreen
         else
             displayScreen = new JMenuGridScreen(m_displayParent, null);
 
-        applet.changeSubScreen(m_displayParent, displayScreen, null);
+        applet.changeSubScreen(m_displayParent, displayScreen, null, iOptions);
 
         if (searchPane != null)
             searchPane.requeryRemoteSession();

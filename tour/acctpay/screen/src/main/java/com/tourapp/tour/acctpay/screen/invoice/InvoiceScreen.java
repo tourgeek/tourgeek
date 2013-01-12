@@ -250,7 +250,7 @@ public class InvoiceScreen extends Screen
     {
         if (MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
         {
-            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
             boolean bReadCurrentRecord = false;
             int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();

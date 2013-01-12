@@ -217,7 +217,7 @@ public class TourGridScreen extends GridScreen
         if (strCommand != null)
             if (strCommand.equalsIgnoreCase("Booking Entry"))
         {
-            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;     // Must open a new window
+            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
             strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
             strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
             if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||

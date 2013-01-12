@@ -219,7 +219,7 @@ public class BookingHotelScreen extends BookingDetailSubScreen
     {
         Record recHotel = this.getRecord(Hotel.HOTEL_FILE);
         if (strCommand.equalsIgnoreCase(Hotel.MEAL_DETAIL))
-            return (this.onForm(recHotel, Hotel.MEAL_PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, null) != null);
+            return (this.onForm(recHotel, Hotel.MEAL_PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER, null) != null);
         else
             return super.doCommand(strCommand, sourceSField, iCommandOptions);
     }

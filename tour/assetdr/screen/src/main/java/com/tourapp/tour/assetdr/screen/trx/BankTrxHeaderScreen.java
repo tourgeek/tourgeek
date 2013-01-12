@@ -103,7 +103,7 @@ public class BankTrxHeaderScreen extends HeaderScreen
     {
         if (MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
         {
-            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+            iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
             boolean bReadCurrentRecord = false;
             int iDocMode = ScreenConstants.DISPLAY_MODE | ScreenConstants.SELECT_MODE;
             Map<String,Object> properties = new Hashtable<String,Object>();

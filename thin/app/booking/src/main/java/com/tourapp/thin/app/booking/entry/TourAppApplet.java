@@ -55,7 +55,7 @@ public class TourAppApplet extends BaseApplet
     /**
      * Add any applet sub-panel(s) now.
      */
-    public boolean addSubPanels(Container parent)
+    public boolean addSubPanels(Container parent, int options)
     {
         parent.setLayout(new BorderLayout());
         

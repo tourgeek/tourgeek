@@ -143,7 +143,7 @@ public class BookingDetailCalendarScreen extends JBaseScreen
         else if (ProductTypeInfo.getProductType(strAction) != null)
         {
             JDisplayPanel displayPanel = tourAppScreen.getDisplayPanel();
-            JProductSearchPane pane = displayPanel.switchScreens(this.getBaseApplet(), strAction);
+            JProductSearchPane pane = displayPanel.switchScreens(this.getBaseApplet(), strAction, iOptions);
             tourAppScreen.handleAction(BookingConstants.SEARCH, null, iOptions);  // Make sure we are on the search tab
             pane.requestFocus();
             return true;

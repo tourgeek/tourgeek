@@ -578,7 +578,7 @@ public class TourAppScreen extends JBaseScreen
                     Container parent = null;
                     if (screen.getParentObject() instanceof Container)
                         parent = (Container)screen.getParentObject();
-                    this.getBaseApplet().changeSubScreen(parent, screen, null);
+                    this.getBaseApplet().changeSubScreen(parent, screen, null, iOptions);
                     bHandled = true;
                 }
             } catch (Exception ex)  {
@@ -857,7 +857,7 @@ public class TourAppScreen extends JBaseScreen
             tabbedPane.setSelectedIndex(PRICE_TAB);
             JBookingDetailMainScreen mainScreen = (JBookingDetailMainScreen)JBasePanel.getSubScreen(this, JBookingDetailMainScreen.class);
             mainScreen.setSource(event.getSource());
-            mainScreen.handleAction(Constants.FORM, null, 0);
+            BaseApplet.handleAction(Constants.FORM, mainScreen, null, 0);
         }
     }
     /**
@@ -870,7 +870,7 @@ public class TourAppScreen extends JBaseScreen
         {
             Container parent = ((JDisplayPanel)JBasePanel.getSubScreen(this, JDisplayPanel.class)).getDisplayScreen();
             screen.init(parent, record);
-            applet.changeSubScreen(parent, screen, null);
+            applet.changeSubScreen(parent, screen, null, Constants.DONT_PUSH_TO_BROWSER);
         }
     }
     /**

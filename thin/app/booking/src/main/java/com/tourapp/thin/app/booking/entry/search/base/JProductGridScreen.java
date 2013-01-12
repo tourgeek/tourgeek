@@ -368,7 +368,7 @@ public class JProductGridScreen extends JGridScreen
         else if (Constants.BACK.equalsIgnoreCase(strAction))
         {
             JDisplayPanel searchPanel = this.getDisplayPanel();
-            searchPanel.switchScreens(this.getBaseApplet(), null);  // Switch to the menu screen
+            searchPanel.switchScreens(this.getBaseApplet(), null, iOptions);  // Switch to the menu screen
             return true;    // Done!
         }
         else

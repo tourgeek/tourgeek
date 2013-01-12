@@ -19,6 +19,7 @@ import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JTextField;
 
+import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -105,7 +106,7 @@ public class JAirSearchPane extends JProductSearchPane
                 job.initTask(this.getBaseApplet().getApplication(), properties);
                 String strLocationParam = strButtonName.substring(0, strButtonName.lastIndexOf(SearchConstants.BUTTON));
                 AirlineGridScreen gridScreen = new AirlineGridScreen(job, strLocationParam);
-                job.changeSubScreen(null, gridScreen, null);
+                job.changeSubScreen(null, gridScreen, null, Constants.DONT_PUSH_TO_BROWSER);
                 TourAppScreen screenMain = this.getMainSearchPane().getTourAppScreen();
                 gridScreen.addPropertyChangeListener(screenMain.getParams());
                 job.run();

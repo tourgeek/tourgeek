@@ -241,7 +241,7 @@ public class VendorApTrxGridScreen extends DetailGridScreen
     {
         if (Tour.TOUR_FILE.equalsIgnoreCase(strCommand))
         {
-            iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROSWER;
+            iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROWSER;
             boolean bReadCurrentRecord = false;
             boolean bLinkGridToQuery = false;
             int iDocMode = ApTrx.TOUR_AP_SCREEN;

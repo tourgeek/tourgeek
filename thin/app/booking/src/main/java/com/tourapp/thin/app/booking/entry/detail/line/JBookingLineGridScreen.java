@@ -175,7 +175,7 @@ public class JBookingLineGridScreen extends JGridScreen
                     Container parent = null;
                     if (screen.getParentObject() instanceof Container)
                         parent = (Container)screen.getParentObject();
-                    this.getBaseApplet().changeSubScreen(parent, screen, null);
+                    this.getBaseApplet().changeSubScreen(parent, screen, null, iOptions);
                 }
             }
             return true;

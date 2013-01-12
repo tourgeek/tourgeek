@@ -224,7 +224,7 @@ public class BookingCalendar extends CalendarScreen
     public boolean doCommand(String strCommand, ScreenField sourceSField, int iCommandOptions)
     {
         boolean bSuccess = super.doCommand(strCommand, sourceSField, iCommandOptions);
-        iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+        iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
         Product record = null;
         Map<String,Object> properties = new Hashtable<String,Object>();
         

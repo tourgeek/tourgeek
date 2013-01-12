@@ -140,7 +140,7 @@ public class JProductSearchPane extends JBaseScreen
                 job.initTask(this.getBaseApplet().getApplication(), properties);
                 String strLocationParam = strButtonName.substring(0, strButtonName.lastIndexOf(SearchConstants.BUTTON));
                 JLocationScreen locationScreen = new JLocationScreen(job, strLocationParam);
-                job.changeSubScreen(null, locationScreen, null);
+                job.changeSubScreen(null, locationScreen, null, Constants.DONT_PUSH_TO_BROWSER);
                 TourAppScreen screenMain = this.getMainSearchPane().getTourAppScreen();
                 locationScreen.addPropertyChangeListener(screenMain.getParams());
                 job.run();

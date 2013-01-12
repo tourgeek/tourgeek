@@ -25,6 +25,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
 import javax.swing.ScrollPaneConstants;
 
+import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -95,7 +96,7 @@ public class JMainSearchPane extends JBaseRichScreen
         this.addFieldList(this.getTourAppScreen().getTourRecord());  // Tour
         super.init(obj, recBooking);
 
-        this.switchScreens(applet, null);
+        this.switchScreens(applet, null, Constants.DONT_PUSH_TO_BROWSER);
     }
     /**
      * Add any screen sub-panel(s) now.
@@ -270,8 +271,9 @@ public class JMainSearchPane extends JBaseRichScreen
     /**
      * Switch the search pane and the display screen to this (product type) display.
      * @param strDesc The product type (such as Hotel, Land, etc).
+     * @param iOptions Options
      */
-    public JProductSearchPane switchScreens(BaseApplet applet, String strDesc)
+    public JProductSearchPane switchScreens(BaseApplet applet, String strDesc, int iOptions)
     {
         JProductSearchPane searchPane = null;
         // Now display the proper search pane and table pane.
@@ -296,7 +298,7 @@ public class JMainSearchPane extends JBaseRichScreen
             searchPane = new JMenuSearchPane(m_searchParent, null);
         searchPane.setLayout(new BoxLayout(searchPane, BoxLayout.Y_AXIS));
 
-        if (!applet.changeSubScreen(m_searchParent, searchPane, null))
+        if (!applet.changeSubScreen(m_searchParent, searchPane, null, iOptions))
         	return null;	// Error/user not permitted
         
         return searchPane;
@@ -310,7 +312,7 @@ public class JMainSearchPane extends JBaseRichScreen
         String strButtonName = button.getName();
         if (SearchConstants.SEARCH_BUTTON.equals(strButtonName))
         {
-            this.getTourAppScreen().handleAction(BookingConstants.SEARCH, null, 0);  // Make sure we are on the search tab
+            BaseApplet.handleAction(BookingConstants.SEARCH, this.getTourAppScreen(), null, 0);  // Make sure we are on the search tab
             JDisplayPanel displayPanel = (JDisplayPanel)this.getTourAppScreen().getCurrentDisplayPanel();
             displayPanel.actionPerformed(evt);
         }
