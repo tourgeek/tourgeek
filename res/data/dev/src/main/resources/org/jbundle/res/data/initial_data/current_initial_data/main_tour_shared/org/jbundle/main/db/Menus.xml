@@ -12027,19 +12027,17 @@ please click the following link:<br/>
 	<Menus ID="1910">
 		<LastChanged>2010-11-30T13:42:48</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>Thick Applet</Name>
+		<Name>Thin contacts</Name>
 		<ParentFolderID>1,909</ParentFolderID>
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>org.jbundle.Main</Program>
+		<Program>org.jbundle.thin.Thin</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="user"/>
-<entry key="webStart">thick</entry>
-<entry key="menu">dev.tourapp.com</entry>
+<entry key="webStartPropertiesFile">org/jbundle/app/office/thinapp.properties</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
