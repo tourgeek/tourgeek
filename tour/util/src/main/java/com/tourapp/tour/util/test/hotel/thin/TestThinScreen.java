@@ -102,7 +102,10 @@ public class TestThinScreen extends JScreen
         BaseMessageFilter filterForSession = new ClientSessionMessageFilter(null, m_remoteSession, properties);
 //        BaseMessageFilter filterForSession = new BaseMessageFilter(MessageConstants.TRX_RETURN_QUEUE, MessageConstants.REMOTE_QUEUE_TYPE, this, null);
         filterForSession.addMessageListener(listenerForSession);
-        handler.addMessageFilter(filterForSession);
+        synchronized (this.getBaseApplet().getRemoteTask())
+        {   // Wait for remote filter to set up before I start accessing the data
+            handler.addMessageFilter(filterForSession);
+        }
     }
     /**
      * Free this screen's objects.

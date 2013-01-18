@@ -126,7 +126,7 @@ public class AirlineGridModel extends ThinTableModel
         switch (iColumnIndex)
         {
         case SELECT_BUTTON_COLUMN:
-            ImageIcon icon = (ImageIcon)this.getValueAt(0, iColumnIndex);
+            ImageIcon icon = (ImageIcon)this.getValueAt(-1, iColumnIndex);
             JCellButton button = new JCellButton(icon);
             button.setOpaque(false);
             button.setName(ThinMenuConstants.SELECT);
@@ -144,7 +144,7 @@ public class AirlineGridModel extends ThinTableModel
         switch (iColumnIndex)
         {
         case SELECT_BUTTON_COLUMN:
-            ImageIcon icon = (ImageIcon)this.getValueAt(0, iColumnIndex);
+            ImageIcon icon = (ImageIcon)this.getValueAt(-1, iColumnIndex);
             JCellButton button = new JCellButton(icon);
             button.setOpaque(false);
             button.setName(ThinMenuConstants.SELECT);

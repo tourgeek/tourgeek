@@ -192,7 +192,10 @@ public class JProductGridScreen extends JGridScreen
             properties.setProperty(MessageConstants.CLASS_NAME, MessageConstants.GRID_FILTER);
             BaseMessageFilter filterForSession = new ClientSessionMessageFilter(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE, this, remoteSessionMain, properties);
             filterForSession.addMessageListener(listenerForSession);
-            handler.addMessageFilter(filterForSession);
+            synchronized (this.getBaseApplet().getRemoteTask())
+            {   // Wait for remote filter to set up before I start accessing the data
+                handler.addMessageFilter(filterForSession);
+            }
         }
     }
     /**

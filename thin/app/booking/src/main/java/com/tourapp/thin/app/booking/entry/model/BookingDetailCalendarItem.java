@@ -82,7 +82,7 @@ public class BookingDetailCalendarItem extends BookingDetail
                 || (this.getEditMode() == Constants.EDIT_CURRENT))
             {
                 this.getTable().remove();
-                m_model.makeRowCurrent(-1, false);      // Clear the current record in the model.
+                m_model.makeRowCurrent(-1, true);      // Clear the current record in the model.
             }
         } catch (Exception ex)  {
             ex.printStackTrace();

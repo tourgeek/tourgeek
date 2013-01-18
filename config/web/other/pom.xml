@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>com.tourapp.config.web.other</artifactId>
-	<name>jbundle-config-web-other - deploy webapps</name>
+	<name>tourapp-config-web-other - deploy webapps</name>
 
 	<packaging>bundle</packaging>
 

@@ -128,14 +128,10 @@ public class BookingPaxGridModel extends ThinTableModel
         switch (iColumnIndex) // RequestInputID
         {
             case FORM_BUTTON_COLUMN:
-                if (iEditMode == Constants.EDIT_NONE)
-                    return null;
                 if (m_imageForm == null)
                     m_imageForm = BaseApplet.getSharedInstance().loadImageIcon(Constants.FILE_ROOT + Constants.FORM);
                 return m_imageForm;
             case DELETE_BUTTON_COLUMN:
-                if (iEditMode == Constants.EDIT_NONE)
-                    return null;
                 if (m_imageDelete == null)
                     m_imageDelete = BaseApplet.getSharedInstance().loadImageIcon(Constants.FILE_ROOT + Constants.DELETE);
                 return m_imageDelete;
@@ -168,13 +164,13 @@ public class BookingPaxGridModel extends ThinTableModel
         switch (iColumnIndex)
         {
         case FORM_BUTTON_COLUMN:
-            ImageIcon icon = (ImageIcon)this.getValueAt(0, iColumnIndex);
+            ImageIcon icon = (ImageIcon)this.getValueAt(-1, iColumnIndex);
             JCellButton button = new JCellButton(icon);
             button.setOpaque(false);
             button.setName(Constants.FORM);
             return button;
         case DELETE_BUTTON_COLUMN:
-            ImageIcon icon2 = (ImageIcon)this.getValueAt(0, iColumnIndex);
+            ImageIcon icon2 = (ImageIcon)this.getValueAt(-1, iColumnIndex);
             JCellButton button3 = new JCellButton(icon2);
             button3.setOpaque(false);
             button3.setName(Constants.DELETE);
