@@ -15,7 +15,7 @@
     <module>web</module>
     <module>server</module>
     <module>dep</module>
-    <module>app</module>
+    <module>main</module>
   </modules>
 
 </project>

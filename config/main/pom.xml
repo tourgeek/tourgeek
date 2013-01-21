@@ -9,7 +9,7 @@
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.config.app</artifactId>
+  <artifactId>com.tourapp.config.main</artifactId>
   <packaging>bundle</packaging>
   <name>tourapp-config-app - Run standalone tourapp</name>
   
