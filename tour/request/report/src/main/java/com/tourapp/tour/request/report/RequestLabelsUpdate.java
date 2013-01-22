@@ -111,7 +111,7 @@ public class RequestLabelsUpdate extends BaseProcess
                 if (recRequest.getField(Request.HIST_REPRINT).getState() != true)
                 {   // Not reprinted = update history
                     recRequestHistory.addNew();
-                    recRequestHistory.moveFields(recRequest, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+                    recRequestHistory.moveFields(recRequest, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
                     recRequestHistory.add();
                     Object bookmark = recRequestHistory.getLastModified(DBConstants.BOOKMARK_HANDLE);
                     recRequestHistory.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
@@ -137,7 +137,7 @@ public class RequestLabelsUpdate extends BaseProcess
                 recRequestDetail.edit();
         
                 recRequestHistoryDetail.addNew();
-                recRequestHistoryDetail.moveFields(recRequestDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+                recRequestHistoryDetail.moveFields(recRequestDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
                 recRequestHistoryDetail.getField(RequestHistoryDetail.PROFILE_ID).moveFieldToThis(recRequest.getField(Request.PROFILE_ID));
                 recRequestHistoryDetail.add();  
         

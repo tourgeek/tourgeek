@@ -78,7 +78,7 @@ public class RequestLabelsRestore extends RequestLabelsUpdate
                 recRequestHistory.edit();
         
                 recRequest.addNew();
-                recRequest.moveFields(recRequestHistory, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+                recRequest.moveFields(recRequestHistory, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
                 recRequest.add();
                 Object bookmark = recRequest.getLastModified(DBConstants.BOOKMARK_HANDLE);
                 recRequest.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
@@ -104,7 +104,7 @@ public class RequestLabelsRestore extends RequestLabelsUpdate
                 recRequestHistoryDetail.next();
         
                 recRequestDetail.addNew();
-                recRequestDetail.moveFields(recRequestHistoryDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+                recRequestDetail.moveFields(recRequestHistoryDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
                 recRequestDetail.add();  
             }
         } catch (DBException ex)    {

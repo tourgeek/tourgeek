@@ -412,7 +412,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="24">
-		<LastChanged>2012-01-31T10:43:04</LastChanged>
+		<LastChanged>2013-01-22T14:04:17</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>120</Sequence>
 		<MethodName>onCounterBalance</MethodName>
@@ -425,7 +425,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
     try   {
         Record recAcctBatchDetail = (Record)this.clone(true);
         recAcctBatchDetail.addNew();
-        recAcctBatchDetail.moveFields(this, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false);
+        recAcctBatchDetail.moveFields(this, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false, false);
         recAcctBatchDetail.getField(AcctBatchDetail.ACCOUNT_ID).moveFieldToThis(recAccount.getField(Account.COUNTER_ACCOUNT_ID));
         recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).setValue(-this.getField(AcctBatchDetail.AMOUNT).getValue());
         recAcctBatchDetail.getField(AcctBatchDetail.COUNTER_BALANCE).setState(true);
@@ -445,7 +445,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="25">
-		<LastChanged>2012-02-01T19:02:05</LastChanged>
+		<LastChanged>2013-01-22T14:04:45</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>130</Sequence>
 		<MethodName>onReversal</MethodName>
@@ -527,7 +527,7 @@ try   {
             recAcctBatchDetail.edit();
             recAcctBatchDetail.getField(AcctBatchDetail.AUTO_ACCRUAL).setState(true);
             recAcctBatchDetailOut.addNew();
-            recAcctBatchDetailOut.moveFields(recAcctBatchDetail, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false);
+            recAcctBatchDetailOut.moveFields(recAcctBatchDetail, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false, false);
             recAcctBatchDetailOut.getField(AcctBatchDetail.SEQUENCE).moveFieldToThis(recAcctBatch.getField(AcctBatch.NEXT_SEQUENCE));
             recAcctBatchDetailOut.getField(AcctBatchDetail.AMOUNT).setValue(-recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).getValue());
             recAcctBatchDetailOut.getField(AcctBatchDetail.AUTO_REVERSAL).setState(true);
@@ -33133,7 +33133,7 @@ recRequestDetail.addListener(new SubFileFilter(recRequest));]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2352">
-		<LastChanged>2012-01-31T10:43:25</LastChanged>
+		<LastChanged>2013-01-22T14:06:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>run</MethodName>
@@ -33175,14 +33175,14 @@ if (properties != null)
 			while (recXmlRequest.next() != null)
 			{
 				recRequest.addNew();
-				recRequest.moveFields(recXmlRequest, resRequestLookup, true, DBConstants.SCREEN_MOVE, true, false, false);
+				recRequest.moveFields(recXmlRequest, resRequestLookup, true, DBConstants.SCREEN_MOVE, true, false, false, false);
 				if (recXmlRequestDetail != null)
 				{
 					recXmlRequestDetail.close();
 					while (recXmlRequestDetail.next() != null)
 					{
 						recRequestDetail.addNew();
-						recRequestDetail.moveFields(recXmlRequestDetail, resRequestDetailLookup, true, DBConstants.SCREEN_MOVE, true, false, false);
+						recRequestDetail.moveFields(recXmlRequestDetail, resRequestDetailLookup, true, DBConstants.SCREEN_MOVE, true, false, false, false);
 						if (recXmlItem != null)
 							if (recXmlRequestDetail.getField("BrochureID") != null)
 								if (recRequestDetail.getField(RequestDetail.BROCHURE_DESC).isNull())
@@ -33373,7 +33373,7 @@ this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).addListener(new
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2371">
-		<LastChanged>2012-01-31T10:43:25</LastChanged>
+		<LastChanged>2013-01-22T14:07:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>run</MethodName>
@@ -33395,7 +33395,7 @@ try   {
         if (recRequest.getField(Request.HIST_REPRINT).getState() != true)
         {   // Not reprinted = update history
             recRequestHistory.addNew();
-            recRequestHistory.moveFields(recRequest, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+            recRequestHistory.moveFields(recRequest, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
             recRequestHistory.add();
             Object bookmark = recRequestHistory.getLastModified(DBConstants.BOOKMARK_HANDLE);
             recRequestHistory.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
@@ -33413,7 +33413,7 @@ try   {
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2372">
-		<LastChanged>2012-01-31T10:43:25</LastChanged>
+		<LastChanged>2013-01-22T14:08:04</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>200</Sequence>
 		<MethodName>updateHistoryDetail</MethodName>
@@ -33429,7 +33429,7 @@ try   {
         recRequestDetail.edit();
 
         recRequestHistoryDetail.addNew();
-        recRequestHistoryDetail.moveFields(recRequestDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+        recRequestHistoryDetail.moveFields(recRequestDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
         recRequestHistoryDetail.getField(RequestHistoryDetail.PROFILE_ID).moveFieldToThis(recRequest.getField(Request.PROFILE_ID));
         recRequestHistoryDetail.add();  
 
@@ -41781,7 +41781,7 @@ this.getRecord(RequestHistoryDetail.REQUEST_HISTORY_DETAIL_FILE).addListener(new
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3330">
-		<LastChanged>2012-01-31T10:43:28</LastChanged>
+		<LastChanged>2013-01-22T14:06:59</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>run</MethodName>
@@ -41802,7 +41802,7 @@ try {
         recRequestHistory.edit();
 
         recRequest.addNew();
-        recRequest.moveFields(recRequestHistory, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+        recRequest.moveFields(recRequestHistory, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
         recRequest.add();
         Object bookmark = recRequest.getLastModified(DBConstants.BOOKMARK_HANDLE);
         recRequest.setHandle(bookmark, DBConstants.BOOKMARK_HANDLE);
@@ -41895,7 +41895,7 @@ this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getF
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3335">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2013-01-22T14:07:07</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>200</Sequence>
 		<MethodName>updateRequestDetail</MethodName>
@@ -41910,7 +41910,7 @@ this.getMainRecord().addListener(new CompareFileFilter(this.getMainRecord().getF
         recRequestHistoryDetail.next();
 
         recRequestDetail.addNew();
-        recRequestDetail.moveFields(recRequestHistoryDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false);   // Move all fields to the history record
+        recRequestDetail.moveFields(recRequestHistoryDetail, Record.MOVE_BY_NAME, true, DBConstants.SCREEN_MOVE, true, false, false, false);   // Move all fields to the history record
         recRequestDetail.add();  
     }
 } catch (DBException ex)    {

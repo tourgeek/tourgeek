@@ -224,7 +224,7 @@ public class AcctBatchDetail extends VirtualRecord
             try   {
                 Record recAcctBatchDetail = (Record)this.clone(true);
                 recAcctBatchDetail.addNew();
-                recAcctBatchDetail.moveFields(this, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false);
+                recAcctBatchDetail.moveFields(this, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false, false);
                 recAcctBatchDetail.getField(AcctBatchDetail.ACCOUNT_ID).moveFieldToThis(recAccount.getField(Account.COUNTER_ACCOUNT_ID));
                 recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).setValue(-this.getField(AcctBatchDetail.AMOUNT).getValue());
                 recAcctBatchDetail.getField(AcctBatchDetail.COUNTER_BALANCE).setState(true);
@@ -318,7 +318,7 @@ public class AcctBatchDetail extends VirtualRecord
                     recAcctBatchDetail.edit();
                     recAcctBatchDetail.getField(AcctBatchDetail.AUTO_ACCRUAL).setState(true);
                     recAcctBatchDetailOut.addNew();
-                    recAcctBatchDetailOut.moveFields(recAcctBatchDetail, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false);
+                    recAcctBatchDetailOut.moveFields(recAcctBatchDetail, null, DBConstants.DISPLAY, DBConstants.SCREEN_MOVE, true, false, false, false);
                     recAcctBatchDetailOut.getField(AcctBatchDetail.SEQUENCE).moveFieldToThis(recAcctBatch.getField(AcctBatch.NEXT_SEQUENCE));
                     recAcctBatchDetailOut.getField(AcctBatchDetail.AMOUNT).setValue(-recAcctBatchDetail.getField(AcctBatchDetail.AMOUNT).getValue());
                     recAcctBatchDetailOut.getField(AcctBatchDetail.AUTO_REVERSAL).setState(true);

@@ -131,14 +131,14 @@ public class XmlToRequests extends BaseProcess
                     while (recXmlRequest.next() != null)
                     {
                         recRequest.addNew();
-                        recRequest.moveFields(recXmlRequest, resRequestLookup, true, DBConstants.SCREEN_MOVE, true, false, false);
+                        recRequest.moveFields(recXmlRequest, resRequestLookup, true, DBConstants.SCREEN_MOVE, true, false, false, false);
                         if (recXmlRequestDetail != null)
                         {
                             recXmlRequestDetail.close();
                             while (recXmlRequestDetail.next() != null)
                             {
                                 recRequestDetail.addNew();
-                                recRequestDetail.moveFields(recXmlRequestDetail, resRequestDetailLookup, true, DBConstants.SCREEN_MOVE, true, false, false);
+                                recRequestDetail.moveFields(recXmlRequestDetail, resRequestDetailLookup, true, DBConstants.SCREEN_MOVE, true, false, false, false);
                                 if (recXmlItem != null)
                                     if (recXmlRequestDetail.getField("BrochureID") != null)
                                         if (recRequestDetail.getField(RequestDetail.BROCHURE_DESC).isNull())
