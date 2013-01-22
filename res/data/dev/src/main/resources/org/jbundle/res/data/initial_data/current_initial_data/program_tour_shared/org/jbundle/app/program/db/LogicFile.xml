@@ -9942,7 +9942,7 @@ Record recTourHeader = ((ReferenceField)recTour.getField(Tour.TOUR_HEADER_ID)).g
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="659">
-		<LastChanged>2012-01-31T10:43:12</LastChanged>
+		<LastChanged>2013-01-22T05:54:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>getSubScreen</MethodName>
@@ -9964,51 +9964,51 @@ BaseField useAgency = null;
 switch(screenNo)
 {
 case MENU_SCREEN: // Menu
-    screen = new BookingMenuScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingMenuScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case SUMMARY_SCREEN:    // Summary screen
-    screen = new BookingSummaryScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingSummaryScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case AGENCY_SCREEN:   // Agency Maint
-    screen = new BookingAgencyScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingAgencyScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case PAX_SCREEN:    // Pax display
     if ( parentScreen.getRecord(Booking.BOOKING_FILE).getField(Booking.PAX).getValue() == 0)
-        screen = new BookingPaxScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);
+        screen = new BookingPaxScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);
     else
-        screen = new BookingPaxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);
+        screen = new BookingPaxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);
     break;
 case TOUR_SCREEN: // Tour maint
-    screen = new BookingTourScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingTourScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case LINE_SCREEN: // Line maint
-    screen = new BookingLineGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingLineGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case AR_TRX_SCREEN:   // A/R display
-    screen = new BookingArTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingArTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case AIR_HEADER_SCREEN:   // Air maint
-    screen = new BookingAirHeaderGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingAirHeaderGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case AIR_SCREEN:    // Air maint
-    screen = new BookingAirGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingAirGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case HOTEL_SCREEN:  // Hotel maint
-    screen = new BookingHotelGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingHotelGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case LAND_SCREEN: // Land maint
-    screen = new BookingLandGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingLandGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case TRANSPORTATION_SCREEN: // Transportation maint
-    screen = new BookingTransportationGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingTransportationGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case CAR_SCREEN:    // Car maint
-    screen = new BookingCarGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingCarGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case CRUISE_SCREEN:   // Cruise maint
-    screen = new BookingCruiseGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingCruiseGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case ITEM_SCREEN: // Item maint
-    screen = new BookingItemGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingItemGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case TOUR_DETAIL_SCREEN:    // Tour detail
-    screen = new BookingTourDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingTourDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case OPTIONS_SCREEN: // Tour options selection
-    screen = new BookingAnswerGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingAnswerGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case CALENDAR_SCREEN: // Calendar maint
-    screen = new BookingCalendar(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingCalendar(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case FIT_SCREEN:    // FIT maint
-    screen = new BookingDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingDetailGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case VOUCHER_SCREEN: // Voucher maint
-    screen = new TourApTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new TourApTrxGridScreen(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 case ITIN_SCREEN: // Itinerary maint
-    screen = new BookingItinerary(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROSWER, properties);break;
+    screen = new BookingItinerary(null, screenLocation, parentScreen, null, ScreenConstants.DONT_DISPLAY_FIELD_DESC | ScreenConstants.DONT_PUSH_TO_BROWSER, properties);break;
 default:
     screen = null;
 }
@@ -23373,7 +23373,7 @@ return recPaymentHistory.distribute(this, recApTrx, m_recSelectApTrx);]]></Logic
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1606">
-		<LastChanged>2012-01-31T10:43:20</LastChanged>
+		<LastChanged>2013-01-22T05:45:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -23383,7 +23383,7 @@ return recPaymentHistory.distribute(this, recApTrx, m_recSelectApTrx);]]></Logic
 		<MethodClassName>PrepaymentDistScreen</MethodClassName>
 		<LogicSource><![CDATA[if (MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
     Map<String,Object> properties = new Hashtable<String,Object>();
@@ -34089,7 +34089,7 @@ return keyArea;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2762">
-		<LastChanged>2012-02-01T19:02:09</LastChanged>
+		<LastChanged>2013-01-22T05:56:08</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -34101,7 +34101,7 @@ return keyArea;]]></LogicSource>
 {
     if (strCommand.equalsIgnoreCase(BOOKING_ENTRY))
     {
-        iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;     // Must open a new window
+        iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
         strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
         strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
         if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
@@ -34221,7 +34221,7 @@ this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.AVAILABLE).removeLis
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2766">
-		<LastChanged>2012-02-01T19:02:09</LastChanged>
+		<LastChanged>2013-01-22T05:56:32</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -34232,7 +34232,7 @@ this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.AVAILABLE).removeLis
 		<LogicSource><![CDATA[if (strCommand != null)
 	if (strCommand.equalsIgnoreCase("Booking Entry"))
 {
-	iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;     // Must open a new window
+	iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
 	strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
 	strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
 	if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
@@ -34249,7 +34249,7 @@ return super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2767">
-		<LastChanged>2012-02-01T19:02:09</LastChanged>
+		<LastChanged>2013-01-22T05:57:05</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -34260,7 +34260,7 @@ return super;]]></LogicSource>
 		<LogicSource><![CDATA[if (strCommand != null)
 	if (strCommand.equalsIgnoreCase("Booking Entry"))
 {
-	iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;     // Must open a new window
+	iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
 	strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
 	strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
 	if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
@@ -35163,7 +35163,7 @@ super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="2847">
-		<LastChanged>2012-01-31T10:43:26</LastChanged>
+		<LastChanged>2013-01-22T05:55:45</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -35173,7 +35173,7 @@ super;]]></LogicSource>
 		<MethodClassName>BookingHotelScreen</MethodClassName>
 		<LogicSource><![CDATA[Record recHotel = this.getRecord(Hotel.HOTEL_FILE);
 if (strCommand.equalsIgnoreCase(Hotel.MEAL_DETAIL))
-	return (this.onForm(recHotel, Hotel.MEAL_PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, null) != null);
+	return (this.onForm(recHotel, Hotel.MEAL_PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER, null) != null);
 else
 	return super;]]></LogicSource>
 		<LogicThrows/>
@@ -47554,7 +47554,7 @@ this.addListener(new ApTrxStatusHandler(null));]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3640">
-		<LastChanged>2012-01-31T10:43:31</LastChanged>
+		<LastChanged>2013-01-22T05:45:08</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -47564,7 +47564,7 @@ this.addListener(new ApTrxStatusHandler(null));]]></LogicSource>
 		<MethodClassName>DepEstScreen</MethodClassName>
 		<LogicSource><![CDATA[if (MenuConstants.DISPLAY.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     int iDocMode = ApTrx.TOUR_AP_SCREEN | ScreenConstants.SELECT_MODE;
     Map<String,Object> properties = new Hashtable<String,Object>();
@@ -47820,7 +47820,7 @@ super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3658">
-		<LastChanged>2012-01-31T10:43:31</LastChanged>
+		<LastChanged>2013-01-22T05:45:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -47830,7 +47830,7 @@ super;]]></LogicSource>
 		<MethodClassName>InvoiceScreen</MethodClassName>
 		<LogicSource><![CDATA[if (MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
     Map<String,Object> properties = new Hashtable<String,Object>();
@@ -48160,7 +48160,7 @@ new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenCo
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3678">
-		<LastChanged>2012-01-31T10:43:31</LastChanged>
+		<LastChanged>2013-01-22T05:51:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -48170,7 +48170,7 @@ new SButtonBox(toolScreen.getNextLocation(ScreenConstants.NEXT_LOGICAL, ScreenCo
 		<MethodClassName>TourApTrxGridScreen</MethodClassName>
 		<LogicSource><![CDATA[if (Vendor.VENDOR_FILE.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     boolean bLinkGridToQuery = false;
     int iDocMode = ApTrx.VENDOR_AP_SCREEN;
@@ -48250,7 +48250,7 @@ if (!this.isContactDisplay())
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3681">
-		<LastChanged>2012-01-31T10:43:31</LastChanged>
+		<LastChanged>2013-01-22T05:49:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -48260,7 +48260,7 @@ if (!this.isContactDisplay())
 		<MethodClassName>VendorApTrxGridScreen</MethodClassName>
 		<LogicSource><![CDATA[if (Tour.TOUR_FILE.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_SAME_WINDOW | DBConstants.PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     boolean bLinkGridToQuery = false;
     int iDocMode = ApTrx.TOUR_AP_SCREEN;
@@ -52237,7 +52237,7 @@ return null;	// Never;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3877">
-		<LastChanged>2012-01-31T10:43:34</LastChanged>
+		<LastChanged>2013-01-22T05:51:20</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -52247,7 +52247,7 @@ return null;	// Never;]]></LogicSource>
 		<MethodClassName>ApTrxHeaderScreen</MethodClassName>
 		<LogicSource><![CDATA[if (MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     int iDocMode = ApTrx.VENDOR_AP_SCREEN | ScreenConstants.SELECT_MODE;
     Map<String,Object> properties = new Hashtable<String,Object>();
@@ -52656,7 +52656,7 @@ return super;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="3899">
-		<LastChanged>2012-01-31T10:43:34</LastChanged>
+		<LastChanged>2013-01-22T05:46:25</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -52666,7 +52666,7 @@ return super;]]></LogicSource>
 		<MethodClassName>BankTrxHeaderScreen</MethodClassName>
 		<LogicSource><![CDATA[if (MenuConstants.LOOKUP.equalsIgnoreCase(strCommand))
 {
-    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
     boolean bReadCurrentRecord = false;
     int iDocMode = ScreenConstants.DISPLAY_MODE | ScreenConstants.SELECT_MODE;
     Map<String,Object> properties = new Hashtable<String,Object>();
@@ -68474,7 +68474,7 @@ this.getMainRecord().addListener(new FileListener(null)
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="5194">
-		<LastChanged>2012-01-31T10:43:44</LastChanged>
+		<LastChanged>2013-01-22T05:55:18</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -68491,9 +68491,9 @@ if (startDate != null)
     map.put("StartDate", startDate);
 map.put("ReadOnly", Boolean.TRUE.toString());
 if (strCommand.equalsIgnoreCase(Product.PRICING_DETAIL))
-    return (this.onForm(recProduct, Product.PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, map) != null);
+    return (this.onForm(recProduct, Product.PRICING_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER, map) != null);
 else if (strCommand.equalsIgnoreCase(Product.INVENTORY_DETAIL))
-    return (this.onForm(recProduct, Product.INVENTORY_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER, map) != null);
+    return (this.onForm(recProduct, Product.INVENTORY_GRID_SCREEN, true, ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER, map) != null);
 else if (strCommand.equalsIgnoreCase(MessageLog.MESSAGE_LOG_FILE))
 {
     Record recMessageLog = new MessageLog(this);
@@ -68508,7 +68508,7 @@ else if (strCommand.equalsIgnoreCase(MessageLog.MESSAGE_LOG_FILE))
         properties.put(strReferenceFieldName, strReferenceID);
         properties.put(strReferenceTypeFieldName, strReferenceType);
     }
-    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+    iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
     this.onForm(recMessageLog, ScreenConstants.DISPLAY_MODE, false, iCommandOptions, false, properties);
     return true;
 }
@@ -74671,7 +74671,7 @@ new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenC
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="5654">
-		<LastChanged>2012-02-01T11:45:34</LastChanged>
+		<LastChanged>2013-01-22T05:54:30</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>800</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -74680,7 +74680,7 @@ new SCannedBox(toolScreen.getNextLocation(ScreenConstants.RIGHT_OF_LAST, ScreenC
 		<MethodInterface/>
 		<MethodClassName>BookingCalendar</MethodClassName>
 		<LogicSource><![CDATA[boolean bSuccess = super;
-iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROSWER;
+iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;
 Product record = null;
 Map<String,Object> properties = new Hashtable<String,Object>();
 
@@ -93866,7 +93866,7 @@ return true;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7192">
-		<LastChanged>2012-02-21T10:08:06</LastChanged>
+		<LastChanged>2013-01-22T05:50:59</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>doCommand</MethodName>
@@ -93918,7 +93918,7 @@ return true;]]></LogicSource>
         app.getMessageManager().sendMessage(message);
         
         String strMessage = app.getResources(ResourceConstants.DEFAULT_RESOURCE, true).getString("Remote action queued");
-        this.getTask().setStatusText(strMessage, Cursor.WAIT_CURSOR);
+        this.getTask().setStatusText(strMessage, Constants.WAIT);
     }
 }
 return super;]]></LogicSource>

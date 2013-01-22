@@ -10,8 +10,8 @@
 		<Type>module</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="2">
@@ -25,8 +25,8 @@
 		<Type>typedef long long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="3">
@@ -40,8 +40,8 @@
 		<Type>typedef string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="4">
@@ -55,8 +55,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="5">
@@ -70,8 +70,8 @@
 		<Type>typedef long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="14">
@@ -85,8 +85,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="15">
@@ -100,8 +100,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="16">
@@ -115,8 +115,8 @@
 		<Type>collection</Type>
 		<FieldValue>AlternateLanguageID</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="17">
@@ -130,8 +130,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="18">
@@ -145,8 +145,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="19">
@@ -160,8 +160,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="20">
@@ -175,8 +175,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="21">
@@ -190,8 +190,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="22">
@@ -205,8 +205,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="23">
@@ -220,8 +220,8 @@
 		<Type>collection</Type>
 		<FieldValue>CreditCard</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="24">
@@ -235,8 +235,8 @@
 		<Type>typedef long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="33">
@@ -250,8 +250,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="34">
@@ -265,8 +265,8 @@
 		<Type>EAddressType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="35">
@@ -280,8 +280,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="36">
@@ -295,8 +295,8 @@
 		<Type>collection</Type>
 		<FieldValue>ElectronicAddress</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="37">
@@ -310,8 +310,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="38">
@@ -325,8 +325,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="39">
@@ -340,8 +340,8 @@
 		<Type>ContentData</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="40">
@@ -355,8 +355,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="41">
@@ -370,8 +370,8 @@
 		<Type>collection</Type>
 		<FieldValue>Extension</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="42">
@@ -385,8 +385,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="43">
@@ -400,8 +400,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>profile</System>
+		<Maximum>10</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="44">
@@ -415,8 +415,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>20</Max>
-		<System>profile</System>
+		<Maximum>20</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="45">
@@ -430,8 +430,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>20</Max>
-		<System>profile</System>
+		<Maximum>20</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="46">
@@ -445,8 +445,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>profile</System>
+		<Maximum>6</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="47">
@@ -460,8 +460,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="48">
@@ -475,8 +475,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="49">
@@ -490,8 +490,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="50">
@@ -505,8 +505,8 @@
 		<Type>collection</Type>
 		<FieldValue>Membership</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="51">
@@ -520,8 +520,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="52">
@@ -535,8 +535,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>65</Max>
-		<System>profile</System>
+		<Maximum>65</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="53">
@@ -550,8 +550,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>20</Max>
-		<System>profile</System>
+		<Maximum>20</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="54">
@@ -565,8 +565,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>profile</System>
+		<Maximum>3</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="55">
@@ -580,8 +580,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>profile</System>
+		<Maximum>3</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="56">
@@ -595,8 +595,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="57">
@@ -610,8 +610,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="58">
@@ -625,8 +625,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>profile</System>
+		<Maximum>3</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="59">
@@ -640,8 +640,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>profile</System>
+		<Maximum>3</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="60">
@@ -655,8 +655,8 @@
 		<Type>collection</Type>
 		<FieldValue>Document</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="61">
@@ -670,8 +670,8 @@
 		<Type>typedef long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="67">
@@ -685,8 +685,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="68">
@@ -700,8 +700,8 @@
 		<Type>AddressType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="69">
@@ -715,8 +715,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>60</Max>
-		<System>profile</System>
+		<Maximum>60</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="70">
@@ -730,8 +730,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>60</Max>
-		<System>profile</System>
+		<Maximum>60</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="71">
@@ -745,8 +745,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>60</Max>
-		<System>profile</System>
+		<Maximum>60</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="72">
@@ -760,8 +760,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>60</Max>
-		<System>profile</System>
+		<Maximum>60</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="73">
@@ -775,8 +775,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>35</Max>
-		<System>profile</System>
+		<Maximum>35</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="74">
@@ -790,8 +790,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>35</Max>
-		<System>profile</System>
+		<Maximum>35</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="75">
@@ -805,8 +805,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>11</Max>
-		<System>profile</System>
+		<Maximum>11</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="76">
@@ -820,8 +820,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>profile</System>
+		<Maximum>3</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="77">
@@ -835,8 +835,8 @@
 		<Type>collection</Type>
 		<FieldValue>PostalAddress</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="78">
@@ -850,8 +850,8 @@
 		<Type>typedef long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="82">
@@ -865,8 +865,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="83">
@@ -880,8 +880,8 @@
 		<Type>CertificationType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="84">
@@ -895,8 +895,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="85">
@@ -910,8 +910,8 @@
 		<Type>collection</Type>
 		<FieldValue>ProfileCertification</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="86">
@@ -925,8 +925,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="87">
@@ -940,8 +940,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>profile</System>
+		<Maximum>3</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="88">
@@ -955,8 +955,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>profile</System>
+		<Maximum>6</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="89">
@@ -970,8 +970,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>8</Max>
-		<System>profile</System>
+		<Maximum>8</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="90">
@@ -985,8 +985,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>profile</System>
+		<Maximum>6</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="91">
@@ -1000,8 +1000,8 @@
 		<Type>EAddressType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="92">
@@ -1015,8 +1015,8 @@
 		<Type>collection</Type>
 		<FieldValue>PhoneNumber</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="93">
@@ -1030,8 +1030,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="94">
@@ -1045,8 +1045,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>profile</System>
+		<Maximum>10</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="95">
@@ -1060,8 +1060,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>65</Max>
-		<System>profile</System>
+		<Maximum>65</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="96">
@@ -1075,8 +1075,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>65</Max>
-		<System>profile</System>
+		<Maximum>65</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="97">
@@ -1090,8 +1090,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>65</Max>
-		<System>profile</System>
+		<Maximum>65</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="98">
@@ -1105,8 +1105,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>profile</System>
+		<Maximum>10</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="99">
@@ -1120,8 +1120,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>profile</System>
+		<Maximum>10</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="100">
@@ -1135,8 +1135,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>65</Max>
-		<System>profile</System>
+		<Maximum>65</Maximum>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="101">
@@ -1150,8 +1150,8 @@
 		<Type>collection</Type>
 		<FieldValue>string</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="102">
@@ -1165,8 +1165,8 @@
 		<Type>collection</Type>
 		<FieldValue>string</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="103">
@@ -1180,8 +1180,8 @@
 		<Type>collection</Type>
 		<FieldValue>string</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="104">
@@ -1195,8 +1195,8 @@
 		<Type>collection</Type>
 		<FieldValue>string</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="105">
@@ -1210,8 +1210,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="106">
@@ -1225,8 +1225,8 @@
 		<Type>ProfileType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="107">
@@ -1240,8 +1240,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="108">
@@ -1255,8 +1255,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="109">
@@ -1270,8 +1270,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="110">
@@ -1285,8 +1285,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="111">
@@ -1300,8 +1300,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="112">
@@ -1315,8 +1315,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="113">
@@ -1330,8 +1330,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="114">
@@ -1345,8 +1345,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="115">
@@ -1360,8 +1360,8 @@
 		<Type>PreferredRoomType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="116">
@@ -1375,8 +1375,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="117">
@@ -1390,8 +1390,8 @@
 		<Type>NameInfo</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="118">
@@ -1405,8 +1405,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="119">
@@ -1420,8 +1420,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="120">
@@ -1435,8 +1435,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="121">
@@ -1450,8 +1450,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="122">
@@ -1465,8 +1465,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="123">
@@ -1480,8 +1480,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="124">
@@ -1495,8 +1495,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="125">
@@ -1510,8 +1510,8 @@
 		<Type>AlternateLanguageIDs</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="126">
@@ -1525,8 +1525,8 @@
 		<Type>Documents</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="127">
@@ -1540,8 +1540,8 @@
 		<Type>CreditCards</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="128">
@@ -1555,8 +1555,8 @@
 		<Type>ElectronicAddresses</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="130">
@@ -1570,8 +1570,8 @@
 		<Type>Extensions</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="131">
@@ -1585,8 +1585,8 @@
 		<Type>Memberships</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="132">
@@ -1600,8 +1600,8 @@
 		<Type>PostalAddresses</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="133">
@@ -1615,8 +1615,8 @@
 		<Type>PhoneNumbers</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="134">
@@ -1630,8 +1630,8 @@
 		<Type>ProfileCertifications</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="135">
@@ -1645,8 +1645,8 @@
 		<Type>ProfileReferences</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="136">
@@ -1660,8 +1660,8 @@
 		<Type>SpecialRequests</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="137">
@@ -1675,8 +1675,8 @@
 		<Type>Comments</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="138">
@@ -1690,8 +1690,8 @@
 		<Type>RoutingHops</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="139">
@@ -1705,8 +1705,8 @@
 		<Type>comment</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="140">
@@ -1720,8 +1720,8 @@
 		<Type>interface</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="141">
@@ -1735,8 +1735,8 @@
 		<Type>const long</Type>
 		<FieldValue>1</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="142">
@@ -1750,8 +1750,8 @@
 		<Type>const long</Type>
 		<FieldValue>1</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="143">
@@ -1765,8 +1765,8 @@
 		<Type>method</Type>
 		<FieldValue>in string ServerName, in string UserName, in string Password</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="144">
@@ -1780,8 +1780,8 @@
 		<Type>method</Type>
 		<FieldValue>out Profile profile</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="145">
@@ -1795,8 +1795,8 @@
 		<Type>method</Type>
 		<FieldValue>in ProfileType profileType, in string ProfileID, in DateTime LastUpdated, out Profile profile</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="146">
@@ -1810,8 +1810,8 @@
 		<Type>method</Type>
 		<FieldValue>in CreditCard CreditCard, in EAddressType ElectronicAddress, in Membership Membership, in ProfileCertification Certification, in boolean AndFlag, out Profiles Profiles</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="147">
@@ -1825,8 +1825,8 @@
 		<Type>method</Type>
 		<FieldValue>in long ErrorNumber, in string LanguageID, out string ErrorString</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="148">
@@ -1840,8 +1840,8 @@
 		<Type>collection</Type>
 		<FieldValue>octet</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="149">
@@ -1855,8 +1855,8 @@
 		<Type>collection</Type>
 		<FieldValue>Profile</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>profile</System>
+		<Maximum/>
+		<SystemName>profile</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="150">
@@ -1870,8 +1870,8 @@
 		<Type>interface</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="151">
@@ -1885,8 +1885,8 @@
 		<Type>const long</Type>
 		<FieldValue>1</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="152">
@@ -1900,8 +1900,8 @@
 		<Type>const long</Type>
 		<FieldValue>1</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="153">
@@ -1915,8 +1915,8 @@
 		<Type>method</Type>
 		<FieldValue>in string ServerName, in string UserName, in string Password</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="154">
@@ -1930,8 +1930,8 @@
 		<Type>method</Type>
 		<FieldValue>out Notification AvailNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="155">
@@ -1945,8 +1945,8 @@
 		<Type>method</Type>
 		<FieldValue>out Notification RateAmountNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="156">
@@ -1960,8 +1960,8 @@
 		<Type>method</Type>
 		<FieldValue>out Notification HotelNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="157">
@@ -1975,8 +1975,8 @@
 		<Type>method</Type>
 		<FieldValue>out Notification InventoryNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="158">
@@ -1990,8 +1990,8 @@
 		<Type>method</Type>
 		<FieldValue>out Notification BookingRestrictionNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="159">
@@ -2005,8 +2005,8 @@
 		<Type>method</Type>
 		<FieldValue>out Notification HotelContentNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="160">
@@ -2020,8 +2020,8 @@
 		<Type>method</Type>
 		<FieldValue>in long ErrorNumber, in string LanguageID, out string ErrorString</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="161">
@@ -2035,8 +2035,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="162">
@@ -2050,8 +2050,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="163">
@@ -2065,8 +2065,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>availrate</System>
+		<Maximum>6</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="164">
@@ -2080,8 +2080,8 @@
 		<Type>BookingLimitStatusMessages</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="165">
@@ -2095,8 +2095,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="166">
@@ -2110,8 +2110,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="167">
@@ -2125,8 +2125,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="168">
@@ -2140,8 +2140,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="169">
@@ -2155,8 +2155,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="170">
@@ -2170,8 +2170,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="171">
@@ -2185,8 +2185,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="172">
@@ -2200,8 +2200,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="173">
@@ -2215,8 +2215,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="174">
@@ -2230,8 +2230,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="175">
@@ -2245,8 +2245,8 @@
 		<Type>typedef string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="176">
@@ -2260,8 +2260,8 @@
 		<Type>collection</Type>
 		<FieldValue>BookingLimitStatusMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="177">
@@ -2275,8 +2275,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="178">
@@ -2290,8 +2290,8 @@
 		<Type>short</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="179">
@@ -2305,8 +2305,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="180">
@@ -2320,8 +2320,8 @@
 		<Type>StatusApplicationControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="181">
@@ -2335,8 +2335,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="182">
@@ -2350,8 +2350,8 @@
 		<Type>collection</Type>
 		<FieldValue>FullPatternLOSStatusMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="183">
@@ -2365,8 +2365,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="184">
@@ -2380,8 +2380,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="185">
@@ -2395,8 +2395,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="186">
@@ -2410,8 +2410,8 @@
 		<Type>boolean</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="187">
@@ -2425,8 +2425,8 @@
 		<Type>StatusApplicationControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="188">
@@ -2440,8 +2440,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="190">
@@ -2455,8 +2455,8 @@
 		<Type>collection</Type>
 		<FieldValue>MinMaxLOSStatusMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="191">
@@ -2470,8 +2470,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="192">
@@ -2485,8 +2485,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="193">
@@ -2500,8 +2500,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="194">
@@ -2515,8 +2515,8 @@
 		<Type>boolean</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="195">
@@ -2530,8 +2530,8 @@
 		<Type>StatusApplicationControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="196">
@@ -2545,8 +2545,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="197">
@@ -2560,8 +2560,8 @@
 		<Type>TimeUnitType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="198">
@@ -2575,8 +2575,8 @@
 		<Type>typedef long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="199">
@@ -2590,8 +2590,8 @@
 		<Type>collection</Type>
 		<FieldValue>RateHurdleStatusMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="200">
@@ -2605,8 +2605,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="201">
@@ -2620,8 +2620,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="202">
@@ -2635,8 +2635,8 @@
 		<Type>StatusApplicationControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="203">
@@ -2650,8 +2650,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="204">
@@ -2665,8 +2665,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="205">
@@ -2680,8 +2680,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="206">
@@ -2695,8 +2695,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="207">
@@ -2710,8 +2710,8 @@
 		<Type>collection</Type>
 		<FieldValue>SimplePatternStatusMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="208">
@@ -2725,8 +2725,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="209">
@@ -2740,8 +2740,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="210">
@@ -2755,8 +2755,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="211">
@@ -2770,8 +2770,8 @@
 		<Type>boolean</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="212">
@@ -2785,8 +2785,8 @@
 		<Type>StatusApplicationControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="213">
@@ -2800,8 +2800,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="214">
@@ -2815,8 +2815,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="215">
@@ -2830,8 +2830,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>availrate</System>
+		<Maximum>10</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="216">
@@ -2845,8 +2845,8 @@
 		<Type>RateInventoryLevelControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="217">
@@ -2860,8 +2860,8 @@
 		<Type>DOWPattern</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="218">
@@ -2875,8 +2875,8 @@
 		<Type>boolean</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="219">
@@ -2890,8 +2890,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="220">
@@ -2905,8 +2905,8 @@
 		<Type>typedef string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="222">
@@ -2920,8 +2920,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="223">
@@ -2935,8 +2935,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="224">
@@ -2950,8 +2950,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="225">
@@ -2965,8 +2965,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>availrate</System>
+		<Maximum>10</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="226">
@@ -2980,8 +2980,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="227">
@@ -2995,8 +2995,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="229">
@@ -3010,8 +3010,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="230">
@@ -3025,8 +3025,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="231">
@@ -3040,8 +3040,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="232">
@@ -3055,8 +3055,8 @@
 		<Type>RateAmountMessages</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="233">
@@ -3070,8 +3070,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="234">
@@ -3085,8 +3085,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="235">
@@ -3100,8 +3100,8 @@
 		<Type>collection</Type>
 		<FieldValue>RateAmountMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="236">
@@ -3115,8 +3115,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="237">
@@ -3130,8 +3130,8 @@
 		<Type>RateInventoryLevelControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="238">
@@ -3145,8 +3145,8 @@
 		<Type>RateAmounts</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="239">
@@ -3160,8 +3160,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="240">
@@ -3175,8 +3175,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="241">
@@ -3190,8 +3190,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="242">
@@ -3205,8 +3205,8 @@
 		<Type>collection</Type>
 		<FieldValue>RateAmount</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="243">
@@ -3220,8 +3220,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="244">
@@ -3235,8 +3235,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="245">
@@ -3250,8 +3250,8 @@
 		<Type>DOWPattern</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="246">
@@ -3265,8 +3265,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="247">
@@ -3280,8 +3280,8 @@
 		<Type>AdditionalAdultAmounts</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="248">
@@ -3295,8 +3295,8 @@
 		<Type>AdditionalChildAmounts</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="249">
@@ -3310,8 +3310,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="250">
@@ -3325,8 +3325,8 @@
 		<Type>TimeUnitType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="251">
@@ -3340,8 +3340,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="252">
@@ -3355,8 +3355,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="253">
@@ -3370,8 +3370,8 @@
 		<Type>collection</Type>
 		<FieldValue>AdditionalAdultAmount</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="254">
@@ -3385,8 +3385,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="255">
@@ -3400,8 +3400,8 @@
 		<Type>short</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="256">
@@ -3415,8 +3415,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="257">
@@ -3430,8 +3430,8 @@
 		<Type>collection</Type>
 		<FieldValue>AdditionalChildAmount</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="258">
@@ -3445,8 +3445,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="259">
@@ -3460,8 +3460,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="260">
@@ -3475,8 +3475,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="261">
@@ -3490,8 +3490,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="262">
@@ -3505,8 +3505,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="263">
@@ -3520,8 +3520,8 @@
 		<Type>collection</Type>
 		<FieldValue>TaxAmount</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="264">
@@ -3535,8 +3535,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="265">
@@ -3550,8 +3550,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="266">
@@ -3565,8 +3565,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="267">
@@ -3580,8 +3580,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="268">
@@ -3595,8 +3595,8 @@
 		<Type>Percentage</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="269">
@@ -3610,8 +3610,8 @@
 		<Type>typedef long long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="270">
@@ -3625,8 +3625,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="271">
@@ -3640,8 +3640,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="272">
@@ -3655,8 +3655,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>availrate</System>
+		<Maximum>6</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="273">
@@ -3670,8 +3670,8 @@
 		<Type>HotelSummaryMessages</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="274">
@@ -3685,8 +3685,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="275">
@@ -3700,8 +3700,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="276">
@@ -3715,8 +3715,8 @@
 		<Type>collection</Type>
 		<FieldValue>HotelSummaryMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="277">
@@ -3730,8 +3730,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="278">
@@ -3745,8 +3745,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="279">
@@ -3760,8 +3760,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="280">
@@ -3775,8 +3775,8 @@
 		<Type>DOWPattern</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="281">
@@ -3790,8 +3790,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="282">
@@ -3805,8 +3805,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="283">
@@ -3820,8 +3820,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="284">
@@ -3835,8 +3835,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="285">
@@ -3850,8 +3850,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="286">
@@ -3865,8 +3865,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>availrate</System>
+		<Maximum>6</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="287">
@@ -3880,8 +3880,8 @@
 		<Type>BaseInventoryMessages</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="288">
@@ -3895,8 +3895,8 @@
 		<Type>OffSellInventoryMessages</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="289">
@@ -3910,8 +3910,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="290">
@@ -3925,8 +3925,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="291">
@@ -3940,8 +3940,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="292">
@@ -3955,8 +3955,8 @@
 		<Type>collection</Type>
 		<FieldValue>BaseInventoryMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="293">
@@ -3970,8 +3970,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="294">
@@ -3985,8 +3985,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>availrate</System>
+		<Maximum>10</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="295">
@@ -4000,8 +4000,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="296">
@@ -4015,8 +4015,8 @@
 		<Type>collection</Type>
 		<FieldValue>OffSellInventoryMessage</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="297">
@@ -4030,8 +4030,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="298">
@@ -4045,8 +4045,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="299">
@@ -4060,8 +4060,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="300">
@@ -4075,8 +4075,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="301">
@@ -4090,8 +4090,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="302">
@@ -4105,8 +4105,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>availrate</System>
+		<Maximum>10</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="303">
@@ -4120,8 +4120,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="304">
@@ -4135,8 +4135,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="305">
@@ -4150,8 +4150,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="306">
@@ -4165,8 +4165,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>availrate</System>
+		<Maximum>6</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="307">
@@ -4180,8 +4180,8 @@
 		<Type>StatusApplicationControl</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="308">
@@ -4195,8 +4195,8 @@
 		<Type>BookingRestrictions</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="309">
@@ -4210,8 +4210,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="310">
@@ -4225,8 +4225,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="311">
@@ -4240,8 +4240,8 @@
 		<Type>collection</Type>
 		<FieldValue>BookingRestriction</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="312">
@@ -4255,8 +4255,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="313">
@@ -4270,8 +4270,8 @@
 		<Type>Rules</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="314">
@@ -4285,8 +4285,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="315">
@@ -4300,8 +4300,8 @@
 		<Type>MinMaxAdults</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="316">
@@ -4315,8 +4315,8 @@
 		<Type>collection</Type>
 		<FieldValue>Rule</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="317">
@@ -4330,8 +4330,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="318">
@@ -4345,8 +4345,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="319">
@@ -4360,8 +4360,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="320">
@@ -4375,8 +4375,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="321">
@@ -4390,8 +4390,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="322">
@@ -4405,8 +4405,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="323">
@@ -4420,8 +4420,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="324">
@@ -4435,8 +4435,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="325">
@@ -4450,8 +4450,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="326">
@@ -4465,8 +4465,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="327">
@@ -4480,8 +4480,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="328">
@@ -4495,8 +4495,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="329">
@@ -4510,8 +4510,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="330">
@@ -4525,8 +4525,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="331">
@@ -4540,8 +4540,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="332">
@@ -4555,8 +4555,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>availrate</System>
+		<Maximum>3</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="333">
@@ -4570,8 +4570,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>availrate</System>
+		<Maximum>6</Maximum>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="334">
@@ -4585,8 +4585,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="335">
@@ -4600,8 +4600,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="336">
@@ -4615,8 +4615,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>availrate</System>
+		<Maximum/>
+		<SystemName>availrate</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="337">
@@ -4630,8 +4630,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="338">
@@ -4645,8 +4645,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>reservation</System>
+		<Maximum>3</Maximum>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="339">
@@ -4660,8 +4660,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>6</Max>
-		<System>reservation</System>
+		<Maximum>6</Maximum>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="340">
@@ -4675,8 +4675,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="341">
@@ -4690,8 +4690,8 @@
 		<Type>RateCodes</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="342">
@@ -4705,8 +4705,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="343">
@@ -4720,8 +4720,8 @@
 		<Type>Currency</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="344">
@@ -4735,8 +4735,8 @@
 		<Type>DateTimeSpan</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="345">
@@ -4750,8 +4750,8 @@
 		<Type>Profiles</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="346">
@@ -4765,8 +4765,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="347">
@@ -4780,8 +4780,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="348">
@@ -4795,8 +4795,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="349">
@@ -4810,8 +4810,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="350">
@@ -4825,8 +4825,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="351">
@@ -4840,8 +4840,8 @@
 		<Type>collection</Type>
 		<FieldValue>string</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="352">
@@ -4855,8 +4855,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="353">
@@ -4870,8 +4870,8 @@
 		<Type>DateTime</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="354">
@@ -4885,8 +4885,8 @@
 		<Type>TimeUnitType</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="355">
@@ -4900,8 +4900,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="357">
@@ -4915,8 +4915,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>3</Max>
-		<System>base</System>
+		<Maximum>3</Maximum>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="358">
@@ -4930,8 +4930,8 @@
 		<Type>long long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="359">
@@ -4945,8 +4945,8 @@
 		<Type>collection</Type>
 		<FieldValue>octet</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="360">
@@ -4960,8 +4960,8 @@
 		<Type>collection</Type>
 		<FieldValue>boolean</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="361">
@@ -4975,8 +4975,8 @@
 		<Type>collection</Type>
 		<FieldValue>AvailabilityRecord</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="362">
@@ -4990,8 +4990,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="363">
@@ -5005,8 +5005,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>180</Max>
-		<System>reservation</System>
+		<Maximum>180</Maximum>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="364">
@@ -5020,8 +5020,8 @@
 		<Type>AvailabilityRecordDetails</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="365">
@@ -5035,8 +5035,8 @@
 		<Type>collection</Type>
 		<FieldValue>AvailabilityRecordDetail</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="366">
@@ -5050,8 +5050,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="367">
@@ -5065,8 +5065,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>reservation</System>
+		<Maximum>10</Maximum>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="368">
@@ -5080,8 +5080,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>10</Max>
-		<System>reservation</System>
+		<Maximum>10</Maximum>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="369">
@@ -5095,8 +5095,8 @@
 		<Type>boolean</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="370">
@@ -5110,8 +5110,8 @@
 		<Type>DateTimeSpan</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="371">
@@ -5125,8 +5125,8 @@
 		<Type>RateAmounts</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="372">
@@ -5140,8 +5140,8 @@
 		<Type>Policies</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="373">
@@ -5155,8 +5155,8 @@
 		<Type>collection</Type>
 		<FieldValue>Policy</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="374">
@@ -5170,8 +5170,8 @@
 		<Type>struct</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="375">
@@ -5185,8 +5185,8 @@
 		<Type>long</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="376">
@@ -5200,8 +5200,8 @@
 		<Type>string</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max>20</Max>
-		<System>reservation</System>
+		<Maximum>20</Maximum>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="377">
@@ -5215,8 +5215,8 @@
 		<Type>interface</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="379">
@@ -5230,8 +5230,8 @@
 		<Type>const long</Type>
 		<FieldValue>1</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="380">
@@ -5245,8 +5245,8 @@
 		<Type>const long</Type>
 		<FieldValue>1</FieldValue>
 		<ReturnsValue/>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="381">
@@ -5260,8 +5260,8 @@
 		<Type>method</Type>
 		<FieldValue>in string ServerName, in string UserName, in string Password</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="382">
@@ -5275,8 +5275,8 @@
 		<Type>method</Type>
 		<FieldValue>in Notification ReservationNotification</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="383">
@@ -5290,8 +5290,8 @@
 		<Type>method</Type>
 		<FieldValue>in long ErrorNumber, in string LanguageID, out string ErrorString</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="384">
@@ -5305,8 +5305,8 @@
 		<Type>method</Type>
 		<FieldValue>in long LastSequenceNumber</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="385">
@@ -5320,8 +5320,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="386">
@@ -5335,8 +5335,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="387">
@@ -5350,8 +5350,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="388">
@@ -5365,8 +5365,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="389">
@@ -5380,8 +5380,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="390">
@@ -5395,8 +5395,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="391">
@@ -5410,8 +5410,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="392">
@@ -5425,8 +5425,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="393">
@@ -5440,8 +5440,8 @@
 		<Type>method</Type>
 		<FieldValue>in string fixthis</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="394">
@@ -5455,8 +5455,8 @@
 		<Type>method</Type>
 		<FieldValue>out AvailabilityQuery Query</FieldValue>
 		<ReturnsValue>long</ReturnsValue>
-		<Max/>
-		<System>reservation</System>
+		<Maximum/>
+		<SystemName>reservation</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="395">
@@ -5470,8 +5470,8 @@
 		<Type>module</Type>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System>base</System>
+		<Maximum/>
+		<SystemName>base</SystemName>
 		<Comments>N</Comments>
 	</Layout>
 	<Layout ID="397">
@@ -5485,8 +5485,8 @@
 		<Type/>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System/>
+		<Maximum/>
+		<SystemName/>
 		<Comments/>
 	</Layout>
 	<Layout ID="398">
@@ -5500,8 +5500,8 @@
 		<Type/>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System/>
+		<Maximum/>
+		<SystemName/>
 		<Comments/>
 	</Layout>
 	<Layout ID="399">
@@ -5515,8 +5515,8 @@
 		<Type/>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System/>
+		<Maximum/>
+		<SystemName/>
 		<Comments/>
 	</Layout>
 	<Layout ID="400">
@@ -5530,8 +5530,8 @@
 		<Type/>
 		<FieldValue/>
 		<ReturnsValue/>
-		<Max/>
-		<System/>
+		<Maximum/>
+		<SystemName/>
 		<Comments/>
 	</Layout>
 </file>

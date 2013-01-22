@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<ProgramControl ID="1">
-		<LastChanged>2012-11-27T23:57:57</LastChanged>
+		<LastChanged>2013-01-22T06:32:55</LastChanged>
 		<Deleted>N</Deleted>
 		<ProjectName>tourapp-tour</ProjectName>
 		<BaseDirectory>${user.home}/</BaseDirectory>
 		<SourceDirectory>src/main/java/</SourceDirectory>
+		<ResourcesDirectory>src/main/resources/</ResourcesDirectory>
 		<ClassDirectory>target/classes/</ClassDirectory>
 		<ArchiveDirectory>data/archive/</ArchiveDirectory>
+		<DevArchiveDirectory>workspace/workspace/app/tourapp/res/data/dev/src/main/resources</DevArchiveDirectory>
 		<ResourceType>Properties</ResourceType>
 		<ClassResourceType>ListResourceBundle</ClassResourceType>
 		<PackageName/>
