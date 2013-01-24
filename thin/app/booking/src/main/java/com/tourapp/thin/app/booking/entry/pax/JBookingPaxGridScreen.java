@@ -65,7 +65,7 @@ public class JBookingPaxGridScreen extends JGridScreen
         super.init(parent, obj);
 
         BaseApplet baseApplet = ((JBaseScreen)parent).getBaseApplet();
-        JTable jTable = this.getJTable();
+        JTable jTable = this.getControl();
         TableColumnModel columnModel = jTable.getColumnModel();
         TableColumn tableColumn = columnModel.getColumn(BookingPaxGridModel.ROOM_COLUMN);
 

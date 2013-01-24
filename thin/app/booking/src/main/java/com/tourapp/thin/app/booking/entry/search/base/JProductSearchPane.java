@@ -280,7 +280,7 @@ public class JProductSearchPane extends JBaseScreen
                                 bContextPanelCurrent = true;
                         if (iCurrentRow != -1)
                         {
-                            ((JGridScreen)screenDisplay).getJTable().clearSelection();
+                            ((JGridScreen)screenDisplay).getControl().clearSelection();
                             if (bContextPanelCurrent)
                                 searchTable.selectionChanged(this, -1, -1, org.jbundle.util.calendarpanel.event.MyListSelectionEvent.SELECT);
                         }
@@ -289,7 +289,7 @@ public class JProductSearchPane extends JBaseScreen
                         {
                             if (bContextPanelCurrent)
                             {
-                                ((JGridScreen)screenDisplay).getJTable().setRowSelectionInterval(iCurrentRow, iCurrentRow);
+                                ((JGridScreen)screenDisplay).getControl().setRowSelectionInterval(iCurrentRow, iCurrentRow);
                                 searchTable.selectionChanged(this, iCurrentRow, iCurrentRow, org.jbundle.util.calendarpanel.event.MyListSelectionEvent.SELECT);
                             }
                         }

@@ -216,7 +216,7 @@ public class JProductGridScreen extends JGridScreen
                 contextPanel.selectPanel(m_thinTableModel, JContextPanel.DISCONNECT);     // Don't access me anymore.
         }
 
-        if (this.getJTable() != null)
+        if (this.getControl() != null)
         {
             AbstractThinTableModel model = this.getGridModel();
             if (model != null)
