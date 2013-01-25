@@ -100455,7 +100455,7 @@ return iErrorCode;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>PingRequestJibxMessageOut2012A</MethodClassName>
+		<MethodClassName>PingRequestJibxMessageOut2012B</MethodClassName>
 		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
 String strMessage = message.getString(PingRequestMessageInProcessor.MESSAGE_PARAM);
 	
@@ -100480,7 +100480,7 @@ return root;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>PingResponseJibxMessageIn2012A</MethodClassName>
+		<MethodClassName>PingResponseJibxMessageIn2012B</MethodClassName>
 		<LogicSource><![CDATA[if (root instanceof PingRS)
 {       // Always
     PingRS msg = (PingRS)root;
@@ -100522,7 +100522,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>PingResponseJibxMessageOut2012A</MethodClassName>
+		<MethodClassName>PingResponseJibxMessageOut2012B</MethodClassName>
 		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
 String strMessage = message.getString(PingRequestMessageInProcessor.MESSAGE_PARAM);
 
@@ -100728,7 +100728,7 @@ new TourHeader(this);]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>HotelRateRequestSOAPMessageIn2012A</MethodClassName>
+		<MethodClassName>HotelRateRequestSOAPMessageIn2012B</MethodClassName>
 		<LogicSource><![CDATA[if (root instanceof AvailRQ)
 {       // Always
 	AvailRQ msg = (AvailRQ)root;
@@ -100788,7 +100788,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>HotelRateRequestSOAPMessageOut2012A</MethodClassName>
+		<MethodClassName>HotelRateRequestSOAPMessageOut2012B</MethodClassName>
 		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
     
 AvailRQ root = new AvailRQ();
@@ -100885,7 +100885,7 @@ return root;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>HotelRateResponseSOAPMsgReplyIn2012A</MethodClassName>
+		<MethodClassName>HotelRateResponseSOAPMsgReplyIn2012B</MethodClassName>
 		<LogicSource><![CDATA[if (root instanceof AvailRS)
 {
     AvailRS msg = (AvailRS)root;
@@ -100929,7 +100929,7 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>HotelRateResponseSOAPMsgReplyOut2012A</MethodClassName>
+		<MethodClassName>HotelRateResponseSOAPMsgReplyOut2012B</MethodClassName>
 		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
 HotelRateResponse hotelRateResponseOut = (HotelRateResponse)message.getMessageDataDesc(null);
 TrxMessageHeader messageHeader = (TrxMessageHeader)message.getMessageHeader();
@@ -101317,7 +101317,7 @@ return true;    // Handled]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>BaseJibxMessageIn2012A</MethodClassName>
+		<MethodClassName>BaseJibxMessageIn2012B</MethodClassName>
 		<LogicSource><![CDATA[super;
 
 OTAPayloadStdAttributes payloadStdAttributes = (OTAPayloadStdAttributes)msg;
@@ -101335,7 +101335,7 @@ OTAPayloadStdAttributes payloadStdAttributes = (OTAPayloadStdAttributes)msg;
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>PingRequestJibxMessageIn2012A</MethodClassName>
+		<MethodClassName>PingRequestJibxMessageIn2012B</MethodClassName>
 		<LogicSource><![CDATA[if (root instanceof PingRQ)
 {       // Always
     PingRQ msg = (PingRQ)root;
@@ -101363,7 +101363,7 @@ else
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>BaseJibxMessageOut2012A</MethodClassName>
+		<MethodClassName>BaseJibxMessageOut2012B</MethodClassName>
 		<LogicSource><![CDATA[super; // Doesn't hurt to try this
 
 OTAPayloadStdAttributes payloadStdAttributes = (OTAPayloadStdAttributes)msg;
@@ -101386,7 +101386,7 @@ payloadStdAttributes.setTarget(OTAPayloadStdAttributes.Target.PRODUCTION);]]></L
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>PingServiceActivator</MethodClassName>
-		<LogicSource>return new PingService2012AImpl(task, null, properties);</LogicSource>
+		<LogicSource>return new PingService2012BImpl(task, null, properties);</LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>
@@ -101401,7 +101401,7 @@ payloadStdAttributes.setTarget(OTAPayloadStdAttributes.Target.PRODUCTION);]]></L
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>PingServiceActivator</MethodClassName>
-		<LogicSource>return org.jibx.schema.org.opentravel._2012A.ping.ws.PingService.class;</LogicSource>
+		<LogicSource>return org.jibx.schema.org.opentravel._2012B.ping.ws.PingService.class;</LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>
@@ -101415,7 +101415,7 @@ payloadStdAttributes.setTarget(OTAPayloadStdAttributes.Target.PRODUCTION);]]></L
 		<LogicDescription/>
 		<MethodReturns>PingRS</MethodReturns>
 		<MethodInterface>PingRQ request</MethodInterface>
-		<MethodClassName>PingService2012AImpl</MethodClassName>
+		<MethodClassName>PingService2012BImpl</MethodClassName>
 		<LogicSource>return (PingRS)this.processMessage(request);</LogicSource>
 		<LogicThrows/>
 		<Protection/>
