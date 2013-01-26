@@ -58,15 +58,15 @@
   </properties>
 
   <profiles>
-    <!-- profile>
-      <id>dev</id>
+    <profile>
+      <id>switch</id>
       <activation>
-        <activeByDefault>true</activeByDefault>
+        <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
           <menu>Switch</menu>
       </properties>
-    </profile -->
+    </profile>
     <profile>
       <id>import</id>
       <activation>
