@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><file>
 	<TourHeaderDetail ID="1">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>14</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -70,7 +70,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="2">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>20</TourHeaderOptionID>
 		<ModifyCode>D</ModifyCode>
@@ -140,7 +140,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="3">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>21</TourHeaderOptionID>
 		<ModifyCode>D</ModifyCode>
@@ -210,7 +210,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="4">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>14</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -280,7 +280,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="5">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>14</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -350,7 +350,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="6">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>14</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -420,7 +420,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="7">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -490,7 +490,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="8">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -560,7 +560,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="9">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -630,7 +630,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="10">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -700,7 +700,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="11">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -770,7 +770,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="12">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -840,7 +840,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="13">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>13</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -910,7 +910,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="14">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>24</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -980,7 +980,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="15">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>24</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1050,7 +1050,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="16">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>24</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1120,7 +1120,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="17">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>24</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1190,7 +1190,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="18">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>26</TourHeaderOptionID>
 		<ModifyCode>R</ModifyCode>
@@ -1260,7 +1260,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="19">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>27</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1330,7 +1330,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="20">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>27</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1400,7 +1400,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="21">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>27</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1470,7 +1470,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="22">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>27</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1540,7 +1540,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="23">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>29</TourHeaderOptionID>
 		<ModifyCode>R</ModifyCode>
@@ -1610,7 +1610,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="24">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>30</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1680,7 +1680,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="25">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1750,7 +1750,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="26">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>32</TourHeaderOptionID>
 		<ModifyCode>D</ModifyCode>
@@ -1820,7 +1820,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="27">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1890,7 +1890,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="28">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -1960,7 +1960,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="29">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -2030,7 +2030,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="30">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -2100,7 +2100,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="31">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
 		<ModifyCode>D</ModifyCode>
@@ -2170,7 +2170,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="32">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
 		<ModifyCode>D</ModifyCode>
@@ -2240,7 +2240,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="33">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>20</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -2310,7 +2310,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="34">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>21</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -2380,7 +2380,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="35">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>42</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>
@@ -2450,7 +2450,7 @@
 		<PricingTypeID/>
 	</TourHeaderDetail>
 	<TourHeaderDetail ID="36">
-		<LastChanged>2012-09-21T18:07:02</LastChanged>
+		<LastChanged>2013-01-28T07:11:08</LastChanged>
 		<Deleted>N</Deleted>
 		<TourHeaderOptionID>43</TourHeaderOptionID>
 		<ModifyCode>A</ModifyCode>

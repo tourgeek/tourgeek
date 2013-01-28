@@ -11,9 +11,9 @@
 		<VendorID>1</VendorID>
 		<TourID>4</TourID>
 		<ProductTypeID>3</ProductTypeID>
-		<StartServiceDate>2012-12-07</StartServiceDate>
-		<EndServiceDate>2012-12-12</EndServiceDate>
-		<FinalizationDate>2012-10-01</FinalizationDate>
+		<StartServiceDate>2013-04-07</StartServiceDate>
+		<EndServiceDate>2013-04-12</EndServiceDate>
+		<FinalizationDate>2013-02-01</FinalizationDate>
 		<OrderDate/>
 		<AcknowledgeDate/>
 		<AcknowledgedOn/>
@@ -69,9 +69,9 @@
 		<VendorID>1</VendorID>
 		<TourID>4</TourID>
 		<ProductTypeID>9</ProductTypeID>
-		<StartServiceDate>2012-12-07</StartServiceDate>
-		<EndServiceDate>2012-12-12</EndServiceDate>
-		<FinalizationDate>2012-10-01</FinalizationDate>
+		<StartServiceDate>2013-04-07</StartServiceDate>
+		<EndServiceDate>2013-04-12</EndServiceDate>
+		<FinalizationDate>2013-02-01</FinalizationDate>
 		<OrderDate/>
 		<AcknowledgeDate/>
 		<AcknowledgedOn/>
@@ -127,9 +127,9 @@
 		<VendorID>48</VendorID>
 		<TourID>4</TourID>
 		<ProductTypeID>0</ProductTypeID>
-		<StartServiceDate>2012-12-06</StartServiceDate>
-		<EndServiceDate>2012-12-06</EndServiceDate>
-		<FinalizationDate>2012-10-01</FinalizationDate>
+		<StartServiceDate>2013-04-06</StartServiceDate>
+		<EndServiceDate>2013-04-06</EndServiceDate>
+		<FinalizationDate>2013-02-01</FinalizationDate>
 		<OrderDate/>
 		<AcknowledgeDate/>
 		<AcknowledgedOn/>
