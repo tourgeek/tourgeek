@@ -35,7 +35,7 @@
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Wed Mar 14 15:29:25 PDT 2012
-userArchiveFolder=/home/don/workspace/workspace/tourapp/res/data/test/src/main/webapp/com/tourapp/res/data/test_data/current_test_data
+userArchiveFolder=/home/don/workspace/workspace/app/tourapp/res/data/test/src/main/resources/com/tourapp/res/data/test_data/current_test_data
 type=USER_DATA
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
@@ -3337,7 +3337,7 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Mon Sep 26 07:33:11 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/test/src/main/webapp/com/tourapp/res/data/test_data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/test/src/main/resources/com/tourapp/res/data/test_data
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
 		<Command/>
@@ -3741,7 +3741,7 @@ extension=xml
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Wed Oct 26 11:22:01 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/data/src/main/resources/org/jbundle/res/data
 local=Jdbc
 sourceDir=initial_data/current_initial_data
 standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
@@ -3801,7 +3801,7 @@ systemname=_base
 programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data
 systemname=_app
 ]]></Properties>
 		<Command/>
@@ -3819,7 +3819,7 @@ systemname=_app
 		<Properties><![CDATA[#Field properties
 #Wed Oct 26 11:17:05 PDT 2011
 programSharedDBName=program_test
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data
 systemname=_test
 ]]></Properties>
 		<Command/>
@@ -3851,7 +3851,7 @@ systemname=_test
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:17:17 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/org/jbundle/res/data
 type=USER_DATA
 ]]></Properties>
 		<Command>Z</Command>
@@ -3868,7 +3868,7 @@ type=USER_DATA
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 14:27:54 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/org/jbundle/res/data
 type=SHARED_DATA
 ]]></Properties>
 		<Command>Z</Command>
@@ -3885,7 +3885,7 @@ type=SHARED_DATA
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:17:36 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/org/jbundle/res/data
 type=USER_DATA
 database=main
 ]]></Properties>
@@ -3903,7 +3903,7 @@ database=main
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 14:28:19 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/org/jbundle/res/data
 type=SHARED_DATA
 database=main
 ]]></Properties>
@@ -3922,7 +3922,7 @@ database=main
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:15:02 PDT 2011
 locale=demo
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/org/jbundle/res/data
 language=demo
 ]]></Properties>
 		<Command/>
@@ -3940,7 +3940,7 @@ language=demo
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:14:30 PDT 2011
 locale=demoquick
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/org/jbundle/res/data
 language=demoquick
 ]]></Properties>
 		<Command/>
@@ -4084,7 +4084,7 @@ database=main
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 18:19:03 PDT 2011
 package=com.tourapp.*
-sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data
+sourcePrefix=/home/don/workspace/workspace/app/tourapp/res/data/data/src/main/resources/com/tourapp/res/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
@@ -4103,7 +4103,7 @@ sourcePrefix=/home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp
 programSharedDBName=program_test
 mainUserDBName=mainUserDBName
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data
 database=test
 ]]></Properties>
 		<Command/>
@@ -4123,7 +4123,7 @@ database=test
 programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data
+sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data
 ]]></Properties>
 		<Command/>
 		<Source/>
