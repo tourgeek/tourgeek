@@ -17,59 +17,59 @@
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.acctpay</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.acctrec</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.thin.app</groupId>
       <artifactId>com.tourapp.thin.app.booking</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <type>pom</type>
     </dependency>
     <dependency>
       <groupId>com.tourapp.thin.app</groupId>
       <artifactId>com.tourapp.thin.app.request</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.booking</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.genled</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.payroll</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.product</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.profile</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.thin</groupId>
         <artifactId>com.tourapp.thin.tour.request</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
     

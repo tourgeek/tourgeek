@@ -21,19 +21,19 @@
   <dependencies>
     <dependency>
       <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.model.tour.profile</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourapp.thin</groupId>
       <artifactId>com.tourapp.thin.tour.base</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.profile</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
 

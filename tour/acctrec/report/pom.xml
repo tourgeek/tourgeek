@@ -24,23 +24,23 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctrec.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.tour.acctrec.screen</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.model.tour.acctrec</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.acctrec</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
 

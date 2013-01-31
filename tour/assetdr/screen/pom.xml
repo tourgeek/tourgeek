@@ -24,33 +24,33 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.assetdr.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.model.tour.assetdr</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.genled.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.genled.screen</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.base</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.assetdr</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
 

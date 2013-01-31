@@ -27,38 +27,38 @@
     <dependency>	<!-- Get rid of this dependency -->
       <groupId>com.tourapp.thin.app</groupId>
       <artifactId>com.tourapp.thin.app.booking</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.base</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.genled.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctrec.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctpay.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.tour.message</artifactId>
     </dependency>
 
     <dependency>
       <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.model.tour.product</artifactId>
     </dependency>
     <dependency>
@@ -70,7 +70,7 @@
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.product</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
 

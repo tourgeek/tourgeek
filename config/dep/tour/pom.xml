@@ -17,172 +17,172 @@
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctpay.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctpay.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctpay.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctpay.air</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctrec.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctrec.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.acctrec.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.base</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.assetdr.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.assetdr.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.assetdr.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.assetdr.process</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.booking.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.booking.entry</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.booking.remote</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.booking.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.genled.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.genled.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.genled.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.genled.finstmt</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.payroll.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.payroll.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.payroll.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.product.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.product.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.profile.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.profile.detail</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.profile.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.request.db</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.request.screen</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.request.report</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.request.misc</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.message.jibx</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
         <groupId>com.tourapp.tour</groupId>
         <artifactId>com.tourapp.tour.util</artifactId>
-        <version>0.8.0-SNAPSHOT</version>
+        <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
   

@@ -17,24 +17,24 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.acctpay.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.booking.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.model.tour.acctpay</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.acctpay</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
 

@@ -17,16 +17,16 @@
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.genled.db</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>com.tourapp.tour.genled.finstmt</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourapp.model</groupId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <artifactId>com.tourapp.model.tour.genled</artifactId>
     </dependency>
     <dependency>
@@ -39,7 +39,7 @@
     <dependency>
       <groupId>com.tourapp.res</groupId>
       <artifactId>com.tourapp.res.tour.genled</artifactId>
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
     </dependency>
   </dependencies>
 

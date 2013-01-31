@@ -59,7 +59,7 @@
     <dependency>
       <groupId>com.tourapp.config</groupId>
       <artifactId>tourapp-config-dep-all</artifactId> 
-      <version>0.8.0-SNAPSHOT</version>
+      <version>${tourapp-version-range}</version>
       <type>pom</type>
     </dependency>
     <!-- dependency>
