@@ -35,7 +35,7 @@
 	            <argument>-Xmx512m</argument>
 	         -->
 	            <argument>-Djava.rmi.server.codebase=${jbundle.rmicodebase}</argument>
-	            <argument>-Djava.security.policy=${jbundle.policyfile}</argument>
+	            <argument>-Djava.security.policy=${jbundle-policyfile}</argument>
 	            <argument>messageserver=true</argument>
 	            <argument>appname=org.jbundle.main.msg.app.MessageServerActivator</argument>
 	            <argument>provider=${jbundle.server}</argument>
@@ -47,7 +47,7 @@
             </systemProperty>
             <systemProperty>
               <key>java.security.policy</key>
-              <value>${jbundle.policyfile}</value>
+              <value>${jbundle-policyfile}</value>
             </systemProperty>
           </systemProperties>
         </configuration>

@@ -14,10 +14,10 @@
   <packaging>bundle</packaging>
   
   <properties>
-    <jbundlePackageExport>
+    <jbundle-package-export>
     com.tourapp.tour.booking.remote.*;version=${project.version},
     com.tourapp.tour.booking.message.*;version=${project.version},
-    </jbundlePackageExport>
+    </jbundle-package-export>
   </properties>
 
   <dependencies>

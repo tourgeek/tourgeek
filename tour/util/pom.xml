@@ -15,11 +15,11 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageImport>
+    <jbundle-package-import>
       !org.w3c.tidy.*,	<!-- jtidy does not have an osgi header -->
       *;resolution:=optional,
       com.tourapp.res.tour.util;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>
@@ -57,7 +57,7 @@
 <dependency>
   <groupId>org.jibx.schema.org.opentravel._2012B</groupId>
   <artifactId>org.jibx.schema.org.opentravel._2012B.codetable</artifactId>
-  <version>${jibxSchemaVersion}</version>
+  <version>${jibx-schema-version}</version>
 </dependency>
 
     <dependency>
@@ -73,7 +73,7 @@
     <dependency>
       <groupId>org.jbundle.app.program</groupId>
       <artifactId>org.jbundle.app.program.screen</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
 
     <dependency>

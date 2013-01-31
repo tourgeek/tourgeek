@@ -43,7 +43,7 @@
     <dependency>
       <groupId>org.jbundle.base.message</groupId>
       <artifactId>org.jbundle.base.message.service</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>

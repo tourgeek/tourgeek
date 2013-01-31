@@ -22,7 +22,7 @@
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
       <artifactId>jbundle-config-dep-base</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
       <type>pom</type>
     </dependency>
 

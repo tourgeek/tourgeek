@@ -14,13 +14,13 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageExport>
+    <jbundle-package-export>
     com.tourapp.tour.product.*;version=${project.version},
-    </jbundlePackageExport>
-    <jbundlePackageImport>
+    </jbundle-package-export>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.product;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>
@@ -64,7 +64,7 @@
     <dependency>
       <groupId>org.jbundle.main</groupId>
       <artifactId>org.jbundle.main.msg</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
 
     <dependency>

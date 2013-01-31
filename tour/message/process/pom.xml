@@ -15,25 +15,25 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageExport>
+    <jbundle-package-export>
     com.tourapp.tour.message.*.in;version=${project.version},
     com.tourapp.tour.message.*.out;version=${project.version},
     com.tourapp.tour.message.*.screen;version=${project.version},
-    </jbundlePackageExport>
+    </jbundle-package-export>
   </properties>
 
   <dependencies>
     <dependency>
 	  <groupId>org.jbundle.config.dep</groupId>
 	  <artifactId>jbundle-config-dep-base</artifactId>
-	  <version>${jbundleVersionRange}</version>
+	  <version>${jbundle-version-range}</version>
 	  <type>pom</type>
     </dependency>
 
     <dependency>
       <groupId>org.jbundle.base.message</groupId>
       <artifactId>org.jbundle.base.message.jibx</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
 
     <dependency>

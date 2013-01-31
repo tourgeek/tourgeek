@@ -14,9 +14,9 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageExport>
+    <jbundle-package-export>
     com.tourapp.tour.product.*.screen;version=${project.version},
-    </jbundlePackageExport>
+    </jbundle-package-export>
   </properties>
 
   <dependencies>
@@ -38,7 +38,7 @@
     <dependency>
       <groupId>org.jbundle.main</groupId>
       <artifactId>org.jbundle.main.msg</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
 
     <dependency>

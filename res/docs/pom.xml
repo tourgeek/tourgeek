@@ -9,7 +9,7 @@
   </parent>
 
   <properties>
-    <jbundlePackage>*</jbundlePackage>	<!-- HACK FIX Bundle packages to export -->
+    <jbundle-package>*</jbundle-package>	<!-- HACK FIX Bundle packages to export -->
   </properties>
 
   <artifactId>com.tourapp.res.docs</artifactId>

@@ -12,10 +12,10 @@
   <name>tourapp-thin-tour-booking - Booking resources</name>
 
   <properties>
-    <jbundlePackageImport>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.booking;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>

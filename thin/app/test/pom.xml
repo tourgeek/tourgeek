@@ -36,22 +36,22 @@
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel</artifactId>
-      <version>${jbundleCalendarpanelVersion}</version>
+      <version>${jbundle-calendarpanel-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.thin.base.screen</groupId>
       <artifactId>org.jbundle.thin.base.screen.cal.other</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.thin.base.screen</groupId>
       <artifactId>org.jbundle.thin.base.screen.cal.grid</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.thin.opt</groupId>
       <artifactId>org.jbundle.thin.opt.location</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
   </dependencies>
 

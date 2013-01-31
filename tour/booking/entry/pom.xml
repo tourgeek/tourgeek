@@ -15,16 +15,16 @@
   <packaging>bundle</packaging>
   
   <properties>
-    <jbundlePackageExport>
+    <jbundle-package-export>
     com.tourapp.tour.booking.entry.*;version=${project.version},
     com.tourapp.tour.booking.lookup.*;version=${project.version},
-    </jbundlePackageExport>
-    <jbundlePackageImport>
+    </jbundle-package-export>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.booking;resolution:=optional,
       org.jbundle.res.images.tour.buttons;resolution:=optional,
       com.tourapp.tour.message.base.request.in;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>
@@ -58,7 +58,7 @@
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
       <artifactId>org.jbundle.base.screen.view.swing</artifactId>   <!-- Get rid of this dependency -->
-      <version>${jbundleSwingVersionRange}</version>
+      <version>${jbundle-swing-version-range}</version>
     </dependency>
   </dependencies>
 

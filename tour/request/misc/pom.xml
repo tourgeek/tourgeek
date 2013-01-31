@@ -14,10 +14,10 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageImport>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.request;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>
@@ -44,12 +44,12 @@
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
       <artifactId>org.jbundle.base.screen.view.html</artifactId>   <!-- Get rid of this dependency -->
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
       <artifactId>org.jbundle.base.screen.view.xml</artifactId>   <!-- Get rid of this dependency -->
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>

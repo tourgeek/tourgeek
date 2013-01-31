@@ -14,10 +14,10 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackageImport>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.assetdr;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>

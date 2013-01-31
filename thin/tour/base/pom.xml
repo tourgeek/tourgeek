@@ -12,10 +12,10 @@
   <name>tourapp-thin-tour-base - Base resources</name>
 
   <properties>
-    <jbundlePackageImport>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.base;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.jbundle.thin.main</groupId>
       <artifactId>org.jbundle.thin.main</artifactId>
-      <version>${jbundleVersionRange}</version>
+      <version>${jbundle-version-range}</version>
     </dependency>
     
     <dependency>

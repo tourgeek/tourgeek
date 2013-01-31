@@ -15,7 +15,7 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackage>org.jbundle.res.images</jbundlePackage>	<!-- I'll need to move these -->
+    <jbundle-package>org.jbundle.res.images</jbundle-package>	<!-- I'll need to move these -->
     <resourceLocation>src/main/resources/org/jbundle/res</resourceLocation>
   </properties>
 

@@ -64,14 +64,14 @@
 						<artifactItem>
 							<groupId>org.dojotoolkit</groupId>
 							<artifactId>dojo</artifactId>
-							<version>${dojoVersion}</version>
+							<version>${dojo-version}</version>
 							<type>zip</type>
 							<outputDirectory>${project.build.directory}</outputDirectory>
 						</artifactItem>
 						<artifactItem>
 							<groupId>org.jbundle.res</groupId>
 							<artifactId>org.jbundle.res.images</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundle-version}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -80,7 +80,7 @@
 						<artifactItem>
 							<groupId>org.jbundle.res</groupId>
 							<artifactId>org.jbundle.res.images.misc</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundle-version}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -89,7 +89,7 @@
                         <artifactItem>
                             <groupId>org.jbundle.res</groupId>
                             <artifactId>org.jbundle.res.docs</artifactId>
-                            <version>${jbundleVersion}</version>
+                            <version>${jbundle-version}</version>
                             <classifier>root</classifier>
                             <type>jar</type>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -100,7 +100,7 @@
                         <artifactItem>
                             <groupId>org.jbundle.util.osgi</groupId>
                             <artifactId>org.jbundle.res.docs.styles</artifactId>
-                            <version>${jbundleOsgiWebStartVersion}</version>
+                            <version>${jbundle-auto-webstart-version}</version>
                             <type>jar</type>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}
                             </outputDirectory>
@@ -119,7 +119,7 @@
 						<!-- artifactItem>
 							<groupId>org.jbundle.config.web</groupId>
 							<artifactId>jbundle-config-web-jnlp</artifactId>
-							<version>${jbundleVersion}</version>
+							<version>${jbundle-version}</version>
 							<classifier>bin</classifier>
 							<type>zip</type>
 							<outputDirectory>${project.build.directory}/${project.build.finalName}
@@ -165,7 +165,7 @@
 							</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${project.build.directory}/dojo-${dojoVersion}
+									<directory>${project.build.directory}/dojo-${dojo-version}
 									</directory>
 									<filtering>false</filtering>
 								</resource>
@@ -211,7 +211,7 @@
 	    <dependency>
 			<groupId>org.jbundle.config.web</groupId>
 			<artifactId>org.jbundle.config.web.httpservice</artifactId>
-			<version>${jbundleVersionRange}</version>
+			<version>${jbundle-version-range}</version>
 	    </dependency>
 	</dependencies>
 

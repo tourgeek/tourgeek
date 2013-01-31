@@ -14,7 +14,7 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundlePackage>com.tourapp.tour.message</jbundlePackage>	<!-- Bundle packages to export -->
+    <jbundle-package>com.tourapp.tour.message</jbundle-package>	<!-- Bundle packages to export -->
   </properties>
 
   <dependencies>
@@ -48,7 +48,7 @@
     <dependency>
 	  <groupId>org.jbundle.config.dep</groupId>
 	  <artifactId>jbundle-config-dep-base</artifactId>
-	  <version>${jbundleVersionRange}</version>
+	  <version>${jbundle-version-range}</version>
 	  <type>pom</type>
     </dependency>
   </dependencies>

@@ -15,19 +15,19 @@
   <packaging>bundle</packaging>
   
   <properties>
-    <jbundlePackageExport>
+    <jbundle-package-export>
     com.tourapp.tour.booking.db.*;version=${project.version},
     com.tourapp.tour.booking.detail.db.*;version=${project.version},
     com.tourapp.tour.booking.detail.event.*;version=${project.version},
     com.tourapp.tour.booking.history.db.*;version=${project.version},
     com.tourapp.tour.booking.inventory.db.*;version=${project.version},
     com.tourapp.tour.booking.message.base.screen.*;version=${project.version},
-    </jbundlePackageExport>
-    <jbundlePackageImport>
+    </jbundle-package-export>
+    <jbundle-package-import>
       *;resolution:=optional,
       com.tourapp.res.tour.booking;resolution:=optional,
       org.jbundle.res.images.tour.buttons;resolution:=optional,
-    </jbundlePackageImport>
+    </jbundle-package-import>
   </properties>
 
   <dependencies>

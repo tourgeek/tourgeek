@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>org.jbundle.config.dep</groupId>
 			<artifactId>jbundle-config-dep-all</artifactId>
-            <version>${jbundleVersionRange}</version>
+            <version>${jbundle-version-range}</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
@@ -73,37 +73,37 @@
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.proxy</artifactId>
-			<version>${jbundleUtilWebappVersionRange}</version>
+			<version>${jbundle-util-webapp-version-range}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<!-- dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.cgi</artifactId>
-			<version>${jbundleUtilWebappVersionRange}</version>
+			<version>${jbundle-util-webapp-version-range}</version>
 			<scope>provided</scope>
 		</dependency -->
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.upload</artifactId>
-			<version>${jbundleUtilWebappVersionRange}</version>
+			<version>${jbundle-util-webapp-version-range}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.webdav</artifactId>
-			<version>${jbundleUtilWebappVersionRange}</version>
+			<version>${jbundle-util-webapp-version-range}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.website</artifactId>
-			<version>${jbundleUtilWebappVersionRange}</version>
+			<version>${jbundle-util-webapp-version-range}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
           <groupId>org.jbundle.util.webapp</groupId>
           <artifactId>org.jbundle.util.webapp.base</artifactId>
-          <version>${jbundleUtilWebappVersionRange}</version>
+          <version>${jbundle-util-webapp-version-range}</version>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
         <dependency>
@@ -127,22 +127,22 @@
 		<dependency>
 			<groupId>org.jbundle.base.screen</groupId>
 			<artifactId>org.jbundle.base.screen.control.servlet</artifactId>
-            <version>${jbundleVersionRange}</version>
+            <version>${jbundle-version-range}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.screen</groupId>
 			<artifactId>org.jbundle.base.screen.control.xslservlet</artifactId>
-			<version>${jbundleVersionRange}</version>
+			<version>${jbundle-version-range}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jbundle.base.message</groupId>
 			<artifactId>org.jbundle.base.message.jaxm</artifactId>
-			<version>${jbundleVersionRange}</version>
+			<version>${jbundle-version-range}</version>
 		</dependency>
 		<dependency>
           <groupId>org.jbundle.config.web</groupId>
           <artifactId>org.jbundle.config.web.httpservice</artifactId>
-          <version>${jbundleVersionRange}</version>
+          <version>${jbundle-version-range}</version>
 		</dependency>
 
 		<dependency>
