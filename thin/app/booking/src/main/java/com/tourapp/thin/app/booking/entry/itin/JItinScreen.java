@@ -95,7 +95,7 @@ public class JItinScreen extends JBaseScreen
         // Now add listeners to update screen when data changes
         FieldList recTour = tourAppScreen.getTourRecord();
         FieldTable table = recTour.getTable();
-        RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable) table).getRemoteTableType(Remote.class);
+        RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)table).getRemoteTableType(Remote.class);
 
         MessageManager messageManager = tourAppScreen.getBaseApplet().getApplication().getMessageManager();
         BaseMessageReceiver messageReceiver = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();

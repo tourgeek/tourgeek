@@ -34,6 +34,7 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
 import org.jbundle.model.Remote;
+import org.jbundle.model.RemoteException;
 import org.jbundle.model.db.Convert;
 import org.jbundle.model.message.MessageManager;
 import org.jbundle.thin.base.db.Constants;
@@ -48,7 +49,6 @@ import org.jbundle.thin.base.message.JMessageListener;
 import org.jbundle.thin.base.message.MessageConstants;
 import org.jbundle.thin.base.message.event.ModelMessageHandler;
 import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.AbstractThinTableModel;

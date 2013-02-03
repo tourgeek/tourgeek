@@ -21,6 +21,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.RemoteException;
 import org.jbundle.model.message.MessageManager;
 import org.jbundle.model.message.MessageReceiver;
 import org.jbundle.thin.base.db.Constants;
@@ -35,7 +36,6 @@ import org.jbundle.thin.base.message.JMessageListener;
 import org.jbundle.thin.base.message.MessageConstants;
 import org.jbundle.thin.base.message.event.ModelMessageHandler;
 import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.AbstractThinTableModel;

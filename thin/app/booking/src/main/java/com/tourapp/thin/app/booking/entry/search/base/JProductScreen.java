@@ -26,13 +26,13 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import org.jbundle.model.Remote;
+import org.jbundle.model.RemoteException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.db.LinkedConverter;
 import org.jbundle.thin.base.db.Params;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.BaseApplet;
@@ -42,7 +42,6 @@ import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JFSTextScroller;
-import org.jbundle.thin.base.util.ThinUtil;
 import org.jbundle.thin.base.util.message.ThinMessageManager;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;

@@ -6,9 +6,9 @@ package com.tourapp.thin.app.booking.entry.pax;
 import java.util.Date;
 
 import org.jbundle.model.DBException;
+import org.jbundle.model.RemoteException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteTable;
 
 import com.tourapp.thin.app.booking.entry.TourAppScreen;

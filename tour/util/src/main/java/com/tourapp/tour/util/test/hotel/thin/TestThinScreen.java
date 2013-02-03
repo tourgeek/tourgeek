@@ -23,6 +23,7 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.text.JTextComponent;
 
+import org.jbundle.model.RemoteException;
 import org.jbundle.model.message.MessageManager;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
@@ -35,7 +36,6 @@ import org.jbundle.thin.base.message.BaseMessageReceiver;
 import org.jbundle.thin.base.message.JMessageListener;
 import org.jbundle.thin.base.message.MessageConstants;
 import org.jbundle.thin.base.message.session.ClientSessionMessageFilter;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.remote.RemoteTask;

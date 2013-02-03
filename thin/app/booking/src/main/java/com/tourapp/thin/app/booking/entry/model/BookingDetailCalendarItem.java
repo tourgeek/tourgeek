@@ -8,9 +8,9 @@ import java.util.Date;
 
 import javax.swing.ImageIcon;
 
+import org.jbundle.model.RemoteException;
 import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
-import org.jbundle.thin.base.remote.RemoteException;
 import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.popup.ProductTypeInfo;
