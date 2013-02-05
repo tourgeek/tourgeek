@@ -88,14 +88,12 @@
 						</artifactItem>
                         <artifactItem>
                             <groupId>org.jbundle.res</groupId>
-                            <artifactId>org.jbundle.res.docs</artifactId>
+                            <artifactId>org.jbundle.res.docs.styles.xsl</artifactId>
                             <version>${jbundle-version}</version>
                             <classifier>root</classifier>
                             <type>jar</type>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}
                             </outputDirectory>
-                            <excludes>docs\/programmer\/**,docs\/help\/specifications\/**,docs\/test\/**
-                            </excludes>
                         </artifactItem>
                         <artifactItem>
                             <groupId>org.jbundle.util.osgi</groupId>

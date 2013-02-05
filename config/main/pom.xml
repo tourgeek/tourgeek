@@ -53,10 +53,6 @@
 		</plugins>
 	</build>
 
-  <properties>
-        <projectName>tour</projectName>
-  </properties>
-
   <profiles>
     <profile>
       <id>switch</id>
