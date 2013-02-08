@@ -10,7 +10,6 @@ import javax.servlet.Servlet;
 import org.jbundle.base.model.DBConstants;
 import org.jbundle.base.model.Utility;
 import org.jbundle.base.util.Environment;
-import org.jbundle.base.util.EnvironmentActivator;
 import org.jbundle.model.Env;
 import org.jbundle.util.osgi.finder.ClassServiceUtility;
 import org.jbundle.util.webapp.base.BaseOsgiServlet;
@@ -22,9 +21,7 @@ import org.jbundle.util.webapp.base.WebappServlet;
 import org.jbundle.util.webapp.files.DefaultServlet;
 import org.jbundle.util.webapp.redirect.RedirectServlet;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceEvent;
 import org.osgi.service.http.HttpContext;
-import org.osgi.service.log.LogService;
 import org.osgi.util.tracker.ServiceTracker;
 
 /**
@@ -37,6 +34,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     public static final String DOWNLOAD = "download";
     public static final String GIT_WEB = "git-web";
     public static final String AWSTATS = "awstats";
+    public static final String REPOSITORY = "repository";
 
     public static final String JCALENDARBUTTON = JBUNDLE + "/jcalendarbutton";
     public static final String WEBAPP = JBUNDLE + "/webapp";
@@ -69,6 +67,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             CALENDARPANEL_JNLP,
             CALENDARPANEL,
 //            AWSTATS,
+            REPOSITORY,
             DEMO,
             DOWNLOAD,
 //            GIT_WEB,
@@ -217,6 +216,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     || (OSGI.equalsIgnoreCase(alias))
                     || (JBUNDLE_SITE.equalsIgnoreCase(alias))
                     || (PICTURES.equalsIgnoreCase(alias))
+                    || (REPOSITORY.equalsIgnoreCase(alias))
                     || (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
                     || (WEBAPP_WEBSTART_APPLET.equalsIgnoreCase(alias))
                         )
@@ -228,6 +228,12 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     properties.put(RedirectServlet.MATCH, ".*");
                     properties.remove(BaseOsgiServlet.BASE_PATH);        
                     properties.put(RedirectServlet.TARGET, "/" + AUTO_WEBSTART);
+                }
+                if (REPOSITORY.equalsIgnoreCase(alias))
+                {   // Lives at jbundle/repository, served from /repository
+                    this.addRedirectProperties(JBUNDLE + "/" + alias, properties);
+                    properties.remove(RedirectServlet.MATCH);
+                    properties.remove(RedirectServlet.TARGET);
                 }
             }
         } catch (Exception e) {
