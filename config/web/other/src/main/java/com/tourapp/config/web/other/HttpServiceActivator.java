@@ -41,6 +41,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     public static final String JCALENDARBUTTON = JBUNDLE + "/jcalendarbutton";
     public static final String WEBAPP = JBUNDLE + "/webapp";
     public static final String OSGI_WEBSTART = JBUNDLE + "/osgi-webstart";
+    public static final String AUTO_WEBSTART = JBUNDLE + "/auto-webstart";
     public static final String OSGI = JBUNDLE + "/osgi";
     public static final String JBUNDLE_SITE = JBUNDLE + "/jbundle";
     public static final String CALENDARPANEL = JBUNDLE + "/calendarpanel";
@@ -83,6 +84,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             NOTES,
             PICTURES,
             WEBAPP,
+            AUTO_WEBSTART,
             OSGI_WEBSTART,
             OSGI,
             JBUNDLE_SITE,
@@ -210,6 +212,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     || (JCALENDARBUTTON.equalsIgnoreCase(alias))
                     || (CALENDARPANEL.equalsIgnoreCase(alias))
                     || (WEBAPP.equalsIgnoreCase(alias))
+                    || (AUTO_WEBSTART.equalsIgnoreCase(alias))
                     || (OSGI_WEBSTART.equalsIgnoreCase(alias))
                     || (OSGI.equalsIgnoreCase(alias))
                     || (JBUNDLE_SITE.equalsIgnoreCase(alias))
@@ -220,6 +223,12 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             {   // Everything else is a pointer to a static resource
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 this.addRedirectProperties(alias, properties);
+                if (OSGI_WEBSTART.equalsIgnoreCase(alias))
+                {
+                    properties.put(RedirectServlet.MATCH, ".*");
+                    properties.remove(BaseOsgiServlet.BASE_PATH);        
+                    properties.put(RedirectServlet.TARGET, "/" + AUTO_WEBSTART);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
