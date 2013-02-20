@@ -8,7 +8,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2012-06-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2012-11-24T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights (Double)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -25,6 +25,6 @@
 		<PaxGroups/>
 		<BookingDetailID>13</BookingDetailID>
 		<PaxCategoryID>2</PaxCategoryID>
-		<HistoryDate>2012-04-01T15:22:05</HistoryDate>
+		<HistoryDate>2012-09-01T15:22:05</HistoryDate>
 	</BookingLineHistory>
 </file>
