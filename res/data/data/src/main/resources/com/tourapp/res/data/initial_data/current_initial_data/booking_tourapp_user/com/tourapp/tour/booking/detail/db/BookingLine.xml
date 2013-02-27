@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+<?xml version="1.0" encoding="UTF-8"?><file>
 	<BookingLine ID="1">
 		<LastChanged>2012-09-21T18:07:21</LastChanged>
 		<Deleted>N</Deleted>
@@ -7,7 +7,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>30</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2013-04-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-06T00:00:00</ModuleStartDate>
 		<Description>Single Supplement</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -33,7 +33,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>31</TourHeaderDetailID>
 		<TourHeaderOptionID>39</TourHeaderOptionID>
-		<ModuleStartDate>2013-04-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-06T00:00:00</ModuleStartDate>
 		<Description>Basic Tour Price</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -59,7 +59,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID>19</TourHeaderDetailID>
 		<TourHeaderOptionID>31</TourHeaderOptionID>
-		<ModuleStartDate>2013-04-06T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-06T00:00:00</ModuleStartDate>
 		<Description>Tour Cancellation Insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -85,7 +85,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2013-04-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-24T00:00:00</ModuleStartDate>
 		<Description>Tour cancellation insurance</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -111,7 +111,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2013-04-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -137,7 +137,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2013-04-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-24T00:00:00</ModuleStartDate>
 		<Description>Full Day Bangkok Sightseeing - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -163,7 +163,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2013-04-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-24T00:00:00</ModuleStartDate>
 		<Description>Airport - Hotel Transfer (Bangkok) - Seat in coach</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>
@@ -189,7 +189,7 @@
 		<ModuleID>4</ModuleID>
 		<TourHeaderDetailID/>
 		<TourHeaderOptionID/>
-		<ModuleStartDate>2013-04-24T00:00:00</ModuleStartDate>
+		<ModuleStartDate>2013-05-24T00:00:00</ModuleStartDate>
 		<Description>Dusit Thani Hotel - 5 nights (Double)</Description>
 		<ProductType/>
 		<RemoteReferenceNo/>

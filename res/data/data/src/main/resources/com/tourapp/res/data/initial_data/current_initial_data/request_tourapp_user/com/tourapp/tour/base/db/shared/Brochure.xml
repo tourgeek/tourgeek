@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+<?xml version="1.0" encoding="UTF-8"?><file>
 	<Brochure ID="1">
 		<LastChanged>2010-12-01T12:21:12</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Orient Adventures</Description>
-		<StartDate>2000-01-01</StartDate>
-		<EndDate>2000-12-31</EndDate>
+		<StartDate>2000-02-01</StartDate>
+		<EndDate>2001-01-31</EndDate>
 		<BrochureClassID>0</BrochureClassID>
 		<Discontinued>N</Discontinued>
 		<Request>Y</Request>
@@ -15,8 +15,8 @@
 		<LastChanged>2011-08-05T15:59:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Southeast Asia Adventure</Description>
-		<StartDate>1999-04-01</StartDate>
-		<EndDate>2000-06-30</EndDate>
+		<StartDate>1999-05-01</StartDate>
+		<EndDate>2000-07-31</EndDate>
 		<BrochureClassID>2</BrochureClassID>
 		<Discontinued>N</Discontinued>
 		<Request>Y</Request>

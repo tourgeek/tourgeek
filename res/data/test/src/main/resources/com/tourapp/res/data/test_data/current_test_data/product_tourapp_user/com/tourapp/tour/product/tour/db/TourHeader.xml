@@ -30,8 +30,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-11-01</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2012-12-01</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-1</TourType>
 		<TourSeries>Y</TourSeries>
 		<Days>8</Days>
@@ -74,8 +74,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-11-01</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2012-12-01</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-11</TourType>
 		<TourSeries/>
 		<Days/>
@@ -118,8 +118,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2013-03-01</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2013-04-01</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-3</TourType>
 		<TourSeries>N</TourSeries>
 		<Days>7</Days>
@@ -162,8 +162,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2013-07-26</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2013-08-26</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-7</TourType>
 		<TourSeries/>
 		<Days>4</Days>
@@ -206,8 +206,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2013-07-26</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2013-08-26</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-7</TourType>
 		<TourSeries/>
 		<Days>4</Days>
@@ -250,8 +250,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-11-01</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2012-12-01</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-7</TourType>
 		<TourSeries/>
 		<Days>5</Days>
@@ -294,8 +294,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2012-11-01</StartDate>
-		<EndDate>2014-10-31</EndDate>
+		<StartDate>2012-12-01</StartDate>
+		<EndDate>2014-11-30</EndDate>
 		<TourType>-11</TourType>
 		<TourSeries>N</TourSeries>
 		<Days/>
@@ -338,8 +338,8 @@
 		<ClassID/>
 		<ProductPriceLocal/>
 		<PPPriceLocal/>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2013-10-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2013-11-30</EndDate>
 		<TourType>-31</TourType>
 		<TourSeries>N</TourSeries>
 		<Days/>

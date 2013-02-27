@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+<?xml version="1.0" encoding="UTF-8"?><file>
 	<CompanyInfo ID="1">
 		<LastChanged>2012-09-21T18:05:48</LastChanged>
 		<Deleted>N</Deleted>
@@ -14,8 +14,8 @@
 		<Fax>(213) 555-1000</Fax>
 		<Email>info@tourgeek.com</Email>
 		<Web>www.tourgeek.com</Web>
-		<DateEntered>2009-09-05</DateEntered>
-		<DateChanged>2009-09-05</DateChanged>
+		<DateEntered>2009-10-05</DateEntered>
+		<DateChanged>2009-10-05</DateChanged>
 		<ChangedID>156</ChangedID>
 		<Comments/>
 		<UserID/>

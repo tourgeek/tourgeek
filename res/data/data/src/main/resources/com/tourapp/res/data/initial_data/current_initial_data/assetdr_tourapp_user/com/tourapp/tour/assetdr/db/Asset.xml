@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+<?xml version="1.0" encoding="UTF-8"?><file>
 	<Asset ID="1">
 		<LastChanged>2012-09-21T18:05:52</LastChanged>
 		<Deleted>N</Deleted>
@@ -7,7 +7,7 @@
 		<SerialNumber/>
 		<InventoryNo/>
 		<Location>Garage</Location>
-		<PurchaseDate>2008-12-03</PurchaseDate>
+		<PurchaseDate>2009-01-03</PurchaseDate>
 		<SaleDate/>
 		<FSDeprMethod>S</FSDeprMethod>
 		<FSLife>8</FSLife>

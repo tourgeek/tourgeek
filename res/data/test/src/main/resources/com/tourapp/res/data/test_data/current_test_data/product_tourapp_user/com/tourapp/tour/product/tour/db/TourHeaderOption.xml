@@ -57,8 +57,8 @@
 		<Comments/>
 		<AskForAnswer/>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<DaysOfWeek/>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -81,8 +81,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2012-08-01</StartDate>
-		<EndDate>2012-09-30</EndDate>
+		<StartDate>2012-09-01</StartDate>
+		<EndDate>2012-10-31</EndDate>
 		<DaysOfWeek/>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -105,8 +105,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2012-10-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<DaysOfWeek>62</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -129,8 +129,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2012-12-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2013-01-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<DaysOfWeek>0</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID>15</UseTourHeaderOptionID>
@@ -201,8 +201,8 @@
 		<Comments/>
 		<AskForAnswer>Y</AskForAnswer>
 		<AlwaysResolve>N</AlwaysResolve>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<DaysOfWeek>128</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -225,8 +225,8 @@
 		<Comments/>
 		<AskForAnswer>Y</AskForAnswer>
 		<AlwaysResolve>N</AlwaysResolve>
-		<StartDate>2012-02-01</StartDate>
-		<EndDate>2013-01-31</EndDate>
+		<StartDate>2012-03-01</StartDate>
+		<EndDate>2013-02-28</EndDate>
 		<DaysOfWeek>128</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -513,8 +513,8 @@
 		<Comments/>
 		<AskForAnswer/>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2012-10-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<DaysOfWeek>0</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -633,8 +633,8 @@
 		<Comments/>
 		<AskForAnswer>Y</AskForAnswer>
 		<AlwaysResolve>N</AlwaysResolve>
-		<StartDate>2012-11-01</StartDate>
-		<EndDate>2013-10-31</EndDate>
+		<StartDate>2012-12-01</StartDate>
+		<EndDate>2013-11-30</EndDate>
 		<DaysOfWeek>0</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -657,8 +657,8 @@
 		<Comments/>
 		<AskForAnswer/>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2013-02-01</StartDate>
-		<EndDate>2014-01-31</EndDate>
+		<StartDate>2013-03-01</StartDate>
+		<EndDate>2014-02-28</EndDate>
 		<DaysOfWeek>0</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -681,8 +681,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2013-08-01</StartDate>
-		<EndDate>2013-09-30</EndDate>
+		<StartDate>2013-09-01</StartDate>
+		<EndDate>2013-10-31</EndDate>
 		<DaysOfWeek>128</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -705,8 +705,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2013-12-01</StartDate>
-		<EndDate>2014-01-31</EndDate>
+		<StartDate>2014-01-01</StartDate>
+		<EndDate>2014-02-28</EndDate>
 		<DaysOfWeek>0</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID>40</UseTourHeaderOptionID>
@@ -729,8 +729,8 @@
 		<Comments/>
 		<AskForAnswer>Y</AskForAnswer>
 		<AlwaysResolve>N</AlwaysResolve>
-		<StartDate>2013-02-01</StartDate>
-		<EndDate>2014-01-31</EndDate>
+		<StartDate>2013-03-01</StartDate>
+		<EndDate>2014-02-28</EndDate>
 		<DaysOfWeek>128</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -753,8 +753,8 @@
 		<Comments/>
 		<AskForAnswer>Y</AskForAnswer>
 		<AlwaysResolve>N</AlwaysResolve>
-		<StartDate>2013-02-01</StartDate>
-		<EndDate>2014-01-31</EndDate>
+		<StartDate>2013-03-01</StartDate>
+		<EndDate>2014-02-28</EndDate>
 		<DaysOfWeek>128</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -777,8 +777,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2012-11-01</StartDate>
-		<EndDate>2013-10-31</EndDate>
+		<StartDate>2012-12-01</StartDate>
+		<EndDate>2013-11-30</EndDate>
 		<DaysOfWeek>60</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>
@@ -801,8 +801,8 @@
 		<Comments/>
 		<AskForAnswer>N</AskForAnswer>
 		<AlwaysResolve>Y</AlwaysResolve>
-		<StartDate>2011-11-01</StartDate>
-		<EndDate>2012-10-31</EndDate>
+		<StartDate>2011-12-01</StartDate>
+		<EndDate>2012-11-30</EndDate>
 		<DaysOfWeek>62</DaysOfWeek>
 		<Gateway/>
 		<UseTourHeaderOptionID/>

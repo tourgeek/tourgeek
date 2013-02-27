@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+<?xml version="1.0" encoding="UTF-8"?><file>
 	<AssetDrControl ID="1">
 		<LastChanged>2012-09-21T18:05:52</LastChanged>
 		<Deleted>N</Deleted>
@@ -7,6 +7,6 @@
 		<BankAcctID>2</BankAcctID>
 		<TrxStatusID>8</TrxStatusID>
 		<AccountID>109</AccountID>
-		<DateReconciled>2011-08-01T02:37:00</DateReconciled>
+		<DateReconciled>2011-09-01T02:37:00</DateReconciled>
 	</AssetDrControl>
 </file>
