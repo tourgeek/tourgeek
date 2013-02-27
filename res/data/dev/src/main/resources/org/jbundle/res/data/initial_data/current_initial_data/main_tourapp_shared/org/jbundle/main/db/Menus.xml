@@ -11743,4 +11743,26 @@ please click the following link:<br/>
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>
+	<Menus ID="1930">
+		<LastChanged>2012-05-01T16:15:41</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Office System Applet</Name>
+		<ParentFolderID>789</ParentFolderID>
+		<Sequence>50</Sequence>
+		<Comment/>
+		<Code/>
+		<Type>applet</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>org.jbundle.app.office.Main</Program>
+		<Params type="XML"><properties>
+   <comment>Field properties</comment>
+   <entry key="userid"/>
+   <entry key="systemname">office</entry>
+   <entry key="webStartPropertiesFile">/org/jbundle/res/webstart/app.properties</entry>
+</properties></Params>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
 </file>
