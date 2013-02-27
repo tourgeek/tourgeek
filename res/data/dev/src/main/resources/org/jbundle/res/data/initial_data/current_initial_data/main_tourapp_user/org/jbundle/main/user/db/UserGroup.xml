@@ -4,12 +4,7 @@
 		<Deleted>N</Deleted>
 		<Properties/>
 		<Description>Anonymous user</Description>
-		<AccessMap><![CDATA[*.anon.*	1	1	
-org.jbundle.app.office.*	2	1	
-org.jbundle.app.dance.*	2	1	
-org.jbundle.app.picture.*	2	1	
-org.jbundle.app.test.*	2	1	
-com.tourapp.tour.util.*	2	1	
+		<AccessMap><![CDATA[*.*	2	1	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="2">

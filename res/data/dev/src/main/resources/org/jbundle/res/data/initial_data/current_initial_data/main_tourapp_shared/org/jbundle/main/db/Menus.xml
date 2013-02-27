@@ -992,7 +992,7 @@
 		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Application Menu</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>10</Sequence>
 		<Comment/>
 		<Code>app</Code>
@@ -1977,10 +1977,10 @@
 	<Menus ID="789">
 		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>Home</Name>
+		<Name>Home Menu - Travel System</Name>
 		<ParentFolderID>0</ParentFolderID>
 		<Sequence>20</Sequence>
-		<Comment/>
+		<Comment>Main Travel System Menu</Comment>
 		<Code>Main</Code>
 		<Type>menu</Type>
 		<AutoDesc>Y</AutoDesc>
@@ -2114,7 +2114,7 @@
 		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Products</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>60</Sequence>
 		<Comment type="XML"><html>
 <body>
@@ -2917,7 +2917,7 @@
 		<LastChanged>2011-09-05T23:40:20</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Free Software</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>70</Sequence>
 		<Comment/>
 		<Code>Juggie</Code>
@@ -2948,7 +2948,7 @@ Thanks for visiting!</XmlData>
 		<LastChanged>2010-10-17T07:30:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Development menu</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>80</Sequence>
 		<Comment type="XML"><html>
 <body>
@@ -8026,7 +8026,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Travel Agent Menu</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code>travelagent</Code>
@@ -8043,7 +8043,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Vendor Menu</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>30</Sequence>
 		<Comment/>
 		<Code>vendor</Code>
@@ -8135,7 +8135,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Application main menu</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>40</Sequence>
 		<Comment>Full application menus</Comment>
 		<Code>management</Code>
@@ -8177,7 +8177,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Reservations main menu</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>50</Sequence>
 		<Comment/>
 		<Code>resagent</Code>
@@ -9980,7 +9980,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<LastChanged>2010-10-17T07:30:29</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Payroll menu (not used)</Name>
-		<ParentFolderID>789</ParentFolderID>
+		<ParentFolderID>1929</ParentFolderID>
 		<Sequence>90</Sequence>
 		<Comment/>
 		<Code>obsolete</Code>
@@ -11646,9 +11646,9 @@ please click the following link:<br/>
 	<Menus ID="1925">
 		<LastChanged>2012-05-01T16:15:41</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>New Applet</Name>
-		<ParentFolderID>1,909</ParentFolderID>
-		<Sequence>5</Sequence>
+		<Name>Travel System Applet</Name>
+		<ParentFolderID>789</ParentFolderID>
+		<Sequence>10</Sequence>
 		<Comment/>
 		<Code/>
 		<Type>applet</Type>
@@ -11723,6 +11723,23 @@ please click the following link:<br/>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1929">
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Web Menu - Travel System</Name>
+		<ParentFolderID>789</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment/>
+		<Code>Web</Code>
+		<Type>menu</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>Web</Program>
+		<Params/>
+		<IconResource/>
+		<Keywords>travel, tours</Keywords>
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>

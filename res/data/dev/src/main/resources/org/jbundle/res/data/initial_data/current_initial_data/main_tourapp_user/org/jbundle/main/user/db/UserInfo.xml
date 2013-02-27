@@ -659,32 +659,4 @@ contactTypeID=1
 		<ContactTypeID/>
 		<ContactID/>
 	</UserInfo>
-	<UserInfo ID="21">
-		<LastChanged>2012-09-21T18:07:30</LastChanged>
-		<Deleted>N</Deleted>
-		<Properties/>
-		<UserName/>
-		<FirstName/>
-		<LastName/>
-		<Extension/>
-		<Password/>
-		<TerminationDate/>
-		<ReadOnlyRecord/>
-		<UserGroupID>8</UserGroupID>
-		<UserReference/>
-		<Frames/>
-		<Menubars/>
-		<NavMenus/>
-		<Java/>
-		<Banners/>
-		<Logos/>
-		<Trailers/>
-		<HelpPage/>
-		<Language/>
-		<Home>Main</Home>
-		<Menu/>
-		<MenuDesc/>
-		<ContactTypeID/>
-		<ContactID/>
-	</UserInfo>
 </file>
