@@ -55,6 +55,15 @@
 
   <profiles>
     <profile>
+      <id>default</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+          <menu>app</menu>
+      </properties>
+    </profile>
+    <profile>
       <id>switch</id>
       <activation>
         <activeByDefault>false</activeByDefault>
