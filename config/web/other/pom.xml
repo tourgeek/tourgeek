@@ -57,9 +57,14 @@
 		<dependency>
 			<groupId>org.jbundle.config.dep</groupId>
 			<artifactId>jbundle-config-dep-all</artifactId>
-            <version>${jbundle-version-range}</version>
+                        <version>${jbundle-version-range}</version>
 			<type>pom</type>
 		</dependency>
+                <dependency>	
+                  <groupId>org.jbundle.base.screen</groupId>
+                  <artifactId>org.jbundle.base.screen.view.swing</artifactId>
+                  <version>${jbundle-swing-version-range}</version>
+                </dependency>
 		<dependency>
 			<groupId>org.jbundle.util.webapp</groupId>
 			<artifactId>org.jbundle.util.webapp.redirect</artifactId>
