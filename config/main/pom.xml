@@ -55,15 +55,6 @@
 
   <profiles>
     <profile>
-      <id>default</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-          <menu>app</menu>
-      </properties>
-    </profile>
-    <profile>
       <id>switch</id>
       <activation>
         <activeByDefault>false</activeByDefault>
@@ -127,12 +118,6 @@
         <artifactId>tourapp-config-dep-all</artifactId>
         <version>${tourapp-version-range}</version>
         <type>pom</type>
-        <exclusions>
-          <exclusion> <!-- Remove this - This will be fixed with the new version of JiBX -->
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-          </exclusion>
-        </exclusions>
     </dependency>
   </dependencies>
 
