@@ -11748,7 +11748,7 @@ please click the following link:<br/>
 		<Deleted>N</Deleted>
 		<Name>Office System Applet</Name>
 		<ParentFolderID>789</ParentFolderID>
-		<Sequence>50</Sequence>
+		<Sequence>30</Sequence>
 		<Comment/>
 		<Code/>
 		<Type>applet</Type>
