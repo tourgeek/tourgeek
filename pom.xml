@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.tourapp.config</groupId>
     <artifactId>tourapp-parent</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.3.0</version>
     <relativePath>../tourapp-parent</relativePath>
   </parent>
 
@@ -22,10 +22,24 @@
   </properties>
 
   <scm>
-    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/tourapp</url>
-    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/tourapp</connection>
-    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/tourapp</developerConnection>
+    <url>https://github.com/tourapp/tourapp</url>
+    <connection>scm:git:https://github.com/tourapp/tourapp</connection>
+    <developerConnection>scm:git:https://github.com/tourapp/tourapp</developerConnection>
   </scm>
+
+  <repositories>
+    <repository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 
   <modules>
     <module>res</module>
