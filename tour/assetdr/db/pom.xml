@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.tourapp.tour</groupId>
     <artifactId>tourapp-tour-assetdr-reactor</artifactId>
-    <version>0.8.0</version>
+    <version>0.8.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourapp.tour.assetdr.db</artifactId>
