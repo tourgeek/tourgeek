@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourapp-model-reactor</artifactId>
     <groupId>com.tourapp.model</groupId>
-    <version>0.8.0</version>
+    <version>0.8.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>tourapp-model-tour-reactor</artifactId>

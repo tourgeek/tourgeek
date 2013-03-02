@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-tour-genled-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.8.0</version>
+    <version>0.8.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourapp.tour.genled.finstmt</artifactId>
