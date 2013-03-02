@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-config-dep-reactor</artifactId>
     <groupId>com.tourapp.config</groupId>
-    <version>0.8.0-SNAPSHOT</version>
+    <version>0.8.0</version>
   </parent>
 
   <artifactId>tourapp-config-dep-thin</artifactId>
