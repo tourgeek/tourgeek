@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourapp-tour-acctpay-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.8.0-SNAPSHOT</version>
+    <version>0.8.0</version>
   </parent>
 
   <artifactId>com.tourapp.tour.acctpay.report</artifactId>

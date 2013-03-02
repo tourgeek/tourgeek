@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourapp-thin-app-reactor</artifactId>
     <groupId>com.tourapp.thin.app</groupId>
-    <version>0.8.0-SNAPSHOT</version>
+    <version>0.8.0</version>
   </parent>
 
   <artifactId>com.tourapp.thin.app.booking</artifactId>
