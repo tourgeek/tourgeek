@@ -10,6 +10,31 @@ Open Source Tour Industry Software.<br />
     <li>Tour Operation system powerful enough to handle those time-consuming tasks</li>
     <li>Fully integrated accounting</li>
 </ul>
-Contact us as <a href="mailto:don@donandann.com">don@donandann.com</a>
+      <p>
+If you would like to see a quick demo, try my hosting site.
+<a href="http://www.tourgeek.com">http://www.tourgeek.com</a>
+and click on the "demo" button.
+      </p>
+      <p>
+Setup is very simple.
+Just start up an OSGi container such as karaf and start the tourapp bundles:<br/>
+      </p>
+        <ul>
+          <li>Download, unzip, and start <a href="http://karaf.apache.org">apache-karaf</a>.</li>
+          <li>In karaf, type:<br/>
+            <code>
+            <i>karaf@root&gt;</i> shell:source mvn:org.jbundle.config/jbundle-artifacts//shell/setup
+            </code>
+          </li>
+          <li>Point your broswer to <a href="http://localhost:8181">http://localhost:8181</a>.</li>
+          <li>Click on the travel system applet icon to try out the tourapp system.</li>
+        </ul>
+      <p>
+      Note: By default, jbundle uses the derby database engine. The database will be located in your home directory at '.jbundle'.
+      </p>
+<i><b>Note:</b></i> Be patient the first time you run tourapp as there is a lot of automatic setup and configuration that needs to be done.
+      <p>
+Contact me at <a href="mailto:don@tourgeek.com">don@tourgeek.com</a>
+      </p>
 </span>
 </html>
