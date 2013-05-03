@@ -4,7 +4,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>71,984.43</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>2</AccountID>
@@ -17,7 +17,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>120</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>-279,867.69</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>49</AccountID>
@@ -30,7 +30,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>102,943.41</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>5</AccountID>
@@ -43,7 +43,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>52,481.52</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>1</AccountID>
@@ -56,7 +56,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>25,675.87</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>115</AccountID>
@@ -69,7 +69,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>2,839.89</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>116</AccountID>
@@ -82,7 +82,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>15,741.34</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>110</AccountID>
@@ -95,7 +95,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>118</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2012-11-29</TrxDate>
+		<TrxDate>2013-02-28</TrxDate>
 		<AmountLocal>8,201.23</AmountLocal>
 		<TrxEntry>2011-01-31</TrxEntry>
 		<AccountID>3</AccountID>
@@ -108,7 +108,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>439.18</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>4</AccountID>
@@ -121,7 +121,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>100,000.00</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>7</AccountID>
@@ -134,7 +134,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>11,993.95</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>10</AccountID>
@@ -147,7 +147,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>1,800.00</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>12</AccountID>
@@ -160,7 +160,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>1,500.00</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>13</AccountID>
@@ -173,7 +173,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>402.00</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>114</AccountID>
@@ -186,7 +186,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>18,459.57</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>21</AccountID>
@@ -199,7 +199,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>-7,194.60</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>22</AccountID>
@@ -212,7 +212,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>8,180.01</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>23</AccountID>
@@ -225,7 +225,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>-3,320.75</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>24</AccountID>
@@ -238,7 +238,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>-200,000.00</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>48</AccountID>
@@ -251,7 +251,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>-32,259.36</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>49</AccountID>
@@ -264,7 +264,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>1</TrxStatusID>
 		<TrxUserID>11</TrxUserID>
-		<TrxDate>2012-11-01</TrxDate>
+		<TrxDate>2013-02-01</TrxDate>
 		<AmountLocal>100,000.00</AmountLocal>
 		<TrxEntry>2011-01-01</TrxEntry>
 		<AccountID>9</AccountID>
@@ -277,7 +277,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>177</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-02-28</TrxDate>
+		<TrxDate>2013-05-28</TrxDate>
 		<AmountLocal>1,400.00</AmountLocal>
 		<TrxEntry>2011-04-30</TrxEntry>
 		<AccountID>2</AccountID>
@@ -290,7 +290,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>180</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-02-28</TrxDate>
+		<TrxDate>2013-05-28</TrxDate>
 		<AmountLocal>3,627.90</AmountLocal>
 		<TrxEntry>2011-04-30</TrxEntry>
 		<AccountID>10</AccountID>
@@ -303,7 +303,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>179</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-02-28</TrxDate>
+		<TrxDate>2013-05-28</TrxDate>
 		<AmountLocal>-3,627.90</AmountLocal>
 		<TrxEntry>2011-04-30</TrxEntry>
 		<AccountID>118</AccountID>
@@ -316,7 +316,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>183</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-05-30</TrxDate>
+		<TrxDate>2013-08-30</TrxDate>
 		<AmountLocal>3,627.90</AmountLocal>
 		<TrxEntry>2011-04-30</TrxEntry>
 		<AccountID>118</AccountID>
@@ -329,7 +329,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>184</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-05-30</TrxDate>
+		<TrxDate>2013-08-30</TrxDate>
 		<AmountLocal>-3,627.90</AmountLocal>
 		<TrxEntry>2011-04-30</TrxEntry>
 		<AccountID>52</AccountID>
@@ -342,7 +342,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>178</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-02-28</TrxDate>
+		<TrxDate>2013-05-28</TrxDate>
 		<AmountLocal>-1,400.00</AmountLocal>
 		<TrxEntry>2011-04-30</TrxEntry>
 		<AccountID>10</AccountID>
@@ -355,7 +355,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>177</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-03-28</TrxDate>
+		<TrxDate>2013-06-28</TrxDate>
 		<AmountLocal>3,427.90</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>2</AccountID>
@@ -368,7 +368,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>180</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-03-28</TrxDate>
+		<TrxDate>2013-06-28</TrxDate>
 		<AmountLocal>2,891.07</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>10</AccountID>
@@ -381,7 +381,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>179</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-03-28</TrxDate>
+		<TrxDate>2013-06-28</TrxDate>
 		<AmountLocal>-2,891.07</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>118</AccountID>
@@ -394,7 +394,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>183</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-05-30</TrxDate>
+		<TrxDate>2013-08-30</TrxDate>
 		<AmountLocal>2,891.07</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>118</AccountID>
@@ -407,7 +407,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>184</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-05-30</TrxDate>
+		<TrxDate>2013-08-30</TrxDate>
 		<AmountLocal>-2,891.07</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>52</AccountID>
@@ -420,7 +420,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>178</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-03-28</TrxDate>
+		<TrxDate>2013-06-28</TrxDate>
 		<AmountLocal>-3,427.90</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>10</AccountID>
@@ -433,7 +433,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>144</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-05-30</TrxDate>
+		<TrxDate>2013-08-30</TrxDate>
 		<AmountLocal>4,714.00</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>60</AccountID>
@@ -446,7 +446,7 @@
 		<Deleted>N</Deleted>
 		<TrxStatusID>145</TrxStatusID>
 		<TrxUserID>-1</TrxUserID>
-		<TrxDate>2013-05-30</TrxDate>
+		<TrxDate>2013-08-30</TrxDate>
 		<AmountLocal>-4,714.00</AmountLocal>
 		<TrxEntry>2011-05-31</TrxEntry>
 		<AccountID>35</AccountID>

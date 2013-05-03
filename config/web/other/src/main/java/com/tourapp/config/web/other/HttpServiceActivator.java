@@ -220,7 +220,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                     || (WEBAPP_WEBSTART.equalsIgnoreCase(alias))
                     || (WEBAPP_WEBSTART_APPLET.equalsIgnoreCase(alias))
                         )
-            {   // Everything else is a pointer to a static resource
+            {   // Everything else is a pointer to a static resource - Note: These resources are in the '/web' directory
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 this.addRedirectProperties(alias, properties);
                 if (OSGI_WEBSTART.equalsIgnoreCase(alias))

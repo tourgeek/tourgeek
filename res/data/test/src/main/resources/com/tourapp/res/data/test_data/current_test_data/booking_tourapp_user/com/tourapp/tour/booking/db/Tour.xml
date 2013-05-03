@@ -5,7 +5,7 @@
 		<Description>Hong Kong and Thailand 7 Day Group Tour #1</Description>
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
-		<DepartureDate>2013-01-24</DepartureDate>
+		<DepartureDate>2013-04-24</DepartureDate>
 		<TourStatusSummary/>
 		<TourStatusID>1</TourStatusID>
 		<ManualTourStatus>N</ManualTourStatus>
@@ -27,13 +27,13 @@
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2012-12-17</FinalizeDate>
-		<OrderCompDate>2012-12-22</OrderCompDate>
-		<ClosedDate>2012-12-22</ClosedDate>
-		<FinalDocDate>2012-12-27</FinalDocDate>
-		<TicketDate>2012-12-27</TicketDate>
-		<Sp1Date>2013-01-19</Sp1Date>
-		<Sp2Date>2013-01-24</Sp2Date>
+		<FinalizeDate>2013-03-17</FinalizeDate>
+		<OrderCompDate>2013-03-22</OrderCompDate>
+		<ClosedDate>2013-03-22</ClosedDate>
+		<FinalDocDate>2013-03-27</FinalDocDate>
+		<TicketDate>2013-03-27</TicketDate>
+		<Sp1Date>2013-04-19</Sp1Date>
+		<Sp2Date>2013-04-24</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -44,7 +44,7 @@
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2012-12-17</NextEventDate>
+		<NextEventDate>2013-03-17</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
@@ -54,7 +54,7 @@
 		<Description>Hong Kong and Thailand 7 Day Group Tour #2</Description>
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
-		<DepartureDate>2013-05-21</DepartureDate>
+		<DepartureDate>2013-08-21</DepartureDate>
 		<TourStatusSummary>#Field properties
 #Fri Apr 01 17:23:29 PDT 2011
 InfoStatusID.5=5,1301703720000
@@ -106,13 +106,13 @@ InfoStatusID.6=5,1301703721000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2013-04-16</FinalizeDate>
-		<OrderCompDate>2013-04-21</OrderCompDate>
-		<ClosedDate>2013-04-21</ClosedDate>
-		<FinalDocDate>2013-04-26</FinalDocDate>
-		<TicketDate>2013-04-26</TicketDate>
-		<Sp1Date>2013-05-16</Sp1Date>
-		<Sp2Date>2013-05-21</Sp2Date>
+		<FinalizeDate>2013-07-16</FinalizeDate>
+		<OrderCompDate>2013-07-21</OrderCompDate>
+		<ClosedDate>2013-07-21</ClosedDate>
+		<FinalDocDate>2013-07-26</FinalDocDate>
+		<TicketDate>2013-07-26</TicketDate>
+		<Sp1Date>2013-08-16</Sp1Date>
+		<Sp2Date>2013-08-21</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -123,7 +123,7 @@ InfoStatusID.6=5,1301703721000
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2013-04-16</NextEventDate>
+		<NextEventDate>2013-07-16</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
@@ -133,7 +133,7 @@ InfoStatusID.6=5,1301703721000
 		<Description>Hong Kong and Thailand 7 Day Group Tour #3</Description>
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
-		<DepartureDate>2013-09-17</DepartureDate>
+		<DepartureDate>2013-12-17</DepartureDate>
 		<TourStatusSummary/>
 		<TourStatusID>1</TourStatusID>
 		<ManualTourStatus/>
@@ -155,13 +155,13 @@ InfoStatusID.6=5,1301703721000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2013-08-13</FinalizeDate>
-		<OrderCompDate>2013-08-18</OrderCompDate>
-		<ClosedDate>2013-08-18</ClosedDate>
-		<FinalDocDate>2013-08-23</FinalDocDate>
-		<TicketDate>2013-08-23</TicketDate>
-		<Sp1Date>2013-09-12</Sp1Date>
-		<Sp2Date>2013-09-17</Sp2Date>
+		<FinalizeDate>2013-11-13</FinalizeDate>
+		<OrderCompDate>2013-11-18</OrderCompDate>
+		<ClosedDate>2013-11-18</ClosedDate>
+		<FinalDocDate>2013-11-23</FinalDocDate>
+		<TicketDate>2013-11-23</TicketDate>
+		<Sp1Date>2013-12-12</Sp1Date>
+		<Sp2Date>2013-12-17</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -172,7 +172,7 @@ InfoStatusID.6=5,1301703721000
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2013-08-13</NextEventDate>
+		<NextEventDate>2013-11-13</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>
@@ -182,7 +182,7 @@ InfoStatusID.6=5,1301703721000
 		<Description>Rieker - Seven day Bangkok Tour - Jul 6, 2011</Description>
 		<Code/>
 		<TourHeaderID>4</TourHeaderID>
-		<DepartureDate>2013-05-06</DepartureDate>
+		<DepartureDate>2013-08-06</DepartureDate>
 		<TourStatusSummary>#Field properties
 #Sun May 01 15:23:36 PDT 2011
 InfoStatusID.12=5,1301703875000
@@ -226,13 +226,13 @@ InfoStatusID.8=5,1301703872000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2013-04-06</FinalizeDate>
-		<OrderCompDate>2013-05-06</OrderCompDate>
-		<ClosedDate>2013-05-06</ClosedDate>
-		<FinalDocDate>2013-04-11</FinalDocDate>
-		<TicketDate>2013-04-06</TicketDate>
-		<Sp1Date>2013-04-26</Sp1Date>
-		<Sp2Date>2013-05-06</Sp2Date>
+		<FinalizeDate>2013-07-06</FinalizeDate>
+		<OrderCompDate>2013-08-06</OrderCompDate>
+		<ClosedDate>2013-08-06</ClosedDate>
+		<FinalDocDate>2013-07-11</FinalDocDate>
+		<TicketDate>2013-07-06</TicketDate>
+		<Sp1Date>2013-07-26</Sp1Date>
+		<Sp2Date>2013-08-06</Sp2Date>
 		<Finalized>Y</Finalized>
 		<OrderComponents>Y</OrderComponents>
 		<Closed>N</Closed>
@@ -243,7 +243,7 @@ InfoStatusID.8=5,1301703872000
 		<ServConf>Y</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2013-04-06</NextEventDate>
+		<NextEventDate>2013-07-06</NextEventDate>
 		<TourEventID>13</TourEventID>
 		<Properties/>
 	</Tour>
@@ -253,7 +253,7 @@ InfoStatusID.8=5,1301703872000
 		<Description>Winston - Seven day Bangkok Tour - Jul 24, 2011</Description>
 		<Code/>
 		<TourHeaderID>4</TourHeaderID>
-		<DepartureDate>2013-05-24</DepartureDate>
+		<DepartureDate>2013-08-24</DepartureDate>
 		<TourStatusSummary>#Field properties
 #Sun May 01 15:22:25 PDT 2011
 InfoStatusID.17=5,1304288496000
@@ -297,13 +297,13 @@ InventoryStatusID.13=5,1304288545000
 		<ItemClassID>1</ItemClassID>
 		<Focs/>
 		<FileNo/>
-		<FinalizeDate>2013-04-24</FinalizeDate>
-		<OrderCompDate>2013-05-24</OrderCompDate>
-		<ClosedDate>2013-05-24</ClosedDate>
-		<FinalDocDate>2013-04-29</FinalDocDate>
-		<TicketDate>2013-04-24</TicketDate>
-		<Sp1Date>2013-05-14</Sp1Date>
-		<Sp2Date>2013-05-24</Sp2Date>
+		<FinalizeDate>2013-07-24</FinalizeDate>
+		<OrderCompDate>2013-08-24</OrderCompDate>
+		<ClosedDate>2013-08-24</ClosedDate>
+		<FinalDocDate>2013-07-29</FinalDocDate>
+		<TicketDate>2013-07-24</TicketDate>
+		<Sp1Date>2013-08-14</Sp1Date>
+		<Sp2Date>2013-08-24</Sp2Date>
 		<Finalized>N</Finalized>
 		<OrderComponents>N</OrderComponents>
 		<Closed>N</Closed>
@@ -314,7 +314,7 @@ InventoryStatusID.13=5,1304288545000
 		<ServConf>N</ServConf>
 		<Departed>N</Departed>
 		<Cancelled/>
-		<NextEventDate>2013-04-24</NextEventDate>
+		<NextEventDate>2013-07-24</NextEventDate>
 		<TourEventID>8</TourEventID>
 		<Properties/>
 	</Tour>

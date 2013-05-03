@@ -31,4 +31,20 @@
 		<Message>Login</Message>
 		<UserLogTypeID>1</UserLogTypeID>
 	</UserLog>
+	<UserLog ID="5">
+		<LastChanged>2013-05-02T16:59:24</LastChanged>
+		<Deleted>N</Deleted>
+		<UserID>11</UserID>
+		<LogTime>2013-05-02T16:59:24</LogTime>
+		<Message>Login</Message>
+		<UserLogTypeID>1</UserLogTypeID>
+	</UserLog>
+	<UserLog ID="6">
+		<LastChanged>2013-05-02T16:59:26</LastChanged>
+		<Deleted>N</Deleted>
+		<UserID>11</UserID>
+		<LogTime>2013-05-02T16:59:26</LogTime>
+		<Message>Login</Message>
+		<UserLogTypeID>1</UserLogTypeID>
+	</UserLog>
 </file>
