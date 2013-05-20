@@ -4320,9 +4320,9 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Comment type="XML"><html>
 blog: <a href="http://blog.tourgeek.com">blog.tourgeek.com</a><br/>
 email: <a href="mailto:don@donandann.com">don@donandann.com</a><br/>
-voice: 626-358-2903<br/>
-cell: 626-358-2903<br/>
-voip: don@sip.tourgeek.com<br/>
+voice: <a href="tel:16263582903">626-358-2903</a><br/>
+cell: <a href="tel:16266648491">626-664-8491</a><br/>
+voip: <a href="sip:don@sip.tourgeek.com">don@sip.tourgeek.com</a><br/>
 skype: doncorley<br/>
 googletalk: don@donandann.com<br/>
 </html></Comment>
@@ -11762,6 +11762,25 @@ please click the following link:<br/>
    <entry key="systemname">office</entry>
    <entry key="webStartPropertiesFile">/org/jbundle/res/webstart/app.properties</entry>
 </properties></Params>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1931">
+		<LastChanged>2010-10-17T07:30:28</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Don's 1982 Trip to India</Name>
+		<ParentFolderID>1,331</ParentFolderID>
+		<Sequence>170</Sequence>
+		<Comment type="XML"><html>
+My 1982 Trip to India, England, and New York.
+</html></Comment>
+		<Code/>
+		<Type>link</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>pictures/docs/pics/orient1982/index.html</Program>
+		<Params/>
 		<IconResource/>
 		<Keywords/>
 		<XmlData/>
