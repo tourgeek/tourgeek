@@ -5,7 +5,7 @@
     <parent>
       <groupId>com.tourapp.tour</groupId>
       <artifactId>tourapp-tour-message-service-2012B-reactor</artifactId>
-      <version>0.8.1-SNAPSHOT</version>
+      <version>0.8.1</version>
     </parent>
 
     <artifactId>com.tourapp.tour.message.service._2012B.ping</artifactId>

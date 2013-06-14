@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.tourapp.config</groupId>
     <artifactId>tourapp-config-reactor</artifactId>
-    <version>0.8.1-SNAPSHOT</version>
+    <version>0.8.1</version>
   </parent>
 
   <artifactId>tourapp-config-server</artifactId>
