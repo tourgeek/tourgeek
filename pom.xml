@@ -23,8 +23,8 @@
 
   <scm>
     <url>https://github.com/tourapp/tourapp</url>
-    <connection>scm:git:git://github.com/tourapp/tourapp.git</connection>
-    <developerConnection>scm:git:git@github.com:tourapp/tourapp.git</developerConnection>
+    <connection>scm:git:https://github.com/tourapp/tourapp.git</connection>
+    <developerConnection>scm:git:https://github.com/tourapp/tourapp.git</developerConnection>
   </scm>
 
   <repositories>
