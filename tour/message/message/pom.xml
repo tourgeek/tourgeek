@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourapp-tour-message-reactor</artifactId>
     <groupId>com.tourapp.tour</groupId>
-    <version>0.8.1</version>
+    <version>0.8.2-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourapp.tour.message</artifactId>

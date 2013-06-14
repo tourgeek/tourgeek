@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourapp-config-reactor</artifactId>
     <groupId>com.tourapp.config</groupId>
-    <version>0.8.1</version>
+    <version>0.8.2-SNAPSHOT</version>
   </parent>
   <artifactId>tourapp-config-web-reactor</artifactId>
   <name>tourapp-config-web-reactor - Web projects parent</name>
