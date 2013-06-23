@@ -1,2 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+	<ClassInfo ID="2">
+		<LastChanged>2010-05-22T08:10:36</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc>Chart of Accounts demo record</ClassDesc>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain>General Ledger Chart of Accounts demo</ClassExplain>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="8">
+		<LastChanged>2010-10-17T07:30:27</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc>Chart of Accounts demo grid</ClassDesc>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="9">
+		<LastChanged>2010-05-22T08:10:46</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc>Chart of Accounts demo screen</ClassDesc>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="165">
+		<LastChanged/>
+		<Deleted>N</Deleted>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Demo.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
 </file>
