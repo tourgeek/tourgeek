@@ -1,2 +1,347 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
+	<ClassInfo ID="2">
+		<LastChanged>2010-05-21T15:30:21</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc>Chart of Accounts quick demos</ClassDesc>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="8">
+		<LastChanged>2010-05-21T15:45:35</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc>Chart of Accounts quick grid</ClassDesc>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="9">
+		<LastChanged>2010-05-21T15:45:19</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc>Chart of Accounts quick screen</ClassDesc>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp/>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="152">
+		<LastChanged>2010-05-21T15:53:45</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Booking menu quick.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="153">
+		<LastChanged>2010-05-23T06:49:48</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+From here, you select the basic tour for your proposal.
+</paragraph>
+<paragraph>
+You already have a basic tour that is pretty close to what you want:<br/>
+Select the "Seven Day Bangkok Tour" from the drop-down list to the right of the "Tour Code" field.<br/>
+Next, select a starting date for the tour from the "Departure Date" field, using the <help-link>
+<image>Calendar</image>
+</help-link>
+calendar popup button.
+</paragraph>
+<paragraph>
+The system will take a few seconds to populate your tour and look up all the tour information,
+availability, and pricing.
+</paragraph>
+<paragraph>
+Now that you have selected a tour, continue on to the
+<help-link>
+<name>Calendar screen</name>
+<image>tour/buttons/Calendar</image>
+<link>record=BookingCalendar</link>
+</help-link> to customize your tour.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="165">
+		<LastChanged>2010-05-21T15:51:34</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Bookings quick screen.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="168">
+		<LastChanged>2010-05-22T13:53:32</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Here you can see what your tour looks like.
+</paragraph>
+<paragraph>
+Looks pretty close to what you want. The only change you will make it to move the
+"Full Day Sightseeing" from the second day of your tour to the third day. Just drag it and drop
+it on the next day in the calendar.<br/>
+Hey, that was weird. The sighteeing didn't immediately move. There was a delay, then the
+icon started flashing. That was the system checking the information, availability, and pricing
+for the new date.
+</paragraph>
+<paragraph>
+Okay, you are ready to send this proposal to your agent. Just click on the
+<help-link>
+<name>Itinerary</name>
+<image>tour/buttons/Itinerary</image>
+<link>record=BookingItinerary</link>
+</help-link> screen to view your itinerary.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="173">
+		<LastChanged>2010-05-22T12:09:31</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Your sign-in for this quick demonstration is kate@tourgeek.com. Your password is the same password that you entered for your demo account.
+</paragraph>
+<paragraph>
+Once you sign-in, you will see a display of your current quotes and bookings. Click the
+<help-button>
+<name>Form</name>
+<link>screen=BookingMenuScreen</link>
+<image>Form</image>
+</help-button>
+button to start a new proposal.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="188">
+		<LastChanged>2010-05-23T06:00:53</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Enter the passengers on this screen.<br/>
+We'll assume the passengers are already in your system. Click the
+<help-button>
+<name>Select Passengers</name>
+<link>screen=PassengerLookup</link>
+<image>Lookup</image>
+</help-button>
+button to lookup the passengers.
+</paragraph>
+<paragraph>
+One your passengers are entered, continue on to the <help-button>
+<name>Tour</name>
+<link>screen=TourEntry</link>
+<image>tour/buttons/Tour</image>
+</help-button>
+button to select a main tour.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="189">
+		<LastChanged>2010-05-22T21:58:05</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Enter the passengers on this screen.<br/>
+We'll assume the passengers are already in your system. Click the
+<help-button>
+<name>Select Passengers</name>
+<link>screen=PassengerLookup</link>
+<image>Lookup</image>
+</help-button>
+button to lookup the passengers.
+</paragraph>
+<paragraph>
+One your passengers are entered, continue on to the <help-button>
+<name>Tour</name>
+<link>screen=TourEntry</link>
+<image>tour/buttons/Tour</image>
+</help-button>
+button to select a main tour.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="190">
+		<LastChanged>2010-05-21T15:52:55</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Booking header quick.
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="612">
+		<LastChanged>2010-05-22T12:55:51</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>
+Select a passenger from the profile system.<br/>
+Near the bottom of the list, click the
+<help-button>
+<name>select</name>
+<link>screen=PassengerLookup</link>
+<image>Select</image>
+</help-button>
+button to the left of "James Turn".
+</paragraph>
+<paragraph>
+After a few seconds, both James and Linda Turn will appear in your passenger screen
+(since they are linked).
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
+	<ClassInfo ID="1493">
+		<LastChanged>2010-05-23T06:54:10</LastChanged>
+		<Deleted/>
+		<ClassName/>
+		<BaseClassName/>
+		<ClassDesc/>
+		<ClassProjectID/>
+		<ClassPackage/>
+		<ClassSourceFile/>
+		<ClassType/>
+		<ClassExplain/>
+		<ClassHelp type="XML"><paragraph>This screen displays your itinerary.</paragraph>
+<paragraph>
+Looks good. Let's send it to our agent.
+(Since this is your demo, all the email addresses in the system are yours)<br/>
+Click on the
+<help-link>
+<name>email</name>
+<image>EMail</image>
+<link>record=BookingCalendar</link>
+</help-link>
+ button to the right of your email address.
+</paragraph>
+<paragraph>
+You're done! See I said it wouldn't take too long.
+</paragraph>
+<paragraph>
+Check your email. The proposed itinerarary should be there shortly.
+</paragraph>
+<paragraph>
+Check out some of the other demos. This system will simplify your tour operation considerably!
+</paragraph></ClassHelp>
+		<ClassImplements/>
+		<SeeAlso/>
+		<TechnicalInfo/>
+		<CopyDescFrom/>
+	</ClassInfo>
 </file>
