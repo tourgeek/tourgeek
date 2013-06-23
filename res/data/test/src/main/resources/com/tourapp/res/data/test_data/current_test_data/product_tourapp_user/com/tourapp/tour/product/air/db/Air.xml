@@ -38,8 +38,8 @@
 		<ArriveTime>15:55:00</ArriveTime>
 		<AddDays>1</AddDays>
 		<Meals>BLD</Meals>
-		<StartDate>2012-03-01</StartDate>
-		<EndDate>2014-02-28</EndDate>
+		<StartDate>2012-04-01</StartDate>
+		<EndDate>2014-03-31</EndDate>
 		<Equipment>747</Equipment>
 		<Days/>
 		<Classes>YQFB</Classes>
@@ -85,8 +85,8 @@
 		<ArriveTime>02:18:00</ArriveTime>
 		<AddDays>-1</AddDays>
 		<Meals>BLD</Meals>
-		<StartDate>2012-03-01</StartDate>
-		<EndDate>2014-02-28</EndDate>
+		<StartDate>2012-04-01</StartDate>
+		<EndDate>2014-03-31</EndDate>
 		<Equipment>747</Equipment>
 		<Days/>
 		<Classes>YQFB</Classes>
