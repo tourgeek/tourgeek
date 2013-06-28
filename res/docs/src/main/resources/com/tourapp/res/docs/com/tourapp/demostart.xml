@@ -1,0 +1,36 @@
+<HELP>
+<html>
+<a href="http://www.tourapp.com">
+<img border="0" src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
+<img border="0" src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /></a><br />
+<span style="font-size: large; font-style: bold">
+The Simple, Powerful, Affordable Tour Operator Software<br />
+</span>
+<hr />
+<span style="font-size: 12pt">
+Your private demo site is up and running!<p />
+Just go to <a href="http://{domainName}">http://{domainName}</a>.<p />
+To administer your new site, sign on using your current user name ({user}) and the password you just entered.<p />
+When you are prompted to enter a password for another user, use this same password.<p />
+
+<span style="font-size: 12pt; font-style: bold">
+With <a href="http://www.tourapp.com">tourapp.com</a> you can:<br />
+</span>
+<ul>
+	<li>Create simple tours or complicated custom-built FITs.</li>
+	<li>Easily order tour components from vendors.</li>
+	<li>Analyze your financial information with a complete accounting system.</li>
+</ul>
+<!-- 
+Check out the <a href="?xml=org/jbundle/res/docs/help/specifications/index.xml" onClick="if (tourapp) {return tourapp.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
+ -->
+</span>
+</html>
+<paragraph>
+<button-link>
+<name>Read our on-line manual</name>
+<link>?help=</link>
+<image>Help</image>
+</button-link>
+</paragraph>
+</HELP>

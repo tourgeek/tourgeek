@@ -1,10 +1,33 @@
+<HELP>
 <html>
 <img src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
 <img src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
-<span style="font-size: 14pt; font-style: bold">
-Your travel business, on-line.<p />
+<span style="font-size: large; font-style: bold">
+The Simple, Powerful, Open Source Tour Operator Software<br />
 </span>
-<span style="font-size: 16pt; font-style: bold">
-(About tourapp)
-</span>
+
+<p><b>tourapp<font color="orange">.</font>com</b> is the easy-to-use web-based Tour Operator solution
+that simplifies the complicated job of tour operation.</p>
+
+Contact info:<br/>
+<table border="0">
+<tr>
+<td>email:</td><td><img src="org/jbundle/res/images/buttons/EMail.gif"/></td><td><a href="mailto:info@tourapp.com">info@tourapp.com</a></td>
+</tr>
+<tr>
+<td>Phone:</td><td><img src="org/jbundle/res/images/buttons/Phone.gif"/></td><td><a href="tel:1-626-205-7017">1-626-205-7017</a></td>
+</tr>
+<tr>
+<td>SIPhone:</td><td><img src="org/jbundle/res/images/buttons/Phone.gif"/></td><td><a href="sip:don@sip.tourapp.com">don@sip.tourapp.com</a></td>
+</tr>
+<tr>
+<td>web:</td><td><img src="org/jbundle/res/images/buttons/URL.gif"/></td><td><a href="http://www.tourapp.com">www.tourapp.com</a></td>
+</tr>
+<tr>
+<td>fax:</td><td><img src="org/jbundle/res/images/buttons/Fax.gif"/></td><td><a href="tel:1-206-984-1331">1-206-984-1331</a></td>
+</tr>
+</table>
+
 </html>
+
+</HELP>
