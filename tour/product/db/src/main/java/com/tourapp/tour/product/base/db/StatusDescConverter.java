@@ -75,8 +75,14 @@ public class StatusDescConverter extends DescConverter
      */
     public String getString()
     {
-        ResourceBundle resources = ((BaseApplication)((BaseField)this.getField()).getRecord().getRecordOwner().getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
-        String strProductType = resources.getString(this.getProductType());
+        ResourceBundle resources = null;
+        if ((((BaseField)this.getField()).getRecord().getRecordOwner()) != null)
+        	if ((((BaseField)this.getField()).getRecord().getRecordOwner().getTask()) != null)
+        		if ((((BaseField)this.getField()).getRecord().getRecordOwner().getTask().getApplication()) != null)
+        	resources = ((BaseApplication)((BaseField)this.getField()).getRecord().getRecordOwner().getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
+        String strProductType = this.getProductType();
+        if (resources != null)
+        	strProductType = resources.getString(this.getProductType());
         int iStatus = (int)this.getValue();
         boolean bNormalStatus = true;
         if ((iStatus & (1 << BookingConstants.INFO_LOOKUP)) != 0)
