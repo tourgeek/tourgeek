@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <HELP>
 <html>
+<span style="font-size: large; font-style: bold">
 <p>
 <a href="http://www.tourapp.com">
 <img border="0" src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
 <img border="0" src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /></a><br />
-<span style="font-size: large; font-style: bold">
 The Simple, Powerful, Open Source Tour Industry Software.<br />
-</span>
 <ul>
     <li>Outbound tour operation software.<br/></li>
     <li>Flexible Booking system that can handle any type of tour from groups to FITs</li>
     <li>Tour Operation system powerful enough to handle those time-consuming tasks</li>
     <li>Fully integrated accounting</li>
 </ul>
+</p>
 <p>
 <ul>
 <li>Simplify the complicated job of tour operation.</li>
