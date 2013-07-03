@@ -63585,7 +63585,7 @@ return strProductType;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="4710">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2013-07-03T16:33:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>getString</MethodName>
@@ -63593,8 +63593,14 @@ return strProductType;]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>StatusDescConverter</MethodClassName>
-		<LogicSource><![CDATA[ResourceBundle resources = ((BaseApplication)((BaseField)this.getField()).getRecord().getRecordOwner().getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
-String strProductType = resources.getString(this.getProductType());
+		<LogicSource><![CDATA[ResourceBundle resources = null;
+if ((((BaseField)this.getField()).getRecord().getRecordOwner()) != null)
+       if ((((BaseField)this.getField()).getRecord().getRecordOwner().getTask()) != null)
+               if ((((BaseField)this.getField()).getRecord().getRecordOwner().getTask().getApplication()) != null)
+       resources = ((BaseApplication)((BaseField)this.getField()).getRecord().getRecordOwner().getTask().getApplication()).getResources(ResourceConstants.BOOKING_RESOURCE, true);
+String strProductType = this.getProductType();
+if (resources != null)
+       strProductType = resources.getString(this.getProductType());
 int iStatus = (int)this.getValue();
 boolean bNormalStatus = true;
 if ((iStatus & (1 << BookingConstants.INFO_LOOKUP)) != 0)
