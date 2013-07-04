@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourgeek/res/images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
 <span style="font-size: 16pt; font-style: bold">
-<img src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /><br />
+<img src="com/tourgeek/res/images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /><br />
 Tourgeek.com Tour Operator solution.<br />
 </span>
 <span style="font-size: 12pt"> Software to create, modify, and book tours on-line.<br />

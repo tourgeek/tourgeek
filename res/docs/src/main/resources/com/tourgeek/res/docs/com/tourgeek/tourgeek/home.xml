@@ -3,9 +3,9 @@
 <html>
 <span style="font-size: large; font-style: bold">
 <p>
-<a href="http://www.tourapp.com">
-<img border="0" src="com/tourapp/res/images/com/tourapp/logoblack.gif" align="left" alt="Logo" />
-<img border="0" src="com/tourapp/res/images/com/tourapp/nameblack.gif" alt="tourapp.com" /></a><br />
+<a href="http://www.tourgeek.com">
+<img border="0" src="com/tourgeek/res/images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
+<img border="0" src="com/tourgeek/res/images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
 The Simple, Powerful, Open Source Tour Industry Software.<br />
 <ul>
     <li>Outbound tour operation software.<br/></li>
@@ -23,7 +23,7 @@ The Simple, Powerful, Open Source Tour Industry Software.<br />
 </p>
       <p>
 Local setup is very simple.
-Just start up an OSGi container such as karaf and start the tourapp bundles:<br/>
+Just start up an OSGi container such as karaf and start the tourgeek bundles:<br/>
       </p>
         <ul>
           <li>Download, unzip, and start <a href="http://karaf.apache.org">apache-karaf</a>.</li>
@@ -33,14 +33,14 @@ Just start up an OSGi container such as karaf and start the tourapp bundles:<br/
             </code>
           </li>
           <li>Point your broswer to <a href="http://localhost:8181">http://localhost:8181</a>.</li>
-          <li>Click on the travel system applet icon to try out the tourapp system.</li>
+          <li>Click on the travel system applet icon to try out the tourgeek system.</li>
         </ul>
       <p>
       Note: By default, jbundle uses the derby database engine. The database will be located in your home directory at '.jbundle'.
       </p>
-<i><b>Note:</b></i> Be patient the first time you run tourapp as there is a lot of automatic setup and configuration that needs to be done.
+<i><b>Note:</b></i> Be patient the first time you run tourgeek as there is a lot of automatic setup and configuration that needs to be done.
       <p>
-Contact me at <a href="mailto:don@tourapp.com">don@tourapp.com</a>
+Contact me at <a href="mailto:don@tourgeek.com">don@tourgeek.com</a>
       </p>
 </span>
 </html>

@@ -4,7 +4,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.hotel.request.HotelRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.request.HotelRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>4</ReverseMessageInfoID>
@@ -16,7 +16,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.hotel.response.HotelRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.response.HotelRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -28,7 +28,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.request.LandRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.request.LandRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>11</ReverseMessageInfoID>
@@ -40,7 +40,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.response.LandRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.response.LandRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -52,7 +52,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.hotel.request.HotelAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.request.HotelAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>15</ReverseMessageInfoID>
@@ -64,7 +64,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.hotel.response.HotelAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.response.HotelAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -76,7 +76,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Request</Description>
 		<Code>OTA_HotelBookingRQ</Code>
-		<MessageClass>com.tourapp.tour.message.hotel.request.HotelBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.request.HotelBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>19</ReverseMessageInfoID>
@@ -88,7 +88,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Response</Description>
 		<Code>OTA_HotelBookingRS</Code>
-		<MessageClass>com.tourapp.tour.message.hotel.response.HotelBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.response.HotelBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -100,7 +100,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.request.LandBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.request.LandBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>23</ReverseMessageInfoID>
@@ -112,7 +112,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.response.LandBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.response.LandBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -124,7 +124,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Rate AND Availability Request</Description>
 		<Code>OTA_HotelAvailRQ</Code>
-		<MessageClass>com.tourapp.tour.message.hotel.request.HotelRateAvailRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.request.HotelRateAvailRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>25</ReverseMessageInfoID>
@@ -136,7 +136,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Rate AND Availability Response</Description>
 		<Code>OTA_HotelAvailRS</Code>
-		<MessageClass>com.tourapp.tour.message.hotel.response.HotelRateAvailResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.response.HotelRateAvailResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -148,7 +148,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.request.LandAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.request.LandAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>30</ReverseMessageInfoID>
@@ -160,7 +160,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.response.LandAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.response.LandAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -185,7 +185,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.request.TransportationRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.request.TransportationRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>33</ReverseMessageInfoID>
@@ -197,7 +197,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.response.TransportationRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.response.TransportationRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -209,7 +209,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.request.CarRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.request.CarRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>35</ReverseMessageInfoID>
@@ -221,7 +221,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.response.CarRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.response.CarRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -233,7 +233,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.request.AirRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.request.AirRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>37</ReverseMessageInfoID>
@@ -245,7 +245,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.response.AirRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.response.AirRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -257,7 +257,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.request.TourRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.request.TourRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>39</ReverseMessageInfoID>
@@ -269,7 +269,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.response.TourRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.response.TourRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -281,7 +281,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.request.ItemRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.request.ItemRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>41</ReverseMessageInfoID>
@@ -293,7 +293,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.response.ItemRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.response.ItemRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -305,7 +305,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Pricing Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.request.CruiseRateRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.request.CruiseRateRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>43</ReverseMessageInfoID>
@@ -317,7 +317,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Pricing Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.response.CruiseRateResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.response.CruiseRateResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -329,7 +329,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.response.AirAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.response.AirAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -341,7 +341,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.request.AirAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.request.AirAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>44</ReverseMessageInfoID>
@@ -353,7 +353,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.response.CarAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.response.CarAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -365,7 +365,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.request.CarAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.request.CarAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>46</ReverseMessageInfoID>
@@ -377,7 +377,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.response.CruiseAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.response.CruiseAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -389,7 +389,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.request.CruiseAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.request.CruiseAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>48</ReverseMessageInfoID>
@@ -401,7 +401,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.response.TourAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.response.TourAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -413,7 +413,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.request.TourAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.request.TourAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>50</ReverseMessageInfoID>
@@ -425,7 +425,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.response.ItemAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.response.ItemAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -437,7 +437,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.request.ItemAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.request.ItemAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -449,7 +449,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Availability Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.response.TransportationAvailabilityResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.response.TransportationAvailabilityResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -461,7 +461,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Availability Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.request.TransportationAvailabilityRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.request.TransportationAvailabilityRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>54</ReverseMessageInfoID>
@@ -473,7 +473,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.response.AirBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.response.AirBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -485,7 +485,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.request.AirBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.request.AirBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>56</ReverseMessageInfoID>
@@ -497,7 +497,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.response.CarBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.response.CarBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -509,7 +509,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.request.CarBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.request.CarBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>58</ReverseMessageInfoID>
@@ -521,7 +521,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.response.CruiseBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.response.CruiseBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -533,7 +533,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.request.CruiseBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.request.CruiseBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>60</ReverseMessageInfoID>
@@ -545,7 +545,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.response.TourBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.response.TourBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -557,7 +557,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.request.TourBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.request.TourBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>62</ReverseMessageInfoID>
@@ -569,7 +569,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.response.ItemBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.response.ItemBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -581,7 +581,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.request.ItemBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.request.ItemBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>64</ReverseMessageInfoID>
@@ -593,7 +593,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.response.TransportationBookingResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.response.TransportationBookingResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -605,7 +605,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.request.TransportationBookingRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.request.TransportationBookingRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>66</ReverseMessageInfoID>
@@ -641,7 +641,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Change Request</Description>
 		<Code>OTA_HotelResModifyRQ</Code>
-		<MessageClass>com.tourapp.tour.message.hotel.request.HotelBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.request.HotelBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -653,7 +653,7 @@
 		<Deleted>N</Deleted>
 		<Description>Booking Cancellation Request</Description>
 		<Code>OTA_CancelRQ</Code>
-		<MessageClass>com.tourapp.tour.message.base.request.CancelRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.base.request.CancelRequest</MessageClass>
 		<MessageProperties><![CDATA[#Field properties
 #Wed Apr 02 01:40:09 PDT 2008
 ]]></MessageProperties>
@@ -667,7 +667,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Booking Change Response</Description>
 		<Code>OTA_HotelResModifyRS</Code>
-		<MessageClass>com.tourapp.tour.message.hotel.response.HotelBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.response.HotelBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -679,7 +679,7 @@
 		<Deleted>N</Deleted>
 		<Description>Booking Cancellation Response</Description>
 		<Code>OTA_CancelRS</Code>
-		<MessageClass>com.tourapp.tour.message.base.response.CancelResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.base.response.CancelResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -691,7 +691,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.request.AirBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.request.AirBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -703,7 +703,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.response.AirBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.response.AirBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -715,7 +715,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.response.CruiseBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.response.CruiseBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -727,7 +727,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.request.CruiseBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.request.CruiseBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -739,7 +739,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.response.ItemBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.response.ItemBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -751,7 +751,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.request.ItemBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.request.ItemBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -763,7 +763,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.response.LandBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.response.LandBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -775,7 +775,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.request.LandBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.request.LandBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -787,7 +787,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.response.CarBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.response.CarBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -799,7 +799,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.request.CarBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.request.CarBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -811,7 +811,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.response.TourBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.response.TourBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -823,7 +823,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.request.TourBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.request.TourBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -835,7 +835,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Change Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.response.TransportationBookingChangeResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.response.TransportationBookingChangeResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -847,7 +847,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Booking Change Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.request.TransportationBookingChangeRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.request.TransportationBookingChangeRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -883,7 +883,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.request.AirInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.request.AirInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>91</ReverseMessageInfoID>
@@ -895,7 +895,7 @@
 		<Deleted>N</Deleted>
 		<Description>Air Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.air.response.AirInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.air.response.AirInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -907,7 +907,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.response.CruiseInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.response.CruiseInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -919,7 +919,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.hotel.response.HotelInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.response.HotelInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -931,7 +931,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.response.LandInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.response.LandInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -943,7 +943,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.response.CarInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.response.CarInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -955,7 +955,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.response.TourInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.response.TourInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -967,7 +967,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.response.TransportationInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.response.TransportationInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -979,7 +979,7 @@
 		<Deleted>N</Deleted>
 		<Description>Cruise Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.cruise.request.CruiseInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.cruise.request.CruiseInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>92</ReverseMessageInfoID>
@@ -991,7 +991,7 @@
 		<Deleted>N</Deleted>
 		<Description>Hotel Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.hotel.request.HotelInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.hotel.request.HotelInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>93</ReverseMessageInfoID>
@@ -1003,7 +1003,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.request.ItemInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.request.ItemInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>101</ReverseMessageInfoID>
@@ -1015,7 +1015,7 @@
 		<Deleted>N</Deleted>
 		<Description>Item Information Response</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.item.response.ItemInformationResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.item.response.ItemInformationResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -1027,7 +1027,7 @@
 		<Deleted>N</Deleted>
 		<Description>Land Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.land.request.LandInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.land.request.LandInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>94</ReverseMessageInfoID>
@@ -1039,7 +1039,7 @@
 		<Deleted>N</Deleted>
 		<Description>Car Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.car.request.CarInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.car.request.CarInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>95</ReverseMessageInfoID>
@@ -1051,7 +1051,7 @@
 		<Deleted>N</Deleted>
 		<Description>Tour Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.tour.request.TourInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.tour.request.TourInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>96</ReverseMessageInfoID>
@@ -1063,7 +1063,7 @@
 		<Deleted>N</Deleted>
 		<Description>Transportation Information Request</Description>
 		<Code/>
-		<MessageClass>com.tourapp.tour.message.trans.request.TransportationInformationRequest</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.trans.request.TransportationInformationRequest</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>1</MessageInfoTypeID>
 		<ReverseMessageInfoID>97</ReverseMessageInfoID>
@@ -1075,7 +1075,7 @@
 		<Deleted>N</Deleted>
 		<Description>Ping Request</Description>
 		<Code>OTA_PingRQ</Code>
-		<MessageClass>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.base.BaseProductMessageDesc</MessageClass>
 		<MessageProperties><![CDATA[#Field properties
 #Fri Mar 26 07:46:04 PDT 2010
 ]]></MessageProperties>
@@ -1089,7 +1089,7 @@
 		<Deleted>N</Deleted>
 		<Description>Ping Response</Description>
 		<Code>OTA_PingRS</Code>
-		<MessageClass>com.tourapp.tour.message.base.response.BaseProductResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.base.response.BaseProductResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>
@@ -1101,7 +1101,7 @@
 		<Deleted>N</Deleted>
 		<Description>Currency Conversion Request</Description>
 		<Code>ConversionRate</Code>
-		<MessageClass>com.tourapp.tour.message.base.BaseProductMessageDesc</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.base.BaseProductMessageDesc</MessageClass>
 		<MessageProperties><![CDATA[#Field properties
 #Fri Oct 17 01:09:12 PDT 2008
 ]]></MessageProperties>
@@ -1115,7 +1115,7 @@
 		<Deleted>N</Deleted>
 		<Description>Currency Conversion Response</Description>
 		<Code>ConversionRateResponse</Code>
-		<MessageClass>com.tourapp.tour.message.base.response.BaseProductResponse</MessageClass>
+		<MessageClass>com.tourgeek.tour.message.base.response.BaseProductResponse</MessageClass>
 		<MessageProperties/>
 		<MessageInfoTypeID>2</MessageInfoTypeID>
 		<ReverseMessageInfoID/>

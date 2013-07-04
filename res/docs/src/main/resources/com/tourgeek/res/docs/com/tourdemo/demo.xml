@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="com/tourapp/res/images/com/tourdemo/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourgeek/res/images/com/tourdemo/logoblack.gif" align="left" alt="Logo" />
 <span style="font-size: 16pt; font-style: bold">
-<img src="com/tourapp/res/images/com/tourdemo/nameblack.gif" alt="tourapp.com" /><br />
+<img src="com/tourgeek/res/images/com/tourdemo/nameblack.gif" alt="tourgeek.com" /><br />
 Tours to everywhere.<br />
 </span>
 <hr />
@@ -12,7 +12,7 @@ Just go to <a href="http://{demoSite}">http://{demoSite}</a>.<p />
 To administer your new site, sign on using your current user name ({user}) and password.<p />
 
 <span style="font-size: 12pt; font-style: bold">
-With <a href="http://www.tourapp.com">tourapp.com</a> you can:<br />
+With <a href="http://www.tourgeek.com">tourgeek.com</a> you can:<br />
 </span>
 <ul>
 	<li>Create simple tours or complicated custom-built FITs.</li>
@@ -21,9 +21,9 @@ With <a href="http://www.tourapp.com">tourapp.com</a> you can:<br />
 	<li>Easy to use tour entry and operations system.</li>
 	<li>Full accounting system.</li>
 </ul>
-Check out the <a href="?xml=org/jbundle/res/docs/help/specifications/index.xml" onClick="if (tourapp) {return tourapp.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
+Check out the <a href="?xml=org/jbundle/res/docs/help/specifications/index.xml" onClick="if (tourgeek) {return tourgeek.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
 Try it out <span style="font-style: bold">now</span>! Click one of these users to see their personalized page. Logout to return to this page. (All passwords are blank on this demo site.)<br />
-<span style="font-size: 10pt">The tourapp client requires java. If you click on one of these users and tourapp does not start, download java at <a href="http://www.java.com">www.java.com</a>.</span><br/>
+<span style="font-size: 10pt">The tourgeek client requires java. If you click on one of these users and tourgeek does not start, download java at <a href="http://www.java.com">www.java.com</a>.</span><br/>
 <hr/>
 </span>
 </html>

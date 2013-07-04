@@ -13,7 +13,7 @@
 		<ProcessorClass/>
 		<Properties><![CDATA[#Field properties
 #Wed Mar 03 14:21:36 PST 2010
-screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen.screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 ]]></Properties>
 		<DefaultMessageTransportID/>
@@ -30,7 +30,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<MessageInfoID>2</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.request.in.HotelRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.request.in.HotelRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -97,7 +97,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<MessageInfoID>4</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.response.in.BookingHotelRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.response.in.BookingHotelRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -113,7 +113,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<MessageInfoID>14</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.request.in.HotelAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.request.in.HotelAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -132,7 +132,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<ProcessorClass/>
 		<Properties><![CDATA[#Field properties
 #Wed Mar 03 14:21:36 PST 2010
-screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen.screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 ]]></Properties>
 		<DefaultMessageTransportID/>
@@ -165,7 +165,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<MessageInfoID>15</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.response.in.BookingHotelAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.response.in.BookingHotelAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -181,7 +181,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<MessageInfoID>18</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.request.in.HotelBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.request.in.HotelBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -232,7 +232,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>19</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.response.in.BookingHotelBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.response.in.BookingHotelBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -248,7 +248,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>24</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.request.in.HotelRateAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.request.in.HotelRateAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -296,7 +296,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>25</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.response.in.BookingHotelRateAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.response.in.BookingHotelRateAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -312,7 +312,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>29</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.request.in.LandAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.request.in.LandAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -360,7 +360,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>30</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.response.in.BookingLandAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.response.in.BookingLandAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -376,7 +376,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>22</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.request.in.LandBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.request.in.LandBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -424,7 +424,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>23</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.response.in.BookingLandBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.response.in.BookingLandBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -440,7 +440,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>10</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.request.in.LandRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.request.in.LandRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -488,7 +488,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<MessageInfoID>11</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.response.in.BookingLandRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -508,7 +508,7 @@ email.XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
 		<Properties><![CDATA[#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 email.XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
-screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen.screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 ]]></Properties>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -604,7 +604,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>32</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.request.in.TransRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.request.in.TransRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -652,7 +652,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>33</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.response.in.BookingTransRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.response.in.BookingTransRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -700,7 +700,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>42</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.request.in.CruiseRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.request.in.CruiseRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -732,7 +732,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>43</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.response.in.BookingCruiseRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.response.in.BookingCruiseRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -796,7 +796,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>36</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.request.in.AirRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.request.in.AirRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -812,7 +812,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>34</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.request.in.CarRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.request.in.CarRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -860,7 +860,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>40</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.request.in.ItemRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.request.in.ItemRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -908,7 +908,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>38</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.request.in.TourRateRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.request.in.TourRateRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -956,7 +956,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>39</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.response.in.BookingTourRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.response.in.BookingTourRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1004,7 +1004,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>41</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.response.in.BookingItemRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.response.in.BookingItemRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1052,7 +1052,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>35</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.response.in.BookingCarRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.response.in.BookingCarRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1100,7 +1100,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>37</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.response.in.BookingAirRateMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.response.in.BookingAirRateMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1148,7 +1148,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>44</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.response.in.BookingAirAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.response.in.BookingAirAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1196,7 +1196,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>56</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.response.in.BookingAirBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.response.in.BookingAirBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1228,7 +1228,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>46</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.response.in.BookingCarAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.response.in.BookingCarAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1276,7 +1276,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>58</MessageInfoID>
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.response.in.BookingCarBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.response.in.BookingCarBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1308,7 +1308,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>48</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.response.in.BookingCruiseAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.response.in.BookingCruiseAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1356,7 +1356,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>60</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.response.in.BookingCruiseBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.response.in.BookingCruiseBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1388,7 +1388,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>52</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.response.in.BookingItemAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.response.in.BookingItemAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1436,7 +1436,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>64</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.response.in.BookingItemBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.response.in.BookingItemBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1468,7 +1468,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>50</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.response.in.BookingTourAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.response.in.BookingTourAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1500,7 +1500,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>62</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.response.in.BookingTourBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.response.in.BookingTourBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1532,7 +1532,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>54</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.response.in.BookingTransAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.response.in.BookingTransAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1580,7 +1580,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>66</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.response.in.BookingTransAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.response.in.BookingTransAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1644,7 +1644,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>45</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.request.in.AirAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.request.in.AirAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1676,7 +1676,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>57</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.request.in.AirBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.request.in.AirBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1724,7 +1724,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>47</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.request.in.CarAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.request.in.CarAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1756,7 +1756,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>59</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.request.in.CarBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.request.in.CarBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1804,7 +1804,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>49</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.request.in.CruiseAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.request.in.CruiseAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1836,7 +1836,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>61</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.request.in.CruiseBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.request.in.CruiseBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1884,7 +1884,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>53</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.request.in.ItemAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.request.in.ItemAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1916,7 +1916,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>65</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.request.in.ItemBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.request.in.ItemBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1964,7 +1964,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>51</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.request.in.TourAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.request.in.TourAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -1996,7 +1996,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>63</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.request.in.TourBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.request.in.TourBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2044,7 +2044,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>55</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.request.in.TransAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.request.in.TransAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2076,7 +2076,7 @@ screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseSc
 		<MessageInfoID>67</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.request.in.TransAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.request.in.TransAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2343,7 +2343,7 @@ autostart=true
 		<MessageInfoID>71</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.request.in.ProductCancelRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.request.in.ProductCancelRequestMessageInProcessor</ProcessorClass>
 		<Properties><![CDATA[#Field properties
 #Wed Mar 03 14:21:36 PST 2010
 ota.safe=false
@@ -2378,7 +2378,7 @@ ota.safe=false
 		<MessageInfoID>70</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.request.in.HotelBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.request.in.HotelBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2410,7 +2410,7 @@ ota.safe=false
 		<MessageInfoID>72</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.response.in.BookingHotelBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.response.in.BookingHotelBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2426,7 +2426,7 @@ ota.safe=false
 		<MessageInfoID>73</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.response.in.BookingCancelMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.response.in.BookingCancelMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2474,7 +2474,7 @@ ota.safe=false
 		<MessageInfoID>83</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.request.in.CarBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.request.in.CarBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2490,7 +2490,7 @@ ota.safe=false
 		<MessageInfoID>82</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.response.in.BookingCarBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.response.in.BookingCarBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2522,7 +2522,7 @@ ota.safe=false
 		<MessageInfoID>74</MessageInfoID>
 		<MessageTypeID/>
 		<ProcessTypeID/>
-		<ProcessorClass>com.tourapp.tour.message.air.request.in.AirBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.request.in.AirBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2570,7 +2570,7 @@ ota.safe=false
 		<MessageInfoID>75</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.response.in.BookingAirBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.response.in.BookingAirBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2602,7 +2602,7 @@ ota.safe=false
 		<MessageInfoID>77</MessageInfoID>
 		<MessageTypeID/>
 		<ProcessTypeID/>
-		<ProcessorClass>com.tourapp.tour.message.cruise.request.in.CruiseBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.request.in.CruiseBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2634,7 +2634,7 @@ ota.safe=false
 		<MessageInfoID>76</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.response.in.BookingCruiseBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.response.in.BookingCruiseBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2666,7 +2666,7 @@ ota.safe=false
 		<MessageInfoID>79</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.request.in.ItemBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.request.in.ItemBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2698,7 +2698,7 @@ ota.safe=false
 		<MessageInfoID>78</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.response.in.BookingItemBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.response.in.BookingItemBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2730,7 +2730,7 @@ ota.safe=false
 		<MessageInfoID>81</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.request.in.LandBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.request.in.LandBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2762,7 +2762,7 @@ ota.safe=false
 		<MessageInfoID>80</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.response.in.BookingLandBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.response.in.BookingLandBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2794,7 +2794,7 @@ ota.safe=false
 		<MessageInfoID>85</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.request.in.TourBookingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.request.in.TourBookingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2826,7 +2826,7 @@ ota.safe=false
 		<MessageInfoID>84</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.response.in.BookingTourBookingMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.response.in.BookingTourBookingMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2858,7 +2858,7 @@ ota.safe=false
 		<MessageInfoID>87</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.request.in.TransAvailRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.request.in.TransAvailRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2890,7 +2890,7 @@ ota.safe=false
 		<MessageInfoID>86</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.response.in.BookingTransAvailMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.response.in.BookingTransAvailMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2906,7 +2906,7 @@ ota.safe=false
 		<MessageInfoID>88</MessageInfoID>
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductUpdateMessageOutErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductUpdateMessageOutErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2922,7 +2922,7 @@ ota.safe=false
 		<MessageInfoID>88</MessageInfoID>
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductMessageOutErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductMessageOutErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2938,7 +2938,7 @@ ota.safe=false
 		<MessageInfoID>88</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductMessageInErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductMessageInErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2954,7 +2954,7 @@ ota.safe=false
 		<MessageInfoID>88</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductUpdateMessageInErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductUpdateMessageInErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2970,7 +2970,7 @@ ota.safe=false
 		<MessageInfoID>89</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductReplyInUpdateErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductReplyInUpdateErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -2986,7 +2986,7 @@ ota.safe=false
 		<MessageInfoID>89</MessageInfoID>
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductReplyOutUpdateErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductReplyOutUpdateErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3002,7 +3002,7 @@ ota.safe=false
 		<MessageInfoID>89</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductReplyInErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductReplyInErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3018,7 +3018,7 @@ ota.safe=false
 		<MessageInfoID>89</MessageInfoID>
 		<MessageTypeID>1</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.error.ProductReplyOutErrorProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.error.ProductReplyOutErrorProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3034,7 +3034,7 @@ ota.safe=false
 		<MessageInfoID>99</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.request.in.HotelInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.request.in.HotelInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3098,7 +3098,7 @@ ota.safe=false
 		<MessageInfoID>93</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.hotel.response.in.BookingHotelInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.hotel.response.in.BookingHotelInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3146,7 +3146,7 @@ ota.safe=false
 		<MessageInfoID>106</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.base.request.in.PingRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.base.request.in.PingRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3194,7 +3194,7 @@ ota.safe=false
 		<MessageInfoID>90</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.request.in.AirInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.request.in.AirInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3258,7 +3258,7 @@ ota.safe=false
 		<MessageInfoID>91</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.air.response.in.BookingAirInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.air.response.in.BookingAirInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3306,7 +3306,7 @@ ota.safe=false
 		<MessageInfoID>95</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.response.in.BookingCarInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.response.in.BookingCarInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3354,7 +3354,7 @@ ota.safe=false
 		<MessageInfoID>92</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.response.in.BookingCruiseInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.response.in.BookingCruiseInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3402,7 +3402,7 @@ ota.safe=false
 		<MessageInfoID>101</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.response.in.BookingItemInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.response.in.BookingItemInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3450,7 +3450,7 @@ ota.safe=false
 		<MessageInfoID>94</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.response.in.BookingLandInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3498,7 +3498,7 @@ ota.safe=false
 		<MessageInfoID>96</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.response.in.BookingTourInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.response.in.BookingTourInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3546,7 +3546,7 @@ ota.safe=false
 		<MessageInfoID>97</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>1</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.response.in.BookingTransInfoMsgReplyInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.response.in.BookingTransInfoMsgReplyInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3578,7 +3578,7 @@ ota.safe=false
 		<MessageInfoID>105</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.trans.request.in.TransInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.trans.request.in.TransInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3626,7 +3626,7 @@ ota.safe=false
 		<MessageInfoID>104</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.tour.request.in.TourInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.tour.request.in.TourInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3674,7 +3674,7 @@ ota.safe=false
 		<MessageInfoID>102</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.land.request.in.LandInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.land.request.in.LandInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3722,7 +3722,7 @@ ota.safe=false
 		<MessageInfoID>100</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.item.request.in.ItemInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.item.request.in.ItemInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3770,7 +3770,7 @@ ota.safe=false
 		<MessageInfoID>98</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.cruise.request.in.CruiseInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.cruise.request.in.CruiseInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3818,7 +3818,7 @@ ota.safe=false
 		<MessageInfoID>103</MessageInfoID>
 		<MessageTypeID>2</MessageTypeID>
 		<ProcessTypeID>2</ProcessTypeID>
-		<ProcessorClass>com.tourapp.tour.message.car.request.in.CarInfoRequestMessageInProcessor</ProcessorClass>
+		<ProcessorClass>com.tourgeek.tour.message.car.request.in.CarInfoRequestMessageInProcessor</ProcessorClass>
 		<Properties/>
 		<DefaultMessageTransportID/>
 		<InitialMessageStatusID/>
@@ -3901,7 +3901,7 @@ ota.safe=false
 		<ProcessorClass/>
 		<Properties><![CDATA[#Field properties
 #Wed Mar 03 14:21:36 PST 2010
-screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+screen.screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 email.XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 ]]></Properties>
 		<DefaultMessageTransportID/>

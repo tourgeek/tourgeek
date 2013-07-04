@@ -53,8 +53,8 @@
 		<Code/>
 		<Description>System files for tour system</Description>
 		<SystemClasses>Y</SystemClasses>
-		<PackageName>com.tourapp</PackageName>
-		<ProjectPath>tourapp-tour-core</ProjectPath>
+		<PackageName>com.tourgeek</PackageName>
+		<ProjectPath>tourgeek-tour-core</ProjectPath>
 		<InterfacePackage/>
 		<InterfaceProjectPath/>
 		<ThinPackage/>
@@ -315,9 +315,9 @@
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Tourapp thin app code (Not generated)</Description>
+		<Description>Tourgeek thin app code (Not generated)</Description>
 		<SystemClasses>Y</SystemClasses>
-		<PackageName>com.tourapp.thin.app.booking</PackageName>
+		<PackageName>com.tourgeek.thin.app.booking</PackageName>
 		<ProjectPath/>
 		<InterfacePackage/>
 		<InterfaceProjectPath/>
@@ -552,15 +552,15 @@
 	<ClassProject ID="1048600">
 		<LastChanged>2011-08-05T15:59:47</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp obsolete</Name>
+		<Name>tourgeek obsolete</Name>
 		<ParentFolderID>16,777,310</ParentFolderID>
 		<Sequence/>
 		<Comment/>
 		<Code/>
-		<Description>Obsolete tourapp code</Description>
+		<Description>Obsolete tourgeek code</Description>
 		<SystemClasses/>
-		<PackageName>com.tourapp</PackageName>
-		<ProjectPath>tourapp</ProjectPath>
+		<PackageName>com.tourgeek</PackageName>
+		<ProjectPath>tourgeek</ProjectPath>
 		<InterfacePackage/>
 		<InterfaceProjectPath/>
 		<ThinPackage/>

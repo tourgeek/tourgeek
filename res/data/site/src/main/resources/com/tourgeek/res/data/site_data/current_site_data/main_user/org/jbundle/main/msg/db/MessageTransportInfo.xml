@@ -10,7 +10,7 @@
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 formReply=hotelratereplyform
 subject=Hotel rate request
 XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
@@ -41,7 +41,7 @@ formReply=hotelratereplyform
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -56,7 +56,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="6">
@@ -70,7 +70,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -85,7 +85,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport>N</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -100,7 +100,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -128,7 +128,7 @@ emailReply=hotelratereply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 formReply=hotelratereplyform
 subject=Hotel rate request
 XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
@@ -146,7 +146,7 @@ emailReply=hotelratereply
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -161,7 +161,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="14">
@@ -175,7 +175,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -190,7 +190,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -205,7 +205,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 subject=Hotel inventory request
 formReply=hotelinvreplyform
 XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
@@ -236,7 +236,7 @@ emailReply=hotelinventoryreply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelAvailRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelAvailRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -263,7 +263,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="21">
@@ -277,7 +277,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 		<DefaultTransport>N</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelAvailResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.out.HotelAvailResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -292,7 +292,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelAvailResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelAvailResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -307,7 +307,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -322,7 +322,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelBookingResponseScreen
 subject=Hotel booking request
 formReply=hotelbookingreplyform
 XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
@@ -353,7 +353,7 @@ emailReply=hotelratereply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -368,7 +368,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelBookingResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="29">
@@ -382,7 +382,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -397,7 +397,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -412,7 +412,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -427,7 +427,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -455,7 +455,7 @@ emailReply=landinventoryreply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.land.screen.LandAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.land.screen.LandAvailResponseScreen
 subject=Land inventory request
 formReply=landInvreplyform
 XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
@@ -473,7 +473,7 @@ emailReply=landinvreply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.out.LandAvailRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.request.out.LandAvailRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -488,7 +488,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.product.land.message.screen.LandAvailResponseScreen
+screen=com.tourgeek.tour.product.land.message.screen.LandAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="39">
@@ -502,7 +502,7 @@ screen=com.tourapp.tour.product.land.message.screen.LandAvailResponseScreen
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.out.LandAvailResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.response.out.LandAvailResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -517,7 +517,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.in.LandAvailResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.response.in.LandAvailResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -532,7 +532,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -562,7 +562,7 @@ emailReply=landratereply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.land.screen.LandBookingResponseScreen
+screen=com.tourgeek.tour.booking.message.land.screen.LandBookingResponseScreen
 formReply=landbookingreplyform
 subject=Land booking request
 XSLTDocument=docs/styles/xsl/tour/message/getbooking.xsl
@@ -580,7 +580,7 @@ emailReply=landbookingreply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -595,7 +595,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.land.screen.LandRateResponseScreen
+screen=com.tourgeek.tour.booking.message.land.screen.LandRateResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="47">
@@ -609,7 +609,7 @@ screen=com.tourapp.tour.booking.message.land.screen.LandRateResponseScreen
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -624,7 +624,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -639,7 +639,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.in.LandRateRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.request.in.LandRateRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -654,7 +654,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.land.screen.LandRateResponseScreen
+screen=com.tourgeek.tour.booking.message.land.screen.LandRateResponseScreen
 subject=Land rate request
 formReply=landratereplyform
 XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
@@ -685,7 +685,7 @@ emailReply=landratereply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.out.LandRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.request.out.LandRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -700,7 +700,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.land.screen.LandAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.land.screen.LandAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="55">
@@ -714,7 +714,7 @@ screen=com.tourapp.tour.booking.message.land.screen.LandAvailResponseScreen
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.in.LandRateResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.response.in.LandRateResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -729,7 +729,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.response.out.LandRateResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.response.out.LandRateResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -770,7 +770,7 @@ emailReply=hotelinventoryreply
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelAvailRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelAvailRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -785,7 +785,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="62">
@@ -799,7 +799,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelAvailResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelAvailResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -814,7 +814,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.land.request.out.LandRateRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.land.request.out.LandRateRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -831,9 +831,9 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 #Fri Mar 26 07:49:55 PDT 2010
 jibx.packageName=org.jibx.ota.ping
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
-marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.request.in.PingRequestJibxMessageIn2010A
+marshallerClass=com.tourgeek.tour.message.jibx.ota2010a.base.request.in.PingRequestJibxMessageIn2010A
 jibx.bindingName=ping_binding
-xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.request.in.PingRequestJaxbMessageIn2010A
+xmarshallerClass=com.tourgeek.tour.message.jaxb.ota2010a.base.request.in.PingRequestJaxbMessageIn2010A
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="65">
@@ -847,7 +847,7 @@ xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.request.in.PingRequ
 		<DefaultTransport>N</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.response.in.PingResponseSOAPMsgReplyIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.base.response.in.PingResponseSOAPMsgReplyIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -864,9 +864,9 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 #Fri Mar 26 07:53:03 PDT 2010
 jibx.packageName=org.jibx.ota.ping
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
-marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.request.out.PingRequestJibxMessageOut2010A
+marshallerClass=com.tourgeek.tour.message.jibx.ota2010a.base.request.out.PingRequestJibxMessageOut2010A
 jibx.bindingName=ping_binding
-xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.request.out.PingRequestJaxbMessageOut2010A
+xmarshallerClass=com.tourgeek.tour.message.jaxb.ota2010a.base.request.out.PingRequestJaxbMessageOut2010A
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="67">
@@ -880,7 +880,7 @@ xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.request.out.PingReq
 		<DefaultTransport>N</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.response.out.PingResponseSOAPMsgReplyOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.base.response.out.PingResponseSOAPMsgReplyOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -906,7 +906,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.request.in.PingRequestSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.base.request.in.PingRequestSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -921,7 +921,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
@@ -938,9 +938,9 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 #Fri Mar 26 07:56:22 PDT 2010
 jibx.packageName=org.jibx.ota.ping
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
-marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.response.out.PingResponseJibxMessageOut2010A
+marshallerClass=com.tourgeek.tour.message.jibx.ota2010a.base.response.out.PingResponseJibxMessageOut2010A
 jibx.bindingName=ping_binding
-xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.response.out.PingResponseJaxbMessageOut2010A
+xmarshallerClass=com.tourgeek.tour.message.jaxb.ota2010a.base.response.out.PingResponseJaxbMessageOut2010A
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="72">
@@ -954,7 +954,7 @@ xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.response.out.PingRe
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.base.request.out.PingRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.base.request.out.PingRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -971,9 +971,9 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 #Fri Mar 26 07:55:07 PDT 2010
 jibx.packageName=org.jibx.ota.ping
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2010a.ping
-marshallerClass=com.tourapp.tour.message.jibx.ota2010a.base.response.in.PingResponseJibxMessageIn2010A
+marshallerClass=com.tourgeek.tour.message.jibx.ota2010a.base.response.in.PingResponseJibxMessageIn2010A
 jibx.bindingName=ping_binding
-xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.response.in.PingResponseJaxbMessageIn2010A
+xmarshallerClass=com.tourgeek.tour.message.jaxb.ota2010a.base.response.in.PingResponseJaxbMessageIn2010A
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="74">
@@ -987,7 +987,7 @@ xmarshallerClass=com.tourapp.tour.message.jaxb.ota2010a.base.response.in.PingRes
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingRequestSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.request.in.PingRequestSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="75">
@@ -1001,7 +1001,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingReque
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.request.out.PingRequestSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="76">
@@ -1015,7 +1015,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequ
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResponseSOAPMsgReplyIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.response.in.PingResponseSOAPMsgReplyIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="77">
@@ -1029,7 +1029,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResp
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingResponseSOAPMsgReplyOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.response.out.PingResponseSOAPMsgReplyOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="78">
@@ -1043,7 +1043,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingRes
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
@@ -1058,7 +1058,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
@@ -1073,7 +1073,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 </Properties>
 	</MessageTransportInfo>
@@ -1088,7 +1088,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2004b.custom
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMessageIn2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.in.HotelRateResponseSOAPMessageIn2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -1103,7 +1103,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.response.out.HotelRateResponseSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>
@@ -1118,7 +1118,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="84">
@@ -1132,7 +1132,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="85">
@@ -1146,7 +1146,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="86">
@@ -1160,7 +1160,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRat
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="87">
@@ -1174,7 +1174,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="88">
@@ -1188,7 +1188,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelR
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="89">
@@ -1202,7 +1202,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingRequestSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.request.in.PingRequestSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="90">
@@ -1216,7 +1216,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.in.PingReque
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.request.out.PingRequestSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="91">
@@ -1230,7 +1230,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.request.out.PingRequ
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResponseSOAPMsgReplyIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.response.in.PingResponseSOAPMsgReplyIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="92">
@@ -1244,7 +1244,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.in.PingResp
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingResponseSOAPMsgReplyOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.base.response.out.PingResponseSOAPMsgReplyOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="93">
@@ -1258,7 +1258,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.base.response.out.PingRes
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.in.HotelRateRequestSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="94">
@@ -1272,7 +1272,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.in.HotelRat
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="95">
@@ -1286,7 +1286,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.request.out.HotelRateRequestSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="96">
@@ -1300,7 +1300,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.request.out.HotelRa
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="97">
@@ -1314,7 +1314,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.in.HotelRateResponseSOAPMessageIn2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="98">
@@ -1328,7 +1328,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.in.HotelRa
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2004b.hotel.response.out.HotelRateResponseSOAPMessageOut2004B
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="99">
@@ -1343,7 +1343,7 @@ marshallerClass=com.tourapp.tour.message.jaxb.ota2004b.hotel.response.out.HotelR
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
 SOAPAction=http\://www.webserviceX.NET/ConversionRate
-marshallerClass=com.tourapp.tour.assetdr.process.CurrencyRequestSOAPMessageOut
+marshallerClass=com.tourgeek.tour.assetdr.process.CurrencyRequestSOAPMessageOut
 JAXBPackage=net.webservicex.currencyconverter
 </Properties>
 	</MessageTransportInfo>
@@ -1358,7 +1358,7 @@ JAXBPackage=net.webservicex.currencyconverter
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.assetdr.process.CurrencyResponseSOAPMessageIn
+marshallerClass=com.tourgeek.tour.assetdr.process.CurrencyResponseSOAPMessageIn
 JAXBPackage=net.webservicex.currencyconverter
 </Properties>
 	</MessageTransportInfo>
@@ -1384,7 +1384,7 @@ JAXBPackage=net.webservicex.currencyconverter
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 subject=Hotel rate and inventory request
 formReply=hotelrateinvreplyform
 XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
@@ -1416,7 +1416,7 @@ messageInCode=OTA_HotelRateAvailRQRQ
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 </Properties>
 	</MessageTransportInfo>
 	<MessageTransportInfo ID="105">
@@ -1430,7 +1430,7 @@ screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScree
 		<DefaultTransport/>
 		<Properties>#Field properties
 #Wed Mar 03 14:18:12 PST 2010
-marshallerClass=com.tourapp.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateAvailRequestSOAPMessageOut2006A
+marshallerClass=com.tourgeek.tour.message.jaxb.ota2006a.hotel.request.out.HotelRateAvailRequestSOAPMessageOut2006A
 jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 </Properties>
 	</MessageTransportInfo>

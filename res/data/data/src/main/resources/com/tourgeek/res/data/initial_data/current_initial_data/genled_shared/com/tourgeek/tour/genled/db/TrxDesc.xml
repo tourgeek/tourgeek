@@ -4,7 +4,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>AcctDetail</DescCode>
 		<Description>G/L Transactions</Description>
-		<SourceFile>com.tourapp.tour.genled.db.AcctDetail</SourceFile>
+		<SourceFile>com.tourgeek.tour.genled.db.AcctDetail</SourceFile>
 		<TrxSystemID>1</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="33">
@@ -12,7 +12,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>Mco</DescCode>
 		<Description>MCO Payment</Description>
-		<SourceFile>com.tourapp.tour.acctrec.db.Mco</SourceFile>
+		<SourceFile>com.tourgeek.tour.acctrec.db.Mco</SourceFile>
 		<TrxSystemID>3</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="59">
@@ -20,7 +20,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>CreditCard</DescCode>
 		<Description>Credit Card</Description>
-		<SourceFile>com.tourapp.tour.acctrec.db.CreditCard</SourceFile>
+		<SourceFile>com.tourgeek.tour.acctrec.db.CreditCard</SourceFile>
 		<TrxSystemID>3</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="164">
@@ -28,7 +28,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>BankTrx</DescCode>
 		<Description>Bank Transaction</Description>
-		<SourceFile>com.tourapp.tour.assetdr.db.BankTrx</SourceFile>
+		<SourceFile>com.tourgeek.tour.assetdr.db.BankTrx</SourceFile>
 		<TrxSystemID>2</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="165">
@@ -36,7 +36,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>AssetDepreciation</DescCode>
 		<Description>Asset Depreciation</Description>
-		<SourceFile>com.tourapp.tour.assetdr.db.AssetDepreciation</SourceFile>
+		<SourceFile>com.tourgeek.tour.assetdr.db.AssetDepreciation</SourceFile>
 		<TrxSystemID>2</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="166">
@@ -44,7 +44,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>ArTrx</DescCode>
 		<Description>A/R Transaction</Description>
-		<SourceFile>com.tourapp.tour.acctrec.db.ArTrx</SourceFile>
+		<SourceFile>com.tourgeek.tour.acctrec.db.ArTrx</SourceFile>
 		<TrxSystemID>3</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="167">
@@ -52,7 +52,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>ApTrx</DescCode>
 		<Description>Air Ticket</Description>
-		<SourceFile>com.tourapp.tour.acctpay.db.TicketTrx</SourceFile>
+		<SourceFile>com.tourgeek.tour.acctpay.db.TicketTrx</SourceFile>
 		<TrxSystemID>5</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="168">
@@ -60,7 +60,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>ApTrx</DescCode>
 		<Description>A/P Transaction</Description>
-		<SourceFile>com.tourapp.tour.acctpay.db.ApTrx</SourceFile>
+		<SourceFile>com.tourgeek.tour.acctpay.db.ApTrx</SourceFile>
 		<TrxSystemID>4</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="169">
@@ -68,7 +68,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>PaymentHistory</DescCode>
 		<Description>Payment history</Description>
-		<SourceFile>com.tourapp.tour.acctpay.db.PaymentHistory</SourceFile>
+		<SourceFile>com.tourgeek.tour.acctpay.db.PaymentHistory</SourceFile>
 		<TrxSystemID>4</TrxSystemID>
 	</TrxDesc>
 	<TrxDesc ID="170">
@@ -76,7 +76,7 @@
 		<Deleted>N</Deleted>
 		<DescCode>PayHistory</DescCode>
 		<Description>Payroll history</Description>
-		<SourceFile>com.tourapp.tour.payroll.db.PayHistory</SourceFile>
+		<SourceFile>com.tourgeek.tour.payroll.db.PayHistory</SourceFile>
 		<TrxSystemID>6</TrxSystemID>
 	</TrxDesc>
 </file>

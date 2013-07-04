@@ -3,24 +3,24 @@
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Accounting</Description>
-		<ResourceClass>com.tourapp.tour.acctpay.*
-com.tourapp.tour.acctrec.*
-com.tourapp.tour.assetdr.*
-com.tourapp.tour.genled.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.acctpay.*
+com.tourgeek.tour.acctrec.*
+com.tourgeek.tour.assetdr.*
+com.tourgeek.tour.genled.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="2">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Reservations</Description>
-		<ResourceClass>com.tourapp.tour.booking.*
-com.tourapp.app.booking.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.booking.*
+com.tourgeek.app.booking.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="3">
 		<LastChanged>2010-04-18T09:47:51</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Test</Description>
 		<ResourceClass>org.jbundle.app.test.*
-com.tourapp.tour.util.*</ResourceClass>
+com.tourgeek.tour.util.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="4">
 		<LastChanged>2010-04-18T09:47:28</LastChanged>
@@ -47,29 +47,29 @@ org.jbundle.app.picture.*</ResourceClass>
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Operations</Description>
-		<ResourceClass>com.tourapp.tour.product.*
-com.tourapp.tour.profile.*
-com.tourapp.tour.request.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.product.*
+com.tourgeek.tour.profile.*
+com.tourgeek.tour.request.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="8">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Payroll</Description>
-		<ResourceClass>com.tourapp.tour.payroll.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.payroll.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="9">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Vendor access</Description>
-		<ResourceClass>com.tourapp.tour.booking.message.*
+		<ResourceClass>com.tourgeek.tour.booking.message.*
 org.jbundle.main.msg.*
-com.tourapp.tour.booking.operations.*
-com.tourapp.tour.acctpay.screen.trx.*</ResourceClass>
+com.tourgeek.tour.booking.operations.*
+com.tourgeek.tour.acctpay.screen.trx.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="10">
 		<LastChanged>2010-04-02T16:00:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Customer/Profile access</Description>
-		<ResourceClass>com.tourapp.tour.profile.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.profile.*</ResourceClass>
 	</UserResource>
 </file>

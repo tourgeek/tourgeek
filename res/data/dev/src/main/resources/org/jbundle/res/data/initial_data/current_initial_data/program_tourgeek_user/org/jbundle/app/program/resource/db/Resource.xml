@@ -74,7 +74,7 @@
 		<Deleted>N</Deleted>
 		<Code>Tour</Code>
 		<Description>Tour</Description>
-		<Location>com.tourapp.thin.app.booking.entry</Location>
+		<Location>com.tourgeek.thin.app.booking.entry</Location>
 		<Type>Properties</Type>
 		<BaseResourceID/>
 		<ClassProjectID>1,048,589</ClassProjectID>

@@ -9,7 +9,7 @@
 		<Code/>
 		<Type>form</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.ProfileControl</Program>
+		<Program>com.tourgeek.tour.profile.db.ProfileControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -26,7 +26,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.request.db.Bundle</Program>
+		<Program>com.tourgeek.tour.request.db.Bundle</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -43,7 +43,7 @@
 		<Code/>
 		<Type>form</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.request.db.Request</Program>
+		<Program>com.tourgeek.tour.request.db.Request</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -60,7 +60,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.Salesperson</Program>
+		<Program>com.tourgeek.tour.profile.db.Salesperson</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -77,7 +77,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.SalesRegion</Program>
+		<Program>com.tourgeek.tour.profile.db.SalesRegion</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -94,7 +94,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.SCF</Program>
+		<Program>com.tourgeek.tour.profile.db.SCF</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -111,7 +111,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.request.db.SendVia</Program>
+		<Program>com.tourgeek.tour.request.db.SendVia</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -128,7 +128,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.assetdr.db.Asset</Program>
+		<Program>com.tourgeek.tour.assetdr.db.Asset</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -145,7 +145,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.assetdr.db.BankAcct</Program>
+		<Program>com.tourgeek.tour.assetdr.db.BankAcct</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -162,7 +162,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.Currencys</Program>
+		<Program>com.tourgeek.tour.base.db.Currencys</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -179,7 +179,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.Language</Program>
+		<Program>com.tourgeek.tour.base.db.Language</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -196,7 +196,7 @@
 		<Code/>
 		<Type>form</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.ApControl</Program>
+		<Program>com.tourgeek.tour.acctpay.db.ApControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -213,7 +213,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.genpymt.GenPaymentSelect</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.genpymt.GenPaymentSelect</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -230,7 +230,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.PaymentCode</Program>
+		<Program>com.tourgeek.tour.acctpay.db.PaymentCode</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -247,7 +247,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.PaymentCycle</Program>
+		<Program>com.tourgeek.tour.acctpay.db.PaymentCycle</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -264,7 +264,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.PrepayType</Program>
+		<Program>com.tourgeek.tour.acctpay.db.PrepayType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -281,7 +281,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.Vendor</Program>
+		<Program>com.tourgeek.tour.acctpay.db.Vendor</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -298,7 +298,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.VendorStatus</Program>
+		<Program>com.tourgeek.tour.acctpay.db.VendorStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -315,7 +315,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.db.CashBatch</Program>
+		<Program>com.tourgeek.tour.acctrec.db.CashBatch</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -332,7 +332,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.db.ArControl</Program>
+		<Program>com.tourgeek.tour.acctrec.db.ArControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -349,7 +349,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.misc.CrDrGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.misc.CrDrGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -366,7 +366,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.credit.CreditCardEntryGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.credit.CreditCardEntryGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -417,7 +417,7 @@
 		<Code>booking</Code>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.db.Booking</Program>
+		<Program>com.tourgeek.tour.booking.db.Booking</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -434,7 +434,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.Account</Program>
+		<Program>com.tourgeek.tour.genled.db.Account</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -451,7 +451,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.AccountBudget</Program>
+		<Program>com.tourgeek.tour.genled.db.AccountBudget</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -468,7 +468,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.AcctBatch</Program>
+		<Program>com.tourgeek.tour.genled.db.AcctBatch</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -485,7 +485,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.AutoDist</Program>
+		<Program>com.tourgeek.tour.genled.db.AutoDist</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -502,7 +502,7 @@
 		<Code/>
 		<Type>form</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.CompanyInfo</Program>
+		<Program>com.tourgeek.tour.genled.db.CompanyInfo</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -519,7 +519,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.finstmt.FinStmtHeader</Program>
+		<Program>com.tourgeek.tour.genled.db.finstmt.FinStmtHeader</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -536,7 +536,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.Period</Program>
+		<Program>com.tourgeek.tour.genled.db.Period</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -553,7 +553,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.ProfitCenter</Program>
+		<Program>com.tourgeek.tour.genled.db.ProfitCenter</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -570,7 +570,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.screen.trx.TrxSystemGridScreen</Program>
+		<Program>com.tourgeek.tour.genled.screen.trx.TrxSystemGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -587,7 +587,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.car.db.Car</Program>
+		<Program>com.tourgeek.tour.product.car.db.Car</Program>
 		<Params/>
 		<IconResource>tour/buttons/Car</IconResource>
 		<Keywords/>
@@ -604,7 +604,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.cruise.db.Cruise</Program>
+		<Program>com.tourgeek.tour.product.cruise.db.Cruise</Program>
 		<Params/>
 		<IconResource>tour/buttons/Cruise</IconResource>
 		<Keywords/>
@@ -621,7 +621,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.hotel.db.Hotel</Program>
+		<Program>com.tourgeek.tour.product.hotel.db.Hotel</Program>
 		<Params/>
 		<IconResource>tour/buttons/Hotel</IconResource>
 		<Keywords/>
@@ -638,7 +638,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.land.db.Land</Program>
+		<Program>com.tourgeek.tour.product.land.db.Land</Program>
 		<Params/>
 		<IconResource>tour/buttons/Land</IconResource>
 		<Keywords/>
@@ -655,7 +655,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.trans.db.Transportation</Program>
+		<Program>com.tourgeek.tour.product.trans.db.Transportation</Program>
 		<Params/>
 		<IconResource>tour/buttons/Transportation</IconResource>
 		<Keywords/>
@@ -876,7 +876,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.assetdr.db.AssetDrControl</Program>
+		<Program>com.tourgeek.tour.assetdr.db.AssetDrControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -893,7 +893,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.air.db.Air</Program>
+		<Program>com.tourgeek.tour.product.air.db.Air</Program>
 		<Params/>
 		<IconResource>tour/buttons/Air</IconResource>
 		<Keywords/>
@@ -910,7 +910,7 @@
 		<Code>Tour</Code>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.db.TourHeader</Program>
+		<Program>com.tourgeek.tour.product.tour.db.TourHeader</Program>
 		<Params/>
 		<IconResource>tour/buttons/Tour</IconResource>
 		<Keywords/>
@@ -961,7 +961,7 @@
 		<Code/>
 		<Type>form</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.request.db.RequestControl</Program>
+		<Program>com.tourgeek.tour.request.db.RequestControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1032,7 +1032,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>N</AutoDesc>
-		<Program>com.tourapp.tour.genled.finstmt.FinStmtReportScreen</Program>
+		<Program>com.tourgeek.tour.genled.finstmt.FinStmtReportScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1049,7 +1049,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.report.ledger.AcctDetailLedger</Program>
+		<Program>com.tourgeek.tour.genled.report.ledger.AcctDetailLedger</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1066,7 +1066,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.report.journal.AcctDetailJournal</Program>
+		<Program>com.tourgeek.tour.genled.report.journal.AcctDetailJournal</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1083,7 +1083,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.report.trialbal.TrialBalance</Program>
+		<Program>com.tourgeek.tour.genled.report.trialbal.TrialBalance</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1100,7 +1100,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.report.trialbal.Worksheet</Program>
+		<Program>com.tourgeek.tour.genled.report.trialbal.Worksheet</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1117,7 +1117,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.report.xref.SourceCrossRef</Program>
+		<Program>com.tourgeek.tour.genled.report.xref.SourceCrossRef</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1134,7 +1134,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.assetdr.db.BankTrxBatch</Program>
+		<Program>com.tourgeek.tour.assetdr.db.BankTrxBatch</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1185,7 +1185,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.mco.McoEntryGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.mco.McoEntryGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1202,7 +1202,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.db.Mco</Program>
+		<Program>com.tourgeek.tour.acctrec.db.Mco</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1219,7 +1219,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.mco.McoSubmitReport</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.mco.McoSubmitReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1236,7 +1236,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.mco.McoCollGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.mco.McoCollGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1253,7 +1253,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.Card</Program>
+		<Program>com.tourgeek.tour.profile.db.Card</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1287,7 +1287,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.db.CreditCard</Program>
+		<Program>com.tourgeek.tour.acctrec.db.CreditCard</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1304,7 +1304,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.credit.CreditSubmitGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.credit.CreditSubmitGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1321,7 +1321,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.credit.CreditCollectGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.credit.CreditCollectGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1338,7 +1338,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.credit.CreditApproveGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.credit.CreditApproveGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1372,7 +1372,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.report.pastdue.PastDueReport</Program>
+		<Program>com.tourgeek.tour.acctrec.report.pastdue.PastDueReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1389,7 +1389,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.refund.RefundGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.refund.RefundGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1406,7 +1406,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.refund.RefundPendGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.refund.RefundPendGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1423,7 +1423,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.refund.RefundCheckJournal</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.refund.RefundCheckJournal</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1440,7 +1440,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.report.cashplan.CashPlanReport</Program>
+		<Program>com.tourgeek.tour.acctrec.report.cashplan.CashPlanReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1457,7 +1457,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.entry.acctrec.BookingArTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.booking.entry.acctrec.BookingArTrxGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1474,7 +1474,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctrec.screen.display.ArTrxAgentGridScreen</Program>
+		<Program>com.tourgeek.tour.acctrec.screen.display.ArTrxAgentGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1508,7 +1508,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.trx.VendorApTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.trx.VendorApTrxGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1525,7 +1525,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.entry.acctpay.TourApTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.booking.entry.acctpay.TourApTrxGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1542,7 +1542,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.currreq.CurrencyReqGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.currreq.CurrencyReqGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1559,7 +1559,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.hist.PaymentHistoryGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1593,7 +1593,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.findepest.DepEstScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.findepest.DepEstScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1610,7 +1610,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.invoice.InvoiceScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.invoice.InvoiceScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1644,7 +1644,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.prepymt.PrepaymentScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.prepymt.PrepaymentScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1661,7 +1661,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.select.VendorSelectGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.select.VendorSelectGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1678,7 +1678,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.broker.BrokerDistGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.broker.BrokerDistGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1695,7 +1695,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.pymtreq.PaymentRequestGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.pymtreq.PaymentRequestGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1712,7 +1712,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.check.PrintCheckJournal</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.check.PrintCheckJournal</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1746,7 +1746,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.journal.ApJournal</Program>
+		<Program>com.tourgeek.tour.acctpay.report.journal.ApJournal</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1763,7 +1763,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.cutoff.ApCutoffReport</Program>
+		<Program>com.tourgeek.tour.acctpay.report.cutoff.ApCutoffReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1780,7 +1780,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.ppcutoff.PrepaymentCutoffReport</Program>
+		<Program>com.tourgeek.tour.acctpay.report.ppcutoff.PrepaymentCutoffReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1797,7 +1797,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.curreq.CurrencyReqReport</Program>
+		<Program>com.tourgeek.tour.acctpay.report.curreq.CurrencyReqReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1814,7 +1814,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.tourdet.TourDetailReport</Program>
+		<Program>com.tourgeek.tour.acctpay.report.tourdet.TourDetailReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1831,7 +1831,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.tourcost.TourCostAnalysis</Program>
+		<Program>com.tourgeek.tour.acctpay.report.tourcost.TourCostAnalysis</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1848,7 +1848,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.vendorcost.VendorCostAnalysis</Program>
+		<Program>com.tourgeek.tour.acctpay.report.vendorcost.VendorCostAnalysis</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1865,7 +1865,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.report.ten99.Ten99Report</Program>
+		<Program>com.tourgeek.tour.acctpay.report.ten99.Ten99Report</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1882,7 +1882,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.prepymt.PrepaymentDistScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.prepymt.PrepaymentDistScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1899,7 +1899,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.air.arc.ArcReport</Program>
+		<Program>com.tourgeek.tour.acctpay.air.arc.ArcReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1933,7 +1933,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.air.oride.OverrideReport</Program>
+		<Program>com.tourgeek.tour.acctpay.air.oride.OverrideReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1950,7 +1950,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.air.oride.OverrideGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.air.oride.OverrideGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -1967,7 +1967,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.air.report.TicketReport</Program>
+		<Program>com.tourgeek.tour.acctpay.air.report.TicketReport</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2001,7 +2001,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.Profile</Program>
+		<Program>com.tourgeek.tour.profile.db.Profile</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2018,7 +2018,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.ProfileType</Program>
+		<Program>com.tourgeek.tour.profile.db.ProfileType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2035,7 +2035,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.EAddressType</Program>
+		<Program>com.tourgeek.tour.profile.db.EAddressType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2052,7 +2052,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.AddressType</Program>
+		<Program>com.tourgeek.tour.profile.db.AddressType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2069,7 +2069,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.CertificationType</Program>
+		<Program>com.tourgeek.tour.profile.db.CertificationType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2086,7 +2086,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.ProfileStatus</Program>
+		<Program>com.tourgeek.tour.profile.db.ProfileStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2103,7 +2103,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.ProfileClass</Program>
+		<Program>com.tourgeek.tour.profile.db.ProfileClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2821,7 +2821,7 @@
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.shared.BrochureClass</Program>
+		<Program>com.tourgeek.tour.base.db.shared.BrochureClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -2906,7 +2906,7 @@
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.request.report.RequestPrintLabels</Program>
+		<Program>com.tourgeek.tour.request.report.RequestPrintLabels</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -3090,7 +3090,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.Versions</Program>
+		<Program>com.tourgeek.tour.genled.db.Versions</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -3161,7 +3161,7 @@ Thanks for visiting!</XmlData>
 		<Program>org.jbundle.thin.base.screen.BaseApplet</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="screen">com.tourapp.thin.app.booking.entry.TourAppScreen</entry>
+<entry key="screen">com.tourgeek.thin.app.booking.entry.tourgeekScreen</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -3181,7 +3181,7 @@ Thanks for visiting!</XmlData>
 		<Program>org.jbundle.thin.base.screen.BaseApplet</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="screen">com.tourapp.thin.app.booking.lookup.BookingLookupScreen</entry>
+<entry key="screen">com.tourgeek.thin.app.booking.lookup.BookingLookupScreen</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -3198,7 +3198,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.thin.app.request.PopupAgencyApplet</Program>
+		<Program>com.tourgeek.thin.app.request.PopupAgencyApplet</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -3374,7 +3374,7 @@ Thanks for visiting!</XmlData>
 		<Program>tourdemo.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourdemo/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourdemo/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -3899,7 +3899,7 @@ Thanks for visiting!</XmlData>
 		<Program/>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="screen">com.tourapp.thin.app.request.PopupMainScreen</entry>
+<entry key="screen">com.tourgeek.thin.app.request.PopupMainScreen</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -3933,7 +3933,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.util.test.hotel.TestHotelRateScreen</Program>
+		<Program>com.tourgeek.tour.util.test.hotel.TestHotelRateScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4106,7 +4106,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.assetdr.report.recon.BankReconGridScreen</Program>
+		<Program>com.tourgeek.tour.assetdr.report.recon.BankReconGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4123,7 +4123,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.assetdr.report.CheckRegister</Program>
+		<Program>com.tourgeek.tour.assetdr.report.CheckRegister</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4140,7 +4140,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.SpecialFormat</Program>
+		<Program>com.tourgeek.tour.genled.db.SpecialFormat</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4157,7 +4157,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.NumberFormat</Program>
+		<Program>com.tourgeek.tour.genled.db.NumberFormat</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4174,7 +4174,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.genled.db.SpecialFunction</Program>
+		<Program>com.tourgeek.tour.genled.db.SpecialFunction</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4191,7 +4191,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.profile.db.Affiliation</Program>
+		<Program>com.tourgeek.tour.profile.db.Affiliation</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4225,7 +4225,7 @@ Thanks for visiting!</XmlData>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.request.report.RequestPrintXMLLabels</Program>
+		<Program>com.tourgeek.tour.request.report.RequestPrintXMLLabels</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4245,7 +4245,7 @@ Thanks for visiting!</XmlData>
 		<Program>donandann.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/donandann/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/donandann/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -4322,7 +4322,7 @@ blog: <a href="http://blog.tourgeek.com">blog.tourgeek.com</a><br/>
 email: <a href="mailto:don@donandann.com">don@donandann.com</a><br/>
 voice: <a href="tel:16263582903">626-358-2903</a><br/>
 cell: <a href="tel:16266648491">626-664-8491</a><br/>
-voip: <a href="sip:don@sip.tourapp.com">don@sip.tourapp.com</a><br/>
+voip: <a href="sip:don@sip.tourgeek.com">don@sip.tourgeek.com</a><br/>
 skype: doncorley<br/>
 googletalk: don@donandann.com<br/>
 </html></Comment>
@@ -4433,7 +4433,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.report.profile.ProfileAnalysisScreen</Program>
+		<Program>com.tourgeek.tour.booking.report.profile.ProfileAnalysisScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4586,7 +4586,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>form</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.BookingControl</Program>
+		<Program>com.tourgeek.tour.product.base.db.BookingControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4603,7 +4603,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.BookingStatus</Program>
+		<Program>com.tourgeek.tour.product.base.db.BookingStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4620,7 +4620,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.car.db.CarClass</Program>
+		<Program>com.tourgeek.tour.product.car.db.CarClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4637,7 +4637,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.hotel.db.HotelClass</Program>
+		<Program>com.tourgeek.tour.product.hotel.db.HotelClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4654,7 +4654,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.hotel.db.HotelRate</Program>
+		<Program>com.tourgeek.tour.product.hotel.db.HotelRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4671,7 +4671,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.trans.db.TransportationClass</Program>
+		<Program>com.tourgeek.tour.product.trans.db.TransportationClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4688,7 +4688,7 @@ googletalk: don@donandann.com<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.land.db.LandVaries</Program>
+		<Program>com.tourgeek.tour.product.land.db.LandVaries</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4766,7 +4766,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.trx.ApTrxScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.trx.ApTrxScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4783,7 +4783,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.drcr.CreditMemoScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.drcr.CreditMemoScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -4800,7 +4800,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.drcr.DebitMemoScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.drcr.DebitMemoScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5106,7 +5106,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.db.TourClass</Program>
+		<Program>com.tourgeek.tour.product.tour.db.TourClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5123,7 +5123,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.schedule.db.TourEvent</Program>
+		<Program>com.tourgeek.tour.product.tour.schedule.db.TourEvent</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5140,7 +5140,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.db.TourStatus</Program>
+		<Program>com.tourgeek.tour.product.tour.db.TourStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5157,7 +5157,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.db.TourType</Program>
+		<Program>com.tourgeek.tour.product.tour.db.TourType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5174,7 +5174,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.PaxCategory</Program>
+		<Program>com.tourgeek.tour.product.base.db.PaxCategory</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5208,7 +5208,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.ProductCategory</Program>
+		<Program>com.tourgeek.tour.product.base.db.ProductCategory</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5225,7 +5225,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.ProductTerms</Program>
+		<Program>com.tourgeek.tour.product.base.db.ProductTerms</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5242,7 +5242,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.ProductType</Program>
+		<Program>com.tourgeek.tour.product.base.db.ProductType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5259,7 +5259,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.CostStatus</Program>
+		<Program>com.tourgeek.tour.product.base.db.CostStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5276,7 +5276,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.MealPlan</Program>
+		<Program>com.tourgeek.tour.product.base.db.MealPlan</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5293,7 +5293,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.Continent</Program>
+		<Program>com.tourgeek.tour.base.db.Continent</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5310,7 +5310,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.Region</Program>
+		<Program>com.tourgeek.tour.base.db.Region</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5327,7 +5327,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.State</Program>
+		<Program>com.tourgeek.tour.base.db.State</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5344,7 +5344,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.City</Program>
+		<Program>com.tourgeek.tour.base.db.City</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5361,7 +5361,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.Country</Program>
+		<Program>com.tourgeek.tour.base.db.Country</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5888,7 +5888,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>N</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="headerRecord">ApTrx</entry>
@@ -5908,7 +5908,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>N</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="headerRecord">BankTrx</entry>
@@ -5945,7 +5945,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.air.ticket.TicketTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.air.ticket.TicketTrxGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5962,7 +5962,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.cruise.db.CruiseClass</Program>
+		<Program>com.tourgeek.tour.product.cruise.db.CruiseClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5979,7 +5979,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.air.db.Airline</Program>
+		<Program>com.tourgeek.tour.product.air.db.Airline</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -5996,7 +5996,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.air.db.AirClass</Program>
+		<Program>com.tourgeek.tour.product.air.db.AirClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -6013,7 +6013,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.shared.SeatChoice</Program>
+		<Program>com.tourgeek.tour.base.db.shared.SeatChoice</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -6030,7 +6030,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.item.db.Item</Program>
+		<Program>com.tourgeek.tour.product.item.db.Item</Program>
 		<Params/>
 		<IconResource>tour/buttons/Item</IconResource>
 		<Keywords/>
@@ -6047,7 +6047,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.land.db.LandClass</Program>
+		<Program>com.tourgeek.tour.product.land.db.LandClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -7444,7 +7444,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.InfoStatus</Program>
+		<Program>com.tourgeek.tour.product.base.db.InfoStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -7461,7 +7461,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.InventoryStatus</Program>
+		<Program>com.tourgeek.tour.product.base.db.InventoryStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -7478,7 +7478,7 @@ You need Java to run this program.<br/>
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.ProductStatus</Program>
+		<Program>com.tourgeek.tour.product.base.db.ProductStatus</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -7948,7 +7948,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.car.db.CarRate</Program>
+		<Program>com.tourgeek.tour.product.car.db.CarRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8205,7 +8205,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="jnlpjars">lib/thickscreen</entry>
-<entry key="record">com.tourapp.tour.booking.db.Booking</entry>
+<entry key="record">com.tourgeek.tour.booking.db.Booking</entry>
 <entry key="user"/>
 <entry key="background">backgrounds/worldmapalpha.gif</entry>
 <entry key="jnlpextensions">docs/jnlp/thin,docs/jnlp/thintest,docs/jnlp/thick,docs/jnlp/resource,docs/jnlp/thintour,docs/jnlp/tour</entry>
@@ -8233,7 +8233,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 <entry key="user"/>
 <entry key="background">backgrounds/worldmapalpha.gif</entry>
 <entry key="jnlpextensions">docs/jnlp/thin,docs/jnlp/thintest,docs/jnlp/thick,docs/jnlp/resource,docs/jnlp/thintour,docs/jnlp/tour</entry>
-<entry key="form">com.tourapp.tour.request.db.Request</entry>
+<entry key="form">com.tourgeek.tour.request.db.Request</entry>
 <entry key="backgroundcolor">#FFFFCC</entry>
 </properties></Params>
 		<IconResource/>
@@ -8302,7 +8302,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.cruise.db.CruiseRate</Program>
+		<Program>com.tourgeek.tour.product.cruise.db.CruiseRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8319,7 +8319,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.land.db.LandRate</Program>
+		<Program>com.tourgeek.tour.product.land.db.LandRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8336,7 +8336,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.trans.db.TransportationRate</Program>
+		<Program>com.tourgeek.tour.product.trans.db.TransportationRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8353,7 +8353,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.air.db.AirRate</Program>
+		<Program>com.tourgeek.tour.product.air.db.AirRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8404,7 +8404,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.item.db.ItemClass</Program>
+		<Program>com.tourgeek.tour.product.item.db.ItemClass</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8421,7 +8421,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.item.db.ItemRate</Program>
+		<Program>com.tourgeek.tour.product.item.db.ItemRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8458,7 +8458,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.db.ProductControl</Program>
+		<Program>com.tourgeek.tour.product.base.db.ProductControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -8738,7 +8738,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.db.PricingType</Program>
+		<Program>com.tourgeek.tour.product.tour.db.PricingType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -9111,7 +9111,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.itin.ItineraryReportScreen</Program>
+		<Program>com.tourgeek.tour.booking.itin.ItineraryReportScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -9261,7 +9261,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.schedule.screen.TourEventUpdateScreen</Program>
+		<Program>com.tourgeek.tour.product.tour.schedule.screen.TourEventUpdateScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -9281,7 +9281,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>demosite</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/demohome.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/demohome.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9434,7 +9434,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.ota.db.OTACodeTable</Program>
+		<Program>com.tourgeek.tour.product.base.ota.db.OTACodeTable</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -9631,17 +9631,17 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 	<Menus ID="1736">
 		<LastChanged>2011-08-31T21:52:19</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapplication.com - Tour Software</Name>
+		<Name>tourgeeklication.com - Tour Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
 		<Sequence>40</Sequence>
 		<Comment/>
-		<Code>tourapplication.com</Code>
+		<Code>tourgeeklication.com</Code>
 		<Type>menu</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>tourapplication.com</Program>
+		<Program>tourgeeklication.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9655,16 +9655,16 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<ParentFolderID>1,704</ParentFolderID>
 		<Sequence>10</Sequence>
 		<Comment>Office or home based res agent.
-(reggie@tourapp.com)</Comment>
+(reggie@tourgeek.com)</Comment>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="record">com.tourapp.tour.booking.db.Booking</entry>
-<entry key="user">reggie@tourapp.com</entry>
-<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
+<entry key="record">com.tourgeek.tour.booking.db.Booking</entry>
+<entry key="user">reggie@tourgeek.com</entry>
+<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourgeek.properties</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9697,16 +9697,16 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Name>Accounting system</Name>
 		<ParentFolderID>1,704</ParentFolderID>
 		<Sequence>20</Sequence>
-		<Comment>Accountant (angie@tourapp.com)</Comment>
+		<Comment>Accountant (angie@tourgeek.com)</Comment>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="user">angie@tourapp.com</entry>
+<entry key="user">angie@tourgeek.com</entry>
 <entry key="menu">Accounting</entry>
-<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
+<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourgeek.properties</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9719,16 +9719,16 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Name>Operations system</Name>
 		<ParentFolderID>1,704</ParentFolderID>
 		<Sequence>30</Sequence>
-		<Comment>Operations manager (oprah@tourapp.com)</Comment>
+		<Comment>Operations manager (oprah@tourgeek.com)</Comment>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="user">oprah@tourapp.com</entry>
+<entry key="user">oprah@tourgeek.com</entry>
 <entry key="menu">operation</entry>
-<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
+<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourgeek.properties</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9798,19 +9798,19 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 	<Menus ID="1746">
 		<LastChanged>2011-08-31T21:51:40</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp.com - Tour Operator Software</Name>
+		<Name>tourgeek.com - Tour Operator Software</Name>
 		<ParentFolderID>1,745</ParentFolderID>
 		<Sequence>20</Sequence>
 		<Comment/>
 		<Code>tourapp.com</Code>
 		<Type>menu</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>tourapp.com</Program>
+		<Program>tourgeek.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="stylesheet-path">org/jbundle/res/docs/styles/xsl/ajax/base/</entry>
    <entry key="navmenus">IconsOnly</entry>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/home.xml</entry>
    <entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
    <entry key="stylesheet">menus-tourgeek</entry>
 </properties></Params>
@@ -9832,7 +9832,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>tourvisualizer.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourvisualizer/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourvisualizer/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9852,7 +9852,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>tourmarketplace.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourmarketplace/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourmarketplace/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9872,7 +9872,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>tourstudio.com</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourstudio/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourstudio/home.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9894,7 +9894,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
    <comment>Field properties</comment>
    <entry key="stylesheet-path">org/jbundle/res/docs/styles/xsl/ajax/base/</entry>
    <entry key="navmenus">IconsOnly</entry>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/home.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/home.xml</entry>
    <entry key="meta-keywords">Travel,Tour,Software,'Tour Operator'</entry>
    <entry key="stylesheet">menus-tourgeek</entry>
 </properties></Params>
@@ -9930,7 +9930,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<ParentFolderID>1,745</ParentFolderID>
 		<Sequence>110</Sequence>
 		<Comment>Development menu</Comment>
-		<Code>dev.tourapp.com</Code>
+		<Code>dev.tourgeek.com</Code>
 		<Type>menu</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>Main</Program>
@@ -9970,7 +9970,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>demostart</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/demostart.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/demostart.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10021,7 +10021,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.payroll.db.Employee</Program>
+		<Program>com.tourgeek.tour.payroll.db.Employee</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10038,7 +10038,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.payroll.db.TimeTrx</Program>
+		<Program>com.tourgeek.tour.payroll.db.TimeTrx</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10072,7 +10072,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.payroll.db.EmployeeControl</Program>
+		<Program>com.tourgeek.tour.payroll.db.EmployeeControl</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10089,7 +10089,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.payroll.db.Deduction</Program>
+		<Program>com.tourgeek.tour.payroll.db.Deduction</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10106,7 +10106,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.payroll.db.Department</Program>
+		<Program>com.tourgeek.tour.payroll.db.Department</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10123,7 +10123,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.payroll.db.TaxRate</Program>
+		<Program>com.tourgeek.tour.payroll.db.TaxRate</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10242,7 +10242,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.operations.OperationsBookingDetailGridScreen</Program>
+		<Program>com.tourgeek.tour.booking.operations.OperationsBookingDetailGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10276,7 +10276,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.operations.OperationsBookingDetailGridScreen</Program>
+		<Program>com.tourgeek.tour.booking.operations.OperationsBookingDetailGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10293,7 +10293,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>screen</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.screen.trx.VendorApTrxGridScreen</Program>
+		<Program>com.tourgeek.tour.acctpay.screen.trx.VendorApTrxGridScreen</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10412,7 +10412,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.base.search.db.ProductSearchType</Program>
+		<Program>com.tourgeek.tour.product.base.search.db.ProductSearchType</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10491,7 +10491,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.car.db.CarChain</Program>
+		<Program>com.tourgeek.tour.product.car.db.CarChain</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10508,7 +10508,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.hotel.db.HotelChain</Program>
+		<Program>com.tourgeek.tour.product.hotel.db.HotelChain</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10525,7 +10525,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.cruise.db.CruiseChain</Program>
+		<Program>com.tourgeek.tour.product.cruise.db.CruiseChain</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10542,7 +10542,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.base.db.shared.Brochure</Program>
+		<Program>com.tourgeek.tour.base.db.shared.Brochure</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10559,7 +10559,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.product.tour.schedule.db.TourEventSchedule</Program>
+		<Program>com.tourgeek.tour.product.tour.schedule.db.TourEventSchedule</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10574,7 +10574,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Sequence>30</Sequence>
 		<Comment type="XML"><html>
  <body>
-Your own tourapp<font color="orange">.</font>com tour operator site to experiment with.<br/>
+Your own tourgeek<font color="orange">.</font>com tour operator site to experiment with.<br/>
 Setting up and running your own Tour Operator demo site is quick and easy.
  </body>
 </html></Comment>
@@ -10600,7 +10600,7 @@ Setting up and running your own Tour Operator demo site is quick and easy.
 		<Comment type="XML"><html>
 <body>
 <a href="?menu=quickintro">
-<img height="82" src="com/tourapp/res/images/com/tourgeek/youtube-link.gif" width="138"/>
+<img height="82" src="com/tourgeek/res/images/com/tourgeek/youtube-link.gif" width="138"/>
 </a><br/>
 A tourgeek.com Outbound Tour Operator software demonstration in under two minutes!
 </body>
@@ -10635,7 +10635,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<Program>register</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/registration.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/registration.xml</entry>
 </properties></Params>
 		<IconResource>Edit</IconResource>
 		<Keywords/>
@@ -10669,7 +10669,7 @@ Start using tourgeek<font color="orange">.</font>com now.
 		<Code/>
 		<Type>xml</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com/tourapp/res/docs/com/tourgeek/aboutus.xml</Program>
+		<Program>com/tourgeek/res/docs/com/tourgeek/aboutus.xml</Program>
 		<Params/>
 		<IconResource>Find</IconResource>
 		<Keywords/>
@@ -10690,7 +10690,7 @@ System highlights and the full user's manual.
 		<Code/>
 		<Type>xml</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com/tourapp/res/docs/com/tourgeek/features.xml</Program>
+		<Program>com/tourgeek/res/docs/com/tourgeek/features.xml</Program>
 		<Params/>
 		<IconResource>Zoom</IconResource>
 		<Keywords/>
@@ -10711,7 +10711,7 @@ System highlights and the full user's manual.
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="loadInitialData">true</entry>
-<entry key="userArchiveFolder">com/tourapp/res/data/test_data/current_test_data</entry>
+<entry key="userArchiveFolder">com/tourgeek/res/data/test_data/current_test_data</entry>
 <entry key="dbPrefix">don_</entry>
 <entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
 <entry key="mainUser">don@donandann.com</entry>
@@ -10731,7 +10731,7 @@ System highlights and the full user's manual.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.acctpay.db.Deposit</Program>
+		<Program>com.tourgeek.tour.acctpay.db.Deposit</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10799,7 +10799,7 @@ System highlights and the full user's manual.
 		<Code/>
 		<Type>record</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com.tourapp.tour.booking.detail.db.BookingLand</Program>
+		<Program>com.tourgeek.tour.booking.detail.db.BookingLand</Program>
 		<Params/>
 		<IconResource/>
 		<Keywords/>
@@ -10838,9 +10838,9 @@ System highlights and the full user's manual.
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="record">com.tourapp.tour.booking.db.Booking</entry>
-<entry key="user">kate@tourapp.com</entry>
-<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
+<entry key="record">com.tourgeek.tour.booking.db.Booking</entry>
+<entry key="user">kate@tourgeek.com</entry>
+<entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourgeek.properties</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10952,7 +10952,7 @@ Note: This video has an audio narration.
 		<Program>site</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/sitehome.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/sitehome.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10972,7 +10972,7 @@ Note: This video has an audio narration.
 		<Program>sitestart</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/sitestart.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/sitestart.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -11009,7 +11009,7 @@ Note: This video has an audio narration.
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="record">com.tourapp.tour.booking.db.Booking</entry>
+<entry key="record">com.tourgeek.tour.booking.db.Booking</entry>
 <entry key="user"/>
 <entry key="webStart">thick</entry>
 </properties></Params>
@@ -11136,7 +11136,7 @@ Note: This video has an audio narration.
 		<Sequence>10</Sequence>
 		<Comment type="XML"><html>
  <body>
-Your own tourapp<font color="orange">.</font>com tour operator site.<br/>
+Your own tourgeek<font color="orange">.</font>com tour operator site.<br/>
 Setting up and running your own Tour Operator site is quick and easy.
  </body>
 </html></Comment>
@@ -11658,7 +11658,7 @@ please click the following link:<br/>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
    <entry key="userid"/>
-   <entry key="webStartPropertiesFile">/org/jbundle/res/webstart/tourapp.properties</entry>
+   <entry key="webStartPropertiesFile">/org/jbundle/res/webstart/tourgeek.properties</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -11769,7 +11769,7 @@ My 1982 Trip to India, England, and New York.
 		<Sequence>30</Sequence>
 		<Comment type="XML"><html>
  <body>
-Your own tourapp<font color="orange">.</font>com tour operator site to experiment with.<br/>
+Your own tourgeek<font color="orange">.</font>com tour operator site to experiment with.<br/>
 Setting up and running your own Tour Operator demo site is quick and easy.
  </body>
 </html></Comment>
@@ -11789,15 +11789,15 @@ Setting up and running your own Tour Operator demo site is quick and easy.
 	<Menus ID="1933">
 		<LastChanged>2011-08-31T23:02:50</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp.com video introduction</Name>
+		<Name>tourgeek.com video introduction</Name>
 		<ParentFolderID>1,746</ParentFolderID>
 		<Sequence>35</Sequence>
 		<Comment type="XML"><html>
 <body>
 <a href="?menu=quickintro">
-<img height="82" src="com/tourapp/res/images/com/tourapp/youtube-link.gif" width="138"/>
+<img height="82" src="com/tourgeek/res/images/com/tourgeek/youtube-link.gif" width="138"/>
 </a><br/>
-A tourapp.com Outbound Tour Operator software demonstration in under two minutes!
+A tourgeek.com Outbound Tour Operator software demonstration in under two minutes!
 </body>
 </html></Comment>
 		<Code>quickintro</Code>
@@ -11821,7 +11821,7 @@ A tourapp.com Outbound Tour Operator software demonstration in under two minutes
 		<Sequence>40</Sequence>
 		<Comment type="XML"><html>
  <body>
-Start using tourapp<font color="orange">.</font>com now.
+Start using tourgeek<font color="orange">.</font>com now.
  </body>
 </html></Comment>
 		<Code>register</Code>
@@ -11830,7 +11830,7 @@ Start using tourapp<font color="orange">.</font>com now.
 		<Program>register</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourapp/registration.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/registration.xml</entry>
 </properties></Params>
 		<IconResource>Edit</IconResource>
 		<Keywords/>
@@ -11847,7 +11847,7 @@ Start using tourapp<font color="orange">.</font>com now.
 		<Code/>
 		<Type>xml</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com/tourapp/res/docs/com/tourapp/aboutus.xml</Program>
+		<Program>com/tourgeek/res/docs/com/tourgeek/aboutus.xml</Program>
 		<Params/>
 		<IconResource>Find</IconResource>
 		<Keywords/>
@@ -11868,7 +11868,7 @@ System highlights and the full user's manual.
 		<Code/>
 		<Type>xml</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>com/tourapp/res/docs/com/tourapp/features.xml</Program>
+		<Program>com/tourgeek/res/docs/com/tourgeek/features.xml</Program>
 		<Params/>
 		<IconResource>Zoom</IconResource>
 		<Keywords/>

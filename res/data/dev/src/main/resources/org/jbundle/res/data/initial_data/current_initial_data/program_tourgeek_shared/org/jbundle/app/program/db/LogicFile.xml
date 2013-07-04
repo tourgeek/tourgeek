@@ -34103,7 +34103,7 @@ return keyArea;]]></LogicSource>
     {
         iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
         strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
-        strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
+        strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourgeek.thin.app.booking.entry.tourgeekScreen.class.getName());
         if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
             (this.getMainRecord().getEditMode() == DBConstants.EDIT_CURRENT))
         {   // Add booking ID
@@ -34234,7 +34234,7 @@ this.getRecord(Inventory.INVENTORY_FILE).getField(Inventory.AVAILABLE).removeLis
 {
 	iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
 	strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
-	strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
+	strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourgeek.thin.app.booking.entry.tourgeekScreen.class.getName());
 	if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
 		(this.getMainRecord().getEditMode() == DBConstants.EDIT_CURRENT))
 	{		// Add booking ID
@@ -34262,7 +34262,7 @@ return super;]]></LogicSource>
 {
 	iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
 	strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
-	strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
+	strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourgeek.thin.app.booking.entry.tourgeekScreen.class.getName());
 	if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
 		(this.getMainRecord().getEditMode() == DBConstants.EDIT_CURRENT))
 	{		// Add booking ID
@@ -60102,7 +60102,7 @@ super;]]></LogicSource>
 //if (messageHeader.get(TrxMessageHeader.MESSAGE_CODE) == null)
 //    messageHeader.put(TrxMessageHeader.MESSAGE_CODE, HotelRateRequestMessageOutProcessor.MESSAGE_CODE);    // External operation name
 //if (messageHeader.get(TrxMessageHeader.MESSAGE_RESPONSE_CODE) == null)  // For email transport, need to know who processes the returned message
-//    messageHeader.put(TrxMessageHeader.MESSAGE_RESPONSE_CODE, com.tourapp.tour.product.hotel.message.in.HotelRateResponseSOAPMsgReplyOut.MESSAGE_CODE);    // External operation name
+//    messageHeader.put(TrxMessageHeader.MESSAGE_RESPONSE_CODE, com.tourgeek.tour.product.hotel.message.in.HotelRateResponseSOAPMsgReplyOut.MESSAGE_CODE);    // External operation name
 return null;	// No return from a message out]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
@@ -97614,7 +97614,7 @@ convert.run();]]></LogicSource>
 		<MethodClassName>MergeSkymap</MethodClassName>
 		<LogicSource><![CDATA[String strSource = this.getProperty("source");
 if (strSource == null)
-    strSource = System.getProperty("user.home") + "/workspace/tourapp/data/java/tour/externaldata/skymap/Location.dat";
+    strSource = System.getProperty("user.home") + "/workspace/tourgeek/data/java/tour/externaldata/skymap/Location.dat";
 File file = new File(strSource);
 
 LineNumberReader reader = null;

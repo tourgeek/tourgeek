@@ -1,4 +1,4 @@
-tourapp
+tourgeek
 =======
 
 Open source tour operation system

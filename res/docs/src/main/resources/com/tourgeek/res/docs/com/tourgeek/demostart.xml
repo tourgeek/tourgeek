@@ -1,8 +1,8 @@
 <HELP>
 <html>
 <a href="http://www.tourgeek.com">
-<img border="0" src="com/tourapp/res/images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
-<img border="0" src="com/tourapp/res/images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
+<img border="0" src="com/tourgeek/res/images/com/tourgeek/logoblack.gif" align="left" alt="Logo" />
+<img border="0" src="com/tourgeek/res/images/com/tourgeek/nameblack.gif" alt="tourgeek.com" /></a><br />
 <span style="font-size: large; font-style: bold">
 The Simple, Powerful, Affordable Tour Operator Software<br />
 </span>
@@ -22,7 +22,7 @@ With <a href="http://www.tourgeek.com">tourgeek.com</a> you can:<br />
 	<li>Analyze your financial information with a complete accounting system.</li>
 </ul>
 <!-- 
-Check out the <a href="?xml=org/jbundle/res/docs/help/specifications/index.xml" onClick="if (tourapp) {return tourapp.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
+Check out the <a href="?xml=org/jbundle/res/docs/help/specifications/index.xml" onClick="if (tourgeek) {return tourgeek.util.handleLink(this);} else {return true;}">system specifications</a> here.<br />
  -->
 </span>
 </html>

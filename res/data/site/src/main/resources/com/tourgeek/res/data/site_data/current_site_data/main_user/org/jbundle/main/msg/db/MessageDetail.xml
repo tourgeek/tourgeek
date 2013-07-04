@@ -178,9 +178,9 @@ messageVersionID=12
 		<Properties>#Field properties
 #Wed Jun 03 15:43:27 PDT 2009
 messageInCode=OTA_HotelRateAvailRQ
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 Manual=true
-internalMessageClass=com.tourapp.tour.message.hotel.request.HotelRateAvailRequest
+internalMessageClass=com.tourgeek.tour.message.hotel.request.HotelRateAvailRequest
 subject=Hotel rate and availability request
 XSLTDocument=docs/styles/xsl/tour/message/getrateavail.xsl
 responseMessageCode=OTA_HotelRateAvailRQUpdate
@@ -258,8 +258,8 @@ responseMessageCode=OTA_HotelRateAvailRQUpdate
 #Sun May 31 06:35:41 PDT 2009
 Manual=true
 email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
-internalMessageClass=com.tourapp.tour.message.hotel.request.HotelBookingRequest
-screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
+internalMessageClass=com.tourgeek.tour.message.hotel.request.HotelBookingRequest
+screen.screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateAvailResponseScreen
 responseMessageCode=OTA_HotelRateAvailRQUpdate
 local.messageInCode=OTA_HotelRateAvailRQ
 </Properties>
@@ -279,7 +279,7 @@ local.messageInCode=OTA_HotelRateAvailRQ
 	<MessageDetail ID="20">
 		<LastChanged>2010-04-02T16:00:49</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage
+		<Properties>internalMessageClass=com.tourgeek.tour.message.base.request.FreeSellMessage
 </Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
@@ -417,7 +417,7 @@ dataStatus=5
 	<MessageDetail ID="27">
 		<LastChanged>2010-04-02T16:00:49</LastChanged>
 		<Deleted>N</Deleted>
-		<Properties>internalMessageClass=com.tourapp.tour.message.base.request.FreeSellMessage</Properties>
+		<Properties>internalMessageClass=com.tourgeek.tour.message.base.request.FreeSellMessage</Properties>
 		<ContactTypeID>1</ContactTypeID>
 		<PersonID>1</PersonID>
 		<MessageTransportID>6</MessageTransportID>
@@ -816,7 +816,7 @@ dataStatus=5
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Tue Jun 02 13:54:46 PDT 2009
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelAvailResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelAvailResponseScreen
 XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 </Properties>
 		<ContactTypeID>3</ContactTypeID>
@@ -837,7 +837,7 @@ XSLTDocument=docs/styles/xsl/tour/message/getinventory.xsl
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Sun May 31 06:30:52 PDT 2009
-screen=com.tourapp.tour.booking.message.hotel.screen.HotelRateResponseScreen
+screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 </Properties>
 		<ContactTypeID>3</ContactTypeID>
@@ -858,8 +858,8 @@ XSLTDocument=docs/styles/xsl/tour/message/getrates.xsl
 		<Deleted>N</Deleted>
 		<Properties>#Field properties
 #Tue Jun 02 13:55:12 PDT 2009
-screen.screen=com.tourapp.tour.booking.message.hotel.screen.HotelBookingResponseScreen
-internalMessageClass=com.tourapp.tour.message.hotel.request.HotelBookingRequest
+screen.screen=com.tourgeek.tour.booking.message.hotel.screen.HotelBookingResponseScreen
+internalMessageClass=com.tourgeek.tour.message.hotel.request.HotelBookingRequest
 email.XSLTDocument=docs/styles/xsl/tour/message/getbookingl.xsl
 </Properties>
 		<ContactTypeID>3</ContactTypeID>

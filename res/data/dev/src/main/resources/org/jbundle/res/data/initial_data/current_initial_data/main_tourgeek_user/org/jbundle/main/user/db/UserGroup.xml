@@ -15,18 +15,18 @@
 home=Reservations
 ]]></Properties>
 		<Description>Reservations</Description>
-		<AccessMap><![CDATA[com.tourapp.tour.booking.*	2	2	
-com.tourapp.app.booking.*	2	2	
+		<AccessMap><![CDATA[com.tourgeek.tour.booking.*	2	2	
+com.tourgeek.app.booking.*	2	2	
 *.anon.*	1	1	
 *.anon.*	2	2	
 org.jbundle.main.*	1	2	
-com.tourapp.tour.product.*	2	2	
-com.tourapp.tour.profile.*	2	2	
-com.tourapp.tour.request.*	2	2	
-com.tourapp.tour.base.*	2	2	
-com.tourapp.tour.profile.*	1	2	
+com.tourgeek.tour.product.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
+com.tourgeek.tour.request.*	2	2	
+com.tourgeek.tour.base.*	2	2	
+com.tourgeek.tour.profile.*	1	2	
 org.jbundle.app.test.*	2	1	
-com.tourapp.tour.util.*	2	1	
+com.tourgeek.tour.util.*	2	1	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="3">
@@ -37,12 +37,12 @@ com.tourapp.tour.util.*	2	1
 home=Administrator
 ]]></Properties>
 		<Description>Administrator</Description>
-		<AccessMap><![CDATA[com.tourapp.tour.acctpay.*	2	2	
-com.tourapp.tour.acctrec.*	2	2	
-com.tourapp.tour.assetdr.*	2	2	
-com.tourapp.tour.genled.*	2	2	
-com.tourapp.tour.booking.*	2	2	
-com.tourapp.app.booking.*	2	2	
+		<AccessMap><![CDATA[com.tourgeek.tour.acctpay.*	2	2	
+com.tourgeek.tour.acctrec.*	2	2	
+com.tourgeek.tour.assetdr.*	2	2	
+com.tourgeek.tour.genled.*	2	2	
+com.tourgeek.tour.booking.*	2	2	
+com.tourgeek.app.booking.*	2	2	
 *.anon.*	1	1	
 *.anon.*	2	2	
 org.jbundle.app.program.*	2	2	
@@ -51,13 +51,13 @@ org.jbundle.main.*	2	2
 org.jbundle.app.office.*	2	1	
 org.jbundle.app.dance.*	2	1	
 org.jbundle.app.picture.*	2	1	
-com.tourapp.tour.product.*	2	2	
-com.tourapp.tour.profile.*	2	2	
-com.tourapp.tour.request.*	2	2	
-com.tourapp.tour.base.*	2	2	
-com.tourapp.tour.profile.*	2	2	
+com.tourgeek.tour.product.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
+com.tourgeek.tour.request.*	2	2	
+com.tourgeek.tour.base.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
 org.jbundle.app.test.*	2	1	
-com.tourapp.tour.util.*	2	1	
+com.tourgeek.tour.util.*	2	1	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="4">
@@ -68,26 +68,26 @@ com.tourapp.tour.util.*	2	1
 home=Accounting
 ]]></Properties>
 		<Description>Accounting</Description>
-		<AccessMap><![CDATA[com.tourapp.tour.acctpay.*	2	2	
-com.tourapp.tour.acctrec.*	2	2	
-com.tourapp.tour.assetdr.*	2	2	
-com.tourapp.tour.genled.*	2	2	
-com.tourapp.tour.booking.*	2	2	
-com.tourapp.app.booking.*	2	2	
+		<AccessMap><![CDATA[com.tourgeek.tour.acctpay.*	2	2	
+com.tourgeek.tour.acctrec.*	2	2	
+com.tourgeek.tour.assetdr.*	2	2	
+com.tourgeek.tour.genled.*	2	2	
+com.tourgeek.tour.booking.*	2	2	
+com.tourgeek.app.booking.*	2	2	
 *.anon.*	1	1	
 *.anon.*	2	2	
-com.tourapp.tour.product.*	1	1	
-com.tourapp.tour.profile.*	1	1	
-com.tourapp.tour.request.*	1	1	
-com.tourapp.tour.base.*	1	1	
-com.tourapp.tour.product.*	2	2	
-com.tourapp.tour.profile.*	2	2	
-com.tourapp.tour.request.*	2	2	
-com.tourapp.tour.base.*	2	2	
-com.tourapp.tour.payroll.*	2	2	
-com.tourapp.tour.profile.*	2	2	
+com.tourgeek.tour.product.*	1	1	
+com.tourgeek.tour.profile.*	1	1	
+com.tourgeek.tour.request.*	1	1	
+com.tourgeek.tour.base.*	1	1	
+com.tourgeek.tour.product.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
+com.tourgeek.tour.request.*	2	2	
+com.tourgeek.tour.base.*	2	2	
+com.tourgeek.tour.payroll.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
 org.jbundle.app.test.*	2	1	
-com.tourapp.tour.util.*	2	1	
+com.tourgeek.tour.util.*	2	1	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="5">
@@ -99,10 +99,10 @@ home=vendor
 ]]></Properties>
 		<Description>Vendor</Description>
 		<AccessMap><![CDATA[*.anon.*	1	1	
-com.tourapp.tour.booking.message.*	2	2	
+com.tourgeek.tour.booking.message.*	2	2	
 org.jbundle.main.msg.*	2	2	
-com.tourapp.tour.booking.operations.*	2	2	
-com.tourapp.tour.acctpay.screen.trx.*	2	2	
+com.tourgeek.tour.booking.operations.*	2	2	
+com.tourgeek.tour.acctpay.screen.trx.*	2	2	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="6">
@@ -113,23 +113,23 @@ com.tourapp.tour.acctpay.screen.trx.*	2	2
 home=operation
 ]]></Properties>
 		<Description>Operations</Description>
-		<AccessMap><![CDATA[com.tourapp.tour.acctpay.*	1	2	
-com.tourapp.tour.acctrec.*	1	2	
-com.tourapp.tour.assetdr.*	1	2	
-com.tourapp.tour.genled.*	1	2	
-com.tourapp.tour.booking.*	2	2	
-com.tourapp.app.booking.*	2	2	
+		<AccessMap><![CDATA[com.tourgeek.tour.acctpay.*	1	2	
+com.tourgeek.tour.acctrec.*	1	2	
+com.tourgeek.tour.assetdr.*	1	2	
+com.tourgeek.tour.genled.*	1	2	
+com.tourgeek.tour.booking.*	2	2	
+com.tourgeek.app.booking.*	2	2	
 *.anon.*	1	1	
 *.anon.*	2	2	
 org.jbundle.main.*	1	2	
-com.tourapp.tour.product.*	2	2	
-com.tourapp.tour.profile.*	2	2	
-com.tourapp.tour.request.*	2	2	
-com.tourapp.tour.base.*	2	2	
-com.tourapp.tour.payroll.*	1	2	
-com.tourapp.tour.profile.*	1	2	
+com.tourgeek.tour.product.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
+com.tourgeek.tour.request.*	2	2	
+com.tourgeek.tour.base.*	2	2	
+com.tourgeek.tour.payroll.*	1	2	
+com.tourgeek.tour.profile.*	1	2	
 org.jbundle.app.test.*	2	1	
-com.tourapp.tour.util.*	2	1	
+com.tourgeek.tour.util.*	2	1	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="7">
@@ -140,10 +140,10 @@ com.tourapp.tour.util.*	2	1
 home=travelagent
 ]]></Properties>
 		<Description>Profile/Customer</Description>
-		<AccessMap><![CDATA[com.tourapp.tour.booking.*	2	2	
-com.tourapp.app.booking.*	2	2	
+		<AccessMap><![CDATA[com.tourgeek.tour.booking.*	2	2	
+com.tourgeek.app.booking.*	2	2	
 *.anon.*	1	1	
-com.tourapp.tour.profile.*	2	2	
+com.tourgeek.tour.profile.*	2	2	
 ]]></AccessMap>
 	</UserGroup>
 	<UserGroup ID="8">

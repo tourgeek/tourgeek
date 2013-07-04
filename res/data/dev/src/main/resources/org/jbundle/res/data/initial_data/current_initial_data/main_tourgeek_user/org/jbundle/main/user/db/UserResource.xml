@@ -3,17 +3,17 @@
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Accounting</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.acctpay.*
-com.tourapp.tour.acctrec.*
-com.tourapp.tour.assetdr.*
-com.tourapp.tour.genled.*]]></ResourceClass>
+		<ResourceClass><![CDATA[com.tourgeek.tour.acctpay.*
+com.tourgeek.tour.acctrec.*
+com.tourgeek.tour.assetdr.*
+com.tourgeek.tour.genled.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="2">
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Reservations</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.booking.*
-com.tourapp.app.booking.*]]></ResourceClass>
+		<ResourceClass><![CDATA[com.tourgeek.tour.booking.*
+com.tourgeek.app.booking.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="3">
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
@@ -46,38 +46,38 @@ org.jbundle.app.picture.*]]></ResourceClass>
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Operations</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.product.*
-com.tourapp.tour.profile.*
-com.tourapp.tour.request.*
-com.tourapp.tour.base.*]]></ResourceClass>
+		<ResourceClass><![CDATA[com.tourgeek.tour.product.*
+com.tourgeek.tour.profile.*
+com.tourgeek.tour.request.*
+com.tourgeek.tour.base.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="8">
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Payroll</Description>
-		<ResourceClass>com.tourapp.tour.payroll.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.payroll.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="9">
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Vendor access</Description>
-		<ResourceClass><![CDATA[com.tourapp.tour.booking.message.*
+		<ResourceClass><![CDATA[com.tourgeek.tour.booking.message.*
 org.jbundle.main.msg.*
-com.tourapp.tour.booking.operations.*
-com.tourapp.tour.acctpay.screen.trx.*]]></ResourceClass>
+com.tourgeek.tour.booking.operations.*
+com.tourgeek.tour.acctpay.screen.trx.*]]></ResourceClass>
 	</UserResource>
 	<UserResource ID="10">
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Customer/Profile</Description>
-		<ResourceClass>com.tourapp.tour.profile.*</ResourceClass>
+		<ResourceClass>com.tourgeek.tour.profile.*</ResourceClass>
 	</UserResource>
 	<UserResource ID="11">
 		<LastChanged>2012-09-21T18:05:36</LastChanged>
 		<Deleted>N</Deleted>
 		<Description>Test</Description>
 		<ResourceClass><![CDATA[org.jbundle.app.test.*
-com.tourapp.tour.util.*
+com.tourgeek.tour.util.*
 ]]></ResourceClass>
 	</UserResource>
 </file>

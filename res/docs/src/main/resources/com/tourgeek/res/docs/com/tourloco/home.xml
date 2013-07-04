@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-<img src="com/tourapp/res/images/com/tourloco/logoblack.gif" align="left" alt="Logo" />
-<img src="com/tourapp/res/images/com/tourloco/nameblack.gif" alt="tourloco.com" /><br />
+<img src="com/tourgeek/res/images/com/tourloco/logoblack.gif" align="left" alt="Logo" />
+<img src="com/tourgeek/res/images/com/tourloco/nameblack.gif" alt="tourloco.com" /><br />
 <span style="font-size: 14pt; font-style: bold">
 Your travel business, on-line.<p />
 </span>
@@ -13,6 +13,6 @@ Your travel business, on-line.<p />
 	<li>Easy to use tour entry and operations system.</li>
 	<li>Full accounting system.</li>
 </ul>
-More about tourloco.com <a href="?xml=com/tourapp/res/docs/com/tourloco/aboutus.xml">here.</a><br />
+More about tourloco.com <a href="?xml=com/tourgeek/res/docs/com/tourloco/aboutus.xml">here.</a><br />
 </span>
 </html>

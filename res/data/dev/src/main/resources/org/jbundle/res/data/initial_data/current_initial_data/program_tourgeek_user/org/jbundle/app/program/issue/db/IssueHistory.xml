@@ -1333,7 +1333,7 @@ Non-breaking spaces in forms]]></Comment>
 	<IssueHistory ID="26">
 		<LastChanged>2010-05-19T12:27:05</LastChanged>
 		<Deleted>N</Deleted>
-		<Comment><![CDATA[tourapp-config-webapp / ${basedir}/../../../jbundle/ 
+		<Comment><![CDATA[tourgeek-config-webapp / ${basedir}/../../../jbundle/ 
 jbundle-config-jnlp / build.xml (jcalendarbutton and jmuffinmanager)
 (can't be referenced) Also in build.xml, don't use /workspace/ in path
 (could be any workspace)]]></Comment>

@@ -20134,7 +20134,7 @@
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingSession</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>com.tourapp.thin.app.booking.entry</ClassFieldClass>
+		<ClassFieldClass>com.tourgeek.thin.app.booking.entry</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -53823,7 +53823,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ProfileDetailBaseGridScreen</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>com.tourapp.model.tour.profile.db</ClassFieldClass>
+		<ClassFieldClass>com.tourgeek.model.tour.profile.db</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59583,7 +59583,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>AirlineField</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>com.tourapp.model.tour.product.air.db</ClassFieldClass>
+		<ClassFieldClass>com.tourgeek.model.tour.product.air.db</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -59598,7 +59598,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BookingField</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>com.tourapp.model.tour.booking.db</ClassFieldClass>
+		<ClassFieldClass>com.tourgeek.model.tour.booking.db</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>

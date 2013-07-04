@@ -961,7 +961,7 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<Properties>#Field properties
 #Sun Nov 01 07:09:31 PST 2009
 destinationMessage=http\://www.tourgeek.com/xmlws
-wsdlPath=http\://www.tourgeek.com/tourapp/wsdl?wsdlversion\=1.1&amp;version\=2004B
+wsdlPath=http\://www.tourgeek.com/tourgeek/wsdl?wsdlversion\=1.1&amp;version\=2004B
 </Properties>
 		<VendorStatusID>1</VendorStatusID>
 		<PaymentCycleID>1</PaymentCycleID>
