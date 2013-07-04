@@ -1,9 +1,5 @@
-/**
-  * @(#)Transportation.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.trans.db;
+
+package com.tourgeek.tour.product.trans.db;
 
 import java.util.*;
 
@@ -20,23 +16,23 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.product.tour.db.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.trans.request.data.*;
-import com.tourapp.tour.message.base.response.data.*;
-import com.tourapp.tour.message.trans.response.*;
-import com.tourapp.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.trans.request.data.*;
+import com.tourgeek.tour.message.base.response.data.*;
+import com.tourgeek.tour.message.trans.response.*;
+import com.tourgeek.tour.message.base.request.data.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.booking.inventory.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.model.tour.product.trans.db.*;
+import com.tourgeek.model.tour.booking.inventory.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.model.tour.product.trans.db.*;
 
 /**
  *  Transportation - Transportation.

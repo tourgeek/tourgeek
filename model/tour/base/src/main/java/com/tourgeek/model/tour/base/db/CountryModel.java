@@ -1,11 +1,7 @@
-/**
-  * @(#)CountryModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.base.db;
 
-import com.tourapp.model.tour.base.db.*;
+package com.tourgeek.model.tour.base.db;
+
+import com.tourgeek.model.tour.base.db.*;
 
 public interface CountryModel extends LocationModel
 {
@@ -28,11 +24,11 @@ public interface CountryModel extends LocationModel
     public static final String PICTURE = "Picture";
 
     public static final String REGION_ID_KEY = "RegionID";
-    public static final String COUNTRY_SCREEN_CLASS = "com.tourapp.tour.base.screen.CountryScreen";
-    public static final String COUNTRY_GRID_SCREEN_CLASS = "com.tourapp.tour.base.screen.CountryGridScreen";
+    public static final String COUNTRY_SCREEN_CLASS = "com.tourgeek.tour.base.screen.CountryScreen";
+    public static final String COUNTRY_GRID_SCREEN_CLASS = "com.tourgeek.tour.base.screen.CountryGridScreen";
 
     public static final String COUNTRY_FILE = "Country";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.base.db.Country";
-    public static final String THICK_CLASS = "com.tourapp.tour.base.db.Country";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.base.db.Country";
+    public static final String THICK_CLASS = "com.tourgeek.tour.base.db.Country";
 
 }

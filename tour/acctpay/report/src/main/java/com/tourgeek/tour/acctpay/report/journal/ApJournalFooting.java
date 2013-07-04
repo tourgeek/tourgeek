@@ -1,9 +1,5 @@
-/**
-  * @(#)ApJournalFooting.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.report.journal;
+
+package com.tourgeek.tour.acctpay.report.journal;
 
 import java.util.*;
 
@@ -23,9 +19,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.report.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.acctpay.report.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.acctpay.report.*;
+import com.tourgeek.tour.booking.db.*;
 
 /**
  *  ApJournalFooting - A/P Journal.

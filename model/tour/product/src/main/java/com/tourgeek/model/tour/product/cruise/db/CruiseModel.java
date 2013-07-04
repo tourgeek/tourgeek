@@ -1,11 +1,7 @@
-/**
-  * @(#)CruiseModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.cruise.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.cruise.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface CruiseModel extends TransportProductModel
 {
@@ -53,11 +49,11 @@ public interface CruiseModel extends TransportProductModel
     public static final String LUNCHES = "Lunches";
     public static final String DINNERS = "Dinners";
     public static final String DISCONTINUED_ON = "DiscontinuedOn";
-    public static final String CRUISE_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruiseScreen";
-    public static final String CRUISE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruiseGridScreen";
+    public static final String CRUISE_SCREEN_CLASS = "com.tourgeek.tour.product.cruise.screen.CruiseScreen";
+    public static final String CRUISE_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.cruise.screen.CruiseGridScreen";
 
     public static final String CRUISE_FILE = "Cruise";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.cruise.db.Cruise";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.cruise.db.Cruise";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.cruise.db.Cruise";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.cruise.db.Cruise";
 
 }

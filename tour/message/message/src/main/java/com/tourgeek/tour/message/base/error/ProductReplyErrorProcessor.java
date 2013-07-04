@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductReplyErrorProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base.error;
+
+package com.tourgeek.tour.message.base.error;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.base.response.*;
+import com.tourgeek.tour.message.base.response.*;
 
 /**
  *  ProductReplyErrorProcessor - Processor for replies.

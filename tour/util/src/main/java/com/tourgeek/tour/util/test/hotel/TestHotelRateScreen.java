@@ -1,9 +1,5 @@
-/**
-  * @(#)TestHotelRateScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.test.hotel;
+
+package com.tourgeek.tour.util.test.hotel;
 
 import java.util.*;
 
@@ -22,23 +18,23 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.hotel.db.*;
+import com.tourgeek.tour.product.hotel.db.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.base.message.trx.processor.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.message.hotel.request.out.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.message.hotel.request.out.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.message.hotel.request.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.message.hotel.response.*;
-import com.tourapp.tour.message.hotel.response.data.*;
-import com.tourapp.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.hotel.request.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.message.hotel.response.*;
+import com.tourgeek.tour.message.hotel.response.data.*;
+import com.tourgeek.tour.message.base.request.data.*;
 import org.jbundle.base.message.trx.transport.local.*;
-import com.tourapp.tour.message.base.request.in.*;
+import com.tourgeek.tour.message.base.request.in.*;
 import org.jbundle.main.db.base.*;
 import org.jbundle.model.message.*;
 

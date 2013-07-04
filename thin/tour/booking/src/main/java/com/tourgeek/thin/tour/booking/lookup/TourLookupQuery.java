@@ -1,16 +1,12 @@
-/**
-  * @(#)TourLookupQuery.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.booking.lookup;
+
+package com.tourgeek.thin.tour.booking.lookup;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.model.tour.booking.lookup.*;
+import com.tourgeek.model.tour.booking.lookup.*;
 
 public class TourLookupQuery extends FieldList
     implements TourLookupQueryModel

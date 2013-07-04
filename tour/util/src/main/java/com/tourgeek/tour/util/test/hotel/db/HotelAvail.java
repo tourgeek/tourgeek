@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelAvail.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.test.hotel.db;
+
+package com.tourgeek.tour.util.test.hotel.db;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.model.tour.util.test.hotel.db.*;
+import com.tourgeek.model.tour.util.test.hotel.db.*;
 
 /**
  *  HotelAvail - Test hotel avail using Soap table type.

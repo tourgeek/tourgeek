@@ -1,11 +1,7 @@
-/**
-  * @(#)TourHeaderModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.tour.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.tour.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface TourHeaderModel extends ProductModel
 {
@@ -54,11 +50,11 @@ public interface TourHeaderModel extends ProductModel
     public static final String COUNTRY_ID = "CountryID";
     public static final String REGION_ID = "RegionID";
     public static final String TOUR_DETAIL = "Tour detail";
-    public static final String TOUR_HEADER_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourHeaderScreen";
-    public static final String TOUR_PRODUCT_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.screen.TourProductGridScreen";
+    public static final String TOUR_HEADER_SCREEN_CLASS = "com.tourgeek.tour.product.tour.screen.TourHeaderScreen";
+    public static final String TOUR_PRODUCT_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.tour.screen.TourProductGridScreen";
 
     public static final String TOUR_HEADER_FILE = "TourHeader";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.db.TourHeader";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.tour.db.TourHeader";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.tour.db.TourHeader";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.tour.db.TourHeader";
 
 }

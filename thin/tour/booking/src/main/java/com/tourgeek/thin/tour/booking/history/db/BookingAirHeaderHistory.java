@@ -1,17 +1,13 @@
-/**
-  * @(#)BookingAirHeaderHistory.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.booking.history.db;
+
+package com.tourgeek.thin.tour.booking.history.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.thin.tour.booking.detail.db.*;
-import com.tourapp.model.tour.booking.history.db.*;
+import com.tourgeek.thin.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.history.db.*;
 
 public class BookingAirHeaderHistory extends BookingAirHeader
     implements BookingAirHeaderHistoryModel

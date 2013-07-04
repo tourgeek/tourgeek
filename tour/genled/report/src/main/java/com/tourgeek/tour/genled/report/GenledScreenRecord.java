@@ -1,9 +1,5 @@
-/**
-  * @(#)GenledScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.report;
+
+package com.tourgeek.tour.genled.report;
 
 import java.util.*;
 
@@ -21,8 +17,8 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.genled.finstmt.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.genled.finstmt.*;
 
 /**
  *  GenledScreenRecord - Params for General Ledger Print-out.

@@ -1,9 +1,5 @@
-/**
-  * @(#)TourEventUpdateProcess.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.schedule.screen;
+
+package com.tourgeek.tour.product.tour.schedule.screen;
 
 import java.util.*;
 
@@ -21,8 +17,8 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.tour.schedule.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.product.tour.schedule.db.*;
 
 /**
  *  TourEventUpdateProcess - .

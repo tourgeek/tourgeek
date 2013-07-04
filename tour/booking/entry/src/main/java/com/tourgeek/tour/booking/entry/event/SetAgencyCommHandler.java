@@ -1,9 +1,5 @@
-/**
-  * @(#)SetAgencyCommHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.event;
+
+package com.tourgeek.tour.booking.entry.event;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.profile.db.*;
+import com.tourgeek.tour.profile.db.*;
 
 /**
  *  SetAgencyCommHandler - Set up the agency commission %.

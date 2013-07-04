@@ -1,11 +1,7 @@
-/**
-  * @(#)TourHeaderCruiseModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.tour.detail.db;
 
-import com.tourapp.model.tour.product.tour.detail.db.*;
+package com.tourgeek.model.tour.product.tour.detail.db;
+
+import com.tourgeek.model.tour.product.tour.detail.db.*;
 
 public interface TourHeaderCruiseModel extends TourHeaderTransportModel
 {
@@ -79,11 +75,11 @@ public interface TourHeaderCruiseModel extends TourHeaderTransportModel
     //public static final String MEALS = MEALS;
     //public static final String DAYS = DAYS;
     //public static final String PRICING_TYPE_ID = PRICING_TYPE_ID;
-    public static final String TOUR_HEADER_CRUISE_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderCruiseScreen";
-    public static final String TOUR_HEADER_CRUISE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderCruiseGridScreen";
+    public static final String TOUR_HEADER_CRUISE_SCREEN_CLASS = "com.tourgeek.tour.product.tour.detail.screen.TourHeaderCruiseScreen";
+    public static final String TOUR_HEADER_CRUISE_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.tour.detail.screen.TourHeaderCruiseGridScreen";
 
     public static final String TOUR_HEADER_CRUISE_FILE = "TourHeaderDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.detail.db.TourHeaderCruise";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.tour.detail.db.TourHeaderCruise";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.tour.detail.db.TourHeaderCruise";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.tour.detail.db.TourHeaderCruise";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)AcctBatchScreenRecord_UserID.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.screen.batch;
+
+package com.tourgeek.tour.genled.screen.batch;
 
 import java.util.*;
 

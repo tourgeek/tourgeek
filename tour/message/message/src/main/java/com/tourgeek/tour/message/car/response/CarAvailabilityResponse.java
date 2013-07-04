@@ -1,9 +1,5 @@
-/**
-  * @(#)CarAvailabilityResponse.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.car.response;
+
+package com.tourgeek.tour.message.car.response;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.base.response.*;
+import com.tourgeek.tour.message.base.response.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.model.message.*;
 

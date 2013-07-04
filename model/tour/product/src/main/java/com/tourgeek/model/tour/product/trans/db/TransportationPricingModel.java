@@ -1,11 +1,7 @@
-/**
-  * @(#)TransportationPricingModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.trans.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.trans.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface TransportationPricingModel extends ProductPricingModel
 {
@@ -27,11 +23,11 @@ public interface TransportationPricingModel extends ProductPricingModel
     //public static final String PAY_AT = PAY_AT;
     public static final String FROM_PAX = "FromPax";
     public static final String TO_PAX = "ToPax";
-    public static final String TRANSPORTATION_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationPricingScreen";
-    public static final String TRANSPORTATION_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.trans.screen.TransportationPricingGridScreen";
+    public static final String TRANSPORTATION_PRICING_SCREEN_CLASS = "com.tourgeek.tour.product.trans.screen.TransportationPricingScreen";
+    public static final String TRANSPORTATION_PRICING_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.trans.screen.TransportationPricingGridScreen";
 
     public static final String TRANSPORTATION_PRICING_FILE = "TransportationPricing";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.trans.db.TransportationPricing";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.trans.db.TransportationPricing";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.trans.db.TransportationPricing";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.trans.db.TransportationPricing";
 
 }

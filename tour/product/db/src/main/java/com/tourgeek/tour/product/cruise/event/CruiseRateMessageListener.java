@@ -1,9 +1,5 @@
-/**
-  * @(#)CruiseRateMessageListener.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.cruise.event;
+
+package com.tourgeek.tour.product.cruise.event;
 
 import java.util.*;
 
@@ -20,10 +16,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.event.*;
+import com.tourgeek.tour.product.base.event.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.cruise.response.*;
-import com.tourapp.tour.message.base.response.*;
+import com.tourgeek.tour.message.cruise.response.*;
+import com.tourgeek.tour.message.base.response.*;
 
 /**
  *  CruiseRateMessageListener - Process the cruise rate messages.

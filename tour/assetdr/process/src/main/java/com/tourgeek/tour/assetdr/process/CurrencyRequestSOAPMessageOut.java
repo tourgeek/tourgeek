@@ -1,9 +1,5 @@
-/**
-  * @(#)CurrencyRequestSOAPMessageOut.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.assetdr.process;
+
+package com.tourgeek.tour.assetdr.process;
 
 import java.util.*;
 

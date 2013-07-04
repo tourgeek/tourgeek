@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelRateRequestMessage.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.test.hotel;
+
+package com.tourgeek.tour.util.test.hotel;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.hotel.request.out.*;
+import com.tourgeek.tour.message.hotel.request.out.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
 

@@ -1,9 +1,5 @@
-/**
-  * @(#)BrocBundleButton.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.request.screen;
+
+package com.tourgeek.tour.request.screen;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.request.db.*;
+import com.tourgeek.tour.request.db.*;
 
 /**
  *  BrocBundleButton - Bundle button.

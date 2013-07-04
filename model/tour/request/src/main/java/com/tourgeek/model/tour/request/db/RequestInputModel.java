@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestInputModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.request.db;
+
+package com.tourgeek.model.tour.request.db;
 
 import org.jbundle.model.db.*;
 
@@ -18,7 +14,7 @@ public interface RequestInputModel extends Rec
     public static final String BROCHURE_DESC = "BrochureDesc";
 
     public static final String REQUEST_INPUT_FILE = "RequestInput";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.RequestInput";
-    public static final String THICK_CLASS = "com.tourapp.tour.request.db.RequestInput";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.request.db.RequestInput";
+    public static final String THICK_CLASS = "com.tourgeek.tour.request.db.RequestInput";
 
 }

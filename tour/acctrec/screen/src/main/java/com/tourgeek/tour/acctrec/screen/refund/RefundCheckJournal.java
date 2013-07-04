@@ -1,9 +1,5 @@
-/**
-  * @(#)RefundCheckJournal.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.refund;
+
+package com.tourgeek.tour.acctrec.screen.refund;
 
 import java.util.*;
 
@@ -23,12 +19,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.report.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.acctrec.screen.cash.*;
-import com.tourapp.tour.assetdr.db.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.acctrec.screen.cash.*;
+import com.tourgeek.tour.assetdr.db.*;
 
 /**
  *  RefundCheckJournal - Print refund checks.

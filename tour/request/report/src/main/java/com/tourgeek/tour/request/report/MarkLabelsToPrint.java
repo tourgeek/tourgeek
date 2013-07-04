@@ -1,9 +1,5 @@
-/**
-  * @(#)MarkLabelsToPrint.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.request.report;
+
+package com.tourgeek.tour.request.report;
 
 import java.util.*;
 
@@ -21,7 +17,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
-import com.tourapp.tour.request.db.*;
+import com.tourgeek.tour.request.db.*;
 
 /**
  *  MarkLabelsToPrint - Mark all the current labels for printing (concurrency issue)..

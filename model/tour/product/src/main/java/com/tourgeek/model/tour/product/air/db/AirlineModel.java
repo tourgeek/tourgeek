@@ -1,9 +1,5 @@
-/**
-  * @(#)AirlineModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.air.db;
+
+package com.tourgeek.model.tour.product.air.db;
 
 import org.jbundle.model.db.*;
 
@@ -37,11 +33,11 @@ public interface AirlineModel extends Rec
     public static final String AIRLINE_NO_KEY = "AirlineNo";
 
     public static final String VENDOR_ID_KEY = "VendorID";
-    public static final String AIRLINE_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirlineScreen";
-    public static final String AIRLINE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirlineGridScreen";
+    public static final String AIRLINE_SCREEN_CLASS = "com.tourgeek.tour.product.air.screen.AirlineScreen";
+    public static final String AIRLINE_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.air.screen.AirlineGridScreen";
 
     public static final String AIRLINE_FILE = "Airline";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.air.db.Airline";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.air.db.Airline";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.air.db.Airline";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.air.db.Airline";
 
 }

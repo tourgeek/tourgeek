@@ -1,16 +1,12 @@
-/**
-  * @(#)BookingMenuLookup.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.booking.remote.lookup;
+
+package com.tourgeek.thin.tour.booking.remote.lookup;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.model.tour.booking.remote.lookup.*;
+import com.tourgeek.model.tour.booking.remote.lookup.*;
 
 public class BookingMenuLookup extends FieldList
     implements BookingMenuLookupModel

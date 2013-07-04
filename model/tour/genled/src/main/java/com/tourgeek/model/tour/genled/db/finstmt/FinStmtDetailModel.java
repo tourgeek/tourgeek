@@ -1,9 +1,5 @@
-/**
-  * @(#)FinStmtDetailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db.finstmt;
+
+package com.tourgeek.model.tour.genled.db.finstmt;
 
 import org.jbundle.model.db.*;
 
@@ -27,13 +23,13 @@ public interface FinStmtDetailModel extends Rec
     public static final String SPECIAL_FUNCTION = "SpecialFunction";
 
     public static final String FIN_STMT_ID_KEY = "FinStmtID";
-    public static final String FIN_STMT_DETAIL_SCREEN_CLASS = "com.tourapp.tour.genled.finstmt.screen.FinStmtDetailScreen";
-    public static final String FIN_STMT_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.finstmt.screen.FinStmtDetailGridScreen";
+    public static final String FIN_STMT_DETAIL_SCREEN_CLASS = "com.tourgeek.tour.genled.finstmt.screen.FinStmtDetailScreen";
+    public static final String FIN_STMT_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.finstmt.screen.FinStmtDetailGridScreen";
     public static final String RENUMBER = "Renumber";
     public static final String VALIDATE = "Validate";
 
     public static final String FIN_STMT_DETAIL_FILE = "FinStmtDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.finstmt.FinStmtDetail";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.finstmt.FinStmtDetail";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.finstmt.FinStmtDetail";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.finstmt.FinStmtDetail";
 
 }

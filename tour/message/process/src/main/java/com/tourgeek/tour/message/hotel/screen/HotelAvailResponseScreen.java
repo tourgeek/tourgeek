@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelAvailResponseScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.hotel.screen;
+
+package com.tourgeek.tour.message.hotel.screen;
 
 import java.util.*;
 
@@ -22,10 +18,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.message.base.screen.*;
+import com.tourgeek.tour.booking.message.base.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.hotel.request.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.message.hotel.request.*;
+import com.tourgeek.tour.product.base.db.*;
 
 /**
  *  HotelAvailResponseScreen - Hotel inventory screen.

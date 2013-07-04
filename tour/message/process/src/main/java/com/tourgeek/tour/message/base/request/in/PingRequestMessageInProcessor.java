@@ -1,9 +1,5 @@
-/**
-  * @(#)PingRequestMessageInProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base.request.in;
+
+package com.tourgeek.tour.message.base.request.in;
 
 import java.util.*;
 
@@ -23,8 +19,8 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.processor.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.message.base.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.message.base.*;
 
 /**
  *  PingRequestMessageInProcessor - .

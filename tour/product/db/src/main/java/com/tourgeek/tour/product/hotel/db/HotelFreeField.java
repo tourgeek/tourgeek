@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelFreeField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.hotel.db;
+
+package com.tourgeek.tour.product.hotel.db;
 
 import java.util.*;
 
@@ -20,30 +16,30 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.base.db.*;
 import java.util.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 import java.text.*;
-import com.tourapp.thin.app.booking.entry.search.*;
-import com.tourapp.tour.message.hotel.request.*;
+import com.tourgeek.thin.app.booking.entry.search.*;
+import com.tourgeek.tour.message.hotel.request.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.product.tour.db.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.hotel.request.data.*;
-import com.tourapp.tour.message.hotel.response.data.*;
-import com.tourapp.tour.message.hotel.response.*;
-import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.message.base.response.data.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.hotel.request.data.*;
+import com.tourgeek.tour.message.hotel.response.data.*;
+import com.tourgeek.tour.message.hotel.response.*;
+import com.tourgeek.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.response.data.*;
 import org.jbundle.main.db.base.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.booking.detail.db.*;
-import com.tourapp.model.tour.booking.inventory.db.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.inventory.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  HotelFreeField - .

@@ -1,16 +1,12 @@
-/**
-  * @(#)FinStmtHeader.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.genled.db.finstmt;
+
+package com.tourgeek.thin.tour.genled.db.finstmt;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.model.tour.genled.db.finstmt.*;
+import com.tourgeek.model.tour.genled.db.finstmt.*;
 
 public class FinStmtHeader extends FieldList
     implements FinStmtHeaderModel

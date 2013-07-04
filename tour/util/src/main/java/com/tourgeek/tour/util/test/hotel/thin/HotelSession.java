@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.test.hotel.thin;
+
+package com.tourgeek.tour.util.test.hotel.thin;
 
 import java.util.*;
 
@@ -24,17 +20,17 @@ import org.jbundle.base.remote.db.*;
 import org.jbundle.base.remote.*;
 import org.jbundle.thin.base.remote.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.util.test.hotel.*;
-import com.tourapp.tour.product.hotel.db.*;
+import com.tourgeek.tour.util.test.hotel.*;
+import com.tourgeek.tour.product.hotel.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.message.hotel.response.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.message.hotel.response.*;
 import org.jbundle.thin.base.message.session.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.message.hotel.response.data.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.message.hotel.response.data.*;
 import org.jbundle.model.message.*;
 
 /**

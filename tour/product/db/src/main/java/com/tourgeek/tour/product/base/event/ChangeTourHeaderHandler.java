@@ -1,9 +1,5 @@
-/**
-  * @(#)ChangeTourHeaderHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.event;
+
+package com.tourgeek.tour.product.base.event;
 
 import java.util.*;
 
@@ -23,8 +19,8 @@ import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.screen.print.thread.*;
 import org.jbundle.thin.base.remote.*;
 import org.jbundle.thin.base.thread.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  ChangeTourHeaderHandler - Lookup tour hdr, get tour.

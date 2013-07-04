@@ -1,11 +1,7 @@
-/**
-  * @(#)BaseTrxModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
 
-import com.tourapp.model.tour.genled.db.*;
+package com.tourgeek.model.tour.genled.db;
+
+import com.tourgeek.model.tour.genled.db.*;
 
 public interface BaseTrxModel extends TrxModel
 {
@@ -22,7 +18,7 @@ public interface BaseTrxModel extends TrxModel
     public static final String DIST_TYPE = "Dist";
 
     public static final String BASE_TRX_FILE = "BaseTrx";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.BaseTrx";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.BaseTrx";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.BaseTrx";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.BaseTrx";
 
 }

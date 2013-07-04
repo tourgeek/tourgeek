@@ -1,9 +1,5 @@
-/**
-  * @(#)TourEventSchedule.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.product.tour.schedule.db;
+
+package com.tourgeek.thin.tour.product.tour.schedule.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
@@ -11,7 +7,7 @@ import org.jbundle.thin.base.util.*;
 import org.jbundle.thin.base.db.*;
 
 import org.jbundle.thin.main.db.*;
-import com.tourapp.model.tour.product.tour.schedule.db.*;
+import com.tourgeek.model.tour.product.tour.schedule.db.*;
 
 public class TourEventSchedule extends PropertiesRecord
     implements TourEventScheduleModel

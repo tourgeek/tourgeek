@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.remote;
+
+package com.tourgeek.tour.product.remote;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.remote.opt.*;
 import org.jbundle.thin.base.remote.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.base.remote.*;
 
 /**

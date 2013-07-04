@@ -1,9 +1,5 @@
-/**
-  * @(#)ApTrxHeaderScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.acctpay;
+
+package com.tourgeek.tour.booking.entry.acctpay;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 
 /**
  *  ApTrxHeaderScreen - .

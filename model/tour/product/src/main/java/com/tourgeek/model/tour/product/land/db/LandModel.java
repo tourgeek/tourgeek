@@ -1,11 +1,7 @@
-/**
-  * @(#)LandModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.land.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.land.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface LandModel extends ProductModel
 {
@@ -58,11 +54,11 @@ public interface LandModel extends ProductModel
     public static final String PMC_PRICE_HOME = "PMCPriceHome";
     public static final String SIC_PRICE_HOME = "SICPriceHome";
     public static final String LAND_COST_PROPERTIES = "landCostProperties.";
-    public static final String LAND_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandScreen";
-    public static final String LAND_GRID_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandGridScreen";
+    public static final String LAND_SCREEN_CLASS = "com.tourgeek.tour.product.land.screen.LandScreen";
+    public static final String LAND_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.land.screen.LandGridScreen";
 
     public static final String LAND_FILE = "Land";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.Land";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.land.db.Land";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.land.db.Land";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.land.db.Land";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)TrxSystem.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.db;
+
+package com.tourgeek.tour.genled.db;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.model.tour.genled.db.*;
+import com.tourgeek.model.tour.genled.db.*;
 
 /**
  *  TrxSystem - Transaction type.
@@ -30,8 +26,8 @@ public class TrxSystem extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final String TRX_SYSTEM_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxSystemScreen";
-    public static final String TRX_SYSTEM_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxSystemGridScreen";
+    public static final String TRX_SYSTEM_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.trx.TrxSystemScreen";
+    public static final String TRX_SYSTEM_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.trx.TrxSystemGridScreen";
     /**
      * Default constructor.
      */

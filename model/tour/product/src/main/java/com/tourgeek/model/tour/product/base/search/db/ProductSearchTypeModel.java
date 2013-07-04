@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductSearchTypeModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.base.search.db;
+
+package com.tourgeek.model.tour.product.base.search.db;
 
 import org.jbundle.model.db.*;
 
@@ -24,11 +20,11 @@ public interface ProductSearchTypeModel extends Rec
     public static final String LAND = "Land";
 
     public static final String DESCRIPTION_KEY = "Description";
-    public static final String PRODUCT_SEARCH_TYPE_SCREEN_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchTypeScreen";
-    public static final String PRODUCT_SEARCH_TYPE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchTypeGridScreen";
+    public static final String PRODUCT_SEARCH_TYPE_SCREEN_CLASS = "com.tourgeek.tour.product.base.search.screen.ProductSearchTypeScreen";
+    public static final String PRODUCT_SEARCH_TYPE_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.base.search.screen.ProductSearchTypeGridScreen";
 
     public static final String PRODUCT_SEARCH_TYPE_FILE = "ProductSearchType";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.search.db.ProductSearchType";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.base.search.db.ProductSearchType";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.base.search.db.ProductSearchType";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.base.search.db.ProductSearchType";
 
 }

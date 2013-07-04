@@ -1,17 +1,13 @@
-/**
-  * @(#)EmployeeBuiltin.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.payroll.db;
+
+package com.tourgeek.thin.tour.payroll.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.thin.tour.payroll.db.*;
-import com.tourapp.model.tour.payroll.db.*;
+import com.tourgeek.thin.tour.payroll.db.*;
+import com.tourgeek.model.tour.payroll.db.*;
 
 public class EmployeeBuiltin extends EmployeeQuery
     implements EmployeeBuiltinModel

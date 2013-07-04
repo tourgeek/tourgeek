@@ -4322,7 +4322,7 @@ blog: <a href="http://blog.tourgeek.com">blog.tourgeek.com</a><br/>
 email: <a href="mailto:don@donandann.com">don@donandann.com</a><br/>
 voice: <a href="tel:16263582903">626-358-2903</a><br/>
 cell: <a href="tel:16266648491">626-664-8491</a><br/>
-voip: <a href="sip:don@sip.tourgeek.com">don@sip.tourgeek.com</a><br/>
+voip: <a href="sip:don@sip.tourapp.com">don@sip.tourapp.com</a><br/>
 skype: doncorley<br/>
 googletalk: don@donandann.com<br/>
 </html></Comment>
@@ -9281,7 +9281,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>demosite</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/demohome.xml</entry>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/demohome.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -9655,7 +9655,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<ParentFolderID>1,704</ParentFolderID>
 		<Sequence>10</Sequence>
 		<Comment>Office or home based res agent.
-(reggie@tourgeek.com)</Comment>
+(reggie@tourapp.com)</Comment>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
@@ -9663,7 +9663,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="record">com.tourapp.tour.booking.db.Booking</entry>
-<entry key="user">reggie@tourgeek.com</entry>
+<entry key="user">reggie@tourapp.com</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
 </properties></Params>
 		<IconResource/>
@@ -9697,14 +9697,14 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Name>Accounting system</Name>
 		<ParentFolderID>1,704</ParentFolderID>
 		<Sequence>20</Sequence>
-		<Comment>Accountant (angie@tourgeek.com)</Comment>
+		<Comment>Accountant (angie@tourapp.com)</Comment>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="user">angie@tourgeek.com</entry>
+<entry key="user">angie@tourapp.com</entry>
 <entry key="menu">Accounting</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
 </properties></Params>
@@ -9719,14 +9719,14 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Name>Operations system</Name>
 		<ParentFolderID>1,704</ParentFolderID>
 		<Sequence>30</Sequence>
-		<Comment>Operations manager (oprah@tourgeek.com)</Comment>
+		<Comment>Operations manager (oprah@tourapp.com)</Comment>
 		<Code/>
 		<Type>applet</Type>
 		<AutoDesc>Y</AutoDesc>
 		<Program>org.jbundle.Main</Program>
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
-<entry key="user">oprah@tourgeek.com</entry>
+<entry key="user">oprah@tourapp.com</entry>
 <entry key="menu">operation</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
 </properties></Params>
@@ -9970,7 +9970,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Program>demostart</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/demostart.xml</entry>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/demostart.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10574,7 +10574,7 @@ For slower connections, <a href="pictures/docs/pics/smallpics/pictures/donandann
 		<Sequence>30</Sequence>
 		<Comment type="XML"><html>
  <body>
-Your own tourgeek<font color="orange">.</font>com tour operator site to experiment with.<br/>
+Your own tourapp<font color="orange">.</font>com tour operator site to experiment with.<br/>
 Setting up and running your own Tour Operator demo site is quick and easy.
  </body>
 </html></Comment>
@@ -10839,7 +10839,7 @@ System highlights and the full user's manual.
 		<Params type="XML"><properties>
 <comment>Field properties</comment>
 <entry key="record">com.tourapp.tour.booking.db.Booking</entry>
-<entry key="user">kate@tourgeek.com</entry>
+<entry key="user">kate@tourapp.com</entry>
 <entry key="webStartPropertiesFile">org/jbundle/res/webstart/tourapp.properties</entry>
 </properties></Params>
 		<IconResource/>
@@ -10952,7 +10952,7 @@ Note: This video has an audio narration.
 		<Program>site</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/sitehome.xml</entry>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/sitehome.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -10972,7 +10972,7 @@ Note: This video has an audio narration.
 		<Program>sitestart</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourapp/res/docs/com/tourgeek/sitestart.xml</entry>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/sitestart.xml</entry>
 </properties></Params>
 		<IconResource/>
 		<Keywords/>
@@ -11136,7 +11136,7 @@ Note: This video has an audio narration.
 		<Sequence>10</Sequence>
 		<Comment type="XML"><html>
  <body>
-Your own tourgeek<font color="orange">.</font>com tour operator site.<br/>
+Your own tourapp<font color="orange">.</font>com tour operator site.<br/>
 Setting up and running your own Tour Operator site is quick and easy.
  </body>
 </html></Comment>
@@ -11665,31 +11665,6 @@ please click the following link:<br/>
 		<XmlData/>
 		<MenusHelp/>
 	</Menus>
-	<Menus ID="1926">
-		<LastChanged>2013-05-03T11:52:25</LastChanged>
-		<Deleted>N</Deleted>
-		<Name>Fred's Demo site</Name>
-		<ParentFolderID>1,757</ParentFolderID>
-		<Sequence>100</Sequence>
-		<Comment>Demo test site</Comment>
-		<Code>fred.demo.tourgeek.com</Code>
-		<Type>menu</Type>
-		<AutoDesc>Y</AutoDesc>
-		<Program>demosite</Program>
-		<Params type="XML"><properties>
-<comment>Field properties</comment>
-<entry key="loadInitialData">true</entry>
-<entry key="userArchiveFolder">/home/don/.jbundle/fred/current_test_data</entry>
-<entry key="dbPrefix">fred_</entry>
-<entry key="mainUser">fred@tourgeek.com</entry>
-<entry key="xslTemplate">org/jbundle/res/docs/styles/xsl/program/fixdemotemplate.xsl</entry>
-</properties>
-</Params>
-		<IconResource/>
-		<Keywords/>
-		<XmlData/>
-		<MenusHelp/>
-	</Menus>
 	<Menus ID="1927">
 		<LastChanged>2013-05-16T17:23:29</LastChanged>
 		<Deleted>N</Deleted>
@@ -11782,6 +11757,120 @@ My 1982 Trip to India, England, and New York.
 		<Program>pictures/docs/pics/orient1982/index.html</Program>
 		<Params/>
 		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1932">
+		<LastChanged>2010-10-19T15:37:35</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Demo</Name>
+		<ParentFolderID>1,746</ParentFolderID>
+		<Sequence>30</Sequence>
+		<Comment type="XML"><html>
+ <body>
+Your own tourapp<font color="orange">.</font>com tour operator site to experiment with.<br/>
+Setting up and running your own Tour Operator demo site is quick and easy.
+ </body>
+</html></Comment>
+		<Code/>
+		<Type>screen</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>org.jbundle.app.program.demo.DemoRegistrationScreen</Program>
+		<Params type="XML"><properties>
+<comment>Field properties</comment>
+<entry key="java">No</entry>
+</properties></Params>
+		<IconResource/>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1933">
+		<LastChanged>2011-08-31T23:02:50</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>tourapp.com video introduction</Name>
+		<ParentFolderID>1,746</ParentFolderID>
+		<Sequence>35</Sequence>
+		<Comment type="XML"><html>
+<body>
+<a href="?menu=quickintro">
+<img height="82" src="com/tourapp/res/images/com/tourapp/youtube-link.gif" width="138"/>
+</a><br/>
+A tourapp.com Outbound Tour Operator software demonstration in under two minutes!
+</body>
+</html></Comment>
+		<Code>quickintro</Code>
+		<Type>menu</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>quickintro</Program>
+		<Params type="XML"><properties>
+<comment>Field properties</comment>
+<entry key="navmenus">No</entry>
+</properties></Params>
+		<IconResource>Play</IconResource>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1934">
+		<LastChanged>2011-08-31T22:26:42</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Register</Name>
+		<ParentFolderID>1,746</ParentFolderID>
+		<Sequence>40</Sequence>
+		<Comment type="XML"><html>
+ <body>
+Start using tourapp<font color="orange">.</font>com now.
+ </body>
+</html></Comment>
+		<Code>register</Code>
+		<Type>menu</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>register</Program>
+		<Params type="XML"><properties>
+   <comment>Field properties</comment>
+   <entry key="xml">com/tourapp/res/docs/com/tourapp/registration.xml</entry>
+</properties></Params>
+		<IconResource>Edit</IconResource>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1935">
+		<LastChanged>2011-08-31T22:26:54</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>About us</Name>
+		<ParentFolderID>1,746</ParentFolderID>
+		<Sequence>60</Sequence>
+		<Comment>Outbound Tour Operator Software is what we do.</Comment>
+		<Code/>
+		<Type>xml</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>com/tourapp/res/docs/com/tourapp/aboutus.xml</Program>
+		<Params/>
+		<IconResource>Find</IconResource>
+		<Keywords/>
+		<XmlData/>
+		<MenusHelp/>
+	</Menus>
+	<Menus ID="1936">
+		<LastChanged>2011-08-31T22:25:59</LastChanged>
+		<Deleted>N</Deleted>
+		<Name>Features</Name>
+		<ParentFolderID>1,746</ParentFolderID>
+		<Sequence>10</Sequence>
+		<Comment type="XML"><html>
+ <body>
+System highlights and the full user's manual.
+ </body>
+</html></Comment>
+		<Code/>
+		<Type>xml</Type>
+		<AutoDesc>Y</AutoDesc>
+		<Program>com/tourapp/res/docs/com/tourapp/features.xml</Program>
+		<Params/>
+		<IconResource>Zoom</IconResource>
 		<Keywords/>
 		<XmlData/>
 		<MenusHelp/>

@@ -1,9 +1,5 @@
-/**
-  * @(#)XmlToRequests.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.request.thread;
+
+package com.tourgeek.tour.request.thread;
 
 import java.util.*;
 
@@ -22,10 +18,10 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
 import java.util.*;
-import com.tourapp.tour.request.db.*;
+import com.tourgeek.tour.request.db.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.base.db.xmlutil.*;
-import com.tourapp.tour.base.db.shared.*;
+import com.tourgeek.tour.base.db.shared.*;
 
 /**
  *  XmlToRequests - Parse the "Requests" xml file and add it to the Requests table.

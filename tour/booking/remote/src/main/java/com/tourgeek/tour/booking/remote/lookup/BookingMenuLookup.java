@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingMenuLookup.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.remote.lookup;
+
+package com.tourgeek.tour.booking.remote.lookup;
 
 import java.util.*;
 
@@ -20,8 +16,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.model.tour.booking.remote.lookup.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.remote.lookup.*;
 
 /**
  *  BookingMenuLookup - Special query for remote section of the thin booking menu.

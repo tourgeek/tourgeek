@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingLineSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.remote.booking;
+
+package com.tourgeek.tour.booking.remote.booking;
 
 import java.util.*;
 
@@ -22,9 +18,9 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.remote.db.*;
 import org.jbundle.base.remote.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
 import org.jbundle.thin.base.remote.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourgeek.tour.booking.db.*;
 
 /**
  *  BookingLineSession - Booking line item detail session.

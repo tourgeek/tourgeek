@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestDetailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.request.db;
+
+package com.tourgeek.model.tour.request.db;
 
 import org.jbundle.model.db.*;
 
@@ -21,7 +17,7 @@ public interface RequestDetailModel extends Rec
     public static final String REQUEST_ID_KEY = "RequestID";
 
     public static final String REQUEST_DETAIL_FILE = "RequestDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.RequestDetail";
-    public static final String THICK_CLASS = "com.tourapp.tour.request.db.RequestDetail";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.request.db.RequestDetail";
+    public static final String THICK_CLASS = "com.tourgeek.tour.request.db.RequestDetail";
 
 }

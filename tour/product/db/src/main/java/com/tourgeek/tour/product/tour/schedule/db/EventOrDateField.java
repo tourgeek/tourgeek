@@ -1,9 +1,5 @@
-/**
-  * @(#)EventOrDateField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.schedule.db;
+
+package com.tourgeek.tour.product.tour.schedule.db;
 
 import java.util.*;
 

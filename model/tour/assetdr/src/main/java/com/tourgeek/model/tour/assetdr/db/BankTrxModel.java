@@ -1,11 +1,7 @@
-/**
-  * @(#)BankTrxModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.assetdr.db;
 
-import com.tourapp.model.tour.genled.db.*;
+package com.tourgeek.model.tour.assetdr.db;
+
+import com.tourgeek.model.tour.genled.db.*;
 
 public interface BankTrxModel extends BaseTrxModel
 {
@@ -43,15 +39,15 @@ public interface BankTrxModel extends BaseTrxModel
 
     public static final String PAYEE_ID_KEY = "PayeeID";
     public static final String PAYMENT_DISTRIBUTION = "Payment Distribution";
-    public static final String BANK_TRX_BATCH_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchScreen";
-    public static final String BANK_TRX_BATCH_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchGridScreen";
-    public static final String BANK_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.trx.BankTrxGridScreen";
-    public static final String BANK_TRX_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.trx.BankTrxScreen";
-    public static final String BANK_RECON_SCREEN_CLASS = "com.tourapp.tour.assetdr.report.recon.BankReconScreen";
-    public static final String BANK_TRX_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.trx.BankTrxDistGridScreen";
+    public static final String BANK_TRX_BATCH_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.batch.BankTrxBatchScreen";
+    public static final String BANK_TRX_BATCH_GRID_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.batch.BankTrxBatchGridScreen";
+    public static final String BANK_TRX_GRID_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.trx.BankTrxGridScreen";
+    public static final String BANK_TRX_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.trx.BankTrxScreen";
+    public static final String BANK_RECON_SCREEN_CLASS = "com.tourgeek.tour.assetdr.report.recon.BankReconScreen";
+    public static final String BANK_TRX_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.trx.BankTrxDistGridScreen";
 
     public static final String BANK_TRX_FILE = "BankTrx";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankTrx";
-    public static final String THICK_CLASS = "com.tourapp.tour.assetdr.db.BankTrx";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.assetdr.db.BankTrx";
+    public static final String THICK_CLASS = "com.tourgeek.tour.assetdr.db.BankTrx";
 
 }

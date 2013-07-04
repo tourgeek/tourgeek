@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelRateRequestMessageOutProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.hotel.request.out;
+
+package com.tourgeek.tour.message.hotel.request.out;
 
 import java.util.*;
 
@@ -26,9 +22,9 @@ import org.jbundle.base.message.trx.transport.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.base.message.trx.transport.soap.*;
 import javax.xml.bind.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.message.hotel.request.*;
+import com.tourgeek.tour.product.hotel.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.message.hotel.request.*;
 
 /**
  *  HotelRateRequestMessageOutProcessor - Send a rate request directly to a hotel..

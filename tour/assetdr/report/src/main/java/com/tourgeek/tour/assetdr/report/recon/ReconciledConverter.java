@@ -1,9 +1,5 @@
-/**
-  * @(#)ReconciledConverter.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.assetdr.report.recon;
+
+package com.tourgeek.tour.assetdr.report.recon;
 
 import java.util.*;
 

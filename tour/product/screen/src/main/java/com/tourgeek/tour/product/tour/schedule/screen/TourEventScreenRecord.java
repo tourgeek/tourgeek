@@ -1,9 +1,5 @@
-/**
-  * @(#)TourEventScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.schedule.screen;
+
+package com.tourgeek.tour.product.tour.schedule.screen;
 
 import java.util.*;
 

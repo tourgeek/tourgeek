@@ -1,9 +1,5 @@
-/**
-  * @(#)AcctDetailDistModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.db.*;
 
@@ -32,12 +28,12 @@ public interface AcctDetailDistModel extends Rec
     public static final String DIST_GROUP = "Group";
     public static final String DIST_SOURCE = "Source";
     public static final String DIST_TRANSACTION = "Transaction";
-    public static final String ACCT_DETAIL_DIST_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistScreen";
-    public static final String ACCT_DETAIL_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistGridScreen";
-    public static final String ACCT_DETAIL_DIST_GROUP_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistGroupGridScreen";
+    public static final String ACCT_DETAIL_DIST_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.detail.AcctDetailDistScreen";
+    public static final String ACCT_DETAIL_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.detail.AcctDetailDistGridScreen";
+    public static final String ACCT_DETAIL_DIST_GROUP_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.detail.AcctDetailDistGroupGridScreen";
 
     public static final String ACCT_DETAIL_DIST_FILE = "AcctDetailDist";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.AcctDetailDist";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.AcctDetailDist";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.AcctDetailDist";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.AcctDetailDist";
 
 }

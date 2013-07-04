@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingDetailHistory.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.history.db;
+
+package com.tourgeek.tour.booking.history.db;
 
 import java.util.*;
 
@@ -20,10 +16,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.model.tour.booking.history.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.model.tour.booking.history.db.*;
 
 /**
  *  BookingDetailHistory - .

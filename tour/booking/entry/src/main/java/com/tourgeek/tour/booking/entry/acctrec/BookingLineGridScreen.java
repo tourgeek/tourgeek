@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingLineGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.acctrec;
+
+package com.tourgeek.tour.booking.entry.acctrec;
 
 import java.util.*;
 
@@ -22,12 +18,12 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.base.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.detail.event.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.acctrec.db.*;
+import com.tourgeek.tour.booking.entry.base.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.booking.detail.event.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.acctrec.db.*;
 
 /**
  *  BookingLineGridScreen - Booking Line Items.

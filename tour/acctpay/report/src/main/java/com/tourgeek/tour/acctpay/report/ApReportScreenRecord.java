@@ -1,9 +1,5 @@
-/**
-  * @(#)ApReportScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.report;
+
+package com.tourgeek.tour.acctpay.report;
 
 import java.util.*;
 
@@ -21,11 +17,11 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.product.base.db.*;
 
 /**
  *  ApReportScreenRecord - .

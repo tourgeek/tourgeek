@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelAvailAddProcess.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.test.hotel.screen;
+
+package com.tourgeek.tour.util.test.hotel.screen;
 
 import java.util.*;
 
@@ -21,7 +17,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
-import com.tourapp.tour.util.test.hotel.db.*;
+import com.tourgeek.tour.util.test.hotel.db.*;
 
 /**
  *  HotelAvailAddProcess - Add records and update amounts.

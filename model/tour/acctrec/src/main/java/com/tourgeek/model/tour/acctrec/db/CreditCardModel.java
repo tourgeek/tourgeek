@@ -1,11 +1,7 @@
-/**
-  * @(#)CreditCardModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctrec.db;
 
-import com.tourapp.model.tour.acctrec.db.*;
+package com.tourgeek.model.tour.acctrec.db;
+
+import com.tourgeek.model.tour.acctrec.db.*;
 
 public interface CreditCardModel extends BaseArPayModel
 {
@@ -40,7 +36,7 @@ public interface CreditCardModel extends BaseArPayModel
     public static final String APPROVED = "Approved";
 
     public static final String CREDIT_CARD_FILE = "CreditCard";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.CreditCard";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctrec.db.CreditCard";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctrec.db.CreditCard";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctrec.db.CreditCard";
 
 }

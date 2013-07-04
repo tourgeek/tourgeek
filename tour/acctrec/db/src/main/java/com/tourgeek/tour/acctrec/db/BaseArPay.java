@@ -1,9 +1,5 @@
-/**
-  * @(#)BaseArPay.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.db;
+
+package com.tourgeek.tour.acctrec.db;
 
 import java.util.*;
 
@@ -20,9 +16,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.model.tour.acctrec.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.model.tour.acctrec.db.*;
 
 /**
  *  BaseArPay - Base payment instrument for A/R (Mcos, Credit Cards, etc.).

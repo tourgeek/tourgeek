@@ -1,9 +1,5 @@
-/**
-  * @(#)CurrencyReqGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.screen.currreq;
+
+package com.tourgeek.tour.acctpay.screen.currreq;
 
 import java.util.*;
 
@@ -22,9 +18,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.acctpay.report.curreq.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.acctpay.report.curreq.*;
+import com.tourgeek.tour.base.db.*;
 
 /**
  *  CurrencyReqGridScreen - Currency requirements display.

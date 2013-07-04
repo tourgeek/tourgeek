@@ -1,9 +1,5 @@
-/**
-  * @(#)BankTrxBatchPost.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.assetdr.screen.batch;
+
+package com.tourgeek.tour.assetdr.screen.batch;
 
 import java.util.*;
 
@@ -22,12 +18,12 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.assetdr.db.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.assetdr.db.*;
+import com.tourgeek.tour.base.db.*;
 import org.jbundle.main.screen.*;
-import com.tourapp.tour.assetdr.screen.trx.*;
-import com.tourapp.tour.assetdr.screen.batch.dist.*;
-import com.tourapp.tour.genled.db.*;
+import com.tourgeek.tour.assetdr.screen.trx.*;
+import com.tourgeek.tour.assetdr.screen.batch.dist.*;
+import com.tourgeek.tour.genled.db.*;
 
 /**
  *  BankTrxBatchPost - .

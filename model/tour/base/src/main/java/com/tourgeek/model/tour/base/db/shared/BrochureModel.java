@@ -1,9 +1,5 @@
-/**
-  * @(#)BrochureModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.base.db.shared;
+
+package com.tourgeek.model.tour.base.db.shared;
 
 import org.jbundle.model.db.*;
 
@@ -27,7 +23,7 @@ public interface BrochureModel extends Rec
     public static final String BROCHURE_CLASS_ID_KEY = "BrochureClassID";
 
     public static final String BROCHURE_FILE = "Brochure";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.base.db.shared.Brochure";
-    public static final String THICK_CLASS = "com.tourapp.tour.base.db.shared.Brochure";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.base.db.shared.Brochure";
+    public static final String THICK_CLASS = "com.tourgeek.tour.base.db.shared.Brochure";
 
 }

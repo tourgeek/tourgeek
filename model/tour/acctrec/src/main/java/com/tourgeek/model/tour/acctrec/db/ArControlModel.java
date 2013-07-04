@@ -1,9 +1,5 @@
-/**
-  * @(#)ArControlModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctrec.db;
+
+package com.tourgeek.model.tour.acctrec.db;
 
 import org.jbundle.model.db.*;
 
@@ -31,11 +27,11 @@ public interface ArControlModel extends Rec
     public static final String CREDIT_CARD_VAR_ACCOUNT_ID = "CreditCardVarAccountID";
     public static final String CREDIT_CARD_SVC_PER = "CreditCardSvcPer";
     public static final String CREDIT_DEBIT_ACCOUNT_ID = "CreditDebitAccountID";
-    public static final String AR_CONTROL_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.misc.ArControlScreen";
-    public static final String AR_CONTROL_SCREEN_2_CLASS = "com.tourapp.tour.acctrec.screen.misc.ArControlScreen";
+    public static final String AR_CONTROL_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.misc.ArControlScreen";
+    public static final String AR_CONTROL_SCREEN_2_CLASS = "com.tourgeek.tour.acctrec.screen.misc.ArControlScreen";
 
     public static final String AR_CONTROL_FILE = "ArControl";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.ArControl";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctrec.db.ArControl";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctrec.db.ArControl";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctrec.db.ArControl";
 
 }

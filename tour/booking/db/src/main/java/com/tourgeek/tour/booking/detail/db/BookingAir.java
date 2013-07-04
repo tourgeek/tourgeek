@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingAir.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.detail.db;
+
+package com.tourgeek.tour.booking.detail.db;
 
 import java.util.*;
 
@@ -21,14 +17,14 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.db.shared.*;
-import com.tourapp.tour.product.tour.detail.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.model.tour.booking.db.*;
-import com.tourapp.model.tour.product.base.db.*;
-import com.tourapp.tour.product.air.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.tour.product.tour.detail.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.db.*;
+import com.tourgeek.model.tour.product.base.db.*;
+import com.tourgeek.tour.product.air.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 /**
  *  BookingAir - Booking Ticket Segment Detail.

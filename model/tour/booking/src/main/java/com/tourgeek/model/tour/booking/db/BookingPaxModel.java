@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingPaxModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.db;
+
+package com.tourgeek.model.tour.booking.db;
 
 import org.jbundle.model.db.*;
 
@@ -34,11 +30,11 @@ public interface BookingPaxModel extends Rec
 
     public static final String PROFILE_ID_KEY = "ProfileID";
     public static final String SOURCE_REFERENCE_NO = "SourceReferenceNo";
-    public static final String BOOKING_PAX_SCREEN_CLASS = "com.tourapp.tour.booking.entry.pax.BookingPaxScreen";
-    public static final String BOOKING_PAX_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.pax.BookingPaxGridScreen";
+    public static final String BOOKING_PAX_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.pax.BookingPaxScreen";
+    public static final String BOOKING_PAX_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.pax.BookingPaxGridScreen";
 
     public static final String BOOKING_PAX_FILE = "BookingPax";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.BookingPax";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.db.BookingPax";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.db.BookingPax";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.db.BookingPax";
 
 }

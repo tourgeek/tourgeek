@@ -1,11 +1,7 @@
-/**
-  * @(#)HotelChainModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.hotel.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.hotel.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface HotelChainModel extends ProductChainModel
 {
@@ -17,7 +13,7 @@ public interface HotelChainModel extends ProductChainModel
     //public static final String CODE = CODE;
 
     public static final String HOTEL_CHAIN_FILE = "HotelChain";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.hotel.db.HotelChain";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.hotel.db.HotelChain";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.hotel.db.HotelChain";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.hotel.db.HotelChain";
 
 }

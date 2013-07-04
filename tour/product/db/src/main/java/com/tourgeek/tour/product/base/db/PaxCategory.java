@@ -1,9 +1,5 @@
-/**
-  * @(#)PaxCategory.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.db;
+
+package com.tourgeek.tour.product.base.db;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.model.tour.product.base.db.*;
+import com.tourgeek.model.tour.product.base.db.*;
 
 /**
  *  PaxCategory - Passenger price category.

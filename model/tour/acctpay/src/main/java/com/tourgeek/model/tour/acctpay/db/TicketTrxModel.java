@@ -1,11 +1,7 @@
-/**
-  * @(#)TicketTrxModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctpay.db;
 
-import com.tourapp.model.tour.acctpay.db.*;
+package com.tourgeek.model.tour.acctpay.db;
+
+import com.tourgeek.model.tour.acctpay.db.*;
 
 public interface TicketTrxModel extends ApTrxModel
 {
@@ -67,11 +63,11 @@ public interface TicketTrxModel extends ApTrxModel
     //public static final String OVERRIDE_PAID_DATE = OVERRIDE_PAID_DATE;
     //public static final String OVERRIDE_PAID = OVERRIDE_PAID;
     //public static final String VOID_DATE = VOID_DATE;
-    public static final String ARC_REPORT_POST_CLASS = "com.tourapp.tour.acctpay.air.arc.ArcReportPost";
-    public static final String TICKET_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.ticket.TicketTrxGridScreen";
-    public static final String OVERRIDE_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.oride.OverrideScreen";
-    public static final String OVERRIDE_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.oride.OverrideGridScreen";
-    public static final String TICKET_TRX_SCREEN_CLASS = "com.tourapp.tour.acctpay.air.ticket.TicketTrxScreen";
+    public static final String ARC_REPORT_POST_CLASS = "com.tourgeek.tour.acctpay.air.arc.ArcReportPost";
+    public static final String TICKET_TRX_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctpay.air.ticket.TicketTrxGridScreen";
+    public static final String OVERRIDE_SCREEN_CLASS = "com.tourgeek.tour.acctpay.air.oride.OverrideScreen";
+    public static final String OVERRIDE_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctpay.air.oride.OverrideGridScreen";
+    public static final String TICKET_TRX_SCREEN_CLASS = "com.tourgeek.tour.acctpay.air.ticket.TicketTrxScreen";
     public static final String ARC_SUBMITTED = "ArcSubmitted";
     public static final String CANCEL_TICKET = "CancelTicket";
     public static final String NO_TICKET = "NoTicket";
@@ -83,7 +79,7 @@ public interface TicketTrxModel extends ApTrxModel
     public static final String WAITING_FOR_TICKET = "WaitingForTicket";
 
     public static final String TICKET_TRX_FILE = "ApTrx";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctpay.db.TicketTrx";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctpay.db.TicketTrx";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctpay.db.TicketTrx";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctpay.db.TicketTrx";
 
 }

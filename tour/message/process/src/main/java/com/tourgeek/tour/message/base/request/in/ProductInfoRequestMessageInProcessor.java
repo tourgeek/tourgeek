@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductInfoRequestMessageInProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base.request.in;
+
+package com.tourgeek.tour.message.base.request.in;
 
 import java.util.*;
 
@@ -21,11 +17,11 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.processor.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.base.request.data.*;
+import com.tourgeek.tour.booking.detail.db.*;
 
 /**
  *  ProductInfoRequestMessageInProcessor - .

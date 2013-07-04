@@ -1,9 +1,5 @@
-/**
-  * @(#)BaseClassModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.base.db;
+
+package com.tourgeek.model.tour.product.base.db;
 
 import org.jbundle.model.db.*;
 
@@ -21,7 +17,7 @@ public interface BaseClassModel extends Rec
     public static final String CODE_KEY = "Code";
 
     public static final String BASE_CLASS_FILE = "BaseClass";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.db.BaseClass";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.base.db.BaseClass";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.base.db.BaseClass";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.base.db.BaseClass";
 
 }

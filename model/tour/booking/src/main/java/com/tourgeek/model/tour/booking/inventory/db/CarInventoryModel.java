@@ -1,11 +1,7 @@
-/**
-  * @(#)CarInventoryModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.inventory.db;
 
-import com.tourapp.model.tour.booking.inventory.db.*;
+package com.tourgeek.model.tour.booking.inventory.db;
+
+import com.tourgeek.model.tour.booking.inventory.db.*;
 
 public interface CarInventoryModel extends InventoryModel
 {
@@ -24,12 +20,12 @@ public interface CarInventoryModel extends InventoryModel
     //public static final String AVAILABLE = AVAILABLE;
     //public static final String OVERSELL = OVERSELL;
     //public static final String CLOSED = CLOSED;
-    public static final String CAR_INVENTORY_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarInventoryScreen";
-    public static final String CAR_INVENTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarInventoryGridScreen";
-    public static final String CAR_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.car.screen.CarInventoryRangeAdjust";
+    public static final String CAR_INVENTORY_SCREEN_CLASS = "com.tourgeek.tour.product.car.screen.CarInventoryScreen";
+    public static final String CAR_INVENTORY_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.car.screen.CarInventoryGridScreen";
+    public static final String CAR_INVENTORY_RANGE_ADJUST_CLASS = "com.tourgeek.tour.product.car.screen.CarInventoryRangeAdjust";
 
     public static final String CAR_INVENTORY_FILE = "Inventory";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.inventory.db.CarInventory";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.inventory.db.CarInventory";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.inventory.db.CarInventory";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.inventory.db.CarInventory";
 
 }

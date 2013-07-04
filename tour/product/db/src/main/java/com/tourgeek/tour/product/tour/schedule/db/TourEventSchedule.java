@@ -1,9 +1,5 @@
-/**
-  * @(#)TourEventSchedule.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.schedule.db;
+
+package com.tourgeek.tour.product.tour.schedule.db;
 
 import java.util.*;
 
@@ -22,12 +18,12 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.model.tour.profile.db.*;
-import com.tourapp.model.tour.booking.db.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.model.tour.profile.db.*;
+import com.tourgeek.model.tour.booking.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.model.tour.product.tour.schedule.db.*;
+import com.tourgeek.model.tour.product.tour.schedule.db.*;
 
 /**
  *  TourEventSchedule - Tour operation schedule.
@@ -37,7 +33,7 @@ public class TourEventSchedule extends PropertiesRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final String ITINERARY_REPORT_SCREEN = "com.tourapp.tour.booking.report.itinerary.ItineraryReportScreen";
+    public static final String ITINERARY_REPORT_SCREEN = "com.tourgeek.tour.booking.report.itinerary.ItineraryReportScreen";
     /**
      * Default constructor.
      */

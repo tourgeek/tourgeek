@@ -1,9 +1,5 @@
-/**
-  * @(#)TourApTrxGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.acctpay;
+
+package com.tourgeek.tour.booking.entry.acctpay;
 
 import java.util.*;
 
@@ -22,10 +18,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.base.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.genled.db.*;
+import com.tourgeek.tour.booking.entry.base.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.genled.db.*;
 
 /**
  *  TourApTrxGridScreen - Tour A/P detail.

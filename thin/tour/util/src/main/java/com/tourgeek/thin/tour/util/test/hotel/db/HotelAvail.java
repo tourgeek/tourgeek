@@ -1,16 +1,12 @@
-/**
-  * @(#)HotelAvail.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.util.test.hotel.db;
+
+package com.tourgeek.thin.tour.util.test.hotel.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.model.tour.util.test.hotel.db.*;
+import com.tourgeek.model.tour.util.test.hotel.db.*;
 
 public class HotelAvail extends FieldList
     implements HotelAvailModel

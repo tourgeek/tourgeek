@@ -1,11 +1,7 @@
-/**
-  * @(#)BaseArPayModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctrec.db;
 
-import com.tourapp.model.tour.genled.db.*;
+package com.tourgeek.model.tour.acctrec.db;
+
+import com.tourgeek.model.tour.genled.db.*;
 
 public interface BaseArPayModel extends BaseTrxModel
 {
@@ -35,7 +31,7 @@ public interface BaseArPayModel extends BaseTrxModel
     public static final String ITEM_PAID = "Paid";
 
     public static final String BASE_AR_PAY_FILE = "BaseArPay";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.BaseArPay";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctrec.db.BaseArPay";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctrec.db.BaseArPay";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctrec.db.BaseArPay";
 
 }

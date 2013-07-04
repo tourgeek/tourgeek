@@ -1,11 +1,7 @@
-/**
-  * @(#)HotelModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.hotel.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.hotel.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface HotelModel extends ProductModel
 {
@@ -86,11 +82,11 @@ public interface HotelModel extends ProductModel
     public static final String MEAL_PLAN_DAYS_PARAM = "mealDays";
     public static final String MEAL_PLAN_ID_PARAM = "mealPlanID"; //SearchConstants.MEAL_PLAN;
     public static final String MEAL_PLAN_QTY_PARAM = "mealPlanQty"; //SearchConstants.MEAL_PLAN_QTY;
-    public static final String HOTEL_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelScreen";
-    public static final String HOTEL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelGridScreen";
+    public static final String HOTEL_SCREEN_CLASS = "com.tourgeek.tour.product.hotel.screen.HotelScreen";
+    public static final String HOTEL_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.hotel.screen.HotelGridScreen";
 
     public static final String HOTEL_FILE = "Hotel";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.hotel.db.Hotel";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.hotel.db.Hotel";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.hotel.db.Hotel";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.hotel.db.Hotel";
 
 }

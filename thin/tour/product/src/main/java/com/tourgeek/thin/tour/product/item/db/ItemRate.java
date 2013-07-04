@@ -1,17 +1,13 @@
-/**
-  * @(#)ItemRate.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.product.item.db;
+
+package com.tourgeek.thin.tour.product.item.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.thin.tour.product.base.db.*;
-import com.tourapp.model.tour.product.item.db.*;
+import com.tourgeek.thin.tour.product.base.db.*;
+import com.tourgeek.model.tour.product.item.db.*;
 
 public class ItemRate extends BaseRate
     implements ItemRateModel

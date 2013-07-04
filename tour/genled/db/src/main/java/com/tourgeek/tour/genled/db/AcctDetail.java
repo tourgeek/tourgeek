@@ -1,9 +1,5 @@
-/**
-  * @(#)AcctDetail.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.db;
+
+package com.tourgeek.tour.genled.db;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.user.db.*;
 import java.util.*;
-import com.tourapp.model.tour.genled.db.*;
+import com.tourgeek.model.tour.genled.db.*;
 
 /**
  *  AcctDetail - Account Transaction Detail.

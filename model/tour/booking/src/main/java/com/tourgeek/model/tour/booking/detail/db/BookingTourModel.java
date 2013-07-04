@@ -1,11 +1,7 @@
-/**
-  * @(#)BookingTourModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.detail.db;
 
-import com.tourapp.model.tour.booking.detail.db.*;
+package com.tourgeek.model.tour.booking.detail.db;
+
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 public interface BookingTourModel extends BookingDetailModel
 {
@@ -132,11 +128,11 @@ public interface BookingTourModel extends BookingDetailModel
     //public static final String ASK_FOR_ANSWER = ASK_FOR_ANSWER;
     //public static final String ALWAYS_RESOLVE = ALWAYS_RESOLVE;
     //public static final String PRICING_TYPE_ID = PRICING_TYPE_ID;
-    public static final String BOOKING_TOUR_DETAIL_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.tour.BookingTourDetailScreen";
-    public static final String BOOKING_TOUR_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.tour.BookingTourDetailGridScreen";
+    public static final String BOOKING_TOUR_DETAIL_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.detail.tour.BookingTourDetailScreen";
+    public static final String BOOKING_TOUR_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.detail.tour.BookingTourDetailGridScreen";
 
     public static final String BOOKING_TOUR_FILE = "BookingDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingTour";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingTour";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.detail.db.BookingTour";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.detail.db.BookingTour";
 
 }

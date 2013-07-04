@@ -1,9 +1,5 @@
-/**
-  * @(#)UpdateCreditMemoHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.screen.drcr;
+
+package com.tourgeek.tour.acctpay.screen.drcr;
 
 import java.util.*;
 
@@ -21,10 +17,10 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctpay.db.event.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.acctpay.db.event.*;
 
 /**
  *  UpdateCreditMemoHandler - .

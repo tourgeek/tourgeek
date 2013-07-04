@@ -1,9 +1,5 @@
-/**
-  * @(#)CashDistConverter.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.cash.dist;
+
+package com.tourgeek.tour.acctrec.screen.cash.dist;
 
 import java.util.*;
 
@@ -20,10 +16,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.assetdr.screen.batch.dist.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.assetdr.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourgeek.tour.assetdr.screen.batch.dist.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.assetdr.db.*;
+import com.tourgeek.tour.booking.db.*;
 import org.jbundle.base.screen.model.*;
 
 /**

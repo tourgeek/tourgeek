@@ -1,11 +1,7 @@
-/**
-  * @(#)LandClassModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.land.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.land.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface LandClassModel extends BaseClassModel
 {
@@ -19,7 +15,7 @@ public interface LandClassModel extends BaseClassModel
     public static final String SEAT_IN_COACH_CODE = "SIC";
 
     public static final String LAND_CLASS_FILE = "LandClass";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.LandClass";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.land.db.LandClass";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.land.db.LandClass";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.land.db.LandClass";
 
 }

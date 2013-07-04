@@ -1,9 +1,5 @@
-/**
-  * @(#)CreditCardCollPost.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.credit;
+
+package com.tourgeek.tour.acctrec.screen.credit;
 
 import java.util.*;
 
@@ -22,10 +18,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctrec.screen.mco.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.profile.db.*;
+import com.tourgeek.tour.acctrec.screen.mco.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.profile.db.*;
 
 /**
  *  CreditCardCollPost - Enter Credit payments collected from credit card company.

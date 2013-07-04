@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestHtmlScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.request.html;
+
+package com.tourgeek.tour.request.html;
 
 import java.util.*;
 
@@ -23,13 +19,13 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.view.html.*;
-import com.tourapp.tour.request.db.*;
+import com.tourgeek.tour.request.db.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import org.jbundle.base.screen.view.*;
-import com.tourapp.tour.request.screen.*;
-import com.tourapp.tour.base.db.shared.*;
+import com.tourgeek.tour.request.screen.*;
+import com.tourgeek.tour.base.db.shared.*;
 
 /**
  *  RequestHtmlScreen - Brochure request entry - HTML version.

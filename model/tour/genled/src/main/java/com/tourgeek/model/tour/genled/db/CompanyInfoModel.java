@@ -1,9 +1,5 @@
-/**
-  * @(#)CompanyInfoModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.main.db.*;
 
@@ -35,11 +31,11 @@ public interface CompanyInfoModel extends CompanyModel
     //public static final String POSTAL_CODE_SORT = POSTAL_CODE_SORT;
     //public static final String CONTACT = CONTACT;
     public static final String LOGO = "Logo";
-    public static final String COMPANY_INFO_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.CompanyInfoScreen";
-    public static final String COMPANY_INFO_SCREEN_2_CLASS = "com.tourapp.tour.genled.screen.misc.CompanyInfoScreen";
+    public static final String COMPANY_INFO_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.misc.CompanyInfoScreen";
+    public static final String COMPANY_INFO_SCREEN_2_CLASS = "com.tourgeek.tour.genled.screen.misc.CompanyInfoScreen";
 
     public static final String COMPANY_INFO_FILE = "CompanyInfo";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.CompanyInfo";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.CompanyInfo";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.CompanyInfo";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.CompanyInfo";
 
 }

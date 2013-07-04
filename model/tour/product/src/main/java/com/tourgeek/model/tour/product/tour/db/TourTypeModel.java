@@ -1,9 +1,5 @@
-/**
-  * @(#)TourTypeModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.tour.db;
+
+package com.tourgeek.model.tour.product.tour.db;
 
 import org.jbundle.model.db.*;
 
@@ -22,7 +18,7 @@ public interface TourTypeModel extends Rec
     public static final int SERIES = 1 << 1;
 
     public static final String TOUR_TYPE_FILE = "TourType";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.db.TourType";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.tour.db.TourType";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.tour.db.TourType";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.tour.db.TourType";
 
 }

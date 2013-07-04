@@ -1,9 +1,5 @@
-/**
-  * @(#)SkymapSource.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.script.importdata;
+
+package com.tourgeek.tour.util.script.importdata;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.app.program.script.data.importfix.base.*;
 import java.io.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.base.db.*;
 
 /**
  *  SkymapSource - .

@@ -1,9 +1,5 @@
-/**
-  * @(#)Profile.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.profile.db;
+
+package com.tourgeek.tour.profile.db;
 
 import java.util.*;
 
@@ -24,10 +20,10 @@ import org.jbundle.main.db.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.main.msg.screen.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.base.db.shared.*;
-import com.tourapp.model.tour.profile.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.base.db.shared.*;
+import com.tourgeek.model.tour.profile.db.*;
 
 /**
  *  Profile - Passenger and Agency Profile.

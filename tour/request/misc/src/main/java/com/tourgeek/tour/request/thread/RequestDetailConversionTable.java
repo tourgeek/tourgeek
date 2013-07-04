@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestDetailConversionTable.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.request.thread;
+
+package com.tourgeek.tour.request.thread;
 
 import java.util.*;
 

@@ -1,11 +1,7 @@
-/**
-  * @(#)BookingAirModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.detail.db;
 
-import com.tourapp.model.tour.booking.detail.db.*;
+package com.tourgeek.model.tour.booking.detail.db;
+
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 public interface BookingAirModel extends BookingDetailModel
 {
@@ -136,11 +132,11 @@ public interface BookingAirModel extends BookingDetailModel
     public static final String BOOKING_AIR_HEADER_ID_KEY = "BookingAirHeaderID";
 
     public static final String CARRIER_KEY = "Carrier";
-    public static final String BOOKING_AIR_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.air.BookingAirScreen";
-    public static final String BOOKING_AIR_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.air.BookingAirGridScreen";
+    public static final String BOOKING_AIR_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.detail.air.BookingAirScreen";
+    public static final String BOOKING_AIR_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.detail.air.BookingAirGridScreen";
 
     public static final String BOOKING_AIR_FILE = "BookingDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingAir";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingAir";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.detail.db.BookingAir";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.detail.db.BookingAir";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductSearchSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.remote.search;
+
+package com.tourgeek.tour.product.remote.search;
 
 import java.util.*;
 
@@ -22,19 +18,19 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.remote.db.*;
 import org.jbundle.thin.base.remote.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.opt.location.*;
-import com.tourapp.tour.product.remote.*;
-import com.tourapp.thin.app.booking.entry.search.*;
+import com.tourgeek.tour.product.remote.*;
+import com.tourgeek.thin.app.booking.entry.search.*;
 import org.jbundle.base.remote.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 import java.text.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.event.*;
-import com.tourapp.tour.product.base.screen.*;
+import com.tourgeek.tour.product.base.event.*;
+import com.tourgeek.tour.product.base.screen.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  ProductSearchSession - Base class for the remote side of product searches.

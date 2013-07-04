@@ -1,9 +1,5 @@
-/**
-  * @(#)TrxIDSField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.screen.trx;
+
+package com.tourgeek.tour.genled.screen.trx;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.genled.db.*;
+import com.tourgeek.tour.genled.db.*;
 
 /**
  *  TrxIDSField - Special Screen field to open the correct record from AcctDetailDist.

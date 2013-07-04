@@ -1,11 +1,7 @@
-/**
-  * @(#)RequestHistoryModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.request.db;
 
-import com.tourapp.model.tour.request.db.*;
+package com.tourgeek.model.tour.request.db;
+
+import com.tourgeek.model.tour.request.db.*;
 
 public interface RequestHistoryModel extends RequestModel
 {
@@ -35,11 +31,11 @@ public interface RequestHistoryModel extends RequestModel
     public static final String PROFILE_ID_KEY = "ProfileID";
 
     public static final String HIST_REPRINT_KEY = "HistReprint";
-    public static final String REQUEST_HISTORY_SCREEN_CLASS = "com.tourapp.tour.request.screen.detail.RequestHistoryScreen";
-    public static final String REQUEST_HISTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.request.screen.detail.RequestHistoryGridScreen";
+    public static final String REQUEST_HISTORY_SCREEN_CLASS = "com.tourgeek.tour.request.screen.detail.RequestHistoryScreen";
+    public static final String REQUEST_HISTORY_GRID_SCREEN_CLASS = "com.tourgeek.tour.request.screen.detail.RequestHistoryGridScreen";
 
     public static final String REQUEST_HISTORY_FILE = "RequestHistory";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.RequestHistory";
-    public static final String THICK_CLASS = "com.tourapp.tour.request.db.RequestHistory";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.request.db.RequestHistory";
+    public static final String THICK_CLASS = "com.tourgeek.tour.request.db.RequestHistory";
 
 }

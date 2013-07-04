@@ -1,9 +1,5 @@
-/**
-  * @(#)StatusSummaryField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.db;
+
+package com.tourgeek.tour.product.base.db;
 
 import java.util.*;
 
@@ -21,9 +17,9 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 import org.jbundle.base.screen.model.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 /**
  *  StatusSummaryField - This field is used to summarize the CustSaleDetail status of:

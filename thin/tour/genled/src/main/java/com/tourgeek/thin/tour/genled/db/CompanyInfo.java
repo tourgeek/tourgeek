@@ -1,9 +1,5 @@
-/**
-  * @(#)CompanyInfo.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.genled.db;
+
+package com.tourgeek.thin.tour.genled.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
@@ -11,7 +7,7 @@ import org.jbundle.thin.base.util.*;
 import org.jbundle.thin.base.db.*;
 
 import org.jbundle.thin.main.db.*;
-import com.tourapp.model.tour.genled.db.*;
+import com.tourgeek.model.tour.genled.db.*;
 
 public class CompanyInfo extends Company
     implements CompanyInfoModel

@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingHotelScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.detail.hotel;
+
+package com.tourgeek.tour.booking.entry.detail.hotel;
 
 import java.util.*;
 
@@ -22,16 +18,16 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.detail.base.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourgeek.tour.booking.entry.detail.base.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.product.hotel.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.product.land.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.booking.db.*;
 import com.tourapp.thin.app.booking.entry.*;
-import com.tourapp.tour.booking.entry.base.*;
+import com.tourgeek.tour.booking.entry.base.*;
 
 /**
  *  BookingHotelScreen - Booking hotel information.

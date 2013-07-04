@@ -1,9 +1,5 @@
-/**
-  * @(#)OTACodeTableModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.base.ota.db;
+
+package com.tourgeek.model.tour.product.base.ota.db;
 
 import org.jbundle.model.db.*;
 
@@ -23,12 +19,12 @@ public interface OTACodeTableModel extends Rec
     public static final String NAME_CODE_KEY = "NameCode";
 
     public static final String NAME_KEY = "Name";
-    public static final String OTA_CODES_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.ota.screen.OTACodesGridScreen";
-    public static final String OTA_CODE_TABLE_SCREEN_CLASS = "com.tourapp.tour.product.base.ota.screen.OTACodeTableScreen";
-    public static final String OTA_CODE_TABLE_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.ota.screen.OTACodeTableGridScreen";
+    public static final String OTA_CODES_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.base.ota.screen.OTACodesGridScreen";
+    public static final String OTA_CODE_TABLE_SCREEN_CLASS = "com.tourgeek.tour.product.base.ota.screen.OTACodeTableScreen";
+    public static final String OTA_CODE_TABLE_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.base.ota.screen.OTACodeTableGridScreen";
 
     public static final String OTA_CODE_TABLE_FILE = "OTACodeTable";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.ota.db.OTACodeTable";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.base.ota.db.OTACodeTable";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.base.ota.db.OTACodeTable";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.base.ota.db.OTACodeTable";
 
 }

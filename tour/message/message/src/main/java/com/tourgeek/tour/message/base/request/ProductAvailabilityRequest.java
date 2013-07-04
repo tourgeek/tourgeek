@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductAvailabilityRequest.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base.request;
+
+package com.tourgeek.tour.message.base.request;
 
 import java.util.*;
 

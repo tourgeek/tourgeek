@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingPax.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.db;
+
+package com.tourgeek.tour.booking.db;
 
 import java.util.*;
 
@@ -20,12 +16,12 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.booking.db.event.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.booking.db.event.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  BookingPax - Passenger Booking Detail.

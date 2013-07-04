@@ -1,9 +1,5 @@
-/**
-  * @(#)CashPlanScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.report.cashplan;
+
+package com.tourgeek.tour.acctrec.report.cashplan;
 
 import java.util.*;
 
@@ -21,7 +17,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.db.*;
-import com.tourapp.tour.base.db.event.*;
+import com.tourgeek.tour.base.db.event.*;
 
 /**
  *  CashPlanScreenRecord - Fields for the Cash Receipts Planning Report.

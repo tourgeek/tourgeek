@@ -1,11 +1,7 @@
-/**
-  * @(#)CarModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.car.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.car.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface CarModel extends ProductModel
 {
@@ -45,11 +41,11 @@ public interface CarModel extends ProductModel
     public static final String VEHICLE = "Vehicle";
     public static final String PER_VEHICLE_COST = "PerVehicleCost";
     public static final String PER_VEHICLE_PRICE_LOCAL = "PerVehiclePriceLocal";
-    public static final String CAR_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarScreen";
-    public static final String CAR_GRID_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarGridScreen";
+    public static final String CAR_SCREEN_CLASS = "com.tourgeek.tour.product.car.screen.CarScreen";
+    public static final String CAR_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.car.screen.CarGridScreen";
 
     public static final String CAR_FILE = "Car";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.car.db.Car";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.car.db.Car";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.car.db.Car";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.car.db.Car";
 
 }

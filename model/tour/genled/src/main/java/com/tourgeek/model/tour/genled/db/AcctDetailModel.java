@@ -1,11 +1,7 @@
-/**
-  * @(#)AcctDetailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
 
-import com.tourapp.model.tour.genled.db.*;
+package com.tourgeek.model.tour.genled.db;
+
+import com.tourgeek.model.tour.genled.db.*;
 
 public interface AcctDetailModel extends BaseTrxModel
 {
@@ -28,9 +24,9 @@ public interface AcctDetailModel extends BaseTrxModel
     public static final String TRX_DATE_KEY = "TrxDate";
 
     public static final String SOURCE_KEY = "Source";
-    public static final String ACCT_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailGridScreen";
-    public static final String ACCT_DETAIL_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailScreen";
-    public static final String ACCT_DETAIL_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.detail.AcctDetailDistGridScreen";
+    public static final String ACCT_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.detail.AcctDetailGridScreen";
+    public static final String ACCT_DETAIL_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.detail.AcctDetailScreen";
+    public static final String ACCT_DETAIL_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.detail.AcctDetailDistGridScreen";
     public static final String MANUALENTRY = "ManualEntry";
     public static final String RECURRINGTRX = "RecurringTrx";
     public static final String ACCRUAL = "Accrual";
@@ -40,7 +36,7 @@ public interface AcctDetailModel extends BaseTrxModel
     public static final String SUMMARYTRX = "SummaryTrx";
 
     public static final String ACCT_DETAIL_FILE = "AcctDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.AcctDetail";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.AcctDetail";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.AcctDetail";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.AcctDetail";
 
 }

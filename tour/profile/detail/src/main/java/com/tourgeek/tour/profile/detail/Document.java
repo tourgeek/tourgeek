@@ -1,9 +1,5 @@
-/**
-  * @(#)Document.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.profile.detail;
+
+package com.tourgeek.tour.profile.detail;
 
 import java.util.*;
 
@@ -20,9 +16,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.model.tour.profile.detail.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.model.tour.profile.detail.*;
 
 /**
  *  Document - Documents detail.

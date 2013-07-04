@@ -1,9 +1,5 @@
-/**
-  * @(#)PrepaymentScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.screen.prepymt;
+
+package com.tourgeek.tour.acctpay.screen.prepymt;
 
 import java.util.*;
 
@@ -22,13 +18,13 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.acctpay.screen.findepest.*;
-import com.tourapp.tour.acctpay.screen.trx.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.acctpay.db.event.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.acctpay.screen.findepest.*;
+import com.tourgeek.tour.acctpay.screen.trx.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.acctpay.db.event.*;
 
 /**
  *  PrepaymentScreen - Prepayments.

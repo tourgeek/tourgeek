@@ -1,9 +1,5 @@
-/**
-  * @(#)CardModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.profile.db;
+
+package com.tourgeek.model.tour.profile.db;
 
 import org.jbundle.model.db.*;
 
@@ -20,7 +16,7 @@ public interface CardModel extends Rec
     public static final String CARD_CODE = "CardCode";
 
     public static final String CARD_FILE = "Card";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.profile.db.Card";
-    public static final String THICK_CLASS = "com.tourapp.tour.profile.db.Card";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.profile.db.Card";
+    public static final String THICK_CLASS = "com.tourgeek.tour.profile.db.Card";
 
 }

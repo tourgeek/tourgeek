@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<CalendarEntry ID="1">
-		<LastChanged>2012-09-21T18:05:42</LastChanged>
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-04-01T00:00:00</StartDateTime>
+		<StartDateTime>2013-06-01T00:00:00</StartDateTime>
 		<EndDateTime/>
 		<Description>Email Financials to CEO</Description>
 		<CalendarCategoryID/>
@@ -12,15 +12,87 @@
 		<AnnivMasterID>2</AnnivMasterID>
 	</CalendarEntry>
 	<CalendarEntry ID="2">
-		<LastChanged>2012-09-21T18:05:42</LastChanged>
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-05-01T00:00:00</StartDateTime>
+		<StartDateTime>2013-07-01T00:00:00</StartDateTime>
 		<EndDateTime/>
 		<Description>Email Financials to CEO</Description>
 		<CalendarCategoryID/>
 		<Hidden>N</Hidden>
 		<Properties/>
 		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="3">
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="4">
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="5">
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-07-01T00:00:00</StartDateTime>
+		<EndDateTime>2013-07-01T23:59:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>4</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="6">
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-08-18T00:00:00</StartDateTime>
+		<EndDateTime>2013-08-18T23:59:00</EndDateTime>
+		<Description>President's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>5</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="7">
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-05-27T00:00:00</StartDateTime>
+		<EndDateTime>2013-05-27T23:59:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>8</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="8">
+		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-06-25T00:00:00</StartDateTime>
+		<EndDateTime>2013-06-25T23:59:00</EndDateTime>
+		<Description>Christmas</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>9</AnnivMasterID>
 	</CalendarEntry>
 </file>

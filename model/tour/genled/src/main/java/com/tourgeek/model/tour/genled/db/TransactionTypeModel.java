@@ -1,9 +1,5 @@
-/**
-  * @(#)TransactionTypeModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.db.*;
 
@@ -43,9 +39,9 @@ public interface TransactionTypeModel extends Rec
     public static final String TRX_TYPE_CODE_KEY = "TrxTypeCode";
 
     public static final String SOURCE_TRX_STATUS_ID_KEY = "SourceTrxStatusID";
-    public static final String TRANSACTION_TYPE_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxTypeGridScreen";
-    public static final String TRANSACTION_TYPE_SCREEN_CLASS = "com.tourapp.tour.genled.screen.trx.TrxTypeScreen";
-    public static final String TRX_ID_SFIELD_CLASS = "com.tourapp.tour.genled.screen.trx.TrxIDSField";
+    public static final String TRANSACTION_TYPE_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.trx.TrxTypeGridScreen";
+    public static final String TRANSACTION_TYPE_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.trx.TrxTypeScreen";
+    public static final String TRX_ID_SFIELD_CLASS = "com.tourgeek.tour.genled.screen.trx.TrxIDSField";
     public static final String GENLED = "genled";
     public static final String ASSETDR = "assetdr";
     public static final String ACCTPAY = "acctpay";
@@ -54,7 +50,7 @@ public interface TransactionTypeModel extends Rec
     public static final String AIR = "air";
 
     public static final String TRANSACTION_TYPE_FILE = "TransactionType";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.TransactionType";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.TransactionType";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.TransactionType";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.TransactionType";
 
 }

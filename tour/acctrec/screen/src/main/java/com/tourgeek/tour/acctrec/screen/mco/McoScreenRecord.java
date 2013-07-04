@@ -1,9 +1,5 @@
-/**
-  * @(#)McoScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.mco;
+
+package com.tourgeek.tour.acctrec.screen.mco;
 
 import java.util.*;
 
@@ -21,11 +17,11 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.report.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.genled.db.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.genled.db.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.tour.profile.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.tour.profile.db.*;
 
 /**
  *  McoScreenRecord - Screen Fields for MCO reports.

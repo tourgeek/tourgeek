@@ -1,9 +1,5 @@
-/**
-  * @(#)CurrencyUpdateProcess.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.assetdr.process;
+
+package com.tourgeek.tour.assetdr.process;
 
 import java.util.*;
 
@@ -21,7 +17,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.base.db.*;
 import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;

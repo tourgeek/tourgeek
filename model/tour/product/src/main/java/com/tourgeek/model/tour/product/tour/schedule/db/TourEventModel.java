@@ -1,9 +1,5 @@
-/**
-  * @(#)TourEventModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.tour.schedule.db;
+
+package com.tourgeek.model.tour.product.tour.schedule.db;
 
 import org.jbundle.model.db.*;
 
@@ -41,7 +37,7 @@ public interface TourEventModel extends Rec
     public static final int TOUR_CANCELLED = 18;
 
     public static final String TOUR_EVENT_FILE = "TourEvent";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.schedule.db.TourEvent";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.tour.schedule.db.TourEvent";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.tour.schedule.db.TourEvent";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.tour.schedule.db.TourEvent";
 
 }

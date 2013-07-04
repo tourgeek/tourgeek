@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestHistoryDetailGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.request.screen.detail;
+
+package com.tourgeek.tour.request.screen.detail;
 
 import java.util.*;
 
@@ -22,8 +18,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.request.db.*;
-import com.tourapp.tour.profile.screen.detail.*;
+import com.tourgeek.tour.request.db.*;
+import com.tourgeek.tour.profile.screen.detail.*;
 
 /**
  *  RequestHistoryDetailGridScreen - .

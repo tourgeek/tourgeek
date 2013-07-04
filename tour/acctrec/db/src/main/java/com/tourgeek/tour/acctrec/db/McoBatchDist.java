@@ -1,9 +1,5 @@
-/**
-  * @(#)McoBatchDist.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.db;
+
+package com.tourgeek.tour.acctrec.db;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.model.tour.acctrec.db.*;
+import com.tourgeek.model.tour.acctrec.db.*;
 
 /**
  *  McoBatchDist - MCOs.

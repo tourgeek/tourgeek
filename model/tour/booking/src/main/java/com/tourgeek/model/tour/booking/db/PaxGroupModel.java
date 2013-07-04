@@ -1,9 +1,5 @@
-/**
-  * @(#)PaxGroupModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.db;
+
+package com.tourgeek.model.tour.booking.db;
 
 import org.jbundle.model.db.*;
 
@@ -21,7 +17,7 @@ public interface PaxGroupModel extends Rec
     public static final String BOOKING_ID_KEY = "BookingID";
 
     public static final String PAX_GROUP_FILE = "PaxGroup";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.PaxGroup";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.db.PaxGroup";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.db.PaxGroup";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.db.PaxGroup";
 
 }

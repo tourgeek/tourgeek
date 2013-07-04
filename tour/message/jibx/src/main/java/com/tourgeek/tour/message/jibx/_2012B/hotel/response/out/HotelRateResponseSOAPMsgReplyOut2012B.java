@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelRateResponseSOAPMsgReplyOut2012B.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.jibx._2012B.hotel.response.out;
+
+package com.tourgeek.tour.message.jibx._2012B.hotel.response.out;
 
 import java.util.*;
 
@@ -25,13 +21,13 @@ import org.jbundle.base.message.trx.message.external.*;
 import org.jibx.schema.org.opentravel._2012B.hotel.*;
 import org.jibx.schema.org.opentravel._2012B.base.*;
 import org.jibx.schema.org.opentravel._2012B.base.profilehotelres.*;
-import com.tourapp.tour.message.hotel.response.*;
+import com.tourgeek.tour.message.hotel.response.*;
 import org.jbundle.base.message.core.trx.*;
 import org.joda.time.*;
-import com.tourapp.tour.message.base.response.data.*;
+import com.tourgeek.tour.message.base.response.data.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.booking.detail.db.*;
 
 /**
  *  HotelRateResponseSOAPMsgReplyOut2012B - .

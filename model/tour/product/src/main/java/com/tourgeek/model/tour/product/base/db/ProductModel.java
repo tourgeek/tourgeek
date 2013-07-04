@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.base.db;
+
+package com.tourgeek.model.tour.product.base.db;
 
 import org.jbundle.model.message.*;
 import org.jbundle.model.db.*;
@@ -66,7 +62,7 @@ public interface ProductModel extends Rec
     public static final String CONFIRMATION_NO_PARAM = "confirmationNo";
     public static final String CONFIRMED_BY_PARAM = "confirmedBy";
     public static final String COST_NOT_FOUND_MSG = "Cost not found";
-    public static final String PRODUCT_SEARCH_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.search.screen.ProductSearchDetailGridScreen";
+    public static final String PRODUCT_SEARCH_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.base.search.screen.ProductSearchDetailGridScreen";
     public static final String INVENTORY_DETAIL = "Inventory";
     public static final String PRICING_DETAIL = "Price";
     public static final String BOOKING_DETAIL = "BookingDetail";
@@ -75,8 +71,8 @@ public interface ProductModel extends Rec
     public static final String PRODUCT_SEARCH_DETAIL = "ProductSearchDetail";
 
     public static final String PRODUCT_FILE = "Product";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.db.Product";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.base.db.Product";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.base.db.Product";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.base.db.Product";
     /**
      * Check the inventory for this detail.
      * @param message Contains all the update data for this check

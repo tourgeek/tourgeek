@@ -1,9 +1,5 @@
-/**
-  * @(#)ArTrx_TrxDate.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.db;
+
+package com.tourgeek.tour.acctrec.db;
 
 import java.util.*;
 

@@ -1,9 +1,5 @@
-/**
-  * @(#)SpecialFormatModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.db.*;
 
@@ -19,7 +15,7 @@ public interface SpecialFormatModel extends Rec
     public static final String NAME_KEY = "Name";
 
     public static final String SPECIAL_FORMAT_FILE = "SpecialFormat";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.SpecialFormat";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.SpecialFormat";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.SpecialFormat";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.SpecialFormat";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelRateAvailRequestMessageInProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.hotel.request.in;
+
+package com.tourgeek.tour.message.hotel.request.in;
 
 import java.util.*;
 
@@ -21,12 +17,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.hotel.response.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.hotel.response.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.message.base.response.*;
+import com.tourgeek.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.response.*;
 
 /**
  *  HotelRateAvailRequestMessageInProcessor - Process a combined rate and availability message.

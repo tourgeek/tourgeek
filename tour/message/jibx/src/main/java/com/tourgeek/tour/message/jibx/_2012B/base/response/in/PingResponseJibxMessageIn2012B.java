@@ -1,9 +1,5 @@
-/**
-  * @(#)PingResponseJibxMessageIn2012B.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.jibx._2012B.base.response.in;
+
+package com.tourgeek.tour.message.jibx._2012B.base.response.in;
 
 import java.util.*;
 
@@ -20,12 +16,12 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.jibx._2012B.base.request.in.*;
+import com.tourgeek.tour.message.jibx._2012B.base.request.in.*;
 import org.jibx.schema.org.opentravel._2012B.ping.*;
 import org.jibx.schema.org.opentravel._2012B.base.*;
 import org.jbundle.base.message.trx.message.external.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.base.request.in.*;
+import com.tourgeek.tour.message.base.request.in.*;
 
 /**
  *  PingResponseJibxMessageIn2012B - .

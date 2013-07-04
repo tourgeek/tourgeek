@@ -1,16 +1,12 @@
-/**
-  * @(#)BookingModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.db;
 
-import com.tourapp.model.tour.acctrec.db.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+package com.tourgeek.model.tour.booking.db;
+
+import com.tourgeek.model.tour.acctrec.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 import org.jbundle.model.db.*;
-import com.tourapp.model.tour.product.tour.db.*;
+import com.tourgeek.model.tour.product.tour.db.*;
 import java.util.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 public interface BookingModel extends CustSaleModel
 {
@@ -95,13 +91,13 @@ public interface BookingModel extends CustSaleModel
 
     public static final String DESCRIPTION_KEY = "Description";
     public static final String BUTTON_LOCATION = "tour/buttons/";
-    public static final String PRODUCT_BOOKING_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.ProductBookingDetailGridScreen";
-    public static final String BOOKING_MENU_SCREEN_CLASS = "com.tourapp.tour.booking.entry.base.BookingMenuScreen";
-    public static final String BOOKING_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.lookup.BookingGridScreen";
+    public static final String PRODUCT_BOOKING_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.base.screen.ProductBookingDetailGridScreen";
+    public static final String BOOKING_MENU_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.base.BookingMenuScreen";
+    public static final String BOOKING_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.lookup.BookingGridScreen";
 
     public static final String BOOKING_FILE = "Booking";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.db.Booking";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.db.Booking";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.db.Booking";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.db.Booking";
     /**
      * Add the defaults from the control file when you have a new record.
      */

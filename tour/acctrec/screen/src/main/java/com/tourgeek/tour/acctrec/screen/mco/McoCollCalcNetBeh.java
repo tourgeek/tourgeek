@@ -1,9 +1,5 @@
-/**
-  * @(#)McoCollCalcNetBeh.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.mco;
+
+package com.tourgeek.tour.acctrec.screen.mco;
 
 import java.util.*;
 
@@ -21,10 +17,10 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.acctrec.screen.cash.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.acctrec.screen.cash.*;
+import com.tourgeek.tour.product.air.db.*;
 
 /**
  *  McoCollCalcNetBeh - Calc the Service charge and net on this Mco.

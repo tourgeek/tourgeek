@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductDesc.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.db;
+
+package com.tourgeek.tour.product.base.db;
 
 import java.util.*;
 
@@ -20,32 +16,32 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.base.db.*;
 import java.util.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.product.land.db.*;
+import com.tourgeek.tour.product.hotel.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.product.land.db.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.thin.app.booking.entry.search.*;
+import com.tourgeek.thin.app.booking.entry.search.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.message.base.response.*;
+import com.tourgeek.tour.message.base.response.*;
 import java.text.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.product.trans.db.*;
-import com.tourapp.tour.product.car.db.*;
-import com.tourapp.tour.product.cruise.db.*;
-import com.tourapp.tour.product.item.db.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.message.base.response.data.*;
-import com.tourapp.tour.product.air.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.product.trans.db.*;
+import com.tourgeek.tour.product.car.db.*;
+import com.tourgeek.tour.product.cruise.db.*;
+import com.tourgeek.tour.product.item.db.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.response.data.*;
+import com.tourgeek.tour.product.air.db.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.tour.product.base.event.*;
-import com.tourapp.model.tour.booking.db.*;
-import com.tourapp.model.tour.booking.detail.db.*;
-import com.tourapp.model.tour.booking.inventory.db.*;
+import com.tourgeek.tour.product.base.event.*;
+import com.tourgeek.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.inventory.db.*;
 import org.jbundle.model.message.*;
 
 /**

@@ -1,9 +1,5 @@
-/**
-  * @(#)GetProductCostHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.event;
+
+package com.tourgeek.tour.product.base.event;
 
 import java.util.*;
 
@@ -22,14 +18,14 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.product.tour.db.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  GetProductCostHandler - Get the product cost on a valid product record.

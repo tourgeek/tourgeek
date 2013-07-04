@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.request.db;
+
+package com.tourgeek.model.tour.request.db;
 
 import org.jbundle.model.db.*;
 
@@ -34,12 +30,12 @@ public interface RequestModel extends Rec
     public static final String POSTAL_CODE_KEY = "PostalCode";
 
     public static final String PROFILE_CODE_KEY = "ProfileCode";
-    public static final String REQUEST_SCREEN_CLASS = "com.tourapp.tour.request.screen.RequestScreen";
-    public static final String REQUEST_GRID_SCREEN_CLASS = "com.tourapp.tour.request.screen.RequestGridScreen";
-    public static final String REQUEST_HTML_SCREEN_CLASS = "com.tourapp.tour.request.html.RequestHtmlScreen";
+    public static final String REQUEST_SCREEN_CLASS = "com.tourgeek.tour.request.screen.RequestScreen";
+    public static final String REQUEST_GRID_SCREEN_CLASS = "com.tourgeek.tour.request.screen.RequestGridScreen";
+    public static final String REQUEST_HTML_SCREEN_CLASS = "com.tourgeek.tour.request.html.RequestHtmlScreen";
 
     public static final String REQUEST_FILE = "Request";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.Request";
-    public static final String THICK_CLASS = "com.tourapp.tour.request.db.Request";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.request.db.Request";
+    public static final String THICK_CLASS = "com.tourgeek.tour.request.db.Request";
 
 }

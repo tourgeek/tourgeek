@@ -1,11 +1,7 @@
-/**
-  * @(#)BankTrxBatchDetailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.assetdr.db;
 
-import com.tourapp.model.tour.assetdr.db.*;
+package com.tourgeek.model.tour.assetdr.db;
+
+import com.tourgeek.model.tour.assetdr.db.*;
 
 public interface BankTrxBatchDetailModel extends BankTrxModel
 {
@@ -38,12 +34,12 @@ public interface BankTrxBatchDetailModel extends BankTrxModel
     public static final String TRX_STATUS_KEY = "TrxStatus";
 
     public static final String BANK_TRX_BATCH_ID_KEY = "BankTrxBatchID";
-    public static final String BANK_TRX_BATCH_DETAIL_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchDetailScreen";
-    public static final String BANK_TRX_BATCH_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchDetailGridScreen";
-    public static final String BANK_TRX_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.batch.BankTrxBatchDistGridScreen";
+    public static final String BANK_TRX_BATCH_DETAIL_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.batch.BankTrxBatchDetailScreen";
+    public static final String BANK_TRX_BATCH_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.batch.BankTrxBatchDetailGridScreen";
+    public static final String BANK_TRX_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.batch.BankTrxBatchDistGridScreen";
 
     public static final String BANK_TRX_BATCH_DETAIL_FILE = "BankTrxBatchDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankTrxBatchDetail";
-    public static final String THICK_CLASS = "com.tourapp.tour.assetdr.db.BankTrxBatchDetail";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.assetdr.db.BankTrxBatchDetail";
+    public static final String THICK_CLASS = "com.tourgeek.tour.assetdr.db.BankTrxBatchDetail";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)CreditCard.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.db;
+
+package com.tourgeek.tour.acctrec.db;
 
 import java.util.*;
 
@@ -20,8 +16,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.model.tour.acctrec.db.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.model.tour.acctrec.db.*;
 
 /**
  *  CreditCard - Credit Cards.
@@ -31,17 +27,17 @@ public class CreditCard extends BaseArPay
 {
     private static final long serialVersionUID = 1L;
 
-    public static final String CREDIT_CARD_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.trx.CreditCardDistGridScreen";
-    public static final String CREDIT_CARD_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardGridScreen";
-    public static final String CREDIT_CARD_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardScreen";
-    public static final String CREDIT_CARD_POST_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardPost";
-    public static final String CREDIT_CARD_ENTRY_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardEntryScreen";
-    public static final String CREDIT_CARD_ENTRY_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardEntryGridScreen";
-    public static final String CREDIT_CARD_COLL_POST_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardCollPost";
-    public static final String CREDIT_COLLECT_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCollectScreen";
-    public static final String CREDIT_SUBMIT_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditSubmitGridScreen";
-    public static final String CREDIT_APPROVE_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditApproveGridScreen";
-    public static final String CREDIT_CARD_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.credit.CreditCardBatchDistGridScreen";
+    public static final String CREDIT_CARD_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.trx.CreditCardDistGridScreen";
+    public static final String CREDIT_CARD_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardGridScreen";
+    public static final String CREDIT_CARD_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardScreen";
+    public static final String CREDIT_CARD_POST_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardPost";
+    public static final String CREDIT_CARD_ENTRY_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardEntryScreen";
+    public static final String CREDIT_CARD_ENTRY_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardEntryGridScreen";
+    public static final String CREDIT_CARD_COLL_POST_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardCollPost";
+    public static final String CREDIT_COLLECT_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCollectScreen";
+    public static final String CREDIT_SUBMIT_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditSubmitGridScreen";
+    public static final String CREDIT_APPROVE_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditApproveGridScreen";
+    public static final String CREDIT_CARD_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.credit.CreditCardBatchDistGridScreen";
     /**
      * Default constructor.
      */

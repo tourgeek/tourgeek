@@ -1,11 +1,7 @@
-/**
-  * @(#)CityModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.base.db;
 
-import com.tourapp.model.tour.base.db.*;
+package com.tourgeek.model.tour.base.db;
+
+import com.tourgeek.model.tour.base.db.*;
 
 public interface CityModel extends LocationModel
 {
@@ -38,11 +34,11 @@ public interface CityModel extends LocationModel
     public static final String COUNTRY_ID_KEY = "CountryID";
 
     public static final String TICKET_CITY_DESC_KEY = "TicketCityDesc";
-    public static final String CITY_SCREEN_CLASS = "com.tourapp.tour.base.screen.CityScreen";
-    public static final String CITY_GRID_SCREEN_CLASS = "com.tourapp.tour.base.screen.CityGridScreen";
+    public static final String CITY_SCREEN_CLASS = "com.tourgeek.tour.base.screen.CityScreen";
+    public static final String CITY_GRID_SCREEN_CLASS = "com.tourgeek.tour.base.screen.CityGridScreen";
 
     public static final String CITY_FILE = "City";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.base.db.City";
-    public static final String THICK_CLASS = "com.tourapp.tour.base.db.City";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.base.db.City";
+    public static final String THICK_CLASS = "com.tourgeek.tour.base.db.City";
 
 }

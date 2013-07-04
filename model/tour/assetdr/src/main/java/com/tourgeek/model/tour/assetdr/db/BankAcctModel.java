@@ -1,9 +1,5 @@
-/**
-  * @(#)BankAcctModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.assetdr.db;
+
+package com.tourgeek.model.tour.assetdr.db;
 
 import org.jbundle.model.db.*;
 
@@ -25,11 +21,11 @@ public interface BankAcctModel extends Rec
     public static final String DESCRIPTION_KEY = "Description";
 
     public static final String CURRENCY_ID_KEY = "CurrencyID";
-    public static final String BANK_ACCT_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.BankAcctScreen";
-    public static final String BANK_ACCT_GRID_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.BankAcctGridScreen";
+    public static final String BANK_ACCT_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.BankAcctScreen";
+    public static final String BANK_ACCT_GRID_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.BankAcctGridScreen";
 
     public static final String BANK_ACCT_FILE = "BankAcct";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.BankAcct";
-    public static final String THICK_CLASS = "com.tourapp.tour.assetdr.db.BankAcct";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.assetdr.db.BankAcct";
+    public static final String THICK_CLASS = "com.tourgeek.tour.assetdr.db.BankAcct";
 
 }

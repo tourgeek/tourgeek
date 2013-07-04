@@ -1,9 +1,5 @@
-/**
-  * @(#)TourHeaderField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.db;
+
+package com.tourgeek.tour.product.tour.db;
 
 import java.util.*;
 
@@ -20,26 +16,26 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.message.base.response.*;
-import com.tourapp.tour.message.tour.response.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.message.base.response.*;
+import com.tourgeek.tour.message.tour.response.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.message.base.request.*;
-import com.tourapp.tour.message.tour.request.data.*;
-import com.tourapp.tour.message.base.response.data.*;
-import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.product.base.event.*;
+import com.tourgeek.tour.message.base.request.*;
+import com.tourgeek.tour.message.tour.request.data.*;
+import com.tourgeek.tour.message.base.response.data.*;
+import com.tourgeek.tour.message.base.request.data.*;
+import com.tourgeek.tour.product.base.event.*;
 import org.jbundle.main.db.base.*;
 import org.jbundle.model.message.*;
-import com.tourapp.tour.product.tour.detail.db.*;
-import com.tourapp.model.tour.booking.inventory.db.*;
-import com.tourapp.model.tour.booking.db.*;
-import com.tourapp.model.tour.booking.detail.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.product.tour.detail.db.*;
+import com.tourgeek.model.tour.booking.inventory.db.*;
+import com.tourgeek.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 
 /**
  *  TourHeaderField - Tour Header Field.

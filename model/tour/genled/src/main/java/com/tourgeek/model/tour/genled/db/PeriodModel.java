@@ -1,9 +1,5 @@
-/**
-  * @(#)PeriodModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.db.*;
 
@@ -19,7 +15,7 @@ public interface PeriodModel extends Rec
     public static final String END_PERIOD_KEY = "EndPeriod";
 
     public static final String PERIOD_FILE = "Period";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.Period";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.Period";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.Period";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.Period";
 
 }

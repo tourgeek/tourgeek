@@ -1,11 +1,7 @@
-/**
-  * @(#)TransportationClassModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.trans.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.trans.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface TransportationClassModel extends BaseClassModel
 {
@@ -20,7 +16,7 @@ public interface TransportationClassModel extends BaseClassModel
     public static final String THIRD_CLASS = "3";
 
     public static final String TRANSPORTATION_CLASS_FILE = "TransportationClass";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.trans.db.TransportationClass";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.trans.db.TransportationClass";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.trans.db.TransportationClass";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.trans.db.TransportationClass";
 
 }

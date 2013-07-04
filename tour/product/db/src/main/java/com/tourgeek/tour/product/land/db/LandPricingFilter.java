@@ -1,9 +1,5 @@
-/**
-  * @(#)LandPricingFilter.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.land.db;
+
+package com.tourgeek.tour.product.land.db;
 
 import java.util.*;
 
@@ -22,13 +18,13 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import java.util.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.base.db.*;
 import java.text.*;
-import com.tourapp.tour.product.land.event.*;
-import com.tourapp.tour.message.land.request.data.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.tour.product.land.event.*;
+import com.tourgeek.tour.message.land.request.data.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 /**
  *  LandPricingFilter - A filter for the valid pricing records for a land.

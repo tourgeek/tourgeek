@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelAvailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.util.test.hotel.db;
+
+package com.tourgeek.model.tour.util.test.hotel.db;
 
 import org.jbundle.model.db.*;
 

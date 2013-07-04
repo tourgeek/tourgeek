@@ -1,9 +1,5 @@
-/**
-  * @(#)TransInfoRequestMessageInProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.trans.request.in;
+
+package com.tourgeek.tour.message.trans.request.in;
 
 import java.util.*;
 
@@ -20,9 +16,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.base.request.in.*;
-import com.tourapp.tour.product.trans.db.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.message.base.request.in.*;
+import com.tourgeek.tour.product.trans.db.*;
+import com.tourgeek.tour.product.base.db.*;
 
 /**
  *  TransInfoRequestMessageInProcessor - .

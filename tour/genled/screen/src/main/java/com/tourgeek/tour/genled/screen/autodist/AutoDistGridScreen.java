@@ -1,9 +1,5 @@
-/**
-  * @(#)AutoDistGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.screen.autodist;
+
+package com.tourgeek.tour.genled.screen.autodist;
 
 import java.util.*;
 
@@ -23,7 +19,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.screen.*;
-import com.tourapp.tour.genled.db.*;
+import com.tourgeek.tour.genled.db.*;
 
 /**
  *  AutoDistGridScreen - Automatic Distribution Entry.

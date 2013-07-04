@@ -1,9 +1,5 @@
-/**
-  * @(#)Card.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.profile.db;
+
+package com.tourgeek.tour.profile.db;
 
 import java.util.*;
 
@@ -20,8 +16,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.model.tour.profile.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.model.tour.profile.db.*;
 
 /**
  *  Card - Credit card type.

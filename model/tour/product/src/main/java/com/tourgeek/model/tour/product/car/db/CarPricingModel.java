@@ -1,11 +1,7 @@
-/**
-  * @(#)CarPricingModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.car.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.car.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface CarPricingModel extends ProductPricingModel
 {
@@ -26,12 +22,12 @@ public interface CarPricingModel extends ProductPricingModel
     //public static final String COMMISSION_RATE = COMMISSION_RATE;
     //public static final String PAY_AT = PAY_AT;
     public static final String MAX_PAX = "MaxPax";
-    public static final String CAR_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarPricingScreen";
-    public static final String CAR_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.car.screen.CarPricingGridScreen";
-    public static final String CAR_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.car.screen.CarInventoryRangeAdjust";
+    public static final String CAR_PRICING_SCREEN_CLASS = "com.tourgeek.tour.product.car.screen.CarPricingScreen";
+    public static final String CAR_PRICING_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.car.screen.CarPricingGridScreen";
+    public static final String CAR_INVENTORY_RANGE_ADJUST_CLASS = "com.tourgeek.tour.product.car.screen.CarInventoryRangeAdjust";
 
     public static final String CAR_PRICING_FILE = "CarPricing";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.car.db.CarPricing";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.car.db.CarPricing";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.car.db.CarPricing";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.car.db.CarPricing";
 
 }

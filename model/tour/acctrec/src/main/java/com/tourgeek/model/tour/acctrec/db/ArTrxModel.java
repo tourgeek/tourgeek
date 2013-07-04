@@ -1,12 +1,8 @@
-/**
-  * @(#)ArTrxModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctrec.db;
+
+package com.tourgeek.model.tour.acctrec.db;
 
 import org.jbundle.model.db.*;
-import com.tourapp.model.tour.genled.db.*;
+import com.tourgeek.model.tour.genled.db.*;
 
 public interface ArTrxModel extends LinkTrxModel
 {
@@ -28,17 +24,17 @@ public interface ArTrxModel extends LinkTrxModel
     public static final String BOOKING_ID_KEY = "BookingID";
 
     public static final String TRX_STATUS_ID_KEY = "TrxStatusID";
-    public static final String CR_DR_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.misc.CrDrScreen";
-    public static final String CR_DR_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.misc.CrDrGridScreen";
-    public static final String AR_TRX_LINK_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.display.ArTrxLinkTrxGridScreen";
-    public static final String REFUND_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.refund.RefundScreen";
-    public static final String AR_TRX_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.display.ArTrxDistGridScreen";
-    public static final String REFUND_CHECK_POST_CLASS = "com.tourapp.tour.acctrec.screen.refund.RefundCheckPost";
-    public static final String REFUND_CHECK_XML_PRINT_CLASS = "com.tourapp.tour.acctrec.screen.refund.RefundCheckXMLPrint";
-    public static final String REFUND_PEND_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.refund.RefundPendScreen";
-    public static final String REFUND_CHECK_PRINT_CLASS = "com.tourapp.tour.acctrec.screen.refund.RefundCheckPrint";
-    public static final String BOOKING_AR_TRX_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingArTrxScreen";
-    public static final String BOOKING_AR_TRX_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingArTrxGridScreen";
+    public static final String CR_DR_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.misc.CrDrScreen";
+    public static final String CR_DR_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.misc.CrDrGridScreen";
+    public static final String AR_TRX_LINK_TRX_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.display.ArTrxLinkTrxGridScreen";
+    public static final String REFUND_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.refund.RefundScreen";
+    public static final String AR_TRX_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.display.ArTrxDistGridScreen";
+    public static final String REFUND_CHECK_POST_CLASS = "com.tourgeek.tour.acctrec.screen.refund.RefundCheckPost";
+    public static final String REFUND_CHECK_XML_PRINT_CLASS = "com.tourgeek.tour.acctrec.screen.refund.RefundCheckXMLPrint";
+    public static final String REFUND_PEND_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.refund.RefundPendScreen";
+    public static final String REFUND_CHECK_PRINT_CLASS = "com.tourgeek.tour.acctrec.screen.refund.RefundCheckPrint";
+    public static final String BOOKING_AR_TRX_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.acctrec.BookingArTrxScreen";
+    public static final String BOOKING_AR_TRX_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.acctrec.BookingArTrxGridScreen";
     public static final String PAYMENT = "Payment";
     public static final String CANCELLATION_CHARGE = "CancellationCharge";
     public static final String CREDIT_CARD = "CreditCard";
@@ -56,8 +52,8 @@ public interface ArTrxModel extends LinkTrxModel
     public static final String REFUND_PENDING = "RefundPending";
 
     public static final String AR_TRX_FILE = "ArTrx";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.ArTrx";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctrec.db.ArTrx";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctrec.db.ArTrx";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctrec.db.ArTrx";
     /**
      * Add the booking detail behaviors.
      */

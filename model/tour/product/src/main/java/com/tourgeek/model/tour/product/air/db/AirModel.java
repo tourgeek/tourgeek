@@ -1,11 +1,7 @@
-/**
-  * @(#)AirModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.air.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.air.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface AirModel extends TransportProductModel
 {
@@ -58,11 +54,11 @@ public interface AirModel extends TransportProductModel
     public static final String SEGMENT = "Segment";
 
     public static final String CITY_CODE_KEY = "CityCode";
-    public static final String AIR_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirScreen";
-    public static final String AIR_GRID_SCREEN_CLASS = "com.tourapp.tour.product.air.screen.AirGridScreen";
+    public static final String AIR_SCREEN_CLASS = "com.tourgeek.tour.product.air.screen.AirScreen";
+    public static final String AIR_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.air.screen.AirGridScreen";
 
     public static final String AIR_FILE = "Air";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.air.db.Air";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.air.db.Air";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.air.db.Air";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.air.db.Air";
 
 }

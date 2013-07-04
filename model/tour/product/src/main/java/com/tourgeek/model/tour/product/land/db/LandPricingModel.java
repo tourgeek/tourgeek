@@ -1,11 +1,7 @@
-/**
-  * @(#)LandPricingModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.land.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.land.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface LandPricingModel extends ProductPricingModel
 {
@@ -29,11 +25,11 @@ public interface LandPricingModel extends ProductPricingModel
     public static final String TO_PAX = "ToPax";
     public static final String LAND_VARIES_ID = "LandVariesID";
     public static final String VARIES_DESC = "VariesDesc";
-    public static final String LAND_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandPricingScreen";
-    public static final String LAND_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.land.screen.LandPricingGridScreen";
+    public static final String LAND_PRICING_SCREEN_CLASS = "com.tourgeek.tour.product.land.screen.LandPricingScreen";
+    public static final String LAND_PRICING_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.land.screen.LandPricingGridScreen";
 
     public static final String LAND_PRICING_FILE = "LandPricing";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.LandPricing";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.land.db.LandPricing";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.land.db.LandPricing";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.land.db.LandPricing";
 
 }

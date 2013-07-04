@@ -1,11 +1,7 @@
-/**
-  * @(#)CruisePricingModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.cruise.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.cruise.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface CruisePricingModel extends ProductPricingModel
 {
@@ -25,12 +21,12 @@ public interface CruisePricingModel extends ProductPricingModel
     //public static final String COMMISSIONABLE = COMMISSIONABLE;
     //public static final String COMMISSION_RATE = COMMISSION_RATE;
     //public static final String PAY_AT = PAY_AT;
-    public static final String CRUISE_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruisePricingScreen";
-    public static final String CRUISE_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.cruise.screen.CruisePricingGridScreen";
-    public static final String CRUISE_INVENTORY_RANGE_ADJUST_CLASS = "com.tourapp.tour.product.cruise.screen.CruiseInventoryRangeAdjust";
+    public static final String CRUISE_PRICING_SCREEN_CLASS = "com.tourgeek.tour.product.cruise.screen.CruisePricingScreen";
+    public static final String CRUISE_PRICING_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.cruise.screen.CruisePricingGridScreen";
+    public static final String CRUISE_INVENTORY_RANGE_ADJUST_CLASS = "com.tourgeek.tour.product.cruise.screen.CruiseInventoryRangeAdjust";
 
     public static final String CRUISE_PRICING_FILE = "CruisePricing";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.cruise.db.CruisePricing";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.cruise.db.CruisePricing";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.cruise.db.CruisePricing";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.cruise.db.CruisePricing";
 
 }

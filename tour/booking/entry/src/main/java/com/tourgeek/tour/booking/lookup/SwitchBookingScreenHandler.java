@@ -1,9 +1,5 @@
-/**
-  * @(#)SwitchBookingScreenHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.lookup;
+
+package com.tourgeek.tour.booking.lookup;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.base.screen.model.*;
-import com.tourapp.tour.booking.db.event.*;
+import com.tourgeek.tour.booking.db.event.*;
 
 /**
  *  SwitchBookingScreenHandler - .

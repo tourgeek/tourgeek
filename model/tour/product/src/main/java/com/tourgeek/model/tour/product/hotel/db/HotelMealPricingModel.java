@@ -1,11 +1,7 @@
-/**
-  * @(#)HotelMealPricingModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.hotel.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.hotel.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface HotelMealPricingModel extends ProductPricingModel
 {
@@ -27,11 +23,11 @@ public interface HotelMealPricingModel extends ProductPricingModel
     //public static final String PAY_AT = PAY_AT;
 
     public static final String HOTEL_ID_KEY = "HotelID";
-    public static final String HOTEL_MEAL_PRICING_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelMealPricingScreen";
-    public static final String HOTEL_MEAL_PRICING_GRID_SCREEN_CLASS = "com.tourapp.tour.product.hotel.screen.HotelMealPricingGridScreen";
+    public static final String HOTEL_MEAL_PRICING_SCREEN_CLASS = "com.tourgeek.tour.product.hotel.screen.HotelMealPricingScreen";
+    public static final String HOTEL_MEAL_PRICING_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.hotel.screen.HotelMealPricingGridScreen";
 
     public static final String HOTEL_MEAL_PRICING_FILE = "HotelMealPricing";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.hotel.db.HotelMealPricing";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.hotel.db.HotelMealPricing";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.hotel.db.HotelMealPricing";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.hotel.db.HotelMealPricing";
 
 }

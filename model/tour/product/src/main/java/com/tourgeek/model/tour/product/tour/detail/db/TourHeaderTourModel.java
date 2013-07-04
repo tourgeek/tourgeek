@@ -1,11 +1,7 @@
-/**
-  * @(#)TourHeaderTourModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.tour.detail.db;
 
-import com.tourapp.model.tour.product.tour.detail.db.*;
+package com.tourgeek.model.tour.product.tour.detail.db;
+
+import com.tourgeek.model.tour.product.tour.detail.db.*;
 
 public interface TourHeaderTourModel extends TourHeaderDetailModel
 {
@@ -79,12 +75,12 @@ public interface TourHeaderTourModel extends TourHeaderDetailModel
     //public static final String MEALS = MEALS;
     //public static final String DAYS = DAYS;
     //public static final String PRICING_TYPE_ID = PRICING_TYPE_ID;
-    public static final String TOUR_HEADER_TOUR_HEADER_SCREEN = "com.tourapp.tour.product.tour.detail.screen.TourHeaderTourHeaderScreen";
-    public static final String TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS = "com.tourapp.tour.product.tour.detail.screen.TourHeaderTourHeaderGridScreen";
-    public static final String TOUR_HEADER_TOUR_GRID_SCREEN_CLASS = "com.tourapp.tour.product.tour.other.screen.TourHeaderTourGridScreen";
+    public static final String TOUR_HEADER_TOUR_HEADER_SCREEN = "com.tourgeek.tour.product.tour.detail.screen.TourHeaderTourHeaderScreen";
+    public static final String TOUR_HEADER_TOUR_HEADER_GRID_SCREEN_CLAS = "com.tourgeek.tour.product.tour.detail.screen.TourHeaderTourHeaderGridScreen";
+    public static final String TOUR_HEADER_TOUR_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.tour.other.screen.TourHeaderTourGridScreen";
 
     public static final String TOUR_HEADER_TOUR_FILE = "TourHeaderDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.detail.db.TourHeaderTour";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.tour.detail.db.TourHeaderTour";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.tour.detail.db.TourHeaderTour";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.tour.detail.db.TourHeaderTour";
 
 }

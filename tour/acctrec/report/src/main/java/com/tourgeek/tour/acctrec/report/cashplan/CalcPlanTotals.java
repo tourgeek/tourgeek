@@ -1,9 +1,5 @@
-/**
-  * @(#)CalcPlanTotals.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.report.cashplan;
+
+package com.tourgeek.tour.acctrec.report.cashplan;
 
 import java.util.*;
 
@@ -21,12 +17,12 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.report.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.base.db.event.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.base.db.event.*;
+import com.tourgeek.tour.booking.detail.db.*;
 import org.jbundle.base.screen.model.util.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 
 /**
  *  CalcPlanTotals - Calculate the total for the cash plan report.

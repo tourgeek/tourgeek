@@ -1,9 +1,5 @@
-/**
-  * @(#)BaseStatusUpdateHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.event;
+
+package com.tourgeek.tour.product.base.event;
 
 import java.util.*;
 

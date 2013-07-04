@@ -1,9 +1,5 @@
-/**
-  * @(#)SmokerField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.base.field;
+
+package com.tourgeek.tour.base.field;
 
 import java.util.*;
 

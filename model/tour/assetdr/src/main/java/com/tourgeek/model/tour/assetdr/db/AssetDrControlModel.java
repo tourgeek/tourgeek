@@ -1,9 +1,5 @@
-/**
-  * @(#)AssetDrControlModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.assetdr.db;
+
+package com.tourgeek.model.tour.assetdr.db;
 
 import org.jbundle.model.db.*;
 
@@ -19,11 +15,11 @@ public interface AssetDrControlModel extends Rec
     public static final String TRX_STATUS_ID = "TrxStatusID";
     public static final String ACCOUNT_ID = "AccountID";
     public static final String DATE_RECONCILED = "DateReconciled";
-    public static final String ASSET_DR_CONTROL_SCREEN_CLASS = "com.tourapp.tour.assetdr.screen.AssetDrControlScreen";
-    public static final String ASSET_DR_CONTROL_SCREEN_2_CLASS = "com.tourapp.tour.assetdr.screen.AssetDrControlScreen";
+    public static final String ASSET_DR_CONTROL_SCREEN_CLASS = "com.tourgeek.tour.assetdr.screen.AssetDrControlScreen";
+    public static final String ASSET_DR_CONTROL_SCREEN_2_CLASS = "com.tourgeek.tour.assetdr.screen.AssetDrControlScreen";
 
     public static final String ASSET_DR_CONTROL_FILE = "AssetDrControl";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.assetdr.db.AssetDrControl";
-    public static final String THICK_CLASS = "com.tourapp.tour.assetdr.db.AssetDrControl";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.assetdr.db.AssetDrControl";
+    public static final String THICK_CLASS = "com.tourgeek.tour.assetdr.db.AssetDrControl";
 
 }

@@ -1,16 +1,12 @@
-/**
-  * @(#)SeatChoice.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.base.db.shared;
+
+package com.tourgeek.thin.tour.base.db.shared;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.model.tour.base.db.shared.*;
+import com.tourgeek.model.tour.base.db.shared.*;
 
 public class SeatChoice extends FieldList
     implements SeatChoiceModel

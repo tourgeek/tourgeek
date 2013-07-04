@@ -1,9 +1,5 @@
-/**
-  * @(#)UseTourHeaderOptionScreenField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.screen;
+
+package com.tourgeek.tour.product.tour.screen;
 
 import java.util.*;
 
@@ -23,7 +19,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.screen.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.product.tour.db.*;
 
 /**
  *  UseTourHeaderOptionScreenField - .

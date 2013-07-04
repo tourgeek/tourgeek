@@ -1,9 +1,5 @@
-/**
-  * @(#)CostAnalysisScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.report.tourcost;
+
+package com.tourgeek.tour.acctpay.report.tourcost;
 
 import java.util.*;
 
@@ -20,9 +16,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctpay.report.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.acctpay.report.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.tour.product.tour.db.*;
 
 /**
  *  CostAnalysisScreenRecord - .

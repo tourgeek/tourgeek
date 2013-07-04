@@ -1,16 +1,12 @@
-/**
-  * @(#)ProfileCertification.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.profile.detail;
+
+package com.tourgeek.thin.tour.profile.detail;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.model.tour.profile.detail.*;
+import com.tourgeek.model.tour.profile.detail.*;
 
 public class ProfileCertification extends FieldList
     implements ProfileCertificationModel

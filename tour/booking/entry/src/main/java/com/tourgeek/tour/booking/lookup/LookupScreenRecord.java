@@ -1,9 +1,5 @@
-/**
-  * @(#)LookupScreenRecord.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.lookup;
+
+package com.tourgeek.tour.booking.lookup;
 
 import java.util.*;
 
@@ -23,12 +19,12 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import org.jbundle.base.screen.model.util.*;
 import org.jbundle.main.user.db.*;
-import com.tourapp.tour.booking.db.event.*;
-import com.tourapp.tour.base.db.shared.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.booking.db.event.*;
+import com.tourgeek.tour.base.db.shared.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 
 /**
  *  LookupScreenRecord - Screen Fields.

@@ -1,9 +1,5 @@
-/**
-  * @(#)BaseApTrxPostScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.screen.check;
+
+package com.tourgeek.tour.acctpay.screen.check;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.assetdr.screen.batch.*;
+import com.tourgeek.tour.assetdr.screen.batch.*;
 
 /**
  *  BaseApTrxPostScreen - Base screen for A/P posting.

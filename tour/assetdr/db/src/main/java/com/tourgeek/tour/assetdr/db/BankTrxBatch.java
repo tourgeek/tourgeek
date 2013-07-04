@@ -1,9 +1,5 @@
-/**
-  * @(#)BankTrxBatch.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.assetdr.db;
+
+package com.tourgeek.tour.assetdr.db;
 
 import java.util.*;
 
@@ -21,7 +17,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.user.db.*;
-import com.tourapp.model.tour.assetdr.db.*;
+import com.tourgeek.model.tour.assetdr.db.*;
 
 /**
  *  BankTrxBatch - Bank Transactions.

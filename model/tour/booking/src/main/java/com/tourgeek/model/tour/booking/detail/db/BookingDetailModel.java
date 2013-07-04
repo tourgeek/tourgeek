@@ -1,15 +1,11 @@
-/**
-  * @(#)BookingDetailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.detail.db;
+
+package com.tourgeek.model.tour.booking.detail.db;
 
 import java.util.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.product.base.db.*;
-import com.tourapp.model.tour.booking.db.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.product.base.db.*;
+import com.tourgeek.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 public interface BookingDetailModel extends BookingSubModel
 {
@@ -155,11 +151,11 @@ public interface BookingDetailModel extends BookingSubModel
     public static final String COST_PARAM = "cost";
     public static final String INVENTORY_PARAM = "inventory";
     public static final String PRODUCT_PARAM = "product";
-    public static final String BOOKING_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.detail.detail.BookingDetailGridScreen";
+    public static final String BOOKING_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.detail.detail.BookingDetailGridScreen";
 
     public static final String BOOKING_DETAIL_FILE = "BookingDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingDetail";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingDetail";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.detail.db.BookingDetail";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.detail.db.BookingDetail";
     /**
      * Get the product for this detail.
      */

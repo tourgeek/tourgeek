@@ -1,9 +1,5 @@
-/**
-  * @(#)TourStatusSummaryField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.db;
+
+package com.tourgeek.tour.booking.db;
 
 import java.util.*;
 
@@ -20,19 +16,19 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.product.tour.db.*;
 import java.util.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.booking.detail.event.*;
-import com.tourapp.tour.product.tour.schedule.db.*;
-import com.tourapp.tour.booking.db.event.*;
-import com.tourapp.tour.acctpay.db.event.*;
-import com.tourapp.model.tour.product.tour.db.*;
-import com.tourapp.model.tour.product.tour.schedule.db.*;
-import com.tourapp.tour.base.field.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.product.hotel.db.*;
+import com.tourgeek.tour.product.land.db.*;
+import com.tourgeek.tour.booking.detail.event.*;
+import com.tourgeek.tour.product.tour.schedule.db.*;
+import com.tourgeek.tour.booking.db.event.*;
+import com.tourgeek.tour.acctpay.db.event.*;
+import com.tourgeek.model.tour.product.tour.db.*;
+import com.tourgeek.model.tour.product.tour.schedule.db.*;
+import com.tourgeek.tour.base.field.*;
 import org.jbundle.main.db.base.*;
 
 /**

@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductSearchCategoryField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.search.db;
+
+package com.tourgeek.tour.product.base.search.db;
 
 import java.util.*;
 

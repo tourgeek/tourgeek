@@ -1,11 +1,7 @@
-/**
-  * @(#)AirRateModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.air.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.air.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface AirRateModel extends BaseRateModel
 {
@@ -17,7 +13,7 @@ public interface AirRateModel extends BaseRateModel
     //public static final String CODE = CODE;
 
     public static final String AIR_RATE_FILE = "AirRate";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.air.db.AirRate";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.air.db.AirRate";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.air.db.AirRate";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.air.db.AirRate";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)TourEventScheduleGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.schedule.screen;
+
+package com.tourgeek.tour.product.tour.schedule.screen;
 
 import java.util.*;
 
@@ -22,11 +18,11 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.main.screen.*;
-import com.tourapp.tour.product.tour.schedule.db.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.tour.screen.*;
+import com.tourgeek.tour.product.tour.schedule.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.product.tour.screen.*;
 import org.jbundle.main.msg.db.*;
 
 /**

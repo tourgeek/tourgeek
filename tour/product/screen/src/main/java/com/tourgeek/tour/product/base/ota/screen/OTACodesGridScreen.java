@@ -1,9 +1,5 @@
-/**
-  * @(#)OTACodesGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.base.ota.screen;
+
+package com.tourgeek.tour.product.base.ota.screen;
 
 import java.util.*;
 
@@ -23,7 +19,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.screen.*;
-import com.tourapp.tour.product.base.ota.db.*;
+import com.tourgeek.tour.product.base.ota.db.*;
 
 /**
  *  OTACodesGridScreen - .

@@ -1,11 +1,7 @@
-/**
-  * @(#)TransportationChainModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.trans.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.trans.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface TransportationChainModel extends ProductChainModel
 {
@@ -17,7 +13,7 @@ public interface TransportationChainModel extends ProductChainModel
     //public static final String CODE = CODE;
 
     public static final String TRANSPORTATION_CHAIN_FILE = "TransportationChain";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.trans.db.TransportationChain";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.trans.db.TransportationChain";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.trans.db.TransportationChain";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.trans.db.TransportationChain";
 
 }

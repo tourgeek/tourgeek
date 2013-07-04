@@ -1,9 +1,5 @@
-/**
-  * @(#)AcctBatchDetailModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.db.*;
 
@@ -23,12 +19,12 @@ public interface AcctBatchDetailModel extends Rec
     public static final String AUTO_REVERSAL = "AutoReversal";
 
     public static final String ACCT_BATCH_ID_KEY = "AcctBatchID";
-    public static final String ACCT_BATCH_DETAIL_SCREEN_CLASS = "com.tourapp.tour.genled.screen.batch.AcctBatchDetailScreen";
-    public static final String ACCT_BATCH_DETAIL_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.batch.AcctBatchDetailGridScreen";
+    public static final String ACCT_BATCH_DETAIL_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.batch.AcctBatchDetailScreen";
+    public static final String ACCT_BATCH_DETAIL_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.batch.AcctBatchDetailGridScreen";
     public static final String REVERSAL = "Reversal";
 
     public static final String ACCT_BATCH_DETAIL_FILE = "AcctBatchDetail";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.AcctBatchDetail";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.AcctBatchDetail";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.AcctBatchDetail";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.AcctBatchDetail";
 
 }

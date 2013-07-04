@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingCalendar.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.calendar;
+
+package com.tourgeek.tour.booking.entry.calendar;
 
 import java.util.*;
 
@@ -23,28 +19,28 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.util.calendarpanel.model.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.booking.entry.detail.base.*;
-import com.tourapp.tour.booking.entry.base.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.booking.entry.detail.base.*;
+import com.tourgeek.tour.booking.entry.base.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.record.*;
 import org.jbundle.thin.base.screen.cal.popup.*;
 import org.jbundle.base.screen.view.swing.*;
 import org.jbundle.util.calendarpanel.*;
-import com.tourapp.tour.booking.db.event.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.product.trans.db.*;
-import com.tourapp.tour.product.car.db.*;
-import com.tourapp.tour.product.cruise.db.*;
-import com.tourapp.tour.product.air.db.*;
-import com.tourapp.tour.product.item.db.*;
+import com.tourgeek.tour.booking.db.event.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.product.hotel.db.*;
+import com.tourgeek.tour.product.land.db.*;
+import com.tourgeek.tour.product.trans.db.*;
+import com.tourgeek.tour.product.car.db.*;
+import com.tourgeek.tour.product.cruise.db.*;
+import com.tourgeek.tour.product.air.db.*;
+import com.tourgeek.tour.product.item.db.*;
 import org.jbundle.base.screen.model.calendar.*;
 import javax.swing.*;
 import org.jbundle.thin.base.screen.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import com.tourapp.thin.app.booking.entry.*;
 import org.jbundle.model.util.*;
 

@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductUpdateMessageOutErrorProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base.error;
+
+package com.tourgeek.tour.message.base.error;
 
 import java.util.*;
 
@@ -20,10 +16,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.request.data.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.main.db.base.*;
-import com.tourapp.tour.message.base.request.*;
+import com.tourgeek.tour.message.base.request.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
 

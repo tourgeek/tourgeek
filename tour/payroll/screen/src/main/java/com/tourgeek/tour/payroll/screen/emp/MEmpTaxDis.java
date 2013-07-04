@@ -1,9 +1,5 @@
-/**
-  * @(#)MEmpTaxDis.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.payroll.screen.emp;
+
+package com.tourgeek.tour.payroll.screen.emp;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.payroll.db.*;
+import com.tourgeek.tour.payroll.db.*;
 
 /**
  *  MEmpTaxDis - Tax Totals Display.

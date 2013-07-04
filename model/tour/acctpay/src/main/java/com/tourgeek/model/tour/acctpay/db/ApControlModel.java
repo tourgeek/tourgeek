@@ -1,9 +1,5 @@
-/**
-  * @(#)ApControlModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctpay.db;
+
+package com.tourgeek.model.tour.acctpay.db;
 
 import org.jbundle.model.db.*;
 
@@ -38,7 +34,7 @@ public interface ApControlModel extends Rec
     public static final String TEN_99_TEMPLATE = "Ten99Template";
 
     public static final String AP_CONTROL_FILE = "ApControl";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctpay.db.ApControl";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctpay.db.ApControl";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctpay.db.ApControl";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctpay.db.ApControl";
 
 }

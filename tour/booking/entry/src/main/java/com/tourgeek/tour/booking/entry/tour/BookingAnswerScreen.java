@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingAnswerScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.tour;
+
+package com.tourgeek.tour.booking.entry.tour;
 
 import java.util.*;
 
@@ -22,10 +18,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.base.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.booking.db.event.*;
+import com.tourgeek.tour.booking.entry.base.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.booking.db.event.*;
 
 /**
  *  BookingAnswerScreen - Booking Answer File.

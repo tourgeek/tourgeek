@@ -1,9 +1,5 @@
-/**
-  * @(#)VendorModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctpay.db;
+
+package com.tourgeek.model.tour.acctpay.db;
 
 import org.jbundle.model.main.db.*;
 
@@ -57,14 +53,14 @@ public interface VendorModel extends CompanyModel
     public static final String NAME_SORT_KEY = "NameSort";
 
     public static final String CURRENCYS_ID_KEY = "CurrencysID";
-    public static final String VENDOR_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.vendor.VendorScreen";
-    public static final String VENDOR_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.vendor.VendorGridScreen";
-    public static final String BROKER_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.broker.BrokerDistGridScreen";
+    public static final String VENDOR_SCREEN_CLASS = "com.tourgeek.tour.acctpay.screen.vendor.VendorScreen";
+    public static final String VENDOR_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctpay.screen.vendor.VendorGridScreen";
+    public static final String BROKER_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctpay.screen.broker.BrokerDistGridScreen";
     public static final String MESSAGE_DETAIL_SCREEN = "Message Detail";
     public static final String MESSAGE_LOG_SCREEN = "Message Log";
 
     public static final String VENDOR_FILE = "Vendor";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctpay.db.Vendor";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctpay.db.Vendor";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctpay.db.Vendor";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctpay.db.Vendor";
 
 }

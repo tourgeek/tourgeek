@@ -1,9 +1,5 @@
-/**
-  * @(#)ProductReplyOutErrorProcessor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base.error;
+
+package com.tourgeek.tour.message.base.error;
 
 import java.util.*;
 

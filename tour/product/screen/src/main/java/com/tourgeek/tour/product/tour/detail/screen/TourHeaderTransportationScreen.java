@@ -1,9 +1,5 @@
-/**
-  * @(#)TourHeaderTransportationScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.detail.screen;
+
+package com.tourgeek.tour.product.tour.detail.screen;
 
 import java.util.*;
 
@@ -22,8 +18,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.detail.db.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.product.tour.detail.db.*;
+import com.tourgeek.tour.base.db.*;
 
 /**
  *  TourHeaderTransportationScreen - .

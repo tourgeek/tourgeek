@@ -1,11 +1,7 @@
-/**
-  * @(#)PaymentHistoryModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctpay.db;
 
-import com.tourapp.model.tour.genled.db.*;
+package com.tourgeek.model.tour.acctpay.db;
+
+import com.tourgeek.model.tour.genled.db.*;
 
 public interface PaymentHistoryModel extends LinkTrxModel
 {
@@ -29,13 +25,13 @@ public interface PaymentHistoryModel extends LinkTrxModel
     public static final String PAYMENT_DISTRIBUTION_ICON = "Transaction";
     public static final String PAYMENT_HISTORY = "Payment History";
     public static final String PREPAYMENT_DIST = "PrepaymentDist";
-    public static final String PAYMENT_HISTORY_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryScreen";
-    public static final String PAYMENT_HISTORY_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryGridScreen";
-    public static final String PAYMENT_HISTORY_LINK_TRX_GRID_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen";
-    public static final String PAYMENT_HISTORY_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctpay.screen.hist.PaymentHistoryDistGridScreen";
+    public static final String PAYMENT_HISTORY_SCREEN_CLASS = "com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryScreen";
+    public static final String PAYMENT_HISTORY_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryGridScreen";
+    public static final String PAYMENT_HISTORY_LINK_TRX_GRID_CLASS = "com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryLinkTrxGridScreen";
+    public static final String PAYMENT_HISTORY_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctpay.screen.hist.PaymentHistoryDistGridScreen";
 
     public static final String PAYMENT_HISTORY_FILE = "PaymentHistory";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctpay.db.PaymentHistory";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctpay.db.PaymentHistory";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctpay.db.PaymentHistory";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctpay.db.PaymentHistory";
 
 }

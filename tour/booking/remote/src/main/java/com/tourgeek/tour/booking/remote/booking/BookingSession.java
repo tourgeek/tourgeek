@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.remote.booking;
+
+package com.tourgeek.tour.booking.remote.booking;
 
 import java.util.*;
 
@@ -22,16 +18,16 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.remote.db.*;
 import org.jbundle.thin.base.remote.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.product.remote.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.product.remote.*;
 import com.tourapp.thin.app.booking.entry.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.tour.product.base.event.*;
-import com.tourapp.tour.booking.db.event.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.tour.product.base.event.*;
+import com.tourgeek.tour.booking.db.event.*;
 
 /**
  *  BookingSession - .

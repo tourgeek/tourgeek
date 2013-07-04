@@ -1,9 +1,5 @@
-/**
-  * @(#)LookupInventoryHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.detail.event;
+
+package com.tourgeek.tour.booking.detail.event;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.inventory.db.*;
+import com.tourgeek.tour.booking.inventory.db.*;
 
 /**
  *  LookupInventoryHandler - Lookup inv on valid rec.

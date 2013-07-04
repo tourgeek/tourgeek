@@ -1,9 +1,5 @@
-/**
-  * @(#)AddNewCashDistHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.cash.dist;
+
+package com.tourgeek.tour.acctrec.screen.cash.dist;
 
 import java.util.*;
 
@@ -20,8 +16,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.assetdr.screen.batch.dist.*;
-import com.tourapp.tour.acctrec.db.*;
+import com.tourgeek.tour.assetdr.screen.batch.dist.*;
+import com.tourgeek.tour.acctrec.db.*;
 
 /**
  *  AddNewCashDistHandler - AddNewDistHandler - This special class tests for the case when the user set a single distribution

@@ -1,9 +1,5 @@
-/**
-  * @(#)TourClass.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.db;
+
+package com.tourgeek.tour.product.tour.db;
 
 import java.util.*;
 
@@ -20,17 +16,17 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.schedule.db.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.product.air.db.*;
-import com.tourapp.tour.product.hotel.db.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.product.car.db.*;
-import com.tourapp.tour.product.trans.db.*;
-import com.tourapp.tour.product.cruise.db.*;
-import com.tourapp.tour.product.item.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.model.tour.product.tour.db.*;
+import com.tourgeek.tour.product.tour.schedule.db.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.product.air.db.*;
+import com.tourgeek.tour.product.hotel.db.*;
+import com.tourgeek.tour.product.land.db.*;
+import com.tourgeek.tour.product.car.db.*;
+import com.tourgeek.tour.product.trans.db.*;
+import com.tourgeek.tour.product.cruise.db.*;
+import com.tourgeek.tour.product.item.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.model.tour.product.tour.db.*;
 
 /**
  *  TourClass - Tour class.

@@ -1,9 +1,5 @@
-/**
-  * @(#)RequestControlModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.request.db;
+
+package com.tourgeek.model.tour.request.db;
 
 import org.jbundle.model.db.*;
 
@@ -23,7 +19,7 @@ public interface RequestControlModel extends Rec
     public static final String PROFILE_TYPE_ID = "ProfileTypeID";
 
     public static final String REQUEST_CONTROL_FILE = "RequestControl";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.request.db.RequestControl";
-    public static final String THICK_CLASS = "com.tourapp.tour.request.db.RequestControl";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.request.db.RequestControl";
+    public static final String THICK_CLASS = "com.tourgeek.tour.request.db.RequestControl";
 
 }

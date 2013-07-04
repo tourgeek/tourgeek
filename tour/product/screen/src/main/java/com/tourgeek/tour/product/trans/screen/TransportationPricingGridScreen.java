@@ -1,9 +1,5 @@
-/**
-  * @(#)TransportationPricingGridScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.trans.screen;
+
+package com.tourgeek.tour.product.trans.screen;
 
 import java.util.*;
 
@@ -22,10 +18,10 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.screen.*;
-import com.tourapp.tour.product.trans.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.acctpay.db.*;
+import com.tourgeek.tour.product.base.screen.*;
+import com.tourgeek.tour.product.trans.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.acctpay.db.*;
 
 /**
  *  TransportationPricingGridScreen - Transportation pricing.

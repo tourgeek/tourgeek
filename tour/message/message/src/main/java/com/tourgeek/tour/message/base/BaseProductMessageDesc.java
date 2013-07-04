@@ -1,9 +1,5 @@
-/**
-  * @(#)BaseProductMessageDesc.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.base;
+
+package com.tourgeek.tour.message.base;
 
 import java.util.*;
 
@@ -26,9 +22,9 @@ import org.jbundle.main.msg.db.*;
 import java.math.*;
 import javax.xml.datatype.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 import org.jbundle.model.main.db.base.*;
-import com.tourapp.model.tour.product.base.db.*;
+import com.tourgeek.model.tour.product.base.db.*;
 
 /**
  *  BaseProductMessageDesc - .

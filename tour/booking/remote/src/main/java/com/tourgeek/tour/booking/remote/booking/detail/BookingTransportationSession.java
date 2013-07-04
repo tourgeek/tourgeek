@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingTransportationSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.remote.booking.detail;
+
+package com.tourgeek.tour.booking.remote.booking.detail;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.remote.*;
 import org.jbundle.thin.base.remote.*;
-import com.tourapp.tour.booking.detail.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
 
 /**
  *  BookingTransportationSession - .

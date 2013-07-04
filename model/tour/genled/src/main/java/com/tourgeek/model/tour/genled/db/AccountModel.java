@@ -1,9 +1,5 @@
-/**
-  * @(#)AccountModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.genled.db;
+
+package com.tourgeek.model.tour.genled.db;
 
 import org.jbundle.model.db.*;
 
@@ -25,13 +21,13 @@ public interface AccountModel extends Rec
     public static final String ACCOUNT_NO_KEY = "AccountNo";
 
     public static final String DESCRIPTION_KEY = "Description";
-    public static final String ACCOUNT_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.AccountScreen";
-    public static final String ACCOUNT_GRID_SCREEN_CLASS = "com.tourapp.tour.genled.screen.misc.AccountGridScreen";
+    public static final String ACCOUNT_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.misc.AccountScreen";
+    public static final String ACCOUNT_GRID_SCREEN_CLASS = "com.tourgeek.tour.genled.screen.misc.AccountGridScreen";
     public static final String CREDIT = "C";
     public static final String DEBIT = "D";
 
     public static final String ACCOUNT_FILE = "Account";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.genled.db.Account";
-    public static final String THICK_CLASS = "com.tourapp.tour.genled.db.Account";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.genled.db.Account";
+    public static final String THICK_CLASS = "com.tourgeek.tour.genled.db.Account";
 
 }

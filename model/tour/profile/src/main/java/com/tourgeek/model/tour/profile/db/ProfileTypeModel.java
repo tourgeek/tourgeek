@@ -1,9 +1,5 @@
-/**
-  * @(#)ProfileTypeModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.profile.db;
+
+package com.tourgeek.model.tour.profile.db;
 
 import org.jbundle.model.db.*;
 
@@ -18,7 +14,7 @@ public interface ProfileTypeModel extends Rec
     public static final String DESCRIPTION_KEY = "Description";
 
     public static final String PROFILE_TYPE_FILE = "ProfileType";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.profile.db.ProfileType";
-    public static final String THICK_CLASS = "com.tourapp.tour.profile.db.ProfileType";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.profile.db.ProfileType";
+    public static final String THICK_CLASS = "com.tourgeek.tour.profile.db.ProfileType";
 
 }

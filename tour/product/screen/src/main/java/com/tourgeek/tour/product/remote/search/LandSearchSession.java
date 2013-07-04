@@ -1,9 +1,5 @@
-/**
-  * @(#)LandSearchSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.remote.search;
+
+package com.tourgeek.tour.product.remote.search;
 
 import java.util.*;
 
@@ -20,19 +16,19 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.land.db.*;
-import com.tourapp.tour.product.remote.*;
+import com.tourgeek.tour.product.land.db.*;
+import com.tourgeek.tour.product.remote.*;
 import org.jbundle.thin.base.remote.*;
-import com.tourapp.tour.base.db.*;
-import com.tourapp.thin.app.booking.entry.search.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.land.event.*;
+import com.tourgeek.tour.base.db.*;
+import com.tourgeek.thin.app.booking.entry.search.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.product.land.event.*;
 import org.jbundle.base.remote.*;
 import org.jbundle.thin.opt.location.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.event.*;
-import com.tourapp.tour.product.land.screen.*;
-import com.tourapp.tour.product.base.screen.*;
+import com.tourgeek.tour.product.base.event.*;
+import com.tourgeek.tour.product.land.screen.*;
+import com.tourgeek.tour.product.base.screen.*;
 
 /**
  *  LandSearchSession - The remote side of the thin land search.

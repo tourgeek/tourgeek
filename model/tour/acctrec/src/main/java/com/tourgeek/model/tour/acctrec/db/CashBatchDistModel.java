@@ -1,11 +1,7 @@
-/**
-  * @(#)CashBatchDistModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.acctrec.db;
 
-import com.tourapp.model.tour.assetdr.db.*;
+package com.tourgeek.model.tour.acctrec.db;
+
+import com.tourgeek.model.tour.assetdr.db.*;
 
 public interface CashBatchDistModel extends BankTrxBatchDistModel
 {
@@ -19,11 +15,11 @@ public interface CashBatchDistModel extends BankTrxBatchDistModel
     public static final String BOOKING_ID = "BookingID";
 
     public static final String CASH_BATCH_DETAIL_ID_KEY = "CashBatchDetailID";
-    public static final String CASH_BATCH_DIST_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.cash.CashBatchDistScreen";
-    public static final String CASH_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourapp.tour.acctrec.screen.cash.CashBatchDistGridScreen";
+    public static final String CASH_BATCH_DIST_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.cash.CashBatchDistScreen";
+    public static final String CASH_BATCH_DIST_GRID_SCREEN_CLASS = "com.tourgeek.tour.acctrec.screen.cash.CashBatchDistGridScreen";
 
     public static final String CASH_BATCH_DIST_FILE = "CashBatchDist";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.acctrec.db.CashBatchDist";
-    public static final String THICK_CLASS = "com.tourapp.tour.acctrec.db.CashBatchDist";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.acctrec.db.CashBatchDist";
+    public static final String THICK_CLASS = "com.tourgeek.tour.acctrec.db.CashBatchDist";
 
 }

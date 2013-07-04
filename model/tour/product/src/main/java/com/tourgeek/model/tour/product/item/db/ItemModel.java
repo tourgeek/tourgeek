@@ -1,11 +1,7 @@
-/**
-  * @(#)ItemModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.item.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.item.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface ItemModel extends ProductModel
 {
@@ -43,11 +39,11 @@ public interface ItemModel extends ProductModel
     //public static final String PP_PRICE_LOCAL = PP_PRICE_LOCAL;
 
     public static final String DESCRIPTION_KEY = "Description";
-    public static final String ITEM_SCREEN_CLASS = "com.tourapp.tour.product.item.screen.ItemScreen";
-    public static final String ITEM_GRID_SCREEN_CLASS = "com.tourapp.tour.product.item.screen.ItemGridScreen";
+    public static final String ITEM_SCREEN_CLASS = "com.tourgeek.tour.product.item.screen.ItemScreen";
+    public static final String ITEM_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.item.screen.ItemGridScreen";
 
     public static final String ITEM_FILE = "Item";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.item.db.Item";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.item.db.Item";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.item.db.Item";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.item.db.Item";
 
 }

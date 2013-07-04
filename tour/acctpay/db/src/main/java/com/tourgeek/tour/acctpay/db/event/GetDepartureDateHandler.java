@@ -1,9 +1,5 @@
-/**
-  * @(#)GetDepartureDateHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.db.event;
+
+package com.tourgeek.tour.acctpay.db.event;
 
 import java.util.*;
 
@@ -20,9 +16,9 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.acctpay.db.*;
-import com.tourapp.tour.base.field.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.tour.acctpay.db.*;
+import com.tourgeek.tour.base.field.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  GetDepartureDateHandler - .

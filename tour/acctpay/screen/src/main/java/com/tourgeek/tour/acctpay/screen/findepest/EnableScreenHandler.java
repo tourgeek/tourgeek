@@ -1,9 +1,5 @@
-/**
-  * @(#)EnableScreenHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.screen.findepest;
+
+package com.tourgeek.tour.acctpay.screen.findepest;
 
 import java.util.*;
 

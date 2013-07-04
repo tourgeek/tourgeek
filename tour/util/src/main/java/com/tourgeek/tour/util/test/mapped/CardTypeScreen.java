@@ -1,9 +1,5 @@
-/**
-  * @(#)CardTypeScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.test.mapped;
+
+package com.tourgeek.tour.util.test.mapped;
 
 import java.util.*;
 
@@ -22,7 +18,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.ota.db.*;
+import com.tourgeek.tour.product.base.ota.db.*;
 
 /**
  *  CardTypeScreen - .

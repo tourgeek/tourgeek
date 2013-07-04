@@ -1,9 +1,5 @@
-/**
-  * @(#)ScanCity.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.script.fixdata;
+
+package com.tourgeek.tour.util.script.fixdata;
 
 import java.util.*;
 
@@ -21,7 +17,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.app.program.script.data.importfix.base.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.base.db.*;
 
 /**
  *  ScanCity - .

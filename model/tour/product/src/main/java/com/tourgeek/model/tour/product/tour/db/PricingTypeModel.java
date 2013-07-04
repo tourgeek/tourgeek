@@ -1,9 +1,5 @@
-/**
-  * @(#)PricingTypeModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.tour.db;
+
+package com.tourgeek.model.tour.product.tour.db;
 
 import org.jbundle.model.db.*;
 
@@ -22,7 +18,7 @@ public interface PricingTypeModel extends Rec
     public static final int COMPONENT_COST_PRICING = 4;
 
     public static final String PRICING_TYPE_FILE = "PricingType";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.tour.db.PricingType";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.tour.db.PricingType";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.tour.db.PricingType";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.tour.db.PricingType";
 
 }

@@ -1,9 +1,5 @@
-/**
-  * @(#)HotelRateAvailRequest.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.hotel.request;
+
+package com.tourgeek.tour.message.hotel.request;
 
 import java.util.*;
 
@@ -21,10 +17,10 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.base.request.data.*;
-import com.tourapp.tour.message.base.request.*;
+import com.tourgeek.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.request.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 /**
  *  HotelRateAvailRequest - Combined rate and availability request.

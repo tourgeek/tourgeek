@@ -1,9 +1,5 @@
-/**
-  * @(#)ItemSearchSession.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.remote.search;
+
+package com.tourgeek.tour.product.remote.search;
 
 import java.util.*;
 
@@ -20,15 +16,15 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.item.db.*;
-import com.tourapp.tour.product.remote.*;
+import com.tourgeek.tour.product.item.db.*;
+import com.tourgeek.tour.product.remote.*;
 import org.jbundle.thin.base.remote.*;
 import org.jbundle.base.remote.*;
-import com.tourapp.tour.product.item.event.*;
-import com.tourapp.tour.product.base.event.*;
+import com.tourgeek.tour.product.item.event.*;
+import com.tourgeek.tour.product.base.event.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.product.item.screen.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.product.item.screen.*;
 
 /**
  *  ItemSearchSession - .

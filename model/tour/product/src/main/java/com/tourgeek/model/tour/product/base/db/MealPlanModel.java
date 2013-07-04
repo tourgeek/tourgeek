@@ -1,11 +1,7 @@
-/**
-  * @(#)MealPlanModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.base.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.base.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface MealPlanModel extends BaseClassModel
 {
@@ -18,11 +14,11 @@ public interface MealPlanModel extends BaseClassModel
     public static final String BREAKFAST = "Breakfast";
     public static final String LUNCH = "Lunch";
     public static final String DINNER = "Dinner";
-    public static final String MEAL_PLAN_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.MealPlanScreen";
-    public static final String MEAL_PLAN_GRID_SCREEN_CLASS = "com.tourapp.tour.product.base.screen.MealPlanGridScreen";
+    public static final String MEAL_PLAN_SCREEN_CLASS = "com.tourgeek.tour.product.base.screen.MealPlanScreen";
+    public static final String MEAL_PLAN_GRID_SCREEN_CLASS = "com.tourgeek.tour.product.base.screen.MealPlanGridScreen";
 
     public static final String MEAL_PLAN_FILE = "MealPlan";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.db.MealPlan";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.base.db.MealPlan";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.base.db.MealPlan";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.base.db.MealPlan";
 
 }

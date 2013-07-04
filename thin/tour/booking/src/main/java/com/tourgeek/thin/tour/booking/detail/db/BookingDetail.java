@@ -1,21 +1,17 @@
-/**
-  * @(#)BookingDetail.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.thin.tour.booking.detail.db;
+
+package com.tourgeek.thin.tour.booking.detail.db;
 
 import java.util.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.product.base.db.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.model.tour.product.base.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 import java.util.*;
 import org.jbundle.thin.base.util.*;
 
 import org.jbundle.thin.base.db.*;
 
-import com.tourapp.thin.tour.booking.detail.db.*;
-import com.tourapp.model.tour.booking.detail.db.*;
+import com.tourgeek.thin.tour.booking.detail.db.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 public class BookingDetail extends BookingSub
     implements BookingDetailModel

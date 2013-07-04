@@ -1,9 +1,5 @@
-/**
-  * @(#)RefundScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctrec.screen.refund;
+
+package com.tourgeek.tour.acctrec.screen.refund;
 
 import java.util.*;
 
@@ -22,12 +18,12 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.acctrec.*;
-import com.tourapp.tour.acctrec.screen.misc.*;
-import com.tourapp.tour.acctrec.db.event.*;
-import com.tourapp.tour.acctrec.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourgeek.tour.booking.entry.acctrec.*;
+import com.tourgeek.tour.acctrec.screen.misc.*;
+import com.tourgeek.tour.acctrec.db.event.*;
+import com.tourgeek.tour.acctrec.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.tour.booking.db.*;
 
 /**
  *  RefundScreen - Enter refunds.

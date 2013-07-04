@@ -1,9 +1,5 @@
-/**
-  * @(#)UpdateTrxSystemHandler.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.genled.screen.trx;
+
+package com.tourgeek.tour.genled.screen.trx;
 
 import java.util.*;
 
@@ -20,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.genled.db.*;
+import com.tourgeek.tour.genled.db.*;
 
 /**
  *  UpdateTrxSystemHandler - Update the trx system cache fields when the system file changes.

@@ -1,9 +1,5 @@
-/**
-  * @(#)CarBookingChangeRequest.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.message.car.request;
+
+package com.tourgeek.tour.message.car.request;
 
 import java.util.*;
 
@@ -21,14 +17,14 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.message.base.request.data.*;
+import com.tourgeek.tour.message.base.request.data.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.booking.detail.db.*;
-import com.tourapp.tour.message.car.response.*;
-import com.tourapp.tour.message.base.request.*;
+import com.tourgeek.model.tour.booking.detail.db.*;
+import com.tourgeek.tour.message.car.response.*;
+import com.tourgeek.tour.message.base.request.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.message.car.request.data.*;
-import com.tourapp.model.tour.product.base.db.*;
+import com.tourgeek.tour.message.car.request.data.*;
+import com.tourgeek.model.tour.product.base.db.*;
 import org.jbundle.model.main.msg.db.*;
 
 /**

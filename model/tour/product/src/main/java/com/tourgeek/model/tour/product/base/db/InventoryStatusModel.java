@@ -1,11 +1,7 @@
-/**
-  * @(#)InventoryStatusModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.base.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.base.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface InventoryStatusModel extends BaseDataStatusModel
 {
@@ -19,7 +15,7 @@ public interface InventoryStatusModel extends BaseDataStatusModel
     public static final String NO_INVENTORY_ERROR_MESSAGE = "Not sufficient inventory";
 
     public static final String INVENTORY_STATUS_FILE = "InventoryStatus";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.base.db.InventoryStatus";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.base.db.InventoryStatus";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.base.db.InventoryStatus";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.base.db.InventoryStatus";
 
 }

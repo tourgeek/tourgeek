@@ -1,11 +1,7 @@
-/**
-  * @(#)BookingLineModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.detail.db;
 
-import com.tourapp.model.tour.booking.detail.db.*;
+package com.tourgeek.model.tour.booking.detail.db;
+
+import com.tourgeek.model.tour.booking.detail.db.*;
 
 public interface BookingLineModel extends BookingSubModel
 {
@@ -37,11 +33,11 @@ public interface BookingLineModel extends BookingSubModel
     public static final String PAX_CATEGORY_ID = "PaxCategoryID";
 
     public static final String BOOKING_DETAIL_ID_KEY = "BookingDetailID";
-    public static final String BOOKING_LINE_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingLineScreen";
-    public static final String BOOKING_LINE_GRID_SCREEN_CLASS = "com.tourapp.tour.booking.entry.acctrec.BookingLineGridScreen";
+    public static final String BOOKING_LINE_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.acctrec.BookingLineScreen";
+    public static final String BOOKING_LINE_GRID_SCREEN_CLASS = "com.tourgeek.tour.booking.entry.acctrec.BookingLineGridScreen";
 
     public static final String BOOKING_LINE_FILE = "BookingLine";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.detail.db.BookingLine";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.detail.db.BookingLine";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.detail.db.BookingLine";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.detail.db.BookingLine";
 
 }

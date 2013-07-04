@@ -1,9 +1,5 @@
-/**
-  * @(#)MergeCodeTableSearch.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.util.script.merge;
+
+package com.tourgeek.tour.util.script.merge;
 
 import java.util.*;
 
@@ -20,8 +16,8 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.base.search.db.*;
-import com.tourapp.tour.product.base.ota.db.*;
+import com.tourgeek.tour.product.base.search.db.*;
+import com.tourgeek.tour.product.base.ota.db.*;
 
 /**
  *  MergeCodeTableSearch - Merge the code table with the product search category.

@@ -1,9 +1,5 @@
-/**
-  * @(#)TourSub.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.detail.db;
+
+package com.tourgeek.tour.product.tour.detail.db;
 
 import java.util.*;
 
@@ -20,14 +16,14 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.product.tour.db.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.thin.base.util.message.*;
 import org.jbundle.base.message.record.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.model.message.*;
-import com.tourapp.model.tour.product.tour.detail.db.*;
+import com.tourgeek.model.tour.product.tour.detail.db.*;
 
 /**
  *  TourSub - Tour Sub File.
@@ -37,7 +33,7 @@ public class TourSub extends VirtualRecord
 {
     private static final long serialVersionUID = 1L;
 
-    public static final String MODIFY_TOUR_SUB_SCREEN_FIELD_CLASS = "com.tourapp.tour.product.tour.detail.screen.ModifyTourSubScreenField";
+    public static final String MODIFY_TOUR_SUB_SCREEN_FIELD_CLASS = "com.tourgeek.tour.product.tour.detail.screen.ModifyTourSubScreenField";
     /**
      * Default constructor.
      */

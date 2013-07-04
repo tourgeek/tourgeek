@@ -1,9 +1,5 @@
-/**
-  * @(#)ModifyTourSubField.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.product.tour.detail.db;
+
+package com.tourgeek.tour.product.tour.detail.db;
 
 import java.util.*;
 
@@ -20,11 +16,11 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
+import com.tourgeek.tour.product.tour.db.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.thin.base.util.message.*;
 import org.jbundle.base.message.record.*;
-import com.tourapp.tour.product.base.db.*;
+import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.model.message.*;
 

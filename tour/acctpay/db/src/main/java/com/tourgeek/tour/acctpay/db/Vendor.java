@@ -1,9 +1,5 @@
-/**
-  * @(#)Vendor.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.acctpay.db;
+
+package com.tourgeek.tour.acctpay.db;
 
 import java.util.*;
 
@@ -23,10 +19,10 @@ import org.jbundle.model.screen.*;
 import org.jbundle.main.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.base.db.*;
+import com.tourgeek.tour.base.db.*;
 import org.jbundle.main.msg.db.*;
-import com.tourapp.tour.genled.db.*;
-import com.tourapp.model.tour.acctpay.db.*;
+import com.tourgeek.tour.genled.db.*;
+import com.tourgeek.model.tour.acctpay.db.*;
 
 /**
  *  Vendor - Vendors.

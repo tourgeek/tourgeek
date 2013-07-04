@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingItinerary.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.itin;
+
+package com.tourgeek.tour.booking.entry.itin;
 
 import java.util.*;
 
@@ -22,16 +18,16 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.booking.entry.base.*;
-import com.tourapp.tour.booking.db.*;
+import com.tourgeek.tour.booking.entry.base.*;
+import com.tourgeek.tour.booking.db.*;
 import java.net.*;
 import org.jbundle.thin.base.screen.*;
 import org.jbundle.main.msg.db.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.base.message.core.trx.internal.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.tour.booking.detail.db.*;
-import com.tourapp.tour.profile.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import com.tourgeek.tour.profile.db.*;
 import org.jbundle.base.message.trx.processor.*;
 import javax.swing.*;
 
@@ -40,7 +36,7 @@ import javax.swing.*;
  */
 public class BookingItinerary extends BookingSubScreen
 {
-    public static final String ITINERARY_REPORT_SCREEN = "com.tourapp.tour.booking.report.itinerary.ItineraryReportScreen";
+    public static final String ITINERARY_REPORT_SCREEN = "com.tourgeek.tour.booking.report.itinerary.ItineraryReportScreen";
     protected ScreenField m_sHtmlView = null;
     protected Date m_timeLastUpdateDisplayed = null;
     public static final String DEFAULT_TEXT = "<html><body><center><br/>"

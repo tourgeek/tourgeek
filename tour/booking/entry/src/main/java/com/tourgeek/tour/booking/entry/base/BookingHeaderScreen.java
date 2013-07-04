@@ -1,9 +1,5 @@
-/**
-  * @(#)BookingHeaderScreen.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.tour.booking.entry.base;
+
+package com.tourgeek.tour.booking.entry.base;
 
 import java.util.*;
 
@@ -22,26 +18,26 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.tour.product.tour.db.*;
-import com.tourapp.tour.booking.db.*;
-import com.tourapp.tour.product.base.db.*;
-import com.tourapp.tour.profile.db.*;
-import com.tourapp.tour.booking.db.event.*;
-import com.tourapp.tour.booking.entry.acctrec.*;
-import com.tourapp.tour.booking.entry.pax.*;
-import com.tourapp.tour.booking.entry.tour.*;
-import com.tourapp.tour.booking.entry.detail.hotel.*;
-import com.tourapp.tour.booking.entry.detail.land.*;
-import com.tourapp.tour.booking.entry.acctpay.*;
-import com.tourapp.tour.booking.entry.calendar.*;
-import com.tourapp.tour.booking.entry.detail.detail.*;
-import com.tourapp.tour.booking.entry.itin.*;
-import com.tourapp.tour.booking.entry.detail.car.*;
-import com.tourapp.tour.booking.entry.detail.trans.*;
-import com.tourapp.tour.booking.entry.detail.cruise.*;
-import com.tourapp.tour.booking.entry.detail.air.*;
-import com.tourapp.tour.booking.entry.detail.item.*;
-import com.tourapp.tour.booking.entry.detail.tour.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.product.base.db.*;
+import com.tourgeek.tour.profile.db.*;
+import com.tourgeek.tour.booking.db.event.*;
+import com.tourgeek.tour.booking.entry.acctrec.*;
+import com.tourgeek.tour.booking.entry.pax.*;
+import com.tourgeek.tour.booking.entry.tour.*;
+import com.tourgeek.tour.booking.entry.detail.hotel.*;
+import com.tourgeek.tour.booking.entry.detail.land.*;
+import com.tourgeek.tour.booking.entry.acctpay.*;
+import com.tourgeek.tour.booking.entry.calendar.*;
+import com.tourgeek.tour.booking.entry.detail.detail.*;
+import com.tourgeek.tour.booking.entry.itin.*;
+import com.tourgeek.tour.booking.entry.detail.car.*;
+import com.tourgeek.tour.booking.entry.detail.trans.*;
+import com.tourgeek.tour.booking.entry.detail.cruise.*;
+import com.tourgeek.tour.booking.entry.detail.air.*;
+import com.tourgeek.tour.booking.entry.detail.item.*;
+import com.tourgeek.tour.booking.entry.detail.tour.*;
 
 /**
  *  BookingHeaderScreen - Booking entry.

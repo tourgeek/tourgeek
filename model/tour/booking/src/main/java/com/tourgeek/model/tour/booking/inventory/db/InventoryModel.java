@@ -1,12 +1,8 @@
-/**
-  * @(#)InventoryModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.booking.inventory.db;
+
+package com.tourgeek.model.tour.booking.inventory.db;
 
 import java.util.*;
-import com.tourapp.model.tour.product.base.db.*;
+import com.tourgeek.model.tour.product.base.db.*;
 import org.jbundle.model.db.*;
 
 public interface InventoryModel extends Rec
@@ -34,8 +30,8 @@ public interface InventoryModel extends Rec
     public static final String NO_RATE = "0";
 
     public static final String INVENTORY_FILE = "Inventory";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.booking.inventory.db.Inventory";
-    public static final String THICK_CLASS = "com.tourapp.tour.booking.inventory.db.Inventory";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.booking.inventory.db.Inventory";
+    public static final String THICK_CLASS = "com.tourgeek.tour.booking.inventory.db.Inventory";
     /**
      * GetAvailability Method.
      */

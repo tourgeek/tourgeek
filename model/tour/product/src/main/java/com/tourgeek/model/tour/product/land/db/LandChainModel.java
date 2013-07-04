@@ -1,11 +1,7 @@
-/**
-  * @(#)LandChainModel.
-  * Copyright © 2012 tourapp.com. All rights reserved.
-  * GPL3 Open Source Software License.
-  */
-package com.tourapp.model.tour.product.land.db;
 
-import com.tourapp.model.tour.product.base.db.*;
+package com.tourgeek.model.tour.product.land.db;
+
+import com.tourgeek.model.tour.product.base.db.*;
 
 public interface LandChainModel extends ProductChainModel
 {
@@ -17,7 +13,7 @@ public interface LandChainModel extends ProductChainModel
     //public static final String CODE = CODE;
 
     public static final String LAND_CHAIN_FILE = "LandChain";
-    public static final String THIN_CLASS = "com.tourapp.thin.tour.product.land.db.LandChain";
-    public static final String THICK_CLASS = "com.tourapp.tour.product.land.db.LandChain";
+    public static final String THIN_CLASS = "com.tourgeek.thin.tour.product.land.db.LandChain";
+    public static final String THICK_CLASS = "com.tourgeek.tour.product.land.db.LandChain";
 
 }
