@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.tourapp.config</groupId>
-		<artifactId>tourapp-config-web-reactor</artifactId>
+		<groupId>com.tourgeek.config</groupId>
+		<artifactId>tourgeek-config-web-reactor</artifactId>
 		<version>0.8.2-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>com.tourapp.config.web.other</artifactId>
-	<name>tourapp-config-web-other - deploy webapps</name>
+	<artifactId>com.tourgeek.config.web.other</artifactId>
+	<name>tourgeek-config-web-other - deploy webapps</name>
 
 	<packaging>bundle</packaging>
 

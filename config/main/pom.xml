@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
  
   <parent>
-    <groupId>com.tourapp.config</groupId>
-    <artifactId>tourapp-config-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
+    <artifactId>tourgeek-config-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.config.main</artifactId>
+  <artifactId>com.tourgeek.config.main</artifactId>
   <packaging>bundle</packaging>
-  <name>tourapp-config-app - Run standalone tourapp</name>
+  <name>tourgeek-config-app - Run standalone tourgeek</name>
   
 	<build>
 		<plugins>
@@ -23,30 +23,30 @@
 					<instructions>
 						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Export-Package>com.tourapp;version=${project.version}</Export-Package>
+						<Export-Package>com.tourgeek;version=${project.version}</Export-Package>
 						<Import-Package>
    							*;resolution:=optional,
-                            com.tourapp.tour.acctpay.screen.vendor;resolution:=optional,
-                            com.tourapp.tour.acctpay.air.ticket;resolution:=optional,
-                            com.tourapp.tour.acctpay.report;resolution:=optional,
-                            com.tourapp.tour.acctrec.report.cashplan;resolution:=optional,
-                            com.tourapp.tour.acctrec.screen.misc;resolution:=optional,
-                            com.tourapp.tour.assetdr.screen;resolution:=optional,
-                            com.tourapp.tour.assetdr.report;resolution:=optional,
-                            com.tourapp.tour.assetdr.process;resolution:=optional,
-                            com.tourapp.tour.booking.report.voucher;resolution:=optional,
-                            com.tourapp.tour.booking.entry.base;resolution:=optional,
-                            <!-- com.tourapp.tour.booking.remote.lookup;resolution:=optional, -->
-                            com.tourapp.tour.genled.screen.misc;resolution:=optional,
-                            com.tourapp.tour.genled.report;resolution:=optional,
-                            com.tourapp.tour.payroll.screen.misc;resolution:=optional,
-                            com.tourapp.tour.payroll.report.payroll;resolution:=optional,
-                            com.tourapp.tour.product.base.screen;resolution:=optional,
-                            com.tourapp.tour.profile.screen;resolution:=optional,
-                            com.tourapp.tour.request.report;resolution:=optional,
-                            <!-- com.tourapp.tour.request.request.thread;resolution:=optional, -->
+                            com.tourgeek.tour.acctpay.screen.vendor;resolution:=optional,
+                            com.tourgeek.tour.acctpay.air.ticket;resolution:=optional,
+                            com.tourgeek.tour.acctpay.report;resolution:=optional,
+                            com.tourgeek.tour.acctrec.report.cashplan;resolution:=optional,
+                            com.tourgeek.tour.acctrec.screen.misc;resolution:=optional,
+                            com.tourgeek.tour.assetdr.screen;resolution:=optional,
+                            com.tourgeek.tour.assetdr.report;resolution:=optional,
+                            com.tourgeek.tour.assetdr.process;resolution:=optional,
+                            com.tourgeek.tour.booking.report.voucher;resolution:=optional,
+                            com.tourgeek.tour.booking.entry.base;resolution:=optional,
+                            <!-- com.tourgeek.tour.booking.remote.lookup;resolution:=optional, -->
+                            com.tourgeek.tour.genled.screen.misc;resolution:=optional,
+                            com.tourgeek.tour.genled.report;resolution:=optional,
+                            com.tourgeek.tour.payroll.screen.misc;resolution:=optional,
+                            com.tourgeek.tour.payroll.report.payroll;resolution:=optional,
+                            com.tourgeek.tour.product.base.screen;resolution:=optional,
+                            com.tourgeek.tour.profile.screen;resolution:=optional,
+                            com.tourgeek.tour.request.report;resolution:=optional,
+                            <!-- com.tourgeek.tour.request.request.thread;resolution:=optional, -->
 						</Import-Package>
-						<!-- Bundle-Activator>com.tourapp.Main</Bundle-Activator -->
+						<!-- Bundle-Activator>com.tourgeek.Main</Bundle-Activator -->
 					</instructions>
 				</configuration>
 			</plugin>
@@ -89,8 +89,8 @@
               <argument>archiveDir=/home/don/workspace/workspace/jbundle/jbundle/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
               /home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
 	      /home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
-              /home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
-              /home/don/workspace/workspace/tourapp/res/data/data/src/main/webapp/com/tourapp/res/data/initial_data/current_initial_data/</argument>
+              /home/don/workspace/workspace/tourgeek/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
+              /home/don/workspace/workspace/tourgeek/res/data/data/src/main/webapp/com/tourgeek/res/data/initial_data/current_initial_data/</argument>
               <!-- argument>connectionType=proxy</argument>
         <argument>remotehost=${jbundle.server}</argument>
         <argument>codebase=${jbundle.codebase}</argument -->
@@ -114,9 +114,9 @@
   
   <dependencies>
     <dependency>
-        <groupId>com.tourapp.config</groupId>
-        <artifactId>tourapp-config-dep-all</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.config</groupId>
+        <artifactId>tourgeek-config-dep-all</artifactId>
+        <version>${tourgeek-version-range}</version>
         <type>pom</type>
     </dependency>
   </dependencies>

@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
  
   <parent>
-    <groupId>com.tourapp.config</groupId>
-    <artifactId>tourapp-config-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
+    <artifactId>tourgeek-config-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-config-server</artifactId>
+  <artifactId>tourgeek-config-server</artifactId>
   <packaging>pom</packaging>
-  <name>tourapp-config-server - Run the tourapp server</name>
+  <name>tourgeek-config-server - Run the tourgeek server</name>
   
   <build>
     <plugins>      
@@ -57,9 +57,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.config</groupId>
-      <artifactId>tourapp-config-dep-all</artifactId> 
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.config</groupId>
+      <artifactId>tourgeek-config-dep-all</artifactId> 
+      <version>${tourgeek-version-range}</version>
       <type>pom</type>
     </dependency>
     <!-- dependency>

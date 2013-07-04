@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-message-res-reactor</artifactId>
-    <groupId>com.tourapp.res</groupId>
+    <artifactId>tourgeek-message-res-reactor</artifactId>
+    <groupId>com.tourgeek.res</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.res.tour.message</artifactId>
+  <artifactId>com.tourgeek.res.tour.message</artifactId>
   <packaging>bundle</packaging>
-  <name>com.tourapp.res.tour.message - message resources</name>
+  <name>com.tourgeek.res.tour.message - message resources</name>
 
 </project>

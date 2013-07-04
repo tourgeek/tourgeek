@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.tourapp.res</groupId>
-    <artifactId>tourapp-res-data-reactor</artifactId>
+    <groupId>com.tourgeek.res</groupId>
+    <artifactId>tourgeek-res-data-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.res.data.site_data</artifactId>
-  <name>tourapp-res-data-site - Tourapp site data</name>
+  <artifactId>com.tourgeek.res.data.site_data</artifactId>
+  <name>tourgeek-res-data-site - Tourgeek site data</name>
 
   <packaging>bundle</packaging>
 
@@ -20,11 +20,11 @@
         <directory>src/main/resources</directory>
         <filtering>false</filtering>
         <includes>
-          <include>com/tourapp/res/data/site_data/**</include>
+          <include>com/tourgeek/res/data/site_data/**</include>
         </includes>
         <excludes>
-          <exclude>com/tourapp/res/data/test_data/raw_test_data/**</exclude>
-          <exclude>com/tourapp/res/data/test_data/scratch_test_data/**</exclude>
+          <exclude>com/tourgeek/res/data/test_data/raw_test_data/**</exclude>
+          <exclude>com/tourgeek/res/data/test_data/scratch_test_data/**</exclude>
         </excludes>
       </resource>
     </resources>

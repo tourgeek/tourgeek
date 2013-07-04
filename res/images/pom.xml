@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.tourapp.res</groupId>
-    <artifactId>tourapp-res-reactor</artifactId>
+    <groupId>com.tourgeek.res</groupId>
+    <artifactId>tourgeek-res-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.res.images</artifactId>
-  <name>tourapp-res-images - Tourapp images</name>
+  <artifactId>com.tourgeek.res.images</artifactId>
+  <name>tourgeek-res-images - Tourgeek images</name>
 
   <packaging>bundle</packaging>
 

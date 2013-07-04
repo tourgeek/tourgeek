@@ -3,35 +3,35 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-thin-app-reactor</artifactId>
-    <groupId>com.tourapp.thin.app</groupId>
+    <artifactId>tourgeek-thin-app-reactor</artifactId>
+    <groupId>com.tourgeek.thin.app</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.thin.app.booking</artifactId>
+  <artifactId>com.tourgeek.thin.app.booking</artifactId>
   <packaging>bundle</packaging>
-  <name>tourapp-thin-app-booking - Tour thin booking code</name>
+  <name>tourgeek-thin-app-booking - Tour thin booking code</name>
 
   <dependencies>
   	<dependency>
-	    <groupId>com.tourapp.thin</groupId>
-	    <artifactId>com.tourapp.thin.tour.product</artifactId>
-	    <version>${tourapp-version-range}</version>
+	    <groupId>com.tourgeek.thin</groupId>
+	    <artifactId>com.tourgeek.thin.tour.product</artifactId>
+	    <version>${tourgeek-version-range}</version>
   	</dependency>
   	<dependency>
-	    <groupId>com.tourapp.thin</groupId>
-	    <artifactId>com.tourapp.thin.tour.booking</artifactId>
-	    <version>${tourapp-version-range}</version>
+	    <groupId>com.tourgeek.thin</groupId>
+	    <artifactId>com.tourgeek.thin.tour.booking</artifactId>
+	    <version>${tourgeek-version-range}</version>
   	</dependency>
   	<dependency>
-	    <groupId>com.tourapp.thin</groupId>
-	    <artifactId>com.tourapp.thin.tour.request</artifactId>
-	    <version>${tourapp-version-range}</version>
+	    <groupId>com.tourgeek.thin</groupId>
+	    <artifactId>com.tourgeek.thin.tour.request</artifactId>
+	    <version>${tourgeek-version-range}</version>
   	</dependency>
   	<dependency>
-	    <groupId>com.tourapp.thin</groupId>
-	    <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
-	    <version>${tourapp-version-range}</version>
+	    <groupId>com.tourgeek.thin</groupId>
+	    <artifactId>com.tourgeek.thin.tour.assetdr</artifactId>
+	    <version>${tourgeek-version-range}</version>
   	</dependency>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>

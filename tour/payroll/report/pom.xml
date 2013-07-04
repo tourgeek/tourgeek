@@ -4,25 +4,25 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-payroll-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-payroll-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.payroll.report</artifactId>
-  <name>tourapp-tour-payroll-report - Payroll reports</name>
+  <artifactId>com.tourgeek.tour.payroll.report</artifactId>
+  <name>tourgeek-tour-payroll-report - Payroll reports</name>
   <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.tour.payroll.db</artifactId>
+      <groupId>com.tourgeek.tour</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.tour.payroll.db</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.payroll</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.payroll</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
@@ -32,25 +32,25 @@
     </dependency>
 
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.base</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.base</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.genled.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.genled.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.assetdr.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.payroll</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.tour.payroll</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

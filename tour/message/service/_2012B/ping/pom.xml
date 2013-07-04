@@ -3,15 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>tourapp-tour-message-service-2012B-reactor</artifactId>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>tourgeek-tour-message-service-2012B-reactor</artifactId>
       <version>0.8.2-SNAPSHOT</version>
     </parent>
 
-    <artifactId>com.tourapp.tour.message.service._2012B.ping</artifactId>
+    <artifactId>com.tourgeek.tour.message.service._2012B.ping</artifactId>
     
     <packaging>bundle</packaging>
-    <name>tourapp-tour-message-service-2012B-ping web service</name>
+    <name>tourgeek-tour-message-service-2012B-ping web service</name>
     
     <build>
         <plugins>
@@ -28,7 +28,7 @@
 	                        *;resolution:=optional,
                         </Import-Package>
                         <Require-Bundle>org.apache.cxf.bundle</Require-Bundle>
-                        <Bundle-Activator>com.tourapp.tour.message.service._2012B.ping.PingServiceActivator</Bundle-Activator>
+                        <Bundle-Activator>com.tourgeek.tour.message.service._2012B.ping.PingServiceActivator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>

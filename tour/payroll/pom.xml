@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-        <groupId>com.tourapp.tour</groupId>
-        <artifactId>tourapp-tour-reactor</artifactId>
+        <groupId>com.tourgeek.tour</groupId>
+        <artifactId>tourgeek-tour-reactor</artifactId>
   	<version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.tourapp.tour</groupId>
-  <artifactId>tourapp-tour-payroll-reactor</artifactId>
-  <name>tourapp-tour-payroll-reactor - Tour payroll parent</name>
+  <groupId>com.tourgeek.tour</groupId>
+  <artifactId>tourgeek-tour-payroll-reactor</artifactId>
+  <name>tourgeek-tour-payroll-reactor - Tour payroll parent</name>
   <packaging>pom</packaging>
 
   <modules>

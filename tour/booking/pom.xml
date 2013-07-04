@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-        <groupId>com.tourapp.tour</groupId>
-        <artifactId>tourapp-tour-reactor</artifactId>
+        <groupId>com.tourgeek.tour</groupId>
+        <artifactId>tourgeek-tour-reactor</artifactId>
   	<version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.tourapp.tour</groupId>
-  <artifactId>tourapp-tour-booking-reactor</artifactId>
-  <name>tourapp-tour-product-booking - Tour booking parent</name>
+  <groupId>com.tourgeek.tour</groupId>
+  <artifactId>tourgeek-tour-booking-reactor</artifactId>
+  <name>tourgeek-tour-product-booking - Tour booking parent</name>
   <packaging>pom</packaging>
 
   <modules>

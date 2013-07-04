@@ -4,21 +4,21 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-message-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-message-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.message.jibx</artifactId>
-  <name>tourapp-tour-message-jibx</name>
+  <artifactId>com.tourgeek.tour.message.jibx</artifactId>
+  <name>tourgeek-tour-message-jibx</name>
   <description>JiBX Messaging</description>
   <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.tour.message.process</artifactId>
+      <groupId>com.tourgeek.tour</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.tour.message.process</artifactId>
     </dependency>
     <dependency>
 	  <groupId>org.jbundle.config.dep</groupId>
@@ -43,20 +43,20 @@
 	</dependency>
 
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.message</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.message</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.booking.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.booking.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.product.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.product.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 </project>

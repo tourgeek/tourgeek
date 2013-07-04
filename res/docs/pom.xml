@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-res-reactor</artifactId>
-    <groupId>com.tourapp.res</groupId>
+    <artifactId>tourgeek-res-reactor</artifactId>
+    <groupId>com.tourgeek.res</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
@@ -12,8 +12,8 @@
     <jbundle-package>*</jbundle-package>	<!-- HACK FIX Bundle packages to export -->
   </properties>
 
-  <artifactId>com.tourapp.res.docs</artifactId>
-  <name>tourapp-res-docs</name>
+  <artifactId>com.tourgeek.res.docs</artifactId>
+  <name>tourgeek-res-docs</name>
   <packaging>bundle</packaging>
 
 </project>

@@ -4,54 +4,54 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-booking-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-booking-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.booking.entry</artifactId>
-  <name>tourapp-tour-booking-entry - Booking</name>
+  <artifactId>com.tourgeek.tour.booking.entry</artifactId>
+  <name>tourgeek-tour-booking-entry - Booking</name>
   <packaging>bundle</packaging>
   
   <properties>
     <jbundle-package-export>
-    com.tourapp.tour.booking.entry.*;version=${project.version},
-    com.tourapp.tour.booking.lookup.*;version=${project.version},
+    com.tourgeek.tour.booking.entry.*;version=${project.version},
+    com.tourgeek.tour.booking.lookup.*;version=${project.version},
     </jbundle-package-export>
     <jbundle-package-import>
       *;resolution:=optional,
-      com.tourapp.res.tour.booking;resolution:=optional,
+      com.tourgeek.res.tour.booking;resolution:=optional,
       org.jbundle.res.images.tour.buttons;resolution:=optional,
-      com.tourapp.tour.message.base.request.in;resolution:=optional,
+      com.tourgeek.tour.message.base.request.in;resolution:=optional,
     </jbundle-package-import>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <artifactId>com.tourapp.model.tour.booking</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.model</groupId>
+      <artifactId>com.tourgeek.model.tour.booking</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.booking.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.booking.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.tour.acctpay.db</artifactId>
+      <groupId>com.tourgeek.tour</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
     </dependency>
     
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.booking</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.tour.booking</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.images</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.images</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     
     <dependency>

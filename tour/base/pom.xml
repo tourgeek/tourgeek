@@ -4,37 +4,37 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.base</artifactId>
-  <name>tourapp-tour-base - Common</name>
+  <artifactId>com.tourgeek.tour.base</artifactId>
+  <name>tourgeek-tour-base - Common</name>
   <packaging>bundle</packaging>
 
   <properties>
     <jbundle-package-import>
       *;resolution:=optional,
-      com.tourapp.res.tour.base;resolution:=optional,
+      com.tourgeek.res.tour.base;resolution:=optional,
     </jbundle-package-import>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.base</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.base</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.product</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.product</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.booking</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.booking</artifactId>
     </dependency>
     <dependency>
 	  <groupId>org.jbundle.config.dep</groupId>
@@ -50,9 +50,9 @@
     </dependency>
     
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.base</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.tour.base</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

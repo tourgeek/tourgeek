@@ -4,15 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-  	<artifactId>tourapp-project-reactor</artifactId>
-  	<groupId>com.tourapp.config</groupId>
+  	<artifactId>tourgeek-project-reactor</artifactId>
+  	<groupId>com.tourgeek.config</groupId>
   	<version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.tourapp.tour</groupId>
-  <artifactId>tourapp-tour-reactor</artifactId>
-  <name>tourapp-tour-reactor - Tour application parent</name>
-  <url>http://www.tourapp.com</url>
+  <groupId>com.tourgeek.tour</groupId>
+  <artifactId>tourgeek-tour-reactor</artifactId>
+  <name>tourgeek-tour-reactor - Tour application parent</name>
+  <url>http://www.tourgeek.com</url>
   <packaging>pom</packaging>
 
   <modules>

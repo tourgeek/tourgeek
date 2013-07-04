@@ -4,25 +4,25 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-genled-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-genled-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.genled.finstmt</artifactId>
-  <name>tourapp-tour-genled-finstmt - General ledger finstmt</name>
+  <artifactId>com.tourgeek.tour.genled.finstmt</artifactId>
+  <name>tourgeek-tour-genled-finstmt - General ledger finstmt</name>
   <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.genled.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.genled.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.genled</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.genled</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
@@ -32,9 +32,9 @@
     </dependency>
     
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.genled</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.tour.genled</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-config-reactor</artifactId>
-    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourgeek-config-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
-  <artifactId>tourapp-config-web-reactor</artifactId>
-  <name>tourapp-config-web-reactor - Web projects parent</name>
+  <artifactId>tourgeek-config-web-reactor</artifactId>
+  <name>tourgeek-config-web-reactor - Web projects parent</name>
   <packaging>pom</packaging>
 
   <modules>

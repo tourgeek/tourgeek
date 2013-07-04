@@ -4,48 +4,48 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.tourapp.tour</groupId>
-    <artifactId>tourapp-tour-assetdr-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
+    <artifactId>tourgeek-tour-assetdr-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.assetdr.report</artifactId>
-  <name>tourapp-tour-assetdr-report - Asset debt reports</name>
+  <artifactId>com.tourgeek.tour.assetdr.report</artifactId>
+  <name>tourgeek-tour-assetdr-report - Asset debt reports</name>
   <packaging>bundle</packaging>
 
   <properties>
     <jbundle-package-import>
       *;resolution:=optional,
-      com.tourapp.res.tour.assetdr;resolution:=optional,
+      com.tourgeek.res.tour.assetdr;resolution:=optional,
     </jbundle-package-import>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.assetdr.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.assetdr</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.assetdr</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.genled.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.genled.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.base</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.base</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.assetdr</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.tour.assetdr</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

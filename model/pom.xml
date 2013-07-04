@@ -3,15 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.tourapp.config</groupId>
-    <artifactId>tourapp-project-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
+    <artifactId>tourgeek-project-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.tourapp.model</groupId>
-  <artifactId>tourapp-model-reactor</artifactId>
+  <groupId>com.tourgeek.model</groupId>
+  <artifactId>tourgeek-model-reactor</artifactId>
   <packaging>pom</packaging>
-  <name>tourapp-mode-reactor - Model parent</name>
+  <name>tourgeek-mode-reactor - Model parent</name>
 
   <modules>
     <module>tour</module>

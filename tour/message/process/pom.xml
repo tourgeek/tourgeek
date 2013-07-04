@@ -4,21 +4,21 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-message-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-message-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.message.process</artifactId>
-  <name>tourapp-tour-message-process</name>
+  <artifactId>com.tourgeek.tour.message.process</artifactId>
+  <name>tourgeek-tour-message-process</name>
   <description>Message processes</description>
   <packaging>bundle</packaging>
 
   <properties>
     <jbundle-package-export>
-    com.tourapp.tour.message.*.in;version=${project.version},
-    com.tourapp.tour.message.*.out;version=${project.version},
-    com.tourapp.tour.message.*.screen;version=${project.version},
+    com.tourgeek.tour.message.*.in;version=${project.version},
+    com.tourgeek.tour.message.*.out;version=${project.version},
+    com.tourgeek.tour.message.*.screen;version=${project.version},
     </jbundle-package-export>
   </properties>
 
@@ -37,35 +37,35 @@
     </dependency>
 
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.message</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.message</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.acctpay.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.booking.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.booking.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.booking.remote</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.booking.remote</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.product.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.product.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.product.screen</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.product.screen</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 </project>

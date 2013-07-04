@@ -2,14 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-model-tour-reactor</artifactId>
-    <groupId>com.tourapp.model</groupId>
+    <artifactId>tourgeek-model-tour-reactor</artifactId>
+    <groupId>com.tourgeek.model</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.model.tour.base</artifactId>
+  <artifactId>com.tourgeek.model.tour.base</artifactId>
   <packaging>bundle</packaging>
-  <name>tourapp-model-tour-base - Base resources</name>
+  <name>tourgeek-model-tour-base - Base resources</name>
 
   <dependencies>
     <dependency>

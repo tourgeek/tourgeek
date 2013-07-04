@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.tourapp.config</groupId>
-    <artifactId>tourapp-config-web-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
+    <artifactId>tourgeek-config-web-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.config.web.httpweb</artifactId>
+  <artifactId>com.tourgeek.config.web.httpweb</artifactId>
 
-	<name>tourapp-config-web-httpweb - Hybrid osgi webapp</name>
+	<name>tourgeek-config-web-httpweb - Hybrid osgi webapp</name>
 	<description>web osgi httpweb bundle</description>
 
 	<packaging>bundle</packaging>
@@ -104,8 +104,8 @@
                             </outputDirectory>
                         </artifactItem>
    						<artifactItem>
-							<groupId>com.tourapp.res</groupId>
-							<artifactId>com.tourapp.res.images</artifactId>
+							<groupId>com.tourgeek.res</groupId>
+							<artifactId>com.tourgeek.res.images</artifactId>
 							<version>${project.version}</version>
 			                <classifier>root</classifier>
 							<type>jar</type>
@@ -131,8 +131,8 @@
 							<outputDirectory>${project.build.directory}/sha</outputDirectory>
 						</artifactItem>
 						<!-- artifactItem>
-							<groupId>com.tourapp.config</groupId>
-							<artifactId>tourapp-config-web-jnlp</artifactId>
+							<groupId>com.tourgeek.config</groupId>
+							<artifactId>tourgeek-config-web-jnlp</artifactId>
 							<version>${project.version}</version>
 							<classifier>bin</classifier>
 							<type>zip</type>
@@ -188,9 +188,9 @@
 
 	<dependencies>	    
 		<dependency>
-		    <groupId>com.tourapp.config</groupId>
-		    <version>${tourapp-version-range}</version>
-			<artifactId>tourapp-config-dep-all</artifactId>
+		    <groupId>com.tourgeek.config</groupId>
+		    <version>${tourgeek-version-range}</version>
+			<artifactId>tourgeek-config-dep-all</artifactId>
 			<type>pom</type>
 			<scope>provided</scope>	<!-- Hey this is OSGi -->
 		</dependency>

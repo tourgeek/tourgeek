@@ -2,20 +2,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-model-tour-reactor</artifactId>
-    <groupId>com.tourapp.model</groupId>
+    <artifactId>tourgeek-model-tour-reactor</artifactId>
+    <groupId>com.tourgeek.model</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.model.tour.profile</artifactId>
+  <artifactId>com.tourgeek.model.tour.profile</artifactId>
   <packaging>bundle</packaging>
-  <name>tourapp-model-tour-profile - Profile model code</name>
+  <name>tourgeek-model-tour-profile - Profile model code</name>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.base</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.base</artifactId>
     </dependency>
   </dependencies>
 

@@ -2,20 +2,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-model-tour-reactor</artifactId>
-    <groupId>com.tourapp.model</groupId>
+    <artifactId>tourgeek-model-tour-reactor</artifactId>
+    <groupId>com.tourgeek.model</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.model.tour.util</artifactId>
+  <artifactId>com.tourgeek.model.tour.util</artifactId>
   <packaging>bundle</packaging>
-  <name>tourapp-model-tour-util - Utility model code</name>
+  <name>tourgeek-model-tour-util - Utility model code</name>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <artifactId>com.tourapp.model.tour.product</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.model</groupId>
+      <artifactId>com.tourgeek.model.tour.product</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

@@ -4,72 +4,72 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-config-dep-reactor</artifactId>
-    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourgeek-config-dep-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-config-dep-thin</artifactId>
-  <name>tourapp-config-dep-thin - Thin dependencies</name>
+  <artifactId>tourgeek-config-dep-thin</artifactId>
+  <name>tourgeek-config-dep-thin - Thin dependencies</name>
   <packaging>pom</packaging>
 
   <dependencies>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.acctpay</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.acctpay</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.acctrec</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.acctrec</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.thin.app</groupId>
-      <artifactId>com.tourapp.thin.app.booking</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.thin.app</groupId>
+      <artifactId>com.tourgeek.thin.app.booking</artifactId>
+      <version>${tourgeek-version-range}</version>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.thin.app</groupId>
-      <artifactId>com.tourapp.thin.app.request</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.thin.app</groupId>
+      <artifactId>com.tourgeek.thin.app.request</artifactId>
+      <version>${tourgeek-version-range}</version>
       <type>pom</type>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.assetdr</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.assetdr</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.booking</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.booking</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.genled</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.genled</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.payroll</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.payroll</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.product</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.product</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.profile</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.profile</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.thin</groupId>
-        <artifactId>com.tourapp.thin.tour.request</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.thin</groupId>
+        <artifactId>com.tourgeek.thin.tour.request</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
     

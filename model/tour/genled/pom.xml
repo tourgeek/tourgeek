@@ -2,20 +2,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-model-tour-reactor</artifactId>
-    <groupId>com.tourapp.model</groupId>
+    <artifactId>tourgeek-model-tour-reactor</artifactId>
+    <groupId>com.tourgeek.model</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.model.tour.genled</artifactId>
+  <artifactId>com.tourgeek.model.tour.genled</artifactId>
   <packaging>bundle</packaging>
-  <name>tourapp-model-tour-genled - General ledger model</name>
+  <name>tourgeek-model-tour-genled - General ledger model</name>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <artifactId>com.tourapp.model.tour.base</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.model</groupId>
+      <artifactId>com.tourgeek.model.tour.base</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

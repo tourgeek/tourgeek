@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-res-reactor</artifactId>
-    <groupId>com.tourapp.res</groupId>
+    <artifactId>tourgeek-res-reactor</artifactId>
+    <groupId>com.tourgeek.res</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-res-tour-reactor</artifactId>
-  <name>tourapp-res-tour-reactor - Tour application resources</name>
+  <artifactId>tourgeek-res-tour-reactor</artifactId>
+  <name>tourgeek-res-tour-reactor - Tour application resources</name>
   <packaging>pom</packaging>
 
   <modules>

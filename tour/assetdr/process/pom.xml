@@ -4,20 +4,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.tourapp.tour</groupId>
-    <artifactId>tourapp-tour-assetdr-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
+    <artifactId>tourgeek-tour-assetdr-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.assetdr.process</artifactId>
-  <name>tourapp-tour-assetdr-process - Asset debt processes</name>
+  <artifactId>com.tourgeek.tour.assetdr.process</artifactId>
+  <name>tourgeek-tour-assetdr-process - Asset debt processes</name>
   <packaging>bundle</packaging>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.assetdr.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx.schema.net.webservicex</groupId>

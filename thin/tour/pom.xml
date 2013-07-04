@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-thin-reactor</artifactId>
-    <groupId>com.tourapp.thin</groupId>
+    <artifactId>tourgeek-thin-reactor</artifactId>
+    <groupId>com.tourgeek.thin</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-thin-tour-reactor</artifactId>
-  <name>tourapp-thin-tour-reactor - Tour thin code</name>
+  <artifactId>tourgeek-thin-tour-reactor</artifactId>
+  <name>tourgeek-thin-tour-reactor - Tour thin code</name>
   <packaging>pom</packaging>
 
   <modules>

@@ -4,58 +4,58 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-config-dep-reactor</artifactId>
-    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourgeek-config-dep-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-config-dep-all</artifactId>
-  <name>tourapp-config-dep-all - All dependencies</name>
+  <artifactId>tourgeek-config-dep-all</artifactId>
+  <name>tourgeek-config-dep-all - All dependencies</name>
   <packaging>pom</packaging>
 
   <dependencies>
     <dependency>
-        <groupId>com.tourapp.config</groupId>
-        <artifactId>tourapp-config-dep-res</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.config</groupId>
+        <artifactId>tourgeek-config-dep-res</artifactId>
+        <version>${tourgeek-version-range}</version>
         <type>pom</type>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.config</groupId>
-        <artifactId>tourapp-config-dep-thin</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.config</groupId>
+        <artifactId>tourgeek-config-dep-thin</artifactId>
+        <version>${tourgeek-version-range}</version>
         <type>pom</type>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.config</groupId>
-        <artifactId>tourapp-config-dep-tour</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.config</groupId>
+        <artifactId>tourgeek-config-dep-tour</artifactId>
+        <version>${tourgeek-version-range}</version>
         <type>pom</type>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.data.test_data</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.data.test_data</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.data.site_data</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.data.site_data</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.data.initial_data</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.data.initial_data</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.data.dev</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.data.dev</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.docs</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.docs</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>

@@ -4,65 +4,65 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-config-dep-reactor</artifactId>
-    <groupId>com.tourapp.config</groupId>
+    <artifactId>tourgeek-config-dep-reactor</artifactId>
+    <groupId>com.tourgeek.config</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>tourapp-config-dep-res</artifactId>
-  <name>tourapp-config-dep-res - Resource dependencies</name>
+  <artifactId>tourgeek-config-dep-res</artifactId>
+  <name>tourgeek-config-dep-res - Resource dependencies</name>
   <packaging>pom</packaging>
 
   <dependencies>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.acctpay</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.acctpay</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.acctrec</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.acctrec</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.app</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.app</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.assetdr</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.assetdr</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.booking</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.booking</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.genled</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.genled</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.payroll</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.payroll</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.product</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.product</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.profile</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.profile</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-        <groupId>com.tourapp.res</groupId>
-        <artifactId>com.tourapp.res.tour.request</artifactId>
-        <version>${tourapp-version-range}</version>
+        <groupId>com.tourgeek.res</groupId>
+        <artifactId>com.tourgeek.res.tour.request</artifactId>
+        <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
   

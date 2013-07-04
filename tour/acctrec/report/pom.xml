@@ -4,43 +4,43 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-acctrec-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-acctrec-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.tourapp.tour.acctrec.report</artifactId>
-  <name>tourapp-tour-acctrec-report - Accounts receivable reports</name>
+  <artifactId>com.tourgeek.tour.acctrec.report</artifactId>
+  <name>tourgeek-tour-acctrec-report - Accounts receivable reports</name>
   <packaging>bundle</packaging>
 
   <properties>
     <jbundle-package-import>
       *;resolution:=optional,
-      com.tourapp.res.tour.acctrec.report;resolution:=optional,
+      com.tourgeek.res.tour.acctrec.report;resolution:=optional,
     </jbundle-package-import>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <artifactId>com.tourapp.tour.acctrec.db</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.tour</groupId>
+      <artifactId>com.tourgeek.tour.acctrec.db</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.tour</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.tour.acctrec.screen</artifactId>
+      <groupId>com.tourgeek.tour</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.tour.acctrec.screen</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.tourapp.model</groupId>
-      <version>${tourapp-version-range}</version>
-      <artifactId>com.tourapp.model.tour.acctrec</artifactId>
+      <groupId>com.tourgeek.model</groupId>
+      <version>${tourgeek-version-range}</version>
+      <artifactId>com.tourgeek.model.tour.acctrec</artifactId>
     </dependency>
     
     <dependency>
-      <groupId>com.tourapp.res</groupId>
-      <artifactId>com.tourapp.res.tour.acctrec</artifactId>
-      <version>${tourapp-version-range}</version>
+      <groupId>com.tourgeek.res</groupId>
+      <artifactId>com.tourgeek.res.tour.acctrec</artifactId>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 

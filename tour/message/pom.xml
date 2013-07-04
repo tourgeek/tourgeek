@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>tourapp-tour-reactor</artifactId>
-    <groupId>com.tourapp.tour</groupId>
+    <artifactId>tourgeek-tour-reactor</artifactId>
+    <groupId>com.tourgeek.tour</groupId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
 
 
-  <artifactId>tourapp-tour-message-reactor</artifactId>
-  <name>tourapp-tour-message-reactor - Messaging parent</name>
+  <artifactId>tourgeek-tour-message-reactor</artifactId>
+  <name>tourgeek-tour-message-reactor - Messaging parent</name>
   <description>Messaging parent</description>
   <packaging>pom</packaging>
 
